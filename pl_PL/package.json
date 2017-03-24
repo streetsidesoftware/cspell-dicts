@@ -1,10 +1,10 @@
 {
   "name": "cspell-dict-pl_pl",
-  "version": "1.0.0",
+  "version": "1.0.3",
   "description": "Polish dictionary for cspell",
   "main": "index.js",
   "scripts": {
-    "build": "cspell-tools compile-trie \"*.dic\" -o ./dist/"
+    "build": "cspell-tools compile-trie \"*.dic\" -o ."
   },
   "repository": {
     "type": "git",
@@ -26,6 +26,7 @@
     "cspell-tools": "^1.3.2"
   },
   "files": [
-    "./dist/pl_pl.trie.gz"
+    "pl_pl.trie.gz",
+    "Polish.txt"
   ]
 }
