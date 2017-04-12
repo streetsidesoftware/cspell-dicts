@@ -1,0 +1,32 @@
+{
+  "name": "cspell-dict-russian",
+  "version": "1.0.0",
+  "description": "Russian dictionary for cspell",
+  "main": "index.js",
+  "scripts": {
+    "build": "cspell-tools compile-trie \"*.dic\" -o ."
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Jason3S/cspell-dicts.git"
+  },
+  "keywords": [
+    "cspell",
+    "Russian",
+    "dictionary",
+    "spelling"
+  ],
+  "author": "Jason Dent",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/Jason3S/cspell-dicts/issues"
+  },
+  "homepage": "https://github.com/Jason3S/cspell-dicts/russianU#readme",
+  "devDependencies": {
+    "cspell-tools": "^1.3.2"
+  },
+  "files": [
+    "Russian.trie.gz",
+    "Russian.txt"
+  ]
+}
