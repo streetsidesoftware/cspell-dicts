@@ -1,0 +1,33 @@
+{
+  "name": "cspell-dict-de_de",
+  "version": "1.0.0",
+  "description": "German dictionary for cspell",
+  "main": "index.js",
+  "scripts": {
+    "build": "cspell-tools compile-trie \"*.dic\" -o ."
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Jason3S/cspell-dicts.git"
+  },
+  "keywords": [
+    "cspell",
+    "German",
+    "de_de",
+    "dictionary",
+    "spelling"
+  ],
+  "author": "Jason Dent",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/Jason3S/cspell-dicts/issues"
+  },
+  "homepage": "https://github.com/Jason3S/cspell-dicts/de_DE#readme",
+  "devDependencies": {
+    "cspell-tools": "^1.3.2"
+  },
+  "files": [
+    "de_de.trie.gz",
+    "de_de.txt"
+  ]
+}
