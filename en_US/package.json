@@ -1,0 +1,33 @@
+{
+  "name": "cspell-dict-en_us",
+  "version": "1.0.0",
+  "description": "English dictionary for cspell",
+  "main": "index.js",
+  "scripts": {
+    "build": "cspell-tools compile-trie \"*.txt\" -o ."
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Jason3S/cspell-dicts.git"
+  },
+  "keywords": [
+    "cspell",
+    "English",
+    "American",
+    "en_US",
+    "dictionary",
+    "spelling"
+  ],
+  "author": "Jason Dent",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/Jason3S/cspell-dicts/issues"
+  },
+  "homepage": "https://github.com/Jason3S/cspell-dicts/en_US#readme",
+  "devDependencies": {
+    "cspell-tools": "^1.4.0"
+  },
+  "files": [
+    "en_us.trie.gz"
+  ]
+}
