@@ -1,0 +1,30 @@
+{
+  "name": "cspell-dict-php",
+  "version": "1.0.0",
+  "description": "Php dictionary for cspell.",
+  "scripts": {
+    "build": "cspell-tools compile \"php.txt\" -o ."
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Jason3S/cspell-dicts.git"
+  },
+  "keywords": [
+    "cspell",
+    "php",
+    "dictionary",
+    "spelling"
+  ],
+  "author": "Jason Dent",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/Jason3S/cspell-dicts/issues"
+  },
+  "homepage": "https://github.com/Jason3S/cspell-dicts/blob/master/php/README.md",
+  "devDependencies": {
+    "cspell-tools": "^1.4.0"
+  },
+  "files": [
+    "php.txt.gz"
+  ]
+}
