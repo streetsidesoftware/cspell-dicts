@@ -1,0 +1,30 @@
+{
+  "name": "cspell-dict-python",
+  "version": "1.0.0",
+  "description": "Python dictionary for cspell.",
+  "scripts": {
+    "build": "cspell-tools compile \"python.txt\" -o ."
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Jason3S/cspell-dicts.git"
+  },
+  "keywords": [
+    "cspell",
+    "python",
+    "dictionary",
+    "spelling"
+  ],
+  "author": "Jason Dent",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/Jason3S/cspell-dicts/issues"
+  },
+  "homepage": "https://github.com/Jason3S/cspell-dicts/blob/master/python/README.md",
+  "devDependencies": {
+    "cspell-tools": "^1.4.0"
+  },
+  "files": [
+    "python.txt.gz"
+  ]
+}
