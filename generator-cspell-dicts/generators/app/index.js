@@ -56,7 +56,13 @@ module.exports = class extends Generator {
           type: 'confirm',
           name: 'useTrie',
           message: 'Store as Trie',
-          default: true
+          default: ['.dic', '.aff'].includes(path.extname(this.options.source))
+        },
+        {
+          type: 'confirm',
+          name: 'doBuild',
+          message: 'Compile Dictionary?',
+          default: this.fs.exists(this.options.source)
         }
       ]).then(depProps => {
         depProps.fileExt = depProps.useTrie ? 'trie.gz' : 'txt.gz';
@@ -80,6 +86,7 @@ module.exports = class extends Generator {
         }
 
         depProps.srcFile = path.basename(srcFile);
+        props.packageName = props.name.toLowerCase();
 
         this.props = Object.assign({}, props, depProps);
       });
@@ -119,7 +126,10 @@ module.exports = class extends Generator {
     this.installDependencies({
       npm: true,
       bower: false,
-      yarn: false
+      yarn: false,
+      callback: () => {
+        this.spawnCommand('npm', ['run', 'build']);
+      }
     });
   }
 };
