@@ -1,0 +1,30 @@
+{
+  "name": "cspell-dict-<%= name %>",
+  "version": "1.0.0",
+  "description": "<%= description %>",
+  "scripts": {
+    "build": "cspell-tools <%= command %> \"<%= srcFile %>\" -o ."
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Jason3S/cspell-dicts.git"
+  },
+  "keywords": [
+    "cspell",
+    "<%= name %>",
+    "dictionary",
+    "spelling"
+  ],
+  "author": "Jason Dent",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/Jason3S/cspell-dicts/issues"
+  },
+  "homepage": "https://github.com/Jason3S/cspell-dicts/blob/master/<%= name %>/README.md",
+  "devDependencies": {
+    "cspell-tools": "^1.4.0"
+  },
+  "files": [
+    "<%= dstFileName %>"
+  ]
+}
