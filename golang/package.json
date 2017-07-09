@@ -1,0 +1,30 @@
+{
+  "name": "cspell-dict-golang",
+  "version": "1.0.0",
+  "description": "Golang dictionary for cspell.",
+  "scripts": {
+    "build": "cspell-tools compile \"go.txt\" -o ."
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Jason3S/cspell-dicts.git"
+  },
+  "keywords": [
+    "cspell",
+    "golang",
+    "dictionary",
+    "spelling"
+  ],
+  "author": "Jason Dent",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/Jason3S/cspell-dicts/issues"
+  },
+  "homepage": "https://github.com/Jason3S/cspell-dicts/blob/master/golang/README.md",
+  "devDependencies": {
+    "cspell-tools": "^1.4.0"
+  },
+  "files": [
+    "go.txt.gz"
+  ]
+}
