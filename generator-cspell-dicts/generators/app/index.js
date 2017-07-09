@@ -53,6 +53,18 @@ module.exports = class extends Generator {
           default: this.options.source || props.name + '.txt'
         },
         {
+          type: 'input',
+          name: 'local',
+          message: 'Language local, example: "en-US" or "*" for all locals',
+          default: '*'
+        },
+        {
+          type: 'input',
+          name: 'languageId',
+          message: 'Programing languageID, i.e. "typescript", "php", "go", or "*" for any.',
+          default: '*'
+        },
+        {
           type: 'confirm',
           name: 'useTrie',
           message: 'Store as Trie',
@@ -94,16 +106,21 @@ module.exports = class extends Generator {
   }
 
   writing() {
-    this.fs.copyTpl(
-      this.templatePath('_package.json'),
-      this.destinationPath('package.json'),
-      this.props
-    );
-    this.fs.copyTpl(
-      this.templatePath('README.md'),
-      this.destinationPath('README.md'),
-      this.props
-    );
+    const files = [
+      ['_package.json', 'package.json'],
+      'README.md',
+      'cspell-ext.json',
+      'LICENSE'
+    ];
+    files.forEach(fromTo => {
+      fromTo = typeof fromTo === 'string' ? [fromTo, fromTo] : fromTo;
+      const [src, dst] = fromTo;
+      this.fs.copyTpl(
+        this.templatePath(src),
+        this.destinationPath(dst),
+        this.props
+      );
+    });
     this.props.filesToCopy.forEach(name => {
       this.fs.copy(
         name,
