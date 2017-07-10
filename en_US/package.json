@@ -1,10 +1,9 @@
 {
   "name": "cspell-dict-en_us",
-  "version": "1.0.0",
+  "version": "1.1.0",
   "description": "English dictionary for cspell",
-  "main": "index.js",
   "scripts": {
-    "build": "cspell-tools compile-trie \"*.txt\" -o ."
+    "build": "cspell-tools compile-trie \"en_US.txt\" -o ."
   },
   "repository": {
     "type": "git",
@@ -12,9 +11,9 @@
   },
   "keywords": [
     "cspell",
+    "en_US",
     "English",
     "American",
-    "en_US",
     "dictionary",
     "spelling"
   ],
@@ -28,6 +27,7 @@
     "cspell-tools": "^1.4.0"
   },
   "files": [
-    "en_us.trie.gz"
+    "en_US.trie.gz",
+    "cspell-ext.json"
   ]
 }

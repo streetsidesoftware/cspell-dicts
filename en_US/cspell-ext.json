@@ -1,0 +1,19 @@
+// cSpell Settings
+{
+    // List of dictionary files to add to the global list of dictionaries
+    "dictionaryDefinitions": [
+        { "name": "en_us", "file": "./en_US.trie.gz" }
+    ],
+    "languageSettings": [
+        {
+            "languageId": "*",
+            "local": "en",
+            "dictionaries": ["en_us"]
+        },
+        {
+            "languageId": "*",
+            "local": "en-US",
+            "dictionaries": ["en_us"]
+        }
+    ]
+}
