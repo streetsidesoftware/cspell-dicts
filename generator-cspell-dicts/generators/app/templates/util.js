@@ -26,7 +26,6 @@ function install() {
   var imports = getImports(conf);
   if (imports.indexOf(configLocation) < 0) {
     imports.push(configLocation);
-    imports.sort();
     conf.set(importPath, imports);
   }
 }
