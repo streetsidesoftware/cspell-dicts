@@ -1,6 +1,6 @@
 {
   "name": "cspell-dict-en-gb",
-  "version": "1.0.0",
+  "version": "1.0.1",
   "description": "British English dictionary for cspell.",
   "bin": {
     "cspell-dict-en-gb-link": "./link.js",
@@ -37,6 +37,7 @@
   },
   "files": [
     "wordsEnGb.trie.gz",
-    "cspell-ext.json"
+    "cspell-ext.json",
+    "*.js"
   ]
 }
