@@ -98,7 +98,8 @@ module.exports = class extends Generator {
         }
 
         depProps.srcFile = path.basename(srcFile);
-        props.packageName = props.name.toLowerCase();
+        props.packageName = props.name.toLowerCase().replace(/[^a-z0-9-]/g, '-');
+        props.fullPackageName = 'cspell-dict-' + props.packageName;
 
         this.props = Object.assign({}, props, depProps);
       });
@@ -110,6 +111,9 @@ module.exports = class extends Generator {
       ['_package.json', 'package.json'],
       'README.md',
       'cspell-ext.json',
+      'link.js',
+      'unlink.js',
+      'util.js',
       'LICENSE'
     ];
     files.forEach(fromTo => {

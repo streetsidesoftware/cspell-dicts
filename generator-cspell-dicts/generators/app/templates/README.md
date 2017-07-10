@@ -1,14 +1,31 @@
 # Cspell <%= name %> Dictionary
 
+<%= description %>
+
 This is a pre-built dictionary for use with cspell.
 
-## Usage
+## Installation
+
+Global Install and add to cspell global settings.
+
+```sh
+npm install -g <%= fullPackageName %>
+<%= fullPackageName %>-link
+```
+
+## Uninstall from cspell
+
+```sh
+<%= fullPackageName %>-unlink
+```
+
+## Manual Installation
 
 The `cspell-ext.json` file in this package should be added to the import section in your cspell.json file.
 ```json
 {
     …
-    "import": ["<path to node>/cspell-dict-<%= packageName %>/cspell-ext.json"],
+    "import": ["<path to node>/<%= fullPackageName %>/cspell-ext.json"],
     …
 }
 ```
@@ -24,3 +41,4 @@ npm run build
 ## License
 
 MIT
+> Some packages may have other licenses included.
