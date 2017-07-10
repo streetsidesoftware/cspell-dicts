@@ -1,0 +1,42 @@
+{
+  "name": "cspell-dict-en-gb",
+  "version": "1.0.0",
+  "description": "British English dictionary for cspell.",
+  "bin": {
+    "cspell-dict-en-gb-link": "./link.js",
+    "cspell-dict-en-gb-unlink": "./unlink.js"
+  },
+  "scripts": {
+    "build": "cspell-tools compile-trie \"wordsEnGb.txt\" -o .",
+    "cspell-link": "node install.js",
+    "cspell-unlink": "node uninstall.js",
+    "publish-minor": "npm version minor && npm publish",
+    "publish-patch": "npm version patch && npm publish"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Jason3S/cspell-dicts.git"
+  },
+  "keywords": [
+    "cspell",
+    "en_GB",
+    "dictionary",
+    "spelling"
+  ],
+  "author": "Jason Dent",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/Jason3S/cspell-dicts/issues"
+  },
+  "homepage": "https://github.com/Jason3S/cspell-dicts/blob/master/en_GB/README.md",
+  "devDependencies": {
+    "cspell-tools": "^1.4.0"
+  },
+  "dependencies": {
+    "configstore": "^3.1.0"
+  },
+  "files": [
+    "wordsEnGb.trie.gz",
+    "cspell-ext.json"
+  ]
+}
