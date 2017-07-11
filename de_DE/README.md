@@ -24,9 +24,9 @@ cspell-dict-de-de-unlink
 The `cspell-ext.json` file in this package should be added to the import section in your cspell.json file.
 ```json
 {
-    …
+    // …
     "import": ["<path to node_modules>/cspell-dict-de-de/cspell-ext.json"],
-    …
+    // …
 }
 ```
 
@@ -47,5 +47,5 @@ The Hunspell source for this dictionary can be found:
 ## License
 
 MIT
-See also: [German_de_DE.txt](https://github.com/Jason3S/cspell-dicts/blob/master/de_DE/german_de_DE.txt)
+See also: [German_de_DE.txt](https://github.com/Jason3S/cspell-dicts/blob/master/de_DE/German_de_DE.txt)
 
