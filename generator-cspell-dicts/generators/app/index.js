@@ -110,6 +110,7 @@ module.exports = class extends Generator {
     const files = [
       ['_package.json', 'package.json'],
       'README.md',
+      'CHANGELOG.md',
       'cspell-ext.json',
       'link.js',
       'unlink.js',
