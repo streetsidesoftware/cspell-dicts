@@ -35,6 +35,12 @@ module.exports = class extends Generator {
         name: 'name',
         message: 'Your project name',
         default: this.options.name || this.appname // Default to current folder name
+      },
+      {
+        type: 'input',
+        name: 'friendlyName',
+        message: 'Friendly Name',
+        default: this.options.name || this.appname // Default to current folder name
       }
     ];
 
@@ -44,7 +50,7 @@ module.exports = class extends Generator {
           type: 'input',
           name: 'description',
           message: 'Description',
-          default: title(props.name) + ' dictionary for cspell.'
+          default: title(props.friendlyName) + ' dictionary for cspell.'
         },
         {
           type: 'input',

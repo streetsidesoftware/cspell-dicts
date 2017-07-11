@@ -1,4 +1,4 @@
-# Cspell <%= name %> Dictionary
+# Cspell <%= friendlyName %> Dictionary
 
 <%= description %>
 
