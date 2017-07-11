@@ -1,28 +1,38 @@
 # Cspell Polish Dictionary
 
-Note, this is a work in progress.
+Polish dictionary for cspell.
 
-## Using the dictionary with in a project cspell.json
+This is a pre-built dictionary for use with cspell.
 
-Add the dictionary to the project
+## Installation
+
+Global Install and add to cspell global settings.
+
 ```sh
-npm install -SD cspell-dict-pl_pl
+npm install -g cspell-dict-pl-pl
+cspell-dict-pl-pl-link
 ```
 
-Assuming `cspell.json` is in the project root.  Add the following to `cspell.json`
-```javascript
-    // Define each dictionary.  Relative paths are relative to the config file.
-   "dictionaryDefinitions": [
-       { "name": "Polish", "path": "./node_modules/cspell-dict-pl_pl/pl_pl.trie.gz"}
-   ],
-   // Dictionaries to be included
-   "dictionaries": ["Polish"]
+## Uninstall from cspell
+
+```sh
+cspell-dict-pl-pl-unlink
 ```
 
+## Manual Installation
+
+The `cspell-ext.json` file in this package should be added to the import section in your cspell.json file.
+```json
+{
+    // …
+    "import": ["<path to node_modules>/cspell-dict-pl-pl/cspell-ext.json"],
+    // …
+}
+```
 
 ## Building
 
-Building is only necessary if you want to modify the contents of the dictionary
+Building is only necessary if you want to modify the contents of the dictionary.  Note: Building will take a few minutes for large files.
 
 ```sh
 npm run build
@@ -35,3 +45,7 @@ The Hunspell source for this dictionary can be found in several repositories:
 * https://github.com/titoBouzout/Dictionaries
 * https://github.com/wooorm/dictionaries/tree/master/dictionaries/pl_PL
 
+## License
+
+MIT
+> Some packages may have other licenses included.
