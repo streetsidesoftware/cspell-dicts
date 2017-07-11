@@ -15,7 +15,8 @@
             // * will match against any file type.
             "languageId": "*",
             // Language local. i.e. en-US, de-AT, or ru. * will match all locals.
-            "local": "nl",
+            // Multiple locals can be specified like: "en, en-US" to match both English and English US.
+            "local": "nl,nl-NL",
             //
             "ignoreRegExpList": [],
             "includeRegExpList": [],
