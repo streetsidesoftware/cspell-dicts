@@ -25,7 +25,7 @@ The `cspell-ext.json` file in this package should be added to the import section
 ```json
 {
     …
-    "import": ["<path to node>/<%= fullPackageName %>/cspell-ext.json"],
+    "import": ["<path to node_modules>/<%= fullPackageName %>/cspell-ext.json"],
     …
 }
 ```

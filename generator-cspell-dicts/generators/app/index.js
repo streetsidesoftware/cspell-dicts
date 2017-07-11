@@ -9,17 +9,17 @@ module.exports = class extends Generator {
   constructor(args, opts) {
     super(args, opts);
 
-    this.option('source', {
-      desc: 'Source file for the dictionary. It will be copied to into the local dictionary folder.',
-      type: String,
-      required: false,
-      alias: 's'
-    });
-
     this.argument('name', {
       desc: 'Name of Dictionary',
       type: String,
       required: true
+    });
+
+    this.argument('source', {
+      desc: 'Source file for the dictionary. It will be copied to into the local dictionary folder.',
+      type: String,
+      required: false,
+      default: ''
     });
   }
 
@@ -149,7 +149,9 @@ module.exports = class extends Generator {
       bower: false,
       yarn: false,
       callback: () => {
-        this.spawnCommand('npm', ['run', 'build']);
+        if (this.doBuild) {
+          this.spawnCommand('npm', ['run', 'build']);
+        }
       }
     });
   }
