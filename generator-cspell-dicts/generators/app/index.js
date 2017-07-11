@@ -55,7 +55,7 @@ module.exports = class extends Generator {
         {
           type: 'input',
           name: 'local',
-          message: 'Language local, example: "en-US" or "*" for all locals',
+          message: 'Language local, example: "en,en-US" for English and English US, "fr" for French, or "*" for all locals (programming language dictionaries)',
           default: '*'
         },
         {
