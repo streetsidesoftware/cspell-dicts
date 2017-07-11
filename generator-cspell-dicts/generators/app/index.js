@@ -150,7 +150,7 @@ module.exports = class extends Generator {
       bower: false,
       yarn: false,
       callback: () => {
-        if (this.doBuild) {
+        if (this.props.doBuild) {
           this.spawnCommand('npm', ['run', 'build']);
         }
       }
