@@ -1,4 +1,4 @@
-# Cspell fr_FR Dictionary
+# Cspell French Dictionary
 
 French dictionary for cspell.
 
@@ -38,14 +38,15 @@ Building is only necessary if you want to modify the contents of the dictionary.
 npm run build
 ```
 
-## License
-
-MIT
-
-See also: French.txt
-
 ## Resources
 
 The Hunspell source for this dictionary can be found:
 
 * https://github.com/titoBouzout/Dictionaries
+
+## License
+
+MIT
+
+See also: [French.txt](https://github.com/Jason3S/cspell-dicts/blob/master/fr_FR/French.txt)
+
