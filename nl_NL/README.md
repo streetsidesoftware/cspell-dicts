@@ -42,3 +42,10 @@ npm run build
 
 MIT
 > Some packages may have other licenses included.
+See: Dutch.txt
+
+## Resources
+
+The Hunspell source for this dictionary can be found:
+
+* https://github.com/titoBouzout/Dictionaries
