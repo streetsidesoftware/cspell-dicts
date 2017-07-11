@@ -17,7 +17,11 @@
             // Language local. i.e. en-US, de-AT, or ru. * will match all locals.
             // Multiple locals can be specified like: "en, en-US" to match both English and English US.
             "local": "nl,nl-NL",
-            //
+            // Enable word compounds for now, this is not ideal, but it avoids a lot of false positives.
+            // But it allows misspelled words like: 'pankoek' which should be 'pannenkoek'
+            // Once proper support for word compounds is added, then this can be turned off.
+            "allowCompoundWords": true,
+            // By default the
             "ignoreRegExpList": [],
             "includeRegExpList": [],
             // regex patterns than can be used with ignoreRegExpList or includeRegExpList
