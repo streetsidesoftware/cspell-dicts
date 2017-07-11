@@ -1,26 +1,38 @@
 # Cspell German Dictionary
 
-## Using the dictionary with in a project cspell.json
+German dictionary for cspell.
 
-Add the dictionary to the project
+This is a pre-built dictionary for use with cspell.
+
+## Installation
+
+Global Install and add to cspell global settings.
+
 ```sh
-npm install -SD cspell-dict-de_de
+npm install -g cspell-dict-de-de
+cspell-dict-de-de-link
 ```
 
-Assuming `cspell.json` is in the project root.  Add the following to `cspell.json`
-```javascript
-    // Define each dictionary.  Relative paths are relative to the config file.
-   "dictionaryDefinitions": [
-       { "name": "de_de", "path": "./node_modules/cspell-dict-de_de/de_de.trie.gz"}
-   ],
-   // Dictionaries to be included
-   "dictionaries": ["de_de"]
+## Uninstall from cspell
+
+```sh
+cspell-dict-de-de-unlink
 ```
 
+## Manual Installation
+
+The `cspell-ext.json` file in this package should be added to the import section in your cspell.json file.
+```json
+{
+    …
+    "import": ["<path to node_modules>/cspell-dict-de-de/cspell-ext.json"],
+    …
+}
+```
 
 ## Building
 
-Building is only necessary if you want to modify the contents of the dictionary.  Note: Building will take a few minutes.
+Building is only necessary if you want to modify the contents of the dictionary.  Note: Building will take a few minutes for large files.
 
 ```sh
 npm run build
@@ -31,4 +43,9 @@ npm run build
 The Hunspell source for this dictionary can be found:
 
 * https://github.com/titoBouzout/Dictionaries
+
+## License
+
+MIT
+See also: [German_de_DE.txt](https://github.com/Jason3S/cspell-dicts/blob/master/de_DE/german_de_DE.txt)
 
