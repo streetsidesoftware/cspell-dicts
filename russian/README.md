@@ -1,36 +1,44 @@
 # Cspell Russian Dictionary
 
-Note, this is a work in progress.
+Russian dictionary for cspell.
 
-## Using the dictionary with in a project cspell.json
+This is a pre-built dictionary for use with cspell.
 
-Add the dictionary to the project
+## Installation
+
+Global Install and add to cspell global settings.
+
 ```sh
-npm install -SD cspell-dict-russian
+npm install -g cspell-dict-russian
+cspell-dict-russian-link
 ```
 
-Assuming `cspell.json` is in the project root.  Add the following to `cspell.json`
+## Uninstall from cspell
+
+```sh
+cspell-dict-russian-unlink
+```
+
+## Manual Installation
+
+The `cspell-ext.json` file in this package should be added to the import section in your cspell.json file.
 ```javascript
-    // Define each dictionary.  Relative paths are relative to the config file.
-   "dictionaryDefinitions": [
-       { "name": "Russian", "path": "./node_modules/cspell-dict-russian/Russian.trie.gz"}
-   ],
-   // Dictionaries to be included
-   "dictionaries": ["Russian"]
+{
+    // …
+    "import": ["<path to node_modules>/cspell-dict-russian/cspell-ext.json"],
+    // …
+}
 ```
-
 
 ## Building
 
-Building is only necessary if you want to modify the contents of the dictionary.  Note: Building will take **many hours**.
+Building is only necessary if you want to modify the contents of the dictionary.  Note: Building will take a few minutes for large files.
 
 ```sh
 npm run build
 ```
 
-## Resources
+## License
 
-The Hunspell source for this dictionary can be found:
-
-* https://github.com/titoBouzout/Dictionaries
-
+MIT
+> Some packages may have other licenses included.

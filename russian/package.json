@@ -1,10 +1,17 @@
 {
   "name": "cspell-dict-russian",
   "version": "1.0.0",
-  "description": "Russian dictionary for cspell",
-  "main": "index.js",
+  "description": "Russian dictionary for cspell.",
+  "bin": {
+    "cspell-dict-russian-link": "./link.js",
+    "cspell-dict-russian-unlink": "./unlink.js"
+  },
   "scripts": {
-    "build": "cspell-tools compile-trie \"*.dic\" -o ."
+    "build": "cspell-tools compile-trie \"Russian.dic\" -o .",
+    "cspell-link": "node link.js",
+    "cspell-unlink": "node unlink.js",
+    "publish-minor": "npm version minor && npm publish",
+    "publish-patch": "npm version patch && npm publish"
   },
   "repository": {
     "type": "git",
@@ -12,6 +19,7 @@
   },
   "keywords": [
     "cspell",
+    "russian",
     "Russian",
     "dictionary",
     "spelling"
@@ -23,10 +31,14 @@
   },
   "homepage": "https://github.com/Jason3S/cspell-dicts/blob/master/russian/README.md",
   "devDependencies": {
-    "cspell-tools": "^1.3.2"
+    "cspell-tools": "^1.4.0"
+  },
+  "dependencies": {
+    "configstore": "^3.1.0"
   },
   "files": [
     "Russian.trie.gz",
-    "Russian.txt"
+    "cspell-ext.json",
+    "*.js"
   ]
 }
