@@ -22,7 +22,7 @@ cspell-dict-fr-fr-unlink
 ## Manual Installation
 
 The `cspell-ext.json` file in this package should be added to the import section in your cspell.json file.
-```json
+```javascript
 {
     // …
     "import": ["<path to node_modules>/cspell-dict-fr-fr/cspell-ext.json"],
