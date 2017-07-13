@@ -38,6 +38,12 @@ Building is only necessary if you want to modify the contents of the dictionary.
 npm run build
 ```
 
+## Resources
+
+The Hunspell source for this dictionary can be found:
+
+* https://github.com/wooorm/dictionaries/tree/master/dictionaries/ru_RU
+
 ## License
 
 MIT
