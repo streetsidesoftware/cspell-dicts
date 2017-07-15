@@ -4,7 +4,7 @@ Html Symbol Entities dictionary for cspell.
 
 This is a pre-built dictionary for use with cspell.
 
-This addon dictionary adds Html symbol entities like: `&mdah;`, `&laquo;`, and `&gtrarr;` to the spell checker for `html` and `markdown` files.
+This addon dictionary adds Html symbol entities like: `&mdash;`, `&laquo;`, and `&gtrarr;` to the spell checker for `html` and `markdown` files.
 
 
 ## Installation
