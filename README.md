@@ -3,11 +3,13 @@ Various cspell dictionaries. Each dictionary is its own package. See READEME.md 
 
 ## Dictionaries
 - [Dutch](nl_NL)
+- [English - American](en_US) (Included by default in cspell and VS Code Spell Checker)
+- [English - British](en_GB) (Include by default in cspell and VS Code Spell Checker)
 - [French](fr_FR)
 - [German](de_DE)
 - [Polish](pl_PL)
 - [Portuguese](pt_PT)
-- [Portuguese Brazilian](pt_BR)
+- [Portuguese - Brazilian](pt_BR)
 - [Russian](ru_RU) (Small)
 - [Russian](russian) (Large)
 - [Spanish](es_ES)
