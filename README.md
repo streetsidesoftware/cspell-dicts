@@ -2,15 +2,15 @@
 Various cspell dictionaries. Each dictionary is its own package. See READEME.md in each directory.
 
 ## Dictionaries
+- [Dutch](nl_NL)
 - [French](fr_FR)
 - [German](de_DE)
-- [Spanish](es_ES)
-- [Dutch](nl_NL)
 - [Polish](pl_PL)
 - [Portuguese](pt_PT)
 - [Portuguese Brazilian](pt_BR)
 - [Russian](ru_RU) (Small)
 - [Russian](russian) (Large)
+- [Spanish](es_ES)
 
 ## Specialized Dictionaries
 - [Html Symbol Entities](https://github.com/Jason3S/cspell-dicts/tree/master/html-symbol-entities)
