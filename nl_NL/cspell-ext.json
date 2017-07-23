@@ -2,7 +2,19 @@
 {
     // List of dictionary files to add to the global list of dictionaries
     "dictionaryDefinitions": [
-        { "name": "nl-nl", "file": "./Dutch.trie.gz" }
+        {
+            "name": "nl-nl",
+            "file": "./Dutch.trie.gz",
+            "repMap": [
+                ["áá", "aa"],
+                ["éé", "ee"],
+                ["íé", "ie"],
+                ["óó", "oo"],
+                ["úú", "uu"],
+                ["óé", "oe"],
+                ["’", "'"]
+            ]
+        }
     ],
     // Dictionaries to always be used.
     // Generally left empty
