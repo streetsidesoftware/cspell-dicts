@@ -1,10 +1,10 @@
 # Cspell Html Symbol Entities Dictionary
 
-Html Symbol Entities dictionary for cspell.
+HTML Symbol Entities dictionary for cspell.
 
 This is a pre-built dictionary for use with cspell.
 
-This addon dictionary adds Html symbol entities like: `&mdash;`, `&laquo;`, and `&gtrarr;` to the spell checker for `html` and `markdown` files.
+This addon dictionary adds HTML symbol entities like: `&mdash;`, `&laquo;`, and `&gtrarr;` to the spell checker for `html` and `markdown` files.
 
 
 ## Installation
@@ -24,7 +24,7 @@ cspell-dict-html-symbol-entities-unlink
 
 ## Manual Installation
 
-The `cspell-ext.json` file in this package should be added to the import section in your cspell.json file.
+The `cspell-ext.json` file in this package should be added to the import section in your `cspell.json` file.
 ```javascript
 {
     // …
@@ -35,7 +35,8 @@ The `cspell-ext.json` file in this package should be added to the import section
 
 ## Building
 
-Building is only necessary if you want to modify the contents of the dictionary.  Note: Building will take a few minutes for large files.
+Building is only necessary if you want to modify the contents of the dictionary.  
+_Note:_ Building will take a few minutes for large files.
 
 ```sh
 npm run build
