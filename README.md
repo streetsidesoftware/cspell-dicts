@@ -1,9 +1,11 @@
 # cspell-dicts
-Various cspell dictionaries. Each dictionary is its own package. See READEME.md in each directory.
+
+Various [cspell](https://github.com/Jason3S/cspell) dictionaries. Each dictionary is its own package. See `README.md` in each directory.
 
 ## Dictionaries
+
 - [Dutch](nl_NL)
-- [English - American](en_US) (Included by default in cspell and VS Code Spell Checker)
+- [English - American](en_US) (Included by default in cspell and [VS Code Spell Checker](https://github.com/Jason-Rev/vscode-spell-checker))
 - [English - British](en_GB) (Include by default in cspell and VS Code Spell Checker)
 - [French](fr_FR)
 - [German](de_DE)
@@ -14,24 +16,28 @@ Various cspell dictionaries. Each dictionary is its own package. See READEME.md 
 - [Russian](russian) (Large)
 - [Spanish](es_ES)
 
+
 ## Specialized Dictionaries
-- [Html Symbol Entities](https://github.com/Jason3S/cspell-dicts/tree/master/html-symbol-entities)
+
+- [HTML Symbol Entities](https://github.com/Jason3S/cspell-dicts/tree/master/html-symbol-entities)
+
 
 ## Contributing
 
 Please help correct any mistakes in the dictionaries.
 
+
 ## How to create a new dictionary
 
 Please fork this repository to add new dictionaries.
 
-### Using yeoman script
+### Using Yeoman script
 
-The yeoman script can help you create the dictionary template files seen in most of dictionary directories.
+The [Yeoman](http://yeoman.io/) script can help you create the dictionary template files seen in most of dictionary directories.
 
 #### Install Yeoman
 
-Install yeoman and then link the generator.
+Install Yeoman and then link the generator.
 
 ```
 npm install -g yo
@@ -63,7 +69,8 @@ run build | prepare the word list so it can be used by cspell efficiently. You c
 
 Once all the questions have been answered, the dictionary directory will be created and the files will be copied.
 
-Please update README.md and LICENSE files as necessary.
+Please update `README.md` and `LICENSE` files as necessary.
+
 
 ## Testing Dictionaries
 
@@ -86,7 +93,7 @@ Remember to unlink when you are done:
 npm run unlink
 ```
 
-#### Npm Global Install
+#### npm Global Install
 
 From the dictionary directory.
 
@@ -94,5 +101,7 @@ From the dictionary directory.
 npm install -g
 ```
 
-Then run the link command found in the dictionary README.md file. It has the following pattern: `cspell-dict-<name>-link`. To unlink: `cspell-dict-<name>-unlink`
+Then run the link command found in the dictionary `README.md` file.  
+It has the following pattern: `cspell-dict-<name>-link`.  
+To unlink: `cspell-dict-<name>-unlink`
 
