@@ -13,5 +13,10 @@
     // For example "hte" should be "the"
     "flagWords": [
         "hte"
+    ],
+    "overrides": [
+        { "filename": "**/nl_NL/**", "language": "en,nl" },
+        { "filename": "**/de_DE/**", "language": "en,de" },
+        { "filename": "**/en_GB/**", "language": "en_GB" }
     ]
 }
