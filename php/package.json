@@ -7,7 +7,7 @@
     "cspell-dict-php-unlink": "./unlink.js"
   },
   "scripts": {
-    "build": "cspell-tools compile \"php.txt\" -o .",
+    "build": "node --max_old_space_size=4096 node_modules/.bin/cspell-tools compile \"php.txt\" -o .",
     "cspell-link": "node install.js",
     "cspell-unlink": "node uninstall.js"
   },
@@ -28,7 +28,7 @@
   },
   "homepage": "https://github.com/Jason3S/cspell-dicts/blob/master/php/README.md",
   "devDependencies": {
-    "cspell-tools": "^1.4.0"
+    "cspell-tools": "^1.4.2"
   },
   "dependencies": {
     "configstore": "^3.1.0"
