@@ -1,0 +1,13 @@
+language: node_js
+node_js:
+  - "node"
+  - "6"
+script:
+  - cd golang
+  - npm install && npm build && cd ..
+  - cd html-symbol-entities
+  - npm install && npm build && cd ..
+  - cd php
+  - npm install && npm build && cd ..
+  - cd python
+  - npm install && npm build && cd ..
