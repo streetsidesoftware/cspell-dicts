@@ -4,10 +4,10 @@ node_js:
   - "6"
 script:
   - cd golang
-  - npm install && npm build && cd ..
+  - npm install && npm run build && cd ..
   - cd html-symbol-entities
-  - npm install && npm build && cd ..
+  - npm install && npm run build && cd ..
   - cd php
-  - npm install && npm build && cd ..
+  - npm install && npm run build && cd ..
   - cd python
-  - npm install && npm build && cd ..
+  - npm install && npm run build && cd ..
