@@ -11,3 +11,5 @@ script:
   - npm install && npm run build && cd ..
   - cd python
   - npm install && npm run build && cd ..
+  - cd cpp
+  - npm install && npm run build && cd ..

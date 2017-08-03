@@ -6,21 +6,35 @@
     "language": "en",
     // words - list of words to be always considered correct
     "words": [
+        "Mutex",
+        "addrtype",
         "appname"
     ],
-    "ignorePaths":[
+    "maxNumberOfProblems":1000,
+    // flagWords - list of words to be always considered incorrect
+    "flagWords": [],
+    "ignorePaths": [
         "**/node_modules/**",
         "**/vscode-extension/**",
         "**/.git/**",
         ".vscode"
     ],
-    // flagWords - list of words to be always considered incorrect
-    "flagWords": [
-    ],
     "overrides": [
-        { "filename": "**/nl_NL/**", "language": "en,nl" },
-        { "filename": "**/de_DE/**", "language": "en,de" },
-        { "filename": "**/en_GB/**", "language": "en_GB" },
-        { "filename": "**/sv/**", "language": "en,sv" }
+        {
+            "filename": "**/nl_NL/**",
+            "language": "en,nl"
+        },
+        {
+            "filename": "**/de_DE/**",
+            "language": "en,de"
+        },
+        {
+            "filename": "**/en_GB/**",
+            "language": "en_GB"
+        },
+        {
+            "filename": "**/sv/**",
+            "language": "en,sv"
+        }
     ]
 }
