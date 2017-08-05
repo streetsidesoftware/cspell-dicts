@@ -1,6 +1,6 @@
 {
   "name": "cspell-dict-cpp",
-  "version": "1.1.0",
+  "version": "1.1.2",
   "description": "Cpp dictionary for cspell.",
   "bin": {
     "cspell-dict-cpp-link": "./link.js",
@@ -8,6 +8,7 @@
   },
   "scripts": {
     "build": "cspell-tools compile \"cpp.txt\" -o .",
+    "prepublishOnly": "cp ../util/* .",
     "cspell-link": "node link.js",
     "cspell-unlink": "node unlink.js",
     "publish-minor": "npm version minor && npm publish",
@@ -25,6 +26,7 @@
     "dictionary",
     "spelling"
   ],
+  "main":"index.js",
   "author": "Jason Dent",
   "license": "MIT",
   "bugs": {
