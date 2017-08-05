@@ -8,6 +8,7 @@
   },
   "scripts": {
     "build": "cspell-tools compile-trie \"wordsEnGb.txt\" -o .",
+    "prepublishOnly": "cp ../util/* .",
     "cspell-link": "node install.js",
     "cspell-unlink": "node uninstall.js",
     "publish-minor": "npm version minor && npm publish",
@@ -23,6 +24,7 @@
     "dictionary",
     "spelling"
   ],
+  "main":"index.js",
   "author": "Jason Dent",
   "license": "MIT",
   "bugs": {

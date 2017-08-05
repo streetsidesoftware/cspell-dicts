@@ -2,8 +2,17 @@
   "name": "cspell-dict-python",
   "version": "1.0.0",
   "description": "Python dictionary for cspell.",
+  "bin": {
+    "cspell-dict-python-link": "./link.js",
+    "cspell-dict-python-unlink": "./unlink.js"
+  },
   "scripts": {
-    "build": "cspell-tools compile \"python.txt\" -o ."
+    "build": "cspell-tools compile \"python.txt\" -o .",
+    "prepublishOnly": "cp ../util/* .",
+    "cspell-link": "node link.js",
+    "cspell-unlink": "node unlink.js",
+    "publish-minor": "npm version minor && npm publish",
+    "publish-patch": "npm version patch && npm publish"
   },
   "repository": {
     "type": "git",
@@ -15,6 +24,7 @@
     "dictionary",
     "spelling"
   ],
+  "main":"index.js",
   "author": "Jason Dent",
   "license": "MIT",
   "bugs": {
@@ -25,6 +35,8 @@
     "cspell-tools": "^1.4.2"
   },
   "files": [
-    "python.txt.gz"
+    "python.txt.gz",
+    "*.js",
+    "*.d.ts"
   ]
 }

@@ -8,6 +8,7 @@
   },
   "scripts": {
     "build": "node --max_old_space_size=4096 node_modules/.bin/cspell-tools compile \"php.txt\" -o .",
+    "prepublishOnly": "cp ../util/* .",
     "cspell-link": "node install.js",
     "cspell-unlink": "node uninstall.js"
   },
@@ -21,6 +22,7 @@
     "dictionary",
     "spelling"
   ],
+  "main":"index.js",
   "author": "Jason Dent",
   "license": "MIT",
   "bugs": {

@@ -8,6 +8,7 @@
   },
   "scripts": {
     "build": "cspell-tools compile-trie \"en_US.txt\" -o .",
+    "prepublishOnly": "cp ../util/* .",
     "cspell-link": "node link.js",
     "cspell-unlink": "node unlink.js",
     "publish-minor": "npm version minor && npm publish",
@@ -26,6 +27,7 @@
     "dictionary",
     "spelling"
   ],
+  "main":"index.js",
   "author": "Jason Dent",
   "license": "MIT",
   "bugs": {
