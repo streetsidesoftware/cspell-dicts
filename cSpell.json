@@ -8,11 +8,12 @@
     "words": [
         "Mutex",
         "addrtype",
-        "appname"
+        "appname",
+        "configstore"
     ],
-    "maxNumberOfProblems":1000,
     // flagWords - list of words to be always considered incorrect
     "flagWords": [],
+    "maxNumberOfProblems": 1000,
     "ignorePaths": [
         "**/node_modules/**",
         "**/vscode-extension/**",
