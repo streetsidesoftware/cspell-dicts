@@ -118,9 +118,6 @@ module.exports = class extends Generator {
       'README.md',
       'CHANGELOG.md',
       'cspell-ext.json',
-      'link.js',
-      'unlink.js',
-      'util.js',
       'LICENSE'
     ];
     files.forEach(fromTo => {
