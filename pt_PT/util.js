@@ -44,6 +44,7 @@ function uninstall() {
 }
 
 module.exports = {
-  install: install,
-  uninstall: uninstall
+  install,
+  uninstall,
+  configLocation,
 };
