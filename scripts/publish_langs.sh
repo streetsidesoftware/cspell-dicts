@@ -6,7 +6,7 @@ echo "Publish the following dictionaries:"
 printf "%s " "${dictionaries[@]}"
 
 echo ""
-read -p 'Proceed y/N: ' keepgoing
+read -r -p 'Proceed y/N: ' keepgoing
 
 if [ "${keepgoing}" != "y" ]
 then
