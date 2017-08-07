@@ -1,4 +1,5 @@
 # generator-cspell-dicts
+
 Generate cspell dictionary sub-projects.
 
 ## Installation
@@ -12,7 +13,8 @@ npm link
 
 Then generate a dictionary project:
 
-Exmaple for **monkey** language:
+Example for **monkey** language:
+
 ```bash
 mkdir monkey
 yo cspell-dicts
@@ -21,13 +23,11 @@ yo cspell-dicts
 
 ## Getting To Know Yeoman
 
- * Yeoman has a heart of gold.
- * Yeoman is a person with feelings and opinions, but is very easy to work with.
- * Yeoman can be too opinionated at times but is easily convinced not to be.
- * Feel free to [learn more about Yeoman](http://yeoman.io/).
+* Yeoman has a heart of gold.
+* Yeoman is a person with feelings and opinions, but is very easy to work with.
+* Yeoman can be too opinionated at times but is easily convinced not to be.
+* Feel free to [learn more about Yeoman](http://yeoman.io/).
 
 ## License
 
-MIT © [Jason Dent]()
-
-
+MIT © Jason Dent
