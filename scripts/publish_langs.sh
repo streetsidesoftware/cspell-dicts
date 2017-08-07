@@ -16,6 +16,6 @@ fi
 
 for i in "${dictionaries[@]}"
 do
-    echo Running: ./scripts/publish_dict.sh $i
-    ./scripts/publish_dict.sh $i
+    echo "Running: ./scripts/publish_dict.sh $i"
+    ./scripts/publish_dict.sh "$i"
 done
