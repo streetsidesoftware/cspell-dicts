@@ -42,4 +42,4 @@ npm run build
 ## License
 
 MIT
-> See Also [Source](This file came from https://github.com/Glutanimate/wordlist-medicalterms-en)
+> See Also [Source](https://github.com/Glutanimate/wordlist-medicalterms-en)
