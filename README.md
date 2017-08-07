@@ -39,7 +39,7 @@ The [Yeoman](http://yeoman.io/) script can help you create the dictionary templa
 
 Install Yeoman and then link the generator.
 
-```
+```sh
 npm install -g yo
 cd generator-cspell-dicts
 npm link
@@ -50,7 +50,7 @@ cd ..
 
 In the `cspell-dicts` repository root.
 
-```
+```sh
 yo cspell-dicts <name> <path/to/source/words>
 ```
 
@@ -89,6 +89,7 @@ This will add an entry in the cspell global config to import the `cspell-ext.jso
 Use either VS Code or cspell to verify that files spell check correctly.
 
 Remember to unlink when you are done:
+
 ```sh
 npm run unlink
 ```
@@ -104,4 +105,3 @@ npm install -g
 Then run the link command found in the dictionary `README.md` file.  
 It has the following pattern: `cspell-dict-<name>-link`.  
 To unlink: `cspell-dict-<name>-unlink`
-

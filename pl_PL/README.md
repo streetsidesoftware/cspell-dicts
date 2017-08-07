@@ -22,6 +22,7 @@ cspell-dict-pl-pl-unlink
 ## Manual Installation
 
 The `cspell-ext.json` file in this package should be added to the import section in your cspell.json file.
+
 ```javascript
 {
     // …

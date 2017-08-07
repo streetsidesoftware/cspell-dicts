@@ -5,6 +5,7 @@ English dictionary for cspell.
 This is a pre-built dictionary for use with cspell.
 
 ## Note
+
 This dictionary comes pre-installed with cspell. It should not be necessary to add it.
 
 ## Installation
@@ -25,6 +26,7 @@ cspell-dict-en-us-unlink
 ## Manual Installation
 
 The `cspell-ext.json` file in this package should be added to the import section in your cspell.json file.
+
 ```javascript
 {
     // …
