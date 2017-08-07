@@ -6,7 +6,7 @@ This is a pre-built dictionary for use with cspell.
 
 The `cspell-ext.json` file in this package should be added to the import section in your cspell.json file.
 
-```json
+```javascript
 {
     // …
     "import": ["<path to node>/cspell-dict-golang/cspell-ext.json"],
