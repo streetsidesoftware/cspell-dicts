@@ -1,0 +1,11 @@
+// cSpell Settings
+{
+    // List of dictionary files to add to the global list of dictionaries
+    "dictionaryDefinitions": [
+        { "name": "django", "file": "./django.txt.gz" }
+    ],
+    "languageSettings": [
+        {"languageId": "html",   "dictionaries": ["django"]},
+        {"languageId": "python", "dictionaries": ["django"]}
+    ]
+}

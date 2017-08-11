@@ -81,7 +81,7 @@ Please update `README.md` and `LICENSE` files as necessary.
 From the dictionary directory
 
 ```sh
-npm run link
+npm run cspell-link
 ```
 
 This will add an entry in the cspell global config to import the `cspell-ext.json` file in the dictionary directory.
@@ -91,7 +91,7 @@ Use either VS Code or cspell to verify that files spell check correctly.
 Remember to unlink when you are done:
 
 ```sh
-npm run unlink
+npm run cspell-unlink
 ```
 
 #### npm Global Install
