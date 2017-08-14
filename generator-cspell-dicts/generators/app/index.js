@@ -155,6 +155,8 @@ module.exports = class extends Generator {
       callback: () => {
         if (this.props.doBuild) {
           this.spawnCommand('npm', ['run', 'build']);
+          // Fetch .js files from utils.
+          this.spawnCommand('npm', ['run', 'prepublishOnly']);
         }
       }
     });
