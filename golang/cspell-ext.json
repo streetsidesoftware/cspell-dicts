@@ -16,7 +16,8 @@
             "languageId": "go",
             // Language local. i.e. en-US, de-AT, or ru. * will match all locals.
             "local": "*",
-            //
+            // It is common in Go to glue words together.
+            "allowCompoundWords": true,
             "ignoreRegExpList": [],
             "includeRegExpList": [],
             // regex patterns than can be used with ignoreRegExpList or includeRegExpList
