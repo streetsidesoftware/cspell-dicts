@@ -21,10 +21,11 @@
   "keywords": [
     "cspell",
     "python",
+    "Python",
     "dictionary",
     "spelling"
   ],
-  "main":"index.js",
+  "main": "index.js",
   "typings": "index.d.ts",
   "author": "Jason Dent",
   "license": "MIT",
@@ -35,8 +36,12 @@
   "devDependencies": {
     "cspell-tools": "^1.4.2"
   },
+  "dependencies": {
+    "configstore": "^3.1.0"
+  },
   "files": [
     "python.txt.gz",
+    "cspell-ext.json",
     "*.js",
     "*.d.ts"
   ]
