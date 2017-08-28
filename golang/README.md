@@ -1,6 +1,8 @@
-# Cspell golang Dictionary
+# Cspell Golang Dictionary
 
 This is a pre-built dictionary for use with cspell.
+
+Supports keywords and built-in library names up to Go 1.9.
 
 ## Usage
 
@@ -21,6 +23,9 @@ Building is only necessary if you want to modify the contents of the dictionary.
 ```sh
 npm run build
 ```
+
+## Contributors
+@AlekSi - Alexey Palazhchenko
 
 ## License
 
