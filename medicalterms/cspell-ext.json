@@ -1,9 +1,16 @@
 // cSpell Settings
 {
+    "id": "medical-terms",
+    "name": "Medical terms",
+    "description": "Medical Terms Dictionary",
     // List of dictionary files to add to the global list of dictionaries
     "dictionaryDefinitions": [
-        { "name": "medicalterms", "file": "./medicalterms-en.txt.gz" }
+        {
+            "name": "medical terms",
+            "description": "List of nearly 100,000 medical terms.",
+            "file": "./medicalterms-en.txt.gz"
+        }
     ],
     // Dictionaries to always be used.
-    "dictionaries": ["medicalterms"]
+    "dictionaries": ["medical terms"]
 }

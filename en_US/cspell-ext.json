@@ -1,8 +1,11 @@
 // cSpell Settings
 {
+    "id": "en-us",
+    "name": "American English Dictionary",
+    "description": "American English Dictionary",
     // List of dictionary files to add to the global list of dictionaries
     "dictionaryDefinitions": [
-        { "name": "en_us", "file": "./en_US.trie.gz", "repMap": [["'|`|’", "'"]] }
+        { "name": "en_us", "file": "./en_US.trie.gz", "repMap": [["'|`|’", "'"]], "description": "American English Dictionary" }
     ],
     // Dictionaries to always be used.
     // Generally left empty

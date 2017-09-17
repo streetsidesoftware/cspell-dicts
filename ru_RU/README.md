@@ -1,6 +1,7 @@
 # Cspell Russian Dictionary
 
 Russian dictionary for cspell.
+For a better dictionary, you might consider using `cspell-dict-russian` instead.
 
 This is a pre-built dictionary for use with cspell.
 

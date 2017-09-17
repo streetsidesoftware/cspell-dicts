@@ -1,8 +1,11 @@
 // cSpell Settings
 {
+    "id": "dotnet-dict",
+    "name": ".Net Dictionary",
+    "description": ".Net keywords.",
     // List of dictionary files to add to the global list of dictionaries
     "dictionaryDefinitions": [
-        { "name": "dotnet", "file": "./dotnet.txt.gz" }
+        { "name": "dotnet", "file": "./dotnet.txt.gz", "description": ".Net keywords." }
     ],
     // Dictionaries to always be used.
     // Generally left empty
