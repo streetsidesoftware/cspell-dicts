@@ -1,17 +1,36 @@
-# Cspell Golang Dictionary
+# Cspell Go Language Dictionary
+
+Go Language dictionary for cspell.
 
 This is a pre-built dictionary for use with cspell.
 
 Supports keywords and built-in library names up to Go 1.9.
 
-## Usage
+This dictionary is included by default in cSpell.
+
+## Installation
+
+Global Install and add to cspell global settings.
+
+```sh
+npm install -g cspell-dict-golang
+cspell-dict-golang-link
+```
+
+## Uninstall from cspell
+
+```sh
+cspell-dict-golang-unlink
+```
+
+## Manual Installation
 
 The `cspell-ext.json` file in this package should be added to the import section in your cspell.json file.
 
 ```javascript
 {
     // …
-    "import": ["<path to node>/cspell-dict-golang/cspell-ext.json"],
+    "import": ["<path to node_modules>/cspell-dict-golang/cspell-ext.json"],
     // …
 }
 ```
@@ -30,3 +49,4 @@ npm run build
 ## License
 
 MIT
+> Some packages may have other licenses included.
