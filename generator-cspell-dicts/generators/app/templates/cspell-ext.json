@@ -1,8 +1,15 @@
 // cSpell Settings
 {
+    "id": "<%= packageName %>",
+    "name": "<%= friendlyName %>",
+    "description": "<%= description %>",
     // List of dictionary files to add to the global list of dictionaries
     "dictionaryDefinitions": [
-        { "name": "<%= packageName %>", "file": "./<%= dstFileName %>" }
+        {
+            "name": "<%= packageName %>",
+            "file": "./<%= dstFileName %>",
+            "description": "<%= description %>"
+        }
     ],
     // Dictionaries to always be used.
     // Generally left empty
