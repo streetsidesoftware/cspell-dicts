@@ -5,7 +5,13 @@
     "description": "German (de-DE) Dictionary.",
     // List of dictionary files to add to the global list of dictionaries
     "dictionaryDefinitions": [
-        { "name": "de-de", "file": "./German_de_DE.trie.gz", "description": "German (de-DE) Dictionary." }
+        {
+            "name": "de-de",
+            "file": "./German_de_DE.trie.gz",
+            "description": "German (de-DE) Dictionary.",
+            // We should use compound words by default with German
+            "useCompounds": true
+        }
     ],
     // Dictionaries to always be used.
     // Generally left empty
@@ -29,9 +35,6 @@
             // Example: "pattern": [{ "name": "mdash", "pattern": "&mdash;" }]
             // This could be included in "ignoreRegExpList": ["mdash"]
             "patterns": [],
-            // Enable word compounds for now, this is not ideal, but it avoids a lot of false positives.
-            // Once proper support for word compounds is added, then this can be turned off.
-            "allowCompoundWords": true,
             // List of dictionaries to enable by name in `dictionaryDefinitions`
             "dictionaries": ["de-de"],
             // Dictionary definitions can also be supplied here. They are only used iff "languageId" and "local" match.
