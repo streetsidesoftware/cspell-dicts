@@ -49,4 +49,4 @@ MIT
 > Some packages may have other licenses included.
 
 GPLv2
-The catalan hunspell dictionary files are licensed under the GPLv2 license.
+> The catalan hunspell dictionary files are licensed under the GPLv2 license.
