@@ -15,6 +15,7 @@ Various [cspell](https://github.com/Jason3S/cspell) dictionaries. Each dictionar
 - [Russian](ru_RU) (Small)
 - [Russian](russian) (Large)
 - [Spanish](es_ES)
+- [Catalan](ca)
 
 
 ## Specialized Dictionaries
