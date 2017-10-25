@@ -16,6 +16,7 @@ Various [cspell](https://github.com/Jason3S/cspell) dictionaries. Each dictionar
 - [Russian](russian) (Large)
 - [Spanish](es_ES)
 - [Catalan](ca)
+- [Czech](cs_CZ)
 
 
 ## Specialized Dictionaries
@@ -103,6 +104,6 @@ From the dictionary directory.
 npm install -g
 ```
 
-Then run the link command found in the dictionary `README.md` file.  
-It has the following pattern: `cspell-dict-<name>-link`.  
+Then run the link command found in the dictionary `README.md` file.
+It has the following pattern: `cspell-dict-<name>-link`.
 To unlink: `cspell-dict-<name>-unlink`
