@@ -1,16 +1,18 @@
 {
   "name": "cspell-dict-php",
-  "version": "1.0.0",
+  "version": "1.0.1",
   "description": "Php dictionary for cspell.",
   "bin": {
     "cspell-dict-php-link": "./link.js",
     "cspell-dict-php-unlink": "./unlink.js"
   },
   "scripts": {
-    "build": "node --max_old_space_size=4096 node_modules/.bin/cspell-tools compile \"php.txt\" -o .",
+    "build": "cspell-tools compile \"php.txt\" -o .",
     "prepublishOnly": "cp ../util/* .",
-    "cspell-link": "node install.js",
-    "cspell-unlink": "node uninstall.js"
+    "cspell-link": "node link.js",
+    "cspell-unlink": "node unlink.js",
+    "publish-minor": "npm version minor && npm publish",
+    "publish-patch": "npm version patch && npm publish"
   },
   "repository": {
     "type": "git",
@@ -22,7 +24,7 @@
     "dictionary",
     "spelling"
   ],
-  "main":"index.js",
+  "main": "index.js",
   "typings": "index.d.ts",
   "author": "Jason Dent",
   "license": "MIT",

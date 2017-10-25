@@ -26,7 +26,7 @@ The `cspell-ext.json` file in this package should be added to the import section
 ```javascript
 {
     // …
-    "import": ["<path to node>/cspell-dict-php/cspell-ext.json"],
+    "import": ["<path to node_modules>/cspell-dict-php/cspell-ext.json"],
     // …
 }
 ```
@@ -42,3 +42,4 @@ npm run build
 ## License
 
 MIT
+> Some packages may have other licenses included.
