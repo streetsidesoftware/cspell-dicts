@@ -12,3 +12,5 @@
 ## Catalan
 - [Jordi Olivares Provencio](https://github.com/jordiolivares)
 
+## Czech
+- [Zereges](https://github.com/Zereges)
