@@ -1,6 +1,6 @@
 # Cspell C/C++ Dictionary
 
-C and C++ language dictionary for cspell.
+C/C++ Dictionary for cspell.
 
 This is a pre-built dictionary for use with cspell.
 

@@ -1,11 +1,15 @@
 // cSpell Settings
 {
     "id": "cpp-dict",
-    "name": "C & CPP Dictionary",
-    "description": "C & CPP keywords and common library functions.",
+    "name": "C/C++ Dictionary",
+    "description": "C/C++ Keywords and common library functions.",
     // List of dictionary files to add to the global list of dictionaries
     "dictionaryDefinitions": [
-        { "name": "cpp", "file": "./cpp.txt.gz", "description": "C & CPP keywords and common library functions." }
+        {
+            "name": "cpp",
+            "file": "./cpp.txt.gz",
+            "description": "C/C++ Keywords and common library functions."
+        }
     ],
     // Dictionaries to always be used.
     // Generally left empty
