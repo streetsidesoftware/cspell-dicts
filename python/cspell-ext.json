@@ -17,9 +17,10 @@
             "languageId": "python",
             "allowCompoundWords": true,
             "dictionaries": ["python"],
-            "ignoreRegExpList": [ "binary_string", "unicode_string" ],
+            "ignoreRegExpList": [ "binary_string", "f_string", "unicode_string" ],
             "patterns": [
                 { "name": "binary_string", "pattern": "\\bb'" },
+                { "name": "f_string", "pattern": "\\bf'" },
                 { "name": "unicode_string", "pattern": "\\bu'" }
             ]
         }
