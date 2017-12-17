@@ -14,3 +14,6 @@
 
 ## Czech
 - [Zereges](https://github.com/Zereges)
+
+## Python
+- [Federico Jaramillo Martínez](jmfederico) - added support for formatted strings, `f'...'`.
