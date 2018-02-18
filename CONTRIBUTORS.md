@@ -16,4 +16,7 @@
 - [Zereges](https://github.com/Zereges)
 
 ## Python
-- [Federico Jaramillo Martínez](jmfederico) - added support for formatted strings, `f'...'`.
+- [Federico Jaramillo Martínez](https://github.com/jmfederico) - added support for formatted strings, `f'...'`.
+
+## Rust
+- [Alexander Andreev](https://github.com/andreevlex)
