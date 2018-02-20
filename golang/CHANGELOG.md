@@ -1,6 +1,9 @@
 # Change Log
 
-# 1.1.2
+## 1.1.3
+- Add keywords for Go 1.10 (provided by AlekSi)
+
+## 1.1.2
 - Add dictionary description.
 
 ## 1.1.0
