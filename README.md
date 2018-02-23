@@ -2,7 +2,7 @@
 
 Various [cspell](https://github.com/Jason3S/cspell) dictionaries. Each dictionary is its own package. See `README.md` in each directory.
 
-## Dictionaries
+## Language Dictionaries
 
 - [Dutch](nl_NL)
 - [English - American](en_US) (Included by default in cspell and [VS Code Spell Checker](https://github.com/Jason-Rev/vscode-spell-checker))
@@ -18,10 +18,19 @@ Various [cspell](https://github.com/Jason3S/cspell) dictionaries. Each dictionar
 - [Catalan](ca)
 - [Czech](cs_CZ)
 
+## Programming Dictionaries
+
+- [cpp](cpp) - C and C++
+- [Django](django) - Django framework function names
+- [Go](golang)
+- [LaTex](latex)
+- [Python](python)
+- [Rust](rust)
 
 ## Specialized Dictionaries
 
-- [HTML Symbol Entities](https://github.com/Jason3S/cspell-dicts/tree/master/html-symbol-entities)
+- [HTML Symbol Entities](html-symbol-entities)
+- [Medical Terms](medicalterms)
 
 
 ## Contributing
