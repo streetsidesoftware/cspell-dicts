@@ -17,6 +17,7 @@ Various [cspell](https://github.com/Jason3S/cspell) dictionaries. Each dictionar
 - [Spanish](es_ES)
 - [Catalan](ca)
 - [Czech](cs_CZ)
+- [Ukrainian](uk_UA)
 
 ## Programming Dictionaries
 
