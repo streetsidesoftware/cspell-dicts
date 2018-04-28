@@ -1,5 +1,8 @@
 # Change Log
 
+## 1.2.4
+* Add words: *collider*
+
 ## 1.2.1
 - add alternate spelling for `cancellable`
 - Merge Hunspell-en_US with the current word list.
