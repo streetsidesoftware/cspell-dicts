@@ -1,15 +1,26 @@
 language: node_js
 node_js:
   - "node"
-  - "6"
+  - "8"
 script:
-  - cd golang
-  - npm install && npm run build && cd ..
-  - cd html-symbol-entities
-  - npm install && npm run build && cd ..
-  - cd php
-  - npm install && npm run build && cd ..
-  - cd python
-  - npm install && npm run build && cd ..
-  - cd cpp
-  - npm install && npm run build && cd ..
+  - push
+  - cd packages/golang
+  - npm install && npm run build
+  - pop
+  - push
+  - cd packages/html-symbol-entities
+  - npm install && npm run build
+  - pop
+  - push
+  - cd packages/php
+  - npm install && npm run build
+  - pop
+  - push
+  - cd packages/python
+  - npm install && npm run build
+  - pop
+  - push
+  - cd packages/cpp
+  - npm install && npm run build
+  - pop
+
