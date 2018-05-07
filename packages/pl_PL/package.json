@@ -1,0 +1,49 @@
+{
+  "name": "cspell-dict-pl_pl",
+  "version": "1.0.6",
+  "description": "Polish dictionary for cspell.",
+  "bin": {
+    "cspell-dict-pl-pl-link": "./link.js",
+    "cspell-dict-pl-pl-unlink": "./unlink.js"
+  },
+  "scripts": {
+    "build": "cspell-tools compile-trie \"pl_pl.dic\" -o .",
+    "prepublishOnly": "cp ../util/* .",
+    "cspell-link": "node link.js",
+    "cspell-unlink": "node unlink.js",
+    "publish-minor": "npm version minor && npm publish",
+    "publish-patch": "npm version patch && npm publish"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Jason3S/cspell-dicts.git"
+  },
+  "keywords": [
+    "cspell",
+    "pl_PL",
+    "Polish",
+    "dictionary",
+    "spelling"
+  ],
+  "main": "index.js",
+  "typings": "index.d.ts",
+  "author": "Jason Dent",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/Jason3S/cspell-dicts/issues"
+  },
+  "homepage": "https://github.com/Jason3S/cspell-dicts/blob/master/pl_PL/README.md",
+  "devDependencies": {
+    "cspell-tools": "3"
+  },
+  "dependencies": {
+    "configstore": "^3.1.0"
+  },
+  "files": [
+    "pl_pl.trie.gz",
+    "Polish.txt",
+    "cspell-ext.json",
+    "*.js",
+    "*.d.ts"
+  ]
+}
