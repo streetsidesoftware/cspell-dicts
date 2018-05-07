@@ -4,34 +4,36 @@ Various [cspell](https://github.com/Jason3S/cspell) dictionaries. Each dictionar
 
 ## Language Dictionaries
 
-- [Dutch](nl_NL)
-- [English - American](en_US) (Included by default in cspell and [VS Code Spell Checker](https://github.com/Jason-Rev/vscode-spell-checker))
-- [English - British](en_GB) (Include by default in cspell and VS Code Spell Checker)
-- [French](fr_FR)
-- [German](de_DE)
-- [Polish](pl_PL)
-- [Portuguese](pt_PT)
-- [Portuguese - Brazilian](pt_BR)
-- [Russian](ru_RU) (Small)
-- [Russian](russian) (Large)
-- [Spanish](es_ES)
-- [Catalan](ca)
-- [Czech](cs_CZ)
-- [Ukrainian](uk_UA)
+- [Catalan](packages/ca)
+- [Czech](packages/cs_CZ)
+- [Dutch](packages/nl_NL)
+- [English - American](packages/en_US) (Included by default in cspell and [VS Code Spell Checker](https://github.com/Jason-Rev/vscode-spell-checker))
+- [English - British](packages/en_GB) (Include by default in cspell and VS Code Spell Checker)
+- [French](packages/fr_FR)
+- [German](packages/de_DE)
+- [Polish](packages/pl_PL)
+- [Portuguese - Brazilian](packages/pt_BR)
+- [Portuguese](packages/pt_PT)
+- [Russian](packages/ru_RU) (Small)
+- [Russian](packages/russian) (Large)
+- [Spanish](packages/es_ES)
+- [Swedish](packages/sv)
+- [Ukrainian](packages/uk_UA)
 
 ## Programming Dictionaries
 
-- [cpp](cpp) - C and C++
-- [Django](django) - Django framework function names
-- [Go](golang)
-- [LaTex](latex)
-- [Python](python)
-- [Rust](rust)
+- [cpp](packages/cpp) - C and C++
+- [Django](packages/django) - Django framework function names
+- [Go](packages/golang)
+- [LaTex](packages/latex)
+- [PHP](packages/php)
+- [Python](packages/python)
+- [Rust](packages/rust)
 
 ## Specialized Dictionaries
 
-- [HTML Symbol Entities](html-symbol-entities)
-- [Medical Terms](medicalterms)
+- [HTML Symbol Entities](packages/html-symbol-entities)
+- [Medical Terms](packages/medicalterms)
 
 
 ## Contributing
