@@ -5,6 +5,7 @@
 | Catalan               | [Jordi Olivares Provencio](https://github.com/jordiolivares) |
 | city-names-finland    | [Daniel Schildt](https://github.com/d2s) |
 | Czech                 | [Zereges](https://github.com/Zereges) |
+| Danish                | [Viktor Hundahl Strate](https://github.com/viktorstrate) |
 | Django                | [canarduck](https://github.com/canarduck) |
 | Go                    | [Alexey Palazhchenko](https://github.com/AlekSi) |
 | Python                | [Federico Jaramillo Martínez](https://github.com/jmfederico) - added support for formatted strings, `f'...'`. |

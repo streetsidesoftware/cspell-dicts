@@ -39,6 +39,10 @@ Building is only necessary if you want to modify the contents of the dictionary.
 npm run build
 ```
 
+## Contributors
+
+* [Viktor Hundahl Strate](https://github.com/viktorstrate)
+
 ## License
 
 MIT
