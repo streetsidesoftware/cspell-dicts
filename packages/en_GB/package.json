@@ -8,7 +8,7 @@
   },
   "scripts": {
     "build": "cspell-tools compile-trie \"wordsEnGb.txt\" -o .",
-    "prepublishOnly": "cp ../util/* .",
+    "prepublishOnly": "cp ../../util/* .",
     "cspell-link": "node install.js",
     "cspell-unlink": "node uninstall.js",
     "publish-minor": "npm version minor && npm publish",

@@ -8,7 +8,7 @@
   },
   "scripts": {
     "build": "cspell-tools compile-trie \"ru_ru.dic\" -o .",
-    "prepublishOnly": "cp ../util/* .",
+    "prepublishOnly": "cp ../../util/* .",
     "cspell-link": "node link.js",
     "cspell-unlink": "node unlink.js",
     "publish-minor": "npm version minor && npm publish",
