@@ -1,3 +1,9 @@
+### Package
+
+This package, excluding the hunspell files, is licensed under MIT.
+
+### HUNSPELL DICTIONARIES
+
 Stavekontrolden - Danish dictionary files for Hunspell
 Version 1.4 - 2018-04-15
 da_DK.dic, da_DK.aff: © 2009 Foreningen for frit tilgængelige sprogværktøjer
