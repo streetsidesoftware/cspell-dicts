@@ -6,7 +6,7 @@ Various [cspell](https://github.com/Jason3S/cspell) dictionaries. Each dictionar
 
 - [Catalan](packages/ca)
 - [Czech](packages/cs_CZ)
-- [Danish] (packages/da_DK)
+- [Danish](packages/da_DK)
 - [Dutch](packages/nl_NL)
 - [English - American](packages/en_US) (Included by default in cspell and [VS Code Spell Checker](https://github.com/Jason-Rev/vscode-spell-checker))
 - [English - British](packages/en_GB) (Include by default in cspell and VS Code Spell Checker)

@@ -2,7 +2,7 @@
 
 Danish dictionary for cspell.
 
-This is a pre-built dictionary for use with cspell.
+This is a pre-built dictionary, based on [stavekontrolden.dk](http://www.stavekontrolden.dk/main/top/index.php), for use with cspell.
 
 ## Installation
 
@@ -45,5 +45,10 @@ npm run build
 
 ## License
 
-MIT
-> Some packages may have other licenses included.
+This package is licensed under MIT
+
+The dictionary is licensed under the following licenses. See LICENSE for more
+
+GNU GPL version 2.0
+GNU LGPL version 2.1
+Mozilla MPL version 1.1
