@@ -22,10 +22,18 @@
         "**/.git/**",
         ".vscode"
     ],
+    "import": [
+        "./packages/es_ES/cspell-ext.json",
+        "./packages/da_DK/cspell-ext.json"
+    ],
     "overrides": [
         {
             "filename": "**/nl_NL/**",
             "language": "en,nl"
+        },
+        {
+            "filename": "**/da_DK/**",
+            "language": "en,da"
         },
         {
             "filename": "**/de_DE/**",
