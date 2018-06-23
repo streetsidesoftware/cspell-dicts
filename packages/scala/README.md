@@ -43,3 +43,7 @@ npm run build
 
 MIT
 > Some packages may have other licenses included.
+
+## Contributors
+
+* [Arthur Peters](https://github.com/arthurp) contributed the word list: [Gist](https://gist.github.com/arthurp/20cd632ce0643a6ec3580276155bcc1c)
