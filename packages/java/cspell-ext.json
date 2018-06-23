@@ -28,7 +28,12 @@
             // Adding patterns to the "includeRegExpList" to only include matching patterns
             "includeRegExpList": [],
             // To exclude patterns, add them to "ignoreRegExpList"
-            "ignoreRegExpList": [],
+            "ignoreRegExpList": [
+                // Ignore imports
+                "/^\\s*import\\s+\\w+/",
+                // Ignore member functions etc, these are checked by the compiler.
+                "/\\.\\w+/"
+            ],
             // regex patterns than can be used with ignoreRegExpList or includeRegExpList
             // Example: "pattern": [{ "name": "mdash", "pattern": "&mdash;" }]
             // This could be included in "ignoreRegExpList": ["mdash"]
