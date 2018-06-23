@@ -30,7 +30,7 @@
             // To exclude patterns, add them to "ignoreRegExpList"
             "ignoreRegExpList": [
                 // Ignore imports
-                "/^\\s*import\\s+\\w+/",
+                "/^\\s*import\\s+\\w+/m",
                 // Ignore member functions etc, these are checked by the compiler.
                 "/\\.\\w+/"
             ],
