@@ -5,6 +5,8 @@ const yosay = require('yosay');
 const path = require('path');
 const mkdirp = require('mkdirp');
 
+const packagesDir = 'packages';
+
 module.exports = class extends Generator {
   constructor(args, opts) {
     super(args, opts);
@@ -142,24 +144,22 @@ module.exports = class extends Generator {
       this.log(
         'Creating Folder: ' + this.props.name
       );
-      mkdirp(this.props.name);
-      this.destinationRoot(this.destinationPath(this.props.name));
+      const dir = path.join(packagesDir, this.props.name);
+      mkdirp(this.destinationPath(dir));
+      this.destinationRoot(this.destinationPath(dir));
     }
   }
 
   install() {
-    this.installDependencies({
-      npm: true,
-      bower: false,
-      yarn: false,
-      callback: () => {
+    this.npmInstall()
+      .then(() => {
         if (this.props.doBuild) {
           this.spawnCommand('npm', ['run', 'build']);
         }
         // Fetch .js files from utils.
         this.spawnCommand('npm', ['run', 'prepublishOnly']);
       }
-    });
+    );
   }
 };
 
