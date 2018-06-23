@@ -3,12 +3,14 @@ defcallback
 defexception
 defdelegate
 defguard
+defguardp
 defimpl
 defmacro
 defmacrocallback
 defmacrop
 defmodule
 defopaque
+defoverridable
 defp
 defprotocol
 defspec
@@ -17,6 +19,7 @@ deftypep
 
 Atom
 Bitstring
+Charlist
 Float
 Integer
 List
