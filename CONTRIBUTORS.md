@@ -5,6 +5,7 @@
 | Catalan               | [Jordi Olivares Provencio](https://github.com/jordiolivares) |
 | city-names-finland    | [Daniel Schildt](https://github.com/d2s) |
 | Czech                 | [Zereges](https://github.com/Zereges) |
+| Elixir                | [Todoroki / U-dory](https://github.com/ndac-todoroki) |
 | Danish                | [Viktor Hundahl Strate](https://github.com/viktorstrate) |
 | Django                | [canarduck](https://github.com/canarduck) |
 | Go                    | [Alexey Palazhchenko](https://github.com/AlekSi) |
@@ -16,6 +17,8 @@
 <!--
     cspell:words Jordi Olivares Provencio
     cspell:words Daniel Schildt
+    cspell:words Todoroki / U-dory
+    cspell:words Viktor Hundahl Strate
     cspell:words Zereges
     cspell:words canarduck
     cspell:words Alexey Palazhchenko
