@@ -104,6 +104,18 @@ This will add an entry in the cspell global config to import the `cspell-ext.jso
 
 Use either VS Code or cspell to verify that files spell check correctly.
 
+##### Verify with `cspell`
+
+* Install `cspell`: `npm install -g cspell`
+* Check a file: `cspell check path/to/source/file.ext`
+
+Checking a file will show you what has been ignored (gray) as well as what is considered an error (red):
+
+![image](https://user-images.githubusercontent.com/3740137/41818772-72e20458-77b5-11e8-8d81-0f836ecf4e62.png)
+
+
+##### Clean up
+
 Remember to unlink when you are done:
 
 ```sh
