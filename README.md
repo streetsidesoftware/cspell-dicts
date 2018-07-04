@@ -12,6 +12,7 @@ Various [cspell](https://github.com/Jason3S/cspell) dictionaries. Each dictionar
 - [English - British](packages/en_GB) (Include by default in cspell and VS Code Spell Checker)
 - [French](packages/fr_FR)
 - [German](packages/de_DE)
+- [Hebrew](packages/he)
 - [Polish](packages/pl_PL)
 - [Portuguese - Brazilian](packages/pt_BR)
 - [Portuguese](packages/pt_PT)
