@@ -20,6 +20,7 @@ Various [cspell](https://github.com/Jason3S/cspell) dictionaries. Each dictionar
 - [Spanish](packages/es_ES)
 - [Swedish](packages/sv)
 - [Ukrainian](packages/uk_UA)
+- [Vietnamese](packages/vi_VN)
 
 ## Programming Dictionaries
 
