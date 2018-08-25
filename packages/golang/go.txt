@@ -1,4 +1,5 @@
 386
+AAAAResource
 ADD
 ADD_ASSIGN
 AEAD
@@ -72,6 +73,7 @@ ARM_RELOC_VANILLA
 ARM_THUMB_32BIT_BRANCH
 ARM_THUMB_RELOC_BR22
 ARROW
+AResource
 ASCII_Hex_Digit
 ASSIGN
 Above
@@ -127,6 +129,8 @@ AddUint8
 AddUint8LengthPrefixed
 AddUintptr
 AddValue
+Additional
+AdditionalHeader
 Addr
 AddrError
 AddrType
@@ -139,6 +143,7 @@ Addrs
 Adjtime
 AdjustStream
 Adlam
+Advance
 After
 AfterFilter
 AfterFunc
@@ -149,9 +154,13 @@ AlgorithmIdentifier
 Align
 AlignRight
 Alignof
+AllAdditionals
+AllAnswers
+AllAuthorities
 AllDecls
 AllErrors
 AllMethods
+AllQuestions
 AllocedBytesPerOp
 AllocsPerOp
 AllocsPerRun
@@ -167,6 +176,9 @@ And
 And8
 AndNot
 Anonymous
+Answer
+AnswerHeader
+AnyOverlap
 Append
 AppendBool
 AppendCertsFromPEM
@@ -174,6 +186,7 @@ AppendFloat
 AppendFormat
 AppendHuffmanString
 AppendInt
+AppendPack
 AppendQuote
 AppendQuoteRune
 AppendQuoteRuneToASCII
@@ -289,6 +302,8 @@ AttributeTypeAndValueSET
 August
 Auth
 Authenticate
+Authority
+AuthorityHeader
 Available
 Avestan
 AwayFromZero
@@ -510,6 +525,7 @@ CMYK
 CMYKAt
 CMYKModel
 CMYKToRGB
+CNAMEResource
 COFFSymbol
 COFFSymbolSize
 COLON
@@ -621,13 +637,18 @@ Chroot
 Chtimes
 Cipher
 Class
+ClassANY
 ClassAddress
 ClassApplication
 ClassBlock
+ClassCHAOS
+ClassCSNET
 ClassConstant
 ClassContextSpecific
 ClassExprLoc
 ClassFlag
+ClassHESIOD
+ClassINET
 ClassLinePtr
 ClassLocListPtr
 ClassMacPtr
@@ -774,6 +795,7 @@ Cos
 Cosh
 Cot
 Count
+CountString
 Cover
 CoverBlock
 CoverMode
@@ -808,6 +830,7 @@ CurveP256
 CurveP384
 CurveP521
 CurveParams
+Cutover
 Cypriot
 Cyrillic
 DB
@@ -1473,6 +1496,7 @@ EmptyOpContext
 EmptyStmt
 EmptyWordBoundary
 Enable
+EnableCompression
 Enabled
 Encode
 EncodeAll
@@ -1582,6 +1606,7 @@ ErrNotExist
 ErrNotFat
 ErrNotFound
 ErrNotMultipart
+ErrNotStarted
 ErrNotSupported
 ErrOutputContext
 ErrPartialCharset
@@ -1595,6 +1620,7 @@ ErrRange
 ErrRangeLoopReentry
 ErrRemoveArgument
 ErrRequestAborted
+ErrSectionDone
 ErrServerClosed
 ErrShortBody
 ErrShortBuffer
@@ -1722,6 +1748,7 @@ ExpandString
 Expired
 ExplicitMethod
 Expm1
+ExportKeyingMaterial
 Exported
 Expr
 ExprStmt
@@ -1888,6 +1915,7 @@ FindStringSubmatch
 FindStringSubmatchIndex
 FindSubmatch
 FindSubmatchIndex
+Finish
 First
 FirstBoundary
 FirstBoundaryInString
@@ -1988,6 +2016,7 @@ Frames
 FreeOSMemory
 Frexp
 Friday
+FromEnvironment
 FromSlash
 Front
 Fscan
@@ -2201,6 +2230,7 @@ Header64
 HeaderBlockFragment
 HeaderEncoder
 HeaderField
+HeaderValuesContainsToken
 HeadersEnded
 Hebrew
 Hello
@@ -2690,14 +2720,17 @@ Indent
 Index
 IndexAny
 IndexByte
+IndexByteString
 IndexExpr
 IndexFunc
 IndexRune
+IndexString
 Indirect
 Inet4Addr
 Inet4Pktinfo
 Inet6Addr
 Inet6Pktinfo
+InexactOverlap
 Inf
 Info
 Inherited
@@ -2822,6 +2855,7 @@ IsMulticast
 IsMulticastCapable
 IsNaN
 IsNil
+IsNonblock
 IsNormal
 IsNormalString
 IsNotExist
@@ -2848,6 +2882,7 @@ IsSymbol
 IsSystemDLL
 IsTimeout
 IsTitle
+IsTokenRune
 IsTrue
 IsType
 IsUint64
@@ -3195,6 +3230,7 @@ MS_SYNC
 MUL
 MUL_ASSIGN
 MX
+MXResource
 Machine
 Magic
 Magic32
@@ -3268,6 +3304,7 @@ MatchString
 Max
 MaxASCII
 MaxBase
+MaxBruteForce
 MaxBytesReader
 MaxCap
 MaxCase
@@ -3281,6 +3318,7 @@ MaxInt32
 MaxInt64
 MaxInt8
 MaxLatin1
+MaxLen
 MaxOpenFiles
 MaxPrec
 MaxRune
@@ -3295,6 +3333,7 @@ MaxVarintLen16
 MaxVarintLen32
 MaxVarintLen64
 May
+MaybeReadByte
 Mc
 Me
 Meetei_Mayek
@@ -3474,6 +3513,7 @@ NRGBAAt
 NRGBAModel
 NS
 NSM
+NSResource
 NT_FPREGSET
 NT_PRPSINFO
 NT_PRSTATUS
@@ -3573,6 +3613,7 @@ NewMethodSet
 NewNRGBA
 NewNRGBA64
 NewNYCbCrA
+NewName
 NewNamed
 NewOFB
 NewObj
@@ -3799,6 +3840,7 @@ OpBeginLine
 OpBeginText
 OpCapture
 OpCharClass
+OpCode
 OpConcat
 OpEmptyMatch
 OpEndLine
@@ -3899,6 +3941,7 @@ PSSWithSHA512
 PTRACE_CONT
 PTRACE_KILL
 PTRACE_TRACEME
+PTRResource
 PT_ATTACH
 PT_ATTACHEXC
 PT_CONTINUE
@@ -3929,6 +3972,7 @@ PT_TRACE_ME
 PT_WRITE_D
 PT_WRITE_I
 PT_WRITE_U
+Pack
 Package
 PackageClauseOnly
 PackageExports
@@ -4000,6 +4044,7 @@ ParseTracebacks
 ParseUint
 ParseUnixRights
 Parsed
+Parser
 Part
 Password
 Path
@@ -4106,6 +4151,7 @@ Protocol
 ProtocolError
 ProtocolNotSupported
 ProxyFromEnvironment
+ProxyFunc
 ProxyURL
 Prune
 Ps
@@ -4126,6 +4172,7 @@ PublicSuffixList
 Publish
 Punct
 Punycode
+PunycodeHostPort
 Push
 PushBack
 PushBackList
@@ -4154,6 +4201,7 @@ QueryRowContext
 QueryUnescape
 Queryer
 QueryerContext
+Question
 QuickSpan
 QuickSpanString
 Quit
@@ -4171,6 +4219,13 @@ R
 RANGE
 RBRACE
 RBRACK
+RCode
+RCodeFormatError
+RCodeNameError
+RCodeNotImplemented
+RCodeRefused
+RCodeServerFailure
+RCodeSuccess
 RDNSequence
 RECV
 REM
@@ -5294,6 +5349,9 @@ ResolveTCPAddr
 ResolveUDPAddr
 ResolveUnixAddr
 Resolver
+Resource
+ResourceBody
+ResourceHeader
 Response
 ResponseRecorder
 ResponseWriter
@@ -5568,6 +5626,7 @@ SIOCSIFVLAN
 SIOCSLIFPHYADDR
 SIOCSLOWAT
 SIOCSPGRP
+SOAResource
 SOCK_DGRAM
 SOCK_MAXADDRLEN
 SOCK_RAW
@@ -5617,6 +5676,7 @@ SO_USELOOPBACK
 SO_WANTMORE
 SO_WANTOOBFLAG
 SRV
+SRVResource
 STAR
 STB_GLOBAL
 STB_HIOS
@@ -6324,6 +6384,13 @@ SizesFor
 Sk
 Skip
 SkipASN1
+SkipAdditional
+SkipAllAdditionals
+SkipAllAnswers
+SkipAllAuthorities
+SkipAllQuestions
+SkipAnswer
+SkipAuthority
 SkipChildren
 SkipComments
 SkipDir
@@ -6331,6 +6398,7 @@ SkipFlaky
 SkipFlakyNet
 SkipNow
 SkipOptionalASN1
+SkipQuestion
 SkipSpace
 Skipf
 Skipped
@@ -6406,10 +6474,14 @@ StampMilli
 StampNano
 StarExpr
 Start
+StartAdditionals
+StartAnswers
+StartAuthorities
 StartCPUProfile
 StartCond
 StartElement
 StartProcess
+StartQuestions
 StartRegion
 StartRequest
 StartResponse
@@ -6737,6 +6809,7 @@ TLS_RSA_WITH_AES_256_GCM_SHA384
 TLS_RSA_WITH_RC4_128_SHA
 TODO
 TOSTOP
+TXTResource
 TYPE
 TabIndent
 Table
@@ -6948,12 +7021,17 @@ Tx
 TxOptions
 Typ
 Type
+TypeA
+TypeAAAA
+TypeALL
+TypeAXFR
 TypeAndValue
 TypeAssertExpr
 TypeAssertionError
 TypeBlock
 TypeBundle
 TypeByExtension
+TypeCNAME
 TypeChar
 TypeCont
 TypeDir
@@ -6964,16 +7042,25 @@ TypeFlag
 TypeGNULongLink
 TypeGNULongName
 TypeGNUSparse
+TypeHINFO
 TypeLink
+TypeMINFO
+TypeMX
+TypeNS
 TypeName
 TypeObj
 TypeOf
+TypePTR
 TypeReg
 TypeRegA
+TypeSOA
+TypeSRV
 TypeSpec
 TypeString
 TypeSwitchStmt
 TypeSymlink
+TypeTXT
+TypeWKS
 TypeXGlobalHeader
 TypeXHeader
 TypedefType
@@ -7049,6 +7136,7 @@ UnmarshalWithParams
 Unmarshaler
 UnmarshalerAttr
 Unmount
+Unpack
 Unquote
 UnquoteChar
 UnquoteUsage
@@ -7115,8 +7203,12 @@ VWERASE
 Vai
 Val
 Valid
+ValidHeaderFieldName
+ValidHeaderFieldValue
+ValidHostHeader
 ValidRune
 ValidString
+ValidTrailerHeader
 Validate
 ValidateForRegistration
 ValidateLabels
@@ -7317,12 +7409,14 @@ break
 bufio
 build
 byte
+bytealg
 bytes
 bzip2
 cap
 case
 cgi
 cgo
+chacha20
 chacha20poly1305
 chan
 cipher
@@ -7354,6 +7448,8 @@ default
 defer
 delete
 des
+dns
+dnsmessage
 doc
 dragonfly
 draw
@@ -7420,6 +7516,8 @@ hpack
 html
 http
 http2
+httpguts
+httpproxy
 httptest
 httptrace
 httputil
@@ -7501,6 +7599,7 @@ quick
 quotedprintable
 race
 rand
+randutil
 range
 rc4
 real
@@ -7568,6 +7667,7 @@ uint64
 uint8
 uintptr
 unicode
+unix
 unsafe
 url
 user
