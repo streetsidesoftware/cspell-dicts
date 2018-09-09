@@ -26,17 +26,21 @@ Various [cspell](https://github.com/Jason3S/cspell) dictionaries. Each dictionar
 
 - [cpp](packages/cpp) - C and C++
 - [Django](packages/django) - Django framework function names
+- [Elixir](packages/elixir)
 - [Go](packages/golang)
+- [Java](packages/java)
 - [LaTex](packages/latex)
 - [PHP](packages/php)
 - [Python](packages/python)
 - [Rust](packages/rust)
+- [Scala](packages/scala)
 
 ## Specialized Dictionaries
 
 - [HTML Symbol Entities](packages/html-symbol-entities)
+- [lorem ipsum](packages/lorem-ipsum)
 - [Medical Terms](packages/medicalterms)
-
+- [Scientific Terms](packages/scientific_terms_US)
 
 ## Contributing
 
