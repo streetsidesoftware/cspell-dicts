@@ -8,7 +8,7 @@
     "cspell-dict-he-unlink": "./unlink.js"
   },
   "scripts": {
-    "build": "cspell-tools compile \"he.dic\" -o .",
+    "build": "cspell-tools compile-trie \"hunspell/he.dic.txt\" -o .",
     "prepublishOnly": "cp ../../util/* .",
     "cspell-link": "node link.js",
     "cspell-unlink": "node unlink.js",
