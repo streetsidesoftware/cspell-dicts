@@ -12,6 +12,7 @@ Various [cspell](https://github.com/Jason3S/cspell) dictionaries. Each dictionar
 - [English - British](packages/en_GB) (Include by default in cspell and VS Code Spell Checker)
 - [French](packages/fr_FR)
 - [German](packages/de_DE)
+- [Hebrew](packages/he)
 - [Polish](packages/pl_PL)
 - [Portuguese - Brazilian](packages/pt_BR)
 - [Portuguese](packages/pt_PT)
@@ -20,22 +21,27 @@ Various [cspell](https://github.com/Jason3S/cspell) dictionaries. Each dictionar
 - [Spanish](packages/es_ES)
 - [Swedish](packages/sv)
 - [Ukrainian](packages/uk_UA)
+- [Vietnamese](packages/vi_VN)
 
 ## Programming Dictionaries
 
 - [cpp](packages/cpp) - C and C++
 - [Django](packages/django) - Django framework function names
+- [Elixir](packages/elixir)
 - [Go](packages/golang)
+- [Java](packages/java)
 - [LaTex](packages/latex)
 - [PHP](packages/php)
 - [Python](packages/python)
 - [Rust](packages/rust)
+- [Scala](packages/scala)
 
 ## Specialized Dictionaries
 
 - [HTML Symbol Entities](packages/html-symbol-entities)
+- [lorem ipsum](packages/lorem-ipsum)
 - [Medical Terms](packages/medicalterms)
-
+- [Scientific Terms](packages/scientific_terms_US)
 
 ## Contributing
 
@@ -103,6 +109,18 @@ npm run cspell-link
 This will add an entry in the cspell global config to import the `cspell-ext.json` file in the dictionary directory.
 
 Use either VS Code or cspell to verify that files spell check correctly.
+
+##### Verify with `cspell`
+
+* Install `cspell`: `npm install -g cspell`
+* Check a file: `cspell check path/to/source/file.ext`
+
+Checking a file will show you what has been ignored (gray) as well as what is considered an error (red):
+
+![image](https://user-images.githubusercontent.com/3740137/41818772-72e20458-77b5-11e8-8d81-0f836ecf4e62.png)
+
+
+##### Clean up
 
 Remember to unlink when you are done:
 

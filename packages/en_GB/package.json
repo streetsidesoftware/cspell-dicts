@@ -1,6 +1,6 @@
 {
   "name": "cspell-dict-en-gb",
-  "version": "1.1.4",
+  "version": "1.1.5",
   "description": "British English dictionary for cspell.",
   "bin": {
     "cspell-dict-en-gb-link": "./link.js",
@@ -33,10 +33,10 @@
   },
   "homepage": "https://github.com/Jason3S/cspell-dicts/blob/master/en_GB/README.md",
   "devDependencies": {
-    "cspell-tools": "3"
+    "cspell-tools": "^3.0.3"
   },
   "dependencies": {
-    "configstore": "^3.1.1"
+    "configstore": "^3.1.2"
   },
   "files": [
     "wordsEnGb.trie.gz",

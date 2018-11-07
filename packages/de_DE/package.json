@@ -1,6 +1,6 @@
 {
   "name": "cspell-dict-de-de",
-  "version": "1.1.9",
+  "version": "1.1.10",
   "description": "German dictionary for cspell.",
   "bin": {
     "cspell-dict-de-de-link": "./link.js",
@@ -34,10 +34,10 @@
   },
   "homepage": "https://github.com/Jason3S/cspell-dicts/blob/master/de_DE/README.md",
   "devDependencies": {
-    "cspell-tools": "3"
+    "cspell-tools": "^3.0.3"
   },
   "dependencies": {
-    "configstore": "^3.1.0"
+    "configstore": "^3.1.2"
   },
   "files": [
     "German_de_DE.trie.gz",

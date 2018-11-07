@@ -1,6 +1,6 @@
 {
   "name": "cspell-dict-cpp",
-  "version": "1.1.8",
+  "version": "1.1.9",
   "description": "C/C++ Dictionary dictionary for cspell.",
   "bin": {
     "cspell-dict-cpp-link": "./link.js",
@@ -36,10 +36,10 @@
   },
   "homepage": "https://github.com/Jason3S/cspell-dicts/blob/master/cpp/README.md",
   "devDependencies": {
-    "cspell-tools": "3"
+    "cspell-tools": "^3.0.3"
   },
   "dependencies": {
-    "configstore": "^3.1.0"
+    "configstore": "^3.1.2"
   },
   "files": [
     "cpp.txt.gz",

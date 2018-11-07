@@ -1,6 +1,6 @@
 {
   "name": "cspell-dict-pt-br",
-  "version": "1.0.4",
+  "version": "1.0.5",
   "description": "Brazilian Portuguese dictionary for cspell.",
   "bin": {
     "cspell-dict-pt-br-link": "./link.js",
@@ -34,10 +34,10 @@
   },
   "homepage": "https://github.com/Jason3S/cspell-dicts/blob/master/pt_BR/README.md",
   "devDependencies": {
-    "cspell-tools": "3"
+    "cspell-tools": "^3.0.3"
   },
   "dependencies": {
-    "configstore": "^3.1.0"
+    "configstore": "^3.1.2"
   },
   "files": [
     "Portuguese-Brazilian.trie.gz",

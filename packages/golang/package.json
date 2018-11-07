@@ -1,6 +1,6 @@
 {
   "name": "cspell-dict-golang",
-  "version": "1.1.5",
+  "version": "1.1.6",
   "description": "Go Language dictionary for cspell.",
   "bin": {
     "cspell-dict-golang-link": "./link.js",
@@ -35,10 +35,10 @@
   },
   "homepage": "https://github.com/Jason3S/cspell-dicts/blob/master/golang/README.md",
   "devDependencies": {
-    "cspell-tools": "3"
+    "cspell-tools": "^3.0.3"
   },
   "dependencies": {
-    "configstore": "^3.1.0"
+    "configstore": "^3.1.2"
   },
   "files": [
     "go.txt.gz",

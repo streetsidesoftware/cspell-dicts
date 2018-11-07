@@ -1,6 +1,6 @@
 {
   "name": "cspell-dict-es-es",
-  "version": "1.0.7",
+  "version": "1.0.8",
   "description": "Spanish dictionary for cspell.",
   "bin": {
     "cspell-dict-es-es-link": "./link.js",
@@ -34,10 +34,10 @@
   },
   "homepage": "https://github.com/Jason3S/cspell-dicts/blob/master/es_ES/README.md",
   "devDependencies": {
-    "cspell-tools": "3"
+    "cspell-tools": "^3.0.3"
   },
   "dependencies": {
-    "configstore": "^3.1.0"
+    "configstore": "^3.1.2"
   },
   "files": [
     "Spanish.trie.gz",

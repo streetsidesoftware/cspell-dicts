@@ -1,0 +1,48 @@
+{
+  "name": "cspell-dict-vi-vn",
+  "version": "1.0.1",
+  "description": "Vietnamese dictionary for cspell.",
+  "bin": {
+    "cspell-dict-vi-vn-link": "./link.js",
+    "cspell-dict-vi-vn-unlink": "./unlink.js"
+  },
+  "scripts": {
+    "build": "cspell-tools compile-trie \"vi.dic\" -o .",
+    "prepublishOnly": "cp ../../util/* .",
+    "cspell-link": "node link.js",
+    "cspell-unlink": "node unlink.js",
+    "publish-minor": "npm version minor && npm publish",
+    "publish-patch": "npm version patch && npm publish"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Jason3S/cspell-dicts.git"
+  },
+  "keywords": [
+    "cspell",
+    "vi_VN",
+    "Vietnamese",
+    "dictionary",
+    "spelling"
+  ],
+  "main": "index.js",
+  "typings": "index.d.ts",
+  "author": "Jason Dent",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/Jason3S/cspell-dicts/issues"
+  },
+  "homepage": "https://github.com/Jason3S/cspell-dicts/blob/master/vi_VN/README.md",
+  "devDependencies": {
+    "cspell-tools": "^3.0.0"
+  },
+  "dependencies": {
+    "configstore": "^3.1.0"
+  },
+  "files": [
+    "vi.trie.gz",
+    "cspell-ext.json",
+    "*.js",
+    "*.d.ts"
+  ]
+}

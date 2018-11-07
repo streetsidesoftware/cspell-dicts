@@ -1,6 +1,6 @@
 {
   "name": "cspell-dict-html-symbol-entities",
-  "version": "1.0.4",
+  "version": "1.0.5",
   "description": "Html Symbol Entities dictionary for cspell.",
   "bin": {
     "cspell-dict-html-symbol-entities-link": "./link.js",
@@ -35,10 +35,10 @@
   },
   "homepage": "https://github.com/Jason3S/cspell-dicts/blob/master/html-symbol-entities/README.md",
   "devDependencies": {
-    "cspell-tools": "3"
+    "cspell-tools": "^3.0.3"
   },
   "dependencies": {
-    "configstore": "^3.1.0"
+    "configstore": "^3.1.2"
   },
   "files": [
     "entities.txt.gz",

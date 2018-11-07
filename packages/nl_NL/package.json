@@ -1,6 +1,6 @@
 {
   "name": "cspell-dict-nl-nl",
-  "version": "1.0.12",
+  "version": "1.0.13",
   "description": "Dutch dictionary for cspell.",
   "bin": {
     "cspell-dict-nl-nl-link": "./link.js",
@@ -33,10 +33,10 @@
   },
   "homepage": "https://github.com/Jason3S/cspell-dicts/blob/master/nl_NL/README.md",
   "devDependencies": {
-    "cspell-tools": "3"
+    "cspell-tools": "^3.0.3"
   },
   "dependencies": {
-    "configstore": "^3.1.0"
+    "configstore": "^3.1.2"
   },
   "files": [
     "Dutch.trie.gz",
