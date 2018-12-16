@@ -43,7 +43,7 @@ npm run build
 
 The Hunspell source for this dictionary can be found:
 
-* https://github.com/titoBouzout/Dictionaries
+* http://code.grammalecte.net:8080/home
 
 ## License
 
