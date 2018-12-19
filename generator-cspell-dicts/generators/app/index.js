@@ -116,7 +116,7 @@ module.exports = class extends Generator {
 
   writing() {
     const files = [
-      ['_package.json', 'package.json'],
+      'package.json',
       'README.md',
       'CHANGELOG.md',
       'cspell-ext.json',
