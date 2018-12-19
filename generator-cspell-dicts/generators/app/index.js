@@ -151,15 +151,15 @@ module.exports = class extends Generator {
   }
 
   install() {
-    this.npmInstall()
-      .then(() => {
-        if (this.props.doBuild) {
-          this.spawnCommand('npm', ['run', 'build']);
-        }
-        // Fetch .js files from utils.
-        this.spawnCommand('npm', ['run', 'prepublishOnly']);
-      }
-    );
+    this.npmInstall();
+  }
+
+  end() {
+    if (this.props.doBuild) {
+      this.spawnCommand('npm', ['run', 'build']);
+    }
+    // Fetch .js files from utils.
+    this.spawnCommand('npm', ['run', 'prepublishOnly']);
   }
 };
 
