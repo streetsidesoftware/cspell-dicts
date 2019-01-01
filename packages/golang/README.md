@@ -44,6 +44,7 @@ npm run build
 ```
 
 ## Contributors
+
 @AlekSi - Alexey Palazhchenko
 
 ## License

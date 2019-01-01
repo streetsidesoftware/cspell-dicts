@@ -68,7 +68,7 @@ npm link
 cd ..
 ```
 
-#### Running the generator.
+#### Running the generator
 
 In the `cspell-dicts` repository root.
 
@@ -112,8 +112,8 @@ Use either VS Code or cspell to verify that files spell check correctly.
 
 ##### Verify with `cspell`
 
-* Install `cspell`: `npm install -g cspell`
-* Check a file: `cspell check path/to/source/file.ext`
+- Install `cspell`: `npm install -g cspell`
+- Check a file: `cspell check path/to/source/file.ext`
 
 Checking a file will show you what has been ignored (gray) as well as what is considered an error (red):
 
