@@ -1,13 +1,13 @@
 // cSpell Settings
 {
-  "id": "developer",
+  "id": "fullstack",
   "name": "Company names",
   "description": "Company names dictionary for cspell.",
   // List of dictionary files to add to the global list of dictionaries
   "dictionaryDefinitions": [
     {
-      "name": "developer",
-      "file": "./developer.txt.gz",
+      "name": "fullstack",
+      "file": "./fullstack.txt.gz",
       "description": "Company names dictionary for cspell."
     }
   ],
@@ -34,7 +34,7 @@
       // This could be included in "ignoreRegExpList": ["mdash"]
       "patterns": [],
       // List of dictionaries to enable by name in `dictionaryDefinitions`
-      "dictionaries": ["developer"],
+      "dictionaries": ["fullstack"],
       // Dictionary definitions can also be supplied here. They are only used iff "languageId" and "local" match.
       "dictionaryDefinitions": []
     }

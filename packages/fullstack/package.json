@@ -1,13 +1,13 @@
 {
-  "name": "cspell-dict-developer",
+  "name": "cspell-dict-fullstack",
   "version": "1.0.0",
   "description": "Company names dictionary for cspell.",
   "bin": {
-    "cspell-dict-developer-link": "./link.js",
-    "cspell-dict-developer-unlink": "./unlink.js"
+    "cspell-dict-fullstack-link": "./link.js",
+    "cspell-dict-fullstack-unlink": "./unlink.js"
   },
   "scripts": {
-    "build": "cspell-tools compile \"developer.txt\" -o .",
+    "build": "cspell-tools compile \"fullstack.txt\" -o .",
     "prepublishOnly": "cp ../../util/* .",
     "cspell-link": "node link.js",
     "cspell-unlink": "node unlink.js",
@@ -20,7 +20,7 @@
   },
   "keywords": [
     "cspell",
-    "developer",
+    "fullstack",
     "Company names",
     "dictionary",
     "spelling"
@@ -32,7 +32,7 @@
   "bugs": {
     "url": "https://github.com/Jason3S/cspell-dicts/issues"
   },
-  "homepage": "https://github.com/Jason3S/cspell-dicts/blob/master/developer/README.md",
+  "homepage": "https://github.com/Jason3S/cspell-dicts/blob/master/fullstack/README.md",
   "devDependencies": {
     "cspell-tools": "^3.0.0"
   },
@@ -40,7 +40,7 @@
     "configstore": "^4.0.0"
   },
   "files": [
-    "developer.txt.gz",
+    "fullstack.txt.gz",
     "cspell-ext.json",
     "*.js",
     "*.d.ts"
