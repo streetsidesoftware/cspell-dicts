@@ -52,4 +52,5 @@ GPLv2
 > The catalan hunspell dictionary files are licensed under the GPLv2 license.
 
 ## Acknowledgement
+
 - Contributed by [Jordi Olivares Provencio](https://github.com/jordiolivares)
