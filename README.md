@@ -20,6 +20,7 @@ Various [cspell](https://github.com/Jason3S/cspell) dictionaries. Each dictionar
 - [Russian](packages/russian) (Large)
 - [Spanish](packages/es_ES)
 - [Swedish](packages/sv)
+- [Turkish](packages/tr_TR)
 - [Ukrainian](packages/uk_UA)
 - [Vietnamese](packages/vi_VN)
 
