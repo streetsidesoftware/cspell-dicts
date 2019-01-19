@@ -35,7 +35,7 @@
     "testEnvironment": "node"
   },
   "scripts": {
-    "audit": "npm audit",
+    "prepublishOnly": "npm audit",
     "pretest": "eslint . --fix",
     "test": "jest"
   },
