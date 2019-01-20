@@ -1,4 +1,4 @@
-# Cspell Company names Dictionary
+# Cspell Developers (Fullstack) Dictionary
 
 Daily used developers words dictionary for cspell.
 
