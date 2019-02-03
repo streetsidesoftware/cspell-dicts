@@ -2,13 +2,13 @@
 {
   "id": "fullstack",
   "name": "Company names",
-  "description": "Company names dictionary for cspell.",
+  "description": "Common words encountered during fullstack development",
   // List of dictionary files to add to the global list of dictionaries
   "dictionaryDefinitions": [
     {
       "name": "fullstack",
       "file": "./fullstack.txt.gz",
-      "description": "Company names dictionary for cspell."
+      "description": "Common words encountered during fullstack development"
     }
   ],
   // Dictionaries to always be used.
@@ -20,7 +20,7 @@
     {
       // VSCode languageId. i.e. typescript, java, go, cpp, javascript, markdown, latex
       // * will match against any file type.
-      "languageId": "*",
+      "languageId": "php,javascript",
       // Language local. i.e. en-US, de-AT, or ru. * will match all locals.
       // Multiple locals can be specified like: "en, en-US" to match both English and English US.
       "local": "*",
