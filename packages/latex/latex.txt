@@ -108,6 +108,7 @@
 \circledS
 \closing
 \clubsuit
+\colorlet
 \complement
 \cong
 \coprod
@@ -295,6 +296,7 @@
 \lozenge
 \lrcorner
 \Lsh
+\lstset
 \ltimes
 \lvertneqq
 \makechapterstyle
@@ -525,6 +527,7 @@
 \tau
 \TeX
 \textbf
+\textcircled
 \textheight
 \textit
 \textmd
@@ -612,6 +615,9 @@
 \zeta
 abbrev
 alpha
+alsodigit
+alsoletter
+alsoother
 amsmath
 article
 backref
@@ -621,12 +627,14 @@ bookmarksopen
 breaklinks
 center
 colorlinks
+commentstyle
 description
 enumerate
 fontenc
 footnotesize
 hline
 hyperref
+identifierstyle
 inputenc
 interword
 itemize
@@ -634,11 +642,14 @@ itemnum
 latextemplates
 letter
 littlered
+mdframed
 microtype
+morekeywords
 multiline
 oneside
 pdfborder
 plain
+punct
 quotation
 quote
 report
@@ -650,5 +661,6 @@ twocolumn
 twoside
 unsrt
 verbatium
+xelatex
 xshift
 yshift
