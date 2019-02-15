@@ -32,6 +32,7 @@ Various [cspell](https://github.com/Jason3S/cspell) dictionaries. Each dictionar
 - [Go](packages/golang)
 - [Java](packages/java)
 - [LaTex](packages/latex)
+- [Lua](packages/lua)
 - [PHP](packages/php)
 - [Python](packages/python)
 - [Rust](packages/rust)

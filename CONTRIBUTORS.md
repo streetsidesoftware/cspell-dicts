@@ -13,6 +13,7 @@
 | Go                    | [Alexey Palazhchenko](https://github.com/AlekSi) |
 | Hebrew                | [Noam Ben Shabat](https://github.com/benshabatnoam) |
 | Java                  | [Arthur Peters](https://github.com/arthurp) |
+| Lua                   | [Simone Livieri](https://github.com/dwenegar) |
 | Python                | [Federico Jaramillo Martínez](https://github.com/jmfederico) - added support for formatted strings, `f'...'`. |
 | Rust                  | [Alexander Andreev](https://github.com/andreevlex) |
 | Scala                 | [Arthur Peters](https://github.com/arthurp) |
