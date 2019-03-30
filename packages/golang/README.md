@@ -45,7 +45,7 @@ npm run build
 
 ## Contributors
 
-@AlekSi - Alexey Palazhchenko
+@AlekSi - Alexey Palazhchenko: https://github.com/AlekSi/go-words
 
 ## License
 
