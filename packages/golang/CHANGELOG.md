@@ -1,6 +1,7 @@
 # Change Log
 
 ## 1.1.TODO
+- Add keywords for Go 1.12 (provided by AlekSi)
 - Add keywords for Go 1.11 (provided by AlekSi)
 
 ## 1.1.3

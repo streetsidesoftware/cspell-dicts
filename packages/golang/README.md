@@ -4,7 +4,7 @@ Go Language dictionary for cspell.
 
 This is a pre-built dictionary for use with cspell.
 
-Supports keywords and built-in library names up to Go 1.11.
+Supports keywords and built-in library names up to Go 1.12.
 
 This dictionary is included by default in cSpell.
 
@@ -45,7 +45,7 @@ npm run build
 
 ## Contributors
 
-@AlekSi - Alexey Palazhchenko
+@AlekSi - Alexey Palazhchenko: https://github.com/AlekSi/go-words
 
 ## License
 
