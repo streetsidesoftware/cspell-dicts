@@ -13,6 +13,7 @@ Various [cspell](https://github.com/Jason3S/cspell) dictionaries. Each dictionar
 - [French](packages/fr_FR)
 - [German](packages/de_DE)
 - [Hebrew](packages/he)
+- [Persian](packages/fa_IR)
 - [Polish](packages/pl_PL)
 - [Portuguese - Brazilian](packages/pt_BR)
 - [Portuguese](packages/pt_PT)
