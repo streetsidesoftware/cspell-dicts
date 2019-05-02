@@ -14,6 +14,7 @@
 | Hebrew                | [Noam Ben Shabat](https://github.com/benshabatnoam) |
 | Java                  | [Arthur Peters](https://github.com/arthurp) |
 | Lua                   | [Simone Livieri](https://github.com/dwenegar) |
+| Persian               | [Majid Shamkhani](https://github.com/Majid110) |
 | Python                | [Federico Jaramillo Martínez](https://github.com/jmfederico) - added support for formatted strings, `f'...'`. |
 | Rust                  | [Alexander Andreev](https://github.com/andreevlex) |
 | Scala                 | [Arthur Peters](https://github.com/arthurp) |
@@ -33,4 +34,5 @@
     cspell:words Noam Ben Shabat
     cspell:words rbalet Raphaël Balet
     cspell:words Erkan Durmuş
+    cspell:words Majid Shamkhani
 -->
