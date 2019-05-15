@@ -1,10 +1,13 @@
 {
+	"private": true,
 	"scripts": {
 		"postinstall": "lerna bootstrap",
 		"test-build": "lerna run test-build"
 	},
 	"devDependencies": {
-		"lerna": "^3.13.4"
+		"cspell-tools": "^3.0.4",
+		"lerna": "^3.14.0"
 	},
-	"name": "cspell-dicts"
+	"name": "cspell-dicts",
+	"dependencies": {}
 }

@@ -2,7 +2,8 @@
   "name": "generator-cspell-dicts",
   "version": "0.0.0",
   "description": "Generate cspell dictionary subprojects.",
-  "homepage": "https://github.com/Jason3S/cspell-dicts",
+  "homepage": "https://github.com/streetsidesoftware/cspell-dicts",
+  "private": true,
   "author": {
     "name": "Jason Dent",
     "email": "jason@streetsidesoftware.nl",
@@ -17,18 +18,18 @@
     "yeoman-generator"
   ],
   "devDependencies": {
-    "coveralls": "^3.0.2",
-    "eslint": "^5.10.0",
-    "eslint-config-xo-space": "^0.20.0",
-    "jest": "^23.6.0",
-    "jest-cli": "^23.6.0",
+    "coveralls": "^3.0.3",
+    "eslint": "^5.16.0",
+    "eslint-config-xo-space": "^0.21.0",
+    "jest": "^24.8.0",
+    "jest-cli": "^24.8.0",
     "yeoman-assert": "^3.1.1",
     "yeoman-test": "^1.9.1"
   },
   "dependencies": {
-    "chalk": "^2.4.1",
+    "chalk": "^2.4.2",
     "mkdirp": "^0.5.1",
-    "yeoman-generator": "^3.1.1",
+    "yeoman-generator": "^3.2.0",
     "yosay": "^2.0.2"
   },
   "jest": {

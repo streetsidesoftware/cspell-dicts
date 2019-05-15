@@ -7,16 +7,14 @@
     "<%= fullPackageName %>-unlink": "./unlink.js"
   },
   "scripts": {
-    "build": "cspell-tools <%= command %> \"<%= srcFile %>\" -o .",
-    "prepublishOnly": "cp ../../util/* .",
+    "build": "../../node_modules/.bin/cspell-tools <%= command %> \"<%= srcFile %>\" -o .",
+    "prepare": "cp ../../util/* .",
     "cspell-link": "node link.js",
-    "cspell-unlink": "node unlink.js",
-    "publish-minor": "npm version minor && npm publish",
-    "publish-patch": "npm version patch && npm publish"
+    "cspell-unlink": "node unlink.js"
   },
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/Jason3S/cspell-dicts.git"
+    "url": "git+https://github.com/streetsidesoftware/cspell-dicts.git"
   },
   "keywords": [
     "cspell",
@@ -30,11 +28,10 @@
   "author": "Jason Dent",
   "license": "MIT",
   "bugs": {
-    "url": "https://github.com/Jason3S/cspell-dicts/issues"
+    "url": "https://github.com/streetsidesoftware/cspell-dicts/issues"
   },
-  "homepage": "https://github.com/Jason3S/cspell-dicts/blob/master/<%= name %>/README.md",
+  "homepage": "https://github.com/streetsidesoftware/cspell-dicts/blob/master/packages/<%= name %>#readme",
   "devDependencies": {
-    "cspell-tools": "^3.0.0"
   },
   "dependencies": {
     "configstore": "^4.0.0"

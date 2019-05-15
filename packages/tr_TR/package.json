@@ -7,16 +7,14 @@
     "cspell-dict-tr-tr-unlink": "./unlink.js"
   },
   "scripts": {
-    "build": "cspell-tools compile-trie \"Turkish.dic\" -o .",
-    "prepublishOnly": "cp ../../util/* .",
+    "build": "../../node_modules/.bin/cspell-tools compile-trie \"Turkish.dic\" -o .",
+    "prepare": "cp ../../util/* .",
     "cspell-link": "node link.js",
-    "cspell-unlink": "node unlink.js",
-    "publish-minor": "npm version minor && npm publish",
-    "publish-patch": "npm version patch && npm publish"
+    "cspell-unlink": "node unlink.js"
   },
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/Jason3S/cspell-dicts.git"
+    "url": "git+https://github.com/streetsidesoftware/cspell-dicts.git"
   },
   "keywords": [
     "cspell",
@@ -30,12 +28,9 @@
   "author": "Jason Dent",
   "license": "MIT",
   "bugs": {
-    "url": "https://github.com/Jason3S/cspell-dicts/issues"
+    "url": "https://github.com/streetsidesoftware/cspell-dicts/issues"
   },
-  "homepage": "https://github.com/Jason3S/cspell-dicts/blob/master/tr_TR/README.md",
-  "devDependencies": {
-    "cspell-tools": "^3.0.0"
-  },
+  "homepage": "https://github.com/streetsidesoftware/cspell-dicts/blob/master/packages/tr_TR#readme",
   "dependencies": {
     "configstore": "^4.0.0"
   },

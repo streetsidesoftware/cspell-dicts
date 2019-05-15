@@ -7,16 +7,14 @@
     "cspell-dict-en-gb-unlink": "./unlink.js"
   },
   "scripts": {
-    "build": "cspell-tools compile-trie \"wordsEnGb.txt\" -o .",
-    "prepublishOnly": "cp ../../util/* .",
+    "build": "../../node_modules/.bin/cspell-tools compile-trie \"wordsEnGb.txt\" -o .",
+    "prepare": "cp ../../util/* .",
     "cspell-link": "node install.js",
-    "cspell-unlink": "node uninstall.js",
-    "publish-minor": "npm version minor && npm publish",
-    "publish-patch": "npm version patch && npm publish"
+    "cspell-unlink": "node uninstall.js"
   },
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/Jason3S/cspell-dicts.git"
+    "url": "git+https://github.com/streetsidesoftware/cspell-dicts.git"
   },
   "keywords": [
     "cspell",
@@ -29,12 +27,9 @@
   "author": "Jason Dent",
   "license": "MIT",
   "bugs": {
-    "url": "https://github.com/Jason3S/cspell-dicts/issues"
+    "url": "https://github.com/streetsidesoftware/cspell-dicts/issues"
   },
-  "homepage": "https://github.com/Jason3S/cspell-dicts/blob/master/en_GB/README.md",
-  "devDependencies": {
-    "cspell-tools": "^3.0.4"
-  },
+  "homepage": "https://github.com/streetsidesoftware/cspell-dicts/blob/master/packages/en_GB#readme",
   "dependencies": {
     "configstore": "^4.0.0"
   },
