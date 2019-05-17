@@ -19,6 +19,7 @@
 | Rust                  | [Alexander Andreev](https://github.com/andreevlex) |
 | Scala                 | [Arthur Peters](https://github.com/arthurp) |
 | Turkish               | [Erkan Durmuş](https://github.com/derkan) |
+| Greek                 | [Anthony Veaudry](https://github.com/anthony0030) |
 
 <!--
     cspell:words Fullstack
@@ -35,4 +36,5 @@
     cspell:words rbalet Raphaël Balet
     cspell:words Erkan Durmuş
     cspell:words Majid Shamkhani
+    cspell:words Anthony Veaudry
 -->
