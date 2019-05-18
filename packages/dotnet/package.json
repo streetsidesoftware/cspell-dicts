@@ -9,6 +9,7 @@
   "scripts": {
     "build": "../../node_modules/.bin/cspell-tools compile \"dotnet.txt\" -o .",
     "prepare": "cp ../../util/* .",
+    "test": "head -n 100 \"dotnet.txt\" | ../../node_modules/.bin/cspell -v -c ./cspell-ext.json --local=* --languageId=cs stdin",
     "cspell-link": "node link.js",
     "cspell-unlink": "node unlink.js"
   },
