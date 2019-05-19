@@ -2,12 +2,16 @@
 	"private": true,
 	"scripts": {
 		"test": "lerna run test",
-		"postinstall": "lerna bootstrap"
+		"build": "lerna run build",
+		"clean": "rimraf \"packages/*/*.txt.gz\"",
+		"postinstall": "lerna bootstrap",
+		"prepublishOnly": "npm test"
 	},
 	"devDependencies": {
 		"cspell": "^4.0.5",
 		"cspell-tools": "^4.0.6",
-		"lerna": "^3.14.0"
+		"lerna": "^3.14.0",
+		"rimraf": "^2.6.3"
 	},
 	"name": "cspell-dicts",
 	"dependencies": {}
