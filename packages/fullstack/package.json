@@ -9,10 +9,10 @@
   },
   "scripts": {
     "build": "../../node_modules/.bin/cspell-tools compile \"fullstack.txt\" -o .",
-    "prepare": "cp ../../util/* .",
+    "test": "head -n 100 \"fullstack.txt\" | ../../node_modules/.bin/cspell -v -c ./cspell-ext.json --local=* --languageId=php stdin",
     "cspell-link": "node link.js",
     "cspell-unlink": "node unlink.js",
-    "prepare": "npm run build"
+    "prepare": "cp ../../util/* . && npm run build"
   },
   "repository": {
     "type": "git",

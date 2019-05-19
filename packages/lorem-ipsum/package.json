@@ -8,10 +8,10 @@
   },
   "scripts": {
     "build": "../../node_modules/.bin/cspell-tools compile \"dictionary.txt\" -o .",
-    "prepare": "cp ../../util/* .",
+    "test": "head -n 1000 \"dictionary.txt\" | ../../node_modules/.bin/cspell -v -c ./cspell-ext.json --local=lorem --languageId=* stdin",
     "cspell-link": "node link.js",
     "cspell-unlink": "node unlink.js",
-    "prepare": "npm run build"
+    "prepare": "cp ../../util/* . && npm run build"
   },
   "repository": {
     "type": "git",
