@@ -10,7 +10,8 @@
     "build": "../../node_modules/.bin/cspell-tools compile \"java.txt\" -o .",
     "prepare": "cp ../../util/* .",
     "cspell-link": "node link.js",
-    "cspell-unlink": "node unlink.js"
+    "cspell-unlink": "node unlink.js",
+    "prepare": "npm run build"
   },
   "repository": {
     "type": "git",
