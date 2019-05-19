@@ -9,6 +9,7 @@
   "scripts": {
     "build": "../../node_modules/.bin/cspell-tools compile-trie \"wordsEnGb.txt\" -o .",
     "prepare": "cp ../../util/* .",
+    "test": "head -n 1000 \"wordsEnGb.txt\" | ../../node_modules/.bin/cspell -v -c ./cspell-ext.json --local=en_gb --languageId=* stdin",
     "cspell-link": "node install.js",
     "cspell-unlink": "node uninstall.js"
   },
