@@ -36,7 +36,9 @@
             // Multiple locals can be specified like: "en, en-US" to match both English and English US.
             "local": "nl,nl-NL",
             // By default the
-            "ignoreRegExpList": [],
+            "ignoreRegExpList": [
+                "/'tjes?\\b/"
+            ],
             "includeRegExpList": [],
             // regex patterns than can be used with ignoreRegExpList or includeRegExpList
             // Example: "pattern": [{ "name": "mdash", "pattern": "&mdash;" }]
