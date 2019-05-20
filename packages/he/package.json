@@ -7,7 +7,8 @@
     "cspell-dict-he-unlink": "./unlink.js"
   },
   "scripts": {
-    "build": "../../node_modules/.bin/cspell-tools compile-trie \"hunspell/he.dic.txt\" -o .",
+    "build": "cspell-tools compile-trie \"hunspell/he.dic.txt\" -o .",
+    "test": "hunspell-reader words -n 1000 \"hunspell/he.dic.txt\" | cspell -v -c ./cspell-ext.json --local=he --languageId=* stdin",
     "prepare": "cp ../../util/* .",
     "cspell-link": "node link.js",
     "cspell-unlink": "node unlink.js"
