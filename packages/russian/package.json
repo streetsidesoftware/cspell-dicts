@@ -1,13 +1,14 @@
 {
   "name": "cspell-dict-russian",
   "version": "1.1.10",
-  "description": "Russian dictionary for cspell.",
+  "description": "Russian dictionary for cspell. - private until it is working again.",
+  "private": true,
   "bin": {
     "cspell-dict-russian-link": "./link.js",
     "cspell-dict-russian-unlink": "./unlink.js"
   },
   "scripts": {
-    "build": "cspell-tools compile-trie \"Russian.dic\" -o .",
+    "build": "NODE_OPTIONS=--max_old_space_size=8192 cspell-tools compile-trie \"Russian.dic\" -o .",
     "_test": "hunspell-reader words -n 1000 \"Russian.dic\" | cspell -v -c ./cspell-ext.json --local=ru --languageId=* stdin",
     "prepare": "cp ../../util/* .",
     "cspell-link": "node link.js",
