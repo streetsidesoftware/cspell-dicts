@@ -11,7 +11,8 @@
     "test": "head -n 100 \"companies.txt\" | ../../node_modules/.bin/cspell -v -c ./cspell-ext.json --local=* --languageId=* stdin",
     "cspell-link": "node link.js",
     "cspell-unlink": "node unlink.js",
-    "prepare": "cp ../../util/* . && npm run build"
+    "copy-util": "cp ../../util/* .",
+    "prepare": "npm run copy-util && npm run build"
   },
   "repository": {
     "type": "git",
