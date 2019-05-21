@@ -394,7 +394,6 @@ AppendIterator::next
 AppendIterator::rewind
 AppendIterator::valid
 AppendIterator::__construct
-array
 ArrayAccess::offsetExists
 ArrayAccess::offsetGet
 ArrayAccess::offsetSet
@@ -516,11 +515,7 @@ bbcode_destroy
 bbcode_parse
 bbcode_set_arg_parser
 bbcode_set_flags
-bcadd
 bccomp
-bcdiv
-bcmod
-bcmul
 bcompiler_load
 bcompiler_load_exe
 bcompiler_parse_class
@@ -534,7 +529,6 @@ bcompiler_write_function
 bcompiler_write_functions_from_file
 bcompiler_write_header
 bcompiler_write_included_filename
-bcpow
 bcpowmod
 bcscale
 bcsqrt
@@ -1353,12 +1347,10 @@ decbin
 dechex
 decoct
 define
-defined
 define_syslog_variables
 deg2rad
 delete
 dgettext
-die
 dio_close
 dio_fcntl
 dio_open
@@ -1511,7 +1503,6 @@ e
 each
 easter_date
 easter_days
-echo
 eio_busy
 eio_cancel
 eio_chmod
@@ -1638,7 +1629,6 @@ Ev::supportedBackends
 Ev::suspend
 Ev::time
 Ev::verify
-eval
 EvCheck::createStopped
 EvCheck::__construct
 EvChild::createStopped
@@ -1900,7 +1890,6 @@ exif_imagetype
 exif_read_data
 exif_tagname
 exif_thumbnail
-exit
 exp
 expect://
 expect_expectl
@@ -2442,7 +2431,6 @@ getlastmod
 getmxrr
 getmygid
 getmyinode
-getmypid
 getmyuid
 getopt
 getprotobyname
@@ -3005,7 +2993,6 @@ HRTime\PerformanceCounter::start
 HRTime\PerformanceCounter::stop
 HRTime\StopWatch::getElapsedTime
 HRTime\StopWatch::getLastElapsedTime
-htmlentities
 htmlspecialchars
 htmlspecialchars_decode
 html_entity_decode
@@ -4132,7 +4119,6 @@ in_array
 ip2long
 iptcembed
 iptcparse
-isset
 is_a
 is_array
 is_bool
@@ -4343,7 +4329,6 @@ LimitIterator::valid
 LimitIterator::__construct
 link
 linkinfo
-list
 Locale::acceptFromHttp
 Locale::canonicalize
 Locale::composeLocale
@@ -4692,7 +4677,6 @@ mhash_count
 mhash_get_block_size
 mhash_get_hash_name
 mhash_keygen_s2k
-microtime
 mime_content_type
 min
 ming_keypress
@@ -6610,8 +6594,6 @@ preg_replace_callback
 preg_replace_callback_array
 preg_split
 prev
-print
-printf
 print_r
 proc_close
 proc_get_status
@@ -7174,7 +7156,6 @@ rrd_update
 rrd_version
 rrd_xport
 rsort
-rtrim
 runkit_class_adopt
 runkit_class_emancipate
 runkit_constant_add
@@ -8078,7 +8059,6 @@ Spoofchecker::isSuspicious
 Spoofchecker::setAllowedLocales
 Spoofchecker::setChecks
 Spoofchecker::__construct
-sprintf
 SQL acceptable by 4D
 SQLite3::busyTimeout
 SQLite3::changes
@@ -8387,7 +8367,6 @@ stripos
 stripslashes
 strip_tags
 stristr
-strlen
 strnatcasecmp
 strnatcmp
 strncasecmp
@@ -9015,7 +8994,6 @@ trigger_error
 trim
 u
 uasort
-ucfirst
 UConverter::convert
 UConverter::fromUCallback
 UConverter::getAliases
@@ -9065,7 +9043,6 @@ unlink
 unpack
 unregister_tick_function
 unserialize
-unset
 untaint
 uopz_backup
 uopz_compose
