@@ -1,7 +1,8 @@
 {
   "name": "<%= fullPackageName %>",
   "version": "1.0.0",
-  "description": "<%= description %>",
+  "description": "<%= description %> -- Private until verified",
+  "private": true,
   "bin": {
     "<%= fullPackageName %>-link": "./link.js",
     "<%= fullPackageName %>-unlink": "./unlink.js"
