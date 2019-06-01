@@ -7,8 +7,10 @@
     "cspell-dict-en-us-unlink": "./unlink.js"
   },
   "scripts": {
-    "build": "cspell-tools compile-trie \"en_US.txt\" -o .",
-    "test": "head -n 1000 \"en_US.txt\" | cspell -v -c ./cspell-ext.json --local=en --languageId=* stdin",
+    "merge-dictionaries": "cp src/hunspell/* dict && cat src/hunspell/en_US.dic src/en_US.txt > dict/en_US.dic",
+    "compile": "cspell-tools compile-trie \"dict/en_US.aff\" -o .",
+    "build": "npm run merge-dictionaries && npm run compile",
+    "test": "hunspell-reader words -n 10000 \"dict/en_US.dic\" | cspell -v -c ./cspell-ext.json --local=en --languageId=* stdin",
     "prepare": "cp ../../util/* .",
     "cspell-link": "node link.js",
     "cspell-unlink": "node unlink.js"
