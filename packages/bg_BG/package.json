@@ -1,0 +1,46 @@
+{
+  "name": "cspell-dict-bg-bg",
+  "version": "1.0.0",
+  "description": "Bulgarian dictionary for cspell. -- Private until verified",
+  "private": true,
+  "bin": {
+    "cspell-dict-bg-bg-link": "./link.js",
+    "cspell-dict-bg-bg-unlink": "./unlink.js"
+  },
+  "scripts": {
+    "build": "cspell-tools compile-trie \"bg_BG.dic\" -o .",
+    "test": "head -n 100 \"bg_BG.dic\" | cspell -v -c ./cspell-ext.json \"--local=bg\" \"--languageId=*\" stdin",
+    "cspell-link": "node link.js",
+    "cspell-unlink": "node unlink.js",
+    "prepare": "cp ../../util/* . && npm run build"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/streetsidesoftware/cspell-dicts.git"
+  },
+  "keywords": [
+    "cspell",
+    "bg_BG",
+    "Bulgarian",
+    "dictionary",
+    "spelling"
+  ],
+  "main": "index.js",
+  "typings": "index.d.ts",
+  "author": "Jason Dent",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/streetsidesoftware/cspell-dicts/issues"
+  },
+  "homepage": "https://github.com/streetsidesoftware/cspell-dicts/blob/master/packages/bg_BG#readme",
+  "devDependencies": {},
+  "dependencies": {
+    "configstore": "^4.0.0"
+  },
+  "files": [
+    "bg_BG.trie.gz",
+    "cspell-ext.json",
+    "*.js",
+    "*.d.ts"
+  ]
+}
