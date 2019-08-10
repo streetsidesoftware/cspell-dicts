@@ -61,12 +61,11 @@ Please fork this repository to add new dictionaries.
 
 The [Yeoman](http://yeoman.io/) script can help you create the dictionary template files seen in most of dictionary directories.
 
-#### Install Yeoman
+#### Install Yeoman Generator
 
 Install Yeoman and then link the generator.
 
 ```sh
-npm install -g yo
 cd generator-cspell-dicts
 npm link
 cd ..
@@ -77,7 +76,7 @@ cd ..
 In the `cspell-dicts` repository root.
 
 ```sh
-yo cspell-dicts <name> <path/to/source/words>
+npx yo cspell-dicts <name> <path/to/source/words>
 ```
 
 Yeoman will ask you a series of questions:
