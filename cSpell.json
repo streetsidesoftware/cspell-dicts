@@ -24,12 +24,17 @@
     ],
     "import": [
         "./packages/es_ES/cspell-ext.json",
+        "./packages/fr_FR/cspell-ext.json",
         "./packages/da_DK/cspell-ext.json"
     ],
     "overrides": [
         {
             "filename": "**/nl_NL/**",
             "language": "en,nl"
+        },
+        {
+            "filename": "**/fr_FR/**/*.txt",
+            "language": "en,fr"
         },
         {
             "filename": "**/da_DK/**",
