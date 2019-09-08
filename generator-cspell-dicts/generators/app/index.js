@@ -158,12 +158,9 @@ module.exports = class extends Generator {
     if (this.props.doBuild) {
       this.spawnCommand('npm', ['run', 'build']);
     }
-    // Fetch .js files from utils.
-    this.spawnCommand('npm', ['run', 'prepublishOnly']);
   }
 };
 
 function title(s) {
   return s[0].toUpperCase() + s.slice(1);
 }
-

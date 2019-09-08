@@ -17,15 +17,7 @@
     "cspell dictionary generator",
     "yeoman-generator"
   ],
-  "devDependencies": {
-    "coveralls": "^3.0.3",
-    "eslint": "^5.16.0",
-    "eslint-config-xo-space": "^0.21.0",
-    "jest": "^24.8.0",
-    "jest-cli": "^24.8.0",
-    "yeoman-assert": "^3.1.1",
-    "yeoman-test": "^1.9.1"
-  },
+  "devDependencies": {},
   "dependencies": {
     "chalk": "^2.4.2",
     "mkdirp": "^0.5.1",
@@ -37,8 +29,7 @@
   },
   "scripts": {
     "prepublishOnly": "npm audit",
-    "pretest": "eslint . --fix",
-    "test": "jest"
+    "test": "echo no tests"
   },
   "eslintConfig": {
     "extends": "xo-space",
