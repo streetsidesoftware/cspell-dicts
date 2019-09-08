@@ -1,0 +1,45 @@
+{
+  "name": "cspell-dict-typescript",
+  "version": "1.0.0",
+  "description": "TypeScript and JavaScript dictionary for cspell.",
+  "bin": {
+    "cspell-dict-typescript-link": "./link.js",
+    "cspell-dict-typescript-unlink": "./unlink.js"
+  },
+  "scripts": {
+    "build": "cspell-tools compile \"typescript.txt\" -o .",
+    "test": "head -n 100 \"typescript.txt\" | cspell -v -c ./cspell-ext.json \"--local=*\" \"--languageId=typescript\" stdin",
+    "cspell-link": "node link.js",
+    "cspell-unlink": "node unlink.js",
+    "prepare": "cp ../../util/* . && npm run build"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/streetsidesoftware/cspell-dicts.git"
+  },
+  "keywords": [
+    "cspell",
+    "typescript",
+    "TypeScript and JavaScript",
+    "dictionary",
+    "spelling"
+  ],
+  "main": "index.js",
+  "typings": "index.d.ts",
+  "author": "Jason Dent",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/streetsidesoftware/cspell-dicts/issues"
+  },
+  "homepage": "https://github.com/streetsidesoftware/cspell-dicts/blob/master/packages/typescript#readme",
+  "devDependencies": {},
+  "dependencies": {
+    "configstore": "^4.0.0"
+  },
+  "files": [
+    "typescript.txt.gz",
+    "cspell-ext.json",
+    "*.js",
+    "*.d.ts"
+  ]
+}
