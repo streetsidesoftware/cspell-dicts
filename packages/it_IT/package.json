@@ -1,8 +1,7 @@
 {
   "name": "cspell-dict-it-it",
   "version": "1.0.0",
-  "description": "Italian dictionary for cspell. -- Private until verified",
-  "private": true,
+  "description": "Italian dictionary for cspell.",
   "bin": {
     "cspell-dict-it-it-link": "./link.js",
     "cspell-dict-it-it-unlink": "./unlink.js"
@@ -12,7 +11,7 @@
     "test": "head -n 100 \"it_IT.dic\" | cspell -v -c ./cspell-ext.json \"--local=it,it-IT\" \"--languageId=*\" stdin",
     "cspell-link": "node link.js",
     "cspell-unlink": "node unlink.js",
-    "prepare": "cp ../../util/* . && npm run build"
+    "prepare": "cp ../../util/* ."
   },
   "repository": {
     "type": "git",
