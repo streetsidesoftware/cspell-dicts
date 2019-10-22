@@ -14,6 +14,7 @@ Various [cspell](https://github.com/Jason3S/cspell) dictionaries. Each dictionar
 - [German](packages/de_DE)
 - [Greek](packages/el)
 - [Hebrew](packages/he)
+- [Italian](packages/it_IT)
 - [Persian](packages/fa_IR)
 - [Polish](packages/pl_PL)
 - [Portuguese - Brazilian](packages/pt_BR)
