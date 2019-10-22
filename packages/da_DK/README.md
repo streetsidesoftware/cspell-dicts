@@ -41,7 +41,7 @@ npm run build
 
 ## Contributors
 
-* [Viktor Hundahl Strate](https://github.com/viktorstrate)
+* [Viktor Strate Kløvedal](https://github.com/viktorstrate)
 
 ## License
 
