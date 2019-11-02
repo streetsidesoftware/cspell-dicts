@@ -66,6 +66,7 @@ The [Yeoman](http://yeoman.io/) script can help you create the dictionary templa
 
 ```
 npm i -g cspell-tools
+npm i -g hunspell-reader
 ```
 
 #### Install Yeoman Generator
