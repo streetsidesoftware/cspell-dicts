@@ -28,7 +28,12 @@
             // regex patterns than can be used with ignoreRegExpList or includeRegExpList
             // Example: "pattern": [{ "name": "mdash", "pattern": "&mdash;" }]
             // This could be included in "ignoreRegExpList": ["mdash"]
-            "patterns": [],
+            "patterns": [
+                {
+                    "name": "possessive_s",
+                    "pattern": "/'s\\b/gi"
+                }
+            ],
             // List of dictionaries to enable by name in `dictionaryDefinitions`
             "dictionaries": ["en_us"],
             // Dictionary definitions can also be supplied here. They are only used iff "languageId" and "local" match.
