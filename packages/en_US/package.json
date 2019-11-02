@@ -10,7 +10,7 @@
     "merge-dictionaries": "cp src/hunspell/* dict && cat src/hunspell/en_US.dic src/en_US.txt > dict/en_US.dic",
     "compile": "cspell-tools compile-trie \"dict/en_US.aff\" -o .",
     "build": "npm run merge-dictionaries && npm run compile",
-    "test-dict": "hunspell-reader words -n 10000 \"dict/en_US.dic\" | cspell -v -c ./cspell-ext.json --local=en --languageId=* stdin",
+    "test-dict": "hunspell-reader words -n 10000 \"src/hunspell/en_US.dic\" | cspell -v -c ./cspell-ext.json --local=en --languageId=* stdin",
     "test-text": "cspell -v -c ./cspell-ext.json --local=en --languageId=* \"tests/*.txt\"",
     "test": "npm run test-dict && npm run test-text",
     "prepare": "cp ../../util/* .",
