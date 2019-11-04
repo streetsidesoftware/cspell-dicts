@@ -105,6 +105,7 @@ bytes
 BytesWarning
 callable
 ChildProcessError
+chown
 chr
 class
 classmethod
@@ -141,6 +142,7 @@ exit
 expanduser
 expandvars
 False
+fdopen
 FileExistsError
 FileNotFoundError
 filter
@@ -152,9 +154,14 @@ format
 from
 fromkeys
 frozenset
+fsdecode
+fsencode
+functools
 FutureWarning
 GeneratorExit
+getatime
 getattr
+getctime
 getpass
 global
 globals
@@ -178,8 +185,12 @@ int
 InterruptedError
 IOError
 is
+isabs
 IsADirectoryError
+isdir
+isfile
 isinstance
+ismount
 issubclass
 iter
 iteritems
@@ -191,6 +202,7 @@ kwargs
 kwds
 lambda
 len
+lexists
 license
 list
 locals
@@ -204,7 +216,9 @@ memoryview
 metavar
 mimetypes
 min
+mkdir
 mtime
+mypy
 namedtuple
 NameError
 netloc
@@ -243,6 +257,8 @@ repr
 ResourceWarning
 return
 reversed
+rmdir
+rmtree
 round
 rstrip
 RuntimeError
@@ -251,10 +267,13 @@ set
 setattr
 setdefault
 setupterm
+shlex
+shutil
 slice
 sorted
 splitext
 splitlines
+splitunc
 startswith
 staticmethod
 StopAsyncIteration
