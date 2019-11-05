@@ -5,6 +5,7 @@
 		"build": "lerna run build",
 		"clean": "rimraf \"packages/*/*.txt.gz\"",
 		"postinstall": "lerna bootstrap",
+		"pub": "npm install && npm test && lerna publish",
 		"prepublishOnly": "npm test"
 	},
 	"devDependencies": {
