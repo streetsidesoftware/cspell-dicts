@@ -105,6 +105,7 @@ bytes
 BytesWarning
 callable
 ChildProcessError
+chmod
 chown
 chr
 class
@@ -134,6 +135,7 @@ else
 enumerate
 EnvironmentError
 EOFError
+etree
 eval
 except
 Exception
@@ -162,6 +164,7 @@ GeneratorExit
 getatime
 getattr
 getctime
+getcwd
 getpass
 global
 globals
@@ -195,18 +198,21 @@ issubclass
 iter
 iteritems
 iterkeys
+itertree
 itervalues
 KeyboardInterrupt
 KeyError
 kwargs
 kwds
 lambda
+lchmod
 len
 lexists
 license
 list
 locals
 LookupError
+lstat
 lstrip
 makedirs
 map
@@ -241,6 +247,7 @@ OverflowError
 pass
 PendingDeprecationWarning
 PermissionError
+posix
 pow
 print
 ProcessLookupError
@@ -254,6 +261,7 @@ range
 RecursionError
 ReferenceError
 repr
+reraise
 ResourceWarning
 return
 reversed
@@ -289,6 +297,7 @@ TabError
 textwrap
 tigetnum
 TimeoutError
+tkinter
 True
 try
 tuple
@@ -305,6 +314,7 @@ urlopen
 urlparse
 urlsplit
 UserWarning
+utime
 ValueError
 vars
 Warning
@@ -312,6 +322,8 @@ while
 WindowsError
 with
 writelines
+xmlrpc
+xrange
 yield
 ZeroDivisionError
 zip
