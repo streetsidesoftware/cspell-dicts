@@ -8,7 +8,7 @@
         {
             "name": "da-dk",
             "file": "./da_DK.trie.gz",
-            "repMap": [["'|`|’", "'"]],
+            "repMap": [["'|`|’|'", "'"]],
             "description": "Danish dictionary for cspell."
         }
     ],
@@ -27,9 +27,9 @@
             "local": "da,da-DK",
             // By default the whole text of a file is included for spell checking
             // Adding patterns to the "includeRegExpList" to only include matching patterns
-            "includeRegExpList": ["/’s\\b/"],
+            "includeRegExpList": [],
             // To exclude patterns, add them to "ignoreRegExpList"
-            "ignoreRegExpList": [],
+            "ignoreRegExpList": ["/’s\\b/"],
             // regex patterns than can be used with ignoreRegExpList or includeRegExpList
             // Example: "pattern": [{ "name": "mdash", "pattern": "&mdash;" }]
             // This could be included in "ignoreRegExpList": ["mdash"]
