@@ -2,6 +2,7 @@
 
 | Dictionary            | Contributors |
 | --------------------- | ------------ |
+| AWS                   | [Daniel Schroeder](https://github.com/udondan) |
 | Catalan               | [Jordi Olivares Provencio](https://github.com/jordiolivares) |
 | city-names-finland    | [Daniel Schildt](https://github.com/d2s) |
 | Czech                 | [Zereges](https://github.com/Zereges) |
@@ -11,6 +12,7 @@
 | French                | [canarduck](https://github.com/canarduck) |
 | Fullstack             | [rbalet (Raphaël Balet)](https://github.com/rbalet) |
 | Go                    | [Alexey Palazhchenko](https://github.com/AlekSi) |
+| Greek                 | [Anthony Veaudry](https://github.com/anthony0030) |
 | Hebrew                | [Noam Ben Shabat](https://github.com/benshabatnoam) |
 | Java                  | [Arthur Peters](https://github.com/arthurp) |
 | Lua                   | [Simone Livieri](https://github.com/dwenegar) |
@@ -19,7 +21,6 @@
 | Rust                  | [Alexander Andreev](https://github.com/andreevlex) |
 | Scala                 | [Arthur Peters](https://github.com/arthurp) |
 | Turkish               | [Erkan Durmuş](https://github.com/derkan) |
-| Greek                 | [Anthony Veaudry](https://github.com/anthony0030) |
 
 <!--
     cspell:words Fullstack

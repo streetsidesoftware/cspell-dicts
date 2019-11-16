@@ -5,14 +5,16 @@
 		"build": "lerna run build",
 		"clean": "rimraf \"packages/*/*.txt.gz\"",
 		"postinstall": "lerna bootstrap",
+		"pub": "npm install && npm test && lerna publish",
 		"prepublishOnly": "npm test"
 	},
 	"devDependencies": {
-		"cspell": "^4.0.26",
-		"cspell-tools": "^4.0.21",
+		"cross-env": "^6.0.3",
+		"cspell": "^4.0.30",
+		"cspell-tools": "^4.1.0",
 		"hunspell-reader": "^3.0.1",
-		"lerna": "^3.16.4",
-		"rimraf": "^2.6.3"
+		"lerna": "^3.18.3",
+		"rimraf": "^2.7.1"
 	},
 	"name": "cspell-dicts",
 	"dependencies": {}

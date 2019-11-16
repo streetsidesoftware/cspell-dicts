@@ -1,6 +1,6 @@
 {
   "name": "cspell-dict-en_us",
-  "version": "1.2.18",
+  "version": "1.2.20",
   "description": "English dictionary for cspell.",
   "bin": {
     "cspell-dict-en-us-link": "./link.js",
@@ -10,7 +10,9 @@
     "merge-dictionaries": "cp src/hunspell/* dict && cat src/hunspell/en_US.dic src/en_US.txt > dict/en_US.dic",
     "compile": "cspell-tools compile-trie \"dict/en_US.aff\" -o .",
     "build": "npm run merge-dictionaries && npm run compile",
-    "test": "hunspell-reader words -n 10000 \"dict/en_US.dic\" | cspell -v -c ./cspell-ext.json --local=en --languageId=* stdin",
+    "test-dict": "hunspell-reader words -n 10000 \"src/hunspell/en_US.dic\" | cspell -v -c ./cspell-ext.json --local=en --languageId=* stdin",
+    "test-text": "cspell -v -c ./cspell-ext.json --local=en --languageId=* \"tests/*.txt\"",
+    "test": "npm run test-dict && npm run test-text",
     "prepare": "cp ../../util/* .",
     "cspell-link": "node link.js",
     "cspell-unlink": "node unlink.js"
@@ -45,5 +47,5 @@
     "*.js",
     "*.d.ts"
   ],
-  "gitHead": "a7eb7b9ab0d954d5a5dafc25a13e1c6dd99cf068"
+  "gitHead": "2df0350343e3f10b00ef895f44b08a3be10c2f6d"
 }

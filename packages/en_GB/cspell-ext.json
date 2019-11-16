@@ -5,7 +5,7 @@
     "description": "British English Dictionary",
     // List of dictionary files to add to the global list of dictionaries
     "dictionaryDefinitions": [
-        { "name": "en-gb", "file": "./wordsEnGb.trie.gz", "description": "British English Dictionary" }
+        { "name": "en-gb", "file": "./wordsEnGb.trie.gz", "repMap": [["'|`|’", "'"]], "description": "British English Dictionary" }
     ],
     // Dictionaries to always be used.
     // Generally left empty
@@ -25,7 +25,12 @@
             // regex patterns than can be used with ignoreRegExpList or includeRegExpList
             // Example: "pattern": [{ "name": "mdash", "pattern": "&mdash;" }]
             // This could be included in "ignoreRegExpList": ["mdash"]
-            "patterns": [],
+            "patterns": [
+                {
+                    "name": "possessive_s",
+                    "pattern": "/'s\\b/gi"
+                }
+            ],
             // List of dictionaries to enable by name in `dictionaryDefinitions`
             "dictionaries": ["en-gb"],
             // Dictionary definitions can also be supplied here

@@ -1,0 +1,44 @@
+{
+  "name": "cspell-dict-it-it",
+  "version": "1.0.1",
+  "description": "Italian dictionary for cspell.",
+  "bin": {
+    "cspell-dict-it-it-link": "./link.js",
+    "cspell-dict-it-it-unlink": "./unlink.js"
+  },
+  "scripts": {
+    "build": "cross-env NODE_OPTIONS=--max_old_space_size=8092 cspell-tools compile-trie \"it_IT.dic\" -o .",
+    "test": "hunspell-reader words -n 1000 \"it_IT.dic\" | cspell -v -c ./cspell-ext.json \"--local=it,it-IT\" \"--languageId=*\" stdin",
+    "cspell-link": "node link.js",
+    "cspell-unlink": "node unlink.js",
+    "prepare": "cp ../../util/* ."
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/streetsidesoftware/cspell-dicts.git"
+  },
+  "keywords": [
+    "cspell",
+    "it_IT",
+    "Italian",
+    "dictionary",
+    "spelling"
+  ],
+  "main": "index.js",
+  "typings": "index.d.ts",
+  "author": "Jason Dent",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/streetsidesoftware/cspell-dicts/issues"
+  },
+  "homepage": "https://github.com/streetsidesoftware/cspell-dicts/blob/master/packages/it_IT#readme",
+  "dependencies": {
+    "configstore": "^4.0.0"
+  },
+  "files": [
+    "it_IT.trie.gz",
+    "cspell-ext.json",
+    "*.js",
+    "*.d.ts"
+  ]
+}
