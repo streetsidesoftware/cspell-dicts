@@ -30,7 +30,8 @@
             "includeRegExpList": [],
             // To exclude patterns, add them to "ignoreRegExpList"
             "ignoreRegExpList": [
-                "/#include.*/"
+                "/#include.*/",
+                "/0[xX][0-9a-fA-F](?:'?[0-9a-fA-F])*/"
             ],
             // regex patterns than can be used with ignoreRegExpList or includeRegExpList
             // Example: "pattern": [{ "name": "mdash", "pattern": "&mdash;" }]
