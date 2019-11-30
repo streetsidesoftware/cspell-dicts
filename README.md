@@ -96,7 +96,7 @@ friendly name | this is the friendly name, like Australian
 description | short description of the dictionary.
 source file | this is the source file to use to build the dictionary. It can be a .txt or hunspell .dic file. This file will be copied to the dictionary project.
 local | this is the two letter language code with an optional cultural code. a `*` mean it will match any language. More than one local can be added by separating them with a comma. i.e. en, en_AU.
-languageId | this is the VS Code programming language id or file type. `*` will match all file types. Examples: `java`, `cpp`, `plaintext`, `markdown`, `ruby`. [Types know to cspell](https://github.com/Jason3S/cspell/blob/master/src/LanguageIds.ts)
+languageId | this is the VS Code programming language id or file type. `*` will match all file types. Examples: `java`, `cpp`, `plaintext`, `markdown`, `ruby`. [Types know to cspell](https://github.com/streetsidesoftware/cspell/blob/master/packages/cspell-lib/src/LanguageIds.ts)
 store as trie | for large source files (> 1MB) or hunspell files, this should be `y`. `n` will work for all programming language keyword files.
 run build | prepare the word list so it can be used by cspell efficiently. You can always run the build step yourself in the dictionary directory `npm run build`.
 
