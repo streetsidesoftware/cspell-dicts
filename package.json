@@ -2,7 +2,7 @@
 	"private": true,
 	"scripts": {
 		"test": "lerna run test",
-		"build": "lerna run build",
+		"build": "lerna run --concurrency 1 build",
 		"clean": "rimraf \"packages/*/*.txt.gz\"",
 		"postinstall": "lerna bootstrap",
 		"pub": "npm install && npm test && lerna publish",
