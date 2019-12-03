@@ -29,6 +29,7 @@ Various [cspell](https://github.com/Jason3S/cspell) dictionaries. Each dictionar
 
 ## Programming Dictionaries
 
+- [bash](packages/bash) - Bash/Shell scripts
 - [cpp](packages/cpp) - C and C++
 - [Django](packages/django) - Django framework function names
 - [Elixir](packages/elixir)
