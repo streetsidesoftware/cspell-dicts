@@ -1,6 +1,6 @@
-# Cspell AWS Dictionary
+# cSpell AWS Terms Dictionary
 
-AWS dictionary for cspell.
+AWS terms dictionary for cspell.
 
 This is a pre-built dictionary for use with cspell.
 
