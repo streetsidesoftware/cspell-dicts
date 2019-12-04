@@ -7,7 +7,7 @@
     "cspell-dict-pt-br-unlink": "./unlink.js"
   },
   "scripts": {
-    "build": "cspell-tools compile-trie \"Portuguese-Brazilian.dic\" -o .",
+    "build": "cross-env NODE_OPTIONS=--max_old_space_size=12288 cspell-tools compile-trie \"Portuguese-Brazilian.dic\" -o .",
     "test": "hunspell-reader words -n 1000 \"Portuguese-Brazilian.dic\" | cspell -v -c ./cspell-ext.json --local=pt --languageId=* stdin",
     "prepare": "cp ../../util/* .",
     "cspell-link": "node link.js",
