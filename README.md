@@ -39,6 +39,7 @@ Various [cspell](https://github.com/Jason3S/cspell) dictionaries. Each dictionar
 - [Lua](packages/lua)
 - [PHP](packages/php)
 - [Python](packages/python)
+- [Ruby](packages/ruby)
 - [Rust](packages/rust)
 - [Scala](packages/scala)
 
