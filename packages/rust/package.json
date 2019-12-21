@@ -7,7 +7,7 @@
     "cspell-dict-rust-unlink": "./unlink.js"
   },
   "scripts": {
-    "build": "cspell-tools compile \"rust.txt\" -o .",
+    "build": "../../node_modules/.bin/cspell-tools compile \"rust.txt\" -o .",
     "prepare": "cp ../../util/* . && npm run build",
     "cspell-link": "node link.js",
     "cspell-unlink": "node unlink.js"

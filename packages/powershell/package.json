@@ -7,8 +7,8 @@
     "cspell-dict-powershell-unlink": "./unlink.js"
   },
   "scripts": {
-    "build": "cspell-tools compile \"powershell.txt\" -o .",
-    "test": "head -n 100 \"powershell.txt\" | cspell -v -c ./cspell-ext.json \"--local=*\" \"--languageId=powershell\" stdin",
+    "build": "../../node_modules/.bin/cspell-tools compile \"powershell.txt\" -o .",
+    "test": "head -n 100 \"powershell.txt\" | ../../node_modules/.bin/cspell -v -c ./cspell-ext.json \"--local=*\" \"--languageId=powershell\" stdin",
     "cspell-link": "node link.js",
     "cspell-unlink": "node unlink.js",
     "prepare": "cp ../../util/* . && npm run build"

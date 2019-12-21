@@ -7,8 +7,8 @@
     "cspell-dict-uk-ua-unlink": "./unlink.js"
   },
   "scripts": {
-    "build": "cspell-tools compile-trie \"uk_ua.dic\" -o .",
-    "test": "hunspell-reader words -n 1000 \"uk_ua.dic\" | cspell -v -c ./cspell-ext.json --local=uk --languageId=* stdin",
+    "build": "../../node_modules/.bin/cspell-tools compile-trie \"uk_ua.dic\" -o .",
+    "test": "hunspell-reader words -n 1000 \"uk_ua.dic\" | ../../node_modules/.bin/cspell -v -c ./cspell-ext.json --local=uk --languageId=* stdin",
     "prepare": "cp ../../util/* .",
     "cspell-link": "node link.js",
     "cspell-unlink": "node unlink.js"

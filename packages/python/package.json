@@ -7,8 +7,8 @@
     "cspell-dict-python-unlink": "./unlink.js"
   },
   "scripts": {
-    "build": "cspell-tools compile \"python.txt\" -o .",
-    "test-dictionary": "head -n 1000 \"python.txt\" | cspell -v -c ./cspell-ext.json --local=* --languageId=python stdin",
+    "build": "../../node_modules/.bin/cspell-tools compile \"python.txt\" -o .",
+    "test-dictionary": "head -n 1000 \"python.txt\" | ../../node_modules/.bin/cspell -v -c ./cspell-ext.json --local=* --languageId=python stdin",
     "test-samples": "cspell -v -c ./cspell-ext.json \"samples/**/*.py\"",
     "test": "npm run test-dictionary && npm run test-samples",
     "cspell-link": "node link.js",

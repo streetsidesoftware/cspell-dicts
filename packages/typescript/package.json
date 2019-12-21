@@ -7,8 +7,8 @@
     "cspell-dict-typescript-unlink": "./unlink.js"
   },
   "scripts": {
-    "build": "cspell-tools compile \"typescript.txt\" -o .",
-    "test": "head -n 100 \"typescript.txt\" | cspell -v -c ./cspell-ext.json \"--local=*\" \"--languageId=typescript\" stdin",
+    "build": "../../node_modules/.bin/cspell-tools compile \"typescript.txt\" -o .",
+    "test": "head -n 100 \"typescript.txt\" | ../../node_modules/.bin/cspell -v -c ./cspell-ext.json \"--local=*\" \"--languageId=typescript\" stdin",
     "cspell-link": "node link.js",
     "cspell-unlink": "node unlink.js",
     "prepare": "cp ../../util/* . && npm run build"

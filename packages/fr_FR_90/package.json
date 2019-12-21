@@ -7,8 +7,8 @@
     "cspell-dict-fr-reforme-unlink": "./unlink.js"
   },
   "scripts": {
-    "build": "cspell-tools compile-trie \"fr-reforme1990.dic\" -o .",
-    "test": "hunspell-reader words -n 1000 \"fr-reforme1990.dic\" | cspell -v -c ./cspell-ext.json \"--local=fr\" \"--languageId=*\" stdin",
+    "build": "../../node_modules/.bin/cspell-tools compile-trie \"fr-reforme1990.dic\" -o .",
+    "test": "hunspell-reader words -n 1000 \"fr-reforme1990.dic\" | ../../node_modules/.bin/cspell -v -c ./cspell-ext.json \"--local=fr\" \"--languageId=*\" stdin",
     "cspell-link": "node link.js",
     "cspell-unlink": "node unlink.js",
     "prepare": "cp ../../util/* ."
