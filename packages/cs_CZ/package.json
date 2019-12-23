@@ -7,7 +7,7 @@
     "cspell-dict-cs-cz-unlink": "./unlink.js"
   },
   "scripts": {
-    "build": "../../node_modules/.bin/cspell-tools compile-trie \"Czech.dic\" -o .",
+    "build": "../../node_modules/.bin/cross-env NODE_OPTIONS=--max_old_space_size=4096 ../../node_modules/.bin/cspell-tools compile-trie \"Czech.dic\" -o .",
     "test": "hunspell-reader words -n 1000 \"Czech.dic\" | ../../node_modules/.bin/cspell -v -c ./cspell-ext.json --local=cs --languageId=* stdin",
     "prepare": "cp ../../util/* .",
     "cspell-link": "node link.js",

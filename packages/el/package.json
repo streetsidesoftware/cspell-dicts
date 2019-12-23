@@ -7,7 +7,7 @@
     "cspell-dict-el-unlink": "./unlink.js"
   },
   "scripts": {
-    "build": "../../node_modules/.bin/cspell-tools compile-trie \"Greek.txt\" -o .",
+    "build": "../../node_modules/.bin/cross-env NODE_OPTIONS=--max_old_space_size=4096 ../../node_modules/.bin/cspell-tools compile-trie \"Greek.txt\" -o .",
     "prepublishOnly": "cp ../../util/* .",
     "test": "head -n 100 Greek.txt | ../../node_modules/.bin/cspell -v -c cspell-ext.json --local=el stdin",
     "cspell-link": "node link.js",
