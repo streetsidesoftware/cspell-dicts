@@ -7,7 +7,7 @@
     "cspell-dict-en-gb-unlink": "./unlink.js"
   },
   "scripts": {
-    "build": "cspell-tools compile-trie \"wordsEnGb.txt\" -o .",
+    "build": "cross-env NODE_OPTIONS=--max_old_space_size=4096 cspell-tools compile-trie \"wordsEnGb.txt\" -o .",
     "prepare": "cp ../../util/* .",
     "test-dict": "head -n 1000 \"wordsEnGb.txt\" | cspell -v -c ./cspell-ext.json --local=en_gb --languageId=* stdin",
     "test-text": "cspell -v -c ./cspell-ext.json --local=en_gb --languageId=* \"tests/*.txt\"",

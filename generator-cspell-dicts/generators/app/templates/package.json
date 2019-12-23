@@ -8,7 +8,7 @@
     "<%= fullPackageName %>-unlink": "./unlink.js"
   },
   "scripts": {
-    "build": "cspell-tools <%= command %> \"<%= srcFile %>\" -o .",
+    "build": "cross-env NODE_OPTIONS=--max_old_space_size=8192 cspell-tools <%= command %> \"<%= srcFile %>\" -o .",
     "test": "head -n 100 \"<%= srcFile %>\" | cspell -v -c ./cspell-ext.json \"--local=<%= local %>\" \"--languageId=<%= languageId %>\" stdin",
     "cspell-link": "node link.js",
     "cspell-unlink": "node unlink.js",
