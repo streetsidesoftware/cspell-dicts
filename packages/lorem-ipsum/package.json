@@ -7,8 +7,8 @@
     "cspell-dict-lorem-ipsum-unlink": "./unlink.js"
   },
   "scripts": {
-    "build": "../../node_modules/.bin/cspell-tools compile \"dictionary.txt\" -o .",
-    "test": "head -n 1000 \"dictionary.txt\" | ../../node_modules/.bin/cspell -v -c ./cspell-ext.json --local=lorem --languageId=* stdin",
+    "build": "cspell-tools compile \"dictionary.txt\" -o .",
+    "test": "head -n 1000 \"dictionary.txt\" | cspell -v -c ./cspell-ext.json --local=lorem --languageId=* stdin",
     "cspell-link": "node link.js",
     "cspell-unlink": "node unlink.js",
     "prepare": "cp ../../util/* . && npm run build"

@@ -8,9 +8,9 @@
   },
   "scripts": {
     "merge-dictionaries": "cp src/hunspell/* dict && cat src/hunspell/en_US.dic src/en_US.txt > dict/en_US.dic",
-    "compile": "../../node_modules/.bin/cspell-tools compile-trie --merge en_US src/hunspell/en_US.dic src/en_US.txt -o .",
+    "compile": "cspell-tools compile-trie --merge en_US src/hunspell/en_US.dic src/en_US.txt -o .",
     "build": "npm run compile",
-    "test-dict": "hunspell-reader words -n 10000 \"src/hunspell/en_US.dic\" | ../../node_modules/.bin/cspell -v -c ./cspell-ext.json --local=en --languageId=* stdin",
+    "test-dict": "hunspell-reader words -n 10000 \"src/hunspell/en_US.dic\" | cspell -v -c ./cspell-ext.json --local=en --languageId=* stdin",
     "test-text": "cspell -v -c ./cspell-ext.json --local=en --languageId=* \"tests/*.txt\"",
     "test": "npm run test-dict && npm run test-text",
     "prepare": "cp ../../util/* .",

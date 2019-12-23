@@ -7,8 +7,8 @@
     "cspell-dict-software-terms-unlink": "./unlink.js"
   },
   "scripts": {
-    "build": "../../node_modules/.bin/cspell-tools compile \"softwareTerms.txt\" -o .",
-    "test": "head -n 100 \"softwareTerms.txt\" | ../../node_modules/.bin/cspell -v -c ./cspell-ext.json \"--local=*\" \"--languageId=*\" stdin",
+    "build": "cspell-tools compile \"softwareTerms.txt\" -o .",
+    "test": "head -n 100 \"softwareTerms.txt\" | cspell -v -c ./cspell-ext.json \"--local=*\" \"--languageId=*\" stdin",
     "cspell-link": "node link.js",
     "cspell-unlink": "node unlink.js",
     "prepare": "cp ../../util/* . && npm run build"

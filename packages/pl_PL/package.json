@@ -7,8 +7,8 @@
     "cspell-dict-pl-pl-unlink": "./unlink.js"
   },
   "scripts": {
-    "build": "../../node_modules/.bin/cross-env NODE_OPTIONS=--max_old_space_size=12288 ../../node_modules/.bin/cspell-tools compile-trie \"pl_pl.dic\" -o .",
-    "test": "hunspell-reader words -n 1000 \"pl_pl.dic\" | ../../node_modules/.bin/cspell -v -c ./cspell-ext.json --local=pl --languageId=* stdin",
+    "build": "cross-env NODE_OPTIONS=--max_old_space_size=12288 cspell-tools compile-trie \"pl_pl.dic\" -o .",
+    "test": "hunspell-reader words -n 1000 \"pl_pl.dic\" | cspell -v -c ./cspell-ext.json --local=pl --languageId=* stdin",
     "prepare": "cp ../../util/* .",
     "cspell-link": "node link.js",
     "cspell-unlink": "node unlink.js"
