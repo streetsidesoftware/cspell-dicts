@@ -7,7 +7,6 @@
     "cspell-dict-en-us-unlink": "./unlink.js"
   },
   "scripts": {
-    "merge-dictionaries": "cp src/hunspell/* dict && cat src/hunspell/en_US.dic src/en_US.txt > dict/en_US.dic",
     "compile": "cspell-tools compile-trie --merge en_US src/hunspell/en_US.dic src/en_US.txt -o .",
     "build": "npm run compile",
     "test-dict": "hunspell-reader words -n 10000 \"src/hunspell/en_US.dic\" | cspell -v -c ./cspell-ext.json --local=en --languageId=* stdin",
