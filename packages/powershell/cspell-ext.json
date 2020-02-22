@@ -32,7 +32,23 @@
             // regex patterns than can be used with ignoreRegExpList or includeRegExpList
             // Example: "pattern": [{ "name": "mdash", "pattern": "&mdash;" }]
             // This could be included in "ignoreRegExpList": ["mdash"]
-            "patterns": [],
+            "patterns": [
+                {
+                    "name": "variables",
+                    "description": "Powershell variables",
+                    "pattern": "/[$@]\\w+(?:\\.\\w+)*/g"
+                },
+                {
+                    "name": "comments",
+                    "description": "Powershell comments",
+                    "pattern": "/(?:<#[\\s\\S]*?#>)|(?:#.*)/g"
+                },
+                {
+                    "name": "strings",
+                    "description": "Powershell strings",
+                    "pattern": "/(?:@\"[\\s\\S]*?\"@)|(?:(['\"]).*?(?<!`)\\1)/g"
+                }
+            ],
             // List of dictionaries to enable by name in `dictionaryDefinitions`
             "dictionaries": ["powershell"],
             // Dictionary definitions can also be supplied here. They are only used iff "languageId" and "local" match.
