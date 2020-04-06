@@ -1,0 +1,46 @@
+{
+  "name": "cspell-dict-hr-hr",
+  "version": "1.0.0",
+  "description": "Croatian dictionary for cspell. -- Private until verified",
+  "private": true,
+  "bin": {
+    "cspell-dict-hr-hr-link": "./link.js",
+    "cspell-dict-hr-hr-unlink": "./unlink.js"
+  },
+  "scripts": {
+    "build": "cross-env NODE_OPTIONS=--max_old_space_size=8192 cspell-tools compile \"hr_HR.dic\" -o .",
+    "test": "head -n 100 \"hr_HR.dic\" | cspell -v -c ./cspell-ext.json \"--local=hr,hr-HR\" \"--languageId=*\" stdin",
+    "cspell-link": "node link.js",
+    "cspell-unlink": "node unlink.js",
+    "prepare": "copy ..\\..\\util\\* . && npm run build"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/streetsidesoftware/cspell-dicts.git"
+  },
+  "keywords": [
+    "cspell",
+    "hr_HR",
+    "Croatian",
+    "dictionary",
+    "spelling"
+  ],
+  "main": "index.js",
+  "typings": "index.d.ts",
+  "author": "Jason Dent",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/streetsidesoftware/cspell-dicts/issues"
+  },
+  "homepage": "https://github.com/streetsidesoftware/cspell-dicts/blob/master/packages/hr_HR#readme",
+  "devDependencies": {},
+  "dependencies": {
+    "configstore": "^5.0.0"
+  },
+  "files": [
+    "hr_HR.txt.gz",
+    "cspell-ext.json",
+    "*.js",
+    "*.d.ts"
+  ]
+}
