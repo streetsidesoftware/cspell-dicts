@@ -5,6 +5,7 @@
 | AWS                   | [Daniel Schroeder](https://github.com/udondan) |
 | Bash                  | [dflock (Duncan Lock)](https://github.com/dflock) |
 | Catalan               | [Jordi Olivares Provencio](https://github.com/jordiolivares) |
+| Cryptocurrencies      | [Shane Fontaine](https://github.com/shanefontaine) |
 | city-names-finland    | [Daniel Schildt](https://github.com/d2s) |
 | Czech                 | [Zereges](https://github.com/Zereges) |
 | Danish                | [Viktor Hundahl Strate](https://github.com/viktorstrate) |
@@ -39,6 +40,7 @@
     cspell:words Majid Shamkhani
     cspell:words Noam Ben Shabat
     cspell:words rbalet Raphaël Balet
+    cspell:words Shane Fontaine
     cspell:words Simone Livieri
     cspell:words Todoroki / U-dory
     cspell:words Viktor Hundahl Strate
