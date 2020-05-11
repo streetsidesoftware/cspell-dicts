@@ -45,6 +45,7 @@ Various [cspell](https://github.com/Jason3S/cspell) dictionaries. Each dictionar
 
 ## Specialized Dictionaries
 
+- [Cryptocurrencies](packages/cryptocurrencies)
 - [HTML Symbol Entities](packages/html-symbol-entities)
 - [lorem ipsum](packages/lorem-ipsum)
 - [Medical Terms](packages/medicalterms)

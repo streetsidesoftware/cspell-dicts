@@ -1,0 +1,46 @@
+{
+  "name": "cspell-dict-cryptocurrencies",
+  "version": "1.0.0",
+  "description": "Cryptocurrencies dictionary for cspell. -- Private until verified",
+  "private": true,
+  "bin": {
+    "cspell-dict-cryptocurrencies-link": "./link.js",
+    "cspell-dict-cryptocurrencies-unlink": "./unlink.js"
+  },
+  "scripts": {
+    "build": "cross-env NODE_OPTIONS=--max_old_space_size=8192 cspell-tools compile \"cryptocurrencies.txt\" -o .",
+    "test": "head -n 100 \"cryptocurrencies.txt\" | cspell -v -c ./cspell-ext.json \"--local=*\" \"--languageId=*\" stdin",
+    "cspell-link": "node link.js",
+    "cspell-unlink": "node unlink.js",
+    "prepare": "cp ../../util/* . && npm run build"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/streetsidesoftware/cspell-dicts.git"
+  },
+  "keywords": [
+    "cspell",
+    "Cryptocurrencies",
+    "Cryptocurrencies",
+    "dictionary",
+    "spelling"
+  ],
+  "main": "index.js",
+  "typings": "index.d.ts",
+  "author": "Shane Fontaine",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/streetsidesoftware/cspell-dicts/issues"
+  },
+  "homepage": "https://github.com/streetsidesoftware/cspell-dicts/blob/master/packages/Cryptocurrencies#readme",
+  "devDependencies": {},
+  "dependencies": {
+    "configstore": "^5.0.0"
+  },
+  "files": [
+    "cryptocurrencies.txt.gz",
+    "cspell-ext.json",
+    "*.js",
+    "*.d.ts"
+  ]
+}
