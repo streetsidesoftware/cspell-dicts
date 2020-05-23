@@ -5,12 +5,14 @@
 | AWS                   | [Daniel Schroeder](https://github.com/udondan) |
 | Bash                  | [dflock (Duncan Lock)](https://github.com/dflock) |
 | Catalan               | [Jordi Olivares Provencio](https://github.com/jordiolivares) |
+| Croatian              | [Dubravko Cvikl](https://github.com/dcvikl) |
 | Cryptocurrencies      | [Shane Fontaine](https://github.com/shanefontaine) |
 | city-names-finland    | [Daniel Schildt](https://github.com/d2s) |
 | Czech                 | [Zereges](https://github.com/Zereges) |
 | Danish                | [Viktor Hundahl Strate](https://github.com/viktorstrate) |
 | Django                | [canarduck](https://github.com/canarduck) |
 | Elixir                | [Todoroki / U-dory](https://github.com/ndac-todoroki) |
+| Esperanto             | [Carmen Bianca Bakker](https://github.com/carmenbianca) |
 | French                | [canarduck](https://github.com/canarduck) |
 | Fullstack             | [rbalet (Raphaël Balet)](https://github.com/rbalet) |
 | Go                    | [Alexey Palazhchenko](https://github.com/AlekSi) |
