@@ -1,0 +1,46 @@
+{
+  "name": "cspell-dict-eo",
+  "version": "1.0.0",
+  "description": "Esperanto dictionary for cspell.",
+  "private": true,
+  "bin": {
+    "cspell-dict-eo-link": "./link.js",
+    "cspell-dict-eo-unlink": "./unlink.js"
+  },
+  "scripts": {
+    "build": "cross-env NODE_OPTIONS=--max_old_space_size=8192 cspell-tools compile-trie \"eo.dic\" -o .",
+    "test": "head -n 100 \"eo.dic\" | cspell -v -c ./cspell-ext.json \"--local=eo\" \"--languageId=*\" stdin",
+    "cspell-link": "node link.js",
+    "cspell-unlink": "node unlink.js",
+    "prepare": "cp ../../util/* . && npm run build"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/streetsidesoftware/cspell-dicts.git"
+  },
+  "keywords": [
+    "cspell",
+    "eo",
+    "Esperanto",
+    "dictionary",
+    "spelling"
+  ],
+  "main": "index.js",
+  "typings": "index.d.ts",
+  "author": "Jason Dent",
+  "license": "GPL-2.0-or-later",
+  "bugs": {
+    "url": "https://github.com/streetsidesoftware/cspell-dicts/issues"
+  },
+  "homepage": "https://github.com/streetsidesoftware/cspell-dicts/blob/master/packages/eo#readme",
+  "devDependencies": {},
+  "dependencies": {
+    "configstore": "^5.0.0"
+  },
+  "files": [
+    "eo.trie.gz",
+    "cspell-ext.json",
+    "*.js",
+    "*.d.ts"
+  ]
+}
