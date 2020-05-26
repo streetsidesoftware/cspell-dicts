@@ -10,6 +10,7 @@ Various [cspell](https://github.com/Jason3S/cspell) dictionaries. Each dictionar
 - [Dutch](packages/nl_NL)
 - [English - American](packages/en_US) (Included by default in cspell and [VS Code Spell Checker](https://github.com/Jason-Rev/vscode-spell-checker))
 - [English - British](packages/en_GB) (Included by default in cspell and VS Code Spell Checker)
+- [Esperanto](packages/eo)
 - [French](packages/fr_FR)
 - [German](packages/de_DE)
 - [Greek](packages/el)
