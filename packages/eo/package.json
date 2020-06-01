@@ -2,7 +2,6 @@
   "name": "cspell-dict-eo",
   "version": "1.0.0",
   "description": "Esperanto dictionary for cspell.",
-  "private": true,
   "bin": {
     "cspell-dict-eo-link": "./link.js",
     "cspell-dict-eo-unlink": "./unlink.js"
@@ -27,7 +26,7 @@
   ],
   "main": "index.js",
   "typings": "index.d.ts",
-  "author": "Jason Dent",
+  "author": "Street Side Software",
   "license": "GPL-2.0-or-later",
   "bugs": {
     "url": "https://github.com/streetsidesoftware/cspell-dicts/issues"
@@ -39,6 +38,7 @@
   },
   "files": [
     "eo.trie.gz",
+    "eo_license.txt",
     "cspell-ext.json",
     "*.js",
     "*.d.ts"
