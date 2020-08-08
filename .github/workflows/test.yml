@@ -4,9 +4,25 @@ on: # rebuild any PRs and main branch changes
   push:
 
 jobs:
-  build-test:
-    runs-on: ubuntu-latest
+  test:
+    runs-on: ${{ matrix.os }}
+    strategy:
+      matrix:
+        node-version:
+          - 10.x
+          - 12.x
+          - 14.x
+
+        os:
+          - ubuntu-latest
+          - windows-latest
+          - macos-latest
+
     steps:
     - uses: actions/checkout@v2
-    - run: npm install
+    - name: Use Node.js ${{ matrix.node-version }}
+      uses: actions/setup-node@v1
+      with:
+        node-version: ${{ matrix.node-version }}
+    - run: npm ci
     - run: npm test
