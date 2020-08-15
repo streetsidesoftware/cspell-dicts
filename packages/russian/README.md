@@ -1,4 +1,6 @@
-# Cspell Russian Dictionary
+# Cspell Russian Dictionary (Deprecated)
+
+*Use:* [cspell-dict-ru_ru - npm](https://www.npmjs.com/package/cspell-dict-ru_ru)
 
 Russian dictionary for cspell.
 

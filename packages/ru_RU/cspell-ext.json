@@ -1,11 +1,11 @@
 // cSpell Settings
 {
     "id": "ru-ru",
-    "name": "Russian Dictionary (Small)",
-    "description": "Russian Dictionary (Small)",
+    "name": "Russian Dictionary (Combined)",
+    "description": "Russian Dictionary (Combined)",
     // List of dictionary files to add to the global list of dictionaries
     "dictionaryDefinitions": [
-        { "name": "ru-ru", "file": "./ru_ru.trie.gz", "description": "Russian Dictionary (Small)" }
+        { "name": "ru-ru", "file": "./ru_ru.trie.gz", "description": "Russian Dictionary (Combined)" }
     ],
     // Dictionaries to always be used.
     // Generally left empty
@@ -19,7 +19,7 @@
             "languageId": "*",
             // Language local. i.e. en-US, de-AT, or ru. * will match all locals.
             // Multiple locals can be specified like: "en, en-US" to match both English and English US.
-            "local": "ru",
+            "local": "ru,ru-ru",
             // By default the whole text of a file is included for spell checking
             // Adding patterns to the "includeRegExpList" to only include matching patterns
             "includeRegExpList": [],
