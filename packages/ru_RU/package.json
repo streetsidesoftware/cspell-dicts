@@ -7,8 +7,10 @@
     "cspell-dict-ru-ru-unlink": "./unlink.js"
   },
   "scripts": {
-    "build": "cross-env NODE_OPTIONS=--max_old_space_size=12288 cspell-tools compile-trie \"ru_ru.dic\" -o .",
-    "test": "hunspell-reader words -n 1000 \"ru_ru.dic\" | cspell -v -c ./cspell-ext.json --local=ru --languageId=* stdin",
+    "build": "cross-env NODE_OPTIONS=--max_old_space_size=12288 cspell-tools compile-trie \"ru_ru.dic\" \"Russian.dic\" -o . -M ru_ru",
+    "test-ru_ru": "hunspell-reader words -n 10000 \"ru_ru.dic\" | cspell -v -c ./cspell-ext.json --local=ru --languageId=* stdin",
+    "test-russian": "hunspell-reader words -n 10000 \"Russian.dic\" | cspell -v -c ./cspell-ext.json --local=ru --languageId=* stdin",
+    "test": "npm run test-ru_ru && npm run test-russian",
     "prepare": "cp ../../util/* .",
     "cspell-link": "node link.js",
     "cspell-unlink": "node unlink.js"
@@ -37,6 +39,7 @@
   },
   "files": [
     "LICENSE.ru_ru.txt",
+    "LICENSE.Russian.txt",
     "ru_ru.trie.gz",
     "cspell-ext.json",
     "*.js",
