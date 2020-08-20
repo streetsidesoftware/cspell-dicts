@@ -4,7 +4,7 @@ Ada Language dictionary for cspell.
 
 This is a pre-built dictionary for use with cspell.
 
-Supports keywords.
+Supports Ada keywords.
 
 ## Installation
 
