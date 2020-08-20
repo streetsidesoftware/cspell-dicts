@@ -1,26 +1,24 @@
-# Cspell Go Language Dictionary
+# Cspell Ada Language Dictionary
 
-Go Language dictionary for cspell.
+Ada Language dictionary for cspell.
 
 This is a pre-built dictionary for use with cspell.
 
-Supports keywords and built-in library names up to Go 1.12.
-
-This dictionary is included by default in cSpell.
+Supports keywords.
 
 ## Installation
 
 Global Install and add to cspell global settings.
 
 ```sh
-npm install -g cspell-dict-golang
-cspell-dict-golang-link
+npm install -g cspell-dict-ada
+cspell-dict-ada-link
 ```
 
 ## Uninstall from cspell
 
 ```sh
-cspell-dict-golang-unlink
+cspell-dict-ada-unlink
 ```
 
 ## Manual Installation
@@ -30,7 +28,7 @@ The `cspell-ext.json` file in this package should be added to the import section
 ```javascript
 {
     // …
-    "import": ["<path to node_modules>/cspell-dict-golang/cspell-ext.json"],
+    "import": ["<path to node_modules>/cspell-dict-ada/cspell-ext.json"],
     // …
 }
 ```
@@ -43,9 +41,13 @@ Building is only necessary if you want to modify the contents of the dictionary.
 npm run build
 ```
 
+## Reference
+
+https://www.adaic.org/resources/add_content/standards/05rm/html/RM-2-9.html
+
 ## Contributors
 
-@AlekSi - Alexey Palazhchenko: https://github.com/AlekSi/go-words
+@Jason3S - Jason Dent
 
 ## License
 
