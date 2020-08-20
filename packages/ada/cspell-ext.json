@@ -1,0 +1,45 @@
+// cSpell Settings
+{
+    "id": "ada",
+    "name": "Ada Language",
+    "description": "Ada Language Dictionary",
+    // List of dictionary files to add to the global list of dictionaries
+    "dictionaryDefinitions": [
+        {
+            "name": "ada",
+            "file": "./ada.txt.gz",
+            "description": "Ada Language Dictionary"
+        }
+    ],
+    // Dictionaries to always be used.
+    // Generally left empty
+    "dictionaries": [],
+    // Language Rules to apply to matching files.
+    // Files are matched on `languageId` and `local`
+    "languageSettings": [
+        {
+            // VSCode languageId. i.e. typescript, java, go, cpp, javascript, markdown, latex
+            // * will match against any file type.
+            "languageId": "ada",
+            // Language local. i.e. en-US, de-AT, or ru. * will match all locals.
+            // Multiple locals can be specified like: "en, en-US" to match both English and English US.
+            "local": "*",
+            // List of dictionaries to enable by name in `dictionaryDefinitions`
+            "dictionaries": ["ada"],
+            "patterns": [{
+                "name": "ada word break",
+                "pattern": "/(?<=\\w)['](?=\\w)/g",
+                "description": "Ada Word Break"
+            },{
+                "name": "comment.single-line",
+                "pattern": "/--.*/g",
+                "description": "Single Line Comment"
+            },{
+                "name": "string.literal",
+                "pattern": "/\".*?(?<=(?:\"\")+|[^\"])\"(?!\")/g",
+                "description": "Single Line Comment"
+            }],
+            "ignoreRegExpList": ["ada word break"]
+        }
+    ]
+}
