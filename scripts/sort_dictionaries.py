@@ -5,7 +5,7 @@ from pathlib import Path
 if sys.version_info[0] < 3:
     raise RuntimeError("Must be using Python 3")
 
-IGNORE = ["cpp-dict", "php"]
+IGNORE = ["php"]
 
 
 # modified version from: https://stackoverflow.com/a/57814048/9737947
@@ -45,11 +45,23 @@ if __name__ == "__main__":
 
                 content = p.read_text()
                 content = content.split("\n")
+
+                cspell_args = []
+                if content[0].startswith("cspell"):
+                    while content[0].startswith("cspell"):
+                        cspell_args.append(content[0])
+                        del content[0]
+
                 content = sorted(content, key=str.lower)
 
                 if content[0] == "":
                     while content[0] == "":
                         del content[0]
                     content.append("")
+
+                if cspell_args:
+                    cspell_args.reverse()
+                    for arg in cspell_args:
+                        content.insert(0, arg)
 
                 p.write_text("\n".join(content))
