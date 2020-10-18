@@ -1,7 +1,8 @@
 {
 	"private": true,
 	"scripts": {
-		"test": "lerna run test",
+		"test": "npm run lint && lerna run test",
+		"lint": "eslint .",
 		"build": "lerna run --concurrency 2 --stream build --no-bail",
 		"clean": "rimraf \"packages/*/*.txt.gz\"",
 		"postinstall": "lerna bootstrap",
@@ -12,6 +13,7 @@
 		"cross-env": "^7.0.2",
 		"cspell": "^4.0.63",
 		"cspell-tools": "^5.0.1-alpha.5",
+		"eslint": "^7.11.0",
 		"hunspell-reader": "^3.2.0",
 		"lerna": "^3.22.1",
 		"rimraf": "^3.0.2"
