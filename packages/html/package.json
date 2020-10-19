@@ -1,0 +1,49 @@
+{
+  "name": "cspell-dict-html",
+  "version": "1.0.0",
+  "description": "HTML dictionary for cspell. -- Private until verified",
+  "private": true,
+  "bin": {
+    "cspell-dict-html-link": "./link.js",
+    "cspell-dict-html-unlink": "./unlink.js"
+  },
+  "scripts": {
+    "build": "cross-env NODE_OPTIONS=--max_old_space_size=8192 cspell-tools compile \"html.txt\" -o .",
+    "test": "head -n 100 \"html.txt\" | cspell -v -c ./cspell-ext.json \"--local=*\" \"--languageId=html\" stdin",
+    "cspell-link": "node link.js",
+    "cspell-unlink": "node unlink.js",
+    "prepare": "cp ../../util/* . && npm run build"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/streetsidesoftware/cspell-dicts.git"
+  },
+  "keywords": [
+    "cspell",
+    "html",
+    "html",
+    "dictionary",
+    "spelling"
+  ],
+  "main": "index.js",
+  "typings": "index.d.ts",
+  "author": "Jason Dent",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/streetsidesoftware/cspell-dicts/issues"
+  },
+  "homepage": "https://github.com/streetsidesoftware/cspell-dicts/blob/master/packages/html#readme",
+  "devDependencies": {
+    "cross-env": "^7.0.2",
+    "cspell-tools": "^4.2.1"
+  },
+  "dependencies": {
+    "configstore": "^5.0.0"
+  },
+  "files": [
+    "html.txt.gz",
+    "cspell-ext.json",
+    "*.js",
+    "*.d.ts"
+  ]
+}
