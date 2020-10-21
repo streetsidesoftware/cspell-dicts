@@ -43,6 +43,10 @@ Building is only necessary if you want to modify the contents of the dictionary.
 npm run build
 ```
 
+## Adding Words
+
+Please add any words to [src/additional_words.txt](./src/additional_words.txt) by making a pull request.
+
 ## Resources
 
 The Hunspell source for this dictionary can be found:

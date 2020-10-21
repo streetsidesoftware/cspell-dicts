@@ -7,10 +7,13 @@
     "cspell-dict-en-us-unlink": "./unlink.js"
   },
   "scripts": {
-    "compile": "cspell-tools compile-trie --merge en_US src/hunspell/en_US.dic src/en_US.txt -o .",
     "build": "npm run compile",
+    "checksum": "shasum -c checksum.txt",
+    "compile": "cat source-files.txt | xargs cspell-tools compile-trie --merge en_US -o . && npm run gen-checksum",
+    "conditional-build": "npm run --silent checksum || npm run build",
     "test-dict": "hunspell-reader words -n 10000 \"src/hunspell/en_US.dic\" | cspell -v -c ./cspell-ext.json --local=en --languageId=* stdin",
     "test-text": "cspell -v -c ./cspell-ext.json --local=en --languageId=* \"tests/*.txt\"",
+    "gen-checksum": "cat source-files.txt | xargs shasum -p en_US.trie.gz > checksum.txt",
     "test": "npm run test-dict && npm run test-text",
     "prepare": "cp ../../util/* .",
     "cspell-link": "node link.js",
@@ -43,6 +46,8 @@
   "files": [
     "en_US.trie.gz",
     "cspell-ext.json",
+    "src/hunspell/README_en_US-large.txt",
+    "!scripts",
     "*.js",
     "*.d.ts"
   ],

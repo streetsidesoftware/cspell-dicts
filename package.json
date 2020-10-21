@@ -4,9 +4,11 @@
 		"test": "npm run lint && lerna run test",
 		"lint": "eslint .",
 		"build": "lerna run --concurrency 2 --stream build --no-bail",
+		"conditional-build": "lerna run --concurrency 2 --stream conditional-build --no-bail",
+		"checksum": "lerna run checksum",
 		"clean": "rimraf \"packages/*/*.txt.gz\"",
 		"postinstall": "lerna bootstrap",
-		"pub": "lerna bootstrap && npm test && lerna publish",
+		"pub": "lerna bootstrap && npm test && npm run checksum && lerna publish",
 		"prepublishOnly": "npm test",
 		"update-packages": "lerna exec \"npm update -S && rm -rf node_modules package-lock.json && npm i\""
 	},
