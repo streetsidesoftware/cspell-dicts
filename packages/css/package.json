@@ -1,14 +1,14 @@
 {
   "name": "cspell-dict-css",
   "version": "1.0.1",
-  "description": "CSS dictionary for cspell. -- Private until verified",
+  "description": "CSS dictionary for cspell.",
   "private": true,
   "bin": {
     "cspell-dict-css-link": "./link.js",
     "cspell-dict-css-unlink": "./unlink.js"
   },
   "scripts": {
-    "build": "cross-env NODE_OPTIONS=--max_old_space_size=8192 cspell-tools compile \"css.txt\" -o .",
+    "build": "cspell-tools compile \"css.txt\" -o .",
     "test": "head -n 100 \"css.txt\" | cspell -v -c ./cspell-ext.json \"--local=*\" \"--languageId=css\" stdin",
     "cspell-link": "node link.js",
     "cspell-unlink": "node unlink.js",
