@@ -1,14 +1,13 @@
 {
   "name": "cspell-dict-csharp",
   "version": "1.0.1",
-  "description": "C# dictionary for cspell. -- Private until verified",
-  "private": true,
+  "description": "C# dictionary for cspell.",
   "bin": {
     "cspell-dict-csharp-link": "./link.js",
     "cspell-dict-csharp-unlink": "./unlink.js"
   },
   "scripts": {
-    "build": "cross-env NODE_OPTIONS=--max_old_space_size=8192 cspell-tools compile \"csharp.txt\" -o .",
+    "build": "cspell-tools compile \"csharp.txt\" -o .",
     "test": "head -n 100 \"csharp.txt\" | cspell -v -c ./cspell-ext.json \"--local=*\" \"--languageId=csharp\" stdin",
     "cspell-link": "node link.js",
     "cspell-unlink": "node unlink.js",
