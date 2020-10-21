@@ -35,13 +35,11 @@ function run() {
     }
 
     console.log("Processing...")
-    const regexpGreekAllLower = /^[]$/
     const lines = src.split(/\n/g)
     .map(t => t.trim())
     .filter(t => t.toLocaleLowerCase('el') === t) // keep lowercase only words.
     .map(t => t.normalize('NFC'))
     .filter(t => t !== t.normalize("NFD"));
-    const words = new Set(lines);
     const result = lines
     .map(t => t.toLocaleUpperCase('el'));
 
