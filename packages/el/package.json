@@ -7,9 +7,11 @@
     "cspell-dict-el-unlink": "./unlink.js"
   },
   "scripts": {
-    "build": "cross-env NODE_OPTIONS=--max_old_space_size=4096 cspell-tools compile-trie \"Greek.txt\" -o .",
+    "compile-all-caps": "node ./tools/toCaps ./src/Greek.txt ./src/Greek.ALLCAPS.txt",
+    "build-dictionary": "cross-env NODE_OPTIONS=--max_old_space_size=4096 cspell-tools compile-trie --merge el_GR src/hunspell/el-GR.dic src/Greek.txt src/Greek.ALLCAPS.txt -o .",
+    "build": "npm run compile-all-caps && npm run build-dictionary",
     "prepublishOnly": "cp ../../util/* .",
-    "test": "head -n 100 Greek.txt | cspell -v -c cspell-ext.json --local=el stdin",
+    "test": "head -n 1000 ./src/Greek.txt | cspell -v -c cspell-ext.json --local=el stdin",
     "cspell-link": "node link.js",
     "cspell-unlink": "node unlink.js"
   },
@@ -36,9 +38,11 @@
     "configstore": "^5.0.1"
   },
   "files": [
-    "Greek.trie.gz",
+    "el_GR.trie.gz",
     "cspell-ext.json",
+    "src/hunspell/README.txt",
     "*.js",
+    "!tools",
     "*.d.ts"
   ]
 }
