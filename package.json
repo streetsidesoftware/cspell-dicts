@@ -7,7 +7,8 @@
 		"clean": "rimraf \"packages/*/*.txt.gz\"",
 		"postinstall": "lerna bootstrap",
 		"pub": "lerna bootstrap && npm test && lerna publish",
-		"prepublishOnly": "npm test"
+		"prepublishOnly": "npm test",
+		"update-packages": "lerna exec \"npm update -S && rm -rf node_modules package-lock.json && npm i\""
 	},
 	"devDependencies": {
 		"cross-env": "^7.0.2",
