@@ -9,6 +9,7 @@
   "scripts": {
     "build": "cspell-tools compile-trie \"da_DK.dic\" -o .",
     "test": "hunspell-reader words -n 1000 \"da_DK.dic\" | cspell -v -c ./cspell-ext.json --local=da --languageId=* stdin",
+    "prepublishOnly": "npm t",
     "prepare": "cp ../../util/* .",
     "cspell-link": "node link.js",
     "cspell-unlink": "node unlink.js"

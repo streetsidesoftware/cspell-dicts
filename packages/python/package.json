@@ -13,6 +13,7 @@
     "test": "npm run test-dictionary && npm run test-samples",
     "cspell-link": "node link.js",
     "cspell-unlink": "node unlink.js",
+    "prepublishOnly": "npm t",
     "prepare": "cp ../../util/* . && npm run build"
   },
   "repository": {

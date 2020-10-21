@@ -9,6 +9,7 @@
   "scripts": {
     "build": "cspell-tools compile-trie \"vi.dic\" -o .",
     "test": "hunspell-reader words -n 1000 \"vi.dic\" | cspell -v -c ./cspell-ext.json --local=vi --languageId=* stdin",
+    "prepublishOnly": "npm t",
     "prepare": "cp ../../util/* .",
     "cspell-link": "node link.js",
     "cspell-unlink": "node unlink.js"

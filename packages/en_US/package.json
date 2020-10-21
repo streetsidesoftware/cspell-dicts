@@ -15,6 +15,7 @@
     "test-text": "cspell -v -c ./cspell-ext.json --local=en --languageId=* \"tests/*.txt\"",
     "gen-checksum": "cat source-files.txt | xargs shasum -p en_US.trie.gz > checksum.txt",
     "test": "npm run test-dict && npm run test-text",
+    "prepublishOnly": "npm t",
     "prepare": "cp ../../util/* .",
     "cspell-link": "node link.js",
     "cspell-unlink": "node unlink.js"

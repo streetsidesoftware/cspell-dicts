@@ -12,6 +12,7 @@
     "test-russian": "hunspell-reader words -n 1000 \"Russian.dic\" | cspell -v -c ./cspell-ext.json --local=ru --languageId=* stdin",
     "test-samples": "cspell -v -c ./cspell-ext.json --local=ru,en \"samples/**\"",
     "test": "npm run test-ru_ru && npm run test-russian && npm run test-samples",
+    "prepublishOnly": "npm t",
     "prepare": "cp ../../util/* .",
     "cspell-link": "node link.js",
     "cspell-unlink": "node unlink.js"
