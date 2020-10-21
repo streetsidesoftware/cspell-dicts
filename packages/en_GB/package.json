@@ -7,9 +7,13 @@
     "cspell-dict-en-gb-unlink": "./unlink.js"
   },
   "scripts": {
-    "build": "cross-env NODE_OPTIONS=--max_old_space_size=4096 cspell-tools compile-trie \"wordsEnGb.txt\" -o .",
+    "build": "npm run compile",
+    "checksum": "shasum -c checksum.txt",
+    "compile": "cat source-files.txt | xargs cspell-tools compile-trie --merge en_GB -o . && npm run gen-checksum",
+    "conditional-build": "npm run --silent checksum || npm run build",
+    "gen-checksum": "cat source-files.txt source-dependencies.txt | xargs shasum -p > checksum.txt",
     "prepare": "cp ../../util/* .",
-    "test-dict": "head -n 1000 \"wordsEnGb.txt\" | cspell -v -c ./cspell-ext.json --local=en_gb --languageId=* stdin",
+    "test-dict": "head -n 1000 \"./src/wordsEnGb.txt\" | cspell -v -c ./cspell-ext.json --local=en_gb --languageId=* stdin",
     "test-text": "cspell -v -c ./cspell-ext.json --local=en_gb --languageId=* \"tests/*.txt\"",
     "test": "npm run test-dict && npm run test-text",
     "cspell-link": "node install.js",
@@ -37,8 +41,9 @@
     "configstore": "^5.0.1"
   },
   "files": [
-    "wordsEnGb.trie.gz",
+    "en_GB.trie.gz",
     "cspell-ext.json",
+    "/src/hunspell/README_en_GB.txt",
     "*.js",
     "*.d.ts"
   ],
