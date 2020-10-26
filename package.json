@@ -9,7 +9,9 @@
 		"checksum": "lerna run checksum",
 		"clean": "rimraf \"packages/*/*.txt.gz\"",
 		"postinstall": "lerna bootstrap",
-		"pub": "npm run check-dirty && lerna bootstrap && npm test && npm run checksum && lerna publish",
+		"pub-version": "lerna version --conventional-commits",
+		"pub-lerna": "npm run pub-version && lerna publish from-git",
+		"pub": "npm run check-dirty && lerna bootstrap && npm test && npm run checksum && npm run pub-lerna",
 		"update-packages": "lerna exec \"npm update -S && rm -rf node_modules package-lock.json && npm i\""
 	},
 	"devDependencies": {
