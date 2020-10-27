@@ -28,13 +28,78 @@
             // Adding patterns to the "includeRegExpList" to only include matching patterns
             "includeRegExpList": [],
             // To exclude patterns, add them to "ignoreRegExpList"
-            "ignoreRegExpList": [],
+            "ignoreRegExpList": [
+                "href",
+                "HTML-IDREF-id",
+                "HTML-src",
+                "HTML-class",
+                "HTML-IDREF-aria-activedescendant",
+                "HTML-IDREF-aria-controls",
+                "HTML-IDREF-aria-describedby",
+                "HTML-IDREF-aria-details",
+                "HTML-IDREF-aria-errormessage",
+                "HTML-IDREF-aria-flowto",
+                "HTML-IDREF-aria-labelledby",
+                "HTML-IDREF-aria-owns",
+                "HTML-IDREF-for"
+            ],
             // regex patterns than can be used with ignoreRegExpList or includeRegExpList
             // Example: "pattern": [{ "name": "mdash", "pattern": "&mdash;" }]
             // This could be included in "ignoreRegExpList": ["mdash"]
-            "patterns": [],
+            "patterns": [
+                {
+                    "name": "HTML-IDREF-id",
+                    "pattern": "id=\"(?:[^\\\"]+|\\.)*\""
+                },
+                {
+                    "name": "HTML-src",
+                    "pattern": "src=\"(?:[^\\\"]+|\\.)*\""
+                },
+                {
+                    "name": "HTML-class",
+                    "pattern": "class=\"(?:[^\\\"]+|\\.)*\""
+                },
+                {
+                    "name": "HTML-IDREF-aria-activedescendant",
+                    "pattern": "aria-activedescendant=\"(?:[^\\\"]+|\\.)*\""
+                },
+                {
+                    "name": "HTML-IDREF-aria-controls",
+                    "pattern": "aria-controls=\"(?:[^\\\"]+|\\.)*\""
+                },
+                {
+                    "name": "HTML-IDREF-aria-describedby",
+                    "pattern": "aria-describedby=\"(?:[^\\\"]+|\\.)*\""
+                },
+                {
+                    "name": "HTML-IDREF-aria-details",
+                    "pattern": "aria-details=\"(?:[^\\\"]+|\\.)*\""
+                },
+                {
+                    "name": "HTML-IDREF-aria-errormessage",
+                    "pattern": "aria-errormessage=\"(?:[^\\\"]+|\\.)*\""
+                },
+                {
+                    "name": "HTML-IDREF-aria-flowto",
+                    "pattern": "aria-flowto=\"(?:[^\\\"]+|\\.)*\""
+                },
+                {
+                    "name": "HTML-IDREF-aria-labelledby",
+                    "pattern": "aria-labelledby=\"(?:[^\\\"]+|\\.)*\""
+                },
+                {
+                    "name": "HTML-IDREF-aria-owns",
+                    "pattern": "aria-owns=\"(?:[^\\\"]+|\\.)*\""
+                },
+                {
+                    "name": "HTML-IDREF-for",
+                    "pattern": "for=\"(?:[^\\\"]+|\\.)*\""
+                }
+            ],
             // List of dictionaries to enable by name in `dictionaryDefinitions`
-            "dictionaries": ["html"],
+            "dictionaries": [
+                "html"
+            ],
             // Dictionary definitions can also be supplied here. They are only used iff "languageId" and "local" match.
             "dictionaryDefinitions": []
         }
