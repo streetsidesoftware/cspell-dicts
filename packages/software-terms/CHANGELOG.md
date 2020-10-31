@@ -3,6 +3,17 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+## [1.0.18](https://github.com/streetsidesoftware/cspell-dicts/compare/cspell-dict-software-terms@1.0.17...cspell-dict-software-terms@1.0.18) (2020-10-31)
+
+
+### Bug Fixes
+
+* Add back El Capitan ([20c12aa](https://github.com/streetsidesoftware/cspell-dicts/commit/20c12aabd388aab27904e2508489ef952b319b7a))
+
+
+
+
+
 ## [1.0.17](https://github.com/streetsidesoftware/cspell-dicts/compare/cspell-dict-software-terms@1.0.16...cspell-dict-software-terms@1.0.17) (2020-10-31)
 
 
