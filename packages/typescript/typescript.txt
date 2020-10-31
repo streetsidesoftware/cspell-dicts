@@ -1261,12 +1261,12 @@ GEQUAL
 gequal
 gesture
 get
-get ArrayBuffer[@@species]
-get Array[@@species]
-get Map[@@species]
-get RegExp[@@species]
-get Set[@@species]
-get TypedArray[@@species]
+ArrayBuffer[@@species]
+Array[@@species]
+Map[@@species]
+RegExp[@@species]
+Set[@@species]
+TypedArray[@@species]
 Geterr
 geterr
 getter
@@ -1981,7 +1981,6 @@ notifications
 notify
 noupdate
 null
-null literal
 Nullable
 nullable
 nullish
@@ -2679,11 +2678,14 @@ regex
 RegExp
 regexp
 $1-$9
-input ($_)
+($_)
 lastIndex
-lastMatch ($&)
-lastParen ($+)
-leftContext ($`)
+lastMatch
+($&)
+lastParen
+($+)
+leftContext
+($`)
 ignoreCase
 source
 sticky
@@ -2693,7 +2695,8 @@ prototype[@@match]
 prototype[@@replace]
 prototype[@@search]
 prototype[@@split]
-rightContext ($')
+rightContext
+($')
 region
 register
 registration
@@ -3452,7 +3455,8 @@ vary
 varying
 varyings
 vector
-Vector collections
+Vector
+collections
 vectors
 velocity
 vendor
