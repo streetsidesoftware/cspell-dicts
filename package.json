@@ -2,7 +2,8 @@
 	"private": true,
 	"scripts": {
 		"test": "npm run lint && lerna run test",
-		"lint": "eslint .",
+		"lint": "eslint --fix .",
+		"lint-ci": "eslint .",
 		"build": "lerna run --concurrency 2 --stream build --no-bail",
 		"conditional-build": "lerna run --concurrency 2 --stream conditional-build --no-bail",
 		"check-dirty": "git --no-pager diff --compact-summary --exit-code",
@@ -19,8 +20,11 @@
 		"cspell": "^4.1.2",
 		"cspell-tools": "^5.0.1-alpha.6",
 		"eslint": "^7.11.0",
+		"eslint-config-prettier": "^6.15.0",
+		"eslint-plugin-prettier": "^3.1.4",
 		"hunspell-reader": "^3.2.0",
 		"lerna": "^3.22.1",
+		"prettier": "^2.1.2",
 		"rimraf": "^3.0.2"
 	},
 	"name": "cspell-dicts",
