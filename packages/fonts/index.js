@@ -7,5 +7,5 @@ function getConfigLocation() {
 }
 
 module.exports = {
-  getConfigLocation,
+    getConfigLocation,
 };
