@@ -7,6 +7,10 @@
     "<%= fullPackageName %>-link": "./link.js",
     "<%= fullPackageName %>-unlink": "./unlink.js"
   },
+  "exports": {
+    ".": "./index.js",
+    "./cspell-ext.json": "./cspell-ext.json"
+  },
   "scripts": {
     "build": "cross-env NODE_OPTIONS=--max_old_space_size=8192 cspell-tools <%= command %> \"<%= srcFile %>\" -o .",
     "test": "head -n 100 \"<%= srcFile %>\" | cspell -v -c ./cspell-ext.json \"--local=<%= local %>\" \"--languageId=<%= languageId %>\" stdin",
@@ -34,8 +38,7 @@
     "url": "https://github.com/streetsidesoftware/cspell-dicts/issues"
   },
   "homepage": "https://github.com/streetsidesoftware/cspell-dicts/blob/master/packages/<%= name %>#readme",
-  "devDependencies": {
-  },
+  "devDependencies": {},
   "dependencies": {
     "configstore": "^5.0.0"
   },

@@ -6,6 +6,10 @@
     "cspell-dict-rust-link": "./link.js",
     "cspell-dict-rust-unlink": "./unlink.js"
   },
+  "exports": {
+    ".": "./index.js",
+    "./cspell-ext.json": "./cspell-ext.json"
+  },
   "scripts": {
     "build": "cspell-tools compile \"rust.txt\" -o .",
     "prepublishOnly": "npm t",

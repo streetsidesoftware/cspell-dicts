@@ -6,6 +6,10 @@
     "cspell-dict-fa-ir-link": "./link.js",
     "cspell-dict-fa-ir-unlink": "./unlink.js"
   },
+  "exports": {
+    ".": "./index.js",
+    "./cspell-ext.json": "./cspell-ext.json"
+  },
   "scripts": {
     "build": "cspell-tools compile-trie \"hunspell/fa-IR.dic\" -o .",
     "test": "hunspell-reader words -n 1000 \"hunspell/fa-IR.dic\" | cspell -v -c ./cspell-ext.json --local=fa --languageId=* stdin",

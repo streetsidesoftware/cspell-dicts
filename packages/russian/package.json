@@ -6,6 +6,10 @@
     "cspell-dict-russian-link": "./link.js",
     "cspell-dict-russian-unlink": "./unlink.js"
   },
+  "exports": {
+    ".": "./index.js",
+    "./cspell-ext.json": "./cspell-ext.json"
+  },
   "scripts": {
     "build": "cross-env NODE_OPTIONS=--max_old_space_size=12288 cspell-tools compile-trie \"Russian.dic\" -o .",
     "test": "hunspell-reader words -n 1000 \"Russian.dic\" | cspell -v -c ./cspell-ext.json --local=ru --languageId=* stdin",

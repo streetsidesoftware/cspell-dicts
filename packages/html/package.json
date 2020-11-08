@@ -6,6 +6,10 @@
     "cspell-dict-html-link": "./link.js",
     "cspell-dict-html-unlink": "./unlink.js"
   },
+  "exports": {
+    ".": "./index.js",
+    "./cspell-ext.json": "./cspell-ext.json"
+  },
   "scripts": {
     "build": "cross-env NODE_OPTIONS=--max_old_space_size=8192 cspell-tools compile \"html.txt\" -o .",
     "test": "head -n 100 \"html.txt\" | cspell -v -c ./cspell-ext.json \"--local=*\" \"--languageId=html\" stdin",

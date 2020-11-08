@@ -6,6 +6,10 @@
     "cspell-dict-en-gb-link": "./link.js",
     "cspell-dict-en-gb-unlink": "./unlink.js"
   },
+  "exports": {
+    ".": "./index.js",
+    "./cspell-ext.json": "./cspell-ext.json"
+  },
   "scripts": {
     "build": "npm run compile",
     "checksum": "shasum -c checksum.txt",

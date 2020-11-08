@@ -6,6 +6,10 @@
     "cspell-dict-nl-nl-link": "./link.js",
     "cspell-dict-nl-nl-unlink": "./unlink.js"
   },
+  "exports": {
+    ".": "./index.js",
+    "./cspell-ext.json": "./cspell-ext.json"
+  },
   "scripts": {
     "build": "cspell-tools compile-trie \"Dutch.dic\" -o .",
     "test": "hunspell-reader words -n 1000 \"Dutch.dic\" | cspell -v -c ./cspell-ext.json --local=nl --languageId=* stdin",

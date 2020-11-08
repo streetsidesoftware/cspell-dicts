@@ -6,6 +6,10 @@
     "cspell-dict-scala-link": "./link.js",
     "cspell-dict-scala-unlink": "./unlink.js"
   },
+  "exports": {
+    ".": "./index.js",
+    "./cspell-ext.json": "./cspell-ext.json"
+  },
   "scripts": {
     "build": "cspell-tools compile \"scala.txt\" -o .",
     "prepublishOnly": "npm t",

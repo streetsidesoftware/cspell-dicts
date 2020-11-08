@@ -6,6 +6,10 @@
     "cspell-dict-ca-link": "./link.js",
     "cspell-dict-ca-unlink": "./unlink.js"
   },
+  "exports": {
+    ".": "./index.js",
+    "./cspell-ext.json": "./cspell-ext.json"
+  },
   "scripts": {
     "build": "cross-env NODE_OPTIONS=--max_old_space_size=4096 cspell-tools compile-trie \"ca.dic\" -o .",
     "test": "hunspell-reader words -n 1000 \"ca.dic\" | cspell -v -c ./cspell-ext.json --local=ca --languageId=* stdin",

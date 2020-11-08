@@ -6,6 +6,10 @@
     "cspell-dict-es-es-link": "./link.js",
     "cspell-dict-es-es-unlink": "./unlink.js"
   },
+  "exports": {
+    ".": "./index.js",
+    "./cspell-ext.json": "./cspell-ext.json"
+  },
   "scripts": {
     "build": "cspell-tools compile-trie \"Spanish.dic\" -o .",
     "test": "hunspell-reader words -n 1000 \"Spanish.dic\" | cspell -v -c ./cspell-ext.json --local=es --languageId=* stdin",

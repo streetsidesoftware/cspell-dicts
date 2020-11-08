@@ -6,6 +6,10 @@
     "cspell-dict-uk-ua-link": "./link.js",
     "cspell-dict-uk-ua-unlink": "./unlink.js"
   },
+  "exports": {
+    ".": "./index.js",
+    "./cspell-ext.json": "./cspell-ext.json"
+  },
   "scripts": {
     "build": "cspell-tools compile-trie \"uk_ua.dic\" -o .",
     "test": "hunspell-reader words -n 1000 \"uk_ua.dic\" | cspell -v -c ./cspell-ext.json --local=uk --languageId=* stdin",

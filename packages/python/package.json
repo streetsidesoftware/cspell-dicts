@@ -6,6 +6,10 @@
     "cspell-dict-python-link": "./link.js",
     "cspell-dict-python-unlink": "./unlink.js"
   },
+  "exports": {
+    ".": "./index.js",
+    "./cspell-ext.json": "./cspell-ext.json"
+  },
   "scripts": {
     "build": "cspell-tools compile \"python.txt\" -o .",
     "test-dictionary": "head -n 1000 \"python.txt\" | cspell -v -c ./cspell-ext.json --local=* --languageId=python stdin",

@@ -6,6 +6,10 @@
     "cspell-dict-scientific-terms-us-link": "./link.js",
     "cspell-dict-scientific-terms-us-unlink": "./unlink.js"
   },
+  "exports": {
+    ".": "./index.js",
+    "./cspell-ext.json": "./cspell-ext.json"
+  },
   "scripts": {
     "build": "cspell-tools compile-trie \"custom_scientific_US.dic.txt\" -o .",
     "prepublishOnly": "npm t",

@@ -6,6 +6,10 @@
     "cspell-dict-ru-ru-link": "./link.js",
     "cspell-dict-ru-ru-unlink": "./unlink.js"
   },
+  "exports": {
+    ".": "./index.js",
+    "./cspell-ext.json": "./cspell-ext.json"
+  },
   "scripts": {
     "build": "cat source-files.txt | xargs cross-env NODE_OPTIONS=--max_old_space_size=12288 cspell-tools compile-trie -o . -M ru_ru && npm run gen-checksum",
     "checksum": "shasum -c checksum.txt",

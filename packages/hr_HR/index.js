@@ -1,9 +1,9 @@
 'use strict';
 
-var util = require('./util');
+const configLocation = require.resolve('./cspell-ext.json');
 
 function getConfigLocation() {
-    return util.configLocation;
+    return configLocation;
 }
 
 module.exports = {

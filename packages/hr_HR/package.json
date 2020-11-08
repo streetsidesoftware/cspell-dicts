@@ -6,6 +6,10 @@
     "cspell-dict-hr-hr-link": "./link.js",
     "cspell-dict-hr-hr-unlink": "./unlink.js"
   },
+  "exports": {
+    ".": "./index.js",
+    "./cspell-ext.json": "./cspell-ext.json"
+  },
   "scripts": {
     "build": "cross-env NODE_OPTIONS=--max_old_space_size=8192 cspell-tools compile-trie \"hr_HR.dic\" -o .",
     "test": "hunspell-reader words -n 1000 \"hr_HR.dic\" | cspell -v -c ./cspell-ext.json \"--local=hr,hr-HR\" \"--languageId=*\" stdin",
