@@ -3,6 +3,17 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+## [1.3.1](https://github.com/streetsidesoftware/cspell-dicts/compare/cspell-dict-ru_ru@1.3.0...cspell-dict-ru_ru@1.3.1) (2020-11-08)
+
+
+### Bug Fixes
+
+* do not include Configstore if not necessary ([#270](https://github.com/streetsidesoftware/cspell-dicts/issues/270)) ([d8b625f](https://github.com/streetsidesoftware/cspell-dicts/commit/d8b625f2f42d5cc6c4a9390216ac1e5037886e44))
+
+
+
+
+
 # [1.3.0](https://github.com/streetsidesoftware/cspell-dicts/compare/cspell-dict-ru_ru@1.2.6...cspell-dict-ru_ru@1.3.0) (2020-10-31)
 
 
