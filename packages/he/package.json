@@ -6,6 +6,10 @@
     "cspell-dict-he-link": "./link.js",
     "cspell-dict-he-unlink": "./unlink.js"
   },
+  "exports": {
+    ".": "./index.js",
+    "./cspell-ext.json": "./cspell-ext.json"
+  },
   "scripts": {
     "build": "cspell-tools compile-trie -m 0 \"hunspell/he.dic\" -o .",
     "test": "hunspell-reader words -m 0 -n 1000 \"hunspell/he.dic\" | cspell -v -c ./cspell-ext.json --local=he --languageId=* stdin",

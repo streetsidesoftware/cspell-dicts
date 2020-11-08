@@ -6,6 +6,10 @@
     "cspell-dict-fr-fr-link": "./link.js",
     "cspell-dict-fr-fr-unlink": "./unlink.js"
   },
+  "exports": {
+    ".": "./index.js",
+    "./cspell-ext.json": "./cspell-ext.json"
+  },
   "scripts": {
     "build": "cspell-tools compile-trie \"French.dic\" -o .",
     "test-dictionary": "hunspell-reader words -n 1000 \"French.dic\" | cspell -v -c ./cspell-ext.json --local=fr --languageId=* stdin",

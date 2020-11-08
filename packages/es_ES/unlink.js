@@ -2,6 +2,6 @@
 
 'use strict';
 
-var util = require('./util');
+const util = require('./util');
 
 util.uninstall();

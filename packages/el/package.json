@@ -6,6 +6,10 @@
     "cspell-dict-el-link": "./link.js",
     "cspell-dict-el-unlink": "./unlink.js"
   },
+  "exports": {
+    ".": "./index.js",
+    "./cspell-ext.json": "./cspell-ext.json"
+  },
   "scripts": {
     "compile-all-caps": "node ./tools/toCaps ./src/Greek.txt ./src/Greek.ALLCAPS.txt",
     "build-dictionary": "cross-env NODE_OPTIONS=--max_old_space_size=4096 cspell-tools compile-trie --merge el_GR src/hunspell/el-GR.dic src/Greek.txt src/Greek.ALLCAPS.txt -o .",

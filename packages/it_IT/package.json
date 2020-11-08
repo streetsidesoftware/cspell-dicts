@@ -6,6 +6,10 @@
     "cspell-dict-it-it-link": "./link.js",
     "cspell-dict-it-it-unlink": "./unlink.js"
   },
+  "exports": {
+    ".": "./index.js",
+    "./cspell-ext.json": "./cspell-ext.json"
+  },
   "scripts": {
     "build": "cross-env NODE_OPTIONS=--max_old_space_size=8092 cspell-tools compile-trie \"it_IT.dic\" -o .",
     "test": "hunspell-reader words -n 1000 \"it_IT.dic\" | cspell -v -c ./cspell-ext.json \"--local=it,it-IT\" \"--languageId=*\" stdin",

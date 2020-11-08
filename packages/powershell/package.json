@@ -6,6 +6,10 @@
     "cspell-dict-powershell-link": "./link.js",
     "cspell-dict-powershell-unlink": "./unlink.js"
   },
+  "exports": {
+    ".": "./index.js",
+    "./cspell-ext.json": "./cspell-ext.json"
+  },
   "scripts": {
     "build": "cspell-tools compile \"powershell.txt\" -o .",
     "test": "head -n 100 \"powershell.txt\" | cspell -v -c ./cspell-ext.json \"--local=*\" \"--languageId=powershell\" stdin",

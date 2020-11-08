@@ -6,6 +6,10 @@
     "cspell-dict-companies-link": "./link.js",
     "cspell-dict-companies-unlink": "./unlink.js"
   },
+  "exports": {
+    ".": "./index.js",
+    "./cspell-ext.json": "./cspell-ext.json"
+  },
   "scripts": {
     "build": "cspell-tools compile \"companies.txt\" -o .",
     "test": "head -n 100 \"companies.txt\" | cspell -v -c ./cspell-ext.json --local=* --languageId=* stdin",
