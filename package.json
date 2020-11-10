@@ -2,8 +2,8 @@
   "private": true,
   "scripts": {
     "test": "npm run lint-ci && lerna run test",
-    "lint": "eslint --fix . && prettier -w \"**/*.json\"",
-    "lint-ci": "eslint . && prettier -c \"**/*.json\"",
+    "lint": "eslint --fix . && prettier -w \"**/*.{json,yml,yaml}\"",
+    "lint-ci": "eslint . && prettier -c \"**/*.{json,yml,yaml}\"",
     "build": "lerna run --concurrency 2 --stream build --no-bail",
     "conditional-build": "lerna run --concurrency 2 --stream conditional-build --no-bail",
     "check-dirty": "git --no-pager diff --compact-summary --exit-code",
