@@ -1,19 +1,23 @@
-name: JS Lint
+name: Lint
 on:
   pull_request:
     paths:
-      - "**/.eslint*"
-      - "**/.prettierrc.json"
-      - "**/.editorconfig"
-      - "**/package*.json"
+      - ".eslint*"
+      - .prettier*"
       - "**/*.js"
+      - "**/*.md"
+      - "**/*.json"
+      - "**/*.yml"
+      - "**/*.yaml"
   push:
     paths:
-      - "**/.eslint*"
-      - "**/.prettierrc.json"
-      - "**/.editorconfig"
-      - "**/package*.json"
+      - ".eslint*"
+      - .prettier*"
       - "**/*.js"
+      - "**/*.md"
+      - "**/*.json"
+      - "**/*.yml"
+      - "**/*.yaml"
 
 jobs:
   lint:

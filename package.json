@@ -1,7 +1,7 @@
 {
   "private": true,
   "scripts": {
-    "test": "npm run lint-ci && lerna run test",
+    "test": "lerna run test",
     "lint": "eslint --fix . && prettier -w \"**/*.{md,json,yml,yaml}\"",
     "lint-ci": "eslint . && prettier -c \"**/*.{md,json,yml,yaml}\"",
     "build": "lerna run --concurrency 2 --stream build --no-bail",
