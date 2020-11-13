@@ -5,7 +5,12 @@
     "description": "British English Dictionary",
     // List of dictionary files to add to the global list of dictionaries
     "dictionaryDefinitions": [
-        { "name": "en-gb", "file": "./en_GB.trie.gz", "repMap": [["'|`|’", "'"]], "description": "British English Dictionary" }
+        {
+            "name": "en-gb",
+            "file": "./en_GB.trie.gz",
+            "repMap": [["'|`|’", "'"]],
+            "description": "British English Dictionary"
+        }
     ],
     // Dictionaries to always be used.
     // Generally left empty

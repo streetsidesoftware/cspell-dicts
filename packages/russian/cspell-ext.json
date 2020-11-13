@@ -5,7 +5,11 @@
     "description": "Russian Dictionary",
     // List of dictionary files to add to the global list of dictionaries
     "dictionaryDefinitions": [
-        { "name": "russian", "file": "./Russian.trie.gz", "description": "Russian Dictionary" }
+        {
+            "name": "russian",
+            "file": "./Russian.trie.gz",
+            "description": "Russian Dictionary"
+        }
     ],
     // Dictionaries to always be used.
     // Generally left empty

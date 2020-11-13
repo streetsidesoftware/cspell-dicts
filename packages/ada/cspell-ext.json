@@ -15,19 +15,23 @@
             "languageId": "ada",
             "local": "*",
             "dictionaries": ["ada"],
-            "patterns": [{
-                "name": "ada word break",
-                "pattern": "/(?<=\\w)['](?=\\w)/g",
-                "description": "Ada Word Break"
-            },{
-                "name": "comment.single-line",
-                "pattern": "/--.*/g",
-                "description": "Single Line Comment"
-            },{
-                "name": "string.literal",
-                "pattern": "/\".*?(?<=(?:\"\")+|[^\"])\"(?!\")/g",
-                "description": "Single Line Comment"
-            }],
+            "patterns": [
+                {
+                    "name": "ada word break",
+                    "pattern": "/(?<=\\w)['](?=\\w)/g",
+                    "description": "Ada Word Break"
+                },
+                {
+                    "name": "comment.single-line",
+                    "pattern": "/--.*/g",
+                    "description": "Single Line Comment"
+                },
+                {
+                    "name": "string.literal",
+                    "pattern": "/\".*?(?<=(?:\"\")+|[^\"])\"(?!\")/g",
+                    "description": "Single Line Comment"
+                }
+            ],
             "ignoreRegExpList": ["ada word break"]
         }
     ]

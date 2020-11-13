@@ -5,7 +5,11 @@
     "description": "Swedish Dictionary",
     // List of dictionary files to add to the global list of dictionaries
     "dictionaryDefinitions": [
-        { "name": "sv", "file": "./Swedish.trie.gz", "description": "Swedish Dictionary" }
+        {
+            "name": "sv",
+            "file": "./Swedish.trie.gz",
+            "description": "Swedish Dictionary"
+        }
     ],
     // Dictionaries to always be used.
     // Generally left empty

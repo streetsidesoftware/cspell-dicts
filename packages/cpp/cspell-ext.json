@@ -29,10 +29,7 @@
             // Adding patterns to the "includeRegExpList" to only include matching patterns
             "includeRegExpList": [],
             // To exclude patterns, add them to "ignoreRegExpList"
-            "ignoreRegExpList": [
-                "includes",
-                "hex-digits"
-            ],
+            "ignoreRegExpList": ["includes", "hex-digits"],
             // regex patterns than can be used with ignoreRegExpList or includeRegExpList
             // Example: "pattern": [{ "name": "mdash", "pattern": "&mdash;" }]
             // This could be included in "ignoreRegExpList": ["mdash"]
@@ -40,7 +37,8 @@
                 {
                     "name": "includes",
                     "pattern": "/#include.*/g"
-                }, {
+                },
+                {
                     "name": "hex-digits",
                     "pattern": "/0[xX][0-9a-fA-F](?:'?[0-9a-fA-F])*/g"
                 }
