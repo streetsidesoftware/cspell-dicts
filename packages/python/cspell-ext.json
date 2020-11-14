@@ -5,7 +5,11 @@
     "description": "Python Keyword Dictionary",
     // List of dictionary files to add to the global list of dictionaries
     "dictionaryDefinitions": [
-        { "name": "python", "file": "./python.txt.gz", "description": "Python Keyword Dictionary" }
+        {
+            "name": "python",
+            "file": "./python.txt.gz",
+            "description": "Python Keyword Dictionary"
+        }
     ],
     // Dictionaries to always be used.
     // Generally left empty
@@ -20,7 +24,12 @@
             // Apply settings
             "allowCompoundWords": true,
             "dictionaries": ["python"],
-            "ignoreRegExpList": [ "binary_string", "f_string", "unicode_string", "raw_string" ],
+            "ignoreRegExpList": [
+                "binary_string",
+                "f_string",
+                "unicode_string",
+                "raw_string"
+            ],
             "patterns": [
                 // Patterns to be ignored
                 { "name": "binary_string", "pattern": "\\bb'" },
@@ -28,8 +37,11 @@
                 { "name": "unicode_string", "pattern": "\\bu'" },
                 { "name": "raw_string", "pattern": "\\bu?r'" },
                 // Redefine the "strings" and "comments" pattern to match Python
-                { "name": "strings", "pattern": "/(?:(\"\"\"|''')[^\\1]*?\\1|((?<!\\\\)(?:'|\")).*?(?<!\\\\)\\2)/g"},
-                { "name": "comments", "pattern": "/#.*/g"}
+                {
+                    "name": "strings",
+                    "pattern": "/(?:(\"\"\"|''')[^\\1]*?\\1|((?<!\\\\)(?:'|\")).*?(?<!\\\\)\\2)/g"
+                },
+                { "name": "comments", "pattern": "/#.*/g" }
             ]
         }
     ]

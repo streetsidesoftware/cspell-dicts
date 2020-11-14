@@ -43,7 +43,7 @@ npm run build
 
 The Hunspell source for this dictionary can be found:
 
-* https://github.com/wooorm/dictionaries/tree/master/dictionaries/uk
+- https://github.com/wooorm/dictionaries/tree/master/dictionaries/uk
 
 ## License
 

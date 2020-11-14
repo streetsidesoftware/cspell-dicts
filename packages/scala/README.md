@@ -33,7 +33,7 @@ The `cspell-ext.json` file in this package should be added to the import section
 
 ## Building
 
-Building is only necessary if you want to modify the contents of the dictionary.  Note: Building will take a few minutes for large files.
+Building is only necessary if you want to modify the contents of the dictionary. Note: Building will take a few minutes for large files.
 
 ```sh
 npm run build
@@ -42,8 +42,9 @@ npm run build
 ## License
 
 MIT
+
 > Some packages may have other licenses included.
 
 ## Contributors
 
-* [Arthur Peters](https://github.com/arthurp) contributed the word list: [Gist](https://gist.github.com/arthurp/20cd632ce0643a6ec3580276155bcc1c)
+- [Arthur Peters](https://github.com/arthurp) contributed the word list: [Gist](https://gist.github.com/arthurp/20cd632ce0643a6ec3580276155bcc1c)
