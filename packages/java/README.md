@@ -33,7 +33,7 @@ The `cspell-ext.json` file in this package should be added to the import section
 
 ## Building
 
-Building is only necessary if you want to modify the contents of the dictionary.  Note: Building will take a few minutes for large files.
+Building is only necessary if you want to modify the contents of the dictionary. Note: Building will take a few minutes for large files.
 
 ```sh
 npm run build
@@ -42,12 +42,13 @@ npm run build
 ## License
 
 MIT
+
 > Some packages may have other licenses included.
 
 ## Contributors
 
-* [Arthur Peters](https://github.com/arthurp) contributed the word list: [Gist](https://gist.github.com/arthurp/91963552130d42a11cf7dc1ad1967c5b)
-* [Benjamin Schmid](https://twitter.com/bentolor) updated wordlist for
+- [Arthur Peters](https://github.com/arthurp) contributed the word list: [Gist](https://gist.github.com/arthurp/91963552130d42a11cf7dc1ad1967c5b)
+- [Benjamin Schmid](https://twitter.com/bentolor) updated wordlist for
   JDK 12 via
   [a new script](https://github.com/bentolor/jdk9-module-enumerator)
   leveraging the [classgraph project](https://github.com/classgraph/classgraph)

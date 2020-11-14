@@ -1,0 +1,29 @@
+name: Lint
+on:
+  pull_request:
+    paths:
+      - ".eslint*"
+      - .prettier*"
+      - "**/*.js"
+      - "**/*.md"
+      - "**/*.json"
+      - "**/*.yml"
+      - "**/*.yaml"
+  push:
+    paths:
+      - ".eslint*"
+      - .prettier*"
+      - "**/*.js"
+      - "**/*.md"
+      - "**/*.json"
+      - "**/*.yml"
+      - "**/*.yaml"
+
+jobs:
+  lint:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v2
+      - uses: actions/setup-node@v2.1.2
+      - run: npm ci
+      - run: npm run lint-ci

@@ -1,4 +1,3 @@
-
 Exemple de texte à vérifier.
 
 - Je **m'appelle**

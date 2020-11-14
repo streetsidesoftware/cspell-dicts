@@ -33,7 +33,7 @@ The `cspell-ext.json` file in this package should be added to the import section
 
 ## Building
 
-Building is only necessary if you want to modify the contents of the dictionary.  Note: Building will take a few minutes for large files.
+Building is only necessary if you want to modify the contents of the dictionary. Note: Building will take a few minutes for large files.
 
 ```sh
 npm run build
@@ -46,9 +46,11 @@ The resources for this dictionary can be obtained from the [LibreOffice reposito
 ## License
 
 MIT
+
 > Some packages may have other licenses included.
 
 GPLv2
+
 > The catalan hunspell dictionary files are licensed under the GPLv2 license.
 
 ## Acknowledgement

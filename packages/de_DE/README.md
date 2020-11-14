@@ -33,7 +33,7 @@ The `cspell-ext.json` file in this package should be added to the import section
 
 ## Building
 
-Building is only necessary if you want to modify the contents of the dictionary.  Note: Building will take a few minutes for large files.
+Building is only necessary if you want to modify the contents of the dictionary. Note: Building will take a few minutes for large files.
 
 ```sh
 npm run build
@@ -43,10 +43,9 @@ npm run build
 
 The Hunspell source for this dictionary can be found:
 
-* https://github.com/titoBouzout/Dictionaries
+- https://github.com/titoBouzout/Dictionaries
 
 ## License
 
 MIT
 See also: [German_de_DE.txt](https://github.com/Jason3S/cspell-dicts/blob/master/de_DE/German_de_DE.txt)
-
