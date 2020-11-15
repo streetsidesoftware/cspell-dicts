@@ -4,11 +4,7 @@
   "description": "Generate cspell dictionary subprojects.",
   "homepage": "https://github.com/streetsidesoftware/cspell-dicts",
   "private": true,
-  "author": {
-    "name": "Jason Dent",
-    "email": "jason@streetsidesoftware.nl",
-    "url": ""
-  },
+  "author": "Jason Dent <jason@streetsidesoftware.nl>",
   "files": [
     "generators"
   ],
@@ -31,6 +27,12 @@
     "prepublishOnly": "npm audit",
     "test": "echo no tests"
   },
-  "repository": "git@github.com:Jason3S/cspell-dicts.git",
-  "license": "MIT"
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Jason3S/cspell-dicts.git"
+  },
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/Jason3S/cspell-dicts/issues"
+  }
 }
