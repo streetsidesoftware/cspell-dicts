@@ -49,4 +49,4 @@ The Hunspell source for this dictionary can be found:
 
 MIT
 
-See also: [French.txt](https://github.com/Jason3S/cspell-dicts/blob/master/fr_FR/French.txt)
+See also: [French.txt](https://github.com/streetsidesoftware/cspell-dicts/blob/master/packages/fr_FR/French.txt)

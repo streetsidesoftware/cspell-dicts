@@ -1,6 +1,6 @@
 # cspell-dicts
 
-Various [cspell](https://github.com/Jason3S/cspell) dictionaries. Each dictionary is its own package. See `README.md` in each directory.
+Various [cspell](https://github.com/streetsidesoftware/cspell) dictionaries. Each dictionary is its own package. See `README.md` in each directory.
 
 ## Language Dictionaries
 
