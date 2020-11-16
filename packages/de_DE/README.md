@@ -48,4 +48,4 @@ The Hunspell source for this dictionary can be found:
 ## License
 
 MIT
-See also: [German_de_DE.txt](https://github.com/Jason3S/cspell-dicts/blob/master/de_DE/German_de_DE.txt)
+See also: [German_de_DE.txt](https://github.com/streetsidesoftware/cspell-dicts/blob/master/packages/de_DE/German_de_DE.txt)

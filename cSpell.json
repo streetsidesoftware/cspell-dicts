@@ -6,22 +6,18 @@
     "language": "en",
     // words - list of words to be always considered correct
     "words": [
-        "addrtype",
         "ALLCAPS",
         "appname",
         "configstore",
         "django",
-        "django's",
-        "Mutex",
-        "shasum",
-        "xargs"
+        "django's"
     ],
     // flagWords - list of words to be always considered incorrect
     "flagWords": [],
     "maxNumberOfProblems": 1000,
     "ignorePaths": [
         "**/node_modules/**",
-        "**/vscode-extension/**",
+        "**/node_modules/package*.json",
         "**/.git/**",
         ".vscode"
     ],
@@ -59,9 +55,5 @@
             "filename": "**/sv/**",
             "language": "en,sv"
         }
-    ],
-    "enableFiletypes": [
-        "ada",
-        "shellscript"
     ]
 }
