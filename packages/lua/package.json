@@ -3,8 +3,8 @@
   "version": "1.0.12",
   "description": "Lua dictionary for cspell.",
   "bin": {
-    "cspell-dict-lua-link": "./link.js",
-    "cspell-dict-lua-unlink": "./unlink.js"
+    "cspell-dict-lua-link": "link.js",
+    "cspell-dict-lua-unlink": "unlink.js"
   },
   "exports": {
     ".": "./index.js",
@@ -45,5 +45,6 @@
     "cspell-ext.json",
     "*.js",
     "*.d.ts"
-  ]
+  ],
+  "devDependencies": {}
 }

@@ -3,8 +3,8 @@
   "version": "1.0.10",
   "description": "PowerShell Keyword Dictionary",
   "bin": {
-    "cspell-dict-powershell-link": "./link.js",
-    "cspell-dict-powershell-unlink": "./unlink.js"
+    "cspell-dict-powershell-link": "link.js",
+    "cspell-dict-powershell-unlink": "unlink.js"
   },
   "exports": {
     ".": "./index.js",
@@ -45,5 +45,6 @@
     "cspell-ext.json",
     "*.js",
     "*.d.ts"
-  ]
+  ],
+  "devDependencies": {}
 }

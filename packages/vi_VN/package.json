@@ -3,8 +3,8 @@
   "version": "1.0.17",
   "description": "Vietnamese dictionary for cspell.",
   "bin": {
-    "cspell-dict-vi-vn-link": "./link.js",
-    "cspell-dict-vi-vn-unlink": "./unlink.js"
+    "cspell-dict-vi-vn-link": "link.js",
+    "cspell-dict-vi-vn-unlink": "unlink.js"
   },
   "exports": {
     ".": "./index.js",
@@ -46,5 +46,5 @@
     "*.js",
     "*.d.ts"
   ],
-  "gitHead": "7d4bb142ab4989560dc3a187fdf3632109125f61"
+  "devDependencies": {}
 }
