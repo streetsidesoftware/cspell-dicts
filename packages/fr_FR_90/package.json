@@ -3,8 +3,8 @@
   "version": "1.0.12",
   "description": "Français Réforme 1990 dictionary for cspell.",
   "bin": {
-    "cspell-dict-fr-reforme-link": "./link.js",
-    "cspell-dict-fr-reforme-unlink": "./unlink.js"
+    "cspell-dict-fr-reforme-link": "link.js",
+    "cspell-dict-fr-reforme-unlink": "unlink.js"
   },
   "exports": {
     ".": "./index.js",
@@ -45,6 +45,5 @@
     "cspell-ext.json",
     "*.js",
     "*.d.ts"
-  ],
-  "gitHead": "7d4bb142ab4989560dc3a187fdf3632109125f61"
+  ]
 }

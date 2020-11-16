@@ -3,8 +3,8 @@
   "version": "1.0.19",
   "description": "Catalan dictionary for cspell.",
   "bin": {
-    "cspell-dict-ca-link": "./link.js",
-    "cspell-dict-ca-unlink": "./unlink.js"
+    "cspell-dict-ca-link": "link.js",
+    "cspell-dict-ca-unlink": "unlink.js"
   },
   "exports": {
     ".": "./index.js",
@@ -46,5 +46,5 @@
     "*.js",
     "*.d.ts"
   ],
-  "gitHead": "7d4bb142ab4989560dc3a187fdf3632109125f61"
+  "devDependencies": {}
 }

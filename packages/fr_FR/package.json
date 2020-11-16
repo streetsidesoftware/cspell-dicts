@@ -3,8 +3,8 @@
   "version": "1.2.17",
   "description": "French dictionary for cspell.",
   "bin": {
-    "cspell-dict-fr-fr-link": "./link.js",
-    "cspell-dict-fr-fr-unlink": "./unlink.js"
+    "cspell-dict-fr-fr-link": "link.js",
+    "cspell-dict-fr-fr-unlink": "unlink.js"
   },
   "exports": {
     ".": "./index.js",
@@ -49,5 +49,5 @@
     "*.js",
     "*.d.ts"
   ],
-  "gitHead": "7d4bb142ab4989560dc3a187fdf3632109125f61"
+  "devDependencies": {}
 }

@@ -3,8 +3,8 @@
   "version": "1.0.32",
   "description": "Dictionary of terms used in Fullstack development.",
   "bin": {
-    "cspell-dict-fullstack-link": "./link.js",
-    "cspell-dict-fullstack-unlink": "./unlink.js"
+    "cspell-dict-fullstack-link": "link.js",
+    "cspell-dict-fullstack-unlink": "unlink.js"
   },
   "exports": {
     ".": "./index.js",
@@ -45,5 +45,5 @@
     "*.js",
     "*.d.ts"
   ],
-  "gitHead": "7d4bb142ab4989560dc3a187fdf3632109125f61"
+  "devDependencies": {}
 }
