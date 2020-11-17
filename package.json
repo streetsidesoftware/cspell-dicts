@@ -13,7 +13,7 @@
     "pub-version": "npm run checksum && lerna version --conventional-commits",
     "pub-lerna": "npm run pub-version && lerna publish from-git",
     "pub": "npm run check-dirty && lerna bootstrap && npm test && npm run pub-lerna",
-    "update-packages": "lerna exec \"npm update -S && rm -rf node_modules package-lock.json && npm i\""
+    "update-packages": "lerna exec \"npm update -S && rimraf node_modules package-lock.json && npm i\" && lerna bootstrap --no-ci"
   },
   "devDependencies": {
     "eslint": "^7.13.0",
