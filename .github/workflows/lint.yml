@@ -18,6 +18,8 @@ on:
       - "**/*.json"
       - "**/*.yml"
       - "**/*.yaml"
+    branches-ignore:
+      - "dependabot/**"
 
 jobs:
   lint:
