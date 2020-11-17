@@ -38,7 +38,9 @@
     "url": "https://github.com/streetsidesoftware/cspell-dicts/issues"
   },
   "homepage": "https://github.com/streetsidesoftware/cspell-dicts/blob/master/packages/<%= name %>#readme",
-  "devDependencies": {},
+  "devDependencies": {
+    "cross-env": "^7.0.2"
+  },
   "dependencies": {
     "configstore": "^5.0.0"
   },
