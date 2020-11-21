@@ -11,15 +11,15 @@
     "./cspell-ext.json": "./cspell-ext.json"
   },
   "scripts": {
-    "build": "npm run compile",
+    "build": "yarn run compile",
     "checksum": "shasum -c checksum.txt",
-    "compile": "cat source-files.txt | xargs cspell-tools compile-trie --merge en_US -o . && npm run gen-checksum",
-    "conditional-build": "npm run --silent checksum || npm run build",
+    "compile": "cat source-files.txt | xargs cspell-tools compile-trie --merge en_US -o . && yarn run gen-checksum",
+    "conditional-build": "yarn run --silent checksum || yarn run build",
     "test-dict": "hunspell-reader words -n 10000 \"src/hunspell/en_US.dic\" | cspell -v -c ./cspell-ext.json --local=en --languageId=* stdin",
     "test-text": "cspell -v -c ./cspell-ext.json --local=en --languageId=* \"tests/*.txt\"",
     "gen-checksum": "cat source-files.txt | xargs shasum -p en_US.trie.gz > checksum.txt",
-    "test": "npm run test-dict && npm run test-text",
-    "prepublishOnly": "npm t",
+    "test": "yarn run test-dict && yarn run test-text",
+    "prepublishOnly": "yarn test",
     "prepare": "cp ../../util/* .",
     "cspell-link": "node link.js",
     "cspell-unlink": "node unlink.js"

@@ -1,4 +1,7 @@
 'use strict';
+
+// cspell:ignore yosay
+
 const Generator = require('yeoman-generator');
 const chalk = require('chalk');
 const yosay = require('yosay');
@@ -7,7 +10,9 @@ const mkdirp = require('mkdirp');
 
 const packagesDir = 'packages';
 
-module.exports = class extends Generator {
+module.exports = class extends (
+    Generator
+) {
     constructor(args, opts) {
         super(args, opts);
 
@@ -168,7 +173,7 @@ module.exports = class extends Generator {
 
     end() {
         if (this.props.doBuild) {
-            this.spawnCommand('npm', ['run', 'build']);
+            this.spawnCommand('yarn', ['run', 'build']);
         }
     }
 };

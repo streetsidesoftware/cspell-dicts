@@ -15,8 +15,8 @@
     "test": "head -n 1000 \"lua.txt\" | cspell -v -c ./cspell-ext.json --local=* --languageId=lua stdin",
     "cspell-link": "node link.js",
     "cspell-unlink": "node unlink.js",
-    "prepublishOnly": "npm t",
-    "prepare": "cp ../../util/* . && npm run build"
+    "prepublishOnly": "yarn test",
+    "prepare": "cp ../../util/* . && yarn run build"
   },
   "repository": {
     "type": "git",

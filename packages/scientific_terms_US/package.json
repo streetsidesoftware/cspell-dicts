@@ -12,7 +12,7 @@
   },
   "scripts": {
     "build": "cspell-tools compile-trie \"custom_scientific_US.dic.txt\" -o .",
-    "prepublishOnly": "npm t",
+    "prepublishOnly": "yarn test",
     "prepare": "cp ../../util/* .",
     "test": "head -n 1000 \"custom_scientific_US.dic.txt\" | cspell -v -c ./cspell-ext.json --local=en --languageId=* stdin",
     "cspell-link": "node link.js",

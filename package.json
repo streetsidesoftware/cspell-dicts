@@ -8,17 +8,22 @@
     "conditional-build": "lerna run --concurrency 2 --stream conditional-build --no-bail",
     "check-dirty": "git --no-pager diff --compact-summary --exit-code",
     "checksum": "lerna run checksum",
+    "create-dictionary": "yo cspell-dicts",
     "clean": "rimraf \"packages/*/*.txt.gz\"",
-    "postinstall": "lerna bootstrap",
-    "pub-version": "npm run checksum && lerna version --conventional-commits",
-    "pub-lerna": "npm run pub-version && lerna publish from-git",
-    "pub": "npm run check-dirty && lerna bootstrap && npm test && npm run pub-lerna",
-    "update-packages": "lerna exec \"npm update -S && rm -rf node_modules package-lock.json && npm i\""
+    "prepare": "lerna run prepare",
+    "pub-version": "yarn run checksum && lerna version --conventional-commits",
+    "pub-lerna": "yarn run pub-version && lerna publish from-git",
+    "pub": "yarn run check-dirty && yarn run postinstall && yarn test && yarn run pub-lerna",
+    "update-packages": "yarn upgrade"
   },
+  "workspaces": [
+    "packages/*",
+    "generator-cspell-dicts"
+  ],
   "devDependencies": {
     "cross-env": "^7.0.2",
-    "cspell": "^4.1.3",
-    "cspell-tools": "^5.0.1-alpha.11",
+    "cspell": "^5.0.1",
+    "cspell-tools": "^5.0.1",
     "eslint": "^7.13.0",
     "eslint-config-prettier": "^6.15.0",
     "eslint-plugin-prettier": "^3.1.4",

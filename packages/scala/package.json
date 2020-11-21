@@ -12,8 +12,8 @@
   },
   "scripts": {
     "build": "cspell-tools compile \"scala.txt\" -o .",
-    "prepublishOnly": "npm t",
-    "prepare": "cp ../../util/* . && npm run build",
+    "prepublishOnly": "yarn test",
+    "prepare": "cp ../../util/* . && yarn run build",
     "cspell-link": "node link.js",
     "cspell-unlink": "node unlink.js"
   },

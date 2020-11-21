@@ -15,7 +15,7 @@
     "test": "hunspell-reader words -n 1000 \"bg_BG.dic\" | cspell -v -c ./cspell-ext.json \"--local=bg\" \"--languageId=*\" stdin",
     "cspell-link": "node link.js",
     "cspell-unlink": "node unlink.js",
-    "prepublishOnly": "npm t",
+    "prepublishOnly": "yarn test",
     "prepare": "cp ../../util/* ."
   },
   "repository": {

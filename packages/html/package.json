@@ -15,8 +15,8 @@
     "test": "head -n 100 \"html.txt\" | cspell -v -c ./cspell-ext.json \"--local=*\" \"--languageId=html\" stdin",
     "cspell-link": "node link.js",
     "cspell-unlink": "node unlink.js",
-    "prepublishOnly": "npm t",
-    "prepare": "cp ../../util/* . && npm run build"
+    "prepublishOnly": "yarn test",
+    "prepare": "cp ../../util/* . && yarn run build"
   },
   "repository": {
     "type": "git",
@@ -37,10 +37,7 @@
     "url": "https://github.com/streetsidesoftware/cspell-dicts/issues"
   },
   "homepage": "https://github.com/streetsidesoftware/cspell-dicts/blob/master/packages/html#readme",
-  "devDependencies": {
-    "cross-env": "^7.0.2",
-    "cspell-tools": "^5.0.1-alpha.6"
-  },
+  "devDependencies": {},
   "dependencies": {
     "configstore": "^5.0.0"
   },
