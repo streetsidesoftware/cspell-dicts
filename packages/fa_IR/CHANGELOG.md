@@ -3,6 +3,14 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+## [1.0.15](https://github.com/streetsidesoftware/cspell-dicts/compare/cspell-dict-fa-ir@1.0.14...cspell-dict-fa-ir@1.0.15) (2020-11-21)
+
+**Note:** Version bump only for package cspell-dict-fa-ir
+
+
+
+
+
 ## [1.0.14](https://github.com/streetsidesoftware/cspell-dicts/compare/cspell-dict-fa-ir@1.0.13...cspell-dict-fa-ir@1.0.14) (2020-11-08)
 
 ### Bug Fixes
