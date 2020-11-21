@@ -14,8 +14,8 @@
     "build": "cspell-tools compile-trie \"French.dic\" -o .",
     "test-dictionary": "hunspell-reader words -n 1000 \"French.dic\" | cspell -v -c ./cspell-ext.json --local=fr --languageId=* stdin",
     "test-text": "cspell -v -c ./cspell-ext.json --local=fr ./test.md",
-    "test": "npm run test-dictionary && npm run test-text",
-    "prepublishOnly": "npm t",
+    "test": "yarn run test-dictionary && yarn run test-text",
+    "prepublishOnly": "yarn test",
     "prepare": "cp ../../util/* .",
     "cspell-link": "node link.js",
     "cspell-unlink": "node unlink.js"

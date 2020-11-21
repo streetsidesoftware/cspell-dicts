@@ -7,7 +7,9 @@ const mkdirp = require('mkdirp');
 
 const packagesDir = 'packages';
 
-module.exports = class extends Generator {
+module.exports = class extends (
+    Generator
+) {
     constructor(args, opts) {
         super(args, opts);
 

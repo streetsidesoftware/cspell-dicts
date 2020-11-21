@@ -11,15 +11,15 @@
     "./cspell-ext.json": "./cspell-ext.json"
   },
   "scripts": {
-    "build": "cat source-files.txt | xargs cross-env NODE_OPTIONS=--max_old_space_size=12288 cspell-tools compile-trie -o . -M ru_ru && npm run gen-checksum",
+    "build": "cat source-files.txt | xargs cross-env NODE_OPTIONS=--max_old_space_size=12288 cspell-tools compile-trie -o . -M ru_ru && yarn run gen-checksum",
     "checksum": "shasum -c checksum.txt",
-    "conditional-build": "npm run --silent checksum || npm run build",
+    "conditional-build": "yarn run --silent checksum || yarn run build",
     "gen-checksum": "cat source-files.txt source-dependencies.txt | xargs shasum -p > checksum.txt",
     "test-ru_ru": "hunspell-reader words -n 1000 \"ru_ru.dic\" | cspell -v -c ./cspell-ext.json --local=ru --languageId=* stdin",
     "test-russian": "hunspell-reader words -n 1000 \"Russian.dic\" | cspell -v -c ./cspell-ext.json --local=ru --languageId=* stdin",
     "test-samples": "cspell -v -c ./cspell-ext.json --local=ru,en \"samples/**\"",
-    "test": "npm run test-ru_ru && npm run test-russian && npm run test-samples",
-    "prepublishOnly": "npm run conditional-build && npm t",
+    "test": "yarn run test-ru_ru && yarn run test-russian && yarn run test-samples",
+    "prepublishOnly": "yarn run conditional-build && yarn test",
     "prepare": "cp ../../util/* .",
     "cspell-link": "node link.js",
     "cspell-unlink": "node unlink.js"

@@ -9,12 +9,15 @@
     "check-dirty": "git --no-pager diff --compact-summary --exit-code",
     "checksum": "lerna run checksum",
     "clean": "rimraf \"packages/*/*.txt.gz\"",
-    "postinstall": "lerna bootstrap",
-    "pub-version": "npm run checksum && lerna version --conventional-commits",
-    "pub-lerna": "npm run pub-version && lerna publish from-git",
-    "pub": "npm run check-dirty && lerna bootstrap && npm test && npm run pub-lerna",
-    "update-packages": "lerna exec \"npm update -S && rm -rf node_modules package-lock.json && npm i\""
+    "prepare": "lerna run prepare",
+    "pub-version": "yarn run checksum && lerna version --conventional-commits",
+    "pub-lerna": "yarn run pub-version && lerna publish from-git",
+    "pub": "yarn run check-dirty && yarn run postinstall && yarn test && yarn run pub-lerna",
+    "update-packages": "yarn upgrade"
   },
+  "workspaces": [
+    "packages/*"
+  ],
   "devDependencies": {
     "cross-env": "^7.0.2",
     "cspell": "^4.1.3",

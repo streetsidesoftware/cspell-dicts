@@ -1,7 +1,7 @@
 {
   "name": "cspell-dict-npm",
   "version": "1.0.6",
-  "description": "NPM dictionary for cspell.",
+  "description": "Dictionary of common NPM packages for cspell.",
   "bin": {
     "cspell-dict-npm-link": "link.js",
     "cspell-dict-npm-unlink": "unlink.js"
@@ -15,8 +15,8 @@
     "test": "head -n 100 \"npm.txt\" | cspell -v -c ./cspell-ext.json \"--local=*\" \"--languageId=javascript\" stdin",
     "cspell-link": "node link.js",
     "cspell-unlink": "node unlink.js",
-    "prepublishOnly": "npm t",
-    "prepare": "cp ../../util/* . && npm run build"
+    "prepublishOnly": "yarn test",
+    "prepare": "cp ../../util/* . && yarn run build"
   },
   "repository": {
     "type": "git",
