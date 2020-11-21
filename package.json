@@ -8,6 +8,7 @@
     "conditional-build": "lerna run --concurrency 2 --stream conditional-build --no-bail",
     "check-dirty": "git --no-pager diff --compact-summary --exit-code",
     "checksum": "lerna run checksum",
+    "create-dictionary": "yo cspell-dicts",
     "clean": "rimraf \"packages/*/*.txt.gz\"",
     "prepare": "lerna run prepare",
     "pub-version": "yarn run checksum && lerna version --conventional-commits",
@@ -16,7 +17,8 @@
     "update-packages": "yarn upgrade"
   },
   "workspaces": [
-    "packages/*"
+    "packages/*",
+    "generator-cspell-dicts"
   ],
   "devDependencies": {
     "cross-env": "^7.0.2",
