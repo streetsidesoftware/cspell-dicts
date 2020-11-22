@@ -7,10 +7,6 @@ See [Conventional Commits](https://conventionalcommits.org) for commit guideline
 
 **Note:** Version bump only for package cspell-dict-fullstack
 
-
-
-
-
 ## [1.0.32](https://github.com/streetsidesoftware/cspell-dicts/compare/cspell-dict-fullstack@1.0.31...cspell-dict-fullstack@1.0.32) (2020-11-08)
 
 ### Bug Fixes

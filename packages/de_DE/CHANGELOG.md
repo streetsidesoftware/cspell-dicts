@@ -7,10 +7,6 @@ See [Conventional Commits](https://conventionalcommits.org) for commit guideline
 
 **Note:** Version bump only for package cspell-dict-de-de
 
-
-
-
-
 ## [1.1.27](https://github.com/streetsidesoftware/cspell-dicts/compare/cspell-dict-de-de@1.1.26...cspell-dict-de-de@1.1.27) (2020-11-08)
 
 ### Bug Fixes

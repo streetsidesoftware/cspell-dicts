@@ -7,10 +7,6 @@ See [Conventional Commits](https://conventionalcommits.org) for commit guideline
 
 **Note:** Version bump only for package cspell-dict-dotnet
 
-
-
-
-
 ## [1.0.20](https://github.com/streetsidesoftware/cspell-dicts/compare/cspell-dict-dotnet@1.0.19...cspell-dict-dotnet@1.0.20) (2020-11-08)
 
 ### Bug Fixes

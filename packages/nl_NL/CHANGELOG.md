@@ -7,10 +7,6 @@ See [Conventional Commits](https://conventionalcommits.org) for commit guideline
 
 **Note:** Version bump only for package cspell-dict-nl-nl
 
-
-
-
-
 ## [1.0.29](https://github.com/streetsidesoftware/cspell-dicts/compare/cspell-dict-nl-nl@1.0.28...cspell-dict-nl-nl@1.0.29) (2020-11-08)
 
 ### Bug Fixes

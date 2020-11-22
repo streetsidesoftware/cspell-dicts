@@ -7,10 +7,6 @@ See [Conventional Commits](https://conventionalcommits.org) for commit guideline
 
 **Note:** Version bump only for package cspell-dict-fa-ir
 
-
-
-
-
 ## [1.0.14](https://github.com/streetsidesoftware/cspell-dicts/compare/cspell-dict-fa-ir@1.0.13...cspell-dict-fa-ir@1.0.14) (2020-11-08)
 
 ### Bug Fixes

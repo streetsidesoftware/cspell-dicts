@@ -7,10 +7,6 @@ See [Conventional Commits](https://conventionalcommits.org) for commit guideline
 
 **Note:** Version bump only for package cspell-dict-fr-fr
 
-
-
-
-
 ## [1.2.17](https://github.com/streetsidesoftware/cspell-dicts/compare/cspell-dict-fr-fr@1.2.16...cspell-dict-fr-fr@1.2.17) (2020-11-08)
 
 ### Bug Fixes
