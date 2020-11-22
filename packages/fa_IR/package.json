@@ -14,7 +14,6 @@
     "build": "cspell-tools compile-trie \"hunspell/fa-IR.dic\" -o .",
     "test": "hunspell-reader words -n 1000 \"hunspell/fa-IR.dic\" | cspell -v -c ./cspell-ext.json --local=fa --languageId=* stdin",
     "prepublishOnly": "yarn test",
-    "prepare": "cp ../../util/* .",
     "cspell-link": "node link.js",
     "cspell-unlink": "node unlink.js"
   },

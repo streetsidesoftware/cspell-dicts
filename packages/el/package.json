@@ -15,7 +15,6 @@
     "build-dictionary": "cross-env NODE_OPTIONS=--max_old_space_size=4096 cspell-tools compile-trie --merge el_GR src/hunspell/el-GR.dic src/Greek.txt src/Greek.ALLCAPS.txt -o .",
     "build": "yarn run compile-all-caps && yarn run build-dictionary",
     "prepublishOnly": "yarn test",
-    "prepare": "cp ../../util/* .",
     "test": "head -n 1000 ./src/Greek.txt | cspell -v -c cspell-ext.json --local=el stdin",
     "cspell-link": "node link.js",
     "cspell-unlink": "node unlink.js"

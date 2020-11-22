@@ -20,7 +20,6 @@
     "test-samples": "cspell -v -c ./cspell-ext.json --local=ru,en \"samples/**\"",
     "test": "yarn run test-ru_ru && yarn run test-russian && yarn run test-samples",
     "prepublishOnly": "yarn run conditional-build && yarn test",
-    "prepare": "cp ../../util/* .",
     "cspell-link": "node link.js",
     "cspell-unlink": "node unlink.js"
   },

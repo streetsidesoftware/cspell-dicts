@@ -17,7 +17,7 @@
     "cspell-link": "node link.js",
     "cspell-unlink": "node unlink.js",
     "prepublishOnly": "yarn t",
-    "prepare": "cp ../../util/* . && yarn run build"
+    "prepare": "yarn run build"
   },
   "repository": {
     "type": "git",

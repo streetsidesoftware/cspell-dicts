@@ -15,8 +15,7 @@
     "test": "hunspell-reader words -n 1000 \"eo.dic\" | cspell -v -c ./cspell-ext.json \"--local=eo\" \"--languageId=*\" stdin",
     "cspell-link": "node link.js",
     "cspell-unlink": "node unlink.js",
-    "prepublishOnly": "yarn test",
-    "prepare": "cp ../../util/* ."
+    "prepublishOnly": "yarn test"
   },
   "repository": {
     "type": "git",
