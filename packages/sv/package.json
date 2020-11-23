@@ -14,7 +14,6 @@
     "build": "cspell-tools compile-trie \"Swedish.dic\" -o .",
     "test": "hunspell-reader words -n 1000 \"Swedish.dic\" | cspell -v -c ./cspell-ext.json --local=sv --languageId=* stdin",
     "prepublishOnly": "yarn test",
-    "prepare": "cp ../../util/* .",
     "cspell-link": "node link.js",
     "cspell-unlink": "node unlink.js"
   },

@@ -7,10 +7,6 @@ See [Conventional Commits](https://conventionalcommits.org) for commit guideline
 
 **Note:** Version bump only for package cspell-dict-it-it
 
-
-
-
-
 ## [1.0.9](https://github.com/streetsidesoftware/cspell-dicts/compare/cspell-dict-it-it@1.0.8...cspell-dict-it-it@1.0.9) (2020-11-08)
 
 ### Bug Fixes

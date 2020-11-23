@@ -7,10 +7,6 @@ See [Conventional Commits](https://conventionalcommits.org) for commit guideline
 
 **Note:** Version bump only for package cspell-dict-fr-reforme
 
-
-
-
-
 ## [1.0.12](https://github.com/streetsidesoftware/cspell-dicts/compare/cspell-dict-fr-reforme@1.0.11...cspell-dict-fr-reforme@1.0.12) (2020-11-08)
 
 ### Bug Fixes

@@ -5,14 +5,9 @@ See [Conventional Commits](https://conventionalcommits.org) for commit guideline
 
 ## [1.0.32](https://github.com/streetsidesoftware/cspell-dicts/compare/cspell-dict-companies@1.0.31...cspell-dict-companies@1.0.32) (2020-11-21)
 
-
 ### Bug Fixes
 
-* add datadog company name and stock symbol ([#279](https://github.com/streetsidesoftware/cspell-dicts/issues/279)) ([4a3c293](https://github.com/streetsidesoftware/cspell-dicts/commit/4a3c2935eb5a4cb245cdfbfb4ab2a7267c1279f2))
-
-
-
-
+- add datadog company name and stock symbol ([#279](https://github.com/streetsidesoftware/cspell-dicts/issues/279)) ([4a3c293](https://github.com/streetsidesoftware/cspell-dicts/commit/4a3c2935eb5a4cb245cdfbfb4ab2a7267c1279f2))
 
 ## [1.0.31](https://github.com/streetsidesoftware/cspell-dicts/compare/cspell-dict-companies@1.0.30...cspell-dict-companies@1.0.31) (2020-11-08)
 

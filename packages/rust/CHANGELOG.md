@@ -7,10 +7,6 @@ See [Conventional Commits](https://conventionalcommits.org) for commit guideline
 
 **Note:** Version bump only for package cspell-dict-rust
 
-
-
-
-
 ## [1.0.18](https://github.com/streetsidesoftware/cspell-dicts/compare/cspell-dict-rust@1.0.17...cspell-dict-rust@1.0.18) (2020-11-08)
 
 ### Bug Fixes

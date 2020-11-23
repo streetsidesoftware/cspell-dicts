@@ -7,10 +7,6 @@ See [Conventional Commits](https://conventionalcommits.org) for commit guideline
 
 **Note:** Version bump only for package cspell-dict-he
 
-
-
-
-
 ## [1.0.17](https://github.com/streetsidesoftware/cspell-dicts/compare/cspell-dict-he@1.0.16...cspell-dict-he@1.0.17) (2020-11-08)
 
 ### Bug Fixes

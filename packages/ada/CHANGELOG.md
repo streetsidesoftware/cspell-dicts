@@ -7,10 +7,6 @@ See [Conventional Commits](https://conventionalcommits.org) for commit guideline
 
 **Note:** Version bump only for package cspell-dict-ada
 
-
-
-
-
 ## [1.0.4](https://github.com/streetsidesoftware/cspell-dicts/compare/cspell-dict-ada@1.0.3...cspell-dict-ada@1.0.4) (2020-11-08)
 
 ### Bug Fixes

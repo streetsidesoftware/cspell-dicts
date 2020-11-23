@@ -7,10 +7,6 @@ See [Conventional Commits](https://conventionalcommits.org) for commit guideline
 
 **Note:** Version bump only for package cspell-dict-ru_ru
 
-
-
-
-
 ## [1.3.1](https://github.com/streetsidesoftware/cspell-dicts/compare/cspell-dict-ru_ru@1.3.0...cspell-dict-ru_ru@1.3.1) (2020-11-08)
 
 ### Bug Fixes

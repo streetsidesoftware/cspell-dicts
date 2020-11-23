@@ -16,7 +16,6 @@
     "test-text": "cspell -v -c ./cspell-ext.json --local=fr ./test.md",
     "test": "yarn run test-dictionary && yarn run test-text",
     "prepublishOnly": "yarn test",
-    "prepare": "cp ../../util/* .",
     "cspell-link": "node link.js",
     "cspell-unlink": "node unlink.js"
   },

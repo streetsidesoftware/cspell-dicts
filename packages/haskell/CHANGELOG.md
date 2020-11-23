@@ -7,10 +7,6 @@ See [Conventional Commits](https://conventionalcommits.org) for commit guideline
 
 **Note:** Version bump only for package cspell-dict-haskell
 
-
-
-
-
 ## [1.0.8](https://github.com/streetsidesoftware/cspell-dicts/compare/cspell-dict-haskell@1.0.7...cspell-dict-haskell@1.0.8) (2020-11-08)
 
 ### Bug Fixes

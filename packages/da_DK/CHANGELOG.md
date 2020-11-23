@@ -7,10 +7,6 @@ See [Conventional Commits](https://conventionalcommits.org) for commit guideline
 
 **Note:** Version bump only for package cspell-dict-da-dk
 
-
-
-
-
 ## [1.0.25](https://github.com/streetsidesoftware/cspell-dicts/compare/cspell-dict-da-dk@1.0.24...cspell-dict-da-dk@1.0.25) (2020-11-08)
 
 ### Bug Fixes

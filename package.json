@@ -10,7 +10,7 @@
     "checksum": "lerna run checksum",
     "create-dictionary": "yo cspell-dicts",
     "clean": "rimraf \"packages/*/*.txt.gz\"",
-    "prepare": "lerna run prepare",
+    "prepare": "lerna exec \"cp ../../generator-cspell-dicts/generators/app/templates/*.js ./ && cp ../../generator-cspell-dicts/generators/app/templates/*.ts ./\" --scope=cspell-dict* && lerna run prepare",
     "pub-version": "yarn run checksum && lerna version --conventional-commits",
     "pub-lerna": "yarn run pub-version && lerna publish from-git",
     "pub": "yarn run check-dirty && yarn run postinstall && yarn test && yarn run pub-lerna",

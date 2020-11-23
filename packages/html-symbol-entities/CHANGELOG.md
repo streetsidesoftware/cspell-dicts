@@ -7,10 +7,6 @@ See [Conventional Commits](https://conventionalcommits.org) for commit guideline
 
 **Note:** Version bump only for package cspell-dict-html-symbol-entities
 
-
-
-
-
 ## [1.0.19](https://github.com/streetsidesoftware/cspell-dicts/compare/cspell-dict-html-symbol-entities@1.0.18...cspell-dict-html-symbol-entities@1.0.19) (2020-11-08)
 
 ### Bug Fixes

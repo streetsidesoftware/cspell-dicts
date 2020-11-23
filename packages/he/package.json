@@ -14,7 +14,6 @@
     "build": "cspell-tools compile-trie -m 0 \"hunspell/he.dic\" -o .",
     "test": "hunspell-reader words -m 0 -n 1000 \"hunspell/he.dic\" | cspell -v -c ./cspell-ext.json --local=he --languageId=* stdin",
     "prepublishOnly": "yarn test",
-    "prepare": "cp ../../util/* .",
     "cspell-link": "node link.js",
     "cspell-unlink": "node unlink.js"
   },

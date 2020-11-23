@@ -7,10 +7,6 @@ See [Conventional Commits](https://conventionalcommits.org) for commit guideline
 
 **Note:** Version bump only for package cspell-dict-html
 
-
-
-
-
 ## [1.1.1](https://github.com/streetsidesoftware/cspell-dicts/compare/cspell-dict-html@1.1.0...cspell-dict-html@1.1.1) (2020-11-08)
 
 ### Bug Fixes

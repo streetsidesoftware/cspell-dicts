@@ -7,10 +7,6 @@ See [Conventional Commits](https://conventionalcommits.org) for commit guideline
 
 **Note:** Version bump only for package cspell-dict-cpp
 
-
-
-
-
 ## [1.1.33](https://github.com/streetsidesoftware/cspell-dicts/compare/cspell-dict-cpp@1.1.32...cspell-dict-cpp@1.1.33) (2020-11-08)
 
 ### Bug Fixes
