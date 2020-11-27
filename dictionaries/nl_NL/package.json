@@ -1,7 +1,10 @@
 {
   "name": "@cspell/dict-nl-nl",
-  "version": "1.0.30",
+  "version": "1.0.32",
   "description": "Dutch dictionary for cspell.",
+  "publishConfig": {
+    "access": "public"
+  },
   "exports": {
     ".": "./cspell-ext.json",
     "./cspell": "./cspell-ext.json",
