@@ -1,0 +1,35 @@
+{
+  "name": "@cspell/dict-rust",
+  "version": "1.0.19",
+  "description": "Rust dictionary for cspell.",
+  "exports": {
+    "./cspell": "./cspell-ext.json",
+    "./cspell-ext.json": "./cspell-ext.json"
+  },
+  "scripts": {
+    "build": "cspell-tools compile \"rust.txt\" -o .",
+    "prepublishOnly": "yarn test",
+    "prepare": "yarn run build"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/streetsidesoftware/cspell-dicts.git"
+  },
+  "keywords": [
+    "cspell",
+    "rust",
+    "Rust",
+    "dictionary",
+    "spelling"
+  ],
+  "author": "Alexander Andreev",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/streetsidesoftware/cspell-dicts/issues"
+  },
+  "homepage": "https://github.com/streetsidesoftware/cspell-dicts/blob/master/dictionaries/rust#readme",
+  "files": [
+    "rust.txt.gz",
+    "cspell-ext.json"
+  ]
+}

@@ -1,0 +1,36 @@
+{
+  "name": "@cspell/dict-elixir",
+  "version": "1.0.20",
+  "description": "Elixir dictionary for cspell.",
+  "exports": {
+    "./cspell": "./cspell-ext.json",
+    "./cspell-ext.json": "./cspell-ext.json"
+  },
+  "scripts": {
+    "build": "cspell-tools compile \"elixir.txt\" -o .",
+    "test": "head -n 100 \"elixir.txt\" | cspell -v -c ./cspell-ext.json --local=* --languageId=elixir stdin",
+    "prepublishOnly": "yarn test",
+    "prepare": "yarn run build"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/streetsidesoftware/cspell-dicts.git"
+  },
+  "keywords": [
+    "cspell",
+    "elixir",
+    "elixir",
+    "dictionary",
+    "spelling"
+  ],
+  "author": "Jason Dent",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/streetsidesoftware/cspell-dicts/issues"
+  },
+  "homepage": "https://github.com/streetsidesoftware/cspell-dicts/blob/master/dictionaries/elixir#readme",
+  "files": [
+    "elixir.txt.gz",
+    "cspell-ext.json"
+  ]
+}

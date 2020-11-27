@@ -1,0 +1,35 @@
+{
+  "name": "@cspell/dict-tr-tr",
+  "version": "1.0.17",
+  "description": "Turkish dictionary for cspell.",
+  "exports": {
+    "./cspell": "./cspell-ext.json",
+    "./cspell-ext.json": "./cspell-ext.json"
+  },
+  "scripts": {
+    "build": "cspell-tools compile-trie \"Turkish.dic\" -o .",
+    "test": "hunspell-reader words -n 1000 \"Turkish.dic\" | cspell -v -c ./cspell-ext.json --local=tr --languageId=* stdin",
+    "prepublishOnly": "yarn test"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/streetsidesoftware/cspell-dicts.git"
+  },
+  "keywords": [
+    "cspell",
+    "tr_TR",
+    "Turkish",
+    "dictionary",
+    "spelling"
+  ],
+  "author": "Jason Dent",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/streetsidesoftware/cspell-dicts/issues"
+  },
+  "homepage": "https://github.com/streetsidesoftware/cspell-dicts/blob/master/dictionaries/tr_TR#readme",
+  "files": [
+    "Turkish.trie.gz",
+    "cspell-ext.json"
+  ]
+}

@@ -1,0 +1,36 @@
+{
+  "name": "@cspell/dict-css",
+  "version": "1.0.7",
+  "description": "CSS dictionary for cspell.",
+  "exports": {
+    "./cspell": "./cspell-ext.json",
+    "./cspell-ext.json": "./cspell-ext.json"
+  },
+  "scripts": {
+    "build": "cspell-tools compile \"css.txt\" -o .",
+    "test": "head -n 100 \"css.txt\" | cspell -v -c ./cspell-ext.json \"--local=*\" \"--languageId=css\" stdin",
+    "prepublishOnly": "yarn test",
+    "prepare": "yarn run build"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/streetsidesoftware/cspell-dicts.git"
+  },
+  "keywords": [
+    "cspell",
+    "css",
+    "css",
+    "dictionary",
+    "spelling"
+  ],
+  "author": "Jason Dent",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/streetsidesoftware/cspell-dicts/issues"
+  },
+  "homepage": "https://github.com/streetsidesoftware/cspell-dicts/blob/master/dictionaries/css#readme",
+  "files": [
+    "css.txt.gz",
+    "cspell-ext.json"
+  ]
+}

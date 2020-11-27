@@ -1,0 +1,35 @@
+{
+  "name": "@cspell/dict-scala",
+  "version": "1.0.18",
+  "description": "Scala dictionary for cspell.",
+  "exports": {
+    "./cspell": "./cspell-ext.json",
+    "./cspell-ext.json": "./cspell-ext.json"
+  },
+  "scripts": {
+    "build": "cspell-tools compile \"scala.txt\" -o .",
+    "prepublishOnly": "yarn test",
+    "prepare": "yarn run build"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/streetsidesoftware/cspell-dicts.git"
+  },
+  "keywords": [
+    "cspell",
+    "scala",
+    "Scala",
+    "dictionary",
+    "spelling"
+  ],
+  "author": "Jason Dent",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/streetsidesoftware/cspell-dicts/issues"
+  },
+  "homepage": "https://github.com/streetsidesoftware/cspell-dicts/blob/master/dictionaries/scala#readme",
+  "files": [
+    "scala.txt.gz",
+    "cspell-ext.json"
+  ]
+}

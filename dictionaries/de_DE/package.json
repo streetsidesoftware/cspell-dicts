@@ -1,0 +1,36 @@
+{
+  "name": "@cspell/dict-de-de",
+  "version": "1.1.28",
+  "description": "German dictionary for cspell.",
+  "exports": {
+    "./cspell": "./cspell-ext.json",
+    "./cspell-ext.json": "./cspell-ext.json"
+  },
+  "scripts": {
+    "build": "cross-env NODE_OPTIONS=--max_old_space_size=4096 cspell-tools compile-trie \"German_de_DE.dic\" -o .",
+    "test": "hunspell-reader words -n 1000 \"German_de_DE.dic\" | cspell -v -c ./cspell-ext.json --local=de --languageId=* stdin",
+    "prepublishOnly": "yarn test"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/streetsidesoftware/cspell-dicts.git"
+  },
+  "keywords": [
+    "cspell",
+    "de_DE",
+    "German",
+    "dictionary",
+    "spelling"
+  ],
+  "author": "Jason Dent",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/streetsidesoftware/cspell-dicts/issues"
+  },
+  "homepage": "https://github.com/streetsidesoftware/cspell-dicts/blob/master/dictionaries/de_DE#readme",
+  "files": [
+    "German_de_DE.trie.gz",
+    "cspell-ext.json",
+    "German_de_DE.txt"
+  ]
+}

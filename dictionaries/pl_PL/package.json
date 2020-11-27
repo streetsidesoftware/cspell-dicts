@@ -1,0 +1,36 @@
+{
+  "name": "@cspell/dict-pl_pl",
+  "version": "1.0.27",
+  "description": "Polish dictionary for cspell.",
+  "exports": {
+    "./cspell": "./cspell-ext.json",
+    "./cspell-ext.json": "./cspell-ext.json"
+  },
+  "scripts": {
+    "build": "cross-env NODE_OPTIONS=--max_old_space_size=12288 cspell-tools compile-trie \"pl_pl.dic\" -o .",
+    "test": "hunspell-reader words -n 1000 \"pl_pl.dic\" | cspell -v -c ./cspell-ext.json --local=pl --languageId=* stdin",
+    "prepublishOnly": "yarn test"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/streetsidesoftware/cspell-dicts.git"
+  },
+  "keywords": [
+    "cspell",
+    "pl_PL",
+    "Polish",
+    "dictionary",
+    "spelling"
+  ],
+  "author": "Jason Dent",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/streetsidesoftware/cspell-dicts/issues"
+  },
+  "homepage": "https://github.com/streetsidesoftware/cspell-dicts/blob/master/dictionaries/pl_PL#readme",
+  "files": [
+    "pl_pl.trie.gz",
+    "Polish.txt",
+    "cspell-ext.json"
+  ]
+}

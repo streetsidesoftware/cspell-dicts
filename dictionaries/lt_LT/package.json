@@ -1,0 +1,37 @@
+{
+  "name": "@cspell/dict-lt-lt",
+  "version": "1.0.14",
+  "description": "Lithuanian dictionary for cspell.",
+  "exports": {
+    "./cspell": "./cspell-ext.json",
+    "./cspell-ext.json": "./cspell-ext.json"
+  },
+  "scripts": {
+    "build": "cross-env NODE_OPTIONS=--max_old_space_size=12288 cspell-tools compile-trie \"lt_LT.dic\" -o .",
+    "test": "hunspell-reader words -n 1000 \"lt_LT.dic\" | cspell -v -c ./cspell-ext.json --local=lt --languageId=* stdin",
+    "prepublishOnly": "yarn test"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/streetsidesoftware/cspell-dicts.git"
+  },
+  "keywords": [
+    "cspell",
+    "lt_LT",
+    "Lithuanian",
+    "dictionary",
+    "spelling"
+  ],
+  "author": "Jason Dent",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/streetsidesoftware/cspell-dicts/issues"
+  },
+  "homepage": "https://github.com/streetsidesoftware/cspell-dicts/blob/master/dictionaries/lt_LT#readme",
+  "files": [
+    "COPYING",
+    "AUTHORS",
+    "lt_LT.trie.gz",
+    "cspell-ext.json"
+  ]
+}

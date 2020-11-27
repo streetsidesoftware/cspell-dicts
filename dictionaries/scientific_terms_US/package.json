@@ -1,0 +1,35 @@
+{
+  "name": "@cspell/dict-scientific-terms-us",
+  "version": "1.0.19",
+  "description": "Scientific Terms US dictionary for cspell.",
+  "exports": {
+    "./cspell": "./cspell-ext.json",
+    "./cspell-ext.json": "./cspell-ext.json"
+  },
+  "scripts": {
+    "build": "cspell-tools compile-trie \"custom_scientific_US.dic.txt\" -o .",
+    "prepublishOnly": "yarn test",
+    "test": "head -n 1000 \"custom_scientific_US.dic.txt\" | cspell -v -c ./cspell-ext.json --local=en --languageId=* stdin"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/streetsidesoftware/cspell-dicts.git"
+  },
+  "keywords": [
+    "cspell",
+    "scientific_terms_US",
+    "Scientific Terms US",
+    "dictionary",
+    "spelling"
+  ],
+  "author": "Jason Dent",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/streetsidesoftware/cspell-dicts/issues"
+  },
+  "homepage": "https://github.com/streetsidesoftware/cspell-dicts/blob/master/dictionaries/scientific_terms_US#readme",
+  "files": [
+    "custom_scientific_US.dic.trie.gz",
+    "cspell-ext.json"
+  ]
+}

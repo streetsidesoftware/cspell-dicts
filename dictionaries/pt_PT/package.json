@@ -1,0 +1,36 @@
+{
+  "name": "@cspell/dict-pt-pt",
+  "version": "1.0.22",
+  "description": "Portuguese dictionary for cspell.",
+  "exports": {
+    "./cspell": "./cspell-ext.json",
+    "./cspell-ext.json": "./cspell-ext.json"
+  },
+  "scripts": {
+    "build": "cspell-tools compile-trie \"Portuguese-European.dic\" -o .",
+    "test": "hunspell-reader words -n 1000 \"Portuguese-European.dic\" | cspell -v -c ./cspell-ext.json --local=pt --languageId=* stdin",
+    "prepublishOnly": "yarn test"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/streetsidesoftware/cspell-dicts.git"
+  },
+  "keywords": [
+    "cspell",
+    "pt_PT",
+    "Portuguese",
+    "dictionary",
+    "spelling"
+  ],
+  "author": "Jason Dent",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/streetsidesoftware/cspell-dicts/issues"
+  },
+  "homepage": "https://github.com/streetsidesoftware/cspell-dicts/blob/master/dictionaries/pt_PT#readme",
+  "files": [
+    "Portuguese-European.trie.gz",
+    "cspell-ext.json",
+    "Portuguese-European.txt"
+  ]
+}

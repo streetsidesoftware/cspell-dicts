@@ -1,11 +1,16 @@
 {
   "npmClient": "yarn",
-  "packages": ["packages/*"],
+  "packages": [
+    "packages/*",
+    "dictionaries/*"
+  ],
   "useWorkspaces": true,
   "version": "independent",
   "command": {
     "publish": {
-      "ignoreChanges": ["*.md"]
+      "ignoreChanges": [
+        "*.md"
+      ]
     }
   }
 }

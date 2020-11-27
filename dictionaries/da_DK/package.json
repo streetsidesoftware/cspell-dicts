@@ -1,0 +1,35 @@
+{
+  "name": "@cspell/dict-da-dk",
+  "version": "1.0.26",
+  "description": "Danish dictionary for cspell.",
+  "exports": {
+    "./cspell": "./cspell-ext.json",
+    "./cspell-ext.json": "./cspell-ext.json"
+  },
+  "scripts": {
+    "build": "cspell-tools compile-trie \"da_DK.dic\" -o .",
+    "test": "hunspell-reader words -n 1000 \"da_DK.dic\" | cspell -v -c ./cspell-ext.json --local=da --languageId=* stdin",
+    "prepublishOnly": "yarn test"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/streetsidesoftware/cspell-dicts.git"
+  },
+  "keywords": [
+    "cspell",
+    "da_DK",
+    "Danish",
+    "dictionary",
+    "spelling"
+  ],
+  "author": "Jason Dent",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/streetsidesoftware/cspell-dicts/issues"
+  },
+  "homepage": "https://github.com/streetsidesoftware/cspell-dicts/blob/master/dictionaries/da_DK#readme",
+  "files": [
+    "da_DK.trie.gz",
+    "cspell-ext.json"
+  ]
+}

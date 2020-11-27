@@ -1,0 +1,35 @@
+{
+  "name": "@cspell/dict-bg-bg",
+  "version": "1.0.12",
+  "description": "Bulgarian dictionary for cspell.",
+  "exports": {
+    "./cspell": "./cspell-ext.json",
+    "./cspell-ext.json": "./cspell-ext.json"
+  },
+  "scripts": {
+    "build": "cspell-tools compile-trie \"bg_BG.dic\" -o .",
+    "test": "hunspell-reader words -n 1000 \"bg_BG.dic\" | cspell -v -c ./cspell-ext.json \"--local=bg\" \"--languageId=*\" stdin",
+    "prepublishOnly": "yarn test"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/streetsidesoftware/cspell-dicts.git"
+  },
+  "keywords": [
+    "cspell",
+    "bg_BG",
+    "Bulgarian",
+    "dictionary",
+    "spelling"
+  ],
+  "author": "Jason Dent",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/streetsidesoftware/cspell-dicts/issues"
+  },
+  "homepage": "https://github.com/streetsidesoftware/cspell-dicts/blob/master/dictionaries/bg_BG#readme",
+  "files": [
+    "bg_BG.trie.gz",
+    "cspell-ext.json"
+  ]
+}

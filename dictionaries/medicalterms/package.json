@@ -1,0 +1,37 @@
+{
+  "name": "@cspell/dict-medicalterms",
+  "version": "1.0.23",
+  "description": "Medical Terms dictionary for cspell.",
+  "exports": {
+    "./cspell": "./cspell-ext.json",
+    "./cspell-ext.json": "./cspell-ext.json"
+  },
+  "scripts": {
+    "build": "cspell-tools compile \"medicalterms-en.txt\" -o .",
+    "test": "head -n 100 \"medicalterms-en.txt\" | cspell -v -c ./cspell-ext.json --local=* --languageId=* stdin",
+    "prepublishOnly": "yarn test",
+    "prepare": "yarn run build"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/streetsidesoftware/cspell-dicts.git"
+  },
+  "keywords": [
+    "cspell",
+    "medical-terms",
+    "Medical Terms",
+    "dictionary",
+    "spelling"
+  ],
+  "author": "Jason Dent",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/streetsidesoftware/cspell-dicts/issues"
+  },
+  "homepage": "https://github.com/streetsidesoftware/cspell-dicts/blob/master/dictionaries/medicalterms#readme",
+  "files": [
+    "medicalterms-en.txt.gz",
+    "cspell-ext.json",
+    "medicalterms-en.md"
+  ]
+}

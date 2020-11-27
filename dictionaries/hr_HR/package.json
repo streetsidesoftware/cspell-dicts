@@ -1,0 +1,35 @@
+{
+  "name": "@cspell/dict-hr-hr",
+  "version": "1.0.6",
+  "description": "Croatian dictionary for cspell.",
+  "exports": {
+    "./cspell": "./cspell-ext.json",
+    "./cspell-ext.json": "./cspell-ext.json"
+  },
+  "scripts": {
+    "build": "cross-env NODE_OPTIONS=--max_old_space_size=8192 cspell-tools compile-trie \"hr_HR.dic\" -o .",
+    "test": "hunspell-reader words -n 1000 \"hr_HR.dic\" | cspell -v -c ./cspell-ext.json \"--local=hr,hr-HR\" \"--languageId=*\" stdin",
+    "prepublishOnly": "yarn test"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/streetsidesoftware/cspell-dicts.git"
+  },
+  "keywords": [
+    "cspell",
+    "hr_HR",
+    "Croatian",
+    "dictionary",
+    "spelling"
+  ],
+  "author": "Jason Dent",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/streetsidesoftware/cspell-dicts/issues"
+  },
+  "homepage": "https://github.com/streetsidesoftware/cspell-dicts/blob/master/dictionaries/hr_HR#readme",
+  "files": [
+    "hr_HR.trie.gz",
+    "cspell-ext.json"
+  ]
+}

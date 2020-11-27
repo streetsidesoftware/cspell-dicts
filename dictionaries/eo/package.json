@@ -1,0 +1,36 @@
+{
+  "name": "@cspell/dict-eo",
+  "version": "1.0.6",
+  "description": "Esperanto dictionary for cspell.",
+  "exports": {
+    "./cspell": "./cspell-ext.json",
+    "./cspell-ext.json": "./cspell-ext.json"
+  },
+  "scripts": {
+    "build": "cross-env NODE_OPTIONS=--max_old_space_size=8192 cspell-tools compile-trie \"eo.dic\" -o .",
+    "test": "hunspell-reader words -n 1000 \"eo.dic\" | cspell -v -c ./cspell-ext.json \"--local=eo\" \"--languageId=*\" stdin",
+    "prepublishOnly": "yarn test"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/streetsidesoftware/cspell-dicts.git"
+  },
+  "keywords": [
+    "cspell",
+    "eo",
+    "Esperanto",
+    "dictionary",
+    "spelling"
+  ],
+  "author": "Street Side Software",
+  "license": "GPL-2.0-or-later",
+  "bugs": {
+    "url": "https://github.com/streetsidesoftware/cspell-dicts/issues"
+  },
+  "homepage": "https://github.com/streetsidesoftware/cspell-dicts/blob/master/dictionaries/eo#readme",
+  "files": [
+    "eo.trie.gz",
+    "eo_license.txt",
+    "cspell-ext.json"
+  ]
+}
