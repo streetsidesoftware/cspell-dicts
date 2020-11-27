@@ -1,0 +1,41 @@
+{
+  "name": "@cspell/dict-cpp",
+  "version": "1.1.34",
+  "description": "C/C++ Dictionary dictionary for cspell.",
+  "publishConfig": {
+    "access": "public"
+  },
+  "exports": {
+    ".": "./cspell-ext.json",
+    "./cspell": "./cspell-ext.json",
+    "./cspell-ext.json": "./cspell-ext.json"
+  },
+  "scripts": {
+    "build": "cspell-tools compile \"cpp.txt\" -o .",
+    "test": "head -n 100 \"cpp.txt\" | cspell -v -c ./cspell-ext.json --local=* --languageId=cpp stdin",
+    "prepublishOnly": "yarn test",
+    "prepare": "yarn run build"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/streetsidesoftware/cspell-dicts.git"
+  },
+  "keywords": [
+    "cspell",
+    "cpp",
+    "C++",
+    "C",
+    "dictionary",
+    "spelling"
+  ],
+  "author": "Jason Dent",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/streetsidesoftware/cspell-dicts/issues"
+  },
+  "homepage": "https://github.com/streetsidesoftware/cspell-dicts/blob/master/dictionaries/cpp#readme",
+  "files": [
+    "cpp.txt.gz",
+    "cspell-ext.json"
+  ]
+}

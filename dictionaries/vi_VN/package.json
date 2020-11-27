@@ -1,0 +1,39 @@
+{
+  "name": "@cspell/dict-vi-vn",
+  "version": "1.0.18",
+  "description": "Vietnamese dictionary for cspell.",
+  "publishConfig": {
+    "access": "public"
+  },
+  "exports": {
+    ".": "./cspell-ext.json",
+    "./cspell": "./cspell-ext.json",
+    "./cspell-ext.json": "./cspell-ext.json"
+  },
+  "scripts": {
+    "build": "cspell-tools compile-trie \"vi.dic\" -o .",
+    "test": "hunspell-reader words -n 1000 \"vi.dic\" | cspell -v -c ./cspell-ext.json --local=vi --languageId=* stdin",
+    "prepublishOnly": "yarn test"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/streetsidesoftware/cspell-dicts.git"
+  },
+  "keywords": [
+    "cspell",
+    "vi_VN",
+    "Vietnamese",
+    "dictionary",
+    "spelling"
+  ],
+  "author": "Jason Dent",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/streetsidesoftware/cspell-dicts/issues"
+  },
+  "homepage": "https://github.com/streetsidesoftware/cspell-dicts/blob/master/dictionaries/vi_VN#readme",
+  "files": [
+    "vi.trie.gz",
+    "cspell-ext.json"
+  ]
+}

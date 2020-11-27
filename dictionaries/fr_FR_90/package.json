@@ -1,0 +1,39 @@
+{
+  "name": "@cspell/dict-fr-reforme",
+  "version": "1.0.13",
+  "description": "Français Réforme 1990 dictionary for cspell.",
+  "publishConfig": {
+    "access": "public"
+  },
+  "exports": {
+    ".": "./cspell-ext.json",
+    "./cspell": "./cspell-ext.json",
+    "./cspell-ext.json": "./cspell-ext.json"
+  },
+  "scripts": {
+    "build": "cspell-tools compile-trie \"fr-reforme1990.dic\" -o .",
+    "test": "hunspell-reader words -n 1000 \"fr-reforme1990.dic\" | cspell -v -c ./cspell-ext.json \"--local=fr\" \"--languageId=*\" stdin",
+    "prepublishOnly": "yarn test"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/streetsidesoftware/cspell-dicts.git"
+  },
+  "keywords": [
+    "cspell",
+    "fr_FR_90",
+    "Français Réforme 1990",
+    "dictionary",
+    "spelling"
+  ],
+  "author": "Jason Dent",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/streetsidesoftware/cspell-dicts/issues"
+  },
+  "homepage": "https://github.com/streetsidesoftware/cspell-dicts/blob/master/dictionaries/fr_FR_90#readme",
+  "files": [
+    "fr-reforme1990.trie.gz",
+    "cspell-ext.json"
+  ]
+}

@@ -1,0 +1,39 @@
+{
+  "name": "@cspell/dict-fa-ir",
+  "version": "1.0.15",
+  "description": "Persian dictionary for cspell.",
+  "publishConfig": {
+    "access": "public"
+  },
+  "exports": {
+    ".": "./cspell-ext.json",
+    "./cspell": "./cspell-ext.json",
+    "./cspell-ext.json": "./cspell-ext.json"
+  },
+  "scripts": {
+    "build": "cspell-tools compile-trie \"hunspell/fa-IR.dic\" -o .",
+    "test": "hunspell-reader words -n 1000 \"hunspell/fa-IR.dic\" | cspell -v -c ./cspell-ext.json --local=fa --languageId=* stdin",
+    "prepublishOnly": "yarn test"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/streetsidesoftware/cspell-dicts.git"
+  },
+  "keywords": [
+    "cspell",
+    "fa_IR",
+    "Persian",
+    "dictionary",
+    "spelling"
+  ],
+  "author": "Jason Dent",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/streetsidesoftware/cspell-dicts/issues"
+  },
+  "homepage": "https://github.com/streetsidesoftware/cspell-dicts/blob/master/dictionaries/fa_IR#readme",
+  "files": [
+    "fa-IR.trie.gz",
+    "cspell-ext.json"
+  ]
+}

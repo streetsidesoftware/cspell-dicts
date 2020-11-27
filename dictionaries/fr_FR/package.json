@@ -1,0 +1,42 @@
+{
+  "name": "@cspell/dict-fr-fr",
+  "version": "1.2.18",
+  "description": "French dictionary for cspell.",
+  "publishConfig": {
+    "access": "public"
+  },
+  "exports": {
+    ".": "./cspell-ext.json",
+    "./cspell": "./cspell-ext.json",
+    "./cspell-ext.json": "./cspell-ext.json"
+  },
+  "scripts": {
+    "build": "cspell-tools compile-trie \"French.dic\" -o .",
+    "test-dictionary": "hunspell-reader words -n 1000 \"French.dic\" | cspell -v -c ./cspell-ext.json --local=fr --languageId=* stdin",
+    "test-text": "cspell -v -c ./cspell-ext.json --local=fr ./test.md",
+    "test": "yarn run test-dictionary && yarn run test-text",
+    "prepublishOnly": "yarn test"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/streetsidesoftware/cspell-dicts.git"
+  },
+  "keywords": [
+    "cspell",
+    "fr_FR",
+    "French",
+    "dictionary",
+    "spelling"
+  ],
+  "author": "Jason Dent",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/streetsidesoftware/cspell-dicts/issues"
+  },
+  "homepage": "https://github.com/streetsidesoftware/cspell-dicts/blob/master/dictionaries/fr_FR#readme",
+  "files": [
+    "French.trie.gz",
+    "cspell-ext.json",
+    "French.txt"
+  ]
+}

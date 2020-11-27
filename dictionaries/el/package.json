@@ -1,0 +1,43 @@
+{
+  "name": "@cspell/dict-el",
+  "version": "1.0.12",
+  "description": "Greek dictionary for cspell.",
+  "publishConfig": {
+    "access": "public"
+  },
+  "exports": {
+    ".": "./cspell-ext.json",
+    "./cspell": "./cspell-ext.json",
+    "./cspell-ext.json": "./cspell-ext.json"
+  },
+  "scripts": {
+    "compile-all-caps": "node ./tools/toCaps ./src/Greek.txt ./src/Greek.ALLCAPS.txt",
+    "build-dictionary": "cross-env NODE_OPTIONS=--max_old_space_size=4096 cspell-tools compile-trie --merge el_GR src/hunspell/el-GR.dic src/Greek.txt src/Greek.ALLCAPS.txt -o .",
+    "build": "yarn run compile-all-caps && yarn run build-dictionary",
+    "prepublishOnly": "yarn test",
+    "test": "head -n 1000 ./src/Greek.txt | cspell -v -c cspell-ext.json --local=el stdin"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/streetsidesoftware/cspell-dicts.git"
+  },
+  "keywords": [
+    "cspell",
+    "el",
+    "Greek",
+    "dictionary",
+    "spelling"
+  ],
+  "author": "Jason Dent",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/streetsidesoftware/cspell-dicts/issues"
+  },
+  "homepage": "https://github.com/streetsidesoftware/cspell-dicts/blob/master/dictionareis/el/README.md",
+  "files": [
+    "el_GR.trie.gz",
+    "cspell-ext.json",
+    "src/hunspell/README.txt",
+    "!tools"
+  ]
+}

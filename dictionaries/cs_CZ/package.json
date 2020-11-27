@@ -1,0 +1,39 @@
+{
+  "name": "@cspell/dict-cs-cz",
+  "version": "1.0.20",
+  "description": "Czech dictionary for cspell.",
+  "publishConfig": {
+    "access": "public"
+  },
+  "exports": {
+    ".": "./cspell-ext.json",
+    "./cspell": "./cspell-ext.json",
+    "./cspell-ext.json": "./cspell-ext.json"
+  },
+  "scripts": {
+    "build": "cross-env NODE_OPTIONS=--max_old_space_size=4096 cspell-tools compile-trie \"Czech.dic\" -o .",
+    "test": "hunspell-reader words -n 1000 \"Czech.dic\" | cspell -v -c ./cspell-ext.json --local=cs --languageId=* stdin",
+    "prepublishOnly": "yarn test"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/streetsidesoftware/cspell-dicts.git"
+  },
+  "keywords": [
+    "cspell",
+    "cs_CZ",
+    "Czech",
+    "dictionary",
+    "spelling"
+  ],
+  "author": "Jason Dent",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/streetsidesoftware/cspell-dicts/issues"
+  },
+  "homepage": "https://github.com/streetsidesoftware/cspell-dicts/blob/master/dictionaries/cs_CZ#readme",
+  "files": [
+    "Czech.trie.gz",
+    "cspell-ext.json"
+  ]
+}

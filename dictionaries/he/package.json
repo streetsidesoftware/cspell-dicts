@@ -1,0 +1,39 @@
+{
+  "name": "@cspell/dict-he",
+  "version": "1.0.18",
+  "description": "Hebrew dictionary for cspell",
+  "publishConfig": {
+    "access": "public"
+  },
+  "exports": {
+    ".": "./cspell-ext.json",
+    "./cspell": "./cspell-ext.json",
+    "./cspell-ext.json": "./cspell-ext.json"
+  },
+  "scripts": {
+    "build": "cspell-tools compile-trie -m 0 \"hunspell/he.dic\" -o .",
+    "test": "hunspell-reader words -m 0 -n 1000 \"hunspell/he.dic\" | cspell -v -c ./cspell-ext.json --local=he --languageId=* stdin",
+    "prepublishOnly": "yarn test"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/streetsidesoftware/cspell-dicts.git"
+  },
+  "keywords": [
+    "cspell",
+    "he",
+    "Hebrew",
+    "dictionary",
+    "spelling"
+  ],
+  "author": "Noam Ben Shabat",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/streetsidesoftware/cspell-dicts/issues"
+  },
+  "homepage": "https://github.com/streetsidesoftware/cspell-dicts/blob/master/dictionaries/he#readme",
+  "files": [
+    "he.trie.gz",
+    "cspell-ext.json"
+  ]
+}

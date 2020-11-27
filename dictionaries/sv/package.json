@@ -1,0 +1,39 @@
+{
+  "name": "@cspell/dict-sv",
+  "version": "1.0.23",
+  "description": "Swedish dictionary for cspell.",
+  "publishConfig": {
+    "access": "public"
+  },
+  "exports": {
+    ".": "./cspell-ext.json",
+    "./cspell": "./cspell-ext.json",
+    "./cspell-ext.json": "./cspell-ext.json"
+  },
+  "scripts": {
+    "build": "cspell-tools compile-trie \"Swedish.dic\" -o .",
+    "test": "hunspell-reader words -n 1000 \"Swedish.dic\" | cspell -v -c ./cspell-ext.json --local=sv --languageId=* stdin",
+    "prepublishOnly": "yarn test"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/streetsidesoftware/cspell-dicts.git"
+  },
+  "keywords": [
+    "cspell",
+    "sv",
+    "Swedish",
+    "dictionary",
+    "spelling"
+  ],
+  "author": "Jason Dent",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/streetsidesoftware/cspell-dicts/issues"
+  },
+  "homepage": "https://github.com/streetsidesoftware/cspell-dicts/blob/master/dictionaries/sv#readme",
+  "files": [
+    "Swedish.trie.gz",
+    "cspell-ext.json"
+  ]
+}

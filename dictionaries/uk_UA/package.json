@@ -1,0 +1,40 @@
+{
+  "name": "@cspell/dict-uk-ua",
+  "version": "1.0.19",
+  "description": "Ukrainian dictionary for cspell",
+  "publishConfig": {
+    "access": "public"
+  },
+  "exports": {
+    ".": "./cspell-ext.json",
+    "./cspell": "./cspell-ext.json",
+    "./cspell-ext.json": "./cspell-ext.json"
+  },
+  "scripts": {
+    "build": "cspell-tools compile-trie \"uk_ua.dic\" -o .",
+    "test": "hunspell-reader words -n 1000 \"uk_ua.dic\" | cspell -v -c ./cspell-ext.json --local=uk --languageId=* stdin",
+    "prepublishOnly": "yarn test"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/streetsidesoftware/cspell-dicts.git"
+  },
+  "keywords": [
+    "cspell",
+    "uk_UA",
+    "Ukrainian",
+    "dictionary",
+    "spelling"
+  ],
+  "author": "Jason Dent",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/streetsidesoftware/cspell-dicts/issues"
+  },
+  "homepage": "https://github.com/streetsidesoftware/cspell-dicts/blob/master/dictionaries/uk_UA#readme",
+  "files": [
+    "LICENSE.uk_ua.txt",
+    "uk_ua.trie.gz",
+    "cspell-ext.json"
+  ]
+}
