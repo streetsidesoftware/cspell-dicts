@@ -32,9 +32,22 @@
             // regex patterns than can be used with ignoreRegExpList or includeRegExpList
             // Example: "pattern": [{ "name": "mdash", "pattern": "&mdash;" }]
             // This could be included in "ignoreRegExpList": ["mdash"]
-            "patterns": [],
+            "patterns": [
+                {
+                    "name": "string",
+                    "pattern": "/(?:@\"[\\s\\S]*?(?<![^\"]\"(\"\")*)\"(?!\"))|(?:(?<![@\\\\])\".*?(?<![^\\\\]\\\\(\\\\\\\\)*)\")/g",
+                    "description": "C# String Literal"
+                },
+                {
+                    "name": "string.verbatim",
+                    "pattern": "/@\"[\\s\\S]*?(?<![^\"]\"(\"\")*)\"(?!\")/g",
+                    "description": "C# Verbatim String"
+                }
+            ],
             // List of dictionaries to enable by name in `dictionaryDefinitions`
-            "dictionaries": ["csharp"],
+            "dictionaries": [
+                "csharp"
+            ],
             // Dictionary definitions can also be supplied here. They are only used iff "languageId" and "local" match.
             "dictionaryDefinitions": []
         }
