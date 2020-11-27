@@ -3,6 +3,7 @@
   "version": "1.0.7",
   "description": "Dictionary of common NPM packages for cspell.",
   "exports": {
+    ".": "./cspell-ext.json",
     "./cspell": "./cspell-ext.json",
     "./cspell-ext.json": "./cspell-ext.json"
   },
