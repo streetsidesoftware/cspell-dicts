@@ -3,6 +3,14 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+## [1.0.23](https://github.com/streetsidesoftware/cspell-dicts/compare/cspell-dict-django@1.0.22...cspell-dict-django@1.0.23) (2020-11-27)
+
+**Note:** Version bump only for package cspell-dict-django
+
+
+
+
+
 ## [1.0.22](https://github.com/streetsidesoftware/cspell-dicts/compare/cspell-dict-django@1.0.21...cspell-dict-django@1.0.22) (2020-11-21)
 
 **Note:** Version bump only for package cspell-dict-django
