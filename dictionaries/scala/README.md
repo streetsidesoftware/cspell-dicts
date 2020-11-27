@@ -9,14 +9,14 @@ This is a pre-built dictionary for use with cspell.
 Global Install and add to cspell global settings.
 
 ```sh
-npm install -g cspell-dict-scala
-cspell-dict-scala-link
+npm install -g @cspell/dict-scala
+cspell link add @cspell/dict-scala
 ```
 
 ## Uninstall from cspell
 
 ```sh
-cspell-dict-scala-unlink
+cspell link remove @cspell/dict-scala
 ```
 
 ## Manual Installation
@@ -26,7 +26,7 @@ The `cspell-ext.json` file in this package should be added to the import section
 ```javascript
 {
     // …
-    "import": ["<path to node_modules>/cspell-dict-scala/cspell-ext.json"],
+    "import": ["@cspell/dict-scala/cspell-ext.json"],
     // …
 }
 ```

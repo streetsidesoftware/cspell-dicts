@@ -2,6 +2,9 @@
   "name": "@cspell/dict-da-dk",
   "version": "1.0.26",
   "description": "Danish dictionary for cspell.",
+  "publishConfig": {
+    "access": "public"
+  },
   "exports": {
     ".": "./cspell-ext.json",
     "./cspell": "./cspell-ext.json",

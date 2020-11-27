@@ -9,14 +9,14 @@ This is a pre-built dictionary for use with cspell.
 Global Install and add to cspell global settings.
 
 ```sh
-npm install -g cspell-dict-bash
-cspell-dict-bash-link
+npm install -g @cspell/dict-bash
+cspell link add @cspell/dict-bash
 ```
 
 ## Uninstall from cspell
 
 ```sh
-cspell-dict-bash-unlink
+cspell link remove @cspell/dict-bash
 ```
 
 ## Manual Installation
@@ -26,7 +26,7 @@ The `cspell-ext.json` file in this package should be added to the import section
 ```javascript
 {
     // …
-    "import": ["<path to node_modules>/cspell-dict-bash/cspell-ext.json"],
+    "import": ["@cspell/dict-bash/cspell-ext.json"],
     // …
 }
 ```

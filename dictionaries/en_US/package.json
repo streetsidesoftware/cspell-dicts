@@ -2,6 +2,9 @@
   "name": "@cspell/dict-en_us",
   "version": "1.2.35",
   "description": "English dictionary for cspell.",
+  "publishConfig": {
+    "access": "public"
+  },
   "exports": {
     ".": "./cspell-ext.json",
     "./cspell": "./cspell-ext.json",

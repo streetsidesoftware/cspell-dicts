@@ -11,14 +11,14 @@ This is a pre-built dictionary for use with cspell.
 Global Install and add to cspell global settings.
 
 ```sh
-npm install -g cspell-dict-russian
-cspell-dict-russian-link
+npm install -g @cspell/dict-russian
+cspell link add @cspell/dict-russian
 ```
 
 ## Uninstall from cspell
 
 ```sh
-cspell-dict-russian-unlink
+cspell link remove @cspell/dict-russian
 ```
 
 ## Manual Installation
@@ -28,7 +28,7 @@ The `cspell-ext.json` file in this package should be added to the import section
 ```javascript
 {
     // …
-    "import": ["<path to node_modules>/cspell-dict-russian/cspell-ext.json"],
+    "import": ["@cspell/dict-russian/cspell-ext.json"],
     // …
 }
 ```

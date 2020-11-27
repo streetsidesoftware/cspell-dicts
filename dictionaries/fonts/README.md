@@ -9,14 +9,14 @@ This is a pre-built dictionary for use with cspell.
 Global Install and add to cspell global settings.
 
 ```sh
-npm install -g cspell-dict-fonts
-cspell-dict-fonts-link
+npm install -g @cspell/dict-fonts
+cspell link add @cspell/dict-fonts
 ```
 
 ## Uninstall from cspell
 
 ```sh
-cspell-dict-fonts-unlink
+cspell link remove @cspell/dict-fonts
 ```
 
 ## Manual Installation
@@ -26,7 +26,7 @@ The `cspell-ext.json` file in this package should be added to the import section
 ```javascript
 {
     // …
-    "import": ["<path to node_modules>/cspell-dict-fonts/cspell-ext.json"],
+    "import": ["@cspell/dict-fonts/cspell-ext.json"],
     // …
 }
 ```

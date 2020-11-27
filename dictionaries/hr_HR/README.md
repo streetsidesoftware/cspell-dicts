@@ -9,14 +9,14 @@ This is a pre-built dictionary for use with cspell.
 Global Install and add to cspell global settings.
 
 ```sh
-npm install -g cspell-dict-hr-hr
-cspell-dict-hr-hr-link
+npm install -g @cspell/dict-hr-hr
+cspell link add @cspell/dict-hr-hr
 ```
 
 ## Uninstall from cspell
 
 ```sh
-cspell-dict-hr-hr-unlink
+cspell link remove @cspell/dict-hr-hr
 ```
 
 ## Manual Installation
@@ -26,7 +26,7 @@ The `cspell-ext.json` file in this package should be added to the import section
 ```javascript
 {
     // …
-    "import": ["<path to node_modules>/cspell-dict-hr-hr/cspell-ext.json"],
+    "import": ["@cspell/dict-hr-hr/cspell-ext.json"],
     // …
 }
 ```

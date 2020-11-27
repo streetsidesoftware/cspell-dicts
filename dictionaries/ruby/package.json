@@ -2,6 +2,9 @@
   "name": "@cspell/dict-ruby",
   "version": "1.0.9",
   "description": "For ruby and ruby on rails",
+  "publishConfig": {
+    "access": "public"
+  },
   "exports": {
     ".": "./cspell-ext.json",
     "./cspell": "./cspell-ext.json",

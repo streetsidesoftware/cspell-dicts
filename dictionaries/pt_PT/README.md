@@ -9,14 +9,14 @@ This is a pre-built dictionary for use with cspell.
 Global Install and add to cspell global settings.
 
 ```sh
-npm install -g cspell-dict-pt-pt
-cspell-dict-pt-pt-link
+npm install -g @cspell/dict-pt-pt
+cspell link add @cspell/dict-pt-pt
 ```
 
 ## Uninstall from cspell
 
 ```sh
-cspell-dict-pt-pt-unlink
+cspell link remove @cspell/dict-pt-pt
 ```
 
 ## Manual Installation
@@ -26,7 +26,7 @@ The `cspell-ext.json` file in this package should be added to the import section
 ```javascript
 {
     // …
-    "import": ["<path to node_modules>/cspell-dict-pt-pt/cspell-ext.json"],
+    "import": ["@cspell/dict-pt-pt/cspell-ext.json"],
     // …
 }
 ```

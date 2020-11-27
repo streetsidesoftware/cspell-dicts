@@ -2,6 +2,9 @@
   "name": "@cspell/dict-es-es",
   "version": "1.0.25",
   "description": "Spanish dictionary for cspell.",
+  "publishConfig": {
+    "access": "public"
+  },
   "exports": {
     ".": "./cspell-ext.json",
     "./cspell": "./cspell-ext.json",

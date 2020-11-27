@@ -2,6 +2,9 @@
   "name": "@cspell/dict-csharp",
   "version": "1.0.7",
   "description": "C# dictionary for cspell.",
+  "publishConfig": {
+    "access": "public"
+  },
   "exports": {
     ".": "./cspell-ext.json",
     "./cspell": "./cspell-ext.json",

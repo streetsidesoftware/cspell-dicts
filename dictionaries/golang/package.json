@@ -2,6 +2,9 @@
   "name": "@cspell/dict-golang",
   "version": "1.1.21",
   "description": "Go Language dictionary for cspell.",
+  "publishConfig": {
+    "access": "public"
+  },
   "exports": {
     ".": "./cspell-ext.json",
     "./cspell": "./cspell-ext.json",

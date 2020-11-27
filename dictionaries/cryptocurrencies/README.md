@@ -9,14 +9,14 @@ This is a pre-built dictionary for use with cspell.
 Global Install and add to cspell global settings.
 
 ```sh
-npm install -g cspell-dict-cryptocurrencies
-cspell-dict-cryptocurrencies-link
+npm install -g @cspell/dict-cryptocurrencies
+cspell link add @cspell/dict-cryptocurrencies
 ```
 
 ## Uninstall from cspell
 
 ```sh
-cspell-dict-cryptocurrencies-unlink
+cspell link remove @cspell/dict-cryptocurrencies
 ```
 
 ## Manual Installation
@@ -26,7 +26,7 @@ The `cspell-ext.json` file in this package should be added to the import section
 ```javascript
 {
     // …
-    "import": ["<path to node_modules>/cspell-dict-cryptocurrencies/cspell-ext.json"],
+    "import": ["@cspell/dict-cryptocurrencies/cspell-ext.json"],
     // …
 }
 ```

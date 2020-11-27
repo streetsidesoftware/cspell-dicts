@@ -9,14 +9,14 @@ This is a pre-built dictionary for use with cspell.
 Global Install and add to cspell global settings.
 
 ```sh
-npm install -g cspell-dict-ruby
-cspell-dict-ruby-link
+npm install -g @cspell/dict-ruby
+cspell link add @cspell/dict-ruby
 ```
 
 ## Uninstall from cspell
 
 ```sh
-cspell-dict-ruby-unlink
+cspell link remove @cspell/dict-ruby
 ```
 
 ## Manual Installation
@@ -26,7 +26,7 @@ The `cspell-ext.json` file in this package should be added to the import section
 ```javascript
 {
     // …
-    "import": ["<path to node_modules>/cspell-dict-ruby/cspell-ext.json"],
+    "import": ["@cspell/dict-ruby/cspell-ext.json"],
     // …
 }
 ```

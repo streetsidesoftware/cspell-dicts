@@ -9,14 +9,14 @@ This is a pre-built dictionary for use with cspell.
 Global Install and add to cspell global settings.
 
 ```sh
-npm install -g cspell-dict-lua
-cspell-dict-lua-link
+npm install -g @cspell/dict-lua
+cspell link add @cspell/dict-lua
 ```
 
 ## Uninstall from cspell
 
 ```sh
-cspell-dict-lua-unlink
+cspell link remove @cspell/dict-lua
 ```
 
 ## Manual Installation
@@ -26,7 +26,7 @@ The `cspell-ext.json` file in this package should be added to the import section
 ```javascript
 {
     // …
-    "import": ["<path to node_modules>/cspell-dict-lua/cspell-ext.json"],
+    "import": ["@cspell/dict-lua/cspell-ext.json"],
     // …
 }
 ```

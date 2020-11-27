@@ -11,14 +11,14 @@ This addon dictionary adds HTML symbol entities like: `&mdash;`, `&laquo;`, and 
 Global Install and add to cspell global settings.
 
 ```sh
-npm install -g cspell-dict-html-symbol-entities
-cspell-dict-html-symbol-entities-link
+npm install -g @cspell/dict-html-symbol-entities
+cspell link add @cspell/dict-html-symbol-entities
 ```
 
 ## Uninstall from cspell
 
 ```sh
-cspell-dict-html-symbol-entities-unlink
+cspell link remove @cspell/dict-html-symbol-entities
 ```
 
 ## Manual Installation
@@ -28,14 +28,14 @@ The `cspell-ext.json` file in this package should be added to the import section
 ```javascript
 {
     // …
-    "import": ["<path to node_modules>/cspell-dict-html-symbol-entities/cspell-ext.json"],
+    "import": ["@cspell/dict-html-symbol-entities/cspell-ext.json"],
     // …
 }
 ```
 
 ## Building
 
-Building is only necessary if you want to modify the contents of the dictionary.  
+Building is only necessary if you want to modify the contents of the dictionary.
 _Note:_ Building will take a few minutes for large files.
 
 ```sh

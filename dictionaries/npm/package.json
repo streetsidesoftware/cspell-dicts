@@ -2,6 +2,9 @@
   "name": "@cspell/dict-npm",
   "version": "1.0.7",
   "description": "Dictionary of common NPM packages for cspell.",
+  "publishConfig": {
+    "access": "public"
+  },
   "exports": {
     ".": "./cspell-ext.json",
     "./cspell": "./cspell-ext.json",

@@ -2,6 +2,9 @@
   "name": "@cspell/dict-tr-tr",
   "version": "1.0.17",
   "description": "Turkish dictionary for cspell.",
+  "publishConfig": {
+    "access": "public"
+  },
   "exports": {
     ".": "./cspell-ext.json",
     "./cspell": "./cspell-ext.json",

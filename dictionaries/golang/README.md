@@ -13,14 +13,14 @@ This dictionary is included by default in cSpell.
 Global Install and add to cspell global settings.
 
 ```sh
-npm install -g cspell-dict-golang
-cspell-dict-golang-link
+npm install -g @cspell/dict-golang
+cspell link add @cspell/dict-golang
 ```
 
 ## Uninstall from cspell
 
 ```sh
-cspell-dict-golang-unlink
+cspell link remove @cspell/dict-golang
 ```
 
 ## Manual Installation
@@ -30,7 +30,7 @@ The `cspell-ext.json` file in this package should be added to the import section
 ```javascript
 {
     // …
-    "import": ["<path to node_modules>/cspell-dict-golang/cspell-ext.json"],
+    "import": ["@cspell/dict-golang/cspell-ext.json"],
     // …
 }
 ```

@@ -9,14 +9,14 @@ This is a pre-built dictionary for use with cspell.
 Global Install and add to cspell global settings.
 
 ```sh
-npm install -g cspell-dict-bg-bg
-cspell-dict-bg-bg-link
+npm install -g @cspell/dict-bg-bg
+cspell link add @cspell/dict-bg-bg
 ```
 
 ## Uninstall from cspell
 
 ```sh
-cspell-dict-bg-bg-unlink
+cspell link remove @cspell/dict-bg-bg
 ```
 
 ## Manual Installation
@@ -26,7 +26,7 @@ The `cspell-ext.json` file in this package should be added to the import section
 ```javascript
 {
     // …
-    "import": ["<path to node_modules>/cspell-dict-bg-bg/cspell-ext.json"],
+    "import": ["@cspell/dict-bg-bg/cspell-ext.json"],
     // …
 }
 ```

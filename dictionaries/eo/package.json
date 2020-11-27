@@ -2,6 +2,9 @@
   "name": "@cspell/dict-eo",
   "version": "1.0.6",
   "description": "Esperanto dictionary for cspell.",
+  "publishConfig": {
+    "access": "public"
+  },
   "exports": {
     ".": "./cspell-ext.json",
     "./cspell": "./cspell-ext.json",

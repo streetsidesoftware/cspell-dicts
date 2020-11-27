@@ -2,6 +2,9 @@
   "name": "@cspell/dict-city-names-finland",
   "version": "1.0.20",
   "description": "City area names in Finland for cspell.",
+  "publishConfig": {
+    "access": "public"
+  },
   "exports": {
     ".": "./cspell-ext.json",
     "./cspell": "./cspell-ext.json",

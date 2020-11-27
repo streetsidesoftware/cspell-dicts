@@ -9,14 +9,14 @@ This is a pre-built dictionary, based on [stavekontrolden.dk](http://www.staveko
 Global Install and add to cspell global settings.
 
 ```sh
-npm install -g cspell-dict-da-dk
-cspell-dict-da-dk-link
+npm install -g @cspell/dict-da-dk
+cspell link add @cspell/dict-da-dk
 ```
 
 ## Uninstall from cspell
 
 ```sh
-cspell-dict-da-dk-unlink
+cspell link remove @cspell/dict-da-dk
 ```
 
 ## Manual Installation
@@ -26,7 +26,7 @@ The `cspell-ext.json` file in this package should be added to the import section
 ```javascript
 {
     // …
-    "import": ["<path to node_modules>/cspell-dict-da-dk/cspell-ext.json"],
+    "import": ["@cspell/dict-da-dk/cspell-ext.json"],
     // …
 }
 ```

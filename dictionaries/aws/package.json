@@ -2,6 +2,9 @@
   "name": "@cspell/dict-aws",
   "version": "1.0.10",
   "description": "AWS dictionary for cspell.",
+  "publishConfig": {
+    "access": "public"
+  },
   "exports": {
     ".": "./cspell-ext.json",
     "./cspell": "./cspell-ext.json",

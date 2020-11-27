@@ -2,6 +2,9 @@
   "name": "@cspell/dict-rust",
   "version": "1.0.19",
   "description": "Rust dictionary for cspell.",
+  "publishConfig": {
+    "access": "public"
+  },
   "exports": {
     ".": "./cspell-ext.json",
     "./cspell": "./cspell-ext.json",

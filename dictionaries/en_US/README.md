@@ -13,14 +13,14 @@ This dictionary comes pre-installed with cspell. It should not be necessary to a
 Global Install and add to cspell global settings.
 
 ```sh
-npm install -g cspell-dict-en-us
-cspell-dict-en-us-link
+npm install -g @cspell/dict-en-us
+cspell link add @cspell/dict-en-us
 ```
 
 ## Uninstall from cspell
 
 ```sh
-cspell-dict-en-us-unlink
+cspell link remove @cspell/dict-en-us
 ```
 
 ## Manual Installation
@@ -30,7 +30,7 @@ The `cspell-ext.json` file in this package should be added to the import section
 ```javascript
 {
     // …
-    "import": ["<path to node_modules>/cspell-dict-en-us/cspell-ext.json"],
+    "import": ["@cspell/dict-en-us/cspell-ext.json"],
     // …
 }
 ```

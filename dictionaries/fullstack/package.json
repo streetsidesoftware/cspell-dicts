@@ -2,6 +2,9 @@
   "name": "@cspell/dict-fullstack",
   "version": "1.0.33",
   "description": "Dictionary of terms used in Fullstack development.",
+  "publishConfig": {
+    "access": "public"
+  },
   "exports": {
     ".": "./cspell-ext.json",
     "./cspell": "./cspell-ext.json",

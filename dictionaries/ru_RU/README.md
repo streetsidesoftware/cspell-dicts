@@ -11,14 +11,14 @@ It combines
 Global Install and add to cspell global settings.
 
 ```sh
-npm install -g cspell-dict-ru-ru
-cspell-dict-ru-ru-link
+npm install -g @cspell/dict-ru-ru
+cspell link add @cspell/dict-ru-ru
 ```
 
 ## Uninstall from cspell
 
 ```sh
-cspell-dict-ru-ru-unlink
+cspell link remove @cspell/dict-ru-ru
 ```
 
 ## Manual Installation
@@ -28,7 +28,7 @@ The `cspell-ext.json` file in this package should be added to the import section
 ```javascript
 {
     // …
-    "import": ["<path to node_modules>/cspell-dict-ru-ru/cspell-ext.json"],
+    "import": ["@cspell/dict-ru-ru/cspell-ext.json"],
     // …
 }
 ```

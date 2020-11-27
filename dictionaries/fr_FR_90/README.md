@@ -9,14 +9,14 @@ This is a pre-built dictionary for use with cspell.
 Global Install and add to cspell global settings.
 
 ```sh
-npm install -g cspell-dict-fr-reforme
-cspell-dict-fr-reforme-link
+npm install -g @cspell/dict-fr-reforme
+cspell link add @cspell/dict-fr-reforme
 ```
 
 ## Uninstall from cspell
 
 ```sh
-cspell-dict-fr-reforme-unlink
+cspell link remove @cspell/dict-fr-reforme
 ```
 
 ## Manual Installation
@@ -26,7 +26,7 @@ The `cspell-ext.json` file in this package should be added to the import section
 ```javascript
 {
     // …
-    "import": ["<path to node_modules>/cspell-dict-fr-reforme/cspell-ext.json"],
+    "import": ["@cspell/dict-fr-reforme/cspell-ext.json"],
     // …
 }
 ```

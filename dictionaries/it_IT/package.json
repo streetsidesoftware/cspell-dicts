@@ -2,6 +2,9 @@
   "name": "@cspell/dict-it-it",
   "version": "1.0.10",
   "description": "Italian dictionary for cspell.",
+  "publishConfig": {
+    "access": "public"
+  },
   "exports": {
     ".": "./cspell-ext.json",
     "./cspell": "./cspell-ext.json",

@@ -9,14 +9,14 @@ This is a pre-built dictionary for use with cspell.
 Global Install and add to cspell global settings.
 
 ```sh
-npm install -g cspell-dict-lorem-ipsum
-cspell-dict-lorem-ipsum-link
+npm install -g @cspell/dict-lorem-ipsum
+cspell link add @cspell/dict-lorem-ipsum
 ```
 
 ## Uninstall from cspell
 
 ```sh
-cspell-dict-lorem-ipsum-unlink
+cspell link remove @cspell/dict-lorem-ipsum
 ```
 
 ## Manual Installation
@@ -26,7 +26,7 @@ The `cspell-ext.json` file in this package should be added to the import section
 ```javascript
 {
     // …
-    "import": ["<path to node_modules>/cspell-dict-lorem-ipsum/cspell-ext.json"],
+    "import": ["@cspell/dict-lorem-ipsum/cspell-ext.json"],
     // …
 }
 ```

@@ -2,6 +2,9 @@
   "name": "@cspell/dict-lt-lt",
   "version": "1.0.14",
   "description": "Lithuanian dictionary for cspell.",
+  "publishConfig": {
+    "access": "public"
+  },
   "exports": {
     ".": "./cspell-ext.json",
     "./cspell": "./cspell-ext.json",

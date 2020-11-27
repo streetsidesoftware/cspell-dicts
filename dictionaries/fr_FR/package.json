@@ -2,6 +2,9 @@
   "name": "@cspell/dict-fr-fr",
   "version": "1.2.18",
   "description": "French dictionary for cspell.",
+  "publishConfig": {
+    "access": "public"
+  },
   "exports": {
     ".": "./cspell-ext.json",
     "./cspell": "./cspell-ext.json",
