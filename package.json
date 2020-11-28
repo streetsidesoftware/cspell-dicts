@@ -13,7 +13,7 @@
     "prepare": "lerna exec \"cp ../../generator-cspell-dicts/generators/app/templates/*.js ./ && cp ../../generator-cspell-dicts/generators/app/templates/*.ts ./\" --scope=cspell-dict* && lerna run prepare",
     "pub-version": "yarn run checksum && lerna version --conventional-commits",
     "pub-lerna": "yarn run pub-version && lerna publish from-git",
-    "pub": "yarn run check-dirty && yarn run postinstall && yarn test && yarn run pub-lerna",
+    "pub": "yarn run check-dirty && yarn test && yarn run pub-lerna",
     "update-packages": "yarn upgrade"
   },
   "workspaces": [
