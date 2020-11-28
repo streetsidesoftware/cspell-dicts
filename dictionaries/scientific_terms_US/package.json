@@ -12,8 +12,8 @@
   },
   "scripts": {
     "build": "cspell-tools compile-trie \"custom_scientific_US.dic.txt\" -o .",
-    "prepublishOnly": "yarn test",
-    "test": "head -n 1000 \"custom_scientific_US.dic.txt\" | cspell -v -c ./cspell-ext.json --local=en --languageId=* stdin"
+    "test": "head -n 1000 \"custom_scientific_US.dic.txt\" | cspell -v -c ./cspell-ext.json --local=en --languageId=* stdin",
+    "prepublishOnly": "yarn test"
   },
   "repository": {
     "type": "git",
@@ -35,6 +35,5 @@
   "files": [
     "custom_scientific_US.dic.trie.gz",
     "cspell-ext.json"
-  ],
-  "gitHead": "d785174916ca22dea678258db96a6fbc4044f6f6"
+  ]
 }
