@@ -16,3 +16,8 @@ Mozilla MPL version 1.1
 
 This dictionary is based on data from Det Danske Sprog- og Litteraturselskab
 (The Danish Society for Language and Literature), http://www.dsl.dk.
+
+<!---
+cspell:locale da,en
+cspell:ignore sprogværktøjer Litteraturselskab
+-->

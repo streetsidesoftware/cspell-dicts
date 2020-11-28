@@ -52,3 +52,5 @@ MIT
   JDK 12 via
   [a new script](https://github.com/bentolor/jdk9-module-enumerator)
   leveraging the [classgraph project](https://github.com/classgraph/classgraph)
+
+  <!--- cspell:ignore Schmid wordlist classgraph -->

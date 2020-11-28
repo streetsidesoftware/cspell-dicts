@@ -12,7 +12,7 @@
   },
   "scripts": {
     "build": "cspell-tools compile \"aws.txt\" -o .",
-    "test": "head -n 100 \"aws.txt\" | cspell -v -c ./cspell-ext.json \"--local=*\" \"--languageId=aws\" stdin",
+    "test": "cspell -v -c ./cspell-ext.json *.md",
     "cspell-link": "node link.js",
     "cspell-unlink": "node unlink.js",
     "prepublishOnly": "yarn test",
@@ -38,6 +38,7 @@
   },
   "homepage": "https://github.com/streetsidesoftware/cspell-dicts/blob/master/packages/aws#readme",
   "dependencies": {
+    "@cspell/dict-aws": "^1.0.12",
     "configstore": "^5.0.1"
   },
   "files": [

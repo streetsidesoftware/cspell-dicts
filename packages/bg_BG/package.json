@@ -11,10 +11,7 @@
     "./cspell-ext.json": "./cspell-ext.json"
   },
   "scripts": {
-    "build": "cspell-tools compile-trie \"bg_BG.dic\" -o .",
-    "test": "hunspell-reader words -n 1000 \"bg_BG.dic\" | cspell -v -c ./cspell-ext.json \"--local=bg\" \"--languageId=*\" stdin",
-    "cspell-link": "node link.js",
-    "cspell-unlink": "node unlink.js",
+    "test": "cspell -v -c ./cspell-ext.json *.md",
     "prepublishOnly": "yarn test"
   },
   "repository": {
@@ -37,10 +34,10 @@
   },
   "homepage": "https://github.com/streetsidesoftware/cspell-dicts/blob/master/packages/bg_BG#readme",
   "dependencies": {
+    "@cspell/dict-bg-bg": "^1.0.14",
     "configstore": "^5.0.1"
   },
   "files": [
-    "bg_BG.trie.gz",
     "cspell-ext.json",
     "*.js",
     "*.d.ts"

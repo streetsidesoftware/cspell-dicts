@@ -11,10 +11,7 @@
     "./cspell-ext.json": "./cspell-ext.json"
   },
   "scripts": {
-    "build": "cspell-tools compile-trie \"French.dic\" -o .",
-    "test-dictionary": "hunspell-reader words -n 1000 \"French.dic\" | cspell -v -c ./cspell-ext.json --local=fr --languageId=* stdin",
-    "test-text": "cspell -v -c ./cspell-ext.json --local=fr ./test.md",
-    "test": "yarn run test-dictionary && yarn run test-text",
+    "test": "cspell -v -c ./cspell-ext.json --local=en,fr *.md",
     "prepublishOnly": "yarn test",
     "cspell-link": "node link.js",
     "cspell-unlink": "node unlink.js"
@@ -39,12 +36,11 @@
   },
   "homepage": "https://github.com/streetsidesoftware/cspell-dicts/blob/master/packages/fr_FR#readme",
   "dependencies": {
+    "@cspell/dict-fr-fr": "^1.2.20",
     "configstore": "^5.0.1"
   },
   "files": [
-    "French.trie.gz",
     "cspell-ext.json",
-    "French.txt",
     "*.js",
     "*.d.ts"
   ]

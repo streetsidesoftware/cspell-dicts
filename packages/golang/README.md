@@ -52,3 +52,5 @@ npm run build
 MIT
 
 > Some packages may have other licenses included.
+
+<!--- cspell:ignore Alek Alexey Palazhchenko -->

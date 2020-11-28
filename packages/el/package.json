@@ -11,13 +11,8 @@
     "./cspell-ext.json": "./cspell-ext.json"
   },
   "scripts": {
-    "compile-all-caps": "node ./tools/toCaps ./src/Greek.txt ./src/Greek.ALLCAPS.txt",
-    "build-dictionary": "cross-env NODE_OPTIONS=--max_old_space_size=4096 cspell-tools compile-trie --merge el_GR src/hunspell/el-GR.dic src/Greek.txt src/Greek.ALLCAPS.txt -o .",
-    "build": "yarn run compile-all-caps && yarn run build-dictionary",
-    "test": "head -n 1000 ./src/Greek.txt | cspell -v -c cspell-ext.json --local=el stdin",
-    "prepublishOnly": "yarn test",
-    "cspell-link": "node link.js",
-    "cspell-unlink": "node unlink.js"
+    "test": "cspell -v -c ./cspell-ext.json *.md",
+    "prepublishOnly": "yarn test"
   },
   "repository": {
     "type": "git",
@@ -39,14 +34,12 @@
   },
   "homepage": "https://github.com/streetsidesoftware/cspell-dicts/blob/master/el/README.md",
   "dependencies": {
+    "@cspell/dict-el": "^1.0.14",
     "configstore": "^5.0.1"
   },
   "files": [
-    "el_GR.trie.gz",
     "cspell-ext.json",
-    "src/hunspell/README.txt",
     "*.js",
-    "!tools",
     "*.d.ts"
   ]
 }
