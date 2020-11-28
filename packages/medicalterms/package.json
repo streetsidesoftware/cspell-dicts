@@ -11,12 +11,8 @@
     "./cspell-ext.json": "./cspell-ext.json"
   },
   "scripts": {
-    "build": "cspell-tools compile \"medicalterms-en.txt\" -o .",
     "test": "cspell -v -c ./cspell-ext.json *.md",
-    "cspell-link": "node link.js",
-    "cspell-unlink": "node unlink.js",
-    "prepublishOnly": "yarn test",
-    "prepare": "yarn run build"
+    "prepublishOnly": "yarn test"
   },
   "repository": {
     "type": "git",
@@ -42,7 +38,6 @@
     "configstore": "^5.0.1"
   },
   "files": [
-    "medicalterms-en.txt.gz",
     "cspell-ext.json",
     "medicalterms-en.md",
     "*.js",

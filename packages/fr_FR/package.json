@@ -12,9 +12,7 @@
   },
   "scripts": {
     "test": "cspell -v -c ./cspell-ext.json --local=en,fr *.md",
-    "prepublishOnly": "yarn test",
-    "cspell-link": "node link.js",
-    "cspell-unlink": "node unlink.js"
+    "prepublishOnly": "yarn test"
   },
   "repository": {
     "type": "git",
