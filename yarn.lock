@@ -2104,14 +2104,6 @@ cspell-glob@^5.0.2:
   dependencies:
     micromatch "^4.0.2"
 
-cspell-io@^5.0.1:
-  version "5.0.1"
-  resolved "https://registry.yarnpkg.com/cspell-io/-/cspell-io-5.0.1.tgz#1f54443c0c7449a1964bf8fb4e5d815e73cf25ab"
-  integrity sha512-KhLuu2dsMV2ZE6g8CM4vpjoOxYkPFYfve+q63KmCf0w6KRn3E6wH/om94r5FPCuyUi9OWy1xYB71S1wLv8I6RQ==
-  dependencies:
-    iconv-lite "^0.6.2"
-    iterable-to-stream "^1.0.1"
-
 cspell-io@^5.0.2:
   version "5.0.2"
   resolved "https://registry.yarnpkg.com/cspell-io/-/cspell-io-5.0.2.tgz#e45880acb93e6a7cae77083498ae18378bf266ca"
@@ -2171,26 +2163,18 @@ cspell-lib@^5.0.2:
     vscode-uri "^2.1.2"
 
 cspell-tools@^5.0.1:
-  version "5.0.1"
-  resolved "https://registry.yarnpkg.com/cspell-tools/-/cspell-tools-5.0.1.tgz#ea900c8448d9ae701162d2c1dcb7c318de20f25c"
-  integrity sha512-lOrW6JqR38J61OXqi1h0Kuw1vXUdgDq5Q1S0Rhgsrrq0eQbFrtICWyx195+QgyIiOT6GDqOovinVlZaW7R2BPA==
+  version "5.0.2"
+  resolved "https://registry.yarnpkg.com/cspell-tools/-/cspell-tools-5.0.2.tgz#1462f88ba23b3aeebf62c93d331de682d182a062"
+  integrity sha512-7hv/9GL6d7gpzYK7cVccNdj/dxHxAcNtaRhOLlut2vKVBORvvsrmG9ghwxJkhh/AA+YO7j5qdsgSHE9C42ffAw==
   dependencies:
     commander "^6.2.0"
-    cspell-io "^5.0.1"
-    cspell-trie-lib "^5.0.1"
-    cspell-util-bundle "^5.0.1"
+    cspell-io "^5.0.2"
+    cspell-trie-lib "^5.0.2"
+    cspell-util-bundle "^5.0.2"
     fs-extra "^9.0.1"
     gensequence "^3.1.1"
     glob "^7.1.6"
     hunspell-reader "^3.2.0"
-
-cspell-trie-lib@^5.0.1:
-  version "5.0.1"
-  resolved "https://registry.yarnpkg.com/cspell-trie-lib/-/cspell-trie-lib-5.0.1.tgz#909520ec374a0b5a8a92622f35e19867c3236fae"
-  integrity sha512-tFqT8vGyv3AUwQvQDc0nwlhF3Hh9AnS0SHg1fJEVpK0WhX3xGvG9mF3seL+QWqy1JljWwrom2d3yin0JgalFEg==
-  dependencies:
-    fs-extra "^9.0.1"
-    gensequence "^3.1.1"
 
 cspell-trie-lib@^5.0.2:
   version "5.0.2"
@@ -2199,11 +2183,6 @@ cspell-trie-lib@^5.0.2:
   dependencies:
     fs-extra "^9.0.1"
     gensequence "^3.1.1"
-
-cspell-util-bundle@^5.0.1:
-  version "5.0.1"
-  resolved "https://registry.yarnpkg.com/cspell-util-bundle/-/cspell-util-bundle-5.0.1.tgz#238dde83f3f6b2d030119292b9f50143b8361673"
-  integrity sha512-SpOTkLvnzvKxJGajBYOz5gD5L61dsfIhnqDXdqOvovq6JLUILI/POCc26P5xvLPIrno6prCLX4RgRYca+W7xJw==
 
 cspell-util-bundle@^5.0.2:
   version "5.0.2"
