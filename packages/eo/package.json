@@ -11,10 +11,7 @@
     "./cspell-ext.json": "./cspell-ext.json"
   },
   "scripts": {
-    "build": "cross-env NODE_OPTIONS=--max_old_space_size=8192 cspell-tools compile-trie \"eo.dic\" -o .",
-    "test": "hunspell-reader words -n 1000 \"eo.dic\" | cspell -v -c ./cspell-ext.json \"--local=eo\" \"--languageId=*\" stdin",
-    "cspell-link": "node link.js",
-    "cspell-unlink": "node unlink.js",
+    "test": "cspell -v -c ./cspell-ext.json *.md",
     "prepublishOnly": "yarn test"
   },
   "repository": {
@@ -37,11 +34,10 @@
   },
   "homepage": "https://github.com/streetsidesoftware/cspell-dicts/blob/master/packages/eo#readme",
   "dependencies": {
+    "@cspell/dict-eo": "^1.0.8",
     "configstore": "^5.0.0"
   },
   "files": [
-    "eo.trie.gz",
-    "eo_license.txt",
     "cspell-ext.json",
     "*.js",
     "*.d.ts"

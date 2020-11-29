@@ -11,11 +11,8 @@
     "./cspell-ext.json": "./cspell-ext.json"
   },
   "scripts": {
-    "build": "cspell-tools compile-trie \"Dutch.dic\" -o .",
-    "test": "hunspell-reader words -n 1000 \"Dutch.dic\" | cspell -v -c ./cspell-ext.json --local=nl --languageId=* stdin",
-    "prepublishOnly": "yarn test",
-    "cspell-link": "node link.js",
-    "cspell-unlink": "node unlink.js"
+    "test": "cspell -v -c ./cspell-ext.json *.md",
+    "prepublishOnly": "yarn test"
   },
   "repository": {
     "type": "git",
@@ -36,10 +33,10 @@
   },
   "homepage": "https://github.com/streetsidesoftware/cspell-dicts/blob/master/packages/nl_NL#readme",
   "dependencies": {
+    "@cspell/dict-nl-nl": "^1.0.34",
     "configstore": "^5.0.1"
   },
   "files": [
-    "Dutch.trie.gz",
     "cspell-ext.json",
     "Dutch.txt",
     "*.js",

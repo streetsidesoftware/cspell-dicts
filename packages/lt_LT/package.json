@@ -11,11 +11,8 @@
     "./cspell-ext.json": "./cspell-ext.json"
   },
   "scripts": {
-    "build": "cross-env NODE_OPTIONS=--max_old_space_size=12288 cspell-tools compile-trie \"lt_LT.dic\" -o .",
-    "test": "hunspell-reader words -n 1000 \"lt_LT.dic\" | cspell -v -c ./cspell-ext.json --local=lt --languageId=* stdin",
-    "prepublishOnly": "yarn test",
-    "cspell-link": "node link.js",
-    "cspell-unlink": "node unlink.js"
+    "test": "cspell -v -c ./cspell-ext.json *.md",
+    "prepublishOnly": "yarn test"
   },
   "repository": {
     "type": "git",
@@ -37,12 +34,10 @@
   },
   "homepage": "https://github.com/streetsidesoftware/cspell-dicts/blob/master/packages/lt_LT#readme",
   "dependencies": {
+    "@cspell/dict-lt-lt": "^1.0.16",
     "configstore": "^5.0.1"
   },
   "files": [
-    "COPYING",
-    "AUTHORS",
-    "lt_LT.trie.gz",
     "cspell-ext.json",
     "*.js",
     "*.d.ts"

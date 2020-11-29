@@ -34,5 +34,11 @@
             ],
             "ignoreRegExpList": ["ada word break"]
         }
+    ],
+    "overrides": [
+        {
+            "filename": "*.{adb,ads}",
+            "languageId": "ada"
+        }
     ]
 }

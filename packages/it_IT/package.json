@@ -11,10 +11,7 @@
     "./cspell-ext.json": "./cspell-ext.json"
   },
   "scripts": {
-    "build": "cross-env NODE_OPTIONS=--max_old_space_size=8092 cspell-tools compile-trie \"it_IT.dic\" -o .",
-    "test": "hunspell-reader words -n 1000 \"it_IT.dic\" | cspell -v -c ./cspell-ext.json \"--local=it,it-IT\" \"--languageId=*\" stdin",
-    "cspell-link": "node link.js",
-    "cspell-unlink": "node unlink.js",
+    "test": "cspell -v -c ./cspell-ext.json *.md",
     "prepublishOnly": "yarn test"
   },
   "repository": {
@@ -37,10 +34,10 @@
   },
   "homepage": "https://github.com/streetsidesoftware/cspell-dicts/blob/master/packages/it_IT#readme",
   "dependencies": {
+    "@cspell/dict-it-it": "^1.0.12",
     "configstore": "^5.0.1"
   },
   "files": [
-    "it_IT.trie.gz",
     "cspell-ext.json",
     "*.js",
     "*.d.ts"

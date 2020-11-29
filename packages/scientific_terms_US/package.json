@@ -11,11 +11,8 @@
     "./cspell-ext.json": "./cspell-ext.json"
   },
   "scripts": {
-    "build": "cspell-tools compile-trie \"custom_scientific_US.dic.txt\" -o .",
-    "prepublishOnly": "yarn test",
-    "test": "head -n 1000 \"custom_scientific_US.dic.txt\" | cspell -v -c ./cspell-ext.json --local=en --languageId=* stdin",
-    "cspell-link": "node link.js",
-    "cspell-unlink": "node unlink.js"
+    "test": "cspell -v -c ./cspell-ext.json *.md",
+    "prepublishOnly": "yarn test"
   },
   "repository": {
     "type": "git",
@@ -37,10 +34,10 @@
   },
   "homepage": "https://github.com/streetsidesoftware/cspell-dicts/blob/master/packages/scientific_terms_US#readme",
   "dependencies": {
+    "@cspell/dict-scientific-terms-us": "^1.0.21",
     "configstore": "^5.0.1"
   },
   "files": [
-    "custom_scientific_US.dic.trie.gz",
     "cspell-ext.json",
     "*.js",
     "*.d.ts"

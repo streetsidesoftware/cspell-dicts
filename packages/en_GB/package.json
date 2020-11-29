@@ -11,17 +11,8 @@
     "./cspell-ext.json": "./cspell-ext.json"
   },
   "scripts": {
-    "build": "yarn run compile",
-    "checksum": "shasum -c checksum.txt",
-    "compile": "cat source-files.txt | xargs cspell-tools compile-trie --merge en_GB -o . && yarn run gen-checksum",
-    "conditional-build": "yarn run --silent checksum || yarn run build",
-    "gen-checksum": "cat source-files.txt source-dependencies.txt | xargs shasum > checksum.txt",
     "prepublishOnly": "yarn test",
-    "test-dict": "head -n 1000 \"./src/wordsEnGb.txt\" | cspell -v -c ./cspell-ext.json --local=en_gb --languageId=* stdin",
-    "test-text": "cspell -v -c ./cspell-ext.json --local=en_gb --languageId=* \"tests/*.txt\"",
-    "test": "yarn run test-dict && yarn run test-text",
-    "cspell-link": "node install.js",
-    "cspell-unlink": "node uninstall.js"
+    "test": "cspell -c cspell-ext.json *.md"
   },
   "repository": {
     "type": "git",
@@ -42,12 +33,11 @@
   },
   "homepage": "https://github.com/streetsidesoftware/cspell-dicts/blob/master/packages/en_GB#readme",
   "dependencies": {
+    "@cspell/dict-en-gb": "^1.1.27",
     "configstore": "^5.0.1"
   },
   "files": [
-    "en_GB.trie.gz",
     "cspell-ext.json",
-    "/src/hunspell/README_en_GB.txt",
     "*.js",
     "*.d.ts"
   ],

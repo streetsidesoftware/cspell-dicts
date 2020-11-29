@@ -11,11 +11,8 @@
     "./cspell-ext.json": "./cspell-ext.json"
   },
   "scripts": {
-    "build": "cspell-tools compile-trie -m 0 \"hunspell/he.dic\" -o .",
-    "test": "hunspell-reader words -m 0 -n 1000 \"hunspell/he.dic\" | cspell -v -c ./cspell-ext.json --local=he --languageId=* stdin",
-    "prepublishOnly": "yarn test",
-    "cspell-link": "node link.js",
-    "cspell-unlink": "node unlink.js"
+    "test": "cspell -v -c ./cspell-ext.json --local=en,he *.md",
+    "prepublishOnly": "yarn test"
   },
   "repository": {
     "type": "git",
@@ -37,10 +34,10 @@
   },
   "homepage": "https://github.com/streetsidesoftware/cspell-dicts/blob/master/packages/he#readme",
   "dependencies": {
+    "@cspell/dict-he": "^1.0.20",
     "configstore": "^5.0.1"
   },
   "files": [
-    "he.trie.gz",
     "cspell-ext.json",
     "*.js",
     "*.d.ts"

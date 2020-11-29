@@ -44,3 +44,5 @@ npm run build
 MIT
 
 > See Also [Source](https://github.com/Glutanimate/wordlist-medicalterms-en)
+
+<!--- cspell:ignore medicalterms -->

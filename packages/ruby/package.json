@@ -11,12 +11,8 @@
     "./cspell-ext.json": "./cspell-ext.json"
   },
   "scripts": {
-    "build": "cspell-tools compile \"ruby.txt\" -o .",
-    "test": "head -n 100 \"ruby.txt\" | cspell -v -c ./cspell-ext.json \"--local=en\" \"--languageId=ruby\" stdin",
-    "cspell-link": "node link.js",
-    "cspell-unlink": "node unlink.js",
-    "prepublishOnly": "yarn test",
-    "prepare": "yarn run build"
+    "test": "cspell -v -c ./cspell-ext.json *.md",
+    "prepublishOnly": "yarn test"
   },
   "repository": {
     "type": "git",
@@ -38,10 +34,10 @@
   },
   "homepage": "https://github.com/streetsidesoftware/cspell-dicts/blob/master/packages/ruby#readme",
   "dependencies": {
+    "@cspell/dict-ruby": "^1.0.11",
     "configstore": "^5.0.1"
   },
   "files": [
-    "ruby.txt.gz",
     "cspell-ext.json",
     "*.js",
     "*.d.ts"

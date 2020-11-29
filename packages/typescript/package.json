@@ -11,12 +11,8 @@
     "./cspell-ext.json": "./cspell-ext.json"
   },
   "scripts": {
-    "build": "cspell-tools compile \"typescript.txt\" -o .",
-    "test": "head -n 100 \"typescript.txt\" | cspell -v -c ./cspell-ext.json \"--local=*\" \"--languageId=typescript\" stdin",
-    "cspell-link": "node link.js",
-    "cspell-unlink": "node unlink.js",
-    "prepublishOnly": "yarn test",
-    "prepare": "yarn run build"
+    "test": "cspell -v -c ./cspell-ext.json *.md",
+    "prepublishOnly": "yarn test"
   },
   "repository": {
     "type": "git",
@@ -38,10 +34,10 @@
   },
   "homepage": "https://github.com/streetsidesoftware/cspell-dicts/blob/master/packages/typescript#readme",
   "dependencies": {
+    "@cspell/dict-typescript": "^1.0.15",
     "configstore": "^5.0.1"
   },
   "files": [
-    "typescript.txt.gz",
     "cspell-ext.json",
     "*.js",
     "*.d.ts"

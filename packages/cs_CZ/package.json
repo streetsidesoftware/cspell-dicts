@@ -11,11 +11,8 @@
     "./cspell-ext.json": "./cspell-ext.json"
   },
   "scripts": {
-    "build": "cross-env NODE_OPTIONS=--max_old_space_size=4096 cspell-tools compile-trie \"Czech.dic\" -o .",
-    "test": "hunspell-reader words -n 1000 \"Czech.dic\" | cspell -v -c ./cspell-ext.json --local=cs --languageId=* stdin",
-    "prepublishOnly": "yarn test",
-    "cspell-link": "node link.js",
-    "cspell-unlink": "node unlink.js"
+    "test": "cspell -v -c ./cspell-ext.json *.md",
+    "prepublishOnly": "yarn test"
   },
   "repository": {
     "type": "git",
@@ -37,10 +34,10 @@
   },
   "homepage": "https://github.com/streetsidesoftware/cspell-dicts/blob/master/packages/cs_CZ#readme",
   "dependencies": {
+    "@cspell/dict-cs-cz": "^1.0.22",
     "configstore": "^5.0.1"
   },
   "files": [
-    "Czech.trie.gz",
     "cspell-ext.json",
     "*.js",
     "*.d.ts"

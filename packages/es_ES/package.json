@@ -11,11 +11,8 @@
     "./cspell-ext.json": "./cspell-ext.json"
   },
   "scripts": {
-    "build": "cspell-tools compile-trie \"Spanish.dic\" -o .",
-    "test": "hunspell-reader words -n 1000 \"Spanish.dic\" | cspell -v -c ./cspell-ext.json --local=es --languageId=* stdin",
-    "prepublishOnly": "yarn test",
-    "cspell-link": "node link.js",
-    "cspell-unlink": "node unlink.js"
+    "test": "cspell -v -c ./cspell-ext.json *.md",
+    "prepublishOnly": "yarn test"
   },
   "repository": {
     "type": "git",
@@ -37,12 +34,11 @@
   },
   "homepage": "https://github.com/streetsidesoftware/cspell-dicts/blob/master/packages/es_ES#readme",
   "dependencies": {
+    "@cspell/dict-es-es": "^1.0.27",
     "configstore": "^5.0.1"
   },
   "files": [
-    "Spanish.trie.gz",
     "cspell-ext.json",
-    "Spanish.txt",
     "*.js",
     "*.d.ts"
   ]

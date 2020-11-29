@@ -52,3 +52,5 @@ npm run build
 ## License
 
 WTFPL
+
+<!--- cspell:ignore WTFPL -->

@@ -48,3 +48,5 @@ The resources for this dictionary can be obtained from the [titoBouzout reposito
 MIT
 
 > Some packages may have other licenses included.
+
+<!--- cspell:ignore Bouzout -->

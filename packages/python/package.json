@@ -11,14 +11,8 @@
     "./cspell-ext.json": "./cspell-ext.json"
   },
   "scripts": {
-    "build": "cspell-tools compile \"python.txt\" -o .",
-    "test-dictionary": "head -n 1000 \"python.txt\" | cspell -v -c ./cspell-ext.json --local=* --languageId=python stdin",
-    "test-samples": "cspell -v -c ./cspell-ext.json \"samples/**/*.py\"",
-    "test": "yarn run test-dictionary && yarn run test-samples",
-    "cspell-link": "node link.js",
-    "cspell-unlink": "node unlink.js",
-    "prepublishOnly": "yarn test",
-    "prepare": "yarn run build"
+    "test": "cspell -v -c ./cspell-ext.json *.md",
+    "prepublishOnly": "yarn test"
   },
   "repository": {
     "type": "git",
@@ -40,10 +34,10 @@
   },
   "homepage": "https://github.com/streetsidesoftware/cspell-dicts/blob/master/packages/python#readme",
   "dependencies": {
+    "@cspell/dict-python": "^1.0.30",
     "configstore": "^5.0.1"
   },
   "files": [
-    "python.txt.gz",
     "cspell-ext.json",
     "*.js",
     "*.d.ts"
