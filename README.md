@@ -4,53 +4,53 @@ Various [cspell](https://github.com/streetsidesoftware/cspell) dictionaries. Eac
 
 ## Language Dictionaries
 
-- [Catalan](packages/ca)
-- [Czech](packages/cs_CZ)
-- [Danish](packages/da_DK)
-- [Dutch](packages/nl_NL)
-- [English - American](packages/en_US) (Included by default in cspell and [VS Code Spell Checker](https://github.com/Jason-Rev/vscode-spell-checker))
-- [English - British](packages/en_GB) (Included by default in cspell and VS Code Spell Checker)
-- [Esperanto](packages/eo)
-- [French](packages/fr_FR)
-- [German](packages/de_DE)
-- [Greek](packages/el)
-- [Hebrew](packages/he)
-- [Italian](packages/it_IT)
-- [Persian](packages/fa_IR)
-- [Polish](packages/pl_PL)
-- [Portuguese - Brazilian](packages/pt_BR)
-- [Portuguese](packages/pt_PT)
-- [Russian](packages/ru_RU) (Small)
-- [Russian](packages/russian) (Large)
-- [Spanish](packages/es_ES)
-- [Swedish](packages/sv)
-- [Turkish](packages/tr_TR)
-- [Ukrainian](packages/uk_UA)
-- [Vietnamese](packages/vi_VN)
+- [Catalan](dictionaries/ca)
+- [Czech](dictionaries/cs_CZ)
+- [Danish](dictionaries/da_DK)
+- [Dutch](dictionaries/nl_NL)
+- [English - American](dictionaries/en_US) (Included by default in cspell and [VS Code Spell Checker](https://github.com/Jason-Rev/vscode-spell-checker))
+- [English - British](dictionaries/en_GB) (Included by default in cspell and VS Code Spell Checker)
+- [Esperanto](dictionaries/eo)
+- [French](dictionaries/fr_FR)
+- [German](dictionaries/de_DE)
+- [Greek](dictionaries/el)
+- [Hebrew](dictionaries/he)
+- [Italian](dictionaries/it_IT)
+- [Persian](dictionaries/fa_IR)
+- [Polish](dictionaries/pl_PL)
+- [Portuguese - Brazilian](dictionaries/pt_BR)
+- [Portuguese](dictionaries/pt_PT)
+- [Russian](dictionaries/ru_RU) (Small)
+- [Russian](dictionaries/russian) (Large)
+- [Spanish](dictionaries/es_ES)
+- [Swedish](dictionaries/sv)
+- [Turkish](dictionaries/tr_TR)
+- [Ukrainian](dictionaries/uk_UA)
+- [Vietnamese](dictionaries/vi_VN)
 
 ## Programming Dictionaries
 
-- [bash](packages/bash) - Bash/Shell scripts
-- [cpp](packages/cpp) - C and C++
-- [Django](packages/django) - Django framework function names
-- [Elixir](packages/elixir)
-- [Go](packages/golang)
-- [Java](packages/java)
-- [LaTex](packages/latex)
-- [Lua](packages/lua)
-- [PHP](packages/php)
-- [Python](packages/python)
-- [Ruby](packages/ruby)
-- [Rust](packages/rust)
-- [Scala](packages/scala)
+- [bash](dictionaries/bash) - Bash/Shell scripts
+- [cpp](dictionaries/cpp) - C and C++
+- [Django](dictionaries/django) - Django framework function names
+- [Elixir](dictionaries/elixir)
+- [Go](dictionaries/golang)
+- [Java](dictionaries/java)
+- [LaTex](dictionaries/latex)
+- [Lua](dictionaries/lua)
+- [PHP](dictionaries/php)
+- [Python](dictionaries/python)
+- [Ruby](dictionaries/ruby)
+- [Rust](dictionaries/rust)
+- [Scala](dictionaries/scala)
 
 ## Specialized Dictionaries
 
-- [Cryptocurrencies](packages/cryptocurrencies)
-- [HTML Symbol Entities](packages/html-symbol-entities)
-- [lorem ipsum](packages/lorem-ipsum)
-- [Medical Terms](packages/medicalterms)
-- [Scientific Terms](packages/scientific_terms_US)
+- [Cryptocurrencies](dictionaries/cryptocurrencies)
+- [HTML Symbol Entities](dictionaries/html-symbol-entities)
+- [lorem ipsum](dictionaries/lorem-ipsum)
+- [Medical Terms](dictionaries/medicalterms)
+- [Scientific Terms](dictionaries/scientific_terms_US)
 
 ## Contributing
 
@@ -75,7 +75,7 @@ The [Yeoman](http://yeoman.io/) script can help you create the dictionary templa
 In the `cspell-dicts` repository root.
 
 ```sh
-yarn run create-dictionary -- <name> <path/to/source/words>
+yarn create-dictionary <name> <path/to/source/words>
 ```
 
 Yeoman will ask you a series of questions:
@@ -104,7 +104,7 @@ Please update `README.md` and `LICENSE` files as necessary.
 From the dictionary directory
 
 ```sh
-npm run cspell-link
+cspell link add ./cspell-ext.json
 ```
 
 This will add an entry in the cspell global config to import the `cspell-ext.json` file in the dictionary directory.
@@ -114,7 +114,9 @@ Use either VS Code or cspell to verify that files spell check correctly.
 ##### Verify with `cspell`
 
 - Install `cspell`: `npm install -g cspell`
-- Check a file: `cspell check path/to/source/file.ext`
+- Check the global links: `cspell link list`
+- Check a file: `cspell check <path/to/source/file.ext> [--local=<locale>] [--language-id=<filetype>]`
+  Example: `cspell check README.md --local=en,es` -- to check the readme file assuming English and Spanish words.
 
 Checking a file will show you what has been ignored (gray) as well as what is considered an error (red):
 
@@ -125,17 +127,23 @@ Checking a file will show you what has been ignored (gray) as well as what is co
 Remember to unlink when you are done:
 
 ```sh
-npm run cspell-unlink
+cspell link remove ./cspell-ext.json
 ```
 
 #### npm Global Install
 
-From the dictionary directory.
+From the dictionary directory:
 
 ```sh
 npm install -g
 ```
 
+From NPM repository:
+
+```sh
+npm install -g @cspell/dict-<name>
+```
+
 Then run the link command found in the dictionary `README.md` file.
-It has the following pattern: `cspell-dict-<name>-link`.
-To unlink: `cspell-dict-<name>-unlink`
+It has the following pattern: `cspell link add @cspell/dict-<name>`.
+To unlink: `cspell link remove @cspell/dict-<name>`

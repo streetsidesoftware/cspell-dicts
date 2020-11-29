@@ -8,7 +8,7 @@ const yosay = require('yosay');
 const path = require('path');
 const mkdirp = require('mkdirp');
 
-const packagesDir = 'packages';
+const dictionaryDir = 'dictionaries';
 
 module.exports = class extends (
     Generator
@@ -71,14 +71,14 @@ module.exports = class extends (
                     type: 'input',
                     name: 'local',
                     message:
-                        'Language local, example: "en,en-US" for English and English US, "fr" for French, or "*" for all locals (programming language dictionaries)',
+                        'Language locale, example: "en,en-US" for English and English US, "fr" for French, or use "*" for programming language dictionaries.',
                     default: '*',
                 },
                 {
                     type: 'input',
                     name: 'languageId',
                     message:
-                        'Programing languageID, i.e. "typescript", "php", "go", or "*" for any.',
+                        'Programing languageID/filetype, i.e. "typescript", "php", "go", or "*" for any.',
                     default: '*',
                 },
                 {
@@ -93,7 +93,11 @@ module.exports = class extends (
                     type: 'confirm',
                     name: 'doBuild',
                     message: 'Compile Dictionary?',
-                    default: this.fs.exists(this.options.source),
+                    default:
+                        this.fs.exists(this.options.source) &&
+                        ['.dic', '.aff'].includes(
+                            path.extname(this.options.source)
+                        ),
                 },
             ]).then((depProps) => {
                 depProps.fileExt = depProps.useTrie ? 'trie.gz' : 'txt.gz';
@@ -114,22 +118,39 @@ module.exports = class extends (
                 this.log(srcFile);
 
                 if (this.fs.exists(srcFile)) {
-                    props.filesToCopy.push(srcFile);
-                    if (path.extname(srcFile) === '.dic') {
-                        props.filesToCopy.push(
-                            path.join(
-                                path.dirname(srcFile),
-                                path.basename(srcFile, '.dic') + '.aff'
-                            )
+                    const ext = path.extname(srcFile);
+                    const srcFiles = [];
+                    if (ext === '.dic' || ext === '.aff') {
+                        const srcAff = path.join(
+                            path.dirname(srcFile),
+                            path.basename(srcFile, ext) + '.aff'
                         );
+                        const srcDic = path.join(
+                            path.dirname(srcFile),
+                            path.basename(srcFile, ext) + '.dic'
+                        );
+                        srcFiles.push(srcAff);
+                        srcFiles.push(srcDic);
+                        props.srcFileReader = 'hunspell-reader words -n 1000';
+                        props.prepareScript = 'echo OK';
+                    } else {
+                        srcFiles.push(srcFile);
+                        props.srcFileReader = 'head -n 1000';
+                        props.prepareScript = 'yarn run build';
                     }
+                    srcFiles.forEach((srcFile) =>
+                        props.filesToCopy.push([
+                            srcFile,
+                            path.join('src', path.basename(srcFile)),
+                        ])
+                    );
                 }
 
-                depProps.srcFile = path.basename(srcFile);
+                depProps.srcFile = 'src/' + path.basename(srcFile);
                 props.packageName = props.name
                     .toLowerCase()
                     .replace(/[^a-z0-9-]/g, '-');
-                props.fullPackageName = 'cspell-dict-' + props.packageName;
+                props.fullPackageName = '@cspell/dict-' + props.packageName;
 
                 this.props = Object.assign({}, props, depProps);
             });
@@ -153,22 +174,27 @@ module.exports = class extends (
                 this.props
             );
         });
-        this.props.filesToCopy.forEach((name) => {
-            this.fs.copy(name, this.destinationPath(path.basename(name)));
-        });
+        this.props.filesToCopy
+            .map((toCopy) =>
+                typeof toCopy === 'string'
+                    ? [toCopy, path.basename(toCopy)]
+                    : toCopy
+            )
+            .map((toCopy) => [toCopy[0], this.destinationPath(toCopy[1])])
+            .forEach(([fromFile, toFile]) => this.fs.copy(fromFile, toFile));
     }
 
     default() {
         if (path.basename(this.destinationPath()) !== this.props.name) {
             this.log('Creating Folder: ' + this.props.name);
-            const dir = path.join(packagesDir, this.props.name);
+            const dir = path.join(dictionaryDir, this.props.name);
             mkdirp(this.destinationPath(dir));
             this.destinationRoot(this.destinationPath(dir));
         }
     }
 
     install() {
-        this.npmInstall();
+        this.spawnCommand('yarn');
     }
 
     end() {
