@@ -10,9 +10,7 @@ const mkdirp = require('mkdirp');
 
 const dictionaryDir = 'dictionaries';
 
-module.exports = class extends (
-    Generator
-) {
+module.exports = class extends Generator {
     constructor(args, opts) {
         super(args, opts);
 
