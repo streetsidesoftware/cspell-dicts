@@ -16,10 +16,11 @@
     "flagWords": [],
     "maxNumberOfProblems": 1000,
     "ignorePaths": [
-        "**/node_modules/**",
-        "**/node_modules/package*.json",
+        ".vscode/**",
         "**/.git/**",
-        ".vscode"
+        "**/*.aff",
+        "**/*.dic",
+        "**/node_modules/**"
     ],
     "import": [
         "./packages/es_ES/cspell-ext.json",
