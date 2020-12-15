@@ -2087,14 +2087,6 @@ cspell-glob@^5.0.3:
   dependencies:
     micromatch "^4.0.2"
 
-cspell-io@^5.0.2:
-  version "5.0.2"
-  resolved "https://registry.npmjs.org/cspell-io/-/cspell-io-5.0.2.tgz#e45880acb93e6a7cae77083498ae18378bf266ca"
-  integrity sha512-EGL46fDtV33iAkUja3fXo4AxK5xX4K04CzDJXJfvc8h25iiQOlqM4i4R1S2huGgMLcvs7OZRHjneTTiaamN67w==
-  dependencies:
-    iconv-lite "^0.6.2"
-    iterable-to-stream "^1.0.1"
-
 cspell-io@^5.0.3:
   version "5.0.3"
   resolved "https://registry.yarnpkg.com/cspell-io/-/cspell-io-5.0.3.tgz#1b8e14b8b1eb18ab3f80c666c2262789f230165f"
@@ -2154,26 +2146,18 @@ cspell-lib@^5.0.3:
     vscode-uri "^2.1.2"
 
 cspell-tools@^5.0.1:
-  version "5.0.2"
-  resolved "https://registry.npmjs.org/cspell-tools/-/cspell-tools-5.0.2.tgz#1462f88ba23b3aeebf62c93d331de682d182a062"
-  integrity sha512-7hv/9GL6d7gpzYK7cVccNdj/dxHxAcNtaRhOLlut2vKVBORvvsrmG9ghwxJkhh/AA+YO7j5qdsgSHE9C42ffAw==
+  version "5.0.3"
+  resolved "https://registry.yarnpkg.com/cspell-tools/-/cspell-tools-5.0.3.tgz#61ae57b420cdc9098ac005bc52b5d0df93de75d0"
+  integrity sha512-YUs4MNOSJTd1iwYiuIv71d6P+5kMM9l7hPV1DeL4fMKCNIR69tJUF1SJudIaRwmjaI/Vsy1AeEoXUZXJqvBL4w==
   dependencies:
     commander "^6.2.0"
-    cspell-io "^5.0.2"
-    cspell-trie-lib "^5.0.2"
-    cspell-util-bundle "^5.0.2"
+    cspell-io "^5.0.3"
+    cspell-trie-lib "^5.0.3"
+    cspell-util-bundle "^5.0.3"
     fs-extra "^9.0.1"
     gensequence "^3.1.1"
     glob "^7.1.6"
     hunspell-reader "^3.2.0"
-
-cspell-trie-lib@^5.0.2:
-  version "5.0.2"
-  resolved "https://registry.npmjs.org/cspell-trie-lib/-/cspell-trie-lib-5.0.2.tgz#a4c5999d0bb1d472286fcfda482b8beb5435affa"
-  integrity sha512-BflXiFVnQKpWk5MMAY25/M8ctZZnzg5CN4TayXN3qcTEamEGYXHKG68eJupVkllHQqkn1YHHGd/EW80lMvi+AA==
-  dependencies:
-    fs-extra "^9.0.1"
-    gensequence "^3.1.1"
 
 cspell-trie-lib@^5.0.3:
   version "5.0.3"
@@ -2182,11 +2166,6 @@ cspell-trie-lib@^5.0.3:
   dependencies:
     fs-extra "^9.0.1"
     gensequence "^3.1.1"
-
-cspell-util-bundle@^5.0.2:
-  version "5.0.2"
-  resolved "https://registry.npmjs.org/cspell-util-bundle/-/cspell-util-bundle-5.0.2.tgz#4d0a09e8d01937981592fb9b531efa4e9ef00dfa"
-  integrity sha512-Pjiqip+goudD5IAH4LyLj4Sac1YYxf6Nk43s8iIC2wty+XjrijNpIRnwN4jvsR3Ew9DT57B7JDp7ZO2BJLM5+Q==
 
 cspell-util-bundle@^5.0.3:
   version "5.0.3"
