@@ -2,6 +2,9 @@
   "name": "@cspell/dict-mnemonics",
   "version": "1.0.1",
   "description": "i86 Mnemonics dictionary for cspell",
+  "publishConfig": {
+    "access": "public"
+  },
   "exports": {
     ".": "./cspell-ext.json",
     "./cspell": "./cspell-ext.json",
