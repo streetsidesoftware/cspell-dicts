@@ -11,8 +11,7 @@
     "create-dictionary": "yo cspell-dicts",
     "clean": "rimraf \"packages/*/*.txt.gz\" \"dictionaries/*/*.txt.gz\"",
     "prepare": "lerna exec \"cp ../../generator-cspell-dicts/generators/app/templates/*.js ./ && cp ../../generator-cspell-dicts/generators/app/templates/*.ts ./\" --scope=cspell-dict* && lerna run prepare",
-    "pub-version": "yarn run checksum && lerna version --conventional-commits",
-    "pub-lerna": "yarn run pub-version && lerna publish from-git",
+    "pub-lerna": "lerna publish --conventional-commits",
     "pub": "yarn run check-dirty && yarn run prepare && yarn test && yarn run pub-lerna",
     "update-packages": "yarn upgrade"
   },
