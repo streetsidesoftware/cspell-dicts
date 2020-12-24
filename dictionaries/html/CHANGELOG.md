@@ -3,6 +3,18 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+## [1.1.5](https://github.com/streetsidesoftware/cspell-dicts/compare/@cspell/dict-html@1.1.4...@cspell/dict-html@1.1.5) (2020-12-24)
+
+
+### Bug Fixes
+
+* Add longdesc to HTML dict ([#329](https://github.com/streetsidesoftware/cspell-dicts/issues/329)) ([bfbb57a](https://github.com/streetsidesoftware/cspell-dicts/commit/bfbb57a039b456d99e87ce5231a5fe8633a84400))
+* Update softwareTerms.txt ([#308](https://github.com/streetsidesoftware/cspell-dicts/issues/308)) ([49b5ce4](https://github.com/streetsidesoftware/cspell-dicts/commit/49b5ce4a2436f3c99969d6425128d55f84c8a7fc)), closes [#194](https://github.com/streetsidesoftware/cspell-dicts/issues/194)
+
+
+
+
+
 ## [1.1.4](https://github.com/streetsidesoftware/cspell-dicts/compare/@cspell/dict-html@1.1.3...@cspell/dict-html@1.1.4) (2020-11-28)
 
 **Note:** Version bump only for package @cspell/dict-html
