@@ -3,6 +3,9 @@
   "version": "1.0.0",
   "description": "<%= description %> -- Private until verified",
   "private": true,
+  "publishConfig": {
+    "access": "public"
+  },
   "exports": {
     ".": "./cspell-ext.json",
     "./cspell": "./cspell-ext.json",
