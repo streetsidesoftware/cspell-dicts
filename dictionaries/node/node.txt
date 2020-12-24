@@ -546,7 +546,7 @@ O_NOFOLLOW	Flag indicating that the open should fail if the path is a symbolic l
 O_SYNC	Flag indicating that the file is opened for synchronous I/O.
 O_SYMLINK	Flag indicating to open the symbolic link itself rather than the resource it is pointing to.
 O_DIRECT	When set, an attempt will be made to minimize caching effects of file I/O.
-O_NONBLOCK	Flag indicating to open the file in nonblocking mode when possible.
+O_NONBLOCK	Flag indicating to open the file in non-blocking mode when possible.
 File Type Constants#
 
 The following constants are meant for use with the fs.Stats object's mode property for determining a file's type.
@@ -1242,9 +1242,7 @@ zlib.inflateRawSync(buf[, options])
 zlib.unzip(buf[, options], callback)
 zlib.unzipSync(buf[, options])
 
-acutal
 ADDRGETNETWORKPARAMS
-algorith
 ANYCONNECT
 BADFAMILY
 BADFLAGS
@@ -1262,7 +1260,6 @@ CRYPTOPRO
 ctime
 curr
 dhparam
-disconnet
 dstpath
 dtrace
 EADDRNOTAVAIL
@@ -1330,7 +1327,6 @@ ETXTBSY
 EWOULDBLOCK
 EXDEV
 FORMERR
-initalizing
 listbreakpoints
 LOADIPHLPAPI
 malloced
@@ -1344,7 +1340,6 @@ NOTFOUND
 NOTIMP
 NOTINITIALIZED
 OCSP
-paramter
 PKEY
 prepended
 rdev
