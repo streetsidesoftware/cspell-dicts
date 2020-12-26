@@ -3,6 +3,14 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+## [1.1.1](https://github.com/streetsidesoftware/cspell-dicts/compare/cspell-dict-vi-vn@1.1.0...cspell-dict-vi-vn@1.1.1) (2020-12-26)
+
+**Note:** Version bump only for package cspell-dict-vi-vn
+
+
+
+
+
 # [1.1.0](https://github.com/streetsidesoftware/cspell-dicts/compare/cspell-dict-vi-vn@1.0.20...cspell-dict-vi-vn@1.1.0) (2020-12-24)
 
 

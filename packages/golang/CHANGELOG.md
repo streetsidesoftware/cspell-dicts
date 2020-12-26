@@ -3,6 +3,14 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+## [1.2.1](https://github.com/streetsidesoftware/cspell-dicts/compare/cspell-dict-golang@1.2.0...cspell-dict-golang@1.2.1) (2020-12-26)
+
+**Note:** Version bump only for package cspell-dict-golang
+
+
+
+
+
 # [1.2.0](https://github.com/streetsidesoftware/cspell-dicts/compare/cspell-dict-golang@1.1.23...cspell-dict-golang@1.2.0) (2020-12-24)
 
 
