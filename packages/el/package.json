@@ -11,7 +11,7 @@
     "./cspell-ext.json": "./cspell-ext.json"
   },
   "scripts": {
-    "test": "cspell -v -c ./cspell-ext.json *.md",
+    "test": "cspell -v -c ./cspell-ext.json *.md -e CHANGELOG.md",
     "prepublishOnly": "yarn test"
   },
   "repository": {
