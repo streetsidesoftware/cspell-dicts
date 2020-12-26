@@ -3,6 +3,17 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+## [1.0.32](https://github.com/streetsidesoftware/cspell-dicts/compare/@cspell/dict-python@1.0.31...@cspell/dict-python@1.0.32) (2020-12-26)
+
+
+### Bug Fixes
+
+* Add pytest to Python dictionaries ([#331](https://github.com/streetsidesoftware/cspell-dicts/issues/331)) ([7cd7977](https://github.com/streetsidesoftware/cspell-dicts/commit/7cd7977b56710d89ee9972fea72a0f36453eb09d))
+
+
+
+
+
 ## [1.0.31](https://github.com/streetsidesoftware/cspell-dicts/compare/@cspell/dict-python@1.0.30...@cspell/dict-python@1.0.31) (2020-12-24)
 
 
