@@ -21,8 +21,7 @@ module.exports = class extends Generator {
         });
 
         this.argument('source', {
-            desc:
-                'Source file for the dictionary. It will be copied to into the local dictionary folder.',
+            desc: 'Source file for the dictionary. It will be copied to into the local dictionary folder.',
             type: String,
             required: false,
             default: '',
@@ -31,9 +30,7 @@ module.exports = class extends Generator {
 
     prompting() {
         // Have Yeoman greet the user.
-        this.log(
-            yosay('Welcome to the ' + chalk.red('cspell-dicts') + ' generator!')
-        );
+        this.log(yosay('Welcome to the ' + chalk.red('cspell-dicts') + ' generator!'));
 
         const namePrompts = [
             {
@@ -56,8 +53,7 @@ module.exports = class extends Generator {
                     type: 'input',
                     name: 'description',
                     message: 'Description',
-                    default:
-                        title(props.friendlyName) + ' dictionary for cspell.',
+                    default: title(props.friendlyName) + ' dictionary for cspell.',
                 },
                 {
                     type: 'input',
@@ -75,17 +71,14 @@ module.exports = class extends Generator {
                 {
                     type: 'input',
                     name: 'languageId',
-                    message:
-                        'Programing languageID/filetype, i.e. "typescript", "php", "go", or "*" for any.',
+                    message: 'Programing languageID/filetype, i.e. "typescript", "php", "go", or "*" for any.',
                     default: '*',
                 },
                 {
                     type: 'confirm',
                     name: 'useTrie',
                     message: 'Store as Trie',
-                    default: ['.dic', '.aff'].includes(
-                        path.extname(this.options.source)
-                    ),
+                    default: ['.dic', '.aff'].includes(path.extname(this.options.source)),
                 },
                 {
                     type: 'confirm',
@@ -93,23 +86,14 @@ module.exports = class extends Generator {
                     message: 'Compile Dictionary?',
                     default:
                         this.fs.exists(this.options.source) &&
-                        ['.dic', '.aff'].includes(
-                            path.extname(this.options.source)
-                        ),
+                        ['.dic', '.aff'].includes(path.extname(this.options.source)),
                 },
             ]).then((depProps) => {
                 depProps.fileExt = depProps.useTrie ? 'trie.gz' : 'txt.gz';
-                depProps.command = depProps.useTrie
-                    ? 'compile-trie'
-                    : 'compile';
+                depProps.command = depProps.useTrie ? 'compile-trie' : 'compile';
 
                 depProps.dstFileName =
-                    path.basename(
-                        depProps.srcFile,
-                        path.extname(depProps.srcFile)
-                    ) +
-                    '.' +
-                    depProps.fileExt;
+                    path.basename(depProps.srcFile, path.extname(depProps.srcFile)) + '.' + depProps.fileExt;
 
                 props.filesToCopy = [];
                 const srcFile = path.resolve(depProps.srcFile);
@@ -119,14 +103,8 @@ module.exports = class extends Generator {
                     const ext = path.extname(srcFile);
                     const srcFiles = [];
                     if (ext === '.dic' || ext === '.aff') {
-                        const srcAff = path.join(
-                            path.dirname(srcFile),
-                            path.basename(srcFile, ext) + '.aff'
-                        );
-                        const srcDic = path.join(
-                            path.dirname(srcFile),
-                            path.basename(srcFile, ext) + '.dic'
-                        );
+                        const srcAff = path.join(path.dirname(srcFile), path.basename(srcFile, ext) + '.aff');
+                        const srcDic = path.join(path.dirname(srcFile), path.basename(srcFile, ext) + '.dic');
                         srcFiles.push(srcAff);
                         srcFiles.push(srcDic);
                         props.srcFileReader = 'hunspell-reader words -n 1000';
@@ -137,17 +115,12 @@ module.exports = class extends Generator {
                         props.prepareScript = 'yarn run build';
                     }
                     srcFiles.forEach((srcFile) =>
-                        props.filesToCopy.push([
-                            srcFile,
-                            path.join('src', path.basename(srcFile)),
-                        ])
+                        props.filesToCopy.push([srcFile, path.join('src', path.basename(srcFile))])
                     );
                 }
 
                 depProps.srcFile = 'src/' + path.basename(srcFile);
-                props.packageName = props.name
-                    .toLowerCase()
-                    .replace(/[^a-z0-9-]/g, '-');
+                props.packageName = props.name.toLowerCase().replace(/[^a-z0-9-]/g, '-');
                 props.fullPackageName = '@cspell/dict-' + props.packageName;
 
                 this.props = Object.assign({}, props, depProps);
@@ -156,28 +129,14 @@ module.exports = class extends Generator {
     }
 
     writing() {
-        const files = [
-            'package.json',
-            'README.md',
-            'CHANGELOG.md',
-            'cspell-ext.json',
-            'LICENSE',
-        ];
+        const files = ['package.json', 'README.md', 'CHANGELOG.md', 'cspell-ext.json', 'LICENSE'];
         files.forEach((fromTo) => {
             fromTo = typeof fromTo === 'string' ? [fromTo, fromTo] : fromTo;
             const [src, dst] = fromTo;
-            this.fs.copyTpl(
-                this.templatePath(src),
-                this.destinationPath(dst),
-                this.props
-            );
+            this.fs.copyTpl(this.templatePath(src), this.destinationPath(dst), this.props);
         });
         this.props.filesToCopy
-            .map((toCopy) =>
-                typeof toCopy === 'string'
-                    ? [toCopy, path.basename(toCopy)]
-                    : toCopy
-            )
+            .map((toCopy) => (typeof toCopy === 'string' ? [toCopy, path.basename(toCopy)] : toCopy))
             .map((toCopy) => [toCopy[0], this.destinationPath(toCopy[1])])
             .forEach(([fromFile, toFile]) => this.fs.copy(fromFile, toFile));
     }
