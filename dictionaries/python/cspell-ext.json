@@ -24,12 +24,7 @@
             // Apply settings
             "allowCompoundWords": true,
             "dictionaries": ["python"],
-            "ignoreRegExpList": [
-                "binary_string",
-                "f_string",
-                "unicode_string",
-                "raw_string"
-            ],
+            "ignoreRegExpList": ["binary_string", "f_string", "unicode_string", "raw_string"],
             "patterns": [
                 // Patterns to be ignored
                 { "name": "binary_string", "pattern": "\\bb'" },
