@@ -3,6 +3,17 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+## [1.0.24](https://github.com/streetsidesoftware/cspell-dicts/compare/@cspell/dict-software-terms@1.0.23...@cspell/dict-software-terms@1.0.24) (2021-01-06)
+
+
+### Bug Fixes
+
+* Add latest node API ([436873f](https://github.com/streetsidesoftware/cspell-dicts/commit/436873f95d42fe089b857b6292406976670446c2))
+
+
+
+
+
 ## [1.0.23](https://github.com/streetsidesoftware/cspell-dicts/compare/@cspell/dict-software-terms@1.0.22...@cspell/dict-software-terms@1.0.23) (2020-12-24)
 
 
