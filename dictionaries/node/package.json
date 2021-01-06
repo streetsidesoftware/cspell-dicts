@@ -11,8 +11,11 @@
     "./cspell-ext.json": "./cspell-ext.json"
   },
   "scripts": {
-    "build": "cspell-tools compile \"node.txt\" -o .",
-    "test": "head -n 100 \"node.txt\" | cspell -v -c ./cspell-ext.json \"--local=*\" \"--languageId=javascript\" stdin",
+    "build-node": "node src/extract-api.js src/api/*.md",
+    "build": "cspell-tools compile node.txt additional_words.txt --merge node -o .",
+    "test": "yarn test-dict && yarn test-old",
+    "test-dict": "head -n 500 \"node.txt\" | cspell -v -c ./cspell-ext.json \"--local=*\" \"--languageId=javascript\" stdin",
+    "test-old": "cspell -v -c ./cspell-ext.json \"--local=en\" \"--languageId=javascript\" src/node-old.txt",
     "prepublishOnly": "yarn test",
     "prepare": "yarn run build"
   },
