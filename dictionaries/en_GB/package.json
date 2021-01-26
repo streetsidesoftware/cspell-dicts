@@ -17,8 +17,8 @@
     "conditional-build": "yarn run --silent checksum || yarn run build",
     "gen-checksum": "cat source-files.txt source-dependencies.txt | xargs shasum > checksum.txt",
     "prepublishOnly": "yarn test",
-    "test-dict": "head -n 1000 \"./src/wordsEnGb.txt\" | cspell -v -c ./cspell-ext.json --local=en_gb --languageId=* stdin",
-    "test-text": "cspell -v -c ./cspell-ext.json --local=en_gb --languageId=* \"tests/*.txt\"",
+    "test-dict": "head -n 1000 \"./src/wordsEnGb.txt\" | cspell -v -c ./cspell-ext.json --local=en_gb \"--languageId=*\" stdin",
+    "test-text": "cspell -v -c ./cspell-ext.json --local=en_gb \"--languageId=*\" \"tests/*.txt\"",
     "test": "yarn run test-dict && yarn run test-text",
     "cspell-link": "node install.js",
     "cspell-unlink": "node uninstall.js"

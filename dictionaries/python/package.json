@@ -12,7 +12,7 @@
   },
   "scripts": {
     "build": "cspell-tools compile \"python.txt\" -o .",
-    "test-dictionary": "head -n 1000 \"python.txt\" | cspell -v -c ./cspell-ext.json --local=* --languageId=python stdin",
+    "test-dictionary": "head -n 1000 \"python.txt\" | cspell -v -c ./cspell-ext.json \"--local=*\" --languageId=python stdin",
     "test-samples": "cspell -v -c ./cspell-ext.json \"samples/**/*.py\"",
     "test": "yarn run test-dictionary && yarn run test-samples",
     "prepublishOnly": "yarn test",

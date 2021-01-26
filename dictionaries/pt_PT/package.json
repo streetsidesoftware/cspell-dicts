@@ -12,7 +12,7 @@
   },
   "scripts": {
     "build": "cspell-tools compile-trie \"Portuguese-European.dic\" -o .",
-    "test": "hunspell-reader words -n 1000 \"Portuguese-European.dic\" | cspell -v -c ./cspell-ext.json --local=pt --languageId=* stdin",
+    "test": "hunspell-reader words -n 1000 \"Portuguese-European.dic\" | cspell -v -c ./cspell-ext.json --local=pt \"--languageId=*\" stdin",
     "prepublishOnly": "yarn test"
   },
   "repository": {

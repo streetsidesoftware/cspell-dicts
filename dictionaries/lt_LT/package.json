@@ -12,7 +12,7 @@
   },
   "scripts": {
     "build": "cross-env NODE_OPTIONS=--max_old_space_size=12288 cspell-tools compile-trie \"lt_LT.dic\" -o .",
-    "test": "hunspell-reader words -n 1000 \"lt_LT.dic\" | cspell -v -c ./cspell-ext.json --local=lt --languageId=* stdin",
+    "test": "hunspell-reader words -n 1000 \"lt_LT.dic\" | cspell -v -c ./cspell-ext.json --local=lt \"--languageId=*\" stdin",
     "prepublishOnly": "yarn test"
   },
   "repository": {

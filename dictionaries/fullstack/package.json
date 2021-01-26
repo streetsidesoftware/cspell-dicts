@@ -12,7 +12,7 @@
   },
   "scripts": {
     "build": "cspell-tools compile \"fullstack.txt\" -o .",
-    "test": "head -n 100 \"fullstack.txt\" | cspell -v -c ./cspell-ext.json --local=* --languageId=php stdin",
+    "test": "head -n 100 \"fullstack.txt\" | cspell -v -c ./cspell-ext.json \"--local=*\" --languageId=php stdin",
     "prepublishOnly": "yarn test",
     "prepare": "yarn run build"
   },

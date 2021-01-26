@@ -12,7 +12,7 @@
   },
   "scripts": {
     "build": "cspell-tools compile-trie \"vi.dic\" -o .",
-    "test": "hunspell-reader words -n 1000 \"vi.dic\" | cspell -v -c ./cspell-ext.json --local=vi --languageId=* stdin",
+    "test": "hunspell-reader words -n 1000 \"vi.dic\" | cspell -v -c ./cspell-ext.json --local=vi \"--languageId=*\" stdin",
     "prepublishOnly": "yarn test"
   },
   "repository": {

@@ -12,7 +12,7 @@
   },
   "scripts": {
     "build": "cross-env NODE_OPTIONS=--max_old_space_size=4096 cspell-tools compile-trie \"German_de_DE.dic\" -o .",
-    "test": "hunspell-reader words -n 1000 \"German_de_DE.dic\" | cspell -v -c ./cspell-ext.json --local=de --languageId=* stdin",
+    "test": "hunspell-reader words -n 1000 \"German_de_DE.dic\" | cspell -v -c ./cspell-ext.json --local=de \"--languageId=*\" stdin",
     "prepublishOnly": "yarn test"
   },
   "repository": {

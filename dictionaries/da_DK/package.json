@@ -12,7 +12,7 @@
   },
   "scripts": {
     "build": "cspell-tools compile-trie \"da_DK.dic\" -o .",
-    "test": "hunspell-reader words -n 1000 \"da_DK.dic\" | cspell -v -c ./cspell-ext.json --local=da --languageId=* stdin",
+    "test": "hunspell-reader words -n 1000 \"da_DK.dic\" | cspell -v -c ./cspell-ext.json --local=da \"--languageId=*\" stdin",
     "prepublishOnly": "yarn test"
   },
   "repository": {
