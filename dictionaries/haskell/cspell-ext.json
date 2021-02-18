@@ -28,11 +28,17 @@
             // Adding patterns to the "includeRegExpList" to only include matching patterns
             "includeRegExpList": [],
             // To exclude patterns, add them to "ignoreRegExpList"
-            "ignoreRegExpList": ["'"],
+            "ignoreRegExpList": ["separators"],
             // regex patterns than can be used with ignoreRegExpList or includeRegExpList
             // Example: "pattern": [{ "name": "mdash", "pattern": "&mdash;" }]
             // This could be included in "ignoreRegExpList": ["mdash"]
-            "patterns": [],
+            "patterns": [
+                {
+                    "name": "separators",
+                    "pattern": "/(?<!n(?='t\\b))(?<!\\w(?='s\\b))(?<!d(?='ve\\b))(?<!\\w(?='d\\b))(?<!\\w(?='re\\b))'/gi",
+                    "description": "Ignore single quote when it is not a contraction."
+                }
+            ],
             // List of dictionaries to enable by name in `dictionaryDefinitions`
             "dictionaries": ["haskell"],
             // Dictionary definitions can also be supplied here. They are only used iff "languageId" and "local" match.
