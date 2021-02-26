@@ -1,5 +1,6 @@
-// cSpell Settings
 {
+    "$schema": "https://raw.githubusercontent.com/streetsidesoftware/cspell/v5.3.1/cspell.schema.json",
+    "version": "0.2",
     "id": "ada",
     "name": "Ada Language",
     "description": "Ada Language Dictionary",
@@ -35,6 +36,7 @@
             "ignoreRegExpList": ["ada word break"]
         }
     ],
+    "globRoot": "${cwd}",
     "overrides": [
         {
             "filename": "*.{adb,ads}",
