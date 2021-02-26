@@ -3,6 +3,17 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+## [1.1.1](https://github.com/streetsidesoftware/cspell-dicts/compare/cspell-dict-ada@1.1.0...cspell-dict-ada@1.1.1) (2021-02-26)
+
+
+### Bug Fixes
+
+* fix Ada overrides ([#368](https://github.com/streetsidesoftware/cspell-dicts/issues/368)) ([e6e7892](https://github.com/streetsidesoftware/cspell-dicts/commit/e6e789255f52720d03046c6b876b3c8e78df4519))
+
+
+
+
+
 # [1.1.0](https://github.com/streetsidesoftware/cspell-dicts/compare/cspell-dict-ada@1.0.7...cspell-dict-ada@1.1.0) (2020-12-24)
 
 
