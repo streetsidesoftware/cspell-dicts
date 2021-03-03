@@ -934,6 +934,14 @@
     "@octokit/types" "^6.11.1"
     deprecation "^2.3.1"
 
+"@octokit/plugin-rest-endpoint-methods@4.13.2":
+  version "4.13.2"
+  resolved "https://registry.yarnpkg.com/@octokit/plugin-rest-endpoint-methods/-/plugin-rest-endpoint-methods-4.13.2.tgz#4e1fa30742a7bb1f0fe99e2f8e2b21f7aa8b7eb5"
+  integrity sha512-pnn0lGE05nqZ+EZuZgJBffJ4QRAlrlvg3LBFjCKHqUUWCI3PMqZ8kPJOxFj0R3B3D5hoGambtEIpCnaRD6nRJw==
+  dependencies:
+    "@octokit/types" "^6.11.2"
+    deprecation "^2.3.1"
+
 "@octokit/request-error@^2.0.0":
   version "2.0.5"
   resolved "https://registry.npmjs.org/@octokit/request-error/-/request-error-2.0.5.tgz#72cc91edc870281ad583a42619256b380c600143"
@@ -957,6 +965,16 @@
     once "^1.4.0"
     universal-user-agent "^6.0.0"
 
+"@octokit/rest@^18.0.6":
+  version "18.3.2"
+  resolved "https://registry.yarnpkg.com/@octokit/rest/-/rest-18.3.2.tgz#dae61ff8c70e3f968e182919f36f1338163c8ea8"
+  integrity sha512-TSTI47/jLqdq8qvc/a/P/VApBal7QHeISPZ8a1v7ma8NN/YdU5HRTSCb15+IvzUeuM7Iagp0aG+ypvQXJgmgQw==
+  dependencies:
+    "@octokit/core" "^3.2.3"
+    "@octokit/plugin-paginate-rest" "^2.6.2"
+    "@octokit/plugin-request-log" "^1.0.2"
+    "@octokit/plugin-rest-endpoint-methods" "4.13.2"
+
 "@octokit/rest@^18.1.0":
   version "18.3.1"
   resolved "https://registry.yarnpkg.com/@octokit/rest/-/rest-18.3.1.tgz#6680331e941c422dbff0e758a9bd3dc4edcbd2db"
@@ -974,7 +992,7 @@
   dependencies:
     "@octokit/openapi-types" "^5.1.0"
 
-"@octokit/types@^6.11.0", "@octokit/types@^6.11.1":
+"@octokit/types@^6.11.0", "@octokit/types@^6.11.1", "@octokit/types@^6.11.2":
   version "6.11.2"
   resolved "https://registry.yarnpkg.com/@octokit/types/-/types-6.11.2.tgz#43973dc29cdf59bf9d5f3ab0d16275c4b4a6eb8d"
   integrity sha512-EKQRFZU/oOfUlqk9ntLIE5UO/bcOx8exFpdXGBciJP90f05me3mza0sacIpqVqmiIQP3nJsBjnZHMmtijE5XwQ==
@@ -2774,7 +2792,7 @@ execa@^1.0.0:
     signal-exit "^3.0.0"
     strip-eof "^1.0.0"
 
-execa@^4.0.0:
+execa@^4.0.0, execa@^4.1.0:
   version "4.1.0"
   resolved "https://registry.npmjs.org/execa/-/execa-4.1.0.tgz#4e5491ad1572f2f17a77d388c6c857135b22847a"
   integrity sha512-j5W0//W7f8UxAn8hXVnwG8tLwdiUy4FJLcSupCg6maBYZDpyBvTApK7KyuI4bKj8KOh1r2YH+6ucuYtJv1bTZA==
@@ -3336,6 +3354,13 @@ github-username@^3.0.0:
   integrity sha1-CnciGbMTB0NCnyRW0L3T21Xc57E=
   dependencies:
     gh-got "^5.0.0"
+
+github-username@^6.0.0:
+  version "6.0.0"
+  resolved "https://registry.yarnpkg.com/github-username/-/github-username-6.0.0.tgz#d543eced7295102996cd8e4e19050ebdcbe60658"
+  integrity sha512-7TTrRjxblSI5l6adk9zd+cV5d6i1OrJSo3Vr9xdGqFLBQo0mz5P9eIfKCDJ7eekVGGFLbce0qbPSnktXV2BjDQ==
+  dependencies:
+    "@octokit/rest" "^18.0.6"
 
 glob-parent@^3.1.0:
   version "3.1.0"
@@ -7869,7 +7894,7 @@ yeoman-environment@^2.4.0, yeoman-environment@^2.9.5:
     untildify "^3.0.3"
     yeoman-generator "^4.8.2"
 
-yeoman-generator@^4.12.0, yeoman-generator@^4.8.2:
+yeoman-generator@^4.8.2:
   version "4.13.0"
   resolved "https://registry.npmjs.org/yeoman-generator/-/yeoman-generator-4.13.0.tgz#a6caeed8491fceea1f84f53e31795f25888b4672"
   integrity sha512-f2/5N5IR3M2Ozm+QocvZQudlQITv2DwI6Mcxfy7R7gTTzaKgvUpgo/pQMJ+WQKm0KN0YMWCFOZpj0xFGxevc1w==
@@ -7902,6 +7927,24 @@ yeoman-generator@^4.12.0, yeoman-generator@^4.8.2:
   optionalDependencies:
     grouped-queue "^1.1.0"
     yeoman-environment "^2.9.5"
+
+yeoman-generator@^5.0.1:
+  version "5.0.1"
+  resolved "https://registry.yarnpkg.com/yeoman-generator/-/yeoman-generator-5.0.1.tgz#6ccf6157868a512a9cf5d4f315da1682f7fc34ce"
+  integrity sha512-v6MOgSuJdAcV8WGb5yQq2t2ldpFXiJQnFI/0bq/j5qbMZ8gzaoyL4sTfZ/2JkD7SN7vJbCyYn47bhjkTrNXnHg==
+  dependencies:
+    chalk "^4.1.0"
+    dargs "^7.0.0"
+    debug "^4.1.1"
+    execa "^4.1.0"
+    github-username "^6.0.0"
+    lodash "^4.17.11"
+    minimist "^1.2.5"
+    read-pkg-up "^7.0.1"
+    run-async "^2.0.0"
+    semver "^7.2.1"
+    shelljs "^0.8.4"
+    text-table "^0.2.0"
 
 yo@^3.1.1:
   version "3.1.1"
