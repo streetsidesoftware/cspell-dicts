@@ -7,3 +7,7 @@ find /usr/include -type f -exec cat {} \; | grep -o -E '[a-zA-Z_]+' | sort -u -f
 ```
 
 This file is rather large and will need to be compiled.
+
+<!---
+    cspell:ignore cwords
+--->

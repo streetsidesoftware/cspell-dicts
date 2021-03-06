@@ -52,3 +52,7 @@ The dictionary is licensed under the following licenses. See LICENSE for more
 GNU GPL version 2.0
 GNU LGPL version 2.1
 Mozilla MPL version 1.1
+
+<!---
+cspell:words Viktor Strate Kløvedal
+--->

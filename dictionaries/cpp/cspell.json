@@ -1,0 +1,20 @@
+{
+    "files": [
+        "**/*.{md,txt}"
+    ],
+    "ignorePaths": [
+        "/cpp.txt"
+    ],
+    "dictionaries": [
+        "cpp"
+    ],
+    "import": [
+        "./cspell-ext.json"
+    ],
+    "overrides": [
+        {
+            "filename": "cpp.txt",
+            "enabled": false
+        }
+    ]
+}

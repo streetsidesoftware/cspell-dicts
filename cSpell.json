@@ -1,6 +1,12 @@
 {
-    "version": "0.1",
+    "version": "0.2",
     "language": "en",
+    "files": [
+        "*.{md,txt,yaml,yml}",
+        ".github/**/*.{md,txt,yaml,yml}",
+        "dictionaries/[a-e]*/**/*.{md,txt,yaml,yml,js}",
+        "LICENSE"
+    ],
     "words": [
         "ALLCAPS",
         "appname",
@@ -26,11 +32,7 @@
         "**/*.dic",
         "**/node_modules/**"
     ],
-    "import": [
-        "./packages/es_ES/cspell-ext.json",
-        "./packages/fr_FR/cspell-ext.json",
-        "./packages/da_DK/cspell-ext.json"
-    ],
+    "import": [],
     "overrides": [
         {
             "filename": "**/nl_NL/**",
