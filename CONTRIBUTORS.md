@@ -32,9 +32,11 @@
     cspell:words Alexey Palazhchenko
     cspell:words Anthony Veaudry
     cspell:words canarduck
+    cspell:words Carmen Bianca Bakker
     cspell:words dalinhuang Dalin Huang
     cspell:words Daniel Schildt
     cspell:words dflock
+    cspell:words Dubravko Cvikl
     cspell:words Erkan Durmuş
     cspell:words Federico Jaramillo Martínez
     cspell:words Fullstack

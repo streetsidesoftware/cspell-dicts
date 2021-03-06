@@ -56,3 +56,7 @@ GPLv2
 ## Acknowledgement
 
 - Contributed by [Jordi Olivares Provencio](https://github.com/jordiolivares)
+
+<!---
+    cspell:words Jordi Olivares Provencio
+--->

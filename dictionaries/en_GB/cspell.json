@@ -1,0 +1,19 @@
+{
+    "files": [
+        "**/*.{md,txt}"
+    ],
+    "language": "en-gb",
+    "import": [
+        "./cspell-ext.json"
+    ],
+    "ignorePaths": [
+        "/src"
+    ],
+    "ignoreWords": [],
+    "overrides": [
+        {
+            "filename": "/src",
+            "enabled": false
+        }
+    ]
+}
