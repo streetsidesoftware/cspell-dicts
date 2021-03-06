@@ -7,6 +7,7 @@
     "build": "lerna run --concurrency 2 --stream build --no-bail",
     "conditional-build": "lerna run --concurrency 2 --stream conditional-build --no-bail",
     "check-dirty": "git --no-pager diff --compact-summary --exit-code",
+    "check-spelling": "cspell",
     "checksum": "lerna run checksum",
     "create-dictionary": "yo cspell-dicts",
     "clean": "rimraf \"packages/*/*.txt.gz\" \"dictionaries/*/*.txt.gz\"",
@@ -23,7 +24,7 @@
   ],
   "devDependencies": {
     "cross-env": "^7.0.2",
-    "cspell": "^5.3.1",
+    "cspell": "^5.3.7",
     "cspell-tools": "^5.1.1",
     "eslint": "^7.13.0",
     "eslint-config-prettier": "^8.0.0",

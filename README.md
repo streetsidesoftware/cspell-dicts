@@ -147,3 +147,7 @@ npm install -g @cspell/dict-<name>
 Then run the link command found in the dictionary `README.md` file.
 It has the following pattern: `cspell link add @cspell/dict-<name>`.
 To unlink: `cspell link remove @cspell/dict-<name>`
+
+<!--
+  cspell:ignore medicalterms
+-->
