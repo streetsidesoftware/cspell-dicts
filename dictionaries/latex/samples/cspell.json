@@ -1,0 +1,28 @@
+{
+    "dictionaryDefinitions": [
+        {
+            "name": "sample-words",
+            "path": "./sample-words.txt",
+            "description": "Local dictionary for the samples"
+        }
+    ],
+    "dictionaries": [
+        "sample-words"
+    ],
+    "import": [
+        "../cspell.json"
+    ],
+    "files": [
+        "**/*.{md,tex}"
+    ],
+    "ignorePaths": [
+        "*.{csv,bib,icm}",
+        "Makefile"
+    ],
+    "overrides": [
+        {
+            "filename": "**/*.txt",
+            "languageId": "plaintext,latex"
+        }
+    ]
+}

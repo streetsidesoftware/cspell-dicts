@@ -5,6 +5,7 @@
         "*.{md,txt,yaml,yml}",
         ".github/**/*.{md,txt,yaml,yml}",
         "dictionaries/[a-e]*/**/*.{md,txt,yaml,yml,js}",
+        "dictionaries/latex/**/*.{md,txt,yaml,yml,js,tex}",
         "LICENSE"
     ],
     "words": [
@@ -13,6 +14,7 @@
         "autobuild",
         "codeql",
         "configstore",
+        "crowdsourcing",
         "dependabot",
         "django",
         "django's",
@@ -37,22 +39,6 @@
         {
             "filename": "**/nl_NL/**",
             "language": "en,nl"
-        },
-        {
-            "filename": "**/fr_FR/**/*.txt",
-            "language": "en,fr"
-        },
-        {
-            "filename": "**/da_DK/**",
-            "language": "en,da"
-        },
-        {
-            "filename": "**/de_DE/**",
-            "language": "en,de"
-        },
-        {
-            "filename": "**/en_GB/**",
-            "language": "en_GB"
         },
         {
             "filename": "**/ru_RU/samples/**",
