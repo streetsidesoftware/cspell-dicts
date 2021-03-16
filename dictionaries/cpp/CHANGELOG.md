@@ -3,6 +3,14 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+## [1.1.38](https://github.com/streetsidesoftware/cspell-dicts/compare/@cspell/dict-cpp@1.1.37...@cspell/dict-cpp@1.1.38) (2021-03-16)
+
+**Note:** Version bump only for package @cspell/dict-cpp
+
+
+
+
+
 ## [1.1.37](https://github.com/streetsidesoftware/cspell-dicts/compare/@cspell/dict-cpp@1.1.36...@cspell/dict-cpp@1.1.37) (2020-12-24)
 
 

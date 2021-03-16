@@ -3,6 +3,14 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+## [1.0.28](https://github.com/streetsidesoftware/cspell-dicts/compare/@cspell/dict-es-es@1.0.27...@cspell/dict-es-es@1.0.28) (2021-03-16)
+
+**Note:** Version bump only for package @cspell/dict-es-es
+
+
+
+
+
 ## [1.0.27](https://github.com/streetsidesoftware/cspell-dicts/compare/@cspell/dict-es-es@1.0.26...@cspell/dict-es-es@1.0.27) (2020-11-28)
 
 **Note:** Version bump only for package @cspell/dict-es-es

@@ -3,6 +3,14 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+## [1.0.15](https://github.com/streetsidesoftware/cspell-dicts/compare/@cspell/dict-bg-bg@1.0.14...@cspell/dict-bg-bg@1.0.15) (2021-03-16)
+
+**Note:** Version bump only for package @cspell/dict-bg-bg
+
+
+
+
+
 ## [1.0.14](https://github.com/streetsidesoftware/cspell-dicts/compare/@cspell/dict-bg-bg@1.0.13...@cspell/dict-bg-bg@1.0.14) (2020-11-28)
 
 **Note:** Version bump only for package @cspell/dict-bg-bg
