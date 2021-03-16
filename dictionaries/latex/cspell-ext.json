@@ -32,25 +32,36 @@
             // This could be included in "ignoreRegExpList": ["mdash"]
             "patterns": [
                 {
+                    "name": "LaTexMacrosFunctionNames",
+                    "pattern": "/(?<!\\\\)\\\\\\w+/g",
+                    "description": "Match against all LaTex Macro names"
+                },
+                {
                     "name": "LaTexMacros",
-                    "pattern": "\\\\\\w*(\\[.*?\\])?(\\{.*?\\})?",
+                    "pattern": "/(?<!\\\\)\\\\\\w*(\\[.*?\\])?(\\{.*?\\})?/g",
                     "description": "Match against all LaTex Macros"
                 },
                 {
                     "name": "LaTexMacrosMultiLine",
-                    "pattern": "\\\\(?!(?:title|color|section|subsection|footnote|chapter|part|caption|emph|text))\\w+(?:\\[[^]*?\\]|\\{[^]*?\\})*",
+                    "pattern": "/(?<!\\\\)\\\\(?!(?:title|color|section|subsection|footnote|chapter|part|caption|emph|enquote|text))\\w+(?:\\[[^]*?\\]|\\{[^]*?\\})*/gi",
                     "description": "Match against all LaTex Macros"
                 },
                 {
                     "name": "LaTexMath",
-                    "pattern": "\\$.+?\\$",
+                    "pattern": "/[$][^$]*[$]/gi",
                     "description": "Match against all LaTex Macros"
                 }
             ],
             // To exclude patterns, add them to "ignoreRegExpList"
-            "ignoreRegExpList": ["LaTexMacrosMultiLine", "LaTexMath"],
+            "ignoreRegExpList": [
+                "LaTexMacrosMultiLine",
+                "LaTexMath",
+                "LaTexMacrosFunctionNames"
+            ],
             // List of dictionaries to enable by name in `dictionaryDefinitions`
-            "dictionaries": ["latex"],
+            "dictionaries": [
+                "latex"
+            ],
             // Dictionary definitions can also be supplied here. They are only used iff "languageId" and "local" match.
             "dictionaryDefinitions": []
         }
