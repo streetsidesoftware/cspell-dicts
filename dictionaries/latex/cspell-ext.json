@@ -53,15 +53,9 @@
                 }
             ],
             // To exclude patterns, add them to "ignoreRegExpList"
-            "ignoreRegExpList": [
-                "LaTexMacrosMultiLine",
-                "LaTexMath",
-                "LaTexMacrosFunctionNames"
-            ],
+            "ignoreRegExpList": ["LaTexMacrosMultiLine", "LaTexMath", "LaTexMacrosFunctionNames"],
             // List of dictionaries to enable by name in `dictionaryDefinitions`
-            "dictionaries": [
-                "latex"
-            ],
+            "dictionaries": ["latex"],
             // Dictionary definitions can also be supplied here. They are only used iff "languageId" and "local" match.
             "dictionaryDefinitions": []
         }
