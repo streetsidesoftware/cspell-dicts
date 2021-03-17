@@ -3,6 +3,17 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+## [1.0.25](https://github.com/streetsidesoftware/cspell-dicts/compare/@cspell/dict-latex@1.0.24...@cspell/dict-latex@1.0.25) (2021-03-17)
+
+
+### Bug Fixes
+
+* Add a few functions to the dictionary ([#381](https://github.com/streetsidesoftware/cspell-dicts/issues/381)) ([fabdd81](https://github.com/streetsidesoftware/cspell-dicts/commit/fabdd8161fb9e1aca1ea4486c59a56741bd8c19d))
+
+
+
+
+
 ## [1.0.24](https://github.com/streetsidesoftware/cspell-dicts/compare/@cspell/dict-latex@1.0.23...@cspell/dict-latex@1.0.24) (2021-03-16)
 
 
