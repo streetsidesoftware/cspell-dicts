@@ -1,18 +1,11 @@
 {
   "npmClient": "yarn",
-  "packages": [
-    "packages/*",
-    "dictionaries/*"
-  ],
+  "packages": ["packages/*", "dictionaries/*"],
   "useWorkspaces": true,
   "version": "independent",
   "command": {
     "publish": {
-      "ignoreChanges": [
-        "*.md",
-        "package-lock.json",
-        "cspell.json"
-      ]
+      "ignoreChanges": ["*.md", "package-lock.json", "cspell.json"]
     }
   }
 }
