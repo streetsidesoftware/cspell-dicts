@@ -28,7 +28,7 @@ module.exports = class extends Generator {
         });
     }
 
-    prompting() {
+    async prompting() {
         // Have Yeoman greet the user.
         this.log(yosay('Welcome to the ' + chalk.red('cspell-dicts') + ' generator!'));
 
@@ -36,7 +36,7 @@ module.exports = class extends Generator {
             {
                 type: 'input',
                 name: 'name',
-                message: 'Your project name',
+                message: 'The package name',
                 default: this.options.name || this.appname, // Default to current folder name
             },
             {
@@ -47,89 +47,84 @@ module.exports = class extends Generator {
             },
         ];
 
-        return this.prompt(namePrompts).then((props) => {
-            return this.prompt([
-                {
-                    type: 'input',
-                    name: 'description',
-                    message: 'Description',
-                    default: title(props.friendlyName) + ' dictionary for cspell.',
-                },
-                {
-                    type: 'input',
-                    name: 'srcFile',
-                    message: 'Source File Name',
-                    default: this.options.source || props.name + '.txt',
-                },
-                {
-                    type: 'input',
-                    name: 'local',
-                    message:
-                        'Language locale, example: "en,en-US" for English and English US, "fr" for French, or use "*" for programming language dictionaries.',
-                    default: '*',
-                },
-                {
-                    type: 'input',
-                    name: 'languageId',
-                    message: 'Programing languageID/filetype, i.e. "typescript", "php", "go", or "*" for any.',
-                    default: '*',
-                },
-                {
-                    type: 'confirm',
-                    name: 'useTrie',
-                    message: 'Store as Trie',
-                    default: ['.dic', '.aff'].includes(path.extname(this.options.source)),
-                },
-                {
-                    type: 'confirm',
-                    name: 'doBuild',
-                    message: 'Compile Dictionary?',
-                    default:
-                        this.fs.exists(this.options.source) &&
-                        ['.dic', '.aff'].includes(path.extname(this.options.source)),
-                },
-            ]).then((depProps) => {
-                depProps.fileExt = depProps.useTrie ? 'trie.gz' : 'txt.gz';
-                depProps.command = depProps.useTrie ? 'compile-trie' : 'compile';
+        const props = await this.prompt(namePrompts);
+        const depProps = await this.prompt([
+            {
+                type: 'input',
+                name: 'description',
+                message: 'Description',
+                default: title(props.friendlyName) + ' dictionary for cspell.',
+            },
+            {
+                type: 'input',
+                name: 'srcFile',
+                message: 'Source File Name',
+                default: this.options.source || props.name + '.txt',
+            },
+            {
+                type: 'input',
+                name: 'local',
+                message:
+                    'Language locale, example: "en,en-US" for English and English US, "fr" for French, or use "*" for programming language dictionaries.',
+                default: '*',
+            },
+            {
+                type: 'input',
+                name: 'languageId',
+                message: 'Programing languageID/filetype, i.e. "typescript", "php", "go", or "*" for any.',
+                default: '*',
+            },
+            {
+                type: 'confirm',
+                name: 'useTrie',
+                message: 'Store as Trie',
+                default: ['.dic', '.aff'].includes(path.extname(this.options.source)),
+            },
+            {
+                type: 'confirm',
+                name: 'doBuild',
+                message: 'Compile Dictionary?',
+                default:
+                    this.fs.exists(this.options.source) && ['.dic', '.aff'].includes(path.extname(this.options.source)),
+            },
+        ]);
 
-                depProps.dstFileName =
-                    path.basename(depProps.srcFile, path.extname(depProps.srcFile)) + '.' + depProps.fileExt;
+        depProps.fileExt = depProps.useTrie ? 'trie.gz' : 'txt.gz';
+        depProps.command = depProps.useTrie ? 'compile-trie' : 'compile';
 
-                props.filesToCopy = [];
-                const srcFile = path.resolve(depProps.srcFile);
-                this.log(srcFile);
+        depProps.dstFileName = path.basename(depProps.srcFile, path.extname(depProps.srcFile)) + '.' + depProps.fileExt;
 
-                if (this.fs.exists(srcFile)) {
-                    const ext = path.extname(srcFile);
-                    const srcFiles = [];
-                    if (ext === '.dic' || ext === '.aff') {
-                        const srcAff = path.join(path.dirname(srcFile), path.basename(srcFile, ext) + '.aff');
-                        const srcDic = path.join(path.dirname(srcFile), path.basename(srcFile, ext) + '.dic');
-                        srcFiles.push(srcAff);
-                        srcFiles.push(srcDic);
-                        props.srcFileReader = 'hunspell-reader words -n 1000';
-                        props.prepareScript = 'echo OK';
-                    } else {
-                        srcFiles.push(srcFile);
-                        props.srcFileReader = 'head -n 1000';
-                        props.prepareScript = 'yarn run build';
-                    }
-                    srcFiles.forEach((srcFile) =>
-                        props.filesToCopy.push([srcFile, path.join('src', path.basename(srcFile))])
-                    );
-                }
+        props.filesToCopy = [];
+        const srcFile = path.resolve(depProps.srcFile);
+        this.log(srcFile);
 
-                depProps.srcFile = 'src/' + path.basename(srcFile);
-                props.packageName = props.name.toLowerCase().replace(/[^a-z0-9-]/g, '-');
-                props.fullPackageName = '@cspell/dict-' + props.packageName;
+        if (this.fs.exists(srcFile)) {
+            const ext = path.extname(srcFile);
+            const srcFiles = [];
+            if (ext === '.dic' || ext === '.aff') {
+                const srcAff = path.join(path.dirname(srcFile), path.basename(srcFile, ext) + '.aff');
+                const srcDic = path.join(path.dirname(srcFile), path.basename(srcFile, ext) + '.dic');
+                srcFiles.push(srcAff);
+                srcFiles.push(srcDic);
+                props.srcFileReader = 'hunspell-reader words -n 1000';
+                props.prepareScript = 'echo OK';
+            } else {
+                srcFiles.push(srcFile);
+                props.srcFileReader = 'head -n 1000';
+                props.prepareScript = 'yarn run build';
+            }
+            srcFiles.forEach((srcFile) => props.filesToCopy.push([srcFile, path.join('src', path.basename(srcFile))]));
+        }
 
-                this.props = Object.assign({}, props, depProps);
-            });
-        });
+        depProps.srcFile = 'src/' + path.basename(srcFile);
+        props.packageName = props.name.toLowerCase().replace(/[^a-z0-9-]/g, '-');
+        props.fullPackageName = '@cspell/dict-' + props.packageName;
+
+        this.props = Object.assign({}, props, depProps);
     }
 
     writing() {
-        const files = ['package.json', 'README.md', 'CHANGELOG.md', 'cspell-ext.json', 'LICENSE'];
+        const files = ['package.json', 'README.md', 'CHANGELOG.md', 'cspell-ext.json', 'cspell.json', 'LICENSE'];
         files.forEach((fromTo) => {
             fromTo = typeof fromTo === 'string' ? [fromTo, fromTo] : fromTo;
             const [src, dst] = fromTo;
