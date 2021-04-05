@@ -3,6 +3,17 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+## [1.0.27](https://github.com/streetsidesoftware/cspell-dicts/compare/@cspell/dict-software-terms@1.0.26...@cspell/dict-software-terms@1.0.27) (2021-04-05)
+
+
+### Bug Fixes
+
+* Move 'transpile' to softwareTerms dictionary ([#389](https://github.com/streetsidesoftware/cspell-dicts/issues/389)) ([d295a05](https://github.com/streetsidesoftware/cspell-dicts/commit/d295a05e07a608d9add421157bc93dfed48f8fa3))
+
+
+
+
+
 ## [1.0.26](https://github.com/streetsidesoftware/cspell-dicts/compare/@cspell/dict-software-terms@1.0.25...@cspell/dict-software-terms@1.0.26) (2021-02-15)
 
 **Note:** Version bump only for package @cspell/dict-software-terms

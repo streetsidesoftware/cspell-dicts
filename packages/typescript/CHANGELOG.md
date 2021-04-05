@@ -3,6 +3,14 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+## [1.1.3](https://github.com/streetsidesoftware/cspell-dicts/compare/cspell-dict-typescript@1.1.2...cspell-dict-typescript@1.1.3) (2021-04-05)
+
+**Note:** Version bump only for package cspell-dict-typescript
+
+
+
+
+
 ## [1.1.2](https://github.com/streetsidesoftware/cspell-dicts/compare/cspell-dict-typescript@1.1.1...cspell-dict-typescript@1.1.2) (2020-12-26)
 
 **Note:** Version bump only for package cspell-dict-typescript
