@@ -1,0 +1,45 @@
+{
+  "name": "@cspell/dict-et-ee",
+  "version": "1.0.0",
+  "description": "Estonian dictionary for cspell. -- Private until verified",
+  "private": true,
+  "publishConfig": {
+    "access": "public"
+  },
+  "exports": {
+    ".": "./cspell-ext.json",
+    "./cspell": "./cspell-ext.json",
+    "./cspell-ext.json": "./cspell-ext.json"
+  },
+  "scripts": {
+    "build": "cross-env NODE_OPTIONS=--max_old_space_size=8192 cspell-tools compile-trie \"src/index.dic\" -o .",
+    "test": "hunspell-reader words -n 1000 \"src/index.dic\" | cspell -v -c ./cspell-ext.json \"--local=et,et-EE\" \"--languageId=*\" stdin",
+    "prepublishOnly": "yarn test",
+    "prepare": "echo OK"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/streetsidesoftware/cspell-dicts.git"
+  },
+  "keywords": [
+    "cspell",
+    "et-EE",
+    "Estonian",
+    "dictionary",
+    "spelling"
+  ],
+  "author": "Jason Dent",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/streetsidesoftware/cspell-dicts/issues"
+  },
+  "homepage": "https://github.com/streetsidesoftware/cspell-dicts/blob/master/packages/et-EE#readme",
+  "devDependencies": {},
+  "dependencies": {},
+  "files": [
+    "index.trie.gz",
+    "cspell-ext.json",
+    "*.js",
+    "*.d.ts"
+  ]
+}
