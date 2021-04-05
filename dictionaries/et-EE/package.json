@@ -1,8 +1,8 @@
 {
   "name": "@cspell/dict-et-ee",
   "version": "1.0.0",
-  "description": "Estonian dictionary for cspell. -- Private until verified",
-  "private": true,
+  "description": "Estonian dictionary for cspell.",
+  "private": false,
   "publishConfig": {
     "access": "public"
   },
@@ -37,6 +37,7 @@
   "devDependencies": {},
   "dependencies": {},
   "files": [
+    "src/LICENSE",
     "index.trie.gz",
     "cspell-ext.json",
     "*.js",
