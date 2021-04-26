@@ -3,6 +3,17 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+# [1.1.0](https://github.com/streetsidesoftware/cspell-dicts/compare/@cspell/dict-hr-hr@1.0.8...@cspell/dict-hr-hr@1.1.0) (2021-04-26)
+
+
+### Features
+
+* Update Croatian dictionary ([#405](https://github.com/streetsidesoftware/cspell-dicts/issues/405)) ([e5057e9](https://github.com/streetsidesoftware/cspell-dicts/commit/e5057e9eb6be924c15150eb4c07b107184a08e34))
+
+
+
+
+
 ## [1.0.8](https://github.com/streetsidesoftware/cspell-dicts/compare/@cspell/dict-hr-hr@1.0.7...@cspell/dict-hr-hr@1.0.8) (2020-11-28)
 
 **Note:** Version bump only for package @cspell/dict-hr-hr
