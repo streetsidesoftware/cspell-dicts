@@ -1,8 +1,7 @@
 {
   "name": "@cspell/dict-hr-hr",
-  "version": "1.0.0",
-  "description": "Croatian dictionary for cspell. -- Private until verified",
-  "private": true,
+  "version": "1.0.8",
+  "description": "Croatian dictionary for cspell.",
   "publishConfig": {
     "access": "public"
   },
@@ -33,13 +32,13 @@
   "bugs": {
     "url": "https://github.com/streetsidesoftware/cspell-dicts/issues"
   },
-  "homepage": "https://github.com/streetsidesoftware/cspell-dicts/blob/master/packages/hr_HR#readme",
+  "homepage": "https://github.com/streetsidesoftware/cspell-dicts/blob/master/dictionaries/hr_HR#readme",
   "devDependencies": {},
   "dependencies": {},
   "files": [
     "hr_HR.trie.gz",
     "cspell-ext.json",
-    "*.js",
-    "*.d.ts"
+    "src/README.md",
+    "src/README_hr_HR.txt"
   ]
 }
