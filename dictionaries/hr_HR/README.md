@@ -21,7 +21,13 @@ cspell link remove @cspell/dict-hr-hr
 
 ## Manual Installation
 
-The `cspell-ext.json` file in this package should be added to the import section in your cspell.json file.
+Manual installation is useful if you want to include this dictionary as part of your CI/CD lint process.
+
+```
+npm i @cspell/dict-hr-hr
+```
+
+The `cspell-ext.json` file in this package should be added to the import section in your `cspell.json` file.
 
 ```javascript
 {
@@ -31,13 +37,13 @@ The `cspell-ext.json` file in this package should be added to the import section
 }
 ```
 
-## Building
+# Dictionary Development
 
-Building is only necessary if you want to modify the contents of the dictionary. Note: Building will take a few minutes for large files.
+See: [How to Create a New Dictionary](https://github.com/streetsidesoftware/cspell-dicts#how-to-create-a-new-dictionary)
 
-```sh
-npm run build
-```
+## Resources
+
+The Hunspell source for this dictionary can be found: https://github.com/krunose/hunspell-hr
 
 ## License
 
