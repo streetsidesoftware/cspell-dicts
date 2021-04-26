@@ -1,6 +1,5 @@
 # Računalna provjera pravopisa hrvatskoga jezika Hunspellom
 
-
 Rječnik za računalnu provjeru pravopisa hrvatskoga jezika skup je riječi i pravila koja se koriste za računalnu provjeru pravopisa programom Husnpell. Za uspješnu su provjeru pravopisa iz cijeloga ovoga repozitorija potrebne samo datoteke `hr_HR.dic` i `hr_HR.aff`, sve ostalo su usputni sadržaji.
 
 Pravila se primjenjuju na svaku riječ zasebno, odnosno Hunspell ne može koristiti ova pravila za provjeru ispravnoga korištenja riječi u kontekstu ili provjeru gramatike. Rječnik i pravila razvijaju se neovisno Hunspellu te ovo nije službeni ili središnji rječnik. Tako nešto ne postoji ni za koji jezik. Ovaj se rječnik koristi za računalnu provjeru pravopisa u projektima kao što su Mozilla (Firefox, Thunderbird) te LibreOffice.
@@ -23,7 +22,6 @@ Dokumentacija o Hunspellu
 
 - [Pisanje pravila](https://sourceforge.net/projects/hunspell/files/Hunspell/Documentation/hunspell4.pdf/download) (izravna poveznica, engl., PDF)
 - [hunspell.github.io](http://hunspell.github.io/)
-
 
 ---
 
