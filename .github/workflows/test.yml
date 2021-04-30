@@ -6,8 +6,8 @@ on: # rebuild any PRs and main branch changes
       - "dependabot/**"
 
 jobs:
+  # Test supported Node versions
   test-old-node-versions:
-    description: Test supported Node versions
     runs-on: ${{ matrix.os }}
     strategy:
       matrix:
@@ -26,8 +26,9 @@ jobs:
           node-version: ${{ matrix.node-version }}
       - run: yarn
       - run: yarn test
+
+  # Test supported Operating Systems
   test-os:
-    description: Test supported Operating Systems
     runs-on: ${{ matrix.os }}
     strategy:
       matrix:
