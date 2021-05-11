@@ -52,7 +52,7 @@ See [Conventional Commits](https://conventionalcommits.org) for commit guideline
   traversing all public accessible symbols of OpenJDK 12 using a new
   [script](https://github.com/bentolor/jdk9-module-enumerator)
   leveraging [classgraph project](https://github.com/classgraph/classgraph)
-- Manually add Java reserved words copied fromt he official [Java Tutorials](https://docs.oracle.com/javase/tutorial/java/nutsandbolts/_keywords.html)
+- Manually add Java reserved words copied from he official [Java Tutorials](https://docs.oracle.com/javase/tutorial/java/nutsandbolts/_keywords.html)
 - Add `true`, `false` and `null` literals to dictionary
 
 ## 1.0.0

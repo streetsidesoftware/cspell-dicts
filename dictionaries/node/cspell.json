@@ -2,12 +2,13 @@
     "files": [
         "**/*.{md,txt}"
     ],
-    "language": "en,he",
+    "dictionaries": [
+        "node"
+    ],
     "import": [
         "./cspell-ext.json"
     ],
-    "ignorePaths": [
-        "sample.txt"
-    ],
-    "ignoreWords": []
+    "ignoreWords": [
+        "yyyymmdd"
+    ]
 }
