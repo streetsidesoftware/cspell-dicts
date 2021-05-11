@@ -3,6 +3,17 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+## [1.0.29](https://github.com/streetsidesoftware/cspell-dicts/compare/@cspell/dict-software-terms@1.0.28...@cspell/dict-software-terms@1.0.29) (2021-05-11)
+
+
+### Bug Fixes
+
+* add allowlist, denylist to software terms ([#415](https://github.com/streetsidesoftware/cspell-dicts/issues/415)) ([eb27e8b](https://github.com/streetsidesoftware/cspell-dicts/commit/eb27e8bed02de4d80a53c7be5f8ff094bd1e8126))
+
+
+
+
+
 ## [1.0.28](https://github.com/streetsidesoftware/cspell-dicts/compare/@cspell/dict-software-terms@1.0.27...@cspell/dict-software-terms@1.0.28) (2021-04-26)
 
 **Note:** Version bump only for package @cspell/dict-software-terms
