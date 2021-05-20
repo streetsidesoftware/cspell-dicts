@@ -14,7 +14,7 @@
     "prepare": "lerna exec \"cp ../../generator-cspell-dicts/generators/app/templates/*.js ./ && cp ../../generator-cspell-dicts/generators/app/templates/*.ts ./\" --scope=cspell-dict* && lerna run prepare",
     "force-publish": "yarn prepare && yarn test && lerna exec --no-bail \"npm publish\"",
     "pub-lerna": "lerna publish --conventional-commits",
-    "pub": "yarn run check-dirty && yarn run prepare && yarn test && yarn run pub-lerna",
+    "pub": "yarn run conditional-build && yarn run check-dirty && yarn run prepare && yarn test && yarn run pub-lerna",
     "update-packages": "yarn upgrade"
   },
   "workspaces": [
