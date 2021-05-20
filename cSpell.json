@@ -21,10 +21,12 @@
         "django's",
         "issuehunt",
         "liberapay",
+        "mdash",
         "otechie",
         "patreon",
         "streetsidesoftware",
-        "tidelift"
+        "tidelift",
+        "z"
     ],
     "flagWords": [],
     "maxNumberOfProblems": 1000,
@@ -33,6 +35,8 @@
         "**/.git/**",
         "**/*.aff",
         "**/*.dic",
+        "**/*.log",
+        "generator-cspell-dicts/generators/app/templates/**",
         "dictionaries/*/src/**",
         "**/node_modules/**"
     ],
