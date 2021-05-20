@@ -41,8 +41,8 @@ write-host -foregroundcolor $processmessagecolor "Check Mailbox Forwards - Start
 foreach ($mailbox in $mailboxes) {
     Write-Host -foregroundColor Gray "Mailbox forwards for $($mailbox.displayname) - $($mailbox.primarysmtpaddress)"
     if ($mailbox.DeliverToMailboxAndForward) { ## if email forwarding is active
-        Write-Host -foregroundColor $errormessagecolor "`nMailbox forwards for $($mailbox.displayname) - $($mailbox.primarysmtpaddress) - Forwarding = $($mailbox.delivertomailboxandforward)" 
-        Write-host -foregroundColor $errormessagecolor "Forwarding address = $($mailbox.forwardingsmtpaddress)`n" 
+        Write-Host -foregroundColor $errormessagecolor "`nMailbox forwards for $($mailbox.displayname) - $($mailbox.primarysmtpaddress) - Forwarding = $($mailbox.delivertomailboxandforward)"
+        Write-host -foregroundColor $errormessagecolor "Forwarding address = $($mailbox.forwardingsmtpaddress)`n"
     }
     else {
         if ($mailbox.forwardingsmtpaddress){ ## if email forward email address has been set
@@ -88,10 +88,10 @@ foreach ($mailbox in $mailboxes)
   Write-Host -foregroundcolor gray "Sweep forwards for $($mailbox.displayname) - $($mailbox.primarysmtpaddress)"
   $rules = get-sweeprule -mailbox $mailbox.userprincipalname
   foreach ($rule in $rules) {
-    if ($rule.enabled) { ## if Sweep is active 
+    if ($rule.enabled) { ## if Sweep is active
         Write-Host -foregroundcolor $errormessagecolor "`nSweep rules enabled for $($mailbox.displayname) - $($mailbox.primarysmtpaddress)"
         Write-host -foregroundColor $errormessagecolor "Name = ",$rule.name
-        Write-host -foregroundColor $errormessagecolor "Source Folder = ",$rule.sourcefolder 
+        Write-host -foregroundColor $errormessagecolor "Source Folder = ",$rule.sourcefolder
         write-host -foregroundColor $errormessagecolor "Destination folder = ",$rule.destinationfolder
         Write-host -foregroundColor $errormessagecolor "Keep for days = ",$rule.keepfordays"`n"
         }
