@@ -13,3 +13,5 @@ describe('generator-cspell-dicts:app', () => {
         assert.file(['dummyfile.txt']);
     });
 });
+
+// cspell:ignore dummyfile
