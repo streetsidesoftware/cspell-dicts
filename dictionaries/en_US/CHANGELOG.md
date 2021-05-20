@@ -3,6 +3,17 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+## [1.2.41](https://github.com/streetsidesoftware/cspell-dicts/compare/@cspell/dict-en_us@1.2.40...@cspell/dict-en_us@1.2.41) (2021-05-20)
+
+
+### Bug Fixes
+
+* en_US spelling of constitutional ([#425](https://github.com/streetsidesoftware/cspell-dicts/issues/425)) ([6a89b0b](https://github.com/streetsidesoftware/cspell-dicts/commit/6a89b0b9d0df1eb7170e1befa94bc51b1b5650ff))
+
+
+
+
+
 ## [1.2.40](https://github.com/streetsidesoftware/cspell-dicts/compare/@cspell/dict-en_us@1.2.39...@cspell/dict-en_us@1.2.40) (2021-03-16)
 
 **Note:** Version bump only for package @cspell/dict-en_us
