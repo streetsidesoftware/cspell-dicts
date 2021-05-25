@@ -3,6 +3,14 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+## [1.1.4](https://github.com/streetsidesoftware/cspell-dicts/compare/cspell-dict-ruby@1.1.3...cspell-dict-ruby@1.1.4) (2021-05-25)
+
+**Note:** Version bump only for package cspell-dict-ruby
+
+
+
+
+
 ## [1.1.3](https://github.com/streetsidesoftware/cspell-dicts/compare/cspell-dict-ruby@1.1.2...cspell-dict-ruby@1.1.3) (2021-03-01)
 
 **Note:** Version bump only for package cspell-dict-ruby

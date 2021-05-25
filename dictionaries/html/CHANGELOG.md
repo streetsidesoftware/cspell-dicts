@@ -3,6 +3,17 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+## [1.1.7](https://github.com/streetsidesoftware/cspell-dicts/compare/@cspell/dict-html@1.1.6...@cspell/dict-html@1.1.7) (2021-05-25)
+
+
+### Bug Fixes
+
+* add html global attributes ([#432](https://github.com/streetsidesoftware/cspell-dicts/issues/432)) ([cc3f456](https://github.com/streetsidesoftware/cspell-dicts/commit/cc3f4560c1feddb8770413de168c06f0885d3d89))
+
+
+
+
+
 ## [1.1.6](https://github.com/streetsidesoftware/cspell-dicts/compare/@cspell/dict-html@1.1.5...@cspell/dict-html@1.1.6) (2021-02-15)
 
 **Note:** Version bump only for package @cspell/dict-html
