@@ -3,6 +3,17 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+## [1.0.12](https://github.com/streetsidesoftware/cspell-dicts/compare/@cspell/dict-npm@1.0.11...@cspell/dict-npm@1.0.12) (2021-05-26)
+
+
+### Bug Fixes
+
+* add some missing words ([#435](https://github.com/streetsidesoftware/cspell-dicts/issues/435)) ([e4395c6](https://github.com/streetsidesoftware/cspell-dicts/commit/e4395c6522bcac6a9144e3f7d8bedf6f437faa23)), closes [#181](https://github.com/streetsidesoftware/cspell-dicts/issues/181) [#172](https://github.com/streetsidesoftware/cspell-dicts/issues/172) [#175](https://github.com/streetsidesoftware/cspell-dicts/issues/175) [#169](https://github.com/streetsidesoftware/cspell-dicts/issues/169)
+
+
+
+
+
 ## [1.0.11](https://github.com/streetsidesoftware/cspell-dicts/compare/@cspell/dict-npm@1.0.10...@cspell/dict-npm@1.0.11) (2021-04-05)
 
 **Note:** Version bump only for package @cspell/dict-npm

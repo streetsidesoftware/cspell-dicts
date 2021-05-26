@@ -3,6 +3,17 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+## [1.1.29](https://github.com/streetsidesoftware/cspell-dicts/compare/@cspell/dict-en-gb@1.1.28...@cspell/dict-en-gb@1.1.29) (2021-05-26)
+
+
+### Bug Fixes
+
+* add some missing words ([#435](https://github.com/streetsidesoftware/cspell-dicts/issues/435)) ([e4395c6](https://github.com/streetsidesoftware/cspell-dicts/commit/e4395c6522bcac6a9144e3f7d8bedf6f437faa23)), closes [#181](https://github.com/streetsidesoftware/cspell-dicts/issues/181) [#172](https://github.com/streetsidesoftware/cspell-dicts/issues/172) [#175](https://github.com/streetsidesoftware/cspell-dicts/issues/175) [#169](https://github.com/streetsidesoftware/cspell-dicts/issues/169)
+
+
+
+
+
 ## [1.1.28](https://github.com/streetsidesoftware/cspell-dicts/compare/@cspell/dict-en-gb@1.1.27...@cspell/dict-en-gb@1.1.28) (2021-03-16)
 
 **Note:** Version bump only for package @cspell/dict-en-gb
