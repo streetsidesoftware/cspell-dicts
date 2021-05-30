@@ -11,8 +11,10 @@
     "./cspell-ext.json": "./cspell-ext.json"
   },
   "scripts": {
-    "build": "cspell-tools compile \"medicalterms-en.txt\" -o .",
-    "test": "head -n 100 \"medicalterms-en.txt\" | cspell -v -c ./cspell-ext.json --local=* --languageId=* stdin",
+    "build": "cspell-tools compile \"./node_modules/wordlist-medicalterms-en/wordlist.txt\" -o . --merge medicalterms-en.txt",
+    "test-wordlist": "head -n 100 \"./node_modules/wordlist-medicalterms-en/wordlist.txt\" | cspell -v -c ./cspell-ext.json --local=* --languageId=* stdin",
+    "test-samples": "cspell -v samples/**",
+    "test": "yarn run test-wordlist && yarn run test-samples",
     "prepublishOnly": "yarn test",
     "prepare": "yarn run build"
   },
@@ -28,14 +30,16 @@
     "spelling"
   ],
   "author": "Jason Dent",
-  "license": "MIT",
+  "license": "GPL-3.0-or-later",
   "bugs": {
     "url": "https://github.com/streetsidesoftware/cspell-dicts/issues"
   },
   "homepage": "https://github.com/streetsidesoftware/cspell-dicts/blob/main/dictionaries/medicalterms#readme",
   "files": [
     "medicalterms-en.txt.gz",
-    "cspell-ext.json",
-    "medicalterms-en.md"
-  ]
+    "cspell-ext.json"
+  ],
+  "devDependencies": {
+    "wordlist-medicalterms-en": "Glutanimate/wordlist-medicalterms-en#d87b48e"
+  }
 }
