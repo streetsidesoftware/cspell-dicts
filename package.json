@@ -17,11 +17,16 @@
     "pub": "yarn run conditional-build && yarn run check-dirty && yarn run prepare && yarn test && yarn run pub-lerna",
     "update-packages": "yarn upgrade"
   },
-  "workspaces": [
-    "packages/*",
-    "dictionaries/*",
-    "generator-cspell-dicts"
-  ],
+  "workspaces": {
+    "packages": [
+      "packages/*",
+      "dictionaries/*",
+      "generator-cspell-dicts"
+    ],
+    "nohoist": [
+      "**/wordlist-medicalterms-en"
+    ]
+  },
   "devDependencies": {
     "cross-env": "^7.0.2",
     "cspell": "^5.4.0",
@@ -35,5 +40,6 @@
     "rimraf": "^3.0.2"
   },
   "name": "cspell-dicts",
-  "dependencies": {}
+  "dependencies": {},
+  "license": "GPL-3.0-or-later"
 }

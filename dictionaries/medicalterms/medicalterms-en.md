@@ -1,1 +1,0 @@
-This file came from https://github.com/Glutanimate/wordlist-medicalterms-en

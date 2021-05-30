@@ -41,6 +41,6 @@ npm run build
 
 ## License
 
-MIT
+GPL-3.0-or-later
 
 > See Also [Source](https://github.com/Glutanimate/wordlist-medicalterms-en)
