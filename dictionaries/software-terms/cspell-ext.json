@@ -33,6 +33,17 @@
             // Example: "pattern": [{ "name": "mdash", "pattern": "&mdash;" }]
             // This could be included in "ignoreRegExpList": ["mdash"]
             "patterns": [],
+            // This can be removed once cspell-tools are upgraded to @cspell/cspell-tools.
+            "words": [
+                "ddmmyyyy",
+                "mmddyyyy",
+                "mmyyyy",
+                "yyyy",
+                "yyyymm",
+                "yyyymmdd",
+                "yyyymmddhhmmss",
+                "yyyymmddhhmmssz"
+            ],
             // List of dictionaries to enable by name in `dictionaryDefinitions`
             "dictionaries": ["softwareTerms"],
             // Dictionary definitions can also be supplied here. They are only used iff "languageId" and "local" match.
