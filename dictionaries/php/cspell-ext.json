@@ -24,9 +24,8 @@
             // Language local. i.e. en-US, de-AT, or ru. * will match all locals.
             // Multiple locals can be specified like: "en, en-US" to match both English and English US.
             "local": "*",
-            // By default the whole text of a file is included for spell checking
-            // Adding patterns to the "includeRegExpList" to only include matching patterns
-            "includeRegExpList": [],
+            // This can be removed once cspell-tools are upgraded to @cspell/cspell-tools.
+            "words": ["xffffffff"],
             // To exclude patterns, add them to "ignoreRegExpList"
             "ignoreRegExpList": [],
             // regex patterns than can be used with ignoreRegExpList or includeRegExpList
