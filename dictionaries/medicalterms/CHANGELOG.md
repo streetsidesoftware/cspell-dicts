@@ -3,6 +3,17 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+## [1.0.27](https://github.com/streetsidesoftware/cspell-dicts/compare/@cspell/dict-medicalterms@1.0.26...@cspell/dict-medicalterms@1.0.27) (2021-05-30)
+
+
+### Bug Fixes
+
+* Use the correct license for Medical Terms dictionary ([1a1abed](https://github.com/streetsidesoftware/cspell-dicts/commit/1a1abed2986b82252a942bae20e135b5966871f7)), closes [#440](https://github.com/streetsidesoftware/cspell-dicts/issues/440)
+
+
+
+
+
 ## [1.0.26](https://github.com/streetsidesoftware/cspell-dicts/compare/@cspell/dict-medicalterms@1.0.25...@cspell/dict-medicalterms@1.0.26) (2020-12-24)
 
 

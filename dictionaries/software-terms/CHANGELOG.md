@@ -3,6 +3,18 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+## [1.0.32](https://github.com/streetsidesoftware/cspell-dicts/compare/@cspell/dict-software-terms@1.0.31...@cspell/dict-software-terms@1.0.32) (2021-05-30)
+
+
+### Bug Fixes
+
+* add some missed words ([bd2abf0](https://github.com/streetsidesoftware/cspell-dicts/commit/bd2abf0e0f90ff41e8cdd8a84786c15ef0734333))
+* Use the correct license for Medical Terms dictionary ([1a1abed](https://github.com/streetsidesoftware/cspell-dicts/commit/1a1abed2986b82252a942bae20e135b5966871f7)), closes [#440](https://github.com/streetsidesoftware/cspell-dicts/issues/440)
+
+
+
+
+
 ## [1.0.31](https://github.com/streetsidesoftware/cspell-dicts/compare/@cspell/dict-software-terms@1.0.30...@cspell/dict-software-terms@1.0.31) (2021-05-28)
 
 **Note:** Version bump only for package @cspell/dict-software-terms

@@ -3,6 +3,17 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+## [1.0.24](https://github.com/streetsidesoftware/cspell-dicts/compare/@cspell/dict-php@1.0.23...@cspell/dict-php@1.0.24) (2021-05-30)
+
+
+### Bug Fixes
+
+* add some missed words ([bd2abf0](https://github.com/streetsidesoftware/cspell-dicts/commit/bd2abf0e0f90ff41e8cdd8a84786c15ef0734333))
+
+
+
+
+
 ## [1.0.23](https://github.com/streetsidesoftware/cspell-dicts/compare/@cspell/dict-php@1.0.22...@cspell/dict-php@1.0.23) (2020-12-24)
 
 

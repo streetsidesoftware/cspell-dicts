@@ -3,6 +3,17 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+## [1.0.12](https://github.com/streetsidesoftware/cspell-dicts/compare/@cspell/dict-node@1.0.11...@cspell/dict-node@1.0.12) (2021-05-30)
+
+
+### Bug Fixes
+
+* add some missed words ([bd2abf0](https://github.com/streetsidesoftware/cspell-dicts/commit/bd2abf0e0f90ff41e8cdd8a84786c15ef0734333))
+
+
+
+
+
 ## [1.0.11](https://github.com/streetsidesoftware/cspell-dicts/compare/@cspell/dict-node@1.0.10...@cspell/dict-node@1.0.11) (2021-04-05)
 
 **Note:** Version bump only for package @cspell/dict-node
