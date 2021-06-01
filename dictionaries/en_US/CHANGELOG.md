@@ -3,6 +3,17 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+## [1.2.43](https://github.com/streetsidesoftware/cspell-dicts/compare/@cspell/dict-en_us@1.2.42...@cspell/dict-en_us@1.2.43) (2021-06-01)
+
+
+### Bug Fixes
+
+* Add prepend to English dictionaries ([7edbb23](https://github.com/streetsidesoftware/cspell-dicts/commit/7edbb2348e41570ad24d746031a13f9a58ac3f86))
+
+
+
+
+
 ## [1.2.42](https://github.com/streetsidesoftware/cspell-dicts/compare/@cspell/dict-en_us@1.2.41...@cspell/dict-en_us@1.2.42) (2021-05-26)
 
 
