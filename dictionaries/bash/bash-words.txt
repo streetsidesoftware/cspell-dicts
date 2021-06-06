@@ -9,12 +9,14 @@ esac
 fi
 for
 function
+globstar
 if
 in
 mapfile
 nounset
 pipefail
 select
+shopt
 then
 time
 tput
