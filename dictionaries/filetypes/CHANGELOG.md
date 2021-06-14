@@ -3,6 +3,14 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+## [1.1.7](https://github.com/streetsidesoftware/cspell-dicts/compare/@cspell/dict-filetypes@1.1.6...@cspell/dict-filetypes@1.1.7) (2021-06-14)
+
+**Note:** Version bump only for package @cspell/dict-filetypes
+
+
+
+
+
 ## [1.1.6](https://github.com/streetsidesoftware/cspell-dicts/compare/@cspell/dict-filetypes@1.1.5...@cspell/dict-filetypes@1.1.6) (2021-06-07)
 
 **Note:** Version bump only for package @cspell/dict-filetypes
