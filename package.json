@@ -17,6 +17,10 @@
     "pub": "yarn run conditional-build && yarn run check-dirty && yarn run prepare && yarn test && yarn run pub-lerna",
     "update-packages": "yarn upgrade"
   },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/streetsidesoftware/cspell-dicts.git"
+  },
   "workspaces": {
     "packages": [
       "packages/*",
