@@ -15,7 +15,7 @@
     "checksum": "shasum -c checksum.txt",
     "compile": "cat source-files.txt | xargs cspell-tools compile-trie --merge en_GB -o . && yarn run gen-checksum",
     "conditional-build": "yarn run --silent checksum || yarn run build",
-    "gen-checksum": "cat source-files.txt source-dependencies.txt | xargs shasum > checksum.txt",
+    "gen-checksum": "cat source-files.txt source-dependencies.txt | sort -u | xargs shasum > checksum.txt",
     "prepublishOnly": "yarn test",
     "test-dict": "head -n 1000 \"./src/wordsEnGb.txt\" | cspell -v -c ./cspell-ext.json --local=en_gb --languageId=* stdin",
     "test-text": "cspell -v -c ./cspell-ext.json --local=en_gb --languageId=* \"tests/*.txt\"",
