@@ -132,4 +132,4 @@ See [Conventional Commits](https://conventionalcommits.org) for commit guideline
 
 - Support for _formatted_ strings by [Federico Jaramillo Martínez](jmfederico)
 
-<!--- cspell:ignore Jaramillo jmfederico -->
+<!--- cspell:ignore Federico Jaramillo Martínez jmfederico -->
