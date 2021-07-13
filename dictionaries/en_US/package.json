@@ -17,7 +17,7 @@
     "conditional-build": "yarn run --silent checksum || yarn run build",
     "test-dict": "hunspell-reader words -n 10000 \"src/hunspell/en_US.dic\" | cspell -v -c ./cspell-ext.json --local=en --languageId=* stdin",
     "test-text": "cspell -v -c ./cspell-ext.json --local=en --languageId=* \"tests/*.txt\"",
-    "gen-checksum": "cat source-files.txt | xargs shasum en_US.trie.gz > checksum.txt",
+    "gen-checksum": "cat source-files.txt source-dependencies.txt | sort -u | xargs shasum > checksum.txt",
     "test": "yarn run test-dict && yarn run test-text",
     "prepublishOnly": "yarn test"
   },
