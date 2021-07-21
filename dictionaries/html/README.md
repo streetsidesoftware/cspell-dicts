@@ -1,4 +1,4 @@
-# Cspell html Dictionary
+# CSpell html Dictionary
 
 Html dictionary for cspell.
 
