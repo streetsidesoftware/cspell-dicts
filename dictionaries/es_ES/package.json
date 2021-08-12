@@ -11,8 +11,8 @@
     "./cspell-ext.json": "./cspell-ext.json"
   },
   "scripts": {
-    "build": "cspell-tools compile-trie \"Spanish.dic\" -o .",
-    "test": "hunspell-reader words -n 1000 \"Spanish.dic\" | cspell -v -c ./cspell-ext.json --local=es --languageId=* stdin",
+    "build": "cspell-tools-cli compile-trie --no-keep-case \"src/hunspell/Spanish.dic\" -o .",
+    "test": "hunspell-reader words -n 1000 \"src/hunspell/Spanish.dic\" | cspell -v -c ./cspell-ext.json --local=es --languageId=* stdin",
     "prepublishOnly": "yarn test"
   },
   "repository": {
