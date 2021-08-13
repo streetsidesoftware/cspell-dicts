@@ -9,5 +9,11 @@
             "caseSensitive": true
         }
     ],
-    "caseSensitive": false
+    "caseSensitive": false,
+    "overrides": [
+        {
+            "filename": "*.md",
+            "minWordLength": 3
+        }
+    ]
 }

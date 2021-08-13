@@ -17,5 +17,5 @@ Seattle es también conocida como "Gateway to Alaska" (La puerta a Alaska), "Rai
 cspell:locale es
 cspell:words Seattle Tacoma Bellevue Puget Sound King
 cspell:words Denny Maynard tribus Alki Duwamps Queen Emerald
-cspell:ignore locale words siːˈætəl
+cspell:ignore locale words siːˈætəl XIX
 --->
