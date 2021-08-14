@@ -37,10 +37,10 @@
   dependencies:
     regenerator-runtime "^0.13.4"
 
-"@cspell/cspell-bundled-dicts@^5.6.7":
-  version "5.6.7"
-  resolved "https://registry.npmjs.org/@cspell/cspell-bundled-dicts/-/cspell-bundled-dicts-5.6.7.tgz#924a170078e5fddc4d05814dda1e33c97988433b"
-  integrity sha512-w20s4TLplkjyf4o90XDtG65+dpuvWkWIhpApimMQgCiBRtReHioWvaLBHpWaL/vXc2+L1MmowBNjYLaD5N6qKA==
+"@cspell/cspell-bundled-dicts@^5.7.1":
+  version "5.7.1"
+  resolved "https://registry.npmjs.org/@cspell/cspell-bundled-dicts/-/cspell-bundled-dicts-5.7.1.tgz#ef63c07c8291ae816ae3221832d9c49b3ee29891"
+  integrity sha512-eOUJver2zJglrl4pjaDVJxoXAogtcWmI9ttVWqgPENeFQAdoNjVSPjRtyLDTp4jXC87TzpTWSKRhC0RNZBZPCg==
   dependencies:
     "@cspell/dict-ada" "^1.1.2"
     "@cspell/dict-aws" "^1.0.14"
@@ -78,22 +78,22 @@
     "@cspell/dict-typescript" "^1.0.19"
 
 "@cspell/cspell-tools@^5.6.7":
-  version "5.6.7"
-  resolved "https://registry.npmjs.org/@cspell/cspell-tools/-/cspell-tools-5.6.7.tgz#781b22c2d796cd1feb79456c516cfad20b36b819"
-  integrity sha512-hEzPLYlLps9VwKONyRlSe3ZQr6u7bXto0VIKylRW+bzLab+/LBzV9FsQzSpfNIZV53rKPmfUIN+/2mNaROTACw==
+  version "5.7.1"
+  resolved "https://registry.npmjs.org/@cspell/cspell-tools/-/cspell-tools-5.7.1.tgz#f4c24d5b6d0299842a3f63b24e4f4b953e10c5b7"
+  integrity sha512-6o7xv4DD2NemwkOBmRyK+kg78/on0FdOOKUJpzYZCeHhHTS65Af1f3VeTHXq2VnxUNscaL3585R//+fy/dunGw==
   dependencies:
     commander "^8.1.0"
-    cspell-io "^5.6.7"
-    cspell-trie-lib "^5.6.7"
+    cspell-io "^5.7.0"
+    cspell-trie-lib "^5.7.0"
     fs-extra "^10.0.0"
     gensequence "^3.1.1"
     glob "^7.1.7"
     hunspell-reader "^4.0.0"
 
-"@cspell/cspell-types@^5.6.7":
-  version "5.6.7"
-  resolved "https://registry.npmjs.org/@cspell/cspell-types/-/cspell-types-5.6.7.tgz#7b5268e9cc0937a3174396714bdac3b1913744af"
-  integrity sha512-zpUQfTcnf1A853UVX7LEEVC7wBIeNtq/NYh4V8lTw2J/Z/B/YOqGrRMdOiMP7W026PZC4kPcBQcbhFldLws3YQ==
+"@cspell/cspell-types@^5.7.0":
+  version "5.7.0"
+  resolved "https://registry.npmjs.org/@cspell/cspell-types/-/cspell-types-5.7.0.tgz#953ea4bf5d5b35c9040f7c707d23e126251a6f58"
+  integrity sha512-nPLBMn5cKdjZ2rA4C7YXYw5TIzrn/eScvhjnLflNhM+U2Ga3Xvuo7R0V4fNYUZDxsRUqUvB+r2WK1kaxbRYnIw==
 
 "@cspell/dict-en_us@^1.2.45":
   version "1.2.45"
@@ -2114,35 +2114,35 @@ crypto-random-string@^2.0.0:
   resolved "https://registry.npmjs.org/crypto-random-string/-/crypto-random-string-2.0.0.tgz#ef2a7a966ec11083388369baa02ebead229b30d5"
   integrity sha512-v1plID3y9r/lPhviJ1wrXpLeyUIGAZ2SHNYTEapm7/8A9nLPoyvVp3RK/EPFqn5kEznyWgYZNsRtYYIWbuG8KA==
 
-cspell-glob@^5.6.7:
-  version "5.6.7"
-  resolved "https://registry.npmjs.org/cspell-glob/-/cspell-glob-5.6.7.tgz#d06aa06d3667b766b2ce464301c113bbb2300093"
-  integrity sha512-iU7UiXPxcFpuViBh/gLZ9WEGOouWxe/IHv6prfNYHznLHbILS6PpQIMgN6/UzTLA1aRpGGeEzF2strelwmP+Ww==
+cspell-glob@^5.7.0:
+  version "5.7.0"
+  resolved "https://registry.npmjs.org/cspell-glob/-/cspell-glob-5.7.0.tgz#f14ad50fb469717220fd4e3e92a0174d3e3b31e2"
+  integrity sha512-A6LlFT1MWLT8bb0o3xDlXysbuYWM/1U1Rt/iOI/Pi3C9Myqig/WHVKEZ/Lmda6ZI5eRLyDhgi+Y90sUwpd9iEQ==
   dependencies:
     micromatch "^4.0.4"
 
-cspell-io@^5.1.0, cspell-io@^5.6.7:
-  version "5.6.7"
-  resolved "https://registry.npmjs.org/cspell-io/-/cspell-io-5.6.7.tgz#15d29edd4f7a9034ef5226e4816d49359fed4cd8"
-  integrity sha512-MQLCUkctXM18IL4CLpw3DVAbDwFNAF/3Kqb7mFfaFcDr0eeOq76fn4V5vi3l5MMIa1wBNJ1LRXZtPv60MzKNXg==
+cspell-io@^5.1.0, cspell-io@^5.7.0:
+  version "5.7.0"
+  resolved "https://registry.npmjs.org/cspell-io/-/cspell-io-5.7.0.tgz#5735893dda2e3e37dd981434553118bcf953843f"
+  integrity sha512-WOn8KwrYYpTfHJkmNG3fd+pT+NX7D1v6AcjYN6sm99fQtbY6z7xMAnjXcneGabUbQMNhAvaW56sB1pR0ABEvGA==
   dependencies:
     iconv-lite "^0.6.3"
     iterable-to-stream "^2.0.0"
 
-cspell-lib@^5.6.7:
-  version "5.6.7"
-  resolved "https://registry.npmjs.org/cspell-lib/-/cspell-lib-5.6.7.tgz#c230e0f5b055835290af3bbebedea605749a32b4"
-  integrity sha512-QA/IxlbVUmi7GOcdQajWxmOWqlbrzOASbEWnJ0xhawt1T65QyrWbIh08CBTeB/XDtZIcoV9TY+0p8tzXVafvnA==
+cspell-lib@^5.7.1:
+  version "5.7.1"
+  resolved "https://registry.npmjs.org/cspell-lib/-/cspell-lib-5.7.1.tgz#c021ef423a390b71bd56ce103ec98b4df8127b0f"
+  integrity sha512-uE+a292JTroaJMb2L/w2OodtvOTAm/4l6BMkeJtYfdjYGzaKJEKmypazIsEvLuw5AeZNZfIcZoI8iajMypuFUg==
   dependencies:
-    "@cspell/cspell-bundled-dicts" "^5.6.7"
-    "@cspell/cspell-types" "^5.6.7"
+    "@cspell/cspell-bundled-dicts" "^5.7.1"
+    "@cspell/cspell-types" "^5.7.0"
     clear-module "^4.1.1"
     comment-json "^4.1.1"
     configstore "^5.0.1"
     cosmiconfig "^7.0.0"
-    cspell-glob "^5.6.7"
-    cspell-io "^5.6.7"
-    cspell-trie-lib "^5.6.7"
+    cspell-glob "^5.7.0"
+    cspell-io "^5.7.0"
+    cspell-trie-lib "^5.7.0"
     find-up "^5.0.0"
     fs-extra "^10.0.0"
     gensequence "^3.1.1"
@@ -2165,10 +2165,10 @@ cspell-tools@^5.1.1:
     glob "^7.1.6"
     hunspell-reader "^3.2.0"
 
-cspell-trie-lib@^5.1.0, cspell-trie-lib@^5.6.7:
-  version "5.6.7"
-  resolved "https://registry.npmjs.org/cspell-trie-lib/-/cspell-trie-lib-5.6.7.tgz#7b282eaf0be025caaa696dd91fb3c75d9697535c"
-  integrity sha512-guzr+70EfrAAxWTZukaTI5kiWBp0SttxBMpT1ER5AbprdFCNMVJU+/34n4aikTNt6ZwgqRZ9SscQf2yYiffjlw==
+cspell-trie-lib@^5.1.0, cspell-trie-lib@^5.7.0:
+  version "5.7.0"
+  resolved "https://registry.npmjs.org/cspell-trie-lib/-/cspell-trie-lib-5.7.0.tgz#d80978e3da682290ae8cccb71af9c4455ad3cfca"
+  integrity sha512-XDJrQG2SuQOJRVj6kNUdehLHJdj+1SGzKEvFJbRAzvIRPW75zDe3+yYHHmNOZgXJXLfe0Vtr3RjSjhaQOWZ42Q==
   dependencies:
     fs-extra "^10.0.0"
     gensequence "^3.1.1"
@@ -2179,16 +2179,16 @@ cspell-util-bundle@^5.1.1:
   integrity sha512-FDxs0sw4gYMKKHdSobypvLQTRsZB96n9QNewRuyMv6nVwOcD1JsboClMpYigeE3rxBvyiGbj0V+Vf94+RTWWWA==
 
 cspell@^5.6.7:
-  version "5.6.7"
-  resolved "https://registry.npmjs.org/cspell/-/cspell-5.6.7.tgz#c2cd314cab1d2381bd558367682c0f801a72c8a7"
-  integrity sha512-/euddi9URCRkQSOhJQW+z2aTBn5e0qAjgiPUhavTr9Sb5nRgmUSiHwWHsuLbFlvjcxDEPDnF2cCmmHHLWIIqig==
+  version "5.7.1"
+  resolved "https://registry.npmjs.org/cspell/-/cspell-5.7.1.tgz#4485f9ea31b3ca20abf300b355a05c998ad4c6a8"
+  integrity sha512-SbM9nSYioCkWVz+3jfN7RqTHxuFTaDJSlH66ZesRukctzDbHitQoBRFFlMpF2Qrn/XdlNBVWHA8e3rZRTIEDRg==
   dependencies:
-    "@cspell/cspell-types" "^5.6.7"
+    "@cspell/cspell-types" "^5.7.0"
     chalk "^4.1.2"
     commander "^8.1.0"
     comment-json "^4.1.1"
-    cspell-glob "^5.6.7"
-    cspell-lib "^5.6.7"
+    cspell-glob "^5.7.0"
+    cspell-lib "^5.7.1"
     fs-extra "^10.0.0"
     get-stdin "^8.0.0"
     glob "^7.1.7"
