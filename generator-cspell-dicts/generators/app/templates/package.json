@@ -12,7 +12,7 @@
     "./cspell-ext.json": "./cspell-ext.json"
   },
   "scripts": {
-    "build": "cross-env NODE_OPTIONS=--max_old_space_size=8192 cspell-tools <%= command %> \"<%= srcFile %>\" -o .",
+    "build": "cross-env NODE_OPTIONS=--max_old_space_size=8192 cspell-tools-cli <%= command %> \"<%= srcFile %>\" -o .",
     "test": "<%= srcFileReader %> \"<%= srcFile %>\" | cspell -v -c ./cspell-ext.json \"--local=<%= local %>\" \"--languageId=<%= languageId %>\" stdin",
     "prepublishOnly": "yarn test",
     "prepare": "<%= prepareScript %>"
