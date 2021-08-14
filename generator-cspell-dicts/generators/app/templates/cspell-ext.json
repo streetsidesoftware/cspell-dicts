@@ -1,8 +1,10 @@
 // cSpell Settings
 {
     "id": "<%= packageName %>",
+    "version": "0.2",
     "name": "<%= friendlyName %>",
     "description": "<%= description %>",
+    "readonly": true,
     // List of dictionary files to add to the global list of dictionaries
     "dictionaryDefinitions": [
         {

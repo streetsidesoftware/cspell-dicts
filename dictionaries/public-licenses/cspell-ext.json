@@ -1,8 +1,10 @@
 // cSpell Settings
 {
     "id": "public-licenses",
+    "version": "0.2",
     "name": "Common Public Licenses",
     "description": "Common Public Licenses dictionary for cspell.",
+    "readonly": true,
     // List of dictionary files to add to the global list of dictionaries
     "dictionaryDefinitions": [
         {
@@ -34,9 +36,7 @@
             // This could be included in "ignoreRegExpList": ["mdash"]
             "patterns": [],
             // List of dictionaries to enable by name in `dictionaryDefinitions`
-            "dictionaries": [
-                "public-licenses"
-            ],
+            "dictionaries": ["public-licenses"],
             // Dictionary definitions can also be supplied here. They are only used iff "languageId" and "local" match.
             "dictionaryDefinitions": []
         }
