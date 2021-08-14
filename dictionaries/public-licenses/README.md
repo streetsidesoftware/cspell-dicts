@@ -37,6 +37,10 @@ The `cspell-ext.json` file in this package should be added to the import section
 }
 ```
 
+# Source
+
+[spdx-license-ids: a list of SPDX license identifiers](https://github.com/jslicense/spdx-license-ids)
+
 # Dictionary Development
 
 See: [How to Create a New Dictionary](https://github.com/streetsidesoftware/cspell-dicts#how-to-create-a-new-dictionary)
