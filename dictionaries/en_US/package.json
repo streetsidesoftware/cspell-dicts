@@ -13,7 +13,7 @@
   "scripts": {
     "build": "yarn run compile",
     "checksum": "shasum -c checksum.txt",
-    "compile": "cat source-files.txt | xargs cspell-tools compile-trie --merge en_US -o . && yarn run gen-checksum",
+    "compile": "cat source-files.txt | xargs cspell-tools-cli compile-trie --merge en_US -o . && yarn run gen-checksum",
     "conditional-build": "yarn run --silent checksum || yarn run build",
     "test-dict": "hunspell-reader words -n 10000 \"src/hunspell/en_US.dic\" | cspell -v -c ./cspell-ext.json --local=en --languageId=* stdin",
     "test-text": "cspell -v -c ./cspell-ext.json --local=en --languageId=* \"tests/*.txt\"",
