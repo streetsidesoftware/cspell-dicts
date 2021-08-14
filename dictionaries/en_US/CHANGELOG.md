@@ -3,6 +3,20 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+# [2.0.0](https://github.com/streetsidesoftware/cspell-dicts/compare/@cspell/dict-en_us@1.2.45...@cspell/dict-en_us@2.0.0) (2021-08-14)
+
+
+* feat!: Make English case aware (#545) ([5276e8b](https://github.com/streetsidesoftware/cspell-dicts/commit/5276e8bf21a4f17ae26503cab0ee022101b7089b)), closes [#545](https://github.com/streetsidesoftware/cspell-dicts/issues/545)
+
+
+### BREAKING CHANGES
+
+* only works with cspell 5+
+
+
+
+
+
 ## [1.2.45](https://github.com/streetsidesoftware/cspell-dicts/compare/@cspell/dict-en_us@1.2.44...@cspell/dict-en_us@1.2.45) (2021-07-13)
 
 **Note:** Version bump only for package @cspell/dict-en_us
