@@ -1,7 +1,7 @@
 /**
  * Generate the list of public licenses based upon spdx-license-ids.
  */
-const fs = require('fs/promises');
+const fs = require('fs');
 const path = require('path');
 const ids = require('spdx-license-ids');
 
@@ -29,7 +29,11 @@ ${words.join('\n')}
 
 `;
 
-    return fs.writeFile(filename, text, 'utf-8');
+    return fs.writeFile(filename, text, 'utf-8', (err) => {
+        if (err) {
+            throw err;
+        }
+    });
 }
 
 processIds();
