@@ -18,7 +18,7 @@ function processIds() {
             .split(' ')
             .map((a) => a.replace(/^-+/, ''))
             .map((a) => a.replace(/-+$/, ''))
-            .map((a) => a.replace(/^.{1,3}$/, ''))
+            .map((a) => a.replace(/^.{1,2}$/, ''))
             .filter((a) => !!a);
         a.forEach((w) => collection.add(w));
     }
