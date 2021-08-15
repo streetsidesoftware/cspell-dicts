@@ -3,6 +3,17 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+## [0.0.10](https://github.com/streetsidesoftware/cspell-dicts/compare/generator-cspell-dicts@0.0.9...generator-cspell-dicts@0.0.10) (2021-08-15)
+
+
+### Bug Fixes
+
+* Make it easier to turn off the public-licenses dictionary ([#550](https://github.com/streetsidesoftware/cspell-dicts/issues/550)) ([f2ed461](https://github.com/streetsidesoftware/cspell-dicts/commit/f2ed461e61c07285ba4b15127890a0809abffc2b))
+
+
+
+
+
 ## [0.0.9](https://github.com/streetsidesoftware/cspell-dicts/compare/generator-cspell-dicts@0.0.8...generator-cspell-dicts@0.0.9) (2021-08-14)
 
 **Note:** Version bump only for package generator-cspell-dicts
