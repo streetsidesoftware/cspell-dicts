@@ -3,6 +3,14 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+## [1.0.41](https://github.com/streetsidesoftware/cspell-dicts/compare/@cspell/dict-software-terms@1.0.40...@cspell/dict-software-terms@1.0.41) (2021-08-18)
+
+**Note:** Version bump only for package @cspell/dict-software-terms
+
+
+
+
+
 ## [1.0.40](https://github.com/streetsidesoftware/cspell-dicts/compare/@cspell/dict-software-terms@1.0.39...@cspell/dict-software-terms@1.0.40) (2021-08-14)
 
 **Note:** Version bump only for package @cspell/dict-software-terms
