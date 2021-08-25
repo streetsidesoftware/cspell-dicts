@@ -11,8 +11,10 @@
     "./cspell-ext.json": "./cspell-ext.json"
   },
   "scripts": {
-    "build": "cspell-tools compile-trie \"Dutch.dic\" -o .",
-    "test": "hunspell-reader words -n 1000 \"Dutch.dic\" | cspell -v -c ./cspell-ext.json --local=nl --languageId=* stdin",
+    "build": "cspell-tools-cli compile --trie3 -x compound \"Dutch.dic\" -o .",
+    "test": "yarn test-words && yarn test-spell",
+    "test-spell": "cspell \"**\"",
+    "test-words": "hunspell-reader words -n 1000 \"Dutch.dic\" | cspell -v -c ./cspell-ext.json --local=nl --languageId=* stdin",
     "prepublishOnly": "yarn test"
   },
   "repository": {
@@ -21,6 +23,7 @@
   },
   "keywords": [
     "cspell",
+    "cspell-ext",
     "nl_NL",
     "dictionary",
     "spelling"
@@ -35,5 +38,8 @@
     "Dutch.trie.gz",
     "cspell-ext.json",
     "Dutch.txt"
-  ]
+  ],
+  "devDependencies": {
+    "@cspell/cspell-tools": "^5.8.2"
+  }
 }
