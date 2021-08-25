@@ -7,7 +7,13 @@
         "./cspell-ext.json"
     ],
     "ignorePaths": [
-        "sample.txt"
+        "*.aff",
+        "*.dic"
     ],
-    "ignoreWords": []
+    "ignoreWords": [
+        "mdash"
+    ],
+    "words": [
+        "opensource"
+    ]
 }

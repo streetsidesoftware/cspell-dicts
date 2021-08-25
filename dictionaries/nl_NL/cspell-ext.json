@@ -7,18 +7,8 @@
     "dictionaryDefinitions": [
         {
             "name": "nl-nl",
-            "file": "./Dutch.trie.gz",
-            "repMap": [
-                ["áá", "aa"],
-                ["éé", "ee"],
-                ["íé", "ie"],
-                ["óó", "oo"],
-                ["úú", "uu"],
-                ["óé", "oe"],
-                ["’", "'"]
-            ],
+            "path": "./Dutch.trie.gz",
             // We should use compound words by default with Dutch
-            "useCompounds": true,
             "description": "Dutch (Netherlands) Dictionary"
         }
     ],
@@ -34,16 +24,18 @@
             "languageId": "*",
             // Language local. i.e. en-US, de-AT, or ru. * will match all locals.
             // Multiple locals can be specified like: "en, en-US" to match both English and English US.
-            "local": "nl,nl-NL",
+            "locale": "nl,nl-NL",
             // By default the
-            "ignoreRegExpList": ["/'tjes?\\b/"],
+            "ignoreRegExpList": [],
             "includeRegExpList": [],
             // regex patterns than can be used with ignoreRegExpList or includeRegExpList
             // Example: "pattern": [{ "name": "mdash", "pattern": "&mdash;" }]
             // This could be included in "ignoreRegExpList": ["mdash"]
             "patterns": [],
             // List of dictionaries to enable by name in `dictionaryDefinitions`
-            "dictionaries": ["nl-nl"],
+            "dictionaries": [
+                "nl-nl"
+            ],
             // Dictionary definitions can also be supplied here
             "dictionaryDefinitions": []
         }
