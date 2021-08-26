@@ -3,6 +3,14 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+## [1.1.33](https://github.com/streetsidesoftware/cspell-dicts/compare/@cspell/dict-en-gb@1.1.32...@cspell/dict-en-gb@1.1.33) (2021-08-26)
+
+**Note:** Version bump only for package @cspell/dict-en-gb
+
+
+
+
+
 ## [1.1.32](https://github.com/streetsidesoftware/cspell-dicts/compare/@cspell/dict-en-gb@1.1.31...@cspell/dict-en-gb@1.1.32) (2021-07-13)
 
 **Note:** Version bump only for package @cspell/dict-en-gb

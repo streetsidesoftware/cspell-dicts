@@ -3,6 +3,17 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+## [2.0.1](https://github.com/streetsidesoftware/cspell-dicts/compare/@cspell/dict-es-es@2.0.0...@cspell/dict-es-es@2.0.1) (2021-08-26)
+
+
+### Bug Fixes
+
+* ES use better storage method. ([#567](https://github.com/streetsidesoftware/cspell-dicts/issues/567)) ([1329296](https://github.com/streetsidesoftware/cspell-dicts/commit/13292960651f73ddb202d6549e8eb10523101520))
+
+
+
+
+
 # [2.0.0](https://github.com/streetsidesoftware/cspell-dicts/compare/@cspell/dict-es-es@1.0.28...@cspell/dict-es-es@2.0.0) (2021-08-13)
 
 ### Bug Fixes

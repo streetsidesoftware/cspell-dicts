@@ -3,6 +3,17 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+## [2.0.1](https://github.com/streetsidesoftware/cspell-dicts/compare/@cspell/dict-en_us@2.0.0...@cspell/dict-en_us@2.0.1) (2021-08-26)
+
+
+### Bug Fixes
+
+* Improve size of English US dictionary file ([#570](https://github.com/streetsidesoftware/cspell-dicts/issues/570)) ([fc97805](https://github.com/streetsidesoftware/cspell-dicts/commit/fc97805565e90e1000d027b3ffbacbd3586d0f5e))
+
+
+
+
+
 # [2.0.0](https://github.com/streetsidesoftware/cspell-dicts/compare/@cspell/dict-en_us@1.2.45...@cspell/dict-en_us@2.0.0) (2021-08-14)
 
 
