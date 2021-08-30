@@ -10,7 +10,7 @@ See [Conventional Commits](https://conventionalcommits.org) for commit guideline
 
 * remove `coresponding` from cpp dictionary ([#572](https://github.com/streetsidesoftware/cspell-dicts/issues/572)) ([47786d5](https://github.com/streetsidesoftware/cspell-dicts/commit/47786d58e636180792f155ec0b9feea2e10cd45d))
 
-
+<!--- cspell:ignore coresponding --->
 
 
 
