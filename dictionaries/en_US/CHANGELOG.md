@@ -3,6 +3,17 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+## [2.0.2](https://github.com/streetsidesoftware/cspell-dicts/compare/@cspell/dict-en_us@2.0.1...@cspell/dict-en_us@2.0.2) (2021-08-30)
+
+
+### Bug Fixes
+
+* add some alternate word spellings to English ([#571](https://github.com/streetsidesoftware/cspell-dicts/issues/571)) ([745f2df](https://github.com/streetsidesoftware/cspell-dicts/commit/745f2df89b07f42604f7fd143779750d375711fa))
+
+
+
+
+
 ## [2.0.1](https://github.com/streetsidesoftware/cspell-dicts/compare/@cspell/dict-en_us@2.0.0...@cspell/dict-en_us@2.0.1) (2021-08-26)
 
 

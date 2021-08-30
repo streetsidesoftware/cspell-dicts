@@ -3,6 +3,17 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+## [1.1.40](https://github.com/streetsidesoftware/cspell-dicts/compare/@cspell/dict-cpp@1.1.39...@cspell/dict-cpp@1.1.40) (2021-08-30)
+
+
+### Bug Fixes
+
+* remove `coresponding` from cpp dictionary ([#572](https://github.com/streetsidesoftware/cspell-dicts/issues/572)) ([47786d5](https://github.com/streetsidesoftware/cspell-dicts/commit/47786d58e636180792f155ec0b9feea2e10cd45d))
+
+
+
+
+
 ## [1.1.39](https://github.com/streetsidesoftware/cspell-dicts/compare/@cspell/dict-cpp@1.1.38...@cspell/dict-cpp@1.1.39) (2021-05-30)
 
 
