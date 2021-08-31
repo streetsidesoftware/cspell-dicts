@@ -79,17 +79,17 @@
     "@cspell/dict-typescript" "^1.0.19"
 
 "@cspell/cspell-tools@^5.6.7", "@cspell/cspell-tools@^5.8.2":
-  version "5.8.2"
-  resolved "https://registry.npmjs.org/@cspell/cspell-tools/-/cspell-tools-5.8.2.tgz#b06fa3eda80709334599f1feb9c969aef1cc131f"
-  integrity sha512-Kflnqb9ZbeHsV9q7s6wOI6WhqweSqVkBaequnN1Sjhh+BevKP7+UJRrrQn7zv41K2nDsZ35M+1C99ZZLxD2vEw==
+  version "5.9.0"
+  resolved "https://registry.yarnpkg.com/@cspell/cspell-tools/-/cspell-tools-5.9.0.tgz#f2abe07e6fa637d7a68eea6e11c45b03a0ca81ee"
+  integrity sha512-Unw+kE1BWTHyS8GWXchfEuESV7mMFA04VCp5GyjVOtEzutLyzVPQ6jzUkPQICKA3B8i3gYnIjsKFYUw2yiG2ig==
   dependencies:
     commander "^8.1.0"
-    cspell-io "^5.8.2"
-    cspell-trie-lib "^5.8.2"
+    cspell-io "^5.9.0"
+    cspell-trie-lib "^5.9.0"
     fs-extra "^10.0.0"
     gensequence "^3.1.1"
     glob "^7.1.7"
-    hunspell-reader "^4.0.0"
+    hunspell-reader "^5.9.0"
 
 "@cspell/cspell-types@^5.8.2":
   version "5.8.2"
@@ -2102,10 +2102,10 @@ cspell-glob@^5.8.2:
   dependencies:
     micromatch "^4.0.4"
 
-cspell-io@^5.1.0, cspell-io@^5.8.2:
-  version "5.8.2"
-  resolved "https://registry.npmjs.org/cspell-io/-/cspell-io-5.8.2.tgz#66c43830dd28822397a357d9bfa65e2f77c71c26"
-  integrity sha512-5ejb38VchMml840gigYO5oanOcef681pLstqwQt71yV+CG4YSyJK7RqPTeDHgsXbRkntdUrbydwza0481szVkQ==
+cspell-io@^5.1.0, cspell-io@^5.8.2, cspell-io@^5.9.0:
+  version "5.9.0"
+  resolved "https://registry.yarnpkg.com/cspell-io/-/cspell-io-5.9.0.tgz#f74867e43823965ddd3018920b1dddf71fe27d60"
+  integrity sha512-T+JO9RZrgW9StS6pg2yVQfNpR503lCzPCLM/24lBykPChaXOk2VTGiBa5TPu7qKRxP9x9p7zHLiawlTkgfIjzQ==
   dependencies:
     iconv-lite "^0.6.3"
     iterable-to-stream "^2.0.0"
@@ -2146,10 +2146,10 @@ cspell-tools@^5.1.1:
     glob "^7.1.6"
     hunspell-reader "^3.2.0"
 
-cspell-trie-lib@^5.1.0, cspell-trie-lib@^5.8.2:
-  version "5.8.2"
-  resolved "https://registry.npmjs.org/cspell-trie-lib/-/cspell-trie-lib-5.8.2.tgz#266a58c21c3ead1eb8434accca6cca7d7abd183d"
-  integrity sha512-gvNwZO8QIqMTek2ZK/CeYYupzdXnIym7ytOgy7ycE/UIeNzJh/STC62Pe44CNvL86Xh1wgS4wFnh0pF6QRkZFw==
+cspell-trie-lib@^5.1.0, cspell-trie-lib@^5.8.2, cspell-trie-lib@^5.9.0:
+  version "5.9.0"
+  resolved "https://registry.yarnpkg.com/cspell-trie-lib/-/cspell-trie-lib-5.9.0.tgz#ca857a7468fa443bf6a9de4143849e770ca70a48"
+  integrity sha512-/m0kgxYuLyxeZGjajVC/oxrbi2zpv+1boKSjHBElPrE8MytDgdBgdCojsYAYNAl30QEF4GtxB+q0NlWV4laLdA==
   dependencies:
     fs-extra "^10.0.0"
     gensequence "^3.1.1"
@@ -3481,6 +3481,16 @@ hunspell-reader@^4.0.0:
     gensequence "^3.1.1"
     iconv-lite "^0.6.2"
 
+hunspell-reader@^5.9.0:
+  version "5.9.0"
+  resolved "https://registry.yarnpkg.com/hunspell-reader/-/hunspell-reader-5.9.0.tgz#3b4171063e80b65c412275a3bb1e83344567ae10"
+  integrity sha512-LR3r/tsigpjP0ZKHOFZOPJLxNfcvE52zIkOhG94ZNdCX7jrzS4eKwIect04Q8GOu1LZv/I6lNlU8uStKrva4zA==
+  dependencies:
+    commander "^8.1.0"
+    fs-extra "^10.0.0"
+    gensequence "^3.1.1"
+    iconv-lite "^0.6.3"
+
 iconv-lite@^0.4.24:
   version "0.4.24"
   resolved "https://registry.npmjs.org/iconv-lite/-/iconv-lite-0.4.24.tgz#2022b4b25fbddc21d2f524974a474aafe733908b"
@@ -4516,7 +4526,7 @@ mem@^5.1.0:
 
 meow@^3.0.0, meow@^7.0.0, meow@^8.0.0, meow@^9.0.0:
   version "9.0.0"
-  resolved "https://registry.npmjs.org/meow/-/meow-9.0.0.tgz#cd9510bc5cac9dee7d03c73ee1f9ad959f4ea364"
+  resolved "https://registry.yarnpkg.com/meow/-/meow-9.0.0.tgz#cd9510bc5cac9dee7d03c73ee1f9ad959f4ea364"
   integrity sha512-+obSblOQmRhcyBt62furQqRAQpNyWXo8BuQ5bN7dG8wmwQ+vwHKp/rCFD4CrTP8CsDQD1sjoZ94K417XEUk8IQ==
   dependencies:
     "@types/minimist" "^1.2.0"
@@ -6739,7 +6749,7 @@ treeverse@^1.0.4:
 
 trim-newlines@^3.0.0, trim-newlines@^3.0.1:
   version "3.0.1"
-  resolved "https://registry.npmjs.org/trim-newlines/-/trim-newlines-3.0.1.tgz#260a5d962d8b752425b32f3a7db0dcacd176c144"
+  resolved "https://registry.yarnpkg.com/trim-newlines/-/trim-newlines-3.0.1.tgz#260a5d962d8b752425b32f3a7db0dcacd176c144"
   integrity sha512-c1PTsA3tYrIsLGkJkzHF+w9F2EyxfXGo4UyJc4pFL++FMjnq0HJS69T3M7d//gKrFKwy429bouPescbjecU+Zw==
 
 trim-off-newlines@^1.0.0:
