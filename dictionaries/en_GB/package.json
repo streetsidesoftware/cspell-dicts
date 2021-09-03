@@ -12,9 +12,10 @@
   },
   "scripts": {
     "build": "yarn run compile",
+    "sync": "yarn cpy \"../../node_modules/aoo-mozilla-en-dict/en_GB*/**\" src/aoo-mozilla-en-dict",
     "checksum": "shasum -c checksum.txt",
-    "compile": "cat source-files.txt | xargs cspell-tools compile-trie --merge en_GB -o . && yarn run gen-checksum",
-    "conditional-build": "yarn run --silent checksum || yarn run build",
+    "compile": "cat source-files.txt | xargs cspell-tools-cli compile --trie3 -x=compound --merge en_GB -o . && yarn run gen-checksum",
+    "conditional-build": "yarn run sync && yarn run --silent checksum || yarn run build",
     "gen-checksum": "cat source-files.txt source-dependencies.txt | sort -u | xargs shasum > checksum.txt",
     "prepublishOnly": "yarn test",
     "test-dict": "head -n 1000 \"./src/wordsEnGb.txt\" | cspell -v -c ./cspell-ext.json --local=en_gb --languageId=* stdin",
@@ -34,7 +35,7 @@
     "spelling"
   ],
   "author": "Jason Dent",
-  "license": "MIT",
+  "license": "GPL-3.0-or-later",
   "bugs": {
     "url": "https://github.com/streetsidesoftware/cspell-dicts/issues"
   },
@@ -42,7 +43,7 @@
   "files": [
     "en_GB.trie.gz",
     "cspell-ext.json",
-    "/src/hunspell/README_en_GB.txt"
+    "src/**/README_en_GB.txt"
   ],
   "directories": {
     "test": "tests"
