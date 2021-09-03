@@ -3,6 +3,17 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+## [2.0.1](https://github.com/streetsidesoftware/cspell-dicts/compare/@cspell/dict-pt-br@1.0.24...@cspell/dict-pt-br@2.0.1) (2021-09-03)
+
+
+### Bug Fixes
+
+* Update the Brazilian Portuguese Dictionary ([#585](https://github.com/streetsidesoftware/cspell-dicts/issues/585)) ([56f8c96](https://github.com/streetsidesoftware/cspell-dicts/commit/56f8c9663a7f2d93eff03d81f46c8ccbcf9ce41c))
+
+
+
+
+
 ## [1.0.24](https://github.com/streetsidesoftware/cspell-dicts/compare/@cspell/dict-pt-br@1.0.23...@cspell/dict-pt-br@1.0.24) (2020-11-28)
 
 **Note:** Version bump only for package @cspell/dict-pt-br
