@@ -45,6 +45,6 @@ Please add any words to [src/additional_words.txt](./src/additional_words.txt) b
 
 ## License
 
-MIT
+GPL-3.0-or-later
 
 > Some packages may have other licenses included.
