@@ -41,6 +41,6 @@ npm run build
 
 ## License
 
-MIT
+[GPL-3.0-or-later](./LICENSE)
 
 > Some packages may have other licenses included.
