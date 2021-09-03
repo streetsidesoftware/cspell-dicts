@@ -7,7 +7,7 @@
     "dictionaryDefinitions": [
         {
             "name": "pt-br",
-            "file": "./Portuguese-Brazilian.trie.gz",
+            "path": "./pt_BR.trie.gz",
             "description": "Portuguese (Brazilian) Dictionary"
         }
     ],
@@ -23,7 +23,7 @@
             "languageId": "*",
             // Language local. i.e. en-US, de-AT, or ru. * will match all locals.
             // Multiple locals can be specified like: "en, en-US" to match both English and English US.
-            "local": "pt,pt_BR",
+            "locale": "pt,pt_BR",
             // By default the whole text of a file is included for spell checking
             // Adding patterns to the "includeRegExpList" to only include matching patterns
             "includeRegExpList": [],

@@ -1,6 +1,6 @@
 {
   "name": "@cspell/dict-pt-br",
-  "version": "1.0.24",
+  "version": "2.0.0",
   "description": "Brazilian Portuguese dictionary for cspell.",
   "publishConfig": {
     "access": "public"
@@ -11,8 +11,15 @@
     "./cspell-ext.json": "./cspell-ext.json"
   },
   "scripts": {
-    "build": "cross-env NODE_OPTIONS=--max_old_space_size=12288 cspell-tools compile-trie \"Portuguese-Brazilian.dic\" -o .",
-    "test": "hunspell-reader words -n 1000 \"Portuguese-Brazilian.dic\" | cspell -v -c ./cspell-ext.json --local=pt --languageId=* stdin",
+    "build": "yarn run compile",
+    "sync": "yarn cpy \"../../node_modules/dictionary-pt/**\" src/hunspell",
+    "checksum": "shasum -c checksum.txt",
+    "compile": "cat source-files.txt | xargs cross-env NODE_OPTIONS=--max_old_space_size=12288 cspell-tools-cli compile --trie3 -x=compound --merge pt_BR -o . && yarn run gen-checksum",
+    "conditional-build": "yarn run sync && yarn run --silent checksum || yarn run build",
+    "gen-checksum": "cat source-files.txt source-dependencies.txt | sort -u | xargs shasum > checksum.txt",
+    "test-dict": "hunspell-reader words -n 1000 \"src/hunspell/index.dic\" | cspell -v -c ./cspell-ext.json --local=pt --languageId=* stdin",
+    "test-text": "cspell",
+    "test": "yarn run test-dict && yarn run test-text",
     "prepublishOnly": "yarn test"
   },
   "repository": {
@@ -21,19 +28,26 @@
   },
   "keywords": [
     "cspell",
+    "cspell-ext",
     "pt_BR",
     "Brazilian Portuguese",
     "dictionary",
     "spelling"
   ],
   "author": "Jason Dent",
-  "license": "MIT",
+  "license": "GPL-3.0-or-later",
   "bugs": {
     "url": "https://github.com/streetsidesoftware/cspell-dicts/issues"
   },
   "homepage": "https://github.com/streetsidesoftware/cspell-dicts/blob/main/dictionaries/pt_BR#readme",
   "files": [
-    "Portuguese-Brazilian.trie.gz",
+    "pt_BR.trie.gz",
+    "src/hunspell/license",
     "cspell-ext.json"
-  ]
+  ],
+  "devDependencies": {
+    "dictionary-pt": "^2.0.1",
+    "install": "^0.13.0",
+    "npm": "^7.22.0"
+  }
 }
