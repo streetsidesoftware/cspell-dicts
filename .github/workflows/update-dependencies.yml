@@ -25,6 +25,8 @@ jobs:
           ref: ${{ env.REF_BRANCH }}
       - name: Update
         run: yarn upgrade
+      - name: Lint
+        run: yarn lint
       - name: Has changes
         run: |
           git --no-pager diff --compact-summary  --exit-code && echo "git_status=clean" >> $GITHUB_ENV || echo "git_status=dirty" >> $GITHUB_ENV
