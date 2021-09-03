@@ -3,6 +3,17 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+# [2.1.0](https://github.com/streetsidesoftware/cspell-dicts/compare/@cspell/dict-en_us@2.0.2...@cspell/dict-en_us@2.1.0) (2021-09-03)
+
+
+### Features
+
+* Use a maintained English Dictionary [#66](https://github.com/streetsidesoftware/cspell-dicts/issues/66) ([#581](https://github.com/streetsidesoftware/cspell-dicts/issues/581)) ([150e51c](https://github.com/streetsidesoftware/cspell-dicts/commit/150e51cd13109606f9c6e0598a4db1bb2faca6e0)), closes [/github.com/streetsidesoftware/cspell/issues/66#issuecomment-540920144](https://github.com//github.com/streetsidesoftware/cspell/issues/66/issues/issuecomment-540920144)
+
+
+
+
+
 ## [2.0.2](https://github.com/streetsidesoftware/cspell-dicts/compare/@cspell/dict-en_us@2.0.1...@cspell/dict-en_us@2.0.2) (2021-08-30)
 
 
