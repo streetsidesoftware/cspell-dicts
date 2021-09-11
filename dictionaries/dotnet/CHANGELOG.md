@@ -3,6 +3,14 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+## [1.0.31](https://github.com/streetsidesoftware/cspell-dicts/compare/@cspell/dict-dotnet@1.0.30...@cspell/dict-dotnet@1.0.31) (2021-09-11)
+
+**Note:** Version bump only for package @cspell/dict-dotnet
+
+
+
+
+
 ## [1.0.30](https://github.com/streetsidesoftware/cspell-dicts/compare/@cspell/dict-dotnet@1.0.29...@cspell/dict-dotnet@1.0.30) (2021-08-18)
 
 **Note:** Version bump only for package @cspell/dict-dotnet
