@@ -1,7 +1,7 @@
 {
   "name": "@cspell/dict-sv",
-  "version": "1.0.25",
-  "description": "Swedish dictionary for cspell.",
+  "version": "2.0.0",
+  "description": "Swedish dictionary for CSpell.",
   "publishConfig": {
     "access": "public"
   },
@@ -11,9 +11,15 @@
     "./cspell-ext.json": "./cspell-ext.json"
   },
   "scripts": {
-    "build": "cspell-tools compile-trie \"Swedish.dic\" -o .",
-    "test": "hunspell-reader words -n 1000 \"Swedish.dic\" | cspell -v -c ./cspell-ext.json --local=sv --languageId=* stdin",
-    "prepublishOnly": "yarn test"
+    "build": "cat source-files.txt | xargs cross-env NODE_OPTIONS=--max_old_space_size=12288 cspell-tools-cli compile --trie3 -x=compound -o . -M Swedish && yarn run gen-checksum",
+    "sync": "yarn cpy \"../../node_modules/dictionary-sv/**\" src/hunspell",
+    "checksum": "shasum -c checksum.txt",
+    "conditional-build": "yarn run --silent checksum || yarn run build",
+    "gen-checksum": "cat source-files.txt source-dependencies.txt | xargs shasum > checksum.txt",
+    "test-sv": "hunspell-reader words -n 1000 \"src/ooo-swedish-dict-2-42/dictionaries/sv_SE.dic\" | tail -n 200 | cspell -v -c ./cspell-ext.json --local=sv --languageId=* stdin",
+    "test-samples": "cspell -v -c ./cspell-ext.json --local=sv,en \"samples/**\"",
+    "test": "yarn run test-sv && yarn run test-samples",
+    "prepublishOnly": "yarn run conditional-build && yarn test"
   },
   "repository": {
     "type": "git",
@@ -21,13 +27,14 @@
   },
   "keywords": [
     "cspell",
+    "cspell-ext",
     "sv",
     "Swedish",
     "dictionary",
     "spelling"
   ],
   "author": "Jason Dent",
-  "license": "MIT",
+  "license": "GPL-3.0-or-later",
   "bugs": {
     "url": "https://github.com/streetsidesoftware/cspell-dicts/issues"
   },
@@ -35,5 +42,8 @@
   "files": [
     "Swedish.trie.gz",
     "cspell-ext.json"
-  ]
+  ],
+  "devDependencies": {
+    "dictionary-sv": "^3.0.2"
+  }
 }

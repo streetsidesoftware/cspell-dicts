@@ -4,6 +4,12 @@
     "import": [
         "./cspell-ext.json"
     ],
+    "overrides": [
+        {
+            "filename": "samples/**/*.md",
+            "caseSensitive": true
+        }
+    ],
     "words": [
         "LGPL"
     ]
