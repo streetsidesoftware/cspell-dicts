@@ -33,14 +33,6 @@ The `cspell-ext.json` file in this package should be added to the import section
 }
 ```
 
-## Building
-
-Building is only necessary if you want to modify the contents of the dictionary. Note: Building will take a few minutes for large files.
-
-```sh
-npm run build
-```
-
 ## Resources
 
 The Hunspell source for this dictionary can be found:
@@ -49,6 +41,21 @@ The Hunspell source for this dictionary can be found:
 
 ## License
 
-MIT
+GPL-3.0-or-later
 
 > Some packages may have other licenses included.
+
+# Contributing
+
+## Adding Missing Words
+
+Please add words to [additional_words.txt](./src/additional_words.txt)
+
+## Building
+
+Building is only necessary if you want to modify the contents of the dictionary.
+Note: Building the Russian dictionary takes at least 30 minutes.
+
+```sh
+yarn run build
+```
