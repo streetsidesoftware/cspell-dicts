@@ -1,6 +1,6 @@
 {
   "name": "@cspell/dict-ru_ru",
-  "version": "1.3.4",
+  "version": "2.0.0",
   "description": "Russian dictionary for cspell.",
   "publishConfig": {
     "access": "public"
@@ -11,7 +11,8 @@
     "./cspell-ext.json": "./cspell-ext.json"
   },
   "scripts": {
-    "build": "cat source-files.txt | xargs cross-env NODE_OPTIONS=--max_old_space_size=12288 cspell-tools compile-trie -o . -M ru_ru && yarn run gen-checksum",
+    "build": "cat source-files.txt | xargs cross-env NODE_OPTIONS=--max_old_space_size=12288 cspell-tools-cli compile --trie3 -x=compound -o . -M ru_ru && yarn run gen-checksum",
+    "sync": "yarn cpy \"../../node_modules/dictionary-ru/**\" src/hunspell",
     "checksum": "shasum -c checksum.txt",
     "conditional-build": "yarn run --silent checksum || yarn run build",
     "gen-checksum": "cat source-files.txt source-dependencies.txt | xargs shasum > checksum.txt",
@@ -27,13 +28,14 @@
   },
   "keywords": [
     "cspell",
+    "cspell-ext",
     "ru_RU",
     "Russian",
     "dictionary",
     "spelling"
   ],
   "author": "Jason Dent",
-  "license": "MIT",
+  "license": "GPL-3.0-or-later",
   "bugs": {
     "url": "https://github.com/streetsidesoftware/cspell-dicts/issues"
   },
@@ -41,6 +43,10 @@
   "files": [
     "LICENSE.*",
     "ru_ru.trie.gz",
+    "src/hunspell/license",
     "cspell-ext.json"
-  ]
+  ],
+  "devDependencies": {
+    "dictionary-ru": "^2.0.2"
+  }
 }
