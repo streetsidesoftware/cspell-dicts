@@ -3,11 +3,13 @@
     "id": "sv",
     "name": "Swedish Dictionary",
     "description": "Swedish Dictionary",
+    "version": "0.2",
+    "readonly": true,
     // List of dictionary files to add to the global list of dictionaries
     "dictionaryDefinitions": [
         {
             "name": "sv",
-            "file": "./Swedish.trie.gz",
+            "path": "./Swedish.trie.gz",
             "description": "Swedish Dictionary"
         }
     ],
@@ -23,7 +25,7 @@
             "languageId": "*",
             // Language local. i.e. en-US, de-AT, or ru. * will match all locals.
             // Multiple locals can be specified like: "en, en-US" to match both English and English US.
-            "local": "sv",
+            "locale": "sv,sv_SE",
             // By default the whole text of a file is included for spell checking
             // Adding patterns to the "includeRegExpList" to only include matching patterns
             "includeRegExpList": [],
