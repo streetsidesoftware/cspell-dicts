@@ -19,11 +19,11 @@ npm install dictionary-sv
 ## Use
 
 ```js
-var sv = require('dictionary-sv')
+var sv = require('dictionary-sv');
 
 sv(function (err, result) {
-  console.log(err || result)
-})
+  console.log(err || result);
+});
 ```
 
 Yields:
@@ -39,11 +39,11 @@ UTF-8).
 Or directly load the files, using something like:
 
 ```js
-var path = require('path')
-var base = require.resolve('dictionary-sv')
+var path = require('path');
+var base = require.resolve('dictionary-sv');
 
-fs.readFileSync(path.join(base, 'index.dic'), 'utf-8')
-fs.readFileSync(path.join(base, 'index.aff'), 'utf-8')
+fs.readFileSync(path.join(base, 'index.dic'), 'utf-8');
+fs.readFileSync(path.join(base, 'index.aff'), 'utf-8');
 ```
 
 ## License
@@ -52,21 +52,12 @@ Dictionary and affix file: [LGPL-3.0](https://github.com/wooorm/dictionaries/blo
 Rest: [MIT][] © [Titus Wormer][home].
 
 [hunspell]: https://hunspell.github.io
-
 [nodehun]: https://github.com/nathanjsweet/nodehun
-
 [nspell]: https://github.com/wooorm/nspell
-
 [macos]: https://github.com/wooorm/dictionaries#macos
-
 [source]: https://extensions.libreoffice.org/extensions/swedish-spelling-dictionary-den-stora-svenska-ordlistan
-
 [npm]: https://docs.npmjs.com/cli/install
-
 [dictionaries]: https://github.com/wooorm/dictionaries
-
 [mit]: https://github.com/wooorm/dictionaries/blob/main/license
-
 [buffer]: https://nodejs.org/api/buffer.html#buffer_buffer
-
 [home]: https://wooorm.com
