@@ -3,6 +3,17 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+## [2.0.1](https://github.com/streetsidesoftware/cspell-dicts/compare/@cspell/dict-ru_ru@1.3.4...@cspell/dict-ru_ru@2.0.1) (2021-09-12)
+
+
+### Bug Fixes
+
+* Update the Russian Dictionary to V2 ([#600](https://github.com/streetsidesoftware/cspell-dicts/issues/600)) ([4fd78b7](https://github.com/streetsidesoftware/cspell-dicts/commit/4fd78b77b91f1f7f4aaad547574df55a789a070e))
+
+
+
+
+
 ## [1.3.4](https://github.com/streetsidesoftware/cspell-dicts/compare/@cspell/dict-ru_ru@1.3.3...@cspell/dict-ru_ru@1.3.4) (2020-11-28)
 
 **Note:** Version bump only for package @cspell/dict-ru_ru
