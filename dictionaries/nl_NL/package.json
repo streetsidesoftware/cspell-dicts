@@ -17,7 +17,7 @@
     "compile": "cat source-files.txt | xargs cspell-tools-cli compile --trie3 -x compound --merge Dutch -o . && yarn run gen-checksum",
     "conditional-build": "yarn run sync && yarn run --silent checksum || yarn run build",
     "gen-checksum": "cat source-files.txt source-dependencies.txt | sort -u | xargs shasum > checksum.txt",
-    "test-dict": "hunspell-reader words -n 1000 \"src/Dutch.dic\" | cspell -v -c ./cspell-ext.json --local=nl --languageId=* stdin",
+    "test-dict": "hunspell-reader words -n 1000 \"src/hunspell/index.dic\" | cspell -v -c ./cspell-ext.json --local=nl --languageId=* stdin",
     "test-text": "cspell",
     "test": "yarn run test-dict && yarn run test-text",
     "prepublishOnly": "yarn test"
