@@ -11,10 +11,15 @@
     "./cspell-ext.json": "./cspell-ext.json"
   },
   "scripts": {
-    "build": "cspell-tools-cli compile --trie3 -x compound \"Dutch.dic\" -o .",
-    "test": "yarn test-words && yarn test-spell",
-    "test-spell": "cspell \"**\"",
-    "test-words": "hunspell-reader words -n 1000 \"Dutch.dic\" | cspell -v -c ./cspell-ext.json --local=nl --languageId=* stdin",
+    "build": "yarn run compile",
+    "sync": "yarn cpy \"../../node_modules/dictionary-nl/**\" src/hunspell",
+    "checksum": "shasum -c checksum.txt",
+    "compile": "cat source-files.txt | xargs cspell-tools-cli compile --trie3 -x compound --merge Dutch -o . && yarn run gen-checksum",
+    "conditional-build": "yarn run sync && yarn run --silent checksum || yarn run build",
+    "gen-checksum": "cat source-files.txt source-dependencies.txt | sort -u | xargs shasum > checksum.txt",
+    "test-dict": "hunspell-reader words -n 1000 \"src/Dutch.dic\" | cspell -v -c ./cspell-ext.json --local=nl --languageId=* stdin",
+    "test-text": "cspell",
+    "test": "yarn run test-dict && yarn run test-text",
     "prepublishOnly": "yarn test"
   },
   "repository": {
@@ -37,9 +42,10 @@
   "files": [
     "Dutch.trie.gz",
     "cspell-ext.json",
-    "Dutch.txt"
+    "src/hunspell/license"
   ],
   "devDependencies": {
-    "@cspell/cspell-tools": "^5.8.2"
+    "@cspell/cspell-tools": "^5.8.2",
+    "dictionary-nl": "^1.4.0"
   }
 }
