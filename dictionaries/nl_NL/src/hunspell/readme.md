@@ -19,11 +19,11 @@ npm install dictionary-nl
 ## Use
 
 ```js
-var nl = require('dictionary-nl')
+var nl = require('dictionary-nl');
 
 nl(function (err, result) {
-  console.log(err || result)
-})
+  console.log(err || result);
+});
 ```
 
 Yields:
@@ -39,11 +39,11 @@ UTF-8).
 Or directly load the files, using something like:
 
 ```js
-var path = require('path')
-var base = require.resolve('dictionary-nl')
+var path = require('path');
+var base = require.resolve('dictionary-nl');
 
-fs.readFileSync(path.join(base, 'index.dic'), 'utf-8')
-fs.readFileSync(path.join(base, 'index.aff'), 'utf-8')
+fs.readFileSync(path.join(base, 'index.dic'), 'utf-8');
+fs.readFileSync(path.join(base, 'index.aff'), 'utf-8');
 ```
 
 ## License
@@ -52,21 +52,12 @@ Dictionary and affix file: [(BSD-3-Clause OR CC-BY-3.0)](https://github.com/wooo
 Rest: [MIT][] © [Titus Wormer][home].
 
 [hunspell]: https://hunspell.github.io
-
 [nodehun]: https://github.com/nathanjsweet/nodehun
-
 [nspell]: https://github.com/wooorm/nspell
-
 [macos]: https://github.com/wooorm/dictionaries#macos
-
 [source]: https://github.com/OpenTaal/opentaal-hunspell
-
 [npm]: https://docs.npmjs.com/cli/install
-
 [dictionaries]: https://github.com/wooorm/dictionaries
-
 [mit]: https://github.com/wooorm/dictionaries/blob/main/license
-
 [buffer]: https://nodejs.org/api/buffer.html#buffer_buffer
-
 [home]: https://wooorm.com
