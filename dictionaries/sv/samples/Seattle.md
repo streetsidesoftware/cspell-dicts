@@ -23,7 +23,6 @@ Under 1870-talet upptäcktes kolfyndigheter nära Lake Washington. Staden fick j
 
 <!---
 cspell:words Duwamps Duwamish Suquamish Alki Sealth
-cspell:words styrelsesäte kolfyndigheter järnvägsanslutning grossisthandel skeppsbyggande
-cspell:words befolkningsräkningen Seattleites Seattleiter skogshuggningsindustrin Swinson Duwamishfloden
+cspell:words Seattleites Seattleiter Swinson Duwamishfloden
 cspell:ignore Duwumps Siʔaɫ
 --->
