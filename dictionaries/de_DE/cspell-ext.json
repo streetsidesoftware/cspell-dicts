@@ -9,7 +9,7 @@
         {
             "name": "de-de",
             "path": "./de_DE.trie.gz",
-            "description": "German (de-DE) Dictionary.",
+            "description": "German (de-DE) Dictionary."
         }
     ],
     // Dictionaries to always be used.
@@ -35,9 +35,7 @@
             // This could be included in "ignoreRegExpList": ["mdash"]
             "patterns": [],
             // List of dictionaries to enable by name in `dictionaryDefinitions`
-            "dictionaries": [
-                "de-de"
-            ],
+            "dictionaries": ["de-de"],
             // Dictionary definitions can also be supplied here. They are only used iff "languageId" and "local" match.
             "dictionaryDefinitions": []
         }
