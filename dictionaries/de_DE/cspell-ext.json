@@ -3,14 +3,13 @@
     "id": "de-de",
     "name": "German Dictionary",
     "description": "German (de-DE) Dictionary.",
+    "readonly": true,
     // List of dictionary files to add to the global list of dictionaries
     "dictionaryDefinitions": [
         {
             "name": "de-de",
-            "file": "./German_de_DE.trie.gz",
-            "description": "German (de-DE) Dictionary.",
-            // We should use compound words by default with German
-            "useCompounds": true
+            "path": "./de_DE.trie.gz",
+            "description": "German (de-DE) Dictionary."
         }
     ],
     // Dictionaries to always be used.
@@ -25,7 +24,7 @@
             "languageId": "*",
             // Language local. i.e. en-US, de-AT, or ru. * will match all locals.
             // Multiple locals can be specified like: "en, en-US" to match both English and English US.
-            "local": "de,de_DE",
+            "locale": "de,de_DE",
             // By default the whole text of a file is included for spell checking
             // Adding patterns to the "includeRegExpList" to only include matching patterns
             "includeRegExpList": [],

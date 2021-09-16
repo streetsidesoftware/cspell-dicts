@@ -7,5 +7,5 @@ Um den Wasserstand im Kanalsystem bei 40 Zentimeter unter NAP (NAP = Normaal Ams
 Verantwortlich für den Betrieb und die Unterhaltung des gesamten Kanals ist Rijkswaterstaat, die ausführende Behörde des niederländischen Ministeriums für Infrastruktur und Umwelt zum Bau und Unterhalt von Straßen und Wasserwegen.
 
 <!---
-cspell:words Noordzeekanaal Schellingwoude Rijkswaterstaat Tiel IJmuiden
+cspell:words Noordzeekanaal IJmuiden Schellingwoude Markermeer Normaal Rijkswaterstaat Tiel
 --->

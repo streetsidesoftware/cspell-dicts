@@ -1,9 +1,7 @@
 {
+    "version": "0.2",
     "files": [
         "**/*.{md,txt}"
-    ],
-    "dictionaries": [
-        "de-de"
     ],
     "import": [
         "./cspell-ext.json"
@@ -15,5 +13,14 @@
         "Naber",
         "zeiler",
         "Zeiler"
+    ],
+    "overrides": [
+        {
+            "filename": "samples/**/*.md",
+            "caseSensitive": true,
+            "dictionaries": [
+                "de-de"
+            ]
+        }
     ]
 }
