@@ -3,6 +3,17 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+## [2.0.1](https://github.com/streetsidesoftware/cspell-dicts/compare/@cspell/dict-de-de@1.1.32...@cspell/dict-de-de@2.0.1) (2021-09-16)
+
+
+### Bug Fixes
+
+* Update German Dictionary ([#612](https://github.com/streetsidesoftware/cspell-dicts/issues/612)) ([be28d3c](https://github.com/streetsidesoftware/cspell-dicts/commit/be28d3c47d05c0ed1210bbad2b257132e3a72acc))
+
+
+
+
+
 ## [1.1.32](https://github.com/streetsidesoftware/cspell-dicts/compare/@cspell/dict-de-de@1.1.31...@cspell/dict-de-de@1.1.32) (2021-05-11)
 
 **Note:** Version bump only for package @cspell/dict-de-de
