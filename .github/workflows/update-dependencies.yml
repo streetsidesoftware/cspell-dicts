@@ -24,7 +24,9 @@ jobs:
         with:
           ref: ${{ env.REF_BRANCH }}
       - name: Update
-        run: yarn upgrade
+        run: |
+          yarn
+          yarn upgrade
       - name: Install
         run: yarn
       - name: Lint
