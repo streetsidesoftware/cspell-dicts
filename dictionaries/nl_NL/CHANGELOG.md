@@ -3,6 +3,17 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+## [2.0.1](https://github.com/streetsidesoftware/cspell-dicts/compare/@cspell/dict-nl-nl@2.0.0...@cspell/dict-nl-nl@2.0.1) (2021-09-16)
+
+
+### Bug Fixes
+
+* Update Dutch dictionary to 2020 version. ([#606](https://github.com/streetsidesoftware/cspell-dicts/issues/606)) ([cd4fa2e](https://github.com/streetsidesoftware/cspell-dicts/commit/cd4fa2e18fa7738eee08800e37cb029c3fa7f6fe))
+
+
+
+
+
 # [2.0.0](https://github.com/streetsidesoftware/cspell-dicts/compare/@cspell/dict-nl-nl@1.0.35...@cspell/dict-nl-nl@2.0.0) (2021-08-26)
 
 

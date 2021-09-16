@@ -3,6 +3,18 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+## [2.0.2](https://github.com/streetsidesoftware/cspell-dicts/compare/@cspell/dict-pt-br@2.0.1...@cspell/dict-pt-br@2.0.2) (2021-09-16)
+
+
+### Bug Fixes
+
+* Rebuild dictionaries with Hunspell compound support ([#607](https://github.com/streetsidesoftware/cspell-dicts/issues/607)) ([2e50ec3](https://github.com/streetsidesoftware/cspell-dicts/commit/2e50ec30dae89bef42c673265e9854b61598f786))
+* Update the Russian Dictionary to V2 ([#600](https://github.com/streetsidesoftware/cspell-dicts/issues/600)) ([4fd78b7](https://github.com/streetsidesoftware/cspell-dicts/commit/4fd78b77b91f1f7f4aaad547574df55a789a070e))
+
+
+
+
+
 ## [2.0.1](https://github.com/streetsidesoftware/cspell-dicts/compare/@cspell/dict-pt-br@1.0.24...@cspell/dict-pt-br@2.0.1) (2021-09-03)
 
 

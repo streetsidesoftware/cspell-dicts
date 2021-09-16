@@ -3,6 +3,17 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+## [2.0.2](https://github.com/streetsidesoftware/cspell-dicts/compare/@cspell/dict-sv@2.0.1...@cspell/dict-sv@2.0.2) (2021-09-16)
+
+
+### Bug Fixes
+
+* Rebuild dictionaries with Hunspell compound support ([#607](https://github.com/streetsidesoftware/cspell-dicts/issues/607)) ([2e50ec3](https://github.com/streetsidesoftware/cspell-dicts/commit/2e50ec30dae89bef42c673265e9854b61598f786))
+
+
+
+
+
 ## [2.0.1](https://github.com/streetsidesoftware/cspell-dicts/compare/@cspell/dict-sv@1.0.25...@cspell/dict-sv@2.0.1) (2021-09-12)
 
 **Note:** Version bump only for package @cspell/dict-sv
