@@ -1,13 +1,13 @@
 // cSpell Settings
 {
-    "id": "en-gb",
-    "name": "British English Dictionary",
-    "description": "British English Dictionary",
+    "id": "en-gb-mit",
+    "name": "British English Dictionary Limited",
+    "description": "British English Dictionary with MIT License",
     "readonly": true,
     // List of dictionary files to add to the global list of dictionaries
     "dictionaryDefinitions": [
         {
-            "name": "en-gb",
+            "name": "en-gb-mit",
             "path": "./en_GB.trie.gz",
             "repMap": [["'|`|’", "'"]],
             "description": "British English Dictionary"
@@ -38,7 +38,7 @@
                 }
             ],
             // List of dictionaries to enable by name in `dictionaryDefinitions`
-            "dictionaries": ["en-gb"],
+            "dictionaries": ["en-gb-mit"],
             // Dictionary definitions can also be supplied here
             "dictionaryDefinitions": []
         }
