@@ -1,0 +1,48 @@
+{
+  "name": "@cspell/dict-en-gb-mit",
+  "version": "2.0.0",
+  "description": "British English dictionary for cspell with MIT License.",
+  "publishConfig": {
+    "access": "public"
+  },
+  "exports": {
+    ".": "./cspell-ext.json",
+    "./cspell": "./cspell-ext.json",
+    "./cspell-ext.json": "./cspell-ext.json"
+  },
+  "scripts": {
+    "build": "yarn run compile",
+    "checksum": "shasum -c checksum.txt",
+    "compile": "cat source-files.txt | xargs cspell-tools-cli compile --trie3 -x compound --merge en_GB -o . && yarn run gen-checksum",
+    "conditional-build": "yarn run --silent checksum || yarn run build",
+    "gen-checksum": "cat source-files.txt source-dependencies.txt | sort -u | xargs shasum > checksum.txt",
+    "prepublishOnly": "yarn test",
+    "test-dict": "head -n 1000 \"./src/wordsEnGb.txt\" | cspell -v -c ./cspell-ext.json --local=en_gb --languageId=* stdin",
+    "test-text": "cspell -v -c ./cspell-ext.json --local=en_gb --languageId=* \"tests/*.txt\"",
+    "test": "yarn run test-dict && yarn run test-text"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/streetsidesoftware/cspell-dicts.git"
+  },
+  "keywords": [
+    "cspell",
+    "cspell-ext",
+    "en_GB",
+    "dictionary",
+    "spelling"
+  ],
+  "author": "Jason Dent",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/streetsidesoftware/cspell-dicts/issues"
+  },
+  "homepage": "https://github.com/streetsidesoftware/cspell-dicts/blob/main/dictionaries/en_GB#readme",
+  "files": [
+    "en_GB.trie.gz",
+    "cspell-ext.json"
+  ],
+  "directories": {
+    "test": "tests"
+  }
+}
