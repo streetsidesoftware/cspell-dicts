@@ -9,12 +9,7 @@
         {
             "name": "en-gb",
             "path": "./en_GB.trie.gz",
-            "repMap": [
-                [
-                    "'|`|’",
-                    "'"
-                ]
-            ],
+            "repMap": [["'|`|’", "'"]],
             "description": "British English Dictionary"
         }
     ],
@@ -29,7 +24,7 @@
             // * will match against any file type.
             "languageId": "*",
             // Language local. i.e. en-US, de-AT, or ru. * will match all locals.
-            "local": "en-GB",
+            "locale": "en-GB",
             //
             "ignoreRegExpList": [],
             "includeRegExpList": [],
@@ -43,9 +38,7 @@
                 }
             ],
             // List of dictionaries to enable by name in `dictionaryDefinitions`
-            "dictionaries": [
-                "en-gb"
-            ],
+            "dictionaries": ["en-gb"],
             // Dictionary definitions can also be supplied here
             "dictionaryDefinitions": []
         }

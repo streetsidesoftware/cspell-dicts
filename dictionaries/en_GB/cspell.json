@@ -1,15 +1,9 @@
 {
     "version": "0.2",
-    "files": [
-        "**/*.{md,txt}"
-    ],
+    "files": ["**/*.{md,txt}"],
     "language": "en-gb",
-    "import": [
-        "./cspell-ext.json"
-    ],
-    "ignorePaths": [
-        "/src"
-    ],
+    "import": ["./cspell-ext.json"],
+    "ignorePaths": ["/src"],
     "ignoreWords": [],
     "overrides": [
         {
@@ -17,12 +11,5 @@
             "enabled": false
         }
     ],
-    "words": [
-        "shasum",
-        "defenses",
-        "favor",
-        "mdash",
-        "noncommercially",
-        "xargs"
-    ]
+    "words": ["shasum", "defenses", "favor", "mdash", "noncommercially", "xargs"]
 }
