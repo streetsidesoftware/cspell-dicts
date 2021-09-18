@@ -1,6 +1,6 @@
 {
   "name": "@cspell/dict-fr-reforme",
-  "version": "1.0.16",
+  "version": "2.0.0",
   "description": "Français Réforme 1990 dictionary for cspell.",
   "publishConfig": {
     "access": "public"
@@ -11,9 +11,15 @@
     "./cspell-ext.json": "./cspell-ext.json"
   },
   "scripts": {
-    "build": "cspell-tools compile-trie \"fr-reforme1990.dic\" -o .",
-    "test": "hunspell-reader words -n 1000 \"fr-reforme1990.dic\" | cspell -v -c ./cspell-ext.json \"--local=fr\" \"--languageId=*\" stdin",
-    "prepublishOnly": "yarn test"
+    "build": "yarn run compile",
+    "checksum": "shasum -c checksum.txt",
+    "compile": "cat source-files.txt | xargs cspell-tools-cli compile --trie3 -x compound --merge fr-reforme1990 -o . && yarn run gen-checksum",
+    "conditional-build": "yarn run --silent checksum || yarn run build",
+    "gen-checksum": "cat source-files.txt source-dependencies.txt | sort -u | xargs shasum > checksum.txt",
+    "prepublishOnly": "yarn test",
+    "test-dict": "hunspell-reader words -n 1000 \"./src/hunspell-french-dictionaries-v7.0/fr-reforme1990.dic\" | cspell -v -c ./cspell-ext.json \"--local=fr\" \"--languageId=*\" stdin",
+    "test-text": "cspell -v -c ./cspell-ext.json --local=fr --languageId=* \"samples/**\"",
+    "test": "yarn run test-dict && yarn run test-text"
   },
   "repository": {
     "type": "git",
