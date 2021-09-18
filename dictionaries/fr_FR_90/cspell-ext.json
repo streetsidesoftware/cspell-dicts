@@ -2,12 +2,14 @@
 {
     "id": "fr-fr-90",
     "name": "Français Réforme 1990",
+    "version": "0.2",
     "description": "Français Réforme 1990 dictionary for cspell.",
+    "readonly": true,
     // List of dictionary files to add to the global list of dictionaries
     "dictionaryDefinitions": [
         {
             "name": "fr-fr-90",
-            "file": "./fr-reforme1990.trie.gz",
+            "path": "./fr-reforme1990.trie.gz",
             "description": "Français Réforme 1990 dictionary for cspell."
         }
     ],
@@ -23,12 +25,12 @@
             "languageId": "*",
             // Language local. i.e. en-US, de-AT, or ru. * will match all locals.
             // Multiple locals can be specified like: "en, en-US" to match both English and English US.
-            "local": "fr,fr-fr,fr-90",
+            "locale": "fr,fr-fr,fr-90",
             // By default the whole text of a file is included for spell checking
             // Adding patterns to the "includeRegExpList" to only include matching patterns
             "includeRegExpList": [],
             // To exclude patterns, add them to "ignoreRegExpList"
-            "ignoreRegExpList": ["/\\b(?:l|d|qu|s|m|n|jusqu|j|t|c|quelqu)['’]/gi"],
+            "ignoreRegExpList": [],
             // regex patterns than can be used with ignoreRegExpList or includeRegExpList
             // Example: "pattern": [{ "name": "mdash", "pattern": "&mdash;" }]
             // This could be included in "ignoreRegExpList": ["mdash"]
