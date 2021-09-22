@@ -3,6 +3,14 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+## [1.1.9](https://github.com/streetsidesoftware/cspell-dicts/compare/cspell-dict-python@1.1.8...cspell-dict-python@1.1.9) (2021-09-22)
+
+**Note:** Version bump only for package cspell-dict-python
+
+
+
+
+
 ## [1.1.8](https://github.com/streetsidesoftware/cspell-dicts/compare/cspell-dict-python@1.1.7...cspell-dict-python@1.1.8) (2021-07-13)
 
 **Note:** Version bump only for package cspell-dict-python

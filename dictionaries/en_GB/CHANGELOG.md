@@ -3,6 +3,17 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+# [3.1.0](https://github.com/streetsidesoftware/cspell-dicts/compare/@cspell/dict-en-gb@2.0.3...@cspell/dict-en-gb@3.1.0) (2021-09-22)
+
+
+### Features
+
+* License for en-GB to match the underlying License of dictionary ([#622](https://github.com/streetsidesoftware/cspell-dicts/issues/622)) ([e32c121](https://github.com/streetsidesoftware/cspell-dicts/commit/e32c121590363bc3664fcad97222c4b278ea2f41))
+
+
+
+
+
 ## [2.0.3](https://github.com/streetsidesoftware/cspell-dicts/compare/@cspell/dict-en-gb@2.0.2...@cspell/dict-en-gb@2.0.3) (2021-09-17)
 
 **Note:** Version bump only for package @cspell/dict-en-gb
