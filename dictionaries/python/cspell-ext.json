@@ -25,25 +25,22 @@
             // Apply settings
             "allowCompoundWords": true,
             "dictionaries": ["python"],
-            "ignoreRegExpList": ["binary_string", "f_string", "unicode_string", "raw_string"],
+            "ignoreRegExpList": ["ignore_string_literal_prefix"],
             "patterns": [
-                // Patterns to be ignored
                 {
-                    "name": "binary_string",
-                    "pattern": "\\bb'"
+                    // Pattern to be ignored
+                    "name": "ignore_string_literal_prefix",
+                    "pattern": "/\\b(?:rf|fr|f|r|u|ur|b|br)'/gi"
                 },
                 {
-                    "name": "f_string",
-                    "pattern": "\\b(?:rf|fr|f)'"
+                    "name": "string_binary",
+                    "pattern": "/\\bbr?(['\"]).*?\\1/gi"
                 },
                 {
-                    "name": "unicode_string",
-                    "pattern": "\\bu'"
+                    "name": "string_raw",
+                    "pattern": "/\\bu?r(['\"]).*?\\1/gi"
                 },
-                {
-                    "name": "raw_string",
-                    "pattern": "\\bu?r'"
-                },
+                // Redefine the "strings" and "comments" pattern to match Python
                 {
                     "name": "string-multi-line",
                     "pattern": "/(\"\"\"|''')[^\\1]*?\\1/g"
@@ -52,9 +49,9 @@
                     "name": "string-single-line",
                     "pattern": "/((?<!\\\\)(?:'|\"))(?!\\1).*?(?<!\\1)(?<!\\\\)\\1(?!\\1)/g"
                 },
-                // Redefine the "strings" and "comments" pattern to match Python
                 {
                     "name": "strings",
+                    "description": "Matches all strings in a Python File.",
                     "pattern": [
                         "/((?<!\\\\)(?:'|\"))(?!\\1).*?(?<!\\1)(?<!\\\\)\\1(?!\\1)/g", // Single line string
                         "/(\"\"\"|''')[^\\1]*?\\1/g" // Multi-line string
@@ -70,6 +67,7 @@
                 },
                 {
                     "name": "comments",
+                    "description": "Matches all comments in a Python File.",
                     "pattern": [
                         "/#.*/g", // Single line comment
                         "/(\"\"\"|''')[^\\1]*?\\1/g" // Multi line comment using multi-line string
