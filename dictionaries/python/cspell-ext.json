@@ -1,13 +1,15 @@
 // cSpell Settings
 {
     "id": "python",
+    "version": "0.2",
+    "readonly": true,
     "name": "Python Dictionary",
     "description": "Python Keyword Dictionary",
     // List of dictionary files to add to the global list of dictionaries
     "dictionaryDefinitions": [
         {
             "name": "python",
-            "file": "./python.txt.gz",
+            "path": "./python.txt.gz",
             "description": "Python Keyword Dictionary"
         }
     ],
@@ -20,23 +22,59 @@
         {
             // Matching Language
             "languageId": "python",
-
             // Apply settings
             "allowCompoundWords": true,
             "dictionaries": ["python"],
             "ignoreRegExpList": ["binary_string", "f_string", "unicode_string", "raw_string"],
             "patterns": [
                 // Patterns to be ignored
-                { "name": "binary_string", "pattern": "\\bb'" },
-                { "name": "f_string", "pattern": "\\b(?:rf|fr|f)'" },
-                { "name": "unicode_string", "pattern": "\\bu'" },
-                { "name": "raw_string", "pattern": "\\bu?r'" },
+                {
+                    "name": "binary_string",
+                    "pattern": "\\bb'"
+                },
+                {
+                    "name": "f_string",
+                    "pattern": "\\b(?:rf|fr|f)'"
+                },
+                {
+                    "name": "unicode_string",
+                    "pattern": "\\bu'"
+                },
+                {
+                    "name": "raw_string",
+                    "pattern": "\\bu?r'"
+                },
+                {
+                    "name": "string-multi-line",
+                    "pattern": "/(\"\"\"|''')[^\\1]*?\\1/g"
+                },
+                {
+                    "name": "string-single-line",
+                    "pattern": "/((?<!\\\\)(?:'|\"))(?!\\1).*?(?<!\\1)(?<!\\\\)\\1(?!\\1)/g"
+                },
                 // Redefine the "strings" and "comments" pattern to match Python
                 {
                     "name": "strings",
-                    "pattern": "/(?:(\"\"\"|''')[^\\1]*?\\1|((?<!\\\\)(?:'|\")).*?(?<!\\\\)\\2)/g"
+                    "pattern": [
+                        "/((?<!\\\\)(?:'|\"))(?!\\1).*?(?<!\\1)(?<!\\\\)\\1(?!\\1)/g", // Single line string
+                        "/(\"\"\"|''')[^\\1]*?\\1/g" // Multi-line string
+                    ]
                 },
-                { "name": "comments", "pattern": "/#.*/g" }
+                {
+                    "name": "comment-single-line",
+                    "pattern": "/#.*/g"
+                },
+                {
+                    "name": "comment-multi-line",
+                    "pattern": "/(\"\"\"|''')[^\\1]*?\\1/g"
+                },
+                {
+                    "name": "comments",
+                    "pattern": [
+                        "/#.*/g", // Single line comment
+                        "/(\"\"\"|''')[^\\1]*?\\1/g" // Multi line comment using multi-line string
+                    ]
+                }
             ]
         }
     ]
