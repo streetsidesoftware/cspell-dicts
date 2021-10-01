@@ -11,7 +11,7 @@
     "./cspell-ext.json": "./cspell-ext.json"
   },
   "scripts": {
-    "build": "cspell-tools compile \"softwareTerms.txt\" -o .",
+    "build": "cat source-files.txt | xargs cspell-tools compile -o . -M softwareTerms.txt",
     "test": "cat \"softwareTerms.txt\" | cspell -v -c ./cspell-ext.json \"--local=*\" \"--languageId=*\" stdin",
     "prepublishOnly": "yarn test",
     "prepare": "yarn run build"
