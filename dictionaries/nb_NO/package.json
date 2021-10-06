@@ -12,7 +12,7 @@
   },
   "scripts": {
     "build": "cross-env NODE_OPTIONS=--max_old_space_size=8192 cspell-tools-cli compile --trie3 -x compound \"src/nb.dic\" -o .",
-    "test-words": "hunspell-reader words -n 1000 \"src/nb.dic\" | cspell -v -c ./cspell-ext.json \"--local=nb, no-nb\" \"--languageId=*\" stdin",
+    "test-words": "hunspell-reader words -n 1000 \"src/nb.dic\" | cspell -v -c ./cspell-ext.json \"--local=nb\" \"--languageId=*\" stdin",
     "test-samples": "cspell \"samples/**\"",
     "test": "yarn run test-words && yarn run test-samples",
     "prepublishOnly": "yarn test",
