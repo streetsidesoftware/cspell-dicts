@@ -3,6 +3,17 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+## [3.1.1](https://github.com/streetsidesoftware/cspell-dicts/compare/@cspell/dict-en-gb@3.1.0...@cspell/dict-en-gb@3.1.1) (2021-10-06)
+
+
+### Bug Fixes
+
+* Update English GB dictionary ([#674](https://github.com/streetsidesoftware/cspell-dicts/issues/674)) ([9d10e52](https://github.com/streetsidesoftware/cspell-dicts/commit/9d10e52b788fa549b983a28e58395ff1747245c8))
+
+
+
+
+
 # [3.1.0](https://github.com/streetsidesoftware/cspell-dicts/compare/@cspell/dict-en-gb@2.0.3...@cspell/dict-en-gb@3.1.0) (2021-09-22)
 
 
