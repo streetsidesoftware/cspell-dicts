@@ -43,7 +43,6 @@ See: [How to Create a New Dictionary](https://github.com/streetsidesoftware/cspe
 
 ## License
 
-MIT
-GPL-2.0
+GPL-3.0
 
 > Some packages may have other licenses included.

@@ -1,8 +1,7 @@
 {
   "name": "@cspell/dict-no-nb",
   "version": "1.0.0",
-  "description": "Norwegian Bokmål dictionary for cspell. -- Private until verified",
-  "private": true,
+  "description": "Norwegian Bokmål dictionary for cspell.",
   "publishConfig": {
     "access": "public"
   },
@@ -12,8 +11,10 @@
     "./cspell-ext.json": "./cspell-ext.json"
   },
   "scripts": {
-    "build": "cross-env NODE_OPTIONS=--max_old_space_size=8192 cspell-tools-cli compile-trie \"src/nb.dic\" -o .",
-    "test": "hunspell-reader words -n 1000 \"src/nb.dic\" | cspell -v -c ./cspell-ext.json \"--local=nb, no-nb\" \"--languageId=*\" stdin",
+    "build": "cross-env NODE_OPTIONS=--max_old_space_size=8192 cspell-tools-cli compile --trie3 -x compound \"src/nb.dic\" -o .",
+    "test-words": "hunspell-reader words -n 1000 \"src/nb.dic\" | cspell -v -c ./cspell-ext.json \"--local=nb, no-nb\" \"--languageId=*\" stdin",
+    "test-samples": "cspell \"samples/**\"",
+    "test": "yarn run test-words && yarn run test-samples",
     "prepublishOnly": "yarn test",
     "prepare": "echo OK"
   },
@@ -23,13 +24,14 @@
   },
   "keywords": [
     "cspell",
+    "cspell-ext",
     "no_NB",
     "Norwegian Bokmål",
     "dictionary",
     "spelling"
   ],
   "author": "Jason Dent",
-  "license": "GPL-2.0",
+  "license": "GPL-3.0-or-later",
   "bugs": {
     "url": "https://github.com/streetsidesoftware/cspell-dicts/issues"
   },
@@ -39,7 +41,6 @@
   "files": [
     "nb.trie.gz",
     "cspell-ext.json",
-    "*.js",
-    "*.d.ts"
+    "src/README_nb_NO.md"
   ]
 }
