@@ -16,6 +16,7 @@ Various [cspell](https://github.com/streetsidesoftware/cspell) dictionaries. Eac
 - [Greek](dictionaries/el)
 - [Hebrew](dictionaries/he)
 - [Italian](dictionaries/it_IT)
+- [Norwegian Bokmål](dictionaries/no_NB)
 - [Persian](dictionaries/fa_IR)
 - [Polish](dictionaries/pl_PL)
 - [Portuguese - Brazilian](dictionaries/pt_BR)
