@@ -9,14 +9,14 @@ This is a pre-built dictionary for use with cspell.
 Global Install and add to cspell global settings.
 
 ```sh
-npm install -g @cspell/dict-no-nb
-cspell link add @cspell/dict-no-nb
+npm install -g @cspell/dict-nb-no
+cspell link add @cspell/dict-nb-no
 ```
 
 ## Uninstall from cspell
 
 ```sh
-cspell link remove @cspell/dict-no-nb
+cspell link remove @cspell/dict-nb-no
 ```
 
 ## Manual Installation
@@ -24,7 +24,7 @@ cspell link remove @cspell/dict-no-nb
 Manual installation is useful if you want to include this dictionary as part of your CI/CD lint process.
 
 ```
-npm i @cspell/dict-no-nb
+npm i @cspell/dict-nb-no
 ```
 
 The `cspell-ext.json` file in this package should be added to the import section in your `cspell.json` file.
@@ -32,7 +32,7 @@ The `cspell-ext.json` file in this package should be added to the import section
 ```javascript
 {
     // …
-    "import": ["@cspell/dict-no-nb/cspell-ext.json"],
+    "import": ["@cspell/dict-nb-no/cspell-ext.json"],
     // …
 }
 ```
