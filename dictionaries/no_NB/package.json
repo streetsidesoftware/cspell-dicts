@@ -1,0 +1,45 @@
+{
+    "name": "@cspell/dict-no-nb",
+    "version": "1.0.0",
+    "description": "Norwegian Bokmål dictionary for cspell. -- Private until verified",
+    "private": true,
+    "publishConfig": {
+        "access": "public"
+    },
+    "exports": {
+        ".": "./cspell-ext.json",
+        "./cspell": "./cspell-ext.json",
+        "./cspell-ext.json": "./cspell-ext.json"
+    },
+    "scripts": {
+        "build": "cross-env NODE_OPTIONS=--max_old_space_size=8192 cspell-tools-cli compile-trie \"src/nb.dic\" -o .",
+        "test": "hunspell-reader words -n 1000 \"src/nb.dic\" | cspell -v -c ./cspell-ext.json \"--local=nb, no-nb\" \"--languageId=*\" stdin",
+        "prepublishOnly": "yarn test",
+        "prepare": "echo OK"
+    },
+    "repository": {
+        "type": "git",
+        "url": "git+https://github.com/streetsidesoftware/cspell-dicts.git"
+    },
+    "keywords": [
+        "cspell",
+        "no_NB",
+        "Norwegian Bokmål",
+        "dictionary",
+        "spelling"
+    ],
+    "author": "Jason Dent",
+    "license": "GPL-2.0",
+    "bugs": {
+        "url": "https://github.com/streetsidesoftware/cspell-dicts/issues"
+    },
+    "homepage": "https://github.com/streetsidesoftware/cspell-dicts/blob/main/packages/no_NB#readme",
+    "devDependencies": {},
+    "dependencies": {},
+    "files": [
+        "nb.trie.gz",
+        "cspell-ext.json",
+        "*.js",
+        "*.d.ts"
+    ]
+}
