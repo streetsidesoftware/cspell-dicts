@@ -3,6 +3,17 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+## [0.0.11](https://github.com/streetsidesoftware/cspell-dicts/compare/generator-cspell-dicts@0.0.10...generator-cspell-dicts@0.0.11) (2021-10-06)
+
+
+### Bug Fixes
+
+* Make NO dict case sensitive ([#673](https://github.com/streetsidesoftware/cspell-dicts/issues/673)) ([b91a266](https://github.com/streetsidesoftware/cspell-dicts/commit/b91a266a7536e02389259cfb6febe87f760a20a8))
+
+
+
+
+
 ## [0.0.10](https://github.com/streetsidesoftware/cspell-dicts/compare/generator-cspell-dicts@0.0.9...generator-cspell-dicts@0.0.10) (2021-08-15)
 
 
