@@ -8,7 +8,7 @@
     // List of dictionary files to add to the global list of dictionaries
     "dictionaryDefinitions": [
         {
-            "name": "no-nb",
+            "name": "nb-no",
             "path": "./nb.trie.gz",
             "description": "Norwegian Bokmål dictionary for cspell."
         }
@@ -25,7 +25,7 @@
             "languageId": "*",
             // Language local. i.e. en-US, de-AT, or ru. * will match all locals.
             // Multiple locals can be specified like: "en, en-US" to match both English and English US.
-            "local": "nb, no-nb",
+            "locale": "nb, nb-no",
             // By default the whole text of a file is included for spell checking
             // Adding patterns to the "includeRegExpList" to only include matching patterns
             "includeRegExpList": [],
@@ -36,7 +36,9 @@
             // This could be included in "ignoreRegExpList": ["mdash"]
             "patterns": [],
             // List of dictionaries to enable by name in `dictionaryDefinitions`
-            "dictionaries": ["no-nb"],
+            "dictionaries": [
+                "nb-no"
+            ],
             // Dictionary definitions can also be supplied here. They are only used iff "languageId" and "local" match.
             "dictionaryDefinitions": []
         }
