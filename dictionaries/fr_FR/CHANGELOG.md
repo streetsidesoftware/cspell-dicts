@@ -3,6 +3,14 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+## [2.0.1](https://github.com/streetsidesoftware/cspell-dicts/compare/@cspell/dict-fr-fr@1.2.21...@cspell/dict-fr-fr@2.0.1) (2021-10-07)
+
+**Note:** Version bump only for package @cspell/dict-fr-fr
+
+
+
+
+
 ## [1.2.21](https://github.com/streetsidesoftware/cspell-dicts/compare/@cspell/dict-fr-fr@1.2.20...@cspell/dict-fr-fr@1.2.21) (2021-01-06)
 
 **Note:** Version bump only for package @cspell/dict-fr-fr
