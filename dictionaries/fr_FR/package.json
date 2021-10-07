@@ -1,6 +1,6 @@
 {
   "name": "@cspell/dict-fr-fr",
-  "version": "1.2.21",
+  "version": "2.0.0",
   "description": "French dictionary for cspell.",
   "publishConfig": {
     "access": "public"
@@ -11,11 +11,15 @@
     "./cspell-ext.json": "./cspell-ext.json"
   },
   "scripts": {
-    "build": "cspell-tools compile-trie \"French.dic\" -o .",
-    "test-dictionary": "hunspell-reader words -n 1000 \"French.dic\" | cspell -v -c ./cspell-ext.json --local=fr --languageId=* stdin",
-    "test-text": "cspell -v -c ./cspell-ext.json --local=fr ./test.md",
-    "test": "yarn run test-dictionary && yarn run test-text",
-    "prepublishOnly": "yarn test"
+    "build": "yarn run compile",
+    "checksum": "shasum -c checksum.txt",
+    "compile": "cat source-files.txt | xargs cspell-tools-cli compile --trie3 -x compound --merge fr-fr -o . && yarn run gen-checksum",
+    "conditional-build": "yarn run --silent checksum || yarn run build",
+    "gen-checksum": "cat source-files.txt source-dependencies.txt | sort -u | xargs shasum > checksum.txt",
+    "prepublishOnly": "yarn test",
+    "test-dict": "hunspell-reader words -n 1000 \"./src/hunspell-french-dictionaries-v7.0/fr-classique.dic\" | cspell -v -c ./cspell-ext.json \"--local=fr\" \"--languageId=*\" stdin",
+    "test-text": "cspell -v -c ./cspell-ext.json --local=fr --languageId=* \"samples/**\"",
+    "test": "yarn run test-dict && yarn run test-text"
   },
   "repository": {
     "type": "git",
@@ -23,6 +27,7 @@
   },
   "keywords": [
     "cspell",
+    "cspell-ext",
     "fr_FR",
     "French",
     "dictionary",
@@ -35,8 +40,8 @@
   },
   "homepage": "https://github.com/streetsidesoftware/cspell-dicts/blob/main/dictionaries/fr_FR#readme",
   "files": [
-    "French.trie.gz",
     "cspell-ext.json",
-    "French.txt"
+    "fr-fr.trie.gz",
+    "src/hunspell-french-dictionaries-v7.0/README_dict_fr.txt"
   ]
 }

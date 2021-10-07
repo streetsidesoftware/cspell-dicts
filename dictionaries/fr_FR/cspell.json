@@ -1,18 +1,12 @@
 {
-    "files": [
-        "**/*.{md,txt}"
-    ],
+    "files": ["**/*.{md,txt}"],
     "language": "en,fr",
-    "import": [
-        "./cspell-ext.json"
+    "import": ["./cspell-ext.json"],
+    "overrides": [
+        {
+            "filename": "samples/**",
+            "caseSensitive": true
+        }
     ],
-    "ignoreWords": [
-        "Bibauw",
-        "dicollecte",
-        "Lefff",
-        "Leywen",
-        "Philipp",
-        "RENOUVO",
-        "Sagot"
-    ]
+    "ignoreWords": ["Bibauw", "dicollecte", "Lefff", "Leywen", "Philipp", "RENOUVO", "Sagot"]
 }
