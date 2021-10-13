@@ -27,10 +27,15 @@ jobs:
         run: |
           yarn
           yarn upgrade
+      - name: update package.json
+        run: |
+          npx package-json-dependency-updater -u
       - name: Install
-        run: yarn
+        run: |
+          yarn
       - name: Lint
-        run: yarn lint
+        run: |
+          yarn lint
       - name: Has changes
         run: |
           git --no-pager diff --compact-summary  --exit-code && echo "git_status=clean" >> $GITHUB_ENV || echo "git_status=dirty" >> $GITHUB_ENV
