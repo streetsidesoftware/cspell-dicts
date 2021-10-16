@@ -14,18 +14,12 @@
 #define __stdcall
 #define _stdcall
 #define __alignof(x) 1
+#define __declspec(x)
+#define _declspec(x)
 
 #ifndef UNICODE
 #define UNICODE
 #endif
-
-#define __declspec(x)
-#define _declspec(x)
-
-// LPSZ: Long-pointer to null terminated string.
-typedef void* lpsz;
-// LPFN: Long-pointer to function
-typedef void* lpfn;
 
 #include <Windows.h>
 #include <WinUser.h>
@@ -33,3 +27,4 @@ typedef void* lpfn;
 #include <d3d12.h>
 #include <dxgi.h>
 #include <d2d1.h>
+#include <d3d.h>

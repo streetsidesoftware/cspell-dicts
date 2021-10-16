@@ -2,6 +2,7 @@ import subprocess
 import sys
 import traceback
 import re
+import itertools
 
 from pycparser import c_ast, parse_file
 
@@ -24,9 +25,17 @@ class DefNamesVisitor(c_ast.NodeVisitor):
             for decl in node.decls:
                 self.add_name(decl.name)
 
+def flatten(array):
+    return list(itertools.chain.from_iterable(array))
+
 def expand(line):
-    # Do camelCase/PascalCase/snake_case expansion
-    matches = re.findall(r'[a-z]+|[0-9]+|(?:[A-Z][a-z]+)|(?:[A-Z]+(?=(?:[A-Z][a-z])|[^AZa-z]|[$\d\n]))', line)
+    # Do camelCase/PascalCase expansion
+    matches = re.findall(r'.+?(?:(?<=[a-z])(?=[A-Z])|(?<=[A-Z])(?=[A-Z][a-z])|$)', line)
+    # Split snake_case strings
+    matches = flatten([term.split("_") for term in matches])
+    # Split around numbers
+    matches = flatten([re.split(r'[0-9]+', term) for term in matches])
+
     return [term for term in matches if len(term) > 3 and not term.isnumeric()]
 
 def process(lines):
