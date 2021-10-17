@@ -21,6 +21,9 @@
 #define UNICODE
 #endif
 
+// Common name for precompiled header files on Windows (see https://stackoverflow.com/a/4726838)
+typedef void* stdafx;
+
 #include <Windows.h>
 #include <WinUser.h>
 #include <winbase.h>
