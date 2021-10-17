@@ -113,7 +113,7 @@ if __name__ == "__main__":
 
     print("Running cl...")
 
-    text = subprocess.check_output(["cl"] + args + [filename], stderr=subprocess.DEVNULL)
+    text = subprocess.check_output(["cl"] + args + [filename])
 
     # Replace form-feed control character (\f, or \x0c) that might pop up in Windows' headers
     print("Removing form-feed characters...")

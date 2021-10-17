@@ -1663,6 +1663,7 @@ atdisk
 atexecute
 athens
 atim
+atime
 atip
 atlantic
 atlasimage
@@ -6392,6 +6393,7 @@ ctfmon
 ctfnolock
 ctfspui
 ctfutb
+ctime
 ctlcode
 ctlcolor
 ctlcolorbtn
@@ -6606,8 +6608,10 @@ cwmt
 cwmv
 cwmvx
 cwpretstruct
+cwprintf
 cwpstruct
 cwrappers
+cwscanf
 cwstr
 cwtest
 cwvc
@@ -12837,6 +12841,7 @@ fsfilterscope
 fshift
 fshort
 fsign
+fsize
 fsmajor
 fsmo
 fsnotify
@@ -13007,6 +13012,8 @@ functiondiscoveryapi
 functiondiscoveryprovider
 functionid
 functionname
+functionparameterreflection
+functionreflection
 functions
 functiontable
 functionw
@@ -13030,11 +13037,13 @@ fwdnoanswer
 fwdnumrings
 fwdstatusvalid
 fwduncond
+fwide
 fwidx
 fwpm
 fwpmtypes
 fwpmv
 fwpmx
+fwprintf
 fwps
 fwpstypes
 fwpsv
@@ -13042,6 +13051,7 @@ fwpsx
 fwptypes
 fwpvi
 fwrite
+fwscanf
 fxecho
 fxeq
 fxloudness
@@ -15191,6 +15201,7 @@ hlink
 hlitem
 hlnf
 hlocal
+hlsl
 hlsurf
 hmac
 hmacverification
@@ -17955,6 +17966,7 @@ isdn
 isdone
 isdpiaware
 isdsc
+isdst
 isdynamiccodepolicyenabled
 isecureurlhost
 iseditcontextuiactive
@@ -19367,6 +19379,7 @@ libraryconnect
 librarydisconnect
 libraryname
 libraryproperties
+libraryreflection
 librequestinformation
 libversion
 libya
@@ -19647,6 +19660,7 @@ linkfile
 linkid
 linkinfoinvalid
 linkinfovalidtime
+linking
 linkitem
 linklayer
 linklocal
@@ -21848,6 +21862,7 @@ mbnapi
 mbnucm
 mbps
 mbsdup
+mbsinit
 mbstate
 mbstatet
 mbstring
@@ -21886,6 +21901,7 @@ mdarndr
 mdasrvr
 mdaxis
 mdaxisinfo
+mday
 mdccsr
 mdcr
 mddefw
@@ -24065,6 +24081,7 @@ nitz
 nkoo
 nladmin
 nldef
+nlink
 nlock
 nloop
 nlpo
@@ -26657,6 +26674,7 @@ outctl
 outdated
 outdent
 outdoor
+outdupl
 outer
 outerheight
 outerhtml
@@ -30811,6 +30829,7 @@ rdbss
 rdce
 rdci
 rdeopt
+rdev
 rdib
 rdid
 rdintthreshold
@@ -33146,6 +33165,7 @@ scwavein
 scwavemix
 scwaveout
 scwmi
+scwprintf
 sdate
 sdayname
 sdbapi
@@ -40393,6 +40413,8 @@ vcexport
 vcomm
 vcookie
 vcrt
+vcwprintf
+vcwscanf
 vdbe
 vdir
 vdisk
@@ -40516,6 +40538,8 @@ vftprintf
 vftscanf
 vfwapi
 vfwapiv
+vfwprintf
+vfwscanf
 vgacolor
 vhandle
 vhdr
@@ -40862,6 +40886,7 @@ vsclass
 vscroll
 vscrollclipboard
 vsctprintf
+vscwprintf
 vsdt
 vsearch
 vselp
@@ -40872,6 +40897,7 @@ vsmgmt
 vsnprintf
 vsntprintf
 vsnwprintf
+vsnwscanf
 vsource
 vsourceclients
 vspace
@@ -40885,6 +40911,7 @@ vstscanf
 vstyle
 vswitch
 vswprintf
+vswscanf
 vsync
 vtab
 vtable
@@ -40905,6 +40932,8 @@ vuimmlv
 vuinrf
 vulnerability
 vwifi
+vwprintf
+vwscanf
 vxdgroups
 vxdinitcomplete
 vxdldr
@@ -41100,10 +41129,12 @@ wcsset
 wcsspnp
 wcstok
 wcswcs
+wctime
 wctomb
 wctp
 wctype
 wdag
+wday
 wdbgapi
 wdbgapiv
 wdbgexts
@@ -41633,6 +41664,11 @@ wmdrmota
 wmdrmtuner
 wmdunpackfailed
 wmdxva
+wmemchr
+wmemcmp
+wmemcpy
+wmemmove
+wmemset
 wmiapi
 wmiextension
 wmifilters
@@ -41805,6 +41841,7 @@ wpcevent
 wpcprov
 wpdnse
 wpgmptr
+wprintf
 wprogid
 wpropget
 wpropset
@@ -42290,6 +42327,7 @@ yaxis
 yaxisab
 yborder
 ycbcr
+yday
 ydpi
 year
 yearly
