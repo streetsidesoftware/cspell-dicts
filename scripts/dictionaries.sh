@@ -15,7 +15,9 @@ echo "| -- | -- | -- |"
 find -s ./dictionaries -name "package.json" -depth 2 \
     -execdir echo -n "| [" \; \
     -execdir jq -j .name package.json \; \
-    -exec echo -n "]("{}") | " \; \
+    -execdir echo -n "](" \; \
+    -exec sh -c "dirname {} | xargs echo -n" \; \
+    -execdir echo -n "#readme) | " \; \
     -execdir sh -c "cat cspell-ext.json | jsmin | jq -j .name" \; \
     -execdir echo -n " | " \; \
     -execdir sh -c "cat cspell-ext.json | jsmin | jq -j .description" \; \
