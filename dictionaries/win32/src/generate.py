@@ -20,20 +20,22 @@ class DefNamesVisitor(c_ast.NodeVisitor):
     def visit_Decl(self, node):
         if node.name != None:
             self.add_name(node.name)
+        c_ast.NodeVisitor.generic_visit(self, node)
 
     def visit_FuncDef(self, node):
         self.add_name(node.decl.name)
 
     def visit_Typedef(self, node):
         self.add_name(node.name)
+        c_ast.NodeVisitor.generic_visit(self, node)
 
-    def visit_Struct(self, node):
+    def visit_Enumerator(self, node):
         self.add_name(node.name)
 
-        if node.decls != None:
-            for decl in node.decls:
-                if decl.name != None:
-                    self.add_name(decl.name)
+    def visit_Struct(self, node):
+        if node.name != None:
+            self.add_name(node.name)
+        c_ast.NodeVisitor.generic_visit(self, node)
 
 def flatten(array):
     return list(itertools.chain.from_iterable(array))

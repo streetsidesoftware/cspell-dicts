@@ -29,6 +29,9 @@ typedef void* stdafx;
 #include <winbase.h>
 #include <wchar.h>
 #include <d3d12.h>
+#include <d3d11on12.h>
+#include <d3d12sdklayers.h>
+#include <d3d12shader.h>
 #include <dxgi.h>
 #include <d2d1.h>
 #include <d3d.h>
