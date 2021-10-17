@@ -3,6 +3,17 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+## [2.0.1](https://github.com/streetsidesoftware/cspell-dicts/compare/@cspell/dict-companies@1.0.40...@cspell/dict-companies@2.0.1) (2021-10-17)
+
+
+### Bug Fixes
+
+* Update Companies to latest dictionary format. ([#702](https://github.com/streetsidesoftware/cspell-dicts/issues/702)) ([726ccf1](https://github.com/streetsidesoftware/cspell-dicts/commit/726ccf1aba4b026e0f1a000ac333fc543354551c))
+
+
+
+
+
 ## [1.0.40](https://github.com/streetsidesoftware/cspell-dicts/compare/@cspell/dict-companies@1.0.39...@cspell/dict-companies@1.0.40) (2021-08-04)
 
 **Note:** Version bump only for package @cspell/dict-companies
