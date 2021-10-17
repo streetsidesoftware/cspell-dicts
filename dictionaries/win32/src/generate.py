@@ -114,7 +114,7 @@ if __name__ == "__main__":
         f"-D{d}" for d in defines
     ]
     args.extend([
-        "/E", "/U__midl" # "/Za", "/Zc:wchar_t"
+        "/E", "/Za", "/Zc:wchar_t"
     ])
 
     print("Running cl...")
@@ -123,7 +123,6 @@ if __name__ == "__main__":
 
     # Replace form-feed control character (\f, or \x0c) that might pop up in Windows' headers
     print("Removing form-feed characters...")
-
     text = text.replace(b"\x0c", b"")
 
     print(f"Writing to {filename_postprocess}...")
