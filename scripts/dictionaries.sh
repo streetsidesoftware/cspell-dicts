@@ -5,6 +5,8 @@
 # Generate a markdown list of dictionaries.
 # Run from repo root.
 
+# cspell:ignore execdir jsmin
+
 echo "# Dictionaries"
 echo "<!--- This file is generated from ./scripts/dictionaries.sh --->"
 echo ""
