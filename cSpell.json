@@ -5,6 +5,7 @@
         "*.{md,txt,yaml,yml}",
         ".github/**/*.{md,txt,yaml,yml}",
         "dictionaries/**/*.{md,txt,yaml,yml,js,tex}",
+        "scripts/**",
         "LICENSE"
     ],
     "words": [
@@ -29,6 +30,7 @@
         "nohoist",
         "otechie",
         "patreon",
+        "Réforme",
         "streetsidesoftware",
         "Sublicensing",
         "tidelift",
@@ -64,5 +66,8 @@
             "filename": "**/sv/**",
             "language": "en,sv"
         }
+    ],
+    "enableFiletypes": [
+        "shellscript"
     ]
 }
