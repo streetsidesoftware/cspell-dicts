@@ -10,7 +10,7 @@ echo "<!--- This file is generated from ./scripts/dictionaries.sh --->"
 echo ""
 echo "| dictionary | name | description |"
 echo "| -- | -- | -- |"
-find ./dictionaries -name "package.json" -depth 2 \
+find -s ./dictionaries -name "package.json" -depth 2 \
     -execdir echo -n "| [" \; \
     -execdir jq -j .name package.json \; \
     -exec echo -n "]("{}") | " \; \
