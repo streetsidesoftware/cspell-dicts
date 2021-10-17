@@ -105,6 +105,9 @@ if __name__ == "__main__":
 
     filename_postprocess = f"{filename}.output"
     target_file = 'win32.txt'
+    # If `True`, generated .h.output file maintains original file/line locations of declarations with #line directives.
+    # Settings to `False` can help diagnose problems with pycparser by inspecting the .h.output file at the location of each error.
+    keep_original_filenames_in_output = True
 
     defines = [
         # -D defines now reside in test.h, as this allows definition of function-like macros.
@@ -114,7 +117,9 @@ if __name__ == "__main__":
         f"-D{d}" for d in defines
     ]
     args.extend([
-        "/E", "/Za", "/Zc:wchar_t"
+        "/E" if keep_original_filenames_in_output else "/EP",
+        "/Za",
+        "/Zc:wchar_t"
     ])
 
     print("Running cl...")
