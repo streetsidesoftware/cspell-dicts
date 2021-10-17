@@ -13,11 +13,13 @@ The tool also manually inspects all public SDK header files to extract `#define`
 # Requirements
 
 ## 1. Windows SDK
+
 ---
 
 This generator also requires an installation of Windows SDK, available on the Visual Studio Installer, or over at https://developer.microsoft.com/en-us/windows/downloads/windows-sdk/.
 
 ## 2. Python and [pycparser](https://github.com/eliben/pycparser)
+
 ---
 
 This generator requires Python 3.5.0 and makes use of the [pycparser](https://github.com/eliben/pycparser) library to parse C headers, which is available on [pip](https://pypi.org/project/pip/):
