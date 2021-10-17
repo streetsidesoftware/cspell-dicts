@@ -46,7 +46,7 @@ def expand(line):
     # Split around numbers
     matches = flatten([re.split(r'[0-9]+', term) for term in matches])
 
-    return [term.lower() for term in matches if len(term) > 3 and not term.isnumeric()]
+    return [term for term in matches if len(term) > 3 and not term.isnumeric()]
 
 def process(lines):
     result = set([])
