@@ -14,7 +14,12 @@ class DefNamesVisitor(c_ast.NodeVisitor):
     decls = []
 
     def add_name(self, name):
+        assert(name != None)
         self.decls.append(name)
+
+    def visit_Decl(self, node):
+        if node.name != None:
+            self.add_name(node.name)
 
     def visit_FuncDef(self, node):
         self.add_name(node.decl.name)
@@ -27,7 +32,8 @@ class DefNamesVisitor(c_ast.NodeVisitor):
 
         if node.decls != None:
             for decl in node.decls:
-                self.add_name(decl.name)
+                if decl.name != None:
+                    self.add_name(decl.name)
 
 def flatten(array):
     return list(itertools.chain.from_iterable(array))
@@ -108,7 +114,7 @@ if __name__ == "__main__":
         f"-D{d}" for d in defines
     ]
     args.extend([
-        "/E", "/Za", "/Zc:wchar_t"
+        "/E", "/U__midl" # "/Za", "/Zc:wchar_t"
     ])
 
     print("Running cl...")
@@ -129,9 +135,7 @@ if __name__ == "__main__":
     try:
         print(f"Parsing {filename_postprocess}...")
 
-        ast = parse_file(filename_postprocess, use_cpp=True,
-                    cpp_path='cl',
-                    cpp_args=args)
+        ast = parse_file(filename_postprocess, use_cpp=False)
 
         print("Parsing succeeded! Collecting parsed declarations...")
 
