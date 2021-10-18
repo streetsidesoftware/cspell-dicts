@@ -1,8 +1,7 @@
 {
   "name": "@cspell/dict-win32",
   "version": "1.0.0",
-  "description": "Win32 dictionary for cspell. -- Private until verified",
-  "private": true,
+  "description": "Win32 dictionary for cspell.",
   "publishConfig": {
     "access": "public"
   },
@@ -12,8 +11,10 @@
     "./cspell-ext.json": "./cspell-ext.json"
   },
   "scripts": {
-    "build": "cross-env NODE_OPTIONS=--max_old_space_size=8192 cspell-tools-cli compile \"src/win32.txt\" -o .",
-    "test": "head -n 1000 \"src/win32.txt\" | cspell -v -c ./cspell-ext.json \"--local=*\" \"--languageId=*\" stdin",
+    "build": "cross-env NODE_OPTIONS=--max_old_space_size=8192 cspell-tools-cli compile --keep-raw-case \"src/win32.txt\" -o .",
+    "test": "yarn run test-src && yarn run test-samples",
+    "test-src": "head -n 10000 \"src/win32.txt\" | cspell -v -c ./cspell.json \"--local=*\" stdin",
+    "test-samples": "cspell samples/**",
     "prepublishOnly": "yarn test",
     "prepare": "yarn run build"
   },
@@ -24,7 +25,6 @@
   "keywords": [
     "cspell",
     "cspell-ext",
-    "Win32",
     "Win32",
     "dictionary",
     "spelling"
