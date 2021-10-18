@@ -1,6 +1,6 @@
 {
   "name": "@cspell/dict-software-terms",
-  "version": "1.0.48",
+  "version": "2.0.0",
   "description": "Software terms dictionary for cspell.",
   "publishConfig": {
     "access": "public"
@@ -11,7 +11,7 @@
     "./cspell-ext.json": "./cspell-ext.json"
   },
   "scripts": {
-    "build": "cat source-files.txt | xargs cspell-tools compile -o . -M softwareTerms.txt",
+    "build": "cat source-files.txt | xargs cspell-tools-cli compile --split -o . -M softwareTerms.txt",
     "test": "cat \"src/software-terms.txt\" | cspell -v -c ./cspell-ext.json \"--local=*\" \"--languageId=*\" stdin",
     "prepublishOnly": "yarn test",
     "prepare": "yarn run build"

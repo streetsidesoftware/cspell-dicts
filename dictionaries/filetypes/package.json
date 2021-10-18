@@ -1,6 +1,6 @@
 {
   "name": "@cspell/dict-filetypes",
-  "version": "1.1.8",
+  "version": "2.0.0",
   "description": "Filetypes dictionary for cspell.",
   "publishConfig": {
     "access": "public"
@@ -11,8 +11,8 @@
     "./cspell-ext.json": "./cspell-ext.json"
   },
   "scripts": {
-    "build": "cspell-tools compile \"filetypes.txt\" -o .",
-    "test": "head -n 100 \"filetypes.txt\" | cspell -v -c ./cspell-ext.json \"--local=*\" \"--languageId=*\" stdin",
+    "build": "cspell-tools-cli compile \"filetypes.txt\" -o .",
+    "test": "cat \"filetypes.txt\" | cspell -v -c ./cspell-ext.json \"--local=*\" \"--languageId=*\" stdin",
     "prepublishOnly": "yarn test",
     "prepare": "yarn run build"
   },
