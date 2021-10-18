@@ -2,8 +2,9 @@
   "private": true,
   "scripts": {
     "test": "lerna run test",
-    "lint": "eslint --fix . && prettier -w \"**/*.{md,json,yml,yaml}\" && cspell",
+    "lint": "yarn run lint-format && cspell",
     "lint-ci": "eslint . && prettier -c \"**/*.{md,json,yml,yaml}\" && cspell",
+    "lint-format": "eslint --fix . && prettier -w \"**/*.{md,json,yml,yaml}\"",
     "build": "lerna run --concurrency 2 --stream build --no-bail",
     "conditional-build": "lerna run --concurrency 2 --stream conditional-build --no-bail",
     "check-dirty": "git --no-pager diff --compact-summary --exit-code",
@@ -11,6 +12,7 @@
     "checksum": "lerna run checksum",
     "create-dictionary": "yo cspell-dicts",
     "clean": "rimraf \"packages/*/*.txt.gz\" \"dictionaries/*/*.txt.gz\"",
+    "generate-doc-dictionaries": "./scripts/dictionaries.sh > dictionaries.md && yarn run lint-format",
     "prepare": "lerna run prepare",
     "force-publish": "yarn prepare && yarn test && lerna exec --no-bail \"npm publish\"",
     "pub-lerna": "lerna publish --conventional-commits",
