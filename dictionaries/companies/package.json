@@ -1,6 +1,6 @@
 {
   "name": "@cspell/dict-companies",
-  "version": "2.0.1",
+  "version": "2.0.2",
   "description": "Company names dictionary for cspell.",
   "publishConfig": {
     "access": "public"
@@ -12,7 +12,7 @@
   },
   "scripts": {
     "build": "cspell-tools-cli compile --split \"src/companies.txt\" -o .",
-    "test": "head -n 100 \"src/companies.txt\" | cspell -v -c ./cspell-ext.json --local=* --languageId=* stdin",
+    "test": "cat \"src/companies.txt\" | cspell -v -c ./cspell-ext.json --local=* --languageId=* stdin",
     "prepublishOnly": "yarn test",
     "prepare": "yarn run build"
   },
@@ -22,6 +22,7 @@
   },
   "keywords": [
     "cspell",
+    "cspell-ext",
     "companies",
     "Company names",
     "dictionary",
