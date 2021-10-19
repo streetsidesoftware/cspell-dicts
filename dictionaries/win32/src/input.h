@@ -37,7 +37,6 @@ typedef void* stdafx;
 // um\ headers
 #include <WinUser.h>
 #include <winbase.h>
-//#include <wchar.h>
 #include <d3d12.h>
 #include <d3d11on12.h>
 #include <d3d12sdklayers.h>
@@ -243,7 +242,6 @@ typedef void* stdafx;
 #include <vhf.h>
 #include <vmgenerationcounter.h>
 #include <warning.h>
-//#include <wdmguid.h>
 #include <winapifamily.h>
 #include <winbio_err.h>
 #include <winbio_ioctl.h>

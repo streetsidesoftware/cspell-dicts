@@ -33,3 +33,23 @@ This generator requires Python 3.5.0 and makes use of the [pycparser](https://gi
 While pycparser is meant to be a C99-compliant parser, Windows SDK makes use of MSVC-specific features on C/C++ header code which breaks compatibility with C99.
 
 To overcome some of the parsing errors that can arise, `input.h` should `#define` away Microsoft-specific functionality so pycparser can once again parse the generate C header file.
+
+When debugging parsing errors, the `inspect_output.py` script can be used to quickly inspect where the parsing errors are appearing in the `input.h.output` file.
+
+For example, debugging a parsing error can be executed as follows:
+
+```cmd
+> python generate.py
+[...]
+pycparser.plyparser.ParseError: C:\\Program Files (x86)\\Windows Kits\\10\\include\\10.0.20348.0\\shared\\secext.h:113:11: before: return
+```
+
+Invoking `python inspect_output.py relative secext.h 113` outputs:
+
+```cmd
+> python inspect_output.py relative secext.h 113
+input.h:38 (@ input.h.output:38)
+secext.h:113 (@ input.h.output:490)
+```
+
+By navigating to input.h.output at line 490, as indicated by the last line of the output, you can investigate the MSVC-generated code and inspect the parsing issue at play.
