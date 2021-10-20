@@ -3,6 +3,17 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+## [2.0.4](https://github.com/streetsidesoftware/cspell-dicts/compare/@cspell/dict-software-terms@2.0.3...@cspell/dict-software-terms@2.0.4) (2021-10-20)
+
+
+### Bug Fixes
+
+* add `netloc` ([#716](https://github.com/streetsidesoftware/cspell-dicts/issues/716)) ([bc444ae](https://github.com/streetsidesoftware/cspell-dicts/commit/bc444ae612eceb0b5e07f51fad950f031bc7f6ad))
+
+
+
+
+
 ## [2.0.3](https://github.com/streetsidesoftware/cspell-dicts/compare/@cspell/dict-software-terms@2.0.2...@cspell/dict-software-terms@2.0.3) (2021-10-19)
 
 
