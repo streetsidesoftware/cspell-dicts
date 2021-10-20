@@ -1,13 +1,14 @@
-import subprocess
-import sys
-import traceback
-import re
+import argparse
 import itertools
 import os
+import re
+import subprocess
+import traceback
 
-from pycparser import c_ast, parse_file
+from typing import List, Tuple
 from pathlib import Path
 from platform import system
+from pycparser import c_ast, parse_file
 from multiprocessing import Pool
 
 class DefNamesVisitor(c_ast.NodeVisitor):
@@ -77,22 +78,58 @@ def collect_defines(path):
 def collect_all_defines():
     result = []
 
-    sdk_dir = os.environ.get("UniversalCRTSdkDir")
-    ucrt_version = os.environ.get("UCRTVersion")
-    include_dir = f"{sdk_dir}\\Include\\{ucrt_version}"
+    sdk_dir = Path(os.environ.get("UniversalCRTSdkDir"))
+    ucrt_version = Path(os.environ.get("UCRTVersion"))
+    include_dir = sdk_dir.joinpath("Include", ucrt_version)
 
-    print(f"Found Windows SDK include path at {include_dir}. Parsing header files...")
+    print(f"Found Windows SDK include path at {include_dir.resolve()}. Parsing header files...")
 
     with Pool() as pool:
         result = flatten(pool.imap_unordered(collect_defines, Path(include_dir).rglob("*.h"), 8))
 
     return result
 
+def verify_repeated_includes(filepath: Path):
+    includes: dict[str, int] = dict()
+
+    # matches #include <...> and #include "..."
+    pattern = re.compile(r'^\s*#include\s+(?:(?:<([^>]+)>)|(?:"([^"]+)"))')
+
+    with open(filepath, 'r') as file:
+        for (line_num, line) in enumerate(file):
+            line_num += 1
+
+            stript = line.strip()
+            match = pattern.match(stript)
+
+            if match == None:
+                continue
+
+            name = match.group(1)
+            if name == None:
+                name = match.group(2)
+
+            previous = includes.get(name)
+            if previous != None:
+                print(f"Warning: Duplicate #include of file {name} in {filepath.name}:{line_num}: previous #include in {filepath.name}:{previous}")
+
+            includes[name] = line_num
+
+    return
+
 if __name__ == "__main__":
-    if len(sys.argv) > 1:
-        filename  = sys.argv[1]
-    else:
-        filename = 'input.h'
+
+    parser = argparse.ArgumentParser(description='Generates a new win32.txt by probing MSVC compiler and sweeping public header files from Windows SDK.')
+
+    parser.add_argument('--file', dest='file_name', type=Path,
+                        default="input.h", help="File to use to generate a preprocessed file to parse with pycparser. Defaults to 'input.h'")
+    parser.add_argument('-s', '--strip-line-directives', action='store_true',
+                        help='Whether to instruct the MSVC compiler to strip #line directives that are used for diagnostics purposes. Setting this flag can help diagnose problems with pycparser by inspecting the .h.output file at the location of each error.')
+
+    args = parser.parse_args()
+
+    filepath: Path = args.file_name
+    strip_line_directives = args.strip_line_directives
 
     if system() != "Windows":
         print("This generator script requires a Windows operating system.")
@@ -105,11 +142,11 @@ if __name__ == "__main__":
         print("Missing %UCRTVersion% environment variable. Please run this script from a Visual Studio Developer Command Prompt (more info at https://docs.microsoft.com/en-us/visualstudio/ide/reference/command-prompt-powershell?view=vs-2019)")
         exit(1)
 
-    filename_postprocess = f"{filename}.output"
+    filepath_postprocess = filepath.with_suffix(f"{filepath.suffix}.output")
     target_file = 'win32.txt'
-    # If `True`, generated .h.output file maintains original file/line locations of declarations with #line directives.
-    # Settings to `False` can help diagnose problems with pycparser by inspecting the .h.output file at the location of each error.
-    keep_original_filenames_in_output = True
+
+    # Check and warn about any repeated #include of the same file
+    verify_repeated_includes(filepath)
 
     defines = [
         # -D defines now reside in test.h, as this allows definition of function-like macros.
@@ -119,29 +156,29 @@ if __name__ == "__main__":
         f"-D{d}" for d in defines
     ]
     args.extend([
-        "/E" if keep_original_filenames_in_output else "/EP",
+        "/EP" if strip_line_directives else "/E",
         "/Za",
         "/Zc:wchar_t"
     ])
 
     print("Running cl...")
 
-    text = subprocess.check_output(["cl"] + args + [filename])
+    text = subprocess.check_output(["cl"] + args + [str(filepath.resolve())])
 
     # Replace form-feed control character (\f, or \x0c) that might pop up in Windows' headers
     print("Removing form-feed characters...")
     text = text.replace(b"\x0c", b"")
 
-    print(f"Writing to {filename_postprocess}...")
+    print(f"Writing to {filepath_postprocess.name}...")
 
-    with open(filename_postprocess, 'wb') as f:
+    with open(filepath_postprocess, 'wb') as f:
         f.truncate(0)
         f.write(text)
 
     try:
-        print(f"Parsing {filename_postprocess}...")
+        print(f"Parsing {filepath_postprocess.name}...")
 
-        ast = parse_file(filename_postprocess, use_cpp=False)
+        ast = parse_file(filepath_postprocess.resolve(), use_cpp=False)
 
         print("Parsing succeeded! Collecting parsed declarations...")
 
