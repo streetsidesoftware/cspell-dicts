@@ -1,17 +1,11 @@
 // cSpell Settings
 {
-    "id": "fullstack",
+    "id": "vue",
     "version": "0.2",
-    "name": "Fullstack",
-    "description": "Common words encountered during fullstack development",
+    "name": "vue",
+    "description": "CSpell configuration for VUE files",
     // List of dictionary files to add to the global list of dictionaries
-    "dictionaryDefinitions": [
-        {
-            "name": "fullstack",
-            "path": "./fullstack.txt.gz",
-            "description": "Common words encountered during fullstack development"
-        }
-    ],
+    "dictionaryDefinitions": [],
     // Dictionaries to always be used.
     // Generally left empty
     "dictionaries": [],
@@ -21,7 +15,7 @@
         {
             // VSCode languageId. i.e. typescript, java, go, cpp, javascript, markdown, latex
             // * will match against any file type.
-            "languageId": "php,javascript,typescript",
+            "languageId": "vue",
             // Language local. i.e. en-US, de-AT, or ru. * will match all locals.
             // Multiple locals can be specified like: "en, en-US" to match both English and English US.
             "locale": "*",
@@ -35,7 +29,7 @@
             // This could be included in "ignoreRegExpList": ["mdash"]
             "patterns": [],
             // List of dictionaries to enable by name in `dictionaryDefinitions`
-            "dictionaries": ["fullstack"],
+            "dictionaries": ["css", "fonts", "fullstack", "html", "php", "typescript"],
             // Dictionary definitions can also be supplied here. They are only used iff "languageId" and "local" match.
             "dictionaryDefinitions": []
         }

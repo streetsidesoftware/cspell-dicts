@@ -1,7 +1,7 @@
 {
-  "name": "@cspell/dict-fullstack",
+  "name": "@cspell/dict-vue",
   "version": "2.0.0",
-  "description": "Dictionary of terms used in Fullstack development.",
+  "description": "CSpell configuration for VUE files.",
   "publishConfig": {
     "access": "public"
   },
@@ -11,8 +11,8 @@
     "./cspell-ext.json": "./cspell-ext.json"
   },
   "scripts": {
-    "build": "cspell-tools-cli compile --split \"fullstack.txt\" -o .",
-    "test": "cat \"fullstack.txt\" | cspell -v -c ./cspell-ext.json --local=* --languageId=php stdin",
+    "build": "echo skip",
+    "test": "echo skip",
     "prepublishOnly": "yarn test",
     "prepare": "yarn run build"
   },
@@ -23,7 +23,7 @@
   "keywords": [
     "cspell",
     "cspell-ext",
-    "fullstack",
+    "vue",
     "dictionary",
     "spelling"
   ],
@@ -32,9 +32,8 @@
   "bugs": {
     "url": "https://github.com/streetsidesoftware/cspell-dicts/issues"
   },
-  "homepage": "https://github.com/streetsidesoftware/cspell-dicts/blob/main/dictionaries/fullstack#readme",
+  "homepage": "https://github.com/streetsidesoftware/cspell-dicts/blob/main/dictionaries/vue#readme",
   "files": [
-    "fullstack.txt.gz",
     "cspell-ext.json"
   ]
 }
