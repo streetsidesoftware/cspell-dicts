@@ -1,6 +1,6 @@
 {
   "name": "@cspell/dict-fullstack",
-  "version": "1.0.39",
+  "version": "2.0.0",
   "description": "Dictionary of terms used in Fullstack development.",
   "publishConfig": {
     "access": "public"
@@ -11,8 +11,8 @@
     "./cspell-ext.json": "./cspell-ext.json"
   },
   "scripts": {
-    "build": "cspell-tools compile \"fullstack.txt\" -o .",
-    "test": "head -n 100 \"fullstack.txt\" | cspell -v -c ./cspell-ext.json --local=* --languageId=php stdin",
+    "build": "cspell-tools-cli compile --split \"fullstack.txt\" -o .",
+    "test": "cat \"fullstack.txt\" | cspell -v -c ./cspell-ext.json --local=* --languageId=php stdin",
     "prepublishOnly": "yarn test",
     "prepare": "yarn run build"
   },

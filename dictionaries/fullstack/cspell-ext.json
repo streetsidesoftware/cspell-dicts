@@ -1,6 +1,7 @@
 // cSpell Settings
 {
     "id": "fullstack",
+    "version": "0.2",
     "name": "Fullstack",
     "description": "Common words encountered during fullstack development",
     // List of dictionary files to add to the global list of dictionaries
@@ -23,7 +24,7 @@
             "languageId": "php,javascript,typescript",
             // Language local. i.e. en-US, de-AT, or ru. * will match all locals.
             // Multiple locals can be specified like: "en, en-US" to match both English and English US.
-            "local": "*",
+            "locale": "*",
             // By default the whole text of a file is included for spell checking
             // Adding patterns to the "includeRegExpList" to only include matching patterns
             "includeRegExpList": [],
