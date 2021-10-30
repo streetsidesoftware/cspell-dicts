@@ -150,6 +150,14 @@ The [Yeoman](http://yeoman.io/) script can help you create the dictionary templa
 
 In the `cspell-dicts` repository root.
 
+Run yarn to make sure everything is installed.
+
+```sh
+yarn
+```
+
+Run `create-dictionary` to start the Yeoman script.
+
 ```sh
 yarn create-dictionary <name> <path/to/source/words>
 ```
