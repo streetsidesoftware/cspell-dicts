@@ -1,0 +1,39 @@
+{
+  "name": "@cspell/dict-vue",
+  "version": "2.0.0",
+  "description": "CSpell configuration for VUE files.",
+  "publishConfig": {
+    "access": "public"
+  },
+  "exports": {
+    ".": "./cspell-ext.json",
+    "./cspell": "./cspell-ext.json",
+    "./cspell-ext.json": "./cspell-ext.json"
+  },
+  "scripts": {
+    "build": "echo skip",
+    "test": "echo skip",
+    "prepublishOnly": "yarn test",
+    "prepare": "yarn run build"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/streetsidesoftware/cspell-dicts.git"
+  },
+  "keywords": [
+    "cspell",
+    "cspell-ext",
+    "vue",
+    "dictionary",
+    "spelling"
+  ],
+  "author": "Jason Dent",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/streetsidesoftware/cspell-dicts/issues"
+  },
+  "homepage": "https://github.com/streetsidesoftware/cspell-dicts/blob/main/dictionaries/vue#readme",
+  "files": [
+    "cspell-ext.json"
+  ]
+}
