@@ -7,7 +7,7 @@
     "dictionaryDefinitions": [
         {
             "name": "en_us",
-            "file": "./en_US.trie.gz",
+            "path": "./en_US.trie.gz",
             "repMap": [["'|`|’", "'"]],
             "description": "American English Dictionary"
         }
@@ -24,7 +24,7 @@
             "languageId": "*",
             // Language local. i.e. en-US, de-AT, or ru. * will match all locals.
             // Multiple locals can be specified like: "en, en-US" to match both English and English US.
-            "local": "en,en-US",
+            "locale": "en,en-US",
             // By default the whole text of a file is included for spell checking
             // Adding patterns to the "includeRegExpList" to only include matching patterns
             "includeRegExpList": [],
@@ -44,7 +44,7 @@
             // Dictionary definitions can also be supplied here. They are only used iff "languageId" and "local" match.
             "dictionaryDefinitions": [],
             // Words to always be considered an error
-            "flagWords": ["hte", "teh"]
+            "flagWords": []
         }
     ]
 }
