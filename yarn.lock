@@ -74,17 +74,17 @@
     "@cspell/dict-vue" "^2.0.1"
 
 "@cspell/cspell-tools@^5.12.4":
-  version "5.12.4"
-  resolved "https://registry.npmjs.org/@cspell/cspell-tools/-/cspell-tools-5.12.4.tgz#34c58a63ef2f7b8afb6804d644425f661b86feda"
-  integrity sha512-cpjSsJGZ8ya6JcCm86Df5idZAwGbqfy8HEuePcXfNCWia4ooQm3y1hJlY6bNb0gz3IaPIw0v2khx7CKb9qKRUQ==
+  version "5.12.5"
+  resolved "https://registry.yarnpkg.com/@cspell/cspell-tools/-/cspell-tools-5.12.5.tgz#e9475db1a0375ac747e4cf2a1b4f8e3b186f2994"
+  integrity sha512-fB/3sH3HZLnlTFkQpnzNBuO5+5SYapsqA5XiEYXC75KD/AxAmFyG5CJtIcKOgP/nJXG8OWdV/YT66Z3gLa07yA==
   dependencies:
     commander "^8.3.0"
     cspell-io "^5.12.4"
-    cspell-trie-lib "^5.12.4"
+    cspell-trie-lib "^5.12.5"
     fs-extra "^10.0.0"
     gensequence "^3.1.1"
     glob "^7.2.0"
-    hunspell-reader "^5.12.4"
+    hunspell-reader "^5.12.5"
 
 "@cspell/cspell-types@^5.12.4":
   version "5.12.4"
@@ -2317,10 +2317,10 @@ cspell-tools@^5.1.1:
     glob "^7.1.6"
     hunspell-reader "^3.2.0"
 
-cspell-trie-lib@^5.1.0, cspell-trie-lib@^5.12.4:
-  version "5.12.4"
-  resolved "https://registry.npmjs.org/cspell-trie-lib/-/cspell-trie-lib-5.12.4.tgz#9a78ba9d96cf21e7ae9d8c89195ead1a060544ec"
-  integrity sha512-WXnqSVyqP7ZhRWxF3C4olXATETyxD+43f0T0Jzlq0Dz8nxXmzEl79Ws9sEZo4ssLTMXaEcx4Uh361vQYZY+irA==
+cspell-trie-lib@^5.1.0, cspell-trie-lib@^5.12.4, cspell-trie-lib@^5.12.5:
+  version "5.12.5"
+  resolved "https://registry.yarnpkg.com/cspell-trie-lib/-/cspell-trie-lib-5.12.5.tgz#483025bd4e5a7cc8d5f2af0695489c05dad3c1c1"
+  integrity sha512-oF2LR860BhKISIyQ8FSzq7a+dB9fbFcYP42LeO8NsXk0qhv9gTR3ReiyA1rcp9ocClpg26AhU08dNuAxcHQBmA==
   dependencies:
     fs-extra "^10.0.0"
     gensequence "^3.1.1"
@@ -3842,10 +3842,10 @@ hunspell-reader@^3.2.0:
     gensequence "^3.0.1"
     iconv-lite "^0.5.0"
 
-hunspell-reader@^5.12.4:
-  version "5.12.4"
-  resolved "https://registry.npmjs.org/hunspell-reader/-/hunspell-reader-5.12.4.tgz#f255a39b2c1b236599bf92c152a8186f4244406d"
-  integrity sha512-ornKGgzbKU44ccE7fEYWg9PuAQJ7MkfltwAQ9kI6P2MMRnFTXEILxjcDTo5U/mpKFANR0yZhhsDmHotRDXoNnQ==
+hunspell-reader@^5.12.4, hunspell-reader@^5.12.5:
+  version "5.12.5"
+  resolved "https://registry.yarnpkg.com/hunspell-reader/-/hunspell-reader-5.12.5.tgz#9d4e7fbe182a48ddfa28606765b443b0579dcddb"
+  integrity sha512-MHFPTCJcO0bFo4LfrwBYgRgNPIiRxvVKgMPjtKaqYfvXE2fFN69kTRE3ENNUQ8DX7xN4Cu0ge9XC6dU+l1isiQ==
   dependencies:
     commander "^8.3.0"
     fs-extra "^10.0.0"
@@ -4337,7 +4337,7 @@ is-plain-object@^5.0.0:
 
 is-primitive@^3.0.1:
   version "3.0.1"
-  resolved "https://registry.npmjs.org/is-primitive/-/is-primitive-3.0.1.tgz#98c4db1abff185485a657fc2905052b940524d05"
+  resolved "https://registry.yarnpkg.com/is-primitive/-/is-primitive-3.0.1.tgz#98c4db1abff185485a657fc2905052b940524d05"
   integrity sha512-GljRxhWvlCNRfZyORiH77FwdFwGcMO620o37EOYC0ORWdq+WYNVqW0w2Juzew4M+L81l6/QS3t5gkkihyRqv9w==
 
 is-redirect@^1.0.0:
@@ -5015,7 +5015,7 @@ mem@^5.1.0:
 
 meow@^3.0.0, meow@^6.1.1, meow@^8.0.0, meow@^9.0.0:
   version "9.0.0"
-  resolved "https://registry.npmjs.org/meow/-/meow-9.0.0.tgz#cd9510bc5cac9dee7d03c73ee1f9ad959f4ea364"
+  resolved "https://registry.yarnpkg.com/meow/-/meow-9.0.0.tgz#cd9510bc5cac9dee7d03c73ee1f9ad959f4ea364"
   integrity sha512-+obSblOQmRhcyBt62furQqRAQpNyWXo8BuQ5bN7dG8wmwQ+vwHKp/rCFD4CrTP8CsDQD1sjoZ94K417XEUk8IQ==
   dependencies:
     "@types/minimist" "^1.2.0"
@@ -6784,7 +6784,7 @@ set-blocking@~2.0.0:
 
 set-value@^2.0.0, set-value@^2.0.1, set-value@^4.0.1:
   version "4.1.0"
-  resolved "https://registry.npmjs.org/set-value/-/set-value-4.1.0.tgz#aa433662d87081b75ad88a4743bd450f044e7d09"
+  resolved "https://registry.yarnpkg.com/set-value/-/set-value-4.1.0.tgz#aa433662d87081b75ad88a4743bd450f044e7d09"
   integrity sha512-zTEg4HL0RwVrqcWs3ztF+x1vkxfm0lP+MQQFPiMJTKVceBwEV0A569Ou8l9IYQG8jOZdMVI1hGsc0tmeD2o/Lw==
   dependencies:
     is-plain-object "^2.0.4"
@@ -7468,7 +7468,7 @@ treeverse@^1.0.4:
 
 trim-newlines@^3.0.0, trim-newlines@^3.0.1:
   version "3.0.1"
-  resolved "https://registry.npmjs.org/trim-newlines/-/trim-newlines-3.0.1.tgz#260a5d962d8b752425b32f3a7db0dcacd176c144"
+  resolved "https://registry.yarnpkg.com/trim-newlines/-/trim-newlines-3.0.1.tgz#260a5d962d8b752425b32f3a7db0dcacd176c144"
   integrity sha512-c1PTsA3tYrIsLGkJkzHF+w9F2EyxfXGo4UyJc4pFL++FMjnq0HJS69T3M7d//gKrFKwy429bouPescbjecU+Zw==
 
 tslib@^1.9.0:
