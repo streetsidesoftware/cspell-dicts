@@ -1,21 +1,24 @@
 {
     "id": "csharp",
     "name": "csharp",
-    "description": "Csharp dictionary for cspell.",
+    "version": "0.2",
+    "readonly": true,
+    "description": "C# dictionary for cspell.",
     "dictionaryDefinitions": [
         {
             "name": "csharp",
-            "file": "./csharp.txt.gz",
-            "description": "Csharp dictionary for cspell."
+            "path": "./csharp.txt.gz",
+            "description": "C# dictionary for cspell."
         }
     ],
     "dictionaries": [],
     "languageSettings": [
         {
             "languageId": "csharp",
-            "local": "*",
+            "description": "These are the language settings for C#",
             "includeRegExpList": [],
             "ignoreRegExpList": [],
+            "allowCompoundWords": true,
             "patterns": [
                 {
                     "name": "string",
@@ -28,7 +31,7 @@
                     "description": "C# Verbatim String"
                 }
             ],
-            "dictionaries": ["csharp"],
+            "dictionaries": ["csharp", "dotnet", "npm"],
             "dictionaryDefinitions": []
         }
     ]
