@@ -30,7 +30,7 @@ public class GFG {
 		string S3 = "This is \n C# non verbatim string";
 		Console.WriteLine("String 3 is :{0}", S3);
 
-		// By using @ symbol /n does not processed
+		// By using @ symbol \n is not processed
 		string S4 = @"This is \n C# verbatim string";
 		Console.WriteLine("String 4 is :{0}", S4);
 
