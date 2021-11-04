@@ -2,8 +2,8 @@
     "version": "0.2",
     "language": "en",
     "files": [
-        "*.{md,txt,yaml,yml}",
         ".github/**/*.{md,txt,yaml,yml}",
+        "*.{md,txt,yaml,yml}",
         "dictionaries/**/*.{md,txt,yaml,yml,js,tex}",
         "scripts/**",
         "LICENSE"
@@ -42,14 +42,17 @@
     "maxNumberOfProblems": 1000,
     "ignorePaths": [
         ".vscode/**",
-        "**/.git/**",
         "*.aff",
         "*.dic",
-        "*.log",
         "*.gz",
         "*.lock",
-        "generator-cspell-dicts/generators/app/templates/**",
+        "*.log",
+        "**/.git/**",
+        "checksum.txt",
         "dictionaries/*/src/**",
+        "generator-cspell-dicts/generators/app/templates/**",
+        "source-files.txt",
+        "source-dependencies.txt",
         "node_modules"
     ],
     "import": [],
