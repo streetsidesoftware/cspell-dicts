@@ -3,6 +3,14 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+## [2.0.1](https://github.com/streetsidesoftware/cspell-dicts/compare/@cspell/dict-csharp@1.0.11...@cspell/dict-csharp@2.0.1) (2021-11-04)
+
+**Note:** Version bump only for package @cspell/dict-csharp
+
+
+
+
+
 ## [1.0.11](https://github.com/streetsidesoftware/cspell-dicts/compare/@cspell/dict-csharp@1.0.10...@cspell/dict-csharp@1.0.11) (2021-03-16)
 
 **Note:** Version bump only for package @cspell/dict-csharp
