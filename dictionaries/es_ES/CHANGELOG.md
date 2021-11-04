@@ -3,6 +3,22 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+# [2.1.0](https://github.com/streetsidesoftware/cspell-dicts/compare/@cspell/dict-es-es@2.0.2...@cspell/dict-es-es@2.1.0) (2021-11-04)
+
+
+### Bug Fixes
+
+* Add a few more software terms. ([#715](https://github.com/streetsidesoftware/cspell-dicts/issues/715)) ([05d5860](https://github.com/streetsidesoftware/cspell-dicts/commit/05d5860bd17da573872d7e70111344f0da8dd154))
+
+
+### Features
+
+* Make Spanish case and accent sensitive by default. ([#747](https://github.com/streetsidesoftware/cspell-dicts/issues/747)) ([18b18f1](https://github.com/streetsidesoftware/cspell-dicts/commit/18b18f11832e785187bc1a7039d9c55939b2430b))
+
+
+
+
+
 ## [2.0.2](https://github.com/streetsidesoftware/cspell-dicts/compare/@cspell/dict-es-es@2.0.1...@cspell/dict-es-es@2.0.2) (2021-09-16)
 
 

@@ -3,6 +3,17 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+# [2.1.0](https://github.com/streetsidesoftware/cspell-dicts/compare/@cspell/dict-nl-nl@2.0.1...@cspell/dict-nl-nl@2.1.0) (2021-11-04)
+
+
+### Features
+
+* Make Dutch case sensitive ([#746](https://github.com/streetsidesoftware/cspell-dicts/issues/746)) ([2abc714](https://github.com/streetsidesoftware/cspell-dicts/commit/2abc7143c9e838cc43182f3cde3d167483117417))
+
+
+
+
+
 ## [2.0.1](https://github.com/streetsidesoftware/cspell-dicts/compare/@cspell/dict-nl-nl@2.0.0...@cspell/dict-nl-nl@2.0.1) (2021-09-16)
 
 

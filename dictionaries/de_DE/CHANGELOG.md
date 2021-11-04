@@ -3,6 +3,17 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+# [2.1.0](https://github.com/streetsidesoftware/cspell-dicts/compare/@cspell/dict-de-de@2.0.2...@cspell/dict-de-de@2.1.0) (2021-11-04)
+
+
+### Features
+
+* Make German case and accent sensitive by default. ([#748](https://github.com/streetsidesoftware/cspell-dicts/issues/748)) ([afea23d](https://github.com/streetsidesoftware/cspell-dicts/commit/afea23d9c312cb818e0a50c00fe1d0b282be9b06))
+
+
+
+
+
 ## [2.0.2](https://github.com/streetsidesoftware/cspell-dicts/compare/@cspell/dict-de-de@2.0.1...@cspell/dict-de-de@2.0.2) (2021-09-16)
 
 

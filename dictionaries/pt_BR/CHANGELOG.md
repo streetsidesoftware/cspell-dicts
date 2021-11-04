@@ -3,6 +3,17 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+# [2.1.0](https://github.com/streetsidesoftware/cspell-dicts/compare/@cspell/dict-pt-br@2.0.2...@cspell/dict-pt-br@2.1.0) (2021-11-04)
+
+
+### Features
+
+* Make Brazilian Portuguese case / accent sensitive by default. ([#749](https://github.com/streetsidesoftware/cspell-dicts/issues/749)) ([e31497a](https://github.com/streetsidesoftware/cspell-dicts/commit/e31497a30a40cb01577bf95c8bb97b6e4d662ecb))
+
+
+
+
+
 ## [2.0.2](https://github.com/streetsidesoftware/cspell-dicts/compare/@cspell/dict-pt-br@2.0.1...@cspell/dict-pt-br@2.0.2) (2021-09-16)
 
 
