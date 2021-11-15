@@ -1,4 +1,5 @@
 {
+  "name": "cspell-dicts",
   "private": true,
   "scripts": {
     "test": "lerna run test",
@@ -46,13 +47,11 @@
     "prettier": "^2.4.1",
     "rimraf": "^3.0.2"
   },
-  "name": "cspell-dicts",
   "resolutions": {
-    "**/glob-parent": "^5.1.2",
-    "**/set-value": "^4.0.1",
+    "**/cpy/globby": "^11.0.4",
     "**/ansi-regex": "^5.0.1",
     "**/meow": "^9.0.0",
-    "**/meow/trim-newlines": "^3.0.1"
+    "**/set-value": "^4.1.0"
   },
   "license": "GPL-3.0-or-later",
   "dependencies": {}
