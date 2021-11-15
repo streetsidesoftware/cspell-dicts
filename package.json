@@ -13,7 +13,7 @@
     "create-dictionary": "yo cspell-dicts",
     "clean": "rimraf \"packages/*/*.txt.gz\" \"dictionaries/*/*.txt.gz\"",
     "generate-doc-dictionaries": "./scripts/dictionaries.sh > dictionaries.md && yarn run lint-format",
-    "prepare": "lerna run prepare",
+    "prepareX": "lerna run prepare",
     "force-publish": "yarn prepare && yarn test && lerna exec --no-bail \"npm publish\"",
     "pub-lerna": "lerna publish --conventional-commits",
     "pub": "yarn run conditional-build && yarn run check-dirty && yarn run prepare && yarn test && yarn run pub-lerna",
@@ -48,11 +48,10 @@
   },
   "name": "cspell-dicts",
   "resolutions": {
-    "**/glob-parent": "^5.1.2",
-    "**/set-value": "^4.0.1",
+    "**/cpy/globby": "^11.0.4",
     "**/ansi-regex": "^5.0.1",
     "**/meow": "^9.0.0",
-    "**/meow/trim-newlines": "^3.0.1"
+    "**/set-value": "^4.1.0"
   },
   "license": "GPL-3.0-or-later",
   "dependencies": {}
