@@ -74,17 +74,17 @@
     "@cspell/dict-vue" "^2.0.1"
 
 "@cspell/cspell-tools@^5.12.6":
-  version "5.12.6"
-  resolved "https://registry.npmjs.org/@cspell/cspell-tools/-/cspell-tools-5.12.6.tgz#d21cccd09fd04060bb35965d9bc8ab903f50a785"
-  integrity sha512-Hv/rF2199gUluHz8L2a7WYk9drsTXFPn27HGMcpHzLQS80invzP1fmDUV0dLnndOtgGn/S4uvhrWREfbGhKkew==
+  version "5.13.0"
+  resolved "https://registry.yarnpkg.com/@cspell/cspell-tools/-/cspell-tools-5.13.0.tgz#f780687de2af3fa0a8aef39332105b82fcfc2455"
+  integrity sha512-QPx5D4QtBRxXH4Xay+BIK0PmvNMjQqy847fVJv8RVJyqH54bFHOY76QqqSPS4RDjFx0LdBrujcjefgAovOsYEA==
   dependencies:
     commander "^8.3.0"
-    cspell-io "^5.12.6"
-    cspell-trie-lib "^5.12.6"
+    cspell-io "^5.13.0"
+    cspell-trie-lib "^5.13.0"
     fs-extra "^10.0.0"
     gensequence "^3.1.1"
     glob "^7.2.0"
-    hunspell-reader "^5.12.6"
+    hunspell-reader "^5.13.0"
 
 "@cspell/cspell-types@^5.12.6":
   version "5.12.6"
@@ -2160,10 +2160,10 @@ cspell-glob@^5.12.6:
   dependencies:
     micromatch "^4.0.4"
 
-cspell-io@^5.1.0, cspell-io@^5.12.6:
-  version "5.12.6"
-  resolved "https://registry.npmjs.org/cspell-io/-/cspell-io-5.12.6.tgz#f4bb8f2133e6c12d761f1b7f0dce394fb78a4d20"
-  integrity sha512-pTcxw5+/GKD5qIxTcQzWq6pTfWmSVAZVD11kkQ9gFYwX+JYdYmm3Af2x8u5oV46IKL0eAuLp7F1kfan1IsRnEA==
+cspell-io@^5.1.0, cspell-io@^5.12.6, cspell-io@^5.13.0:
+  version "5.13.0"
+  resolved "https://registry.yarnpkg.com/cspell-io/-/cspell-io-5.13.0.tgz#0f38e71abbf9e0f06d45fa80f2547a595390b935"
+  integrity sha512-C8DQ9DY4IajInynwvbB2EULLFdHElHGpIYdvtM0ag5LJCiRN87W9XE68ia07ceNI5ahd5VJWPVyBRzCF4CYUEQ==
 
 cspell-lib@^5.12.6:
   version "5.12.6"
@@ -2201,10 +2201,10 @@ cspell-tools@^5.1.1:
     glob "^7.1.6"
     hunspell-reader "^3.2.0"
 
-cspell-trie-lib@^5.1.0, cspell-trie-lib@^5.12.6:
-  version "5.12.6"
-  resolved "https://registry.npmjs.org/cspell-trie-lib/-/cspell-trie-lib-5.12.6.tgz#cc919c474db6d872398b39b5a0268a29d2f21132"
-  integrity sha512-ahT/lzhA7WiXzkFadOaXngPfxA74n4YLXXsZi+lL8/GgdezgbcsL4OoKuiKv24pMSLQBuJ6MOSWSr6rlNrImkw==
+cspell-trie-lib@^5.1.0, cspell-trie-lib@^5.12.6, cspell-trie-lib@^5.13.0:
+  version "5.13.0"
+  resolved "https://registry.yarnpkg.com/cspell-trie-lib/-/cspell-trie-lib-5.13.0.tgz#8a711e09bfae37ba0467a757988e691414b5682b"
+  integrity sha512-iVbx/Pfucaz7tIo+5DKQcC+8OmAEaeamau0eeMzGoB9Ant+Spdada0XUYx6uJnUmOdriYyxVOYfMTH3Q+UZ78w==
   dependencies:
     fs-extra "^10.0.0"
     gensequence "^3.1.1"
@@ -3321,7 +3321,7 @@ globalthis@^1.0.1:
 
 globby@^11.0.1, globby@^11.0.2, globby@^11.0.3, globby@^11.0.4, globby@^9.2.0:
   version "11.0.4"
-  resolved "https://registry.npmjs.org/globby/-/globby-11.0.4.tgz#2cbaff77c2f2a62e71e9b2813a67b97a3a3001a5"
+  resolved "https://registry.yarnpkg.com/globby/-/globby-11.0.4.tgz#2cbaff77c2f2a62e71e9b2813a67b97a3a3001a5"
   integrity sha512-9O4MVG9ioZJ08ffbcyVYyLOJLk5JQ688pJ4eMGLpdWLHq/Wr1D9BlriLQyL0E+jbkuePVZXYFj47QM/v093wHg==
   dependencies:
     array-union "^2.1.0"
@@ -3588,7 +3588,7 @@ hunspell-reader@^3.2.0:
     gensequence "^3.0.1"
     iconv-lite "^0.5.0"
 
-hunspell-reader@^5.12.6:
+hunspell-reader@^5.12.6, hunspell-reader@^5.13.0:
   version "5.13.0"
   resolved "https://registry.yarnpkg.com/hunspell-reader/-/hunspell-reader-5.13.0.tgz#21ed81b314a5c36f7ada80f7e5824d0f17d0edb9"
   integrity sha512-PN/oKRvN2d8osbRV5U9JFks+/s3ycRCdM4m1eENpTE4C1eNstfGhpnJXsqYxexCGjzaKR8oOU0FofxvSKF6bBg==
@@ -4020,7 +4020,7 @@ is-plain-object@^5.0.0:
 
 is-primitive@^3.0.1:
   version "3.0.1"
-  resolved "https://registry.npmjs.org/is-primitive/-/is-primitive-3.0.1.tgz#98c4db1abff185485a657fc2905052b940524d05"
+  resolved "https://registry.yarnpkg.com/is-primitive/-/is-primitive-3.0.1.tgz#98c4db1abff185485a657fc2905052b940524d05"
   integrity sha512-GljRxhWvlCNRfZyORiH77FwdFwGcMO620o37EOYC0ORWdq+WYNVqW0w2Juzew4M+L81l6/QS3t5gkkihyRqv9w==
 
 is-redirect@^1.0.0:
@@ -4655,7 +4655,7 @@ mem@^5.1.0:
 
 meow@^3.0.0, meow@^6.1.1, meow@^8.0.0, meow@^9.0.0:
   version "9.0.0"
-  resolved "https://registry.npmjs.org/meow/-/meow-9.0.0.tgz#cd9510bc5cac9dee7d03c73ee1f9ad959f4ea364"
+  resolved "https://registry.yarnpkg.com/meow/-/meow-9.0.0.tgz#cd9510bc5cac9dee7d03c73ee1f9ad959f4ea364"
   integrity sha512-+obSblOQmRhcyBt62furQqRAQpNyWXo8BuQ5bN7dG8wmwQ+vwHKp/rCFD4CrTP8CsDQD1sjoZ94K417XEUk8IQ==
   dependencies:
     "@types/minimist" "^1.2.0"
@@ -6345,7 +6345,7 @@ semver-diff@^2.0.0:
 
 semver-regex@^2.0.0, semver-regex@^3.1.3:
   version "3.1.3"
-  resolved "https://registry.npmjs.org/semver-regex/-/semver-regex-3.1.3.tgz#b2bcc6f97f63269f286994e297e229b6245d0dc3"
+  resolved "https://registry.yarnpkg.com/semver-regex/-/semver-regex-3.1.3.tgz#b2bcc6f97f63269f286994e297e229b6245d0dc3"
   integrity sha512-Aqi54Mk9uYTjVexLnR67rTyBusmwd04cLkHy9hNvk3+G3nT2Oyg7E0l4XVbOaNwIvQ3hHeYxGcyEy+mKreyBFQ==
 
 semver-truncate@^1.1.2:
@@ -6386,7 +6386,7 @@ set-blocking@^2.0.0, set-blocking@~2.0.0:
 
 set-value@^4.1.0:
   version "4.1.0"
-  resolved "https://registry.npmjs.org/set-value/-/set-value-4.1.0.tgz#aa433662d87081b75ad88a4743bd450f044e7d09"
+  resolved "https://registry.yarnpkg.com/set-value/-/set-value-4.1.0.tgz#aa433662d87081b75ad88a4743bd450f044e7d09"
   integrity sha512-zTEg4HL0RwVrqcWs3ztF+x1vkxfm0lP+MQQFPiMJTKVceBwEV0A569Ou8l9IYQG8jOZdMVI1hGsc0tmeD2o/Lw==
   dependencies:
     is-plain-object "^2.0.4"
