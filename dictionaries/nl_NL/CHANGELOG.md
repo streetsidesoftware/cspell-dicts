@@ -3,6 +3,17 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+## [2.1.1](https://github.com/streetsidesoftware/cspell-dicts/compare/@cspell/dict-nl-nl@2.1.0...@cspell/dict-nl-nl@2.1.1) (2021-11-22)
+
+
+### Bug Fixes
+
+* Make sure `A3-` and `-A4` compounds are allowed. ([#782](https://github.com/streetsidesoftware/cspell-dicts/issues/782)) ([2571cb0](https://github.com/streetsidesoftware/cspell-dicts/commit/2571cb0d3667d7ee3605006b00e14005f92acd4c))
+
+
+
+
+
 # [2.1.0](https://github.com/streetsidesoftware/cspell-dicts/compare/@cspell/dict-nl-nl@2.0.1...@cspell/dict-nl-nl@2.1.0) (2021-11-04)
 
 
