@@ -18,6 +18,9 @@ jobs:
         uses: actions/checkout@v2.4.0
         with:
           ref: ${{ env.REF_BRANCH }}
+      - uses: actions/setup-node@v2
+        with:
+          cache: yarn
       - name: Install
         run: |
           yarn
