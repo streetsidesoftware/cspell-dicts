@@ -10,8 +10,9 @@ JQ_FILTER="$SCRIPT_DIR/dictionary.jq"
 
 # cspell:ignore execdir jsmin
 
-echo "# Dictionaries"
-echo "<!--- This file is generated from ./scripts/dictionaries.sh --->"
+echo "## All Dictionaries"
+echo ""
+echo "<!--- Use \`yarn run generate-doc-dictionaries\` to generate this table --->"
 echo ""
 echo "| dictionary | name | file type | locale | description |"
 echo "| -- | -- | -- | -- | -- |"

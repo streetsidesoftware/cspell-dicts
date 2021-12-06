@@ -53,9 +53,9 @@ Various [cspell](https://github.com/streetsidesoftware/cspell) dictionaries. Eac
 - [Medical Terms](dictionaries/medicalterms)
 - [Scientific Terms](dictionaries/scientific_terms_US)
 
-# Dictionaries
+## All Dictionaries
 
-<!--- This file is generated from ./scripts/dictionaries.sh --->
+<!--- Use `yarn run generate-doc-dictionaries` to generate this table --->
 
 | dictionary                                                                      | name                               | file type                                                                                                   | locale             | description                                           |
 | ------------------------------------------------------------------------------- | ---------------------------------- | ----------------------------------------------------------------------------------------------------------- | ------------------ | ----------------------------------------------------- |
