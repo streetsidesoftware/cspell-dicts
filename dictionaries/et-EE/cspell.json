@@ -2,11 +2,16 @@
     "files": [
         "**/*.{md,txt}"
     ],
+    "ignorePaths": [
+        "**/*.{aff,dic}"
+    ],
     "language": "en,et",
     "import": [
         "./cspell-ext.json"
     ],
     "ignoreWords": [],
     "caseSensitive": true,
-    "words": []
+    "words": [
+        "hunspell"
+    ]
 }
