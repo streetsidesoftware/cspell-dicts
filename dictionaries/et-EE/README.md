@@ -12,7 +12,7 @@ subsequently improved by Jaak Pruulmann who also created the affix file.
 
 ## Encoding issues
 
-All dictionaries are encoded in the ISO-8859-15 (Latin-9) character-set,
+All dictionaries are encoded in the UTF-8 character-set,
 which is absolutely necessary to accommodate the plethora of foreign words
 featuring S- and Z-caron that see daily usage in the Estonian language.
 
@@ -71,3 +71,7 @@ See: [How to Create a New Dictionary](https://github.com/streetsidesoftware/cspe
 MIT
 
 > Some packages may have other licenses included.
+
+<!---
+cspell:ignore wordlist wordlists
+-->

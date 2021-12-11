@@ -2,19 +2,16 @@
     "files": [
         "**/*.{md,txt}"
     ],
-    "dictionaries": [
-        "et-ee"
+    "ignorePaths": [
+        "**/*.{aff,dic}"
     ],
+    "language": "en,et",
     "import": [
         "./cspell-ext.json"
     ],
-    "ignoreWords": [
-        "Jaak",
-        "Pruulmann",
-        "wordlist",
-        "wordlists"
-    ],
+    "ignoreWords": [],
+    "caseSensitive": true,
     "words": [
-        "dfdafff"
+        "hunspell"
     ]
 }
