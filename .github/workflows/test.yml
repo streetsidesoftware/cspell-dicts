@@ -7,13 +7,15 @@ on: # rebuild any PRs and main branch changes
 
 jobs:
   # Test supported Node versions
-  test-old-node-versions:
+  test-node-versions:
     runs-on: ${{ matrix.os }}
     strategy:
       matrix:
         node-version:
           - 12.x
           - 14.x
+          - 16.x
+          - 17.x
 
         os:
           - ubuntu-latest
@@ -37,7 +39,6 @@ jobs:
           - 16.x
 
         os:
-          - ubuntu-latest
           - windows-latest
           - macos-latest
 
