@@ -15,7 +15,9 @@ Inimasustus on praeguse Seattle'i alal olnud juba vähemalt 4000 aastat, euroopl
 Seattle'i ajaloo suuremateks sündmusteks on olnud 1889. aasta tulekahju, 1909. aasta Alaska-Yukon-Pacificu näitus, 1919. aastal toimunud USA esimene üldstreik, 1962. aasta maailmanäitus (Century 21 Exposition), 1990. aasta Hea Tahte mängud ja 1999. aasta Maailma Kaubandusorganisatsiooni (WTO) tippkohtumine, millega kaasnesid suured meeleavaldused.
 
 <!---
-  cspell:ignore Washingtoni Boeingi comi grungemuusika Hendrixi indiaanipealik Jimi kõrgtehnoloogia Microsofti Northwesti Pacificu Pugeti Sealthi Starbucksi
-  cspell:ignore Seattle'it Rainy California Emerald Exposition Yukon words ignore locale Seattle'i
-  cspell:locale  et
+  cspell:words Alaska Amazon Boeingi California Century City Emerald
+  cspell:words Exposition Hendrixi Jimi Kanada Microsofti Northwesti Pacific Pacificu Pugeti Rainy
+  cspell:words Sealthi Seattle Seattle'i Seattle'it Starbucksi Vikipeedia
+  cspell:words Washingtoni Yukon comi grungemuusika ignore indiaanipealik kõrgtehnoloogia locale words
+  cspell:locale et
 --->
