@@ -17,7 +17,7 @@ Seattle'i ajaloo suuremateks sündmusteks on olnud 1889. aasta tulekahju, 1909. 
 <!---
   cspell:words Alaska Amazon Boeingi California Century City Emerald
   cspell:words Exposition Hendrixi Jimi Kanada Microsofti Northwesti Pacific Pacificu Pugeti Rainy
-  cspell:words Sealthi Seattle Seattle'it Starbucksi Vikipeedia
+  cspell:words Sealthi Seattle Seattle'i Seattle'it Starbucksi Vikipeedia
   cspell:words Washingtoni Yukon comi grungemuusika ignore indiaanipealik kõrgtehnoloogia locale words
   cspell:locale et
 --->
