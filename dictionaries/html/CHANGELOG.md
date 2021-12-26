@@ -3,6 +3,22 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+## [2.0.1](https://github.com/streetsidesoftware/cspell-dicts/compare/@cspell/dict-html@1.1.9...@cspell/dict-html@2.0.1) (2021-12-26)
+
+
+### Bug Fixes
+
+* Make HTML dictionary case sensitive ([#819](https://github.com/streetsidesoftware/cspell-dicts/issues/819)) ([458e031](https://github.com/streetsidesoftware/cspell-dicts/commit/458e031d507b9f2bacd3381689d7eab20be07d83)), closes [#705](https://github.com/streetsidesoftware/cspell-dicts/issues/705)
+
+
+### Features
+
+* **HTML:** add all HTML entities ([#818](https://github.com/streetsidesoftware/cspell-dicts/issues/818)) ([f00e4d3](https://github.com/streetsidesoftware/cspell-dicts/commit/f00e4d386879efd0a5d8a61c50b5f44357360687))
+
+
+
+
+
 ## [1.1.9](https://github.com/streetsidesoftware/cspell-dicts/compare/@cspell/dict-html@1.1.8...@cspell/dict-html@1.1.9) (2021-08-04)
 
 **Note:** Version bump only for package @cspell/dict-html
