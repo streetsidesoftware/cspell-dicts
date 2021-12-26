@@ -3,6 +3,17 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+## [2.0.2](https://github.com/streetsidesoftware/cspell-dicts/compare/@cspell/dict-html@2.0.1...@cspell/dict-html@2.0.2) (2021-12-26)
+
+
+### Bug Fixes
+
+* add `aria-*` terms to the list. ([#822](https://github.com/streetsidesoftware/cspell-dicts/issues/822)) ([a4b0d6b](https://github.com/streetsidesoftware/cspell-dicts/commit/a4b0d6bae75dc347c186fde6aea0bc9d0458a424))
+
+
+
+
+
 ## [2.0.1](https://github.com/streetsidesoftware/cspell-dicts/compare/@cspell/dict-html@1.1.9...@cspell/dict-html@2.0.1) (2021-12-26)
 
 
