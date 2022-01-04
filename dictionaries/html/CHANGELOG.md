@@ -3,6 +3,17 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+## [2.0.3](https://github.com/streetsidesoftware/cspell-dicts/compare/@cspell/dict-html@2.0.2...@cspell/dict-html@2.0.3) (2022-01-04)
+
+
+### Bug Fixes
+
+* remove duplicates in HTML dictionary ([#824](https://github.com/streetsidesoftware/cspell-dicts/issues/824)) ([46748d8](https://github.com/streetsidesoftware/cspell-dicts/commit/46748d84f93cacb11cdad5b01bc4f18f8c0098bd))
+
+
+
+
+
 ## [2.0.2](https://github.com/streetsidesoftware/cspell-dicts/compare/@cspell/dict-html@2.0.1...@cspell/dict-html@2.0.2) (2021-12-26)
 
 

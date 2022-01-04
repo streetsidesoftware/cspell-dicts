@@ -3,6 +3,17 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+## [2.0.12](https://github.com/streetsidesoftware/cspell-dicts/compare/@cspell/dict-software-terms@2.0.11...@cspell/dict-software-terms@2.0.12) (2022-01-04)
+
+
+### Bug Fixes
+
+* Add the parts of the alphabet ([#833](https://github.com/streetsidesoftware/cspell-dicts/issues/833)) ([a1ae3be](https://github.com/streetsidesoftware/cspell-dicts/commit/a1ae3be4e4aae7b7d48320589ce0bf4165b0fbda))
+
+
+
+
+
 ## [2.0.11](https://github.com/streetsidesoftware/cspell-dicts/compare/@cspell/dict-software-terms@2.0.10...@cspell/dict-software-terms@2.0.11) (2021-11-22)
 
 **Note:** Version bump only for package @cspell/dict-software-terms
