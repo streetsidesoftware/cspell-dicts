@@ -3,6 +3,17 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+## [1.0.13](https://github.com/streetsidesoftware/cspell-dicts/compare/@cspell/dict-css@1.0.12...@cspell/dict-css@1.0.13) (2022-01-24)
+
+
+### Bug Fixes
+
+* **css:** add minmax ([#858](https://github.com/streetsidesoftware/cspell-dicts/issues/858)) ([87fb75a](https://github.com/streetsidesoftware/cspell-dicts/commit/87fb75a739f40eb8f877daf8e004b69353fd3327))
+
+
+
+
+
 ## [1.0.12](https://github.com/streetsidesoftware/cspell-dicts/compare/@cspell/dict-css@1.0.11...@cspell/dict-css@1.0.12) (2021-07-21)
 
 **Note:** Version bump only for package @cspell/dict-css
