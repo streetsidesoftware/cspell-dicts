@@ -2,6 +2,8 @@ allexport
 autoremove
 braceexpand
 case
+compgen
+compopt
 coproc
 do
 done
@@ -15,6 +17,7 @@ fi
 for
 function
 functrace
+getopts
 globstar
 hashall
 histexpand
@@ -34,8 +37,11 @@ nounset
 onecmd
 physical
 pipefail
+popd
 posix
 privileged
+pushd
+readarray
 SCRIPTDIR
 select
 shellcheck
@@ -44,6 +50,7 @@ shopt
 then
 time
 tput
+unalias
 until
 verbose
 vi
