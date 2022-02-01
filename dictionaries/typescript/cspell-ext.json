@@ -7,7 +7,7 @@
     "dictionaryDefinitions": [
         {
             "name": "typescript",
-            "file": "./typescript.txt.gz",
+            "path": "./typescript.txt.gz",
             "description": "TypeScript and JavaScript dictionary for cspell."
         }
     ],
@@ -19,12 +19,17 @@
         {
             "name": "js-hex-escape",
             "pattern": "/\\\\x[a-f0-9]{2}/gi",
-            "description": "Javascript String Hexadecimal Escape sequence."
+            "description": "JavaScript String Hexadecimal Escape sequence."
         },
         {
             "name": "js-unicode-escape",
             "pattern": "/\\\\u[a-f0-9]{4}/gi",
-            "description": "Javascript String Unicode Escape sequence."
+            "description": "JavaScript String Unicode Escape sequence."
+        },
+        {
+            "name": "js-regexp-flags",
+            "pattern": "/\\/[dgimsuy]{1,7}\\b(?=(?:\\.flags\\b)|\\s*$|[;),])/g", // cspell:ignore dgimsuy
+            "description": "JavaScript Match Regular Expression Flags"
         }
     ],
     // Language Rules to apply to matching files.
@@ -41,7 +46,7 @@
             // Adding patterns to the "includeRegExpList" to only include matching patterns
             "includeRegExpList": [],
             // To exclude patterns, add them to "ignoreRegExpList"
-            "ignoreRegExpList": ["js-hex-escape", "js-unicode-escape"],
+            "ignoreRegExpList": ["js-hex-escape", "js-unicode-escape", "js-regexp-flags"],
             // regex patterns than can be used with ignoreRegExpList or includeRegExpList
             // Example: "pattern": [{ "name": "mdash", "pattern": "&mdash;" }]
             // This could be included in "ignoreRegExpList": ["mdash"]
