@@ -1,0 +1,47 @@
+---
+id: nl-nl
+language: nl
+name: Dutch (Netherlands) Dictionary
+description: Dutch (Netherlands) Dictionary
+dictionaryDefinitions:
+  - name: nl-nl
+    path: "./Dutch.trie.gz"
+    description: Dutch (Netherlands) Dictionary
+    dictionaryInformation:
+      locale: 'nl-NL'
+      # cspell: ignore Zëqïéèöêüçàûîñäô
+      alphabet: a-zA-Zëqïéèöêüçàûîñäô
+      suggestionEditCosts:
+        - map: o(oo)|e(ee)|u(uu)|a(aa)|(ei)(ie)|(ou)(ui)
+          replace: 5
+      hunspellInformation:
+        aff: |
+          # cspell:ignoreRegExp /(TRY|MAP|REP|KEY)\s.*/g
+          TRY  ernitsaoldgkupmchbvjwfzyx'’ëqïéèö.êüçàûîñäôERNITSAOLDGKUPMCHBVJWFZYX
+          # combined layout for BE and NL keyboards NL en BE
+          KEY qwertyuiop|asdfghjkl|zxcvbnm|qawsedrftgyhujikolp|azsxdcfvgbhnjmk|aze|qsd|lm|wx|aqz|qws|
+          NO-TRY -123456789
+
+          MAP eéèëê
+          MAP aáà
+          MAP iíìïî
+          MAP oóòöô
+          MAP uüúùû
+
+          REP e ee
+          REP ee e
+          REP o oo
+
+ignoreWords:
+  - A3-
+  - "-A4"
+languageSettings:
+  - languageId: "*"
+    locale: nl,nl-NL
+    caseSensitive: true
+    ignoreRegExpList: []
+    includeRegExpList: []
+    patterns: []
+    dictionaries:
+      - nl-nl
+    dictionaryDefinitions: []
