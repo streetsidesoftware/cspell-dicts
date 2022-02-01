@@ -1,15 +1,21 @@
 {
     "version": "0.2",
     "files": [
-        "**/*.{md,txt}"
+        "**/*.{md,txt,r}"
     ],
-    "dictionaries": [
-        "r"
-    ],
+    "dictionaries": [],
     "words": [
         "Toohey"
     ],
     "import": [
         "./cspell-ext.json"
+    ],
+    "overrides": [
+        {
+            "filename": "src/*",
+            "dictionaries": [
+                "r"
+            ]
+        }
     ]
 }
