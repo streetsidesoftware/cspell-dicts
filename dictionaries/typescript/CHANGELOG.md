@@ -3,6 +3,17 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+## [1.0.20](https://github.com/streetsidesoftware/cspell-dicts/compare/@cspell/dict-typescript@1.0.19...@cspell/dict-typescript@1.0.20) (2022-02-01)
+
+
+### Bug Fixes
+
+* Ignore RegExp flags in TypeScript/JavaScript ([#872](https://github.com/streetsidesoftware/cspell-dicts/issues/872)) ([3de910f](https://github.com/streetsidesoftware/cspell-dicts/commit/3de910fc51c7e809283aa32fd9a90a3ab6842bfb))
+
+
+
+
+
 ## [1.0.19](https://github.com/streetsidesoftware/cspell-dicts/compare/@cspell/dict-typescript@1.0.18...@cspell/dict-typescript@1.0.19) (2021-05-27)
 
 
