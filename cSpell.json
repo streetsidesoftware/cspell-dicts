@@ -43,6 +43,7 @@
     "flagWords": [],
     "maxNumberOfProblems": 1000,
     "ignorePaths": [
+        ".gitignore",
         ".vscode/**",
         "*.aff",
         "*.dic",
@@ -58,6 +59,7 @@
         "node_modules"
     ],
     "import": [],
+    "useGitignore": true,
     "overrides": [
         {
             "filename": "**/nl_NL/**",
@@ -72,6 +74,10 @@
             "language": "en,sv"
         }
     ],
+    "cache": {
+        "useCache": true,
+        "cacheStrategy": "content"
+    },
     "enableFiletypes": [
         "shellscript"
     ]
