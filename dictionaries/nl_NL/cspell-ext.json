@@ -1,25 +1,3 @@
 {
-    "id": "nl-nl",
-    "name": "Dutch (Netherlands) Dictionary",
-    "description": "Dutch (Netherlands) Dictionary",
-    "dictionaryDefinitions": [
-        {
-            "name": "nl-nl",
-            "path": "./Dutch.trie.gz",
-            "description": "Dutch (Netherlands) Dictionary"
-        }
-    ],
-    "ignoreWords": ["A3-", "-A4"],
-    "languageSettings": [
-        {
-            "languageId": "*",
-            "locale": "nl,nl-NL",
-            "caseSensitive": true,
-            "ignoreRegExpList": [],
-            "includeRegExpList": [],
-            "patterns": [],
-            "dictionaries": ["nl-nl"],
-            "dictionaryDefinitions": []
-        }
-    ]
+    "import": ["./cspell.config.yaml"]
 }

@@ -1,6 +1,5 @@
 ---
 id: nl-nl
-language: nl
 name: Dutch (Netherlands) Dictionary
 description: Dutch (Netherlands) Dictionary
 dictionaryDefinitions:
@@ -9,28 +8,22 @@ dictionaryDefinitions:
     description: Dutch (Netherlands) Dictionary
     dictionaryInformation:
       locale: "nl-NL"
-      # cspell: ignore Zëqïéèöêüçàûîñäô
+      # cspell:ignore Zëqïéèöêüçàûîñäô
       alphabet: a-zA-Zëqïéèöêüçàûîñäô
       suggestionEditCosts:
-        - map: o(oo)|e(ee)|u(uu)|a(aa)|(ei)(ie)|(ou)(ui)
-          replace: 5
-      hunspellInformation:
-        aff: |
-          # cspell:ignoreRegExp /(TRY|MAP|REP|KEY)\s.*/g
-          TRY  ernitsaoldgkupmchbvjwfzyx'’ëqïéèö.êüçàûîñäôERNITSAOLDGKUPMCHBVJWFZYX
-          # combined layout for BE and NL keyboards NL en BE
-          KEY qwertyuiop|asdfghjkl|zxcvbnm|qawsedrftgyhujikolp|azsxdcfvgbhnjmk|aze|qsd|lm|wx|aqz|qws|
-          NO-TRY -123456789
-
-          MAP eéèëê
-          MAP aáà
-          MAP iíìïî
-          MAP oóòöô
-          MAP uüúùû
-
-          REP e ee
-          REP ee e
-          REP o oo
+        - map: o(oo)|e(ee)|u(uu)|a(aa)|(ei)(ie)|(ou)(ui)|(ei)(ij)(ĳ)
+          replace: 50
+        - map: s(ss)|e(en)|n(nen)
+          replace: 75
+        # cspell:ignore eéèëê iíìïî oóòöô uüúùû
+        - map: MAP eéèëê|aáà|iíìïî|oóòöô|uüúùû|(ij)(ĳ)(IJ)(Ĳ)
+          replace: 1
+        # cspell:ignore eque oire oors
+        - map: (er)(ër)|(kju)(cue)|(oren)(oors)|(eck)(eque)|(ore)(oire)|(oor)(oir)|ü(ue)
+          replace: 75
+        - map: (en)(nen)(s)
+          description: Words are compounded in plural form
+          insDel: 90
 
 ignoreWords:
   - A3-
