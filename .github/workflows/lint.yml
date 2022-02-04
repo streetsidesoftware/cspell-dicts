@@ -29,5 +29,16 @@ jobs:
       - uses: actions/setup-node@v2
         with:
           cache: yarn
+
+      - name: Restore CSpell cache
+        uses: actions/cache@v2
+        with:
+          key: cspell-cache-${{ runner.os }}-lint-${{ hashFiles('**/*.ts', '**/*.md') }}
+          path: |
+            .cspellcache
+          restore-keys: |
+            cspell-cache-${{ runner.os }}-lint-
+            cspell-cache-${{ runner.os }}-
+
       - run: yarn
       - run: yarn run lint-ci
