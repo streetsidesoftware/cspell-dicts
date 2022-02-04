@@ -3,6 +3,17 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+## [2.0.14](https://github.com/streetsidesoftware/cspell-dicts/compare/@cspell/dict-software-terms@2.0.13...@cspell/dict-software-terms@2.0.14) (2022-02-04)
+
+
+### Bug Fixes
+
+* Add cspell cache ([#889](https://github.com/streetsidesoftware/cspell-dicts/issues/889)) ([f18a7a8](https://github.com/streetsidesoftware/cspell-dicts/commit/f18a7a83cf626e8ef191f649e291858c7decb44f))
+
+
+
+
+
 ## [2.0.13](https://github.com/streetsidesoftware/cspell-dicts/compare/@cspell/dict-software-terms@2.0.12...@cspell/dict-software-terms@2.0.13) (2022-02-01)
 
 **Note:** Version bump only for package @cspell/dict-software-terms
