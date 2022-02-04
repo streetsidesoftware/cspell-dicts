@@ -18,7 +18,7 @@ Examples include [English US](../dictionaries/en_US).
 
 ## Dictionary Definition
 
-| field                 | Descripton                                                                                                   |
+| field                 | Description                                                                                                  |
 | --------------------- | ------------------------------------------------------------------------------------------------------------ |
 | name                  | This is the name of the dictionary, it is good practice to have it match the locale, i.e. `en_us` or `pt_br` |
 | path                  | This is the relative path from the `cspell-ext.json` file to the dictionary `.trie.gz` files.                |
@@ -60,3 +60,5 @@ cspell suggestions -v words
 ```
 
 Use `--locale` or `--dictionary` to limit the suggestions.
+
+<!--- cspell:ignore dictionaryinformation -->
