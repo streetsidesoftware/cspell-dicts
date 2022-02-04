@@ -39,7 +39,7 @@ See Dutch example: [Dutch `cspell.config.yaml`](./dictionaries/nl_NL/cspell.conf
 
 ## Using `.yaml` files.
 
-Writing configuration in Yaml can be much easier that writing in JSON.
+Writing configuration in Yaml can be much easier than writing in JSON.
 
 Just have the `cspell-ext.json` file import the Yaml file.
 
@@ -50,3 +50,13 @@ Just have the `cspell-ext.json` file import the Yaml file.
   "import": ["./cspell.config.yaml"]
 }
 ```
+
+## Viewing Suggestions
+
+Example:
+
+```sh
+cspell suggestions -v words
+```
+
+Use `--locale` or `--dictionary` to limit the suggestions.
