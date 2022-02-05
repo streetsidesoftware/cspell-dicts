@@ -3,6 +3,17 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+## [2.0.3](https://github.com/streetsidesoftware/cspell-dicts/compare/@cspell/dict-et-ee@2.0.2...@cspell/dict-et-ee@2.0.3) (2022-02-05)
+
+
+### Bug Fixes
+
+* Add dictionary information to et-EE ([#891](https://github.com/streetsidesoftware/cspell-dicts/issues/891)) ([6aa82de](https://github.com/streetsidesoftware/cspell-dicts/commit/6aa82de224a5c4d2bc8cc576d53ce4ad71eaae9c))
+
+
+
+
+
 ## [2.0.2](https://github.com/streetsidesoftware/cspell-dicts/compare/@cspell/dict-et-ee@2.0.1...@cspell/dict-et-ee@2.0.2) (2021-12-12)
 
 
