@@ -3,16 +3,23 @@
     "id": "django",
     "name": "Django Keywords",
     "description": "List of Python Django Framework keywords.",
+    "readonly": true,
     // List of dictionary files to add to the global list of dictionaries
     "dictionaryDefinitions": [
         {
             "name": "django",
-            "file": "./django.txt.gz",
+            "path": "./django.txt.gz",
             "description": "List of Python Django Framework keywords."
         }
     ],
     "languageSettings": [
-        { "languageId": "html", "dictionaries": ["django"] },
-        { "languageId": "python", "dictionaries": ["django"] }
+        {
+            "languageId": "html",
+            "dictionaries": ["django"]
+        },
+        {
+            "languageId": "python",
+            "dictionaries": ["django"]
+        }
     ]
 }

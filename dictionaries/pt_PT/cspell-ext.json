@@ -3,11 +3,12 @@
     "id": "pt-pt",
     "name": "Portuguese Dictionary (Portugal)",
     "description": "Portuguese Dictionary (Portugal)",
+    "readonly": true,
     // List of dictionary files to add to the global list of dictionaries
     "dictionaryDefinitions": [
         {
             "name": "pt-pt",
-            "file": "./Portuguese-European.trie.gz",
+            "path": "./Portuguese-European.trie.gz",
             "description": "Portuguese Dictionary (Portugal)"
         }
     ],
@@ -23,7 +24,7 @@
             "languageId": "*",
             // Language local. i.e. en-US, de-AT, or ru. * will match all locals.
             // Multiple locals can be specified like: "en, en-US" to match both English and English US.
-            "local": "pt,pt_PT",
+            "locale": "pt,pt_PT",
             // By default the whole text of a file is included for spell checking
             // Adding patterns to the "includeRegExpList" to only include matching patterns
             "includeRegExpList": [],
@@ -35,7 +36,7 @@
             "patterns": [],
             // List of dictionaries to enable by name in `dictionaryDefinitions`
             "dictionaries": ["pt-pt"],
-            // Dictionary definitions can also be supplied here. They are only used iff "languageId" and "local" match.
+            // Dictionary definitions can also be supplied here. They are only used iff "languageId" and "locale" match.
             "dictionaryDefinitions": []
         }
     ]
