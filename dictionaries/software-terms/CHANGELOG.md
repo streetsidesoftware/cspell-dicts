@@ -3,6 +3,17 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+## [2.0.15](https://github.com/streetsidesoftware/cspell-dicts/compare/@cspell/dict-software-terms@2.0.14...@cspell/dict-software-terms@2.0.15) (2022-02-09)
+
+
+### Bug Fixes
+
+* Add `Gitpod` to Software Terms ([#904](https://github.com/streetsidesoftware/cspell-dicts/issues/904)) ([5aacfa2](https://github.com/streetsidesoftware/cspell-dicts/commit/5aacfa2e0d1e193492701200c02f78919cacbcfd))
+
+
+
+
+
 ## [2.0.14](https://github.com/streetsidesoftware/cspell-dicts/compare/@cspell/dict-software-terms@2.0.13...@cspell/dict-software-terms@2.0.14) (2022-02-04)
 
 
