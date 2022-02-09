@@ -3,6 +3,25 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+# [2.0.0](https://github.com/streetsidesoftware/cspell-dicts/compare/@cspell/dict-java@1.0.23...@cspell/dict-java@2.0.0) (2022-02-09)
+
+
+### Features
+
+* Drop support for CSpell 4. ([#907](https://github.com/streetsidesoftware/cspell-dicts/issues/907)) ([ca078c6](https://github.com/streetsidesoftware/cspell-dicts/commit/ca078c6a2e188cc3cf6276db1ba7e007f0f06f27))
+
+
+### BREAKING CHANGES
+
+* Drop Support for CSpell 4.
+
+* feat: Drop support for CSpell 4.
+* Mark the config files as READONLY
+
+
+
+
+
 ## [1.0.23](https://github.com/streetsidesoftware/cspell-dicts/compare/@cspell/dict-java@1.0.22...@cspell/dict-java@1.0.23) (2021-07-21)
 
 **Note:** Version bump only for package @cspell/dict-java
