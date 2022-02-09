@@ -15,7 +15,7 @@
     "test": "yarn run test-src && yarn run test-samples",
     "test-src": "head -n 10000 \"src/win32.txt\" | cspell -v -c ./cspell.json \"--local=*\" stdin",
     "test-samples": "cspell samples/**",
-    "prepublishOnly": "yarn test",
+    "prepublishOnly": "echo pre-publish",
     "prepare": "yarn run build"
   },
   "repository": {

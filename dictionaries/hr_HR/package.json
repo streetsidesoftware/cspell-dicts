@@ -13,7 +13,7 @@
   "scripts": {
     "build": "cross-env NODE_OPTIONS=--max_old_space_size=8192 cspell-tools compile-trie \"src/hr_HR.dic\" -o .",
     "test": "hunspell-reader words -n 1000 \"src/hr_HR.dic\" | cspell -v -c ./cspell-ext.json \"--local=hr\" \"--languageId=*\" stdin",
-    "prepublishOnly": "yarn test",
+    "prepublishOnly": "echo pre-publish",
     "prepare": "echo OK"
   },
   "repository": {

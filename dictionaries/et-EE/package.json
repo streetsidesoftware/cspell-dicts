@@ -21,7 +21,7 @@
     "test-text": "cspell -v -c ./cspell-ext.json --local=et --languageId=* \"samples/**\"",
     "gen-checksum": "cat source-files.txt source-dependencies.txt | sort -u | xargs shasum > checksum.txt",
     "test": "yarn run test-dict && yarn run test-text",
-    "prepublishOnly": "yarn test"
+    "prepublishOnly": "echo pre-publish"
   },
   "repository": {
     "type": "git",

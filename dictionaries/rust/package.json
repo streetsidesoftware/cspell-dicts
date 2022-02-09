@@ -13,7 +13,7 @@
   "scripts": {
     "build": "cspell-tools compile \"rust.txt\" -o .",
     "test": "head -n 1000 \"rust.txt\" | cspell -v -c ./cspell-ext.json --local=* --languageId=rust stdin",
-    "prepublishOnly": "yarn test",
+    "prepublishOnly": "echo pre-publish",
     "prepare": "yarn run build"
   },
   "repository": {

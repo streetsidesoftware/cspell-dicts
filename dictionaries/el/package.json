@@ -14,7 +14,7 @@
     "compile-all-caps": "node ./tools/toCaps ./src/Greek.txt ./src/Greek.ALLCAPS.txt",
     "build-dictionary": "cross-env NODE_OPTIONS=--max_old_space_size=4096 cspell-tools compile-trie --merge el_GR src/hunspell/el-GR.dic src/Greek.txt src/Greek.ALLCAPS.txt -o .",
     "build": "yarn run compile-all-caps && yarn run build-dictionary",
-    "prepublishOnly": "yarn test",
+    "prepublishOnly": "echo pre-publish",
     "test": "head -n 1000 ./src/Greek.txt | cspell -v -c cspell-ext.json --local=el stdin"
   },
   "repository": {

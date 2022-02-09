@@ -13,7 +13,7 @@
   "scripts": {
     "build": "cspell-tools compile-trie \"hunspell/fa-IR.dic\" -o .",
     "test": "hunspell-reader words -n 10000 \"hunspell/fa-IR.dic\" |  cspell -v --local=fa --languageId=* stdin",
-    "prepublishOnly": "yarn test"
+    "prepublishOnly": "echo pre-publish"
   },
   "repository": {
     "type": "git",

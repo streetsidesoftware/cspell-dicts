@@ -13,7 +13,7 @@
   "scripts": {
     "build": "cspell-tools-cli compile --trie3 -x compound \"src/hunspell/Spanish.dic\" -o .",
     "test": "hunspell-reader words -n 1000 \"src/hunspell/Spanish.dic\" | cspell -v -c ./cspell-ext.json --local=es --languageId=* stdin",
-    "prepublishOnly": "yarn test"
+    "prepublishOnly": "echo pre-publish"
   },
   "repository": {
     "type": "git",

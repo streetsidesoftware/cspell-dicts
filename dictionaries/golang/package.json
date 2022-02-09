@@ -13,7 +13,7 @@
   "scripts": {
     "build": "cspell-tools compile \"go.txt\" -o .",
     "test": "head -n 100 \"go.txt\" | cspell -v -c ./cspell-ext.json --local=* --languageId=go stdin",
-    "prepublishOnly": "yarn test",
+    "prepublishOnly": "echo pre-publish",
     "prepare": "yarn run build"
   },
   "repository": {

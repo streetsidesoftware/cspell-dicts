@@ -16,7 +16,7 @@
     "test": "yarn test-dict && yarn test-old",
     "test-dict": "cat \"node.txt\" | cspell -v -c ./cspell-ext.json \"--local=*\" \"--languageId=javascript\" stdin",
     "test-old": "cspell -v -c ./cspell-ext.json \"--local=en\" \"--languageId=javascript\" src/node-old.txt",
-    "prepublishOnly": "yarn test",
+    "prepublishOnly": "echo pre-publish",
     "prepare": "yarn run build"
   },
   "repository": {

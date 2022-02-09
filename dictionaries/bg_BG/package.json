@@ -13,7 +13,7 @@
   "scripts": {
     "build": "cspell-tools compile-trie \"bg_BG.dic\" -o .",
     "test": "hunspell-reader words -n 1000 \"bg_BG.dic\" | cspell -v -c ./cspell-ext.json \"--local=bg\" \"--languageId=*\" stdin",
-    "prepublishOnly": "yarn test"
+    "prepublishOnly": "echo pre-publish"
   },
   "repository": {
     "type": "git",

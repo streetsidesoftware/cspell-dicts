@@ -20,7 +20,7 @@
     "test-dict": "cat source-files.txt | xargs cat | cspell -v -c ./cspell-ext.json --local=en --languageId=* stdin",
     "gen-checksum": "cat source-files.txt source-dependencies.txt | sort -u | xargs shasum > checksum.txt",
     "test": "yarn run test-dict",
-    "prepublishOnly": "yarn test",
+    "prepublishOnly": "echo pre-publish",
     "prepare": "yarn run build"
   },
   "repository": {

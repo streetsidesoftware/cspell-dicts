@@ -20,7 +20,7 @@
     "test-dict": "hunspell-reader words -n 1000 \"src/hunspell/index.dic\" | cspell -v -c ./cspell-ext.json --local=pt --languageId=* stdin",
     "test-text": "cspell",
     "test": "yarn run test-dict && yarn run test-text",
-    "prepublishOnly": "yarn test"
+    "prepublishOnly": "echo pre-publish"
   },
   "repository": {
     "type": "git",

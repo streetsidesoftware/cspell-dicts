@@ -15,7 +15,7 @@
     "test-words": "hunspell-reader words -n 1000 \"src/nb.dic\" | cspell -v -c ./cspell-ext.json \"--local=nb\" \"--languageId=*\" stdin",
     "test-samples": "cspell \"samples/**\"",
     "test": "yarn run test-words && yarn run test-samples",
-    "prepublishOnly": "yarn test",
+    "prepublishOnly": "echo pre-publish",
     "prepare": "echo OK"
   },
   "repository": {

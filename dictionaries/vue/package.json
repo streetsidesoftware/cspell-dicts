@@ -13,7 +13,7 @@
   "scripts": {
     "build": "echo skip",
     "test": "echo skip",
-    "prepublishOnly": "yarn test",
+    "prepublishOnly": "echo pre-publish",
     "prepare": "yarn run build"
   },
   "repository": {

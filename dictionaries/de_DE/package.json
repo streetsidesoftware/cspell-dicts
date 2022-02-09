@@ -25,7 +25,7 @@
   "scriptsX": {
     "build": "cross-env NODE_OPTIONS=--max_old_space_size=4096 cspell-tools compile-trie \"src/German_de_DE.dic\" -M German_de_DE -o .",
     "test": "hunspell-reader words -n 1000 \"German_de_DE.dic\" | cspell -v -c ./cspell-ext.json --local=de --languageId=* stdin",
-    "prepublishOnly": "yarn test"
+    "prepublishOnly": "echo pre-publish"
   },
   "repository": {
     "type": "git",

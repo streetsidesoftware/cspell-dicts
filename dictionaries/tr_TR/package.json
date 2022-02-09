@@ -13,7 +13,7 @@
   "scripts": {
     "build": "cspell-tools compile-trie \"Turkish.dic\" -o .",
     "test": "hunspell-reader words -n 1000 \"Turkish.dic\" | cspell -v -c ./cspell-ext.json --local=tr --languageId=* stdin",
-    "prepublishOnly": "yarn test"
+    "prepublishOnly": "echo pre-publish"
   },
   "repository": {
     "type": "git",
