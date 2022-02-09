@@ -16,9 +16,9 @@
     "generate-doc-dictionaries": "./scripts/dictionaries.sh > dictionaries.md && yarn run lint-format",
     "prepare": "lerna run prepare",
     "force-publish": "yarn prepare && yarn test && lerna exec --no-bail \"npm publish\"",
-    "pub-lerna": "lerna publish --conventional-commits",
+    "pub-lerna": "lerna publish --conventional-commits  --concurrency 4",
     "pub": "yarn run conditional-build && yarn run check-dirty && yarn run prepare && yarn test && yarn run pub-lerna",
-    "pub-recover": "lerna publish from-package",
+    "pub-recover": "lerna publish from-package --concurrency 2",
     "update-packages": "yarn upgrade"
   },
   "repository": {
