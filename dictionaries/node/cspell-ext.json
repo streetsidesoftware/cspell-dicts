@@ -7,7 +7,7 @@
     "dictionaryDefinitions": [
         {
             "name": "node",
-            "file": "./node.txt.gz",
+            "path": "./node.txt.gz",
             "description": "Node.js dictionary for cspell."
         }
     ],
@@ -23,7 +23,7 @@
             "languageId": "javascript,typescript",
             // Language local. i.e. en-US, de-AT, or ru. * will match all locals.
             // Multiple locals can be specified like: "en, en-US" to match both English and English US.
-            "local": "*",
+            "locale": "*",
             // By default the whole text of a file is included for spell checking
             // Adding patterns to the "includeRegExpList" to only include matching patterns
             "includeRegExpList": [],
@@ -36,7 +36,7 @@
             "words": ["yyyymmdd"],
             // List of dictionaries to enable by name in `dictionaryDefinitions`
             "dictionaries": ["node"],
-            // Dictionary definitions can also be supplied here. They are only used iff "languageId" and "local" match.
+            // Dictionary definitions can also be supplied here. They are only used iff "languageId" and "locale" match.
             "dictionaryDefinitions": []
         }
     ]

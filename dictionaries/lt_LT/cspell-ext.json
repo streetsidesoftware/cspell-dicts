@@ -7,7 +7,7 @@
     "dictionaryDefinitions": [
         {
             "name": "lt-lt",
-            "file": "./lt_LT.trie.gz",
+            "path": "./lt_LT.trie.gz",
             "description": "Lithuanian dictionary for cspell."
         }
     ],
@@ -23,7 +23,7 @@
             "languageId": "*",
             // Language local. i.e. en-US, de-AT, or ru. * will match all locals.
             // Multiple locals can be specified like: "en, en-US" to match both English and English US.
-            "local": "lt,lt-LT",
+            "locale": "lt,lt-LT",
             // By default the whole text of a file is included for spell checking
             // Adding patterns to the "includeRegExpList" to only include matching patterns
             "includeRegExpList": [],
@@ -35,7 +35,7 @@
             "patterns": [],
             // List of dictionaries to enable by name in `dictionaryDefinitions`
             "dictionaries": ["lt-lt"],
-            // Dictionary definitions can also be supplied here. They are only used iff "languageId" and "local" match.
+            // Dictionary definitions can also be supplied here. They are only used iff "languageId" and "locale" match.
             "dictionaryDefinitions": []
         }
     ]

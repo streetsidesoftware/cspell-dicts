@@ -7,12 +7,18 @@
     "dictionaryDefinitions": [
         {
             "name": "django",
-            "file": "./django.txt.gz",
+            "path": "./django.txt.gz",
             "description": "List of Python Django Framework keywords."
         }
     ],
     "languageSettings": [
-        { "languageId": "html", "dictionaries": ["django"] },
-        { "languageId": "python", "dictionaries": ["django"] }
+        {
+            "languageId": "html",
+            "dictionaries": ["django"]
+        },
+        {
+            "languageId": "python",
+            "dictionaries": ["django"]
+        }
     ]
 }

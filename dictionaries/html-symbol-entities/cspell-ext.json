@@ -7,12 +7,18 @@
     "dictionaryDefinitions": [
         {
             "name": "html-symbol-entities",
-            "file": "./entities.txt.gz",
+            "path": "./entities.txt.gz",
             "description": "HTML Symbol Entities Dictionary"
         }
     ],
     "languageSettings": [
-        { "languageId": "html", "dictionaries": ["html-symbol-entities"] },
-        { "languageId": "markdown", "dictionaries": ["html-symbol-entities"] }
+        {
+            "languageId": "html",
+            "dictionaries": ["html-symbol-entities"]
+        },
+        {
+            "languageId": "markdown",
+            "dictionaries": ["html-symbol-entities"]
+        }
     ]
 }

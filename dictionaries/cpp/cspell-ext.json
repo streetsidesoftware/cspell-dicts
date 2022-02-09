@@ -7,7 +7,7 @@
     "dictionaryDefinitions": [
         {
             "name": "cpp",
-            "file": "./cpp.txt.gz",
+            "path": "./cpp.txt.gz",
             "description": "C/C++ Keywords and common library functions."
         }
     ],
@@ -24,7 +24,7 @@
             "allowCompoundWords": true,
             // Language local. i.e. en-US, de-AT, or ru. * will match all locals.
             // Multiple locals can be specified like: "en, en-US" to match both English and English US.
-            "local": "*",
+            "locale": "*",
             // This can be removed once cspell-tools are upgraded to @cspell/cspell-tools.
             "words": [
                 "aaaabbbb",
@@ -53,7 +53,7 @@
             ],
             // List of dictionaries to enable by name in `dictionaryDefinitions`
             "dictionaries": ["cpp"],
-            // Dictionary definitions can also be supplied here. They are only used iff "languageId" and "local" match.
+            // Dictionary definitions can also be supplied here. They are only used iff "languageId" and "locale" match.
             "dictionaryDefinitions": []
         }
     ]

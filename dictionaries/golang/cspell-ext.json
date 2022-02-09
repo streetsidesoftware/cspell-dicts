@@ -7,7 +7,7 @@
     "dictionaryDefinitions": [
         {
             "name": "golang",
-            "file": "./go.txt.gz",
+            "path": "./go.txt.gz",
             "description": "Go Language Dictionary"
         }
     ],
@@ -23,7 +23,7 @@
             "languageId": "go",
             // Language local. i.e. en-US, de-AT, or ru. * will match all locals.
             // Multiple locals can be specified like: "en, en-US" to match both English and English US.
-            "local": "*",
+            "locale": "*",
             // It is common in Go to glue words together.
             "allowCompoundWords": true,
             // By default the whole text of a file is included for spell checking
@@ -37,7 +37,7 @@
             "patterns": [],
             // List of dictionaries to enable by name in `dictionaryDefinitions`
             "dictionaries": ["golang"],
-            // Dictionary definitions can also be supplied here. They are only used iff "languageId" and "local" match.
+            // Dictionary definitions can also be supplied here. They are only used iff "languageId" and "locale" match.
             "dictionaryDefinitions": []
         }
     ]
