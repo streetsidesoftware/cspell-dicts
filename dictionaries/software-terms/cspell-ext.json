@@ -1,17 +1,26 @@
-// cSpell Settings
 {
     "id": "software-terms",
     "name": "Software Terms",
     "readonly": true,
     "description": "Software terms dictionary for cspell.",
-    // List of dictionary files to add to the global list of dictionaries
     "dictionaryDefinitions": [
         {
+            // changing the name is a breaking change.
             "name": "softwareTerms",
             "path": "./softwareTerms.txt.gz",
             "description": "Software terms dictionary for cspell."
+        },
+        {
+            // Note this dictionary name is not consistent withe `softwareTerms` but it is
+            // consistent with other dictionaries.
+            "name": "networking-terms",
+            "path": "./networkingTerms.txt.gz",
+            "description": "Software networking terms dictionary for cspell."
         }
     ],
     // Enable `softwareTerms` by default if this extension is imported.
-    "dictionaries": ["softwareTerms"]
+    "dictionaries": [
+        "softwareTerms"
+        // "networking-terms" - is not included by default because it is very specific.
+    ]
 }
