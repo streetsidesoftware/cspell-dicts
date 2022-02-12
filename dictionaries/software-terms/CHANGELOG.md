@@ -3,6 +3,17 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+# [2.1.0](https://github.com/streetsidesoftware/cspell-dicts/compare/@cspell/dict-software-terms@2.0.16...@cspell/dict-software-terms@2.1.0) (2022-02-12)
+
+
+### Features
+
+* Add `networking-terms` dictionary ([#920](https://github.com/streetsidesoftware/cspell-dicts/issues/920)) ([8f57fc8](https://github.com/streetsidesoftware/cspell-dicts/commit/8f57fc8256c2ce2a47bd07a4e7b6fb8b7de3fe73))
+
+
+
+
+
 ## [2.0.16](https://github.com/streetsidesoftware/cspell-dicts/compare/@cspell/dict-software-terms@2.0.15...@cspell/dict-software-terms@2.0.16) (2022-02-11)
 
 **Note:** Version bump only for package @cspell/dict-software-terms
