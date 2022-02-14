@@ -1,8 +1,7 @@
 {
   "name": "@cspell/dict-dart",
   "version": "1.0.0",
-  "description": "Dart dictionary for cspell. -- Private until verified",
-  "private": true,
+  "description": "Dart dictionary for cspell.",
   "publishConfig": {
     "access": "public"
   },
@@ -13,7 +12,9 @@
   },
   "scripts": {
     "build": "cross-env NODE_OPTIONS=--max_old_space_size=8192 cspell-tools-cli compile \"src/dart.txt\" -o .",
-    "test": "head -n 1000 \"src/dart.txt\" | cspell -v -c ./cspell-ext.json \"--local=*\" \"--languageId=dart\" stdin",
+    "test": "npm run test-dict && npm run test-samples",
+    "test-samples": "cspell \"samples/**/*.dart\"",
+    "test-dict": "head -n 1000 \"src/dart.txt\" | cspell -v -c ./cspell-ext.json \"--local=*\" \"--languageId=dart\" stdin",
     "prepublishOnly": "echo pre-publish",
     "prepare": "yarn run build"
   },
@@ -39,8 +40,6 @@
   "dependencies": {},
   "files": [
     "dart.txt.gz",
-    "cspell-ext.json",
-    "*.js",
-    "*.d.ts"
+    "cspell-ext.json"
   ]
 }
