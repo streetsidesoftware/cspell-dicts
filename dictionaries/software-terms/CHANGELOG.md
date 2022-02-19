@@ -3,6 +3,17 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+## [2.1.1](https://github.com/streetsidesoftware/cspell-dicts/compare/@cspell/dict-software-terms@2.1.0...@cspell/dict-software-terms@2.1.1) (2022-02-19)
+
+
+### Bug Fixes
+
+* Add multithreading terms ([#933](https://github.com/streetsidesoftware/cspell-dicts/issues/933)) ([5926e84](https://github.com/streetsidesoftware/cspell-dicts/commit/5926e8414cb286f111f46f8a5f8f3ad7c7dc2452))
+
+
+
+
+
 # [2.1.0](https://github.com/streetsidesoftware/cspell-dicts/compare/@cspell/dict-software-terms@2.0.16...@cspell/dict-software-terms@2.1.0) (2022-02-12)
 
 
