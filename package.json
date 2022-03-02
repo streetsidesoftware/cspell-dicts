@@ -6,7 +6,7 @@
     "lint": "yarn run lint-format && cspell --no-progress",
     "lint-ci": "eslint . && prettier -c \"**/*.{md,json,yml,yaml}\" && cspell",
     "lint-format": "eslint --fix . && prettier -w \"**/*.{md,json,yml,yaml}\"",
-    "build": "lerna run --concurrency 2 --stream build --no-bail",
+    "build-all": "lerna run --concurrency 2 --stream build --no-bail",
     "conditional-build": "lerna run --concurrency 2 --stream conditional-build --no-bail",
     "check-dirty": "git --no-pager diff --compact-summary --exit-code",
     "check-spelling": "cspell",
