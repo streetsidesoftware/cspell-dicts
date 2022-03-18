@@ -1273,7 +1273,6 @@ ansi@^0.3.0, ansi@~0.3.1:
 
 "aoo-mozilla-en-dict@https://github.com/marcoagpinto/aoo-mozilla-en-dict":
   version "0.0.0"
-  uid "04ac0954867ba3c6eeea254fe73b5b559e230fb9"
   resolved "https://github.com/marcoagpinto/aoo-mozilla-en-dict#04ac0954867ba3c6eeea254fe73b5b559e230fb9"
 
 aproba@^1.0.3:
@@ -1569,18 +1568,18 @@ cacache@^15.0.3, cacache@^15.0.5, cacache@^15.2.0:
     unique-filename "^1.1.1"
 
 cacache@^16.0.0:
-  version "16.0.0"
-  resolved "https://registry.npmjs.org/cacache/-/cacache-16.0.0.tgz#891149a9f9b0c8bbe6cd84d8ac246d6cf5ff429e"
-  integrity sha512-pMX6sqJSlGpxCM257by5syifGb7zH6C30CaJXeGXqmKNrHKqvMmwM8KgKmsZcUAsnNQkt7WvENH2Kl53RpFQuA==
+  version "16.0.2"
+  resolved "https://registry.npmjs.org/cacache/-/cacache-16.0.2.tgz#b18d630b707554d7d5ce96f53bfe845233c84933"
+  integrity sha512-Q17j7s8X81i/QYVrKVQ/qwWGT+pYLfpTcZ+X+p/Qw9FULy9JEfb2FECYTTt6mPV6A/vk92nRZ80ncpKxiGTrIA==
   dependencies:
     "@npmcli/fs" "^1.0.0"
     "@npmcli/move-file" "^1.1.2"
     chownr "^2.0.0"
     fs-minipass "^2.1.0"
-    glob "^7.1.4"
+    glob "^7.2.0"
     infer-owner "^1.0.4"
-    lru-cache "^6.0.0"
-    minipass "^3.1.1"
+    lru-cache "^7.5.1"
+    minipass "^3.1.6"
     minipass-collect "^1.0.2"
     minipass-flush "^1.0.5"
     minipass-pipeline "^1.2.4"
@@ -1927,9 +1926,9 @@ commander@^6.2.1:
   integrity sha512-U7VdrJFnJgo4xjrHpTzu0yrHPGImdsmD95ZlgYSEajAn2JKzDhDTPG9kBTefmObL2w/ngeZnilk+OV9CG3d7UA==
 
 commander@^9.0.0:
-  version "9.0.0"
-  resolved "https://registry.npmjs.org/commander/-/commander-9.0.0.tgz#86d58f24ee98126568936bd1d3574e0308a99a40"
-  integrity sha512-JJfP2saEKbQqvW+FI93OYUB4ByV5cizMpFMiiJI8xDbBvQvSkIk0VvQdn1CZ8mqAO8Loq2h0gYTYtDFUZUeERw==
+  version "9.1.0"
+  resolved "https://registry.npmjs.org/commander/-/commander-9.1.0.tgz#a6b263b2327f2e188c6402c42623327909f2dbec"
+  integrity sha512-i0/MaqBtdbnJ4XQs4Pmyb+oFQl+q0lsAmokVUH92SlSw4fkeAcG3bVon+Qt7hmtF+u3Het6o4VgrcY3qAoEB6w==
 
 comment-json@^4.2.2:
   version "4.2.2"
@@ -2344,9 +2343,9 @@ dateformat@^4.5.0:
   integrity sha512-2P0p0pFGzHS5EMnhdxQi7aJN+iMheud0UhG4dlE1DLAlvL8JHjJJTX/CSm4JXwV0Ka5nGk3zC5mcb5bUQUxxMA==
 
 debug@4, debug@^4.1.0, debug@^4.1.1, debug@^4.3.1, debug@^4.3.2:
-  version "4.3.3"
-  resolved "https://registry.npmjs.org/debug/-/debug-4.3.3.tgz#04266e0b70a98d4462e6e288e38259213332b664"
-  integrity sha512-/zxw5+vh1Tfv+4Qn7a5nsbcJKPaSvCDhojn6FEl9vupwK2VCSDtEiEtqr8DFtzYFOdz63LBkxec7DYuc2jon6Q==
+  version "4.3.4"
+  resolved "https://registry.npmjs.org/debug/-/debug-4.3.4.tgz#1319f6579357f2338d3337d2cdd4914bb5dcc865"
+  integrity sha512-PRWFHuSU3eDtQJPvnNY7Jcket1j0t5OuOsFzPPzsekD52Zl8qUfFIPEiswXqIvHWGVHOgX+7G/vCNNhehwxfkQ==
   dependencies:
     ms "2.1.2"
 
@@ -2372,7 +2371,7 @@ decamelize-keys@^1.1.0:
 
 decamelize@^1.0.0, decamelize@^1.1.0, decamelize@^1.2.0:
   version "1.2.0"
-  resolved "https://registry.yarnpkg.com/decamelize/-/decamelize-1.2.0.tgz#f6534d15148269b20352e7bee26f501f9a191290"
+  resolved "https://registry.npmjs.org/decamelize/-/decamelize-1.2.0.tgz#f6534d15148269b20352e7bee26f501f9a191290"
   integrity sha1-9lNNFRSCabIDUue+4m9QH5oZEpA=
 
 decamelize@^5.0.0:
@@ -3417,9 +3416,9 @@ global-tunnel-ng@^2.7.1:
     tunnel "^0.0.6"
 
 globals@^13.6.0, globals@^13.9.0:
-  version "13.12.1"
-  resolved "https://registry.npmjs.org/globals/-/globals-13.12.1.tgz#ec206be932e6c77236677127577aa8e50bf1c5cb"
-  integrity sha512-317dFlgY2pdJZ9rspXDks7073GpDmXdfbM3vYYp0HAMKGDh1FfWPleI2ljVNLQX5M5lXcAslTcPTrOrMEFOjyw==
+  version "13.13.0"
+  resolved "https://registry.npmjs.org/globals/-/globals-13.13.0.tgz#ac32261060d8070e2719dd6998406e27d2b5727b"
+  integrity sha512-EQ7Q18AJlPwp3vUDL4mKA0KXrXyNIQyWon6T6XQiBQF0XHvRsiCSrWmmeATpUzdJN2HhWZU6Pdl0a9zdep5p6A==
   dependencies:
     type-fest "^0.20.2"
 
@@ -4637,9 +4636,9 @@ lru-cache@^6.0.0:
     yallist "^4.0.0"
 
 lru-cache@^7.5.1:
-  version "7.5.1"
-  resolved "https://registry.npmjs.org/lru-cache/-/lru-cache-7.5.1.tgz#660a134c2c3c015aa453b03df55d2a9f0c216a0f"
-  integrity sha512-q1TS8IqKvcg3aScamKCHpepSrHF537Ww7nHahBOxhDu9D2YoBXAsj/7uFdZFj1xJr9LmyeJ62AdyofCHafUbIA==
+  version "7.7.1"
+  resolved "https://registry.npmjs.org/lru-cache/-/lru-cache-7.7.1.tgz#03d2846b1ad2dcc7931a9340b8711d9798fcb0c6"
+  integrity sha512-cRffBiTW8s73eH4aTXqBcTLU0xQnwGV3/imttRHGWCrbergmnK4D6JXQd8qin5z43HnDwRI+o7mVW0LEB+tpAw==
 
 macos-release@^2.2.0:
   version "2.5.0"
@@ -4812,7 +4811,7 @@ meow@^10.1.2:
 
 meow@^3.0.0, meow@^9.0.0:
   version "9.0.0"
-  resolved "https://registry.yarnpkg.com/meow/-/meow-9.0.0.tgz#cd9510bc5cac9dee7d03c73ee1f9ad959f4ea364"
+  resolved "https://registry.npmjs.org/meow/-/meow-9.0.0.tgz#cd9510bc5cac9dee7d03c73ee1f9ad959f4ea364"
   integrity sha512-+obSblOQmRhcyBt62furQqRAQpNyWXo8BuQ5bN7dG8wmwQ+vwHKp/rCFD4CrTP8CsDQD1sjoZ94K417XEUk8IQ==
   dependencies:
     "@types/minimist" "^1.2.0"
@@ -6017,10 +6016,10 @@ prettier-linter-helpers@^1.0.0:
   dependencies:
     fast-diff "^1.1.2"
 
-prettier@^2.5.1:
-  version "2.5.1"
-  resolved "https://registry.npmjs.org/prettier/-/prettier-2.5.1.tgz#fff75fa9d519c54cf0fce328c1017d94546bc56a"
-  integrity sha512-vBZcPRUR5MZJwoyi3ZoyQlc1rXeEck8KgeC9AwwOn+exuxLxq5toTRDTSaVrXHxelDMHy9zlicw8u66yxoSUFg==
+prettier@^2.6.0:
+  version "2.6.0"
+  resolved "https://registry.npmjs.org/prettier/-/prettier-2.6.0.tgz#12f8f504c4d8ddb76475f441337542fa799207d4"
+  integrity sha512-m2FgJibYrBGGgQXNzfd0PuDGShJgRavjUoRCw1mZERIWVSXF0iLzLm+aOqTAbLnC3n6JzUhAA8uZnFVghHJ86A==
 
 pretty-bytes@^5.3.0:
   version "5.6.0"
@@ -6582,7 +6581,7 @@ semver-diff@^2.0.0:
 
 semver-regex@^2.0.0, semver-regex@^3.1.3:
   version "3.1.3"
-  resolved "https://registry.yarnpkg.com/semver-regex/-/semver-regex-3.1.3.tgz#b2bcc6f97f63269f286994e297e229b6245d0dc3"
+  resolved "https://registry.npmjs.org/semver-regex/-/semver-regex-3.1.3.tgz#b2bcc6f97f63269f286994e297e229b6245d0dc3"
   integrity sha512-Aqi54Mk9uYTjVexLnR67rTyBusmwd04cLkHy9hNvk3+G3nT2Oyg7E0l4XVbOaNwIvQ3hHeYxGcyEy+mKreyBFQ==
 
 semver-truncate@^1.1.2:
