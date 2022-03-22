@@ -3,6 +3,17 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+# [2.2.0](https://github.com/streetsidesoftware/cspell-dicts/compare/@cspell/dict-en_us@2.1.7...@cspell/dict-en_us@2.2.0) (2022-03-22)
+
+
+### Features
+
+* Remove or correct en-GB words in en-US dictionary ([#981](https://github.com/streetsidesoftware/cspell-dicts/issues/981)) ([36b7354](https://github.com/streetsidesoftware/cspell-dicts/commit/36b7354465cc514d52c4c6705b29f17d07e02e77))
+
+
+
+
+
 ## [2.1.7](https://github.com/streetsidesoftware/cspell-dicts/compare/@cspell/dict-en_us@2.1.6...@cspell/dict-en_us@2.1.7) (2022-02-09)
 
 
