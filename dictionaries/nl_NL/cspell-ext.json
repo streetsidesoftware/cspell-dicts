@@ -3,6 +3,7 @@
     "version": "0.2",
     "name": "Dutch (Netherlands) Dictionary",
     "description": "Dutch (Netherlands) Dictionary",
+    "readonly": true,
     "dictionaryDefinitions": [
         {
             "name": "nl-nl",
@@ -37,10 +38,7 @@
             }
         }
     ],
-    "ignoreWords": [
-        "A3-",
-        "-A4"
-    ],
+    "ignoreWords": ["A3-", "-A4"],
     "languageSettings": [
         {
             "languageId": "*",
@@ -49,9 +47,7 @@
             "ignoreRegExpList": [],
             "includeRegExpList": [],
             "patterns": [],
-            "dictionaries": [
-                "nl-nl"
-            ],
+            "dictionaries": ["nl-nl"],
             "dictionaryDefinitions": []
         }
     ]
