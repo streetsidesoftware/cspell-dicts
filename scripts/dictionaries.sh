@@ -14,7 +14,7 @@ echo "## All Dictionaries"
 echo ""
 echo "<!--- Use \`yarn run generate-doc-dictionaries\` to generate this table --->"
 echo ""
-echo "| dictionary | name | file type | locale | description |"
+echo "| package | dictionary ID | name | description |"
 echo "| -- | -- | -- | -- | -- |"
 find -s ./dictionaries -name "package.json" -depth 2 \
     -execdir echo -n "| [" \; \
