@@ -11,6 +11,7 @@
     "./cspell-ext.json": "./cspell-ext.json"
   },
   "scripts": {
+    "cspell-yaml-to-json": "yarn -s yaml2json -p cspell.config.yaml > cspell-ext.json && yarn prettier -w *.json",
     "build": "yarn run compile",
     "sync": "yarn cpy \"../../node_modules/dictionary-nl/**\" src/hunspell",
     "checksum": "shasum -c checksum.txt",

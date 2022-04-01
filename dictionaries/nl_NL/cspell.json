@@ -1,26 +1,8 @@
 {
-    "files": [
-        "**/*.{md,txt,yaml}"
-    ],
+    "files": ["**/*.{md,txt,yaml}"],
     "language": "en,nl",
-    "import": [
-        "./cspell-ext.json"
-    ],
-    "ignorePaths": [
-        "*.aff",
-        "*.dic",
-        "checksum.txt",
-        "source-dependencies.txt",
-        "source-files.txt"
-    ],
-    "ignoreWords": [
-        "mdash"
-    ],
-    "words": [
-        "hunspell",
-        "nodehun",
-        "nspell",
-        "opensource",
-        "opentaal"
-    ]
+    "import": ["./cspell-ext.json"],
+    "ignorePaths": ["*.aff", "*.dic", "checksum.txt", "source-dependencies.txt", "source-files.txt"],
+    "ignoreWords": ["mdash"],
+    "words": ["hunspell", "nodehun", "nspell", "opensource", "opentaal"]
 }
