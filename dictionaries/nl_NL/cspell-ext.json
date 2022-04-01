@@ -1,5 +1,54 @@
 {
+    "id": "nl-nl",
     "version": "0.2",
+    "name": "Dutch (Netherlands) Dictionary",
+    "description": "Dutch (Netherlands) Dictionary",
     "readonly": true,
-    "import": ["./cspell.config.yaml"]
+    "dictionaryDefinitions": [
+        {
+            "name": "nl-nl",
+            "path": "./Dutch.trie.gz",
+            "description": "Dutch (Netherlands) Dictionary",
+            "dictionaryInformation": {
+                "locale": "nl-NL",
+                "alphabet": "a-zA-Zëqïéèöêüçàûîñäô",
+                "suggestionEditCosts": [
+                    {
+                        "map": "o(oo)|e(ee)|u(uu)|a(aa)|(ei)(ie)|(ou)(ui)|(ei)(ij)(ĳ)",
+                        "replace": 50
+                    },
+                    {
+                        "map": "s(ss)|e(en)|n(nen)",
+                        "replace": 75
+                    },
+                    {
+                        "map": "MAP eéèëê|aáà|iíìïî|oóòöô|uüúùû|(ij)(ĳ)(IJ)(Ĳ)",
+                        "replace": 1
+                    },
+                    {
+                        "map": "(er)(ër)|(kju)(cue)|(oren)(oors)|(eck)(eque)|(ore)(oire)|(oor)(oir)|ü(ue)",
+                        "replace": 75
+                    },
+                    {
+                        "map": "(en)(nen)(s)",
+                        "description": "Words are compounded in plural form",
+                        "insDel": 90
+                    }
+                ]
+            }
+        }
+    ],
+    "ignoreWords": ["A3-", "-A4"],
+    "languageSettings": [
+        {
+            "languageId": "*",
+            "locale": "nl,nl-NL",
+            "caseSensitive": true,
+            "ignoreRegExpList": [],
+            "includeRegExpList": [],
+            "patterns": [],
+            "dictionaries": ["nl-nl"],
+            "dictionaryDefinitions": []
+        }
+    ]
 }
