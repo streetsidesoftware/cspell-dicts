@@ -3,11 +3,11 @@
     "language": "en",
     "files": [
         ".github/**/*.{md,txt,yaml,yml}",
-        "*.{md,txt,yaml,yml}",
-        "docs/**/*.md",
-        "dictionaries/**/*.{md,txt,yaml,yml,js,tex}",
-        "scripts/**",
         ".git/COMMIT_EDITMSG",
+        "*.{md,txt,yaml,yml}",
+        "dictionaries/**/*.{md,txt,yaml,yml,js,tex}",
+        "docs/**/*.md",
+        "scripts/**",
         "LICENSE"
     ],
     "words": [
@@ -53,9 +53,8 @@
         "*.gz",
         "*.lock",
         "*.log",
-        "**/.git/*/**",
-        "**/.git/*",
-        "!**/.git/COMMIT_EDITMSG",
+        "**/.git/!(COMMIT_EDITMSG)/**",
+        "**/.git/!(COMMIT_EDITMSG)",
         "checksum.txt",
         "dictionaries/*/src/**",
         "generator-cspell-dicts/generators/app/templates/**",
