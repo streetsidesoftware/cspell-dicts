@@ -1,0 +1,28 @@
+{
+    "id": "git",
+    "version": "0.2",
+    "name": "git",
+    "description": "CSpell configuration for GIT",
+    "dictionaryDefinitions": [],
+    "dictionaries": [],
+    "languageSettings": [
+        {
+            "languageId": "commit-msg",
+            "patterns": [
+                {
+                    "name": "git-commit-msg-comment",
+                    "pattern": "/^#.*/gm",
+                    "description": "Ignore commit comments"
+                }
+            ],
+            "ignoreRegExpList": ["git-commit-msg-comment"]
+        }
+    ],
+    "overrides": [
+        {
+            "filename": "${cwd}/.git/COMMIT_EDITMSG",
+            "languageId": "commit-msg",
+            "minWordLength": 3
+        }
+    ]
+}

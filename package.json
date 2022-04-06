@@ -14,6 +14,7 @@
     "create-dictionary": "yo cspell-dicts",
     "clean": "rimraf \"packages/*/*.txt.gz\" \"dictionaries/*/*.txt.gz\"",
     "generate-doc-dictionaries": "./scripts/dictionaries.sh > dictionaries.md && yarn run lint-format",
+    "installX": "git config core.hooksPath .githooks",
     "prepare": "lerna run prepare",
     "force-publish": "yarn prepare && yarn test && lerna exec --no-bail \"npm publish\"",
     "pub-lerna": "lerna publish --conventional-commits  --concurrency 2",
