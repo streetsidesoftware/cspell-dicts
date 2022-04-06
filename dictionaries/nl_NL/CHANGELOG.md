@@ -3,6 +3,18 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+## [2.2.4](https://github.com/streetsidesoftware/cspell-dicts/compare/@cspell/dict-nl-nl@2.2.3...@cspell/dict-nl-nl@2.2.4) (2022-04-06)
+
+
+### Bug Fixes
+
+* ensure NL dictionary is marked as `readonly` ([#997](https://github.com/streetsidesoftware/cspell-dicts/issues/997)) ([0a3a7cb](https://github.com/streetsidesoftware/cspell-dicts/commit/0a3a7cb3f3085d7fe4f16d21bc926cd5f81c0831))
+* Update list of dictionaries ([#998](https://github.com/streetsidesoftware/cspell-dicts/issues/998)) ([5d06b86](https://github.com/streetsidesoftware/cspell-dicts/commit/5d06b869783be66701e2fc22de59bfa4715d0216))
+
+
+
+
+
 ## [2.2.3](https://github.com/streetsidesoftware/cspell-dicts/compare/@cspell/dict-nl-nl@2.2.2...@cspell/dict-nl-nl@2.2.3) (2022-03-03)
 
 **Note:** Version bump only for package @cspell/dict-nl-nl
