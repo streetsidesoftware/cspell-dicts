@@ -3,6 +3,17 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+## [2.0.2](https://github.com/streetsidesoftware/cspell-dicts/compare/@cspell/dict-cpp@2.0.1...@cspell/dict-cpp@2.0.2) (2022-04-08)
+
+
+### Bug Fixes
+
+* more cpp typos ([#1010](https://github.com/streetsidesoftware/cspell-dicts/issues/1010)) ([1e35539](https://github.com/streetsidesoftware/cspell-dicts/commit/1e355397cee4611438193997cd105067bb021cfd))
+
+
+
+
+
 ## [2.0.1](https://github.com/streetsidesoftware/cspell-dicts/compare/@cspell/dict-cpp@2.0.0...@cspell/dict-cpp@2.0.1) (2022-04-06)
 
 
