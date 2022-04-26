@@ -1,7 +1,8 @@
 {
     "version": "0.2",
-    "files": ["**/*.{md,txt}"],
+    "files": ["**/*.{md,txt,py}"],
     "dictionaries": ["python"],
     "import": ["./cspell-ext.json"],
-    "ignoreWords": []
+    "ignoreWords": ["cpython"],
+    "ignorePaths": ["temp/**"]
 }
