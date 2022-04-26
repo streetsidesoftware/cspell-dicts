@@ -11,10 +11,11 @@
     "./cspell-ext.json": "./cspell-ext.json"
   },
   "scripts": {
-    "build": "cspell-tools compile \"python.txt\" -o .",
-    "test-dictionary": "head -n 1000 \"python.txt\" | cspell -v -c ./cspell-ext.json --local=* --languageId=python stdin",
+    "build": "cspell-tools-cli compile \"src/*.txt\" --split --keep-raw-case --merge python -o .",
+    "test-dictionary": "cspell -v -c ./cspell-ext.json --local=en --languageId=python \"src/py*.txt\"",
     "test-samples": "cspell -v -c ./cspell-ext.json \"samples/**/*.py\"",
     "test": "yarn run test-dictionary && yarn run test-samples",
+    "update-python-lib": "./scripts/fetch-python.sh",
     "prepublishOnly": "echo pre-publish",
     "prepare": "yarn run build"
   },
