@@ -3,6 +3,14 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+## [2.0.1](https://github.com/streetsidesoftware/cspell-dicts/compare/@cspell/dict-node@2.0.0...@cspell/dict-node@2.0.1) (2022-04-28)
+
+**Note:** Version bump only for package @cspell/dict-node
+
+
+
+
+
 # [2.0.0](https://github.com/streetsidesoftware/cspell-dicts/compare/@cspell/dict-node@1.0.12...@cspell/dict-node@2.0.0) (2022-02-09)
 
 

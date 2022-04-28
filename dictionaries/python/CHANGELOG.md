@@ -3,6 +3,18 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+## [3.0.1](https://github.com/streetsidesoftware/cspell-dicts/compare/@cspell/dict-python@2.0.6...@cspell/dict-python@3.0.1) (2022-04-28)
+
+
+### Bug Fixes
+
+* Force major version ([#1047](https://github.com/streetsidesoftware/cspell-dicts/issues/1047)) ([2d7fecf](https://github.com/streetsidesoftware/cspell-dicts/commit/2d7fecf79ceecd352ef102a254a1cdd0626a910a))
+* Import Standard Python Library ([#1042](https://github.com/streetsidesoftware/cspell-dicts/issues/1042)) ([339989b](https://github.com/streetsidesoftware/cspell-dicts/commit/339989b25487d6a930541b95e9507795e94b2955))
+
+
+
+
+
 ## [2.0.6](https://github.com/streetsidesoftware/cspell-dicts/compare/@cspell/dict-python@2.0.5...@cspell/dict-python@2.0.6) (2022-02-11)
 
 **Note:** Version bump only for package @cspell/dict-python

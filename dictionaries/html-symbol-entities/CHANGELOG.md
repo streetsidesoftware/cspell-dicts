@@ -3,6 +3,27 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+# [3.0.0](https://github.com/streetsidesoftware/cspell-dicts/compare/@cspell/dict-html-symbol-entities@2.0.0...@cspell/dict-html-symbol-entities@3.0.0) (2022-04-28)
+
+
+### Bug Fixes
+
+* Force major version ([#1047](https://github.com/streetsidesoftware/cspell-dicts/issues/1047)) ([2d7fecf](https://github.com/streetsidesoftware/cspell-dicts/commit/2d7fecf79ceecd352ef102a254a1cdd0626a910a))
+
+
+* feat!: sync HTML entities (#1034) ([132172c](https://github.com/streetsidesoftware/cspell-dicts/commit/132172caa5c0b3a0ae5c70f6beae5941735b443c)), closes [#1034](https://github.com/streetsidesoftware/cspell-dicts/issues/1034)
+
+
+### BREAKING CHANGES
+
+* Move to case sensitive dictionary
+
+Co-authored-by: Nick Schonning <nschonni@gmail.com>
+
+
+
+
+
 # [2.0.0](https://github.com/streetsidesoftware/cspell-dicts/compare/@cspell/dict-html-symbol-entities@1.0.23...@cspell/dict-html-symbol-entities@2.0.0) (2022-02-09)
 
 

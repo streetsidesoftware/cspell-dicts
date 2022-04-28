@@ -3,6 +3,17 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+## [2.2.1](https://github.com/streetsidesoftware/cspell-dicts/compare/@cspell/dict-en_us@2.2.0...@cspell/dict-en_us@2.2.1) (2022-04-28)
+
+
+### Bug Fixes
+
+* Add Kyiv ([#1045](https://github.com/streetsidesoftware/cspell-dicts/issues/1045)) ([050d896](https://github.com/streetsidesoftware/cspell-dicts/commit/050d896c271f9891c4bee02e7737caa044e7b1c2)), closes [#1043](https://github.com/streetsidesoftware/cspell-dicts/issues/1043)
+
+
+
+
+
 # [2.2.0](https://github.com/streetsidesoftware/cspell-dicts/compare/@cspell/dict-en_us@2.1.7...@cspell/dict-en_us@2.2.0) (2022-03-22)
 
 
