@@ -1,8 +1,9 @@
 {
     "version": "0.2",
     "files": ["**/*.{md,txt,py}"],
-    "dictionaries": ["python"],
+    "dictionaries": ["python", "python-common"],
     "import": ["./cspell-ext.json"],
     "ignoreWords": ["cpython"],
-    "ignorePaths": ["temp/**"]
+    "ignorePaths": ["src/**", "temp/**"],
+    "maxNumberOfProblems": 1000
 }

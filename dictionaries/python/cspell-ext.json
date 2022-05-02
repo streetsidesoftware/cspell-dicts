@@ -10,7 +10,12 @@
         {
             "name": "python",
             "path": "./python.txt.gz",
-            "description": "Python Keyword Dictionary"
+            "description": "Python Dictionary"
+        },
+        {
+            "name": "python-common",
+            "path": "./python-common.txt.gz",
+            "description": "Python Common Terms Dictionary"
         }
     ],
     // Dictionaries to always be used.
@@ -23,7 +28,7 @@
             // Matching Language
             "languageId": "python",
             // Apply settings
-            "dictionaries": ["python"],
+            "dictionaries": ["python", "python-common"],
             "ignoreRegExpList": ["ignore_string_literal_prefix"],
             "patterns": [
                 {
