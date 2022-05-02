@@ -81,18 +81,23 @@
   resolved "https://registry.npmjs.org/@cspell/cspell-pipe/-/cspell-pipe-5.19.7.tgz#398bf6452ce83144f716b60f0f03bd8fb6f80774"
   integrity sha512-C2+qovrXyZtoM+IcyMuwwYieoGBwwnWORat+j7bkIkVHf6Pa9spxY3D1IdLt04PqWBKWKHb1g9KzJzw5grBqZw==
 
+"@cspell/cspell-pipe@^5.20.0":
+  version "5.20.0"
+  resolved "https://registry.yarnpkg.com/@cspell/cspell-pipe/-/cspell-pipe-5.20.0.tgz#964aa560c89ecdf4eea9145700ccd6ab4c235ed8"
+  integrity sha512-dGHf4XZgPlGqviYTD+5ZwSk3hpiywsuuDqnoPo9SeQ1xPon7uFVKsMiAAzvhGAkkBaKIBNP/nwPU0feYvLoCJg==
+
 "@cspell/cspell-tools@^5.19.7":
-  version "5.19.7"
-  resolved "https://registry.npmjs.org/@cspell/cspell-tools/-/cspell-tools-5.19.7.tgz#ec32825b0e171df4991573d77cafe060295be093"
-  integrity sha512-66/Ui++LMAVLBqsy2aEXZavA1/wTUEWJ0bUgyKRuGreLqVyxqdA2ZFVFoQ0cONglm097AhC2rtCe5FsEpGdUCA==
+  version "5.20.0"
+  resolved "https://registry.yarnpkg.com/@cspell/cspell-tools/-/cspell-tools-5.20.0.tgz#929d75f660cd64b1e746c95174cbae41ef3fe3fc"
+  integrity sha512-ldwUDEM4uqQjpe6V6IqiU2oyV6gebC33NLHnmXluQXaZ/VqsBBjPl8wFV1VEUwJ20GPRvBVgzayiZSF+zGOqOQ==
   dependencies:
-    commander "^9.1.0"
-    cspell-io "^5.19.7"
-    cspell-trie-lib "^5.19.7"
-    fs-extra "^10.0.1"
+    commander "^9.2.0"
+    cspell-io "^5.20.0"
+    cspell-trie-lib "^5.20.0"
+    fs-extra "^10.1.0"
     gensequence "^3.1.1"
-    glob "^7.2.0"
-    hunspell-reader "^5.19.7"
+    glob "^8.0.1"
+    hunspell-reader "^5.20.0"
 
 "@cspell/cspell-types@^5.19.7":
   version "5.19.7"
@@ -1974,7 +1979,7 @@ commander@^6.2.1:
   resolved "https://registry.npmjs.org/commander/-/commander-6.2.1.tgz#0792eb682dfbc325999bb2b84fddddba110ac73c"
   integrity sha512-U7VdrJFnJgo4xjrHpTzu0yrHPGImdsmD95ZlgYSEajAn2JKzDhDTPG9kBTefmObL2w/ngeZnilk+OV9CG3d7UA==
 
-commander@^9.1.0:
+commander@^9.1.0, commander@^9.2.0:
   version "9.2.0"
   resolved "https://registry.npmjs.org/commander/-/commander-9.2.0.tgz#6e21014b2ed90d8b7c9647230d8b7a94a4a419a9"
   integrity sha512-e2i4wANQiSXgnrBlIatyHtP1odfUp0BbV5Y5nEGbxtIrStkEOAAzCUirvLBNXHLr7kwLvJl6V+4V3XV9x7Wd9w==
@@ -2289,10 +2294,10 @@ cspell-glob@^5.19.7:
   dependencies:
     micromatch "^4.0.5"
 
-cspell-io@^5.1.0, cspell-io@^5.19.7:
-  version "5.19.7"
-  resolved "https://registry.npmjs.org/cspell-io/-/cspell-io-5.19.7.tgz#ce49d4aaeae19206ccd29c5d90599fa675ea5bac"
-  integrity sha512-SEy8XkuOhvwleGjh336EBYj5HlH1J5FrCI5GxxGiU2g8zvWlBPQmaCfQPPO4tnDrrXtK76rZvolBu1jfCmWwQA==
+cspell-io@^5.1.0, cspell-io@^5.19.7, cspell-io@^5.20.0:
+  version "5.20.0"
+  resolved "https://registry.yarnpkg.com/cspell-io/-/cspell-io-5.20.0.tgz#2f7fc676a068acc641f3bd77ddca7f72985b6ee5"
+  integrity sha512-wgqqpVIhtMh+/+3YfHt8cDfrD7OLF+xQlStlURj8AJwEJ0xu16zyI9S5zcig+83+0QyzuMdxfZiMgbdQxWEvOg==
 
 cspell-lib@^5.19.7:
   version "5.19.7"
@@ -2333,13 +2338,13 @@ cspell-tools@^5.1.1:
     glob "^7.1.6"
     hunspell-reader "^3.2.0"
 
-cspell-trie-lib@^5.1.0, cspell-trie-lib@^5.19.7:
-  version "5.19.7"
-  resolved "https://registry.npmjs.org/cspell-trie-lib/-/cspell-trie-lib-5.19.7.tgz#ce3841f95ace03730ce896089d34c92b5e2d343d"
-  integrity sha512-qr0HS2hGuyIQhDGG5li0nqIjVi039iPRHR8wpeDoSO0YIBCll22i/VlvW3CSmqXLaP5RRoAc9txiZkIGob6DkQ==
+cspell-trie-lib@^5.1.0, cspell-trie-lib@^5.19.7, cspell-trie-lib@^5.20.0:
+  version "5.20.0"
+  resolved "https://registry.yarnpkg.com/cspell-trie-lib/-/cspell-trie-lib-5.20.0.tgz#3a13ba0477a36ecb16311e85b270bcc2b4300f37"
+  integrity sha512-ET95dJh+OJ04PdLI9dKqAa+dDu47tXcUxCR6uKiZ+qZ18v1Zl986s8q89m9c+xpo7Leqh0rF6Zsw3M9Cjy6Jhw==
   dependencies:
-    "@cspell/cspell-pipe" "^5.19.7"
-    fs-extra "^10.0.1"
+    "@cspell/cspell-pipe" "^5.20.0"
+    fs-extra "^10.1.0"
     gensequence "^3.1.1"
 
 cspell-util-bundle@^5.1.1:
@@ -3146,7 +3151,7 @@ from2@^2.1.1:
     inherits "^2.0.1"
     readable-stream "^2.0.0"
 
-fs-extra@^10.0.1:
+fs-extra@^10.0.1, fs-extra@^10.1.0:
   version "10.1.0"
   resolved "https://registry.npmjs.org/fs-extra/-/fs-extra-10.1.0.tgz#02873cfbc4084dde127eaa5f9905eef2325d1abf"
   integrity sha512-oRXApq54ETRj4eMiFzGnHWGy+zo5raudjuxN0b8H7s/RU2oW0Wvsx9O0ACRN/kRq9E8Vu/ReskGB5o3ji+FzHQ==
@@ -3779,13 +3784,13 @@ hunspell-reader@^3.2.0:
     gensequence "^3.0.1"
     iconv-lite "^0.5.0"
 
-hunspell-reader@^5.19.7:
-  version "5.19.7"
-  resolved "https://registry.npmjs.org/hunspell-reader/-/hunspell-reader-5.19.7.tgz#ee5f68454997105dbdb4b496031f72bdfdc76050"
-  integrity sha512-oFvFtti9gNRQFCIq903jAIaeyoJtmkDmnanQrXPzRxvo92GgCPBWkIwldSts2iY06mEK/IeZUPJjn20zQcJABw==
+hunspell-reader@^5.19.7, hunspell-reader@^5.20.0:
+  version "5.20.0"
+  resolved "https://registry.yarnpkg.com/hunspell-reader/-/hunspell-reader-5.20.0.tgz#ff37ca3a5f158dc4dd141758d52198a57fc01964"
+  integrity sha512-gUpgmIyb/U6X+7jHTRrwJES3/PoqXczp6G1/BU2o/IeL/kFy3nC+dRQAz7bII4VXfjQzaXUaVJPUXJl7iqA4TQ==
   dependencies:
-    commander "^9.1.0"
-    fs-extra "^10.0.1"
+    commander "^9.2.0"
+    fs-extra "^10.1.0"
     gensequence "^3.1.1"
     iconv-lite "^0.6.3"
 
