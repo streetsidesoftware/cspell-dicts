@@ -11,8 +11,10 @@
     "./cspell-ext.json": "./cspell-ext.json"
   },
   "scripts": {
-    "build": "cspell-tools-cli compile \"src/*.txt\" --split --keep-raw-case --merge python -o .",
-    "test-dictionary": "cspell -v -c ./cspell-ext.json --local=en --languageId=python \"src/py*.txt\"",
+    "build": "yarn run build-python && yarn run build-common",
+    "build-python": "cspell-tools-cli compile \"src/python/*.txt\" --split --keep-raw-case --merge python -o .",
+    "build-common": "cspell-tools-cli compile \"src/common/*.txt\" --keep-raw-case --merge python-common -o .",
+    "test-dictionary": "cspell -v -c ./cspell-ext.json --local=en --languageId=python \"src/python/py*.txt\"",
     "test-samples": "cspell -v -c ./cspell-ext.json \"samples/**/*.py\"",
     "test": "yarn run test-dictionary && yarn run test-samples",
     "update-python-lib": "./scripts/fetch-python.sh",
@@ -39,6 +41,7 @@
   "homepage": "https://github.com/streetsidesoftware/cspell-dicts/blob/main/dictionaries/python#readme",
   "files": [
     "python.txt.gz",
+    "python-common.txt.gz",
     "cspell-ext.json"
   ]
 }
