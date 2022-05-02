@@ -1974,7 +1974,7 @@ commander@^6.2.1:
   resolved "https://registry.npmjs.org/commander/-/commander-6.2.1.tgz#0792eb682dfbc325999bb2b84fddddba110ac73c"
   integrity sha512-U7VdrJFnJgo4xjrHpTzu0yrHPGImdsmD95ZlgYSEajAn2JKzDhDTPG9kBTefmObL2w/ngeZnilk+OV9CG3d7UA==
 
-commander@^9.1.0:
+commander@^9.1.0, commander@^9.2.0:
   version "9.2.0"
   resolved "https://registry.npmjs.org/commander/-/commander-9.2.0.tgz#6e21014b2ed90d8b7c9647230d8b7a94a4a419a9"
   integrity sha512-e2i4wANQiSXgnrBlIatyHtP1odfUp0BbV5Y5nEGbxtIrStkEOAAzCUirvLBNXHLr7kwLvJl6V+4V3XV9x7Wd9w==
@@ -3146,7 +3146,7 @@ from2@^2.1.1:
     inherits "^2.0.1"
     readable-stream "^2.0.0"
 
-fs-extra@^10.0.1:
+fs-extra@^10.0.1, fs-extra@^10.1.0:
   version "10.1.0"
   resolved "https://registry.npmjs.org/fs-extra/-/fs-extra-10.1.0.tgz#02873cfbc4084dde127eaa5f9905eef2325d1abf"
   integrity sha512-oRXApq54ETRj4eMiFzGnHWGy+zo5raudjuxN0b8H7s/RU2oW0Wvsx9O0ACRN/kRq9E8Vu/ReskGB5o3ji+FzHQ==
@@ -3780,12 +3780,12 @@ hunspell-reader@^3.2.0:
     iconv-lite "^0.5.0"
 
 hunspell-reader@^5.19.7:
-  version "5.19.7"
-  resolved "https://registry.npmjs.org/hunspell-reader/-/hunspell-reader-5.19.7.tgz#ee5f68454997105dbdb4b496031f72bdfdc76050"
-  integrity sha512-oFvFtti9gNRQFCIq903jAIaeyoJtmkDmnanQrXPzRxvo92GgCPBWkIwldSts2iY06mEK/IeZUPJjn20zQcJABw==
+  version "5.20.0"
+  resolved "https://registry.yarnpkg.com/hunspell-reader/-/hunspell-reader-5.20.0.tgz#ff37ca3a5f158dc4dd141758d52198a57fc01964"
+  integrity sha512-gUpgmIyb/U6X+7jHTRrwJES3/PoqXczp6G1/BU2o/IeL/kFy3nC+dRQAz7bII4VXfjQzaXUaVJPUXJl7iqA4TQ==
   dependencies:
-    commander "^9.1.0"
-    fs-extra "^10.0.1"
+    commander "^9.2.0"
+    fs-extra "^10.1.0"
     gensequence "^3.1.1"
     iconv-lite "^0.6.3"
 
