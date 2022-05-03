@@ -3,6 +3,28 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+## [3.0.3](https://github.com/streetsidesoftware/cspell-dicts/compare/@cspell/dict-python@3.0.2...@cspell/dict-python@3.0.3) (2022-05-02)
+
+
+### Bug Fixes
+
+* limit extra words to common terms ([#1067](https://github.com/streetsidesoftware/cspell-dicts/issues/1067)) ([91afe6a](https://github.com/streetsidesoftware/cspell-dicts/commit/91afe6a2ef9c55b8b5fd7eeaea130a76f5c5098c))
+
+
+
+
+
+## [3.0.2](https://github.com/streetsidesoftware/cspell-dicts/compare/@cspell/dict-python@3.0.1...@cspell/dict-python@3.0.2) (2022-05-02)
+
+
+### Bug Fixes
+
+* Add common python compounds ([#1064](https://github.com/streetsidesoftware/cspell-dicts/issues/1064)) ([6456f56](https://github.com/streetsidesoftware/cspell-dicts/commit/6456f5683309c0ad17a952dcaef7ffefda49d8f8))
+
+
+
+
+
 ## [3.0.1](https://github.com/streetsidesoftware/cspell-dicts/compare/@cspell/dict-python@2.0.6...@cspell/dict-python@3.0.1) (2022-04-28)
 
 

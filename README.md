@@ -43,6 +43,7 @@ Various [cspell](https://github.com/streetsidesoftware/cspell) dictionaries. Eac
 - [Ruby](dictionaries/ruby)
 - [Rust](dictionaries/rust)
 - [Scala](dictionaries/scala)
+- [TypeScript](dictionaries/typescript)
 
 ## Specialized Dictionaries
 
