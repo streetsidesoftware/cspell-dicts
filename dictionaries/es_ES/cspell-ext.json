@@ -8,7 +8,29 @@
         {
             "name": "es-es",
             "path": "./Spanish.trie.gz",
-            "description": "Spanish Dictionary (Spain)"
+            "description": "Spanish Dictionary (Spain)",
+            "dictionaryInformation": {
+                "locale": "es-ES",
+                "alphabet": "a-zA-ZóíjáéñúüÓÍÁÉÑÚÜ",
+                "suggestionEditCosts": [
+                    {
+                        "map": "MAP eéèëêEÉ|aáàAÁ|iíìïîIÍ|oóòöôOÓ|uüúùûUÚÜ",
+                        "replace": 1
+                    },
+                    {
+                        "map": "(ás)(az)|(cc)(x)|(és)(ez)|(güe)(hue)|(güi)(hui)",
+                        "replace": 75
+                    },
+                    {
+                        "map": "(ís)(iz)|(ío)(ido)|(ke)(que)|(ki)(qui)",
+                        "replace": 75
+                    },
+                    {
+                        "map": "(ll)(y)|(mb)(nv)|(seci)(cesi)|(vámonos)(vayámonos)",
+                        "replace": 75
+                    }
+                ]
+            }
         }
     ],
     "dictionaries": [],
