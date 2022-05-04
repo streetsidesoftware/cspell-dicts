@@ -1,0 +1,16 @@
+---
+id: "es-es"
+version: "0.2"
+readonly: true
+name: "Spanish Dictionary (Spain)"
+description: "Spanish Dictionary (Spain)"
+dictionaryDefinitions:
+  - name: "es-es"
+    path: "./Spanish.trie.gz"
+    description: "Spanish Dictionary (Spain)"
+dictionaries: []
+languageSettings:
+  - languageId: "*"
+    locale: "es, es_ES"
+    caseSensitive: true
+    dictionaries: ["es-es"]

@@ -11,8 +11,20 @@
     "./cspell-ext.json": "./cspell-ext.json"
   },
   "scripts": {
-    "build": "cspell-tools-cli compile --trie3 -x compound \"src/hunspell/Spanish.dic\" -o .",
-    "test": "hunspell-reader words -n 1000 \"src/hunspell/Spanish.dic\" | cspell -v -c ./cspell-ext.json --local=es --languageId=* stdin",
+    "#build": "cspell-tools-cli compile --trie3 -x compound \"src/hunspell/Spanish.dic\" -o .",
+    "#test": "hunspell-reader words -n 1000 \"src/hunspell/Spanish.dic\" | cspell -v -c ./cspell-ext.json --local=es --languageId=* stdin",
+    "#prepublishOnly": "echo pre-publish",
+    "cspell-yaml-to-json": "yarn -s yaml2json -p cspell.config.yaml > cspell-ext.json && yarn lint",
+    "build": "yarn run compile",
+    "sync": "yarn cpy \"../../node_modules/dictionary-es/**\" src/hunspell",
+    "checksum": "shasum -c checksum.txt",
+    "compile": "cat source-files.txt | xargs cspell-tools-cli compile --trie3 -x compound --merge Spanish -o . && yarn run gen-checksum",
+    "conditional-build": "yarn run sync && yarn run --silent checksum || yarn run build",
+    "gen-checksum": "cat source-files.txt source-dependencies.txt | sort -u | xargs shasum > checksum.txt",
+    "lint": "yarn prettier -w \"*.{yaml,json}\"",
+    "test-dict": "hunspell-reader words -n 1000 \"src/hunspell/index.dic\" | cspell -v -c ./cspell-ext.json --local=es --languageId=* stdin",
+    "test-text": "cspell",
+    "test": "yarn run test-dict && yarn run test-text",
     "prepublishOnly": "echo pre-publish"
   },
   "repository": {
@@ -27,7 +39,7 @@
     "spelling"
   ],
   "author": "Jason Dent",
-  "license": "MIT",
+  "license": "GPL-3.0-or-later",
   "bugs": {
     "url": "https://github.com/streetsidesoftware/cspell-dicts/issues"
   },
@@ -35,6 +47,9 @@
   "files": [
     "Spanish.trie.gz",
     "cspell-ext.json",
-    "Spanish.txt"
-  ]
+    "src/hunspell/license"
+  ],
+  "devDependencies": {
+    "dictionary-es": "^3.2.0"
+  }
 }

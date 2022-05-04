@@ -1,16 +1,8 @@
 {
-    "files": [
-        "**/*.{md,txt}"
-    ],
-    "ignorePaths": [
-        "*.aff",
-        "*.dic",
-        "cspell-ext.json"
-    ],
+    "files": ["**/*.{md,txt}"],
+    "ignorePaths": ["*.aff", "*.dic", "cspell-ext.json"],
     "language": "en,es",
-    "import": [
-        "./cspell-ext.json"
-    ],
+    "import": ["./cspell-ext.json"],
     "caseSensitive": true,
     "ignoreWords": [
         "Alexandro",
@@ -25,6 +17,7 @@
         "Garrone",
         "Gelbort",
         "gmail",
+        "hunspell",
         "HYPH",
         "KNTRO",
         "LGPL",
