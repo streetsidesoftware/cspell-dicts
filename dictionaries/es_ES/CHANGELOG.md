@@ -3,6 +3,17 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+# [2.2.0](https://github.com/streetsidesoftware/cspell-dicts/compare/@cspell/dict-es-es@2.1.0...@cspell/dict-es-es@2.2.0) (2022-05-04)
+
+
+### Features
+
+* Update Spanish dictionary ([#1077](https://github.com/streetsidesoftware/cspell-dicts/issues/1077)) ([beca796](https://github.com/streetsidesoftware/cspell-dicts/commit/beca79611b0178b7e7115b9d2256f3b4139dec89))
+
+
+
+
+
 # [2.1.0](https://github.com/streetsidesoftware/cspell-dicts/compare/@cspell/dict-es-es@2.0.2...@cspell/dict-es-es@2.1.0) (2021-11-04)
 
 

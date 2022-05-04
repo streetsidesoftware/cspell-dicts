@@ -3,6 +3,14 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+## [2.2.3](https://github.com/streetsidesoftware/cspell-dicts/compare/@cspell/dict-en_us@2.2.2...@cspell/dict-en_us@2.2.3) (2022-05-04)
+
+**Note:** Version bump only for package @cspell/dict-en_us
+
+
+
+
+
 ## [2.2.2](https://github.com/streetsidesoftware/cspell-dicts/compare/@cspell/dict-en_us@2.2.1...@cspell/dict-en_us@2.2.2) (2022-05-02)
 
 
