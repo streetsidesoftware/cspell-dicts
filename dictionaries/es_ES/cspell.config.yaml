@@ -1,0 +1,31 @@
+---
+id: "es-es"
+version: "0.2"
+readonly: true
+name: "Spanish Dictionary (Spain)"
+description: "Spanish Dictionary (Spain)"
+dictionaryDefinitions:
+  - name: "es-es"
+    path: "./Spanish.trie.gz"
+    description: "Spanish Dictionary (Spain)"
+    dictionaryInformation:
+      locale: "es-ES"
+      # cspell:ignore ZóíjáéñúüÓÍÁÉÑÚÜ
+      alphabet: a-zA-ZóíjáéñúüÓÍÁÉÑÚÜ
+      suggestionEditCosts:
+        # cspell:ignore eéèëê iíìïî oóòöô uüúùû
+        - map: MAP eéèëêEÉ|aáàAÁ|iíìïîIÍ|oóòöôOÓ|uüúùûUÚÜ
+          replace: 1
+        - map: (ás)(az)|(cc)(x)|(és)(ez)|(güe)(hue)|(güi)(hui)
+          replace: 75
+        - map: (ís)(iz)|(ío)(ido)|(ke)(que)|(ki)(qui)
+          replace: 75
+        # cspell:ignore seci cesi vámonos vayámonos
+        - map: (ll)(y)|(mb)(nv)|(seci)(cesi)|(vámonos)(vayámonos)
+          replace: 75
+dictionaries: []
+languageSettings:
+  - languageId: "*"
+    locale: "es, es_ES"
+    caseSensitive: true
+    dictionaries: ["es-es"]
