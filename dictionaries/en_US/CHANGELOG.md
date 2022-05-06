@@ -3,6 +3,17 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+## [2.2.4](https://github.com/streetsidesoftware/cspell-dicts/compare/@cspell/dict-en_us@2.2.3...@cspell/dict-en_us@2.2.4) (2022-05-06)
+
+
+### Bug Fixes
+
+* add back Alpha Centauri ([#1078](https://github.com/streetsidesoftware/cspell-dicts/issues/1078)) ([df68abb](https://github.com/streetsidesoftware/cspell-dicts/commit/df68abb0a81f36b9adb402c93fba57c70c53b641))
+
+
+
+
+
 ## [2.2.3](https://github.com/streetsidesoftware/cspell-dicts/compare/@cspell/dict-en_us@2.2.2...@cspell/dict-en_us@2.2.3) (2022-05-04)
 
 **Note:** Version bump only for package @cspell/dict-en_us
