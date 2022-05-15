@@ -3,6 +3,17 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+## [2.0.1](https://github.com/streetsidesoftware/cspell-dicts/compare/@cspell/dict-latex@2.0.0...@cspell/dict-latex@2.0.1) (2022-05-15)
+
+
+### Bug Fixes
+
+* Fix false positive LaTeX Math matching ([#1085](https://github.com/streetsidesoftware/cspell-dicts/issues/1085)) ([26026c4](https://github.com/streetsidesoftware/cspell-dicts/commit/26026c4ef958b043d8f9188787a857d1e2426579)), closes [#1083](https://github.com/streetsidesoftware/cspell-dicts/issues/1083)
+
+
+
+
+
 # [2.0.0](https://github.com/streetsidesoftware/cspell-dicts/compare/@cspell/dict-latex@1.0.25...@cspell/dict-latex@2.0.0) (2022-02-09)
 
 
