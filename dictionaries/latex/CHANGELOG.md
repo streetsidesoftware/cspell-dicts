@@ -3,6 +3,17 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+## [2.0.2](https://github.com/streetsidesoftware/cspell-dicts/compare/@cspell/dict-latex@2.0.1...@cspell/dict-latex@2.0.2) (2022-05-16)
+
+
+### Bug Fixes
+
+* LaTeX - fix double escaped `$`. ([#1088](https://github.com/streetsidesoftware/cspell-dicts/issues/1088)) ([841f9da](https://github.com/streetsidesoftware/cspell-dicts/commit/841f9da7881a94b67ab995d222686c6283252def))
+
+
+
+
+
 ## [2.0.1](https://github.com/streetsidesoftware/cspell-dicts/compare/@cspell/dict-latex@2.0.0...@cspell/dict-latex@2.0.1) (2022-05-15)
 
 
