@@ -32,7 +32,7 @@
                 },
                 {
                     "name": "LaTexMath",
-                    "pattern": "/(?<!\\\\)[$][^$]*[$]/g",
+                    "pattern": "/(?<!(?<!(?<!\\\\)\\\\)\\\\)[$][^$]*[$]/g",
                     "description": "Match against LaTex Math Macros"
                 },
                 {
