@@ -27,7 +27,7 @@
                 },
                 {
                     "name": "LaTexMacrosMultiLine",
-                    "pattern": "/(?<!\\\\)\\\\(?!(?:title|color|section|subsection|footnote|chapter|part|caption|emph|enquote|text))\\w+(?:\\[[^]*?\\]|\\{[^]*?\\})*/gi",
+                    "pattern": "/(?<!\\\\)\\\\(?!(?:title|color|section|subsection|footnote|chapter|part|caption|emph|enquote|text|in\\b))\\w+(?:\\[[^]*?\\]|\\{[^]*?\\})*/gi",
                     "description": "Match against multi-line LaTex Macros"
                 },
                 {
