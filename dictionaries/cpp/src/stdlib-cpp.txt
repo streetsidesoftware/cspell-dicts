@@ -7,7 +7,7 @@ errc
 
 # https://en.cppreference.com/w/cpp/header/limits
 denorm
-signaling # signle "l" not a typo
+signaling # single "l" not a typo
 tinyness # "y" not a typo
 
 
@@ -28,11 +28,11 @@ typeinfo
 
 
 # https://en.cppreference.com/w/cpp/header/compare
-#eq
-#neq
-#lt
+eq
+neq
+lt
 lteq
-#gt
+gt
 gteq
 
 
@@ -201,8 +201,8 @@ minmax
 
 # https://en.cppreference.com/w/cpp/header/execution
 unsequenced
-#seq
-#par
+seq
+par
 unseq
 
 
@@ -227,12 +227,12 @@ atanh
 mersenne
 minstd
 ranlux
-#knuth
-#bernoulli
-#poisson
-#gamma
-#weibull
-#cauchy
+knuth
+bernoulli
+poisson
+gamma
+weibull
+cauchy
 
 
 # https://en.cppreference.com/w/cpp/header/valarray
@@ -256,7 +256,7 @@ popcount
 # https://en.cppreference.com/w/cpp/header/numbers
 sqrtpi
 egamma
-#phi
+phi
 
 
 
@@ -352,7 +352,7 @@ cout
 wcout
 cerr
 wcerr
-#clog
+clog
 wclog
 
 # https://en.cppreference.com/w/cpp/header/iostream
@@ -380,12 +380,12 @@ fmtflags
 basefield
 adjustfield
 floatfield
-#boolalpha
-#showbase
-#showpoint
-#showpos
-#skipws
-#unitbuf
+boolalpha
+showbase
+showpoint
+showpos
+skipws
+unitbuf
 iostate
 goodbit
 badbit
@@ -436,10 +436,10 @@ wosyncstream
 
 # https://en.cppreference.com/w/cpp/header/strstream
 # deprecated in c++98
-#strstreambuf
-#istrstream
-#ostrstream
-#strstream
+strstreambuf
+istrstream
+ostrstream
+strstream
 
 
 
