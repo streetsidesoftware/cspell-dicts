@@ -1,0 +1,65 @@
+# https://clang.llvm.org/docs/AttributeReference.html
+
+# AMD GPU
+amdgpu
+
+# calling conventions
+aarch64_sve_pcs
+aarch64_vector_pcs
+fastcall
+regcall
+regparm
+stdcall
+thiscall
+vectorcall
+
+# consumed annotation checking
+typestate
+
+# customizing swift import
+swift_newtype
+
+# declaration attributes
+novtable
+boxable
+objc_nonlazy_class
+objc_subclassing_restricted
+selectany
+
+# function attributes
+cmse_nonsecure_entry
+ifunc
+lifetimebound
+micromips
+nocf_check
+noduplicate
+nomicromips
+numthreads
+optnone
+overloadable
+sycl_kernel
+xray_always_instrument
+xray_never_instrument
+xray_log_args
+
+# nullability attributes
+nonnull
+
+# OpenCL address spaces
+opencl
+
+# statement attributes
+intel_reqd_sub_group_size
+musttail
+nomerge
+sycl_special_class
+
+# type attributes
+__sptr
+__uptr
+nodebug
+noescape
+nosvm
+__declspec
+swiftasynccall
+swiftcall
