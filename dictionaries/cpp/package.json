@@ -11,8 +11,10 @@
     "./cspell-ext.json": "./cspell-ext.json"
   },
   "scripts": {
-    "build": "cspell-tools compile \"cpp.txt\" -o .",
-    "test": "head -n 1000 \"cpp.txt\" | cspell -v -c ./cspell-ext.json --local=* --languageId=cpp stdin",
+    "build": "yarn run build-cpp && yarn run build-cpp-refined",
+    "build-cpp": "cspell-tools compile \"src/cpp.txt\" -o .",
+    "build-cpp-refined": "cat source-files-cpp-refined.txt | xargs cspell-tools-cli compile --no-split --keep-raw-case --merge cpp-refined -o .",
+    "test": "head -n 1000 \"src/cpp.txt\" | cspell -v -c ./cspell-ext.json --local=* --languageId=cpp stdin",
     "prepublishOnly": "echo pre-publish",
     "prepare": "yarn run build"
   },
@@ -37,6 +39,7 @@
   "homepage": "https://github.com/streetsidesoftware/cspell-dicts/blob/main/dictionaries/cpp#readme",
   "files": [
     "cpp.txt.gz",
+    "cpp-refined.txt.gz",
     "cspell-ext.json"
   ]
 }
