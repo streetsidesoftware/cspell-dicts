@@ -1,12 +1,16 @@
 {
     "files": ["**/*.{md,txt}"],
-    "ignorePaths": ["/cpp.txt"],
-    "dictionaries": ["cpp"],
+    "ignorePaths": ["/src/cpp.txt"],
+    "dictionaries": ["cpp", "cpp-refined"],
     "import": ["./cspell-ext.json"],
-    "ignoreWords": ["aaaabbbb", "ffffeeee", "xffff", "yyyy", "yyyymm", "yyyymmdd", "yyyymmddhhmmss", "yyyymmddhhmmssz"],
+    "ignoreWords": [],
     "overrides": [
         {
-            "filename": "cpp.txt",
+            "filename": "src/**",
+            "dictionaries": ["cpp", "cpp-refined"]
+        },
+        {
+            "filename": "src/cpp.txt",
             "enabled": false
         }
     ]

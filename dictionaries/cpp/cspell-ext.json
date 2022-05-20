@@ -10,6 +10,11 @@
             "name": "cpp",
             "path": "./cpp.txt.gz",
             "description": "C/C++ Keywords and common library functions."
+        },
+        {
+            "name": "cpp-refined",
+            "path": "./cpp-refined.txt.gz",
+            "description": "Refined list of C/C++ Keywords and common library functions."
         }
     ],
     // Dictionaries to always be used.
@@ -26,16 +31,7 @@
             // Multiple locals can be specified like: "en, en-US" to match both English and English US.
             "locale": "*",
             // This can be removed once cspell-tools are upgraded to @cspell/cspell-tools.
-            "words": [
-                "aaaabbbb",
-                "ffffeeee",
-                "xffff",
-                "yyyy",
-                "yyyymm",
-                "yyyymmdd",
-                "yyyymmddhhmmss",
-                "yyyymmddhhmmssz"
-            ],
+            "words": [],
             // To exclude patterns, add them to "ignoreRegExpList"
             "ignoreRegExpList": ["includes", "hex-digits"],
             // regex patterns than can be used with ignoreRegExpList or includeRegExpList
@@ -52,7 +48,7 @@
                 }
             ],
             // List of dictionaries to enable by name in `dictionaryDefinitions`
-            "dictionaries": ["cpp"],
+            "dictionaries": ["cpp", "cpp-refined"],
             // Dictionary definitions can also be supplied here. They are only used iff "languageId" and "locale" match.
             "dictionaryDefinitions": []
         }
