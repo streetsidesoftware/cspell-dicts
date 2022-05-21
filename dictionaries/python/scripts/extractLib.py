@@ -7,7 +7,7 @@ def findFiles():
     files = Path('temp/python/cpython/Lib').glob('**/*.py')
     # files = Path('temp/python/cpython/Lib').glob('email/p*.py')
     public_files = filter(lambda p: not (
-        re.match(r'^_', p.name) or re.match(
+        re.match(r'^_(?!_init__)', p.name) or re.match(
             r'.*\b(test_|_test|test)\b', str(p))
     ), files)
     return public_files
