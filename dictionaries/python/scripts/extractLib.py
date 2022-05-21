@@ -5,10 +5,10 @@ import ast
 
 def findFiles():
     files = Path('temp/python/cpython/Lib').glob('**/*.py')
-    # files = Path('temp/python/cpython/Lib').glob('email/p*.py')
+    # files = Path('temp/python/cpython/Lib').glob('**/dataclasses.py')
     public_files = filter(lambda p: not (
         re.match(r'^_(?!_init__)', p.name) or re.match(
-            r'.*\b(test_|_test|test)\b', str(p))
+            r'.*\b(test_|_test|test|tests)\b', str(p))
     ), files)
     return public_files
 
@@ -17,6 +17,7 @@ def evalNode(astNode: ast.AST):
     for node in ast.iter_child_nodes(astNode):
         if isinstance(node, ast.FunctionDef) or isinstance(node, ast.ClassDef) or isinstance(node, ast.AsyncFunctionDef):
             name = node.name
+            # yield '# ' + type(node).__name__ + ': ' + name
             if re.match('^_', name):
                 continue
             yield name
@@ -30,20 +31,19 @@ def evalNode(astNode: ast.AST):
 
 
 def evalAssign(astExpression: ast.Assign):
-    targets = astExpression.targets
     for target in astExpression.targets:
         if not isinstance(target, ast.Name) or re.match('^_', target.id):
             continue
         yield target.id
 
 
-def evalFile(file):
+def evalFile(file: Path):
     text = open(file, "r").read()
     try:
         p = ast.parse(text)
         return evalNode(p)
     except:
-        return ()
+        return ('# Error Reading ' + file.name)
 
 
 print("""
