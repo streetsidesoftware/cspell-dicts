@@ -121,14 +121,21 @@ SpooledTemporaryFile.isatty
 SpooledTemporaryFile.mode
 SpooledTemporaryFile.name
 SpooledTemporaryFile.newlines
+SpooledTemporaryFile.readable
 SpooledTemporaryFile.read
+SpooledTemporaryFile.read1
+SpooledTemporaryFile.readinto
+SpooledTemporaryFile.readinto1
 SpooledTemporaryFile.readline
 SpooledTemporaryFile.readlines
+SpooledTemporaryFile.seekable
 SpooledTemporaryFile.seek
 SpooledTemporaryFile.tell
 SpooledTemporaryFile.truncate
+SpooledTemporaryFile.writable
 SpooledTemporaryFile.write
 SpooledTemporaryFile.writelines
+SpooledTemporaryFile.detach
 TemporaryDirectory
 TemporaryDirectory.cleanup
 # temp/python/cpython/Lib/queue.py
@@ -2951,6 +2958,8 @@ short_has_arg
 # temp/python/cpython/Lib/antigravity.py
 geohash
 # temp/python/cpython/Lib/enum.py
+nonmember
+member
 show_flag_values
 bin
 auto
@@ -3432,7 +3441,6 @@ Path.rename
 Path.replace
 Path.symlink_to
 Path.hardlink_to
-Path.link_to
 Path.exists
 Path.is_dir
 Path.is_file
@@ -4165,6 +4173,10 @@ IncrementalDecoder.decode
 StreamWriter
 StreamReader
 getregentry
+# temp/python/cpython/Lib/encodings/__init__.py
+CodecRegistryError
+normalize_encoding
+search_function
 # temp/python/cpython/Lib/encodings/cp852.py
 Codec
 Codec.encode
@@ -5072,6 +5084,7 @@ splitUp
 VersionPredicate
 VersionPredicate.satisfied_by
 split_provision
+# temp/python/cpython/Lib/distutils/__init__.py
 # temp/python/cpython/Lib/distutils/file_util.py
 copy_file
 move_file
@@ -5372,6 +5385,8 @@ CommandTestCase.test_ensure_string
 CommandTestCase.test_ensure_filename
 CommandTestCase.test_ensure_dirname
 CommandTestCase.test_debug_print
+test_suite
+# temp/python/cpython/Lib/distutils/tests/__init__.py
 test_suite
 # temp/python/cpython/Lib/distutils/tests/test_msvccompiler.py
 msvccompilerTestCase
@@ -5796,6 +5811,7 @@ bdist_dumb
 bdist_dumb.initialize_options
 bdist_dumb.finalize_options
 bdist_dumb.run
+# temp/python/cpython/Lib/distutils/command/__init__.py
 # temp/python/cpython/Lib/distutils/command/sdist.py
 show_formats
 sdist
@@ -5882,6 +5898,7 @@ install_data.finalize_options
 install_data.run
 install_data.get_inputs
 install_data.get_outputs
+# temp/python/cpython/Lib/zoneinfo/__init__.py
 # temp/python/cpython/Lib/ctypes/wintypes.py
 VARIANT_BOOL
 RECT
@@ -5894,6 +5911,35 @@ WIN32_FIND_DATAA
 WIN32_FIND_DATAW
 # temp/python/cpython/Lib/ctypes/util.py
 test
+# temp/python/cpython/Lib/ctypes/__init__.py
+create_string_buffer
+CFUNCTYPE
+py_object
+c_short
+c_ushort
+c_long
+c_ulong
+c_float
+c_double
+c_longdouble
+c_ubyte
+c_byte
+c_char
+c_char_p
+c_void_p
+c_bool
+c_wchar_p
+c_wchar
+create_unicode_buffer
+SetPointerType
+ARRAY
+CDLL
+PyDLL
+LibraryLoader
+LibraryLoader.LoadLibrary
+PYFUNCTYPE
+cast
+string_at
 # temp/python/cpython/Lib/ctypes/macholib/dyld.py
 dyld_env
 dyld_image_suffix
@@ -5909,6 +5955,7 @@ dyld_find
 framework_find
 # temp/python/cpython/Lib/ctypes/macholib/framework.py
 framework_info
+# temp/python/cpython/Lib/ctypes/macholib/__init__.py
 # temp/python/cpython/Lib/ctypes/macholib/dylib.py
 dylib_info
 # temp/python/cpython/Lib/unittest/signals.py
@@ -5947,6 +5994,8 @@ strclass
 sorted_list_difference
 unorderable_list_difference
 three_way_cmp
+# temp/python/cpython/Lib/unittest/__init__.py
+load_tests
 # temp/python/cpython/Lib/unittest/result.py
 failfast
 TestResult
@@ -5978,6 +6027,7 @@ findTestCases
 # temp/python/cpython/Lib/unittest/case.py
 SkipTest
 addModuleCleanup
+enterModuleContext
 doModuleCleanups
 skip
 skipIf
@@ -5986,7 +6036,9 @@ expectedFailure
 TestCase
 TestCase.addTypeEqualityFunc
 TestCase.addCleanup
+TestCase.enterContext
 TestCase.addClassCleanup
+TestCase.enterClassContext
 TestCase.setUp
 TestCase.tearDown
 TestCase.setUpClass
@@ -6053,6 +6105,7 @@ IsolatedAsyncioTestCase
 IsolatedAsyncioTestCase.asyncSetUp
 IsolatedAsyncioTestCase.asyncTearDown
 IsolatedAsyncioTestCase.addAsyncCleanup
+IsolatedAsyncioTestCase.enterAsyncContext
 IsolatedAsyncioTestCase.run
 IsolatedAsyncioTestCase.debug
 # temp/python/cpython/Lib/unittest/mock.py
@@ -6121,11 +6174,19 @@ ascii
 ctrl
 alt
 unctrl
+# temp/python/cpython/Lib/curses/__init__.py
+initscr
+start_color
+wrapper
 # temp/python/cpython/Lib/curses/has_key.py
 has_key
 # temp/python/cpython/Lib/curses/panel.py
+# temp/python/cpython/Lib/tomllib/__init__.py
 # temp/python/cpython/Lib/__phello__/spam.py
 main
+# temp/python/cpython/Lib/__phello__/__init__.py
+main
+# temp/python/cpython/Lib/__phello__/ham/__init__.py
 # temp/python/cpython/Lib/__phello__/ham/eggs.py
 # temp/python/cpython/Lib/turtledemo/tree.py
 tree
@@ -6195,6 +6256,7 @@ main
 switchupdown
 changecolor
 main
+# temp/python/cpython/Lib/turtledemo/__init__.py
 # temp/python/cpython/Lib/turtledemo/lindenmayer.py
 replace
 draw
@@ -6354,6 +6416,7 @@ Popen.wait
 Popen.poll
 Popen.terminate
 Popen.close
+# temp/python/cpython/Lib/multiprocessing/__init__.py
 # temp/python/cpython/Lib/multiprocessing/forkserver.py
 ForkServer
 ForkServer.set_forkserver_preload
@@ -6618,6 +6681,20 @@ ListProxy
 PoolProxy
 SyncManager
 # temp/python/cpython/Lib/multiprocessing/resource_sharer.py
+# temp/python/cpython/Lib/multiprocessing/dummy/__init__.py
+DummyProcess
+DummyProcess.start
+DummyProcess.exitcode
+active_children
+freeze_support
+Namespace
+Array
+Value
+Value.value
+Value.value
+Manager
+shutdown
+Pool
 # temp/python/cpython/Lib/multiprocessing/dummy/connection.py
 Listener
 Listener.accept
@@ -6629,6 +6706,45 @@ Connection
 Connection.poll
 Connection.close
 # temp/python/cpython/Lib/msilib/sequence.py
+# temp/python/cpython/Lib/msilib/__init__.py
+Table
+Table.add_field
+Table.sql
+Table.create
+change_sequence
+add_data
+add_stream
+init_database
+add_tables
+make_id
+gen_uuid
+CAB
+CAB.gen_id
+CAB.append
+CAB.commit
+Directory
+Directory.start_component
+Directory.make_short
+Directory.add_file
+Directory.glob
+Directory.remove_pyc
+Binary
+Feature
+Feature.set_current
+Control
+Control.event
+Control.mapping
+Control.condition
+RadioButtonGroup
+RadioButtonGroup.add
+Dialog
+Dialog.control
+Dialog.text
+Dialog.bitmap
+Dialog.line
+Dialog.pushbutton
+Dialog.radiogroup
+Dialog.checkbox
 # temp/python/cpython/Lib/msilib/text.py
 # temp/python/cpython/Lib/msilib/schema.py
 # temp/python/cpython/Lib/urllib/error.py
@@ -6783,6 +6899,7 @@ ftpwrapper.file_close
 ftpwrapper.real_close
 getproxies_environment
 proxy_bypass_environment
+# temp/python/cpython/Lib/urllib/__init__.py
 # temp/python/cpython/Lib/urllib/response.py
 addbase
 addclosehook
@@ -6850,6 +6967,9 @@ splitquery
 splittag
 splitattr
 splitvalue
+# temp/python/cpython/Lib/html/__init__.py
+escape
+unescape
 # temp/python/cpython/Lib/html/parser.py
 HTMLParser
 HTMLParser.reset
@@ -6921,6 +7041,475 @@ Tester.dnd_motion
 Tester.dnd_leave
 Tester.dnd_commit
 test
+# temp/python/cpython/Lib/tkinter/__init__.py
+EventType
+Event
+NoDefaultRoot
+Variable
+Variable.set
+Variable.get
+Variable.trace_add
+Variable.trace_remove
+Variable.trace_info
+Variable.trace_variable
+Variable.trace_vdelete
+Variable.trace_vinfo
+StringVar
+StringVar.get
+IntVar
+IntVar.get
+DoubleVar
+DoubleVar.get
+BooleanVar
+BooleanVar.set
+BooleanVar.get
+mainloop
+getboolean
+Misc
+Misc.destroy
+Misc.deletecommand
+Misc.tk_strictMotif
+Misc.tk_bisque
+Misc.tk_setPalette
+Misc.wait_variable
+Misc.wait_window
+Misc.wait_visibility
+Misc.setvar
+Misc.getvar
+Misc.getint
+Misc.getdouble
+Misc.getboolean
+Misc.focus_set
+Misc.focus_force
+Misc.focus_get
+Misc.focus_displayof
+Misc.focus_lastfor
+Misc.tk_focusFollowsMouse
+Misc.tk_focusNext
+Misc.tk_focusPrev
+Misc.after
+Misc.after_idle
+Misc.after_cancel
+Misc.bell
+Misc.clipboard_get
+Misc.clipboard_clear
+Misc.clipboard_append
+Misc.grab_current
+Misc.grab_release
+Misc.grab_set
+Misc.grab_set_global
+Misc.grab_status
+Misc.option_add
+Misc.option_clear
+Misc.option_get
+Misc.option_readfile
+Misc.selection_clear
+Misc.selection_get
+Misc.selection_handle
+Misc.selection_own
+Misc.selection_own_get
+Misc.send
+Misc.lower
+Misc.tkraise
+Misc.info_patchlevel
+Misc.winfo_atom
+Misc.winfo_atomname
+Misc.winfo_cells
+Misc.winfo_children
+Misc.winfo_class
+Misc.winfo_colormapfull
+Misc.winfo_containing
+Misc.winfo_depth
+Misc.winfo_exists
+Misc.winfo_fpixels
+Misc.winfo_geometry
+Misc.winfo_height
+Misc.winfo_id
+Misc.winfo_interps
+Misc.winfo_ismapped
+Misc.winfo_manager
+Misc.winfo_name
+Misc.winfo_parent
+Misc.winfo_pathname
+Misc.winfo_pixels
+Misc.winfo_pointerx
+Misc.winfo_pointerxy
+Misc.winfo_pointery
+Misc.winfo_reqheight
+Misc.winfo_reqwidth
+Misc.winfo_rgb
+Misc.winfo_rootx
+Misc.winfo_rooty
+Misc.winfo_screen
+Misc.winfo_screencells
+Misc.winfo_screendepth
+Misc.winfo_screenheight
+Misc.winfo_screenmmheight
+Misc.winfo_screenmmwidth
+Misc.winfo_screenvisual
+Misc.winfo_screenwidth
+Misc.winfo_server
+Misc.winfo_toplevel
+Misc.winfo_viewable
+Misc.winfo_visual
+Misc.winfo_visualid
+Misc.winfo_visualsavailable
+Misc.winfo_vrootheight
+Misc.winfo_vrootwidth
+Misc.winfo_vrootx
+Misc.winfo_vrooty
+Misc.winfo_width
+Misc.winfo_x
+Misc.winfo_y
+Misc.update
+Misc.update_idletasks
+Misc.bindtags
+Misc.bind
+Misc.unbind
+Misc.bind_all
+Misc.unbind_all
+Misc.bind_class
+Misc.unbind_class
+Misc.mainloop
+Misc.quit
+Misc.nametowidget
+Misc.configure
+Misc.cget
+Misc.keys
+Misc.pack_propagate
+Misc.pack_slaves
+Misc.place_slaves
+Misc.grid_anchor
+Misc.grid_bbox
+Misc.grid_columnconfigure
+Misc.grid_location
+Misc.grid_propagate
+Misc.grid_rowconfigure
+Misc.grid_size
+Misc.grid_slaves
+Misc.event_add
+Misc.event_delete
+Misc.event_generate
+Misc.event_info
+Misc.image_names
+Misc.image_types
+CallWrapper
+XView
+XView.xview
+XView.xview_moveto
+XView.xview_scroll
+YView
+YView.yview
+YView.yview_moveto
+YView.yview_scroll
+Wm
+Wm.wm_aspect
+Wm.wm_attributes
+Wm.wm_client
+Wm.wm_colormapwindows
+Wm.wm_command
+Wm.wm_deiconify
+Wm.wm_focusmodel
+Wm.wm_forget
+Wm.wm_frame
+Wm.wm_geometry
+Wm.wm_grid
+Wm.wm_group
+Wm.wm_iconbitmap
+Wm.wm_iconify
+Wm.wm_iconmask
+Wm.wm_iconname
+Wm.wm_iconphoto
+Wm.wm_iconposition
+Wm.wm_iconwindow
+Wm.wm_manage
+Wm.wm_maxsize
+Wm.wm_minsize
+Wm.wm_overrideredirect
+Wm.wm_positionfrom
+Wm.wm_protocol
+Wm.wm_resizable
+Wm.wm_sizefrom
+Wm.wm_state
+Wm.wm_title
+Wm.wm_transient
+Wm.wm_withdraw
+Tk
+Tk.loadtk
+Tk.destroy
+Tk.readprofile
+Tk.report_callback_exception
+Tcl
+Pack
+Pack.pack_configure
+Pack.pack_forget
+Pack.pack_info
+Place
+Place.place_configure
+Place.place_forget
+Place.place_info
+Grid
+Grid.grid_configure
+Grid.grid_forget
+Grid.grid_remove
+Grid.grid_info
+BaseWidget
+BaseWidget.destroy
+Widget
+Toplevel
+Button
+Button.flash
+Button.invoke
+Canvas
+Canvas.addtag
+Canvas.addtag_above
+Canvas.addtag_all
+Canvas.addtag_below
+Canvas.addtag_closest
+Canvas.addtag_enclosed
+Canvas.addtag_overlapping
+Canvas.addtag_withtag
+Canvas.bbox
+Canvas.tag_unbind
+Canvas.tag_bind
+Canvas.canvasx
+Canvas.canvasy
+Canvas.coords
+Canvas.create_arc
+Canvas.create_bitmap
+Canvas.create_image
+Canvas.create_line
+Canvas.create_oval
+Canvas.create_polygon
+Canvas.create_rectangle
+Canvas.create_text
+Canvas.create_window
+Canvas.dchars
+Canvas.delete
+Canvas.dtag
+Canvas.find
+Canvas.find_above
+Canvas.find_all
+Canvas.find_below
+Canvas.find_closest
+Canvas.find_enclosed
+Canvas.find_overlapping
+Canvas.find_withtag
+Canvas.focus
+Canvas.gettags
+Canvas.icursor
+Canvas.index
+Canvas.insert
+Canvas.itemcget
+Canvas.itemconfigure
+Canvas.tag_lower
+Canvas.move
+Canvas.moveto
+Canvas.postscript
+Canvas.tag_raise
+Canvas.scale
+Canvas.scan_mark
+Canvas.scan_dragto
+Canvas.select_adjust
+Canvas.select_clear
+Canvas.select_from
+Canvas.select_item
+Canvas.select_to
+Canvas.type
+Checkbutton
+Checkbutton.deselect
+Checkbutton.flash
+Checkbutton.invoke
+Checkbutton.select
+Checkbutton.toggle
+Entry
+Entry.delete
+Entry.get
+Entry.icursor
+Entry.index
+Entry.insert
+Entry.scan_mark
+Entry.scan_dragto
+Entry.selection_adjust
+Entry.selection_clear
+Entry.selection_from
+Entry.selection_present
+Entry.selection_range
+Entry.selection_to
+Frame
+Label
+Listbox
+Listbox.activate
+Listbox.bbox
+Listbox.curselection
+Listbox.delete
+Listbox.get
+Listbox.index
+Listbox.insert
+Listbox.nearest
+Listbox.scan_mark
+Listbox.scan_dragto
+Listbox.see
+Listbox.selection_anchor
+Listbox.selection_clear
+Listbox.selection_includes
+Listbox.selection_set
+Listbox.size
+Listbox.itemcget
+Listbox.itemconfigure
+Menu
+Menu.tk_popup
+Menu.activate
+Menu.add
+Menu.add_cascade
+Menu.add_checkbutton
+Menu.add_command
+Menu.add_radiobutton
+Menu.add_separator
+Menu.insert
+Menu.insert_cascade
+Menu.insert_checkbutton
+Menu.insert_command
+Menu.insert_radiobutton
+Menu.insert_separator
+Menu.delete
+Menu.entrycget
+Menu.entryconfigure
+Menu.index
+Menu.invoke
+Menu.post
+Menu.type
+Menu.unpost
+Menu.xposition
+Menu.yposition
+Menubutton
+Message
+Radiobutton
+Radiobutton.deselect
+Radiobutton.flash
+Radiobutton.invoke
+Radiobutton.select
+Scale
+Scale.get
+Scale.set
+Scale.coords
+Scale.identify
+Scrollbar
+Scrollbar.activate
+Scrollbar.delta
+Scrollbar.fraction
+Scrollbar.identify
+Scrollbar.get
+Scrollbar.set
+Text
+Text.bbox
+Text.compare
+Text.count
+Text.debug
+Text.delete
+Text.dlineinfo
+Text.dump
+Text.edit
+Text.edit_modified
+Text.edit_redo
+Text.edit_reset
+Text.edit_separator
+Text.edit_undo
+Text.get
+Text.image_cget
+Text.image_configure
+Text.image_create
+Text.image_names
+Text.index
+Text.insert
+Text.mark_gravity
+Text.mark_names
+Text.mark_set
+Text.mark_unset
+Text.mark_next
+Text.mark_previous
+Text.peer_create
+Text.peer_names
+Text.replace
+Text.scan_mark
+Text.scan_dragto
+Text.search
+Text.see
+Text.tag_add
+Text.tag_unbind
+Text.tag_bind
+Text.tag_cget
+Text.tag_configure
+Text.tag_delete
+Text.tag_lower
+Text.tag_names
+Text.tag_nextrange
+Text.tag_prevrange
+Text.tag_raise
+Text.tag_ranges
+Text.tag_remove
+Text.window_cget
+Text.window_configure
+Text.window_create
+Text.window_names
+Text.yview_pickplace
+OptionMenu
+OptionMenu.destroy
+Image
+Image.configure
+Image.height
+Image.type
+Image.width
+PhotoImage
+PhotoImage.blank
+PhotoImage.cget
+PhotoImage.copy
+PhotoImage.zoom
+PhotoImage.subsample
+PhotoImage.get
+PhotoImage.put
+PhotoImage.write
+PhotoImage.transparency_get
+PhotoImage.transparency_set
+BitmapImage
+image_names
+image_types
+Spinbox
+Spinbox.bbox
+Spinbox.delete
+Spinbox.get
+Spinbox.icursor
+Spinbox.identify
+Spinbox.index
+Spinbox.insert
+Spinbox.invoke
+Spinbox.scan
+Spinbox.scan_mark
+Spinbox.scan_dragto
+Spinbox.selection
+Spinbox.selection_adjust
+Spinbox.selection_clear
+Spinbox.selection_element
+Spinbox.selection_from
+Spinbox.selection_present
+Spinbox.selection_range
+Spinbox.selection_to
+LabelFrame
+PanedWindow
+PanedWindow.add
+PanedWindow.remove
+PanedWindow.identify
+PanedWindow.proxy
+PanedWindow.proxy_coord
+PanedWindow.proxy_forget
+PanedWindow.proxy_place
+PanedWindow.sash
+PanedWindow.sash_coord
+PanedWindow.sash_mark
+PanedWindow.sash_place
+PanedWindow.panecget
+PanedWindow.paneconfigure
+PanedWindow.panes
 # temp/python/cpython/Lib/tkinter/ttk.py
 tclobjs_to_py
 setup_master
@@ -7319,7 +7908,9 @@ Dialog.apply
 askinteger
 askfloat
 askstring
+# temp/python/cpython/Lib/xml/__init__.py
 # temp/python/cpython/Lib/xml/parsers/expat.py
+# temp/python/cpython/Lib/xml/parsers/__init__.py
 # temp/python/cpython/Lib/xml/sax/handler.py
 ErrorHandler
 ErrorHandler.error
@@ -7350,6 +7941,10 @@ LexicalHandler.startDTD
 LexicalHandler.endDTD
 LexicalHandler.startCDATA
 LexicalHandler.endCDATA
+# temp/python/cpython/Lib/xml/sax/__init__.py
+parse
+parseString
+make_parser
 # temp/python/cpython/Lib/xml/sax/saxutils.py
 escape
 unescape
@@ -7602,6 +8197,26 @@ NodeList.item
 EmptyNodeList
 EmptyNodeList.item
 defproperty
+# temp/python/cpython/Lib/xml/dom/__init__.py
+Node
+DOMException
+IndexSizeErr
+DomstringSizeErr
+HierarchyRequestErr
+WrongDocumentErr
+InvalidCharacterErr
+NoDataAllowedErr
+NoModificationAllowedErr
+NotFoundErr
+NotSupportedErr
+InuseAttributeErr
+InvalidStateErr
+SyntaxErr
+InvalidModificationErr
+NamespaceErr
+InvalidAccessErr
+ValidationErr
+UserDataHandler
 # temp/python/cpython/Lib/xml/dom/NodeFilter.py
 NodeFilter
 NodeFilter.acceptNode
@@ -7777,6 +8392,7 @@ find
 findall
 findtext
 # temp/python/cpython/Lib/xml/etree/cElementTree.py
+# temp/python/cpython/Lib/xml/etree/__init__.py
 # temp/python/cpython/Lib/xml/etree/ElementInclude.py
 FatalIncludeError
 LimitedRecursiveIncludeError
@@ -7889,6 +8505,7 @@ SimpleHandler.add_cgi_vars
 BaseCGIHandler
 CGIHandler
 IISCGIHandler
+# temp/python/cpython/Lib/wsgiref/__init__.py
 # temp/python/cpython/Lib/wsgiref/types.py
 StartResponse
 InputStream
@@ -7960,6 +8577,12 @@ JSONDecoder.decode
 JSONDecoder.raw_decode
 # temp/python/cpython/Lib/json/scanner.py
 py_make_scanner
+# temp/python/cpython/Lib/json/__init__.py
+dump
+dumps
+detect_encoding
+load
+loads
 # temp/python/cpython/Lib/json/encoder.py
 py_encode_basestring
 py_encode_basestring_ascii
@@ -8078,6 +8701,9 @@ ResponseNotReady
 BadStatusLine
 LineTooLong
 RemoteDisconnected
+# temp/python/cpython/Lib/http/__init__.py
+HTTPStatus
+HTTPMethod
 # temp/python/cpython/Lib/http/cookiejar.py
 time2isoz
 time2netscape
@@ -8157,26 +8783,49 @@ LWPCookieJar.as_lwp_str
 LWPCookieJar.save
 MozillaCookieJar
 MozillaCookieJar.save
+# temp/python/cpython/Lib/sqlite3/__init__.py
 # temp/python/cpython/Lib/sqlite3/dump.py
 # temp/python/cpython/Lib/sqlite3/dbapi2.py
 DateFromTicks
 TimeFromTicks
 TimestampFromTicks
 register_adapters_and_converters
-enable_shared_cache
+# temp/python/cpython/Lib/ensurepip/__init__.py
+version
+bootstrap
+# temp/python/cpython/Lib/concurrent/__init__.py
 # temp/python/cpython/Lib/concurrent/futures/thread.py
 BrokenThreadPool
 ThreadPoolExecutor
 ThreadPoolExecutor.submit
 ThreadPoolExecutor.shutdown
+# temp/python/cpython/Lib/concurrent/futures/__init__.py
 # temp/python/cpython/Lib/concurrent/futures/process.py
 BrokenProcessPool
 ProcessPoolExecutor
 ProcessPoolExecutor.submit
 ProcessPoolExecutor.map
 ProcessPoolExecutor.shutdown
+# temp/python/cpython/Lib/venv/__init__.py
+EnvBuilder
+EnvBuilder.create
+EnvBuilder.clear_directory
+EnvBuilder.ensure_directories
+EnvBuilder.create_configuration
+EnvBuilder.setup_python
+EnvBuilder.setup_scripts
+EnvBuilder.post_setup
+EnvBuilder.replace_variables
+EnvBuilder.install_scripts
+EnvBuilder.upgrade_dependencies
+create
+main
 # temp/python/cpython/Lib/dbm/ndbm.py
 # temp/python/cpython/Lib/dbm/gnu.py
+# temp/python/cpython/Lib/dbm/__init__.py
+error
+open
+whichdb
 # temp/python/cpython/Lib/dbm/dumb.py
 open
 # temp/python/cpython/Lib/importlib/readers.py
@@ -8191,6 +8840,11 @@ LazyLoader
 LazyLoader.factory
 LazyLoader.create_module
 LazyLoader.exec_module
+# temp/python/cpython/Lib/importlib/__init__.py
+invalidate_caches
+find_loader
+import_module
+reload
 # temp/python/cpython/Lib/importlib/machinery.py
 all_suffixes
 # temp/python/cpython/Lib/importlib/simple.py
@@ -8239,6 +8893,7 @@ MultiplexedPath.name
 NamespaceReader
 NamespaceReader.resource_path
 NamespaceReader.files
+# temp/python/cpython/Lib/importlib/resources/__init__.py
 # temp/python/cpython/Lib/importlib/resources/simple.py
 SimpleReader
 SimpleReader.package
@@ -8280,6 +8935,80 @@ TraversableResources.open_resource
 TraversableResources.resource_path
 TraversableResources.is_resource
 TraversableResources.contents
+# temp/python/cpython/Lib/importlib/metadata/__init__.py
+PackageNotFoundError
+PackageNotFoundError.name
+Sectioned
+Sectioned.section_pairs
+Sectioned.read
+Sectioned.valid
+DeprecatedTuple
+EntryPoint
+EntryPoint.load
+EntryPoint.module
+EntryPoint.attr
+EntryPoint.extras
+EntryPoint.matches
+DeprecatedList
+EntryPoints
+EntryPoints.select
+EntryPoints.names
+EntryPoints.groups
+Deprecated
+Deprecated.get
+Deprecated.keys
+Deprecated.values
+SelectableGroups
+SelectableGroups.load
+SelectableGroups.groups
+SelectableGroups.names
+SelectableGroups.select
+PackagePath
+PackagePath.read_text
+PackagePath.read_binary
+PackagePath.locate
+FileHash
+Distribution
+Distribution.read_text
+Distribution.locate_file
+Distribution.from_name
+Distribution.discover
+Distribution.at
+Distribution.metadata
+Distribution.name
+Distribution.version
+Distribution.entry_points
+Distribution.files
+Distribution.requires
+DistributionFinder
+DistributionFinder.Context
+DistributionFinder.find_distributions
+FastPath
+FastPath.joinpath
+FastPath.children
+FastPath.zip_children
+FastPath.search
+FastPath.mtime
+FastPath.lookup
+Lookup
+Lookup.search
+Prepared
+Prepared.normalize
+Prepared.legacy_normalize
+MetadataPathFinder
+MetadataPathFinder.find_distributions
+MetadataPathFinder.invalidate_caches
+PathDistribution
+PathDistribution.read_text
+PathDistribution.locate_file
+distribution
+distributions
+metadata
+version
+entry_points
+files
+requires
+packages_distributions
 # temp/python/cpython/Lib/xmlrpc/server.py
 resolve_dotted_attribute
 list_public_methods
@@ -8396,6 +9125,7 @@ Transport.parse_response
 SafeTransport
 SafeTransport.make_connection
 ServerProxy
+# temp/python/cpython/Lib/xmlrpc/__init__.py
 # temp/python/cpython/Lib/lib2to3/refactor.py
 get_all_fix_names
 get_fixers_from_package
@@ -8440,6 +9170,7 @@ BaseFix.finish_tree
 ConditionalFix
 ConditionalFix.start_tree
 ConditionalFix.should_skip
+# temp/python/cpython/Lib/lib2to3/__init__.py
 # temp/python/cpython/Lib/lib2to3/btm_utils.py
 MinNode
 MinNode.leaf_to_root
@@ -8648,6 +9379,7 @@ FixImports.compile_pattern
 FixImports.match
 FixImports.start_tree
 FixImports.transform
+# temp/python/cpython/Lib/lib2to3/fixes/__init__.py
 # temp/python/cpython/Lib/lib2to3/fixes/fix_standarderror.py
 FixStandarderror
 FixStandarderror.transform
@@ -9430,6 +10162,8 @@ Test_all
 Test_all.setUp
 Test_all.refactor_file
 Test_all.test_all_project_files
+# temp/python/cpython/Lib/lib2to3/tests/__init__.py
+load_tests
 # temp/python/cpython/Lib/lib2to3/tests/test_util.py
 parse
 MacroTestCase
@@ -9799,6 +10533,7 @@ FixExplicit.match
 # temp/python/cpython/Lib/lib2to3/tests/data/fixers/myfixes/fix_first.py
 FixFirst
 FixFirst.match
+# temp/python/cpython/Lib/lib2to3/tests/data/fixers/myfixes/__init__.py
 # temp/python/cpython/Lib/lib2to3/tests/data/fixers/myfixes/fix_preorder.py
 FixPreorder
 FixPreorder.match
@@ -9835,6 +10570,7 @@ DFAState
 DFAState.addarc
 DFAState.unifystate
 generate_grammar
+# temp/python/cpython/Lib/lib2to3/pgen2/__init__.py
 # temp/python/cpython/Lib/lib2to3/pgen2/literals.py
 escape
 evalString
@@ -10451,6 +11187,7 @@ ScriptBinding.errorbox
 Delegator
 Delegator.resetcache
 Delegator.setdelegate
+# temp/python/cpython/Lib/idlelib/__init__.py
 # temp/python/cpython/Lib/idlelib/format.py
 FormatParagraph
 FormatParagraph.reload
@@ -11478,6 +12215,8 @@ CodeContextTest.test_highlight_colors
 HelperFunctionText
 HelperFunctionText.test_get_spaces_firstword
 HelperFunctionText.test_get_line_info
+# temp/python/cpython/Lib/idlelib/idle_test/__init__.py
+load_tests
 # temp/python/cpython/Lib/idlelib/idle_test/test_zoomheight.py
 Test
 Test.setUpClass
@@ -12230,7 +12969,101 @@ ExpandingButtonTest.test_expand_dangerous_oupput
 ExpandingButtonTest.test_copy
 ExpandingButtonTest.test_view
 ExpandingButtonTest.test_rmenu
+# temp/python/cpython/Lib/pydoc_data/__init__.py
 # temp/python/cpython/Lib/pydoc_data/topics.py
+# temp/python/cpython/Lib/collections/__init__.py
+OrderedDict
+OrderedDict.clear
+OrderedDict.popitem
+OrderedDict.move_to_end
+OrderedDict.keys
+OrderedDict.items
+OrderedDict.values
+OrderedDict.pop
+OrderedDict.setdefault
+OrderedDict.copy
+OrderedDict.fromkeys
+namedtuple
+Counter
+Counter.total
+Counter.most_common
+Counter.elements
+Counter.fromkeys
+Counter.update
+Counter.subtract
+Counter.copy
+ChainMap
+ChainMap.get
+ChainMap.fromkeys
+ChainMap.copy
+ChainMap.new_child
+ChainMap.parents
+ChainMap.popitem
+ChainMap.pop
+ChainMap.clear
+UserDict
+UserDict.get
+UserDict.copy
+UserDict.fromkeys
+UserList
+UserList.append
+UserList.insert
+UserList.pop
+UserList.remove
+UserList.clear
+UserList.copy
+UserList.count
+UserList.index
+UserList.reverse
+UserList.sort
+UserList.extend
+UserString
+UserString.capitalize
+UserString.casefold
+UserString.center
+UserString.count
+UserString.removeprefix
+UserString.removesuffix
+UserString.encode
+UserString.endswith
+UserString.expandtabs
+UserString.find
+UserString.format
+UserString.format_map
+UserString.index
+UserString.isalpha
+UserString.isalnum
+UserString.isascii
+UserString.isdecimal
+UserString.isdigit
+UserString.isidentifier
+UserString.islower
+UserString.isnumeric
+UserString.isprintable
+UserString.isspace
+UserString.istitle
+UserString.isupper
+UserString.join
+UserString.ljust
+UserString.lower
+UserString.lstrip
+UserString.partition
+UserString.replace
+UserString.rfind
+UserString.rindex
+UserString.rjust
+UserString.rpartition
+UserString.rstrip
+UserString.split
+UserString.rsplit
+UserString.splitlines
+UserString.startswith
+UserString.strip
+UserString.swapcase
+UserString.title
+UserString.translate
+UserString.upper
+UserString.zfill
 # temp/python/cpython/Lib/collections/abc.py
 # temp/python/cpython/Lib/asyncio/mixins.py
 # temp/python/cpython/Lib/asyncio/queues.py
@@ -12538,6 +13371,7 @@ Barrier.abort
 Barrier.parties
 Barrier.n_waiting
 Barrier.broken
+# temp/python/cpython/Lib/asyncio/__init__.py
 # temp/python/cpython/Lib/asyncio/timeouts.py
 Timeout
 Timeout.when
@@ -12830,6 +13664,129 @@ QueueListener.prepare
 QueueListener.handle
 QueueListener.enqueue_sentinel
 QueueListener.stop
+# temp/python/cpython/Lib/logging/__init__.py
+getLevelNamesMapping
+getLevelName
+addLevelName
+LogRecord
+LogRecord.getMessage
+setLogRecordFactory
+getLogRecordFactory
+makeLogRecord
+PercentStyle
+PercentStyle.usesTime
+PercentStyle.validate
+PercentStyle.format
+StrFormatStyle
+StrFormatStyle.validate
+StringTemplateStyle
+StringTemplateStyle.usesTime
+StringTemplateStyle.validate
+Formatter
+Formatter.formatTime
+Formatter.formatException
+Formatter.usesTime
+Formatter.formatMessage
+Formatter.formatStack
+Formatter.format
+BufferingFormatter
+BufferingFormatter.formatHeader
+BufferingFormatter.formatFooter
+BufferingFormatter.format
+Filter
+Filter.filter
+Filterer
+Filterer.addFilter
+Filterer.removeFilter
+Filterer.filter
+Handler
+Handler.get_name
+Handler.set_name
+Handler.createLock
+Handler.acquire
+Handler.release
+Handler.setLevel
+Handler.format
+Handler.emit
+Handler.handle
+Handler.setFormatter
+Handler.flush
+Handler.close
+Handler.handleError
+StreamHandler
+StreamHandler.flush
+StreamHandler.emit
+StreamHandler.setStream
+FileHandler
+FileHandler.close
+FileHandler.emit
+PlaceHolder
+PlaceHolder.append
+setLoggerClass
+getLoggerClass
+Manager
+Manager.disable
+Manager.disable
+Manager.getLogger
+Manager.setLoggerClass
+Manager.setLogRecordFactory
+Logger
+Logger.setLevel
+Logger.debug
+Logger.info
+Logger.warning
+Logger.warn
+Logger.error
+Logger.exception
+Logger.critical
+Logger.fatal
+Logger.log
+Logger.findCaller
+Logger.makeRecord
+Logger.handle
+Logger.addHandler
+Logger.removeHandler
+Logger.hasHandlers
+Logger.callHandlers
+Logger.getEffectiveLevel
+Logger.isEnabledFor
+Logger.getChild
+RootLogger
+LoggerAdapter
+LoggerAdapter.process
+LoggerAdapter.debug
+LoggerAdapter.info
+LoggerAdapter.warning
+LoggerAdapter.warn
+LoggerAdapter.error
+LoggerAdapter.exception
+LoggerAdapter.critical
+LoggerAdapter.log
+LoggerAdapter.isEnabledFor
+LoggerAdapter.setLevel
+LoggerAdapter.getEffectiveLevel
+LoggerAdapter.hasHandlers
+LoggerAdapter.manager
+LoggerAdapter.manager
+LoggerAdapter.name
+basicConfig
+getLogger
+critical
+fatal
+error
+exception
+warning
+warn
+info
+debug
+log
+disable
+shutdown
+NullHandler
+NullHandler.handle
+NullHandler.emit
+NullHandler.createLock
+captureWarnings
 # temp/python/cpython/Lib/email/contentmanager.py
 ContentManager
 ContentManager.add_get_handler
@@ -12857,6 +13814,11 @@ EmailPolicy.header_store_parse
 EmailPolicy.header_fetch_parse
 EmailPolicy.fold
 EmailPolicy.fold_binary
+# temp/python/cpython/Lib/email/__init__.py
+message_from_string
+message_from_bytes
+message_from_file
+message_from_binary_file
 # temp/python/cpython/Lib/email/message.py
 Message
 Message.as_string
@@ -13083,6 +14045,7 @@ HeaderRegistry
 HeaderRegistry.map_to_type
 # temp/python/cpython/Lib/email/mime/multipart.py
 MIMEMultipart
+# temp/python/cpython/Lib/email/mime/__init__.py
 # temp/python/cpython/Lib/email/mime/message.py
 MIMEMessage
 # temp/python/cpython/Lib/email/mime/application.py
@@ -13100,3 +14063,18 @@ MIMEImage
 rule
 # temp/python/cpython/Lib/email/mime/base.py
 MIMEBase
+# temp/python/cpython/Lib/re/__init__.py
+RegexFlag
+match
+fullmatch
+search
+sub
+subn
+split
+findall
+finditer
+compile
+purge
+escape
+Scanner
+Scanner.scan
