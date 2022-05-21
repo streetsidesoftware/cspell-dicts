@@ -3,6 +3,19 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+## [3.0.5](https://github.com/streetsidesoftware/cspell-dicts/compare/@cspell/dict-python@3.0.4...@cspell/dict-python@3.0.5) (2022-05-21)
+
+
+### Bug Fixes
+
+* Add public assignments ([#1108](https://github.com/streetsidesoftware/cspell-dicts/issues/1108)) ([a8ab60a](https://github.com/streetsidesoftware/cspell-dicts/commit/a8ab60ad172a833c616ffe9b469965724c267e0c))
+* Add Python Lib terms from `__init__.py` ([#1107](https://github.com/streetsidesoftware/cspell-dicts/issues/1107)) ([44162fe](https://github.com/streetsidesoftware/cspell-dicts/commit/44162feb714046f9a301be8397720d60efb4b0d6))
+* Python-lib - add `dataclasses` and remove unit tests ([#1109](https://github.com/streetsidesoftware/cspell-dicts/issues/1109)) ([4cdf652](https://github.com/streetsidesoftware/cspell-dicts/commit/4cdf6526e45e84ff7f97ad28388ce65e1856972b))
+
+
+
+
+
 ## [3.0.4](https://github.com/streetsidesoftware/cspell-dicts/compare/@cspell/dict-python@3.0.3...@cspell/dict-python@3.0.4) (2022-05-20)
 
 **Note:** Version bump only for package @cspell/dict-python
