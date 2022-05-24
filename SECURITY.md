@@ -21,6 +21,7 @@ Every attempt is made to make sure security issues are addressed as soon as poss
 | cspell-dict-da_DK                | 1.\*    | :white_check_mark: |       |
 | cspell-dict-de_DE                | 1.\*    | :white_check_mark: |       |
 | cspell-dict-django               | 1.\*    | :white_check_mark: |       |
+| cspell-dict-docker               | 1.\*    | :white_check_mark: |       |
 | cspell-dict-dotnet               | 1.\*    | :white_check_mark: |       |
 | cspell-dict-el                   | 1.\*    | :white_check_mark: |       |
 | cspell-dict-elixir               | 1.\*    | :white_check_mark: |       |
