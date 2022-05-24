@@ -5,6 +5,9 @@ on: # rebuild any PRs and main branch changes
     branches:
       - main
 
+permissions:
+  contents: read
+
 jobs:
   # Test supported Node versions
   test-node-versions:
