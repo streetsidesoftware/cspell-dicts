@@ -56,6 +56,7 @@
         "*.gz",
         "*.lock",
         "*.log",
+        "*.snap",
         "**/.git/!(COMMIT_EDITMSG)",
         "**/.git/!(COMMIT_EDITMSG)/**",
         "CHANGELOG.md",
@@ -66,7 +67,8 @@
         "generator-cspell-dicts/generators/app/templates/**",
         "node_modules",
         "source-dependencies.txt",
-        "source-files.txt"
+        "source-files.txt",
+        "snapshots/**"
     ],
     "import": [],
     "useGitignore": true,
