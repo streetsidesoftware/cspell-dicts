@@ -1,14 +1,7 @@
 {
     "version": "0.2",
-    "files": [
-        "**/*.{md,txt}"
-    ],
-    "dictionaries": [
-        "docker"
-    ],
-    "import": [
-        "./cspell-ext.json"
-    ],
-    "words": [
-    ]
+    "files": ["**/*.{md,txt}", "**/Dockerfile"],
+    "ignorePaths": ["src"],
+    "dictionaries": [],
+    "import": ["./cspell-ext.json"]
 }
