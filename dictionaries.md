@@ -21,6 +21,7 @@
 | [@cspell/dict-dart](./dictionaries/dart#readme)                                 | dart                            | dart                               | Dart dictionary for cspell.                           |
 | [@cspell/dict-de-de](./dictionaries/de_DE#readme)                               | de-de                           | German Dictionary                  | German (de-DE) Dictionary.                            |
 | [@cspell/dict-django](./dictionaries/django#readme)                             | django                          | Django Keywords                    | List of Python Django Framework keywords.             |
+| [@cspell/dict-docker](./dictionaries/docker#readme)                             | docker                          | Docker Dictionary                  | Docker dictionary for cspell.                         |
 | [@cspell/dict-dotnet](./dictionaries/dotnet#readme)                             | dotnet                          | .Net Dictionary                    | .Net keywords.                                        |
 | [@cspell/dict-el](./dictionaries/el#readme)                                     | el                              | Greek                              | Greek dictionary for cspell.                          |
 | [@cspell/dict-elixir](./dictionaries/elixir#readme)                             | elixir                          | elixir                             | Elixir dictionary for cspell.                         |
