@@ -14,9 +14,16 @@ on:
   schedule:
     - cron: "0 8 * * 5"
 
+permissions:
+  contents: read
+
 jobs:
   analyze:
     name: Analyze
+    permissions:
+      actions: read # for github/codeql-action/init to get workflow details
+      contents: read # for actions/checkout to fetch code
+      security-events: write # for github/codeql-action/analyze to upload SARIF results
     runs-on: ubuntu-latest
 
     strategy:
@@ -60,3 +67,4 @@ jobs:
 
       - name: Perform CodeQL Analysis
         uses: github/codeql-action/analyze@v2
+# cspell:ignore SARIF
