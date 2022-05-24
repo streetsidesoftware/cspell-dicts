@@ -3,6 +3,14 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+## [0.1.1](https://github.com/streetsidesoftware/cspell-dicts/compare/generator-cspell-dicts@0.1.0...generator-cspell-dicts@0.1.1) (2022-05-24)
+
+**Note:** Version bump only for package generator-cspell-dicts
+
+
+
+
+
 # [0.1.0](https://github.com/streetsidesoftware/cspell-dicts/compare/generator-cspell-dicts@0.0.12...generator-cspell-dicts@0.1.0) (2022-02-09)
 
 
