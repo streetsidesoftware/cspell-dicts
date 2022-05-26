@@ -3,6 +3,19 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+## [3.0.0](https://github.com/streetsidesoftware/cspell-dicts/compare/@cspell/dict-node@2.0.1...@cspell/dict-node@3.0.0) (2022-05-26)
+
+
+### ⚠ BREAKING CHANGES
+
+* Update the npm and node dictionaries (#1127)
+
+### Features
+
+* Update the npm and node dictionaries ([#1127](https://github.com/streetsidesoftware/cspell-dicts/issues/1127)) ([e0cfea3](https://github.com/streetsidesoftware/cspell-dicts/commit/e0cfea3b57cefd89ba115893839816a93e1f5658))
+
+
+
 ## [2.0.1](https://github.com/streetsidesoftware/cspell-dicts/compare/@cspell/dict-node@2.0.0...@cspell/dict-node@2.0.1) (2022-04-28)
 
 **Note:** Version bump only for package @cspell/dict-node
