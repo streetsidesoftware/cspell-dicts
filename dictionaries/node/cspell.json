@@ -1,15 +1,12 @@
 {
-    "files": [
-        "**/*.{md,txt}"
-    ],
-    "dictionaries": [
-        "node"
-    ],
-    "ignoreWords": [
-        "mdash",
-        "yyyymmdd"
-    ],
-    "import": [
-        "./cspell-ext.json"
+    "files": ["**/*.{md,txt}"],
+    "dictionaries": ["node"],
+    "ignoreWords": ["mdash"],
+    "import": ["./cspell-ext.json"],
+    "overrides": [
+        {
+            "filename": ["src/**/*.md"],
+            "ignoreRegExpList": ["/^\\[.*?\\]:\\s.*/gm"]
+        }
     ]
 }

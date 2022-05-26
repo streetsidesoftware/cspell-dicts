@@ -12,10 +12,9 @@
   },
   "scripts": {
     "build-node": "node src/extract-api.js src/api/*.md",
-    "build": "cspell-tools compile node.txt additional_words.txt --merge node -o .",
-    "test": "yarn test-dict && yarn test-old",
+    "build": "cspell-tools-cli compile node.txt additional_words.txt --merge node -o .",
+    "test": "yarn test-dict",
     "test-dict": "cat \"node.txt\" | cspell -v -c ./cspell-ext.json \"--local=*\" \"--languageId=javascript\" stdin",
-    "test-old": "cspell -v -c ./cspell-ext.json \"--local=en\" \"--languageId=javascript\" src/node-old.txt",
     "prepublishOnly": "echo pre-publish",
     "prepare": "yarn run build"
   },
