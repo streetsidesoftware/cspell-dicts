@@ -12,7 +12,7 @@
   },
   "scripts": {
     "build": "yarn run build-python && yarn run build-common",
-    "build-python": "cspell-tools-cli compile \"src/python/*.txt\" --split --keep-raw-case --merge python -o .",
+    "build-python": "cspell-tools-cli compile \"src/python/*.txt\" \"src/additional_words.txt\" --split --keep-raw-case --merge python -o .",
     "build-common": "cspell-tools-cli compile \"src/common/*.txt\" --keep-raw-case --merge python-common -o .",
     "test-dictionary": "cspell -v -c ./cspell-ext.json --local=en --languageId=python \"src/python/py*.txt\"",
     "test-samples": "cspell -v -c ./cspell-ext.json \"samples/**/*.py\"",
