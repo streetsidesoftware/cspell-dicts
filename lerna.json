@@ -5,6 +5,7 @@
   "version": "independent",
   "command": {
     "publish": {
+      "conventionalCommits": true,
       "ignoreChanges": ["*.md", "package-lock.json", "cspell.json"]
     }
   },
