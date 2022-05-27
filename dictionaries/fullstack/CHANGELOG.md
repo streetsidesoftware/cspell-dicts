@@ -3,6 +3,15 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+### [2.0.6](https://github.com/streetsidesoftware/cspell-dicts/compare/@cspell/dict-fullstack@2.0.5...@cspell/dict-fullstack@2.0.6) (2022-05-27)
+
+
+### Bug Fixes
+
+* Add words to fullstack dictionary ([#1132](https://github.com/streetsidesoftware/cspell-dicts/issues/1132)) ([d4a8fe1](https://github.com/streetsidesoftware/cspell-dicts/commit/d4a8fe1b5b07a691e04d8fdaf0fe1d245fec0d34))
+
+
+
 ## [2.0.5](https://github.com/streetsidesoftware/cspell-dicts/compare/@cspell/dict-fullstack@2.0.4...@cspell/dict-fullstack@2.0.5) (2022-05-02)
 
 **Note:** Version bump only for package @cspell/dict-fullstack
