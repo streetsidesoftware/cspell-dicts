@@ -3,6 +3,15 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+### [3.0.1](https://github.com/streetsidesoftware/cspell-dicts/compare/@cspell/dict-node@3.0.0...@cspell/dict-node@3.0.1) (2022-05-28)
+
+
+### Bug Fixes
+
+* Add some common node words + Airbnb ([#1138](https://github.com/streetsidesoftware/cspell-dicts/issues/1138)) ([0d0ccf8](https://github.com/streetsidesoftware/cspell-dicts/commit/0d0ccf8823f21e90a6fbd42631510bafd3dc3e9c))
+
+
+
 ## [3.0.0](https://github.com/streetsidesoftware/cspell-dicts/compare/@cspell/dict-node@2.0.1...@cspell/dict-node@3.0.0) (2022-05-26)
 
 
