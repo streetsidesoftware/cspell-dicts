@@ -22,6 +22,7 @@ Various [cspell](https://github.com/streetsidesoftware/cspell) dictionaries. Eac
 - [Portuguese - Brazilian](dictionaries/pt_BR)
 - [Portuguese](dictionaries/pt_PT)
 - [Russian](dictionaries/ru_RU)
+- [Slovenian](dictionaries/sl_SI)
 - [Spanish](dictionaries/es_ES)
 - [Swedish](dictionaries/sv)
 - [Turkish](dictionaries/tr_TR)
@@ -125,6 +126,7 @@ Various [cspell](https://github.com/streetsidesoftware/cspell) dictionaries. Eac
 | [@cspell/dict-rust](./dictionaries/rust#readme)                                 | rust                            | Rust Dictionary                    | Rust Keyword Dictionary                               |
 | [@cspell/dict-scala](./dictionaries/scala#readme)                               | scala                           | Scala                              | Scala dictionary for cspell.                          |
 | [@cspell/dict-scientific-terms-us](./dictionaries/scientific_terms_US#readme)   | scientific-terms-us             | Scientific Terms US                | Scientific Terms US dictionary for cspell.            |
+| [@cspell/dict-sl-si](./dictionaries/sl-SI#readme)                               | sl-si                           | Slovenian Dictionary               | Slovenian dictionary for cspell.                      |
 | [@cspell/dict-software-terms](./dictionaries/software-terms#readme)             | softwareTerms; networking-terms | Software Terms                     | Software terms dictionary for cspell.                 |
 | [@cspell/dict-sv](./dictionaries/sv#readme)                                     | sv                              | Swedish Dictionary                 | Swedish Dictionary                                    |
 | [@cspell/dict-swift](./dictionaries/swift#readme)                               | swift                           | Swift                              | Swift dictionary for cspell.                          |
