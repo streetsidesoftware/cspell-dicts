@@ -22,6 +22,7 @@ Various [cspell](https://github.com/streetsidesoftware/cspell) dictionaries. Eac
 - [Portuguese - Brazilian](dictionaries/pt_BR)
 - [Portuguese](dictionaries/pt_PT)
 - [Russian](dictionaries/ru_RU)
+- [Slovenian](dictionaries/sl_SI)
 - [Spanish](dictionaries/es_ES)
 - [Swedish](dictionaries/sv)
 - [Turkish](dictionaries/tr_TR)
