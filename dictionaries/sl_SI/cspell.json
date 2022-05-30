@@ -1,12 +1,12 @@
 {
     "version": "0.2",
-    "files": [
-        "**/*.{md,txt}"
-    ],
-    "dictionaries": [
-        "sl-si"
-    ],
-    "import": [
-        "./cspell-ext.json"
+    "files": ["**/*.{md,txt}"],
+    "dictionaries": ["sl-si"],
+    "import": ["./cspell-ext.json"],
+    "overrides": [
+        {
+            "filename": "samples/**",
+            "language": "sl_SI"
+        }
     ]
 }
