@@ -2,14 +2,7 @@
 
 [Ljubljana - Wikipedija, prosta enciklopedija](https://sl.wikipedia.org/wiki/Ljubljana)
 
-Iz Wikipedije, proste enciklopedije
-
-Ljubljana se nahaja v SlovenijaLjubljanaLjubljana
-Koordinati: 46°03′N 14°30′EKoordinati: 46°03′N 14°30′E
-Država	Zastava Slovenije Slovenija
-Statistična regija	Osrednjeslovenska regija
-
-Ljubljana (izgovorjava (pomoč·info)) je glavno mesto Republike Slovenije. Leži v središču države, na stičišču Gorenjske, Notranjske in Dolenjske. Z okoli 300.000 prebivalci je največje mesto v državi ter sedež istoimenske mestne občine in osrednjeslovenske statistične regije.
+Ljubljana je glavno mesto Republike Slovenije. Leži v središču države, na stičišču Gorenjske, Notranjske in Dolenjske. Z okoli 300.000 prebivalci je največje mesto v državi ter sedež istoimenske mestne občine in osrednjeslovenske statistične regije.
 
 Ljubljana je geografsko, kulturno, znanstveno, ekonomsko, prometno, politično in administrativno središče države, katerega metropolitansko območje šteje več kot pol milijona ljudi ali četrtino prebivalstva Slovenije.
 
@@ -21,6 +14,6 @@ Ljubljanske prometne povezave, zgoščenost industrije, znanstvene in raziskoval
 
 Ljubljana je tudi pomembno prometno vozlišče, stičišče mednarodnih avtocest, ki potekajo v štiri smeri (križanje dveh koridorjev-smeri) in železniških prog (5-6 smeri) ter trgovsko središče z največjim nakupovalnim centrom tega dela Evrope (BTC).
 
-Prvo naselbino na kraju, kjer danes stoji Ljubljana, naj bi, kot pravi legenda, ustanovili Argonavti oziroma starogrški junak Jazon, ki naj bi kralju Aitesu ukradel zlato runo, nato pa s tovariši zbežal pred zasledovalci na ladji Argo, potoval čez Črno morje ter nato po Donavi in Savi prišel vse do Ljubljanice. Tu naj bi argonavti ladjo razstavili, jo prenesli po kopnem med dvema plovnima potema in na ta način prispeli vse do Jadranskega morja. Na poti k morju, ob izviru Ljubljanice, so se ustavili ob velikem jezeru na barju, kjer je živela pošast. Jazon se je spoprijel z njo, jo premagal in ubil. Ta pošast naj bi bila Ljubljanski zmaj, ki je danes prepoznavni simbol mesta in se pojavlja tudi v ljubljanskem mestnem grbu, vendar šele od baročnega obdobja naprej.[5][6]
+Prvo naselbino na kraju, kjer danes stoji Ljubljana, naj bi, kot pravi legenda, ustanovili Argonavti oziroma starogrški junak Jazon, ki naj bi kralju Aitesu ukradel zlato runo, nato pa s tovariši zbežal pred zasledovalci na ladji Argo, potoval čez Črno morje ter nato po Donavi in Savi prišel vse do Ljubljanice. Tu naj bi argonavti ladjo razstavili, jo prenesli po kopnem med dvema plovnima potema in na ta način prispeli vse do Jadranskega morja. Na poti k morju, ob izviru Ljubljanice, so se ustavili ob velikem jezeru na barju, kjer je živela pošast. Jazon se je spoprijel z njo, jo premagal in ubil. Ta pošast naj bi bila Ljubljanski zmaj, ki je danes prepoznavni simbol mesta in se pojavlja tudi v ljubljanskem mestnem grbu, vendar šele od baročnega obdobja naprej.
 
 <!--- cspell:ignore Aitesu Argo --->
