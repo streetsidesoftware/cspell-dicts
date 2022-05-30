@@ -41,8 +41,16 @@ The `cspell-ext.json` file in this package should be added to the import section
 
 See: [How to Create a New Dictionary](https://github.com/streetsidesoftware/cspell-dicts#how-to-create-a-new-dictionary)
 
+## Resources
+
+The Hunspell source for this dictionary can be found:
+
+- https://cgit.freedesktop.org/libreoffice/dictionaries/tree/sl_SI/
+
 ## License
 
 MIT
 
 > Some packages may have other licenses included.
+
+See also: [README_sl_SI.txt](./src/README_sl_SI.txt)
