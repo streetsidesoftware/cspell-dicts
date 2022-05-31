@@ -49,7 +49,7 @@ The Hunspell source for this dictionary can be found:
 
 ## License
 
-MIT
+GNU/LGPL and GNU/GPL
 
 > Some packages may have other licenses included.
 
