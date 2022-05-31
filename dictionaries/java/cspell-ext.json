@@ -1,10 +1,8 @@
-// cSpell Settings
 {
     "id": "java",
     "name": "Java",
     "description": "Java dictionary for cspell.",
     "readonly": true,
-    // List of dictionary files to add to the global list of dictionaries
     "dictionaryDefinitions": [
         {
             "name": "java",
@@ -12,36 +10,26 @@
             "description": "Java dictionary for cspell."
         }
     ],
-    // Dictionaries to always be used.
-    // Generally left empty
-    "dictionaries": [],
-    // Language Rules to apply to matching files.
-    // Files are matched on `languageId` and `local`
+    "patterns": [
+        {
+            "name": "java-statement-import",
+            "description": "Matches the import statement",
+            "pattern": "/^\\s*import\\s+[\\w.]+/gm"
+        },
+        {
+            "name": "java-member-function",
+            "description": "Ignore member functions etc, these are checked by the compiler.",
+            "pattern": "/\\.\\w+(?=\\()/g"
+        }
+    ],
     "languageSettings": [
         {
-            // VSCode languageId. i.e. typescript, java, go, cpp, javascript, markdown, latex
-            // * will match against any file type.
             "languageId": "java",
-            // Language local. i.e. en-US, de-AT, or ru. * will match all locals.
-            // Multiple locals can be specified like: "en, en-US" to match both English and English US.
             "locale": "*",
-            // By default the whole text of a file is included for spell checking
-            // Adding patterns to the "includeRegExpList" to only include matching patterns
             "includeRegExpList": [],
-            // To exclude patterns, add them to "ignoreRegExpList"
-            "ignoreRegExpList": [
-                // Ignore imports
-                "/^\\s*import\\s+\\w+/m",
-                // Ignore member functions etc, these are checked by the compiler.
-                "/\\.\\w+/"
-            ],
-            // regex patterns than can be used with ignoreRegExpList or includeRegExpList
-            // Example: "pattern": [{ "name": "mdash", "pattern": "&mdash;" }]
-            // This could be included in "ignoreRegExpList": ["mdash"]
+            "ignoreRegExpList": ["java-statement-import"],
             "patterns": [],
-            // List of dictionaries to enable by name in `dictionaryDefinitions`
             "dictionaries": ["java"],
-            // Dictionary definitions can also be supplied here. They are only used iff "languageId" and "locale" match.
             "dictionaryDefinitions": []
         }
     ]
