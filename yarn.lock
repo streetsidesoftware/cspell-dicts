@@ -2136,7 +2136,7 @@ commander@^6.2.1:
   resolved "https://registry.npmjs.org/commander/-/commander-6.2.1.tgz#0792eb682dfbc325999bb2b84fddddba110ac73c"
   integrity sha512-U7VdrJFnJgo4xjrHpTzu0yrHPGImdsmD95ZlgYSEajAn2JKzDhDTPG9kBTefmObL2w/ngeZnilk+OV9CG3d7UA==
 
-commander@^9.2.0:
+commander@^9.2.0, commander@^9.3.0:
   version "9.3.0"
   resolved "https://registry.npmjs.org/commander/-/commander-9.3.0.tgz#f619114a5a2d2054e0d9ff1b31d5ccf89255e26b"
   integrity sha512-hv95iU5uXPbK83mjrJKuZyFM/LBAoCV/XhVGkS5Je6tl7sxr6A0ITMw5WoRV46/UaJ46Nllm3Xt7IaJhXTIkzw==
@@ -4085,11 +4085,11 @@ hunspell-reader@^3.2.0:
     iconv-lite "^0.5.0"
 
 hunspell-reader@^6.0.0:
-  version "6.0.0"
-  resolved "https://registry.npmjs.org/hunspell-reader/-/hunspell-reader-6.0.0.tgz#c6873f196122b01f5e009b78dca43d8a7015fc98"
-  integrity sha512-jL2w6QBndlyGJnXuq2QAC/SmAWSUIxgjBVE6MioFIMC6v9uv0TaWz9BPwyvMmbHO2AQTJHRG83C3u8pEqiXqFA==
+  version "6.1.0"
+  resolved "https://registry.yarnpkg.com/hunspell-reader/-/hunspell-reader-6.1.0.tgz#0a62c4a6f8199c9144d2fa779cb30d4ae39d31c9"
+  integrity sha512-4eLQH3+LgYkUmoAn0uSy8Ol2QdI3QAB3A0xzoSYk9Bvqda7Jj9kvuDaJVotP5BTYML6UdPxwcGhrT9lEReL3CQ==
   dependencies:
-    commander "^9.2.0"
+    commander "^9.3.0"
     fs-extra "^10.1.0"
     gensequence "^3.1.1"
     iconv-lite "^0.6.3"
