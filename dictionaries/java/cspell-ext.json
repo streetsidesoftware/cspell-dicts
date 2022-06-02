@@ -19,7 +19,7 @@
         {
             "name": "java-member-function",
             "description": "Ignore member functions etc, these are checked by the compiler.",
-            "pattern": "/\\.\\w+(?=\\()/g"
+            "pattern": "/(\\.\\w+)+(?=\\()/g"
         }
     ],
     "languageSettings": [
