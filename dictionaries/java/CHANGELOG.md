@@ -3,6 +3,15 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+## [3.0.2](https://github.com/streetsidesoftware/cspell-dicts/compare/@cspell/dict-java@3.0.1...@cspell/dict-java@3.0.2) (2022-06-02)
+
+
+### Bug Fixes
+
+* adjust `java-member-function` pattern ([#1164](https://github.com/streetsidesoftware/cspell-dicts/issues/1164)) ([1b96e37](https://github.com/streetsidesoftware/cspell-dicts/commit/1b96e37fe88266fc42fa9b1e22b355e3012f51c1))
+
+
+
 ## [3.0.1](https://github.com/streetsidesoftware/cspell-dicts/compare/@cspell/dict-java@3.0.0...@cspell/dict-java@3.0.1) (2022-05-31)
 
 **Note:** Version bump only for package @cspell/dict-java
