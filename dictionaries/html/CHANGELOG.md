@@ -3,6 +3,15 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+## [3.0.2](https://github.com/streetsidesoftware/cspell-dicts/compare/@cspell/dict-html@3.0.1...@cspell/dict-html@3.0.2) (2022-06-14)
+
+
+### Bug Fixes
+
+* **html:** add preconnect ([#1168](https://github.com/streetsidesoftware/cspell-dicts/issues/1168)) ([77db234](https://github.com/streetsidesoftware/cspell-dicts/commit/77db2340d77736b0882582471913dd7c77098f7e))
+
+
+
 ## [3.0.1](https://github.com/streetsidesoftware/cspell-dicts/compare/@cspell/dict-html@3.0.0...@cspell/dict-html@3.0.1) (2022-03-12)
 
 **Note:** Version bump only for package @cspell/dict-html
