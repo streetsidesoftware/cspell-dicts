@@ -3,6 +3,14 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+## [2.0.1](https://github.com/streetsidesoftware/cspell-dicts/compare/@cspell/dict-rust@2.0.0...@cspell/dict-rust@2.0.1) (2022-06-15)
+
+**Note:** Version bump only for package @cspell/dict-rust
+
+
+
+
+
 # [2.0.0](https://github.com/streetsidesoftware/cspell-dicts/compare/@cspell/dict-rust@1.0.23...@cspell/dict-rust@2.0.0) (2022-02-09)
 
 
