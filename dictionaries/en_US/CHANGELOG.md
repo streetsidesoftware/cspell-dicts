@@ -3,6 +3,15 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+## [2.2.8](https://github.com/streetsidesoftware/cspell-dicts/compare/@cspell/dict-en_us@2.2.7...@cspell/dict-en_us@2.2.8) (2022-06-28)
+
+
+### Bug Fixes
+
+* Add socio-economic to en-US ([#1204](https://github.com/streetsidesoftware/cspell-dicts/issues/1204)) ([1d9d945](https://github.com/streetsidesoftware/cspell-dicts/commit/1d9d945b805dd65794a59146059e007dac596e29))
+
+
+
 ## [2.2.7](https://github.com/streetsidesoftware/cspell-dicts/compare/@cspell/dict-en_us@2.2.6...@cspell/dict-en_us@2.2.7) (2022-06-25)
 
 **Note:** Version bump only for package @cspell/dict-en_us
