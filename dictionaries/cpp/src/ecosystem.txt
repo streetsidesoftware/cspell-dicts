@@ -1,22 +1,42 @@
 isocpp
+cppcon
+cppref
+cppreference
+cppcoreguidelines
 
+# compilers
 gnu
 gcc
 clang
 llvm # also included in the dictionary "softwareTerms"
 msvc
 emscripten
+pybind
 
+# target platforms (OS)
 msys
 cygwin
 posix
 
+# build systems
 make
 ninja
 cmake
 
+# package/dependency managers
 conan
 vcpkg
 
 
+# working groups
+WG21
+LEWG
+
+
+# tools
+objdump
+natvis
+
+# graphics
 cuda
+vulkan
