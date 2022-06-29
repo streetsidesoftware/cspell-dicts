@@ -1,17 +1,20 @@
-# general
-errc
-
 
 # https://en.cppreference.com/w/cpp/header/version
+__cpp_aggregate_nsdmi
+__cpp_aggregate_paren_init
+__cpp_multidimensional_subscript
+__cpp_lib_nonmember_container_access
 
 
 # https://en.cppreference.com/w/cpp/header/limits
 denorm
+tinyness_before # "y" not a typo
 signaling # single "l" not a typo
-tinyness # "y" not a typo
+is_iec559
 
 
 # https://en.cppreference.com/w/cpp/header/new
+bad_alloc
 
 
 # https://en.cppreference.com/w/cpp/header/typeinfo
@@ -22,22 +25,24 @@ typeinfo
 
 
 # https://en.cppreference.com/w/cpp/header/exception
+exception_ptr
 
 
 # https://en.cppreference.com/w/cpp/header/initializer_list
 
 
 # https://en.cppreference.com/w/cpp/header/compare
-eq
-neq
-lt
-lteq
-gt
-gteq
+is_eq
+is_neq
+is_lt
+is_lteq
+is_gt
+is_gteq
 
 
 # https://en.cppreference.com/w/cpp/header/coroutine
-noop
+coroutine
+noop_coroutine
 
 
 
@@ -51,17 +56,27 @@ noop
 
 
 # https://en.cppreference.com/w/cpp/header/system_error
+errc
 
 
 
 
 # https://en.cppreference.com/w/cpp/header/utility
+rel_ops
+cmp
+declval
 
 
 # https://en.cppreference.com/w/cpp/header/memory
-inout
+unique_ptr
+shared_ptr
+weak_ptr
+auto_ptr # deprecated in c++11, removed in c++17
+out_ptr
+inout_ptr
 addressof
-undeclare
+undeclare_reachable # removed in c++23
+undeclare_no_pointers # removed in c++23
 
 
 # https://en.cppreference.com/w/cpp/header/memory_resource
@@ -93,6 +108,7 @@ monostate
 
 # https://en.cppreference.com/w/cpp/header/type_traits
 nothrow
+remove_cvref
 
 
 # https://en.cppreference.com/w/cpp/header/ratio
@@ -280,8 +296,14 @@ noskipws
 nouppercase
 unitbuf
 nounitbuf
+dec
+hex
+oct
 hexfloat
 defaultfloat
+
+# https://en.cppreference.com/w/cpp/header/iosfwd
+iosfwd
 
 
 # https://en.cppreference.com/w/cpp/header/iomanip
@@ -355,6 +377,11 @@ wcerr
 clog
 wclog
 
+# https://en.cppreference.com/w/cpp/header/ostream
+endl
+ends
+noemit_on_flush
+
 # https://en.cppreference.com/w/cpp/header/iostream
 # https://en.cppreference.com/w/cpp/io/basic_iostream
 unget
@@ -392,6 +419,9 @@ badbit
 failbit
 eofbit
 seekdir
+beg
+#end
+cur
 
 
 # https://en.cppreference.com/w/cpp/header/sstream
@@ -454,6 +484,7 @@ icase
 nosubs
 multiline
 ECMAScript
+awk
 grep
 egrep
 # https://en.cppreference.com/w/cpp/regex/sub_match
@@ -482,6 +513,7 @@ isctype
 
 
 # https://en.cppreference.com/w/cpp/header/filesystem
+nofollow # perm_options::
 
 
 
