@@ -1,12 +1,6 @@
 {
-    "files": [
-        "**/*.{md,txt}"
-    ],
-    "dictionaries": [
-        "haskell"
-    ],
-    "import": [
-        "./cspell-ext.json"
-    ],
+    "files": ["**/*.{md,txt,hs}"],
+    "dictionaries": ["haskell"],
+    "import": ["./cspell-ext.json"],
     "ignoreWords": []
 }
