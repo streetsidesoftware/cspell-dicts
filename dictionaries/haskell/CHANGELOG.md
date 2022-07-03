@@ -3,6 +3,15 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+## [2.0.1](https://github.com/streetsidesoftware/cspell-dicts/compare/@cspell/dict-haskell@2.0.0...@cspell/dict-haskell@2.0.1) (2022-07-03)
+
+
+### Bug Fixes
+
+* Update `'` parsing in Haskell ([#1229](https://github.com/streetsidesoftware/cspell-dicts/issues/1229)) ([99f6dad](https://github.com/streetsidesoftware/cspell-dicts/commit/99f6dadd0393a412f112d43b99a4162055b5f65c)), closes [/github.com/streetsidesoftware/vscode-spell-checker/issues/707#issuecomment-1172980816](https://github.com/streetsidesoftware//github.com/streetsidesoftware/vscode-spell-checker/issues/707/issues/issuecomment-1172980816)
+
+
+
 # [2.0.0](https://github.com/streetsidesoftware/cspell-dicts/compare/@cspell/dict-haskell@1.0.13...@cspell/dict-haskell@2.0.0) (2022-02-09)
 
 

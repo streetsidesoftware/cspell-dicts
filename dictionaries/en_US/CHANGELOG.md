@@ -3,6 +3,15 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+## [2.2.9](https://github.com/streetsidesoftware/cspell-dicts/compare/@cspell/dict-en_us@2.2.8...@cspell/dict-en_us@2.2.9) (2022-07-03)
+
+
+### Bug Fixes
+
+* Add a list of English contractions and Possessives. ([#1228](https://github.com/streetsidesoftware/cspell-dicts/issues/1228)) ([bafe9f9](https://github.com/streetsidesoftware/cspell-dicts/commit/bafe9f9cd690f06cb56a858c4682095def28fe2f))
+
+
+
 ## [2.2.8](https://github.com/streetsidesoftware/cspell-dicts/compare/@cspell/dict-en_us@2.2.7...@cspell/dict-en_us@2.2.8) (2022-06-28)
 
 
