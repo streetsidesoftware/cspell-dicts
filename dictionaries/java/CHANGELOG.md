@@ -3,6 +3,14 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+## [3.0.7](https://github.com/streetsidesoftware/cspell-dicts/compare/@cspell/dict-java@3.0.6...@cspell/dict-java@3.0.7) (2022-07-05)
+
+**Note:** Version bump only for package @cspell/dict-java
+
+
+
+
+
 ## [3.0.6](https://github.com/streetsidesoftware/cspell-dicts/compare/@cspell/dict-java@3.0.5...@cspell/dict-java@3.0.6) (2022-07-03)
 
 **Note:** Version bump only for package @cspell/dict-java

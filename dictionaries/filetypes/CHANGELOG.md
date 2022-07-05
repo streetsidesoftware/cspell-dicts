@@ -3,6 +3,15 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+## [2.1.0](https://github.com/streetsidesoftware/cspell-dicts/compare/@cspell/dict-filetypes@2.0.2...@cspell/dict-filetypes@2.1.0) (2022-07-05)
+
+
+### Features
+
+* add heif types ([#1233](https://github.com/streetsidesoftware/cspell-dicts/issues/1233)) ([10462e3](https://github.com/streetsidesoftware/cspell-dicts/commit/10462e313d34da294020671213c4307e68bc2eb4))
+
+
+
 ## [2.0.2](https://github.com/streetsidesoftware/cspell-dicts/compare/@cspell/dict-filetypes@2.0.1...@cspell/dict-filetypes@2.0.2) (2022-06-15)
 
 **Note:** Version bump only for package @cspell/dict-filetypes

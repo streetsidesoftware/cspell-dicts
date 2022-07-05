@@ -3,6 +3,15 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+## [2.2.10](https://github.com/streetsidesoftware/cspell-dicts/compare/@cspell/dict-en_us@2.2.9...@cspell/dict-en_us@2.2.10) (2022-07-05)
+
+
+### Bug Fixes
+
+* add `negatable` to en-US ([#1232](https://github.com/streetsidesoftware/cspell-dicts/issues/1232)) ([99048ff](https://github.com/streetsidesoftware/cspell-dicts/commit/99048ff3c24fb025e901dd02e5f6037c93db5e30))
+
+
+
 ## [2.2.9](https://github.com/streetsidesoftware/cspell-dicts/compare/@cspell/dict-en_us@2.2.8...@cspell/dict-en_us@2.2.9) (2022-07-03)
 
 
