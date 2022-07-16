@@ -1,1 +1,1 @@
-{  version: (.version), dir:  (input_filename | sub("/package.json"; "") ) } | { (.dir): (.version) }
+{  version: (.version), dir:  (input_filename | sub("/package.json"; "") | sub("[.][/]"; "") ) } | { (.dir): (.version) }
