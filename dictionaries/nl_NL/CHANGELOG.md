@@ -3,6 +3,24 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+## 1.0.0 (2022-07-16)
+
+
+### Features
+
+* Make Dutch case sensitive ([#746](https://github.com/streetsidesoftware/cspell-dicts/issues/746)) ([2abc714](https://github.com/streetsidesoftware/cspell-dicts/commit/2abc7143c9e838cc43182f3cde3d167483117417))
+
+
+### Bug Fixes
+
+* Dutch: Improve suggestions ([#887](https://github.com/streetsidesoftware/cspell-dicts/issues/887)) ([b8d9305](https://github.com/streetsidesoftware/cspell-dicts/commit/b8d930569e285856b7d0e7fab3116df9029c911b))
+* ensure NL dictionary is marked as `readonly` ([#997](https://github.com/streetsidesoftware/cspell-dicts/issues/997)) ([0a3a7cb](https://github.com/streetsidesoftware/cspell-dicts/commit/0a3a7cb3f3085d7fe4f16d21bc926cd5f81c0831))
+* Force Publish `@cspell/dict-nl-nl` ([db4695a](https://github.com/streetsidesoftware/cspell-dicts/commit/db4695a9ff965200c49e897c09308571d0a36d6c))
+* Improve Dutch Suggestions ([#885](https://github.com/streetsidesoftware/cspell-dicts/issues/885)) ([2d6a816](https://github.com/streetsidesoftware/cspell-dicts/commit/2d6a816e1ea04a2ca7fec55ba61f7ca28212d3cc))
+* Include `cspell.config.yaml` in the package. ([#890](https://github.com/streetsidesoftware/cspell-dicts/issues/890)) ([23d20a7](https://github.com/streetsidesoftware/cspell-dicts/commit/23d20a766c7de1d2a28129ce65e2cfe77febd317))
+* Make sure `A3-` and `-A4` compounds are allowed. ([#782](https://github.com/streetsidesoftware/cspell-dicts/issues/782)) ([2571cb0](https://github.com/streetsidesoftware/cspell-dicts/commit/2571cb0d3667d7ee3605006b00e14005f92acd4c))
+* Update list of dictionaries ([#998](https://github.com/streetsidesoftware/cspell-dicts/issues/998)) ([5d06b86](https://github.com/streetsidesoftware/cspell-dicts/commit/5d06b869783be66701e2fc22de59bfa4715d0216))
+
 ## [2.2.5](https://github.com/streetsidesoftware/cspell-dicts/compare/@cspell/dict-nl-nl@2.2.4...@cspell/dict-nl-nl@2.2.5) (2022-04-28)
 
 **Note:** Version bump only for package @cspell/dict-nl-nl

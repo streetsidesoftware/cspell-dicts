@@ -3,6 +3,24 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+## 1.0.0 (2022-07-16)
+
+
+### ⚠ BREAKING CHANGES
+
+* Remove `allowCompoundWords: true` (#1039)
+* Drop Support for CSpell 4.
+
+### Features
+
+* Drop support for CSpell 4. ([#907](https://github.com/streetsidesoftware/cspell-dicts/issues/907)) ([ca078c6](https://github.com/streetsidesoftware/cspell-dicts/commit/ca078c6a2e188cc3cf6276db1ba7e007f0f06f27))
+* Remove `allowCompoundWords: true` ([#1039](https://github.com/streetsidesoftware/cspell-dicts/issues/1039)) ([d0081ac](https://github.com/streetsidesoftware/cspell-dicts/commit/d0081aca276c3dac85038daacb812cb7226b1daa))
+
+
+### Bug Fixes
+
+* Force major version ([#1047](https://github.com/streetsidesoftware/cspell-dicts/issues/1047)) ([2d7fecf](https://github.com/streetsidesoftware/cspell-dicts/commit/2d7fecf79ceecd352ef102a254a1cdd0626a910a))
+
 ## [3.0.1](https://github.com/streetsidesoftware/cspell-dicts/compare/@cspell/dict-golang@2.0.0...@cspell/dict-golang@3.0.1) (2022-04-28)
 
 

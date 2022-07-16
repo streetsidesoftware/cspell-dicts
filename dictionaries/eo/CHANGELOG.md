@@ -22,6 +22,17 @@ See [Conventional Commits](https://conventionalcommits.org) for commit guideline
 
 
 
+## 1.0.0 (2022-07-16)
+
+
+### ⚠ BREAKING CHANGES
+
+* Drop Support for CSpell 4.
+
+### Features
+
+* Drop support for CSpell 4. ([#907](https://github.com/streetsidesoftware/cspell-dicts/issues/907)) ([ca078c6](https://github.com/streetsidesoftware/cspell-dicts/commit/ca078c6a2e188cc3cf6276db1ba7e007f0f06f27))
+
 ## [1.0.9](https://github.com/streetsidesoftware/cspell-dicts/compare/@cspell/dict-eo@1.0.8...@cspell/dict-eo@1.0.9) (2021-03-16)
 
 **Note:** Version bump only for package @cspell/dict-eo

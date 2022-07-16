@@ -3,6 +3,26 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+## 1.0.0 (2022-07-16)
+
+
+### ⚠ BREAKING CHANGES
+
+* Drop Support for CSpell 4.
+
+### Features
+
+* Drop support for CSpell 4. ([#907](https://github.com/streetsidesoftware/cspell-dicts/issues/907)) ([ca078c6](https://github.com/streetsidesoftware/cspell-dicts/commit/ca078c6a2e188cc3cf6276db1ba7e007f0f06f27))
+* **HTML:** add all HTML entities ([#818](https://github.com/streetsidesoftware/cspell-dicts/issues/818)) ([f00e4d3](https://github.com/streetsidesoftware/cspell-dicts/commit/f00e4d386879efd0a5d8a61c50b5f44357360687))
+
+
+### Bug Fixes
+
+* add `aria-*` terms to the list. ([#822](https://github.com/streetsidesoftware/cspell-dicts/issues/822)) ([a4b0d6b](https://github.com/streetsidesoftware/cspell-dicts/commit/a4b0d6bae75dc347c186fde6aea0bc9d0458a424))
+* **html:** add preconnect ([#1168](https://github.com/streetsidesoftware/cspell-dicts/issues/1168)) ([77db234](https://github.com/streetsidesoftware/cspell-dicts/commit/77db2340d77736b0882582471913dd7c77098f7e))
+* Make HTML dictionary case sensitive ([#819](https://github.com/streetsidesoftware/cspell-dicts/issues/819)) ([458e031](https://github.com/streetsidesoftware/cspell-dicts/commit/458e031d507b9f2bacd3381689d7eab20be07d83)), closes [#705](https://github.com/streetsidesoftware/cspell-dicts/issues/705)
+* remove duplicates in HTML dictionary ([#824](https://github.com/streetsidesoftware/cspell-dicts/issues/824)) ([46748d8](https://github.com/streetsidesoftware/cspell-dicts/commit/46748d84f93cacb11cdad5b01bc4f18f8c0098bd))
+
 ## [3.0.2](https://github.com/streetsidesoftware/cspell-dicts/compare/@cspell/dict-html@3.0.1...@cspell/dict-html@3.0.2) (2022-06-14)
 
 

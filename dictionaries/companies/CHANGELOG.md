@@ -3,6 +3,13 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+## 1.0.0 (2022-07-16)
+
+
+### Bug Fixes
+
+* Add some common node words + Airbnb ([#1138](https://github.com/streetsidesoftware/cspell-dicts/issues/1138)) ([0d0ccf8](https://github.com/streetsidesoftware/cspell-dicts/commit/0d0ccf8823f21e90a6fbd42631510bafd3dc3e9c))
+
 ## [2.0.7](https://github.com/streetsidesoftware/cspell-dicts/compare/@cspell/dict-companies@2.0.6...@cspell/dict-companies@2.0.7) (2022-07-07)
 
 **Note:** Version bump only for package @cspell/dict-companies

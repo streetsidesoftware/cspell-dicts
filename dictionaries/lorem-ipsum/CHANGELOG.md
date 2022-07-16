@@ -22,6 +22,17 @@ See [Conventional Commits](https://conventionalcommits.org) for commit guideline
 
 
 
+## 1.0.0 (2022-07-16)
+
+
+### ⚠ BREAKING CHANGES
+
+* Drop Support for CSpell 4.
+
+### Features
+
+* Drop support for CSpell 4. ([#907](https://github.com/streetsidesoftware/cspell-dicts/issues/907)) ([ca078c6](https://github.com/streetsidesoftware/cspell-dicts/commit/ca078c6a2e188cc3cf6276db1ba7e007f0f06f27))
+
 ## [1.0.22](https://github.com/streetsidesoftware/cspell-dicts/compare/@cspell/dict-lorem-ipsum@1.0.21...@cspell/dict-lorem-ipsum@1.0.22) (2020-12-24)
 
 

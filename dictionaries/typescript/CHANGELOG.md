@@ -22,6 +22,22 @@ See [Conventional Commits](https://conventionalcommits.org) for commit guideline
 
 
 
+## 1.0.0 (2022-07-16)
+
+
+### ⚠ BREAKING CHANGES
+
+* Drop Support for CSpell 4.
+
+### Features
+
+* Drop support for CSpell 4. ([#907](https://github.com/streetsidesoftware/cspell-dicts/issues/907)) ([ca078c6](https://github.com/streetsidesoftware/cspell-dicts/commit/ca078c6a2e188cc3cf6276db1ba7e007f0f06f27))
+
+
+### Bug Fixes
+
+* Ignore RegExp flags in TypeScript/JavaScript ([#872](https://github.com/streetsidesoftware/cspell-dicts/issues/872)) ([3de910f](https://github.com/streetsidesoftware/cspell-dicts/commit/3de910fc51c7e809283aa32fd9a90a3ab6842bfb))
+
 ## [1.0.20](https://github.com/streetsidesoftware/cspell-dicts/compare/@cspell/dict-typescript@1.0.19...@cspell/dict-typescript@1.0.20) (2022-02-01)
 
 

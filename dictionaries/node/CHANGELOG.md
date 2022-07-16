@@ -3,6 +3,24 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+## 1.0.0 (2022-07-16)
+
+
+### ⚠ BREAKING CHANGES
+
+* Update the npm and node dictionaries (#1127)
+* Drop Support for CSpell 4.
+
+### Features
+
+* Drop support for CSpell 4. ([#907](https://github.com/streetsidesoftware/cspell-dicts/issues/907)) ([ca078c6](https://github.com/streetsidesoftware/cspell-dicts/commit/ca078c6a2e188cc3cf6276db1ba7e007f0f06f27))
+* Update the npm and node dictionaries ([#1127](https://github.com/streetsidesoftware/cspell-dicts/issues/1127)) ([e0cfea3](https://github.com/streetsidesoftware/cspell-dicts/commit/e0cfea3b57cefd89ba115893839816a93e1f5658))
+
+
+### Bug Fixes
+
+* Add some common node words + Airbnb ([#1138](https://github.com/streetsidesoftware/cspell-dicts/issues/1138)) ([0d0ccf8](https://github.com/streetsidesoftware/cspell-dicts/commit/0d0ccf8823f21e90a6fbd42631510bafd3dc3e9c))
+
 ### [3.0.1](https://github.com/streetsidesoftware/cspell-dicts/compare/@cspell/dict-node@3.0.0...@cspell/dict-node@3.0.1) (2022-05-28)
 
 

@@ -3,6 +3,25 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+## 1.0.0 (2022-07-16)
+
+
+### Features
+
+* Remove or correct en-GB words in en-US dictionary ([#981](https://github.com/streetsidesoftware/cspell-dicts/issues/981)) ([36b7354](https://github.com/streetsidesoftware/cspell-dicts/commit/36b7354465cc514d52c4c6705b29f17d07e02e77))
+
+
+### Bug Fixes
+
+* add `negatable` to en-US ([#1232](https://github.com/streetsidesoftware/cspell-dicts/issues/1232)) ([99048ff](https://github.com/streetsidesoftware/cspell-dicts/commit/99048ff3c24fb025e901dd02e5f6037c93db5e30))
+* Add a list of English contractions and Possessives. ([#1228](https://github.com/streetsidesoftware/cspell-dicts/issues/1228)) ([bafe9f9](https://github.com/streetsidesoftware/cspell-dicts/commit/bafe9f9cd690f06cb56a858c4682095def28fe2f))
+* add back Alpha Centauri ([#1078](https://github.com/streetsidesoftware/cspell-dicts/issues/1078)) ([df68abb](https://github.com/streetsidesoftware/cspell-dicts/commit/df68abb0a81f36b9adb402c93fba57c70c53b641))
+* Add Kyiv ([#1045](https://github.com/streetsidesoftware/cspell-dicts/issues/1045)) ([050d896](https://github.com/streetsidesoftware/cspell-dicts/commit/050d896c271f9891c4bee02e7737caa044e7b1c2)), closes [#1043](https://github.com/streetsidesoftware/cspell-dicts/issues/1043)
+* Add socio-economic to en-US ([#1204](https://github.com/streetsidesoftware/cspell-dicts/issues/1204)) ([1d9d945](https://github.com/streetsidesoftware/cspell-dicts/commit/1d9d945b805dd65794a59146059e007dac596e29))
+* Change `en-us` to `en_us` ([#1058](https://github.com/streetsidesoftware/cspell-dicts/issues/1058)) ([709001f](https://github.com/streetsidesoftware/cspell-dicts/commit/709001fb59fb95f467d3f20ad2db3e456721afdf))
+* Do not add flag words to the English dictionary yet. ([#737](https://github.com/streetsidesoftware/cspell-dicts/issues/737)) ([0340f5f](https://github.com/streetsidesoftware/cspell-dicts/commit/0340f5f5ab2332c1490a52569d3ffdd7b96cee58))
+* Fix typo ([#908](https://github.com/streetsidesoftware/cspell-dicts/issues/908)) ([800bec8](https://github.com/streetsidesoftware/cspell-dicts/commit/800bec814558a84b3294d2fc2b37ec170686ac6a))
+
 ## [2.2.10](https://github.com/streetsidesoftware/cspell-dicts/compare/@cspell/dict-en_us@2.2.9...@cspell/dict-en_us@2.2.10) (2022-07-05)
 
 

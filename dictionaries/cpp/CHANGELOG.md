@@ -3,6 +3,31 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+## 1.0.0 (2022-07-16)
+
+
+### ⚠ BREAKING CHANGES
+
+* Remove `allowCompoundWords: true` (#1039)
+* Drop Support for CSpell 4.
+
+### Features
+
+* add cpp dictionary files ([#1101](https://github.com/streetsidesoftware/cspell-dicts/issues/1101)) ([78abe55](https://github.com/streetsidesoftware/cspell-dicts/commit/78abe55b4b443b1de166e57a4f446b24a4e2f9cc))
+* add heif types ([#1233](https://github.com/streetsidesoftware/cspell-dicts/issues/1233)) ([10462e3](https://github.com/streetsidesoftware/cspell-dicts/commit/10462e313d34da294020671213c4307e68bc2eb4))
+* create cpp-refined dictionary ([#1102](https://github.com/streetsidesoftware/cspell-dicts/issues/1102)) ([b72c74b](https://github.com/streetsidesoftware/cspell-dicts/commit/b72c74b8bce2be7143a263f8135efe72042ecda6))
+* Drop support for CSpell 4. ([#907](https://github.com/streetsidesoftware/cspell-dicts/issues/907)) ([ca078c6](https://github.com/streetsidesoftware/cspell-dicts/commit/ca078c6a2e188cc3cf6276db1ba7e007f0f06f27))
+* Remove `allowCompoundWords: true` ([#1039](https://github.com/streetsidesoftware/cspell-dicts/issues/1039)) ([d0081ac](https://github.com/streetsidesoftware/cspell-dicts/commit/d0081aca276c3dac85038daacb812cb7226b1daa))
+
+
+### Bug Fixes
+
+* cpp typos ([#1006](https://github.com/streetsidesoftware/cspell-dicts/issues/1006)) ([864f33c](https://github.com/streetsidesoftware/cspell-dicts/commit/864f33c87fab5701af195ec1cddd09ab2807f938))
+* Force major version ([#1047](https://github.com/streetsidesoftware/cspell-dicts/issues/1047)) ([2d7fecf](https://github.com/streetsidesoftware/cspell-dicts/commit/2d7fecf79ceecd352ef102a254a1cdd0626a910a))
+* more cpp typos ([#1010](https://github.com/streetsidesoftware/cspell-dicts/issues/1010)) ([1e35539](https://github.com/streetsidesoftware/cspell-dicts/commit/1e355397cee4611438193997cd105067bb021cfd))
+* remove more cpp typos ([#1016](https://github.com/streetsidesoftware/cspell-dicts/issues/1016)) ([33c2aee](https://github.com/streetsidesoftware/cspell-dicts/commit/33c2aee85854a7dd0248353f80deb6fc8a6307f5))
+* Update cpp.md ([#1237](https://github.com/streetsidesoftware/cspell-dicts/issues/1237)) ([b1f80c0](https://github.com/streetsidesoftware/cspell-dicts/commit/b1f80c0e3600f89e08075ee2166e6fd2fdce037b))
+
 ## [3.2.0](https://github.com/streetsidesoftware/cspell-dicts/compare/@cspell/dict-cpp@3.1.1...@cspell/dict-cpp@3.2.0) (2022-07-05)
 
 

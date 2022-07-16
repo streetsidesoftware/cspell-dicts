@@ -3,6 +3,22 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+## 1.0.0 (2022-07-16)
+
+
+### ⚠ BREAKING CHANGES
+
+* Drop Support for CSpell 4.
+
+### Features
+
+* Drop support for CSpell 4. ([#907](https://github.com/streetsidesoftware/cspell-dicts/issues/907)) ([ca078c6](https://github.com/streetsidesoftware/cspell-dicts/commit/ca078c6a2e188cc3cf6276db1ba7e007f0f06f27))
+
+
+### Bug Fixes
+
+* fix package.json homepage ([#1119](https://github.com/streetsidesoftware/cspell-dicts/issues/1119)) ([8ab8eb3](https://github.com/streetsidesoftware/cspell-dicts/commit/8ab8eb3733b7b9c783b5d93fdeff4d4ca739e8f4))
+
 ## [2.0.1](https://github.com/streetsidesoftware/cspell-dicts/compare/@cspell/dict-mnemonics@2.0.0...@cspell/dict-mnemonics@2.0.1) (2022-05-24)
 
 

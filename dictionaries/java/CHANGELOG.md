@@ -3,6 +3,24 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+## 1.0.0 (2022-07-16)
+
+
+### ⚠ BREAKING CHANGES
+
+* Do not split Java words when adding to dictionary (#1155)
+* Drop Support for CSpell 4.
+
+### Features
+
+* Do not split Java words when adding to dictionary ([#1155](https://github.com/streetsidesoftware/cspell-dicts/issues/1155)) ([42bc2db](https://github.com/streetsidesoftware/cspell-dicts/commit/42bc2db0a6b9ea0466df90ed902f4d1697ce40db))
+* Drop support for CSpell 4. ([#907](https://github.com/streetsidesoftware/cspell-dicts/issues/907)) ([ca078c6](https://github.com/streetsidesoftware/cspell-dicts/commit/ca078c6a2e188cc3cf6276db1ba7e007f0f06f27))
+
+
+### Bug Fixes
+
+* adjust `java-member-function` pattern ([#1164](https://github.com/streetsidesoftware/cspell-dicts/issues/1164)) ([1b96e37](https://github.com/streetsidesoftware/cspell-dicts/commit/1b96e37fe88266fc42fa9b1e22b355e3012f51c1))
+
 ## [3.0.7](https://github.com/streetsidesoftware/cspell-dicts/compare/@cspell/dict-java@3.0.6...@cspell/dict-java@3.0.7) (2022-07-05)
 
 **Note:** Version bump only for package @cspell/dict-java

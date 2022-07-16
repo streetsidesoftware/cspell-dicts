@@ -3,6 +3,29 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+## 1.0.0 (2022-07-16)
+
+
+### ⚠ BREAKING CHANGES
+
+* Remove `allowCompoundWords: true` (#1039)
+
+### Features
+
+* Remove `allowCompoundWords: true` ([#1039](https://github.com/streetsidesoftware/cspell-dicts/issues/1039)) ([d0081ac](https://github.com/streetsidesoftware/cspell-dicts/commit/d0081aca276c3dac85038daacb812cb7226b1daa))
+
+
+### Bug Fixes
+
+* Add common python compounds ([#1064](https://github.com/streetsidesoftware/cspell-dicts/issues/1064)) ([6456f56](https://github.com/streetsidesoftware/cspell-dicts/commit/6456f5683309c0ad17a952dcaef7ffefda49d8f8))
+* Add public assignments ([#1108](https://github.com/streetsidesoftware/cspell-dicts/issues/1108)) ([a8ab60a](https://github.com/streetsidesoftware/cspell-dicts/commit/a8ab60ad172a833c616ffe9b469965724c267e0c))
+* Add Python Lib terms from `__init__.py` ([#1107](https://github.com/streetsidesoftware/cspell-dicts/issues/1107)) ([44162fe](https://github.com/streetsidesoftware/cspell-dicts/commit/44162feb714046f9a301be8397720d60efb4b0d6))
+* Force major version ([#1047](https://github.com/streetsidesoftware/cspell-dicts/issues/1047)) ([2d7fecf](https://github.com/streetsidesoftware/cspell-dicts/commit/2d7fecf79ceecd352ef102a254a1cdd0626a910a))
+* Import Standard Python Library ([#1042](https://github.com/streetsidesoftware/cspell-dicts/issues/1042)) ([339989b](https://github.com/streetsidesoftware/cspell-dicts/commit/339989b25487d6a930541b95e9507795e94b2955))
+* limit extra words to common terms ([#1067](https://github.com/streetsidesoftware/cspell-dicts/issues/1067)) ([91afe6a](https://github.com/streetsidesoftware/cspell-dicts/commit/91afe6a2ef9c55b8b5fd7eeaea130a76f5c5098c))
+* Python-lib - add `dataclasses` and remove unit tests ([#1109](https://github.com/streetsidesoftware/cspell-dicts/issues/1109)) ([4cdf652](https://github.com/streetsidesoftware/cspell-dicts/commit/4cdf6526e45e84ff7f97ad28388ce65e1856972b))
+* **python:** Add a few words ([#1130](https://github.com/streetsidesoftware/cspell-dicts/issues/1130)) ([8cb4a02](https://github.com/streetsidesoftware/cspell-dicts/commit/8cb4a0262765065fa98fe6ef177fe9e8b7a8b557))
+
 ### [3.0.6](https://github.com/streetsidesoftware/cspell-dicts/compare/@cspell/dict-python@3.0.5...@cspell/dict-python@3.0.6) (2022-05-26)
 
 

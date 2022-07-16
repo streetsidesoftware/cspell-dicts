@@ -3,6 +3,22 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+## 1.0.0 (2022-07-16)
+
+
+### ⚠ BREAKING CHANGES
+
+* Drop Support for CSpell 4.
+
+### Features
+
+* Drop support for CSpell 4. ([#907](https://github.com/streetsidesoftware/cspell-dicts/issues/907)) ([ca078c6](https://github.com/streetsidesoftware/cspell-dicts/commit/ca078c6a2e188cc3cf6276db1ba7e007f0f06f27))
+
+
+### Bug Fixes
+
+* Update `'` parsing in Haskell ([#1229](https://github.com/streetsidesoftware/cspell-dicts/issues/1229)) ([99f6dad](https://github.com/streetsidesoftware/cspell-dicts/commit/99f6dadd0393a412f112d43b99a4162055b5f65c))
+
 ## [2.0.1](https://github.com/streetsidesoftware/cspell-dicts/compare/@cspell/dict-haskell@2.0.0...@cspell/dict-haskell@2.0.1) (2022-07-03)
 
 

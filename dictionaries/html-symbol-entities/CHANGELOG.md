@@ -43,6 +43,24 @@ Co-authored-by: Nick Schonning <nschonni@gmail.com>
 
 
 
+## 1.0.0 (2022-07-16)
+
+
+### ⚠ BREAKING CHANGES
+
+* Move to case sensitive dictionary
+* Drop Support for CSpell 4.
+
+### Features
+
+* Drop support for CSpell 4. ([#907](https://github.com/streetsidesoftware/cspell-dicts/issues/907)) ([ca078c6](https://github.com/streetsidesoftware/cspell-dicts/commit/ca078c6a2e188cc3cf6276db1ba7e007f0f06f27))
+* sync HTML entities ([#1034](https://github.com/streetsidesoftware/cspell-dicts/issues/1034)) ([132172c](https://github.com/streetsidesoftware/cspell-dicts/commit/132172caa5c0b3a0ae5c70f6beae5941735b443c))
+
+
+### Bug Fixes
+
+* Force major version ([#1047](https://github.com/streetsidesoftware/cspell-dicts/issues/1047)) ([2d7fecf](https://github.com/streetsidesoftware/cspell-dicts/commit/2d7fecf79ceecd352ef102a254a1cdd0626a910a))
+
 ## [1.0.23](https://github.com/streetsidesoftware/cspell-dicts/compare/@cspell/dict-html-symbol-entities@1.0.22...@cspell/dict-html-symbol-entities@1.0.23) (2020-12-24)
 
 

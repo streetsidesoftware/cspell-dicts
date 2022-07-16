@@ -3,6 +3,22 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+## 1.0.0 (2022-07-16)
+
+
+### Features
+
+* Add `networking-terms` dictionary ([#920](https://github.com/streetsidesoftware/cspell-dicts/issues/920)) ([8f57fc8](https://github.com/streetsidesoftware/cspell-dicts/commit/8f57fc8256c2ce2a47bd07a4e7b6fb8b7de3fe73))
+
+
+### Bug Fixes
+
+* Add "containername" to software-terms dictionary ([#1207](https://github.com/streetsidesoftware/cspell-dicts/issues/1207)) ([6fc9041](https://github.com/streetsidesoftware/cspell-dicts/commit/6fc90417f6c1a7aa8e4b6a0a2a1426b00f306253))
+* Add `Gitpod` to Software Terms ([#904](https://github.com/streetsidesoftware/cspell-dicts/issues/904)) ([5aacfa2](https://github.com/streetsidesoftware/cspell-dicts/commit/5aacfa2e0d1e193492701200c02f78919cacbcfd))
+* Add cspell cache ([#889](https://github.com/streetsidesoftware/cspell-dicts/issues/889)) ([f18a7a8](https://github.com/streetsidesoftware/cspell-dicts/commit/f18a7a83cf626e8ef191f649e291858c7decb44f))
+* Add multithreading terms ([#933](https://github.com/streetsidesoftware/cspell-dicts/issues/933)) ([5926e84](https://github.com/streetsidesoftware/cspell-dicts/commit/5926e8414cb286f111f46f8a5f8f3ad7c7dc2452))
+* Add the parts of the alphabet ([#833](https://github.com/streetsidesoftware/cspell-dicts/issues/833)) ([a1ae3be](https://github.com/streetsidesoftware/cspell-dicts/commit/a1ae3be4e4aae7b7d48320589ce0bf4165b0fbda))
+
 ## [2.1.11](https://github.com/streetsidesoftware/cspell-dicts/compare/@cspell/dict-software-terms@2.1.10...@cspell/dict-software-terms@2.1.11) (2022-07-07)
 
 **Note:** Version bump only for package @cspell/dict-software-terms

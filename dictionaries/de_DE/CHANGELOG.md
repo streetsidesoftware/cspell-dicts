@@ -14,6 +14,13 @@ See [Conventional Commits](https://conventionalcommits.org) for commit guideline
 
 
 
+## 1.0.0 (2022-07-16)
+
+
+### Features
+
+* Make German case and accent sensitive by default. ([#748](https://github.com/streetsidesoftware/cspell-dicts/issues/748)) ([afea23d](https://github.com/streetsidesoftware/cspell-dicts/commit/afea23d9c312cb818e0a50c00fe1d0b282be9b06))
+
 ## [2.0.2](https://github.com/streetsidesoftware/cspell-dicts/compare/@cspell/dict-de-de@2.0.1...@cspell/dict-de-de@2.0.2) (2021-09-16)
 
 

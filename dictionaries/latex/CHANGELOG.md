@@ -3,6 +3,24 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+## 1.0.0 (2022-07-16)
+
+
+### ⚠ BREAKING CHANGES
+
+* Drop Support for CSpell 4.
+
+### Features
+
+* Drop support for CSpell 4. ([#907](https://github.com/streetsidesoftware/cspell-dicts/issues/907)) ([ca078c6](https://github.com/streetsidesoftware/cspell-dicts/commit/ca078c6a2e188cc3cf6276db1ba7e007f0f06f27))
+
+
+### Bug Fixes
+
+* [#1097](https://github.com/streetsidesoftware/cspell-dicts/issues/1097) ([#1098](https://github.com/streetsidesoftware/cspell-dicts/issues/1098)) ([f3ff05e](https://github.com/streetsidesoftware/cspell-dicts/commit/f3ff05eae602af9ceb0be9b6047d2381314acfa2))
+* Fix false positive LaTeX Math matching ([#1085](https://github.com/streetsidesoftware/cspell-dicts/issues/1085)) ([26026c4](https://github.com/streetsidesoftware/cspell-dicts/commit/26026c4ef958b043d8f9188787a857d1e2426579)), closes [#1083](https://github.com/streetsidesoftware/cspell-dicts/issues/1083)
+* LaTeX - fix double escaped `$`. ([#1088](https://github.com/streetsidesoftware/cspell-dicts/issues/1088)) ([841f9da](https://github.com/streetsidesoftware/cspell-dicts/commit/841f9da7881a94b67ab995d222686c6283252def))
+
 ## [2.0.9](https://github.com/streetsidesoftware/cspell-dicts/compare/@cspell/dict-latex@2.0.8...@cspell/dict-latex@2.0.9) (2022-07-05)
 
 **Note:** Version bump only for package @cspell/dict-latex

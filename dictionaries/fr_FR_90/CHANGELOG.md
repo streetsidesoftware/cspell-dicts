@@ -14,6 +14,18 @@ See [Conventional Commits](https://conventionalcommits.org) for commit guideline
 
 
 
+## 1.0.0 (2022-07-16)
+
+
+### Features
+
+* Make sure French is case sensitive by default. ([#1072](https://github.com/streetsidesoftware/cspell-dicts/issues/1072)) ([a35cc0d](https://github.com/streetsidesoftware/cspell-dicts/commit/a35cc0d639e659830fb90897eb6d9ae4dbb9d9ed))
+
+
+### Bug Fixes
+
+* Fix typo ([#908](https://github.com/streetsidesoftware/cspell-dicts/issues/908)) ([800bec8](https://github.com/streetsidesoftware/cspell-dicts/commit/800bec814558a84b3294d2fc2b37ec170686ac6a))
+
 ## [2.0.2](https://github.com/streetsidesoftware/cspell-dicts/compare/@cspell/dict-fr-reforme@2.0.1...@cspell/dict-fr-reforme@2.0.2) (2022-02-09)
 
 
