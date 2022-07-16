@@ -1,13 +1,10 @@
 {
     "packages": {
         ".": {
-            "releaseType": "node",
-            "draft": false,
-            "prerelease": false,
-            "bumpMinorPreMajor": false,
-            "bumpPatchForMinorPreMajor": false,
-            "changelogPath": "CHANGELOG.md",
-            "versioning": "default"
+            "releaseType": "node"
+        },
+        "dictionaries/*": {
+            "releaseType": "node"
         }
     }
 }
