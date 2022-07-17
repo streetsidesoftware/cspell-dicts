@@ -3,6 +3,15 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+## [2.3.0](https://github.com/streetsidesoftware/cspell-dicts/compare/@cspell/dict-en_us@2.2.10...@cspell/dict-en_us@2.3.0) (2022-07-17)
+
+
+### Features
+
+* add guillemet to en_GB and en_US ([#1255](https://github.com/streetsidesoftware/cspell-dicts/issues/1255)) ([1b76384](https://github.com/streetsidesoftware/cspell-dicts/commit/1b763844d16ea6ef765763f8b15693781d72c3c3))
+
+
+
 ## [2.2.10](https://github.com/streetsidesoftware/cspell-dicts/compare/@cspell/dict-en_us@2.2.9...@cspell/dict-en_us@2.2.10) (2022-07-05)
 
 
