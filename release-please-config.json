@@ -3,237 +3,316 @@
     "include-v-in-tag": false,
     "tag-separator": "@",
     "packages": {
+        ".": {
+            "component": "cspell-dicts",
+            "releaseType": "node"
+        },
         "dictionaries/ada": {
-            "releaseType": "node",
-            "component": "@cspell/ada"
+            "component": "@cspell/dict-ada",
+            "releaseType": "node"
         },
         "dictionaries/aws": {
+            "component": "@cspell/dict-aws",
             "releaseType": "node"
         },
         "dictionaries/bash": {
+            "component": "@cspell/dict-bash",
             "releaseType": "node"
         },
         "dictionaries/bg_BG": {
+            "component": "@cspell/dict-bg-bg",
             "releaseType": "node"
         },
         "dictionaries/ca": {
+            "component": "@cspell/dict-ca",
             "releaseType": "node"
         },
         "dictionaries/city-names-finland": {
+            "component": "@cspell/dict-city-names-finland",
             "releaseType": "node"
         },
         "dictionaries/clojure": {
+            "component": "@cspell/dict-clojure",
             "releaseType": "node"
         },
         "dictionaries/companies": {
+            "component": "@cspell/dict-companies",
             "releaseType": "node"
         },
         "dictionaries/cpp": {
+            "component": "@cspell/dict-cpp",
             "releaseType": "node"
         },
         "dictionaries/cryptocurrencies": {
+            "component": "@cspell/dict-cryptocurrencies",
             "releaseType": "node"
         },
         "dictionaries/cs_CZ": {
+            "component": "@cspell/dict-cs-cz",
             "releaseType": "node"
         },
         "dictionaries/csharp": {
+            "component": "@cspell/dict-csharp",
             "releaseType": "node"
         },
         "dictionaries/css": {
+            "component": "@cspell/dict-css",
             "releaseType": "node"
         },
         "dictionaries/da_DK": {
+            "component": "@cspell/dict-da-dk",
             "releaseType": "node"
         },
         "dictionaries/dart": {
+            "component": "@cspell/dict-dart",
             "releaseType": "node"
         },
         "dictionaries/de_DE": {
+            "component": "@cspell/dict-de-de",
             "releaseType": "node"
         },
         "dictionaries/django": {
+            "component": "@cspell/dict-django",
             "releaseType": "node"
         },
         "dictionaries/docker": {
+            "component": "@cspell/dict-docker",
             "releaseType": "node"
         },
         "dictionaries/dotnet": {
+            "component": "@cspell/dict-dotnet",
             "releaseType": "node"
         },
         "dictionaries/el": {
+            "component": "@cspell/dict-el",
             "releaseType": "node"
         },
         "dictionaries/elixir": {
+            "component": "@cspell/dict-elixir",
             "releaseType": "node"
         },
         "dictionaries/en_GB": {
+            "component": "@cspell/dict-en-gb",
             "releaseType": "node"
         },
         "dictionaries/en_GB-MIT": {
+            "component": "@cspell/dict-en-gb-mit",
             "releaseType": "node"
         },
         "dictionaries/en_US": {
-            "releaseType": "node",
-            "package-name": "@cspell/dict-en_us"
+            "component": "@cspell/dict-en_us",
+            "releaseType": "node"
         },
         "dictionaries/eo": {
+            "component": "@cspell/dict-eo",
             "releaseType": "node"
         },
         "dictionaries/es_ES": {
+            "component": "@cspell/dict-es-es",
             "releaseType": "node"
         },
         "dictionaries/et-EE": {
+            "component": "@cspell/dict-et-ee",
             "releaseType": "node"
         },
         "dictionaries/fa_IR": {
+            "component": "@cspell/dict-fa-ir",
             "releaseType": "node"
         },
         "dictionaries/filetypes": {
+            "component": "@cspell/dict-filetypes",
             "releaseType": "node"
         },
         "dictionaries/fonts": {
+            "component": "@cspell/dict-fonts",
             "releaseType": "node"
         },
         "dictionaries/fr_FR": {
+            "component": "@cspell/dict-fr-fr",
             "releaseType": "node"
         },
         "dictionaries/fr_FR_90": {
+            "component": "@cspell/dict-fr-reforme",
             "releaseType": "node"
         },
         "dictionaries/fullstack": {
+            "component": "@cspell/dict-fullstack",
             "releaseType": "node"
         },
         "dictionaries/git": {
+            "component": "@cspell/dict-git",
             "releaseType": "node"
         },
         "dictionaries/golang": {
+            "component": "@cspell/dict-golang",
             "releaseType": "node"
         },
         "dictionaries/haskell": {
+            "component": "@cspell/dict-haskell",
             "releaseType": "node"
         },
         "dictionaries/he": {
+            "component": "@cspell/dict-he",
             "releaseType": "node"
         },
         "dictionaries/hr_HR": {
+            "component": "@cspell/dict-hr-hr",
             "releaseType": "node"
         },
         "dictionaries/html": {
+            "component": "@cspell/dict-html",
             "releaseType": "node"
         },
         "dictionaries/html-symbol-entities": {
+            "component": "@cspell/dict-html-symbol-entities",
             "releaseType": "node"
         },
         "dictionaries/it_IT": {
+            "component": "@cspell/dict-it-it",
             "releaseType": "node"
         },
         "dictionaries/java": {
+            "component": "@cspell/dict-java",
             "releaseType": "node"
         },
         "dictionaries/latex": {
+            "component": "@cspell/dict-latex",
             "releaseType": "node"
         },
         "dictionaries/lorem-ipsum": {
+            "component": "@cspell/dict-lorem-ipsum",
             "releaseType": "node"
         },
         "dictionaries/lt_LT": {
+            "component": "@cspell/dict-lt-lt",
             "releaseType": "node"
         },
         "dictionaries/lua": {
+            "component": "@cspell/dict-lua",
             "releaseType": "node"
         },
         "dictionaries/medicalterms": {
+            "component": "@cspell/dict-medicalterms",
             "releaseType": "node"
         },
         "dictionaries/mnemonics": {
+            "component": "@cspell/dict-mnemonics",
             "releaseType": "node"
         },
         "dictionaries/monkeyc": {
+            "component": "@cspell/dict-monkeyc",
             "releaseType": "node"
         },
         "dictionaries/nb_NO": {
+            "component": "@cspell/dict-nb-no",
             "releaseType": "node"
         },
         "dictionaries/nl_NL": {
+            "component": "@cspell/dict-nl-nl",
             "releaseType": "node"
         },
         "dictionaries/node": {
+            "component": "@cspell/dict-node",
             "releaseType": "node"
         },
         "dictionaries/npm": {
+            "component": "@cspell/dict-npm",
             "releaseType": "node"
         },
         "dictionaries/php": {
+            "component": "@cspell/dict-php",
             "releaseType": "node"
         },
         "dictionaries/pl_PL": {
+            "component": "@cspell/dict-pl_pl",
             "releaseType": "node"
         },
         "dictionaries/powershell": {
+            "component": "@cspell/dict-powershell",
             "releaseType": "node"
         },
         "dictionaries/pt_BR": {
+            "component": "@cspell/dict-pt-br",
             "releaseType": "node"
         },
         "dictionaries/pt_PT": {
+            "component": "@cspell/dict-pt-pt",
             "releaseType": "node"
         },
         "dictionaries/public-licenses": {
+            "component": "@cspell/dict-public-licenses",
             "releaseType": "node"
         },
         "dictionaries/python": {
+            "component": "@cspell/dict-python",
             "releaseType": "node"
         },
         "dictionaries/r": {
+            "component": "@cspell/dict-r",
             "releaseType": "node"
         },
         "dictionaries/ru_RU": {
+            "component": "@cspell/dict-ru_ru",
             "releaseType": "node"
         },
         "dictionaries/ruby": {
+            "component": "@cspell/dict-ruby",
             "releaseType": "node"
         },
         "dictionaries/rust": {
+            "component": "@cspell/dict-rust",
             "releaseType": "node"
         },
         "dictionaries/scala": {
+            "component": "@cspell/dict-scala",
             "releaseType": "node"
         },
         "dictionaries/scientific_terms_US": {
+            "component": "@cspell/dict-scientific-terms-us",
             "releaseType": "node"
         },
         "dictionaries/sl_SI": {
+            "component": "@cspell/dict-sl-si",
             "releaseType": "node"
         },
         "dictionaries/software-terms": {
+            "component": "@cspell/dict-software-terms",
+            "releaseType": "node"
+        },
+        "dictionaries/sql": {
+            "component": "@cspell/dict-sql",
             "releaseType": "node"
         },
         "dictionaries/sv": {
+            "component": "@cspell/dict-sv",
             "releaseType": "node"
         },
         "dictionaries/swift": {
+            "component": "@cspell/dict-swift",
             "releaseType": "node"
         },
         "dictionaries/tr_TR": {
+            "component": "@cspell/dict-tr-tr",
             "releaseType": "node"
         },
         "dictionaries/typescript": {
+            "component": "@cspell/dict-typescript",
             "releaseType": "node"
         },
         "dictionaries/uk_UA": {
+            "component": "@cspell/dict-uk-ua",
             "releaseType": "node"
         },
         "dictionaries/vi_VN": {
+            "component": "@cspell/dict-vi-vn",
             "releaseType": "node"
         },
         "dictionaries/vue": {
+            "component": "@cspell/dict-vue",
             "releaseType": "node"
         },
         "dictionaries/win32": {
-            "releaseType": "node"
-        },
-        ".": {
+            "component": "@cspell/dict-win32",
             "releaseType": "node"
         }
     }
