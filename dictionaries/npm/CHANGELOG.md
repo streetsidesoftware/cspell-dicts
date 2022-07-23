@@ -3,6 +3,15 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+## [3.1.0](https://github.com/streetsidesoftware/cspell-dicts/compare/@cspell/dict-npm@3.0.1...@cspell/dict-npm@3.1.0) (2022-07-23)
+
+
+### Features
+
+* add ulid ([#1260](https://github.com/streetsidesoftware/cspell-dicts/issues/1260)) ([8687ba6](https://github.com/streetsidesoftware/cspell-dicts/commit/8687ba60882134db8d845631bffdea9056baff37))
+
+
+
 ### [3.0.1](https://github.com/streetsidesoftware/cspell-dicts/compare/@cspell/dict-npm@3.0.0...@cspell/dict-npm@3.0.1) (2022-05-28)
 
 **Note:** Version bump only for package @cspell/dict-npm

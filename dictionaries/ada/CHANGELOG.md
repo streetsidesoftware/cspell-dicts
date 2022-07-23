@@ -3,6 +3,15 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+## [2.0.1](https://github.com/streetsidesoftware/cspell-dicts/compare/@cspell/dict-ada@2.0.0...@cspell/dict-ada@2.0.1) (2022-07-23)
+
+
+### Bug Fixes
+
+* support English contractions in Ada files. ([#1277](https://github.com/streetsidesoftware/cspell-dicts/issues/1277)) ([ec0895e](https://github.com/streetsidesoftware/cspell-dicts/commit/ec0895e2f4f0728f27df111036513c80000245b1)), closes [#1276](https://github.com/streetsidesoftware/cspell-dicts/issues/1276)
+
+
+
 # [2.0.0](https://github.com/streetsidesoftware/cspell-dicts/compare/@cspell/dict-ada@1.1.2...@cspell/dict-ada@2.0.0) (2022-02-09)
 
 

@@ -3,6 +3,15 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+## [2.2.0](https://github.com/streetsidesoftware/cspell-dicts/compare/@cspell/dict-software-terms@2.1.12...@cspell/dict-software-terms@2.2.0) (2022-07-23)
+
+
+### Features
+
+* add ulid ([#1260](https://github.com/streetsidesoftware/cspell-dicts/issues/1260)) ([8687ba6](https://github.com/streetsidesoftware/cspell-dicts/commit/8687ba60882134db8d845631bffdea9056baff37))
+
+
+
 ## [2.1.12](https://github.com/streetsidesoftware/cspell-dicts/compare/@cspell/dict-software-terms@2.1.11...@cspell/dict-software-terms@2.1.12) (2022-07-17)
 
 **Note:** Version bump only for package @cspell/dict-software-terms
