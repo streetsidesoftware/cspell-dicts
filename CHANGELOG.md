@@ -1,5 +1,12 @@
 # Release Notes
 
+## [1.1.3](https://github.com/streetsidesoftware/cspell-dicts/compare/cspell-dicts@1.1.2...cspell-dicts@1.1.3) (2022-07-23)
+
+
+### Updates and Bug Fixes
+
+* Correct README.md instructions. ([#1286](https://github.com/streetsidesoftware/cspell-dicts/issues/1286)) ([3f40be6](https://github.com/streetsidesoftware/cspell-dicts/commit/3f40be691c1760ca812494944f9f6b3683ef2622))
+
 ## [1.1.2](https://github.com/streetsidesoftware/cspell-dicts/compare/cspell-dicts@1.1.1...cspell-dicts@1.1.2) (2022-07-23)
 
 
