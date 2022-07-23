@@ -1,32 +1,32 @@
-# Cspell German Dictionary
+# CSpell German Dictionary
 
-German dictionary for cspell.
+German dictionary for CSpell.
 
-This is a pre-built dictionary for use with cspell.
+This is a pre-built dictionary for use with CSpell.
 
 ## Installation
 
-Global Install and add to cspell global settings.
+Global Install and add to CSpell global settings.
 
 ```sh
-npm install -g @cspell/dict-de-de
-cspell link add @cspell/dict-de-de
+npm install -g @cspell/dict-de-ch
+cspell link add @cspell/dict-de-ch
 ```
 
-## Uninstall from cspell
+## Uninstall from CSpell
 
 ```sh
-cspell link remove @cspell/dict-de-de
+cspell link remove @cspell/dict-de-ch
 ```
 
 ## Manual Installation
 
-The `cspell-ext.json` file in this package should be added to the import section in your cspell.json file.
+The `cspell-ext.json` file in this package should be added to the import section in your `cspell.json` file.
 
 ```javascript
 {
     // …
-    "import": ["@cspell/dict-de-de/cspell-ext.json"],
+    "import": ["@cspell/dict-de-ch/cspell-ext.json"],
     // …
 }
 ```
