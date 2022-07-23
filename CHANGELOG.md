@@ -1,5 +1,20 @@
 # Release Notes
 
+## [1.1.1](https://github.com/streetsidesoftware/cspell-dicts/compare/cspell-dicts@1.1.0...cspell-dicts@1.1.1) (2022-07-23)
+
+
+### Updates and Bug Fixes
+
+* Add de_CH ([#1283](https://github.com/streetsidesoftware/cspell-dicts/issues/1283)) ([6029526](https://github.com/streetsidesoftware/cspell-dicts/commit/602952633d2b0b578513f6230f32634c57d68c41))
+
+
+### Continuous Integration
+
+* clean `yo` security issues ([#1282](https://github.com/streetsidesoftware/cspell-dicts/issues/1282)) ([02e4998](https://github.com/streetsidesoftware/cspell-dicts/commit/02e4998a2ae37cc70814efaa61c7d77f2cf222c4))
+* Improve Publication Process ([2d8a654](https://github.com/streetsidesoftware/cspell-dicts/commit/2d8a654759259446f26ad6a2932a6fdd01d3a89e))
+* Workflow Bot -- Update ALL Dependencies ([153ccc1](https://github.com/streetsidesoftware/cspell-dicts/commit/153ccc1b80e5d211f18115fc1bfd8b9bcd03e7e6))
+* Workflow Bot -- Update ALL Dependencies (main) ([#1284](https://github.com/streetsidesoftware/cspell-dicts/issues/1284)) ([153ccc1](https://github.com/streetsidesoftware/cspell-dicts/commit/153ccc1b80e5d211f18115fc1bfd8b9bcd03e7e6))
+
 ## [1.1.0](https://github.com/streetsidesoftware/cspell-dicts/compare/cspell-dicts-v1.0.0...cspell-dicts@1.1.0) (2022-07-23)
 
 
