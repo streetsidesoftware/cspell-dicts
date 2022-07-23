@@ -27,22 +27,28 @@ jobs:
         uses: actions/checkout@v3
         with:
           ref: ${{ env.REF_BRANCH }}
+
       - uses: actions/setup-node@v3
         with:
           cache: yarn
+
       - name: Update
         run: |
           yarn
           yarn upgrade
+
       - name: update package.json
         run: |
           npx package-json-dependency-updater -u
+
       - name: Install
         run: |
           yarn
+
+      # Catch any new dictionaries and add them to the config.
       - name: Update Release-Please packages
-        # Catch any new dictionaries and add them to the config.
         run: ./scripts/gen-release-please-config.sh
+
       - name: Lint
         run: |
           yarn lint

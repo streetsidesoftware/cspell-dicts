@@ -18,22 +18,32 @@ jobs:
         with:
           command: manifest
 
-      # The logic below handles the npm publication:
-      # - uses: actions/checkout@v3
-      #   if: ${{ steps.release.outputs.release_created }}
+      # The logic below handles the publication:
+      - name: Checkout code
+        if: ${{ steps.release.outputs.release_created }}
+        uses: actions/checkout@v3
+        with:
+          ref: ${{ env.REF_BRANCH }}
 
-      # - name: Use Node.js
-      #   uses: actions/setup-node@v3
-      #   with:
-      #     node-version: 16
-      #     registry-url: "https://registry.npmjs.org"
-      #   if: ${{ steps.release.outputs.release_created }}
+      - name: Use Node.js
+        if: ${{ steps.release.outputs.release_created }}
+        uses: actions/setup-node@v3
+        with:
+          node-version: 16
+          registry-url: "https://registry.npmjs.org"
+          cache: yarn
 
-      # - run: npm ci
-      #   if: ${{ steps.release.outputs.release_created }}
+      - name: Install / Build
+        if: ${{ steps.release.outputs.releases_created }}
+        run: |
+          yarn
 
-      # - run: npm publish
-      #   env:
-      #     NODE_AUTH_TOKEN: ${{secrets.PUBLISH_NPM}}
-      #   if: ${{ steps.release.outputs.release_created }}
+      # Release Please has already incremented versions and published tags, so we just
+      # need to publish all unpublished versions to NPM here
+      # See: https://github.com/lerna/lerna/tree/main/commands/publish#bump-from-package
+      - name: Publish to NPM
+        if: ${{ steps.release.outputs.releases_created }}
+        env:
+          NODE_AUTH_TOKEN: ${{secrets.NPM_TOKEN}}
+        run: yarn lerna publish from-package --no-push --no-private --yes
 # cspell:ignore noreply
