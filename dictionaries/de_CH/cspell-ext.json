@@ -1,0 +1,24 @@
+{
+    "id": "de-ch",
+    "version": "0.2",
+    "name": "Swiss German Dictionary",
+    "description": "Swiss German (de-CH) Dictionary.",
+    "readonly": true,
+    "dictionaryDefinitions": [
+        {
+            "name": "de-ch",
+            "path": "./de_CH.trie.gz",
+            "description": "Swiss German (de-CH) Dictionary."
+        }
+    ],
+    "dictionaries": [],
+    "languageSettings": [
+        {
+            "languageId": "*",
+            "locale": "de,de_CH",
+            "caseSensitive": true,
+            "dictionaries": ["de-ch"],
+            "dictionaryDefinitions": []
+        }
+    ]
+}

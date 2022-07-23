@@ -1,0 +1,50 @@
+{
+  "name": "@cspell/dict-de-ch",
+  "version": "1.0.0",
+  "description": "Swiss German dictionary for CSpell.",
+  "publishConfig": {
+    "access": "public"
+  },
+  "exports": {
+    ".": "./cspell-ext.json",
+    "./cspell": "./cspell-ext.json",
+    "./cspell-ext.json": "./cspell-ext.json"
+  },
+  "scripts": {
+    "build": "cat source-files.txt | xargs cross-env NODE_OPTIONS=--max_old_space_size=12288 cspell-tools-cli compile --trie3 -x compound -o . -M de_CH && yarn run gen-checksum",
+    "sync": "yarn cpy \"../../node_modules/dictionary-de-ch/**\" src/hunspell",
+    "checksum": "shasum -c checksum.txt",
+    "conditional-build": "yarn run --silent checksum || yarn run build",
+    "gen-checksum": "cat source-files.txt source-dependencies.txt | xargs shasum > checksum.txt",
+    "test-de": "hunspell-reader words -n 1000 \"src/hunspell/index.dic\" | cspell -v -c ./cspell-ext.json --local=de --languageId=* stdin",
+    "test-samples": "cspell -v -c ./cspell-ext.json --local=de,en \"samples/**\"",
+    "test": "yarn run test-de && yarn run test-samples",
+    "prepublishOnly": "yarn run conditional-build && yarn test"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/streetsidesoftware/cspell-dicts.git"
+  },
+  "keywords": [
+    "cspell",
+    "de_CH",
+    "German",
+    "Swiss",
+    "dictionary",
+    "spelling"
+  ],
+  "author": "Jason Dent",
+  "license": "GPL-3.0-or-later",
+  "bugs": {
+    "url": "https://github.com/streetsidesoftware/cspell-dicts/issues"
+  },
+  "homepage": "https://github.com/streetsidesoftware/cspell-dicts/blob/main/dictionaries/de_CH#readme",
+  "files": [
+    "de_CH.trie.gz",
+    "cspell-ext.json",
+    "src/hunspell/license"
+  ],
+  "devDependencies": {
+    "dictionary-de-ch": "^2.1.0"
+  }
+}
