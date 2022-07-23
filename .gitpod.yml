@@ -4,3 +4,8 @@
 
 tasks:
   - init: yarn install
+
+github:
+  prebuilds:
+    # enable for pull requests coming from this repo (defaults to true)
+    pullRequests: false
