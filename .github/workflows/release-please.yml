@@ -1,8 +1,14 @@
+name: release-please
+
 on:
   push:
     branches:
       - main
-name: release-please
+
+permissions:
+  contents: read
+  pull-requests: write
+
 jobs:
   release-please:
     runs-on: ubuntu-latest
