@@ -9,6 +9,7 @@ ptrdiff
 
 
 # https://en.cppreference.com/w/cpp/header/cstdlib
+cstdlib
 getenv
 malloc
 calloc
@@ -85,9 +86,12 @@ longjmp
 
 
 # https://en.cppreference.com/w/cpp/header/cstdarg
+cstdarg
 
 
 # https://en.cppreference.com/w/cpp/header/cassert
+cassert
+NDEBUG
 
 
 # https://en.cppreference.com/w/cpp/header/ctime
@@ -128,6 +132,7 @@ memmove
 
 
 # https://en.cppreference.com/w/cpp/header/cctype
+cctype
 isalnum
 isalpha
 islower
@@ -168,6 +173,7 @@ wctrans
 
 
 # https://en.cppreference.com/w/cpp/header/cwchar
+cwchar
 WEOF
 mbstate
 wint
@@ -239,6 +245,7 @@ rtomb
 
 
 # https://en.cppreference.com/w/cpp/header/clocale
+clocale
 ctype
 setlocale
 localeconv
@@ -247,6 +254,7 @@ localeconv
 
 
 # https://en.cppreference.com/w/cpp/header/cfenv
+cfenv
 fenv_t
 fexcept_t
 feclearexcept
@@ -276,6 +284,7 @@ FE_DFL_ENV
 
 
 # https://en.cppreference.com/w/cpp/header/cstdio
+cstdio
 stdio
 fpos
 stdin
@@ -331,6 +340,7 @@ tmpnam
 
 
 # https://en.cppreference.com/w/cpp/header/cinttypes
+cinttypes
 imaxabs
 imaxdiv
 strtoimax
