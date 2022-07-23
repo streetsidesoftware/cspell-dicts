@@ -20,7 +20,7 @@
             "patterns": [
                 {
                     "name": "ada word break",
-                    "pattern": "/(?<=\\w)['](?=\\w)/g",
+                    "pattern": "/(?<=\\w)['](?=\\w)(?!((?<=n')t|ve|d|ll|m|s|re)\\b)/g",
                     "description": "Ada Word Break"
                 },
                 {
