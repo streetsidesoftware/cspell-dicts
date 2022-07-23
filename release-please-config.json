@@ -2,6 +2,69 @@
     "bootstrap-sha": "8ddc057b66a16f494aae11b38ee0256ff55c52ec",
     "include-v-in-tag": false,
     "tag-separator": "@",
+    "changelog-sections": [
+        {
+            "type": "feat",
+            "section": "Features",
+            "hidden": false
+        },
+        {
+            "type": "feature",
+            "section": "Features"
+        },
+        {
+            "type": "fix",
+            "section": "Updates and Bug Fixes",
+            "hidden": false
+        },
+        {
+            "type": "perf",
+            "section": "Performance Improvements"
+        },
+        {
+            "type": "ci",
+            "section": "Continuous Integration",
+            "hidden": false
+        },
+        {
+            "type": "chore",
+            "section": "Miscellaneous",
+            "hidden": false
+        },
+        {
+            "type": "revert",
+            "section": "Reverts"
+        },
+        {
+            "type": "docs",
+            "section": "Documentation"
+        },
+        {
+            "type": "style",
+            "section": "Styles",
+            "hidden": false
+        },
+        {
+            "type": "refactor",
+            "section": "Code Refactoring",
+            "hidden": false
+        },
+        {
+            "type": "test",
+            "section": "Tests",
+            "hidden": false
+        },
+        {
+            "type": "build",
+            "section": "Build System",
+            "hidden": false
+        },
+        {
+            "type": "",
+            "section": "Changes",
+            "hidden": false
+        }
+    ],
     "packages": {
         ".": {
             "component": "cspell-dicts",
@@ -91,12 +154,12 @@
             "component": "@cspell/dict-elixir",
             "releaseType": "node"
         },
-        "dictionaries/en_GB": {
-            "component": "@cspell/dict-en-gb",
-            "releaseType": "node"
-        },
         "dictionaries/en_GB-MIT": {
             "component": "@cspell/dict-en-gb-mit",
+            "releaseType": "node"
+        },
+        "dictionaries/en_GB": {
+            "component": "@cspell/dict-en-gb",
             "releaseType": "node"
         },
         "dictionaries/en_US": {
@@ -159,12 +222,12 @@
             "component": "@cspell/dict-hr-hr",
             "releaseType": "node"
         },
-        "dictionaries/html": {
-            "component": "@cspell/dict-html",
-            "releaseType": "node"
-        },
         "dictionaries/html-symbol-entities": {
             "component": "@cspell/dict-html-symbol-entities",
+            "releaseType": "node"
+        },
+        "dictionaries/html": {
+            "component": "@cspell/dict-html",
             "releaseType": "node"
         },
         "dictionaries/it_IT": {
