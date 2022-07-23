@@ -1,5 +1,12 @@
 # Release Notes
 
+## [1.1.2](https://github.com/streetsidesoftware/cspell-dicts/compare/cspell-dicts@1.1.1...cspell-dicts@1.1.2) (2022-07-23)
+
+
+### Continuous Integration
+
+* fix publish step ([bb909d1](https://github.com/streetsidesoftware/cspell-dicts/commit/bb909d16ca8c90942a139ea3bb93c0f8dc170dfa))
+
 ## [1.1.1](https://github.com/streetsidesoftware/cspell-dicts/compare/cspell-dicts@1.1.0...cspell-dicts@1.1.1) (2022-07-23)
 
 
