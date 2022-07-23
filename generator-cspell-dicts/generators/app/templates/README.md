@@ -1,19 +1,19 @@
-# Cspell <%= friendlyName %> Dictionary
+# CSpell <%= friendlyName %> Dictionary
 
 <%= description %>
 
-This is a pre-built dictionary for use with cspell.
+This is a pre-built dictionary for use with CSpell.
 
 ## Installation
 
-Global Install and add to cspell global settings.
+Global Install and add to CSpell global settings.
 
 ```sh
 npm install -g <%= fullPackageName %>
 cspell link add <%= fullPackageName %>
 ```
 
-## Uninstall from cspell
+## Uninstall from CSpell
 
 ```sh
 cspell link remove <%= fullPackageName %>
