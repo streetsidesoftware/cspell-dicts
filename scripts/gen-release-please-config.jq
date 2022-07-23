@@ -15,7 +15,7 @@
         { type: "refactor", "section": "Code Refactoring", "hidden": false },
         { type: "test", "section": "Tests", "hidden": false },
         { type: "build", "section": "Build System", "hidden": false },
-        { type: "", "section": "Changes", "hidden": false },
+        { type: "", "section": "Changes", "hidden": false }
     ],
     packages: .,
 }
