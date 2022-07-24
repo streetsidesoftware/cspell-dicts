@@ -1,5 +1,13 @@
 # Release Notes
 
+## [1.1.4](https://github.com/streetsidesoftware/cspell-dicts/compare/cspell-dicts@1.1.3...cspell-dicts@1.1.4) (2022-07-24)
+
+
+### Updates and Bug Fixes
+
+* [cpp-refined] updates ([#1290](https://github.com/streetsidesoftware/cspell-dicts/issues/1290)) ([8ea308c](https://github.com/streetsidesoftware/cspell-dicts/commit/8ea308ca73e883ea518cb3624a53955ccb96db3a))
+* Add SQL sample ([#1288](https://github.com/streetsidesoftware/cspell-dicts/issues/1288)) ([dc8851f](https://github.com/streetsidesoftware/cspell-dicts/commit/dc8851fc9c91b873d9fbede88db92bed221d2c42))
+
 ## [1.1.3](https://github.com/streetsidesoftware/cspell-dicts/compare/cspell-dicts@1.1.2...cspell-dicts@1.1.3) (2022-07-23)
 
 
