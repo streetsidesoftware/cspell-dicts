@@ -11,6 +11,16 @@
             "description": "SQL dictionary for CSpell."
         }
     ],
+    "patterns": [
+        {
+            "name": "sql-hex-number",
+            "pattern": "/0x[a-f0-9]*/gi"
+        },
+        {
+            "name": "sql-unicode-string-prefix",
+            "pattern": "/\\bN'/g"
+        }
+    ],
     "dictionaries": [],
     "languageSettings": [
         {
@@ -18,6 +28,7 @@
             "locale": "*",
             "patterns": [],
             "dictionaries": ["sql"],
+            "ignoreRegExpList": ["sql-hex-number", "sql-unicode-string-prefix"],
             "dictionaryDefinitions": []
         }
     ]
