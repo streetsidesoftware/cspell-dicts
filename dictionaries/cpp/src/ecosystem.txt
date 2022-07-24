@@ -1,8 +1,9 @@
 isocpp
-cppcon
 cppref
 cppreference
 cppcoreguidelines
+cppcon
+cpponsea
 
 # compilers
 gnu
@@ -13,19 +14,30 @@ msvc
 emscripten
 pybind
 
+sysroot
+
+# standard libraries
+libc
+libc++
+libstdc++
+eastl
+
 # target platforms (OS)
 msys
 cygwin
 posix
 
 # build systems
-make
-ninja
 cmake
+ninja
+make
+msbuild
+spack
 
 # package/dependency managers
 conan
 vcpkg
+CPM
 
 
 # working groups
@@ -36,7 +48,40 @@ LEWG
 # tools
 objdump
 natvis
+gdb
+lldb
 
 # graphics
 cuda
 vulkan
+
+# common-ish libraries
+# https://en.cppreference.com/w/cpp/links/libs
+fmt
+doctest
+abseil
+imgui
+poco
+protobuf
+nlohmann
+asio
+
+
+# emscripten
+emar
+embuilder
+emcc
+emcmake
+emconfigure
+emdump
+emdwp
+emmake
+emnm
+emprofile
+#em++
+emranlib
+emscons
+emsdk
+emsize
+emstrip
+emsymbolizer
