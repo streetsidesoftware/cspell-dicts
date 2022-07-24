@@ -1,5 +1,13 @@
 # Release Notes
 
+## [1.1.5](https://github.com/streetsidesoftware/cspell-dicts/compare/cspell-dicts@1.1.4...cspell-dicts@1.1.5) (2022-07-24)
+
+
+### Updates and Bug Fixes
+
+* **@cspell/dict-sql:** Add some more terms and ignore `N'` ([#1291](https://github.com/streetsidesoftware/cspell-dicts/issues/1291)) ([ef3a760](https://github.com/streetsidesoftware/cspell-dicts/commit/ef3a76007ebea86f970d6e77796f55a2d3c57524))
+* Add some more terms and ignore expressions ([ef3a760](https://github.com/streetsidesoftware/cspell-dicts/commit/ef3a76007ebea86f970d6e77796f55a2d3c57524))
+
 ## [1.1.4](https://github.com/streetsidesoftware/cspell-dicts/compare/cspell-dicts@1.1.3...cspell-dicts@1.1.4) (2022-07-24)
 
 
