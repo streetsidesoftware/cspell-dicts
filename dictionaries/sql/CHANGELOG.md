@@ -3,6 +3,14 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+## [1.0.3](https://github.com/streetsidesoftware/cspell-dicts/compare/@cspell/dict-sql@1.0.2...@cspell/dict-sql@1.0.3) (2022-07-24)
+
+
+### Updates and Bug Fixes
+
+* **@cspell/dict-sql:** Add some more terms and ignore `N'` ([#1291](https://github.com/streetsidesoftware/cspell-dicts/issues/1291)) ([ef3a760](https://github.com/streetsidesoftware/cspell-dicts/commit/ef3a76007ebea86f970d6e77796f55a2d3c57524))
+* Add some more terms and ignore expressions ([ef3a760](https://github.com/streetsidesoftware/cspell-dicts/commit/ef3a76007ebea86f970d6e77796f55a2d3c57524))
+
 ## [1.0.2](https://github.com/streetsidesoftware/cspell-dicts/compare/@cspell/dict-sql@1.0.1...@cspell/dict-sql@1.0.2) (2022-07-24)
 
 
