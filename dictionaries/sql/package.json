@@ -11,7 +11,7 @@
     "./cspell-ext.json": "./cspell-ext.json"
   },
   "scripts": {
-    "build": "cross-env NODE_OPTIONS=--max_old_space_size=8192 cspell-tools-cli compile \"src/sql.txt\" -o .",
+    "build": "cat source-files.txt | xargs cspell-tools-cli compile -M sql -o .",
     "test": "yarn test-dict && yarn test-samples",
     "test-dict": "head -n 1000 \"src/sql.txt\" | cspell -v -c ./cspell-ext.json \"--local=*\" \"--languageId=sql\" stdin",
     "test-samples": "cspell \"samples/**\"",
