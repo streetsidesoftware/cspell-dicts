@@ -1,0 +1,26 @@
+{
+    "id": "ar",
+    "version": "0.2",
+    "name": "Arabic",
+    "description": "Arabic dictionary for CSpell.",
+    "readonly": true,
+    "dictionaryDefinitions": [
+        {
+            "name": "ar",
+            "path": "./ar.trie.gz",
+            "description": "Arabic dictionary for CSpell."
+        }
+    ],
+    "dictionaries": [],
+    "languageSettings": [
+        {
+            "languageId": "*",
+            "locale": "ar",
+            "includeRegExpList": [],
+            "ignoreRegExpList": [],
+            "patterns": [],
+            "dictionaries": ["ar"],
+            "dictionaryDefinitions": []
+        }
+    ]
+}
