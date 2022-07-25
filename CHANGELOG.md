@@ -1,5 +1,23 @@
 # Release Notes
 
+## [1.1.6](https://github.com/streetsidesoftware/cspell-dicts/compare/cspell-dicts@1.1.5...cspell-dicts@1.1.6) (2022-07-25)
+
+
+### Updates and Bug Fixes
+
+* Add Arabic Dictionary ([#1293](https://github.com/streetsidesoftware/cspell-dicts/issues/1293)) ([aa18193](https://github.com/streetsidesoftware/cspell-dicts/commit/aa181931e3f511dcf19c532d05ef48293a25302b))
+
+
+### Continuous Integration
+
+* Workflow Bot -- Update ALL Dependencies ([60e75ca](https://github.com/streetsidesoftware/cspell-dicts/commit/60e75ca3333418aadcf1c902dfe088313872c950))
+* Workflow Bot -- Update ALL Dependencies (main) ([#1296](https://github.com/streetsidesoftware/cspell-dicts/issues/1296)) ([60e75ca](https://github.com/streetsidesoftware/cspell-dicts/commit/60e75ca3333418aadcf1c902dfe088313872c950))
+
+
+### Miscellaneous
+
+* prepare to publish Arabic ([#1297](https://github.com/streetsidesoftware/cspell-dicts/issues/1297)) ([212e0ab](https://github.com/streetsidesoftware/cspell-dicts/commit/212e0aba5f3d92987763eea6c4ed30931754f263))
+
 ## [1.1.5](https://github.com/streetsidesoftware/cspell-dicts/compare/cspell-dicts@1.1.4...cspell-dicts@1.1.5) (2022-07-24)
 
 
