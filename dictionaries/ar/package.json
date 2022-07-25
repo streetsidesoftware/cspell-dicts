@@ -1,8 +1,7 @@
 {
   "name": "@cspell/dict-ar",
   "version": "1.0.0",
-  "description": "Arabic dictionary for cspell. -- Private until verified",
-  "private": true,
+  "description": "Arabic dictionary for CSpell.",
   "publishConfig": {
     "access": "public"
   },
@@ -46,6 +45,8 @@
   },
   "dependencies": {},
   "files": [
+    "src/ayaspell/COPYING",
+    "src/ayaspell/README.md",
     "ar.trie.gz",
     "cspell-ext.json",
     "*.js",
