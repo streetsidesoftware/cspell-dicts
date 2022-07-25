@@ -14,5 +14,5 @@
 
 <!---
 cspell:locale ar
-cspell:ignore آيسبل أوفيس هانسبل واستعمالكم
+cspell:ignore آيسبل أوفيس هانسبل
 --->
