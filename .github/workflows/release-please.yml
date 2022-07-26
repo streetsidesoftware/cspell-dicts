@@ -26,6 +26,6 @@ jobs:
       - release-please
     uses: ./.github/workflows/publish.yml
     secrets:
-      PUBLISH_NPM: ${{ secrets.PUBLISH_NPM }}    
+      PUBLISH_NPM: ${{ secrets.PUBLISH_NPM }}
     if: ${{ needs.release-please.outputs.release_created }}
 # cspell:ignore noreply
