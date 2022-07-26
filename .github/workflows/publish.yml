@@ -3,7 +3,10 @@ name: Publish to NPM
 on:
   workflow_dispatch:
   workflow_call:
-
+    secrets:
+      PUBLISH_NPM:
+        required: true
+        
 permissions:
   contents: read
 
