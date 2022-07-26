@@ -12,38 +12,17 @@ permissions:
 jobs:
   release-please:
     runs-on: ubuntu-latest
+    outputs:
+      release_created: ${{ steps.release.outputs.release_created }}
     steps:
       - uses: google-github-actions/release-please-action@v3
         id: release
         with:
           command: manifest
 
-      # The logic below handles the publication:
-      - name: Checkout code
-        if: ${{ steps.release.outputs.release_created }}
-        uses: actions/checkout@v3
-        with:
-          ref: ${{ env.REF_BRANCH }}
-
-      - name: Use Node.js
-        if: ${{ steps.release.outputs.release_created }}
-        uses: actions/setup-node@v3
-        with:
-          node-version: 16
-          registry-url: "https://registry.npmjs.org"
-          cache: yarn
-
-      - name: Install / Build
-        if: ${{ steps.release.outputs.releases_created }}
-        run: |
-          yarn
-
-      # Release Please has already incremented versions and published tags, so we just
-      # need to publish all unpublished versions to NPM here
-      # See: https://github.com/lerna/lerna/tree/main/commands/publish#bump-from-package
-      - name: Publish to NPM
-        if: ${{ steps.release.outputs.releases_created }}
-        env:
-          NODE_AUTH_TOKEN: ${{secrets.PUBLISH_NPM}}
-        run: yarn lerna publish from-package --no-push --no-private --yes
+  publish:
+    needs:
+      - release-please
+    uses: ./.github/workflows/publish.yml
+    if: ${{ needs.release-please.outputs.release_created }}
 # cspell:ignore noreply
