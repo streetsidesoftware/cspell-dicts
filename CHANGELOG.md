@@ -1,5 +1,18 @@
 # Release Notes
 
+## [1.1.8](https://github.com/streetsidesoftware/cspell-dicts/compare/cspell-dicts@1.1.7...cspell-dicts@1.1.8) (2022-07-26)
+
+
+### Continuous Integration
+
+* Fix NPM token ([f1da096](https://github.com/streetsidesoftware/cspell-dicts/commit/f1da0968b486aa8aa80a7c67055f85429c74da9d))
+
+
+### Updates and Bug Fixes
+
+* add Street Side Software to companies ([8ee2b42](https://github.com/streetsidesoftware/cspell-dicts/commit/8ee2b42d9fae114cd2039431ed9d1732e5313cbc))
+* secrets in release-please ([9862738](https://github.com/streetsidesoftware/cspell-dicts/commit/98627382ef08d9d23ef54af0913de2332741fd4a))
+
 ## [1.1.7](https://github.com/streetsidesoftware/cspell-dicts/compare/cspell-dicts@1.1.6...cspell-dicts@1.1.7) (2022-07-26)
 
 
