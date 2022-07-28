@@ -3,6 +3,13 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+## [1.0.4](https://github.com/streetsidesoftware/cspell-dicts/compare/@cspell/dict-sql@1.0.3...@cspell/dict-sql@1.0.4) (2022-07-28)
+
+
+### Updates and Bug Fixes
+
+* Add sql datatypes and aliases ([4dbc7bf](https://github.com/streetsidesoftware/cspell-dicts/commit/4dbc7bfbe6f29baeb5bd7923ae3ba140ee22ee41))
+
 ## [1.0.3](https://github.com/streetsidesoftware/cspell-dicts/compare/@cspell/dict-sql@1.0.2...@cspell/dict-sql@1.0.3) (2022-07-24)
 
 
