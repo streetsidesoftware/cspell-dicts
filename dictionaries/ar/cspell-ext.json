@@ -8,7 +8,19 @@
         {
             "name": "ar",
             "path": "./ar.trie.gz",
-            "description": "Arabic dictionary for CSpell."
+            "description": "Arabic dictionary for CSpell.",
+            "dictionaryInformation": {
+                "alphabet": "\u0600-\u06ff",
+                "locale": "ar",
+                "suggestionEditCosts": [
+                    {
+                        "map": "\u0626\u0627\u0648\u0649\u06c6\u06c7\u06c8\u06d0\u06d5",
+                        "insDel": 1,
+                        "replace": 1,
+                        "swap": 1
+                    }
+                ]
+            }
         }
     ],
     "dictionaries": [],
