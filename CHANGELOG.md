@@ -1,5 +1,24 @@
 # Release Notes
 
+## [1.1.10](https://github.com/streetsidesoftware/cspell-dicts/compare/cspell-dicts@1.1.9...cspell-dicts@1.1.10) (2022-07-29)
+
+
+### Updates and Bug Fixes
+
+* [#1314](https://github.com/streetsidesoftware/cspell-dicts/issues/1314) ([8237697](https://github.com/streetsidesoftware/cspell-dicts/commit/8237697eb8c782fe46303c306882e1cee148959b))
+* Arabic - Ignore certain accents ([#1317](https://github.com/streetsidesoftware/cspell-dicts/issues/1317)) ([8237697](https://github.com/streetsidesoftware/cspell-dicts/commit/8237697eb8c782fe46303c306882e1cee148959b)), closes [#1314](https://github.com/streetsidesoftware/cspell-dicts/issues/1314)
+* Improve the Arabic dictionary ([#1315](https://github.com/streetsidesoftware/cspell-dicts/issues/1315)) ([2c5e32a](https://github.com/streetsidesoftware/cspell-dicts/commit/2c5e32a01d877507f856d3aebef4cdba08ff83dc))
+
+
+### Continuous Integration
+
+* Workflow Bot -- Update ALL Dependencies ([c656b33](https://github.com/streetsidesoftware/cspell-dicts/commit/c656b339b3eaf5c5e7440cd75bb20e5279f65914))
+* Workflow Bot -- Update ALL Dependencies ([42adbd1](https://github.com/streetsidesoftware/cspell-dicts/commit/42adbd1119e54a27276c795fdf1a1a3e907f168d))
+* Workflow Bot -- Update ALL Dependencies ([5964ac9](https://github.com/streetsidesoftware/cspell-dicts/commit/5964ac9675b3ed5e8ba7d36a1892aa07f3280e7e))
+* Workflow Bot -- Update ALL Dependencies (main) ([#1312](https://github.com/streetsidesoftware/cspell-dicts/issues/1312)) ([5964ac9](https://github.com/streetsidesoftware/cspell-dicts/commit/5964ac9675b3ed5e8ba7d36a1892aa07f3280e7e))
+* Workflow Bot -- Update ALL Dependencies (main) ([#1316](https://github.com/streetsidesoftware/cspell-dicts/issues/1316)) ([42adbd1](https://github.com/streetsidesoftware/cspell-dicts/commit/42adbd1119e54a27276c795fdf1a1a3e907f168d))
+* Workflow Bot -- Update ALL Dependencies (main) ([#1318](https://github.com/streetsidesoftware/cspell-dicts/issues/1318)) ([c656b33](https://github.com/streetsidesoftware/cspell-dicts/commit/c656b339b3eaf5c5e7440cd75bb20e5279f65914))
+
 ## [1.1.9](https://github.com/streetsidesoftware/cspell-dicts/compare/cspell-dicts@1.1.8...cspell-dicts@1.1.9) (2022-07-28)
 
 
