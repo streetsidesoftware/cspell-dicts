@@ -1,4 +1,5 @@
 {
+    "$schema": "https://raw.githubusercontent.com/streetsidesoftware/cspell/main/cspell.schema.json",
     "id": "ar",
     "version": "0.2",
     "name": "Arabic",
@@ -14,12 +15,13 @@
                 "locale": "ar",
                 "suggestionEditCosts": [
                     {
-                        "map": "\u0626\u0627\u0648\u0649\u06c6\u06c7\u06c8\u06d0\u06d5",
+                        "map": "\u0626\u0627\u0640\u0648\u0649\u064b\u064c\u064d\u064e\u064f\u0650\u0651\u0651\u0670\u06c6\u06c7\u06c8\u06d0\u06d5",
                         "insDel": 1,
                         "replace": 1,
                         "swap": 1
                     }
-                ]
+                ],
+                "ignore": "\u0640\u064b\u064c\u064d\u064e\u064f\u0650\u0651\u0651\u0670"
             }
         }
     ],
