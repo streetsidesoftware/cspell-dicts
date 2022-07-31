@@ -1395,9 +1395,9 @@
     form-data "^3.0.0"
 
 "@types/node@*":
-  version "18.6.2"
-  resolved "https://registry.npmjs.org/@types/node/-/node-18.6.2.tgz#ffc5f0f099d27887c8d9067b54e55090fcd54126"
-  integrity sha512-KcfkBq9H4PI6Vpu5B/KoPeuVDAbmi+2mDBqGPGUgoL7yXQtcWGu2vJWmmRkneWK3Rh0nIAX192Aa87AqKHYChQ==
+  version "18.6.3"
+  resolved "https://registry.npmjs.org/@types/node/-/node-18.6.3.tgz#4e4a95b6fe44014563ceb514b2598b3e623d1c98"
+  integrity sha512-6qKpDtoaYLM+5+AFChLhHermMQxc3TOEFIDzrZLPRGHPrLEwqFkkT5Kx3ju05g6X7uDPazz3jHbKPX0KzCjntg==
 
 "@types/node@^15.6.1":
   version "15.14.9"
@@ -2684,7 +2684,7 @@ cross-spawn@^6.0.0, cross-spawn@^6.0.5:
     shebang-command "^1.2.0"
     which "^1.2.9"
 
-cross-spawn@^7.0.0, cross-spawn@^7.0.1, cross-spawn@^7.0.2, cross-spawn@^7.0.3:
+cross-spawn@^7.0.1, cross-spawn@^7.0.2, cross-spawn@^7.0.3:
   version "7.0.3"
   resolved "https://registry.npmjs.org/cross-spawn/-/cross-spawn-7.0.3.tgz#f73a85b9d5d41d045551c177e2882d4ac85728a6"
   integrity sha512-iRDPJKUPVEND7dHPO8rkbOnPpyDygcDFtWjpeWNCgy8WP2rXcxXL8TskReQl6OrB2G7+UJrags1q15Fudc7G6w==
@@ -3374,22 +3374,7 @@ execa@^1.0.0:
     signal-exit "^3.0.0"
     strip-eof "^1.0.0"
 
-execa@^4.1.0:
-  version "4.1.0"
-  resolved "https://registry.npmjs.org/execa/-/execa-4.1.0.tgz#4e5491ad1572f2f17a77d388c6c857135b22847a"
-  integrity sha512-j5W0//W7f8UxAn8hXVnwG8tLwdiUy4FJLcSupCg6maBYZDpyBvTApK7KyuI4bKj8KOh1r2YH+6ucuYtJv1bTZA==
-  dependencies:
-    cross-spawn "^7.0.0"
-    get-stream "^5.0.0"
-    human-signals "^1.1.1"
-    is-stream "^2.0.0"
-    merge-stream "^2.0.0"
-    npm-run-path "^4.0.0"
-    onetime "^5.1.0"
-    signal-exit "^3.0.2"
-    strip-final-newline "^2.0.0"
-
-execa@^5.0.0:
+execa@^5.0.0, execa@^5.1.1:
   version "5.1.1"
   resolved "https://registry.npmjs.org/execa/-/execa-5.1.1.tgz#f80ad9cbf4298f7bd1d4c9555c21e93741c411dd"
   integrity sha512-8uSpZZocAZRBAPIEINJj3Lo9HyGitllczc27Eh5YYojjMFMn8yHMDMaUHE2Jqfq05D/wucwI4JGURyXt1vchyg==
@@ -3833,7 +3818,7 @@ get-stream@^4.0.0:
   dependencies:
     pump "^3.0.0"
 
-get-stream@^5.0.0, get-stream@^5.1.0:
+get-stream@^5.1.0:
   version "5.2.0"
   resolved "https://registry.npmjs.org/get-stream/-/get-stream-5.2.0.tgz#4966a1795ee5ace65e706c4b7beb71257d6e22d3"
   integrity sha512-nBF+F1rAZVCu/p7rjzgA+Yb4lfYXrpl7a6VmJrU8wF9I1CKvP/QwPNZHnOlwbTkY6dvtFIzFMSyQXbLoTQPRpA==
@@ -4205,11 +4190,6 @@ https-proxy-agent@^5.0.0:
   dependencies:
     agent-base "6"
     debug "4"
-
-human-signals@^1.1.1:
-  version "1.1.1"
-  resolved "https://registry.npmjs.org/human-signals/-/human-signals-1.1.1.tgz#c5b1cd14f50aeae09ab6c59fe63ba3395fe4dfa3"
-  integrity sha512-SEQu7vl8KjNL2eoGBLF3+wAjpsNfA9XMlXAYj/3EdaNfAlxKthD1xjEQfGOUhllCGGJVNY34bRr6lPINhNjyZw==
 
 human-signals@^2.1.0:
   version "2.1.0"
@@ -4714,7 +4694,7 @@ isarray@~1.0.0:
   resolved "https://registry.npmjs.org/isarray/-/isarray-1.0.0.tgz#bb935d48582cba168c06834957a54a3e07124f11"
   integrity sha512-VLghIWNM6ELQzo7zwmcg0NmTVyWKYjvIeM83yjp0wRDTmUnrM678fQbcKBo6n2CJEF0szoG//ytg+TKla89ALQ==
 
-isbinaryfile@^4.0.8:
+isbinaryfile@^4.0.10, isbinaryfile@^4.0.8:
   version "4.0.10"
   resolved "https://registry.npmjs.org/isbinaryfile/-/isbinaryfile-4.0.10.tgz#0c5b5e30c2557a2f06febd37b7322946aaee42b3"
   integrity sha512-iHrqe5shvBUcFbmZq9zOQHBoeOhZJu6RQGrDpBgenUm/Am+F3JM2MgQj+rK3Z601fzrL5gLZWtAPH2OBaSVcyw==
@@ -5801,7 +5781,7 @@ npm-run-path@^2.0.0:
   dependencies:
     path-key "^2.0.0"
 
-npm-run-path@^4.0.0, npm-run-path@^4.0.1:
+npm-run-path@^4.0.1:
   version "4.0.1"
   resolved "https://registry.npmjs.org/npm-run-path/-/npm-run-path-4.0.1.tgz#b7ecd1e5ed53da8e37a55e1c2269e0b97ed748ea"
   integrity sha512-S48WzZW777zhNIrn7gxOlISNAqi9ZC/uQFnRdbeIHhZhCA6UqpkOT8T1G7BvfdgP4Er8gF4sUbaS0i7QvIfCWw==
@@ -8246,9 +8226,9 @@ yeoman-doctor@^5.0.0:
     user-home "^2.0.0"
 
 yeoman-environment@^3.5.1:
-  version "3.9.1"
-  resolved "https://registry.npmjs.org/yeoman-environment/-/yeoman-environment-3.9.1.tgz#21912bdee4b1d302a5c25a7d31338fa092ea7116"
-  integrity sha512-IdRnbQt/DSOSnao0oD9c+or1X2UrL+fx9eC0O7Lq/MGZV68nhv9k77MqG+hEAySPSlyCpocVlhfQwV62hczk5Q==
+  version "3.10.0"
+  resolved "https://registry.npmjs.org/yeoman-environment/-/yeoman-environment-3.10.0.tgz#d8c56571b68d16b4af8abfb950f83acc503eed77"
+  integrity sha512-sYtSxBK9daq21QjoskJTHKLQ1xEsRPURkmFV/aM8HS8ZlQVzwx57Rz1zCs8EGPhK4vqsmTE8H92Gp1jg1fT3EA==
   dependencies:
     "@npmcli/arborist" "^4.0.4"
     are-we-there-yet "^2.0.0"
@@ -8268,6 +8248,7 @@ yeoman-environment@^3.5.1:
     grouped-queue "^2.0.0"
     inquirer "^8.0.0"
     is-scoped "^2.1.0"
+    isbinaryfile "^4.0.10"
     lodash "^4.17.10"
     log-symbols "^4.0.0"
     mem-fs "^1.2.0 || ^2.0.0"
@@ -8286,15 +8267,15 @@ yeoman-environment@^3.5.1:
     textextensions "^5.12.0"
     untildify "^4.0.0"
 
-yeoman-generator@^5.6.1:
-  version "5.6.1"
-  resolved "https://registry.npmjs.org/yeoman-generator/-/yeoman-generator-5.6.1.tgz#850fd266a5ab26d9d1cb9c46ad646f06eade4a1d"
-  integrity sha512-XllgFvmDEwoPMq2rKtL4/N52WlINJW6a3I3XtlCrMb3/dqO5dW0nPNgR0L3IIUIdf9y1EHb1ZFMs2Qp3ZEEFxg==
+yeoman-generator@^5.7.0:
+  version "5.7.0"
+  resolved "https://registry.npmjs.org/yeoman-generator/-/yeoman-generator-5.7.0.tgz#5cf24b9fca331646263749121d4f8d477698a83a"
+  integrity sha512-z9ZwgKoDOd+llPDCwn8Ax2l4In5FMhlslxdeByW4AMxhT+HbTExXKEAahsClHSbwZz1i5OzRwLwRIUdOJBr5Bw==
   dependencies:
     chalk "^4.1.0"
     dargs "^7.0.0"
     debug "^4.1.1"
-    execa "^4.1.0"
+    execa "^5.1.1"
     github-username "^6.0.0"
     lodash "^4.17.11"
     minimist "^1.2.5"
