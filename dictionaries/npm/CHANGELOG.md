@@ -3,6 +3,15 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+## [3.1.1](https://github.com/streetsidesoftware/cspell-dicts/compare/@cspell/dict-npm@3.1.0...@cspell/dict-npm@3.1.1) (2022-08-02)
+
+
+### Updates and Bug Fixes
+
+* add `browserslist` to npm.txt ([#1328](https://github.com/streetsidesoftware/cspell-dicts/issues/1328)) ([5f9efd5](https://github.com/streetsidesoftware/cspell-dicts/commit/5f9efd5f1f973d09005db9e35f8279e702ac1c00))
+* add `dropzone` to npm.txt ([#1330](https://github.com/streetsidesoftware/cspell-dicts/issues/1330)) ([d586c8a](https://github.com/streetsidesoftware/cspell-dicts/commit/d586c8a366d54c3c5b244717de06cca245412ea5))
+* add `jszip` npm.txt ([#1329](https://github.com/streetsidesoftware/cspell-dicts/issues/1329)) ([8cee12f](https://github.com/streetsidesoftware/cspell-dicts/commit/8cee12f36c2a338642cecd603606070aad623e71))
+
 ## [3.1.0](https://github.com/streetsidesoftware/cspell-dicts/compare/@cspell/dict-npm@3.0.1...@cspell/dict-npm@3.1.0) (2022-07-23)
 
 

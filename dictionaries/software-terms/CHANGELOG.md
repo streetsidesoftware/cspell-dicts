@@ -3,6 +3,13 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+## [2.2.2](https://github.com/streetsidesoftware/cspell-dicts/compare/@cspell/dict-software-terms@2.2.1...@cspell/dict-software-terms@2.2.2) (2022-08-02)
+
+
+### Updates and Bug Fixes
+
+* add `launchdarkly` to software-tools.txt ([#1327](https://github.com/streetsidesoftware/cspell-dicts/issues/1327)) ([e16bf44](https://github.com/streetsidesoftware/cspell-dicts/commit/e16bf448c485966533bfbd168b5fe46cc7b1d316))
+
 ## [2.2.1](https://github.com/streetsidesoftware/cspell-dicts/compare/@cspell/dict-software-terms@2.2.0...@cspell/dict-software-terms@2.2.1) (2022-07-26)
 
 
