@@ -3,6 +3,13 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+## [2.0.10](https://github.com/streetsidesoftware/cspell-dicts/compare/@cspell/dict-companies@2.0.9...@cspell/dict-companies@2.0.10) (2022-08-02)
+
+
+### Updates and Bug Fixes
+
+* `Mockito` and `Yext` to Companies ([#1326](https://github.com/streetsidesoftware/cspell-dicts/issues/1326)) ([9c699bc](https://github.com/streetsidesoftware/cspell-dicts/commit/9c699bc6d0a7b0ddbf36dbef5eb7cfd24e510124))
+
 ## [2.0.9](https://github.com/streetsidesoftware/cspell-dicts/compare/@cspell/dict-companies@2.0.8...@cspell/dict-companies@2.0.9) (2022-07-26)
 
 

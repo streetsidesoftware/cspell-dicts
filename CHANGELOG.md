@@ -1,5 +1,33 @@
 # Release Notes
 
+## [1.1.11](https://github.com/streetsidesoftware/cspell-dicts/compare/cspell-dicts@1.1.10...cspell-dicts@1.1.11) (2022-08-02)
+
+
+### Build System
+
+* **deps-dev:** bump aoo-mozilla-en-dict from `984ec1c` to `89f797a` ([#1321](https://github.com/streetsidesoftware/cspell-dicts/issues/1321)) ([3072c6f](https://github.com/streetsidesoftware/cspell-dicts/commit/3072c6fcd5987d9e3b02ec8e0a1dd7f1a13360d7))
+* **deps:** bump streetsidesoftware/cspell-action from 2.3.0 to 2.4.0 ([#1322](https://github.com/streetsidesoftware/cspell-dicts/issues/1322)) ([042ce39](https://github.com/streetsidesoftware/cspell-dicts/commit/042ce39c18be2705663e7e153ee0576baab2085a))
+
+
+### Updates and Bug Fixes
+
+* `Mockito` and `Yext` to Companies ([#1326](https://github.com/streetsidesoftware/cspell-dicts/issues/1326)) ([9c699bc](https://github.com/streetsidesoftware/cspell-dicts/commit/9c699bc6d0a7b0ddbf36dbef5eb7cfd24e510124))
+* add `browserslist` to npm.txt ([#1328](https://github.com/streetsidesoftware/cspell-dicts/issues/1328)) ([5f9efd5](https://github.com/streetsidesoftware/cspell-dicts/commit/5f9efd5f1f973d09005db9e35f8279e702ac1c00))
+* add `dropzone` to npm.txt ([#1330](https://github.com/streetsidesoftware/cspell-dicts/issues/1330)) ([d586c8a](https://github.com/streetsidesoftware/cspell-dicts/commit/d586c8a366d54c3c5b244717de06cca245412ea5))
+* add `jszip` npm.txt ([#1329](https://github.com/streetsidesoftware/cspell-dicts/issues/1329)) ([8cee12f](https://github.com/streetsidesoftware/cspell-dicts/commit/8cee12f36c2a338642cecd603606070aad623e71))
+* add `launchdarkly` to software-tools.txt ([#1327](https://github.com/streetsidesoftware/cspell-dicts/issues/1327)) ([e16bf44](https://github.com/streetsidesoftware/cspell-dicts/commit/e16bf448c485966533bfbd168b5fe46cc7b1d316))
+* add some country names ([#1331](https://github.com/streetsidesoftware/cspell-dicts/issues/1331)) ([625bdf6](https://github.com/streetsidesoftware/cspell-dicts/commit/625bdf62944247dfebe6057ad244b1883f3fc083))
+
+
+### Continuous Integration
+
+* Workflow Bot -- Build Dictionaries ([#1324](https://github.com/streetsidesoftware/cspell-dicts/issues/1324)) ([25b75a5](https://github.com/streetsidesoftware/cspell-dicts/commit/25b75a54e0dff74cabc3e67e0f41736135a8d6e1))
+* Workflow Bot -- Build Dictionaries ([#1332](https://github.com/streetsidesoftware/cspell-dicts/issues/1332)) ([862a2a1](https://github.com/streetsidesoftware/cspell-dicts/commit/862a2a16eeeacee9ac05c8eb5d160cf2253f8db1))
+* Workflow Bot -- Update ALL Dependencies ([aa1d0c0](https://github.com/streetsidesoftware/cspell-dicts/commit/aa1d0c0589a1c679b606f1b6279088e72ebbb191))
+* Workflow Bot -- Update ALL Dependencies ([41ab7b6](https://github.com/streetsidesoftware/cspell-dicts/commit/41ab7b65c511c3438f03d4714c5eac9861598269))
+* Workflow Bot -- Update ALL Dependencies (main) ([#1319](https://github.com/streetsidesoftware/cspell-dicts/issues/1319)) ([41ab7b6](https://github.com/streetsidesoftware/cspell-dicts/commit/41ab7b65c511c3438f03d4714c5eac9861598269))
+* Workflow Bot -- Update ALL Dependencies (main) ([#1325](https://github.com/streetsidesoftware/cspell-dicts/issues/1325)) ([aa1d0c0](https://github.com/streetsidesoftware/cspell-dicts/commit/aa1d0c0589a1c679b606f1b6279088e72ebbb191))
+
 ## [1.1.10](https://github.com/streetsidesoftware/cspell-dicts/compare/cspell-dicts@1.1.9...cspell-dicts@1.1.10) (2022-07-29)
 
 
