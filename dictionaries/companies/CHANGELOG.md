@@ -3,6 +3,13 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+## [2.0.11](https://github.com/streetsidesoftware/cspell-dicts/compare/@cspell/dict-companies@2.0.10...@cspell/dict-companies@2.0.11) (2022-08-07)
+
+
+### Updates and Bug Fixes
+
+* add `Swyftx` to Companies ([#1333](https://github.com/streetsidesoftware/cspell-dicts/issues/1333)) ([32c82c8](https://github.com/streetsidesoftware/cspell-dicts/commit/32c82c8fe71f6dd083cf0f3d95334032d6f4d88a))
+
 ## [2.0.10](https://github.com/streetsidesoftware/cspell-dicts/compare/@cspell/dict-companies@2.0.9...@cspell/dict-companies@2.0.10) (2022-08-02)
 
 
