@@ -1,5 +1,19 @@
 # Release Notes
 
+## [1.1.12](https://github.com/streetsidesoftware/cspell-dicts/compare/cspell-dicts@1.1.11...cspell-dicts@1.1.12) (2022-08-07)
+
+
+### Updates and Bug Fixes
+
+* add `pnpm` package manager ([#1335](https://github.com/streetsidesoftware/cspell-dicts/issues/1335)) ([e1b5f61](https://github.com/streetsidesoftware/cspell-dicts/commit/e1b5f619ff80108e177e80369baa147c98de04be))
+* add `Swyftx` to Companies ([#1333](https://github.com/streetsidesoftware/cspell-dicts/issues/1333)) ([32c82c8](https://github.com/streetsidesoftware/cspell-dicts/commit/32c82c8fe71f6dd083cf0f3d95334032d6f4d88a))
+
+
+### Continuous Integration
+
+* Workflow Bot -- Update ALL Dependencies ([6dc8557](https://github.com/streetsidesoftware/cspell-dicts/commit/6dc8557092189abf0db33b515b844f037f720091))
+* Workflow Bot -- Update ALL Dependencies (main) ([#1336](https://github.com/streetsidesoftware/cspell-dicts/issues/1336)) ([6dc8557](https://github.com/streetsidesoftware/cspell-dicts/commit/6dc8557092189abf0db33b515b844f037f720091))
+
 ## [1.1.11](https://github.com/streetsidesoftware/cspell-dicts/compare/cspell-dicts@1.1.10...cspell-dicts@1.1.11) (2022-08-02)
 
 
