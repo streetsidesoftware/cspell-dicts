@@ -83,15 +83,10 @@
   resolved "https://registry.npmjs.org/@cspell/cspell-pipe/-/cspell-pipe-5.21.2.tgz#7adfbc66426ee28549fd72a39deec7b98a76b320"
   integrity sha512-MN1SXeqqurWYNknbUMPHRFyTvURbO53/1Aw3zEoCeVUSiGbD5rrb1N+t0YDbOphWrkkrJAZk82/2ZBJ2USE/vg==
 
-"@cspell/cspell-pipe@^6.4.2", "@cspell/cspell-pipe@^6.6.0":
+"@cspell/cspell-pipe@^6.6.0":
   version "6.6.0"
   resolved "https://registry.yarnpkg.com/@cspell/cspell-pipe/-/cspell-pipe-6.6.0.tgz#6d2afc6837f0cb7d795a43855b3288d3cc4a7f68"
   integrity sha512-0pGTcIS8cf3qPeizdmH0hMkIF5c6uWwGdyHCGECH9PmNiTx78jtwoELENYDkRwZmA0tAKwignA+PGxcpDBEwWg==
-
-"@cspell/cspell-service-bus@^6.5.0":
-  version "6.5.0"
-  resolved "https://registry.npmjs.org/@cspell/cspell-service-bus/-/cspell-service-bus-6.5.0.tgz#af7facae0b22fa1232812174ddbfb259df47e377"
-  integrity sha512-ZcQ3IZ/GHusKtHYn1BYKMauF/GhDby2uBsPfjCMwhvtSHaJy34tWS8i0xh8+awX2nKYGcyEm3Nsh5dazof3EzA==
 
 "@cspell/cspell-service-bus@^6.6.0":
   version "6.6.0"
@@ -99,17 +94,17 @@
   integrity sha512-jD/yHZSFnWYdmmfSryPQAdFa0BK+BQ7JzXaqiVPKpVZ+QjlIaZwtsg1rn3aC958mDx6rUlH2wkGPFlNzhY705g==
 
 "@cspell/cspell-tools@^6.5.0":
-  version "6.5.0"
-  resolved "https://registry.npmjs.org/@cspell/cspell-tools/-/cspell-tools-6.5.0.tgz#369f83b7f74c0aa0a3915d0bf71eb6b62dfa02a2"
-  integrity sha512-HS+wgq/0xaSN2DXrxSNK3BulzAZM45diniZ/dIVSWUCWfYeYRx/dpKlFHtKJ9TqJms9nmnZ+eJKUjr1OvOZJeg==
+  version "6.6.0"
+  resolved "https://registry.yarnpkg.com/@cspell/cspell-tools/-/cspell-tools-6.6.0.tgz#00f95214fa9e4d48893482164e63d517bfc7d052"
+  integrity sha512-fM7aRSy+oj4mA8KqpnNYCrzj+hyNOl/x5+vhk2YZSd3oUttLJkr3F4/djwNZRPBBXB2RwR3pUJKfMDwVPM3FlA==
   dependencies:
     commander "^9.4.0"
-    cspell-io "^6.5.0"
-    cspell-trie-lib "^6.5.0"
+    cspell-io "^6.6.0"
+    cspell-trie-lib "^6.6.0"
     fs-extra "^10.1.0"
     gensequence "^3.1.1"
     glob "^8.0.3"
-    hunspell-reader "^6.4.2"
+    hunspell-reader "^6.6.0"
 
 "@cspell/cspell-types@^6.6.0":
   version "6.6.0"
@@ -2741,15 +2736,6 @@ cspell-io@^5.1.0:
   resolved "https://registry.npmjs.org/cspell-io/-/cspell-io-5.21.2.tgz#d9087163b1c8ad11c6f94cb7dddf8c57eb97fabe"
   integrity sha512-3J4cLuN59R7ARiRZ8ke5QwlC5uPfzHLVELOtEAmsTIjuUMvr7BpbrdCuTsUvLkAqYE9NA5eqolqQm3GLXnECNw==
 
-cspell-io@^6.5.0:
-  version "6.5.0"
-  resolved "https://registry.npmjs.org/cspell-io/-/cspell-io-6.5.0.tgz#bbd88ada6fd0ab16563fb001aba62c8f94de1140"
-  integrity sha512-Vm/Ra3bIDGL6P4CUeTwlQtpyep/rEli8W//tMxo+8Or5ya9hZBFZOa0//QlZSyUU7UjzrG83lPaZrs4XVsVZFw==
-  dependencies:
-    "@cspell/cspell-service-bus" "^6.5.0"
-    "@types/node-fetch" "^2.6.2"
-    node-fetch "^2.6.7"
-
 cspell-io@^6.6.0:
   version "6.6.0"
   resolved "https://registry.yarnpkg.com/cspell-io/-/cspell-io-6.6.0.tgz#1bdc94426d65b26a6797efd700859472e21c0038"
@@ -2805,15 +2791,6 @@ cspell-trie-lib@^5.1.0:
   integrity sha512-iux2F+85jDlBEJZgikfPT5SUZMwuFjNqEJiO1SO+xfQG+2MFV9CaHTsoRJIGNy3udMm1mw0GMY5UIVAodwlnhg==
   dependencies:
     "@cspell/cspell-pipe" "^5.21.2"
-    fs-extra "^10.1.0"
-    gensequence "^3.1.1"
-
-cspell-trie-lib@^6.5.0:
-  version "6.5.0"
-  resolved "https://registry.npmjs.org/cspell-trie-lib/-/cspell-trie-lib-6.5.0.tgz#3924ca3ccb4181daa8065cb168a5d199deeaa7d6"
-  integrity sha512-bXc/YpbHA/xbtRJV7ocNyo3RFSAOLaz3iR+8KyWFNrIQqGOuaCslHkpRfkdZPOBYiOE8z3tjVoVQkrUYUuYWcQ==
-  dependencies:
-    "@cspell/cspell-pipe" "^6.4.2"
     fs-extra "^10.1.0"
     gensequence "^3.1.1"
 
@@ -4257,10 +4234,10 @@ hunspell-reader@^3.2.0:
     gensequence "^3.0.1"
     iconv-lite "^0.5.0"
 
-hunspell-reader@^6.4.2:
-  version "6.4.2"
-  resolved "https://registry.npmjs.org/hunspell-reader/-/hunspell-reader-6.4.2.tgz#a8e152c29f95bf87eedca25c904e95dd741872ef"
-  integrity sha512-IY5lQ90C/mChUVRLl4LjiDkAUDKVXXOafCnypHCHvP/ckyh4mxB+lZ2Ulyv8NT9RrgVMB0+Qw0y9HSSmoRSG1w==
+hunspell-reader@^6.4.2, hunspell-reader@^6.6.0:
+  version "6.6.0"
+  resolved "https://registry.yarnpkg.com/hunspell-reader/-/hunspell-reader-6.6.0.tgz#82254c5492b48532bcdcdd785ef97658e3f1658e"
+  integrity sha512-7w0R3fto7ztP10iWGAeV8P0vqOUejKr58qGD2UKvCDkRH6iDevS9hTerIApFvSDAmIPVO5XPSKmec9gXSwHlvA==
   dependencies:
     commander "^9.4.0"
     fs-extra "^10.1.0"
