@@ -1,13 +1,13 @@
----
+<!---
 name: Add to Dictionary
 about: PR for adding (to) a dictionary
 title: 'fix: '
 labels: dictionary
----
+--->
 
 # Add/Fix Dictionary
 
-_dictionary_
+Dictionary: _dictionary_
 
 ## Description
 
