@@ -1,5 +1,23 @@
 # Release Notes
 
+## [1.1.13](https://github.com/streetsidesoftware/cspell-dicts/compare/cspell-dicts@1.1.12...cspell-dicts@1.1.13) (2022-08-10)
+
+
+### Build System
+
+* **deps:** bump cspell from 6.5.0 to 6.6.0 ([#1340](https://github.com/streetsidesoftware/cspell-dicts/issues/1340)) ([30a6374](https://github.com/streetsidesoftware/cspell-dicts/commit/30a6374e984d1d6b5b40b2beb61003c2c74ac89d))
+
+
+### Continuous Integration
+
+* Workflow Bot -- Update ALL Dependencies ([c51dc8f](https://github.com/streetsidesoftware/cspell-dicts/commit/c51dc8fc1de755e586411b4bd3c6d7bcbdd9f931))
+* Workflow Bot -- Update ALL Dependencies (main) ([#1342](https://github.com/streetsidesoftware/cspell-dicts/issues/1342)) ([c51dc8f](https://github.com/streetsidesoftware/cspell-dicts/commit/c51dc8fc1de755e586411b4bd3c6d7bcbdd9f931))
+
+
+### Updates and Bug Fixes
+
+* add Gamepad API ([2d3597e](https://github.com/streetsidesoftware/cspell-dicts/commit/2d3597e604499ee38460d1c1dc92f92f6530bee2))
+
 ## [1.1.12](https://github.com/streetsidesoftware/cspell-dicts/compare/cspell-dicts@1.1.11...cspell-dicts@1.1.12) (2022-08-07)
 
 

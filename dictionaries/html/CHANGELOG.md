@@ -3,6 +3,13 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+## [3.0.3](https://github.com/streetsidesoftware/cspell-dicts/compare/@cspell/dict-html@3.0.2...@cspell/dict-html@3.0.3) (2022-08-10)
+
+
+### Updates and Bug Fixes
+
+* add Gamepad API ([2d3597e](https://github.com/streetsidesoftware/cspell-dicts/commit/2d3597e604499ee38460d1c1dc92f92f6530bee2))
+
 ## [3.0.2](https://github.com/streetsidesoftware/cspell-dicts/compare/@cspell/dict-html@3.0.1...@cspell/dict-html@3.0.2) (2022-06-14)
 
 
