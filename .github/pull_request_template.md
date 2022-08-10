@@ -1,11 +1,11 @@
 ---
-name: Add New Dictionary
-about: PR to add a new dictionary
+name: Add to Dictionary
+about: PR for adding (to) a dictionary
 title: 'fix: '
 labels: dictionary
 ---
 
-# Add Dictionary
+# Add/Fix Dictionary
 
 _dictionary_
 
