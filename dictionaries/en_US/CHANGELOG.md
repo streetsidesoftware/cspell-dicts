@@ -3,6 +3,18 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+## [2.3.1](https://github.com/streetsidesoftware/cspell-dicts/compare/@cspell/dict-en_us@2.3.0...@cspell/dict-en_us@2.3.1) (2022-08-11)
+
+
+### Updates and Bug Fixes
+
+* Add backtick to English dictionary ([#1351](https://github.com/streetsidesoftware/cspell-dicts/issues/1351)) ([38b97aa](https://github.com/streetsidesoftware/cspell-dicts/commit/38b97aab0e546c3d061fbfc05718535555f01e52))
+
+
+### Continuous Integration
+
+* Workflow Bot -- Build Dictionaries ([#1352](https://github.com/streetsidesoftware/cspell-dicts/issues/1352)) ([b4f2454](https://github.com/streetsidesoftware/cspell-dicts/commit/b4f24543104c1bbd90646562816fc53c427fd797))
+
 ## [2.3.0](https://github.com/streetsidesoftware/cspell-dicts/compare/@cspell/dict-en_us@2.2.10...@cspell/dict-en_us@2.3.0) (2022-07-17)
 
 
