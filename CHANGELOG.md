@@ -1,5 +1,33 @@
 # Release Notes
 
+## [1.1.14](https://github.com/streetsidesoftware/cspell-dicts/compare/cspell-dicts@1.1.13...cspell-dicts@1.1.14) (2022-08-11)
+
+
+### Build System
+
+* **deps:** bump cspell from 6.6.0 to 6.6.1 ([#1348](https://github.com/streetsidesoftware/cspell-dicts/issues/1348)) ([5745e69](https://github.com/streetsidesoftware/cspell-dicts/commit/5745e691adff487e54bb93d9ae766390f694595c))
+
+
+### Miscellaneous
+
+* add new PR templates ([#1350](https://github.com/streetsidesoftware/cspell-dicts/issues/1350)) ([54fc6ed](https://github.com/streetsidesoftware/cspell-dicts/commit/54fc6ed1bc4e3663e12f55029f8eb13707382bab))
+* Update PR Template ([75921de](https://github.com/streetsidesoftware/cspell-dicts/commit/75921de18db5fccc7b4ab8da430281b667f0008d))
+* Update pull_request_template.md ([eec9672](https://github.com/streetsidesoftware/cspell-dicts/commit/eec9672d90eedb4448845a3b40e536cd1f6d45fb))
+
+
+### Updates and Bug Fixes
+
+* Add backtick to English dictionary ([#1351](https://github.com/streetsidesoftware/cspell-dicts/issues/1351)) ([38b97aa](https://github.com/streetsidesoftware/cspell-dicts/commit/38b97aab0e546c3d061fbfc05718535555f01e52))
+
+
+### Continuous Integration
+
+* Workflow Bot -- Build Dictionaries ([#1352](https://github.com/streetsidesoftware/cspell-dicts/issues/1352)) ([b4f2454](https://github.com/streetsidesoftware/cspell-dicts/commit/b4f24543104c1bbd90646562816fc53c427fd797))
+* Workflow Bot -- Update ALL Dependencies ([53abbaa](https://github.com/streetsidesoftware/cspell-dicts/commit/53abbaa25fb5c0142a64ff7111763d4a5a017c82))
+* Workflow Bot -- Update ALL Dependencies ([3333b44](https://github.com/streetsidesoftware/cspell-dicts/commit/3333b44464b5b0cff257f963e77ca8875b18b583))
+* Workflow Bot -- Update ALL Dependencies (main) ([#1344](https://github.com/streetsidesoftware/cspell-dicts/issues/1344)) ([3333b44](https://github.com/streetsidesoftware/cspell-dicts/commit/3333b44464b5b0cff257f963e77ca8875b18b583))
+* Workflow Bot -- Update ALL Dependencies (main) ([#1349](https://github.com/streetsidesoftware/cspell-dicts/issues/1349)) ([53abbaa](https://github.com/streetsidesoftware/cspell-dicts/commit/53abbaa25fb5c0142a64ff7111763d4a5a017c82))
+
 ## [1.1.13](https://github.com/streetsidesoftware/cspell-dicts/compare/cspell-dicts@1.1.12...cspell-dicts@1.1.13) (2022-08-10)
 
 
