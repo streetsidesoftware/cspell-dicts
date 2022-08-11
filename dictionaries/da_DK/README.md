@@ -2,7 +2,7 @@
 
 Danish dictionary for cspell.
 
-This is a pre-built dictionary, based on [stavekontrolden.dk](http://www.stavekontrolden.dk/main/top/index.php), for use with cspell.
+This is a pre-built dictionary, based on [stavekontrolden.dk](https://www.stavekontrolden.dk), for use with cspell.
 
 ## Installation
 
