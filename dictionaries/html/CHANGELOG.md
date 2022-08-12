@@ -3,6 +3,13 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+## [3.0.4](https://github.com/streetsidesoftware/cspell-dicts/compare/@cspell/dict-html@3.0.3...@cspell/dict-html@3.0.4) (2022-08-12)
+
+
+### Updates and Bug Fixes
+
+* add MathML tags ([#1355](https://github.com/streetsidesoftware/cspell-dicts/issues/1355)) ([17b159a](https://github.com/streetsidesoftware/cspell-dicts/commit/17b159ac8f13c4aff3c96a6ebcbb54d1476d07be))
+
 ## [3.0.3](https://github.com/streetsidesoftware/cspell-dicts/compare/@cspell/dict-html@3.0.2...@cspell/dict-html@3.0.3) (2022-08-10)
 
 
