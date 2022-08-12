@@ -1,5 +1,13 @@
 # Release Notes
 
+## [1.1.15](https://github.com/streetsidesoftware/cspell-dicts/compare/cspell-dicts@1.1.14...cspell-dicts@1.1.15) (2022-08-12)
+
+
+### Updates and Bug Fixes
+
+* add MathML tags ([#1355](https://github.com/streetsidesoftware/cspell-dicts/issues/1355)) ([17b159a](https://github.com/streetsidesoftware/cspell-dicts/commit/17b159ac8f13c4aff3c96a6ebcbb54d1476d07be))
+* fix url for danish spell checker ([#1354](https://github.com/streetsidesoftware/cspell-dicts/issues/1354)) ([3ce076f](https://github.com/streetsidesoftware/cspell-dicts/commit/3ce076f5d8366841090fc0ad72f7d243d0f14087))
+
 ## [1.1.14](https://github.com/streetsidesoftware/cspell-dicts/compare/cspell-dicts@1.1.13...cspell-dicts@1.1.14) (2022-08-11)
 
 

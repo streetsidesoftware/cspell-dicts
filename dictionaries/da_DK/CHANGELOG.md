@@ -22,6 +22,13 @@ See [Conventional Commits](https://conventionalcommits.org) for commit guideline
 
 
 
+## [2.0.1](https://github.com/streetsidesoftware/cspell-dicts/compare/@cspell/dict-da-dk@2.0.0...@cspell/dict-da-dk@2.0.1) (2022-08-12)
+
+
+### Updates and Bug Fixes
+
+* fix url for danish spell checker ([#1354](https://github.com/streetsidesoftware/cspell-dicts/issues/1354)) ([3ce076f](https://github.com/streetsidesoftware/cspell-dicts/commit/3ce076f5d8366841090fc0ad72f7d243d0f14087))
+
 ## [1.0.29](https://github.com/streetsidesoftware/cspell-dicts/compare/@cspell/dict-da-dk@1.0.28...@cspell/dict-da-dk@1.0.29) (2021-05-25)
 
 **Note:** Version bump only for package @cspell/dict-da-dk
