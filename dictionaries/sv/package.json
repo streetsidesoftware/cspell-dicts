@@ -19,7 +19,7 @@
     "test-sv": "hunspell-reader words -n 1000 \"src/ooo-swedish-dict-2-42/dictionaries/sv_SE.dic\" | tail -n 200 | cspell -v -c ./cspell-ext.json --local=sv --languageId=* stdin",
     "test-samples": "cspell -v -c ./cspell-ext.json --local=sv,en \"samples/**\"",
     "test": "yarn run test-sv && yarn run test-samples",
-    "prepare": "gzip -k *.trie",
+    "prepare": "gzip -f -k *.trie",
     "prepublishOnly": "yarn run conditional-build && yarn test"
   },
   "repository": {

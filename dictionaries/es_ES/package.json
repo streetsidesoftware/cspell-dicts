@@ -25,7 +25,7 @@
     "test-dict": "hunspell-reader words -n 1000 \"src/hunspell/index.dic\" | cspell -v -c ./cspell-ext.json --local=es --languageId=* stdin",
     "test-text": "cspell",
     "test": "yarn run test-dict && yarn run test-text",
-    "prepare": "gzip -k *.trie",
+    "prepare": "gzip -f -k *.trie",
     "prepublishOnly": "echo pre-publish"
   },
   "repository": {
