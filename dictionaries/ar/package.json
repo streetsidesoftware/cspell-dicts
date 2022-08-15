@@ -11,7 +11,7 @@
     "./cspell-ext.json": "./cspell-ext.json"
   },
   "scripts": {
-    "build": "cat source-files.txt | xargs cross-env NODE_OPTIONS=--max_old_space_size=12288 cspell-tools-cli compile --trie3 -x compound -o . -M ar -m 5 && yarn run gen-checksum",
+    "build": "cat source-files.txt | xargs cross-env NODE_OPTIONS=--max_old_space_size=12288 cspell-tools-cli compile --trie3 -x compound -o . -M ar -m 5 --no-compress && yarn run gen-checksum",
     "checksum": "shasum -c checksum.txt",
     "conditional-build": "yarn run --silent checksum || yarn run build",
     "lint": "yarn prettier -w \"**/*.{md,json}\"",
@@ -20,6 +20,7 @@
     "test-samples": "cspell -v -c ./cspell-ext.json --local=ar,en \"samples/**\"",
     "test": "yarn run test-ar && yarn run test-samples",
     "sync": "./scripts/sync.sh && yarn lint",
+    "prepare": "gzip -k *.trie",
     "prepublishOnly": "yarn run conditional-build && yarn test"
   },
   "repository": {
