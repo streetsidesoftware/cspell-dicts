@@ -11,7 +11,7 @@
     "./cspell-ext.json": "./cspell-ext.json"
   },
   "scripts": {
-    "build": "cat source-files.txt | xargs cross-env NODE_OPTIONS=--max_old_space_size=12288 cspell-tools-cli compile --trie3 -x compound -o . -M Swedish && yarn run gen-checksum",
+    "build": "cat source-files.txt | xargs cross-env NODE_OPTIONS=--max_old_space_size=12288 cspell-tools-cli compile --trie3 -x compound -o . -M Swedish --no-compress && yarn run gen-checksum",
     "sync": "yarn cpy \"../../node_modules/dictionary-sv/**\" src/hunspell",
     "checksum": "shasum -c checksum.txt",
     "conditional-build": "yarn run --silent checksum || yarn run build",
@@ -19,6 +19,7 @@
     "test-sv": "hunspell-reader words -n 1000 \"src/ooo-swedish-dict-2-42/dictionaries/sv_SE.dic\" | tail -n 200 | cspell -v -c ./cspell-ext.json --local=sv --languageId=* stdin",
     "test-samples": "cspell -v -c ./cspell-ext.json --local=sv,en \"samples/**\"",
     "test": "yarn run test-sv && yarn run test-samples",
+    "prepare": "gzip -k *.trie",
     "prepublishOnly": "yarn run conditional-build && yarn test"
   },
   "repository": {

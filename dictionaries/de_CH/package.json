@@ -11,7 +11,7 @@
     "./cspell-ext.json": "./cspell-ext.json"
   },
   "scripts": {
-    "build": "cat source-files.txt | xargs cross-env NODE_OPTIONS=--max_old_space_size=12288 cspell-tools-cli compile --trie3 -x compound -o . -M de_CH && yarn run gen-checksum",
+    "build": "cat source-files.txt | xargs cross-env NODE_OPTIONS=--max_old_space_size=12288 cspell-tools-cli compile --trie3 -x compound -o . -M de_CH --no-compress && yarn run gen-checksum",
     "sync": "yarn cpy \"../../node_modules/dictionary-de-ch/**\" src/hunspell",
     "checksum": "shasum -c checksum.txt",
     "conditional-build": "yarn run --silent checksum || yarn run build",
@@ -19,6 +19,7 @@
     "test-de": "hunspell-reader words -n 1000 \"src/hunspell/index.dic\" | cspell -v -c ./cspell-ext.json --local=de --languageId=* stdin",
     "test-samples": "cspell -v -c ./cspell-ext.json --local=de,en \"samples/**\"",
     "test": "yarn run test-de && yarn run test-samples",
+    "prepare": "gzip -k *.trie",
     "prepublishOnly": "yarn run conditional-build && yarn test"
   },
   "repository": {
