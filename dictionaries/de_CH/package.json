@@ -19,7 +19,7 @@
     "test-de": "hunspell-reader words -n 1000 \"src/hunspell/index.dic\" | cspell -v -c ./cspell-ext.json --local=de --languageId=* stdin",
     "test-samples": "cspell -v -c ./cspell-ext.json --local=de,en \"samples/**\"",
     "test": "yarn run test-de && yarn run test-samples",
-    "prepare": "gzip -k *.trie",
+    "prepare": "gzip -f -k *.trie",
     "prepublishOnly": "yarn run conditional-build && yarn test"
   },
   "repository": {

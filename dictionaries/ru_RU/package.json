@@ -20,7 +20,7 @@
     "test-russian": "hunspell-reader words -n 1000 \"src/Russian.dic\" | cspell -v -c ./cspell-ext.json --local=ru --languageId=* stdin",
     "test-samples": "cspell -v -c ./cspell-ext.json --local=ru,en \"samples/**\"",
     "test": "yarn run test-ru_ru && yarn run test-russian && yarn run test-samples",
-    "prepare": "gzip -k *.trie",
+    "prepare": "gzip -f -k *.trie",
     "prepublishOnly": "yarn run conditional-build && yarn test"
   },
   "repository": {

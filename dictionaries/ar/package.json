@@ -20,7 +20,7 @@
     "test-samples": "cspell -v -c ./cspell-ext.json --local=ar,en \"samples/**\"",
     "test": "yarn run test-ar && yarn run test-samples",
     "sync": "./scripts/sync.sh && yarn lint",
-    "prepare": "gzip -k *.trie",
+    "prepare": "gzip -f -k *.trie",
     "prepublishOnly": "yarn run conditional-build && yarn test"
   },
   "repository": {
