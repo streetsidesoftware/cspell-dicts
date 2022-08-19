@@ -3,6 +3,13 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+## [3.0.5](https://github.com/streetsidesoftware/cspell-dicts/compare/@cspell/dict-html@3.0.4...@cspell/dict-html@3.0.5) (2022-08-19)
+
+
+### Updates and Bug Fixes
+
+* added `nobr` entry ([#1369](https://github.com/streetsidesoftware/cspell-dicts/issues/1369)) ([9a6525c](https://github.com/streetsidesoftware/cspell-dicts/commit/9a6525c9cde8e1c9ade36c54019dbaf53e9eb5bc))
+
 ## [3.0.4](https://github.com/streetsidesoftware/cspell-dicts/compare/@cspell/dict-html@3.0.3...@cspell/dict-html@3.0.4) (2022-08-12)
 
 

@@ -1,5 +1,41 @@
 # Release Notes
 
+## [1.1.16](https://github.com/streetsidesoftware/cspell-dicts/compare/cspell-dicts@1.1.15...cspell-dicts@1.1.16) (2022-08-19)
+
+
+### Build System
+
+* **deps:** bump streetsidesoftware/cspell-action from 2.4.0 to 2.7.0 ([#1367](https://github.com/streetsidesoftware/cspell-dicts/issues/1367)) ([cf9b0ba](https://github.com/streetsidesoftware/cspell-dicts/commit/cf9b0badbbdfd7fa569906f322a1f9a54920324d))
+
+
+### Updates and Bug Fixes
+
+* added `nobr` entry ([#1369](https://github.com/streetsidesoftware/cspell-dicts/issues/1369)) ([9a6525c](https://github.com/streetsidesoftware/cspell-dicts/commit/9a6525c9cde8e1c9ade36c54019dbaf53e9eb5bc))
+
+
+### Continuous Integration
+
+* Workflow Bot -- Update ALL Dependencies ([14ec106](https://github.com/streetsidesoftware/cspell-dicts/commit/14ec10678dba0524774cefff097234b81f5a89f7))
+* Workflow Bot -- Update ALL Dependencies ([e5dbebb](https://github.com/streetsidesoftware/cspell-dicts/commit/e5dbebbfb8f234c24fc9a89c9cf388c9fe7293f6))
+* Workflow Bot -- Update ALL Dependencies ([7ad0c1a](https://github.com/streetsidesoftware/cspell-dicts/commit/7ad0c1a34928dbadcffba7539ea734c4b750d3b9))
+* Workflow Bot -- Update ALL Dependencies ([351f321](https://github.com/streetsidesoftware/cspell-dicts/commit/351f3218cdf9242848b5e485f58308340eeec099))
+* Workflow Bot -- Update ALL Dependencies ([fc64710](https://github.com/streetsidesoftware/cspell-dicts/commit/fc647103fa1beedb8c04c6ee8e43d05b19e1cb80))
+* Workflow Bot -- Update ALL Dependencies ([f54faa2](https://github.com/streetsidesoftware/cspell-dicts/commit/f54faa2ee203b6e60bb0748755727c17f2c0a32b))
+* Workflow Bot -- Update ALL Dependencies (main) ([#1357](https://github.com/streetsidesoftware/cspell-dicts/issues/1357)) ([f54faa2](https://github.com/streetsidesoftware/cspell-dicts/commit/f54faa2ee203b6e60bb0748755727c17f2c0a32b))
+* Workflow Bot -- Update ALL Dependencies (main) ([#1360](https://github.com/streetsidesoftware/cspell-dicts/issues/1360)) ([fc64710](https://github.com/streetsidesoftware/cspell-dicts/commit/fc647103fa1beedb8c04c6ee8e43d05b19e1cb80))
+* Workflow Bot -- Update ALL Dependencies (main) ([#1362](https://github.com/streetsidesoftware/cspell-dicts/issues/1362)) ([351f321](https://github.com/streetsidesoftware/cspell-dicts/commit/351f3218cdf9242848b5e485f58308340eeec099))
+* Workflow Bot -- Update ALL Dependencies (main) ([#1365](https://github.com/streetsidesoftware/cspell-dicts/issues/1365)) ([7ad0c1a](https://github.com/streetsidesoftware/cspell-dicts/commit/7ad0c1a34928dbadcffba7539ea734c4b750d3b9))
+* Workflow Bot -- Update ALL Dependencies (main) ([#1366](https://github.com/streetsidesoftware/cspell-dicts/issues/1366)) ([0e0b5f7](https://github.com/streetsidesoftware/cspell-dicts/commit/0e0b5f7436a7f1baf33240aa0c6fd37feade20e0))
+* Workflow Bot -- Update ALL Dependencies (main) ([#1368](https://github.com/streetsidesoftware/cspell-dicts/issues/1368)) ([e5dbebb](https://github.com/streetsidesoftware/cspell-dicts/commit/e5dbebbfb8f234c24fc9a89c9cf388c9fe7293f6))
+* Workflow Bot -- Update ALL Dependencies (main) ([#1370](https://github.com/streetsidesoftware/cspell-dicts/issues/1370)) ([14ec106](https://github.com/streetsidesoftware/cspell-dicts/commit/14ec10678dba0524774cefff097234b81f5a89f7))
+
+
+### Miscellaneous
+
+* adjust the trie format to improve git storage ([#1371](https://github.com/streetsidesoftware/cspell-dicts/issues/1371)) ([1b91dc7](https://github.com/streetsidesoftware/cspell-dicts/commit/1b91dc7ff869ca1d7ece87910da9adce12504085))
+* do not store `.trie.gz` files. ([#1361](https://github.com/streetsidesoftware/cspell-dicts/issues/1361)) ([2de0b0d](https://github.com/streetsidesoftware/cspell-dicts/commit/2de0b0df4b8addfd69e2e6899c05f8b502799b7c))
+* force overwrite in prepare ([#1364](https://github.com/streetsidesoftware/cspell-dicts/issues/1364)) ([5eec47e](https://github.com/streetsidesoftware/cspell-dicts/commit/5eec47e223f1dd6370fcbc3c1b6b0361c92bbddf))
+
 ## [1.1.15](https://github.com/streetsidesoftware/cspell-dicts/compare/cspell-dicts@1.1.14...cspell-dicts@1.1.15) (2022-08-12)
 
 

@@ -1,5 +1,13 @@
 # Change Log
 
+## [1.0.2](https://github.com/streetsidesoftware/cspell-dicts/compare/@cspell/dict-ar@1.0.1...@cspell/dict-ar@1.0.2) (2022-08-19)
+
+
+### Miscellaneous
+
+* do not store `.trie.gz` files. ([#1361](https://github.com/streetsidesoftware/cspell-dicts/issues/1361)) ([2de0b0d](https://github.com/streetsidesoftware/cspell-dicts/commit/2de0b0df4b8addfd69e2e6899c05f8b502799b7c))
+* force overwrite in prepare ([#1364](https://github.com/streetsidesoftware/cspell-dicts/issues/1364)) ([5eec47e](https://github.com/streetsidesoftware/cspell-dicts/commit/5eec47e223f1dd6370fcbc3c1b6b0361c92bbddf))
+
 ## [1.0.1](https://github.com/streetsidesoftware/cspell-dicts/compare/@cspell/dict-ar@1.0.0...@cspell/dict-ar@1.0.1) (2022-07-29)
 
 
