@@ -1,5 +1,19 @@
 # Release Notes
 
+## [1.2.0](https://github.com/streetsidesoftware/cspell-dicts/compare/cspell-dicts@1.1.17...cspell-dicts@1.2.0) (2022-08-21)
+
+
+### Features
+
+* add additional HTML events ([#1377](https://github.com/streetsidesoftware/cspell-dicts/issues/1377)) ([77e7f5e](https://github.com/streetsidesoftware/cspell-dicts/commit/77e7f5ef07662052d2e10ce92b1ebcc87727f3b1))
+
+
+### Continuous Integration
+
+* Workflow Bot -- Build Dictionaries ([#1379](https://github.com/streetsidesoftware/cspell-dicts/issues/1379)) ([2272ad0](https://github.com/streetsidesoftware/cspell-dicts/commit/2272ad01ff8720b39ee3a0a875e0cd85264a681f))
+* Workflow Bot -- Update ALL Dependencies ([780efe8](https://github.com/streetsidesoftware/cspell-dicts/commit/780efe8c2351c0ceb3325480ec08b1a632f6344b))
+* Workflow Bot -- Update ALL Dependencies (main) ([#1376](https://github.com/streetsidesoftware/cspell-dicts/issues/1376)) ([780efe8](https://github.com/streetsidesoftware/cspell-dicts/commit/780efe8c2351c0ceb3325480ec08b1a632f6344b))
+
 ## [1.1.17](https://github.com/streetsidesoftware/cspell-dicts/compare/cspell-dicts@1.1.16...cspell-dicts@1.1.17) (2022-08-21)
 
 
