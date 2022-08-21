@@ -3,6 +3,13 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+## [2.2.3](https://github.com/streetsidesoftware/cspell-dicts/compare/@cspell/dict-software-terms@2.2.2...@cspell/dict-software-terms@2.2.3) (2022-08-21)
+
+
+### Updates and Bug Fixes
+
+* Add "chainable" to the software terms ([#1372](https://github.com/streetsidesoftware/cspell-dicts/issues/1372)) ([b647c49](https://github.com/streetsidesoftware/cspell-dicts/commit/b647c49151c7420662675945d5ae0cbd8cfebbb3))
+
 ## [2.2.2](https://github.com/streetsidesoftware/cspell-dicts/compare/@cspell/dict-software-terms@2.2.1...@cspell/dict-software-terms@2.2.2) (2022-08-02)
 
 
