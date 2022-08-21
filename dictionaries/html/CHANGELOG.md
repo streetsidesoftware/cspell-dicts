@@ -3,6 +3,13 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+## [3.1.0](https://github.com/streetsidesoftware/cspell-dicts/compare/@cspell/dict-html@3.0.5...@cspell/dict-html@3.1.0) (2022-08-21)
+
+
+### Features
+
+* add additional HTML events ([#1377](https://github.com/streetsidesoftware/cspell-dicts/issues/1377)) ([77e7f5e](https://github.com/streetsidesoftware/cspell-dicts/commit/77e7f5ef07662052d2e10ce92b1ebcc87727f3b1))
+
 ## [3.0.5](https://github.com/streetsidesoftware/cspell-dicts/compare/@cspell/dict-html@3.0.4...@cspell/dict-html@3.0.5) (2022-08-19)
 
 
