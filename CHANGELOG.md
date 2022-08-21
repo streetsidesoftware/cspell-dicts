@@ -1,5 +1,18 @@
 # Release Notes
 
+## [1.1.17](https://github.com/streetsidesoftware/cspell-dicts/compare/cspell-dicts@1.1.16...cspell-dicts@1.1.17) (2022-08-21)
+
+
+### Updates and Bug Fixes
+
+* Add "chainable" to the software terms ([#1372](https://github.com/streetsidesoftware/cspell-dicts/issues/1372)) ([b647c49](https://github.com/streetsidesoftware/cspell-dicts/commit/b647c49151c7420662675945d5ae0cbd8cfebbb3))
+
+
+### Continuous Integration
+
+* Workflow Bot -- Update ALL Dependencies ([0546c3a](https://github.com/streetsidesoftware/cspell-dicts/commit/0546c3adf5bdd5bf558504b82af993dc1fb32abb))
+* Workflow Bot -- Update ALL Dependencies (main) ([#1373](https://github.com/streetsidesoftware/cspell-dicts/issues/1373)) ([0546c3a](https://github.com/streetsidesoftware/cspell-dicts/commit/0546c3adf5bdd5bf558504b82af993dc1fb32abb))
+
 ## [1.1.16](https://github.com/streetsidesoftware/cspell-dicts/compare/cspell-dicts@1.1.15...cspell-dicts@1.1.16) (2022-08-19)
 
 
