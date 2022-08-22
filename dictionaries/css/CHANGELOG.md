@@ -22,6 +22,13 @@ See [Conventional Commits](https://conventionalcommits.org) for commit guideline
 
 
 
+## [2.0.1](https://github.com/streetsidesoftware/cspell-dicts/compare/@cspell/dict-css@2.0.0...@cspell/dict-css@2.0.1) (2022-08-22)
+
+
+### Updates and Bug Fixes
+
+* Add a few CSS related words ([#1383](https://github.com/streetsidesoftware/cspell-dicts/issues/1383)) ([0db0f2b](https://github.com/streetsidesoftware/cspell-dicts/commit/0db0f2bf1fa1f94da0b94cad20a56c13bcc67a89))
+
 ## [1.0.13](https://github.com/streetsidesoftware/cspell-dicts/compare/@cspell/dict-css@1.0.12...@cspell/dict-css@1.0.13) (2022-01-24)
 
 

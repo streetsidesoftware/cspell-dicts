@@ -3,6 +3,13 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+## [2.1.0](https://github.com/streetsidesoftware/cspell-dicts/compare/@cspell/dict-fonts@2.0.1...@cspell/dict-fonts@2.1.0) (2022-08-22)
+
+
+### Features
+
+* sync Windows 10 font list ([#1384](https://github.com/streetsidesoftware/cspell-dicts/issues/1384)) ([28306cb](https://github.com/streetsidesoftware/cspell-dicts/commit/28306cbde60f8069db753a60499934ba1629c60b))
+
 ## [2.0.1](https://github.com/streetsidesoftware/cspell-dicts/compare/@cspell/dict-fonts@2.0.0...@cspell/dict-fonts@2.0.1) (2022-06-20)
 
 **Note:** Version bump only for package @cspell/dict-fonts

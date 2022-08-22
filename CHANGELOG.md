@@ -1,5 +1,23 @@
 # Release Notes
 
+## [1.3.0](https://github.com/streetsidesoftware/cspell-dicts/compare/cspell-dicts@1.2.0...cspell-dicts@1.3.0) (2022-08-22)
+
+
+### Features
+
+* sync Windows 10 font list ([#1384](https://github.com/streetsidesoftware/cspell-dicts/issues/1384)) ([28306cb](https://github.com/streetsidesoftware/cspell-dicts/commit/28306cbde60f8069db753a60499934ba1629c60b))
+
+
+### Continuous Integration
+
+* Workflow Bot -- Update ALL Dependencies ([f0e7f30](https://github.com/streetsidesoftware/cspell-dicts/commit/f0e7f30a48c9fceff7a6a59aac97f88625d6d73a))
+* Workflow Bot -- Update ALL Dependencies (main) ([#1381](https://github.com/streetsidesoftware/cspell-dicts/issues/1381)) ([f0e7f30](https://github.com/streetsidesoftware/cspell-dicts/commit/f0e7f30a48c9fceff7a6a59aac97f88625d6d73a))
+
+
+### Updates and Bug Fixes
+
+* Add a few CSS related words ([#1383](https://github.com/streetsidesoftware/cspell-dicts/issues/1383)) ([0db0f2b](https://github.com/streetsidesoftware/cspell-dicts/commit/0db0f2bf1fa1f94da0b94cad20a56c13bcc67a89))
+
 ## [1.2.0](https://github.com/streetsidesoftware/cspell-dicts/compare/cspell-dicts@1.1.17...cspell-dicts@1.2.0) (2022-08-21)
 
 
