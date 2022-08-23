@@ -22,6 +22,13 @@ See [Conventional Commits](https://conventionalcommits.org) for commit guideline
 
 
 
+## [2.0.1](https://github.com/streetsidesoftware/cspell-dicts/compare/@cspell/dict-lorem-ipsum@2.0.0...@cspell/dict-lorem-ipsum@2.0.1) (2022-08-23)
+
+
+### Updates and Bug Fixes
+
+* Add hamburgevons ([c5adb6e](https://github.com/streetsidesoftware/cspell-dicts/commit/c5adb6ea7698664d462cf354139cd7e7c453d1c4))
+
 ## [1.0.22](https://github.com/streetsidesoftware/cspell-dicts/compare/@cspell/dict-lorem-ipsum@1.0.21...@cspell/dict-lorem-ipsum@1.0.22) (2020-12-24)
 
 
