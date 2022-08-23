@@ -1,5 +1,26 @@
 # Release Notes
 
+## [1.3.1](https://github.com/streetsidesoftware/cspell-dicts/compare/cspell-dicts@1.3.0...cspell-dicts@1.3.1) (2022-08-23)
+
+
+### Build System
+
+* **deps-dev:** bump spdx-license-ids from 3.0.11 to 3.0.12 ([#1389](https://github.com/streetsidesoftware/cspell-dicts/issues/1389)) ([966e5d9](https://github.com/streetsidesoftware/cspell-dicts/commit/966e5d994128e4d1cf50a3468a961d6863baaeba))
+
+
+### Updates and Bug Fixes
+
+* Add hamburgevons ([c5adb6e](https://github.com/streetsidesoftware/cspell-dicts/commit/c5adb6ea7698664d462cf354139cd7e7c453d1c4))
+
+
+### Continuous Integration
+
+* Workflow Bot -- Build Dictionaries ([#1390](https://github.com/streetsidesoftware/cspell-dicts/issues/1390)) ([4ab7985](https://github.com/streetsidesoftware/cspell-dicts/commit/4ab7985589f30cf5320889f93496ae0355ca87f4))
+* Workflow Bot -- Update ALL Dependencies ([fe22cc8](https://github.com/streetsidesoftware/cspell-dicts/commit/fe22cc876c142ea4ad5268d9fe0aa4c5db5c36e1))
+* Workflow Bot -- Update ALL Dependencies ([3ae4e1b](https://github.com/streetsidesoftware/cspell-dicts/commit/3ae4e1be9b083807a2212771e07a461881fce541))
+* Workflow Bot -- Update ALL Dependencies (main) ([#1385](https://github.com/streetsidesoftware/cspell-dicts/issues/1385)) ([3ae4e1b](https://github.com/streetsidesoftware/cspell-dicts/commit/3ae4e1be9b083807a2212771e07a461881fce541))
+* Workflow Bot -- Update ALL Dependencies (main) ([#1391](https://github.com/streetsidesoftware/cspell-dicts/issues/1391)) ([fe22cc8](https://github.com/streetsidesoftware/cspell-dicts/commit/fe22cc876c142ea4ad5268d9fe0aa4c5db5c36e1))
+
 ## [1.3.0](https://github.com/streetsidesoftware/cspell-dicts/compare/cspell-dicts@1.2.0...cspell-dicts@1.3.0) (2022-08-22)
 
 
