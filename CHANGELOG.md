@@ -1,5 +1,28 @@
 # Release Notes
 
+## [1.3.2](https://github.com/streetsidesoftware/cspell-dicts/compare/cspell-dicts@1.3.1...cspell-dicts@1.3.2) (2022-08-26)
+
+
+### Build System
+
+* **deps-dev:** bump cpy-cli from 4.1.0 to 4.2.0 ([#1392](https://github.com/streetsidesoftware/cspell-dicts/issues/1392)) ([1d0de9f](https://github.com/streetsidesoftware/cspell-dicts/commit/1d0de9f5ad8107fa1e82fb585dfe41c00a11c88b))
+
+
+### Updates and Bug Fixes
+
+* Add more software terms, linux distros, and tools ([#1397](https://github.com/streetsidesoftware/cspell-dicts/issues/1397)) ([e336437](https://github.com/streetsidesoftware/cspell-dicts/commit/e336437a2da66d7d8405ed12180a8c43565edcaf))
+
+
+### Continuous Integration
+
+* fix ava fault on node 18.8.0 ([#1398](https://github.com/streetsidesoftware/cspell-dicts/issues/1398)) ([8a1d5bc](https://github.com/streetsidesoftware/cspell-dicts/commit/8a1d5bc85f2dd43acce1f22183690e65e1eee3d0))
+* Workflow Bot -- Update ALL Dependencies ([0abcbe2](https://github.com/streetsidesoftware/cspell-dicts/commit/0abcbe2f9e8c3b8218fa4bdc75a2359754220c83))
+* Workflow Bot -- Update ALL Dependencies ([d85f03c](https://github.com/streetsidesoftware/cspell-dicts/commit/d85f03ca17d309ec476bd87a5b8004db1251d827))
+* Workflow Bot -- Update ALL Dependencies (main) ([#1394](https://github.com/streetsidesoftware/cspell-dicts/issues/1394)) ([f83f9c8](https://github.com/streetsidesoftware/cspell-dicts/commit/f83f9c8a0febf9c1fe0d6c42b974ded2b8206c48))
+* Workflow Bot -- Update ALL Dependencies (main) ([#1395](https://github.com/streetsidesoftware/cspell-dicts/issues/1395)) ([e95a5b5](https://github.com/streetsidesoftware/cspell-dicts/commit/e95a5b560ae6ffb19bad1c32b51b09b6184c1515))
+* Workflow Bot -- Update ALL Dependencies (main) ([#1399](https://github.com/streetsidesoftware/cspell-dicts/issues/1399)) ([d85f03c](https://github.com/streetsidesoftware/cspell-dicts/commit/d85f03ca17d309ec476bd87a5b8004db1251d827))
+* Workflow Bot -- Update ALL Dependencies (main) ([#1403](https://github.com/streetsidesoftware/cspell-dicts/issues/1403)) ([0abcbe2](https://github.com/streetsidesoftware/cspell-dicts/commit/0abcbe2f9e8c3b8218fa4bdc75a2359754220c83))
+
 ## [1.3.1](https://github.com/streetsidesoftware/cspell-dicts/compare/cspell-dicts@1.3.0...cspell-dicts@1.3.1) (2022-08-23)
 
 
