@@ -88,28 +88,38 @@
   resolved "https://registry.npmjs.org/@cspell/cspell-pipe/-/cspell-pipe-6.8.0.tgz#1ade076d5eb21493729548c30ac0c75d94a7c8c3"
   integrity sha512-V+GOhpd99Vsa3W30p3jyJ4qNTwEBA04POINT4XZKjuNZ5NLbBO3wARX8cCaVaPB/aJTbaB6rqvXnfTx5h47N0g==
 
-"@cspell/cspell-service-bus@^6.8.0":
-  version "6.8.0"
-  resolved "https://registry.npmjs.org/@cspell/cspell-service-bus/-/cspell-service-bus-6.8.0.tgz#6a307a7da01d226abd93d75b51089edfb9f306f9"
-  integrity sha512-+3uHHhy1jP+ZYhoDlIbAR5sp6kTlbLctvpPne9KEOFB5Vtnn2a0jfop7Xyfg+BQnEFU/gifoS87sofULBngAxQ==
+"@cspell/cspell-pipe@^6.8.1":
+  version "6.8.1"
+  resolved "https://registry.yarnpkg.com/@cspell/cspell-pipe/-/cspell-pipe-6.8.1.tgz#7653da721bf321cfd06368084d1c30b2c9638b22"
+  integrity sha512-FbpYK58PlrGIOjZxu51/dFkFv7iaPhKWrkQ/q/9vW82g2ovouFeql0S7X9g4Dnn75Pd5P/pYPgFubCSawtp3pA==
+
+"@cspell/cspell-service-bus@^6.8.1":
+  version "6.8.1"
+  resolved "https://registry.yarnpkg.com/@cspell/cspell-service-bus/-/cspell-service-bus-6.8.1.tgz#0ccf9701075adc2a87834dcc5e1755e852097a95"
+  integrity sha512-lpr+5TntZdneLxmhSGT3pKOsxLJ40KahJDyNqM+91ssqIczeqrm7jZ2hZCdx4XqQM2dOAMvsB0ZyZuuDjQ+ptg==
 
 "@cspell/cspell-tools@^6.8.0":
-  version "6.8.0"
-  resolved "https://registry.npmjs.org/@cspell/cspell-tools/-/cspell-tools-6.8.0.tgz#0a22ce479ffe4af22023ee7c880ba50438b0989d"
-  integrity sha512-cg+e6SWhqkl4Cf4naT8dqRMnmvABmui24ps9feLYQvTitsR8mp7nf7RJyWvVwhnwK+txcS/FUMkrnXEaT1xE+w==
+  version "6.8.1"
+  resolved "https://registry.yarnpkg.com/@cspell/cspell-tools/-/cspell-tools-6.8.1.tgz#5859f87908182d0ba29f5d1979215924565b775a"
+  integrity sha512-QHE3U6Fq0IdEBXnJtjFYrnIsFabbyG5ZfN4v6hjyHUTuGdq9J3blS628CP7JPTCnrtqyyIRe7JMrjbSKdtjrSw==
   dependencies:
     commander "^9.4.0"
-    cspell-io "^6.8.0"
-    cspell-trie-lib "^6.8.0"
+    cspell-io "^6.8.1"
+    cspell-trie-lib "^6.8.1"
     fs-extra "^10.1.0"
     gensequence "^3.1.1"
     glob "^8.0.3"
-    hunspell-reader "^6.8.0"
+    hunspell-reader "^6.8.1"
 
 "@cspell/cspell-types@^6.8.0":
   version "6.8.0"
   resolved "https://registry.npmjs.org/@cspell/cspell-types/-/cspell-types-6.8.0.tgz#8bc5dbd8e43bfbb8de5b0b936f8cde5b8c5f9cff"
   integrity sha512-5hYe1wXHphVAWaQROJVs67AFMpYW9qNXiNKWdBZ6/l85x5ORcGYBtuxbBjdwzTSCmO6bNGVjYx14gxjQDYLlfQ==
+
+"@cspell/cspell-types@^6.8.1":
+  version "6.8.1"
+  resolved "https://registry.yarnpkg.com/@cspell/cspell-types/-/cspell-types-6.8.1.tgz#b64bc953c8cd02cede0eb45ae91c157aba5895b1"
+  integrity sha512-Yo/SJZEG3SbcIfxqdQat70LW5SwXoox2L+G8y0VCtdYu+hFr5ouSUInlfItgiFBgDKNSF0w1u2oOZeNkFZ1Aiw==
 
 "@cspell/dict-en-gb@^1.1.33":
   version "1.1.33"
@@ -1403,14 +1413,6 @@
   resolved "https://registry.npmjs.org/@types/minimist/-/minimist-1.2.2.tgz#ee771e2ba4b3dc5b372935d549fd9617bf345b8c"
   integrity sha512-jhuKLIRrhvCPLqwPcx6INqmKeiA5EWrsCOPhrlFSrbrmU4ZMPjj5Ul/oLCMDO98XRUIwVm78xICz4EPCektzeQ==
 
-"@types/node-fetch@^2.6.2":
-  version "2.6.2"
-  resolved "https://registry.npmjs.org/@types/node-fetch/-/node-fetch-2.6.2.tgz#d1a9c5fd049d9415dce61571557104dec3ec81da"
-  integrity sha512-DHqhlq5jeESLy19TYhLakJ07kNumXWjcDdxXsLUMJZ6ue8VZJj4kLPQVE/2mdHh3xZziNF1xppu5lwmS53HR+A==
-  dependencies:
-    "@types/node" "*"
-    form-data "^3.0.0"
-
 "@types/node@*":
   version "18.7.12"
   resolved "https://registry.npmjs.org/@types/node/-/node-18.7.12.tgz#18caab95fbcd03573661d1d0e709093ba8cb7682"
@@ -2364,7 +2366,7 @@ columnify@^1.6.0:
     strip-ansi "^6.0.1"
     wcwidth "^1.0.0"
 
-combined-stream@^1.0.6, combined-stream@^1.0.8, combined-stream@~1.0.6:
+combined-stream@^1.0.6, combined-stream@~1.0.6:
   version "1.0.8"
   resolved "https://registry.npmjs.org/combined-stream/-/combined-stream-1.0.8.tgz#c3d45a8b34fd730631a110a8a2520682b31d5a7f"
   integrity sha512-FQN4MRfuJeHf7cBbBMJFXhKSDq+2kAArBlmRBvcvFE5BB1HZKXtSFASDhdlz9zOYwxh8lDdnvmMOe/+5cdoEdg==
@@ -2748,13 +2750,12 @@ cspell-io@^5.1.0:
   resolved "https://registry.npmjs.org/cspell-io/-/cspell-io-5.21.2.tgz#d9087163b1c8ad11c6f94cb7dddf8c57eb97fabe"
   integrity sha512-3J4cLuN59R7ARiRZ8ke5QwlC5uPfzHLVELOtEAmsTIjuUMvr7BpbrdCuTsUvLkAqYE9NA5eqolqQm3GLXnECNw==
 
-cspell-io@^6.8.0:
-  version "6.8.0"
-  resolved "https://registry.npmjs.org/cspell-io/-/cspell-io-6.8.0.tgz#c3b12b02cd8b35d006a926e485696d50befd69d5"
-  integrity sha512-Jx3Zb1EXtO1AMb011hHyk1AW4Oz/BuOv9xQbH3XH1kTxWzJ21MZzIO1UHDWUhZn7aJI0ybMAZL5+CI4udnd3qg==
+cspell-io@^6.8.0, cspell-io@^6.8.1:
+  version "6.8.1"
+  resolved "https://registry.yarnpkg.com/cspell-io/-/cspell-io-6.8.1.tgz#54bc9bc9ced32298736d62665e6f5d10bfb12aa8"
+  integrity sha512-rk6FOmehbeX4xE3uKNMTl0bZJkcuL17sB807uQCxp5CRfKvdv51nV1Sz7u1gVYiNy6UYBj7VO0V2w7TftqR24A==
   dependencies:
-    "@cspell/cspell-service-bus" "^6.8.0"
-    "@types/node-fetch" "^2.6.2"
+    "@cspell/cspell-service-bus" "^6.8.1"
     node-fetch "^2.6.7"
 
 cspell-lib@^6.8.0:
@@ -2806,13 +2807,13 @@ cspell-trie-lib@^5.1.0:
     fs-extra "^10.1.0"
     gensequence "^3.1.1"
 
-cspell-trie-lib@^6.8.0:
-  version "6.8.0"
-  resolved "https://registry.npmjs.org/cspell-trie-lib/-/cspell-trie-lib-6.8.0.tgz#1821f7f7328d1272688146b77ef10eaddce45a99"
-  integrity sha512-+FKfkXnneuU7n/OrafUQLwOM9TWMFKmtvMZgoJZLX/xOkSHzAlkKqVos8OhK4w2nRns1wy+Nz+iNyEmYaCMnZw==
+cspell-trie-lib@^6.8.0, cspell-trie-lib@^6.8.1:
+  version "6.8.1"
+  resolved "https://registry.yarnpkg.com/cspell-trie-lib/-/cspell-trie-lib-6.8.1.tgz#b52227e93a93569a13e24a47ef1c1edb4e303bca"
+  integrity sha512-mCxs99615eGXc306M0ocWI+h74MKdr0rdZawNGg8k8r7K14dQAur79FBDWGgTR4ThlZ1KLV3p/5tulxP89nJSA==
   dependencies:
-    "@cspell/cspell-pipe" "^6.8.0"
-    "@cspell/cspell-types" "^6.8.0"
+    "@cspell/cspell-pipe" "^6.8.1"
+    "@cspell/cspell-types" "^6.8.1"
     fs-extra "^10.1.0"
     gensequence "^3.1.1"
 
@@ -3654,15 +3655,6 @@ forever-agent@~0.6.1:
   resolved "https://registry.npmjs.org/forever-agent/-/forever-agent-0.6.1.tgz#fbc71f0c41adeb37f96c577ad1ed42d8fdacca91"
   integrity sha512-j0KLYPhm6zeac4lz3oJ3o65qvgQCcPubiyotZrXqEaG4hNagNYO8qdlUrX5vwqv9ohqeT/Z3j6+yW067yWWdUw==
 
-form-data@^3.0.0:
-  version "3.0.1"
-  resolved "https://registry.npmjs.org/form-data/-/form-data-3.0.1.tgz#ebd53791b78356a99af9a300d4282c4d5eb9755f"
-  integrity sha512-RHkBKtLWUVwd7SqRIvCZMEvAMoGUp0XU+seQiZejj0COz3RI3hWP4sCv3gZWWLjJTd7rGwcsF5eKZGii0r/hbg==
-  dependencies:
-    asynckit "^0.4.0"
-    combined-stream "^1.0.8"
-    mime-types "^2.1.12"
-
 form-data@~2.3.2:
   version "2.3.3"
   resolved "https://registry.npmjs.org/form-data/-/form-data-2.3.3.tgz#dcce52c05f644f298c6a7ab936bd724ceffbf3a6"
@@ -4247,10 +4239,10 @@ hunspell-reader@^3.2.0:
     gensequence "^3.0.1"
     iconv-lite "^0.5.0"
 
-hunspell-reader@^6.8.0:
-  version "6.8.0"
-  resolved "https://registry.npmjs.org/hunspell-reader/-/hunspell-reader-6.8.0.tgz#a9713f31ae8acb94e982d0afe84488df758b73f3"
-  integrity sha512-aFEXA9Cr45mvTaH/sn+eV1qYJ5ETwJ4Q5PhS0bOVEqyR3QxSPjEBnaVOeFBiesNiTSdJFu/TD8DvqGMIBu07CA==
+hunspell-reader@^6.8.0, hunspell-reader@^6.8.1:
+  version "6.8.1"
+  resolved "https://registry.yarnpkg.com/hunspell-reader/-/hunspell-reader-6.8.1.tgz#ec3cfae0bd0c45a0361cb263dac8ad1a6dccdee0"
+  integrity sha512-Yq5FDbZoDcHhRo0H8Elk4RMnqsN8HWF2SBGKv/ME4DORm6xH1TjMY3O6jYzwIdugogWtCwa4oBpl4PQNipM58w==
   dependencies:
     commander "^9.4.0"
     fs-extra "^10.1.0"
