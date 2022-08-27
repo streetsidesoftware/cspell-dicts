@@ -3,6 +3,13 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+## [2.2.5](https://github.com/streetsidesoftware/cspell-dicts/compare/@cspell/dict-software-terms@2.2.4...@cspell/dict-software-terms@2.2.5) (2022-08-27)
+
+
+### Updates and Bug Fixes
+
+* add back `ldap` to software terms ([#1404](https://github.com/streetsidesoftware/cspell-dicts/issues/1404)) ([0187e52](https://github.com/streetsidesoftware/cspell-dicts/commit/0187e523828be3ba62fc9aaa02140119d790195d))
+
 ## [2.2.4](https://github.com/streetsidesoftware/cspell-dicts/compare/@cspell/dict-software-terms@2.2.3...@cspell/dict-software-terms@2.2.4) (2022-08-26)
 
 

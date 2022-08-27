@@ -1,5 +1,12 @@
 # Release Notes
 
+## [1.3.3](https://github.com/streetsidesoftware/cspell-dicts/compare/cspell-dicts@1.3.2...cspell-dicts@1.3.3) (2022-08-27)
+
+
+### Updates and Bug Fixes
+
+* add back `ldap` to software terms ([#1404](https://github.com/streetsidesoftware/cspell-dicts/issues/1404)) ([0187e52](https://github.com/streetsidesoftware/cspell-dicts/commit/0187e523828be3ba62fc9aaa02140119d790195d))
+
 ## [1.3.2](https://github.com/streetsidesoftware/cspell-dicts/compare/cspell-dicts@1.3.1...cspell-dicts@1.3.2) (2022-08-26)
 
 
