@@ -1,5 +1,12 @@
 # Release Notes
 
+## [1.5.1](https://github.com/streetsidesoftware/cspell-dicts/compare/cspell-dicts@1.5.0...cspell-dicts@1.5.1) (2022-08-29)
+
+
+### Updates and Bug Fixes
+
+* fix html dictionary build ([df86a8f](https://github.com/streetsidesoftware/cspell-dicts/commit/df86a8f40f71963154ffb2546af0a68a5b9cd2b1))
+
 ## [1.5.0](https://github.com/streetsidesoftware/cspell-dicts/compare/cspell-dicts@1.4.0...cspell-dicts@1.5.0) (2022-08-29)
 
 
