@@ -3,6 +3,13 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+## [3.3.1](https://github.com/streetsidesoftware/cspell-dicts/compare/@cspell/dict-html@3.3.0...@cspell/dict-html@3.3.1) (2022-08-29)
+
+
+### Updates and Bug Fixes
+
+* fix html dictionary build ([df86a8f](https://github.com/streetsidesoftware/cspell-dicts/commit/df86a8f40f71963154ffb2546af0a68a5b9cd2b1))
+
 ## [3.3.0](https://github.com/streetsidesoftware/cspell-dicts/compare/@cspell/dict-html@3.2.0...@cspell/dict-html@3.3.0) (2022-08-29)
 
 
