@@ -22,6 +22,13 @@ See [Conventional Commits](https://conventionalcommits.org) for commit guideline
 
 
 
+## [2.1.0](https://github.com/streetsidesoftware/cspell-dicts/compare/@cspell/dict-css@2.0.1...@cspell/dict-css@2.1.0) (2022-08-29)
+
+
+### Features
+
+* add CSS values from mdn-browser-compat ([#1409](https://github.com/streetsidesoftware/cspell-dicts/issues/1409)) ([204a54b](https://github.com/streetsidesoftware/cspell-dicts/commit/204a54b546cb60ad578d4af1c788ca3cb9c7f8fc))
+
 ## [2.0.1](https://github.com/streetsidesoftware/cspell-dicts/compare/@cspell/dict-css@2.0.0...@cspell/dict-css@2.0.1) (2022-08-22)
 
 

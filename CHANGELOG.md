@@ -1,5 +1,24 @@
 # Release Notes
 
+## [1.4.0](https://github.com/streetsidesoftware/cspell-dicts/compare/cspell-dicts@1.3.3...cspell-dicts@1.4.0) (2022-08-29)
+
+
+### Features
+
+* add CSS values from mdn-browser-compat ([#1409](https://github.com/streetsidesoftware/cspell-dicts/issues/1409)) ([204a54b](https://github.com/streetsidesoftware/cspell-dicts/commit/204a54b546cb60ad578d4af1c788ca3cb9c7f8fc))
+* add words from HTML mdn-browser-compat ([#1410](https://github.com/streetsidesoftware/cspell-dicts/issues/1410)) ([a5cf69e](https://github.com/streetsidesoftware/cspell-dicts/commit/a5cf69e8de709b17f673928fc28a0e501f7e0f50))
+
+
+### Continuous Integration
+
+* Workflow Bot -- Update ALL Dependencies ([ad07c3a](https://github.com/streetsidesoftware/cspell-dicts/commit/ad07c3a6b58f0f746b93e4fa1db7c300b1978733))
+* Workflow Bot -- Update ALL Dependencies (main) ([#1406](https://github.com/streetsidesoftware/cspell-dicts/issues/1406)) ([ad07c3a](https://github.com/streetsidesoftware/cspell-dicts/commit/ad07c3a6b58f0f746b93e4fa1db7c300b1978733))
+
+
+### Miscellaneous
+
+* switch to lerna-lite ([#1408](https://github.com/streetsidesoftware/cspell-dicts/issues/1408)) ([6869fbd](https://github.com/streetsidesoftware/cspell-dicts/commit/6869fbd561098c6272a955f7bdab3e2c4f03d561))
+
 ## [1.3.3](https://github.com/streetsidesoftware/cspell-dicts/compare/cspell-dicts@1.3.2...cspell-dicts@1.3.3) (2022-08-27)
 
 
