@@ -6,6 +6,7 @@ abbreviation
 abreve
 Abreve
 ac
+accentunder
 accept-charset
 accesskey
 acd
@@ -13,6 +14,7 @@ acE
 acirc
 Acirc
 acronym
+actiontype
 activedescendant
 acute
 acy
@@ -31,6 +33,8 @@ alefsym
 aleph
 alertdialog
 aliceblue
+allowfullscreen
+allowpaymentrequest
 alpha
 Alpha
 amacr
@@ -151,6 +155,7 @@ attribute
 audio
 auml
 Auml
+autobuffer
 autocapitalize
 autocomplete
 autocorrect
@@ -199,6 +204,8 @@ beth
 between
 bfr
 Bfr
+bgcolor
+bgsound
 big
 bigcap
 bigcirc
@@ -240,6 +247,7 @@ bopf
 Bopf
 bot
 bottom
+bottommargin
 bowtie
 boxbox
 boxdl
@@ -328,6 +336,7 @@ caption
 captures
 caret
 caron
+caseless
 Cayleys
 ccaps
 ccaron
@@ -355,6 +364,7 @@ CenterDot
 cfr
 Cfr
 character
+charoff
 charset
 chartreuse
 chcy
@@ -388,12 +398,14 @@ cirmid
 cirscir
 cite
 class
+classid
 ClockwiseContourIntegral
 CloseCurlyDoubleQuote
 CloseCurlyQuote
 clubs
 clubsuit
 code
+codetype
 col
 colcount
 colgroup
@@ -406,7 +418,11 @@ Colone
 coloneq
 color
 colspan
+columnalign
 columnheader
+columnlines
+columnspacing
+columnspan
 com
 combobox
 comma
@@ -516,7 +532,9 @@ dash
 dashv
 Dashv
 data
+datafld
 datalist
+datasrc
 date
 datetime
 dbkarow
@@ -541,6 +559,7 @@ Del
 delta
 Delta
 demptyv
+denomalign
 describedby
 details
 dfisht
@@ -570,6 +589,7 @@ dir
 directory
 disabled
 disin
+displaystyle
 div
 divide
 divideontimes
@@ -753,6 +773,7 @@ expanded
 expectation
 exponentiale
 ExponentialE
+exportparts
 fallingdotseq
 favicon
 favicons
@@ -760,6 +781,7 @@ fcy
 Fcy
 feed
 female
+fetchpriority
 ffilig
 fflig
 ffllig
@@ -783,6 +805,9 @@ fltns
 fnof
 focusable
 font
+fontfamily
+fontstyle
+fontweight
 footer
 fopf
 Fopf
@@ -817,6 +842,7 @@ frac58
 frac78
 frame
 frameset
+framespacing
 frasl
 frown
 fscr
@@ -1012,6 +1038,8 @@ imacr
 Imacr
 image
 image-map
+imagesizes
+imagesrcset
 ImaginaryI
 imagline
 imagpart
@@ -1197,6 +1225,7 @@ LeftFloor
 leftharpoondown
 leftharpoonup
 leftleftarrows
+leftmargin
 leftrightarrow
 Leftrightarrow
 LeftRightArrow
@@ -1275,6 +1304,7 @@ lime
 limegreen
 line
 linen
+linethickness
 link
 list
 listbox
@@ -1345,6 +1375,7 @@ Lsh
 lsim
 lsime
 lsimg
+lspace
 lsqb
 lsquo
 lsquor
@@ -1369,6 +1400,8 @@ luruhar
 lvertneqq
 lvnE
 macr
+maction
+madruwb
 magenta
 mailto
 main
@@ -1381,13 +1414,21 @@ mapsto
 mapstodown
 mapstoleft
 mapstoup
+marginheight
+marginwidth
 mark
 marker
 maroon
 match
 matches
 math
+mathbackground
+mathcolor
+mathsize
+mathvariant
 maxlength
+maxsize
+mayscript
 mcomma
 mcy
 Mcy
@@ -1411,6 +1452,7 @@ menubar
 menuitem
 menuitemcheckbox
 menuitemradio
+merror
 meta
 metadata
 meter
@@ -1426,6 +1468,8 @@ midast
 midcir
 middot
 midnightblue
+minlength
+minsize
 mintcream
 minus
 minusb
@@ -1442,12 +1486,15 @@ mo
 moccasin
 modal
 models
+modulepreload
 month
 mopf
 Mopf
 mouseenter
+moveablelimits
 mover
 mp
+mpadded
 mphantom
 mprescripts
 mroot
@@ -1570,9 +1617,12 @@ nLtv
 nmid
 nobr
 NoBreak
+noembed
 nofollow
 noframes
+nohref
 noindex
+nomodule
 NonBreakingSpace
 nonce
 none
@@ -1580,7 +1630,9 @@ noopener
 nopf
 Nopf
 noreferrer
+noresize
 noscript
+noshade
 not
 Not
 NotCongruent
@@ -1704,6 +1756,7 @@ ntrianglerighteq
 nu
 Nu
 num
+numalign
 number
 numero
 numsp
@@ -2133,6 +2186,7 @@ pertenk
 peru
 pfr
 Pfr
+phasorangle
 phi
 Phi
 phiv
@@ -2300,6 +2354,7 @@ reals
 rebeccapurple
 rect
 red
+referrerpolicy
 refresh
 reg
 REG
@@ -2338,6 +2393,7 @@ rightharpoondown
 rightharpoonup
 rightleftarrows
 rightleftharpoons
+rightmargin
 rightrightarrows
 rightsquigarrow
 RightTee
@@ -2373,10 +2429,13 @@ rosybrown
 rotimes
 RoundImplies
 row
+rowalign
 rowcount
 rowgroup
 rowheader
 rowindex
+rowlines
+rowspacing
 rowspan
 royalblue
 rp
@@ -2390,6 +2449,7 @@ rscr
 Rscr
 rsh
 Rsh
+rspace
 rsqb
 rsquo
 rsquor
@@ -2430,7 +2490,12 @@ scnsim
 scope
 scpolint
 script
+scriptlevel
+scriptminsize
+scriptsizemultiplier
+scrollamount
 scrollbar
+scrolldelay
 scsim
 scy
 Scy
@@ -2461,6 +2526,7 @@ sfr
 Sfr
 sfrown
 sgml
+shadowroot
 sharp
 shchcy
 SHCHcy
@@ -2561,6 +2627,7 @@ sstarf
 star
 Star
 starf
+statusline
 steelblue
 straightepsilon
 straightphi
@@ -2585,6 +2652,7 @@ subne
 subnE
 subplus
 subrarr
+subscriptshift
 subset
 Subset
 subseteq
@@ -2622,6 +2690,7 @@ supdsub
 supe
 supE
 supedot
+superscriptshift
 Superset
 SupersetEqual
 suphsol
@@ -2725,6 +2794,7 @@ topcir
 topf
 Topf
 topfork
+topmargin
 tosa
 tpl
 tprime
@@ -2751,6 +2821,7 @@ triplus
 trisb
 tritime
 trpezium
+truespeed
 tscr
 Tscr
 tscy
@@ -2817,6 +2888,7 @@ Uparrow
 UpArrow
 UpArrowBar
 UpArrowDownArrow
+updiagonalarrow
 updownarrow
 Updownarrow
 UpDownArrow
@@ -2844,6 +2916,7 @@ urtri
 uscr
 Uscr
 Use
+usemap
 utdot
 utilde
 Utilde
@@ -2854,11 +2927,13 @@ uuid
 uuml
 Uuml
 uwangle
+valign
 value
 valuemax
 valuemin
 valuenow
 valuetext
+valuetype
 vangrt
 var
 varepsilon
@@ -2910,6 +2985,7 @@ violet
 vltri
 vnsub
 vnsup
+voffset
 vopf
 Vopf
 vprop
