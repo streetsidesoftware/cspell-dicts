@@ -3,6 +3,13 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+## [3.3.0](https://github.com/streetsidesoftware/cspell-dicts/compare/@cspell/dict-html@3.2.0...@cspell/dict-html@3.3.0) (2022-08-29)
+
+
+### Features
+
+* Add SVG words from mdn-browser-compat ([#1415](https://github.com/streetsidesoftware/cspell-dicts/issues/1415)) ([560d1f4](https://github.com/streetsidesoftware/cspell-dicts/commit/560d1f4416c09b4636127ea2ac05572029be07e0))
+
 ## [3.2.0](https://github.com/streetsidesoftware/cspell-dicts/compare/@cspell/dict-html@3.1.0...@cspell/dict-html@3.2.0) (2022-08-29)
 
 

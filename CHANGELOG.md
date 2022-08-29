@@ -1,5 +1,17 @@
 # Release Notes
 
+## [1.5.0](https://github.com/streetsidesoftware/cspell-dicts/compare/cspell-dicts@1.4.0...cspell-dicts@1.5.0) (2022-08-29)
+
+
+### Features
+
+* Add SVG words from mdn-browser-compat ([#1415](https://github.com/streetsidesoftware/cspell-dicts/issues/1415)) ([560d1f4](https://github.com/streetsidesoftware/cspell-dicts/commit/560d1f4416c09b4636127ea2ac05572029be07e0))
+
+
+### Build System
+
+* **deps:** bump streetsidesoftware/cspell-action from 2.7.0 to 2.8.1 ([#1413](https://github.com/streetsidesoftware/cspell-dicts/issues/1413)) ([eece4d8](https://github.com/streetsidesoftware/cspell-dicts/commit/eece4d86f74e53dd8877a28ab756c4c4d8f24f1f))
+
 ## [1.4.0](https://github.com/streetsidesoftware/cspell-dicts/compare/cspell-dicts@1.3.3...cspell-dicts@1.4.0) (2022-08-29)
 
 
