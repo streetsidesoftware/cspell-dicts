@@ -1,6 +1,6 @@
 {
   "name": "@cspell/dict-html",
-  "version": "3.2.0",
+  "version": "3.3.0",
   "description": "HTML dictionary for cspell.",
   "publishConfig": {
     "access": "public"
@@ -11,8 +11,8 @@
     "./cspell-ext.json": "./cspell-ext.json"
   },
   "scripts": {
-    "build": "cross-env NODE_OPTIONS=--max_old_space_size=8192 cspell-tools-cli compile src/html.txt src/svg.txt --merge html -o .",
-    "test": "head -n 100 \"src/html.txt\" | cspell -v -c ./cspell-ext.json \"--local=*\" \"--languageId=html\" stdin",
+    "build": "cross-env NODE_OPTIONS=--max_old_space_size=8192 cspell-tools-cli compile \"html.txt\" -o .",
+    "test": "head -n 100 \"html.txt\" | cspell -v -c ./cspell-ext.json \"--local=*\" \"--languageId=html\" stdin",
     "prepublishOnly": "echo pre-publish",
     "prepare": "yarn run build"
   },
