@@ -1,5 +1,13 @@
 # Release Notes
 
+## [1.5.2](https://github.com/streetsidesoftware/cspell-dicts/compare/cspell-dicts@1.5.1...cspell-dicts@1.5.2) (2022-08-30)
+
+
+### Updates and Bug Fixes
+
+* Add new companies ([#1418](https://github.com/streetsidesoftware/cspell-dicts/issues/1418)) ([fe4a292](https://github.com/streetsidesoftware/cspell-dicts/commit/fe4a2927f21ed6534fa8f60fb0a39bc3241b674d))
+* Move more software terms to tools + add a few new ones ([#1419](https://github.com/streetsidesoftware/cspell-dicts/issues/1419)) ([0cb05bc](https://github.com/streetsidesoftware/cspell-dicts/commit/0cb05bcc8557bd8e853c9d0f857b79dfbd7b9c27))
+
 ## [1.5.1](https://github.com/streetsidesoftware/cspell-dicts/compare/cspell-dicts@1.5.0...cspell-dicts@1.5.1) (2022-08-29)
 
 
