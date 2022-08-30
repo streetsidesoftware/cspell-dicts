@@ -170,17 +170,17 @@
   resolved "https://registry.npmjs.org/@isaacs/string-locale-compare/-/string-locale-compare-1.1.0.tgz#291c227e93fd407a96ecd59879a35809120e432b"
   integrity sha512-SQ7Kzhh9+D+ZW9MA0zkYv3VXhIDNx+LzM6EJ+/65I3QY+enU6Itte7E5XX7EWrqLW2FN4n06GWzBnPoC3th2aQ==
 
-"@lerna-lite/cli@^1.11.1":
-  version "1.11.1"
-  resolved "https://registry.npmjs.org/@lerna-lite/cli/-/cli-1.11.1.tgz#a05d5dde290098c751f4b8026508dc6a7f41e68d"
-  integrity sha512-gzu+OkTMOAaTKW7KZKLo/1mQ1yNgAnAn8vizwVumomFVUkLpBc5fnrtoL+sD1ExTM+GoDP4U7ZwQxA9KjEGH4Q==
+"@lerna-lite/cli@^1.11.2":
+  version "1.11.2"
+  resolved "https://registry.npmjs.org/@lerna-lite/cli/-/cli-1.11.2.tgz#44774c2cae6b50ea48f8ce0fd39bcb07107c5b0e"
+  integrity sha512-hz18M+yyEDlJmJoTDN3Lxej9TkHGDwMk+xMjzTCj7QbXKLEwXDhif3mMyJCSe23+nBHDV0d7uOm6mkAYw8/j+A==
   dependencies:
-    "@lerna-lite/core" "1.11.1"
-    "@lerna-lite/info" "1.11.1"
-    "@lerna-lite/init" "1.11.1"
-    "@lerna-lite/listable" "1.11.1"
-    "@lerna-lite/publish" "1.11.1"
-    "@lerna-lite/version" "1.11.1"
+    "@lerna-lite/core" "1.11.2"
+    "@lerna-lite/info" "1.11.2"
+    "@lerna-lite/init" "1.11.2"
+    "@lerna-lite/listable" "1.11.2"
+    "@lerna-lite/publish" "1.11.2"
+    "@lerna-lite/version" "1.11.2"
     dedent "^0.7.0"
     dotenv "^16.0.1"
     import-local "^3.1.0"
@@ -189,10 +189,10 @@
     path "^0.12.7"
     yargs "^17.5.1"
 
-"@lerna-lite/core@1.11.1":
-  version "1.11.1"
-  resolved "https://registry.npmjs.org/@lerna-lite/core/-/core-1.11.1.tgz#3fac38f7d3a2f2555f50c8845e92aedbbf454d84"
-  integrity sha512-wquCKOH0CsmRgcjvZ6BbnM6fuJ8WBSF0dzDn5PdcKMVhDL7D4lbaWLwsrI4G6X1XEpkm8RFQSgMtJx3OwE7H1w==
+"@lerna-lite/core@1.11.2":
+  version "1.11.2"
+  resolved "https://registry.npmjs.org/@lerna-lite/core/-/core-1.11.2.tgz#94f02a1342ad3ca5d04d2885d84074ed15c55b67"
+  integrity sha512-kyecCQclc6VhX+9JsTCsntSaN6veLVP1Yk7FvInP2xuUtQo8nC412iEaG2WDcgb9nuEM9reAE/qnsIbZ5mRwFw==
   dependencies:
     "@npmcli/run-script" "^4.2.1"
     "@octokit/plugin-enterprise-rest" "^6.0.1"
@@ -225,7 +225,7 @@
     minimatch "^5.1.0"
     node-fetch "^2.6.7"
     npm-package-arg "^9.1.0"
-    npm-packlist "^5.1.2"
+    npm-packlist "^5.1.3"
     npm-registry-fetch "^13.3.1"
     npmlog "^6.0.2"
     os "^0.1.2"
@@ -249,41 +249,41 @@
     write-pkg "^4.0.0"
     yargs "^17.5.1"
 
-"@lerna-lite/info@1.11.1":
-  version "1.11.1"
-  resolved "https://registry.npmjs.org/@lerna-lite/info/-/info-1.11.1.tgz#0e8a2e8d6102473bf01705b3c963deaf112f7313"
-  integrity sha512-o+vWt0Rb4e6rj0Uvn+r5OYaLqZQVavKcFRgr1ssbpWPt6KvfBlwfxDBuIpqmf0d0qZqAJWZx0QOepbvnj9wn9g==
+"@lerna-lite/info@1.11.2":
+  version "1.11.2"
+  resolved "https://registry.npmjs.org/@lerna-lite/info/-/info-1.11.2.tgz#dad952b956e394b21cbefd560fb94713be0d5b21"
+  integrity sha512-MkwpYFhn5uPL4z1YJzY9/3JpN+RKzLtB/HoLhwLGVYiG/q19XQUboeCIJWKdRFdjxeZ1f1R3euC57PtA5reDEw==
   dependencies:
-    "@lerna-lite/core" "1.11.1"
+    "@lerna-lite/core" "1.11.2"
     dedent "^0.7.0"
     envinfo "^7.8.1"
     yargs "^17.5.1"
 
-"@lerna-lite/init@1.11.1":
-  version "1.11.1"
-  resolved "https://registry.npmjs.org/@lerna-lite/init/-/init-1.11.1.tgz#bd44d0268824cc08040583bfb829d966fc80c4eb"
-  integrity sha512-F8E7DG76hBG4QXYV2Aw/Tkz4C9WKW2UWxul6JOGI5dAUYNx6AYwLQAuEkCuOwIsryLYKQxLQ4Ocuh+zz8wOm0Q==
+"@lerna-lite/init@1.11.2":
+  version "1.11.2"
+  resolved "https://registry.npmjs.org/@lerna-lite/init/-/init-1.11.2.tgz#cc818891c183d76fbcb232b66ddae3ead641d3be"
+  integrity sha512-qnoBuBMyTmqdw8+tL/r5yuqxFUnebDkrqUj5zgCZzR2b83lNSGM1c1eu2WlhxJovICjgLztNUCiPuZJdsS7E2Q==
   dependencies:
-    "@lerna-lite/core" "1.11.1"
+    "@lerna-lite/core" "1.11.2"
     fs-extra "^10.1.0"
     p-map "^4.0.0"
     write-json-file "^4.3.0"
 
-"@lerna-lite/listable@1.11.1":
-  version "1.11.1"
-  resolved "https://registry.npmjs.org/@lerna-lite/listable/-/listable-1.11.1.tgz#c381df55f6186cfb33cfe49a10fc6c4a8c9fa519"
-  integrity sha512-SNUdVe5MSuI97NL4erwP6Yh0ptlidGb/7p7y8uHeDrDwy7pJMu7fs3aGc8G5SxN8c8XmwqBXur1g9hwO0vi5KQ==
+"@lerna-lite/listable@1.11.2":
+  version "1.11.2"
+  resolved "https://registry.npmjs.org/@lerna-lite/listable/-/listable-1.11.2.tgz#4fd5ef1f1232b018ddcfb31c83ec3596a577a562"
+  integrity sha512-GuvCgcJOthOlQWPSGTjS1oNDgG96ZIQlRpK+XNl4ZNNA2sapnrCFvJMZUHiDtLtQO5moe4Kt1FDWzbEr18bCRQ==
   dependencies:
-    "@lerna-lite/core" "1.11.1"
+    "@lerna-lite/core" "1.11.2"
     chalk "^4.1.2"
     columnify "^1.6.0"
 
-"@lerna-lite/optional-cmd-common@1.11.1":
-  version "1.11.1"
-  resolved "https://registry.npmjs.org/@lerna-lite/optional-cmd-common/-/optional-cmd-common-1.11.1.tgz#672eb0160009afe191510ea89322f5dddf7dbb1d"
-  integrity sha512-n5mYM4o1DbCpISZUlBddz6OTnUabjKtVSC9+k8FibYebjqAGCU+T5ED+qnrXhaWhmBg4NlmeDxGY4eNinOPKbA==
+"@lerna-lite/optional-cmd-common@1.11.2":
+  version "1.11.2"
+  resolved "https://registry.npmjs.org/@lerna-lite/optional-cmd-common/-/optional-cmd-common-1.11.2.tgz#9887e01d384738c3c586a1e9eeed196585759abf"
+  integrity sha512-VTYGWrehN4t7FirLAd+AVEwEU+0SWVYSUhJKgYWIppk9kBLpRcT3A3zILTEtB37oconVKkT9Syx9IYcqZc8hUw==
   dependencies:
-    "@lerna-lite/core" "1.11.1"
+    "@lerna-lite/core" "1.11.2"
     fs-extra "^10.1.0"
     multimatch "^5.0.0"
     npmlog "^6.0.2"
@@ -291,13 +291,13 @@
     upath "^2.0.1"
     yargs "^17.5.1"
 
-"@lerna-lite/publish@1.11.1":
-  version "1.11.1"
-  resolved "https://registry.npmjs.org/@lerna-lite/publish/-/publish-1.11.1.tgz#afa211510eccd4ce1019f24e08695f00bebe15c3"
-  integrity sha512-1iC201Kyy6JVlf13AP4KgiOz/19Vh65/OYZlUDGysPIKI7zqeT5NII8qlFA/S0dO13X+b2GOYZBnoUMGYCyP9g==
+"@lerna-lite/publish@1.11.2":
+  version "1.11.2"
+  resolved "https://registry.npmjs.org/@lerna-lite/publish/-/publish-1.11.2.tgz#1901eecadf0e9310a67964f6d7bdfadb9bcc71ad"
+  integrity sha512-TUOX5yMwYzVl28Q+pk8lAALt+9e4vBflo8T3fgU6bYfe3ON33InKs+QdkjbzqiAHU0fena8XVbsv579uhK1jLw==
   dependencies:
-    "@lerna-lite/core" "1.11.1"
-    "@lerna-lite/version" "1.11.1"
+    "@lerna-lite/core" "1.11.2"
+    "@lerna-lite/version" "1.11.2"
     byte-size "^7.0.1"
     columnify "^1.6.0"
     fs-extra "^10.1.0"
@@ -305,7 +305,7 @@
     libnpmaccess "^6.0.3"
     libnpmpublish "^6.0.4"
     npm-package-arg "^9.1.0"
-    npm-packlist "^5.1.2"
+    npm-packlist "^5.1.3"
     npm-registry-fetch "^13.3.1"
     npmlog "^6.0.2"
     os "^0.1.2"
@@ -326,13 +326,13 @@
     write-pkg "^4.0.0"
     yargs "^17.5.1"
 
-"@lerna-lite/run@^1.11.1":
-  version "1.11.1"
-  resolved "https://registry.npmjs.org/@lerna-lite/run/-/run-1.11.1.tgz#430c40ea5559422a49a8f604b7ed3ec9fc947dd8"
-  integrity sha512-HgunLLoNoDirKygZ6x1Z9V89Xnz0V6y6/C1ukqO8KKzKsjds0kMd7P939DkGVAGhpzaJ5R9UbIwbFj3W1sVeDQ==
+"@lerna-lite/run@^1.11.2":
+  version "1.11.2"
+  resolved "https://registry.npmjs.org/@lerna-lite/run/-/run-1.11.2.tgz#d72effe78f062190ee2830cd8777c30296cd3e63"
+  integrity sha512-cpl3nwX7pLEWZPiXTOFfJ6QeczaPQv4BbTwpZXiE0NIGtRzk3tltK4DpZIYOz+9DSTtG5RbeffUtHIdxwMRdBw==
   dependencies:
-    "@lerna-lite/core" "1.11.1"
-    "@lerna-lite/optional-cmd-common" "1.11.1"
+    "@lerna-lite/core" "1.11.2"
+    "@lerna-lite/optional-cmd-common" "1.11.2"
     fs-extra "^10.1.0"
     multimatch "^5.0.0"
     npmlog "^6.0.2"
@@ -340,12 +340,12 @@
     upath "^2.0.1"
     yargs "^17.5.1"
 
-"@lerna-lite/version@1.11.1":
-  version "1.11.1"
-  resolved "https://registry.npmjs.org/@lerna-lite/version/-/version-1.11.1.tgz#7cf2197f60c09e870a2c1b4e1db41cf39913c2f0"
-  integrity sha512-osPh2wEYcvN9SzkUaF01vy6MbHW+U1AIHfxVphMLwC2hbXMOdnVAvPvyAHfCka9mV1YtIWiBfADZyYyXzIlr7g==
+"@lerna-lite/version@1.11.2":
+  version "1.11.2"
+  resolved "https://registry.npmjs.org/@lerna-lite/version/-/version-1.11.2.tgz#d084e9c3dfffb7c1d7971a1d7082f466818a84a9"
+  integrity sha512-Iz4jHlBfu1k19M3kUkYdAsfhJqUIxHeVyVg3nk+/zooS7nysy7lg9Okc/Lte0ODC1xLJmeWWWuWErw4QsnrAQQ==
   dependencies:
-    "@lerna-lite/core" "1.11.1"
+    "@lerna-lite/core" "1.11.2"
     chalk "^4.1.2"
     dedent "^0.7.0"
     load-json-file "^6.2.0"
@@ -833,9 +833,9 @@
   integrity sha512-jhuKLIRrhvCPLqwPcx6INqmKeiA5EWrsCOPhrlFSrbrmU4ZMPjj5Ul/oLCMDO98XRUIwVm78xICz4EPCektzeQ==
 
 "@types/node@*":
-  version "18.7.13"
-  resolved "https://registry.npmjs.org/@types/node/-/node-18.7.13.tgz#23e6c5168333480d454243378b69e861ab5c011a"
-  integrity sha512-46yIhxSe5xEaJZXWdIBP7GU4HDTG8/eo0qd9atdiL+lFpA03y8KS+lkTN834TWJj5767GbWv4n/P6efyTFt1Dw==
+  version "18.7.14"
+  resolved "https://registry.npmjs.org/@types/node/-/node-18.7.14.tgz#0fe081752a3333392d00586d815485a17c2cf3c9"
+  integrity sha512-6bbDaETVi8oyIARulOE9qF1/Qdi/23z6emrUh0fNJRUmjznqrixD4MpGDdgOFk5Xb0m2H6Xu42JGdvAxaJR/wA==
 
 "@types/node@^15.6.1":
   version "15.14.9"
@@ -5016,7 +5016,7 @@ npm-packlist@^3.0.0:
     npm-bundled "^1.1.1"
     npm-normalize-package-bin "^1.0.1"
 
-npm-packlist@^5.1.0, npm-packlist@^5.1.2:
+npm-packlist@^5.1.0, npm-packlist@^5.1.3:
   version "5.1.3"
   resolved "https://registry.npmjs.org/npm-packlist/-/npm-packlist-5.1.3.tgz#69d253e6fd664b9058b85005905012e00e69274b"
   integrity sha512-263/0NGrn32YFYi4J533qzrQ/krmmrWwhKkzwTuM4f/07ug51odoaNjUexxO4vxlzURHcmYMH1QjvHjsNDKLVg==
