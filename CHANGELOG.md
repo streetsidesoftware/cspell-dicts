@@ -1,5 +1,23 @@
 # Release Notes
 
+## [1.5.3](https://github.com/streetsidesoftware/cspell-dicts/compare/cspell-dicts@1.5.2...cspell-dicts@1.5.3) (2022-09-04)
+
+
+### Build System
+
+* **deps-dev:** bump aoo-mozilla-en-dict from `89f797a` to `e676f00` ([#1427](https://github.com/streetsidesoftware/cspell-dicts/issues/1427)) ([11942c7](https://github.com/streetsidesoftware/cspell-dicts/commit/11942c7fb0646eaf863aeaa9d9e58c79a026da59))
+
+
+### Continuous Integration
+
+* Workflow Bot -- Build Dictionaries ([#1428](https://github.com/streetsidesoftware/cspell-dicts/issues/1428)) ([7c877dc](https://github.com/streetsidesoftware/cspell-dicts/commit/7c877dc7a6d98c7b4755b043313dad964e5590d3))
+* Workflow Bot -- Update ALL Dependencies ([247b3f6](https://github.com/streetsidesoftware/cspell-dicts/commit/247b3f60f689d04395f38901286f8ae519c51e20))
+* Workflow Bot -- Update ALL Dependencies ([4615dc4](https://github.com/streetsidesoftware/cspell-dicts/commit/4615dc4aa2e00feb9b9582775eb55e7be6a47375))
+* Workflow Bot -- Update ALL Dependencies ([fd18369](https://github.com/streetsidesoftware/cspell-dicts/commit/fd1836970e84268c1862957019d4b4f4b2b304b6))
+* Workflow Bot -- Update ALL Dependencies (main) ([#1422](https://github.com/streetsidesoftware/cspell-dicts/issues/1422)) ([fd18369](https://github.com/streetsidesoftware/cspell-dicts/commit/fd1836970e84268c1862957019d4b4f4b2b304b6))
+* Workflow Bot -- Update ALL Dependencies (main) ([#1424](https://github.com/streetsidesoftware/cspell-dicts/issues/1424)) ([4615dc4](https://github.com/streetsidesoftware/cspell-dicts/commit/4615dc4aa2e00feb9b9582775eb55e7be6a47375))
+* Workflow Bot -- Update ALL Dependencies (main) ([#1429](https://github.com/streetsidesoftware/cspell-dicts/issues/1429)) ([247b3f6](https://github.com/streetsidesoftware/cspell-dicts/commit/247b3f60f689d04395f38901286f8ae519c51e20))
+
 ## [1.5.2](https://github.com/streetsidesoftware/cspell-dicts/compare/cspell-dicts@1.5.1...cspell-dicts@1.5.2) (2022-08-30)
 
 
