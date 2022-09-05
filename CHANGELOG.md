@@ -1,5 +1,12 @@
 # Release Notes
 
+## [1.5.4](https://github.com/streetsidesoftware/cspell-dicts/compare/cspell-dicts@1.5.3...cspell-dicts@1.5.4) (2022-09-05)
+
+
+### Updates and Bug Fixes
+
+* add `fastlane` to `companies.txt` ([#1432](https://github.com/streetsidesoftware/cspell-dicts/issues/1432)) ([8f76df8](https://github.com/streetsidesoftware/cspell-dicts/commit/8f76df832b4257fa01c714ec88f58c1ac41f0417))
+
 ## [1.5.3](https://github.com/streetsidesoftware/cspell-dicts/compare/cspell-dicts@1.5.2...cspell-dicts@1.5.3) (2022-09-04)
 
 
