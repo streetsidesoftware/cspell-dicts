@@ -3,6 +3,13 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+## [2.2.7](https://github.com/streetsidesoftware/cspell-dicts/compare/@cspell/dict-software-terms@2.2.6...@cspell/dict-software-terms@2.2.7) (2022-09-12)
+
+
+### Updates and Bug Fixes
+
+* Add `cmake` to software tools ([#1442](https://github.com/streetsidesoftware/cspell-dicts/issues/1442)) ([1cca8b1](https://github.com/streetsidesoftware/cspell-dicts/commit/1cca8b109ca6688e645249df6dd32e5dcb23ff72))
+
 ## [2.2.6](https://github.com/streetsidesoftware/cspell-dicts/compare/@cspell/dict-software-terms@2.2.5...@cspell/dict-software-terms@2.2.6) (2022-08-30)
 
 
