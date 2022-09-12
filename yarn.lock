@@ -3119,6 +3119,11 @@ gensequence@^3.0.1, gensequence@^3.1.1:
   resolved "https://registry.npmjs.org/gensequence/-/gensequence-3.1.1.tgz#95c1afc7c0680f92942c17f2d6f83f3d26ea97af"
   integrity sha512-ys3h0hiteRwmY6BsvSttPmkhC0vEQHPJduANBRtH/dlDPZ0UBIb/dXy80IcckXyuQ6LKg+PloRqvGER9IS7F7g==
 
+gensequence@^4.0.2:
+  version "4.0.2"
+  resolved "https://registry.yarnpkg.com/gensequence/-/gensequence-4.0.2.tgz#7c6147cf04451e9f6efe3872be9d46bb8d9c2603"
+  integrity sha512-mQiFskYFPFDSUpBJ/n3ebAV2Ufu6DZGvUPXzyWYzFfJr6/DyOOZVnjx6VTWE4y0RLvYWnc5tZq5sCjzEWhRjqQ==
+
 get-caller-file@^2.0.5:
   version "2.0.5"
   resolved "https://registry.npmjs.org/get-caller-file/-/get-caller-file-2.0.5.tgz#4f94412a82db32f36e3b0b9741f8a97feb031f7e"
@@ -3554,13 +3559,13 @@ hunspell-reader@^3.2.0:
     iconv-lite "^0.5.0"
 
 hunspell-reader@^6.8.1:
-  version "6.8.1"
-  resolved "https://registry.npmjs.org/hunspell-reader/-/hunspell-reader-6.8.1.tgz#ec3cfae0bd0c45a0361cb263dac8ad1a6dccdee0"
-  integrity sha512-Yq5FDbZoDcHhRo0H8Elk4RMnqsN8HWF2SBGKv/ME4DORm6xH1TjMY3O6jYzwIdugogWtCwa4oBpl4PQNipM58w==
+  version "6.8.2"
+  resolved "https://registry.yarnpkg.com/hunspell-reader/-/hunspell-reader-6.8.2.tgz#1437e3123a008408c090fe7159fe48a224917938"
+  integrity sha512-6qlEtKqHMWdBtQiiSPDsOsBx6YbDLt6cpp7JN5KbMGpY6g3QyiZB5vTCTKE8vVxyxuib1GGJ6h8+W7KdqoGngQ==
   dependencies:
     commander "^9.4.0"
     fs-extra "^10.1.0"
-    gensequence "^3.1.1"
+    gensequence "^4.0.2"
     iconv-lite "^0.6.3"
 
 iconv-lite@^0.4.24:
