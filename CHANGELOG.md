@@ -1,5 +1,24 @@
 # Release Notes
 
+## [1.5.5](https://github.com/streetsidesoftware/cspell-dicts/compare/cspell-dicts@1.5.4...cspell-dicts@1.5.5) (2022-09-12)
+
+
+### Continuous Integration
+
+* Workflow Bot -- Update ALL Dependencies ([f4a1b36](https://github.com/streetsidesoftware/cspell-dicts/commit/f4a1b36487a5f6eaf9fa8efbc802ba173f4c3afb))
+* Workflow Bot -- Update ALL Dependencies ([f5b423a](https://github.com/streetsidesoftware/cspell-dicts/commit/f5b423a5f72a6ad505a3b16e22f2d58d64a18f4a))
+* Workflow Bot -- Update ALL Dependencies ([ede1dbf](https://github.com/streetsidesoftware/cspell-dicts/commit/ede1dbf7303dc7a3afce6903a7068d24bbc1871d))
+* Workflow Bot -- Update ALL Dependencies (main) ([#1434](https://github.com/streetsidesoftware/cspell-dicts/issues/1434)) ([ede1dbf](https://github.com/streetsidesoftware/cspell-dicts/commit/ede1dbf7303dc7a3afce6903a7068d24bbc1871d))
+* Workflow Bot -- Update ALL Dependencies (main) ([#1440](https://github.com/streetsidesoftware/cspell-dicts/issues/1440)) ([f5b423a](https://github.com/streetsidesoftware/cspell-dicts/commit/f5b423a5f72a6ad505a3b16e22f2d58d64a18f4a))
+* Workflow Bot -- Update ALL Dependencies (main) ([#1441](https://github.com/streetsidesoftware/cspell-dicts/issues/1441)) ([f4a1b36](https://github.com/streetsidesoftware/cspell-dicts/commit/f4a1b36487a5f6eaf9fa8efbc802ba173f4c3afb))
+
+
+### Updates and Bug Fixes
+
+* Add `bday` to HTML dictionary. ([5f6c127](https://github.com/streetsidesoftware/cspell-dicts/commit/5f6c1275442b727d4683350c5d1173cc55ebeb7e))
+* Add `cmake` to software tools ([#1442](https://github.com/streetsidesoftware/cspell-dicts/issues/1442)) ([1cca8b1](https://github.com/streetsidesoftware/cspell-dicts/commit/1cca8b109ca6688e645249df6dd32e5dcb23ff72))
+* Add `impp` to HTML dictionary. ([f7acee8](https://github.com/streetsidesoftware/cspell-dicts/commit/f7acee885cba6d9408c3613b4216505ef080f4d9))
+
 ## [1.5.4](https://github.com/streetsidesoftware/cspell-dicts/compare/cspell-dicts@1.5.3...cspell-dicts@1.5.4) (2022-09-05)
 
 

@@ -3,6 +3,14 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+## [3.3.2](https://github.com/streetsidesoftware/cspell-dicts/compare/@cspell/dict-html@3.3.1...@cspell/dict-html@3.3.2) (2022-09-12)
+
+
+### Updates and Bug Fixes
+
+* Add `bday` to HTML dictionary. ([5f6c127](https://github.com/streetsidesoftware/cspell-dicts/commit/5f6c1275442b727d4683350c5d1173cc55ebeb7e))
+* Add `impp` to HTML dictionary. ([f7acee8](https://github.com/streetsidesoftware/cspell-dicts/commit/f7acee885cba6d9408c3613b4216505ef080f4d9))
+
 ## [3.3.1](https://github.com/streetsidesoftware/cspell-dicts/compare/@cspell/dict-html@3.3.0...@cspell/dict-html@3.3.1) (2022-08-29)
 
 
