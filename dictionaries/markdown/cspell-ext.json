@@ -1,0 +1,41 @@
+{
+    "id": "markdown",
+    "version": "0.2",
+    "name": "Markdown",
+    "description": "Markdown dictionary for cspell.",
+    "readonly": true,
+    "dictionaryDefinitions": [
+        {
+            "name": "markdown",
+            "path": "./markdown.txt.gz",
+            "description": "Markdown dictionary for cspell."
+        }
+    ],
+    "patterns": [
+        {
+            "name": "MARKDOWN-link-reference",
+            "description": "Markdown reference link: `[This is a link][reference]`",
+            "pattern": "/(?<=\\])\\[[-\\w.`'\"*&;#@ ]+\\]/g"
+        },
+        {
+            "name": "MARKDOWN-link-footer",
+            "description": "Markdown referenced link: `[reference]: https://www.google.com`",
+            "pattern": "/\\[[-\\w.`'\"*&;#@ ]+\\]:/g"
+        },
+        {
+            "name": "MARKDOWN-link",
+            "description": "Markdown link: `[link text](link)`, matches `link`",
+            "pattern": "/(?<=\\]\\()[^)\\s]+/g"
+        }
+    ],
+    "languageSettings": [
+        {
+            "languageId": "markdown",
+            "locale": "*",
+            "ignoreRegExpList": ["MARKDOWN-link-reference", "MARKDOWN-link-footer", "MARKDOWN-link"],
+            "patterns": [],
+            "dictionaries": ["markdown"],
+            "dictionaryDefinitions": []
+        }
+    ]
+}

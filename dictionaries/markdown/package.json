@@ -1,0 +1,47 @@
+{
+  "name": "@cspell/dict-markdown",
+  "version": "1.0.0",
+  "description": "Markdown dictionary for cspell.",
+  "publishConfig": {
+    "access": "public"
+  },
+  "exports": {
+    ".": "./cspell-ext.json",
+    "./cspell": "./cspell-ext.json",
+    "./cspell-ext.json": "./cspell-ext.json"
+  },
+  "scripts": {
+    "build": "cross-env NODE_OPTIONS=--max_old_space_size=8192 cspell-tools-cli compile \"src/markdown.txt\" -o .",
+    "test": "yarn run test-dict && yarn run test-check",
+    "test-dict": "head -n 1000 \"src/markdown.txt\" | cspell -v -c ./cspell-ext.json \"--local=*\" \"--languageId=markdown\" stdin",
+    "test-check": "ava",
+    "prepublishOnly": "echo pre-publish",
+    "prepare": "yarn run build"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/streetsidesoftware/cspell-dicts.git"
+  },
+  "keywords": [
+    "cspell",
+    "cspell-ext",
+    "markdown",
+    "Markdown",
+    "dictionary",
+    "spelling"
+  ],
+  "author": "Jason Dent",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/streetsidesoftware/cspell-dicts/issues"
+  },
+  "homepage": "https://github.com/streetsidesoftware/cspell-dicts/blob/main/dictionaries/markdown#readme",
+  "devDependencies": {},
+  "dependencies": {},
+  "files": [
+    "markdown.txt.gz",
+    "cspell-ext.json",
+    "*.js",
+    "*.d.ts"
+  ]
+}
