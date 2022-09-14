@@ -1,5 +1,30 @@
 # Release Notes
 
+## [1.6.0](https://github.com/streetsidesoftware/cspell-dicts/compare/cspell-dicts@1.5.5...cspell-dicts@1.6.0) (2022-09-14)
+
+
+### Features
+
+* Add Markdown Dictionary ([#1451](https://github.com/streetsidesoftware/cspell-dicts/issues/1451)) ([7a3cc52](https://github.com/streetsidesoftware/cspell-dicts/commit/7a3cc5227a9a8380f76dd811878f19cdf5be2b60))
+
+
+### Build System
+
+* **deps:** bump cspell from 6.8.1 to 6.8.2 ([#1446](https://github.com/streetsidesoftware/cspell-dicts/issues/1446)) ([725cf34](https://github.com/streetsidesoftware/cspell-dicts/commit/725cf34f10d7f28884263b567e1f680b40bb7b9e))
+* **deps:** bump streetsidesoftware/cspell-action from 2.8.1 to 2.8.2 ([#1453](https://github.com/streetsidesoftware/cspell-dicts/issues/1453)) ([67c86ff](https://github.com/streetsidesoftware/cspell-dicts/commit/67c86ff132f8f6bf04e8c8ba62090667080280d7))
+
+
+### Continuous Integration
+
+* Workflow Bot -- Update ALL Dependencies ([156c166](https://github.com/streetsidesoftware/cspell-dicts/commit/156c166681795356556af3e1683c1d0be2cadcd7))
+* Workflow Bot -- Update ALL Dependencies ([85d82bc](https://github.com/streetsidesoftware/cspell-dicts/commit/85d82bc4cba728c169235b14d6d405520dccac1e))
+* Workflow Bot -- Update ALL Dependencies ([cd382f9](https://github.com/streetsidesoftware/cspell-dicts/commit/cd382f9939ae06587ebd2f29c76649ae79bdb419))
+* Workflow Bot -- Update ALL Dependencies ([10e7dac](https://github.com/streetsidesoftware/cspell-dicts/commit/10e7dacc3f1d2121cdfa6ccf66278f761c2b4303))
+* Workflow Bot -- Update ALL Dependencies (main) ([#1443](https://github.com/streetsidesoftware/cspell-dicts/issues/1443)) ([10e7dac](https://github.com/streetsidesoftware/cspell-dicts/commit/10e7dacc3f1d2121cdfa6ccf66278f761c2b4303))
+* Workflow Bot -- Update ALL Dependencies (main) ([#1448](https://github.com/streetsidesoftware/cspell-dicts/issues/1448)) ([cd382f9](https://github.com/streetsidesoftware/cspell-dicts/commit/cd382f9939ae06587ebd2f29c76649ae79bdb419))
+* Workflow Bot -- Update ALL Dependencies (main) ([#1450](https://github.com/streetsidesoftware/cspell-dicts/issues/1450)) ([85d82bc](https://github.com/streetsidesoftware/cspell-dicts/commit/85d82bc4cba728c169235b14d6d405520dccac1e))
+* Workflow Bot -- Update ALL Dependencies (main) ([#1452](https://github.com/streetsidesoftware/cspell-dicts/issues/1452)) ([156c166](https://github.com/streetsidesoftware/cspell-dicts/commit/156c166681795356556af3e1683c1d0be2cadcd7))
+
 ## [1.5.5](https://github.com/streetsidesoftware/cspell-dicts/compare/cspell-dicts@1.5.4...cspell-dicts@1.5.5) (2022-09-12)
 
 
