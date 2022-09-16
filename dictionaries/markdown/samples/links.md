@@ -17,7 +17,10 @@ another [link][2].
 
 Smaller logo: ![Alt][3]
 
+Anchor: <a id="seebelow"></a>
+
 [1]: http://example.com/ 'Title'
 [2]: http://example.org/ 'Title'
 [3]: https://i2.wp.com/s.wordpress.org/about/images/wpmini-grey.png 'Title'
 [*`fileerror`*]: https://fileerror.example.com
+[ref]: #seebelow "See Below"
