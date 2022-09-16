@@ -1,5 +1,27 @@
 # Release Notes
 
+## [1.6.1](https://github.com/streetsidesoftware/cspell-dicts/compare/cspell-dicts@1.6.0...cspell-dicts@1.6.1) (2022-09-16)
+
+
+### Continuous Integration
+
+* Workflow Bot -- Update ALL Dependencies ([7e6e99e](https://github.com/streetsidesoftware/cspell-dicts/commit/7e6e99e3863c2a72af6e36365547d1bfffcea26f))
+* Workflow Bot -- Update ALL Dependencies ([3910eaf](https://github.com/streetsidesoftware/cspell-dicts/commit/3910eaf123b70ee26b957f7d62abf8493df49280))
+* Workflow Bot -- Update ALL Dependencies (main) ([#1454](https://github.com/streetsidesoftware/cspell-dicts/issues/1454)) ([3910eaf](https://github.com/streetsidesoftware/cspell-dicts/commit/3910eaf123b70ee26b957f7d62abf8493df49280))
+* Workflow Bot -- Update ALL Dependencies (main) ([#1461](https://github.com/streetsidesoftware/cspell-dicts/issues/1461)) ([7e6e99e](https://github.com/streetsidesoftware/cspell-dicts/commit/7e6e99e3863c2a72af6e36365547d1bfffcea26f))
+
+
+### Build System
+
+* **deps-dev:** bump @cspell/cspell-tools from 6.8.2 to 6.9.0 ([#1459](https://github.com/streetsidesoftware/cspell-dicts/issues/1459)) ([694e569](https://github.com/streetsidesoftware/cspell-dicts/commit/694e569750c1c3db89ebf71e6dce85a19be89787))
+* **deps:** bump streetsidesoftware/cspell-action from 2.8.2 to 2.9.0 ([#1457](https://github.com/streetsidesoftware/cspell-dicts/issues/1457)) ([566d853](https://github.com/streetsidesoftware/cspell-dicts/commit/566d853f1b514933c4a45c6ad292e1bf7b5c5aa8))
+
+
+### Updates and Bug Fixes
+
+* Ignore anchors ([#1455](https://github.com/streetsidesoftware/cspell-dicts/issues/1455)) ([6cc1170](https://github.com/streetsidesoftware/cspell-dicts/commit/6cc117066e286c39e4fb16d7fcae6f5e11a7a521))
+* Remove typos from software terms ([#1462](https://github.com/streetsidesoftware/cspell-dicts/issues/1462)) ([bff1352](https://github.com/streetsidesoftware/cspell-dicts/commit/bff135215f3a71dc3e5151f97db407d597e8df65))
+
 ## [1.6.0](https://github.com/streetsidesoftware/cspell-dicts/compare/cspell-dicts@1.5.5...cspell-dicts@1.6.0) (2022-09-14)
 
 
