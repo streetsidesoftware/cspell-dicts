@@ -1,5 +1,12 @@
 # Release Notes
 
+## [1.6.2](https://github.com/streetsidesoftware/cspell-dicts/compare/cspell-dicts@1.6.1...cspell-dicts@1.6.2) (2022-09-17)
+
+
+### Updates and Bug Fixes
+
+* Add Grafana to companies.txt ([#1463](https://github.com/streetsidesoftware/cspell-dicts/issues/1463)) ([844189f](https://github.com/streetsidesoftware/cspell-dicts/commit/844189f675b8c923005723d2aad053a6af90afd1))
+
 ## [1.6.1](https://github.com/streetsidesoftware/cspell-dicts/compare/cspell-dicts@1.6.0...cspell-dicts@1.6.1) (2022-09-16)
 
 
