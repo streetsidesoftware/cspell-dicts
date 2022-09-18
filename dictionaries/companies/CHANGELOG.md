@@ -3,6 +3,13 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+## [2.0.14](https://github.com/streetsidesoftware/cspell-dicts/compare/@cspell/dict-companies@2.0.13...@cspell/dict-companies@2.0.14) (2022-09-17)
+
+
+### Updates and Bug Fixes
+
+* Add Grafana to companies.txt ([#1463](https://github.com/streetsidesoftware/cspell-dicts/issues/1463)) ([844189f](https://github.com/streetsidesoftware/cspell-dicts/commit/844189f675b8c923005723d2aad053a6af90afd1))
+
 ## [2.0.13](https://github.com/streetsidesoftware/cspell-dicts/compare/@cspell/dict-companies@2.0.12...@cspell/dict-companies@2.0.13) (2022-09-05)
 
 
