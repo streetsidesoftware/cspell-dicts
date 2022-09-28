@@ -10,13 +10,13 @@ Global Install and add to cspell global settings.
 
 ```sh
 npm install -g @cspell/dict-pl_pl
-cspell link add @cspell/dict-pl-pl
+cspell link add @cspell/dict-pl_pl
 ```
 
 ## Uninstall from cspell
 
 ```sh
-cspell link remove @cspell/dict-pl-pl
+cspell link remove @cspell/dict-pl_pl
 ```
 
 ## Manual Installation
