@@ -1,6 +1,6 @@
 {
     "files": ["**/*.{md,txt}"],
-    "ignorePaths": ["cspell-ext.json", "src/hunspell"],
+    "ignorePaths": ["cspell-ext.json", "src/hunspell", "src/**/*.txt"],
     "language": "en,es",
     "import": ["./cspell-ext.json"],
     "caseSensitive": true,
