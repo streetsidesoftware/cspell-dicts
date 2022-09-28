@@ -3,6 +3,14 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+## [2.2.10](https://github.com/streetsidesoftware/cspell-dicts/compare/@cspell/dict-software-terms@2.2.9...@cspell/dict-software-terms@2.2.10) (2022-09-28)
+
+
+### Updates and Bug Fixes
+
+* Add "captchas" to software terms ([#1483](https://github.com/streetsidesoftware/cspell-dicts/issues/1483)) ([e942afe](https://github.com/streetsidesoftware/cspell-dicts/commit/e942afe9a89ba3e7777109d50268d63774f8e425))
+* add neumorphism to software terms ([#1482](https://github.com/streetsidesoftware/cspell-dicts/issues/1482)) ([66fa366](https://github.com/streetsidesoftware/cspell-dicts/commit/66fa3661430260496372f6fe9a8c66a71972aa5c))
+
 ## [2.2.9](https://github.com/streetsidesoftware/cspell-dicts/compare/@cspell/dict-software-terms@2.2.8...@cspell/dict-software-terms@2.2.9) (2022-09-17)
 
 

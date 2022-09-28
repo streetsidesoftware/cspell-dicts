@@ -30,6 +30,18 @@ See [Conventional Commits](https://conventionalcommits.org) for commit guideline
 
 
 
+## [2.2.2](https://github.com/streetsidesoftware/cspell-dicts/compare/@cspell/dict-es-es@2.2.1...@cspell/dict-es-es@2.2.2) (2022-09-28)
+
+
+### Miscellaneous
+
+* do not spell check additional words file. ([b815109](https://github.com/streetsidesoftware/cspell-dicts/commit/b81510954ecc05b652a2e190f3c9b6c361881510))
+
+
+### Continuous Integration
+
+* Workflow Bot -- Build Dictionaries ([#1488](https://github.com/streetsidesoftware/cspell-dicts/issues/1488)) ([12914b6](https://github.com/streetsidesoftware/cspell-dicts/commit/12914b6998aaeff100b4f7a30923d2228cdaffd4))
+
 ## [2.2.1](https://github.com/streetsidesoftware/cspell-dicts/compare/@cspell/dict-es-es@2.2.0...@cspell/dict-es-es@2.2.1) (2022-08-19)
 
 

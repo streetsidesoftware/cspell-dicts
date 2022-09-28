@@ -22,6 +22,13 @@ See [Conventional Commits](https://conventionalcommits.org) for commit guideline
 
 
 
+## [2.0.1](https://github.com/streetsidesoftware/cspell-dicts/compare/@cspell/dict-pl_pl@2.0.0...@cspell/dict-pl_pl@2.0.1) (2022-09-28)
+
+
+### Updates and Bug Fixes
+
+* Update pl_PL README.md ([#1484](https://github.com/streetsidesoftware/cspell-dicts/issues/1484)) ([0a026ed](https://github.com/streetsidesoftware/cspell-dicts/commit/0a026ed51e07f54efbcd892d9ebfbead1496ede6))
+
 ## [1.0.29](https://github.com/streetsidesoftware/cspell-dicts/compare/@cspell/dict-pl_pl@1.0.28...@cspell/dict-pl_pl@1.0.29) (2020-11-28)
 
 **Note:** Version bump only for package @cspell/dict-pl_pl
