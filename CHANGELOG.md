@@ -1,5 +1,24 @@
 # Release Notes
 
+## [1.6.4](https://github.com/streetsidesoftware/cspell-dicts/compare/cspell-dicts@1.6.3...cspell-dicts@1.6.4) (2022-09-29)
+
+
+### Build System
+
+* **deps-dev:** bump aoo-mozilla-en-dict from `e676f00` to `6fa6ad2` ([#1489](https://github.com/streetsidesoftware/cspell-dicts/issues/1489)) ([f88c4f0](https://github.com/streetsidesoftware/cspell-dicts/commit/f88c4f01a18d30154855e808be5497cf27e12795))
+
+
+### Continuous Integration
+
+* Workflow Bot -- Build Dictionaries ([#1491](https://github.com/streetsidesoftware/cspell-dicts/issues/1491)) ([afb392e](https://github.com/streetsidesoftware/cspell-dicts/commit/afb392e057ecd38c5979e93f338fd97a395b5ebd))
+* Workflow Bot -- Update ALL Dependencies ([2cab701](https://github.com/streetsidesoftware/cspell-dicts/commit/2cab701317990463a676fc7a4a5feb675b06945d))
+* Workflow Bot -- Update ALL Dependencies (main) ([#1492](https://github.com/streetsidesoftware/cspell-dicts/issues/1492)) ([2cab701](https://github.com/streetsidesoftware/cspell-dicts/commit/2cab701317990463a676fc7a4a5feb675b06945d))
+
+
+### Updates and Bug Fixes
+
+* add encodable to software-terms ([#1493](https://github.com/streetsidesoftware/cspell-dicts/issues/1493)) ([a706001](https://github.com/streetsidesoftware/cspell-dicts/commit/a7060013156da2939d40f7ea076a0600360fa67d))
+
 ## [1.6.3](https://github.com/streetsidesoftware/cspell-dicts/compare/cspell-dicts@1.6.2...cspell-dicts@1.6.3) (2022-09-28)
 
 

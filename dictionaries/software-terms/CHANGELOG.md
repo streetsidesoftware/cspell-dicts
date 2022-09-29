@@ -3,6 +3,13 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+## [2.2.11](https://github.com/streetsidesoftware/cspell-dicts/compare/@cspell/dict-software-terms@2.2.10...@cspell/dict-software-terms@2.2.11) (2022-09-29)
+
+
+### Updates and Bug Fixes
+
+* add encodable to software-terms ([#1493](https://github.com/streetsidesoftware/cspell-dicts/issues/1493)) ([a706001](https://github.com/streetsidesoftware/cspell-dicts/commit/a7060013156da2939d40f7ea076a0600360fa67d))
+
 ## [2.2.10](https://github.com/streetsidesoftware/cspell-dicts/compare/@cspell/dict-software-terms@2.2.9...@cspell/dict-software-terms@2.2.10) (2022-09-28)
 
 
