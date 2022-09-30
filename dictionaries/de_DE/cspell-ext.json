@@ -8,7 +8,34 @@
         {
             "name": "de-de",
             "path": "./de_DE.trie.gz",
-            "description": "German (de-DE) Dictionary."
+            "description": "German (de-DE) Dictionary.",
+            "repMap": [
+                ["ae", "ä"],
+                ["oe", "ö"],
+                ["ue", "ü"],
+                ["Ae", "Ä"],
+                ["Oe", "Ö"],
+                ["Ue", "Ü"],
+                ["ss", "ß"]
+            ],
+            "dictionaryInformation": {
+                "locale": "de_DE",
+                "alphabet": "a-zA-ZäüößáéêàâñÄÜÖÉ",
+                "suggestionEditCosts": [
+                    {
+                        "map": "(ae)ä|(oe)ö|(ue)ü(Ae)Ä|(Oe)Ö|(Ue)Ü|(ss)ß",
+                        "replace": 0
+                    },
+                    {
+                        "map": "eéèëê|aáà|iíìïî|oóòöô|uüúùû|(ij)(ĳ)(IJ)(Ĳ)",
+                        "replace": 1
+                    },
+                    {
+                        "map": "(ah)a|(ch)k|(ee)e|(eh)e|(ph)f|(th)t|dt|i(ie)|o(oh)|r(rh)|s(ss)|t(th)",
+                        "replace": 50
+                    }
+                ]
+            }
         }
     ],
     "dictionaries": [],
