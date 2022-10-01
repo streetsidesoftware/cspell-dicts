@@ -6,6 +6,7 @@
     "import": [
         "./cspell-ext.json"
     ],
+    "ignorePaths": ["cspell-ext.json", "*.trie", "/src/**"],
     "ignoreWords": [
         "frami",
         "Huggenberger",
