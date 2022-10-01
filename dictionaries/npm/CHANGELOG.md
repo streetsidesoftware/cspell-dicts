@@ -3,6 +3,13 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+## [3.1.3](https://github.com/streetsidesoftware/cspell-dicts/compare/@cspell/dict-npm@3.1.2...@cspell/dict-npm@3.1.3) (2022-10-01)
+
+
+### Updates and Bug Fixes
+
+* Add posthtml ([#1499](https://github.com/streetsidesoftware/cspell-dicts/issues/1499)) ([8cee05a](https://github.com/streetsidesoftware/cspell-dicts/commit/8cee05a842741e98356dca28d54016ffda122808))
+
 ## [3.1.2](https://github.com/streetsidesoftware/cspell-dicts/compare/@cspell/dict-npm@3.1.1...@cspell/dict-npm@3.1.2) (2022-08-07)
 
 

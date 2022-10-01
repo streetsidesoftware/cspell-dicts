@@ -3,6 +3,13 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+## [2.2.12](https://github.com/streetsidesoftware/cspell-dicts/compare/@cspell/dict-software-terms@2.2.11...@cspell/dict-software-terms@2.2.12) (2022-10-01)
+
+
+### Updates and Bug Fixes
+
+* Add "Checkov" to the software tools dict ([#1503](https://github.com/streetsidesoftware/cspell-dicts/issues/1503)) ([b6ca0d5](https://github.com/streetsidesoftware/cspell-dicts/commit/b6ca0d5607c6f9e5e8812e3cd48d579452fae53d))
+
 ## [2.2.11](https://github.com/streetsidesoftware/cspell-dicts/compare/@cspell/dict-software-terms@2.2.10...@cspell/dict-software-terms@2.2.11) (2022-09-29)
 
 

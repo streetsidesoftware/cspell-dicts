@@ -1,5 +1,39 @@
 # Release Notes
 
+## [2.0.0](https://github.com/streetsidesoftware/cspell-dicts/compare/cspell-dicts@1.6.4...cspell-dicts@2.0.0) (2022-10-01)
+
+
+### ⚠ BREAKING CHANGES
+
+* Support Umlaut alternatives (#1500)
+
+### Features
+
+* Support Umlaut alternatives ([#1500](https://github.com/streetsidesoftware/cspell-dicts/issues/1500)) ([e0e27b7](https://github.com/streetsidesoftware/cspell-dicts/commit/e0e27b77b0050282e1b513c2909576c32efddfa6))
+
+
+### Continuous Integration
+
+* Workflow Bot -- Update ALL Dependencies ([742310b](https://github.com/streetsidesoftware/cspell-dicts/commit/742310b297980dfeb38b94847fa2531ea9c0a0a1))
+* Workflow Bot -- Update ALL Dependencies ([84204b7](https://github.com/streetsidesoftware/cspell-dicts/commit/84204b70a04b911a386894882a7727ddbc3bb99f))
+* Workflow Bot -- Update ALL Dependencies ([66b6f77](https://github.com/streetsidesoftware/cspell-dicts/commit/66b6f777b098f734edbfafb3b8345023a16db5ec))
+* Workflow Bot -- Update ALL Dependencies (main) ([#1494](https://github.com/streetsidesoftware/cspell-dicts/issues/1494)) ([66b6f77](https://github.com/streetsidesoftware/cspell-dicts/commit/66b6f777b098f734edbfafb3b8345023a16db5ec))
+* Workflow Bot -- Update ALL Dependencies (main) ([#1496](https://github.com/streetsidesoftware/cspell-dicts/issues/1496)) ([84204b7](https://github.com/streetsidesoftware/cspell-dicts/commit/84204b70a04b911a386894882a7727ddbc3bb99f))
+* Workflow Bot -- Update ALL Dependencies (main) ([#1497](https://github.com/streetsidesoftware/cspell-dicts/issues/1497)) ([d92f133](https://github.com/streetsidesoftware/cspell-dicts/commit/d92f133caaf0782be0068fca0f8a9c9e4c27d727))
+* Workflow Bot -- Update ALL Dependencies (main) ([#1501](https://github.com/streetsidesoftware/cspell-dicts/issues/1501)) ([742310b](https://github.com/streetsidesoftware/cspell-dicts/commit/742310b297980dfeb38b94847fa2531ea9c0a0a1))
+
+
+### Miscellaneous
+
+* Update cspell-action ([#1502](https://github.com/streetsidesoftware/cspell-dicts/issues/1502)) ([4e1b2c9](https://github.com/streetsidesoftware/cspell-dicts/commit/4e1b2c941acc4e8c4f07ff825056419f2ef59752))
+
+
+### Updates and Bug Fixes
+
+* Add "Checkov" to the software tools dict ([#1503](https://github.com/streetsidesoftware/cspell-dicts/issues/1503)) ([b6ca0d5](https://github.com/streetsidesoftware/cspell-dicts/commit/b6ca0d5607c6f9e5e8812e3cd48d579452fae53d))
+* Add posthtml ([#1499](https://github.com/streetsidesoftware/cspell-dicts/issues/1499)) ([8cee05a](https://github.com/streetsidesoftware/cspell-dicts/commit/8cee05a842741e98356dca28d54016ffda122808))
+* Fix Dutch suggestion edit costs. ([#1498](https://github.com/streetsidesoftware/cspell-dicts/issues/1498)) ([0396dd8](https://github.com/streetsidesoftware/cspell-dicts/commit/0396dd8f811b45e0cd5287f559d29eb09489c7be))
+
 ## [1.6.4](https://github.com/streetsidesoftware/cspell-dicts/compare/cspell-dicts@1.6.3...cspell-dicts@1.6.4) (2022-09-29)
 
 
