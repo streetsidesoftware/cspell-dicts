@@ -14,6 +14,17 @@ See [Conventional Commits](https://conventionalcommits.org) for commit guideline
 
 
 
+## [3.0.0](https://github.com/streetsidesoftware/cspell-dicts/compare/@cspell/dict-de-de@2.1.1...@cspell/dict-de-de@3.0.0) (2022-10-01)
+
+
+### ⚠ BREAKING CHANGES
+
+* Support Umlaut alternatives (#1500)
+
+### Features
+
+* Support Umlaut alternatives ([#1500](https://github.com/streetsidesoftware/cspell-dicts/issues/1500)) ([e0e27b7](https://github.com/streetsidesoftware/cspell-dicts/commit/e0e27b77b0050282e1b513c2909576c32efddfa6))
+
 ## [2.1.1](https://github.com/streetsidesoftware/cspell-dicts/compare/@cspell/dict-de-de@2.1.0...@cspell/dict-de-de@2.1.1) (2022-08-19)
 
 
