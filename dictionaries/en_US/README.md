@@ -8,6 +8,13 @@ This is a pre-built dictionary for use with cspell.
 
 This dictionary comes pre-installed with cspell. It should not be necessary to add it.
 
+## Requirements
+
+| Tool                                                                                                                                 | Version |
+| ------------------------------------------------------------------------------------------------------------------------------------ | ------- |
+| [cspell](https://github.com/streetsidesoftware/cspell)                                                                               | `>= 6`  |
+| [Code Spell Checker - Visual Studio Code](https://marketplace.visualstudio.com/items?itemName=streetsidesoftware.code-spell-checker) | `>= 2`  |
+
 ## Installation
 
 Global Install and add to cspell global settings.
