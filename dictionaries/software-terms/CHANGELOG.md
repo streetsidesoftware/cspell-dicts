@@ -3,6 +3,18 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+## [2.3.0](https://github.com/streetsidesoftware/cspell-dicts/compare/@cspell/dict-software-terms@2.2.13...@cspell/dict-software-terms@2.3.0) (2022-10-10)
+
+
+### Features
+
+* Add microservices to software ([946e16e](https://github.com/streetsidesoftware/cspell-dicts/commit/946e16e55b912ad04aa3791d97680731c1a979a6))
+
+
+### Updates and Bug Fixes
+
+* Add microservices to software ([#1511](https://github.com/streetsidesoftware/cspell-dicts/issues/1511)) ([946e16e](https://github.com/streetsidesoftware/cspell-dicts/commit/946e16e55b912ad04aa3791d97680731c1a979a6))
+
 ## [2.2.13](https://github.com/streetsidesoftware/cspell-dicts/compare/@cspell/dict-software-terms@2.2.12...@cspell/dict-software-terms@2.2.13) (2022-10-09)
 
 

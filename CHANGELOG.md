@@ -1,5 +1,23 @@
 # Release Notes
 
+## [2.1.0](https://github.com/streetsidesoftware/cspell-dicts/compare/cspell-dicts@2.0.1...cspell-dicts@2.1.0) (2022-10-10)
+
+
+### Features
+
+* Add microservices to software ([946e16e](https://github.com/streetsidesoftware/cspell-dicts/commit/946e16e55b912ad04aa3791d97680731c1a979a6))
+
+
+### Continuous Integration
+
+* Workflow Bot -- Update ALL Dependencies ([c985b45](https://github.com/streetsidesoftware/cspell-dicts/commit/c985b45c0cca25398b1fb501d638596566d77dcf))
+* Workflow Bot -- Update ALL Dependencies (main) ([#1509](https://github.com/streetsidesoftware/cspell-dicts/issues/1509)) ([c985b45](https://github.com/streetsidesoftware/cspell-dicts/commit/c985b45c0cca25398b1fb501d638596566d77dcf))
+
+
+### Updates and Bug Fixes
+
+* Add microservices to software ([#1511](https://github.com/streetsidesoftware/cspell-dicts/issues/1511)) ([946e16e](https://github.com/streetsidesoftware/cspell-dicts/commit/946e16e55b912ad04aa3791d97680731c1a979a6))
+
 ## [2.0.1](https://github.com/streetsidesoftware/cspell-dicts/compare/cspell-dicts@2.0.0...cspell-dicts@2.0.1) (2022-10-09)
 
 
