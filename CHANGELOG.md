@@ -1,5 +1,19 @@
 # Release Notes
 
+## [2.0.1](https://github.com/streetsidesoftware/cspell-dicts/compare/cspell-dicts@2.0.0...cspell-dicts@2.0.1) (2022-10-09)
+
+
+### Updates and Bug Fixes
+
+* Add incrementable ([#1506](https://github.com/streetsidesoftware/cspell-dicts/issues/1506)) ([53608ae](https://github.com/streetsidesoftware/cspell-dicts/commit/53608ae88dbd90315be546ce45439134c25e7c5b))
+
+
+### Continuous Integration
+
+* Workflow Bot -- Update ALL Dependencies ([111bf0e](https://github.com/streetsidesoftware/cspell-dicts/commit/111bf0e3cbe4eeb896d75d60490b46cc136e714a))
+* Workflow Bot -- Update ALL Dependencies (main) ([#1504](https://github.com/streetsidesoftware/cspell-dicts/issues/1504)) ([192cb9c](https://github.com/streetsidesoftware/cspell-dicts/commit/192cb9c3a5f41686ee5ceeb2a259c1b54d106de2))
+* Workflow Bot -- Update ALL Dependencies (main) ([#1508](https://github.com/streetsidesoftware/cspell-dicts/issues/1508)) ([111bf0e](https://github.com/streetsidesoftware/cspell-dicts/commit/111bf0e3cbe4eeb896d75d60490b46cc136e714a))
+
 ## [2.0.0](https://github.com/streetsidesoftware/cspell-dicts/compare/cspell-dicts@1.6.4...cspell-dicts@2.0.0) (2022-10-01)
 
 
