@@ -1,5 +1,21 @@
 # Release Notes
 
+## [3.0.1](https://github.com/streetsidesoftware/cspell-dicts/compare/cspell-dicts@3.0.0...cspell-dicts@3.0.1) (2022-10-17)
+
+
+### Continuous Integration
+
+* Workflow Bot -- Update ALL Dependencies ([1583f07](https://github.com/streetsidesoftware/cspell-dicts/commit/1583f0791dbe3eb1560578a1d77e8cc0e2a9e2ed))
+* Workflow Bot -- Update ALL Dependencies ([a29c4be](https://github.com/streetsidesoftware/cspell-dicts/commit/a29c4be6f415c0777aa88593e7c446392e9a44bf))
+* Workflow Bot -- Update ALL Dependencies (main) ([#1515](https://github.com/streetsidesoftware/cspell-dicts/issues/1515)) ([a29c4be](https://github.com/streetsidesoftware/cspell-dicts/commit/a29c4be6f415c0777aa88593e7c446392e9a44bf))
+* Workflow Bot -- Update ALL Dependencies (main) ([#1518](https://github.com/streetsidesoftware/cspell-dicts/issues/1518)) ([1583f07](https://github.com/streetsidesoftware/cspell-dicts/commit/1583f0791dbe3eb1560578a1d77e8cc0e2a9e2ed))
+
+
+### Updates and Bug Fixes
+
+* Add some package names to npm ([#1517](https://github.com/streetsidesoftware/cspell-dicts/issues/1517)) ([753f992](https://github.com/streetsidesoftware/cspell-dicts/commit/753f99202a034af9c71b0f8768eb5e74625be2e1))
+* Keep compiled text dictionaries ([#1519](https://github.com/streetsidesoftware/cspell-dicts/issues/1519)) ([a2a5d29](https://github.com/streetsidesoftware/cspell-dicts/commit/a2a5d29edebddbc443758789105ad1b175483d41))
+
 ## [3.0.0](https://github.com/streetsidesoftware/cspell-dicts/compare/cspell-dicts@2.1.0...cspell-dicts@3.0.0) (2022-10-10)
 
 
