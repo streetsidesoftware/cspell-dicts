@@ -11,8 +11,8 @@
     "./cspell-ext.json": "./cspell-ext.json"
   },
   "scripts": {
-    "build-software-terms": "cat source-files.txt | xargs cspell-tools-cli compile --split -o . -M softwareTerms.txt",
-    "build-networking-terms": "cat source-files-networking.txt | xargs cspell-tools-cli compile --split -o . -M networkingTerms.txt",
+    "build-software-terms": "cat source-files.txt | xargs cspell-tools-cli compile --split --no-compress -o ./dict -M softwareTerms.txt",
+    "build-networking-terms": "cat source-files-networking.txt | xargs cspell-tools-cli compile --split --no-compress -o ./dict -M networkingTerms.txt",
     "build": "npm run build-software-terms && npm run build-networking-terms",
     "test": "npm run test-software-terms && npm run test-networking-terms",
     "test-software-terms": "cat \"src/software-terms.txt\" | cspell -v -c ./cspell-ext.json \"--local=*\" \"--languageId=*\" stdin",
@@ -38,8 +38,7 @@
   },
   "homepage": "https://github.com/streetsidesoftware/cspell-dicts/blob/main/dictionaries/software-terms#readme",
   "files": [
-    "softwareTerms.txt.gz",
-    "networkingTerms.txt.gz",
+    "dict/*",
     "cspell-ext.json"
   ]
 }

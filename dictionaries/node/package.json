@@ -12,7 +12,7 @@
   },
   "scripts": {
     "build-node": "node src/extract-api.js src/api/*.md",
-    "build": "cspell-tools-cli compile node.txt additional_words.txt --merge node -o .",
+    "build": "cspell-tools-cli compile node.txt additional_words.txt --merge node --no-compress -o dict",
     "test": "yarn test-dict",
     "test-dict": "cat \"node.txt\" | cspell -v -c ./cspell-ext.json \"--local=*\" \"--languageId=javascript\" stdin",
     "prepublishOnly": "echo pre-publish",
@@ -36,7 +36,7 @@
   },
   "homepage": "https://github.com/streetsidesoftware/cspell-dicts/blob/main/dictionaries/node#readme",
   "files": [
-    "node.txt.gz",
+    "dict/*",
     "cspell-ext.json"
   ]
 }
