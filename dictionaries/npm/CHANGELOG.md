@@ -3,6 +3,13 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+## [4.0.1](https://github.com/streetsidesoftware/cspell-dicts/compare/@cspell/dict-npm@4.0.0...@cspell/dict-npm@4.0.1) (2022-10-17)
+
+
+### Updates and Bug Fixes
+
+* Add some package names to npm ([#1517](https://github.com/streetsidesoftware/cspell-dicts/issues/1517)) ([753f992](https://github.com/streetsidesoftware/cspell-dicts/commit/753f99202a034af9c71b0f8768eb5e74625be2e1))
+
 ## [4.0.0](https://github.com/streetsidesoftware/cspell-dicts/compare/@cspell/dict-npm@3.1.3...@cspell/dict-npm@4.0.0) (2022-10-10)
 
 

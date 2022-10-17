@@ -22,6 +22,13 @@ See [Conventional Commits](https://conventionalcommits.org) for commit guideline
 
 
 
+## [3.0.1](https://github.com/streetsidesoftware/cspell-dicts/compare/@cspell/dict-php@3.0.0...@cspell/dict-php@3.0.1) (2022-10-17)
+
+
+### Updates and Bug Fixes
+
+* Keep compiled text dictionaries ([#1519](https://github.com/streetsidesoftware/cspell-dicts/issues/1519)) ([a2a5d29](https://github.com/streetsidesoftware/cspell-dicts/commit/a2a5d29edebddbc443758789105ad1b175483d41))
+
 ## [3.0.0](https://github.com/streetsidesoftware/cspell-dicts/compare/@cspell/dict-php@2.0.0...@cspell/dict-php@3.0.0) (2022-10-10)
 
 

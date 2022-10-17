@@ -3,6 +3,13 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+## [4.0.1](https://github.com/streetsidesoftware/cspell-dicts/compare/@cspell/dict-node@4.0.0...@cspell/dict-node@4.0.1) (2022-10-17)
+
+
+### Updates and Bug Fixes
+
+* Keep compiled text dictionaries ([#1519](https://github.com/streetsidesoftware/cspell-dicts/issues/1519)) ([a2a5d29](https://github.com/streetsidesoftware/cspell-dicts/commit/a2a5d29edebddbc443758789105ad1b175483d41))
+
 ## [4.0.0](https://github.com/streetsidesoftware/cspell-dicts/compare/@cspell/dict-node@3.0.1...@cspell/dict-node@4.0.0) (2022-10-10)
 
 
