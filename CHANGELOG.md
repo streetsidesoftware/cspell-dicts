@@ -1,5 +1,24 @@
 # Release Notes
 
+## [3.0.2](https://github.com/streetsidesoftware/cspell-dicts/compare/cspell-dicts@3.0.1...cspell-dicts@3.0.2) (2022-10-19)
+
+
+### Build System
+
+* **deps:** bump tibdex/github-app-token from 1.6 to 1.7 ([#1521](https://github.com/streetsidesoftware/cspell-dicts/issues/1521)) ([2622209](https://github.com/streetsidesoftware/cspell-dicts/commit/2622209c79f4c0f30aa50c6280438be8ac8bad4f))
+
+
+### Updates and Bug Fixes
+
+* keep copy of compiled dictionary ([#1520](https://github.com/streetsidesoftware/cspell-dicts/issues/1520)) ([7c86dd8](https://github.com/streetsidesoftware/cspell-dicts/commit/7c86dd856e682a3f7b5d84406cacb5e921e086ed))
+
+
+### Continuous Integration
+
+* Workflow Bot -- Update ALL Dependencies ([462c6e8](https://github.com/streetsidesoftware/cspell-dicts/commit/462c6e8dcb88e0bbbfa7faf710f0918b923ed7b2))
+* Workflow Bot -- Update ALL Dependencies (main) ([#1523](https://github.com/streetsidesoftware/cspell-dicts/issues/1523)) ([462c6e8](https://github.com/streetsidesoftware/cspell-dicts/commit/462c6e8dcb88e0bbbfa7faf710f0918b923ed7b2))
+* Workflow Bot -- Update ALL Dependencies (main) ([#1524](https://github.com/streetsidesoftware/cspell-dicts/issues/1524)) ([dfa7f01](https://github.com/streetsidesoftware/cspell-dicts/commit/dfa7f01fdb55cd53e6704f01c542f33f835e0146))
+
 ## [3.0.1](https://github.com/streetsidesoftware/cspell-dicts/compare/cspell-dicts@3.0.0...cspell-dicts@3.0.1) (2022-10-17)
 
 
