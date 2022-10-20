@@ -708,10 +708,10 @@
     npm-bundled "^1.1.1"
     npm-normalize-package-bin "^1.0.1"
 
-"@npmcli/installed-package-contents@^2.0.0":
-  version "2.0.0"
-  resolved "https://registry.npmjs.org/@npmcli/installed-package-contents/-/installed-package-contents-2.0.0.tgz#769daa3c11f30875d7f0fe78016978d3af862626"
-  integrity sha512-vpPDeSnqHAXaPK1l6lcIcpgK/aIe63AbNR5vbzOhO6I2rkaFZmviQZ5nAlSpt+vwKrOH1CnplOdoE5/x8FWtNA==
+"@npmcli/installed-package-contents@^2.0.1":
+  version "2.0.1"
+  resolved "https://registry.npmjs.org/@npmcli/installed-package-contents/-/installed-package-contents-2.0.1.tgz#3cad3141c95613426820128757a3549bef1b346b"
+  integrity sha512-GIykAFdOVK31Q1/zAtT5MbxqQL2vyl9mvFJv+OGu01zxbhL3p0xc8gJjdNGX1mWmUT43aEKVO2L6V/2j4TOsAA==
   dependencies:
     npm-bundled "^3.0.0"
     npm-normalize-package-bin "^3.0.0"
@@ -934,9 +934,9 @@
     universal-user-agent "^6.0.0"
 
 "@octokit/graphql@^5.0.0":
-  version "5.0.3"
-  resolved "https://registry.npmjs.org/@octokit/graphql/-/graphql-5.0.3.tgz#1ff6577d356632c594f0f0db7bb5903e4e3ddb8d"
-  integrity sha512-VjhqOu2CHo2hwank1y2k8YcqF83zJW6upyP1+0l3wegvpq+4H31zOA5Rkyx76uJBUdJooUR5UnFyclBptzl86Q==
+  version "5.0.4"
+  resolved "https://registry.npmjs.org/@octokit/graphql/-/graphql-5.0.4.tgz#519dd5c05123868276f3ae4e50ad565ed7dff8c8"
+  integrity sha512-amO1M5QUQgYQo09aStR/XO7KAl13xpigcy/kI8/N1PnZYSS69fgte+xA4+c2DISKqUZfsh0wwjc2FaCt99L41A==
   dependencies:
     "@octokit/request" "^6.0.0"
     "@octokit/types" "^8.0.0"
@@ -6001,12 +6001,12 @@ pacote@^13.0.3, pacote@^13.6.1:
     tar "^6.1.11"
 
 pacote@^15.0.0:
-  version "15.0.2"
-  resolved "https://registry.npmjs.org/pacote/-/pacote-15.0.2.tgz#8b093e93bc636e2af2ee77fbf542918400db5a01"
-  integrity sha512-Gj4w436jiM9/0574JGI8nxpsuXssp5OhyBhnWijvzUVJdU5GvNvnYUgd5WA6mr6ImOQ7JqWqdA44ixBqqMfyZQ==
+  version "15.0.3"
+  resolved "https://registry.npmjs.org/pacote/-/pacote-15.0.3.tgz#fbd32b0af56e716b5e14203a7f8eb81860d522b5"
+  integrity sha512-lKUWO5xpSBH6gPBQEJZwn7RBWMRA5VDbRUurxqjs0/5Zp8PWbxga1yIVAmM0ILMamwDQOVhdBp+ZQDVErXQb4g==
   dependencies:
     "@npmcli/git" "^4.0.0"
-    "@npmcli/installed-package-contents" "^2.0.0"
+    "@npmcli/installed-package-contents" "^2.0.1"
     "@npmcli/promise-spawn" "^4.0.0"
     "@npmcli/run-script" "^5.0.0"
     cacache "^17.0.0"
