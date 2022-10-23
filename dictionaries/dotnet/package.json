@@ -11,7 +11,7 @@
     "./cspell-ext.json": "./cspell-ext.json"
   },
   "scripts": {
-    "build": "cspell-tools compile \"dotnet.txt\" -o .",
+    "build": "cspell-tools compile dotnet.txt --no-compress -o ./dict",
     "test": "head -n 100 \"dotnet.txt\" | cspell -v -c ./cspell-ext.json --local=* --languageId=cs stdin",
     "prepublishOnly": "echo pre-publish",
     "prepare": "yarn run build"
@@ -34,7 +34,7 @@
   },
   "homepage": "https://github.com/streetsidesoftware/cspell-dicts/blob/main/dictionaries/dotnet#readme",
   "files": [
-    "dotnet.txt.gz",
+    "dict/*",
     "cspell-ext.json"
   ]
 }
