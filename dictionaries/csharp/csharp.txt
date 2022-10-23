@@ -20,13 +20,19 @@ constraint
 continue
 decimal
 default
+define
 delegate
 descending
 do
 double
 dynamic
+elif
 else
+else
+endif
+endregion
 enum
+error
 event
 explicit
 extern
@@ -43,6 +49,7 @@ global
 goto
 group
 if
+if
 implicit
 in
 int
@@ -52,6 +59,7 @@ into
 is
 join
 let
+line
 lock
 long
 method
@@ -59,6 +67,9 @@ modifier
 nameof
 namespace
 new
+nint
+notnull
+nuint
 null
 object
 operator
@@ -67,12 +78,16 @@ out
 override
 params
 partial
+pragma
+pragma checksum
+pragma warning
 private
 protected
 public
 query
 readonly
 ref
+region
 remove
 return
 sbyte
@@ -95,6 +110,8 @@ typeof
 uint
 ulong
 unchecked
+undef
+unmanaged
 unsafe
 ushort
 using
@@ -103,20 +120,7 @@ var
 virtual
 void
 volatile
+warning
 where
 while
 yield
-if
-else
-elif
-endif
-define
-undef
-warning
-error
-line
-region
-endregion
-pragma
-pragma warning
-pragma checksum
