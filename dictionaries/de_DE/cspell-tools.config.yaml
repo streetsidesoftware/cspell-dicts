@@ -1,0 +1,9 @@
+# yaml-language-server: $schema=https://raw.githubusercontent.com/streetsidesoftware/cspell/main/packages/cspell-tools/cspell-tools.config.schema.json
+
+targets:
+  - name: de_DE
+    sources:
+      - listFile: ./source-files.txt
+    format: trie3
+    targetDirectory: "."
+    generateNonStrict: true
