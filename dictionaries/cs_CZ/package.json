@@ -11,8 +11,9 @@
     "./cspell-ext.json": "./cspell-ext.json"
   },
   "scripts": {
-    "build": "cross-env NODE_OPTIONS=--max_old_space_size=4096 cspell-tools compile-trie \"Czech.dic\" -o .",
-    "test": "hunspell-reader words -n 1000 \"Czech.dic\" | cspell -v -c ./cspell-ext.json --local=cs --languageId=* stdin",
+    "build": "cspell-tools-cli build && yarn prepare",
+    "test": "hunspell-reader words -n 1000 src/Czech.dic | cspell -v -c ./cspell-ext.json --local=cs --languageId=* stdin",
+    "prepare": "gzip -f -k *.trie",
     "prepublishOnly": "echo pre-publish"
   },
   "repository": {
@@ -27,12 +28,13 @@
     "spelling"
   ],
   "author": "Jason Dent",
-  "license": "MIT",
+  "license": "GPL-3.0+",
   "bugs": {
     "url": "https://github.com/streetsidesoftware/cspell-dicts/issues"
   },
   "homepage": "https://github.com/streetsidesoftware/cspell-dicts/blob/main/dictionaries/cs_CZ#readme",
   "files": [
+    "Czech.txt",
     "Czech.trie.gz",
     "cspell-ext.json"
   ]
