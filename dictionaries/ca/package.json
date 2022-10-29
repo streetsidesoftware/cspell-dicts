@@ -11,8 +11,9 @@
     "./cspell-ext.json": "./cspell-ext.json"
   },
   "scripts": {
-    "build": "cross-env NODE_OPTIONS=--max_old_space_size=4096 cspell-tools compile-trie \"ca.dic\" -o .",
-    "test": "hunspell-reader words -n 1000 \"ca.dic\" | cspell -v -c ./cspell-ext.json --local=ca --languageId=* stdin",
+    "build": "cspell-tools-cli build && yarn prepare",
+    "test": "hunspell-reader words -n 1000 \"src/ca.dic\" | cspell -v -c ./cspell-ext.json --local=ca --languageId=* stdin",
+    "prepare": "gzip -f -k *.trie",
     "prepublishOnly": "echo pre-publish"
   },
   "repository": {
