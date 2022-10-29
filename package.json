@@ -4,7 +4,7 @@
   "private": true,
   "scripts": {
     "test": "lerna run test",
-    "lint": "yarn run lint-format && cspell --no-progress",
+    "lint": "yarn run lint-format && cspell",
     "lint-ci": "eslint . && prettier -c \"**/*.{md,json,yml,yaml}\" && cspell",
     "lint-format": "eslint --fix . && prettier -w \"**/*.{md,json,yml,yaml}\"",
     "build-all": "lerna run --concurrency 2 --stream build --no-bail",
