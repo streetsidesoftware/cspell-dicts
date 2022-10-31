@@ -4,6 +4,8 @@ targets:
   - name: java
     sources:
       - src/java.txt
+      - src/additional-terms.txt
+      - src/java-terms.txt
     format: trie3
     targetDirectory: "."
     generateNonStrict: false
