@@ -11,12 +11,13 @@
     "./cspell-ext.json": "./cspell-ext.json"
   },
   "scripts": {
-    "build": "cspell-tools-cli compile --keep-raw-case \"java.txt\" -o .",
+    "build": "cspell-tools-cli build",
     "test": "yarn run test-dict && yarn run test-check",
-    "test-dict": "head -n 100 \"java.txt\" | cspell -v -c ./cspell-ext.json --local=* --languageId=java stdin",
+    "test-dict": "head -n 100 \"src/java.txt\" | cspell -v -c ./cspell-ext.json --local=* --languageId=java stdin",
     "test-check": "ava",
     "prepublishOnly": "echo pre-publish",
-    "prepare": "yarn run build"
+    "zip": "gzip -f -k java.trie",
+    "prepare": "yarn run build && yarn run zip"
   },
   "repository": {
     "type": "git",
@@ -36,7 +37,7 @@
   },
   "homepage": "https://github.com/streetsidesoftware/cspell-dicts/blob/main/dictionaries/java#readme",
   "files": [
-    "java.txt.gz",
+    "java.trie.gz",
     "cspell-ext.json"
   ]
 }

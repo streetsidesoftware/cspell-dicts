@@ -1,6 +1,7 @@
 {
     "files": ["**/*.{md,txt}"],
     "dictionaries": ["java"],
+    "ignorePaths": ["*.trie", "src"],
     "import": ["./cspell-ext.json"],
     "ignoreWords": ["wordlist", "Schmid", "classgraph"]
 }
