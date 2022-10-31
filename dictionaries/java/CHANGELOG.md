@@ -3,6 +3,17 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+## [5.0.0](https://github.com/streetsidesoftware/cspell-dicts/compare/@cspell/dict-java@4.0.0...@cspell/dict-java@5.0.0) (2022-10-31)
+
+
+### ⚠ BREAKING CHANGES
+
+* Rebuild Java Dictionary (#1557)
+
+### Features
+
+* Rebuild Java Dictionary ([#1557](https://github.com/streetsidesoftware/cspell-dicts/issues/1557)) ([e60dbaf](https://github.com/streetsidesoftware/cspell-dicts/commit/e60dbafa84120a6c623cbb1b3b3f7b1a2e7e6207))
+
 ## [4.0.0](https://github.com/streetsidesoftware/cspell-dicts/compare/@cspell/dict-java@3.0.7...@cspell/dict-java@4.0.0) (2022-10-10)
 
 

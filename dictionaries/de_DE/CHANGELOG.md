@@ -14,6 +14,18 @@ See [Conventional Commits](https://conventionalcommits.org) for commit guideline
 
 
 
+## [3.0.1](https://github.com/streetsidesoftware/cspell-dicts/compare/@cspell/dict-de-de@3.0.0...@cspell/dict-de-de@3.0.1) (2022-10-31)
+
+
+### Miscellaneous
+
+* lock cspell-tools version ([#1541](https://github.com/streetsidesoftware/cspell-dicts/issues/1541)) ([c6e121d](https://github.com/streetsidesoftware/cspell-dicts/commit/c6e121dbdeee185db7abef45fb7366a507227e07))
+
+
+### Updates and Bug Fixes
+
+* Rebuild dictionaries to reduce size ([#1554](https://github.com/streetsidesoftware/cspell-dicts/issues/1554)) ([ec711d3](https://github.com/streetsidesoftware/cspell-dicts/commit/ec711d37264b90f028c61f05c1e46e11ad8e76c3))
+
 ## [3.0.0](https://github.com/streetsidesoftware/cspell-dicts/compare/@cspell/dict-de-de@2.1.1...@cspell/dict-de-de@3.0.0) (2022-10-01)
 
 

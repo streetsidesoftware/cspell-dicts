@@ -22,6 +22,22 @@ See [Conventional Commits](https://conventionalcommits.org) for commit guideline
 
 
 
+## [3.0.0](https://github.com/streetsidesoftware/cspell-dicts/compare/@cspell/dict-bg-bg@2.0.0...@cspell/dict-bg-bg@3.0.0) (2022-10-31)
+
+
+### ⚠ BREAKING CHANGES
+
+* Update Bulgarian to use CSpell 6 format. (#1550)
+
+### Features
+
+* Update Bulgarian to use CSpell 6 format. ([#1550](https://github.com/streetsidesoftware/cspell-dicts/issues/1550)) ([29886e1](https://github.com/streetsidesoftware/cspell-dicts/commit/29886e12e8d88571a2cdeb4739cdea58f15fafbc))
+
+
+### Updates and Bug Fixes
+
+* Rebuild dictionaries to reduce size ([#1554](https://github.com/streetsidesoftware/cspell-dicts/issues/1554)) ([ec711d3](https://github.com/streetsidesoftware/cspell-dicts/commit/ec711d37264b90f028c61f05c1e46e11ad8e76c3))
+
 ## [1.0.15](https://github.com/streetsidesoftware/cspell-dicts/compare/@cspell/dict-bg-bg@1.0.14...@cspell/dict-bg-bg@1.0.15) (2021-03-16)
 
 **Note:** Version bump only for package @cspell/dict-bg-bg

@@ -3,6 +3,20 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+## [3.0.2](https://github.com/streetsidesoftware/cspell-dicts/compare/@cspell/dict-software-terms@3.0.1...@cspell/dict-software-terms@3.0.2) (2022-10-31)
+
+
+### Updates and Bug Fixes
+
+* add pixelated and pixellated to software-terms ([#1538](https://github.com/streetsidesoftware/cspell-dicts/issues/1538)) ([e1b2d2c](https://github.com/streetsidesoftware/cspell-dicts/commit/e1b2d2c735076bfdd7173b5c2c0338a6c971902b))
+* pixelated and pixellated ([e1b2d2c](https://github.com/streetsidesoftware/cspell-dicts/commit/e1b2d2c735076bfdd7173b5c2c0338a6c971902b))
+
+
+### Continuous Integration
+
+* Workflow Bot -- Build Dictionaries ([#1539](https://github.com/streetsidesoftware/cspell-dicts/issues/1539)) ([9298bb2](https://github.com/streetsidesoftware/cspell-dicts/commit/9298bb20408776e615f166ff2f575ff4a0563e2d))
+* Workflow Bot -- Build Dictionaries ([#1546](https://github.com/streetsidesoftware/cspell-dicts/issues/1546)) ([c8f1667](https://github.com/streetsidesoftware/cspell-dicts/commit/c8f1667d519b64f1ef16e820c2cd5718682c2730))
+
 ## [3.0.1](https://github.com/streetsidesoftware/cspell-dicts/compare/@cspell/dict-software-terms@3.0.0...@cspell/dict-software-terms@3.0.1) (2022-10-17)
 
 
