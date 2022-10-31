@@ -1,5 +1,12 @@
 # Release Notes
 
+## [4.0.2](https://github.com/streetsidesoftware/cspell-dicts/compare/cspell-dicts@4.0.1...cspell-dicts@4.0.2) (2022-10-31)
+
+
+### Updates and Bug Fixes
+
+* Add some common java compound words ([#1563](https://github.com/streetsidesoftware/cspell-dicts/issues/1563)) ([6dcb623](https://github.com/streetsidesoftware/cspell-dicts/commit/6dcb62361d73b789262c968b9c5e7a95df3e7e7c))
+
 ## [4.0.1](https://github.com/streetsidesoftware/cspell-dicts/compare/cspell-dicts@4.0.0...cspell-dicts@4.0.1) (2022-10-31)
 
 
