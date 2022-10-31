@@ -22,6 +22,13 @@ See [Conventional Commits](https://conventionalcommits.org) for commit guideline
 
 
 
+## [3.0.1](https://github.com/streetsidesoftware/cspell-dicts/compare/@cspell/dict-cryptocurrencies@3.0.0...@cspell/dict-cryptocurrencies@3.0.1) (2022-10-31)
+
+
+### Updates and Bug Fixes
+
+* Add `huobi` and `orderbook` ([#1531](https://github.com/streetsidesoftware/cspell-dicts/issues/1531)) ([4ac7559](https://github.com/streetsidesoftware/cspell-dicts/commit/4ac7559edcff4418b1881acf9d39ae729fa29c7b))
+
 ## [3.0.0](https://github.com/streetsidesoftware/cspell-dicts/compare/@cspell/dict-cryptocurrencies@2.0.0...@cspell/dict-cryptocurrencies@3.0.0) (2022-10-10)
 
 

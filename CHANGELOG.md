@@ -1,5 +1,69 @@
 # Release Notes
 
+## [4.0.0](https://github.com/streetsidesoftware/cspell-dicts/compare/cspell-dicts@3.0.2...cspell-dicts@4.0.0) (2022-10-31)
+
+
+### ⚠ BREAKING CHANGES
+
+* Rebuild Java Dictionary (#1557)
+* Force major version for en_GB. (#1556)
+* Rebuild en_US (#1553)
+* Upgrade to CSpell 6 format (#1552)
+* Upgrade Catalan Dictionary to CSpell 6 (#1551)
+* Update Bulgarian to use CSpell 6 format. (#1550)
+
+### Features
+
+* Force major version for en_GB. ([#1556](https://github.com/streetsidesoftware/cspell-dicts/issues/1556)) ([a339915](https://github.com/streetsidesoftware/cspell-dicts/commit/a339915549aa44ed2e8da576dea0f9a1d29bf1ed))
+* Rebuild en_US ([#1553](https://github.com/streetsidesoftware/cspell-dicts/issues/1553)) ([6a8a728](https://github.com/streetsidesoftware/cspell-dicts/commit/6a8a728df228713febb805d1aa2a4e0a7f78e3e4))
+* Rebuild Java Dictionary ([#1557](https://github.com/streetsidesoftware/cspell-dicts/issues/1557)) ([e60dbaf](https://github.com/streetsidesoftware/cspell-dicts/commit/e60dbafa84120a6c623cbb1b3b3f7b1a2e7e6207))
+* Update Bulgarian to use CSpell 6 format. ([#1550](https://github.com/streetsidesoftware/cspell-dicts/issues/1550)) ([29886e1](https://github.com/streetsidesoftware/cspell-dicts/commit/29886e12e8d88571a2cdeb4739cdea58f15fafbc))
+* Upgrade Catalan Dictionary to CSpell 6 ([#1551](https://github.com/streetsidesoftware/cspell-dicts/issues/1551)) ([485d3db](https://github.com/streetsidesoftware/cspell-dicts/commit/485d3dbd5fc72418d928adf19fc02da732e7d80b))
+* Upgrade to CSpell 6 format ([#1552](https://github.com/streetsidesoftware/cspell-dicts/issues/1552)) ([6102d07](https://github.com/streetsidesoftware/cspell-dicts/commit/6102d07738f5e525819a6f90a264611129f2e158))
+
+
+### Build System
+
+* **deps-dev:** bump @cspell/cspell-tools from 6.12.0 to 6.13.1 ([#1543](https://github.com/streetsidesoftware/cspell-dicts/issues/1543)) ([4efb47e](https://github.com/streetsidesoftware/cspell-dicts/commit/4efb47e0e06e5999566394681389c0ecf5e953fa))
+* **deps:** bump ava from 4.3.3 to 5.0.1 ([#1536](https://github.com/streetsidesoftware/cspell-dicts/issues/1536)) ([115dc48](https://github.com/streetsidesoftware/cspell-dicts/commit/115dc4820ff82ed86c7d635ce00a111db049f03e))
+* **deps:** bump cspell from 6.12.0 to 6.13.1 ([#1544](https://github.com/streetsidesoftware/cspell-dicts/issues/1544)) ([53ee63f](https://github.com/streetsidesoftware/cspell-dicts/commit/53ee63f98857aad9be8918f8727a698d13d4e30d))
+
+
+### Miscellaneous
+
+* lock cspell-tools version ([#1541](https://github.com/streetsidesoftware/cspell-dicts/issues/1541)) ([c6e121d](https://github.com/streetsidesoftware/cspell-dicts/commit/c6e121dbdeee185db7abef45fb7366a507227e07))
+* temporarily show progress ([3e6d8de](https://github.com/streetsidesoftware/cspell-dicts/commit/3e6d8de6cfc16b7b11e78535140d867e742858dc))
+
+
+### Updates and Bug Fixes
+
+* 1532 ([#1533](https://github.com/streetsidesoftware/cspell-dicts/issues/1533)) ([d6295c3](https://github.com/streetsidesoftware/cspell-dicts/commit/d6295c3bc778985ff7e96dc49eaf880ce60bb925))
+* Add `huobi` and `orderbook` ([#1531](https://github.com/streetsidesoftware/cspell-dicts/issues/1531)) ([4ac7559](https://github.com/streetsidesoftware/cspell-dicts/commit/4ac7559edcff4418b1881acf9d39ae729fa29c7b))
+* add pixelated and pixellated to software-terms ([#1538](https://github.com/streetsidesoftware/cspell-dicts/issues/1538)) ([e1b2d2c](https://github.com/streetsidesoftware/cspell-dicts/commit/e1b2d2c735076bfdd7173b5c2c0338a6c971902b))
+* Add Plex, Trakt, and Letterboxd ([20738e5](https://github.com/streetsidesoftware/cspell-dicts/commit/20738e5a1b54cef7255c1d09765a124f088f41a6))
+* pixelated and pixellated ([e1b2d2c](https://github.com/streetsidesoftware/cspell-dicts/commit/e1b2d2c735076bfdd7173b5c2c0338a6c971902b))
+* Rebuild dictionaries to reduce size ([#1554](https://github.com/streetsidesoftware/cspell-dicts/issues/1554)) ([ec711d3](https://github.com/streetsidesoftware/cspell-dicts/commit/ec711d37264b90f028c61f05c1e46e11ad8e76c3))
+* Update .Net and PHP dicts. ([#1535](https://github.com/streetsidesoftware/cspell-dicts/issues/1535)) ([d577c9b](https://github.com/streetsidesoftware/cspell-dicts/commit/d577c9b89a6b94a759ceed01bafd2110791d0b50))
+* Update companies.txt ([#1526](https://github.com/streetsidesoftware/cspell-dicts/issues/1526)) ([8d44aba](https://github.com/streetsidesoftware/cspell-dicts/commit/8d44aba3355af7c48b3dd0b1a06ac9ecd68a9e5a))
+
+
+### Continuous Integration
+
+* Workflow Bot -- Build Dictionaries ([#1529](https://github.com/streetsidesoftware/cspell-dicts/issues/1529)) ([f754d0e](https://github.com/streetsidesoftware/cspell-dicts/commit/f754d0e7a711e0e35a562644128009000f85dc3a))
+* Workflow Bot -- Build Dictionaries ([#1539](https://github.com/streetsidesoftware/cspell-dicts/issues/1539)) ([9298bb2](https://github.com/streetsidesoftware/cspell-dicts/commit/9298bb20408776e615f166ff2f575ff4a0563e2d))
+* Workflow Bot -- Build Dictionaries ([#1546](https://github.com/streetsidesoftware/cspell-dicts/issues/1546)) ([c8f1667](https://github.com/streetsidesoftware/cspell-dicts/commit/c8f1667d519b64f1ef16e820c2cd5718682c2730))
+* Workflow Bot -- Build Dictionaries ([#1548](https://github.com/streetsidesoftware/cspell-dicts/issues/1548)) ([8fb732d](https://github.com/streetsidesoftware/cspell-dicts/commit/8fb732d09dcfddba786c967787a6078a92ab4b23))
+* Workflow Bot -- Update ALL Dependencies ([ce50ce0](https://github.com/streetsidesoftware/cspell-dicts/commit/ce50ce0ba35fb3e8f47e4f8b93f0cc636067571b))
+* Workflow Bot -- Update ALL Dependencies ([3770b85](https://github.com/streetsidesoftware/cspell-dicts/commit/3770b856c5bb19fe447088f668eabd197704bb0e))
+* Workflow Bot -- Update ALL Dependencies ([db2e228](https://github.com/streetsidesoftware/cspell-dicts/commit/db2e228d5f6a56ea7c895b0da0ad6cc21cd3343d))
+* Workflow Bot -- Update ALL Dependencies ([35679b4](https://github.com/streetsidesoftware/cspell-dicts/commit/35679b487f3e25e59f8f3557bf7dfb20c0006ca0))
+* Workflow Bot -- Update ALL Dependencies ([01f4aec](https://github.com/streetsidesoftware/cspell-dicts/commit/01f4aecc17a77c7b53705b60e595fd9a30f86724))
+* Workflow Bot -- Update ALL Dependencies (main) ([#1525](https://github.com/streetsidesoftware/cspell-dicts/issues/1525)) ([01f4aec](https://github.com/streetsidesoftware/cspell-dicts/commit/01f4aecc17a77c7b53705b60e595fd9a30f86724))
+* Workflow Bot -- Update ALL Dependencies (main) ([#1528](https://github.com/streetsidesoftware/cspell-dicts/issues/1528)) ([35679b4](https://github.com/streetsidesoftware/cspell-dicts/commit/35679b487f3e25e59f8f3557bf7dfb20c0006ca0))
+* Workflow Bot -- Update ALL Dependencies (main) ([#1534](https://github.com/streetsidesoftware/cspell-dicts/issues/1534)) ([db2e228](https://github.com/streetsidesoftware/cspell-dicts/commit/db2e228d5f6a56ea7c895b0da0ad6cc21cd3343d))
+* Workflow Bot -- Update ALL Dependencies (main) ([#1540](https://github.com/streetsidesoftware/cspell-dicts/issues/1540)) ([3770b85](https://github.com/streetsidesoftware/cspell-dicts/commit/3770b856c5bb19fe447088f668eabd197704bb0e))
+* Workflow Bot -- Update ALL Dependencies (main) ([#1555](https://github.com/streetsidesoftware/cspell-dicts/issues/1555)) ([ce50ce0](https://github.com/streetsidesoftware/cspell-dicts/commit/ce50ce0ba35fb3e8f47e4f8b93f0cc636067571b))
+
 ## [3.0.2](https://github.com/streetsidesoftware/cspell-dicts/compare/cspell-dicts@3.0.1...cspell-dicts@3.0.2) (2022-10-19)
 
 

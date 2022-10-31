@@ -3,6 +3,20 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+## [3.0.2](https://github.com/streetsidesoftware/cspell-dicts/compare/@cspell/dict-companies@3.0.1...@cspell/dict-companies@3.0.2) (2022-10-31)
+
+
+### Updates and Bug Fixes
+
+* Add Plex, Trakt, and Letterboxd ([20738e5](https://github.com/streetsidesoftware/cspell-dicts/commit/20738e5a1b54cef7255c1d09765a124f088f41a6))
+* Update companies.txt ([#1526](https://github.com/streetsidesoftware/cspell-dicts/issues/1526)) ([8d44aba](https://github.com/streetsidesoftware/cspell-dicts/commit/8d44aba3355af7c48b3dd0b1a06ac9ecd68a9e5a))
+
+
+### Continuous Integration
+
+* Workflow Bot -- Build Dictionaries ([#1529](https://github.com/streetsidesoftware/cspell-dicts/issues/1529)) ([f754d0e](https://github.com/streetsidesoftware/cspell-dicts/commit/f754d0e7a711e0e35a562644128009000f85dc3a))
+* Workflow Bot -- Build Dictionaries ([#1546](https://github.com/streetsidesoftware/cspell-dicts/issues/1546)) ([c8f1667](https://github.com/streetsidesoftware/cspell-dicts/commit/c8f1667d519b64f1ef16e820c2cd5718682c2730))
+
 ## [3.0.1](https://github.com/streetsidesoftware/cspell-dicts/compare/@cspell/dict-companies@3.0.0...@cspell/dict-companies@3.0.1) (2022-10-19)
 
 

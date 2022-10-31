@@ -3,6 +3,27 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+## [4.0.0](https://github.com/streetsidesoftware/cspell-dicts/compare/@cspell/dict-en_us@3.0.0...@cspell/dict-en_us@4.0.0) (2022-10-31)
+
+
+### ⚠ BREAKING CHANGES
+
+* Rebuild en_US (#1553)
+
+### Features
+
+* Rebuild en_US ([#1553](https://github.com/streetsidesoftware/cspell-dicts/issues/1553)) ([6a8a728](https://github.com/streetsidesoftware/cspell-dicts/commit/6a8a728df228713febb805d1aa2a4e0a7f78e3e4))
+
+
+### Miscellaneous
+
+* lock cspell-tools version ([#1541](https://github.com/streetsidesoftware/cspell-dicts/issues/1541)) ([c6e121d](https://github.com/streetsidesoftware/cspell-dicts/commit/c6e121dbdeee185db7abef45fb7366a507227e07))
+
+
+### Updates and Bug Fixes
+
+* Rebuild dictionaries to reduce size ([#1554](https://github.com/streetsidesoftware/cspell-dicts/issues/1554)) ([ec711d3](https://github.com/streetsidesoftware/cspell-dicts/commit/ec711d37264b90f028c61f05c1e46e11ad8e76c3))
+
 ## [3.0.0](https://github.com/streetsidesoftware/cspell-dicts/compare/@cspell/dict-en_us@2.3.3...@cspell/dict-en_us@3.0.0) (2022-10-10)
 
 

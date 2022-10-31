@@ -22,6 +22,22 @@ See [Conventional Commits](https://conventionalcommits.org) for commit guideline
 
 
 
+## [3.0.0](https://github.com/streetsidesoftware/cspell-dicts/compare/@cspell/dict-cs-cz@2.0.0...@cspell/dict-cs-cz@3.0.0) (2022-10-31)
+
+
+### ⚠ BREAKING CHANGES
+
+* Upgrade to CSpell 6 format (#1552)
+
+### Features
+
+* Upgrade to CSpell 6 format ([#1552](https://github.com/streetsidesoftware/cspell-dicts/issues/1552)) ([6102d07](https://github.com/streetsidesoftware/cspell-dicts/commit/6102d07738f5e525819a6f90a264611129f2e158))
+
+
+### Updates and Bug Fixes
+
+* Rebuild dictionaries to reduce size ([#1554](https://github.com/streetsidesoftware/cspell-dicts/issues/1554)) ([ec711d3](https://github.com/streetsidesoftware/cspell-dicts/commit/ec711d37264b90f028c61f05c1e46e11ad8e76c3))
+
 ## [1.0.23](https://github.com/streetsidesoftware/cspell-dicts/compare/@cspell/dict-cs-cz@1.0.22...@cspell/dict-cs-cz@1.0.23) (2021-03-16)
 
 **Note:** Version bump only for package @cspell/dict-cs-cz

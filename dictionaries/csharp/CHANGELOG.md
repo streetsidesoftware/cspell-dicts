@@ -3,6 +3,13 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+## [4.0.1](https://github.com/streetsidesoftware/cspell-dicts/compare/@cspell/dict-csharp@4.0.0...@cspell/dict-csharp@4.0.1) (2022-10-31)
+
+
+### Updates and Bug Fixes
+
+* 1532 ([#1533](https://github.com/streetsidesoftware/cspell-dicts/issues/1533)) ([d6295c3](https://github.com/streetsidesoftware/cspell-dicts/commit/d6295c3bc778985ff7e96dc49eaf880ce60bb925))
+
 ## [4.0.0](https://github.com/streetsidesoftware/cspell-dicts/compare/@cspell/dict-csharp@3.0.1...@cspell/dict-csharp@4.0.0) (2022-10-10)
 
 
