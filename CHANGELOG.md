@@ -1,5 +1,18 @@
 # Release Notes
 
+## [4.0.1](https://github.com/streetsidesoftware/cspell-dicts/compare/cspell-dicts@4.0.0...cspell-dicts@4.0.1) (2022-10-31)
+
+
+### Updates and Bug Fixes
+
+* Add lowercase terms ([#1560](https://github.com/streetsidesoftware/cspell-dicts/issues/1560)) ([f15dad1](https://github.com/streetsidesoftware/cspell-dicts/commit/f15dad15089548e7f526573fb2cf313ff3e4a0e8))
+
+
+### Continuous Integration
+
+* Workflow Bot -- Update ALL Dependencies ([fc6eb95](https://github.com/streetsidesoftware/cspell-dicts/commit/fc6eb9505d8816daf85ce4424571bb5a540a21a1))
+* Workflow Bot -- Update ALL Dependencies (main) ([#1559](https://github.com/streetsidesoftware/cspell-dicts/issues/1559)) ([fc6eb95](https://github.com/streetsidesoftware/cspell-dicts/commit/fc6eb9505d8816daf85ce4424571bb5a540a21a1))
+
 ## [4.0.0](https://github.com/streetsidesoftware/cspell-dicts/compare/cspell-dicts@3.0.2...cspell-dicts@4.0.0) (2022-10-31)
 
 
