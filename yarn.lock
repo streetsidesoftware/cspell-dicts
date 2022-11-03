@@ -487,11 +487,11 @@
     which "^2.0.2"
 
 "@npmcli/git@^4.0.0":
-  version "4.0.2"
-  resolved "https://registry.npmjs.org/@npmcli/git/-/git-4.0.2.tgz#bbb16eb057e44bff60aa2bc8443f2f4165aab3ea"
-  integrity sha512-jBSmCI3F6KTZrWwez6mH6lJPWg3llZlQiHR05/sOw83H1vMc9nnL39ceP8x3SEkDJkaluXG/w4drdYS4FDONgA==
+  version "4.0.3"
+  resolved "https://registry.npmjs.org/@npmcli/git/-/git-4.0.3.tgz#354db5fe1f29696303638e191d8538ee9b01b4bb"
+  integrity sha512-8cXNkDIbnXPVbhXMmQ7/bklCAjtmPaXfI9aEM4iH+xSuEHINLMHhlfESvVwdqmHJRJkR48vNJTSUvoF6GRPSFA==
   dependencies:
-    "@npmcli/promise-spawn" "^5.0.0"
+    "@npmcli/promise-spawn" "^6.0.0"
     lru-cache "^7.4.4"
     mkdirp "^1.0.4"
     npm-pick-manifest "^8.0.0"
@@ -499,7 +499,7 @@
     promise-inflight "^1.0.1"
     promise-retry "^2.0.1"
     semver "^7.3.5"
-    which "^2.0.2"
+    which "^3.0.0"
 
 "@npmcli/installed-package-contents@^1.0.6", "@npmcli/installed-package-contents@^1.0.7":
   version "1.0.7"
@@ -619,10 +619,12 @@
   dependencies:
     infer-owner "^1.0.4"
 
-"@npmcli/promise-spawn@^5.0.0":
-  version "5.0.0"
-  resolved "https://registry.npmjs.org/@npmcli/promise-spawn/-/promise-spawn-5.0.0.tgz#8cd47aa85ad206ac0e2ae6005cbfbe5340bd0134"
-  integrity sha512-q+Le2urM3NdxSFHj+VZXLTHKgmWxqHXUSqM5m9bjnV3EtThtJor64f5inmBkO9uEGZnhpjW0wL67Qf5qcgZkxw==
+"@npmcli/promise-spawn@^6.0.0", "@npmcli/promise-spawn@^6.0.1":
+  version "6.0.1"
+  resolved "https://registry.npmjs.org/@npmcli/promise-spawn/-/promise-spawn-6.0.1.tgz#2bf718579ad0ca2c5bd364c6a9de3e2fa6be2b00"
+  integrity sha512-+hcUpxgx0vEpDJI9Cn+lkTdKLoqKBXFCVps5H7FujEU2vLOp6KwqjLlxbnz8Wzgm8oEqW/u5FeNAXSFjLdCD0A==
+  dependencies:
+    which "^3.0.0"
 
 "@npmcli/query@^1.2.0":
   version "1.2.0"
@@ -655,15 +657,26 @@
     which "^2.0.2"
 
 "@npmcli/run-script@^5.0.0":
-  version "5.0.1"
-  resolved "https://registry.npmjs.org/@npmcli/run-script/-/run-script-5.0.1.tgz#a6ae139d6486f14588b5ca612d137517a91dac58"
-  integrity sha512-co/A+5LzdHQVLukfYT71x5e8+6HtIk2W9Jk5c8mE8LaGrkHazzRuZeyUmb6Ciaak7MRXRVOSoTaZ0zYEFVA/Gw==
+  version "5.1.1"
+  resolved "https://registry.npmjs.org/@npmcli/run-script/-/run-script-5.1.1.tgz#1f1da6f03c140a4b215a7b7d9d7ec5f4d80bbbc5"
+  integrity sha512-mqj/KPVhahTNvmzk5+YsKuqYnPPh1kOJ4/rA2FR5VhPgfJtCbPuBZrlkYUI0A+z5DKzpE5TITCdlgPllpKcd/Q==
   dependencies:
     "@npmcli/node-gyp" "^3.0.0"
-    "@npmcli/promise-spawn" "^5.0.0"
+    "@npmcli/promise-spawn" "^6.0.0"
     node-gyp "^9.0.0"
     read-package-json-fast "^3.0.0"
-    which "^2.0.2"
+    which "^3.0.0"
+
+"@npmcli/run-script@^6.0.0":
+  version "6.0.0"
+  resolved "https://registry.npmjs.org/@npmcli/run-script/-/run-script-6.0.0.tgz#f89e322c729e26ae29db6cc8cc76559074aac208"
+  integrity sha512-ql+AbRur1TeOdl1FY+RAwGW9fcr4ZwiVKabdvm93mujGREVuVLbdkXRJDrkTXSdCjaxYydr1wlA2v67jxWG5BQ==
+  dependencies:
+    "@npmcli/node-gyp" "^3.0.0"
+    "@npmcli/promise-spawn" "^6.0.0"
+    node-gyp "^9.0.0"
+    read-package-json-fast "^3.0.0"
+    which "^3.0.0"
 
 "@octokit/auth-token@^2.4.4":
   version "2.5.0"
@@ -4580,9 +4593,9 @@ lru-cache@^6.0.0:
     yallist "^4.0.0"
 
 lru-cache@^7.4.4, lru-cache@^7.5.1, lru-cache@^7.7.1:
-  version "7.14.0"
-  resolved "https://registry.npmjs.org/lru-cache/-/lru-cache-7.14.0.tgz#21be64954a4680e303a09e9468f880b98a0b3c7f"
-  integrity sha512-EIRtP1GrSJny0dqb50QXRUNBxHJhcpxHC++M5tD7RYbvLLn5KVWKsbyswSSqDuU15UFi3bgTQIY8nhDMeF6aDQ==
+  version "7.14.1"
+  resolved "https://registry.npmjs.org/lru-cache/-/lru-cache-7.14.1.tgz#8da8d2f5f59827edb388e63e459ac23d6d408fea"
+  integrity sha512-ysxwsnTKdAx96aTRdhDOCQfDgbHnt8SK0KY8SEjO0wHinhWOFTESbjVCMPbU1uGXg/ch4lifqx0wfjOawU2+WA==
 
 macos-release@^2.2.0:
   version "2.5.0"
@@ -5806,14 +5819,14 @@ pacote@^13.0.3, pacote@^13.6.1:
     tar "^6.1.11"
 
 pacote@^15.0.0:
-  version "15.0.4"
-  resolved "https://registry.npmjs.org/pacote/-/pacote-15.0.4.tgz#cd95d89523f3233ab32360ee15f909186fecb7b1"
-  integrity sha512-6lSP0ly54fKrPIvXmVcmslqrcF8DL3y/RlNLwBWG1A3wd8sWcPF8hikTJDWqXUPMw6L04p6gqsJ/iLgRjth+6A==
+  version "15.0.6"
+  resolved "https://registry.npmjs.org/pacote/-/pacote-15.0.6.tgz#8c498b5c23270da4f4c87f7eeba0248a3ae61342"
+  integrity sha512-dQwcz/sME7QIL+cdrw/jftQfMMXxSo17i2kJ/gnhBhUvvBAsxoBu1lw9B5IzCH/Ce8CvEkG/QYZ6txzKfn0bTw==
   dependencies:
     "@npmcli/git" "^4.0.0"
     "@npmcli/installed-package-contents" "^2.0.1"
-    "@npmcli/promise-spawn" "^5.0.0"
-    "@npmcli/run-script" "^5.0.0"
+    "@npmcli/promise-spawn" "^6.0.1"
+    "@npmcli/run-script" "^6.0.0"
     cacache "^17.0.0"
     fs-minipass "^2.1.0"
     minipass "^3.1.6"
@@ -7118,9 +7131,9 @@ taketalk@^1.0.0:
     minimist "^1.1.0"
 
 tar@^6.0.2, tar@^6.1.0, tar@^6.1.11, tar@^6.1.2:
-  version "6.1.11"
-  resolved "https://registry.npmjs.org/tar/-/tar-6.1.11.tgz#6760a38f003afa1b2ffd0ffe9e9abbd0eab3d621"
-  integrity sha512-an/KZQzQUkZCkuoAA64hM92X0Urb6VpRhAFllDzz44U2mcD5scmT3zBc4VgVpkugF580+DQn8eAFSyoQt0tznA==
+  version "6.1.12"
+  resolved "https://registry.npmjs.org/tar/-/tar-6.1.12.tgz#3b742fb05669b55671fb769ab67a7791ea1a62e6"
+  integrity sha512-jU4TdemS31uABHd+Lt5WEYJuzn+TJTCBLljvIAHZOz6M9Os5pJ4dD+vRFLxPa/n3T0iEFzpi+0x1UfuDZYbRMw==
   dependencies:
     chownr "^2.0.0"
     fs-minipass "^2.0.0"
@@ -7623,6 +7636,13 @@ which@^2.0.1, which@^2.0.2:
   dependencies:
     isexe "^2.0.0"
 
+which@^3.0.0:
+  version "3.0.0"
+  resolved "https://registry.npmjs.org/which/-/which-3.0.0.tgz#a9efd016db59728758a390d23f1687b6e8f59f8e"
+  integrity sha512-nla//68K9NU6yRiwDY/Q8aU6siKlSs64aEC7+IV56QoAuyQT2ovsJcgGYGyqMOmI/CGN1BOR6mM5EN0FBO+zyQ==
+  dependencies:
+    isexe "^2.0.0"
+
 wide-align@^1.1.2, wide-align@^1.1.5:
   version "1.1.5"
   resolved "https://registry.npmjs.org/wide-align/-/wide-align-1.1.5.tgz#df1d4c206854369ecf3c9a4898f1b23fbd9d15d3"
@@ -7815,9 +7835,9 @@ yargs@^16.2.0:
     yargs-parser "^20.2.2"
 
 yargs@^17.5.1, yargs@^17.6.0:
-  version "17.6.0"
-  resolved "https://registry.npmjs.org/yargs/-/yargs-17.6.0.tgz#e134900fc1f218bc230192bdec06a0a5f973e46c"
-  integrity sha512-8H/wTDqlSwoSnScvV2N/JHfLWOKuh5MVla9hqLjK3nsfyy6Y4kDSYSvkU5YCUEPOSnRXfIyx3Sq+B/IWudTo4g==
+  version "17.6.1"
+  resolved "https://registry.npmjs.org/yargs/-/yargs-17.6.1.tgz#712508771045019cda059bc1ba3ae091aaa1402e"
+  integrity sha512-leBuCGrL4dAd6ispNOGsJlhd0uZ6Qehkbu/B9KCR+Pxa/NVdNwi+i31lo0buCm6XxhJQFshXCD0/evfV4xfoUg==
   dependencies:
     cliui "^8.0.1"
     escalade "^3.1.1"
