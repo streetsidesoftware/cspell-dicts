@@ -3,6 +3,18 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+## [3.0.3](https://github.com/streetsidesoftware/cspell-dicts/compare/@cspell/dict-software-terms@3.0.2...@cspell/dict-software-terms@3.0.3) (2022-11-03)
+
+
+### Updates and Bug Fixes
+
+* add `deref` - dereference ([#1572](https://github.com/streetsidesoftware/cspell-dicts/issues/1572)) ([ab43d95](https://github.com/streetsidesoftware/cspell-dicts/commit/ab43d95a1d656f8d11dc6520c893738f7144c6d7))
+
+
+### Continuous Integration
+
+* Workflow Bot -- Build Dictionaries ([#1573](https://github.com/streetsidesoftware/cspell-dicts/issues/1573)) ([522f6a5](https://github.com/streetsidesoftware/cspell-dicts/commit/522f6a555c93e7e5c73c35430357843bdf225a6c))
+
 ## [3.0.2](https://github.com/streetsidesoftware/cspell-dicts/compare/@cspell/dict-software-terms@3.0.1...@cspell/dict-software-terms@3.0.2) (2022-10-31)
 
 
