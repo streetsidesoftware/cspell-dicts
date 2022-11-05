@@ -3,6 +3,13 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+## [1.1.2](https://github.com/streetsidesoftware/cspell-dicts/compare/@cspell/dict-docker@1.1.1...@cspell/dict-docker@1.1.2) (2022-11-05)
+
+
+### Updates and Bug Fixes
+
+* Add Portainer ([#1581](https://github.com/streetsidesoftware/cspell-dicts/issues/1581)) ([a494ab0](https://github.com/streetsidesoftware/cspell-dicts/commit/a494ab0c46a845099bf18fcb2a85450d5c359241))
+
 ## [1.1.1](https://github.com/streetsidesoftware/cspell-dicts/compare/@cspell/dict-docker@1.1.0...@cspell/dict-docker@1.1.1) (2022-06-15)
 
 **Note:** Version bump only for package @cspell/dict-docker
