@@ -3,6 +3,13 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+## [1.1.3](https://github.com/streetsidesoftware/cspell-dicts/compare/@cspell/dict-docker@1.1.2...@cspell/dict-docker@1.1.3) (2022-11-06)
+
+
+### Updates and Bug Fixes
+
+* Add Ourobros ([#1583](https://github.com/streetsidesoftware/cspell-dicts/issues/1583)) ([58aec63](https://github.com/streetsidesoftware/cspell-dicts/commit/58aec63b01858980960c02f13908048b3ac77c0a))
+
 ## [1.1.2](https://github.com/streetsidesoftware/cspell-dicts/compare/@cspell/dict-docker@1.1.1...@cspell/dict-docker@1.1.2) (2022-11-05)
 
 

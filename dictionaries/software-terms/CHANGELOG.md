@@ -3,6 +3,18 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+## [3.0.5](https://github.com/streetsidesoftware/cspell-dicts/compare/@cspell/dict-software-terms@3.0.4...@cspell/dict-software-terms@3.0.5) (2022-11-06)
+
+
+### Updates and Bug Fixes
+
+* Add Ourobros ([#1583](https://github.com/streetsidesoftware/cspell-dicts/issues/1583)) ([58aec63](https://github.com/streetsidesoftware/cspell-dicts/commit/58aec63b01858980960c02f13908048b3ac77c0a))
+
+
+### Continuous Integration
+
+* Workflow Bot -- Build Dictionaries ([#1585](https://github.com/streetsidesoftware/cspell-dicts/issues/1585)) ([11b7170](https://github.com/streetsidesoftware/cspell-dicts/commit/11b7170f6b957c277f5e212fb935e55482b91920))
+
 ## [3.0.4](https://github.com/streetsidesoftware/cspell-dicts/compare/@cspell/dict-software-terms@3.0.3...@cspell/dict-software-terms@3.0.4) (2022-11-05)
 
 

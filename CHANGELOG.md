@@ -1,5 +1,18 @@
 # Release Notes
 
+## [4.0.5](https://github.com/streetsidesoftware/cspell-dicts/compare/cspell-dicts@4.0.4...cspell-dicts@4.0.5) (2022-11-06)
+
+
+### Updates and Bug Fixes
+
+* Add endfor to PHP ([#1584](https://github.com/streetsidesoftware/cspell-dicts/issues/1584)) ([8c5047c](https://github.com/streetsidesoftware/cspell-dicts/commit/8c5047c07064641442ffc8ce9a608201d63bf30c))
+* Add Ourobros ([#1583](https://github.com/streetsidesoftware/cspell-dicts/issues/1583)) ([58aec63](https://github.com/streetsidesoftware/cspell-dicts/commit/58aec63b01858980960c02f13908048b3ac77c0a))
+
+
+### Continuous Integration
+
+* Workflow Bot -- Build Dictionaries ([#1585](https://github.com/streetsidesoftware/cspell-dicts/issues/1585)) ([11b7170](https://github.com/streetsidesoftware/cspell-dicts/commit/11b7170f6b957c277f5e212fb935e55482b91920))
+
 ## [4.0.4](https://github.com/streetsidesoftware/cspell-dicts/compare/cspell-dicts@4.0.3...cspell-dicts@4.0.4) (2022-11-05)
 
 
