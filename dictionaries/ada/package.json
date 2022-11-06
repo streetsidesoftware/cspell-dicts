@@ -1,6 +1,6 @@
 {
   "name": "@cspell/dict-ada",
-  "version": "3.0.0",
+  "version": "4.0.0",
   "description": "Ada Language dictionary for cspell.",
   "publishConfig": {
     "access": "public"
@@ -11,7 +11,7 @@
     "./cspell-ext.json": "./cspell-ext.json"
   },
   "scripts": {
-    "build": "cspell-tools compile \"ada.txt\" -o .",
+    "build": "cspell-tools-cli compile --keep-raw-case \"ada.txt\" -o .",
     "test": "yarn run test-dict && yarn run test-samples",
     "test-dict": "head -n 100 \"ada.txt\" | cspell -v -c ./cspell-ext.json --local=* --languageId=ada stdin",
     "test-samples": "cspell \"samples/**\"",
