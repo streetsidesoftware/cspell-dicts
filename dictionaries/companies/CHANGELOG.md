@@ -3,6 +3,18 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+## [3.0.3](https://github.com/streetsidesoftware/cspell-dicts/compare/@cspell/dict-companies@3.0.2...@cspell/dict-companies@3.0.3) (2022-11-05)
+
+
+### Updates and Bug Fixes
+
+* Add Portainer ([#1581](https://github.com/streetsidesoftware/cspell-dicts/issues/1581)) ([a494ab0](https://github.com/streetsidesoftware/cspell-dicts/commit/a494ab0c46a845099bf18fcb2a85450d5c359241))
+
+
+### Continuous Integration
+
+* Workflow Bot -- Build Dictionaries ([#1582](https://github.com/streetsidesoftware/cspell-dicts/issues/1582)) ([279e568](https://github.com/streetsidesoftware/cspell-dicts/commit/279e568c2a1a872fcdcf66b29eee213277d1590c))
+
 ## [3.0.2](https://github.com/streetsidesoftware/cspell-dicts/compare/@cspell/dict-companies@3.0.1...@cspell/dict-companies@3.0.2) (2022-10-31)
 
 

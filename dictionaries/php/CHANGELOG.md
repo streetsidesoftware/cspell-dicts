@@ -22,6 +22,13 @@ See [Conventional Commits](https://conventionalcommits.org) for commit guideline
 
 
 
+## [3.0.3](https://github.com/streetsidesoftware/cspell-dicts/compare/@cspell/dict-php@3.0.2...@cspell/dict-php@3.0.3) (2022-11-06)
+
+
+### Updates and Bug Fixes
+
+* Add endfor to PHP ([#1584](https://github.com/streetsidesoftware/cspell-dicts/issues/1584)) ([8c5047c](https://github.com/streetsidesoftware/cspell-dicts/commit/8c5047c07064641442ffc8ce9a608201d63bf30c))
+
 ## [3.0.2](https://github.com/streetsidesoftware/cspell-dicts/compare/@cspell/dict-php@3.0.1...@cspell/dict-php@3.0.2) (2022-10-31)
 
 
