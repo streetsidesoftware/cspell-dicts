@@ -11,9 +11,9 @@
     "./cspell-ext.json": "./cspell-ext.json"
   },
   "scripts": {
-    "build": "cspell-tools-cli compile --keep-raw-case \"ada.txt\" -o .",
+    "build": "cspell-tools-cli compile --keep-raw-case src/ada.txt --no-compress -o ./dict",
     "test": "yarn run test-dict && yarn run test-samples",
-    "test-dict": "head -n 100 \"ada.txt\" | cspell -v -c ./cspell-ext.json --local=* --languageId=ada stdin",
+    "test-dict": "head -n 100 src/ada.txt | cspell -v -c ./cspell-ext.json --local=* --languageId=ada stdin",
     "test-samples": "cspell \"samples/**\"",
     "prepublishOnly": "echo pre-publish",
     "prepare": "yarn run build"
@@ -36,7 +36,7 @@
   },
   "homepage": "https://github.com/streetsidesoftware/cspell-dicts/blob/main/dictionaries/ada#readme",
   "files": [
-    "ada.txt.gz",
+    "dict/ada.txt",
     "cspell-ext.json"
   ]
 }
