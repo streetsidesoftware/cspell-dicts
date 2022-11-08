@@ -6,4 +6,5 @@ targets:
       - "<%= srcFile %>"
     format: "<%= format %>"
     targetDirectory: "./dict"
-    generateNonStrict: false
+    generateNonStrict: <%= generateNonStrict %>
+    compress: false
