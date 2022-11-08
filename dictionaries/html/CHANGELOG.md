@@ -3,6 +3,13 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+## [4.0.1](https://github.com/streetsidesoftware/cspell-dicts/compare/@cspell/dict-html@4.0.0...@cspell/dict-html@4.0.1) (2022-11-08)
+
+
+### Updates and Bug Fixes
+
+* add - html.txt : playsinline ([#1602](https://github.com/streetsidesoftware/cspell-dicts/issues/1602)) ([b266737](https://github.com/streetsidesoftware/cspell-dicts/commit/b26673741e67e1200ce1e7147c7b646cca580dbc))
+
 ## [4.0.0](https://github.com/streetsidesoftware/cspell-dicts/compare/@cspell/dict-html@3.3.2...@cspell/dict-html@4.0.0) (2022-10-10)
 
 

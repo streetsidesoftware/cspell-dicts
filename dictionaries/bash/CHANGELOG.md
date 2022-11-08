@@ -3,6 +3,17 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+## [4.0.0](https://github.com/streetsidesoftware/cspell-dicts/compare/@cspell/dict-bash@3.0.0...@cspell/dict-bash@4.0.0) (2022-11-08)
+
+
+### ⚠ BREAKING CHANGES
+
+* Upgrade Bash Dictionary (#1601)
+
+### Features
+
+* Upgrade Bash Dictionary ([#1601](https://github.com/streetsidesoftware/cspell-dicts/issues/1601)) ([899c792](https://github.com/streetsidesoftware/cspell-dicts/commit/899c792ad778d7efc31f2dec35695e8ebb4958e1))
+
 ## [3.0.0](https://github.com/streetsidesoftware/cspell-dicts/compare/@cspell/dict-bash@2.0.4...@cspell/dict-bash@3.0.0) (2022-10-10)
 
 

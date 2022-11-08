@@ -1,6 +1,6 @@
 {
   "name": "@cspell/dict-bash",
-  "version": "3.0.0",
+  "version": "4.0.0",
   "description": "Bash dictionary for cspell.",
   "publishConfig": {
     "access": "public"
@@ -11,8 +11,8 @@
     "./cspell-ext.json": "./cspell-ext.json"
   },
   "scripts": {
-    "build": "cspell-tools compile \"bash-words.txt\" -o .",
-    "test": "head -n 100 \"bash-words.txt\" | cspell -v -c ./cspell-ext.json \"--local=*\" \"--languageId=shellscript\" stdin",
+    "build": "cspell-tools-cli compile --keep-raw-case src/bash-words.txt --no-compress -o ./dict",
+    "test": "head -n 100 src/bash-words.txt | cspell -v -c ./cspell-ext.json \"--local=*\" \"--languageId=shellscript\" stdin",
     "prepublishOnly": "echo pre-publish",
     "prepare": "yarn run build"
   },
@@ -34,7 +34,7 @@
   },
   "homepage": "https://github.com/streetsidesoftware/cspell-dicts/blob/main/dictionaries/bash#readme",
   "files": [
-    "bash-words.txt.gz",
+    "dict/bash-words.txt",
     "cspell-ext.json"
   ]
 }

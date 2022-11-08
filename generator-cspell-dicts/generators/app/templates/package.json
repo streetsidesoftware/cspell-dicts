@@ -12,9 +12,10 @@
     "./cspell-ext.json": "./cspell-ext.json"
   },
   "scripts": {
-    "build": "cross-env NODE_OPTIONS=--max_old_space_size=8192 cspell-tools-cli <%= command %> \"<%= srcFile %>\" -o .",
+    "build": "cross-env NODE_OPTIONS=--max_old_space_size=8192 cspell-tools-cli build",
     "test": "<%= srcFileReader %> \"<%= srcFile %>\" | cspell -v -c ./cspell-ext.json \"--local=<%= local %>\" \"--languageId=<%= languageId %>\" stdin",
-    "prepublishOnly": "echo pre-publish",
+    "prepublishOnly": "<%= prepublishOnlyScript %>",
+    "zip": "gzip -k -f <%= dstFileName %>",
     "prepare": "<%= prepareScript %>"
   },
   "repository": {
@@ -38,7 +39,7 @@
   "devDependencies": {},
   "dependencies": {},
   "files": [
-    "<%= dstFileName %>",
+    "<%= dstFullFileName %>",
     "cspell-ext.json",
     "*.js",
     "*.d.ts"

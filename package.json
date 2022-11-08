@@ -1,6 +1,6 @@
 {
   "name": "cspell-dicts",
-  "version": "4.0.5",
+  "version": "5.0.0",
   "private": true,
   "scripts": {
     "test": "lerna run test",
@@ -12,7 +12,7 @@
     "check-dirty": "git --no-pager diff --compact-summary --exit-code",
     "check-spelling": "cspell",
     "checksum": "lerna run checksum",
-    "create-dictionary": "yo cspell-dicts",
+    "create-dictionary": "node ./generator-cspell-dicts/node_modules/yo/lib/cli.js cspell-dicts",
     "clean": "rimraf \"packages/*/*.txt.gz\" \"dictionaries/*/*.txt.gz\"",
     "generate-doc-dictionaries": "./scripts/dictionaries.sh > dictionaries.md && yarn run lint-format",
     "prepare": "lerna run prepare",
