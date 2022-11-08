@@ -94,6 +94,7 @@ Various [cspell](https://github.com/streetsidesoftware/cspell) dictionaries. Eac
 | [@cspell/dict-fr-fr](./dictionaries/fr_FR#readme)                               | fr-fr                           | French Dictionary (France)         | French Dictionary (France)                            |
 | [@cspell/dict-fr-reforme](./dictionaries/fr_FR_90#readme)                       | fr-fr-90                        | Français Réforme 1990              | Français Réforme 1990 dictionary for cspell.          |
 | [@cspell/dict-fullstack](./dictionaries/fullstack#readme)                       | fullstack                       | Fullstack                          | Common words encountered during fullstack development |
+| [@cspell/dict-gaming-terms](./dictionaries/gaming-terms#readme)                             | gaming terms                          | Gaming  | Common terms encountered when playing and discussing games. 
 | [@cspell/dict-golang](./dictionaries/golang#readme)                             | golang                          | Go Language                        | Go Language Dictionary                                |
 | [@cspell/dict-haskell](./dictionaries/haskell#readme)                           | haskell                         | Haskell                            | Haskell dictionary for cspell.                        |
 | [@cspell/dict-he](./dictionaries/he#readme)                                     | he                              | Hebrew Dictionary                  | Hebrew Dictionary                                     |
