@@ -3,6 +3,22 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+## [4.0.0](https://github.com/streetsidesoftware/cspell-dicts/compare/@cspell/dict-ada@3.0.0...@cspell/dict-ada@4.0.0) (2022-11-08)
+
+
+### ⚠ BREAKING CHANGES
+
+* Update Ada dictionary (#1600)
+
+### Features
+
+* Update Ada dictionary ([#1600](https://github.com/streetsidesoftware/cspell-dicts/issues/1600)) ([1685dd9](https://github.com/streetsidesoftware/cspell-dicts/commit/1685dd95a20601b66c67bf834ecbf5794b9f556b))
+
+
+### Updates and Bug Fixes
+
+* Upgrade ADA ([#1589](https://github.com/streetsidesoftware/cspell-dicts/issues/1589)) ([9f3c127](https://github.com/streetsidesoftware/cspell-dicts/commit/9f3c127c94561df1098ee8cb936f1929b2b2df5e))
+
 ## [3.0.0](https://github.com/streetsidesoftware/cspell-dicts/compare/@cspell/dict-ada@2.0.1...@cspell/dict-ada@3.0.0) (2022-10-10)
 
 
