@@ -1,0 +1,9 @@
+# yaml-language-server: $schema=https://raw.githubusercontent.com/streetsidesoftware/cspell/main/packages/cspell-tools/cspell-tools.config.schema.json
+
+targets:
+  - name: "<%= packageName %>"
+    sources:
+      - "<%= srcFile %>"
+    format: "<%= format %>"
+    targetDirectory: "./dict"
+    generateNonStrict: false

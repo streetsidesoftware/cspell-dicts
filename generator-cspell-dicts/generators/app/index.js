@@ -89,8 +89,9 @@ module.exports = class extends Generator {
             },
         ]);
 
-        depProps.fileExt = depProps.useTrie ? 'trie.gz' : 'txt.gz';
+        depProps.fileExt = depProps.useTrie ? 'trie.gz' : 'txt';
         depProps.command = depProps.useTrie ? 'compile-trie' : 'compile';
+        depProps.format = depProps.useTrie ? 'trie3' : 'plaintext';
 
         depProps.dstFileName = path.basename(depProps.srcFile, path.extname(depProps.srcFile)) + '.' + depProps.fileExt;
 
@@ -98,23 +99,21 @@ module.exports = class extends Generator {
         const srcFile = path.resolve(depProps.srcFile);
         this.log(srcFile);
 
-        if (this.fs.exists(srcFile)) {
-            const ext = path.extname(srcFile);
-            const srcFiles = [];
-            if (ext === '.dic' || ext === '.aff') {
-                const srcAff = path.join(path.dirname(srcFile), path.basename(srcFile, ext) + '.aff');
-                const srcDic = path.join(path.dirname(srcFile), path.basename(srcFile, ext) + '.dic');
-                srcFiles.push(srcAff);
-                srcFiles.push(srcDic);
-                props.srcFileReader = 'hunspell-reader words -n 1000';
-                props.prepareScript = 'echo OK';
-            } else {
-                srcFiles.push(srcFile);
-                props.srcFileReader = 'head -n 1000';
-                props.prepareScript = 'yarn run build';
-            }
-            srcFiles.forEach((srcFile) => props.filesToCopy.push([srcFile, path.join('src', path.basename(srcFile))]));
+        const ext = path.extname(srcFile);
+        const srcFiles = [];
+        if (ext === '.dic' || ext === '.aff') {
+            const srcAff = path.join(path.dirname(srcFile), path.basename(srcFile, ext) + '.aff');
+            const srcDic = path.join(path.dirname(srcFile), path.basename(srcFile, ext) + '.dic');
+            this.fs.exists(srcAff) && srcFiles.push(srcAff);
+            this.fs.exists(srcDic) && srcFiles.push(srcDic);
+            props.srcFileReader = 'hunspell-reader words -n 1000';
+            props.prepareScript = 'echo OK';
+        } else {
+            this.fs.exists(srcFile) && srcFiles.push(srcFile);
+            props.srcFileReader = 'head -n 1000';
+            props.prepareScript = 'yarn run build';
         }
+        srcFiles.forEach((srcFile) => props.filesToCopy.push([srcFile, path.join('src', path.basename(srcFile))]));
 
         depProps.srcFile = 'src/' + path.basename(srcFile);
         props.packageName = props.name.toLowerCase().replace(/[^a-z0-9-]/g, '-');
@@ -124,7 +123,15 @@ module.exports = class extends Generator {
     }
 
     writing() {
-        const files = ['package.json', 'README.md', 'CHANGELOG.md', 'cspell-ext.json', 'cspell.json', 'LICENSE'];
+        const files = [
+            'package.json',
+            'README.md',
+            'CHANGELOG.md',
+            'cspell-ext.json',
+            'cspell.json',
+            'LICENSE',
+            'cspell-tools.config.yaml',
+        ];
         files.forEach((fromTo) => {
             fromTo = typeof fromTo === 'string' ? [fromTo, fromTo] : fromTo;
             const [src, dst] = fromTo;
@@ -134,6 +141,10 @@ module.exports = class extends Generator {
             .map((toCopy) => (typeof toCopy === 'string' ? [toCopy, path.basename(toCopy)] : toCopy))
             .map((toCopy) => [toCopy[0], this.destinationPath(toCopy[1])])
             .forEach(([fromFile, toFile]) => this.fs.copy(fromFile, toFile));
+        const srcFile = this.destinationPath(this.props.srcFile);
+        if (!this.fs.exists(srcFile)) {
+            this.fs.write(srcFile, `# ${title(this.props.friendlyName)} Terms\n`);
+        }
     }
 
     default() {
