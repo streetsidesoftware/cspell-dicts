@@ -111,8 +111,8 @@ module.exports = class extends Generator {
             this.fs.exists(srcAff) && srcFiles.push(srcAff);
             this.fs.exists(srcDic) && srcFiles.push(srcDic);
             props.srcFileReader = 'hunspell-reader words -n 1000';
-            props.prepareScript = 'echo OK';
-            props.prepublishOnlyScript = 'yarn run zip';
+            props.prepareScript = 'yarn run zip';
+            props.prepublishOnlyScript = 'echo OK';
         } else {
             this.fs.exists(srcFile) && srcFiles.push(srcFile);
             props.srcFileReader = 'head -n 1000';
@@ -127,7 +127,7 @@ module.exports = class extends Generator {
         this.props = Object.assign({}, props, depProps);
     }
 
-    writing() {
+    async writing() {
         const files = [
             'package.json',
             'README.md',
@@ -151,13 +151,16 @@ module.exports = class extends Generator {
             this.log(chalk.yellow('Source file not found: %s\nCreating an empty file.'), chalk.red(srcFile));
             this.fs.write(srcFile, `# ${title(this.props.friendlyName)} Terms\n`);
         }
+        // await mkdirp(path.join(this.destinationPath, path.dirname(this.props.dstFullFileName)));
+        this.fs.write(this.destinationPath(this.props.dstFileName), '# dest');
     }
 
-    default() {
+    async default() {
         if (path.basename(this.destinationPath()) !== this.props.name) {
             this.log('Creating Folder: ' + this.props.name);
             const dir = path.join(dictionaryDir, this.props.name);
-            mkdirp(this.destinationPath(dir));
+            await mkdirp(this.destinationPath(dir));
+            await mkdirp(this.destinationPath(path.join(dir, 'dict')));
             this.destinationRoot(this.destinationPath(dir));
         }
     }
@@ -169,7 +172,7 @@ module.exports = class extends Generator {
     end() {
         if (this.props.doBuild) {
             this.spawnCommandSync('yarn', ['run', 'build']);
-            this.spawnCommandSync('yarn', ['run', 'prepublishOnly']);
+            this.spawnCommandSync('yarn', ['run', 'prepare']);
         }
     }
 };
