@@ -137,7 +137,7 @@ Various [cspell](https://github.com/streetsidesoftware/cspell) dictionaries. Eac
 | [@cspell/dict-vi-vn](./dictionaries/vi_VN#readme)                               | vi-vn                           | Vietnamese                         | Vietnamese dictionary for cspell.                           |
 | [@cspell/dict-vue](./dictionaries/vue#readme)                                   |                                 | vue                                | CSpell configuration for VUE files                          |
 | [@cspell/dict-win32](./dictionaries/win32#readme)                               | win32                           | Win32                              | Win32 dictionary for cspell.                                |
-fix
+
 ## Contributing
 
 Please help correct any mistakes in the dictionaries.
