@@ -89,42 +89,54 @@ module.exports = class extends Generator {
             },
         ]);
 
-        depProps.fileExt = depProps.useTrie ? 'trie.gz' : 'txt.gz';
+        depProps.fileExt = depProps.useTrie ? 'trie' : 'txt';
         depProps.command = depProps.useTrie ? 'compile-trie' : 'compile';
+        depProps.format = depProps.useTrie ? 'trie3' : 'plaintext';
+        depProps.generateNonStrict = depProps.useTrie ? 'true' : 'false';
 
-        depProps.dstFileName = path.basename(depProps.srcFile, path.extname(depProps.srcFile)) + '.' + depProps.fileExt;
+        props.packageName = props.name.toLowerCase().replace(/[^a-z0-9-]/g, '-');
+        depProps.dstFileName = 'dict/' + props.packageName + '.' + depProps.fileExt;
+        depProps.compressDest = depProps.useTrie;
+        depProps.dstFullFileName = depProps.dstFileName + (depProps.compressDest ? '.gz' : '');
 
         props.filesToCopy = [];
         const srcFile = path.resolve(depProps.srcFile);
         this.log(srcFile);
 
-        if (this.fs.exists(srcFile)) {
-            const ext = path.extname(srcFile);
-            const srcFiles = [];
-            if (ext === '.dic' || ext === '.aff') {
-                const srcAff = path.join(path.dirname(srcFile), path.basename(srcFile, ext) + '.aff');
-                const srcDic = path.join(path.dirname(srcFile), path.basename(srcFile, ext) + '.dic');
-                srcFiles.push(srcAff);
-                srcFiles.push(srcDic);
-                props.srcFileReader = 'hunspell-reader words -n 1000';
-                props.prepareScript = 'echo OK';
-            } else {
-                srcFiles.push(srcFile);
-                props.srcFileReader = 'head -n 1000';
-                props.prepareScript = 'yarn run build';
-            }
-            srcFiles.forEach((srcFile) => props.filesToCopy.push([srcFile, path.join('src', path.basename(srcFile))]));
+        const ext = path.extname(srcFile);
+        const srcFiles = [];
+        if (ext === '.dic' || ext === '.aff') {
+            const srcAff = path.join(path.dirname(srcFile), path.basename(srcFile, ext) + '.aff');
+            const srcDic = path.join(path.dirname(srcFile), path.basename(srcFile, ext) + '.dic');
+            this.fs.exists(srcAff) && srcFiles.push(srcAff);
+            this.fs.exists(srcDic) && srcFiles.push(srcDic);
+            props.srcFileReader = 'hunspell-reader words -n 1000';
+            props.prepareScript = 'yarn run zip';
+            props.prepublishOnlyScript = 'echo OK';
+        } else {
+            this.fs.exists(srcFile) && srcFiles.push(srcFile);
+            props.srcFileReader = 'head -n 1000';
+            props.prepareScript = 'yarn run build';
+            props.prepublishOnlyScript = 'echo OK';
         }
+        srcFiles.forEach((srcFile) => props.filesToCopy.push([srcFile, path.join('src', path.basename(srcFile))]));
 
         depProps.srcFile = 'src/' + path.basename(srcFile);
-        props.packageName = props.name.toLowerCase().replace(/[^a-z0-9-]/g, '-');
         props.fullPackageName = '@cspell/dict-' + props.packageName;
 
         this.props = Object.assign({}, props, depProps);
     }
 
-    writing() {
-        const files = ['package.json', 'README.md', 'CHANGELOG.md', 'cspell-ext.json', 'cspell.json', 'LICENSE'];
+    async writing() {
+        const files = [
+            'package.json',
+            'README.md',
+            'CHANGELOG.md',
+            'cspell-ext.json',
+            'cspell.json',
+            'LICENSE',
+            'cspell-tools.config.yaml',
+        ];
         files.forEach((fromTo) => {
             fromTo = typeof fromTo === 'string' ? [fromTo, fromTo] : fromTo;
             const [src, dst] = fromTo;
@@ -134,24 +146,33 @@ module.exports = class extends Generator {
             .map((toCopy) => (typeof toCopy === 'string' ? [toCopy, path.basename(toCopy)] : toCopy))
             .map((toCopy) => [toCopy[0], this.destinationPath(toCopy[1])])
             .forEach(([fromFile, toFile]) => this.fs.copy(fromFile, toFile));
+        const srcFile = this.destinationPath(this.props.srcFile);
+        if (!this.fs.exists(srcFile)) {
+            this.log(chalk.yellow('Source file not found: %s\nCreating an empty file.'), chalk.red(srcFile));
+            this.fs.write(srcFile, `# ${title(this.props.friendlyName)} Terms\n`);
+        }
+        // await mkdirp(path.join(this.destinationPath, path.dirname(this.props.dstFullFileName)));
+        this.fs.write(this.destinationPath(this.props.dstFileName), '# dest');
     }
 
-    default() {
+    async default() {
         if (path.basename(this.destinationPath()) !== this.props.name) {
             this.log('Creating Folder: ' + this.props.name);
             const dir = path.join(dictionaryDir, this.props.name);
-            mkdirp(this.destinationPath(dir));
+            await mkdirp(this.destinationPath(dir));
+            await mkdirp(this.destinationPath(path.join(dir, 'dict')));
             this.destinationRoot(this.destinationPath(dir));
         }
     }
 
     install() {
-        this.spawnCommand('yarn');
+        this.spawnCommandSync('yarn');
     }
 
     end() {
         if (this.props.doBuild) {
-            this.spawnCommand('yarn', ['run', 'build']);
+            this.spawnCommandSync('yarn', ['run', 'build']);
+            this.spawnCommandSync('yarn', ['run', 'prepare']);
         }
     }
 };
