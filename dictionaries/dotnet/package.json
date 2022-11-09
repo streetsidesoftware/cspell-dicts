@@ -11,8 +11,8 @@
     "./cspell-ext.json": "./cspell-ext.json"
   },
   "scripts": {
-    "build": "cspell-tools compile dotnet.txt --no-compress -o ./dict",
-    "test": "head -n 100 \"dotnet.txt\" | cspell -v -c ./cspell-ext.json --local=* --languageId=cs stdin",
+    "build": "cspell-tools-cli compile --keep-raw-case --use-legacy-splitter src/dotnet.txt --no-compress -o ./dict",
+    "test": "head -n 100 src/dotnet.txt | cspell -v -c ./cspell-ext.json --local=* --languageId=cs stdin",
     "prepublishOnly": "echo pre-publish",
     "prepare": "yarn run build"
   },
