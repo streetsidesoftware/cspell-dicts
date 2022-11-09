@@ -11,8 +11,8 @@
     "./cspell-ext.json": "./cspell-ext.json"
   },
   "scripts": {
-    "build": "cspell-tools compile \"css.txt\" -o .",
-    "test": "head -n 100 \"css.txt\" | cspell -v -c ./cspell-ext.json \"--local=*\" \"--languageId=css\" stdin",
+    "build": "cspell-tools-cli compile --keep-raw-case src/css.txt --no-compress -o ./dict",
+    "test": "head -n 100 src/css.txt | cspell -v -c ./cspell-ext.json \"--local=*\" \"--languageId=css\" stdin",
     "prepublishOnly": "echo pre-publish",
     "prepare": "yarn run build"
   },
@@ -34,7 +34,7 @@
   },
   "homepage": "https://github.com/streetsidesoftware/cspell-dicts/blob/main/dictionaries/css#readme",
   "files": [
-    "css.txt.gz",
+    "dict/css.txt",
     "cspell-ext.json"
   ]
 }
