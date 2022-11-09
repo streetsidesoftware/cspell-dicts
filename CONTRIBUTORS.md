@@ -17,6 +17,7 @@
 | French             | [canarduck](https://github.com/canarduck)                                                                     |
 | Fullstack          | [rbalet (Raphaël Balet)](https://github.com/rbalet)                                                           |
 | Go                 | [Alexey Palazhchenko](https://github.com/AlekSi)                                                              |
+| Gaming Terms       | [Kieran Robson](https://github.com/KieranRobson)                                                              |
 | Greek              | [Anthony Veaudry](https://github.com/anthony0030)                                                             |
 | Hebrew             | [Noam Ben Shabat](https://github.com/benshabatnoam)                                                           |
 | Java               | [Arthur Peters](https://github.com/arthurp)                                                                   |
