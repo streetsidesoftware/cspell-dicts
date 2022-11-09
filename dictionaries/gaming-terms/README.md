@@ -33,6 +33,9 @@ The `cspell-ext.json` file in this package should be added to the import section
 {
     // …
     "import": ["@cspell/dict-gaming-terms/cspell-ext.json"],
+    // It is necessary to explicitly enable `gaming-terms` dictionary by including it in the
+    // list of dictionaries.
+    "dictionaries": ["gaming-terms"]
     // …
 }
 ```
