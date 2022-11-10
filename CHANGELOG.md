@@ -1,5 +1,50 @@
 # Release Notes
 
+## [6.0.0](https://github.com/streetsidesoftware/cspell-dicts/compare/cspell-dicts@5.0.0...cspell-dicts@6.0.0) (2022-11-10)
+
+
+### ⚠ BREAKING CHANGES
+
+* Upgrade Haskell Dictionary (#1621)
+* Upgrade Go Dictionary (#1620)
+* Upgrade dotnet Dictionary
+* Upgrade Django Dictionary (#1611)
+* Upgrade CSS Dictionary (#1610)
+* Upgrade Elixir Dictionary (#1614)
+
+### Features
+
+* Create Gaming Dictionary ([#1609](https://github.com/streetsidesoftware/cspell-dicts/issues/1609)) ([a1c6af4](https://github.com/streetsidesoftware/cspell-dicts/commit/a1c6af4196092e03ed6b3cf550b7b2185a2e7d1a))
+* Upgrade CSS ([e944ce6](https://github.com/streetsidesoftware/cspell-dicts/commit/e944ce66c515d973146507e85fc8e7eb85b50dde))
+* Upgrade CSS Dictionary ([#1610](https://github.com/streetsidesoftware/cspell-dicts/issues/1610)) ([e944ce6](https://github.com/streetsidesoftware/cspell-dicts/commit/e944ce66c515d973146507e85fc8e7eb85b50dde))
+* Upgrade Django Dictionary ([#1611](https://github.com/streetsidesoftware/cspell-dicts/issues/1611)) ([3bded9b](https://github.com/streetsidesoftware/cspell-dicts/commit/3bded9b6808aa1492c92fe94dae52e317bb28d6b))
+* Upgrade dotnet Dictionary ([2fcf797](https://github.com/streetsidesoftware/cspell-dicts/commit/2fcf79731873f1a87a3e7afca39670c6e128e995))
+* Upgrade Elixir Dictionary ([#1614](https://github.com/streetsidesoftware/cspell-dicts/issues/1614)) ([9147e6c](https://github.com/streetsidesoftware/cspell-dicts/commit/9147e6c81a3fb6b67c28a673bcaa5d0d6d5fe558))
+* Upgrade Go Dictionary ([#1620](https://github.com/streetsidesoftware/cspell-dicts/issues/1620)) ([f03ac92](https://github.com/streetsidesoftware/cspell-dicts/commit/f03ac92f91d5db615a593ddbd9f2126e58997e09))
+* Upgrade Haskell Dictionary ([#1621](https://github.com/streetsidesoftware/cspell-dicts/issues/1621)) ([dec9f62](https://github.com/streetsidesoftware/cspell-dicts/commit/dec9f62e1ab8a86dfe51af070be480bbb84d0c4e))
+
+
+### Updates and Bug Fixes
+
+* Add Aruban to en_US dictionary. ([#1627](https://github.com/streetsidesoftware/cspell-dicts/issues/1627)) ([3fb7114](https://github.com/streetsidesoftware/cspell-dicts/commit/3fb7114d8ca821b38c78aadde94212cf2054d362))
+* Add legacy terms ([#1624](https://github.com/streetsidesoftware/cspell-dicts/issues/1624)) ([2791f02](https://github.com/streetsidesoftware/cspell-dicts/commit/2791f025672ce8c14eaa305a67d3d7a334b7682f))
+* Add legacy terms for compatibility ([#1625](https://github.com/streetsidesoftware/cspell-dicts/issues/1625)) ([6a23477](https://github.com/streetsidesoftware/cspell-dicts/commit/6a234778f6bbe3e13fb9e059c3a85b1f89cd43b0))
+* Add to Aruban en_gb ([#1622](https://github.com/streetsidesoftware/cspell-dicts/issues/1622)) ([ad92878](https://github.com/streetsidesoftware/cspell-dicts/commit/ad92878fb9a1f7bad6e2577287e3666d6e570f10))
+* Adjust the CSS dictionary to be backwards compatable. ([8334e68](https://github.com/streetsidesoftware/cspell-dicts/commit/8334e684ee2303bc974226dbe97c99eaee48195e))
+* Adjust the CSS dictionary to be backwards compatible. ([#1623](https://github.com/streetsidesoftware/cspell-dicts/issues/1623)) ([8334e68](https://github.com/streetsidesoftware/cspell-dicts/commit/8334e684ee2303bc974226dbe97c99eaee48195e))
+* Do not enable `gaming-terms` dictionary by default. ([#1619](https://github.com/streetsidesoftware/cspell-dicts/issues/1619)) ([622e204](https://github.com/streetsidesoftware/cspell-dicts/commit/622e2046c60ec11685fa6bbd51ec750cf36ab337))
+
+
+### Continuous Integration
+
+* Workflow Bot -- Build Dictionaries ([#1607](https://github.com/streetsidesoftware/cspell-dicts/issues/1607)) ([59c4824](https://github.com/streetsidesoftware/cspell-dicts/commit/59c482409348a6b53f1e42f7c40d11fcf959c81d))
+* Workflow Bot -- Build Dictionaries ([#1626](https://github.com/streetsidesoftware/cspell-dicts/issues/1626)) ([3f8e9b7](https://github.com/streetsidesoftware/cspell-dicts/commit/3f8e9b70815f224687d877f0c5dcacb8f8724a6d))
+* Workflow Bot -- Build Dictionaries ([#1628](https://github.com/streetsidesoftware/cspell-dicts/issues/1628)) ([e45f722](https://github.com/streetsidesoftware/cspell-dicts/commit/e45f7228a48f4c43ed6634cf94c088abf614f8f2))
+* Workflow Bot -- Update ALL Dependencies ([24029e2](https://github.com/streetsidesoftware/cspell-dicts/commit/24029e2251a467c1e0cb4d9d6d3786714fbab4f7))
+* Workflow Bot -- Update ALL Dependencies ([9bed49b](https://github.com/streetsidesoftware/cspell-dicts/commit/9bed49b304c8b9c2fdd58af8b7f1d4dbf4a0ea0f))
+* Workflow Bot -- Update ALL Dependencies (main) ([#1616](https://github.com/streetsidesoftware/cspell-dicts/issues/1616)) ([9bed49b](https://github.com/streetsidesoftware/cspell-dicts/commit/9bed49b304c8b9c2fdd58af8b7f1d4dbf4a0ea0f))
+* Workflow Bot -- Update ALL Dependencies (main) ([#1618](https://github.com/streetsidesoftware/cspell-dicts/issues/1618)) ([24029e2](https://github.com/streetsidesoftware/cspell-dicts/commit/24029e2251a467c1e0cb4d9d6d3786714fbab4f7))
+
 ## [5.0.0](https://github.com/streetsidesoftware/cspell-dicts/compare/cspell-dicts@4.0.5...cspell-dicts@5.0.0) (2022-11-08)
 
 

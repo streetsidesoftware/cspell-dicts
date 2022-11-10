@@ -3,6 +3,17 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+## [4.0.0](https://github.com/streetsidesoftware/cspell-dicts/compare/@cspell/dict-elixir@3.0.0...@cspell/dict-elixir@4.0.0) (2022-11-10)
+
+
+### ⚠ BREAKING CHANGES
+
+* Upgrade Elixir Dictionary (#1614)
+
+### Features
+
+* Upgrade Elixir Dictionary ([#1614](https://github.com/streetsidesoftware/cspell-dicts/issues/1614)) ([9147e6c](https://github.com/streetsidesoftware/cspell-dicts/commit/9147e6c81a3fb6b67c28a673bcaa5d0d6d5fe558))
+
 ## [3.0.0](https://github.com/streetsidesoftware/cspell-dicts/compare/@cspell/dict-elixir@2.0.1...@cspell/dict-elixir@3.0.0) (2022-10-10)
 
 

@@ -3,6 +3,17 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+## [4.0.0](https://github.com/streetsidesoftware/cspell-dicts/compare/@cspell/dict-haskell@3.0.0...@cspell/dict-haskell@4.0.0) (2022-11-10)
+
+
+### ⚠ BREAKING CHANGES
+
+* Upgrade Haskell Dictionary (#1621)
+
+### Features
+
+* Upgrade Haskell Dictionary ([#1621](https://github.com/streetsidesoftware/cspell-dicts/issues/1621)) ([dec9f62](https://github.com/streetsidesoftware/cspell-dicts/commit/dec9f62e1ab8a86dfe51af070be480bbb84d0c4e))
+
 ## [3.0.0](https://github.com/streetsidesoftware/cspell-dicts/compare/@cspell/dict-haskell@2.0.1...@cspell/dict-haskell@3.0.0) (2022-10-10)
 
 

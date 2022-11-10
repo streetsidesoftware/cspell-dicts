@@ -3,6 +3,17 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+## [4.0.0](https://github.com/streetsidesoftware/cspell-dicts/compare/@cspell/dict-dotnet@3.0.1...@cspell/dict-dotnet@4.0.0) (2022-11-10)
+
+
+### ⚠ BREAKING CHANGES
+
+* Upgrade dotnet Dictionary
+
+### Features
+
+* Upgrade dotnet Dictionary ([2fcf797](https://github.com/streetsidesoftware/cspell-dicts/commit/2fcf79731873f1a87a3e7afca39670c6e128e995))
+
 ## [3.0.1](https://github.com/streetsidesoftware/cspell-dicts/compare/@cspell/dict-dotnet@3.0.0...@cspell/dict-dotnet@3.0.1) (2022-10-31)
 
 
