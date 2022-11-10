@@ -3,6 +3,18 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+## [4.0.1](https://github.com/streetsidesoftware/cspell-dicts/compare/@cspell/dict-en-gb@4.0.0...@cspell/dict-en-gb@4.0.1) (2022-11-10)
+
+
+### Updates and Bug Fixes
+
+* Add to Aruban en_gb ([#1622](https://github.com/streetsidesoftware/cspell-dicts/issues/1622)) ([ad92878](https://github.com/streetsidesoftware/cspell-dicts/commit/ad92878fb9a1f7bad6e2577287e3666d6e570f10))
+
+
+### Continuous Integration
+
+* Workflow Bot -- Build Dictionaries ([#1626](https://github.com/streetsidesoftware/cspell-dicts/issues/1626)) ([3f8e9b7](https://github.com/streetsidesoftware/cspell-dicts/commit/3f8e9b70815f224687d877f0c5dcacb8f8724a6d))
+
 ## [4.0.0](https://github.com/streetsidesoftware/cspell-dicts/compare/@cspell/dict-en-gb@3.2.4...@cspell/dict-en-gb@4.0.0) (2022-10-31)
 
 

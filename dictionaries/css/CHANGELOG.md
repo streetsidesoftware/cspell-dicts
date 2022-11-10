@@ -22,6 +22,24 @@ See [Conventional Commits](https://conventionalcommits.org) for commit guideline
 
 
 
+## [4.0.0](https://github.com/streetsidesoftware/cspell-dicts/compare/@cspell/dict-css@3.0.0...@cspell/dict-css@4.0.0) (2022-11-10)
+
+
+### ⚠ BREAKING CHANGES
+
+* Upgrade CSS Dictionary (#1610)
+
+### Features
+
+* Upgrade CSS ([e944ce6](https://github.com/streetsidesoftware/cspell-dicts/commit/e944ce66c515d973146507e85fc8e7eb85b50dde))
+* Upgrade CSS Dictionary ([#1610](https://github.com/streetsidesoftware/cspell-dicts/issues/1610)) ([e944ce6](https://github.com/streetsidesoftware/cspell-dicts/commit/e944ce66c515d973146507e85fc8e7eb85b50dde))
+
+
+### Updates and Bug Fixes
+
+* Adjust the CSS dictionary to be backwards compatable. ([8334e68](https://github.com/streetsidesoftware/cspell-dicts/commit/8334e684ee2303bc974226dbe97c99eaee48195e))
+* Adjust the CSS dictionary to be backwards compatible. ([#1623](https://github.com/streetsidesoftware/cspell-dicts/issues/1623)) ([8334e68](https://github.com/streetsidesoftware/cspell-dicts/commit/8334e684ee2303bc974226dbe97c99eaee48195e))
+
 ## [3.0.0](https://github.com/streetsidesoftware/cspell-dicts/compare/@cspell/dict-css@2.1.0...@cspell/dict-css@3.0.0) (2022-10-10)
 
 

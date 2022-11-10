@@ -3,6 +3,22 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+## [5.0.0](https://github.com/streetsidesoftware/cspell-dicts/compare/@cspell/dict-golang@4.0.0...@cspell/dict-golang@5.0.0) (2022-11-10)
+
+
+### ⚠ BREAKING CHANGES
+
+* Upgrade Go Dictionary (#1620)
+
+### Features
+
+* Upgrade Go Dictionary ([#1620](https://github.com/streetsidesoftware/cspell-dicts/issues/1620)) ([f03ac92](https://github.com/streetsidesoftware/cspell-dicts/commit/f03ac92f91d5db615a593ddbd9f2126e58997e09))
+
+
+### Updates and Bug Fixes
+
+* Add legacy terms for compatibility ([#1625](https://github.com/streetsidesoftware/cspell-dicts/issues/1625)) ([6a23477](https://github.com/streetsidesoftware/cspell-dicts/commit/6a234778f6bbe3e13fb9e059c3a85b1f89cd43b0))
+
 ## [4.0.0](https://github.com/streetsidesoftware/cspell-dicts/compare/@cspell/dict-golang@3.0.1...@cspell/dict-golang@4.0.0) (2022-10-10)
 
 
