@@ -11,7 +11,7 @@
     "./cspell-ext.json": "./cspell-ext.json"
   },
   "scripts": {
-    "build": "cspell-tools-cli compile --keep-raw-case src/go.txt --no-compress -o ./dict",
+    "build": "cspell-tools-cli compile --keep-raw-case src/*.txt --no-compress -M go -o ./dict",
     "test": "head -n 100 src/go.txt | cspell -v -c ./cspell-ext.json --local=* --languageId=go stdin",
     "prepublishOnly": "echo pre-publish",
     "prepare": "yarn run build"
