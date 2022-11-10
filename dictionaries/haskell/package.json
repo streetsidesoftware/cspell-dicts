@@ -11,8 +11,8 @@
     "./cspell-ext.json": "./cspell-ext.json"
   },
   "scripts": {
-    "build": "cspell-tools compile \"haskell.txt\" -o .",
-    "test": "head -n 100 \"haskell.txt\" | cspell -v -c ./cspell-ext.json \"--local=*\" \"--languageId=haskell\" stdin",
+    "build": "cspell-tools-cli compile --keep-raw-case src/haskell.txt --no-compress -o ./dict",
+    "test": "head -n 100 src/haskell.txt | cspell -v -c ./cspell-ext.json --local=* --languageId=haskell stdin",
     "prepublishOnly": "echo pre-publish",
     "prepare": "yarn run build"
   },
@@ -34,7 +34,7 @@
   },
   "homepage": "https://github.com/streetsidesoftware/cspell-dicts/blob/main/dictionaries/haskell#readme",
   "files": [
-    "haskell.txt.gz",
+    "./dict/haskell.txt",
     "cspell-ext.json"
   ]
 }
