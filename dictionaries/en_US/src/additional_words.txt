@@ -1,16 +1,11 @@
 # The CSpell English dictionary uses the SCOWL (Spell Checker Oriented Word Lists) dictionary as a
 # base: http://wordlist.aspell.net/
-
+#
 # Additionally, CSpell adds some extra words to that dictionary that are very common.
-# This file contains those extra words.
-
-# When adding words to the CSpell English dictionary via a pull request.
-
-# Until the spell checker supports multi-word terms, the following `cspell-tools` directive is used to
-# ensure all parts of multi-word terms are added to the dictionary.
-# cspell-tools: split
-
+#
 # There should be one entry per line.
+# Consider adding words to ./shared-additional-words.txt if they are used by all flavors of English.
+# cspell-tools: split
 
 Alpha Centauri
 Aruban
@@ -18,7 +13,6 @@ Arubans
 backtick
 backticks
 bicep
-Centauri # can be removed once split works as expected on merged word lists.
 Christoph
 conformant
 contactless
@@ -26,12 +20,12 @@ coronavirus
 COVID
 curbside
 déjà
-draggable
 discretized
-drive-thru
+draggable
 drive through
-drive-through
 drive thru
+drive-through
+drive-thru
 dropshipper
 dropshippers
 dropshipping
@@ -55,6 +49,7 @@ teleconverter
 tricep
 ungrouped
 unintuitive
+unmaneuverable
 unparsable
 unpatched
 unplated
