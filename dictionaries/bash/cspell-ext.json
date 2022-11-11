@@ -1,7 +1,7 @@
 {
-    "id": "schellscript",
-    "name": "SchellScript",
-    "description": "SchellScript dictionary for cspell.",
+    "id": "shellscript",
+    "name": "ShellScript",
+    "description": "ShellScript dictionary for cspell.",
     "readonly": true,
     "dictionaryDefinitions": [
         {
@@ -10,7 +10,7 @@
             "description": "Bash dictionary for cspell."
         },
         {
-            "name": "schellscript",
+            "name": "shellscript",
             "path": "./dict/shell-all-words.txt",
             "description": "ShellScript dictionary for cspell."
         }
@@ -20,7 +20,7 @@
         {
             "languageId": "shellscript",
             "locale": "*",
-            "dictionaries": ["schellscript"]
+            "dictionaries": ["shellscript"]
         },
         {
             "languageId": "bashscript",
