@@ -3616,7 +3616,7 @@ humanize-string@^2.1.0:
   dependencies:
     decamelize "^2.0.0"
 
-hunspell-reader@6.14.1, hunspell-reader@^6.14.1:
+hunspell-reader@6.14.1:
   version "6.14.1"
   resolved "https://registry.npmjs.org/hunspell-reader/-/hunspell-reader-6.14.1.tgz#71bab4e5d08408bce7fcb7e04258f21ad70c9158"
   integrity sha512-GhLYn9qenVq9MR4L/I0vjDGzIjNC/nu8FAqqyP0JZ9MusQLC56hQcc5MRCNlkQQEhYj2xkC+gNwx6z/vx2SJ+Q==
@@ -3635,6 +3635,16 @@ hunspell-reader@^3.2.0:
     fs-extra "^8.0.1"
     gensequence "^3.0.1"
     iconv-lite "^0.5.0"
+
+hunspell-reader@^6.14.1:
+  version "6.14.2"
+  resolved "https://registry.npmjs.org/hunspell-reader/-/hunspell-reader-6.14.2.tgz#8ffe4a480ec486ec27673fe67e99f635e0168805"
+  integrity sha512-SsRGpp6fLKjtzpMF5aFA7yFvqqDOKNmegxiBIpcURml+hDLI88iDDieYDdgzsuF8uZ1k0uucedVIqabgrHlvxw==
+  dependencies:
+    commander "^9.4.1"
+    fs-extra "^10.1.0"
+    gensequence "^4.0.2"
+    iconv-lite "^0.6.3"
 
 iconv-lite@^0.4.24:
   version "0.4.24"
