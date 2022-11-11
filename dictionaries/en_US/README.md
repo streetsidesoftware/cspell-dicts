@@ -65,6 +65,3 @@ http://wordlist.aspell.net/hunspell-readme/
 MIT
 
 > Some packages may have other licenses included.
-
-un maneuverable
-un manoeuvrable
