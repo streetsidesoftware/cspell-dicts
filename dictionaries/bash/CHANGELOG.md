@@ -3,6 +3,13 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+## [4.1.0](https://github.com/streetsidesoftware/cspell-dicts/compare/@cspell/dict-bash@4.0.0...@cspell/dict-bash@4.1.0) (2022-11-12)
+
+
+### Features
+
+* Create a common ShellScript dictionary ([#1639](https://github.com/streetsidesoftware/cspell-dicts/issues/1639)) ([28ee43e](https://github.com/streetsidesoftware/cspell-dicts/commit/28ee43ef4787db13fc304f8be47cc0f8a9e76eab))
+
 ## [4.0.0](https://github.com/streetsidesoftware/cspell-dicts/compare/@cspell/dict-bash@3.0.0...@cspell/dict-bash@4.0.0) (2022-11-08)
 
 

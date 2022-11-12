@@ -1,5 +1,40 @@
 # Release Notes
 
+## [6.1.0](https://github.com/streetsidesoftware/cspell-dicts/compare/cspell-dicts@6.0.0...cspell-dicts@6.1.0) (2022-11-12)
+
+
+### Features
+
+* Create a common ShellScript dictionary ([#1639](https://github.com/streetsidesoftware/cspell-dicts/issues/1639)) ([28ee43e](https://github.com/streetsidesoftware/cspell-dicts/commit/28ee43ef4787db13fc304f8be47cc0f8a9e76eab))
+* Share words between all English dictionaries. ([#1633](https://github.com/streetsidesoftware/cspell-dicts/issues/1633)) ([db0b55c](https://github.com/streetsidesoftware/cspell-dicts/commit/db0b55ce17e02b16a23ebdf8eccdf037330afc0c))
+
+
+### Build System
+
+* **deps-dev:** bump @cspell/cspell-tools from 6.14.1 to 6.14.2 ([#1637](https://github.com/streetsidesoftware/cspell-dicts/issues/1637)) ([883e1b5](https://github.com/streetsidesoftware/cspell-dicts/commit/883e1b57949ce047dab899637c3a5ed224cc902d))
+
+
+### Miscellaneous
+
+* remove unused git hooks ([#1641](https://github.com/streetsidesoftware/cspell-dicts/issues/1641)) ([a14dae3](https://github.com/streetsidesoftware/cspell-dicts/commit/a14dae3a2000f170e613a5de9d65f56e9aff9a96))
+
+
+### Updates and Bug Fixes
+
+* Add hyponym ([#1643](https://github.com/streetsidesoftware/cspell-dicts/issues/1643)) ([d5720f9](https://github.com/streetsidesoftware/cspell-dicts/commit/d5720f91d77753a80a54e59cc43c7aa4726b54f6))
+* fix link ([8acddef](https://github.com/streetsidesoftware/cspell-dicts/commit/8acddef956b10dfe4288a75cff4bb224f0a8727e))
+
+
+### Continuous Integration
+
+* Workflow Bot -- Build Dictionaries ([#1634](https://github.com/streetsidesoftware/cspell-dicts/issues/1634)) ([1ea38f3](https://github.com/streetsidesoftware/cspell-dicts/commit/1ea38f38d16d3799e9781be1ef2f1c169a273fd1))
+* Workflow Bot -- Build Dictionaries ([#1644](https://github.com/streetsidesoftware/cspell-dicts/issues/1644)) ([4fbbeb0](https://github.com/streetsidesoftware/cspell-dicts/commit/4fbbeb0939931462cc53ebc1b2c026fd5d0d0cd5))
+* Workflow Bot -- Update ALL Dependencies ([5c6f742](https://github.com/streetsidesoftware/cspell-dicts/commit/5c6f742c2a6344fe0a7afcfa73faafdcc23ad279))
+* Workflow Bot -- Update ALL Dependencies ([3aae2a3](https://github.com/streetsidesoftware/cspell-dicts/commit/3aae2a3e25c3a20a044326206233a2fd9903146b))
+* Workflow Bot -- Update ALL Dependencies (main) ([#1630](https://github.com/streetsidesoftware/cspell-dicts/issues/1630)) ([cb36a17](https://github.com/streetsidesoftware/cspell-dicts/commit/cb36a171c3a721638156b1c8e89c6ece48af0e99))
+* Workflow Bot -- Update ALL Dependencies (main) ([#1640](https://github.com/streetsidesoftware/cspell-dicts/issues/1640)) ([3aae2a3](https://github.com/streetsidesoftware/cspell-dicts/commit/3aae2a3e25c3a20a044326206233a2fd9903146b))
+* Workflow Bot -- Update ALL Dependencies (main) ([#1642](https://github.com/streetsidesoftware/cspell-dicts/issues/1642)) ([5c6f742](https://github.com/streetsidesoftware/cspell-dicts/commit/5c6f742c2a6344fe0a7afcfa73faafdcc23ad279))
+
 ## [6.0.0](https://github.com/streetsidesoftware/cspell-dicts/compare/cspell-dicts@5.0.0...cspell-dicts@6.0.0) (2022-11-10)
 
 
