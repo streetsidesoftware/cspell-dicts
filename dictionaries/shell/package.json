@@ -1,7 +1,7 @@
 {
-  "name": "@cspell/dict-bash",
-  "version": "4.0.0",
-  "description": "Bash dictionary for cspell.",
+  "name": "@cspell/dict-shell",
+  "version": "0.0.0",
+  "description": "Shell Script dictionary for cspell.",
   "publishConfig": {
     "access": "public"
   },
@@ -12,7 +12,7 @@
   },
   "scripts": {
     "build": "cspell-tools-cli build",
-    "test": "head -n 100 src/bash-words.txt | cspell -v -c ./cspell-ext.json \"--local=*\" \"--languageId=shellscript\" stdin",
+    "test": "head -n 100 src/legacy-words.txt | cspell -v -c ./cspell-ext.json \"--local=*\" \"--languageId=shellscript\" stdin",
     "prepublishOnly": "echo pre-publish",
     "prepare": "yarn run build"
   },
@@ -23,7 +23,8 @@
   "keywords": [
     "cspell",
     "bash",
-    "bash",
+    "shell",
+    "POSIX",
     "dictionary",
     "spelling"
   ],
