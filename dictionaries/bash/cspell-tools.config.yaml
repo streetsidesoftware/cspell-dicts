@@ -3,16 +3,7 @@
 targets:
   - name: bash-words
     sources:
-      - listFile: ./common-source-files.txt
-      - ./src/shell-bash-words.txt
-    format: plaintext
-    targetDirectory: "./dict"
-    generateNonStrict: false
-  - name: shell-all-words
-    sources:
-      - listFile: ./common-source-files.txt
-      - ./src/shell-bash-words.txt
-      - ./src/shell-zsh-words.txt
+      - ./src/bash-words.txt
     format: plaintext
     targetDirectory: "./dict"
     generateNonStrict: false

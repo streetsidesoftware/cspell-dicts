@@ -1,0 +1,41 @@
+{
+  "name": "@cspell/dict-shell",
+  "version": "0.0.0",
+  "description": "Shell Script dictionary for cspell.",
+  "publishConfig": {
+    "access": "public"
+  },
+  "exports": {
+    ".": "./cspell-ext.json",
+    "./cspell": "./cspell-ext.json",
+    "./cspell-ext.json": "./cspell-ext.json"
+  },
+  "scripts": {
+    "build": "cspell-tools-cli build",
+    "test": "head -n 100 src/legacy-words.txt | cspell -v -c ./cspell-ext.json \"--local=*\" \"--languageId=shellscript\" stdin",
+    "prepublishOnly": "echo pre-publish",
+    "prepare": "yarn run build"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/streetsidesoftware/cspell-dicts.git"
+  },
+  "keywords": [
+    "cspell",
+    "bash",
+    "shell",
+    "POSIX",
+    "dictionary",
+    "spelling"
+  ],
+  "author": "Jason Dent",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/streetsidesoftware/cspell-dicts/issues"
+  },
+  "homepage": "https://github.com/streetsidesoftware/cspell-dicts/blob/main/dictionaries/bash#readme",
+  "files": [
+    "dict/*",
+    "cspell-ext.json"
+  ]
+}

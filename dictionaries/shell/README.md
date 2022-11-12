@@ -1,6 +1,6 @@
-# Cspell bash Dictionary
+# CSpell Shell Script Dictionary
 
-Bash dictionary for cspell.
+Shell Script dictionary for cspell.
 
 This is a pre-built dictionary for use with cspell.
 
@@ -16,14 +16,14 @@ This is a pre-built dictionary for use with cspell.
 Global Install and add to cspell global settings.
 
 ```sh
-npm install -g @cspell/dict-bash
-cspell link add @cspell/dict-bash
+npm install -g @cspell/dict-shell
+cspell link add @cspell/dict-shell
 ```
 
 ## Uninstall from cspell
 
 ```sh
-cspell link remove @cspell/dict-bash
+cspell link remove @cspell/dict-shell
 ```
 
 ## Manual Installation
@@ -33,7 +33,7 @@ The `cspell-ext.json` file in this package should be added to the import section
 ```javascript
 {
     // …
-    "import": ["@cspell/dict-bash/cspell-ext.json"],
+    "import": ["@cspell/dict-shell/cspell-ext.json"],
     // …
 }
 ```
