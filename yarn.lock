@@ -238,6 +238,54 @@
     write-json-file "^4.3.0"
     write-pkg "^4.0.0"
 
+"@lerna-lite/core@1.13.0":
+  version "1.13.0"
+  resolved "https://registry.npmjs.org/@lerna-lite/core/-/core-1.13.0.tgz#a5919d1ca57a445c76dc9795d9eff9b1ca9dd69a"
+  integrity sha512-P5b7sQXzjZF4udW3b+/JjTYbRgA/V+AW8wXyshS10zgPeDZANju+yb5Dn+G5KtQiKUzCkK918QofGYz+MSYS9A==
+  dependencies:
+    "@npmcli/run-script" "^6.0.0"
+    "@octokit/plugin-enterprise-rest" "^6.0.1"
+    "@octokit/rest" "^19.0.5"
+    chalk "^4.1.2"
+    clone-deep "^4.0.1"
+    config-chain "^1.1.13"
+    conventional-changelog-angular "^5.0.13"
+    conventional-changelog-core "^4.2.4"
+    conventional-changelog-writer "^5.0.1"
+    conventional-commits-parser "^3.2.4"
+    conventional-recommended-bump "^6.1.0"
+    cosmiconfig "^8.0.0"
+    dedent "^0.7.0"
+    execa "^5.1.1"
+    fs-extra "^10.1.0"
+    get-stream "^6.0.1"
+    git-url-parse "^13.1.0"
+    glob-parent "^6.0.2"
+    globby "^11.1.0"
+    graceful-fs "^4.2.10"
+    inquirer "^8.2.4"
+    is-ci "^3.0.1"
+    is-stream "^2.0.1"
+    load-json-file "^6.2.0"
+    make-dir "^3.1.0"
+    minimatch "^5.1.0"
+    node-fetch "^2.6.7"
+    npm-package-arg "^10.0.0"
+    npmlog "^7.0.1"
+    p-map "^4.0.0"
+    p-queue "^6.6.2"
+    path "^0.12.7"
+    pify "^5.0.0"
+    resolve-from "^5.0.0"
+    semver "^7.3.8"
+    slash "^3.0.0"
+    strong-log-transformer "^2.1.0"
+    temp-dir "^1.0.0"
+    uuid "^9.0.0"
+    write-file-atomic "^5.0.0"
+    write-json-file "^4.3.0"
+    write-pkg "^4.0.0"
+
 "@lerna-lite/info@1.12.0":
   version "1.12.0"
   resolved "https://registry.npmjs.org/@lerna-lite/info/-/info-1.12.0.tgz#5f8fa335286fb824d72d6153f5dc709af32d12e7"
@@ -266,15 +314,15 @@
     chalk "^4.1.2"
     columnify "^1.6.0"
 
-"@lerna-lite/optional-cmd-common@1.12.0":
-  version "1.12.0"
-  resolved "https://registry.npmjs.org/@lerna-lite/optional-cmd-common/-/optional-cmd-common-1.12.0.tgz#74e81bff042f81452c61c88709f6b6c4412d78d8"
-  integrity sha512-ljtehC46icG29bzGlDoytoUNWzqCM07A4PkiKLEbWBlG0pM6+8dGCE3Dw4KIudQwS/DudPTIrgWqUK7t4BdzNQ==
+"@lerna-lite/optional-cmd-common@1.13.0":
+  version "1.13.0"
+  resolved "https://registry.npmjs.org/@lerna-lite/optional-cmd-common/-/optional-cmd-common-1.13.0.tgz#b9e7304e501931f9d659d46b614b3c7fe54ca6ea"
+  integrity sha512-WXbmD7XdnegYX2oaZ4iHa40cGUxJu+T0tlCBGIzt2BUsPAS5ffSsYg8DUQTHUI2Rgv5ZeVfE9sbGxbaX6DK8eQ==
   dependencies:
-    "@lerna-lite/core" "1.12.0"
+    "@lerna-lite/core" "1.13.0"
     fs-extra "^10.1.0"
     multimatch "^5.0.0"
-    npmlog "^7.0.0"
+    npmlog "^7.0.1"
     upath "^2.0.1"
 
 "@lerna-lite/publish@1.12.0":
@@ -307,15 +355,15 @@
     tar "^6.1.11"
 
 "@lerna-lite/run@^1.12.0":
-  version "1.12.0"
-  resolved "https://registry.npmjs.org/@lerna-lite/run/-/run-1.12.0.tgz#2d9b76ff62b535df72c67b5162d5ac4376d60ba2"
-  integrity sha512-KfLLhPbtj7UYqXmKb2czrvLdn2i+g1NfcsO21PWRL5GeLv8pe0W28ejqsdQu7h8Ilf5e3n5WtrriY5bgdtMTgg==
+  version "1.13.0"
+  resolved "https://registry.npmjs.org/@lerna-lite/run/-/run-1.13.0.tgz#b6a08ba0f3950ef3c676fdc3422f135d3487adec"
+  integrity sha512-RsvJayz/RTboJkrnWnAscSZJCFXj8BKhpvPkpZ/hFexMTs8hvZZ+b5z5itXQtBGC3g8TonUmyyS1HBlXJ61Cng==
   dependencies:
-    "@lerna-lite/core" "1.12.0"
-    "@lerna-lite/optional-cmd-common" "1.12.0"
+    "@lerna-lite/core" "1.13.0"
+    "@lerna-lite/optional-cmd-common" "1.13.0"
     chalk "^4.1.2"
     fs-extra "^10.1.0"
-    npmlog "^7.0.0"
+    npmlog "^7.0.1"
     p-map "^4.0.0"
 
 "@lerna-lite/version@1.12.0":
@@ -2095,6 +2143,16 @@ cosmiconfig@^7.0.1, cosmiconfig@^7.1.0:
     parse-json "^5.0.0"
     path-type "^4.0.0"
     yaml "^1.10.0"
+
+cosmiconfig@^8.0.0:
+  version "8.0.0"
+  resolved "https://registry.npmjs.org/cosmiconfig/-/cosmiconfig-8.0.0.tgz#e9feae014eab580f858f8a0288f38997a7bebe97"
+  integrity sha512-da1EafcpH6b/TD8vDRaWV7xFINlHlF6zKsGwS1TsuVJTZRkquaS5HTMq7uq6h31619QjbsYl21gVDOm32KM1vQ==
+  dependencies:
+    import-fresh "^3.2.1"
+    js-yaml "^4.1.0"
+    parse-json "^5.0.0"
+    path-type "^4.0.0"
 
 cp-file@^9.1.0:
   version "9.1.0"
@@ -5159,7 +5217,7 @@ npmlog@^6.0.0, npmlog@^6.0.2:
     gauge "^4.0.3"
     set-blocking "^2.0.0"
 
-npmlog@^7.0.0:
+npmlog@^7.0.0, npmlog@^7.0.1:
   version "7.0.1"
   resolved "https://registry.npmjs.org/npmlog/-/npmlog-7.0.1.tgz#7372151a01ccb095c47d8bf1d0771a4ff1f53ac8"
   integrity sha512-uJ0YFk/mCQpLBt+bxN88AKd+gyqZvZDbtiNxk6Waqcj2aPRyfVx8ITawkyQynxUagInjdYT1+qj4NfA5KJJUxg==
