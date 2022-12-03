@@ -3,6 +3,17 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+## [5.0.0](https://github.com/streetsidesoftware/cspell-dicts/compare/@cspell/dict-npm@4.0.1...@cspell/dict-npm@5.0.0) (2022-12-02)
+
+
+### ⚠ BREAKING CHANGES
+
+* Reformat npm layout ([#1678](https://github.com/streetsidesoftware/cspell-dicts/issues/1678))
+
+### Updates and Bug Fixes
+
+* Reformat npm layout ([#1678](https://github.com/streetsidesoftware/cspell-dicts/issues/1678)) ([010622f](https://github.com/streetsidesoftware/cspell-dicts/commit/010622f5b7f774196f69e8219bd0ebac4233f73e))
+
 ## [4.0.1](https://github.com/streetsidesoftware/cspell-dicts/compare/@cspell/dict-npm@4.0.0...@cspell/dict-npm@4.0.1) (2022-10-17)
 
 

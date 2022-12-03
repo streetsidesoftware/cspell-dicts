@@ -1,5 +1,31 @@
 # Release Notes
 
+## [7.0.0](https://github.com/streetsidesoftware/cspell-dicts/compare/cspell-dicts@6.2.0...cspell-dicts@7.0.0) (2022-12-02)
+
+
+### ⚠ BREAKING CHANGES
+
+* Reformat npm layout ([#1678](https://github.com/streetsidesoftware/cspell-dicts/issues/1678))
+
+### Build System
+
+* **deps-dev:** bump @cspell/cspell-tools from 6.15.0 to 6.15.1 ([#1670](https://github.com/streetsidesoftware/cspell-dicts/issues/1670)) ([6b24411](https://github.com/streetsidesoftware/cspell-dicts/commit/6b24411f1355ca46bd09e998790ee54f7d7d5e78))
+* **deps-dev:** bump @cspell/cspell-tools from 6.15.1 to 6.16.0 ([#1676](https://github.com/streetsidesoftware/cspell-dicts/issues/1676)) ([a35137e](https://github.com/streetsidesoftware/cspell-dicts/commit/a35137ea789693d6e6bdb1f110e6d978d3ae0609))
+
+
+### Continuous Integration
+
+* Workflow Bot -- Build Dictionaries ([#1673](https://github.com/streetsidesoftware/cspell-dicts/issues/1673)) ([8a3c1dd](https://github.com/streetsidesoftware/cspell-dicts/commit/8a3c1ddfd3d726dd7d980261f42223c4f2b137bc))
+* Workflow Bot -- Update ALL Dependencies ([097debe](https://github.com/streetsidesoftware/cspell-dicts/commit/097debeb1c8ae04bcbf0f4c0693efa68f81cb0c1))
+* Workflow Bot -- Update ALL Dependencies ([cb5a1e7](https://github.com/streetsidesoftware/cspell-dicts/commit/cb5a1e7e7937c2f4f40147917491dfea9fcb3795))
+* Workflow Bot -- Update ALL Dependencies (main) ([#1672](https://github.com/streetsidesoftware/cspell-dicts/issues/1672)) ([cb5a1e7](https://github.com/streetsidesoftware/cspell-dicts/commit/cb5a1e7e7937c2f4f40147917491dfea9fcb3795))
+* Workflow Bot -- Update ALL Dependencies (main) ([#1677](https://github.com/streetsidesoftware/cspell-dicts/issues/1677)) ([097debe](https://github.com/streetsidesoftware/cspell-dicts/commit/097debeb1c8ae04bcbf0f4c0693efa68f81cb0c1))
+
+
+### Updates and Bug Fixes
+
+* Reformat npm layout ([#1678](https://github.com/streetsidesoftware/cspell-dicts/issues/1678)) ([010622f](https://github.com/streetsidesoftware/cspell-dicts/commit/010622f5b7f774196f69e8219bd0ebac4233f73e))
+
 ## [6.2.0](https://github.com/streetsidesoftware/cspell-dicts/compare/cspell-dicts@6.1.1...cspell-dicts@6.2.0) (2022-11-29)
 
 
