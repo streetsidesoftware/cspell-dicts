@@ -239,6 +239,18 @@
     write-json-file "^4.3.0"
     write-pkg "^4.0.0"
 
+"@lerna-lite/exec@^1.13.0":
+  version "1.13.0"
+  resolved "https://registry.npmjs.org/@lerna-lite/exec/-/exec-1.13.0.tgz#898ded67932520de3291a02687dee7749507ce34"
+  integrity sha512-vLeToiu/kf8p4bGiAajI/2rIqRMTBviSQlNQig0/YtPJJSHcwOSI1OB9ZVJTUdnivpRKSh2fa8JMIFih1uBozQ==
+  dependencies:
+    "@lerna-lite/core" "1.13.0"
+    "@lerna-lite/optional-cmd-common" "1.13.0"
+    chalk "^4.1.2"
+    dotenv "^16.0.3"
+    npmlog "^7.0.1"
+    p-map "^4.0.0"
+
 "@lerna-lite/info@1.13.0":
   version "1.13.0"
   resolved "https://registry.npmjs.org/@lerna-lite/info/-/info-1.13.0.tgz#4f3d428a66819efae6fd8365186befc5dbf99511"

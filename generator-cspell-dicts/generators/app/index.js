@@ -136,6 +136,8 @@ module.exports = class extends Generator {
             'cspell.json',
             'LICENSE',
             'cspell-tools.config.yaml',
+            'dict/README.md',
+            'src/README.md',
         ];
         files.forEach((fromTo) => {
             fromTo = typeof fromTo === 'string' ? [fromTo, fromTo] : fromTo;
