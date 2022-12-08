@@ -18,7 +18,11 @@
             "languageId": "svelte",
             "locale": "*",
             "dictionaries": ["svelte", "typescript", "npm", "html", "html-symbol-entities", "css", "fonts"]
+        },
+        {
+            "languageId": ["typescript", "javascript"],
+            "dictionaries": ["svelte"]
         }
     ],
-    "overrides": [{ "filename": "**/*.svelte", "languageId": ["svelte", "html"] }]
+    "overrides": [{ "filename": "**/*.svelte", "languageId": ["svelte", "css", "html", "typescript"] }]
 }
