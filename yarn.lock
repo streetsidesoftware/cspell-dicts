@@ -399,9 +399,9 @@
     walk-up-path "^1.0.0"
 
 "@npmcli/arborist@^6.1.3":
-  version "6.1.4"
-  resolved "https://registry.npmjs.org/@npmcli/arborist/-/arborist-6.1.4.tgz#22babc5199793aae33508deecd9a816edde4aa63"
-  integrity sha512-lEYtEydnF+N5kkGa6wdjH80js//DcCT4lovuaXMRSPthhXv8sqYAzRGljboF3p+MlcoTOQVS7wzfhUbbUf57nA==
+  version "6.1.5"
+  resolved "https://registry.npmjs.org/@npmcli/arborist/-/arborist-6.1.5.tgz#ff816f94574c69115f1ae708af4b101c7518296f"
+  integrity sha512-bdnvRL1Js6uz+CDf0NdG5dIbuwYzHwzTV4/WS16JCDdfstjsYSa8J69bYHf9osUwza9zzg2HI/C5SSmeMN+yFg==
   dependencies:
     "@isaacs/string-locale-compare" "^1.1.0"
     "@npmcli/fs" "^3.1.0"
@@ -414,26 +414,26 @@
     "@npmcli/query" "^3.0.0"
     "@npmcli/run-script" "^6.0.0"
     bin-links "^4.0.1"
-    cacache "^17.0.2"
+    cacache "^17.0.3"
     common-ancestor-path "^1.0.1"
     hosted-git-info "^6.1.1"
     json-parse-even-better-errors "^3.0.0"
     json-stringify-nice "^1.1.4"
-    minimatch "^5.1.0"
+    minimatch "^5.1.1"
     nopt "^7.0.0"
     npm-install-checks "^6.0.0"
-    npm-package-arg "^10.0.0"
+    npm-package-arg "^10.1.0"
     npm-pick-manifest "^8.0.1"
-    npm-registry-fetch "^14.0.2"
+    npm-registry-fetch "^14.0.3"
     npmlog "^7.0.1"
-    pacote "^15.0.2"
+    pacote "^15.0.7"
     parse-conflict-json "^3.0.0"
     proc-log "^3.0.0"
     promise-all-reject-late "^1.0.0"
     promise-call-limit "^1.0.1"
     read-package-json-fast "^3.0.1"
     semver "^7.3.7"
-    ssri "^10.0.0"
+    ssri "^10.0.1"
     treeverse "^3.0.0"
     walk-up-path "^1.0.0"
 
@@ -1445,16 +1445,16 @@ cacache@^16.1.0:
     tar "^6.1.11"
     unique-filename "^2.0.0"
 
-cacache@^17.0.0, cacache@^17.0.2:
-  version "17.0.2"
-  resolved "https://registry.npmjs.org/cacache/-/cacache-17.0.2.tgz#ff2bd029bf45099b3fe711f56fbf138b846c8d6d"
-  integrity sha512-rYUs2x4OjSgCQND7nTrh21AHIBFgd7s/ctAYvU3a8u+nK+R5YaX/SFPDYz4Azz7SGL6+6L9ZZWI4Kawpb7grzQ==
+cacache@^17.0.0, cacache@^17.0.3:
+  version "17.0.3"
+  resolved "https://registry.npmjs.org/cacache/-/cacache-17.0.3.tgz#9ba14e0e50eca763ae7e2ee89036a948a13035ed"
+  integrity sha512-pwsIK/grdM0cHpfVaNFxMdzElBtLJGsVPE+JnxqXP1l40O01Z1mfDE8MbRTuwomGq/UwEtGisOylutOEVJxEqg==
   dependencies:
     "@npmcli/fs" "^3.1.0"
     fs-minipass "^2.1.0"
     glob "^8.0.1"
     lru-cache "^7.7.1"
-    minipass "^3.1.6"
+    minipass "^4.0.0"
     minipass-collect "^1.0.2"
     minipass-flush "^1.0.5"
     minipass-pipeline "^1.2.4"
@@ -4140,23 +4140,23 @@ levn@^0.4.1:
     type-check "~0.4.0"
 
 libnpmaccess@^7.0.0:
-  version "7.0.0"
-  resolved "https://registry.npmjs.org/libnpmaccess/-/libnpmaccess-7.0.0.tgz#45705530a6a146a872a68fe13edb61153641fcee"
-  integrity sha512-WwDa6CExp74s0FKI1eP2pbJ4hMiq5x6kl9XqE0F7RDpmk8sgqvNcCAr/JmMdfpUTqUq6KNddT3bnYBCT/pxniQ==
+  version "7.0.1"
+  resolved "https://registry.npmjs.org/libnpmaccess/-/libnpmaccess-7.0.1.tgz#142b7381f863788a182955660ee17984576617bc"
+  integrity sha512-fvKKAXW1v3YfekgYEJi0eCur9ZD9gJ7akWxfwzad/zxzmD2ylk0K9BRhhcTRIWdFgdCr0oQe3ea0R0gUMeaPhQ==
   dependencies:
-    npm-package-arg "^10.0.0"
-    npm-registry-fetch "^14.0.2"
+    npm-package-arg "^10.1.0"
+    npm-registry-fetch "^14.0.3"
 
 libnpmpublish@^7.0.4:
-  version "7.0.5"
-  resolved "https://registry.npmjs.org/libnpmpublish/-/libnpmpublish-7.0.5.tgz#0e35eeff0e1e9af5a2b19b954c9f71df62659108"
-  integrity sha512-5dv99rsaUx0/kWqCG6Dm3IORDCJE9+mloNfdPgZ37L5g3SJK63WaTXSuAJoAdC6sVRxO2b8hnd+p0nMzJ5vpBA==
+  version "7.0.6"
+  resolved "https://registry.npmjs.org/libnpmpublish/-/libnpmpublish-7.0.6.tgz#edd1c715e0b678fdbacea8b61cc85be581f46e21"
+  integrity sha512-3KbZaY6z+no5InP7d5GDyHPSSBBfew/ofwwD/rkX78zGNXz+S6VcLLLueX1XLdTY7r8TiAJy3cRQ0U9DxfK/YQ==
   dependencies:
     normalize-package-data "^5.0.0"
-    npm-package-arg "^10.0.0"
-    npm-registry-fetch "^14.0.2"
+    npm-package-arg "^10.1.0"
+    npm-registry-fetch "^14.0.3"
     semver "^7.3.7"
-    ssri "^10.0.0"
+    ssri "^10.0.1"
 
 lines-and-columns@^1.1.6:
   version "1.2.4"
@@ -4332,9 +4332,9 @@ make-fetch-happen@^10.0.1, make-fetch-happen@^10.0.3:
     ssri "^9.0.0"
 
 make-fetch-happen@^11.0.0:
-  version "11.0.1"
-  resolved "https://registry.npmjs.org/make-fetch-happen/-/make-fetch-happen-11.0.1.tgz#b3c51663d018d9e11d57fdd4393a4c5a1a7d56eb"
-  integrity sha512-clv3IblugXn2CDUmqFhNzii3rjKa46u5wNeivc+QlLXkGI5FjLX3rGboo+y2kwf1pd8W0iDiC384cemeDtw9kw==
+  version "11.0.2"
+  resolved "https://registry.npmjs.org/make-fetch-happen/-/make-fetch-happen-11.0.2.tgz#a880370fb2452d528a5ca40b2d6308999773ab17"
+  integrity sha512-5n/Pq41w/uZghpdlXAY5kIM85RgJThtTH/NYBRAZ9VUOBWV90USaQjwGrw76fZP3Lj5hl/VZjpVvOaRBMoL/2w==
   dependencies:
     agentkeepalive "^4.2.1"
     cacache "^17.0.0"
@@ -4343,7 +4343,7 @@ make-fetch-happen@^11.0.0:
     https-proxy-agent "^5.0.0"
     is-lambda "^1.0.1"
     lru-cache "^7.7.1"
-    minipass "^3.1.6"
+    minipass "^4.0.0"
     minipass-collect "^1.0.2"
     minipass-fetch "^3.0.0"
     minipass-flush "^1.0.5"
@@ -4566,7 +4566,7 @@ minimatch@^3.0.4, minimatch@^3.0.5, minimatch@^3.1.1, minimatch@^3.1.2:
   dependencies:
     brace-expansion "^1.1.7"
 
-minimatch@^5.0.1, minimatch@^5.1.0:
+minimatch@^5.0.1, minimatch@^5.1.0, minimatch@^5.1.1:
   version "5.1.1"
   resolved "https://registry.npmjs.org/minimatch/-/minimatch-5.1.1.tgz#6c9dffcf9927ff2a31e74b5af11adf8b9604b022"
   integrity sha512-362NP+zlprccbEt/SkxKfRMHnNY85V74mVnpUpNyr3F35covl09Kec7/sEFLt3RA4oXmewtoaanoIf67SE5Y5g==
@@ -4617,11 +4617,11 @@ minipass-fetch@^2.0.3:
     encoding "^0.1.13"
 
 minipass-fetch@^3.0.0:
-  version "3.0.0"
-  resolved "https://registry.npmjs.org/minipass-fetch/-/minipass-fetch-3.0.0.tgz#02481219ddbd3d30eb0e354016f680b10c6f2bcb"
-  integrity sha512-NSx3k5gR4Q5Ts2poCM/19d45VwhVLBtJZ6ypYcthj2BwmDx/e7lW8Aadnyt3edd2W0ecb+b0o7FYLRYE2AGcQg==
+  version "3.0.1"
+  resolved "https://registry.npmjs.org/minipass-fetch/-/minipass-fetch-3.0.1.tgz#bae3789f668d82ffae3ea47edc6b78b8283b3656"
+  integrity sha512-t9/wowtf7DYkwz8cfMSt0rMwiyNIBXf5CKZ3S5ZMqRqMYT0oLTp0x1WorMI9WTwvaPg21r1JbFxJMum8JrLGfw==
   dependencies:
-    minipass "^3.1.6"
+    minipass "^4.0.0"
     minipass-sized "^1.0.3"
     minizlib "^2.1.2"
   optionalDependencies:
@@ -4660,6 +4660,13 @@ minipass@^3.0.0, minipass@^3.1.0, minipass@^3.1.1, minipass@^3.1.3, minipass@^3.
   version "3.3.6"
   resolved "https://registry.npmjs.org/minipass/-/minipass-3.3.6.tgz#7bba384db3a1520d18c9c0e5251c3444e95dd94a"
   integrity sha512-DxiNidxSEK+tHG6zOIklvNOwm3hvCrbUrdtzY74U6HKTJxvIDfOUL5W5P2Ghd3DTkhhKPYGqeNUIh5qcM4YBfw==
+  dependencies:
+    yallist "^4.0.0"
+
+minipass@^4.0.0:
+  version "4.0.0"
+  resolved "https://registry.npmjs.org/minipass/-/minipass-4.0.0.tgz#7cebb0f9fa7d56f0c5b17853cbe28838a8dbbd3b"
+  integrity sha512-g2Uuh2jEKoht+zvO6vJqXmYpflPqzRBT+Th2h01DKh5z7wbY/AZ2gCQ78cP70YoHPyFdY30YBV5WxgLOEwOykw==
   dependencies:
     yallist "^4.0.0"
 
@@ -4929,7 +4936,7 @@ npm-normalize-package-bin@^3.0.0:
   resolved "https://registry.npmjs.org/npm-normalize-package-bin/-/npm-normalize-package-bin-3.0.0.tgz#6097436adb4ef09e2628b59a7882576fe53ce485"
   integrity sha512-g+DPQSkusnk7HYXr75NtzkIP4+N81i3RPsGFidF3DzHd9MT9wWngmqoeg/fnHFz5MNdtG4w03s+QnhewSLTT2Q==
 
-npm-package-arg@^10.0.0:
+npm-package-arg@^10.0.0, npm-package-arg@^10.1.0:
   version "10.1.0"
   resolved "https://registry.npmjs.org/npm-package-arg/-/npm-package-arg-10.1.0.tgz#827d1260a683806685d17193073cc152d3c7e9b1"
   integrity sha512-uFyyCEmgBfZTtrKk/5xDfHp6+MdrqGotX/VoOyEEl3mBwiEE5FlBaePanazJSVMPT7vKepcjYBY2ztg9A3yPIA==
@@ -4959,9 +4966,9 @@ npm-packlist@^3.0.0:
     npm-normalize-package-bin "^1.0.1"
 
 npm-packlist@^7.0.0, npm-packlist@^7.0.2:
-  version "7.0.2"
-  resolved "https://registry.npmjs.org/npm-packlist/-/npm-packlist-7.0.2.tgz#f24177ce5b3593223348157bcc3eff1db8fae7d6"
-  integrity sha512-d2+7RMySjVXssww23rV5NuIq1NzGvM04OlI5kwnvtYKfFTAPVs6Zxmxns2HRtJEA1oNj7D/BbFXeVAOLmW3N3Q==
+  version "7.0.4"
+  resolved "https://registry.npmjs.org/npm-packlist/-/npm-packlist-7.0.4.tgz#033bf74110eb74daf2910dc75144411999c5ff32"
+  integrity sha512-d6RGEuRrNS5/N84iglPivjaJPxhDbZmlbTwTDX2IbcRHG5bZCdtysYMhwiPvcF4GisXHGn7xsxv+GQ7T/02M5Q==
   dependencies:
     ignore-walk "^6.0.0"
 
@@ -4997,13 +5004,13 @@ npm-registry-fetch@^12.0.0, npm-registry-fetch@^12.0.1:
     minizlib "^2.1.2"
     npm-package-arg "^8.1.5"
 
-npm-registry-fetch@^14.0.0, npm-registry-fetch@^14.0.2:
-  version "14.0.2"
-  resolved "https://registry.npmjs.org/npm-registry-fetch/-/npm-registry-fetch-14.0.2.tgz#f637630d9005aeebe4d7411226fb11fa1628c5e8"
-  integrity sha512-TMenrMagFA9KF81E2bkS5XRyzERK4KXu70vgXt5+i8FcrFeLNgNsc6e5hekTqjDwPDkL3HGn/holWcXDMfnFgw==
+npm-registry-fetch@^14.0.0, npm-registry-fetch@^14.0.2, npm-registry-fetch@^14.0.3:
+  version "14.0.3"
+  resolved "https://registry.npmjs.org/npm-registry-fetch/-/npm-registry-fetch-14.0.3.tgz#8545e321c2b36d2c6fe6e009e77e9f0e527f547b"
+  integrity sha512-YaeRbVNpnWvsGOjX2wk5s85XJ7l1qQBGAp724h8e2CZFFhMSuw9enom7K1mWVUtvXO1uUSFIAPofQK0pPN0ZcA==
   dependencies:
     make-fetch-happen "^11.0.0"
-    minipass "^3.1.6"
+    minipass "^4.0.0"
     minipass-fetch "^3.0.0"
     minipass-json-stream "^1.0.1"
     minizlib "^2.1.2"
@@ -5379,10 +5386,10 @@ pacote@^12.0.0, pacote@^12.0.2:
     ssri "^8.0.1"
     tar "^6.1.0"
 
-pacote@^15.0.0, pacote@^15.0.2, pacote@^15.0.6:
-  version "15.0.6"
-  resolved "https://registry.npmjs.org/pacote/-/pacote-15.0.6.tgz#8c498b5c23270da4f4c87f7eeba0248a3ae61342"
-  integrity sha512-dQwcz/sME7QIL+cdrw/jftQfMMXxSo17i2kJ/gnhBhUvvBAsxoBu1lw9B5IzCH/Ce8CvEkG/QYZ6txzKfn0bTw==
+pacote@^15.0.0, pacote@^15.0.6, pacote@^15.0.7:
+  version "15.0.7"
+  resolved "https://registry.npmjs.org/pacote/-/pacote-15.0.7.tgz#8f68210e4c973d01d8f4b524926e47189cebd756"
+  integrity sha512-OFf4dl3SM1PpsZvi1zk4vvMA0EplnyO0Ajbrtoyx6E3dXOWBoPnMapnLgQdInEfqPkNT8mrd2bY6c5t8JZ69sQ==
   dependencies:
     "@npmcli/git" "^4.0.0"
     "@npmcli/installed-package-contents" "^2.0.1"
@@ -5390,7 +5397,7 @@ pacote@^15.0.0, pacote@^15.0.2, pacote@^15.0.6:
     "@npmcli/run-script" "^6.0.0"
     cacache "^17.0.0"
     fs-minipass "^2.1.0"
-    minipass "^3.1.6"
+    minipass "^4.0.0"
     npm-package-arg "^10.0.0"
     npm-packlist "^7.0.0"
     npm-pick-manifest "^8.0.0"
@@ -5634,10 +5641,10 @@ prettier-linter-helpers@^1.0.0:
   dependencies:
     fast-diff "^1.1.2"
 
-prettier@^2.8.0:
-  version "2.8.0"
-  resolved "https://registry.npmjs.org/prettier/-/prettier-2.8.0.tgz#c7df58393c9ba77d6fba3921ae01faf994fb9dc9"
-  integrity sha512-9Lmg8hTFZKG0Asr/kW9Bp8tJjRVluO8EJQVfY2T7FMw9T5jy4I/Uvx0Rca/XWf50QQ1/SS48+6IJWnrb+2yemA==
+prettier@^2.8.1:
+  version "2.8.1"
+  resolved "https://registry.npmjs.org/prettier/-/prettier-2.8.1.tgz#4e1fd11c34e2421bc1da9aea9bd8127cd0a35efc"
+  integrity sha512-lqGoSJBQNJidqCHE80vqZJHWHRFoNYsSpP9AjFhlhi9ODCJA541svILes/+/1GM3VaL/abZi7cpFzOpdR9UPKg==
 
 pretty-bytes@^5.3.0:
   version "5.6.0"
@@ -6350,12 +6357,12 @@ sprintf-js@~1.0.2:
   resolved "https://registry.npmjs.org/sprintf-js/-/sprintf-js-1.0.3.tgz#04e6926f662895354f3dd015203633b857297e2c"
   integrity sha512-D9cPgkvLlV3t3IzL0D0YLvGA9Ahk4PcvVwUbN0dSGr1aP0Nrt4AEnTUbuGvquEC0mA64Gqt1fzirlRs5ibXx8g==
 
-ssri@^10.0.0:
-  version "10.0.0"
-  resolved "https://registry.npmjs.org/ssri/-/ssri-10.0.0.tgz#1e34554cbbc4728f5290674264e21b64aaf27ca7"
-  integrity sha512-64ghGOpqW0k+jh7m5jndBGdVEoPikWwGQmBNN5ks6jyUSMymzHDTlnNHOvzp+6MmHOljr2MokUzvRksnTwG0Iw==
+ssri@^10.0.0, ssri@^10.0.1:
+  version "10.0.1"
+  resolved "https://registry.npmjs.org/ssri/-/ssri-10.0.1.tgz#c61f85894bbc6929fc3746f05e31cf5b44c030d5"
+  integrity sha512-WVy6di9DlPOeBWEjMScpNipeSX2jIZBGEn5Uuo8Q7aIuFEuDX0pw8RxcOjlD1TWP4obi24ki7m/13+nFpcbXrw==
   dependencies:
-    minipass "^3.1.1"
+    minipass "^4.0.0"
 
 ssri@^8.0.0, ssri@^8.0.1:
   version "8.0.1"
@@ -6609,13 +6616,13 @@ taketalk@^1.0.0:
     minimist "^1.1.0"
 
 tar@^6.0.2, tar@^6.1.0, tar@^6.1.11, tar@^6.1.12, tar@^6.1.2:
-  version "6.1.12"
-  resolved "https://registry.npmjs.org/tar/-/tar-6.1.12.tgz#3b742fb05669b55671fb769ab67a7791ea1a62e6"
-  integrity sha512-jU4TdemS31uABHd+Lt5WEYJuzn+TJTCBLljvIAHZOz6M9Os5pJ4dD+vRFLxPa/n3T0iEFzpi+0x1UfuDZYbRMw==
+  version "6.1.13"
+  resolved "https://registry.npmjs.org/tar/-/tar-6.1.13.tgz#46e22529000f612180601a6fe0680e7da508847b"
+  integrity sha512-jdIBIN6LTIe2jqzay/2vtYLlBHa3JF42ot3h1dW8Q0PaAG4v8rm0cvpVePtau5C6OKXGGcgO9q2AMNSWxiLqKw==
   dependencies:
     chownr "^2.0.0"
     fs-minipass "^2.0.0"
-    minipass "^3.0.0"
+    minipass "^4.0.0"
     minizlib "^2.1.1"
     mkdirp "^1.0.3"
     yallist "^4.0.0"
