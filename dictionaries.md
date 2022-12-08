@@ -5,6 +5,7 @@
 | package                                                                         | dictionary ID                   | name                               | description                                           |
 | ------------------------------------------------------------------------------- | ------------------------------- | ---------------------------------- | ----------------------------------------------------- |
 | [@cspell/dict-ada](./dictionaries/ada#readme)                                   | ada                             | Ada Language                       | Ada Language Dictionary                               |
+| [@cspell/dict-ar](./dictionaries/ar#readme)                                     | ar                              | Arabic                             | Arabic dictionary for CSpell.                         |
 | [@cspell/dict-aws](./dictionaries/aws#readme)                                   | aws                             | AWS                                | AWS dictionary for cspell.                            |
 | [@cspell/dict-bash](./dictionaries/bash#readme)                                 | bash                            | bash                               | Bash dictionary for cspell.                           |
 | [@cspell/dict-bg-bg](./dictionaries/bg_BG#readme)                               | bg-bg                           | Bulgarian                          | Bulgarian dictionary for cspell.                      |
@@ -12,13 +13,14 @@
 | [@cspell/dict-city-names-finland](./dictionaries/city-names-finland#readme)     | city-names-finland              | Cities of Finland                  | List of cities in Finland.                            |
 | [@cspell/dict-clojure](./dictionaries/clojure#readme)                           | clojure                         | clojure                            | Clojure dictionary for cspell.                        |
 | [@cspell/dict-companies](./dictionaries/companies#readme)                       | companies                       | Company names                      | Company names dictionary for cspell.                  |
-| [@cspell/dict-cpp](./dictionaries/cpp#readme)                                   | cpp                             | C/C++ Dictionary                   | C/C++ Keywords and common library functions.          |
+| [@cspell/dict-cpp](./dictionaries/cpp#readme)                                   | cpp; cpp-refined                | C/C++ Dictionary                   | C/C++ Keywords and common library functions.          |
 | [@cspell/dict-cryptocurrencies](./dictionaries/cryptocurrencies#readme)         | cryptocurrencies                | Cryptocurrencies                   | Cryptocurrencies dictionary for cspell.               |
 | [@cspell/dict-cs-cz](./dictionaries/cs_CZ#readme)                               | cs-cz                           | Czech                              | Czech dictionary for cspell.                          |
 | [@cspell/dict-csharp](./dictionaries/csharp#readme)                             | csharp                          | csharp                             | C# dictionary for cspell.                             |
 | [@cspell/dict-css](./dictionaries/css#readme)                                   | css                             | css                                | Css dictionary for cspell.                            |
 | [@cspell/dict-da-dk](./dictionaries/da_DK#readme)                               | da-dk                           | Danish                             | Danish dictionary for cspell.                         |
 | [@cspell/dict-dart](./dictionaries/dart#readme)                                 | dart                            | dart                               | Dart dictionary for cspell.                           |
+| [@cspell/dict-de-ch](./dictionaries/de_CH#readme)                               | de-ch                           | Swiss German Dictionary            | Swiss German (de-CH) Dictionary.                      |
 | [@cspell/dict-de-de](./dictionaries/de_DE#readme)                               | de-de                           | German Dictionary                  | German (de-DE) Dictionary.                            |
 | [@cspell/dict-django](./dictionaries/django#readme)                             | django                          | Django Keywords                    | List of Python Django Framework keywords.             |
 | [@cspell/dict-docker](./dictionaries/docker#readme)                             | docker                          | Docker Dictionary                  | Docker dictionary for cspell.                         |
@@ -37,6 +39,8 @@
 | [@cspell/dict-fr-fr](./dictionaries/fr_FR#readme)                               | fr-fr                           | French Dictionary (France)         | French Dictionary (France)                            |
 | [@cspell/dict-fr-reforme](./dictionaries/fr_FR_90#readme)                       | fr-fr-90                        | Français Réforme 1990              | Français Réforme 1990 dictionary for cspell.          |
 | [@cspell/dict-fullstack](./dictionaries/fullstack#readme)                       | fullstack                       | Fullstack                          | Common words encountered during fullstack development |
+| [@cspell/dict-gaming-terms](./dictionaries/gaming-terms#readme)                 | gaming-terms                    | Gaming                             | Gaming dictionary for cspell.                         |
+| [@cspell/dict-git](./dictionaries/git#readme)                                   |                                 | git                                | CSpell configuration for GIT                          |
 | [@cspell/dict-golang](./dictionaries/golang#readme)                             | golang                          | Go Language                        | Go Language Dictionary                                |
 | [@cspell/dict-haskell](./dictionaries/haskell#readme)                           | haskell                         | Haskell                            | Haskell dictionary for cspell.                        |
 | [@cspell/dict-he](./dictionaries/he#readme)                                     | he                              | Hebrew Dictionary                  | Hebrew Dictionary                                     |
@@ -49,6 +53,7 @@
 | [@cspell/dict-lorem-ipsum](./dictionaries/lorem-ipsum#readme)                   | lorem-ipsum                     | lorem-ipsum                        | Lorem-ipsum dictionary for cspell.                    |
 | [@cspell/dict-lt-lt](./dictionaries/lt_LT#readme)                               | lt-lt                           | Lithuanian                         | Lithuanian dictionary for cspell.                     |
 | [@cspell/dict-lua](./dictionaries/lua#readme)                                   | lua                             | lua                                | Lua dictionary for cspell.                            |
+| [@cspell/dict-markdown](./dictionaries/markdown#readme)                         | markdown                        | Markdown                           | Markdown dictionary for cspell.                       |
 | [@cspell/dict-medicalterms](./dictionaries/medicalterms#readme)                 | medical terms                   | Medical terms                      | Medical Terms Dictionary                              |
 | [@cspell/dict-mnemonics](./dictionaries/mnemonics#readme)                       | mnemonics                       | Mnemonics                          | i86 Mnemonics dictionary for cspell                   |
 | [@cspell/dict-monkeyc](./dictionaries/monkeyc#readme)                           | monkeyc                         | Monkey C                           | Monkey C dictionary for cspell.                       |
@@ -62,15 +67,19 @@
 | [@cspell/dict-pt-br](./dictionaries/pt_BR#readme)                               | pt-br                           | Portuguese (Brazilian) Dictionary  | Portuguese (Brazilian) Dictionary                     |
 | [@cspell/dict-pt-pt](./dictionaries/pt_PT#readme)                               | pt-pt                           | Portuguese Dictionary (Portugal)   | Portuguese Dictionary (Portugal)                      |
 | [@cspell/dict-public-licenses](./dictionaries/public-licenses#readme)           | public-licenses                 | Common Public Licenses             | Common Public Licenses dictionary for cspell.         |
-| [@cspell/dict-python](./dictionaries/python#readme)                             | python                          | Python Dictionary                  | Python Keyword Dictionary                             |
+| [@cspell/dict-python](./dictionaries/python#readme)                             | python; python-common           | Python Dictionary                  | Python Keyword Dictionary                             |
 | [@cspell/dict-r](./dictionaries/r#readme)                                       | r                               | R                                  | R dictionary for cspell.                              |
 | [@cspell/dict-ru_ru](./dictionaries/ru_RU#readme)                               | ru-ru                           | Russian Dictionary (Combined)      | Russian Dictionary (Combined)                         |
 | [@cspell/dict-ruby](./dictionaries/ruby#readme)                                 | ruby                            | Ruby                               | For ruby and ruby on rails                            |
 | [@cspell/dict-rust](./dictionaries/rust#readme)                                 | rust                            | Rust Dictionary                    | Rust Keyword Dictionary                               |
 | [@cspell/dict-scala](./dictionaries/scala#readme)                               | scala                           | Scala                              | Scala dictionary for cspell.                          |
 | [@cspell/dict-scientific-terms-us](./dictionaries/scientific_terms_US#readme)   | scientific-terms-us             | Scientific Terms US                | Scientific Terms US dictionary for cspell.            |
+| [@cspell/dict-shell](./dictionaries/shell#readme)                               | bash; shellscript               | ShellScript                        | ShellScript dictionary for cspell.                    |
+| [@cspell/dict-sl-si](./dictionaries/sl_SI#readme)                               | sl-si                           | Slovenian                          | Slovenian dictionary for CSpell.                      |
 | [@cspell/dict-software-terms](./dictionaries/software-terms#readme)             | softwareTerms; networking-terms | Software Terms                     | Software terms dictionary for cspell.                 |
+| [@cspell/dict-sql](./dictionaries/sql#readme)                                   | sql                             | sql                                | SQL dictionary for CSpell.                            |
 | [@cspell/dict-sv](./dictionaries/sv#readme)                                     | sv                              | Swedish Dictionary                 | Swedish Dictionary                                    |
+| [@cspell/dict-svelte](./dictionaries/svelte#readme)                             | svelte                          | Svelte                             | Svelte dictionary for cspell.                         |
 | [@cspell/dict-swift](./dictionaries/swift#readme)                               | swift                           | Swift                              | Swift dictionary for cspell.                          |
 | [@cspell/dict-tr-tr](./dictionaries/tr_TR#readme)                               | tr-tr                           | Turkish                            | Turkish dictionary for cspell.                        |
 | [@cspell/dict-typescript](./dictionaries/typescript#readme)                     | typescript                      | TypeScript                         | TypeScript and JavaScript dictionary for cspell.      |
