@@ -11,9 +11,8 @@
     "./cspell-ext.json": "./cspell-ext.json"
   },
   "scripts": {
-    "prebuild": "./src/build.sh --out-file ./src/k8s.txt",
+    "download": "./src/build.sh --out-file ./src/k8s.txt",
     "build": "cspell-tools-cli compile --keep-raw-case src/k8s.txt --no-compress -o ./dict",
-    "pretest": "./src/build.sh --out-file ./src/k8s.txt",
     "test": "head -n 100 src/k8s.txt | cspell -v -c ./cspell-ext.json \"--local=*\" \"--languageId=yaml\" stdin",
     "prepublishOnly": "echo pre-publish",
     "prepare": "yarn run build"

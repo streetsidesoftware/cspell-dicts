@@ -338,7 +338,7 @@ verify_system() {
 # Setup system
 setup_system() {
   # Temporary directory
-  TMP_DIR=$(mktemp --directory)
+  TMP_DIR=$(mktemp -d)
   DEBUG "Created temporary directory '$TMP_DIR'"
 }
 
