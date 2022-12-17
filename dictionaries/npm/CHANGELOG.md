@@ -3,6 +3,25 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+## [5.0.1](https://github.com/streetsidesoftware/cspell-dicts/compare/@cspell/dict-npm@5.0.0...@cspell/dict-npm@5.0.1) (2022-12-17)
+
+
+### Updates and Bug Fixes
+
+* Add `sveltekit` to npm package list ([#1697](https://github.com/streetsidesoftware/cspell-dicts/issues/1697)) ([b903ba1](https://github.com/streetsidesoftware/cspell-dicts/commit/b903ba1e9dc4990d991e5587acc26da95c98d448))
+
+
+### Miscellaneous
+
+* clarify where files should be stored. ([#1698](https://github.com/streetsidesoftware/cspell-dicts/issues/1698)) ([6567bc6](https://github.com/streetsidesoftware/cspell-dicts/commit/6567bc62130404cb32945bdcc3bf07316c839396))
+
+
+### Continuous Integration
+
+* Workflow Bot -- Build Dictionaries ([#1696](https://github.com/streetsidesoftware/cspell-dicts/issues/1696)) ([e203582](https://github.com/streetsidesoftware/cspell-dicts/commit/e203582b4c54332f0e7f220e4af1a18288fc695f))
+* Workflow Bot -- Update ALL Dependencies ([25a9b5a](https://github.com/streetsidesoftware/cspell-dicts/commit/25a9b5a4bf0337494d3b674acd5afd65930277c0))
+* Workflow Bot -- Update ALL Dependencies (main) ([#1693](https://github.com/streetsidesoftware/cspell-dicts/issues/1693)) ([25a9b5a](https://github.com/streetsidesoftware/cspell-dicts/commit/25a9b5a4bf0337494d3b674acd5afd65930277c0))
+
 ## [5.0.0](https://github.com/streetsidesoftware/cspell-dicts/compare/@cspell/dict-npm@4.0.1...@cspell/dict-npm@5.0.0) (2022-12-02)
 
 
