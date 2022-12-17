@@ -3,6 +3,13 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+## [2.1.4](https://github.com/streetsidesoftware/cspell-dicts/compare/@cspell/dict-pt-br@2.1.3...@cspell/dict-pt-br@2.1.4) (2022-12-17)
+
+
+### Miscellaneous
+
+* clarify where files should be stored. ([#1698](https://github.com/streetsidesoftware/cspell-dicts/issues/1698)) ([6567bc6](https://github.com/streetsidesoftware/cspell-dicts/commit/6567bc62130404cb32945bdcc3bf07316c839396))
+
 ## [2.1.3](https://github.com/streetsidesoftware/cspell-dicts/compare/@cspell/dict-pt-br@2.1.2...@cspell/dict-pt-br@2.1.3) (2022-08-19)
 
 

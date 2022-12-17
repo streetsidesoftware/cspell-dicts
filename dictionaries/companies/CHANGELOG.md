@@ -3,6 +3,23 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+## [3.0.4](https://github.com/streetsidesoftware/cspell-dicts/compare/@cspell/dict-companies@3.0.3...@cspell/dict-companies@3.0.4) (2022-12-17)
+
+
+### Updates and Bug Fixes
+
+* Add Pittsburgh Steelers to Companies ([#1691](https://github.com/streetsidesoftware/cspell-dicts/issues/1691)) ([6ae8d26](https://github.com/streetsidesoftware/cspell-dicts/commit/6ae8d26f74fa67331e5435ccd39f655da3cb0f7c))
+
+
+### Continuous Integration
+
+* Workflow Bot -- Build Dictionaries ([#1692](https://github.com/streetsidesoftware/cspell-dicts/issues/1692)) ([e7210b3](https://github.com/streetsidesoftware/cspell-dicts/commit/e7210b318bfca2a62c143a3da2b6141784771996))
+
+
+### Miscellaneous
+
+* clarify where files should be stored. ([#1698](https://github.com/streetsidesoftware/cspell-dicts/issues/1698)) ([6567bc6](https://github.com/streetsidesoftware/cspell-dicts/commit/6567bc62130404cb32945bdcc3bf07316c839396))
+
 ## [3.0.3](https://github.com/streetsidesoftware/cspell-dicts/compare/@cspell/dict-companies@3.0.2...@cspell/dict-companies@3.0.3) (2022-11-05)
 
 

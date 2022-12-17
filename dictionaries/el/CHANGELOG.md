@@ -22,6 +22,13 @@ See [Conventional Commits](https://conventionalcommits.org) for commit guideline
 
 
 
+## [2.0.1](https://github.com/streetsidesoftware/cspell-dicts/compare/@cspell/dict-el@2.0.0...@cspell/dict-el@2.0.1) (2022-12-17)
+
+
+### Miscellaneous
+
+* clarify where files should be stored. ([#1698](https://github.com/streetsidesoftware/cspell-dicts/issues/1698)) ([6567bc6](https://github.com/streetsidesoftware/cspell-dicts/commit/6567bc62130404cb32945bdcc3bf07316c839396))
+
 ## [1.0.15](https://github.com/streetsidesoftware/cspell-dicts/compare/@cspell/dict-el@1.0.14...@cspell/dict-el@1.0.15) (2021-03-16)
 
 **Note:** Version bump only for package @cspell/dict-el
