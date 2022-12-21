@@ -12,7 +12,7 @@
   },
   "scripts": {
     "build": "cspell-tools-cli compile --keep-raw-case src/typescript.txt --no-compress -o ./dict",
-    "test": "head -n 100 src/typescript.txt | cspell -v -c ./cspell-ext.json \"--local=*\" \" --languageId=typescript\" stdin",
+    "test": "head -n 100 src/typescript.txt | cspell -v -c ./cspell-ext.json \"--local=*\" \"--languageId=typescript\" stdin",
     "prepublishOnly": "echo pre-publish",
     "prepare": "yarn run build"
   },
