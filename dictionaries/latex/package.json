@@ -11,9 +11,9 @@
     "./cspell-ext.json": "./cspell-ext.json"
   },
   "scripts": {
-    "build": "cspell-tools compile \"latex.txt\" -o .",
+    "build": "cspell-tools-cli compile --keep-raw-case src/latex.txt --no-compress -o ./dict",
     "test": "yarn run test-dict && yarn run test-check",
-    "test-dict": "head -n 1000 \"latex.txt\" | cspell -v -c ./cspell-ext.json --local=* --languageId=latex stdin",
+    "test-dict": "head -n 1000 src/latex.txt | cspell -v -c ./cspell-ext.json --local=* --languageId=latex stdin",
     "test-check": "ava",
     "prepublishOnly": "echo pre-publish",
     "prepare": "yarn run build"
@@ -35,7 +35,7 @@
   },
   "homepage": "https://github.com/streetsidesoftware/cspell-dicts/blob/main/dictionaries/latex#readme",
   "files": [
-    "latex.txt.gz",
+    "dict/latex.txt",
     "cspell-ext.json"
   ]
 }
