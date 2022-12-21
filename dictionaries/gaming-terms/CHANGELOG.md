@@ -1,5 +1,12 @@
 # Change Log
 
+## [1.0.2](https://github.com/streetsidesoftware/cspell-dicts/compare/@cspell/dict-gaming-terms@1.0.1...@cspell/dict-gaming-terms@1.0.2) (2022-12-21)
+
+
+### Updates and Bug Fixes
+
+* Publish Gaming Terms ([#1710](https://github.com/streetsidesoftware/cspell-dicts/issues/1710)) ([99b8ab2](https://github.com/streetsidesoftware/cspell-dicts/commit/99b8ab280e665677463acddf4b7033cb05e1a3e6))
+
 ## [1.0.1](https://github.com/streetsidesoftware/cspell-dicts/compare/@cspell/dict-gaming-terms@1.0.0...@cspell/dict-gaming-terms@1.0.1) (2022-12-17)
 
 

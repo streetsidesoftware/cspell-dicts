@@ -1,5 +1,22 @@
 # Release Notes
 
+## [7.1.1](https://github.com/streetsidesoftware/cspell-dicts/compare/cspell-dicts@7.1.0...cspell-dicts@7.1.1) (2022-12-21)
+
+
+### Miscellaneous
+
+* Remove unnecessary dependency ([#1707](https://github.com/streetsidesoftware/cspell-dicts/issues/1707)) ([732da68](https://github.com/streetsidesoftware/cspell-dicts/commit/732da68bd27cf09065f0e7e3839d23c691c8e5e3))
+
+
+### Continuous Integration
+
+* Workflow Bot -- Update ALL Dependencies (main) ([#1708](https://github.com/streetsidesoftware/cspell-dicts/issues/1708)) ([15d241e](https://github.com/streetsidesoftware/cspell-dicts/commit/15d241ec727f3be7eb20225c43a031bf43932592))
+
+
+### Updates and Bug Fixes
+
+* Publish Gaming Terms ([#1710](https://github.com/streetsidesoftware/cspell-dicts/issues/1710)) ([99b8ab2](https://github.com/streetsidesoftware/cspell-dicts/commit/99b8ab280e665677463acddf4b7033cb05e1a3e6))
+
 ## [7.1.0](https://github.com/streetsidesoftware/cspell-dicts/compare/cspell-dicts@7.0.0...cspell-dicts@7.1.0) (2022-12-17)
 
 
