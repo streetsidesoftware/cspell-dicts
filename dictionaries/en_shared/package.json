@@ -1,0 +1,47 @@
+{
+  "name": "@cspell/dict-en-shared",
+  "version": "1.0.0",
+  "description": "English words shared between the various English dictionaries. -- Private until verified",
+  "private": true,
+  "publishConfig": {
+    "access": "public"
+  },
+  "exports": {
+    ".": "./cspell-ext.json",
+    "./cspell": "./cspell-ext.json",
+    "./cspell-ext.json": "./cspell-ext.json"
+  },
+  "scripts": {
+    "build": "cross-env NODE_OPTIONS=--max_old_space_size=8192 cspell-tools-cli build",
+    "test": "head -n 1000 \"src/shared-additional-words.txt\" | cspell -v -c ./cspell-ext.json \"--local=en\" \"--languageId=*\" stdin",
+    "prepublishOnly": "echo OK",
+    "zip": "gzip -k -f dict/en-shared.txt",
+    "prepare": "yarn run build"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/streetsidesoftware/cspell-dicts.git"
+  },
+  "keywords": [
+    "cspell",
+    "cspell-ext",
+    "en_shared",
+    "en_shared",
+    "dictionary",
+    "spelling"
+  ],
+  "author": "Jason Dent",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/streetsidesoftware/cspell-dicts/issues"
+  },
+  "homepage": "https://github.com/streetsidesoftware/cspell-dicts/blob/main/dictionaries/en_shared#readme",
+  "devDependencies": {},
+  "dependencies": {},
+  "files": [
+    "dict/en-shared.txt",
+    "cspell-ext.json",
+    "*.js",
+    "*.d.ts"
+  ]
+}
