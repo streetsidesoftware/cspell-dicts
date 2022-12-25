@@ -1,5 +1,39 @@
 # Release Notes
 
+## [7.2.0](https://github.com/streetsidesoftware/cspell-dicts/compare/cspell-dicts@7.1.1...cspell-dicts@7.2.0) (2022-12-25)
+
+
+### Features
+
+* Upgrade Latex Dictionary ([#1714](https://github.com/streetsidesoftware/cspell-dicts/issues/1714)) ([b31517e](https://github.com/streetsidesoftware/cspell-dicts/commit/b31517ec6e57b0dccaacc368102e639d934fbb23))
+* Upgrade Typescript Dictionary ([#1713](https://github.com/streetsidesoftware/cspell-dicts/issues/1713)) ([bb3bf58](https://github.com/streetsidesoftware/cspell-dicts/commit/bb3bf580ab708880bc8bdc9b2af5d7bdae79768d))
+
+
+### Build System
+
+* **deps-dev:** bump @cspell/cspell-tools from 6.17.0 to 6.18.0 ([#1718](https://github.com/streetsidesoftware/cspell-dicts/issues/1718)) ([44fad43](https://github.com/streetsidesoftware/cspell-dicts/commit/44fad435160e0a525ab337be357fcd02c09cf442))
+* **deps:** bump streetsidesoftware/cspell-action from 2.14.0 to 2.15.0 ([#1722](https://github.com/streetsidesoftware/cspell-dicts/issues/1722)) ([8640456](https://github.com/streetsidesoftware/cspell-dicts/commit/8640456e11f2f281b34abe3df5b9844eee79ab6a))
+
+
+### Updates and Bug Fixes
+
+* Add `prerequire` to `en/shared-additional-words.txt` ([#1727](https://github.com/streetsidesoftware/cspell-dicts/issues/1727)) ([4d3bf49](https://github.com/streetsidesoftware/cspell-dicts/commit/4d3bf49689f7135da5a1bfb7b7f7859fa70fb266))
+* Add words to various dicts ([#1721](https://github.com/streetsidesoftware/cspell-dicts/issues/1721)) ([937b3d2](https://github.com/streetsidesoftware/cspell-dicts/commit/937b3d2895181736a1451bc4e641732e9c224b93))
+* move share English words into their own package. ([5314130](https://github.com/streetsidesoftware/cspell-dicts/commit/5314130b5b8d11942e8923f5462ba8d55b245bed))
+* move shared English words into their own package. ([#1729](https://github.com/streetsidesoftware/cspell-dicts/issues/1729)) ([5314130](https://github.com/streetsidesoftware/cspell-dicts/commit/5314130b5b8d11942e8923f5462ba8d55b245bed))
+* Rebuild TypeScript dictionary ([#1720](https://github.com/streetsidesoftware/cspell-dicts/issues/1720)) ([cd9815d](https://github.com/streetsidesoftware/cspell-dicts/commit/cd9815d4aea2115737a3473e904fb3eedc2ecbdf))
+
+
+### Continuous Integration
+
+* Workflow Bot -- Build Dictionaries ([#1724](https://github.com/streetsidesoftware/cspell-dicts/issues/1724)) ([1746758](https://github.com/streetsidesoftware/cspell-dicts/commit/174675897e18e77a6b2a7cf46983fd12f96ffc8f))
+* Workflow Bot -- Build Dictionaries ([#1726](https://github.com/streetsidesoftware/cspell-dicts/issues/1726)) ([f95dc3a](https://github.com/streetsidesoftware/cspell-dicts/commit/f95dc3a8b7a912305f2aca0d1ae0e78b70239afe))
+* Workflow Bot -- Build Dictionaries ([#1730](https://github.com/streetsidesoftware/cspell-dicts/issues/1730)) ([0418caa](https://github.com/streetsidesoftware/cspell-dicts/commit/0418caa921acb7da39e2671e9edca52445fd4dd7))
+* Workflow Bot -- Update ALL Dependencies ([8bd3151](https://github.com/streetsidesoftware/cspell-dicts/commit/8bd3151e51fd1d9c0e49c04bc2a3ed3588b317ac))
+* Workflow Bot -- Update ALL Dependencies ([0893105](https://github.com/streetsidesoftware/cspell-dicts/commit/089310536b8343dc2ad2b6b4d3914f7b12697255))
+* Workflow Bot -- Update ALL Dependencies (main) ([#1711](https://github.com/streetsidesoftware/cspell-dicts/issues/1711)) ([0893105](https://github.com/streetsidesoftware/cspell-dicts/commit/089310536b8343dc2ad2b6b4d3914f7b12697255))
+* Workflow Bot -- Update ALL Dependencies (main) ([#1731](https://github.com/streetsidesoftware/cspell-dicts/issues/1731)) ([8bd3151](https://github.com/streetsidesoftware/cspell-dicts/commit/8bd3151e51fd1d9c0e49c04bc2a3ed3588b317ac))
+
 ## [7.1.1](https://github.com/streetsidesoftware/cspell-dicts/compare/cspell-dicts@7.1.0...cspell-dicts@7.1.1) (2022-12-21)
 
 
