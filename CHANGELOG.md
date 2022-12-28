@@ -1,5 +1,24 @@
 # Release Notes
 
+## [7.2.1](https://github.com/streetsidesoftware/cspell-dicts/compare/cspell-dicts@7.2.0...cspell-dicts@7.2.1) (2022-12-28)
+
+
+### Updates and Bug Fixes
+
+* add `pregenerate+d` to en-shared.txt ([#1735](https://github.com/streetsidesoftware/cspell-dicts/issues/1735)) ([56b8877](https://github.com/streetsidesoftware/cspell-dicts/commit/56b8877ba0ac387221a40ada09e0b1659f242dbd))
+* Add globby to known `npm` packages ([#1732](https://github.com/streetsidesoftware/cspell-dicts/issues/1732)) ([10783ef](https://github.com/streetsidesoftware/cspell-dicts/commit/10783ef20d6ed8658d39a8d22b06d98a0f355604))
+
+
+### Miscellaneous
+
+* Do not track en_shared generated dictionary. ([#1737](https://github.com/streetsidesoftware/cspell-dicts/issues/1737)) ([66e8368](https://github.com/streetsidesoftware/cspell-dicts/commit/66e8368bccec6d3c50b3d720e8d21591d3b47275))
+
+
+### Continuous Integration
+
+* Workflow Bot -- Build Dictionaries ([#1734](https://github.com/streetsidesoftware/cspell-dicts/issues/1734)) ([f216811](https://github.com/streetsidesoftware/cspell-dicts/commit/f216811e635e048a9d0cf402b837594f4eeac146))
+* Workflow Bot -- Build Dictionaries ([#1736](https://github.com/streetsidesoftware/cspell-dicts/issues/1736)) ([c70b26c](https://github.com/streetsidesoftware/cspell-dicts/commit/c70b26cfa870a2a67868f8e71f936f57bdf871ed))
+
 ## [7.2.0](https://github.com/streetsidesoftware/cspell-dicts/compare/cspell-dicts@7.1.1...cspell-dicts@7.2.0) (2022-12-25)
 
 
