@@ -1,5 +1,17 @@
 # Change Log
 
+## [1.0.1](https://github.com/streetsidesoftware/cspell-dicts/compare/@cspell/dict-en-shared@1.0.0...@cspell/dict-en-shared@1.0.1) (2022-12-28)
+
+
+### Updates and Bug Fixes
+
+* add `pregenerate+d` to en-shared.txt ([#1735](https://github.com/streetsidesoftware/cspell-dicts/issues/1735)) ([56b8877](https://github.com/streetsidesoftware/cspell-dicts/commit/56b8877ba0ac387221a40ada09e0b1659f242dbd))
+
+
+### Miscellaneous
+
+* Do not track en_shared generated dictionary. ([#1737](https://github.com/streetsidesoftware/cspell-dicts/issues/1737)) ([66e8368](https://github.com/streetsidesoftware/cspell-dicts/commit/66e8368bccec6d3c50b3d720e8d21591d3b47275))
+
 ## 1.0.0 (2022-12-25)
 
 
