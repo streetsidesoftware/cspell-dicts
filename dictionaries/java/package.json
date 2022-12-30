@@ -16,8 +16,7 @@
     "test-dict": "head -n 100 \"src/java.txt\" | cspell -v -c ./cspell-ext.json --local=* --languageId=java stdin",
     "test-check": "ava",
     "prepublishOnly": "echo pre-publish",
-    "zip": "gzip -f -k java.trie",
-    "prepare": "yarn run build && yarn run zip"
+    "prepare": "yarn run build"
   },
   "repository": {
     "type": "git",
@@ -37,7 +36,7 @@
   },
   "homepage": "https://github.com/streetsidesoftware/cspell-dicts/blob/main/dictionaries/java#readme",
   "files": [
-    "java.trie.gz",
+    "dict/java.trie",
     "cspell-ext.json"
   ]
 }

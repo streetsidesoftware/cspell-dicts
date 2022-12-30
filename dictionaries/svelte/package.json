@@ -16,7 +16,6 @@
     "test-code": "cspell \"**/*.svelte\"",
     "test-src": "head -n 1000 \"src/svelte.txt\" | cspell -v -c ./cspell-ext.json \"--local=*\" \"--languageId=svelte\" stdin",
     "prepublishOnly": "echo OK",
-    "zip": "gzip -k -f dict/svelte.txt",
     "prepare": "yarn run build"
   },
   "repository": {

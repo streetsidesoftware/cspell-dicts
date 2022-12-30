@@ -15,7 +15,6 @@
     "build": "cross-env NODE_OPTIONS=--max_old_space_size=8192 cspell-tools-cli build",
     "test": "<%= srcFileReader %> \"<%= srcFile %>\" | cspell -v -c ./cspell-ext.json \"--local=<%= local %>\" \"--languageId=<%= languageId %>\" stdin",
     "prepublishOnly": "<%= prepublishOnlyScript %>",
-    "zip": "gzip -k -f <%= dstFileName %>",
     "prepare": "<%= prepareScript %>"
   },
   "repository": {
