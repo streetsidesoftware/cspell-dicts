@@ -3,6 +3,17 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+## [4.0.0](https://github.com/streetsidesoftware/cspell-dicts/compare/@cspell/dict-ruby@3.0.0...@cspell/dict-ruby@4.0.0) (2022-12-30)
+
+
+### ⚠ BREAKING CHANGES
+
+* Upgrade Ruby Dict ([#1748](https://github.com/streetsidesoftware/cspell-dicts/issues/1748))
+
+### Features
+
+* Upgrade Ruby Dict ([#1748](https://github.com/streetsidesoftware/cspell-dicts/issues/1748)) ([371d759](https://github.com/streetsidesoftware/cspell-dicts/commit/371d7594fde1e782a530d9c990166cf71f4fab73))
+
 ## [3.0.0](https://github.com/streetsidesoftware/cspell-dicts/compare/@cspell/dict-ruby@2.0.2...@cspell/dict-ruby@3.0.0) (2022-10-10)
 
 

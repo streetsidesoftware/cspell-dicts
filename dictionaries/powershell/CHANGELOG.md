@@ -27,6 +27,17 @@ See [Conventional Commits](https://conventionalcommits.org) for commit guideline
 
 
 
+## [4.0.0](https://github.com/streetsidesoftware/cspell-dicts/compare/@cspell/dict-powershell@3.0.0...@cspell/dict-powershell@4.0.0) (2022-12-30)
+
+
+### ⚠ BREAKING CHANGES
+
+* Upgrade Powershell Dict ([#1746](https://github.com/streetsidesoftware/cspell-dicts/issues/1746))
+
+### Features
+
+* Upgrade Powershell Dict ([#1746](https://github.com/streetsidesoftware/cspell-dicts/issues/1746)) ([1be6053](https://github.com/streetsidesoftware/cspell-dicts/commit/1be605308a7432c3495ff575477924c2d9293fba))
+
 ## [3.0.0](https://github.com/streetsidesoftware/cspell-dicts/compare/@cspell/dict-powershell@2.0.0...@cspell/dict-powershell@3.0.0) (2022-10-10)
 
 

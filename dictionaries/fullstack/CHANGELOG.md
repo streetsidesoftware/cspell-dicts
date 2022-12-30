@@ -3,6 +3,13 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+## [3.0.1](https://github.com/streetsidesoftware/cspell-dicts/compare/@cspell/dict-fullstack@3.0.0...@cspell/dict-fullstack@3.0.1) (2022-12-30)
+
+
+### Updates and Bug Fixes
+
+* Add facebook and instagram to fullstack.txt ([#1741](https://github.com/streetsidesoftware/cspell-dicts/issues/1741)) ([a145d54](https://github.com/streetsidesoftware/cspell-dicts/commit/a145d5411508071c8053aae414ae96cb0ffc5454))
+
 ## [3.0.0](https://github.com/streetsidesoftware/cspell-dicts/compare/@cspell/dict-fullstack@2.0.6...@cspell/dict-fullstack@3.0.0) (2022-10-10)
 
 

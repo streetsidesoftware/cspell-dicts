@@ -3,6 +3,18 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+## [4.1.4](https://github.com/streetsidesoftware/cspell-dicts/compare/@cspell/dict-en_us@4.1.3...@cspell/dict-en_us@4.1.4) (2022-12-30)
+
+
+### Miscellaneous
+
+* Fix yarn references to private packages. ([6106ad7](https://github.com/streetsidesoftware/cspell-dicts/commit/6106ad762ce2ebce586932ca393da93744f22fe4))
+
+
+### Updates and Bug Fixes
+
+* Create Acronym Dict and Fix Typo ([#1745](https://github.com/streetsidesoftware/cspell-dicts/issues/1745)) ([5680b3a](https://github.com/streetsidesoftware/cspell-dicts/commit/5680b3a64b43fab66e38c11885eb49c3daadaaed))
+
 ## [4.1.3](https://github.com/streetsidesoftware/cspell-dicts/compare/@cspell/dict-en_us@4.1.2...@cspell/dict-en_us@4.1.3) (2022-12-28)
 
 
