@@ -22,6 +22,17 @@ See [Conventional Commits](https://conventionalcommits.org) for commit guideline
 
 
 
+## [4.0.0](https://github.com/streetsidesoftware/cspell-dicts/compare/@cspell/dict-lua@3.0.0...@cspell/dict-lua@4.0.0) (2022-12-30)
+
+
+### ⚠ BREAKING CHANGES
+
+* Upgrade Lua Dict ([#1740](https://github.com/streetsidesoftware/cspell-dicts/issues/1740))
+
+### Features
+
+* Upgrade Lua Dict ([#1740](https://github.com/streetsidesoftware/cspell-dicts/issues/1740)) ([14816d7](https://github.com/streetsidesoftware/cspell-dicts/commit/14816d7e55e495a79661c4fc0dd69ea99bb072c4))
+
 ## [3.0.0](https://github.com/streetsidesoftware/cspell-dicts/compare/@cspell/dict-lua@2.0.0...@cspell/dict-lua@3.0.0) (2022-10-10)
 
 

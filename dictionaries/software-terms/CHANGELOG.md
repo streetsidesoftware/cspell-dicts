@@ -3,6 +3,13 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+## [3.0.8](https://github.com/streetsidesoftware/cspell-dicts/compare/@cspell/dict-software-terms@3.0.7...@cspell/dict-software-terms@3.0.8) (2022-12-30)
+
+
+### Updates and Bug Fixes
+
+* Create Acronym Dict and Fix Typo ([#1745](https://github.com/streetsidesoftware/cspell-dicts/issues/1745)) ([5680b3a](https://github.com/streetsidesoftware/cspell-dicts/commit/5680b3a64b43fab66e38c11885eb49c3daadaaed))
+
 ## [3.0.7](https://github.com/streetsidesoftware/cspell-dicts/compare/@cspell/dict-software-terms@3.0.6...@cspell/dict-software-terms@3.0.7) (2022-12-25)
 
 

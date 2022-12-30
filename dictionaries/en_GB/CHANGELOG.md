@@ -3,6 +3,23 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+## [4.1.5](https://github.com/streetsidesoftware/cspell-dicts/compare/@cspell/dict-en-gb@4.1.4...@cspell/dict-en-gb@4.1.5) (2022-12-30)
+
+
+### Miscellaneous
+
+* Fix yarn references to private packages. ([6106ad7](https://github.com/streetsidesoftware/cspell-dicts/commit/6106ad762ce2ebce586932ca393da93744f22fe4))
+
+
+### Updates and Bug Fixes
+
+* Add British Software Terms ([#1744](https://github.com/streetsidesoftware/cspell-dicts/issues/1744)) ([72c3fcf](https://github.com/streetsidesoftware/cspell-dicts/commit/72c3fcf7a06439d34d5ea176ae3a9b11867be4ec))
+
+
+### Continuous Integration
+
+* Workflow Bot -- Build Dictionaries ([#1747](https://github.com/streetsidesoftware/cspell-dicts/issues/1747)) ([d81a27d](https://github.com/streetsidesoftware/cspell-dicts/commit/d81a27da70bd9f3d3381c9466a4c6c8cc848f0c1))
+
 ## [4.1.4](https://github.com/streetsidesoftware/cspell-dicts/compare/@cspell/dict-en-gb@4.1.3...@cspell/dict-en-gb@4.1.4) (2022-12-28)
 
 

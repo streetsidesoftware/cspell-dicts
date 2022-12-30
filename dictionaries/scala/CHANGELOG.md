@@ -22,6 +22,19 @@ See [Conventional Commits](https://conventionalcommits.org) for commit guideline
 
 
 
+## [4.0.0](https://github.com/streetsidesoftware/cspell-dicts/compare/@cspell/dict-scala@3.0.0...@cspell/dict-scala@4.0.0) (2022-12-30)
+
+
+### ⚠ BREAKING CHANGES
+
+* Upgrade Scala
+* Upgrade Scala Dict ([#1757](https://github.com/streetsidesoftware/cspell-dicts/issues/1757))
+
+### Features
+
+* Upgrade Scala ([b23b96a](https://github.com/streetsidesoftware/cspell-dicts/commit/b23b96a8a3f8b27be26bda203de835269d8e970e))
+* Upgrade Scala Dict ([#1757](https://github.com/streetsidesoftware/cspell-dicts/issues/1757)) ([b23b96a](https://github.com/streetsidesoftware/cspell-dicts/commit/b23b96a8a3f8b27be26bda203de835269d8e970e))
+
 ## [3.0.0](https://github.com/streetsidesoftware/cspell-dicts/compare/@cspell/dict-scala@2.0.0...@cspell/dict-scala@3.0.0) (2022-10-10)
 
 
