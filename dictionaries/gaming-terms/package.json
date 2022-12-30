@@ -14,7 +14,6 @@
     "build": "cross-env NODE_OPTIONS=--max_old_space_size=8192 cspell-tools-cli build",
     "test": "head -n 1000 \"src/gaming-terms.txt\" | cspell -v -c ./cspell.json stdin",
     "prepublishOnly": "echo OK",
-    "zip": "gzip -k -f dict/gaming-terms.txt",
     "prepare": "yarn run build"
   },
   "repository": {

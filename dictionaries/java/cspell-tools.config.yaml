@@ -7,11 +7,13 @@ targets:
       - src/additional-terms.txt
       - src/java-terms.txt
     format: trie3
-    targetDirectory: "."
+    targetDirectory: "./dict"
     generateNonStrict: false
   # - name: java
   #   sources:
   #     - src/java.txt
+  #     - src/additional-terms.txt
+  #     - src/java-terms.txt
   #   format: plaintext
   #   targetDirectory: "."
   #   generateNonStrict: false
