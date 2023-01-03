@@ -15,7 +15,7 @@
     "checksum": "lerna run checksum",
     "create-dictionary": "node ./generator-cspell-dicts/node_modules/yo/lib/cli.js cspell-dicts",
     "clean": "rimraf \"packages/*/*.txt.gz\" \"dictionaries/*/*.txt.gz\"",
-    "generate-doc-dictionaries": "./scripts/dictionaries.sh > dictionaries.md && inject-markdown README.md && yarn prettier -w *.md",
+    "generate-doc-dictionaries": "./scripts/dictionaries.sh > dictionaries.md && inject-markdown README.md && yarn prettier -w \"*.md\"",
     "prepare": "lerna run prepare",
     "pub-lerna": "lerna publish from-package --no-push --no-private --yes",
     "pub-recover": "lerna publish from-package --concurrency 1",
