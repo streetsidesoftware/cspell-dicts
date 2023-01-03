@@ -30,6 +30,9 @@ jobs:
       - name: Build
         run: |
           yarn run conditional-build
+      - name: Build Readme
+        run: |
+          yarn run build:readme
       - name: Has changes
         run: |
           git --no-pager diff --compact-summary  --exit-code && echo "git_status=clean" >> $GITHUB_ENV || echo "git_status=dirty" >> $GITHUB_ENV
