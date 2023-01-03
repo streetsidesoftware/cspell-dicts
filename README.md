@@ -55,6 +55,8 @@ Various [cspell](https://github.com/streetsidesoftware/cspell) dictionaries. Eac
 - [Medical Terms](dictionaries/medicalterms)
 - [Scientific Terms](dictionaries/scientific_terms_US)
 
+<!--- @@inject: dictionaries.md --->
+
 ## All Dictionaries
 
 <!--- Use `yarn run generate-doc-dictionaries` to generate this table --->
@@ -106,7 +108,7 @@ Various [cspell](https://github.com/streetsidesoftware/cspell) dictionaries. Eac
 | [@cspell/dict-html-symbol-entities](./dictionaries/html-symbol-entities#readme) | html-symbol-entities            | HTML Symbol Entities               | HTML Symbol Entities Dictionary                       |
 | [@cspell/dict-it-it](./dictionaries/it_IT#readme)                               | it-it                           | Italian                            | Italian dictionary for cspell.                        |
 | [@cspell/dict-java](./dictionaries/java#readme)                                 | java                            | Java                               | Java dictionary for cspell.                           |
-| [@cspell/dict-k8s](./dictionaries/k8s#readme)                                   | k8s                             | K8s                                | K8s dictionary for cspell.                            |
+| [@cspell/dict-k8s](./dictionaries/k8s#readme)                                   | k8s                             | k8s                                | K8s dictionary for cspell.                            |
 | [@cspell/dict-latex](./dictionaries/latex#readme)                               | latex                           | LaTeX                              | LaTeX cspell dictionary                               |
 | [@cspell/dict-lorem-ipsum](./dictionaries/lorem-ipsum#readme)                   | lorem-ipsum                     | lorem-ipsum                        | Lorem-ipsum dictionary for cspell.                    |
 | [@cspell/dict-lt-lt](./dictionaries/lt_LT#readme)                               | lt-lt                           | Lithuanian                         | Lithuanian dictionary for cspell.                     |
@@ -145,6 +147,8 @@ Various [cspell](https://github.com/streetsidesoftware/cspell) dictionaries. Eac
 | [@cspell/dict-vi-vn](./dictionaries/vi_VN#readme)                               | vi-vn                           | Vietnamese                         | Vietnamese dictionary for cspell.                     |
 | [@cspell/dict-vue](./dictionaries/vue#readme)                                   |                                 | vue                                | CSpell configuration for VUE files                    |
 | [@cspell/dict-win32](./dictionaries/win32#readme)                               | win32                           | Win32                              | Win32 dictionary for cspell.                          |
+
+<!--- @@inject-end: dictionaries.md --->
 
 ## Contributing
 

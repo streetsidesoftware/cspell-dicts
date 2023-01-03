@@ -49,6 +49,7 @@
 | [@cspell/dict-html-symbol-entities](./dictionaries/html-symbol-entities#readme) | html-symbol-entities            | HTML Symbol Entities               | HTML Symbol Entities Dictionary                       |
 | [@cspell/dict-it-it](./dictionaries/it_IT#readme)                               | it-it                           | Italian                            | Italian dictionary for cspell.                        |
 | [@cspell/dict-java](./dictionaries/java#readme)                                 | java                            | Java                               | Java dictionary for cspell.                           |
+| [@cspell/dict-k8s](./dictionaries/k8s#readme)                                   | k8s                             | k8s                                | K8s dictionary for cspell.                            |
 | [@cspell/dict-latex](./dictionaries/latex#readme)                               | latex                           | LaTeX                              | LaTeX cspell dictionary                               |
 | [@cspell/dict-lorem-ipsum](./dictionaries/lorem-ipsum#readme)                   | lorem-ipsum                     | lorem-ipsum                        | Lorem-ipsum dictionary for cspell.                    |
 | [@cspell/dict-lt-lt](./dictionaries/lt_LT#readme)                               | lt-lt                           | Lithuanian                         | Lithuanian dictionary for cspell.                     |
