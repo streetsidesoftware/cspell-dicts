@@ -10,18 +10,30 @@ JQ_FILTER="$SCRIPT_DIR/dictionary.jq"
 
 # cspell:ignore execdir jsmin
 
-echo "## All Dictionaries"
-echo ""
-echo "<!--- Use \`yarn run generate-doc-dictionaries\` to generate this table --->"
-echo ""
-echo "| package | dictionary ID | name | description |"
-echo "| -- | -- | -- | -- | -- |"
-find ./dictionaries -name "package.json" -depth 2 \
-    -execdir echo -n "| [" \; \
-    -execdir jq -j .name package.json \; \
-    -execdir echo -n "](" \; \
-    -exec sh -c "dirname {} | xargs echo -n" \; \
-    -execdir echo -n "#readme) " \; \
-    -execdir sh -c "cat cspell-ext.json | jsmin | jq -j -f $JQ_FILTER" \; \
-    -execdir echo "" \; \
-    | sort
+HEADER="\
+## All Dictionaries
+
+<!--- Use \`yarn build:readme\` to generate this table --->
+
+| package | dictionary ID | name | description |
+| -- | -- | -- | -- | -- | \
+"
+
+NL="
+"
+
+echo "$HEADER"
+
+FILES=$(ls dictionaries/*/package.json)
+DIRS=$(dirname $FILES | sort)
+
+LINES=""
+
+for DIR in $DIRS; do
+    PKG="$DIR/package.json"
+    NAME=$(jq -j .name $PKG)
+    INFO=$(cat $DIR/cspell-ext.json | jsmin | jq -j -f $JQ_FILTER)
+    LINES+="$(printf '| [%s](./%s#readme) %s |' "$NAME" "$DIR" "$INFO")$NL"
+done
+
+echo "$LINES"
