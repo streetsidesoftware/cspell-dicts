@@ -59,7 +59,7 @@ Various [cspell](https://github.com/streetsidesoftware/cspell) dictionaries. Eac
 
 ## All Dictionaries
 
-<!--- Use `yarn run generate-doc-dictionaries` to generate this table --->
+<!--- Use `yarn build:readme` to generate this table --->
 
 | package                                                                         | dictionary ID                   | name                               | description                                                    |
 | ------------------------------------------------------------------------------- | ------------------------------- | ---------------------------------- | -------------------------------------------------------------- |
