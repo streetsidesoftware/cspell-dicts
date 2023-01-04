@@ -16,11 +16,12 @@ echo "<!--- Use \`yarn run generate-doc-dictionaries\` to generate this table --
 echo ""
 echo "| package | dictionary ID | name | description |"
 echo "| -- | -- | -- | -- | -- |"
-find -s ./dictionaries -name "package.json" -depth 2 \
+find ./dictionaries -name "package.json" -depth 2 \
     -execdir echo -n "| [" \; \
     -execdir jq -j .name package.json \; \
     -execdir echo -n "](" \; \
     -exec sh -c "dirname {} | xargs echo -n" \; \
     -execdir echo -n "#readme) " \; \
     -execdir sh -c "cat cspell-ext.json | jsmin | jq -j -f $JQ_FILTER" \; \
-    -execdir echo "" \;
+    -execdir echo "" \; \
+    | sort
