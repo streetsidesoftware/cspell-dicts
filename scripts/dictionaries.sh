@@ -32,7 +32,7 @@ LINES=""
 for DIR in $DIRS; do
     PKG="$DIR/package.json"
     NAME=$(jq -j .name $PKG)
-    INFO=$(cat $DIR/cspell-ext.json | jsmin | jq -j -f $JQ_FILTER)
+    INFO=$(json5 $DIR/cspell-ext.json | jq -j -f $JQ_FILTER)
     LINES+="$(printf '| [%s](./%s#readme) %s |' "$NAME" "$DIR" "$INFO")$NL"
 done
 
