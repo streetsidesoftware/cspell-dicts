@@ -96,7 +96,7 @@ module.exports = class extends Generator {
 
         props.packageName = props.name.toLowerCase().replace(/[^a-z0-9-]/g, '-');
         depProps.dstFileName = 'dict/' + props.packageName + '.' + depProps.fileExt;
-        depProps.compressDest = depProps.useTrie;
+        depProps.compressDest = false; // depProps.useTrie;
         depProps.dstFullFileName = depProps.dstFileName + (depProps.compressDest ? '.gz' : '');
 
         props.filesToCopy = [];
