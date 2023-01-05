@@ -111,7 +111,7 @@ module.exports = class extends Generator {
             this.fs.exists(srcAff) && srcFiles.push(srcAff);
             this.fs.exists(srcDic) && srcFiles.push(srcDic);
             props.srcFileReader = 'hunspell-reader words -n 1000';
-            props.prepareScript = 'yarn run zip';
+            props.prepareScript = 'echo OK';
             props.prepublishOnlyScript = 'echo OK';
         } else {
             this.fs.exists(srcFile) && srcFiles.push(srcFile);
