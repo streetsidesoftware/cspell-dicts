@@ -3,6 +3,13 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+## [5.0.4](https://github.com/streetsidesoftware/cspell-dicts/compare/@cspell/dict-java@5.0.3...@cspell/dict-java@5.0.4) (2023-01-05)
+
+
+### Miscellaneous
+
+* Do not `gz` small dictionaries ([#1760](https://github.com/streetsidesoftware/cspell-dicts/issues/1760)) ([16288ce](https://github.com/streetsidesoftware/cspell-dicts/commit/16288ced75b3cc640558a983875ed2b2de2b5703))
+
 ## [5.0.3](https://github.com/streetsidesoftware/cspell-dicts/compare/@cspell/dict-java@5.0.2...@cspell/dict-java@5.0.3) (2022-12-17)
 
 
