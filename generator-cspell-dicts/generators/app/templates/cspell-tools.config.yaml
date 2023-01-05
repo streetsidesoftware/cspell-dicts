@@ -4,6 +4,7 @@ targets:
   - name: "<%= packageName %>"
     sources:
       - filename: "<%= srcFile %>"
+        maxDepth: 1 # This is set to 1 to prevent initial builds from taking too long.
     format: "<%= format %>"
     targetDirectory: "./dict"
     generateNonStrict: <%= generateNonStrict %>

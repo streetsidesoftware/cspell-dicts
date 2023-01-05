@@ -110,7 +110,7 @@ module.exports = class extends Generator {
             const srcDic = path.join(path.dirname(srcFile), path.basename(srcFile, ext) + '.dic');
             this.fs.exists(srcAff) && srcFiles.push(srcAff);
             this.fs.exists(srcDic) && srcFiles.push(srcDic);
-            props.srcFileReader = 'hunspell-reader words -n 1000';
+            props.srcFileReader = 'hunspell-reader words -n 1000 -m 0';
             props.prepareScript = 'echo OK';
             props.prepublishOnlyScript = 'echo OK';
         } else {
