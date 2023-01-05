@@ -15,7 +15,7 @@
     "checksum": "shasum -c checksum.txt",
     "conditional-build": "yarn run sync && yarn run --silent checksum || yarn run build",
     "sync": "yarn cpy \"../../node_modules/basque_hunspell/eu.*\" \"src/basque_hunspell\" --flat",
-    "test": "hunspell-reader words -n 1000 -m 1\"src/eu.dic\" | cspell -v -c ./cspell-ext.json \"--local=eu\" \"--languageId=*\" stdin",
+    "test": "hunspell-reader words -n 1000 -m 1 \"src/eu.dic\" | cspell -v -c ./cspell-ext.json \"--local=eu\" \"--languageId=*\" stdin",
     "gen-checksum": "cat source-dependencies.txt | sort -u | xargs shasum > checksum.txt",
     "prepublishOnly": "echo OK",
     "prepare": "echo OK"
