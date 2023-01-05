@@ -1,5 +1,52 @@
 # Release Notes
 
+## [8.1.0](https://github.com/streetsidesoftware/cspell-dicts/compare/cspell-dicts@8.0.0...cspell-dicts@8.1.0) (2023-01-05)
+
+
+### Features
+
+* Add Basque ([#1775](https://github.com/streetsidesoftware/cspell-dicts/issues/1775)) ([0a82fb5](https://github.com/streetsidesoftware/cspell-dicts/commit/0a82fb5f4c83fcd9c9e52b1c0fdd71b99a928736))
+* Add Serbian Dictionaries ([#1779](https://github.com/streetsidesoftware/cspell-dicts/issues/1779)) ([7935409](https://github.com/streetsidesoftware/cspell-dicts/commit/79354094c063ecf3d70b98a5c9d53756b1a06233))
+
+
+### Build System
+
+* **deps:** bump streetsidesoftware/cspell-action from 2.15.0 to 2.15.1 ([#1762](https://github.com/streetsidesoftware/cspell-dicts/issues/1762)) ([2933794](https://github.com/streetsidesoftware/cspell-dicts/commit/29337948acb1752e68cda8369a7ab56566a2c4d1))
+
+
+### Updates and Bug Fixes
+
+* Speed up initial dictionary creation ([#1778](https://github.com/streetsidesoftware/cspell-dicts/issues/1778)) ([9b63a60](https://github.com/streetsidesoftware/cspell-dicts/commit/9b63a608f7286ad8d4488266b87d526e5b2cdf8b))
+
+
+### Continuous Integration
+
+* Workflow Bot -- Build Dictionaries ([#1768](https://github.com/streetsidesoftware/cspell-dicts/issues/1768)) ([02f5de1](https://github.com/streetsidesoftware/cspell-dicts/commit/02f5de1f88ba50bfe725e3f262f61b20fcfd2237))
+* Workflow Bot -- Build Dictionaries ([#1772](https://github.com/streetsidesoftware/cspell-dicts/issues/1772)) ([ab631c6](https://github.com/streetsidesoftware/cspell-dicts/commit/ab631c6a31b99d0fd48e06779da1d1c89ebe55c8))
+* Workflow Bot -- Build Dictionaries ([#1776](https://github.com/streetsidesoftware/cspell-dicts/issues/1776)) ([48b82c6](https://github.com/streetsidesoftware/cspell-dicts/commit/48b82c658589575ad1f90f7371ce51bf5fe097b6))
+* Workflow Bot -- Build Dictionaries ([#1781](https://github.com/streetsidesoftware/cspell-dicts/issues/1781)) ([fd3b5aa](https://github.com/streetsidesoftware/cspell-dicts/commit/fd3b5aaae5beaedc57793658e44339f26abd4849))
+* Workflow Bot -- Update ALL Dependencies ([97a5756](https://github.com/streetsidesoftware/cspell-dicts/commit/97a5756724de0c97d747d0fa033a438552069520))
+* Workflow Bot -- Update ALL Dependencies (main) ([#1759](https://github.com/streetsidesoftware/cspell-dicts/issues/1759)) ([97a5756](https://github.com/streetsidesoftware/cspell-dicts/commit/97a5756724de0c97d747d0fa033a438552069520))
+* Workflow Bot -- Update ALL Dependencies (main) ([#1763](https://github.com/streetsidesoftware/cspell-dicts/issues/1763)) ([8807e1c](https://github.com/streetsidesoftware/cspell-dicts/commit/8807e1ceb84ddc2afeee9f8ccac0d65812b16c09))
+* Workflow Bot -- Update ALL Dependencies (main) ([#1766](https://github.com/streetsidesoftware/cspell-dicts/issues/1766)) ([18130cd](https://github.com/streetsidesoftware/cspell-dicts/commit/18130cdc8458b84fc83e83a82220a41f35e41a5e))
+* Workflow Bot -- Update ALL Dependencies (main) ([#1773](https://github.com/streetsidesoftware/cspell-dicts/issues/1773)) ([dc9adcc](https://github.com/streetsidesoftware/cspell-dicts/commit/dc9adccfcd7dd55a37622e5604bfc37d7d425ed6))
+* Workflow Bot -- Update ALL Dependencies (main) ([#1777](https://github.com/streetsidesoftware/cspell-dicts/issues/1777)) ([55c3d10](https://github.com/streetsidesoftware/cspell-dicts/commit/55c3d1045fad365307c63002976f088acb6e6b09))
+* Workflow Bot -- Update ALL Dependencies (main) ([#1782](https://github.com/streetsidesoftware/cspell-dicts/issues/1782)) ([7b90f9e](https://github.com/streetsidesoftware/cspell-dicts/commit/7b90f9ec6b2d9a9b955a11849e2212ace3c605b7))
+
+
+### Miscellaneous
+
+* Do not `gz` small dictionaries ([#1760](https://github.com/streetsidesoftware/cspell-dicts/issues/1760)) ([16288ce](https://github.com/streetsidesoftware/cspell-dicts/commit/16288ced75b3cc640558a983875ed2b2de2b5703))
+* fix build script ([b53ece0](https://github.com/streetsidesoftware/cspell-dicts/commit/b53ece0bf166f897c81766cfe7b1639b8b33fe60))
+* Fix cspell dictionary generator ([#1774](https://github.com/streetsidesoftware/cspell-dicts/issues/1774)) ([d5943fd](https://github.com/streetsidesoftware/cspell-dicts/commit/d5943fd1866fac7edb35ddcc7764fa761a75bfd4))
+* fix script/dictionaries.sh to run on Ubuntu ([6a6ba41](https://github.com/streetsidesoftware/cspell-dicts/commit/6a6ba416d109ef5a38d6b00a613e8fb41d9e6583))
+* fix typo ([949ebe8](https://github.com/streetsidesoftware/cspell-dicts/commit/949ebe83710a20054ae10915973e4a2775c4001c))
+* fix update dictionaries.sh on linux ([#1771](https://github.com/streetsidesoftware/cspell-dicts/issues/1771)) ([2774e0e](https://github.com/streetsidesoftware/cspell-dicts/commit/2774e0e2c1da38ce5c1651d1019e2591c8141515))
+* Prepare Basque for publishing ([#1780](https://github.com/streetsidesoftware/cspell-dicts/issues/1780)) ([6c5b2f6](https://github.com/streetsidesoftware/cspell-dicts/commit/6c5b2f63bbcd176d98969198bff7049d9c63f552))
+* Prepare Serbian dictionaries for publication ([#1783](https://github.com/streetsidesoftware/cspell-dicts/issues/1783)) ([bf137e6](https://github.com/streetsidesoftware/cspell-dicts/commit/bf137e648670cc58670bb859510711ddfda16c33))
+* Update README dictionary list ([#1769](https://github.com/streetsidesoftware/cspell-dicts/issues/1769)) ([87ca08c](https://github.com/streetsidesoftware/cspell-dicts/commit/87ca08c68aeda2b78216dc0f160dd2314838a6b0))
+* work on dictionaries.sh ([7198f05](https://github.com/streetsidesoftware/cspell-dicts/commit/7198f0535cbd9aedc0123d25b38d9f318bba5b98))
+
 ## [8.0.0](https://github.com/streetsidesoftware/cspell-dicts/compare/cspell-dicts@7.2.1...cspell-dicts@8.0.0) (2022-12-30)
 
 

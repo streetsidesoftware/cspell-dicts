@@ -1,5 +1,12 @@
 # Change Log
 
+## [1.0.2](https://github.com/streetsidesoftware/cspell-dicts/compare/@cspell/dict-en-shared@1.0.1...@cspell/dict-en-shared@1.0.2) (2023-01-05)
+
+
+### Miscellaneous
+
+* Do not `gz` small dictionaries ([#1760](https://github.com/streetsidesoftware/cspell-dicts/issues/1760)) ([16288ce](https://github.com/streetsidesoftware/cspell-dicts/commit/16288ced75b3cc640558a983875ed2b2de2b5703))
+
 ## [1.0.1](https://github.com/streetsidesoftware/cspell-dicts/compare/@cspell/dict-en-shared@1.0.0...@cspell/dict-en-shared@1.0.1) (2022-12-28)
 
 
