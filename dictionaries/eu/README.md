@@ -37,12 +37,14 @@ The `cspell-ext.json` file in this package should be added to the import section
 }
 ```
 
-# Dictionary Development
+## References
 
-See: [How to Create a New Dictionary](https://github.com/streetsidesoftware/cspell-dicts#how-to-create-a-new-dictionary)
+- Source: [jmigartua/basque_hunspell](https://github.com/jmigartua/basque_hunspell)
 
 ## License
 
 MIT
 
 > Some packages may have other licenses included.
+
+<!--- cspell:ignore jmigartua --->

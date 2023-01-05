@@ -3,8 +3,9 @@
 targets:
   - name: "eu"
     sources:
-      - filename: "src/eu.dic"
-        maxDepth: 1
+      - filename: "src/basque_hunspell/eu.dic"
+        maxDepth: 1 # This is set to 1 so it will build.
+      - src/additional_words.txt
     format: "trie3"
     targetDirectory: "./dict"
     generateNonStrict: true
