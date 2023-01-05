@@ -13,7 +13,7 @@
   },
   "scripts": {
     "build": "cross-env NODE_OPTIONS=--max_old_space_size=8192 cspell-tools-cli build",
-    "test": "hunspell-reader words -n 1000 \"src/eu.dic\" | cspell -v -c ./cspell-ext.json \"--local=eu\" \"--languageId=*\" stdin",
+    "test": "hunspell-reader words -n 1000 -m 1\"src/eu.dic\" | cspell -v -c ./cspell-ext.json \"--local=eu\" \"--languageId=*\" stdin",
     "prepublishOnly": "echo OK",
     "prepare": "echo OK"
   },

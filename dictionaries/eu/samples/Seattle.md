@@ -18,6 +18,9 @@ Jet City izenez ere ezaguna da, Boeing multinazionalaren eragina dela eta.
 XX. mendeko azken urteetan, inguruko beste bi enpresa handi Microsoft eta Amazon ziren; azken horrek XXI. mendean are hazkunde handiagoa izan du.
 
 <!---
-cspell:locale eu
-cspell:words Seattle Queen Rain Emerald Denny Olympia Maynardek
+cspell:locale eu,en
+cspell:words Seattle Queen Rain Emerald Denny Olympia Maynardek Dennyren Alaskarako
+
+cspell:words # Possibly correct words
+cspell:ignore handiena finkatzeak zirenak urteetan handiagoa
 --->
