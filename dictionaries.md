@@ -81,6 +81,8 @@
 | [@cspell/dict-sl-si](./dictionaries/sl_SI#readme)                               | sl-si                           | Slovenian                          | Slovenian dictionary for CSpell.                               |
 | [@cspell/dict-software-terms](./dictionaries/software-terms#readme)             | softwareTerms; networking-terms | Software Terms                     | Software terms dictionary for cspell.                          |
 | [@cspell/dict-sql](./dictionaries/sql#readme)                                   | sql                             | sql                                | SQL dictionary for CSpell.                                     |
+| [@cspell/dict-sr-cyrl](./dictionaries/sr_Cyrl#readme)                           | sr-cyrl                         | Serbian (Cyrillic)                 | Serbian (Cyrillic) dictionary for cspell.                      |
+| [@cspell/dict-sr-latn](./dictionaries/sr_Latn#readme)                           | sr-latn                         | Serbian (Latin)                    | Serbian (Latin) dictionary for cspell.                         |
 | [@cspell/dict-sv](./dictionaries/sv#readme)                                     | sv                              | Swedish Dictionary                 | Swedish Dictionary                                             |
 | [@cspell/dict-svelte](./dictionaries/svelte#readme)                             | svelte                          | Svelte                             | Svelte dictionary for cspell.                                  |
 | [@cspell/dict-swift](./dictionaries/swift#readme)                               | swift                           | Swift                              | Swift dictionary for cspell.                                   |
