@@ -1,10 +1,11 @@
 # yaml-language-server: $schema=https://raw.githubusercontent.com/streetsidesoftware/cspell/main/packages/cspell-tools/cspell-tools.config.schema.json
 
 targets:
-  - name: "<%= packageName %>"
+  - name: "eu"
     sources:
-      - filename: "<%= srcFile %>"
-    format: "<%= format %>"
+      - filename: "src/eu.dic"
+        maxDepth: 1
+    format: "trie3"
     targetDirectory: "./dict"
-    generateNonStrict: <%= generateNonStrict %>
+    generateNonStrict: true
     compress: false
