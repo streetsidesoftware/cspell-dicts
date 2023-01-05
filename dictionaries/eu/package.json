@@ -1,0 +1,51 @@
+{
+  "name": "@cspell/dict-eu",
+  "version": "1.0.0",
+  "description": "Basque dictionary for cspell.",
+  "publishConfig": {
+    "access": "public"
+  },
+  "exports": {
+    ".": "./cspell-ext.json",
+    "./cspell": "./cspell-ext.json",
+    "./cspell-ext.json": "./cspell-ext.json"
+  },
+  "scripts": {
+    "build": "cross-env NODE_OPTIONS=--max_old_space_size=8192 cspell-tools-cli build && yarn run gen-checksum",
+    "checksum": "shasum -c checksum.txt",
+    "conditional-build": "yarn run sync && yarn run --silent checksum || yarn run build",
+    "sync": "yarn cpy \"../../node_modules/basque_hunspell/eu.*\" \"src/basque_hunspell\" --flat",
+    "test": "hunspell-reader words -n 1000 -m 1\"src/eu.dic\" | cspell -v -c ./cspell-ext.json \"--local=eu\" \"--languageId=*\" stdin",
+    "gen-checksum": "cat source-dependencies.txt | sort -u | xargs shasum > checksum.txt",
+    "prepublishOnly": "echo OK",
+    "prepare": "echo OK"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/streetsidesoftware/cspell-dicts.git"
+  },
+  "keywords": [
+    "cspell",
+    "cspell-ext",
+    "eu",
+    "Basque",
+    "dictionary",
+    "spelling"
+  ],
+  "author": "Jason Dent",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/streetsidesoftware/cspell-dicts/issues"
+  },
+  "homepage": "https://github.com/streetsidesoftware/cspell-dicts/blob/main/dictionaries/eu#readme",
+  "devDependencies": {
+    "basque_hunspell": "https://github.com/jmigartua/basque_hunspell"
+  },
+  "dependencies": {},
+  "files": [
+    "dict/eu.trie",
+    "cspell-ext.json",
+    "*.js",
+    "*.d.ts"
+  ]
+}

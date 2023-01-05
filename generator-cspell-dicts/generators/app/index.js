@@ -96,7 +96,7 @@ module.exports = class extends Generator {
 
         props.packageName = props.name.toLowerCase().replace(/[^a-z0-9-]/g, '-');
         depProps.dstFileName = 'dict/' + props.packageName + '.' + depProps.fileExt;
-        depProps.compressDest = depProps.useTrie;
+        depProps.compressDest = false; // depProps.useTrie;
         depProps.dstFullFileName = depProps.dstFileName + (depProps.compressDest ? '.gz' : '');
 
         props.filesToCopy = [];
@@ -110,8 +110,8 @@ module.exports = class extends Generator {
             const srcDic = path.join(path.dirname(srcFile), path.basename(srcFile, ext) + '.dic');
             this.fs.exists(srcAff) && srcFiles.push(srcAff);
             this.fs.exists(srcDic) && srcFiles.push(srcDic);
-            props.srcFileReader = 'hunspell-reader words -n 1000';
-            props.prepareScript = 'yarn run zip';
+            props.srcFileReader = 'hunspell-reader words -n 1000 -m 0';
+            props.prepareScript = 'echo OK';
             props.prepublishOnlyScript = 'echo OK';
         } else {
             this.fs.exists(srcFile) && srcFiles.push(srcFile);

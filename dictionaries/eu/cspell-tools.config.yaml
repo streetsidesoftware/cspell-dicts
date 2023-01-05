@@ -1,0 +1,12 @@
+# yaml-language-server: $schema=https://raw.githubusercontent.com/streetsidesoftware/cspell/main/packages/cspell-tools/cspell-tools.config.schema.json
+
+targets:
+  - name: "eu"
+    sources:
+      - filename: "src/basque_hunspell/eu.dic"
+        maxDepth: 1 # This is set to 1 so it will build.
+      - src/additional_words.txt
+    format: "trie3"
+    targetDirectory: "./dict"
+    generateNonStrict: true
+    compress: false
