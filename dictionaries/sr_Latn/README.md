@@ -48,3 +48,5 @@ See: [How to Create a New Dictionary](https://github.com/streetsidesoftware/cspe
 GNU GPL
 
 > Some packages may have other licenses included.
+
+<!--- cspell:words  Milutin Smiljanić Smiljanić's korektor Toma Tasovac --->
