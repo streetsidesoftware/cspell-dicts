@@ -1,8 +1,7 @@
 {
   "name": "@cspell/dict-sr-latn",
   "version": "1.0.0",
-  "description": "Serbian (Latin) dictionary for cspell. -- Private until verified",
-  "private": true,
+  "description": "Serbian (Latin) dictionary for cspell.",
   "publishConfig": {
     "access": "public"
   },
@@ -18,8 +17,7 @@
     "conditional-build": "yarn run --silent checksum || yarn run build",
     "gen-checksum": "cat source-files.txt source-dependencies.txt | sort -u | xargs shasum > checksum.txt",
     "prepublishOnly": "echo pre-publish",
-    "test": "cspell -v -c ./cspell-ext.json --local=sr-Latn \"samples/**\"",
-    "zip": "gzip -f -k dict/*.trie"
+    "test": "cspell -v -c ./cspell-ext.json --local=sr-Latn \"samples/**\""
   },
   "repository": {
     "type": "git",
