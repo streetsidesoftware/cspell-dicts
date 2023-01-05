@@ -3,6 +3,10 @@
     "files": [
         "**/*.{md,txt}"
     ],
+    "ignorePaths": [
+        "src/**",
+        "*.trie"
+    ],
     "dictionaries": [
         "eu"
     ],
