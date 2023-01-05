@@ -19,5 +19,5 @@ XX. mendeko azken urteetan, inguruko beste bi enpresa handi Microsoft eta Amazon
 
 <!---
 cspell:locale eu
-cspell:words Seattle Queen Rain
+cspell:words Seattle Queen Rain Emerald Denny Olympia Maynardek
 --->
