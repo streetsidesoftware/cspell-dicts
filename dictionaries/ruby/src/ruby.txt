@@ -6,6 +6,7 @@ action
 ActionController
 ActionView
 ActiveRecord
+ActiveResource
 activesupport
 ADDITIONAL_LOAD_PATHS
 alias
@@ -20,6 +21,7 @@ asset
 association
 Attachment
 attributes
+autoload
 BasicSocket
 BEGIN
 begin
@@ -33,12 +35,15 @@ break
 Callback
 camelcase
 camelize
+CanCanCan
+CarrierWave
 case
 Case
 casecmp
 CGI
 CGIMethods
 chdir
+chruby
 class
 Class
 ClassInheritableAttributes
@@ -69,6 +74,7 @@ display
 do
 DomainName
 downcase
+downto
 DRb
 DRbIdConv
 DRbObject
@@ -143,6 +149,7 @@ Float
 FloatDomainError
 for
 format
+Forwardable
 frozen
 GC
 Gem
@@ -157,9 +164,11 @@ GetoptLong
 getpwuid
 getutc
 gsub
+Guardfile
 Hash
 hexdigest
 hidden
+httparty
 if
 image
 in
@@ -174,6 +183,8 @@ IO
 IOError
 ipaddress
 IPSocket
+Jbuilder
+kaminari
 Kernel
 key
 KeyError
@@ -186,6 +197,7 @@ LocalJumpError
 location
 Logger
 Mail
+MailCatcher
 Marshal
 MatchData
 MatchingData
@@ -209,6 +221,7 @@ NameError
 next
 nil
 NIL
+nilable
 NilClass
 nokogiri
 NoMemoryError
@@ -246,8 +259,10 @@ Process
 PStore
 Queue
 quote
+Railties
 Rake
 RakeApp
+Rakefile
 RakeFileUtils
 RAKEVERSION
 Range
@@ -257,6 +272,7 @@ rdoc
 readonly
 Record
 records
+Redcarpet
 redo
 Regexp
 RegexpError
@@ -264,8 +280,8 @@ RELEASE_DATE
 request
 Request
 rescue
-resque
 responses
+resque
 retriable
 retry
 return
@@ -288,14 +304,16 @@ sad asdasd
 ScanError
 scope
 ScriptError
+securerandom
 SecurityError
 self
 send
 session
+Shipit
+Sidekiq
 Signal
 SignalException
 simplecov
-SimpleDelegater
 SimpleDelegator
 Singleton
 SizedQueue
@@ -351,6 +369,7 @@ Transaction
 true
 TRUE
 TrueClass
+Turbolinks
 type
 Type (namespaced)
 TypeError
