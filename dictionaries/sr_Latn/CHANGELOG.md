@@ -1,12 +1,15 @@
 # Change Log
 
-## 1.0.0 (2023-01-05)
+## 1.0.1 (2032-01-07)
 
+* removed superfluous locales
+* updated additional_tokens.txt
+
+## 1.0.0 (2023-01-05)
 
 ### Features
 
 * Add Serbian Dictionaries ([#1779](https://github.com/streetsidesoftware/cspell-dicts/issues/1779)) ([7935409](https://github.com/streetsidesoftware/cspell-dicts/commit/79354094c063ecf3d70b98a5c9d53756b1a06233))
-
 
 ### Miscellaneous
 
@@ -14,4 +17,4 @@
 
 ## 1.0.0
 
-- Initial Release
+* Initial Release
