@@ -1,5 +1,12 @@
 # Change Log
 
+## [1.0.1](https://github.com/streetsidesoftware/cspell-dicts/compare/@cspell/dict-sr-latn@1.0.0...@cspell/dict-sr-latn@1.0.1) (2023-01-08)
+
+
+### Updates and Bug Fixes
+
+* rm superfluous locales and update additional_tokens in Serbian dictionaries ([#1786](https://github.com/streetsidesoftware/cspell-dicts/issues/1786)) ([4875da9](https://github.com/streetsidesoftware/cspell-dicts/commit/4875da94cb5bc178030e7e14453f4c3de23f910a))
+
 ## 1.0.1 (2032-01-07)
 
 * removed superfluous locales

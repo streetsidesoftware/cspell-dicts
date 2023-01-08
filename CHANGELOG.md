@@ -1,5 +1,21 @@
 # Release Notes
 
+## [8.1.1](https://github.com/streetsidesoftware/cspell-dicts/compare/cspell-dicts@8.1.0...cspell-dicts@8.1.1) (2023-01-08)
+
+
+### Updates and Bug Fixes
+
+* Add "mongod" to software terms dictionary. ([#1793](https://github.com/streetsidesoftware/cspell-dicts/issues/1793)) ([6490d26](https://github.com/streetsidesoftware/cspell-dicts/commit/6490d26000b1b9d3bed6420a8cc03fcda8a8610a))
+* Add some more Ruby terms ([#1787](https://github.com/streetsidesoftware/cspell-dicts/issues/1787)) ([913503d](https://github.com/streetsidesoftware/cspell-dicts/commit/913503ddbcb0cace36f6bead0a96c184918b8d00))
+* Create software-services and add words to companies ([#1790](https://github.com/streetsidesoftware/cspell-dicts/issues/1790)) ([753e2c5](https://github.com/streetsidesoftware/cspell-dicts/commit/753e2c51250ba0644429c7d701c74f6f2c0897b8))
+* rm superfluous locales and update additional_tokens in Serbian dictionaries ([#1786](https://github.com/streetsidesoftware/cspell-dicts/issues/1786)) ([4875da9](https://github.com/streetsidesoftware/cspell-dicts/commit/4875da94cb5bc178030e7e14453f4c3de23f910a))
+
+
+### Continuous Integration
+
+* Workflow Bot -- Build Dictionaries ([#1791](https://github.com/streetsidesoftware/cspell-dicts/issues/1791)) ([6394b33](https://github.com/streetsidesoftware/cspell-dicts/commit/6394b330431c87aafe22a175c9f44c61a43c8c68))
+* Workflow Bot -- Build Dictionaries ([#1795](https://github.com/streetsidesoftware/cspell-dicts/issues/1795)) ([0c5a4fb](https://github.com/streetsidesoftware/cspell-dicts/commit/0c5a4fbebc835365f9628323db22870212a67627))
+
 ## [8.1.0](https://github.com/streetsidesoftware/cspell-dicts/compare/cspell-dicts@8.0.0...cspell-dicts@8.1.0) (2023-01-05)
 
 

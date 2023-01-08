@@ -3,6 +3,19 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+## [3.0.9](https://github.com/streetsidesoftware/cspell-dicts/compare/@cspell/dict-software-terms@3.0.8...@cspell/dict-software-terms@3.0.9) (2023-01-08)
+
+
+### Updates and Bug Fixes
+
+* Add "mongod" to software terms dictionary. ([#1793](https://github.com/streetsidesoftware/cspell-dicts/issues/1793)) ([6490d26](https://github.com/streetsidesoftware/cspell-dicts/commit/6490d26000b1b9d3bed6420a8cc03fcda8a8610a))
+* Create software-services and add words to companies ([#1790](https://github.com/streetsidesoftware/cspell-dicts/issues/1790)) ([753e2c5](https://github.com/streetsidesoftware/cspell-dicts/commit/753e2c51250ba0644429c7d701c74f6f2c0897b8))
+
+
+### Continuous Integration
+
+* Workflow Bot -- Build Dictionaries ([#1795](https://github.com/streetsidesoftware/cspell-dicts/issues/1795)) ([0c5a4fb](https://github.com/streetsidesoftware/cspell-dicts/commit/0c5a4fbebc835365f9628323db22870212a67627))
+
 ## [3.0.8](https://github.com/streetsidesoftware/cspell-dicts/compare/@cspell/dict-software-terms@3.0.7...@cspell/dict-software-terms@3.0.8) (2022-12-30)
 
 
