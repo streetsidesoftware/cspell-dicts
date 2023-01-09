@@ -1,5 +1,17 @@
 # Release Notes
 
+## [8.2.0](https://github.com/streetsidesoftware/cspell-dicts/compare/cspell-dicts@8.1.1...cspell-dicts@8.2.0) (2023-01-09)
+
+
+### Features
+
+* Add Web Services Dictionary ([#1797](https://github.com/streetsidesoftware/cspell-dicts/issues/1797)) ([b43fbd2](https://github.com/streetsidesoftware/cspell-dicts/commit/b43fbd249b75fc19fe6f5c1ae766289a430c4bdd))
+
+
+### Continuous Integration
+
+* Workflow Bot -- Update ALL Dependencies (main) ([#1794](https://github.com/streetsidesoftware/cspell-dicts/issues/1794)) ([ee8e85c](https://github.com/streetsidesoftware/cspell-dicts/commit/ee8e85c5d672e0705d3f81bd5afc9913278f5764))
+
 ## [8.1.1](https://github.com/streetsidesoftware/cspell-dicts/compare/cspell-dicts@8.1.0...cspell-dicts@8.1.1) (2023-01-08)
 
 
