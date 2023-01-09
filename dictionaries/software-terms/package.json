@@ -1,7 +1,7 @@
 {
   "name": "@cspell/dict-software-terms",
   "version": "3.0.9",
-  "description": "Software terms dictionary for cspell.",
+  "description": "Software related dictionaries for cspell.",
   "publishConfig": {
     "access": "public"
   },
@@ -11,14 +11,12 @@
     "./cspell-ext.json": "./cspell-ext.json"
   },
   "scripts": {
-    "build-software-terms": "cat source-files.txt | xargs cspell-tools-cli compile --split --no-compress -o ./dict -M softwareTerms.txt",
-    "build-networking-terms": "cat source-files-networking.txt | xargs cspell-tools-cli compile --split --no-compress -o ./dict -M networkingTerms.txt",
-    "build": "npm run build-software-terms && npm run build-networking-terms",
-    "test": "npm run test-software-terms && npm run test-networking-terms",
+    "build": "cspell-tools-cli build",
+    "test": "yarn test-software-terms && yarn test-networking-terms",
     "test-software-terms": "cat \"src/software-terms.txt\" | cspell -v -c ./cspell-ext.json \"--local=*\" \"--languageId=*\" stdin",
     "test-networking-terms": "cat source-files-networking.txt | xargs cat | cspell -v \"--local=*\" \"--languageId=*\" stdin",
     "prepublishOnly": "echo pre-publish",
-    "prepare": "yarn run build"
+    "prepare": "yarn build"
   },
   "repository": {
     "type": "git",
@@ -28,6 +26,8 @@
     "cspell",
     "software-terms",
     "software terms",
+    "networking terms",
+    "web services dictionary",
     "dictionary",
     "spelling"
   ],
@@ -39,6 +39,7 @@
   "homepage": "https://github.com/streetsidesoftware/cspell-dicts/blob/main/dictionaries/software-terms#readme",
   "files": [
     "dict/*",
+    "!dict/README.md",
     "cspell-ext.json"
   ]
 }

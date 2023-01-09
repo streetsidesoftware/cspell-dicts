@@ -1,0 +1,27 @@
+# yaml-language-server: $schema=https://raw.githubusercontent.com/streetsidesoftware/cspell/main/packages/cspell-tools/cspell-tools.config.schema.json
+
+targets:
+  - name: "softwareTerms"
+    sources:
+      - listFile: src/source-files-software.txt
+        split: true
+    format: plaintext
+    targetDirectory: "./dict"
+    generateNonStrict: false
+    compress: false
+  - name: "networkingTerms"
+    sources:
+      - listFile: src/source-files-networking.txt
+        split: true
+    format: plaintext
+    targetDirectory: "./dict"
+    generateNonStrict: false
+    compress: false
+  - name: "webServices"
+    sources:
+      - filename: src/software-services.txt
+        split: true
+    format: plaintext
+    targetDirectory: "./dict"
+    generateNonStrict: false
+    compress: false
