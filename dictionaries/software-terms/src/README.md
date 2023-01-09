@@ -17,3 +17,14 @@ If you see these, please move them into the correct file.
 This file contains common tools, applications, products, and services used in the development of software.
 
 - [software-tools.txt](./software-tools.txt)
+
+## Software Web Services / APIs
+
+- [software-services.txt](./software-services.txt) file contains web service names and terms related to those services.
+
+## Networking
+
+Terms specific to networking and communication.
+
+- [network-protocols.txt](./network-protocols.txt) - Networking Protocols
+- [network-os.txt](./network-os.txt) - Networking Operating Systems
