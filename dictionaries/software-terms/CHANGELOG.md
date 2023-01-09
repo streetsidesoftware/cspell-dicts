@@ -3,6 +3,13 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+## [3.1.0](https://github.com/streetsidesoftware/cspell-dicts/compare/@cspell/dict-software-terms@3.0.9...@cspell/dict-software-terms@3.1.0) (2023-01-09)
+
+
+### Features
+
+* Add Web Services Dictionary ([#1797](https://github.com/streetsidesoftware/cspell-dicts/issues/1797)) ([b43fbd2](https://github.com/streetsidesoftware/cspell-dicts/commit/b43fbd249b75fc19fe6f5c1ae766289a430c4bdd))
+
 ## [3.0.9](https://github.com/streetsidesoftware/cspell-dicts/compare/@cspell/dict-software-terms@3.0.8...@cspell/dict-software-terms@3.0.9) (2023-01-08)
 
 
