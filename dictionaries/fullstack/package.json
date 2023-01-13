@@ -11,8 +11,8 @@
     "./cspell-ext.json": "./cspell-ext.json"
   },
   "scripts": {
-    "build": "cspell-tools-cli compile --split \"fullstack.txt\" -o .",
-    "test": "cat \"fullstack.txt\" | cspell -v -c ./cspell-ext.json --local=* --languageId=php stdin",
+    "build": "cspell-tools-cli build",
+    "test": "cat \"src/fullstack.txt\" | cspell -v -c ./cspell-ext.json --local=* --languageId=php stdin",
     "prepublishOnly": "echo pre-publish",
     "prepare": "yarn run build"
   },
@@ -34,7 +34,7 @@
   },
   "homepage": "https://github.com/streetsidesoftware/cspell-dicts/blob/main/dictionaries/fullstack#readme",
   "files": [
-    "fullstack.txt.gz",
+    "dict/fullstack.txt",
     "cspell-ext.json"
   ]
 }
