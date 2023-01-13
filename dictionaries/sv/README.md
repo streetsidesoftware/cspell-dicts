@@ -1,4 +1,4 @@
-# Cspell Swedish Dictionary
+# CSpell Swedish Dictionary
 
 Swedish dictionary for CSpell.
 

@@ -1,4 +1,4 @@
-# Cspell Scientific Terms US Dictionary
+# CSpell Scientific Terms US Dictionary
 
 Scientific Terms US dictionary for cspell.
 

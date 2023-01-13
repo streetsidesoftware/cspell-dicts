@@ -1,4 +1,4 @@
-# Cspell Ruby Dictionary
+# CSpell Ruby Dictionary
 
 For ruby and ruby on rails
 

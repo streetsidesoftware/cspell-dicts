@@ -1,4 +1,4 @@
-# Cspell Ukrainian Dictionary
+# CSpell Ukrainian Dictionary
 
 Ukrainian dictionary for cspell.
 

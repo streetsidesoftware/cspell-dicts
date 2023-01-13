@@ -1,4 +1,4 @@
-# Cspell clojure Dictionary
+# CSpell clojure Dictionary
 
 Clojure dictionary for cspell.
 

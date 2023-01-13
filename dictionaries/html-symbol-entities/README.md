@@ -1,4 +1,4 @@
-# Cspell Html Symbol Entities Dictionary
+# CSpell Html Symbol Entities Dictionary
 
 HTML Symbol Entities dictionary for cspell.
 

@@ -1,4 +1,4 @@
-# Cspell Polish Dictionary
+# CSpell Polish Dictionary
 
 Polish dictionary for cspell.
 

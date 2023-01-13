@@ -1,4 +1,4 @@
-# Cspell PowerShell Dictionary
+# CSpell PowerShell Dictionary
 
 PowerShell Keyword Dictionary
 

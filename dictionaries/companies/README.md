@@ -1,4 +1,4 @@
-# Cspell Company names Dictionary
+# CSpell Company names Dictionary
 
 Company names dictionary for cspell.
 

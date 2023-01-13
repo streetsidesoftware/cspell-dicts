@@ -1,4 +1,4 @@
-# Cspell K8s Dictionary
+# CSpell K8s Dictionary
 
 K8s dictionary for cspell.
 

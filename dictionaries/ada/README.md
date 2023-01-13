@@ -1,4 +1,4 @@
-# Cspell Ada Language Dictionary
+# CSpell Ada Language Dictionary
 
 Ada Language dictionary for cspell.
 

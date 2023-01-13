@@ -1,4 +1,4 @@
-# Cspell Scala Dictionary
+# CSpell Scala Dictionary
 
 Scala dictionary for cspell.
 

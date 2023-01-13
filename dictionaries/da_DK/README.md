@@ -1,4 +1,4 @@
-# Cspell Danish Dictionary
+# CSpell Danish Dictionary
 
 Danish dictionary for cspell.
 

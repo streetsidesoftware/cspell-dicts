@@ -1,4 +1,4 @@
-# Cspell php Dictionary
+# CSpell php Dictionary
 
 Php dictionary for cspell.
 

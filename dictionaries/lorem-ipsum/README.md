@@ -1,4 +1,4 @@
-# Cspell lorem-ipsum Dictionary
+# CSpell lorem-ipsum Dictionary
 
 Lorem-ipsum dictionary for cspell.
 

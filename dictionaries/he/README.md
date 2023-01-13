@@ -1,4 +1,4 @@
-# Cspell he Dictionary
+# CSpell he Dictionary
 
 Dictionary for Hebrew language
 

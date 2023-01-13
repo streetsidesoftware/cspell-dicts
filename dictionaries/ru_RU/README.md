@@ -1,4 +1,4 @@
-# Cspell Russian Dictionary
+# CSpell Russian Dictionary
 
 Russian dictionary for cspell.
 

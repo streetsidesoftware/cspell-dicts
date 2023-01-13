@@ -1,4 +1,4 @@
-# Cspell Norwegian Bokmål Dictionary
+# CSpell Norwegian Bokmål Dictionary
 
 Norwegian Bokmål dictionary for cspell.
 

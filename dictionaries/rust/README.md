@@ -1,4 +1,4 @@
-# Cspell Rust Dictionary
+# CSpell Rust Dictionary
 
 Rust dictionary for cspell.
 

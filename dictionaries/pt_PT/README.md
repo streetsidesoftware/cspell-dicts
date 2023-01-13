@@ -1,4 +1,4 @@
-# Cspell Portuguese Dictionary
+# CSpell Portuguese Dictionary
 
 Portuguese dictionary for cspell.
 

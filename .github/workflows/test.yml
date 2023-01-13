@@ -42,7 +42,7 @@ jobs:
 
         os:
           - windows-latest
-          - macos-latest
+          # - macos-latest # GitHub perf issues on MacOS makes this too painful to run.
 
     steps:
       - uses: actions/checkout@v3
