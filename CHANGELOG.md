@@ -1,5 +1,22 @@
 # Release Notes
 
+## [8.4.0](https://github.com/streetsidesoftware/cspell-dicts/compare/cspell-dicts@8.3.0...cspell-dicts@8.4.0) (2023-01-13)
+
+
+### Features
+
+* Improve English suggestions ([#1808](https://github.com/streetsidesoftware/cspell-dicts/issues/1808)) ([54a32d3](https://github.com/streetsidesoftware/cspell-dicts/commit/54a32d37d2c6bea5d843c1d66b8ad033e49e4afe))
+
+
+### Updates and Bug Fixes
+
+* Improve the text in README ([#1806](https://github.com/streetsidesoftware/cspell-dicts/issues/1806)) ([d2e2d78](https://github.com/streetsidesoftware/cspell-dicts/commit/d2e2d78076d4a8f73523022bb363e78af0854530))
+
+
+### Miscellaneous
+
+* do not run tests on MacOs ([e6e3873](https://github.com/streetsidesoftware/cspell-dicts/commit/e6e3873cbc8839c302b9aba61c1f888246ca0b94))
+
 ## [8.3.0](https://github.com/streetsidesoftware/cspell-dicts/compare/cspell-dicts@8.2.1...cspell-dicts@8.3.0) (2023-01-13)
 
 
