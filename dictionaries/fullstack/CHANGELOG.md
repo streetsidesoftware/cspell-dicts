@@ -3,6 +3,13 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+## [3.1.0](https://github.com/streetsidesoftware/cspell-dicts/compare/@cspell/dict-fullstack@3.0.2...@cspell/dict-fullstack@3.1.0) (2023-01-13)
+
+
+### Features
+
+* Update fullstack build process ([#1803](https://github.com/streetsidesoftware/cspell-dicts/issues/1803)) ([1ee4249](https://github.com/streetsidesoftware/cspell-dicts/commit/1ee4249241e93559601b8e69d5b1e02e8cc7ace9))
+
 ## [3.0.2](https://github.com/streetsidesoftware/cspell-dicts/compare/@cspell/dict-fullstack@3.0.1...@cspell/dict-fullstack@3.0.2) (2023-01-12)
 
 
