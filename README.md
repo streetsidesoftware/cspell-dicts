@@ -263,3 +263,5 @@ To unlink: `cspell link remove @cspell/dict-<name>`
 <!--
   cspell:ignore medicalterms Réforme
 -->
+
+<!--- @@inject: static/footer.md --->
