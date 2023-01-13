@@ -1,5 +1,18 @@
 # Release Notes
 
+## [8.3.0](https://github.com/streetsidesoftware/cspell-dicts/compare/cspell-dicts@8.2.1...cspell-dicts@8.3.0) (2023-01-13)
+
+
+### Features
+
+* Update fullstack build process ([#1803](https://github.com/streetsidesoftware/cspell-dicts/issues/1803)) ([1ee4249](https://github.com/streetsidesoftware/cspell-dicts/commit/1ee4249241e93559601b8e69d5b1e02e8cc7ace9))
+
+
+### Continuous Integration
+
+* Workflow Bot -- Build Dictionaries ([#1804](https://github.com/streetsidesoftware/cspell-dicts/issues/1804)) ([e873da5](https://github.com/streetsidesoftware/cspell-dicts/commit/e873da54b84e27222759ab7d84f837e1f9032ee6))
+* Workflow Bot -- Update ALL Dependencies (main) ([#1802](https://github.com/streetsidesoftware/cspell-dicts/issues/1802)) ([21f6a5a](https://github.com/streetsidesoftware/cspell-dicts/commit/21f6a5a911483ae80c79145312992b0e3be83ce6))
+
 ## [8.2.1](https://github.com/streetsidesoftware/cspell-dicts/compare/cspell-dicts@8.2.0...cspell-dicts@8.2.1) (2023-01-12)
 
 
