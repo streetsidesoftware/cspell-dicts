@@ -156,6 +156,10 @@ Various [cspell](https://github.com/streetsidesoftware/cspell) dictionaries. Eac
 
 <!--- @@inject-end: dictionaries.md --->
 
+## Documentation
+
+See [Documentation](./docs/README.md)
+
 ## Contributing
 
 Please help correct any mistakes in the dictionaries.
