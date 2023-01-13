@@ -1,6 +1,6 @@
-# Cspell Developers (Fullstack) Dictionary
+# CSpell Developers (Fullstack) Dictionary
 
-Daily used developers words dictionary for cspell.
+A dictionary for CSpell containing commonly used words during full stack development.
 
 This is a pre-built dictionary for use with cspell.
 
