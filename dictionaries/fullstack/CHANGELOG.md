@@ -3,6 +3,13 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+## [3.0.2](https://github.com/streetsidesoftware/cspell-dicts/compare/@cspell/dict-fullstack@3.0.1...@cspell/dict-fullstack@3.0.2) (2023-01-12)
+
+
+### Updates and Bug Fixes
+
+* Add `data-ogxc` and `data-ogsb` to fullstack. ([7549469](https://github.com/streetsidesoftware/cspell-dicts/commit/754946989ba3274723e73e1cd010d7547ad67145))
+
 ## [3.0.1](https://github.com/streetsidesoftware/cspell-dicts/compare/@cspell/dict-fullstack@3.0.0...@cspell/dict-fullstack@3.0.1) (2022-12-30)
 
 

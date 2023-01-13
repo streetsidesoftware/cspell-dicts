@@ -1,5 +1,12 @@
 # Release Notes
 
+## [8.2.1](https://github.com/streetsidesoftware/cspell-dicts/compare/cspell-dicts@8.2.0...cspell-dicts@8.2.1) (2023-01-12)
+
+
+### Updates and Bug Fixes
+
+* Add `data-ogxc` and `data-ogsb` to fullstack. ([7549469](https://github.com/streetsidesoftware/cspell-dicts/commit/754946989ba3274723e73e1cd010d7547ad67145))
+
 ## [8.2.0](https://github.com/streetsidesoftware/cspell-dicts/compare/cspell-dicts@8.1.1...cspell-dicts@8.2.0) (2023-01-09)
 
 
