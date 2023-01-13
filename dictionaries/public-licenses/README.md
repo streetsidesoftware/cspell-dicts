@@ -1,4 +1,4 @@
-# Cspell Common Public Licenses Dictionary
+# CSpell Common Public Licenses Dictionary
 
 Common Public Licenses dictionary for cspell.
 

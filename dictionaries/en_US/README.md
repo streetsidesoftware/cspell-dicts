@@ -1,4 +1,4 @@
-# Cspell English Dictionary
+# CSpell English Dictionary
 
 English dictionary for cspell.
 

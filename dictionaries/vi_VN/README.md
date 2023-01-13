@@ -1,4 +1,4 @@
-# Cspell Vietnamese Dictionary
+# CSpell Vietnamese Dictionary
 
 Vietnamese dictionary for cspell.
 

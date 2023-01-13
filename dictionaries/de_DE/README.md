@@ -1,4 +1,4 @@
-# Cspell German Dictionary
+# CSpell German Dictionary
 
 German dictionary for cspell.
 

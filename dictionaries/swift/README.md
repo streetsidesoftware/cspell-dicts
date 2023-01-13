@@ -1,4 +1,4 @@
-# Cspell Swift Dictionary
+# CSpell Swift Dictionary
 
 Swift dictionary for cspell.
 

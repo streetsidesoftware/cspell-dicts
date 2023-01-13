@@ -1,4 +1,4 @@
-# Cspell Cryptocurrencies Dictionary
+# CSpell Cryptocurrencies Dictionary
 
 Cryptocurrencies dictionary for cspell.
 

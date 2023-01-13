@@ -1,4 +1,4 @@
-# Cspell TypeScript and JavaScript Dictionary
+# CSpell TypeScript and JavaScript Dictionary
 
 TypeScript and JavaScript dictionary for cspell.
 

@@ -1,4 +1,4 @@
-# Cspell csharp Dictionary
+# CSpell csharp Dictionary
 
 Csharp dictionary for cspell.
 

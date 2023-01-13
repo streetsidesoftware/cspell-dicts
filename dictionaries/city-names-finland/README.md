@@ -1,4 +1,4 @@
-# Cspell city-names-finland Dictionary
+# CSpell city-names-finland Dictionary
 
 City area names in Finland for cspell.
 

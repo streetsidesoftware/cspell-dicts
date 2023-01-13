@@ -1,4 +1,4 @@
-# Cspell Brazilian Portuguese Dictionary
+# CSpell Brazilian Portuguese Dictionary
 
 Brazilian Portuguese dictionary for cspell.
 

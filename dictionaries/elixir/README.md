@@ -1,4 +1,4 @@
-# Cspell elixir Dictionary
+# CSpell elixir Dictionary
 
 Elixir dictionary for cspell.
 

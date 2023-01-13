@@ -1,4 +1,4 @@
-# Cspell Docker Dictionary
+# CSpell Docker Dictionary
 
 Docker dictionary for cspell.
 

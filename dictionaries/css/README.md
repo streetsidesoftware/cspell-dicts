@@ -1,4 +1,4 @@
-# Cspell css Dictionary
+# CSpell css Dictionary
 
 Css dictionary for cspell.
 

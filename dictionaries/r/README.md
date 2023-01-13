@@ -1,4 +1,4 @@
-# Cspell R Dictionary
+# CSpell R Dictionary
 
 R dictionary for cspell.
 

@@ -1,4 +1,4 @@
-# Cspell Croatian Dictionary
+# CSpell Croatian Dictionary
 
 Croatian dictionary for cspell.
 

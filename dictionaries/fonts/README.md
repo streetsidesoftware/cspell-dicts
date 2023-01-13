@@ -1,4 +1,4 @@
-# Cspell font names Dictionary
+# CSpell font names Dictionary
 
 Font names dictionary for cspell.
 

@@ -1,4 +1,4 @@
-# Cspell Monkey C Dictionary
+# CSpell Monkey C Dictionary
 
 Monkey C dictionary for cspell.
 

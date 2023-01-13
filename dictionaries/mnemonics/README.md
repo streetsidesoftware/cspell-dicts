@@ -1,4 +1,4 @@
-# Cspell Mnemonics Dictionary
+# CSpell Mnemonics Dictionary
 
 i86 Mnemonics dictionary for cspell
 

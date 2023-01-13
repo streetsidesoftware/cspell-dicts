@@ -1,4 +1,4 @@
-# Cspell Czech Dictionary
+# CSpell Czech Dictionary
 
 Czech dictionary for cspell.
 

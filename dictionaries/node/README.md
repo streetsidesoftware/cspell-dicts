@@ -1,4 +1,4 @@
-# Cspell Node.js Dictionary
+# CSpell Node.js Dictionary
 
 Node.js dictionary for cspell.
 
