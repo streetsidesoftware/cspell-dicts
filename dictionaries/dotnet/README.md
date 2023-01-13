@@ -1,4 +1,4 @@
-# Cspell .Net Dictionary
+# CSpell .Net Dictionary
 
 .Net dictionary for cspell.
 

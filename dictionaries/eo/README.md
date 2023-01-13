@@ -1,4 +1,4 @@
-# Cspell Esperanto Dictionary
+# CSpell Esperanto Dictionary
 
 Esperanto dictionary for cspell.
 

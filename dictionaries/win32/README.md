@@ -1,4 +1,4 @@
-# Cspell Win32 Dictionary
+# CSpell Win32 Dictionary
 
 Win32 dictionary for cspell.
 

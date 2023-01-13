@@ -1,4 +1,4 @@
-# Cspell software terms Dictionary
+# CSpell software terms Dictionary
 
 Software terms dictionary for cspell.
 

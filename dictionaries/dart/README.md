@@ -1,4 +1,4 @@
-# Cspell dart Dictionary
+# CSpell dart Dictionary
 
 Dart dictionary for cspell.
 

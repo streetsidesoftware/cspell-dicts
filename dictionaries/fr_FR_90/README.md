@@ -1,4 +1,4 @@
-# Cspell Français Réforme 1990 Dictionary
+# CSpell Français Réforme 1990 Dictionary
 
 Français Réforme 1990 dictionary for cspell.
 

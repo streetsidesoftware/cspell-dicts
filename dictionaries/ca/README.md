@@ -1,4 +1,4 @@
-# Cspell Catalan Dictionary
+# CSpell Catalan Dictionary
 
 Catalan dictionary for cspell.
 

@@ -1,4 +1,4 @@
-# Cspell LaTeX Dictionary
+# CSpell LaTeX Dictionary
 
 LaTeX cspell dictionary
 

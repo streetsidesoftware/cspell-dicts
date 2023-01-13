@@ -1,4 +1,4 @@
-# Cspell Greek Dictionary
+# CSpell Greek Dictionary
 
 Greek dictionary for cspell.
 

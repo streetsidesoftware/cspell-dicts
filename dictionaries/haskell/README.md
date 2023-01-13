@@ -1,4 +1,4 @@
-# Cspell Haskell Dictionary
+# CSpell Haskell Dictionary
 
 Haskell dictionary for cspell.
 

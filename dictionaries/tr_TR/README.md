@@ -1,4 +1,4 @@
-# Cspell Turkish Dictionary
+# CSpell Turkish Dictionary
 
 Turkish dictionary for cspell.
 

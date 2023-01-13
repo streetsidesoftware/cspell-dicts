@@ -1,4 +1,4 @@
-# Cspell French Dictionary
+# CSpell French Dictionary
 
 French dictionary for cspell.
 

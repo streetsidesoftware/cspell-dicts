@@ -1,4 +1,4 @@
-# Cspell Medical Terms Dictionary
+# CSpell Medical Terms Dictionary
 
 Medical Terms dictionary for cspell.
 

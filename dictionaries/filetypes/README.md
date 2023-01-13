@@ -1,4 +1,4 @@
-# Cspell filetypes Dictionary
+# CSpell filetypes Dictionary
 
 Filetypes dictionary for cspell.
 

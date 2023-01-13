@@ -1,4 +1,4 @@
-# Cspell Spanish Dictionary
+# CSpell Spanish Dictionary
 
 Spanish dictionary for cspell.
 

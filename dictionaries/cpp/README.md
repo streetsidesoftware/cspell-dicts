@@ -1,4 +1,4 @@
-# Cspell C/C++ Dictionary
+# CSpell C/C++ Dictionary
 
 C/C++ Dictionary for cspell.
 

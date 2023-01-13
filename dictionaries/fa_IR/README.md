@@ -1,4 +1,4 @@
-# Cspell Persian Dictionary
+# CSpell Persian Dictionary
 
 Persian dictionary for cspell.
 

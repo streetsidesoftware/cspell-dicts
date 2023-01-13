@@ -1,4 +1,4 @@
-# Cspell Italian Dictionary
+# CSpell Italian Dictionary
 
 Italian dictionary for cspell.
 

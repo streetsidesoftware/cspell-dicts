@@ -1,4 +1,4 @@
-# Cspell Java Dictionary
+# CSpell Java Dictionary
 
 Java dictionary for cspell.
 

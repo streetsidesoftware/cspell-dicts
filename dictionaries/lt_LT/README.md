@@ -1,4 +1,4 @@
-# Cspell Lithuanian Dictionary
+# CSpell Lithuanian Dictionary
 
 Lithuanian dictionary for cspell. Based on ispell-lt package, version 1.3.
 

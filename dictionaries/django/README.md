@@ -1,4 +1,4 @@
-# Cspell Django Dictionary
+# CSpell Django Dictionary
 
 Django dictionary for cspell.
 

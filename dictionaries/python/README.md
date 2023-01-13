@@ -1,4 +1,4 @@
-# Cspell Python Dictionary
+# CSpell Python Dictionary
 
 Python dictionary for cspell.
 

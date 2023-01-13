@@ -1,4 +1,4 @@
-# Cspell lua Dictionary
+# CSpell lua Dictionary
 
 Lua dictionary for cspell.
 

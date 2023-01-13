@@ -1,4 +1,4 @@
-# cSpell AWS Terms Dictionary
+# CSpell AWS Terms Dictionary
 
 AWS terms dictionary for cspell.
 

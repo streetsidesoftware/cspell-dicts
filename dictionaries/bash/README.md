@@ -1,4 +1,4 @@
-# Cspell bash Dictionary
+# CSpell bash Dictionary
 
 Bash dictionary for cspell.
 

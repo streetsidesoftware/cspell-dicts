@@ -1,6 +1,6 @@
-# Cspell Estonian Dictionary
+# CSpell Estonian Dictionary
 
-This is a Cspell repackaging of the [wordlist](http://www.meso.ee/~jjpp/speller/)
+This is a CSpell repackaging of the [wordlist](http://www.meso.ee/~jjpp/speller/)
 created by Jaak Pruulmann.
 
 The following description has been taken from the webpage of the original author:

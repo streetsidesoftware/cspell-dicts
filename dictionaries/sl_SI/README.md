@@ -1,4 +1,4 @@
-# Cspell Slovenian Dictionary
+# CSpell Slovenian Dictionary
 
 Slovenian dictionary for cspell.
 

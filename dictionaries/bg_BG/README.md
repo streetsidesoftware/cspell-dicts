@@ -1,4 +1,4 @@
-# Cspell Bulgarian Dictionary
+# CSpell Bulgarian Dictionary
 
 Bulgarian dictionary for cspell.
 
