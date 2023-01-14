@@ -1,5 +1,17 @@
 # Release Notes
 
+## [8.4.1](https://github.com/streetsidesoftware/cspell-dicts/compare/cspell-dicts@8.4.0...cspell-dicts@8.4.1) (2023-01-14)
+
+
+### Continuous Integration
+
+* Workflow Bot -- Build Dictionaries ([#1812](https://github.com/streetsidesoftware/cspell-dicts/issues/1812)) ([e5d33d5](https://github.com/streetsidesoftware/cspell-dicts/commit/e5d33d5d270af1267827f4e1a06a09353fdc4028))
+
+
+### Build System
+
+* **deps-dev:** bump rimraf from 3.0.2 to 4.0.4 ([#1811](https://github.com/streetsidesoftware/cspell-dicts/issues/1811)) ([2f6c321](https://github.com/streetsidesoftware/cspell-dicts/commit/2f6c32170d1c28c2ed9a2b927e2a4fdefd37c5f7))
+
 ## [8.4.0](https://github.com/streetsidesoftware/cspell-dicts/compare/cspell-dicts@8.3.0...cspell-dicts@8.4.0) (2023-01-13)
 
 
