@@ -1970,6 +1970,11 @@ commander@7.1.0:
   resolved "https://registry.npmjs.org/commander/-/commander-7.1.0.tgz#f2eaecf131f10e36e07d894698226e36ae0eb5ff"
   integrity sha512-pRxBna3MJe6HKnBGsDyMv8ETbptw3axEdYHoqNh7gu5oDcew8fs0xnivZGm06Ogk8zGAJ9VX+OPEr2GXEQK4dg==
 
+commander@^10.0.0:
+  version "10.0.0"
+  resolved "https://registry.npmjs.org/commander/-/commander-10.0.0.tgz#71797971162cd3cf65f0b9d24eb28f8d303acdf1"
+  integrity sha512-zS5PnTI22FIRM6ylNW8G4Ap0IEOyk62fhLSD0+uHRT9McRCLGpkVNvao4bjimpK/GShynyQkFFxHhwMcETmduA==
+
 commander@^2.20.3:
   version "2.20.3"
   resolved "https://registry.npmjs.org/commander/-/commander-2.20.3.tgz#fd485e84c03eb4881c20722ba48035e8531aeb33"
@@ -3733,7 +3738,7 @@ humanize-string@^2.1.0:
   dependencies:
     decamelize "^2.0.0"
 
-hunspell-reader@6.18.1, hunspell-reader@^6.18.1:
+hunspell-reader@6.18.1:
   version "6.18.1"
   resolved "https://registry.npmjs.org/hunspell-reader/-/hunspell-reader-6.18.1.tgz#b446492303ccf5eef30bc587250ef036caa9bd73"
   integrity sha512-m/xRezO8+gvnTlAS++ZLhYdkZmTpTpD6cbLPEixT1nRjYqHCwuAueI3cRNCERU30X0tpasPL8vOufolabNIHMA==
@@ -3752,6 +3757,16 @@ hunspell-reader@^3.2.0:
     fs-extra "^8.0.1"
     gensequence "^3.0.1"
     iconv-lite "^0.5.0"
+
+hunspell-reader@^6.18.1:
+  version "6.19.2"
+  resolved "https://registry.npmjs.org/hunspell-reader/-/hunspell-reader-6.19.2.tgz#d8c86cfec400b6499aa2e11d1812f5c28f45c391"
+  integrity sha512-e4AAhUlixMeo56KfAJF8iLOarIWIY3G7sxO5uo0O+GMYkP2lI076r2tfTDoNZmkLtqzLeGULQm6MQpgyEDqa2g==
+  dependencies:
+    commander "^10.0.0"
+    fs-extra "^11.1.0"
+    gensequence "^4.0.3"
+    iconv-lite "^0.6.3"
 
 iconv-lite@^0.4.24:
   version "0.4.24"
