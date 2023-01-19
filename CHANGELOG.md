@@ -1,5 +1,30 @@
 # Release Notes
 
+## [8.4.2](https://github.com/streetsidesoftware/cspell-dicts/compare/cspell-dicts@8.4.1...cspell-dicts@8.4.2) (2023-01-19)
+
+
+### Build System
+
+* **deps:** bump cspell from 6.18.1 to 6.19.2 ([#1826](https://github.com/streetsidesoftware/cspell-dicts/issues/1826)) ([c5168cd](https://github.com/streetsidesoftware/cspell-dicts/commit/c5168cdd98f76296b022b5e673cfea8fdeca5da3))
+
+
+### Continuous Integration
+
+* Workflow Bot -- Update ALL Dependencies (main) ([#1814](https://github.com/streetsidesoftware/cspell-dicts/issues/1814)) ([6bdac03](https://github.com/streetsidesoftware/cspell-dicts/commit/6bdac0398d0886b3c4d6e6717a484e1e939fb15f))
+* Workflow Bot -- Update ALL Dependencies (main) ([#1830](https://github.com/streetsidesoftware/cspell-dicts/issues/1830)) ([b6e8077](https://github.com/streetsidesoftware/cspell-dicts/commit/b6e80778266ad808e625c47616c897d6d751e0a5))
+
+
+### Miscellaneous
+
+* remove dependency upon mkdirp ([#1831](https://github.com/streetsidesoftware/cspell-dicts/issues/1831)) ([a0e99c4](https://github.com/streetsidesoftware/cspell-dicts/commit/a0e99c4bba895836dd1b1f1d1fa59e14498e1829))
+* Updated dictionaries should be a `fix` ([242ca22](https://github.com/streetsidesoftware/cspell-dicts/commit/242ca22d9341493503f2b07f03110ad6e89e2ca0))
+
+
+### Updates and Bug Fixes
+
+* Add idempotence and toolchains to softwareTerms ([#1829](https://github.com/streetsidesoftware/cspell-dicts/issues/1829)) ([f3273e4](https://github.com/streetsidesoftware/cspell-dicts/commit/f3273e400540395f690fbc513ca2ee939c492cf8))
+* Workflow Bot -- Build Dictionaries ([#1832](https://github.com/streetsidesoftware/cspell-dicts/issues/1832)) ([0722760](https://github.com/streetsidesoftware/cspell-dicts/commit/072276096b64646a764f38d35ecdd59ae9a54b9d))
+
 ## [8.4.1](https://github.com/streetsidesoftware/cspell-dicts/compare/cspell-dicts@8.4.0...cspell-dicts@8.4.1) (2023-01-14)
 
 
