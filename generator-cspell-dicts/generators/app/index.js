@@ -6,7 +6,11 @@ const Generator = require('yeoman-generator');
 const chalk = require('chalk');
 const yosay = require('yosay');
 const path = require('path');
-const mkdirp = require('mkdirp');
+const fsp = require('node:fs/promises');
+
+function mkdirp(p) {
+    return fsp.mkdir(p, { recursive: true });
+}
 
 const dictionaryDir = 'dictionaries';
 
