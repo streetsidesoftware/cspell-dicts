@@ -54,10 +54,10 @@ jobs:
         if: env.git_status == 'dirty'
         uses: peter-evans/create-pull-request@v4
         with:
-          commit-message: "ci: Workflow Bot -- Build Dictionaries"
+          commit-message: "fix: Workflow Bot -- Build Dictionaries"
           branch: ${{ env.NEW_BRANCH }}
           base: ${{ env.REF_BRANCH }}
-          title: "ci: Workflow Bot -- Build Dictionaries"
+          title: "fix: Workflow Bot -- Build Dictionaries"
           token: ${{ steps.generate-token.outputs.token }}
           body: ${{ env.git_body }}
           delete-branch: true
