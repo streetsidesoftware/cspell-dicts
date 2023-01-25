@@ -14,7 +14,7 @@
     "check-spelling": "cspell",
     "checksum": "lerna run checksum",
     "create-dictionary": "node ./generator-cspell-dicts/node_modules/yo/lib/cli.js cspell-dicts",
-    "clean": "rimraf \"packages/*/*.txt.gz\" \"dictionaries/*/*.txt.gz\"",
+    "clean": "shx rm -rf \"packages/*/*.txt.gz\" \"dictionaries/*/*.txt.gz\"",
     "readme:generate-doc-dictionaries": "./scripts/dictionaries.sh > dictionaries.md && inject-markdown README.md && yarn prettier -w \"*.md\"",
     "readme:update-dictionaries": "inject-markdown \"dictionaries/*/README.md\" && prettier -w \"dictionaries/*/README.md\"",
     "prepare": "lerna run prepare",
@@ -54,7 +54,7 @@
     "inject-markdown": "^1.3.0",
     "json5": "2.2.3",
     "prettier": "^2.8.3",
-    "rimraf": "^3.0.2",
+    "shx": "^0.3.4",
     "yamljs": "^0.3.0"
   },
   "resolutions": {
