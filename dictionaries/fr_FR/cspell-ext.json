@@ -6,7 +6,55 @@
         {
             "name": "fr-fr",
             "path": "./fr-fr.trie.gz",
-            "description": "French Dictionary (France)"
+            "description": "French Dictionary (France)",
+            "dictionaryInformation": {
+                "locale": "fr-FR",
+                "alphabet": "a-zA-ZÀÂÄÅÇÈÉÊËÎÏÔÖÙÛÜàáâãäæçèéêëíîïñóôöùûüÿńŒœś",
+                "suggestionEditCosts": [
+                    {
+                        "map": "AÀÂÄÅ|CÇ|EÈÉÊË|IÎÏ|OÔÖ|UÙÛÜ|aàáâãä|(ae)æ|cç|eèéêë|iíîï|nñń|oóôö|uùûü|yÿ|Œ(OE)|sś|(oe)œ",
+                        "replace": 1
+                    },
+                    {
+                        "map": "cçs(sc)(ss)|CÇS|kcq(cc)(ch)|(ch)(sch)(sh)|KCQ|t(tt)(th)(pt)|x(xc)|zs",
+                        "replace": 75
+                    },
+                    {
+                        "description": "Silent Endings: https://en.wikipedia.org/wiki/French_orthography#Spelling_to_sound_correspondences",
+                        "map": "$(b$)|$(d$)|$(g$)|$(l$)|$(p$)|$(pt$)|$(s$)|$(st$)|$(t$)|$(x$)|$(z$)",
+                        "replace": 75
+                    },
+                    {
+                        "description": "https://en.wikipedia.org/wiki/French_orthography#Spelling_to_sound_correspondences",
+                        "map": "bp(pp)(bb)|(gn)n|gj|(ti)(si)",
+                        "replace": 75
+                    },
+                    {
+                        "map": "(^l)(^l')|(^d)(^d')|(^n)(^n')|(^s)(^s')|(^j)(^j')|(^m)(^m')|(^t)(^t')|(^c)(^c')",
+                        "replace": 50
+                    },
+                    {
+                        "map": "f(ph)|c(qu)(que)|k(qu)(que)|x(ct)|(bb)b|(cc)c|(ff)f|(ll)l|(mm)m|(nn)n|(pp)p|(rr)r|(ss)s|(ss)c|(ss)ç|(tt)t",
+                        "replace": 50
+                    },
+                    {
+                        "map": "(ai)éèê|(ei)éèê|o(au)(eau)|(ett)(èt)(et)|(ell)(èl)(el)|t(th)",
+                        "replace": 50
+                    },
+                    {
+                        "map": "(^Ca$)(^Ça$)",
+                        "replace": 1
+                    },
+                    {
+                        "map": "(ième$)(e$)|(ème$)(e$)|(è$)(e$)|(mn$)(min$)|(ct$)(t$)",
+                        "replace": 50
+                    },
+                    {
+                        "map": "(ogue$)(ogiste$)|(ogiste$)(ogue$)|(disez$)(dites$)|(fesez$)(faites$)|(faisez$)(faites$)|(puit)(puits)",
+                        "replace": 75
+                    }
+                ]
+            }
         }
     ],
     "dictionaries": [],
