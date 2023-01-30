@@ -14,6 +14,18 @@ See [Conventional Commits](https://conventionalcommits.org) for commit guideline
 
 
 
+## [2.2.0](https://github.com/streetsidesoftware/cspell-dicts/compare/@cspell/dict-fr-reforme@2.1.2...@cspell/dict-fr-reforme@2.2.0) (2023-01-30)
+
+
+### Features
+
+* Improve French Spelling Suggestions ([#1846](https://github.com/streetsidesoftware/cspell-dicts/issues/1846)) ([633e036](https://github.com/streetsidesoftware/cspell-dicts/commit/633e03696e85242ffdd4c28c164d98b30c8f7d4d))
+
+
+### Updates and Bug Fixes
+
+* Add footer to dictionary README.md ([#1851](https://github.com/streetsidesoftware/cspell-dicts/issues/1851)) ([c59a426](https://github.com/streetsidesoftware/cspell-dicts/commit/c59a426ea0059eb4f806d1d89d283ba0e4c42d23))
+
 ## [2.1.2](https://github.com/streetsidesoftware/cspell-dicts/compare/@cspell/dict-fr-reforme@2.1.1...@cspell/dict-fr-reforme@2.1.2) (2022-12-17)
 
 

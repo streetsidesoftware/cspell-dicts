@@ -3,6 +3,18 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+## [4.2.1](https://github.com/streetsidesoftware/cspell-dicts/compare/@cspell/dict-en_us@4.2.0...@cspell/dict-en_us@4.2.1) (2023-01-30)
+
+
+### Updates and Bug Fixes
+
+* Add footer to dictionary README.md ([#1851](https://github.com/streetsidesoftware/cspell-dicts/issues/1851)) ([c59a426](https://github.com/streetsidesoftware/cspell-dicts/commit/c59a426ea0059eb4f806d1d89d283ba0e4c42d23))
+
+
+### Documentation
+
+* fix README generation ([bc0adce](https://github.com/streetsidesoftware/cspell-dicts/commit/bc0adcef7f115fe52d3f3beb9bef78910aad9421))
+
 ## [4.2.0](https://github.com/streetsidesoftware/cspell-dicts/compare/@cspell/dict-en_us@4.1.4...@cspell/dict-en_us@4.2.0) (2023-01-13)
 
 
