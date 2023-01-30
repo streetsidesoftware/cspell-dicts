@@ -16,7 +16,7 @@ HEADER="\
 <!--- Use \`yarn build:readme\` to generate this table --->
 
 | package | dictionary ID | name | description |
-| -- | -- | -- | -- | -- | \
+| --- | --- | --- | --- | \
 "
 
 NL="
