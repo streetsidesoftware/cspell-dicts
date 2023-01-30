@@ -1,5 +1,45 @@
 # Release Notes
 
+## [8.5.0](https://github.com/streetsidesoftware/cspell-dicts/compare/cspell-dicts@8.4.2...cspell-dicts@8.5.0) (2023-01-30)
+
+
+### Features
+
+* Improve French Spelling Suggestions ([#1846](https://github.com/streetsidesoftware/cspell-dicts/issues/1846)) ([633e036](https://github.com/streetsidesoftware/cspell-dicts/commit/633e03696e85242ffdd4c28c164d98b30c8f7d4d))
+
+
+### Miscellaneous
+
+* use `shx` instead of `rimraf` to delete files. ([#1844](https://github.com/streetsidesoftware/cspell-dicts/issues/1844)) ([431f780](https://github.com/streetsidesoftware/cspell-dicts/commit/431f7809e9d599545a2a797f5cdeedb70565d6d7))
+
+
+### Build System
+
+* **deps-dev:** bump @cspell/cspell-tools from 6.18.1 to 6.19.2 ([#1835](https://github.com/streetsidesoftware/cspell-dicts/issues/1835)) ([5617675](https://github.com/streetsidesoftware/cspell-dicts/commit/5617675479493cb692bf7ba8b6302482989a8e24))
+* **deps:** bump streetsidesoftware/cspell-action from 2.15.1 to 2.16.0 ([#1834](https://github.com/streetsidesoftware/cspell-dicts/issues/1834)) ([dad6605](https://github.com/streetsidesoftware/cspell-dicts/commit/dad6605e663a772ca0f2aeb03672fc86219e3cb4))
+* **deps:** bump tibdex/github-app-token from 1.7 to 1.8 ([#1847](https://github.com/streetsidesoftware/cspell-dicts/issues/1847)) ([4ecacc2](https://github.com/streetsidesoftware/cspell-dicts/commit/4ecacc2c23dd9fa4712689cf94f564c5aa611607))
+
+
+### Updates and Bug Fixes
+
+* Add footer to dictionary README.md ([#1851](https://github.com/streetsidesoftware/cspell-dicts/issues/1851)) ([c59a426](https://github.com/streetsidesoftware/cspell-dicts/commit/c59a426ea0059eb4f806d1d89d283ba0e4c42d23))
+
+
+### Continuous Integration
+
+* Workflow Bot -- Update ALL Dependencies (main) ([#1837](https://github.com/streetsidesoftware/cspell-dicts/issues/1837)) ([5334259](https://github.com/streetsidesoftware/cspell-dicts/commit/53342591b038753cf22f788079635da085db90db))
+* Workflow Bot -- Update ALL Dependencies (main) ([#1838](https://github.com/streetsidesoftware/cspell-dicts/issues/1838)) ([ec356be](https://github.com/streetsidesoftware/cspell-dicts/commit/ec356bed88cf847fc6b5ca633cac25bfd48ed358))
+* Workflow Bot -- Update ALL Dependencies (main) ([#1839](https://github.com/streetsidesoftware/cspell-dicts/issues/1839)) ([086ea0d](https://github.com/streetsidesoftware/cspell-dicts/commit/086ea0d646b1eb9cfa12aadf627725aed5468771))
+* Workflow Bot -- Update ALL Dependencies (main) ([#1841](https://github.com/streetsidesoftware/cspell-dicts/issues/1841)) ([5a3dea4](https://github.com/streetsidesoftware/cspell-dicts/commit/5a3dea4592ec01e587a19ab9f519cbf48aa07df0))
+* Workflow Bot -- Update ALL Dependencies (main) ([#1845](https://github.com/streetsidesoftware/cspell-dicts/issues/1845)) ([5cae076](https://github.com/streetsidesoftware/cspell-dicts/commit/5cae076ced64398b179c4a68c248b3037b1e0f1b))
+* Workflow Bot -- Update ALL Dependencies (main) ([#1848](https://github.com/streetsidesoftware/cspell-dicts/issues/1848)) ([076e76a](https://github.com/streetsidesoftware/cspell-dicts/commit/076e76a19133f36404c8dd3fba330db9a631c4a7))
+* Workflow Bot -- Update ALL Dependencies (main) ([#1850](https://github.com/streetsidesoftware/cspell-dicts/issues/1850)) ([31de4ce](https://github.com/streetsidesoftware/cspell-dicts/commit/31de4ceea5e6f802e7f9513eed24f732f3404ddf))
+
+
+### Documentation
+
+* fix README generation ([bc0adce](https://github.com/streetsidesoftware/cspell-dicts/commit/bc0adcef7f115fe52d3f3beb9bef78910aad9421))
+
 ## [8.4.2](https://github.com/streetsidesoftware/cspell-dicts/compare/cspell-dicts@8.4.1...cspell-dicts@8.4.2) (2023-01-19)
 
 

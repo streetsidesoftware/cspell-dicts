@@ -3,6 +3,18 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+## [4.1.7](https://github.com/streetsidesoftware/cspell-dicts/compare/@cspell/dict-en-gb@4.1.6...@cspell/dict-en-gb@4.1.7) (2023-01-30)
+
+
+### Miscellaneous
+
+* use `shx` instead of `rimraf` to delete files. ([#1844](https://github.com/streetsidesoftware/cspell-dicts/issues/1844)) ([431f780](https://github.com/streetsidesoftware/cspell-dicts/commit/431f7809e9d599545a2a797f5cdeedb70565d6d7))
+
+
+### Updates and Bug Fixes
+
+* Add footer to dictionary README.md ([#1851](https://github.com/streetsidesoftware/cspell-dicts/issues/1851)) ([c59a426](https://github.com/streetsidesoftware/cspell-dicts/commit/c59a426ea0059eb4f806d1d89d283ba0e4c42d23))
+
 ## [4.1.6](https://github.com/streetsidesoftware/cspell-dicts/compare/@cspell/dict-en-gb@4.1.5...@cspell/dict-en-gb@4.1.6) (2023-01-05)
 
 
