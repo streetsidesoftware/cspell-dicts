@@ -58,7 +58,7 @@ Please add any words to [src/additional_words.txt](./src/additional_words.txt) b
 
 The Hunspell source for this dictionary can be found:
 
-http://wordlist.aspell.net/hunspell-readme/
+<http://wordlist.aspell.net/hunspell-readme/>
 
 ## License
 
