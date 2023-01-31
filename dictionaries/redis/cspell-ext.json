@@ -18,29 +18,5 @@
     "dictionaries": [],
     // Language Rules to apply to matching files.
     // Files are matched on `languageId` and `local`
-    "languageSettings": [
-        {
-            // VSCode languageId. i.e. typescript, java, go, cpp, javascript, markdown, latex
-            // * will match against any file type.
-            "languageId": "*",
-            // Language locale. i.e. en-US, de-AT, or ru. * will match all locales.
-            // Multiple locales can be specified like: "en, en-US" to match both English and English US.
-            "locale": "*",
-            // By default the whole text of a file is included for spell checking
-            // Adding patterns to the "includeRegExpList" to only include matching patterns
-            "includeRegExpList": [],
-            // To exclude patterns, add them to "ignoreRegExpList"
-            "ignoreRegExpList": [],
-            // regex patterns than can be used with ignoreRegExpList or includeRegExpList
-            // Example: "pattern": [{ "name": "mdash", "pattern": "&mdash;" }]
-            // This could be included in "ignoreRegExpList": ["mdash"]
-            "patterns": [],
-            // List of dictionaries to enable by name in `dictionaryDefinitions`
-            "dictionaries": [
-                "redis"
-            ],
-            // Dictionary definitions can also be supplied here. They are only used iff "languageId" and "locale" match.
-            "dictionaryDefinitions": []
-        }
-    ]
+    "languageSettings": []
 }
