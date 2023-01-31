@@ -13,7 +13,7 @@
   },
   "scripts": {
     "build": "cross-env NODE_OPTIONS=--max_old_space_size=8192 cspell-tools-cli build",
-    "test": "head -n 1000 \"src/redis-commands.txt\" | cspell -v -c ./cspell-ext.json \"--local=*\" \"--languageId=*\" stdin",
+    "test": "head -n 1000 \"src/redis-commands.txt\" | cspell -v -c ./cspell.json \"--local=*\" \"--languageId=*\" stdin",
     "prepublishOnly": "echo OK",
     "prepare": "yarn run build"
   },
