@@ -1,0 +1,22 @@
+// cSpell Settings
+{
+    "id": "redis",
+    "version": "0.2",
+    "name": "redis",
+    "description": "Redis dictionary for cspell.",
+    "readonly": true,
+    // List of dictionary files to add to the global list of dictionaries
+    "dictionaryDefinitions": [
+        {
+            "name": "redis",
+            "path": "./dict/redis.txt",
+            "description": "Redis dictionary for cspell."
+        }
+    ],
+    // Dictionaries to always be used.
+    // Generally left empty
+    "dictionaries": [],
+    // Language Rules to apply to matching files.
+    // Files are matched on `languageId` and `local`
+    "languageSettings": []
+}
