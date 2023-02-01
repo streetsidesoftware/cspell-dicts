@@ -1161,7 +1161,7 @@ anymatch@~3.1.2:
 
 "aoo-mozilla-en-dict@https://github.com/marcoagpinto/aoo-mozilla-en-dict":
   version "0.0.0"
-  resolved "https://github.com/marcoagpinto/aoo-mozilla-en-dict#2ec63d569a5b56b4d7dc2ae31f23589ea4e7a6c8"
+  resolved "https://github.com/marcoagpinto/aoo-mozilla-en-dict#7d545187bb015fb66656a6b19f254f281d087a9f"
 
 "aproba@^1.0.3 || ^2.0.0":
   version "2.0.0"
@@ -2373,7 +2373,7 @@ cspell-util-bundle@^5.1.1:
   resolved "https://registry.npmjs.org/cspell-util-bundle/-/cspell-util-bundle-5.1.3.tgz#1b1eda9a7b985ac4a7c81a5b85eaa32e74d96da7"
   integrity sha512-FDxs0sw4gYMKKHdSobypvLQTRsZB96n9QNewRuyMv6nVwOcD1JsboClMpYigeE3rxBvyiGbj0V+Vf94+RTWWWA==
 
-cspell@^6.19.2:
+cspell@^6.20.0:
   version "6.20.0"
   resolved "https://registry.npmjs.org/cspell/-/cspell-6.20.0.tgz#635a27471c2ac1ac5727652f3d123531fcdf6eef"
   integrity sha512-uEb21bqb6AvzOLXBVXCQhmYiHlTt7PVF2vZ5kSbkoBKDT0sE3W52wQlYsJ6hnGpGtnhIOSWqR4cqdoZKSDMh/Q==
@@ -3729,7 +3729,7 @@ humanize-string@^2.1.0:
   dependencies:
     decamelize "^2.0.0"
 
-hunspell-reader@6.19.2, hunspell-reader@^6.19.2:
+hunspell-reader@6.19.2:
   version "6.19.2"
   resolved "https://registry.npmjs.org/hunspell-reader/-/hunspell-reader-6.19.2.tgz#d8c86cfec400b6499aa2e11d1812f5c28f45c391"
   integrity sha512-e4AAhUlixMeo56KfAJF8iLOarIWIY3G7sxO5uo0O+GMYkP2lI076r2tfTDoNZmkLtqzLeGULQm6MQpgyEDqa2g==
@@ -3748,6 +3748,15 @@ hunspell-reader@^3.2.0:
     fs-extra "^8.0.1"
     gensequence "^3.0.1"
     iconv-lite "^0.5.0"
+
+hunspell-reader@^6.20.0:
+  version "6.20.0"
+  resolved "https://registry.npmjs.org/hunspell-reader/-/hunspell-reader-6.20.0.tgz#c7c17c1986a4bfc168551e49c6428fa0081b349e"
+  integrity sha512-BRlLuUm/xmLvjDRUdccxaFaltaSQuVPlkvVsPGtJnZHq1jzcwkN3Yv+lGy2USC7NVDea1m9HvGY2iEq+lxvmcg==
+  dependencies:
+    commander "^10.0.0"
+    gensequence "^4.0.3"
+    iconv-lite "^0.6.3"
 
 iconv-lite@^0.4.24:
   version "0.4.24"
