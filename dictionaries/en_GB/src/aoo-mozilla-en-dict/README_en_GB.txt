@@ -131,7 +131,7 @@ to
 
 2019-11-01
 to
-2023-01-01 — Added thousands of possessives and plurals.
+2023-02-01 — Added thousands of possessives and plurals.
            — Improved flags: "1", "3", "N", "O", "W".
 -------
 
