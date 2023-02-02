@@ -1,5 +1,19 @@
 # Release Notes
 
+## [8.6.1](https://github.com/streetsidesoftware/cspell-dicts/compare/cspell-dicts@8.6.0...cspell-dicts@8.6.1) (2023-02-02)
+
+
+### Updates and Bug Fixes
+
+* Workflow Bot -- Build Dictionaries ([#1863](https://github.com/streetsidesoftware/cspell-dicts/issues/1863)) ([990b6e1](https://github.com/streetsidesoftware/cspell-dicts/commit/990b6e12606e916b294e2db6fbd4f807c960fc38))
+
+
+### Build System
+
+* **deps-dev:** bump @cspell/cspell-tools from 6.19.2 to 6.20.0 ([#1857](https://github.com/streetsidesoftware/cspell-dicts/issues/1857)) ([574b5d0](https://github.com/streetsidesoftware/cspell-dicts/commit/574b5d029523940bc8e9cd637f023527b0c6fcd2))
+* **deps-dev:** bump aoo-mozilla-en-dict from `2ec63d5` to `7d54518` ([#1858](https://github.com/streetsidesoftware/cspell-dicts/issues/1858)) ([4c2fa8a](https://github.com/streetsidesoftware/cspell-dicts/commit/4c2fa8a418b12e175b4f1721f315d1ab7742825f))
+* **deps:** bump cspell from 6.19.2 to 6.20.0 ([#1859](https://github.com/streetsidesoftware/cspell-dicts/issues/1859)) ([fb4cfb6](https://github.com/streetsidesoftware/cspell-dicts/commit/fb4cfb60cac5cbc473cd98d8aa3a573610bfccfa))
+
 ## [8.6.0](https://github.com/streetsidesoftware/cspell-dicts/compare/cspell-dicts@8.5.0...cspell-dicts@8.6.0) (2023-02-01)
 
 
