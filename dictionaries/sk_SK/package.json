@@ -12,7 +12,7 @@
   },
   "scripts": {
     "build": "cspell-tools-cli build && yarn prepare",
-    "test": "hunspell-reader words -n 1000 src/Slovak.dic | cspell -v -c ./cspell-ext.json --local=cs --languageId=* stdin",
+    "test": "hunspell-reader words -n 1000 src/Slovak.dic | cspell -v -c ./cspell-ext.json --local=sk --languageId=* stdin",
     "prepare": "gzip -f -k *.trie",
     "prepublishOnly": "echo pre-publish"
   },
