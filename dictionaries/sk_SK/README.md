@@ -55,3 +55,9 @@ See also:
 
 - [sk-spell/hunspell-sk](https://github.com/sk-spell/hunspell-sk#readme)
 - [Slovak.txt](./Slovak.txt)
+
+## Contributors
+
+- [Zdenko Podobný](https://github.com/zdposter) - original contributor.
+
+<!--- @@inject: ../../static/footer.md --->
