@@ -51,4 +51,4 @@ MPL v2
 
 > Some packages may have other licenses included.
 
-See also: [Slovak.txt](Slovak.txt)
+See also: [sk-spell/hunspell-sk](https://github.com/sk-spell/hunspell-sk#readme)
