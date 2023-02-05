@@ -1,5 +1,29 @@
 # Release Notes
 
+## [8.6.2](https://github.com/streetsidesoftware/cspell-dicts/compare/cspell-dicts@8.6.1...cspell-dicts@8.6.2) (2023-02-05)
+
+
+### Continuous Integration
+
+* Workflow Bot -- Update ALL Dependencies (main) ([#1869](https://github.com/streetsidesoftware/cspell-dicts/issues/1869)) ([3570792](https://github.com/streetsidesoftware/cspell-dicts/commit/35707929b8fc77a6333ea884ac92c120ce8970e1))
+* Workflow Bot -- Update ALL Dependencies (main) ([#1875](https://github.com/streetsidesoftware/cspell-dicts/issues/1875)) ([533d1d7](https://github.com/streetsidesoftware/cspell-dicts/commit/533d1d777d8f1d47fb31f8f4fb8abd14eb1e8156))
+* Workflow Bot -- Update ALL Dependencies (main) ([#1878](https://github.com/streetsidesoftware/cspell-dicts/issues/1878)) ([2a88bbf](https://github.com/streetsidesoftware/cspell-dicts/commit/2a88bbfd7ec51fc3b50db0eaa4266c2542cadf0f))
+
+
+### Build System
+
+* **deps-dev:** bump @cspell/cspell-tools from 6.20.0 to 6.20.1 ([#1867](https://github.com/streetsidesoftware/cspell-dicts/issues/1867)) ([b70a6b6](https://github.com/streetsidesoftware/cspell-dicts/commit/b70a6b60ac40d745f7b47bff36010e4cc7843ca5))
+* **deps-dev:** bump @cspell/cspell-tools from 6.20.1 to 6.22.0 ([#1880](https://github.com/streetsidesoftware/cspell-dicts/issues/1880)) ([f2becd5](https://github.com/streetsidesoftware/cspell-dicts/commit/f2becd586f36a501de0ab2021bbd9bc6eae077c7))
+* **deps:** bump streetsidesoftware/cspell-action from 2.16.0 to 2.17.0 ([#1866](https://github.com/streetsidesoftware/cspell-dicts/issues/1866)) ([a6a57bc](https://github.com/streetsidesoftware/cspell-dicts/commit/a6a57bc3a61769241c23909e45ae85c1eaa28d48))
+* **deps:** bump streetsidesoftware/cspell-action from 2.17.0 to 2.18.0 ([#1870](https://github.com/streetsidesoftware/cspell-dicts/issues/1870)) ([e2d4472](https://github.com/streetsidesoftware/cspell-dicts/commit/e2d447268ce0c4b941666b8ccc2b3a5af7923191))
+
+
+### Updates and Bug Fixes
+
+* Get ready to publish sk-sk ([#1879](https://github.com/streetsidesoftware/cspell-dicts/issues/1879)) ([80cf0a0](https://github.com/streetsidesoftware/cspell-dicts/commit/80cf0a06da4834fd5a906b43ab49d5414edd6aa7))
+* Workflow Bot -- Build Dictionaries ([#1877](https://github.com/streetsidesoftware/cspell-dicts/issues/1877)) ([4411f55](https://github.com/streetsidesoftware/cspell-dicts/commit/4411f552f2a90b15a16faf2568a1f442db00f172))
+* Workflow Bot -- Build Dictionaries ([#1881](https://github.com/streetsidesoftware/cspell-dicts/issues/1881)) ([026603c](https://github.com/streetsidesoftware/cspell-dicts/commit/026603c5627d8c84e12664dfa6dff1fbcf56bbb8))
+
 ## [8.6.1](https://github.com/streetsidesoftware/cspell-dicts/compare/cspell-dicts@8.6.0...cspell-dicts@8.6.1) (2023-02-02)
 
 
