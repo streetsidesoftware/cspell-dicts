@@ -1,0 +1,41 @@
+{
+  "name": "@cspell/dict-cs-cz",
+  "version": "2.4.7",
+  "description": "Slovak dictionary for cspell.",
+  "publishConfig": {
+    "access": "public"
+  },
+  "exports": {
+    ".": "./cspell-ext.json",
+    "./cspell": "./cspell-ext.json",
+    "./cspell-ext.json": "./cspell-ext.json"
+  },
+  "scripts": {
+    "build": "cspell-tools-cli build && yarn prepare",
+    "test": "hunspell-reader words -n 1000 src/Slovak.dic | cspell -v -c ./cspell-ext.json --local=cs --languageId=* stdin",
+    "prepare": "gzip -f -k *.trie",
+    "prepublishOnly": "echo pre-publish"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/streetsidesoftware/cspell-dicts.git"
+  },
+  "keywords": [
+    "cspell",
+    "sk_SK",
+    "Slovak",
+    "dictionary",
+    "spelling"
+  ],
+  "author": "Zdenko Podobný",
+  "license": "MPL v2",
+  "bugs": {
+    "url": "https://github.com/streetsidesoftware/cspell-dicts/issues"
+  },
+  "homepage": "https://github.com/streetsidesoftware/cspell-dicts/blob/main/dictionaries/sk_SK#readme",
+  "files": [
+    "Slovak.txt",
+    "Slovak.trie.gz",
+    "cspell-ext.json"
+  ]
+}
