@@ -1,42 +1,151 @@
-// cSpell Settings
 {
     "id": "sk-sk",
     "name": "Slovak",
     "description": "Slovak dictionary for cspell.",
     "readonly": true,
-    // List of dictionary files to add to the global list of dictionaries
     "dictionaryDefinitions": [
         {
             "name": "sk-sk",
             "path": "./Slovak.trie.gz",
-            "description": "Slovak dictionary for cspell."
+            "description": "Slovak dictionary for cspell.",
+            "dictionaryInformation": {
+                "locale": "sk-sk",
+                "alphabet": "A-Za-zÁÄÉÍÓÔÖÚÜÝáäéíóôöúüýČčĎďĚěĹĺĽľŇňŔŕŘřŠšŤťŮůŰűŽž",
+                "accents": "\u0301\u0302\u0308\u030a\u030b\u030c",
+                "suggestionEditCosts": [
+                    {
+                        "map": "Aa|Bb|Cc|Dd|Ee|Ff",
+                        "replace": 1,
+                        "description": "Capitalization change."
+                    },
+                    {
+                        "map": "Gg|Hh|Ii|Jj|Kk|Ll",
+                        "replace": 1,
+                        "description": "Capitalization change."
+                    },
+                    {
+                        "map": "Mm|Nn|Oo|Pp|Qq|Rr",
+                        "replace": 1,
+                        "description": "Capitalization change."
+                    },
+                    {
+                        "map": "Ss|Tt|Uu|Vv|Ww|Xx",
+                        "replace": 1,
+                        "description": "Capitalization change."
+                    },
+                    {
+                        "map": "Yy|Zz|Áá|Ää|Éé|Íí",
+                        "replace": 1,
+                        "description": "Capitalization change."
+                    },
+                    {
+                        "map": "Óó|Ôô|Öö|Úú|Üü|Ýý",
+                        "replace": 1,
+                        "description": "Capitalization change."
+                    },
+                    {
+                        "map": "Čč|Ďď|Ěě|Ĺĺ|Ľľ|Ňň",
+                        "replace": 1,
+                        "description": "Capitalization change."
+                    },
+                    {
+                        "map": "Ŕŕ|Řř|Šš|Ťť|Ůů|Űű",
+                        "replace": 1,
+                        "description": "Capitalization change."
+                    },
+                    {
+                        "map": "Žž",
+                        "replace": 1,
+                        "description": "Capitalization change."
+                    },
+                    {
+                        "map": "AÁÄ|CČ|DĎ|EÉĚ|IÍ|LĹĽ",
+                        "replace": 1,
+                        "description": "Replace Accents"
+                    },
+                    {
+                        "map": "NŇ|OÓÔÖ|RŔŘ|SŠ|TŤ|UÚÜŮŰ",
+                        "replace": 1,
+                        "description": "Replace Accents"
+                    },
+                    {
+                        "map": "YÝ|ZŽ|aáä|cč|dď|eéě",
+                        "replace": 1,
+                        "description": "Replace Accents"
+                    },
+                    {
+                        "map": "ií|lĺľ|nň|oóôö|rŕř|sš",
+                        "replace": 1,
+                        "description": "Replace Accents"
+                    },
+                    {
+                        "map": "tť|uúüůű|yý|zž",
+                        "replace": 1,
+                        "description": "Replace Accents"
+                    },
+                    {
+                        "map": "AaÁÄáä|CcČč|DdĎď|EeÉéĚě|IiÍí|LlĹĺĽľ",
+                        "replace": 2,
+                        "description": "Capitalization and Accent change."
+                    },
+                    {
+                        "map": "NnŇň|OoÓÔÖóôö|RrŔŕŘř|SsŠš|TtŤť|UuÚÜúüŮůŰű",
+                        "replace": 2,
+                        "description": "Capitalization and Accent change."
+                    },
+                    {
+                        "map": "YyÝý|ZzŽž",
+                        "replace": 2,
+                        "description": "Capitalization and Accent change."
+                    },
+                    {
+                        "map": "aáä|cč|dď|eé|ií|lľĺ|nň|oóôö|rŕ|sš|tť|uúü|yý|zž",
+                        "replace": 1,
+                        "description": "Hunspell Aff Map"
+                    },
+                    {
+                        "map": "0é|2ľ|3š|4č|5ť|6ž",
+                        "replace": 75,
+                        "description": "Hunspell Replace Map"
+                    },
+                    {
+                        "map": "7ý|8á|9í|aá|aä|bp",
+                        "replace": 75,
+                        "description": "Hunspell Replace Map"
+                    },
+                    {
+                        "map": "c(ds)|cč|dď|eä|eé|ií",
+                        "replace": 75,
+                        "description": "Hunspell Replace Map"
+                    },
+                    {
+                        "map": "lĺ|lľ|nň|oó|oô|sz",
+                        "replace": 75,
+                        "description": "Hunspell Replace Map"
+                    },
+                    {
+                        "map": "sš|uú|uű|yz|yý|zž",
+                        "replace": 75,
+                        "description": "Hunspell Replace Map"
+                    },
+                    {
+                        "map": "íý|üű|ĺľ",
+                        "replace": 75,
+                        "description": "Hunspell Replace Map"
+                    }
+                ]
+            }
         }
     ],
-    // Dictionaries to always be used.
-    // Generally left empty
     "dictionaries": [],
-    // Language Rules to apply to matching files.
-    // Files are matched on `languageId` and `local`
     "languageSettings": [
         {
-            // VSCode languageId. i.e. typescript, java, go, cpp, javascript, markdown, latex
-            // * will match against any file type.
             "languageId": "*",
-            // Language local. i.e. en-US, de-AT, or ru. * will match all locals.
-            // Multiple locals can be specified like: "en, en-US" to match both English and English US.
             "locale": "sk",
-            // By default the whole text of a file is included for spell checking
-            // Adding patterns to the "includeRegExpList" to only include matching patterns
             "includeRegExpList": [],
-            // To exclude patterns, add them to "ignoreRegExpList"
             "ignoreRegExpList": [],
-            // regex patterns than can be used with ignoreRegExpList or includeRegExpList
-            // Example: "pattern": [{ "name": "mdash", "pattern": "&mdash;" }]
-            // This could be included in "ignoreRegExpList": ["mdash"]
             "patterns": [],
-            // List of dictionaries to enable by name in `dictionaryDefinitions`
             "dictionaries": ["sk-sk"],
-            // Dictionary definitions can also be supplied here. They are only used iff "languageId" and "locale" match.
             "dictionaryDefinitions": []
         }
     ]
