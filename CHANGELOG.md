@@ -1,5 +1,12 @@
 # Release Notes
 
+## [8.6.3](https://github.com/streetsidesoftware/cspell-dicts/compare/cspell-dicts@8.6.2...cspell-dicts@8.6.3) (2023-02-06)
+
+
+### Updates and Bug Fixes
+
+* improve suggestions ([#1882](https://github.com/streetsidesoftware/cspell-dicts/issues/1882)) ([93c1a7a](https://github.com/streetsidesoftware/cspell-dicts/commit/93c1a7a342a823e5a2f66bd935160d2d1e1fe95b))
+
 ## [8.6.2](https://github.com/streetsidesoftware/cspell-dicts/compare/cspell-dicts@8.6.1...cspell-dicts@8.6.2) (2023-02-05)
 
 
