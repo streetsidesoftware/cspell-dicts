@@ -1,5 +1,26 @@
 # Release Notes
 
+## [8.6.4](https://github.com/streetsidesoftware/cspell-dicts/compare/cspell-dicts@8.6.3...cspell-dicts@8.6.4) (2023-02-08)
+
+
+### Build System
+
+* **deps:** bump ava from 5.1.1 to 5.2.0 ([#1885](https://github.com/streetsidesoftware/cspell-dicts/issues/1885)) ([8787a88](https://github.com/streetsidesoftware/cspell-dicts/commit/8787a88e904e055af640ce1f4f082978e69488a8))
+* **deps:** bump streetsidesoftware/cspell-action from 2.18.0 to 2.19.0 ([#1884](https://github.com/streetsidesoftware/cspell-dicts/issues/1884)) ([be5fb12](https://github.com/streetsidesoftware/cspell-dicts/commit/be5fb123a1d0ff0174f984904fd2d6673d046548))
+
+
+### Updates and Bug Fixes
+
+* Add `walkthrough` and `walkthroughs` ([#1891](https://github.com/streetsidesoftware/cspell-dicts/issues/1891)) ([c76f449](https://github.com/streetsidesoftware/cspell-dicts/commit/c76f449dc3180bd68186df52bb26f20d6461a8e3))
+* Add walk-through ([#1890](https://github.com/streetsidesoftware/cspell-dicts/issues/1890)) ([5eabe81](https://github.com/streetsidesoftware/cspell-dicts/commit/5eabe8138da6bcb5f0865ab6afa56a4da4b21894))
+* Workflow Bot -- Build Dictionaries ([#1892](https://github.com/streetsidesoftware/cspell-dicts/issues/1892)) ([fc2a057](https://github.com/streetsidesoftware/cspell-dicts/commit/fc2a0573ca7648934fe719d47e88e6edbd727834))
+
+
+### Continuous Integration
+
+* Workflow Bot -- Update ALL Dependencies (main) ([#1888](https://github.com/streetsidesoftware/cspell-dicts/issues/1888)) ([ec80fc8](https://github.com/streetsidesoftware/cspell-dicts/commit/ec80fc8839e6122437e700532cbecf76e4e085ea))
+* Workflow Bot -- Update ALL Dependencies (main) ([#1889](https://github.com/streetsidesoftware/cspell-dicts/issues/1889)) ([812a1ce](https://github.com/streetsidesoftware/cspell-dicts/commit/812a1cec4c6ef84cd17c2d50d07e88d291855251))
+
 ## [8.6.3](https://github.com/streetsidesoftware/cspell-dicts/compare/cspell-dicts@8.6.2...cspell-dicts@8.6.3) (2023-02-06)
 
 
