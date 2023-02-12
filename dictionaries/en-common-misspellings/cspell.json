@@ -1,13 +1,7 @@
 {
     "version": "0.2",
-    "files": [
-        "**/*.{md,txt}"
-    ],
-    "dictionaries": [
-        "en-common-misspellings"
-    ],
-    "ignorePaths": ["cspell*"],
-    "import": [
-        "./cspell-ext.json"
-    ]
+    "files": ["**/*.{md,txt}"],
+    "dictionaries": ["en-common-misspellings"],
+    "ignorePaths": ["cspell*.{json,yaml}"],
+    "import": ["./cspell-ext.json"]
 }
