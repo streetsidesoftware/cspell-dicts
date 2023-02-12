@@ -1,0 +1,43 @@
+{
+  "name": "@cspell/dict-en-common-misspellings",
+  "version": "1.0.0",
+  "description": "Common English misspellings dictionary for cspell.",
+  "publishConfig": {
+    "access": "public"
+  },
+  "exports": {
+    ".": "./cspell-ext.json",
+    "./cspell": "./cspell-ext.json",
+    "./cspell-ext.json": "./cspell-ext.json"
+  },
+  "scripts": {
+    "build": "echo ok",
+    "test": "echo ok",
+    "prepublishOnly": "echo OK",
+    "prepare": "yarn run build"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/streetsidesoftware/cspell-dicts.git"
+  },
+  "keywords": [
+    "cspell",
+    "cspell-ext",
+    "en-common-misspellings",
+    "Common English Misspellings",
+    "dictionary",
+    "spelling"
+  ],
+  "author": "Jason Dent",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/streetsidesoftware/cspell-dicts/issues"
+  },
+  "homepage": "https://github.com/streetsidesoftware/cspell-dicts/blob/main/dictionaries/en-common-misspellings#readme",
+  "devDependencies": {},
+  "dependencies": {},
+  "files": [
+    "cspell-ext.json",
+    "cspell-ext.config.yaml"
+  ]
+}

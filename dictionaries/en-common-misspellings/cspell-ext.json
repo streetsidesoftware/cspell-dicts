@@ -1,0 +1,15 @@
+{
+    "id": "en-common-misspellings",
+    "version": "0.2",
+    "name": "English - Common Misspellings",
+    "description": "Common English misspellings dictionary for cspell.",
+    "readonly": true,
+    "import": ["./cspell-ext.config.yaml"],
+    "languageSettings": [
+        {
+            "languageId": "*",
+            "locale": "en",
+            "dictionaries": ["en-common-misspellings"]
+        }
+    ]
+}
