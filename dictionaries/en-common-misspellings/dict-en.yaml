@@ -1,33 +1,35 @@
 # yaml-language-server: $schema=https://raw.githubusercontent.com/streetsidesoftware/cspell/main/cspell.schema.json
+# cspell:ignoreRegExp /- [\w'-]+->/
+# cspell:words extremophile gardaí guaraná Gothenburg Gottlieb Giulia Giulio Johannine Rican Ricans
+# cspell:locale en
 
+# The words below apply to both US English and British English
 dictionaryDefinitions:
   - name: en-common-misspellings
     flagWords:
       - abandonned->abandoned
+      - abbout->about
       - aberation->aberration
       - abilityes->abilities
       - abilties->abilities
       - abilty->ability
       - abondon->abandon
-      - abbout->about
-      - abotu->about
-      - abouta->about a
-      - aboutit->about it
-      - aboutthe->about the
-      - abscence->absence
       - abondoned->abandoned
       - abondoning->abandoning
       - abondons->abandons
       - aborigene->aborigine
-      - accesories->accessories
-      - accidant->accident
       - abortificant->abortifacient
+      - abotu->about
+      - abouta->about a
+      - aboutit->about it
+      - aboutthe->about the
       - abreviate->abbreviate
       - abreviated->abbreviated
       - abreviation->abbreviation
       - abritrary->arbitrary
       - absail->abseil
       - absailing->abseiling
+      - abscence->absence
       - absense->absence
       - absolutly->absolutely
       - absorbsion->absorption
@@ -46,8 +48,9 @@ dictionaryDefinitions:
       - accension->accession, ascension
       - acceptence->acceptance
       - acceptible->acceptable
+      - accesories->accessories
       - accessable->accessible
-      - acident->accident
+      - accidant->accident
       - accidentaly->accidentally
       - accidently->accidentally
       - acclimitization->acclimatization
@@ -89,6 +92,7 @@ dictionaryDefinitions:
       - achived->achieved, archived
       - achivement->achievement
       - achivements->achievements
+      - acident->accident
       - acknowldeged->acknowledged
       - acknowledgeing->acknowledging
       - ackward->awkward, backward
@@ -145,6 +149,7 @@ dictionaryDefinitions:
       - admissable->admissible
       - admited->admitted
       - admitedly->admittedly
+      - adn->and
       - adolecent->adolescent
       - adquire->acquire
       - adquired->acquired
@@ -211,6 +216,7 @@ dictionaryDefinitions:
       - airbourne->airborne
       - aircaft->aircraft
       - aircrafts->aircraft
+      - aircrafts'->aircraft's
       - airporta->airports
       - airrcraft->aircraft
       - aisian->asian
@@ -248,6 +254,7 @@ dictionaryDefinitions:
       - allopones->allophones
       - allready->already
       - allthough->although
+      - alltime->all-time
       - alltogether->altogether
       - almsot->almost
       - alochol->alcohol
@@ -311,13 +318,13 @@ dictionaryDefinitions:
       - anonimity->anonymity
       - anounced->announced
       - anouncement->announcement
-      - ansalisation->nasalisation
       - ansalization->nasalization
       - ansestors->ancestors
       - antartic->antarctic
       - anthromorphization->anthropomorphization
       - anthropolgist->anthropologist
       - anthropolgy->anthropology
+      - antiapartheid->anti-apartheid
       - anual->annual
       - anulled->annulled
       - anwsered->answered
@@ -380,10 +387,6 @@ dictionaryDefinitions:
       - archaelogical->archaeological
       - archaelogists->archaeologists
       - archaelogy->archaeology
-      - archaoelogy->archeology, archaeology
-      - archaology->archeology, archaeology
-      - archeaologist->archeologist, archaeologist
-      - archeaologists->archeologists, archaeologists
       - archetect->architect
       - archetects->architects
       - archetectural->architectural
@@ -567,7 +570,6 @@ dictionaryDefinitions:
       - beggins->begins
       - begining->beginning
       - beginnig->beginning
-      - behavour->behavior, behaviour
       - beleagured->beleaguered
       - beleif->belief
       - beleive->believe
@@ -647,7 +649,6 @@ dictionaryDefinitions:
       - caculater->calculator
       - cacuses->caucuses
       - cahracters->characters
-      - calaber->caliber
       - calander->calendar, calender, colander
       - calculater->calculator
       - calculs->calculus
@@ -759,8 +760,8 @@ dictionaryDefinitions:
       - cerimonious->ceremonious
       - cerimony->ceremony
       - ceromony->ceremony
-      - certaintly->certainly
       - certainity->certainty
+      - certaintly->certainly
       - certian->certain
       - cervial->cervical, servile, serval
       - chalenging->challenging
@@ -809,11 +810,13 @@ dictionaryDefinitions:
       - clasical->classical
       - clasically->classically
       - cleareance->clearance
-      - clera->clear, sclera
+      - clera->clear
       - clincial->clinical
       - clinicaly->clinically
       - cmo->com
       - cmoputer->computer
+      - co-incided->coincided
+      - Coca Cola->Coca-Cola
       - coctail->cocktail
       - coform->conform
       - cognizent->cognizant
@@ -1003,7 +1006,6 @@ dictionaryDefinitions:
       - constituional->constitutional
       - consttruction->construction
       - constuction->construction
-      - contstruction->construction
       - consulant->consultant
       - consumate->consummate
       - consumated->consummated
@@ -1043,6 +1045,7 @@ dictionaryDefinitions:
       - controvertial->controversial
       - controvery->controversy
       - contruction->construction
+      - contstruction->construction
       - conveinent->convenient
       - convenant->covenant
       - convential->conventional
@@ -1076,11 +1079,10 @@ dictionaryDefinitions:
       - costitution->constitution
       - coucil->council
       - coudl->could, cloud
-      - councellor->councillor, counselor, councilor
-      - councellors->councillors, counselors, councilors
       - counries->countries
       - countains->contains
       - countires->countries
+      - countrie's->countries, countries', country's
       - coururier->courier, couturier
       - coverted->converted, covered, coveted
       - cpoy->coy, copy
@@ -1090,24 +1092,16 @@ dictionaryDefinitions:
       - critereon->criterion
       - criterias->criteria
       - criticists->critics
-      - critising->criticising, criticizing
-      - critisising->criticising
       - critisism->criticism
       - critisisms->criticisms
-      - critisize->criticise, criticize
-      - critisized->criticised, criticized
-      - critisizes->criticises, criticizes
-      - critisizing->criticising, criticizing
       - critized->criticized
       - critizing->criticizing
       - crockodiles->crocodiles
       - crowm->crown
       - crtical->critical
-      - crticised->criticised
       - crucifiction->crucifixion
       - crusies->cruises
       - crutial->crucial
-      - crystalisation->crystallisation
       - culiminating->culminating
       - cumulatative->cumulative
       - curch->church
@@ -1120,9 +1114,7 @@ dictionaryDefinitions:
       - daed->dead
       - dael->deal, dial, dahl
       - dalmation->dalmatian
-      - damenor->demeanor
       - dammage->damage
-      - Dardenelles->Dardanelles
       - daugher->daughter
       - debateable->debatable
       - decendant->descendant
@@ -1166,7 +1158,6 @@ dictionaryDefinitions:
       - delevopment->development
       - deliberatly->deliberately
       - delusionally->delusively
-      - demenor->demeanor
       - demographical->demographic
       - demolision->demolition
       - demorcracy->democracy
@@ -1240,6 +1231,7 @@ dictionaryDefinitions:
       - dicovery->discovery
       - dictionarys->dictionaries
       - dicussed->discussed
+      - didnt->didn't
       - diea->idea, die
       - dieing->dying, dyeing
       - dieties->deities
@@ -1299,7 +1291,6 @@ dictionaryDefinitions:
       - dispite->despite
       - dispostion->disposition
       - disproportiate->disproportionate
-      - disputandem->disputandum
       - disricts->districts
       - dissagreement->disagreement
       - dissapear->disappear
@@ -1330,7 +1321,6 @@ dictionaryDefinitions:
       - divinition->divination
       - divison->division
       - divisons->divisions
-      - dum->dumb
       - doccument->document
       - doccumented->documented
       - doccuments->documents
@@ -1338,22 +1328,24 @@ dictionaryDefinitions:
       - doctines->doctrines
       - documenatry->documentary
       - doens->does
+      - doesnt->doesn't
       - doign->doing
       - dominaton->domination
       - dominent->dominant
       - dominiant->dominant
       - donig->doing
+      - dosen't->doesn't
       - doub->doubt, daub
       - doulbe->double
       - dowloads->downloads
       - dramtic->dramatic
-      - draughtman->draughtsman
       - Dravadian->Dravidian
       - dreasm->dreams
       - driectly->directly
       - drnik->drink
       - druming->drumming
       - drummless->drumless
+      - dum->dumb
       - dupicate->duplicate
       - durig->during
       - durring->during
@@ -1368,7 +1360,6 @@ dictionaryDefinitions:
       - ecidious->deciduous
       - eclispe->eclipse
       - ecomonic->economic
-      - econoımic->economic
       - econoimic->economic
       - ect->etc
       - eearly->early
@@ -1433,18 +1424,15 @@ dictionaryDefinitions:
       - emmitting->emitting
       - emnity->enmity
       - emperical->empirical
-      - emphaised->emphasised
       - emphsis->emphasis
       - emphysyma->emphysema
       - empirial->empirical, imperial
       - emporer->emperor
       - emprisoned->imprisoned
-      - enameld->enameled
       - enchancement->enhancement
       - encouraing->encouraging
       - encryptiion->encryption
       - encylopedia->encyclopedia
-      - endevors->endeavors
       - endevour->endeavour
       - endig->ending
       - endolithes->endoliths
@@ -1488,9 +1476,9 @@ dictionaryDefinitions:
       - enxt->next
       - epidsodes->episodes
       - epsiode->episode
-      - equialent->equivalent
       - equalibrium->equilibrium
       - equelibrium->equilibrium
+      - equialent->equivalent
       - equilibium->equilibrium
       - equilibrum->equilibrium
       - equiped->equipped
@@ -1628,9 +1616,9 @@ dictionaryDefinitions:
       - extremly->extremely
       - extrordinarily->extraordinarily
       - extrordinary->extraordinary
-      - eyar->year, eyas
-      - eyars->years, eyas
-      - eyasr->years, eyas
+      - eyar->year
+      - eyars->years
+      - eyasr->years
       - faciliate->facilitate
       - faciliated->facilitated
       - faciliates->facilitates
@@ -1645,7 +1633,6 @@ dictionaryDefinitions:
       - Farenheit->Fahrenheit
       - fatc->fact
       - faught->fought
-      - favoutrable->favourable
       - feasable->feasible
       - Febuary->February
       - Feburary->February
@@ -1677,14 +1664,13 @@ dictionaryDefinitions:
       - florescent->fluorescent
       - flourescent->fluorescent
       - flourine->fluorine
-      - fluorish->flourish
       - flourishment->flourishing
+      - fluorish->flourish
       - follwoing->following
       - folowing->following
       - fomed->formed
       - fomr->from, form
       - fonetic->phonetic
-      - fontrier->fontier
       - foootball->football
       - forbad->forbade
       - forbiden->forbidden
@@ -1692,7 +1678,6 @@ dictionaryDefinitions:
       - forfiet->forfeit
       - forhead->forehead
       - foriegn->foreign
-      - Formalhaut->Fomalhaut
       - formallize->formalize
       - formallized->formalized
       - formaly->formally, formerly
@@ -1723,10 +1708,8 @@ dictionaryDefinitions:
       - froniter->frontier
       - fucntion->function
       - fucntioning->functioning
-      - fufill->fulfill
       - fufilled->fulfilled
       - fulfiled->fulfilled
-      - fullfill->fulfill
       - fullfilled->fulfilled
       - fundametal->fundamental
       - fundametals->fundamentals
@@ -1735,7 +1718,6 @@ dictionaryDefinitions:
       - furuther->further
       - futher->further
       - futhermore->furthermore
-      - futhroc->futhark, futhorc
       - gae->game, Gael, gale
       - galatic->galactic
       - Galations->Galatians
@@ -1774,7 +1756,6 @@ dictionaryDefinitions:
       - gnawwed->gnawed
       - godess->goddess
       - godesses->goddesses
-      - Godounov->Godunov
       - gogin->going, Gauguin
       - goign->going
       - gonig->going
@@ -1830,7 +1811,6 @@ dictionaryDefinitions:
       - habaeus->habeas
       - habeus->habeas
       - Habsbourg->Habsburg
-      - haemorrage->haemorrhage
       - haev->have, heave
       - halarious->hilarious
       - halp->help
@@ -1856,6 +1836,7 @@ dictionaryDefinitions:
       - harrassing->harassing
       - harrassment->harassment
       - harrassments->harassments
+      - hasnt->hasn't
       - Hatian->Haitian
       - haviest->heaviest
       - headquarer->headquarter
@@ -1872,7 +1853,6 @@ dictionaryDefinitions:
       - helment->helmet
       - helpfull->helpful
       - helpped->helped
-      - hemmorhage->hemorrhage
       - herad->heard, Hera
       - heridity->heredity
       - heroe->hero
@@ -1923,7 +1903,6 @@ dictionaryDefinitions:
       - hting->thing
       - htink->think
       - htis->this
-      - humer->humor, humour
       - humerous->humorous, humerus
       - huminoid->humanoid
       - humoural->humoral
@@ -2132,7 +2111,6 @@ dictionaryDefinitions:
       - intenational->international
       - intented->intended, indented
       - intepretation->interpretation
-      - intepretator->interpretor
       - interational->international
       - interbread->interbreed, interbred
       - interchangable->interchangeable
@@ -2185,6 +2163,7 @@ dictionaryDefinitions:
       - irreplacable->irreplaceable
       - irresistable->irresistible
       - irresistably->irresistibly
+      - isnt->isn't
       - Israelies->Israelis
       - issueing->issuing
       - itnroduced->introduced
@@ -2195,7 +2174,6 @@ dictionaryDefinitions:
       - Januray->January
       - Japanes->Japanese
       - jeapardy->jeopardy
-      - jewllery->jewellery
       - Johanine->Johannine
       - jorunal->journal
       - Jospeh->Joseph
@@ -2223,7 +2201,6 @@ dictionaryDefinitions:
       - konws->knows
       - kwno->know
       - labatory->lavatory, laboratory
-      - labled->labelled, labeled
       - labratory->laboratory
       - laguage->language
       - laguages->languages
@@ -2274,11 +2251,7 @@ dictionaryDefinitions:
       - lightyears->light years
       - likelyhood->likelihood
       - linnaena->linnaean
-      - lippizaner->lipizzaner
       - liquify->liquefy
-      - liscense->license, licence
-      - lisence->license, licence
-      - lisense->license, licence
       - listners->listeners
       - litature->literature
       - literaly->literally
@@ -2294,18 +2267,16 @@ dictionaryDefinitions:
       - lonley->lonely
       - lonly->lonely, only
       - loosing->losing
-      - lotharingen->lothringen
       - lsat->last
-      - lukid->likud
       - lveo->love
       - lvoe->love
       - Lybia->Libya
       - maching->machine, marching, matching
       - mackeral->mackerel
       - magasine->magazine
-      - magizine->magazine
-      - magisine->magazine
       - magincian->magician
+      - magisine->magazine
+      - magizine->magazine
       - magnificient->magnificent
       - magolia->magnolia
       - mailny->mainly
@@ -2324,24 +2295,12 @@ dictionaryDefinitions:
       - mamalian->mammalian
       - managable->manageable, manageably
       - managment->management
-      - maneouvre->manoeuvre
-      - maneouvred->manoeuvred
-      - maneouvres->manoeuvres
-      - maneouvring->manoeuvring
       - manisfestations->manifestations
-      - manoeuverability->maneuverability
-      - manouver->maneuver, manoeuvre
-      - manouverability->maneuverability, manoeuvrability, manoeuverability
-      - manouverable->maneuverable, manoeuvrable
-      - manouvers->maneuvers, manoeuvres
       - mantained->maintained
-      - manuever->maneuver, manoeuvre
-      - manuevers->maneuvers, manoeuvres
       - manufacturedd->manufactured
       - manufature->manufacture
       - manufatured->manufactured
       - manufaturing->manufacturing
-      - manuver->maneuver
       - mariage->marriage
       - marjority->majority
       - markes->marks
@@ -2364,7 +2323,6 @@ dictionaryDefinitions:
       - mathmatically->mathematically
       - mathmatician->mathematician
       - mathmaticians->mathematicians
-      - mccarthyst->mccarthyist
       - mchanics->mechanics
       - meaing->meaning
       - meaninng->meaning
@@ -2373,13 +2331,11 @@ dictionaryDefinitions:
       - medacine->medicine
       - medeival->medieval
       - medevial->medieval
-      - mediciney->mediciny
       - medievel->medieval
       - mediterainnean->mediterranean
       - Mediteranean->Mediterranean
       - meerkrat->meerkat
       - melieux->milieux
-      - membranaphone->membranophone
       - memeber->member
       - menally->mentally
       - meranda->veranda, Miranda
@@ -2431,10 +2387,6 @@ dictionaryDefinitions:
       - mischeivous->mischievous
       - mischevious->mischievous
       - mischievious->mischievous
-      - misdameanor->misdemeanor
-      - misdameanors->misdemeanors
-      - misdemenor->misdemeanor
-      - misdemenors->misdemeanors
       - misfourtunes->misfortunes
       - misile->missile
       - Misouri->Missouri
@@ -2472,8 +2424,6 @@ dictionaryDefinitions:
       - montypic->monotypic
       - moreso->more, more so
       - morgage->mortgage
-      - Morisette->Morissette
-      - Morrisette->Morissette
       - morroccan->moroccan
       - morrocco->morocco
       - morroco->morocco
@@ -2505,7 +2455,6 @@ dictionaryDefinitions:
       - mysogynist->misogynist
       - mysogyny->misogyny
       - mysterous->mysterious
-      - Mythraic->Mithraic
       - naieve->naive
       - Naploeon->Napoleon
       - Napolean->Napoleon
@@ -2530,11 +2479,6 @@ dictionaryDefinitions:
       - negociations->negotiations
       - negotation->negotiation
       - neice->niece, nice
-      - neigborhood->neighborhood
-      - neigbour->neighbour, neighbor
-      - neigbourhood->neighbourhood
-      - neigbouring->neighbouring, neighboring
-      - neigbours->neighbours, neighbors
       - neolitic->neolithic
       - nessasarily->necessarily
       - nessecary->necessary
@@ -2550,7 +2494,6 @@ dictionaryDefinitions:
       - nkow->know
       - nkwo->know
       - nmae->name
-      - noncombatents->noncombatants
       - nonsence->nonsense
       - nontheless->nonetheless
       - noone->no one
@@ -2576,7 +2519,6 @@ dictionaryDefinitions:
       - nucular->nuclear
       - nuculear->nuclear
       - nuisanse->nuisance
-      - Nullabour->Nullarbor
       - numberous->numerous
       - Nuremburg->Nuremberg
       - nusance->nuisance
@@ -2678,12 +2620,9 @@ dictionaryDefinitions:
       - optomism->optimism
       - orded->ordered
       - organim->organism
-      - organistion->organisation
-      - organiztion->organization
       - orgin->origin, organ
       - orginal->original
       - orginally->originally
-      - orginize->organise
       - oridinarily->ordinarily
       - origanaly->originally
       - originall->original, originally
@@ -2709,7 +2648,6 @@ dictionaryDefinitions:
       - paide->paid
       - paitience->patience
       - palce->place, palace
-      - paleolitic->paleolithic
       - paliamentarian->parliamentarian
       - Palistian->Palestinian
       - Palistinian->Palestinian
@@ -2718,12 +2656,6 @@ dictionaryDefinitions:
       - pamflet->pamphlet
       - pamplet->pamphlet
       - pantomine->pantomime
-      - Papanicalou->Papanicolaou
-      - paralel->parallel
-      - paralell->parallel
-      - paralelly->parallelly
-      - paralely->parallelly
-      - parallely->parallelly
       - paranthesis->parenthesis
       - paraphenalia->paraphernalia
       - parellels->parallels
@@ -2731,11 +2663,6 @@ dictionaryDefinitions:
       - parituclar->particular
       - parliment->parliament
       - parrakeets->parakeets
-      - parralel->parallel
-      - parrallel->parallel
-      - parrallell->parallel
-      - parrallelly->parallelly
-      - parrallely->parallelly
       - partialy->partially
       - particually->particularly
       - particualr->particular
@@ -2745,7 +2672,6 @@ dictionaryDefinitions:
       - pary->party
       - pased->passed
       - pasengers->passengers
-      - passerbys->passersby
       - pasttime->pastime
       - pastural->pastoral
       - paticular->particular
@@ -2771,8 +2697,8 @@ dictionaryDefinitions:
       - penninsular->peninsular
       - pennisula->peninsula
       - Pennyslvania->Pennsylvania
-      - pensle->pencil
       - pensinula->peninsula
+      - pensle->pencil
       - peom->poem
       - peoms->poems
       - peopel->people
@@ -2802,8 +2728,8 @@ dictionaryDefinitions:
       - permissable->permissible
       - perogative->prerogative
       - peronal->personal
-      - perpertrated->perpetrated
       - perosnality->personality
+      - perpertrated->perpetrated
       - perphas->perhaps
       - perpindicular->perpendicular
       - persan->person
@@ -2841,7 +2767,6 @@ dictionaryDefinitions:
       - philospher->philosopher
       - philosphies->philosophies
       - philosphy->philosophy
-      - Phonecian->Phoenecian
       - phongraph->phonograph
       - phylosophical->philosophical
       - physicaly->physically
@@ -2964,8 +2889,6 @@ dictionaryDefinitions:
       - preliferation->proliferation
       - premeire->premiere
       - premeired->premiered
-      - premillenial->premillennial
-      - preminence->preeminence
       - premission->permission
       - Premonasterians->Premonstratensians
       - preocupation->preoccupation
@@ -2997,9 +2920,9 @@ dictionaryDefinitions:
       - primatively->primitively
       - primatives->primitives
       - primordal->primordial
-      - principlaity->principality
       - principaly->principality
       - principial->principal
+      - principlaity->principality
       - principly->principally
       - prinicipal->principal
       - privalege->privilege
@@ -3200,8 +3123,6 @@ dictionaryDefinitions:
       - recipiants->recipients
       - recived->received
       - recivership->receivership
-      - recogise->recognise
-      - recogize->recognize
       - recomend->recommend
       - recomended->recommended
       - recomending->recommending
@@ -3268,7 +3189,6 @@ dictionaryDefinitions:
       - relaly->really
       - relatiopnship->relationship
       - relativly->relatively
-      - relected->reelected
       - releive->relieve
       - releived->relieved
       - releiver->reliever
@@ -3282,7 +3202,6 @@ dictionaryDefinitions:
       - religously->religiously
       - relinqushment->relinquishment
       - relitavely->relatively
-      - relized->realised, realized
       - relpacement->replacement
       - remaing->remaining
       - remeber->remember
@@ -3297,7 +3216,7 @@ dictionaryDefinitions:
       - reminsicent->reminiscent
       - rendevous->rendezvous
       - rendezous->rendezvous
-      - renedered->rende
+      - renedered->rendered
       - renewl->renewal
       - rennovate->renovate
       - rennovated->renovated
@@ -3305,7 +3224,6 @@ dictionaryDefinitions:
       - rennovation->renovation
       - rentors->renters
       - reoccurrence->recurrence
-      - reorganision->reorganisation
       - repatition->repetition, repartition
       - repblic->republic
       - repblican->republican
@@ -3348,7 +3266,6 @@ dictionaryDefinitions:
       - resemblence->resemblance
       - resevoir->reservoir
       - residental->residential
-      - resignement->resignment
       - resistable->resistible
       - resistence->resistance
       - resistent->resistant
@@ -3407,14 +3324,12 @@ dictionaryDefinitions:
       - rhythem->rhythm
       - rhythim->rhythm
       - rhytmic->rhythmic
-      - rigeur->rigueur, rigour, rigor
       - rigourous->rigorous
       - rininging->ringing
       - rised->raised, rose
       - Rockerfeller->Rockefeller
       - rococco->rococo
       - rocord->record
-      - roomate->roommate
       - rougly->roughly
       - rucuperate->recuperate
       - rudimentatry->rudimentary
@@ -3502,8 +3417,6 @@ dictionaryDefinitions:
       - seperatism->separatism
       - seperatist->separatist
       - sepina->subpoena
-      - sepulchure->sepulchre, sepulcher
-      - sepulcre->sepulchre, sepulcher
       - sergent->sergeant
       - settelement->settlement
       - settlment->settlement
@@ -3511,9 +3424,7 @@ dictionaryDefinitions:
       - severley->severely
       - severly->severely
       - sevice->service
-      - shadasloo->shadaloo
       - shaddow->shadow
-      - shadoloo->shadaloo
       - shamen->shaman, shamans
       - sheat->sheath, sheet, cheat
       - sheild->shield
@@ -3525,6 +3436,7 @@ dictionaryDefinitions:
       - shorly->shortly
       - shortwhile->short while
       - shoudl->should
+      - shoudln->should, shouldn't
       - shouldnt->should not
       - shreak->shriek
       - shrinked->shrunk
@@ -3586,7 +3498,6 @@ dictionaryDefinitions:
       - somtimes->sometimes
       - somwhere->somewhere
       - sophicated->sophisticated
-      - sophmore->sophomore
       - sorceror->sorcerer
       - sorrounding->surrounding
       - sotry->story
@@ -3607,7 +3518,6 @@ dictionaryDefinitions:
       - spainish->Spanish
       - speach->speech
       - specfic->specific
-      - speciallized->specialised, specialized
       - specif->specific, specify
       - specifiying->specifying
       - speciman->specimen
@@ -3616,7 +3526,6 @@ dictionaryDefinitions:
       - spects->aspects, expects
       - spectum->spectrum
       - speices->species
-      - spendour->splendour
       - spermatozoan->spermatozoon
       - spoace->space
       - sponser->sponsor
@@ -3802,7 +3711,6 @@ dictionaryDefinitions:
       - surrouding->surrounding
       - surrundering->surrendering
       - surveilence->surveillance
-      - surveill->surveil
       - surveyer->surveyor
       - surviver->survivor
       - survivers->survivors
@@ -3881,7 +3789,7 @@ dictionaryDefinitions:
       - testiclular->testicular
       - testomony->testimony
       - tghe->the
-      - theather->theater
+      - thast->that, that's
       - theese->these
       - theif->thief
       - theives->thieves
@@ -3891,6 +3799,7 @@ dictionaryDefinitions:
       - therafter->thereafter
       - therby->thereby
       - theri->their
+      - theyre->they're
       - thgat->that
       - thge->the
       - thier->their
@@ -3935,6 +3844,7 @@ dictionaryDefinitions:
       - tkaing->taking
       - tlaking->talking
       - tobbaco->tobacco
+      - todays->today's
       - todya->today
       - toghether->together
       - toke->took
@@ -4015,7 +3925,6 @@ dictionaryDefinitions:
       - unacompanied->unaccompanied
       - unahppy->unhappy
       - unanymous->unanimous
-      - unathorised->unauthorised
       - unavailible->unavailable
       - unballance->unbalance
       - unbeknowst->unbeknownst
@@ -4038,10 +3947,10 @@ dictionaryDefinitions:
       - uneccesary->unnecessary
       - unecessary->unnecessary
       - unequalities->inequalities
-      - unforseen->unforeseen
       - unforetunately->unfortunately
       - unforgetable->unforgettable
       - unforgiveable->unforgivable
+      - unforseen->unforeseen
       - unfortunatley->unfortunately
       - unfortunatly->unfortunately
       - unfourtunately->unfortunately
@@ -4061,7 +3970,6 @@ dictionaryDefinitions:
       - univesity->university
       - unkown->unknown
       - unlikey->unlikely
-      - unmanouverable->unmaneuverable, unmanoeuvrable
       - unmistakeably->unmistakably
       - unneccesarily->unnecessarily
       - unneccesary->unnecessary
@@ -4070,7 +3978,6 @@ dictionaryDefinitions:
       - unnecesarily->unnecessarily
       - unnecesary->unnecessary
       - unoffical->unofficial
-      - unoperational->nonoperational
       - unoticeable->unnoticeable
       - unplease->displease
       - unplesant->unpleasant
@@ -4150,7 +4057,6 @@ dictionaryDefinitions:
       - versitlity->versatility
       - vetween->between
       - veyr->very
-      - vigeur->vigueur, vigour, vigor
       - vigilence->vigilance
       - vigourous->vigorous
       - villian->villain
@@ -4190,6 +4096,7 @@ dictionaryDefinitions:
       - wardobe->wardrobe
       - warrent->warrant
       - warrriors->warriors
+      - wasnt->wasn't
       - wass->was
       - watn->want
       - wayword->wayward
@@ -4224,8 +4131,8 @@ dictionaryDefinitions:
       - wih->with
       - wiht->with
       - wille->will
-      - willk->will
       - willingless->willingness
+      - willk->will
       - wirting->writing
       - withdrawl->withdrawal, withdraw
       - witheld->withheld
@@ -4265,32 +4172,12 @@ dictionaryDefinitions:
       - yeasr->years
       - yeild->yield
       - yeilding->yielding
-      - Yementite->Yemenite, Yemeni
       - yera->year
-      - yrea->year
       - yeras->years
       - yersa->years
       - yotube->youtube
-      - youseff->yousef
       - youself->yourself
+      - yrea->year
       - ytou->you
       - yuo->you
       - zeebra->zebra
-      - adn->and
-      - alltime->all-time
-      - antiapartheid->anti-apartheid
-      - Coca Cola->Coca-Cola
-      - co-incided->coincided
-      - aircrafts'->aircraft's
-      - countrie's->countries, countries', country's
-      - didnt->didn't
-      - doesnt->doesn't
-      - dosen't->doesn't
-      - Hallowean->Hallowe'en, Halloween
-      - hasnt->hasn't
-      - isnt->isn't
-      - shoudln->should, shouldn't
-      - thast->that, that's
-      - theyre->they're
-      - todays->today's
-      - wasnt->wasn't
