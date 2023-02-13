@@ -1,5 +1,25 @@
 # Release Notes
 
+## [8.7.0](https://github.com/streetsidesoftware/cspell-dicts/compare/cspell-dicts@8.6.4...cspell-dicts@8.7.0) (2023-02-12)
+
+
+### Features
+
+* Add English Common Misspellings dictionary ([#1898](https://github.com/streetsidesoftware/cspell-dicts/issues/1898)) ([70456a0](https://github.com/streetsidesoftware/cspell-dicts/commit/70456a0aeb2f662a5a479dcb60bed6f9ba8944aa))
+
+
+### Continuous Integration
+
+* Workflow Bot -- Update ALL Dependencies (main) ([#1894](https://github.com/streetsidesoftware/cspell-dicts/issues/1894)) ([6a7f214](https://github.com/streetsidesoftware/cspell-dicts/commit/6a7f214d47c09f4b43f200e4040542bf66e6ab3e))
+* Workflow Bot -- Update ALL Dependencies (main) ([#1896](https://github.com/streetsidesoftware/cspell-dicts/issues/1896)) ([fcbf04d](https://github.com/streetsidesoftware/cspell-dicts/commit/fcbf04ddc6bf0ae76c89daebdbd4e05ea707726e))
+* Workflow Bot -- Update ALL Dependencies (main) ([#1899](https://github.com/streetsidesoftware/cspell-dicts/issues/1899)) ([8081e96](https://github.com/streetsidesoftware/cspell-dicts/commit/8081e96ffa9dca8058692adcb650bf6de34b5a61))
+
+
+### Updates and Bug Fixes
+
+* split the dictionary in American and British ([#1901](https://github.com/streetsidesoftware/cspell-dicts/issues/1901)) ([7b963da](https://github.com/streetsidesoftware/cspell-dicts/commit/7b963da84752c97f934a775d06ca7508e4a4ba43))
+* Workflow Bot -- Build Dictionaries ([#1900](https://github.com/streetsidesoftware/cspell-dicts/issues/1900)) ([2be3a7c](https://github.com/streetsidesoftware/cspell-dicts/commit/2be3a7cc64e82cc7480cefd91963bc3ddb7d9e73))
+
 ## [8.6.4](https://github.com/streetsidesoftware/cspell-dicts/compare/cspell-dicts@8.6.3...cspell-dicts@8.6.4) (2023-02-08)
 
 
