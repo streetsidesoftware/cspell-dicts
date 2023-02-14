@@ -11,6 +11,6 @@ The entries use the following format:
 ```yaml
 dictionaryDefinitions:
   - name: en-common-misspellings
-    flagWords:
+    suggestWords:
       - misspelling->correction
 ```
