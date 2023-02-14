@@ -8,7 +8,7 @@ This is a pre-built dictionary for use with CSpell.
 
 | Tool                                                                                                                                 | Version      |
 | ------------------------------------------------------------------------------------------------------------------------------------ | ------------ |
-| [cspell](https://github.com/streetsidesoftware/cspell)                                                                               | `>= 6.23.0 ` |
+| [cspell](https://github.com/streetsidesoftware/cspell)                                                                               | `>= 6.25.0 ` |
 | [Code Spell Checker - Visual Studio Code](https://marketplace.visualstudio.com/items?itemName=streetsidesoftware.code-spell-checker) | `>= 2.17.0`  |
 
 ## Installation
