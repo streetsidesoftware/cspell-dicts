@@ -1,5 +1,12 @@
 # Change Log
 
+## [1.0.1](https://github.com/streetsidesoftware/cspell-dicts/compare/@cspell/dict-en-common-misspellings@1.0.0...@cspell/dict-en-common-misspellings@1.0.1) (2023-02-14)
+
+
+### Updates and Bug Fixes
+
+* Use `suggestWords` instead of `flagWords` for the suggestions ([#1907](https://github.com/streetsidesoftware/cspell-dicts/issues/1907)) ([2dd36e2](https://github.com/streetsidesoftware/cspell-dicts/commit/2dd36e2609abe2f9ff4c242ea921fa5f4afc51c3))
+
 ## 1.0.0 (2023-02-12)
 
 

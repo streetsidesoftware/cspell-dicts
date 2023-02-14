@@ -1,5 +1,12 @@
 # Release Notes
 
+## [8.7.1](https://github.com/streetsidesoftware/cspell-dicts/compare/cspell-dicts@8.7.0...cspell-dicts@8.7.1) (2023-02-14)
+
+
+### Updates and Bug Fixes
+
+* Use `suggestWords` instead of `flagWords` for the suggestions ([#1907](https://github.com/streetsidesoftware/cspell-dicts/issues/1907)) ([2dd36e2](https://github.com/streetsidesoftware/cspell-dicts/commit/2dd36e2609abe2f9ff4c242ea921fa5f4afc51c3))
+
 ## [8.7.0](https://github.com/streetsidesoftware/cspell-dicts/compare/cspell-dicts@8.6.4...cspell-dicts@8.7.0) (2023-02-12)
 
 
