@@ -75,7 +75,7 @@ module.exports = class extends Generator {
             {
                 type: 'input',
                 name: 'languageId',
-                message: 'Programing languageID/filetype, i.e. "typescript", "php", "go", or "*" for any.',
+                message: 'Programming languageID/filetype, i.e. "typescript", "php", "go", or "*" for any.',
                 default: '*',
             },
             {
