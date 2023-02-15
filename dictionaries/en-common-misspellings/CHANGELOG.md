@@ -1,5 +1,13 @@
 # Change Log
 
+## [1.0.2](https://github.com/streetsidesoftware/cspell-dicts/compare/@cspell/dict-en-common-misspellings@1.0.1...@cspell/dict-en-common-misspellings@1.0.2) (2023-02-15)
+
+
+### Updates and Bug Fixes
+
+* Encourage the correct spelling of `programming`. ([#1913](https://github.com/streetsidesoftware/cspell-dicts/issues/1913)) ([d7d49ae](https://github.com/streetsidesoftware/cspell-dicts/commit/d7d49ae821418716d8268cb4934d8e06231dc06e))
+* update requirements doc ([#1910](https://github.com/streetsidesoftware/cspell-dicts/issues/1910)) ([55a93d6](https://github.com/streetsidesoftware/cspell-dicts/commit/55a93d6d4d017d99073922fb4085db4359ac401e))
+
 ## [1.0.1](https://github.com/streetsidesoftware/cspell-dicts/compare/@cspell/dict-en-common-misspellings@1.0.0...@cspell/dict-en-common-misspellings@1.0.1) (2023-02-14)
 
 

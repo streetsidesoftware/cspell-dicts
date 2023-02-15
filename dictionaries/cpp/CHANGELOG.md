@@ -3,6 +3,13 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+## [4.0.2](https://github.com/streetsidesoftware/cspell-dicts/compare/@cspell/dict-cpp@4.0.1...@cspell/dict-cpp@4.0.2) (2023-02-15)
+
+
+### Updates and Bug Fixes
+
+* Encourage the correct spelling of `programming`. ([#1913](https://github.com/streetsidesoftware/cspell-dicts/issues/1913)) ([d7d49ae](https://github.com/streetsidesoftware/cspell-dicts/commit/d7d49ae821418716d8268cb4934d8e06231dc06e))
+
 ## [4.0.1](https://github.com/streetsidesoftware/cspell-dicts/compare/@cspell/dict-cpp@4.0.0...@cspell/dict-cpp@4.0.1) (2022-12-17)
 
 
