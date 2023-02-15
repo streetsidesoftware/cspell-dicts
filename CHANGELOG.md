@@ -1,5 +1,20 @@
 # Release Notes
 
+## [8.7.2](https://github.com/streetsidesoftware/cspell-dicts/compare/cspell-dicts@8.7.1...cspell-dicts@8.7.2) (2023-02-15)
+
+
+### Continuous Integration
+
+* Workflow Bot -- Update ALL Dependencies (main) ([#1909](https://github.com/streetsidesoftware/cspell-dicts/issues/1909)) ([f87172d](https://github.com/streetsidesoftware/cspell-dicts/commit/f87172d9b3d054cd96805ef82d36ce5f8d6df977))
+* Workflow Bot -- Update ALL Dependencies (main) ([#1915](https://github.com/streetsidesoftware/cspell-dicts/issues/1915)) ([d76fd70](https://github.com/streetsidesoftware/cspell-dicts/commit/d76fd70d837baa3914a586b4c3c99c44dc5e287b))
+
+
+### Updates and Bug Fixes
+
+* Encourage the correct spelling of `programming`. ([#1913](https://github.com/streetsidesoftware/cspell-dicts/issues/1913)) ([d7d49ae](https://github.com/streetsidesoftware/cspell-dicts/commit/d7d49ae821418716d8268cb4934d8e06231dc06e))
+* update requirements doc ([#1910](https://github.com/streetsidesoftware/cspell-dicts/issues/1910)) ([55a93d6](https://github.com/streetsidesoftware/cspell-dicts/commit/55a93d6d4d017d99073922fb4085db4359ac401e))
+* Workflow Bot -- Build Dictionaries ([#1914](https://github.com/streetsidesoftware/cspell-dicts/issues/1914)) ([72b7771](https://github.com/streetsidesoftware/cspell-dicts/commit/72b7771314814b6a703bf9193834cbcc6cf3f491))
+
 ## [8.7.1](https://github.com/streetsidesoftware/cspell-dicts/compare/cspell-dicts@8.7.0...cspell-dicts@8.7.1) (2023-02-14)
 
 
