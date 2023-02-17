@@ -1,5 +1,13 @@
 # Release Notes
 
+## [8.7.3](https://github.com/streetsidesoftware/cspell-dicts/compare/cspell-dicts@8.7.2...cspell-dicts@8.7.3) (2023-02-17)
+
+
+### Updates and Bug Fixes
+
+* Add `noindex` to fullstack.txt ([#1920](https://github.com/streetsidesoftware/cspell-dicts/issues/1920)) ([028cc2f](https://github.com/streetsidesoftware/cspell-dicts/commit/028cc2fbde3cfb7142eee12ca1dd94adfc7b52d6))
+* Workflow Bot -- Build Dictionaries ([#1922](https://github.com/streetsidesoftware/cspell-dicts/issues/1922)) ([d495207](https://github.com/streetsidesoftware/cspell-dicts/commit/d495207d8968540b86785406396a5879dbc41e1d))
+
 ## [8.7.2](https://github.com/streetsidesoftware/cspell-dicts/compare/cspell-dicts@8.7.1...cspell-dicts@8.7.2) (2023-02-15)
 
 

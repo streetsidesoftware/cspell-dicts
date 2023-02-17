@@ -3,6 +3,14 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+## [3.1.2](https://github.com/streetsidesoftware/cspell-dicts/compare/@cspell/dict-fullstack@3.1.1...@cspell/dict-fullstack@3.1.2) (2023-02-17)
+
+
+### Updates and Bug Fixes
+
+* Add `noindex` to fullstack.txt ([#1920](https://github.com/streetsidesoftware/cspell-dicts/issues/1920)) ([028cc2f](https://github.com/streetsidesoftware/cspell-dicts/commit/028cc2fbde3cfb7142eee12ca1dd94adfc7b52d6))
+* Workflow Bot -- Build Dictionaries ([#1922](https://github.com/streetsidesoftware/cspell-dicts/issues/1922)) ([d495207](https://github.com/streetsidesoftware/cspell-dicts/commit/d495207d8968540b86785406396a5879dbc41e1d))
+
 ## [3.1.1](https://github.com/streetsidesoftware/cspell-dicts/compare/@cspell/dict-fullstack@3.1.0...@cspell/dict-fullstack@3.1.1) (2023-01-13)
 
 
