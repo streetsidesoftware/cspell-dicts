@@ -27,6 +27,17 @@ See [Conventional Commits](https://conventionalcommits.org) for commit guideline
 
 
 
+## [4.0.1](https://github.com/streetsidesoftware/cspell-dicts/compare/@cspell/dict-powershell@4.0.0...@cspell/dict-powershell@4.0.1) (2023-02-21)
+
+
+### Updates and Bug Fixes
+
+* Add endregion to powershell ([#1927](https://github.com/streetsidesoftware/cspell-dicts/issues/1927)) ([4e11559](https://github.com/streetsidesoftware/cspell-dicts/commit/4e115597a40205b5d1881606f6cc9d2a532730ef))
+* Add hashtable to powershell ([#1930](https://github.com/streetsidesoftware/cspell-dicts/issues/1930)) ([8112d0a](https://github.com/streetsidesoftware/cspell-dicts/commit/8112d0a6d10633a8a3a14f017ec66e089cf1c3ee))
+* Add notin to powershell ([#1929](https://github.com/streetsidesoftware/cspell-dicts/issues/1929)) ([d58878c](https://github.com/streetsidesoftware/cspell-dicts/commit/d58878cb93202b98ce8c5254faff039d2bb577fc))
+* Add notmatch to powershell ([#1928](https://github.com/streetsidesoftware/cspell-dicts/issues/1928)) ([582f4ca](https://github.com/streetsidesoftware/cspell-dicts/commit/582f4cafa97ab5be3b6f2fb680bf83ec423c5fe5))
+* Workflow Bot -- Build Dictionaries ([#1931](https://github.com/streetsidesoftware/cspell-dicts/issues/1931)) ([c748a08](https://github.com/streetsidesoftware/cspell-dicts/commit/c748a0830e14556b17bb553ad32179395cc91826))
+
 ## [4.0.0](https://github.com/streetsidesoftware/cspell-dicts/compare/@cspell/dict-powershell@3.0.0...@cspell/dict-powershell@4.0.0) (2022-12-30)
 
 

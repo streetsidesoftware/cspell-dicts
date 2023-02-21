@@ -1,5 +1,27 @@
 # Release Notes
 
+## [8.7.4](https://github.com/streetsidesoftware/cspell-dicts/compare/cspell-dicts@8.7.3...cspell-dicts@8.7.4) (2023-02-21)
+
+
+### Continuous Integration
+
+* Workflow Bot -- Update ALL Dependencies (main) ([#1923](https://github.com/streetsidesoftware/cspell-dicts/issues/1923)) ([f989085](https://github.com/streetsidesoftware/cspell-dicts/commit/f989085cdc794f182c66eed8d11915cb09afaf2a))
+* Workflow Bot -- Update ALL Dependencies (main) ([#1926](https://github.com/streetsidesoftware/cspell-dicts/issues/1926)) ([94662f8](https://github.com/streetsidesoftware/cspell-dicts/commit/94662f8d6120bdb5e05fd8268de622569e74c6d2))
+
+
+### Build System
+
+* **deps:** bump streetsidesoftware/cspell-action from 2.19.0 to 2.21.0 ([#1924](https://github.com/streetsidesoftware/cspell-dicts/issues/1924)) ([1d93486](https://github.com/streetsidesoftware/cspell-dicts/commit/1d93486d3cd4b73f2f5bc8ed74e271a23c9948cb))
+
+
+### Updates and Bug Fixes
+
+* Add endregion to powershell ([#1927](https://github.com/streetsidesoftware/cspell-dicts/issues/1927)) ([4e11559](https://github.com/streetsidesoftware/cspell-dicts/commit/4e115597a40205b5d1881606f6cc9d2a532730ef))
+* Add hashtable to powershell ([#1930](https://github.com/streetsidesoftware/cspell-dicts/issues/1930)) ([8112d0a](https://github.com/streetsidesoftware/cspell-dicts/commit/8112d0a6d10633a8a3a14f017ec66e089cf1c3ee))
+* Add notin to powershell ([#1929](https://github.com/streetsidesoftware/cspell-dicts/issues/1929)) ([d58878c](https://github.com/streetsidesoftware/cspell-dicts/commit/d58878cb93202b98ce8c5254faff039d2bb577fc))
+* Add notmatch to powershell ([#1928](https://github.com/streetsidesoftware/cspell-dicts/issues/1928)) ([582f4ca](https://github.com/streetsidesoftware/cspell-dicts/commit/582f4cafa97ab5be3b6f2fb680bf83ec423c5fe5))
+* Workflow Bot -- Build Dictionaries ([#1931](https://github.com/streetsidesoftware/cspell-dicts/issues/1931)) ([c748a08](https://github.com/streetsidesoftware/cspell-dicts/commit/c748a0830e14556b17bb553ad32179395cc91826))
+
 ## [8.7.3](https://github.com/streetsidesoftware/cspell-dicts/compare/cspell-dicts@8.7.2...cspell-dicts@8.7.3) (2023-02-17)
 
 
