@@ -9,7 +9,7 @@
     "lint-format": "eslint --fix . && prettier -w \"**/*.{md,json,yml,yaml}\"",
     "build-all": "lerna run --concurrency 2 --stream build --no-bail",
     "build:readme": "yarn run readme:generate-doc-dictionaries && yarn run readme:inject",
-    "build:sort-source-files": "./scripts/sort-source.mjs \"dictionaries/*/src/*.txt\" --exclude \"**/README*\" cpp ",
+    "build:sort-source-files": "./scripts/sort-source.mjs -c sort-source.config.json",
     "conditional-build": "lerna run --concurrency 2 --stream conditional-build --no-bail",
     "check-dirty": "git --no-pager diff --compact-summary --exit-code",
     "check-spelling": "cspell",

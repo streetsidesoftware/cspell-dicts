@@ -69,7 +69,7 @@ const excludes = ['node_modules'];
 
 async function findFiles(globs, options) {
     const globOptions = {
-        ignore: [...excludes, ...(options?.exclude || [])],
+        ignore: [...excludes, ...(options?.ignore || [])],
         onlyFiles: options?.onlyFiles ?? true,
         cwd: options?.cwd || process.cwd(),
     };
@@ -83,12 +83,23 @@ async function findFiles(globs, options) {
 program
     .name('sort-source')
     .description('Sort the content of source files.')
-    .argument('<files...>', 'glob of files to read and sort.')
+    .argument('[files...]', 'glob of files to read and sort.')
+    .option('-c, --config <file>', 'Config file')
     .option('--dry-run', 'Dry Run mode')
     .option('-x, --exclude <patterns...>', 'Exclude pattern')
     .action(async (globs, options) => {
-        console.log('%o', options);
-        const files = (await findFiles(globs, options)).filter(isAllowedFileType);
+        // console.log('%o', options);
+        const ignore = options.exclude || [];
+        if (options.config) {
+            const cfg = JSON.parse(await fs.readFile(options.config, 'utf8'));
+            if (cfg.files) {
+                globs.push(...cfg.files);
+            }
+            if (cfg.exclude) {
+                ignore.push(...cfg.exclude);
+            }
+        }
+        const files = (await findFiles(globs, { ignore })).filter(isAllowedFileType);
         console.log('%o', files);
         await Promise.all(files.map((file) => processFile(file, options)));
     });
