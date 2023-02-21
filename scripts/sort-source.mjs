@@ -9,19 +9,23 @@ const compare = Intl.Collator('en-US').compare;
 let info = console.log;
 
 async function processFile(filename, options) {
-    info(`Reading ${filename}`);
     const content = await fs.readFile(filename, 'utf8');
 
     const sorted = sortContent(content).replace(/^(.*\n)\1+/gm, '$1');
 
     if (sorted === content) {
-        info('ok');
+        info(`${filename} - ok`);
         return;
     }
 
     // info(sorted);
 
-    !options.dryRun && (await fs.writeFile(filename, sorted, 'utf8'));
+    if (!options.dryRun) {
+        await fs.writeFile(filename, sorted, 'utf8');
+        info(`${filename} - updated`);
+    } else {
+        info(`${filename} - skipped --dry-run`);
+    }
 }
 
 function sortContent(content) {
