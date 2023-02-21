@@ -11,6 +11,8 @@ let info = console.log;
 async function processFile(filename, options) {
     const content = await fs.readFile(filename, 'utf8');
 
+    if (!content.trim()) return;
+
     const sorted = sortContent(content).replace(/^(.*\n)\1+/gm, '$1');
 
     if (sorted === content) {
@@ -35,12 +37,12 @@ function sortContent(content) {
     const noSortGroup = new Set();
 
     function addLineToGroup(line) {
-        groups[group] = groups[group] || [];
-        groups[group].push(line);
+        groups[group] = groups[group] || [''];
+        groups[group].push(line.trim());
     }
 
     function addLine(line) {
-        if (line.startsWith('#')) {
+        if (line.startsWith('#') && !noSortGroup.has(group)) {
             ++group;
             noSortGroup.add(group);
         }
