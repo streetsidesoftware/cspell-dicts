@@ -56,5 +56,7 @@ jobs:
           commit-message: "fix: Workflow Bot -- Build Dictionaries"
           branch: ${{ env.NEW_BRANCH }}
           base: ${{ env.REF_BRANCH }}
+          body: |
+            ## Updated Dictionaries
           app_id: ${{ secrets.AUTOMATION_APP_ID }}
           app_private_key: ${{ secrets.AUTOMATION_PRIVATE_KEY }}
