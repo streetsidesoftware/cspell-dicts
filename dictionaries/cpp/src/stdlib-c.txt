@@ -1,12 +1,10 @@
 # general
 errno
 
-
 # https://en.cppreference.com/w/cpp/header/cstddef
 cstddef
 offsetof
 ptrdiff
-
 
 # https://en.cppreference.com/w/cpp/header/cstdlib
 cstdlib
@@ -38,7 +36,6 @@ llabs
 ldiv
 lldiv
 
-
 # https://en.cppreference.com/w/cpp/header/climits
 climits
 schar
@@ -49,7 +46,6 @@ ushrt
 ulong
 ullong
 
-
 # https://en.cppreference.com/w/cpp/header/cfloat
 cfloat
 flt
@@ -57,7 +53,6 @@ dbl
 ldbl
 mant
 subnorm
-
 
 # https://en.cppreference.com/w/cpp/header/cstdint
 intmax
@@ -68,7 +63,6 @@ uintptr
 ptrdiff
 wint
 
-
 # https://en.cppreference.com/w/cpp/header/csignal
 csignal
 sigabrt
@@ -78,21 +72,17 @@ sigint
 sigsegv
 sigterm
 
-
 # https://en.cppreference.com/w/cpp/header/csetjmp
 csetjmp
 setjmp
 longjmp
 
-
 # https://en.cppreference.com/w/cpp/header/cstdarg
 cstdarg
-
 
 # https://en.cppreference.com/w/cpp/header/cassert
 cassert
 NDEBUG
-
 
 # https://en.cppreference.com/w/cpp/header/ctime
 ctime
@@ -104,7 +94,6 @@ wcsftime
 gmtime
 localtime
 mktime
-
 
 # https://en.cppreference.com/w/cpp/header/cstring
 cstring
@@ -130,7 +119,6 @@ memset
 memcpy
 memmove
 
-
 # https://en.cppreference.com/w/cpp/header/cctype
 cctype
 isalnum
@@ -147,7 +135,6 @@ isprint
 ispunct
 tolower
 toupper
-
 
 # https://en.cppreference.com/w/cpp/header/cwctype
 wctrans_t
@@ -170,7 +157,6 @@ towlower
 towupper
 towctrans
 wctrans
-
 
 # https://en.cppreference.com/w/cpp/header/cwchar
 cwchar
@@ -235,23 +221,16 @@ wcstof
 wcstod
 wcstold
 
-
 # https://en.cppreference.com/w/cpp/header/cuchar
 cuchar
 mbrtoc
 rtomb
-
-
-
 
 # https://en.cppreference.com/w/cpp/header/clocale
 clocale
 ctype
 setlocale
 localeconv
-
-
-
 
 # https://en.cppreference.com/w/cpp/header/cfenv
 cfenv
@@ -279,9 +258,6 @@ FE_TONEAREST
 FE_TOWARDZERO
 FE_UPWARD
 FE_DFL_ENV
-
-
-
 
 # https://en.cppreference.com/w/cpp/header/cstdio
 cstdio
@@ -337,7 +313,6 @@ ferror
 perror
 tmpfile
 tmpnam
-
 
 # https://en.cppreference.com/w/cpp/header/cinttypes
 cinttypes

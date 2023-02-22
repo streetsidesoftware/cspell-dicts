@@ -1,10 +1,8 @@
-
 # https://en.cppreference.com/w/cpp/header/version
 __cpp_aggregate_nsdmi
 __cpp_aggregate_paren_init
 __cpp_multidimensional_subscript
 __cpp_lib_nonmember_container_access
-
 
 # https://en.cppreference.com/w/cpp/header/limits
 denorm
@@ -12,24 +10,18 @@ tinyness_before # "y" not a typo
 signaling # single "l" not a typo
 is_iec559
 
-
 # https://en.cppreference.com/w/cpp/header/new
 bad_alloc
-
 
 # https://en.cppreference.com/w/cpp/header/typeinfo
 typeinfo
 
-
 # https://en.cppreference.com/w/cpp/header/source_location
-
 
 # https://en.cppreference.com/w/cpp/header/exception
 exception_ptr
 
-
 # https://en.cppreference.com/w/cpp/header/initializer_list
-
 
 # https://en.cppreference.com/w/cpp/header/compare
 is_eq
@@ -39,33 +31,21 @@ is_lteq
 is_gt
 is_gteq
 
-
 # https://en.cppreference.com/w/cpp/header/coroutine
 coroutine
 noop_coroutine
 
-
-
-
 # https://en.cppreference.com/w/cpp/header/concepts
-
-
-
 
 # https://en.cppreference.com/w/cpp/header/stdexcept
 
-
 # https://en.cppreference.com/w/cpp/header/system_error
 errc
-
-
-
 
 # https://en.cppreference.com/w/cpp/header/utility
 rel_ops
 cmp
 declval
-
 
 # https://en.cppreference.com/w/cpp/header/memory
 unique_ptr
@@ -78,49 +58,36 @@ addressof
 undeclare_reachable # removed in c++23
 undeclare_no_pointers # removed in c++23
 
-
 # https://en.cppreference.com/w/cpp/header/memory_resource
-
 
 # https://en.cppreference.com/w/cpp/header/scoped_allocator
 
-
 # https://en.cppreference.com/w/cpp/header/expected
-
 
 # https://en.cppreference.com/w/cpp/header/bitset
 bitset
 
-
 # https://en.cppreference.com/w/cpp/header/tuple
-
 
 # https://en.cppreference.com/w/cpp/header/optional
 nullopt
 
-
 # https://en.cppreference.com/w/cpp/header/any
-
 
 # https://en.cppreference.com/w/cpp/utility/variant
 monostate
-
 
 # https://en.cppreference.com/w/cpp/header/type_traits
 nothrow
 remove_cvref
 
-
 # https://en.cppreference.com/w/cpp/header/ratio
-
 
 # https://en.cppreference.com/w/cpp/header/chrono
 chrono
 
-
 # https://en.cppreference.com/w/cpp/header/typeindex
 typeindex
-
 
 # https://en.cppreference.com/w/cpp/header/functional
 cref
@@ -128,11 +95,7 @@ boyer
 moore
 horspool
 
-
 # https://en.cppreference.com/w/cpp/header/stacktrace
-
-
-
 
 # https://en.cppreference.com/w/cpp/header/string
 # https://en.cppreference.com/w/cpp/string/basic_string
@@ -152,14 +115,11 @@ stold
 rfind
 npos
 
-
 # https://en.cppreference.com/w/cpp/header/charconv
-
 
 # https://en.cppreference.com/w/cpp/header/format
 wformat
 vformat
-
 
 # https://en.cppreference.com/w/cpp/header/locale
 wbuffer
@@ -167,15 +127,10 @@ codecvt
 numpunct
 moneypunct
 
-
 # https://en.cppreference.com/w/cpp/header/codecvt
-
-
-
 
 # https://en.cppreference.com/w/cpp/header/span
 subspan
-
 
 # https://en.cppreference.com/w/cpp/header/array
 # https://en.cppreference.com/w/cpp/header/vector
@@ -192,9 +147,6 @@ deque
 # https://en.cppreference.com/w/cpp/header/unordered_set
 # https://en.cppreference.com/w/cpp/header/stack
 
-
-
-
 # https://en.cppreference.com/w/cpp/header/iterator
 iter
 prev
@@ -206,25 +158,17 @@ rend
 crend
 ssize
 
-
 # https://en.cppreference.com/w/cpp/header/ranges
-
-
-
 
 # https://en.cppreference.com/w/cpp/header/algorithm
 inplace_merge
 minmax
-
 
 # https://en.cppreference.com/w/cpp/header/execution
 unsequenced
 seq
 par
 unseq
-
-
-
 
 # https://en.cppreference.com/w/cpp/header/complex
 imag
@@ -240,7 +184,6 @@ asinh
 acosh
 atanh
 
-
 # https://en.cppreference.com/w/cpp/header/random
 mersenne
 minstd
@@ -252,15 +195,12 @@ gamma
 weibull
 cauchy
 
-
 # https://en.cppreference.com/w/cpp/header/valarray
 valarray
 gslice
 cshift
 
-
 # https://en.cppreference.com/w/cpp/header/numeric
-
 
 # https://en.cppreference.com/w/cpp/header/bit
 byteswap
@@ -270,14 +210,10 @@ countl
 countr
 popcount
 
-
 # https://en.cppreference.com/w/cpp/header/numbers
 sqrtpi
 egamma
 phi
-
-
-
 
 # https://en.cppreference.com/w/cpp/header/ios
 fpos
@@ -307,7 +243,6 @@ defaultfloat
 # https://en.cppreference.com/w/cpp/header/iosfwd
 iosfwd
 
-
 # https://en.cppreference.com/w/cpp/header/iomanip
 resetiosflags
 setiosflags
@@ -315,7 +250,6 @@ setbase
 setfill
 setprecision
 setw
-
 
 # https://en.cppreference.com/w/cpp/header/streambuf
 # https://en.cppreference.com/w/cpp/io/basic_streambuf
@@ -358,7 +292,6 @@ epptr
 pbump
 setp
 pbackfail
-
 
 # https://en.cppreference.com/w/cpp/header/iostream
 streambuf
@@ -425,7 +358,6 @@ beg
 #end
 cur
 
-
 # https://en.cppreference.com/w/cpp/header/sstream
 stringbuf
 wstringbuf
@@ -435,7 +367,6 @@ ostringstream
 wostringstream
 stringstream
 wstringstream
-
 
 # https://en.cppreference.com/w/cpp/header/spanstream
 spanbuf
@@ -447,7 +378,6 @@ wospanstream
 spanstream
 wspanstream
 
-
 # https://en.cppreference.com/w/cpp/header/fstream
 filebuf
 wfilebuf
@@ -458,13 +388,11 @@ wofstream
 fstream
 wfstream
 
-
 # https://en.cppreference.com/w/cpp/header/syncstream
 syncbuf
 wsyncbuf
 osyncstream
 wosyncstream
-
 
 # https://en.cppreference.com/w/cpp/header/strstream
 # deprecated in c++98
@@ -472,9 +400,6 @@ strstreambuf
 istrstream
 ostrstream
 strstream
-
-
-
 
 # https://en.cppreference.com/w/cpp/regex/basic_regex
 cregex
@@ -511,32 +436,22 @@ lookup_collatename
 lookup_classname
 isctype
 
-
-
-
 # https://en.cppreference.com/w/cpp/header/filesystem
 nofollow # perm_options::
-
-
-
 
 # https://en.cppreference.com/w/cpp/header/thread
 jthread
 
-
 # https://en.cppreference.com/w/cpp/header/atomic
 atomic_ushort
-
 
 # https://en.cppreference.com/w/cpp/header/mutex
 # https://en.cppreference.com/w/cpp/header/shared_mutex
 # https://en.cppreference.com/w/cpp/header/condition_variable
 # https://en.cppreference.com/w/cpp/header/future
 
-
 # https://en.cppreference.com/w/cpp/header/stop_token
 nostopstate
-
 
 # https://en.cppreference.com/w/cpp/header/semaphore
 # https://en.cppreference.com/w/cpp/header/latch
