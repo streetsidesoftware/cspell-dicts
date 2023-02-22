@@ -1,5 +1,24 @@
 # Release Notes
 
+## [8.7.5](https://github.com/streetsidesoftware/cspell-dicts/compare/cspell-dicts@8.7.4...cspell-dicts@8.7.5) (2023-02-22)
+
+
+### Miscellaneous
+
+* create a script to sort source files. ([#1942](https://github.com/streetsidesoftware/cspell-dicts/issues/1942)) ([6a88b91](https://github.com/streetsidesoftware/cspell-dicts/commit/6a88b91ebf726814e3b8d5f764163d6626f314fe))
+
+
+### Updates and Bug Fixes
+
+* Add some `fullstack` terms ([#1933](https://github.com/streetsidesoftware/cspell-dicts/issues/1933)) ([eb79f09](https://github.com/streetsidesoftware/cspell-dicts/commit/eb79f09bf265359438e6dd7b5c18d18d52cdd0b8))
+* Adds missing words to `companies` ([#1938](https://github.com/streetsidesoftware/cspell-dicts/issues/1938)) ([dc17495](https://github.com/streetsidesoftware/cspell-dicts/commit/dc1749516d9d115e8e9a58014d7a138036c86d98))
+* Adds Missing words to `CSS` and fixes order ([#1935](https://github.com/streetsidesoftware/cspell-dicts/issues/1935)) ([354ac2e](https://github.com/streetsidesoftware/cspell-dicts/commit/354ac2eded2cd331db04b1598c3c420952d6ffd6))
+* Adds missing words to `software-services` ([#1941](https://github.com/streetsidesoftware/cspell-dicts/issues/1941)) ([c541319](https://github.com/streetsidesoftware/cspell-dicts/commit/c541319865c060c4a72054c434ec46439988e747))
+* Adds missing words to Fonts and fixes oreder ([#1934](https://github.com/streetsidesoftware/cspell-dicts/issues/1934)) ([0766e33](https://github.com/streetsidesoftware/cspell-dicts/commit/0766e339fae018f8975716f0ae2046168ef95df5))
+* Adds some missing Words to NPM ([#1936](https://github.com/streetsidesoftware/cspell-dicts/issues/1936)) ([657bf68](https://github.com/streetsidesoftware/cspell-dicts/commit/657bf68958fa1fd941e2e221b0ba3b9026aca91b))
+* Workflow Bot -- Build Dictionaries ([#1940](https://github.com/streetsidesoftware/cspell-dicts/issues/1940)) ([c9dea27](https://github.com/streetsidesoftware/cspell-dicts/commit/c9dea275dc86704f91a322ffa9746076f3c68c8d))
+* Workflow Bot -- Build Dictionaries ([#1944](https://github.com/streetsidesoftware/cspell-dicts/issues/1944)) ([48da541](https://github.com/streetsidesoftware/cspell-dicts/commit/48da541b8480b86d9aa5dd50689dc04c60df6d93))
+
 ## [8.7.4](https://github.com/streetsidesoftware/cspell-dicts/compare/cspell-dicts@8.7.3...cspell-dicts@8.7.4) (2023-02-21)
 
 

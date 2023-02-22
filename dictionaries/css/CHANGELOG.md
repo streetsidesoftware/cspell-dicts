@@ -22,6 +22,14 @@ See [Conventional Commits](https://conventionalcommits.org) for commit guideline
 
 
 
+## [4.0.4](https://github.com/streetsidesoftware/cspell-dicts/compare/@cspell/dict-css@4.0.3...@cspell/dict-css@4.0.4) (2023-02-22)
+
+
+### Updates and Bug Fixes
+
+* Adds Missing words to `CSS` and fixes order ([#1935](https://github.com/streetsidesoftware/cspell-dicts/issues/1935)) ([354ac2e](https://github.com/streetsidesoftware/cspell-dicts/commit/354ac2eded2cd331db04b1598c3c420952d6ffd6))
+* Workflow Bot -- Build Dictionaries ([#1944](https://github.com/streetsidesoftware/cspell-dicts/issues/1944)) ([48da541](https://github.com/streetsidesoftware/cspell-dicts/commit/48da541b8480b86d9aa5dd50689dc04c60df6d93))
+
 ## [4.0.3](https://github.com/streetsidesoftware/cspell-dicts/compare/@cspell/dict-css@4.0.2...@cspell/dict-css@4.0.3) (2023-02-15)
 
 

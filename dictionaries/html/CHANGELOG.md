@@ -3,6 +3,14 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+## [4.0.3](https://github.com/streetsidesoftware/cspell-dicts/compare/@cspell/dict-html@4.0.2...@cspell/dict-html@4.0.3) (2023-02-22)
+
+
+### Updates and Bug Fixes
+
+* Add some `fullstack` terms ([#1933](https://github.com/streetsidesoftware/cspell-dicts/issues/1933)) ([eb79f09](https://github.com/streetsidesoftware/cspell-dicts/commit/eb79f09bf265359438e6dd7b5c18d18d52cdd0b8))
+* Workflow Bot -- Build Dictionaries ([#1944](https://github.com/streetsidesoftware/cspell-dicts/issues/1944)) ([48da541](https://github.com/streetsidesoftware/cspell-dicts/commit/48da541b8480b86d9aa5dd50689dc04c60df6d93))
+
 ## [4.0.2](https://github.com/streetsidesoftware/cspell-dicts/compare/@cspell/dict-html@4.0.1...@cspell/dict-html@4.0.2) (2022-12-17)
 
 
