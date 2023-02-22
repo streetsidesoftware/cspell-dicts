@@ -3,6 +3,13 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+## [5.0.5](https://github.com/streetsidesoftware/cspell-dicts/compare/@cspell/dict-java@5.0.4...@cspell/dict-java@5.0.5) (2023-02-22)
+
+
+### Updates and Bug Fixes
+
+* Workflow Bot -- Build Dictionaries ([#1950](https://github.com/streetsidesoftware/cspell-dicts/issues/1950)) ([3f2fca8](https://github.com/streetsidesoftware/cspell-dicts/commit/3f2fca8b64c800723cc572f5ef83e92d5ec64673))
+
 ## [5.0.4](https://github.com/streetsidesoftware/cspell-dicts/compare/@cspell/dict-java@5.0.3...@cspell/dict-java@5.0.4) (2023-01-05)
 
 
