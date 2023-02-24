@@ -1,4 +1,4 @@
-# CSpell en-AU Dictionary
+# CSpell Australian English Dictionary
 
 Australian English dictionary for cspell.
 
