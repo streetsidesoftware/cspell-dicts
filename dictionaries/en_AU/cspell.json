@@ -1,0 +1,22 @@
+{
+    "version": "0.2",
+    "files": ["**/*.{md,txt}"],
+    "language": "en-au",
+    "import": ["./cspell-ext.json"],
+    "ignorePaths": ["/src", "*.trie"],
+    "ignoreWords": [
+        "accessors",
+        "relink",
+        "relinking",
+        "wordlist"
+    ]
+
+    ,
+    "overrides": [
+        {
+            "filename": "/src",
+            "enabled": false
+        }
+    ],
+    "words": ["shasum", "defenses", "favor", "mdash", "noncommercially", "xargs"]
+}
