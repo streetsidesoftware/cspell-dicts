@@ -3,8 +3,15 @@
     "files": ["**/*.{md,txt}"],
     "language": "en-ca",
     "import": ["./cspell-ext.json"],
-    "ignorePaths": ["/src"],
-    "ignoreWords": [],
+    "ignorePaths": ["/src", "*.trie"],
+    "ignoreWords": [
+        "accessors",
+        "relink",
+        "relinking",
+        "wordlist"
+    ]
+
+    ,
     "overrides": [
         {
             "filename": "/src",
