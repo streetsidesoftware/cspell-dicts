@@ -1,6 +1,6 @@
-# CSpell en_GB Dictionary
+# CSpell Canadian English Dictionary
 
-British English dictionary for cspell.
+Canadian English dictionary for cspell.
 
 This is a pre-built dictionary for use with cspell.
 
@@ -16,14 +16,14 @@ This is a pre-built dictionary for use with cspell.
 Global Install and add to cspell global settings.
 
 ```sh
-npm install -g @cspell/dict-en-gb
-cspell link add @cspell/dict-en-gb
+npm install -g @cspell/dict-en-ca
+cspell link add @cspell/dict-en-ca
 ```
 
 ## Uninstall from cspell
 
 ```sh
-cspell link remove @cspell/dict-en-gb
+cspell link remove @cspell/dict-en-ca
 ```
 
 ## Manual Installation
@@ -33,7 +33,7 @@ The `cspell-ext.json` file in this package should be added to the import section
 ```javascript
 {
     // …
-    "import": ["@cspell/dict-en-gb/cspell-ext.json"],
+    "import": ["@cspell/dict-en-ca/cspell-ext.json"],
     // …
 }
 ```
