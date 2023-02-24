@@ -1,0 +1,15 @@
+{
+    "version": "0.2",
+    "files": ["**/*.{md,txt}"],
+    "language": "en-ca",
+    "import": ["./cspell-ext.json"],
+    "ignorePaths": ["/src"],
+    "ignoreWords": [],
+    "overrides": [
+        {
+            "filename": "/src",
+            "enabled": false
+        }
+    ],
+    "words": ["shasum", "defenses", "favor", "mdash", "noncommercially", "xargs"]
+}
