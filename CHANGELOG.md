@@ -1,5 +1,24 @@
 # Release Notes
 
+## [8.8.0](https://github.com/streetsidesoftware/cspell-dicts/compare/cspell-dicts@8.7.6...cspell-dicts@8.8.0) (2023-02-24)
+
+
+### Features
+
+* Add Australian English Dictionary ([#1956](https://github.com/streetsidesoftware/cspell-dicts/issues/1956)) ([036b15f](https://github.com/streetsidesoftware/cspell-dicts/commit/036b15f288239214be6c87170b27dc1ededdfcb1))
+* Add Canadian English Dictionary ([#1954](https://github.com/streetsidesoftware/cspell-dicts/issues/1954)) ([ffd4f39](https://github.com/streetsidesoftware/cspell-dicts/commit/ffd4f39c5dee6959e2d47ef33522fa7ed3bda726))
+* Update en-US dictionary to 2020 src ([#1955](https://github.com/streetsidesoftware/cspell-dicts/issues/1955)) ([52487e4](https://github.com/streetsidesoftware/cspell-dicts/commit/52487e46323e9ab9718f119bc4b615cadb6099f7))
+
+
+### Updates and Bug Fixes
+
+* Workflow Bot -- Build Dictionaries ([#1958](https://github.com/streetsidesoftware/cspell-dicts/issues/1958)) ([8d073f7](https://github.com/streetsidesoftware/cspell-dicts/commit/8d073f7ba4b06216a11abd29be542feedae3d34b))
+
+
+### Continuous Integration
+
+* Workflow Bot -- Update ALL Dependencies (main) ([#1951](https://github.com/streetsidesoftware/cspell-dicts/issues/1951)) ([1f25e42](https://github.com/streetsidesoftware/cspell-dicts/commit/1f25e4220f6b71411dcaaf5320fbfba2cb68b27b))
+
 ## [8.7.6](https://github.com/streetsidesoftware/cspell-dicts/compare/cspell-dicts@8.7.5...cspell-dicts@8.7.6) (2023-02-22)
 
 
