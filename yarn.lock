@@ -82,7 +82,7 @@
     "@cspell/dict-typescript" "^3.1.0"
     "@cspell/dict-vue" "^3.0.0"
 
-"@cspell/cspell-pipe@6.26.3", "@cspell/cspell-pipe@^6.26.3":
+"@cspell/cspell-pipe@6.26.3":
   version "6.26.3"
   resolved "https://registry.npmjs.org/@cspell/cspell-pipe/-/cspell-pipe-6.26.3.tgz#347fe00773e88189cc429e9aa3e2149f3806f43b"
   integrity sha512-e4LKHgXnYj8lO2qFaPaGUjgS2Vps464sc8lRt65MJ3iHR3/AzQO1mB+MDLCqItaLmcyA/llrEY1D8m9dGiBFxA==
@@ -91,6 +91,11 @@
   version "5.21.2"
   resolved "https://registry.npmjs.org/@cspell/cspell-pipe/-/cspell-pipe-5.21.2.tgz#7adfbc66426ee28549fd72a39deec7b98a76b320"
   integrity sha512-MN1SXeqqurWYNknbUMPHRFyTvURbO53/1Aw3zEoCeVUSiGbD5rrb1N+t0YDbOphWrkkrJAZk82/2ZBJ2USE/vg==
+
+"@cspell/cspell-pipe@^6.26.3", "@cspell/cspell-pipe@^6.27.0":
+  version "6.27.0"
+  resolved "https://registry.npmjs.org/@cspell/cspell-pipe/-/cspell-pipe-6.27.0.tgz#a5e6cd961a7c694b17dee27dbf3a438eb6a29107"
+  integrity sha512-lS3kIew5+ETExORdPcJkEA03ylrEL9CHaJ1xE7SSezU3mqoUgbVW5/f2+PCIWPu1mVvUpWef2X1ODddiPPp9NQ==
 
 "@cspell/cspell-service-bus@6.26.3":
   version "6.26.3"
@@ -110,10 +115,15 @@
     glob "^8.1.0"
     hunspell-reader "6.26.3"
 
-"@cspell/cspell-types@6.26.3", "@cspell/cspell-types@^6.26.3":
+"@cspell/cspell-types@6.26.3":
   version "6.26.3"
   resolved "https://registry.npmjs.org/@cspell/cspell-types/-/cspell-types-6.26.3.tgz#559b6e0fc5c43905472acffb2e2dddff2435b892"
   integrity sha512-s5SjHbpCP/MBTCCwgADzmZvsxpygIiH/2JytVUBrk8TWr4U8/EE3gXPdJ8EUAW3Ndgls/OpGn9c31F6sFjsLjg==
+
+"@cspell/cspell-types@^6.26.3", "@cspell/cspell-types@^6.27.0":
+  version "6.27.0"
+  resolved "https://registry.npmjs.org/@cspell/cspell-types/-/cspell-types-6.27.0.tgz#ccf6b1ca03df3760f8838da844057c4f86f811ea"
+  integrity sha512-eHKpAhIUYIjssqF20IrihzNAPDTWJsFpBzg7UznX03Z4Y77JrGAgdRZ6h69uaIafQb7uotNYWnDazpVSkMpikQ==
 
 "@cspell/dict-en-gb@1.1.33":
   version "1.1.33"
@@ -3718,7 +3728,7 @@ humanize-string@^2.1.0:
   dependencies:
     decamelize "^2.0.0"
 
-hunspell-reader@6.26.3, hunspell-reader@^6.26.3:
+hunspell-reader@6.26.3:
   version "6.26.3"
   resolved "https://registry.npmjs.org/hunspell-reader/-/hunspell-reader-6.26.3.tgz#c01961f87b34a67c15fd5621ee9c7bf5aa849f70"
   integrity sha512-35JNblUqQzYuPFFoR78SctXG7gealhweQqVbZqpvF5NdpB5tNa8/66OniXCoZ+7Oc+DSU5lIoRCmHy7Jc58GWA==
@@ -3738,6 +3748,17 @@ hunspell-reader@^3.2.0:
     fs-extra "^8.0.1"
     gensequence "^3.0.1"
     iconv-lite "^0.5.0"
+
+hunspell-reader@^6.26.3:
+  version "6.27.0"
+  resolved "https://registry.npmjs.org/hunspell-reader/-/hunspell-reader-6.27.0.tgz#b6ba9eb5cf4b11e59653f17b2d1cfa70b920060d"
+  integrity sha512-vIoWAwCV08AwTIMceUlOq3h2GCV3az8wcr2qo9RL4+jU3tpODle7za9mtw4vKMFRKbydP16iMYcu4ZkZ10UBRQ==
+  dependencies:
+    "@cspell/cspell-pipe" "^6.27.0"
+    "@cspell/cspell-types" "^6.27.0"
+    commander "^10.0.0"
+    gensequence "^4.0.3"
+    iconv-lite "^0.6.3"
 
 iconv-lite@^0.4.24:
   version "0.4.24"
