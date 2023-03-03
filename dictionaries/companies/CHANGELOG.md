@@ -3,6 +3,14 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+## [3.0.9](https://github.com/streetsidesoftware/cspell-dicts/compare/@cspell/dict-companies@3.0.8...@cspell/dict-companies@3.0.9) (2023-03-03)
+
+
+### Updates and Bug Fixes
+
+* Workflow Bot -- Build Dictionaries ([#1984](https://github.com/streetsidesoftware/cspell-dicts/issues/1984)) ([643624f](https://github.com/streetsidesoftware/cspell-dicts/commit/643624f6249d29a38a5d71a18e2675ec2868c6b6))
+* Workflow Bot -- Build Dictionaries ([#1985](https://github.com/streetsidesoftware/cspell-dicts/issues/1985)) ([efcf176](https://github.com/streetsidesoftware/cspell-dicts/commit/efcf1762763e2b587ab5a711ff477e2400308285))
+
 ## [3.0.8](https://github.com/streetsidesoftware/cspell-dicts/compare/@cspell/dict-companies@3.0.7...@cspell/dict-companies@3.0.8) (2023-02-22)
 
 

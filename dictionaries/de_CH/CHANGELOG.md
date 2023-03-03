@@ -1,5 +1,17 @@
 # Changelog
 
+## [1.1.0](https://github.com/streetsidesoftware/cspell-dicts/compare/@cspell/dict-de-ch@1.0.3...@cspell/dict-de-ch@1.1.0) (2023-03-03)
+
+
+### Features
+
+* Add Austrian German ([#1987](https://github.com/streetsidesoftware/cspell-dicts/issues/1987)) ([ba4b513](https://github.com/streetsidesoftware/cspell-dicts/commit/ba4b5134d6832fc20e1e897df358e93554591958))
+
+
+### Updates and Bug Fixes
+
+* Workflow Bot -- Build Dictionaries ([#1985](https://github.com/streetsidesoftware/cspell-dicts/issues/1985)) ([efcf176](https://github.com/streetsidesoftware/cspell-dicts/commit/efcf1762763e2b587ab5a711ff477e2400308285))
+
 ## [1.0.3](https://github.com/streetsidesoftware/cspell-dicts/compare/@cspell/dict-de-ch@1.0.2...@cspell/dict-de-ch@1.0.3) (2022-12-17)
 
 

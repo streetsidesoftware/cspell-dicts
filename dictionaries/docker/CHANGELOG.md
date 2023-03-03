@@ -3,6 +3,13 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+## [1.1.7](https://github.com/streetsidesoftware/cspell-dicts/compare/@cspell/dict-docker@1.1.6...@cspell/dict-docker@1.1.7) (2023-03-03)
+
+
+### Updates and Bug Fixes
+
+* Workflow Bot -- Build Dictionaries ([#1985](https://github.com/streetsidesoftware/cspell-dicts/issues/1985)) ([efcf176](https://github.com/streetsidesoftware/cspell-dicts/commit/efcf1762763e2b587ab5a711ff477e2400308285))
+
 ## [1.1.6](https://github.com/streetsidesoftware/cspell-dicts/compare/@cspell/dict-docker@1.1.5...@cspell/dict-docker@1.1.6) (2023-02-22)
 
 

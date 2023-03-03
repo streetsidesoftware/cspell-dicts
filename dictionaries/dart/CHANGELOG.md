@@ -3,6 +3,13 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+## [2.0.3](https://github.com/streetsidesoftware/cspell-dicts/compare/@cspell/dict-dart@2.0.2...@cspell/dict-dart@2.0.3) (2023-03-03)
+
+
+### Updates and Bug Fixes
+
+* Workflow Bot -- Build Dictionaries ([#1985](https://github.com/streetsidesoftware/cspell-dicts/issues/1985)) ([efcf176](https://github.com/streetsidesoftware/cspell-dicts/commit/efcf1762763e2b587ab5a711ff477e2400308285))
+
 ## [2.0.2](https://github.com/streetsidesoftware/cspell-dicts/compare/@cspell/dict-dart@2.0.1...@cspell/dict-dart@2.0.2) (2023-02-22)
 
 
