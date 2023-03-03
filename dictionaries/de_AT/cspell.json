@@ -1,0 +1,26 @@
+{
+    "version": "0.2",
+    "files": [
+        "**/*.{md,txt}"
+    ],
+    "import": [
+        "./cspell-ext.json"
+    ],
+    "ignoreWords": [
+        "frami",
+        "Huggenberger",
+        "igerman",
+        "Naber",
+        "zeiler",
+        "Zeiler"
+    ],
+    "overrides": [
+        {
+            "filename": "samples/**/*.md",
+            "caseSensitive": true,
+            "dictionaries": [
+                "de-ch"
+            ]
+        }
+    ]
+}
