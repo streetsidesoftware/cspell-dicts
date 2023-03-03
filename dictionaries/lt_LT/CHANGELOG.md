@@ -22,6 +22,13 @@ See [Conventional Commits](https://conventionalcommits.org) for commit guideline
 
 
 
+## [2.0.1](https://github.com/streetsidesoftware/cspell-dicts/compare/@cspell/dict-lt-lt@2.0.0...@cspell/dict-lt-lt@2.0.1) (2023-03-03)
+
+
+### Updates and Bug Fixes
+
+* Workflow Bot -- Build Dictionaries ([#1985](https://github.com/streetsidesoftware/cspell-dicts/issues/1985)) ([efcf176](https://github.com/streetsidesoftware/cspell-dicts/commit/efcf1762763e2b587ab5a711ff477e2400308285))
+
 ## [1.0.16](https://github.com/streetsidesoftware/cspell-dicts/compare/@cspell/dict-lt-lt@1.0.15...@cspell/dict-lt-lt@1.0.16) (2020-11-28)
 
 **Note:** Version bump only for package @cspell/dict-lt-lt

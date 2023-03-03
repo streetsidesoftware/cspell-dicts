@@ -1,5 +1,12 @@
 # Change Log
 
+## [1.0.2](https://github.com/streetsidesoftware/cspell-dicts/compare/@cspell/dict-sr-latn@1.0.1...@cspell/dict-sr-latn@1.0.2) (2023-03-03)
+
+
+### Updates and Bug Fixes
+
+* Workflow Bot -- Build Dictionaries ([#1985](https://github.com/streetsidesoftware/cspell-dicts/issues/1985)) ([efcf176](https://github.com/streetsidesoftware/cspell-dicts/commit/efcf1762763e2b587ab5a711ff477e2400308285))
+
 ## [1.0.1](https://github.com/streetsidesoftware/cspell-dicts/compare/@cspell/dict-sr-latn@1.0.0...@cspell/dict-sr-latn@1.0.1) (2023-01-08)
 
 
