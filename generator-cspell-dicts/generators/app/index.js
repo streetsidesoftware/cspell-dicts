@@ -21,7 +21,7 @@ module.exports = class extends Generator {
         this.argument('name', {
             desc: 'Name of Dictionary',
             type: String,
-            required: true,
+            required: false,
         });
 
         this.argument('source', {
@@ -36,34 +36,30 @@ module.exports = class extends Generator {
         // Have Yeoman greet the user.
         this.log(yosay('Welcome to the ' + chalk.red('cspell-dicts') + ' generator!'));
 
-        const namePrompts = [
+        const props = await this.prompt([
             {
                 type: 'input',
                 name: 'name',
-                message: 'The package name',
-                default: this.options.name || this.appname, // Default to current folder name
+                message: 'The package directory name (en_US, medical-terms)',
+                default: dirName(this.options.name || ''), // Default to current folder name
             },
             {
                 type: 'input',
                 name: 'friendlyName',
-                message: 'Friendly Name',
-                default: this.options.name || this.appname, // Default to current folder name
+                message: 'Friendly Name ("US English", "Medical Terms")',
+                default: (props) => friendlyName(props.name),
             },
-        ];
-
-        const props = await this.prompt(namePrompts);
-        const depProps = await this.prompt([
             {
                 type: 'input',
                 name: 'description',
                 message: 'Description',
-                default: title(props.friendlyName) + ' dictionary for cspell.',
+                default: (props) => title(props.friendlyName) + ' dictionary for cspell.',
             },
             {
                 type: 'input',
                 name: 'srcFile',
                 message: 'Source File Name',
-                default: this.options.source || props.name + '.txt',
+                default: (props) => this.options.source || props.name + '.txt',
             },
             {
                 type: 'input',
@@ -82,29 +78,29 @@ module.exports = class extends Generator {
                 type: 'confirm',
                 name: 'useTrie',
                 message: 'Store as Trie',
-                default: ['.dic', '.aff'].includes(path.extname(this.options.source)),
+                default: (props) => ['.dic', '.aff'].includes(path.extname(props.srcFile)),
             },
             {
                 type: 'confirm',
                 name: 'doBuild',
                 message: 'Compile Dictionary?',
-                default:
-                    this.fs.exists(this.options.source) && ['.dic', '.aff'].includes(path.extname(this.options.source)),
+                default: (props) =>
+                    this.fs.exists(props.srcFile) && ['.dic', '.aff'].includes(path.extname(props.srcFile)),
             },
         ]);
 
-        depProps.fileExt = depProps.useTrie ? 'trie' : 'txt';
-        depProps.command = depProps.useTrie ? 'compile-trie' : 'compile';
-        depProps.format = depProps.useTrie ? 'trie3' : 'plaintext';
-        depProps.generateNonStrict = depProps.useTrie ? 'true' : 'false';
+        props.fileExt = props.useTrie ? 'trie' : 'txt';
+        props.command = props.useTrie ? 'compile-trie' : 'compile';
+        props.format = props.useTrie ? 'trie3' : 'plaintext';
+        props.generateNonStrict = props.useTrie ? 'true' : 'false';
 
         props.packageName = props.name.toLowerCase().replace(/[^a-z0-9-]/g, '-');
-        depProps.dstFileName = 'dict/' + props.packageName + '.' + depProps.fileExt;
-        depProps.compressDest = false; // depProps.useTrie;
-        depProps.dstFullFileName = depProps.dstFileName + (depProps.compressDest ? '.gz' : '');
+        props.dstFileName = 'dict/' + props.packageName + '.' + props.fileExt;
+        props.compressDest = false; // depProps.useTrie;
+        props.dstFullFileName = props.dstFileName + (props.compressDest ? '.gz' : '');
 
         props.filesToCopy = [];
-        const srcFile = path.resolve(depProps.srcFile);
+        const srcFile = path.resolve(props.srcFile);
         this.log(srcFile);
 
         const ext = path.extname(srcFile);
@@ -125,10 +121,10 @@ module.exports = class extends Generator {
         }
         srcFiles.forEach((srcFile) => props.filesToCopy.push([srcFile, path.join('src', path.basename(srcFile))]));
 
-        depProps.srcFile = 'src/' + path.basename(srcFile);
+        props.srcFile = 'src/' + path.basename(srcFile);
         props.fullPackageName = '@cspell/dict-' + props.packageName;
 
-        this.props = Object.assign({}, props, depProps);
+        this.props = Object.assign({}, props, props);
     }
 
     async writing() {
@@ -182,6 +178,15 @@ module.exports = class extends Generator {
         }
     }
 };
+
+function dirName(name) {
+    return name.toLowerCase().replace(/[^-_a-z0-9]/g, '-');
+}
+
+function friendlyName(name) {
+    const words = name.split('-').map(title);
+    return words.join(' ');
+}
 
 function title(s) {
     return s[0].toUpperCase() + s.slice(1);

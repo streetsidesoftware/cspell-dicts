@@ -1,0 +1,11 @@
+# yaml-language-server: $schema=https://raw.githubusercontent.com/streetsidesoftware/cspell/main/packages/cspell-tools/cspell-tools.config.schema.json
+
+targets:
+  - name: "it-it"
+    sources:
+      - filename: "src/hunspell/index.aff"
+      - filename: "src/additional_words.txt"
+    format: "trie3"
+    targetDirectory: "./dict"
+    generateNonStrict: true
+    compress: false
