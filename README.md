@@ -196,6 +196,12 @@ yarn
 Run `create-dictionary` to start the Yeoman script.
 
 ```sh
+yarn create-dictionary
+```
+
+or
+
+```sh
 yarn create-dictionary <name> <path/to/source/words>
 ```
 

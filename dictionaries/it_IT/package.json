@@ -11,8 +11,14 @@
     "./cspell-ext.json": "./cspell-ext.json"
   },
   "scripts": {
-    "build": "cross-env NODE_OPTIONS=--max_old_space_size=8092 cspell-tools compile-trie \"it_IT.dic\" -o .",
-    "test": "hunspell-reader words -n 1000 \"it_IT.dic\" | cspell -v -c ./cspell-ext.json \"--local=it,it-IT\" \"--languageId=*\" stdin",
+    "build": "cross-env NODE_OPTIONS=--max_old_space_size=8192 cspell-tools-cli build && yarn gen-checksum",
+    "sync": "yarn cpy \"../../node_modules/dictionary-it/**\" src/hunspell",
+    "checksum": "shasum -c checksum.txt",
+    "conditional-build": "yarn run --silent checksum || yarn run build",
+    "gen-checksum": "cat source-files.txt source-dependencies.txt | xargs shasum > checksum.txt",
+    "test-samples": "cspell -v -c ./cspell-ext.json --local=it,en \"samples/**\"",
+    "test-dict": "hunspell-reader words -n 1000 \"src/hunspell/index.dic\" | cspell -v -c ./cspell-ext.json \"--local=it,it-IT\" \"--languageId=*\" stdin",
+    "test": "yarn run test-samples && yarn run test-dict",
     "prepublishOnly": "echo pre-publish"
   },
   "repository": {
@@ -27,13 +33,17 @@
     "spelling"
   ],
   "author": "Jason Dent",
-  "license": "MIT",
+  "license": "GPL-3.0-or-later",
   "bugs": {
     "url": "https://github.com/streetsidesoftware/cspell-dicts/issues"
   },
   "homepage": "https://github.com/streetsidesoftware/cspell-dicts/blob/main/dictionaries/it_IT#readme",
   "files": [
-    "it_IT.trie.gz",
+    "dict/it-it.trie",
+    "src/hunspell/license",
     "cspell-ext.json"
-  ]
+  ],
+  "devDependencies": {
+    "dictionary-it": "^1.4.0"
+  }
 }
