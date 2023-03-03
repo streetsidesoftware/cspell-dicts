@@ -16,8 +16,8 @@
     "checksum": "shasum -c checksum.txt",
     "conditional-build": "yarn run --silent checksum || yarn run build",
     "gen-checksum": "cat source-files.txt source-dependencies.txt | xargs shasum > checksum.txt",
-    "test-de": "hunspell-reader words -n 1000 \"src/hunspell/index.dic\" | cspell -v -c ./cspell-ext.json --local=de --languageId=* stdin",
-    "test-samples": "cspell -v -c ./cspell-ext.json --local=de,en \"samples/**\"",
+    "test-de": "hunspell-reader words -n 1000 \"src/hunspell/index.dic\" | cspell -v -c ./cspell-ext.json --local=de-AT --languageId=* stdin",
+    "test-samples": "cspell -v -c ./cspell-ext.json --local=de-at,en \"samples/**\"",
     "test": "yarn run test-de && yarn run test-samples",
     "prepare": "gzip -f -k *.trie",
     "prepublishOnly": "yarn run conditional-build && yarn test"
@@ -39,7 +39,7 @@
   "bugs": {
     "url": "https://github.com/streetsidesoftware/cspell-dicts/issues"
   },
-  "homepage": "https://github.com/streetsidesoftware/cspell-dicts/blob/main/dictionaries/de_CH#readme",
+  "homepage": "https://github.com/streetsidesoftware/cspell-dicts/blob/main/dictionaries/de_AT#readme",
   "files": [
     "de_AT.trie.gz",
     "cspell-ext.json",

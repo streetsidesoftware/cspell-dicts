@@ -27,6 +27,7 @@ The `cspell-ext.json` file in this package should be added to the import section
 {
     // …
     "import": ["@cspell/dict-de-at/cspell-ext.json"],
+    "language": "de-AT",
     // …
 }
 ```
