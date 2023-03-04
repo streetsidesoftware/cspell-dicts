@@ -22,6 +22,17 @@ See [Conventional Commits](https://conventionalcommits.org) for commit guideline
 
 
 
+## [3.0.0](https://github.com/streetsidesoftware/cspell-dicts/compare/@cspell/dict-da-dk@2.0.1...@cspell/dict-da-dk@3.0.0) (2023-03-04)
+
+
+### ⚠ BREAKING CHANGES
+
+* Update Danish Dictionary ([#1991](https://github.com/streetsidesoftware/cspell-dicts/issues/1991))
+
+### Features
+
+* Update Danish Dictionary ([#1991](https://github.com/streetsidesoftware/cspell-dicts/issues/1991)) ([1f1e659](https://github.com/streetsidesoftware/cspell-dicts/commit/1f1e65900a58e02341f866f3315a3ace8bdf304f))
+
 ## [2.0.1](https://github.com/streetsidesoftware/cspell-dicts/compare/@cspell/dict-da-dk@2.0.0...@cspell/dict-da-dk@2.0.1) (2022-08-12)
 
 
