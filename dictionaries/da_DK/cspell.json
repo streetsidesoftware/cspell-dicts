@@ -18,6 +18,10 @@
             "dictionaries": [
                 "da-dk"
             ]
+        },
+        {
+            "filename": "*.json",
+            "ignoreRegExpList": ["/\"(alphabet|map)\":.*/"]
         }
     ]
 }
