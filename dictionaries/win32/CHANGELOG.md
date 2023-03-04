@@ -3,6 +3,13 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+## [2.0.1](https://github.com/streetsidesoftware/cspell-dicts/compare/@cspell/dict-win32@2.0.0...@cspell/dict-win32@2.0.1) (2023-03-04)
+
+
+### Updates and Bug Fixes
+
+* Add "LTSC" and "Nanoserver" to win32 dictionary [#1977](https://github.com/streetsidesoftware/cspell-dicts/issues/1977) ([33f42bf](https://github.com/streetsidesoftware/cspell-dicts/commit/33f42bf0a4359042cfff21423102f7efa646d474))
+
 ## [2.0.0](https://github.com/streetsidesoftware/cspell-dicts/compare/@cspell/dict-win32@1.0.4...@cspell/dict-win32@2.0.0) (2022-10-10)
 
 

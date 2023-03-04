@@ -14,6 +14,13 @@ See [Conventional Commits](https://conventionalcommits.org) for commit guideline
 
 
 
+## [2.2.1](https://github.com/streetsidesoftware/cspell-dicts/compare/@cspell/dict-fr-reforme@2.2.0...@cspell/dict-fr-reforme@2.2.1) (2023-03-04)
+
+
+### Updates and Bug Fixes
+
+* French `'` issue ([#1983](https://github.com/streetsidesoftware/cspell-dicts/issues/1983)) ([985bdf3](https://github.com/streetsidesoftware/cspell-dicts/commit/985bdf3aab798c22107633a6ebfe0044e06bcbd0))
+
 ## [2.2.0](https://github.com/streetsidesoftware/cspell-dicts/compare/@cspell/dict-fr-reforme@2.1.2...@cspell/dict-fr-reforme@2.2.0) (2023-01-30)
 
 

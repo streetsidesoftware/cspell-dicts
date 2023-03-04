@@ -1,5 +1,32 @@
 # Release Notes
 
+## [9.0.0](https://github.com/streetsidesoftware/cspell-dicts/compare/cspell-dicts@8.8.0...cspell-dicts@9.0.0) (2023-03-04)
+
+
+### ⚠ BREAKING CHANGES
+
+* Update Italian Dictionary ([#1986](https://github.com/streetsidesoftware/cspell-dicts/issues/1986))
+
+### Features
+
+* Add Austrian German ([#1987](https://github.com/streetsidesoftware/cspell-dicts/issues/1987)) ([ba4b513](https://github.com/streetsidesoftware/cspell-dicts/commit/ba4b5134d6832fc20e1e897df358e93554591958))
+* Update Italian Dictionary ([#1986](https://github.com/streetsidesoftware/cspell-dicts/issues/1986)) ([b7615af](https://github.com/streetsidesoftware/cspell-dicts/commit/b7615af4dfdf6212e3120e8cb76067d84efe1fde))
+
+
+### Build System
+
+* **deps-dev:** bump aoo-mozilla-en-dict from `7d54518` to `790b3c4` ([#1975](https://github.com/streetsidesoftware/cspell-dicts/issues/1975)) ([34c223f](https://github.com/streetsidesoftware/cspell-dicts/commit/34c223fff2c75639bb8d9811aca6878e5764ab0a))
+* **deps:** bump streetsidesoftware/cspell-action from 2.21.0 to 2.22.0 ([#1963](https://github.com/streetsidesoftware/cspell-dicts/issues/1963)) ([b0c509a](https://github.com/streetsidesoftware/cspell-dicts/commit/b0c509a800431dc6da7dd53d8d56b312f52a0064))
+
+
+### Updates and Bug Fixes
+
+* Add "LTSC" and "Nanoserver" to win32 dictionary [#1977](https://github.com/streetsidesoftware/cspell-dicts/issues/1977) ([33f42bf](https://github.com/streetsidesoftware/cspell-dicts/commit/33f42bf0a4359042cfff21423102f7efa646d474))
+* French `'` issue ([#1983](https://github.com/streetsidesoftware/cspell-dicts/issues/1983)) ([985bdf3](https://github.com/streetsidesoftware/cspell-dicts/commit/985bdf3aab798c22107633a6ebfe0044e06bcbd0))
+* Workflow Bot -- Build Dictionaries ([#1978](https://github.com/streetsidesoftware/cspell-dicts/issues/1978)) ([390c110](https://github.com/streetsidesoftware/cspell-dicts/commit/390c110969bcd28cacf4b878f2b4e63f193cf61e))
+* Workflow Bot -- Build Dictionaries ([#1984](https://github.com/streetsidesoftware/cspell-dicts/issues/1984)) ([643624f](https://github.com/streetsidesoftware/cspell-dicts/commit/643624f6249d29a38a5d71a18e2675ec2868c6b6))
+* Workflow Bot -- Build Dictionaries ([#1988](https://github.com/streetsidesoftware/cspell-dicts/issues/1988)) ([a73032f](https://github.com/streetsidesoftware/cspell-dicts/commit/a73032f10fa0f87094b2233d2568e721319c5af2))
+
 ## [8.8.0](https://github.com/streetsidesoftware/cspell-dicts/compare/cspell-dicts@8.7.6...cspell-dicts@8.8.0) (2023-02-24)
 
 
