@@ -1,5 +1,5 @@
 {
-    "bootstrap-sha": "8ddc057b66a16f494aae11b38ee0256ff55c52ec",
+    "bootstrap-sha": "be25fa819bbe1862a248fab6e861a1c1019106e6",
     "include-v-in-tag": false,
     "tag-separator": "@",
     "changelog-sections": [
