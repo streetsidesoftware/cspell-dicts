@@ -12,16 +12,15 @@
   },
   "scripts": {
     "build": "cross-env NODE_OPTIONS=--max_old_space_size=12288 cspell-tools-cli build && yarn run gen-checksum",
-    "build:gzip": "gzip -f -k *.trie",
     "sync": "yarn cpy \"../../node_modules/dictionary-da/**\" src/hunspell",
     "checksum": "shasum -c checksum.txt",
-    "conditional-build": "yarn run --silent checksum || yarn run build && yarn build:gzip",
+    "conditional-build": "yarn run --silent checksum || yarn run build",
     "gen-checksum": "cat source-files.txt source-dependencies.txt | xargs shasum > checksum.txt",
     "test-de": "hunspell-reader words -n 1000 \"src/hunspell/index.dic\" | cspell -v -c ./cspell-ext.json --local=da-DK --languageId=* stdin",
-    "test-samples": "cspell -v -c ./cspell-ext.json --local=da-dk,en \"samples/**\"",
+    "test-samples": "cspell -c ./cspell-ext.json --local=da-dk,en \"samples/**\"",
     "test": "yarn run test-de && yarn run test-samples",
     "prepare": "echo ok",
-    "prepublishOnly": "yarn run conditional-build && yarn build:gzip && yarn test"
+    "prepublishOnly": "yarn run conditional-build"
   },
   "repository": {
     "type": "git",
