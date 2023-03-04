@@ -14,6 +14,13 @@ See [Conventional Commits](https://conventionalcommits.org) for commit guideline
 
 
 
+## [3.1.0](https://github.com/streetsidesoftware/cspell-dicts/compare/@cspell/dict-de-de@3.0.2...@cspell/dict-de-de@3.1.0) (2023-03-04)
+
+
+### Features
+
+* Add Austrian German ([#1987](https://github.com/streetsidesoftware/cspell-dicts/issues/1987)) ([ba4b513](https://github.com/streetsidesoftware/cspell-dicts/commit/ba4b5134d6832fc20e1e897df358e93554591958))
+
 ## [3.0.2](https://github.com/streetsidesoftware/cspell-dicts/compare/@cspell/dict-de-de@3.0.1...@cspell/dict-de-de@3.0.2) (2022-12-17)
 
 
