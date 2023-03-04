@@ -3,19 +3,21 @@
     "files": [
         "**/*.{md,txt}"
     ],
-    "dictionaries": [
-        "da-dk"
-    ],
     "import": [
         "./cspell-ext.json"
     ],
-    "words": [
-        "Frob",
-        "Gnomovision",
-        "Litteraturselskab",
-        "MOZILLAPL",
-        "MOZPL",
-        "sprogværktøjer",
-        "Yoyodyne"
+    "ignorePaths": [
+        "src/hunspell"
+    ],
+    "ignoreWords": [
+    ],
+    "overrides": [
+        {
+            "filename": "samples/**/*.md",
+            "caseSensitive": true,
+            "dictionaries": [
+                "da-dk"
+            ]
+        }
     ]
 }
