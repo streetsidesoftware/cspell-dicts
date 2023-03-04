@@ -30,6 +30,13 @@ See [Conventional Commits](https://conventionalcommits.org) for commit guideline
 
 
 
+## [2.2.5](https://github.com/streetsidesoftware/cspell-dicts/compare/@cspell/dict-es-es@2.2.4...@cspell/dict-es-es@2.2.5) (2023-03-04)
+
+
+### Continuous Integration
+
+* empty PR ([#1985](https://github.com/streetsidesoftware/cspell-dicts/issues/1985)) ([efcf176](https://github.com/streetsidesoftware/cspell-dicts/commit/efcf1762763e2b587ab5a711ff477e2400308285))
+
 ## [2.2.4](https://github.com/streetsidesoftware/cspell-dicts/compare/@cspell/dict-es-es@2.2.3...@cspell/dict-es-es@2.2.4) (2023-02-06)
 
 

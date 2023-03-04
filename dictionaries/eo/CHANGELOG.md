@@ -22,6 +22,13 @@ See [Conventional Commits](https://conventionalcommits.org) for commit guideline
 
 
 
+## [2.0.1](https://github.com/streetsidesoftware/cspell-dicts/compare/@cspell/dict-eo@2.0.0...@cspell/dict-eo@2.0.1) (2023-03-04)
+
+
+### Continuous Integration
+
+* empty PR ([#1985](https://github.com/streetsidesoftware/cspell-dicts/issues/1985)) ([efcf176](https://github.com/streetsidesoftware/cspell-dicts/commit/efcf1762763e2b587ab5a711ff477e2400308285))
+
 ## [1.0.9](https://github.com/streetsidesoftware/cspell-dicts/compare/@cspell/dict-eo@1.0.8...@cspell/dict-eo@1.0.9) (2021-03-16)
 
 **Note:** Version bump only for package @cspell/dict-eo
