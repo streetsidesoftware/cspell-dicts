@@ -3,6 +3,13 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+## [2.1.5](https://github.com/streetsidesoftware/cspell-dicts/compare/@cspell/dict-pt-br@2.1.4...@cspell/dict-pt-br@2.1.5) (2023-03-04)
+
+
+### Continuous Integration
+
+* empty PR ([#1985](https://github.com/streetsidesoftware/cspell-dicts/issues/1985)) ([efcf176](https://github.com/streetsidesoftware/cspell-dicts/commit/efcf1762763e2b587ab5a711ff477e2400308285))
+
 ## [2.1.4](https://github.com/streetsidesoftware/cspell-dicts/compare/@cspell/dict-pt-br@2.1.3...@cspell/dict-pt-br@2.1.4) (2022-12-17)
 
 

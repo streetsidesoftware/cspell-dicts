@@ -1,5 +1,12 @@
 # Change Log
 
+## [1.0.3](https://github.com/streetsidesoftware/cspell-dicts/compare/@cspell/dict-svelte@1.0.2...@cspell/dict-svelte@1.0.3) (2023-03-04)
+
+
+### Continuous Integration
+
+* empty PR ([#1985](https://github.com/streetsidesoftware/cspell-dicts/issues/1985)) ([efcf176](https://github.com/streetsidesoftware/cspell-dicts/commit/efcf1762763e2b587ab5a711ff477e2400308285))
+
 ## [1.0.2](https://github.com/streetsidesoftware/cspell-dicts/compare/@cspell/dict-svelte@1.0.1...@cspell/dict-svelte@1.0.2) (2023-01-05)
 
 
