@@ -22,6 +22,17 @@ See [Conventional Commits](https://conventionalcommits.org) for commit guideline
 
 
 
+## [3.0.0](https://github.com/streetsidesoftware/cspell-dicts/compare/@cspell/dict-it-it@2.0.0...@cspell/dict-it-it@3.0.0) (2023-03-04)
+
+
+### ⚠ BREAKING CHANGES
+
+* Update Italian Dictionary ([#1986](https://github.com/streetsidesoftware/cspell-dicts/issues/1986))
+
+### Features
+
+* Update Italian Dictionary ([#1986](https://github.com/streetsidesoftware/cspell-dicts/issues/1986)) ([b7615af](https://github.com/streetsidesoftware/cspell-dicts/commit/b7615af4dfdf6212e3120e8cb76067d84efe1fde))
+
 ## [1.0.13](https://github.com/streetsidesoftware/cspell-dicts/compare/@cspell/dict-it-it@1.0.12...@cspell/dict-it-it@1.0.13) (2021-05-25)
 
 **Note:** Version bump only for package @cspell/dict-it-it

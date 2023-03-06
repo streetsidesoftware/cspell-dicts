@@ -1,43 +1,324 @@
-// cSpell Settings
 {
     "id": "da-dk",
-    "name": "Danish",
-    "description": "Danish dictionary for cspell.",
+    "version": "0.2",
+    "name": "Danish Dictionary",
+    "description": "Danish (da-DK) Dictionary.",
     "readonly": true,
-    // List of dictionary files to add to the global list of dictionaries
     "dictionaryDefinitions": [
         {
             "name": "da-dk",
-            "path": "./da_DK.trie.gz",
-            "repMap": [["'|`|’|'", "'"]],
-            "description": "Danish dictionary for cspell."
+            "path": "./da_DK.trie",
+            "description": "Danish (da-DK) Dictionary.",
+            "repMap": [
+                ["aa", "å"],
+                ["Aa", "Å"]
+            ],
+            "dictionaryInformation": {
+                "locale": "da-DK",
+                "alphabet": "A-Za-zµÀ-ÖØ-öø-ƈƊƋƌƎƏƗǄ-ǭǴǵǸ-țȞȟȦȧȨȩȷɃɈɉɎɏɓɔɗəɟɨʼΜμ",
+                "accents": "\u0300-\u0304\u0306\u0307\u0308\u030a\u030b\u030c\u030f\u0311\u0326\u0327\u0328",
+                "suggestionEditCosts": [
+                    {
+                        "map": "(I\u0307)(i\u0307)İ|(SS)(ss)ß|Aa|Bb|Cc|Dd",
+                        "replace": 1,
+                        "description": "Capitalization change."
+                    },
+                    {
+                        "map": "Ee|Ff|Gg|Hh|Ii|Iiı",
+                        "replace": 1,
+                        "description": "Capitalization change."
+                    },
+                    {
+                        "map": "Jj|Kk|Ll|Mm|Nn|Oo",
+                        "replace": 1,
+                        "description": "Capitalization change."
+                    },
+                    {
+                        "map": "Pp|Qq|Rr|Ss|Ssſ|Tt",
+                        "replace": 1,
+                        "description": "Capitalization change."
+                    },
+                    {
+                        "map": "Uu|Vv|Ww|Xx|Yy|Zz",
+                        "replace": 1,
+                        "description": "Capitalization change."
+                    },
+                    {
+                        "map": "µΜμ|Àà|Áá|Ââ|Ãã|Ää",
+                        "replace": 1,
+                        "description": "Capitalization change."
+                    },
+                    {
+                        "map": "Åå|Ææ|Çç|Èè|Éé|Êê",
+                        "replace": 1,
+                        "description": "Capitalization change."
+                    },
+                    {
+                        "map": "Ëë|Ìì|Íí|Îî|Ïï|Ðð",
+                        "replace": 1,
+                        "description": "Capitalization change."
+                    },
+                    {
+                        "map": "Ññ|Òò|Óó|Ôô|Õõ|Öö",
+                        "replace": 1,
+                        "description": "Capitalization change."
+                    },
+                    {
+                        "map": "Øø|Ùù|Úú|Ûû|Üü|Ýý",
+                        "replace": 1,
+                        "description": "Capitalization change."
+                    },
+                    {
+                        "map": "Þþ|ÿŸ|Āā|Ăă|Ąą|Ćć",
+                        "replace": 1,
+                        "description": "Capitalization change."
+                    },
+                    {
+                        "map": "Ĉĉ|Ċċ|Čč|Ďď|Đđ|Ēē",
+                        "replace": 1,
+                        "description": "Capitalization change."
+                    },
+                    {
+                        "map": "Ĕĕ|Ėė|Ęę|Ěě|Ĝĝ|Ğğ",
+                        "replace": 1,
+                        "description": "Capitalization change."
+                    },
+                    {
+                        "map": "Ġġ|Ģģ|Ĥĥ|Ħħ|Ĩĩ|Īī",
+                        "replace": 1,
+                        "description": "Capitalization change."
+                    },
+                    {
+                        "map": "Ĭĭ|Įį|Ĳĳ|Ĵĵ|Ķķ|ĸ",
+                        "replace": 1,
+                        "description": "Capitalization change."
+                    },
+                    {
+                        "map": "Ĺĺ|Ļļ|Ľľ|Ŀŀ|Łł|Ńń",
+                        "replace": 1,
+                        "description": "Capitalization change."
+                    },
+                    {
+                        "map": "Ņņ|Ňň|ŉ(ʼN)(ʼn)|Ŋŋ|Ōō|Ŏŏ",
+                        "replace": 1,
+                        "description": "Capitalization change."
+                    },
+                    {
+                        "map": "Őő|Œœ|Ŕŕ|Ŗŗ|Řř|Śś",
+                        "replace": 1,
+                        "description": "Capitalization change."
+                    },
+                    {
+                        "map": "Ŝŝ|Şş|Šš|Ţţ|Ťť|Ŧŧ",
+                        "replace": 1,
+                        "description": "Capitalization change."
+                    },
+                    {
+                        "map": "Ũũ|Ūū|Ŭŭ|Ůů|Űű|Ųų",
+                        "replace": 1,
+                        "description": "Capitalization change."
+                    },
+                    {
+                        "map": "Ŵŵ|Ŷŷ|Źź|Żż|Žž|ƀɃ",
+                        "replace": 1,
+                        "description": "Capitalization change."
+                    },
+                    {
+                        "map": "Ɓɓ|Ƃƃ|Ƅƅ|Ɔɔ|Ƈƈ|Ɗɗ",
+                        "replace": 1,
+                        "description": "Capitalization change."
+                    },
+                    {
+                        "map": "Ƌƌ|Ǝǝ|Əə|Ɨɨ|Ǆǅǆ|Ǆǆ",
+                        "replace": 1,
+                        "description": "Capitalization change."
+                    },
+                    {
+                        "map": "Ǉǈǉ|Ǉǉ|Ǌǋǌ|Ǌǌ|Ǎǎ|Ǐǐ",
+                        "replace": 1,
+                        "description": "Capitalization change."
+                    },
+                    {
+                        "map": "Ǒǒ|Ǔǔ|Ǖǖ|Ǘǘ|Ǚǚ|Ǜǜ",
+                        "replace": 1,
+                        "description": "Capitalization change."
+                    },
+                    {
+                        "map": "Ǟǟ|Ǡǡ|Ǣǣ|Ǥǥ|Ǧǧ|Ǩǩ",
+                        "replace": 1,
+                        "description": "Capitalization change."
+                    },
+                    {
+                        "map": "Ǫǫ|Ǭǭ|Ǵǵ|Ǹǹ|Ǻǻ|Ǽǽ",
+                        "replace": 1,
+                        "description": "Capitalization change."
+                    },
+                    {
+                        "map": "Ǿǿ|Ȁȁ|Ȃȃ|Ȅȅ|Ȇȇ|Ȉȉ",
+                        "replace": 1,
+                        "description": "Capitalization change."
+                    },
+                    {
+                        "map": "Ȋȋ|Ȍȍ|Ȏȏ|Ȑȑ|Ȓȓ|Ȕȕ",
+                        "replace": 1,
+                        "description": "Capitalization change."
+                    },
+                    {
+                        "map": "Ȗȗ|Șș|Țț|Ȟȟ|Ȧȧ|Ȩȩ",
+                        "replace": 1,
+                        "description": "Capitalization change."
+                    },
+                    {
+                        "map": "ȷ|Ɉɉ|Ɏɏ|ɟ|ʼ|Μμ",
+                        "replace": 1,
+                        "description": "Capitalization change."
+                    },
+                    {
+                        "map": "AÀÁÂÃÄÅĀĂĄǍǞǠǺȀȂȦ|CÇĆĈĊČ|DĎ|EÈÉÊËĒĔĖĘĚȄȆȨ|GĜĞĠĢǦǴ|HĤȞ",
+                        "replace": 1,
+                        "description": "Replace Accents"
+                    },
+                    {
+                        "map": "IÌÍÎÏĨĪĬĮİǏȈȊ|JĴ|KĶǨ|LĹĻĽ|NÑŃŅŇǸ|OÒÓÔÕÖŌŎŐǑǪǬȌȎ",
+                        "replace": 1,
+                        "description": "Replace Accents"
+                    },
+                    {
+                        "map": "RŔŖŘȐȒ|SŚŜŞŠȘ|TŢŤȚ|UÙÚÛÜŨŪŬŮŰŲǓǕǗǙǛȔȖ|WŴ|YÝŶŸ",
+                        "replace": 1,
+                        "description": "Replace Accents"
+                    },
+                    {
+                        "map": "ZŹŻŽ|aàáâãäåāăąǎǟǡǻȁȃȧ|cçćĉċč|dď|eèéêëēĕėęěȅȇȩ|gĝğġģǧǵ",
+                        "replace": 1,
+                        "description": "Replace Accents"
+                    },
+                    {
+                        "map": "hĥȟ|iìíîïĩīĭįǐȉȋ|jĵ|kķǩ|lĺļľ|nñńņňǹ",
+                        "replace": 1,
+                        "description": "Replace Accents"
+                    },
+                    {
+                        "map": "oòóôõöōŏőǒǫǭȍȏ|rŕŗřȑȓ|sśŝşšș|tţťț|uùúûüũūŭůűųǔǖǘǚǜȕȗ|wŵ",
+                        "replace": 1,
+                        "description": "Replace Accents"
+                    },
+                    {
+                        "map": "yýÿŷ|zźżž|ÆǢǼ|ØǾ|æǣǽ|øǿ",
+                        "replace": 1,
+                        "description": "Replace Accents"
+                    },
+                    {
+                        "map": "AaÀÁÂÃÄÅàáâãäåĀāĂăĄąǍǎǞǟǠǡǺǻȀȁȂȃȦȧ|CcÇçĆćĈĉĊċČč|DdĎď|EeÈÉÊËèéêëĒēĔĕĖėĘęĚěȄȅȆȇȨȩ|GgĜĝĞğĠġĢģǦǧǴǵ|HhĤĥȞȟ",
+                        "replace": 2,
+                        "description": "Capitalization and Accent change."
+                    },
+                    {
+                        "map": "I(I\u0307)i(i\u0307)ÌÍÎÏìíîïĨĩĪīĬĭĮįİǏǐȈȉȊȋ|IiÌÍÎÏìíîïĨĩĪīĬĭĮįǏǐȈȉȊȋ|JjĴĵ|KkĶķǨǩ|LlĹĺĻļĽľ|NnÑñŃńŅņŇňǸǹ",
+                        "replace": 2,
+                        "description": "Capitalization and Accent change."
+                    },
+                    {
+                        "map": "OoÒÓÔÕÖòóôõöŌōŎŏŐőǑǒǪǫǬǭȌȍȎȏ|RrŔŕŖŗŘřȐȑȒȓ|SsŚśŜŝŞşŠšȘș|TtŢţŤťȚț|UuÙÚÛÜùúûüŨũŪūŬŭŮůŰűŲųǓǔǕǖǗǘǙǚǛǜȔȕȖȗ|WwŴŵ",
+                        "replace": 2,
+                        "description": "Capitalization and Accent change."
+                    },
+                    {
+                        "map": "YyÝýÿŶŷŸ|ZzŹźŻżŽž|ÆæǢǣǼǽ|ØøǾǿ",
+                        "replace": 2,
+                        "description": "Capitalization and Accent change."
+                    },
+                    {
+                        "map": "(DZ)Ǆ|(Dz)ǅ|(IJ)Ĳ|(LJ)Ǉ|(Lj)ǈ|(NG)Ŋ|(NJ)Ǌ|(Nj)ǋ|(OE)Œ|(dz)ǆ|(ij)ĳ|(lj)ǉ|(ng)ŋ|(nj)ǌ|(oe)œ|(ss)ß|AÁÀÂÄÃĀĂĄǍǞǠȀȂȦ|BƁƃƄ|CÇĆĈĊČƇ|DÐÞĎƊƌ|EÉÈÊËĒĔĖĘĚȄȆȨƎ|GĜĞĠĢǤǦǴ|HĤĦȞ|IÍÌÎÏĨĪĬǏĮİȈȊƗ|JĴɈ|KĶǨǨ|LĹĻĽĿŁ|NŃǸŅŇ|OÓÒÔÖÕǑŌŎŐȌȎǪǬƆ|RŔŖŘȐȒ|SŚŜŞŠȘ|TŢŤŦȚ|UÚÙÛÜŨŪŬŮŰŲǓǕǗǙǛȔȖ|WŴ|YÝŸŶɎ|ZŽŹŻ|aáàâäãāăąǟǎǡȁȃȧ|bƀƂƅ|cçćĉċčƈ|dðþđďđƋ|eéèêëēĕėęěȅȇȩǝƏ|gĝğġģǥǧǵ|hĥħȟ|iíìîïĩīĭǐįȉȋɨı|jĵɉȷɟ|kķǩǩĸ|lĺļľŀł|nñńǹņŉň|oóòôöõōŏǒőȍȏǫǭ|rŕŗřȑȓ|sśŝşšșſ|tţťŧț|uúùûüũūŭůűųǔǖǘǚǜȕȗ|wŵ|yýŷÿɏ|zžźż|µμ|ÅǺ|ÆǢǼ|ØǾ|åǻ|æǣǽ|øǿ",
+                        "replace": 1,
+                        "description": "Hunspell Aff Map"
+                    },
+                    {
+                        "map": "($_)(._)|(Aa)(^Å)|(^altsammen$)(alt_sammen)|(^forlængst$)(for_længst)|(^hen)(hen_)|(^i)(i_)",
+                        "replace": 75,
+                        "description": "Hunspell Replace Map"
+                    },
+                    {
+                        "map": "(^in)u|(^ind)u|(^inden)(inden_)|(^nutildags$)(nu_til_dags)|(^op)(efter)|(^påny$)(på_ny)",
+                        "replace": 75,
+                        "description": "Hunspell Replace Map"
+                    },
+                    {
+                        "map": "(^u)(in)|(^vedlige$)(ved_lige)|(aa)å|(acc)(aks)|(ae)æ|(an)(and)",
+                        "replace": 75,
+                        "description": "Hunspell Replace Map"
+                    },
+                    {
+                        "map": "(ation)(ering)|(bb)(pp)|(ch)(sj)|(ch)(tj)|(ch)j|(ch)k",
+                        "replace": 75,
+                        "description": "Hunspell Replace Map"
+                    },
+                    {
+                        "map": "(de)e|(dt)t|(ed)t|(ede$)(te)|(el)(l$)|(ende)(ene)",
+                        "replace": 75,
+                        "description": "Hunspell Replace Map"
+                    },
+                    {
+                        "map": "(ene$)(erne)|(ere)(erer)|(eu)(øv)|(eu)ø|(gg)(kk)|(hv)v",
+                        "replace": 75,
+                        "description": "Hunspell Replace Map"
+                    },
+                    {
+                        "map": "(in)(ind)|(je)æ|(ks)x|(ld)(ll)|(le)(ti)|(mang)(ment)",
+                        "replace": 75,
+                        "description": "Hunspell Replace Map"
+                    },
+                    {
+                        "map": "(mm)(nn)|(nd)(nn)|(oe)ø|(s')(ss$)|(si)(sj)|(si)(ti)",
+                        "replace": 75,
+                        "description": "Hunspell Replace Map"
+                    },
+                    {
+                        "map": "(sj)(ti)|(ss)t|(ud)(uden)|(ud)y|(x')(xs$)|(z')(zs$)",
+                        "replace": 75,
+                        "description": "Hunspell Replace Map"
+                    },
+                    {
+                        "map": "ae|bp|c(ds)|ck|cs|d(dd)",
+                        "replace": 75,
+                        "description": "Hunspell Replace Map"
+                    },
+                    {
+                        "map": "d(dt)|dg|dt|e(en)|e(um)|ei",
+                        "replace": 75,
+                        "description": "Hunspell Replace Map"
+                    },
+                    {
+                        "map": "eæ|f(ff)|f(ph)|g(gg)|g(sj)|gj",
+                        "replace": 75,
+                        "description": "Hunspell Replace Map"
+                    },
+                    {
+                        "map": "gk|j(ti)|jy|k(kk)|l(ll)|m(mm)",
+                        "replace": 75,
+                        "description": "Hunspell Replace Map"
+                    },
+                    {
+                        "map": "mn|n(nn)|ou|oå|p(pp)|r(rd)",
+                        "replace": 75,
+                        "description": "Hunspell Replace Map"
+                    },
+                    {
+                        "map": "s(ss)|sz|t(tt)|u(ud)",
+                        "replace": 75,
+                        "description": "Hunspell Replace Map"
+                    }
+                ]
+            }
         }
     ],
-    // Dictionaries to always be used.
-    // Generally left empty
     "dictionaries": [],
-    // Language Rules to apply to matching files.
-    // Files are matched on `languageId` and `local`
     "languageSettings": [
         {
-            // VSCode languageId. i.e. typescript, java, go, cpp, javascript, markdown, latex
-            // * will match against any file type.
             "languageId": "*",
-            // Language local. i.e. en-US, de-AT, or ru. * will match all locals.
-            // Multiple locals can be specified like: "en, en-US" to match both English and English US.
             "locale": "da,da-DK",
-            // By default the whole text of a file is included for spell checking
-            // Adding patterns to the "includeRegExpList" to only include matching patterns
-            "includeRegExpList": [],
-            // To exclude patterns, add them to "ignoreRegExpList"
-            "ignoreRegExpList": ["/’s\\b/"],
-            // regex patterns than can be used with ignoreRegExpList or includeRegExpList
-            // Example: "pattern": [{ "name": "mdash", "pattern": "&mdash;" }]
-            // This could be included in "ignoreRegExpList": ["mdash"]
-            "patterns": [],
-            // List of dictionaries to enable by name in `dictionaryDefinitions`
+            "caseSensitive": true,
             "dictionaries": ["da-dk"],
-            // Dictionary definitions can also be supplied here. They are only used iff "languageId" and "locale" match.
             "dictionaryDefinitions": []
         }
     ]

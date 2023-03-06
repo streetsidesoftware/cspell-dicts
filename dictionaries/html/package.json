@@ -1,6 +1,6 @@
 {
   "name": "@cspell/dict-html",
-  "version": "4.0.2",
+  "version": "4.0.3",
   "description": "HTML dictionary for cspell.",
   "publishConfig": {
     "access": "public"
@@ -11,8 +11,8 @@
     "./cspell-ext.json": "./cspell-ext.json"
   },
   "scripts": {
-    "build": "cross-env NODE_OPTIONS=--max_old_space_size=8192 cspell-tools-cli compile src/html.txt src/svg.txt --merge html -o .",
-    "test": "head -n 100 \"src/html.txt\" | cspell -v -c ./cspell-ext.json \"--local=*\" \"--languageId=html\" stdin",
+    "build": "cspell-tools-cli build",
+    "test": "head -n 100 src/html.txt | cspell -v -c ./cspell-ext.json \"--local=*\" --language-id=html stdin",
     "prepublishOnly": "echo pre-publish",
     "prepare": "yarn run build"
   },
@@ -34,7 +34,7 @@
   },
   "homepage": "https://github.com/streetsidesoftware/cspell-dicts/blob/main/dictionaries/html#readme",
   "files": [
-    "html.txt.gz",
+    "dict/html.txt",
     "cspell-ext.json"
   ]
 }

@@ -1,5 +1,5 @@
 {
-    "bootstrap-sha": "8ddc057b66a16f494aae11b38ee0256ff55c52ec",
+    "bootstrap-sha": "be25fa819bbe1862a248fab6e861a1c1019106e6",
     "include-v-in-tag": false,
     "tag-separator": "@",
     "changelog-sections": [
@@ -134,6 +134,10 @@
             "component": "@cspell/dict-dart",
             "releaseType": "node"
         },
+        "dictionaries/de_AT": {
+            "component": "@cspell/dict-de-at",
+            "releaseType": "node"
+        },
         "dictionaries/de_CH": {
             "component": "@cspell/dict-de-ch",
             "releaseType": "node"
@@ -164,6 +168,14 @@
         },
         "dictionaries/en-common-misspellings": {
             "component": "@cspell/dict-en-common-misspellings",
+            "releaseType": "node"
+        },
+        "dictionaries/en_AU": {
+            "component": "@cspell/dict-en-au",
+            "releaseType": "node"
+        },
+        "dictionaries/en_CA": {
+            "component": "@cspell/dict-en-ca",
             "releaseType": "node"
         },
         "dictionaries/en_GB-MIT": {

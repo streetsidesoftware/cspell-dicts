@@ -3,6 +3,13 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+## [3.0.1](https://github.com/streetsidesoftware/cspell-dicts/compare/@cspell/dict-fonts@3.0.0...@cspell/dict-fonts@3.0.1) (2023-02-22)
+
+
+### Updates and Bug Fixes
+
+* Adds missing words to Fonts and fixes oreder ([#1934](https://github.com/streetsidesoftware/cspell-dicts/issues/1934)) ([0766e33](https://github.com/streetsidesoftware/cspell-dicts/commit/0766e339fae018f8975716f0ae2046168ef95df5))
+
 ## [3.0.0](https://github.com/streetsidesoftware/cspell-dicts/compare/@cspell/dict-fonts@2.1.0...@cspell/dict-fonts@3.0.0) (2022-10-10)
 
 

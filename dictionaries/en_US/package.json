@@ -1,6 +1,6 @@
 {
   "name": "@cspell/dict-en_us",
-  "version": "4.2.2",
+  "version": "4.3.0",
   "description": "English dictionary for cspell.",
   "publishConfig": {
     "access": "public"
@@ -46,8 +46,7 @@
   "files": [
     "en_US.trie.gz",
     "cspell-ext.json",
-    "src/hunspell/README_en_US-large.txt",
-    "src/**/README_en_US.txt",
+    "src/**/README_en_*.txt",
     "!scripts"
   ],
   "directories": {

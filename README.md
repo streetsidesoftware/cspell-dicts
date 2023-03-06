@@ -79,8 +79,9 @@ Various [cspell](https://github.com/streetsidesoftware/cspell) dictionaries. Eac
 | [@cspell/dict-cs-cz](./dictionaries/cs_CZ#readme)                                   | cs-cz                                         | Czech                              | Czech dictionary for cspell.                                   |
 | [@cspell/dict-csharp](./dictionaries/csharp#readme)                                 | csharp                                        | csharp                             | C# dictionary for cspell.                                      |
 | [@cspell/dict-css](./dictionaries/css#readme)                                       | css                                           | css                                | Css dictionary for cspell.                                     |
-| [@cspell/dict-da-dk](./dictionaries/da_DK#readme)                                   | da-dk                                         | Danish                             | Danish dictionary for cspell.                                  |
+| [@cspell/dict-da-dk](./dictionaries/da_DK#readme)                                   | da-dk                                         | Danish Dictionary                  | Danish (da-DK) Dictionary.                                     |
 | [@cspell/dict-dart](./dictionaries/dart#readme)                                     | dart                                          | dart                               | Dart dictionary for cspell.                                    |
+| [@cspell/dict-de-at](./dictionaries/de_AT#readme)                                   | de-at                                         | Austrian German Dictionary         | Austrian German (de-AT) Dictionary.                            |
 | [@cspell/dict-de-ch](./dictionaries/de_CH#readme)                                   | de-ch                                         | Swiss German Dictionary            | Swiss German (de-CH) Dictionary.                               |
 | [@cspell/dict-de-de](./dictionaries/de_DE#readme)                                   | de-de                                         | German Dictionary                  | German (de-DE) Dictionary.                                     |
 | [@cspell/dict-django](./dictionaries/django#readme)                                 | django                                        | Django Keywords                    | List of Python Django Framework keywords.                      |
@@ -89,6 +90,8 @@ Various [cspell](https://github.com/streetsidesoftware/cspell) dictionaries. Eac
 | [@cspell/dict-el](./dictionaries/el#readme)                                         | el                                            | Greek                              | Greek dictionary for cspell.                                   |
 | [@cspell/dict-elixir](./dictionaries/elixir#readme)                                 | elixir                                        | elixir                             | Elixir dictionary for cspell.                                  |
 | [@cspell/dict-en-common-misspellings](./dictionaries/en-common-misspellings#readme) |                                               | English - Common Misspellings      | Common English misspellings dictionary for cspell.             |
+| [@cspell/dict-en-au](./dictionaries/en_AU#readme)                                   | en-au                                         | Australian English Dictionary      | Australian English Dictionary                                  |
+| [@cspell/dict-en-ca](./dictionaries/en_CA#readme)                                   | en-ca                                         | Canadian English Dictionary        | Canadian English Dictionary                                    |
 | [@cspell/dict-en-gb](./dictionaries/en_GB#readme)                                   | en-gb                                         | British English Dictionary         | British English Dictionary                                     |
 | [@cspell/dict-en-gb-mit](./dictionaries/en_GB-MIT#readme)                           | en-gb-mit                                     | British English Dictionary Limited | British English Dictionary with MIT License                    |
 | [@cspell/dict-en_us](./dictionaries/en_US#readme)                                   | en_us                                         | American English Dictionary        | American English Dictionary                                    |
@@ -192,6 +195,12 @@ yarn
 ```
 
 Run `create-dictionary` to start the Yeoman script.
+
+```sh
+yarn create-dictionary
+```
+
+or
 
 ```sh
 yarn create-dictionary <name> <path/to/source/words>
