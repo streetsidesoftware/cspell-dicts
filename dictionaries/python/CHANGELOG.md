@@ -3,6 +3,13 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+## [4.0.2](https://github.com/streetsidesoftware/cspell-dicts/compare/@cspell/dict-python@4.0.1...@cspell/dict-python@4.0.2) (2023-03-08)
+
+
+### Updates and Bug Fixes
+
+* Add "pyright" to Python dictionary ([#2002](https://github.com/streetsidesoftware/cspell-dicts/issues/2002)) ([c4623ef](https://github.com/streetsidesoftware/cspell-dicts/commit/c4623ef01aa26a11b9f6a4d8c19b3e1a346e6bbd))
+
 ## [4.0.1](https://github.com/streetsidesoftware/cspell-dicts/compare/@cspell/dict-python@4.0.0...@cspell/dict-python@4.0.1) (2022-12-17)
 
 
