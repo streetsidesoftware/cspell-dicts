@@ -1,0 +1,15 @@
+# yaml-language-server: $schema=https://raw.githubusercontent.com/streetsidesoftware/cspell/main/packages/cspell-tools/cspell-tools.config.schema.json
+
+targets:
+  - name: "al"
+    sources:
+      - filename: "src/al.txt"
+        maxDepth: 1 # This is set to 1 to prevent initial builds from taking too long.
+      - filename: "src/bc.txt"
+        maxDepth: 1 # This is set to 1 to prevent initial builds from taking too long.
+      - filename: "src/xmldoc.txt"
+        maxDepth: 1 # This is set to 1 to prevent initial builds from taking too long.
+    format: "plaintext"
+    targetDirectory: "./dict"
+    generateNonStrict: false
+    compress: false

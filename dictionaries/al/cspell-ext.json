@@ -1,0 +1,27 @@
+{
+    "id": "al",
+    "version": "0.2",
+    "name": "AL",
+    "description": "AL Dictionary",
+    "readonly": true,
+    "dictionaryDefinitions": [
+        {
+            "name": "al",
+            "path": "./dict/al.txt",
+            "description": "AL Keywords Dictionary"
+        }
+    ],
+    "dictionaries": [],
+    "enabledLanguageIds": ["al"],
+    "languageSettings": [
+        {
+            "languageId": "al",
+            "locale": "*",
+            "includeRegExpList": [],
+            "ignoreRegExpList": [],
+            "patterns": [],
+            "dictionaries": ["al"],
+            "dictionaryDefinitions": []
+        }
+    ]
+}
