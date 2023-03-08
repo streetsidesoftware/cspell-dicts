@@ -1,5 +1,29 @@
 # Release Notes
 
+## [10.0.1](https://github.com/streetsidesoftware/cspell-dicts/compare/cspell-dicts@10.0.0...cspell-dicts@10.0.1) (2023-03-08)
+
+
+### Miscellaneous
+
+* Do not change sha to older one ([e37f44b](https://github.com/streetsidesoftware/cspell-dicts/commit/e37f44b7cc7b94e5c7216d32f1409ea306f9ffd0))
+
+
+### Build System
+
+* **deps:** bump streetsidesoftware/cspell-action from 2.22.0 to 2.23.0 ([#1999](https://github.com/streetsidesoftware/cspell-dicts/issues/1999)) ([2007b5b](https://github.com/streetsidesoftware/cspell-dicts/commit/2007b5bd7bf1470880b482d558d68f50f8b4e2c8))
+
+
+### Continuous Integration
+
+* Stop release-please from looking too far back ([987d14a](https://github.com/streetsidesoftware/cspell-dicts/commit/987d14ab4c98bb3fbee4d2647bd8fceb4bb49f65))
+* Workflow Bot -- Update ALL Dependencies (main) ([#1998](https://github.com/streetsidesoftware/cspell-dicts/issues/1998)) ([d410a8d](https://github.com/streetsidesoftware/cspell-dicts/commit/d410a8dc127913dff9b69a5bb0d1b96c219efb65))
+* Workflow Bot -- Update ALL Dependencies (main) ([#2001](https://github.com/streetsidesoftware/cspell-dicts/issues/2001)) ([8851a34](https://github.com/streetsidesoftware/cspell-dicts/commit/8851a343f6f81911614f144632fae0c2751d8969))
+
+
+### Updates and Bug Fixes
+
+* Add "pyright" to Python dictionary ([#2002](https://github.com/streetsidesoftware/cspell-dicts/issues/2002)) ([c4623ef](https://github.com/streetsidesoftware/cspell-dicts/commit/c4623ef01aa26a11b9f6a4d8c19b3e1a346e6bbd))
+
 ## [10.0.0](https://github.com/streetsidesoftware/cspell-dicts/compare/cspell-dicts@9.0.0...cspell-dicts@10.0.0) (2023-03-04)
 
 
