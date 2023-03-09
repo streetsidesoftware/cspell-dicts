@@ -2,7 +2,6 @@
   "name": "@cspell/dict-al",
   "version": "1.0.0",
   "description": "AL Dictionary",
-  "private": true,
   "publishConfig": {
     "access": "public"
   },
@@ -12,7 +11,7 @@
     "./cspell-ext.json": "./cspell-ext.json"
   },
   "scripts": {
-    "build": "cross-env NODE_OPTIONS=--max_old_space_size=8192 cspell-tools-cli build",
+    "build": "cspell-tools-cli build",
     "test": "head -n 1000 \"src/al.txt\" | cspell -v -c ./cspell-ext.json \"--local=*\" \"--languageId=AL\" stdin",
     "prepublishOnly": "echo OK",
     "prepare": "yarn run build"
