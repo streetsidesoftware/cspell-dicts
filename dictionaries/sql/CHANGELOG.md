@@ -3,6 +3,13 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+## [2.1.0](https://github.com/streetsidesoftware/cspell-dicts/compare/@cspell/dict-sql@2.0.2...@cspell/dict-sql@2.1.0) (2023-03-10)
+
+
+### Features
+
+* Enable "sql" in VS Code by default ([#2010](https://github.com/streetsidesoftware/cspell-dicts/issues/2010)) ([d6e3598](https://github.com/streetsidesoftware/cspell-dicts/commit/d6e35986fc4daad6373411e34cf7aa8716effb67))
+
 ## [2.0.2](https://github.com/streetsidesoftware/cspell-dicts/compare/@cspell/dict-sql@2.0.1...@cspell/dict-sql@2.0.2) (2023-02-22)
 
 
