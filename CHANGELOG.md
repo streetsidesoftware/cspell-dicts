@@ -1,5 +1,29 @@
 # Release Notes
 
+## [10.1.0](https://github.com/streetsidesoftware/cspell-dicts/compare/cspell-dicts@10.0.1...cspell-dicts@10.1.0) (2023-03-10)
+
+
+### Features
+
+* Enable "sql" in VS Code by default ([#2010](https://github.com/streetsidesoftware/cspell-dicts/issues/2010)) ([d6e3598](https://github.com/streetsidesoftware/cspell-dicts/commit/d6e35986fc4daad6373411e34cf7aa8716effb67))
+
+
+### Continuous Integration
+
+* Workflow Bot -- Update ALL Dependencies (main) ([#2007](https://github.com/streetsidesoftware/cspell-dicts/issues/2007)) ([2bb0bda](https://github.com/streetsidesoftware/cspell-dicts/commit/2bb0bdae478ee81614fca9563ef260d61446738e))
+
+
+### Miscellaneous
+
+* fix lint issues ([860da08](https://github.com/streetsidesoftware/cspell-dicts/commit/860da080f35f32ec624031e076d3db4bf0179162))
+* prepare to publish ([#2008](https://github.com/streetsidesoftware/cspell-dicts/issues/2008)) ([8cf1ac5](https://github.com/streetsidesoftware/cspell-dicts/commit/8cf1ac59f00171b4ae8632e0ec52d659a65ed429))
+
+
+### Updates and Bug Fixes
+
+* Add some AL samples ([#2009](https://github.com/streetsidesoftware/cspell-dicts/issues/2009)) ([a67c456](https://github.com/streetsidesoftware/cspell-dicts/commit/a67c456ebb349107ca8cf2f5f095c9590021e55d))
+* Workflow Bot -- Build Dictionaries ([#2005](https://github.com/streetsidesoftware/cspell-dicts/issues/2005)) ([bc9e43a](https://github.com/streetsidesoftware/cspell-dicts/commit/bc9e43a88f8ff74a89f7c5da5c493145635fc7a3))
+
 ## [10.0.1](https://github.com/streetsidesoftware/cspell-dicts/compare/cspell-dicts@10.0.0...cspell-dicts@10.0.1) (2023-03-08)
 
 
