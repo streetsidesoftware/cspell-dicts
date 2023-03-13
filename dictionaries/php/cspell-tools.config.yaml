@@ -8,12 +8,16 @@ targets:
         allowedSplitWords:
           - ../en_US/en_US.trie
           - ../software-terms/dict/softwareTerms.txt
+          - src/php.txt
+          - src/php-functions.txt
           - src/allowed-terms.txt
       - filename: src/php-functions.txt
         split: legacy
         allowedSplitWords:
           - ../en_US/en_US.trie
           - ../software-terms/dict/softwareTerms.txt
+          - src/php.txt
+          - src/php-functions.txt
           - src/allowed-terms.txt
       - filename: src/allowed-terms.txt
     format: plaintext
