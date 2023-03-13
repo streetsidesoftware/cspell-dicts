@@ -82,10 +82,15 @@
     "@cspell/dict-typescript" "^3.1.1"
     "@cspell/dict-vue" "^3.0.0"
 
-"@cspell/cspell-pipe@6.29.1", "@cspell/cspell-pipe@^6.29.1":
+"@cspell/cspell-pipe@6.29.1":
   version "6.29.1"
   resolved "https://registry.npmjs.org/@cspell/cspell-pipe/-/cspell-pipe-6.29.1.tgz#8fa59b28b775a8aba673cf9f13158267b1b1596c"
   integrity sha512-5AB/IlvLV+d/MqmjiQVKyWvpNy9AQOJUkj7Uw02u33rm0JFcZEUvwUEhy/kggTawv8FGFLF7aJm0RhXivWH1Nw==
+
+"@cspell/cspell-pipe@6.29.2", "@cspell/cspell-pipe@^6.29.2":
+  version "6.29.2"
+  resolved "https://registry.npmjs.org/@cspell/cspell-pipe/-/cspell-pipe-6.29.2.tgz#1056d55e7b88fc6b7b7cf1b417b86f2a4814dc14"
+  integrity sha512-LJXEaes1Aw7Tiry+lW8RHcs167GF7uRsllOrGlqcPAjFKrwgYDZgsxdduTvW2Lz5MT19CfOahAdbBRlaMQ/JHw==
 
 "@cspell/cspell-pipe@^5.21.2":
   version "5.21.2"
@@ -98,22 +103,27 @@
   integrity sha512-sclUr+5+UaT/3JeeYolAUNcFLhFq6Yxb3EqsJwjSKH3pws+EZaDKUWKXAGgunEGAMLFZ/HZN+nCbL7hHNVPgEQ==
 
 "@cspell/cspell-tools@^6.29.1":
-  version "6.29.1"
-  resolved "https://registry.npmjs.org/@cspell/cspell-tools/-/cspell-tools-6.29.1.tgz#430183da9a37e6f7adc397ec9b1db507132181b4"
-  integrity sha512-ooO9e/fJ5BWfUa+QDConCXKn86eVcfEMGtuA/FfPvDREZQ5DHZMjSxDT9AUIJnIMJttO6FSRlzY+5Z00me6sMA==
+  version "6.29.2"
+  resolved "https://registry.npmjs.org/@cspell/cspell-tools/-/cspell-tools-6.29.2.tgz#9779df01ac0b3603089b6b5c50593b221448730c"
+  integrity sha512-1E7y5841v+PEEy8s1LubusKe/XYsiDEjoC6rUHHwSFyeLO5E07tTYQYDCjb/LFMcW8249KObxEXaKWjsccRr1A==
   dependencies:
-    "@cspell/cspell-pipe" "6.29.1"
+    "@cspell/cspell-pipe" "6.29.2"
     commander "^10.0.0"
     cosmiconfig "^8.1.0"
-    cspell-trie-lib "6.29.1"
+    cspell-trie-lib "6.29.2"
     gensequence "^5.0.2"
     glob "^8.1.0"
-    hunspell-reader "6.29.1"
+    hunspell-reader "6.29.2"
 
-"@cspell/cspell-types@6.29.1", "@cspell/cspell-types@^6.29.1":
+"@cspell/cspell-types@6.29.1":
   version "6.29.1"
   resolved "https://registry.npmjs.org/@cspell/cspell-types/-/cspell-types-6.29.1.tgz#18412e1bbedee0ad5eda952ae40c8029e8d9eceb"
   integrity sha512-tQCanGyaXAeUwxCysbCUmawYch3dVLjivTP475hH9BUqn84aeQi06OymmMbUdQE8krmbbzqakSVJPA++znYSdg==
+
+"@cspell/cspell-types@6.29.2", "@cspell/cspell-types@^6.29.2":
+  version "6.29.2"
+  resolved "https://registry.npmjs.org/@cspell/cspell-types/-/cspell-types-6.29.2.tgz#af1b714d2b8cf264dc5a9a8b280f6bf145792841"
+  integrity sha512-nPIdZ+1+2/LjJe/eZ4WG72VvrgKgf+5CM9D+7JwYxexrot06HDvcrHogOerb4HkxZpIGYxJw4gO6JkZIZpRPJw==
 
 "@cspell/dict-en-gb@1.1.33":
   version "1.1.33"
@@ -2386,6 +2396,15 @@ cspell-trie-lib@6.29.1:
     "@cspell/cspell-types" "6.29.1"
     gensequence "^5.0.2"
 
+cspell-trie-lib@6.29.2:
+  version "6.29.2"
+  resolved "https://registry.npmjs.org/cspell-trie-lib/-/cspell-trie-lib-6.29.2.tgz#ee0db1005ea39d8ddf33ad84c79eb269e64d3364"
+  integrity sha512-uBK4QNYy65u/wZDQCIzEQ/BJurnQRUEEYk+aWvjn2PSbXBlfnQWC53ncrPIUFUTxNDycbuU7XSZ/XAR28gTfgw==
+  dependencies:
+    "@cspell/cspell-pipe" "6.29.2"
+    "@cspell/cspell-types" "6.29.2"
+    gensequence "^5.0.2"
+
 cspell-trie-lib@^5.1.0:
   version "5.21.2"
   resolved "https://registry.npmjs.org/cspell-trie-lib/-/cspell-trie-lib-5.21.2.tgz#5d00667754c02695a00fc98f2c6bd467f7945951"
@@ -3757,13 +3776,13 @@ humanize-string@^2.1.0:
   dependencies:
     decamelize "^2.0.0"
 
-hunspell-reader@6.29.1, hunspell-reader@^6.28.0:
-  version "6.29.1"
-  resolved "https://registry.npmjs.org/hunspell-reader/-/hunspell-reader-6.29.1.tgz#12b754366e79466dfd9daac2227376bb957c55ed"
-  integrity sha512-d0YbgXH6nxEblf+pR3If4sZ72LIS+iE7fSTVPIjcQ6w1ICS7rXXibyL7N82S9JVeAi2wEARcCGgE7/FisdO1Mw==
+hunspell-reader@6.29.2, hunspell-reader@^6.28.0:
+  version "6.29.2"
+  resolved "https://registry.npmjs.org/hunspell-reader/-/hunspell-reader-6.29.2.tgz#a09f76963787da7e48f10b20e693b38c9691bf9e"
+  integrity sha512-nvcoNxCyZUW5xj75uDHB6Nns5eUHfox9CShPD2teR9imF65l7tGxBgR4weeBxkCAkTlmHwrjGL+i9MzpB4drqA==
   dependencies:
-    "@cspell/cspell-pipe" "^6.29.1"
-    "@cspell/cspell-types" "^6.29.1"
+    "@cspell/cspell-pipe" "^6.29.2"
+    "@cspell/cspell-types" "^6.29.2"
     commander "^10.0.0"
     gensequence "^5.0.2"
     iconv-lite "^0.6.3"
