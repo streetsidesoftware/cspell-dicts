@@ -11,7 +11,7 @@
     "./cspell-ext.json": "./cspell-ext.json"
   },
   "scripts": {
-    "build": "cspell-tools-cli compile --keep-raw-case --use-legacy-splitter src/latex.txt --no-compress -o ./dict",
+    "build": "cspell-tools-cli compile build",
     "test": "yarn run test-dict && yarn run test-check",
     "test-dict": "head -n 1000 src/latex.txt | cspell -v -c ./cspell-ext.json --local=* --languageId=latex stdin",
     "test-check": "ava",
