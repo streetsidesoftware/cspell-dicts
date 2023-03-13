@@ -1,6 +1,18 @@
 
 # cspell-tools: keep-case no-split
 
+ByteswapHashing
+ClassfileAnnotation
+ConcatIterator
+ConcatIteratorCell
+CustomParallelizable
+DeprecatedPredef
+DoubleMult
+IEEE
+IEEEremainder
+IntMult
+LongMult
+MergeableEither
 a
 abort
 aborted
@@ -39,6 +51,8 @@ and
 annotation
 ansi
 any
+any2stringadd
+any2stringfmt
 apis
 append
 appended
@@ -167,7 +181,6 @@ charset
 cheap
 check
 class
-classfile
 classifier
 clear
 clearable
@@ -214,6 +227,7 @@ compute
 concat
 concurrent
 cond
+condOpt
 conditional
 config
 conflicted
@@ -250,7 +264,6 @@ ctrie
 curr
 current
 curried
-custom
 cyan
 d
 daemon
@@ -367,7 +380,6 @@ equality
 equals
 equiv
 erasure
-eremainder
 err
 error
 escape
@@ -455,6 +467,7 @@ future
 garbage
 gaussian
 gcas
+gcasRead
 gen
 generator
 generic
@@ -504,7 +517,6 @@ id
 identifier
 identity
 idle
-iee
 if
 ignorable
 ignoring
@@ -553,7 +565,6 @@ integral
 internal
 interpolator
 interrupt
-interruptible
 intersect
 intersection
 interval
@@ -654,6 +665,7 @@ mangled
 manifest
 manifests
 map
+mappable
 mapped
 mapping
 margin
@@ -667,7 +679,6 @@ max
 maximum
 mega
 merge
-mergeable
 merged
 merger
 message
@@ -701,7 +712,6 @@ monad
 monadic
 more
 msg
-mult
 multi
 multiply
 murmur
@@ -727,6 +737,7 @@ next
 nil
 nn
 no
+noTraceSupression
 node
 noinline
 non
@@ -858,6 +869,7 @@ protect
 protected
 proxy
 psplit
+psplitWithSignalling
 ptr
 publish
 publisher
@@ -947,13 +959,14 @@ rounded
 rounding
 row
 run
+runInterruptible
 runloop
 runnable
 runtime
 s
 same
 scala
-scalac
+scalacCmd
 scale
 scan
 script
@@ -1050,8 +1063,6 @@ streamed
 strict
 strictfp
 string
-stringadd
-stringfmt
 strings
 strip
 structural
@@ -1079,7 +1090,6 @@ suffix
 support
 suppressed
 suppression
-supression
 surplus
 surrogate
 suspend
@@ -1233,7 +1243,7 @@ view
 vm
 vmap
 volatile
-vset
+vsetDefined
 wait
 warning
 waterline
