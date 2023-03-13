@@ -248,14 +248,46 @@
     write-json-file "^4.3.0"
     write-pkg "^4.0.0"
 
-"@lerna-lite/exec@^1.16.0":
-  version "1.16.0"
-  resolved "https://registry.npmjs.org/@lerna-lite/exec/-/exec-1.16.0.tgz#8bb6ba1ee4fc7db168616fe3659d92bf77cff570"
-  integrity sha512-fzqEcCQrOd0550gmAcfsV7ezJo6er5s1lQ169+S3W7K9wVFq1vyOGvYvMpFpTTFiidT6SYT87sAPj+eYuZt6kQ==
+"@lerna-lite/core@1.16.1":
+  version "1.16.1"
+  resolved "https://registry.npmjs.org/@lerna-lite/core/-/core-1.16.1.tgz#1fde25941bf3a0c35c035a96d9c7a276a9e495f0"
+  integrity sha512-49E+S210INYiDVYZAFPptyRLJndTDCH36IyddgOeH0v4kPbtbkUhMHHAe17h+2iEZLHsOtCxpDcS7z9IqLgQaA==
   dependencies:
-    "@lerna-lite/core" "1.16.0"
-    "@lerna-lite/filter-packages" "1.16.0"
-    "@lerna-lite/profiler" "1.16.0"
+    "@npmcli/run-script" "^6.0.0"
+    chalk "^4.1.2"
+    clone-deep "^4.0.1"
+    config-chain "^1.1.13"
+    cosmiconfig "8.0.0"
+    dedent "^0.7.0"
+    execa "^5.1.1"
+    fs-extra "^11.1.0"
+    glob-parent "^6.0.2"
+    globby "^11.1.0"
+    inquirer "^8.2.4"
+    is-ci "^3.0.1"
+    load-json-file "^6.2.0"
+    minimatch "^7.4.2"
+    npm-package-arg "^10.1.0"
+    npmlog "^7.0.1"
+    p-map "^4.0.0"
+    p-queue "^6.6.2"
+    path "^0.12.7"
+    resolve-from "^5.0.0"
+    semver "^7.3.8"
+    slash "^3.0.0"
+    strong-log-transformer "^2.1.0"
+    write-file-atomic "^5.0.0"
+    write-json-file "^4.3.0"
+    write-pkg "^4.0.0"
+
+"@lerna-lite/exec@^1.16.0":
+  version "1.16.1"
+  resolved "https://registry.npmjs.org/@lerna-lite/exec/-/exec-1.16.1.tgz#44c1fe5da47a3d0939674538d3f5a13fb2ee9aa8"
+  integrity sha512-/l++GAQcUjurARtrVgvoFV/FbebWUIdkoEJMYhj4dl/wuTkVwxKpWFu7plRddKuqQTHCHUYfnI1dX/rt8phMcw==
+  dependencies:
+    "@lerna-lite/core" "1.16.1"
+    "@lerna-lite/filter-packages" "1.16.1"
+    "@lerna-lite/profiler" "1.16.1"
     chalk "^4.1.2"
     dotenv "^16.0.3"
     npmlog "^7.0.1"
@@ -267,6 +299,15 @@
   integrity sha512-yqS7cpHNR4ytX8NeMkEkDmtI12ruZQk2EHmm7ZTSSRRbn0XuoNnL9ai0J3a59AgPn5Te3CD7+UF5v0j5W+2WKg==
   dependencies:
     "@lerna-lite/core" "1.16.0"
+    multimatch "^5.0.0"
+    npmlog "^7.0.1"
+
+"@lerna-lite/filter-packages@1.16.1":
+  version "1.16.1"
+  resolved "https://registry.npmjs.org/@lerna-lite/filter-packages/-/filter-packages-1.16.1.tgz#9780999bd9bec84ffaed293165592a60be4f4e59"
+  integrity sha512-Oix+38GpNKwiOWxrZvCxZAe23/vFiRJab86HIYRwtLdaIgnJ2rUqIQ6vw9P+hmc8D5Wf9DgqFqbIvfQUFdwFyQ==
+  dependencies:
+    "@lerna-lite/core" "1.16.1"
     multimatch "^5.0.0"
     npmlog "^7.0.1"
 
@@ -296,6 +337,16 @@
   integrity sha512-CT0QADoUswHgHmwriP6tK7d/2g/zYLO7TmzmsfoHRuyFLrMETcHcGcsQMLfcyg/qSaeiNBIda00HZaDthlj8vQ==
   dependencies:
     "@lerna-lite/core" "1.16.0"
+    fs-extra "^11.1.0"
+    npmlog "^7.0.1"
+    upath "^2.0.1"
+
+"@lerna-lite/profiler@1.16.1":
+  version "1.16.1"
+  resolved "https://registry.npmjs.org/@lerna-lite/profiler/-/profiler-1.16.1.tgz#6e3c8780125fb8fdf6f6e2d9bd1f05e23472112c"
+  integrity sha512-SVOWb9vvx06EQhunC7sC2WZBj14DO8H64cpwGB9NiH+mHIKZAG1kJdxhxOhsvQARkUt2XVVxAQhtEedXpOdXrw==
+  dependencies:
+    "@lerna-lite/core" "1.16.1"
     fs-extra "^11.1.0"
     npmlog "^7.0.1"
     upath "^2.0.1"
