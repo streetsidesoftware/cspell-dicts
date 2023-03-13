@@ -11,7 +11,7 @@
     "./cspell-ext.json": "./cspell-ext.json"
   },
   "scripts": {
-    "build": "cspell-tools-cli compile --keep-raw-case --use-legacy-splitter src/scala.txt --no-compress -o ./dict",
+    "build": "cspell-tools-cli build",
     "test": "head -n 1000 src/scala.txt | cspell -v -c ./cspell-ext.json --local=* --languageId=scala stdin",
     "prepublishOnly": "echo pre-publish",
     "prepare": "yarn run build"
