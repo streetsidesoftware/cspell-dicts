@@ -7,13 +7,18 @@
     // List of dictionary files to add to the global list of dictionaries
     "dictionaryDefinitions": [
         {
+            "name": "cpp-legacy",
+            "path": "./dist/cpp-legacy.txt",
+            "description": "Legacy C/C++ Keywords and common library functions."
+        },
+        {
             "name": "cpp",
-            "path": "./cpp.txt.gz",
+            "path": "./dist/cpp.txt",
             "description": "C/C++ Keywords and common library functions."
         },
         {
             "name": "cpp-refined",
-            "path": "./cpp-refined.txt.gz",
+            "path": "./dist/cpp-refined.txt",
             "description": "Refined list of C/C++ Keywords and common library functions."
         }
     ],

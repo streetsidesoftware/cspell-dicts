@@ -1,0 +1,50 @@
+# yaml-language-server: $schema=https://raw.githubusercontent.com/streetsidesoftware/cspell/main/packages/cspell-tools/cspell-tools.config.schema.json
+
+targets:
+  - name: "cpp"
+    sources:
+      - filename: src/cpp.txt
+        split: legacy
+        allowedSplitWords:
+          - ../en_US/en_US.trie
+          - ../software-terms/dict/softwareTerms.txt
+          - src/cpp.txt
+          - src/allowed-terms.txt
+          - src/compiler-clang-attributes.txt
+          - src/compiler-gcc.txt
+          - src/compiler-msvc.txt
+          - src/ecosystem.txt
+          - src/lang-jargon.txt
+          - src/lang-keywords.txt
+          - src/people.txt
+          - src/stdlib-c.txt
+          - src/stdlib-cerrno.txt
+          - src/stdlib-cmath.txt
+          - src/stdlib-cpp.txt
+          - src/template-strings.txt
+      - filename: src/allowed-terms.txt
+    format: plaintext
+    targetDirectory: "./dict"
+    generateNonStrict: false
+    compress: false
+    sort: true
+  - name: "cpp-legacy"
+    sources:
+      - filename: src/cpp.txt
+        split: legacy
+    format: plaintext
+    targetDirectory: "./dict"
+    generateNonStrict: false
+    compress: false
+  - name: cpp-refined
+    sources:
+      - listFile: source-files-cpp-refined.txt
+        split: true
+        # allowedSplitWords:
+        #   - ../en_US/en_US.trie
+        #   - ../software-terms/dict/softwareTerms.txt
+        #   - src/allowed-terms.txt
+    format: plaintext
+    targetDirectory: "./dict"
+    generateNonStrict: false
+    compress: false
