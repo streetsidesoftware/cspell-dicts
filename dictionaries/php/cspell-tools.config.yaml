@@ -9,6 +9,12 @@ targets:
           - ../en_US/en_US.trie
           - ../software-terms/dict/softwareTerms.txt
           - src/allowed-terms.txt
+      - filename: src/php-functions.txt
+        split: legacy
+        allowedSplitWords:
+          - ../en_US/en_US.trie
+          - ../software-terms/dict/softwareTerms.txt
+          - src/allowed-terms.txt
       - filename: src/allowed-terms.txt
     format: plaintext
     targetDirectory: "./dict"
