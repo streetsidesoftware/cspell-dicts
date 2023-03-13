@@ -1,0 +1,16 @@
+# yaml-language-server: $schema=https://raw.githubusercontent.com/streetsidesoftware/cspell/main/packages/cspell-tools/cspell-tools.config.schema.json
+
+targets:
+  - name: "php"
+    sources:
+      - filename: src/php.txt
+        split: legacy
+        allowedSplitWords:
+          - ../en_US/en_US.trie
+          - ../software-terms/dict/softwareTerms.txt
+          - src/allowed-terms.txt
+      - filename: src/allowed-terms.txt
+    format: plaintext
+    targetDirectory: "./dict"
+    generateNonStrict: false
+    compress: false

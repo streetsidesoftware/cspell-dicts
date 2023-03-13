@@ -11,7 +11,7 @@
     "./cspell-ext.json": "./cspell-ext.json"
   },
   "scripts": {
-    "build": "cspell-tools-cli compile --use-legacy-splitter --no-compress --output dict php.txt",
+    "build": "cspell-tools-cli build",
     "test": "cat \"php.txt\" | cspell -v -c ./cspell-ext.json --local=* --languageId=php stdin",
     "prepublishOnly": "echo pre-publish",
     "prepare": "yarn run build"
