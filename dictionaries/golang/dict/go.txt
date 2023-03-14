@@ -416,8 +416,10 @@ DF_ORIGIN
 DF_STATIC_TLS
 DF_SYMBOLIC
 DF_TEXTREL
+DGRAM
 DIR
 DIRECTORY
+DISP
 DLL
 DLT_APPLE_IP_OVER_IEEE1394
 DLT_ARCNET
@@ -968,7 +970,6 @@ Exchangedata
 Execer
 ExpandEnv
 Expm
-ExtKeyUsageOCSPSigning
 FAITH
 FALLTHROUGH
 FD
@@ -1671,6 +1672,7 @@ Javanese
 Jn
 July
 June
+KEEPALIVE
 KERN
 KILL
 KM
@@ -1742,7 +1744,6 @@ Lepcha
 LevelLinearizable
 Lgamma
 Limbu
-ListenUnixgram
 Lisu
 Llongfile
 Lmicroseconds
@@ -1847,6 +1848,7 @@ Meroitic_Cursive
 Meroitic_Hieroglyphs
 Miao
 Microsoft
+Millis
 MisplacedConstraintIface
 Mkfifo
 Mknod
@@ -1888,6 +1890,7 @@ NO
 NOFLSH
 NONCONFORMING
 NONE
+NOPUSH
 NOT
 NOTE
 NOTE_EXITSTATUS
@@ -1953,7 +1956,6 @@ NsecToTimeval
 Nullable
 Num
 NumCtrsOffset
-NumElems
 NumEmbeddeds
 NumSubexp
 Nushu
@@ -1961,7 +1963,7 @@ Nyiakeng_Puachue_Hmong
 OAEPOptions
 OBJECT
 OCRNL
-OCSPResponse
+OCSP
 OCTET
 OFDEL
 OFF
@@ -2005,7 +2007,6 @@ Offsetof
 Offsetsof
 Ol_Chiki
 Old_Permic
-OpConcat
 Openat
 Oriya
 Osage
@@ -2135,7 +2136,6 @@ PreemptibleLoops
 PreemptibleLoopsInt
 PrimeRK
 ProcessEnv
-ProtoAtLeast
 PtraceAttach
 PtraceDetach
 Ptsname
@@ -2616,14 +2616,12 @@ R_LARCH_TLS_LE_HI20
 R_LARCH_TLS_LE_LO12
 R_LARCH_TLS_TPREL32
 R_LARCH_TLS_TPREL64
-R_MIPS_GOT_DISP
 R_MIPS_GOT_OFST
 R_MIPS_GPREL16
 R_MIPS_GPREL32
 R_MIPS_JALR
 R_MIPS_PJUMP
 R_MIPS_RELGOT
-R_MIPS_SCN_DISP
 R_MIPS_TLS_DTPMOD32
 R_MIPS_TLS_DTPMOD64
 R_MIPS_TLS_DTPREL32
@@ -3187,7 +3185,6 @@ SO
 SOAResource
 SOCK
 SOCKET
-SOCK_DGRAM
 SOCK_MAXADDRLEN
 SOCK_RDM
 SOCK_SEQPACKET
@@ -3198,7 +3195,6 @@ SOURCE
 SO_ACCEPTCONN
 SO_DONTROUTE
 SO_DONTTRUNC
-SO_KEEPALIVE
 SO_NKE
 SO_NOADDRERR
 SO_NOSIGPIPE
@@ -3733,7 +3729,6 @@ TCOFLUSH
 TCP
 TCP_CONNECTIONTIMEOUT
 TCP_ENABLE_ECN
-TCP_KEEPALIVE
 TCP_KEEPCNT
 TCP_KEEPINTVL
 TCP_MAXHLEN
@@ -3745,7 +3740,6 @@ TCP_MINMSS
 TCP_MINMSSOVERLOAD
 TCP_NODELAY
 TCP_NOOPT
-TCP_NOPUSH
 TCP_NOTSENT_LOWAT
 TCP_RXT_CONNDROPTIME
 TCP_RXT_FINDROP
@@ -3874,7 +3868,6 @@ Tirhuta
 ToRDNSequence
 ToValidUTF8
 Topo
-TotalElems
 Trunc
 Tuesday
 Turkic
@@ -3918,8 +3911,6 @@ UnaddressableFieldAssign
 UnaddressableOperand
 UnassignableOperand
 Undelete
-UnexportedLitField
-UnexportedName
 UnixMilli
 Unlinkat
 Unlockpt
@@ -4136,6 +4127,7 @@ authorities
 authority
 authorized
 auto
+autoload
 aux
 auxiliary
 available
@@ -4148,6 +4140,7 @@ bad
 bare
 base
 basic
+basicauth
 be
 before
 begin
@@ -4190,6 +4183,7 @@ broken
 brute
 buffer
 buffered
+bufferpool
 buffers
 bufio
 build
@@ -4262,6 +4256,7 @@ clause
 clean
 cleanup
 clear
+cleartext
 client
 clobbered
 clock
@@ -4310,6 +4305,7 @@ compression
 compressor
 compute
 con
+concat
 concatenation
 condition
 conditional
@@ -4340,6 +4336,7 @@ continue
 continued
 control
 controller
+conv
 conversion
 convert
 converter
@@ -4367,7 +4364,9 @@ crash
 crc
 create
 created
+cred
 credential
+creds
 crit
 critical
 crypt
@@ -4387,6 +4386,7 @@ darwin
 dash
 data
 database
+datagram
 date
 day
 dead
@@ -4454,6 +4454,7 @@ dirs
 disable
 disallow
 discard
+disp
 display
 disposal
 distinguished
@@ -4466,6 +4467,7 @@ dollar
 domain
 done
 dot
+dotfiles
 dots
 dotted
 double
@@ -4499,6 +4501,7 @@ elapsed
 elem
 element
 elemental
+elems
 elf
 ellipsis
 elliptic
@@ -4531,11 +4534,13 @@ enum
 enumerated
 enumeration
 enumerator
+envfile
 environ
 environment
 eq
 equal
 err
+errcheck
 error
 errors
 escape
@@ -4600,6 +4605,7 @@ fields
 file
 filepath
 files
+fileserver
 fill
 filter
 final
@@ -4612,6 +4618,7 @@ fixed
 fixup
 flag
 flags
+flagset
 flaky
 flat
 flate
@@ -4639,6 +4646,7 @@ format
 formatter
 forwarded
 found
+fpath
 frac
 fraction
 fragment
@@ -4681,6 +4689,7 @@ gif
 given
 glob
 global
+globbing
 go
 goarch
 gob
@@ -4742,14 +4751,18 @@ hmac
 home
 hook
 host
+hostless
 hostname
 hour
 hours
 hpack
+href
+hrefs
 html
 http
 httpguts
 httpproxy
+httpserver
 httptest
 httptrace
 httputil
@@ -4861,6 +4874,7 @@ jump
 k
 katakana
 keep
+keepalive
 kernel
 key
 keying
@@ -4951,6 +4965,8 @@ mail
 main
 make
 malformed
+manpage
+manpages
 many
 map
 maphash
@@ -5034,7 +5050,10 @@ name
 named
 names
 namespace
+namespaces
+namespacing
 nano
+nanos
 nanosecond
 nanoseconds
 nearest
@@ -5060,12 +5079,14 @@ nonce
 none
 nonzero
 noop
+nopush
 norm
 normal
 normalize
 north
 not
 note
+notfound
 notice
 notifier
 notify
@@ -5078,6 +5099,7 @@ obj
 object
 objects
 obscuretestdata
+ocsp
 octet
 of
 off
@@ -5093,6 +5115,7 @@ ones
 only
 op
 opaque
+opcache
 open
 openbsd
 opening
@@ -5139,6 +5162,7 @@ param
 parameter
 parameters
 params
+parens
 parent
 parse
 parsed
@@ -5244,8 +5268,10 @@ progress
 promise
 properties
 protection
+proto
 protocol
 protocols
+protos
 prototyped
 proxy
 prune
@@ -5270,6 +5296,7 @@ query
 quest
 question
 questions
+quic
 quick
 quit
 quo
@@ -5277,6 +5304,8 @@ quotation
 quote
 quoted
 quotedprintable
+quux
+qux
 r
 race
 radical
@@ -5307,6 +5336,8 @@ rectangle
 recursive
 recv
 redacted
+redeclaration
+redeclarations
 redesign
 redirect
 reduction
@@ -5346,6 +5377,8 @@ replacement
 replacer
 report
 reported
+req
+reqs
 request
 requested
 requests
@@ -5368,6 +5401,7 @@ return
 reuse
 rev
 reverse
+reverseproxy
 revocation
 revoke
 revoked
@@ -5446,9 +5480,11 @@ sequence
 serializable
 serve
 server
+servername
 service
 session
 set
+setcap
 setting
 settings
 setup
@@ -5529,6 +5565,7 @@ started
 stat
 state
 static
+staticcheck
 stats
 status
 std
@@ -5552,6 +5589,7 @@ strings
 stringtab
 strip
 struct
+structs
 structural
 stub
 sub
@@ -5621,6 +5659,7 @@ temporary
 term
 terminal
 test
+testdata
 testenv
 testing
 testlog
@@ -5648,6 +5687,7 @@ token
 tokens
 too
 tool
+total
 trace
 track
 trail
@@ -5698,6 +5738,7 @@ undefined
 underlying
 unescape
 unexpected
+unexported
 unhandled
 unicast
 unicode
@@ -5709,6 +5750,8 @@ unit
 universal
 universe
 unix
+unixgram
+unixpacket
 unknown
 unlink
 unlock
@@ -5723,6 +5766,7 @@ unshared
 unsigned
 unspecified
 unsupported
+unsynchronized
 until
 untyped
 unused
@@ -5736,6 +5780,7 @@ url
 usage
 use
 user
+useragent
 username
 utf
 util
@@ -5801,6 +5846,7 @@ xor
 y
 year
 z
+zapcore
 zero
 zeros
 zip
