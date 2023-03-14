@@ -3,7 +3,9 @@
 
 BasicIO
 ByteswapHashing
-CAS
+CAS_PREV
+CAS_ROOT
+CAS_SIZE
 ClassfileAnnotation
 Cloneable
 CombinationsItr
@@ -14,6 +16,7 @@ DefaultBufSize
 DeprecatedPredef
 DoubleMult
 GCAS
+GCAS_READ
 IEEE
 IEEEremainder
 IntMult
@@ -26,7 +29,8 @@ Parallelizable
 PermutationsItr
 Predef
 ProcessIO
-RDCSS
+RDCSS_Descriptor
+RDCSS_READ_ROOT
 ReusableCBF
 Scriptable
 SerialVersionUID
@@ -577,7 +581,6 @@ inodeupdater
 input
 insert
 inserted
-insertif
 insertion
 instance
 int
@@ -921,6 +924,7 @@ readf
 ready
 rebuild
 rec
+rec_insertif
 recalculate
 recover
 red
