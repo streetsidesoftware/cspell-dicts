@@ -3,6 +3,18 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+## [5.0.0](https://github.com/streetsidesoftware/cspell-dicts/compare/@cspell/dict-cpp@4.0.3...@cspell/dict-cpp@5.0.0) (2023-03-14)
+
+
+### ⚠ BREAKING CHANGES
+
+* Update how words are split ([#2033](https://github.com/streetsidesoftware/cspell-dicts/issues/2033))
+
+### Updates and Bug Fixes
+
+* Update how words are split ([#2033](https://github.com/streetsidesoftware/cspell-dicts/issues/2033)) ([cae637e](https://github.com/streetsidesoftware/cspell-dicts/commit/cae637e413c3a789bb4169867af321db68768891))
+* Workflow Bot -- Build Dictionaries ([#2034](https://github.com/streetsidesoftware/cspell-dicts/issues/2034)) ([3fc883c](https://github.com/streetsidesoftware/cspell-dicts/commit/3fc883c51f748eda2cf98b995f9c0f089915f079))
+
 ## [4.0.3](https://github.com/streetsidesoftware/cspell-dicts/compare/@cspell/dict-cpp@4.0.2...@cspell/dict-cpp@4.0.3) (2023-02-22)
 
 

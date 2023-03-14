@@ -1,5 +1,52 @@
 # Release Notes
 
+## [11.0.0](https://github.com/streetsidesoftware/cspell-dicts/compare/cspell-dicts@10.1.0...cspell-dicts@11.0.0) (2023-03-14)
+
+
+### ⚠ BREAKING CHANGES
+
+* Use go-words as source ([#2039](https://github.com/streetsidesoftware/cspell-dicts/issues/2039))
+* Update how words are split ([#2033](https://github.com/streetsidesoftware/cspell-dicts/issues/2033))
+* (go) Split out English words ([#2027](https://github.com/streetsidesoftware/cspell-dicts/issues/2027))
+* Update cspell-tools for new splitting rules ([#2026](https://github.com/streetsidesoftware/cspell-dicts/issues/2026))
+* (php) Only allow splits that are found in English ([#2018](https://github.com/streetsidesoftware/cspell-dicts/issues/2018))
+* (dotnet) remove misspelling from dict ([#2014](https://github.com/streetsidesoftware/cspell-dicts/issues/2014))
+
+### Miscellaneous
+
+* restore the PHP Sections to the source. ([#2024](https://github.com/streetsidesoftware/cspell-dicts/issues/2024)) ([50c369c](https://github.com/streetsidesoftware/cspell-dicts/commit/50c369c659d4db1caf71a1f93fb2d57b871a4c83))
+* update dependencies ([#2022](https://github.com/streetsidesoftware/cspell-dicts/issues/2022)) ([bb6b2b9](https://github.com/streetsidesoftware/cspell-dicts/commit/bb6b2b9fc9f89e7c6549913bc56a4a6ffcc8dbd0))
+* Use cspell-tools build ([#2017](https://github.com/streetsidesoftware/cspell-dicts/issues/2017)) ([57b2bf3](https://github.com/streetsidesoftware/cspell-dicts/commit/57b2bf317314a99e3a96a08fb116600ad733c9e7))
+
+
+### Build System
+
+* **deps-dev:** bump @cspell/cspell-tools from 6.29.1 to 6.29.2 ([#2029](https://github.com/streetsidesoftware/cspell-dicts/issues/2029)) ([14bc675](https://github.com/streetsidesoftware/cspell-dicts/commit/14bc6751b0f37f6a05f1fae3ba2afa280957b852))
+
+
+### Continuous Integration
+
+* Workflow Bot -- Update ALL Dependencies (main) ([#2038](https://github.com/streetsidesoftware/cspell-dicts/issues/2038)) ([cc81d1b](https://github.com/streetsidesoftware/cspell-dicts/commit/cc81d1bb7b02e64570717f9875b8352eda8f8c1e))
+
+
+### Updates and Bug Fixes
+
+* (dotnet) remove misspelling from dict ([#2014](https://github.com/streetsidesoftware/cspell-dicts/issues/2014)) ([e6b43d2](https://github.com/streetsidesoftware/cspell-dicts/commit/e6b43d25deb0daa1eb8392b6a1e2d404099df397))
+* (go) Split out English words ([#2027](https://github.com/streetsidesoftware/cspell-dicts/issues/2027)) ([f40d6f5](https://github.com/streetsidesoftware/cspell-dicts/commit/f40d6f51d333718026ddcaf6068fe09758703f7c))
+* (php) Only allow splits that are found in English ([#2018](https://github.com/streetsidesoftware/cspell-dicts/issues/2018)) ([8938d78](https://github.com/streetsidesoftware/cspell-dicts/commit/8938d78fd51ed0f9cc7919f42aa77b5f4e7d4e11))
+* (Powershell) use build command ([#2023](https://github.com/streetsidesoftware/cspell-dicts/issues/2023)) ([8578196](https://github.com/streetsidesoftware/cspell-dicts/commit/8578196beecaf22124342d0ce1fb2801212d859d))
+* (ruby) Allow only English word splits ([#2020](https://github.com/streetsidesoftware/cspell-dicts/issues/2020)) ([d44fff0](https://github.com/streetsidesoftware/cspell-dicts/commit/d44fff09f9e0e8ab24bbdca2c517fe51ae8df652))
+* (scala) split on English camelCase words ([#2021](https://github.com/streetsidesoftware/cspell-dicts/issues/2021)) ([68b3f0c](https://github.com/streetsidesoftware/cspell-dicts/commit/68b3f0ce42583f68efa0b0edbeddec4b92c55183))
+* Update cspell-tools ([#2013](https://github.com/streetsidesoftware/cspell-dicts/issues/2013)) ([8170205](https://github.com/streetsidesoftware/cspell-dicts/commit/817020598f24a6d1e82d41919e88952664de2b88))
+* Update cspell-tools for new splitting rules ([#2026](https://github.com/streetsidesoftware/cspell-dicts/issues/2026)) ([33656cf](https://github.com/streetsidesoftware/cspell-dicts/commit/33656cfeb8afb191eb7b7c685c263ff59736a644))
+* Update how words are split ([#2033](https://github.com/streetsidesoftware/cspell-dicts/issues/2033)) ([cae637e](https://github.com/streetsidesoftware/cspell-dicts/commit/cae637e413c3a789bb4169867af321db68768891))
+* Use go-words as source ([#2039](https://github.com/streetsidesoftware/cspell-dicts/issues/2039)) ([383ecb2](https://github.com/streetsidesoftware/cspell-dicts/commit/383ecb2ae4ef201856c8ffe47574bdcbf78f3fea))
+* Workflow Bot -- Build Dictionaries ([#2016](https://github.com/streetsidesoftware/cspell-dicts/issues/2016)) ([b05fe38](https://github.com/streetsidesoftware/cspell-dicts/commit/b05fe38c8630a5709bfe93a32128cff63f8b6967))
+* Workflow Bot -- Build Dictionaries ([#2019](https://github.com/streetsidesoftware/cspell-dicts/issues/2019)) ([1d95c5b](https://github.com/streetsidesoftware/cspell-dicts/commit/1d95c5b3b3a535986b60c80e8fecf85bee2ba66a))
+* Workflow Bot -- Build Dictionaries ([#2025](https://github.com/streetsidesoftware/cspell-dicts/issues/2025)) ([eda2021](https://github.com/streetsidesoftware/cspell-dicts/commit/eda20210a249e866214301ac847608e2652113c0))
+* Workflow Bot -- Build Dictionaries ([#2028](https://github.com/streetsidesoftware/cspell-dicts/issues/2028)) ([8022594](https://github.com/streetsidesoftware/cspell-dicts/commit/802259491c114d3bc075f4f1cef47de2aca4d787))
+* Workflow Bot -- Build Dictionaries ([#2034](https://github.com/streetsidesoftware/cspell-dicts/issues/2034)) ([3fc883c](https://github.com/streetsidesoftware/cspell-dicts/commit/3fc883c51f748eda2cf98b995f9c0f089915f079))
+
 ## [10.1.0](https://github.com/streetsidesoftware/cspell-dicts/compare/cspell-dicts@10.0.1...cspell-dicts@10.1.0) (2023-03-10)
 
 

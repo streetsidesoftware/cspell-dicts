@@ -3,6 +3,23 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+## [6.0.0](https://github.com/streetsidesoftware/cspell-dicts/compare/@cspell/dict-golang@5.0.2...@cspell/dict-golang@6.0.0) (2023-03-14)
+
+
+### ⚠ BREAKING CHANGES
+
+* Use go-words as source ([#2039](https://github.com/streetsidesoftware/cspell-dicts/issues/2039))
+* Update how words are split ([#2033](https://github.com/streetsidesoftware/cspell-dicts/issues/2033))
+* (go) Split out English words ([#2027](https://github.com/streetsidesoftware/cspell-dicts/issues/2027))
+
+### Updates and Bug Fixes
+
+* (go) Split out English words ([#2027](https://github.com/streetsidesoftware/cspell-dicts/issues/2027)) ([f40d6f5](https://github.com/streetsidesoftware/cspell-dicts/commit/f40d6f51d333718026ddcaf6068fe09758703f7c))
+* Update how words are split ([#2033](https://github.com/streetsidesoftware/cspell-dicts/issues/2033)) ([cae637e](https://github.com/streetsidesoftware/cspell-dicts/commit/cae637e413c3a789bb4169867af321db68768891))
+* Use go-words as source ([#2039](https://github.com/streetsidesoftware/cspell-dicts/issues/2039)) ([383ecb2](https://github.com/streetsidesoftware/cspell-dicts/commit/383ecb2ae4ef201856c8ffe47574bdcbf78f3fea))
+* Workflow Bot -- Build Dictionaries ([#2028](https://github.com/streetsidesoftware/cspell-dicts/issues/2028)) ([8022594](https://github.com/streetsidesoftware/cspell-dicts/commit/802259491c114d3bc075f4f1cef47de2aca4d787))
+* Workflow Bot -- Build Dictionaries ([#2034](https://github.com/streetsidesoftware/cspell-dicts/issues/2034)) ([3fc883c](https://github.com/streetsidesoftware/cspell-dicts/commit/3fc883c51f748eda2cf98b995f9c0f089915f079))
+
 ## [5.0.2](https://github.com/streetsidesoftware/cspell-dicts/compare/@cspell/dict-golang@5.0.1...@cspell/dict-golang@5.0.2) (2023-02-22)
 
 
