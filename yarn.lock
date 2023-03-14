@@ -208,16 +208,16 @@
   resolved "https://registry.npmjs.org/@isaacs/string-locale-compare/-/string-locale-compare-1.1.0.tgz#291c227e93fd407a96ecd59879a35809120e432b"
   integrity sha512-SQ7Kzhh9+D+ZW9MA0zkYv3VXhIDNx+LzM6EJ+/65I3QY+enU6Itte7E5XX7EWrqLW2FN4n06GWzBnPoC3th2aQ==
 
-"@lerna-lite/cli@^1.16.0":
-  version "1.16.0"
-  resolved "https://registry.npmjs.org/@lerna-lite/cli/-/cli-1.16.0.tgz#d804ee61c29aac7ce2b698fde1206e811027a2e5"
-  integrity sha512-9Z8KIMpxGfw4uvvqPumSy9shftdfXgV+gQtiYqjBDL1dPWzcFCWVAym1VQlCV3NeFm8uCzpsXUHST9Siao4bIA==
+"@lerna-lite/cli@^1.16.2":
+  version "1.16.2"
+  resolved "https://registry.npmjs.org/@lerna-lite/cli/-/cli-1.16.2.tgz#fb8b40e6419cf0d801f3a17e267fe1170034f425"
+  integrity sha512-dsAUeAjrwCS6zCcx1QPx1Bwu5Nm9vUJGhJD7XkTOVNWIe63BIo10k+maVrk6RhdqON46mu6zFQlsg8ojdthqxw==
   dependencies:
-    "@lerna-lite/core" "1.16.0"
-    "@lerna-lite/init" "1.16.0"
-    "@lerna-lite/listable" "1.16.0"
-    "@lerna-lite/publish" "1.16.0"
-    "@lerna-lite/version" "1.16.0"
+    "@lerna-lite/core" "1.16.2"
+    "@lerna-lite/init" "1.16.2"
+    "@lerna-lite/listable" "1.16.2"
+    "@lerna-lite/publish" "1.16.2"
+    "@lerna-lite/version" "1.16.2"
     dedent "^0.7.0"
     dotenv "^16.0.3"
     import-local "^3.1.0"
@@ -226,10 +226,10 @@
     path "^0.12.7"
     yargs "^17.7.1"
 
-"@lerna-lite/core@1.16.0":
-  version "1.16.0"
-  resolved "https://registry.npmjs.org/@lerna-lite/core/-/core-1.16.0.tgz#82eff9633704eccbec112f02fdaa70b2aa61fe8c"
-  integrity sha512-xWIWNe3XbkggsIdkQkjJNUuFHriKHTLvT43Axw1PiAQ9G+OErlcp6JzGQwhMamOlckXGbSqfpVbVP4OyLoF+wg==
+"@lerna-lite/core@1.16.2":
+  version "1.16.2"
+  resolved "https://registry.npmjs.org/@lerna-lite/core/-/core-1.16.2.tgz#7487f43a5d637102f249ae01738b15aefdd643d8"
+  integrity sha512-DSLZhdE86uX8e4XQZCabTyxN4zv3RYchvpwv2rajlrDkw7vaPHgyrfziwE4TILYu/ciSvnzRtXzWTeNOpjKcTw==
   dependencies:
     "@npmcli/run-script" "^6.0.0"
     chalk "^4.1.2"
@@ -258,66 +258,66 @@
     write-json-file "^4.3.0"
     write-pkg "^4.0.0"
 
-"@lerna-lite/exec@^1.16.0":
-  version "1.16.0"
-  resolved "https://registry.npmjs.org/@lerna-lite/exec/-/exec-1.16.0.tgz#8bb6ba1ee4fc7db168616fe3659d92bf77cff570"
-  integrity sha512-fzqEcCQrOd0550gmAcfsV7ezJo6er5s1lQ169+S3W7K9wVFq1vyOGvYvMpFpTTFiidT6SYT87sAPj+eYuZt6kQ==
+"@lerna-lite/exec@^1.16.2":
+  version "1.16.2"
+  resolved "https://registry.npmjs.org/@lerna-lite/exec/-/exec-1.16.2.tgz#61934080180806ffbae89fd19ce47dae7a03b177"
+  integrity sha512-CBiG5UVc2l6jvZcbsC2IcDvAGXYZVFtIajMJbZ9eEiNUteibAYjunSnWt70D3k/Z6gngIOo98LfGlkOXnF/Lpg==
   dependencies:
-    "@lerna-lite/core" "1.16.0"
-    "@lerna-lite/filter-packages" "1.16.0"
-    "@lerna-lite/profiler" "1.16.0"
+    "@lerna-lite/core" "1.16.2"
+    "@lerna-lite/filter-packages" "1.16.2"
+    "@lerna-lite/profiler" "1.16.2"
     chalk "^4.1.2"
     dotenv "^16.0.3"
     npmlog "^7.0.1"
     p-map "^4.0.0"
 
-"@lerna-lite/filter-packages@1.16.0":
-  version "1.16.0"
-  resolved "https://registry.npmjs.org/@lerna-lite/filter-packages/-/filter-packages-1.16.0.tgz#bd37ed857ccc4d5858f54b7017054cc40f62a613"
-  integrity sha512-yqS7cpHNR4ytX8NeMkEkDmtI12ruZQk2EHmm7ZTSSRRbn0XuoNnL9ai0J3a59AgPn5Te3CD7+UF5v0j5W+2WKg==
+"@lerna-lite/filter-packages@1.16.2":
+  version "1.16.2"
+  resolved "https://registry.npmjs.org/@lerna-lite/filter-packages/-/filter-packages-1.16.2.tgz#4776805f7c5ca28754757dca4b04f4a83a1b0e5b"
+  integrity sha512-zmeWQJnSGJQMXb3dnCOn5nl6KIF85cYPOjMX+30oa5o0S8CX4cIFFV/OnWIxK0GENRPAPp4eW1YvMEd0zG8xUQ==
   dependencies:
-    "@lerna-lite/core" "1.16.0"
+    "@lerna-lite/core" "1.16.2"
     multimatch "^5.0.0"
     npmlog "^7.0.1"
 
-"@lerna-lite/init@1.16.0":
-  version "1.16.0"
-  resolved "https://registry.npmjs.org/@lerna-lite/init/-/init-1.16.0.tgz#a90362a465f92f7bae8baeaef7f4852aa096e04c"
-  integrity sha512-6nSFJYebMoMlJLCHZ5L5rfhHbbu0KdBw9gAzKrJFXUd5htOzGRmgnv/zCoF0fuVOCWCZHsu5WcviQZs25FSzow==
+"@lerna-lite/init@1.16.2":
+  version "1.16.2"
+  resolved "https://registry.npmjs.org/@lerna-lite/init/-/init-1.16.2.tgz#9fb21474811faf36a0c3d08047c4c418d9399e19"
+  integrity sha512-vN5ulvPqXd4eUo+c2XBWLTXN1YJK/d8h/upBNaFgMAtHKwFcxTglaC53gIIGleMko4S+v4RIL9vEmdBlm1CfPg==
   dependencies:
-    "@lerna-lite/core" "1.16.0"
+    "@lerna-lite/core" "1.16.2"
     fs-extra "^11.1.0"
     p-map "^4.0.0"
     path "^0.12.7"
     write-json-file "^4.3.0"
 
-"@lerna-lite/listable@1.16.0":
-  version "1.16.0"
-  resolved "https://registry.npmjs.org/@lerna-lite/listable/-/listable-1.16.0.tgz#47eb2066011bbdc351c072004f2ba000a6a6a1dd"
-  integrity sha512-sWoZmQTaLDobKXtN7eZuPPjWTcsxmNMWYUeDLedGuHQQnsHHLSpz7lSjJWcqJKpbTn8zURAFlR5Qzq15pkQl5w==
+"@lerna-lite/listable@1.16.2":
+  version "1.16.2"
+  resolved "https://registry.npmjs.org/@lerna-lite/listable/-/listable-1.16.2.tgz#322bce8def4cdb53bdc814895607d577efdd63b4"
+  integrity sha512-IHmUW4F8TJ5RF+rP3n6cOQRucoQXck+URdj7O+fYBhqUqCStyB4pVm4Us8yh2rIuEuLE26YjdFUoaRt9XKbWQg==
   dependencies:
-    "@lerna-lite/core" "1.16.0"
+    "@lerna-lite/core" "1.16.2"
     chalk "^4.1.2"
     columnify "^1.6.0"
 
-"@lerna-lite/profiler@1.16.0":
-  version "1.16.0"
-  resolved "https://registry.npmjs.org/@lerna-lite/profiler/-/profiler-1.16.0.tgz#1fd64647fd6c41fbb232130b28e52083c3570b5b"
-  integrity sha512-CT0QADoUswHgHmwriP6tK7d/2g/zYLO7TmzmsfoHRuyFLrMETcHcGcsQMLfcyg/qSaeiNBIda00HZaDthlj8vQ==
+"@lerna-lite/profiler@1.16.2":
+  version "1.16.2"
+  resolved "https://registry.npmjs.org/@lerna-lite/profiler/-/profiler-1.16.2.tgz#41d75043ca4fba9ff42960187a47b3955e820081"
+  integrity sha512-4EQ2qlVxKI1AMNgSMB1oexdPTMx8rS7rjJlmSkDs4dVektz0NcWnJtOEgUI8fBekN0EXVBAPazRlFfMvo3FxOg==
   dependencies:
-    "@lerna-lite/core" "1.16.0"
+    "@lerna-lite/core" "1.16.2"
     fs-extra "^11.1.0"
     npmlog "^7.0.1"
     upath "^2.0.1"
 
-"@lerna-lite/publish@1.16.0":
-  version "1.16.0"
-  resolved "https://registry.npmjs.org/@lerna-lite/publish/-/publish-1.16.0.tgz#cb45d2497b76ba4e8d7c566b9f608f3311494e15"
-  integrity sha512-X3dGiK6Bhe87Q8lwvyT8FvD9iXzJAmaf7sXsvLOXd0Mf5+JcsnCVWCN0FfMeGnnNzSz1zMMBXI7pgfhYbJ0mOw==
+"@lerna-lite/publish@1.16.2":
+  version "1.16.2"
+  resolved "https://registry.npmjs.org/@lerna-lite/publish/-/publish-1.16.2.tgz#31ff3512e8e61876057c160ab0b15aee09773c57"
+  integrity sha512-D05SpXGth/riH7N6oVOtu4/ZzJG0Gm/6cOYDygosRs2J9kKMBbIO6pNAtGzuOfTXlbddFtJtY3iNTq51HfGnFw==
   dependencies:
-    "@lerna-lite/core" "1.16.0"
-    "@lerna-lite/version" "1.16.0"
-    "@npmcli/arborist" "^6.2.4"
+    "@lerna-lite/core" "1.16.2"
+    "@lerna-lite/version" "1.16.2"
+    "@npmcli/arborist" "^6.2.5"
     byte-size "^7.0.1"
     chalk "^4.1.2"
     columnify "^1.6.0"
@@ -325,7 +325,7 @@
     glob "^7.2.3"
     has-unicode "^2.0.1"
     libnpmaccess "^7.0.2"
-    libnpmpublish "^7.1.0"
+    libnpmpublish "^7.1.1"
     npm-package-arg "^10.1.0"
     npm-packlist "^7.0.4"
     npm-registry-fetch "^14.0.3"
@@ -341,25 +341,25 @@
     tar "^6.1.13"
     temp-dir "^2.0.0"
 
-"@lerna-lite/run@^1.16.0":
-  version "1.16.0"
-  resolved "https://registry.npmjs.org/@lerna-lite/run/-/run-1.16.0.tgz#9dcd5c18f08c2c134a61cd2b227c1d9c61ff7a27"
-  integrity sha512-BiXw9OfFMClAGx6hJXWZE08F62PyPYnNeiuJvZZfSlzvvsVlEszgLeaU1kOA9I9FQtrM1O1ttIWA7CpmZbrnOg==
+"@lerna-lite/run@^1.16.2":
+  version "1.16.2"
+  resolved "https://registry.npmjs.org/@lerna-lite/run/-/run-1.16.2.tgz#32a69155524405ea26070864711e45951001bb0b"
+  integrity sha512-BdgtjTt+6NKv5CNniM7IU6zUu0zxglyVqhPxUsfUMtrjuesHLxWbpug/ergqunR1Mk8B9W/3ZH5Oox0GlVwodw==
   dependencies:
-    "@lerna-lite/core" "1.16.0"
-    "@lerna-lite/filter-packages" "1.16.0"
-    "@lerna-lite/profiler" "1.16.0"
+    "@lerna-lite/core" "1.16.2"
+    "@lerna-lite/filter-packages" "1.16.2"
+    "@lerna-lite/profiler" "1.16.2"
     chalk "^4.1.2"
     fs-extra "^11.1.0"
     npmlog "^7.0.1"
     p-map "^4.0.0"
 
-"@lerna-lite/version@1.16.0":
-  version "1.16.0"
-  resolved "https://registry.npmjs.org/@lerna-lite/version/-/version-1.16.0.tgz#d336932a218b00c777a8039e93b9e86c1c3c13e3"
-  integrity sha512-myTVttd5Szyw4edJQ28Kqi2xYTordlQzDWklXxZ4oj637Bhjhr3cWtzLuJWPMko4B7ZdD+CZTteKwKVDlyfUmg==
+"@lerna-lite/version@1.16.2":
+  version "1.16.2"
+  resolved "https://registry.npmjs.org/@lerna-lite/version/-/version-1.16.2.tgz#c96a5f96c85590db0875904355766d91d54417ca"
+  integrity sha512-C3yP4SYREEGVcck5EG5TdJpwfr7K0sgvzq/MivhkF/kBe3UJYCUNy+UWjg7Rdjrd+VwONee0t3GnS7Q35bevAw==
   dependencies:
-    "@lerna-lite/core" "1.16.0"
+    "@lerna-lite/core" "1.16.2"
     "@octokit/plugin-enterprise-rest" "^6.0.1"
     "@octokit/rest" "^19.0.7"
     chalk "^4.1.2"
@@ -451,7 +451,7 @@
     treeverse "^1.0.4"
     walk-up-path "^1.0.0"
 
-"@npmcli/arborist@^6.2.4":
+"@npmcli/arborist@^6.2.5":
   version "6.2.5"
   resolved "https://registry.npmjs.org/@npmcli/arborist/-/arborist-6.2.5.tgz#b35c6ec42feeb7b44d6a6fcd2ea323e35b256d80"
   integrity sha512-+GPm+9WrDnl9q+LvuMB2W+roVinHTGDdYWOtYzRfpAnuiqaATFbH14skpXjlJ7LvyUcyd1oJhuGq6XXJLGFNng==
@@ -4470,7 +4470,7 @@ libnpmaccess@^7.0.2:
     npm-package-arg "^10.1.0"
     npm-registry-fetch "^14.0.3"
 
-libnpmpublish@^7.1.0:
+libnpmpublish@^7.1.1:
   version "7.1.1"
   resolved "https://registry.npmjs.org/libnpmpublish/-/libnpmpublish-7.1.1.tgz#68ea941b83aff0ec3c31008b3d0de1f8b509c111"
   integrity sha512-O4DPBkqEeYO5xvMsl31jliC/Y8MFVvOAO9EspbIR8Qu9YJ4Pv4btN4r65UB804nZsd3A8TY96AnquG2ZRJxTRA==
