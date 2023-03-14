@@ -3,6 +3,23 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+## [4.0.0](https://github.com/streetsidesoftware/cspell-dicts/compare/@cspell/dict-latex@3.1.0...@cspell/dict-latex@4.0.0) (2023-03-14)
+
+
+### ⚠ BREAKING CHANGES
+
+* (dotnet) remove misspelling from dict ([#2014](https://github.com/streetsidesoftware/cspell-dicts/issues/2014))
+
+### Updates and Bug Fixes
+
+* (dotnet) remove misspelling from dict ([#2014](https://github.com/streetsidesoftware/cspell-dicts/issues/2014)) ([e6b43d2](https://github.com/streetsidesoftware/cspell-dicts/commit/e6b43d25deb0daa1eb8392b6a1e2d404099df397))
+* Update cspell-tools ([#2013](https://github.com/streetsidesoftware/cspell-dicts/issues/2013)) ([8170205](https://github.com/streetsidesoftware/cspell-dicts/commit/817020598f24a6d1e82d41919e88952664de2b88))
+
+
+### Miscellaneous
+
+* Use cspell-tools build ([#2017](https://github.com/streetsidesoftware/cspell-dicts/issues/2017)) ([57b2bf3](https://github.com/streetsidesoftware/cspell-dicts/commit/57b2bf317314a99e3a96a08fb116600ad733c9e7))
+
 ## [3.1.0](https://github.com/streetsidesoftware/cspell-dicts/compare/@cspell/dict-latex@3.0.0...@cspell/dict-latex@3.1.0) (2022-12-25)
 
 

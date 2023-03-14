@@ -3,6 +3,24 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+## [5.0.0](https://github.com/streetsidesoftware/cspell-dicts/compare/@cspell/dict-dotnet@4.0.2...@cspell/dict-dotnet@5.0.0) (2023-03-14)
+
+
+### ⚠ BREAKING CHANGES
+
+* Update how words are split ([#2033](https://github.com/streetsidesoftware/cspell-dicts/issues/2033))
+* Update cspell-tools for new splitting rules ([#2026](https://github.com/streetsidesoftware/cspell-dicts/issues/2026))
+* (dotnet) remove misspelling from dict ([#2014](https://github.com/streetsidesoftware/cspell-dicts/issues/2014))
+
+### Updates and Bug Fixes
+
+* (dotnet) remove misspelling from dict ([#2014](https://github.com/streetsidesoftware/cspell-dicts/issues/2014)) ([e6b43d2](https://github.com/streetsidesoftware/cspell-dicts/commit/e6b43d25deb0daa1eb8392b6a1e2d404099df397))
+* Update cspell-tools for new splitting rules ([#2026](https://github.com/streetsidesoftware/cspell-dicts/issues/2026)) ([33656cf](https://github.com/streetsidesoftware/cspell-dicts/commit/33656cfeb8afb191eb7b7c685c263ff59736a644))
+* Update how words are split ([#2033](https://github.com/streetsidesoftware/cspell-dicts/issues/2033)) ([cae637e](https://github.com/streetsidesoftware/cspell-dicts/commit/cae637e413c3a789bb4169867af321db68768891))
+* Workflow Bot -- Build Dictionaries ([#2016](https://github.com/streetsidesoftware/cspell-dicts/issues/2016)) ([b05fe38](https://github.com/streetsidesoftware/cspell-dicts/commit/b05fe38c8630a5709bfe93a32128cff63f8b6967))
+* Workflow Bot -- Build Dictionaries ([#2028](https://github.com/streetsidesoftware/cspell-dicts/issues/2028)) ([8022594](https://github.com/streetsidesoftware/cspell-dicts/commit/802259491c114d3bc075f4f1cef47de2aca4d787))
+* Workflow Bot -- Build Dictionaries ([#2034](https://github.com/streetsidesoftware/cspell-dicts/issues/2034)) ([3fc883c](https://github.com/streetsidesoftware/cspell-dicts/commit/3fc883c51f748eda2cf98b995f9c0f089915f079))
+
 ## [4.0.2](https://github.com/streetsidesoftware/cspell-dicts/compare/@cspell/dict-dotnet@4.0.1...@cspell/dict-dotnet@4.0.2) (2023-02-22)
 
 

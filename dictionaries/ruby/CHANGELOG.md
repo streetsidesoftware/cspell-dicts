@@ -3,6 +3,24 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+## [5.0.0](https://github.com/streetsidesoftware/cspell-dicts/compare/@cspell/dict-ruby@4.0.2...@cspell/dict-ruby@5.0.0) (2023-03-14)
+
+
+### ⚠ BREAKING CHANGES
+
+* Update how words are split ([#2033](https://github.com/streetsidesoftware/cspell-dicts/issues/2033))
+* Update cspell-tools for new splitting rules ([#2026](https://github.com/streetsidesoftware/cspell-dicts/issues/2026))
+* (dotnet) remove misspelling from dict ([#2014](https://github.com/streetsidesoftware/cspell-dicts/issues/2014))
+
+### Updates and Bug Fixes
+
+* (dotnet) remove misspelling from dict ([#2014](https://github.com/streetsidesoftware/cspell-dicts/issues/2014)) ([e6b43d2](https://github.com/streetsidesoftware/cspell-dicts/commit/e6b43d25deb0daa1eb8392b6a1e2d404099df397))
+* (ruby) Allow only English word splits ([#2020](https://github.com/streetsidesoftware/cspell-dicts/issues/2020)) ([d44fff0](https://github.com/streetsidesoftware/cspell-dicts/commit/d44fff09f9e0e8ab24bbdca2c517fe51ae8df652))
+* Update cspell-tools ([#2013](https://github.com/streetsidesoftware/cspell-dicts/issues/2013)) ([8170205](https://github.com/streetsidesoftware/cspell-dicts/commit/817020598f24a6d1e82d41919e88952664de2b88))
+* Update cspell-tools for new splitting rules ([#2026](https://github.com/streetsidesoftware/cspell-dicts/issues/2026)) ([33656cf](https://github.com/streetsidesoftware/cspell-dicts/commit/33656cfeb8afb191eb7b7c685c263ff59736a644))
+* Update how words are split ([#2033](https://github.com/streetsidesoftware/cspell-dicts/issues/2033)) ([cae637e](https://github.com/streetsidesoftware/cspell-dicts/commit/cae637e413c3a789bb4169867af321db68768891))
+* Workflow Bot -- Build Dictionaries ([#2019](https://github.com/streetsidesoftware/cspell-dicts/issues/2019)) ([1d95c5b](https://github.com/streetsidesoftware/cspell-dicts/commit/1d95c5b3b3a535986b60c80e8fecf85bee2ba66a))
+
 ## [4.0.2](https://github.com/streetsidesoftware/cspell-dicts/compare/@cspell/dict-ruby@4.0.1...@cspell/dict-ruby@4.0.2) (2023-02-22)
 
 

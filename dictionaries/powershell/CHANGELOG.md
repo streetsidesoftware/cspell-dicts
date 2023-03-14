@@ -27,6 +27,20 @@ See [Conventional Commits](https://conventionalcommits.org) for commit guideline
 
 
 
+## [5.0.0](https://github.com/streetsidesoftware/cspell-dicts/compare/@cspell/dict-powershell@4.0.2...@cspell/dict-powershell@5.0.0) (2023-03-14)
+
+
+### ⚠ BREAKING CHANGES
+
+* Update how words are split ([#2033](https://github.com/streetsidesoftware/cspell-dicts/issues/2033))
+* Update cspell-tools for new splitting rules ([#2026](https://github.com/streetsidesoftware/cspell-dicts/issues/2026))
+
+### Updates and Bug Fixes
+
+* (Powershell) use build command ([#2023](https://github.com/streetsidesoftware/cspell-dicts/issues/2023)) ([8578196](https://github.com/streetsidesoftware/cspell-dicts/commit/8578196beecaf22124342d0ce1fb2801212d859d))
+* Update cspell-tools for new splitting rules ([#2026](https://github.com/streetsidesoftware/cspell-dicts/issues/2026)) ([33656cf](https://github.com/streetsidesoftware/cspell-dicts/commit/33656cfeb8afb191eb7b7c685c263ff59736a644))
+* Update how words are split ([#2033](https://github.com/streetsidesoftware/cspell-dicts/issues/2033)) ([cae637e](https://github.com/streetsidesoftware/cspell-dicts/commit/cae637e413c3a789bb4169867af321db68768891))
+
 ## [4.0.2](https://github.com/streetsidesoftware/cspell-dicts/compare/@cspell/dict-powershell@4.0.1...@cspell/dict-powershell@4.0.2) (2023-02-22)
 
 
