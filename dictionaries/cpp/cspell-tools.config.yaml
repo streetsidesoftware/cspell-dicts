@@ -23,6 +23,25 @@ targets:
           - src/stdlib-cpp.txt
           - src/template-strings.txt
       - filename: src/allowed-terms.txt
+      - filename: src/cpp-legacy-words.txt # these are included until we can find a better way
+        split: true
+        allowedSplitWords:
+          - ../en_US/en_US.trie
+          - ../software-terms/dict/softwareTerms.txt
+          - src/cpp.txt
+          - src/allowed-terms.txt
+          - src/compiler-clang-attributes.txt
+          - src/compiler-gcc.txt
+          - src/compiler-msvc.txt
+          - src/ecosystem.txt
+          - src/lang-jargon.txt
+          - src/lang-keywords.txt
+          - src/people.txt
+          - src/stdlib-c.txt
+          - src/stdlib-cerrno.txt
+          - src/stdlib-cmath.txt
+          - src/stdlib-cpp.txt
+          - src/template-strings.txt
     format: plaintext
     targetDirectory: "./dict"
     generateNonStrict: false
