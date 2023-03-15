@@ -3,6 +3,14 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+## [6.0.1](https://github.com/streetsidesoftware/cspell-dicts/compare/@cspell/dict-golang@6.0.0...@cspell/dict-golang@6.0.1) (2023-03-14)
+
+
+### Updates and Bug Fixes
+
+* Add some terms based upon tests ([#2053](https://github.com/streetsidesoftware/cspell-dicts/issues/2053)) ([0dae79b](https://github.com/streetsidesoftware/cspell-dicts/commit/0dae79b6f99a2521ba9fee575559e47e9ac9ec2d))
+* Workflow Bot -- Build Dictionaries ([#2055](https://github.com/streetsidesoftware/cspell-dicts/issues/2055)) ([87bcb14](https://github.com/streetsidesoftware/cspell-dicts/commit/87bcb14c4e50b1005897331a6435c6dd83fbe0bc))
+
 ## [6.0.0](https://github.com/streetsidesoftware/cspell-dicts/compare/@cspell/dict-golang@5.0.2...@cspell/dict-golang@6.0.0) (2023-03-14)
 
 
