@@ -3,6 +3,15 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+## [3.1.6](https://github.com/streetsidesoftware/cspell-dicts/compare/@cspell/dict-software-terms@3.1.5...@cspell/dict-software-terms@3.1.6) (2023-03-20)
+
+
+### Updates and Bug Fixes
+
+* Add "arbitrary(-ies)" to software terms dictionary ([#2070](https://github.com/streetsidesoftware/cspell-dicts/issues/2070)) ([eb2f0f5](https://github.com/streetsidesoftware/cspell-dicts/commit/eb2f0f5d83500d8bdb42b233a3edb2cfc50a7942))
+* Add some software related terms ([#2071](https://github.com/streetsidesoftware/cspell-dicts/issues/2071)) ([1d6942e](https://github.com/streetsidesoftware/cspell-dicts/commit/1d6942ec4ba78740b75d4153b15f4a7f2b89f741))
+* Workflow Bot -- Build Dictionaries ([#2072](https://github.com/streetsidesoftware/cspell-dicts/issues/2072)) ([7c7f650](https://github.com/streetsidesoftware/cspell-dicts/commit/7c7f650e7af426f8893fd20facb4fc8db1bae75b))
+
 ## [3.1.5](https://github.com/streetsidesoftware/cspell-dicts/compare/@cspell/dict-software-terms@3.1.4...@cspell/dict-software-terms@3.1.5) (2023-02-22)
 
 

@@ -1,5 +1,13 @@
 # Changelog
 
+## [1.0.3](https://github.com/streetsidesoftware/cspell-dicts/compare/@cspell/dict-shell@1.0.2...@cspell/dict-shell@1.0.3) (2023-03-20)
+
+
+### Updates and Bug Fixes
+
+* Add some software related terms ([#2071](https://github.com/streetsidesoftware/cspell-dicts/issues/2071)) ([1d6942e](https://github.com/streetsidesoftware/cspell-dicts/commit/1d6942ec4ba78740b75d4153b15f4a7f2b89f741))
+* Workflow Bot -- Build Dictionaries ([#2072](https://github.com/streetsidesoftware/cspell-dicts/issues/2072)) ([7c7f650](https://github.com/streetsidesoftware/cspell-dicts/commit/7c7f650e7af426f8893fd20facb4fc8db1bae75b))
+
 ## [1.0.2](https://github.com/streetsidesoftware/cspell-dicts/compare/@cspell/dict-shell@1.0.1...@cspell/dict-shell@1.0.2) (2023-02-22)
 
 
