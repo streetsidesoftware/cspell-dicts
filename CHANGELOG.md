@@ -1,5 +1,20 @@
 # Release Notes
 
+## [11.0.5](https://github.com/streetsidesoftware/cspell-dicts/compare/cspell-dicts@11.0.4...cspell-dicts@11.0.5) (2023-03-20)
+
+
+### Updates and Bug Fixes
+
+* Add "arbitrary(-ies)" to software terms dictionary ([#2070](https://github.com/streetsidesoftware/cspell-dicts/issues/2070)) ([eb2f0f5](https://github.com/streetsidesoftware/cspell-dicts/commit/eb2f0f5d83500d8bdb42b233a3edb2cfc50a7942))
+* Add some software related terms ([#2071](https://github.com/streetsidesoftware/cspell-dicts/issues/2071)) ([1d6942e](https://github.com/streetsidesoftware/cspell-dicts/commit/1d6942ec4ba78740b75d4153b15f4a7f2b89f741))
+* Workflow Bot -- Build Dictionaries ([#2072](https://github.com/streetsidesoftware/cspell-dicts/issues/2072)) ([7c7f650](https://github.com/streetsidesoftware/cspell-dicts/commit/7c7f650e7af426f8893fd20facb4fc8db1bae75b))
+
+
+### Continuous Integration
+
+* Workflow Bot -- Update ALL Dependencies (main) ([#2056](https://github.com/streetsidesoftware/cspell-dicts/issues/2056)) ([d196b61](https://github.com/streetsidesoftware/cspell-dicts/commit/d196b6103c5750e8465e2ae22f5651236f2087ef))
+* Workflow Bot -- Update ALL Dependencies (main) ([#2069](https://github.com/streetsidesoftware/cspell-dicts/issues/2069)) ([58c0053](https://github.com/streetsidesoftware/cspell-dicts/commit/58c0053be109ff3fd43ebb57f0915a585385ee85))
+
 ## [11.0.4](https://github.com/streetsidesoftware/cspell-dicts/compare/cspell-dicts@11.0.3...cspell-dicts@11.0.4) (2023-03-17)
 
 
