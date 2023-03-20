@@ -27,6 +27,14 @@ See [Conventional Commits](https://conventionalcommits.org) for commit guideline
 
 
 
+## [5.0.1](https://github.com/streetsidesoftware/cspell-dicts/compare/@cspell/dict-powershell@5.0.0...@cspell/dict-powershell@5.0.1) (2023-03-17)
+
+
+### Updates and Bug Fixes
+
+* Add Clixml to PowerShell ([#2063](https://github.com/streetsidesoftware/cspell-dicts/issues/2063)) ([230bd3e](https://github.com/streetsidesoftware/cspell-dicts/commit/230bd3ef0be412824831e905ef4ae359b3c9be3c))
+* Workflow Bot -- Build Dictionaries ([#2065](https://github.com/streetsidesoftware/cspell-dicts/issues/2065)) ([9766f1d](https://github.com/streetsidesoftware/cspell-dicts/commit/9766f1d8e5eb2dbb1773ce5bbb39df65927b8303))
+
 ## [5.0.0](https://github.com/streetsidesoftware/cspell-dicts/compare/@cspell/dict-powershell@4.0.2...@cspell/dict-powershell@5.0.0) (2023-03-14)
 
 
