@@ -1,5 +1,20 @@
 # Release Notes
 
+## [11.0.6](https://github.com/streetsidesoftware/cspell-dicts/compare/cspell-dicts@11.0.5...cspell-dicts@11.0.6) (2023-03-23)
+
+
+### Continuous Integration
+
+* Workflow Bot -- Update ALL Dependencies (main) ([#2074](https://github.com/streetsidesoftware/cspell-dicts/issues/2074)) ([7be87e0](https://github.com/streetsidesoftware/cspell-dicts/commit/7be87e00a4cc1f741561ff978c4afdf946e179e9))
+
+
+### Updates and Bug Fixes
+
+* add `minimalistic` to en_shared ([#2083](https://github.com/streetsidesoftware/cspell-dicts/issues/2083)) ([01cc061](https://github.com/streetsidesoftware/cspell-dicts/commit/01cc061702b30d8eba01a9d59b362448e5088afa))
+* add `nestjs` ([#2077](https://github.com/streetsidesoftware/cspell-dicts/issues/2077)) ([f9a17fa](https://github.com/streetsidesoftware/cspell-dicts/commit/f9a17fabd3bdfa317fc421aac6148f863e870bcd))
+* Update fullstack.txt ([#2079](https://github.com/streetsidesoftware/cspell-dicts/issues/2079)) ([0726760](https://github.com/streetsidesoftware/cspell-dicts/commit/0726760a63b8890477597851166b1cb04a903fcd))
+* Workflow Bot -- Build Dictionaries ([#2084](https://github.com/streetsidesoftware/cspell-dicts/issues/2084)) ([a76a879](https://github.com/streetsidesoftware/cspell-dicts/commit/a76a87934c3840e29eda36e42f1a57113e211348))
+
 ## [11.0.5](https://github.com/streetsidesoftware/cspell-dicts/compare/cspell-dicts@11.0.4...cspell-dicts@11.0.5) (2023-03-20)
 
 

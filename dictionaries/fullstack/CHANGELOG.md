@@ -3,6 +3,14 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+## [3.1.5](https://github.com/streetsidesoftware/cspell-dicts/compare/@cspell/dict-fullstack@3.1.4...@cspell/dict-fullstack@3.1.5) (2023-03-23)
+
+
+### Updates and Bug Fixes
+
+* add `nestjs` ([#2077](https://github.com/streetsidesoftware/cspell-dicts/issues/2077)) ([f9a17fa](https://github.com/streetsidesoftware/cspell-dicts/commit/f9a17fabd3bdfa317fc421aac6148f863e870bcd))
+* Update fullstack.txt ([#2079](https://github.com/streetsidesoftware/cspell-dicts/issues/2079)) ([0726760](https://github.com/streetsidesoftware/cspell-dicts/commit/0726760a63b8890477597851166b1cb04a903fcd))
+
 ## [3.1.4](https://github.com/streetsidesoftware/cspell-dicts/compare/@cspell/dict-fullstack@3.1.3...@cspell/dict-fullstack@3.1.4) (2023-02-22)
 
 

@@ -1,5 +1,12 @@
 # Change Log
 
+## [1.0.4](https://github.com/streetsidesoftware/cspell-dicts/compare/@cspell/dict-en-shared@1.0.3...@cspell/dict-en-shared@1.0.4) (2023-03-23)
+
+
+### Updates and Bug Fixes
+
+* add `minimalistic` to en_shared ([#2083](https://github.com/streetsidesoftware/cspell-dicts/issues/2083)) ([01cc061](https://github.com/streetsidesoftware/cspell-dicts/commit/01cc061702b30d8eba01a9d59b362448e5088afa))
+
 ## [1.0.3](https://github.com/streetsidesoftware/cspell-dicts/compare/@cspell/dict-en-shared@1.0.2...@cspell/dict-en-shared@1.0.3) (2023-02-08)
 
 
