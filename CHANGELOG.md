@@ -1,5 +1,24 @@
 # Release Notes
 
+## [11.0.7](https://github.com/streetsidesoftware/cspell-dicts/compare/cspell-dicts@11.0.6...cspell-dicts@11.0.7) (2023-03-30)
+
+
+### Continuous Integration
+
+* Workflow Bot -- Update ALL Dependencies (main) ([#2076](https://github.com/streetsidesoftware/cspell-dicts/issues/2076)) ([5592edc](https://github.com/streetsidesoftware/cspell-dicts/commit/5592edc5b2a87fdabdaa65a7560307dfc19b7b29))
+* Workflow Bot -- Update ALL Dependencies (main) ([#2091](https://github.com/streetsidesoftware/cspell-dicts/issues/2091)) ([fd81f4e](https://github.com/streetsidesoftware/cspell-dicts/commit/fd81f4e7e7e7ad93a074162dd26ea0e57ed6115c))
+
+
+### Updates and Bug Fixes
+
+* Add Iosevka to list of fonts ([#2094](https://github.com/streetsidesoftware/cspell-dicts/issues/2094)) ([b32f99a](https://github.com/streetsidesoftware/cspell-dicts/commit/b32f99a9c74fb60e07c650dc235b4b546b0274cd))
+
+
+### Build System
+
+* **deps:** bump streetsidesoftware/cspell-action from 2.23.0 to 2.25.0 ([#2090](https://github.com/streetsidesoftware/cspell-dicts/issues/2090)) ([ad27e53](https://github.com/streetsidesoftware/cspell-dicts/commit/ad27e53eee5f2fd93992674271981b7579bcdd6e))
+* **deps:** bump streetsidesoftware/cspell-action from 2.25.0 to 2.26.0 ([#2092](https://github.com/streetsidesoftware/cspell-dicts/issues/2092)) ([d4bf19d](https://github.com/streetsidesoftware/cspell-dicts/commit/d4bf19df30233c50ea933db009b300daa2a35666))
+
 ## [11.0.6](https://github.com/streetsidesoftware/cspell-dicts/compare/cspell-dicts@11.0.5...cspell-dicts@11.0.6) (2023-03-23)
 
 
