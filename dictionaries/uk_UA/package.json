@@ -1,6 +1,6 @@
 {
   "name": "@cspell/dict-uk-ua",
-  "version": "2.0.0",
+  "version": "3.0.0",
   "description": "Ukrainian dictionary for cspell",
   "publishConfig": {
     "access": "public"
@@ -11,7 +11,7 @@
     "./cspell-ext.json": "./cspell-ext.json"
   },
   "scripts": {
-    "build": "cspell-tools compile-trie \"uk_ua.dic\" -o .",
+    "build": "cspell-tools-cli compile --trie3 -x compound compile-trie \"uk_ua.dic\" -o .",
     "test": "hunspell-reader words -n 1000 \"uk_ua.dic\" | cspell -v -c ./cspell-ext.json --local=uk --languageId=* stdin",
     "prepublishOnly": "echo pre-publish"
   },
