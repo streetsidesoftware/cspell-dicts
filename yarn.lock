@@ -3,9 +3,9 @@
 
 
 "@babel/code-frame@^7.0.0":
-  version "7.18.6"
-  resolved "https://registry.npmjs.org/@babel/code-frame/-/code-frame-7.18.6.tgz#3b25d38c89600baa2dcc219edfa88a74eb2c427a"
-  integrity sha512-TDCmlK5eOvH+eH7cdAFlNXeVJqWIQ7gW9tY1GJIpUtFb6CmjVyq2VM3u71bOyR8CRihcCgMUYoDNyLXao3+70Q==
+  version "7.21.4"
+  resolved "https://registry.npmjs.org/@babel/code-frame/-/code-frame-7.21.4.tgz#d0fa9e4413aca81f2b23b9442797bda1826edb39"
+  integrity sha512-LYvhNKfwWSPpocw8GI7gpK2nq3HSDuEPC/uSYaALSJu9xjsalaaYFOq0Pwt5KmVqwEbZlDu81aLXwBOmD/Fv9g==
   dependencies:
     "@babel/highlight" "^7.18.6"
 
@@ -442,9 +442,9 @@
     walk-up-path "^1.0.0"
 
 "@npmcli/arborist@^6.2.5":
-  version "6.2.5"
-  resolved "https://registry.npmjs.org/@npmcli/arborist/-/arborist-6.2.5.tgz#b35c6ec42feeb7b44d6a6fcd2ea323e35b256d80"
-  integrity sha512-+GPm+9WrDnl9q+LvuMB2W+roVinHTGDdYWOtYzRfpAnuiqaATFbH14skpXjlJ7LvyUcyd1oJhuGq6XXJLGFNng==
+  version "6.2.6"
+  resolved "https://registry.npmjs.org/@npmcli/arborist/-/arborist-6.2.6.tgz#3b5d4cc9517c26252d3dd01bbd940ced93aec1bd"
+  integrity sha512-fkKRY8Y8EHs9tydcuZMn6G1JhZfcoWDXgJzaRiZRJf+WFA1MqOS5IWL2wMjGUtF2V/vMVWWgBT1O4TEKpJK9PQ==
   dependencies:
     "@isaacs/string-locale-compare" "^1.1.0"
     "@npmcli/fs" "^3.1.0"
@@ -462,7 +462,7 @@
     hosted-git-info "^6.1.1"
     json-parse-even-better-errors "^3.0.0"
     json-stringify-nice "^1.1.4"
-    minimatch "^6.1.6"
+    minimatch "^7.4.2"
     nopt "^7.0.0"
     npm-install-checks "^6.0.0"
     npm-package-arg "^10.1.0"
@@ -1192,7 +1192,7 @@ anymatch@~3.1.2:
 
 "aoo-mozilla-en-dict@https://github.com/marcoagpinto/aoo-mozilla-en-dict":
   version "0.0.0"
-  resolved "https://github.com/marcoagpinto/aoo-mozilla-en-dict#790b3c4ca411cef99361a96e91daab87f0fbe779"
+  resolved "https://github.com/marcoagpinto/aoo-mozilla-en-dict#58b5b744280734e06b172191218af1bd31dc5d88"
 
 "aproba@^1.0.3 || ^2.0.0":
   version "2.0.0"
@@ -3484,12 +3484,12 @@ glob@^8.0.1, glob@^8.1.0:
     once "^1.3.0"
 
 glob@^9.3.0, glob@^9.3.1:
-  version "9.3.2"
-  resolved "https://registry.npmjs.org/glob/-/glob-9.3.2.tgz#8528522e003819e63d11c979b30896e0eaf52eda"
-  integrity sha512-BTv/JhKXFEHsErMte/AnfiSv8yYOLLiyH2lTg8vn02O21zWFgHPTfxtgn1QRe7NRgggUhC8hacR2Re94svHqeA==
+  version "9.3.4"
+  resolved "https://registry.npmjs.org/glob/-/glob-9.3.4.tgz#e75dee24891a80c25cc7ee1dd327e126b98679af"
+  integrity sha512-qaSc49hojMOv1EPM4EuyITjDSgSKI0rthoHnvE81tcOi1SCVndHko7auqxdQ14eiQG2NDBJBE86+2xIrbIvrbA==
   dependencies:
     fs.realpath "^1.0.0"
-    minimatch "^7.4.1"
+    minimatch "^8.0.2"
     minipass "^4.2.4"
     path-scurry "^1.6.1"
 
@@ -4454,9 +4454,9 @@ libnpmaccess@^7.0.2:
     npm-registry-fetch "^14.0.3"
 
 libnpmpublish@^7.1.2:
-  version "7.1.2"
-  resolved "https://registry.npmjs.org/libnpmpublish/-/libnpmpublish-7.1.2.tgz#9a82a3a3df641378fcf5370f2f2d456a15d9fb4b"
-  integrity sha512-IUjE5R3jCmTVWGEcJtzoRz3kAWoDqZUZzwhcpBN+rMIDiRRjS9ZGkyeT0KxXocg2DJEggyZyxSIdpaV//aLz/w==
+  version "7.1.3"
+  resolved "https://registry.npmjs.org/libnpmpublish/-/libnpmpublish-7.1.3.tgz#98e1b0a41cc8addfb7a8aee241e57e0034b877c4"
+  integrity sha512-Ek/pCn90CphbpeQ3Jrd/TtQNsvBjwHnB1gtxrWiZQNCed7hTMlSSQzYhnZeipAXvxxQkH3Ebf34/60Hw2JyV+g==
   dependencies:
     ci-info "^3.6.1"
     normalize-package-data "^5.0.0"
@@ -5422,17 +5422,17 @@ minimatch@^5.0.1:
   dependencies:
     brace-expansion "^2.0.1"
 
-minimatch@^6.1.6:
-  version "6.2.0"
-  resolved "https://registry.npmjs.org/minimatch/-/minimatch-6.2.0.tgz#2b70fd13294178c69c04dfc05aebdb97a4e79e42"
-  integrity sha512-sauLxniAmvnhhRjFwPNnJKaPFYyddAgbYdeUpHULtCT/GhzdCx/MDNy+Y40lBxTQUrMzDE8e0S43Z5uqfO0REg==
+minimatch@^7.2.0, minimatch@^7.4.2:
+  version "7.4.4"
+  resolved "https://registry.npmjs.org/minimatch/-/minimatch-7.4.4.tgz#e15a8ab56cc5469eca75a26a1319e5c00900824a"
+  integrity sha512-T+8B3kNrLP7jDb5eaC4rUIp6DKoeTSb6f9SwF2phcY2gxJUA0GEf1i29/FHxBMEfx0ppWlr434/D0P+6jb8bOQ==
   dependencies:
     brace-expansion "^2.0.1"
 
-minimatch@^7.2.0, minimatch@^7.4.1, minimatch@^7.4.2:
-  version "7.4.3"
-  resolved "https://registry.npmjs.org/minimatch/-/minimatch-7.4.3.tgz#012cbf110a65134bb354ae9773b55256cdb045a2"
-  integrity sha512-5UB4yYusDtkRPbRiy1cqZ1IpGNcJCGlEMG17RKzPddpyiPKoCdwohbED8g4QXT0ewCt8LTkQXuljsUfQ3FKM4A==
+minimatch@^8.0.2:
+  version "8.0.2"
+  resolved "https://registry.npmjs.org/minimatch/-/minimatch-8.0.2.tgz#ba35f8afeb255a4cbad4b6677b46132f3278c469"
+  integrity sha512-ikHGF67ODxj7vS5NKU2wvTsFLbExee+KXVCnBWh8Cg2hVJfBMQIrlo50qru/09E0EifjnU8dZhJ/iHhyXJM6Mw==
   dependencies:
     brace-expansion "^2.0.1"
 
@@ -6587,9 +6587,9 @@ promise-all-reject-late@^1.0.0:
   integrity sha512-vuf0Lf0lOxyQREH7GDIOUMLS7kz+gs8i6B+Yi8dC68a2sychGrHTJYghMBD6k7eUcH0H5P73EckCA48xijWqXw==
 
 promise-call-limit@^1.0.1:
-  version "1.0.1"
-  resolved "https://registry.npmjs.org/promise-call-limit/-/promise-call-limit-1.0.1.tgz#4bdee03aeb85674385ca934da7114e9bcd3c6e24"
-  integrity sha512-3+hgaa19jzCGLuSCbieeRsu5C2joKfYn8pY6JAuXFRVfF4IO+L7UPpFWNTeWT9pM7uhskvbPPd/oEOktCn317Q==
+  version "1.0.2"
+  resolved "https://registry.npmjs.org/promise-call-limit/-/promise-call-limit-1.0.2.tgz#f64b8dd9ef7693c9c7613e7dfe8d6d24de3031ea"
+  integrity sha512-1vTUnfI2hzui8AEIixbdAJlFY4LFDXqQswy/2eOlThAscXCY4It8FdVuI0fMJGAB2aWGbdQf/gv0skKYXmdrHA==
 
 promise-inflight@^1.0.1:
   version "1.0.1"
