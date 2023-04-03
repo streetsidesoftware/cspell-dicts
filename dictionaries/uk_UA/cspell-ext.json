@@ -1,43 +1,117 @@
-// cSpell Settings
 {
     "id": "uk-ua",
     "name": "Ukrainian Dictionary",
     "description": "Ukrainian Dictionary",
     "readonly": true,
-    // List of dictionary files to add to the global list of dictionaries
     "dictionaryDefinitions": [
         {
             "name": "uk-ua",
-            "path": "./uk_ua.trie.gz",
-            "description": "Ukrainian Dictionary"
+            "path": "./uk_ua.trie",
+            "description": "Ukrainian Dictionary",
+            "dictionaryInformation": {
+                "locale": "uk-UA",
+                "alphabet": "A-Za-zÄÇÉËÏÑÔÖÜßäçéëïñôöüʼЄІЇА-ЩЬЮ-щьюяєіїҐґ",
+                "accents": "\u0301\u0302\u0303\u0306\u0308\u0327",
+                "suggestionEditCosts": [
+                    {
+                        "map": "(SS)(ss)ß|Aa|Bb|Cc|Dd|Ee",
+                        "replace": 1,
+                        "description": "Capitalization change."
+                    },
+                    {
+                        "map": "Ff|Gg|Hh|Ii|Jj|Kk",
+                        "replace": 1,
+                        "description": "Capitalization change."
+                    },
+                    {
+                        "map": "Ll|Mm|Nn|Oo|Pp|Qq",
+                        "replace": 1,
+                        "description": "Capitalization change."
+                    },
+                    {
+                        "map": "Rr|Ss|Tt|Uu|Vv|Ww",
+                        "replace": 1,
+                        "description": "Capitalization change."
+                    },
+                    {
+                        "map": "Xx|Yy|Zz|Ää|Çç|Éé",
+                        "replace": 1,
+                        "description": "Capitalization change."
+                    },
+                    {
+                        "map": "Ëë|Ïï|Ññ|Ôô|Öö|Üü",
+                        "replace": 1,
+                        "description": "Capitalization change."
+                    },
+                    {
+                        "map": "ʼ|Єє|Іі|Її|Аа|Бб",
+                        "replace": 1,
+                        "description": "Capitalization change."
+                    },
+                    {
+                        "map": "Вв|Гг|Дд|Ее|Жж|Зз",
+                        "replace": 1,
+                        "description": "Capitalization change."
+                    },
+                    {
+                        "map": "Ии|Йй|Кк|Лл|Мм|Нн",
+                        "replace": 1,
+                        "description": "Capitalization change."
+                    },
+                    {
+                        "map": "Оо|Пп|Рр|Сс|Тт|Уу",
+                        "replace": 1,
+                        "description": "Capitalization change."
+                    },
+                    {
+                        "map": "Фф|Хх|Цц|Чч|Шш|Щщ",
+                        "replace": 1,
+                        "description": "Capitalization change."
+                    },
+                    {
+                        "map": "Ьь|Юю|Яя|Ґґ",
+                        "replace": 1,
+                        "description": "Capitalization change."
+                    },
+                    {
+                        "map": "AÄ|CÇ|EÉË|IÏ|NÑ|OÔÖ",
+                        "replace": 1,
+                        "description": "Replace Accents"
+                    },
+                    {
+                        "map": "UÜ|aä|cç|eéë|iï|nñ",
+                        "replace": 1,
+                        "description": "Replace Accents"
+                    },
+                    {
+                        "map": "oôö|uü|ІЇ|ИЙ|ий|ії",
+                        "replace": 1,
+                        "description": "Replace Accents"
+                    },
+                    {
+                        "map": "AaÄä|CcÇç|EeÉËéë|IiÏï|NnÑñ|OoÔÖôö",
+                        "replace": 2,
+                        "description": "Capitalization and Accent change."
+                    },
+                    {
+                        "map": "UuÜü|ІЇії|ИЙий",
+                        "replace": 2,
+                        "description": "Capitalization and Accent change."
+                    },
+                    {
+                        "map": "гґ",
+                        "replace": 1,
+                        "description": "Hunspell Aff Map"
+                    }
+                ]
+            }
         }
     ],
-    // Dictionaries to always be used.
-    // Generally left empty
-    "dictionaries": [],
-    // Language Rules to apply to matching files.
-    // Files are matched on `languageId` and `local`
     "languageSettings": [
         {
-            // VSCode languageId. i.e. typescript, java, go, cpp, javascript, markdown, latex
-            // * will match against any file type.
             "languageId": "*",
-            // Language local. i.e. en-US, de-AT, or ru. * will match all locals.
-            // Multiple locals can be specified like: "en, en-US" to match both English and English US.
             "locale": "uk",
-            // By default the whole text of a file is included for spell checking
-            // Adding patterns to the "includeRegExpList" to only include matching patterns
-            "includeRegExpList": [],
-            // To exclude patterns, add them to "ignoreRegExpList"
-            "ignoreRegExpList": [],
-            // regex patterns than can be used with ignoreRegExpList or includeRegExpList
-            // Example: "pattern": [{ "name": "mdash", "pattern": "&mdash;" }]
-            // This could be included in "ignoreRegExpList": ["mdash"]
-            "patterns": [],
-            // List of dictionaries to enable by name in `dictionaryDefinitions`
-            "dictionaries": ["uk-ua"],
-            // Dictionary definitions can also be supplied here. They are only used iff "languageId" and "locale" match.
-            "dictionaryDefinitions": []
+            "dictionaries": ["uk-ua"]
         }
     ]
 }
