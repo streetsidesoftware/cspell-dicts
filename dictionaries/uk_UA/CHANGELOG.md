@@ -22,6 +22,19 @@ See [Conventional Commits](https://conventionalcommits.org) for commit guideline
 
 
 
+## [3.0.0](https://github.com/streetsidesoftware/cspell-dicts/compare/@cspell/dict-uk-ua@2.0.0...@cspell/dict-uk-ua@3.0.0) (2023-04-03)
+
+
+### ⚠ BREAKING CHANGES
+
+* Update the Ukrainian dictionary from NPM. ([#2103](https://github.com/streetsidesoftware/cspell-dicts/issues/2103))
+* Upgrade uk_UA Dict ([#2098](https://github.com/streetsidesoftware/cspell-dicts/issues/2098))
+
+### Features
+
+* Update the Ukrainian dictionary from NPM. ([#2103](https://github.com/streetsidesoftware/cspell-dicts/issues/2103)) ([f4c52ae](https://github.com/streetsidesoftware/cspell-dicts/commit/f4c52aebe1000f1a397e8c2d50833f522c244c74))
+* Upgrade uk_UA Dict ([#2098](https://github.com/streetsidesoftware/cspell-dicts/issues/2098)) ([c547bb3](https://github.com/streetsidesoftware/cspell-dicts/commit/c547bb37c9e7b68037d7981553b14f60c780cfa1))
+
 ## 1.0.20 (2020-11-27)
 
 **Note:** Version bump only for package @cspell/dict-uk-ua

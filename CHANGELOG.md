@@ -1,5 +1,29 @@
 # Release Notes
 
+## [12.0.0](https://github.com/streetsidesoftware/cspell-dicts/compare/cspell-dicts@11.0.7...cspell-dicts@12.0.0) (2023-04-03)
+
+
+### ⚠ BREAKING CHANGES
+
+* Update the Ukrainian dictionary from NPM. ([#2103](https://github.com/streetsidesoftware/cspell-dicts/issues/2103))
+* Upgrade uk_UA Dict ([#2098](https://github.com/streetsidesoftware/cspell-dicts/issues/2098))
+
+### Features
+
+* Update the Ukrainian dictionary from NPM. ([#2103](https://github.com/streetsidesoftware/cspell-dicts/issues/2103)) ([f4c52ae](https://github.com/streetsidesoftware/cspell-dicts/commit/f4c52aebe1000f1a397e8c2d50833f522c244c74))
+* Upgrade uk_UA Dict ([#2098](https://github.com/streetsidesoftware/cspell-dicts/issues/2098)) ([c547bb3](https://github.com/streetsidesoftware/cspell-dicts/commit/c547bb37c9e7b68037d7981553b14f60c780cfa1))
+
+
+### Continuous Integration
+
+* Workflow Bot -- Update ALL Dependencies (main) ([#2095](https://github.com/streetsidesoftware/cspell-dicts/issues/2095)) ([f7a7b8e](https://github.com/streetsidesoftware/cspell-dicts/commit/f7a7b8e43289ac62891ab3a498739635382ce595))
+* Workflow Bot -- Update ALL Dependencies (main) ([#2097](https://github.com/streetsidesoftware/cspell-dicts/issues/2097)) ([ff499db](https://github.com/streetsidesoftware/cspell-dicts/commit/ff499db7a2fc03c031e8e734eb554f0bd21a8c80))
+
+
+### Updates and Bug Fixes
+
+* Workflow Bot -- Build Dictionaries ([#2101](https://github.com/streetsidesoftware/cspell-dicts/issues/2101)) ([c565ddf](https://github.com/streetsidesoftware/cspell-dicts/commit/c565ddf23183b85219fbab82b2d3feb3e0d86ffa))
+
 ## [11.0.7](https://github.com/streetsidesoftware/cspell-dicts/compare/cspell-dicts@11.0.6...cspell-dicts@11.0.7) (2023-03-30)
 
 
