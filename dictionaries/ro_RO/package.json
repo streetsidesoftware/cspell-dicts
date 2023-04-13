@@ -1,0 +1,46 @@
+{
+  "name": "@cspell/dict-ro-ro",
+  "version": "1.0.0",
+  "description": "Romanian dictionary for cspell. -- Private until verified",
+  "private": true,
+  "publishConfig": {
+    "access": "public"
+  },
+  "exports": {
+    ".": "./cspell-ext.json",
+    "./cspell": "./cspell-ext.json",
+    "./cspell-ext.json": "./cspell-ext.json"
+  },
+  "scripts": {
+    "build": "cross-env NODE_OPTIONS=--max_old_space_size=8192 cspell-tools-cli build",
+    "test": "head -n 1000 \"src/Wordlist-Romanian.txt\" | cspell -v -c ./cspell-ext.json \"--local=ro,ro-RO,ro_RO\" \"--languageId=*\" stdin",
+    "prepublishOnly": "echo OK",
+    "prepare": "yarn run build"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/streetsidesoftware/cspell-dicts.git"
+  },
+  "keywords": [
+    "cspell",
+    "cspell-ext",
+    "ro_RO",
+    "Romanian",
+    "dictionary",
+    "spelling"
+  ],
+  "author": "Jason Dent",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/streetsidesoftware/cspell-dicts/issues"
+  },
+  "homepage": "https://github.com/streetsidesoftware/cspell-dicts/blob/main/dictionaries/ro_RO#readme",
+  "devDependencies": {},
+  "dependencies": {},
+  "files": [
+    "dict/ro-ro.trie",
+    "cspell-ext.json",
+    "*.js",
+    "*.d.ts"
+  ]
+}
