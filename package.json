@@ -19,8 +19,7 @@
     "readme:generate-doc-dictionaries": "./scripts/dictionaries.sh > dictionaries.md",
     "readme:inject": "inject-markdown \"*.md\" \"dictionaries/*/README.md\" && prettier -w \"*.md\" \"dictionaries/*/README.md\"",
     "prepare": "lerna run prepare",
-    "pub-lerna": "lerna publish from-package --no-push --no-private --yes",
-    "pub-recover": "lerna publish from-package --concurrency 1",
+    "pub-recover": "lerna publish from-package --no-push --no-private --concurrency 1",
     "update-packages": "yarn upgrade"
   },
   "repository": {
@@ -40,9 +39,10 @@
   },
   "devDependencies": {
     "@cspell/cspell-tools": "^6.31.1",
-    "@lerna-lite/cli": "^1.17.0",
-    "@lerna-lite/exec": "^1.17.0",
-    "@lerna-lite/run": "^1.17.0",
+    "@lerna-lite/cli": "^2.0.0",
+    "@lerna-lite/exec": "^2.0.0",
+    "@lerna-lite/publish": "^2.0.0",
+    "@lerna-lite/run": "^2.0.0",
     "commander": "^10.0.1",
     "conventional-changelog-conventionalcommits": "^5.0.0",
     "cpy-cli": "^4.2.0",
