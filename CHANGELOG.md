@@ -1,5 +1,31 @@
 # Release Notes
 
+## [12.0.1](https://github.com/streetsidesoftware/cspell-dicts/compare/cspell-dicts@12.0.0...cspell-dicts@12.0.1) (2023-04-15)
+
+
+### Build System
+
+* **deps:** bump peter-evans/create-pull-request from 4 to 5 ([#2106](https://github.com/streetsidesoftware/cspell-dicts/issues/2106)) ([a19ca83](https://github.com/streetsidesoftware/cspell-dicts/commit/a19ca83da6e123f4df46000fe1fac10f6b2a1c30))
+* **deps:** bump streetsidesoftware/cspell-action from 2.26.0 to 2.26.1 ([#2105](https://github.com/streetsidesoftware/cspell-dicts/issues/2105)) ([bba72c8](https://github.com/streetsidesoftware/cspell-dicts/commit/bba72c8d77d60058d2a253ac04b582c298a73a46))
+
+
+### Updates and Bug Fixes
+
+* Add "Ruff" and "Tomli" to Python dictionary ([#2109](https://github.com/streetsidesoftware/cspell-dicts/issues/2109)) ([d23fea5](https://github.com/streetsidesoftware/cspell-dicts/commit/d23fea5ee6579a6c557d42bcd76e87f2ec0172d3))
+* Use also Romanian Hunspell Dictionary ([#2117](https://github.com/streetsidesoftware/cspell-dicts/issues/2117)) ([724b46e](https://github.com/streetsidesoftware/cspell-dicts/commit/724b46ebecd724abf854f78733fd566046919100))
+* Workflow Bot -- Build Dictionaries ([#2114](https://github.com/streetsidesoftware/cspell-dicts/issues/2114)) ([c767968](https://github.com/streetsidesoftware/cspell-dicts/commit/c7679685f28d8b60ef60adc3ff0b92f9661e7b3a))
+
+
+### Continuous Integration
+
+* Workflow Bot -- Update ALL Dependencies (main) ([#2102](https://github.com/streetsidesoftware/cspell-dicts/issues/2102)) ([65d148b](https://github.com/streetsidesoftware/cspell-dicts/commit/65d148bbdd79aef64a07052d695fa2e286273042))
+
+
+### Miscellaneous
+
+* prepare to publish Romanian ([#2120](https://github.com/streetsidesoftware/cspell-dicts/issues/2120)) ([822b87e](https://github.com/streetsidesoftware/cspell-dicts/commit/822b87ee476ba5b0ca26c06bb9dc6445e15b33b5))
+* Update lerna-lite to 2.0 ([#2118](https://github.com/streetsidesoftware/cspell-dicts/issues/2118)) ([d4bae62](https://github.com/streetsidesoftware/cspell-dicts/commit/d4bae625643060c15113dea051799a6916567fb0))
+
 ## [12.0.0](https://github.com/streetsidesoftware/cspell-dicts/compare/cspell-dicts@11.0.7...cspell-dicts@12.0.0) (2023-04-03)
 
 

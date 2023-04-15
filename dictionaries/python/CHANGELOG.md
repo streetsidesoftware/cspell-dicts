@@ -3,6 +3,13 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+## [4.0.3](https://github.com/streetsidesoftware/cspell-dicts/compare/@cspell/dict-python@4.0.2...@cspell/dict-python@4.0.3) (2023-04-15)
+
+
+### Updates and Bug Fixes
+
+* Add "Ruff" and "Tomli" to Python dictionary ([#2109](https://github.com/streetsidesoftware/cspell-dicts/issues/2109)) ([d23fea5](https://github.com/streetsidesoftware/cspell-dicts/commit/d23fea5ee6579a6c557d42bcd76e87f2ec0172d3))
+
 ## [4.0.2](https://github.com/streetsidesoftware/cspell-dicts/compare/@cspell/dict-python@4.0.1...@cspell/dict-python@4.0.2) (2023-03-08)
 
 

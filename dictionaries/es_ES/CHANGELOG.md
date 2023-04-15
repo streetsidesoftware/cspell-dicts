@@ -30,6 +30,13 @@ See [Conventional Commits](https://conventionalcommits.org) for commit guideline
 
 
 
+## [2.2.5](https://github.com/streetsidesoftware/cspell-dicts/compare/@cspell/dict-es-es@2.2.4...@cspell/dict-es-es@2.2.5) (2023-04-15)
+
+
+### Updates and Bug Fixes
+
+* Use also Romanian Hunspell Dictionary ([#2117](https://github.com/streetsidesoftware/cspell-dicts/issues/2117)) ([724b46e](https://github.com/streetsidesoftware/cspell-dicts/commit/724b46ebecd724abf854f78733fd566046919100))
+
 ## [2.2.4](https://github.com/streetsidesoftware/cspell-dicts/compare/@cspell/dict-es-es@2.2.3...@cspell/dict-es-es@2.2.4) (2023-02-06)
 
 
