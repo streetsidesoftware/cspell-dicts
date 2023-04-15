@@ -19,7 +19,7 @@
     "gen-checksum": "cat source-files.txt source-dependencies.txt | xargs shasum > checksum.txt",
     "test": "head -n 1000 \"src/Wordlist-Romanian.txt\" | cspell -v -c ./cspell-ext.json \"--local=ro,ro-RO,ro_RO\" \"--languageId=*\" stdin",
     "prepublishOnly": "echo OK",
-    "prepare": "yarn run build"
+    "prepare": "echo OK"
   },
   "repository": {
     "type": "git",
