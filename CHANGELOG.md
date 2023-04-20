@@ -1,5 +1,12 @@
 # Release Notes
 
+## [12.0.2](https://github.com/streetsidesoftware/cspell-dicts/compare/cspell-dicts@12.0.1...cspell-dicts@12.0.2) (2023-04-20)
+
+
+### Updates and Bug Fixes
+
+* Add shortdoc to elixir ([70e31b0](https://github.com/streetsidesoftware/cspell-dicts/commit/70e31b0636bb7fa2f50986c5766fab899098deb3))
+
 ## [12.0.1](https://github.com/streetsidesoftware/cspell-dicts/compare/cspell-dicts@12.0.0...cspell-dicts@12.0.1) (2023-04-15)
 
 

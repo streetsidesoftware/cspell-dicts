@@ -3,6 +3,13 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+## [4.0.3](https://github.com/streetsidesoftware/cspell-dicts/compare/@cspell/dict-elixir@4.0.2...@cspell/dict-elixir@4.0.3) (2023-04-20)
+
+
+### Updates and Bug Fixes
+
+* Add shortdoc to elixir ([70e31b0](https://github.com/streetsidesoftware/cspell-dicts/commit/70e31b0636bb7fa2f50986c5766fab899098deb3))
+
 ## [4.0.2](https://github.com/streetsidesoftware/cspell-dicts/compare/@cspell/dict-elixir@4.0.1...@cspell/dict-elixir@4.0.2) (2023-02-22)
 
 
