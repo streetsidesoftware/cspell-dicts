@@ -1,0 +1,24 @@
+# yaml-language-server: $schema=https://raw.githubusercontent.com/streetsidesoftware/cspell/main/packages/cspell-tools/cspell-tools.config.schema.json
+
+targets:
+  - name: python
+    # "build-python": "cspell-tools-cli compile \"src/python/*.txt\" \"src/additional_words.txt\" --split --keep-raw-case --merge python -o .",
+    sources:
+      - filename: src/python/python-lib.txt
+        split: true
+      - filename: src/python/python.txt
+        split: true
+      - src/additional_words.txt
+      - src/common_packages.txt
+      - src/data_science.txt
+    format: plaintext
+    targetDirectory: "."
+    compress: true
+
+  - name: python-common
+    # "build-common": "cspell-tools-cli compile \"src/common/*.txt\" --keep-raw-case --merge python-common -o .",
+    sources:
+      - src/common/extra.txt
+    targetDirectory: .
+    format: plaintext
+    compress: true
