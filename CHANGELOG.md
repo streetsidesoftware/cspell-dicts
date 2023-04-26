@@ -1,5 +1,19 @@
 # Release Notes
 
+## [12.0.3](https://github.com/streetsidesoftware/cspell-dicts/compare/cspell-dicts@12.0.2...cspell-dicts@12.0.3) (2023-04-26)
+
+
+### Continuous Integration
+
+* Workflow Bot -- Update ALL Dependencies (main) ([#2126](https://github.com/streetsidesoftware/cspell-dicts/issues/2126)) ([f459822](https://github.com/streetsidesoftware/cspell-dicts/commit/f459822312f43d32c7c14860a7cd49ce7ea32879))
+
+
+### Updates and Bug Fixes
+
+* Update software-terms.txt ([#2140](https://github.com/streetsidesoftware/cspell-dicts/issues/2140)) ([1539dd0](https://github.com/streetsidesoftware/cspell-dicts/commit/1539dd065dd3e01db933688d91a753165fa2bbef))
+* Workflow Bot -- Build Dictionaries ([#2133](https://github.com/streetsidesoftware/cspell-dicts/issues/2133)) ([8a451a7](https://github.com/streetsidesoftware/cspell-dicts/commit/8a451a7500b86d9e1a11f1bb3176ace50d63802d))
+* Workflow Bot -- Build Dictionaries ([#2141](https://github.com/streetsidesoftware/cspell-dicts/issues/2141)) ([56a5bc3](https://github.com/streetsidesoftware/cspell-dicts/commit/56a5bc3b01c92e2ef722ca4476ca21024516dd43))
+
 ## [12.0.2](https://github.com/streetsidesoftware/cspell-dicts/compare/cspell-dicts@12.0.1...cspell-dicts@12.0.2) (2023-04-20)
 
 
