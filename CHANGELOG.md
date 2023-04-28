@@ -1,5 +1,26 @@
 # Release Notes
 
+## [12.0.4](https://github.com/streetsidesoftware/cspell-dicts/compare/cspell-dicts@12.0.3...cspell-dicts@12.0.4) (2023-04-28)
+
+
+### Miscellaneous
+
+* Add some new Python source files ([#2143](https://github.com/streetsidesoftware/cspell-dicts/issues/2143)) ([e17df49](https://github.com/streetsidesoftware/cspell-dicts/commit/e17df49c822d3fe824394bc64fe7e888ea36a661))
+
+
+### Continuous Integration
+
+* Workflow Bot -- Update ALL Dependencies (main) ([#2134](https://github.com/streetsidesoftware/cspell-dicts/issues/2134)) ([015cd78](https://github.com/streetsidesoftware/cspell-dicts/commit/015cd7863b252d1c526872d4af1eccd0ee14704a))
+
+
+### Updates and Bug Fixes
+
+* Add `benchmarker` to software-terms.txt ([#2145](https://github.com/streetsidesoftware/cspell-dicts/issues/2145)) ([dec6894](https://github.com/streetsidesoftware/cspell-dicts/commit/dec68946709a795d96537edfbe845ca7414fc424))
+* Add AI terms to software terms ([#2142](https://github.com/streetsidesoftware/cspell-dicts/issues/2142)) ([4224fef](https://github.com/streetsidesoftware/cspell-dicts/commit/4224fef2abe6c82e6ece1fe96228c8ae720c817a))
+* Add some common tools ([5d5f0ad](https://github.com/streetsidesoftware/cspell-dicts/commit/5d5f0adb8a9fa774d94a25ef9095bd71a1a7b58c))
+* Update data_science.txt ([#2147](https://github.com/streetsidesoftware/cspell-dicts/issues/2147)) ([2f3975d](https://github.com/streetsidesoftware/cspell-dicts/commit/2f3975d14578ee6955e5f4902ae793ea94cf0e04))
+* Workflow Bot -- Build Dictionaries ([#2148](https://github.com/streetsidesoftware/cspell-dicts/issues/2148)) ([e357f29](https://github.com/streetsidesoftware/cspell-dicts/commit/e357f293a40d68b572e2179d4069c49d6379a62d))
+
 ## [12.0.3](https://github.com/streetsidesoftware/cspell-dicts/compare/cspell-dicts@12.0.2...cspell-dicts@12.0.3) (2023-04-26)
 
 

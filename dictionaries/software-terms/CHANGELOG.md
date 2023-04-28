@@ -3,6 +3,16 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+## [3.1.8](https://github.com/streetsidesoftware/cspell-dicts/compare/@cspell/dict-software-terms@3.1.7...@cspell/dict-software-terms@3.1.8) (2023-04-28)
+
+
+### Updates and Bug Fixes
+
+* Add `benchmarker` to software-terms.txt ([#2145](https://github.com/streetsidesoftware/cspell-dicts/issues/2145)) ([dec6894](https://github.com/streetsidesoftware/cspell-dicts/commit/dec68946709a795d96537edfbe845ca7414fc424))
+* Add AI terms to software terms ([#2142](https://github.com/streetsidesoftware/cspell-dicts/issues/2142)) ([4224fef](https://github.com/streetsidesoftware/cspell-dicts/commit/4224fef2abe6c82e6ece1fe96228c8ae720c817a))
+* Add some common tools ([5d5f0ad](https://github.com/streetsidesoftware/cspell-dicts/commit/5d5f0adb8a9fa774d94a25ef9095bd71a1a7b58c))
+* Workflow Bot -- Build Dictionaries ([#2148](https://github.com/streetsidesoftware/cspell-dicts/issues/2148)) ([e357f29](https://github.com/streetsidesoftware/cspell-dicts/commit/e357f293a40d68b572e2179d4069c49d6379a62d))
+
 ## [3.1.7](https://github.com/streetsidesoftware/cspell-dicts/compare/@cspell/dict-software-terms@3.1.6...@cspell/dict-software-terms@3.1.7) (2023-04-26)
 
 
