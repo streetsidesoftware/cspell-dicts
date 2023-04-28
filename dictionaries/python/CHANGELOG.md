@@ -3,6 +3,19 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+## [4.0.4](https://github.com/streetsidesoftware/cspell-dicts/compare/@cspell/dict-python@4.0.3...@cspell/dict-python@4.0.4) (2023-04-28)
+
+
+### Miscellaneous
+
+* Add some new Python source files ([#2143](https://github.com/streetsidesoftware/cspell-dicts/issues/2143)) ([e17df49](https://github.com/streetsidesoftware/cspell-dicts/commit/e17df49c822d3fe824394bc64fe7e888ea36a661))
+
+
+### Updates and Bug Fixes
+
+* Update data_science.txt ([#2147](https://github.com/streetsidesoftware/cspell-dicts/issues/2147)) ([2f3975d](https://github.com/streetsidesoftware/cspell-dicts/commit/2f3975d14578ee6955e5f4902ae793ea94cf0e04))
+* Workflow Bot -- Build Dictionaries ([#2148](https://github.com/streetsidesoftware/cspell-dicts/issues/2148)) ([e357f29](https://github.com/streetsidesoftware/cspell-dicts/commit/e357f293a40d68b572e2179d4069c49d6379a62d))
+
 ## [4.0.3](https://github.com/streetsidesoftware/cspell-dicts/compare/@cspell/dict-python@4.0.2...@cspell/dict-python@4.0.3) (2023-04-15)
 
 
