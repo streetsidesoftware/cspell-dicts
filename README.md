@@ -174,7 +174,7 @@ Please help correct any mistakes in the dictionaries.
 
 See: [Contributing](CONTRIBUTING.md)
 
-Thanks so much to all of our amazing contributors!
+Special thanks to all of our amazing contributors!
 
 <a href="https://github.com/streetsidesoftware/cspell-dicts/graphs/contributors">
   <img src="https://contrib.rocks/image?repo=streetsidesoftware/cspell-dicts&r="  width="800px"/>
