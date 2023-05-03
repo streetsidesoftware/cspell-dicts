@@ -198,7 +198,7 @@
   resolved "https://registry.npmjs.org/@isaacs/string-locale-compare/-/string-locale-compare-1.1.0.tgz#291c227e93fd407a96ecd59879a35809120e432b"
   integrity sha512-SQ7Kzhh9+D+ZW9MA0zkYv3VXhIDNx+LzM6EJ+/65I3QY+enU6Itte7E5XX7EWrqLW2FN4n06GWzBnPoC3th2aQ==
 
-"@lerna-lite/cli@2.1.0", "@lerna-lite/cli@^2.1.0":
+"@lerna-lite/cli@2.1.0":
   version "2.1.0"
   resolved "https://registry.npmjs.org/@lerna-lite/cli/-/cli-2.1.0.tgz#3baa7558c240a9605ebadf5c1c0ec5aa1531b848"
   integrity sha512-eyC5V6eYvdKHOUZ6roJNuouR5Koa2mRWDdZr9DtnreEdTAvF4FSOjaHCLTHeHuqmjqslA6oUoJCL5nw8brOFgQ==
@@ -211,6 +211,20 @@
     load-json-file "^7.0.1"
     npmlog "^7.0.1"
     yargs "^17.7.1"
+
+"@lerna-lite/cli@2.2.0", "@lerna-lite/cli@^2.1.0":
+  version "2.2.0"
+  resolved "https://registry.npmjs.org/@lerna-lite/cli/-/cli-2.2.0.tgz#9f9c4c40f88a4edd1a9136fb825501ee5017c708"
+  integrity sha512-UJ8Z+KWy31b5sGbb5dQBPOhOo8dUTuw0gPSyLSvjB5aCh25igD7V6h1PjLNkJOlD6X277CequpBjBWzGvUpl1Q==
+  dependencies:
+    "@lerna-lite/core" "2.2.0"
+    "@lerna-lite/init" "2.2.0"
+    dedent "^0.7.0"
+    dotenv "^16.0.3"
+    import-local "^3.1.0"
+    load-json-file "^7.0.1"
+    npmlog "^7.0.1"
+    yargs "^17.7.2"
 
 "@lerna-lite/core@2.1.0":
   version "2.1.0"
@@ -240,6 +254,38 @@
     slash "^5.0.0"
     strong-log-transformer "^2.1.0"
     write-file-atomic "^5.0.0"
+    write-json-file "^5.0.0"
+    write-pkg "^5.1.0"
+
+"@lerna-lite/core@2.2.0":
+  version "2.2.0"
+  resolved "https://registry.npmjs.org/@lerna-lite/core/-/core-2.2.0.tgz#90adde5e93b95a75adf82c46ecb7ab2f9495e36b"
+  integrity sha512-BbBNfVd2eV2YdKpPWVAP/AwiGX6aeo4yJQJ+nIhLeITyn11kFRlwYQZ2LgWIVhiqwk8T7IwzlhRearH20WzLkA==
+  dependencies:
+    "@npmcli/run-script" "^6.0.1"
+    chalk "^5.2.0"
+    clone-deep "^4.0.1"
+    config-chain "^1.1.13"
+    cosmiconfig "^8.1.3"
+    dedent "^0.7.0"
+    execa "^7.1.1"
+    fs-extra "^11.1.1"
+    glob-parent "^6.0.2"
+    globby "^13.1.4"
+    inquirer "^9.2.0"
+    is-ci "^3.0.1"
+    json5 "^2.2.3"
+    load-json-file "^7.0.1"
+    minimatch "^9.0.0"
+    npm-package-arg "^10.1.0"
+    npmlog "^7.0.1"
+    p-map "^6.0.0"
+    p-queue "^7.3.4"
+    resolve-from "^5.0.0"
+    semver "^7.5.0"
+    slash "^5.0.1"
+    strong-log-transformer "^2.1.0"
+    write-file-atomic "^5.0.1"
     write-json-file "^5.0.0"
     write-pkg "^5.1.0"
 
@@ -276,6 +322,16 @@
     p-map "^5.5.0"
     write-json-file "^5.0.0"
 
+"@lerna-lite/init@2.2.0":
+  version "2.2.0"
+  resolved "https://registry.npmjs.org/@lerna-lite/init/-/init-2.2.0.tgz#a36c59f6ca305cb27d2e0d0e2c82a32c59fee717"
+  integrity sha512-772quONll3jNfol7f0Uk2c+9lLY5yXb+CPCrMK35IEFFjeOv5iM+gj+MELum9s2syjYinYe9lLwdVzrJrBj0AQ==
+  dependencies:
+    "@lerna-lite/core" "2.2.0"
+    fs-extra "^11.1.1"
+    p-map "^6.0.0"
+    write-json-file "^5.0.0"
+
 "@lerna-lite/profiler@2.1.0":
   version "2.1.0"
   resolved "https://registry.npmjs.org/@lerna-lite/profiler/-/profiler-2.1.0.tgz#2a04056b96bd609a446fe97ecb0b3663e10acb8d"
@@ -287,34 +343,34 @@
     upath "^2.0.1"
 
 "@lerna-lite/publish@^2.1.0":
-  version "2.1.0"
-  resolved "https://registry.npmjs.org/@lerna-lite/publish/-/publish-2.1.0.tgz#901b7be7c116a49cfec7100dedeb896e020c9315"
-  integrity sha512-6Z873ZC8JTPo/LAEIop4s4AEhazpzhVMsx+ycr8icih3/IaqCCIacyc+HwaEo3TxhSfPY0G5DnK29YTJ4AHNOA==
+  version "2.2.0"
+  resolved "https://registry.npmjs.org/@lerna-lite/publish/-/publish-2.2.0.tgz#99246e439678deac21dfcdb940e5bc1355358aba"
+  integrity sha512-O3IEMZ8d2gJd/3lMo2V3xl/2uaZP5GYP5npnbn7nLKMWh1y9ozVm0VirLH2OGz7BqSLEBx3fCJ1PYjpq0EMWVg==
   dependencies:
-    "@lerna-lite/cli" "2.1.0"
-    "@lerna-lite/core" "2.1.0"
-    "@lerna-lite/version" "2.1.0"
+    "@lerna-lite/cli" "2.2.0"
+    "@lerna-lite/core" "2.2.0"
+    "@lerna-lite/version" "2.2.0"
     "@npmcli/arborist" "^6.2.8"
     byte-size "^8.1.0"
     chalk "^5.2.0"
     columnify "^1.6.0"
     fs-extra "^11.1.1"
-    glob "^10.2.1"
+    glob "^10.2.2"
     has-unicode "^2.0.1"
     libnpmaccess "^7.0.2"
     libnpmpublish "^7.1.3"
     normalize-path "^3.0.0"
     npm-package-arg "^10.1.0"
     npm-packlist "^7.0.4"
-    npm-registry-fetch "^14.0.4"
+    npm-registry-fetch "^14.0.5"
     npmlog "^7.0.1"
-    p-map "^5.5.0"
+    p-map "^6.0.0"
     p-pipe "^4.0.0"
-    pacote "^15.1.2"
+    pacote "^15.1.3"
     pify "^6.1.0"
-    read-package-json "^6.0.1"
+    read-package-json "^6.0.2"
     semver "^7.5.0"
-    ssri "^10.0.3"
+    ssri "^10.0.4"
     tar "^6.1.13"
     temp-dir "^3.0.0"
 
@@ -332,13 +388,13 @@
     npmlog "^7.0.1"
     p-map "^5.5.0"
 
-"@lerna-lite/version@2.1.0":
-  version "2.1.0"
-  resolved "https://registry.npmjs.org/@lerna-lite/version/-/version-2.1.0.tgz#7c1d351ce9c311af5eb0c5083f7a169c3ffb0559"
-  integrity sha512-eYnPB6YrAGDARvg32asZoaAvxdMb9gRrcZEnCYWcQlMS7SqlpWOtVZRPdg7V1SlAufvb6o42TaAkVTe+FIuA2g==
+"@lerna-lite/version@2.2.0":
+  version "2.2.0"
+  resolved "https://registry.npmjs.org/@lerna-lite/version/-/version-2.2.0.tgz#3c55705e14bb63dd5c72d447f2a5245a2b8c4f48"
+  integrity sha512-T/hMpXusy0nHhoh0o0h2sZ0CLtYma/rIu/bdPJIfIv6d7rLlEqlL7PO2tvpA/UrQBI4c/Mnkt3D8HBCkgtl57A==
   dependencies:
-    "@lerna-lite/cli" "2.1.0"
-    "@lerna-lite/core" "2.1.0"
+    "@lerna-lite/cli" "2.2.0"
+    "@lerna-lite/core" "2.2.0"
     "@octokit/plugin-enterprise-rest" "^6.0.1"
     "@octokit/rest" "^19.0.7"
     chalk "^5.2.0"
@@ -360,12 +416,12 @@
     node-fetch "^3.3.1"
     npm-package-arg "^10.1.0"
     npmlog "^7.0.1"
-    p-map "^5.5.0"
+    p-map "^6.0.0"
     p-pipe "^4.0.0"
     p-reduce "^3.0.0"
     pify "^6.1.0"
     semver "^7.5.0"
-    slash "^5.0.0"
+    slash "^5.0.1"
     temp-dir "^3.0.0"
     uuid "^9.0.0"
     write-json-file "^5.0.0"
@@ -656,7 +712,7 @@
     node-gyp "^8.2.0"
     read-package-json-fast "^2.0.1"
 
-"@npmcli/run-script@^6.0.0":
+"@npmcli/run-script@^6.0.0", "@npmcli/run-script@^6.0.1":
   version "6.0.1"
   resolved "https://registry.npmjs.org/@npmcli/run-script/-/run-script-6.0.1.tgz#a94404783d9afaff62decb71944435d0d8a29f8e"
   integrity sha512-Yi04ZSold8jcbBJD/ahKMJSQCQifH8DAbMwkBvoLaTpGFxzHC3B/5ZyoVR69q/4xedz84tvi9DJOJjNe17h+LA==
@@ -3535,7 +3591,7 @@ glob-parent@^6.0.2:
   dependencies:
     is-glob "^4.0.3"
 
-glob@^10.2.1, glob@^10.2.2:
+glob@^10.2.2:
   version "10.2.2"
   resolved "https://registry.npmjs.org/glob/-/glob-10.2.2.tgz#ce2468727de7e035e8ecf684669dc74d0526ab75"
   integrity sha512-Xsa0BcxIC6th9UwNjZkhrMtNo/MnyRL8jGCP+uEwhA5oFOCY1f2s1/oNKY47xQ0Bg5nkjsfAEIej1VeH62bDDQ==
@@ -4048,7 +4104,7 @@ inquirer@^8.0.0, inquirer@^8.2.0:
     through "^2.3.6"
     wrap-ansi "^7.0.0"
 
-inquirer@^9.1.5:
+inquirer@^9.1.5, inquirer@^9.2.0:
   version "9.2.0"
   resolved "https://registry.npmjs.org/inquirer/-/inquirer-9.2.0.tgz#930d56d682cda629419e80eb92c45828a0fa5924"
   integrity sha512-WWERbVqjsTXjXub1ZW0ZHDit1dyHqy0T9XIkky9TnmKAPrjU9Jkd59nZPK0dUuM3s73GZAZu2Jo4iFU3XSPVLA==
@@ -4476,7 +4532,7 @@ json-stringify-safe@^5.0.1:
   resolved "https://registry.npmjs.org/json-stringify-safe/-/json-stringify-safe-5.0.1.tgz#1296a2d58fd45f19a0f6ce01d65701e2c735b6eb"
   integrity sha512-ZClg6AaYvamvYEE82d3Iyd3vSSIjQ+odgjaTzRuO3s7toCdFKczob2i0zCh7JE8kWn17yvAWhUVxvqGwUalsRA==
 
-json5@2.2.3:
+json5@2.2.3, json5@^2.2.3:
   version "2.2.3"
   resolved "https://registry.npmjs.org/json5/-/json5-2.2.3.tgz#78cd6f1a19bdc12b73db5ad0c61efd66c1e29283"
   integrity sha512-XmOWe7eyHYH14cLdVPoyg+GOH3rYX++KpzrylJwSW98t3Nk+U8XOl8FWKOgwtzdb8lXGf6zYwDUzeHMWfxasyg==
@@ -6015,7 +6071,7 @@ npm-registry-fetch@^12.0.0, npm-registry-fetch@^12.0.1:
     minizlib "^2.1.2"
     npm-package-arg "^8.1.5"
 
-npm-registry-fetch@^14.0.0, npm-registry-fetch@^14.0.3, npm-registry-fetch@^14.0.4:
+npm-registry-fetch@^14.0.0, npm-registry-fetch@^14.0.3, npm-registry-fetch@^14.0.5:
   version "14.0.5"
   resolved "https://registry.npmjs.org/npm-registry-fetch/-/npm-registry-fetch-14.0.5.tgz#fe7169957ba4986a4853a650278ee02e568d115d"
   integrity sha512-kIDMIo4aBm6xg7jOttupWZamsZRkAqMqwqqbVXnUqstY5+tapvv6bkH/qMR76jdgV+YljEUCyWx3hRYMrJiAgA==
@@ -6315,6 +6371,11 @@ p-map@^5.1.0, p-map@^5.3.0, p-map@^5.5.0:
   dependencies:
     aggregate-error "^4.0.0"
 
+p-map@^6.0.0:
+  version "6.0.0"
+  resolved "https://registry.npmjs.org/p-map/-/p-map-6.0.0.tgz#4d9c40d3171632f86c47601b709f4b4acd70fed4"
+  integrity sha512-T8BatKGY+k5rU+Q/GTYgrEf2r4xRMevAN5mtXc2aPc4rS1j3s+vWTaO2Wag94neXuCAUAs8cxBL9EeB5EA6diw==
+
 p-pipe@^4.0.0:
   version "4.0.0"
   resolved "https://registry.npmjs.org/p-pipe/-/p-pipe-4.0.0.tgz#7e5424569351b2ab452a47826acb93ce09ad6a2c"
@@ -6434,7 +6495,7 @@ pacote@^12.0.0, pacote@^12.0.2:
     ssri "^8.0.1"
     tar "^6.1.0"
 
-pacote@^15.0.0, pacote@^15.0.8, pacote@^15.1.2:
+pacote@^15.0.0, pacote@^15.0.8, pacote@^15.1.3:
   version "15.1.3"
   resolved "https://registry.npmjs.org/pacote/-/pacote-15.1.3.tgz#4c0e7fb5e7ab3b27fb3f86514b451ad4c4f64e9d"
   integrity sha512-aRts8cZqxiJVDitmAh+3z+FxuO3tLNWEmwDRPEpDDiZJaRz06clP4XX112ynMT5uF0QNoMPajBBHnaStUEPJXA==
@@ -6855,10 +6916,10 @@ read-package-json-fast@^3.0.0, read-package-json-fast@^3.0.2:
     json-parse-even-better-errors "^3.0.0"
     npm-normalize-package-bin "^3.0.0"
 
-read-package-json@^6.0.0, read-package-json@^6.0.1:
-  version "6.0.2"
-  resolved "https://registry.npmjs.org/read-package-json/-/read-package-json-6.0.2.tgz#6b97820ff6c2616a5b776c91f4b1a39e5f9dc826"
-  integrity sha512-Ismd3km1d/FGzcjm8fBf/4ktkyd0t6pbkjYqu1gvRzOzN+aTxi1eigdZp7441TlszQ+GsdYezgS+g9cgy8QK9w==
+read-package-json@^6.0.0, read-package-json@^6.0.2:
+  version "6.0.3"
+  resolved "https://registry.npmjs.org/read-package-json/-/read-package-json-6.0.3.tgz#726116b75e00eac2075240995f05681af4ca7122"
+  integrity sha512-4QbpReW4kxFgeBQ0vPAqh2y8sXEB3D4t3jsXbJKIhBiF80KT6XRo45reqwtftju5J6ru1ax06A2Gb/wM1qCOEQ==
   dependencies:
     glob "^10.2.2"
     json-parse-even-better-errors "^3.0.0"
@@ -7379,7 +7440,7 @@ slash@^4.0.0:
   resolved "https://registry.npmjs.org/slash/-/slash-4.0.0.tgz#2422372176c4c6c5addb5e2ada885af984b396a7"
   integrity sha512-3dOsAHXXUkQTpOYcoAxLIorMTp4gIQr5IW3iVb7A7lFIp0VHhnynm9izx6TssdrIcVIESAlVjtnO2K8bg+Coew==
 
-slash@^5.0.0:
+slash@^5.0.0, slash@^5.0.1:
   version "5.0.1"
   resolved "https://registry.npmjs.org/slash/-/slash-5.0.1.tgz#c354c3a49c0d3b4da1cb0bbeb15a85c2a6defa71"
   integrity sha512-ywNzUOiXwetmLvTUiCBZpLi+vxqN3i+zDqjs2HHfUSV3wN4UJxVVKWrS1JZDeiJIeBFNgB5pmioC2g0IUTL+rQ==
@@ -7508,7 +7569,7 @@ sprintf-js@~1.0.2:
   resolved "https://registry.npmjs.org/sprintf-js/-/sprintf-js-1.0.3.tgz#04e6926f662895354f3dd015203633b857297e2c"
   integrity sha512-D9cPgkvLlV3t3IzL0D0YLvGA9Ahk4PcvVwUbN0dSGr1aP0Nrt4AEnTUbuGvquEC0mA64Gqt1fzirlRs5ibXx8g==
 
-ssri@^10.0.0, ssri@^10.0.1, ssri@^10.0.3:
+ssri@^10.0.0, ssri@^10.0.1, ssri@^10.0.4:
   version "10.0.4"
   resolved "https://registry.npmjs.org/ssri/-/ssri-10.0.4.tgz#5a20af378be586df139ddb2dfb3bf992cf0daba6"
   integrity sha512-12+IR2CB2C28MMAw0Ncqwj5QbTcs0nGIhgJzYWzDkb21vWmfNI83KS4f3Ci6GI98WreIfG7o9UXp3C0qbpA8nQ==
@@ -8461,7 +8522,7 @@ write-file-atomic@^4.0.0:
     imurmurhash "^0.1.4"
     signal-exit "^3.0.7"
 
-write-file-atomic@^5.0.0:
+write-file-atomic@^5.0.0, write-file-atomic@^5.0.1:
   version "5.0.1"
   resolved "https://registry.npmjs.org/write-file-atomic/-/write-file-atomic-5.0.1.tgz#68df4717c55c6fa4281a7860b4c2ba0a6d2b11e7"
   integrity sha512-+QU2zd6OTD8XWIJCbffaiQeH9U73qIqafo1x6V1snCWYGJf6cVE0cDR4D8xRzcEnfI21IFrUPzPGtcPf8AC+Rw==
@@ -8544,7 +8605,7 @@ yargs@^16.2.0:
     y18n "^5.0.5"
     yargs-parser "^20.2.2"
 
-yargs@^17.6.2, yargs@^17.7.1:
+yargs@^17.6.2, yargs@^17.7.1, yargs@^17.7.2:
   version "17.7.2"
   resolved "https://registry.npmjs.org/yargs/-/yargs-17.7.2.tgz#991df39aca675a192b816e1e0363f9d75d2aa269"
   integrity sha512-7dSzzRQ++CKnNI/krKnYRV7JKKPUXMEh61soaHKg9mrWEhzFWhFnxPxGl+69cD1Ou63C13NUPCnmIcrvqCuM6w==
