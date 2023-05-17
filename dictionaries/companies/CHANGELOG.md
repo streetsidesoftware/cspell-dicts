@@ -3,6 +3,14 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+## [3.0.11](https://github.com/streetsidesoftware/cspell-dicts/compare/@cspell/dict-companies@3.0.10...@cspell/dict-companies@3.0.11) (2023-05-17)
+
+
+### Updates and Bug Fixes
+
+* Update companies.txt, add Alipay ([#2167](https://github.com/streetsidesoftware/cspell-dicts/issues/2167)) ([3ab1b6c](https://github.com/streetsidesoftware/cspell-dicts/commit/3ab1b6cdef29d00add7aefe670c2e9b59bd56e2c))
+* Workflow Bot -- Build Dictionaries ([#2169](https://github.com/streetsidesoftware/cspell-dicts/issues/2169)) ([04f20b4](https://github.com/streetsidesoftware/cspell-dicts/commit/04f20b49b2da40dcb5f15a5243079ac64be8fb42))
+
 ## [3.0.10](https://github.com/streetsidesoftware/cspell-dicts/compare/@cspell/dict-companies@3.0.9...@cspell/dict-companies@3.0.10) (2023-04-26)
 
 
