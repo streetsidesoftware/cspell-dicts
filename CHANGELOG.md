@@ -1,5 +1,24 @@
 # Release Notes
 
+## [12.0.6](https://github.com/streetsidesoftware/cspell-dicts/compare/cspell-dicts@12.0.5...cspell-dicts@12.0.6) (2023-05-24)
+
+
+### Build System
+
+* **deps:** bump streetsidesoftware/cspell-action from 2.26.1 to 2.26.2 ([#2176](https://github.com/streetsidesoftware/cspell-dicts/issues/2176)) ([871f102](https://github.com/streetsidesoftware/cspell-dicts/commit/871f1028b4f3d27fbb81df8583bdd3bb8bfeb6f2))
+
+
+### Continuous Integration
+
+* Workflow Bot -- Update ALL Dependencies (main) ([#2175](https://github.com/streetsidesoftware/cspell-dicts/issues/2175)) ([59a07f7](https://github.com/streetsidesoftware/cspell-dicts/commit/59a07f71375bdedd58d9ce4d7eec3914502a36ab))
+* Workflow Bot -- Update ALL Dependencies (main) ([#2185](https://github.com/streetsidesoftware/cspell-dicts/issues/2185)) ([3948b15](https://github.com/streetsidesoftware/cspell-dicts/commit/3948b15d75e5b62351f5afa49b2da6cdb87e8a07))
+
+
+### Updates and Bug Fixes
+
+* add words to companies, data_science, and software-terms ([#2182](https://github.com/streetsidesoftware/cspell-dicts/issues/2182)) ([ffba724](https://github.com/streetsidesoftware/cspell-dicts/commit/ffba7245619380606420211f008051a5777204a9))
+* Workflow Bot -- Build Dictionaries ([#2186](https://github.com/streetsidesoftware/cspell-dicts/issues/2186)) ([d1594c5](https://github.com/streetsidesoftware/cspell-dicts/commit/d1594c569b9fbbb925810cf2ba47d0e4fdc19ce5))
+
 ## [12.0.5](https://github.com/streetsidesoftware/cspell-dicts/compare/cspell-dicts@12.0.4...cspell-dicts@12.0.5) (2023-05-17)
 
 
