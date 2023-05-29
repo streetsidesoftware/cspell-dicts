@@ -6891,7 +6891,7 @@ readable-stream@^2.0.2, readable-stream@^2.0.6, readable-stream@^2.2.2, readable
     string_decoder "~1.1.1"
     util-deprecate "~1.0.1"
 
-readable-stream@^4.1.0:
+readable-stream@^4.1.0, readable-stream@^4.3.0:
   version "4.4.0"
   resolved "https://registry.npmjs.org/readable-stream/-/readable-stream-4.4.0.tgz#55ce132d60a988c460d75c631e9ccf6a7229b468"
   integrity sha512-kDMOq0qLtxV9f/SQv522h8cxZBqNZXuXNyjyezmfAAuribMyVXziljpQ/uQhfE1XLg2/TLTW2DsnoE4VAi/krg==
@@ -8516,9 +8516,9 @@ yeoman-doctor@^5.0.0:
     user-home "^2.0.0"
 
 yeoman-environment@^3.5.1:
-  version "3.18.4"
-  resolved "https://registry.npmjs.org/yeoman-environment/-/yeoman-environment-3.18.4.tgz#3849838262589ada9bec25e5dac40ffe2847d803"
-  integrity sha512-/BN8fR3XJOJ6blcO+jKfcCKGq9gACWS8EiMFj/I6khRz73CcTsrrmqvCBtyQ6ym8BnS5cy+YKch0pBo8KWVtLQ==
+  version "3.19.1"
+  resolved "https://registry.npmjs.org/yeoman-environment/-/yeoman-environment-3.19.1.tgz#e36f38b20098d5f00c8063a94894fd03463120ed"
+  integrity sha512-Lwbur0zfIOvYBmFzhbJQFgbrtRuGgeF5Ab+8VpsclHXbaDJECLyIt4yuIWUOoX6BvXk4M98cCmbvsnTzo2Ci3Q==
   dependencies:
     "@npmcli/arborist" "^4.0.4"
     are-we-there-yet "^2.0.0"
@@ -8550,6 +8550,7 @@ yeoman-environment@^3.5.1:
     pacote "^12.0.2"
     preferred-pm "^3.0.3"
     pretty-bytes "^5.3.0"
+    readable-stream "^4.3.0"
     semver "^7.1.3"
     slash "^3.0.0"
     strip-ansi "^6.0.0"
