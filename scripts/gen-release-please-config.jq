@@ -1,5 +1,5 @@
 {
-    "bootstrap-sha": "be25fa819bbe1862a248fab6e861a1c1019106e6",
+    "bootstrap-sha": "57747d12b18819775592694ea936eb9e4ce875b6",
     "include-v-in-tag": false,
     "tag-separator": "@",
     "changelog-sections": [
@@ -7,8 +7,8 @@
         { type: "feature", "section": "Features" },
         { type: "fix", "section": "Updates and Bug Fixes", "hidden": false },
         { type: "perf", "section": "Performance Improvements" },
-        { type: "ci", "section": "Continuous Integration", "hidden": false },
-        { type: "chore", "section": "Miscellaneous", "hidden": false },
+        { type: "ci", "section": "Continuous Integration", "hidden": true },
+        { type: "chore", "section": "Miscellaneous", "hidden": true },
         { type: "revert", "section": "Reverts" },
         { type: "docs", "section": "Documentation" },
         { type: "style", "section": "Styles", "hidden": false },
