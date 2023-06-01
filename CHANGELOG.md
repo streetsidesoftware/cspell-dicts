@@ -1,5 +1,14 @@
 # Release Notes
 
+## [12.0.7](https://github.com/streetsidesoftware/cspell-dicts/compare/cspell-dicts@12.0.6...cspell-dicts@12.0.7) (2023-06-01)
+
+
+### Updates and Bug Fixes
+
+* add words to companies, network-protocol.txt, and software-tools.txt ([#2190](https://github.com/streetsidesoftware/cspell-dicts/issues/2190)) ([7a180ee](https://github.com/streetsidesoftware/cspell-dicts/commit/7a180ee703f69f259179a6abcc6d671917374f07))
+* Workflow Bot -- Build Dictionaries ([#2194](https://github.com/streetsidesoftware/cspell-dicts/issues/2194)) ([2ac3f06](https://github.com/streetsidesoftware/cspell-dicts/commit/2ac3f060ca4bc4c52d53a6bf9515dcad7698a5fd))
+* Workflow Bot -- Build Dictionaries ([#2196](https://github.com/streetsidesoftware/cspell-dicts/issues/2196)) ([e86685c](https://github.com/streetsidesoftware/cspell-dicts/commit/e86685cf64591ee750b778ffe881f36e08f3bb61))
+
 ## [12.0.6](https://github.com/streetsidesoftware/cspell-dicts/compare/cspell-dicts@12.0.5...cspell-dicts@12.0.6) (2023-05-24)
 
 
