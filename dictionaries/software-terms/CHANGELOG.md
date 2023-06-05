@@ -3,6 +3,13 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+## [3.1.12](https://github.com/streetsidesoftware/cspell-dicts/compare/@cspell/dict-software-terms@3.1.11...@cspell/dict-software-terms@3.1.12) (2023-06-05)
+
+
+### Updates and Bug Fixes
+
+* add words to data_science network-protocols software-teams ([#2197](https://github.com/streetsidesoftware/cspell-dicts/issues/2197)) ([abdc1f8](https://github.com/streetsidesoftware/cspell-dicts/commit/abdc1f81dff938f86045f04f07855b263b1cc610))
+
 ## [3.1.11](https://github.com/streetsidesoftware/cspell-dicts/compare/@cspell/dict-software-terms@3.1.10...@cspell/dict-software-terms@3.1.11) (2023-06-01)
 
 
