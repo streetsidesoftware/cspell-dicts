@@ -6,6 +6,7 @@
 ### Updates and Bug Fixes
 
 * add words to data_science network-protocols software-teams ([#2197](https://github.com/streetsidesoftware/cspell-dicts/issues/2197)) ([abdc1f8](https://github.com/streetsidesoftware/cspell-dicts/commit/abdc1f81dff938f86045f04f07855b263b1cc610))
+* Workflow Bot -- Build Dictionaries ([#2202](https://github.com/streetsidesoftware/cspell-dicts/issues/2202)) ([3742752](https://github.com/streetsidesoftware/cspell-dicts/commit/374275252553fa3b5fa4155ad2843692086ad9cf))
 
 ## [12.0.7](https://github.com/streetsidesoftware/cspell-dicts/compare/cspell-dicts@12.0.6...cspell-dicts@12.0.7) (2023-06-01)
 
