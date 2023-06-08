@@ -220,6 +220,7 @@ cfile
 CFLAG
 cfx
 cgi
+cgibin
 CHAROFF
 charref
 chars
@@ -236,6 +237,7 @@ chr
 chud
 ci
 CIRCLEQ
+CJK
 CLASSID
 clnt
 CLOB
@@ -365,6 +367,7 @@ dd
 ddi
 de
 deallocate
+deallocator
 dec
 decl
 decr
@@ -698,6 +701,7 @@ firewire
 fixpoint
 flagset
 FLG
+flib
 flush
 fmt
 fmtaddr
@@ -794,6 +798,7 @@ gwrite
 gxx
 gz
 hanning
+hash
 hashtable
 HASREMOTELOCKS
 HASWELL
@@ -1024,6 +1029,8 @@ mh
 mib
 MIB
 MIBII
+milli
+millis
 minid
 minres
 mm
@@ -1283,6 +1290,7 @@ PSPELL
 pstat
 pstr
 pthread
+pti
 ptr
 ptrs
 pub
@@ -1358,6 +1366,7 @@ rl
 rollback
 ROWENTER
 ROWEXIT
+rowid
 ROWSPAN
 rpc
 rr
@@ -1436,8 +1445,10 @@ SHOWGRIDX
 SHOWGRIDY
 sid
 sigevent
+sighandler
 signame
 signpost
+siguser
 simd
 SIMPLEXML
 sint
@@ -1658,6 +1669,7 @@ unbuffered
 unbufffered
 undeclare
 unicode
+uninit
 unix
 UNLCK
 UNLINKFROM
@@ -1707,6 +1719,8 @@ varbind
 varbuf
 varg
 vargs
+varray
+varrays
 VCWD
 ver
 verf
@@ -1816,21 +1830,3 @@ zstr
 ztimestamp
 zval
 zvalue
-proc
-pthread
-pti
-UCS
-CJK
-deallocator
-hash
-xml
-varray
-varrays
-rowid
-flib
-uninit
-milli
-millis
-cgibin
-siguser
-sighandler

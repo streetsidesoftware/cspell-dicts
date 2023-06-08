@@ -1,5 +1,4 @@
 # https://clang.llvm.org/docs/AttributeReference.html
-
 # AMD GPU
 amdgpu
 
@@ -20,8 +19,8 @@ typestate
 swift_newtype
 
 # declaration attributes
-novtable
 boxable
+novtable
 objc_nonlazy_class
 objc_subclassing_restricted
 selectany
@@ -39,8 +38,8 @@ optnone
 overloadable
 sycl_kernel
 xray_always_instrument
-xray_never_instrument
 xray_log_args
+xray_never_instrument
 
 # nullability attributes
 nonnull
@@ -55,11 +54,11 @@ nomerge
 sycl_special_class
 
 # type attributes
+__declspec
 __sptr
 __uptr
 nodebug
 noescape
 nosvm
-__declspec
 swiftasynccall
 swiftcall

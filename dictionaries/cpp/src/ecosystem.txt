@@ -6,48 +6,47 @@ cppreference
 isocpp
 
 # compilers
-gnu
-gcc
 clang
+emscripten
+gcc
+gnu
 llvm # also included in the dictionary "softwareTerms"
 msvc
-emscripten
 pybind
-
 sysroot
 
 # standard libraries
+eastl
 libc
 libc++
 libstdc++
-eastl
 
 # target platforms (OS)
-msys
 cygwin
+msys
 posix
 
 # build systems
 cmake
-ninja
 make
 msbuild
+ninja
 spack
 
 # package/dependency managers
 conan
-vcpkg
 CPM
+vcpkg
 
 # working groups
-WG21
 LEWG
+WG21
 
 # tools
-objdump
-natvis
 gdb
 lldb
+natvis
+objdump
 
 # graphics
 cuda
@@ -55,14 +54,14 @@ vulkan
 
 # common-ish libraries
 # https://en.cppreference.com/w/cpp/links/libs
-fmt
-doctest
 abseil
+asio
+doctest
+fmt
 imgui
+nlohmann
 poco
 protobuf
-nlohmann
-asio
 
 # emscripten
 emar
@@ -75,6 +74,7 @@ emdwp
 emmake
 emnm
 emprofile
+
 #em++
 emranlib
 emscons
