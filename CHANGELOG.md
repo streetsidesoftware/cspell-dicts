@@ -1,5 +1,21 @@
 # Release Notes
 
+## [12.2.0](https://github.com/streetsidesoftware/cspell-dicts/compare/cspell-dicts@12.1.0...cspell-dicts@12.2.0) (2023-06-08)
+
+
+### Features
+
+* use `data-science` dictionary in Python ([#2224](https://github.com/streetsidesoftware/cspell-dicts/issues/2224)) ([1c840e9](https://github.com/streetsidesoftware/cspell-dicts/commit/1c840e9ae5e506a23ddf563bc38af5f01ad6e099))
+
+
+### Updates and Bug Fixes
+
+* add GOPATH to go.txt add Tencent to companies.txt ([#2225](https://github.com/streetsidesoftware/cspell-dicts/issues/2225)) ([d7d4448](https://github.com/streetsidesoftware/cspell-dicts/commit/d7d4448b165a9984657bc4a5108df23214989581))
+* add terms from [#2207](https://github.com/streetsidesoftware/cspell-dicts/issues/2207) ([#2226](https://github.com/streetsidesoftware/cspell-dicts/issues/2226)) ([573d21d](https://github.com/streetsidesoftware/cspell-dicts/commit/573d21d36117f86567c34645a8752fda87621180))
+* add word to network-protocols.txt ([#2229](https://github.com/streetsidesoftware/cspell-dicts/issues/2229)) ([9b42fd7](https://github.com/streetsidesoftware/cspell-dicts/commit/9b42fd737672405ba96e729a9d99f6a07460e60c))
+* Workflow Bot -- Build Dictionaries ([#2228](https://github.com/streetsidesoftware/cspell-dicts/issues/2228)) ([2b4f727](https://github.com/streetsidesoftware/cspell-dicts/commit/2b4f7276aac738eac0d74123b2e9222dc66f565b))
+* Workflow Bot -- Build Dictionaries ([#2230](https://github.com/streetsidesoftware/cspell-dicts/issues/2230)) ([cd126a8](https://github.com/streetsidesoftware/cspell-dicts/commit/cd126a843e9e538bef279bb1bfc23c72d0ebddb3))
+
 ## [12.1.0](https://github.com/streetsidesoftware/cspell-dicts/compare/cspell-dicts@12.0.8...cspell-dicts@12.1.0) (2023-06-08)
 
 
