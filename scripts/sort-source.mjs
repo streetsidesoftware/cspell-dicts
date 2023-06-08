@@ -36,17 +36,21 @@ function sortContent(content) {
     let group = 0;
 
     function addLineToGroup(line) {
+        line = line.trim();
+        if (!line) return;
         groups[group] = groups[group] || [];
-        groups[group].push(line.trim());
+        groups[group].push(line);
     }
 
     function addLine(line) {
         if (line.startsWith('#')) {
+            // One comment per group.
             if (groups[group]) {
+                // Add an empty line in front of the first comment.
+                groups[++group] = [];
                 ++group;
             }
-            addLineToGroup(line);
-            ++group;
+            groups[group++] = [line];
         } else {
             addLineToGroup(line);
         }
@@ -56,11 +60,9 @@ function sortContent(content) {
         addLine(line);
     }
 
-    groups.forEach((group) => group.sort(compare));
-
     return (
         groups
-            .flatMap((a) => a)
+            .map((a) => a.sort(compare).join('\n'))
             .join('\n')
             .trim() + '\n'
     );
