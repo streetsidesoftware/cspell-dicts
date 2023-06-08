@@ -1,8 +1,8 @@
 # https://docs.microsoft.com/en-us/cpp/cpp/declspec
 __declspec
 appdomain
-dllimport
 dllexport
+dllimport
 jitintrinsic
 noalias
 noinline
@@ -16,15 +16,14 @@ selectany
 __cdecl
 __fastcall
 __forceinline
+__nogc
+__noop
 __sptr
 __stdcall
 __thiscall
 __uptr
 __uuidof
 __vectorcall
-
-__nogc
-__noop
 gcnew
 initonly
 safecast

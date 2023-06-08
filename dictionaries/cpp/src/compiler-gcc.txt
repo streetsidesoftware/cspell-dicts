@@ -1,4 +1,8 @@
 # https://gcc.gnu.org/onlinedocs/gcc/Common-Function-Attributes.html
+__GNUC__
+__GNUC_MINOR__
+__GNUC_PATCHLEVEL__
+__GNUG__
 ifunc
 noclone
 noinline
@@ -10,8 +14,3 @@ nothrow
 patchable
 symver
 weakref
-
-__GNUC__
-__GNUC_MINOR__
-__GNUC_PATCHLEVEL__
-__GNUG__

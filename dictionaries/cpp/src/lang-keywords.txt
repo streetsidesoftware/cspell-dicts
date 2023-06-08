@@ -32,23 +32,22 @@ elif
 endif
 ifdef
 ifndef
-undef
 pragma
+undef
 
 # attributes
-noreturn
 fallthrough
 nodiscard
+noreturn
 
 # https://en.cppreference.com/w/cpp/language/value_category
 glvalue
-prvalue
-xvalue
 lvalue
+prvalue
 rvalue
-
 trigraph
 udls # plural of UDL (user-defined-literal)
+xvalue
 
 # not really keywords. just contractions.
 builtin
