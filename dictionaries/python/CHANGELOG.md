@@ -3,6 +3,13 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+## [4.1.0](https://github.com/streetsidesoftware/cspell-dicts/compare/@cspell/dict-python@4.0.8...@cspell/dict-python@4.1.0) (2023-06-08)
+
+
+### Features
+
+* use `data-science` dictionary in Python ([#2224](https://github.com/streetsidesoftware/cspell-dicts/issues/2224)) ([1c840e9](https://github.com/streetsidesoftware/cspell-dicts/commit/1c840e9ae5e506a23ddf563bc38af5f01ad6e099))
+
 ## [4.0.8](https://github.com/streetsidesoftware/cspell-dicts/compare/@cspell/dict-python@4.0.7...@cspell/dict-python@4.0.8) (2023-06-08)
 
 
