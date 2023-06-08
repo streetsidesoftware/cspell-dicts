@@ -17,7 +17,7 @@ jobs:
         node-version:
           - 16.x
           - 18.x
-          - 19.x
+          - 20.x
 
         os:
           - ubuntu-latest
@@ -38,7 +38,7 @@ jobs:
     strategy:
       matrix:
         node-version:
-          - 16.x
+          - 18.x
 
         os:
           - windows-latest
