@@ -3,9 +3,12 @@
 targets:
   - name: "data-science"
     sources:
-      - filename: "src/data_science.txt"
+      - filename: "src/data-science-models.txt"
+        split: true
+      - filename: "src/data-science-terms.txt"
+        split: true
+      - filename: "src/data-science-tools.txt"
         split: true
     format: "plaintext"
     targetDirectory: "./dict"
-    generateNonStrict: false
     compress: false

@@ -13,7 +13,7 @@
   },
   "scripts": {
     "build": "cross-env NODE_OPTIONS=--max_old_space_size=8192 cspell-tools-cli build",
-    "test": "head -n 1000 \"src/data_science.txt\" | cspell -v -c ./cspell-ext.json \"--local=*\" \"--languageId=python\" stdin",
+    "test": "cspell -c ./cspell-ext.json \"--local=en\" \"--languageId=python\" \"src\"",
     "prepublishOnly": "echo OK",
     "prepare": "yarn run build"
   },
