@@ -1,5 +1,20 @@
 # Release Notes
 
+## [12.1.0](https://github.com/streetsidesoftware/cspell-dicts/compare/cspell-dicts@12.0.8...cspell-dicts@12.1.0) (2023-06-08)
+
+
+### Features
+
+* Add a dedicated Data Science dictionary ([#2213](https://github.com/streetsidesoftware/cspell-dicts/issues/2213)) ([8c87c23](https://github.com/streetsidesoftware/cspell-dicts/commit/8c87c23942c5330b5a3489d743d59290c5f0386f))
+
+
+### Updates and Bug Fixes
+
+* Add "ariakit" to the software tools dict ([#2212](https://github.com/streetsidesoftware/cspell-dicts/issues/2212)) ([c48958d](https://github.com/streetsidesoftware/cspell-dicts/commit/c48958d2313c782b3737abe3e9b48d24a3a06b24))
+* add some words to data_science.txt ([#2207](https://github.com/streetsidesoftware/cspell-dicts/issues/2207)) ([f5aef84](https://github.com/streetsidesoftware/cspell-dicts/commit/f5aef84f82ca5512bcc231c34d4118178e19860c))
+* Workflow Bot -- Build Dictionaries ([#2205](https://github.com/streetsidesoftware/cspell-dicts/issues/2205)) ([5d13cee](https://github.com/streetsidesoftware/cspell-dicts/commit/5d13ceef981f29dc5fe8289af9c92e6858e6f623))
+* Workflow Bot -- Build Dictionaries ([#2215](https://github.com/streetsidesoftware/cspell-dicts/issues/2215)) ([cd77f20](https://github.com/streetsidesoftware/cspell-dicts/commit/cd77f20374e048ca8950fb06d3bb3b7b980831ac))
+
 ## [12.0.8](https://github.com/streetsidesoftware/cspell-dicts/compare/cspell-dicts@12.0.7...cspell-dicts@12.0.8) (2023-06-05)
 
 

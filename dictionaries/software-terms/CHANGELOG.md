@@ -3,6 +3,14 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+## [3.1.13](https://github.com/streetsidesoftware/cspell-dicts/compare/@cspell/dict-software-terms@3.1.12...@cspell/dict-software-terms@3.1.13) (2023-06-08)
+
+
+### Updates and Bug Fixes
+
+* Add "ariakit" to the software tools dict ([#2212](https://github.com/streetsidesoftware/cspell-dicts/issues/2212)) ([c48958d](https://github.com/streetsidesoftware/cspell-dicts/commit/c48958d2313c782b3737abe3e9b48d24a3a06b24))
+* Workflow Bot -- Build Dictionaries ([#2205](https://github.com/streetsidesoftware/cspell-dicts/issues/2205)) ([5d13cee](https://github.com/streetsidesoftware/cspell-dicts/commit/5d13ceef981f29dc5fe8289af9c92e6858e6f623))
+
 ## [3.1.12](https://github.com/streetsidesoftware/cspell-dicts/compare/@cspell/dict-software-terms@3.1.11...@cspell/dict-software-terms@3.1.12) (2023-06-05)
 
 
