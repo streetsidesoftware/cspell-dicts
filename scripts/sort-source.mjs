@@ -31,29 +31,32 @@ async function processFile(filename, options) {
 }
 
 function sortContent(content) {
-    const lines = content.split('\n');
-    const groups = [[]];
+    const lines = content.trim().split('\n');
+    const groups = [];
     let group = 0;
-    const noSortGroup = new Set();
 
     function addLineToGroup(line) {
-        groups[group] = groups[group] || [''];
+        groups[group] = groups[group] || [];
         groups[group].push(line.trim());
     }
 
     function addLine(line) {
-        if (line.startsWith('#') && !noSortGroup.has(group)) {
+        if (line.startsWith('#')) {
+            if (groups[group]) {
+                ++group;
+            }
+            addLineToGroup(line);
             ++group;
-            noSortGroup.add(group);
+        } else {
+            addLineToGroup(line);
         }
-        addLineToGroup(line);
     }
 
     for (const line of lines) {
         addLine(line);
     }
 
-    groups.forEach((group, idx) => (noSortGroup.has(idx) ? group : group.sort(compare)));
+    groups.forEach((group) => group.sort(compare));
 
     return (
         groups
