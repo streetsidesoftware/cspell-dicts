@@ -1,0 +1,14 @@
+# yaml-language-server: $schema=https://raw.githubusercontent.com/streetsidesoftware/cspell/main/packages/cspell-tools/cspell-tools.config.schema.json
+
+targets:
+  - name: "data-science"
+    sources:
+      - filename: "src/data-science-models.txt"
+        split: true
+      - filename: "src/data-science-terms.txt"
+        split: true
+      - filename: "src/data-science-tools.txt"
+        split: true
+    format: "plaintext"
+    targetDirectory: "./dict"
+    compress: false

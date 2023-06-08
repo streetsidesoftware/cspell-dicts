@@ -1,0 +1,22 @@
+{
+    "id": "data-science",
+    "version": "0.2",
+    "name": "Data Science",
+    "description": "Data Science dictionary for cspell.",
+    "readonly": true,
+    "dictionaryDefinitions": [
+        {
+            "name": "data-science",
+            "path": "./dict/data-science.txt",
+            "description": "Data Science dictionary for cspell."
+        }
+    ],
+    "dictionaries": [],
+    "languageSettings": [
+        {
+            "languageId": "python",
+            "locale": "*",
+            "dictionaries": ["data-science"]
+        }
+    ]
+}
