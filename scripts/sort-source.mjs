@@ -31,33 +31,38 @@ async function processFile(filename, options) {
 }
 
 function sortContent(content) {
-    const lines = content.split('\n');
-    const groups = [[]];
+    const lines = content.trim().split('\n');
+    const groups = [];
     let group = 0;
-    const noSortGroup = new Set();
 
     function addLineToGroup(line) {
-        groups[group] = groups[group] || [''];
-        groups[group].push(line.trim());
+        line = line.trim();
+        if (!line) return;
+        groups[group] = groups[group] || [];
+        groups[group].push(line);
     }
 
     function addLine(line) {
-        if (line.startsWith('#') && !noSortGroup.has(group)) {
-            ++group;
-            noSortGroup.add(group);
+        if (line.startsWith('#')) {
+            // One comment per group.
+            if (groups[group]) {
+                // Add an empty line in front of the first comment.
+                groups[++group] = [];
+                ++group;
+            }
+            groups[group++] = [line];
+        } else {
+            addLineToGroup(line);
         }
-        addLineToGroup(line);
     }
 
     for (const line of lines) {
         addLine(line);
     }
 
-    groups.forEach((group, idx) => (noSortGroup.has(idx) ? group : group.sort(compare)));
-
     return (
         groups
-            .flatMap((a) => a)
+            .map((a) => a.sort(compare).join('\n'))
             .join('\n')
             .trim() + '\n'
     );
