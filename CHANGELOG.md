@@ -1,5 +1,13 @@
 # Release Notes
 
+## [12.2.1](https://github.com/streetsidesoftware/cspell-dicts/compare/cspell-dicts@12.2.0...cspell-dicts@12.2.1) (2023-06-09)
+
+
+### Updates and Bug Fixes
+
+* add seaborn Ethr cygwin psping sockperf to software-tools.txt ([#2232](https://github.com/streetsidesoftware/cspell-dicts/issues/2232)) ([b135dd8](https://github.com/streetsidesoftware/cspell-dicts/commit/b135dd89611792e3ae153be69bbcdf42f714a7fb))
+* Workflow Bot -- Build Dictionaries ([#2235](https://github.com/streetsidesoftware/cspell-dicts/issues/2235)) ([a39003c](https://github.com/streetsidesoftware/cspell-dicts/commit/a39003c1ceb964a0bd36ab232c496089f5755e82))
+
 ## [12.2.0](https://github.com/streetsidesoftware/cspell-dicts/compare/cspell-dicts@12.1.0...cspell-dicts@12.2.0) (2023-06-08)
 
 
