@@ -32,8 +32,8 @@ function loadPackage(pkgFile) {
 
 function determinePackageNamesAndMethods(cwd = process.cwd()) {
     const pkgFile = findNearestPackageJson(cwd);
-    const package = loadPackage(pkgFile) || {};
-    const packageNames = Object.keys(package.dependencies || {}).concat(Object.keys(package.devDependencies || {}));
+    const pkg = loadPackage(pkgFile) || {};
+    const packageNames = Object.keys(pkg.dependencies || {}).concat(Object.keys(pkg.devDependencies || {}));
     return { pkgFile, packageNames };
 }
 
