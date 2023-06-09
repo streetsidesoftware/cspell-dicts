@@ -27,6 +27,7 @@ export function checkSnapshots(fileGlobsToCheck) {
         const globs = glob.sync(fileGlob);
 
         globs.forEach((filename) => {
+            filename = filename.replace(/\\/g, '/');
             test(`verify ${filename} against snapshot`, async (t) => {
                 const result = await checkText(filename, {});
                 t.snapshot(formatResult(result));
