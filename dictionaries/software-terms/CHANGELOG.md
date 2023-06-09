@@ -3,6 +3,14 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+## [3.1.15](https://github.com/streetsidesoftware/cspell-dicts/compare/@cspell/dict-software-terms@3.1.14...@cspell/dict-software-terms@3.1.15) (2023-06-09)
+
+
+### Updates and Bug Fixes
+
+* add seaborn Ethr cygwin psping sockperf to software-tools.txt ([#2232](https://github.com/streetsidesoftware/cspell-dicts/issues/2232)) ([b135dd8](https://github.com/streetsidesoftware/cspell-dicts/commit/b135dd89611792e3ae153be69bbcdf42f714a7fb))
+* Workflow Bot -- Build Dictionaries ([#2235](https://github.com/streetsidesoftware/cspell-dicts/issues/2235)) ([a39003c](https://github.com/streetsidesoftware/cspell-dicts/commit/a39003c1ceb964a0bd36ab232c496089f5755e82))
+
 ## [3.1.14](https://github.com/streetsidesoftware/cspell-dicts/compare/@cspell/dict-software-terms@3.1.13...@cspell/dict-software-terms@3.1.14) (2023-06-08)
 
 
