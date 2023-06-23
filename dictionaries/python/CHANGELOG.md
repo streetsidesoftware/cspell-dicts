@@ -3,6 +3,18 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+## [4.1.1](https://github.com/streetsidesoftware/cspell-dicts/compare/@cspell/dict-python@4.1.0...@cspell/dict-python@4.1.1) (2023-06-23)
+
+
+### Updates and Bug Fixes
+
+* add some words to common_packages.txt ([#2243](https://github.com/streetsidesoftware/cspell-dicts/issues/2243)) ([c52917a](https://github.com/streetsidesoftware/cspell-dicts/commit/c52917a15ed973da8d934cdc5dd2fac5055926e1))
+* add words to common_packages ([#2241](https://github.com/streetsidesoftware/cspell-dicts/issues/2241)) ([533e48d](https://github.com/streetsidesoftware/cspell-dicts/commit/533e48d8002a0dd4a752d91e58b061408ea64391))
+* add words to common_packages and network-protocols ([#2255](https://github.com/streetsidesoftware/cspell-dicts/issues/2255)) ([67a61f5](https://github.com/streetsidesoftware/cspell-dicts/commit/67a61f5f2d937d993d07fe7b3c73db096ecd649b))
+* Workflow Bot -- Build Dictionaries ([#2242](https://github.com/streetsidesoftware/cspell-dicts/issues/2242)) ([8c348e5](https://github.com/streetsidesoftware/cspell-dicts/commit/8c348e5f11d6fb9d9620b8e047a02fea148b2600))
+* Workflow Bot -- Build Dictionaries ([#2246](https://github.com/streetsidesoftware/cspell-dicts/issues/2246)) ([ba9098d](https://github.com/streetsidesoftware/cspell-dicts/commit/ba9098dee8438e62ad848ee462df06ff42945aa5))
+* Workflow Bot -- Build Dictionaries ([#2254](https://github.com/streetsidesoftware/cspell-dicts/issues/2254)) ([b60895a](https://github.com/streetsidesoftware/cspell-dicts/commit/b60895a987db581536eb1a2df6c7fc7c9d4c9e07))
+
 ## [4.1.0](https://github.com/streetsidesoftware/cspell-dicts/compare/@cspell/dict-python@4.0.8...@cspell/dict-python@4.1.0) (2023-06-08)
 
 
