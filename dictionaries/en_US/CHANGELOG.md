@@ -3,6 +3,14 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+## [4.3.4](https://github.com/streetsidesoftware/cspell-dicts/compare/@cspell/dict-en_us@4.3.3...@cspell/dict-en_us@4.3.4) (2023-06-26)
+
+
+### Updates and Bug Fixes
+
+* add 'rebrand' and 'rebranding' to en-US ([#2261](https://github.com/streetsidesoftware/cspell-dicts/issues/2261)) ([720ea3b](https://github.com/streetsidesoftware/cspell-dicts/commit/720ea3b201f02d1ff087d90cc1e934fd700e3926))
+* Workflow Bot -- Build Dictionaries ([#2264](https://github.com/streetsidesoftware/cspell-dicts/issues/2264)) ([625e84c](https://github.com/streetsidesoftware/cspell-dicts/commit/625e84c464ff879e69d0b7d4eb6c189ffed2a2d1))
+
 ## [4.3.3](https://github.com/streetsidesoftware/cspell-dicts/compare/@cspell/dict-en_us@4.3.2...@cspell/dict-en_us@4.3.3) (2023-05-17)
 
 

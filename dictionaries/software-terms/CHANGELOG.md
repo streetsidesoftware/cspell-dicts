@@ -3,6 +3,14 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+## [3.1.17](https://github.com/streetsidesoftware/cspell-dicts/compare/@cspell/dict-software-terms@3.1.16...@cspell/dict-software-terms@3.1.17) (2023-06-26)
+
+
+### Updates and Bug Fixes
+
+* add DeepScale ICLR to software-terms add interpretability explainability to data-science-terms ([#2259](https://github.com/streetsidesoftware/cspell-dicts/issues/2259)) ([93a8529](https://github.com/streetsidesoftware/cspell-dicts/commit/93a85297f698a35ab6a52df89834295fea6bd56f))
+* Workflow Bot -- Build Dictionaries ([#2262](https://github.com/streetsidesoftware/cspell-dicts/issues/2262)) ([7661f77](https://github.com/streetsidesoftware/cspell-dicts/commit/7661f77f505097ccefb21658751fadde886a20d2))
+
 ## [3.1.16](https://github.com/streetsidesoftware/cspell-dicts/compare/@cspell/dict-software-terms@3.1.15...@cspell/dict-software-terms@3.1.16) (2023-06-23)
 
 
