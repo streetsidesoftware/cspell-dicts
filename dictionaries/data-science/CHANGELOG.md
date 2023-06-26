@@ -8,6 +8,7 @@
 * add DeepScale ICLR to software-terms add interpretability explainability to data-science-terms ([#2259](https://github.com/streetsidesoftware/cspell-dicts/issues/2259)) ([93a8529](https://github.com/streetsidesoftware/cspell-dicts/commit/93a85297f698a35ab6a52df89834295fea6bd56f))
 * add feedforward hyperscale superpod deepfusion Conv1d to data-science terms ([#2263](https://github.com/streetsidesoftware/cspell-dicts/issues/2263)) ([5303faf](https://github.com/streetsidesoftware/cspell-dicts/commit/5303fafd7cf920b6e76f19b29e0cb385d73cc65a))
 * Workflow Bot -- Build Dictionaries ([#2262](https://github.com/streetsidesoftware/cspell-dicts/issues/2262)) ([7661f77](https://github.com/streetsidesoftware/cspell-dicts/commit/7661f77f505097ccefb21658751fadde886a20d2))
+* Workflow Bot -- Build Dictionaries ([#2265](https://github.com/streetsidesoftware/cspell-dicts/issues/2265)) ([cbfc349](https://github.com/streetsidesoftware/cspell-dicts/commit/cbfc349934e011b37f8286ec3a4ed64b417a3775))
 
 ## [1.0.3](https://github.com/streetsidesoftware/cspell-dicts/compare/@cspell/dict-data-science@1.0.2...@cspell/dict-data-science@1.0.3) (2023-06-23)
 

@@ -10,6 +10,7 @@
 * add feedforward hyperscale superpod deepfusion Conv1d to data-science terms ([#2263](https://github.com/streetsidesoftware/cspell-dicts/issues/2263)) ([5303faf](https://github.com/streetsidesoftware/cspell-dicts/commit/5303fafd7cf920b6e76f19b29e0cb385d73cc65a))
 * Workflow Bot -- Build Dictionaries ([#2262](https://github.com/streetsidesoftware/cspell-dicts/issues/2262)) ([7661f77](https://github.com/streetsidesoftware/cspell-dicts/commit/7661f77f505097ccefb21658751fadde886a20d2))
 * Workflow Bot -- Build Dictionaries ([#2264](https://github.com/streetsidesoftware/cspell-dicts/issues/2264)) ([625e84c](https://github.com/streetsidesoftware/cspell-dicts/commit/625e84c464ff879e69d0b7d4eb6c189ffed2a2d1))
+* Workflow Bot -- Build Dictionaries ([#2265](https://github.com/streetsidesoftware/cspell-dicts/issues/2265)) ([cbfc349](https://github.com/streetsidesoftware/cspell-dicts/commit/cbfc349934e011b37f8286ec3a4ed64b417a3775))
 
 ## [12.2.2](https://github.com/streetsidesoftware/cspell-dicts/compare/cspell-dicts@12.2.1...cspell-dicts@12.2.2) (2023-06-23)
 
