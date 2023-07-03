@@ -3,6 +3,14 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+## [3.0.16](https://github.com/streetsidesoftware/cspell-dicts/compare/@cspell/dict-companies@3.0.15...@cspell/dict-companies@3.0.16) (2023-07-03)
+
+
+### Updates and Bug Fixes
+
+* add ICCC ISEA to companies.txt add xlarge microbatch leaderboard to data-science-terms.txt ([#2270](https://github.com/streetsidesoftware/cspell-dicts/issues/2270)) ([16f692b](https://github.com/streetsidesoftware/cspell-dicts/commit/16f692b4656b7a8d36422eb9f0461f4e52c7ad7e))
+* Workflow Bot -- Build Dictionaries ([#2286](https://github.com/streetsidesoftware/cspell-dicts/issues/2286)) ([86c1920](https://github.com/streetsidesoftware/cspell-dicts/commit/86c1920da481290a927d2ec10f689d4399fe1096))
+
 ## [3.0.15](https://github.com/streetsidesoftware/cspell-dicts/compare/@cspell/dict-companies@3.0.14...@cspell/dict-companies@3.0.15) (2023-06-08)
 
 

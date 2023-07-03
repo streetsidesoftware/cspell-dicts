@@ -1,5 +1,14 @@
 # Change Log
 
+## [1.0.5](https://github.com/streetsidesoftware/cspell-dicts/compare/@cspell/dict-data-science@1.0.4...@cspell/dict-data-science@1.0.5) (2023-07-03)
+
+
+### Updates and Bug Fixes
+
+* add ICCC ISEA to companies.txt add xlarge microbatch leaderboard to data-science-terms.txt ([#2270](https://github.com/streetsidesoftware/cspell-dicts/issues/2270)) ([16f692b](https://github.com/streetsidesoftware/cspell-dicts/commit/16f692b4656b7a8d36422eb9f0461f4e52c7ad7e))
+* Workflow Bot -- Build Dictionaries ([#2286](https://github.com/streetsidesoftware/cspell-dicts/issues/2286)) ([86c1920](https://github.com/streetsidesoftware/cspell-dicts/commit/86c1920da481290a927d2ec10f689d4399fe1096))
+* Workflow Bot -- Build Dictionaries ([#2288](https://github.com/streetsidesoftware/cspell-dicts/issues/2288)) ([c99970e](https://github.com/streetsidesoftware/cspell-dicts/commit/c99970ef7666bcf9fb16dd507f53a260d0ac7723))
+
 ## [1.0.4](https://github.com/streetsidesoftware/cspell-dicts/compare/@cspell/dict-data-science@1.0.3...@cspell/dict-data-science@1.0.4) (2023-06-26)
 
 
