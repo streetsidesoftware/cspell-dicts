@@ -22,6 +22,14 @@ See [Conventional Commits](https://conventionalcommits.org) for commit guideline
 
 
 
+## [3.0.2](https://github.com/streetsidesoftware/cspell-dicts/compare/@cspell/dict-bg-bg@3.0.1...@cspell/dict-bg-bg@3.0.2) (2023-07-03)
+
+
+### Updates and Bug Fixes
+
+* Adding various words from issues. ([#2273](https://github.com/streetsidesoftware/cspell-dicts/issues/2273)) ([de5f809](https://github.com/streetsidesoftware/cspell-dicts/commit/de5f8098d1dad66ac7d90da205f53aaad531024f))
+* Build Bulgarian dictionary ([#2285](https://github.com/streetsidesoftware/cspell-dicts/issues/2285)) ([2fbb91f](https://github.com/streetsidesoftware/cspell-dicts/commit/2fbb91ff2e8bdc184d81e81509ccdfc96d0f6cf1))
+
 ## [3.0.1](https://github.com/streetsidesoftware/cspell-dicts/compare/@cspell/dict-bg-bg@3.0.0...@cspell/dict-bg-bg@3.0.1) (2022-12-17)
 
 
