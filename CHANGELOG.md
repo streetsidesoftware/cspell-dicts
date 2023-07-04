@@ -1,5 +1,21 @@
 # Release Notes
 
+## [12.3.0](https://github.com/streetsidesoftware/cspell-dicts/compare/cspell-dicts@12.2.5...cspell-dicts@12.3.0) (2023-07-04)
+
+
+### Features
+
+* Update Django dictionary with version 4.2 ([#2298](https://github.com/streetsidesoftware/cspell-dicts/issues/2298)) ([4c17d37](https://github.com/streetsidesoftware/cspell-dicts/commit/4c17d37beadf9949fa74bbc17a50501321f2edb1))
+
+
+### Updates and Bug Fixes
+
+* add  linkcss to npm.txt ([#2290](https://github.com/streetsidesoftware/cspell-dicts/issues/2290)) ([c08202f](https://github.com/streetsidesoftware/cspell-dicts/commit/c08202f1112664b5f2e9d457eae9ae553ebb4985))
+* Update npm description in extension. ([#2299](https://github.com/streetsidesoftware/cspell-dicts/issues/2299)) ([4f2546b](https://github.com/streetsidesoftware/cspell-dicts/commit/4f2546b1e3907eaa1bdb15a4e268b0062cd0c5d0))
+* Workflow Bot -- Build Dictionaries ([#2296](https://github.com/streetsidesoftware/cspell-dicts/issues/2296)) ([3bff84b](https://github.com/streetsidesoftware/cspell-dicts/commit/3bff84b43fe11a3fae3ce5b8250bdbb9980df4fa))
+* Workflow Bot -- Build Dictionaries ([#2300](https://github.com/streetsidesoftware/cspell-dicts/issues/2300)) ([9f6393c](https://github.com/streetsidesoftware/cspell-dicts/commit/9f6393ccd04736f3bbf371e377bff09f6328fa40))
+* Workflow Bot -- Build Dictionaries ([#2301](https://github.com/streetsidesoftware/cspell-dicts/issues/2301)) ([434c681](https://github.com/streetsidesoftware/cspell-dicts/commit/434c6812fb4f42249db49b8bda0da1afc88a35ec))
+
 ## [12.2.5](https://github.com/streetsidesoftware/cspell-dicts/compare/cspell-dicts@12.2.4...cspell-dicts@12.2.5) (2023-07-04)
 
 
