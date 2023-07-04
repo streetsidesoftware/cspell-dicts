@@ -1,5 +1,14 @@
 # Release Notes
 
+## [12.2.5](https://github.com/streetsidesoftware/cspell-dicts/compare/cspell-dicts@12.2.4...cspell-dicts@12.2.5) (2023-07-04)
+
+
+### Updates and Bug Fixes
+
+* add Widenet SISD MISD etc. to data-science-terms ([#2289](https://github.com/streetsidesoftware/cspell-dicts/issues/2289)) ([8028b0a](https://github.com/streetsidesoftware/cspell-dicts/commit/8028b0aea1736fadd3a6e2ba004dad3217a6de9f))
+* Update description of the `npm` dictionary ([#2291](https://github.com/streetsidesoftware/cspell-dicts/issues/2291)) ([52e8b6f](https://github.com/streetsidesoftware/cspell-dicts/commit/52e8b6f918033b16a4e924545f22365225ad4162))
+* Workflow Bot -- Build Dictionaries ([#2293](https://github.com/streetsidesoftware/cspell-dicts/issues/2293)) ([d653cee](https://github.com/streetsidesoftware/cspell-dicts/commit/d653cee9d8e2d7f59294157f95121adaaf164522))
+
 ## [12.2.4](https://github.com/streetsidesoftware/cspell-dicts/compare/cspell-dicts@12.2.3...cspell-dicts@12.2.4) (2023-07-03)
 
 
