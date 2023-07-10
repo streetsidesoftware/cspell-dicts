@@ -1,5 +1,15 @@
 # Release Notes
 
+## [12.3.1](https://github.com/streetsidesoftware/cspell-dicts/compare/cspell-dicts@12.3.0...cspell-dicts@12.3.1) (2023-07-10)
+
+
+### Updates and Bug Fixes
+
+* add Dataloaders convolutionally MoElayer WAIC to data-science-terms ([#2308](https://github.com/streetsidesoftware/cspell-dicts/issues/2308)) ([d00ca7c](https://github.com/streetsidesoftware/cspell-dicts/commit/d00ca7c05bb8beea345cd6acfc430bad62e7520f))
+* add reportlab etc. to common_packages.txt ([#2302](https://github.com/streetsidesoftware/cspell-dicts/issues/2302)) ([d6ef973](https://github.com/streetsidesoftware/cspell-dicts/commit/d6ef973281a561947fe0a5f354cfdab7a6b44c89))
+* add USENIX OSDI SIGKDD to companies.txt ([#2304](https://github.com/streetsidesoftware/cspell-dicts/issues/2304)) ([bf8609f](https://github.com/streetsidesoftware/cspell-dicts/commit/bf8609fe808448ff2bc98e7e8c65b55f0b985cce))
+* Workflow Bot -- Build Dictionaries ([#2306](https://github.com/streetsidesoftware/cspell-dicts/issues/2306)) ([a3a26ff](https://github.com/streetsidesoftware/cspell-dicts/commit/a3a26ffd42efbcf0f00207193d7541fc4ca503f8))
+
 ## [12.3.0](https://github.com/streetsidesoftware/cspell-dicts/compare/cspell-dicts@12.2.5...cspell-dicts@12.3.0) (2023-07-04)
 
 
