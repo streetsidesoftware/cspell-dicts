@@ -3,6 +3,14 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+## [4.1.2](https://github.com/streetsidesoftware/cspell-dicts/compare/@cspell/dict-python@4.1.1...@cspell/dict-python@4.1.2) (2023-07-10)
+
+
+### Updates and Bug Fixes
+
+* add reportlab etc. to common_packages.txt ([#2302](https://github.com/streetsidesoftware/cspell-dicts/issues/2302)) ([d6ef973](https://github.com/streetsidesoftware/cspell-dicts/commit/d6ef973281a561947fe0a5f354cfdab7a6b44c89))
+* Workflow Bot -- Build Dictionaries ([#2306](https://github.com/streetsidesoftware/cspell-dicts/issues/2306)) ([a3a26ff](https://github.com/streetsidesoftware/cspell-dicts/commit/a3a26ffd42efbcf0f00207193d7541fc4ca503f8))
+
 ## [4.1.1](https://github.com/streetsidesoftware/cspell-dicts/compare/@cspell/dict-python@4.1.0...@cspell/dict-python@4.1.1) (2023-06-23)
 
 
