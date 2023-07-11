@@ -19,7 +19,7 @@
     "clean": "shx rm -rf \"packages/*/*.txt.gz\" \"dictionaries/*/*.txt.gz\"",
     "readme:generate-doc-dictionaries": "./scripts/dictionaries.sh > dictionaries.md",
     "readme:inject": "inject-markdown \"*.md\" \"dictionaries/*/README.md\" && prettier -w \"*.md\" \"dictionaries/*/README.md\"",
-    "prepare": "pnpm -r run prepare",
+    "prepare": "echo OK",
     "pub-recover": "lerna publish from-package --no-push --no-private --concurrency 1",
     "update-packages": "pnpm up",
     "preinstall": "npx only-allow pnpm"
