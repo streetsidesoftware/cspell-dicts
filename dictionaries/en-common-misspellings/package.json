@@ -14,7 +14,7 @@
     "build": "echo ok",
     "test": "cspell .",
     "prepublishOnly": "echo OK",
-    "prepare": "yarn run build"
+    "prepare": "pnpm run build"
   },
   "repository": {
     "type": "git",

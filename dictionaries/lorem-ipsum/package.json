@@ -14,7 +14,7 @@
     "build": "cspell-tools compile \"dictionary.txt\" -o .",
     "test": "head -n 1000 \"dictionary.txt\" | cspell -v -c ./cspell-ext.json --local=lorem --languageId=* stdin",
     "prepublishOnly": "echo pre-publish",
-    "prepare": "yarn run build"
+    "prepare": "pnpm run build"
   },
   "repository": {
     "type": "git",

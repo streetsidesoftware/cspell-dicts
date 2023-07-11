@@ -11,17 +11,17 @@
     "./cspell-ext.json": "./cspell-ext.json"
   },
   "scripts": {
-    "build": "cat source-files.txt | xargs cross-env NODE_OPTIONS=--max_old_space_size=12288 cspell-tools-cli compile --trie3 -x compound -o . -M ru_ru --no-compress && yarn run gen-checksum",
-    "sync": "yarn cpy \"../../node_modules/dictionary-ru/**\" src/hunspell",
+    "build": "cat source-files.txt | xargs cross-env NODE_OPTIONS=--max_old_space_size=12288 cspell-tools-cli compile --trie3 -x compound -o . -M ru_ru --no-compress && pnpm run gen-checksum",
+    "sync": "pnpm cpy \"../../node_modules/dictionary-ru/**\" src/hunspell",
     "checksum": "shasum -c checksum.txt",
-    "conditional-build": "yarn run --silent checksum || yarn run build",
+    "conditional-build": "pnpm run --silent checksum || pnpm run build",
     "gen-checksum": "cat source-files.txt source-dependencies.txt | xargs shasum > checksum.txt",
     "test-ru_ru": "hunspell-reader words -n 1000 \"src/ru_ru.dic\" | cspell -v -c ./cspell-ext.json --local=ru --languageId=* stdin",
     "test-russian": "hunspell-reader words -n 1000 \"src/Russian.dic\" | cspell -v -c ./cspell-ext.json --local=ru --languageId=* stdin",
     "test-samples": "cspell -v -c ./cspell-ext.json --local=ru,en \"samples/**\"",
-    "test": "yarn run test-ru_ru && yarn run test-russian && yarn run test-samples",
+    "test": "pnpm run test-ru_ru && pnpm run test-russian && pnpm run test-samples",
     "prepare": "gzip -f -k *.trie",
-    "prepublishOnly": "yarn run conditional-build && yarn test"
+    "prepublishOnly": "pnpm run conditional-build && pnpm test"
   },
   "repository": {
     "type": "git",

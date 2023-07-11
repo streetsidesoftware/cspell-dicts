@@ -16,7 +16,7 @@
     "test-samples": "cspell \"samples/**/*.dart\"",
     "test-dict": "head -n 1000 \"src/dart.txt\" | cspell -v -c ./cspell-ext.json \"--local=*\" \"--languageId=dart\" stdin",
     "prepublishOnly": "echo pre-publish",
-    "prepare": "yarn run build"
+    "prepare": "pnpm run build"
   },
   "repository": {
     "type": "git",

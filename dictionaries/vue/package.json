@@ -14,7 +14,7 @@
     "build": "echo skip",
     "test": "echo skip",
     "prepublishOnly": "echo pre-publish",
-    "prepare": "yarn run build"
+    "prepare": "pnpm run build"
   },
   "repository": {
     "type": "git",

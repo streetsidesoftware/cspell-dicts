@@ -12,11 +12,11 @@
   },
   "scripts": {
     "build": "cspell-tools-cli compile --keep-raw-case src/ada.txt --no-compress -o ./dict",
-    "test": "yarn run test-dict && yarn run test-samples",
+    "test": "pnpm run test-dict && pnpm run test-samples",
     "test-dict": "head -n 100 src/ada.txt | cspell -v -c ./cspell-ext.json --local=* --languageId=ada stdin",
     "test-samples": "cspell \"samples/**\"",
     "prepublishOnly": "echo pre-publish",
-    "prepare": "yarn run build"
+    "prepare": "pnpm run build"
   },
   "repository": {
     "type": "git",

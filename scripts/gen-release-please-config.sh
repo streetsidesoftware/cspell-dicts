@@ -8,4 +8,4 @@ JQ_FILTER_CONFIG="$SCRIPT_DIR/gen-release-please-config.jq"
 echo "./package.json" $(ls -1 dictionaries/*/package.json) \
     | xargs jq -f $JQ_FILTER_PACKAGES | jq -s add | jq -f $JQ_FILTER_CONFIG > release-please-config.json
 
-yarn prettier -w r*.json
+pnpm prettier -w r*.json

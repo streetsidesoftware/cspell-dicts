@@ -11,17 +11,17 @@
     "./cspell-ext.json": "./cspell-ext.json"
   },
   "scripts": {
-    "build": "cross-env NODE_OPTIONS=--max_old_space_size=12288 cspell-tools-cli build && yarn run gen-checksum",
-    "sync": "yarn cpy \"../../node_modules/dictionary-de/**\" src/hunspell",
+    "build": "cross-env NODE_OPTIONS=--max_old_space_size=12288 cspell-tools-cli build && pnpm run gen-checksum",
+    "sync": "pnpm cpy \"../../node_modules/dictionary-de/**\" src/hunspell",
     "checksum": "shasum -c checksum.txt",
-    "conditional-build": "yarn run --silent checksum || yarn run build",
+    "conditional-build": "pnpm run --silent checksum || pnpm run build",
     "gen-checksum": "cat source-files.txt source-dependencies.txt | xargs shasum > checksum.txt",
     "test-de": "hunspell-reader words -n 1000 \"src/hunspell/index.dic\" | cspell -v -c ./cspell-ext.json --local=de --languageId=* stdin",
     "test-de-old": "hunspell-reader words -n 1000 \"src/German_de_DE.dic\" | cspell -v -c ./cspell-ext.json --local=de --languageId=* stdin",
     "test-samples": "cspell -v -c ./cspell-ext.json --local=de,en \"samples/**\"",
-    "test": "yarn run test-de && yarn run test-samples && yarn run test-de-old",
+    "test": "pnpm run test-de && pnpm run test-samples && pnpm run test-de-old",
     "prepare": "gzip -f -k *.trie",
-    "prepublishOnly": "yarn run conditional-build && yarn test"
+    "prepublishOnly": "pnpm run conditional-build && pnpm test"
   },
   "scriptsX": {
     "build": "cross-env NODE_OPTIONS=--max_old_space_size=4096 cspell-tools compile-trie \"src/German_de_DE.dic\" -M German_de_DE -o .",

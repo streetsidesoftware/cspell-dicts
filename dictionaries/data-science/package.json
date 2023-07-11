@@ -14,7 +14,7 @@
     "build": "cspell-tools-cli build",
     "test": "cspell -c ./cspell-ext.json samples",
     "prepublishOnly": "echo OK",
-    "prepare": "yarn run build"
+    "prepare": "pnpm run build"
   },
   "repository": {
     "type": "git",
