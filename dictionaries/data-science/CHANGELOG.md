@@ -7,6 +7,7 @@
 
 * add Dataloaders convolutionally MoElayer WAIC to data-science-terms ([#2308](https://github.com/streetsidesoftware/cspell-dicts/issues/2308)) ([d00ca7c](https://github.com/streetsidesoftware/cspell-dicts/commit/d00ca7c05bb8beea345cd6acfc430bad62e7520f))
 * Workflow Bot -- Build Dictionaries ([#2306](https://github.com/streetsidesoftware/cspell-dicts/issues/2306)) ([a3a26ff](https://github.com/streetsidesoftware/cspell-dicts/commit/a3a26ffd42efbcf0f00207193d7541fc4ca503f8))
+* Workflow Bot -- Build Dictionaries ([#2314](https://github.com/streetsidesoftware/cspell-dicts/issues/2314)) ([0b59fb7](https://github.com/streetsidesoftware/cspell-dicts/commit/0b59fb79cb74f5b6f10468df0908eada4d5696b3))
 
 ## [1.0.6](https://github.com/streetsidesoftware/cspell-dicts/compare/@cspell/dict-data-science@1.0.5...@cspell/dict-data-science@1.0.6) (2023-07-04)
 
