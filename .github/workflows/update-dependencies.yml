@@ -37,7 +37,7 @@ jobs:
 
       - name: Install
         run: |
-          pnpm
+          pnpm i
 
       # Catch any new dictionaries and add them to the config.
       - name: Update Release-Please packages
