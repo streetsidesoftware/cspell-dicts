@@ -116,7 +116,7 @@ module.exports = class extends Generator {
         } else {
             this.fs.exists(srcFile) && srcFiles.push(srcFile);
             props.srcFileReader = 'head -n 1000';
-            props.prepareScript = 'yarn run build';
+            props.prepareScript = 'pnpm run build';
             props.prepublishOnlyScript = 'echo OK';
         }
         srcFiles.forEach((srcFile) => props.filesToCopy.push([srcFile, path.join('src', path.basename(srcFile))]));
@@ -168,13 +168,13 @@ module.exports = class extends Generator {
     }
 
     install() {
-        this.spawnCommandSync('yarn');
+        this.spawnCommandSync('pnpm');
     }
 
     end() {
         if (this.props.doBuild) {
-            this.spawnCommandSync('yarn', ['run', 'build']);
-            this.spawnCommandSync('yarn', ['run', 'prepare']);
+            this.spawnCommandSync('pnpm', ['run', 'build']);
+            this.spawnCommandSync('pnpm', ['run', 'prepare']);
         }
     }
 };

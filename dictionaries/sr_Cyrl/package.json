@@ -11,10 +11,10 @@
     "./cspell-ext.json": "./cspell-ext.json"
   },
   "scripts": {
-    "build": "yarn run compile",
+    "build": "pnpm run compile",
     "checksum": "shasum -c checksum.txt",
-    "compile": "cat source-files.txt | xargs cspell-tools-cli compile --trie3 -x compound --merge sr-cyrl -o dict --no-compress && yarn run gen-checksum",
-    "conditional-build": "yarn run --silent checksum || yarn run build",
+    "compile": "cat source-files.txt | xargs cspell-tools-cli compile --trie3 -x compound --merge sr-cyrl -o dict --no-compress && pnpm run gen-checksum",
+    "conditional-build": "pnpm run --silent checksum || pnpm run build",
     "gen-checksum": "cat source-files.txt source-dependencies.txt | sort -u | xargs shasum > checksum.txt",
     "prepublishOnly": "echo pre-publish",
     "test": "cspell -v -c ./cspell-ext.json --local=sr-Cyrl \"samples/**\""

@@ -12,16 +12,16 @@
     "./cspell-ext.json": "./cspell-ext.json"
   },
   "scripts": {
-    "build": "yarn run generate && yarn run compile",
+    "build": "pnpm run generate && pnpm run compile",
     "generate": "node ./src/extract.js",
     "checksum": "shasum -c checksum.txt",
     "compile": "cat source-files.txt | xargs cspell-tools-cli compile --merge public-licenses -o .",
-    "conditional-build": "yarn run --silent checksum || yarn run build && yarn run gen-checksum",
+    "conditional-build": "pnpm run --silent checksum || pnpm run build && pnpm run gen-checksum",
     "test-dict": "cat source-files.txt | xargs cat | cspell -v -c ./cspell-ext.json --local=en --languageId=* stdin",
     "gen-checksum": "cat source-files.txt source-dependencies.txt | sort -u | xargs shasum > checksum.txt",
-    "test": "yarn run test-dict",
+    "test": "pnpm run test-dict",
     "prepublishOnly": "echo pre-publish",
-    "prepare": "yarn run build"
+    "prepare": "pnpm run build"
   },
   "repository": {
     "type": "git",

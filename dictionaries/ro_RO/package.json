@@ -11,10 +11,10 @@
     "./cspell-ext.json": "./cspell-ext.json"
   },
   "scripts": {
-    "build": "cspell-tools-cli build && yarn run gen-checksum",
-    "sync": "yarn cpy \"../../node_modules/dictionary-ro/**\" src/hunspell",
+    "build": "cspell-tools-cli build && pnpm run gen-checksum",
+    "sync": "pnpm cpy \"../../node_modules/dictionary-ro/**\" src/hunspell",
     "checksum": "shasum -c checksum.txt",
-    "conditional-build": "yarn run --silent checksum || yarn run build",
+    "conditional-build": "pnpm run --silent checksum || pnpm run build",
     "gen-checksum": "cat source-files.txt source-dependencies.txt | xargs shasum > checksum.txt",
     "test": "head -n 1000 \"src/Wordlist-Romanian.txt\" | cspell -v -c ./cspell-ext.json \"--local=ro,ro-RO,ro_RO\" \"--languageId=*\" stdin",
     "prepublishOnly": "echo OK",

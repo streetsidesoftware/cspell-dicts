@@ -36,7 +36,7 @@ The `cspell-ext.json` file in this package should be added to the import section
 Building is only necessary if you want to modify the contents of the dictionary. Note: Building will take a few minutes for large files.
 
 ```sh
-yarn run build
+pnpm run build
 ```
 
 ## License

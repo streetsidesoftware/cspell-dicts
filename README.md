@@ -61,7 +61,7 @@ Various [cspell](https://github.com/streetsidesoftware/cspell) dictionaries. Eac
 
 ## All Dictionaries
 
-<!--- Use `yarn build:readme` to generate this table --->
+<!--- Use `pnpm build:readme` to generate this table --->
 
 | package                                                                             | dictionary ID                                 | name                               | description                                                    |
 | ----------------------------------------------------------------------------------- | --------------------------------------------- | ---------------------------------- | -------------------------------------------------------------- |
@@ -185,9 +185,9 @@ Special thanks to all of our amazing contributors!
 
 Please fork this repository to add new dictionaries.
 
-## Install Yarn
+## Install Pnpm
 
-[Installation | Yarn](https://classic.yarnpkg.com/en/docs/install)
+[Installation | pnpm](https://pnpm.io/installation)
 
 ### Using Yeoman script
 
@@ -197,22 +197,22 @@ The [Yeoman](http://yeoman.io/) script can help you create the dictionary templa
 
 In the `cspell-dicts` repository root.
 
-Run yarn to make sure everything is installed.
+Run `pnpm` to make sure everything is installed.
 
 ```sh
-yarn
+pnpm i
 ```
 
 Run `create-dictionary` to start the Yeoman script.
 
 ```sh
-yarn create-dictionary
+pnpm create-dictionary
 ```
 
 or
 
 ```sh
-yarn create-dictionary <name> <path/to/source/words>
+pnpm create-dictionary <name> <path/to/source/words>
 ```
 
 Yeoman will ask you a series of questions:
@@ -226,7 +226,7 @@ Yeoman will ask you a series of questions:
 | local         | this is the two letter language code with an optional cultural code. a `*` mean it will match any language. More than one local can be added by separating them with a comma. i.e. en, en_AU.                                                                              |
 | languageId    | this is the VS Code programming language id or file type. `*` will match all file types. Examples: `java`, `cpp`, `plaintext`, `markdown`, `ruby`. [Types know to cspell](https://github.com/streetsidesoftware/cspell/blob/master/packages/cspell-lib/src/LanguageIds.ts) |
 | store as trie | for large source files (> 1MB) or hunspell files, this should be `y`. `n` will work for all programming language keyword files.                                                                                                                                            |
-| run build     | prepare the word list so it can be used by cspell efficiently. You can always run the build step yourself in the dictionary directory `yarn run build`.                                                                                                                    |
+| run build     | prepare the word list so it can be used by cspell efficiently. You can always run the build step yourself in the dictionary directory `pnpm run build`.                                                                                                                    |
 
 Once all the questions have been answered, the dictionary directory will be created and the files will be copied.
 

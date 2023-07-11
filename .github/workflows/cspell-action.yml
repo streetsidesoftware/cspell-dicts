@@ -13,8 +13,8 @@ jobs:
     runs-on: ubuntu-latest
     steps:
       - uses: actions/checkout@v3
-      - uses: actions/setup-node@v3
-        with:
-          cache: yarn
-      - run: yarn
+
+      - name: Setup
+        uses: ./.github/actions/setup
+
       - uses: streetsidesoftware/cspell-action@v2.26.2

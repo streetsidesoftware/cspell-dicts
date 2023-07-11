@@ -17,16 +17,12 @@ jobs:
       - name: Checkout code
         uses: actions/checkout@v3
 
-      - name: Use Node.js
-        uses: actions/setup-node@v3
-        with:
-          node-version: 18
-          registry-url: "https://registry.npmjs.org"
-          cache: yarn
+      - name: Setup
+        uses: ./.github/actions/setup
 
       - name: Install / Build
         run: |
-          yarn
+          pnpm i
 
       # Release Please has already incremented versions and published tags, so we just
       # need to publish all unpublished versions to NPM here
@@ -34,4 +30,4 @@ jobs:
       - name: Publish to NPM
         env:
           NODE_AUTH_TOKEN: ${{secrets.PUBLISH_NPM}}
-        run: yarn lerna publish from-package --no-push --no-private --yes
+        run: pnpm lerna publish from-package --no-push --no-private --yes

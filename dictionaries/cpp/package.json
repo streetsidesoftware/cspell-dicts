@@ -16,7 +16,7 @@
     "build-cpp-refined": "cat source-files-cpp-refined.txt | xargs cspell-tools-cli compile --no-split --keep-raw-case --merge cpp-refined -o .",
     "test": "head -n 1000 \"src/cpp.txt\" | cspell -v -c ./cspell-ext.json --local=* --languageId=cpp stdin",
     "prepublishOnly": "echo pre-publish",
-    "prepare": "yarn run build"
+    "prepare": "pnpm run build"
   },
   "repository": {
     "type": "git",
