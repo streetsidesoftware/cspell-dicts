@@ -26,9 +26,6 @@ importers:
       ava:
         specifier: ^5.3.1
         version: 5.3.1
-      commander:
-        specifier: ^11.0.0
-        version: 11.0.0
       cpy-cli:
         specifier: ^5.0.0
         version: 5.0.0
@@ -56,9 +53,6 @@ importers:
       generator-cspell-dicts:
         specifier: workspace:*
         version: link:generator-cspell-dicts
-      globby:
-        specifier: ^13.2.2
-        version: 13.2.2
       hunspell-reader:
         specifier: ^7.0.1-alpha.4
         version: 7.0.1-alpha.4
@@ -403,6 +397,15 @@ importers:
       yo:
         specifier: ^4.3.1
         version: 4.3.1
+
+  scripts:
+    dependencies:
+      commander:
+        specifier: ^11.0.0
+        version: 11.0.0
+      globby:
+        specifier: ^13.2.2
+        version: 13.2.2
 
 packages:
 
@@ -2725,7 +2728,6 @@ packages:
   /commander@11.0.0:
     resolution: {integrity: sha512-9HMlXtt/BNoYr8ooyjjNRdIilOTkVJXB+GhxMTtOKwk0R4j4lS4NpjuqmRxroBfnfTSHQIHQB7wryHhXarNjmQ==}
     engines: {node: '>=16'}
-    dev: true
 
   /commander@2.20.3:
     resolution: {integrity: sha512-GpVkmM8vF2vQUkj2LvZmD35JxeJOLCwJ9cUkugyk2nuhbv3+mJvpLYYt+0+USMxE+oj+ey/lJEnhZw75x/OMcQ==}
