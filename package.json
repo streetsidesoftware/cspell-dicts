@@ -10,7 +10,7 @@
     "lint:fix": "eslint --fix . && prettier -w \"**/*.{md,json,yml,yaml}\"",
     "build:all": "pnpm -r run --stream --workspace-concurrency 2 build --no-bail",
     "build:readme": "pnpm run readme:generate-doc-dictionaries && pnpm run readme:inject",
-    "lint:fix:sort-source-files": "./scripts/sort-source.mjs -c sort-source.config.json",
+    "lint:fix:sort-source-files": "node ./scripts/sort-source.mjs -c sort-source.config.json",
     "conditional-build": "pnpm -r run --workspace-concurrency 2 --stream conditional-build --no-bail",
     "check-dirty": "git --no-pager diff --compact-summary --exit-code",
     "check-spelling": "cspell",
