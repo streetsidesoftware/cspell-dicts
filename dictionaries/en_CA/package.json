@@ -12,12 +12,12 @@
   },
   "scripts": {
     "build": "pnpm run compile",
-    "sync": "pnpm cpy \"../../node_modules/aoo-mozilla-en-dict/en_CA*/**\" \"src/aoo-mozilla-en-dict\" --flat && pnpm sync-clean",
+    "sync": "pnpm cpy \"node_modules/aoo-mozilla-en-dict/en_CA*/**\" \"src/aoo-mozilla-en-dict\" --flat && pnpm sync-clean",
     "sync-clean": "shx rm -rf \"src/*/wordlist*.txt\" \"src/*/*speller*.txt\"",
-    "checksum": "shasum -c checksum.txt",
+    "checksum": "cspell-tools-cli shasum -c checksum.txt",
     "compile": "cspell-tools-cli build && pnpm run gen-checksum",
     "conditional-build": "pnpm run sync && pnpm run --silent checksum || pnpm run build",
-    "gen-checksum": "cat source-files.txt source-dependencies.txt | sort -u | xargs shasum > checksum.txt",
+    "gen-checksum": "cat source-files.txt source-dependencies.txt | sort -u | xargs cspell-tools-cli shasum > checksum.txt",
     "prepare": "gzip -f -k *.trie",
     "prepublishOnly": "echo pre-publish",
     "test-text": "cspell -v -c ./cspell-ext.json --local=en-ca --languageId=* \"tests/*.txt\"",
@@ -50,7 +50,7 @@
     "test": "tests"
   },
   "devDependencies": {
-    "@cspell/dict-en-shared": "*",
+    "@cspell/dict-en-shared": "workspace:*",
     "aoo-mozilla-en-dict": "https://github.com/marcoagpinto/aoo-mozilla-en-dict"
   }
 }
