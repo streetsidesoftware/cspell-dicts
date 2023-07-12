@@ -12,14 +12,14 @@
   },
   "scripts": {
     "build": "cat source-files.txt | xargs cross-env NODE_OPTIONS=--max_old_space_size=12288 cspell-tools-cli compile --trie3 -x compound -o . -M ar -m 5 --no-compress && pnpm run gen-checksum",
-    "checksum": "shasum -c checksum.txt",
+    "checksum": "cspell-tools-cli shasum -c checksum.txt",
     "conditional-build": "pnpm run --silent checksum || pnpm run build",
     "lint": "pnpm prettier -w \"**/*.{md,json}\"",
-    "gen-checksum": "cat source-files.txt source-dependencies.txt | xargs shasum > checksum.txt",
+    "gen-checksum": "cat source-files.txt source-dependencies.txt | xargs cspell-tools-cli shasum > checksum.txt",
     "test-ar": "hunspell-reader words -m 0 -n 1000 \"src/ar.dic\" | cspell -v -c ./cspell-ext.json \"--local=ar\" \"--languageId=*\" stdin",
     "test-samples": "cspell -v -c ./cspell-ext.json --local=ar,en \"samples/**\"",
     "test": "pnpm run test-ar && pnpm run test-samples",
-    "sync": "./scripts/sync.sh && pnpm lint",
+    "sync": "bash ./scripts/sync.sh && pnpm lint",
     "prepare": "gzip -f -k *.trie",
     "prepublishOnly": "pnpm run conditional-build && pnpm test"
   },

@@ -14,11 +14,11 @@
   "scripts": {
     "build": "pnpm run generate && pnpm run compile",
     "generate": "node ./src/extract.js",
-    "checksum": "shasum -c checksum.txt",
+    "checksum": "cspell-tools-cli shasum -c checksum.txt",
     "compile": "cat source-files.txt | xargs cspell-tools-cli compile --merge public-licenses -o .",
     "conditional-build": "pnpm run --silent checksum || pnpm run build && pnpm run gen-checksum",
     "test-dict": "cat source-files.txt | xargs cat | cspell -v -c ./cspell-ext.json --local=en --languageId=* stdin",
-    "gen-checksum": "cat source-files.txt source-dependencies.txt | sort -u | xargs shasum > checksum.txt",
+    "gen-checksum": "cat source-files.txt source-dependencies.txt | sort -u | xargs cspell-tools-cli shasum > checksum.txt",
     "test": "pnpm run test-dict",
     "prepublishOnly": "echo pre-publish",
     "prepare": "pnpm run build"

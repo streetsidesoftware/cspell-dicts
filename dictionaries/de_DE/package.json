@@ -12,10 +12,10 @@
   },
   "scripts": {
     "build": "cross-env NODE_OPTIONS=--max_old_space_size=12288 cspell-tools-cli build && pnpm run gen-checksum",
-    "sync": "pnpm cpy \"../../node_modules/dictionary-de/**\" src/hunspell",
-    "checksum": "shasum -c checksum.txt",
+    "sync": "pnpm cpy \"node_modules/dictionary-de/**\" src/hunspell",
+    "checksum": "cspell-tools-cli shasum -c checksum.txt",
     "conditional-build": "pnpm run --silent checksum || pnpm run build",
-    "gen-checksum": "cat source-files.txt source-dependencies.txt | xargs shasum > checksum.txt",
+    "gen-checksum": "cat source-files.txt source-dependencies.txt | xargs cspell-tools-cli shasum > checksum.txt",
     "test-de": "hunspell-reader words -n 1000 \"src/hunspell/index.dic\" | cspell -v -c ./cspell-ext.json --local=de --languageId=* stdin",
     "test-de-old": "hunspell-reader words -n 1000 \"src/German_de_DE.dic\" | cspell -v -c ./cspell-ext.json --local=de --languageId=* stdin",
     "test-samples": "cspell -v -c ./cspell-ext.json --local=de,en \"samples/**\"",
