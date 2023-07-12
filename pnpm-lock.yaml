@@ -163,7 +163,7 @@ importers:
   dictionaries/en_AU:
     devDependencies:
       '@cspell/dict-en-shared':
-        specifier: '*'
+        specifier: workspace:*
         version: link:../en_shared
       aoo-mozilla-en-dict:
         specifier: https://github.com/marcoagpinto/aoo-mozilla-en-dict
@@ -172,7 +172,7 @@ importers:
   dictionaries/en_CA:
     devDependencies:
       '@cspell/dict-en-shared':
-        specifier: '*'
+        specifier: workspace:*
         version: link:../en_shared
       aoo-mozilla-en-dict:
         specifier: https://github.com/marcoagpinto/aoo-mozilla-en-dict
@@ -181,7 +181,7 @@ importers:
   dictionaries/en_GB:
     devDependencies:
       '@cspell/dict-en-shared':
-        specifier: '*'
+        specifier: workspace:*
         version: link:../en_shared
       aoo-mozilla-en-dict:
         specifier: https://github.com/marcoagpinto/aoo-mozilla-en-dict
@@ -190,13 +190,13 @@ importers:
   dictionaries/en_GB-MIT:
     devDependencies:
       '@cspell/dict-en-shared':
-        specifier: '*'
+        specifier: workspace:*
         version: link:../en_shared
 
   dictionaries/en_US:
     devDependencies:
       '@cspell/dict-en-shared':
-        specifier: '*'
+        specifier: workspace:*
         version: link:../en_shared
       aoo-mozilla-en-dict:
         specifier: https://github.com/marcoagpinto/aoo-mozilla-en-dict
