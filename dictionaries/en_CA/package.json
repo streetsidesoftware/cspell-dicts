@@ -17,8 +17,8 @@
     "checksum": "cspell-tools-cli shasum -c checksum.txt",
     "compile": "cspell-tools-cli build && pnpm run gen-checksum",
     "conditional-build": "pnpm run sync && pnpm run --silent checksum || pnpm run build",
-    "gen-checksum": "cat source-files.txt source-dependencies.txt | sort -u | xargs cspell-tools-cli shasum > checksum.txt",
-    "prepare": "gzip -f -k *.trie",
+    "gen-checksum": "shx cat source-files.txt source-dependencies.txt | sort -u | xargs cspell-tools-cli shasum > checksum.txt",
+    "prepare": "cspell-tools-cli gzip *.trie",
     "prepublishOnly": "echo pre-publish",
     "test-text": "cspell -v -c ./cspell-ext.json --local=en-ca --languageId=* \"tests/*.txt\"",
     "test": "pnpm run test-text"

@@ -13,12 +13,12 @@
   "scripts": {
     "build": "pnpm run compile",
     "checksum": "cspell-tools-cli shasum -c checksum.txt",
-    "compile": "cat source-files.txt | xargs cspell-tools-cli compile --trie3 -x compound --merge en_GB -o . --no-compress && pnpm run gen-checksum",
+    "compile": "shx cat source-files.txt | xargs cspell-tools-cli compile --trie3 -x compound --merge en_GB -o . --no-compress && pnpm run gen-checksum",
     "conditional-build": "pnpm run --silent checksum || pnpm run build",
-    "gen-checksum": "cat source-files.txt source-dependencies.txt | sort -u | xargs cspell-tools-cli shasum > checksum.txt",
-    "prepare": "gzip -f -k *.trie",
+    "gen-checksum": "shx cat source-files.txt source-dependencies.txt | sort -u | xargs cspell-tools-cli shasum > checksum.txt",
+    "prepare": "cspell-tools-cli gzip *.trie",
     "prepublishOnly": "echo pre-publish",
-    "test-dict": "head -n 1000 \"./src/wordsEnGb.txt\" | cspell -v -c ./cspell-ext.json --local=en_gb --languageId=* stdin",
+    "test-dict": "shx head -n 1000 \"./src/wordsEnGb.txt\" | cspell -v -c ./cspell-ext.json --local=en_gb --languageId=* stdin",
     "test-text": "cspell -v -c ./cspell-ext.json --local=en_gb --languageId=* \"tests/*.txt\"",
     "test": "pnpm run test-dict && pnpm run test-text"
   },

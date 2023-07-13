@@ -14,7 +14,7 @@
     "build": "cspell-tools-cli build && pnpm run zip",
     "test": "hunspell-reader words -n 1000 \"src/bg_BG.dic\" | cspell -v -c ./cspell-ext.json \"--local=bg\" \"--languageId=*\" stdin",
     "prepare": "pnpm run zip",
-    "zip": "gzip -f -k dict/*.trie",
+    "zip": "cspell-tools-cli gzip dict/*.trie",
     "prepublishOnly": "echo pre-publish"
   },
   "repository": {

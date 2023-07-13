@@ -16,7 +16,7 @@
     "conditional-build": "pnpm run sync && pnpm run --silent checksum || pnpm run build",
     "sync": "pnpm cpy \"node_modules/basque_hunspell/eu.*\" \"src/basque_hunspell\" --flat",
     "test": "hunspell-reader words -n 1000 -m 1 \"src/eu.dic\" | cspell -v -c ./cspell-ext.json \"--local=eu\" \"--languageId=*\" stdin",
-    "gen-checksum": "cat source-dependencies.txt | sort -u | xargs cspell-tools-cli shasum > checksum.txt",
+    "gen-checksum": "shx cat source-dependencies.txt | sort -u | xargs cspell-tools-cli shasum > checksum.txt",
     "prepublishOnly": "echo OK",
     "prepare": "echo OK"
   },

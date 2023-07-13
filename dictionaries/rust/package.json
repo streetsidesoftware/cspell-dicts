@@ -12,7 +12,7 @@
   },
   "scripts": {
     "build": "cspell-tools-cli compile --keep-raw-case src/rust.txt --no-compress -o ./dict",
-    "test": "head -n 1000 src/rust.txt | cspell -v -c ./cspell-ext.json --local=* --languageId=rust stdin",
+    "test": "shx head -n 1000 src/rust.txt | cspell -v -c ./cspell-ext.json --local=* --languageId=rust stdin",
     "prepublishOnly": "echo pre-publish",
     "prepare": "pnpm run build"
   },
