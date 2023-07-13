@@ -13,7 +13,7 @@
   "scripts": {
     "build": "cspell-tools-cli compile --keep-raw-case src/ada.txt --no-compress -o ./dict",
     "test": "pnpm run test-dict && pnpm run test-samples",
-    "test-dict": "head -n 100 src/ada.txt | cspell -v -c ./cspell-ext.json --local=* --languageId=ada stdin",
+    "test-dict": "shx head -n 100 src/ada.txt | cspell -v -c ./cspell-ext.json --local=* --languageId=ada stdin",
     "test-samples": "cspell \"samples/**\"",
     "prepublishOnly": "echo pre-publish",
     "prepare": "pnpm run build"

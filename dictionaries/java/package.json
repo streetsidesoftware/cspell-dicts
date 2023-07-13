@@ -13,7 +13,7 @@
   "scripts": {
     "build": "cspell-tools-cli build",
     "test": "pnpm run test-dict && pnpm run test-check",
-    "test-dict": "head -n 100 \"src/java.txt\" | cspell -v -c ./cspell-ext.json --local=* --languageId=java stdin",
+    "test-dict": "shx head -n 100 \"src/java.txt\" | cspell -v -c ./cspell-ext.json --local=* --languageId=java stdin",
     "test-check": "ava",
     "prepublishOnly": "echo pre-publish",
     "prepare": "pnpm run build"

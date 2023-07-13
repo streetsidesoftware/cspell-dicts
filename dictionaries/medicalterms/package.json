@@ -12,7 +12,7 @@
   },
   "scripts": {
     "build": "cspell-tools compile \"./node_modules/wordlist-medicalterms-en/wordlist.txt\" -o . --merge medicalterms-en.txt",
-    "test-wordlist": "head -n 100 \"./node_modules/wordlist-medicalterms-en/wordlist.txt\" | cspell -v -c ./cspell-ext.json --local=* --languageId=* stdin",
+    "test-wordlist": "shx head -n 100 \"./node_modules/wordlist-medicalterms-en/wordlist.txt\" | cspell -v -c ./cspell-ext.json --local=* --languageId=* stdin",
     "test-samples": "cspell -v samples/**",
     "test": "pnpm run test-wordlist && pnpm run test-samples",
     "prepublishOnly": "echo pre-publish",
