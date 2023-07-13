@@ -1,5 +1,17 @@
 # Release Notes
 
+## [12.3.2](https://github.com/streetsidesoftware/cspell-dicts/compare/cspell-dicts@12.3.1...cspell-dicts@12.3.2) (2023-07-12)
+
+
+### Build System
+
+* **deps:** bump semver from 5.7.1 to 5.7.2 ([#2317](https://github.com/streetsidesoftware/cspell-dicts/issues/2317)) ([707d94e](https://github.com/streetsidesoftware/cspell-dicts/commit/707d94e1a4396c8860e0c8150bc7a2bcbee32f8b))
+
+
+### Updates and Bug Fixes
+
+* Workflow Bot -- Build Dictionaries ([#2322](https://github.com/streetsidesoftware/cspell-dicts/issues/2322)) ([5bbe69f](https://github.com/streetsidesoftware/cspell-dicts/commit/5bbe69f38a3c64f7ff5c0dafa0a164cf702e3343))
+
 ## [12.3.1](https://github.com/streetsidesoftware/cspell-dicts/compare/cspell-dicts@12.3.0...cspell-dicts@12.3.1) (2023-07-10)
 
 
