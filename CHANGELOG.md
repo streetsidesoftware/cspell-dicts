@@ -1,5 +1,19 @@
 # Release Notes
 
+## [12.4.0](https://github.com/streetsidesoftware/cspell-dicts/compare/cspell-dicts@12.3.2...cspell-dicts@12.4.0) (2023-07-14)
+
+
+### Features
+
+* Add computing-acronyms dictionary ([#2326](https://github.com/streetsidesoftware/cspell-dicts/issues/2326)) ([9757b4c](https://github.com/streetsidesoftware/cspell-dicts/commit/9757b4cb9764ade57d33f2e945bd4e8e96296642))
+
+
+### Updates and Bug Fixes
+
+* add TPDS JPDC etc. to computing-acronyms  add Supercomputing  software-terms ([#2324](https://github.com/streetsidesoftware/cspell-dicts/issues/2324)) ([11917ce](https://github.com/streetsidesoftware/cspell-dicts/commit/11917ce5ac94f2fce67eec2380e075a7e9e6c081))
+* Workflow Bot -- Build Dictionaries ([#2328](https://github.com/streetsidesoftware/cspell-dicts/issues/2328)) ([661320a](https://github.com/streetsidesoftware/cspell-dicts/commit/661320af4737f92fce4a1d73aaec177cb051a3f0))
+* Workflow Bot -- Build Dictionaries ([#2329](https://github.com/streetsidesoftware/cspell-dicts/issues/2329)) ([8309cdb](https://github.com/streetsidesoftware/cspell-dicts/commit/8309cdbcef61b92b20274dd45782c327d8cd9904))
+
 ## [12.3.2](https://github.com/streetsidesoftware/cspell-dicts/compare/cspell-dicts@12.3.1...cspell-dicts@12.3.2) (2023-07-12)
 
 
