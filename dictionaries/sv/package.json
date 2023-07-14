@@ -15,7 +15,7 @@
     "sync": "pnpm cpy \"node_modules/dictionary-sv/**\" src/hunspell",
     "checksum": "cspell-tools-cli shasum -c checksum.txt",
     "conditional-build": "pnpm run --silent checksum || pnpm run build",
-    "gen-checksum": "shx cat source-files.txt source-dependencies.txt | xargs cspell-tools-cli shasum > checksum.txt",
+    "gen-checksum": "cspell-tools-cli shasum -u checksum.txt --list-file source-files.txt source-dependencies.txt",
     "test-sv": "hunspell-reader words -n 1000 \"src/ooo-swedish-dict-2-42/dictionaries/sv_SE.dic\" | shx tail -n 200 | cspell -v -c ./cspell-ext.json --local=sv --languageId=* stdin",
     "test-samples": "cspell -v -c ./cspell-ext.json --local=sv,en \"samples/**\"",
     "test": "pnpm run test-sv && pnpm run test-samples",

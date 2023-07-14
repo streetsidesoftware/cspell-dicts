@@ -19,7 +19,7 @@
     "conditional-build": "pnpm run sync && pnpm run --silent checksum || pnpm run build",
     "test-dict": "hunspell-reader words -n 10000 \"src/index.dic\" | cspell -v -c ./cspell-ext.json --local=et --languageId=* stdin",
     "test-text": "cspell -v -c ./cspell-ext.json --local=et --languageId=* \"samples/**\"",
-    "gen-checksum": "shx cat source-files.txt source-dependencies.txt | sort -u | xargs cspell-tools-cli shasum > checksum.txt",
+    "gen-checksum": "cspell-tools-cli shasum -u checksum.txt --list-file source-files.txt source-dependencies.txt",
     "test": "pnpm run test-dict && pnpm run test-text",
     "prepare": "cspell-tools-cli gzip *.trie",
     "prepublishOnly": "echo pre-publish"

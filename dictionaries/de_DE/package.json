@@ -15,7 +15,7 @@
     "sync": "pnpm cpy \"node_modules/dictionary-de/**\" src/hunspell",
     "checksum": "cspell-tools-cli shasum -c checksum.txt",
     "conditional-build": "pnpm run --silent checksum || pnpm run build",
-    "gen-checksum": "shx cat source-files.txt source-dependencies.txt | xargs cspell-tools-cli shasum > checksum.txt",
+    "gen-checksum": "cspell-tools-cli shasum -u checksum.txt --list-file source-files.txt source-dependencies.txt",
     "test-de": "hunspell-reader words -n 1000 \"src/hunspell/index.dic\" | cspell -v -c ./cspell-ext.json --local=de --languageId=* stdin",
     "test-de-old": "hunspell-reader words -n 1000 \"src/German_de_DE.dic\" | cspell -v -c ./cspell-ext.json --local=de --languageId=* stdin",
     "test-samples": "cspell -v -c ./cspell-ext.json --local=de,en \"samples/**\"",

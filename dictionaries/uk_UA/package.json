@@ -18,7 +18,7 @@
     "checksum": "cspell-tools-cli shasum -c checksum.txt",
     "compile": "cspell-tools-cli build && pnpm run gen-checksum",
     "conditional-build": "pnpm run sync && pnpm run --silent checksum || pnpm run build",
-    "gen-checksum": "shx cat source-files.txt source-dependencies.txt | sort -u | xargs cspell-tools-cli shasum > checksum.txt",
+    "gen-checksum": "cspell-tools-cli shasum -u checksum.txt --list-file source-files.txt source-dependencies.txt",
     "test-dict": "hunspell-reader words -n 1000 \"src/hunspell/index.dic\" | cspell -v -c ./cspell-ext.json --local=uk --languageId=* stdin",
     "test-text": "cspell samples",
     "test": "pnpm run test-dict && pnpm run test-text",
