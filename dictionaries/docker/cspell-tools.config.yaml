@@ -1,0 +1,8 @@
+targets:
+  - name: docker-words
+    targetDirectory: .
+    compress: true
+    format: plaintext
+    sources:
+      - src\docker-words.txt
+    sort: true
