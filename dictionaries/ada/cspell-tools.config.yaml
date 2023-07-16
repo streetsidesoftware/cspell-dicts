@@ -1,0 +1,9 @@
+targets:
+  - name: ada
+    targetDirectory: ./dict
+    compress: false
+    format: plaintext
+    sources:
+      - src\ada.txt
+    sort: true
+keepRawCase: true
