@@ -19,7 +19,7 @@ function readWords(filename) {
         contents
             .split('\n')
             .map((s) => s.trim())
-            .filter((s) => !!s),
+            .filter((s) => !!s)
     );
 }
 
