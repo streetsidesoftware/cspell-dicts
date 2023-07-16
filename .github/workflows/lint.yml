@@ -44,4 +44,4 @@ jobs:
             cspell-cache-${{ runner.os }}-
 
       - run: pnpm i
-      - run: pnpm run lint-ci
+      - run: pnpm run lint
