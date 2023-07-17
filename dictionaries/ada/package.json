@@ -11,7 +11,7 @@
     "./cspell-ext.json": "./cspell-ext.json"
   },
   "scripts": {
-    "build": "cspell-tools-cli compile --keep-raw-case src/ada.txt --no-compress -o ./dict",
+    "build": "cspell-tools-cli build",
     "test": "pnpm run test-dict && pnpm run test-samples",
     "test-dict": "shx head -n 100 src/ada.txt | cspell -v -c ./cspell-ext.json --local=* --languageId=ada stdin",
     "test-samples": "cspell \"samples/**\"",
