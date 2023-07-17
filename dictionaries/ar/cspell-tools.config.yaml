@@ -1,3 +1,5 @@
+# yaml-language-server: $schema=https://raw.githubusercontent.com/streetsidesoftware/cspell/main/packages/cspell-tools/cspell-tools.config.schema.json
+
 targets:
   - name: ar
     targetDirectory: .
@@ -7,4 +9,4 @@ targets:
       - listFile: source-files.txt
     sort: true
     generateNonStrict: true
-    maxDepth: 5
+maxDepth: 5
