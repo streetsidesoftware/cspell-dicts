@@ -1,0 +1,9 @@
+targets:
+  - name: Dutch
+    targetDirectory: .
+    compress: false
+    format: trie3
+    sources:
+      - listFile: source-files.txt
+    sort: true
+    generateNonStrict: true
