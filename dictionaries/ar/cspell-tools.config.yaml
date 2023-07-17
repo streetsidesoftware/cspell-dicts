@@ -1,0 +1,10 @@
+targets:
+  - name: ar
+    targetDirectory: .
+    compress: false
+    format: trie3
+    sources:
+      - listFile: source-files.txt
+    sort: true
+    generateNonStrict: true
+    maxDepth: 5
