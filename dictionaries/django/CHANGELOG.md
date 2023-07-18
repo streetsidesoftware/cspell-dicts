@@ -22,6 +22,19 @@ See [Conventional Commits](https://conventionalcommits.org) for commit guideline
 
 
 
+## [4.1.0](https://github.com/streetsidesoftware/cspell-dicts/compare/@cspell/dict-django@4.0.2...@cspell/dict-django@4.1.0) (2023-07-04)
+
+
+### Features
+
+* Update Django dictionary with version 4.2 ([#2298](https://github.com/streetsidesoftware/cspell-dicts/issues/2298)) ([4c17d37](https://github.com/streetsidesoftware/cspell-dicts/commit/4c17d37beadf9949fa74bbc17a50501321f2edb1))
+
+
+### Updates and Bug Fixes
+
+* Workflow Bot -- Build Dictionaries ([#2300](https://github.com/streetsidesoftware/cspell-dicts/issues/2300)) ([9f6393c](https://github.com/streetsidesoftware/cspell-dicts/commit/9f6393ccd04736f3bbf371e377bff09f6328fa40))
+* Workflow Bot -- Build Dictionaries ([#2301](https://github.com/streetsidesoftware/cspell-dicts/issues/2301)) ([434c681](https://github.com/streetsidesoftware/cspell-dicts/commit/434c6812fb4f42249db49b8bda0da1afc88a35ec))
+
 ## [4.0.2](https://github.com/streetsidesoftware/cspell-dicts/compare/@cspell/dict-django@4.0.1...@cspell/dict-django@4.0.2) (2023-02-22)
 
 

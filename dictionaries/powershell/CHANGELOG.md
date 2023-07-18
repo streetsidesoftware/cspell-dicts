@@ -27,6 +27,14 @@ See [Conventional Commits](https://conventionalcommits.org) for commit guideline
 
 
 
+## [5.0.2](https://github.com/streetsidesoftware/cspell-dicts/compare/@cspell/dict-powershell@5.0.1...@cspell/dict-powershell@5.0.2) (2023-07-03)
+
+
+### Updates and Bug Fixes
+
+* Add `notcontains` to PowerShell dictionary ([#2272](https://github.com/streetsidesoftware/cspell-dicts/issues/2272)) ([74aec44](https://github.com/streetsidesoftware/cspell-dicts/commit/74aec4431396c353dcf4cf54ef90486d8f74c706))
+* Workflow Bot -- Build Dictionaries ([#2282](https://github.com/streetsidesoftware/cspell-dicts/issues/2282)) ([793e6be](https://github.com/streetsidesoftware/cspell-dicts/commit/793e6bea7a986fbb18cdbf928b11c1006ead1565))
+
 ## [5.0.1](https://github.com/streetsidesoftware/cspell-dicts/compare/@cspell/dict-powershell@5.0.0...@cspell/dict-powershell@5.0.1) (2023-03-17)
 
 

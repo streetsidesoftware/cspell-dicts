@@ -1,6 +1,6 @@
 {
   "name": "@cspell/dict-python",
-  "version": "4.1.1",
+  "version": "4.1.2",
   "description": "Python dictionary for cspell.",
   "publishConfig": {
     "access": "public"
@@ -11,13 +11,13 @@
     "./cspell-ext.json": "./cspell-ext.json"
   },
   "scripts": {
-    "build": "yarn cspell-tools-cli build",
+    "build": "pnpm cspell-tools-cli build",
     "test-dictionary": "cspell -v -c ./cspell-ext.json --local=en --languageId=python \"src/python/py*.txt\"",
     "test-samples": "cspell -v -c ./cspell-ext.json \"samples/**/*.py\"",
-    "test": "yarn run test-dictionary && yarn run test-samples",
+    "test": "pnpm run test-dictionary && pnpm run test-samples",
     "update-python-lib": "./scripts/fetch-python.sh",
     "prepublishOnly": "echo pre-publish",
-    "prepare": "yarn run build"
+    "prepare": "pnpm run build"
   },
   "repository": {
     "type": "git",

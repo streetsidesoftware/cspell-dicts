@@ -1,6 +1,6 @@
 {
   "name": "@cspell/dict-bg-bg",
-  "version": "3.0.1",
+  "version": "3.0.2",
   "description": "Bulgarian dictionary for cspell.",
   "publishConfig": {
     "access": "public"
@@ -11,10 +11,10 @@
     "./cspell-ext.json": "./cspell-ext.json"
   },
   "scripts": {
-    "build": "cspell-tools-cli build && yarn run zip",
+    "build": "cspell-tools-cli build && pnpm run zip",
     "test": "hunspell-reader words -n 1000 \"src/bg_BG.dic\" | cspell -v -c ./cspell-ext.json \"--local=bg\" \"--languageId=*\" stdin",
-    "prepare": "yarn run zip",
-    "zip": "gzip -f -k dict/*.trie",
+    "prepare": "pnpm run zip",
+    "zip": "cspell-tools-cli gzip dict/*.trie",
     "prepublishOnly": "echo pre-publish"
   },
   "repository": {

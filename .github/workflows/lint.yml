@@ -29,9 +29,9 @@ jobs:
     runs-on: ubuntu-latest
     steps:
       - uses: actions/checkout@v3
-      - uses: actions/setup-node@v3
-        with:
-          cache: yarn
+
+      - name: Setup
+        uses: ./.github/actions/setup
 
       - name: Restore CSpell cache
         uses: actions/cache@v3
@@ -43,5 +43,5 @@ jobs:
             cspell-cache-${{ runner.os }}-lint-
             cspell-cache-${{ runner.os }}-
 
-      - run: yarn
-      - run: yarn run lint-ci
+      - run: pnpm i
+      - run: pnpm run lint

@@ -1,6 +1,6 @@
 {
   "name": "@cspell/dict-en-gb-mit",
-  "version": "2.1.8",
+  "version": "2.1.9",
   "description": "British English dictionary for cspell with MIT License.",
   "publishConfig": {
     "access": "public"
@@ -11,16 +11,16 @@
     "./cspell-ext.json": "./cspell-ext.json"
   },
   "scripts": {
-    "build": "yarn run compile",
-    "checksum": "shasum -c checksum.txt",
-    "compile": "cat source-files.txt | xargs cspell-tools-cli compile --trie3 -x compound --merge en_GB -o . --no-compress && yarn run gen-checksum",
-    "conditional-build": "yarn run --silent checksum || yarn run build",
-    "gen-checksum": "cat source-files.txt source-dependencies.txt | sort -u | xargs shasum > checksum.txt",
-    "prepare": "gzip -f -k *.trie",
+    "build": "pnpm run compile",
+    "checksum": "cspell-tools-cli shasum -c checksum.txt",
+    "compile": "cspell-tools-cli build && pnpm run gen-checksum",
+    "conditional-build": "pnpm run --silent checksum || pnpm run build",
+    "gen-checksum": "cspell-tools-cli shasum -u checksum.txt --list-file source-files.txt source-dependencies.txt",
+    "prepare": "cspell-tools-cli gzip *.trie",
     "prepublishOnly": "echo pre-publish",
-    "test-dict": "head -n 1000 \"./src/wordsEnGb.txt\" | cspell -v -c ./cspell-ext.json --local=en_gb --languageId=* stdin",
+    "test-dict": "shx head -n 1000 \"./src/wordsEnGb.txt\" | cspell -v -c ./cspell-ext.json --local=en_gb --languageId=* stdin",
     "test-text": "cspell -v -c ./cspell-ext.json --local=en_gb --languageId=* \"tests/*.txt\"",
-    "test": "yarn run test-dict && yarn run test-text"
+    "test": "pnpm run test-dict && pnpm run test-text"
   },
   "repository": {
     "type": "git",
@@ -47,6 +47,6 @@
     "test": "tests"
   },
   "devDependencies": {
-    "@cspell/dict-en-shared": "*"
+    "@cspell/dict-en-shared": "workspace:*"
   }
 }
