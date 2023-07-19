@@ -1,5 +1,35 @@
 # Release Notes
 
+## [13.0.0](https://github.com/streetsidesoftware/cspell-dicts/compare/cspell-dicts@12.4.0...cspell-dicts@13.0.0) (2023-07-19)
+
+
+### ⚠ BREAKING CHANGES
+
+* Update Scientific Terms ([#2346](https://github.com/streetsidesoftware/cspell-dicts/issues/2346))
+* Rebuild Polish and Update License ([#2340](https://github.com/streetsidesoftware/cspell-dicts/issues/2340))
+* Update Greek Dictionary and License to GPL ([#2339](https://github.com/streetsidesoftware/cspell-dicts/issues/2339))
+* Update Greek ([#2338](https://github.com/streetsidesoftware/cspell-dicts/issues/2338))
+* Upgrade PL Dict ([#2276](https://github.com/streetsidesoftware/cspell-dicts/issues/2276))
+
+### Features
+
+* Rebuild dictionaries ([#2345](https://github.com/streetsidesoftware/cspell-dicts/issues/2345)) ([a42db50](https://github.com/streetsidesoftware/cspell-dicts/commit/a42db50300924afe6a44049f4d26a86c5a09457a))
+* Rebuild Polish and Update License ([#2340](https://github.com/streetsidesoftware/cspell-dicts/issues/2340)) ([c7ec0ff](https://github.com/streetsidesoftware/cspell-dicts/commit/c7ec0ff54c25b3acb69fd7ba5ab8740ac2433f3a))
+* Update Greek ([#2338](https://github.com/streetsidesoftware/cspell-dicts/issues/2338)) ([e8dfd64](https://github.com/streetsidesoftware/cspell-dicts/commit/e8dfd644ffb49db8b8850ffdd8c3fa62c5a09ff2))
+* Update Greek Dictionary and License to GPL ([#2339](https://github.com/streetsidesoftware/cspell-dicts/issues/2339)) ([4ebd3b5](https://github.com/streetsidesoftware/cspell-dicts/commit/4ebd3b5a7184768e51c32d9c697065e08b380c88))
+* Update Scientific Terms ([#2346](https://github.com/streetsidesoftware/cspell-dicts/issues/2346)) ([ee8ac58](https://github.com/streetsidesoftware/cspell-dicts/commit/ee8ac5825e777892b7d6c703a4d3995f6e44b456))
+* Upgrade PL Dict ([#2276](https://github.com/streetsidesoftware/cspell-dicts/issues/2276)) ([b3091c9](https://github.com/streetsidesoftware/cspell-dicts/commit/b3091c9ad0b1bfd9337845351a24bfdbf2b73aa2))
+
+
+### Updates and Bug Fixes
+
+* add eigen to data-science-terms ([#2336](https://github.com/streetsidesoftware/cspell-dicts/issues/2336)) ([dd3cc87](https://github.com/streetsidesoftware/cspell-dicts/commit/dd3cc87c578448fa029fe6792f309c1a8b8a32b9))
+* rebuild Estonian ([#2337](https://github.com/streetsidesoftware/cspell-dicts/issues/2337)) ([d27cb70](https://github.com/streetsidesoftware/cspell-dicts/commit/d27cb70927043e51c964edd85e21589d876add68))
+* Support adding Greek words ([#2342](https://github.com/streetsidesoftware/cspell-dicts/issues/2342)) ([0f3bc2f](https://github.com/streetsidesoftware/cspell-dicts/commit/0f3bc2fed89f6c9d5699613f0c66d72af17f9d7a))
+* Update dictionary build script and re-build ([#2334](https://github.com/streetsidesoftware/cspell-dicts/issues/2334)) ([0847cfc](https://github.com/streetsidesoftware/cspell-dicts/commit/0847cfc9623018940e7761e08eeba0ec7c0a320e))
+* Workflow Bot -- Build Dictionaries ([#2341](https://github.com/streetsidesoftware/cspell-dicts/issues/2341)) ([8674cbd](https://github.com/streetsidesoftware/cspell-dicts/commit/8674cbde219129fcc734504381ca7ffe209c934b))
+* Workflow Bot -- Build Dictionaries ([#2344](https://github.com/streetsidesoftware/cspell-dicts/issues/2344)) ([5e74866](https://github.com/streetsidesoftware/cspell-dicts/commit/5e74866be0354bab2894d961ffffc61ac1b167f0))
+
 ## [12.4.0](https://github.com/streetsidesoftware/cspell-dicts/compare/cspell-dicts@12.3.2...cspell-dicts@12.4.0) (2023-07-14)
 
 

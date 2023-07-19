@@ -22,6 +22,17 @@ See [Conventional Commits](https://conventionalcommits.org) for commit guideline
 
 
 
+## [3.0.0](https://github.com/streetsidesoftware/cspell-dicts/compare/@cspell/dict-scientific-terms-us@2.0.0...@cspell/dict-scientific-terms-us@3.0.0) (2023-07-19)
+
+
+### ⚠ BREAKING CHANGES
+
+* Update Scientific Terms ([#2346](https://github.com/streetsidesoftware/cspell-dicts/issues/2346))
+
+### Features
+
+* Update Scientific Terms ([#2346](https://github.com/streetsidesoftware/cspell-dicts/issues/2346)) ([ee8ac58](https://github.com/streetsidesoftware/cspell-dicts/commit/ee8ac5825e777892b7d6c703a4d3995f6e44b456))
+
 ## [1.0.21](https://github.com/streetsidesoftware/cspell-dicts/compare/@cspell/dict-scientific-terms-us@1.0.20...@cspell/dict-scientific-terms-us@1.0.21) (2020-11-28)
 
 **Note:** Version bump only for package @cspell/dict-scientific-terms-us
