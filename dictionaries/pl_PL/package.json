@@ -11,7 +11,7 @@
     "./cspell-ext.json": "./cspell-ext.json"
   },
   "scripts": {
-    "build": "cross-env NODE_OPTIONS=--max_old_space_size=12288 cspell-tools compile-trie \"pl_pl.dic\" -o .",
+    "build": "cross-env NODE_OPTIONS=--max_old_space_size=12288 cspell-tools-cli compile --trie3 -x compound \"pl_pl.dic\" -o .",
     "test": "hunspell-reader words -n 1000 \"pl_pl.dic\" | cspell -v -c ./cspell-ext.json --local=pl --languageId=* stdin",
     "prepublishOnly": "echo pre-publish"
   },
