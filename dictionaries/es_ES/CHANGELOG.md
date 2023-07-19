@@ -30,6 +30,13 @@ See [Conventional Commits](https://conventionalcommits.org) for commit guideline
 
 
 
+## [2.2.6](https://github.com/streetsidesoftware/cspell-dicts/compare/@cspell/dict-es-es@2.2.5...@cspell/dict-es-es@2.2.6) (2023-07-19)
+
+
+### Updates and Bug Fixes
+
+* Update dictionary build script and re-build ([#2334](https://github.com/streetsidesoftware/cspell-dicts/issues/2334)) ([0847cfc](https://github.com/streetsidesoftware/cspell-dicts/commit/0847cfc9623018940e7761e08eeba0ec7c0a320e))
+
 ## [2.2.5](https://github.com/streetsidesoftware/cspell-dicts/compare/@cspell/dict-es-es@2.2.4...@cspell/dict-es-es@2.2.5) (2023-04-15)
 
 

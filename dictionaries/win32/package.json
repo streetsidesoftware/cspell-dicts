@@ -12,11 +12,11 @@
   },
   "scripts": {
     "build": "cross-env NODE_OPTIONS=--max_old_space_size=8192 cspell-tools-cli compile --keep-raw-case \"src/win32.txt\" -o .",
-    "test": "yarn run test-src && yarn run test-samples",
-    "test-src": "head -n 10000 \"src/win32.txt\" | cspell -v -c ./cspell.json \"--local=*\" stdin",
+    "test": "pnpm run test-src && pnpm run test-samples",
+    "test-src": "shx head -n 10000 \"src/win32.txt\" | cspell -v -c ./cspell.json \"--local=*\" stdin",
     "test-samples": "cspell samples/**",
     "prepublishOnly": "echo pre-publish",
-    "prepare": "yarn run build"
+    "prepare": "pnpm run build"
   },
   "repository": {
     "type": "git",

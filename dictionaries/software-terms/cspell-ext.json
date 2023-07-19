@@ -23,11 +23,17 @@
             "name": "web-services",
             "path": "./dict/webServices.txt",
             "description": "Web Services and APIs dictionary for cspell."
+        },
+        {
+            "name": "computing-acronyms",
+            "path": "./dict/computing-acronyms.txt",
+            "description": "Common acronyms related to computing."
         }
     ],
     // Enable `softwareTerms` by default if this extension is imported.
     "dictionaries": [
-        "softwareTerms"
+        "softwareTerms",
+        "computing-acronyms"
         // "networking-terms" - is not included by default because it is very specific.
         // "web-services" - is not included by default
     ]

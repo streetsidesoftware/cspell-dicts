@@ -13,7 +13,7 @@ JQ_FILTER="$SCRIPT_DIR/dictionary.jq"
 HEADER="\
 ## All Dictionaries
 
-<!--- Use \`yarn build:readme\` to generate this table --->
+<!--- Use \`pnpm build:readme\` to generate this table --->
 
 | package | dictionary ID | name | description |
 | --- | --- | --- | --- | \

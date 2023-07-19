@@ -1,6 +1,6 @@
 {
   "name": "@cspell/dict-sl-si",
-  "version": "1.0.3",
+  "version": "1.0.4",
   "description": "Slovenian dictionary for cspell.",
   "publishConfig": {
     "access": "public"
@@ -11,16 +11,17 @@
     "./cspell-ext.json": "./cspell-ext.json"
   },
   "scripts": {
-    "build": "yarn run compile",
-    "checksum": "shasum -c checksum.txt",
-    "compile": "cat source-files.txt | xargs cspell-tools-cli compile --trie3 -x compound --merge sl_si -o . --no-compress && yarn run gen-checksum",
-    "conditional-build": "yarn run --silent checksum || yarn run build",
-    "gen-checksum": "cat source-files.txt source-dependencies.txt | sort -u | xargs shasum > checksum.txt",
-    "prepare": "gzip -f -k *.trie",
+    "build": "pnpm run compile",
+    "checksum": "cspell-tools-cli shasum -c checksum.txt",
+    "compile": "cspell-tools-cli build && pnpm run gen-checksum",
+    "compile:old": "cspell-tools-cli compile --trie3 -x compound --merge sl_si -o . --no-compress --list-file source-files.txt && pnpm run gen-checksum",
+    "conditional-build": "pnpm run --silent checksum || pnpm run build",
+    "gen-checksum": "cspell-tools-cli shasum -u checksum.txt --list-file source-files.txt source-dependencies.txt",
+    "prepare": "cspell-tools-cli gzip *.trie",
     "prepublishOnly": "echo pre-publish",
     "test-dict": "hunspell-reader words -n 1000 \"./src/hunspell-french-dictionaries-v7.0/fr-classique.dic\" | cspell -v -c ./cspell-ext.json \"--local=fr\" \"--languageId=*\" stdin",
     "test-text": "cspell -v -c ./cspell-ext.json --local=sl \"samples/**\"",
-    "test": "yarn run test-dict && yarn run test-text"
+    "test": "pnpm run test-dict && pnpm run test-text"
   },
   "repository": {
     "type": "git",

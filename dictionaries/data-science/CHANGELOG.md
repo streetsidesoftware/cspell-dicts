@@ -1,5 +1,39 @@
 # Change Log
 
+## [1.0.8](https://github.com/streetsidesoftware/cspell-dicts/compare/@cspell/dict-data-science@1.0.7...@cspell/dict-data-science@1.0.8) (2023-07-19)
+
+
+### Updates and Bug Fixes
+
+* add eigen to data-science-terms ([#2336](https://github.com/streetsidesoftware/cspell-dicts/issues/2336)) ([dd3cc87](https://github.com/streetsidesoftware/cspell-dicts/commit/dd3cc87c578448fa029fe6792f309c1a8b8a32b9))
+* Workflow Bot -- Build Dictionaries ([#2341](https://github.com/streetsidesoftware/cspell-dicts/issues/2341)) ([8674cbd](https://github.com/streetsidesoftware/cspell-dicts/commit/8674cbde219129fcc734504381ca7ffe209c934b))
+
+## [1.0.7](https://github.com/streetsidesoftware/cspell-dicts/compare/@cspell/dict-data-science@1.0.6...@cspell/dict-data-science@1.0.7) (2023-07-10)
+
+
+### Updates and Bug Fixes
+
+* add Dataloaders convolutionally MoElayer WAIC to data-science-terms ([#2308](https://github.com/streetsidesoftware/cspell-dicts/issues/2308)) ([d00ca7c](https://github.com/streetsidesoftware/cspell-dicts/commit/d00ca7c05bb8beea345cd6acfc430bad62e7520f))
+* Workflow Bot -- Build Dictionaries ([#2306](https://github.com/streetsidesoftware/cspell-dicts/issues/2306)) ([a3a26ff](https://github.com/streetsidesoftware/cspell-dicts/commit/a3a26ffd42efbcf0f00207193d7541fc4ca503f8))
+* Workflow Bot -- Build Dictionaries ([#2314](https://github.com/streetsidesoftware/cspell-dicts/issues/2314)) ([0b59fb7](https://github.com/streetsidesoftware/cspell-dicts/commit/0b59fb79cb74f5b6f10468df0908eada4d5696b3))
+
+## [1.0.6](https://github.com/streetsidesoftware/cspell-dicts/compare/@cspell/dict-data-science@1.0.5...@cspell/dict-data-science@1.0.6) (2023-07-04)
+
+
+### Updates and Bug Fixes
+
+* add Widenet SISD MISD etc. to data-science-terms ([#2289](https://github.com/streetsidesoftware/cspell-dicts/issues/2289)) ([8028b0a](https://github.com/streetsidesoftware/cspell-dicts/commit/8028b0aea1736fadd3a6e2ba004dad3217a6de9f))
+* Workflow Bot -- Build Dictionaries ([#2293](https://github.com/streetsidesoftware/cspell-dicts/issues/2293)) ([d653cee](https://github.com/streetsidesoftware/cspell-dicts/commit/d653cee9d8e2d7f59294157f95121adaaf164522))
+
+## [1.0.5](https://github.com/streetsidesoftware/cspell-dicts/compare/@cspell/dict-data-science@1.0.4...@cspell/dict-data-science@1.0.5) (2023-07-03)
+
+
+### Updates and Bug Fixes
+
+* add ICCC ISEA to companies.txt add xlarge microbatch leaderboard to data-science-terms.txt ([#2270](https://github.com/streetsidesoftware/cspell-dicts/issues/2270)) ([16f692b](https://github.com/streetsidesoftware/cspell-dicts/commit/16f692b4656b7a8d36422eb9f0461f4e52c7ad7e))
+* Workflow Bot -- Build Dictionaries ([#2286](https://github.com/streetsidesoftware/cspell-dicts/issues/2286)) ([86c1920](https://github.com/streetsidesoftware/cspell-dicts/commit/86c1920da481290a927d2ec10f689d4399fe1096))
+* Workflow Bot -- Build Dictionaries ([#2288](https://github.com/streetsidesoftware/cspell-dicts/issues/2288)) ([c99970e](https://github.com/streetsidesoftware/cspell-dicts/commit/c99970ef7666bcf9fb16dd507f53a260d0ac7723))
+
 ## [1.0.4](https://github.com/streetsidesoftware/cspell-dicts/compare/@cspell/dict-data-science@1.0.3...@cspell/dict-data-science@1.0.4) (2023-06-26)
 
 

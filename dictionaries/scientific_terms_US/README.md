@@ -47,4 +47,4 @@ MIT
 
 > Some packages may have other licenses included.
 
-[//]: # 'cspell:ignore Petrie’s'
+<!--- cspell:ignore Petrie’s --->

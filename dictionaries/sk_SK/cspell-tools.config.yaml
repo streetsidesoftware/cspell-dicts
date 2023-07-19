@@ -4,6 +4,7 @@ targets:
   - name: Slovak
     sources:
       - src/Slovak.dic
+      - src/additional_words.txt
     format: trie3
     targetDirectory: "."
     generateNonStrict: true

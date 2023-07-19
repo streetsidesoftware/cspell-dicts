@@ -25,3 +25,11 @@ targets:
     targetDirectory: "./dict"
     generateNonStrict: false
     compress: false
+  - name: "computing-acronyms"
+    sources:
+      - filename: src/computing-acronyms.txt
+        split: true
+    format: plaintext
+    targetDirectory: "./dict"
+    generateNonStrict: false
+    compress: false
