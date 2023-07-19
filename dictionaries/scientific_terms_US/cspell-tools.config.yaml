@@ -1,0 +1,10 @@
+# yaml-language-server: $schema=https://raw.githubusercontent.com/streetsidesoftware/cspell/main/packages/cspell-tools/cspell-tools.config.schema.json
+
+targets:
+  - name: custom_scientific_US
+    targetDirectory: .
+    compress: false
+    format: trie3
+    sources:
+      - src/custom_scientific_US.dic.txt
+      - src/additional_words.txt
