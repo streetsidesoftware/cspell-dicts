@@ -1,5 +1,13 @@
 # Change Log
 
+## [1.0.8](https://github.com/streetsidesoftware/cspell-dicts/compare/@cspell/dict-data-science@1.0.7...@cspell/dict-data-science@1.0.8) (2023-07-19)
+
+
+### Updates and Bug Fixes
+
+* add eigen to data-science-terms ([#2336](https://github.com/streetsidesoftware/cspell-dicts/issues/2336)) ([dd3cc87](https://github.com/streetsidesoftware/cspell-dicts/commit/dd3cc87c578448fa029fe6792f309c1a8b8a32b9))
+* Workflow Bot -- Build Dictionaries ([#2341](https://github.com/streetsidesoftware/cspell-dicts/issues/2341)) ([8674cbd](https://github.com/streetsidesoftware/cspell-dicts/commit/8674cbde219129fcc734504381ca7ffe209c934b))
+
 ## [1.0.7](https://github.com/streetsidesoftware/cspell-dicts/compare/@cspell/dict-data-science@1.0.6...@cspell/dict-data-science@1.0.7) (2023-07-10)
 
 
