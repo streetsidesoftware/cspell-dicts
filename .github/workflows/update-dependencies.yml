@@ -6,7 +6,7 @@ on:
       - main
     paths:
       - "**/package.json"
-      - "**/yarn.lock"
+      - "**/pnpm-lock.yaml"
       - "scripts/**"
   workflow_dispatch:
   schedule:
@@ -28,22 +28,16 @@ jobs:
         with:
           ref: ${{ env.REF_BRANCH }}
 
-      - uses: actions/setup-node@v3
-        with:
-          cache: yarn
+      - name: Setup
+        uses: ./.github/actions/setup
 
       - name: Update
         run: |
-          yarn
-          yarn upgrade
-
-      - name: update package.json
-        run: |
-          npx package-json-dependency-updater -u
+          pnpm up
 
       - name: Install
         run: |
-          yarn
+          pnpm i
 
       # Catch any new dictionaries and add them to the config.
       - name: Update Release-Please packages
@@ -51,7 +45,7 @@ jobs:
 
       - name: Lint
         run: |
-          yarn lint
+          pnpm lint
       - name: Has changes
         run: |
           git --no-pager diff --compact-summary  --exit-code && echo "git_status=clean" >> $GITHUB_ENV || echo "git_status=dirty" >> $GITHUB_ENV

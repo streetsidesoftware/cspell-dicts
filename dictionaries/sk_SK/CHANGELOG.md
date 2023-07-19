@@ -3,6 +3,13 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+## [1.1.0](https://github.com/streetsidesoftware/cspell-dicts/compare/@cspell/dict-sk-sk@1.0.1...@cspell/dict-sk-sk@1.1.0) (2023-07-19)
+
+
+### Features
+
+* Rebuild dictionaries ([#2345](https://github.com/streetsidesoftware/cspell-dicts/issues/2345)) ([a42db50](https://github.com/streetsidesoftware/cspell-dicts/commit/a42db50300924afe6a44049f4d26a86c5a09457a))
+
 ## [1.0.1](https://github.com/streetsidesoftware/cspell-dicts/compare/@cspell/dict-sk-sk@1.0.0...@cspell/dict-sk-sk@1.0.1) (2023-02-06)
 
 

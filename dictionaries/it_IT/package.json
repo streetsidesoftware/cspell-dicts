@@ -11,14 +11,14 @@
     "./cspell-ext.json": "./cspell-ext.json"
   },
   "scripts": {
-    "build": "cross-env NODE_OPTIONS=--max_old_space_size=8192 cspell-tools-cli build && yarn gen-checksum",
-    "sync": "yarn cpy \"../../node_modules/dictionary-it/**\" src/hunspell",
-    "checksum": "shasum -c checksum.txt",
-    "conditional-build": "yarn run --silent checksum || yarn run build",
-    "gen-checksum": "cat source-files.txt source-dependencies.txt | xargs shasum > checksum.txt",
+    "build": "cross-env NODE_OPTIONS=--max_old_space_size=8192 cspell-tools-cli build && pnpm gen-checksum",
+    "sync": "pnpm cpy \"node_modules/dictionary-it/**\" src/hunspell",
+    "checksum": "cspell-tools-cli shasum -c checksum.txt",
+    "conditional-build": "pnpm run --silent checksum || pnpm run build",
+    "gen-checksum": "cspell-tools-cli shasum -u checksum.txt --list-file source-files.txt source-dependencies.txt",
     "test-samples": "cspell -v -c ./cspell-ext.json --local=it,en \"samples/**\"",
     "test-dict": "hunspell-reader words -n 1000 \"src/hunspell/index.dic\" | cspell -v -c ./cspell-ext.json \"--local=it,it-IT\" \"--languageId=*\" stdin",
-    "test": "yarn run test-samples && yarn run test-dict",
+    "test": "pnpm run test-samples && pnpm run test-dict",
     "prepublishOnly": "echo pre-publish"
   },
   "repository": {

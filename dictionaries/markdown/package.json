@@ -12,11 +12,11 @@
   },
   "scripts": {
     "build": "cross-env NODE_OPTIONS=--max_old_space_size=8192 cspell-tools-cli compile \"src/markdown.txt\" -o .",
-    "test": "yarn run test-dict && yarn run test-check",
-    "test-dict": "head -n 1000 \"src/markdown.txt\" | cspell -v -c ./cspell-ext.json \"--local=*\" \"--languageId=markdown\" stdin",
+    "test": "pnpm run test-dict && pnpm run test-check",
+    "test-dict": "shx head -n 1000 \"src/markdown.txt\" | cspell -v -c ./cspell-ext.json \"--local=*\" \"--languageId=markdown\" stdin",
     "test-check": "ava",
     "prepublishOnly": "echo pre-publish",
-    "prepare": "yarn run build"
+    "prepare": "pnpm run build"
   },
   "repository": {
     "type": "git",

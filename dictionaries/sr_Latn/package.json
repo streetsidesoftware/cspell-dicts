@@ -1,6 +1,6 @@
 {
   "name": "@cspell/dict-sr-latn",
-  "version": "1.0.1",
+  "version": "1.0.2",
   "description": "Serbian (Latin) dictionary for cspell.",
   "publishConfig": {
     "access": "public"
@@ -11,11 +11,12 @@
     "./cspell-ext.json": "./cspell-ext.json"
   },
   "scripts": {
-    "build": "yarn run compile",
-    "checksum": "shasum -c checksum.txt",
-    "compile": "cat source-files.txt | xargs cspell-tools-cli compile --trie3 -x compound --merge sr-latn -o dict --no-compress && yarn run gen-checksum",
-    "conditional-build": "yarn run --silent checksum || yarn run build",
-    "gen-checksum": "cat source-files.txt source-dependencies.txt | sort -u | xargs shasum > checksum.txt",
+    "build": "pnpm run compile",
+    "checksum": "cspell-tools-cli shasum -c checksum.txt",
+    "compile": "cspell-tools-cli build && pnpm run gen-checksum",
+    "compile:old": "cspell-tools-cli compile --trie3 -x compound --merge sr-latn -o dict --no-compress --list-file source-files.txt && pnpm run gen-checksum",
+    "conditional-build": "pnpm run --silent checksum || pnpm run build",
+    "gen-checksum": "cspell-tools-cli shasum -u checksum.txt --list-file source-files.txt source-dependencies.txt",
     "prepublishOnly": "echo pre-publish",
     "test": "cspell -v -c ./cspell-ext.json --local=sr-Latn \"samples/**\""
   },

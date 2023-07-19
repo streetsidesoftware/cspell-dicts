@@ -57,5 +57,5 @@ Building is only necessary if you want to modify the contents of the dictionary.
 Note: Building the Russian dictionary takes at least 30 minutes.
 
 ```sh
-yarn run build
+pnpm run build
 ```

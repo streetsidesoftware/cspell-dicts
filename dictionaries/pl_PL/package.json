@@ -1,6 +1,6 @@
 {
   "name": "@cspell/dict-pl_pl",
-  "version": "2.0.1",
+  "version": "3.0.0",
   "description": "Polish dictionary for cspell.",
   "publishConfig": {
     "access": "public"
@@ -11,8 +11,11 @@
     "./cspell-ext.json": "./cspell-ext.json"
   },
   "scripts": {
-    "build": "cross-env NODE_OPTIONS=--max_old_space_size=12288 cspell-tools compile-trie \"pl_pl.dic\" -o .",
-    "test": "hunspell-reader words -n 1000 \"pl_pl.dic\" | cspell -v -c ./cspell-ext.json --local=pl --languageId=* stdin",
+    "build:old": "cross-env NODE_OPTIONS=--max_old_space_size=12288 cspell-tools-cli compile --trie3 -x compound \"src/hunspell/pl_pl.dic\" -o .",
+    "build": "cspell-tools-cli build && pnpm gz",
+    "test": "cspell samples",
+    "gz": "cspell-tools-cli gzip *.trie",
+    "prepare": "pnpm gz",
     "prepublishOnly": "echo pre-publish"
   },
   "repository": {
@@ -27,14 +30,14 @@
     "spelling"
   ],
   "author": "Jason Dent",
-  "license": "MIT",
+  "license": "LGPL-3.0+",
   "bugs": {
     "url": "https://github.com/streetsidesoftware/cspell-dicts/issues"
   },
   "homepage": "https://github.com/streetsidesoftware/cspell-dicts/blob/main/dictionaries/pl_PL#readme",
   "files": [
     "pl_pl.trie.gz",
-    "Polish.txt",
+    "src/hunspell/license",
     "cspell-ext.json"
   ]
 }

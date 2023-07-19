@@ -1,69 +1,64 @@
 {
   "name": "cspell-dicts",
-  "version": "12.2.3",
+  "version": "13.0.0",
   "private": true,
+  "packageManager": "pnpm@8.6.1",
   "scripts": {
-    "test": "lerna run test",
-    "lint": "yarn run lint:fix && cspell",
+    "test": "pnpm -r run --stream test",
+    "lint": "pnpm run lint:fix && cspell",
     "lint-ci": "eslint . && prettier -c \"**/*.{md,json,yml,yaml}\" && cspell",
     "lint:fix": "eslint --fix . && prettier -w \"**/*.{md,json,yml,yaml}\"",
-    "build:all": "lerna run --concurrency 2 --stream build --no-bail",
-    "build:readme": "yarn run readme:generate-doc-dictionaries && yarn run readme:inject",
-    "lint:fix:sort-source-files": "./scripts/sort-source.mjs -c sort-source.config.json",
-    "conditional-build": "lerna run --concurrency 2 --stream conditional-build --no-bail",
+    "build:all": "pnpm -r run --stream --workspace-concurrency 2 build --no-bail",
+    "build:readme": "pnpm run readme:generate-doc-dictionaries && pnpm run readme:inject",
+    "lint:fix:sort-source-files": "node ./scripts/sort-source.mjs -c sort-source.config.json",
+    "conditional-build": "pnpm -r run --workspace-concurrency 2 --stream conditional-build --no-bail",
     "check-dirty": "git --no-pager diff --compact-summary --exit-code",
     "check-spelling": "cspell",
-    "checksum": "lerna run checksum",
+    "checksum": "pnpm -r run checksum",
     "create-dictionary": "node ./generator-cspell-dicts/node_modules/yo/lib/cli.js cspell-dicts",
     "clean": "shx rm -rf \"packages/*/*.txt.gz\" \"dictionaries/*/*.txt.gz\"",
     "readme:generate-doc-dictionaries": "./scripts/dictionaries.sh > dictionaries.md",
     "readme:inject": "inject-markdown \"*.md\" \"dictionaries/*/README.md\" && prettier -w \"*.md\" \"dictionaries/*/README.md\"",
-    "prepare": "lerna run prepare",
+    "prepare": "echo OK",
     "pub-recover": "lerna publish from-package --no-push --no-private --concurrency 1",
-    "update-packages": "yarn upgrade"
+    "update-packages": "pnpm up",
+    "preinstall": "npx only-allow pnpm"
   },
   "repository": {
     "type": "git",
     "url": "https://github.com/streetsidesoftware/cspell-dicts.git"
   },
-  "workspaces": {
-    "packages": [
-      "cspell-dict-file-checker",
-      "dictionaries/*",
-      "generator-cspell-dicts"
-    ],
-    "nohoist": [
-      "generator-cspell-dicts/**",
-      "**/wordlist-medicalterms-en"
-    ]
-  },
   "devDependencies": {
-    "@cspell/cspell-tools": "^6.31.1",
-    "@lerna-lite/cli": "^2.4.2",
-    "@lerna-lite/exec": "^2.4.2",
-    "@lerna-lite/publish": "^2.4.3",
-    "@lerna-lite/run": "^2.4.2",
-    "commander": "^11.0.0",
-    "cpy-cli": "^4.2.0",
+    "@cspell/cspell-tools": "^7.0.1-alpha.7",
+    "@lerna-lite/cli": "^2.5.0",
+    "@lerna-lite/exec": "^2.5.0",
+    "@lerna-lite/publish": "^2.5.0",
+    "@lerna-lite/run": "^2.5.0",
+    "ava": "^5.3.1",
+    "cpy-cli": "^5.0.0",
     "cross-env": "^7.0.3",
-    "cspell": "^6.31.1",
+    "cspell": "^7.0.1-alpha.6",
+    "cspell-dict-file-checker": "workspace:*",
     "cspell-tools": "^5.1.1",
-    "eslint": "^8.43.0",
+    "eslint": "^8.44.0",
     "eslint-config-prettier": "^8.8.0",
-    "eslint-plugin-prettier": "^4.2.1",
-    "globby": "^13.2.0",
-    "hunspell-reader": "^6.31.1",
+    "eslint-plugin-prettier": "^5.0.0",
+    "generator-cspell-dicts": "workspace:*",
+    "hunspell-reader": "^7.0.1-alpha.6",
     "inject-markdown": "^1.5.0",
     "json5": "2.2.3",
-    "prettier": "^2.8.8",
+    "prettier": "^3.0.0",
     "shx": "^0.3.4",
     "yamljs": "^0.3.0"
   },
-  "resolutions": {
+  "yarn-resolutions": {
     "**/yo/meow": "^9.0.0",
     "**/generator-cspell-dicts/**/ansi-regex": "^5.0.1",
     "**/generator-cspell-dicts/**/got": "^11.8.5",
     "**/yo/**/find-versions/semver-regex": "^3.1.3"
+  },
+  "engines": {
+    "node": ">=16"
   },
   "license": "GPL-3.0-or-later"
 }

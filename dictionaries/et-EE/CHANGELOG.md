@@ -3,6 +3,14 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+## [2.0.9](https://github.com/streetsidesoftware/cspell-dicts/compare/@cspell/dict-et-ee@2.0.8...@cspell/dict-et-ee@2.0.9) (2023-07-19)
+
+
+### Updates and Bug Fixes
+
+* rebuild Estonian ([#2337](https://github.com/streetsidesoftware/cspell-dicts/issues/2337)) ([d27cb70](https://github.com/streetsidesoftware/cspell-dicts/commit/d27cb70927043e51c964edd85e21589d876add68))
+* Update dictionary build script and re-build ([#2334](https://github.com/streetsidesoftware/cspell-dicts/issues/2334)) ([0847cfc](https://github.com/streetsidesoftware/cspell-dicts/commit/0847cfc9623018940e7761e08eeba0ec7c0a320e))
+
 ## [2.0.8](https://github.com/streetsidesoftware/cspell-dicts/compare/@cspell/dict-et-ee@2.0.7...@cspell/dict-et-ee@2.0.8) (2022-12-17)
 
 

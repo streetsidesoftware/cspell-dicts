@@ -3,6 +3,22 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+## [5.0.7](https://github.com/streetsidesoftware/cspell-dicts/compare/@cspell/dict-npm@5.0.6...@cspell/dict-npm@5.0.7) (2023-07-04)
+
+
+### Updates and Bug Fixes
+
+* add  linkcss to npm.txt ([#2290](https://github.com/streetsidesoftware/cspell-dicts/issues/2290)) ([c08202f](https://github.com/streetsidesoftware/cspell-dicts/commit/c08202f1112664b5f2e9d457eae9ae553ebb4985))
+* Update npm description in extension. ([#2299](https://github.com/streetsidesoftware/cspell-dicts/issues/2299)) ([4f2546b](https://github.com/streetsidesoftware/cspell-dicts/commit/4f2546b1e3907eaa1bdb15a4e268b0062cd0c5d0))
+* Workflow Bot -- Build Dictionaries ([#2296](https://github.com/streetsidesoftware/cspell-dicts/issues/2296)) ([3bff84b](https://github.com/streetsidesoftware/cspell-dicts/commit/3bff84b43fe11a3fae3ce5b8250bdbb9980df4fa))
+
+## [5.0.6](https://github.com/streetsidesoftware/cspell-dicts/compare/@cspell/dict-npm@5.0.5...@cspell/dict-npm@5.0.6) (2023-07-04)
+
+
+### Updates and Bug Fixes
+
+* Update description of the `npm` dictionary ([#2291](https://github.com/streetsidesoftware/cspell-dicts/issues/2291)) ([52e8b6f](https://github.com/streetsidesoftware/cspell-dicts/commit/52e8b6f918033b16a4e924545f22365225ad4162))
+
 ## [5.0.5](https://github.com/streetsidesoftware/cspell-dicts/compare/@cspell/dict-npm@5.0.4...@cspell/dict-npm@5.0.5) (2023-02-22)
 
 

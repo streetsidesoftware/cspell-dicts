@@ -12,11 +12,11 @@
   },
   "scripts": {
     "build": "cspell-tools-cli compile build",
-    "test": "yarn run test-dict && yarn run test-check",
-    "test-dict": "head -n 1000 src/latex.txt | cspell -v -c ./cspell-ext.json --local=* --languageId=latex stdin",
+    "test": "pnpm run test-dict && pnpm run test-check",
+    "test-dict": "shx head -n 1000 src/latex.txt | cspell -v -c ./cspell-ext.json --local=* --languageId=latex stdin",
     "test-check": "ava",
     "prepublishOnly": "echo pre-publish",
-    "prepare": "yarn run build"
+    "prepare": "pnpm run build"
   },
   "repository": {
     "type": "git",

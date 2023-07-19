@@ -1,6 +1,6 @@
 {
   "name": "@cspell/dict-sk-sk",
-  "version": "1.0.1",
+  "version": "1.1.0",
   "description": "Slovak dictionary for cspell.",
   "publishConfig": {
     "access": "public"
@@ -11,9 +11,9 @@
     "./cspell-ext.json": "./cspell-ext.json"
   },
   "scripts": {
-    "build": "cspell-tools-cli build && yarn prepare",
+    "build": "cspell-tools-cli build && pnpm prepare",
     "test": "hunspell-reader words -n 1000 src/Slovak.dic | cspell -v -c ./cspell-ext.json --local=sk --languageId=* stdin",
-    "prepare": "gzip -f -k *.trie",
+    "prepare": "cspell-tools-cli gzip *.trie",
     "prepublishOnly": "echo pre-publish"
   },
   "repository": {
