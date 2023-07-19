@@ -15,7 +15,11 @@
     "build:dictionary:old": "cross-env NODE_OPTIONS=--max_old_space_size=4096 cspell-tools-cli compile --trie3 -x compound --merge el_GR src/hunspell/el-GR.dic src/Greek.txt src/Greek.ALLCAPS.txt -o .",
     "build:dictionary": "cspell-tools-cli build",
     "build:gz": "cspell-tools-cli gzip *.trie",
-    "build": "pnpm run compile-all-caps && pnpm run build:dictionary && pnpm build:gz",
+    "build": "pnpm run compile-all-caps && pnpm run build:dictionary && pnpm build:gz && pnpm gen-checksum",
+    "sync": "pnpm cpy \"node_modules/dictionary-el/{*.dic,*.aff,*.md,**/license}\" src/hunspell",
+    "checksum": "cspell-tools-cli shasum -c checksum.txt",
+    "conditional-build": "pnpm run --silent checksum || pnpm run build",
+    "gen-checksum": "cspell-tools-cli shasum -u checksum.txt --list-file source-files.txt source-dependencies.txt",
     "prepare": "pnpm run build:gz",
     "test": "shx head -n 1000 ./src/Greek.txt | cspell -v -c cspell-ext.json --local=el stdin"
   },
@@ -31,7 +35,7 @@
     "spelling"
   ],
   "author": "Jason Dent",
-  "license": "MIT",
+  "license": "GPL-3.0+",
   "bugs": {
     "url": "https://github.com/streetsidesoftware/cspell-dicts/issues"
   },
@@ -39,7 +43,11 @@
   "files": [
     "el_GR.trie.gz",
     "cspell-ext.json",
-    "src/hunspell/README.txt",
+    "src/hunspell/license",
+    "!samples",
     "!tools"
-  ]
+  ],
+  "devDependencies": {
+    "dictionary-el": "^3.1.0"
+  }
 }

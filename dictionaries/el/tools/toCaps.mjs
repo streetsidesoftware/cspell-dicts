@@ -42,7 +42,7 @@ function run() {
         .map((t) => t.trim())
         .filter((t) => t.toLocaleLowerCase('el') === t) // keep lowercase only words.
         .map((t) => t.normalize('NFC'))
-        .filter((t) => t !== t.normalize('NFD'));
+        .filter((t) => t.toUpperCase() !== t.toLocaleUpperCase('el'));
 
     const result = new Set(lines.map((t) => t.toLocaleUpperCase('el')));
 
