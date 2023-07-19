@@ -148,7 +148,11 @@ importers:
 
   dictionaries/dotnet: {}
 
-  dictionaries/el: {}
+  dictionaries/el:
+    devDependencies:
+      dictionary-el:
+        specifier: ^3.1.0
+        version: 3.1.0
 
   dictionaries/elixir: {}
 
@@ -3565,6 +3569,10 @@ packages:
 
   /dictionary-de@2.1.0:
     resolution: {integrity: sha512-fFtdUoZ11T4rNDBPTgLHKg0Odl+BYv2AQUl+67dEHMjTO7qhBGkU4vODcD6GAd4XHFwF1nGN3i40BNvV6iE95A==}
+    dev: true
+
+  /dictionary-el@3.1.0:
+    resolution: {integrity: sha512-YIGxkvrFdEG16eJsHbd6DiBAGadU6zq+aCFyg6sRbsnQY/j/NWe8vtashOWAJA7FC1WCsb7o1IWcZOiePQub4Q==}
     dev: true
 
   /dictionary-es@3.2.0:
