@@ -2,6 +2,10 @@
 
 import * as fs from 'fs';
 
+/**
+ * To fix: [#218](https://github.com/streetsidesoftware/cspell-dicts/issues/218)
+ */
+
 const usageText = `
 ./toCaps.js <from_file> <to_file>
 `;
