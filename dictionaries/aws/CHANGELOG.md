@@ -22,6 +22,17 @@ See [Conventional Commits](https://conventionalcommits.org) for commit guideline
 
 
 
+## [4.0.0](https://github.com/streetsidesoftware/cspell-dicts/compare/@cspell/dict-aws@3.0.0...@cspell/dict-aws@4.0.0) (2023-07-20)
+
+
+### ⚠ BREAKING CHANGES
+
+* Upgrade AWS Dict ([#2274](https://github.com/streetsidesoftware/cspell-dicts/issues/2274))
+
+### Features
+
+* Upgrade AWS Dict ([#2274](https://github.com/streetsidesoftware/cspell-dicts/issues/2274)) ([fe6f76c](https://github.com/streetsidesoftware/cspell-dicts/commit/fe6f76cf8e4ea134f747d5cc9e2c7251fc1f777f))
+
 ## [3.0.0](https://github.com/streetsidesoftware/cspell-dicts/compare/@cspell/dict-aws@2.0.0...@cspell/dict-aws@3.0.0) (2022-10-10)
 
 
