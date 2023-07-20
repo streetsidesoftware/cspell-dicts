@@ -11,8 +11,10 @@
     "./cspell-ext.json": "./cspell-ext.json"
   },
   "scripts": {
-    "build": "cspell-tools compile-trie -m 0 \"hunspell/he.dic\" -o .",
-    "test": "hunspell-reader words -m 0 -n 1000 \"hunspell/he.dic\" | cspell -v -c ./cspell-ext.json --local=he --languageId=* stdin",
+    "build": "cspell-tools-cli build && pnpm gz",
+    "test": "cspell samples",
+    "gz": "cspell-tools-cli gzip *.trie",
+    "prepare": "pnpm gz",
     "prepublishOnly": "echo pre-publish"
   },
   "repository": {
@@ -34,6 +36,7 @@
   "homepage": "https://github.com/streetsidesoftware/cspell-dicts/blob/main/dictionaries/he#readme",
   "files": [
     "he.trie.gz",
-    "cspell-ext.json"
+    "cspell-ext.json",
+    "!samples"
   ]
 }
