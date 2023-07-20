@@ -1,5 +1,21 @@
 # Release Notes
 
+## [15.0.0](https://github.com/streetsidesoftware/cspell-dicts/compare/cspell-dicts@14.0.0...cspell-dicts@15.0.0) (2023-07-20)
+
+
+### ⚠ BREAKING CHANGES
+
+* Esperanto - Update License and rebuild ([#2354](https://github.com/streetsidesoftware/cspell-dicts/issues/2354))
+
+### Features
+
+* Esperanto - Update License and rebuild ([#2354](https://github.com/streetsidesoftware/cspell-dicts/issues/2354)) ([156fa56](https://github.com/streetsidesoftware/cspell-dicts/commit/156fa56a69c4d81230136740a0046c1799834a9c))
+
+
+### Updates and Bug Fixes
+
+* Update dictionary ([774971b](https://github.com/streetsidesoftware/cspell-dicts/commit/774971bcc3436c6906efd38785397f98145e3b06))
+
 ## [14.0.0](https://github.com/streetsidesoftware/cspell-dicts/compare/cspell-dicts@13.0.0...cspell-dicts@14.0.0) (2023-07-20)
 
 
