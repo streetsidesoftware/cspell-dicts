@@ -1,5 +1,23 @@
 # Release Notes
 
+## [14.0.0](https://github.com/streetsidesoftware/cspell-dicts/compare/cspell-dicts@13.0.0...cspell-dicts@14.0.0) (2023-07-20)
+
+
+### ⚠ BREAKING CHANGES
+
+* Rebuild Hebrew dictionary ([#2349](https://github.com/streetsidesoftware/cspell-dicts/issues/2349))
+* Upgrade AWS Dict ([#2274](https://github.com/streetsidesoftware/cspell-dicts/issues/2274))
+
+### Features
+
+* Rebuild Hebrew dictionary ([#2349](https://github.com/streetsidesoftware/cspell-dicts/issues/2349)) ([50ab8de](https://github.com/streetsidesoftware/cspell-dicts/commit/50ab8def9ee8eb62d56988945e6d23551ff8dbe2))
+* Upgrade AWS Dict ([#2274](https://github.com/streetsidesoftware/cspell-dicts/issues/2274)) ([fe6f76c](https://github.com/streetsidesoftware/cspell-dicts/commit/fe6f76cf8e4ea134f747d5cc9e2c7251fc1f777f))
+
+
+### Updates and Bug Fixes
+
+* add qualname to python ([#2350](https://github.com/streetsidesoftware/cspell-dicts/issues/2350)) ([15730b3](https://github.com/streetsidesoftware/cspell-dicts/commit/15730b3391123d431318298a55dcabd6a9e5cfbe))
+
 ## [13.0.0](https://github.com/streetsidesoftware/cspell-dicts/compare/cspell-dicts@12.4.0...cspell-dicts@13.0.0) (2023-07-19)
 
 

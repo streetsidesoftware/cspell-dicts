@@ -3,6 +3,13 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+## [4.1.3](https://github.com/streetsidesoftware/cspell-dicts/compare/@cspell/dict-python@4.1.2...@cspell/dict-python@4.1.3) (2023-07-20)
+
+
+### Updates and Bug Fixes
+
+* add qualname to python ([#2350](https://github.com/streetsidesoftware/cspell-dicts/issues/2350)) ([15730b3](https://github.com/streetsidesoftware/cspell-dicts/commit/15730b3391123d431318298a55dcabd6a9e5cfbe))
+
 ## [4.1.2](https://github.com/streetsidesoftware/cspell-dicts/compare/@cspell/dict-python@4.1.1...@cspell/dict-python@4.1.2) (2023-07-10)
 
 
