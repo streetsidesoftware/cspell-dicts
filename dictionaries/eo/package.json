@@ -12,7 +12,9 @@
   },
   "scripts": {
     "build": "cspell-tools-cli build && pnpm gz",
-    "test": "hunspell-reader words -n 1000 \"src/hunspell/eo.dic\" | cspell -v -c ./cspell-ext.json \"--local=eo\" \"--languageId=*\" stdin",
+    "test:dic": "hunspell-reader words -n 1000 \"src/hunspell/eo.dic\" | cspell -c ./cspell-ext.json \"--local=eo\" \"--languageId=*\" stdin",
+    "test:samples": "cspell samples",
+    "test": "pnpm test:dic && pnpm test:samples",
     "gz": "cspell-tools-cli gzip *.trie",
     "prepare": "pnpm gz",
     "prepublishOnly": "echo pre-publish"
