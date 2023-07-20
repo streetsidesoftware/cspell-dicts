@@ -24,5 +24,5 @@ _description of change_
 - [ ] Verify that the title starts with the correct prefix:
   - `fix:` - for minor changes like adding words or fixing spelling issues.
   - `feat:` - for a significant change like adding a whole new set of words to a dictionary.
-  - `feat!:` - for breaking changes, like file format changes.
+  - `feat!:` - for breaking changes, like file format or licensing changes.
   - `chore:` - for changes that do not impact the content of dictionaries.
