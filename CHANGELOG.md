@@ -1,5 +1,12 @@
 # Release Notes
 
+## [15.0.1](https://github.com/streetsidesoftware/cspell-dicts/compare/cspell-dicts@15.0.0...cspell-dicts@15.0.1) (2023-07-20)
+
+
+### Updates and Bug Fixes
+
+* Fix EO build issue. ([#2355](https://github.com/streetsidesoftware/cspell-dicts/issues/2355)) ([394a185](https://github.com/streetsidesoftware/cspell-dicts/commit/394a185ba5a1f632064606b88c9541b946d00fbd))
+
 ## [15.0.0](https://github.com/streetsidesoftware/cspell-dicts/compare/cspell-dicts@14.0.0...cspell-dicts@15.0.0) (2023-07-20)
 
 
