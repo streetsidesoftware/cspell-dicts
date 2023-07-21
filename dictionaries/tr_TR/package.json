@@ -11,8 +11,13 @@
     "./cspell-ext.json": "./cspell-ext.json"
   },
   "scripts": {
-    "build": "cspell-tools compile-trie \"Turkish.dic\" -o .",
-    "test": "hunspell-reader words -n 1000 \"Turkish.dic\" | cspell -v -c ./cspell-ext.json --local=tr --languageId=* stdin",
+    "build:old": "cspell-tools-cli compile --trie3 -x compound \"src/hunspell/Turkish.dic\" -o .",
+    "build": "cspell-tools-cli build && pnpm gz",
+    "gz": "cspell-tools-cli gzip *.trie",
+    "prepare": "pnpm gz",
+    "test:dict": "hunspell-reader words -n 1000 \"src/hunspell/Turkish.dic\" | cspell -c ./cspell-ext.json --local=tr --languageId=* stdin",
+    "test:samples": "cspell samples",
+    "test": "pnpm test:dict && pnpm test:samples",
     "prepublishOnly": "echo pre-publish"
   },
   "repository": {
