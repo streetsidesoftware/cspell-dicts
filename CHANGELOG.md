@@ -1,5 +1,27 @@
 # Release Notes
 
+## [16.0.0](https://github.com/streetsidesoftware/cspell-dicts/compare/cspell-dicts@15.0.1...cspell-dicts@16.0.0) (2023-07-21)
+
+
+### ⚠ BREAKING CHANGES
+
+* Update Turkish dictionary ([#2360](https://github.com/streetsidesoftware/cspell-dicts/issues/2360))
+
+### Features
+
+* Update Turkish dictionary ([#2360](https://github.com/streetsidesoftware/cspell-dicts/issues/2360)) ([d335f79](https://github.com/streetsidesoftware/cspell-dicts/commit/d335f792eee9340d89fb6e5b6d6860ee0580d6b3))
+
+
+### Updates and Bug Fixes
+
+* add pathlib oneflow to common_packages ([#2358](https://github.com/streetsidesoftware/cspell-dicts/issues/2358)) ([be72d35](https://github.com/streetsidesoftware/cspell-dicts/commit/be72d3506c4525f6f428152605b3c7d3c92d928b))
+* Workflow Bot -- Build Dictionaries ([#2361](https://github.com/streetsidesoftware/cspell-dicts/issues/2361)) ([d68a696](https://github.com/streetsidesoftware/cspell-dicts/commit/d68a69611139e52c88ac35cf121f437ff14164ca))
+
+
+### Build System
+
+* **deps:** bump streetsidesoftware/cspell-action from 2.26.2 to 2.26.3 ([#2357](https://github.com/streetsidesoftware/cspell-dicts/issues/2357)) ([601e54f](https://github.com/streetsidesoftware/cspell-dicts/commit/601e54f0350c9f27647a5dcb86c24b51985f6d53))
+
 ## [15.0.1](https://github.com/streetsidesoftware/cspell-dicts/compare/cspell-dicts@15.0.0...cspell-dicts@15.0.1) (2023-07-20)
 
 
