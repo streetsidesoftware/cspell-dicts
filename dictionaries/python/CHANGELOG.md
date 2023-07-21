@@ -3,6 +3,14 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+## [4.1.4](https://github.com/streetsidesoftware/cspell-dicts/compare/@cspell/dict-python@4.1.3...@cspell/dict-python@4.1.4) (2023-07-21)
+
+
+### Updates and Bug Fixes
+
+* add pathlib oneflow to common_packages ([#2358](https://github.com/streetsidesoftware/cspell-dicts/issues/2358)) ([be72d35](https://github.com/streetsidesoftware/cspell-dicts/commit/be72d3506c4525f6f428152605b3c7d3c92d928b))
+* Workflow Bot -- Build Dictionaries ([#2361](https://github.com/streetsidesoftware/cspell-dicts/issues/2361)) ([d68a696](https://github.com/streetsidesoftware/cspell-dicts/commit/d68a69611139e52c88ac35cf121f437ff14164ca))
+
 ## [4.1.3](https://github.com/streetsidesoftware/cspell-dicts/compare/@cspell/dict-python@4.1.2...@cspell/dict-python@4.1.3) (2023-07-20)
 
 
