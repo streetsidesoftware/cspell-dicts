@@ -11,8 +11,8 @@
     "./cspell-ext.json": "./cspell-ext.json"
   },
   "scripts": {
-    "build": "cspell-tools-cli compile --keep-raw-case --use-legacy-splitter src/lorem.txt --no-compress -o ./dict",
-    "test": "shx head -n 1000 src/lorem.txt | cspell -v -c ./cspell-ext.json --local=lorem --languageId=* stdin",
+    "build": "cspell-tools-cli compile --keep-raw-case --use-legacy-splitter src/dictionary.txt --no-compress -o ./dict",
+    "test": "shx head -n 1000 src/dictionary.txt | cspell -v -c ./cspell-ext.json --local=lorem --languageId=* stdin",
     "prepublishOnly": "echo pre-publish",
     "prepare": "pnpm run build"
   },
