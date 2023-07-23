@@ -12,8 +12,10 @@
   },
   "scripts": {
     "build": "cspell-tools-cli build && pnpm prepare",
+    "build:conditional": "cspell-tools-cli build --conditional && pnpm gz",
     "test": "hunspell-reader words -n 1000 \"src/ca.dic\" | cspell -v -c ./cspell-ext.json --local=ca --languageId=* stdin",
-    "prepare": "cspell-tools-cli gzip *.trie",
+    "prepare": "pnpm run gz",
+    "gz": "cspell-tools-cli gzip *.trie",
     "prepublishOnly": "echo pre-publish"
   },
   "repository": {

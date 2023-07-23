@@ -1,10 +1,12 @@
 # yaml-language-server: $schema=https://raw.githubusercontent.com/streetsidesoftware/cspell/main/packages/cspell-tools/cspell-tools.config.schema.json
 
 targets:
-  - name: ca
-    sources:
-      - src/ca.dic
+  - name: nb
+    targetDirectory: .
+    compress: true
     format: trie3
-    targetDirectory: "."
+    sources:
+      - src/nb.dic
+    sort: true
     generateNonStrict: true
 checksumFile: true
