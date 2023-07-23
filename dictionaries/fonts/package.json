@@ -11,8 +11,8 @@
     "./cspell-ext.json": "./cspell-ext.json"
   },
   "scripts": {
-    "build": "cspell-tools compile \"fonts.txt\" -o .",
-    "test": "shx head -n 100 \"fonts.txt\" | cspell -v -c ./cspell.json \"--local=*\" \"--languageId=*\" stdin",
+    "build": "cspell-tools-cli compile --keep-raw-case --use-legacy-splitter src/fonts.txt --no-compress -o ./dict",
+    "test": "shx head -n 100 src/fonts.txt | cspell -v -c ./cspell.json \"--local=*\" \"--languageId=*\" stdin",
     "prepublishOnly": "echo pre-publish",
     "prepare": "pnpm run build"
   },
@@ -34,7 +34,7 @@
   },
   "homepage": "https://github.com/streetsidesoftware/cspell-dicts/blob/main/dictionaries/fonts#readme",
   "files": [
-    "fonts.txt.gz",
+    "dict/fonts.txt",
     "cspell-ext.json"
   ]
 }
