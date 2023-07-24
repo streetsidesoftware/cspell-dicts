@@ -11,8 +11,11 @@
     "./cspell-ext.json": "./cspell-ext.json"
   },
   "scripts": {
-    "build": "cspell-tools compile-trie \"vi.dic\" -o .",
-    "test": "hunspell-reader words -n 1000 \"vi.dic\" | cspell -v -c ./cspell-ext.json --local=vi --languageId=* stdin",
+    "build": "cspell-tools-cli build && pnpm gz",
+    "build:conditional": "cspell-tools-cli build --conditional && pnpm gz",
+    "test": "cspell samples",
+    "gz": "cspell-tools-cli gzip *.trie",
+    "prepare": "pnpm run gz",
     "prepublishOnly": "echo pre-publish"
   },
   "repository": {
