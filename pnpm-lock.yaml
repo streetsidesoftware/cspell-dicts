@@ -57,8 +57,8 @@ importers:
         specifier: ^7.0.1-alpha.8
         version: 7.0.1-alpha.8
       inject-markdown:
-        specifier: ^1.5.0
-        version: 1.5.0
+        specifier: ^2.0.0
+        version: 2.0.0
       json5:
         specifier: 2.2.3
         version: 2.2.3
@@ -165,7 +165,7 @@ importers:
         version: link:../en_shared
       aoo-mozilla-en-dict:
         specifier: https://github.com/marcoagpinto/aoo-mozilla-en-dict
-        version: github.com/marcoagpinto/aoo-mozilla-en-dict/649ef961082001eac808db982736f52aac8ebc1e
+        version: git/github.com+marcoagpinto/aoo-mozilla-en-dict/649ef961082001eac808db982736f52aac8ebc1e
 
   dictionaries/en_CA:
     devDependencies:
@@ -174,7 +174,7 @@ importers:
         version: link:../en_shared
       aoo-mozilla-en-dict:
         specifier: https://github.com/marcoagpinto/aoo-mozilla-en-dict
-        version: github.com/marcoagpinto/aoo-mozilla-en-dict/649ef961082001eac808db982736f52aac8ebc1e
+        version: git/github.com+marcoagpinto/aoo-mozilla-en-dict/649ef961082001eac808db982736f52aac8ebc1e
 
   dictionaries/en_GB:
     devDependencies:
@@ -183,7 +183,7 @@ importers:
         version: link:../en_shared
       aoo-mozilla-en-dict:
         specifier: https://github.com/marcoagpinto/aoo-mozilla-en-dict
-        version: github.com/marcoagpinto/aoo-mozilla-en-dict/649ef961082001eac808db982736f52aac8ebc1e
+        version: git/github.com+marcoagpinto/aoo-mozilla-en-dict/649ef961082001eac808db982736f52aac8ebc1e
 
   dictionaries/en_GB-MIT:
     devDependencies:
@@ -198,7 +198,7 @@ importers:
         version: link:../en_shared
       aoo-mozilla-en-dict:
         specifier: https://github.com/marcoagpinto/aoo-mozilla-en-dict
-        version: github.com/marcoagpinto/aoo-mozilla-en-dict/649ef961082001eac808db982736f52aac8ebc1e
+        version: git/github.com+marcoagpinto/aoo-mozilla-en-dict/649ef961082001eac808db982736f52aac8ebc1e
 
   dictionaries/en_shared: {}
 
@@ -220,7 +220,7 @@ importers:
     devDependencies:
       basque_hunspell:
         specifier: https://github.com/jmigartua/basque_hunspell
-        version: github.com/jmigartua/basque_hunspell/e9d9af129654466423480d1b4c38b06f6171ac5d
+        version: git/github.com+jmigartua/basque_hunspell/e9d9af129654466423480d1b4c38b06f6171ac5d
 
   dictionaries/fa_IR: {}
 
@@ -242,7 +242,7 @@ importers:
     devDependencies:
       go-words:
         specifier: https://github.com/AlekSi/go-words
-        version: github.com/AlekSi/go-words/b118b08691a30334ec87f4de26c5707405fb93dd
+        version: git/github.com+AlekSi/go-words/b118b08691a30334ec87f4de26c5707405fb93dd
 
   dictionaries/haskell: {}
 
@@ -278,7 +278,7 @@ importers:
     devDependencies:
       wordlist-medicalterms-en:
         specifier: Glutanimate/wordlist-medicalterms-en#d87b48e
-        version: github.com/Glutanimate/wordlist-medicalterms-en/d87b48e
+        version: git/github.com+Glutanimate/wordlist-medicalterms-en/d87b48e
 
   dictionaries/mnemonics: {}
 
@@ -2784,11 +2784,6 @@ packages:
     engines: {node: '>= 10'}
     dev: true
 
-  /commander@9.5.0:
-    resolution: {integrity: sha512-KRs7WVDKg86PWiuAqhDrAQnTXZKraVcCc6vFdL14qrZ/DcWwuRo7VoiYXalXO7S5GKpqYiVEwCbgFDfxNHKJBQ==}
-    engines: {node: ^12.20.0 || >=14}
-    dev: true
-
   /comment-json@4.2.3:
     resolution: {integrity: sha512-SsxdiOf064DWoZLH799Ata6u7iV658A11PlWtZATDlXPpKGJnbJZ5Z24ybixAi+LUUqJ/GKowAejtC5GFUG7Tw==}
     engines: {node: '>= 6'}
@@ -4911,13 +4906,13 @@ packages:
     engines: {node: '>=10'}
     dev: true
 
-  /inject-markdown@1.5.0:
-    resolution: {integrity: sha512-Q00T3qax3WHeqxQNMK5RZTrCm6THeTexCrjIMKY6uYXwP00t/cqqUcG4Bme2BSPsSVoY4BekrEZL78NweE3bLQ==}
-    engines: {node: '>=14'}
+  /inject-markdown@2.0.0:
+    resolution: {integrity: sha512-TsU+duUwYEl9/LQ4bYNqARLVMQa4bPB8bsElnHUsW88N0+SE/cV4sCrZL0vg8cxxnK7ahmWDIVXerLr7iiD9gQ==}
+    engines: {node: '>=16'}
     hasBin: true
     dependencies:
       chalk: 5.3.0
-      commander: 9.5.0
+      commander: 11.0.0
       globby: 13.2.2
       node-fetch: 3.3.1
       remark: 14.0.3
@@ -4928,7 +4923,7 @@ packages:
       unified: 10.1.2
       unist-util-is: 5.2.1
       unist-util-remove: 3.1.1
-      unist-util-visit: 4.1.2
+      unist-util-visit: 5.0.0
       vfile: 5.3.7
       vfile-reporter: 7.0.5
     transitivePeerDependencies:
@@ -8901,6 +8896,12 @@ packages:
       '@types/unist': 2.0.6
     dev: true
 
+  /unist-util-is@6.0.0:
+    resolution: {integrity: sha512-2qCTHimwdxLfz+YzdGfkqNlH0tLi9xjTnHddPmJwtIG9MGsdbutfTc4P+haPD7l7Cjxf/WZj+we5qfVPvvxfYw==}
+    dependencies:
+      '@types/unist': 3.0.0
+    dev: true
+
   /unist-util-position-from-estree@1.1.2:
     resolution: {integrity: sha512-poZa0eXpS+/XpoQwGwl79UUdea4ol2ZuCYguVaJS4qzIOMDzbqz8a3erUCOmubSZkaOuGamb3tX790iwOIROww==}
     dependencies:
@@ -8935,12 +8936,27 @@ packages:
       unist-util-is: 5.2.1
     dev: true
 
+  /unist-util-visit-parents@6.0.1:
+    resolution: {integrity: sha512-L/PqWzfTP9lzzEa6CKs0k2nARxTdZduw3zyh8d2NVBnsyvHjSX4TWse388YrrQKbvI8w20fGjGlhgT96WwKykw==}
+    dependencies:
+      '@types/unist': 3.0.0
+      unist-util-is: 6.0.0
+    dev: true
+
   /unist-util-visit@4.1.2:
     resolution: {integrity: sha512-MSd8OUGISqHdVvfY9TPhyK2VdUrPgxkUtWSuMHF6XAAFuL4LokseigBnZtPnJMu+FbynTkFNnFlyjxpVKujMRg==}
     dependencies:
       '@types/unist': 2.0.6
       unist-util-is: 5.2.1
       unist-util-visit-parents: 5.1.3
+    dev: true
+
+  /unist-util-visit@5.0.0:
+    resolution: {integrity: sha512-MR04uvD+07cwl/yhVuVWAtw+3GOR/knlL55Nd/wAdblk27GCVt3lqpTivy/tkJcZoNPzTwS1Y+KMojlLDhoTzg==}
+    dependencies:
+      '@types/unist': 3.0.0
+      unist-util-is: 6.0.0
+      unist-util-visit-parents: 6.0.1
     dev: true
 
   /universal-user-agent@6.0.0:
@@ -9540,26 +9556,26 @@ packages:
     resolution: {integrity: sha512-bXE4cR/kVZhKZX/RjPEflHaKVhUVl85noU3v6b8apfQEc1x4A+zBxjZ4lN8LqGd6WZ3dl98pY4o717VFmoPp+A==}
     dev: true
 
-  github.com/AlekSi/go-words/b118b08691a30334ec87f4de26c5707405fb93dd:
-    resolution: {tarball: https://codeload.github.com/AlekSi/go-words/tar.gz/b118b08691a30334ec87f4de26c5707405fb93dd}
+  git/github.com+AlekSi/go-words/b118b08691a30334ec87f4de26c5707405fb93dd:
+    resolution: {commit: b118b08691a30334ec87f4de26c5707405fb93dd, repo: git@github.com:AlekSi/go-words.git, type: git}
     name: go-words
     version: 0.0.0
     dev: true
 
-  github.com/Glutanimate/wordlist-medicalterms-en/d87b48e:
-    resolution: {tarball: https://codeload.github.com/Glutanimate/wordlist-medicalterms-en/tar.gz/d87b48e}
+  git/github.com+Glutanimate/wordlist-medicalterms-en/d87b48e:
+    resolution: {commit: d87b48e, repo: git@github.com:Glutanimate/wordlist-medicalterms-en.git, type: git}
     name: wordlist-medicalterms-en#d87b48e
     version: 0.0.0
     dev: true
 
-  github.com/jmigartua/basque_hunspell/e9d9af129654466423480d1b4c38b06f6171ac5d:
-    resolution: {tarball: https://codeload.github.com/jmigartua/basque_hunspell/tar.gz/e9d9af129654466423480d1b4c38b06f6171ac5d}
+  git/github.com+jmigartua/basque_hunspell/e9d9af129654466423480d1b4c38b06f6171ac5d:
+    resolution: {commit: e9d9af129654466423480d1b4c38b06f6171ac5d, repo: git@github.com:jmigartua/basque_hunspell.git, type: git}
     name: basque_hunspell
     version: 0.0.0
     dev: true
 
-  github.com/marcoagpinto/aoo-mozilla-en-dict/649ef961082001eac808db982736f52aac8ebc1e:
-    resolution: {tarball: https://codeload.github.com/marcoagpinto/aoo-mozilla-en-dict/tar.gz/649ef961082001eac808db982736f52aac8ebc1e}
+  git/github.com+marcoagpinto/aoo-mozilla-en-dict/649ef961082001eac808db982736f52aac8ebc1e:
+    resolution: {commit: 649ef961082001eac808db982736f52aac8ebc1e, repo: git@github.com:marcoagpinto/aoo-mozilla-en-dict.git, type: git}
     name: aoo-mozilla-en-dict
     version: 0.0.0
     dev: true
