@@ -43,13 +43,13 @@ importers:
         version: 5.1.1
       eslint:
         specifier: ^8.44.0
-        version: 8.44.0
+        version: 8.45.0
       eslint-config-prettier:
         specifier: ^8.8.0
-        version: 8.8.0(eslint@8.44.0)
+        version: 8.8.0(eslint@8.45.0)
       eslint-plugin-prettier:
         specifier: ^5.0.0
-        version: 5.0.0(eslint-config-prettier@8.8.0)(eslint@8.44.0)(prettier@3.0.0)
+        version: 5.0.0(eslint-config-prettier@8.8.0)(eslint@8.45.0)(prettier@3.0.0)
       generator-cspell-dicts:
         specifier: workspace:*
         version: link:generator-cspell-dicts
@@ -165,7 +165,7 @@ importers:
         version: link:../en_shared
       aoo-mozilla-en-dict:
         specifier: https://github.com/marcoagpinto/aoo-mozilla-en-dict
-        version: github.com/marcoagpinto/aoo-mozilla-en-dict/649ef961082001eac808db982736f52aac8ebc1e
+        version: git@github.com+marcoagpinto/aoo-mozilla-en-dict/649ef961082001eac808db982736f52aac8ebc1e
 
   dictionaries/en_CA:
     devDependencies:
@@ -174,7 +174,7 @@ importers:
         version: link:../en_shared
       aoo-mozilla-en-dict:
         specifier: https://github.com/marcoagpinto/aoo-mozilla-en-dict
-        version: github.com/marcoagpinto/aoo-mozilla-en-dict/649ef961082001eac808db982736f52aac8ebc1e
+        version: git@github.com+marcoagpinto/aoo-mozilla-en-dict/649ef961082001eac808db982736f52aac8ebc1e
 
   dictionaries/en_GB:
     devDependencies:
@@ -183,7 +183,7 @@ importers:
         version: link:../en_shared
       aoo-mozilla-en-dict:
         specifier: https://github.com/marcoagpinto/aoo-mozilla-en-dict
-        version: github.com/marcoagpinto/aoo-mozilla-en-dict/649ef961082001eac808db982736f52aac8ebc1e
+        version: git@github.com+marcoagpinto/aoo-mozilla-en-dict/649ef961082001eac808db982736f52aac8ebc1e
 
   dictionaries/en_GB-MIT:
     devDependencies:
@@ -198,7 +198,7 @@ importers:
         version: link:../en_shared
       aoo-mozilla-en-dict:
         specifier: https://github.com/marcoagpinto/aoo-mozilla-en-dict
-        version: github.com/marcoagpinto/aoo-mozilla-en-dict/649ef961082001eac808db982736f52aac8ebc1e
+        version: git@github.com+marcoagpinto/aoo-mozilla-en-dict/649ef961082001eac808db982736f52aac8ebc1e
 
   dictionaries/en_shared: {}
 
@@ -220,7 +220,7 @@ importers:
     devDependencies:
       basque_hunspell:
         specifier: https://github.com/jmigartua/basque_hunspell
-        version: github.com/jmigartua/basque_hunspell/e9d9af129654466423480d1b4c38b06f6171ac5d
+        version: git@github.com+jmigartua/basque_hunspell/e9d9af129654466423480d1b4c38b06f6171ac5d
 
   dictionaries/fa_IR: {}
 
@@ -242,7 +242,7 @@ importers:
     devDependencies:
       go-words:
         specifier: https://github.com/AlekSi/go-words
-        version: github.com/AlekSi/go-words/b118b08691a30334ec87f4de26c5707405fb93dd
+        version: git@github.com+AlekSi/go-words/b118b08691a30334ec87f4de26c5707405fb93dd
 
   dictionaries/haskell: {}
 
@@ -278,7 +278,7 @@ importers:
     devDependencies:
       wordlist-medicalterms-en:
         specifier: Glutanimate/wordlist-medicalterms-en#d87b48e
-        version: github.com/Glutanimate/wordlist-medicalterms-en/d87b48e
+        version: git@github.com+Glutanimate/wordlist-medicalterms-en/d87b48e
 
   dictionaries/mnemonics: {}
 
@@ -769,13 +769,13 @@ packages:
     engines: {node: '>=16'}
     dev: true
 
-  /@eslint-community/eslint-utils@4.4.0(eslint@8.44.0):
+  /@eslint-community/eslint-utils@4.4.0(eslint@8.45.0):
     resolution: {integrity: sha512-1/sA4dwrzBAyeUoQ6oxahHKmrZvsnLCg4RfxW3ZFGGmQkSNQPFNLV9CUEFQP1x9EYXHTo5p6xdhZM1Ne9p/AfA==}
     engines: {node: ^12.22.0 || ^14.17.0 || >=16.0.0}
     peerDependencies:
       eslint: ^6.0.0 || ^7.0.0 || >=8.0.0
     dependencies:
-      eslint: 8.44.0
+      eslint: 8.45.0
       eslint-visitor-keys: 3.4.1
     dev: true
 
@@ -3734,16 +3734,16 @@ packages:
     resolution: {integrity: sha512-/veY75JbMK4j1yjvuUxuVsiS/hr/4iHs9FTT6cgTexxdE0Ly/glccBAkloH/DofkjRbZU3bnoj38mOmhkZ0lHw==}
     engines: {node: '>=12'}
 
-  /eslint-config-prettier@8.8.0(eslint@8.44.0):
+  /eslint-config-prettier@8.8.0(eslint@8.45.0):
     resolution: {integrity: sha512-wLbQiFre3tdGgpDv67NQKnJuTlcUVYHas3k+DZCc2U2BadthoEY4B7hLPvAxaqdyOGCzuLfii2fqGph10va7oA==}
     hasBin: true
     peerDependencies:
       eslint: '>=7.0.0'
     dependencies:
-      eslint: 8.44.0
+      eslint: 8.45.0
     dev: true
 
-  /eslint-plugin-prettier@5.0.0(eslint-config-prettier@8.8.0)(eslint@8.44.0)(prettier@3.0.0):
+  /eslint-plugin-prettier@5.0.0(eslint-config-prettier@8.8.0)(eslint@8.45.0)(prettier@3.0.0):
     resolution: {integrity: sha512-AgaZCVuYDXHUGxj/ZGu1u8H8CYgDY3iG6w5kUFw4AzMVXzB7VvbKgYR4nATIN+OvUrghMbiDLeimVjVY5ilq3w==}
     engines: {node: ^14.18.0 || >=16.0.0}
     peerDependencies:
@@ -3757,8 +3757,8 @@ packages:
       eslint-config-prettier:
         optional: true
     dependencies:
-      eslint: 8.44.0
-      eslint-config-prettier: 8.8.0(eslint@8.44.0)
+      eslint: 8.45.0
+      eslint-config-prettier: 8.8.0(eslint@8.45.0)
       prettier: 3.0.0
       prettier-linter-helpers: 1.0.0
       synckit: 0.8.5
@@ -3777,12 +3777,12 @@ packages:
     engines: {node: ^12.22.0 || ^14.17.0 || >=16.0.0}
     dev: true
 
-  /eslint@8.44.0:
-    resolution: {integrity: sha512-0wpHoUbDUHgNCyvFB5aXLiQVfK9B0at6gUvzy83k4kAsQ/u769TQDX6iKC+aO4upIHO9WSaA3QoXYQDHbNwf1A==}
+  /eslint@8.45.0:
+    resolution: {integrity: sha512-pd8KSxiQpdYRfYa9Wufvdoct3ZPQQuVuU5O6scNgMuOMYuxvH0IGaYK0wUFjo4UYYQQCUndlXiMbnxopwvvTiw==}
     engines: {node: ^12.22.0 || ^14.17.0 || >=16.0.0}
     hasBin: true
     dependencies:
-      '@eslint-community/eslint-utils': 4.4.0(eslint@8.44.0)
+      '@eslint-community/eslint-utils': 4.4.0(eslint@8.45.0)
       '@eslint-community/regexpp': 4.5.1
       '@eslint/eslintrc': 2.1.0
       '@eslint/js': 8.44.0
@@ -3807,7 +3807,6 @@ packages:
       globals: 13.20.0
       graphemer: 1.4.0
       ignore: 5.2.4
-      import-fresh: 3.3.0
       imurmurhash: 0.1.4
       is-glob: 4.0.3
       is-path-inside: 3.0.3
@@ -3819,7 +3818,6 @@ packages:
       natural-compare: 1.4.0
       optionator: 0.9.3
       strip-ansi: 6.0.1
-      strip-json-comments: 3.1.1
       text-table: 0.2.0
     transitivePeerDependencies:
       - supports-color
@@ -9540,26 +9538,26 @@ packages:
     resolution: {integrity: sha512-bXE4cR/kVZhKZX/RjPEflHaKVhUVl85noU3v6b8apfQEc1x4A+zBxjZ4lN8LqGd6WZ3dl98pY4o717VFmoPp+A==}
     dev: true
 
-  github.com/AlekSi/go-words/b118b08691a30334ec87f4de26c5707405fb93dd:
-    resolution: {tarball: https://codeload.github.com/AlekSi/go-words/tar.gz/b118b08691a30334ec87f4de26c5707405fb93dd}
+  git@github.com+AlekSi/go-words/b118b08691a30334ec87f4de26c5707405fb93dd:
+    resolution: {commit: b118b08691a30334ec87f4de26c5707405fb93dd, repo: git@github.com:AlekSi/go-words.git, type: git}
     name: go-words
     version: 0.0.0
     dev: true
 
-  github.com/Glutanimate/wordlist-medicalterms-en/d87b48e:
-    resolution: {tarball: https://codeload.github.com/Glutanimate/wordlist-medicalterms-en/tar.gz/d87b48e}
+  git@github.com+Glutanimate/wordlist-medicalterms-en/d87b48e:
+    resolution: {commit: d87b48e, repo: git@github.com:Glutanimate/wordlist-medicalterms-en.git, type: git}
     name: wordlist-medicalterms-en#d87b48e
     version: 0.0.0
     dev: true
 
-  github.com/jmigartua/basque_hunspell/e9d9af129654466423480d1b4c38b06f6171ac5d:
-    resolution: {tarball: https://codeload.github.com/jmigartua/basque_hunspell/tar.gz/e9d9af129654466423480d1b4c38b06f6171ac5d}
+  git@github.com+jmigartua/basque_hunspell/e9d9af129654466423480d1b4c38b06f6171ac5d:
+    resolution: {commit: e9d9af129654466423480d1b4c38b06f6171ac5d, repo: git@github.com:jmigartua/basque_hunspell.git, type: git}
     name: basque_hunspell
     version: 0.0.0
     dev: true
 
-  github.com/marcoagpinto/aoo-mozilla-en-dict/649ef961082001eac808db982736f52aac8ebc1e:
-    resolution: {tarball: https://codeload.github.com/marcoagpinto/aoo-mozilla-en-dict/tar.gz/649ef961082001eac808db982736f52aac8ebc1e}
+  git@github.com+marcoagpinto/aoo-mozilla-en-dict/649ef961082001eac808db982736f52aac8ebc1e:
+    resolution: {commit: 649ef961082001eac808db982736f52aac8ebc1e, repo: git@github.com:marcoagpinto/aoo-mozilla-en-dict.git, type: git}
     name: aoo-mozilla-en-dict
     version: 0.0.0
     dev: true
