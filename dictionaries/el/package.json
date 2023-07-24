@@ -14,7 +14,7 @@
     "compile-all-caps": "node ./tools/toCaps.mjs ./src/Greek.txt ./src/Greek.ALLCAPS.txt",
     "build:dictionary:old": "cross-env NODE_OPTIONS=--max_old_space_size=4096 cspell-tools-cli compile --trie3 -x compound --merge el_GR src/hunspell/el-GR.dic src/Greek.txt src/Greek.ALLCAPS.txt -o .",
     "build:dictionary": "cspell-tools-cli build",
-    "build:gz": "cspell-tools-cli gzip *.trie",
+    "build:gz": "cspell-tools-cli gzip \"*.trie\"",
     "build": "pnpm run compile-all-caps && pnpm run build:dictionary && pnpm build:gz && pnpm gen-checksum",
     "sync": "pnpm cpy \"node_modules/dictionary-el/{*.dic,*.aff,*.md,**/license}\" src/hunspell",
     "checksum": "cspell-tools-cli shasum -c checksum.txt",

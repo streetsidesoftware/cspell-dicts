@@ -15,7 +15,7 @@
     "build:conditional": "cspell-tools-cli build --conditional && pnpm gz",
     "test": "hunspell-reader words -n 1000 \"src/bg_BG.dic\" | cspell -v -c ./cspell-ext.json \"--local=bg\" \"--languageId=*\" stdin",
     "prepare": "pnpm run gz",
-    "gz": "cspell-tools-cli gzip dict/*.trie",
+    "gz": "cspell-tools-cli gzip \"dict/*.trie\"",
     "prepublishOnly": "echo pre-publish"
   },
   "repository": {

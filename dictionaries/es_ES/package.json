@@ -22,7 +22,7 @@
     "test-dict": "hunspell-reader words -n 1000 \"src/hunspell/index.dic\" | cspell -v -c ./cspell-ext.json --local=es --languageId=* stdin",
     "test-text": "cspell",
     "test": "pnpm run test-dict && pnpm run test-text",
-    "prepare": "cspell-tools-cli gzip *.trie",
+    "prepare": "cspell-tools-cli gzip \"*.trie\"",
     "prepublishOnly": "echo pre-publish"
   },
   "repository": {

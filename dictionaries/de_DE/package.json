@@ -20,7 +20,7 @@
     "test-de-old": "hunspell-reader words -n 1000 \"src/German_de_DE.dic\" | cspell -v -c ./cspell-ext.json --local=de --languageId=* stdin",
     "test-samples": "cspell -v -c ./cspell-ext.json --local=de,en \"samples/**\"",
     "test": "pnpm run test-de && pnpm run test-samples && pnpm run test-de-old",
-    "prepare": "cspell-tools-cli gzip *.trie",
+    "prepare": "cspell-tools-cli gzip \"*.trie\"",
     "prepublishOnly": "pnpm run conditional-build && pnpm test"
   },
   "scriptsX": {

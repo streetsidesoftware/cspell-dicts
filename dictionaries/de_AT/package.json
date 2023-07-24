@@ -19,7 +19,7 @@
     "test-de": "hunspell-reader words -n 1000 \"src/hunspell/index.dic\" | cspell -v -c ./cspell-ext.json --local=de-AT --languageId=* stdin",
     "test-samples": "cspell -v -c ./cspell-ext.json --local=de-at,en \"samples/**\"",
     "test": "pnpm run test-de && pnpm run test-samples",
-    "prepare": "cspell-tools-cli gzip *.trie",
+    "prepare": "cspell-tools-cli gzip \"*.trie\"",
     "prepublishOnly": "pnpm run conditional-build && pnpm test"
   },
   "repository": {
