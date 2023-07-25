@@ -20,7 +20,7 @@
     "test-samples": "cspell -v -c ./cspell-ext.json --local=ar,en \"samples/**\"",
     "test": "pnpm run test-ar && pnpm run test-samples",
     "sync": "bash ./scripts/sync.sh && pnpm lint",
-    "prepare": "cspell-tools-cli gzip *.trie",
+    "prepare": "cspell-tools-cli gzip \"*.trie\"",
     "prepublishOnly": "pnpm run conditional-build && pnpm test"
   },
   "repository": {
