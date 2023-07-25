@@ -4,7 +4,7 @@
   "private": true,
   "packageManager": "pnpm@8.4.0",
   "scripts": {
-    "test": "pnpm -r run --stream test",
+    "test": "pnpm -r run --workspace-concurrency 2 --stream test",
     "lint": "pnpm run lint:fix && cspell",
     "lint-ci": "eslint . && prettier -c \"**/*.{md,json,yml,yaml}\" && cspell",
     "lint:fix": "eslint --fix . && prettier -w \"**/*.{md,json,yml,yaml}\"",
