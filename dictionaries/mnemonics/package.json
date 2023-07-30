@@ -11,8 +11,8 @@
     "./cspell-ext.json": "./cspell-ext.json"
   },
   "scripts": {
-    "build": "cross-env NODE_OPTIONS=--max_old_space_size=8192 cspell-tools compile \"src/mnemonics.txt\" -o .",
-    "test": "shx head -n 1000 \"src/mnemonics.txt\" | cspell -v -c ./cspell-ext.json \"--local=*\" \"--languageId=cpp\" stdin",
+    "build": "cross-env NODE_OPTIONS=--max_old_space_size=8192 cspell-tools-cli compile --keep-raw-case --use-legacy-splitter src/mnemonics.txt --no-compress -o ./dict",
+    "test": "shx head -n 1000 src/mnemonics.txt | cspell -v -c ./cspell-ext.json \"--local=*\" \"--languageId=cpp\" stdin",
     "prepublishOnly": "echo pre-publish",
     "prepare": "pnpm run build"
   },
@@ -34,7 +34,7 @@
   },
   "homepage": "https://github.com/streetsidesoftware/cspell-dicts/blob/main/dictionaries/mnemonics#readme",
   "files": [
-    "mnemonics.txt.gz",
+    "dict/mnemonics.txt",
     "cspell-ext.json",
     "*.js",
     "*.d.ts"
