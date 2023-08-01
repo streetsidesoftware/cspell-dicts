@@ -11,8 +11,8 @@
     "./cspell-ext.json": "./cspell-ext.json"
   },
   "scripts": {
-    "build": "cspell-tools compile \"city-names-finland.txt\" -o .",
-    "test": "shx head -n 100 \"city-names-finland.txt\" | cspell -v -c ./cspell-ext.json --local=* --languageId=* stdin",
+    "build": "cspell-tools-cli compile --keep-raw-case --use-legacy-splitter src/city-names-finland.txt --no-compress -o ./dict",
+    "test": "shx head -n 100 src/city-names-finland.txt | cspell -v -c ./cspell-ext.json --local=* --languageId=* stdin",
     "prepublishOnly": "echo pre-publish",
     "prepare": "pnpm run build"
   },
@@ -34,7 +34,7 @@
   },
   "homepage": "https://github.com/streetsidesoftware/cspell-dicts/blob/main/dictionaries/city-names-finland#readme",
   "files": [
-    "city-names-finland.txt.gz",
+    "dict/city-names-finland.txt",
     "cspell-ext.json"
   ]
 }
