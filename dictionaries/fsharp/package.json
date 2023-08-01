@@ -13,7 +13,7 @@
   },
   "scripts": {
     "build": "cross-env NODE_OPTIONS=--max_old_space_size=8192 cspell-tools-cli build",
-    "test": "head -n 1000 \"src/f_sharp.txt\" | cspell -v -c ./cspell-ext.json \"--local=*\" \"--languageId=fsharp\" stdin",
+    "test": "head -n 1000 \"src/fsharp.txt\" | cspell -v -c ./cspell-ext.json \"--local=*\" \"--languageId=fsharp\" stdin",
     "prepublishOnly": "echo OK",
     "prepare": "pnpm run build"
   },
@@ -24,7 +24,7 @@
   "keywords": [
     "cspell",
     "cspell-ext",
-    "f_sharp",
+    "fsharp",
     "f#",
     "dictionary",
     "spelling"
