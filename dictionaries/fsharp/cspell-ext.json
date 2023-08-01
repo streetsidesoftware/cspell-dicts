@@ -22,7 +22,7 @@
         {
             // VSCode languageId. i.e. typescript, java, go, cpp, javascript, markdown, latex
             // * will match against any file type.
-            "languageId": "f#",
+            "languageId": "fsharp",
             // Language locale. i.e. en-US, de-AT, or ru. * will match all locales.
             // Multiple locales can be specified like: "en, en-US" to match both English and English US.
             "locale": "*",
@@ -36,7 +36,7 @@
             // This could be included in "ignoreRegExpList": ["mdash"]
             "patterns": [],
             // List of dictionaries to enable by name in `dictionaryDefinitions`
-            "dictionaries": ["f-sharp"],
+            "dictionaries": ["f-sharp", "dotnet"],
             // Dictionary definitions can also be supplied here. They are only used iff "languageId" and "locale" match.
             "dictionaryDefinitions": []
         }
