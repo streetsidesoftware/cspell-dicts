@@ -9,14 +9,14 @@ This is a pre-built dictionary for use with CSpell.
 Global Install and add to CSpell global settings.
 
 ```sh
-npm install -g @cspell/dict-f-sharp
-cspell link add @cspell/dict-f-sharp
+npm install -g @cspell/dict-fsharp
+cspell link add @cspell/dict-fsharp
 ```
 
 ## Uninstall from CSpell
 
 ```sh
-cspell link remove @cspell/dict-f-sharp
+cspell link remove @cspell/dict-fsharp
 ```
 
 ## Manual Installation
@@ -24,7 +24,7 @@ cspell link remove @cspell/dict-f-sharp
 Manual installation is useful if you want to include this dictionary as part of your CI/CD lint process.
 
 ```
-npm i @cspell/dict-f-sharp
+npm i @cspell/dict-fsharp
 ```
 
 The `cspell-ext.json` file in this package should be added to the import section in your `cspell.json` file.
@@ -32,7 +32,7 @@ The `cspell-ext.json` file in this package should be added to the import section
 ```javascript
 {
     // …
-    "import": ["@cspell/dict-f-sharp/cspell-ext.json"],
+    "import": ["@cspell/dict-fsharp/cspell-ext.json"],
     // …
 }
 ```
