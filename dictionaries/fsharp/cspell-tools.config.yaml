@@ -3,8 +3,8 @@
 targets:
   - name: "fsharp"
     sources:
-      - filename: "src/fsharp.txt"
-        maxDepth: 1 # This is set to 1 to prevent initial builds from taking too long.
+      - src/fsharp.txt
+      - src/from-fsharp-src.txt
     format: "plaintext"
     targetDirectory: "./dict"
     generateNonStrict: false
