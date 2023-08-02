@@ -3,6 +3,14 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+## [4.1.5](https://github.com/streetsidesoftware/cspell-dicts/compare/@cspell/dict-python@4.1.4...@cspell/dict-python@4.1.5) (2023-08-02)
+
+
+### Updates and Bug Fixes
+
+* add Bokeh Chainer etc. to common_packages ([#2367](https://github.com/streetsidesoftware/cspell-dicts/issues/2367)) ([b6ecf9a](https://github.com/streetsidesoftware/cspell-dicts/commit/b6ecf9aa107bba299196b8105ccef38144c719a4))
+* Workflow Bot -- Build Dictionaries ([#2368](https://github.com/streetsidesoftware/cspell-dicts/issues/2368)) ([279027a](https://github.com/streetsidesoftware/cspell-dicts/commit/279027aafb5640e4294e7ff5fb70335ac3c9ecf1))
+
 ## [4.1.4](https://github.com/streetsidesoftware/cspell-dicts/compare/@cspell/dict-python@4.1.3...@cspell/dict-python@4.1.4) (2023-07-21)
 
 

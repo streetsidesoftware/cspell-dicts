@@ -22,6 +22,22 @@ See [Conventional Commits](https://conventionalcommits.org) for commit guideline
 
 
 
+## [3.0.0](https://github.com/streetsidesoftware/cspell-dicts/compare/@cspell/dict-city-names-finland@2.0.0...@cspell/dict-city-names-finland@3.0.0) (2023-08-02)
+
+
+### ⚠ BREAKING CHANGES
+
+* Upgrade Finland Cities Dict ([#2387](https://github.com/streetsidesoftware/cspell-dicts/issues/2387))
+
+### Features
+
+* Upgrade Finland Cities Dict ([#2387](https://github.com/streetsidesoftware/cspell-dicts/issues/2387)) ([529af4d](https://github.com/streetsidesoftware/cspell-dicts/commit/529af4d4ab70e03596793eca90f11b2ee10520c8))
+
+
+### Updates and Bug Fixes
+
+* Workflow Bot -- Build Dictionaries ([#2392](https://github.com/streetsidesoftware/cspell-dicts/issues/2392)) ([fb18852](https://github.com/streetsidesoftware/cspell-dicts/commit/fb18852f205b4a4d959afc2b0c28d3e14df869b9))
+
 ## [1.0.24](https://github.com/streetsidesoftware/cspell-dicts/compare/@cspell/dict-city-names-finland@1.0.23...@cspell/dict-city-names-finland@1.0.24) (2021-03-16)
 
 **Note:** Version bump only for package @cspell/dict-city-names-finland

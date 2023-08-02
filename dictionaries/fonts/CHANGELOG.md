@@ -3,6 +3,24 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+## [4.0.0](https://github.com/streetsidesoftware/cspell-dicts/compare/@cspell/dict-fonts@3.0.2...@cspell/dict-fonts@4.0.0) (2023-08-02)
+
+
+### ⚠ BREAKING CHANGES
+
+* Upgrade Fonts Dict ([#2362](https://github.com/streetsidesoftware/cspell-dicts/issues/2362))
+
+### Features
+
+* Upgrade Fonts Dict ([#2362](https://github.com/streetsidesoftware/cspell-dicts/issues/2362)) ([30cd761](https://github.com/streetsidesoftware/cspell-dicts/commit/30cd7611d79ff44e319a49682f06b18b95d91cd6))
+
+
+### Updates and Bug Fixes
+
+* Add missing Nerd-Fonts ([#2382](https://github.com/streetsidesoftware/cspell-dicts/issues/2382)) ([f888312](https://github.com/streetsidesoftware/cspell-dicts/commit/f888312bb34429c5204a2884c04f82fa791352c7))
+* Workflow Bot -- Build Dictionaries ([#2366](https://github.com/streetsidesoftware/cspell-dicts/issues/2366)) ([d893e2a](https://github.com/streetsidesoftware/cspell-dicts/commit/d893e2a77d3e0689dde4d4cae3f63f28a0549951))
+* Workflow Bot -- Build Dictionaries ([#2383](https://github.com/streetsidesoftware/cspell-dicts/issues/2383)) ([cb4110d](https://github.com/streetsidesoftware/cspell-dicts/commit/cb4110d8d56bbda80c92a4d9d1831ff613fd54f8))
+
 ## [3.0.2](https://github.com/streetsidesoftware/cspell-dicts/compare/@cspell/dict-fonts@3.0.1...@cspell/dict-fonts@3.0.2) (2023-03-30)
 
 

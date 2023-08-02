@@ -22,6 +22,17 @@ See [Conventional Commits](https://conventionalcommits.org) for commit guideline
 
 
 
+## [3.0.0](https://github.com/streetsidesoftware/cspell-dicts/compare/@cspell/dict-vi-vn@2.0.0...@cspell/dict-vi-vn@3.0.0) (2023-08-02)
+
+
+### ⚠ BREAKING CHANGES
+
+* Upgrade vi_VN format ([#2370](https://github.com/streetsidesoftware/cspell-dicts/issues/2370))
+
+### Features
+
+* Upgrade vi_VN format ([#2370](https://github.com/streetsidesoftware/cspell-dicts/issues/2370)) ([2266999](https://github.com/streetsidesoftware/cspell-dicts/commit/2266999b4bed8b17e94c6f9350af2ea05f23d901))
+
 ## [1.0.20](https://github.com/streetsidesoftware/cspell-dicts/compare/@cspell/dict-vi-vn@1.0.19...@cspell/dict-vi-vn@1.0.20) (2020-11-28)
 
 **Note:** Version bump only for package @cspell/dict-vi-vn
