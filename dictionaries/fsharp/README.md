@@ -1,4 +1,4 @@
-# CSpell f# Dictionary
+# CSpell F# Dictionary
 
 F# dictionary for cspell.
 
