@@ -22,6 +22,22 @@ See [Conventional Commits](https://conventionalcommits.org) for commit guideline
 
 
 
+## [4.0.0](https://github.com/streetsidesoftware/cspell-dicts/compare/@cspell/dict-lorem-ipsum@3.0.0...@cspell/dict-lorem-ipsum@4.0.0) (2023-08-02)
+
+
+### ⚠ BREAKING CHANGES
+
+* Upgrade Lorem Dict ([#2363](https://github.com/streetsidesoftware/cspell-dicts/issues/2363))
+
+### Features
+
+* Upgrade Lorem Dict ([#2363](https://github.com/streetsidesoftware/cspell-dicts/issues/2363)) ([1ff1e66](https://github.com/streetsidesoftware/cspell-dicts/commit/1ff1e66edd62e3e35b3072be6af7cb9303bbf6ea))
+
+
+### Updates and Bug Fixes
+
+* Fix lorem-ipsum files. ([#2380](https://github.com/streetsidesoftware/cspell-dicts/issues/2380)) ([fd54c37](https://github.com/streetsidesoftware/cspell-dicts/commit/fd54c375d59ba84c02b3d381d36a78cdc2d8e7c7))
+
 ## [3.0.0](https://github.com/streetsidesoftware/cspell-dicts/compare/@cspell/dict-lorem-ipsum@2.0.1...@cspell/dict-lorem-ipsum@3.0.0) (2022-10-10)
 
 
