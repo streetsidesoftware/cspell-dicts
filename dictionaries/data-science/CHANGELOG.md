@@ -1,5 +1,13 @@
 # Change Log
 
+## [1.0.10](https://github.com/streetsidesoftware/cspell-dicts/compare/@cspell/dict-data-science@1.0.9...@cspell/dict-data-science@1.0.10) (2023-08-07)
+
+
+### Updates and Bug Fixes
+
+* add Neuro-Symbolic etc. to data-science-terms ([#2398](https://github.com/streetsidesoftware/cspell-dicts/issues/2398)) ([2424e74](https://github.com/streetsidesoftware/cspell-dicts/commit/2424e740e357eafc0d4d5842eacfdc08edca0f59))
+* Workflow Bot -- Build Dictionaries ([#2396](https://github.com/streetsidesoftware/cspell-dicts/issues/2396)) ([7b592c3](https://github.com/streetsidesoftware/cspell-dicts/commit/7b592c3f6bef378b36e6daab8da67f109d955846))
+
 ## [1.0.9](https://github.com/streetsidesoftware/cspell-dicts/compare/@cspell/dict-data-science@1.0.8...@cspell/dict-data-science@1.0.9) (2023-08-02)
 
 
