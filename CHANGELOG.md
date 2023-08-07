@@ -1,5 +1,14 @@
 # Release Notes
 
+## [17.0.1](https://github.com/streetsidesoftware/cspell-dicts/compare/cspell-dicts@17.0.0...cspell-dicts@17.0.1) (2023-08-07)
+
+
+### Updates and Bug Fixes
+
+* add Deloitte Dezzai Lumitics Midjourney to companies.txt ([#2394](https://github.com/streetsidesoftware/cspell-dicts/issues/2394)) ([5bb0741](https://github.com/streetsidesoftware/cspell-dicts/commit/5bb0741df16f4459c7dc777bd573e53927aba02a))
+* add Neuro-Symbolic etc. to data-science-terms ([#2398](https://github.com/streetsidesoftware/cspell-dicts/issues/2398)) ([2424e74](https://github.com/streetsidesoftware/cspell-dicts/commit/2424e740e357eafc0d4d5842eacfdc08edca0f59))
+* Workflow Bot -- Build Dictionaries ([#2396](https://github.com/streetsidesoftware/cspell-dicts/issues/2396)) ([7b592c3](https://github.com/streetsidesoftware/cspell-dicts/commit/7b592c3f6bef378b36e6daab8da67f109d955846))
+
 ## [17.0.0](https://github.com/streetsidesoftware/cspell-dicts/compare/cspell-dicts@16.0.0...cspell-dicts@17.0.0) (2023-08-02)
 
 

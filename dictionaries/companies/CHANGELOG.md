@@ -3,6 +3,14 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+## [3.0.19](https://github.com/streetsidesoftware/cspell-dicts/compare/@cspell/dict-companies@3.0.18...@cspell/dict-companies@3.0.19) (2023-08-07)
+
+
+### Updates and Bug Fixes
+
+* add Deloitte Dezzai Lumitics Midjourney to companies.txt ([#2394](https://github.com/streetsidesoftware/cspell-dicts/issues/2394)) ([5bb0741](https://github.com/streetsidesoftware/cspell-dicts/commit/5bb0741df16f4459c7dc777bd573e53927aba02a))
+* Workflow Bot -- Build Dictionaries ([#2396](https://github.com/streetsidesoftware/cspell-dicts/issues/2396)) ([7b592c3](https://github.com/streetsidesoftware/cspell-dicts/commit/7b592c3f6bef378b36e6daab8da67f109d955846))
+
 ## [3.0.18](https://github.com/streetsidesoftware/cspell-dicts/compare/@cspell/dict-companies@3.0.17...@cspell/dict-companies@3.0.18) (2023-08-02)
 
 
