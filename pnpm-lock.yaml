@@ -321,7 +321,7 @@ importers:
   dictionaries/python:
     dependencies:
       '@cspell/dict-data-science':
-        specifier: ^1.0.0
+        specifier: workspace:^
         version: link:../data-science
 
   dictionaries/r: {}
