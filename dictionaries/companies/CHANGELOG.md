@@ -3,6 +3,14 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+## [3.0.20](https://github.com/streetsidesoftware/cspell-dicts/compare/@cspell/dict-companies@3.0.19...@cspell/dict-companies@3.0.20) (2023-08-21)
+
+
+### Updates and Bug Fixes
+
+* add RIMAS to companies ([#2399](https://github.com/streetsidesoftware/cspell-dicts/issues/2399)) ([990138f](https://github.com/streetsidesoftware/cspell-dicts/commit/990138fa925f78466fcf718cde869ac0220bbfe3))
+* Workflow Bot -- Build Dictionaries ([#2401](https://github.com/streetsidesoftware/cspell-dicts/issues/2401)) ([419b58e](https://github.com/streetsidesoftware/cspell-dicts/commit/419b58e1f7c3a56cc217ef59c19c23d2b3ca1f8e))
+
 ## [3.0.19](https://github.com/streetsidesoftware/cspell-dicts/compare/@cspell/dict-companies@3.0.18...@cspell/dict-companies@3.0.19) (2023-08-07)
 
 

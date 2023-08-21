@@ -1,5 +1,21 @@
 # Release Notes
 
+## [17.0.2](https://github.com/streetsidesoftware/cspell-dicts/compare/cspell-dicts@17.0.1...cspell-dicts@17.0.2) (2023-08-21)
+
+
+### Updates and Bug Fixes
+
+* add interpretability Synergizing to data-science-terms ([#2406](https://github.com/streetsidesoftware/cspell-dicts/issues/2406)) ([6ba9614](https://github.com/streetsidesoftware/cspell-dicts/commit/6ba961475530b6660325c266f63214247f4ddae0))
+* add pybindll docutils to common_packages ([#2402](https://github.com/streetsidesoftware/cspell-dicts/issues/2402)) ([d43abfc](https://github.com/streetsidesoftware/cspell-dicts/commit/d43abfcbf6127a0fa8f5cfca27836854b4dccb7f))
+* add RIMAS to companies ([#2399](https://github.com/streetsidesoftware/cspell-dicts/issues/2399)) ([990138f](https://github.com/streetsidesoftware/cspell-dicts/commit/990138fa925f78466fcf718cde869ac0220bbfe3))
+* Workflow Bot -- Build Dictionaries ([#2401](https://github.com/streetsidesoftware/cspell-dicts/issues/2401)) ([419b58e](https://github.com/streetsidesoftware/cspell-dicts/commit/419b58e1f7c3a56cc217ef59c19c23d2b3ca1f8e))
+* Workflow Bot -- Build Dictionaries ([#2404](https://github.com/streetsidesoftware/cspell-dicts/issues/2404)) ([03465cc](https://github.com/streetsidesoftware/cspell-dicts/commit/03465cc65b5edb1cd2f8e96a8e377c724d05cab6))
+* Workflow Bot -- Build Dictionaries ([#2405](https://github.com/streetsidesoftware/cspell-dicts/issues/2405)) ([9f30dca](https://github.com/streetsidesoftware/cspell-dicts/commit/9f30dca31e17b9fc68ff5815c100b3c062ccdc0a))
+* Workflow Bot -- Build Dictionaries ([#2410](https://github.com/streetsidesoftware/cspell-dicts/issues/2410)) ([f5e7365](https://github.com/streetsidesoftware/cspell-dicts/commit/f5e73652dbfa00d8c160588516520627fa80eb2a))
+* Workflow Bot -- Build Dictionaries ([#2412](https://github.com/streetsidesoftware/cspell-dicts/issues/2412)) ([971e6d4](https://github.com/streetsidesoftware/cspell-dicts/commit/971e6d4cd9bd38f1809b76c50451ce24e66d0122))
+* Workflow Bot -- Build Dictionaries ([#2416](https://github.com/streetsidesoftware/cspell-dicts/issues/2416)) ([d728dc8](https://github.com/streetsidesoftware/cspell-dicts/commit/d728dc818244edbc8b54700aa85d4012e482cc51))
+* Workflow Bot -- Build Dictionaries ([#2418](https://github.com/streetsidesoftware/cspell-dicts/issues/2418)) ([b5d98ef](https://github.com/streetsidesoftware/cspell-dicts/commit/b5d98ef8b69ed78f6c46abad3aa51f855a5a056b))
+
 ## [17.0.1](https://github.com/streetsidesoftware/cspell-dicts/compare/cspell-dicts@17.0.0...cspell-dicts@17.0.1) (2023-08-07)
 
 
