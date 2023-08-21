@@ -1,5 +1,12 @@
 # Release Notes
 
+## [17.0.3](https://github.com/streetsidesoftware/cspell-dicts/compare/cspell-dicts@17.0.2...cspell-dicts@17.0.3) (2023-08-21)
+
+
+### Updates and Bug Fixes
+
+* Make sure Python uses the latest data sci dict ([#2419](https://github.com/streetsidesoftware/cspell-dicts/issues/2419)) ([58cff32](https://github.com/streetsidesoftware/cspell-dicts/commit/58cff32aa67960723ebfcd883a73f4bd425ecdfc))
+
 ## [17.0.2](https://github.com/streetsidesoftware/cspell-dicts/compare/cspell-dicts@17.0.1...cspell-dicts@17.0.2) (2023-08-21)
 
 
