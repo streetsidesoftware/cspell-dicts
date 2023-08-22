@@ -22,6 +22,14 @@ See [Conventional Commits](https://conventionalcommits.org) for commit guideline
 
 
 
+## [4.0.7](https://github.com/streetsidesoftware/cspell-dicts/compare/@cspell/dict-css@4.0.6...@cspell/dict-css@4.0.7) (2023-08-22)
+
+
+### Updates and Bug Fixes
+
+* Add `srgb` to css ([#2424](https://github.com/streetsidesoftware/cspell-dicts/issues/2424)) ([f116770](https://github.com/streetsidesoftware/cspell-dicts/commit/f116770909e65b7091f2335fe2d1d25ab194138e))
+* Workflow Bot -- Build Dictionaries ([#2425](https://github.com/streetsidesoftware/cspell-dicts/issues/2425)) ([93acacb](https://github.com/streetsidesoftware/cspell-dicts/commit/93acacb11628732f6a90260c6820cb9a54853153))
+
 ## [4.0.6](https://github.com/streetsidesoftware/cspell-dicts/compare/@cspell/dict-css@4.0.5...@cspell/dict-css@4.0.6) (2023-04-26)
 
 
