@@ -1,5 +1,18 @@
 # Release Notes
 
+## [17.0.4](https://github.com/streetsidesoftware/cspell-dicts/compare/cspell-dicts@17.0.3...cspell-dicts@17.0.4) (2023-08-22)
+
+
+### Updates and Bug Fixes
+
+* Add `srgb` to css ([#2424](https://github.com/streetsidesoftware/cspell-dicts/issues/2424)) ([f116770](https://github.com/streetsidesoftware/cspell-dicts/commit/f116770909e65b7091f2335fe2d1d25ab194138e))
+* Workflow Bot -- Build Dictionaries ([#2425](https://github.com/streetsidesoftware/cspell-dicts/issues/2425)) ([93acacb](https://github.com/streetsidesoftware/cspell-dicts/commit/93acacb11628732f6a90260c6820cb9a54853153))
+
+
+### Build System
+
+* **deps:** bump streetsidesoftware/cspell-action from 2.26.3 to 3.0.0 ([#2421](https://github.com/streetsidesoftware/cspell-dicts/issues/2421)) ([6a5b011](https://github.com/streetsidesoftware/cspell-dicts/commit/6a5b01151730da04664c7b118f9eac9128f38e5a))
+
 ## [17.0.3](https://github.com/streetsidesoftware/cspell-dicts/compare/cspell-dicts@17.0.2...cspell-dicts@17.0.3) (2023-08-21)
 
 
