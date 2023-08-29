@@ -11,8 +11,8 @@
     "./cspell-ext.json": "./cspell-ext.json"
   },
   "scripts": {
-    "build": "cspell-tools-cli compile --keep-raw-case --use-legacy-splitter src/cryptocurrencies.txt --no-compress -o ./dict"  ,
-    "test": "shx head -n 100 src/cryptocurrencies.txt | cspell -v -c ./cspell-ext.json \"--local=*\" \"--languageId=*\" stdin",
+    "build": "cspell-tools-cli build",
+    "test": "cspell samples --no-progress",
     "prepublishOnly": "echo pre-publish",
     "prepare": "pnpm run build"
   },
