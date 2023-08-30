@@ -11,8 +11,8 @@
     "./cspell-ext.json": "./cspell-ext.json"
   },
   "scripts": {
-    "build": "cross-env NODE_OPTIONS=--max_old_space_size=12288 cspell-tools-cli compile --trie3 -x compound \"lt_LT.dic\" -o .",
-    "test": "hunspell-reader words -n 1000 \"lt_LT.dic\" | cspell -v -c ./cspell-ext.json --local=lt --languageId=* stdin",
+    "build": "cross-env NODE_OPTIONS=--max_old_space_size=12288 cspell-tools-cli compile --trie3 -x compound \"src/lt_LT.dic\" -o .",
+    "test": "hunspell-reader words -n 1000 \"src/lt_LT.dic\" | cspell -v -c ./cspell-ext.json --local=lt --languageId=* stdin",
     "prepublishOnly": "echo pre-publish"
   },
   "repository": {
