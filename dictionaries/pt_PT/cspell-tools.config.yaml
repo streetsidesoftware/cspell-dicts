@@ -4,7 +4,7 @@ $schema: https://raw.githubusercontent.com/streetsidesoftware/cspell/main/packag
 targets:
   - name: Portuguese-European
     targetDirectory: dict
-    compress: true
+    compress: false
     format: trie3
     sources:
       - src/hunspell/Portuguese-European.dic
