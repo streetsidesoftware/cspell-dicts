@@ -11,8 +11,11 @@
     "./cspell-ext.json": "./cspell-ext.json"
   },
   "scripts": {
-    "build": "cross-env NODE_OPTIONS=--max_old_space_size=12288 cspell-tools-cli compile --trie3 -x compound \"src/lt_LT.dic\" -o .",
-    "test": "hunspell-reader words -n 1000 \"src/lt_LT.dic\" | cspell -v -c ./cspell-ext.json --local=lt --languageId=* stdin",
+    "build": "cspell-tools-cli build",
+    "build:conditional": "cspell-tools-cli build --conditional && pnpm gz",
+    "gz": "cspell-tools-cli gzip \"*.trie\"",
+    "test": "cspell samples --no-progress",
+    "prepare": "pnpm gz",
     "prepublishOnly": "echo pre-publish"
   },
   "repository": {
@@ -33,8 +36,8 @@
   },
   "homepage": "https://github.com/streetsidesoftware/cspell-dicts/blob/main/dictionaries/lt_LT#readme",
   "files": [
-    "COPYING",
-    "AUTHORS",
+    "src/hunspell/COPYING",
+    "src/hunspell/AUTHORS",
     "lt_LT.trie.gz",
     "cspell-ext.json"
   ]
