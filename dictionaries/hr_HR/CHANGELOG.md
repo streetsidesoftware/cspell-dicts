@@ -33,6 +33,17 @@ See [Conventional Commits](https://conventionalcommits.org) for commit guideline
 
 
 
+## [3.0.0](https://github.com/streetsidesoftware/cspell-dicts/compare/@cspell/dict-hr-hr@2.0.0...@cspell/dict-hr-hr@3.0.0) (2023-08-31)
+
+
+### ⚠ BREAKING CHANGES
+
+* Upgrade hr_HR Dictionary ([#2441](https://github.com/streetsidesoftware/cspell-dicts/issues/2441))
+
+### Features
+
+* Upgrade hr_HR Dictionary ([#2441](https://github.com/streetsidesoftware/cspell-dicts/issues/2441)) ([1ed7f21](https://github.com/streetsidesoftware/cspell-dicts/commit/1ed7f214071eb596238f618b5e00384acf4c4d2e))
+
 ## [1.0.8](https://github.com/streetsidesoftware/cspell-dicts/compare/@cspell/dict-hr-hr@1.0.7...@cspell/dict-hr-hr@1.0.8) (2020-11-28)
 
 **Note:** Version bump only for package @cspell/dict-hr-hr

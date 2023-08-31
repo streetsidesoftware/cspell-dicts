@@ -22,6 +22,17 @@ See [Conventional Commits](https://conventionalcommits.org) for commit guideline
 
 
 
+## [3.0.0](https://github.com/streetsidesoftware/cspell-dicts/compare/@cspell/dict-pt-pt@2.0.0...@cspell/dict-pt-pt@3.0.0) (2023-08-31)
+
+
+### ⚠ BREAKING CHANGES
+
+* Upgrade pt_PT Dictionary ([#2435](https://github.com/streetsidesoftware/cspell-dicts/issues/2435))
+
+### Features
+
+* Upgrade pt_PT Dictionary ([#2435](https://github.com/streetsidesoftware/cspell-dicts/issues/2435)) ([c067e24](https://github.com/streetsidesoftware/cspell-dicts/commit/c067e24a41459b7102b2366279f89f91ddda4ed6))
+
 ## [1.0.25](https://github.com/streetsidesoftware/cspell-dicts/compare/@cspell/dict-pt-pt@1.0.24...@cspell/dict-pt-pt@1.0.25) (2021-05-25)
 
 **Note:** Version bump only for package @cspell/dict-pt-pt
