@@ -1,6 +1,6 @@
 {
   "name": "@cspell/dict-hr-hr",
-  "version": "2.0.0",
+  "version": "3.0.0",
   "description": "Croatian dictionary for cspell.",
   "publishConfig": {
     "access": "public"
@@ -11,10 +11,12 @@
     "./cspell-ext.json": "./cspell-ext.json"
   },
   "scripts": {
-    "build": "cross-env NODE_OPTIONS=--max_old_space_size=8192 cspell-tools compile-trie \"src/hr_HR.dic\" -o .",
-    "test": "hunspell-reader words -n 1000 \"src/hr_HR.dic\" | cspell -v -c ./cspell-ext.json \"--local=hr\" \"--languageId=*\" stdin",
+    "build": "cspell-tools-cli build",
+    "build:conditional": "cspell-tools-cli build --conditional && pnpm gz",
+    "gz": "cspell-tools-cli gzip \"dict/*.trie\"",
+    "test": "cspell samples --no-progress",
     "prepublishOnly": "echo pre-publish",
-    "prepare": "echo OK"
+    "prepare": "pnpm gz"
   },
   "repository": {
     "type": "git",
@@ -28,13 +30,13 @@
     "spelling"
   ],
   "author": "Jason Dent",
-  "license": "MIT",
+  "license": "LGPL-3.0",
   "bugs": {
     "url": "https://github.com/streetsidesoftware/cspell-dicts/issues"
   },
   "homepage": "https://github.com/streetsidesoftware/cspell-dicts/blob/main/dictionaries/hr_HR#readme",
   "files": [
-    "hr_HR.trie.gz",
+    "dict/hr_HR.trie.gz",
     "cspell-ext.json",
     "src/README.md",
     "src/README_hr_HR.txt"

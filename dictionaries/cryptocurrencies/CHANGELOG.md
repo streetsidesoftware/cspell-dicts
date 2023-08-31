@@ -22,6 +22,24 @@ See [Conventional Commits](https://conventionalcommits.org) for commit guideline
 
 
 
+## [4.0.0](https://github.com/streetsidesoftware/cspell-dicts/compare/@cspell/dict-cryptocurrencies@3.0.1...@cspell/dict-cryptocurrencies@4.0.0) (2023-08-31)
+
+
+### ⚠ BREAKING CHANGES
+
+* Upgrade Crypto Currencies Dictionary ([#2432](https://github.com/streetsidesoftware/cspell-dicts/issues/2432))
+
+### Features
+
+* Upgrade Crypto Currencies Dictionary ([#2432](https://github.com/streetsidesoftware/cspell-dicts/issues/2432)) ([c54657b](https://github.com/streetsidesoftware/cspell-dicts/commit/c54657b4a1d3568aba907d51972424165c6f8b9a))
+
+
+### Updates and Bug Fixes
+
+* Adjust crypto license ([#2451](https://github.com/streetsidesoftware/cspell-dicts/issues/2451)) ([6b20822](https://github.com/streetsidesoftware/cspell-dicts/commit/6b208226113b668ce8333a304c70042355a52d6c))
+* Split out Crypto currencies and terms into their own files. ([#2437](https://github.com/streetsidesoftware/cspell-dicts/issues/2437)) ([f59ec98](https://github.com/streetsidesoftware/cspell-dicts/commit/f59ec98d355466ae587a50d9e2f209cfc5f7ff3f))
+* Workflow Bot -- Build Dictionaries ([#2438](https://github.com/streetsidesoftware/cspell-dicts/issues/2438)) ([4d9554f](https://github.com/streetsidesoftware/cspell-dicts/commit/4d9554f122407c2655d055a7b4ca4f8763e7cf32))
+
 ## [3.0.1](https://github.com/streetsidesoftware/cspell-dicts/compare/@cspell/dict-cryptocurrencies@3.0.0...@cspell/dict-cryptocurrencies@3.0.1) (2022-10-31)
 
 

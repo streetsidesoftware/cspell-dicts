@@ -1,6 +1,6 @@
 {
   "name": "@cspell/dict-medicalterms",
-  "version": "3.0.0",
+  "version": "4.0.0",
   "description": "Medical Terms dictionary for cspell.",
   "publishConfig": {
     "access": "public"
@@ -11,10 +11,9 @@
     "./cspell-ext.json": "./cspell-ext.json"
   },
   "scripts": {
-    "build": "cspell-tools compile \"./node_modules/wordlist-medicalterms-en/wordlist.txt\" -o . --merge medicalterms-en.txt",
-    "test-wordlist": "shx head -n 100 \"./node_modules/wordlist-medicalterms-en/wordlist.txt\" | cspell -v -c ./cspell-ext.json --local=* --languageId=* stdin",
-    "test-samples": "cspell -v samples/**",
-    "test": "pnpm run test-wordlist && pnpm run test-samples",
+    "build": "cspell-tools-cli build",
+    "build:conditional": "pnpm build --conditional",
+    "test": "cspell samples --no-progress",
     "prepublishOnly": "echo pre-publish",
     "prepare": "pnpm run build"
   },

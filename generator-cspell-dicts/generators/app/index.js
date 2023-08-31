@@ -77,7 +77,7 @@ module.exports = class extends Generator {
             {
                 type: 'confirm',
                 name: 'useTrie',
-                message: 'Store as Trie',
+                message: 'Store as Trie: Mainly used for natural language dictionaries to store their large sizes.',
                 default: (props) => ['.dic', '.aff'].includes(path.extname(props.srcFile)),
             },
             {
@@ -168,7 +168,7 @@ module.exports = class extends Generator {
     }
 
     install() {
-        this.spawnCommandSync('pnpm');
+        this.spawnCommandSync('pnpm', ['install']);
     }
 
     end() {

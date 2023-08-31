@@ -1,5 +1,38 @@
 # Release Notes
 
+## [18.0.0](https://github.com/streetsidesoftware/cspell-dicts/compare/cspell-dicts@17.0.4...cspell-dicts@18.0.0) (2023-08-31)
+
+
+### ⚠ BREAKING CHANGES
+
+* Upgrade pt_PT Dictionary ([#2435](https://github.com/streetsidesoftware/cspell-dicts/issues/2435))
+* Upgrade lt_LT Dictionary ([#2440](https://github.com/streetsidesoftware/cspell-dicts/issues/2440))
+* Upgrade hr_HR Dictionary ([#2441](https://github.com/streetsidesoftware/cspell-dicts/issues/2441))
+* Upgrade Medical Terms Dictionary ([#2439](https://github.com/streetsidesoftware/cspell-dicts/issues/2439))
+* Upgrade Crypto Currencies Dictionary ([#2432](https://github.com/streetsidesoftware/cspell-dicts/issues/2432))
+
+### Features
+
+* Upgrade Crypto Currencies Dictionary ([#2432](https://github.com/streetsidesoftware/cspell-dicts/issues/2432)) ([c54657b](https://github.com/streetsidesoftware/cspell-dicts/commit/c54657b4a1d3568aba907d51972424165c6f8b9a))
+* Upgrade hr_HR Dictionary ([#2441](https://github.com/streetsidesoftware/cspell-dicts/issues/2441)) ([1ed7f21](https://github.com/streetsidesoftware/cspell-dicts/commit/1ed7f214071eb596238f618b5e00384acf4c4d2e))
+* Upgrade lt_LT Dictionary ([#2440](https://github.com/streetsidesoftware/cspell-dicts/issues/2440)) ([5a4960c](https://github.com/streetsidesoftware/cspell-dicts/commit/5a4960c29167f7d0a56df281e3a31ea466dc68c3))
+* Upgrade Medical Terms Dictionary ([#2439](https://github.com/streetsidesoftware/cspell-dicts/issues/2439)) ([6e26d00](https://github.com/streetsidesoftware/cspell-dicts/commit/6e26d001f4795bf2c5da698aba3c71acb088aecf))
+* Upgrade pt_PT Dictionary ([#2435](https://github.com/streetsidesoftware/cspell-dicts/issues/2435)) ([c067e24](https://github.com/streetsidesoftware/cspell-dicts/commit/c067e24a41459b7102b2366279f89f91ddda4ed6))
+
+
+### Updates and Bug Fixes
+
+* Add "Backoff" to the software terms dict ([#2426](https://github.com/streetsidesoftware/cspell-dicts/issues/2426)) ([657ace3](https://github.com/streetsidesoftware/cspell-dicts/commit/657ace30ef238d97de17f70094fabe657b7e7222))
+* add "crafter" to en_shared ([#2431](https://github.com/streetsidesoftware/cspell-dicts/issues/2431)) ([c28e010](https://github.com/streetsidesoftware/cspell-dicts/commit/c28e010bc17b21cc687b80d6da978934281f91f4))
+* Adjust crypto license ([#2451](https://github.com/streetsidesoftware/cspell-dicts/issues/2451)) ([6b20822](https://github.com/streetsidesoftware/cspell-dicts/commit/6b208226113b668ce8333a304c70042355a52d6c))
+* Make sure `backoff` is in `src` not just `dict` ([e4e6411](https://github.com/streetsidesoftware/cspell-dicts/commit/e4e641177924852c67f93aa58cc581cd5128b939))
+* Split out Crypto currencies and terms into their own files. ([#2437](https://github.com/streetsidesoftware/cspell-dicts/issues/2437)) ([f59ec98](https://github.com/streetsidesoftware/cspell-dicts/commit/f59ec98d355466ae587a50d9e2f209cfc5f7ff3f))
+* Workflow Bot -- Build Dictionaries ([#2429](https://github.com/streetsidesoftware/cspell-dicts/issues/2429)) ([73674ea](https://github.com/streetsidesoftware/cspell-dicts/commit/73674ea0b04a1d5dfe50b027911d3d6f39cc70f7))
+* Workflow Bot -- Build Dictionaries ([#2433](https://github.com/streetsidesoftware/cspell-dicts/issues/2433)) ([1ef66fd](https://github.com/streetsidesoftware/cspell-dicts/commit/1ef66fde5d66a73aa76939d8642e9754e2995d19))
+* Workflow Bot -- Build Dictionaries ([#2438](https://github.com/streetsidesoftware/cspell-dicts/issues/2438)) ([4d9554f](https://github.com/streetsidesoftware/cspell-dicts/commit/4d9554f122407c2655d055a7b4ca4f8763e7cf32))
+* Workflow Bot -- Build Dictionaries ([#2450](https://github.com/streetsidesoftware/cspell-dicts/issues/2450)) ([4878d59](https://github.com/streetsidesoftware/cspell-dicts/commit/4878d59317ea7249886d2ef172c197e0c2d765ed))
+* Workflow Bot -- Build Dictionaries ([#2452](https://github.com/streetsidesoftware/cspell-dicts/issues/2452)) ([cb73c09](https://github.com/streetsidesoftware/cspell-dicts/commit/cb73c09cf3a6a7f1edbc75ea0da6d441b972b6d7))
+
 ## [17.0.4](https://github.com/streetsidesoftware/cspell-dicts/compare/cspell-dicts@17.0.3...cspell-dicts@17.0.4) (2023-08-22)
 
 

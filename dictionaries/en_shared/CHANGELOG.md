@@ -1,5 +1,12 @@
 # Change Log
 
+## [1.0.5](https://github.com/streetsidesoftware/cspell-dicts/compare/@cspell/dict-en-shared@1.0.4...@cspell/dict-en-shared@1.0.5) (2023-08-31)
+
+
+### Updates and Bug Fixes
+
+* add "crafter" to en_shared ([#2431](https://github.com/streetsidesoftware/cspell-dicts/issues/2431)) ([c28e010](https://github.com/streetsidesoftware/cspell-dicts/commit/c28e010bc17b21cc687b80d6da978934281f91f4))
+
 ## [1.0.4](https://github.com/streetsidesoftware/cspell-dicts/compare/@cspell/dict-en-shared@1.0.3...@cspell/dict-en-shared@1.0.4) (2023-03-23)
 
 

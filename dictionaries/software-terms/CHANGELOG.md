@@ -3,6 +3,15 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+## [3.2.2](https://github.com/streetsidesoftware/cspell-dicts/compare/@cspell/dict-software-terms@3.2.1...@cspell/dict-software-terms@3.2.2) (2023-08-31)
+
+
+### Updates and Bug Fixes
+
+* Add "Backoff" to the software terms dict ([#2426](https://github.com/streetsidesoftware/cspell-dicts/issues/2426)) ([657ace3](https://github.com/streetsidesoftware/cspell-dicts/commit/657ace30ef238d97de17f70094fabe657b7e7222))
+* Make sure `backoff` is in `src` not just `dict` ([e4e6411](https://github.com/streetsidesoftware/cspell-dicts/commit/e4e641177924852c67f93aa58cc581cd5128b939))
+* Workflow Bot -- Build Dictionaries ([#2429](https://github.com/streetsidesoftware/cspell-dicts/issues/2429)) ([73674ea](https://github.com/streetsidesoftware/cspell-dicts/commit/73674ea0b04a1d5dfe50b027911d3d6f39cc70f7))
+
 ## [3.2.1](https://github.com/streetsidesoftware/cspell-dicts/compare/@cspell/dict-software-terms@3.2.0...@cspell/dict-software-terms@3.2.1) (2023-08-02)
 
 

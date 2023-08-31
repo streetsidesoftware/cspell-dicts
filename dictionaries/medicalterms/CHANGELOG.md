@@ -22,6 +22,23 @@ See [Conventional Commits](https://conventionalcommits.org) for commit guideline
 
 
 
+## [4.0.0](https://github.com/streetsidesoftware/cspell-dicts/compare/@cspell/dict-medicalterms@3.0.0...@cspell/dict-medicalterms@4.0.0) (2023-08-31)
+
+
+### ⚠ BREAKING CHANGES
+
+* Upgrade Medical Terms Dictionary ([#2439](https://github.com/streetsidesoftware/cspell-dicts/issues/2439))
+
+### Features
+
+* Upgrade Medical Terms Dictionary ([#2439](https://github.com/streetsidesoftware/cspell-dicts/issues/2439)) ([6e26d00](https://github.com/streetsidesoftware/cspell-dicts/commit/6e26d001f4795bf2c5da698aba3c71acb088aecf))
+
+
+### Updates and Bug Fixes
+
+* Workflow Bot -- Build Dictionaries ([#2450](https://github.com/streetsidesoftware/cspell-dicts/issues/2450)) ([4878d59](https://github.com/streetsidesoftware/cspell-dicts/commit/4878d59317ea7249886d2ef172c197e0c2d765ed))
+* Workflow Bot -- Build Dictionaries ([#2452](https://github.com/streetsidesoftware/cspell-dicts/issues/2452)) ([cb73c09](https://github.com/streetsidesoftware/cspell-dicts/commit/cb73c09cf3a6a7f1edbc75ea0da6d441b972b6d7))
+
 ## [3.0.0](https://github.com/streetsidesoftware/cspell-dicts/compare/@cspell/dict-medicalterms@2.0.0...@cspell/dict-medicalterms@3.0.0) (2022-10-10)
 
 
