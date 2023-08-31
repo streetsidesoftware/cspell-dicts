@@ -11,9 +11,11 @@
     "./cspell-ext.json": "./cspell-ext.json"
   },
   "scripts": {
-    "build": "cspell-tools-cli compile --trie3 -x compound \"src/Portuguese-European.dic\" -o .",
-    "test": "hunspell-reader words -n 1000 \"src/Portuguese-European.dic\" | cspell -v -c ./cspell-ext.json --local=pt --languageId=* stdin",
-    "prepublishOnly": "echo pre-publish"
+    "build": "cspell-tools-cli build",
+    "build:conditional": "cspell-tools-cli build --conditional && pnpm gz",
+    "gz": "cspell-tools-cli gzip \"dict/*.trie\"",
+    "prepare": "pnpm run gz",
+    "test": "cspell samples"
   },
   "repository": {
     "type": "git",
@@ -27,14 +29,14 @@
     "spelling"
   ],
   "author": "Jason Dent",
-  "license": "MIT",
+  "license": "LGPL-3.0",
   "bugs": {
     "url": "https://github.com/streetsidesoftware/cspell-dicts/issues"
   },
   "homepage": "https://github.com/streetsidesoftware/cspell-dicts/blob/main/dictionaries/pt_PT#readme",
   "files": [
-    "Portuguese-European.trie.gz",
+    "dict/Portuguese-European.trie.gz",
     "cspell-ext.json",
-    "Portuguese-European.txt"
+    "src/hunspell/LICENSE"
   ]
 }
