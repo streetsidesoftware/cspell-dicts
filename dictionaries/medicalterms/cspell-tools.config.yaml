@@ -1,0 +1,13 @@
+# yaml-language-server: $schema=https://raw.githubusercontent.com/streetsidesoftware/cspell/main/packages/cspell-tools/cspell-tools.config.schema.json
+
+$schema: https://raw.githubusercontent.com/streetsidesoftware/cspell/main/packages/cspell-tools/cspell-tools.config.schema.json
+targets:
+  - name: medicalterms-en.txt
+    targetDirectory: .
+    compress: true
+    format: plaintext
+    sources:
+      - node_modules/wordlist-medicalterms-en/wordlist.txt
+      - src/additional_words.txt
+    sort: true
+checksumFile: true
