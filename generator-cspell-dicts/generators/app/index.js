@@ -168,7 +168,7 @@ module.exports = class extends Generator {
     }
 
     install() {
-        this.spawnCommandSync('pnpm');
+        this.spawnCommandSync('pnpm', ['install']);
     }
 
     end() {
