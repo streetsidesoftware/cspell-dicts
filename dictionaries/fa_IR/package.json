@@ -11,9 +11,12 @@
     "./cspell-ext.json": "./cspell-ext.json"
   },
   "scripts": {
-    "build": "cspell-tools-cli compile --trie3 -x compound \"hunspell/fa-IR.dic\" -o .",
-    "test": "hunspell-reader words -n 10000 \"hunspell/fa-IR.dic\" |  cspell -v --local=fa --languageId=* stdin",
-    "prepublishOnly": "echo pre-publish"
+    "build": "cspell-tools-cli build",
+    "build:conditional": "cspell-tools-cli build --conditional && pnpm gz",
+    "gz": "cspell-tools-cli gzip \"*.trie\"",
+    "test": "cspell samples --no-progress",
+    "prepublishOnly": "echo pre-publish",
+    "prepare": "pnpm gz"
   },
   "repository": {
     "type": "git",
