@@ -11,8 +11,8 @@
     "./cspell-ext.json": "./cspell-ext.json"
   },
   "scripts": {
-    "build": "cspell-tools compile-trie \"Portuguese-European.dic\" -o .",
-    "test": "hunspell-reader words -n 1000 \"Portuguese-European.dic\" | cspell -v -c ./cspell-ext.json --local=pt --languageId=* stdin",
+    "build": "cspell-tools-cli compile --trie3 -x compound \"src/Portuguese-European.dic\" -o .",
+    "test": "hunspell-reader words -n 1000 \"src/Portuguese-European.dic\" | cspell -v -c ./cspell-ext.json --local=pt --languageId=* stdin",
     "prepublishOnly": "echo pre-publish"
   },
   "repository": {
