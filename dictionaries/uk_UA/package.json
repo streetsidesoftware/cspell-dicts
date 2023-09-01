@@ -11,14 +11,10 @@
     "./cspell-ext.json": "./cspell-ext.json"
   },
   "scripts": {
-    "#build": "cspell-tools-cli compile --trie3 -x compound compile-trie \"uk_ua.dic\" -o .",
-    "#test": "hunspell-reader words -n 1000 \"uk_ua.dic\" | cspell -v -c ./cspell-ext.json --local=uk --languageId=* stdin",
     "build": "pnpm run compile",
     "sync": "pnpm cpy \"node_modules/dictionary-uk/**\" src/hunspell",
-    "checksum": "cspell-tools-cli shasum -c checksum.txt",
-    "compile": "cspell-tools-cli build && pnpm run gen-checksum",
-    "conditional-build": "pnpm run sync && pnpm run --silent checksum || pnpm run build",
-    "gen-checksum": "cspell-tools-cli shasum -u checksum.txt --list-file source-files.txt source-dependencies.txt",
+    "compile": "cspell-tools-cli build",
+    "conditional-build": "pnpm sync && pnpm build --conditional",
     "test-dict": "hunspell-reader words -n 1000 \"src/hunspell/index.dic\" | cspell -v -c ./cspell-ext.json --local=uk --languageId=* stdin",
     "test-text": "cspell samples",
     "test": "pnpm run test-dict && pnpm run test-text",

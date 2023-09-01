@@ -11,7 +11,6 @@
     "./cspell-ext.json": "./cspell-ext.json"
   },
   "scripts": {
-    "build:old": "cspell-tools-cli compile --trie3 -x compound \"src/hunspell/Turkish.dic\" -o .",
     "build": "cspell-tools-cli build && pnpm gz",
     "build:conditional": "cspell-tools-cli build --conditional && pnpm gz",
     "gz": "cspell-tools-cli gzip \"*.trie\"",

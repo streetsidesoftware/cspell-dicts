@@ -1,14 +1,15 @@
 # yaml-language-server: $schema=https://raw.githubusercontent.com/streetsidesoftware/cspell/main/packages/cspell-tools/cspell-tools.config.schema.json
 
+$schema: https://raw.githubusercontent.com/streetsidesoftware/cspell/main/packages/cspell-tools/cspell-tools.config.schema.json
 targets:
-  - name: el_GR
+  - name: Swedish
     targetDirectory: .
     compress: false
     format: trie3
     sources:
-      - src/hunspell/index.dic
-      - src/Greek.txt
       - src/additional_words.txt
-      - src/Greek.ALLCAPS.txt
+      - src/hunspell/index.dic
+      - src/ooo-swedish-dict-2-42/dictionaries/sv_SE.dic
+      - src/open-office-2008/Swedish.dic
     generateNonStrict: true
 checksumFile: true

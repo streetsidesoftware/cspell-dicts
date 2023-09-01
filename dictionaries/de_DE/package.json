@@ -11,22 +11,16 @@
     "./cspell-ext.json": "./cspell-ext.json"
   },
   "scripts": {
-    "build": "cross-env NODE_OPTIONS=--max_old_space_size=12288 cspell-tools-cli build && pnpm run gen-checksum",
+    "build": "cspell-tools-cli build && pnpm gz",
+    "conditional-build": "pnpm run sync && cspell-tools-cli build --conditional && pnpm gz",
     "sync": "pnpm cpy \"node_modules/dictionary-de/**\" src/hunspell",
-    "checksum": "cspell-tools-cli shasum -c checksum.txt",
-    "conditional-build": "pnpm run --silent checksum || pnpm run build",
-    "gen-checksum": "cspell-tools-cli shasum -u checksum.txt --list-file source-files.txt source-dependencies.txt",
     "test-de": "hunspell-reader words -n 1000 \"src/hunspell/index.dic\" | cspell -v -c ./cspell-ext.json --local=de --languageId=* stdin",
     "test-de-old": "hunspell-reader words -n 1000 \"src/German_de_DE.dic\" | cspell -v -c ./cspell-ext.json --local=de --languageId=* stdin",
     "test-samples": "cspell -v -c ./cspell-ext.json --local=de,en \"samples/**\"",
     "test": "pnpm run test-de && pnpm run test-samples && pnpm run test-de-old",
-    "prepare:dictionary": "cspell-tools-cli gzip \"*.trie\"",
+    "gz": "cspell-tools-cli gzip \"*.trie\"",
+    "prepare:dictionary": "pnpm gz",
     "prepublishOnly": "pnpm run conditional-build && pnpm test"
-  },
-  "scriptsX": {
-    "build": "cross-env NODE_OPTIONS=--max_old_space_size=4096 cspell-tools compile-trie \"src/German_de_DE.dic\" -M German_de_DE -o .",
-    "test": "hunspell-reader words -n 1000 \"German_de_DE.dic\" | cspell -v -c ./cspell-ext.json --local=de --languageId=* stdin",
-    "prepublishOnly": "echo pre-publish"
   },
   "repository": {
     "type": "git",
