@@ -12,6 +12,7 @@
   },
   "scripts": {
     "build": "cspell-tools-cli build && pnpm gz",
+    "conditional-build": "cspell-tools-cli build --conditional && pnpm gz",
     "test": "cspell samples",
     "gz": "cspell-tools-cli gzip \"*.trie\"",
     "prepare:dictionary": "pnpm gz",
