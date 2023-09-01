@@ -6,6 +6,7 @@ targets:
     compress: false
     format: trie3
     sources:
-      - listFile: source-files.txt
-    sort: true
-generateNonStrict: true
+      - src/additional_tokens.txt
+      - src/sr.dic
+    generateNonStrict: true
+checksumFile: true
