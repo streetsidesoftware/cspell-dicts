@@ -23,11 +23,6 @@
     "prepare:dictionary": "cspell-tools-cli gzip \"*.trie\"",
     "prepublishOnly": "pnpm run conditional-build && pnpm test"
   },
-  "scriptsX": {
-    "build": "cross-env NODE_OPTIONS=--max_old_space_size=4096 cspell-tools compile-trie \"src/German_de_DE.dic\" -M German_de_DE -o .",
-    "test": "hunspell-reader words -n 1000 \"German_de_DE.dic\" | cspell -v -c ./cspell-ext.json --local=de --languageId=* stdin",
-    "prepublishOnly": "echo pre-publish"
-  },
   "repository": {
     "type": "git",
     "url": "git+https://github.com/streetsidesoftware/cspell-dicts.git"
