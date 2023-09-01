@@ -11,15 +11,15 @@
     "./cspell-ext.json": "./cspell-ext.json"
   },
   "scripts": {
-    "compile-all-caps": "node ./tools/toCaps.mjs ./src/Greek.txt ./src/Greek.ALLCAPS.txt",
+    "build": "pnpm build:pre && pnpm run build:dictionary && pnpm build:post",
+    "build:pre": "pnpm sync && pnpm run compile-all-caps",
+    "build:post": "pnpm gz",
     "build:dictionary": "cspell-tools-cli build",
-    "build:gz": "cspell-tools-cli gzip \"*.trie\"",
-    "build": "pnpm run compile-all-caps && pnpm run build:dictionary && pnpm build:gz && pnpm gen-checksum",
+    "conditional-build": "pnpm build:pre && pnpm run build:dictionary --conditional && pnpm build:post",
+    "compile-all-caps": "node ./tools/toCaps.mjs ./src/Greek.txt ./src/Greek.ALLCAPS.txt",
     "sync": "pnpm cpy \"node_modules/dictionary-el/{*.dic,*.aff,*.md,**/license}\" src/hunspell",
-    "checksum": "cspell-tools-cli shasum -c checksum.txt",
-    "conditional-build": "pnpm run --silent checksum || pnpm run build",
-    "gen-checksum": "cspell-tools-cli shasum -u checksum.txt --list-file source-files.txt source-dependencies.txt",
-    "prepare:dictionary": "pnpm run build:gz",
+    "gz": "cspell-tools-cli gzip \"*.trie\"",
+    "prepare:dictionary": "pnpm gz",
     "test": "shx head -n 1000 ./src/Greek.txt | cspell -v -c cspell-ext.json --local=el stdin"
   },
   "repository": {

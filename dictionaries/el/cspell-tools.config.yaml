@@ -6,6 +6,9 @@ targets:
     compress: false
     format: trie3
     sources:
-      - listFile: source-files.txt
+      - src/hunspell/index.dic
+      - src/Greek.txt
+      - src/additional_words.txt
       - src/Greek.ALLCAPS.txt
     generateNonStrict: true
+checksumFile: true
