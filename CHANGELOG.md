@@ -1,5 +1,23 @@
 # Release Notes
 
+## [19.0.0](https://github.com/streetsidesoftware/cspell-dicts/compare/cspell-dicts@18.0.0...cspell-dicts@19.0.0) (2023-09-01)
+
+
+### ⚠ BREAKING CHANGES
+
+* Upgrade fa_IR Dictionary ([#2454](https://github.com/streetsidesoftware/cspell-dicts/issues/2454))
+
+### Features
+
+* Upgrade fa_IR Dictionary ([#2454](https://github.com/streetsidesoftware/cspell-dicts/issues/2454)) ([74de119](https://github.com/streetsidesoftware/cspell-dicts/commit/74de1198aa9d64eb8d53ce44a16ef9ed04dc6b27))
+
+
+### Updates and Bug Fixes
+
+* add xiaomi to companies ([#2460](https://github.com/streetsidesoftware/cspell-dicts/issues/2460)) ([9fcba04](https://github.com/streetsidesoftware/cspell-dicts/commit/9fcba04f794b0b7d923d8182a491083cb25eece3))
+* Workflow Bot -- Build Dictionaries ([#2457](https://github.com/streetsidesoftware/cspell-dicts/issues/2457)) ([e6290ec](https://github.com/streetsidesoftware/cspell-dicts/commit/e6290ecc15796f1dcdc0711da61de572c775d1ac))
+* Workflow Bot -- Build Dictionaries ([#2461](https://github.com/streetsidesoftware/cspell-dicts/issues/2461)) ([c7ee44e](https://github.com/streetsidesoftware/cspell-dicts/commit/c7ee44e093b228df43620452995aecb0cc60b715))
+
 ## [18.0.0](https://github.com/streetsidesoftware/cspell-dicts/compare/cspell-dicts@17.0.4...cspell-dicts@18.0.0) (2023-08-31)
 
 

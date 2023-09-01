@@ -22,6 +22,17 @@ See [Conventional Commits](https://conventionalcommits.org) for commit guideline
 
 
 
+## [3.0.0](https://github.com/streetsidesoftware/cspell-dicts/compare/@cspell/dict-fa-ir@2.0.0...@cspell/dict-fa-ir@3.0.0) (2023-09-01)
+
+
+### ⚠ BREAKING CHANGES
+
+* Upgrade fa_IR Dictionary ([#2454](https://github.com/streetsidesoftware/cspell-dicts/issues/2454))
+
+### Features
+
+* Upgrade fa_IR Dictionary ([#2454](https://github.com/streetsidesoftware/cspell-dicts/issues/2454)) ([74de119](https://github.com/streetsidesoftware/cspell-dicts/commit/74de1198aa9d64eb8d53ce44a16ef9ed04dc6b27))
+
 ## [1.0.17](https://github.com/streetsidesoftware/cspell-dicts/compare/@cspell/dict-fa-ir@1.0.16...@cspell/dict-fa-ir@1.0.17) (2020-11-28)
 
 **Note:** Version bump only for package @cspell/dict-fa-ir
