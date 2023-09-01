@@ -16,7 +16,7 @@
     "test-src": "shx head -n 10000 \"src/win32.txt\" | cspell -v -c ./cspell.json \"--local=*\" stdin",
     "test-samples": "cspell samples/**",
     "prepublishOnly": "echo pre-publish",
-    "prepare": "pnpm run build"
+    "prepare:dictionary": "pnpm run build"
   },
   "repository": {
     "type": "git",

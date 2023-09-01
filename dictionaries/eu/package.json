@@ -18,7 +18,7 @@
     "test": "hunspell-reader words -n 1000 -m 1 \"src/eu.dic\" | cspell -v -c ./cspell-ext.json \"--local=eu\" \"--languageId=*\" stdin",
     "gen-checksum": "cspell-tools-cli shasum -u checksum.txt --list-file source-dependencies.txt",
     "prepublishOnly": "echo OK",
-    "prepare": "echo OK"
+    "prepare:dictionary": "echo OK"
   },
   "repository": {
     "type": "git",

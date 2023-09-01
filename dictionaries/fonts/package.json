@@ -14,7 +14,7 @@
     "build": "cspell-tools-cli compile --keep-raw-case --use-legacy-splitter src/fonts.txt --no-compress -o ./dict",
     "test": "shx head -n 100 src/fonts.txt | cspell -v -c ./cspell.json \"--local=*\" \"--languageId=*\" stdin",
     "prepublishOnly": "echo pre-publish",
-    "prepare": "pnpm run build"
+    "prepare:dictionary": "pnpm run build"
   },
   "repository": {
     "type": "git",

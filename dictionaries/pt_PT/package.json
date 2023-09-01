@@ -14,7 +14,7 @@
     "build": "cspell-tools-cli build",
     "build:conditional": "cspell-tools-cli build --conditional && pnpm gz",
     "gz": "cspell-tools-cli gzip \"dict/*.trie\"",
-    "prepare": "pnpm run gz",
+    "prepare:dictionary": "pnpm run gz",
     "test": "cspell samples"
   },
   "repository": {

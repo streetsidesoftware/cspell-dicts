@@ -15,7 +15,7 @@
     "build:conditional": "pnpm build --conditional",
     "test": "cspell samples --no-progress",
     "prepublishOnly": "echo pre-publish",
-    "prepare": "pnpm run build"
+    "prepare:dictionary": "pnpm run build"
   },
   "repository": {
     "type": "git",

@@ -19,7 +19,7 @@
     "test-de": "hunspell-reader words -n 1000 \"src/hunspell/index.dic\" | cspell -v -c ./cspell-ext.json --local=da-DK --languageId=* stdin",
     "test-samples": "cspell -c ./cspell-ext.json --local=da-dk,en \"samples/**\"",
     "test": "pnpm run test-de && pnpm run test-samples",
-    "prepare": "echo ok",
+    "prepare:dictionary": "echo ok",
     "prepublishOnly": "pnpm run conditional-build"
   },
   "repository": {

@@ -16,7 +16,7 @@
     "test-code": "cspell \"**/*.svelte\"",
     "test-src": "shx head -n 1000 \"src/svelte.txt\" | cspell -v -c ./cspell-ext.json \"--local=*\" \"--languageId=svelte\" stdin",
     "prepublishOnly": "echo OK",
-    "prepare": "pnpm run build"
+    "prepare:dictionary": "pnpm run build"
   },
   "repository": {
     "type": "git",

@@ -14,7 +14,7 @@
     "build": "echo skip",
     "test": "echo skip",
     "prepublishOnly": "echo pre-publish",
-    "prepare": "pnpm run build"
+    "prepare:dictionary": "pnpm run build"
   },
   "repository": {
     "type": "git",
