@@ -3,7 +3,11 @@
 targets:
   - name: en_AU
     sources:
-      - listFile: ./source-files.txt
+      - ./src/additional_words.txt
+      - ./src/aoo-mozilla-en-dict/en_AU.dic
+      - ./src/hunspell-en_AU-large/en_AU-large.dic
+      - ./node_modules/@cspell/dict-en-shared/src/shared-additional-words.txt
     format: trie3
     targetDirectory: "."
     generateNonStrict: true
+checksumFile: true
