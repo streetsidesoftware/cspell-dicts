@@ -1,0 +1,16 @@
+# yaml-language-server: $schema=https://raw.githubusercontent.com/streetsidesoftware/cspell/main/packages/cspell-tools/cspell-tools.config.schema.json
+
+$schema: https://raw.githubusercontent.com/streetsidesoftware/cspell/main/packages/cspell-tools/cspell-tools.config.schema.json
+targets:
+  - name: ru_ru
+    targetDirectory: .
+    compress: false
+    format: trie3
+    sources:
+      - src/additional_words.txt
+      - src/hunspell/index.dic
+      - src/ru_ru.dic
+      - src/russian-aot.dic
+      - src/Russian.dic
+    generateNonStrict: true
+checksumFile: true
