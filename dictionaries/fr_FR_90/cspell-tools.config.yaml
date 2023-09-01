@@ -6,6 +6,8 @@ targets:
     compress: false
     format: trie3
     sources:
-      - listFile: source-files.txt
+      - src/hunspell-french-dictionaries-v7.0/fr-reforme1990.dic
+      - src/additional_words.txt
     sort: true
     generateNonStrict: true
+checksumFile: true

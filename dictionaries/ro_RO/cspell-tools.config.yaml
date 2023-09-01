@@ -3,9 +3,11 @@
 targets:
   - name: "ro-ro"
     sources:
-      - listFile: source-files.txt
-        maxDepth: 3 # This is set to 1 to prevent initial builds from taking too long.
+      - src/additional_words.txt
+      - src/hunspell/index.dic
+      - src/Words-Romanian.txt
     format: "trie3"
     targetDirectory: "./dict"
     generateNonStrict: true
     compress: false
+checksumFile: true

@@ -11,11 +11,9 @@
     "./cspell-ext.json": "./cspell-ext.json"
   },
   "scripts": {
-    "build": "cross-env NODE_OPTIONS=--max_old_space_size=8192 cspell-tools-cli build && pnpm gen-checksum",
+    "build": "cspell-tools-cli build",
     "sync": "pnpm cpy \"node_modules/dictionary-it/**\" src/hunspell",
-    "checksum": "cspell-tools-cli shasum -c checksum.txt",
-    "conditional-build": "pnpm run --silent checksum || pnpm run build",
-    "gen-checksum": "cspell-tools-cli shasum -u checksum.txt --list-file source-files.txt source-dependencies.txt",
+    "conditional-build": "pnpm sync && pnpm build --conditional",
     "test-samples": "cspell -v -c ./cspell-ext.json --local=it,en \"samples/**\"",
     "test-dict": "hunspell-reader words -n 1000 \"src/hunspell/index.dic\" | cspell -v -c ./cspell-ext.json \"--local=it,it-IT\" \"--languageId=*\" stdin",
     "test": "pnpm run test-samples && pnpm run test-dict",
