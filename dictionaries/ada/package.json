@@ -16,7 +16,7 @@
     "test-dict": "shx head -n 100 src/ada.txt | cspell -v -c ./cspell-ext.json --local=* --languageId=ada stdin",
     "test-samples": "cspell \"samples/**\"",
     "prepublishOnly": "echo pre-publish",
-    "prepare": "pnpm run build"
+    "prepare:dictionary": "pnpm run build"
   },
   "repository": {
     "type": "git",

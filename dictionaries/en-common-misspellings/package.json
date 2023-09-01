@@ -14,7 +14,7 @@
     "build": "echo ok",
     "test": "cspell .",
     "prepublishOnly": "echo OK",
-    "prepare": "pnpm run build"
+    "prepare:dictionary": "pnpm run build"
   },
   "repository": {
     "type": "git",

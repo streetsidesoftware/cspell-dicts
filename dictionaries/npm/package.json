@@ -14,7 +14,7 @@
     "build": "cspell-tools-cli compile --split \"src/npm.txt\" --no-compress -o ./dict -m npm",
     "test": "shx head -n 100 \"src/npm.txt\" | cspell -v -c ./cspell-ext.json \"--local=*\" \"--languageId=javascript\" stdin",
     "prepublishOnly": "echo pre-publish",
-    "prepare": "pnpm run build"
+    "prepare:dictionary": "pnpm run build"
   },
   "repository": {
     "type": "git",

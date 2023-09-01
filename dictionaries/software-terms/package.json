@@ -16,7 +16,7 @@
     "test-software-terms": "cspell -v -c ./cspell-ext.json \"--local=*\" \"--languageId=*\" --file-list src/source-files-software.txt",
     "test-networking-terms": "cspell -v \"--local=*\" \"--languageId=*\" --file-list src/source-files-networking.txt",
     "prepublishOnly": "echo pre-publish",
-    "prepare": "pnpm build"
+    "prepare:dictionary": "pnpm build"
   },
   "repository": {
     "type": "git",

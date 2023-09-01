@@ -21,7 +21,7 @@
     "gen-checksum": "cspell-tools-cli shasum -u checksum.txt --list-file source-files.txt source-dependencies.txt",
     "test": "pnpm run test-dict",
     "prepublishOnly": "echo pre-publish",
-    "prepare": "pnpm run build"
+    "prepare:dictionary": "pnpm run build"
   },
   "repository": {
     "type": "git",

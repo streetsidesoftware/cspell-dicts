@@ -16,7 +16,7 @@
     "compile": "cspell-tools-cli build && pnpm run gen-checksum",
     "conditional-build": "pnpm run --silent checksum || pnpm run build",
     "gen-checksum": "cspell-tools-cli shasum -u checksum.txt --list-file source-files.txt source-dependencies.txt",
-    "prepare": "cspell-tools-cli gzip \"*.trie\"",
+    "prepare:dictionary": "cspell-tools-cli gzip \"*.trie\"",
     "prepublishOnly": "echo pre-publish",
     "test-dict": "shx head -n 1000 \"./src/wordsEnGb.txt\" | cspell -v -c ./cspell-ext.json --local=en_gb --languageId=* stdin",
     "test-text": "cspell -v -c ./cspell-ext.json --local=en_gb --languageId=* \"tests/*.txt\"",

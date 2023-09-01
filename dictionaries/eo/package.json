@@ -17,7 +17,7 @@
     "test:samples": "cspell samples",
     "test": "pnpm test:dic && pnpm test:samples",
     "gz": "cspell-tools-cli gzip \"*.trie\"",
-    "prepare": "pnpm gz",
+    "prepare:dictionary": "pnpm gz",
     "prepublishOnly": "echo pre-publish"
   },
   "repository": {

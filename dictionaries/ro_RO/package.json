@@ -18,7 +18,7 @@
     "gen-checksum": "cspell-tools-cli shasum -u checksum.txt --list-file source-files.txt source-dependencies.txt",
     "test": "shx head -n 1000 \"src/Wordlist-Romanian.txt\" | cspell -v -c ./cspell-ext.json \"--local=ro,ro-RO,ro_RO\" \"--languageId=*\" stdin",
     "prepublishOnly": "echo OK",
-    "prepare": "echo OK"
+    "prepare:dictionary": "echo OK"
   },
   "repository": {
     "type": "git",

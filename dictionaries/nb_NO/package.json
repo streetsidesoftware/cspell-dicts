@@ -18,7 +18,7 @@
     "test-samples": "cspell \"samples/**\"",
     "test": "pnpm run test-words && pnpm run test-samples",
     "prepublishOnly": "echo pre-publish",
-    "prepare": "pnpm run gz"
+    "prepare:dictionary": "pnpm run gz"
   },
   "repository": {
     "type": "git",

@@ -17,7 +17,7 @@
     "test": "pnpm run test-dictionary && pnpm run test-samples",
     "update-python-lib": "./scripts/fetch-python.sh",
     "prepublishOnly": "echo pre-publish",
-    "prepare": "pnpm run build"
+    "prepare:dictionary": "pnpm run build"
   },
   "repository": {
     "type": "git",

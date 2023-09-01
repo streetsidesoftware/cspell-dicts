@@ -20,7 +20,7 @@
     "checksum": "cspell-tools-cli shasum -c checksum.txt",
     "conditional-build": "pnpm run --silent checksum || pnpm run build",
     "gen-checksum": "cspell-tools-cli shasum -u checksum.txt --list-file source-files.txt source-dependencies.txt",
-    "prepare": "pnpm run build:gz",
+    "prepare:dictionary": "pnpm run build:gz",
     "test": "shx head -n 1000 ./src/Greek.txt | cspell -v -c cspell-ext.json --local=el stdin"
   },
   "repository": {

@@ -16,7 +16,7 @@
     "gz": "cspell-tools-cli gzip \"*.trie\"",
     "test": "cspell samples --no-progress",
     "prepublishOnly": "echo pre-publish",
-    "prepare": "pnpm gz"
+    "prepare:dictionary": "pnpm gz"
   },
   "repository": {
     "type": "git",

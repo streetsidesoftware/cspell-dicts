@@ -15,7 +15,7 @@
     "build": "cspell-tools-cli build && pnpm gz",
     "test": "cspell samples",
     "gz": "cspell-tools-cli gzip \"*.trie\"",
-    "prepare": "pnpm gz",
+    "prepare:dictionary": "pnpm gz",
     "prepublishOnly": "echo pre-publish"
   },
   "repository": {
