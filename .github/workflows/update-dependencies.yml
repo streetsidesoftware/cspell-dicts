@@ -33,7 +33,7 @@ jobs:
 
       - name: Update
         run: |
-          pnpm up
+          pnpm -r up
 
       - name: Install
         run: |
