@@ -3,7 +3,9 @@
 targets:
   - name: de_CH
     sources:
-      - listFile: ./source-files.txt
+      - src/additional_words.txt
+      - src/hunspell/index.dic
     format: trie3
     targetDirectory: "."
     generateNonStrict: true
+checksumFile: true
