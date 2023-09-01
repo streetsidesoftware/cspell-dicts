@@ -13,14 +13,13 @@
   "scripts": {
     "build": "pnpm run compile",
     "sync": "pnpm cpy \"node_modules/aoo-mozilla-en-dict/en_US*/**\" \"src/aoo-mozilla-en-dict\" --flat",
-    "checksum": "cspell-tools-cli shasum -c checksum.txt",
-    "compile": "cspell-tools-cli build && pnpm run gen-checksum",
-    "conditional-build": "pnpm run sync && pnpm run --silent checksum || pnpm run build",
+    "compile": "cspell-tools-cli build",
+    "conditional-build": "pnpm run sync && pnpm run build --conditional && pnpm gz",
     "test-dict": "hunspell-reader words -n 10000 \"src/hunspell/en_US.dic\" | cspell -v -c ./cspell-ext.json --local=en --languageId=* stdin",
     "test-text": "cspell -v -c ./cspell-ext.json --local=en --languageId=* \"tests/*.txt\"",
-    "gen-checksum": "cspell-tools-cli shasum -u checksum.txt --list-file source-files.txt source-dependencies.txt",
     "test": "pnpm run test-dict && pnpm run test-text",
-    "prepare:dictionary": "cspell-tools-cli gzip \"*.trie\"",
+    "gz": "cspell-tools-cli gzip \"*.trie\"",
+    "prepare:dictionary": "pnpm gz",
     "prepublishOnly": "echo pre-publish"
   },
   "repository": {
