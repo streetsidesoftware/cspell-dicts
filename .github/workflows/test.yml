@@ -24,7 +24,7 @@ jobs:
           - ubuntu-latest
 
     steps:
-      - uses: actions/checkout@v3
+      - uses: actions/checkout@v4
 
       - name: Setup
         uses: ./.github/actions/setup
@@ -46,7 +46,7 @@ jobs:
           # - macos-latest # GitHub perf issues on MacOS makes this too painful to run.
 
     steps:
-      - uses: actions/checkout@v3
+      - uses: actions/checkout@v4
 
       - name: Setup
         uses: ./.github/actions/setup
