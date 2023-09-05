@@ -28,7 +28,7 @@ jobs:
       REF_BRANCH: ${{ inputs.ref || github.event.inputs.ref }}
     steps:
       - name: Checkout code
-        uses: actions/checkout@v3
+        uses: actions/checkout@v4
         with:
           ref: ${{ env.REF_BRANCH }}
 
