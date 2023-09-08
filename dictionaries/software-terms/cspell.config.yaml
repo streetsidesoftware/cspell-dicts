@@ -1,0 +1,14 @@
+version: "0.2"
+dictionaries:
+  - softwareTerms
+  - networking-terms
+  - web-services
+  - computing-acronyms
+import:
+  - ./cspell-ext.json
+ignoreWords:
+  - mdash
+  - xfce
+ignorePaths:
+  - CHANGELOG.md
+  - dict

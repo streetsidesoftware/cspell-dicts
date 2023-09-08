@@ -3,7 +3,9 @@
 targets:
   - name: "softwareTerms"
     sources:
-      - listFile: src/source-files-software.txt
+      - filename: src/software-terms.txt
+        split: true
+      - filename: src/software-tools.txt
         split: true
     format: plaintext
     targetDirectory: "./dict"
@@ -11,8 +13,8 @@ targets:
     compress: false
   - name: "networkingTerms"
     sources:
-      - listFile: src/source-files-networking.txt
-        split: true
+      - src/network-os.txt
+      - src/network-protocols.txt
     format: plaintext
     targetDirectory: "./dict"
     generateNonStrict: false
