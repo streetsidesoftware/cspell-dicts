@@ -3,6 +3,13 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+## [4.1.8](https://github.com/streetsidesoftware/cspell-dicts/compare/@cspell/dict-python@4.1.7...@cspell/dict-python@4.1.8) (2023-09-09)
+
+
+### Updates and Bug Fixes
+
+* Add "hhatto" to Python dictionary ([#2475](https://github.com/streetsidesoftware/cspell-dicts/issues/2475)) ([832d50a](https://github.com/streetsidesoftware/cspell-dicts/commit/832d50a68fd3d5f79b36b5b0ec8962f1c90c865f))
+
 ## [4.1.7](https://github.com/streetsidesoftware/cspell-dicts/compare/@cspell/dict-python@4.1.6...@cspell/dict-python@4.1.7) (2023-08-21)
 
 

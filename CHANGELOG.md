@@ -1,5 +1,24 @@
 # Release Notes
 
+## [19.1.1](https://github.com/streetsidesoftware/cspell-dicts/compare/cspell-dicts@19.1.0...cspell-dicts@19.1.1) (2023-09-09)
+
+
+### Updates and Bug Fixes
+
+* Add "hhatto" to Python dictionary ([#2475](https://github.com/streetsidesoftware/cspell-dicts/issues/2475)) ([832d50a](https://github.com/streetsidesoftware/cspell-dicts/commit/832d50a68fd3d5f79b36b5b0ec8962f1c90c865f))
+* add some linux display manager to software-tools.txt ([#2479](https://github.com/streetsidesoftware/cspell-dicts/issues/2479)) ([4243241](https://github.com/streetsidesoftware/cspell-dicts/commit/424324124ecdf7a08cb99fee6f50bb68b1e541f8))
+* add some ubuntu distributions to network-os.txt ([#2477](https://github.com/streetsidesoftware/cspell-dicts/issues/2477)) ([37aa8ce](https://github.com/streetsidesoftware/cspell-dicts/commit/37aa8ce83226652c722c0779b5fe0f659111cfb8))
+* work around issues with splitting lines. ([#2481](https://github.com/streetsidesoftware/cspell-dicts/issues/2481)) ([816743b](https://github.com/streetsidesoftware/cspell-dicts/commit/816743bbf391cd6c55bd8a1562354c41ebbce90f))
+* Workflow Bot -- Build Dictionaries ([#2478](https://github.com/streetsidesoftware/cspell-dicts/issues/2478)) ([9aa1eec](https://github.com/streetsidesoftware/cspell-dicts/commit/9aa1eec53a8ccb79b7a06fce717bb557e99315e6))
+* Workflow Bot -- Build Dictionaries ([#2480](https://github.com/streetsidesoftware/cspell-dicts/issues/2480)) ([be8004c](https://github.com/streetsidesoftware/cspell-dicts/commit/be8004c342919bcc949174885413bf87286e62cb))
+* Workflow Bot -- Build Dictionaries ([#2483](https://github.com/streetsidesoftware/cspell-dicts/issues/2483)) ([83a2db6](https://github.com/streetsidesoftware/cspell-dicts/commit/83a2db659dd2adbb61c10d4552663f68a21fb9f4))
+
+
+### Build System
+
+* **deps:** bump actions/checkout from 3 to 4 ([#2474](https://github.com/streetsidesoftware/cspell-dicts/issues/2474)) ([05721bf](https://github.com/streetsidesoftware/cspell-dicts/commit/05721bf5846fee8493a39c672380746eb2fcddc5))
+* **deps:** bump streetsidesoftware/cspell-action from 3.0.0 to 3.1.0 ([#2473](https://github.com/streetsidesoftware/cspell-dicts/issues/2473)) ([a2809ff](https://github.com/streetsidesoftware/cspell-dicts/commit/a2809ff793951102fa5cb5090d740da13f4ead7b))
+
 ## [19.1.0](https://github.com/streetsidesoftware/cspell-dicts/compare/cspell-dicts@19.0.0...cspell-dicts@19.1.0) (2023-09-01)
 
 
