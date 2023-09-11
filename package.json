@@ -2,7 +2,7 @@
   "name": "cspell-dicts",
   "version": "19.1.1",
   "private": true,
-  "packageManager": "pnpm@8.7.1",
+  "packageManager": "pnpm@8.7.4",
   "scripts": {
     "test": "pnpm -r run --workspace-concurrency 2 --stream test",
     "lint": "pnpm run lint:fix && cspell",
