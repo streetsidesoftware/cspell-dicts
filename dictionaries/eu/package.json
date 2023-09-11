@@ -13,7 +13,7 @@
   "scripts": {
     "build": "cspell-tools-cli build",
     "conditional-build": "pnpm run sync && pnpm run build --conditional",
-    "sync": "pnpm cpy \"node_modules/basque_hunspell/eu.*\" \"src/basque_hunspell\" --flat",
+    "sync": "echo OK || pnpm cpy \"node_modules/basque_hunspell/eu.*\" \"src/basque_hunspell\" --flat",
     "test": "hunspell-reader words -n 1000 -m 1 \"src/eu.dic\" | cspell -v -c ./cspell-ext.json \"--local=eu\" \"--languageId=*\" stdin",
     "prepublishOnly": "echo OK",
     "prepare:dictionary": "echo OK"
@@ -36,9 +36,6 @@
     "url": "https://github.com/streetsidesoftware/cspell-dicts/issues"
   },
   "homepage": "https://github.com/streetsidesoftware/cspell-dicts/blob/main/dictionaries/eu#readme",
-  "devDependencies": {
-    "basque_hunspell": "github:jmigartua/basque_hunspell"
-  },
   "files": [
     "dict/eu.trie",
     "cspell-ext.json",
