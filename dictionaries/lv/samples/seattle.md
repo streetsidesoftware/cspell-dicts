@@ -14,5 +14,5 @@ No augtskolām Sietlā pazīstamākā ir Vašingtonas Universitāte. Pilsēta ir
 Mūzikas grupas, kuras radušās pilsētā — Pearl Jam, Soundgarden, Alice in Chains, Green River, Mudhoney, Nevermore, The Presidents of the United States of America, Sunny Day Real Estate, Foo Fighters. Grupa Nirvana radās tuvējā Eberdīnā.
 
 <!---
-cspell:ignore Eberdīnā Mudhoney transportpunktu Soundgarden Pudžetsoundas Duwamish davamišu Klondaikas
+cspell:ignore Eberdīnā Mudhoney transportpunktu Soundgarden Pudžetsoundas Duwamish davamišu Klondaikas Seahawks
 --->
