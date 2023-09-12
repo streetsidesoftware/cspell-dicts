@@ -22,6 +22,18 @@ See [Conventional Commits](https://conventionalcommits.org) for commit guideline
 
 
 
+## [4.1.0](https://github.com/streetsidesoftware/cspell-dicts/compare/@cspell/dict-medicalterms@4.0.0...@cspell/dict-medicalterms@4.1.0) (2023-09-12)
+
+
+### Features
+
+* Create Latvian Dict ([#2491](https://github.com/streetsidesoftware/cspell-dicts/issues/2491)) ([78f4658](https://github.com/streetsidesoftware/cspell-dicts/commit/78f4658014619fda4f71897a1a7604ebd5039474))
+
+
+### Updates and Bug Fixes
+
+* Workflow Bot -- Build Dictionaries ([#2492](https://github.com/streetsidesoftware/cspell-dicts/issues/2492)) ([fe9df54](https://github.com/streetsidesoftware/cspell-dicts/commit/fe9df5449e89b1f4b26d322508c60d47e5ae9868))
+
 ## [4.0.0](https://github.com/streetsidesoftware/cspell-dicts/compare/@cspell/dict-medicalterms@3.0.0...@cspell/dict-medicalterms@4.0.0) (2023-08-31)
 
 
