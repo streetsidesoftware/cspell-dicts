@@ -267,7 +267,11 @@ importers:
 
   dictionaries/lua: {}
 
-  dictionaries/lv: {}
+  dictionaries/lv:
+    devDependencies:
+      dictionary-lv:
+        specifier: ^1.2.0
+        version: 1.2.0
 
   dictionaries/markdown: {}
 
@@ -3471,6 +3475,10 @@ packages:
 
   /dictionary-it@1.4.0:
     resolution: {integrity: sha512-vknfPqrp16JqWLeZqd0cMSxe0NvmkCzHEcCwwnXPw20Q3asIfXWrglFkOWZZ04HTpnUCACio8vafQJn9SMQR6A==}
+    dev: true
+
+  /dictionary-lv@1.2.0:
+    resolution: {integrity: sha512-fP1DIacFqq3srHBhci31cn0NnTnSYXprtN5ExtwCsbqCJIdzSaIe4E/FTt3UUSNj/YXDMVgokA+kmcrIV5/v6w==}
     dev: true
 
   /dictionary-nl@1.6.0:

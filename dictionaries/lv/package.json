@@ -1,8 +1,7 @@
 {
   "name": "@cspell/dict-lv",
   "version": "1.0.0",
-  "description": "Latvian dictionary for cspell. -- Private until verified",
-  "private": true,
+  "description": "Latvian dictionary for cspell.",
   "publishConfig": {
     "access": "public"
   },
@@ -12,10 +11,13 @@
     "./cspell-ext.json": "./cspell-ext.json"
   },
   "scripts": {
-    "build": "cross-env NODE_OPTIONS=--max_old_space_size=8192 cspell-tools-cli build",
-    "test": "head -n 1000 \"src/lv.txt\" | cspell -v -c ./cspell-ext.json \"--local=lv\" \"--languageId=*\" stdin",
-    "prepublishOnly": "echo OK",
-    "prepare": "pnpm run build"
+    "build": "cspell-tools-cli build",
+    "build:conditional": "pnpm sync && cspell-tools-cli build --conditional && pnpm gz",
+    "sync": "pnpm cpy \"node_modules/dictionary-lv/{index.{aff,dic},license,readme.md}\" \"src/hunspell/dictionary-lv/\" --flat",
+    "gz": "cspell-tools-cli gzip \"dict/*.trie\"",
+    "test": "cspell samples --no-progress",
+    "prepare:dictionary": "pnpm gz",
+    "prepublishOnly": "echo pre-publish"
   },
   "repository": {
     "type": "git",
@@ -30,17 +32,20 @@
     "spelling"
   ],
   "author": "Jason Dent",
-  "license": "MIT",
+  "license": "LGPL-3.0+",
   "bugs": {
     "url": "https://github.com/streetsidesoftware/cspell-dicts/issues"
   },
   "homepage": "https://github.com/streetsidesoftware/cspell-dicts/blob/main/dictionaries/lv#readme",
-  "devDependencies": {},
-  "dependencies": {},
   "files": [
-    "dict/lv.trie",
+    "dict/lv.trie.gz",
     "cspell-ext.json",
+    "src/hunspell/dictionary-lv/license",
+    "src/hunspell/dictionary-lv/readme.md",
     "*.js",
     "*.d.ts"
-  ]
+  ],
+  "devDependencies": {
+    "dictionary-lv": "^1.2.0"
+  }
 }
