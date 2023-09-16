@@ -34,7 +34,7 @@ importers:
         version: 7.0.3
       cspell:
         specifier: ^7.3.5
-        version: 7.3.5
+        version: 7.3.6
       cspell-dict-file-checker:
         specifier: workspace:*
         version: link:cspell-dict-file-checker
@@ -162,7 +162,7 @@ importers:
         version: link:../en_shared
       aoo-mozilla-en-dict:
         specifier: github:marcoagpinto/aoo-mozilla-en-dict
-        version: github.com/marcoagpinto/aoo-mozilla-en-dict/bfa019b630cbfef3de8b6c0dd82b519e896de41d
+        version: git@github.com+marcoagpinto/aoo-mozilla-en-dict/bfa019b630cbfef3de8b6c0dd82b519e896de41d
 
   dictionaries/en_CA:
     devDependencies:
@@ -171,7 +171,7 @@ importers:
         version: link:../en_shared
       aoo-mozilla-en-dict:
         specifier: github:marcoagpinto/aoo-mozilla-en-dict
-        version: github.com/marcoagpinto/aoo-mozilla-en-dict/bfa019b630cbfef3de8b6c0dd82b519e896de41d
+        version: git@github.com+marcoagpinto/aoo-mozilla-en-dict/bfa019b630cbfef3de8b6c0dd82b519e896de41d
 
   dictionaries/en_GB:
     devDependencies:
@@ -180,7 +180,7 @@ importers:
         version: link:../en_shared
       aoo-mozilla-en-dict:
         specifier: github:marcoagpinto/aoo-mozilla-en-dict
-        version: github.com/marcoagpinto/aoo-mozilla-en-dict/bfa019b630cbfef3de8b6c0dd82b519e896de41d
+        version: git@github.com+marcoagpinto/aoo-mozilla-en-dict/bfa019b630cbfef3de8b6c0dd82b519e896de41d
 
   dictionaries/en_GB-MIT:
     devDependencies:
@@ -195,7 +195,7 @@ importers:
         version: link:../en_shared
       aoo-mozilla-en-dict:
         specifier: github:marcoagpinto/aoo-mozilla-en-dict
-        version: github.com/marcoagpinto/aoo-mozilla-en-dict/bfa019b630cbfef3de8b6c0dd82b519e896de41d
+        version: git@github.com+marcoagpinto/aoo-mozilla-en-dict/bfa019b630cbfef3de8b6c0dd82b519e896de41d
 
   dictionaries/en_shared: {}
 
@@ -237,7 +237,7 @@ importers:
     devDependencies:
       go-words:
         specifier: github:AlekSi/go-words
-        version: github.com/AlekSi/go-words/b118b08691a30334ec87f4de26c5707405fb93dd
+        version: git@github.com+AlekSi/go-words/b118b08691a30334ec87f4de26c5707405fb93dd
 
   dictionaries/haskell: {}
 
@@ -279,7 +279,7 @@ importers:
     devDependencies:
       wordlist-medicalterms-en:
         specifier: github:Glutanimate/wordlist-medicalterms-en#d87b48e
-        version: github.com/Glutanimate/wordlist-medicalterms-en/d87b48e
+        version: git@github.com+Glutanimate/wordlist-medicalterms-en/d87b48e
 
   dictionaries/mnemonics: {}
 
@@ -496,26 +496,107 @@ packages:
       '@cspell/dict-swift': 2.0.1
       '@cspell/dict-typescript': 3.1.1
       '@cspell/dict-vue': 3.0.0
+    dev: false
+
+  /@cspell/cspell-bundled-dicts@7.3.6:
+    resolution: {integrity: sha512-9T0fFdHbKJXAQgQjLJ9SjtlHvKceKE2Vpa2sdnIXz3K1/coLLF04wHM/wzEPe2VXjYZjbjBatBRfTGjzRGJlbw==}
+    engines: {node: '>=16'}
+    dependencies:
+      '@cspell/dict-ada': 4.0.2
+      '@cspell/dict-aws': 4.0.0
+      '@cspell/dict-bash': 4.1.1
+      '@cspell/dict-companies': 3.0.22
+      '@cspell/dict-cpp': 5.0.5
+      '@cspell/dict-cryptocurrencies': 4.0.0
+      '@cspell/dict-csharp': 4.0.2
+      '@cspell/dict-css': 4.0.7
+      '@cspell/dict-dart': 2.0.3
+      '@cspell/dict-django': 4.1.0
+      '@cspell/dict-docker': 1.1.7
+      '@cspell/dict-dotnet': 5.0.0
+      '@cspell/dict-elixir': 4.0.3
+      '@cspell/dict-en-common-misspellings': 1.0.2
+      '@cspell/dict-en-gb': 1.1.33
+      '@cspell/dict-en_us': 4.3.7
+      '@cspell/dict-filetypes': 3.0.1
+      '@cspell/dict-fonts': 4.0.0
+      '@cspell/dict-fsharp': 1.0.0
+      '@cspell/dict-fullstack': 3.1.5
+      '@cspell/dict-gaming-terms': 1.0.4
+      '@cspell/dict-git': 2.0.0
+      '@cspell/dict-golang': 6.0.2
+      '@cspell/dict-haskell': 4.0.1
+      '@cspell/dict-html': 4.0.3
+      '@cspell/dict-html-symbol-entities': 4.0.0
+      '@cspell/dict-java': 5.0.5
+      '@cspell/dict-k8s': 1.0.1
+      '@cspell/dict-latex': 4.0.0
+      '@cspell/dict-lorem-ipsum': 4.0.0
+      '@cspell/dict-lua': 4.0.1
+      '@cspell/dict-node': 4.0.3
+      '@cspell/dict-npm': 5.0.8
+      '@cspell/dict-php': 4.0.2
+      '@cspell/dict-powershell': 5.0.2
+      '@cspell/dict-public-licenses': 2.0.3
+      '@cspell/dict-python': 4.1.8
+      '@cspell/dict-r': 2.0.1
+      '@cspell/dict-ruby': 5.0.0
+      '@cspell/dict-rust': 4.0.1
+      '@cspell/dict-scala': 5.0.0
+      '@cspell/dict-software-terms': 3.2.3
+      '@cspell/dict-sql': 2.1.1
+      '@cspell/dict-svelte': 1.0.2
+      '@cspell/dict-swift': 2.0.1
+      '@cspell/dict-typescript': 3.1.1
+      '@cspell/dict-vue': 3.0.0
+    dev: true
 
   /@cspell/cspell-json-reporter@7.3.5:
     resolution: {integrity: sha512-VDDKwyFPOBaa36+f8utOFEMsGW8D66bQG3etB/DEir5BdhRcDrxXmCzkztv1x2nn6vayxE6gGY52ImjuxjJ9rQ==}
     engines: {node: '>=16'}
     dependencies:
       '@cspell/cspell-types': 7.3.5
+    dev: false
+
+  /@cspell/cspell-json-reporter@7.3.6:
+    resolution: {integrity: sha512-Op0pSKiImhqXHtQGMVCfx+Fc5tFCGeZwww+fFVQnnPwbU/JkhqbW8ZcYgyPF2KK18lzB8bDOHaltKcePkz13OA==}
+    engines: {node: '>=16'}
+    dependencies:
+      '@cspell/cspell-types': 7.3.6
+    dev: true
 
   /@cspell/cspell-pipe@7.3.5:
     resolution: {integrity: sha512-QC6wtMAmpXUdFj1GvHD4+blOQkEGBmKnF0mPtOq6dh5wIZiQsNw7iAOQlBL+uAO3sG+kPQzjNFRCUch8n6CI9A==}
     engines: {node: '>=16'}
+
+  /@cspell/cspell-pipe@7.3.6:
+    resolution: {integrity: sha512-tvNgi31f/p8M108YlDhkC8nqLJBpD1mvVqYNxL+kB/aQtkaw0AHKDsuRhg0rU6xL5MAEnoi3fXgT1HoADhJpbA==}
+    engines: {node: '>=16'}
+    dev: true
 
   /@cspell/cspell-resolver@7.3.5:
     resolution: {integrity: sha512-8hLcTEPcTt9K/zcIZINLmtwanc3i2eZhM4Qxctajaz8m0/8suBjQHRjwLwC2nlFbDHXmm644RcPYEY3pgqB0/w==}
     engines: {node: '>=16'}
     dependencies:
       global-dirs: 3.0.1
+    dev: false
+
+  /@cspell/cspell-resolver@7.3.6:
+    resolution: {integrity: sha512-rFmeqhRFfmlq4oh9tYQIIVZ9aWlP88cU48oCBjvwxjj+GambrD/qobWiW9VYl/CQBPVq4S39cTirf5RXbBHMJA==}
+    engines: {node: '>=16'}
+    dependencies:
+      global-dirs: 3.0.1
+    dev: true
 
   /@cspell/cspell-service-bus@7.3.5:
     resolution: {integrity: sha512-YJcVlHEQZNe0juM37S/ZedWnl6mAnF4D86BFLXBEDA3XKON7bF13FQvBqYuduiDS5VpQ47fNDuKfACHPJBshKA==}
     engines: {node: '>=16'}
+    dev: false
+
+  /@cspell/cspell-service-bus@7.3.6:
+    resolution: {integrity: sha512-jRXII9ceuostAqr/eft9RJR44TMzivuUkufhNZG4657alfhjHQBv/gME4QeFt/jOQqsDi/ifDhw5+r8ew/LsJA==}
+    engines: {node: '>=16'}
+    dev: true
 
   /@cspell/cspell-tools@7.3.5:
     resolution: {integrity: sha512-x975ksrE6LQHRkBF/9Ws8bbueAiIdDpfMcgefVLK/UX/se6IzTr1ITTifAGOsxFnNQXEEIU8dLBjm3tagHcPhw==}
@@ -535,6 +616,11 @@ packages:
   /@cspell/cspell-types@7.3.5:
     resolution: {integrity: sha512-KXoe6pJQKSqXTp0JEdFBh2NHtwzXBu68AULyQfGbDiBf8kbT8XaeboPObt0DOpJMeEIgDgzE3uK7kVwhgBdsEw==}
     engines: {node: '>=16'}
+
+  /@cspell/cspell-types@7.3.6:
+    resolution: {integrity: sha512-JnuIMJasZtJpZm0+hzr3emkRJ0PP6QWc9zgd3fx4U8W0lHGZ3Zil5peg67SnjmdTVm4UE63UviAl1y6DyD4kLg==}
+    engines: {node: '>=16'}
+    dev: true
 
   /@cspell/dict-ada@4.0.2:
     resolution: {integrity: sha512-0kENOWQeHjUlfyId/aCM/mKXtkEgV0Zu2RhUXCBr4hHo9F9vph+Uu8Ww2b0i5a4ZixoIkudGA+eJvyxrG1jUpA==}
@@ -687,10 +773,24 @@ packages:
     engines: {node: '>=16'}
     dependencies:
       import-meta-resolve: 3.0.0
+    dev: false
+
+  /@cspell/dynamic-import@7.3.6:
+    resolution: {integrity: sha512-NLWawhLkfTSkf36UwYJrRyMh3snXOHhuRFO7eVanPqE7oeU+1+OF/C467sYdiJGZnrCL3ojIr399JTVMz148Iw==}
+    engines: {node: '>=16'}
+    dependencies:
+      import-meta-resolve: 3.0.0
+    dev: true
 
   /@cspell/strong-weak-map@7.3.5:
     resolution: {integrity: sha512-Wu9S+DbaYb5L9A28oBmBOJN0j14Y+umh70kGfUJ1zWdvqfk/33YLGKdDIbTt5GhjLP4O9cmU+RXk5S9x1lJg8A==}
     engines: {node: '>=16'}
+    dev: false
+
+  /@cspell/strong-weak-map@7.3.6:
+    resolution: {integrity: sha512-PoVFTvY8CGhc+7W3uvyPUWIBakc+ga9X5QpSkFI/HQghmaGDDaaQBfbuv/LsS7T9bkEoWz4jLtJoNBas870gZA==}
+    engines: {node: '>=16'}
+    dev: true
 
   /@eslint-community/eslint-utils@4.4.0(eslint@8.49.0):
     resolution: {integrity: sha512-1/sA4dwrzBAyeUoQ6oxahHKmrZvsnLCg4RfxW3ZFGGmQkSNQPFNLV9CUEFQP1x9EYXHTo5p6xdhZM1Ne9p/AfA==}
@@ -3138,6 +3238,18 @@ packages:
       cspell-trie-lib: 7.3.5
       fast-equals: 4.0.3
       gensequence: 5.0.2
+    dev: false
+
+  /cspell-dictionary@7.3.6:
+    resolution: {integrity: sha512-8E0qsGTP7uHZeQ0qD6au+bjaj4M9F4AgurssG3VQuvsYpzEI6S/81U3GQVzcn/4mn7Z5KE286CElZQWAiQPLQA==}
+    engines: {node: '>=16'}
+    dependencies:
+      '@cspell/cspell-pipe': 7.3.6
+      '@cspell/cspell-types': 7.3.6
+      cspell-trie-lib: 7.3.6
+      fast-equals: 4.0.3
+      gensequence: 6.0.0
+    dev: true
 
   /cspell-gitignore@7.3.5:
     resolution: {integrity: sha512-V5My7JMm4jWcFnLDmJ1RCnIvHHgkclCDG6zCzIN4rdYvk2A1ODqKE6e5yaCN8DyqQcVsJ4sBQfvptpmAflAjIw==}
@@ -3146,12 +3258,30 @@ packages:
     dependencies:
       cspell-glob: 7.3.5
       find-up: 5.0.0
+    dev: false
+
+  /cspell-gitignore@7.3.6:
+    resolution: {integrity: sha512-D/oWUoeW3kgKIIpLpJCJk4KmtxPdb6yqkMX8Ze4rzMXAUjHkw6PPjMd8hcJl7uTJa4T8vHM+UR6L4t3huDuVoA==}
+    engines: {node: '>=16'}
+    hasBin: true
+    dependencies:
+      cspell-glob: 7.3.6
+      find-up: 5.0.0
+    dev: true
 
   /cspell-glob@7.3.5:
     resolution: {integrity: sha512-ezM11DTv3HTGat6g9/fZMMS+Ufhr7+9QKptlGl8D4DBGtOGJ4Apg8qfIGaoMa261nXyVjxn87/I5yi1DrnuJ0w==}
     engines: {node: '>=16'}
     dependencies:
       micromatch: 4.0.5
+    dev: false
+
+  /cspell-glob@7.3.6:
+    resolution: {integrity: sha512-xfVmqkkg/Pznij3VJCLbUvEKWqs/+AyyHIXo9s1j/d4M0Nw/O4HJFoHwNiMoAk6aceMTgjjVIneGmSZsHVGYZg==}
+    engines: {node: '>=16'}
+    dependencies:
+      micromatch: 4.0.5
+    dev: true
 
   /cspell-grammar@7.3.5:
     resolution: {integrity: sha512-MaIvNczGKzjbrtslAXwKl6cXX1074eSx+UnSOsTYfZgMQMfmN1e3uW2EhAasKz3Q8j/HFuOAXFxu3FMJOXRtug==}
@@ -3160,6 +3290,16 @@ packages:
     dependencies:
       '@cspell/cspell-pipe': 7.3.5
       '@cspell/cspell-types': 7.3.5
+    dev: false
+
+  /cspell-grammar@7.3.6:
+    resolution: {integrity: sha512-04kvcptwvJBSMfcOTbanEFa194Xkpkjo4wkTImO26Zzu06tGawbL4FPPQdGygMz7yTdc6Wlrlks5TNChWlcn+Q==}
+    engines: {node: '>=16'}
+    hasBin: true
+    dependencies:
+      '@cspell/cspell-pipe': 7.3.6
+      '@cspell/cspell-types': 7.3.6
+    dev: true
 
   /cspell-io@7.3.5:
     resolution: {integrity: sha512-h1YsSzhMkiqP2ZdDI0PGwy7Qgd2bFvCQbgtsU5PqLTOBxNc+HE3kKj58umSw9rf8wObAx69gt+p+a1Fa/Ol6Yw==}
@@ -3169,6 +3309,17 @@ packages:
       node-fetch: 2.7.0
     transitivePeerDependencies:
       - encoding
+    dev: false
+
+  /cspell-io@7.3.6:
+    resolution: {integrity: sha512-FzynVc3OE9rS4t0cxTCVD9VFwOAnhvhV/WBWMrMUtvi8DVnRu7of/1ZJsC+XDtij+G1Kd6EOrzSnTj5gn9aQaQ==}
+    engines: {node: '>=16'}
+    dependencies:
+      '@cspell/cspell-service-bus': 7.3.6
+      node-fetch: 2.7.0
+    transitivePeerDependencies:
+      - encoding
+    dev: true
 
   /cspell-lib@7.3.5:
     resolution: {integrity: sha512-3foZs/gZCxBIc3grMp/OWstgmB3q6sRHLt958vvNnArnJ9a8Yd+WP/NCezJNf8l3iGDjLt6x/KfDY9ZEoHbk4g==}
@@ -3198,6 +3349,37 @@ packages:
       vscode-uri: 3.0.7
     transitivePeerDependencies:
       - encoding
+    dev: false
+
+  /cspell-lib@7.3.6:
+    resolution: {integrity: sha512-ixPnudlaNh4UwFkHeKUXbBYB/wLHNv1Gf+zBGy4oz2Uu9ZZTVgczhE/t2pPTD6ZRcq4+YulGuqxYCS+3qqOQQQ==}
+    engines: {node: '>=16'}
+    dependencies:
+      '@cspell/cspell-bundled-dicts': 7.3.6
+      '@cspell/cspell-pipe': 7.3.6
+      '@cspell/cspell-resolver': 7.3.6
+      '@cspell/cspell-types': 7.3.6
+      '@cspell/dynamic-import': 7.3.6
+      '@cspell/strong-weak-map': 7.3.6
+      clear-module: 4.1.2
+      comment-json: 4.2.3
+      configstore: 6.0.0
+      cosmiconfig: 8.0.0
+      cspell-dictionary: 7.3.6
+      cspell-glob: 7.3.6
+      cspell-grammar: 7.3.6
+      cspell-io: 7.3.6
+      cspell-trie-lib: 7.3.6
+      fast-equals: 5.0.1
+      find-up: 6.3.0
+      gensequence: 6.0.0
+      import-fresh: 3.3.0
+      resolve-from: 5.0.0
+      vscode-languageserver-textdocument: 1.0.8
+      vscode-uri: 3.0.7
+    transitivePeerDependencies:
+      - encoding
+    dev: true
 
   /cspell-trie-lib@7.3.5:
     resolution: {integrity: sha512-beEKTG2C1H0nbZLES+wIjpUhDxRYAQUdE5ERyVSJCLB7TKdYN4E6vmPzA5Z0Vh0DbMxTjRwlpWSLxLG8wQB2uw==}
@@ -3206,6 +3388,15 @@ packages:
       '@cspell/cspell-pipe': 7.3.5
       '@cspell/cspell-types': 7.3.5
       gensequence: 5.0.2
+
+  /cspell-trie-lib@7.3.6:
+    resolution: {integrity: sha512-75lSsKTdmFpewEl8Q+/WnSbpZ+JjoNnSDobNDcjZHTTnj/TlgCVxXASTaFLlXnqWU51QX+5798smnqpWBcJigg==}
+    engines: {node: '>=16'}
+    dependencies:
+      '@cspell/cspell-pipe': 7.3.6
+      '@cspell/cspell-types': 7.3.6
+      gensequence: 6.0.0
+    dev: true
 
   /cspell@7.3.5:
     resolution: {integrity: sha512-5CcFqHpi5VoJUvdnmC1bhg2leHTaRlj+ARjt+c5clEgiK9FOv0StdlVKCY4V5R96JEBfnsc3SSaNnCu+6oWAVA==}
@@ -3232,6 +3423,34 @@ packages:
       vscode-uri: 3.0.7
     transitivePeerDependencies:
       - encoding
+    dev: false
+
+  /cspell@7.3.6:
+    resolution: {integrity: sha512-iN3D05nwCbS6MdignKwK97vQPX3yrT/Nsu3LhhFptU0O5PO4hvRzFuSzEq+AumMby4Tuf9HcGP5Ugvyi7Gb3gw==}
+    engines: {node: '>=16'}
+    hasBin: true
+    dependencies:
+      '@cspell/cspell-json-reporter': 7.3.6
+      '@cspell/cspell-pipe': 7.3.6
+      '@cspell/cspell-types': 7.3.6
+      '@cspell/dynamic-import': 7.3.6
+      chalk: 5.3.0
+      chalk-template: 1.1.0
+      commander: 11.0.0
+      cspell-gitignore: 7.3.6
+      cspell-glob: 7.3.6
+      cspell-io: 7.3.6
+      cspell-lib: 7.3.6
+      fast-glob: 3.3.1
+      fast-json-stable-stringify: 2.1.0
+      file-entry-cache: 7.0.0
+      get-stdin: 9.0.0
+      semver: 7.5.4
+      strip-ansi: 7.1.0
+      vscode-uri: 3.0.7
+    transitivePeerDependencies:
+      - encoding
+    dev: true
 
   /cssesc@3.0.0:
     resolution: {integrity: sha512-/Tb/JcjK111nNScGob5MNtsntNM1aCNUDipB/TkwZFhyDrrE47SOx/18wF2bbjgc3ZzCSKW1T5nt5EbFoAz/Vg==}
@@ -3961,6 +4180,13 @@ packages:
     dependencies:
       flat-cache: 3.1.0
 
+  /file-entry-cache@7.0.0:
+    resolution: {integrity: sha512-OWhoO9dvvwspdI7YjGrs5wD7bPggVHc5b1NFAdyd1fEPIeno3Fj70fjBhklAqzUefgX7KCNDBnvrT8rZhS8Shw==}
+    engines: {node: '>=12.0.0'}
+    dependencies:
+      flat-cache: 3.1.0
+    dev: true
+
   /filelist@1.0.4:
     resolution: {integrity: sha512-w1cEuf3S+DrLCQL7ET6kz+gmlJdbq9J7yXCSjK/OZCPA+qEN1WyF4ZAf0YYJa4/shHJra2t/d/r8SV4Ji+x+8Q==}
     dependencies:
@@ -4162,6 +4388,11 @@ packages:
   /gensequence@5.0.2:
     resolution: {integrity: sha512-JlKEZnFc6neaeSVlkzBGGgkIoIaSxMgvdamRoPN8r3ozm2r9dusqxeKqYQ7lhzmj2UhFQP8nkyfCaiLQxiLrDA==}
     engines: {node: '>=14'}
+
+  /gensequence@6.0.0:
+    resolution: {integrity: sha512-8WwuywE9pokJRAcg2QFR/plk3cVPebSUqRPzpGQh3WQ0wIiHAw+HyOQj5IuHyUTQBHpBKFoB2JUMu9zT3vJ16Q==}
+    engines: {node: '>=16'}
+    dev: true
 
   /get-caller-file@2.0.5:
     resolution: {integrity: sha512-DyFP3BM/3YHTQOCUL/w0OZHR0lpKeGrxotcHWcqNEdnltqFwXVfhEBQ94eIo34AfQpo0rGki4cyIiftY06h2Fg==}
@@ -9592,20 +9823,20 @@ packages:
     resolution: {integrity: sha512-bXE4cR/kVZhKZX/RjPEflHaKVhUVl85noU3v6b8apfQEc1x4A+zBxjZ4lN8LqGd6WZ3dl98pY4o717VFmoPp+A==}
     dev: true
 
-  github.com/AlekSi/go-words/b118b08691a30334ec87f4de26c5707405fb93dd:
-    resolution: {tarball: https://codeload.github.com/AlekSi/go-words/tar.gz/b118b08691a30334ec87f4de26c5707405fb93dd}
+  git@github.com+AlekSi/go-words/b118b08691a30334ec87f4de26c5707405fb93dd:
+    resolution: {commit: b118b08691a30334ec87f4de26c5707405fb93dd, repo: git@github.com:AlekSi/go-words.git, type: git}
     name: go-words
     version: 0.0.0
     dev: true
 
-  github.com/Glutanimate/wordlist-medicalterms-en/d87b48e:
-    resolution: {tarball: https://codeload.github.com/Glutanimate/wordlist-medicalterms-en/tar.gz/d87b48e}
+  git@github.com+Glutanimate/wordlist-medicalterms-en/d87b48e:
+    resolution: {commit: d87b48e, repo: git@github.com:Glutanimate/wordlist-medicalterms-en.git, type: git}
     name: wordlist-medicalterms-en#d87b48e
     version: 0.0.0
     dev: true
 
-  github.com/marcoagpinto/aoo-mozilla-en-dict/bfa019b630cbfef3de8b6c0dd82b519e896de41d:
-    resolution: {tarball: https://codeload.github.com/marcoagpinto/aoo-mozilla-en-dict/tar.gz/bfa019b630cbfef3de8b6c0dd82b519e896de41d}
+  git@github.com+marcoagpinto/aoo-mozilla-en-dict/bfa019b630cbfef3de8b6c0dd82b519e896de41d:
+    resolution: {commit: bfa019b630cbfef3de8b6c0dd82b519e896de41d, repo: git@github.com:marcoagpinto/aoo-mozilla-en-dict.git, type: git}
     name: aoo-mozilla-en-dict
     version: 0.0.0
     dev: true
