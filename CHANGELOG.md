@@ -1,5 +1,13 @@
 # Release Notes
 
+## [19.2.1](https://github.com/streetsidesoftware/cspell-dicts/compare/cspell-dicts@19.2.0...cspell-dicts@19.2.1) (2023-09-14)
+
+
+### Updates and Bug Fixes
+
+* Add some language terms for the "php" dict ([#2500](https://github.com/streetsidesoftware/cspell-dicts/issues/2500)) ([3db3e52](https://github.com/streetsidesoftware/cspell-dicts/commit/3db3e5271fa0e2b177b16b7df689db0a9441ebf2))
+* Workflow Bot -- Build Dictionaries ([#2502](https://github.com/streetsidesoftware/cspell-dicts/issues/2502)) ([9898793](https://github.com/streetsidesoftware/cspell-dicts/commit/98987935c99603c45ee6c50b1bf45b2ba5772efb))
+
 ## [19.2.0](https://github.com/streetsidesoftware/cspell-dicts/compare/cspell-dicts@19.1.1...cspell-dicts@19.2.0) (2023-09-12)
 
 
