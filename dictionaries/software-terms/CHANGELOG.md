@@ -3,6 +3,14 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+## [3.2.4](https://github.com/streetsidesoftware/cspell-dicts/compare/@cspell/dict-software-terms@3.2.3...@cspell/dict-software-terms@3.2.4) (2023-09-19)
+
+
+### Updates and Bug Fixes
+
+* Add "Gitleaks" to software tools dict ([#2505](https://github.com/streetsidesoftware/cspell-dicts/issues/2505)) ([3df723d](https://github.com/streetsidesoftware/cspell-dicts/commit/3df723d65ead4130802cfa930ec7631fd89603aa))
+* Workflow Bot -- Build Dictionaries ([#2507](https://github.com/streetsidesoftware/cspell-dicts/issues/2507)) ([e1b38b4](https://github.com/streetsidesoftware/cspell-dicts/commit/e1b38b486964490967d9787be45811b4e2c279ac))
+
 ## [3.2.3](https://github.com/streetsidesoftware/cspell-dicts/compare/@cspell/dict-software-terms@3.2.2...@cspell/dict-software-terms@3.2.3) (2023-09-09)
 
 
