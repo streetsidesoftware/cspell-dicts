@@ -1,5 +1,15 @@
 # Changelog
 
+## [1.0.4](https://github.com/streetsidesoftware/cspell-dicts/compare/@cspell/dict-shell@1.0.3...@cspell/dict-shell@1.0.4) (2023-09-21)
+
+
+### Updates and Bug Fixes
+
+* add neovim to shell words ([#2533](https://github.com/streetsidesoftware/cspell-dicts/issues/2533)) ([21f492f](https://github.com/streetsidesoftware/cspell-dicts/commit/21f492ff041fc0c4e1c1d2f84d1a7e9be6409400))
+* update shell-zsh-words ([#2531](https://github.com/streetsidesoftware/cspell-dicts/issues/2531)) ([bdb2138](https://github.com/streetsidesoftware/cspell-dicts/commit/bdb21389ad8b7ae56d3f70fc6296b8958400628c))
+* Workflow Bot -- Build Dictionaries ([#2537](https://github.com/streetsidesoftware/cspell-dicts/issues/2537)) ([1c8c080](https://github.com/streetsidesoftware/cspell-dicts/commit/1c8c0806bb50d3af5918f9526dbeaaaff5632fee))
+* Workflow Bot -- Build Dictionaries ([#2538](https://github.com/streetsidesoftware/cspell-dicts/issues/2538)) ([5688b42](https://github.com/streetsidesoftware/cspell-dicts/commit/5688b42dcc451aba7ff257ab5180c15f4e37abe2))
+
 ## [1.0.3](https://github.com/streetsidesoftware/cspell-dicts/compare/@cspell/dict-shell@1.0.2...@cspell/dict-shell@1.0.3) (2023-03-20)
 
 

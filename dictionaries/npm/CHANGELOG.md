@@ -3,6 +3,17 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+## [5.0.9](https://github.com/streetsidesoftware/cspell-dicts/compare/@cspell/dict-npm@5.0.8...@cspell/dict-npm@5.0.9) (2023-09-21)
+
+
+### Updates and Bug Fixes
+
+* add some missing words ([#2525](https://github.com/streetsidesoftware/cspell-dicts/issues/2525)) ([d6c2665](https://github.com/streetsidesoftware/cspell-dicts/commit/d6c26652e2d4200868f7ddf817a057f8e3625463))
+* add trpc to software terms ([#2522](https://github.com/streetsidesoftware/cspell-dicts/issues/2522)) ([9587ebc](https://github.com/streetsidesoftware/cspell-dicts/commit/9587ebcdf8fc68d9986e3efe7d8b041950888867))
+* Workflow Bot -- Build Dictionaries ([#2529](https://github.com/streetsidesoftware/cspell-dicts/issues/2529)) ([4f2e9a4](https://github.com/streetsidesoftware/cspell-dicts/commit/4f2e9a49395b32362aadfa29c12e60e3ea8d4f68))
+* Workflow Bot -- Build Dictionaries ([#2537](https://github.com/streetsidesoftware/cspell-dicts/issues/2537)) ([1c8c080](https://github.com/streetsidesoftware/cspell-dicts/commit/1c8c0806bb50d3af5918f9526dbeaaaff5632fee))
+* Workflow Bot -- Build Dictionaries ([#2538](https://github.com/streetsidesoftware/cspell-dicts/issues/2538)) ([5688b42](https://github.com/streetsidesoftware/cspell-dicts/commit/5688b42dcc451aba7ff257ab5180c15f4e37abe2))
+
 ## [5.0.8](https://github.com/streetsidesoftware/cspell-dicts/compare/@cspell/dict-npm@5.0.7...@cspell/dict-npm@5.0.8) (2023-08-02)
 
 

@@ -1,5 +1,19 @@
 # Release Notes
 
+## [19.2.4](https://github.com/streetsidesoftware/cspell-dicts/compare/cspell-dicts@19.2.3...cspell-dicts@19.2.4) (2023-09-21)
+
+
+### Updates and Bug Fixes
+
+* add neovim to shell words ([#2533](https://github.com/streetsidesoftware/cspell-dicts/issues/2533)) ([21f492f](https://github.com/streetsidesoftware/cspell-dicts/commit/21f492ff041fc0c4e1c1d2f84d1a7e9be6409400))
+* add some missing words ([#2525](https://github.com/streetsidesoftware/cspell-dicts/issues/2525)) ([d6c2665](https://github.com/streetsidesoftware/cspell-dicts/commit/d6c26652e2d4200868f7ddf817a057f8e3625463))
+* add trpc to software terms ([#2522](https://github.com/streetsidesoftware/cspell-dicts/issues/2522)) ([9587ebc](https://github.com/streetsidesoftware/cspell-dicts/commit/9587ebcdf8fc68d9986e3efe7d8b041950888867))
+* add webp to html dictionary ([#2532](https://github.com/streetsidesoftware/cspell-dicts/issues/2532)) ([cd83278](https://github.com/streetsidesoftware/cspell-dicts/commit/cd83278daeb6664d4de168780e43f5f22db38c02))
+* Remove `indispensible` ([#2536](https://github.com/streetsidesoftware/cspell-dicts/issues/2536)) ([8a0bbba](https://github.com/streetsidesoftware/cspell-dicts/commit/8a0bbba9d74912c71dc2f1dc16625fb29e4d30b3))
+* update shell-zsh-words ([#2531](https://github.com/streetsidesoftware/cspell-dicts/issues/2531)) ([bdb2138](https://github.com/streetsidesoftware/cspell-dicts/commit/bdb21389ad8b7ae56d3f70fc6296b8958400628c))
+* Workflow Bot -- Build Dictionaries ([#2537](https://github.com/streetsidesoftware/cspell-dicts/issues/2537)) ([1c8c080](https://github.com/streetsidesoftware/cspell-dicts/commit/1c8c0806bb50d3af5918f9526dbeaaaff5632fee))
+* Workflow Bot -- Build Dictionaries ([#2538](https://github.com/streetsidesoftware/cspell-dicts/issues/2538)) ([5688b42](https://github.com/streetsidesoftware/cspell-dicts/commit/5688b42dcc451aba7ff257ab5180c15f4e37abe2))
+
 ## [19.2.3](https://github.com/streetsidesoftware/cspell-dicts/compare/cspell-dicts@19.2.2...cspell-dicts@19.2.3) (2023-09-21)
 
 
