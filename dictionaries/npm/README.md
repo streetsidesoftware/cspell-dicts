@@ -1,6 +1,6 @@
 # CSpell NPM Dictionary
 
-NPM dictionary for CSpell.
+This dictionary contains a list of popular JavaScript packages found on [npmjs.com](https://www.npmjs.com/).
 
 This is a pre-built dictionary for use with CSpell.
 
