@@ -47,3 +47,7 @@ See: [How to Create a New Dictionary](https://github.com/streetsidesoftware/cspe
 MIT
 
 > Some packages may have other licenses included.
+
+<!--- 
+cspell:ignore npmjs
+--->
