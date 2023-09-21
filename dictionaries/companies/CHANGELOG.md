@@ -3,6 +3,14 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+## [3.0.23](https://github.com/streetsidesoftware/cspell-dicts/compare/@cspell/dict-companies@3.0.22...@cspell/dict-companies@3.0.23) (2023-09-21)
+
+
+### Updates and Bug Fixes
+
+* Add OpenAI to companies ([#2514](https://github.com/streetsidesoftware/cspell-dicts/issues/2514)) ([167e6ea](https://github.com/streetsidesoftware/cspell-dicts/commit/167e6eaa911305efdab3c3ba260c5942e42989b2))
+* Workflow Bot -- Build Dictionaries ([#2511](https://github.com/streetsidesoftware/cspell-dicts/issues/2511)) ([af0713c](https://github.com/streetsidesoftware/cspell-dicts/commit/af0713caa9f147e182c9025a950c1a4906d10ac6))
+
 ## [3.0.22](https://github.com/streetsidesoftware/cspell-dicts/compare/@cspell/dict-companies@3.0.21...@cspell/dict-companies@3.0.22) (2023-09-09)
 
 
