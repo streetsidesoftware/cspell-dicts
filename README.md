@@ -2,6 +2,10 @@
 
 Various [cspell](https://github.com/streetsidesoftware/cspell) dictionaries. Each dictionary is its own package. See `README.md` in each directory.
 
+## Support Future Development
+
+<!--- @@inject: [static/sponsor.md](https://github.com/streetsidesoftware/cspell/blob/main/static/sponsor.md) --->
+
 ## Language Dictionaries
 
 - [Catalan](dictionaries/ca)
