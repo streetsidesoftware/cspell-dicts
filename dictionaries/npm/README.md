@@ -48,6 +48,6 @@ MIT
 
 > Some packages may have other licenses included.
 
-<!--- 
+<!---
 cspell:ignore npmjs
 --->

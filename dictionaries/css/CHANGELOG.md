@@ -22,6 +22,16 @@ See [Conventional Commits](https://conventionalcommits.org) for commit guideline
 
 
 
+## [4.0.8](https://github.com/streetsidesoftware/cspell-dicts/compare/@cspell/dict-css@4.0.7...@cspell/dict-css@4.0.8) (2023-09-21)
+
+
+### Updates and Bug Fixes
+
+* add easings to css dictionary ([#2521](https://github.com/streetsidesoftware/cspell-dicts/issues/2521)) ([554c5aa](https://github.com/streetsidesoftware/cspell-dicts/commit/554c5aacab37d51dab05e974f884b977cd67cbb8))
+* add viewports (plural) to css dictionary ([#2524](https://github.com/streetsidesoftware/cspell-dicts/issues/2524)) ([e765a89](https://github.com/streetsidesoftware/cspell-dicts/commit/e765a89a20645497d0ace65e6a1bb97c044da2a7))
+* Workflow Bot -- Build Dictionaries ([#2511](https://github.com/streetsidesoftware/cspell-dicts/issues/2511)) ([af0713c](https://github.com/streetsidesoftware/cspell-dicts/commit/af0713caa9f147e182c9025a950c1a4906d10ac6))
+* Workflow Bot -- Build Dictionaries ([#2527](https://github.com/streetsidesoftware/cspell-dicts/issues/2527)) ([051753e](https://github.com/streetsidesoftware/cspell-dicts/commit/051753eeeba9c0e8771d53a2530f417941a5c333))
+
 ## [4.0.7](https://github.com/streetsidesoftware/cspell-dicts/compare/@cspell/dict-css@4.0.6...@cspell/dict-css@4.0.7) (2023-08-22)
 
 
