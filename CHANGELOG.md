@@ -1,5 +1,26 @@
 # Release Notes
 
+## [19.2.3](https://github.com/streetsidesoftware/cspell-dicts/compare/cspell-dicts@19.2.2...cspell-dicts@19.2.3) (2023-09-21)
+
+
+### Updates and Bug Fixes
+
+* Add "regexes" to software-terms dictionary ([#2515](https://github.com/streetsidesoftware/cspell-dicts/issues/2515)) ([ad2b5bf](https://github.com/streetsidesoftware/cspell-dicts/commit/ad2b5bf06710dc6e4e85b016d3245b2b0dfa37d0))
+* add easings to css dictionary ([#2521](https://github.com/streetsidesoftware/cspell-dicts/issues/2521)) ([554c5aa](https://github.com/streetsidesoftware/cspell-dicts/commit/554c5aacab37d51dab05e974f884b977cd67cbb8))
+* add MSSQL to software tools ([#2523](https://github.com/streetsidesoftware/cspell-dicts/issues/2523)) ([cb16454](https://github.com/streetsidesoftware/cspell-dicts/commit/cb1645485db5fa1b4374c58b76f40630c470014f))
+* Add OpenAI to companies ([#2514](https://github.com/streetsidesoftware/cspell-dicts/issues/2514)) ([167e6ea](https://github.com/streetsidesoftware/cspell-dicts/commit/167e6eaa911305efdab3c3ba260c5942e42989b2))
+* Add OpenAPI to software terms ([#2517](https://github.com/streetsidesoftware/cspell-dicts/issues/2517)) ([367e877](https://github.com/streetsidesoftware/cspell-dicts/commit/367e877630a86f619bc8db3b08af512496568a8b))
+* Add signin and signout to software terms ([#2519](https://github.com/streetsidesoftware/cspell-dicts/issues/2519)) ([9e20f2f](https://github.com/streetsidesoftware/cspell-dicts/commit/9e20f2f0ee8b2b753bb48937c8304d1ae85e52fe))
+* add sqlserver to software terms ([#2520](https://github.com/streetsidesoftware/cspell-dicts/issues/2520)) ([6362e78](https://github.com/streetsidesoftware/cspell-dicts/commit/6362e781e03f14103ffb78ade261bb8fb463cb84))
+* add viewports (plural) to css dictionary ([#2524](https://github.com/streetsidesoftware/cspell-dicts/issues/2524)) ([e765a89](https://github.com/streetsidesoftware/cspell-dicts/commit/e765a89a20645497d0ace65e6a1bb97c044da2a7))
+* Workflow Bot -- Build Dictionaries ([#2511](https://github.com/streetsidesoftware/cspell-dicts/issues/2511)) ([af0713c](https://github.com/streetsidesoftware/cspell-dicts/commit/af0713caa9f147e182c9025a950c1a4906d10ac6))
+* Workflow Bot -- Build Dictionaries ([#2527](https://github.com/streetsidesoftware/cspell-dicts/issues/2527)) ([051753e](https://github.com/streetsidesoftware/cspell-dicts/commit/051753eeeba9c0e8771d53a2530f417941a5c333))
+
+
+### Build System
+
+* **deps:** bump tibdex/github-app-token from 2.0 to 2.1 ([#2513](https://github.com/streetsidesoftware/cspell-dicts/issues/2513)) ([0c3e779](https://github.com/streetsidesoftware/cspell-dicts/commit/0c3e779219bce207f8bf56f2fc202380c7ac0c36))
+
 ## [19.2.2](https://github.com/streetsidesoftware/cspell-dicts/compare/cspell-dicts@19.2.1...cspell-dicts@19.2.2) (2023-09-19)
 
 
