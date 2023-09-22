@@ -16,3 +16,27 @@ updates:
     directory: "/"
     schedule:
       interval: "daily"
+
+  # Automatically added by streetsidesoftware/public/update-dependabot-github-actions
+  - package-ecosystem: github-actions
+    directory: /.github/actions/setup
+    schedule:
+      interval: daily
+
+  # Automatically added by streetsidesoftware/public/update-dependabot-github-actions
+  - package-ecosystem: github-actions
+    directory: /.github/actions/quick-setup
+    schedule:
+      interval: daily
+
+  # Automatically added by streetsidesoftware/public/update-dependabot-github-actions
+  - package-ecosystem: github-actions
+    directory: /.github/actions/pr
+    schedule:
+      interval: daily
+
+  # Automatically added by streetsidesoftware/public/update-dependabot-github-actions
+  - package-ecosystem: github-actions
+    directory: /.github/actions/github-app-token
+    schedule:
+      interval: daily
