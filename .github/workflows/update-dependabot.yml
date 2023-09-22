@@ -34,7 +34,7 @@ jobs:
         id: dependabot
         uses: streetsidesoftware/actions/public/update-dependabot-github-actions@v1.3
         with:
-          directory: "{.github/actions,public}"
+          dependabot: .github/dependabot.yaml
 
       - name: Echo Result
         env:
