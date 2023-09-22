@@ -28,7 +28,7 @@ jobs:
           ref: ${{ env.REF_BRANCH }}
 
       - name: Setup
-        uses: streetsidesoftware/actions/public/setup-node-pnpm@v1
+        uses: ./.github/actions/quick-setup
 
       - name: Run Action
         id: dependabot
