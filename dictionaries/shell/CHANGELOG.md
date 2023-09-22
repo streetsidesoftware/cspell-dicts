@@ -1,5 +1,13 @@
 # Changelog
 
+## [1.0.5](https://github.com/streetsidesoftware/cspell-dicts/compare/@cspell/dict-shell@1.0.4...@cspell/dict-shell@1.0.5) (2023-09-22)
+
+
+### Updates and Bug Fixes
+
+* add bindkey zsh shell words ([#2551](https://github.com/streetsidesoftware/cspell-dicts/issues/2551)) ([f0b4956](https://github.com/streetsidesoftware/cspell-dicts/commit/f0b4956ac1ae7b8c0556b951565107cb99dce9fc))
+* Workflow Bot -- Build Dictionaries ([#2553](https://github.com/streetsidesoftware/cspell-dicts/issues/2553)) ([46ce681](https://github.com/streetsidesoftware/cspell-dicts/commit/46ce6812d8770d6017b72c48faf4f91ca2092896))
+
 ## [1.0.4](https://github.com/streetsidesoftware/cspell-dicts/compare/@cspell/dict-shell@1.0.3...@cspell/dict-shell@1.0.4) (2023-09-21)
 
 
