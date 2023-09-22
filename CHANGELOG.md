@@ -1,5 +1,20 @@
 # Release Notes
 
+## [19.3.1](https://github.com/streetsidesoftware/cspell-dicts/compare/cspell-dicts@19.3.0...cspell-dicts@19.3.1) (2023-09-22)
+
+
+### Updates and Bug Fixes
+
+* add bindkey zsh shell words ([#2551](https://github.com/streetsidesoftware/cspell-dicts/issues/2551)) ([f0b4956](https://github.com/streetsidesoftware/cspell-dicts/commit/f0b4956ac1ae7b8c0556b951565107cb99dce9fc))
+* add whitespaces (plural) to dictionaries ([#2552](https://github.com/streetsidesoftware/cspell-dicts/issues/2552)) ([09e990a](https://github.com/streetsidesoftware/cspell-dicts/commit/09e990a724a7bad7db72cd43e9e374290b59b886))
+* Workflow Bot -- Build Dictionaries ([#2553](https://github.com/streetsidesoftware/cspell-dicts/issues/2553)) ([46ce681](https://github.com/streetsidesoftware/cspell-dicts/commit/46ce6812d8770d6017b72c48faf4f91ca2092896))
+
+
+### Build System
+
+* **deps:** bump peter-evans/create-pull-request from 4.2.3 to 5.0.2 in /.github/actions/pr ([#2547](https://github.com/streetsidesoftware/cspell-dicts/issues/2547)) ([c8ffc72](https://github.com/streetsidesoftware/cspell-dicts/commit/c8ffc7220154539d98b2cab48827b0052299eb15))
+* **deps:** bump tibdex/github-app-token from 1.7.0 to 2.1.0 in /.github/actions/github-app-token ([#2546](https://github.com/streetsidesoftware/cspell-dicts/issues/2546)) ([4f59d6f](https://github.com/streetsidesoftware/cspell-dicts/commit/4f59d6ffad0e76d32efa94e075f488dc01a72a9c))
+
 ## [19.3.0](https://github.com/streetsidesoftware/cspell-dicts/compare/cspell-dicts@19.2.4...cspell-dicts@19.3.0) (2023-09-22)
 
 
