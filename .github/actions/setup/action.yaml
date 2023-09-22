@@ -1,5 +1,5 @@
-name: setup_node
-description: Setup Node, and install Pnpm
+name: setup_node_and_install
+description: Setup Node, install Pnpm, and `pnpm install`
 inputs:
   node-version:
     required: false
@@ -8,15 +8,10 @@ inputs:
 runs:
   using: "composite"
   steps:
-    - name: Setup pnpm
-      uses: pnpm/action-setup@v2.2.4
-
-    - name: Use Node.js ${{ inputs.node-version }}
-      uses: actions/setup-node@v3
+    - name: Quick Setup
+      uses: ./.github/actions/quick-setup
       with:
-        registry-url: "https://registry.npmjs.org"
         node-version: ${{ inputs.node-version }}
-        cache: "pnpm"
 
     - name: Install
       run: pnpm i
