@@ -12,6 +12,11 @@
 
 * Workflow Bot -- Build Dictionaries ([#2542](https://github.com/streetsidesoftware/cspell-dicts/issues/2542)) ([856a4dc](https://github.com/streetsidesoftware/cspell-dicts/commit/856a4dce315ef44833191c108624cc016118c7b6))
 
+
+### Build System
+
+* **deps:** bump pnpm/action-setup from 2.2.4 to 2.4.0 in /.github/actions/quick-setup ([#2545](https://github.com/streetsidesoftware/cspell-dicts/issues/2545)) ([a88c0dd](https://github.com/streetsidesoftware/cspell-dicts/commit/a88c0ddb5b80735e792514467663a01081692631))
+
 ## [19.2.4](https://github.com/streetsidesoftware/cspell-dicts/compare/cspell-dicts@19.2.3...cspell-dicts@19.2.4) (2023-09-21)
 
 
