@@ -1,0 +1,46 @@
+{
+  "name": "@cspell/dict-homebrew",
+  "version": "1.0.0",
+  "description": "Homebrew dictionary for cspell. -- Private until verified",
+  "private": true,
+  "publishConfig": {
+    "access": "public"
+  },
+  "exports": {
+    ".": "./cspell-ext.json",
+    "./cspell": "./cspell-ext.json",
+    "./cspell-ext.json": "./cspell-ext.json"
+  },
+  "scripts": {
+    "build": "cross-env NODE_OPTIONS=--max_old_space_size=8192 cspell-tools-cli build",
+    "test": "head -n 1000 \"src/forumlae.txt\" | cspell -v -c ./cspell-ext.json \"--local=*\" \"--languageId=*\" stdin",
+    "prepublishOnly": "echo OK",
+    "prepare": "pnpm run build"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/streetsidesoftware/cspell-dicts.git"
+  },
+  "keywords": [
+    "cspell",
+    "cspell-ext",
+    "homebrew",
+    "Homebrew",
+    "dictionary",
+    "spelling"
+  ],
+  "author": "Kieran Robson",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/streetsidesoftware/cspell-dicts/issues"
+  },
+  "homepage": "https://github.com/streetsidesoftware/cspell-dicts/blob/main/dictionaries/homebrew#readme",
+  "devDependencies": {},
+  "dependencies": {},
+  "files": [
+    "dict/homebrew.txt",
+    "cspell-ext.json",
+    "*.js",
+    "*.d.ts"
+  ]
+}
