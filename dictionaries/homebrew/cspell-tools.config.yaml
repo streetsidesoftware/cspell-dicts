@@ -4,6 +4,7 @@ targets:
   - name: "homebrew"
     sources:
       - filename: "src/forumlas.txt"
+      - filename: "src/aliases.txt"
         maxDepth: 1 # This is set to 1 to prevent initial builds from taking too long.
     format: "plaintext"
     targetDirectory: "./dict"
