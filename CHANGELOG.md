@@ -1,5 +1,24 @@
 # Release Notes
 
+## [19.3.2](https://github.com/streetsidesoftware/cspell-dicts/compare/cspell-dicts@19.3.1...cspell-dicts@19.3.2) (2023-09-27)
+
+
+### Updates and Bug Fixes
+
+* add bluehaze and tundora to css dictionary ([#2559](https://github.com/streetsidesoftware/cspell-dicts/issues/2559)) ([a8131fa](https://github.com/streetsidesoftware/cspell-dicts/commit/a8131faac7061c343b7dd4908d8dd571b9990794))
+* add heroicons to npm ([#2564](https://github.com/streetsidesoftware/cspell-dicts/issues/2564)) ([080dcf5](https://github.com/streetsidesoftware/cspell-dicts/commit/080dcf563e9f156de2d5aa4297c26ca98f5cb6bc))
+* add inputfield to software terms and html dictionaries ([#2560](https://github.com/streetsidesoftware/cspell-dicts/issues/2560)) ([42e954e](https://github.com/streetsidesoftware/cspell-dicts/commit/42e954e0c610d706e58c0cd85a563a25a981a339))
+* add keymap and keymaps to bash words ([#2568](https://github.com/streetsidesoftware/cspell-dicts/issues/2568)) ([bef869c](https://github.com/streetsidesoftware/cspell-dicts/commit/bef869c78de50e549a23832f57892b071ab1f7c9))
+* add pyenv to python ([#2569](https://github.com/streetsidesoftware/cspell-dicts/issues/2569)) ([288176b](https://github.com/streetsidesoftware/cspell-dicts/commit/288176b43e92eb46d7decaf42a4078d5caf949dc))
+* add readline to shell and bash ([#2572](https://github.com/streetsidesoftware/cspell-dicts/issues/2572)) ([4b7b3b6](https://github.com/streetsidesoftware/cspell-dicts/commit/4b7b3b6930a392fd22192ddf5884538410ca20fb))
+* add software terms ([#2565](https://github.com/streetsidesoftware/cspell-dicts/issues/2565)) ([6684411](https://github.com/streetsidesoftware/cspell-dicts/commit/6684411577e40eaca44dfcf302819c63066b2a91))
+* add superjson to npm ([#2561](https://github.com/streetsidesoftware/cspell-dicts/issues/2561)) ([d7c046a](https://github.com/streetsidesoftware/cspell-dicts/commit/d7c046abfd1f6496ecfb4c66c4eac0566a792f47))
+* add tailwind and tailwindcss to npm ([#2570](https://github.com/streetsidesoftware/cspell-dicts/issues/2570)) ([19c6fb1](https://github.com/streetsidesoftware/cspell-dicts/commit/19c6fb1e427c1e44f7574b8fc703a36ddf6677ca))
+* add treesitter to software terms ([#2557](https://github.com/streetsidesoftware/cspell-dicts/issues/2557)) ([492bd83](https://github.com/streetsidesoftware/cspell-dicts/commit/492bd8305e58f1d0cab216bc18fce8059b6ee8d9))
+* update software terms and tools ([#2571](https://github.com/streetsidesoftware/cspell-dicts/issues/2571)) ([1163c36](https://github.com/streetsidesoftware/cspell-dicts/commit/1163c3600015a8d2dabf61237619e03f41a97d27))
+* Workflow Bot -- Build Dictionaries ([#2567](https://github.com/streetsidesoftware/cspell-dicts/issues/2567)) ([cfef8b2](https://github.com/streetsidesoftware/cspell-dicts/commit/cfef8b2ef34a301e33d725ba91ec9555b53d5927))
+* Workflow Bot -- Build Dictionaries ([#2573](https://github.com/streetsidesoftware/cspell-dicts/issues/2573)) ([7ae8040](https://github.com/streetsidesoftware/cspell-dicts/commit/7ae8040a41ace6e7b011652eda0d96d89a490f52))
+
 ## [19.3.1](https://github.com/streetsidesoftware/cspell-dicts/compare/cspell-dicts@19.3.0...cspell-dicts@19.3.1) (2023-09-22)
 
 

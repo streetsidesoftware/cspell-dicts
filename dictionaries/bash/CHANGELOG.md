@@ -3,6 +3,15 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+## [4.1.2](https://github.com/streetsidesoftware/cspell-dicts/compare/@cspell/dict-bash@4.1.1...@cspell/dict-bash@4.1.2) (2023-09-27)
+
+
+### Updates and Bug Fixes
+
+* add keymap and keymaps to bash words ([#2568](https://github.com/streetsidesoftware/cspell-dicts/issues/2568)) ([bef869c](https://github.com/streetsidesoftware/cspell-dicts/commit/bef869c78de50e549a23832f57892b071ab1f7c9))
+* add readline to shell and bash ([#2572](https://github.com/streetsidesoftware/cspell-dicts/issues/2572)) ([4b7b3b6](https://github.com/streetsidesoftware/cspell-dicts/commit/4b7b3b6930a392fd22192ddf5884538410ca20fb))
+* Workflow Bot -- Build Dictionaries ([#2573](https://github.com/streetsidesoftware/cspell-dicts/issues/2573)) ([7ae8040](https://github.com/streetsidesoftware/cspell-dicts/commit/7ae8040a41ace6e7b011652eda0d96d89a490f52))
+
 ## [4.1.1](https://github.com/streetsidesoftware/cspell-dicts/compare/@cspell/dict-bash@4.1.0...@cspell/dict-bash@4.1.1) (2022-12-17)
 
 

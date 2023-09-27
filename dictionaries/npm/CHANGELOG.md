@@ -3,6 +3,17 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+## [5.0.10](https://github.com/streetsidesoftware/cspell-dicts/compare/@cspell/dict-npm@5.0.9...@cspell/dict-npm@5.0.10) (2023-09-27)
+
+
+### Updates and Bug Fixes
+
+* add heroicons to npm ([#2564](https://github.com/streetsidesoftware/cspell-dicts/issues/2564)) ([080dcf5](https://github.com/streetsidesoftware/cspell-dicts/commit/080dcf563e9f156de2d5aa4297c26ca98f5cb6bc))
+* add superjson to npm ([#2561](https://github.com/streetsidesoftware/cspell-dicts/issues/2561)) ([d7c046a](https://github.com/streetsidesoftware/cspell-dicts/commit/d7c046abfd1f6496ecfb4c66c4eac0566a792f47))
+* add tailwind and tailwindcss to npm ([#2570](https://github.com/streetsidesoftware/cspell-dicts/issues/2570)) ([19c6fb1](https://github.com/streetsidesoftware/cspell-dicts/commit/19c6fb1e427c1e44f7574b8fc703a36ddf6677ca))
+* Workflow Bot -- Build Dictionaries ([#2567](https://github.com/streetsidesoftware/cspell-dicts/issues/2567)) ([cfef8b2](https://github.com/streetsidesoftware/cspell-dicts/commit/cfef8b2ef34a301e33d725ba91ec9555b53d5927))
+* Workflow Bot -- Build Dictionaries ([#2573](https://github.com/streetsidesoftware/cspell-dicts/issues/2573)) ([7ae8040](https://github.com/streetsidesoftware/cspell-dicts/commit/7ae8040a41ace6e7b011652eda0d96d89a490f52))
+
 ## [5.0.9](https://github.com/streetsidesoftware/cspell-dicts/compare/@cspell/dict-npm@5.0.8...@cspell/dict-npm@5.0.9) (2023-09-21)
 
 

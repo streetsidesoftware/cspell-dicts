@@ -1,5 +1,13 @@
 # Changelog
 
+## [1.0.6](https://github.com/streetsidesoftware/cspell-dicts/compare/@cspell/dict-shell@1.0.5...@cspell/dict-shell@1.0.6) (2023-09-27)
+
+
+### Updates and Bug Fixes
+
+* add readline to shell and bash ([#2572](https://github.com/streetsidesoftware/cspell-dicts/issues/2572)) ([4b7b3b6](https://github.com/streetsidesoftware/cspell-dicts/commit/4b7b3b6930a392fd22192ddf5884538410ca20fb))
+* Workflow Bot -- Build Dictionaries ([#2573](https://github.com/streetsidesoftware/cspell-dicts/issues/2573)) ([7ae8040](https://github.com/streetsidesoftware/cspell-dicts/commit/7ae8040a41ace6e7b011652eda0d96d89a490f52))
+
 ## [1.0.5](https://github.com/streetsidesoftware/cspell-dicts/compare/@cspell/dict-shell@1.0.4...@cspell/dict-shell@1.0.5) (2023-09-22)
 
 
