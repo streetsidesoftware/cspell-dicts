@@ -22,6 +22,14 @@ See [Conventional Commits](https://conventionalcommits.org) for commit guideline
 
 
 
+## [4.0.10](https://github.com/streetsidesoftware/cspell-dicts/compare/@cspell/dict-css@4.0.9...@cspell/dict-css@4.0.10) (2023-09-27)
+
+
+### Updates and Bug Fixes
+
+* add bluehaze and tundora to css dictionary ([#2559](https://github.com/streetsidesoftware/cspell-dicts/issues/2559)) ([a8131fa](https://github.com/streetsidesoftware/cspell-dicts/commit/a8131faac7061c343b7dd4908d8dd571b9990794))
+* Workflow Bot -- Build Dictionaries ([#2567](https://github.com/streetsidesoftware/cspell-dicts/issues/2567)) ([cfef8b2](https://github.com/streetsidesoftware/cspell-dicts/commit/cfef8b2ef34a301e33d725ba91ec9555b53d5927))
+
 ## [4.0.9](https://github.com/streetsidesoftware/cspell-dicts/compare/@cspell/dict-css@4.0.8...@cspell/dict-css@4.0.9) (2023-09-22)
 
 

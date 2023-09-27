@@ -3,6 +3,13 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+## [4.1.9](https://github.com/streetsidesoftware/cspell-dicts/compare/@cspell/dict-python@4.1.8...@cspell/dict-python@4.1.9) (2023-09-27)
+
+
+### Updates and Bug Fixes
+
+* add pyenv to python ([#2569](https://github.com/streetsidesoftware/cspell-dicts/issues/2569)) ([288176b](https://github.com/streetsidesoftware/cspell-dicts/commit/288176b43e92eb46d7decaf42a4078d5caf949dc))
+
 ## [4.1.8](https://github.com/streetsidesoftware/cspell-dicts/compare/@cspell/dict-python@4.1.7...@cspell/dict-python@4.1.8) (2023-09-09)
 
 

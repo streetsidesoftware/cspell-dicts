@@ -3,6 +3,14 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+## [4.0.5](https://github.com/streetsidesoftware/cspell-dicts/compare/@cspell/dict-html@4.0.4...@cspell/dict-html@4.0.5) (2023-09-27)
+
+
+### Updates and Bug Fixes
+
+* add inputfield to software terms and html dictionaries ([#2560](https://github.com/streetsidesoftware/cspell-dicts/issues/2560)) ([42e954e](https://github.com/streetsidesoftware/cspell-dicts/commit/42e954e0c610d706e58c0cd85a563a25a981a339))
+* Workflow Bot -- Build Dictionaries ([#2567](https://github.com/streetsidesoftware/cspell-dicts/issues/2567)) ([cfef8b2](https://github.com/streetsidesoftware/cspell-dicts/commit/cfef8b2ef34a301e33d725ba91ec9555b53d5927))
+
 ## [4.0.4](https://github.com/streetsidesoftware/cspell-dicts/compare/@cspell/dict-html@4.0.3...@cspell/dict-html@4.0.4) (2023-09-21)
 
 
