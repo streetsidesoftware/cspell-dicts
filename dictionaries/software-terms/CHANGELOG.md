@@ -3,6 +3,16 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+## [3.3.3](https://github.com/streetsidesoftware/cspell-dicts/compare/@cspell/dict-software-terms@3.3.2...@cspell/dict-software-terms@3.3.3) (2023-09-30)
+
+
+### Updates and Bug Fixes
+
+* add msedge (Microsoft Edge) to software tools ([#2576](https://github.com/streetsidesoftware/cspell-dicts/issues/2576)) ([82610c9](https://github.com/streetsidesoftware/cspell-dicts/commit/82610c9d3448c2bca0e475cf96d80e86db01d723))
+* update software terms ([#2588](https://github.com/streetsidesoftware/cspell-dicts/issues/2588)) ([5a00949](https://github.com/streetsidesoftware/cspell-dicts/commit/5a00949faddb0294d55fd52444b0db4be9cc6a3b))
+* Workflow Bot -- Build Dictionaries ([#2579](https://github.com/streetsidesoftware/cspell-dicts/issues/2579)) ([69b820a](https://github.com/streetsidesoftware/cspell-dicts/commit/69b820aacae3abdf41e9b6f16a8b35afd6838bad))
+* Workflow Bot -- Build Dictionaries ([#2585](https://github.com/streetsidesoftware/cspell-dicts/issues/2585)) ([6eb7658](https://github.com/streetsidesoftware/cspell-dicts/commit/6eb765831220892eda6a751c86d1465963a1d953))
+
 ## [3.3.2](https://github.com/streetsidesoftware/cspell-dicts/compare/@cspell/dict-software-terms@3.3.1...@cspell/dict-software-terms@3.3.2) (2023-09-27)
 
 

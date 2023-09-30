@@ -22,6 +22,14 @@ See [Conventional Commits](https://conventionalcommits.org) for commit guideline
 
 
 
+## [4.0.11](https://github.com/streetsidesoftware/cspell-dicts/compare/@cspell/dict-css@4.0.10...@cspell/dict-css@4.0.11) (2023-09-30)
+
+
+### Updates and Bug Fixes
+
+* add font feature words to css ([#2586](https://github.com/streetsidesoftware/cspell-dicts/issues/2586)) ([5c1df6d](https://github.com/streetsidesoftware/cspell-dicts/commit/5c1df6d3c0b88a0e1080dd6224a40b0cfa76baab))
+* Workflow Bot -- Build Dictionaries ([#2585](https://github.com/streetsidesoftware/cspell-dicts/issues/2585)) ([6eb7658](https://github.com/streetsidesoftware/cspell-dicts/commit/6eb765831220892eda6a751c86d1465963a1d953))
+
 ## [4.0.10](https://github.com/streetsidesoftware/cspell-dicts/compare/@cspell/dict-css@4.0.9...@cspell/dict-css@4.0.10) (2023-09-27)
 
 
