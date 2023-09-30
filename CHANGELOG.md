@@ -1,5 +1,20 @@
 # Release Notes
 
+## [19.3.3](https://github.com/streetsidesoftware/cspell-dicts/compare/cspell-dicts@19.3.2...cspell-dicts@19.3.3) (2023-09-30)
+
+
+### Updates and Bug Fixes
+
+* add font feature words to css ([#2586](https://github.com/streetsidesoftware/cspell-dicts/issues/2586)) ([5c1df6d](https://github.com/streetsidesoftware/cspell-dicts/commit/5c1df6d3c0b88a0e1080dd6224a40b0cfa76baab))
+* add msedge (Microsoft Edge) to software tools ([#2576](https://github.com/streetsidesoftware/cspell-dicts/issues/2576)) ([82610c9](https://github.com/streetsidesoftware/cspell-dicts/commit/82610c9d3448c2bca0e475cf96d80e86db01d723))
+* add OpenDNS to companies ([#2575](https://github.com/streetsidesoftware/cspell-dicts/issues/2575)) ([cd70193](https://github.com/streetsidesoftware/cspell-dicts/commit/cd701938b1f3e55eda1138375b22a1495fa2069e))
+* add pnpx ([#2577](https://github.com/streetsidesoftware/cspell-dicts/issues/2577)) ([c8a97e0](https://github.com/streetsidesoftware/cspell-dicts/commit/c8a97e038a27dff9db7d569d464ab24cdc17f492))
+* add tanstack to npm ([#2587](https://github.com/streetsidesoftware/cspell-dicts/issues/2587)) ([2cfa07e](https://github.com/streetsidesoftware/cspell-dicts/commit/2cfa07ee2cee6ec8bd875c8bd2603de74e359090))
+* update npm ([#2584](https://github.com/streetsidesoftware/cspell-dicts/issues/2584)) ([5df026d](https://github.com/streetsidesoftware/cspell-dicts/commit/5df026d1d6bc2846b8aecb167adada0c904d0977))
+* update software terms ([#2588](https://github.com/streetsidesoftware/cspell-dicts/issues/2588)) ([5a00949](https://github.com/streetsidesoftware/cspell-dicts/commit/5a00949faddb0294d55fd52444b0db4be9cc6a3b))
+* Workflow Bot -- Build Dictionaries ([#2579](https://github.com/streetsidesoftware/cspell-dicts/issues/2579)) ([69b820a](https://github.com/streetsidesoftware/cspell-dicts/commit/69b820aacae3abdf41e9b6f16a8b35afd6838bad))
+* Workflow Bot -- Build Dictionaries ([#2585](https://github.com/streetsidesoftware/cspell-dicts/issues/2585)) ([6eb7658](https://github.com/streetsidesoftware/cspell-dicts/commit/6eb765831220892eda6a751c86d1465963a1d953))
+
 ## [19.3.2](https://github.com/streetsidesoftware/cspell-dicts/compare/cspell-dicts@19.3.1...cspell-dicts@19.3.2) (2023-09-27)
 
 

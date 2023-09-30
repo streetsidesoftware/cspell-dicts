@@ -3,6 +3,14 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+## [3.0.25](https://github.com/streetsidesoftware/cspell-dicts/compare/@cspell/dict-companies@3.0.24...@cspell/dict-companies@3.0.25) (2023-09-30)
+
+
+### Updates and Bug Fixes
+
+* add OpenDNS to companies ([#2575](https://github.com/streetsidesoftware/cspell-dicts/issues/2575)) ([cd70193](https://github.com/streetsidesoftware/cspell-dicts/commit/cd701938b1f3e55eda1138375b22a1495fa2069e))
+* Workflow Bot -- Build Dictionaries ([#2579](https://github.com/streetsidesoftware/cspell-dicts/issues/2579)) ([69b820a](https://github.com/streetsidesoftware/cspell-dicts/commit/69b820aacae3abdf41e9b6f16a8b35afd6838bad))
+
 ## [3.0.24](https://github.com/streetsidesoftware/cspell-dicts/compare/@cspell/dict-companies@3.0.23...@cspell/dict-companies@3.0.24) (2023-09-21)
 
 

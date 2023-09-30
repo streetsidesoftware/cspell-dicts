@@ -3,6 +3,17 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+## [5.0.11](https://github.com/streetsidesoftware/cspell-dicts/compare/@cspell/dict-npm@5.0.10...@cspell/dict-npm@5.0.11) (2023-09-30)
+
+
+### Updates and Bug Fixes
+
+* add pnpx ([#2577](https://github.com/streetsidesoftware/cspell-dicts/issues/2577)) ([c8a97e0](https://github.com/streetsidesoftware/cspell-dicts/commit/c8a97e038a27dff9db7d569d464ab24cdc17f492))
+* add tanstack to npm ([#2587](https://github.com/streetsidesoftware/cspell-dicts/issues/2587)) ([2cfa07e](https://github.com/streetsidesoftware/cspell-dicts/commit/2cfa07ee2cee6ec8bd875c8bd2603de74e359090))
+* update npm ([#2584](https://github.com/streetsidesoftware/cspell-dicts/issues/2584)) ([5df026d](https://github.com/streetsidesoftware/cspell-dicts/commit/5df026d1d6bc2846b8aecb167adada0c904d0977))
+* Workflow Bot -- Build Dictionaries ([#2579](https://github.com/streetsidesoftware/cspell-dicts/issues/2579)) ([69b820a](https://github.com/streetsidesoftware/cspell-dicts/commit/69b820aacae3abdf41e9b6f16a8b35afd6838bad))
+* Workflow Bot -- Build Dictionaries ([#2585](https://github.com/streetsidesoftware/cspell-dicts/issues/2585)) ([6eb7658](https://github.com/streetsidesoftware/cspell-dicts/commit/6eb765831220892eda6a751c86d1465963a1d953))
+
 ## [5.0.10](https://github.com/streetsidesoftware/cspell-dicts/compare/@cspell/dict-npm@5.0.9...@cspell/dict-npm@5.0.10) (2023-09-27)
 
 
