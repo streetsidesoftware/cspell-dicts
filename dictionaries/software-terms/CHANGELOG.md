@@ -3,6 +3,19 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+## [3.3.4](https://github.com/streetsidesoftware/cspell-dicts/compare/@cspell/dict-software-terms@3.3.3...@cspell/dict-software-terms@3.3.4) (2023-10-05)
+
+
+### Updates and Bug Fixes
+
+* Add "proselint" and "proselintrc" to software-terms dictionary ([#2592](https://github.com/streetsidesoftware/cspell-dicts/issues/2592)) ([d541817](https://github.com/streetsidesoftware/cspell-dicts/commit/d54181767d7fbf24f8da26dc84df6b51eb7f534d))
+* add jsonapi to software terms ([#2597](https://github.com/streetsidesoftware/cspell-dicts/issues/2597)) ([7c178a3](https://github.com/streetsidesoftware/cspell-dicts/commit/7c178a3746c56cd6dec56fc99ccc3ff4ec73bbf2))
+* add software terms ([#2601](https://github.com/streetsidesoftware/cspell-dicts/issues/2601)) ([1506348](https://github.com/streetsidesoftware/cspell-dicts/commit/1506348e3aca451dae7ec2288a2597b49234fbbe))
+* add unmocked and unoptimized to software terms ([#2596](https://github.com/streetsidesoftware/cspell-dicts/issues/2596)) ([8dba365](https://github.com/streetsidesoftware/cspell-dicts/commit/8dba3652e16877e535e4cc1c946ac2d48caac0eb))
+* Workflow Bot -- Build Dictionaries ([#2594](https://github.com/streetsidesoftware/cspell-dicts/issues/2594)) ([f910761](https://github.com/streetsidesoftware/cspell-dicts/commit/f910761665fb8e16f5f21c7d7afd63d7cbf96f86))
+* Workflow Bot -- Build Dictionaries ([#2598](https://github.com/streetsidesoftware/cspell-dicts/issues/2598)) ([6f3c4b1](https://github.com/streetsidesoftware/cspell-dicts/commit/6f3c4b14a8731057b9c17e813a4a1593893fa3be))
+* Workflow Bot -- Build Dictionaries ([#2603](https://github.com/streetsidesoftware/cspell-dicts/issues/2603)) ([72a9dd6](https://github.com/streetsidesoftware/cspell-dicts/commit/72a9dd6798dc6d5f45c0d28f73b9c7b12967acc1))
+
 ## [3.3.3](https://github.com/streetsidesoftware/cspell-dicts/compare/@cspell/dict-software-terms@3.3.2...@cspell/dict-software-terms@3.3.3) (2023-09-30)
 
 

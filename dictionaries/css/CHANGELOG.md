@@ -22,6 +22,14 @@ See [Conventional Commits](https://conventionalcommits.org) for commit guideline
 
 
 
+## [4.0.12](https://github.com/streetsidesoftware/cspell-dicts/compare/@cspell/dict-css@4.0.11...@cspell/dict-css@4.0.12) (2023-10-05)
+
+
+### Updates and Bug Fixes
+
+* add glyphicon to css ([#2600](https://github.com/streetsidesoftware/cspell-dicts/issues/2600)) ([eefdb08](https://github.com/streetsidesoftware/cspell-dicts/commit/eefdb08ad23d777a1918a67d522c5d7ad4ef588b))
+* Workflow Bot -- Build Dictionaries ([#2603](https://github.com/streetsidesoftware/cspell-dicts/issues/2603)) ([72a9dd6](https://github.com/streetsidesoftware/cspell-dicts/commit/72a9dd6798dc6d5f45c0d28f73b9c7b12967acc1))
+
 ## [4.0.11](https://github.com/streetsidesoftware/cspell-dicts/compare/@cspell/dict-css@4.0.10...@cspell/dict-css@4.0.11) (2023-09-30)
 
 
