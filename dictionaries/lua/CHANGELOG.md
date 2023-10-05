@@ -22,6 +22,14 @@ See [Conventional Commits](https://conventionalcommits.org) for commit guideline
 
 
 
+## [4.0.2](https://github.com/streetsidesoftware/cspell-dicts/compare/@cspell/dict-lua@4.0.1...@cspell/dict-lua@4.0.2) (2023-10-05)
+
+
+### Updates and Bug Fixes
+
+* add luadoc to lua dictionary ([#2604](https://github.com/streetsidesoftware/cspell-dicts/issues/2604)) ([170ab2b](https://github.com/streetsidesoftware/cspell-dicts/commit/170ab2b3f6c91fdd90901b0bf57732707c6a84f7))
+* Workflow Bot -- Build Dictionaries ([#2605](https://github.com/streetsidesoftware/cspell-dicts/issues/2605)) ([6210b4a](https://github.com/streetsidesoftware/cspell-dicts/commit/6210b4a21843899c0a394522694d499ad3a74846))
+
 ## [4.0.1](https://github.com/streetsidesoftware/cspell-dicts/compare/@cspell/dict-lua@4.0.0...@cspell/dict-lua@4.0.1) (2023-02-22)
 
 

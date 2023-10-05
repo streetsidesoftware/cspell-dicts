@@ -3,6 +3,14 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+## [3.0.26](https://github.com/streetsidesoftware/cspell-dicts/compare/@cspell/dict-companies@3.0.25...@cspell/dict-companies@3.0.26) (2023-10-05)
+
+
+### Updates and Bug Fixes
+
+* add Cloudinary and Egnyte to companies ([#2602](https://github.com/streetsidesoftware/cspell-dicts/issues/2602)) ([88a5d61](https://github.com/streetsidesoftware/cspell-dicts/commit/88a5d6136df21f65d284df8e2e94f2251a35ae3c))
+* Workflow Bot -- Build Dictionaries ([#2603](https://github.com/streetsidesoftware/cspell-dicts/issues/2603)) ([72a9dd6](https://github.com/streetsidesoftware/cspell-dicts/commit/72a9dd6798dc6d5f45c0d28f73b9c7b12967acc1))
+
 ## [3.0.25](https://github.com/streetsidesoftware/cspell-dicts/compare/@cspell/dict-companies@3.0.24...@cspell/dict-companies@3.0.25) (2023-09-30)
 
 
