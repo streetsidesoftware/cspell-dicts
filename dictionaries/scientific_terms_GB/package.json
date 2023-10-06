@@ -1,0 +1,47 @@
+{
+  "name": "@cspell/dict-scientific-terms-gb",
+  "version": "1.0.0",
+  "description": "Scientific Terms GB dictionary for cspell. -- Private until verified",
+  "private": true,
+  "publishConfig": {
+    "access": "public"
+  },
+  "exports": {
+    ".": "./cspell-ext.json",
+    "./cspell": "./cspell-ext.json",
+    "./cspell-ext.json": "./cspell-ext.json"
+  },
+  "scripts": {
+    "build": "cross-env NODE_OPTIONS=--max_old_space_size=8192 cspell-tools-cli build",
+    "test": "head -n 1000 \"src/custom_scientific_GB.dic.txt\" | cspell -v -c ./cspell-ext.json \"--local=en-GB\" \"--languageId=*\" stdin",
+    "prepublishOnly": "echo OK",
+    "prepare": "pnpm run build"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/streetsidesoftware/cspell-dicts.git"
+  },
+  "keywords": [
+    "cspell",
+    "cspell-ext",
+    "scientific_terms_GB",
+    "Scientific Terms GB",
+    "dictionary",
+    "spelling"
+  ],
+  "author": "Jason Dent",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/streetsidesoftware/cspell-dicts/issues"
+  },
+  "homepage": "https://github.com/streetsidesoftware/cspell-dicts/blob/main/dictionaries/scientific_terms_GB#readme",
+  "dependencies": {
+    "cspell-cli": "^7.3.1"
+  },
+  "files": [
+    "dict/scientific-terms-gb.trie",
+    "cspell-ext.json",
+    "*.js",
+    "*.d.ts"
+  ]
+}
