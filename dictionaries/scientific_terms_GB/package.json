@@ -12,10 +12,12 @@
     "./cspell-ext.json": "./cspell-ext.json"
   },
   "scripts": {
-    "build": "cross-env NODE_OPTIONS=--max_old_space_size=8192 cspell-tools-cli build",
-    "test": "head -n 1000 \"src/custom_scientific_GB.dic.txt\" | cspell -v -c ./cspell-ext.json \"--local=en-GB\" \"--languageId=*\" stdin",
-    "prepublishOnly": "echo OK",
-    "prepare": "pnpm run build"
+    "build": "cspell-tools-cli build && pnpm gz",
+    "conditional-build": "cspell-tools-cli build --conditional && pnpm gz",
+    "test": "head -n 1000 \"src/custom_scientific_GB.dic.txt\" | cspell -c ./cspell-ext.json \"--local=en-GB\" \"--languageId=*\" stdin",
+    "gz": "cspell-tools-cli gzip \"dict/*.trie\"",
+    "prepare:dictionary": "pnpm gz",
+    "prepublishOnly": "echo pre-publish"
   },
   "repository": {
     "type": "git",
@@ -35,11 +37,8 @@
     "url": "https://github.com/streetsidesoftware/cspell-dicts/issues"
   },
   "homepage": "https://github.com/streetsidesoftware/cspell-dicts/blob/main/dictionaries/scientific_terms_GB#readme",
-  "dependencies": {
-    "cspell-cli": "^7.3.1"
-  },
   "files": [
-    "dict/scientific-terms-gb.trie",
+    "dict/scientific-terms-gb.trie.gz",
     "cspell-ext.json",
     "*.js",
     "*.d.ts"
