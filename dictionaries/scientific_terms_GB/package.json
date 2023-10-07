@@ -1,8 +1,7 @@
 {
   "name": "@cspell/dict-scientific-terms-gb",
   "version": "1.0.0",
-  "description": "Scientific Terms GB dictionary for cspell. -- Private until verified",
-  "private": true,
+  "description": "Scientific Terms GB dictionary for cspell.",
   "publishConfig": {
     "access": "public"
   },
@@ -14,7 +13,7 @@
   "scripts": {
     "build": "cspell-tools-cli build && pnpm gz",
     "conditional-build": "cspell-tools-cli build --conditional && pnpm gz",
-    "test": "head -n 1000 \"src/custom_scientific_GB.dic.txt\" | cspell -c ./cspell-ext.json \"--local=en-GB\" \"--languageId=*\" stdin",
+    "test": "cspell samples",
     "gz": "cspell-tools-cli gzip \"dict/*.trie\"",
     "prepare:dictionary": "pnpm gz",
     "prepublishOnly": "echo pre-publish"
