@@ -1,8 +1,7 @@
 {
   "name": "@cspell/dict-kotlin",
   "version": "1.0.0",
-  "description": "Kotlin dictionary for cspell. -- Private until verified",
-  "private": true,
+  "description": "Kotlin dictionary for cspell.",
   "publishConfig": {
     "access": "public"
   },
@@ -12,8 +11,10 @@
     "./cspell-ext.json": "./cspell-ext.json"
   },
   "scripts": {
-    "build": "cross-env NODE_OPTIONS=--max_old_space_size=8192 cspell-tools-cli build",
-    "test": "head -n 1000 \"src/kotlin.txt\" | cspell -v -c ./cspell-ext.json \"--local=*\" \"--languageId=kotlin\" stdin",
+    "build": "cspell-tools-cli build",
+    "test": "pnpm test:samples && pnpm test:src",
+    "test:samples": "cspell \"samples/*.kt\"",
+    "test:src": "head -n 1000 \"src/kotlin.txt\" | cspell -c ./cspell-ext.json \"--local=*\" \"--languageId=kotlin\" stdin",
     "prepublishOnly": "echo OK",
     "prepare": "pnpm run build"
   },
