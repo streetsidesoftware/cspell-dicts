@@ -1,0 +1,46 @@
+{
+  "name": "@cspell/dict-kotlin",
+  "version": "1.0.0",
+  "description": "Kotlin dictionary for cspell. -- Private until verified",
+  "private": true,
+  "publishConfig": {
+    "access": "public"
+  },
+  "exports": {
+    ".": "./cspell-ext.json",
+    "./cspell": "./cspell-ext.json",
+    "./cspell-ext.json": "./cspell-ext.json"
+  },
+  "scripts": {
+    "build": "cross-env NODE_OPTIONS=--max_old_space_size=8192 cspell-tools-cli build",
+    "test": "head -n 1000 \"src/kotlin.txt\" | cspell -v -c ./cspell-ext.json \"--local=*\" \"--languageId=kotlin\" stdin",
+    "prepublishOnly": "echo OK",
+    "prepare": "pnpm run build"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/streetsidesoftware/cspell-dicts.git"
+  },
+  "keywords": [
+    "cspell",
+    "cspell-ext",
+    "kotlin",
+    "Kotlin",
+    "dictionary",
+    "spelling"
+  ],
+  "author": "Jason Dent",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/streetsidesoftware/cspell-dicts/issues"
+  },
+  "homepage": "https://github.com/streetsidesoftware/cspell-dicts/blob/main/dictionaries/kotlin#readme",
+  "devDependencies": {},
+  "dependencies": {},
+  "files": [
+    "dict/kotlin.txt",
+    "cspell-ext.json",
+    "*.js",
+    "*.d.ts"
+  ]
+}
