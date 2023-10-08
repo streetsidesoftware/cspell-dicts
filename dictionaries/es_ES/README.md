@@ -51,6 +51,7 @@ The Hunspell source for this dictionary can be found:
 
 ## License
 
-MIT
+GPL-3.0-or-later
 
 > Some packages may have other licenses included.
+> See [src/hunspell/license](./src/hunspell/license)
