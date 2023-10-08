@@ -56,6 +56,6 @@ npm run build
 
 ## License
 
-MIT
+AGPLv3
 
 > Some packages may have other licenses included.
