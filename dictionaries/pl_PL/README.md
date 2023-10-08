@@ -48,6 +48,7 @@ The Hunspell source for this dictionary can be found in several repositories:
 
 ## License
 
-MIT
+LGPL-3.0+
 
 > Some packages may have other licenses included.
+> See [src/hunspell/license](./src/hunspell/license)
