@@ -47,6 +47,6 @@ The Hunspell source for this dictionary can be found:
 
 ## License
 
-MIT
+BSD-3-Clause
 
 > Some packages may have other licenses included.
