@@ -47,6 +47,6 @@ The Hunspell source for this dictionary can be found:
 
 ## License
 
-MIT
+GPL-3.0
 
 > Some packages may have other licenses included.
