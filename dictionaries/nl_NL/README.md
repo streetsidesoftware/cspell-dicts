@@ -44,7 +44,7 @@ npm run build
 MIT
 
 > Some packages may have other licenses included.
-> See: Dutch.txt
+> See: [hunspell Dutch license](https://github.com/streetsidesoftware/cspell-dicts/blob/main/dictionaries/nl_NL/src/hunspell/license)
 
 ## Resources
 

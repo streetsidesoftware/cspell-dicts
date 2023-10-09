@@ -48,7 +48,7 @@ npm run build
 
 ## Adding Words
 
-Please add any words to [src/additional_words.txt](./src/additional_words.txt) by making a pull request.
+Please add any words to [src/additional_words.txt](https://github.com/streetsidesoftware/cspell-dicts/blob/main/dictionaries/en_CA/src/additional_words.txt) by making a pull request.
 
 ## License
 

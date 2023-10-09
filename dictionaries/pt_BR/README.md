@@ -41,6 +41,6 @@ npm run build
 
 ## License
 
-[GPL-3.0-or-later](./LICENSE)
+[GPL-3.0-or-later](https://github.com/streetsidesoftware/cspell-dicts/blob/main/dictionaries/pt_BR/LICENSE)
 
 > Some packages may have other licenses included.

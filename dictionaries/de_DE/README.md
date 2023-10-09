@@ -50,4 +50,4 @@ The Hunspell source for this dictionary can be found:
 GPL-3.0-or-later
 
 > Some packages may have other licenses included.
-> See [src/hunspell/license](./src/hunspell/license) and [src/German_de_DE.txt](./src/German_de_DE.txt)
+> See [src/hunspell/license](https://github.com/streetsidesoftware/cspell-dicts/blob/main/dictionaries/de_DE/src/hunspell/license) and [src/German_de_DE.txt](https://github.com/streetsidesoftware/cspell-dicts/blob/main/dictionaries/de_DE/src/German_de_DE.txt)

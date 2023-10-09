@@ -51,4 +51,4 @@ The Hunspell source for this dictionary can be found in several repositories:
 LGPL-3.0+
 
 > Some packages may have other licenses included.
-> See [src/hunspell/license](./src/hunspell/license)
+> See [src/hunspell/license](https://github.com/streetsidesoftware/cspell-dicts/blob/main/dictionaries/src/hunspell/license)

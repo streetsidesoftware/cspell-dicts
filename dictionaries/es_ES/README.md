@@ -41,7 +41,7 @@ npm run build
 
 ## Adding Words
 
-Please add any words to [src/additional_words.txt](./src/additional_words.txt) by making a pull request.
+Please add any words to [src/additional_words.txt](https://github.com/streetsidesoftware/cspell-dicts/blob/main/dictionaries/es_ES/src/additional_words.txt) by making a pull request.
 
 ## Resources
 
@@ -54,4 +54,4 @@ The Hunspell source for this dictionary can be found:
 GPL-3.0-or-later
 
 > Some packages may have other licenses included.
-> See [src/hunspell/license](./src/hunspell/license)
+> See [src/hunspell/license](https://github.com/streetsidesoftware/cspell-dicts/blob/main/dictionaries/src/hunspell/license)

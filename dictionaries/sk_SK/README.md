@@ -54,7 +54,7 @@ MPL v2
 See also:
 
 - [sk-spell/hunspell-sk](https://github.com/sk-spell/hunspell-sk#readme)
-- [Slovak.txt](./Slovak.txt)
+- [Slovak.txt](https://github.com/streetsidesoftware/cspell-dicts/blob/main/dictionaries/src/Slovak.txt)
 
 ## Contributors
 

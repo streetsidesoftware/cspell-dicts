@@ -53,4 +53,4 @@ GNU/LGPL and GNU/GPL
 
 > Some packages may have other licenses included.
 
-See also: [README_sl_SI.txt](./src/README_sl_SI.txt)
+See also: [README_sl_SI.txt](https://github.com/streetsidesoftware/cspell-dicts/blob/main/dictionaries/sl_SIsrc/README_sl_SI.txt)
