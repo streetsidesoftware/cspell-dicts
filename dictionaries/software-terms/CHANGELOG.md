@@ -10,6 +10,7 @@ See [Conventional Commits](https://conventionalcommits.org) for commit guideline
 
 * Add software terms from [#1430](https://github.com/streetsidesoftware/cspell-dicts/issues/1430) ([#2635](https://github.com/streetsidesoftware/cspell-dicts/issues/2635)) ([133f81d](https://github.com/streetsidesoftware/cspell-dicts/commit/133f81d15fb58d22a49e91fc0671b63cd240937c))
 * Add terms from [#556](https://github.com/streetsidesoftware/cspell-dicts/issues/556) ([#2634](https://github.com/streetsidesoftware/cspell-dicts/issues/2634)) ([3187e70](https://github.com/streetsidesoftware/cspell-dicts/commit/3187e7009bb9b7f31cf6aac64b346139414b392e))
+* Workflow Bot -- Build Dictionaries ([#2636](https://github.com/streetsidesoftware/cspell-dicts/issues/2636)) ([2485363](https://github.com/streetsidesoftware/cspell-dicts/commit/2485363d8aa3a3d36de9364c278d2f50017ed2a0))
 
 ## [3.3.5](https://github.com/streetsidesoftware/cspell-dicts/compare/@cspell/dict-software-terms@3.3.4...@cspell/dict-software-terms@3.3.5) (2023-10-07)
 

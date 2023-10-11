@@ -20,6 +20,7 @@
 * Add terms from [#556](https://github.com/streetsidesoftware/cspell-dicts/issues/556) ([#2634](https://github.com/streetsidesoftware/cspell-dicts/issues/2634)) ([3187e70](https://github.com/streetsidesoftware/cspell-dicts/commit/3187e7009bb9b7f31cf6aac64b346139414b392e))
 * Make license documentation consistent ([#2628](https://github.com/streetsidesoftware/cspell-dicts/issues/2628)) ([0dfc5e9](https://github.com/streetsidesoftware/cspell-dicts/commit/0dfc5e918d475a9694ce64bdc74c473d6097af62))
 * Workflow Bot -- Build Dictionaries ([#2632](https://github.com/streetsidesoftware/cspell-dicts/issues/2632)) ([c1217dd](https://github.com/streetsidesoftware/cspell-dicts/commit/c1217dd30ce2c5865931257e6f1aa78b4e34460d))
+* Workflow Bot -- Build Dictionaries ([#2636](https://github.com/streetsidesoftware/cspell-dicts/issues/2636)) ([2485363](https://github.com/streetsidesoftware/cspell-dicts/commit/2485363d8aa3a3d36de9364c278d2f50017ed2a0))
 
 ## [19.4.0](https://github.com/streetsidesoftware/cspell-dicts/compare/cspell-dicts@19.3.4...cspell-dicts@19.4.0) (2023-10-07)
 
