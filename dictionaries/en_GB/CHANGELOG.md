@@ -3,6 +3,13 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+## [4.1.23](https://github.com/streetsidesoftware/cspell-dicts/compare/@cspell/dict-en-gb@4.1.22...@cspell/dict-en-gb@4.1.23) (2023-10-11)
+
+
+### Updates and Bug Fixes
+
+* Make license documentation consistent ([#2628](https://github.com/streetsidesoftware/cspell-dicts/issues/2628)) ([0dfc5e9](https://github.com/streetsidesoftware/cspell-dicts/commit/0dfc5e918d475a9694ce64bdc74c473d6097af62))
+
 ## [4.1.22](https://github.com/streetsidesoftware/cspell-dicts/compare/@cspell/dict-en-gb@4.1.21...@cspell/dict-en-gb@4.1.22) (2023-10-07)
 
 

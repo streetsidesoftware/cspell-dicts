@@ -1,5 +1,12 @@
 # Changelog
 
+## [1.0.4](https://github.com/streetsidesoftware/cspell-dicts/compare/@cspell/dict-en-au@1.0.3...@cspell/dict-en-au@1.0.4) (2023-10-11)
+
+
+### Updates and Bug Fixes
+
+* Make license documentation consistent ([#2628](https://github.com/streetsidesoftware/cspell-dicts/issues/2628)) ([0dfc5e9](https://github.com/streetsidesoftware/cspell-dicts/commit/0dfc5e918d475a9694ce64bdc74c473d6097af62))
+
 ## [1.0.3](https://github.com/streetsidesoftware/cspell-dicts/compare/@cspell/dict-en-au@1.0.2...@cspell/dict-en-au@1.0.3) (2023-08-31)
 
 

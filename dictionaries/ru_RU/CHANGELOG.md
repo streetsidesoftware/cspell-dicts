@@ -3,6 +3,13 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+## [2.1.1](https://github.com/streetsidesoftware/cspell-dicts/compare/@cspell/dict-ru_ru@2.1.0...@cspell/dict-ru_ru@2.1.1) (2023-10-11)
+
+
+### Updates and Bug Fixes
+
+* Make license documentation consistent ([#2628](https://github.com/streetsidesoftware/cspell-dicts/issues/2628)) ([0dfc5e9](https://github.com/streetsidesoftware/cspell-dicts/commit/0dfc5e918d475a9694ce64bdc74c473d6097af62))
+
 ## [2.1.0](https://github.com/streetsidesoftware/cspell-dicts/compare/@cspell/dict-ru_ru@2.0.5...@cspell/dict-ru_ru@2.1.0) (2023-07-19)
 
 
