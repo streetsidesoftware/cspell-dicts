@@ -1,5 +1,26 @@
 # Release Notes
 
+## [20.0.0](https://github.com/streetsidesoftware/cspell-dicts/compare/cspell-dicts@19.4.0...cspell-dicts@20.0.0) (2023-10-11)
+
+
+### ⚠ BREAKING CHANGES
+
+* Convert et-EE license to LGPL 3.0 ([#2624](https://github.com/streetsidesoftware/cspell-dicts/issues/2624))
+
+### Features
+
+* Convert et-EE license to LGPL 3.0 ([#2624](https://github.com/streetsidesoftware/cspell-dicts/issues/2624)) ([ca1974b](https://github.com/streetsidesoftware/cspell-dicts/commit/ca1974b547648e7c85ce4aba22a1f008bd23c8f9))
+
+
+### Updates and Bug Fixes
+
+* Add `comms` to en_us ([#2633](https://github.com/streetsidesoftware/cspell-dicts/issues/2633)) ([fcd6096](https://github.com/streetsidesoftware/cspell-dicts/commit/fcd60969d4d77c6cb466e3258abc9c8c8ace2c71))
+* add foreignkey to sql dictionary ([#2631](https://github.com/streetsidesoftware/cspell-dicts/issues/2631)) ([8d8f5a6](https://github.com/streetsidesoftware/cspell-dicts/commit/8d8f5a6242f58050da7192ec19370ba146f56046))
+* Add software terms from [#1430](https://github.com/streetsidesoftware/cspell-dicts/issues/1430) ([#2635](https://github.com/streetsidesoftware/cspell-dicts/issues/2635)) ([133f81d](https://github.com/streetsidesoftware/cspell-dicts/commit/133f81d15fb58d22a49e91fc0671b63cd240937c))
+* Add terms from [#556](https://github.com/streetsidesoftware/cspell-dicts/issues/556) ([#2634](https://github.com/streetsidesoftware/cspell-dicts/issues/2634)) ([3187e70](https://github.com/streetsidesoftware/cspell-dicts/commit/3187e7009bb9b7f31cf6aac64b346139414b392e))
+* Make license documentation consistent ([#2628](https://github.com/streetsidesoftware/cspell-dicts/issues/2628)) ([0dfc5e9](https://github.com/streetsidesoftware/cspell-dicts/commit/0dfc5e918d475a9694ce64bdc74c473d6097af62))
+* Workflow Bot -- Build Dictionaries ([#2632](https://github.com/streetsidesoftware/cspell-dicts/issues/2632)) ([c1217dd](https://github.com/streetsidesoftware/cspell-dicts/commit/c1217dd30ce2c5865931257e6f1aa78b4e34460d))
+
 ## [19.4.0](https://github.com/streetsidesoftware/cspell-dicts/compare/cspell-dicts@19.3.4...cspell-dicts@19.4.0) (2023-10-07)
 
 

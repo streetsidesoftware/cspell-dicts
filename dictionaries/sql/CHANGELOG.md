@@ -3,6 +3,13 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+## [2.1.2](https://github.com/streetsidesoftware/cspell-dicts/compare/@cspell/dict-sql@2.1.1...@cspell/dict-sql@2.1.2) (2023-10-11)
+
+
+### Updates and Bug Fixes
+
+* add foreignkey to sql dictionary ([#2631](https://github.com/streetsidesoftware/cspell-dicts/issues/2631)) ([8d8f5a6](https://github.com/streetsidesoftware/cspell-dicts/commit/8d8f5a6242f58050da7192ec19370ba146f56046))
+
 ## [2.1.1](https://github.com/streetsidesoftware/cspell-dicts/compare/@cspell/dict-sql@2.1.0...@cspell/dict-sql@2.1.1) (2023-07-19)
 
 

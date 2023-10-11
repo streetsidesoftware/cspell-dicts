@@ -3,6 +3,17 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+## [3.0.0](https://github.com/streetsidesoftware/cspell-dicts/compare/@cspell/dict-et-ee@2.0.9...@cspell/dict-et-ee@3.0.0) (2023-10-11)
+
+
+### ⚠ BREAKING CHANGES
+
+* Convert et-EE license to LGPL 3.0 ([#2624](https://github.com/streetsidesoftware/cspell-dicts/issues/2624))
+
+### Features
+
+* Convert et-EE license to LGPL 3.0 ([#2624](https://github.com/streetsidesoftware/cspell-dicts/issues/2624)) ([ca1974b](https://github.com/streetsidesoftware/cspell-dicts/commit/ca1974b547648e7c85ce4aba22a1f008bd23c8f9))
+
 ## [2.0.9](https://github.com/streetsidesoftware/cspell-dicts/compare/@cspell/dict-et-ee@2.0.8...@cspell/dict-et-ee@2.0.9) (2023-07-19)
 
 

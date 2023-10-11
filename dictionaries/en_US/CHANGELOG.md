@@ -3,6 +3,15 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+## [4.3.9](https://github.com/streetsidesoftware/cspell-dicts/compare/@cspell/dict-en_us@4.3.8...@cspell/dict-en_us@4.3.9) (2023-10-11)
+
+
+### Updates and Bug Fixes
+
+* Add `comms` to en_us ([#2633](https://github.com/streetsidesoftware/cspell-dicts/issues/2633)) ([fcd6096](https://github.com/streetsidesoftware/cspell-dicts/commit/fcd60969d4d77c6cb466e3258abc9c8c8ace2c71))
+* Make license documentation consistent ([#2628](https://github.com/streetsidesoftware/cspell-dicts/issues/2628)) ([0dfc5e9](https://github.com/streetsidesoftware/cspell-dicts/commit/0dfc5e918d475a9694ce64bdc74c473d6097af62))
+* Workflow Bot -- Build Dictionaries ([#2632](https://github.com/streetsidesoftware/cspell-dicts/issues/2632)) ([c1217dd](https://github.com/streetsidesoftware/cspell-dicts/commit/c1217dd30ce2c5865931257e6f1aa78b4e34460d))
+
 ## [4.3.8](https://github.com/streetsidesoftware/cspell-dicts/compare/@cspell/dict-en_us@4.3.7...@cspell/dict-en_us@4.3.8) (2023-09-21)
 
 
