@@ -1,20 +1,16 @@
-'use strict';
-
-// cspell:ignore yosay
-
-const Generator = require('yeoman-generator');
-const chalk = require('chalk');
-const yosay = require('yosay');
-const path = require('path');
-const fsp = require('node:fs/promises');
+import Generator from 'yeoman-generator';
+import chalk from 'chalk';
+import yosay from 'yosay';
+import { extname, resolve, join, dirname, basename } from 'path';
+import { mkdir } from 'node:fs/promises';
 
 function mkdirp(p) {
-    return fsp.mkdir(p, { recursive: true });
+    return mkdir(p, { recursive: true });
 }
 
 const dictionaryDir = 'dictionaries';
 
-module.exports = class extends Generator {
+export default class extends Generator {
     constructor(args, opts) {
         super(args, opts);
 
@@ -78,14 +74,13 @@ module.exports = class extends Generator {
                 type: 'confirm',
                 name: 'useTrie',
                 message: 'Store as Trie: Mainly used for natural language dictionaries to store their large sizes.',
-                default: (props) => ['.dic', '.aff'].includes(path.extname(props.srcFile)),
+                default: (props) => ['.dic', '.aff'].includes(extname(props.srcFile)),
             },
             {
                 type: 'confirm',
                 name: 'doBuild',
                 message: 'Compile Dictionary?',
-                default: (props) =>
-                    this.fs.exists(props.srcFile) && ['.dic', '.aff'].includes(path.extname(props.srcFile)),
+                default: (props) => this.fs.exists(props.srcFile) && ['.dic', '.aff'].includes(extname(props.srcFile)),
             },
         ]);
 
@@ -100,14 +95,14 @@ module.exports = class extends Generator {
         props.dstFullFileName = props.dstFileName + (props.compressDest ? '.gz' : '');
 
         props.filesToCopy = [];
-        const srcFile = path.resolve(props.srcFile);
+        const srcFile = resolve(props.srcFile);
         this.log(srcFile);
 
-        const ext = path.extname(srcFile);
+        const ext = extname(srcFile);
         const srcFiles = [];
         if (ext === '.dic' || ext === '.aff') {
-            const srcAff = path.join(path.dirname(srcFile), path.basename(srcFile, ext) + '.aff');
-            const srcDic = path.join(path.dirname(srcFile), path.basename(srcFile, ext) + '.dic');
+            const srcAff = join(dirname(srcFile), basename(srcFile, ext) + '.aff');
+            const srcDic = join(dirname(srcFile), basename(srcFile, ext) + '.dic');
             this.fs.exists(srcAff) && srcFiles.push(srcAff);
             this.fs.exists(srcDic) && srcFiles.push(srcDic);
             props.srcFileReader = 'hunspell-reader words -n 1000 -m 0';
@@ -119,9 +114,9 @@ module.exports = class extends Generator {
             props.prepareScript = 'pnpm run build';
             props.prepublishOnlyScript = 'echo OK';
         }
-        srcFiles.forEach((srcFile) => props.filesToCopy.push([srcFile, path.join('src', path.basename(srcFile))]));
+        srcFiles.forEach((srcFile) => props.filesToCopy.push([srcFile, join('src', basename(srcFile))]));
 
-        props.srcFile = 'src/' + path.basename(srcFile);
+        props.srcFile = 'src/' + basename(srcFile);
         props.fullPackageName = '@cspell/dict-' + props.packageName;
 
         this.props = Object.assign({}, props, props);
@@ -145,7 +140,7 @@ module.exports = class extends Generator {
             this.fs.copyTpl(this.templatePath(src), this.destinationPath(dst), this.props);
         });
         this.props.filesToCopy
-            .map((toCopy) => (typeof toCopy === 'string' ? [toCopy, path.basename(toCopy)] : toCopy))
+            .map((toCopy) => (typeof toCopy === 'string' ? [toCopy, basename(toCopy)] : toCopy))
             .map((toCopy) => [toCopy[0], this.destinationPath(toCopy[1])])
             .forEach(([fromFile, toFile]) => this.fs.copy(fromFile, toFile));
         const srcFile = this.destinationPath(this.props.srcFile);
@@ -158,26 +153,26 @@ module.exports = class extends Generator {
     }
 
     async default() {
-        if (path.basename(this.destinationPath()) !== this.props.name) {
+        if (basename(this.destinationPath()) !== this.props.name) {
             this.log('Creating Folder: ' + this.props.name);
-            const dir = path.join(dictionaryDir, this.props.name);
+            const dir = join(dictionaryDir, this.props.name);
             await mkdirp(this.destinationPath(dir));
-            await mkdirp(this.destinationPath(path.join(dir, 'dict')));
+            await mkdirp(this.destinationPath(join(dir, 'dict')));
             this.destinationRoot(this.destinationPath(dir));
         }
     }
 
     install() {
-        this.spawnCommandSync('pnpm', ['install']);
+        this.spawnSync('pnpm', ['install']);
     }
 
     end() {
         if (this.props.doBuild) {
-            this.spawnCommandSync('pnpm', ['run', 'build']);
-            this.spawnCommandSync('pnpm', ['run', 'prepare']);
+            this.spawnSync('pnpm', ['run', 'build']);
+            this.spawnSync('pnpm', ['run', 'prepare']);
         }
     }
-};
+}
 
 function dirName(name) {
     return name.toLowerCase().replace(/[^-_a-z0-9]/g, '-');
