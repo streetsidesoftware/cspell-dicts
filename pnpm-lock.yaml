@@ -52,7 +52,7 @@ importers:
         version: link:generator-cspell-dicts
       hunspell-reader:
         specifier: ^7.3.7
-        version: 7.3.7
+        version: 7.3.8
       inject-markdown:
         specifier: ^2.0.0
         version: 2.0.0
@@ -162,7 +162,7 @@ importers:
         version: link:../en_shared
       aoo-mozilla-en-dict:
         specifier: github:marcoagpinto/aoo-mozilla-en-dict
-        version: github.com/marcoagpinto/aoo-mozilla-en-dict/c9f032485d81d4a17d934d9cccee25c3e95ef33c
+        version: git@github.com+marcoagpinto/aoo-mozilla-en-dict/c9f032485d81d4a17d934d9cccee25c3e95ef33c
 
   dictionaries/en_CA:
     devDependencies:
@@ -171,7 +171,7 @@ importers:
         version: link:../en_shared
       aoo-mozilla-en-dict:
         specifier: github:marcoagpinto/aoo-mozilla-en-dict
-        version: github.com/marcoagpinto/aoo-mozilla-en-dict/c9f032485d81d4a17d934d9cccee25c3e95ef33c
+        version: git@github.com+marcoagpinto/aoo-mozilla-en-dict/c9f032485d81d4a17d934d9cccee25c3e95ef33c
 
   dictionaries/en_GB:
     devDependencies:
@@ -180,7 +180,7 @@ importers:
         version: link:../en_shared
       aoo-mozilla-en-dict:
         specifier: github:marcoagpinto/aoo-mozilla-en-dict
-        version: github.com/marcoagpinto/aoo-mozilla-en-dict/c9f032485d81d4a17d934d9cccee25c3e95ef33c
+        version: git@github.com+marcoagpinto/aoo-mozilla-en-dict/c9f032485d81d4a17d934d9cccee25c3e95ef33c
 
   dictionaries/en_GB-MIT:
     devDependencies:
@@ -195,7 +195,7 @@ importers:
         version: link:../en_shared
       aoo-mozilla-en-dict:
         specifier: github:marcoagpinto/aoo-mozilla-en-dict
-        version: github.com/marcoagpinto/aoo-mozilla-en-dict/c9f032485d81d4a17d934d9cccee25c3e95ef33c
+        version: git@github.com+marcoagpinto/aoo-mozilla-en-dict/c9f032485d81d4a17d934d9cccee25c3e95ef33c
 
   dictionaries/en_shared: {}
 
@@ -237,7 +237,7 @@ importers:
     devDependencies:
       go-words:
         specifier: github:AlekSi/go-words
-        version: github.com/AlekSi/go-words/b118b08691a30334ec87f4de26c5707405fb93dd
+        version: git@github.com+AlekSi/go-words/b118b08691a30334ec87f4de26c5707405fb93dd
 
   dictionaries/haskell: {}
 
@@ -281,7 +281,7 @@ importers:
     devDependencies:
       wordlist-medicalterms-en:
         specifier: github:Glutanimate/wordlist-medicalterms-en#d87b48e
-        version: github.com/Glutanimate/wordlist-medicalterms-en/d87b48e
+        version: git@github.com+Glutanimate/wordlist-medicalterms-en/d87b48e
 
   dictionaries/mnemonics: {}
 
@@ -511,6 +511,11 @@ packages:
     resolution: {integrity: sha512-ZO8v3EwGhjUvhPo1S48+CKv7EPXMoYF7LGERB34K8EXFByb9+J74ojMYj9UgLRV68lFTrDFde3bHoZPPVS1FsA==}
     engines: {node: '>=16'}
 
+  /@cspell/cspell-pipe@7.3.8:
+    resolution: {integrity: sha512-/vKPfiHM5bJUkNX12w9j533Lm2JvvSMKUCChM2AxYjy6vL8prc/7ei++4g2xAWwRxLZPg2OfpDJS5EirZNBJdA==}
+    engines: {node: '>=16'}
+    dev: true
+
   /@cspell/cspell-resolver@7.3.7:
     resolution: {integrity: sha512-WWZcTI5f2cCjr1yRDTMkcVg7Meil3s+0aaKcLCDTGQf9J2UWWjpqDJ6M6keYei3paAjxW2Pk03IRNNwdA3+igQ==}
     engines: {node: '>=16'}
@@ -539,6 +544,11 @@ packages:
   /@cspell/cspell-types@7.3.7:
     resolution: {integrity: sha512-zM2BuZJ3UUgPwF78bssggi8X20nmW3a95EmbNJKfbO6Zf2ui7UMzeP3BwpCZk30A/EixGlFhLf6Xd+eBT/DQqw==}
     engines: {node: '>=16'}
+
+  /@cspell/cspell-types@7.3.8:
+    resolution: {integrity: sha512-hsOtaULDnawEL4pU0fga941GhvE8mbTbywrJBx+eGX3fnJsaUr8XQzCtnLsW2ko7WCLWFItNEhSSTPQHBFRLsw==}
+    engines: {node: '>=16'}
+    dev: true
 
   /@cspell/dict-ada@4.0.2:
     resolution: {integrity: sha512-0kENOWQeHjUlfyId/aCM/mKXtkEgV0Zu2RhUXCBr4hHo9F9vph+Uu8Ww2b0i5a4ZixoIkudGA+eJvyxrG1jUpA==}
@@ -4844,6 +4854,18 @@ packages:
     dependencies:
       '@cspell/cspell-pipe': 7.3.7
       '@cspell/cspell-types': 7.3.7
+      commander: 11.1.0
+      gensequence: 6.0.0
+      iconv-lite: 0.6.3
+    dev: true
+
+  /hunspell-reader@7.3.8:
+    resolution: {integrity: sha512-2mjkwaaLzYXmT5KjUHhlh69Kew6lRQpydX6Y3+bwuFwGvXNWa3Mcg2zN5nfvszbD5Dt56CNAfLIgW2WAghJDpg==}
+    engines: {node: '>=16'}
+    hasBin: true
+    dependencies:
+      '@cspell/cspell-pipe': 7.3.8
+      '@cspell/cspell-types': 7.3.8
       commander: 11.1.0
       gensequence: 6.0.0
       iconv-lite: 0.6.3
@@ -9846,20 +9868,20 @@ packages:
     resolution: {integrity: sha512-bXE4cR/kVZhKZX/RjPEflHaKVhUVl85noU3v6b8apfQEc1x4A+zBxjZ4lN8LqGd6WZ3dl98pY4o717VFmoPp+A==}
     dev: true
 
-  github.com/AlekSi/go-words/b118b08691a30334ec87f4de26c5707405fb93dd:
-    resolution: {tarball: https://codeload.github.com/AlekSi/go-words/tar.gz/b118b08691a30334ec87f4de26c5707405fb93dd}
+  git@github.com+AlekSi/go-words/b118b08691a30334ec87f4de26c5707405fb93dd:
+    resolution: {commit: b118b08691a30334ec87f4de26c5707405fb93dd, repo: git@github.com:AlekSi/go-words.git, type: git}
     name: go-words
     version: 0.0.0
     dev: true
 
-  github.com/Glutanimate/wordlist-medicalterms-en/d87b48e:
-    resolution: {tarball: https://codeload.github.com/Glutanimate/wordlist-medicalterms-en/tar.gz/d87b48e}
+  git@github.com+Glutanimate/wordlist-medicalterms-en/d87b48e:
+    resolution: {commit: d87b48e, repo: git@github.com:Glutanimate/wordlist-medicalterms-en.git, type: git}
     name: wordlist-medicalterms-en#d87b48e
     version: 0.0.0
     dev: true
 
-  github.com/marcoagpinto/aoo-mozilla-en-dict/c9f032485d81d4a17d934d9cccee25c3e95ef33c:
-    resolution: {tarball: https://codeload.github.com/marcoagpinto/aoo-mozilla-en-dict/tar.gz/c9f032485d81d4a17d934d9cccee25c3e95ef33c}
+  git@github.com+marcoagpinto/aoo-mozilla-en-dict/c9f032485d81d4a17d934d9cccee25c3e95ef33c:
+    resolution: {commit: c9f032485d81d4a17d934d9cccee25c3e95ef33c, repo: git@github.com:marcoagpinto/aoo-mozilla-en-dict.git, type: git}
     name: aoo-mozilla-en-dict
     version: 0.0.0
     dev: true
