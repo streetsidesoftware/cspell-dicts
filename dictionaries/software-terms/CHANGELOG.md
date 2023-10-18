@@ -3,6 +3,15 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+## [3.3.7](https://github.com/streetsidesoftware/cspell-dicts/compare/@cspell/dict-software-terms@3.3.6...@cspell/dict-software-terms@3.3.7) (2023-10-18)
+
+
+### Updates and Bug Fixes
+
+* add mitmproxy to software tools ([#2654](https://github.com/streetsidesoftware/cspell-dicts/issues/2654)) ([868cc79](https://github.com/streetsidesoftware/cspell-dicts/commit/868cc79c04f433e55aa8342f088a443f41c9db0b))
+* Add terms from Kubernetes repo ([#2655](https://github.com/streetsidesoftware/cspell-dicts/issues/2655)) ([e4d8e94](https://github.com/streetsidesoftware/cspell-dicts/commit/e4d8e9434efb4610adebee086b9ba78379b05bc0))
+* Workflow Bot -- Build Dictionaries ([#2657](https://github.com/streetsidesoftware/cspell-dicts/issues/2657)) ([7e7190d](https://github.com/streetsidesoftware/cspell-dicts/commit/7e7190d1165246cf5fd85c58bd52531b6b722958))
+
 ## [3.3.6](https://github.com/streetsidesoftware/cspell-dicts/compare/@cspell/dict-software-terms@3.3.5...@cspell/dict-software-terms@3.3.6) (2023-10-11)
 
 

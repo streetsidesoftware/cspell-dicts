@@ -1,5 +1,12 @@
 # Change Log
 
+## [1.0.6](https://github.com/streetsidesoftware/cspell-dicts/compare/@cspell/dict-en-shared@1.0.5...@cspell/dict-en-shared@1.0.6) (2023-10-18)
+
+
+### Updates and Bug Fixes
+
+* Add terms from Kubernetes repo ([#2655](https://github.com/streetsidesoftware/cspell-dicts/issues/2655)) ([e4d8e94](https://github.com/streetsidesoftware/cspell-dicts/commit/e4d8e9434efb4610adebee086b9ba78379b05bc0))
+
 ## [1.0.5](https://github.com/streetsidesoftware/cspell-dicts/compare/@cspell/dict-en-shared@1.0.4...@cspell/dict-en-shared@1.0.5) (2023-08-31)
 
 
