@@ -1,5 +1,12 @@
 # Change Log
 
+## [1.0.7](https://github.com/streetsidesoftware/cspell-dicts/compare/@cspell/dict-en-shared@1.0.6...@cspell/dict-en-shared@1.0.7) (2023-10-20)
+
+
+### Updates and Bug Fixes
+
+* Add "archivable" to English dictionaries ([#2630](https://github.com/streetsidesoftware/cspell-dicts/issues/2630)) ([00a98a8](https://github.com/streetsidesoftware/cspell-dicts/commit/00a98a8dfd6dbbe0b8bc31f8d4aeca6186706229))
+
 ## [1.0.6](https://github.com/streetsidesoftware/cspell-dicts/compare/@cspell/dict-en-shared@1.0.5...@cspell/dict-en-shared@1.0.6) (2023-10-18)
 
 
