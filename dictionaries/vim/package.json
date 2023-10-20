@@ -1,8 +1,7 @@
 {
   "name": "@cspell/dict-vim",
   "version": "1.0.0",
-  "description": "Vim dictionary for cspell. -- Private until verified",
-  "private": true,
+  "description": "Vim dictionary for cspell.",
   "publishConfig": {
     "access": "public"
   },
@@ -13,7 +12,7 @@
   },
   "scripts": {
     "build": "cross-env NODE_OPTIONS=--max_old_space_size=8192 cspell-tools-cli build",
-    "test": "head -n 1000 \"src/vim.txt\" | cspell -v -c ./cspell-ext.json \"--local=*\" \"--languageId=*\" stdin",
+    "test": "head -n 1000 \"src/vim.txt\" | cspell \"--local=*\" \"--languageId=*\" stdin",
     "prepublishOnly": "echo OK",
     "prepare": "pnpm run build"
   },
@@ -25,11 +24,10 @@
     "cspell",
     "cspell-ext",
     "vim",
-    "Vim",
     "dictionary",
     "spelling"
   ],
-  "author": "Kevin Traver",
+  "author": "Kevin Traver and Street Side Software",
   "license": "MIT",
   "bugs": {
     "url": "https://github.com/streetsidesoftware/cspell-dicts/issues"
