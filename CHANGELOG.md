@@ -1,5 +1,30 @@
 # Release Notes
 
+## [20.1.0](https://github.com/streetsidesoftware/cspell-dicts/compare/cspell-dicts@20.0.1...cspell-dicts@20.1.0) (2023-10-20)
+
+
+### Features
+
+* add vim dictionary ([#2664](https://github.com/streetsidesoftware/cspell-dicts/issues/2664)) ([c1f4b97](https://github.com/streetsidesoftware/cspell-dicts/commit/c1f4b97d32aff5fb5b134a56ad0554ecf29ec62c))
+
+
+### Updates and Bug Fixes
+
+* Add "archivable" to English dictionaries ([#2630](https://github.com/streetsidesoftware/cspell-dicts/issues/2630)) ([00a98a8](https://github.com/streetsidesoftware/cspell-dicts/commit/00a98a8dfd6dbbe0b8bc31f8d4aeca6186706229))
+* Add `themeable` to software terms ([#2660](https://github.com/streetsidesoftware/cspell-dicts/issues/2660)) ([9c4f19d](https://github.com/streetsidesoftware/cspell-dicts/commit/9c4f19d7b7bf7bfed4aac7882a29dbd08d893194))
+* Prepare to publish Vim dictionary. ([#2670](https://github.com/streetsidesoftware/cspell-dicts/issues/2670)) ([b1083e4](https://github.com/streetsidesoftware/cspell-dicts/commit/b1083e486add9eb128ca831dd4e35a4132fe52a8))
+* remove typo from fsharp dictionary ([#2667](https://github.com/streetsidesoftware/cspell-dicts/issues/2667)) ([2d5c077](https://github.com/streetsidesoftware/cspell-dicts/commit/2d5c0770f9fa7f712ca8b70d181c25768d30f909))
+* Workflow Bot -- Build Dictionaries ([#2658](https://github.com/streetsidesoftware/cspell-dicts/issues/2658)) ([10480a6](https://github.com/streetsidesoftware/cspell-dicts/commit/10480a64f19488649bb760d18a65fe330f42af13))
+* Workflow Bot -- Build Dictionaries ([#2661](https://github.com/streetsidesoftware/cspell-dicts/issues/2661)) ([30e0f1e](https://github.com/streetsidesoftware/cspell-dicts/commit/30e0f1e2328a6b81f11872dd5858c02c98f43771))
+* Workflow Bot -- Build Dictionaries ([#2662](https://github.com/streetsidesoftware/cspell-dicts/issues/2662)) ([2115190](https://github.com/streetsidesoftware/cspell-dicts/commit/2115190bae015aedb8832bc8384088ed36cfce9a))
+* Workflow Bot -- Build Dictionaries ([#2668](https://github.com/streetsidesoftware/cspell-dicts/issues/2668)) ([34579fc](https://github.com/streetsidesoftware/cspell-dicts/commit/34579fc37ad3e2db5a17ddb49f243f01c3449370))
+* Workflow Bot -- Build Dictionaries ([#2672](https://github.com/streetsidesoftware/cspell-dicts/issues/2672)) ([be2dcd8](https://github.com/streetsidesoftware/cspell-dicts/commit/be2dcd8c6969f93379679c7c385f303488e97e48))
+
+
+### Build System
+
+* **deps:** bump streetsidesoftware/cspell-action from 3.1.0 to 4.0.0 ([#2663](https://github.com/streetsidesoftware/cspell-dicts/issues/2663)) ([561fbde](https://github.com/streetsidesoftware/cspell-dicts/commit/561fbde7cb7f2c28abf3aaecc644f1117002d74f))
+
 ## [20.0.1](https://github.com/streetsidesoftware/cspell-dicts/compare/cspell-dicts@20.0.0...cspell-dicts@20.0.1) (2023-10-18)
 
 

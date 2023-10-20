@@ -3,6 +3,15 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+## [3.3.8](https://github.com/streetsidesoftware/cspell-dicts/compare/@cspell/dict-software-terms@3.3.7...@cspell/dict-software-terms@3.3.8) (2023-10-20)
+
+
+### Updates and Bug Fixes
+
+* Add `themeable` to software terms ([#2660](https://github.com/streetsidesoftware/cspell-dicts/issues/2660)) ([9c4f19d](https://github.com/streetsidesoftware/cspell-dicts/commit/9c4f19d7b7bf7bfed4aac7882a29dbd08d893194))
+* Workflow Bot -- Build Dictionaries ([#2658](https://github.com/streetsidesoftware/cspell-dicts/issues/2658)) ([10480a6](https://github.com/streetsidesoftware/cspell-dicts/commit/10480a64f19488649bb760d18a65fe330f42af13))
+* Workflow Bot -- Build Dictionaries ([#2661](https://github.com/streetsidesoftware/cspell-dicts/issues/2661)) ([30e0f1e](https://github.com/streetsidesoftware/cspell-dicts/commit/30e0f1e2328a6b81f11872dd5858c02c98f43771))
+
 ## [3.3.7](https://github.com/streetsidesoftware/cspell-dicts/compare/@cspell/dict-software-terms@3.3.6...@cspell/dict-software-terms@3.3.7) (2023-10-18)
 
 
