@@ -33,6 +33,7 @@ The `cspell-ext.json` file in this package should be added to the import section
 {
     // …
     "import": ["@cspell/dict-vim/cspell-ext.json"],
+    "dictionaries": ["vim"]
     // …
 }
 ```
