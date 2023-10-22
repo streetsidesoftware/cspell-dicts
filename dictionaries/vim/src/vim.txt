@@ -23,6 +23,7 @@ bdelete
 belowright
 bfirst
 blast
+blockwise
 bmodified
 bnext
 botright
@@ -33,6 +34,7 @@ breaklist
 brewind
 bufdo
 bufname
+bufnr
 buftype
 bunload
 bwipeout
@@ -86,8 +88,11 @@ crewind
 cunabbrev
 cunmap
 cunmenu
+curpos
+cursorline
 cwindow
 debuggreedy
+deepcopy
 delcommand
 delfunction
 delmarks
@@ -119,16 +124,25 @@ endtry
 endwhile
 enew
 eval
+extmark
 exusage
 fargs
 feedkeys
+fnamemodify
 foldclose
+foldcolumn
 folddoclosed
 folddoopen
+foldmethod
 foldopen
+ftplugin
+getline
+getreg
+gitdir
 goto
 grep
 grepadd
+guibg
 gvim
 helpclose
 helpgrep
@@ -140,6 +154,7 @@ ilist
 imap
 imapclear
 imenu
+incsearch
 inoreabbrev
 inoremap
 inoremenu
@@ -177,6 +192,8 @@ lgrep
 lgrepadd
 lhelpgrep
 lhistory
+linenr
+linewise
 llast
 llist
 lmake
@@ -186,7 +203,9 @@ lnewer
 lnext
 lnfile
 lnoremap
+lnum
 loadkeymap
+loadplugins
 loadview
 lockmarks
 lockvar
@@ -213,7 +232,9 @@ mkview
 mkvimrc
 mzfile
 mzscheme
+nargs
 neovim
+netrw
 nmap
 nmapclear
 nmenu
@@ -224,6 +245,7 @@ nohlsearch
 noreabbrev
 noremap
 noremenu
+norl
 noswapfile
 nunmap
 nunmenu
@@ -273,6 +295,7 @@ redir
 redo
 redrawstatus
 redrawtabline
+regcontents
 retab
 rightbelow
 rshada
@@ -280,6 +303,7 @@ rubydo
 rubyfile
 rundo
 runtime
+runtimepath
 rviminfo
 sall
 sargument
@@ -294,6 +318,7 @@ sbrewind
 sbuffer
 scriptencoding
 scriptnames
+scrolloff
 setfiletype
 setglobal
 setlocal
@@ -342,6 +367,7 @@ tabedit
 tabfind
 tabfirst
 tablast
+tabline
 tabmove
 tabnew
 tabnext
@@ -389,6 +415,8 @@ vglobal
 vimdoc
 vimgrep
 vimgrepadd
+vimrc
+vimruntime
 viusage
 vmap
 vmapclear
@@ -400,8 +428,13 @@ vsplit
 vunmap
 vunmenu
 wall
+wildmenu
+winblend
 wincmd
 windo
+winid
+winnr
+winopts
 winpos
 winsize
 wnext
