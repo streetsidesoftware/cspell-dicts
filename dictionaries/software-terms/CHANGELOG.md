@@ -3,6 +3,14 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+## [3.3.9](https://github.com/streetsidesoftware/cspell-dicts/compare/@cspell/dict-software-terms@3.3.8...@cspell/dict-software-terms@3.3.9) (2023-10-22)
+
+
+### Updates and Bug Fixes
+
+* **software-tools:** add httpie, wkhtmltopdf, speedtest ([#2674](https://github.com/streetsidesoftware/cspell-dicts/issues/2674)) ([e2f81ef](https://github.com/streetsidesoftware/cspell-dicts/commit/e2f81ef3e1cb0fd358f563979fc2aa0f4abe5a6a))
+* Workflow Bot -- Build Dictionaries ([#2676](https://github.com/streetsidesoftware/cspell-dicts/issues/2676)) ([e193f3b](https://github.com/streetsidesoftware/cspell-dicts/commit/e193f3b4d7f36f799c389ce8d488707d5330204a))
+
 ## [3.3.8](https://github.com/streetsidesoftware/cspell-dicts/compare/@cspell/dict-software-terms@3.3.7...@cspell/dict-software-terms@3.3.8) (2023-10-20)
 
 

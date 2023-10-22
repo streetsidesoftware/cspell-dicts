@@ -1,5 +1,21 @@
 # Release Notes
 
+## [20.2.0](https://github.com/streetsidesoftware/cspell-dicts/compare/cspell-dicts@20.1.0...cspell-dicts@20.2.0) (2023-10-22)
+
+
+### Features
+
+* add makefile dictionary ([#2677](https://github.com/streetsidesoftware/cspell-dicts/issues/2677)) ([ec902b9](https://github.com/streetsidesoftware/cspell-dicts/commit/ec902b96cce9c6378acfd6d795b5e300da940c6c))
+
+
+### Updates and Bug Fixes
+
+* Set the `languageId` for `makefiles` ([#2679](https://github.com/streetsidesoftware/cspell-dicts/issues/2679)) ([407c15c](https://github.com/streetsidesoftware/cspell-dicts/commit/407c15c84a4028d8ff6d66b5aa3516b776514e81))
+* **software-tools:** add httpie, wkhtmltopdf, speedtest ([#2674](https://github.com/streetsidesoftware/cspell-dicts/issues/2674)) ([e2f81ef](https://github.com/streetsidesoftware/cspell-dicts/commit/e2f81ef3e1cb0fd358f563979fc2aa0f4abe5a6a))
+* **vim:** add more commonly used words to vim dictionary ([#2673](https://github.com/streetsidesoftware/cspell-dicts/issues/2673)) ([4f80cdc](https://github.com/streetsidesoftware/cspell-dicts/commit/4f80cdc3eb99a76fcec0897e3ebf535a4ed06724))
+* Workflow Bot -- Build Dictionaries ([#2676](https://github.com/streetsidesoftware/cspell-dicts/issues/2676)) ([e193f3b](https://github.com/streetsidesoftware/cspell-dicts/commit/e193f3b4d7f36f799c389ce8d488707d5330204a))
+* Workflow Bot -- Build Dictionaries ([#2678](https://github.com/streetsidesoftware/cspell-dicts/issues/2678)) ([7df0a21](https://github.com/streetsidesoftware/cspell-dicts/commit/7df0a2176796ef118ffb390e642ef1826ea67610))
+
 ## [20.1.0](https://github.com/streetsidesoftware/cspell-dicts/compare/cspell-dicts@20.0.1...cspell-dicts@20.1.0) (2023-10-20)
 
 

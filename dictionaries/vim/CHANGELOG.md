@@ -1,5 +1,13 @@
 # Change Log
 
+## [1.0.1](https://github.com/streetsidesoftware/cspell-dicts/compare/@cspell/dict-vim@1.0.0...@cspell/dict-vim@1.0.1) (2023-10-22)
+
+
+### Updates and Bug Fixes
+
+* **vim:** add more commonly used words to vim dictionary ([#2673](https://github.com/streetsidesoftware/cspell-dicts/issues/2673)) ([4f80cdc](https://github.com/streetsidesoftware/cspell-dicts/commit/4f80cdc3eb99a76fcec0897e3ebf535a4ed06724))
+* Workflow Bot -- Build Dictionaries ([#2676](https://github.com/streetsidesoftware/cspell-dicts/issues/2676)) ([e193f3b](https://github.com/streetsidesoftware/cspell-dicts/commit/e193f3b4d7f36f799c389ce8d488707d5330204a))
+
 ## 1.0.0 (2023-10-20)
 
 
