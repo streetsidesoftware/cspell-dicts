@@ -1,12 +1,17 @@
 {
     "version": "0.2",
     "files": [
-        "**/*.{md,txt}"
-    ],
-    "dictionaries": [
-        "makefile"
+        "**/*.{md,txt}", "samples"
     ],
     "import": [
         "./cspell-ext.json"
+    ],
+    "overrides": [
+        {
+            "filename": "**/*.{md,txt}",
+            "dictionaries": [
+                "makefile"
+            ]
+        }
     ]
 }
