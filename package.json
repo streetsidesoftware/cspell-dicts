@@ -16,7 +16,7 @@
     "check-dirty": "git --no-pager diff --compact-summary --exit-code",
     "check-spelling": "cspell",
     "checksum": "pnpm -r run checksum",
-    "create-dictionary": "node ./generator-cspell-dicts/node_modules/yo/lib/cli.js cspell-dicts",
+    "create-dictionary": "node ./generator-cspell-dicts/run.js",
     "clean": "shx rm -rf \"packages/*/*.txt.gz\" \"dictionaries/*/*.txt.gz\"",
     "readme:generate-doc-dictionaries": "./scripts/dictionaries.sh > dictionaries.md",
     "readme:inject": "inject-markdown \"*.md\" \"dictionaries/*/README.md\" && prettier -w \"*.md\" \"dictionaries/*/README.md\"",

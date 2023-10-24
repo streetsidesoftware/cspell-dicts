@@ -16,7 +16,7 @@
     "test:samples": "cspell \"samples/*.kt\"",
     "test:src": "head -n 1000 \"src/kotlin.txt\" | cspell -c ./cspell-ext.json \"--local=*\" \"--languageId=kotlin\" stdin",
     "prepublishOnly": "echo OK",
-    "prepare": "pnpm run build"
+    "prepare:dictionary": "pnpm run build"
   },
   "repository": {
     "type": "git",
