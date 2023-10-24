@@ -406,8 +406,8 @@ importers:
         specifier: ^4.0.0
         version: 4.0.0(@yeoman/types@1.1.1)(mem-fs@4.0.0)
       yeoman-generator:
-        specifier: ^6.0.1
-        version: 6.0.1(@yeoman/types@1.1.1)(yeoman-environment@4.0.0)
+        specifier: ^7.0.0
+        version: 7.0.0(@yeoman/types@1.1.1)(mem-fs@4.0.0)(yeoman-environment@4.0.0)
       yosay:
         specifier: ^2.0.2
         version: 2.0.2
@@ -1622,10 +1622,6 @@ packages:
     resolution: {integrity: sha512-AuHIyzR5Hea7ij0P9q7vx7xu4z0C28ucwjAZC0ja7JhINyCnOw8/DnvAPQQ9TfOlCtZAmCERKQX9+o1mgQhuOQ==}
     dev: true
 
-  /@types/node@15.14.9:
-    resolution: {integrity: sha512-qjd88DrCxupx/kJD5yQgZdcYKZKSIGBVDIBE1/LTGcNm3d2Np/jxojkdePDdfnBHJc5W7vSMpbJ1aB7p/Py69A==}
-    dev: false
-
   /@types/node@16.18.59:
     resolution: {integrity: sha512-PJ1w2cNeKUEdey4LiPra0ZuxZFOGvetswE8qHRriV/sUkL5Al4tTmPV9D2+Y/TPIxTHHgxTfRjZVKWhPw/ORhQ==}
     dev: false
@@ -1665,7 +1661,7 @@ packages:
     resolution: {integrity: sha512-KCr4aTEUkzSF89qw09e2oxsC/RXXT3K5ZPv4gvj3XTiWVrxNoi7WrqNTahNE/Hul5C9z3B8w+yWNTQgua12oag==}
     dependencies:
       '@types/expect': 1.20.4
-      '@types/node': 15.14.9
+      '@types/node': 20.8.8
     dev: false
 
   /@ungap/structured-clone@1.2.0:
@@ -4792,25 +4788,6 @@ packages:
       '@types/mdast': 4.0.2
     dev: true
 
-  /mem-fs-editor@10.0.3:
-    resolution: {integrity: sha512-EfE+MKDgfplq6wtS0mRP/4hKNBLfVqc1dhnNEIJRQS9neTCAI3SkHQDToh9fvp02QtICiyGVR1/jJPFE7AFIpQ==}
-    engines: {node: '>=16.13.0'}
-    dependencies:
-      '@types/ejs': 3.1.4
-      binaryextensions: 4.18.0
-      commondir: 1.0.1
-      deep-extend: 0.6.0
-      ejs: 3.1.9
-      globby: 13.2.2
-      isbinaryfile: 5.0.0
-      mem-fs: 3.0.0
-      minimatch: 9.0.3
-      multimatch: 6.0.0
-      normalize-path: 3.0.0
-      textextensions: 5.16.0
-      vinyl: 3.0.0
-    dev: false
-
   /mem-fs-editor@11.0.0(mem-fs@4.0.0):
     resolution: {integrity: sha512-D9+DPIDohRxYUO95vR3RxJZUNkCmehOHqIoJVm9OxChMadCsNdiTB1nuU4zaHJonUMASYdfKN2USxnB9z0ccXg==}
     engines: {node: '>=18.0.0'}
@@ -4831,16 +4808,6 @@ packages:
       normalize-path: 3.0.0
       textextensions: 5.16.0
       vinyl: 3.0.0
-    dev: false
-
-  /mem-fs@3.0.0:
-    resolution: {integrity: sha512-ORIMUgVVaKTsruUnt8qka8CD0T05mQnW5m7OZ/JtyUcfXKZ5vvHNf34CHvfbpd+WYm+6iWXKS5MvO6zhjJWlrg==}
-    engines: {node: '>=16.13.0'}
-    dependencies:
-      '@types/node': 18.18.6
-      '@types/vinyl': 2.0.9
-      vinyl: 3.0.0
-      vinyl-file: 5.0.0
     dev: false
 
   /mem-fs@4.0.0:
@@ -7640,18 +7607,19 @@ packages:
       - supports-color
     dev: false
 
-  /yeoman-generator@6.0.1(@yeoman/types@1.1.1)(yeoman-environment@4.0.0):
-    resolution: {integrity: sha512-6mZ6w/tsjW2hcUzBCggm2mhzwYE/qvtqd/hW9kAV9KT5iYT95CrmVLs4fvmiVbhYg7SXorgQGDlQeR32UAt7Vw==}
-    engines: {node: ^16.13.0 || >=18.12.0}
+  /yeoman-generator@7.0.0(@yeoman/types@1.1.1)(mem-fs@4.0.0)(yeoman-environment@4.0.0):
+    resolution: {integrity: sha512-QF9dCH22G9ZMnzBDhNiqFBRtsU73HOAFtOZNMWCqMCtkmTD9j3D6rESD8o9kiXLKJhIOVKfMG9fGbyNWRQbFAA==}
+    engines: {node: ^18.17.0 || >=20.5.0}
     peerDependencies:
-      '@yeoman/types': ^1.0.1
-      yeoman-environment: ^3.18.4 || ^4.0.0-alpha.4
+      '@yeoman/types': ^1.1.1
+      mem-fs: ^4.0.0
+      yeoman-environment: ^4.0.0
     peerDependenciesMeta:
       yeoman-environment:
         optional: true
     dependencies:
       '@types/lodash-es': 4.17.10
-      '@types/node': 16.18.59
+      '@types/node': 18.18.6
       '@yeoman/namespace': 1.0.0
       '@yeoman/types': 1.1.1(@types/inquirer@9.0.6)(mem-fs@4.0.0)
       chalk: 5.3.0
@@ -7661,7 +7629,8 @@ packages:
       json-schema: 0.4.0
       latest-version: 7.0.0
       lodash-es: 4.17.21
-      mem-fs-editor: 10.0.3
+      mem-fs: 4.0.0
+      mem-fs-editor: 11.0.0(mem-fs@4.0.0)
       minimist: 1.2.8
       read-pkg-up: 10.1.0
       semver: 7.5.4

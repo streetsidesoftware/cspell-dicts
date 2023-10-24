@@ -19,7 +19,7 @@ _description of change_
 
 ## Checklist
 
-- [ ] By submitting this issue, you agree to follow our
+- [ ] By submitting this pull-request, you agree to follow our
       [Code of Conduct](https://github.com/streetsidesoftware/cspell-dicts/blob/main/CODE_OF_CONDUCT.md)
 - [ ] Verify that the title starts with the correct prefix:
   - `fix:` - for minor changes like adding words or fixing spelling issues.
