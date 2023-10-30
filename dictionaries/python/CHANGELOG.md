@@ -3,6 +3,14 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+## [4.1.10](https://github.com/streetsidesoftware/cspell-dicts/compare/@cspell/dict-python@4.1.9...@cspell/dict-python@4.1.10) (2023-10-30)
+
+
+### Updates and Bug Fixes
+
+* Add "PYTHONHOME" to python dict ([#2697](https://github.com/streetsidesoftware/cspell-dicts/issues/2697)) ([a099929](https://github.com/streetsidesoftware/cspell-dicts/commit/a0999297967fd21639c9b167c5edac5d3ea60f64))
+* Add "venvs" to the python dict ([#2695](https://github.com/streetsidesoftware/cspell-dicts/issues/2695)) ([7b9d821](https://github.com/streetsidesoftware/cspell-dicts/commit/7b9d8218f6e7c5bbfc5a6fc97cd9727e2a0489e1))
+
 ## [4.1.9](https://github.com/streetsidesoftware/cspell-dicts/compare/@cspell/dict-python@4.1.8...@cspell/dict-python@4.1.9) (2023-09-27)
 
 
