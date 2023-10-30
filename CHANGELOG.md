@@ -1,5 +1,17 @@
 # Release Notes
 
+## [20.2.1](https://github.com/streetsidesoftware/cspell-dicts/compare/cspell-dicts@20.2.0...cspell-dicts@20.2.1) (2023-10-30)
+
+
+### Updates and Bug Fixes
+
+* Add "PYTHONHOME" to python dict ([#2697](https://github.com/streetsidesoftware/cspell-dicts/issues/2697)) ([a099929](https://github.com/streetsidesoftware/cspell-dicts/commit/a0999297967fd21639c9b167c5edac5d3ea60f64))
+* Add "venvs" to the python dict ([#2695](https://github.com/streetsidesoftware/cspell-dicts/issues/2695)) ([7b9d821](https://github.com/streetsidesoftware/cspell-dicts/commit/7b9d8218f6e7c5bbfc5a6fc97cd9727e2a0489e1))
+* add CSAIL to companies ([#2681](https://github.com/streetsidesoftware/cspell-dicts/issues/2681)) ([7c5dd5a](https://github.com/streetsidesoftware/cspell-dicts/commit/7c5dd5a76640350281d791071e9ad12d5dff8e48))
+* add CSAIL to companies ([#2687](https://github.com/streetsidesoftware/cspell-dicts/issues/2687)) ([e194b0c](https://github.com/streetsidesoftware/cspell-dicts/commit/e194b0cdf3d1d7457ef708f01d1a4bf6bb49b47f))
+* Add several filetypes ([#2690](https://github.com/streetsidesoftware/cspell-dicts/issues/2690)) ([8738efe](https://github.com/streetsidesoftware/cspell-dicts/commit/8738efe8dd82ce13ac43ce00fb64562d1cb44457))
+* Workflow Bot -- Build Dictionaries ([#2684](https://github.com/streetsidesoftware/cspell-dicts/issues/2684)) ([e57b4e2](https://github.com/streetsidesoftware/cspell-dicts/commit/e57b4e20295dc7b1cc3207799711f7b4331042cc))
+
 ## [20.2.0](https://github.com/streetsidesoftware/cspell-dicts/compare/cspell-dicts@20.1.0...cspell-dicts@20.2.0) (2023-10-22)
 
 
