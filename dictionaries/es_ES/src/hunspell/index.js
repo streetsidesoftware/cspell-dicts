@@ -1,27 +1,18 @@
-const fs = require('fs')
-const path = require('path')
+/**
+ * @typedef Dictionary
+ *   Hunspell dictionary.
+ * @property {Uint8Array} aff
+ *   Data for the affix file (defines the language, keyboard, flags, and more).
+ * @property {Uint8Array} dic
+ *   Data for the dictionary file (contains words and flags applying to those words).
+ */
 
-module.exports = load
+import fs from 'node:fs/promises'
 
-function load(callback) {
-  let result = {}
-  let pos = -1
-  let exception
+const aff = await fs.readFile(new URL('index.aff', import.meta.url))
+const dic = await fs.readFile(new URL('index.dic', import.meta.url))
 
-  one('aff')
-  one('dic')
+/** @type {Dictionary} */
+const dictionary = {aff, dic}
 
-  function one(name) {
-    fs.readFile(path.join(__dirname, 'index.' + name), (error, doc) => {
-      pos++
-      exception = exception || error
-      result[name] = doc
-
-      if (pos) {
-        callback(exception, exception ? undefined : result)
-        exception = undefined
-        result = undefined
-      }
-    })
-  }
-}
+export default dictionary

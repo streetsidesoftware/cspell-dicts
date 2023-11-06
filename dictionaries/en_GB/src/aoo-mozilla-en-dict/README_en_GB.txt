@@ -139,7 +139,7 @@ OOo Issue 63541 — remove *dessicated
 
 2019-03-01:
            — Added the LGPL_V3 License .txt into the Extension.
-           — Ding-adong added a flag “=" for suffixes: -lessness, -lessnesses, -lessness's.
+           — Ding-adong added a flag “=” for suffixes: -lessness, -lessnesses, -lessness's.
            — Ding-adong changed the prefix flag “O” to “^” since “O” was both prefix and suffix.
            — Small fixes and enhancements on flags “z” and “O” by Ding-adong.
 
@@ -188,6 +188,14 @@ OOo Issue 63541 — remove *dessicated
 2023-09-03:
            — Improved flag “N”, increasing the wordlist in 596 valid words.
 
+2023-10-03:
+           — Improved flag “q”, increasing the wordlist in 126 valid words.
+
+2023-10-07:
+           — Improved flag “-”, increasing the wordlist in 128 valid words.
+
+2023-10-26:
+           — Improved flag “J”, increasing the wordlist in 70 valid words.
 -------
 
 MARCO A.G.PINTO:

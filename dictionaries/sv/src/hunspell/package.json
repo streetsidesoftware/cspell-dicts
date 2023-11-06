@@ -1,13 +1,13 @@
 {
   "name": "dictionary-sv",
-  "version": "3.1.0",
+  "version": "4.0.0",
   "description": "Swedish spelling dictionary",
   "license": "LGPL-3.0",
   "keywords": [
-    "spelling",
-    "myspell",
-    "hunspell",
     "dictionary",
+    "hunspell",
+    "myspell",
+    "spelling",
     "sv",
     "swedish"
   ],
@@ -22,10 +22,13 @@
     "Titus Wormer <tituswormer@gmail.com> (https://wooorm.com)",
     "Thomas Beverley <tom.beverley101@gmail.com>"
   ],
+  "type": "module",
+  "exports": "./index.js",
   "files": [
-    "index.js",
     "index.aff",
+    "index.d.ts",
     "index.dic",
-    "index.d.ts"
+    "index.js",
+    "index.map"
   ]
 }
