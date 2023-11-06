@@ -1,15 +1,15 @@
 {
   "name": "dictionary-de",
-  "version": "2.1.0",
+  "version": "3.0.0",
   "description": "German spelling dictionary",
   "license": "(GPL-2.0 OR GPL-3.0)",
   "keywords": [
-    "spelling",
-    "myspell",
-    "hunspell",
-    "dictionary",
     "de",
-    "german"
+    "dictionary",
+    "german",
+    "hunspell",
+    "myspell",
+    "spelling"
   ],
   "repository": "https://github.com/wooorm/dictionaries/tree/main/dictionaries/de",
   "bugs": "https://github.com/wooorm/dictionaries/issues",
@@ -22,10 +22,13 @@
     "Titus Wormer <tituswormer@gmail.com> (https://wooorm.com)",
     "Thomas Beverley <tom.beverley101@gmail.com>"
   ],
+  "type": "module",
+  "exports": "./index.js",
   "files": [
-    "index.js",
     "index.aff",
+    "index.d.ts",
     "index.dic",
-    "index.d.ts"
+    "index.js",
+    "index.map"
   ]
 }

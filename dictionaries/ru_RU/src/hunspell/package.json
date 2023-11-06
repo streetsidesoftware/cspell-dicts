@@ -1,15 +1,15 @@
 {
   "name": "dictionary-ru",
-  "version": "2.1.0",
+  "version": "3.0.0",
   "description": "Russian spelling dictionary",
-  "license": "LGPL-3.0",
+  "license": "BSD-3-Clause",
   "keywords": [
-    "spelling",
-    "myspell",
-    "hunspell",
     "dictionary",
+    "hunspell",
+    "myspell",
     "ru",
-    "russian"
+    "russian",
+    "spelling"
   ],
   "repository": "https://github.com/wooorm/dictionaries/tree/main/dictionaries/ru",
   "bugs": "https://github.com/wooorm/dictionaries/issues",
@@ -22,10 +22,13 @@
     "Titus Wormer <tituswormer@gmail.com> (https://wooorm.com)",
     "Thomas Beverley <tom.beverley101@gmail.com>"
   ],
+  "type": "module",
+  "exports": "./index.js",
   "files": [
-    "index.js",
     "index.aff",
+    "index.d.ts",
     "index.dic",
-    "index.d.ts"
+    "index.js",
+    "index.map"
   ]
 }
