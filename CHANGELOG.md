@@ -1,5 +1,17 @@
 # Release Notes
 
+## [20.3.0](https://github.com/streetsidesoftware/cspell-dicts/compare/cspell-dicts@20.2.1...cspell-dicts@20.3.0) (2023-11-06)
+
+
+### Features
+
+* Update dictionary sources ([#2705](https://github.com/streetsidesoftware/cspell-dicts/issues/2705)) ([27ad9de](https://github.com/streetsidesoftware/cspell-dicts/commit/27ad9de120fc71bc1b9a2aacc4407c423aeee2fd))
+
+
+### Updates and Bug Fixes
+
+* Workflow Bot -- Build Dictionaries ([#2707](https://github.com/streetsidesoftware/cspell-dicts/issues/2707)) ([2f4fb72](https://github.com/streetsidesoftware/cspell-dicts/commit/2f4fb72ad0b370c78bdbc19f38ee6a452e767010))
+
 ## [20.2.1](https://github.com/streetsidesoftware/cspell-dicts/compare/cspell-dicts@20.2.0...cspell-dicts@20.2.1) (2023-10-30)
 
 
