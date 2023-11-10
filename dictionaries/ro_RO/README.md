@@ -42,6 +42,7 @@ The `cspell-ext.json` file in this package should be added to the import section
 See: [How to Create a New Dictionary](https://github.com/streetsidesoftware/cspell-dicts#how-to-create-a-new-dictionary)
 
 ## License
+GPL-3.0
 
 > Some packages may have other licenses included.
 
