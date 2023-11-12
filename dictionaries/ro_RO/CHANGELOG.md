@@ -1,5 +1,21 @@
 # Change Log
 
+## [2.0.0](https://github.com/streetsidesoftware/cspell-dicts/compare/@cspell/dict-ro-ro@1.1.0...@cspell/dict-ro-ro@2.0.0) (2023-11-12)
+
+
+### ⚠ BREAKING CHANGES
+
+* Update licenses for several dictionaries to match license of their sources ([#2627](https://github.com/streetsidesoftware/cspell-dicts/issues/2627))
+
+### Features
+
+* Update licenses for several dictionaries to match license of their sources ([#2627](https://github.com/streetsidesoftware/cspell-dicts/issues/2627)) ([56a266a](https://github.com/streetsidesoftware/cspell-dicts/commit/56a266aafdcde83043b92022dd0ae187c1d53498))
+
+
+### Updates and Bug Fixes
+
+* Workflow Bot -- Build Dictionaries ([#2718](https://github.com/streetsidesoftware/cspell-dicts/issues/2718)) ([251bed8](https://github.com/streetsidesoftware/cspell-dicts/commit/251bed86dd371ecc26ee38f14c4a853b4c693d5f))
+
 ## [1.1.0](https://github.com/streetsidesoftware/cspell-dicts/compare/@cspell/dict-ro-ro@1.0.0...@cspell/dict-ro-ro@1.1.0) (2023-11-06)
 
 
