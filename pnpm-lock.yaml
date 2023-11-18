@@ -12,17 +12,17 @@ importers:
         specifier: ^8.0.0
         version: 8.0.0
       '@lerna-lite/cli':
-        specifier: ^2.6.0
-        version: 2.6.0(@lerna-lite/exec@2.6.0)(@lerna-lite/publish@2.6.0)(@lerna-lite/run@2.6.0)(@lerna-lite/version@2.6.0)
+        specifier: ^2.7.0
+        version: 2.7.0(@lerna-lite/exec@2.7.0)(@lerna-lite/publish@2.7.0)(@lerna-lite/run@2.7.0)(@lerna-lite/version@2.7.0)
       '@lerna-lite/exec':
-        specifier: ^2.6.0
-        version: 2.6.0(@lerna-lite/publish@2.6.0)(@lerna-lite/run@2.6.0)
+        specifier: ^2.7.0
+        version: 2.7.0(@lerna-lite/publish@2.7.0)(@lerna-lite/run@2.7.0)
       '@lerna-lite/publish':
-        specifier: ^2.6.0
-        version: 2.6.0(@lerna-lite/exec@2.6.0)(@lerna-lite/run@2.6.0)
+        specifier: ^2.7.0
+        version: 2.7.0(@lerna-lite/exec@2.7.0)(@lerna-lite/run@2.7.0)
       '@lerna-lite/run':
-        specifier: ^2.6.0
-        version: 2.6.0(@lerna-lite/exec@2.6.0)(@lerna-lite/publish@2.6.0)
+        specifier: ^2.7.0
+        version: 2.7.0(@lerna-lite/exec@2.7.0)(@lerna-lite/publish@2.7.0)
       ava:
         specifier: ^5.3.1
         version: 5.3.1
@@ -39,14 +39,14 @@ importers:
         specifier: workspace:*
         version: link:cspell-dict-file-checker
       eslint:
-        specifier: ^8.53.0
-        version: 8.53.0
+        specifier: ^8.54.0
+        version: 8.54.0
       eslint-config-prettier:
         specifier: ^9.0.0
-        version: 9.0.0(eslint@8.53.0)
+        version: 9.0.0(eslint@8.54.0)
       eslint-plugin-prettier:
         specifier: ^5.0.1
-        version: 5.0.1(eslint-config-prettier@9.0.0)(eslint@8.53.0)(prettier@3.1.0)
+        version: 5.0.1(eslint-config-prettier@9.0.0)(eslint@8.54.0)(prettier@3.1.0)
       generator-cspell-dicts:
         specifier: workspace:*
         version: link:generator-cspell-dicts
@@ -401,11 +401,11 @@ importers:
         specifier: ^5.3.0
         version: 5.3.0
       yeoman-environment:
-        specifier: ^4.0.0
-        version: 4.0.0(@yeoman/types@1.1.1)(mem-fs@4.0.0)
+        specifier: ^4.1.3
+        version: 4.1.3(@yeoman/types@1.1.2)(mem-fs@4.0.0)
       yeoman-generator:
-        specifier: ^7.1.0
-        version: 7.1.0(@yeoman/types@1.1.1)(mem-fs@4.0.0)(yeoman-environment@4.0.0)
+        specifier: ^7.1.1
+        version: 7.1.1(@yeoman/types@1.1.2)(mem-fs@4.0.0)(yeoman-environment@4.1.3)
       yosay:
         specifier: ^3.0.0
         version: 3.0.0
@@ -696,13 +696,13 @@ packages:
     resolution: {integrity: sha512-fRlqPSdpdub52vFtulDgLPzGPGe75I04ScId1zOO9ABP7/ro8VmaG//m1k7hsPkm6h7FG4jWympoA3aXDAcXaA==}
     engines: {node: '>=18'}
 
-  /@eslint-community/eslint-utils@4.4.0(eslint@8.53.0):
+  /@eslint-community/eslint-utils@4.4.0(eslint@8.54.0):
     resolution: {integrity: sha512-1/sA4dwrzBAyeUoQ6oxahHKmrZvsnLCg4RfxW3ZFGGmQkSNQPFNLV9CUEFQP1x9EYXHTo5p6xdhZM1Ne9p/AfA==}
     engines: {node: ^12.22.0 || ^14.17.0 || >=16.0.0}
     peerDependencies:
       eslint: ^6.0.0 || ^7.0.0 || >=8.0.0
     dependencies:
-      eslint: 8.53.0
+      eslint: 8.54.0
       eslint-visitor-keys: 3.4.3
     dev: true
 
@@ -719,7 +719,7 @@ packages:
       debug: 4.3.4
       espree: 9.6.1
       globals: 13.23.0
-      ignore: 5.2.4
+      ignore: 5.3.0
       import-fresh: 3.3.0
       js-yaml: 4.1.0
       minimatch: 3.1.2
@@ -728,8 +728,8 @@ packages:
       - supports-color
     dev: true
 
-  /@eslint/js@8.53.0:
-    resolution: {integrity: sha512-Kn7K8dx/5U6+cT1yEhpX1w4PCSg0M+XyRILPgvwcEBjerFWCwQj5sbr3/VmxqV0JGHCBCzyd6LxypEuehypY1w==}
+  /@eslint/js@8.54.0:
+    resolution: {integrity: sha512-ut5V+D+fOoWPgGGNj83GGjnntO39xDy6DWxO0wb7Jp3DcMX0TfIqdzHF85VTQkerdyGmuuMD9AKAo5KiNlf/AQ==}
     engines: {node: ^12.22.0 || ^14.17.0 || >=16.0.0}
     dev: true
 
@@ -784,8 +784,8 @@ packages:
     resolution: {integrity: sha512-GaHYm+c0O9MjZRu0ongGBRbinu8gVAMd2UZjji6jVmqKtZluZnptXGWhz1E8j8D2HJ3f/yMxKAUC0b+57wncIw==}
     dev: false
 
-  /@lerna-lite/cli@2.6.0(@lerna-lite/exec@2.6.0)(@lerna-lite/publish@2.6.0)(@lerna-lite/run@2.6.0)(@lerna-lite/version@2.6.0):
-    resolution: {integrity: sha512-sxJmgGt/zQ4rYfdl5OSp5/TToLB16RVxsoVsUsg/qTl5F5C+P35evYBuXRuFNWr50+MdfHqLisbf0qEJgGAk9g==}
+  /@lerna-lite/cli@2.7.0(@lerna-lite/exec@2.7.0)(@lerna-lite/publish@2.7.0)(@lerna-lite/run@2.7.0)(@lerna-lite/version@2.7.0):
+    resolution: {integrity: sha512-O6x75UFU87dk8CL8Zq4N2WBYP1jmYQOw8Xi+jpJiSNY29VuewnbijVpkslkvCdxEe2Qu7zqTV4TBGHT6fa5Z1Q==}
     engines: {node: '>=16.15.0', npm: '>=8.5.0'}
     hasBin: true
     peerDependencies:
@@ -809,12 +809,12 @@ packages:
       '@lerna-lite/watch':
         optional: true
     dependencies:
-      '@lerna-lite/core': 2.6.0
-      '@lerna-lite/exec': 2.6.0(@lerna-lite/publish@2.6.0)(@lerna-lite/run@2.6.0)
-      '@lerna-lite/init': 2.6.0
-      '@lerna-lite/publish': 2.6.0(@lerna-lite/exec@2.6.0)(@lerna-lite/run@2.6.0)
-      '@lerna-lite/run': 2.6.0(@lerna-lite/exec@2.6.0)(@lerna-lite/publish@2.6.0)
-      '@lerna-lite/version': 2.6.0(@lerna-lite/exec@2.6.0)(@lerna-lite/publish@2.6.0)(@lerna-lite/run@2.6.0)
+      '@lerna-lite/core': 2.7.0
+      '@lerna-lite/exec': 2.7.0(@lerna-lite/publish@2.7.0)(@lerna-lite/run@2.7.0)
+      '@lerna-lite/init': 2.7.0
+      '@lerna-lite/publish': 2.7.0(@lerna-lite/exec@2.7.0)(@lerna-lite/run@2.7.0)
+      '@lerna-lite/run': 2.7.0(@lerna-lite/exec@2.7.0)(@lerna-lite/publish@2.7.0)
+      '@lerna-lite/version': 2.7.0(@lerna-lite/exec@2.7.0)(@lerna-lite/publish@2.7.0)(@lerna-lite/run@2.7.0)
       dedent: 1.5.1
       dotenv: 16.3.1
       import-local: 3.1.0
@@ -827,8 +827,8 @@ packages:
       - typescript
     dev: true
 
-  /@lerna-lite/core@2.6.0:
-    resolution: {integrity: sha512-WFyDgjuHHj5dC8WYA4w1hoMyUL8pnb7eFNMVYgPYzXi1L8yoQPpvJr02wOWl464XJbhhfr8Q8tMdMHI7YUSbMQ==}
+  /@lerna-lite/core@2.7.0:
+    resolution: {integrity: sha512-/Z7VCL0hRWJdgSyvJWxkyYJCsD71B3CXBtSz7HFD2+v5cXUW4Ex6teiM81M/oHtMky4wANtSxoeIMED292pfPg==}
     engines: {node: '>=16.15.0', npm: '>=8.5.0'}
     dependencies:
       '@npmcli/run-script': 7.0.2
@@ -863,14 +863,14 @@ packages:
       - typescript
     dev: true
 
-  /@lerna-lite/exec@2.6.0(@lerna-lite/publish@2.6.0)(@lerna-lite/run@2.6.0):
-    resolution: {integrity: sha512-4uqwAzfltAKfVPxgT78cS4Pb79ORT0TJtIbshXxbxwjHwd06JsuVQYRnkHxzwizNe24uZJbpRxsnNn4zEsRN7w==}
+  /@lerna-lite/exec@2.7.0(@lerna-lite/publish@2.7.0)(@lerna-lite/run@2.7.0):
+    resolution: {integrity: sha512-KuzGL2tngH6VFj0C9Um2GXBZ8BvHSY29w/wiygxpAjBChAGpCc72UynYWm+61vs+uNuhTIgWWhng9mi1zXLI/g==}
     engines: {node: '>=16.15.0', npm: '>=8.5.0'}
     dependencies:
-      '@lerna-lite/cli': 2.6.0(@lerna-lite/exec@2.6.0)(@lerna-lite/publish@2.6.0)(@lerna-lite/run@2.6.0)(@lerna-lite/version@2.6.0)
-      '@lerna-lite/core': 2.6.0
-      '@lerna-lite/filter-packages': 2.6.0
-      '@lerna-lite/profiler': 2.6.0
+      '@lerna-lite/cli': 2.7.0(@lerna-lite/exec@2.7.0)(@lerna-lite/publish@2.7.0)(@lerna-lite/run@2.7.0)(@lerna-lite/version@2.7.0)
+      '@lerna-lite/core': 2.7.0
+      '@lerna-lite/filter-packages': 2.7.0
+      '@lerna-lite/profiler': 2.7.0
       chalk: 5.3.0
       dotenv: 16.3.1
       npmlog: 7.0.1
@@ -886,11 +886,11 @@ packages:
       - typescript
     dev: true
 
-  /@lerna-lite/filter-packages@2.6.0:
-    resolution: {integrity: sha512-K+KQ3yzzbGJ5Hhr7ij5SiFnWjs7Ns+dpaRjPlVbEnJZnkR2CTOG18fboQs241O5yPMO2EZYBVRL8EA2a9AUi8g==}
+  /@lerna-lite/filter-packages@2.7.0:
+    resolution: {integrity: sha512-wkRO78yfoKWmgnmXT3mqfAQy+/bVQZjKTP+fs8BLl1SxB8nOWSHN/kotCm4tZvYs9/R4PaRvTkTJpWlOFyVdCQ==}
     engines: {node: '>=16.15.0', npm: '>=8.5.0'}
     dependencies:
-      '@lerna-lite/core': 2.6.0
+      '@lerna-lite/core': 2.7.0
       multimatch: 6.0.0
       npmlog: 7.0.1
     transitivePeerDependencies:
@@ -899,11 +899,11 @@ packages:
       - typescript
     dev: true
 
-  /@lerna-lite/init@2.6.0:
-    resolution: {integrity: sha512-K8lxcQXgGrTfl3YyvKSl+uiAT287vd1awouvme7m+3j32H6DTI31u35t7mR6mBY7GhkDLX/iJzjaHpv2qBb3NQ==}
+  /@lerna-lite/init@2.7.0:
+    resolution: {integrity: sha512-cV5tCKqcDbbOAiuQEe89o7bILG/S8tEUlfTIBUuwknZK55TM+7YSuKY0Cdemq9H1hpCSUJRk0xZm4j+tyoWXpA==}
     engines: {node: '>=16.15.0', npm: '>=8.5.0'}
     dependencies:
-      '@lerna-lite/core': 2.6.0
+      '@lerna-lite/core': 2.7.0
       fs-extra: 11.1.1
       p-map: 6.0.0
       write-json-file: 5.0.0
@@ -913,11 +913,11 @@ packages:
       - typescript
     dev: true
 
-  /@lerna-lite/profiler@2.6.0:
-    resolution: {integrity: sha512-9uHJ6NefsFMlGwWQyXAuepz/1vkCeGPO/xTs5H3gtCwOR9NLNwlPwy827WjX4wNRMNdjZNzxW2ogPky5z/evkQ==}
+  /@lerna-lite/profiler@2.7.0:
+    resolution: {integrity: sha512-UbhU6+YLev10nBKA2+JacfBn9XkgvivMcFVadt3Ow812hY6of/PVL3X8fl3JdOY/nnXlYmJucxPr6vCKZDmjZw==}
     engines: {node: '>=16.15.0', npm: '>=8.5.0'}
     dependencies:
-      '@lerna-lite/core': 2.6.0
+      '@lerna-lite/core': 2.7.0
       fs-extra: 11.1.1
       npmlog: 7.0.1
       upath: 2.0.1
@@ -927,13 +927,13 @@ packages:
       - typescript
     dev: true
 
-  /@lerna-lite/publish@2.6.0(@lerna-lite/exec@2.6.0)(@lerna-lite/run@2.6.0):
-    resolution: {integrity: sha512-Xa7MT1nZ8Q6vY0vwLMZgdoX8Lz2PHZ6tEMWx54qgWiK0HYOfZjW+NNXGV9hKu6PpaRBq+N5PIKOptJSjQCjEew==}
+  /@lerna-lite/publish@2.7.0(@lerna-lite/exec@2.7.0)(@lerna-lite/run@2.7.0):
+    resolution: {integrity: sha512-tuPRdY0+MhSNiCtVwM0m+N36qajVMCMY9UoUH3ku5cirprW3sKuNPoJKWz02hGPFKdQr+w6WeO29ksTlNgNwOA==}
     engines: {node: '>=16.15.0', npm: '>=8.5.0'}
     dependencies:
-      '@lerna-lite/cli': 2.6.0(@lerna-lite/exec@2.6.0)(@lerna-lite/publish@2.6.0)(@lerna-lite/run@2.6.0)(@lerna-lite/version@2.6.0)
-      '@lerna-lite/core': 2.6.0
-      '@lerna-lite/version': 2.6.0(@lerna-lite/exec@2.6.0)(@lerna-lite/publish@2.6.0)(@lerna-lite/run@2.6.0)
+      '@lerna-lite/cli': 2.7.0(@lerna-lite/exec@2.7.0)(@lerna-lite/publish@2.7.0)(@lerna-lite/run@2.7.0)(@lerna-lite/version@2.7.0)
+      '@lerna-lite/core': 2.7.0
+      '@lerna-lite/version': 2.7.0(@lerna-lite/exec@2.7.0)(@lerna-lite/publish@2.7.0)(@lerna-lite/run@2.7.0)
       '@npmcli/arborist': 7.2.1
       byte-size: 8.1.1
       chalk: 5.3.0
@@ -942,7 +942,7 @@ packages:
       glob: 10.3.10
       has-unicode: 2.0.1
       libnpmaccess: 8.0.1
-      libnpmpublish: 9.0.1
+      libnpmpublish: 9.0.2
       normalize-path: 3.0.0
       npm-package-arg: 11.0.1
       npm-packlist: 8.0.0
@@ -969,14 +969,14 @@ packages:
       - typescript
     dev: true
 
-  /@lerna-lite/run@2.6.0(@lerna-lite/exec@2.6.0)(@lerna-lite/publish@2.6.0):
-    resolution: {integrity: sha512-480KjBhInw14qVsINuQO6Qg5woei1vPAcOWMITKoPoYHAiWfEHtLQK9oCCltyGFlyGQalLhoJs7a+m0GchO1XQ==}
+  /@lerna-lite/run@2.7.0(@lerna-lite/exec@2.7.0)(@lerna-lite/publish@2.7.0):
+    resolution: {integrity: sha512-0Zc868u6eTcEnOUHvBJvR4VgFBwSdumCIvwBSPaZWvlPRJ6dElFV9wrPkK5o03YGMQSrbv631mch0byHYbWvLA==}
     engines: {node: '>=16.15.0', npm: '>=8.5.0'}
     dependencies:
-      '@lerna-lite/cli': 2.6.0(@lerna-lite/exec@2.6.0)(@lerna-lite/publish@2.6.0)(@lerna-lite/run@2.6.0)(@lerna-lite/version@2.6.0)
-      '@lerna-lite/core': 2.6.0
-      '@lerna-lite/filter-packages': 2.6.0
-      '@lerna-lite/profiler': 2.6.0
+      '@lerna-lite/cli': 2.7.0(@lerna-lite/exec@2.7.0)(@lerna-lite/publish@2.7.0)(@lerna-lite/run@2.7.0)(@lerna-lite/version@2.7.0)
+      '@lerna-lite/core': 2.7.0
+      '@lerna-lite/filter-packages': 2.7.0
+      '@lerna-lite/profiler': 2.7.0
       chalk: 5.3.0
       fs-extra: 11.1.1
       npmlog: 7.0.1
@@ -992,12 +992,12 @@ packages:
       - typescript
     dev: true
 
-  /@lerna-lite/version@2.6.0(@lerna-lite/exec@2.6.0)(@lerna-lite/publish@2.6.0)(@lerna-lite/run@2.6.0):
-    resolution: {integrity: sha512-OEdSV6SwYqspXls2Nthd6itw7XJaWGAr65rDVrgcQajQ0dAngateYtsq/zmRMaJnSYNX6u5gUV5y+6WISQaGMA==}
+  /@lerna-lite/version@2.7.0(@lerna-lite/exec@2.7.0)(@lerna-lite/publish@2.7.0)(@lerna-lite/run@2.7.0):
+    resolution: {integrity: sha512-8+3HPd6y+vnNvCmJ0u/ouiwKdN54QCIGRF0du1yUj/Ts+6QA0hZAAGxfpq9nGIS5wPDMHS7ebrHeck0xbK3mSw==}
     engines: {node: '>=16.15.0', npm: '>=8.5.0'}
     dependencies:
-      '@lerna-lite/cli': 2.6.0(@lerna-lite/exec@2.6.0)(@lerna-lite/publish@2.6.0)(@lerna-lite/run@2.6.0)(@lerna-lite/version@2.6.0)
-      '@lerna-lite/core': 2.6.0
+      '@lerna-lite/cli': 2.7.0(@lerna-lite/exec@2.7.0)(@lerna-lite/publish@2.7.0)(@lerna-lite/run@2.7.0)(@lerna-lite/version@2.7.0)
+      '@lerna-lite/core': 2.7.0
       '@octokit/plugin-enterprise-rest': 6.0.1
       '@octokit/rest': 19.0.13
       chalk: 5.3.0
@@ -1630,8 +1630,8 @@ packages:
       undici-types: 5.26.5
     dev: false
 
-  /@types/node@20.9.0:
-    resolution: {integrity: sha512-nekiGu2NDb1BcVofVcEKMIwzlx4NjHlcjhoxxKBNLtz15Y1z7MYf549DFvkHSId02Ax6kGwWntIBPC3l/JZcmw==}
+  /@types/node@20.9.1:
+    resolution: {integrity: sha512-HhmzZh5LSJNS5O8jQKpJ/3ZcrrlG6L70hpGqMIAoM9YVD0YBRNWYsfwcXq8VnSjlNpCpgLzMXdiPo+dxcvSmiA==}
     dependencies:
       undici-types: 5.26.5
     dev: false
@@ -1646,7 +1646,7 @@ packages:
   /@types/through@0.0.33:
     resolution: {integrity: sha512-HsJ+z3QuETzP3cswwtzt2vEIiHBk/dCcHGhbmG5X3ecnwFD/lPrMpliGXxSCg03L9AhrdwA4Oz/qfspkDW+xGQ==}
     dependencies:
-      '@types/node': 20.9.0
+      '@types/node': 20.9.1
     dev: false
 
   /@types/unist@2.0.10:
@@ -1661,21 +1661,21 @@ packages:
     resolution: {integrity: sha512-DqN5BjCrmjAtZ1apqzcq2vk2PSW0m1nFfjIafBFkAyddmHxuw3ZAK3omLiSdpuu81+8h07i6U4DtaE38Xsf2xQ==}
     dependencies:
       '@types/expect': 1.20.4
-      '@types/node': 20.9.0
+      '@types/node': 20.9.1
     dev: false
 
   /@ungap/structured-clone@1.2.0:
     resolution: {integrity: sha512-zuVdFrMJiuCDQUMCzQaD6KL28MjnqqN8XnAqiEq9PNm/hCPTSGfrXCOfwj1ow4LFb/tNymJPwsNbVePc1xFqrQ==}
     dev: true
 
-  /@yeoman/adapter@1.4.0(@yeoman/types@1.1.1):
+  /@yeoman/adapter@1.4.0(@yeoman/types@1.1.2):
     resolution: {integrity: sha512-JroPWaZ8fALkfRt1FVM8/jz0kGOviVkKaCR4y0EM9Si2B9UD4UySGLCrjyUWeWBGqgr2iGAQ0ehoHjRAlyzsFg==}
     engines: {node: ^16.13.0 || >=18.12.0}
     peerDependencies:
       '@yeoman/types': ^1.1.0
     dependencies:
       '@types/inquirer': 9.0.7
-      '@yeoman/types': 1.1.1(@types/inquirer@9.0.7)(mem-fs@4.0.0)
+      '@yeoman/types': 1.1.2(@types/inquirer@9.0.7)(mem-fs@4.0.0)
       chalk: 5.3.0
       inquirer: 9.2.12
       log-symbols: 5.1.0
@@ -1684,7 +1684,7 @@ packages:
       text-table: 0.2.0
     dev: false
 
-  /@yeoman/conflicter@2.0.0(@yeoman/types@1.1.1)(mem-fs@4.0.0):
+  /@yeoman/conflicter@2.0.0(@yeoman/types@1.1.2)(mem-fs@4.0.0):
     resolution: {integrity: sha512-DhxzWfHXg+W3AGyWM35L2o4GkQbUcT30f2+l6/2sZGwQcUPyTIR9RDyxrV9pf6YlwUJwvKjL2jLdB2QlJ1mKbg==}
     engines: {node: '>=18.12.0'}
     peerDependencies:
@@ -1693,7 +1693,7 @@ packages:
     dependencies:
       '@types/node': 16.18.61
       '@yeoman/transform': 1.2.0
-      '@yeoman/types': 1.1.1(@types/inquirer@9.0.7)(mem-fs@4.0.0)
+      '@yeoman/types': 1.1.2(@types/inquirer@9.0.7)(mem-fs@4.0.0)
       binary-extensions: 2.2.0
       cli-table: 0.3.11
       dateformat: 5.0.3
@@ -1721,8 +1721,8 @@ packages:
       readable-stream: 4.4.2
     dev: false
 
-  /@yeoman/types@1.1.1(@types/inquirer@9.0.7)(mem-fs@4.0.0):
-    resolution: {integrity: sha512-BErzFIs5ETmbwSCBT24ZL+TVjFik+CbrHpeO1DUeWwwx3nfE6IJOp5hAwSdnASsPQAbtaBHrt/if6Q/3HTCS3g==}
+  /@yeoman/types@1.1.2(@types/inquirer@9.0.7)(mem-fs@4.0.0):
+    resolution: {integrity: sha512-/hg8AIU0ZLijHfZWi0vFgWPVWvUJs/tlKeia7Z5sKsWYGCcqsPSHZcnov5bZlpxv8v+vPQ8K9VtTKORtVALsJw==}
     engines: {node: ^16.13.0 || >=18.12.0}
     peerDependencies:
       '@types/inquirer': ^9.0.3
@@ -2213,6 +2213,11 @@ packages:
     resolution: {integrity: sha512-NIxF55hv4nSqQswkAeiOi1r83xy8JldOFDTWiug55KBu9Jnblncd2U6ViHmYgHf01TPZS77NJBhBMKdWj9HQMQ==}
     engines: {node: '>=8'}
 
+  /ci-info@4.0.0:
+    resolution: {integrity: sha512-TdHqgGf9odd8SXNuxtUBVx8Nv+qZOejE6qyqiy5NtbYYQOeFa6zmHkxlPzmaLxWWHsU6nJmB7AETdVPi+2NBUg==}
+    engines: {node: '>=8'}
+    dev: true
+
   /ci-parallel-vars@1.0.1:
     resolution: {integrity: sha512-uvzpYrpmidaoxvIQHM+rKSrigjOe9feHYbw4uOI2gdfe1C3xIlxO+kVXq83WQWNniTf8bAxVpy+cQeFQsMERKg==}
 
@@ -2698,7 +2703,7 @@ packages:
       cspell-lib: 8.0.0
       fast-glob: 3.3.2
       fast-json-stable-stringify: 2.1.0
-      file-entry-cache: 7.0.1
+      file-entry-cache: 7.0.2
       get-stdin: 9.0.0
       semver: 7.5.4
       strip-ansi: 7.1.0
@@ -3031,16 +3036,16 @@ packages:
     resolution: {integrity: sha512-/veY75JbMK4j1yjvuUxuVsiS/hr/4iHs9FTT6cgTexxdE0Ly/glccBAkloH/DofkjRbZU3bnoj38mOmhkZ0lHw==}
     engines: {node: '>=12'}
 
-  /eslint-config-prettier@9.0.0(eslint@8.53.0):
+  /eslint-config-prettier@9.0.0(eslint@8.54.0):
     resolution: {integrity: sha512-IcJsTkJae2S35pRsRAwoCE+925rJJStOdkKnLVgtE+tEpqU0EVVM7OqrwxqgptKdX29NUwC82I5pXsGFIgSevw==}
     hasBin: true
     peerDependencies:
       eslint: '>=7.0.0'
     dependencies:
-      eslint: 8.53.0
+      eslint: 8.54.0
     dev: true
 
-  /eslint-plugin-prettier@5.0.1(eslint-config-prettier@9.0.0)(eslint@8.53.0)(prettier@3.1.0):
+  /eslint-plugin-prettier@5.0.1(eslint-config-prettier@9.0.0)(eslint@8.54.0)(prettier@3.1.0):
     resolution: {integrity: sha512-m3u5RnR56asrwV/lDC4GHorlW75DsFfmUcjfCYylTUs85dBRnB7VM6xG8eCMJdeDRnppzmxZVf1GEPJvl1JmNg==}
     engines: {node: ^14.18.0 || >=16.0.0}
     peerDependencies:
@@ -3054,8 +3059,8 @@ packages:
       eslint-config-prettier:
         optional: true
     dependencies:
-      eslint: 8.53.0
-      eslint-config-prettier: 9.0.0(eslint@8.53.0)
+      eslint: 8.54.0
+      eslint-config-prettier: 9.0.0(eslint@8.54.0)
       prettier: 3.1.0
       prettier-linter-helpers: 1.0.0
       synckit: 0.8.5
@@ -3074,15 +3079,15 @@ packages:
     engines: {node: ^12.22.0 || ^14.17.0 || >=16.0.0}
     dev: true
 
-  /eslint@8.53.0:
-    resolution: {integrity: sha512-N4VuiPjXDUa4xVeV/GC/RV3hQW9Nw+Y463lkWaKKXKYMvmRiRDAtfpuPFLN+E1/6ZhyR8J2ig+eVREnYgUsiag==}
+  /eslint@8.54.0:
+    resolution: {integrity: sha512-NY0DfAkM8BIZDVl6PgSa1ttZbx3xHgJzSNJKYcQglem6CppHyMhRIQkBVSSMaSRnLhig3jsDbEzOjwCVt4AmmA==}
     engines: {node: ^12.22.0 || ^14.17.0 || >=16.0.0}
     hasBin: true
     dependencies:
-      '@eslint-community/eslint-utils': 4.4.0(eslint@8.53.0)
+      '@eslint-community/eslint-utils': 4.4.0(eslint@8.54.0)
       '@eslint-community/regexpp': 4.10.0
       '@eslint/eslintrc': 2.1.3
-      '@eslint/js': 8.53.0
+      '@eslint/js': 8.54.0
       '@humanwhocodes/config-array': 0.11.13
       '@humanwhocodes/module-importer': 1.0.1
       '@nodelib/fs.walk': 1.2.8
@@ -3104,7 +3109,7 @@ packages:
       glob-parent: 6.0.2
       globals: 13.23.0
       graphemer: 1.4.0
-      ignore: 5.2.4
+      ignore: 5.3.0
       imurmurhash: 0.1.4
       is-glob: 4.0.3
       is-path-inside: 3.0.3
@@ -3300,8 +3305,8 @@ packages:
       flat-cache: 3.2.0
     dev: true
 
-  /file-entry-cache@7.0.1:
-    resolution: {integrity: sha512-uLfFktPmRetVCbHe5UPuekWrQ6hENufnA46qEGbfACkK5drjTTdQYUragRgMjHldcbYG+nslUerqMPjbBSHXjQ==}
+  /file-entry-cache@7.0.2:
+    resolution: {integrity: sha512-TfW7/1iI4Cy7Y8L6iqNdZQVvdXn0f8B4QcIXmkIbtTIe/Okm/nSlHb4IwGzRVOd3WfSieCgvf5cMzEfySAIl0g==}
     engines: {node: '>=12.0.0'}
     dependencies:
       flat-cache: 3.2.0
@@ -3317,6 +3322,11 @@ packages:
     engines: {node: '>=8'}
     dependencies:
       to-regex-range: 5.0.1
+
+  /find-up-simple@1.0.0:
+    resolution: {integrity: sha512-q7Us7kcjj2VMePAa02hDAF6d+MzsdsAWEwYyOpwUtlerRBkOEPBCRZrAV4XfcSN8fHAgaD0hP7miwoay6DCprw==}
+    engines: {node: '>=18'}
+    dev: false
 
   /find-up@2.1.0:
     resolution: {integrity: sha512-NWzkk0jSJtTt08+FBFMvXoeZnOJD+jTtsRmBYbAIzJdX6l7dLgR7CTubCM5/eDdPUBvLCeVasP1brfVR/9/EZQ==}
@@ -3589,7 +3599,7 @@ packages:
     dependencies:
       dir-glob: 3.0.1
       fast-glob: 3.3.2
-      ignore: 5.2.4
+      ignore: 5.3.0
       merge2: 1.4.1
       slash: 4.0.0
 
@@ -3779,8 +3789,8 @@ packages:
     dependencies:
       minimatch: 9.0.3
 
-  /ignore@5.2.4:
-    resolution: {integrity: sha512-MAb38BcSbH0eHNBxn7ql2NH/kX33OkB3lZ1BNdh7ENeRChHTYsTvWrMubiIAMNS2llXEEgZ1MUOBtXChP3kaFQ==}
+  /ignore@5.3.0:
+    resolution: {integrity: sha512-g7dmpshy+gD7mh88OC9NwSGTKoc3kyLAZQRU1mt53Aw/vnvfXnbC+F/7F7QoYVKbV+KNvJx8wArewKy1vXMtlg==}
     engines: {node: '>= 4'}
 
   /import-fresh@3.3.0:
@@ -3813,6 +3823,11 @@ packages:
   /indent-string@5.0.0:
     resolution: {integrity: sha512-m6FAo/spmsW2Ab2fU35JTYwtOKa2yAwXSwgjSv1TJzh4Mh7mC3lzAOVLBprb72XsTrgkEIsl7YrFNAiDiRhIGg==}
     engines: {node: '>=12'}
+
+  /index-to-position@0.1.2:
+    resolution: {integrity: sha512-MWDKS3AS1bGCHLBA2VLImJz42f7bJh8wQsTGCzI3j519/CASStoDONUBVz2I/VID0MpiX3SGSnbOD2xUalbE5g==}
+    engines: {node: '>=18'}
+    dev: false
 
   /inflight@1.0.6:
     resolution: {integrity: sha512-k92I/b08q4wvFscXCLvqfsHCrjrF7yiXsQuIVvVE7N82W3+aqpzuUdBbfhWcy/FZR3/4IgflMgKLOsvPDrGCJA==}
@@ -4228,11 +4243,11 @@ packages:
       - supports-color
     dev: true
 
-  /libnpmpublish@9.0.1:
-    resolution: {integrity: sha512-w5Ev46SnPaEpjfa0a5+p2vYSB19nONF/mRX8RcIRp2gpPxMWldFVZy/fXei/uflMLQq33mjKMqiVoNcz6ZJCYg==}
+  /libnpmpublish@9.0.2:
+    resolution: {integrity: sha512-p1Yytx9KPZXMxbOuLcWcMW6qzd0AWYS+rI998rLxaP8aJyWLcbnefW8kKVqSahSdA6evhfQke1Kqag7LGSGPug==}
     engines: {node: ^16.14.0 || >=18.0.0}
     dependencies:
-      ci-info: 3.9.0
+      ci-info: 4.0.0
       normalize-package-data: 6.0.0
       npm-package-arg: 11.0.1
       npm-registry-fetch: 16.1.0
@@ -4250,6 +4265,7 @@ packages:
   /lines-and-columns@2.0.4:
     resolution: {integrity: sha512-wM1+Z03eypVAVUCE7QdSqpVIvelbOakn1M0bPDoA4SGWPx3sNDVUiMo3L6To6WWGClB7VyXnhQ4Sn7gxiJbE6A==}
     engines: {node: ^12.20.0 || ^14.13.1 || >=16.0.0}
+    dev: true
 
   /load-json-file@4.0.0:
     resolution: {integrity: sha512-Kx8hMakjX03tiGTLAIdJ+lL0htKnXjEZN6hk/tozf/WOuYGdZBJrZ+rCJRbVCugsjB3jMLn9746NsQIf5VjBMw==}
@@ -4649,7 +4665,7 @@ packages:
     resolution: {integrity: sha512-GCt8Xh5cRZ1ep45A8T+NlUYCPHzSj5JG2Xo7CA4Z8ISZ8Ovw0UQhQGt+J/z2xk7M3F9F4X9ZjSYk9UYlLLy4Wg==}
     engines: {node: '>=18.0.0'}
     dependencies:
-      '@types/node': 20.9.0
+      '@types/node': 20.9.1
       '@types/vinyl': 2.0.10
       vinyl: 3.0.0
       vinyl-file: 5.0.0
@@ -5847,6 +5863,17 @@ packages:
       json-parse-even-better-errors: 3.0.0
       lines-and-columns: 2.0.4
       type-fest: 3.13.1
+    dev: true
+
+  /parse-json@8.0.1:
+    resolution: {integrity: sha512-soKUg/q/8bcfuF3+plsbYldE74cVEVEPSC1BUPIGTaX1byXdz6Fo+CVYBdH0jj/5xWsFrNRksl11QkBgHqPQeQ==}
+    engines: {node: '>=18'}
+    dependencies:
+      '@babel/code-frame': 7.22.13
+      index-to-position: 0.1.2
+      json-parse-even-better-errors: 3.0.0
+      type-fest: 4.8.1
+    dev: false
 
   /parse-ms@3.0.0:
     resolution: {integrity: sha512-Tpb8Z7r7XbbtBTrM9UhpkzzaMrqA2VXMT3YChzYltwV3P3pM6t8wl7TvpMnSTosz1aQAdVib7kdoys7vYOPerw==}
@@ -6082,13 +6109,13 @@ packages:
       normalize-package-data: 6.0.0
       npm-normalize-package-bin: 3.0.1
 
-  /read-pkg-up@10.1.0:
-    resolution: {integrity: sha512-aNtBq4jR8NawpKJQldrQcSW9y/d+KWH4v24HWkHljOZ7H0av+YTGANBzRh9A5pw7v/bLVsLVPpOhJ7gHNVy8lA==}
-    engines: {node: '>=16'}
+  /read-package-up@11.0.0:
+    resolution: {integrity: sha512-MbgfoNPANMdb4oRBNg5eqLbB2t2r+o5Ua1pNt8BqGp4I0FJZhuVSOj3PaBPni4azWuSzEdNn2evevzVmEk1ohQ==}
+    engines: {node: '>=18'}
     dependencies:
-      find-up: 6.3.0
-      read-pkg: 8.1.0
-      type-fest: 4.7.1
+      find-up-simple: 1.0.0
+      read-pkg: 9.0.1
+      type-fest: 4.8.1
     dev: false
 
   /read-pkg-up@3.0.0:
@@ -6134,7 +6161,19 @@ packages:
       '@types/normalize-package-data': 2.4.4
       normalize-package-data: 6.0.0
       parse-json: 7.1.1
-      type-fest: 4.7.1
+      type-fest: 4.8.1
+    dev: true
+
+  /read-pkg@9.0.1:
+    resolution: {integrity: sha512-9viLL4/n1BJUCT1NXVTdS1jtm80yDEgR5T4yCelII49Mbj0v1rZdKqj7zCiYdbB0CuCgdrvHcNogAKTFPBocFA==}
+    engines: {node: '>=18'}
+    dependencies:
+      '@types/normalize-package-data': 2.4.4
+      normalize-package-data: 6.0.0
+      parse-json: 8.0.1
+      type-fest: 4.8.1
+      unicorn-magic: 0.1.0
+    dev: false
 
   /readable-stream@2.3.8:
     resolution: {integrity: sha512-8p0AUk4XODgIewSi0l8Epjs+EVnWiK7NoDIEGU0HhE7+ZyY8D1IMY7odu5lRrFXGg71L15KG8QrPmum45RTtdA==}
@@ -6872,9 +6911,10 @@ packages:
   /type-fest@3.13.1:
     resolution: {integrity: sha512-tLq3bSNx+xSpwvAJnzrK0Ep5CLNWjvFTOp71URMaAEWBfRb9nnJiBoUe0tF8bI4ZFO3omgBR6NvnbzVUT3Ly4g==}
     engines: {node: '>=14.16'}
+    dev: true
 
-  /type-fest@4.7.1:
-    resolution: {integrity: sha512-iWr8RUmzAJRfhZugX9O7nZE6pCxDU8CZ3QxsLuTnGcBLJpCaP2ll3s4eMTBoFnU/CeXY/5rfQSuAEsTGJO4y8A==}
+  /type-fest@4.8.1:
+    resolution: {integrity: sha512-ShaaYnjf+0etG8W/FumARKMjjIToy/haCaTjN2dvcewOSoNqCQzdgG7m2JVOlM5qndGTHjkvsrWZs+k/2Z7E0Q==}
     engines: {node: '>=16'}
 
   /typedarray-to-buffer@3.1.5:
@@ -6896,6 +6936,11 @@ packages:
 
   /undici-types@5.26.5:
     resolution: {integrity: sha512-JlCMO+ehdEIKqlFxk6IfVoAUVmgz7cU7zD/h9XZ0qzeosSHmUJVOzSQvvYSYWXkFXC+IfLKSIffhv0sVZup6pA==}
+    dev: false
+
+  /unicorn-magic@0.1.0:
+    resolution: {integrity: sha512-lRfVq8fE8gz6QMBuDM6a+LO3IAzTi05H6gCVaUpir2E1Rwpo4ZUog45KpNXKC/Mn3Yb9UDuHumeFTo9iV/D9FQ==}
+    engines: {node: '>=18'}
     dev: false
 
   /unified@11.0.4:
@@ -7256,7 +7301,7 @@ packages:
       deepmerge-ts: 5.1.0
       read-pkg: 8.1.0
       sort-keys: 5.0.0
-      type-fest: 4.7.1
+      type-fest: 4.8.1
       write-json-file: 5.0.0
     dev: true
 
@@ -7323,19 +7368,19 @@ packages:
       y18n: 5.0.8
       yargs-parser: 21.1.1
 
-  /yeoman-environment@4.0.0(@yeoman/types@1.1.1)(mem-fs@4.0.0):
-    resolution: {integrity: sha512-pdr9XhhIfRQmjG+VO2J0420SeI/E5O+dM8CLIG1+8q01kqtiZoxgfI1WGeMiZMIVv4jr8w63qhHVYr7gpRLDVA==}
+  /yeoman-environment@4.1.3(@yeoman/types@1.1.2)(mem-fs@4.0.0):
+    resolution: {integrity: sha512-S+xF8Jz7EgnJdzpPRw6MC5e7w/JTNs43Uy6I7S5ya8EjVzurdKJYfd9KCcERQzhONdAGx070CwEvd2CFaRsQpw==}
     engines: {node: ^18.17.0 || >=20.5.0}
     hasBin: true
     peerDependencies:
       '@yeoman/types': ^1.1.1
       mem-fs: ^4.0.0
     dependencies:
-      '@yeoman/adapter': 1.4.0(@yeoman/types@1.1.1)
-      '@yeoman/conflicter': 2.0.0(@yeoman/types@1.1.1)(mem-fs@4.0.0)
+      '@yeoman/adapter': 1.4.0(@yeoman/types@1.1.2)
+      '@yeoman/conflicter': 2.0.0(@yeoman/types@1.1.2)(mem-fs@4.0.0)
       '@yeoman/namespace': 1.0.0
       '@yeoman/transform': 1.2.0
-      '@yeoman/types': 1.1.1(@types/inquirer@9.0.7)(mem-fs@4.0.0)
+      '@yeoman/types': 1.1.2(@types/inquirer@9.0.7)(mem-fs@4.0.0)
       arrify: 3.0.0
       chalk: 5.3.0
       commander: 11.1.0
@@ -7357,8 +7402,8 @@ packages:
       - supports-color
     dev: false
 
-  /yeoman-generator@7.1.0(@yeoman/types@1.1.1)(mem-fs@4.0.0)(yeoman-environment@4.0.0):
-    resolution: {integrity: sha512-nRhHJN2CkfXLyqOQJTjLuZh0an3eYh8aspqxdr3UiBKSvi7uE0MzlR+6BoXwMAECSRoHkZq+jmhr5MdsUWTWXg==}
+  /yeoman-generator@7.1.1(@yeoman/types@1.1.2)(mem-fs@4.0.0)(yeoman-environment@4.1.3):
+    resolution: {integrity: sha512-vQ7ETaKIDmKNtpp97YFabE92ZaOTTs8NOr0wmmszyA1uAc2z5QXNZfU1WtXRFn76BiTf5mHWrOsCDls8N9nD6A==}
     engines: {node: ^18.17.0 || >=20.5.0}
     peerDependencies:
       '@yeoman/types': ^1.1.1
@@ -7371,7 +7416,7 @@ packages:
       '@types/lodash-es': 4.17.11
       '@types/node': 18.18.9
       '@yeoman/namespace': 1.0.0
-      '@yeoman/types': 1.1.1(@types/inquirer@9.0.7)(mem-fs@4.0.0)
+      '@yeoman/types': 1.1.2(@types/inquirer@9.0.7)(mem-fs@4.0.0)
       chalk: 5.3.0
       debug: 4.3.4
       execa: 8.0.1
@@ -7382,12 +7427,12 @@ packages:
       mem-fs: 4.0.0
       mem-fs-editor: 11.0.0(mem-fs@4.0.0)
       minimist: 1.2.8
-      read-pkg-up: 10.1.0
+      read-package-up: 11.0.0
       semver: 7.5.4
       simple-git: 3.20.0
       sort-keys: 5.0.0
       text-table: 0.2.0
-      yeoman-environment: 4.0.0(@yeoman/types@1.1.1)(mem-fs@4.0.0)
+      yeoman-environment: 4.1.3(@yeoman/types@1.1.2)(mem-fs@4.0.0)
     transitivePeerDependencies:
       - encoding
       - supports-color
