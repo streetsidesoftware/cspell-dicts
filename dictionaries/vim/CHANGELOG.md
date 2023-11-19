@@ -1,5 +1,13 @@
 # Change Log
 
+## [1.0.2](https://github.com/streetsidesoftware/cspell-dicts/compare/@cspell/dict-vim@1.0.1...@cspell/dict-vim@1.0.2) (2023-11-19)
+
+
+### Updates and Bug Fixes
+
+* add isempty to vim dict ([#2728](https://github.com/streetsidesoftware/cspell-dicts/issues/2728)) ([a802ad8](https://github.com/streetsidesoftware/cspell-dicts/commit/a802ad8c42c583abde8aefce0aae3e8bdcb775aa))
+* Workflow Bot -- Build Dictionaries ([#2731](https://github.com/streetsidesoftware/cspell-dicts/issues/2731)) ([c8fcb7c](https://github.com/streetsidesoftware/cspell-dicts/commit/c8fcb7c9b5e3adf1f977634ca81802d69d20749b))
+
 ## [1.0.1](https://github.com/streetsidesoftware/cspell-dicts/compare/@cspell/dict-vim@1.0.0...@cspell/dict-vim@1.0.1) (2023-10-22)
 
 
