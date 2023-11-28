@@ -22,6 +22,14 @@ See [Conventional Commits](https://conventionalcommits.org) for commit guideline
 
 
 
+## [3.0.1](https://github.com/streetsidesoftware/cspell-dicts/compare/@cspell/dict-scientific-terms-us@3.0.0...@cspell/dict-scientific-terms-us@3.0.1) (2023-11-28)
+
+
+### Updates and Bug Fixes
+
+* add missing decimal and binary prefixes ([#2748](https://github.com/streetsidesoftware/cspell-dicts/issues/2748)) ([3b04faa](https://github.com/streetsidesoftware/cspell-dicts/commit/3b04faa964b393fc60b85c4cb61ced3cfb2b7cac))
+* Workflow Bot -- Build Dictionaries ([#2749](https://github.com/streetsidesoftware/cspell-dicts/issues/2749)) ([5e279e5](https://github.com/streetsidesoftware/cspell-dicts/commit/5e279e5e389d2ca86e9d3e5b242a6670e0c96b39))
+
 ## [3.0.0](https://github.com/streetsidesoftware/cspell-dicts/compare/@cspell/dict-scientific-terms-us@2.0.0...@cspell/dict-scientific-terms-us@3.0.0) (2023-07-19)
 
 

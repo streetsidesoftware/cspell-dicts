@@ -1,5 +1,17 @@
 # Release Notes
 
+## [21.0.2](https://github.com/streetsidesoftware/cspell-dicts/compare/cspell-dicts@21.0.1...cspell-dicts@21.0.2) (2023-11-28)
+
+
+### Updates and Bug Fixes
+
+* Add a few common software terms ([#2738](https://github.com/streetsidesoftware/cspell-dicts/issues/2738)) ([153ceb2](https://github.com/streetsidesoftware/cspell-dicts/commit/153ceb286019f9b5741c12d3caf0e86ce866c67b))
+* add missing decimal and binary prefixes ([#2748](https://github.com/streetsidesoftware/cspell-dicts/issues/2748)) ([3b04faa](https://github.com/streetsidesoftware/cspell-dicts/commit/3b04faa964b393fc60b85c4cb61ced3cfb2b7cac))
+* add Pseudocode ([#2745](https://github.com/streetsidesoftware/cspell-dicts/issues/2745)) ([0d16908](https://github.com/streetsidesoftware/cspell-dicts/commit/0d1690847bf6745d67f281b9cae29f57e98a4222))
+* Workflow Bot -- Build Dictionaries ([#2740](https://github.com/streetsidesoftware/cspell-dicts/issues/2740)) ([f79bf45](https://github.com/streetsidesoftware/cspell-dicts/commit/f79bf4552b87c0e8826f9542358b84ede0ff32da))
+* Workflow Bot -- Build Dictionaries ([#2749](https://github.com/streetsidesoftware/cspell-dicts/issues/2749)) ([5e279e5](https://github.com/streetsidesoftware/cspell-dicts/commit/5e279e5e389d2ca86e9d3e5b242a6670e0c96b39))
+* Workflow Bot -- Build Dictionaries ([#2750](https://github.com/streetsidesoftware/cspell-dicts/issues/2750)) ([ab999a5](https://github.com/streetsidesoftware/cspell-dicts/commit/ab999a5c714dc6c003029daae1a06df0beb47a61))
+
 ## [21.0.1](https://github.com/streetsidesoftware/cspell-dicts/compare/cspell-dicts@21.0.0...cspell-dicts@21.0.1) (2023-11-19)
 
 
