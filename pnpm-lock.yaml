@@ -838,7 +838,7 @@ packages:
       cosmiconfig: 8.3.6
       dedent: 1.5.1
       execa: 8.0.1
-      fs-extra: 11.1.1
+      fs-extra: 11.2.0
       glob-parent: 6.0.2
       globby: 13.2.2
       inquirer: 9.2.12
@@ -904,7 +904,7 @@ packages:
     engines: {node: '>=16.15.0', npm: '>=8.5.0'}
     dependencies:
       '@lerna-lite/core': 2.7.2
-      fs-extra: 11.1.1
+      fs-extra: 11.2.0
       p-map: 6.0.0
       write-json-file: 5.0.0
     transitivePeerDependencies:
@@ -918,7 +918,7 @@ packages:
     engines: {node: '>=16.15.0', npm: '>=8.5.0'}
     dependencies:
       '@lerna-lite/core': 2.7.2
-      fs-extra: 11.1.1
+      fs-extra: 11.2.0
       npmlog: 7.0.1
       upath: 2.0.1
     transitivePeerDependencies:
@@ -938,7 +938,7 @@ packages:
       byte-size: 8.1.1
       chalk: 5.3.0
       columnify: 1.6.0
-      fs-extra: 11.1.1
+      fs-extra: 11.2.0
       glob: 10.3.10
       has-unicode: 2.0.1
       libnpmaccess: 8.0.1
@@ -978,7 +978,7 @@ packages:
       '@lerna-lite/filter-packages': 2.7.2
       '@lerna-lite/profiler': 2.7.2
       chalk: 5.3.0
-      fs-extra: 11.1.1
+      fs-extra: 11.2.0
       npmlog: 7.0.1
       p-map: 6.0.0
     transitivePeerDependencies:
@@ -1007,7 +1007,7 @@ packages:
       conventional-commits-parser: 5.0.0
       conventional-recommended-bump: 7.0.1
       dedent: 1.5.1
-      fs-extra: 11.1.1
+      fs-extra: 11.2.0
       get-stream: 8.0.1
       git-url-parse: 13.1.1
       graceful-fs: 4.2.11
@@ -1092,10 +1092,10 @@ packages:
       '@npmcli/query': 3.0.1
       '@npmcli/run-script': 7.0.2
       bin-links: 4.0.3
-      cacache: 18.0.0
+      cacache: 18.0.1
       common-ancestor-path: 1.0.1
       hosted-git-info: 7.0.1
-      json-parse-even-better-errors: 3.0.0
+      json-parse-even-better-errors: 3.0.1
       json-stringify-nice: 1.1.4
       minimatch: 9.0.3
       nopt: 7.2.0
@@ -1160,8 +1160,8 @@ packages:
     resolution: {integrity: sha512-Pw0tyX02VkpqlIQlG2TeiJNsdrecYeUU0ubZZa9pi3N37GCsxI+en43u4hYFdq+eSx1A9a9vwFAUyqEtKFsbHQ==}
     engines: {node: ^16.14.0 || >=18.0.0}
     dependencies:
-      cacache: 18.0.0
-      json-parse-even-better-errors: 3.0.0
+      cacache: 18.0.1
+      json-parse-even-better-errors: 3.0.1
       pacote: 17.0.4
       semver: 7.5.4
     transitivePeerDependencies:
@@ -1183,7 +1183,7 @@ packages:
       '@npmcli/git': 5.0.3
       glob: 10.3.10
       hosted-git-info: 7.0.1
-      json-parse-even-better-errors: 3.0.0
+      json-parse-even-better-errors: 3.0.1
       normalize-package-data: 6.0.0
       proc-log: 3.0.0
       semver: 7.5.4
@@ -2070,8 +2070,8 @@ packages:
     engines: {node: '>=12.17'}
     dev: true
 
-  /cacache@18.0.0:
-    resolution: {integrity: sha512-I7mVOPl3PUCeRub1U8YoGz2Lqv9WOBpobZ8RyWFXmReuILz+3OAyTa5oH3QPdtKZD7N0Yk00aLfzn0qvp8dZ1w==}
+  /cacache@18.0.1:
+    resolution: {integrity: sha512-g4Uf2CFZPaxtJKre6qr4zqLDOOPU7bNVhWjlNhvzc51xaTOx2noMOLhfFkTAqwtrAZAKQUuDfyjitzilpA8WsQ==}
     engines: {node: ^16.14.0 || >=18.0.0}
     dependencies:
       '@npmcli/fs': 3.1.0
@@ -2079,7 +2079,7 @@ packages:
       glob: 10.3.10
       lru-cache: 10.1.0
       minipass: 7.0.4
-      minipass-collect: 1.0.2
+      minipass-collect: 2.0.1
       minipass-flush: 1.0.5
       minipass-pipeline: 1.2.4
       p-map: 4.0.0
@@ -2260,8 +2260,8 @@ packages:
       restore-cursor: 4.0.0
     dev: false
 
-  /cli-spinners@2.9.1:
-    resolution: {integrity: sha512-jHgecW0pxkonBJdrKsqxgRX9AcG+u/5k0Q7WPDfi8AogLAdwxEkyYYNWwZ5GvVFoFx2uiY1eNcSK00fh+1+FyQ==}
+  /cli-spinners@2.9.2:
+    resolution: {integrity: sha512-ywqV+5MmyL4E7ybXgKys4DugZbX0FC6LnwrhjuykIjnK9k8OQacQ7axGKnjDXWNhns0xot3bZI5h55H8yo9cJg==}
     engines: {node: '>=6'}
 
   /cli-table@0.3.11:
@@ -3405,8 +3405,8 @@ packages:
       fetch-blob: 3.2.0
     dev: true
 
-  /fs-extra@11.1.1:
-    resolution: {integrity: sha512-MGIE4HOvQCeUCzmlHs0vXpih4ysz4wg9qiSAu6cd42lVwPbTM1TjV7RusoyQqMmk/95gdQZX72u+YW+c3eEpFQ==}
+  /fs-extra@11.2.0:
+    resolution: {integrity: sha512-PmDi3uwK5nFuXh7XDTlVnS17xJS7vW36is2+w3xcv8SVxiB4NyATf4ctkVY5bkSjX0Y4nbvZCq1/EjtEyr9ktw==}
     engines: {node: '>=14.14'}
     dependencies:
       graceful-fs: 4.2.11
@@ -4151,8 +4151,8 @@ packages:
   /json-parse-even-better-errors@2.3.1:
     resolution: {integrity: sha512-xyFwyhro/JEof6Ghe2iz2NcXoj2sloNsWr/XsERDK/oiPCfaNhl5ONfp+jQdAZRQQ0IJWNzH9zIZF7li91kh2w==}
 
-  /json-parse-even-better-errors@3.0.0:
-    resolution: {integrity: sha512-iZbGHafX/59r39gPwVPRBGw0QQKnA7tte5pSMrhWOW7swGsVvVTjmfyAV9pNqk8YGT7tRCdxRu8uzcgZwoDooA==}
+  /json-parse-even-better-errors@3.0.1:
+    resolution: {integrity: sha512-aatBvbL26wVUCLmbWdCpeu9iF5wOyWpagiKkInA+kfws3sWdBrTnsvN2CKcyCYyUrc7rebNBlK6+kteg7ksecg==}
     engines: {node: ^14.17.0 || ^16.13.0 || >=18.0.0}
 
   /json-schema-traverse@0.4.1:
@@ -4369,7 +4369,7 @@ packages:
     engines: {node: ^16.14.0 || >=18.0.0}
     dependencies:
       '@npmcli/agent': 2.2.0
-      cacache: 18.0.0
+      cacache: 18.0.1
       http-cache-semantics: 4.1.1
       is-lambda: 1.0.1
       minipass: 7.0.4
@@ -5273,11 +5273,11 @@ packages:
   /minimist@1.2.8:
     resolution: {integrity: sha512-2yyAR8qBkN3YuheJanUpWC5U3bb5osDywNB8RzDVlDwDHbocAJveqqj1u8+SVD7jkWT4yvsHCpWqqWqAxb0zCA==}
 
-  /minipass-collect@1.0.2:
-    resolution: {integrity: sha512-6T6lH0H8OG9kITm/Jm6tdooIbogG9e0tLgpY6mphXSm/A9u8Nq1ryBG+Qspiub9LjWlBPsPS3tWQ/Botq4FdxA==}
-    engines: {node: '>= 8'}
+  /minipass-collect@2.0.1:
+    resolution: {integrity: sha512-D7V8PO9oaz7PWGLbCACuI1qEOsq7UKfLotx/C0Aet43fCUB/wfQ7DYeq2oR/svFJGYDHPr38SHATeaj/ZoKHKw==}
+    engines: {node: '>=16 || 14 >=14.17'}
     dependencies:
-      minipass: 3.3.6
+      minipass: 7.0.4
 
   /minipass-fetch@3.0.4:
     resolution: {integrity: sha512-jHAqnA728uUpIaFm7NWsCnqKT6UqZz7GcI/bDpPATuwYyKwJwW0remxSCxUlKiEty+eopHGa3oc8WxgQ1FFJqg==}
@@ -5604,7 +5604,7 @@ packages:
       bl: 4.1.0
       chalk: 4.1.2
       cli-cursor: 3.1.0
-      cli-spinners: 2.9.1
+      cli-spinners: 2.9.2
       is-interactive: 1.0.0
       is-unicode-supported: 0.1.0
       log-symbols: 4.1.0
@@ -5617,7 +5617,7 @@ packages:
     dependencies:
       chalk: 5.3.0
       cli-cursor: 4.0.0
-      cli-spinners: 2.9.1
+      cli-spinners: 2.9.2
       is-interactive: 2.0.0
       is-unicode-supported: 1.3.0
       log-symbols: 5.1.0
@@ -5780,7 +5780,7 @@ packages:
       '@npmcli/installed-package-contents': 2.0.2
       '@npmcli/promise-spawn': 7.0.0
       '@npmcli/run-script': 7.0.2
-      cacache: 18.0.0
+      cacache: 18.0.1
       fs-minipass: 3.0.3
       minipass: 7.0.4
       npm-package-arg: 11.0.1
@@ -5818,7 +5818,7 @@ packages:
     resolution: {integrity: sha512-01TvEktc68vwbJOtWZluyWeVGWjP+bZwXtPDMQVbBKzbJ/vZBif0L69KH1+cHv1SZ6e0FKLvjyHe8mqsIqYOmw==}
     engines: {node: ^14.17.0 || ^16.13.0 || >=18.0.0}
     dependencies:
-      json-parse-even-better-errors: 3.0.0
+      json-parse-even-better-errors: 3.0.1
       just-diff: 6.0.2
       just-diff-apply: 5.5.0
 
@@ -5858,7 +5858,7 @@ packages:
     dependencies:
       '@babel/code-frame': 7.23.4
       error-ex: 1.3.2
-      json-parse-even-better-errors: 3.0.0
+      json-parse-even-better-errors: 3.0.1
       lines-and-columns: 2.0.4
       type-fest: 3.13.1
     dev: true
@@ -6094,7 +6094,7 @@ packages:
     resolution: {integrity: sha512-0J+Msgym3vrLOUB3hzQCuZHII0xkNGCtz/HJH9xZshwv9DbDwkw1KaE3gx/e2J5rpEY5rtOy6cyhKOPrkP7FZw==}
     engines: {node: ^14.17.0 || ^16.13.0 || >=18.0.0}
     dependencies:
-      json-parse-even-better-errors: 3.0.0
+      json-parse-even-better-errors: 3.0.1
       npm-normalize-package-bin: 3.0.1
 
   /read-package-json@7.0.0:
@@ -6102,7 +6102,7 @@ packages:
     engines: {node: ^16.14.0 || >=18.0.0}
     dependencies:
       glob: 10.3.10
-      json-parse-even-better-errors: 3.0.0
+      json-parse-even-better-errors: 3.0.1
       normalize-package-data: 6.0.0
       npm-normalize-package-bin: 3.0.1
 
