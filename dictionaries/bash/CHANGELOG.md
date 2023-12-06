@@ -3,6 +3,14 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+## [4.1.3](https://github.com/streetsidesoftware/cspell-dicts/compare/@cspell/dict-bash@4.1.2...@cspell/dict-bash@4.1.3) (2023-12-05)
+
+
+### Updates and Bug Fixes
+
+* Add OPTARG to bash-words.txt ([#2758](https://github.com/streetsidesoftware/cspell-dicts/issues/2758)) ([0d4dc9c](https://github.com/streetsidesoftware/cspell-dicts/commit/0d4dc9cfae3550cc489bd8d41172cae91983e490))
+* Workflow Bot -- Build Dictionaries ([#2765](https://github.com/streetsidesoftware/cspell-dicts/issues/2765)) ([237283b](https://github.com/streetsidesoftware/cspell-dicts/commit/237283b3b6c48f3c0f44736d1743094934e6eb60))
+
 ## [4.1.2](https://github.com/streetsidesoftware/cspell-dicts/compare/@cspell/dict-bash@4.1.1...@cspell/dict-bash@4.1.2) (2023-09-27)
 
 
