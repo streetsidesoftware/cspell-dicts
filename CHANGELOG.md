@@ -1,5 +1,16 @@
 # Release Notes
 
+## [21.0.4](https://github.com/streetsidesoftware/cspell-dicts/compare/cspell-dicts@21.0.3...cspell-dicts@21.0.4) (2023-12-07)
+
+
+### Updates and Bug Fixes
+
+* added a few software words, mostly quality attributes. ([#2782](https://github.com/streetsidesoftware/cspell-dicts/issues/2782)) ([b3fb2f0](https://github.com/streetsidesoftware/cspell-dicts/commit/b3fb2f02997695104e2cd350b47496aab3aa8a2e))
+* Workflow Bot -- Build Dictionaries ([#2784](https://github.com/streetsidesoftware/cspell-dicts/issues/2784)) ([f9698b3](https://github.com/streetsidesoftware/cspell-dicts/commit/f9698b3adbdf5a7638c2e8f668b448d6f9ec5f7a))
+* Workflow Bot -- Build Dictionaries ([#2787](https://github.com/streetsidesoftware/cspell-dicts/issues/2787)) ([026c607](https://github.com/streetsidesoftware/cspell-dicts/commit/026c60799049b2a886ac18e13e1e67cffbffbbd8))
+* Workflow Bot -- Build Dictionaries ([#2789](https://github.com/streetsidesoftware/cspell-dicts/issues/2789)) ([fc7d809](https://github.com/streetsidesoftware/cspell-dicts/commit/fc7d809791dc5f462b50922eb5ff951afca27fbb))
+* Workflow Bot -- Build Dictionaries ([#2790](https://github.com/streetsidesoftware/cspell-dicts/issues/2790)) ([710b404](https://github.com/streetsidesoftware/cspell-dicts/commit/710b40422ba2f31e24cb16924c898937ebe6b053))
+
 ## [21.0.3](https://github.com/streetsidesoftware/cspell-dicts/compare/cspell-dicts@21.0.2...cspell-dicts@21.0.3) (2023-12-05)
 
 
