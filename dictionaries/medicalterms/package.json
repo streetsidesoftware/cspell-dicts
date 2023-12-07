@@ -12,7 +12,8 @@
   },
   "scripts": {
     "build": "cspell-tools-cli build",
-    "build:conditional": "pnpm build --conditional",
+    "build:conditional": "pnpm run sync && pnpm build --conditional",
+    "sync": "shx rm -rf src/wordlist-medicalterms-en && shx cp -r node_modules/wordlist-medicalterms-en src/",
     "test": "cspell samples --no-progress",
     "prepublishOnly": "echo pre-publish",
     "prepare:dictionary": "pnpm run build"

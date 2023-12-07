@@ -7,7 +7,7 @@ targets:
     compress: true
     format: plaintext
     sources:
-      - node_modules/wordlist-medicalterms-en/wordlist.txt
+      - src/wordlist-medicalterms-en/wordlist.txt
       - src/additional_words.txt
     sort: true
 checksumFile: true
