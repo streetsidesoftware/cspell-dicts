@@ -1,5 +1,13 @@
 # Release Notes
 
+## [21.0.5](https://github.com/streetsidesoftware/cspell-dicts/compare/cspell-dicts@21.0.4...cspell-dicts@21.0.5) (2023-12-11)
+
+
+### Updates and Bug Fixes
+
+* Added missing comparison operators ([#2802](https://github.com/streetsidesoftware/cspell-dicts/issues/2802)) ([2887c19](https://github.com/streetsidesoftware/cspell-dicts/commit/2887c19a5f8be4bcfdc8d8c54e06ca106a1612ed))
+* Workflow Bot -- Build Dictionaries ([#2796](https://github.com/streetsidesoftware/cspell-dicts/issues/2796)) ([515711d](https://github.com/streetsidesoftware/cspell-dicts/commit/515711d7dc8e9ae39f1e4e7aebe84af5cc19b4de))
+
 ## [21.0.4](https://github.com/streetsidesoftware/cspell-dicts/compare/cspell-dicts@21.0.3...cspell-dicts@21.0.4) (2023-12-07)
 
 

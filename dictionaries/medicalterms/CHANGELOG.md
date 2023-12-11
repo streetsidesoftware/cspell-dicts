@@ -22,6 +22,13 @@ See [Conventional Commits](https://conventionalcommits.org) for commit guideline
 
 
 
+## [4.1.2](https://github.com/streetsidesoftware/cspell-dicts/compare/@cspell/dict-medicalterms@4.1.1...@cspell/dict-medicalterms@4.1.2) (2023-12-11)
+
+
+### Updates and Bug Fixes
+
+* Workflow Bot -- Build Dictionaries ([#2796](https://github.com/streetsidesoftware/cspell-dicts/issues/2796)) ([515711d](https://github.com/streetsidesoftware/cspell-dicts/commit/515711d7dc8e9ae39f1e4e7aebe84af5cc19b4de))
+
 ## [4.1.1](https://github.com/streetsidesoftware/cspell-dicts/compare/@cspell/dict-medicalterms@4.1.0...@cspell/dict-medicalterms@4.1.1) (2023-12-07)
 
 
