@@ -1,5 +1,16 @@
 # Release Notes
 
+## [21.0.6](https://github.com/streetsidesoftware/cspell-dicts/compare/cspell-dicts@21.0.5...cspell-dicts@21.0.6) (2023-12-17)
+
+
+### Updates and Bug Fixes
+
+* Add "datasources" to software-terms dict ([#2814](https://github.com/streetsidesoftware/cspell-dicts/issues/2814)) ([a2dcbe9](https://github.com/streetsidesoftware/cspell-dicts/commit/a2dcbe9312666b3fcbba9fd03436dd219d272d0b))
+* Add some missing terms to Spanish dictionary ([#2811](https://github.com/streetsidesoftware/cspell-dicts/issues/2811)) ([5eb67c0](https://github.com/streetsidesoftware/cspell-dicts/commit/5eb67c0bea478f779052e2b04ce79c034eb754e0))
+* Add some npmcli and npm-package-json-lint terms ([#2813](https://github.com/streetsidesoftware/cspell-dicts/issues/2813)) ([b4b6cd0](https://github.com/streetsidesoftware/cspell-dicts/commit/b4b6cd0105222ee721a2f7a6128807d2ff440615))
+* Workflow Bot -- Build Dictionaries ([#2816](https://github.com/streetsidesoftware/cspell-dicts/issues/2816)) ([ef4df30](https://github.com/streetsidesoftware/cspell-dicts/commit/ef4df300933961d90e048cfcb89c3ca9bd3c9630))
+* Workflow Bot -- Build Dictionaries ([#2817](https://github.com/streetsidesoftware/cspell-dicts/issues/2817)) ([ac1ca17](https://github.com/streetsidesoftware/cspell-dicts/commit/ac1ca17cefe8f678effeba41905fa2222253c8bf))
+
 ## [21.0.5](https://github.com/streetsidesoftware/cspell-dicts/compare/cspell-dicts@21.0.4...cspell-dicts@21.0.5) (2023-12-11)
 
 
