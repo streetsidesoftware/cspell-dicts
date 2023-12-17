@@ -3,6 +3,14 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+## [5.0.14](https://github.com/streetsidesoftware/cspell-dicts/compare/@cspell/dict-npm@5.0.13...@cspell/dict-npm@5.0.14) (2023-12-17)
+
+
+### Updates and Bug Fixes
+
+* Add some npmcli and npm-package-json-lint terms ([#2813](https://github.com/streetsidesoftware/cspell-dicts/issues/2813)) ([b4b6cd0](https://github.com/streetsidesoftware/cspell-dicts/commit/b4b6cd0105222ee721a2f7a6128807d2ff440615))
+* Workflow Bot -- Build Dictionaries ([#2816](https://github.com/streetsidesoftware/cspell-dicts/issues/2816)) ([ef4df30](https://github.com/streetsidesoftware/cspell-dicts/commit/ef4df300933961d90e048cfcb89c3ca9bd3c9630))
+
 ## [5.0.13](https://github.com/streetsidesoftware/cspell-dicts/compare/@cspell/dict-npm@5.0.12...@cspell/dict-npm@5.0.13) (2023-11-19)
 
 
