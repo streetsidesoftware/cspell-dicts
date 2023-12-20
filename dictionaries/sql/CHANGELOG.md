@@ -3,6 +3,13 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+## [2.1.3](https://github.com/streetsidesoftware/cspell-dicts/compare/@cspell/dict-sql@2.1.2...@cspell/dict-sql@2.1.3) (2023-12-20)
+
+
+### Updates and Bug Fixes
+
+* [sql] Add "InnoDB" term ([#2821](https://github.com/streetsidesoftware/cspell-dicts/issues/2821)) ([cd95717](https://github.com/streetsidesoftware/cspell-dicts/commit/cd95717d7054e0768335951cfbb87ff1c5ff8a97))
+
 ## [2.1.2](https://github.com/streetsidesoftware/cspell-dicts/compare/@cspell/dict-sql@2.1.1...@cspell/dict-sql@2.1.2) (2023-10-11)
 
 
