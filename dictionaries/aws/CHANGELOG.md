@@ -22,6 +22,14 @@ See [Conventional Commits](https://conventionalcommits.org) for commit guideline
 
 
 
+## [4.0.1](https://github.com/streetsidesoftware/cspell-dicts/compare/@cspell/dict-aws@4.0.0...@cspell/dict-aws@4.0.1) (2023-12-20)
+
+
+### Updates and Bug Fixes
+
+* [aws] Add "buildspec" term ([#2822](https://github.com/streetsidesoftware/cspell-dicts/issues/2822)) ([775cbc9](https://github.com/streetsidesoftware/cspell-dicts/commit/775cbc998253f83283cb544eaccc2f5fc57882b7))
+* Workflow Bot -- Build Dictionaries ([#2829](https://github.com/streetsidesoftware/cspell-dicts/issues/2829)) ([b4ecdae](https://github.com/streetsidesoftware/cspell-dicts/commit/b4ecdaeca74e12036f812c714411f61918fab5c7))
+
 ## [4.0.0](https://github.com/streetsidesoftware/cspell-dicts/compare/@cspell/dict-aws@3.0.0...@cspell/dict-aws@4.0.0) (2023-07-20)
 
 

@@ -1,5 +1,17 @@
 # Release Notes
 
+## [21.0.7](https://github.com/streetsidesoftware/cspell-dicts/compare/cspell-dicts@21.0.6...cspell-dicts@21.0.7) (2023-12-20)
+
+
+### Updates and Bug Fixes
+
+* [aws] Add "buildspec" term ([#2822](https://github.com/streetsidesoftware/cspell-dicts/issues/2822)) ([775cbc9](https://github.com/streetsidesoftware/cspell-dicts/commit/775cbc998253f83283cb544eaccc2f5fc57882b7))
+* [sql] Add "InnoDB" term ([#2821](https://github.com/streetsidesoftware/cspell-dicts/issues/2821)) ([cd95717](https://github.com/streetsidesoftware/cspell-dicts/commit/cd95717d7054e0768335951cfbb87ff1c5ff8a97))
+* Add some Gitleaks, Slack API, and Trivy terms ([#2824](https://github.com/streetsidesoftware/cspell-dicts/issues/2824)) ([5207c1f](https://github.com/streetsidesoftware/cspell-dicts/commit/5207c1f360fbd970fe9794675daf132bc0581ff1))
+* Add some missing IT & software related terms ([#2820](https://github.com/streetsidesoftware/cspell-dicts/issues/2820)) ([936d4be](https://github.com/streetsidesoftware/cspell-dicts/commit/936d4bebbe8f7e8ba33956dcbd5016c48e2c1967))
+* Workflow Bot -- Build Dictionaries ([#2826](https://github.com/streetsidesoftware/cspell-dicts/issues/2826)) ([2dddf85](https://github.com/streetsidesoftware/cspell-dicts/commit/2dddf855327d88af4134e0a609fc91b74c45efb6))
+* Workflow Bot -- Build Dictionaries ([#2829](https://github.com/streetsidesoftware/cspell-dicts/issues/2829)) ([b4ecdae](https://github.com/streetsidesoftware/cspell-dicts/commit/b4ecdaeca74e12036f812c714411f61918fab5c7))
+
 ## [21.0.6](https://github.com/streetsidesoftware/cspell-dicts/compare/cspell-dicts@21.0.5...cspell-dicts@21.0.6) (2023-12-17)
 
 

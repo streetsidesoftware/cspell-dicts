@@ -3,6 +3,16 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+## [3.3.14](https://github.com/streetsidesoftware/cspell-dicts/compare/@cspell/dict-software-terms@3.3.13...@cspell/dict-software-terms@3.3.14) (2023-12-20)
+
+
+### Updates and Bug Fixes
+
+* Add some Gitleaks, Slack API, and Trivy terms ([#2824](https://github.com/streetsidesoftware/cspell-dicts/issues/2824)) ([5207c1f](https://github.com/streetsidesoftware/cspell-dicts/commit/5207c1f360fbd970fe9794675daf132bc0581ff1))
+* Add some missing IT & software related terms ([#2820](https://github.com/streetsidesoftware/cspell-dicts/issues/2820)) ([936d4be](https://github.com/streetsidesoftware/cspell-dicts/commit/936d4bebbe8f7e8ba33956dcbd5016c48e2c1967))
+* Workflow Bot -- Build Dictionaries ([#2826](https://github.com/streetsidesoftware/cspell-dicts/issues/2826)) ([2dddf85](https://github.com/streetsidesoftware/cspell-dicts/commit/2dddf855327d88af4134e0a609fc91b74c45efb6))
+* Workflow Bot -- Build Dictionaries ([#2829](https://github.com/streetsidesoftware/cspell-dicts/issues/2829)) ([b4ecdae](https://github.com/streetsidesoftware/cspell-dicts/commit/b4ecdaeca74e12036f812c714411f61918fab5c7))
+
 ## [3.3.13](https://github.com/streetsidesoftware/cspell-dicts/compare/@cspell/dict-software-terms@3.3.12...@cspell/dict-software-terms@3.3.13) (2023-12-17)
 
 
