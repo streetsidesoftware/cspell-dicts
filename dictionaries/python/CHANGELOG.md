@@ -3,6 +3,13 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+## [4.1.11](https://github.com/streetsidesoftware/cspell-dicts/compare/@cspell/dict-python@4.1.10...@cspell/dict-python@4.1.11) (2023-12-25)
+
+
+### Updates and Bug Fixes
+
+* [python] Add "djlint" term ([#2835](https://github.com/streetsidesoftware/cspell-dicts/issues/2835)) ([92a2686](https://github.com/streetsidesoftware/cspell-dicts/commit/92a2686401d73d77d81a2824e88ac8ac9ce57488))
+
 ## [4.1.10](https://github.com/streetsidesoftware/cspell-dicts/compare/@cspell/dict-python@4.1.9...@cspell/dict-python@4.1.10) (2023-10-30)
 
 
