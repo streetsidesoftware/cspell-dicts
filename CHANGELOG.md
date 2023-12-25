@@ -1,5 +1,27 @@
 # Release Notes
 
+## [22.0.0](https://github.com/streetsidesoftware/cspell-dicts/compare/cspell-dicts@21.0.7...cspell-dicts@22.0.0) (2023-12-25)
+
+
+### ⚠ BREAKING CHANGES
+
+* [git] Add a "git" dictionary to hold git related terms. ([#2838](https://github.com/streetsidesoftware/cspell-dicts/issues/2838))
+
+### Features
+
+* [git] Add a "git" dictionary to hold git related terms. ([#2838](https://github.com/streetsidesoftware/cspell-dicts/issues/2838)) ([f179f86](https://github.com/streetsidesoftware/cspell-dicts/commit/f179f86f70474f08a8143faf93e0cacd62027215))
+
+
+### Updates and Bug Fixes
+
+* [companies] Add some company names ([#2837](https://github.com/streetsidesoftware/cspell-dicts/issues/2837)) ([d0c7542](https://github.com/streetsidesoftware/cspell-dicts/commit/d0c7542ebe253fe412cff7d0f4fc5ad387a6672c))
+* [php] Add some vendor and package names ([#2836](https://github.com/streetsidesoftware/cspell-dicts/issues/2836)) ([2d6d4bd](https://github.com/streetsidesoftware/cspell-dicts/commit/2d6d4bd42087f7e0e413ef1f01dd2d601b0c6eb3))
+* [python] Add "djlint" term ([#2835](https://github.com/streetsidesoftware/cspell-dicts/issues/2835)) ([92a2686](https://github.com/streetsidesoftware/cspell-dicts/commit/92a2686401d73d77d81a2824e88ac8ac9ce57488))
+* add `evaluatable` to software terms ([#2848](https://github.com/streetsidesoftware/cspell-dicts/issues/2848)) ([bce7b40](https://github.com/streetsidesoftware/cspell-dicts/commit/bce7b40b60988f60d22b2b19df2be4898ceb9705))
+* Workflow Bot -- Build Dictionaries ([#2843](https://github.com/streetsidesoftware/cspell-dicts/issues/2843)) ([d430c85](https://github.com/streetsidesoftware/cspell-dicts/commit/d430c8564e2238615ebc0a83aeaa941a499b9360))
+* Workflow Bot -- Build Dictionaries ([#2845](https://github.com/streetsidesoftware/cspell-dicts/issues/2845)) ([45f083b](https://github.com/streetsidesoftware/cspell-dicts/commit/45f083b22cda9dec273ff6950b0336b6b84e058c))
+* Workflow Bot -- Build Dictionaries ([#2849](https://github.com/streetsidesoftware/cspell-dicts/issues/2849)) ([4615e6e](https://github.com/streetsidesoftware/cspell-dicts/commit/4615e6e42f2a0806416ff45a6279e6e3fd6544b6))
+
 ## [21.0.7](https://github.com/streetsidesoftware/cspell-dicts/compare/cspell-dicts@21.0.6...cspell-dicts@21.0.7) (2023-12-20)
 
 
