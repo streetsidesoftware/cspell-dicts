@@ -1,5 +1,16 @@
 # Change Log
 
+## [2.0.0](https://github.com/streetsidesoftware/cspell-dicts/compare/@cspell/dict-en-common-misspellings@1.0.2...@cspell/dict-en-common-misspellings@2.0.0) (2023-12-29)
+
+
+### ⚠ BREAKING CHANGES
+
+* Update en-common-misspellings license to CC BY-SA 4.0 ([#2716](https://github.com/streetsidesoftware/cspell-dicts/issues/2716))
+
+### Features
+
+* Update en-common-misspellings license to CC BY-SA 4.0 ([#2716](https://github.com/streetsidesoftware/cspell-dicts/issues/2716)) ([7a68a11](https://github.com/streetsidesoftware/cspell-dicts/commit/7a68a11f07864660d109caa8af4d55dc18738a58))
+
 ## [1.0.2](https://github.com/streetsidesoftware/cspell-dicts/compare/@cspell/dict-en-common-misspellings@1.0.1...@cspell/dict-en-common-misspellings@1.0.2) (2023-02-15)
 
 

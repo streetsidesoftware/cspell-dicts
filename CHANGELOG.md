@@ -1,5 +1,24 @@
 # Release Notes
 
+## [23.0.0](https://github.com/streetsidesoftware/cspell-dicts/compare/cspell-dicts@22.0.0...cspell-dicts@23.0.0) (2023-12-29)
+
+
+### ⚠ BREAKING CHANGES
+
+* Update en-common-misspellings license to CC BY-SA 4.0 ([#2716](https://github.com/streetsidesoftware/cspell-dicts/issues/2716))
+* [cryptocurrencies] organize + modernize the crypto wordlists ([#2846](https://github.com/streetsidesoftware/cspell-dicts/issues/2846))
+
+### Features
+
+* [cryptocurrencies] organize + modernize the crypto wordlists ([#2846](https://github.com/streetsidesoftware/cspell-dicts/issues/2846)) ([1d18683](https://github.com/streetsidesoftware/cspell-dicts/commit/1d186837e92a1d3eee2265c6980bda0d8e490b59))
+* Update en-common-misspellings license to CC BY-SA 4.0 ([#2716](https://github.com/streetsidesoftware/cspell-dicts/issues/2716)) ([7a68a11](https://github.com/streetsidesoftware/cspell-dicts/commit/7a68a11f07864660d109caa8af4d55dc18738a58))
+
+
+### Updates and Bug Fixes
+
+* Crypto make sure dict files are packaged. ([#2860](https://github.com/streetsidesoftware/cspell-dicts/issues/2860)) ([f7dbbdf](https://github.com/streetsidesoftware/cspell-dicts/commit/f7dbbdfd8c8d9f29b7b616b87461844d0a054c58))
+* Workflow Bot -- Build Dictionaries ([#2853](https://github.com/streetsidesoftware/cspell-dicts/issues/2853)) ([0a43965](https://github.com/streetsidesoftware/cspell-dicts/commit/0a43965f5c1be88c834b175a657155dd4a35a095))
+
 ## [22.0.0](https://github.com/streetsidesoftware/cspell-dicts/compare/cspell-dicts@21.0.7...cspell-dicts@22.0.0) (2023-12-25)
 
 

@@ -22,6 +22,22 @@ See [Conventional Commits](https://conventionalcommits.org) for commit guideline
 
 
 
+## [5.0.0](https://github.com/streetsidesoftware/cspell-dicts/compare/@cspell/dict-cryptocurrencies@4.0.0...@cspell/dict-cryptocurrencies@5.0.0) (2023-12-29)
+
+
+### ⚠ BREAKING CHANGES
+
+* [cryptocurrencies] organize + modernize the crypto wordlists ([#2846](https://github.com/streetsidesoftware/cspell-dicts/issues/2846))
+
+### Features
+
+* [cryptocurrencies] organize + modernize the crypto wordlists ([#2846](https://github.com/streetsidesoftware/cspell-dicts/issues/2846)) ([1d18683](https://github.com/streetsidesoftware/cspell-dicts/commit/1d186837e92a1d3eee2265c6980bda0d8e490b59))
+
+
+### Updates and Bug Fixes
+
+* Crypto make sure dict files are packaged. ([#2860](https://github.com/streetsidesoftware/cspell-dicts/issues/2860)) ([f7dbbdf](https://github.com/streetsidesoftware/cspell-dicts/commit/f7dbbdfd8c8d9f29b7b616b87461844d0a054c58))
+
 ## [4.0.0](https://github.com/streetsidesoftware/cspell-dicts/compare/@cspell/dict-cryptocurrencies@3.0.1...@cspell/dict-cryptocurrencies@4.0.0) (2023-08-31)
 
 
