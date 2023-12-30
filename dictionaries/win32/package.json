@@ -11,7 +11,7 @@
     "./cspell-ext.json": "./cspell-ext.json"
   },
   "scripts": {
-    "build": "cross-env NODE_OPTIONS=--max_old_space_size=8192 cspell-tools-cli compile --keep-raw-case \"src/win32.txt\" -o .",
+    "build": "cspell-tools-cli build",
     "test": "pnpm run test-src && pnpm run test-samples",
     "test-src": "shx head -n 10000 \"src/win32.txt\" | cspell -v -c ./cspell.json \"--local=*\" stdin",
     "test-samples": "cspell samples/**",
