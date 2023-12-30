@@ -3,6 +3,13 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+## [2.0.3](https://github.com/streetsidesoftware/cspell-dicts/compare/@cspell/dict-win32@2.0.2...@cspell/dict-win32@2.0.3) (2023-12-30)
+
+
+### Updates and Bug Fixes
+
+* Update README ([#2862](https://github.com/streetsidesoftware/cspell-dicts/issues/2862)) ([bd9a9db](https://github.com/streetsidesoftware/cspell-dicts/commit/bd9a9db2214ddebb32c621b94962be5c1a820e44))
+
 ## [2.0.2](https://github.com/streetsidesoftware/cspell-dicts/compare/@cspell/dict-win32@2.0.1...@cspell/dict-win32@2.0.2) (2023-09-22)
 
 
