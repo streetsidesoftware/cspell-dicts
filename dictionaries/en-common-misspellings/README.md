@@ -57,7 +57,7 @@ See: [How to Create a New Dictionary](https://github.com/streetsidesoftware/cspe
 
 ## License
 
-MIT
+CC BY-SA 4.0
 
 > Some packages may have other licenses included.
 
