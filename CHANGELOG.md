@@ -1,5 +1,23 @@
 # Release Notes
 
+## [24.0.0](https://github.com/streetsidesoftware/cspell-dicts/compare/cspell-dicts@23.0.1...cspell-dicts@24.0.0) (2024-01-02)
+
+
+### ⚠ BREAKING CHANGES
+
+* Split data-science terms into multiple dictionaries ([#2874](https://github.com/streetsidesoftware/cspell-dicts/issues/2874))
+
+### Features
+
+* Reduce the size of the CPP dictionary ([#2876](https://github.com/streetsidesoftware/cspell-dicts/issues/2876)) ([f6a7c3c](https://github.com/streetsidesoftware/cspell-dicts/commit/f6a7c3c0fecdb4010feae766df56e0034e810b87))
+* Split data-science terms into multiple dictionaries ([#2874](https://github.com/streetsidesoftware/cspell-dicts/issues/2874)) ([93a8e09](https://github.com/streetsidesoftware/cspell-dicts/commit/93a8e09727819c4a6e0576fc6d0b65e307805da8))
+
+
+### Updates and Bug Fixes
+
+* Support adding additional terms to the CPP dict ([#2882](https://github.com/streetsidesoftware/cspell-dicts/issues/2882)) ([f858da5](https://github.com/streetsidesoftware/cspell-dicts/commit/f858da5481e721a38487b5647e922aff8b38d7eb))
+* Workflow Bot -- Build Dictionaries ([#2878](https://github.com/streetsidesoftware/cspell-dicts/issues/2878)) ([3547b0f](https://github.com/streetsidesoftware/cspell-dicts/commit/3547b0f3a9a56579b85655813c6304dddc4a1838))
+
 ## [23.0.1](https://github.com/streetsidesoftware/cspell-dicts/compare/cspell-dicts@23.0.0...cspell-dicts@23.0.1) (2023-12-30)
 
 
