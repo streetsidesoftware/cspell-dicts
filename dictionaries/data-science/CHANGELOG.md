@@ -1,5 +1,16 @@
 # Change Log
 
+## [2.0.0](https://github.com/streetsidesoftware/cspell-dicts/compare/@cspell/dict-data-science@1.0.11...@cspell/dict-data-science@2.0.0) (2024-01-02)
+
+
+### ⚠ BREAKING CHANGES
+
+* Split data-science terms into multiple dictionaries ([#2874](https://github.com/streetsidesoftware/cspell-dicts/issues/2874))
+
+### Features
+
+* Split data-science terms into multiple dictionaries ([#2874](https://github.com/streetsidesoftware/cspell-dicts/issues/2874)) ([93a8e09](https://github.com/streetsidesoftware/cspell-dicts/commit/93a8e09727819c4a6e0576fc6d0b65e307805da8))
+
 ## [1.0.11](https://github.com/streetsidesoftware/cspell-dicts/compare/@cspell/dict-data-science@1.0.10...@cspell/dict-data-science@1.0.11) (2023-08-21)
 
 

@@ -3,6 +3,18 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+## [5.1.0](https://github.com/streetsidesoftware/cspell-dicts/compare/@cspell/dict-cpp@5.0.10...@cspell/dict-cpp@5.1.0) (2024-01-02)
+
+
+### Features
+
+* Reduce the size of the CPP dictionary ([#2876](https://github.com/streetsidesoftware/cspell-dicts/issues/2876)) ([f6a7c3c](https://github.com/streetsidesoftware/cspell-dicts/commit/f6a7c3c0fecdb4010feae766df56e0034e810b87))
+
+
+### Updates and Bug Fixes
+
+* Support adding additional terms to the CPP dict ([#2882](https://github.com/streetsidesoftware/cspell-dicts/issues/2882)) ([f858da5](https://github.com/streetsidesoftware/cspell-dicts/commit/f858da5481e721a38487b5647e922aff8b38d7eb))
+
 ## [5.0.10](https://github.com/streetsidesoftware/cspell-dicts/compare/@cspell/dict-cpp@5.0.9...@cspell/dict-cpp@5.0.10) (2023-11-28)
 
 
