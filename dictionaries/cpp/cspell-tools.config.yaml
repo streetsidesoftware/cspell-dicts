@@ -3,6 +3,7 @@
 targets:
   - name: "cpp"
     sources:
+      - filename: src/additional-terms.txt
       - filename: src/cpp.txt
         split: true
         allowedSplitWords:
