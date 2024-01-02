@@ -6,6 +6,7 @@
 transformers
 datasets
 tokenizers
+softmax
 ```
 
 
