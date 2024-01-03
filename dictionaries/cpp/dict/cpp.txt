@@ -498,12 +498,7 @@ AP_SERVER_BASEREVISION
 AP_SERVER_BASEVENDOR
 AP_SERVER_BASEVERSION
 AP_SERVER_DEVBUILD_BOOLEAN
-AP_SERVER_MAJORVERSION
-AP_SERVER_MAJORVERSION_NUMBER
 AP_SERVER_MINORREVISION
-AP_SERVER_PATCHLEVEL
-AP_SERVER_PATCHLEVEL_CSV
-AP_SERVER_PATCHLEVEL_NUMBER
 AP_SLOTMEM_TYPE_CLEARINUSE
 AP_SLOTMEM_TYPE_NOTMPSAFE
 AP_SLOTMEM_TYPE_PREGRAB
@@ -659,7 +654,6 @@ ATTR_CMN_ACCESSMASK
 ATTR_CMN_ACCTIME
 ATTR_CMN_ADDEDTIME
 ATTR_CMN_BKUPTIME
-ATTR_CMN_CHGTIME
 ATTR_CMN_CRTIME
 ATTR_CMN_DEVID
 ATTR_CMN_FILEID
@@ -744,8 +738,6 @@ AUDITSDEV
 AUDITSDEV_IOBASE
 AUDIT_AHLT
 AUDIT_ARGE
-AUDIT_FILTER_REINIT
-AUDIT_FILTER_REINIT_STRING
 AUDIT_HEADER_VERSION_OLDDARWIN
 AUDIT_HEADER_VERSION_TSOL
 AUDIT_PERZONE
@@ -844,13 +836,10 @@ AUE_FUTIMESAT
 AUE_GCCONTROL
 AUE_GETDIREENTRIES
 AUE_GETKERNSTATE
-AUE_GETMSG
 AUE_GETPATH_FROMADDR
 AUE_GETPATH_FROMFD
 AUE_GETPMSG
 AUE_GETPORTAUDIT
-AUE_GETRESGID
-AUE_GETRESUID
 AUE_GETSGROUPS
 AUE_GETUSERAUDIT
 AUE_GETWGROUPS
@@ -873,7 +862,6 @@ AUE_MCTL
 AUE_MEMCNTL
 AUE_MKCOMPLEX
 AUE_MKFIFOAT
-AUE_MKNODAT
 AUE_MODADDMAJ
 AUE_MODADDPRIV
 AUE_MODCONFIG
@@ -906,7 +894,6 @@ AUE_PORTFS
 AUE_POSIX_OPENPT
 AUE_PREADV
 AUE_PRIOCNTLSYS
-AUE_PROCINFO
 AUE_PTHREADCANCELED
 AUE_PTHREADCHDIR
 AUE_PTHREADCONDBROADCAST
@@ -931,10 +918,6 @@ AUE_RESETSHFILE
 AUE_RFORK
 AUE_RFSSYS
 AUE_RTPRIO
-AUE_SCHED_GETPARAM
-AUE_SCHED_GETSCHEDULER
-AUE_SCHED_SETPARAM
-AUE_SCHED_SETSCHEDULER
 AUE_SEMCLOSE
 AUE_SEMCTL_RMID
 AUE_SEMDESTROY
@@ -951,7 +934,6 @@ AUE_SETFSUID
 AUE_SETKERNSTATE
 AUE_SETPPRIV
 AUE_SETPRIVEXEC
-AUE_SETRESGID
 AUE_SETRESUID
 AUE_SETSGROUPS
 AUE_SETTID
@@ -984,7 +966,6 @@ AUE_WORKQOPS
 AUE_WRITEL
 AUE_WRITEVL
 AUE_XMKNOD
-AUE_XSTAT
 AUE_calife
 AUE_ftpd
 AUE_ftpd_logout
@@ -1034,6 +1015,7 @@ AUTHORIZATION
 AUTHORIZE
 AUTHORIZED
 AUTHORIZER
+AUTHSIZE
 AUTHSOURCE
 AUTHTOK
 AUTHTRAPENABLE
@@ -1365,6 +1347,7 @@ BINARY
 BIND
 BINDING
 BINDINGS
+BINDIR
 BINDPROCESSOR
 BINDS
 BINDV
@@ -1862,6 +1845,7 @@ CERASE
 CEROD
 CERRNO
 CERT
+CERTFILE
 CERTIFICATE
 CERTINFO
 CERTKEY
@@ -1932,6 +1916,7 @@ CHECK_NEEDCOMMITCNT
 CHECK_STOPPEDE
 CHFLAGS
 CHG
+CHGTIME
 CHILD
 CHILDREN
 CHIN
@@ -2100,6 +2085,7 @@ CODEBASE
 CODEC
 CODECVT
 CODES
+CODESET
 CODETYPE
 CODING
 COHERENCE
@@ -2932,6 +2918,8 @@ DATA
 DATAAVAILABLE
 DATABASE
 DATACENTER
+DATADIR
+DATAERR
 DATAFLD
 DATAFORMATAS
 DATAKIT
@@ -3064,7 +3052,6 @@ DBG_FSRW
 DBG_FSVN
 DBG_FSYSTEM
 DBG_HFS_UPDATE_ACCTIME
-DBG_HFS_UPDATE_CHGTIME
 DBG_HFS_UPDATE_DATEADDED
 DBG_IOAUDIO
 DBG_IOBLUETOOTH
@@ -3246,13 +3233,10 @@ DEF
 DEFAULT
 DEFAULTED
 DEFAULT_ASNENCODING_DIRECTION
-DEFAULT_EXP_BINDIR
 DEFAULT_EXP_CGIDIR
-DEFAULT_EXP_DATADIR
 DEFAULT_EXP_ERRORDIR
 DEFAULT_EXP_HTDOCSDIR
 DEFAULT_EXP_ICONSDIR
-DEFAULT_EXP_INCLUDEDIR
 DEFAULT_EXP_INSTALLBUILDDIR
 DEFAULT_EXP_LOCALSTATEDIR
 DEFAULT_EXP_LOGFILEDIR
@@ -3265,13 +3249,10 @@ DEFAULT_MIBDIRS
 DEFAULT_MIBFILES
 DEFAULT_NIC
 DEFAULT_PIDLOG
-DEFAULT_REL_BINDIR
 DEFAULT_REL_CGIDIR
-DEFAULT_REL_DATADIR
 DEFAULT_REL_ERRORDIR
 DEFAULT_REL_HTDOCSDIR
 DEFAULT_REL_ICONSDIR
-DEFAULT_REL_INCLUDEDIR
 DEFAULT_REL_INSTALLBUILDDIR
 DEFAULT_REL_LOCALSTATEDIR
 DEFAULT_REL_LOGFILEDIR
@@ -3650,6 +3631,7 @@ DNO_ANSI_KEYWORDS
 DNP
 DNS
 DNSKEY
+DNSNAME
 DNSNULL
 DNSRCH
 DNSSD
@@ -3980,7 +3962,6 @@ DTRACE_DSTATE_CLEAN
 DTRACE_DSTATE_DIRTY
 DTRACE_DSTATE_EMPTY
 DTRACE_DSTATE_RINSING
-DTRACE_DYNVAR_NOALLOC
 DTRACE_EPIDNONE
 DTRACE_ERRDEBUG
 DTRACE_ERRHASHSZ
@@ -4640,7 +4621,6 @@ ERR_NXIO
 ERR_ROFS
 ERR_SERVERFAULT
 ERR_TOOSMALL
-ERR_XDEV
 ERkppI
 ES
 ESC
@@ -4856,13 +4836,7 @@ EXTPROC
 EXTRA
 EXTRACT
 EXTRACTION
-EX_DATAERR
-EX_IOERR
 EX_NOHOST
-EX_NOPERM
-EX_OSERR
-EX_OSFILE
-EX_TEMPFAIL
 EYJ
 E_XORAYA
 EaUjkP
@@ -5102,6 +5076,7 @@ FILESEC
 FILESEC_ACL_ALLOCSIZE
 FILESEC_GRPUUID
 FILESIZE
+FILESIZEBITS
 FILESTAT
 FILESYNC
 FILESYSTEM
@@ -5306,7 +5281,6 @@ FREEREMAINDER
 FREESP
 FREETYPE
 FREEZE
-FREE_PNODE
 FREMOVEXATTR
 FREQ
 FREQUENCY
@@ -5398,7 +5372,6 @@ FTS_ROOTPARENTLEVEL
 FTS_SEEDOT
 FTS_SLNONE
 FTS_SYMFOLLOW
-FTS_XDEV
 FTW
 FTW_DNR
 FTW_SLN
@@ -5602,12 +5575,14 @@ GETLONG
 GETMINOR
 GETMNTENT
 GETMODE
+GETMSG
 GETNCNT
 GETNEXT
 GETNEXTs
 GETOPT
 GETOWN
 GETPAGESIZE
+GETPARAM
 GETPATH
 GETPEERNAME
 GETPGID
@@ -5619,8 +5594,11 @@ GETPROTOBYNAME
 GETPROTOBYNUMBER
 GETPWNAM
 GETPWUID
+GETRESGID
+GETRESUID
 GETRLIMIT
 GETRUSAGE
+GETSCHEDULER
 GETSECRET
 GETSECT
 GETSERVBYNAME
@@ -5909,7 +5887,6 @@ HAVE_ADABAS
 HAVE_AOLSERVER
 HAVE_APPLICATIONSERVICES_APPLICATIONSERVICES_H
 HAVE_AS_SPARC_UA_PCREL
-HAVE_BIND_TEXTDOMAIN_CODESET
 HAVE_BIRDSTEP
 HAVE_BROKEN_LIBMYSQLCLIENT
 HAVE_CAUDIUM
@@ -6605,6 +6582,7 @@ INCIDENTAL
 INCL
 INCLUDE
 INCLUDED
+INCLUDEDIR
 INCLUDES
 INCLUDING
 INCL_DOSERRORS
@@ -6786,6 +6764,7 @@ IOCTLFUNCTION
 IOCTLS
 IOC_DIRMASK
 IODBC
+IOERR
 IOFBF
 IOFTP
 IOHTTP
@@ -7871,7 +7850,6 @@ LDAP_OPT_X_SASL_NOCANON
 LDAP_OPT_X_SASL_SECPROPS
 LDAP_OPT_X_TLS_CACERTDIR
 LDAP_OPT_X_TLS_CACERTFILE
-LDAP_OPT_X_TLS_CERTFILE
 LDAP_OPT_X_TLS_CRLCHECK
 LDAP_OPT_X_TLS_DHFILE
 LDAP_OPT_X_TLS_NEWCTX
@@ -8008,6 +7986,7 @@ LIBS
 LIBSASL
 LIBSOCKET
 LIBSSL
+LIBSTD
 LIBSYSCALL_INTERFACE
 LIBUNWIND
 LIBVERSION
@@ -8410,6 +8389,7 @@ MAIN
 MAINTAIN
 MAINTENANCE
 MAJOR
+MAJORVERSION
 MAKE
 MAKEBOOTDEV
 MAKEDEV
@@ -8839,6 +8819,7 @@ MKDIRAT
 MKFIFO
 MKMASK
 MKNOD
+MKNODAT
 MKSTEMP
 MKTIME
 MKWORKSPACE
@@ -9026,7 +9007,7 @@ MSDN
 MSDOS
 MSDOSFS
 MSEC
-MSECS_PER_SEC
+MSECS
 MSEC_DIRBIT
 MSFILTER
 MSG
@@ -9567,7 +9548,6 @@ NFSERR_TOOSMALL
 NFSERR_TRYLATER
 NFSERR_WFLUSH
 NFSERR_WRONGSEC
-NFSERR_XDEV
 NFSM
 NFSMNT
 NFSMNT_ACDIRMAX
@@ -9800,7 +9780,6 @@ NI_NODEADDR_FLAG_SITELOCAL
 NI_NOFQDN
 NI_NUMERICHOST
 NI_NUMERICSERV
-NI_QTYPE_DNSNAME
 NI_QTYPE_SUPTYPES
 NI_SUPTYPE_FLAG_COMPRESS
 NI_WITHSCOPEID
@@ -9851,6 +9830,7 @@ NNTqSdrYNgZ
 NO
 NOACCESS
 NOACTIVE
+NOALLOC
 NOANONYMOUS
 NOB
 NOBLANKS
@@ -9860,6 +9840,7 @@ NOCACHE
 NOCANCEL
 NOCHANGE
 NOCRED
+NOCREDS
 NODATA
 NODE
 NODEADDR
@@ -9912,6 +9893,7 @@ NOOP
 NOOPENFILE
 NOP
 NOPE
+NOPERM
 NOPLAINTEXT
 NOPORT
 NOPROGRESS
@@ -9992,6 +9974,7 @@ NPROC
 NPROCS
 NR
 NRDV
+NREAD
 NRECTS
 NREFRESH
 NREFRESHWANT
@@ -10438,10 +10421,12 @@ OSATOMIC_INLINE
 OSATOMIC_STD
 OSATOMIC_USE_INLINED
 OSD
+OSERR
 OSETLK
 OSETLKW
 OSF
 OSFID
+OSFILE
 OSGKhmnBpivV
 OSI
 OSINET
@@ -10662,6 +10647,7 @@ PASSWORDS
 PASV
 PAT
 PATCH
+PATCHLEVEL
 PATENTS
 PATH
 PATHCONF
@@ -10805,11 +10791,9 @@ PHP
 PHPAPI
 PHPDBG
 PHPWRITE
-PHP_BINDIR
 PHP_BIRDSTEP_INCLUDE
 PHP_BIRDSTEP_LIBS
 PHP_CREDITS_FULLPAGE
-PHP_DATADIR
 PHP_DEP_FALIAS
 PHP_FALIAS
 PHP_FHTTPD_INCLUDE
@@ -10977,6 +10961,7 @@ PMQ
 PMTU
 PN
 PNG
+PNODE
 PNRLesGYtNpBhL
 PO
 POCC
@@ -11044,8 +11029,6 @@ POSIX_SPAWN_RESETIDS
 POSIX_SPAWN_SETEXEC
 POSIX_SPAWN_SETPGROUP
 POSIX_SPAWN_SETSCHEDPARAM
-POSIX_SPAWN_SETSCHEDULER
-POSIX_SPAWN_SETSIGDEF
 POSIX_SPAWN_SETSIGMASK
 POSIX_TYPED_MEM_ALLOCATE_CONTIG
 POSIX_VDISABLE
@@ -11208,6 +11191,7 @@ PROCESSOR
 PROCESSTYPE
 PROCFIXCMD
 PROCFS
+PROCINFO
 PROCMIBNUM
 PROCNAME
 PROCUREMENT
@@ -11924,6 +11908,7 @@ REG_NOSPEC
 REG_NOSUB
 REG_STARTEND
 REG_UNGREEDY
+REINIT
 REINITIALIZE
 REJECT
 REJECTING
@@ -12986,6 +12971,7 @@ SETLOGIN
 SETMNTENT
 SETMODE
 SETOWN
+SETPARAM
 SETPASS
 SETPGID
 SETPGRP
@@ -12993,11 +12979,14 @@ SETPRIORITY
 SETPROCTITLE
 SETQUOTA
 SETREGID
+SETRESGID
 SETREUID
 SETRLIMIT
 SETS
+SETSCHEDULER
 SETSID
 SETSIG
+SETSIGDEF
 SETSIZE
 SETSOCKOPT
 SETTABLE
@@ -13549,7 +13538,6 @@ SNMP_ERR_NOCREATION
 SNMP_ERR_NOSUCHNAME
 SNMP_ERR_NOTWRITABLE
 SNMP_ERR_RESOURCEUNAVAILABLE
-SNMP_ERR_TOOBIG
 SNMP_ERR_UNDOFAILED
 SNMP_ERR_WRONGENCODING
 SNMP_ERR_WRONGLENGTH
@@ -13720,7 +13708,6 @@ SO_NETSVC_MARKING_LEVEL
 SO_NOADDRERR
 SO_NOSIGPIPE
 SO_NOTIFYCONFLICT
-SO_NREAD
 SO_NUMRCVPKT
 SO_NWRITE
 SO_OOBINLINE
@@ -13847,36 +13834,15 @@ SQLITE_IOCAP_POWERSAFE_OVERWRITE
 SQLITE_IOCAP_SAFE_APPEND
 SQLITE_IOCAP_SEQUENTIAL
 SQLITE_IOCAP_UNDELETABLE_WHEN_OPEN
-SQLITE_IOERR
-SQLITE_IOERR_ACCESS
-SQLITE_IOERR_AUTH
-SQLITE_IOERR_BLOCKED
 SQLITE_IOERR_CHECKRESERVEDLOCK
-SQLITE_IOERR_CLOSE
 SQLITE_IOERR_CONVPATH
-SQLITE_IOERR_DELETE
 SQLITE_IOERR_DELETE_NOENT
-SQLITE_IOERR_DIR_CLOSE
-SQLITE_IOERR_DIR_FSYNC
-SQLITE_IOERR_FSTAT
-SQLITE_IOERR_FSYNC
 SQLITE_IOERR_GETTEMPPATH
-SQLITE_IOERR_LOCK
-SQLITE_IOERR_MMAP
-SQLITE_IOERR_NOMEM
 SQLITE_IOERR_RDLOCK
-SQLITE_IOERR_READ
-SQLITE_IOERR_SEEK
 SQLITE_IOERR_SHMLOCK
 SQLITE_IOERR_SHMMAP
 SQLITE_IOERR_SHMOPEN
 SQLITE_IOERR_SHMSIZE
-SQLITE_IOERR_SHORT_READ
-SQLITE_IOERR_TRUNCATE
-SQLITE_IOERR_UNLOCK
-SQLITE_IOERR_VNODE
-SQLITE_IOERR_WRITE
-SQLITE_IOERR_XXX
 SQLITE_LIMIT_VDBE_OP
 SQLITE_LOCKED_SHAREDCACHE
 SQLITE_MUTEX_APPDEF
@@ -13943,7 +13909,6 @@ SQLITE_TESTCTRL_RESERVE
 SQLITE_TESTCTRL_SCRATCHMALLOC
 SQLITE_TESTCTRL_SORTER_MMAP
 SQLITE_TESTCTRL_VDBE_COVERAGE
-SQLITE_TOOBIG
 SQLITE_WARNING_AUTOINDEX
 SQLSTATE
 SQLUNIX
@@ -14906,6 +14871,7 @@ TEMP
 TEMPADDR
 TEMPBUF
 TEMPERATURE
+TEMPFAIL
 TEMPLATE
 TEMPLATES
 TEMPNAM
@@ -14929,6 +14895,7 @@ TEXT
 TEXTAREA
 TEXTBUF
 TEXTBUFSZ
+TEXTDOMAIN
 TEXTREADER
 TF
 TFO
@@ -15175,6 +15142,7 @@ TOK_OPENTAG
 TOLOWER
 TOMBSTONE
 TOO
+TOOBIG
 TOOL
 TOOLBOX
 TOOLS
@@ -15370,7 +15338,6 @@ TS_SO_OLOWAT
 TS_TBLOCK
 TS_TTSTOP
 TS_TYPEN
-TS_WOPEN
 TT
 TTCP_CLIENT_SND_WND
 TTF
@@ -15897,7 +15864,6 @@ USMSTATS
 USM_AUTH_KU_LEN
 USM_AUTH_PROTO_NOAUTH_LEN
 USM_LENGTH_KU_HASHBLOCK
-USM_MAX_AUTHSIZE
 USM_MAX_KEYEDHASH_LENGTH
 USM_PRIV_KU_LEN
 USM_PRIV_PROTO_NOPRIV_LEN
@@ -16484,6 +16450,7 @@ WINSERVICE_H
 WINSOCK
 WINSOCKAPI
 WINT
+WINVER
 WIRE
 WIRED
 WITH
@@ -16502,6 +16469,7 @@ WNOWAIT
 WNgGGhMArUMIEdCMQgAHLuCExrNZ
 WO
 WONT
+WOPEN
 WORD
 WORDEXP
 WORDS
@@ -16668,6 +16636,7 @@ XBS
 XCHG
 XCLUDE
 XCZRWoB
+XDEV
 XDIGIT
 XDISPLOC
 XDR
@@ -17261,6 +17230,7 @@ XSR
 XSRETURN
 XSS
 XSSO
+XSTAT
 XSTRING
 XSUB
 XSprePUSH
@@ -17785,7 +17755,6 @@ _KPASSWD_MALFORMED
 _KPASSWD_SOFTERROR
 _KPASSWD_SUCCESS
 _KT_BADNAME
-_KT_IOERR
 _KT_KVNONOTFOUND
 _KT_NAME_TOOLONG
 _LIBCHARSET_H
@@ -17830,9 +17799,7 @@ _MonoidOperation
 _NETKEY_KEYSOCK_H_
 _NET_NETKEV_H_
 _NEW_RTADV_ADDR
-_NOCREDS_SUPPLIED
 _NONASK_PHY
-_NOPERM_ETYPE
 _NT_SRV_XHST
 _Nocopy_types
 _Nodeptr_Alloc
@@ -17893,9 +17860,7 @@ _PATH_UUCPLOCK
 _PATH_VARDB
 _PATH_VARRUN
 _PATH_VARTMP
-_PC_FILESIZEBITS
 _PC_VDISABLE
-_PHP_WINVER_H
 _PLUGIN_OP_NOTSUPP
 _PORTRANGE_DEFAULT
 _PORTRANGE_HIGH
@@ -18049,9 +18014,6 @@ __DOCB_PARSER_H__
 __DTF_READALL
 __GElf_Sxword
 __GElf_Xword
-__GNUC_LIBSTD_MINOR__
-__GNUC_LIBSTD__
-__GNUC_PATCHLEVEL__
 __GXX_NONUNIQUE_RTTI_BIT
 __HFS_UNISTR__
 __LIBKERN_OSRETURN_H
@@ -18234,7 +18196,6 @@ _auth_con_getremotesubkey
 _auth_con_getsendsubkey
 _auth_con_initivector
 _auth_con_setaddrs
-_auth_con_setflags
 _auth_con_setports
 _auth_con_setrcache
 _auth_con_setrecvsubkey
@@ -18270,7 +18231,6 @@ _free_tgt_creds
 _fwd_tgt_creds
 _get_auxdata
 _get_ldt
-_get_osfhandle
 _gic_opt_pa_data
 _gic_options
 _gic_process_last_req
@@ -18289,7 +18249,6 @@ _in_protounknown
 _in_routeradvert
 _in_routersolicit
 _in_timeexceed
-_in_toobig
 _init_ets
 _ioport_t
 _kddi_a
@@ -18416,7 +18375,6 @@ _prompter_fct
 _pthread_rwlockattr_t
 _rb_availability
 _rcp_ps
-_result_error_toobig
 _rthdr_add
 _rthdr_getaddr
 _rthdr_getflags
@@ -19621,6 +19579,7 @@ attrlist
 attrname
 attroff
 attron
+attrp
 attrreference
 attrs
 attrset
@@ -19655,7 +19614,6 @@ audio
 audit
 audit_filter_destach_t
 audit_filter_getcookie
-audit_filter_reinit_t
 audit_get_fsize
 audit_get_kaudit
 audit_get_pinfo
@@ -19731,6 +19689,7 @@ authorizer
 authorizes
 authorizing
 authors
+authsize
 authtime
 authtok
 authtype
@@ -19781,7 +19740,6 @@ auxprops
 av
 ava
 avail
-avail_cpus
 availability
 available
 availcpu
@@ -20152,6 +20110,7 @@ binder
 binders
 binding
 bindings
+bindir
 bindport
 bindprocessor
 bindpw
@@ -20500,7 +20459,6 @@ buf_bdwrite
 buf_biodone
 buf_biowait
 buf_breadn
-buf_clearflags
 buf_dirtyend
 buf_dirtyoff
 buf_flushdirtyblks
@@ -20527,7 +20485,6 @@ buf_setdevice
 buf_setdirtyend
 buf_setdirtyoff
 buf_setdrvdata
-buf_setflags
 buf_setfsprivate
 buf_setlblkno
 buf_setredundancyflags
@@ -20564,7 +20521,6 @@ bugreporter
 bugs
 bugzilla
 build
-build_oid_noalloc
 builded
 builder
 building
@@ -20950,6 +20906,7 @@ cert_t_pkix
 cert_t_spki
 certain
 certainly
+certfile
 certificate
 certificates
 certification
@@ -21083,6 +21040,7 @@ chg
 chgat
 chge
 chgrp
+chgtime
 chi
 chief
 chil
@@ -21229,6 +21187,7 @@ cleared
 clearenv
 clearer
 clearerr
+clearflags
 clearing
 clearly
 clearok
@@ -21447,6 +21406,8 @@ collision
 collisions
 colno
 colnum
+colocate
+colocated
 colon
 colone
 coloneq
@@ -22031,6 +21992,7 @@ cpuc_pid_lock
 cpufamily
 cpufrequency
 cpup
+cpus
 cpusubtype
 cpusubtypes
 cputhreadtype
@@ -22048,7 +22010,6 @@ cr
 crIjDQ
 cr_gmuid
 cr_ngroups
-cr_sgid
 crafted
 crap
 crarr
@@ -22469,6 +22430,8 @@ dat
 data
 database
 databases
+datadir
+dataerr
 datagram
 datagramlabel
 datagrams
@@ -23329,6 +23292,7 @@ dns
 dns_get_mx
 dnsclass
 dnskey
+dnsname
 dnsrch
 dnssd
 dnssl
@@ -24087,7 +24051,6 @@ dtrace_invop_callsite_pre
 dtrace_invop_remove
 dtrace_kreloc_fini
 dtrace_kreloc_init
-dtrace_max_cpus
 dtrace_membar_consumer
 dtrace_membar_producer
 dtrace_modload
@@ -25571,6 +25534,7 @@ fileproc
 files
 filesec
 filesize
+filesizebits
 filespec
 filestat
 filesystem
@@ -26419,6 +26383,7 @@ getbkgd
 getbkgrnd
 getblk
 getbsize
+getbuffer
 getbulk_handler
 getbyname
 getc
@@ -26480,6 +26445,7 @@ getifmaddrs
 getimagesize
 getimagesizefromstring
 getin
+getindex
 getinoquota
 getiopolicy_np
 getipnodebyaddr
@@ -26505,11 +26471,13 @@ getmntent
 getmntinfo
 getmode
 getmouse
+getmsg
 getmygid
 getmyinode
 getmypid
 getmyuid
 getn_wstr
+getname
 getnameinfo
 getnetbyaddr
 getnetbyname
@@ -26520,6 +26488,7 @@ getnstr
 getop
 getopt
 getpagesize
+getparam
 getparents
 getparx
 getpary
@@ -26546,6 +26515,8 @@ getquota_args
 getquota_rslt
 getquota_rslt_u
 getrandmax
+getresgid
+getresuid
 getrlimit
 getrpcbyname
 getrpcbynumber
@@ -26553,6 +26524,7 @@ getrpcent
 getrpcport
 getrusage
 gets
+getscheduler
 getsecret
 getsect
 getsectbyname
@@ -26619,6 +26591,7 @@ gi
 giant
 gic_opts
 gid
+gids
 gif
 gigabyte
 gigabytes
@@ -26836,7 +26809,6 @@ gss_clnt_verflen
 gss_indicate_mechs
 gss_inquire_mechs_for_name
 gss_qop_t
-gss_svc_gids
 gss_svc_mtx
 gss_svc_ngroups
 gss_svc_seqbits
@@ -27992,6 +27964,7 @@ incircle
 incl
 include
 included
+includedir
 includes
 inclus
 inclusion
@@ -28552,6 +28525,7 @@ ioctls
 ioctx
 iodbc
 iodone
+ioerr
 ioinit
 iokit
 iomanip
@@ -29395,6 +29369,7 @@ lastlog
 lastlogx
 lastmask
 lastmod
+lastread
 lasts
 laststate
 lasttext
@@ -29777,6 +29752,7 @@ libsnmp
 libsocket
 libsqlite
 libssh_version
+libstd
 libstdc
 libsupc
 libsystem_kernel
@@ -30393,6 +30369,7 @@ maj
 majka
 major
 majority
+majorversion
 mak
 make
 make_tempfile
@@ -30540,7 +30517,6 @@ matters
 mature
 mavericks
 max
-max_cpus
 max_sndwnd
 maxage
 maxatts
@@ -30616,7 +30592,6 @@ mberegi
 mbfJkzO
 mbfilter
 mbfl
-mbfl_buffer_converter_getbuffer
 mbfl_convert_filter_devcat
 mbfl_eaw_table
 mbfl_ja_jp_hantozen
@@ -31000,6 +30975,7 @@ mkh
 mkinstalldirs
 mkm
 mknod
+mknodat
 mknoddata
 mkostemp
 mkostemps
@@ -31347,8 +31323,6 @@ mpo_vnode_check_setacl
 mpo_vnode_check_setacl_t
 mpo_vnode_check_setextattr
 mpo_vnode_check_setextattr_t
-mpo_vnode_check_setflags
-mpo_vnode_check_setflags_t
 mpo_vnode_check_setowner
 mpo_vnode_check_setowner_t
 mpo_vnode_check_setutimes
@@ -31365,8 +31339,6 @@ mpo_vnode_notify_setacl
 mpo_vnode_notify_setacl_t
 mpo_vnode_notify_setextattr
 mpo_vnode_notify_setextattr_t
-mpo_vnode_notify_setflags
-mpo_vnode_notify_setflags_t
 mpo_vnode_notify_setowner
 mpo_vnode_notify_setowner_t
 mpo_vnode_notify_setutimes
@@ -31415,6 +31387,7 @@ mscr
 msdos
 msdosfs
 msec
+msecs
 msfilterreq
 msfr_fmode
 msfr_group
@@ -31758,7 +31731,6 @@ n_hflag
 n_lastdbl
 n_lastio
 n_lastrahead
-n_lastread
 n_mflag
 n_monlink
 n_mtim
@@ -32131,8 +32103,6 @@ netsnmp_disable_this_loghandler
 netsnmp_ds_register_premib
 netsnmp_enable_loghandler
 netsnmp_enable_this_loghandler
-netsnmp_factory_produce_noalloc
-netsnmp_factory_produce_noalloc_f
 netsnmp_find_loghandler
 netsnmp_get_tdata_handler
 netsnmp_insert_tdata_row
@@ -32317,7 +32287,6 @@ nf
 nf_getlock_rpc
 nf_getquota
 nf_lastrahead
-nf_lastread
 nf_needcommitcnt
 nf_numoutput
 nf_objectclass
@@ -32597,7 +32566,9 @@ nnn
 nnnnnnnn
 no
 no_esc_ctlc
+noack
 noacl
+noalloc
 nobjs
 noblanks
 nobody
@@ -32610,6 +32581,7 @@ noconnlist
 noconnnolist
 nocontext
 noconv
+nocreds
 nocrmode
 nod
 nodata
@@ -32706,6 +32678,7 @@ nop_blockmap
 nop_islocked
 nop_offtoblk
 nopad
+noperm
 nopf
 noport
 nopreproc
@@ -32822,6 +32795,7 @@ nrarrc
 nrarrw
 nrdels
 nrdv
+nread
 nrefs
 nrefsym
 nreloc
@@ -32921,6 +32895,7 @@ nsds
 nsearch
 nsec
 nseconds
+nsecs
 nsect
 nsects
 nsend
@@ -33571,7 +33546,10 @@ orthogonal
 orv
 os
 os_activity_label_useraction
+oserr
 osf
+osfhandle
+osfile
 osfmk
 osize
 oslog
@@ -33793,7 +33771,6 @@ p_tracep
 p_usrpri
 p_uticks
 p_wmesg
-p_xstat
 pa
 pacific
 pack
@@ -33960,6 +33937,7 @@ past
 pat
 patch
 patches
+patchlevel
 path
 path_ool
 pathconf
@@ -34487,6 +34465,7 @@ pn
 pnCkpt
 pname
 png
+pnode
 pnotes
 pnoutrefresh
 po
@@ -34610,7 +34589,6 @@ posix_spawnattr_setsigdefault
 posix_spawnattr_setsigmask
 posix_spawnattr_setspecialport_np
 posix_spawnattr_t
-posix_spawnp
 posixrules
 posixsem
 posn
@@ -35015,13 +34993,13 @@ processors
 processtype
 procfs
 prochnd
+procinfo
 procname
 procp
 procs
 procure
 prod
 produce
-produce_noalloc
 produced
 producer
 producers
@@ -35130,6 +35108,7 @@ protective
 protects
 proto
 protocol
+protocolname
 protocols
 protoent
 protolen
@@ -35269,7 +35248,6 @@ pthread_cond_timedwait_relative_np
 pthread_condattr_getpshared
 pthread_condattr_setpshared
 pthread_getconcurrency
-pthread_getname_np
 pthread_getschedparam
 pthread_getspecific
 pthread_getugid_np
@@ -35766,6 +35744,7 @@ read_premib_configs
 readability
 readable
 readahead
+readall
 readargs
 readbuf
 readbuflen
@@ -36084,7 +36063,7 @@ regwexec
 regwncomp
 regwnexec
 rehash
-reinit_lock
+reinit
 reinitialize
 reinitialized
 reinitializes
@@ -36340,7 +36319,6 @@ res_nsend
 res_nsendsigned
 res_ownok
 res_pquery
-res_protocolname
 res_queriesmatch
 res_querydomain
 res_send_setqhook
@@ -36457,7 +36435,6 @@ resuba
 resubmit
 resul
 result
-result_error_toobig
 resulting
 results
 resultsize
@@ -37732,6 +37709,7 @@ seterror
 seteuid
 setf
 setfill
+setflags
 setfmac
 setfsent
 setg
@@ -37768,6 +37746,7 @@ setno
 setoperations
 setopt
 setp
+setparam
 setpass
 setpassent
 setpgid
@@ -37782,6 +37761,7 @@ setpwent
 setquota
 setrawcookie
 setregid
+setresgid
 setreuid
 setrgid
 setrlimit
@@ -37789,11 +37769,13 @@ setrpcent
 setruid
 setrunelocale
 sets
+setscheduler
 setscrreg
 setservent
 setservers
 setsgroups_np
 setsid
+setsigdef
 setsize
 setsocketopt
 setsockopt
@@ -37864,6 +37846,7 @@ sgetc
 sgetn
 sgetrune
 sgi
+sgid
 sgiexts
 sgk
 sgr
@@ -38547,6 +38530,7 @@ spawan
 spawn
 spawned
 spawning
+spawnp
 spc_cols
 spc_desc
 spc_rows
@@ -40070,6 +40054,7 @@ tempaddr
 tempbuf
 temperature
 tempering
+tempfail
 templ
 template
 templated
@@ -40158,6 +40143,7 @@ texels
 text
 textaddr
 textaddrlen
+textdomain
 textreader
 textsize
 textual
@@ -40515,6 +40501,7 @@ tone
 toner
 tony
 too
+toobig
 took
 tool
 toolbox
@@ -41991,7 +41978,6 @@ vnode
 vnode_fdinfo
 vnode_fdinfowithpath
 vnode_fsnode
-vnode_getname
 vnode_putname
 vnode_uncache_authorized_actions
 vnode_writedone
@@ -42427,7 +42413,9 @@ winsnstr
 winsock
 winsstr
 winstr
+winsz
 wint
+winver
 winwstr
 wios
 wiostream
@@ -42474,6 +42462,7 @@ wollman
 won
 wonderful
 wondering
+wopen
 wops
 woqbR
 word
@@ -42710,6 +42699,7 @@ xdbbbc
 xdcd
 xdd
 xdebb
+xdev
 xdf
 xdict
 xdigit
@@ -42967,6 +42957,7 @@ xsockbuf
 xsocket
 xsputn
 xsqcup
+xstat
 xstr
 xstring
 xsu
