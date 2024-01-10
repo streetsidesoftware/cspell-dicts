@@ -1,5 +1,16 @@
 # Release Notes
 
+## [24.0.2](https://github.com/streetsidesoftware/cspell-dicts/compare/cspell-dicts@24.0.1...cspell-dicts@24.0.2) (2024-01-10)
+
+
+### Updates and Bug Fixes
+
+* add "msrv" to rust dictionary ([#2897](https://github.com/streetsidesoftware/cspell-dicts/issues/2897)) ([a662025](https://github.com/streetsidesoftware/cspell-dicts/commit/a662025a79c50c3e5a6b95bdaaa906ce2f6fcddc))
+* add `rustfmt` to rust dictionary ([#2896](https://github.com/streetsidesoftware/cspell-dicts/issues/2896)) ([c56c8a3](https://github.com/streetsidesoftware/cspell-dicts/commit/c56c8a3373447db8268f9f089599249f67aaac3a))
+* correct "BitAdd" to "BitAnd" in rust dictionary ([#2898](https://github.com/streetsidesoftware/cspell-dicts/issues/2898)) ([4d3e454](https://github.com/streetsidesoftware/cspell-dicts/commit/4d3e45428c5c4ce9a9676ef5184d90d7e7fb573b))
+* Workflow Bot -- Build Dictionaries ([#2901](https://github.com/streetsidesoftware/cspell-dicts/issues/2901)) ([1af708d](https://github.com/streetsidesoftware/cspell-dicts/commit/1af708d3cad81813206ff93b65d651e4735ec108))
+* Workflow Bot -- Build Dictionaries ([#2903](https://github.com/streetsidesoftware/cspell-dicts/issues/2903)) ([91d2ab0](https://github.com/streetsidesoftware/cspell-dicts/commit/91d2ab0be21ef8fd6e9b2e3c8790ba5a53a3cbd6))
+
 ## [24.0.1](https://github.com/streetsidesoftware/cspell-dicts/compare/cspell-dicts@24.0.0...cspell-dicts@24.0.1) (2024-01-04)
 
 
