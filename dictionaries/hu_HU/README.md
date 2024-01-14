@@ -45,13 +45,13 @@ See: [How to Create a New Dictionary](https://github.com/streetsidesoftware/cspe
 
 GPL-3.0
 
-## Source
+### Source
 
-Source: [Wooorm's Hungarian Dictionary][wooorm-hu-dict] which is based on [Magyar Ispell][magyarispell].
+"[Wooorm's Hungarian Dictionary][wooorm-hu-dict]" which is based on "[Magyar Ispell][magyarispell]".
 
-Magyar Ispell is licensed under the GPL-3.0 license, see its [LICENSE][magyarispell-license] for details.
+"Magyar Ispell" is licensed under the GPL-3.0 license, see its [LICENSE][magyarispell-license] for details.
 
-Wooorm's dictionaries is licensed under the MIT license, see its [LICENSE][wooorm-license] for details.
+"Wooorm's dictionaries" is licensed under the MIT license, see its [LICENSE][wooorm-license] for details.
 
 [magyarispell-license]: https://raw.githubusercontent.com/laszlonemeth/magyarispell/master/COPYING.GPL3
 [magyarispell]: https://github.com/laszlonemeth/magyarispell
