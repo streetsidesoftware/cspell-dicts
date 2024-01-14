@@ -1,16 +1,16 @@
-name: " 🔗 Update Dependencies Main"
+name: ' 🔗 Update Dependencies Main'
 
 on:
   push:
     branches:
       - main
     paths:
-      - "**/package.json"
-      - "**/pnpm-lock.yaml"
-      - "scripts/**"
+      - '**/package.json'
+      - '**/pnpm-lock.yaml'
+      - 'scripts/**'
   workflow_dispatch:
   schedule:
-    - cron: "0 12 * * 0"
+    - cron: '0 12 * * 0'
 
 permissions:
   contents: read
@@ -20,7 +20,7 @@ jobs:
     if: github.repository_owner == 'streetsidesoftware'
     runs-on: ubuntu-latest
     env:
-      NEW_BRANCH: "update-dependencies-main"
+      NEW_BRANCH: 'update-dependencies-main'
       REF_BRANCH: main
     steps:
       - name: Checkout code
@@ -57,7 +57,7 @@ jobs:
       - name: PR
         uses: streetsidesoftware/actions/.github/actions/pr@v1
         with:
-          commit-message: "ci: Workflow Bot -- Update ALL Dependencies"
+          commit-message: 'ci: Workflow Bot -- Update ALL Dependencies'
           branch: ${{ env.NEW_BRANCH }}
           base: ${{ env.REF_BRANCH }}
           body: ${{ steps.body.outputs.body }}

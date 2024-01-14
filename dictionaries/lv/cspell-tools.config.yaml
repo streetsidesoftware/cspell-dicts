@@ -6,7 +6,7 @@ targets:
       - src/lv.txt
       - src/additional_words.txt
       - src/hunspell/dictionary-lv/index.dic
-    format: "trie3"
+    format: 'trie3'
     targetDirectory: ./dict
     generateNonStrict: true
     compress: false

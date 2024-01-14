@@ -1,4 +1,4 @@
-name: " 📚 Build Dictionaries"
+name: ' 📚 Build Dictionaries'
 
 on:
   push:
@@ -7,11 +7,11 @@ on:
   workflow_dispatch:
     inputs:
       ref:
-        description: "Reference Branch"
+        description: 'Reference Branch'
         type: string
         required: false
       new-branch:
-        description: "PR Branch to create"
+        description: 'PR Branch to create'
         type: string
         default: update-dictionaries
         required: false
@@ -51,7 +51,7 @@ jobs:
       - name: PR
         uses: ./.github/actions/pr
         with:
-          commit-message: "fix: Workflow Bot -- Build Dictionaries"
+          commit-message: 'fix: Workflow Bot -- Build Dictionaries'
           branch: ${{ env.NEW_BRANCH }}
           base: ${{ env.REF_BRANCH }}
           body: |
