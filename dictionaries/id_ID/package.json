@@ -1,8 +1,7 @@
 {
-  "name": "@cspell/dict-id",
+  "name": "@cspell/dict-id-id",
   "version": "1.0.0",
-  "description": "Indonesia dictionary for cspell. -- Private until verified",
-  "private": true,
+  "description": "Indonesia dictionary for cspell.",
   "publishConfig": {
     "access": "public"
   },
@@ -12,8 +11,11 @@
     "./cspell-ext.json": "./cspell-ext.json"
   },
   "scripts": {
-    "build": "cross-env NODE_OPTIONS=--max_old_space_size=8192 cspell-tools-cli build",
-    "test": "hunspell-reader words -n 1000 -m 0 \"src/id_ID.dic\" | cspell -v -c ./cspell-ext.json \"--local=id\" \"--languageId=*\" stdin",
+    "build": "cspell-tools-cli build",
+    "conditional-build": "pnpm build --conditional",
+    "test": "pnpm test:src && pnpm test:samples",
+    "test:src": "hunspell-reader words -n 1000 -m 0 \"src/hunspell/id_ID.dic\" | cspell -c ./cspell-ext.json \"--locale=id\" \"--languageId=*\" stdin",
+    "test:samples": "cspell samples",
     "prepublishOnly": "echo OK",
     "prepare:dictionary": "echo OK"
   },

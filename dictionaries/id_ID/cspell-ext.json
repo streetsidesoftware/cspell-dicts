@@ -1,0 +1,28 @@
+{
+    "id": "id-id",
+    "version": "0.2",
+    "name": "Indonesia",
+    "description": "Indonesia dictionary for cspell.",
+    "readonly": true,
+    // List of dictionary files to add to the global list of dictionaries
+    "dictionaryDefinitions": [
+        {
+            "name": "id-id",
+            "path": "./dict/id-id.trie",
+            "description": "Indonesia dictionary for cspell."
+        }
+    ],
+    // Language Rules to apply to matching files.
+    // Files are matched on `languageId` and `local`
+    "languageSettings": [
+        {
+            // VSCode languageId. i.e. typescript, java, go, cpp, javascript, markdown, latex
+            // * will match against any file type.
+            "languageId": "*",
+            // Language locale. i.e. en-US, de-AT, or ru. * will match all locales.
+            // Multiple locales can be specified like: "en, en-US" to match both English and English US.
+            "locale": "id,id-ID",
+            "dictionaries": ["id-id"]
+        }
+    ]
+}

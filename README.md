@@ -325,8 +325,8 @@ Use either VS Code or cspell to verify that files spell check correctly.
 
 - Install `cspell`: `npm install -g cspell`
 - Check the global links: `cspell link list`
-- Check a file: `cspell check <path/to/source/file.ext> [--local=<locale>] [--language-id=<filetype>]`
-  Example: `cspell check README.md --local=en,es` -- to check the readme file assuming English and Spanish words.
+- Check a file: `cspell check <path/to/source/file.ext> [--locale=<locale>] [--language-id=<filetype>]`
+  Example: `cspell check README.md --locale=en,es` -- to check the readme file assuming English and Spanish words.
 
 Checking a file will show you what has been ignored (gray) as well as what is considered an error (red):
 
