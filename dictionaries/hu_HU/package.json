@@ -13,7 +13,8 @@
   },
   "scripts": {
     "build": "cross-env NODE_OPTIONS=--max_old_space_size=8192 cspell-tools-cli build",
-    "test": "hunspell-reader words -n 1000 -m 0 \"src/hu_HU.dic\" | cspell -v -c ./cspell-ext.json \"--local=hu\" \"--languageId=*\" stdin",
+    "build:conditional": "pnpm build --conditional",
+    "test": "hunspell-reader words -n 1000 -m 0 \"src/hunspell/hu_HU.dic\" | cspell -v -c ./cspell-ext.json \"--local=hu\" \"--languageId=*\" stdin",
     "prepublishOnly": "echo OK",
     "prepare:dictionary": "echo OK"
   },

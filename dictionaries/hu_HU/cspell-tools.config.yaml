@@ -1,12 +1,13 @@
 # yaml-language-server: $schema=https://raw.githubusercontent.com/streetsidesoftware/cspell/main/packages/cspell-tools/cspell-tools.config.schema.json
 
 targets:
-  - name: "hu-hu"
+  - name: 'hu-hu'
     sources:
-      - filename: "src/hu_HU.dic"
+      - filename: 'src/hunspell/hu_HU.dic'
         maxDepth: 1 # This is set to 1 to prevent initial builds from taking too long.
-    format: "trie3"
-    targetDirectory: "./dict"
+      - filename: src/additional_words.txt
+    format: 'trie3'
+    targetDirectory: './dict'
     generateNonStrict: true
     compress: false
 checksumFile: true
