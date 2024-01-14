@@ -12,7 +12,7 @@
   },
   "scripts": {
     "build": "cspell-tools-cli compile --keep-raw-case src/lua.txt --no-compress -o ./dict",
-    "test": "shx head -n 1000 src/lua.txt | cspell -v -c ./cspell-ext.json --local=* --languageId=lua stdin",
+    "test": "shx head -n 1000 src/lua.txt | cspell -v -c ./cspell-ext.json --locale=* --languageId=lua stdin",
     "prepublishOnly": "echo pre-publish",
     "prepare:dictionary": "pnpm run build"
   },

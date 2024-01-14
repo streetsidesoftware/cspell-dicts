@@ -14,7 +14,7 @@
     "build": "cspell-tools-cli build",
     "conditional-build": "pnpm run sync && pnpm run build --conditional",
     "sync": "echo OK || pnpm cpy \"node_modules/basque_hunspell/eu.*\" \"src/basque_hunspell\" --flat",
-    "test": "hunspell-reader words -n 1000 -m 1 \"src/eu.dic\" | cspell -v -c ./cspell-ext.json \"--local=eu\" \"--languageId=*\" stdin",
+    "test": "hunspell-reader words -n 1000 -m 1 \"src/eu.dic\" | cspell -v -c ./cspell-ext.json \"--locale=eu\" \"--languageId=*\" stdin",
     "prepublishOnly": "echo OK",
     "prepare:dictionary": "echo OK"
   },

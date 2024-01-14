@@ -2,22 +2,22 @@ name: Lint
 on:
   pull_request:
     paths:
-      - ".eslint*"
+      - '.eslint*'
       - .prettier*"
-      - "**/*.js"
-      - "**/*.md"
-      - "**/*.json"
-      - "**/*.yml"
-      - "**/*.yaml"
+      - '**/*.js'
+      - '**/*.md'
+      - '**/*.json'
+      - '**/*.yml'
+      - '**/*.yaml'
   push:
     paths:
-      - ".eslint*"
+      - '.eslint*'
       - .prettier*"
-      - "**/*.js"
-      - "**/*.md"
-      - "**/*.json"
-      - "**/*.yml"
-      - "**/*.yaml"
+      - '**/*.js'
+      - '**/*.md'
+      - '**/*.json'
+      - '**/*.yml'
+      - '**/*.yaml'
     branches:
       - main
 

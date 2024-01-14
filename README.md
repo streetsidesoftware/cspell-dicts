@@ -184,6 +184,7 @@ Various [cspell](https://github.com/streetsidesoftware/cspell) dictionaries. Eac
 | [@cspell/dict-hr-hr](./dictionaries/hr_HR#readme)                                   | hr-hr                                                                   | Croatian                           | Croatian dictionary for cspell.                                |
 | [@cspell/dict-html](./dictionaries/html#readme)                                     | html                                                                    | html                               | Html dictionary for cspell.                                    |
 | [@cspell/dict-html-symbol-entities](./dictionaries/html-symbol-entities#readme)     | html-symbol-entities                                                    | HTML Symbol Entities               | HTML Symbol Entities Dictionary                                |
+| [@cspell/dict-id-id](./dictionaries/id_ID#readme)                                   | id-id                                                                   | Indonesia                          | Indonesia dictionary for cspell.                               |
 | [@cspell/dict-it-it](./dictionaries/it_IT#readme)                                   | it-it                                                                   | Italian                            | Italian dictionary for cspell.                                 |
 | [@cspell/dict-java](./dictionaries/java#readme)                                     | java                                                                    | Java                               | Java dictionary for cspell.                                    |
 | [@cspell/dict-k8s](./dictionaries/k8s#readme)                                       | k8s                                                                     | k8s                                | K8s dictionary for cspell.                                     |
@@ -296,7 +297,7 @@ Yeoman will ask you a series of questions:
 | friendly name | this is the friendly name, like Australian                                                                                                                                                                                                                                 |
 | description   | short description of the dictionary.                                                                                                                                                                                                                                       |
 | source file   | this is the source file to use to build the dictionary. It can be a .txt or hunspell .dic file. This file will be copied to the dictionary project.                                                                                                                        |
-| local         | this is the two letter language code with an optional cultural code. a `*` mean it will match any language. More than one local can be added by separating them with a comma. i.e. en, en_AU.                                                                              |
+| locale        | this is the two letter language code with an optional cultural code. a `*` mean it will match any language. More than one locale can be added by separating them with a comma. i.e. en, en_AU.                                                                             |
 | languageId    | this is the VS Code programming language id or file type. `*` will match all file types. Examples: `java`, `cpp`, `plaintext`, `markdown`, `ruby`. [Types know to cspell](https://github.com/streetsidesoftware/cspell/blob/master/packages/cspell-lib/src/LanguageIds.ts) |
 | store as trie | for large source files (> 1MB) or hunspell files, this should be `y`. `n` will work for all programming language keyword files.                                                                                                                                            |
 | run build     | prepare the word list so it can be used by cspell efficiently. You can always run the build step yourself in the dictionary directory `pnpm run build`.                                                                                                                    |
@@ -325,8 +326,8 @@ Use either VS Code or cspell to verify that files spell check correctly.
 
 - Install `cspell`: `npm install -g cspell`
 - Check the global links: `cspell link list`
-- Check a file: `cspell check <path/to/source/file.ext> [--local=<locale>] [--language-id=<filetype>]`
-  Example: `cspell check README.md --local=en,es` -- to check the readme file assuming English and Spanish words.
+- Check a file: `cspell check <path/to/source/file.ext> [--locale=<locale>] [--language-id=<filetype>]`
+  Example: `cspell check README.md --locale=en,es` -- to check the readme file assuming English and Spanish words.
 
 Checking a file will show you what has been ignored (gray) as well as what is considered an error (red):
 

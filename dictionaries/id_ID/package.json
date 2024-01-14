@@ -1,0 +1,49 @@
+{
+  "name": "@cspell/dict-id-id",
+  "version": "1.0.0",
+  "description": "Indonesia dictionary for cspell.",
+  "publishConfig": {
+    "access": "public"
+  },
+  "exports": {
+    ".": "./cspell-ext.json",
+    "./cspell": "./cspell-ext.json",
+    "./cspell-ext.json": "./cspell-ext.json"
+  },
+  "scripts": {
+    "build": "cspell-tools-cli build",
+    "conditional-build": "pnpm build --conditional",
+    "test": "pnpm test:src && pnpm test:samples",
+    "test:src": "hunspell-reader words -n 1000 -m 0 \"src/hunspell/id_ID.dic\" | cspell -c ./cspell-ext.json \"--locale=id\" \"--languageId=*\" stdin",
+    "test:samples": "cspell samples",
+    "prepublishOnly": "echo OK",
+    "prepare:dictionary": "echo OK"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/streetsidesoftware/cspell-dicts.git"
+  },
+  "keywords": [
+    "cspell",
+    "cspell-ext",
+    "id",
+    "Indonesia",
+    "dictionary",
+    "spelling"
+  ],
+  "author": "Street Side Software",
+  "contributors": [],
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/streetsidesoftware/cspell-dicts/issues"
+  },
+  "homepage": "https://github.com/streetsidesoftware/cspell-dicts/blob/main/dictionaries/id#readme",
+  "devDependencies": {},
+  "dependencies": {},
+  "files": [
+    "dict/id.trie",
+    "cspell-ext.json",
+    "*.js",
+    "*.d.ts"
+  ]
+}

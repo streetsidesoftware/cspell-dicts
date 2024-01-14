@@ -14,7 +14,7 @@
     "sync": "pnpm cpy \"node_modules/go-words/**\" \"src/go-words\" --flat",
     "conditional-build": "pnpm run sync && pnpm run build",
     "build": "cspell-tools-cli build",
-    "test": "shx head -n 100 src/go.txt | cspell -v -c ./cspell-ext.json --local=* --languageId=go stdin",
+    "test": "shx head -n 100 src/go.txt | cspell -v -c ./cspell-ext.json --locale=* --languageId=go stdin",
     "prepublishOnly": "echo pre-publish",
     "prepare:dictionary": "pnpm run build"
   },

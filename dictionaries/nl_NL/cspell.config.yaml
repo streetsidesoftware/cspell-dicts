@@ -1,15 +1,15 @@
 ---
 id: nl-nl
-version: "0.2"
+version: '0.2'
 name: Dutch (Netherlands) Dictionary
 description: Dutch (Netherlands) Dictionary
 readonly: true
 dictionaryDefinitions:
   - name: nl-nl
-    path: "./Dutch.trie.gz"
+    path: './Dutch.trie.gz'
     description: Dutch (Netherlands) Dictionary
     dictionaryInformation:
-      locale: "nl-NL"
+      locale: 'nl-NL'
       # cspell:ignore Zëqïéèöêüçàûîñäô
       alphabet: a-zA-Zëqïéèöêüçàûîñäô
       suggestionEditCosts:
@@ -29,9 +29,9 @@ dictionaryDefinitions:
 
 ignoreWords:
   - A3-
-  - "-A4"
+  - '-A4'
 languageSettings:
-  - languageId: "*"
+  - languageId: '*'
     locale: nl,nl-NL
     caseSensitive: true
     ignoreRegExpList: []

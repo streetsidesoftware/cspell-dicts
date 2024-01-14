@@ -20,7 +20,7 @@
     "sync": "pnpm cpy \"node_modules/dictionary-el/{*.dic,*.aff,*.md,**/license}\" src/hunspell",
     "gz": "cspell-tools-cli gzip \"*.trie\"",
     "prepare:dictionary": "pnpm gz",
-    "test": "shx head -n 1000 ./src/Greek.txt | cspell -v -c cspell-ext.json --local=el stdin"
+    "test": "shx head -n 1000 ./src/Greek.txt | cspell -v -c cspell-ext.json --locale=el stdin"
   },
   "repository": {
     "type": "git",

@@ -12,7 +12,7 @@
   },
   "scripts": {
     "build": "cross-env NODE_OPTIONS=--max_old_space_size=8192 cspell-tools-cli compile \"src/monkeyc_keywords.txt\" -o .",
-    "test": "shx head -n 1000 \"src/monkeyc_keywords.txt\" | cspell -v -c ./cspell-ext.json \"--local=*\" \"--languageId=monkeyc\" stdin",
+    "test": "shx head -n 1000 \"src/monkeyc_keywords.txt\" | cspell -v -c ./cspell-ext.json \"--locale=*\" \"--languageId=monkeyc\" stdin",
     "prepublishOnly": "echo pre-publish",
     "prepare:dictionary": "pnpm run build"
   },
