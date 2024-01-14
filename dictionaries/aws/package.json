@@ -12,7 +12,7 @@
   },
   "scripts": {
     "build": "cspell-tools-cli compile --keep-raw-case --use-legacy-splitter src/aws.txt --no-compress -o ./dict",
-    "test": "head -n 100 src/aws.txt | cspell -v -c ./cspell-ext.json \"--local=*\" \"--languageId=aws\" stdin",
+    "test": "head -n 100 src/aws.txt | cspell -v -c ./cspell-ext.json \"--locale=*\" \"--languageId=aws\" stdin",
     "prepublishOnly": "echo pre-publish",
     "prepare:dictionary": "pnpm run build"
   },

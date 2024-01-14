@@ -12,7 +12,7 @@
   },
   "scripts": {
     "build": "cross-env NODE_OPTIONS=--max_old_space_size=8192 cspell-tools-cli compile --split \"src/r.txt\" -o .",
-    "test": "shx head -n 1000 \"src/r.txt\" | cspell -v -c ./cspell-ext.json \"--local=*\" \"--languageId=r\" stdin",
+    "test": "shx head -n 1000 \"src/r.txt\" | cspell -v -c ./cspell-ext.json \"--locale=*\" \"--languageId=r\" stdin",
     "prepublishOnly": "echo pre-publish",
     "prepare:dictionary": "pnpm run build"
   },

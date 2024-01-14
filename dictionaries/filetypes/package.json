@@ -12,7 +12,7 @@
   },
   "scripts": {
     "build": "cspell-tools-cli compile \"filetypes.txt\" -o .",
-    "test": "shx cat \"filetypes.txt\" | cspell -v -c ./cspell-ext.json \"--local=*\" \"--languageId=*\" stdin",
+    "test": "shx cat \"filetypes.txt\" | cspell -v -c ./cspell-ext.json \"--locale=*\" \"--languageId=*\" stdin",
     "prepublishOnly": "echo pre-publish",
     "prepare:dictionary": "pnpm run build"
   },

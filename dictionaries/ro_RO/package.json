@@ -14,7 +14,7 @@
     "build": "cspell-tools-cli build",
     "sync": "pnpm cpy \"node_modules/dictionary-ro/**\" src/hunspell",
     "conditional-build": "pnpm sync && pnpm build --conditional",
-    "test": "shx head -n 1000 \"src/Wordlist-Romanian.txt\" | cspell -v -c ./cspell-ext.json \"--local=ro,ro-RO,ro_RO\" \"--languageId=*\" stdin",
+    "test": "shx head -n 1000 \"src/Wordlist-Romanian.txt\" | cspell -v -c ./cspell-ext.json \"--locale=ro,ro-RO,ro_RO\" \"--languageId=*\" stdin",
     "prepublishOnly": "echo OK",
     "prepare:dictionary": "echo OK"
   },
