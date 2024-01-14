@@ -1,9 +1,9 @@
-version: "0.2"
+version: '0.2'
 language: en
 files:
   - .github/**/*.{md,txt,yaml,yml}
   - .git/COMMIT_EDITMSG
-  - "*.{md,txt,yaml,yml}"
+  - '*.{md,txt,yaml,yml}'
   - dictionaries/**/*.{md,txt,yaml,yml,js,tex}
   - docs/**/*.md
   - scripts/**
@@ -51,16 +51,16 @@ maxNumberOfProblems: 1000
 ignorePaths:
   - .gitignore
   - .vscode/**
-  - "*-lock.yaml"
-  - "*.aff"
-  - "*.dic"
-  - "*.gz"
-  - "*.lock"
-  - "*.log"
-  - "*.snap"
-  - "*.trie"
-  - "**/.git/!(COMMIT_EDITMSG)"
-  - "**/.git/!(COMMIT_EDITMSG)/**"
+  - '*-lock.yaml'
+  - '*.aff'
+  - '*.dic'
+  - '*.gz'
+  - '*.lock'
+  - '*.log'
+  - '*.snap'
+  - '*.trie'
+  - '**/.git/!(COMMIT_EDITMSG)'
+  - '**/.git/!(COMMIT_EDITMSG)/**'
   - CHANGELOG.md
   - checksum.txt
   - cSpell.json
@@ -78,11 +78,11 @@ ignorePaths:
 import: []
 useGitignore: true
 overrides:
-  - filename: "**/nl_NL/**"
+  - filename: '**/nl_NL/**'
     language: en,nl
-  - filename: "**/ru_RU/samples/**"
+  - filename: '**/ru_RU/samples/**'
     language: ru,en
-  - filename: "**/sv/**"
+  - filename: '**/sv/**'
     language: en,sv
 cache:
   useCache: true

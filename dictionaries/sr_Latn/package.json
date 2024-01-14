@@ -14,7 +14,7 @@
     "build": "cspell-tools-cli build",
     "conditional-build": "pnpm run build --conditional",
     "prepublishOnly": "echo pre-publish",
-    "test": "cspell -v -c ./cspell-ext.json --local=sr-Latn \"samples/**\""
+    "test": "cspell -v -c ./cspell-ext.json --locale=sr-Latn \"samples/**\""
   },
   "repository": {
     "type": "git",

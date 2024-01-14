@@ -12,7 +12,7 @@
   },
   "scripts": {
     "build": "cspell-tools-cli compile --keep-raw-case src/elixir.txt --no-compress -o ./dict",
-    "test": "shx head -n 100 src/elixir.txt | cspell -v -c ./cspell-ext.json --local=* --languageId=elixir stdin",
+    "test": "shx head -n 100 src/elixir.txt | cspell -v -c ./cspell-ext.json --locale=* --languageId=elixir stdin",
     "prepublishOnly": "echo pre-publish",
     "prepare:dictionary": "pnpm run build"
   },

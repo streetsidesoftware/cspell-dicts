@@ -16,13 +16,13 @@
     // Generally left empty
     "dictionaries": [],
     // Language Rules to apply to matching files.
-    // Files are matched on `languageId` and `local`
+    // Files are matched on `languageId` and `locale`
     "languageSettings": [
         {
             // VSCode languageId. i.e. typescript, java, go, cpp, javascript, markdown, latex
             // * will match against any file type.
             "languageId": "rust",
-            // Language local. i.e. en-US, de-AT, or ru. * will match all locals.
+            // Language locale. i.e. en-US, de-AT, or ru. * will match all locals.
             // Multiple locals can be specified like: "en, en-US" to match both English and English US.
             "locale": "*",
             // By default the whole text of a file is included for spell checking

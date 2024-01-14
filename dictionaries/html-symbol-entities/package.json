@@ -12,7 +12,7 @@
   },
   "scripts": {
     "build": "cspell-tools-cli compile \"entities.txt\" -o .",
-    "test": "shx head -n 100 \"entities.txt\" | cspell -v -c ./cspell-ext.json --local=* --languageId=html stdin",
+    "test": "shx head -n 100 \"entities.txt\" | cspell -v -c ./cspell-ext.json --locale=* --languageId=html stdin",
     "prepublishOnly": "echo pre-publish",
     "prepare:dictionary": "pnpm run build"
   },

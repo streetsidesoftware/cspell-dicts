@@ -1,11 +1,11 @@
 # yaml-language-server: $schema=https://raw.githubusercontent.com/streetsidesoftware/cspell/main/packages/cspell-tools/cspell-tools.config.schema.json
 
 targets:
-  - name: "makefile"
+  - name: 'makefile'
     sources:
-      - filename: "src/makefile.txt"
+      - filename: 'src/makefile.txt'
         maxDepth: 1 # This is set to 1 to prevent initial builds from taking too long.
-    format: "plaintext"
-    targetDirectory: "./dict"
+    format: 'plaintext'
+    targetDirectory: './dict'
     generateNonStrict: false
     compress: false
