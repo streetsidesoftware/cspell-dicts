@@ -60,4 +60,6 @@ GPL-3.0
 
 > Some packages may have other licenses included.
 
+<!--- cspell:ignore Wooorm's --->
+
 <!--- @@inject: ../../static/footer.md --->
