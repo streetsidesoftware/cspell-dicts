@@ -1634,18 +1634,18 @@ packages:
     resolution: {integrity: sha512-nG96G3Wp6acyAgJqGasjODb+acrI7KltPiRxzHPXnP3NgI28bpQDRv53olbqGXbfcgF5aiiHmO3xpwEpS5Ld9g==}
     dev: true
 
-  /@types/node@16.18.70:
-    resolution: {integrity: sha512-8eIk20G5VVVQNZNouHjLA2b8utE2NvGybLjMaF4lyhA9uhGwnmXF8o+icdXKGSQSNANJewXva/sFUoZLwAaYAg==}
+  /@types/node@16.18.71:
+    resolution: {integrity: sha512-ARO+458bNJQeNEFuPyT6W+q9ULotmsQzhV3XABsFSxEvRMUYENcBsNAHWYPlahU+UHa5gCVwyKT1Z3f1Wwr26Q==}
     dev: false
 
-  /@types/node@18.19.6:
-    resolution: {integrity: sha512-X36s5CXMrrJOs2lQCdDF68apW4Rfx9ixYMawlepwmE4Anezv/AV2LSpKD1Ub8DAc+urp5bk0BGZ6NtmBitfnsg==}
+  /@types/node@18.19.7:
+    resolution: {integrity: sha512-IGRJfoNX10N/PfrReRZ1br/7SQ+2vF/tK3KXNwzXz82D32z5dMQEoOlFew18nLSN+vMNcLY4GrKfzwi/yWI8/w==}
     dependencies:
       undici-types: 5.26.5
     dev: false
 
-  /@types/node@20.11.0:
-    resolution: {integrity: sha512-o9bjXmDNcF7GbM4CNQpmi+TutCgap/K3w1JyKgxAjqx41zp9qlIAVFi0IhCNsJcXolEqLWhbFbEeL0PvYm4pcQ==}
+  /@types/node@20.11.2:
+    resolution: {integrity: sha512-cZShBaVa+UO1LjWWBPmWRR4+/eY/JR/UIEcDlVsw3okjWEu+rB7/mH6X3B/L+qJVHDLjk9QW/y2upp9wp1yDXA==}
     dependencies:
       undici-types: 5.26.5
     dev: false
@@ -1660,7 +1660,7 @@ packages:
   /@types/through@0.0.33:
     resolution: {integrity: sha512-HsJ+z3QuETzP3cswwtzt2vEIiHBk/dCcHGhbmG5X3ecnwFD/lPrMpliGXxSCg03L9AhrdwA4Oz/qfspkDW+xGQ==}
     dependencies:
-      '@types/node': 20.11.0
+      '@types/node': 20.11.2
     dev: false
 
   /@types/unist@2.0.10:
@@ -1675,7 +1675,7 @@ packages:
     resolution: {integrity: sha512-vPXzCLmRp74e9LsP8oltnWKTH+jBwt86WgRUb4Pc9Lf3pkMVGyvIo2gm9bODeGfCay2DBB/hAWDuvf07JcK4rw==}
     dependencies:
       '@types/expect': 1.20.4
-      '@types/node': 20.11.0
+      '@types/node': 20.11.2
     dev: false
 
   /@ungap/structured-clone@1.2.0:
@@ -1725,7 +1725,7 @@ packages:
       '@yeoman/types': ^1.0.0
       mem-fs: ^4.0.0
     dependencies:
-      '@types/node': 16.18.70
+      '@types/node': 16.18.71
       '@yeoman/transform': 1.2.0
       '@yeoman/types': 1.1.2(@types/inquirer@9.0.7)(mem-fs@4.0.0)
       binary-extensions: 2.2.0
@@ -1750,7 +1750,7 @@ packages:
     resolution: {integrity: sha512-evb/+2XMEBoHr4BxBeFkjeVTgTS4Qe7VH8DmzZ9kgJK7C7ACPAhW/qBdsKKP1sb5MoeITSaJSVFnc8S1fjZmcw==}
     engines: {node: ^16.13.0 || >=18.12.0}
     dependencies:
-      '@types/node': 16.18.70
+      '@types/node': 16.18.71
       minimatch: 9.0.3
       readable-stream: 4.5.2
     dev: false
@@ -1772,7 +1772,7 @@ packages:
         optional: true
     dependencies:
       '@types/inquirer': 9.0.7
-      '@types/node': 16.18.70
+      '@types/node': 16.18.71
       mem-fs: 4.0.0
     dev: false
 
@@ -2135,7 +2135,7 @@ packages:
     dependencies:
       function-bind: 1.1.2
       get-intrinsic: 1.2.2
-      set-function-length: 1.1.1
+      set-function-length: 1.2.0
 
   /callsites@3.1.0:
     resolution: {integrity: sha512-P8BjAsXvZS+VIDUI11hHCQEv74YT67YUi5JJFNWIqL235sBmjX4+qx9Muvls5ivyNENctx46xQLQ3aTuE7ssaQ==}
@@ -4468,7 +4468,7 @@ packages:
       mem-fs: ^4.0.0
     dependencies:
       '@types/ejs': 3.1.5
-      '@types/node': 18.19.6
+      '@types/node': 18.19.7
       binaryextensions: 4.19.0
       commondir: 1.0.1
       deep-extend: 0.6.0
@@ -4487,7 +4487,7 @@ packages:
     resolution: {integrity: sha512-GCt8Xh5cRZ1ep45A8T+NlUYCPHzSj5JG2Xo7CA4Z8ISZ8Ovw0UQhQGt+J/z2xk7M3F9F4X9ZjSYk9UYlLLy4Wg==}
     engines: {node: '>=18.0.0'}
     dependencies:
-      '@types/node': 20.11.0
+      '@types/node': 20.11.2
       '@types/vinyl': 2.0.11
       vinyl: 3.0.0
       vinyl-file: 5.0.0
@@ -5538,7 +5538,7 @@ packages:
     resolution: {integrity: sha512-CsXIiCOeBUYMBLpcY71DTq+fg8268ux31pAxI5TcoYEPfWCw5ozrbgWdZ9QmSDd8dUzvNXtmiwJOdTIxIFptfQ==}
     engines: {node: '>=16.13.0'}
     dependencies:
-      '@types/node': 16.18.70
+      '@types/node': 16.18.71
       p-queue: 7.4.1
       readable-stream: 4.5.2
     dev: false
@@ -6126,11 +6126,12 @@ packages:
   /set-blocking@2.0.0:
     resolution: {integrity: sha512-KiKBS8AnWGEyLzofFfmvKwpdPzqiy16LvQfK3yv/fVH7Bj13/wl3JSR1J+rfgRE9q7xUJK4qvgS8raSOeLUehw==}
 
-  /set-function-length@1.1.1:
-    resolution: {integrity: sha512-VoaqjbBJKiWtg4yRcKBQ7g7wnGnLV3M8oLvVWwOk2PdYY6PEFegR1vezXR0tw6fZGF9csVakIRjrJiy2veSBFQ==}
+  /set-function-length@1.2.0:
+    resolution: {integrity: sha512-4DBHDoyHlM1IRPGYcoxexgh67y4ueR53FKV1yyxwFMY7aCqcN/38M1+SwZ/qJQ8iLv7+ck385ot4CcisOAPT9w==}
     engines: {node: '>= 0.4'}
     dependencies:
       define-data-property: 1.1.1
+      function-bind: 1.1.2
       get-intrinsic: 1.2.2
       gopd: 1.0.1
       has-property-descriptors: 1.0.1
@@ -7013,7 +7014,7 @@ packages:
         optional: true
     dependencies:
       '@types/lodash-es': 4.17.12
-      '@types/node': 18.19.6
+      '@types/node': 18.19.7
       '@yeoman/namespace': 1.0.0
       '@yeoman/types': 1.1.2(@types/inquirer@9.0.7)(mem-fs@4.0.0)
       chalk: 5.3.0
