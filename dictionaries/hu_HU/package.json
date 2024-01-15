@@ -1,0 +1,48 @@
+{
+  "name": "@cspell/dict-hu-hu",
+  "version": "1.0.0",
+  "description": "Hungarian dictionary for cspell. -- Private until verified",
+  "private": true,
+  "publishConfig": {
+    "access": "public"
+  },
+  "exports": {
+    ".": "./cspell-ext.json",
+    "./cspell": "./cspell-ext.json",
+    "./cspell-ext.json": "./cspell-ext.json"
+  },
+  "scripts": {
+    "build": "cross-env NODE_OPTIONS=--max_old_space_size=8192 cspell-tools-cli build",
+    "build:conditional": "pnpm build --conditional",
+    "test": "hunspell-reader words -n 1000 -m 0 \"src/hunspell/hu_HU.dic\" | cspell -v -c ./cspell-ext.json \"--local=hu\" \"--languageId=*\" stdin",
+    "prepublishOnly": "echo OK",
+    "prepare:dictionary": "echo OK"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/streetsidesoftware/cspell-dicts.git"
+  },
+  "keywords": [
+    "cspell",
+    "cspell-ext",
+    "hu_HU",
+    "Hungarian",
+    "dictionary",
+    "spelling"
+  ],
+  "author": "Street Side Software",
+  "contributors": [],
+  "license": "GPL-3.0",
+  "bugs": {
+    "url": "https://github.com/streetsidesoftware/cspell-dicts/issues"
+  },
+  "homepage": "https://github.com/streetsidesoftware/cspell-dicts/blob/main/dictionaries/hu_HU#readme",
+  "devDependencies": {},
+  "dependencies": {},
+  "files": [
+    "dict/hu-hu.trie",
+    "cspell-ext.json",
+    "*.js",
+    "*.d.ts"
+  ]
+}
