@@ -1,5 +1,13 @@
 # Change Log
 
+## [1.0.5](https://github.com/streetsidesoftware/cspell-dicts/compare/@cspell/dict-gaming-terms@1.0.4...@cspell/dict-gaming-terms@1.0.5) (2024-01-15)
+
+
+### Updates and Bug Fixes
+
+* add Despawn to gaming-terms dictionary ([#2905](https://github.com/streetsidesoftware/cspell-dicts/issues/2905)) ([65e4b1f](https://github.com/streetsidesoftware/cspell-dicts/commit/65e4b1f7196668ddbb5e49b095a10cb5eb6728fb))
+* Workflow Bot -- Build Dictionaries ([#2908](https://github.com/streetsidesoftware/cspell-dicts/issues/2908)) ([7de1cd4](https://github.com/streetsidesoftware/cspell-dicts/commit/7de1cd4566022d6a84b7e259d6e339237abeff8f))
+
 ## [1.0.4](https://github.com/streetsidesoftware/cspell-dicts/compare/@cspell/dict-gaming-terms@1.0.3...@cspell/dict-gaming-terms@1.0.4) (2023-01-05)
 
 

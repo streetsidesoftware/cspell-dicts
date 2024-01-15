@@ -3,6 +3,16 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+## [3.0.30](https://github.com/streetsidesoftware/cspell-dicts/compare/@cspell/dict-companies@3.0.29...@cspell/dict-companies@3.0.30) (2024-01-15)
+
+
+### Updates and Bug Fixes
+
+* Add AdGuard to companies ([#2922](https://github.com/streetsidesoftware/cspell-dicts/issues/2922)) ([80ddf7c](https://github.com/streetsidesoftware/cspell-dicts/commit/80ddf7cf1158fff12c34c4651dd6b744f513faf0))
+* add DÜRR and HOMAG to companies ([#2904](https://github.com/streetsidesoftware/cspell-dicts/issues/2904)) ([6ad56da](https://github.com/streetsidesoftware/cspell-dicts/commit/6ad56daccf4976ca49f9824f5baaf4212aed5cdf))
+* Workflow Bot -- Build Dictionaries ([#2908](https://github.com/streetsidesoftware/cspell-dicts/issues/2908)) ([7de1cd4](https://github.com/streetsidesoftware/cspell-dicts/commit/7de1cd4566022d6a84b7e259d6e339237abeff8f))
+* Workflow Bot -- Build Dictionaries ([#2923](https://github.com/streetsidesoftware/cspell-dicts/issues/2923)) ([32be666](https://github.com/streetsidesoftware/cspell-dicts/commit/32be666d99a24ddcfe881003e29f19a5f2a5abb0))
+
 ## [3.0.29](https://github.com/streetsidesoftware/cspell-dicts/compare/@cspell/dict-companies@3.0.28...@cspell/dict-companies@3.0.29) (2023-12-25)
 
 
