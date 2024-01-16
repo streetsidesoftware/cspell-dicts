@@ -1,5 +1,13 @@
 # Release Notes
 
+## [24.1.1](https://github.com/streetsidesoftware/cspell-dicts/compare/cspell-dicts@24.1.0...cspell-dicts@24.1.1) (2024-01-16)
+
+
+### Updates and Bug Fixes
+
+* make sure the dictionary is bundled in id-id ([#2930](https://github.com/streetsidesoftware/cspell-dicts/issues/2930)) ([d00bb05](https://github.com/streetsidesoftware/cspell-dicts/commit/d00bb05d2ccc35aebc4e33665003c5b185af8fac))
+* Workflow Bot -- Build Dictionaries ([#2925](https://github.com/streetsidesoftware/cspell-dicts/issues/2925)) ([f0fb5f7](https://github.com/streetsidesoftware/cspell-dicts/commit/f0fb5f76e1b87c20eae38b52dde1067d9375bcb1))
+
 ## [24.1.0](https://github.com/streetsidesoftware/cspell-dicts/compare/cspell-dicts@24.0.2...cspell-dicts@24.1.0) (2024-01-15)
 
 

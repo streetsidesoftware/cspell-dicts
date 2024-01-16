@@ -1,5 +1,12 @@
 # Change Log
 
+## [1.0.1](https://github.com/streetsidesoftware/cspell-dicts/compare/@cspell/dict-id-id@1.0.0...@cspell/dict-id-id@1.0.1) (2024-01-16)
+
+
+### Updates and Bug Fixes
+
+* make sure the dictionary is bundled in id-id ([#2930](https://github.com/streetsidesoftware/cspell-dicts/issues/2930)) ([d00bb05](https://github.com/streetsidesoftware/cspell-dicts/commit/d00bb05d2ccc35aebc4e33665003c5b185af8fac))
+
 ## 1.0.0 (2024-01-15)
 
 
