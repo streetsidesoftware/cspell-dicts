@@ -1,8 +1,7 @@
 {
   "name": "@cspell/dict-hu-hu",
   "version": "1.0.0",
-  "description": "Hungarian dictionary for cspell. -- Private until verified",
-  "private": true,
+  "description": "Hungarian dictionary for cspell.",
   "publishConfig": {
     "access": "public"
   },
@@ -13,10 +12,11 @@
   },
   "scripts": {
     "build": "cross-env NODE_OPTIONS=--max_old_space_size=8192 cspell-tools-cli build",
-    "build:conditional": "pnpm build --conditional",
+    "build:conditional": "pnpm build --conditional && pnpm gz",
+    "gz": "cspell-tools-cli gzip \"dict/*.trie\"",
     "test": "hunspell-reader words -n 1000 -m 0 \"src/hunspell/hu_HU.dic\" | cspell -v -c ./cspell-ext.json \"--local=hu\" \"--languageId=*\" stdin",
     "prepublishOnly": "echo OK",
-    "prepare:dictionary": "echo OK"
+    "prepare:dictionary": "pnpm gz"
   },
   "repository": {
     "type": "git",
@@ -40,7 +40,7 @@
   "devDependencies": {},
   "dependencies": {},
   "files": [
-    "dict/hu-hu.trie",
+    "dict/hu-hu.trie.gz",
     "cspell-ext.json",
     "*.js",
     "*.d.ts"
