@@ -71,7 +71,7 @@ ignorePaths:
   - generator-cspell-dicts/generators/app/templates/**
   - lerna.json
   - node_modules
-  - package.json
+  - /package.json
   - shared-additional-words.txt
   - source-dependencies.txt
   - source-files.txt
@@ -85,6 +85,14 @@ overrides:
     language: ru,en
   - filename: '**/sv/**'
     language: en,sv
+  - filename: '**/package.json'
+    patterns:
+      - name: devDependencies
+        pattern: |
+          /"devDependencies": \{[^}]*?\}/g
+        description: Ignore "devDependencies"
+    ignoreRegExpList:
+      - devDependencies
 cache:
   useCache: true
   cacheStrategy: content
