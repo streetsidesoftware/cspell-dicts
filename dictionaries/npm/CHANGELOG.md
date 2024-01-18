@@ -3,6 +3,14 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+## [5.0.15](https://github.com/streetsidesoftware/cspell-dicts/compare/@cspell/dict-npm@5.0.14...@cspell/dict-npm@5.0.15) (2024-01-18)
+
+
+### Updates and Bug Fixes
+
+* add Fastify and pino to libraries; Yassir to companies ([#2933](https://github.com/streetsidesoftware/cspell-dicts/issues/2933)) ([1ed808b](https://github.com/streetsidesoftware/cspell-dicts/commit/1ed808b4206ef131ed74d936bd8b8440e925e6c8))
+* Workflow Bot -- Build Dictionaries ([#2938](https://github.com/streetsidesoftware/cspell-dicts/issues/2938)) ([8ee345f](https://github.com/streetsidesoftware/cspell-dicts/commit/8ee345f662d36f170d46fca959f6245de9c7d91c))
+
 ## [5.0.14](https://github.com/streetsidesoftware/cspell-dicts/compare/@cspell/dict-npm@5.0.13...@cspell/dict-npm@5.0.14) (2023-12-17)
 
 

@@ -1,5 +1,14 @@
 # Release Notes
 
+## [24.1.2](https://github.com/streetsidesoftware/cspell-dicts/compare/cspell-dicts@24.1.1...cspell-dicts@24.1.2) (2024-01-18)
+
+
+### Updates and Bug Fixes
+
+* add Fastify and pino to libraries; Yassir to companies ([#2933](https://github.com/streetsidesoftware/cspell-dicts/issues/2933)) ([1ed808b](https://github.com/streetsidesoftware/cspell-dicts/commit/1ed808b4206ef131ed74d936bd8b8440e925e6c8))
+* bundle .trie.gz instead of .trie ([#2935](https://github.com/streetsidesoftware/cspell-dicts/issues/2935)) ([1fc1f6b](https://github.com/streetsidesoftware/cspell-dicts/commit/1fc1f6bd236ae43f391aa21b397b84135bcb3737))
+* Workflow Bot -- Build Dictionaries ([#2938](https://github.com/streetsidesoftware/cspell-dicts/issues/2938)) ([8ee345f](https://github.com/streetsidesoftware/cspell-dicts/commit/8ee345f662d36f170d46fca959f6245de9c7d91c))
+
 ## [24.1.1](https://github.com/streetsidesoftware/cspell-dicts/compare/cspell-dicts@24.1.0...cspell-dicts@24.1.1) (2024-01-16)
 
 
