@@ -1,5 +1,12 @@
 # Change Log
 
+## [1.0.1](https://github.com/streetsidesoftware/cspell-dicts/compare/@cspell/dict-hu-hu@1.0.0...@cspell/dict-hu-hu@1.0.1) (2024-01-18)
+
+
+### Updates and Bug Fixes
+
+* bundle .trie.gz instead of .trie ([#2935](https://github.com/streetsidesoftware/cspell-dicts/issues/2935)) ([1fc1f6b](https://github.com/streetsidesoftware/cspell-dicts/commit/1fc1f6bd236ae43f391aa21b397b84135bcb3737))
+
 ## 1.0.0 (2024-01-16)
 
 
