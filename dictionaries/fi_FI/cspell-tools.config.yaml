@@ -1,0 +1,12 @@
+# yaml-language-server: $schema=https://raw.githubusercontent.com/streetsidesoftware/cspell/main/packages/cspell-tools/cspell-tools.config.schema.json
+
+targets:
+  - name: 'fi-fi'
+    sources:
+      - filename: 'src/fi_FI.dic'
+        maxDepth: 1 # This is set to 1 to prevent initial builds from taking too long.
+    format: 'trie3'
+    targetDirectory: './dict'
+    generateNonStrict: 'true'
+    compress: false
+checksumFile: true
