@@ -44,6 +44,7 @@
     cspell:words Federico Jaramillo Martínez
     cspell:words Fullstack
     cspell:words Jordi Olivares Provencio
+    cspell:words Kimi Heinonen
     cspell:words Majid Shamkhani
     cspell:words Noam Ben Shabat
     cspell:words rbalet Raphaël Balet
