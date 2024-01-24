@@ -4,8 +4,14 @@
     "files": [
         "**/*.{md,txt}"
     ],
+    "ignorePaths": [
+        "*.aff","*.dic"
+    ],
     "dictionaries": [],
     "import": [
         "./cspell-ext.json"
+    ],
+    "words": [
+        "Kimi", "Heinonen", "Gnomovision", "Yoyodyne"
     ]
 }
