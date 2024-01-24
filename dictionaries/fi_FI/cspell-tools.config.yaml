@@ -3,10 +3,10 @@
 targets:
   - name: 'fi-fi'
     sources:
-      - filename: 'src/fi_FI.dic'
-        maxDepth: 1 # This is set to 1 to prevent initial builds from taking too long.
+      - filename: 'src/hunspell/fi_FI.dic'
+      - filename: 'src/additional_words.txt'
     format: 'trie3'
     targetDirectory: './dict'
-    generateNonStrict: 'true'
+    generateNonStrict: true
     compress: false
 checksumFile: true

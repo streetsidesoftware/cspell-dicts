@@ -1,23 +1,16 @@
-// cSpell Settings
 {
     "id": "fi-fi",
     "version": "0.2",
     "name": "Finnish",
     "description": "Finnish dictionary for cspell.",
     "readonly": true,
-    // List of dictionary files to add to the global list of dictionaries
     "dictionaryDefinitions": [
         {
             "name": "fi-fi",
-            "path": "./dict/fi-fi.trie",
+            "path": "./dict/fi-fi.trie.gz",
             "description": "Finnish dictionary for cspell."
         }
     ],
-    // Dictionaries to always be used.
-    // Generally left empty
-    "dictionaries": [],
-    // Language Rules to apply to matching files.
-    // Files are matched on `languageId` and `locale`
     "languageSettings": [
         {
             // VSCode languageId. i.e. typescript, java, go, cpp, javascript, markdown, latex
@@ -25,20 +18,9 @@
             "languageId": "*",
             // Language locale. i.e. en-US, de-AT, or ru. * will match all locales.
             // Multiple locales can be specified like: "en, en-US" to match both English and English US.
-            "locale": "fi",
-            // By default the whole text of a file is included for spell checking
-            // Adding patterns to the "includeRegExpList" to only include matching patterns
-            "includeRegExpList": [],
-            // To exclude patterns, add them to "ignoreRegExpList"
-            "ignoreRegExpList": [],
-            // regex patterns than can be used with ignoreRegExpList or includeRegExpList
-            // Example: "pattern": [{ "name": "mdash", "pattern": "&mdash;" }]
-            // This could be included in "ignoreRegExpList": ["mdash"]
-            "patterns": [],
+            "locale": "fi,fi-fi",
             // List of dictionaries to enable by name in `dictionaryDefinitions`
-            "dictionaries": ["fi-fi"],
-            // Dictionary definitions can also be supplied here. They are only used iff "languageId" and "locale" match.
-            "dictionaryDefinitions": []
+            "dictionaries": ["fi-fi"]
         }
     ]
 }
