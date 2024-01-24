@@ -15,7 +15,7 @@
     "build:conditional": "pnpm run sync && pnpm build --conditional",
     "sync": "shx rm -rf src/wordlist-medicalterms-en && shx cp -r node_modules/wordlist-medicalterms-en src/",
     "test": "cspell samples --no-progress",
-    "gz": "cspell-tools-cli gzip \"dict/*.txt\"",
+    "gz": "cspell-tools-cli gzip \"dict/*.trie\"",
     "prepublishOnly": "echo pre-publish",
     "prepare:dictionary": "pnpm run build"
   },
@@ -37,7 +37,7 @@
   },
   "homepage": "https://github.com/streetsidesoftware/cspell-dicts/blob/main/dictionaries/medicalterms#readme",
   "files": [
-    "dict/medicalterms-en.txt.gz",
+    "dict/medicalterms-en.trie.gz",
     "src/wordlist-medicalterms-en/LICENSE",
     "src/wordlist-medicalterms-en/README.md",
     "!dict/README.md",
