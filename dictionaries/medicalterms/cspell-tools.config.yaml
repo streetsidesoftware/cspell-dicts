@@ -3,8 +3,8 @@
 $schema: https://raw.githubusercontent.com/streetsidesoftware/cspell/main/packages/cspell-tools/cspell-tools.config.schema.json
 targets:
   - name: medicalterms-en.txt
-    targetDirectory: .
-    compress: true
+    targetDirectory: ./dict
+    compress: false
     format: plaintext
     sources:
       - src/wordlist-medicalterms-en/wordlist.txt
