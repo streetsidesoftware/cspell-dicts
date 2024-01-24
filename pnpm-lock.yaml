@@ -24,8 +24,8 @@ importers:
         specifier: ^3.2.1
         version: 3.2.1(@lerna-lite/exec@3.2.1)(@lerna-lite/publish@3.2.1)
       ava:
-        specifier: ^6.0.1
-        version: 6.0.1
+        specifier: ^6.1.0
+        version: 6.1.0
       cpy-cli:
         specifier: ^5.0.0
         version: 5.0.0
@@ -72,8 +72,8 @@ importers:
   cspell-dict-file-checker:
     dependencies:
       ava:
-        specifier: ^6.0.1
-        version: 6.0.1
+        specifier: ^6.1.0
+        version: 6.1.0
       cspell:
         specifier: ^8.3.2
         version: 8.3.2
@@ -824,13 +824,14 @@ packages:
       '@lerna-lite/run': 3.2.1(@lerna-lite/exec@3.2.1)(@lerna-lite/publish@3.2.1)
       '@lerna-lite/version': 3.2.1(@lerna-lite/exec@3.2.1)(@lerna-lite/publish@3.2.1)(@lerna-lite/run@3.2.1)
       dedent: 1.5.1
-      dotenv: 16.3.2
+      dotenv: 16.4.0
       import-local: 3.1.0
       load-json-file: 7.0.1
       npmlog: 7.0.1
       yargs: 17.7.2
     transitivePeerDependencies:
       - babel-plugin-macros
+      - bluebird
       - supports-color
       - typescript
     dev: true
@@ -839,7 +840,7 @@ packages:
     resolution: {integrity: sha512-vqH4bpg0vaAPwzDGnyTR4RRjffZDhuSRJSa+lKhGH5NymM15KskB2HGZtRvSutX2Q5MZExTQ9IijWz7l139gaA==}
     engines: {node: ^18.0.0 || >=20.0.0}
     dependencies:
-      '@npmcli/run-script': 7.0.3
+      '@npmcli/run-script': 7.0.4
       chalk: 5.3.0
       clone-deep: 4.0.1
       config-chain: 1.1.13
@@ -867,6 +868,7 @@ packages:
       write-pkg: 6.0.1
     transitivePeerDependencies:
       - babel-plugin-macros
+      - bluebird
       - supports-color
       - typescript
     dev: true
@@ -880,7 +882,7 @@ packages:
       '@lerna-lite/filter-packages': 3.2.1
       '@lerna-lite/profiler': 3.2.1
       chalk: 5.3.0
-      dotenv: 16.3.2
+      dotenv: 16.4.0
       npmlog: 7.0.1
       p-map: 7.0.1
     transitivePeerDependencies:
@@ -890,6 +892,7 @@ packages:
       - '@lerna-lite/version'
       - '@lerna-lite/watch'
       - babel-plugin-macros
+      - bluebird
       - supports-color
       - typescript
     dev: true
@@ -903,6 +906,7 @@ packages:
       npmlog: 7.0.1
     transitivePeerDependencies:
       - babel-plugin-macros
+      - bluebird
       - supports-color
       - typescript
     dev: true
@@ -917,6 +921,7 @@ packages:
       write-json-file: 5.0.0
     transitivePeerDependencies:
       - babel-plugin-macros
+      - bluebird
       - supports-color
       - typescript
     dev: true
@@ -931,6 +936,7 @@ packages:
       upath: 2.0.1
     transitivePeerDependencies:
       - babel-plugin-macros
+      - bluebird
       - supports-color
       - typescript
     dev: true
@@ -995,6 +1001,7 @@ packages:
       - '@lerna-lite/version'
       - '@lerna-lite/watch'
       - babel-plugin-macros
+      - bluebird
       - supports-color
       - typescript
     dev: true
@@ -1042,6 +1049,7 @@ packages:
       - '@lerna-lite/run'
       - '@lerna-lite/watch'
       - babel-plugin-macros
+      - bluebird
       - supports-color
       - typescript
     dev: true
@@ -1113,7 +1121,7 @@ packages:
       '@npmcli/node-gyp': 3.0.0
       '@npmcli/package-json': 5.0.0
       '@npmcli/query': 3.0.1
-      '@npmcli/run-script': 7.0.3
+      '@npmcli/run-script': 7.0.4
       bin-links: 4.0.3
       cacache: 18.0.2
       common-ancestor-path: 1.0.1
@@ -1225,16 +1233,17 @@ packages:
     dependencies:
       postcss-selector-parser: 6.0.15
 
-  /@npmcli/run-script@7.0.3:
-    resolution: {integrity: sha512-ZMWGLHpzMq3rBGIwPyeaoaleaLMvrBrH8nugHxTi5ACkJZXTxXPtVuEH91ifgtss5hUwJQ2VDnzDBWPmz78rvg==}
+  /@npmcli/run-script@7.0.4:
+    resolution: {integrity: sha512-9ApYM/3+rBt9V80aYg6tZfzj3UWdiYyCt7gJUD1VJKvWF5nwKDSICXbYIQbspFTq6TOpbsEtIC0LArB8d9PFmg==}
     engines: {node: ^16.14.0 || >=18.0.0}
     dependencies:
       '@npmcli/node-gyp': 3.0.0
+      '@npmcli/package-json': 5.0.0
       '@npmcli/promise-spawn': 7.0.1
       node-gyp: 10.0.1
-      read-package-json-fast: 3.0.2
       which: 4.0.0
     transitivePeerDependencies:
+      - bluebird
       - supports-color
 
   /@octokit/auth-token@2.5.0:
@@ -1636,18 +1645,18 @@ packages:
     resolution: {integrity: sha512-nG96G3Wp6acyAgJqGasjODb+acrI7KltPiRxzHPXnP3NgI28bpQDRv53olbqGXbfcgF5aiiHmO3xpwEpS5Ld9g==}
     dev: true
 
-  /@types/node@16.18.73:
-    resolution: {integrity: sha512-GaTgwUNzESSlX9uhTX2RQcwj2KBf/Wda+52TTtuMpgzR2Rvw7NNypQ8BJdc5Wk6osxZHcUZAKip5PtqWsUl31Q==}
+  /@types/node@16.18.75:
+    resolution: {integrity: sha512-+FSfZd5mpMDTcIK7bp2GueIcAespzR4FROOXnEst248c85vwthIEwtXYOLgVc/sI4ihE1K/7yO1lEiSgvwAOxA==}
     dev: false
 
-  /@types/node@18.19.8:
-    resolution: {integrity: sha512-g1pZtPhsvGVTwmeVoexWZLTQaOvXwoSq//pTL0DHeNzUDrFnir4fgETdhjhIxjVnN+hKOuh98+E1eMLnUXstFg==}
+  /@types/node@18.19.9:
+    resolution: {integrity: sha512-oZFKlC8l5YtzGQNT4zC2PiSSKzQVZ8bAwwd+EYdPLtyk0nSEq6O16SkK+rkkT2eflDAbormJgEF3QnH3oDrTSw==}
     dependencies:
       undici-types: 5.26.5
     dev: false
 
-  /@types/node@20.11.5:
-    resolution: {integrity: sha512-g557vgQjUUfN76MZAN/dt1z3dzcUsimuysco0KeluHgrPdJXkP/XdAURgyO2W9fZWHRtRBiVKzKn8vyOAwlG+w==}
+  /@types/node@20.11.6:
+    resolution: {integrity: sha512-+EOokTnksGVgip2PbYbr3xnR7kZigh4LbybAfBAw5BpnQ+FqBYUsvCEjYd70IXKlbohQ64mzEYmMtlWUY8q//Q==}
     dependencies:
       undici-types: 5.26.5
     dev: false
@@ -1662,7 +1671,7 @@ packages:
   /@types/through@0.0.33:
     resolution: {integrity: sha512-HsJ+z3QuETzP3cswwtzt2vEIiHBk/dCcHGhbmG5X3ecnwFD/lPrMpliGXxSCg03L9AhrdwA4Oz/qfspkDW+xGQ==}
     dependencies:
-      '@types/node': 20.11.5
+      '@types/node': 20.11.6
     dev: false
 
   /@types/unist@2.0.10:
@@ -1677,7 +1686,7 @@ packages:
     resolution: {integrity: sha512-vPXzCLmRp74e9LsP8oltnWKTH+jBwt86WgRUb4Pc9Lf3pkMVGyvIo2gm9bODeGfCay2DBB/hAWDuvf07JcK4rw==}
     dependencies:
       '@types/expect': 1.20.4
-      '@types/node': 20.11.5
+      '@types/node': 20.11.6
     dev: false
 
   /@ungap/structured-clone@1.2.0:
@@ -1727,7 +1736,7 @@ packages:
       '@yeoman/types': ^1.0.0
       mem-fs: ^4.0.0
     dependencies:
-      '@types/node': 16.18.73
+      '@types/node': 16.18.75
       '@yeoman/transform': 1.2.0
       '@yeoman/types': 1.1.2(@types/inquirer@9.0.7)(mem-fs@4.0.0)
       binary-extensions: 2.2.0
@@ -1752,7 +1761,7 @@ packages:
     resolution: {integrity: sha512-evb/+2XMEBoHr4BxBeFkjeVTgTS4Qe7VH8DmzZ9kgJK7C7ACPAhW/qBdsKKP1sb5MoeITSaJSVFnc8S1fjZmcw==}
     engines: {node: ^16.13.0 || >=18.12.0}
     dependencies:
-      '@types/node': 16.18.73
+      '@types/node': 16.18.75
       minimatch: 9.0.3
       readable-stream: 4.5.2
     dev: false
@@ -1774,7 +1783,7 @@ packages:
         optional: true
     dependencies:
       '@types/inquirer': 9.0.7
-      '@types/node': 16.18.73
+      '@types/node': 16.18.75
       mem-fs: 4.0.0
     dev: false
 
@@ -1948,8 +1957,8 @@ packages:
     resolution: {integrity: sha512-baNZyqaaLhyLVKm/DlvdW051MSgO6b8eVfIezl9E5PqWxFgzLm/wQntEW4zOytVburDEr0JlALEpdOFwvErLsg==}
     dev: false
 
-  /ava@6.0.1:
-    resolution: {integrity: sha512-9zR0wOwlcJdOWwHOKnpi0GrPRLTlxDFapGalP4rGD0oQRKxDVoucBBWvxVQ/2cPv10Hx1PkDXLJH5iUzhPn0/g==}
+  /ava@6.1.0:
+    resolution: {integrity: sha512-0fOQIWMHT9DYelzTYc3TI/4fmmmJ5LdvRWd6F43CppYfg84VrM5EO+hmlv2cPujMJAWuVesUWVloUu9PIwrgTA==}
     engines: {node: ^18.18 || ^20.8 || ^21}
     hasBin: true
     peerDependencies:
@@ -2272,7 +2281,7 @@ packages:
     engines: {node: '>=18'}
     dependencies:
       slice-ansi: 5.0.0
-      string-width: 7.0.0
+      string-width: 7.1.0
 
   /cli-width@4.1.0:
     resolution: {integrity: sha512-ouuZd4/dm2Sw5Gmqy6bGyNNNe1qt9RpmxveLSO7KcgsTnU7RXfsw+/bukWGo1abgBiMAic068rclZsO4IWmmxQ==}
@@ -2881,8 +2890,8 @@ packages:
     dependencies:
       is-obj: 2.0.0
 
-  /dotenv@16.3.2:
-    resolution: {integrity: sha512-HTlk5nmhkm8F6JcdXvHIzaorzCoziNQT9mGxLPVXW8wJF1TiGSL60ZGB4gHWabHOaMmWmhvk2/lPHfnBiT78AQ==}
+  /dotenv@16.4.0:
+    resolution: {integrity: sha512-WvImr5kpN5NGNn7KaDjJnLTh5rDVLZiDf/YLA8T1ZEZEBZNEDOE+mnkS0PVjPax8ZxBP5zC5SLMB3/9VV5de9g==}
     engines: {node: '>=12'}
     dev: true
 
@@ -4470,7 +4479,7 @@ packages:
       mem-fs: ^4.0.0
     dependencies:
       '@types/ejs': 3.1.5
-      '@types/node': 18.19.8
+      '@types/node': 18.19.9
       binaryextensions: 4.19.0
       commondir: 1.0.1
       deep-extend: 0.6.0
@@ -4489,7 +4498,7 @@ packages:
     resolution: {integrity: sha512-GCt8Xh5cRZ1ep45A8T+NlUYCPHzSj5JG2Xo7CA4Z8ISZ8Ovw0UQhQGt+J/z2xk7M3F9F4X9ZjSYk9UYlLLy4Wg==}
     engines: {node: '>=18.0.0'}
     dependencies:
-      '@types/node': 20.11.5
+      '@types/node': 20.11.6
       '@types/vinyl': 2.0.11
       vinyl: 3.0.0
       vinyl-file: 5.0.0
@@ -5540,7 +5549,7 @@ packages:
     resolution: {integrity: sha512-CsXIiCOeBUYMBLpcY71DTq+fg8268ux31pAxI5TcoYEPfWCw5ozrbgWdZ9QmSDd8dUzvNXtmiwJOdTIxIFptfQ==}
     engines: {node: '>=16.13.0'}
     dependencies:
-      '@types/node': 16.18.73
+      '@types/node': 16.18.75
       p-queue: 7.4.1
       readable-stream: 4.5.2
     dev: false
@@ -5575,7 +5584,7 @@ packages:
       '@npmcli/git': 5.0.4
       '@npmcli/installed-package-contents': 2.0.2
       '@npmcli/promise-spawn': 7.0.1
-      '@npmcli/run-script': 7.0.3
+      '@npmcli/run-script': 7.0.4
       cacache: 18.0.2
       fs-minipass: 3.0.3
       minipass: 7.0.4
@@ -5658,7 +5667,7 @@ packages:
     dependencies:
       '@babel/code-frame': 7.23.5
       index-to-position: 0.1.2
-      type-fest: 4.9.0
+      type-fest: 4.10.1
     dev: false
 
   /parse-ms@3.0.0:
@@ -5869,7 +5878,7 @@ packages:
     dependencies:
       find-up-simple: 1.0.0
       read-pkg: 9.0.1
-      type-fest: 4.9.0
+      type-fest: 4.10.1
     dev: false
 
   /read-pkg-up@10.1.0:
@@ -5878,7 +5887,7 @@ packages:
     dependencies:
       find-up: 6.3.0
       read-pkg: 8.1.0
-      type-fest: 4.9.0
+      type-fest: 4.10.1
     dev: true
 
   /read-pkg@8.1.0:
@@ -5888,7 +5897,7 @@ packages:
       '@types/normalize-package-data': 2.4.4
       normalize-package-data: 6.0.0
       parse-json: 7.1.1
-      type-fest: 4.9.0
+      type-fest: 4.10.1
     dev: true
 
   /read-pkg@9.0.1:
@@ -5898,7 +5907,7 @@ packages:
       '@types/normalize-package-data': 2.4.4
       normalize-package-data: 6.0.0
       parse-json: 8.1.0
-      type-fest: 4.9.0
+      type-fest: 4.10.1
       unicorn-magic: 0.1.0
     dev: false
 
@@ -6327,8 +6336,8 @@ packages:
       emoji-regex: 10.3.0
       strip-ansi: 7.1.0
 
-  /string-width@7.0.0:
-    resolution: {integrity: sha512-GPQHj7row82Hjo9hKZieKcHIhaAIKOJvFSIZXuCU9OASVZrMNUaZuz++SPVrBjnLsnk4k+z9f2EIypgxf2vNFw==}
+  /string-width@7.1.0:
+    resolution: {integrity: sha512-SEIJCWiX7Kg4c129n48aDRwLbFb2LJmXXFrWBG4NGaRtMQ3myKPKbwrD1BKqQn74oCoNMBVrfDEr5M9YxCsrkw==}
     engines: {node: '>=18'}
     dependencies:
       emoji-regex: 10.3.0
@@ -6549,8 +6558,8 @@ packages:
     engines: {node: '>=14.16'}
     dev: true
 
-  /type-fest@4.9.0:
-    resolution: {integrity: sha512-KS/6lh/ynPGiHD/LnAobrEFq3Ad4pBzOlJ1wAnJx9N4EYoqFhMfLIBjUT2UEx4wg5ZE+cC1ob6DCSpppVo+rtg==}
+  /type-fest@4.10.1:
+    resolution: {integrity: sha512-7ZnJYTp6uc04uYRISWtiX3DSKB/fxNQT0B5o1OUeCqiQiwF+JC9+rJiZIDrPrNCLLuTqyQmh4VdQqh/ZOkv9MQ==}
     engines: {node: '>=16'}
 
   /typedarray-to-buffer@3.1.5:
@@ -6927,7 +6936,7 @@ packages:
       deepmerge-ts: 5.1.0
       read-pkg: 8.1.0
       sort-keys: 5.0.0
-      type-fest: 4.9.0
+      type-fest: 4.10.1
       write-json-file: 5.0.0
     dev: true
 
@@ -7016,7 +7025,7 @@ packages:
         optional: true
     dependencies:
       '@types/lodash-es': 4.17.12
-      '@types/node': 18.19.8
+      '@types/node': 18.19.9
       '@yeoman/namespace': 1.0.0
       '@yeoman/types': 1.1.2(@types/inquirer@9.0.7)(mem-fs@4.0.0)
       chalk: 5.3.0
