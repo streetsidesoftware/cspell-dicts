@@ -1,0 +1,54 @@
+{
+  "name": "@cspell/dict-fi-fi",
+  "version": "1.0.0",
+  "description": "Finnish dictionary for cspell. -- Private until verified",
+  "private": true,
+  "publishConfig": {
+    "access": "public"
+  },
+  "exports": {
+    ".": "./cspell-ext.json",
+    "./cspell": "./cspell-ext.json",
+    "./cspell-ext.json": "./cspell-ext.json"
+  },
+  "scripts": {
+    "build": "cspell-tools-cli build",
+    "conditional-build": "pnpm run build --conditional && pnpm gz",
+    "test": "pnpm run test:words && pnpm run test:samples",
+    "test:samples": "cspell samples",
+    "test:words": "hunspell-reader words -n 1000 -m 0 \"src/fi_FI.dic\" | cspell -c ./cspell-ext.json \"--locale=fi\" \"--languageId=*\" stdin",
+    "gz": "cspell-tools-cli gzip \"dict/*.trie\"",
+    "prepare:dictionary": "pnpm gz",
+    "prepublishOnly": "echo OK"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/streetsidesoftware/cspell-dicts.git"
+  },
+  "keywords": [
+    "cspell",
+    "cspell-ext",
+    "fi_FI",
+    "Finnish",
+    "dictionary",
+    "spelling"
+  ],
+  "author": "Street Side Software",
+  "contributors": [
+    "Kimi Heinonen <kimi.heinonen+cspell@gmail.com>"
+  ],
+  "license": "LGPL-3.0",
+  "bugs": {
+    "url": "https://github.com/streetsidesoftware/cspell-dicts/issues"
+  },
+  "homepage": "https://github.com/streetsidesoftware/cspell-dicts/blob/main/dictionaries/fi_FI#readme",
+  "devDependencies": {},
+  "dependencies": {},
+  "files": [
+    "dict/fi-fi.trie.gz",
+    "src/hunspell/LICENSE",
+    "cspell-ext.json",
+    "*.js",
+    "*.d.ts"
+  ]
+}

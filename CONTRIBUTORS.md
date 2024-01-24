@@ -14,6 +14,7 @@
 | Docker             | [Toby Smith](https://github.com/tobysmith568)                                                                 |
 | Elixir             | [Todoroki / U-dory](https://github.com/ndac-todoroki)                                                         |
 | Esperanto          | [Carmen Bianca Bakker](https://github.com/carmenbianca)                                                       |
+| Finnish            | [Kimi Heinonen](https://github.com/NutCr4cker12)                                                              |
 | French             | [canarduck](https://github.com/canarduck)                                                                     |
 | Fullstack          | [rbalet (Raphaël Balet)](https://github.com/rbalet)                                                           |
 | Go                 | [Alexey Palazhchenko](https://github.com/AlekSi)                                                              |
@@ -43,6 +44,7 @@
     cspell:words Federico Jaramillo Martínez
     cspell:words Fullstack
     cspell:words Jordi Olivares Provencio
+    cspell:words Kimi Heinonen
     cspell:words Majid Shamkhani
     cspell:words Noam Ben Shabat
     cspell:words rbalet Raphaël Balet
