@@ -1649,8 +1649,8 @@ packages:
       undici-types: 5.26.5
     dev: false
 
-  /@types/node@20.11.9:
-    resolution: {integrity: sha512-CQXNuMoS/VcoAMISe5pm4JnEd1Br5jildbQEToEMQvutmv+EaQr90ry9raiudgpyDuqFiV9e4rnjSfLNq12M5w==}
+  /@types/node@20.11.10:
+    resolution: {integrity: sha512-rZEfe/hJSGYmdfX9tvcPMYeYPW2sNl50nsw4jZmRcaG0HIAb0WYEpsB05GOb53vjqpyE9GUhlDQ4jLSoB5q9kg==}
     dependencies:
       undici-types: 5.26.5
     dev: false
@@ -1665,7 +1665,7 @@ packages:
   /@types/through@0.0.33:
     resolution: {integrity: sha512-HsJ+z3QuETzP3cswwtzt2vEIiHBk/dCcHGhbmG5X3ecnwFD/lPrMpliGXxSCg03L9AhrdwA4Oz/qfspkDW+xGQ==}
     dependencies:
-      '@types/node': 20.11.9
+      '@types/node': 20.11.10
     dev: false
 
   /@types/unist@2.0.10:
@@ -1680,7 +1680,7 @@ packages:
     resolution: {integrity: sha512-vPXzCLmRp74e9LsP8oltnWKTH+jBwt86WgRUb4Pc9Lf3pkMVGyvIo2gm9bODeGfCay2DBB/hAWDuvf07JcK4rw==}
     dependencies:
       '@types/expect': 1.20.4
-      '@types/node': 20.11.9
+      '@types/node': 20.11.10
     dev: false
 
   /@ungap/structured-clone@1.2.0:
@@ -1979,7 +1979,7 @@ packages:
       concordance: 5.0.4
       currently-unhandled: 0.4.1
       debug: 4.3.4
-      emittery: 1.0.1
+      emittery: 1.0.2
       figures: 6.0.1
       globby: 14.0.0
       ignore-by-default: 2.1.0
@@ -2905,8 +2905,8 @@ packages:
       jake: 10.8.7
     dev: false
 
-  /emittery@1.0.1:
-    resolution: {integrity: sha512-2ID6FdrMD9KDLldGesP6317G78K7km/kMcwItRtVFva7I/cSEOIaLpewaUb+YLXVwdAp3Ctfxh/V5zIl1sj7dQ==}
+  /emittery@1.0.2:
+    resolution: {integrity: sha512-PqHdP6JJrxiSXQzCAzII77dVsfyGWu+7V0ghqkaCej2shF1cnIPeFE9kKZcVTqvBjrRMDVOdNXKEYcjxkznS1g==}
     engines: {node: '>=14.16'}
 
   /emoji-regex@10.3.0:
@@ -4274,7 +4274,7 @@ packages:
       ccount: 2.0.1
       devlop: 1.1.0
       mdast-util-find-and-replace: 3.0.1
-      micromark-util-character: 2.0.1
+      micromark-util-character: 2.1.0
     dev: true
 
   /mdast-util-gfm-footnote@2.0.0:
@@ -4446,7 +4446,7 @@ packages:
     resolution: {integrity: sha512-GCt8Xh5cRZ1ep45A8T+NlUYCPHzSj5JG2Xo7CA4Z8ISZ8Ovw0UQhQGt+J/z2xk7M3F9F4X9ZjSYk9UYlLLy4Wg==}
     engines: {node: '>=18.0.0'}
     dependencies:
-      '@types/node': 20.11.9
+      '@types/node': 20.11.10
       '@types/vinyl': 2.0.11
       vinyl: 3.0.0
       vinyl-file: 5.0.0
@@ -4479,7 +4479,7 @@ packages:
       micromark-factory-space: 2.0.0
       micromark-factory-title: 2.0.0
       micromark-factory-whitespace: 2.0.0
-      micromark-util-character: 2.0.1
+      micromark-util-character: 2.1.0
       micromark-util-chunked: 2.0.0
       micromark-util-classify-character: 2.0.0
       micromark-util-html-tag-name: 2.0.0
@@ -4493,7 +4493,7 @@ packages:
   /micromark-extension-gfm-autolink-literal@2.0.0:
     resolution: {integrity: sha512-rTHfnpt/Q7dEAK1Y5ii0W8bhfJlVJFnJMHIPisfPK3gpVNuOP0VnRl96+YJ3RYWV/P4gFeQoGKNlT3RhuvpqAg==}
     dependencies:
-      micromark-util-character: 2.0.1
+      micromark-util-character: 2.1.0
       micromark-util-sanitize-uri: 2.0.0
       micromark-util-symbol: 2.0.0
       micromark-util-types: 2.0.0
@@ -4505,7 +4505,7 @@ packages:
       devlop: 1.1.0
       micromark-core-commonmark: 2.0.0
       micromark-factory-space: 2.0.0
-      micromark-util-character: 2.0.1
+      micromark-util-character: 2.1.0
       micromark-util-normalize-identifier: 2.0.0
       micromark-util-sanitize-uri: 2.0.0
       micromark-util-symbol: 2.0.0
@@ -4528,7 +4528,7 @@ packages:
     dependencies:
       devlop: 1.1.0
       micromark-factory-space: 2.0.0
-      micromark-util-character: 2.0.1
+      micromark-util-character: 2.1.0
       micromark-util-symbol: 2.0.0
       micromark-util-types: 2.0.0
     dev: true
@@ -4544,7 +4544,7 @@ packages:
     dependencies:
       devlop: 1.1.0
       micromark-factory-space: 2.0.0
-      micromark-util-character: 2.0.1
+      micromark-util-character: 2.1.0
       micromark-util-symbol: 2.0.0
       micromark-util-types: 2.0.0
     dev: true
@@ -4569,7 +4569,7 @@ packages:
       devlop: 1.1.0
       micromark-factory-mdx-expression: 2.0.1
       micromark-factory-space: 2.0.0
-      micromark-util-character: 2.0.1
+      micromark-util-character: 2.1.0
       micromark-util-events-to-acorn: 2.0.2
       micromark-util-symbol: 2.0.0
       micromark-util-types: 2.0.0
@@ -4584,7 +4584,7 @@ packages:
       estree-util-is-identifier-name: 3.0.0
       micromark-factory-mdx-expression: 2.0.1
       micromark-factory-space: 2.0.0
-      micromark-util-character: 2.0.1
+      micromark-util-character: 2.1.0
       micromark-util-symbol: 2.0.0
       micromark-util-types: 2.0.0
       vfile-message: 4.0.2
@@ -4602,7 +4602,7 @@ packages:
       '@types/estree': 1.0.5
       devlop: 1.1.0
       micromark-core-commonmark: 2.0.0
-      micromark-util-character: 2.0.1
+      micromark-util-character: 2.1.0
       micromark-util-events-to-acorn: 2.0.2
       micromark-util-symbol: 2.0.0
       micromark-util-types: 2.0.0
@@ -4626,7 +4626,7 @@ packages:
   /micromark-factory-destination@2.0.0:
     resolution: {integrity: sha512-j9DGrQLm/Uhl2tCzcbLhy5kXsgkHUrjJHg4fFAeoMRwJmJerT9aw4FEhIbZStWN8A3qMwOp1uzHr4UL8AInxtA==}
     dependencies:
-      micromark-util-character: 2.0.1
+      micromark-util-character: 2.1.0
       micromark-util-symbol: 2.0.0
       micromark-util-types: 2.0.0
     dev: true
@@ -4635,7 +4635,7 @@ packages:
     resolution: {integrity: sha512-RR3i96ohZGde//4WSe/dJsxOX6vxIg9TimLAS3i4EhBAFx8Sm5SmqVfR8E87DPSR31nEAjZfbt91OMZWcNgdZw==}
     dependencies:
       devlop: 1.1.0
-      micromark-util-character: 2.0.1
+      micromark-util-character: 2.1.0
       micromark-util-symbol: 2.0.0
       micromark-util-types: 2.0.0
     dev: true
@@ -4645,7 +4645,7 @@ packages:
     dependencies:
       '@types/estree': 1.0.5
       devlop: 1.1.0
-      micromark-util-character: 2.0.1
+      micromark-util-character: 2.1.0
       micromark-util-events-to-acorn: 2.0.2
       micromark-util-symbol: 2.0.0
       micromark-util-types: 2.0.0
@@ -4656,7 +4656,7 @@ packages:
   /micromark-factory-space@2.0.0:
     resolution: {integrity: sha512-TKr+LIDX2pkBJXFLzpyPyljzYK3MtmllMUMODTQJIUfDGncESaqB90db9IAUcz4AZAJFdd8U9zOp9ty1458rxg==}
     dependencies:
-      micromark-util-character: 2.0.1
+      micromark-util-character: 2.1.0
       micromark-util-types: 2.0.0
     dev: true
 
@@ -4664,7 +4664,7 @@ packages:
     resolution: {integrity: sha512-jY8CSxmpWLOxS+t8W+FG3Xigc0RDQA9bKMY/EwILvsesiRniiVMejYTE4wumNc2f4UbAa4WsHqe3J1QS1sli+A==}
     dependencies:
       micromark-factory-space: 2.0.0
-      micromark-util-character: 2.0.1
+      micromark-util-character: 2.1.0
       micromark-util-symbol: 2.0.0
       micromark-util-types: 2.0.0
     dev: true
@@ -4673,13 +4673,13 @@ packages:
     resolution: {integrity: sha512-28kbwaBjc5yAI1XadbdPYHX/eDnqaUFVikLwrO7FDnKG7lpgxnvk/XGRhX/PN0mOZ+dBSZ+LgunHS+6tYQAzhA==}
     dependencies:
       micromark-factory-space: 2.0.0
-      micromark-util-character: 2.0.1
+      micromark-util-character: 2.1.0
       micromark-util-symbol: 2.0.0
       micromark-util-types: 2.0.0
     dev: true
 
-  /micromark-util-character@2.0.1:
-    resolution: {integrity: sha512-3wgnrmEAJ4T+mGXAUfMvMAbxU9RDG43XmGce4j6CwPtVxB3vfwXSZ6KhFwDzZ3mZHhmPimMAXg71veiBGzeAZw==}
+  /micromark-util-character@2.1.0:
+    resolution: {integrity: sha512-KvOVV+X1yLBfs9dCBSopq/+G1PcgT3lAK07mC4BzXi5E7ahzMAF8oIupDDJ6mievI6F+lAATkbQQlQixJfT3aQ==}
     dependencies:
       micromark-util-symbol: 2.0.0
       micromark-util-types: 2.0.0
@@ -4694,7 +4694,7 @@ packages:
   /micromark-util-classify-character@2.0.0:
     resolution: {integrity: sha512-S0ze2R9GH+fu41FA7pbSqNWObo/kzwf8rN/+IGlW/4tC6oACOs8B++bh+i9bVyNnwCcuksbFwsBme5OCKXCwIw==}
     dependencies:
-      micromark-util-character: 2.0.1
+      micromark-util-character: 2.1.0
       micromark-util-symbol: 2.0.0
       micromark-util-types: 2.0.0
     dev: true
@@ -4716,7 +4716,7 @@ packages:
     resolution: {integrity: sha512-r4Sc6leeUTn3P6gk20aFMj2ntPwn6qpDZqWvYmAG6NgvFTIlj4WtrAudLi65qYoaGdXYViXYw2pkmn7QnIFasA==}
     dependencies:
       decode-named-character-reference: 1.0.2
-      micromark-util-character: 2.0.1
+      micromark-util-character: 2.1.0
       micromark-util-decode-numeric-character-reference: 2.0.1
       micromark-util-symbol: 2.0.0
     dev: true
@@ -4757,7 +4757,7 @@ packages:
   /micromark-util-sanitize-uri@2.0.0:
     resolution: {integrity: sha512-WhYv5UEcZrbAtlsnPuChHUAsu/iBPOVaEVsntLBIdpibO0ddy8OzavZz3iL2xVvBZOpolujSliP65Kq0/7KIYw==}
     dependencies:
-      micromark-util-character: 2.0.1
+      micromark-util-character: 2.1.0
       micromark-util-encode: 2.0.0
       micromark-util-symbol: 2.0.0
     dev: true
@@ -4788,7 +4788,7 @@ packages:
       devlop: 1.1.0
       micromark-core-commonmark: 2.0.0
       micromark-factory-space: 2.0.0
-      micromark-util-character: 2.0.1
+      micromark-util-character: 2.1.0
       micromark-util-chunked: 2.0.0
       micromark-util-combine-extensions: 2.0.0
       micromark-util-decode-numeric-character-reference: 2.0.1
