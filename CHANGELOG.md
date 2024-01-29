@@ -1,5 +1,15 @@
 # Release Notes
 
+## [24.2.1](https://github.com/streetsidesoftware/cspell-dicts/compare/cspell-dicts@24.2.0...cspell-dicts@24.2.1) (2024-01-29)
+
+
+### Updates and Bug Fixes
+
+* Add revalidates to shared-additional-words.txt ([#2961](https://github.com/streetsidesoftware/cspell-dicts/issues/2961)) ([41dab92](https://github.com/streetsidesoftware/cspell-dicts/commit/41dab928bd868c906df2e1300174c895e83fa0d0))
+* **software-terms:** voxel ([#2959](https://github.com/streetsidesoftware/cspell-dicts/issues/2959)) ([dc4644f](https://github.com/streetsidesoftware/cspell-dicts/commit/dc4644f83e4b1b14e99c89995b59e3b246daa281))
+* Workflow Bot -- Build Dictionaries ([#2963](https://github.com/streetsidesoftware/cspell-dicts/issues/2963)) ([e5b5682](https://github.com/streetsidesoftware/cspell-dicts/commit/e5b5682e112fe8f888a399016932972fc7763aa2))
+* Workflow Bot -- Build Dictionaries ([#2965](https://github.com/streetsidesoftware/cspell-dicts/issues/2965)) ([6fe573a](https://github.com/streetsidesoftware/cspell-dicts/commit/6fe573a249fad8128bdc186e90900dc5edc98955))
+
 ## [24.2.0](https://github.com/streetsidesoftware/cspell-dicts/compare/cspell-dicts@24.1.3...cspell-dicts@24.2.0) (2024-01-24)
 
 
