@@ -1,5 +1,12 @@
 # Change Log
 
+## [1.0.10](https://github.com/streetsidesoftware/cspell-dicts/compare/@cspell/dict-en-shared@1.0.9...@cspell/dict-en-shared@1.0.10) (2024-01-29)
+
+
+### Updates and Bug Fixes
+
+* Add revalidates to shared-additional-words.txt ([#2961](https://github.com/streetsidesoftware/cspell-dicts/issues/2961)) ([41dab92](https://github.com/streetsidesoftware/cspell-dicts/commit/41dab928bd868c906df2e1300174c895e83fa0d0))
+
 ## [1.0.9](https://github.com/streetsidesoftware/cspell-dicts/compare/@cspell/dict-en-shared@1.0.8...@cspell/dict-en-shared@1.0.9) (2023-12-30)
 
 
