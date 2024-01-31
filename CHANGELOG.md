@@ -1,5 +1,14 @@
 # Release Notes
 
+## [24.2.2](https://github.com/streetsidesoftware/cspell-dicts/compare/cspell-dicts@24.2.1...cspell-dicts@24.2.2) (2024-01-31)
+
+
+### Updates and Bug Fixes
+
+* Fix spelling of compatiblity in CPP word list (to compatibility) ([#2969](https://github.com/streetsidesoftware/cspell-dicts/issues/2969)) ([72eed78](https://github.com/streetsidesoftware/cspell-dicts/commit/72eed780b32b7ad50a106f95521ee75f11324bd0))
+* Fix spelling of subsytem in CPP word list (to subsystem) ([#2970](https://github.com/streetsidesoftware/cspell-dicts/issues/2970)) ([b44c424](https://github.com/streetsidesoftware/cspell-dicts/commit/b44c424eff09d92e8f7364be452379f5054fc34d))
+* Workflow Bot -- Build Dictionaries ([#2972](https://github.com/streetsidesoftware/cspell-dicts/issues/2972)) ([27100c0](https://github.com/streetsidesoftware/cspell-dicts/commit/27100c0aa654625b2ba3dfdf9785d341ee0d821a))
+
 ## [24.2.1](https://github.com/streetsidesoftware/cspell-dicts/compare/cspell-dicts@24.2.0...cspell-dicts@24.2.1) (2024-01-29)
 
 
