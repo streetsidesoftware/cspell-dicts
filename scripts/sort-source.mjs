@@ -82,7 +82,7 @@ async function findFiles(globs, options) {
     };
     const files = await globby(
         globs.map((a) => a.trim()).filter((a) => !!a),
-        globOptions
+        globOptions,
     );
     return files;
 }
