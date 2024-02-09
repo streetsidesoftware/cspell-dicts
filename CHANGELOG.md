@@ -1,5 +1,20 @@
 # Release Notes
 
+## [24.3.0](https://github.com/streetsidesoftware/cspell-dicts/compare/cspell-dicts@24.2.2...cspell-dicts@24.3.0) (2024-02-09)
+
+
+### Features
+
+* Latin Dictionary ([#2984](https://github.com/streetsidesoftware/cspell-dicts/issues/2984)) ([cd131d0](https://github.com/streetsidesoftware/cspell-dicts/commit/cd131d0a5fa29b3133c7c12d0afe65e05b8a41e3))
+
+
+### Updates and Bug Fixes
+
+* add typeahead to software terms ([#2978](https://github.com/streetsidesoftware/cspell-dicts/issues/2978)) ([3e8d2ed](https://github.com/streetsidesoftware/cspell-dicts/commit/3e8d2ed3fad0f35d57d791d10dd71f94e7bfea86))
+* Adjust license and prepare to publish ([#2987](https://github.com/streetsidesoftware/cspell-dicts/issues/2987)) ([53b9469](https://github.com/streetsidesoftware/cspell-dicts/commit/53b9469d8e2521f433a4c3bc2b8fc067b8258f3a))
+* Workflow Bot -- Build Dictionaries ([#2982](https://github.com/streetsidesoftware/cspell-dicts/issues/2982)) ([28d4083](https://github.com/streetsidesoftware/cspell-dicts/commit/28d4083c238b330772186ff7bb25f8ace97e8e61))
+* Workflow Bot -- Build Dictionaries ([#2988](https://github.com/streetsidesoftware/cspell-dicts/issues/2988)) ([5004d32](https://github.com/streetsidesoftware/cspell-dicts/commit/5004d32f8a290446ce7172a9f4975cc2ce21235e))
+
 ## [24.2.2](https://github.com/streetsidesoftware/cspell-dicts/compare/cspell-dicts@24.2.1...cspell-dicts@24.2.2) (2024-01-31)
 
 

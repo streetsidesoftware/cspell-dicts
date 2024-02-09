@@ -22,6 +22,13 @@ See [Conventional Commits](https://conventionalcommits.org) for commit guideline
 
 
 
+## [4.0.6](https://github.com/streetsidesoftware/cspell-dicts/compare/@cspell/dict-php@4.0.5...@cspell/dict-php@4.0.6) (2024-02-09)
+
+
+### Updates and Bug Fixes
+
+* Workflow Bot -- Build Dictionaries ([#2982](https://github.com/streetsidesoftware/cspell-dicts/issues/2982)) ([28d4083](https://github.com/streetsidesoftware/cspell-dicts/commit/28d4083c238b330772186ff7bb25f8ace97e8e61))
+
 ## [4.0.5](https://github.com/streetsidesoftware/cspell-dicts/compare/@cspell/dict-php@4.0.4...@cspell/dict-php@4.0.5) (2023-12-25)
 
 
