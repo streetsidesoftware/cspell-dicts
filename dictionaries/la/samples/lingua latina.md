@@ -7,3 +7,7 @@ Cum populi rei publicae Romanae et imperii Romani lingua Latina in rebus publici
 Usus linguae Latinae continuo ab antiquitate usque ad tempora hodierna extenditur. Saeculis VII-IX multas peperit linguas quae linguae Romanicae vocantur, sicut Catalanam, Dacoromanicam, Francogallicam, Gallaicam, Hispanicam, Italianam, Lusitanam, ne omnes afferantur.
 
 Ex tempore rerum novarum Francicarum, quamquam Ecclesia Catholica Romana nec non institutiones academicae saeculares adhuc lingua Latina utuntur, lingua mortua appellari solet, praesertim nationalismi causa, quia ex saeculo duodevicesimo patrius sermo esse gradatim desiit. Attamen hodie multi homines Latine loqui sciunt. Quin etiam Finlandia iam plus viginti annos undis radiophonicis nuntios emittere pergit, sedes Latinae interretiales multiplicantur ac conventus internationales, quorum participes solo hoc sermone utuntur. 
+
+<!---
+cspell:ignore Indoeuropaea nationalismi Finlandia radiophonicis interretiales Anglicae Catalanam Dacoromanicam Francogallicam Italianam Vicipaedia
+--->
