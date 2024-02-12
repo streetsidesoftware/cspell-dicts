@@ -13,16 +13,16 @@ importers:
         version: 8.3.2
       '@lerna-lite/cli':
         specifier: ^3.2.1
-        version: 3.2.1(@lerna-lite/exec@3.2.1)(@lerna-lite/publish@3.2.1)(@lerna-lite/run@3.2.1)(@lerna-lite/version@3.2.1)
+        version: 3.2.1(@lerna-lite/exec@3.3.0)(@lerna-lite/publish@3.2.1)(@lerna-lite/run@3.2.1)(@lerna-lite/version@3.2.1)
       '@lerna-lite/exec':
         specifier: ^3.2.1
-        version: 3.2.1(@lerna-lite/publish@3.2.1)(@lerna-lite/run@3.2.1)
+        version: 3.3.0(@lerna-lite/publish@3.2.1)(@lerna-lite/run@3.2.1)
       '@lerna-lite/publish':
         specifier: ^3.2.1
-        version: 3.2.1(@lerna-lite/exec@3.2.1)(@lerna-lite/run@3.2.1)
+        version: 3.2.1(@lerna-lite/exec@3.3.0)(@lerna-lite/run@3.2.1)
       '@lerna-lite/run':
         specifier: ^3.2.1
-        version: 3.2.1(@lerna-lite/exec@3.2.1)(@lerna-lite/publish@3.2.1)
+        version: 3.2.1(@lerna-lite/exec@3.3.0)(@lerna-lite/publish@3.2.1)
       ava:
         specifier: ^6.1.1
         version: 6.1.1
@@ -162,7 +162,7 @@ importers:
         version: link:../en_shared
       aoo-mozilla-en-dict:
         specifier: github:marcoagpinto/aoo-mozilla-en-dict
-        version: github.com/marcoagpinto/aoo-mozilla-en-dict/3fd1d8a05ca7e28888eaf92eee5b43f363f98d27
+        version: git@github.com+marcoagpinto/aoo-mozilla-en-dict/3fd1d8a05ca7e28888eaf92eee5b43f363f98d27
 
   dictionaries/en_CA:
     devDependencies:
@@ -171,7 +171,7 @@ importers:
         version: link:../en_shared
       aoo-mozilla-en-dict:
         specifier: github:marcoagpinto/aoo-mozilla-en-dict
-        version: github.com/marcoagpinto/aoo-mozilla-en-dict/3fd1d8a05ca7e28888eaf92eee5b43f363f98d27
+        version: git@github.com+marcoagpinto/aoo-mozilla-en-dict/3fd1d8a05ca7e28888eaf92eee5b43f363f98d27
 
   dictionaries/en_GB:
     devDependencies:
@@ -180,7 +180,7 @@ importers:
         version: link:../en_shared
       aoo-mozilla-en-dict:
         specifier: github:marcoagpinto/aoo-mozilla-en-dict
-        version: github.com/marcoagpinto/aoo-mozilla-en-dict/3fd1d8a05ca7e28888eaf92eee5b43f363f98d27
+        version: git@github.com+marcoagpinto/aoo-mozilla-en-dict/3fd1d8a05ca7e28888eaf92eee5b43f363f98d27
 
   dictionaries/en_GB-MIT:
     devDependencies:
@@ -195,7 +195,7 @@ importers:
         version: link:../en_shared
       aoo-mozilla-en-dict:
         specifier: github:marcoagpinto/aoo-mozilla-en-dict
-        version: github.com/marcoagpinto/aoo-mozilla-en-dict/3fd1d8a05ca7e28888eaf92eee5b43f363f98d27
+        version: git@github.com+marcoagpinto/aoo-mozilla-en-dict/3fd1d8a05ca7e28888eaf92eee5b43f363f98d27
 
   dictionaries/en_shared: {}
 
@@ -239,7 +239,7 @@ importers:
     devDependencies:
       go-words:
         specifier: github:AlekSi/go-words
-        version: github.com/AlekSi/go-words/b118b08691a30334ec87f4de26c5707405fb93dd
+        version: git@github.com+AlekSi/go-words/b118b08691a30334ec87f4de26c5707405fb93dd
 
   dictionaries/haskell: {}
 
@@ -291,7 +291,7 @@ importers:
     devDependencies:
       wordlist-medicalterms-en:
         specifier: github:Glutanimate/wordlist-medicalterms-en#d87b48e
-        version: github.com/Glutanimate/wordlist-medicalterms-en/d87b48e
+        version: git@github.com+Glutanimate/wordlist-medicalterms-en/d87b48e
 
   dictionaries/mnemonics: {}
 
@@ -794,7 +794,7 @@ packages:
     resolution: {integrity: sha512-GaHYm+c0O9MjZRu0ongGBRbinu8gVAMd2UZjji6jVmqKtZluZnptXGWhz1E8j8D2HJ3f/yMxKAUC0b+57wncIw==}
     dev: false
 
-  /@lerna-lite/cli@3.2.1(@lerna-lite/exec@3.2.1)(@lerna-lite/publish@3.2.1)(@lerna-lite/run@3.2.1)(@lerna-lite/version@3.2.1):
+  /@lerna-lite/cli@3.2.1(@lerna-lite/exec@3.3.0)(@lerna-lite/publish@3.2.1)(@lerna-lite/run@3.2.1)(@lerna-lite/version@3.2.1):
     resolution: {integrity: sha512-aF7lfe+TOmL+YxaKgJcHCfFT/nZ3ZI+icZTEVM80LaEIhVvgBJZSqabGFu1PbQ9onvBdKX2/FYaWhJz+fO7cIQ==}
     engines: {node: ^18.0.0 || >=20.0.0}
     hasBin: true
@@ -820,11 +820,54 @@ packages:
         optional: true
     dependencies:
       '@lerna-lite/core': 3.2.1
-      '@lerna-lite/exec': 3.2.1(@lerna-lite/publish@3.2.1)(@lerna-lite/run@3.2.1)
+      '@lerna-lite/exec': 3.3.0(@lerna-lite/publish@3.2.1)(@lerna-lite/run@3.2.1)
       '@lerna-lite/init': 3.2.1
-      '@lerna-lite/publish': 3.2.1(@lerna-lite/exec@3.2.1)(@lerna-lite/run@3.2.1)
-      '@lerna-lite/run': 3.2.1(@lerna-lite/exec@3.2.1)(@lerna-lite/publish@3.2.1)
-      '@lerna-lite/version': 3.2.1(@lerna-lite/exec@3.2.1)(@lerna-lite/publish@3.2.1)(@lerna-lite/run@3.2.1)
+      '@lerna-lite/publish': 3.2.1(@lerna-lite/exec@3.3.0)(@lerna-lite/run@3.2.1)
+      '@lerna-lite/run': 3.2.1(@lerna-lite/exec@3.3.0)(@lerna-lite/publish@3.2.1)
+      '@lerna-lite/version': 3.2.1(@lerna-lite/exec@3.3.0)(@lerna-lite/publish@3.2.1)(@lerna-lite/run@3.2.1)
+      dedent: 1.5.1
+      dotenv: 16.4.1
+      import-local: 3.1.0
+      load-json-file: 7.0.1
+      npmlog: 7.0.1
+      yargs: 17.7.2
+    transitivePeerDependencies:
+      - babel-plugin-macros
+      - bluebird
+      - supports-color
+      - typescript
+    dev: true
+
+  /@lerna-lite/cli@3.3.0(@lerna-lite/exec@3.3.0)(@lerna-lite/publish@3.2.1)(@lerna-lite/run@3.2.1):
+    resolution: {integrity: sha512-u3JG4576T0oex9TDIJoB1QOMwZ14FB4h1sae1/FtTUUhPis1loyvdlr2zw2HvPpCtMhv+JTGYpsjslQNFfWigA==}
+    engines: {node: ^18.0.0 || >=20.0.0}
+    hasBin: true
+    peerDependencies:
+      '@lerna-lite/exec': '*'
+      '@lerna-lite/list': '*'
+      '@lerna-lite/publish': '*'
+      '@lerna-lite/run': '*'
+      '@lerna-lite/version': '*'
+      '@lerna-lite/watch': '*'
+    peerDependenciesMeta:
+      '@lerna-lite/exec':
+        optional: true
+      '@lerna-lite/list':
+        optional: true
+      '@lerna-lite/publish':
+        optional: true
+      '@lerna-lite/run':
+        optional: true
+      '@lerna-lite/version':
+        optional: true
+      '@lerna-lite/watch':
+        optional: true
+    dependencies:
+      '@lerna-lite/core': 3.3.0
+      '@lerna-lite/exec': 3.3.0(@lerna-lite/publish@3.2.1)(@lerna-lite/run@3.2.1)
+      '@lerna-lite/init': 3.3.0
+      '@lerna-lite/publish': 3.2.1(@lerna-lite/exec@3.3.0)(@lerna-lite/run@3.2.1)
+      '@lerna-lite/run': 3.2.1(@lerna-lite/exec@3.3.0)(@lerna-lite/publish@3.2.1)
       dedent: 1.5.1
       dotenv: 16.4.1
       import-local: 3.1.0
@@ -875,14 +918,51 @@ packages:
       - typescript
     dev: true
 
-  /@lerna-lite/exec@3.2.1(@lerna-lite/publish@3.2.1)(@lerna-lite/run@3.2.1):
-    resolution: {integrity: sha512-KPE5aGoQ5ZFwuHWTMy1uQWBWYMA2D4p3p17xihhsSRhDAAXtOXu64JaAlumM4gYgBxDbl+UEYvTt85a3x2FjrA==}
+  /@lerna-lite/core@3.3.0:
+    resolution: {integrity: sha512-IpCIvql2LuJJ6UQpsKlOMtYTz0bSa9Gq/hMGkWeT75lVSa9NICYxBAaSXSkMHvoUEPex+y7XVGm2LYbhVCOzPA==}
     engines: {node: ^18.0.0 || >=20.0.0}
     dependencies:
-      '@lerna-lite/cli': 3.2.1(@lerna-lite/exec@3.2.1)(@lerna-lite/publish@3.2.1)(@lerna-lite/run@3.2.1)(@lerna-lite/version@3.2.1)
-      '@lerna-lite/core': 3.2.1
-      '@lerna-lite/filter-packages': 3.2.1
-      '@lerna-lite/profiler': 3.2.1
+      '@npmcli/run-script': 7.0.4
+      chalk: 5.3.0
+      clone-deep: 4.0.1
+      config-chain: 1.1.13
+      cosmiconfig: 9.0.0
+      dedent: 1.5.1
+      execa: 8.0.1
+      fs-extra: 11.2.0
+      glob-parent: 6.0.2
+      globby: 14.0.0
+      inquirer: 9.2.14
+      is-ci: 3.0.1
+      json5: 2.2.3
+      load-json-file: 7.0.1
+      minimatch: 9.0.3
+      npm-package-arg: 11.0.1
+      npmlog: 7.0.1
+      p-map: 7.0.1
+      p-queue: 8.0.1
+      resolve-from: 5.0.0
+      semver: 7.6.0
+      slash: 5.1.0
+      strong-log-transformer: 2.1.0
+      write-file-atomic: 5.0.1
+      write-json-file: 5.0.0
+      write-pkg: 6.0.1
+    transitivePeerDependencies:
+      - babel-plugin-macros
+      - bluebird
+      - supports-color
+      - typescript
+    dev: true
+
+  /@lerna-lite/exec@3.3.0(@lerna-lite/publish@3.2.1)(@lerna-lite/run@3.2.1):
+    resolution: {integrity: sha512-DSBX0MIieeRGNDl/3Ue1vDE2t9b1t6yhBb+7m8+aLWezKGSYYo7F6Q1sbN08J7vR3Yo0Mj6URgzFb2MqYnBXIw==}
+    engines: {node: ^18.0.0 || >=20.0.0}
+    dependencies:
+      '@lerna-lite/cli': 3.3.0(@lerna-lite/exec@3.3.0)(@lerna-lite/publish@3.2.1)(@lerna-lite/run@3.2.1)
+      '@lerna-lite/core': 3.3.0
+      '@lerna-lite/filter-packages': 3.3.0
+      '@lerna-lite/profiler': 3.3.0
       chalk: 5.3.0
       dotenv: 16.4.1
       npmlog: 7.0.1
@@ -913,11 +993,40 @@ packages:
       - typescript
     dev: true
 
+  /@lerna-lite/filter-packages@3.3.0:
+    resolution: {integrity: sha512-rybTGTEP9ud0IcFKJbnwGw6GSnTFltjA+hmk9KsCS5M48/Cu5GFDMgrIz0OPP7TcAqs/Qu/is1SoJMwLVo8+kg==}
+    engines: {node: ^18.0.0 || >=20.0.0}
+    dependencies:
+      '@lerna-lite/core': 3.3.0
+      multimatch: 7.0.0
+      npmlog: 7.0.1
+    transitivePeerDependencies:
+      - babel-plugin-macros
+      - bluebird
+      - supports-color
+      - typescript
+    dev: true
+
   /@lerna-lite/init@3.2.1:
     resolution: {integrity: sha512-DuEsi4Jii4nmP+c7aID3L5viXkMKhWGKRtI798pcnNjB3dyVN22dZNCDzhiaetMo+ayTsLTe50UDpf5+yxamNg==}
     engines: {node: ^18.0.0 || >=20.0.0}
     dependencies:
       '@lerna-lite/core': 3.2.1
+      fs-extra: 11.2.0
+      p-map: 7.0.1
+      write-json-file: 5.0.0
+    transitivePeerDependencies:
+      - babel-plugin-macros
+      - bluebird
+      - supports-color
+      - typescript
+    dev: true
+
+  /@lerna-lite/init@3.3.0:
+    resolution: {integrity: sha512-lYhswm6lid8GhZ8My93GUhoN/+NW5E+5FwFKInLNUsFaNY7Oxb4kGmIrxShY3uAe0fj6PytohYFJy+IeeEGYoQ==}
+    engines: {node: ^18.0.0 || >=20.0.0}
+    dependencies:
+      '@lerna-lite/core': 3.3.0
       fs-extra: 11.2.0
       p-map: 7.0.1
       write-json-file: 5.0.0
@@ -943,13 +1052,28 @@ packages:
       - typescript
     dev: true
 
-  /@lerna-lite/publish@3.2.1(@lerna-lite/exec@3.2.1)(@lerna-lite/run@3.2.1):
+  /@lerna-lite/profiler@3.3.0:
+    resolution: {integrity: sha512-tjcAIzEpxI4XuCU0loneyi1e6XeG+fk1DIsBTjZBykHac69DEjFjoihfrfQJDpqJD7zqTH/m/o8IQ26ALr/Rng==}
+    engines: {node: ^18.0.0 || >=20.0.0}
+    dependencies:
+      '@lerna-lite/core': 3.3.0
+      fs-extra: 11.2.0
+      npmlog: 7.0.1
+      upath: 2.0.1
+    transitivePeerDependencies:
+      - babel-plugin-macros
+      - bluebird
+      - supports-color
+      - typescript
+    dev: true
+
+  /@lerna-lite/publish@3.2.1(@lerna-lite/exec@3.3.0)(@lerna-lite/run@3.2.1):
     resolution: {integrity: sha512-a9xE0OV6NeM0l+9rKrkmDeDyNg051QKY4a9zJAaiUJKbdn54z6WvHdaq8PUzM627Fg6cTxYdXtP1elodXGPxmA==}
     engines: {node: ^18.0.0 || >=20.0.0}
     dependencies:
-      '@lerna-lite/cli': 3.2.1(@lerna-lite/exec@3.2.1)(@lerna-lite/publish@3.2.1)(@lerna-lite/run@3.2.1)(@lerna-lite/version@3.2.1)
+      '@lerna-lite/cli': 3.2.1(@lerna-lite/exec@3.3.0)(@lerna-lite/publish@3.2.1)(@lerna-lite/run@3.2.1)(@lerna-lite/version@3.2.1)
       '@lerna-lite/core': 3.2.1
-      '@lerna-lite/version': 3.2.1(@lerna-lite/exec@3.2.1)(@lerna-lite/publish@3.2.1)(@lerna-lite/run@3.2.1)
+      '@lerna-lite/version': 3.2.1(@lerna-lite/exec@3.3.0)(@lerna-lite/publish@3.2.1)(@lerna-lite/run@3.2.1)
       '@npmcli/arborist': 7.3.1
       byte-size: 8.1.1
       chalk: 5.3.0
@@ -984,11 +1108,11 @@ packages:
       - typescript
     dev: true
 
-  /@lerna-lite/run@3.2.1(@lerna-lite/exec@3.2.1)(@lerna-lite/publish@3.2.1):
+  /@lerna-lite/run@3.2.1(@lerna-lite/exec@3.3.0)(@lerna-lite/publish@3.2.1):
     resolution: {integrity: sha512-OqxDaLLnTIfg8ovxqrsxYbe3GF2ARmOz/UOGHAhHhEv7+ny9VwDVMq5fvY/u6lJSZPellSJBnTPPvWHFPELOTQ==}
     engines: {node: ^18.0.0 || >=20.0.0}
     dependencies:
-      '@lerna-lite/cli': 3.2.1(@lerna-lite/exec@3.2.1)(@lerna-lite/publish@3.2.1)(@lerna-lite/run@3.2.1)(@lerna-lite/version@3.2.1)
+      '@lerna-lite/cli': 3.2.1(@lerna-lite/exec@3.3.0)(@lerna-lite/publish@3.2.1)(@lerna-lite/run@3.2.1)(@lerna-lite/version@3.2.1)
       '@lerna-lite/core': 3.2.1
       '@lerna-lite/filter-packages': 3.2.1
       '@lerna-lite/profiler': 3.2.1
@@ -1008,11 +1132,11 @@ packages:
       - typescript
     dev: true
 
-  /@lerna-lite/version@3.2.1(@lerna-lite/exec@3.2.1)(@lerna-lite/publish@3.2.1)(@lerna-lite/run@3.2.1):
+  /@lerna-lite/version@3.2.1(@lerna-lite/exec@3.3.0)(@lerna-lite/publish@3.2.1)(@lerna-lite/run@3.2.1):
     resolution: {integrity: sha512-cMXSTOjAQgtsUCPLXna/Uflxbmppkgxa9yulwCnUGsEZP0G8DfvQAaIpb1QOgxy49mFzPpcw51VDt4zfcF0MHA==}
     engines: {node: ^18.0.0 || >=20.0.0}
     dependencies:
-      '@lerna-lite/cli': 3.2.1(@lerna-lite/exec@3.2.1)(@lerna-lite/publish@3.2.1)(@lerna-lite/run@3.2.1)(@lerna-lite/version@3.2.1)
+      '@lerna-lite/cli': 3.2.1(@lerna-lite/exec@3.3.0)(@lerna-lite/publish@3.2.1)(@lerna-lite/run@3.2.1)(@lerna-lite/version@3.2.1)
       '@lerna-lite/core': 3.2.1
       '@octokit/plugin-enterprise-rest': 6.0.1
       '@octokit/rest': 20.0.2
@@ -6819,20 +6943,20 @@ packages:
     resolution: {integrity: sha512-bXE4cR/kVZhKZX/RjPEflHaKVhUVl85noU3v6b8apfQEc1x4A+zBxjZ4lN8LqGd6WZ3dl98pY4o717VFmoPp+A==}
     dev: true
 
-  github.com/AlekSi/go-words/b118b08691a30334ec87f4de26c5707405fb93dd:
-    resolution: {tarball: https://codeload.github.com/AlekSi/go-words/tar.gz/b118b08691a30334ec87f4de26c5707405fb93dd}
+  git@github.com+AlekSi/go-words/b118b08691a30334ec87f4de26c5707405fb93dd:
+    resolution: {commit: b118b08691a30334ec87f4de26c5707405fb93dd, repo: git@github.com:AlekSi/go-words.git, type: git}
     name: go-words
     version: 0.0.0
     dev: true
 
-  github.com/Glutanimate/wordlist-medicalterms-en/d87b48e:
-    resolution: {tarball: https://codeload.github.com/Glutanimate/wordlist-medicalterms-en/tar.gz/d87b48e}
+  git@github.com+Glutanimate/wordlist-medicalterms-en/d87b48e:
+    resolution: {commit: d87b48e, repo: git@github.com:Glutanimate/wordlist-medicalterms-en.git, type: git}
     name: wordlist-medicalterms-en#d87b48e
     version: 0.0.0
     dev: true
 
-  github.com/marcoagpinto/aoo-mozilla-en-dict/3fd1d8a05ca7e28888eaf92eee5b43f363f98d27:
-    resolution: {tarball: https://codeload.github.com/marcoagpinto/aoo-mozilla-en-dict/tar.gz/3fd1d8a05ca7e28888eaf92eee5b43f363f98d27}
+  git@github.com+marcoagpinto/aoo-mozilla-en-dict/3fd1d8a05ca7e28888eaf92eee5b43f363f98d27:
+    resolution: {commit: 3fd1d8a05ca7e28888eaf92eee5b43f363f98d27, repo: git@github.com:marcoagpinto/aoo-mozilla-en-dict.git, type: git}
     name: aoo-mozilla-en-dict
     version: 0.0.0
     dev: true
