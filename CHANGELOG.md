@@ -1,5 +1,13 @@
 # Release Notes
 
+## [24.3.1](https://github.com/streetsidesoftware/cspell-dicts/compare/cspell-dicts@24.3.0...cspell-dicts@24.3.1) (2024-02-19)
+
+
+### Updates and Bug Fixes
+
+* Add `mitigations` to English shared-additional-words.txt ([#2997](https://github.com/streetsidesoftware/cspell-dicts/issues/2997)) ([6441d52](https://github.com/streetsidesoftware/cspell-dicts/commit/6441d5276c86289b700b47e3e36d8dddd07caef2))
+* Workflow Bot -- Build Dictionaries ([#2999](https://github.com/streetsidesoftware/cspell-dicts/issues/2999)) ([be5878e](https://github.com/streetsidesoftware/cspell-dicts/commit/be5878ec21728dfc833917959e549b93d9d0e9b1))
+
 ## [24.3.0](https://github.com/streetsidesoftware/cspell-dicts/compare/cspell-dicts@24.2.2...cspell-dicts@24.3.0) (2024-02-09)
 
 
