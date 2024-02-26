@@ -1,5 +1,12 @@
 # Release Notes
 
+## [24.4.0](https://github.com/streetsidesoftware/cspell-dicts/compare/cspell-dicts@24.3.1...cspell-dicts@24.4.0) (2024-02-26)
+
+
+### Features
+
+* Add a larger Spanish dictionary ([#3011](https://github.com/streetsidesoftware/cspell-dicts/issues/3011)) ([5e327bf](https://github.com/streetsidesoftware/cspell-dicts/commit/5e327bf60b9c2240e930d5a60ee8f78bd05e8cfb))
+
 ## [24.3.1](https://github.com/streetsidesoftware/cspell-dicts/compare/cspell-dicts@24.3.0...cspell-dicts@24.3.1) (2024-02-19)
 
 
