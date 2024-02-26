@@ -1,5 +1,12 @@
 # Release Notes
 
+## [24.4.1](https://github.com/streetsidesoftware/cspell-dicts/compare/cspell-dicts@24.4.0...cspell-dicts@24.4.1) (2024-02-26)
+
+
+### Updates and Bug Fixes
+
+* add deserialise to en_GB ([#3014](https://github.com/streetsidesoftware/cspell-dicts/issues/3014)) ([21398ad](https://github.com/streetsidesoftware/cspell-dicts/commit/21398ad3092f5d94fc0dd3d997e47b41bcfe2b0a))
+
 ## [24.4.0](https://github.com/streetsidesoftware/cspell-dicts/compare/cspell-dicts@24.3.1...cspell-dicts@24.4.0) (2024-02-26)
 
 
