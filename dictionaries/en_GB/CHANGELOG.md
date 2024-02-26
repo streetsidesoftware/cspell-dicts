@@ -3,6 +3,13 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+## [4.1.35](https://github.com/streetsidesoftware/cspell-dicts/compare/@cspell/dict-en-gb@4.1.34...@cspell/dict-en-gb@4.1.35) (2024-02-26)
+
+
+### Updates and Bug Fixes
+
+* add deserialise to en_GB ([#3014](https://github.com/streetsidesoftware/cspell-dicts/issues/3014)) ([21398ad](https://github.com/streetsidesoftware/cspell-dicts/commit/21398ad3092f5d94fc0dd3d997e47b41bcfe2b0a))
+
 ## [4.1.34](https://github.com/streetsidesoftware/cspell-dicts/compare/@cspell/dict-en-gb@4.1.33...@cspell/dict-en-gb@4.1.34) (2024-02-19)
 
 
