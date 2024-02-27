@@ -410,10 +410,10 @@ importers:
         version: 5.3.0
       yeoman-environment:
         specifier: ^4.3.0
-        version: 4.3.0(@yeoman/types@1.1.2)(mem-fs@4.0.0)
+        version: 4.3.0(@yeoman/types@1.1.2)(mem-fs@4.1.0)
       yeoman-generator:
         specifier: ^7.1.1
-        version: 7.1.1(@yeoman/types@1.1.2)(mem-fs@4.0.0)(yeoman-environment@4.3.0)
+        version: 7.1.1(@yeoman/types@1.1.2)(mem-fs@4.1.0)(yeoman-environment@4.3.0)
       yosay:
         specifier: ^3.0.0
         version: 3.0.0
@@ -1717,7 +1717,7 @@ packages:
       '@yeoman/types': ^1.1.0
     dependencies:
       '@types/inquirer': 9.0.7
-      '@yeoman/types': 1.1.2(@types/inquirer@9.0.7)(mem-fs@4.0.0)
+      '@yeoman/types': 1.1.2(@types/inquirer@9.0.7)(mem-fs@4.1.0)
       chalk: 5.3.0
       inquirer: 9.2.15
       log-symbols: 5.1.0
@@ -1726,7 +1726,7 @@ packages:
       text-table: 0.2.0
     dev: false
 
-  /@yeoman/conflicter@2.0.0(@yeoman/types@1.1.2)(mem-fs@4.0.0):
+  /@yeoman/conflicter@2.0.0(@yeoman/types@1.1.2)(mem-fs@4.1.0):
     resolution: {integrity: sha512-DhxzWfHXg+W3AGyWM35L2o4GkQbUcT30f2+l6/2sZGwQcUPyTIR9RDyxrV9pf6YlwUJwvKjL2jLdB2QlJ1mKbg==}
     engines: {node: '>=18.12.0'}
     peerDependencies:
@@ -1735,14 +1735,14 @@ packages:
     dependencies:
       '@types/node': 16.18.83
       '@yeoman/transform': 1.2.0
-      '@yeoman/types': 1.1.2(@types/inquirer@9.0.7)(mem-fs@4.0.0)
+      '@yeoman/types': 1.1.2(@types/inquirer@9.0.7)(mem-fs@4.1.0)
       binary-extensions: 2.2.0
       cli-table: 0.3.11
       dateformat: 5.0.3
       diff: 5.2.0
       isbinaryfile: 5.0.2
-      mem-fs: 4.0.0
-      mem-fs-editor: 11.0.0(mem-fs@4.0.0)
+      mem-fs: 4.1.0
+      mem-fs-editor: 11.0.0(mem-fs@4.1.0)
       minimatch: 9.0.3
       p-transform: 4.1.5
       pretty-bytes: 6.1.1
@@ -1763,7 +1763,7 @@ packages:
       readable-stream: 4.5.2
     dev: false
 
-  /@yeoman/types@1.1.2(@types/inquirer@9.0.7)(mem-fs@4.0.0):
+  /@yeoman/types@1.1.2(@types/inquirer@9.0.7)(mem-fs@4.1.0):
     resolution: {integrity: sha512-/hg8AIU0ZLijHfZWi0vFgWPVWvUJs/tlKeia7Z5sKsWYGCcqsPSHZcnov5bZlpxv8v+vPQ8K9VtTKORtVALsJw==}
     engines: {node: ^16.13.0 || >=18.12.0}
     peerDependencies:
@@ -1781,7 +1781,7 @@ packages:
     dependencies:
       '@types/inquirer': 9.0.7
       '@types/node': 16.18.83
-      mem-fs: 4.0.0
+      mem-fs: 4.1.0
     dev: false
 
   /JSONStream@1.3.5:
@@ -4467,7 +4467,7 @@ packages:
       '@types/mdast': 4.0.3
     dev: true
 
-  /mem-fs-editor@11.0.0(mem-fs@4.0.0):
+  /mem-fs-editor@11.0.0(mem-fs@4.1.0):
     resolution: {integrity: sha512-D9+DPIDohRxYUO95vR3RxJZUNkCmehOHqIoJVm9OxChMadCsNdiTB1nuU4zaHJonUMASYdfKN2USxnB9z0ccXg==}
     engines: {node: '>=18.0.0'}
     peerDependencies:
@@ -4481,7 +4481,7 @@ packages:
       ejs: 3.1.9
       globby: 13.2.2
       isbinaryfile: 5.0.2
-      mem-fs: 4.0.0
+      mem-fs: 4.1.0
       minimatch: 9.0.3
       multimatch: 6.0.0
       normalize-path: 3.0.0
@@ -4489,8 +4489,8 @@ packages:
       vinyl: 3.0.0
     dev: false
 
-  /mem-fs@4.0.0:
-    resolution: {integrity: sha512-GCt8Xh5cRZ1ep45A8T+NlUYCPHzSj5JG2Xo7CA4Z8ISZ8Ovw0UQhQGt+J/z2xk7M3F9F4X9ZjSYk9UYlLLy4Wg==}
+  /mem-fs@4.1.0:
+    resolution: {integrity: sha512-lOB7haBbxO43eZ/++GA+jBMHQ9DNJeliMt35jNutzCfAgEg5gblFCItnzsss8Z4t81bB5jsz77bptqelHQn0Qw==}
     engines: {node: '>=18.0.0'}
     dependencies:
       '@types/node': 20.11.20
@@ -6749,7 +6749,7 @@ packages:
       y18n: 5.0.8
       yargs-parser: 21.1.1
 
-  /yeoman-environment@4.3.0(@yeoman/types@1.1.2)(mem-fs@4.0.0):
+  /yeoman-environment@4.3.0(@yeoman/types@1.1.2)(mem-fs@4.1.0):
     resolution: {integrity: sha512-8cKRpZbOSx4wFP2B8XvZLOuPiYq9okcWuwL99K80QbSPGB7IymwHWyMvtXiv2nbQrNXX9SNRLhzCIY4oSimWcQ==}
     engines: {node: ^18.17.0 || >=20.5.0}
     hasBin: true
@@ -6758,10 +6758,10 @@ packages:
       mem-fs: ^4.0.0
     dependencies:
       '@yeoman/adapter': 1.4.0(@yeoman/types@1.1.2)
-      '@yeoman/conflicter': 2.0.0(@yeoman/types@1.1.2)(mem-fs@4.0.0)
+      '@yeoman/conflicter': 2.0.0(@yeoman/types@1.1.2)(mem-fs@4.1.0)
       '@yeoman/namespace': 1.0.0
       '@yeoman/transform': 1.2.0
-      '@yeoman/types': 1.1.2(@types/inquirer@9.0.7)(mem-fs@4.0.0)
+      '@yeoman/types': 1.1.2(@types/inquirer@9.0.7)(mem-fs@4.1.0)
       arrify: 3.0.0
       chalk: 5.3.0
       commander: 11.1.0
@@ -6772,8 +6772,8 @@ packages:
       grouped-queue: 2.0.0
       locate-path: 7.2.0
       lodash-es: 4.17.21
-      mem-fs: 4.0.0
-      mem-fs-editor: 11.0.0(mem-fs@4.0.0)
+      mem-fs: 4.1.0
+      mem-fs-editor: 11.0.0(mem-fs@4.1.0)
       semver: 7.6.0
       slash: 5.1.0
       untildify: 5.0.0
@@ -6783,7 +6783,7 @@ packages:
       - supports-color
     dev: false
 
-  /yeoman-generator@7.1.1(@yeoman/types@1.1.2)(mem-fs@4.0.0)(yeoman-environment@4.3.0):
+  /yeoman-generator@7.1.1(@yeoman/types@1.1.2)(mem-fs@4.1.0)(yeoman-environment@4.3.0):
     resolution: {integrity: sha512-vQ7ETaKIDmKNtpp97YFabE92ZaOTTs8NOr0wmmszyA1uAc2z5QXNZfU1WtXRFn76BiTf5mHWrOsCDls8N9nD6A==}
     engines: {node: ^18.17.0 || >=20.5.0}
     peerDependencies:
@@ -6797,7 +6797,7 @@ packages:
       '@types/lodash-es': 4.17.12
       '@types/node': 18.19.18
       '@yeoman/namespace': 1.0.0
-      '@yeoman/types': 1.1.2(@types/inquirer@9.0.7)(mem-fs@4.0.0)
+      '@yeoman/types': 1.1.2(@types/inquirer@9.0.7)(mem-fs@4.1.0)
       chalk: 5.3.0
       debug: 4.3.4
       execa: 8.0.1
@@ -6805,15 +6805,15 @@ packages:
       json-schema: 0.4.0
       latest-version: 7.0.0
       lodash-es: 4.17.21
-      mem-fs: 4.0.0
-      mem-fs-editor: 11.0.0(mem-fs@4.0.0)
+      mem-fs: 4.1.0
+      mem-fs-editor: 11.0.0(mem-fs@4.1.0)
       minimist: 1.2.8
       read-package-up: 11.0.0
       semver: 7.6.0
       simple-git: 3.22.0
       sort-keys: 5.0.0
       text-table: 0.2.0
-      yeoman-environment: 4.3.0(@yeoman/types@1.1.2)(mem-fs@4.0.0)
+      yeoman-environment: 4.3.0(@yeoman/types@1.1.2)(mem-fs@4.1.0)
     transitivePeerDependencies:
       - encoding
       - supports-color
