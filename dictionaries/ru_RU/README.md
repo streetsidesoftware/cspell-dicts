@@ -49,7 +49,7 @@ GPL-3.0-or-later
 
 ## Adding Missing Words
 
-Please add words to [additional_words.txt](https://github.com/streetsidesoftware/cspell-dicts/blob/main/dictionaries/src/additional_words.txt)
+Please add words to [additional_words.txt](https://github.com/streetsidesoftware/cspell-dicts/blob/main/dictionaries/ru_RU/src/additional_words.txt)
 
 ## Building
 
