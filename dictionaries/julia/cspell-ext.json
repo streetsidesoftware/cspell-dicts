@@ -2,8 +2,8 @@
 {
     "id": "julia",
     "version": "0.2",
-    "name": "Julia",
-    "description": "Julia dictionary for cspell.",
+    "name": "Julia Dictionary",
+    "description": "Julia function and keyword dictionary",
     "readonly": true,
     // List of dictionary files to add to the global list of dictionaries
     "dictionaryDefinitions": [
@@ -11,7 +11,7 @@
             "name": "julia",
             "path": "./dict/julia.txt",
             "description": "Julia Base function dictionary"
-        }
+        },
         {
             "name": "julia-keywords",
             "path": "./dict/julia-keywords.txt",
