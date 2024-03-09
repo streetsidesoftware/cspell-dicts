@@ -1,7 +1,8 @@
 {
   "name": "@cspell/dict-julia",
   "version": "1.0.0",
-  "description": "Julia dictionary for cspell.",
+  "description": "Julia dictionary for cspell. -- Private until verified",
+  "private": true,
   "publishConfig": {
     "access": "public"
   },
@@ -11,33 +12,38 @@
     "./cspell-ext.json": "./cspell-ext.json"
   },
   "scripts": {
-    "build": "cspell-tools-cli compile --keep-raw-case src/julia.txt --no-compress -o ./dict",
-    "test": "shx head -n 1000 src/julia.txt | cspell -v -c ./cspell-ext.json --locale=* --languageId=julia stdin",
-    "prepublishOnly": "echo pre-publish",
+    "build": "cross-env NODE_OPTIONS=--max_old_space_size=8192 cspell-tools-cli build",
+    "test": "head -n 1000 \"src/julia.txt\" | cspell -v -c ./cspell-ext.json \"--locale=*\" \"--languageId=julia\" stdin",
+    "prepublishOnly": "echo OK",
     "prepare:dictionary": "pnpm run build"
   },
   "repository": {
     "type": "git",
-    "url": "https://github.com/streetsidesoftware/cspell-dict.git",
-    "directory": "dictionaries/julia"
+    "url": "git+https://github.com/streetsidesoftware/cspell-dicts.git"
   },
   "keywords": [
     "cspell",
+    "cspell-ext",
     "julia",
     "Julia",
     "julialang",
     "dictionary",
     "spelling"
   ],
-  "author": "Théo Galy-Fajou",
+  "author": "Street Side Software",
+  "contributors": [],
   "license": "MIT",
   "bugs": {
     "url": "https://github.com/streetsidesoftware/cspell-dicts/issues"
   },
   "homepage": "https://github.com/streetsidesoftware/cspell-dicts/blob/main/dictionaries/julia#readme",
+  "devDependencies": {},
+  "dependencies": {},
   "files": [
     "dict/julia.txt",
     "dict/julia-keywords.txt",
-    "cspell-ext.json"
+    "cspell-ext.json",
+    "*.js",
+    "*.d.ts"
   ]
 }
