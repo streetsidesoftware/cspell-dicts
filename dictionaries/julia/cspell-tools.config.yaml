@@ -4,9 +4,8 @@ targets:
   - name: 'julia'
     sources:
       - filename: 'src/julia.txt'
-        maxDepth: 1 # This is set to 1 to prevent initial builds from taking too long.
       - filename: 'src/julia-keywords.txt'
-        maxDepth: 1
+        split: true
     format: 'plaintext'
     targetDirectory: './dict'
     generateNonStrict: false
