@@ -13,7 +13,9 @@
   },
   "scripts": {
     "build": "cross-env NODE_OPTIONS=--max_old_space_size=8192 cspell-tools-cli build",
-    "test": "head -n 1000 \"src/julia.txt\" | cspell -v -c ./cspell-ext.json \"--locale=*\" \"--languageId=julia\" stdin",
+    "test": "pnpm run test:words && pnpm run test:samples",
+    "test:samples": "cspell samples",
+    "test:words": "head -n 1000 \"src/julia.txt\" | cspell -c ./cspell-ext.json \"--locale=*\" \"--languageId=julia\" stdin",
     "prepublishOnly": "echo OK",
     "prepare:dictionary": "pnpm run build"
   },
