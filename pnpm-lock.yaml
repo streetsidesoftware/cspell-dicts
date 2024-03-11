@@ -411,11 +411,11 @@ importers:
         specifier: ^5.3.0
         version: 5.3.0
       yeoman-environment:
-        specifier: ^4.3.0
-        version: 4.3.0(@yeoman/types@1.1.2)(mem-fs@4.1.0)
+        specifier: ^4.4.0
+        version: 4.4.0(@yeoman/types@1.2.0)(mem-fs@4.1.0)
       yeoman-generator:
         specifier: ^7.1.1
-        version: 7.1.1(@yeoman/types@1.1.2)(mem-fs@4.1.0)(yeoman-environment@4.3.0)
+        version: 7.1.1(@yeoman/types@1.2.0)(mem-fs@4.1.0)(yeoman-environment@4.4.0)
       yosay:
         specifier: ^3.0.0
         version: 3.0.0
@@ -540,7 +540,7 @@ packages:
       gensequence: 7.0.0
       glob: 10.3.10
       hunspell-reader: 8.6.0
-      yaml: 2.4.0
+      yaml: 2.4.1
     transitivePeerDependencies:
       - typescript
     dev: true
@@ -1058,8 +1058,8 @@ packages:
       - typescript
     dev: true
 
-  /@ljharb/through@2.3.12:
-    resolution: {integrity: sha512-ajo/heTlG3QgC8EGP6APIejksVAYt4ayz4tqoP3MolFELzcH1x1fzwEYRJTPO0IELutZ5HQ0c26/GqAYy79u3g==}
+  /@ljharb/through@2.3.13:
+    resolution: {integrity: sha512-/gKJun8NNiWGZJkGzI/Ragc53cOdcLNdzjLaIa+GEjguQs0ulsurx8WN0jijdK9yPqDvziX995sMRLyLt1uZMQ==}
     engines: {node: '>= 0.4'}
     dependencies:
       call-bind: 1.0.7
@@ -1643,18 +1643,18 @@ packages:
     resolution: {integrity: sha512-nG96G3Wp6acyAgJqGasjODb+acrI7KltPiRxzHPXnP3NgI28bpQDRv53olbqGXbfcgF5aiiHmO3xpwEpS5Ld9g==}
     dev: true
 
-  /@types/node@16.18.86:
-    resolution: {integrity: sha512-QMvdZf+ZTSiv7gspwhqbfB7Y5DmbYgCsUnakS8Ul9uRbJQehDKaM7SL+GbcDS003Lh7VK4YlelHsRm9HCv26eA==}
+  /@types/node@16.18.87:
+    resolution: {integrity: sha512-+IzfhNirR/MDbXz6Om5eHV54D9mQlEMGag6AgEzlju0xH3M8baCXYwqQ6RKgGMpn9wSTx6Ltya/0y4Z8eSfdLw==}
     dev: false
 
-  /@types/node@18.19.21:
-    resolution: {integrity: sha512-2Q2NeB6BmiTFQi4DHBzncSoq/cJMLDdhPaAoJFnFCyD9a8VPZRf7a1GAwp1Edb7ROaZc5Jz/tnZyL6EsWMRaqw==}
+  /@types/node@18.19.22:
+    resolution: {integrity: sha512-p3pDIfuMg/aXBmhkyanPshdfJuX5c5+bQjYLIikPLXAUycEogij/c50n/C+8XOA5L93cU4ZRXtn+dNQGi0IZqQ==}
     dependencies:
       undici-types: 5.26.5
     dev: false
 
-  /@types/node@20.11.24:
-    resolution: {integrity: sha512-Kza43ewS3xoLgCEpQrsT+xRo/EJej1y0kVYGiLFE1NEODXGzTfwiC6tXTLMQskn1X4/Rjlh0MQUvx9W+L9long==}
+  /@types/node@20.11.25:
+    resolution: {integrity: sha512-TBHyJxk2b7HceLVGFcpAUjsa5zIdsPWlR6XHfyGzd0SFu+/NFgQgMAl96MSDZgQDvJAvV6BKsFOrt6zIL09JDw==}
     dependencies:
       undici-types: 5.26.5
     dev: false
@@ -1669,7 +1669,7 @@ packages:
   /@types/through@0.0.33:
     resolution: {integrity: sha512-HsJ+z3QuETzP3cswwtzt2vEIiHBk/dCcHGhbmG5X3ecnwFD/lPrMpliGXxSCg03L9AhrdwA4Oz/qfspkDW+xGQ==}
     dependencies:
-      '@types/node': 20.11.24
+      '@types/node': 20.11.25
     dev: false
 
   /@types/unist@2.0.10:
@@ -1684,7 +1684,7 @@ packages:
     resolution: {integrity: sha512-vPXzCLmRp74e9LsP8oltnWKTH+jBwt86WgRUb4Pc9Lf3pkMVGyvIo2gm9bODeGfCay2DBB/hAWDuvf07JcK4rw==}
     dependencies:
       '@types/expect': 1.20.4
-      '@types/node': 20.11.24
+      '@types/node': 20.11.25
     dev: false
 
   /@ungap/structured-clone@1.2.0:
@@ -1712,14 +1712,14 @@ packages:
       - encoding
       - supports-color
 
-  /@yeoman/adapter@1.4.0(@yeoman/types@1.1.2):
+  /@yeoman/adapter@1.4.0(@yeoman/types@1.2.0):
     resolution: {integrity: sha512-JroPWaZ8fALkfRt1FVM8/jz0kGOviVkKaCR4y0EM9Si2B9UD4UySGLCrjyUWeWBGqgr2iGAQ0ehoHjRAlyzsFg==}
     engines: {node: ^16.13.0 || >=18.12.0}
     peerDependencies:
       '@yeoman/types': ^1.1.0
     dependencies:
       '@types/inquirer': 9.0.7
-      '@yeoman/types': 1.1.2(@types/inquirer@9.0.7)(mem-fs@4.1.0)
+      '@yeoman/types': 1.2.0(@types/inquirer@9.0.7)(mem-fs@4.1.0)
       chalk: 5.3.0
       inquirer: 9.2.15
       log-symbols: 5.1.0
@@ -1728,16 +1728,16 @@ packages:
       text-table: 0.2.0
     dev: false
 
-  /@yeoman/conflicter@2.0.0(@yeoman/types@1.1.2)(mem-fs@4.1.0):
+  /@yeoman/conflicter@2.0.0(@yeoman/types@1.2.0)(mem-fs@4.1.0):
     resolution: {integrity: sha512-DhxzWfHXg+W3AGyWM35L2o4GkQbUcT30f2+l6/2sZGwQcUPyTIR9RDyxrV9pf6YlwUJwvKjL2jLdB2QlJ1mKbg==}
     engines: {node: '>=18.12.0'}
     peerDependencies:
       '@yeoman/types': ^1.0.0
       mem-fs: ^4.0.0
     dependencies:
-      '@types/node': 16.18.86
+      '@types/node': 16.18.87
       '@yeoman/transform': 1.2.0
-      '@yeoman/types': 1.1.2(@types/inquirer@9.0.7)(mem-fs@4.1.0)
+      '@yeoman/types': 1.2.0(@types/inquirer@9.0.7)(mem-fs@4.1.0)
       binary-extensions: 2.2.0
       cli-table: 0.3.11
       dateformat: 5.0.3
@@ -1760,13 +1760,13 @@ packages:
     resolution: {integrity: sha512-evb/+2XMEBoHr4BxBeFkjeVTgTS4Qe7VH8DmzZ9kgJK7C7ACPAhW/qBdsKKP1sb5MoeITSaJSVFnc8S1fjZmcw==}
     engines: {node: ^16.13.0 || >=18.12.0}
     dependencies:
-      '@types/node': 16.18.86
+      '@types/node': 16.18.87
       minimatch: 9.0.3
       readable-stream: 4.5.2
     dev: false
 
-  /@yeoman/types@1.1.2(@types/inquirer@9.0.7)(mem-fs@4.1.0):
-    resolution: {integrity: sha512-/hg8AIU0ZLijHfZWi0vFgWPVWvUJs/tlKeia7Z5sKsWYGCcqsPSHZcnov5bZlpxv8v+vPQ8K9VtTKORtVALsJw==}
+  /@yeoman/types@1.2.0(@types/inquirer@9.0.7)(mem-fs@4.1.0):
+    resolution: {integrity: sha512-Ofaig2hSrauCZ5ZTn9paWtgeG1vJseVsrzToIo/ub3bnm4IDwNf/cQv1/qkvhYSns+xnq7CR5u8kr1fFcMcKfQ==}
     engines: {node: ^16.13.0 || >=18.12.0}
     peerDependencies:
       '@types/inquirer': ^9.0.3
@@ -1782,7 +1782,7 @@ packages:
         optional: true
     dependencies:
       '@types/inquirer': 9.0.7
-      '@types/node': 16.18.86
+      '@types/node': 16.18.87
       mem-fs: 4.1.0
     dev: false
 
@@ -2149,7 +2149,7 @@ packages:
       http-cache-semantics: 4.1.1
       keyv: 4.5.4
       mimic-response: 4.0.0
-      normalize-url: 8.0.0
+      normalize-url: 8.0.1
       responselike: 3.0.0
     dev: false
 
@@ -2161,7 +2161,7 @@ packages:
       es-errors: 1.3.0
       function-bind: 1.1.2
       get-intrinsic: 1.2.4
-      set-function-length: 1.2.1
+      set-function-length: 1.2.2
 
   /callsites@3.1.0:
     resolution: {integrity: sha512-P8BjAsXvZS+VIDUI11hHCQEv74YT67YUi5JJFNWIqL235sBmjX4+qx9Muvls5ivyNENctx46xQLQ3aTuE7ssaQ==}
@@ -2598,7 +2598,7 @@ packages:
     dependencies:
       '@cspell/cspell-types': 8.6.0
       comment-json: 4.2.3
-      yaml: 2.4.0
+      yaml: 2.4.1
 
   /cspell-dictionary@8.6.0:
     resolution: {integrity: sha512-ohToeOQznIrb2/z7RfKxX3NID0WiO4sXK3IxKdnbn2viGgdn17tQ8Z2f4Xuy9egjSGRKyr6N25Z5AOes1C8R3w==}
@@ -3439,7 +3439,7 @@ packages:
       function-bind: 1.1.2
       has-proto: 1.0.3
       has-symbols: 1.0.3
-      hasown: 2.0.1
+      hasown: 2.0.2
 
   /get-stdin@9.0.0:
     resolution: {integrity: sha512-dVKBjfWisLAicarI2Sf+JuBE/DghV4UzNAVe9yhEJuzeREd3JhOTE9cUaJTeSa77fsbQUK3pcOpJfM59+VKZaA==}
@@ -3642,8 +3642,8 @@ packages:
   /has-unicode@2.0.1:
     resolution: {integrity: sha512-8Rf9Y83NBReMnx0gFzA8JImQACstCYWUplepDa9xprwwtmgEZUF0h/i5xSA625zB/I37EtrswSST6OXxwaaIJQ==}
 
-  /hasown@2.0.1:
-    resolution: {integrity: sha512-1/th4MHjnwncwXsIW6QMzlvYL9kG5e/CpVvLRZe4XPa8TOUNbCELqmvhDmnkNsAjwaG4+I8gJJL0JBvTTLO9qA==}
+  /hasown@2.0.2:
+    resolution: {integrity: sha512-0hJU9SCPvmMzIBdZFqNPXWa6dqh7WdH0cII9y+CyS8rG3nL48Bclra9HmKhVVUHyPWNH5Y7xDwAB7bfgSjkUMQ==}
     engines: {node: '>= 0.4'}
     dependencies:
       function-bind: 1.1.2
@@ -3827,7 +3827,7 @@ packages:
     resolution: {integrity: sha512-vI2w4zl/mDluHt9YEQ/543VTCwPKWiHzKtm9dM2V0NdFcqEexDAjUHzO1oA60HRNaVifGXXM1tRRNluLVHa0Kg==}
     engines: {node: '>=18'}
     dependencies:
-      '@ljharb/through': 2.3.12
+      '@ljharb/through': 2.3.13
       ansi-escapes: 4.3.2
       chalk: 5.3.0
       cli-cursor: 3.1.0
@@ -3884,7 +3884,7 @@ packages:
   /is-core-module@2.13.1:
     resolution: {integrity: sha512-hHrIjvZsftOsvKSn2TRYl63zvxsgE0K+0mYMoH6gD4omR5IWB2KynivBQczo3+wF1cCkjzvptnI9Q0sPU66ilw==}
     dependencies:
-      hasown: 2.0.1
+      hasown: 2.0.2
 
   /is-decimal@2.0.1:
     resolution: {integrity: sha512-AAB9hiomQs5DXWcRB1rqsxGUstbRroFOPPVAomNk/3XHR5JyEZChOyTWe2oayKnsSsr/kcGqF+z6yuH6HHpN0A==}
@@ -4402,8 +4402,8 @@ packages:
       - supports-color
     dev: true
 
-  /mdast-util-mdx-jsx@3.1.0:
-    resolution: {integrity: sha512-A8AJHlR7/wPQ3+Jre1+1rq040fX9A4Q1jG8JxmSNp/PLPHg80A6475wxTp3KzHpApFH6yWxFotHrJQA3dXP6/w==}
+  /mdast-util-mdx-jsx@3.1.1:
+    resolution: {integrity: sha512-Di63TQEHbiApe6CFp/qQXCORHMHnmW2JFdr5PYH57LuEIPjijRHicAmL5wQu+B0/Q4p0qJaEOE1EkhiwxiNmAQ==}
     dependencies:
       '@types/estree-jsx': 1.0.5
       '@types/hast': 3.0.4
@@ -4427,7 +4427,7 @@ packages:
     dependencies:
       mdast-util-from-markdown: 2.0.0
       mdast-util-mdx-expression: 2.0.0
-      mdast-util-mdx-jsx: 3.1.0
+      mdast-util-mdx-jsx: 3.1.1
       mdast-util-mdxjs-esm: 2.0.1
       mdast-util-to-markdown: 2.1.0
     transitivePeerDependencies:
@@ -4480,7 +4480,7 @@ packages:
       mem-fs: ^4.0.0
     dependencies:
       '@types/ejs': 3.1.5
-      '@types/node': 18.19.21
+      '@types/node': 18.19.22
       binaryextensions: 4.19.0
       commondir: 1.0.1
       deep-extend: 0.6.0
@@ -4499,7 +4499,7 @@ packages:
     resolution: {integrity: sha512-lOB7haBbxO43eZ/++GA+jBMHQ9DNJeliMt35jNutzCfAgEg5gblFCItnzsss8Z4t81bB5jsz77bptqelHQn0Qw==}
     engines: {node: '>=18.0.0'}
     dependencies:
-      '@types/node': 20.11.24
+      '@types/node': 20.11.25
       '@types/vinyl': 2.0.11
       vinyl: 3.0.0
       vinyl-file: 5.0.0
@@ -5102,8 +5102,8 @@ packages:
     resolution: {integrity: sha512-6eZs5Ls3WtCisHWp9S2GUy8dqkpGi4BVSz3GaqiE6ezub0512ESztXUwUB6C6IKbQkY2Pnb/mD4WYojCRwcwLA==}
     engines: {node: '>=0.10.0'}
 
-  /normalize-url@8.0.0:
-    resolution: {integrity: sha512-uVFpKhj5MheNBJRTiMZ9pE/7hD1QTeEvugSJW/OmLzAp78PB5O6adfMNTvmfKhXBkvCzC+rqifWcVYpGFwTjnw==}
+  /normalize-url@8.0.1:
+    resolution: {integrity: sha512-IO9QvjUMWxPQQhs60oOu10CRkWCiZzSUkzbXGGV9pviYl1fXYcvkzQ5jV9z8Y6un8ARoVRl4EtC6v6jNqbaJ/w==}
     engines: {node: '>=14.16'}
     dev: false
 
@@ -5370,7 +5370,7 @@ packages:
     resolution: {integrity: sha512-CsXIiCOeBUYMBLpcY71DTq+fg8268ux31pAxI5TcoYEPfWCw5ozrbgWdZ9QmSDd8dUzvNXtmiwJOdTIxIFptfQ==}
     engines: {node: '>=16.13.0'}
     dependencies:
-      '@types/node': 16.18.86
+      '@types/node': 16.18.87
       p-queue: 7.4.1
       readable-stream: 4.5.2
     dev: false
@@ -5488,7 +5488,7 @@ packages:
     dependencies:
       '@babel/code-frame': 7.23.5
       index-to-position: 0.1.2
-      type-fest: 4.11.1
+      type-fest: 4.12.0
     dev: false
 
   /parse-ms@4.0.0:
@@ -5699,7 +5699,7 @@ packages:
     dependencies:
       find-up-simple: 1.0.0
       read-pkg: 9.0.1
-      type-fest: 4.11.1
+      type-fest: 4.12.0
     dev: false
 
   /read-pkg-up@10.1.0:
@@ -5708,7 +5708,7 @@ packages:
     dependencies:
       find-up: 6.3.0
       read-pkg: 8.1.0
-      type-fest: 4.11.1
+      type-fest: 4.12.0
     dev: true
 
   /read-pkg@8.1.0:
@@ -5718,7 +5718,7 @@ packages:
       '@types/normalize-package-data': 2.4.4
       normalize-package-data: 6.0.0
       parse-json: 7.1.1
-      type-fest: 4.11.1
+      type-fest: 4.12.0
     dev: true
 
   /read-pkg@9.0.1:
@@ -5728,7 +5728,7 @@ packages:
       '@types/normalize-package-data': 2.4.4
       normalize-package-data: 6.0.0
       parse-json: 8.1.0
-      type-fest: 4.11.1
+      type-fest: 4.12.0
       unicorn-magic: 0.1.0
     dev: false
 
@@ -5944,8 +5944,8 @@ packages:
   /set-blocking@2.0.0:
     resolution: {integrity: sha512-KiKBS8AnWGEyLzofFfmvKwpdPzqiy16LvQfK3yv/fVH7Bj13/wl3JSR1J+rfgRE9q7xUJK4qvgS8raSOeLUehw==}
 
-  /set-function-length@1.2.1:
-    resolution: {integrity: sha512-j4t6ccc+VsKwYHso+kElc5neZpjtq9EnRICFZtWyBsLojhmeF/ZBd/elqm22WJh/BziDe/SBiOeAt0m2mfLD0g==}
+  /set-function-length@1.2.2:
+    resolution: {integrity: sha512-pgRc4hJ4/sNjWCSS9AmnS40x3bNMDTknHgL5UaMBTMyJnU90EgWh1Rz+MC9eFu4BuN/UwZjKQuY/1v3rM7HMfg==}
     engines: {node: '>= 0.4'}
     dependencies:
       define-data-property: 1.1.4
@@ -6371,8 +6371,8 @@ packages:
     engines: {node: '>=14.16'}
     dev: true
 
-  /type-fest@4.11.1:
-    resolution: {integrity: sha512-MFMf6VkEVZAETidGGSYW2B1MjXbGX+sWIywn2QPEaJ3j08V+MwVRHMXtf2noB8ENJaD0LIun9wh5Z6OPNf1QzQ==}
+  /type-fest@4.12.0:
+    resolution: {integrity: sha512-5Y2/pp2wtJk8o08G0CMkuFPCO354FGwk/vbidxrdhRGZfd0tFnb4Qb8anp9XxXriwBgVPjdWbKpGl4J9lJY2jQ==}
     engines: {node: '>=16'}
 
   /typedarray-to-buffer@3.1.5:
@@ -6704,7 +6704,7 @@ packages:
       deepmerge-ts: 5.1.0
       read-pkg: 8.1.0
       sort-keys: 5.0.0
-      type-fest: 4.11.1
+      type-fest: 4.12.0
       write-json-file: 5.0.0
     dev: true
 
@@ -6719,8 +6719,8 @@ packages:
   /yallist@4.0.0:
     resolution: {integrity: sha512-3wdGidZyq5PB084XLES5TpOSRA3wjXAlIWMhum2kRcv/41Sn2emQ0dycQW4uZXLejwKvg6EsvbdlVL+FYEct7A==}
 
-  /yaml@2.4.0:
-    resolution: {integrity: sha512-j9iR8g+/t0lArF4V6NE/QCfT+CO7iLqrXAHZbJdo+LfjqP1vR8Fg5bSiaq6Q2lOD1AUEVrEVIgABvBFYojJVYQ==}
+  /yaml@2.4.1:
+    resolution: {integrity: sha512-pIXzoImaqmfOrL7teGUBt/T7ZDnyeGBWyXQBvOVhLkWLN37GXv8NMLK406UY6dS51JfcQHsmcW5cJ441bHg6Lg==}
     engines: {node: '>= 14'}
     hasBin: true
 
@@ -6748,19 +6748,19 @@ packages:
       y18n: 5.0.8
       yargs-parser: 21.1.1
 
-  /yeoman-environment@4.3.0(@yeoman/types@1.1.2)(mem-fs@4.1.0):
-    resolution: {integrity: sha512-8cKRpZbOSx4wFP2B8XvZLOuPiYq9okcWuwL99K80QbSPGB7IymwHWyMvtXiv2nbQrNXX9SNRLhzCIY4oSimWcQ==}
+  /yeoman-environment@4.4.0(@yeoman/types@1.2.0)(mem-fs@4.1.0):
+    resolution: {integrity: sha512-X53IlyzOI4gX1vEGlxW1Q9lJ73sJq4o13gLeDw5IzDMBVn0xnmsmxphs+dWDzSmipirmZQaWKQhBH/rEAXTCLA==}
     engines: {node: ^18.17.0 || >=20.5.0}
     hasBin: true
     peerDependencies:
       '@yeoman/types': ^1.1.1
       mem-fs: ^4.0.0
     dependencies:
-      '@yeoman/adapter': 1.4.0(@yeoman/types@1.1.2)
-      '@yeoman/conflicter': 2.0.0(@yeoman/types@1.1.2)(mem-fs@4.1.0)
+      '@yeoman/adapter': 1.4.0(@yeoman/types@1.2.0)
+      '@yeoman/conflicter': 2.0.0(@yeoman/types@1.2.0)(mem-fs@4.1.0)
       '@yeoman/namespace': 1.0.0
       '@yeoman/transform': 1.2.0
-      '@yeoman/types': 1.1.2(@types/inquirer@9.0.7)(mem-fs@4.1.0)
+      '@yeoman/types': 1.2.0(@types/inquirer@9.0.7)(mem-fs@4.1.0)
       arrify: 3.0.0
       chalk: 5.3.0
       commander: 11.1.0
@@ -6782,7 +6782,7 @@ packages:
       - supports-color
     dev: false
 
-  /yeoman-generator@7.1.1(@yeoman/types@1.1.2)(mem-fs@4.1.0)(yeoman-environment@4.3.0):
+  /yeoman-generator@7.1.1(@yeoman/types@1.2.0)(mem-fs@4.1.0)(yeoman-environment@4.4.0):
     resolution: {integrity: sha512-vQ7ETaKIDmKNtpp97YFabE92ZaOTTs8NOr0wmmszyA1uAc2z5QXNZfU1WtXRFn76BiTf5mHWrOsCDls8N9nD6A==}
     engines: {node: ^18.17.0 || >=20.5.0}
     peerDependencies:
@@ -6794,9 +6794,9 @@ packages:
         optional: true
     dependencies:
       '@types/lodash-es': 4.17.12
-      '@types/node': 18.19.21
+      '@types/node': 18.19.22
       '@yeoman/namespace': 1.0.0
-      '@yeoman/types': 1.1.2(@types/inquirer@9.0.7)(mem-fs@4.1.0)
+      '@yeoman/types': 1.2.0(@types/inquirer@9.0.7)(mem-fs@4.1.0)
       chalk: 5.3.0
       debug: 4.3.4
       execa: 8.0.1
@@ -6812,7 +6812,7 @@ packages:
       simple-git: 3.22.0
       sort-keys: 5.0.0
       text-table: 0.2.0
-      yeoman-environment: 4.3.0(@yeoman/types@1.1.2)(mem-fs@4.1.0)
+      yeoman-environment: 4.4.0(@yeoman/types@1.2.0)(mem-fs@4.1.0)
     transitivePeerDependencies:
       - encoding
       - supports-color
