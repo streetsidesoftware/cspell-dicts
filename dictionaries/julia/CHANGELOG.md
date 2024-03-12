@@ -1,5 +1,12 @@
 # Change Log
 
+## [1.0.1](https://github.com/streetsidesoftware/cspell-dicts/compare/@cspell/dict-julia@1.0.0...@cspell/dict-julia@1.0.1) (2024-03-12)
+
+
+### Updates and Bug Fixes
+
+* Publish Julia dictionary ([#3044](https://github.com/streetsidesoftware/cspell-dicts/issues/3044)) ([7415530](https://github.com/streetsidesoftware/cspell-dicts/commit/7415530080d476373d15462fa750d9bdbe276367))
+
 ## 1.0.0 (2024-03-11)
 
 
