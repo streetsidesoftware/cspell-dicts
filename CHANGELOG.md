@@ -1,5 +1,12 @@
 # Release Notes
 
+## [24.5.1](https://github.com/streetsidesoftware/cspell-dicts/compare/cspell-dicts@24.5.0...cspell-dicts@24.5.1) (2024-03-12)
+
+
+### Updates and Bug Fixes
+
+* Publish Julia dictionary ([#3044](https://github.com/streetsidesoftware/cspell-dicts/issues/3044)) ([7415530](https://github.com/streetsidesoftware/cspell-dicts/commit/7415530080d476373d15462fa750d9bdbe276367))
+
 ## [24.5.0](https://github.com/streetsidesoftware/cspell-dicts/compare/cspell-dicts@24.4.3...cspell-dicts@24.5.0) (2024-03-11)
 
 
