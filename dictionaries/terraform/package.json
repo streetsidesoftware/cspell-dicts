@@ -1,0 +1,47 @@
+{
+  "name": "@cspell/dict-terraform",
+  "version": "1.0.0",
+  "description": "Terraform dictionary for cspell. -- Private until verified",
+  "private": true,
+  "publishConfig": {
+    "access": "public"
+  },
+  "exports": {
+    ".": "./cspell-ext.json",
+    "./cspell": "./cspell-ext.json",
+    "./cspell-ext.json": "./cspell-ext.json"
+  },
+  "scripts": {
+    "build": "cross-env NODE_OPTIONS=--max_old_space_size=8192 cspell-tools-cli build",
+    "test": "head -n 1000 \"src/terraform.txt\" | cspell -v -c ./cspell-ext.json \"--locale=*\" \"--languageId=terraform\" stdin",
+    "prepublishOnly": "echo OK",
+    "prepare:dictionary": "pnpm run build"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/streetsidesoftware/cspell-dicts.git"
+  },
+  "keywords": [
+    "cspell",
+    "cspell-ext",
+    "terraform",
+    "Terraform",
+    "dictionary",
+    "spelling"
+  ],
+  "author": "Street Side Software",
+  "contributors": [],
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/streetsidesoftware/cspell-dicts/issues"
+  },
+  "homepage": "https://github.com/streetsidesoftware/cspell-dicts/blob/main/dictionaries/terraform#readme",
+  "devDependencies": {},
+  "dependencies": {},
+  "files": [
+    "dict/terraform.txt",
+    "cspell-ext.json",
+    "*.js",
+    "*.d.ts"
+  ]
+}

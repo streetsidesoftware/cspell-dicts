@@ -101,6 +101,7 @@ Various [cspell](https://github.com/streetsidesoftware/cspell) dictionaries. Eac
 - [SQL](dictionaries/sql)
 - [Svelte](dictionaries/svelte)
 - [Swift](dictionaries/swift)
+- [Terraform](dictionaries/terraform)
 - [TypeScript and JavaScript](dictionaries/typescript)
 - [Vue](dictionaries/vue)
 - [Win32](dictionaries/win32)
