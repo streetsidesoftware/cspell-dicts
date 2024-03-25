@@ -976,7 +976,7 @@ packages:
       read-package-json: 7.0.0
       semver: 7.6.0
       ssri: 10.0.5
-      tar: 6.2.0
+      tar: 6.2.1
       temp-dir: 3.0.0
     transitivePeerDependencies:
       - '@lerna-lite/exec'
@@ -1079,7 +1079,7 @@ packages:
       npmlog: 5.0.1
       rimraf: 3.0.2
       semver: 7.6.0
-      tar: 6.2.0
+      tar: 6.2.1
     transitivePeerDependencies:
       - encoding
       - supports-color
@@ -2135,7 +2135,7 @@ packages:
       minipass-pipeline: 1.2.4
       p-map: 4.0.0
       ssri: 10.0.5
-      tar: 6.2.0
+      tar: 6.2.1
       unique-filename: 3.0.0
 
   /cacheable-lookup@7.0.0:
@@ -5069,7 +5069,7 @@ packages:
       nopt: 7.2.0
       proc-log: 3.0.0
       semver: 7.6.0
-      tar: 6.2.0
+      tar: 6.2.1
       which: 4.0.0
     transitivePeerDependencies:
       - supports-color
@@ -5422,7 +5422,7 @@ packages:
       read-package-json-fast: 3.0.2
       sigstore: 2.2.2
       ssri: 10.0.5
-      tar: 6.2.0
+      tar: 6.2.1
     transitivePeerDependencies:
       - bluebird
       - supports-color
@@ -5491,7 +5491,7 @@ packages:
     dependencies:
       '@babel/code-frame': 7.24.2
       index-to-position: 0.1.2
-      type-fest: 4.13.1
+      type-fest: 4.14.0
     dev: false
 
   /parse-ms@4.0.0:
@@ -5705,7 +5705,7 @@ packages:
     dependencies:
       find-up-simple: 1.0.0
       read-pkg: 9.0.1
-      type-fest: 4.13.1
+      type-fest: 4.14.0
     dev: false
 
   /read-pkg-up@10.1.0:
@@ -5714,7 +5714,7 @@ packages:
     dependencies:
       find-up: 6.3.0
       read-pkg: 8.1.0
-      type-fest: 4.13.1
+      type-fest: 4.14.0
     dev: true
 
   /read-pkg@8.1.0:
@@ -5724,7 +5724,7 @@ packages:
       '@types/normalize-package-data': 2.4.4
       normalize-package-data: 6.0.0
       parse-json: 7.1.1
-      type-fest: 4.13.1
+      type-fest: 4.14.0
     dev: true
 
   /read-pkg@9.0.1:
@@ -5734,7 +5734,7 @@ packages:
       '@types/normalize-package-data': 2.4.4
       normalize-package-data: 6.0.0
       parse-json: 8.1.0
-      type-fest: 4.13.1
+      type-fest: 4.14.0
       unicorn-magic: 0.1.0
     dev: false
 
@@ -6265,8 +6265,8 @@ packages:
       tslib: 2.6.2
     dev: true
 
-  /tar@6.2.0:
-    resolution: {integrity: sha512-/Wo7DcT0u5HUV486xg675HtjNd3BXZ6xDbzsCUZPt5iw8bTQ63bP0Raut3mvro9u+CUyq7YQd8Cx55fsZXxqLQ==}
+  /tar@6.2.1:
+    resolution: {integrity: sha512-DZ4yORTwrbTj/7MZYq2w+/ZFdI6OZ/f9SFHR+71gIVUZhOQPHzVCLpvRnPgyaMpfWxxk/4ONva3GQSyNIKRv6A==}
     engines: {node: '>=10'}
     dependencies:
       chownr: 2.0.0
@@ -6377,8 +6377,8 @@ packages:
     engines: {node: '>=14.16'}
     dev: true
 
-  /type-fest@4.13.1:
-    resolution: {integrity: sha512-ASMgM+Vf2cLwDMt1KXSkMUDSYCxtckDJs8zsaVF/mYteIsiARKCVtyXtcK38mIKbLTctZP8v6GMqdNaeI3fo7g==}
+  /type-fest@4.14.0:
+    resolution: {integrity: sha512-on5/Cw89wwqGZQu+yWO0gGMGu8VNxsaW9SB2HE8yJjllEk7IDTwnSN1dUVldYILhYPN5HzD7WAaw2cc/jBfn0Q==}
     engines: {node: '>=16'}
 
   /typedarray-to-buffer@3.1.5:
@@ -6710,7 +6710,7 @@ packages:
       deepmerge-ts: 5.1.0
       read-pkg: 8.1.0
       sort-keys: 5.0.0
-      type-fest: 4.13.1
+      type-fest: 4.14.0
       write-json-file: 5.0.0
     dev: true
 
