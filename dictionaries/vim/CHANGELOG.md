@@ -1,5 +1,13 @@
 # Change Log
 
+## [1.0.3](https://github.com/streetsidesoftware/cspell-dicts/compare/@cspell/dict-vim@1.0.2...@cspell/dict-vim@1.0.3) (2024-03-26)
+
+
+### Updates and Bug Fixes
+
+* **vim-dictionary:** add setreg ([#3053](https://github.com/streetsidesoftware/cspell-dicts/issues/3053)) ([4057c57](https://github.com/streetsidesoftware/cspell-dicts/commit/4057c57bcb2efee83acf02a5d50433ff55560ffe))
+* Workflow Bot -- Build Dictionaries ([#3055](https://github.com/streetsidesoftware/cspell-dicts/issues/3055)) ([55faa30](https://github.com/streetsidesoftware/cspell-dicts/commit/55faa3099cd6cff9ced123b60ea522103f92a38f))
+
 ## [1.0.2](https://github.com/streetsidesoftware/cspell-dicts/compare/@cspell/dict-vim@1.0.1...@cspell/dict-vim@1.0.2) (2023-11-19)
 
 
