@@ -1,0 +1,13 @@
+# yaml-language-server: $schema=https://raw.githubusercontent.com/streetsidesoftware/cspell/main/packages/cspell-tools/cspell-tools.config.schema.json
+
+targets:
+  - name: 'grc'
+    sources:
+      - filename: 'src/hunspell/grc_GR.aff'
+        maxDepth: 2 # This is set to 1 to prevent initial builds from taking too long.
+      - src/additional_words.txt
+    format: 'trie3'
+    targetDirectory: './dict'
+    generateNonStrict: true
+    compress: false
+checksumFile: true
