@@ -2,11 +2,6 @@
 
 [Hymn 4 to Hermes, Εἲς Ἑρμῆν](https://www.perseus.tufts.edu/hopper/text?doc=urn:cts:greekLit:tlg0013.tlg004.perseus-grc1)
 
-<!---
-cspell:locale en
-cspell:dictionaries grc
---->
-
 # Εἲς Ἑρμῆν
 
 Ἑρμῆν ὕμνει, Μοῦσα, Διὸς καὶ Μαιάδος υἱόν,
