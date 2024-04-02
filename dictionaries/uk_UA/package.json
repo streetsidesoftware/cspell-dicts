@@ -15,7 +15,7 @@
     "sync": "pnpm cpy \"node_modules/dictionary-uk/**\" src/hunspell",
     "compile": "cspell-tools-cli build",
     "conditional-build": "pnpm sync && pnpm build --conditional",
-    "test-dict": "hunspell-reader words -n 1000 \"src/hunspell/index.dic\" | cspell -v -c ./cspell-ext.json --locale=uk --languageId=* stdin",
+    "test-dict": "set -o pipefail \n hunspell-reader words -n 1000 \"src/hunspell/index.dic\" | cspell -c ./cspell-ext.json --locale=uk --languageId=* stdin",
     "test-text": "cspell samples",
     "test": "pnpm run test-dict && pnpm run test-text",
     "prepublishOnly": "echo pre-publish"

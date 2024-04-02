@@ -12,7 +12,7 @@
   },
   "scripts": {
     "build": "cspell-tools-cli compile --no-compress --split \"src/companies.txt\" -o ./dict",
-    "test": "shx cat \"src/companies.txt\" | cspell -v -c ./cspell-ext.json --locale=* --languageId=* stdin",
+    "test": "shx cat \"src/companies.txt\" | cspell -c ./cspell-ext.json --locale=* --languageId=* stdin",
     "prepublishOnly": "echo pre-publish",
     "prepare:dictionary": "pnpm run build"
   },

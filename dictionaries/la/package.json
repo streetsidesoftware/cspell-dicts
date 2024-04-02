@@ -13,7 +13,7 @@
   "scripts": {
     "build": "cspell-tools-cli build && pnpm gz",
     "build:conditional": "cspell-tools-cli build --conditional && pnpm gz",
-    "test:dic": "hunspell-reader words -n 1000 \"src/hunspell/la.dic\" | cspell -c ./cspell-ext.json \"--locale=la,la-VA\" \"--languageId=*\" stdin",
+    "test:dic": "set -o pipefail \n hunspell-reader words -n 1000 \"src/hunspell/la.dic\" | cspell -c ./cspell-ext.json \"--locale=la,la-VA\" \"--languageId=*\" stdin",
     "test:samples": "cspell samples",
     "test": "pnpm test:dic && pnpm test:samples",
     "gz": "cspell-tools-cli gzip \"*.trie\"",

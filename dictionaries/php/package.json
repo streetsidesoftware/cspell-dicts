@@ -12,7 +12,7 @@
   },
   "scripts": {
     "build": "cspell-tools-cli build",
-    "test": "shx cat \"php.txt\" | cspell -v -c ./cspell-ext.json --locale=* --languageId=php stdin",
+    "test": "shx cat \"php.txt\" | cspell -c ./cspell-ext.json --locale=* --languageId=php stdin",
     "prepublishOnly": "echo pre-publish",
     "prepare:dictionary": "pnpm run build"
   },

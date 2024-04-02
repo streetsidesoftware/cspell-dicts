@@ -12,7 +12,7 @@
   },
   "scripts": {
     "build": "cspell-tools-cli compile --keep-raw-case src/haskell.txt --no-compress -o ./dict",
-    "test": "shx head -n 100 src/haskell.txt | cspell -v -c ./cspell-ext.json --locale=* --languageId=haskell stdin",
+    "test": "shx head -n 100 src/haskell.txt | cspell -c ./cspell-ext.json --locale=* --languageId=haskell stdin",
     "prepublishOnly": "echo pre-publish",
     "prepare:dictionary": "pnpm run build"
   },

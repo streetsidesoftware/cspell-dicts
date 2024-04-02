@@ -12,7 +12,7 @@
   },
   "scripts": {
     "build": "cross-env NODE_OPTIONS=--max_old_space_size=8192 cspell-tools-cli compile \"src/swift.txt\" -o .",
-    "test": "shx head -n 1000 \"src/swift.txt\" | cspell -v -c ./cspell-ext.json \"--locale=*\" \"--languageId=swift\" stdin",
+    "test": "shx head -n 1000 \"src/swift.txt\" | cspell -c ./cspell-ext.json \"--locale=*\" \"--languageId=swift\" stdin",
     "prepublishOnly": "echo pre-publish",
     "prepare:dictionary": "pnpm run build"
   },

@@ -12,7 +12,7 @@
   },
   "scripts": {
     "build": "cspell-tools-cli compile --split \"src/npm.txt\" --no-compress -o ./dict -m npm",
-    "test": "shx head -n 100 \"src/npm.txt\" | cspell -v -c ./cspell-ext.json \"--locale=*\" \"--languageId=javascript\" stdin",
+    "test": "shx head -n 100 \"src/npm.txt\" | cspell -c ./cspell-ext.json \"--locale=*\" \"--languageId=javascript\" stdin",
     "prepublishOnly": "echo pre-publish",
     "prepare:dictionary": "pnpm run build"
   },

@@ -14,7 +14,7 @@
     "build": "cspell-tools-cli build",
     "test": "npm run test:words && npm run test:samples",
     "test:samples": "cspell samples",
-    "test:words": "hunspell-reader words -n 1000 -m 0 \"src/hunspell/grc_GR.aff\" | cspell -c ./cspell-ext.json \"--locale=grc\" \"--languageId=*\" stdin",
+    "test:words": "set -o pipefail \n hunspell-reader words -n 1000 -m 0 \"src/hunspell/grc_GR.aff\" | cspell -c ./cspell-ext.json \"--locale=grc\" \"--languageId=*\" stdin",
     "prepublishOnly": "echo OK",
     "prepare:dictionary": "echo OK"
   },

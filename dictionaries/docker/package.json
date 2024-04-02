@@ -12,7 +12,7 @@
   },
   "scripts": {
     "build": "cspell-tools-cli build",
-    "test": "shx head -n 1000 \"src/docker-words.txt\" | cspell -v -c ./cspell-ext.json \"--locale=*\" \"--languageId=dockerfile\" stdin",
+    "test": "shx head -n 1000 \"src/docker-words.txt\" | cspell -c ./cspell-ext.json \"--locale=*\" \"--languageId=dockerfile\" stdin",
     "prepublishOnly": "echo pre-publish",
     "prepare:dictionary": "pnpm run build"
   },

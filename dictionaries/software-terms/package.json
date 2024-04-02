@@ -13,8 +13,8 @@
   "scripts": {
     "build": "cspell-tools-cli build",
     "test": "pnpm test-software-terms && pnpm test-networking-terms",
-    "test-software-terms": "cspell -v -c ./cspell-ext.json \"--locale=*\" \"--languageId=*\" --file-list src/source-files-software.txt",
-    "test-networking-terms": "cspell -v \"--locale=*\" \"--languageId=*\" --file-list src/source-files-networking.txt",
+    "test-software-terms": "cspell -c ./cspell-ext.json \"--locale=*\" \"--languageId=*\" --file-list src/source-files-software.txt",
+    "test-networking-terms": "cspell \"--locale=*\" \"--languageId=*\" --file-list src/source-files-networking.txt",
     "prepublishOnly": "echo pre-publish",
     "prepare:dictionary": "pnpm build"
   },

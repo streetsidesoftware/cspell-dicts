@@ -17,7 +17,7 @@
     "checksum": "cspell-tools-cli shasum -c checksum.txt",
     "compile": "cspell-tools-cli build",
     "conditional-build": "pnpm run --silent checksum || pnpm run build && pnpm run gen-checksum",
-    "test-dict": "cspell -v -c ./cspell-ext.json --locale=en --languageId=* --file-list source-files.txt",
+    "test-dict": "cspell -c ./cspell-ext.json --locale=en --languageId=* --file-list source-files.txt",
     "gen-checksum": "cspell-tools-cli shasum -u checksum.txt --list-file source-files.txt source-dependencies.txt",
     "test": "pnpm run test-dict",
     "prepublishOnly": "echo pre-publish",

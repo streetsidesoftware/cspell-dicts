@@ -12,7 +12,7 @@
   },
   "scripts": {
     "build": "cspell-tools-cli compile --keep-raw-case --use-legacy-splitter src/city-names-finland.txt --no-compress -o ./dict",
-    "test": "shx head -n 100 src/city-names-finland.txt | cspell -v -c ./cspell-ext.json --locale=* --languageId=* stdin",
+    "test": "shx head -n 100 src/city-names-finland.txt | cspell -c ./cspell-ext.json --locale=* --languageId=* stdin",
     "prepublishOnly": "echo pre-publish",
     "prepare:dictionary": "pnpm run build"
   },
