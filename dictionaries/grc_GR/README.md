@@ -46,7 +46,7 @@ There are two approaches to enabling the dictionary.
 
 1. Enabling the language locale.
    Any of the following locales can be used: `grc`, `grc_GR`, `gr`, `el-GRC`.
-2. Including the dictionary.
+1. Including the dictionary.
 
 ### Enabling the language locale
 
