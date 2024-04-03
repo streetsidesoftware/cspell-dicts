@@ -14,7 +14,7 @@
     "build": "cspell-tools-cli build",
     "conditional-build": "pnpm build --conditional",
     "test": "pnpm test:src && pnpm test:samples",
-    "test:src": "hunspell-reader words -n 1000 -m 0 \"src/hunspell/id_ID.dic\" | cspell -c ./cspell-ext.json \"--locale=id\" \"--languageId=*\" stdin",
+    "test:src": "pipe-cmds \"hunspell-reader words -n 1000 -m 0 \\\"src/hunspell/id_ID.dic\\\"\" \"cspell -c ./cspell-ext.json \\\"--locale=id\\\" \\\"--languageId=*\\\" stdin\"",
     "test:samples": "cspell samples",
     "prepublishOnly": "echo OK",
     "prepare:dictionary": "echo OK"

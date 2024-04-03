@@ -18,8 +18,8 @@
     "gen-checksum": "cspell-tools-cli shasum -u checksum.txt --list-file source-files.txt source-dependencies.txt",
     "prepare:dictionary": "cspell-tools-cli gzip \"*.trie\"",
     "prepublishOnly": "echo pre-publish",
-    "test-dict": "shx head -n 1000 \"./src/wordsEnGb.txt\" | cspell -v -c ./cspell-ext.json --locale=en_gb --languageId=* stdin",
-    "test-text": "cspell -v -c ./cspell-ext.json --locale=en_gb --languageId=* \"tests/*.txt\"",
+    "test-dict": "shx head -n 1000 \"./src/wordsEnGb.txt\" | cspell -c ./cspell-ext.json --locale=en_gb --languageId=* stdin",
+    "test-text": "cspell -c ./cspell-ext.json --locale=en_gb --languageId=* \"tests/*.txt\"",
     "test": "pnpm run test-dict && pnpm run test-text"
   },
   "repository": {

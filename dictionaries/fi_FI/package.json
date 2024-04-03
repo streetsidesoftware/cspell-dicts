@@ -15,7 +15,7 @@
     "conditional-build": "pnpm run build --conditional && pnpm gz",
     "test": "pnpm run test:words && pnpm run test:samples",
     "test:samples": "cspell samples",
-    "test:words": "hunspell-reader words -n 1000 -m 0 \"src/fi_FI.dic\" | cspell -c ./cspell-ext.json \"--locale=fi\" \"--languageId=*\" stdin",
+    "test:words": "pipe-cmds \"hunspell-reader words -n 1000 -m 0 \\\"src/hunspell/fi_FI.dic\\\"\" \"cspell -c ./cspell-ext.json \\\"--locale=fi\\\" \\\"--languageId=*\\\" stdin\"",
     "gz": "cspell-tools-cli gzip \"dict/*.trie\"",
     "prepare:dictionary": "pnpm gz",
     "prepublishOnly": "echo OK"

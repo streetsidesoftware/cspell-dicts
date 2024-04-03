@@ -19,7 +19,7 @@
     "gz": "cspell-tools-cli gzip \"*.trie\"",
     "prepare:dictionary": "pnpm gz",
     "prepublishOnly": "echo pre-publish",
-    "test-text": "cspell -v -c ./cspell-ext.json --locale=en-au --languageId=* \"tests/*.txt\"",
+    "test-text": "cspell -c ./cspell-ext.json --locale=en-au --languageId=* \"tests/*.txt\"",
     "test": "pnpm run test-text"
   },
   "repository": {

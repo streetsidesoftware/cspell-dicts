@@ -12,7 +12,7 @@
   },
   "scripts": {
     "build": "cspell-tools-cli build",
-    "test": "shx head -n 1000 src/scala.txt | cspell -v -c ./cspell-ext.json --locale=* --languageId=scala stdin",
+    "test": "shx head -n 1000 src/scala.txt | cspell -c ./cspell-ext.json --locale=* --languageId=scala stdin",
     "prepublishOnly": "echo pre-publish",
     "prepare:dictionary": "pnpm run build"
   },

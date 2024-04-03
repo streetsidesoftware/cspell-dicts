@@ -14,7 +14,7 @@
     "build": "cspell-tools-cli build",
     "sync": "pnpm cpy \"node_modules/dictionary-da/**\" src/hunspell",
     "conditional-build": "pnpm sync && pnpm build --conditional",
-    "test-de": "hunspell-reader words -n 1000 \"src/hunspell/index.dic\" | cspell -v -c ./cspell-ext.json --locale=da-DK --languageId=* stdin",
+    "test-de": "pipe-cmds \"hunspell-reader words -n 1000 \\\"src/hunspell/index.dic\\\"\" \"cspell -c ./cspell-ext.json --locale=da-DK --languageId=* stdin\"",
     "test-samples": "cspell -c ./cspell-ext.json --locale=da-dk,en \"samples/**\"",
     "test": "pnpm run test-de && pnpm run test-samples",
     "prepare:dictionary": "echo ok",

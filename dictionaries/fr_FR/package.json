@@ -17,8 +17,8 @@
     "gz": "cspell-tools-cli gzip \"*.trie\"",
     "prepare:dictionary": "pnpm gz",
     "prepublishOnly": "echo pre-publish",
-    "test-dict": "hunspell-reader words -n 1000 \"./src/hunspell-french-dictionaries-v7.0/fr-classique.dic\" | cspell -v -c ./cspell-ext.json \"--locale=fr\" \"--languageId=*\" stdin",
-    "test-text": "cspell -v -c ./cspell-ext.json --locale=fr --languageId=* \"samples/**\"",
+    "test-dict": "pipe-cmds \"hunspell-reader words -n 1000 \\\"./src/hunspell-french-dictionaries-v7.0/fr-classique.dic\\\"\" \"cspell -c ./cspell-ext.json \\\"--locale=fr\\\" \\\"--languageId=*\\\" stdin\"",
+    "test-text": "cspell -c ./cspell-ext.json --locale=fr --languageId=* \"samples/**\"",
     "test": "pnpm run test-dict && pnpm run test-text"
   },
   "repository": {

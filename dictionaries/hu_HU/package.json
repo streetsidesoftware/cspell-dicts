@@ -14,7 +14,7 @@
     "build": "cross-env NODE_OPTIONS=--max_old_space_size=8192 cspell-tools-cli build",
     "build:conditional": "pnpm build --conditional && pnpm gz",
     "gz": "cspell-tools-cli gzip \"dict/*.trie\"",
-    "test": "hunspell-reader words -n 1000 -m 0 \"src/hunspell/hu_HU.dic\" | cspell -v -c ./cspell-ext.json \"--local=hu\" \"--languageId=*\" stdin",
+    "test": "pipe-cmds \"hunspell-reader words -n 1000 -m 0 \\\"src/hunspell/hu_HU.dic\\\"\" \"cspell -c ./cspell-ext.json \\\"--local=hu\\\" \\\"--languageId=*\\\" stdin\"",
     "prepublishOnly": "echo OK",
     "prepare:dictionary": "pnpm gz"
   },
