@@ -30,6 +30,19 @@ See [Conventional Commits](https://conventionalcommits.org) for commit guideline
 
 
 
+## [3.0.0](https://github.com/streetsidesoftware/cspell-dicts/compare/@cspell/dict-es-es@2.4.0...@cspell/dict-es-es@3.0.0) (2024-04-03)
+
+
+### ⚠ BREAKING CHANGES
+
+* Use LGPL instead of GPL ([#3080](https://github.com/streetsidesoftware/cspell-dicts/issues/3080))
+
+### Updates and Bug Fixes
+
+* Add new valid words: comparabilidad, pizarrón, videollamada, relevamiento ([#3075](https://github.com/streetsidesoftware/cspell-dicts/issues/3075)) ([fd524d9](https://github.com/streetsidesoftware/cspell-dicts/commit/fd524d9bd3bad0869c70bec69bb799aa03bcd3a8))
+* Use LGPL instead of GPL ([#3080](https://github.com/streetsidesoftware/cspell-dicts/issues/3080)) ([23e6558](https://github.com/streetsidesoftware/cspell-dicts/commit/23e655853b0a20a6265144920a48df080ac19235))
+* Workflow Bot -- Build Dictionaries ([#3077](https://github.com/streetsidesoftware/cspell-dicts/issues/3077)) ([7312f9c](https://github.com/streetsidesoftware/cspell-dicts/commit/7312f9ccaec6a742c5e35c35d78b0411575497cc))
+
 ## [2.4.0](https://github.com/streetsidesoftware/cspell-dicts/compare/@cspell/dict-es-es@2.3.1...@cspell/dict-es-es@2.4.0) (2024-02-26)
 
 
