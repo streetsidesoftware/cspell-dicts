@@ -23,6 +23,7 @@ async function updatePackageJson(pkgFile) {
     };
 
     pkg.repository = repository;
+    pkg.author = 'Street Side Software <support@streetsidesoftware.nl>';
 
     await fs.writeFile(pkgFile, JSON.stringify(pkg, null, 2) + '\n');
 }
@@ -30,7 +31,14 @@ async function updatePackageJson(pkgFile) {
 async function run() {
     console.log('Updating package.json files...\n');
 
-    const files = await globby('dictionaries/*/package.json', { cwd: rootUrl, absolute: true });
+    const glob = process.argv[2] || 'dictionaries/*/package.json';
+
+    const files = await globby(glob, { cwd: rootUrl, absolute: true });
+
+    if (!files.length) {
+        console.log('No package.json files found.');
+        return;
+    }
 
     await Promise.all(files.map(updatePackageJson));
     console.log('\nDone.');
