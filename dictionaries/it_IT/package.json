@@ -15,7 +15,7 @@
     "sync": "pnpm cpy \"node_modules/dictionary-it/**\" src/hunspell",
     "conditional-build": "pnpm sync && pnpm build --conditional",
     "test-samples": "cspell -c ./cspell-ext.json --locale=it,en \"samples/**\"",
-    "test-dict": "set -o pipefail \n hunspell-reader words -n 1000 \"src/hunspell/index.dic\" | cspell -c ./cspell-ext.json \"--locale=it,it-IT\" \"--languageId=*\" stdin",
+    "test-dict": "pipe-cmds \"hunspell-reader words -n 1000 \\\"src/hunspell/index.dic\\\"\" \"cspell -c ./cspell-ext.json \\\"--locale=it,it-IT\\\" \\\"--languageId=*\\\" stdin\"",
     "test": "pnpm run test-samples && pnpm run test-dict",
     "prepublishOnly": "echo pre-publish"
   },

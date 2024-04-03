@@ -5,7 +5,8 @@
   "private": true,
   "type": "module",
   "bin": {
-    "update-package-json": "update-package-json.mjs"
+    "update-package-json": "update-package-json.mjs",
+    "pipe-cmds": "pipe-cmds.mjs"
   },
   "scripts": {
     "test": "echo \"Error: no test specified\""
@@ -15,7 +16,8 @@
   "license": "MIT",
   "dependencies": {
     "commander": "^12.0.0",
-    "globby": "^14.0.1"
+    "globby": "^14.0.1",
+    "shelljs": "^0.8.5"
   },
   "engines": {
     "node": ">=18.0.0"

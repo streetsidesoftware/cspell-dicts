@@ -15,7 +15,7 @@
     "build:conditional": "cspell-tools-cli build --conditional && pnpm gz",
     "gz": "cspell-tools-cli gzip \"*.trie\"",
     "prepare:dictionary": "pnpm gz",
-    "test:dict": "set -o pipefail \n hunspell-reader words -n 1000 \"src/hunspell/Turkish.dic\" | cspell -c ./cspell-ext.json --locale=tr --languageId=* stdin",
+    "test:dict": "pipe-cmds \"hunspell-reader words -n 1000 \\\"src/hunspell/Turkish.dic\\\"\" \"cspell -c ./cspell-ext.json --locale=tr --languageId=* stdin\"",
     "test:samples": "cspell samples",
     "test": "pnpm test:dict && pnpm test:samples",
     "prepublishOnly": "echo pre-publish"

@@ -13,7 +13,7 @@
   "scripts": {
     "build": "cspell-tools-cli build && pnpm prepare:dictionary",
     "build:conditional": "cspell-tools-cli build --conditional && pnpm prepare:dictionary",
-    "test": "set -o pipefail \n hunspell-reader words -n 1000 src/Slovak.dic | cspell -c ./cspell-ext.json --locale=sk --languageId=* stdin",
+    "test": "pipe-cmds \"hunspell-reader words -n 1000 src/Slovak.dic\" \"cspell -c ./cspell-ext.json --locale=sk --languageId=* stdin\"",
     "prepare:dictionary": "cspell-tools-cli gzip \"*.trie\"",
     "prepublishOnly": "echo pre-publish"
   },
