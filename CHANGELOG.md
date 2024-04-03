@@ -1,5 +1,23 @@
 # Release Notes
 
+## [25.0.0](https://github.com/streetsidesoftware/cspell-dicts/compare/cspell-dicts@24.7.0...cspell-dicts@25.0.0) (2024-04-03)
+
+
+### ⚠ BREAKING CHANGES
+
+* Use LGPL instead of GPL ([#3080](https://github.com/streetsidesoftware/cspell-dicts/issues/3080))
+
+### Updates and Bug Fixes
+
+* Add new valid words: comparabilidad, pizarrón, videollamada, relevamiento ([#3075](https://github.com/streetsidesoftware/cspell-dicts/issues/3075)) ([fd524d9](https://github.com/streetsidesoftware/cspell-dicts/commit/fd524d9bd3bad0869c70bec69bb799aa03bcd3a8))
+* Do not add to "words" ([#3084](https://github.com/streetsidesoftware/cspell-dicts/issues/3084)) ([efa1545](https://github.com/streetsidesoftware/cspell-dicts/commit/efa1545b7455cf914976200630dc40cc39bb3133))
+* Update the samples and README.md ([#3070](https://github.com/streetsidesoftware/cspell-dicts/issues/3070)) ([06c24b9](https://github.com/streetsidesoftware/cspell-dicts/commit/06c24b96eabb6488b1db085e7eff63660599f79e))
+* Use LGPL instead of GPL ([#3080](https://github.com/streetsidesoftware/cspell-dicts/issues/3080)) ([23e6558](https://github.com/streetsidesoftware/cspell-dicts/commit/23e655853b0a20a6265144920a48df080ac19235))
+* Workflow Bot -- Build Dictionaries ([#3073](https://github.com/streetsidesoftware/cspell-dicts/issues/3073)) ([bf6e193](https://github.com/streetsidesoftware/cspell-dicts/commit/bf6e1938d6889e2b03f01b5c4269d2bdb28174b7))
+* Workflow Bot -- Build Dictionaries ([#3077](https://github.com/streetsidesoftware/cspell-dicts/issues/3077)) ([7312f9c](https://github.com/streetsidesoftware/cspell-dicts/commit/7312f9ccaec6a742c5e35c35d78b0411575497cc))
+* Workflow Bot -- Build Dictionaries ([#3079](https://github.com/streetsidesoftware/cspell-dicts/issues/3079)) ([79395de](https://github.com/streetsidesoftware/cspell-dicts/commit/79395de628d1b034ded6fcd389f2491cab799e46))
+* Workflow Bot -- Build Dictionaries ([#3081](https://github.com/streetsidesoftware/cspell-dicts/issues/3081)) ([85c19d3](https://github.com/streetsidesoftware/cspell-dicts/commit/85c19d31d453be427a465d49d5cb6abdd7d818f0))
+
 ## [24.7.0](https://github.com/streetsidesoftware/cspell-dicts/compare/cspell-dicts@24.6.1...cspell-dicts@24.7.0) (2024-03-30)
 
 

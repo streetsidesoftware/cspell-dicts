@@ -3,6 +3,13 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+## [1.0.6](https://github.com/streetsidesoftware/cspell-dicts/compare/@cspell/dict-monkeyc@1.0.5...@cspell/dict-monkeyc@1.0.6) (2024-04-03)
+
+
+### Updates and Bug Fixes
+
+* Do not add to "words" ([#3084](https://github.com/streetsidesoftware/cspell-dicts/issues/3084)) ([efa1545](https://github.com/streetsidesoftware/cspell-dicts/commit/efa1545b7455cf914976200630dc40cc39bb3133))
+
 ## [1.0.5](https://github.com/streetsidesoftware/cspell-dicts/compare/@cspell/dict-monkeyc@1.0.4...@cspell/dict-monkeyc@1.0.5) (2023-02-22)
 
 
