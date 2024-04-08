@@ -72,6 +72,7 @@ Various [cspell](https://github.com/streetsidesoftware/cspell) dictionaries. Eac
 - [Django](dictionaries/django) - Django framework function names
 - [Docker](dictionaries/docker) - Dockerfile instructions
 - [.NET](dictionaries/dotnet)
+- [ELisp](dictionaries/elisp)
 - [Elixir](dictionaries/elixir)
 - [F#](dictionaries/fsharp)
 - [GIT](dictionaries/git)
