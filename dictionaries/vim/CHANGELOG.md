@@ -1,5 +1,12 @@
 # Change Log
 
+## [1.0.4](https://github.com/streetsidesoftware/cspell-dicts/compare/@cspell/dict-vim@1.0.3...@cspell/dict-vim@1.0.4) (2024-04-13)
+
+
+### Updates and Bug Fixes
+
+* **vim-dictionary:** add qflist ([#3097](https://github.com/streetsidesoftware/cspell-dicts/issues/3097)) ([457201a](https://github.com/streetsidesoftware/cspell-dicts/commit/457201a7761e0714d3b0e53bd3034de0492df530))
+
 ## [1.0.3](https://github.com/streetsidesoftware/cspell-dicts/compare/@cspell/dict-vim@1.0.2...@cspell/dict-vim@1.0.3) (2024-03-26)
 
 
