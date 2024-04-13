@@ -1,5 +1,13 @@
 # Change Log
 
+## [1.0.12](https://github.com/streetsidesoftware/cspell-dicts/compare/@cspell/dict-en-shared@1.0.11...@cspell/dict-en-shared@1.0.12) (2024-04-13)
+
+
+### Updates and Bug Fixes
+
+* add swiper to shared-additional-words.txt ([#3102](https://github.com/streetsidesoftware/cspell-dicts/issues/3102)) ([aecf218](https://github.com/streetsidesoftware/cspell-dicts/commit/aecf2187904095d03e783d4d95da393d98b62dbb))
+* Workflow Bot -- Build Dictionaries ([#3103](https://github.com/streetsidesoftware/cspell-dicts/issues/3103)) ([02c05e3](https://github.com/streetsidesoftware/cspell-dicts/commit/02c05e392198f3ac0b1cd9132d37b0c147405632))
+
 ## [1.0.11](https://github.com/streetsidesoftware/cspell-dicts/compare/@cspell/dict-en-shared@1.0.10...@cspell/dict-en-shared@1.0.11) (2024-02-19)
 
 

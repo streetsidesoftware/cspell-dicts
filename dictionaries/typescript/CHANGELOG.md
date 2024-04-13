@@ -3,6 +3,14 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+## [3.1.3](https://github.com/streetsidesoftware/cspell-dicts/compare/@cspell/dict-typescript@3.1.2...@cspell/dict-typescript@3.1.3) (2024-04-13)
+
+
+### Updates and Bug Fixes
+
+* add dataavailable and ondataavailable to typescript.txt ([#3101](https://github.com/streetsidesoftware/cspell-dicts/issues/3101)) ([5aa014b](https://github.com/streetsidesoftware/cspell-dicts/commit/5aa014babb7f3d96ffa4402175b44132108521b3))
+* Workflow Bot -- Build Dictionaries ([#3103](https://github.com/streetsidesoftware/cspell-dicts/issues/3103)) ([02c05e3](https://github.com/streetsidesoftware/cspell-dicts/commit/02c05e392198f3ac0b1cd9132d37b0c147405632))
+
 ## [3.1.2](https://github.com/streetsidesoftware/cspell-dicts/compare/@cspell/dict-typescript@3.1.1...@cspell/dict-typescript@3.1.2) (2023-09-22)
 
 
