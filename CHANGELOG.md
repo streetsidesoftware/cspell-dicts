@@ -1,5 +1,21 @@
 # Release Notes
 
+## [26.0.0](https://github.com/streetsidesoftware/cspell-dicts/compare/cspell-dicts@25.1.1...cspell-dicts@26.0.0) (2024-04-15)
+
+
+### ⚠ BREAKING CHANGES
+
+* Remove `cancelation` from node dict ([#3112](https://github.com/streetsidesoftware/cspell-dicts/issues/3112))
+
+### Updates and Bug Fixes
+
+* add "kanban" to software terms ([#3107](https://github.com/streetsidesoftware/cspell-dicts/issues/3107)) ([eb488c5](https://github.com/streetsidesoftware/cspell-dicts/commit/eb488c5adf76621f44ba47cc4517e2065375c5cb))
+* Remove `cancelation` from node dict ([#3112](https://github.com/streetsidesoftware/cspell-dicts/issues/3112)) ([63f6e7d](https://github.com/streetsidesoftware/cspell-dicts/commit/63f6e7d283b4da93abad0c1f38f81db6bae9b5c7))
+* Remove `persistance` from en_US ([#3114](https://github.com/streetsidesoftware/cspell-dicts/issues/3114)) ([1d6abd7](https://github.com/streetsidesoftware/cspell-dicts/commit/1d6abd7ddeeb7f5fbe37141d8230b585742df145))
+* Workflow Bot -- Build Dictionaries ([#3110](https://github.com/streetsidesoftware/cspell-dicts/issues/3110)) ([d5ee05d](https://github.com/streetsidesoftware/cspell-dicts/commit/d5ee05dfa61e68f8703db822ca9d074a4625d945))
+* Workflow Bot -- Build Dictionaries ([#3113](https://github.com/streetsidesoftware/cspell-dicts/issues/3113)) ([c37b0ae](https://github.com/streetsidesoftware/cspell-dicts/commit/c37b0ae8b9413ee3ab794f2273c36a105aaa8ca6))
+* Workflow Bot -- Build Dictionaries ([#3115](https://github.com/streetsidesoftware/cspell-dicts/issues/3115)) ([6d6e1ef](https://github.com/streetsidesoftware/cspell-dicts/commit/6d6e1efda472021fedc302b4aabffae677331ce3))
+
 ## [25.1.1](https://github.com/streetsidesoftware/cspell-dicts/compare/cspell-dicts@25.1.0...cspell-dicts@25.1.1) (2024-04-13)
 
 

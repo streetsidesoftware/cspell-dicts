@@ -3,6 +3,14 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+## [4.3.19](https://github.com/streetsidesoftware/cspell-dicts/compare/@cspell/dict-en_us@4.3.18...@cspell/dict-en_us@4.3.19) (2024-04-15)
+
+
+### Updates and Bug Fixes
+
+* Remove `persistance` from en_US ([#3114](https://github.com/streetsidesoftware/cspell-dicts/issues/3114)) ([1d6abd7](https://github.com/streetsidesoftware/cspell-dicts/commit/1d6abd7ddeeb7f5fbe37141d8230b585742df145))
+* Workflow Bot -- Build Dictionaries ([#3115](https://github.com/streetsidesoftware/cspell-dicts/issues/3115)) ([6d6e1ef](https://github.com/streetsidesoftware/cspell-dicts/commit/6d6e1efda472021fedc302b4aabffae677331ce3))
+
 ## [4.3.18](https://github.com/streetsidesoftware/cspell-dicts/compare/@cspell/dict-en_us@4.3.17...@cspell/dict-en_us@4.3.18) (2024-04-13)
 
 
