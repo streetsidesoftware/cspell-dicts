@@ -11,10 +11,10 @@
     "./cspell-ext.json": "./cspell-ext.json"
   },
   "scripts": {
-    "build-node": "node src/extract-api.js src/api/*.md",
-    "build": "cspell-tools-cli compile node.txt additional_words.txt --merge node --no-compress -o dict",
+    "build-node": "node src/extract-api.mjs src/api/*.md",
+    "build": "cspell-tools-cli build",
     "test": "pnpm test-dict",
-    "test-dict": "shx cat \"node.txt\" | cspell -c ./cspell-ext.json \"--locale=*\" \"--languageId=javascript\" stdin",
+    "test-dict": "shx cat \"src/node.txt\" | cspell -c ./cspell-ext.json \"--locale=*\" \"--languageId=javascript\" stdin",
     "prepublishOnly": "echo pre-publish",
     "prepare:dictionary": "pnpm run build"
   },
@@ -37,7 +37,7 @@
   },
   "homepage": "https://github.com/streetsidesoftware/cspell-dicts/blob/main/dictionaries/node#readme",
   "files": [
-    "dict/*",
+    "dict/*.txt",
     "cspell-ext.json"
   ]
 }

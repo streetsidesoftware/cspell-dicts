@@ -2,6 +2,7 @@
     "files": ["**/*.{md,txt}"],
     "dictionaries": ["node"],
     "ignoreWords": ["mdash"],
+    "ignorePaths": ["src/*.txt"],
     "import": ["./cspell-ext.json"],
     "overrides": [
         {

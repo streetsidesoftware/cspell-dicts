@@ -16,10 +16,10 @@
  *
  */
 
-const fs = require('fs');
+import { readFileSync, writeFileSync } from 'fs';
 
 function processFile(file) {
-    const content = fs.readFileSync(file, 'utf8');
+    const content = readFileSync(file, 'utf8');
     const words = extract(content);
     return `
 # From ${file}
@@ -34,16 +34,9 @@ function processFiles(files) {
         fileContents.push(processFile(file));
     }
 
-    const content = `
-# NodeJS Terms and phrases
-#
-# cspell:dictionaries node
-# cspell-tools: split keep-case
+    const content = fileContents.join('\n') + '\n';
 
-${fileContents.join('\n')}
-`;
-
-    fs.writeFileSync('node.txt', content);
+    writeFileSync('src/node.txt', content);
 }
 
 /**
