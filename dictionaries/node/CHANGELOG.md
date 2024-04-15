@@ -3,6 +3,18 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+## [5.0.0](https://github.com/streetsidesoftware/cspell-dicts/compare/@cspell/dict-node@4.0.3...@cspell/dict-node@5.0.0) (2024-04-15)
+
+
+### ⚠ BREAKING CHANGES
+
+* Remove `cancelation` from node dict ([#3112](https://github.com/streetsidesoftware/cspell-dicts/issues/3112))
+
+### Updates and Bug Fixes
+
+* Remove `cancelation` from node dict ([#3112](https://github.com/streetsidesoftware/cspell-dicts/issues/3112)) ([63f6e7d](https://github.com/streetsidesoftware/cspell-dicts/commit/63f6e7d283b4da93abad0c1f38f81db6bae9b5c7))
+* Workflow Bot -- Build Dictionaries ([#3113](https://github.com/streetsidesoftware/cspell-dicts/issues/3113)) ([c37b0ae](https://github.com/streetsidesoftware/cspell-dicts/commit/c37b0ae8b9413ee3ab794f2273c36a105aaa8ca6))
+
 ## [4.0.3](https://github.com/streetsidesoftware/cspell-dicts/compare/@cspell/dict-node@4.0.2...@cspell/dict-node@4.0.3) (2023-09-09)
 
 
