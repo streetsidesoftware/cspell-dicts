@@ -1,31 +1,13 @@
-
 # From src/api/addons.md
-
 --nodedir
 ./build/Debug/
 .cc
 .dll
 .node
 .so
+add()
 AddEnvironmentCleanupHook
 AddEnvironmentCleanupHook()
-DeleteInstance()
-Init()
-Initialize
-Local<Context> context
-Local<Object> exports
-Local<Value> module
-Makefile
-MyObject
-NODE_GYP_MODULE_NAME
-NODE_MODULE
-NODE_MODULE()
-NODE_MODULE_INIT()
-NODE_MODULE_INITIALIZER
-NewInstance()
-RemoveEnvironmentCleanupHook()
-Worker
-add()
 addon
 addon.cc
 addon.js
@@ -35,71 +17,62 @@ bindings
 build/
 build/Release/
 createObject()
+DeleteInstance()
 deps/
 deps/v8/include/v8.h
 exports
 hello.cc
 include <...>
 include <v8.h>
+Init()
+Initialize
+Local<Context> context
+Local<Object> exports
+Local<Value> module
+Makefile
 module
 module_name
 msg
+MyObject
 myobject.cc
 myobject.h
 nan
 new
+NewInstance()
+NODE_GYP_MODULE_NAME
+NODE_MODULE
+NODE_MODULE_INIT()
+NODE_MODULE_INITIALIZER
+NODE_MODULE()
 node-gyp
 node-gyp build
 node-gyp configure
-node.h
 node::AddEnvironmentCleanupHook()
 node::ObjectWrap
 node::ObjectWrap::Unwrap
+node.h
 npm
 npm install
 npm install -g node-gyp
 plusOne()
+RemoveEnvironmentCleanupHook()
 require( addon )
 require()
 sources
 try…catch
-v8.h
 v8::External
 v8::Function::New()
 v8::FunctionCallbackInfo::Data()
 v8::FunctionTemplate::New()
+v8.h
 vcxproj
-
+Worker
 
 # From src/api/assert.md
-
 .toString
-AssertionError
-CallTracker
-Class
-ERR_AMBIGUOUS_ARGUMENT
-ERR_ASSERTION
-ERR_INVALID_RETURN_VALUE
-Error
-Error.captureStackTrace
-Failed
-Map
-NODE_DISABLE_COLORS
-NO_COLOR
-NaN
-Object
-Object.is()
-Promise
-RegExp
-Set
-Symbol
-TypeError
-WeakMap
-WeakSet
 [[Prototype]]
 actual
 assert
-assert(value[, message])
 assert.CallTracker
 assert.deepEqual()
 assert.deepEqual(actual, expected[, message])
@@ -135,70 +108,80 @@ assert.strictEqual()
 assert.strictEqual(actual, expected[, message])
 assert.throws()
 assert.throws(fn[, error][, message])
+assert(value[, message])
+AssertionError
 asyncFn
+CallTracker
+Class
 code
+ERR_AMBIGUOUS_ARGUMENT
+ERR_ASSERTION
+ERR_INVALID_RETURN_VALUE
 error
+Error
+Error.captureStackTrace
 exact
 expected
+Failed
 fn
 generatedMessage
 ifError()
+Map
 message
 name
+NaN
 new assert.AssertionError(options)
 new assert.CallTracker()
+NO_COLOR
+NODE_DISABLE_COLORS
 null
+Object
+Object.is()
 operator
 options
 process.on( exit )
+Promise
 regexp
+RegExp
 repl
+Set
 stack
 stackStartFn
 string
+Symbol
 tracker.calls()
 tracker.calls([fn][, exact])
 tracker.report()
 tracker.verify()
 true
+TypeError
 undefined
 value
-value
-
+WeakMap
+WeakSet
 
 # From src/api/async_hooks.md
-
 --abort-on-uncaught-exception
 ...args
 .listen()
-AsyncHook
-AsyncLocalStorage
-AsyncResource
-AsyncResource.bind(fn[, type])
-EventEmitter
-GETADDRINFOREQWRAP
-Map
-PROMISE
-Promise
-Promise.resolve()
-Stream
-TCPSERVERWRAP
-TCPWRAP
-TCPWrap
-TickObject
-WeakMap
-Worker
-WorkerPoolTaskInfo
 after
 after()
 after(asyncId)
 async
+async_hooks
+async_hooks.createHook
+async_hooks.createHook(callbacks)
+async_hooks.executionAsyncId()
+async_hooks.executionAsyncResource()
+async_hooks.triggerAsyncId()
 async/await
 asyncHook
+AsyncHook
 asyncHook.disable()
 asyncHook.enable()
 asyncId
 asyncLocalStorage
+AsyncLocalStorage
 asyncLocalStorage.disable()
 asyncLocalStorage.enterWith()
 asyncLocalStorage.enterWith(store)
@@ -207,17 +190,13 @@ asyncLocalStorage.getStore()
 asyncLocalStorage.run()
 asyncLocalStorage.run(store, callback[, ...args])
 asyncResource
+AsyncResource
 asyncResource.asyncId()
 asyncResource.bind(fn)
+AsyncResource.bind(fn[, type])
 asyncResource.emitDestroy()
 asyncResource.runInAsyncScope(fn[, thisArg, ...args])
 asyncResource.triggerAsyncId()
-async_hooks
-async_hooks.createHook
-async_hooks.createHook(callbacks)
-async_hooks.executionAsyncId()
-async_hooks.executionAsyncResource()
-async_hooks.triggerAsyncId()
 await
 before
 before()
@@ -235,6 +214,7 @@ domain
 emitDestroy
 emitDestroy()
 enterWith
+EventEmitter
 eventEmitter.on()
 execution
 executionAsyncId()
@@ -246,19 +226,24 @@ fn
 foo
 fs.open()
 fs.writeFileSync(file, msg, flag)
+GETADDRINFOREQWRAP
 getStore
 getStore()
 init
 init()
 init(asyncId, type, triggerAsyncId, resource)
 listen()
+Map
 nc localhost 8080
-net.Server.listen()
 net.createServer()
+net.Server.listen()
 new AsyncLocalStorage()
 new AsyncResource(type[, options])
 options
 process.nextTick()
+Promise
+PROMISE
+Promise.resolve()
 promiseResolve
 promiseResolve(asyncId)
 requireManualDestroy
@@ -267,9 +252,14 @@ resolve()
 resource
 run
 store
+Stream
 task_processor.js
+TCPSERVERWRAP
+TCPWrap
+TCPWRAP
 then()
 thisArg
+TickObject
 triggerAsyncId
 triggerAsyncId()
 true
@@ -277,82 +267,27 @@ type
 uncaughtException
 undefined
 util.promisify()
-util.promisify()
-
+WeakMap
+Worker
+WorkerPoolTaskInfo
 
 # From src/api/buffer.md
-
 --zero-fill-buffers
 .buffer
 .byteLength
+[index, byte]
+[index]
+>= buf.length
 0 < byteLength <= 6
 0 <= offset <= buf.length - 1
 0 <= offset <= buf.length - 2
 0 <= offset <= buf.length - 4
 0 <= offset <= buf.length - 8
 0 <= offset <= buf.length - byteLength
->= buf.length
-Array
-ArrayBuffer
-Buffer
-Buffer slice()
-Buffer()
-Buffer(num)
-Buffer.alloc()
-Buffer.alloc(size, fill)
-Buffer.alloc(size[, fill[, encoding]])
-Buffer.allocUnsafe()
-Buffer.allocUnsafe(size)
-Buffer.allocUnsafe(size).fill(fill)
-Buffer.allocUnsafeSlow()
-Buffer.allocUnsafeSlow(size)
-Buffer.byteLength(string[, encoding])
-Buffer.compare(buf1, buf2)
-Buffer.concat()
-Buffer.concat(list[, totalLength])
-Buffer.from()
-Buffer.from(ArrayBuffer, byteOffset, length)
-Buffer.from(array)
-Buffer.from(arrayBuf)
-Buffer.from(arrayBuffer[, byteOffset[, length]])
-Buffer.from(buf)
-Buffer.from(buf.toJSON())
-Buffer.from(buffer)
-Buffer.from(object.valueOf(), offsetOrEncoding, length)
-Buffer.from(object[, offsetOrEncoding[, length]])
-Buffer.from(object[Symbol.toPrimitive]( string ), offsetOrEncoding)
-Buffer.from(string)
-Buffer.from(string[, encoding])
-Buffer.isBuffer(obj)
-Buffer.isEncoding(encoding)
-Buffer.poolSize
-Buffer.poolSize >> 1
-DataView
-ERR_INVALID_ARG_VALUE
-ERR_INVALID_BUFFER_SIZE
-ERR_OUT_OF_RANGE
-ISO-8859-1
-JSON.stringify()
-NaN
-SharedArrayBuffer
-SlowBuffer
-String indexOf()
-String lastIndexOf()
-String.prototype.length
-Symbol.toPrimitive
-TypeError
-TypedArray
-TypedArray set()
-TypedArray slice()
-TypedArray subarray()
-TypedArray.from()
-TypedArray.from(source[, mapFn[, thisArg]])
-Uint8Array
-Uint8Array.prototype.slice()
-[index, byte]
-[index]
 array
+Array
 arrayBuffer
+ArrayBuffer
 arrayBuffer.byteLength - byteOffset
 ascii
 base64
@@ -368,8 +303,8 @@ buf.entries()
 buf.equals(otherBuffer)
 buf.fill()
 buf.fill(0)
-buf.fill(fill)
 buf.fill(fill, encoding)
+buf.fill(fill)
 buf.fill(value[, offset[, end]][, encoding])
 buf.includes(value[, byteOffset][, encoding])
 buf.indexOf()
@@ -438,22 +373,59 @@ buf.writeUInt32LE(value[, offset])
 buf.writeUInt8(value[, offset])
 buf.writeUIntBE(value, offset, byteLength)
 buf.writeUIntLE(value, offset, byteLength)
+buf[index]
+buf[index] = value
 buf1
 buf1.compare(buf2)
 buf2
-buf[index]
-buf[index] = value
 buffer
-buffer.INSPECT_MAX_BYTES
+Buffer
+Buffer slice()
+Buffer.alloc()
+Buffer.alloc(size, fill)
+Buffer.alloc(size[, fill[, encoding]])
+Buffer.allocUnsafe()
+Buffer.allocUnsafe(size)
+Buffer.allocUnsafe(size).fill(fill)
+Buffer.allocUnsafeSlow()
+Buffer.allocUnsafeSlow(size)
+Buffer.byteLength(string[, encoding])
+Buffer.compare(buf1, buf2)
+Buffer.concat()
+Buffer.concat(list[, totalLength])
 buffer.constants.MAX_LENGTH
 buffer.constants.MAX_STRING_LENGTH
+Buffer.from()
+Buffer.from(array)
+Buffer.from(arrayBuf)
+Buffer.from(ArrayBuffer, byteOffset, length)
+Buffer.from(arrayBuffer[, byteOffset[, length]])
+Buffer.from(buf.toJSON())
+Buffer.from(buf)
+Buffer.from(buffer)
+Buffer.from(object.valueOf(), offsetOrEncoding, length)
+Buffer.from(object[, offsetOrEncoding[, length]])
+Buffer.from(object[Symbol.toPrimitive]( string ), offsetOrEncoding)
+Buffer.from(string)
+Buffer.from(string[, encoding])
+buffer.INSPECT_MAX_BYTES
+Buffer.isBuffer(obj)
+Buffer.isEncoding(encoding)
 buffer.kMaxLength
+Buffer.poolSize
+Buffer.poolSize >> 1
 buffer.transcode()
 buffer.transcode(source, fromEnc, toEnc)
+Buffer()
+Buffer(num)
 byteLength
 byteOffset
+DataView
 encoding
 end
+ERR_INVALID_ARG_VALUE
+ERR_INVALID_BUFFER_SIZE
+ERR_OUT_OF_RANGE
 false
 fill
 fill()
@@ -462,9 +434,12 @@ fromEnc
 hex
 http.get()
 index
+ISO-8859-1
+JSON.stringify()
 latin1
 length
 list
+NaN
 new Buffer("100")
 new Buffer()
 new Buffer(10)
@@ -484,7 +459,9 @@ otherBuffer
 require( buffer )
 require( buffer ).Buffer
 return a
+SharedArrayBuffer
 size
+SlowBuffer
 source
 sourceEnd
 sourceEnd > source.byteLength
@@ -492,6 +469,10 @@ sourceStart
 sourceStart < 0
 start
 string
+String indexOf()
+String lastIndexOf()
+String.prototype.length
+Symbol.toPrimitive
 target
 target.length
 targetEnd
@@ -501,8 +482,17 @@ targetStart < 0
 toEnc
 totalLength
 true
+TypedArray
+TypedArray set()
+TypedArray slice()
+TypedArray subarray()
+TypedArray.from()
+TypedArray.from(source[, mapFn[, thisArg]])
+TypeError
 ucs2
 uint32
+Uint8Array
+Uint8Array.prototype.slice()
 undefined
 utf-8
 utf16le
@@ -512,13 +502,8 @@ value
 value & 255
 valueOf()
 win-1252
-win-1252
-
 
 # From src/api/child_process.md
-
-%COMSPEC%
-(error, stdout, stderr)
 -c
 .abort()
 .bat
@@ -526,45 +511,31 @@ win-1252
 .kill()
 .maxConnections
 .unref()
-/bin/sh
-/d /s /c
-/dev/null
-AbortController
-AbortError
-ArrayBuffer
-BigInt
-Buffer
-ChildProcess
-ENOENT
-Error
-EventEmitter
-FILE_FLAG_OVERLAPPED
-Map
-NODE_
-NODE_CHANNEL_FD
-Object
-PATH
-Path
-Promise
-Readable Stream
-RegExp
-SIGINT
-SIGTERM
-Set
-TypedArray
-Writable Stream
+(error, stdout, stderr)
 [ ignore ,  ignore ,  ignore ]
 [ inherit ,  inherit ,  inherit ]
 [ overlapped ,  overlapped ,  overlapped ]
 [ pipe ,  pipe ,  pipe ]
 [0, 1, 2,  ipc ]
+{ shell: true }
+{ stdio:  ignore  }
+{cmd:  NODE_foo }
+/bin/sh
+/d /s /c
+/dev/null
+%COMSPEC%
+AbortController
+AbortError
 advanced
 args
-argv0
 argv[0]
+argv0
+ArrayBuffer
 bash
 bash some-command
+BigInt
 buffer
+Buffer
 callback
 child
 child_process
@@ -582,6 +553,7 @@ child_process.spawn()
 child_process.spawn(command[, args][, options])
 child_process.spawnSync()
 child_process.spawnSync(command[, args][, options])
+ChildProcess
 close
 cmd
 cmd.exe
@@ -595,16 +567,20 @@ dgram
 disconnect
 encoding
 end()
+ENOENT
 env
 err
 error
+Error
 error.code
 error.signal
+EventEmitter
 execArgv
 execPath
 exit
 false
 file
+FILE_FLAG_OVERLAPPED
 gid
 ignore
 inherit
@@ -614,16 +590,20 @@ ipc
 json
 keepOpen
 kill
-killSignal
 killed
+killSignal
 ls -lh /usr
+Map
 maxBuffer
 message
 modulePath
 net
 net.Server
 net.Socket
+NODE_
+NODE_CHANNEL_FD
 null
+Object
 open
 options
 options.detached
@@ -633,10 +613,12 @@ output
 output[1]
 output[2]
 overlapped
+Path
+PATH
 pid
 pipe
-process.argv0
 process.argv[0]
+process.argv0
 process.connected
 process.disconnect()
 process.env
@@ -648,14 +630,20 @@ process.send()
 process.stderr
 process.stdin
 process.stdout
+Promise
 ps ax | grep ssh
+Readable Stream
+RegExp
 sendHandle
 sendHandler
 serialization
 server.bind()
 server.listen()
+Set
 shell
+SIGINT
 signal
+SIGTERM
 silent
 socket
 some-command
@@ -698,6 +686,7 @@ subprocess.stdout
 subprocess.unref()
 timeout
 true
+TypedArray
 uid
 undefined
 unref()
@@ -706,21 +695,9 @@ util.promisify()
 v8
 windowsHide
 windowsVerbatimArguments
-{ shell: true }
-{ stdio:  ignore  }
-{cmd:  NODE_foo }
-
+Writable Stream
 
 # From src/api/cli.md
-
-"commonjs"
-"default"
-"import"
-"module"
-"node"
-"require"
-${pid}
-${rotation}
 --abort-on-uncaught-exception
 --check
 --completion-bash
@@ -780,8 +757,8 @@ ${rotation}
 --inspect-port=[host:]port
 --inspect-publish-uid
 --inspect-publish-uid=stderr,http
---inspect=0.0.0.0
 --inspect[=[host:]port]
+--inspect=0.0.0.0
 --interactive
 --interpreted-frames-native-stack
 --jitless
@@ -796,8 +773,8 @@ ${rotation}
 --node-memory-debug
 --openssl-config
 --openssl-config=file
---pending-deprecation
 --pending_deprecation
+--pending-deprecation
 --perf-basic-prof
 --perf-basic-prof-only-functions
 --perf-prof
@@ -870,21 +847,72 @@ ${rotation}
 -r
 -v
 ./configure --openssl-fips
+"commonjs"
+"default"
+"import"
+"module"
+"node"
+"require"
 /json/list
+~/.node_repl_history
+${pid}
+${rotation}
 AbortController
 AbortSignal
 Array
+async_hooks
 Atomics.wait
 Atomics.wait()
+await
 Buffer
+ca
+child_process.spawn()
+cmd.exe
+count
+coverage
 CPU.${yyyymmdd}.${hhmmss}.${pid}.${tid}.${seq}.cpuprofile
+crypto.generateKeyPair()
+crypto.pbkdf2()
+crypto.randomBytes()
+crypto.randomFill()
+crypto.scrypt()
+data
+delete
+dns.lookup()
+domain
 ERR_PROTO_ACCESS
 Error
 Error.prepareStackTrace
+eval
+explicit
+file
+fs
+gdb
+global.Array
 Heap.${yyyymmdd}.${hhmmss}.${pid}.${tid}.${seq}.heapprofile
+host
+host:port
+http://host:port/json/list
+import.meta.resolve()
 Intl
-NODE_DEBUG=module[,…]
+lineLengths
+lldb
+man node
+max_count
+mdb
+mode
+module
+moduleA
+moduleB
+new Function
+node
+node --preserve-symlinks node_module/.bin/<foo>
+node --v8-options
+node [options] [V8 options] [script.js | -e "script" | -] [--] [arguments]
+node inspect
+node inspect [script.js | -e "script" | <host>:<port>] …
 NODE_DEBUG_NATIVE=module[,…]
+NODE_DEBUG=module[,…]
 NODE_DISABLE_COLORS=1
 NODE_EXTRA_CA_CERTS=file
 NODE_ICU_DATA
@@ -903,110 +931,59 @@ NODE_SKIP_PLATFORM_CHECK=value
 NODE_TLS_REJECT_UNAUTHORIZED=value
 NODE_V8_COVERAGE
 NODE_V8_COVERAGE=dir
-OPENSSL_CONF=file
+none
 Object
 Object.prototype.__proto__
-SIGUSR1
-SIGUSR2
-SSLKEYLOGFILE
-SSL_CERT_DIR
-SSL_CERT_DIR=dir
-SSL_CERT_FILE
-SSL_CERT_FILE=file
-STDIN
-SharedArrayBuffer
-SlowBuffer
-UV_THREADPOOL_SIZE
-UV_THREADPOOL_SIZE=size
-async_hooks
-await
-ca
-child_process.spawn()
-cmd.exe
-count
-coverage
-crypto.generateKeyPair()
-crypto.pbkdf2()
-crypto.randomBytes()
-crypto.randomFill()
-crypto.scrypt()
-data
-delete
-dns.lookup()
-domain
-eval
-explicit
-file
-fs
-gdb
-global.Array
-host
-host:port
-http://host:port/json/list
-import.meta.resolve()
-lineLengths
-lldb
-man node
-max_count
-mdb
-mode
-module
-moduleA
-moduleB
-new Function
-node
-node --preserve-symlinks node_module/.bin/<foo>
-node --v8-options
-node [options] [V8 options] [script.js | -e "script" | -] [--] [arguments]
-node inspect
-node inspect [script.js | -e "script" | <host>:<port>] …
-none
 off
 on
+OPENSSL_CONF=file
 options...
 process.emitWarning()
 process.exit()
 process.setUncaughtExceptionCaptureCallback()
 process.title
 report-directory=directory
-require()
 require.main
+require()
 result
 script
+SharedArrayBuffer
 signal
+SIGUSR1
+SIGUSR2
 silent
 size
+SlowBuffer
 source-map-cache
+SSL_CERT_DIR
+SSL_CERT_DIR=dir
+SSL_CERT_FILE
+SSL_CERT_FILE=file
+SSLKEYLOGFILE
 stderr
+STDIN
 strict
 throw
 tls.DEFAULT_MAX_VERSION
 tls.DEFAULT_MIN_VERSION
 unhandledRejection
 url
+UV_THREADPOOL_SIZE
+UV_THREADPOOL_SIZE=size
 value
 vm
 warn
 warn-with-error-code
 worker_threads.threadId
 zlib
-~/.node_repl_history
-
 
 # From src/api/cluster.md
-
 .disconnect()
 .exitedAfterDisconnect
 .fork()
 .kill()
 .process
 .setupMaster()
-ChildProcess.send()
-NODE_CLUSTER_SCHED_POLICY
-SCHED_RR
-SIGHUP
-SIGTERM
-Worker
 address
 addressType
 advanced
@@ -1014,10 +991,9 @@ args
 callback
 child_process
 child_process.fork()
+ChildProcess.send()
 close
 cluster
-cluster.SCHED_NONE
-cluster.SCHED_RR
 cluster.disconnect([callback])
 cluster.fork([env])
 cluster.isMaster
@@ -1026,6 +1002,8 @@ cluster.on( disconnect )
 cluster.on( exit )
 cluster.on( listening )
 cluster.on( online )
+cluster.SCHED_NONE
+cluster.SCHED_RR
 cluster.schedulingPolicy
 cluster.settings
 cluster.setupMaster()
@@ -1057,6 +1035,7 @@ listen(0)
 listening
 message
 net.Socket
+NODE_CLUSTER_SCHED_POLICY
 none
 online
 options
@@ -1074,17 +1053,20 @@ process.on( error )
 process.on( message )
 process.send()
 rr
+SCHED_RR
 sendHandle
 serialization
 server.close()
 server.listen()
+server.listen({fd: 7})
 server.listen(0)
 server.listen(handle)
-server.listen({fd: 7})
 settings
 setup
 setupMaster
+SIGHUP
 signal
+SIGTERM
 silent
 stdio
 true
@@ -1094,6 +1076,7 @@ uid
 undefined
 windowsHide
 worker
+Worker
 worker.destroy()
 worker.disconnect()
 worker.exitedAfterDisconnect
@@ -1105,27 +1088,24 @@ worker.process
 worker.process.kill()
 worker.send(message[, sendHandle[, options]][, callback])
 
-
 # From src/api/console.md
-
-"Assertion failed"
-%d
 --inspect
 ...args
 ...data
 ...label
 ...message
-Console
-Trace:
+"Assertion failed"
+%d
 auto
 clear
 colorMode
 colors
 console
-console.Console
+Console
 console.assert()
 console.assert(value[, ...message])
 console.clear()
+console.Console
 console.count()
 console.count([label])
 console.countReset([label])
@@ -1185,21 +1165,18 @@ showHidden
 stderr
 stdout
 tabularData
+Trace:
 true
 util.format()
 util.inspect()
 value
-value
-
 
 # From src/api/crypto.md
-
 (r, s)
-0x0
-128 * N * r > maxmem
-2 ** (8 * (15 - N))
-7 ≤ N ≤ 13
+{ publicKey, privateKey }
 <code>ALPN_ENABLED</code>
+<code>defaultCipherList</code>
+<code>defaultCoreCipherList</code>
 <code>DH_CHECK_P_NOT_PRIME</code>
 <code>DH_CHECK_P_NOT_SAFE_PRIME</code>
 <code>DH_NOT_SUITABLE_GENERATOR</code>
@@ -1252,10 +1229,10 @@ value
 <code>SSL_OP_NO_SSLv2</code>
 <code>SSL_OP_NO_SSLv3</code>
 <code>SSL_OP_NO_TICKET</code>
-<code>SSL_OP_NO_TLSv1</code>
 <code>SSL_OP_NO_TLSv1_1</code>
 <code>SSL_OP_NO_TLSv1_2</code>
 <code>SSL_OP_NO_TLSv1_3</code>
+<code>SSL_OP_NO_TLSv1</code>
 <code>SSL_OP_PKCS1_CHECK_1</code>
 <code>SSL_OP_PKCS1_CHECK_2</code>
 <code>SSL_OP_PRIORITIZE_CHACHA</code>
@@ -1266,54 +1243,17 @@ value
 <code>SSL_OP_TLS_BLOCK_PADDING_BUG</code>
 <code>SSL_OP_TLS_D5_BUG</code>
 <code>SSL_OP_TLS_ROLLBACK_BUG</code>
-<code>defaultCipherList</code>
-<code>defaultCoreCipherList</code>
 <keygen>
-ArrayBuffer
-Buffer
-CCM
-Certificate
-Certificate.exportChallenge(spkac[, encoding])
-Certificate.exportPublicKey(spkac[, encoding])
-Certificate.verifySpkac(spkac[, encoding])
-Cipher
-DH_CHECK_P_NOT_PRIME
-DH_CHECK_P_NOT_SAFE_PRIME
-DH_NOT_SUITABLE_GENERATOR
-DH_UNABLE_TO_CHECK_GENERATOR
-DataView
-Decipher
-DiffieHellman
-DiffieHellmanGroup
-ECDH
-ECDH.convertKey(key, curve[, inputEncoding[, outputEncoding[, format]]])
-ENGINE_METHOD_ALL
-ERR_CRYPTO_ECDH_INVALID_PUBLIC_KEY
-EVP_BytesToKey
-Error
-GCM
-Hash
-Hmac
-KeyObject
-Math.floor(length / 8)
-N
-OCB
-Object
-Promise
-RSA-SHA256
-RSA_PKCS1_OAEP_PADDING
-RSA_PKCS1_PADDING
-RSA_PKCS1_PSS_PADDING
-Sign
-TypedArray
-UV_THREADPOOL_SIZE
-Uint16Array
-Verify
+0x0
+128 * N * r > maxmem
+2 ** (8 * (15 - N))
+7 ≤ N ≤ 13
 a
 aes
 aes-128-ccm
 aes192
 algorithm
+ArrayBuffer
 asymmetricKeyType
 authTagLength
 autoPadding
@@ -1322,15 +1262,22 @@ blockSize
 bool
 buf
 buffer
+Buffer
 buffer.length - offset
 callback
 cbc
 ccm
+CCM
+Certificate
 certificate.exportChallenge(spkac[, encoding])
+Certificate.exportChallenge(spkac[, encoding])
 certificate.exportPublicKey(spkac[, encoding])
+Certificate.exportPublicKey(spkac[, encoding])
 certificate.verifySpkac(spkac[, encoding])
+Certificate.verifySpkac(spkac[, encoding])
 cfb
 cipher
+Cipher
 cipher.final()
 cipher.final([outputEncoding])
 cipher.getAuthTag()
@@ -1347,7 +1294,6 @@ cost
 crypto
 crypto.Certificate
 crypto.Certificate()
-crypto.DEFAULT_ENCODING
 crypto.constants
 crypto.constants.ENGINE_METHOD_ALL
 crypto.constants.ENGINE_METHOD_CIPHERS
@@ -1379,8 +1325,8 @@ crypto.createDecipher(algorithm, password[, options])
 crypto.createDecipheriv()
 crypto.createDecipheriv(algorithm, key, iv[, options])
 crypto.createDiffieHellman()
-crypto.createDiffieHellman(primeLength[, generator])
 crypto.createDiffieHellman(prime[, primeEncoding][, generator][, generatorEncoding])
+crypto.createDiffieHellman(primeLength[, generator])
 crypto.createDiffieHellmanGroup(name)
 crypto.createECDH()
 crypto.createECDH(curveName)
@@ -1398,6 +1344,7 @@ crypto.createSign()
 crypto.createSign(algorithm[, options])
 crypto.createVerify()
 crypto.createVerify(algorithm[, options])
+crypto.DEFAULT_ENCODING
 crypto.diffieHellman(options)
 crypto.fips
 crypto.generateKey(type, options, callback)
@@ -1445,6 +1392,8 @@ ctr
 curve
 curveName
 data
+DataView
+Decipher
 decipher.final()
 decipher.final([outputEncoding])
 decipher.setAAD()
@@ -1459,6 +1408,11 @@ decipher.update(data[, inputEncoding][, outputEncoding])
 der
 derivedKey
 dh
+DH_CHECK_P_NOT_PRIME
+DH_CHECK_P_NOT_SAFE_PRIME
+DH_NOT_SUITABLE_GENERATOR
+DH_UNABLE_TO_CHECK_GENERATOR
+DiffieHellman
 diffieHellman.computeSecret(otherPublicKey[, inputEncoding][, outputEncoding])
 diffieHellman.generateKeys([encoding])
 diffieHellman.getGenerator([encoding])
@@ -1469,6 +1423,7 @@ diffieHellman.setPrivateKey(privateKey[, encoding])
 diffieHellman.setPublicKey()
 diffieHellman.setPublicKey(publicKey[, encoding])
 diffieHellman.verifyError
+DiffieHellmanGroup
 digest
 digest()
 divisorLength
@@ -1476,8 +1431,10 @@ dsa
 dsaEncoding
 ec
 ecb
+ECDH
 ecdh.computeSecret
 ecdh.computeSecret(otherPublicKey[, inputEncoding][, outputEncoding])
+ECDH.convertKey(key, curve[, inputEncoding[, outputEncoding[, format]]])
 ecdh.generateKeys()
 ecdh.generateKeys([encoding[, format]])
 ecdh.getPrivateKey([encoding])
@@ -1492,7 +1449,11 @@ ed448
 encoding
 end(data)
 engine
+ENGINE_METHOD_ALL
 err
+ERR_CRYPTO_ECDH_INVALID_PUBLIC_KEY
+Error
+EVP_BytesToKey
 false
 final()
 flags
@@ -1500,16 +1461,19 @@ format
 function(err, buf) {}
 function(err, n) {}
 gcm
+GCM
 generator
 generatorEncoding
 getAuthTag()
 groupName
+Hash
 hash.copy([options])
 hash.digest()
 hash.digest([encoding])
 hash.update()
 hash.update(data[, inputEncoding])
 hmac
+Hmac
 hmac.digest()
 hmac.digest([encoding])
 hmac.update()
@@ -1524,17 +1488,19 @@ iv
 ivLength
 ivLenth
 key
+keygen
+keylen
 keyLength
 keyLenth
+KeyObject
 keyObject.asymmetricKeyType
 keyObject.export()
 keyObject.export([options])
 keyObject.symmetricKeySize
 keyObject.type
-keygen
-keylen
 latin1
 length
+Math.floor(length / 8)
 max
 max - min
 maxmem
@@ -1551,9 +1517,10 @@ modp2
 modp5
 modulusLength
 n
+N
 name
-nameOrNid
 namedCurve
+nameOrNid
 new
 new crypto.Certificate()
 nid
@@ -1561,7 +1528,9 @@ null
 oaepHash
 oaepLabel
 object
+Object
 ocb
+OCB
 ofb
 offset
 openssl ecparam -list_curves
@@ -1591,6 +1560,7 @@ primeLength
 private
 privateKey
 privateKeyEncoding
+Promise
 public
 publicExponent
 publicKey
@@ -1602,7 +1572,11 @@ randomBytes
 randomFill
 require( crypto )
 rsa
+RSA_PKCS1_OAEP_PADDING
+RSA_PKCS1_PADDING
+RSA_PKCS1_PSS_PADDING
 rsa-pss
+RSA-SHA256
 salt
 saltLength
 sec1
@@ -1613,6 +1587,7 @@ sha1
 sha256
 sha512
 shake256
+Sign
 sign.sign()
 sign.sign(privateKey[, outputEncoding])
 sign.update()
@@ -1624,18 +1599,22 @@ size
 spkac
 spki
 stream
-stream.Writable
 stream.transform
+stream.Writable
 tls
 transferList
 true
 type
+TypedArray
+Uint16Array
 uncompressed
 undefined
 update()
 utf8
 util.promisify()
+UV_THREADPOOL_SIZE
 verify
+Verify
 verify.update()
 verify.update(data[, inputEncoding])
 verify.verify()
@@ -1645,11 +1624,8 @@ write(data)
 x25519
 x448
 xts
-{ publicKey, privateKey }
-
 
 # From src/api/debugger.md
-
 --inspect
 --inspect-brk
 --inspect=9222
@@ -1678,14 +1654,14 @@ repl
 restart
 run
 s
-sb()
 sb(...)
+sb()
 sb(line)
 script.js
 scripts
 setBreakpoint( fn() )
-setBreakpoint( script.js , 1)
 setBreakpoint( script.js , 1,  num < 4 )
+setBreakpoint( script.js , 1)
 setBreakpoint()
 setBreakpoint(line)
 step
@@ -1696,12 +1672,15 @@ version
 watch( my_expression )
 watch(expr)
 watchers
-watchers
-
 
 # From src/api/deprecations.md
-
-"exports"
+_builtinLibs
+_channel
+_handle
+_linklist
+_stream_wrap
+_writableState.buffer
+_writableState.getBuffer()
 --debug
 --http-parser=legacy
 --inspect
@@ -1717,118 +1696,13 @@ watchers
 .inspect()
 .output
 .outputStream
-Array.isArray()
-AsyncResource
-AsyncResource.emitAfter
-AsyncResource.emitBefore
-Buffer
-Buffer (read|write)
-Buffer()
-Buffer.alloc(size[, fill[, encoding]])
-Buffer.allocUnsafe(size)
-Buffer.allocUnsafeSlow(size)
-Buffer.from(array)
-Buffer.from(arrayBuffer[, byteOffset[, length]])
-Buffer.from(buffer)
-Buffer.from(string[, encoding])
-Buffer.isBuffer()
-COUNTER_HTTP_CLIENT_REQUEST()
-COUNTER_HTTP_CLIENT_RESPONSE()
-COUNTER_HTTP_SERVER_REQUEST()
-COUNTER_HTTP_SERVER_RESPONSE()
-COUNTER_NET_SERVER_CONNECTION()
-COUNTER_NET_SERVER_CONNECTION_CLOSE()
-CallbackScope
-ChildProcess._channel
-ChildProcess.channel
-Cipher
-Cipher.setAuthTag()
-CryptoStream.prototype.readyState
-Decipher
-Decipher.getAuthTag()
-DiffieHellman
-DiffieHellmanGroup
-Domain.dispose
-Domain.dispose()
-ECDH
-EventEmitter.listenerCount()
-FileHandle.prototype.close()
-GLOBAL
-Hash
-Hmac
-Intl.Segmenter
-Intl.v8BreakIterator
-MakeCallback
-Module._debug()
-Module.createRequireFromPath()
-NODE_PENDING_DEPRECATION=1
-NODE_REPL_HISTORY
-NODE_REPL_HISTORY_FILE
-NODE_REPL_MODE
-NODE_REPL_MODE=magic
-OutgoingMessage.prototype._headerNames
-OutgoingMessage.prototype._headers
-OutgoingMessage.prototype._headers, OutgoingMessage.prototype._headerNames
-OutgoingMessage.prototype._renderHeaders
-OutgoingMessage.prototype._renderHeaders()
-OutgoingMessage.prototype.flush()
-OutgoingMessage.prototype.flushHeaders()
-OutgoingMessage.prototype.getHeader()
-OutgoingMessage.prototype.getHeaderNames()
-OutgoingMessage.prototype.getHeaders()
-OutgoingMessage.prototype.hasHeader()
-OutgoingMessage.prototype.removeHeader()
-OutgoingMessage.prototype.setHeader()
-Promise
-REPLServer
-REPLServer.bufferedCommand
-REPLServer.clearBufferedCommand()
-REPLServer.parseREPLKeyword()
-REPLServer.prototype.convertToContext()
-REPLServer.prototype.memory()
-REPLServer.rli
-REPLServer.turnOffEditorMode()
-REPL_MODE_MAGIC
-REPL_MODE_SLOPPY
-ReadStream.open()
-SHA1
-Server.connections
-Server.getConnections()
-Server.listen({fd: <number>})
-Server.listenFD
-Server.listenFD()
-Server.prototype.setOptions()
-Server.prototype.setSecureContext()
-ServerResponse.prototype.writeHead()
-ServerResponse.prototype.writeHeader()
-Sign
-SlowBuffer
-Socket.prototype._bindState
-Socket.prototype._handle
-Socket.prototype._healthCheck()
-Socket.prototype._queue
-Socket.prototype._receiving
-Socket.prototype._reuseAddr
-Socket.prototype._stopReceiving()
-String
-Transform._transformState
-TypeError
-Verify
-Worker
-WriteStream.open()
-_builtinLibs
-_channel
-_handle
-_linklist
-_stream_wrap
-_writableState.buffer
-_writableState.getBuffer()
+"exports"
 after
 array
+Array.isArray()
 arrayBuffer
 assert
 assert.fail()
-asyncResource.runInAsyncScope()
 async_context
 async_hooks
 async_hooks.AsyncResource.triggerAsyncId()
@@ -1837,9 +1711,29 @@ async_hooks.currentId()
 async_hooks.executionAsyncId()
 async_hooks.triggerAsyncId()
 async_hooks.triggerId()
+AsyncResource
+AsyncResource.emitAfter
+AsyncResource.emitBefore
+asyncResource.runInAsyncScope()
 before
 buffer
+Buffer
+Buffer (read|write)
+Buffer.alloc(size[, fill[, encoding]])
+Buffer.allocUnsafe(size)
+Buffer.allocUnsafeSlow(size)
+Buffer.from(array)
+Buffer.from(arrayBuffer[, byteOffset[, length]])
+Buffer.from(buffer)
+Buffer.from(string[, encoding])
+Buffer.isBuffer()
+Buffer()
+CallbackScope
 child_process
+ChildProcess._channel
+ChildProcess.channel
+Cipher
+Cipher.setAuthTag()
 ciphers
 clearInterval()
 clearTimeout()
@@ -1848,10 +1742,14 @@ connection
 console.error()
 console.log()
 constants
-crypto.Certificate()
-crypto.Credentials
-crypto.DEFAULT_ENCODING
+COUNTER_HTTP_CLIENT_REQUEST()
+COUNTER_HTTP_CLIENT_RESPONSE()
+COUNTER_HTTP_SERVER_REQUEST()
+COUNTER_HTTP_SERVER_RESPONSE()
+COUNTER_NET_SERVER_CONNECTION_CLOSE()
+COUNTER_NET_SERVER_CONNECTION()
 crypto._toBuf()
+crypto.Certificate()
 crypto.createCipher
 crypto.createCipher()
 crypto.createCipheriv()
@@ -1860,6 +1758,8 @@ crypto.createCredentials()
 crypto.createDecipher
 crypto.createDecipher()
 crypto.createDecipheriv()
+crypto.Credentials
+crypto.DEFAULT_ENCODING
 crypto.fips
 crypto.getFips()
 crypto.pbkdf2
@@ -1871,34 +1771,43 @@ crypto.randomBytes()
 crypto.rng()
 crypto.scrypt()
 crypto.setFips()
+CryptoStream.prototype.readyState
+Decipher
 decipher.final()
 decipher.finaltol
 decipher.finaltol()
+Decipher.getAuthTag()
 decipher.setAuthTag()
 dgram
 dgram._createSocketHandle()
+DiffieHellman
+DiffieHellmanGroup
 digest
 dns.lookup()
 dns.lookup(false)
 domain
+Domain.dispose
+Domain.dispose()
+ECDH
 ecdh.setPublicKey()
 ecdhCurve
 emitter.listenerCount(eventName)
+EventEmitter.listenerCount()
 events.listenerCount(emitter, eventName)
 exec()
 exit
 exports
 false
+FileHandle.prototype.close()
 finish
 finished
 fork()
 fs
-fs.FileHandle
-fs.SyncWriteStream
 fs.access()
 fs.createReadStream()
 fs.createWriteStream()
 fs.exists(path, callback)
+fs.FileHandle
 fs.ftruncate()
 fs.ftruncateSync()
 fs.lchmod(path, mode, callback)
@@ -1912,27 +1821,36 @@ fs.readSync()
 fs.rm(path, { recursive: true, force: true })
 fs.rmdir(path, { recursive: true })
 fs.stat()
+fs.SyncWriteStream
 fs.truncate()
 fs.truncateSync()
 global
+GLOBAL
+Hash
+Hmac
 http
-http.OutgoingMessage.prototype.flush
 http.get()
+http.OutgoingMessage.prototype.flush
 http.request()
 https
 https.get()
 https.request()
 index.js
 inspect
+Intl.Segmenter
+Intl.v8BreakIterator
 magic
 main
+MakeCallback
 module
+Module._debug()
 module.children
 module.createRequire()
+Module.createRequireFromPath()
 module.exports
 module.parent
-net.Server
 net._setSimultaneousAccepts()
+net.Server
 new Buffer()
 new crypto.Certificate()
 noAssert
@@ -1940,19 +1858,37 @@ node
 node --debug
 node debug
 node inspect
+node_modules
+NODE_PENDING_DEPRECATION=1
+NODE_REPL_HISTORY
+NODE_REPL_HISTORY_FILE
+NODE_REPL_MODE
+NODE_REPL_MODE=magic
 node-inspect
 node-inspect/lib/_inspect
 node-inspect/lib/internal/inspect_client
 node-inspect/lib/internal/inspect_repl
 node::MakeCallback
-node_modules
 null
 options.customFds
 options.stdio
 os.getNetworkInterfaces()
 os.networkInterfaces()
-os.tmpDir()
 os.tmpdir()
+os.tmpDir()
+OutgoingMessage.prototype._headerNames
+OutgoingMessage.prototype._headers
+OutgoingMessage.prototype._headers, OutgoingMessage.prototype._headerNames
+OutgoingMessage.prototype._renderHeaders
+OutgoingMessage.prototype._renderHeaders()
+OutgoingMessage.prototype.flush()
+OutgoingMessage.prototype.flushHeaders()
+OutgoingMessage.prototype.getHeader()
+OutgoingMessage.prototype.getHeaderNames()
+OutgoingMessage.prototype.getHeaders()
+OutgoingMessage.prototype.hasHeader()
+OutgoingMessage.prototype.removeHeader()
+OutgoingMessage.prototype.setHeader()
 path
 path._makeLong()
 path.toNamespacedPath()
@@ -1966,21 +1902,36 @@ process.env
 process.mainModule
 process.umask()
 produceCachedData
+Promise
 punycode
 querystring.parse()
+ReadStream.open()
 repl
-repl.REPL_MODE_MAGIC
+REPL_MODE_MAGIC
+REPL_MODE_SLOPPY
 repl._builtinLibs
 repl.inputStream
 repl.outputStream
+repl.REPL_MODE_MAGIC
 replMode
+REPLServer
+REPLServer.bufferedCommand
+REPLServer.clearBufferedCommand()
+REPLServer.parseREPLKeyword()
+REPLServer.prototype.convertToContext()
+REPLServer.prototype.memory()
+REPLServer.rli
+REPLServer.turnOffEditorMode()
 request.abort()
 request.connection
 request.destroy()
 request.socket
-require( . )
+require.cache
+require.extensions
+require.main
 require( _linklist )
 require( _stream_wrap )
+require( . )
 require( assert )
 require( constants )
 require( fs ).constants
@@ -1988,9 +1939,6 @@ require( module ).builtinModules
 require( os ).constants
 require( sys )
 require()
-require.cache
-require.extensions
-require.main
 response.connection
 response.end()
 response.finished
@@ -2000,13 +1948,33 @@ response.writableFinished
 root
 runInAsyncIdScope
 script.createCachedData()
+Server.connections
+Server.getConnections()
+Server.listen({fd: <number>})
+Server.listenFD
+Server.listenFD()
+Server.prototype.setOptions()
+Server.prototype.setSecureContext()
+ServerResponse.prototype.writeHead()
+ServerResponse.prototype.writeHeader()
 setInterval()
 setTimeout()
+SHA1
+Sign
 sloppy
+SlowBuffer
 socket.bufferSize
+Socket.prototype._bindState
+Socket.prototype._handle
+Socket.prototype._healthCheck()
+Socket.prototype._queue
+Socket.prototype._receiving
+Socket.prototype._reuseAddr
+Socket.prototype._stopReceiving()
 spawn()
 stderr
 string
+String
 suicide
 sys
 this
@@ -2018,16 +1986,18 @@ timers.active()
 timers.enroll()
 timers.unenroll()
 tls
-tls.CryptoStream
-tls.SecureContext
-tls.SecurePair
-tls.Socket
-tls.TLSSocket
 tls.checkServerIdentity()
 tls.convertNPNProtocols()
 tls.createSecureContext()
 tls.createSecurePair()
+tls.CryptoStream
 tls.parseCertString()
+tls.SecureContext
+tls.SecurePair
+tls.Socket
+tls.TLSSocket
+Transform._transformState
+TypeError
 undefined
 url.format()
 url.parse()
@@ -2038,8 +2008,8 @@ util._extend()
 util.debug()
 util.error()
 util.getSystemErrorName()
-util.inspect()
 util.inspect.custom
+util.inspect()
 util.isArray()
 util.isBoolean()
 util.isBuffer()
@@ -2060,78 +2030,60 @@ util.print()
 util.puts()
 util.types
 v8/*
-v8/tools/SourceMap
 v8/tools/codemap
 v8/tools/consarray
 v8/tools/csvparser
 v8/tools/logreader
 v8/tools/profile
 v8/tools/profile_view
+v8/tools/SourceMap
 v8/tools/splaytree
 v8/tools/tickprocessor
 v8/tools/tickprocessor-driver
-vm.Script
+Verify
 vm.runInDebugContext(string)
+vm.Script
+Worker
 worker.exitedAfterDisconnect
 worker.suicide
 worker.terminate()
 writable.writableLength
+WriteStream.open()
 zlib.bytesRead
 zlib.bytesWritten
-zlib.bytesWritten
-
 
 # From src/api/dgram.md
-
 %en0
-Buffer
-DataView
-EADDRINUSE
-EADDRNOTAVAIL
-EBADF
-EPROTONOSUP
-ERR_SOCKET_BAD_PORT
-ERR_SOCKET_BUFFER_SIZE
-ERR_SOCKET_DGRAM_IS_CONNECTED
-ERR_SOCKET_DGRAM_NOT_CONNECTED
-Error
-IP%scope
-IP_ADD_MEMBERSHIP
-IP_ADD_SOURCE_MEMBERSHIP
-IP_DROP_MEMBERSHIP
-IP_DROP_SOURCE_MEMBERSHIP
-IP_MULTICAST_LOOP
-IP_MULTICAST_TTL
-IP_TTL
-IPv4
-IPv6
-MTU
-Payload Length
-SO_BROADCAST
-SO_RCVBUF
-SO_SNDBUF
-String
-System Error
-TypedArray
 addMembership
 address
 bind
 buf
+Buffer
 callback
 close
 close()
 cluster
 connect
 connect()
+DataView
 dgram
-dgram.Socket
 dgram.createSocket()
 dgram.createSocket(options[, callback])
 dgram.createSocket(type[, callback])
+dgram.Socket
 disconnect()
 dns.lookup()
+EADDRINUSE
+EADDRNOTAVAIL
+EBADF
 en0
+EPROTONOSUP
+ERR_SOCKET_BAD_PORT
+ERR_SOCKET_BUFFER_SIZE
+ERR_SOCKET_DGRAM_IS_CONNECTED
+ERR_SOCKET_DGRAM_NOT_CONNECTED
 error
+Error
 exception
 exclusive
 false
@@ -2140,6 +2092,16 @@ fd
 fe80::2618:1234:ab11:3b9c%en0
 flag
 groupAddress
+IP_ADD_MEMBERSHIP
+IP_ADD_SOURCE_MEMBERSHIP
+IP_DROP_MEMBERSHIP
+IP_DROP_SOURCE_MEMBERSHIP
+IP_MULTICAST_LOOP
+IP_MULTICAST_TTL
+IP_TTL
+IP%scope
+IPv4
+IPv6
 ipv6Only
 length
 listening
@@ -2147,11 +2109,13 @@ localhost
 lookup
 message
 msg
+MTU
 multicastAddress
 multicastInterface
 new
 offset
 options
+Payload Length
 port
 recvBufferSize
 reuseAddr
@@ -2159,14 +2123,17 @@ rinfo
 send
 sendBufferSize
 size
+SO_BROADCAST
+SO_RCVBUF
+SO_SNDBUF
 socket
 socket.addMembership()
 socket.addMembership(multicastAddress[, multicastInterface])
-socket.addSourceSpecificMembership()
-socket.addSourceSpecificMembership(sourceAddress, groupAddress[, multicastInterface])
 socket.address()
 socket.address().address
 socket.address().port
+socket.addSourceSpecificMembership()
+socket.addSourceSpecificMembership(sourceAddress, groupAddress[, multicastInterface])
 socket.bind()
 socket.bind([port][, address][, callback])
 socket.bind(options[, callback])
@@ -2191,16 +2158,17 @@ socket.setTTL()
 socket.setTTL(ttl)
 socket.unref()
 sourceAddress
+String
+System Error
 true
 ttl
 type
+TypedArray
 udp4
 udp6
 utf8
 
-
 # From src/api/diagnostics_channel.md
-
 Channel
 channel.hasSubscribers
 channel.publish(message)
@@ -2214,45 +2182,28 @@ name
 new Channel(name)
 onMessage
 uncaughtException
-uncaughtException
-
 
 # From src/api/dns.md
-
 (err, addresses)
 (err, records)
-/etc/hosts
-A
-AAAA
-ANY
-CAA
-CNAME
-ECANCELLED
-ENOTFOUND
-Error
-GetNetworkParams
-MX
-NAPTR
-NOTFOUND
-NS
-OR
-Object
-PTR
-Promise
-Resolver([options])
-SOA
-SRV
-TXT
-TypeError
-UV_THREADPOOL_SIZE
 [ [ v=spf1 ip4:0.0.0.0  ,  ~all  ] ]
 [ bar.example.com ]
 [ ns1.example.com ,  ns2.example.com ]
 [{priority: 10, exchange:  mx.example.com }, ...]
+{ address:  0:1:2:3:4:5:6:7 , ttl: 60 }
+{ address:  1.2.3.4 , ttl: 60 }
+{ entries: [ ... ], type:  TXT  }
+{ verbatim: true }
+/etc/hosts
+A
+AAAA
 address
 addresses
 all
+ANY
+CAA
 callback
+CNAME
 dgram.createSocket()
 dns
 dns.ADDRCONFIG
@@ -2271,23 +2222,19 @@ dns.DESTRUCTION
 dns.EOF
 dns.FILE
 dns.FORMERR
+dns.getServers()
 dns.LOADIPHLPAPI
+dns.lookup()
+dns.lookup(hostname[, options], callback)
+dns.lookupService(address, port, callback)
 dns.NODATA
 dns.NOMEM
 dns.NONAME
 dns.NOTFOUND
 dns.NOTIMP
 dns.NOTINITIALIZED
-dns.REFUSED
-dns.Resolver
-dns.SERVFAIL
-dns.TIMEOUT
-dns.V4MAPPED
-dns.getServers()
-dns.lookup()
-dns.lookup(hostname[, options], callback)
-dns.lookupService(address, port, callback)
 dns.promises
+dns.REFUSED
 dns.resolve()
 dns.resolve(hostname[, rrtype], callback)
 dns.resolve*()
@@ -2310,6 +2257,7 @@ dns.resolveNs()
 dns.resolveNs(hostname, callback)
 dns.resolvePtr()
 dns.resolvePtr(hostname, callback)
+dns.Resolver
 dns.resolveSoa()
 dns.resolveSoa(hostname, callback)
 dns.resolveSrv()
@@ -2318,10 +2266,12 @@ dns.resolveTxt()
 dns.resolveTxt(hostname, callback)
 dns.reverse()
 dns.reverse(ip, callback)
+dns.SERVFAIL
 dns.setServers()
 dns.setServers(servers)
+dns.TIMEOUT
+dns.V4MAPPED
 dnsPromises
-dnsPromises.Resolver
 dnsPromises.getServers()
 dnsPromises.lookup()
 dnsPromises.lookup(hostname[, options])
@@ -2346,6 +2296,7 @@ dnsPromises.resolveNs()
 dnsPromises.resolveNs(hostname)
 dnsPromises.resolvePtr()
 dnsPromises.resolvePtr(hostname)
+dnsPromises.Resolver
 dnsPromises.resolveSoa()
 dnsPromises.resolveSoa(hostname)
 dnsPromises.resolveSrv()
@@ -2356,9 +2307,12 @@ dnsPromises.reverse()
 dnsPromises.reverse(ip)
 dnsPromises.setServers()
 dnsPromises.setServers(servers)
+ECANCELLED
+ENOTFOUND
 entries
 err
 err.code
+Error
 example.com
 exchange
 expire
@@ -2367,6 +2321,7 @@ family
 flags
 getaddrinfo
 getnameinfo
+GetNetworkParams
 hints
 hostmaster
 hostname
@@ -2377,16 +2332,24 @@ iphlpapi.dll
 ipv4
 ipv6
 minttl
+MX
 name
+NAPTR
 nodejs.org
+NOTFOUND
+NS
 nsname
+Object
 option
 options
+OR
 order
 ping
 port
 preference
 priority
+Promise
+PTR
 records
 refresh
 regexp
@@ -2412,47 +2375,41 @@ resolver.resolveTxt()
 resolver.reverse()
 resolver.setLocalAddress([ipv4][, ipv6])
 resolver.setServers()
+Resolver([options])
 ret
 retry
 rrtype
 serial
 servers
 service
+SOA
 socket.connect()
+SRV
 timeout
 true
 ttl
+TXT
 type
+TypeError
 util.promisify()
+UV_THREADPOOL_SIZE
 value
 verbatim
 weight
-{ address:  0:1:2:3:4:5:6:7 , ttl: 60 }
-{ address:  1.2.3.4 , ttl: 60 }
-{ entries: [ ... ], type:  TXT  }
-{ verbatim: true }
-{ verbatim: true }
-
 
 # From src/api/documentation.md
-
 .html
 .json
 
-
 # From src/api/domain.md
-
 ...args
 .catch()
 .then()
-Domain
-Error
-EventEmitter
-Promise
 bind()
 callback
 d.on( error )
 domain
+Domain
 domain.active
 domain.add(emitter)
 domain.bind(callback)
@@ -2466,10 +2423,12 @@ domain.run(fn[, ...args])
 emitter
 enter()
 error
+Error
 error.domain
 error.domainBound
 error.domainEmitter
 error.domainThrown
+EventEmitter
 exit()
 fn
 fs.open()
@@ -2477,15 +2436,13 @@ if (err) return callback(err);
 intercept()
 process.domain
 process.on( uncaughtException )
+Promise
 run()
 setInterval()
 setTimeout()
 throw
-throw
-
 
 # From src/api/embedding.md
-
 ArrayBuffer
 MultiIsolatePlatform
 node
@@ -2502,47 +2459,79 @@ v8::Context
 v8::Isolate
 v8::Platform
 
-
 # From src/api/errors.md
-
-"exports"
-"imports"
-${myObject.name}: ${myObject.message}
 --disable-proto=throw
 --eval
 --force-fips
 --input-type
 --print
 --without-v8-platform
-.close()
-.code
-.message
-.stack
-/absolute/path/to/file.js:line:column
-1xx
 :authority
 :method
 :path
 :scheme
 :status
+.close()
+.code
+.message
+.stack
+"exports"
+"imports"
+[].forEach
+[name, value]
+/absolute/path/to/file.js:line:column
 <error class name>: <error message>
+${myObject.name}: ${myObject.message}
+1xx
 ABORT_ERR
+abort()
 AbortController
 AbortError
 AbortSignal
+address
+assert
+assert.throws(block, message)
+assert()
 AssertionError
 AsyncHooks
+asyncId
+block
+breakEvalOnSigint
 BreakIterator
+buffer
 Buffer
 Buffer.write(string, encoding, offset[, length])
-CONNECT
+c-ares
+cachedData
+callback
+cheetahify
+child_process
+cipher.final()
+cipher.getAuthTag()
 Class: assert.AssertionError
+code
+computeSecret()
+CONNECT
 Console
 Constructor.prototype
+constructorOpt
 Content-Length
 Context
-DH
+crypto
+crypto.ECDH()
+crypto.getDiffieHellman()
+crypto.scrypt()
+crypto.scryptSync()
+crypto.timingSafeEqual()
+data
 DataView
+dest
+dgram.connect()
+dgram.createSocket()
+dgram.disconnect()
+dgram.remoteAddress()
+DH
+domain
 EACCES
 EADDRINUSE
 EAI_NODATA
@@ -2552,6 +2541,8 @@ ECONNRESET
 EEXIST
 EISDIR
 EMFILE
+encoding
+end
 ENOENT
 ENOTDIR
 ENOTEMPTY
@@ -2598,10 +2589,10 @@ ERR_CRYPTO_INVALID_CURVE
 ERR_CRYPTO_INVALID_DIGEST
 ERR_CRYPTO_INVALID_IV
 ERR_CRYPTO_INVALID_JWK
+ERR_CRYPTO_INVALID_KEY_OBJECT_TYPE
 ERR_CRYPTO_INVALID_KEYLEN
 ERR_CRYPTO_INVALID_KEYPAIR
 ERR_CRYPTO_INVALID_KEYTYPE
-ERR_CRYPTO_INVALID_KEY_OBJECT_TYPE
 ERR_CRYPTO_INVALID_MESSAGELEN
 ERR_CRYPTO_INVALID_SCRYPT_PARAMS
 ERR_CRYPTO_INVALID_STATE
@@ -2632,6 +2623,13 @@ ERR_FEATURE_UNAVAILABLE_ON_PLATFORM
 ERR_FS_EISDIR
 ERR_FS_FILE_TOO_LARGE
 ERR_FS_INVALID_SYMLINK_TYPE
+ERR_HTTP_HEADERS_SENT
+ERR_HTTP_INVALID_CHAR
+ERR_HTTP_INVALID_HEADER_VALUE
+ERR_HTTP_INVALID_STATUS_CODE
+ERR_HTTP_REQUEST_TIMEOUT
+ERR_HTTP_SOCKET_ENCODING
+ERR_HTTP_TRAILER_INVALID
 ERR_HTTP2_ALTSVC_INVALID_ORIGIN
 ERR_HTTP2_ALTSVC_LENGTH
 ERR_HTTP2_CONNECT_AUTHORITY
@@ -2640,11 +2638,11 @@ ERR_HTTP2_CONNECT_SCHEME
 ERR_HTTP2_ERROR
 ERR_HTTP2_FRAME_ERROR
 ERR_HTTP2_GOAWAY_SESSION
+ERR_HTTP2_HEADER_REQUIRED
+ERR_HTTP2_HEADER_SINGLE_VALUE
 ERR_HTTP2_HEADERS_AFTER_RESPOND
 ERR_HTTP2_HEADERS_OBJECT
 ERR_HTTP2_HEADERS_SENT
-ERR_HTTP2_HEADER_REQUIRED
-ERR_HTTP2_HEADER_SINGLE_VALUE
 ERR_HTTP2_INFO_HEADERS_AFTER_RESPOND
 ERR_HTTP2_INFO_STATUS_NOT_ALLOWED
 ERR_HTTP2_INVALID_CONNECTION_HEADERS
@@ -2682,13 +2680,6 @@ ERR_HTTP2_STREAM_SELF_DEPENDENCY
 ERR_HTTP2_TRAILERS_ALREADY_SENT
 ERR_HTTP2_TRAILERS_NOT_READY
 ERR_HTTP2_UNSUPPORTED_PROTOCOL
-ERR_HTTP_HEADERS_SENT
-ERR_HTTP_INVALID_CHAR
-ERR_HTTP_INVALID_HEADER_VALUE
-ERR_HTTP_INVALID_STATUS_CODE
-ERR_HTTP_REQUEST_TIMEOUT
-ERR_HTTP_SOCKET_ENCODING
-ERR_HTTP_TRAILER_INVALID
 ERR_INCOMPATIBLE_OPTION_PAIR
 ERR_INDEX_OUT_OF_RANGE
 ERR_INPUT_TYPE_NOT_ALLOWED
@@ -2768,13 +2759,13 @@ ERR_NAPI_TSFN_CALL_JS
 ERR_NAPI_TSFN_GET_UNDEFINED
 ERR_NAPI_TSFN_START_IDLE_LOOP
 ERR_NAPI_TSFN_STOP_IDLE_LOOP
-ERR_NON_CONTEXT_AWARE_DISABLED
 ERR_NO_CRYPTO
 ERR_NO_ICU
 ERR_NO_LONGER_SUPPORTED
+ERR_NON_CONTEXT_AWARE_DISABLED
 ERR_OPERATION_FAILED
-ERR_OUTOFMEMORY
 ERR_OUT_OF_RANGE
+ERR_OUTOFMEMORY
 ERR_PACKAGE_IMPORT_NOT_DEFINED
 ERR_PACKAGE_PATH_NOT_EXPORTED
 ERR_PARSE_HISTORY_DATA
@@ -2872,98 +2863,14 @@ ERR_WORKER_UNSUPPORTED_EXTENSION
 ERR_WORKER_UNSUPPORTED_OPERATION
 ERR_ZLIB_BINDING_CLOSED
 ERR_ZLIB_INITIALIZATION_FAILED
-ETIMEDOUT
-Error
-Error.captureStackTrace()
-Error.captureStackTrace(obj)
-Error.captureStackTrace(targetObject[, constructorOpt])
-Error.stackTraceLimit
-EventEmitter
-EventTarget
-Function
-GOAWAY
-HPE_HEADER_OVERFLOW
-HPE_UNEXPECTED_CONTENT_LENGTH
-Hash
-Http2Session
-Http2Stream
-Http2Stream.prototype.respond()
-Http2Stream.prototype.responseWithFile()
-MODULE_NOT_FOUND
-MessagePort
-N-API
-ORIGIN
-Object.getPrototypeOf
-Object.prototype.__proto__
-Object.setPrototypeOf
-Promise
-QuicClientSession
-REPL
-RST_STREAM
-RangeError
-ReferenceError
-SETTINGS
-SIGINT
-STDIN
-SecureContext
-Server
-SharedArrayBuffer
-SyntaxError
-SystemError
-TLSv1
-TLSv1.1
-TLSv1.2
-TextDecoder()
-Trailer
-Transfer-Encoding: chunked
-Transform
-TypeError
-TypedArray
-URL
-URLSearchParams
-Uint8Array
-Worker
-Writable
-[].forEach
-[name, value]
-abort()
-address
-assert
-assert()
-assert.throws(block, message)
-asyncId
-block
-breakEvalOnSigint
-buffer
-c-ares
-cachedData
-callback
-cheetahify
-child_process
-cipher.final()
-cipher.getAuthTag()
-code
-computeSecret()
-constructorOpt
-crypto
-crypto.ECDH()
-crypto.getDiffieHellman()
-crypto.scrypt()
-crypto.scryptSync()
-crypto.timingSafeEqual()
-data
-dest
-dgram.connect()
-dgram.createSocket()
-dgram.disconnect()
-dgram.remoteAddress()
-domain
-encoding
-end
 err.info
 errno
 error
+Error
 error.address
+Error.captureStackTrace()
+Error.captureStackTrace(obj)
+Error.captureStackTrace(targetObject[, constructorOpt])
 error.code
 error.dest
 error.errno
@@ -2976,9 +2883,13 @@ error.path
 error.port
 error.reason
 error.stack
+Error.stackTraceLimit
 error.syscall
 errored
+ETIMEDOUT
 eval
+EventEmitter
+EventTarget
 execArgv
 exit
 file
@@ -2987,24 +2898,33 @@ for...of
 format
 fs
 fs.Dir
+fs.readdir
 fs.readFile()
 fs.readFileSync
-fs.readdir
 fs.symlink()
 fs.symlinkSync()
 fs.unlink
 func()
 func(undefined)
+Function
 getPublicKey()
+GOAWAY
+Hash
 hash.digest()
 hash.update()
+HPE_HEADER_OVERFLOW
+HPE_UNEXPECTED_CONTENT_LENGTH
 http
+http:
 http.request()
 http2.connect()
 http2.getUnpackedSettings()
+Http2Session
 http2session.setLocalWindowSize(windowSize)
+Http2Stream
+Http2Stream.prototype.respond()
+Http2Stream.prototype.responseWithFile()
 http2stream.sendTrailers()
-http:
 https
 https:
 import
@@ -3025,7 +2945,10 @@ maxBuffer
 maxVersion
 message
 message.toString()
+MessagePort
 minVersion
+MODULE_NOT_FOUND
+N-API
 napi_create_dataview()
 napi_create_typedarray()
 native
@@ -3039,10 +2962,14 @@ new Error(message)
 new URL(input)
 new URLSearchParams(iterable)
 null
+Object.getPrototypeOf
+Object.prototype.__proto__
+Object.setPrototypeOf
 objectMode
 offset
 offset + length
 options.protocol
+ORIGIN
 package.json
 path
 perf_hooks
@@ -3057,23 +2984,35 @@ process.send()
 process.setUncaughtExceptionCaptureCallback()
 process.stderr
 process.stdout
+Promise
+QuicClientSession
+RangeError
 readable._read()
 recvBufferSize
+ReferenceError
 repl
+REPL
 require
 require( crypto ).setEngine()
 require()
+RST_STREAM
 scrypt
+SecureContext
 secureProtocol
 sendBufferSize
+Server
 server.addContext()
 server.close()
 server.listen()
+SETTINGS
+SharedArrayBuffer
+SIGINT
 sign.sign()
 socket
 socket.end()
 stderr
 stdin
+STDIN
 stdout
 stream.destroy()
 stream.end()
@@ -3087,23 +3026,37 @@ string
 subjectAltNames
 subprocess.kill()
 subprocess.send()
+SyntaxError
 syscall
+SystemError
 targetObject
+TextDecoder()
 this
 throw
 tls
 tls.TLSSocket
+TLSv1
+TLSv1.1
+TLSv1.2
 trace_events
 trace_events.createTracing()
+Trailer
+Transfer-Encoding: chunked
 transferList
+Transform
 triggerAsyncId
 try…catch
+TypedArray
+TypeError
 ucs
 udp4
 udp6
+Uint8Array
 ulimit -n 2048
 uncaughtException
 undefined
+URL
+URLSearchParams
 utf16le
 util.callbackify()
 util.getSystemErrorName(error.errno)
@@ -3111,14 +3064,13 @@ vm.Module
 waitForTrailers
 wantTrailers
 was larger than the length of given
+Worker
+Writable
 zlib
-zlib
-
 
 # From src/api/esm.md
-
-"exports"
-"type"
+__dirname
+__filename
 --experimental-json-modules
 --experimental-loader ./loader-name.mjs
 --experimental-specifier-resolution=[mode]
@@ -3133,19 +3085,14 @@ zlib
 .litcoffee
 .mjs
 .wasm
-ArrayBuffer
-NODE_PATH
-Object
-SharedArrayBuffer
-TypedArray
-Uint8Array
+"exports"
+"type"
 ["node", "import"]
-__dirname
-__filename
 a.mjs
 addTwo.mjs
 application/json
 application/wasm
+ArrayBuffer
 await
 b.mjs
 builtin
@@ -3178,13 +3125,13 @@ getSource(url, context, defaultGetSource)
 https://
 https://example.com/app.js
 import
-import * as m from  cjs
 import { sep } from  path
-import()
+import * as m from  cjs
 import.meta
 import.meta.resolve
 import.meta.resolve(specifier[, parent])
 import.meta.url
+import()
 index.mjs
 json
 main.coffee
@@ -3199,7 +3146,9 @@ new URL( ./local , import.meta.url)
 node
 node --experimental-loader ./coffeescript-loader.mjs main.coffee
 node --experimental-loader ./https-loader.mjs ./main.mjs
+NODE_PATH
 node:
+Object
 package.json
 parent
 parentURL
@@ -3211,6 +3160,7 @@ require.extensions
 require.resolve
 resolve
 resolve(specifier, context, defaultResolve)
+SharedArrayBuffer
 some-package
 some-package/shuffle
 source
@@ -3219,41 +3169,26 @@ string
 text/javascript
 transformSource
 transformSource(source, context, defaultTransformSource)
+TypedArray
+Uint8Array
 undefined
 url
 util.TextDecoder
 wasm
 
-
 # From src/api/events.md
-
-"abort"
 --trace-warnings
 ...args
 ...eventsTargets
 .listeners
 .once()
 .then(undefined, handler)
+"abort"
 AbortSignal
-AsyncIterator
-Event
-EventEmitter
-EventListener
-EventTarget
-Function
-Infinity
-MaxListenersExceededWarning
-NodeEventTarget
-Promise
-Promise.all()
-Promise.allSettled()
-Promise.race()
-RangeError
-Symbol
-Symbol.for( nodejs.rejection )
 addEventListener()
 addListener()
 async
+AsyncIterator
 cancelable
 capture
 capture = false
@@ -3285,15 +3220,16 @@ emitter.removeListener()
 emitter.removeListener(eventName, listener)
 emitter.setMaxListeners()
 emitter.setMaxListeners(n)
-emitterOrTarget
 emitter[Symbol.for( nodejs.rejection )](err, eventName[, ...args])
+emitterOrTarget
 err
 error
 errorMonitor
 event
+Event
 event.bubbles
-event.cancelBubble()
 event.cancelable
+event.cancelBubble()
 event.composed
 event.composedPath()
 event.currentTarget
@@ -3308,20 +3244,16 @@ event.stopPropagation()
 event.target
 event.timeStamp
 event.type
+EventEmitter
 eventEmitter.emit()
 eventEmitter.on()
 eventEmitter.once()
+EventListener
 eventName
-eventTarget.addEventListener(type, listener[, options])
-eventTarget.addListener()
-eventTarget.dispatchEvent()
-eventTarget.dispatchEvent(event)
-eventTarget.removeEventListener(type, listener)
-eventTarget.removeListener()
 events
-events.captureRejectionSymbol
 events.captureRejections
 events.captureRejections = true
+events.captureRejectionSymbol
 events.defaultMaxListeners
 events.errorMonitor
 events.getEventListeners(emitterOrTarget, eventName)
@@ -3330,16 +3262,27 @@ events.on(emitter, eventName[, options])
 events.once()
 events.once(emitter, name[, options])
 events.setMaxListeners(n[, ...eventTargets])
+EventTarget
+eventTarget.addEventListener(type, listener[, options])
+eventTarget.addListener()
+eventTarget.dispatchEvent()
+eventTarget.dispatchEvent(event)
+eventTarget.removeEventListener(type, listener)
+eventTarget.removeListener()
 false
 fs.ReadStream
+Function
 getMaxListeners()
 handleEvent
+Infinity
 isTrusted
 listener
+MaxListenersExceededWarning
 n
 name
 net.Server
 newListener
+NodeEventTarget
 nodeEventTarget.addListener(type, listener[, options])
 nodeEventTarget.eventNames()
 nodeEventTarget.listenerCount(type)
@@ -3359,6 +3302,11 @@ preventDefault()
 process.nextTick()
 process.on( error )
 process.on( warning )
+Promise
+Promise.all()
+Promise.allSettled()
+Promise.race()
+RangeError
 rawListeners()
 removeAllListeners()
 removeEventListener()
@@ -3368,14 +3316,17 @@ setImmediate()
 setMaxListeners()
 signal
 string
+Symbol
+Symbol.for( nodejs.rejection )
 this
 true
 type
 value
 
-
 # From src/api/fs.md
-
+_writev()
+-Infinity
+, World
 (err, [path])
 (err, bytesRead, buffer)
 (err, bytesWritten, buffer)
@@ -3386,28 +3337,15 @@ value
 (err, stats)
 (err, written, string)
 (eventType, filename)
-, World
--Infinity
 /etc/passwd
 /proc
 /tmp
-0o1
-0o10
-0o100
-0o2
-0o20
-0o200
-0o4
-0o40
-0o400
-0o666
-0o765
-0o777
-1970-01-01T00:00Z
+<code>atime</code>
 <code>COPYFILE_EXCL</code>
-<code>COPYFILE_FICLONE</code>
 <code>COPYFILE_FICLONE_FORCE</code>
+<code>COPYFILE_FICLONE</code>
 <code>F_OK</code>
+<code>fs.constants.F_OK</code>
 <code>O_APPEND</code>
 <code>O_CREAT</code>
 <code>O_DIRECT</code>
@@ -3425,6 +3363,7 @@ value
 <code>O_TRUNC</code>
 <code>O_WRONLY</code>
 <code>R_OK</code>
+<code>rwx</code>
 <code>S_IFBLK</code>
 <code>S_IFCHR</code>
 <code>S_IFDIR</code>
@@ -3448,63 +3387,25 @@ value
 <code>UV_FS_O_FILEMAP</code>
 <code>W_OK</code>
 <code>X_OK</code>
-<code>atime</code>
-<code>fs.constants.F_OK</code>
-<code>rwx</code>
-AHAFS
-AbortError
-AbortSignal
-ArrayBufferView
-BigInt
-Buffer
-Buffer.alloc(16384)
-Buffer.byteLength
-Buffers
-CREATE_NEW
-CreateFileW
-Date
-EBUSY
-EMFILE
-ENFILE
-ENOENT
-ENOTDIR
-ENOTEMPTY
-EPERM
-ERR_FEATURE_UNAVAILABLE_ON_PLATFORM
-Error
-FILE_GENERIC_WRITE
-FSEvents
-FSWatcher
-FileHandle
-Hello
-Hello World
-Hello, World
-Infinity
-NaN
-Ns
-Number.MAX_SAFE_INTEGER
-O_EXCL
-O_EXCL|O_CREAT
-O_WRONLY
-Object
-Promise
-ReadDirectoryChangesW
-ReadStream
-Readable
-S_ISGID
-S_ISUID
-S_ISVTX
-StatWatcher
-URL
-UV_ENOSYS
-UV_THREADPOOL_SIZE
-World
-Writable
-WriteStream
-X
-_writev()
+0o1
+0o10
+0o100
+0o2
+0o20
+0o200
+0o4
+0o40
+0o400
+0o666
+0o765
+0o777
+1970-01-01T00:00Z
 a
 a+
+AbortError
+AbortSignal
+AHAFS
+ArrayBufferView
 as
 as+
 atime
@@ -3514,26 +3415,34 @@ autoClose
 ax
 ax+
 bigint
+BigInt
 bigint: true
 birthtime
 birthtimeMs
 birthtimeNs
 buffer
+Buffer
+Buffer.alloc(16384)
+Buffer.byteLength
 buffer.length
-bufferSize
 buffers
+Buffers
+bufferSize
 bytesRead
 bytesWritten
 callback
 change
 chcp 65001
 close
+CREATE_NEW
+CreateFileW
 ctime
 ctimeMs
 ctimeNs
 curr.mtime
 current
 data
+Date
 dest
 dir
 dir.close()
@@ -3554,12 +3463,21 @@ dirent.isFile()
 dirent.isSocket()
 dirent.isSymbolicLink()
 dirent.name
+EBUSY
+EMFILE
 emitClose
 encoding
 end
+ENFILE
+ENOENT
+ENOTDIR
+ENOTEMPTY
+EPERM
 err
+ERR_FEATURE_UNAVAILABLE_ON_PLATFORM
 err.code
 error
+Error
 event ports
 eventType
 example
@@ -3569,7 +3487,9 @@ false
 fd
 fd == 1
 file
+FILE_GENERIC_WRITE
 file:
+FileHandle
 filehandle.appendFile(data, options)
 filehandle.chmod(mode)
 filehandle.chown(uid, gid)
@@ -3600,15 +3520,6 @@ flag
 flags
 force
 fs
-fs.Dir
-fs.Dirent
-fs.FSWatcher
-fs.FSWatcher()
-fs.ReadStream
-fs.Stat
-fs.StatWatcher
-fs.Stats
-fs.WriteStream
 fs.access()
 fs.access(path[, mode], callback)
 fs.accessSync(path[, mode])
@@ -3648,6 +3559,8 @@ fs.createReadStream()
 fs.createReadStream(path[, options])
 fs.createWriteStream()
 fs.createWriteStream(path[, options])
+fs.Dir
+fs.Dirent
 fs.exists()
 fs.exists(path, callback)
 fs.existsSync()
@@ -3663,6 +3576,8 @@ fs.fdatasyncSync(fd)
 fs.fstat()
 fs.fstat(fd[, options], callback)
 fs.fstatSync(fd[, options])
+fs.FSWatcher
+fs.FSWatcher()
 fs.fsync(fd, callback)
 fs.fsyncSync(fd)
 fs.ftruncate()
@@ -3692,54 +3607,58 @@ fs.mkdtemp(prefix[, options], callback)
 fs.mkdtempSync(prefix[, options])
 fs.open()
 fs.open(path[, flags[, mode]], callback)
-fs.openSync()
-fs.openSync(path[, flags, mode])
 fs.opendir()
 fs.opendir(path[, options], callback)
 fs.opendirSync()
 fs.opendirSync(path[, options])
+fs.openSync()
+fs.openSync(path[, flags, mode])
 fs.promises
 fs.read
 fs.read()
 fs.read(fd, [options,] callback)
 fs.read(fd, buffer, offset, length, position, callback)
-fs.readFile
-fs.readFile()
-fs.readFile(path[, options], callback)
-fs.readFileSync()
-fs.readFileSync(path[, options])
-fs.readSync
-fs.readSync(fd, buffer, [options])
-fs.readSync(fd, buffer, offset, length, position)
 fs.readdir()
 fs.readdir(path[, options], callback)
 fs.readdirSync( C: )
 fs.readdirSync( C:\\ )
 fs.readdirSync()
 fs.readdirSync(path[, options])
+fs.readFile
+fs.readFile()
+fs.readFile(path[, options], callback)
+fs.readFileSync()
+fs.readFileSync(path[, options])
 fs.readlink(path[, options], callback)
 fs.readlinkSync(path[, options])
+fs.ReadStream
+fs.readSync
+fs.readSync(fd, buffer, [options])
+fs.readSync(fd, buffer, offset, length, position)
 fs.readv()
 fs.readv(fd, buffers[, position], callback)
 fs.readvSync(fd, buffers[, position])
-fs.realpath()
-fs.realpath(path[, options], callback)
 fs.realpath.native()
 fs.realpath.native(path[, options], callback)
-fs.realpathSync(path[, options])
+fs.realpath()
+fs.realpath(path[, options], callback)
 fs.realpathSync.native(path[, options])
+fs.realpathSync(path[, options])
 fs.rename()
 fs.rename(oldPath, newPath, callback)
 fs.renameSync(oldPath, newPath)
 fs.rm(path[, options], callback)
-fs.rmSync(path[, options])
 fs.rmdir()
 fs.rmdir(path[, options], callback)
 fs.rmdirSync()
 fs.rmdirSync(path[, options])
+fs.rmSync(path[, options])
+fs.Stat
 fs.stat()
 fs.stat(path[, options], callback)
+fs.Stats
 fs.statSync(path[, options])
+fs.StatWatcher
 fs.symlink()
 fs.symlink(target, path[, type], callback)
 fs.symlinkSync(target, path[, type])
@@ -3769,11 +3688,13 @@ fs.writeFile
 fs.writeFile()
 fs.writeFile(file, data[, options], callback)
 fs.writeFileSync(file, data[, options])
+fs.WriteStream
 fs.writeSync(fd, buffer[, offset[, length[, position]]])
 fs.writeSync(fd, string[, position[, encoding]])
 fs.writev()
 fs.writev(fd, buffers[, position], callback)
 fs.writevSync(fd, buffers[, position])
+FSEvents
 fsPromises.access()
 fsPromises.access(path[, mode])
 fsPromises.appendFile(path, data[, options])
@@ -3793,10 +3714,10 @@ fsPromises.open()
 fsPromises.open(path, flags[, mode])
 fsPromises.opendir()
 fsPromises.opendir(path[, options])
+fsPromises.readdir(path[, options])
 fsPromises.readFile
 fsPromises.readFile()
 fsPromises.readFile(path[, options])
-fsPromises.readdir(path[, options])
 fsPromises.readlink(path[, options])
 fsPromises.realpath(path[, options])
 fsPromises.rename(oldPath, newPath)
@@ -3813,8 +3734,13 @@ fsPromises.writeFile
 fsPromises.writeFile()
 fsPromises.writeFile(file, data[, options])
 fstat()
+FSWatcher
 gid
+Hello
+Hello World
+Hello, World
 highWaterMark
+Infinity
 inotify(7)
 interval
 junction
@@ -3831,10 +3757,17 @@ mode
 mtime
 mtimeMs
 mtimeNs
+NaN
 net.Socket
 newPath
+Ns
 null
 number
+Number.MAX_SAFE_INTEGER
+O_EXCL
+O_EXCL|O_CREAT
+O_WRONLY
+Object
 offset
 oldPath
 open
@@ -3850,10 +3783,14 @@ prev.mtime
 previous
 process.cwd
 process.cwd()
+Promise
 r
 r+
 read
+Readable
+ReadDirectoryChangesW
 readFile
+ReadStream
 readStream.bytesRead
 readStream.path
 readStream.pending
@@ -3869,6 +3806,9 @@ retryDelay
 rm
 rm -rf
 rs+
+S_ISGID
+S_ISUID
+S_ISVTX
 signal
 src
 start
@@ -3903,6 +3843,7 @@ stats.nlink
 stats.rdev
 stats.size
 stats.uid
+StatWatcher
 stdout
 string
 target
@@ -3914,16 +3855,22 @@ type
 typeof position !==  number
 uid
 undefined
+URL
 utf8
 util.promisify()
+UV_ENOSYS
+UV_THREADPOOL_SIZE
 w
 w+
 watcher.close()
 watcher.ref()
 watcher.unref()
 withFileTypes
+World
+Writable
 write
 write()
+WriteStream
 writeStream.bytesWritten
 writeStream.path
 writeStream.pending
@@ -3933,32 +3880,20 @@ written
 wx
 wx+
 x
-
+X
 
 # From src/api/globals.md
-
-AbortController
-AbortSignal
-Buffer
-Event
-EventEmitter
-EventTarget
-MessageChannel
-MessageEvent
-MessagePort
-Promise
-TextDecoder
-TextEncoder
-URL
-URLSearchParams
-WebAssembly
 __dirname
 __filename
+{ once: true }
 abort
+AbortController
 abortController.abort()
 abortController.signal
+AbortSignal
 abortSignal.aborted
 abortSignal.onabort
+Buffer
 callback
 clearImmediate
 clearImmediate(immediateObject)
@@ -3967,12 +3902,19 @@ clearInterval(intervalObject)
 clearTimeout
 clearTimeout(timeoutObject)
 console
+Event
+EventEmitter
+EventTarget
 exports
 global
+MessageChannel
+MessageEvent
+MessagePort
 module
 once()
 process
 process.nextTick()
+Promise
 queueMicrotask()
 queueMicrotask(callback)
 require()
@@ -3982,63 +3924,39 @@ setInterval
 setInterval(callback, delay[, ...args])
 setTimeout
 setTimeout(callback, delay[, ...args])
+TextDecoder
+TextEncoder
 type
 uncaughtException
+URL
+URLSearchParams
 var something
-{ once: true }
-
+WebAssembly
 
 # From src/api/http.md
-
-(err, stream)
 --insecure-http-parser
 --max-http-header-size
 .destroy()
 .resume()
+(err, stream)
+[ Transfer-Encoding ,  chunked ]
+[key, value, key2, value2, ...]
+{agent: false}
 /index.html?page=12
 /status?name=ryan
 0\r\n\r\n
 100 Continue
 100-continue
 417 Expectation Failed
-AbortController
-AbortSignal
-Agent
-Array
-Buffer.byteLength()
-CONNECT
-ClientRequest
-Connection
-Connection: close
-Connection: keep-alive
-Content-Length
-DELETE
-Duplex
-ECONNRESET
-Error
-Error: aborted
-Error: socket hang up
-Expect
-Expect: 100-continue
-GET
-HPE_HEADER_OVERFLOW
-Host
-IncomingMessage
-Infinity
-OK
-Object
-Server
-ServerResponse
-Trailer
-TypeError
-URL
-[ Transfer-Encoding ,  chunked ]
-[key, value, key2, value2, ...]
 abort
 abort()
+AbortController
 aborted
+AbortSignal
 age
 agent
+Agent
+agent:false
 agent.createConnection()
 agent.createConnection(options[, callback])
 agent.defaultPort
@@ -4053,39 +3971,54 @@ agent.maxTotalSockets
 agent.requests
 agent.reuseSocket(socket, request)
 agent.sockets
-agent:false
 agentRemove
+Array
 auth
 authorization
+Buffer.byteLength()
 bytesParsed
 callback
 checkContinue
 checkExpectation
 chunk
 clientError
+ClientRequest
 close
 code:  ERR_HTTP_INVALID_HEADER_VALUE
 code:  ERR_INVALID_CHAR
 code:  ERR_INVALID_HTTP_TOKEN
 connect
+CONNECT
 connection
+Connection
+Connection: close
+Connection: keep-alive
 content-length
+Content-Length
 content-type
 continue
 cookie
 createConnection
 data
 defaultPort
+DELETE
 destroy()
 dns.lookup()
 drain
+Duplex
+ECONNRESET
 enable
 encoding
 end
 err
 error
+Error
+Error: aborted
+Error: socket hang up
 etag
 exception
+Expect
+Expect: 100-continue
 expires
 false
 family
@@ -4093,38 +4026,43 @@ fifo
 finish
 freeSockets
 from
+GET
 getHeader(name)
 head
 headers
 host
+Host
 host:port:localAddress
 host:port:localAddress:family
 hostname
+HPE_HEADER_OVERFLOW
 http
+http:
 http.Agent
 http.ClientRequest
-http.IncomingMessage
-http.METHODS
-http.STATUS_CODES
-http.Server
-http.ServerResponse
 http.createServer([options][, requestListener])
 http.get()
 http.get(options[, callback])
 http.get(url[, options][, callback])
 http.globalAgent
+http.IncomingMessage
 http.maxHeaderSize
+http.METHODS
 http.request()
 http.request(options[, callback])
 http.request(url[, options][, callback])
+http.Server
+http.ServerResponse
+http.STATUS_CODES
 http.validateHeaderName(name)
 http.validateHeaderValue(name, value)
-http:
 httpVersion
 httpVersionMajor
 httpVersionMinor
 if-modified-since
 if-unmodified-since
+IncomingMessage
+Infinity
 info
 information
 initialDelay
@@ -4164,15 +4102,17 @@ message.url
 method
 msecs
 name
+net.createConnection()
 net.Server
 net.Server.close()
 net.Socket
-net.createConnection()
 new Agent([options])
 new URL()
 noDelay
 obj.hasOwnProperty()
 obj.toString()
+Object
+OK
 options
 path
 port
@@ -4263,6 +4203,7 @@ response.writeProcessing()
 retry-after
 scheduling
 server
+Server
 server.close([callback])
 server.headersTimeout
 server.keepAliveTimeout
@@ -4272,6 +4213,7 @@ server.maxHeadersCount
 server.requestTimeout
 server.setTimeout([msecs][, callback])
 server.timeout
+ServerResponse
 set-cookie
 setHeader(name, value)
 setHost
@@ -4287,10 +4229,13 @@ socketPath
 statusCode
 statusMessage
 timeout
+Trailer
 true
+TypeError
 undefined
 upgrade
 url
+URL
 url.parse()
 user-agent
 user:password
@@ -4301,95 +4246,27 @@ writable.destroy()
 writable.destroyed
 writable.uncork()
 write
-{agent: false}
-
 
 # From src/api/http2.md
-
-(backtick),
 , and
-100 Continue
-1xx
-4Kib
 :authority
 :method
 :path
 :protocol
 :scheme
 :status
+(backtick),
+[http2.sensitiveHeaders]
+100 Continue
+1xx
+4Kib
+a
 A
-ALTSVC
+abort
 AbortController
+aborted
 AbortError
 AbortSignal
-Array
-Authorization
-Buffer
-Buffer.byteLength()
-CONNECT
-ClientHttp2Session
-ClientHttp2Stream
-Content-Length
-Content-Type
-Cookie
-DATA
-DELETE
-DataView
-Duplex
-END_STREAM
-ERR_HTTP2_INVALID_SETTING_VALUE
-ERR_HTTP2_INVALID_STREAM
-ERR_HTTP2_NO_SOCKET_MANIPULATION
-ERR_INVALID_ARG_TYPE
-ERR_INVALID_CALLBACK
-Error
-Expect: 100-continue
-FileHandle
-GET
-GOAWAY
-HEADERS
-HTTP2-Settings
-Http1IncomingMessage
-Http1ServerResponse
-Http2SecureServer
-Http2Server
-Http2ServerRequest
-Http2ServerResponse
-Http2Session
-Http2Stream
-Http2Streams
-HttpStream
-INTERNAL_ERROR
-IncomingMessage
-NGHTTP2_ENHANCE_YOUR_CALM
-NGHTTP2_NO_ERROR
-ORIGIN
-Object
-Object.prototype.hasOwnProperty()
-Object.prototype.toString()
-PING
-PRIORITY
-PerformanceEntry
-Proxy
-RST_STREAM
-Readable
-SETTINGS
-SETTINGS_ENABLE_PUSH
-ServerHttp2Session
-ServerHttp2Stream
-ServerResponse
-Socket
-TLSSocket
-TypeError
-TypedArray
-URL
-WINDOW_UPDATE
-Writable
-Z
-[http2.sensitiveHeaders]
-a
-abort
-aborted
 access-control-allow-credentials
 access-control-max-age
 access-control-request-method
@@ -4398,9 +4275,14 @@ allowHTTP1
 alpnProtocol
 alt
 altsvc
+ALTSVC
+Array
 authority
 authorization
+Authorization
 buf
+Buffer
+Buffer.byteLength()
 bytesRead
 bytesWritten
 callback
@@ -4409,29 +4291,39 @@ checkContinue
 chunk
 clear
 client
+ClientHttp2Session
 clienthttp2session.request(headers[, options])
+ClientHttp2Stream
 close
 code
 connect
+CONNECT
 connection
 content-encoding
 content-language
 content-length
+Content-Length
 content-location
 content-md5
 content-range
 content-type
+Content-Type
 continue
 cookie
+Cookie
 createConnection
 data
+DATA
+DataView
 date
 deflateDynamicTableSize
+DELETE
 destroy
 destroy()
 destroyed
 dnt
 drain
+Duplex
 duration
 effectiveLocalWindowSize
 effectiveRecvDataLength
@@ -4440,43 +4332,55 @@ enableConnectProtocol
 enablePush
 encoding
 end
+END_STREAM
 endStream
 entryType
 err
+ERR_HTTP2_INVALID_SETTING_VALUE
+ERR_HTTP2_INVALID_STREAM
+ERR_HTTP2_NO_SOCKET_MANIPULATION
+ERR_INVALID_ARG_TYPE
+ERR_INVALID_CALLBACK
 error
+Error
 errorCode
 etag
 example.org
 exclusive
+Expect: 100-continue
 expires
 false
 fd
+FileHandle
 finish
 flags
 frameError
 framesReceived
 framesSent
 from
-fs.Stat
 fs.fstat()
+fs.Stat
+GET
 goaway
+GOAWAY
 h2
 h2="example.org:81"
 h2c
-headerTableSize
 headers
+HEADERS
+headerTableSize
 host
 http
+http:
+http://
 http.ClientRequest maxHeadersCount
 http.IncomingMessage
 http.Server maxHeadersCount
 http.ServerResponse
+Http1IncomingMessage
+Http1ServerResponse
 http2
-http2.Http2ServerRequest
-http2.Http2ServerResponse
-http2.Http2Session
-http2.SecureServer
-http2.Server
+HTTP2-Settings
 http2.connect
 http2.connect()
 http2.connect(authority[, options][, listener])
@@ -4508,9 +4412,19 @@ http2.getDefaultSettings()
 http2.getPackedSettings()
 http2.getPackedSettings([settings])
 http2.getUnpackedSettings(buf)
+http2.Http2ServerRequest
+http2.Http2ServerResponse
+http2.Http2Session
+http2.SecureServer
 http2.sensitiveHeaders
+http2.Server
+Http2SecureServer
 http2secureServer.setTimeout()
+Http2Server
 http2server.setTimeout()
+Http2ServerRequest
+Http2ServerResponse
+Http2Session
 http2session.alpnProtocol
 http2session.close()
 http2session.close([callback])
@@ -4537,6 +4451,7 @@ http2session.socket
 http2session.state
 http2session.type
 http2session.unref()
+Http2Stream
 http2stream.aborted
 http2stream.additionalHeaders(headers)
 http2stream.bufferSize
@@ -4570,20 +4485,22 @@ http2stream.session
 http2stream.setTimeout()
 http2stream.setTimeout(msecs, callback)
 http2stream.state
-http:
-http://
+Http2Streams
 https:
 https://
 https://example.org
 https://example.org/foo/bar
+HttpStream
 id
 if-match
 if-modified-since
 if-none-match
 if-range
 if-unmodified-since
+IncomingMessage
 inflateDynamicTableSize
 initialWindowSize
+INTERNAL_ERROR
 key
 last-modified
 lastProcStreamID
@@ -4612,26 +4529,31 @@ message.httpVersionMajor
 message.httpVersionMinor
 msecs
 name
+net.connect()
+net.createServer()
 net.Server
 net.Server.close()
 net.Socket
 net.Socket.bufferSize
 net.Socket.prototype.ref()
 net.Socket.prototype.unref()
-net.connect()
-net.createServer()
 new URL()
 nextStreamID
 nghttp2
+NGHTTP2_ENHANCE_YOUR_CALM
+NGHTTP2_NO_ERROR
 null
 number
 obj.hasOwnProperty()
 obj.toString()
+Object
+Object.prototype.hasOwnProperty()
+Object.prototype.toString()
 offset
 on
+once
 onError
 onRequestHandler
-once
 opaqueData
 options
 options.onError
@@ -4639,9 +4561,10 @@ options.signal
 options.statCheck
 options.waitForTrailers
 origin
+ORIGIN
 originOrStream
-originSet
 origins
+originSet
 outboundQueueSize
 paddingStrategy
 parent
@@ -4649,10 +4572,14 @@ path
 pause
 payload
 peerMaxConcurrentStreams
+PerformanceEntry
 pfx
 ping
+PING
 pingRTT
+PRIORITY
 protocol
+Proxy
 proxy-authorization
 push
 pushStream
@@ -4660,6 +4587,7 @@ range
 rawHeaders
 read
 readable
+Readable
 ready
 ref()
 referer
@@ -4722,21 +4650,28 @@ response.writeHead()
 response.writeHead(statusCode[, statusMessage][, headers])
 resume
 retry-after
+RST_STREAM
 server
 server.close([callback])
 server.setTimeout([msecs][, callback])
 server.timeout
 server.updateSettings([settings])
+ServerHttp2Session
 serverhttp2session.altsvc(alt, originOrStream)
 serverhttp2session.origin(...origins)
+ServerHttp2Stream
+ServerResponse
 session
 sessionError
 set-cookie
 setTimeout
 settings
+SETTINGS
+SETTINGS_ENABLE_PUSH
 signal
 silent
 socket
+Socket
 startTime
 statCheck
 state
@@ -4749,59 +4684,65 @@ streamCount
 streamId
 sumDependencyWeight
 throw
+timeout
 timeToFirstByte
 timeToFirstByteSent
 timeToFirstHeader
-timeout
 tk
+tls.connect()
+tls.createServer()
 tls.Server
 tls.Server.close()
 tls.TLSSocket
-tls.connect()
-tls.createServer()
+TLSSocket
 trailers
 true
 type
+TypedArray
+TypeError
 undefined
 unknownProtocol
 unref()
 upgrade-insecure-requests
+URL
 user-agent
 utf8
 value
 waitForTrailers
 wantTrailers
 weight
+WINDOW_UPDATE
 windowSize
 writable
+Writable
 writable.writableFinished
 write
 x-content-type-options
 z
-
+Z
 
 # From src/api/https.md
-
-Agent
-ClientRequest
-GET
-SSLKEYLOGFILE
-Session Resumption
-URL
 agent
+Agent
 ca
 callback
 cert
 ciphers
 clientCertEngine
+ClientRequest
 crl
 dhparam
 ecdhCurve
+GET
 highWaterMark
 honorCipherOrder
 http.Agent
 http.Agent(options)
 http.ClientRequest
+http.close()
+http.createServer()
+http.get()
+http.request()
 http.Server
 http.Server headersTimeout
 http.Server keepAliveTimeout
@@ -4809,12 +4750,8 @@ http.Server maxHeadersCount
 http.Server requestTimeout
 http.Server setTimeout()
 http.Server timeout
-http.close()
-http.createServer()
-http.get()
-http.request()
+https:
 https.Agent
-https.Server
 https.createServer([options][, requestListener])
 https.get(options[, callback])
 https.get(url[, options][, callback])
@@ -4822,7 +4759,7 @@ https.globalAgent
 https.request()
 https.request(options[, callback])
 https.request(url[, options][, callback])
-https:
+https.Server
 key
 keylog
 line
@@ -4853,34 +4790,31 @@ server.requestTimeout
 server.setTimeout([msecs][, callback])
 server.timeout
 servername
+Session Resumption
 sessionIdContext
-tls.TLSSocket
+SSLKEYLOGFILE
 tls.connect()
 tls.createSecureContext()
 tls.createServer()
+tls.TLSSocket
 tlsSocket
 url
-url
-
+URL
 
 # From src/api/index.md
-
 module
 
-
 # From src/api/inspector.md
-
 <inspector-protocol-method>
-Debugger.paused
-Runtime.runIfWaitingForDebugger
 callback
+Debugger.paused
 false
 host
 inspector
-inspector.Session
 inspector.close()
 inspector.console
 inspector.open([port[, host[, wait]]])
+inspector.Session
 inspector.url()
 inspector.waitForDebugger()
 inspectorNotification
@@ -4888,6 +4822,7 @@ method
 new inspector.Session()
 params
 port
+Runtime.runIfWaitingForDebugger
 session.connect()
 session.connectToMainThread()
 session.disconnect()
@@ -4896,9 +4831,7 @@ true
 undefined
 wait
 
-
 # From src/api/intl.md
-
 --icu-data-dir
 --with-intl
 --with-intl=full-icu
@@ -4909,43 +4842,37 @@ wait
 ./node_modules/full-icu
 /some/directory
 6X
+b
+configure
 Date.prototype.toLocale*String()
 Date.prototype.toLocaleString()
 Date.prototype.toString()
+full-icu
+icudt6X[bl].dat
 Intl
 Intl.DateTimeFormat
+l
 Locale
+node
 NODE_ICU_DATA
+none
+npm i full-icu
 Number.prototype.toLocaleString()
+process.versions.icu
 RegExp
+require( buffer ).transcode()
+require( util ).TextDecoder
+small-icu
 String.prototype.localeCompare()
 String.prototype.normalize()
 String.prototype.to*Case()
 String.prototype.toLocale*Case()
 String.prototype.toLowerCase()
 String.prototype.toUpperCase()
-b
-configure
-full-icu
-icudt6X[bl].dat
-l
-node
-none
-npm i full-icu
-process.versions.icu
-require( buffer ).transcode()
-require( util ).TextDecoder
-small-icu
 system-icu
-system-icu
-
 
 # From src/api/module.md
-
 --enable-source-maps
-Module
-NODE_V8_COVERAGE=dir
-SourceMap
 columnNumber
 createRequire()
 file
@@ -4954,19 +4881,22 @@ import  module
 lineNumber
 mappings
 module
-module.SourceMap
+Module
 module.builtinModules
 module.createRequire(filename)
 module.createRequireFromPath(filename)
 module.findSourceMap(path)
 module.isPreloading
+module.SourceMap
 module.syncBuiltinESMExports()
 names
 new SourceMap(payload)
+NODE_V8_COVERAGE=dir
 path
 payload
 require( module )
 sourceMap
+SourceMap
 sourceMap.findEntry(lineNumber, columnNumber)
 sourceMap.payload
 sourceRoot
@@ -4975,20 +4905,13 @@ sourcesContent
 true
 version
 
-
 # From src/api/modules.md
-
-"main"
-$HOME
-$HOME/.node_libraries
-$HOME/.node_modules
-$NODE_PATH
-$PREFIX
-$PREFIX/lib/node
+__dirname
+__filename
 ../foo
-./FOO
 ./bar/baz
 ./foo
+./FOO
 ./some-library
 ./some-library/index.js
 ./some-library/index.node
@@ -4997,9 +4920,7 @@ $PREFIX/lib/node
 .mjs
 .node
 .sjs
-/Users/mjr
-/Users/mjr/app/a.js
-/Users/mjr/app/node_modules/b/b.js
+"main"
 /home/marco/foo.js
 /home/node_modules/bar.js
 /home/ry/node_modules/bar.js
@@ -5007,24 +4928,25 @@ $PREFIX/lib/node
 /home/ry/projects/node_modules/bar.js
 /node_modules
 /node_modules/bar.js
+/Users/mjr
+/Users/mjr/app/a.js
+/Users/mjr/app/node_modules/b/b.js
 /usr/lib/node
+/usr/lib/node_modules
+/usr/lib/node_modules/<name>/<version>
 /usr/lib/node/<some-package>/<some-version>
 /usr/lib/node/bar/4.3.2/
 /usr/lib/node/bar/4.3.2/node_modules/*
 /usr/lib/node/bar/4.3.2/node_modules/quux
 /usr/lib/node/foo/1.2.3/
 /usr/lib/node/foo/1.2.3/node_modules/bar
-/usr/lib/node_modules
-/usr/lib/node_modules/<name>/<version>
 /usr/node_modules
-Error
-JSON
-MODULE_NOT_FOUND
-Module
-NODE_PATH
-PI
-__dirname
-__filename
+$HOME
+$HOME/.node_libraries
+$HOME/.node_modules
+$NODE_PATH
+$PREFIX
+$PREFIX/lib/node
 a
 a.js
 area()
@@ -5038,6 +4960,7 @@ code
 const
 dpkg
 entry.js
+Error
 example-module
 exports
 exports.f = ...
@@ -5051,12 +4974,14 @@ id
 import
 index.js
 index.node
+JSON
 let
 lib/
 main
 main.js
 module
-module.SourceMap
+Module
+MODULE_NOT_FOUND
 module.builtinModules
 module.children
 module.createRequire(filename)
@@ -5072,11 +4997,13 @@ module.path
 module.paths
 module.require()
 module.require(id)
+module.SourceMap
 module.syncBuiltinESMExports()
 new SourceMap(payload)
 node example.js
 node foo.js
 node_modules
+NODE_PATH
 node_prefix
 npm
 null
@@ -5085,13 +5012,22 @@ package.json
 path.dirname()
 path/to/file
 paths
+PI
 process.dlopen()
 realpath
 request
 require
-require( ./FOO )
+require.cache
+require.extensions
+require.main
+require.main === module
+require.main.filename
+require.resolve.paths(request)
+require.resolve()
+require.resolve(request[, options])
 require( ./circle )
 require( ./foo )
+require( ./FOO )
 require( ./some-library )
 require( /home/marco/foo.js )
 require( bar )
@@ -5103,14 +5039,6 @@ require( module )
 require( quux )
 require()
 require(id)
-require.cache
-require.extensions
-require.main
-require.main === module
-require.main.filename
-require.resolve()
-require.resolve(request[, options])
-require.resolve.paths(request)
 rpm
 sourceMap.findEntry(lineNumber, columnNumber)
 sourceMap.payload
@@ -5122,58 +5050,11 @@ var
 x.js
 y.js
 
-
 # From src/api/n-api.md
-
-(length * size_of_element) + byte_offset
-+Infinity
 -Infinity
 .node
-Array
-ArrayBuffer
-AsyncLocalStoage
-AsyncLocalStorage
-BigInt
-Boolean
-Buffer
-Buffers
-DataView
-Date
-DefineOwnProperty()
-ERR_ERROR_1
-Error
-Function
-Init
-IsArray
-IsDetachedBuffer
-Keys/Properties
-N-API version:
-NAPI_AUTO_LENGTH
-NAPI_MODULE
-NAPI_MODULE_INIT
-NAPI_VERSION
-NODE_MODULE
-NULL
-NaN
-Number
-Number.MAX_SAFE_INTEGER
-Number.MIN_SAFE_INTEGER
-Object
-Object.getPrototypeOf
-Promise
-RangeError
-String
-Symbol
-ToBoolean()
-ToNumber()
-ToObject()
-ToString()
-TypeError
-TypedArray
-Uint8Array
-Worker
+(length * size_of_element) + byte_offset
 [in-out] argc
-[in/out] word_count
 [in] arg
 [in] argc
 [in] argv
@@ -5250,12 +5131,13 @@ Worker
 [in] type
 [in] type_tag
 [in] typedarray
-[in] utf8Name
 [in] utf8name
+[in] utf8Name
 [in] value
 [in] word_count
 [in] words
 [in] work
+[in/out] word_count
 [out] argv
 [out] arraybuffer
 [out] byte_length
@@ -5275,21 +5157,30 @@ Worker
 [out] type
 [out] version
 [out] words
++Infinity
 abort
 added in:
+addon_node.c
 addon.c
 addon.h
-addon_node.c
 arg
 argv
+Array
 arraybuffer
+ArrayBuffer
 async_context
 async_hooks
 async_hooks.executionAsyncResource()
 async_resource
 async_resource_name
+AsyncLocalStoage
+AsyncLocalStorage
 attributes
+BigInt
 binding.gyp
+Boolean
+Buffer
+Buffers
 byte_length + byte_offset
 call_js_cb
 code
@@ -5300,12 +5191,17 @@ context
 create_
 data
 data - byte_offset
+DataView
+Date
 define NAPI_EXPERIMENTAL
+DefineOwnProperty()
 do_something_asynchronous()
 double
 engine_error_code
 engine_reserved
 env
+ERR_ERROR_1
+Error
 error_code
 error_message
 eval
@@ -5315,6 +5211,7 @@ false
 finalize_cb
 fun
 func
+Function
 getter
 global
 handle
@@ -5322,24 +5219,30 @@ hello
 hook
 index
 init
+Init
 initial_thread_count
 instanceof
 int32
 int32_t
 int64
 int64_t
+IsArray
+IsDetachedBuffer
 js_callback
-js_native_api.h
 js_native_api_types.h
+js_native_api.h
 js_object
 key
+Keys/Properties
 length
 let
 lossless
 method
 module
 myAddon.queryHasRecords()
+N-API version:
 name
+NaN
 napi_acquire_threadsafe_function
 napi_acquire_threadsafe_function()
 napi_add_async_cleanup_hook
@@ -5354,6 +5257,7 @@ napi_async_destroy
 napi_async_init
 napi_async_work
 napi_async_work*
+NAPI_AUTO_LENGTH
 napi_bigint_expected
 napi_boolean_expected
 napi_call_function
@@ -5371,8 +5275,8 @@ napi_closing
 napi_configurable
 napi_create_async_work
 napi_create_error
-napi_create_external()
 napi_create_external_arraybuffer
+napi_create_external()
 napi_create_promise()
 napi_create_range_error
 napi_create_reference
@@ -5419,6 +5323,8 @@ napi_key_numbers_to_strings
 napi_key_own_only
 napi_make_callback
 napi_make_callback()
+NAPI_MODULE
+NAPI_MODULE_INIT
 napi_number_expected
 napi_ok
 napi_open_callback_scope
@@ -5466,28 +5372,38 @@ napi_value
 napi_value passed
 napi_values
 napi_valuetype
+NAPI_VERSION
 napi_wrap
 napi_wrap()
 napi_writable
 new Object()
 new.target
+node_api_types.h
+node_api.h
+NODE_MODULE
 node-addon-api
 node::Buffer
 node::MakeCallback
-node_api.h
-node_api_types.h
 null
+NULL
+Number
+Number.MAX_SAFE_INTEGER
+Number.MIN_SAFE_INTEGER
 object
+Object
 object instanceof constructor
+Object.getPrototypeOf
 originalName
 process.nextTick
 process.release
 process.release.name
 promise
+Promise
 properties
 prototype
-queryHasRecords()
 queryHashRecords()
+queryHasRecords()
+RangeError
 release
 remove_handle
 require
@@ -5495,20 +5411,29 @@ require()
 result
 setter
 sign_bit
+String
+Symbol
 this
 thread_finalize_cb
 throw_
+ToBoolean()
+ToNumber()
+ToObject()
+ToString()
 true
 type
 type_tag
+TypedArray
+TypeError
 typeof
 uint32
 uint32_t
 uint64_t
+Uint8Array
 uncaughtException
 undefined
-utf8Name
 utf8name
+utf8Name
 uv_dlsym()
 uv_ref
 uv_thread_join()
@@ -5521,61 +5446,56 @@ word_count
 words
 words[0]
 words[1]
-
+Worker
 
 # From src/api/net.md
-
+_handle
 .abort()
 .close()
 .connect()
+{ path: path }
+{ port: 12346, family:  IPv4 , address:  127.0.0.1  }
+{port: port, host: host}
 /tmp/echo.sock
-2001:4860:a005::68
-<code>server.listen([port[, host[, backlog]]][, callback])</code>
-AbortController
-BlockList
-Buffer
-EADDRINUSE
-ERR_SERVER_ALREADY_LISTEN
-Error
-EventEmitter
-IPv4
-IPv6
-QuicSocket
-SO_REUSEADDR
-Socket
-String
-Writable
-\\.\pipe\
 \\?\pipe\
-_handle
+\\.\pipe\
+<code>server.listen([port[, host[, backlog]]][, callback])</code>
+2001:4860:a005::68
+AbortController
 address
 allowHalfOpen
 backlog
+BlockList
 blockList.addAddress(address[, type])
 blockList.addRange(start, end[, type])
 blockList.addSubnet(net, prefix[, type])
 blockList.check(address[, type])
 blockList.rules
 buffer
+Buffer
 bufferSize
 callback
 child_process.fork()
 close
 connect
 connect()
-connectListener
 connection
 connectionListener
+connectListener
 count
 data
 dns.lookup()
 drain
+EADDRINUSE
 enable
 encoding
 end
 end()
 err
+ERR_SERVER_ALREADY_LISTEN
 error
+Error
+EventEmitter
 exclusive
 false
 family
@@ -5587,19 +5507,19 @@ host
 initialDelay
 input
 ipv4
+IPv4
 ipv6
+IPv6
 ipv6Only
 listen()
 listening
 localAddress
-localPort
 localhost
+localPort
 lookup
 nc
 net
 net.BlockList
-net.Server
-net.Socket
 net.connect()
 net.connect(options)
 net.connect(options[, connectListener])
@@ -5620,6 +5540,8 @@ net.createServer([options][, connectionListener])
 net.isIP(input)
 net.isIPv4(input)
 net.isIPv6(input)
+net.Server
+net.Socket
 new net.Server([options][, connectionListener])
 new net.Socket([options])
 new net.Socket(options)
@@ -5634,10 +5556,11 @@ pause()
 pauseOnConnect
 port
 prefix
-readOnly
+QuicSocket
 readable
 readable.setEncoding()
 readableAll
+readOnly
 ready
 ref
 ref()
@@ -5661,8 +5584,9 @@ server.ref()
 server.unref()
 signal
 sizeof(sockaddr_un.sun_path) - 1
+SO_REUSEADDR
 socket
-socket(7)
+Socket
 socket.address()
 socket.bufferSize
 socket.bytesRead
@@ -5701,9 +5625,11 @@ socket.timeout
 socket.unref()
 socket.write()
 socket.write(data[, encoding][, callback])
+socket(7)
 somaxconn
 start
 string
+String
 tcp_max_syn_backlog
 telnet
 timeout
@@ -5714,6 +5640,7 @@ unref
 unref()
 utf8
 writable
+Writable
 writable.destroy()
 writable.destroyed
 writable.end()
@@ -5721,14 +5648,10 @@ writable.writableLength
 writableAll
 write()
 writeOnly
-{ path: path }
-{ port: 12346, family:  IPv4 , address:  127.0.0.1  }
-{port: port, host: host}
-
 
 # From src/api/os.md
-
-$HOME
+\n
+\r\n
 <code>-14</code>
 <code>-20</code>
 <code>-7</code>
@@ -5869,6 +5792,9 @@ $HOME
 <code>SIGXCPU</code>
 <code>SIGXFSZ</code>
 <code>UV_UDP_REUSEADDR</code>
+<code>winsock.dll</code>
+<code>WSA_E_CANCELLED</code>
+<code>WSA_E_NO_MORE</code>
 <code>WSAEACCES</code>
 <code>WSAEADDRINUSE</code>
 <code>WSAEADDRNOTAVAIL</code>
@@ -5925,44 +5851,34 @@ $HOME
 <code>WSASYSNOTREADY</code>
 <code>WSATYPE_NOT_FOUND</code>
 <code>WSAVERNOTSUPPORTED</code>
-<code>WSA_E_CANCELLED</code>
-<code>WSA_E_NO_MORE</code>
-<code>winsock.dll</code>
-BE
-Buffer
-Darwin
-GetVersionExW()
-IPv4
-IPv6
-LE
-Linux
-PRIORITY_HIGH
-PRIORITY_HIGHEST
-RtlGetVersion()
-SystemError
-USERPROFILE
-Windows_NT
-\n
-\r\n
+$HOME
 address
 aix
 android
 arm
 arm64
+BE
 buffer
+Buffer
 cidr
 darwin
+Darwin
 encoding
 false
 family
 freebsd
+GetVersionExW()
 gid
 homedir
 ia32
 idle
 internal
+IPv4
+IPv6
 irq
+LE
 linux
+Linux
 mac
 mips
 mipsel
@@ -5973,7 +5889,6 @@ null
 openbsd
 options
 os
-os.EOL
 os.arch()
 os.constants
 os.constants.dlopen
@@ -5982,6 +5897,7 @@ os.constants.priority
 os.constants.signals
 os.cpus()
 os.endianness()
+os.EOL
 os.freemem()
 os.getPriority([pid])
 os.homedir()
@@ -6002,8 +5918,11 @@ pid
 ppc
 ppc64
 priority
+PRIORITY_HIGH
+PRIORITY_HIGHEST
 process.arch
 process.platform
+RtlGetVersion()
 s390
 s390x
 scopeid
@@ -6011,20 +5930,33 @@ shell
 speed
 sunos
 sys
+SystemError
 times
 true
 uid
 uname(3)
 user
 username
+USERPROFILE
 utf8
 win32
+Windows_NT
 x32
 x64
 
-
 # From src/api/packages.md
-
+--conditions
+--eval
+--input-type
+--input-type=commonjs
+--input-type=module
+--print
+-e
+./dep-polyfill.js
+./src/features/x.json.js
+.cjs
+.js
+.mjs
 "./module"
 "browser"
 "commonjs"
@@ -6044,25 +5976,11 @@ x64
 "type"
 "type": "commonjs"
 "type": "module"
---conditions
---eval
---input-type
---input-type=commonjs
---input-type=module
---print
--e
-./dep-polyfill.js
-./src/features/x.json.js
-.cjs
-.js
-.mjs
-Date
-ERR_PACKAGE_PATH_NOT_EXPORTED
-Math
-STDIN
-const pkgInstance = require( pkg )
 const { name } = require( pkg )
+const pkgInstance = require( pkg )
+Date
 dep-node-native
+ERR_PACKAGE_PATH_NOT_EXPORTED
 esm
 false
 feature
@@ -6071,18 +5989,19 @@ import
 import  dep
 import  pkg/feature
 import  pkg/module
+import { name } from  pkg
 import feature from  my-mod/feature
 import feature from  my-mod/feature/index.js
 import pkg from  pkg
 import pkg from  pkg ; pkg.name
 import pkgInstance from  pkg
-import { name } from  pkg
 import()
 index.cjs
 index.mjs
 instanceof
 lib
 main
+Math
 module.exports = function () { ... }
 name
 new
@@ -6104,27 +6023,24 @@ require( pkg/feature )
 require( pkg/subpath.js )
 require( your-package/package.json )
 require()
+STDIN
 subpath.js
 true
 type
 utilities
 utilities-plus
-utilities-plus
-
 
 # From src/api/path.md
-
 ...paths
 /bar
 /bar  +  /  +  baz
 /bar/baz
 /foo
-C:\\foo.HTML
-C:\\foo.html
-TypeError
 base
 basename
 baz
+C:\\foo.html
+C:\\foo.HTML
 dir
 dirname
 ext
@@ -6172,19 +6088,9 @@ require( path/posix )
 require( path/win32 )
 root
 to
-to
-
+TypeError
 
 # From src/api/perf_hooks.md
-
-Histogram
-Map
-PerformanceEntry
-PerformanceMark
-PerformanceMeasure
-PerformanceNodeTiming
-PerformanceObserver
-PerformanceObserverEntryList
 active
 buffered
 callback
@@ -6198,6 +6104,7 @@ false
 fn
 function
 gc
+Histogram
 histogram.disable()
 histogram.enable()
 histogram.exceeds
@@ -6212,6 +6119,7 @@ http
 http2
 idle
 list
+Map
 mark
 measure
 name
@@ -6222,7 +6130,6 @@ options
 options.buffered
 options.entryTypes
 percentile
-perf_hooks.PerformanceObserver
 perf_hooks.constants.NODE_PERFORMANCE_GC_FLAGS_ALL_AVAILABLE_GARBAGE
 perf_hooks.constants.NODE_PERFORMANCE_GC_FLAGS_ALL_EXTERNAL_MEMORY
 perf_hooks.constants.NODE_PERFORMANCE_GC_FLAGS_CONSTRUCT_RETAINED
@@ -6236,6 +6143,7 @@ perf_hooks.constants.NODE_PERFORMANCE_GC_MINOR
 perf_hooks.constants.NODE_PERFORMANCE_GC_WEAKCB
 perf_hooks.monitorEventLoopDelay([options])
 perf_hooks.performance
+perf_hooks.PerformanceObserver
 performance.clearMarks([name])
 performance.eventLoopUtilization([utilization1[, utilization2]])
 performance.flags
@@ -6246,11 +6154,15 @@ performance.nodeTiming
 performance.now()
 performance.timeOrigin
 performance.timerify(fn)
+PerformanceEntry
 performanceEntry.duration
 performanceEntry.entryType
 performanceEntry.kind
 performanceEntry.name
 performanceEntry.startTime
+PerformanceMark
+PerformanceMeasure
+PerformanceNodeTiming
 performanceNodeTiming.bootstrapComplete
 performanceNodeTiming.environment
 performanceNodeTiming.idleTime
@@ -6258,8 +6170,10 @@ performanceNodeTiming.loopExit
 performanceNodeTiming.loopStart
 performanceNodeTiming.nodeStart
 performanceNodeTiming.v8Start
+PerformanceObserver
 performanceObserver.disconnect()
 performanceObserver.observe(options)
+PerformanceObserverEntryList
 performanceObserverEntryList.getEntries()
 performanceObserverEntryList.getEntriesByName(name[, type])
 performanceObserverEntryList.getEntriesByType(type)
@@ -6275,11 +6189,15 @@ utilization
 utilization1
 utilization2
 window.performance
-window.performance
-
 
 # From src/api/policy.md
-
+--experimental-policy
+--policy-integrity
+../resource.js
+./a.js
+./a.js?b
+./app/
+./resource.js
 "blob:https://nodejs.org"
 "cascade"
 "cascade": true
@@ -6291,13 +6209,6 @@ window.performance
 "log"
 "scopes"
 "throw"
---experimental-policy
---policy-integrity
-../resource.js
-./a.js
-./a.js?b
-./app/
-./resource.js
 blob:
 blob:https://nodejs.org
 blob:https://nodejs.org/
@@ -6313,23 +6224,19 @@ node
 null
 package.json
 printf "sha384-$(cat checked.js | openssl dgst -sha384 -binary | base64)"
-require()
 require.cache
+require()
 true
-true
-
 
 # From src/api/process.md
-
-*-deprecation
 --abort-on-uncaught-exception
 --inspect
 --inspect-brk
 --no-deprecation
 --no-warnings
---perf-basic-prof
---perf_basic-prof
 --perf_basic_prof
+--perf_basic-prof
+--perf-basic-prof
 --stack-trace-limit=100
 --throw-deprecation
 --trace-deprecation
@@ -6342,55 +6249,10 @@ true
 .catch(() => { })
 .tar.gz
 .unref()
+[seconds, nanoseconds]
+*-deprecation
 /etc/group
 128 + signal number
-Array
-ArrayBuffer
-Buffer
-CAP_SETGID
-ChildProcess
-ChildProcess.disconnect()
-ChildProcess.send()
-DeprecationWarning
-Dubnium
-Erbium
-Error
-EventEmitter
-EventTarget
-ExperimentalWarning
-Map
-Math.floor()
-MaxListenersExceededWarning
-NODE_OPTIONS
-Object
-On Error Resume Next
-Promise
-Promise.race()
-RTLD_NOW
-SIGABRT
-SIGBREAK
-SIGBUS
-SIGFPE
-SIGHUP
-SIGILL
-SIGINT
-SIGKILL
-SIGPIPE
-SIGSEGV
-SIGSTOP
-SIGTERM
-SIGUSR1
-SIGUSR2
-SIGWINCH
-Set
-Set.prototype.has
-SharedArrayBuffer
-String
-TimeoutOverflowWarning
-TypeError
-UnsupportedWarning
-Worker
-[seconds, nanoseconds]
 add()
 advanced
 aix
@@ -6399,14 +6261,21 @@ argv
 argv[0]
 arm
 arm64
+Array
+ArrayBuffer
 arrayBuffers
 await
 bar()
 beforeExit
 bigint
+Buffer
 callback
+CAP_SETGID
 child_process
+ChildProcess
+ChildProcess.disconnect()
 childprocess.send()
+ChildProcess.send()
 clear()
 code
 config.gypi
@@ -6416,17 +6285,24 @@ ctor
 darwin
 delete
 delete()
+DeprecationWarning
 detail
 directory
 disconnect
 domain
 domain.on( error )
+Dubnium
 emitWarning()
 env
 environ
+Erbium
 err
+Error
+EventEmitter
+EventTarget
 exit
 exitCode
+ExperimentalWarning
 external
 extraGroup
 false
@@ -6457,7 +6333,10 @@ linux
 local.node
 lts
 majorPageFault
+Map
 mask
+Math.floor()
+MaxListenersExceededWarning
 maxRSS
 message
 minorPageFault
@@ -6471,8 +6350,11 @@ nanoseconds
 net.Server
 net.Socket
 node
+NODE_OPTIONS
 node.lib
 null
+Object
+On Error Resume Next
 openbsd
 options
 origin
@@ -6523,16 +6405,16 @@ process.getgid()
 process.getgroups()
 process.getuid()
 process.hasUncaughtExceptionCaptureCallback()
+process.hrtime.bigint()
 process.hrtime()
 process.hrtime([time])
-process.hrtime.bigint()
 process.initgroups()
 process.initgroups(user, extraGroup)
 process.kill()
 process.kill(pid[, signal])
 process.mainModule
-process.memoryUsage()
 process.memoryUsage.rss()
+process.memoryUsage()
 process.nextTick()
 process.nextTick(callback[, ...args])
 process.noDeprecation
@@ -6554,9 +6436,6 @@ process.resourceUsage()
 process.send
 process.send()
 process.send(message[, sendHandle[, options]][, callback])
-process.setUncaughtExceptionCaptureCallback()
-process.setUncaughtExceptionCaptureCallback(fn)
-process.setUncaughtExceptionCaptureCallback(null)
 process.setegid()
 process.setegid(id)
 process.seteuid()
@@ -6566,6 +6445,9 @@ process.setgid(id)
 process.setgroups()
 process.setgroups(groups)
 process.setuid(id)
+process.setUncaughtExceptionCaptureCallback()
+process.setUncaughtExceptionCaptureCallback(fn)
+process.setUncaughtExceptionCaptureCallback(null)
 process.stderr
 process.stderr.fd
 process.stdin
@@ -6584,19 +6466,22 @@ process.versions
 process.versions.modules
 process.versions.node
 promise
+Promise
 promise.catch()
+Promise.race()
 ps
 r
 readable.read()
 reason
 reject
 rejectionHandled
-require()
 require.main
+require()
 resolve
 resource.loaded
 root
 rss
+RTLD_NOW
 ru_idrss
 ru_inblock
 ru_isrss
@@ -6617,17 +6502,36 @@ s390
 s390x
 sendHandle
 serialization
+Set
+Set.prototype.has
 setInterval()
 setTimeout()
+SharedArrayBuffer
 sharedMemorySize
+SIGABRT
+SIGBREAK
+SIGBUS
+SIGFPE
+SIGHUP
+SIGILL
+SIGINT
+SIGKILL
 signal
 signalsCount
+SIGPIPE
+SIGSEGV
+SIGSTOP
+SIGTERM
+SIGUSR1
+SIGUSR2
+SIGWINCH
 sourceUrl
 stack
 stderr
 stdin
 stdout
 strict
+String
 subprocess.kill()
 sunos
 swappedOut
@@ -6635,8 +6539,10 @@ system
 systemCPUTime
 throw
 time
+TimeoutOverflowWarning
 true
 type
+TypeError
 uncaughtException
 uncaughtExceptionMonitor
 undefined
@@ -6644,6 +6550,7 @@ unhandledRejection
 unhandledRejections
 unsharedDataSize
 unsharedStackSize
+UnsupportedWarning
 user
 userCPUTime
 uv_getrusage
@@ -6653,12 +6560,11 @@ value
 voluntaryContextSwitches
 warning
 win32
+Worker
 x32
 x64
 
-
 # From src/api/punycode.md
-
 codePoints
 domain
 example
@@ -6682,10 +6588,7 @@ string
 xn--fsq.com
 例.com
 
-
 # From src/api/querystring.md
-
-Object
 decodeURIComponent
 decodeURIComponent()
 encodeURIComponent
@@ -6695,6 +6598,7 @@ maxKeys
 obj
 obj.hasOwnProperty()
 obj.toString()
+Object
 options
 querystring
 querystring.decode()
@@ -6711,70 +6615,27 @@ querystring.unescape()
 querystring.unescape(str)
 sep
 str
-str
-
 
 # From src/api/quic.md
-
 --experimental-quic
+{ type:  ECDH , name:  prime256v1 , size: 256 }
+{buf: <string|buffer>[, passphrase: <string>]}
 1xx
 AbortController
 AbortError
 AbortSignal
-Array
-Buffer
-Closed
-DH
-Duplex
-EADDRNOTAVAIL
-ECDH
-EINVAL
-EPROTONOSUP
-ERR_INVALID_STATE
-Error
-FileHandle
-Handshake
-IP%scope
-IP_ADD_MEMBERSHIP
-IP_DROP_MEMBERSHIP
-IP_MULTICAST_LOOP
-IP_MULTICAST_TTL
-IP_TTL
-IPv4
-IPv6
-Initial
-P-521:P-384:P-256
-Promise
-QuicClientSession
-QuicClientSession extends QuicSession
-QuicEndpoint
-QuicServerSession
-QuicServerSession extends QuicSession
-QuicSession extends EventEmitter
-QuicSessions
-QuicSocket
-QuicStream
-QuicStream extends stream.Duplex
-QuicStreams
-RETRY
-Ready
-SERVER_BUSY
-SO_BROADCAST
-SSL_OP_*
-SSL_OP_CIPHER_SERVER_PREFERENCE
-SecureContext
-TLSv1.3
-Uint8Array
 accept
 activeConnectionIdLimit
 addMembership()
 address
 alpn
 alpnProtocol
+Array
 auto
 bidi
 bind()
 blocked
+Buffer
 busy
 ca
 cert
@@ -6785,6 +6646,7 @@ client.qlog
 clientCertEngine
 clientHelloHandler
 close
+Closed
 code
 congestionAlgorithm
 connect()
@@ -6796,28 +6658,47 @@ data
 defaultEncoding
 detailed
 details
+DH
 dhparam
 disableStatelessReset
 dns
+Duplex
+EADDRNOTAVAIL
 earlyData
+ECDH
 ecdhCurve
+EINVAL
 end
 endpoint
 endpointClose
+EPROTONOSUP
+ERR_INVALID_STATE
 error
+Error
 failure
 false
 family
 fd
+FileHandle
 h3
 halfOpen
+Handshake
 headers
 highWaterMark
 honorCipherOrder
 idleTimeout
 iface
 informationalHeaders
+Initial
 initialHeaders
+IP_ADD_MEMBERSHIP
+IP_DROP_MEMBERSHIP
+IP_MULTICAST_LOOP
+IP_MULTICAST_TTL
+IP_TTL
+IP%scope
+IPv4
+IPv6
 issuerCertificate
 key
 keylog
@@ -6846,20 +6727,21 @@ multicastInterface
 name
 natRebinding
 net
-net.Socket
 net.createQuicSocket()
 net.createQuicSocket([options])
+net.Socket
 object.passphrase
 ocspHandler
 offset
 on
 onError
-openStream()
 openssl dhparam
 openssl ecparam -list_curves
+openStream()
 options
 options.onError
 options.passphrase
+P-521:P-384:P-256
 passphrase
 path
 pathValidation
@@ -6868,13 +6750,16 @@ ping()
 port
 preferredAddress
 preferredAddressPolicy
+Promise
 pushStream()
 qlog
 qpackBlockedStreams
 qpackMaxTableCapacity
-quicSocket.serverBusy = true | false
+QuicClientSession
+QuicClientSession extends QuicSession
 quicclientsession.ephemeralKeyInfo
 quicclientsession.setSocket(socket[, natRebinding])
+QuicEndpoint
 quicendpoint.addMembership(address, iface)
 quicendpoint.address
 quicendpoint.bind()
@@ -6894,6 +6779,9 @@ quicendpoint.setMulticastLoopback([on])
 quicendpoint.setMulticastTTL(ttl)
 quicendpoint.setTTL(ttl)
 quicendpoint.unref()
+QuicServerSession
+QuicServerSession extends QuicSession
+QuicSession extends EventEmitter
 quicsession.ackDelayRetransmitCount
 quicsession.address
 quicsession.alpnProtocol
@@ -6939,6 +6827,8 @@ quicsession.statelessReset
 quicsession.uniStreamCount
 quicsession.updateKey()
 quicsession.usingEarlyData
+QuicSessions
+QuicSocket
 quicsocket.addEndpoint()
 quicsocket.addEndpoint(options)
 quicsocket.blockList
@@ -6965,6 +6855,7 @@ quicsocket.pending
 quicsocket.ref()
 quicsocket.serverBusy
 quicsocket.serverBusy = false
+quicSocket.serverBusy = true | false
 quicsocket.serverBusyCount
 quicsocket.serverSessions
 quicsocket.setDiagnosticPacketLoss()
@@ -6972,6 +6863,8 @@ quicsocket.setDiagnosticPacketLoss(options)
 quicsocket.statelessReset
 quicsocket.statelessResetCount
 quicsocket.unref();
+QuicStream
+QuicStream extends stream.Duplex
 quicstream.bidirectional
 quicstream.bytesReceived
 quicstream.bytesSent
@@ -6996,8 +6889,10 @@ quicstream.submitInitialHeaders(headers)
 quicstream.submitTrailingHeaders(headers)
 quicstream.unidirectional
 quicstream.write()
+QuicStreams
 readable
 ready
+Ready
 reject
 rejectUnauthorized
 remote
@@ -7007,11 +6902,14 @@ request
 requestCert
 response
 result
+RETRY
 retryTokenTimeout
 rx
 secure
+SecureContext
 secureOptions
 server
+SERVER_BUSY
 servername
 session
 sessionError
@@ -7020,7 +6918,10 @@ sessionTicket
 setMulticastTTL()
 setTTL()
 signal
+SO_BROADCAST
 socket
+SSL_OP_*
+SSL_OP_CIPHER_SERVER_PREFERENCE
 statelessResetSecret
 stream
 stream.Readable
@@ -7029,8 +6930,9 @@ submitInitialHeaders()
 submitTrailingHeaders()
 success
 tls.DEFAULT_ECDH_CURVE
-tls.TLSSocket
 tls.getCiphers()
+tls.TLSSocket
+TLSv1.3
 trailingHeaders
 true
 ttl
@@ -7039,6 +6941,7 @@ type
 udp4
 udp6
 udp6-only
+Uint8Array
 undefined
 uni
 upd6
@@ -7046,28 +6949,17 @@ usePreferredAddress
 utf8
 validateAddress
 version
-{ type:  ECDH , name:  prime256v1 , size: 256 }
-{buf: <string|buffer>[, passphrase: <string>]}
-{buf: <string|buffer>[, passphrase: <string>]}
-
 
 # From src/api/readline.md
-
-<code>SIGINT</code>
-<code>fg</code>
-Array
-AsyncIterator
-Error
-Infinity
-Interface
-SIGCONT
-SIGINT
-SIGTSTP
 [[substr1, substr2, ...], originalsubstring]
 \n
 \r
 \r\n
+<code>fg</code>
+<code>SIGINT</code>
+Array
 async
+AsyncIterator
 await
 break
 callback
@@ -7082,13 +6974,16 @@ drain
 dx
 dy
 end
+Error
 escapeCodeTimeout
 false
 for await...of
 fs.ReadStream
 historySize
+Infinity
 input
 interface
+Interface
 isTTY
 key
 keypress
@@ -7106,7 +7001,6 @@ process.stdout
 prompt
 query
 readline
-readline.Interface
 readline.clearLine()
 readline.clearLine(stream, dir[, callback])
 readline.clearScreenDown()
@@ -7117,6 +7011,7 @@ readline.cursorTo()
 readline.cursorTo(stream, x[, y][, callback])
 readline.emitKeypressEvents()
 readline.emitKeypressEvents(stream[, interface])
+readline.Interface
 readline.moveCursor()
 readline.moveCursor(stream, dx, dy[, callback])
 removeHistoryDuplicates
@@ -7141,6 +7036,9 @@ rl.write(data[, key])
 rl[Symbol.asyncIterator]()
 rows
 shift
+SIGCONT
+SIGINT
+SIGTSTP
 stream
 tabSize
 terminal
@@ -7150,9 +7048,8 @@ undefined
 x
 y
 
-
 # From src/api/repl.md
-
+_error
 --experimental-repl-await
 -i
 .bashrc
@@ -7166,21 +7063,6 @@ y
 .save
 > .load ./file/to/load.js
 > .save ./file/to/save.js
-ERR_DOMAIN_CANNOT_SET_UNCAUGHT_EXCEPTION_CAPTURE
-ERR_INVALID_REPL_INPUT
-Function
-NODE_NO_READLINE=1
-NODE_REPL_HISTORY
-NODE_REPL_HISTORY=
-NODE_REPL_HISTORY_SIZE
-NODE_REPL_MODE
-Object
-Object.defineProperty()
-REPLServer
-Readable
-SIGINT
-Writable
-_error
 action
 await
 breakEvalOnSigint
@@ -7195,11 +7077,14 @@ defaultOptions
 domain
 end
 err
+ERR_DOMAIN_CANNOT_SET_UNCAUGHT_EXCEPTION_CAPTURE
+ERR_INVALID_REPL_INPUT
 eval
 eval()
 exit
 false
 fs
+Function
 global
 global.fs = require( fs )
 help
@@ -7216,6 +7101,13 @@ net.Server
 net.Socket
 new
 node
+NODE_NO_READLINE=1
+NODE_REPL_HISTORY
+NODE_REPL_HISTORY_SIZE
+NODE_REPL_HISTORY=
+NODE_REPL_MODE
+Object
+Object.defineProperty()
 options
 output
 preserveCursor
@@ -7224,17 +7116,19 @@ process.setUncaughtExceptionCaptureCallback()
 process.stdin
 process.stdout
 prompt
+Readable
 readline.InterfaceCompleter
 repl
-repl.REPLServer
+repl.builtinModules
+repl.Recoverable
 repl.REPL_MODE_SLOPPY
 repl.REPL_MODE_STRICT
-repl.Recoverable
 repl.ReplServer
-repl.builtinModules
+repl.REPLServer
 repl.start()
 repl.start([options])
 replMode
+REPLServer
 replServer.clearBufferedCommand()
 replServer.defineCommand()
 replServer.defineCommand(keyword, cmd)
@@ -7248,6 +7142,7 @@ rest
 reverse-i-search
 rlwrap
 showProxy
+SIGINT
 sloppy
 socat
 stdin
@@ -7263,12 +7158,10 @@ useColors
 useGlobal
 util.inspect()
 var
+Writable
 writer
-writer
-
 
 # From src/api/report.md
-
 --report-compact
 --report-directory
 --report-filename
@@ -7276,11 +7169,9 @@ writer
 --report-on-signal
 --report-signal
 --report-uncaught-exception
-Error
-SIGUSR2
-Worker
 directory
 err
+Error
 false
 filename
 libuv
@@ -7290,42 +7181,15 @@ reportOnFatalError
 reportOnSignal
 reportOnUncaughtException
 signal
+SIGUSR2
 stderr
 stdout
 true
+Worker
 workers
 writeReport()
 
-
 # From src/api/stream.md
-
-...transforms
-.destroy()
-.destroy(new AbortError())
-.emit()
-.read()
-.resume()
-.write()
-AbortController
-AbortSignal
-Buffer
-Duplex
-ERR_STREAM_DESTROYED
-Error
-EventEmitter
-Hash
-Promise
-Readable
-Readable.from()
-Readable.from(buffer)
-Readable.from(string)
-StringDecoder
-Symbol.asyncIterator
-Symbol.hasInstance
-Symbol.iterator
-Transform
-Uint8Array
-Writable
 _construct()
 _destroy()
 _final()
@@ -7334,12 +7198,23 @@ _read()
 _transform()
 _write()
 _writev()
+...transforms
+.destroy()
+.destroy(new AbortError())
+.emit()
+.read()
+.resume()
+.write()
+{ chunk: ..., encoding: ... }
 abort
+AbortController
+AbortSignal
 allowHalfOpen
 ascii
 autoDestroy
 break
 buffer
+Buffer
 callback
 chunk
 chunks
@@ -7353,13 +7228,17 @@ destination
 destroy
 destroy()
 drain
+Duplex
 emit( error , err)
 emitClose
 encoding
 end
 end()
 err
+ERR_STREAM_DESTROYED
 error
+Error
+EventEmitter
 false
 file.txt
 final
@@ -7369,6 +7248,7 @@ flush
 foo.txt
 fs.createReadStream()
 fs.createWriteStream()
+Hash
 highWaterMark
 instanceof
 iterable
@@ -7394,10 +7274,12 @@ process.nextTick()
 process.stderr
 process.stdin
 process.stdout
+Promise
 push()
 read
 read()
 readable
+Readable
 readable._construct(callback)
 readable._destroy()
 readable._destroy(err, callback)
@@ -7407,6 +7289,9 @@ readable.destroy()
 readable.destroy([error])
 readable.destroy(err)
 readable.destroyed
+Readable.from()
+Readable.from(buffer)
+Readable.from(string)
 readable.isPaused()
 readable.on( readable )
 readable.pause()
@@ -7417,8 +7302,8 @@ readable.push()
 readable.push(chunk[, encoding])
 readable.push(null)
 readable.read()
-readable.read(0)
 readable.read([size])
+readable.read(0)
 readable.read(size)
 readable.readable
 readable.readableBuffer
@@ -7442,10 +7327,10 @@ readable.unshift()
 readable.unshift(chunk[, encoding])
 readable.wrap()
 readable.wrap(stream)
+readable[Symbol.asyncIterator]()
 readableFlowing
 readableHighWaterMark
 readableObjectMode
-readable[Symbol.asyncIterator]()
 require( stream )
 require( stream ).promises
 require( stream/promises )
@@ -7457,13 +7342,6 @@ size
 source
 src
 stream
-stream.Duplex
-stream.PassThrough
-stream.Readable
-stream.Readable.from()
-stream.Readable.from(iterable, [options])
-stream.Transform
-stream.Writable
 stream._construct()
 stream._destroy()
 stream._final()
@@ -7476,9 +7354,11 @@ stream.addAbortSignal()
 stream.addAbortSignal(signal, stream)
 stream.cork()
 stream.destroy(err)
+stream.Duplex
 stream.end()
 stream.finished()
 stream.finished(stream[, options], callback)
+stream.PassThrough
 stream.pause()
 stream.pipe()
 stream.pipeline()
@@ -7487,24 +7367,34 @@ stream.pipeline(streams, callback)
 stream.push( )
 stream.push(chunk)
 stream.read()
-stream.read(0)
 stream.read([size])
+stream.read(0)
 stream.read(n)
+stream.Readable
+stream.Readable.from()
+stream.Readable.from(iterable, [options])
 stream.resume()
+stream.Transform
 stream.uncork()
 stream.unpipe()
 stream.unshift()
 stream.unshift(chunk)
 stream.wrap()
+stream.Writable
 stream.write()
 stream.write(anyObj)
 stream.write(chunk)
 stream/promises
 streams
 string
+StringDecoder
+Symbol.asyncIterator
+Symbol.hasInstance
+Symbol.iterator
 this.push(dataChunk)
 throw
 transform
+Transform
 transform._flush()
 transform._flush(callback)
 transform._transform()
@@ -7512,6 +7402,7 @@ transform._transform(chunk, encoding, callback)
 transform.destroy([error])
 transform.push()
 true
+Uint8Array
 uncork()
 undefined
 unpipe
@@ -7519,6 +7410,7 @@ utf8
 val
 while
 writable
+Writable
 writable._construct(callback)
 writable._destroy()
 writable._destroy(err, callback)
@@ -7556,48 +7448,36 @@ write()
 writev
 zlib
 zlib.createDeflate()
-{ chunk: ..., encoding: ... }
-
 
 # From src/api/string_decoder.md
-
+buffer
 Buffer
 DataView
-StringDecoder
-TypedArray
-buffer
 encoding
 end()
 new StringDecoder([encoding])
+string_decoder
 stringDecoder
+StringDecoder
 stringDecoder.end()
 stringDecoder.end([buffer])
 stringDecoder.write()
 stringDecoder.write(buffer)
-string_decoder
+TypedArray
 utf8
 
-
 # From src/api/synopsis.md
-
-Hello, World!
 hello-world.js
+Hello, World!
 http://127.0.0.1:3000
 node [options] [V8 options] [script.js | -e "script" | - ] [arguments]
 projects
-projects
-
 
 # From src/api/timers.md
-
 ...args
 AbortController
 AbortError
 AbortSignal
-Immediate
-Promise
-Timeout
-TypeError
 callback
 clearImmediate()
 clearImmediate(immediate)
@@ -7608,10 +7488,12 @@ clearTimeout(timeout)
 delay
 false
 immediate
+Immediate
 immediate.hasRef()
 immediate.ref()
 immediate.unref()
 options
+Promise
 ref
 require( timers )
 require( timers/promises )
@@ -7623,6 +7505,7 @@ setTimeout()
 setTimeout(callback[, delay[, ...args]])
 signal
 timeout
+Timeout
 timeout.hasRef()
 timeout.ref()
 timeout.refresh()
@@ -7633,15 +7516,12 @@ timers/promises
 timersPromises.setImmediate([value[, options]])
 timersPromises.setTimeout([delay[, value[, options]]])
 true
+TypeError
 util.promisify()
 value
 worker_threads
-worker_threads
-
 
 # From src/api/tls.md
-
-!EECDH
 --tls-cipher-list
 --tls-max-v1.2
 --tls-max-v1.3
@@ -7649,82 +7529,34 @@ worker_threads
 --tls-min-v1.1
 --tls-min-v1.3
 -reconnect
+!EECDH
 .p12
 .pfx
-2001:4860:a005::68
-2A:7A:C2:DD:...
-ALPNProtocols
-Array
-B56CE45CB7...
-B9B0D332A1AA5635
-Buffer
-C:
-CCM
-CN
-DH
-DHE
-DataView
-Duplex
-ECDH
-ECDHE
-ECDHE-RSA-AES128-GCM-SHA256:!RC4
-ECDSA
-EECDH
-ERR_TLS_PSK_SET_IDENTIY_HINT_FAILED
-Error
-Finished
-IPv4
-IPv6
-L
-MD5
-NODE_OPTIONS
-O
-OCSPRequest
-OCSPResponse
-OU
-P-256
-P-521:P-384:P-256
-RSA-PSS
-SHA256
-SNICallback
-SNICallback(servername, callback)
-SSLKEYLOGFILE
-SSL_OP_*
-SSL_OP_CIPHER_SERVER_PREFERENCE
-SSL_export_keying_material
-SSL_get_finished
-SSL_get_peer_finished
-SSL_get_version
-SSL_trace()
-SSLv3
-ST
-SecureContext
-SecurePair
-TLSSocket
-TLS_
-TLS_AES_128_CCM_8_SHA256
-TLS_AES_128_CCM_SHA256
-TLS_AES_128_GCM_SHA256
-TLS_AES_256_GCM_SHA384
-TLS_CHACHA20_POLY1305_SHA256
-TLS_method
-TLSv1
-TLSv1.1
-TLSv1.2
-TLSv1.3
-TLSv1_1_method
-TypedArray
 [ hello ,  world ]
 [ http/1.1 ,  http/1.0 ]
 [len][name][len][name]...
+{ port: 12346, family:  IPv4 , address:  127.0.0.1  }
+{ psk: <Buffer|TypedArray|DataView>, identity: <string> }
+{ type:  ECDH , name:  prime256v1 , size: 256 }
+{buf: <string|buffer>[, passphrase: <string>]}
+{C:  UK , ST:  BC , L:  Metro , O:  Node Fans , OU:  Docs , CN:  example.com }
+{pem: <string|buffer>[, passphrase: <string>]}
 \x08http/1.1\x08http/1.0
+2001:4860:a005::68
+2A:7A:C2:DD:...
 address
 allowHalfOpen
+ALPNProtocols
+Array
 asn1Curve
 auto
+B56CE45CB7...
+B9B0D332A1AA5635
 bits
 boolean
 buffer
+Buffer
+C:
 ca
 callback
 callback()
@@ -7734,6 +7566,7 @@ callback(null, null)
 callback(null, resp)
 callback(null, sessionData)
 cat ca1-cert.pem ca2-cert.pem > ca-cert.pem
+CCM
 cert
 certfile
 certificate
@@ -7743,20 +7576,32 @@ cleartext
 clientCertEngine
 close
 cluster
+CN
 connection
 context
 crl
 crypto.getCurves()
 cryptoStream.bytesWritten
 ctx
+DataView
 detailed
+DH
+DHE
 dhparam
+Duplex
+ECDH
 ecdhCurve
+ECDHE
+ECDHE-RSA-AES128-GCM-SHA256:!RC4
+ECDSA
+EECDH
 enableTrace
 encrypted
 err
+ERR_TLS_PSK_SET_IDENTIY_HINT_FAILED
 err.code
 error
+Error
 exception
 exponent
 ext_key_usage
@@ -7764,6 +7609,7 @@ false
 family
 fingerprint
 fingerprint256
+Finished
 getSession()
 handshakeTimeout
 helloworld
@@ -7777,32 +7623,40 @@ identity
 in
 infoAccess
 inkey
+IPv4
+IPv6
 isServer
 issuer
 issuerCertificate
 key
 keylog
 keys
+L
 label
 len
 length
 line
 localhost
 maxVersion
+MD5
 minDHSize
 minVersion
 modulus
 name
+net.connect()
+net.createServer()
 net.Server
 net.Server.address()
 net.Socket
-net.connect()
-net.createServer()
 new tls.TLSSocket(socket[, options])
 newSession
 nistCurve
+NODE_OPTIONS
 null
+O
 object.passphrase
+OCSPRequest
+OCSPResponse
 onread
 openssl ciphers -v  PSK
 openssl ciphers -v -s -tls1_3 -psk
@@ -7817,6 +7671,9 @@ options.passphrase
 options.path
 options.port
 or
+OU
+P-256
+P-521:P-384:P-256
 pair.cleartext
 pair.cleartext.authorized
 passphrase
@@ -7842,12 +7699,15 @@ resp
 response
 resumeSession
 rsa_pss_pss_sha512
+RSA-PSS
 secure
 secureConnect
 secureConnection
 secureConnectionListener
 secureContext
+SecureContext
 secureOptions
+SecurePair
 secureProtocol
 secureSocket
 serialNumber
@@ -7869,35 +7729,44 @@ sessionData
 sessionId
 sessionIdContext
 sessionTimeout
+SHA256
 sigalgs
 size
+SNICallback
+SNICallback(servername, callback)
 socket
 socket.authorizationError
 socket.connect()
 socket.destroy(err)
+SSL_export_keying_material
+SSL_get_finished
+SSL_get_peer_finished
+SSL_get_version
+SSL_OP_*
+SSL_OP_CIPHER_SERVER_PREFERENCE
+SSL_trace()
+SSLKEYLOGFILE
+SSLv3
+ST
 standardName
 stderr
 subject
 subjectaltname
 ticketKeys
 tls
+tls_
+TLS_
+TLS_AES_128_CCM_8_SHA256
+TLS_AES_128_CCM_SHA256
+TLS_AES_128_GCM_SHA256
+TLS_AES_256_GCM_SHA384
+TLS_CHACHA20_POLY1305_SHA256
+TLS_method
 tls-unique
-tls.CLIENT_RENEG_LIMIT
-tls.CLIENT_RENEG_WINDOW
-tls.CryptoStream
-tls.DEFAULT_ECDH_CURVE
-tls.DEFAULT_MAX_VERSION
-tls.DEFAULT_MIN_VERSION
-tls.SecurePair
-tls.Server
-tls.TLSSocket
-tls.TLSSocket()
-tls.TLSSocket.enableTrace()
-tls.TLSSocket.getPeerCertificate()
-tls.TLSSocket.getSession()
-tls.TLSSocket.getTLSTicket()
 tls.checkServerIdentity()
 tls.checkServerIdentity(hostname, cert)
+tls.CLIENT_RENEG_LIMIT
+tls.CLIENT_RENEG_WINDOW
 tls.connect()
 tls.connect(options[, callback])
 tls.connect(path[, options][, callback])
@@ -7908,10 +7777,23 @@ tls.createSecurePair()
 tls.createSecurePair([context][, isServer][, requestCert][, rejectUnauthorized][, options])
 tls.createServer()
 tls.createServer([options][, secureConnectionListener])
+tls.CryptoStream
+tls.DEFAULT_ECDH_CURVE
+tls.DEFAULT_MAX_VERSION
+tls.DEFAULT_MIN_VERSION
 tls.getCiphers()
 tls.rootCertificates
+tls.SecurePair
+tls.Server
+tls.TLSSocket
+tls.TLSSocket.enableTrace()
+tls.TLSSocket.getPeerCertificate()
+tls.TLSSocket.getSession()
+tls.TLSSocket.getTLSTicket()
+tls.TLSSocket()
 tlsClientError
 tlsSocket
+TLSSocket
 tlsSocket.address()
 tlsSocket.alpnProtocol
 tlsSocket.authorizationError
@@ -7942,38 +7824,34 @@ tlsSocket.renegotiate(options, callback)
 tlsSocket.servername
 tlsSocket.setMaxSendFragment()
 tlsSocket.setMaxSendFragment(size)
-tls_
+TLSv1
+TLSv1_1_method
+TLSv1.1
+TLSv1.2
+TLSv1.3
 true
+TypedArray
 undefined
 unknown
 valid_from
 valid_to
 version
-{ port: 12346, family:  IPv4 , address:  127.0.0.1  }
-{ psk: <Buffer|TypedArray|DataView>, identity: <string> }
-{ type:  ECDH , name:  prime256v1 , size: 256 }
-{C:  UK , ST:  BC , L:  Metro , O:  Node Fans , OU:  Docs , CN:  example.com }
-{buf: <string|buffer>[, passphrase: <string>]}
-{pem: <string|buffer>[, passphrase: <string>]}
-
 
 # From src/api/tracing.md
-
-${pid}
-${rotation}
 --trace-event-categories
 --trace-event-file-pattern
 --trace-events-enabled
-Tracing
-Worker
-asyncId
+${pid}
+${rotation}
 async_hooks
+asyncId
 categories
 chrome://tracing
 console.count()
 console.time()
 node
 node --trace-event-categories node.perf test.js
+node_trace.${rotation}.log
 node.async_hooks
 node.async_hooks,node.perf
 node.bootstrap
@@ -7986,7 +7864,6 @@ node.perf.timerify
 node.perf.usertiming
 node.promises.rejections
 node.vm.script
-node_trace.${rotation}.log
 options
 process.hrtime()
 runInContext()
@@ -7997,6 +7874,7 @@ trace_events
 trace_events.createTracing()
 trace_events.createTracing(options)
 trace_events.getEnabledCategories()
+Tracing
 tracing.categories
 tracing.disable()
 tracing.enable()
@@ -8006,18 +7884,9 @@ triggerId
 true
 v8
 vm
-
+Worker
 
 # From src/api/tty.md
-
-FORCE_COLOR = 0
-FORCE_COLOR = 1
-FORCE_COLOR = 2
-FORCE_COLOR = 3
-NODE_DISABLE_COLORS
-NO_COLOR
-SIGINT
-WriteStream
 [numColumns, numRows]
 boolean
 callback
@@ -8029,10 +7898,16 @@ dy
 env
 false
 fd
+FORCE_COLOR = 0
+FORCE_COLOR = 1
+FORCE_COLOR = 2
+FORCE_COLOR = 3
 mode
+NO_COLOR
+NODE_DISABLE_COLORS
+number
 numColumns
 numRows
-number
 process.env
 process.stderr
 process.stdin
@@ -8042,13 +7917,15 @@ readStream.isRaw
 readStream.isTTY
 readStream.setRawMode(mode)
 resize
+SIGINT
 true
 tty
-tty.ReadStream
-tty.WriteStream
 tty.isatty()
 tty.isatty(fd)
+tty.ReadStream
+tty.WriteStream
 writeStream
+WriteStream
 writeStream.clearLine()
 writeStream.clearLine(dir[, callback])
 writeStream.clearScreenDown()
@@ -8067,32 +7944,24 @@ writeStream.rows
 x
 y
 
-
 # From src/api/url.md
-
-%3C
 .searchParams
 .toString()
+{ query :  string }
+{host:  foo , pathname:  /bar }
+{pathname:  //foo/bar }
 //foo/bar
 /p/a/t/h
 /p/a/t/h?query=string
+%3C
 Array
-Error
-Iterator
-JSON.stringify()
-Map
-Object
-String
-TypeError
-URIError
-URL
-URLSearchParams
 array.toString()
 auth
 base
 boolean
 delete
 domain
+Error
 false
 file
 fish
@@ -8112,6 +7981,9 @@ https
 https://user:pass@sub.example.com:8080/p/a/t/h?query=string hash
 input
 iterable
+Iterator
+JSON.stringify()
+Map
 name
 new URL()
 new URL(base)
@@ -8124,6 +7996,7 @@ new URLSearchParams(string)
 node
 null
 obj
+Object
 options
 origin
 parse()
@@ -8136,13 +8009,14 @@ protocol
 query
 query=string
 querystring
-require( url ).Url
 require( url ).format()
+require( url ).Url
 result
 search
 slashes
 slashesDenoteHost
 string
+String
 stringify()
 sub.example.com
 sub.example.com:8080
@@ -8152,9 +8026,12 @@ to
 toJSON()
 toString()
 true
+TypeError
 undefined
 unicode
+URIError
 url
+URL
 url.domainToASCII()
 url.domainToASCII(domain)
 url.domainToUnicode()
@@ -8171,8 +8048,8 @@ url.origin
 url.parse()
 url.parse(urlString[, parseQueryString[, slashesDenoteHost]])
 url.password
-url.pathToFileURL(path)
 url.pathname
+url.pathToFileURL(path)
 url.port
 url.protocol
 url.resolve()
@@ -8195,6 +8072,7 @@ urlObject.protocol
 urlObject.query
 urlObject.search
 urlObject.slashes
+URLSearchParams
 urlSearchParams.append(name, value)
 urlSearchParams.delete(name)
 urlSearchParams.entries()
@@ -8207,102 +8085,45 @@ urlSearchParams.set(name, value)
 urlSearchParams.sort()
 urlSearchParams.toString()
 urlSearchParams.values()
-urlSearchParams@@iterator()
 urlSearchParams[@@iterator]()
 urlSearchParams[Symbol.iterator]()
+urlSearchParams@@iterator()
 urlString
 user:pass
 username
 value
 ws
 wss
-{ query :  string }
-{host:  foo , pathname:  /bar }
-{pathname:  //foo/bar }
-
 
 # From src/api/util.md
-
-%O
+--no-deprecation
+--no-warnings
+--throw-deprecation
+--trace-deprecation
+--trace-warnings
+(err, value) => ...
+(foo, onSuccessCallback, onErrorCallback)
+(typeof value !==  object  && typeof value !==  function ) || value === null
+[Circular]
+[util.inspect.custom](depth, opts)
+{ depth: 0, colors: false, compact: 3 }
+{ showHidden: true, showProxy: true }
+@@toStringTag
 %c
 %d
 %f
 %i
 %j
 %o
+%O
 %s
-(err, value) => ...
-(foo, onSuccessCallback, onErrorCallback)
-(typeof value !==  object  && typeof value !==  function ) || value === null
---no-deprecation
---no-warnings
---throw-deprecation
---trace-deprecation
---trace-warnings
-@@toStringTag
+ansi_x3.4-1968
+arabic
+arguments
 Array
 Array.isArray()
 ArrayBuffer
 ArrayBuffer.isView()
-BigInt
-BigInt64Array
-BigUint64Array
-Boolean
-Buffer
-Buffer.isBuffer()
-CSS
-DataView
-Date
-DeprecationWarning
-Error
-External
-Float32Array
-Float64Array
-Function
-Infinity
-Int16Array
-Int32Array
-Int8Array
-Map
-NODE_DEBUG
-NODE_DEBUG=foo
-NODE_DEBUG=foo*
-NODE_DEBUG=fs,net,tls
-Number
-Object
-Object()
-Object(Symbol())
-Object.assign()
-Object.freeze()
-Object.prototype.toString()
-Object.prototype.toString.call(value)
-Object.setPrototypeOf(constructor.prototype, superConstructor.prototype)
-Promise
-Proxies
-Proxy
-RegExp
-Set
-SharedArrayBuffer
-String
-Symbol
-Symbol.for( nodejs.util.inspect.custom )
-Symbol.for( nodejs.util.promisify.custom )
-TextDecoder
-TextEncoder
-TypeError
-TypedArray
-Uint16Array
-Uint32Array
-Uint8Array
-Uint8ClampedArray
-WeakMap
-WeakSet
-WebAssembly.Module
-[Circular]
-[util.inspect.custom](depth, opts)
-ansi_x3.4-1968
-arabic
-arguments
 ascii
 asmo-708
 assert.deepStrictEqual()
@@ -8329,13 +8150,19 @@ bgYellowBright
 big5
 big5-hkscs
 bigint
+BigInt
+BigInt64Array
+BigUint64Array
 black
 blackBright
 blue
 blueBright
 bold
 boolean
+Boolean
 breakLength
+Buffer
+Buffer.isBuffer()
 callback
 chinese
 class
@@ -8358,8 +8185,8 @@ cp1257
 cp1258
 cp819
 cp866
-crossedOut
 crossedout
+crossedOut
 csbig5
 cseuckr
 cseucpkdfmtjapanese
@@ -8385,15 +8212,19 @@ csisolatinhebrew
 cskoi8r
 csksc56011987
 csmacintosh
+CSS
 csshiftjis
 customInspect
 cyan
 cyanBright
 cyrillic
+DataView
 date
+Date
 debuglog
 debuglog().enabled
 defaultOptions
+DeprecationWarning
 depth
 dest
 dos-874
@@ -8403,18 +8234,23 @@ ecma-118
 elot_928
 encoding
 err
+Error
 euc-jp
 euc-kr
 extends
+External
 faint
 false
 fatal
+Float32Array
+Float64Array
 fn
 format
-gb18030
-gb2312
+Function
 gb_2312
 gb_2312-80
+gb18030
+gb2312
 gbk
 get
 getters
@@ -8430,9 +8266,32 @@ hidden
 ibm819
 ibm866
 ignoreBOM
+Infinity
 input
 inspectOptions
 instanceof
+Int16Array
+Int32Array
+Int8Array
+iso_8859-1
+iso_8859-1:1987
+iso_8859-15
+iso_8859-2
+iso_8859-2:1987
+iso_8859-3
+iso_8859-3:1988
+iso_8859-4
+iso_8859-4:1988
+iso_8859-5
+iso_8859-5:1988
+iso_8859-6
+iso_8859-6:1987
+iso_8859-7
+iso_8859-7:1987
+iso_8859-8
+iso_8859-8:1988
+iso_8859-9
+iso_8859-9:1989
 iso-2022-jp
 iso-8859-1
 iso-8859-10
@@ -8493,36 +8352,17 @@ iso88596
 iso88597
 iso88598
 iso88599
-iso_8859-1
-iso_8859-15
-iso_8859-1:1987
-iso_8859-2
-iso_8859-2:1987
-iso_8859-3
-iso_8859-3:1988
-iso_8859-4
-iso_8859-4:1988
-iso_8859-5
-iso_8859-5:1988
-iso_8859-6
-iso_8859-6:1987
-iso_8859-7
-iso_8859-7:1987
-iso_8859-8
-iso_8859-8:1988
-iso_8859-9
-iso_8859-9:1989
 koi
 koi8
+koi8_r
 koi8-r
 koi8-ru
 koi8-u
-koi8_r
 korean
 ks_c_5601-1987
 ks_c_5601-1989
-ksc5601
 ksc_5601
+ksc5601
 l1
 l2
 l3
@@ -8541,11 +8381,12 @@ mac
 macintosh
 magenta
 magentaBright
+Map
 maxArrayLength
 maxStringLength
 module
-ms932
 ms_kanji
+ms932
 msg
 n
 name
@@ -8555,9 +8396,22 @@ new Boolean()
 new Number()
 new String()
 new TextDecoder([encoding[, options]])
+NODE_DEBUG
+NODE_DEBUG=foo
+NODE_DEBUG=foo*
+NODE_DEBUG=fs,net,tls
 null
 number
+Number
 object
+Object
+Object.assign()
+Object.freeze()
+Object.prototype.toString.call(value)
+Object.prototype.toString()
+Object.setPrototypeOf(constructor.prototype, superConstructor.prototype)
+Object()
+Object(Symbol())
 options
 options.stream
 original
@@ -8568,21 +8422,27 @@ printf
 process.noDeprecation
 process.throwDeprecation
 process.traceDeprecation
+Promise
 promisify
-promisify()
 promisify.custom
+promisify()
+Proxies
+Proxy
 read
 reason
 red
 redBright
 regexp
+RegExp
 require( util ).types
 require( util/types )
 reset
 section
 set
-shift-jis
+Set
+SharedArrayBuffer
 shift_jis
+shift-jis
 showHidden
 showProxy
 sjis
@@ -8596,17 +8456,23 @@ stdout
 stream
 strikeThrough
 string
+String
 sun_eu_greek
 superConstructor
-swapColors
 swapcolors
+swapColors
 symbol
+Symbol
+Symbol.for( nodejs.util.inspect.custom )
+Symbol.for( nodejs.util.promisify.custom )
 target
+TextDecoder
 textDecoder.decode()
 textDecoder.decode([input[, options]])
 textDecoder.encoding
 textDecoder.fatal
 textDecoder.ignoreBOM
+TextEncoder
 textEncoder.encode([input])
 textEncoder.encodeInto(src, dest)
 textEncoder.encoding
@@ -8615,11 +8481,17 @@ tis-620
 toString
 true
 tty.hasColors()
+TypedArray
+TypeError
 typeof value ===  boolean
 typeof value ===  function
 typeof value ===  number
 typeof value ===  string
 typeof value ===  symbol
+Uint16Array
+Uint32Array
+Uint8Array
+Uint8ClampedArray
 uncaughtException
 undefined
 underline
@@ -8631,8 +8503,6 @@ utf-16le
 utf-8
 utf8
 util
-util.TextDecoder
-util.TextEncoder
 util._extend()
 util._extend(target, source)
 util.callbackify(original)
@@ -8651,13 +8521,13 @@ util.getSystemErrorName(err)
 util.inherits()
 util.inherits(constructor, superConstructor)
 util.inspect
-util.inspect()
-util.inspect(object[, options])
-util.inspect(object[, showHidden[, depth[, colors]]])
 util.inspect.colors
 util.inspect.custom
 util.inspect.defaultOptions
 util.inspect.styles
+util.inspect()
+util.inspect(object[, options])
+util.inspect(object[, showHidden[, depth[, colors]]])
 util.isArray(object)
 util.isBoolean(object)
 util.isBuffer(object)
@@ -8676,9 +8546,11 @@ util.isSymbol(object)
 util.isUndefined(object)
 util.log()
 util.log(string)
+util.promisify.custom
 util.promisify()
 util.promisify(original)
-util.promisify.custom
+util.TextDecoder
+util.TextEncoder
 util.types
 util.types.isAnyArrayBuffer()
 util.types.isAnyArrayBuffer(value)
@@ -8736,6 +8608,9 @@ value instanceof WebAssembly.Module
 visual
 void*
 warning
+WeakMap
+WeakSet
+WebAssembly.Module
 white
 whiteBright
 windows-1250
@@ -8769,33 +8644,24 @@ x-sjis
 x-x-big5
 yellow
 yellowBright
-{ depth: 0, colors: false, compact: 3 }
-{ showHidden: true, showProxy: true }
-
 
 # From src/api/v8.md
-
 --zap_code_space
 .readHeader()
+[hi, lo]
+{pid}
+{thread_id}
+arrayBuffer
 ArrayBuffer
+buffer
 Buffer
+bytecode_and_metadata_size
+cachedData
+code_and_metadata_size
 DataView
 DefaultDeserializer
 DefaultSerializer
 Deserializer
-Error
-GetHeapSpaceStatistics
-Heap-${yyyymmdd}-${hhmmss}-${pid}-${thread_id}.heapsnapshot
-NODE_V8_COVERAGE
-Serializer
-SharedArrayBuffer
-TypedArray
-[hi, lo]
-arrayBuffer
-buffer
-bytecode_and_metadata_size
-cachedData
-code_and_metadata_size
 deserializer._readHostObject()
 deserializer.getWireFormatVersion()
 deserializer.readDouble()
@@ -8807,12 +8673,15 @@ deserializer.readValue()
 deserializer.transferArrayBuffer()
 deserializer.transferArrayBuffer(id, arrayBuffer)
 does_zap_garbage
+Error
 external_script_source_size
 false
 filename
 flag
 flags
+GetHeapSpaceStatistics
 heap_size_limit
+Heap-${yyyymmdd}-${hhmmss}-${pid}-${thread_id}.heapsnapshot
 hi
 id
 length
@@ -8822,6 +8691,7 @@ message
 new Deserializer(buffer)
 new Serializer()
 node --v8-options
+NODE_V8_COVERAGE
 number
 number_of_detached_contexts
 number_of_native_contexts
@@ -8829,6 +8699,7 @@ object
 peak_malloced_memory
 physical_space_size
 serialize()
+Serializer
 serializer._getDataCloneError(message)
 serializer._getSharedArrayBufferId()
 serializer._getSharedArrayBufferId(sharedArrayBuffer)
@@ -8846,6 +8717,7 @@ serializer.writeUint32(value)
 serializer.writeUint64(hi, lo)
 serializer.writeValue(value)
 sharedArrayBuffer
+SharedArrayBuffer
 space_available_size
 space_name
 space_size
@@ -8854,19 +8726,20 @@ total_available_size
 total_heap_size
 total_heap_size_executable
 total_physical_size
+TypedArray
 used_heap_size
 v8
+v8.cachedDataVersionTag()
 v8.DefaultDeserializer
 v8.DefaultSerializer
-v8.Deserializer
-v8.Serializer
-v8.cachedDataVersionTag()
 v8.deserialize(buffer)
+v8.Deserializer
 v8.getHeapCodeStatistics()
 v8.getHeapSnapshot()
 v8.getHeapSpaceStatistics()
 v8.getHeapStatistics()
 v8.serialize(value)
+v8.Serializer
 v8.setFlagsFromString()
 v8.setFlagsFromString(flags)
 v8.stopCoverage()
@@ -8875,41 +8748,19 @@ v8.writeHeapSnapshot([filename])
 value
 vm.Script
 writeHeapSnapshot()
-{pid}
-{thread_id}
-
 
 # From src/api/vm.md
-
+--experimental-vm-modules
 () => loop()
 (0,eval)( code )
---experimental-vm-modules
-<script>
-Buffer
-Context
-DataView
-ERR_VM_DYNAMIC_IMPORT_CALLBACK_MISSING
-ERR_VM_MODULE_STATUS
-Error
-EvalError
-Function
-GeneratorFunction
-Module
-Promise
-SIGINT
-Script
-SourceTextModule
-SyntheticModule
-TypedArray
-URL
-VM Context i
-WebAssembly.CompileError
 [[EvaluationError]]
 [[RequestedModules]]
 [[Status]]
+<script>
 afterEvaluate
 async function
 breakOnSigint
+Buffer
 cachedData
 cachedDataProduced
 cachedDataRejected
@@ -8917,19 +8768,25 @@ code
 codeGeneration
 columnOffset
 context
+Context
 contextCodeGeneration
 contextExtensions
+contextifiedObject
 contextName
 contextObject
 contextOrigin
-contextifiedObject
+DataView
 default
 detailed
 displayErrors
 eager
+ERR_VM_DYNAMIC_IMPORT_CALLBACK_MISSING
+ERR_VM_MODULE_STATUS
+Error
 errored
 eval
 eval()
+EvalError
 evalmachine.<anonymous>
 evaluateCallback
 evaluated
@@ -8938,12 +8795,14 @@ execution
 exportNames
 false
 filename
+Function
+GeneratorFunction
 global
 http
 i
 identifier
-import()
 import.meta
+import()
 importModuleDynamically
 initializeImportMeta
 lineOffset
@@ -8958,6 +8817,7 @@ microtaskMode
 microtaskMode:  afterEvaluate
 mode
 module
+Module
 module.dependencySpecifiers
 module.error
 module.evaluate()
@@ -8980,12 +8840,14 @@ parsingContext
 process.nextTick()
 process.on( SIGINT )
 produceCachedData
+Promise
 promise.then()
 queueMicrotask()
 referencingModule
 require( http )
 require()
 script
+Script
 script.createCachedData()
 script.runInContext()
 script.runInContext(contextifiedObject[, options])
@@ -8994,55 +8856,56 @@ script.runInThisContext()
 script.runInThisContext([options])
 setImmediate()
 setTimeout()
+SIGINT
+SourceTextModule
 sourceTextModule.createCachedData()
 specifier
 status
 strings
 summary
+SyntheticModule
 syntheticModule.setExport(name, value)
 then
 throw undefined;
 timeout
 true
+TypedArray
 undefined
 unlinked
+URL
 url.origin
 v8.getHeapSpaceStatistics()
 value
 vm
-vm.Context
-vm.Module
-vm.Script
-vm.SourceTextModule
-vm.SyntheticModule
+VM Context i
+vm:module(i)
 vm.compileFunction(code[, params[, options]])
+vm.Context
 vm.createContext()
 vm.createContext([contextObject[, options]])
 vm.isContext(object)
 vm.measureMemory()
 vm.measureMemory([options])
+vm.Module
 vm.runInContext()
 vm.runInContext(code, contextifiedObject[, options])
 vm.runInNewContext()
 vm.runInNewContext(code[, contextObject[, options]])
 vm.runInThisContext()
 vm.runInThisContext(code[, options])
-vm:module(i)
+vm.Script
+vm.SourceTextModule
+vm.SyntheticModule
 wasm
-wasm
-
+WebAssembly.CompileError
 
 # From src/api/wasi.md
-
---experimental-wasi-unstable-preview1
-.wasm
-.wat
-WASI
-WebAssembly.Instance
-WebAssembly.Memory
 __wasi_proc_exit()
 _initialize()
 _start()
+--experimental-wasi-unstable-preview1
+.wasm
+.wat
 args
 demo.wat
 env
@@ -9060,124 +8923,97 @@ stderr
 stdin
 stdout
 true
+WASI
+wasi_snapshot_preview1
 wasi.initialize(instance)
 wasi.start()
 wasi.start(instance)
 wasi.wasiImport
-wasi_snapshot_preview1
-
+WebAssembly.Instance
+WebAssembly.Memory
 
 # From src/api/webcrypto.md
-
 127 * N * r > maxmem
+additionalData
 AES-CBC
 AES-CTR
 AES-GCM
 AES-KW
 AesCbcParams
-AesCtrParams
-AesGcmParams
-AesImportParams
-AesKeyGenParams
-AesKwParams
-Crypto
-CryptoKey
-CryptoKeyPair
-ECDH
-ECDSA
-EcKeyGenParams
-EcKeyImportParams
-EcdhKeyDeriveParams
-EcdsaParams
-HDKF
-HKDF
-HMAC
-HkdfParams
-HmacImportParams
-HmacKeyGenParams
-HmacParams
-NODE-DH
-NODE-DSA
-NODE-SCRYPT
-NodeDhImportParams
-NodeDsaImportParams
-NodeDsaKeyGenParams
-NodeDsaSignParams
-NodeScryptImportParams
-NodeScryptParams
-P-256
-P-384
-P-521
-PBKDF2
-Pbkdf2ImportParams
-Pbkdf2Params
-RSA-OAEP
-RSA-PSS
-RSASSA-PKCS1-v1_5
-RsaHashedImportParams
-RsaHashedKeyGenParams
-RsaOaepParams
-RsaPssParams
-RsaSignParams
-SHA-1
-SHA-256
-SHA-384
-SHA-512
-SubtleCrypto
-additionalData
 aesCbcParams.iv
 aesCbcParams.name
+AesCtrParams
 aesCtrParams.counter
 aesCtrParams.length
 aesCtrParams.name
+AesGcmParams
 aesGcmParams.additionalData
 aesGcmParams.iv
 aesGcmParams.name
 aesGcmParams.tagLength
+AesImportParams
+AesKeyGenParams
 aesKeyGenParams.length
 aesKeyGenParams.name
+AesKwParams
 aesKwParams.name
 algorithm
 baseKey
+Crypto
 crypto.getRandomValues(typedArray)
 crypto.subtle
+CryptoKey
 cryptoKey.algorithm
+cryptokey.algorithm.name
 cryptoKey.extractable
 cryptoKey.type
 cryptoKey.usages
+CryptoKeyPair
 cryptoKeyPair.privateKey
 cryptoKeyPair.publicKey
-cryptokey.algorithm.name
 data
 decrypt
 deriveBits
+derivedKeyAlgorithm
 deriveKey
 deriveKeyAlgorithm
-derivedKeyAlgorithm
 digest
-ecKeyGenParams.name
-ecKeyGenParams.namedCurve
-ecKeyImportParams.name
-ecKeyImportParams.namedCurve
+ECDH
+EcdhKeyDeriveParams
 ecdhKeyDeriveParams.name
 ecdhKeyDeriveParams.public
+ECDSA
+EcdsaParams
 ecdsaParams.hash
 ecdsaParams.name
+EcKeyGenParams
+ecKeyGenParams.name
+ecKeyGenParams.namedCurve
+EcKeyImportParams
+ecKeyImportParams.name
+ecKeyImportParams.namedCurve
 encrypt
 exportKey
 extractable
 false
 format
 generateKey
+HDKF
+HKDF
+HkdfParams
 hkdfParams.hash
 hkdfParams.info
 hkdfParams.name
 hkdfParams.salt
+HMAC
+HmacImportParams
 hmacImportParams.length
 hmacImportParams.name
+HmacKeyGenParams
 hmacKeyGenParams.hash
 hmacKeyGenParams.length
 hmacKeyGenParams.name
+HmacParams
 hmacParams.name
 importKey
 jwk
@@ -9187,30 +9023,45 @@ keyUsages
 length
 name
 new Uint8Array([1, 0, 1])
+NODE-DH
+NODE-DSA
+NODE-SCRYPT
 node.
 node.keyObject
 nodeDhDeriveBitsParams.public
+NodeDhImportParams
 nodeDhImportParams.name
 nodeDhKeyGenParams.generator
 nodeDhKeyGenParams.group
 nodeDhKeyGenParams.prime
 nodeDhKeyGenParams.primeLength
+NodeDsaImportParams
 nodeDsaImportParams.hash
 nodeDsaImportParams.name
+NodeDsaKeyGenParams
 nodeDsaKeyGenParams.divisorLength
 nodeDsaKeyGenParams.hash
 nodeDsaKeyGenParams.modulusLength
 nodeDsaKeyGenParams.name
+NodeDsaSignParams
 nodeDsaSignParams.name
+NodeScryptImportParams
 nodeScryptImportParams.name
-nodeScryptParams.N
+NodeScryptParams
 nodeScryptParams.encoding
 nodeScryptParams.maxmem
+nodeScryptParams.N
 nodeScryptParams.p
 nodeScryptParams.r
 nodeScryptParams.salt
+P-256
+P-384
+P-521
 pbkdb2Params.hash
+PBKDF2
+Pbkdf2ImportParams
 pbkdf2ImportParams.name
+Pbkdf2Params
 pbkdf2Params.iterations
 pbkdf2Params.name
 pbkdf2Params.salt
@@ -9221,18 +9072,30 @@ public
 publicKey
 raw
 require( crypto ).webcrypto
+RSA-OAEP
+RSA-PSS
+RsaHashedImportParams
 rsaHashedImportParams.hash
 rsaHashedImportParams.name
+RsaHashedKeyGenParams
 rsaHashedKeyGenParams.hash
 rsaHashedKeyGenParams.modulusLength
 rsaHashedKeyGenParams.name
 rsaHashedKeyGenParams.publicExponent
+RsaOaepParams
 rsaOaepParams.label
+RsaPssParams
 rsaPssParams.name
 rsaPssParams.saltLength
+RsaSignParams
 rsaSignParams.name
+RSASSA-PKCS1-v1_5
 salt
 secret
+SHA-1
+SHA-256
+SHA-384
+SHA-512
 sign
 signature
 spki
@@ -9260,6 +9123,7 @@ subtle.verify()
 subtle.verify(algorithm, key, signature, data)
 subtle.wrapKey()
 subtle.wrapKey(format, key, wrappingKey, wrapAlgo)
+SubtleCrypto
 subtleCrypto.exportKey()
 subtleCrypto.wrapKey()
 true
@@ -9274,56 +9138,32 @@ wrapAlgo
 wrapKey
 wrappedKey
 wrappingKey
-wrappingKey
-
 
 # From src/api/worker_threads.md
-
 --max-old-space-size
 --title
 .on( message )
 .onmessage
 .start()
+active
+argv
 ArrayBuffer
+async_hooks
 AsyncResource
 BigInt
 BroadcastChannel
 BroadcastChannel extends EventTarget
-Buffer
-Buffer.alloc()
-Buffer.allocUnsafe()
-Buffer.allocUnsafeSlow()
-Buffer.from()
-ERR_MISSING_MESSAGE_PORT_IN_TRANSFER_LIST
-ERR_WORKER_NOT_RUNNING
-EventTarget
-FileHandle
-JSON
-KeyObject
-Map
-MessageChannel
-MessageEvent
-MessagePort
-Object
-Promise
-RegExp
-Set
-SharedArrayBuffer
-TypedArray
-URL
-Uint8Array
-WebAssembly.Module
-Worker
-Worker constructor options
-active
-argv
-async_hooks
 broadcastChannel.close()
 broadcastChannel.onmessage
 broadcastChannel.onmessageerror
 broadcastChannel.postMessage(message)
 broadcastChannel.ref()
 broadcastChannel.unref()
+Buffer
+Buffer.alloc()
+Buffer.allocUnsafe()
+Buffer.allocUnsafeSlow()
+Buffer.from()
 child_process
 close
 cluster
@@ -9332,29 +9172,40 @@ contextifiedSandbox
 data:
 env
 err
+ERR_MISSING_MESSAGE_PORT_IN_TRANSFER_LIST
+ERR_WORKER_NOT_RUNNING
 error
 eval
 eventLoopUtilization()
+EventTarget
 execArgv
 exit
 exitCode
 false
 file:
+FileHandle
 filename
 fs.close()
 fs.open()
 function
 idle
+JSON
+KeyObject
+Map
 markAsUntransferable()
 maxOldGenerationSizeMb
 maxYoungGenerationSizeMb
 message
+MessageChannel
 messageerror
+MessageEvent
+MessagePort
 name
 new BroadcastChannel(name)
 new MessageChannel()
 new Worker(filename[, options])
 object
+Object
 online
 onmessage
 options
@@ -9389,7 +9240,9 @@ process.stderr
 process.stdin
 process.stdout
 process.title
+Promise
 ref()
+RegExp
 require( worker_threads ).isMainThread
 require( worker_threads ).parentPort
 require( worker_threads ).parentPort.on( message )
@@ -9397,6 +9250,8 @@ require( worker_threads ).parentPort.postMessage()
 require( worker_threads ).threadId
 require( worker_threads ).workerData
 resourceLimits
+Set
+SharedArrayBuffer
 stackSizeMb
 stderr
 stderr: true
@@ -9409,8 +9264,11 @@ trace_events
 trackUnmanagedFds
 transferList
 true
+TypedArray
+Uint8Array
 undefined
 unref()
+URL
 utilization
 utilization1
 utilization2
@@ -9419,12 +9277,15 @@ v8.getHeapSnapshot()
 value
 vm
 vm.createContext()
-worker.MessageChannel
-worker.MessagePort
-worker.SHARE_ENV
+WebAssembly.Module
+Worker
+Worker constructor options
+worker_threads
 worker.getHeapSnapshot()
 worker.isMainThread
 worker.markAsUntransferable(object)
+worker.MessageChannel
+worker.MessagePort
 worker.moveMessagePortToContext(port, contextifiedSandbox)
 worker.on( message )
 worker.parentPort
@@ -9434,6 +9295,7 @@ worker.postMessage(value[, transferList])
 worker.receiveMessageOnPort(port)
 worker.ref()
 worker.resourceLimits
+worker.SHARE_ENV
 worker.stderr
 worker.stdin
 worker.stdout
@@ -9441,20 +9303,17 @@ worker.terminate()
 worker.threadId
 worker.unref()
 worker.workerData
-worker_threads
-worker_threads
-
 
 # From src/api/zlib.md
-
-*Sync
 .flush()
 .write()
+*Sync
 1 << NPOSTFIX
 1 << windowBits
 15 << NPOSTFIX
 Accept-Encoding
 ArrayBuffer
+br
 BROTLI_DECODER_PARAM_DISABLE_RING_BUFFER_REALLOCATION
 BROTLI_DECODER_PARAM_LARGE_WINDOW
 BROTLI_DEFAULT_QUALITY
@@ -9482,63 +9341,53 @@ BROTLI_PARAM_SIZE_HINT
 BrotliCompress
 BrotliDecompress
 BrotliOptions
-Buffer
-Content-Encoding
-DataView
-Deflate
-DeflateRaw
-Gunzip
-Gzip
-Inflate
-InflateRaw
-Options
-Transform
-TypedArray
-Unzip
-br
 buffer
+Buffer
 buffer.kMaxLength
 callback
 callback(error, result)
 chunkSize
+Content-Encoding
+DataView
 deflate
+Deflate
 deflateInit2
+DeflateRaw
 dictionary
 engine
 finishFlush
 flush
 flush()
+Gunzip
 gzip
+Gzip
+Inflate
 inflateInit2
+InflateRaw
 info
 kind
 level
 maxOutputLength
 memLevel
 options
+Options
 params
 require( zlib )
 require( zlib ).constants
 strategy
 stream.Transform
+Transform
 true
+TypedArray
+Unzip
 windowBits
 windowBits = 9
 write
 zlib
 zlib.BrotliCompress
-zlib.BrotliDecompress
-zlib.Deflate
-zlib.DeflateRaw
-zlib.Gunzip
-zlib.Gzip
-zlib.Inflate
-zlib.InflateRaw
-zlib.Unzip
-zlib.Z_NO_FLUSH
-zlib.ZlibBase
 zlib.brotliCompress(buffer[, options], callback)
 zlib.brotliCompressSync(buffer[, options])
+zlib.BrotliDecompress
 zlib.brotliDecompress(buffer[, options], callback)
 zlib.brotliDecompressSync(buffer[, options])
 zlib.bytesRead
@@ -9583,22 +9432,31 @@ zlib.createGzip([options])
 zlib.createInflate([options])
 zlib.createInflateRaw([options])
 zlib.createUnzip([options])
+zlib.Deflate
 zlib.deflate(buffer[, options], callback)
+zlib.DeflateRaw
 zlib.deflateRaw(buffer[, options], callback)
 zlib.deflateRawSync(buffer[, options])
 zlib.deflateSync(buffer[, options])
 zlib.flush([kind, ]callback)
+zlib.Gunzip
 zlib.gunzip(buffer[, options], callback)
 zlib.gunzipSync(buffer[, options])
+zlib.Gzip
 zlib.gzip(buffer[, options], callback)
 zlib.gzipSync(buffer[, options])
 zlib.h
+zlib.Inflate
 zlib.inflate(buffer[, options], callback)
+zlib.InflateRaw
 zlib.inflateRaw(buffer[, options], callback)
 zlib.inflateRawSync(buffer[, options])
 zlib.inflateSync(buffer[, options])
 zlib.params(level, strategy, callback)
 zlib.reset()
+zlib.Unzip
 zlib.unzip(buffer[, options], callback)
 zlib.unzipSync(buffer[, options])
+zlib.Z_NO_FLUSH
+zlib.ZlibBase
 zlib/zconf.h
