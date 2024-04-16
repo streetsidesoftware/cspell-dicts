@@ -10,7 +10,7 @@ targets:
       - filename: src/node.txt
         split: true
         allowedSplitWords:
-          - ../en_US/en_US.trie
+          - src/split_words.txt
       - src/additional_words.txt
     excludeWordsFrom:
       - src/exclude_words.txt
