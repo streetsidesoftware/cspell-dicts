@@ -3,6 +3,13 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+## [5.0.1](https://github.com/streetsidesoftware/cspell-dicts/compare/@cspell/dict-node@5.0.0...@cspell/dict-node@5.0.1) (2024-04-16)
+
+
+### Updates and Bug Fixes
+
+* node - restore split behavior ([#3118](https://github.com/streetsidesoftware/cspell-dicts/issues/3118)) ([860a215](https://github.com/streetsidesoftware/cspell-dicts/commit/860a215ba1698c4bf9558324a46ecaf409a440ef))
+
 ## [5.0.0](https://github.com/streetsidesoftware/cspell-dicts/compare/@cspell/dict-node@4.0.3...@cspell/dict-node@5.0.0) (2024-04-15)
 
 

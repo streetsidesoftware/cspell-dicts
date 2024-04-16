@@ -1,5 +1,12 @@
 # Release Notes
 
+## [26.0.1](https://github.com/streetsidesoftware/cspell-dicts/compare/cspell-dicts@26.0.0...cspell-dicts@26.0.1) (2024-04-16)
+
+
+### Updates and Bug Fixes
+
+* node - restore split behavior ([#3118](https://github.com/streetsidesoftware/cspell-dicts/issues/3118)) ([860a215](https://github.com/streetsidesoftware/cspell-dicts/commit/860a215ba1698c4bf9558324a46ecaf409a440ef))
+
 ## [26.0.0](https://github.com/streetsidesoftware/cspell-dicts/compare/cspell-dicts@25.1.1...cspell-dicts@26.0.0) (2024-04-15)
 
 
