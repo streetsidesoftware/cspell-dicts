@@ -1,5 +1,13 @@
 # Release Notes
 
+## [26.0.2](https://github.com/streetsidesoftware/cspell-dicts/compare/cspell-dicts@26.0.1...cspell-dicts@26.0.2) (2024-04-18)
+
+
+### Updates and Bug Fixes
+
+* add `iife` to TypeScript dictionary ([#3124](https://github.com/streetsidesoftware/cspell-dicts/issues/3124)) ([ce98df3](https://github.com/streetsidesoftware/cspell-dicts/commit/ce98df375754f2be85c1dbfea512e5dfabb7089f))
+* Workflow Bot -- Build Dictionaries ([#3126](https://github.com/streetsidesoftware/cspell-dicts/issues/3126)) ([8870263](https://github.com/streetsidesoftware/cspell-dicts/commit/8870263e94f9076c7cd250d303e6d171dc7a878d))
+
 ## [26.0.1](https://github.com/streetsidesoftware/cspell-dicts/compare/cspell-dicts@26.0.0...cspell-dicts@26.0.1) (2024-04-16)
 
 
