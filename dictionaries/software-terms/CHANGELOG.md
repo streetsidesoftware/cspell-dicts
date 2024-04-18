@@ -3,6 +3,14 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+## [3.3.20](https://github.com/streetsidesoftware/cspell-dicts/compare/@cspell/dict-software-terms@3.3.19...@cspell/dict-software-terms@3.3.20) (2024-04-18)
+
+
+### Updates and Bug Fixes
+
+* add `iife` to TypeScript dictionary ([#3124](https://github.com/streetsidesoftware/cspell-dicts/issues/3124)) ([ce98df3](https://github.com/streetsidesoftware/cspell-dicts/commit/ce98df375754f2be85c1dbfea512e5dfabb7089f))
+* Workflow Bot -- Build Dictionaries ([#3126](https://github.com/streetsidesoftware/cspell-dicts/issues/3126)) ([8870263](https://github.com/streetsidesoftware/cspell-dicts/commit/8870263e94f9076c7cd250d303e6d171dc7a878d))
+
 ## [3.3.19](https://github.com/streetsidesoftware/cspell-dicts/compare/@cspell/dict-software-terms@3.3.18...@cspell/dict-software-terms@3.3.19) (2024-04-15)
 
 
