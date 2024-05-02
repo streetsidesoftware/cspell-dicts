@@ -1,5 +1,13 @@
 # Release Notes
 
+## [26.0.3](https://github.com/streetsidesoftware/cspell-dicts/compare/cspell-dicts@26.0.2...cspell-dicts@26.0.3) (2024-05-02)
+
+
+### Updates and Bug Fixes
+
+* add `powf` and `powi` to rust dictionary ([#3131](https://github.com/streetsidesoftware/cspell-dicts/issues/3131)) ([84ab85e](https://github.com/streetsidesoftware/cspell-dicts/commit/84ab85ebb24aceab7b3485727105d280621f4d3f))
+* Workflow Bot -- Build Dictionaries ([#3133](https://github.com/streetsidesoftware/cspell-dicts/issues/3133)) ([b8c7d1a](https://github.com/streetsidesoftware/cspell-dicts/commit/b8c7d1a1eab2b0756f8cc188f858568e89d5d95b))
+
 ## [26.0.2](https://github.com/streetsidesoftware/cspell-dicts/compare/cspell-dicts@26.0.1...cspell-dicts@26.0.2) (2024-04-18)
 
 
