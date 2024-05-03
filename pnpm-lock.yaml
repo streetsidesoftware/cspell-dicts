@@ -52,7 +52,7 @@ importers:
         version: link:generator-cspell-dicts
       hunspell-reader:
         specifier: ^8.7.0
-        version: 8.7.0
+        version: 8.8.0
       inject-markdown:
         specifier: ^3.0.0
         version: 3.0.0
@@ -529,6 +529,11 @@ packages:
     resolution: {integrity: sha512-ePqddIQ4arqPQgOkC146SkZxvZb9/jL7xIM5Igy2n3tiWTC5ijrX/mbHpPZ1VGcFck+1M0cJUuyhuJk+vMj3rg==}
     engines: {node: '>=18'}
 
+  /@cspell/cspell-pipe@8.8.0:
+    resolution: {integrity: sha512-R9YEI8+GVa98mEMCtCHJMqX4xHNwhdHo31lGhmyUpYiuLcD9HZ96n+ExCGbnFBUXyugSHCmTA/lubdfo7CPZrw==}
+    engines: {node: '>=18'}
+    dev: true
+
   /@cspell/cspell-resolver@8.7.0:
     resolution: {integrity: sha512-grZwDFYqcBYQDaz4AkUtdyqc4UUH2J3/7yWVkBbYDPE+FQHa9ofFXzXxyjs56GJlPfi9ULpe5/Wz6uVLg8rQkQ==}
     engines: {node: '>=18'}
@@ -559,6 +564,11 @@ packages:
   /@cspell/cspell-types@8.7.0:
     resolution: {integrity: sha512-Rb+LCE5I9JEb/LE8nSViVSF8z1CWv/z4mPBIG37VMa7aUx2gAQa6gJekNfpY9YZiMzx4Tv3gDujN80ytks4pGA==}
     engines: {node: '>=18'}
+
+  /@cspell/cspell-types@8.8.0:
+    resolution: {integrity: sha512-CGIYttfpp0M/y4a7vfVQljeJqBcIsGYIM4iwJU+F3MQUqFqvNFeU58S27GfK5VzkMAJumsOnmJqSgm+h/g7n0Q==}
+    engines: {node: '>=18'}
+    dev: true
 
   /@cspell/dict-ada@4.0.2:
     resolution: {integrity: sha512-0kENOWQeHjUlfyId/aCM/mKXtkEgV0Zu2RhUXCBr4hHo9F9vph+Uu8Ww2b0i5a4ZixoIkudGA+eJvyxrG1jUpA==}
@@ -3794,8 +3804,21 @@ packages:
     engines: {node: '>=18'}
     hasBin: true
     dependencies:
-      '@cspell/cspell-pipe': 8.7.0
-      '@cspell/cspell-types': 8.7.0
+      '@cspell/cspell-pipe': 8.8.0
+      '@cspell/cspell-types': 8.8.0
+      commander: 12.0.0
+      gensequence: 7.0.0
+      html-entities: 2.5.2
+      iconv-lite: 0.6.3
+    dev: true
+
+  /hunspell-reader@8.8.0:
+    resolution: {integrity: sha512-HY+fkjUFbfwQGnx6jZ36o79YbX5FMO888nxee/LTXA69vtksa+D1POb/PnN9uRWTCP8o0GlA0XG+v0dFGKdHaQ==}
+    engines: {node: '>=18'}
+    hasBin: true
+    dependencies:
+      '@cspell/cspell-pipe': 8.8.0
+      '@cspell/cspell-types': 8.8.0
       commander: 12.0.0
       gensequence: 7.0.0
       html-entities: 2.5.2
