@@ -1,5 +1,17 @@
 # Release Notes
 
+## [26.0.4](https://github.com/streetsidesoftware/cspell-dicts/compare/cspell-dicts@26.0.3...cspell-dicts@26.0.4) (2024-05-16)
+
+
+### Updates and Bug Fixes
+
+* add "GOGC" to golang dictionary  ([#3153](https://github.com/streetsidesoftware/cspell-dicts/issues/3153)) ([f7ca301](https://github.com/streetsidesoftware/cspell-dicts/commit/f7ca301c0cd15880601bb33183c5be01f3d1804a))
+* add "kube" to k8s dictionary ([#3162](https://github.com/streetsidesoftware/cspell-dicts/issues/3162)) ([e3c592a](https://github.com/streetsidesoftware/cspell-dicts/commit/e3c592a459089d0df1d8fdb1f1fc1f017e4b2fd4))
+* add uk dictionary replacement map (`ʼ` -&gt; `'`) ([#3157](https://github.com/streetsidesoftware/cspell-dicts/issues/3157)) ([9f92fff](https://github.com/streetsidesoftware/cspell-dicts/commit/9f92fffe7ebb3cfdf3573163e7ab4f4262e4454f))
+* Workflow Bot -- Build Dictionaries ([#3141](https://github.com/streetsidesoftware/cspell-dicts/issues/3141)) ([8f841f4](https://github.com/streetsidesoftware/cspell-dicts/commit/8f841f44730763594a559185e874427e7ab07572))
+* Workflow Bot -- Build Dictionaries ([#3155](https://github.com/streetsidesoftware/cspell-dicts/issues/3155)) ([dcddd8a](https://github.com/streetsidesoftware/cspell-dicts/commit/dcddd8a1f7922c6b7666dca664c3c1f15f2e187f))
+* Workflow Bot -- Build Dictionaries ([#3163](https://github.com/streetsidesoftware/cspell-dicts/issues/3163)) ([8e4a609](https://github.com/streetsidesoftware/cspell-dicts/commit/8e4a609fe11b56d1624fdd9cb4969ed5f37d6d18))
+
 ## [26.0.3](https://github.com/streetsidesoftware/cspell-dicts/compare/cspell-dicts@26.0.2...cspell-dicts@26.0.3) (2024-05-02)
 
 
