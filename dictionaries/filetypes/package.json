@@ -11,7 +11,7 @@
     "./cspell-ext.json": "./cspell-ext.json"
   },
   "scripts": {
-    "build": "cspell-tools-cli compile \"filetypes.txt\" -o .",
+    "build": "cspell-tools-cli compile \"filetypes.txt\" -o . --init",
     "test": "shx cat \"filetypes.txt\" | cspell -c ./cspell-ext.json \"--locale=*\" \"--languageId=*\" stdin",
     "prepublishOnly": "echo pre-publish",
     "prepare:dictionary": "pnpm run build"
