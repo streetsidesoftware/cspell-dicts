@@ -2739,7 +2739,6 @@ CURL_TLSAUTH
 CURL_TLSAUTH_LAST
 CURL_TLSAUTH_NONE
 CURL_TLSAUTH_SRP
-CURL_TYPEOF_CURL_OFF_T
 CURL_TYPEOF_CURL_SOCKLEN_T
 CURL_VERSION_ASYNCHDNS
 CURL_VERSION_CURLDEBUG
@@ -2870,8 +2869,6 @@ CommonCryptor
 CommonSymmetricKeywrap
 Compilation_aborted_CURL_SIZEOF_CURL_SOCKLEN_T_already_defined
 Compilation_aborted_CURL_SIZEOF_CURL_SOCKLEN_T_is_missing
-Compilation_aborted_CURL_TYPEOF_CURL_OFF_T_already_defined
-Compilation_aborted_CURL_TYPEOF_CURL_OFF_T_is_missing
 Compilation_aborted_CURL_TYPEOF_CURL_SOCKLEN_T_already_defined
 Compilation_aborted_CURL_TYPEOF_CURL_SOCKLEN_T_is_missing
 Compter
@@ -9353,6 +9350,7 @@ NEEDED
 NEEDS
 NEED_KLGETSA
 NEG
+NEGATE
 NEGATIVE
 NEGLIGENCE
 NEGOTIATE
@@ -9403,7 +9401,6 @@ NETSNMP_DS_LIB_APPTYPES
 NETSNMP_DS_LIB_AUTHLOCALIZEDKEY
 NETSNMP_DS_LIB_AUTHMASTERKEY
 NETSNMP_DS_LIB_AUTHPASSPHRASE
-NETSNMP_DS_LIB_CERT_EXTRA_SUBDIR
 NETSNMP_DS_LIB_CLIENTRECVBUF
 NETSNMP_DS_LIB_CLIENTSENDBUF
 NETSNMP_DS_LIB_MIBDIRS
@@ -10302,8 +10299,6 @@ ONIGURUMA
 ONIG_NREGION
 ONIG_OPTION_IGNORECASE
 ONIG_OPTION_MAXBIT
-ONIG_OPTION_NEGATE_SINGLELINE
-ONIG_OPTION_SINGLELINE
 ONIG_REGION_NOTPOS
 ONIG_SYNTAX_ASIS
 ONIG_SYNTAX_EMACS
@@ -13164,6 +13159,7 @@ SINCOSL
 SINF
 SING
 SINGLE
+SINGLELINE
 SINGLETON
 SINGLE_LISTEN_UNSERIALIZED_ACCEPT
 SINHF
@@ -14241,6 +14237,7 @@ SUBCLASS
 SUBCMDMASK
 SUBCMDSHIFT
 SUBCONTAINER
+SUBDIR
 SUBDIRECTORY
 SUBENTRIES
 SUBEXP
@@ -15396,6 +15393,7 @@ TYPEFILTER
 TYPEINFO
 TYPELIST
 TYPEMASK
+TYPEOF
 TYPES
 TYPHOON
 TYfveD
@@ -15495,7 +15493,6 @@ Transcendentals
 Traversables
 Trc
 Tru
-Truetype
 Tscr
 Tsirigotis
 Tstrok
@@ -15929,7 +15926,6 @@ Ultrix
 Umacr
 Umesh
 Uncheckout
-Unescapes
 Unextracting
 Unguard
 Unidata
@@ -20601,7 +20597,6 @@ c_cflag
 c_iflag
 c_ispeed
 c_lflag
-c_plusplus
 ca
 cabs
 cabsf
@@ -21418,6 +21413,7 @@ colors
 colorspace
 colour
 cols
+colspan
 column
 columns
 columnsize
@@ -34245,7 +34241,6 @@ php_iconv_aliased_libiconv
 php_if_md
 php_inet_ntop
 php_inet_pton
-php_info_print_table_colspan_header
 php_iptc
 php_le_pmysqli
 php_mb_regex_get_default_mbctype
@@ -34436,6 +34431,7 @@ plusdo
 plusdu
 pluse
 plusmn
+plusplus
 plussim
 plustwo
 pm
@@ -34744,6 +34740,7 @@ pred
 predates
 predecessor
 predecrement
+predef
 predefined
 predicate
 predicated
@@ -40722,6 +40719,7 @@ trucation
 true
 truecolor
 truename
+truetype
 truly
 trunc
 truncate
@@ -41167,6 +41165,7 @@ unencrypted
 unequal
 unescape
 unescaped
+unescapes
 unexpanded
 unexpected
 unexpectedly
@@ -42845,8 +42844,6 @@ xmlReaderNewxxx
 xmlReadxxx
 xmlSchemaCompareValuesWhtsp
 xmlSchemaGetCanonValueWhtsp
-xmlSchemaValPredefTypeNode
-xmlSchemaValPredefTypeNodeNoNorm
 xmlSchemaValidateFacetWhtsp
 xmlSchemaValidateLengthFacetWhtsp
 xmlStringTextNoenc
