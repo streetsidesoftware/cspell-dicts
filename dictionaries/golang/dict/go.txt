@@ -39,6 +39,7 @@ AI_CANONNAME
 AL
 ALERT
 ALL
+ALLOC
 ALPHA
 AM
 AMD
@@ -112,8 +113,6 @@ Albanian
 Alignof
 AllAdditionals
 AllocedBytesPerOp
-AllocsPerOp
-AllocsPerRun
 Amd
 Anatolian
 AppendUleb128
@@ -241,7 +240,6 @@ Balinese
 Bamum
 Bassa_Vah
 Batak
-BatchCounterAlloc
 Bengali
 Bhaiksuki
 Bidi_Control
@@ -371,7 +369,6 @@ ClassRngList
 ClassRngListsPtr
 CleanCmdEnv
 Clearenv
-Cmd
 Cmdline
 Cmp
 CmsgLen
@@ -2129,7 +2126,6 @@ PosixOpenpt
 Ppc
 Pread
 Prec
-Precompute
 PreemptibleLoops
 PreemptibleLoopsInt
 PrimeRK
@@ -2986,7 +2982,6 @@ Rejang
 Rela
 Reloc
 RelocEnt
-ReportAllocs
 ResNclose
 ResNinit
 ResNsearch
@@ -3026,7 +3021,6 @@ SHA384WithRSAPSS
 SHA512WithRSAPSS
 SHARED
 SHF
-SHF_ALLOC
 SHF_EXECINSTR
 SHF_MASKOS
 SHF_MASKPROC
@@ -4061,8 +4055,10 @@ align
 alignment
 alive
 all
+alloc
 allocate
 allocated
+allocs
 allow
 allowed
 alpha
@@ -4136,6 +4132,7 @@ bare
 base
 basic
 basicauth
+batch
 be
 before
 begin
@@ -4260,6 +4257,7 @@ close
 closed
 closer
 closing
+cmd
 cmerge
 cmplx
 cnt
@@ -5231,6 +5229,7 @@ pprof
 pragma
 precedence
 precision
+precompute
 precomputed
 precondition
 predefined
