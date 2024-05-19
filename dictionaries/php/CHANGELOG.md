@@ -22,7 +22,7 @@ See [Conventional Commits](https://conventionalcommits.org) for commit guideline
 
 
 
-## [4.0.7](https://github.com/streetsidesoftware/cspell-dicts/compare/@cspell/dict-php@4.0.6...@cspell/dict-php@4.0.7) (2024-05-18)
+## [4.0.7](https://github.com/streetsidesoftware/cspell-dicts/compare/@cspell/dict-php@4.0.6...@cspell/dict-php@4.0.7) (2024-05-19)
 
 
 ### Updates and Bug Fixes

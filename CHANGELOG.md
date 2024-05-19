@@ -1,6 +1,6 @@
 # Release Notes
 
-## [26.0.5](https://github.com/streetsidesoftware/cspell-dicts/compare/cspell-dicts@26.0.4...cspell-dicts@26.0.5) (2024-05-18)
+## [26.0.5](https://github.com/streetsidesoftware/cspell-dicts/compare/cspell-dicts@26.0.4...cspell-dicts@26.0.5) (2024-05-19)
 
 
 ### Updates and Bug Fixes
