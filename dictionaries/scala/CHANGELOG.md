@@ -22,6 +22,13 @@ See [Conventional Commits](https://conventionalcommits.org) for commit guideline
 
 
 
+## [5.0.2](https://github.com/streetsidesoftware/cspell-dicts/compare/@cspell/dict-scala@5.0.1...@cspell/dict-scala@5.0.2) (2024-05-19)
+
+
+### Updates and Bug Fixes
+
+* Workflow Bot -- Build Dictionaries ([#3174](https://github.com/streetsidesoftware/cspell-dicts/issues/3174)) ([0f13b2b](https://github.com/streetsidesoftware/cspell-dicts/commit/0f13b2b983fc00f83789795a34f432b9d439152e))
+
 ## [5.0.1](https://github.com/streetsidesoftware/cspell-dicts/compare/@cspell/dict-scala@5.0.0...@cspell/dict-scala@5.0.1) (2024-05-18)
 
 
