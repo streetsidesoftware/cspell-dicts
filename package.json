@@ -5,8 +5,8 @@
   "packageManager": "pnpm@8.15.7",
   "scripts": {
     "test": "pnpm -r run --workspace-concurrency 2 --stream test",
-    "lint": "pnpm run lint:fix && cspell",
-    "lint-ci": "eslint . && prettier -c \"**/*.{md,json,yml,yaml}\" && cspell",
+    "lint": "pnpm run lint:fix && cspell --no-progress",
+    "lint-ci": "eslint . && prettier -c \"**/*.{md,json,yml,yaml}\" && cspell --no-progress",
     "lint:fix": "eslint --fix . && prettier -w \"**/*.{md,json,yml,yaml}\"",
     "build:all": "pnpm -r run --stream --workspace-concurrency 2 build --no-bail",
     "build:readme": "pnpm run readme:generate-doc-dictionaries && pnpm run readme:inject",
