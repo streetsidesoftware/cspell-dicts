@@ -1,4 +1,5 @@
 #!/usr/bin/env node
+/* eslint-disable no-unused-vars, no-undef */
 
 import { fileURLToPath } from 'url';
 import { readFile, readdir, writeFile } from 'fs/promises';

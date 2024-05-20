@@ -15,7 +15,7 @@ function formatResult(result) {
         (seg) =>
             `${seg.flagIE} ${seg.isError ? '!' : '_'} ${rightJustify(seg.startPos)}-${rightJustify(seg.endPos)} | ${
                 seg.text
-            }`
+            }`,
     );
 }
 
