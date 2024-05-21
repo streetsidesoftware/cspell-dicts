@@ -1,8 +1,5 @@
-import { checkSnapshots } from 'cspell-dict-file-checker/index.mjs'
+import { checkSnapshots } from 'cspell-dict-file-checker/index.mjs';
 
-const testFiles = [
-    'samples/issue-1097.tex',
-    'samples/papers/**/*.tex',
-];
+const testFiles = ['samples/issue-1097.tex', 'samples/papers/**/*.tex'];
 
 checkSnapshots(testFiles);
