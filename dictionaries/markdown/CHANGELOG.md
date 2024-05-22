@@ -1,5 +1,12 @@
 # Change Log
 
+## [2.0.2](https://github.com/streetsidesoftware/cspell-dicts/compare/@cspell/dict-markdown@2.0.1...@cspell/dict-markdown@2.0.2) (2024-05-22)
+
+
+### Updates and Bug Fixes
+
+* Enable dictionaries for MDX ([#3191](https://github.com/streetsidesoftware/cspell-dicts/issues/3191)) ([34c7e57](https://github.com/streetsidesoftware/cspell-dicts/commit/34c7e57f1be4cdc341c96c0fe98e2e9e9ed5ab92))
+
 ## [2.0.1](https://github.com/streetsidesoftware/cspell-dicts/compare/@cspell/dict-markdown@2.0.0...@cspell/dict-markdown@2.0.1) (2022-12-17)
 
 
