@@ -17,6 +17,8 @@ Ansible
 Antergos
 Apparmor
 Appveyor
+ArgoCD
+ArgoProj
 Artifactory
 Atlaskit
 Avro
@@ -35,6 +37,7 @@ Camunda
 Capitan
 Caskroom
 CentOS
+Ceph
 Checkov
 ChefDK
 ChefSpec
@@ -52,12 +55,12 @@ DB
 DBaaS
 DDMMYY
 DDoS
-DoS
 DOM
 Databricks
 DeepScale
 DigitalOcean
 Django
+DoS
 DocBlock
 DragonFlyBSD
 ECDHE
@@ -66,6 +69,7 @@ ECMA
 EKS
 EOL
 EOLs
+EPYC
 ESMTPS
 ESNEXT
 El
@@ -75,7 +79,9 @@ Exherbo
 Exps
 Exts
 FIXURL
+FQDNS
 Facebook
+Fluentd
 FreeBSD
 GCM
 GCP
@@ -90,6 +96,7 @@ Gitkraken
 Gitleaks
 Gitpod
 Google
+HHMM
 HSLA
 HSVA
 Hacktoberfest
@@ -107,6 +114,7 @@ IFTTT
 InSpec
 Initializers
 IntelliJ
+Istio
 Itanium
 JBoss
 JOSM
@@ -121,6 +129,7 @@ Joyent
 Jupyter
 K8s
 Kafka
+KairosDB
 Kerberos
 Kibana
 Knuth
@@ -130,12 +139,15 @@ KotlinScript
 Kramdown
 Kube
 Kubernetes
+Kuma
+Kustomize
 LHS
 Last
 Lastfm
 LaunchDarkly
 Law
 Levenshtein
+Linkerd
 Linode
 Linux
 Lunr
@@ -158,20 +170,24 @@ Mongo
 MongoDB
 Moore's
 MySQL
+NATS
 NGINX
 NIST
 NOTFOUND
+NRIA
 Nagios
 Narrowable
 Narrowables
 NetBSD
 Netlify
 Neuralink
+New
 Nist
 Nullable
 Nullables
 OOBE
 ORM
+OSMC
 OXSecurity
 Octicons
 Ohai
@@ -188,6 +204,8 @@ OpenSSL
 OpenShift
 OpenSolaris
 OpenStack
+OpenTSDB
+OpenTelemetry
 OpenVPN
 OpenVZ
 Ouroboros
@@ -195,6 +213,7 @@ POJO
 POJOs
 Paludis
 Panner
+Paxos
 Pidora
 Podman
 Portainer
@@ -202,7 +221,9 @@ Postgres
 PostgresSQL
 Precommit
 Preformat
+PromQL
 Promise
+Promxy
 PyCharm
 RHEL
 RHS
@@ -213,6 +234,7 @@ RedHat
 Reddit
 Reddit's
 Redis
+Relic
 ResNet
 SATA
 SBOM
@@ -228,6 +250,8 @@ SQLite
 SaaS
 Secretlint
 Sharpier
+SigV4
+SigV4A
 SlackAPI
 SmartOS
 SoftLayer
@@ -241,7 +265,9 @@ Staticman's
 Supercomputing
 Swiftype
 TeamCity
+Techetio
 Terraform
+Thanos
 Theming
 Trello
 Trivy
@@ -298,6 +324,7 @@ Yahoo
 ZFS
 ZPool
 ZPools
+Zabbix
 ZenServer
 Zend
 Zendesk
@@ -585,6 +612,7 @@ captcha
 captchas
 cfml
 cgroup
+cgroups
 chai
 chainable
 changelog
@@ -607,6 +635,7 @@ classlib
 classname
 clint
 cloner
+clusterid
 cmake
 cmd
 cmdlet
@@ -740,6 +769,7 @@ dasherized
 database
 databases
 dataloader
+datapoint
 dataset
 datasets
 datasources
@@ -1009,6 +1039,7 @@ falsy
 favicon
 fetchable
 ffmpeg
+fhcount
 file
 fileio
 filename
@@ -1049,7 +1080,9 @@ frontend
 fsck
 fsharp
 fstab
+fstrim
 fsync
+fsynced
 fullstack
 func
 function
@@ -1128,6 +1161,7 @@ hdiutil
 helmify
 helvetica
 heredoc
+hhmmss
 hiddenfolder
 hipaa
 hoist
@@ -1190,6 +1224,8 @@ imurmurhash
 incrementable
 incrementally
 incrementor
+index
+indexdb
 infer
 infiniband
 inflector
@@ -1461,6 +1497,7 @@ minifier
 minify
 minikube
 minimap
+minio
 minitest
 misconfiguration
 misconfigurations
@@ -1499,6 +1536,7 @@ msdn
 msedge
 msgs
 mtime
+mtls
 multicast
 multipass
 multiprocessing
@@ -1588,10 +1626,14 @@ onboards
 oncomplete
 onended
 onerror
+onexit
 onfailure
 onfinally
 onfulfilled
 oniguruma
+onkeydown
+onkeypress
+onkeyup
 online
 onload
 onloadend
@@ -1600,6 +1642,8 @@ onopen
 onprogress
 onreadystatechange
 onrejected
+onstart
+onstop
 onsuccess
 ontimeout
 onversionchange
@@ -1615,6 +1659,7 @@ org
 orgs
 osi
 osmlab
+otel
 outfile
 overridable
 package
@@ -1657,6 +1702,8 @@ permalink
 permalinks
 personalizations
 php
+pid
+pidof
 pip
 pixel
 pixelated
@@ -2027,7 +2074,6 @@ sftp
 sha
 shaderlab
 shard
-sharded
 sharding
 sharedmemory
 shas
@@ -2211,6 +2257,7 @@ thunk
 time
 timeline
 timelines
+timeseries
 timestamp
 tmbundle
 tmlanguage
@@ -2269,6 +2316,7 @@ truthy
 tsbuild
 tsbuildinfo
 tsconfig
+tsdb
 tslib
 tslint
 tsmerge
@@ -2471,6 +2519,8 @@ virtualizer
 virtualizing
 visualstudio
 visudo
+vlog
+vlogs
 vmkernel
 vmlinuz
 vmnic
@@ -2521,6 +2571,7 @@ win32
 win64
 window
 windows
+winsw
 wireguard
 wkhtmltopdf
 word
