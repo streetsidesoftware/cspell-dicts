@@ -265,7 +265,7 @@ Special thanks to all of our amazing contributors!
 <a href="https://github.com/streetsidesoftware/cspell-dicts/graphs/contributors">
   <img src="https://contrib.rocks/image?repo=streetsidesoftware/cspell-dicts&r="  width="800px"/>
 </a>
- 
+
 ## How to create a new dictionary
 
 Please fork this repository to add new dictionaries.
