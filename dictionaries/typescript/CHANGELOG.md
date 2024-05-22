@@ -3,6 +3,13 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+## [3.1.5](https://github.com/streetsidesoftware/cspell-dicts/compare/@cspell/dict-typescript@3.1.4...@cspell/dict-typescript@3.1.5) (2024-05-22)
+
+
+### Updates and Bug Fixes
+
+* Enable dictionaries for MDX ([#3191](https://github.com/streetsidesoftware/cspell-dicts/issues/3191)) ([34c7e57](https://github.com/streetsidesoftware/cspell-dicts/commit/34c7e57f1be4cdc341c96c0fe98e2e9e9ed5ab92))
+
 ## [3.1.4](https://github.com/streetsidesoftware/cspell-dicts/compare/@cspell/dict-typescript@3.1.3...@cspell/dict-typescript@3.1.4) (2024-04-18)
 
 
