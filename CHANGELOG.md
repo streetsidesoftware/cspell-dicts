@@ -1,5 +1,19 @@
 # Release Notes
 
+## [26.0.7](https://github.com/streetsidesoftware/cspell-dicts/compare/cspell-dicts@26.0.6...cspell-dicts@26.0.7) (2024-05-22)
+
+
+### Updates and Bug Fixes
+
+* add back a few terms ([#3187](https://github.com/streetsidesoftware/cspell-dicts/issues/3187)) ([74340db](https://github.com/streetsidesoftware/cspell-dicts/commit/74340dbf3844307772cf1d58f23f6671380b7345))
+* update companies dictionary ([#3180](https://github.com/streetsidesoftware/cspell-dicts/issues/3180)) ([01d3c90](https://github.com/streetsidesoftware/cspell-dicts/commit/01d3c909f8f7c51249566d604bf9ba75620f0209))
+* update en-common-misspellings dict ([#3182](https://github.com/streetsidesoftware/cspell-dicts/issues/3182)) ([d232591](https://github.com/streetsidesoftware/cspell-dicts/commit/d23259196f44cebe9f2039e94fe10fc38972afb4))
+* update fullstack dict ([#3181](https://github.com/streetsidesoftware/cspell-dicts/issues/3181)) ([2bfcba9](https://github.com/streetsidesoftware/cspell-dicts/commit/2bfcba952e9d2aac1c7141ab6caef61abdd479d2))
+* update golang dictionary ([#3179](https://github.com/streetsidesoftware/cspell-dicts/issues/3179)) ([5b9887a](https://github.com/streetsidesoftware/cspell-dicts/commit/5b9887a309984a88d03e36a14d7e60fdc3aea7a6))
+* update software-terms dict ([#3183](https://github.com/streetsidesoftware/cspell-dicts/issues/3183)) ([0d235ca](https://github.com/streetsidesoftware/cspell-dicts/commit/0d235ca3b04c242edc132c9b113442354c4b314e))
+* Use fullstack dictionary with `typescriptreact` and `javascriptreact`. ([#3188](https://github.com/streetsidesoftware/cspell-dicts/issues/3188)) ([7d2f94f](https://github.com/streetsidesoftware/cspell-dicts/commit/7d2f94f2765235ccb1f677878ccd239f0756fffd))
+* Workflow Bot -- Build Dictionaries ([#3185](https://github.com/streetsidesoftware/cspell-dicts/issues/3185)) ([4db7ac2](https://github.com/streetsidesoftware/cspell-dicts/commit/4db7ac294d819233196226cf692e6438fc59462c))
+
 ## [26.0.6](https://github.com/streetsidesoftware/cspell-dicts/compare/cspell-dicts@26.0.5...cspell-dicts@26.0.6) (2024-05-19)
 
 

@@ -3,6 +3,15 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+## [3.1.6](https://github.com/streetsidesoftware/cspell-dicts/compare/@cspell/dict-fullstack@3.1.5...@cspell/dict-fullstack@3.1.6) (2024-05-22)
+
+
+### Updates and Bug Fixes
+
+* add back a few terms ([#3187](https://github.com/streetsidesoftware/cspell-dicts/issues/3187)) ([74340db](https://github.com/streetsidesoftware/cspell-dicts/commit/74340dbf3844307772cf1d58f23f6671380b7345))
+* update fullstack dict ([#3181](https://github.com/streetsidesoftware/cspell-dicts/issues/3181)) ([2bfcba9](https://github.com/streetsidesoftware/cspell-dicts/commit/2bfcba952e9d2aac1c7141ab6caef61abdd479d2))
+* Use fullstack dictionary with `typescriptreact` and `javascriptreact`. ([#3188](https://github.com/streetsidesoftware/cspell-dicts/issues/3188)) ([7d2f94f](https://github.com/streetsidesoftware/cspell-dicts/commit/7d2f94f2765235ccb1f677878ccd239f0756fffd))
+
 ## [3.1.5](https://github.com/streetsidesoftware/cspell-dicts/compare/@cspell/dict-fullstack@3.1.4...@cspell/dict-fullstack@3.1.5) (2023-03-23)
 
 

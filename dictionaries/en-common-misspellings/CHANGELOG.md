@@ -1,5 +1,12 @@
 # Change Log
 
+## [2.0.1](https://github.com/streetsidesoftware/cspell-dicts/compare/@cspell/dict-en-common-misspellings@2.0.0...@cspell/dict-en-common-misspellings@2.0.1) (2024-05-22)
+
+
+### Updates and Bug Fixes
+
+* update en-common-misspellings dict ([#3182](https://github.com/streetsidesoftware/cspell-dicts/issues/3182)) ([d232591](https://github.com/streetsidesoftware/cspell-dicts/commit/d23259196f44cebe9f2039e94fe10fc38972afb4))
+
 ## [2.0.0](https://github.com/streetsidesoftware/cspell-dicts/compare/@cspell/dict-en-common-misspellings@1.0.2...@cspell/dict-en-common-misspellings@2.0.0) (2023-12-29)
 
 
