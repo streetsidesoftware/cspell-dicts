@@ -76,6 +76,7 @@ Various [cspell](https://github.com/streetsidesoftware/cspell) dictionaries. Eac
 - [Elixir](dictionaries/elixir)
 - [F#](dictionaries/fsharp)
 - [GIT](dictionaries/git)
+- [Google](dictionaries/google)
 - [Go](dictionaries/golang)
 - [Haskell](dictionaries/haskell)
 - [HTML](dictionaries/html)
@@ -182,6 +183,7 @@ Various [cspell](https://github.com/streetsidesoftware/cspell) dictionaries. Eac
 | [@cspell/dict-fullstack](./dictionaries/fullstack#readme)                           | fullstack                                                               | Fullstack                          | Common words encountered during fullstack development          |
 | [@cspell/dict-gaming-terms](./dictionaries/gaming-terms#readme)                     | gaming-terms                                                            | Gaming                             | Gaming dictionary for cspell.                                  |
 | [@cspell/dict-git](./dictionaries/git#readme)                                       | git                                                                     | git                                | CSpell configuration for GIT                                   |
+| [@cspell/dict-golang](./dictionaries/google#readme)                                 | google                                                                  | Google and Google Cloud Platform   | Google Dictionary for cspell.                                         |
 | [@cspell/dict-golang](./dictionaries/golang#readme)                                 | golang                                                                  | Go Language                        | Go Language Dictionary                                         |
 | [@cspell/dict-grc](./dictionaries/grc_GR#readme)                                    | grc                                                                     | Ancient Greek                      | Ancient Greek dictionary for cspell.                           |
 | [@cspell/dict-haskell](./dictionaries/haskell#readme)                               | haskell                                                                 | Haskell                            | Haskell dictionary for cspell.                                 |
@@ -263,7 +265,7 @@ Special thanks to all of our amazing contributors!
 <a href="https://github.com/streetsidesoftware/cspell-dicts/graphs/contributors">
   <img src="https://contrib.rocks/image?repo=streetsidesoftware/cspell-dicts&r="  width="800px"/>
 </a>
-
+ 
 ## How to create a new dictionary
 
 Please fork this repository to add new dictionaries.
