@@ -4,6 +4,8 @@ Google Cloud Development Dictionary for cspell.
 
 This is a pre-built dictionary for use with CSpell.
 
+Based upon: [cloud.google.com](https://cloud.google.com/products)
+
 ## Installation
 
 Global Install and add to CSpell global settings.
