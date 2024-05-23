@@ -49,7 +49,7 @@ importers:
         version: 15.3.0
       hunspell-reader:
         specifier: ^8.8.2
-        version: 8.8.2
+        version: 8.8.3
       inject-markdown:
         specifier: ^3.0.0
         version: 3.0.0
@@ -3704,19 +3704,6 @@ packages:
   /human-signals@5.0.0:
     resolution: {integrity: sha512-AXcZb6vzzrFAUE61HnN4mpLqd/cSIwNQjtNWR0euPm6y0iqx3G4gOXaIDdtdDwZmhwe82LA6+zinmW4UBWVePQ==}
     engines: {node: '>=16.17.0'}
-
-  /hunspell-reader@8.8.2:
-    resolution: {integrity: sha512-7sDswrTs857af7tkjP5ACrj+9vzzoVl5GaHntPpj76WEDP88WHlwo0awoew0YZEXg7Db3Nj0AGwvlFNQ2xmnUQ==}
-    engines: {node: '>=18'}
-    hasBin: true
-    dependencies:
-      '@cspell/cspell-pipe': 8.8.2
-      '@cspell/cspell-types': 8.8.2
-      commander: 12.1.0
-      gensequence: 7.0.0
-      html-entities: 2.5.2
-      iconv-lite: 0.6.3
-    dev: true
 
   /hunspell-reader@8.8.3:
     resolution: {integrity: sha512-GFCrV4U4pu95ysU7cu33zibR+45TmKT/Nl2hmBWRoLW7XCH613oRmBRRVFU7IOohdCNsOJCbkxsyCMV7CD+hog==}
