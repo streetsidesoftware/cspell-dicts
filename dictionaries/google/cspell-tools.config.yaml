@@ -4,7 +4,7 @@ targets:
   - name: 'google'
     sources:
       - filename: 'src/google.txt'
-        maxDepth: 1 # This is set to 1 to prevent initial builds from taking too long.
+        split: true
     format: 'plaintext'
     targetDirectory: './dict'
     generateNonStrict: false
