@@ -1,5 +1,13 @@
 # Change Log
 
+## [2.0.1](https://github.com/streetsidesoftware/cspell-dicts/compare/@cspell/dict-data-science@2.0.0...@cspell/dict-data-science@2.0.1) (2024-05-23)
+
+
+### Updates and Bug Fixes
+
+* update data-science dict ([#3199](https://github.com/streetsidesoftware/cspell-dicts/issues/3199)) ([9bacde3](https://github.com/streetsidesoftware/cspell-dicts/commit/9bacde3e6b885036ee80e5d7b5d45014c09f9f3f))
+* Workflow Bot -- Build Dictionaries ([#3205](https://github.com/streetsidesoftware/cspell-dicts/issues/3205)) ([8a56dba](https://github.com/streetsidesoftware/cspell-dicts/commit/8a56dba2acc59b9b1345d7657cd7aefcb4932824))
+
 ## [2.0.0](https://github.com/streetsidesoftware/cspell-dicts/compare/@cspell/dict-data-science@1.0.11...@cspell/dict-data-science@2.0.0) (2024-01-02)
 
 
