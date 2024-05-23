@@ -1,8 +1,10 @@
 # CSpell Google Dictionary
 
-Google dictionary for cspell.
+Google Cloud Development Dictionary for cspell.
 
 This is a pre-built dictionary for use with CSpell.
+
+Based upon: [cloud.google.com](https://cloud.google.com/products)
 
 ## Installation
 
@@ -33,6 +35,7 @@ The `cspell-ext.json` file in this package should be added to the import section
 {
     // …
     "import": ["@cspell/dict-google/cspell-ext.json"],
+    "dictionaries": ["google"],
     // …
 }
 ```
