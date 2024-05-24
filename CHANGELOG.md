@@ -1,5 +1,17 @@
 # Release Notes
 
+## [26.1.1](https://github.com/streetsidesoftware/cspell-dicts/compare/cspell-dicts@26.1.0...cspell-dicts@26.1.1) (2024-05-24)
+
+
+### Updates and Bug Fixes
+
+* Add missing company names and Google terms ([#3212](https://github.com/streetsidesoftware/cspell-dicts/issues/3212)) ([1036a2c](https://github.com/streetsidesoftware/cspell-dicts/commit/1036a2c0033d1c8788a653d1e1235ebcaab2a850))
+* update k8s dict ([#3202](https://github.com/streetsidesoftware/cspell-dicts/issues/3202)) ([bc7ee9b](https://github.com/streetsidesoftware/cspell-dicts/commit/bc7ee9b4f30d44bd4f561e00ef6eb5be63062bf4))
+* update software-terms dict ([#3203](https://github.com/streetsidesoftware/cspell-dicts/issues/3203)) ([bdf10d1](https://github.com/streetsidesoftware/cspell-dicts/commit/bdf10d17f26cb94a4128155376a4f3c94679dffd))
+* Workflow Bot -- Build Dictionaries ([#3210](https://github.com/streetsidesoftware/cspell-dicts/issues/3210)) ([6c528af](https://github.com/streetsidesoftware/cspell-dicts/commit/6c528afc2b44c3e64be5de09ec048d1416a178c1))
+* Workflow Bot -- Build Dictionaries ([#3216](https://github.com/streetsidesoftware/cspell-dicts/issues/3216)) ([1f48312](https://github.com/streetsidesoftware/cspell-dicts/commit/1f483125280d927cfb94faca357f5b18baa5c29c))
+* Workflow Bot -- Build Dictionaries ([#3218](https://github.com/streetsidesoftware/cspell-dicts/issues/3218)) ([55ed084](https://github.com/streetsidesoftware/cspell-dicts/commit/55ed0840e249a9899b7a0501cfbd03566462c80f))
+
 ## [26.1.0](https://github.com/streetsidesoftware/cspell-dicts/compare/cspell-dicts@26.0.8...cspell-dicts@26.1.0) (2024-05-23)
 
 
