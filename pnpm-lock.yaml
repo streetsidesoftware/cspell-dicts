@@ -78,8 +78,8 @@ importers:
         specifier: ^8.8.3
         version: 8.8.3
       glob:
-        specifier: ^10.3.16
-        version: 10.3.16
+        specifier: ^10.4.0
+        version: 10.4.0
 
   dictionaries/ada: {}
 
@@ -422,8 +422,8 @@ importers:
         specifier: ^4.4.0
         version: 4.4.0(@yeoman/types@1.2.0)(mem-fs@4.1.0)
       yeoman-generator:
-        specifier: ^7.1.1
-        version: 7.1.1(@yeoman/types@1.2.0)(mem-fs@4.1.0)(yeoman-environment@4.4.0)
+        specifier: ^7.2.0
+        version: 7.2.0(@yeoman/types@1.2.0)(mem-fs@4.1.0)(yeoman-environment@4.4.0)
       yosay:
         specifier: ^3.0.0
         version: 3.0.0
@@ -549,7 +549,7 @@ packages:
       cosmiconfig: 9.0.0
       cspell-trie-lib: 8.8.3
       gensequence: 7.0.0
-      glob: 10.3.16
+      glob: 10.4.0
       hunspell-reader: 8.8.3
       yaml: 2.4.2
     transitivePeerDependencies:
@@ -989,7 +989,7 @@ packages:
       chalk: 5.3.0
       columnify: 1.6.0
       fs-extra: 11.2.0
-      glob: 10.3.16
+      glob: 10.4.0
       has-unicode: 2.0.1
       libnpmaccess: 8.0.6
       libnpmpublish: 9.0.8
@@ -1222,7 +1222,7 @@ packages:
     engines: {node: ^14.17.0 || ^16.13.0 || >=18.0.0}
     dependencies:
       '@npmcli/name-from-folder': 2.0.0
-      glob: 10.3.16
+      glob: 10.4.0
       minimatch: 9.0.4
       read-package-json-fast: 3.0.2
     dev: false
@@ -1255,7 +1255,7 @@ packages:
     engines: {node: ^16.14.0 || >=18.0.0}
     dependencies:
       '@npmcli/git': 5.0.7
-      glob: 10.3.16
+      glob: 10.4.0
       hosted-git-info: 7.0.2
       json-parse-even-better-errors: 3.0.2
       normalize-package-data: 6.0.1
@@ -1786,7 +1786,7 @@ packages:
       diff: 5.2.0
       isbinaryfile: 5.0.2
       mem-fs: 4.1.0
-      mem-fs-editor: 11.0.0(mem-fs@4.1.0)
+      mem-fs-editor: 11.0.1(mem-fs@4.1.0)
       minimatch: 9.0.4
       p-transform: 4.1.5
       pretty-bytes: 6.1.1
@@ -2165,9 +2165,9 @@ packages:
     dependencies:
       '@npmcli/fs': 3.1.1
       fs-minipass: 3.0.3
-      glob: 10.3.16
+      glob: 10.4.0
       lru-cache: 10.2.2
-      minipass: 7.1.1
+      minipass: 7.1.2
       minipass-collect: 2.0.1
       minipass-flush: 1.0.5
       minipass-pipeline: 1.2.4
@@ -3348,7 +3348,7 @@ packages:
     resolution: {integrity: sha512-XUBA9XClHbnJWSfBzjkm6RvPsyg3sryZt06BEQoXcF7EK/xpGaQYJgQKDJSUH5SGZ76Y7pFx1QBnXz09rU5Fbw==}
     engines: {node: ^14.17.0 || ^16.13.0 || >=18.0.0}
     dependencies:
-      minipass: 7.1.1
+      minipass: 7.1.2
 
   /fs.realpath@1.0.0:
     resolution: {integrity: sha512-OO0pH2lK6a0hZnAdau5ItzHPI6pUlvI7jMVnxUQRtw4owF2wk8lOSabtGDCTP4Ggrg2MbGnWO9X8K1t4+fGMDw==}
@@ -3483,15 +3483,15 @@ packages:
       is-glob: 4.0.3
     dev: true
 
-  /glob@10.3.16:
-    resolution: {integrity: sha512-JDKXl1DiuuHJ6fVS2FXjownaavciiHNUU4mOvV/B793RLh05vZL1rcPnCSaOgv1hDT6RDlY7AB7ZUvFYAtPgAw==}
+  /glob@10.4.0:
+    resolution: {integrity: sha512-+K6CicMIL11UEbC3gH/MVxgGG4gJDMu9tPD+nH+d6W3+y2fYuDSbpa2b+EGyvCGvSN/PT/7daJTH25NknJkcIQ==}
     engines: {node: '>=16 || 14 >=14.18'}
     hasBin: true
     dependencies:
       foreground-child: 3.1.1
       jackspeak: 3.1.2
       minimatch: 9.0.4
-      minipass: 7.1.1
+      minipass: 7.1.2
       path-scurry: 1.11.1
 
   /glob@7.2.3:
@@ -4254,7 +4254,7 @@ packages:
       cacache: 18.0.3
       http-cache-semantics: 4.1.1
       is-lambda: 1.0.1
-      minipass: 7.1.1
+      minipass: 7.1.2
       minipass-fetch: 3.0.5
       minipass-flush: 1.0.5
       minipass-pipeline: 1.2.4
@@ -4462,8 +4462,8 @@ packages:
       '@types/mdast': 4.0.4
     dev: true
 
-  /mem-fs-editor@11.0.0(mem-fs@4.1.0):
-    resolution: {integrity: sha512-D9+DPIDohRxYUO95vR3RxJZUNkCmehOHqIoJVm9OxChMadCsNdiTB1nuU4zaHJonUMASYdfKN2USxnB9z0ccXg==}
+  /mem-fs-editor@11.0.1(mem-fs@4.1.0):
+    resolution: {integrity: sha512-ne7/ep9gIfl8IitTDBMlU2M0IRfvAzCK2zhoafu+hirqui9A9qp/KQOpG+J5/Td6qufbLee6RMxYeD5vxitK5w==}
     engines: {node: '>=18.0.0'}
     peerDependencies:
       mem-fs: ^4.0.0
@@ -4898,13 +4898,13 @@ packages:
     resolution: {integrity: sha512-D7V8PO9oaz7PWGLbCACuI1qEOsq7UKfLotx/C0Aet43fCUB/wfQ7DYeq2oR/svFJGYDHPr38SHATeaj/ZoKHKw==}
     engines: {node: '>=16 || 14 >=14.17'}
     dependencies:
-      minipass: 7.1.1
+      minipass: 7.1.2
 
   /minipass-fetch@3.0.5:
     resolution: {integrity: sha512-2N8elDQAtSnFV0Dk7gt15KHsS0Fyz6CbYZ360h0WTYV1Ty46li3rAXVOQj1THMNLdmrD9Vt5pBPtWtVkpwGBqg==}
     engines: {node: ^14.17.0 || ^16.13.0 || >=18.0.0}
     dependencies:
-      minipass: 7.1.1
+      minipass: 7.1.2
       minipass-sized: 1.0.3
       minizlib: 2.1.2
     optionalDependencies:
@@ -4944,8 +4944,8 @@ packages:
     resolution: {integrity: sha512-3FnjYuehv9k6ovOEbyOswadCDPX1piCfhV8ncmYtHOjuPwylVWsghTLo7rabjC3Rx5xD4HDx8Wm1xnMF7S5qFQ==}
     engines: {node: '>=8'}
 
-  /minipass@7.1.1:
-    resolution: {integrity: sha512-UZ7eQ+h8ywIRAW1hIEl2AqdwzJucU/Kp59+8kkZeSvafXhZjul247BvIJjEVFVeON6d7lM46XX1HXCduKAS8VA==}
+  /minipass@7.1.2:
+    resolution: {integrity: sha512-qOOzS1cBTWYF4BH8fVePDBOO9iptMnGUEZwNc/cMWnTV2nVLZ7VoNWEPHkYczZA0pdoA7dl6e7FL659nX9S2aw==}
     engines: {node: '>=16 || 14 >=14.17'}
 
   /minizlib@2.1.2:
@@ -5048,7 +5048,7 @@ packages:
     dependencies:
       env-paths: 2.2.1
       exponential-backoff: 3.1.1
-      glob: 10.3.16
+      glob: 10.4.0
       graceful-fs: 4.2.11
       make-fetch-happen: 13.0.1
       nopt: 7.2.1
@@ -5164,7 +5164,7 @@ packages:
     dependencies:
       '@npmcli/redact': 2.0.0
       make-fetch-happen: 13.0.1
-      minipass: 7.1.1
+      minipass: 7.1.2
       minipass-fetch: 3.0.5
       minipass-json-stream: 1.0.1
       minizlib: 2.1.2
@@ -5424,7 +5424,7 @@ packages:
       '@npmcli/run-script': 8.1.0
       cacache: 18.0.3
       fs-minipass: 3.0.3
-      minipass: 7.1.1
+      minipass: 7.1.2
       npm-package-arg: 11.0.2
       npm-packlist: 8.0.2
       npm-pick-manifest: 9.0.1
@@ -5550,7 +5550,7 @@ packages:
     engines: {node: '>=16 || 14 >=14.18'}
     dependencies:
       lru-cache: 10.2.2
-      minipass: 7.1.1
+      minipass: 7.1.2
 
   /path-type@4.0.0:
     resolution: {integrity: sha512-gDKb8aZMDeD/tZWs9P6+q0J9Mwkdl6xMV8TjnGP3qJVJ06bdMgkbBlLU8IdfOsIsFz2BW1rNVT3XuNEl8zPAvw==}
@@ -5712,7 +5712,7 @@ packages:
     engines: {node: ^16.14.0 || >=18.0.0}
     deprecated: This package is no longer supported. Please use @npmcli/package-json instead.
     dependencies:
-      glob: 10.3.16
+      glob: 10.4.0
       json-parse-even-better-errors: 3.0.2
       normalize-package-data: 6.0.1
       npm-normalize-package-bin: 3.0.1
@@ -6120,7 +6120,7 @@ packages:
     resolution: {integrity: sha512-MGrFH9Z4NP9Iyhqn16sDtBpRRNJ0Y2hNa6D65h736fVSaPCHr4DM4sWUNvVaSuC+0OBGhwsrydQwmgfg5LncqQ==}
     engines: {node: ^14.17.0 || ^16.13.0 || >=18.0.0}
     dependencies:
-      minipass: 7.1.1
+      minipass: 7.1.2
 
   /stack-utils@2.0.6:
     resolution: {integrity: sha512-XlkWvfIm6RmsWtNJx+uqtKLS8eqFbxUg0ZzLXqY0caEy9l7hruX8IpiDnjsLavoBgqCCR71TqWO8MaXYheJ3RQ==}
@@ -6774,7 +6774,7 @@ packages:
       locate-path: 7.2.0
       lodash-es: 4.17.21
       mem-fs: 4.1.0
-      mem-fs-editor: 11.0.0(mem-fs@4.1.0)
+      mem-fs-editor: 11.0.1(mem-fs@4.1.0)
       semver: 7.6.2
       slash: 5.1.0
       untildify: 5.0.0
@@ -6784,8 +6784,8 @@ packages:
       - supports-color
     dev: false
 
-  /yeoman-generator@7.1.1(@yeoman/types@1.2.0)(mem-fs@4.1.0)(yeoman-environment@4.4.0):
-    resolution: {integrity: sha512-vQ7ETaKIDmKNtpp97YFabE92ZaOTTs8NOr0wmmszyA1uAc2z5QXNZfU1WtXRFn76BiTf5mHWrOsCDls8N9nD6A==}
+  /yeoman-generator@7.2.0(@yeoman/types@1.2.0)(mem-fs@4.1.0)(yeoman-environment@4.4.0):
+    resolution: {integrity: sha512-z+iu9PZuE/Nvj1MVuQdMPIIknHUoigNiVXd20DX+ImIvdehNeBfxUSuqQPVdGu/D1H/b5YnNW5Ji9iGJOU2TgQ==}
     engines: {node: ^18.17.0 || >=20.5.0}
     peerDependencies:
       '@yeoman/types': ^1.1.1
@@ -6807,7 +6807,7 @@ packages:
       latest-version: 7.0.0
       lodash-es: 4.17.21
       mem-fs: 4.1.0
-      mem-fs-editor: 11.0.0(mem-fs@4.1.0)
+      mem-fs-editor: 11.0.1(mem-fs@4.1.0)
       minimist: 1.2.8
       read-package-up: 11.0.0
       semver: 7.6.2
