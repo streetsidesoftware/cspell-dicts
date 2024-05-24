@@ -1,5 +1,13 @@
 # Change Log
 
+## [1.0.1](https://github.com/streetsidesoftware/cspell-dicts/compare/@cspell/dict-google@1.0.0...@cspell/dict-google@1.0.1) (2024-05-24)
+
+
+### Updates and Bug Fixes
+
+* Add missing company names and Google terms ([#3212](https://github.com/streetsidesoftware/cspell-dicts/issues/3212)) ([1036a2c](https://github.com/streetsidesoftware/cspell-dicts/commit/1036a2c0033d1c8788a653d1e1235ebcaab2a850))
+* Workflow Bot -- Build Dictionaries ([#3216](https://github.com/streetsidesoftware/cspell-dicts/issues/3216)) ([1f48312](https://github.com/streetsidesoftware/cspell-dicts/commit/1f483125280d927cfb94faca357f5b18baa5c29c))
+
 ## 1.0.0 (2024-05-23)
 
 
