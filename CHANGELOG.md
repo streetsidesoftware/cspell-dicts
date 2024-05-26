@@ -1,5 +1,16 @@
 # Release Notes
 
+## [26.1.2](https://github.com/streetsidesoftware/cspell-dicts/compare/cspell-dicts@26.1.1...cspell-dicts@26.1.2) (2024-05-26)
+
+
+### Updates and Bug Fixes
+
+* Make sure acronyms are part of the dictionary ([#3227](https://github.com/streetsidesoftware/cspell-dicts/issues/3227)) ([008008d](https://github.com/streetsidesoftware/cspell-dicts/commit/008008d2a78a9ec9c072305f22f176156eb015af))
+* update en-us dict ([#3220](https://github.com/streetsidesoftware/cspell-dicts/issues/3220)) ([9909092](https://github.com/streetsidesoftware/cspell-dicts/commit/9909092f94eebac99d960e37a12d6f1a1180079d))
+* update software-terms dict ([#3221](https://github.com/streetsidesoftware/cspell-dicts/issues/3221)) ([9bb9747](https://github.com/streetsidesoftware/cspell-dicts/commit/9bb9747677de331b175723a9e71144513adb5b0e))
+* Workflow Bot -- Build Dictionaries ([#3224](https://github.com/streetsidesoftware/cspell-dicts/issues/3224)) ([5b32489](https://github.com/streetsidesoftware/cspell-dicts/commit/5b3248981ddba36972c1673bc3fa36d027b07151))
+* Workflow Bot -- Build Dictionaries ([#3226](https://github.com/streetsidesoftware/cspell-dicts/issues/3226)) ([2e83ef7](https://github.com/streetsidesoftware/cspell-dicts/commit/2e83ef7dcf6e12d83bfedca3263c2deb55baae73))
+
 ## [26.1.1](https://github.com/streetsidesoftware/cspell-dicts/compare/cspell-dicts@26.1.0...cspell-dicts@26.1.1) (2024-05-24)
 
 

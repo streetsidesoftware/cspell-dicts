@@ -3,6 +3,15 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+## [4.3.21](https://github.com/streetsidesoftware/cspell-dicts/compare/@cspell/dict-en_us@4.3.20...@cspell/dict-en_us@4.3.21) (2024-05-26)
+
+
+### Updates and Bug Fixes
+
+* Make sure acronyms are part of the dictionary ([#3227](https://github.com/streetsidesoftware/cspell-dicts/issues/3227)) ([008008d](https://github.com/streetsidesoftware/cspell-dicts/commit/008008d2a78a9ec9c072305f22f176156eb015af))
+* update en-us dict ([#3220](https://github.com/streetsidesoftware/cspell-dicts/issues/3220)) ([9909092](https://github.com/streetsidesoftware/cspell-dicts/commit/9909092f94eebac99d960e37a12d6f1a1180079d))
+* Workflow Bot -- Build Dictionaries ([#3226](https://github.com/streetsidesoftware/cspell-dicts/issues/3226)) ([2e83ef7](https://github.com/streetsidesoftware/cspell-dicts/commit/2e83ef7dcf6e12d83bfedca3263c2deb55baae73))
+
 ## [4.3.20](https://github.com/streetsidesoftware/cspell-dicts/compare/@cspell/dict-en_us@4.3.19...@cspell/dict-en_us@4.3.20) (2024-05-23)
 
 
