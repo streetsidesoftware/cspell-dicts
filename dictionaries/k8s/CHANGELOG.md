@@ -1,5 +1,13 @@
 # Changelog
 
+## [1.0.5](https://github.com/streetsidesoftware/cspell-dicts/compare/@cspell/dict-k8s@1.0.4...@cspell/dict-k8s@1.0.5) (2024-05-28)
+
+
+### Updates and Bug Fixes
+
+* Update k8s dict (add VPA) ([#3230](https://github.com/streetsidesoftware/cspell-dicts/issues/3230)) ([108d2fd](https://github.com/streetsidesoftware/cspell-dicts/commit/108d2fdabb2955d881b561463f4c26fbd3f06224))
+* Workflow Bot -- Build Dictionaries ([#3233](https://github.com/streetsidesoftware/cspell-dicts/issues/3233)) ([77ce4fd](https://github.com/streetsidesoftware/cspell-dicts/commit/77ce4fd2d8eb7b379b701c63614a5cfb565c03ec))
+
 ## [1.0.4](https://github.com/streetsidesoftware/cspell-dicts/compare/@cspell/dict-k8s@1.0.3...@cspell/dict-k8s@1.0.4) (2024-05-24)
 
 
