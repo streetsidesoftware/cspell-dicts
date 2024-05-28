@@ -1,5 +1,15 @@
 # Release Notes
 
+## [26.1.3](https://github.com/streetsidesoftware/cspell-dicts/compare/cspell-dicts@26.1.2...cspell-dicts@26.1.3) (2024-05-28)
+
+
+### Updates and Bug Fixes
+
+* Update companies dict (add Vultr) ([#3229](https://github.com/streetsidesoftware/cspell-dicts/issues/3229)) ([38cf93c](https://github.com/streetsidesoftware/cspell-dicts/commit/38cf93c1fdebc1de2eee944352eec2ccfc88104a))
+* Update k8s dict (add VPA) ([#3230](https://github.com/streetsidesoftware/cspell-dicts/issues/3230)) ([108d2fd](https://github.com/streetsidesoftware/cspell-dicts/commit/108d2fdabb2955d881b561463f4c26fbd3f06224))
+* Update software-tools dict (add dogstatsd, VPS) ([#3231](https://github.com/streetsidesoftware/cspell-dicts/issues/3231)) ([3bf66d5](https://github.com/streetsidesoftware/cspell-dicts/commit/3bf66d5fabfd6925bf8f15c2a934e94cf56bbf42))
+* Workflow Bot -- Build Dictionaries ([#3233](https://github.com/streetsidesoftware/cspell-dicts/issues/3233)) ([77ce4fd](https://github.com/streetsidesoftware/cspell-dicts/commit/77ce4fd2d8eb7b379b701c63614a5cfb565c03ec))
+
 ## [26.1.2](https://github.com/streetsidesoftware/cspell-dicts/compare/cspell-dicts@26.1.1...cspell-dicts@26.1.2) (2024-05-26)
 
 
