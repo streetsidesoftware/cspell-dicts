@@ -1,5 +1,17 @@
 # Release Notes
 
+## [26.2.0](https://github.com/streetsidesoftware/cspell-dicts/compare/cspell-dicts@26.1.3...cspell-dicts@26.2.0) (2024-05-30)
+
+
+### Features
+
+* Extend software-terms dictionary w/ cybersecurity terms ([#3237](https://github.com/streetsidesoftware/cspell-dicts/issues/3237)) ([1d8bd69](https://github.com/streetsidesoftware/cspell-dicts/commit/1d8bd69a5f80019e09e77c285e626cdea14fe99c))
+
+
+### Updates and Bug Fixes
+
+* Workflow Bot -- Build Dictionaries ([#3239](https://github.com/streetsidesoftware/cspell-dicts/issues/3239)) ([2e775e9](https://github.com/streetsidesoftware/cspell-dicts/commit/2e775e9bc5474bbf1b1b61fad140787a194c849c))
+
 ## [26.1.3](https://github.com/streetsidesoftware/cspell-dicts/compare/cspell-dicts@26.1.2...cspell-dicts@26.1.3) (2024-05-28)
 
 
