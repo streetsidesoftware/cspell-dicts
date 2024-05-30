@@ -28,3 +28,9 @@ Terms specific to networking and communication.
 
 - [network-protocols.txt](./network-protocols.txt) - Networking Protocols
 - [network-os.txt](./network-os.txt) - Networking Operating Systems
+
+## Cybersecurity
+
+Cybersecurity related terms.
+
+- [cybersecurity-terms.txt](./cybersecurity-terms.txt) - cybersecurity terms
