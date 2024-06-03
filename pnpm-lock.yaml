@@ -39,8 +39,8 @@ importers:
         specifier: workspace:*
         version: link:cspell-dict-file-checker
       eslint:
-        specifier: ^9.3.0
-        version: 9.3.0
+        specifier: ^9.4.0
+        version: 9.4.0
       generator-cspell-dicts:
         specifier: workspace:*
         version: link:generator-cspell-dicts
@@ -57,8 +57,8 @@ importers:
         specifier: 2.2.3
         version: 2.2.3
       prettier:
-        specifier: ^3.2.5
-        version: 3.2.5
+        specifier: ^3.3.0
+        version: 3.3.0
       scripts:
         specifier: link:scripts
         version: link:scripts
@@ -164,7 +164,7 @@ importers:
         version: link:../en_shared
       aoo-mozilla-en-dict:
         specifier: github:marcoagpinto/aoo-mozilla-en-dict
-        version: github.com/marcoagpinto/aoo-mozilla-en-dict/06d47a1e03c62b985e6519f6b7fcab26c6832422
+        version: github.com/marcoagpinto/aoo-mozilla-en-dict/ae7f87d4f83a1cf276ccac0beb93514c34d83cf5
 
   dictionaries/en_CA:
     devDependencies:
@@ -173,7 +173,7 @@ importers:
         version: link:../en_shared
       aoo-mozilla-en-dict:
         specifier: github:marcoagpinto/aoo-mozilla-en-dict
-        version: github.com/marcoagpinto/aoo-mozilla-en-dict/06d47a1e03c62b985e6519f6b7fcab26c6832422
+        version: github.com/marcoagpinto/aoo-mozilla-en-dict/ae7f87d4f83a1cf276ccac0beb93514c34d83cf5
 
   dictionaries/en_GB:
     devDependencies:
@@ -182,7 +182,7 @@ importers:
         version: link:../en_shared
       aoo-mozilla-en-dict:
         specifier: github:marcoagpinto/aoo-mozilla-en-dict
-        version: github.com/marcoagpinto/aoo-mozilla-en-dict/06d47a1e03c62b985e6519f6b7fcab26c6832422
+        version: github.com/marcoagpinto/aoo-mozilla-en-dict/ae7f87d4f83a1cf276ccac0beb93514c34d83cf5
 
   dictionaries/en_GB-MIT:
     devDependencies:
@@ -197,7 +197,7 @@ importers:
         version: link:../en_shared
       aoo-mozilla-en-dict:
         specifier: github:marcoagpinto/aoo-mozilla-en-dict
-        version: github.com/marcoagpinto/aoo-mozilla-en-dict/06d47a1e03c62b985e6519f6b7fcab26c6832422
+        version: github.com/marcoagpinto/aoo-mozilla-en-dict/ae7f87d4f83a1cf276ccac0beb93514c34d83cf5
 
   dictionaries/en_shared: {}
 
@@ -470,7 +470,7 @@ packages:
       '@cspell/dict-aws': 4.0.2
       '@cspell/dict-bash': 4.1.3
       '@cspell/dict-companies': 3.1.2
-      '@cspell/dict-cpp': 5.1.7
+      '@cspell/dict-cpp': 5.1.8
       '@cspell/dict-cryptocurrencies': 5.0.0
       '@cspell/dict-csharp': 4.0.2
       '@cspell/dict-css': 4.0.12
@@ -511,7 +511,7 @@ packages:
       '@cspell/dict-ruby': 5.0.2
       '@cspell/dict-rust': 4.0.3
       '@cspell/dict-scala': 5.0.2
-      '@cspell/dict-software-terms': 3.3.26
+      '@cspell/dict-software-terms': 3.4.0
       '@cspell/dict-sql': 2.1.3
       '@cspell/dict-svelte': 1.0.2
       '@cspell/dict-swift': 2.0.1
@@ -551,7 +551,7 @@ packages:
       gensequence: 7.0.0
       glob: 10.4.1
       hunspell-reader: 8.8.3
-      yaml: 2.4.2
+      yaml: 2.4.3
     transitivePeerDependencies:
       - typescript
     dev: true
@@ -572,8 +572,8 @@ packages:
   /@cspell/dict-companies@3.1.2:
     resolution: {integrity: sha512-OwR5i1xbYuJX7FtHQySmTy3iJtPV1rZQ3jFCxFGwrA1xRQ4rtRcDQ+sTXBCIAoJHkXa84f9J3zsngOKmMGyS/w==}
 
-  /@cspell/dict-cpp@5.1.7:
-    resolution: {integrity: sha512-qVuXo5rm9sySIrDwTfL62WF0BTiJXc4jAa53RvKV2f7wJL4LiJLNPpvY6oNU7G311VLf9QlTteRnlSulZLav/A==}
+  /@cspell/dict-cpp@5.1.8:
+    resolution: {integrity: sha512-X5uq0uRqN6cyOZOZV1YKi6g8sBtd0+VoF5NbDWURahGR8TRsiztH0sNqs0IB3X0dW4GakU+n9SXcuEmxynkSsw==}
 
   /@cspell/dict-cryptocurrencies@5.0.0:
     resolution: {integrity: sha512-Z4ARIw5+bvmShL+4ZrhDzGhnc9znaAGHOEMaB/GURdS/jdoreEDY34wdN0NtdLHDO5KO7GduZnZyqGdRoiSmYA==}
@@ -700,8 +700,8 @@ packages:
   /@cspell/dict-scala@5.0.2:
     resolution: {integrity: sha512-v97ClgidZt99JUm7OjhQugDHmhx4U8fcgunHvD/BsXWjXNj4cTr0m0YjofyZoL44WpICsNuFV9F/sv9OM5HUEw==}
 
-  /@cspell/dict-software-terms@3.3.26:
-    resolution: {integrity: sha512-+CfTYvg7D/7/Rytvk/EGtGT1wCvCs+DVm5XGQA/CWvP4RruTjh+fyYpoMsyjydO7TkpU4ic9eESmvbB0eVGR9w==}
+  /@cspell/dict-software-terms@3.4.0:
+    resolution: {integrity: sha512-RfrSrvKBaUZ1q3R6eksWe+SMUDNFzAthqXGJuZeylZBO3LdaYdhRDcqFzeMwksfCYjvBYeJ1Ady6NSpdXzESjQ==}
 
   /@cspell/dict-sql@2.1.3:
     resolution: {integrity: sha512-SEyTNKJrjqD6PAzZ9WpdSu6P7wgdNtGV2RV8Kpuw1x6bV+YsSptuClYG+JSdRExBTE6LwIe1bTklejUp3ZP8TQ==}
@@ -731,13 +731,13 @@ packages:
     resolution: {integrity: sha512-y/pL7Zex8iHQ54qDYvg9oCiCgfZ9DAUTOI/VtPFVC+42JqLx6YufYxJS2uAsFlfAXIPiRV8qnnG6BHImD1Ix6g==}
     engines: {node: '>=18'}
 
-  /@eslint-community/eslint-utils@4.4.0(eslint@9.3.0):
+  /@eslint-community/eslint-utils@4.4.0(eslint@9.4.0):
     resolution: {integrity: sha512-1/sA4dwrzBAyeUoQ6oxahHKmrZvsnLCg4RfxW3ZFGGmQkSNQPFNLV9CUEFQP1x9EYXHTo5p6xdhZM1Ne9p/AfA==}
     engines: {node: ^12.22.0 || ^14.17.0 || >=16.0.0}
     peerDependencies:
       eslint: ^6.0.0 || ^7.0.0 || >=8.0.0
     dependencies:
-      eslint: 9.3.0
+      eslint: 9.4.0
       eslint-visitor-keys: 3.4.3
     dev: true
 
@@ -746,12 +746,23 @@ packages:
     engines: {node: ^12.0.0 || ^14.0.0 || >=16.0.0}
     dev: true
 
+  /@eslint/config-array@0.15.1:
+    resolution: {integrity: sha512-K4gzNq+yymn/EVsXYmf+SBcBro8MTf+aXJZUphM96CdzUEr+ClGDvAbpmaEK+cGVigVXIgs9gNmvHAlrzzY5JQ==}
+    engines: {node: ^18.18.0 || ^20.9.0 || >=21.1.0}
+    dependencies:
+      '@eslint/object-schema': 2.1.3
+      debug: 4.3.5
+      minimatch: 3.1.2
+    transitivePeerDependencies:
+      - supports-color
+    dev: true
+
   /@eslint/eslintrc@3.1.0:
     resolution: {integrity: sha512-4Bfj15dVJdoy3RfZmmo86RK1Fwzn6SstsvK9JS+BaVKqC6QQQQyXekNaC+g+LKNgkQ+2VhGAzm6hO40AhMR3zQ==}
     engines: {node: ^18.18.0 || ^20.9.0 || >=21.1.0}
     dependencies:
       ajv: 6.12.6
-      debug: 4.3.4
+      debug: 4.3.5
       espree: 10.0.1
       globals: 14.0.0
       ignore: 5.3.1
@@ -763,29 +774,19 @@ packages:
       - supports-color
     dev: true
 
-  /@eslint/js@9.3.0:
-    resolution: {integrity: sha512-niBqk8iwv96+yuTwjM6bWg8ovzAPF9qkICsGtcoa5/dmqcEMfdwNAX7+/OHcJHc7wj7XqPxH98oAHytFYlw6Sw==}
+  /@eslint/js@9.4.0:
+    resolution: {integrity: sha512-fdI7VJjP3Rvc70lC4xkFXHB0fiPeojiL1PxVG6t1ZvXQrarj893PweuBTujxDUFk0Fxj4R7PIIAZ/aiiyZPZcg==}
     engines: {node: ^18.18.0 || ^20.9.0 || >=21.1.0}
     dev: true
 
-  /@humanwhocodes/config-array@0.13.0:
-    resolution: {integrity: sha512-DZLEEqFWQFiyK6h5YIeynKx7JlvCYWL0cImfSRXZ9l4Sg2efkFGTuFf6vzXjK1cq6IYkU+Eg/JizXw+TD2vRNw==}
-    engines: {node: '>=10.10.0'}
-    dependencies:
-      '@humanwhocodes/object-schema': 2.0.3
-      debug: 4.3.4
-      minimatch: 3.1.2
-    transitivePeerDependencies:
-      - supports-color
+  /@eslint/object-schema@2.1.3:
+    resolution: {integrity: sha512-HAbhAYKfsAC2EkTqve00ibWIZlaU74Z1EHwAjYr4PXF0YU2VEA1zSIKSSpKszRLRWwHzzRZXvK632u+uXzvsvw==}
+    engines: {node: ^18.18.0 || ^20.9.0 || >=21.1.0}
     dev: true
 
   /@humanwhocodes/module-importer@1.0.1:
     resolution: {integrity: sha512-bxveV4V8v5Yb4ncFTT3rPSgZBOpCkjfK0y4oVVVJwIuDVBRMDXrPyXRL988i5ap9m9bnyEEjWfm5WkBmtffLfA==}
     engines: {node: '>=12.22'}
-    dev: true
-
-  /@humanwhocodes/object-schema@2.0.3:
-    resolution: {integrity: sha512-93zYdMES/c1D69yZiKDBj0V24vqNzB/koF26KPaagAfd3P/4gUlh3Dys5ogAK+Exi9QyzlD8x/08Zt7wIKcDcA==}
     dev: true
 
   /@humanwhocodes/retry@0.3.0:
@@ -798,8 +799,8 @@ packages:
     engines: {node: '>=10.13.0'}
     dev: true
 
-  /@inquirer/figures@1.0.2:
-    resolution: {integrity: sha512-4F1MBwVr3c/m4bAUef6LgkvBfSjzwH+OfldgHqcuacWwSUetFebM2wi58WfG9uk1rR98U6GwLed4asLJbwdV5w==}
+  /@inquirer/figures@1.0.3:
+    resolution: {integrity: sha512-ErXXzENMH5pJt5/ssXV0DfWUZqly8nGzf0UcBV9xTnP+KyffE2mqyxIMBrZ8ijQck2nU0TQm40EQB53YreyWHw==}
     engines: {node: '>=18'}
 
   /@isaacs/cliui@8.0.2:
@@ -820,7 +821,7 @@ packages:
   /@kwsites/file-exists@1.1.1:
     resolution: {integrity: sha512-m9/5YGR18lIwxSFDwfE3oA7bWuq9kdau6ugN4H2rJeyhFQZcG9AgSHkQtSD15a8WvTgfz9aikZMrKPHvbpqFiw==}
     dependencies:
-      debug: 4.3.4
+      debug: 4.3.5
     transitivePeerDependencies:
       - supports-color
     dev: false
@@ -887,7 +888,7 @@ packages:
       fs-extra: 11.2.0
       glob-parent: 6.0.2
       globby: 14.0.1
-      inquirer: 9.2.22
+      inquirer: 9.2.23
       is-ci: 3.0.1
       json5: 2.2.3
       load-json-file: 7.0.1
@@ -1699,8 +1700,8 @@ packages:
       undici-types: 5.26.5
     dev: false
 
-  /@types/node@20.12.13:
-    resolution: {integrity: sha512-gBGeanV41c1L171rR7wjbMiEpEI/l5XFQdLLfhr/REwpgDy/4U8y89+i8kRiLzDyZdOkXh+cRaTetUnCYutoXA==}
+  /@types/node@20.14.0:
+    resolution: {integrity: sha512-5cHBxFGJx6L4s56Bubp4fglrEpmyJypsqI6RgzMfBHWUJQGWAAi8cWcgetEbZXHYXo9C2Fa4EEds/uSyS4cxmA==}
     dependencies:
       undici-types: 5.26.5
     dev: false
@@ -1715,7 +1716,7 @@ packages:
   /@types/through@0.0.33:
     resolution: {integrity: sha512-HsJ+z3QuETzP3cswwtzt2vEIiHBk/dCcHGhbmG5X3ecnwFD/lPrMpliGXxSCg03L9AhrdwA4Oz/qfspkDW+xGQ==}
     dependencies:
-      '@types/node': 20.12.13
+      '@types/node': 20.14.0
     dev: false
 
   /@types/unist@2.0.10:
@@ -1730,7 +1731,7 @@ packages:
     resolution: {integrity: sha512-Sr2fYMBUVGYq8kj3UthXFAu5UN6ZW+rYr4NACjZQJvHvj+c8lYv0CahmZ2P/r7iUkN44gGUBwqxZkrKXYPb7cw==}
     dependencies:
       '@types/expect': 1.20.4
-      '@types/node': 20.12.13
+      '@types/node': 20.14.0
     dev: false
 
   /@vercel/nft@0.26.5:
@@ -1763,7 +1764,7 @@ packages:
       '@types/inquirer': 9.0.7
       '@yeoman/types': 1.2.0(@types/inquirer@9.0.7)(mem-fs@4.1.0)
       chalk: 5.3.0
-      inquirer: 9.2.22
+      inquirer: 9.2.23
       log-symbols: 5.1.0
       ora: 6.3.1
       p-queue: 7.4.1
@@ -1882,7 +1883,7 @@ packages:
     resolution: {integrity: sha512-RZNwNclF7+MS/8bDg70amg32dyeZGZxiDuQmZxKLAlQjr3jGyLx+4Kkk58UO7D2QdgFIQCovuSuZESne6RG6XQ==}
     engines: {node: '>= 6.0.0'}
     dependencies:
-      debug: 4.3.4
+      debug: 4.3.5
     transitivePeerDependencies:
       - supports-color
 
@@ -1890,7 +1891,7 @@ packages:
     resolution: {integrity: sha512-H0TSyFNDMomMNJQBn8wFV5YC/2eJ+VXECwOadZJT554xP6cODZHPX3H9QMQECxvrgiSOP1pHjy1sMWQVYJOUOA==}
     engines: {node: '>= 14'}
     dependencies:
-      debug: 4.3.4
+      debug: 4.3.5
     transitivePeerDependencies:
       - supports-color
 
@@ -2035,7 +2036,7 @@ packages:
       common-path-prefix: 3.0.0
       concordance: 5.0.4
       currently-unhandled: 0.4.1
-      debug: 4.3.4
+      debug: 4.3.5
       emittery: 1.0.3
       figures: 6.1.0
       globby: 14.0.1
@@ -2061,6 +2062,10 @@ packages:
     transitivePeerDependencies:
       - encoding
       - supports-color
+
+  /b4a@1.6.6:
+    resolution: {integrity: sha512-5Tk1HLk6b6ctmjIkAcU/Ujv/1WqiDl0F0JdRCR80VsOcUlHcu7pWeWRlOqQLHfDEsVx9YH/aif5AG4ehoCtTmg==}
+    dev: false
 
   /bail@2.0.2:
     resolution: {integrity: sha512-0xO6mYd7JB2YesxDKplafRpsiOzPt9V02ddPCLbY1xYGPOX24NTyN50qnUxgCPcSoYMhKpAuBTjQoRZCAkUDRw==}
@@ -2625,7 +2630,7 @@ packages:
     dependencies:
       '@cspell/cspell-types': 8.8.3
       comment-json: 4.2.3
-      yaml: 2.4.2
+      yaml: 2.4.3
 
   /cspell-dictionary@8.8.3:
     resolution: {integrity: sha512-g2G3uh8JbuJKAYFdFQENcbTIrK9SJRXBiQ/t+ch+9I/t5HmuGOVe+wxKEM/0c9M2CRLpzJShBvttH9rnw4Yqfg==}
@@ -2757,8 +2762,8 @@ packages:
     engines: {node: '>=12.20'}
     dev: false
 
-  /debug@4.3.4:
-    resolution: {integrity: sha512-PRWFHuSU3eDtQJPvnNY7Jcket1j0t5OuOsFzPPzsekD52Zl8qUfFIPEiswXqIvHWGVHOgX+7G/vCNNhehwxfkQ==}
+  /debug@4.3.5:
+    resolution: {integrity: sha512-pt0bNEmneDIvdL1Xsd9oDQ/wrQRkXDT4AUWlNZNPKvW5x/jyO9VFXkJUP07vQ2upmw5PlaITaPKc31jK13V+jg==}
     engines: {node: '>=6.0'}
     peerDependencies:
       supports-color: '*'
@@ -3032,23 +3037,23 @@ packages:
     engines: {node: ^18.18.0 || ^20.9.0 || >=21.1.0}
     dev: true
 
-  /eslint@9.3.0:
-    resolution: {integrity: sha512-5Iv4CsZW030lpUqHBapdPo3MJetAPtejVW8B84GIcIIv8+ohFaddXsrn1Gn8uD9ijDb+kcYKFUVmC8qG8B2ORQ==}
+  /eslint@9.4.0:
+    resolution: {integrity: sha512-sjc7Y8cUD1IlwYcTS9qPSvGjAC8Ne9LctpxKKu3x/1IC9bnOg98Zy6GxEJUfr1NojMgVPlyANXYns8oE2c1TAA==}
     engines: {node: ^18.18.0 || ^20.9.0 || >=21.1.0}
     hasBin: true
     dependencies:
-      '@eslint-community/eslint-utils': 4.4.0(eslint@9.3.0)
+      '@eslint-community/eslint-utils': 4.4.0(eslint@9.4.0)
       '@eslint-community/regexpp': 4.10.0
+      '@eslint/config-array': 0.15.1
       '@eslint/eslintrc': 3.1.0
-      '@eslint/js': 9.3.0
-      '@humanwhocodes/config-array': 0.13.0
+      '@eslint/js': 9.4.0
       '@humanwhocodes/module-importer': 1.0.1
       '@humanwhocodes/retry': 0.3.0
       '@nodelib/fs.walk': 1.2.8
       ajv: 6.12.6
       chalk: 4.1.2
       cross-spawn: 7.0.3
-      debug: 4.3.4
+      debug: 4.3.5
       escape-string-regexp: 4.0.0
       eslint-scope: 8.0.1
       eslint-visitor-keys: 4.0.0
@@ -3653,7 +3658,7 @@ packages:
     engines: {node: '>= 14'}
     dependencies:
       agent-base: 7.1.1
-      debug: 4.3.4
+      debug: 4.3.5
     transitivePeerDependencies:
       - supports-color
 
@@ -3670,7 +3675,7 @@ packages:
     engines: {node: '>= 6'}
     dependencies:
       agent-base: 6.0.2
-      debug: 4.3.4
+      debug: 4.3.5
     transitivePeerDependencies:
       - supports-color
 
@@ -3679,7 +3684,7 @@ packages:
     engines: {node: '>= 14'}
     dependencies:
       agent-base: 7.1.1
-      debug: 4.3.4
+      debug: 4.3.5
     transitivePeerDependencies:
       - supports-color
 
@@ -3817,11 +3822,11 @@ packages:
       - supports-color
     dev: true
 
-  /inquirer@9.2.22:
-    resolution: {integrity: sha512-SqLLa/Oe5rZUagTR9z+Zd6izyatHglbmbvVofo1KzuVB54YHleWzeHNLoR7FOICGOeQSqeLh1cordb3MzhGcEw==}
+  /inquirer@9.2.23:
+    resolution: {integrity: sha512-kod5s+FBPIDM2xiy9fu+6wdU/SkK5le5GS9lh4FEBjBHqiMgD9lLFbCbuqFNAjNL2ZOy9Wd9F694IOzN9pZHBA==}
     engines: {node: '>=18'}
     dependencies:
-      '@inquirer/figures': 1.0.2
+      '@inquirer/figures': 1.0.3
       '@ljharb/through': 2.3.13
       ansi-escapes: 4.3.2
       chalk: 5.3.0
@@ -4490,7 +4495,7 @@ packages:
     resolution: {integrity: sha512-lOB7haBbxO43eZ/++GA+jBMHQ9DNJeliMt35jNutzCfAgEg5gblFCItnzsss8Z4t81bB5jsz77bptqelHQn0Qw==}
     engines: {node: '>=18.0.0'}
     dependencies:
-      '@types/node': 20.12.13
+      '@types/node': 20.14.0
       '@types/vinyl': 2.0.12
       vinyl: 3.0.0
       vinyl-file: 5.0.0
@@ -4827,7 +4832,7 @@ packages:
     resolution: {integrity: sha512-o/sd0nMof8kYff+TqcDx3VSrgBTcZpSvYcAHIfHhv5VAuNmisCxjhx6YmxS8PFEpb9z5WKWKPdzf0jM23ro3RQ==}
     dependencies:
       '@types/debug': 4.1.12
-      debug: 4.3.4
+      debug: 4.3.5
       decode-named-character-reference: 1.0.2
       devlop: 1.1.0
       micromark-core-commonmark: 2.0.1
@@ -5604,8 +5609,8 @@ packages:
     engines: {node: '>= 0.8.0'}
     dev: true
 
-  /prettier@3.2.5:
-    resolution: {integrity: sha512-3/GWa9aOC0YeD7LUfvOG2NiDyhOWRvt1k+rcKhOuYnMY24iiCphgneUfJDyFXd6rZCAnuLBv6UeAULtrhT/F4A==}
+  /prettier@3.3.0:
+    resolution: {integrity: sha512-J9odKxERhCQ10OC2yb93583f6UnYutOeiV5i0zEDS7UGTdUt0u+y8erxl3lBKvwo/JHyyoEdXjwp4dke9oyZ/g==}
     engines: {node: '>=14'}
     hasBin: true
     dev: true
@@ -6038,7 +6043,7 @@ packages:
     dependencies:
       '@kwsites/file-exists': 1.1.1
       '@kwsites/promise-deferred': 1.1.1
-      debug: 4.3.4
+      debug: 4.3.5
     transitivePeerDependencies:
       - supports-color
     dev: false
@@ -6067,7 +6072,7 @@ packages:
     engines: {node: '>= 14'}
     dependencies:
       agent-base: 7.1.1
-      debug: 4.3.4
+      debug: 4.3.5
       socks: 2.8.3
     transitivePeerDependencies:
       - supports-color
@@ -6138,11 +6143,12 @@ packages:
       bl: 5.1.0
     dev: false
 
-  /streamx@2.16.1:
-    resolution: {integrity: sha512-m9QYj6WygWyWa3H1YY69amr4nVgy61xfjys7xO7kviL5rfIEc2naf+ewFiOA+aEJD7y0JO3h2GoiUv4TDwEGzQ==}
+  /streamx@2.18.0:
+    resolution: {integrity: sha512-LLUC1TWdjVdn1weXGcSxyTR3T4+acB6tVGXT95y0nGbca4t4o/ng1wKAGTljm9VicuCVLvRlqFYXYy5GwgM7sQ==}
     dependencies:
       fast-fifo: 1.3.2
       queue-tick: 1.0.1
+      text-decoder: 1.1.0
     optionalDependencies:
       bare-events: 2.3.1
     dev: false
@@ -6286,12 +6292,18 @@ packages:
   /teex@1.0.1:
     resolution: {integrity: sha512-eYE6iEI62Ni1H8oIa7KlDU6uQBtqr4Eajni3wX7rpfXD8ysFx8z0+dri+KWEPWpBsxXfxu58x/0jvTVT1ekOSg==}
     dependencies:
-      streamx: 2.16.1
+      streamx: 2.18.0
     dev: false
 
   /temp-dir@3.0.0:
     resolution: {integrity: sha512-nHc6S/bwIilKHNRgK/3jlhDoIHcp45YgyiwcAk46Tr0LfEqGBVpmiAyuiuxeVE44m3mXnEeVhaipLOEWmH+Njw==}
     engines: {node: '>=14.16'}
+
+  /text-decoder@1.1.0:
+    resolution: {integrity: sha512-TmLJNj6UgX8xcUZo4UDStGQtDiTzF7BzWlzn9g7UWrjkpHr5uJTK1ld16wZ3LXb2vb6jH8qU89dW5whuMdXYdw==}
+    dependencies:
+      b4a: 1.6.6
+    dev: false
 
   /text-extensions@2.4.0:
     resolution: {integrity: sha512-te/NtwBwfiNRLf9Ijqx3T0nlqZiQ2XrrtBvu+cLL8ZRrGkO0NHTug8MYFKyoSrv/sHTaSKfilUkizV6XhxMJ3g==}
@@ -6346,7 +6358,7 @@ packages:
     engines: {node: ^16.14.0 || >=18.0.0}
     dependencies:
       '@tufjs/models': 2.0.1
-      debug: 4.3.4
+      debug: 4.3.5
       make-fetch-happen: 13.0.1
     transitivePeerDependencies:
       - supports-color
@@ -6724,8 +6736,8 @@ packages:
   /yallist@4.0.0:
     resolution: {integrity: sha512-3wdGidZyq5PB084XLES5TpOSRA3wjXAlIWMhum2kRcv/41Sn2emQ0dycQW4uZXLejwKvg6EsvbdlVL+FYEct7A==}
 
-  /yaml@2.4.2:
-    resolution: {integrity: sha512-B3VqDZ+JAg1nZpaEmWtTXUlBneoGx6CPM9b0TENK6aoSu5t73dItudwdgmi6tHlIZZId4dZ9skcAQ2UbcyAeVA==}
+  /yaml@2.4.3:
+    resolution: {integrity: sha512-sntgmxj8o7DE7g/Qi60cqpLBA3HG3STcDA0kO+WfB05jEKhZMbY7umNm2rBpQvsmZ16/lPXCJGW2672dgOUkrg==}
     engines: {node: '>= 14'}
     hasBin: true
 
@@ -6769,7 +6781,7 @@ packages:
       arrify: 3.0.0
       chalk: 5.3.0
       commander: 11.1.0
-      debug: 4.3.4
+      debug: 4.3.5
       execa: 8.0.1
       fly-import: 0.4.0
       globby: 14.0.1
@@ -6803,7 +6815,7 @@ packages:
       '@yeoman/namespace': 1.0.0
       '@yeoman/types': 1.2.0(@types/inquirer@9.0.7)(mem-fs@4.1.0)
       chalk: 5.3.0
-      debug: 4.3.4
+      debug: 4.3.5
       execa: 8.0.1
       github-username: 7.0.0
       json-schema: 0.4.0
@@ -6864,8 +6876,8 @@ packages:
     version: 0.0.0
     dev: true
 
-  github.com/marcoagpinto/aoo-mozilla-en-dict/06d47a1e03c62b985e6519f6b7fcab26c6832422:
-    resolution: {tarball: https://codeload.github.com/marcoagpinto/aoo-mozilla-en-dict/tar.gz/06d47a1e03c62b985e6519f6b7fcab26c6832422}
+  github.com/marcoagpinto/aoo-mozilla-en-dict/ae7f87d4f83a1cf276ccac0beb93514c34d83cf5:
+    resolution: {tarball: https://codeload.github.com/marcoagpinto/aoo-mozilla-en-dict/tar.gz/ae7f87d4f83a1cf276ccac0beb93514c34d83cf5}
     name: aoo-mozilla-en-dict
     version: 0.0.0
     dev: true
