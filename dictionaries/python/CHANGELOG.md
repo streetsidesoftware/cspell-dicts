@@ -3,6 +3,19 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+## [4.2.0](https://github.com/streetsidesoftware/cspell-dicts/compare/@cspell/dict-python@4.1.11...@cspell/dict-python@4.2.0) (2024-06-06)
+
+
+### Features
+
+* reduce the size of the python dictionary ([#3259](https://github.com/streetsidesoftware/cspell-dicts/issues/3259)) ([a9c1302](https://github.com/streetsidesoftware/cspell-dicts/commit/a9c1302ab3d27b29a8eeb2e019cbc7364ccd1192))
+
+
+### Updates and Bug Fixes
+
+* Issue [#972](https://github.com/streetsidesoftware/cspell-dicts/issues/972): Add common python package names to exception list ([#3256](https://github.com/streetsidesoftware/cspell-dicts/issues/3256)) ([0918dc3](https://github.com/streetsidesoftware/cspell-dicts/commit/0918dc3f4a6ae9b339eeab2900eb7b7df6a5c647))
+* Workflow Bot -- Build Dictionaries ([#3258](https://github.com/streetsidesoftware/cspell-dicts/issues/3258)) ([4e49a5d](https://github.com/streetsidesoftware/cspell-dicts/commit/4e49a5daa2dd862b70cb8dc0de9bcdee9a5a85ac))
+
 ## [4.1.11](https://github.com/streetsidesoftware/cspell-dicts/compare/@cspell/dict-python@4.1.10...@cspell/dict-python@4.1.11) (2023-12-25)
 
 
