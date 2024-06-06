@@ -1,5 +1,20 @@
 # Release Notes
 
+## [26.3.0](https://github.com/streetsidesoftware/cspell-dicts/compare/cspell-dicts@26.2.1...cspell-dicts@26.3.0) (2024-06-06)
+
+
+### Features
+
+* reduce the size of the python dictionary ([#3259](https://github.com/streetsidesoftware/cspell-dicts/issues/3259)) ([a9c1302](https://github.com/streetsidesoftware/cspell-dicts/commit/a9c1302ab3d27b29a8eeb2e019cbc7364ccd1192))
+
+
+### Updates and Bug Fixes
+
+* Issue [#972](https://github.com/streetsidesoftware/cspell-dicts/issues/972): Add common python package names to exception list ([#3256](https://github.com/streetsidesoftware/cspell-dicts/issues/3256)) ([0918dc3](https://github.com/streetsidesoftware/cspell-dicts/commit/0918dc3f4a6ae9b339eeab2900eb7b7df6a5c647))
+* **software-tools:** add upstash ([#3255](https://github.com/streetsidesoftware/cspell-dicts/issues/3255)) ([3d609fd](https://github.com/streetsidesoftware/cspell-dicts/commit/3d609fd2a0a2d7c899bd0c480d4393ba446aa046))
+* Workflow Bot -- Build Dictionaries ([#3252](https://github.com/streetsidesoftware/cspell-dicts/issues/3252)) ([4536860](https://github.com/streetsidesoftware/cspell-dicts/commit/4536860c8f54444794eaa0c28c57da9dbd2e65f3))
+* Workflow Bot -- Build Dictionaries ([#3258](https://github.com/streetsidesoftware/cspell-dicts/issues/3258)) ([4e49a5d](https://github.com/streetsidesoftware/cspell-dicts/commit/4e49a5daa2dd862b70cb8dc0de9bcdee9a5a85ac))
+
 ## [26.2.1](https://github.com/streetsidesoftware/cspell-dicts/compare/cspell-dicts@26.2.0...cspell-dicts@26.2.1) (2024-05-31)
 
 
