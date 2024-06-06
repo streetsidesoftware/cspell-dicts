@@ -1,5 +1,13 @@
 # Release Notes
 
+## [26.3.1](https://github.com/streetsidesoftware/cspell-dicts/compare/cspell-dicts@26.3.0...cspell-dicts@26.3.1) (2024-06-06)
+
+
+### Updates and Bug Fixes
+
+* Add back some legacy terms ([#3261](https://github.com/streetsidesoftware/cspell-dicts/issues/3261)) ([346ddf8](https://github.com/streetsidesoftware/cspell-dicts/commit/346ddf8d4e0e3b4f89fcf75ea85a765f01c17a5e))
+* Workflow Bot -- Build Dictionaries ([#3263](https://github.com/streetsidesoftware/cspell-dicts/issues/3263)) ([9ade3b6](https://github.com/streetsidesoftware/cspell-dicts/commit/9ade3b6d1f55bbbd6d9a239c5ecf04c247df0443))
+
 ## [26.3.0](https://github.com/streetsidesoftware/cspell-dicts/compare/cspell-dicts@26.2.1...cspell-dicts@26.3.0) (2024-06-06)
 
 
