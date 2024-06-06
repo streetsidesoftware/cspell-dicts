@@ -38,6 +38,7 @@ targets:
     format: plaintext
     targetDirectory: './dict'
     compress: false
+    sort: true
 
   - name: python-common
     # "build-common": "cspell-tools-cli compile \"src/common/*.txt\" --keep-raw-case --merge python-common -o .",
