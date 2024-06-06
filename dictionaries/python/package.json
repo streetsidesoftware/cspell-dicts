@@ -13,7 +13,7 @@
   "scripts": {
     "build": "pnpm cspell-tools-cli build",
     "test-dictionary": "cspell -c ./cspell-ext.json --locale=en --languageId=python \"src/python/py*.txt\"",
-    "test-samples": "cspell -c ./cspell-ext.json \"samples/**/*.py\"",
+    "test-samples": "cspell -c ./cspell-ext.json \"samples/**/*{.py,.txt}\"",
     "test": "pnpm run test-dictionary && pnpm run test-samples",
     "update-python-lib": "./scripts/fetch-python.sh",
     "prepublishOnly": "echo pre-publish",
