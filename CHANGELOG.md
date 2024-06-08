@@ -1,5 +1,15 @@
 # Release Notes
 
+## [26.3.2](https://github.com/streetsidesoftware/cspell-dicts/compare/cspell-dicts@26.3.1...cspell-dicts@26.3.2) (2024-06-08)
+
+
+### Updates and Bug Fixes
+
+* Update java dictionary ([#3271](https://github.com/streetsidesoftware/cspell-dicts/issues/3271)) ([bfba2af](https://github.com/streetsidesoftware/cspell-dicts/commit/bfba2af9c35f791154b84c202fbd71759d419cef))
+* Update PHP dictionary ([#3272](https://github.com/streetsidesoftware/cspell-dicts/issues/3272)) ([8a81c98](https://github.com/streetsidesoftware/cspell-dicts/commit/8a81c981c0a5634e512e226df373aa9d52fbe51d))
+* Update software-terms dictionary ([#3273](https://github.com/streetsidesoftware/cspell-dicts/issues/3273)) ([c85a832](https://github.com/streetsidesoftware/cspell-dicts/commit/c85a832fc8cb7ab5a737ce5ff711d4f0fbc06dd0))
+* Workflow Bot -- Build Dictionaries ([#3275](https://github.com/streetsidesoftware/cspell-dicts/issues/3275)) ([7569e95](https://github.com/streetsidesoftware/cspell-dicts/commit/7569e956420a7aafa17467b65c0c8a3ab69751f7))
+
 ## [26.3.1](https://github.com/streetsidesoftware/cspell-dicts/compare/cspell-dicts@26.3.0...cspell-dicts@26.3.1) (2024-06-06)
 
 
