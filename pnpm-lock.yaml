@@ -12,17 +12,17 @@ importers:
         specifier: ^8.8.4
         version: 8.8.4
       '@lerna-lite/cli':
-        specifier: ^3.5.0
-        version: 3.5.0(@lerna-lite/exec@3.5.0)(@lerna-lite/publish@3.5.0)(@lerna-lite/run@3.5.0)(@lerna-lite/version@3.5.0)
+        specifier: ^3.5.1
+        version: 3.5.1(@lerna-lite/exec@3.5.1)(@lerna-lite/publish@3.5.1)(@lerna-lite/run@3.5.1)(@lerna-lite/version@3.5.1)
       '@lerna-lite/exec':
-        specifier: ^3.5.0
-        version: 3.5.0(@lerna-lite/publish@3.5.0)(@lerna-lite/run@3.5.0)
+        specifier: ^3.5.1
+        version: 3.5.1(@lerna-lite/publish@3.5.1)(@lerna-lite/run@3.5.1)
       '@lerna-lite/publish':
-        specifier: ^3.5.0
-        version: 3.5.0(@lerna-lite/exec@3.5.0)(@lerna-lite/run@3.5.0)
+        specifier: ^3.5.1
+        version: 3.5.1(@lerna-lite/exec@3.5.1)(@lerna-lite/run@3.5.1)
       '@lerna-lite/run':
-        specifier: ^3.5.0
-        version: 3.5.0(@lerna-lite/exec@3.5.0)(@lerna-lite/publish@3.5.0)
+        specifier: ^3.5.1
+        version: 3.5.1(@lerna-lite/exec@3.5.1)(@lerna-lite/publish@3.5.1)
       ava:
         specifier: ^6.1.3
         version: 6.1.3
@@ -45,8 +45,8 @@ importers:
         specifier: workspace:*
         version: link:generator-cspell-dicts
       globals:
-        specifier: ^15.3.0
-        version: 15.3.0
+        specifier: ^15.4.0
+        version: 15.4.0
       hunspell-reader:
         specifier: ^8.8.4
         version: 8.8.4
@@ -506,12 +506,12 @@ packages:
       '@cspell/dict-php': 4.0.7
       '@cspell/dict-powershell': 5.0.4
       '@cspell/dict-public-licenses': 2.0.7
-      '@cspell/dict-python': 4.1.11
+      '@cspell/dict-python': 4.2.1
       '@cspell/dict-r': 2.0.1
       '@cspell/dict-ruby': 5.0.2
       '@cspell/dict-rust': 4.0.3
       '@cspell/dict-scala': 5.0.2
-      '@cspell/dict-software-terms': 3.4.1
+      '@cspell/dict-software-terms': 3.4.2
       '@cspell/dict-sql': 2.1.3
       '@cspell/dict-svelte': 1.0.2
       '@cspell/dict-swift': 2.0.1
@@ -587,8 +587,8 @@ packages:
   /@cspell/dict-dart@2.0.3:
     resolution: {integrity: sha512-cLkwo1KT5CJY5N5RJVHks2genFkNCl/WLfj+0fFjqNR+tk3tBI1LY7ldr9piCtSFSm4x9pO1x6IV3kRUY1lLiw==}
 
-  /@cspell/dict-data-science@1.0.11:
-    resolution: {integrity: sha512-TaHAZRVe0Zlcc3C23StZqqbzC0NrodRwoSAc8dis+5qLeLLnOCtagYQeROQvDlcDg3X/VVEO9Whh4W/z4PAmYQ==}
+  /@cspell/dict-data-science@2.0.1:
+    resolution: {integrity: sha512-xeutkzK0eBe+LFXOFU2kJeAYO6IuFUc1g7iRLr7HeCmlC4rsdGclwGHh61KmttL3+YHQytYStxaRBdGAXWC8Lw==}
 
   /@cspell/dict-django@4.1.0:
     resolution: {integrity: sha512-bKJ4gPyrf+1c78Z0Oc4trEB9MuhcB+Yg+uTTWsvhY6O2ncFYbB/LbEZfqhfmmuK/XJJixXfI1laF2zicyf+l0w==}
@@ -683,10 +683,10 @@ packages:
   /@cspell/dict-public-licenses@2.0.7:
     resolution: {integrity: sha512-KlBXuGcN3LE7tQi/GEqKiDewWGGuopiAD0zRK1QilOx5Co8XAvs044gk4MNIQftc8r0nHeUI+irJKLGcR36DIQ==}
 
-  /@cspell/dict-python@4.1.11:
-    resolution: {integrity: sha512-XG+v3PumfzUW38huSbfT15Vqt3ihNb462ulfXifpQllPok5OWynhszCLCRQjQReV+dgz784ST4ggRxW452/kVg==}
+  /@cspell/dict-python@4.2.1:
+    resolution: {integrity: sha512-9X2jRgyM0cxBoFQRo4Zc8oacyWnXi+0/bMI5FGibZNZV4y/o9UoFEr6agjU260/cXHTjIdkX233nN7eb7dtyRg==}
     dependencies:
-      '@cspell/dict-data-science': 1.0.11
+      '@cspell/dict-data-science': 2.0.1
 
   /@cspell/dict-r@2.0.1:
     resolution: {integrity: sha512-KCmKaeYMLm2Ip79mlYPc8p+B2uzwBp4KMkzeLd5E6jUlCL93Y5Nvq68wV5fRLDRTf7N1LvofkVFWfDcednFOgA==}
@@ -700,8 +700,8 @@ packages:
   /@cspell/dict-scala@5.0.2:
     resolution: {integrity: sha512-v97ClgidZt99JUm7OjhQugDHmhx4U8fcgunHvD/BsXWjXNj4cTr0m0YjofyZoL44WpICsNuFV9F/sv9OM5HUEw==}
 
-  /@cspell/dict-software-terms@3.4.1:
-    resolution: {integrity: sha512-JgNHVdWEUhZKCYBiAjsLojkw8WhvsTXyk/IfFby0Lzbl+/AoJvL/XZqr0pvqfpBjbv7pwtnjahrbGxPRCOV+gA==}
+  /@cspell/dict-software-terms@3.4.2:
+    resolution: {integrity: sha512-mdnTfWSWQVGdth7OTlX4WsNsHGBiBEzIEs8/rmmq//IDbjBYpIdbA4d/pZRhfUF0CpXkQdytccyg0EHtmN4+7w==}
 
   /@cspell/dict-sql@2.1.3:
     resolution: {integrity: sha512-SEyTNKJrjqD6PAzZ9WpdSu6P7wgdNtGV2RV8Kpuw1x6bV+YsSptuClYG+JSdRExBTE6LwIe1bTklejUp3ZP8TQ==}
@@ -830,8 +830,8 @@ packages:
     resolution: {integrity: sha512-GaHYm+c0O9MjZRu0ongGBRbinu8gVAMd2UZjji6jVmqKtZluZnptXGWhz1E8j8D2HJ3f/yMxKAUC0b+57wncIw==}
     dev: false
 
-  /@lerna-lite/cli@3.5.0(@lerna-lite/exec@3.5.0)(@lerna-lite/publish@3.5.0)(@lerna-lite/run@3.5.0)(@lerna-lite/version@3.5.0):
-    resolution: {integrity: sha512-7+3A9znjBqpReSMB7jU15wS0cp6jLlHgOh2H6WXecpDUdyKJOj6ULv0UZlWX7gsPG3SYc1U9EKPWBV413sr72A==}
+  /@lerna-lite/cli@3.5.1(@lerna-lite/exec@3.5.1)(@lerna-lite/publish@3.5.1)(@lerna-lite/run@3.5.1)(@lerna-lite/version@3.5.1):
+    resolution: {integrity: sha512-kWhjomm8iwI6MxC/Au7Mv9pztOm4QVEKR72+YQ59qfP1sVwIX6jlWNaBmszXonry34v226GDs6gDE31Vl3QHoQ==}
     engines: {node: ^18.0.0 || >=20.0.0}
     hasBin: true
     peerDependencies:
@@ -855,12 +855,12 @@ packages:
       '@lerna-lite/watch':
         optional: true
     dependencies:
-      '@lerna-lite/core': 3.5.0
-      '@lerna-lite/exec': 3.5.0(@lerna-lite/publish@3.5.0)(@lerna-lite/run@3.5.0)
-      '@lerna-lite/init': 3.5.0
-      '@lerna-lite/publish': 3.5.0(@lerna-lite/exec@3.5.0)(@lerna-lite/run@3.5.0)
-      '@lerna-lite/run': 3.5.0(@lerna-lite/exec@3.5.0)(@lerna-lite/publish@3.5.0)
-      '@lerna-lite/version': 3.5.0(@lerna-lite/exec@3.5.0)(@lerna-lite/publish@3.5.0)(@lerna-lite/run@3.5.0)
+      '@lerna-lite/core': 3.5.1
+      '@lerna-lite/exec': 3.5.1(@lerna-lite/publish@3.5.1)(@lerna-lite/run@3.5.1)
+      '@lerna-lite/init': 3.5.1
+      '@lerna-lite/publish': 3.5.1(@lerna-lite/exec@3.5.1)(@lerna-lite/run@3.5.1)
+      '@lerna-lite/run': 3.5.1(@lerna-lite/exec@3.5.1)(@lerna-lite/publish@3.5.1)
+      '@lerna-lite/version': 3.5.1(@lerna-lite/exec@3.5.1)(@lerna-lite/publish@3.5.1)(@lerna-lite/run@3.5.1)
       dedent: 1.5.3
       dotenv: 16.4.5
       import-local: 3.1.0
@@ -874,8 +874,8 @@ packages:
       - typescript
     dev: true
 
-  /@lerna-lite/core@3.5.0:
-    resolution: {integrity: sha512-TFBVpPN0OjY8RR1JyFzVsdh535ZXtCaSf10fieyv9YiWFHykullm+UM/atiEpIr4LShkYf05pHBECOJ2+f+JEA==}
+  /@lerna-lite/core@3.5.1:
+    resolution: {integrity: sha512-cPOcwlEETXyraa2A0202B4GKYdlHsJ7i2YGzPY5PYrtV7AkjpETqKbQhhWzuQWXFJpdIuzuowmMeX/6XcVtorA==}
     engines: {node: ^18.0.0 || >=20.0.0}
     dependencies:
       '@npmcli/run-script': 8.1.0
@@ -911,14 +911,14 @@ packages:
       - typescript
     dev: true
 
-  /@lerna-lite/exec@3.5.0(@lerna-lite/publish@3.5.0)(@lerna-lite/run@3.5.0):
-    resolution: {integrity: sha512-h5Hd2lLLxozrTPxdamYHC2IliHVPA8UnGbE8i12WgnZR+coXu4CIjSQWJnGL+sL3SHBIbSkbBLcIxvngpUc1Pw==}
+  /@lerna-lite/exec@3.5.1(@lerna-lite/publish@3.5.1)(@lerna-lite/run@3.5.1):
+    resolution: {integrity: sha512-tmNuJ1SCQmfL90YM8jaPM2a5Tzh7D5AZa2/eZ/YZuxefUhVObi0fWXwe/iWhJyvXqdJXpTBxtKT/rYfKRLuBZw==}
     engines: {node: ^18.0.0 || >=20.0.0}
     dependencies:
-      '@lerna-lite/cli': 3.5.0(@lerna-lite/exec@3.5.0)(@lerna-lite/publish@3.5.0)(@lerna-lite/run@3.5.0)(@lerna-lite/version@3.5.0)
-      '@lerna-lite/core': 3.5.0
-      '@lerna-lite/filter-packages': 3.5.0
-      '@lerna-lite/profiler': 3.5.0
+      '@lerna-lite/cli': 3.5.1(@lerna-lite/exec@3.5.1)(@lerna-lite/publish@3.5.1)(@lerna-lite/run@3.5.1)(@lerna-lite/version@3.5.1)
+      '@lerna-lite/core': 3.5.1
+      '@lerna-lite/filter-packages': 3.5.1
+      '@lerna-lite/profiler': 3.5.1
       chalk: 5.3.0
       dotenv: 16.4.5
       npmlog: 7.0.1
@@ -935,11 +935,11 @@ packages:
       - typescript
     dev: true
 
-  /@lerna-lite/filter-packages@3.5.0:
-    resolution: {integrity: sha512-HFI9eOvspa+5Q+62gP+IiB4q2BglyQSgIpKMAKMAcUNoRZH1OmvWwYZXF711hnIghem8vRxqmQo1uVvxKcM/aQ==}
+  /@lerna-lite/filter-packages@3.5.1:
+    resolution: {integrity: sha512-sYRoLB1kAiXP5yz/qPDJvna2ue6LYYYDJTxY62b40mcXcpzXd9VvvR/ECOi+3Gpomfs0qcr5eTusBZj4qDM5LQ==}
     engines: {node: ^18.0.0 || >=20.0.0}
     dependencies:
-      '@lerna-lite/core': 3.5.0
+      '@lerna-lite/core': 3.5.1
       multimatch: 7.0.0
       npmlog: 7.0.1
     transitivePeerDependencies:
@@ -949,11 +949,11 @@ packages:
       - typescript
     dev: true
 
-  /@lerna-lite/init@3.5.0:
-    resolution: {integrity: sha512-kd51wBShaYRq8Y6uVWAeBF7AsTojUsusaQmfyE8af5AcujQYzHoF/JEoM9v8gBKagXlSU24XdHBKH+QxhxclcQ==}
+  /@lerna-lite/init@3.5.1:
+    resolution: {integrity: sha512-N7p9ByH4OE/UaWUzz7BL51pnkNxU4tQetEMbn/4QFTh0EfFYP4OXF3zq2Y5Egs8l1Mx/iso9Ly68VHaE8aKPeQ==}
     engines: {node: ^18.0.0 || >=20.0.0}
     dependencies:
-      '@lerna-lite/core': 3.5.0
+      '@lerna-lite/core': 3.5.1
       fs-extra: 11.2.0
       p-map: 7.0.2
       write-json-file: 5.0.0
@@ -964,11 +964,11 @@ packages:
       - typescript
     dev: true
 
-  /@lerna-lite/profiler@3.5.0:
-    resolution: {integrity: sha512-wIM59JpXa1076SZS45KWDuxr5pF63iTv8YVWAPVaLZ3a7glwhs4yPoetJSHsyDkLufUAvaMZVgVccCrpve1PAQ==}
+  /@lerna-lite/profiler@3.5.1:
+    resolution: {integrity: sha512-4vh68Ap2wUNEWtBVPTJLsfjwmSaGu95anUqir0P52Sn67uoy+CelmAaSpKEAE0trbsPp0fKumeotPhzEhCNo3A==}
     engines: {node: ^18.0.0 || >=20.0.0}
     dependencies:
-      '@lerna-lite/core': 3.5.0
+      '@lerna-lite/core': 3.5.1
       fs-extra: 11.2.0
       npmlog: 7.0.1
       upath: 2.0.1
@@ -979,13 +979,13 @@ packages:
       - typescript
     dev: true
 
-  /@lerna-lite/publish@3.5.0(@lerna-lite/exec@3.5.0)(@lerna-lite/run@3.5.0):
-    resolution: {integrity: sha512-c+BsBAkIVWhtqCD/SeL6ikXLEGMI1m3WsbRJlBDmbM0Z/jPhc8yIHgTcjkBRM3hvhMdDL14lNsuLyAl8x1zZ8w==}
+  /@lerna-lite/publish@3.5.1(@lerna-lite/exec@3.5.1)(@lerna-lite/run@3.5.1):
+    resolution: {integrity: sha512-odDrME24EeKiNeLARn8aW79MJ0gEZlBevS5qvtQ189Gg1T0PbpR7iQeskRfwAFmIPfKJWdWMa6Q9vdbYG1FoEw==}
     engines: {node: ^18.0.0 || >=20.0.0}
     dependencies:
-      '@lerna-lite/cli': 3.5.0(@lerna-lite/exec@3.5.0)(@lerna-lite/publish@3.5.0)(@lerna-lite/run@3.5.0)(@lerna-lite/version@3.5.0)
-      '@lerna-lite/core': 3.5.0
-      '@lerna-lite/version': 3.5.0(@lerna-lite/exec@3.5.0)(@lerna-lite/publish@3.5.0)(@lerna-lite/run@3.5.0)
+      '@lerna-lite/cli': 3.5.1(@lerna-lite/exec@3.5.1)(@lerna-lite/publish@3.5.1)(@lerna-lite/run@3.5.1)(@lerna-lite/version@3.5.1)
+      '@lerna-lite/core': 3.5.1
+      '@lerna-lite/version': 3.5.1(@lerna-lite/exec@3.5.1)(@lerna-lite/publish@3.5.1)(@lerna-lite/run@3.5.1)
       byte-size: 8.1.1
       chalk: 5.3.0
       columnify: 1.6.0
@@ -1019,14 +1019,14 @@ packages:
       - typescript
     dev: true
 
-  /@lerna-lite/run@3.5.0(@lerna-lite/exec@3.5.0)(@lerna-lite/publish@3.5.0):
-    resolution: {integrity: sha512-W12c9Vhjn+hlSa/dIlAgb+ntjyMT73dPRp7OgiGTF2X+9aw6trZwjqPaTa2zLFIxo1WQyNX8NwRCPkscZ2wB6A==}
+  /@lerna-lite/run@3.5.1(@lerna-lite/exec@3.5.1)(@lerna-lite/publish@3.5.1):
+    resolution: {integrity: sha512-qy1h83h9UBiaqPSap23oJaVmkhME4ePMT5eOwN1sj+BLfUOKghVEYc/ZsMgNzFq0NspLYyFnUMbp8ZeieSKRDg==}
     engines: {node: ^18.0.0 || >=20.0.0}
     dependencies:
-      '@lerna-lite/cli': 3.5.0(@lerna-lite/exec@3.5.0)(@lerna-lite/publish@3.5.0)(@lerna-lite/run@3.5.0)(@lerna-lite/version@3.5.0)
-      '@lerna-lite/core': 3.5.0
-      '@lerna-lite/filter-packages': 3.5.0
-      '@lerna-lite/profiler': 3.5.0
+      '@lerna-lite/cli': 3.5.1(@lerna-lite/exec@3.5.1)(@lerna-lite/publish@3.5.1)(@lerna-lite/run@3.5.1)(@lerna-lite/version@3.5.1)
+      '@lerna-lite/core': 3.5.1
+      '@lerna-lite/filter-packages': 3.5.1
+      '@lerna-lite/profiler': 3.5.1
       chalk: 5.3.0
       fs-extra: 11.2.0
       npmlog: 7.0.1
@@ -1043,12 +1043,12 @@ packages:
       - typescript
     dev: true
 
-  /@lerna-lite/version@3.5.0(@lerna-lite/exec@3.5.0)(@lerna-lite/publish@3.5.0)(@lerna-lite/run@3.5.0):
-    resolution: {integrity: sha512-FO6RDsMc2u7y6MlxNj9ZQADTqIEk117apyl23kYlzBxRo98a95S1fr+0ewfiYTiEBLJSJKu/gj/bMgOP3KhNYw==}
+  /@lerna-lite/version@3.5.1(@lerna-lite/exec@3.5.1)(@lerna-lite/publish@3.5.1)(@lerna-lite/run@3.5.1):
+    resolution: {integrity: sha512-IRRgPkWvitN+6bH/SUUCCnW8k9+O+8eZH6WmE6g+wXL7XCnG7EyeNs6RMGbTIQkYJ+CZNbSn7OTzVxr2udFigw==}
     engines: {node: ^18.0.0 || >=20.0.0}
     dependencies:
-      '@lerna-lite/cli': 3.5.0(@lerna-lite/exec@3.5.0)(@lerna-lite/publish@3.5.0)(@lerna-lite/run@3.5.0)(@lerna-lite/version@3.5.0)
-      '@lerna-lite/core': 3.5.0
+      '@lerna-lite/cli': 3.5.1(@lerna-lite/exec@3.5.1)(@lerna-lite/publish@3.5.1)(@lerna-lite/run@3.5.1)(@lerna-lite/version@3.5.1)
+      '@lerna-lite/core': 3.5.1
       '@octokit/plugin-enterprise-rest': 6.0.1
       '@octokit/rest': 20.1.1
       chalk: 5.3.0
@@ -1670,11 +1670,11 @@ packages:
   /@types/lodash-es@4.17.12:
     resolution: {integrity: sha512-0NgftHUcV4v34VhXm8QBSftKVXtbkBG3ViCjs6+eJ5a6y6Mi/jiFGPc1sC7QK+9BFhWrURE3EOggmWaSxL9OzQ==}
     dependencies:
-      '@types/lodash': 4.17.4
+      '@types/lodash': 4.17.5
     dev: false
 
-  /@types/lodash@4.17.4:
-    resolution: {integrity: sha512-wYCP26ZLxaT3R39kiN2+HcJ4kTd3U1waI/cY7ivWYqFP6pW3ZNpvi6Wd6PHZx7T/t8z0vlkXMg3QYLa7DZ/IJQ==}
+  /@types/lodash@4.17.5:
+    resolution: {integrity: sha512-MBIOHVZqVqgfro1euRDWX7OO0fBVUUMrN6Pwm8LQsz8cWhEpihlvR70ENj3f40j58TNxZaWv2ndSkInykNBBJw==}
     dev: false
 
   /@types/mdast@4.0.4:
@@ -3534,8 +3534,8 @@ packages:
     engines: {node: '>=18'}
     dev: true
 
-  /globals@15.3.0:
-    resolution: {integrity: sha512-cCdyVjIUVTtX8ZsPkq1oCsOsLmGIswqnjZYMJJTGaNApj1yHtLSymKhwH51ttirREn75z3p4k051clwg7rvNKA==}
+  /globals@15.4.0:
+    resolution: {integrity: sha512-unnwvMZpv0eDUyjNyh9DH/yxUaRYrEjW/qK4QcdrHg3oO11igUQrCSgODHEqxlKg8v2CD2Sd7UkqqEBoz5U7TQ==}
     engines: {node: '>=18'}
     dev: true
 
@@ -5518,7 +5518,7 @@ packages:
     dependencies:
       '@babel/code-frame': 7.24.7
       index-to-position: 0.1.2
-      type-fest: 4.19.0
+      type-fest: 4.20.0
 
   /parse-ms@4.0.0:
     resolution: {integrity: sha512-TXfryirbmq34y8QBwgqCVLi+8oA3oWx2eAnSn62ITyEhEYaWRlVZ2DvMM9eZbMs/RfxPu/PK/aBLyGj4IrqMHw==}
@@ -5739,7 +5739,7 @@ packages:
     dependencies:
       find-up-simple: 1.0.0
       read-pkg: 9.0.1
-      type-fest: 4.19.0
+      type-fest: 4.20.0
     dev: false
 
   /read-pkg-up@10.1.0:
@@ -5748,7 +5748,7 @@ packages:
     dependencies:
       find-up: 6.3.0
       read-pkg: 8.1.0
-      type-fest: 4.19.0
+      type-fest: 4.20.0
     dev: true
 
   /read-pkg@8.1.0:
@@ -5758,7 +5758,7 @@ packages:
       '@types/normalize-package-data': 2.4.4
       normalize-package-data: 6.0.1
       parse-json: 7.1.1
-      type-fest: 4.19.0
+      type-fest: 4.20.0
     dev: true
 
   /read-pkg@9.0.1:
@@ -5768,7 +5768,7 @@ packages:
       '@types/normalize-package-data': 2.4.4
       normalize-package-data: 6.0.1
       parse-json: 8.1.0
-      type-fest: 4.19.0
+      type-fest: 4.20.0
       unicorn-magic: 0.1.0
 
   /readable-stream@3.6.2:
@@ -6396,8 +6396,8 @@ packages:
     engines: {node: '>=14.16'}
     dev: true
 
-  /type-fest@4.19.0:
-    resolution: {integrity: sha512-CN2l+hWACRiejlnr68vY0/7734Kzu+9+TOslUXbSCQ1ruY9XIHDBSceVXCcHm/oXrdzhtLMMdJEKfemf1yXiZQ==}
+  /type-fest@4.20.0:
+    resolution: {integrity: sha512-MBh+PHUHHisjXf4tlx0CFWoMdjx8zCMLJHOjnV1prABYZFHqtFOyauCIK2/7w4oIfwkF8iNhLtnJEfVY2vn3iw==}
     engines: {node: '>=16'}
 
   /typedarray-to-buffer@3.1.5:
@@ -6729,7 +6729,7 @@ packages:
       deepmerge-ts: 5.1.0
       read-pkg: 9.0.1
       sort-keys: 5.0.0
-      type-fest: 4.19.0
+      type-fest: 4.20.0
       write-json-file: 5.0.0
     dev: true
 
