@@ -34,7 +34,7 @@ Please open a pull to add names to the `src/names.txt` file.
 
 ### Name Removal
 
-Names can be removed if they are:
+Names can be removed if they:
 
 - Are actually misspelled. (`Johhn` would be replaced with `John`)
 - Are not a person's name.
