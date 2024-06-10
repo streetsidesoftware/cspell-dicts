@@ -15,7 +15,7 @@ this dictionary. The idea here is to include names from all kinds of backgrounds
   For example, `John Smith` would not appear in the list, but `John` and `Smith` are ok.
 - No distinction is made between first, middle, last names. Each one can be an entry in the list.
 - All cultural and gender variants of a name are allowed.
-- A name should be common enough that 1000s of people have it.
+- It is expected that a Google search of the name should return results confirming that it is a name.
 - A name should not be a slur, disparaging, or derogatory term.
   For example, `Shithead` is not allowed.
 
@@ -32,12 +32,15 @@ Please open a pull to add names to the `src/names.txt` file.
 - Add new names to the end of the file.
 - One name per line.
 
+**Note:** `src/names.txt` will get sorted as part of the release process.
+
 ### Name Removal
 
 Names can be removed if they:
 
 - Are actually misspelled. (`Johhn` would be replaced with `John`)
 - Are not a person's name.
+- Moderators reserve the right to refuse changes and additions.
 
 Names will not be removed just because someone finds them offensive.
 
