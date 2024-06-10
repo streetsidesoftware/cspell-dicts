@@ -1,5 +1,20 @@
 # Release Notes
 
+## [26.4.0](https://github.com/streetsidesoftware/cspell-dicts/compare/cspell-dicts@26.3.2...cspell-dicts@26.4.0) (2024-06-10)
+
+
+### Features
+
+* Add People Names dictionary. ([#3276](https://github.com/streetsidesoftware/cspell-dicts/issues/3276)) ([a28300b](https://github.com/streetsidesoftware/cspell-dicts/commit/a28300b046ce49e6fcca6a2292a7651f21795932))
+
+
+### Updates and Bug Fixes
+
+* add Lexer to Software Terms dictionaries ([#3266](https://github.com/streetsidesoftware/cspell-dicts/issues/3266)) ([341fcb1](https://github.com/streetsidesoftware/cspell-dicts/commit/341fcb138930e97c0149305ec823e45e41b1c39b))
+* add to software-terms dictionary ([#3280](https://github.com/streetsidesoftware/cspell-dicts/issues/3280)) ([adfd62d](https://github.com/streetsidesoftware/cspell-dicts/commit/adfd62dc781818d29a97a25ed4b9b8198bf0c252))
+* Workflow Bot -- Build Dictionaries ([#3279](https://github.com/streetsidesoftware/cspell-dicts/issues/3279)) ([236f6ac](https://github.com/streetsidesoftware/cspell-dicts/commit/236f6ac6fa91867502ded6473a09161cc5955e05))
+* Workflow Bot -- Build Dictionaries ([#3281](https://github.com/streetsidesoftware/cspell-dicts/issues/3281)) ([cab38e0](https://github.com/streetsidesoftware/cspell-dicts/commit/cab38e0f6f97abee48ce8c8934bb2b3154739aa2))
+
 ## [26.3.2](https://github.com/streetsidesoftware/cspell-dicts/compare/cspell-dicts@26.3.1...cspell-dicts@26.3.2) (2024-06-08)
 
 
