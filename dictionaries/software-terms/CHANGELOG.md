@@ -3,6 +3,15 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+## [3.4.4](https://github.com/streetsidesoftware/cspell-dicts/compare/@cspell/dict-software-terms@3.4.3...@cspell/dict-software-terms@3.4.4) (2024-06-10)
+
+
+### Updates and Bug Fixes
+
+* add Lexer to Software Terms dictionaries ([#3266](https://github.com/streetsidesoftware/cspell-dicts/issues/3266)) ([341fcb1](https://github.com/streetsidesoftware/cspell-dicts/commit/341fcb138930e97c0149305ec823e45e41b1c39b))
+* add to software-terms dictionary ([#3280](https://github.com/streetsidesoftware/cspell-dicts/issues/3280)) ([adfd62d](https://github.com/streetsidesoftware/cspell-dicts/commit/adfd62dc781818d29a97a25ed4b9b8198bf0c252))
+* Workflow Bot -- Build Dictionaries ([#3279](https://github.com/streetsidesoftware/cspell-dicts/issues/3279)) ([236f6ac](https://github.com/streetsidesoftware/cspell-dicts/commit/236f6ac6fa91867502ded6473a09161cc5955e05))
+
 ## [3.4.3](https://github.com/streetsidesoftware/cspell-dicts/compare/@cspell/dict-software-terms@3.4.2...@cspell/dict-software-terms@3.4.3) (2024-06-08)
 
 
