@@ -3,6 +3,13 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+## [3.4.5](https://github.com/streetsidesoftware/cspell-dicts/compare/@cspell/dict-software-terms@3.4.4...@cspell/dict-software-terms@3.4.5) (2024-06-11)
+
+
+### Updates and Bug Fixes
+
+* Add tokio ([#3282](https://github.com/streetsidesoftware/cspell-dicts/issues/3282)) ([7c330ee](https://github.com/streetsidesoftware/cspell-dicts/commit/7c330ee8fa9de714b60738f92a483309f261619f))
+
 ## [3.4.4](https://github.com/streetsidesoftware/cspell-dicts/compare/@cspell/dict-software-terms@3.4.3...@cspell/dict-software-terms@3.4.4) (2024-06-10)
 
 
