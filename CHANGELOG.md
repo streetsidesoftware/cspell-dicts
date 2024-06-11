@@ -1,5 +1,13 @@
 # Release Notes
 
+## [26.4.1](https://github.com/streetsidesoftware/cspell-dicts/compare/cspell-dicts@26.4.0...cspell-dicts@26.4.1) (2024-06-11)
+
+
+### Updates and Bug Fixes
+
+* Add tokio ([#3282](https://github.com/streetsidesoftware/cspell-dicts/issues/3282)) ([7c330ee](https://github.com/streetsidesoftware/cspell-dicts/commit/7c330ee8fa9de714b60738f92a483309f261619f))
+* Workflow Bot -- Build Dictionaries ([#3284](https://github.com/streetsidesoftware/cspell-dicts/issues/3284)) ([2c65c07](https://github.com/streetsidesoftware/cspell-dicts/commit/2c65c073fd88ccaddb3dcdfa4be0f08407d25779))
+
 ## [26.4.0](https://github.com/streetsidesoftware/cspell-dicts/compare/cspell-dicts@26.3.2...cspell-dicts@26.4.0) (2024-06-10)
 
 

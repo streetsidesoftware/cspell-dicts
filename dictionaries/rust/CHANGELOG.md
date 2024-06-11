@@ -3,6 +3,14 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+## [4.0.4](https://github.com/streetsidesoftware/cspell-dicts/compare/@cspell/dict-rust@4.0.3...@cspell/dict-rust@4.0.4) (2024-06-11)
+
+
+### Updates and Bug Fixes
+
+* Add tokio ([#3282](https://github.com/streetsidesoftware/cspell-dicts/issues/3282)) ([7c330ee](https://github.com/streetsidesoftware/cspell-dicts/commit/7c330ee8fa9de714b60738f92a483309f261619f))
+* Workflow Bot -- Build Dictionaries ([#3284](https://github.com/streetsidesoftware/cspell-dicts/issues/3284)) ([2c65c07](https://github.com/streetsidesoftware/cspell-dicts/commit/2c65c073fd88ccaddb3dcdfa4be0f08407d25779))
+
 ## [4.0.3](https://github.com/streetsidesoftware/cspell-dicts/compare/@cspell/dict-rust@4.0.2...@cspell/dict-rust@4.0.3) (2024-05-02)
 
 
