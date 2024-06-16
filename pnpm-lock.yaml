@@ -13,16 +13,16 @@ importers:
         version: 8.8.4
       '@lerna-lite/cli':
         specifier: ^3.5.1
-        version: 3.5.1(@lerna-lite/exec@3.5.1)(@lerna-lite/publish@3.5.1)(@lerna-lite/run@3.5.1)(@lerna-lite/version@3.5.1)
+        version: 3.5.1(@lerna-lite/exec@3.5.1)(@lerna-lite/publish@3.5.2)(@lerna-lite/run@3.5.1)(@lerna-lite/version@3.5.2)
       '@lerna-lite/exec':
         specifier: ^3.5.1
-        version: 3.5.1(@lerna-lite/publish@3.5.1)(@lerna-lite/run@3.5.1)
+        version: 3.5.1(@lerna-lite/publish@3.5.2)(@lerna-lite/run@3.5.1)
       '@lerna-lite/publish':
-        specifier: ^3.5.1
-        version: 3.5.1(@lerna-lite/exec@3.5.1)(@lerna-lite/run@3.5.1)
+        specifier: ^3.5.2
+        version: 3.5.2(@lerna-lite/exec@3.5.1)(@lerna-lite/run@3.5.1)
       '@lerna-lite/run':
         specifier: ^3.5.1
-        version: 3.5.1(@lerna-lite/exec@3.5.1)(@lerna-lite/publish@3.5.1)
+        version: 3.5.1(@lerna-lite/exec@3.5.1)(@lerna-lite/publish@3.5.2)
       ava:
         specifier: ^6.1.3
         version: 6.1.3
@@ -39,14 +39,14 @@ importers:
         specifier: workspace:*
         version: link:cspell-dict-file-checker
       eslint:
-        specifier: ^9.4.0
-        version: 9.4.0
+        specifier: ^9.5.0
+        version: 9.5.0
       generator-cspell-dicts:
         specifier: workspace:*
         version: link:generator-cspell-dicts
       globals:
-        specifier: ^15.4.0
-        version: 15.4.0
+        specifier: ^15.5.0
+        version: 15.5.0
       hunspell-reader:
         specifier: ^8.8.4
         version: 8.8.4
@@ -511,9 +511,9 @@ packages:
       '@cspell/dict-python': 4.2.1
       '@cspell/dict-r': 2.0.1
       '@cspell/dict-ruby': 5.0.2
-      '@cspell/dict-rust': 4.0.3
+      '@cspell/dict-rust': 4.0.4
       '@cspell/dict-scala': 5.0.2
-      '@cspell/dict-software-terms': 3.4.4
+      '@cspell/dict-software-terms': 3.4.6
       '@cspell/dict-sql': 2.1.3
       '@cspell/dict-svelte': 1.0.2
       '@cspell/dict-swift': 2.0.1
@@ -696,14 +696,14 @@ packages:
   /@cspell/dict-ruby@5.0.2:
     resolution: {integrity: sha512-cIh8KTjpldzFzKGgrqUX4bFyav5lC52hXDKo4LbRuMVncs3zg4hcSf4HtURY+f2AfEZzN6ZKzXafQpThq3dl2g==}
 
-  /@cspell/dict-rust@4.0.3:
-    resolution: {integrity: sha512-8DFCzkFQ+2k3fDaezWc/D+0AyiBBiOGYfSDUfrTNU7wpvUvJ6cRcAUshMI/cn2QW/mmxTspRgVlXsE6GUMz00Q==}
+  /@cspell/dict-rust@4.0.4:
+    resolution: {integrity: sha512-v9/LcZknt/Xq7m1jdTWiQEtmkVVKdE1etAfGL2sgcWpZYewEa459HeWndNA0gfzQrpWX9sYay18mt7pqClJEdA==}
 
   /@cspell/dict-scala@5.0.2:
     resolution: {integrity: sha512-v97ClgidZt99JUm7OjhQugDHmhx4U8fcgunHvD/BsXWjXNj4cTr0m0YjofyZoL44WpICsNuFV9F/sv9OM5HUEw==}
 
-  /@cspell/dict-software-terms@3.4.4:
-    resolution: {integrity: sha512-GgKwgqqu9FcO81KKDKHixjhrSTYRMHOvcThrMKSnZzR0oND2MnG/j3cHBle+Xv3mtsnZl1DK9lKyYXaCvAnPpQ==}
+  /@cspell/dict-software-terms@3.4.6:
+    resolution: {integrity: sha512-Cap+WL4iM9NgwxdVIa93aDEGKGNm1t+DLJTnjoWkGHXxSBPG8Kcbnlss6mTtwLv9/NYPmQsmJi5qHXruuHx2ow==}
 
   /@cspell/dict-sql@2.1.3:
     resolution: {integrity: sha512-SEyTNKJrjqD6PAzZ9WpdSu6P7wgdNtGV2RV8Kpuw1x6bV+YsSptuClYG+JSdRExBTE6LwIe1bTklejUp3ZP8TQ==}
@@ -733,13 +733,13 @@ packages:
     resolution: {integrity: sha512-gticEJGR6yyGeLjf+mJ0jZotWYRLVQ+J0v1VpsR1nKnXTRJY15BWXgEA/ifbU/+clpyCek79NiCIXCvmP1WT4A==}
     engines: {node: '>=18'}
 
-  /@eslint-community/eslint-utils@4.4.0(eslint@9.4.0):
+  /@eslint-community/eslint-utils@4.4.0(eslint@9.5.0):
     resolution: {integrity: sha512-1/sA4dwrzBAyeUoQ6oxahHKmrZvsnLCg4RfxW3ZFGGmQkSNQPFNLV9CUEFQP1x9EYXHTo5p6xdhZM1Ne9p/AfA==}
     engines: {node: ^12.22.0 || ^14.17.0 || >=16.0.0}
     peerDependencies:
       eslint: ^6.0.0 || ^7.0.0 || >=8.0.0
     dependencies:
-      eslint: 9.4.0
+      eslint: 9.5.0
       eslint-visitor-keys: 3.4.3
     dev: true
 
@@ -748,11 +748,11 @@ packages:
     engines: {node: ^12.0.0 || ^14.0.0 || >=16.0.0}
     dev: true
 
-  /@eslint/config-array@0.15.1:
-    resolution: {integrity: sha512-K4gzNq+yymn/EVsXYmf+SBcBro8MTf+aXJZUphM96CdzUEr+ClGDvAbpmaEK+cGVigVXIgs9gNmvHAlrzzY5JQ==}
+  /@eslint/config-array@0.16.0:
+    resolution: {integrity: sha512-/jmuSd74i4Czf1XXn7wGRWZCuyaUZ330NH1Bek0Pplatt4Sy1S5haN21SCLLdbeKslQ+S0wEJ+++v5YibSi+Lg==}
     engines: {node: ^18.18.0 || ^20.9.0 || >=21.1.0}
     dependencies:
-      '@eslint/object-schema': 2.1.3
+      '@eslint/object-schema': 2.1.4
       debug: 4.3.5
       minimatch: 3.1.2
     transitivePeerDependencies:
@@ -776,13 +776,13 @@ packages:
       - supports-color
     dev: true
 
-  /@eslint/js@9.4.0:
-    resolution: {integrity: sha512-fdI7VJjP3Rvc70lC4xkFXHB0fiPeojiL1PxVG6t1ZvXQrarj893PweuBTujxDUFk0Fxj4R7PIIAZ/aiiyZPZcg==}
+  /@eslint/js@9.5.0:
+    resolution: {integrity: sha512-A7+AOT2ICkodvtsWnxZP4Xxk3NbZ3VMHd8oihydLRGrJgqqdEz1qSeEgXYyT/Cu8h1TWWsQRejIx48mtjZ5y1w==}
     engines: {node: ^18.18.0 || ^20.9.0 || >=21.1.0}
     dev: true
 
-  /@eslint/object-schema@2.1.3:
-    resolution: {integrity: sha512-HAbhAYKfsAC2EkTqve00ibWIZlaU74Z1EHwAjYr4PXF0YU2VEA1zSIKSSpKszRLRWwHzzRZXvK632u+uXzvsvw==}
+  /@eslint/object-schema@2.1.4:
+    resolution: {integrity: sha512-BsWiH1yFGjXXS2yvrf5LyuoSIIbPrGUWob917o+BTKuZ7qJdxX8aJLRxs1fS9n6r7vESrq1OUqb68dANcFXuQQ==}
     engines: {node: ^18.18.0 || ^20.9.0 || >=21.1.0}
     dev: true
 
@@ -832,7 +832,7 @@ packages:
     resolution: {integrity: sha512-GaHYm+c0O9MjZRu0ongGBRbinu8gVAMd2UZjji6jVmqKtZluZnptXGWhz1E8j8D2HJ3f/yMxKAUC0b+57wncIw==}
     dev: false
 
-  /@lerna-lite/cli@3.5.1(@lerna-lite/exec@3.5.1)(@lerna-lite/publish@3.5.1)(@lerna-lite/run@3.5.1)(@lerna-lite/version@3.5.1):
+  /@lerna-lite/cli@3.5.1(@lerna-lite/exec@3.5.1)(@lerna-lite/publish@3.5.2)(@lerna-lite/run@3.5.1)(@lerna-lite/version@3.5.2):
     resolution: {integrity: sha512-kWhjomm8iwI6MxC/Au7Mv9pztOm4QVEKR72+YQ59qfP1sVwIX6jlWNaBmszXonry34v226GDs6gDE31Vl3QHoQ==}
     engines: {node: ^18.0.0 || >=20.0.0}
     hasBin: true
@@ -858,11 +858,11 @@ packages:
         optional: true
     dependencies:
       '@lerna-lite/core': 3.5.1
-      '@lerna-lite/exec': 3.5.1(@lerna-lite/publish@3.5.1)(@lerna-lite/run@3.5.1)
+      '@lerna-lite/exec': 3.5.1(@lerna-lite/publish@3.5.2)(@lerna-lite/run@3.5.1)
       '@lerna-lite/init': 3.5.1
-      '@lerna-lite/publish': 3.5.1(@lerna-lite/exec@3.5.1)(@lerna-lite/run@3.5.1)
-      '@lerna-lite/run': 3.5.1(@lerna-lite/exec@3.5.1)(@lerna-lite/publish@3.5.1)
-      '@lerna-lite/version': 3.5.1(@lerna-lite/exec@3.5.1)(@lerna-lite/publish@3.5.1)(@lerna-lite/run@3.5.1)
+      '@lerna-lite/publish': 3.5.2(@lerna-lite/exec@3.5.1)(@lerna-lite/run@3.5.1)
+      '@lerna-lite/run': 3.5.1(@lerna-lite/exec@3.5.1)(@lerna-lite/publish@3.5.2)
+      '@lerna-lite/version': 3.5.2(@lerna-lite/exec@3.5.1)(@lerna-lite/publish@3.5.2)(@lerna-lite/run@3.5.1)
       dedent: 1.5.3
       dotenv: 16.4.5
       import-local: 3.1.0
@@ -913,11 +913,11 @@ packages:
       - typescript
     dev: true
 
-  /@lerna-lite/exec@3.5.1(@lerna-lite/publish@3.5.1)(@lerna-lite/run@3.5.1):
+  /@lerna-lite/exec@3.5.1(@lerna-lite/publish@3.5.2)(@lerna-lite/run@3.5.1):
     resolution: {integrity: sha512-tmNuJ1SCQmfL90YM8jaPM2a5Tzh7D5AZa2/eZ/YZuxefUhVObi0fWXwe/iWhJyvXqdJXpTBxtKT/rYfKRLuBZw==}
     engines: {node: ^18.0.0 || >=20.0.0}
     dependencies:
-      '@lerna-lite/cli': 3.5.1(@lerna-lite/exec@3.5.1)(@lerna-lite/publish@3.5.1)(@lerna-lite/run@3.5.1)(@lerna-lite/version@3.5.1)
+      '@lerna-lite/cli': 3.5.1(@lerna-lite/exec@3.5.1)(@lerna-lite/publish@3.5.2)(@lerna-lite/run@3.5.1)(@lerna-lite/version@3.5.2)
       '@lerna-lite/core': 3.5.1
       '@lerna-lite/filter-packages': 3.5.1
       '@lerna-lite/profiler': 3.5.1
@@ -981,13 +981,13 @@ packages:
       - typescript
     dev: true
 
-  /@lerna-lite/publish@3.5.1(@lerna-lite/exec@3.5.1)(@lerna-lite/run@3.5.1):
-    resolution: {integrity: sha512-odDrME24EeKiNeLARn8aW79MJ0gEZlBevS5qvtQ189Gg1T0PbpR7iQeskRfwAFmIPfKJWdWMa6Q9vdbYG1FoEw==}
+  /@lerna-lite/publish@3.5.2(@lerna-lite/exec@3.5.1)(@lerna-lite/run@3.5.1):
+    resolution: {integrity: sha512-yAECe5l+t2snNXQGq5rm88w7mPc/watY0cSUaDtkrLf5nLJZbFpk3VV5ntwvNMUs9iFNjwFZCMaSl4q0WTbEBg==}
     engines: {node: ^18.0.0 || >=20.0.0}
     dependencies:
-      '@lerna-lite/cli': 3.5.1(@lerna-lite/exec@3.5.1)(@lerna-lite/publish@3.5.1)(@lerna-lite/run@3.5.1)(@lerna-lite/version@3.5.1)
+      '@lerna-lite/cli': 3.5.1(@lerna-lite/exec@3.5.1)(@lerna-lite/publish@3.5.2)(@lerna-lite/run@3.5.1)(@lerna-lite/version@3.5.2)
       '@lerna-lite/core': 3.5.1
-      '@lerna-lite/version': 3.5.1(@lerna-lite/exec@3.5.1)(@lerna-lite/publish@3.5.1)(@lerna-lite/run@3.5.1)
+      '@lerna-lite/version': 3.5.2(@lerna-lite/exec@3.5.1)(@lerna-lite/publish@3.5.2)(@lerna-lite/run@3.5.1)
       byte-size: 8.1.1
       chalk: 5.3.0
       columnify: 1.6.0
@@ -999,7 +999,7 @@ packages:
       normalize-path: 3.0.0
       npm-package-arg: 11.0.2
       npm-packlist: 5.1.3
-      npm-registry-fetch: 17.0.1
+      npm-registry-fetch: 17.1.0
       npmlog: 7.0.1
       p-map: 7.0.2
       p-pipe: 4.0.0
@@ -1021,11 +1021,11 @@ packages:
       - typescript
     dev: true
 
-  /@lerna-lite/run@3.5.1(@lerna-lite/exec@3.5.1)(@lerna-lite/publish@3.5.1):
+  /@lerna-lite/run@3.5.1(@lerna-lite/exec@3.5.1)(@lerna-lite/publish@3.5.2):
     resolution: {integrity: sha512-qy1h83h9UBiaqPSap23oJaVmkhME4ePMT5eOwN1sj+BLfUOKghVEYc/ZsMgNzFq0NspLYyFnUMbp8ZeieSKRDg==}
     engines: {node: ^18.0.0 || >=20.0.0}
     dependencies:
-      '@lerna-lite/cli': 3.5.1(@lerna-lite/exec@3.5.1)(@lerna-lite/publish@3.5.1)(@lerna-lite/run@3.5.1)(@lerna-lite/version@3.5.1)
+      '@lerna-lite/cli': 3.5.1(@lerna-lite/exec@3.5.1)(@lerna-lite/publish@3.5.2)(@lerna-lite/run@3.5.1)(@lerna-lite/version@3.5.2)
       '@lerna-lite/core': 3.5.1
       '@lerna-lite/filter-packages': 3.5.1
       '@lerna-lite/profiler': 3.5.1
@@ -1045,11 +1045,11 @@ packages:
       - typescript
     dev: true
 
-  /@lerna-lite/version@3.5.1(@lerna-lite/exec@3.5.1)(@lerna-lite/publish@3.5.1)(@lerna-lite/run@3.5.1):
-    resolution: {integrity: sha512-IRRgPkWvitN+6bH/SUUCCnW8k9+O+8eZH6WmE6g+wXL7XCnG7EyeNs6RMGbTIQkYJ+CZNbSn7OTzVxr2udFigw==}
+  /@lerna-lite/version@3.5.2(@lerna-lite/exec@3.5.1)(@lerna-lite/publish@3.5.2)(@lerna-lite/run@3.5.1):
+    resolution: {integrity: sha512-SEAwfox4jgYeEJI+DLjwSRP7qI2j5SUz902v+jjhBJkIxJwE+GDNNmH+Iih3W7HOK8La05CbtFvEpxUODGFtlA==}
     engines: {node: ^18.0.0 || >=20.0.0}
     dependencies:
-      '@lerna-lite/cli': 3.5.1(@lerna-lite/exec@3.5.1)(@lerna-lite/publish@3.5.1)(@lerna-lite/run@3.5.1)(@lerna-lite/version@3.5.1)
+      '@lerna-lite/cli': 3.5.1(@lerna-lite/exec@3.5.1)(@lerna-lite/publish@3.5.2)(@lerna-lite/run@3.5.1)(@lerna-lite/version@3.5.2)
       '@lerna-lite/core': 3.5.1
       '@octokit/plugin-enterprise-rest': 6.0.1
       '@octokit/rest': 20.1.1
@@ -1175,7 +1175,7 @@ packages:
       npm-install-checks: 6.3.0
       npm-package-arg: 11.0.2
       npm-pick-manifest: 9.0.1
-      npm-registry-fetch: 17.0.1
+      npm-registry-fetch: 17.1.0
       pacote: 18.0.6
       parse-conflict-json: 3.0.1
       proc-log: 4.2.0
@@ -1744,8 +1744,8 @@ packages:
     dependencies:
       '@mapbox/node-pre-gyp': 1.0.11
       '@rollup/pluginutils': 4.2.1
-      acorn: 8.11.3
-      acorn-import-attributes: 1.9.5(acorn@8.11.3)
+      acorn: 8.12.0
+      acorn-import-attributes: 1.9.5(acorn@8.12.0)
       async-sema: 3.1.1
       bindings: 1.5.0
       estree-walker: 2.0.2
@@ -1854,27 +1854,29 @@ packages:
       event-target-shim: 5.0.1
     dev: false
 
-  /acorn-import-attributes@1.9.5(acorn@8.11.3):
+  /acorn-import-attributes@1.9.5(acorn@8.12.0):
     resolution: {integrity: sha512-n02Vykv5uA3eHGM/Z2dQrcD56kL8TyDb2p1+0P83PClMnC/nc+anbQRhIOWnSq4Ke/KvDPrY3C9hDtC/A3eHnQ==}
     peerDependencies:
       acorn: ^8
     dependencies:
-      acorn: 8.11.3
+      acorn: 8.12.0
 
-  /acorn-jsx@5.3.2(acorn@8.11.3):
+  /acorn-jsx@5.3.2(acorn@8.12.0):
     resolution: {integrity: sha512-rq9s+JNhf0IChjtDXxllJ7g41oZk5SlXtp0LHwyA5cejwn7vKmKp4pPri6YEePv2PU65sAsegbXtIinmDFDXgQ==}
     peerDependencies:
       acorn: ^6.0.0 || ^7.0.0 || ^8.0.0
     dependencies:
-      acorn: 8.11.3
+      acorn: 8.12.0
     dev: true
 
-  /acorn-walk@8.3.2:
-    resolution: {integrity: sha512-cjkyv4OtNCIeqhHrfS81QWXoCBPExR/J62oyEqepVw8WaQeSqpW2uhuLPh1m9eWhDuOo/jUXVTlifvesOWp/4A==}
+  /acorn-walk@8.3.3:
+    resolution: {integrity: sha512-MxXdReSRhGO7VlFe1bRG/oI7/mdLV9B9JJT0N8vZOhF7gFRR5l3M8W9G8JxmKV+JC5mGqJ0QvqfSOLsCPa4nUw==}
     engines: {node: '>=0.4.0'}
+    dependencies:
+      acorn: 8.12.0
 
-  /acorn@8.11.3:
-    resolution: {integrity: sha512-Y9rRfJG5jcKOE0CLisYbojUjIrIEE7AGMzA/Sm4BslANhbS+cDMpgBdcPT91oJ7OuJ9hYJBx59RjbhxVnrF8Xg==}
+  /acorn@8.12.0:
+    resolution: {integrity: sha512-RTvkC4w+KNXrM39/lWCUaG0IbRkWdCv7W/IOW9oU6SawyxulvkQy5HQPVTKxEjczcUvapcrw3cFx/60VN/NRNw==}
     engines: {node: '>=0.4.0'}
     hasBin: true
 
@@ -2023,8 +2025,8 @@ packages:
         optional: true
     dependencies:
       '@vercel/nft': 0.26.5
-      acorn: 8.11.3
-      acorn-walk: 8.3.2
+      acorn: 8.12.0
+      acorn-walk: 8.3.3
       ansi-styles: 6.2.1
       arrgv: 1.0.2
       arrify: 3.0.0
@@ -2077,8 +2079,8 @@ packages:
   /balanced-match@1.0.2:
     resolution: {integrity: sha512-3oSeUO0TMV67hN1AmbXsK4yaqU7tjiHlbxRDZOpH0KW9+CeX4bRAaX0Anxt0tx2MrpRpWwQaPwIlISEJhYU5Pw==}
 
-  /bare-events@2.3.1:
-    resolution: {integrity: sha512-sJnSOTVESURZ61XgEleqmP255T6zTYwHPwE4r6SssIh0U9/uDvfpdoJYpVUerJJZH2fueO+CdT8ZT+OC/7aZDA==}
+  /bare-events@2.4.2:
+    resolution: {integrity: sha512-qMKFd2qG/36aA4GwvKq8MxnPgCQAmBWmSyLWsJcbn8v03wvIPQ/hG1Ms8bPzndZxMDoHpxez5VOS+gC9Yi24/Q==}
     requiresBuild: true
     dev: false
     optional: true
@@ -3040,16 +3042,16 @@ packages:
     engines: {node: ^18.18.0 || ^20.9.0 || >=21.1.0}
     dev: true
 
-  /eslint@9.4.0:
-    resolution: {integrity: sha512-sjc7Y8cUD1IlwYcTS9qPSvGjAC8Ne9LctpxKKu3x/1IC9bnOg98Zy6GxEJUfr1NojMgVPlyANXYns8oE2c1TAA==}
+  /eslint@9.5.0:
+    resolution: {integrity: sha512-+NAOZFrW/jFTS3dASCGBxX1pkFD0/fsO+hfAkJ4TyYKwgsXZbqzrw+seCYFCcPCYXvnD67tAnglU7GQTz6kcVw==}
     engines: {node: ^18.18.0 || ^20.9.0 || >=21.1.0}
     hasBin: true
     dependencies:
-      '@eslint-community/eslint-utils': 4.4.0(eslint@9.4.0)
+      '@eslint-community/eslint-utils': 4.4.0(eslint@9.5.0)
       '@eslint-community/regexpp': 4.10.1
-      '@eslint/config-array': 0.15.1
+      '@eslint/config-array': 0.16.0
       '@eslint/eslintrc': 3.1.0
-      '@eslint/js': 9.4.0
+      '@eslint/js': 9.5.0
       '@humanwhocodes/module-importer': 1.0.1
       '@humanwhocodes/retry': 0.3.0
       '@nodelib/fs.walk': 1.2.8
@@ -3087,8 +3089,8 @@ packages:
     resolution: {integrity: sha512-MWkrWZbJsL2UwnjxTX3gG8FneachS/Mwg7tdGXce011sJd5b0JG54vat5KHnfSBODZ3Wvzd2WnjxyzsRoVv+ww==}
     engines: {node: ^18.18.0 || ^20.9.0 || >=21.1.0}
     dependencies:
-      acorn: 8.11.3
-      acorn-jsx: 5.3.2(acorn@8.11.3)
+      acorn: 8.12.0
+      acorn-jsx: 5.3.2(acorn@8.12.0)
       eslint-visitor-keys: 4.0.0
     dev: true
 
@@ -3318,8 +3320,8 @@ packages:
       - supports-color
     dev: false
 
-  /foreground-child@3.1.1:
-    resolution: {integrity: sha512-TMKDUnIte6bfb5nWv7V/caI169OHgvwjb7V4WkeUvbQQdjr5rWKqHFiKWb/fcOwB+CzBT+qbWjvj+DVwRskpIg==}
+  /foreground-child@3.2.1:
+    resolution: {integrity: sha512-PXUUyLqrR2XCWICfv6ukppP96sdFwWbNEnfEMt7jNsISjMsvaLNinAHNDYyvkyU+SZG2BTSbT5NjG+vZslfGTA==}
     engines: {node: '>=14'}
     dependencies:
       cross-spawn: 7.0.3
@@ -3496,7 +3498,7 @@ packages:
     engines: {node: '>=16 || 14 >=14.18'}
     hasBin: true
     dependencies:
-      foreground-child: 3.1.1
+      foreground-child: 3.2.1
       jackspeak: 3.4.0
       minimatch: 9.0.4
       minipass: 7.1.2
@@ -3536,8 +3538,8 @@ packages:
     engines: {node: '>=18'}
     dev: true
 
-  /globals@15.4.0:
-    resolution: {integrity: sha512-unnwvMZpv0eDUyjNyh9DH/yxUaRYrEjW/qK4QcdrHg3oO11igUQrCSgODHEqxlKg8v2CD2Sd7UkqqEBoz5U7TQ==}
+  /globals@15.5.0:
+    resolution: {integrity: sha512-r7/9tQj5RylGxt/BKGv0D2SvehYvRFYg4ukSNk+EuZxvWI7uK/MJFmOCLq8aKvgh3EVBYFbBlOMAtaITXZr80w==}
     engines: {node: '>=18'}
     dev: true
 
@@ -4152,7 +4154,7 @@ packages:
     engines: {node: ^16.14.0 || >=18.0.0}
     dependencies:
       npm-package-arg: 11.0.2
-      npm-registry-fetch: 17.0.1
+      npm-registry-fetch: 17.1.0
     transitivePeerDependencies:
       - supports-color
     dev: true
@@ -4164,7 +4166,7 @@ packages:
       ci-info: 4.0.0
       normalize-package-data: 6.0.1
       npm-package-arg: 11.0.2
-      npm-registry-fetch: 17.0.1
+      npm-registry-fetch: 17.1.0
       proc-log: 4.2.0
       semver: 7.6.2
       sigstore: 2.3.1
@@ -4665,8 +4667,8 @@ packages:
   /micromark-extension-mdxjs@3.0.0:
     resolution: {integrity: sha512-A873fJfhnJ2siZyUrJ31l34Uqwy4xIFmvPY1oj+Ean5PHcPBYzEsvqvWGaWcfEIr11O5Dlw3p2y0tZWpKHDejQ==}
     dependencies:
-      acorn: 8.11.3
-      acorn-jsx: 5.3.2(acorn@8.11.3)
+      acorn: 8.12.0
+      acorn-jsx: 5.3.2(acorn@8.12.0)
       micromark-extension-mdx-expression: 3.0.0
       micromark-extension-mdx-jsx: 3.0.0
       micromark-extension-mdx-md: 2.0.0
@@ -4926,12 +4928,6 @@ packages:
     dependencies:
       minipass: 3.3.6
 
-  /minipass-json-stream@1.0.1:
-    resolution: {integrity: sha512-ODqY18UZt/I8k+b7rl2AENgbWE8IDYam+undIJONvigAz8KR5GWblsFTEfQs0WODsjbSXWlm+JHEv8Gr6Tfdbg==}
-    dependencies:
-      jsonparse: 1.3.1
-      minipass: 3.3.6
-
   /minipass-pipeline@1.2.4:
     resolution: {integrity: sha512-xuIq7cIOt09RPRJ19gdi4b+RiNvDFYe5JH+ggNvBqGqpQXcru3PcRmOZuHBKWK1Txf9+cQ+HMVN4d6z46LZP7A==}
     engines: {node: '>=8'}
@@ -5168,15 +5164,15 @@ packages:
       npm-package-arg: 11.0.2
       semver: 7.6.2
 
-  /npm-registry-fetch@17.0.1:
-    resolution: {integrity: sha512-fLu9MTdZTlJAHUek/VLklE6EpIiP3VZpTiuN7OOMCt2Sd67NCpSEetMaxHHEZiZxllp8ZLsUpvbEszqTFEc+wA==}
+  /npm-registry-fetch@17.1.0:
+    resolution: {integrity: sha512-5+bKQRH0J1xG1uZ1zMNvxW0VEyoNWgJpY9UDuluPFLKDfJ9u2JmmjmTJV1srBGQOROfdBMiVvnH2Zvpbm+xkVA==}
     engines: {node: ^16.14.0 || >=18.0.0}
     dependencies:
       '@npmcli/redact': 2.0.1
+      jsonparse: 1.3.1
       make-fetch-happen: 13.0.1
       minipass: 7.1.2
       minipass-fetch: 3.0.5
-      minipass-json-stream: 1.0.1
       minizlib: 2.1.2
       npm-package-arg: 11.0.2
       proc-log: 4.2.0
@@ -5445,7 +5441,7 @@ packages:
       npm-package-arg: 11.0.2
       npm-packlist: 8.0.2
       npm-pick-manifest: 9.0.1
-      npm-registry-fetch: 17.0.1
+      npm-registry-fetch: 17.1.0
       proc-log: 4.2.0
       promise-retry: 2.0.1
       sigstore: 2.3.1
@@ -5520,7 +5516,7 @@ packages:
     dependencies:
       '@babel/code-frame': 7.24.7
       index-to-position: 0.1.2
-      type-fest: 4.20.0
+      type-fest: 4.20.1
 
   /parse-ms@4.0.0:
     resolution: {integrity: sha512-TXfryirbmq34y8QBwgqCVLi+8oA3oWx2eAnSn62ITyEhEYaWRlVZ2DvMM9eZbMs/RfxPu/PK/aBLyGj4IrqMHw==}
@@ -5741,7 +5737,7 @@ packages:
     dependencies:
       find-up-simple: 1.0.0
       read-pkg: 9.0.1
-      type-fest: 4.20.0
+      type-fest: 4.20.1
     dev: false
 
   /read-pkg-up@10.1.0:
@@ -5750,7 +5746,7 @@ packages:
     dependencies:
       find-up: 6.3.0
       read-pkg: 8.1.0
-      type-fest: 4.20.0
+      type-fest: 4.20.1
     dev: true
 
   /read-pkg@8.1.0:
@@ -5760,7 +5756,7 @@ packages:
       '@types/normalize-package-data': 2.4.4
       normalize-package-data: 6.0.1
       parse-json: 7.1.1
-      type-fest: 4.20.0
+      type-fest: 4.20.1
     dev: true
 
   /read-pkg@9.0.1:
@@ -5770,7 +5766,7 @@ packages:
       '@types/normalize-package-data': 2.4.4
       normalize-package-data: 6.0.1
       parse-json: 8.1.0
-      type-fest: 4.20.0
+      type-fest: 4.20.1
       unicorn-magic: 0.1.0
 
   /readable-stream@3.6.2:
@@ -6160,7 +6156,7 @@ packages:
       queue-tick: 1.0.1
       text-decoder: 1.1.0
     optionalDependencies:
-      bare-events: 2.3.1
+      bare-events: 2.4.2
     dev: false
 
   /string-width@4.2.3:
@@ -6398,8 +6394,8 @@ packages:
     engines: {node: '>=14.16'}
     dev: true
 
-  /type-fest@4.20.0:
-    resolution: {integrity: sha512-MBh+PHUHHisjXf4tlx0CFWoMdjx8zCMLJHOjnV1prABYZFHqtFOyauCIK2/7w4oIfwkF8iNhLtnJEfVY2vn3iw==}
+  /type-fest@4.20.1:
+    resolution: {integrity: sha512-R6wDsVsoS9xYOpy8vgeBlqpdOyzJ12HNfQhC/aAKWM3YoCV9TtunJzh/QpkMgeDhkoynDcw5f1y+qF9yc/HHyg==}
     engines: {node: '>=16'}
 
   /typedarray-to-buffer@3.1.5:
@@ -6731,7 +6727,7 @@ packages:
       deepmerge-ts: 5.1.0
       read-pkg: 9.0.1
       sort-keys: 5.0.0
-      type-fest: 4.20.0
+      type-fest: 4.20.1
       write-json-file: 5.0.0
     dev: true
 
