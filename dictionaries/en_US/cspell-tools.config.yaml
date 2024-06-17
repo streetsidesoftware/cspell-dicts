@@ -14,4 +14,6 @@ targets:
     format: trie3
     targetDirectory: '.'
     generateNonStrict: true
+    excludeWordsFrom:
+      - src/exclude-words.txt
 checksumFile: true
