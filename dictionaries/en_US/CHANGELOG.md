@@ -3,6 +3,14 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+## [4.3.23](https://github.com/streetsidesoftware/cspell-dicts/compare/@cspell/dict-en_us@4.3.22...@cspell/dict-en_us@4.3.23) (2024-06-20)
+
+
+### Updates and Bug Fixes
+
+* Remove lower case `colum` from English dictionaries. ([#3312](https://github.com/streetsidesoftware/cspell-dicts/issues/3312)) ([63a84ab](https://github.com/streetsidesoftware/cspell-dicts/commit/63a84abee92c461a9fb495d5a0060adc0fdee1a3))
+* Workflow Bot -- Build Dictionaries ([#3315](https://github.com/streetsidesoftware/cspell-dicts/issues/3315)) ([2c55227](https://github.com/streetsidesoftware/cspell-dicts/commit/2c55227af65eaeb1798ffc9d568c8ff8e5cbd022))
+
 ## [4.3.22](https://github.com/streetsidesoftware/cspell-dicts/compare/@cspell/dict-en_us@4.3.21...@cspell/dict-en_us@4.3.22) (2024-06-17)
 
 

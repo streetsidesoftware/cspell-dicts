@@ -1,5 +1,12 @@
 # Change Log
 
+## [2.0.3](https://github.com/streetsidesoftware/cspell-dicts/compare/@cspell/dict-en-common-misspellings@2.0.2...@cspell/dict-en-common-misspellings@2.0.3) (2024-06-20)
+
+
+### Updates and Bug Fixes
+
+* Remove lower case `colum` from English dictionaries. ([#3312](https://github.com/streetsidesoftware/cspell-dicts/issues/3312)) ([63a84ab](https://github.com/streetsidesoftware/cspell-dicts/commit/63a84abee92c461a9fb495d5a0060adc0fdee1a3))
+
 ## [2.0.2](https://github.com/streetsidesoftware/cspell-dicts/compare/@cspell/dict-en-common-misspellings@2.0.1...@cspell/dict-en-common-misspellings@2.0.2) (2024-06-17)
 
 

@@ -1,5 +1,15 @@
 # Release Notes
 
+## [26.4.4](https://github.com/streetsidesoftware/cspell-dicts/compare/cspell-dicts@26.4.3...cspell-dicts@26.4.4) (2024-06-20)
+
+
+### Updates and Bug Fixes
+
+* Remove lower case `colum` from English dictionaries. ([#3312](https://github.com/streetsidesoftware/cspell-dicts/issues/3312)) ([63a84ab](https://github.com/streetsidesoftware/cspell-dicts/commit/63a84abee92c461a9fb495d5a0060adc0fdee1a3))
+* Update coding-terms.txt ([#3310](https://github.com/streetsidesoftware/cspell-dicts/issues/3310)) ([98e571a](https://github.com/streetsidesoftware/cspell-dicts/commit/98e571abb3757ece639b3a9349016af612be3f05))
+* Workflow Bot -- Build Dictionaries ([#3314](https://github.com/streetsidesoftware/cspell-dicts/issues/3314)) ([5e9d5e3](https://github.com/streetsidesoftware/cspell-dicts/commit/5e9d5e3663e4eb21c683932108453e67d86919c3))
+* Workflow Bot -- Build Dictionaries ([#3315](https://github.com/streetsidesoftware/cspell-dicts/issues/3315)) ([2c55227](https://github.com/streetsidesoftware/cspell-dicts/commit/2c55227af65eaeb1798ffc9d568c8ff8e5cbd022))
+
 ## [26.4.3](https://github.com/streetsidesoftware/cspell-dicts/compare/cspell-dicts@26.4.2...cspell-dicts@26.4.3) (2024-06-17)
 
 
