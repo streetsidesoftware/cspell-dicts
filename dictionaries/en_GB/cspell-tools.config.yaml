@@ -13,4 +13,6 @@ targets:
       - node_modules/@cspell/dict-en-shared/src/shared-additional-words.txt
     sort: true
     generateNonStrict: true
+    excludeWordsFrom:
+      - node_modules/@cspell/dict-en-shared/src/exclude-words.txt
 checksumFile: true

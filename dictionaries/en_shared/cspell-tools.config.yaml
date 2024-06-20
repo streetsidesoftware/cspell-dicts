@@ -3,8 +3,10 @@
 targets:
   - name: 'en-shared'
     sources:
-      - 'src/shared-additional-words.txt'
-    format: 'plaintext'
+      - src/shared-additional-words.txt
+    format: plaintext
     targetDirectory: './dict'
     generateNonStrict: false
     compress: false
+    excludeWordsFrom:
+      - src/exclude-words.txt
