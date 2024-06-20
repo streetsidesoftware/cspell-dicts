@@ -10,4 +10,6 @@ targets:
     format: trie3
     targetDirectory: '.'
     generateNonStrict: true
+    excludeWordsFrom:
+      - node_modules/@cspell/dict-en-shared/src/exclude-words.txt
 checksumFile: true
