@@ -81,8 +81,8 @@ importers:
         specifier: ^8.9.0
         version: 8.9.0
       glob:
-        specifier: ^10.4.1
-        version: 10.4.1
+        specifier: ^10.4.2
+        version: 10.4.2
 
   dictionaries/ada: {}
 
@@ -554,7 +554,7 @@ packages:
       cosmiconfig: 9.0.0
       cspell-trie-lib: 8.9.0
       gensequence: 7.0.0
-      glob: 10.4.1
+      glob: 10.4.2
       hunspell-reader: 8.9.0
       yaml: 2.4.5
     transitivePeerDependencies:
@@ -999,7 +999,7 @@ packages:
       chalk: 5.3.0
       columnify: 1.6.0
       fs-extra: 11.2.0
-      glob: 10.4.1
+      glob: 10.4.2
       has-unicode: 2.0.1
       libnpmaccess: 8.0.6
       libnpmpublish: 9.0.9
@@ -1233,7 +1233,7 @@ packages:
     engines: {node: ^14.17.0 || ^16.13.0 || >=18.0.0}
     dependencies:
       '@npmcli/name-from-folder': 2.0.0
-      glob: 10.4.1
+      glob: 10.4.2
       minimatch: 9.0.4
       read-package-json-fast: 3.0.2
     dev: false
@@ -1266,7 +1266,7 @@ packages:
     engines: {node: ^16.14.0 || >=18.0.0}
     dependencies:
       '@npmcli/git': 5.0.7
-      glob: 10.4.1
+      glob: 10.4.2
       hosted-git-info: 7.0.2
       json-parse-even-better-errors: 3.0.2
       normalize-package-data: 6.0.1
@@ -1700,18 +1700,18 @@ packages:
     resolution: {integrity: sha512-nG96G3Wp6acyAgJqGasjODb+acrI7KltPiRxzHPXnP3NgI28bpQDRv53olbqGXbfcgF5aiiHmO3xpwEpS5Ld9g==}
     dev: true
 
-  /@types/node@16.18.99:
-    resolution: {integrity: sha512-X2Yc+NQaPXDuaR32UmFrTr3OXWaht756A6sJw56o4dehkySBZ0NWH30CCRviuC0KFwTDW/NTjrtbFHhYcHkd6g==}
+  /@types/node@16.18.100:
+    resolution: {integrity: sha512-qN1YgJICdZwDDHInZs9Wzgygzz2QReTd6Q3S0EdGgdzBM9FnES/NqYRRkhJm5GzQfYtnkMPXd+Axg32edW/IEg==}
     dev: false
 
-  /@types/node@18.19.36:
-    resolution: {integrity: sha512-tX1BNmYSWEvViftB26VLNxT6mEr37M7+ldUtq7rlKnv4/2fKYsJIOmqJAjT6h1DNuwQjIKgw3VJ/Dtw3yiTIQw==}
+  /@types/node@18.19.37:
+    resolution: {integrity: sha512-Pi53fdVMk7Ig5IfAMltQQMgtY7xLzHaEous8IQasYsdQbYK3v90FkxI3XYQCe/Qme58pqp14lXJIsFmGP8VoZQ==}
     dependencies:
       undici-types: 5.26.5
     dev: false
 
-  /@types/node@20.14.5:
-    resolution: {integrity: sha512-aoRR+fJkZT2l0aGOJhuA8frnCSoNX6W7U2mpNq63+BxBIj5BQFt8rHy627kijCmm63ijdSdwvGgpUsU6MBsZZA==}
+  /@types/node@20.14.6:
+    resolution: {integrity: sha512-JbA0XIJPL1IiNnU7PFxDXyfAwcwVVrOoqyzzyQTyMeVhBzkJVMSkC1LlVsRQ2lpqiY4n6Bb9oCS6lzDKVQxbZw==}
     dependencies:
       undici-types: 5.26.5
     dev: false
@@ -1726,7 +1726,7 @@ packages:
   /@types/through@0.0.33:
     resolution: {integrity: sha512-HsJ+z3QuETzP3cswwtzt2vEIiHBk/dCcHGhbmG5X3ecnwFD/lPrMpliGXxSCg03L9AhrdwA4Oz/qfspkDW+xGQ==}
     dependencies:
-      '@types/node': 20.14.5
+      '@types/node': 20.14.6
     dev: false
 
   /@types/unist@2.0.10:
@@ -1741,7 +1741,7 @@ packages:
     resolution: {integrity: sha512-Sr2fYMBUVGYq8kj3UthXFAu5UN6ZW+rYr4NACjZQJvHvj+c8lYv0CahmZ2P/r7iUkN44gGUBwqxZkrKXYPb7cw==}
     dependencies:
       '@types/expect': 1.20.4
-      '@types/node': 20.14.5
+      '@types/node': 20.14.6
     dev: false
 
   /@vercel/nft@0.26.5:
@@ -1788,7 +1788,7 @@ packages:
       '@yeoman/types': ^1.0.0
       mem-fs: ^4.0.0
     dependencies:
-      '@types/node': 16.18.99
+      '@types/node': 16.18.100
       '@yeoman/transform': 1.2.0
       '@yeoman/types': 1.2.0(@types/inquirer@9.0.7)(mem-fs@4.1.0)
       binary-extensions: 2.3.0
@@ -1813,7 +1813,7 @@ packages:
     resolution: {integrity: sha512-evb/+2XMEBoHr4BxBeFkjeVTgTS4Qe7VH8DmzZ9kgJK7C7ACPAhW/qBdsKKP1sb5MoeITSaJSVFnc8S1fjZmcw==}
     engines: {node: ^16.13.0 || >=18.12.0}
     dependencies:
-      '@types/node': 16.18.99
+      '@types/node': 16.18.100
       minimatch: 9.0.4
       readable-stream: 4.5.2
     dev: false
@@ -1835,7 +1835,7 @@ packages:
         optional: true
     dependencies:
       '@types/inquirer': 9.0.7
-      '@types/node': 16.18.99
+      '@types/node': 16.18.100
       mem-fs: 4.1.0
     dev: false
 
@@ -2182,7 +2182,7 @@ packages:
     dependencies:
       '@npmcli/fs': 3.1.1
       fs-minipass: 3.0.3
-      glob: 10.4.1
+      glob: 10.4.2
       lru-cache: 10.2.2
       minipass: 7.1.2
       minipass-collect: 2.0.1
@@ -3512,8 +3512,8 @@ packages:
       is-glob: 4.0.3
     dev: true
 
-  /glob@10.4.1:
-    resolution: {integrity: sha512-2jelhlq3E4ho74ZyVLN03oKdAZVUa6UDZzFLVH1H7dnoax+y9qyaq8zBkfDIggjniU19z0wU18y16jMB2eyVIw==}
+  /glob@10.4.2:
+    resolution: {integrity: sha512-GwMlUF6PkPo3Gk21UxkCohOv0PLcIXVtKyLlpEI28R/cO/4eNOdmLk3CMW1wROV/WR/EsZOWAfBbBOqYvs88/w==}
     engines: {node: '>=16 || 14 >=14.18'}
     hasBin: true
     dependencies:
@@ -3521,6 +3521,7 @@ packages:
       jackspeak: 3.4.0
       minimatch: 9.0.4
       minipass: 7.1.2
+      package-json-from-dist: 1.0.0
       path-scurry: 1.11.1
 
   /glob@7.2.3:
@@ -3836,7 +3837,7 @@ packages:
       remark-mdx: 3.0.1
       remark-parse: 11.0.0
       remark-stringify: 11.0.0
-      unified: 11.0.4
+      unified: 11.0.5
       unist-util-is: 6.0.0
       unist-util-remove: 4.0.0
       unist-util-visit: 5.0.0
@@ -4500,7 +4501,7 @@ packages:
       mem-fs: ^4.0.0
     dependencies:
       '@types/ejs': 3.1.5
-      '@types/node': 18.19.36
+      '@types/node': 18.19.37
       binaryextensions: 4.19.0
       commondir: 1.0.1
       deep-extend: 0.6.0
@@ -4519,7 +4520,7 @@ packages:
     resolution: {integrity: sha512-lOB7haBbxO43eZ/++GA+jBMHQ9DNJeliMt35jNutzCfAgEg5gblFCItnzsss8Z4t81bB5jsz77bptqelHQn0Qw==}
     engines: {node: '>=18.0.0'}
     dependencies:
-      '@types/node': 20.14.5
+      '@types/node': 20.14.6
       '@types/vinyl': 2.0.12
       vinyl: 3.0.0
       vinyl-file: 5.0.0
@@ -5073,7 +5074,7 @@ packages:
     dependencies:
       env-paths: 2.2.1
       exponential-backoff: 3.1.1
-      glob: 10.4.1
+      glob: 10.4.2
       graceful-fs: 4.2.11
       make-fetch-happen: 13.0.1
       nopt: 7.2.1
@@ -5417,7 +5418,7 @@ packages:
     resolution: {integrity: sha512-CsXIiCOeBUYMBLpcY71DTq+fg8268ux31pAxI5TcoYEPfWCw5ozrbgWdZ9QmSDd8dUzvNXtmiwJOdTIxIFptfQ==}
     engines: {node: '>=16.13.0'}
     dependencies:
-      '@types/node': 16.18.99
+      '@types/node': 16.18.100
       p-queue: 7.4.1
       readable-stream: 4.5.2
     dev: false
@@ -5433,6 +5434,9 @@ packages:
     dependencies:
       find-up-simple: 1.0.0
       load-json-file: 7.0.1
+
+  /package-json-from-dist@1.0.0:
+    resolution: {integrity: sha512-dATvCeZN/8wQsGywez1mzHtTlP22H8OEfPrVMLNr4/eGa+ijtLn/6M5f0dY8UKNrC2O9UCU6SSoG3qRKnt7STw==}
 
   /package-json@8.1.1:
     resolution: {integrity: sha512-cbH9IAIJHNj9uXi196JVsRlt7cHKak6u/e6AkL/bkRelZ7rlL3X1YKxsZwa36xipOEKAsdtmaG6aAJoM1fx2zA==}
@@ -5744,7 +5748,7 @@ packages:
     engines: {node: ^16.14.0 || >=18.0.0}
     deprecated: This package is no longer supported. Please use @npmcli/package-json instead.
     dependencies:
-      glob: 10.4.1
+      glob: 10.4.2
       json-parse-even-better-errors: 3.0.2
       normalize-package-data: 6.0.1
       npm-normalize-package-bin: 3.0.1
@@ -5835,7 +5839,7 @@ packages:
       micromark-extension-gfm: 3.0.0
       remark-parse: 11.0.0
       remark-stringify: 11.0.0
-      unified: 11.0.4
+      unified: 11.0.5
     transitivePeerDependencies:
       - supports-color
     dev: true
@@ -5855,7 +5859,7 @@ packages:
       '@types/mdast': 4.0.4
       mdast-util-from-markdown: 2.0.1
       micromark-util-types: 2.0.0
-      unified: 11.0.4
+      unified: 11.0.5
     transitivePeerDependencies:
       - supports-color
     dev: true
@@ -5865,7 +5869,7 @@ packages:
     dependencies:
       '@types/mdast': 4.0.4
       mdast-util-to-markdown: 2.1.0
-      unified: 11.0.4
+      unified: 11.0.5
     dev: true
 
   /remark@15.0.1:
@@ -5874,7 +5878,7 @@ packages:
       '@types/mdast': 4.0.4
       remark-parse: 11.0.0
       remark-stringify: 11.0.0
-      unified: 11.0.4
+      unified: 11.0.5
     transitivePeerDependencies:
       - supports-color
     dev: true
@@ -6439,8 +6443,8 @@ packages:
     resolution: {integrity: sha512-lRfVq8fE8gz6QMBuDM6a+LO3IAzTi05H6gCVaUpir2E1Rwpo4ZUog45KpNXKC/Mn3Yb9UDuHumeFTo9iV/D9FQ==}
     engines: {node: '>=18'}
 
-  /unified@11.0.4:
-    resolution: {integrity: sha512-apMPnyLjAX+ty4OrNap7yumyVAMlKx5IWU2wlzzUdYJO9A8f1p9m/gywF/GM2ZDFcjQPrx59Mc90KwmxsoklxQ==}
+  /unified@11.0.5:
+    resolution: {integrity: sha512-xKvGhPWw3k84Qjh8bI3ZeJjqnyadK+GEFtazSfZv/rKeTkTjOJho6mFqh2SM96iIcZokxiOpg78GazTSg8+KHA==}
     dependencies:
       '@types/unist': 3.0.2
       bail: 2.0.2
@@ -6836,7 +6840,7 @@ packages:
         optional: true
     dependencies:
       '@types/lodash-es': 4.17.12
-      '@types/node': 18.19.36
+      '@types/node': 18.19.37
       '@yeoman/namespace': 1.0.0
       '@yeoman/types': 1.2.0(@types/inquirer@9.0.7)(mem-fs@4.1.0)
       chalk: 5.3.0
