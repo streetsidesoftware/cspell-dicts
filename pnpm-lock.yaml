@@ -40,7 +40,7 @@ importers:
         version: link:cspell-dict-file-checker
       cspell-trie:
         specifier: ^8.9.0
-        version: 8.9.0
+        version: 8.9.1
       eslint:
         specifier: ^9.5.0
         version: 9.5.0
@@ -2918,6 +2918,7 @@ packages:
       '@cspell/cspell-pipe': 8.9.0
       '@cspell/cspell-types': 8.9.0
       gensequence: 7.0.0
+    dev: false
 
   /cspell-trie-lib@8.9.1:
     resolution: {integrity: sha512-rUED/lNlFcsRfkMal6+zLz7JW3/cV79KGhwxnwu1fjNS0nlLSAUGTTiAQBQSR+pU/UW+BTkmULHVuNh+DUN93w==}
@@ -2928,13 +2929,13 @@ packages:
       gensequence: 7.0.0
     dev: true
 
-  /cspell-trie@8.9.0:
-    resolution: {integrity: sha512-HlvUgV7gWF18aA7yAOiqQcM5CfdhrgX1RAZ7orN00bQ+NQyxPREHP7diajzD/MO6CdkntuCaxWHyT3f1OOm3lg==}
+  /cspell-trie@8.9.1:
+    resolution: {integrity: sha512-uQtIYAqygm77Oa/LSK6Ju06G/9u/5W+/MO3sCwrnhoihHhmcDa94eRgwqUhXyy9wL/5SwpgxJT8rSkciiapZkg==}
     engines: {node: '>=18'}
     hasBin: true
     dependencies:
       commander: 12.1.0
-      cspell-trie-lib: 8.9.0
+      cspell-trie-lib: 8.9.1
       gensequence: 7.0.0
     dev: true
 
