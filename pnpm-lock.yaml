@@ -10,7 +10,7 @@ importers:
     devDependencies:
       '@cspell/cspell-tools':
         specifier: ^8.9.0
-        version: 8.9.0
+        version: 8.9.1
       '@lerna-lite/cli':
         specifier: ^3.5.1
         version: 3.5.1(@lerna-lite/exec@3.5.1)(@lerna-lite/publish@3.5.2)(@lerna-lite/run@3.5.1)(@lerna-lite/version@3.5.2)
@@ -630,18 +630,18 @@ packages:
     engines: {node: '>=18'}
     dev: true
 
-  /@cspell/cspell-tools@8.9.0:
-    resolution: {integrity: sha512-bGPoN3cUur60DGQjBRl0v4PMy1EOiqSqQEK/NlfcTm7s2r9antlNWRR/iXL7te1NBWGndSGVYoN9ukpa12QBHw==}
+  /@cspell/cspell-tools@8.9.1:
+    resolution: {integrity: sha512-ckpQZ2dVrwkiM4TZCzrb20FWhBwszQHDxwhOhHaLKyaZ67J2zFGPRUSNpFnz99CfOivCKE/rV1r3dxBJdYkQGQ==}
     engines: {node: '>=18'}
     hasBin: true
     dependencies:
-      '@cspell/cspell-pipe': 8.9.0
+      '@cspell/cspell-pipe': 8.9.1
       commander: 12.1.0
       cosmiconfig: 9.0.0
-      cspell-trie-lib: 8.9.0
+      cspell-trie-lib: 8.9.1
       gensequence: 7.0.0
       glob: 10.4.2
-      hunspell-reader: 8.9.0
+      hunspell-reader: 8.9.1
       yaml: 2.4.5
     transitivePeerDependencies:
       - typescript
@@ -3964,6 +3964,19 @@ packages:
     dependencies:
       '@cspell/cspell-pipe': 8.9.0
       '@cspell/cspell-types': 8.9.0
+      commander: 12.1.0
+      gensequence: 7.0.0
+      html-entities: 2.5.2
+      iconv-lite: 0.6.3
+    dev: true
+
+  /hunspell-reader@8.9.1:
+    resolution: {integrity: sha512-GPF6En9vJyiG2exyKYeWk5/1h2yaxh6xyDz33oqX6tdNzePp2zvaNAquWBapjQhDC7p1RgVUtCfmvdRZ3DPf9g==}
+    engines: {node: '>=18'}
+    hasBin: true
+    dependencies:
+      '@cspell/cspell-pipe': 8.9.1
+      '@cspell/cspell-types': 8.9.1
       commander: 12.1.0
       gensequence: 7.0.0
       html-entities: 2.5.2
