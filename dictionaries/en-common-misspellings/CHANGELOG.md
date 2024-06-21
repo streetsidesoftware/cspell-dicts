@@ -9,6 +9,7 @@
 
 ## [2.0.2](https://github.com/streetsidesoftware/cspell-dicts/compare/@cspell/dict-en-common-misspellings@2.0.1...@cspell/dict-en-common-misspellings@2.0.2) (2024-06-17)
 
+<!--- cspell:ignore colum --->
 
 ### Updates and Bug Fixes
 

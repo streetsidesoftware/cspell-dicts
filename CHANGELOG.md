@@ -10,6 +10,8 @@
 * Workflow Bot -- Build Dictionaries ([#3314](https://github.com/streetsidesoftware/cspell-dicts/issues/3314)) ([5e9d5e3](https://github.com/streetsidesoftware/cspell-dicts/commit/5e9d5e3663e4eb21c683932108453e67d86919c3))
 * Workflow Bot -- Build Dictionaries ([#3315](https://github.com/streetsidesoftware/cspell-dicts/issues/3315)) ([2c55227](https://github.com/streetsidesoftware/cspell-dicts/commit/2c55227af65eaeb1798ffc9d568c8ff8e5cbd022))
 
+<!--- cspell:ignore colum --->
+
 ## [26.4.3](https://github.com/streetsidesoftware/cspell-dicts/compare/cspell-dicts@26.4.2...cspell-dicts@26.4.3) (2024-06-17)
 
 
