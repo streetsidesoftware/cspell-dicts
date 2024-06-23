@@ -1,5 +1,15 @@
 # Release Notes
 
+## [26.4.5](https://github.com/streetsidesoftware/cspell-dicts/compare/cspell-dicts@26.4.4...cspell-dicts@26.4.5) (2024-06-23)
+
+
+### Updates and Bug Fixes
+
+* Add more Hex Speak terms ([#3330](https://github.com/streetsidesoftware/cspell-dicts/issues/3330)) ([9b0005f](https://github.com/streetsidesoftware/cspell-dicts/commit/9b0005f4cb61c107c722632707b985b1d8987db9))
+* Update people-names dictionary ([#3323](https://github.com/streetsidesoftware/cspell-dicts/issues/3323)) ([7b1a22d](https://github.com/streetsidesoftware/cspell-dicts/commit/7b1a22db8a5de997a7424aec4593d128916c04a0))
+* Workflow Bot -- Build Dictionaries ([#3325](https://github.com/streetsidesoftware/cspell-dicts/issues/3325)) ([0372a0a](https://github.com/streetsidesoftware/cspell-dicts/commit/0372a0a15910742b5f3b0262bbe655b9884ee746))
+* Workflow Bot -- Build Dictionaries ([#3331](https://github.com/streetsidesoftware/cspell-dicts/issues/3331)) ([783a59e](https://github.com/streetsidesoftware/cspell-dicts/commit/783a59e2cba2f1c070ab5c83003c20e77f9525bc))
+
 ## [26.4.4](https://github.com/streetsidesoftware/cspell-dicts/compare/cspell-dicts@26.4.3...cspell-dicts@26.4.4) (2024-06-20)
 
 
