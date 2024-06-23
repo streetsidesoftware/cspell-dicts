@@ -11,3 +11,8 @@ ignoreWords:
 ignorePaths:
   - CHANGELOG.md
   - dict
+patterns:
+  - name: term-comment
+    pattern: '/#.*/g'
+ignoreRegExpList:
+  - term-comment
