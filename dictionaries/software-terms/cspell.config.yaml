@@ -14,5 +14,7 @@ ignorePaths:
 patterns:
   - name: term-comment
     pattern: '/#.*/g'
-ignoreRegExpList:
-  - term-comment
+overrides:
+  - filename: 'src/*.txt'
+    ignoreRegExpList:
+      - term-comment
