@@ -13,7 +13,7 @@ importers:
         version: 8.9.1
       '@lerna-lite/cli':
         specifier: ^3.5.1
-        version: 3.5.1(@lerna-lite/exec@3.5.1)(@lerna-lite/publish@3.5.2)(@lerna-lite/run@3.5.1)(@lerna-lite/version@3.5.2)
+        version: 3.5.1(@lerna-lite/exec@3.5.1(@lerna-lite/publish@3.5.2)(@lerna-lite/run@3.5.1))(@lerna-lite/publish@3.5.2(@lerna-lite/exec@3.5.1)(@lerna-lite/run@3.5.1))(@lerna-lite/run@3.5.1(@lerna-lite/exec@3.5.1)(@lerna-lite/publish@3.5.2))(@lerna-lite/version@3.5.2(@lerna-lite/exec@3.5.1(@lerna-lite/publish@3.5.2)(@lerna-lite/run@3.5.1))(@lerna-lite/publish@3.5.2(@lerna-lite/exec@3.5.1)(@lerna-lite/run@3.5.1))(@lerna-lite/run@3.5.1(@lerna-lite/exec@3.5.1)(@lerna-lite/publish@3.5.2)))
       '@lerna-lite/exec':
         specifier: ^3.5.1
         version: 3.5.1(@lerna-lite/publish@3.5.2)(@lerna-lite/run@3.5.1)
@@ -25,7 +25,7 @@ importers:
         version: 3.5.1(@lerna-lite/exec@3.5.1)(@lerna-lite/publish@3.5.2)
       ava:
         specifier: ^6.1.3
-        version: 6.1.3
+        version: 6.1.3(encoding@0.1.13)
       cpy-cli:
         specifier: ^5.0.0
         version: 5.0.0
@@ -76,7 +76,7 @@ importers:
     dependencies:
       ava:
         specifier: ^6.1.3
-        version: 6.1.3
+        version: 6.1.3(encoding@0.1.13)
       cspell:
         specifier: ^8.9.1
         version: 8.9.1
@@ -425,10 +425,10 @@ importers:
         version: 5.3.0
       yeoman-environment:
         specifier: ^4.4.1
-        version: 4.4.1(@yeoman/types@1.2.0)(mem-fs@4.1.0)
+        version: 4.4.1(@yeoman/types@1.2.0(@types/inquirer@9.0.7)(mem-fs@4.1.0))(mem-fs@4.1.0)
       yeoman-generator:
         specifier: ^7.3.1
-        version: 7.3.1(@yeoman/types@1.2.0)(mem-fs@4.1.0)(yeoman-environment@4.4.1)
+        version: 7.3.1(@yeoman/types@1.2.0(@types/inquirer@9.0.7)(mem-fs@4.1.0))(encoding@0.1.13)(mem-fs@4.1.0)(yeoman-environment@4.4.1(@yeoman/types@1.2.0(@types/inquirer@9.0.7)(mem-fs@4.1.0))(mem-fs@4.1.0))
       yosay:
         specifier: ^3.0.0
         version: 3.0.0
@@ -1058,11 +1058,11 @@ packages:
   '@types/node@16.18.101':
     resolution: {integrity: sha512-AAsx9Rgz2IzG8KJ6tXd6ndNkVcu+GYB6U/SnFAaokSPNx2N7dcIIfnighYUNumvj6YS2q39Dejz5tT0NCV7CWA==}
 
-  '@types/node@18.19.38':
-    resolution: {integrity: sha512-SApYXUF7si4JJ+lO2o6X60OPOnA6wPpbiB09GMCkQ+JAwpa9hxUVG8p7GzA08TKQn5OhzK57rj1wFj+185YsGg==}
+  '@types/node@18.19.39':
+    resolution: {integrity: sha512-nPwTRDKUctxw3di5b4TfT3I0sWDiWoPQCZjXhvdkINntwr8lcoVCKsTgnXeRubKIlfnV+eN/HYk6Jb40tbcEAQ==}
 
-  '@types/node@20.14.7':
-    resolution: {integrity: sha512-uTr2m2IbJJucF3KUxgnGOZvYbN0QgkGyWxG6973HCpMYFy2KfcgYuIwkJQMQkt1VbBMlvWRbpshFTLxnxCZjKQ==}
+  '@types/node@20.14.8':
+    resolution: {integrity: sha512-DO+2/jZinXfROG7j7WKFn/3C6nFwxy2lLpgLjEXJz+0XKphZlTLJ14mo8Vfg8X5BWN6XjyESXq+LcYdT7tR3bA==}
 
   '@types/normalize-package-data@2.4.4':
     resolution: {integrity: sha512-37i+OaWTh9qeK4LSHPsyRC7NahnGotNuZvjLSgcPzblpHB3rrCJxAOgI5gCdKm7coonsaX1Of0ILiTcnZjbfxA==}
@@ -1206,7 +1206,6 @@ packages:
 
   aoo-mozilla-en-dict@https://codeload.github.com/marcoagpinto/aoo-mozilla-en-dict/tar.gz/ae7f87d4f83a1cf276ccac0beb93514c34d83cf5:
     resolution: {tarball: https://codeload.github.com/marcoagpinto/aoo-mozilla-en-dict/tar.gz/ae7f87d4f83a1cf276ccac0beb93514c34d83cf5}
-    name: aoo-mozilla-en-dict
     version: 0.0.0
 
   aproba@2.0.0:
@@ -2171,7 +2170,6 @@ packages:
 
   go-words@https://codeload.github.com/AlekSi/go-words/tar.gz/b118b08691a30334ec87f4de26c5707405fb93dd:
     resolution: {tarball: https://codeload.github.com/AlekSi/go-words/tar.gz/b118b08691a30334ec87f4de26c5707405fb93dd}
-    name: go-words
     version: 0.0.0
 
   gopd@1.0.1:
@@ -3929,7 +3927,6 @@ packages:
 
   wordlist-medicalterms-en#d87b48e@https://codeload.github.com/Glutanimate/wordlist-medicalterms-en/tar.gz/d87b48e:
     resolution: {tarball: https://codeload.github.com/Glutanimate/wordlist-medicalterms-en/tar.gz/d87b48e}
-    name: wordlist-medicalterms-en#d87b48e
     version: 0.0.0
 
   wordwrap@1.0.0:
@@ -4302,20 +4299,21 @@ snapshots:
 
   '@kwsites/promise-deferred@1.1.1': {}
 
-  '@lerna-lite/cli@3.5.1(@lerna-lite/exec@3.5.1)(@lerna-lite/publish@3.5.2)(@lerna-lite/run@3.5.1)(@lerna-lite/version@3.5.2)':
+  '@lerna-lite/cli@3.5.1(@lerna-lite/exec@3.5.1(@lerna-lite/publish@3.5.2)(@lerna-lite/run@3.5.1))(@lerna-lite/publish@3.5.2(@lerna-lite/exec@3.5.1)(@lerna-lite/run@3.5.1))(@lerna-lite/run@3.5.1(@lerna-lite/exec@3.5.1)(@lerna-lite/publish@3.5.2))(@lerna-lite/version@3.5.2(@lerna-lite/exec@3.5.1(@lerna-lite/publish@3.5.2)(@lerna-lite/run@3.5.1))(@lerna-lite/publish@3.5.2(@lerna-lite/exec@3.5.1)(@lerna-lite/run@3.5.1))(@lerna-lite/run@3.5.1(@lerna-lite/exec@3.5.1)(@lerna-lite/publish@3.5.2)))':
     dependencies:
       '@lerna-lite/core': 3.5.1
-      '@lerna-lite/exec': 3.5.1(@lerna-lite/publish@3.5.2)(@lerna-lite/run@3.5.1)
       '@lerna-lite/init': 3.5.1
-      '@lerna-lite/publish': 3.5.2(@lerna-lite/exec@3.5.1)(@lerna-lite/run@3.5.1)
-      '@lerna-lite/run': 3.5.1(@lerna-lite/exec@3.5.1)(@lerna-lite/publish@3.5.2)
-      '@lerna-lite/version': 3.5.2(@lerna-lite/exec@3.5.1)(@lerna-lite/publish@3.5.2)(@lerna-lite/run@3.5.1)
       dedent: 1.5.3
       dotenv: 16.4.5
       import-local: 3.1.0
       load-json-file: 7.0.1
       npmlog: 7.0.1
       yargs: 17.7.2
+    optionalDependencies:
+      '@lerna-lite/exec': 3.5.1(@lerna-lite/publish@3.5.2)(@lerna-lite/run@3.5.1)
+      '@lerna-lite/publish': 3.5.2(@lerna-lite/exec@3.5.1)(@lerna-lite/run@3.5.1)
+      '@lerna-lite/run': 3.5.1(@lerna-lite/exec@3.5.1)(@lerna-lite/publish@3.5.2)
+      '@lerna-lite/version': 3.5.2(@lerna-lite/exec@3.5.1(@lerna-lite/publish@3.5.2)(@lerna-lite/run@3.5.1))(@lerna-lite/publish@3.5.2(@lerna-lite/exec@3.5.1)(@lerna-lite/run@3.5.1))(@lerna-lite/run@3.5.1(@lerna-lite/exec@3.5.1)(@lerna-lite/publish@3.5.2))
     transitivePeerDependencies:
       - babel-plugin-macros
       - bluebird
@@ -4358,7 +4356,7 @@ snapshots:
 
   '@lerna-lite/exec@3.5.1(@lerna-lite/publish@3.5.2)(@lerna-lite/run@3.5.1)':
     dependencies:
-      '@lerna-lite/cli': 3.5.1(@lerna-lite/exec@3.5.1)(@lerna-lite/publish@3.5.2)(@lerna-lite/run@3.5.1)(@lerna-lite/version@3.5.2)
+      '@lerna-lite/cli': 3.5.1(@lerna-lite/exec@3.5.1(@lerna-lite/publish@3.5.2)(@lerna-lite/run@3.5.1))(@lerna-lite/publish@3.5.2(@lerna-lite/exec@3.5.1)(@lerna-lite/run@3.5.1))(@lerna-lite/run@3.5.1(@lerna-lite/exec@3.5.1)(@lerna-lite/publish@3.5.2))(@lerna-lite/version@3.5.2(@lerna-lite/exec@3.5.1(@lerna-lite/publish@3.5.2)(@lerna-lite/run@3.5.1))(@lerna-lite/publish@3.5.2(@lerna-lite/exec@3.5.1)(@lerna-lite/run@3.5.1))(@lerna-lite/run@3.5.1(@lerna-lite/exec@3.5.1)(@lerna-lite/publish@3.5.2)))
       '@lerna-lite/core': 3.5.1
       '@lerna-lite/filter-packages': 3.5.1
       '@lerna-lite/profiler': 3.5.1
@@ -4414,9 +4412,9 @@ snapshots:
 
   '@lerna-lite/publish@3.5.2(@lerna-lite/exec@3.5.1)(@lerna-lite/run@3.5.1)':
     dependencies:
-      '@lerna-lite/cli': 3.5.1(@lerna-lite/exec@3.5.1)(@lerna-lite/publish@3.5.2)(@lerna-lite/run@3.5.1)(@lerna-lite/version@3.5.2)
+      '@lerna-lite/cli': 3.5.1(@lerna-lite/exec@3.5.1(@lerna-lite/publish@3.5.2)(@lerna-lite/run@3.5.1))(@lerna-lite/publish@3.5.2(@lerna-lite/exec@3.5.1)(@lerna-lite/run@3.5.1))(@lerna-lite/run@3.5.1(@lerna-lite/exec@3.5.1)(@lerna-lite/publish@3.5.2))(@lerna-lite/version@3.5.2(@lerna-lite/exec@3.5.1(@lerna-lite/publish@3.5.2)(@lerna-lite/run@3.5.1))(@lerna-lite/publish@3.5.2(@lerna-lite/exec@3.5.1)(@lerna-lite/run@3.5.1))(@lerna-lite/run@3.5.1(@lerna-lite/exec@3.5.1)(@lerna-lite/publish@3.5.2)))
       '@lerna-lite/core': 3.5.1
-      '@lerna-lite/version': 3.5.2(@lerna-lite/exec@3.5.1)(@lerna-lite/publish@3.5.2)(@lerna-lite/run@3.5.1)
+      '@lerna-lite/version': 3.5.2(@lerna-lite/exec@3.5.1(@lerna-lite/publish@3.5.2)(@lerna-lite/run@3.5.1))(@lerna-lite/publish@3.5.2(@lerna-lite/exec@3.5.1)(@lerna-lite/run@3.5.1))(@lerna-lite/run@3.5.1(@lerna-lite/exec@3.5.1)(@lerna-lite/publish@3.5.2))
       byte-size: 8.1.1
       chalk: 5.3.0
       columnify: 1.6.0
@@ -4451,7 +4449,7 @@ snapshots:
 
   '@lerna-lite/run@3.5.1(@lerna-lite/exec@3.5.1)(@lerna-lite/publish@3.5.2)':
     dependencies:
-      '@lerna-lite/cli': 3.5.1(@lerna-lite/exec@3.5.1)(@lerna-lite/publish@3.5.2)(@lerna-lite/run@3.5.1)(@lerna-lite/version@3.5.2)
+      '@lerna-lite/cli': 3.5.1(@lerna-lite/exec@3.5.1(@lerna-lite/publish@3.5.2)(@lerna-lite/run@3.5.1))(@lerna-lite/publish@3.5.2(@lerna-lite/exec@3.5.1)(@lerna-lite/run@3.5.1))(@lerna-lite/run@3.5.1(@lerna-lite/exec@3.5.1)(@lerna-lite/publish@3.5.2))(@lerna-lite/version@3.5.2(@lerna-lite/exec@3.5.1(@lerna-lite/publish@3.5.2)(@lerna-lite/run@3.5.1))(@lerna-lite/publish@3.5.2(@lerna-lite/exec@3.5.1)(@lerna-lite/run@3.5.1))(@lerna-lite/run@3.5.1(@lerna-lite/exec@3.5.1)(@lerna-lite/publish@3.5.2)))
       '@lerna-lite/core': 3.5.1
       '@lerna-lite/filter-packages': 3.5.1
       '@lerna-lite/profiler': 3.5.1
@@ -4470,9 +4468,9 @@ snapshots:
       - supports-color
       - typescript
 
-  '@lerna-lite/version@3.5.2(@lerna-lite/exec@3.5.1)(@lerna-lite/publish@3.5.2)(@lerna-lite/run@3.5.1)':
+  '@lerna-lite/version@3.5.2(@lerna-lite/exec@3.5.1(@lerna-lite/publish@3.5.2)(@lerna-lite/run@3.5.1))(@lerna-lite/publish@3.5.2(@lerna-lite/exec@3.5.1)(@lerna-lite/run@3.5.1))(@lerna-lite/run@3.5.1(@lerna-lite/exec@3.5.1)(@lerna-lite/publish@3.5.2))':
     dependencies:
-      '@lerna-lite/cli': 3.5.1(@lerna-lite/exec@3.5.1)(@lerna-lite/publish@3.5.2)(@lerna-lite/run@3.5.1)(@lerna-lite/version@3.5.2)
+      '@lerna-lite/cli': 3.5.1(@lerna-lite/exec@3.5.1(@lerna-lite/publish@3.5.2)(@lerna-lite/run@3.5.1))(@lerna-lite/publish@3.5.2(@lerna-lite/exec@3.5.1)(@lerna-lite/run@3.5.1))(@lerna-lite/run@3.5.1(@lerna-lite/exec@3.5.1)(@lerna-lite/publish@3.5.2))(@lerna-lite/version@3.5.2(@lerna-lite/exec@3.5.1(@lerna-lite/publish@3.5.2)(@lerna-lite/run@3.5.1))(@lerna-lite/publish@3.5.2(@lerna-lite/exec@3.5.1)(@lerna-lite/run@3.5.1))(@lerna-lite/run@3.5.1(@lerna-lite/exec@3.5.1)(@lerna-lite/publish@3.5.2)))
       '@lerna-lite/core': 3.5.1
       '@octokit/plugin-enterprise-rest': 6.0.1
       '@octokit/rest': 20.1.1
@@ -4520,12 +4518,12 @@ snapshots:
     dependencies:
       call-bind: 1.0.7
 
-  '@mapbox/node-pre-gyp@1.0.11':
+  '@mapbox/node-pre-gyp@1.0.11(encoding@0.1.13)':
     dependencies:
       detect-libc: 2.0.3
       https-proxy-agent: 5.0.1
       make-dir: 3.1.0
-      node-fetch: 2.7.0
+      node-fetch: 2.7.0(encoding@0.1.13)
       nopt: 5.0.0
       npmlog: 5.0.1
       rimraf: 3.0.2
@@ -4682,11 +4680,11 @@ snapshots:
 
   '@octokit/auth-token@4.0.0': {}
 
-  '@octokit/core@3.6.0':
+  '@octokit/core@3.6.0(encoding@0.1.13)':
     dependencies:
       '@octokit/auth-token': 2.5.0
-      '@octokit/graphql': 4.8.0
-      '@octokit/request': 5.6.3
+      '@octokit/graphql': 4.8.0(encoding@0.1.13)
+      '@octokit/request': 5.6.3(encoding@0.1.13)
       '@octokit/request-error': 2.1.0
       '@octokit/types': 6.41.0
       before-after-hook: 2.2.3
@@ -4715,9 +4713,9 @@ snapshots:
       '@octokit/types': 13.5.0
       universal-user-agent: 6.0.1
 
-  '@octokit/graphql@4.8.0':
+  '@octokit/graphql@4.8.0(encoding@0.1.13)':
     dependencies:
-      '@octokit/request': 5.6.3
+      '@octokit/request': 5.6.3(encoding@0.1.13)
       '@octokit/types': 6.41.0
       universal-user-agent: 6.0.1
     transitivePeerDependencies:
@@ -4740,14 +4738,14 @@ snapshots:
       '@octokit/core': 5.2.0
       '@octokit/types': 13.5.0
 
-  '@octokit/plugin-paginate-rest@2.21.3(@octokit/core@3.6.0)':
+  '@octokit/plugin-paginate-rest@2.21.3(@octokit/core@3.6.0(encoding@0.1.13))':
     dependencies:
-      '@octokit/core': 3.6.0
+      '@octokit/core': 3.6.0(encoding@0.1.13)
       '@octokit/types': 6.41.0
 
-  '@octokit/plugin-request-log@1.0.4(@octokit/core@3.6.0)':
+  '@octokit/plugin-request-log@1.0.4(@octokit/core@3.6.0(encoding@0.1.13))':
     dependencies:
-      '@octokit/core': 3.6.0
+      '@octokit/core': 3.6.0(encoding@0.1.13)
 
   '@octokit/plugin-request-log@4.0.1(@octokit/core@5.2.0)':
     dependencies:
@@ -4758,9 +4756,9 @@ snapshots:
       '@octokit/core': 5.2.0
       '@octokit/types': 13.5.0
 
-  '@octokit/plugin-rest-endpoint-methods@5.16.2(@octokit/core@3.6.0)':
+  '@octokit/plugin-rest-endpoint-methods@5.16.2(@octokit/core@3.6.0(encoding@0.1.13))':
     dependencies:
-      '@octokit/core': 3.6.0
+      '@octokit/core': 3.6.0(encoding@0.1.13)
       '@octokit/types': 6.41.0
       deprecation: 2.3.1
 
@@ -4776,13 +4774,13 @@ snapshots:
       deprecation: 2.3.1
       once: 1.4.0
 
-  '@octokit/request@5.6.3':
+  '@octokit/request@5.6.3(encoding@0.1.13)':
     dependencies:
       '@octokit/endpoint': 6.0.12
       '@octokit/request-error': 2.1.0
       '@octokit/types': 6.41.0
       is-plain-object: 5.0.0
-      node-fetch: 2.7.0
+      node-fetch: 2.7.0(encoding@0.1.13)
       universal-user-agent: 6.0.1
     transitivePeerDependencies:
       - encoding
@@ -4794,12 +4792,12 @@ snapshots:
       '@octokit/types': 13.5.0
       universal-user-agent: 6.0.1
 
-  '@octokit/rest@18.12.0':
+  '@octokit/rest@18.12.0(encoding@0.1.13)':
     dependencies:
-      '@octokit/core': 3.6.0
-      '@octokit/plugin-paginate-rest': 2.21.3(@octokit/core@3.6.0)
-      '@octokit/plugin-request-log': 1.0.4(@octokit/core@3.6.0)
-      '@octokit/plugin-rest-endpoint-methods': 5.16.2(@octokit/core@3.6.0)
+      '@octokit/core': 3.6.0(encoding@0.1.13)
+      '@octokit/plugin-paginate-rest': 2.21.3(@octokit/core@3.6.0(encoding@0.1.13))
+      '@octokit/plugin-request-log': 1.0.4(@octokit/core@3.6.0(encoding@0.1.13))
+      '@octokit/plugin-rest-endpoint-methods': 5.16.2(@octokit/core@3.6.0(encoding@0.1.13))
     transitivePeerDependencies:
       - encoding
 
@@ -4932,11 +4930,11 @@ snapshots:
 
   '@types/node@16.18.101': {}
 
-  '@types/node@18.19.38':
+  '@types/node@18.19.39':
     dependencies:
       undici-types: 5.26.5
 
-  '@types/node@20.14.7':
+  '@types/node@20.14.8':
     dependencies:
       undici-types: 5.26.5
 
@@ -4946,7 +4944,7 @@ snapshots:
 
   '@types/through@0.0.33':
     dependencies:
-      '@types/node': 20.14.7
+      '@types/node': 20.14.8
 
   '@types/unist@2.0.10': {}
 
@@ -4955,11 +4953,11 @@ snapshots:
   '@types/vinyl@2.0.12':
     dependencies:
       '@types/expect': 1.20.4
-      '@types/node': 20.14.7
+      '@types/node': 20.14.8
 
-  '@vercel/nft@0.26.5':
+  '@vercel/nft@0.26.5(encoding@0.1.13)':
     dependencies:
-      '@mapbox/node-pre-gyp': 1.0.11
+      '@mapbox/node-pre-gyp': 1.0.11(encoding@0.1.13)
       '@rollup/pluginutils': 4.2.1
       acorn: 8.12.0
       acorn-import-attributes: 1.9.5(acorn@8.12.0)
@@ -4975,7 +4973,7 @@ snapshots:
       - encoding
       - supports-color
 
-  '@yeoman/adapter@1.4.0(@yeoman/types@1.2.0)':
+  '@yeoman/adapter@1.4.0(@yeoman/types@1.2.0(@types/inquirer@9.0.7)(mem-fs@4.1.0))':
     dependencies:
       '@types/inquirer': 9.0.7
       '@yeoman/types': 1.2.0(@types/inquirer@9.0.7)(mem-fs@4.1.0)
@@ -4986,7 +4984,7 @@ snapshots:
       p-queue: 7.4.1
       text-table: 0.2.0
 
-  '@yeoman/conflicter@2.0.0(@yeoman/types@1.2.0)(mem-fs@4.1.0)':
+  '@yeoman/conflicter@2.0.0(@yeoman/types@1.2.0(@types/inquirer@9.0.7)(mem-fs@4.1.0))(mem-fs@4.1.0)':
     dependencies:
       '@types/node': 16.18.101
       '@yeoman/transform': 1.2.0
@@ -5015,6 +5013,7 @@ snapshots:
     dependencies:
       '@types/inquirer': 9.0.7
       '@types/node': 16.18.101
+    optionalDependencies:
       mem-fs: 4.1.0
 
   JSONStream@1.3.5:
@@ -5128,9 +5127,9 @@ snapshots:
 
   async@3.2.5: {}
 
-  ava@6.1.3:
+  ava@6.1.3(encoding@0.1.13):
     dependencies:
-      '@vercel/nft': 0.26.5
+      '@vercel/nft': 0.26.5(encoding@0.1.13)
       acorn: 8.12.0
       acorn-walk: 8.3.3
       ansi-styles: 6.2.1
@@ -6074,9 +6073,9 @@ snapshots:
     dependencies:
       git-up: 7.0.0
 
-  github-username@7.0.0:
+  github-username@7.0.0(encoding@0.1.13):
     dependencies:
-      '@octokit/rest': 18.12.0
+      '@octokit/rest': 18.12.0(encoding@0.1.13)
     transitivePeerDependencies:
       - encoding
 
@@ -6746,7 +6745,7 @@ snapshots:
   mem-fs-editor@11.0.1(mem-fs@4.1.0):
     dependencies:
       '@types/ejs': 3.1.5
-      '@types/node': 18.19.38
+      '@types/node': 18.19.39
       binaryextensions: 4.19.0
       commondir: 1.0.1
       deep-extend: 0.6.0
@@ -6762,7 +6761,7 @@ snapshots:
 
   mem-fs@4.1.0:
     dependencies:
-      '@types/node': 20.14.7
+      '@types/node': 20.14.8
       '@types/vinyl': 2.0.12
       vinyl: 3.0.0
       vinyl-file: 5.0.0
@@ -7142,9 +7141,11 @@ snapshots:
 
   node-domexception@1.0.0: {}
 
-  node-fetch@2.7.0:
+  node-fetch@2.7.0(encoding@0.1.13):
     dependencies:
       whatwg-url: 5.0.0
+    optionalDependencies:
+      encoding: 0.1.13
 
   node-fetch@3.3.2:
     dependencies:
@@ -8272,10 +8273,10 @@ snapshots:
       y18n: 5.0.8
       yargs-parser: 21.1.1
 
-  yeoman-environment@4.4.1(@yeoman/types@1.2.0)(mem-fs@4.1.0):
+  yeoman-environment@4.4.1(@yeoman/types@1.2.0(@types/inquirer@9.0.7)(mem-fs@4.1.0))(mem-fs@4.1.0):
     dependencies:
-      '@yeoman/adapter': 1.4.0(@yeoman/types@1.2.0)
-      '@yeoman/conflicter': 2.0.0(@yeoman/types@1.2.0)(mem-fs@4.1.0)
+      '@yeoman/adapter': 1.4.0(@yeoman/types@1.2.0(@types/inquirer@9.0.7)(mem-fs@4.1.0))
+      '@yeoman/conflicter': 2.0.0(@yeoman/types@1.2.0(@types/inquirer@9.0.7)(mem-fs@4.1.0))(mem-fs@4.1.0)
       '@yeoman/namespace': 1.0.0
       '@yeoman/transform': 1.2.0
       '@yeoman/types': 1.2.0(@types/inquirer@9.0.7)(mem-fs@4.1.0)
@@ -8299,16 +8300,16 @@ snapshots:
       - bluebird
       - supports-color
 
-  yeoman-generator@7.3.1(@yeoman/types@1.2.0)(mem-fs@4.1.0)(yeoman-environment@4.4.1):
+  yeoman-generator@7.3.1(@yeoman/types@1.2.0(@types/inquirer@9.0.7)(mem-fs@4.1.0))(encoding@0.1.13)(mem-fs@4.1.0)(yeoman-environment@4.4.1(@yeoman/types@1.2.0(@types/inquirer@9.0.7)(mem-fs@4.1.0))(mem-fs@4.1.0)):
     dependencies:
       '@types/lodash-es': 4.17.12
-      '@types/node': 18.19.38
+      '@types/node': 18.19.39
       '@yeoman/namespace': 1.0.0
       '@yeoman/types': 1.2.0(@types/inquirer@9.0.7)(mem-fs@4.1.0)
       chalk: 5.3.0
       debug: 4.3.5
       execa: 8.0.1
-      github-username: 7.0.0
+      github-username: 7.0.0(encoding@0.1.13)
       json-schema: 0.4.0
       latest-version: 7.0.0
       lodash-es: 4.17.21
@@ -8320,7 +8321,8 @@ snapshots:
       simple-git: 3.25.0
       sort-keys: 5.0.0
       text-table: 0.2.0
-      yeoman-environment: 4.4.1(@yeoman/types@1.2.0)(mem-fs@4.1.0)
+    optionalDependencies:
+      yeoman-environment: 4.4.1(@yeoman/types@1.2.0(@types/inquirer@9.0.7)(mem-fs@4.1.0))(mem-fs@4.1.0)
     transitivePeerDependencies:
       - encoding
       - supports-color
