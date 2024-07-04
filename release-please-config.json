@@ -182,10 +182,6 @@
             "component": "@cspell/dict-en-common-misspellings",
             "releaseType": "node"
         },
-        "dictionaries/en-freq": {
-            "component": "@internal/en-freq",
-            "releaseType": "node"
-        },
         "dictionaries/en_AU": {
             "component": "@cspell/dict-en-au",
             "releaseType": "node"
@@ -524,6 +520,10 @@
         },
         "dictionaries/win32": {
             "component": "@cspell/dict-win32",
+            "releaseType": "node"
+        },
+        "packages/en-freq": {
+            "component": "@internal/en-freq",
             "releaseType": "node"
         }
     }
