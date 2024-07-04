@@ -160,37 +160,6 @@ importers:
 
   dictionaries/en-common-misspellings: {}
 
-  dictionaries/en-freq:
-    dependencies:
-      '@cspell/cspell-pipe':
-        specifier: ^8.10.0
-        version: 8.10.0
-      as-table:
-        specifier: ^1.0.55
-        version: 1.0.55
-      chalk:
-        specifier: ^5.3.0
-        version: 5.3.0
-      commander:
-        specifier: ^12.1.0
-        version: 12.1.0
-      cspell-trie-lib:
-        specifier: ^8.10.0
-        version: 8.10.0
-      globby:
-        specifier: ^14.0.2
-        version: 14.0.2
-    devDependencies:
-      '@tsconfig/node20':
-        specifier: ^20.1.4
-        version: 20.1.4
-      '@types/node':
-        specifier: ^20.14.9
-        version: 20.14.9
-      typescript:
-        specifier: ^5.5.3
-        version: 5.5.3
-
   dictionaries/en_AU:
     devDependencies:
       '@cspell/dict-en-shared':
@@ -355,7 +324,7 @@ importers:
     devDependencies:
       '@internal/en-freq':
         specifier: workspace:*
-        version: link:../en-freq
+        version: link:../../packages/en-freq
 
   dictionaries/php: {}
 
@@ -467,6 +436,37 @@ importers:
       yosay:
         specifier: ^3.0.0
         version: 3.0.0
+
+  packages/en-freq:
+    dependencies:
+      '@cspell/cspell-pipe':
+        specifier: ^8.10.0
+        version: 8.10.0
+      as-table:
+        specifier: ^1.0.55
+        version: 1.0.55
+      chalk:
+        specifier: ^5.3.0
+        version: 5.3.0
+      commander:
+        specifier: ^12.1.0
+        version: 12.1.0
+      cspell-trie-lib:
+        specifier: ^8.10.0
+        version: 8.10.0
+      globby:
+        specifier: ^14.0.2
+        version: 14.0.2
+    devDependencies:
+      '@tsconfig/node20':
+        specifier: ^20.1.4
+        version: 20.1.4
+      '@types/node':
+        specifier: ^20.14.9
+        version: 20.14.9
+      typescript:
+        specifier: ^5.5.3
+        version: 5.5.3
 
   scripts:
     dependencies:
