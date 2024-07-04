@@ -54,8 +54,8 @@ importers:
         specifier: ^8.10.0
         version: 8.10.0
       inject-markdown:
-        specifier: ^3.0.0
-        version: 3.0.0
+        specifier: ^3.1.0
+        version: 3.1.0
       json5:
         specifier: 2.2.3
         version: 2.2.3
@@ -185,7 +185,7 @@ importers:
         specifier: ^20.1.4
         version: 20.1.4
       '@types/node':
-        specifier: ^20.12.7
+        specifier: ^20.14.9
         version: 20.14.9
       typescript:
         specifier: ^5.5.3
@@ -1546,8 +1546,8 @@ packages:
     resolution: {integrity: sha512-Vw8qHK3bZM9y/P10u3Vib8o/DdkvA2OtPtZvD871QKjy74Wj1WSKFILMPRPSdUSx5RFK1arlJzEtA4PkFgnbuA==}
     engines: {node: '>=18'}
 
-  comment-json@4.2.3:
-    resolution: {integrity: sha512-SsxdiOf064DWoZLH799Ata6u7iV658A11PlWtZATDlXPpKGJnbJZ5Z24ybixAi+LUUqJ/GKowAejtC5GFUG7Tw==}
+  comment-json@4.2.4:
+    resolution: {integrity: sha512-E5AjpSW+O+N5T2GsOQMHLLsJvrYw6G/AFt9GvU6NguEAfzKShh7hRiLtVo6S9KbRpFMGqE5ojo0/hE+sdteWvQ==}
     engines: {node: '>= 6'}
 
   common-ancestor-path@1.0.1:
@@ -2332,13 +2332,13 @@ packages:
     resolution: {integrity: sha512-QQnnxNyfvmHFIsj7gkPcYymR8Jdw/o7mp5ZFihxn6h8Ci6fh3Dx4E1gPjpQEpIuPo9XVNY/ZUwh4BPMjGyL01g==}
     engines: {node: ^14.17.0 || ^16.13.0 || >=18.0.0}
 
-  inject-markdown@3.0.0:
-    resolution: {integrity: sha512-qKZAdUXlq8KOQAVFXIaVSnUM58Ht6+3ptloCjcqaY7EJoBsoeE3fMBoVF1bymiaX/C1GogBHTFPc8Lnr8ZCjaw==}
+  inject-markdown@3.1.0:
+    resolution: {integrity: sha512-ZtCOzS36vPy6UfyIJ1Gd9Hump8Psu6U5ooDlLNoNauXmdIwtGh7MZrvibubgUW8HIJU+EuCBZQUNltaoUhKFXg==}
     engines: {node: '>=18'}
     hasBin: true
 
-  inquirer@9.3.2:
-    resolution: {integrity: sha512-+ynEbhWKhyomnaX0n2aLIMSkgSlGB5RrWbNXnEqj6mdaIydu6y40MdBjL38SAB0JcdmOaIaMua1azdjLEr3sdw==}
+  inquirer@9.3.3:
+    resolution: {integrity: sha512-Z7lAi4XUBYRa6NPB0k+0+3dyhnyp2sAqVeiyogHyue93DvE9dPxp7oi7Gg8/KfWXSrGEsyBvZbl4PdBpS7ZKkg==}
     engines: {node: '>=18'}
 
   interpret@1.4.0:
@@ -4014,8 +4014,8 @@ packages:
     resolution: {integrity: sha512-b4JR1PFR10y1mKjhHY9LaGo6tmrgjit7hxVIeAmyMw3jegXR4dhYqLaQF5zMXZxY7tLpMyJeLjr1C4rLmkVe8g==}
     engines: {node: '>=12.20'}
 
-  yoctocolors-cjs@2.1.1:
-    resolution: {integrity: sha512-c6T13b6qYcJZvck7QbEFXrFX/Mu2KOjvAGiKHmYMUg96jxNpfP6i+psGW72BOPxOIDUJrORG+Kyu7quMX9CQBQ==}
+  yoctocolors-cjs@2.1.2:
+    resolution: {integrity: sha512-cYVsTjKl8b+FrnidjibDWskAv7UKOfcwaVZdp/it9n1s9fU3IkgDbhdIRKCW4JDsAlECJY0ytoVPT3sK6kideA==}
     engines: {node: '>=18'}
 
   yosay@3.0.0:
@@ -4334,7 +4334,7 @@ snapshots:
       fs-extra: 11.2.0
       glob-parent: 6.0.2
       globby: 14.0.2
-      inquirer: 9.3.2
+      inquirer: 9.3.3
       is-ci: 3.0.1
       json5: 2.2.3
       load-json-file: 7.0.1
@@ -4985,7 +4985,7 @@ snapshots:
       '@types/inquirer': 9.0.7
       '@yeoman/types': 1.2.0(@types/inquirer@9.0.7)(mem-fs@4.1.0)
       chalk: 5.3.0
-      inquirer: 9.3.2
+      inquirer: 9.3.3
       log-symbols: 5.1.0
       ora: 6.3.1
       p-queue: 7.4.1
@@ -5408,7 +5408,7 @@ snapshots:
 
   commander@12.1.0: {}
 
-  comment-json@4.2.3:
+  comment-json@4.2.4:
     dependencies:
       array-timsort: 1.0.3
       core-util-is: 1.0.3
@@ -5541,7 +5541,7 @@ snapshots:
   cspell-config-lib@8.10.0:
     dependencies:
       '@cspell/cspell-types': 8.10.0
-      comment-json: 4.2.3
+      comment-json: 4.2.4
       yaml: 2.4.5
 
   cspell-dictionary@8.10.0:
@@ -5584,7 +5584,7 @@ snapshots:
       '@cspell/strong-weak-map': 8.10.0
       '@cspell/url': 8.10.0
       clear-module: 4.1.2
-      comment-json: 4.2.3
+      comment-json: 4.2.4
       cspell-config-lib: 8.10.0
       cspell-dictionary: 8.10.0
       cspell-glob: 8.10.0
@@ -6258,10 +6258,10 @@ snapshots:
 
   ini@4.1.1: {}
 
-  inject-markdown@3.0.0:
+  inject-markdown@3.1.0:
     dependencies:
       chalk: 5.3.0
-      commander: 11.1.0
+      commander: 12.1.0
       globby: 14.0.2
       node-fetch: 3.3.2
       remark: 15.0.1
@@ -6278,7 +6278,7 @@ snapshots:
     transitivePeerDependencies:
       - supports-color
 
-  inquirer@9.3.2:
+  inquirer@9.3.3:
     dependencies:
       '@inquirer/figures': 1.0.3
       ansi-escapes: 4.3.2
@@ -6291,7 +6291,7 @@ snapshots:
       string-width: 4.2.3
       strip-ansi: 6.0.1
       wrap-ansi: 6.2.0
-      yoctocolors-cjs: 2.1.1
+      yoctocolors-cjs: 2.1.2
 
   interpret@1.4.0: {}
 
@@ -8275,7 +8275,7 @@ snapshots:
 
   yocto-queue@1.1.1: {}
 
-  yoctocolors-cjs@2.1.1: {}
+  yoctocolors-cjs@2.1.2: {}
 
   yosay@3.0.0:
     dependencies:
