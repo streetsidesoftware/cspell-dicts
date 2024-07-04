@@ -1,5 +1,12 @@
 # Release Notes
 
+## [26.5.0](https://github.com/streetsidesoftware/cspell-dicts/compare/cspell-dicts@26.4.7...cspell-dicts@26.5.0) (2024-07-04)
+
+
+### Features
+
+* Add US Census Names ([#3356](https://github.com/streetsidesoftware/cspell-dicts/issues/3356)) ([7edf72f](https://github.com/streetsidesoftware/cspell-dicts/commit/7edf72fec32584c633d00aac985ebc572fb5a4d0))
+
 ## [26.4.7](https://github.com/streetsidesoftware/cspell-dicts/compare/cspell-dicts@26.4.6...cspell-dicts@26.4.7) (2024-07-03)
 
 

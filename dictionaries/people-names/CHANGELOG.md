@@ -1,5 +1,12 @@
 # Change Log
 
+## [1.1.0](https://github.com/streetsidesoftware/cspell-dicts/compare/@cspell/dict-people-names@1.0.3...@cspell/dict-people-names@1.1.0) (2024-07-04)
+
+
+### Features
+
+* Add US Census Names ([#3356](https://github.com/streetsidesoftware/cspell-dicts/issues/3356)) ([7edf72f](https://github.com/streetsidesoftware/cspell-dicts/commit/7edf72fec32584c633d00aac985ebc572fb5a4d0))
+
 ## [1.0.3](https://github.com/streetsidesoftware/cspell-dicts/compare/@cspell/dict-people-names@1.0.2...@cspell/dict-people-names@1.0.3) (2024-07-03)
 
 
