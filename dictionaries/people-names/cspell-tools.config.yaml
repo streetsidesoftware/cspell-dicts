@@ -3,9 +3,9 @@
 targets:
   - name: 'people-names'
     sources:
-      - filename: 'src/names.txt'
-        maxDepth: 1 # This is set to 1 to prevent initial builds from taking too long.
-    format: 'plaintext'
+      - src/names.txt
+      - src/us-census.txt
+    format: plaintext
     targetDirectory: './dict'
     generateNonStrict: false
     compress: false
