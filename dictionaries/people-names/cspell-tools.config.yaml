@@ -9,4 +9,6 @@ targets:
     targetDirectory: './dict'
     generateNonStrict: false
     compress: false
+    dictionaryDirectives:
+      - no-generate-alternatives
 checksumFile: true
