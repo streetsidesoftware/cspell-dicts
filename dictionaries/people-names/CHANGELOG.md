@@ -1,5 +1,12 @@
 # Change Log
 
+## [1.1.1](https://github.com/streetsidesoftware/cspell-dicts/compare/@cspell/dict-people-names@1.1.0...@cspell/dict-people-names@1.1.1) (2024-07-06)
+
+
+### Updates and Bug Fixes
+
+* prevent lower case versions of names. ([#3374](https://github.com/streetsidesoftware/cspell-dicts/issues/3374)) ([99130f1](https://github.com/streetsidesoftware/cspell-dicts/commit/99130f1fec10222d03018d72cb4c63a95f28291f))
+
 ## [1.1.0](https://github.com/streetsidesoftware/cspell-dicts/compare/@cspell/dict-people-names@1.0.3...@cspell/dict-people-names@1.1.0) (2024-07-04)
 
 
