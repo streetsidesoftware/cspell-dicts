@@ -1,5 +1,12 @@
 # Release Notes
 
+## [26.5.1](https://github.com/streetsidesoftware/cspell-dicts/compare/cspell-dicts@26.5.0...cspell-dicts@26.5.1) (2024-07-06)
+
+
+### Updates and Bug Fixes
+
+* prevent lower case versions of names. ([#3374](https://github.com/streetsidesoftware/cspell-dicts/issues/3374)) ([99130f1](https://github.com/streetsidesoftware/cspell-dicts/commit/99130f1fec10222d03018d72cb4c63a95f28291f))
+
 ## [26.5.0](https://github.com/streetsidesoftware/cspell-dicts/compare/cspell-dicts@26.4.7...cspell-dicts@26.5.0) (2024-07-04)
 
 
