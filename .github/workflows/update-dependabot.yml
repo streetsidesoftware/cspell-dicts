@@ -44,6 +44,7 @@ jobs:
 
       - name: Prettier
         run: |
+          pnpm i
           pnpm prettier .github/dependabot.yaml --write
 
       - name: PR
