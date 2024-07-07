@@ -1,5 +1,13 @@
 # Release Notes
 
+## [26.5.2](https://github.com/streetsidesoftware/cspell-dicts/compare/cspell-dicts@26.5.1...cspell-dicts@26.5.2) (2024-07-07)
+
+
+### Updates and Bug Fixes
+
+* Add to aws dictionary ([#3379](https://github.com/streetsidesoftware/cspell-dicts/issues/3379)) ([2781d17](https://github.com/streetsidesoftware/cspell-dicts/commit/2781d17fa245ddb019055811e2c676ae40213bc3))
+* Add to softwareTerms dictionary ([#3380](https://github.com/streetsidesoftware/cspell-dicts/issues/3380)) ([fc4b30a](https://github.com/streetsidesoftware/cspell-dicts/commit/fc4b30ad4e443ce837f2a3dbf2e911c38e5f16cc))
+
 ## [26.5.1](https://github.com/streetsidesoftware/cspell-dicts/compare/cspell-dicts@26.5.0...cspell-dicts@26.5.1) (2024-07-06)
 
 
