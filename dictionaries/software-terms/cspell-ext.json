@@ -3,6 +3,7 @@
     "name": "Software Terms",
     "readonly": true,
     "description": "Software terms dictionary for cspell.",
+    "import": ["./cspell-corrections.yaml"],
     "dictionaryDefinitions": [
         {
             // changing the name is a breaking change.
@@ -34,6 +35,7 @@
     "dictionaries": [
         "softwareTerms",
         "computing-acronyms",
+        "software-term-suggestions",
         // "networking-terms" - is not included by default because it is very specific.
         "web-services"
     ]
