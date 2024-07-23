@@ -1,5 +1,13 @@
 # Changelog
 
+## [1.0.6](https://github.com/streetsidesoftware/cspell-dicts/compare/@cspell/dict-k8s@1.0.5...@cspell/dict-k8s@1.0.6) (2024-07-23)
+
+
+### Updates and Bug Fixes
+
+* Update k8s dict (add kubebuilder) ([#3402](https://github.com/streetsidesoftware/cspell-dicts/issues/3402)) ([fcde6e1](https://github.com/streetsidesoftware/cspell-dicts/commit/fcde6e1dbe2ae6b8b3d6e11b97a2d7137f133caf))
+* Workflow Bot -- Build Dictionaries ([#3405](https://github.com/streetsidesoftware/cspell-dicts/issues/3405)) ([8624bcb](https://github.com/streetsidesoftware/cspell-dicts/commit/8624bcbce44dad3fb99bb0ae446df08f377e1679))
+
 ## [1.0.5](https://github.com/streetsidesoftware/cspell-dicts/compare/@cspell/dict-k8s@1.0.4...@cspell/dict-k8s@1.0.5) (2024-05-28)
 
 

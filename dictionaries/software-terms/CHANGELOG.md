@@ -3,6 +3,16 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+## [4.0.1](https://github.com/streetsidesoftware/cspell-dicts/compare/@cspell/dict-software-terms@4.0.0...@cspell/dict-software-terms@4.0.1) (2024-07-23)
+
+
+### Updates and Bug Fixes
+
+* **software-terms:** add softphone(s) ([#3399](https://github.com/streetsidesoftware/cspell-dicts/issues/3399)) ([c41dce5](https://github.com/streetsidesoftware/cspell-dicts/commit/c41dce565a6dbb572c8c49fb45ae766d80e17907))
+* Update software-terms dict ([#3404](https://github.com/streetsidesoftware/cspell-dicts/issues/3404)) ([feb83a7](https://github.com/streetsidesoftware/cspell-dicts/commit/feb83a76b09e19b69b2f81e70262f8dde2f795df))
+* Workflow Bot -- Build Dictionaries ([#3401](https://github.com/streetsidesoftware/cspell-dicts/issues/3401)) ([37c9abe](https://github.com/streetsidesoftware/cspell-dicts/commit/37c9abea15db89c340e7bee20c10cbfb71a9ceb7))
+* Workflow Bot -- Build Dictionaries ([#3405](https://github.com/streetsidesoftware/cspell-dicts/issues/3405)) ([8624bcb](https://github.com/streetsidesoftware/cspell-dicts/commit/8624bcbce44dad3fb99bb0ae446df08f377e1679))
+
 ## [4.0.0](https://github.com/streetsidesoftware/cspell-dicts/compare/@cspell/dict-software-terms@3.4.10...@cspell/dict-software-terms@4.0.0) (2024-07-18)
 
 
