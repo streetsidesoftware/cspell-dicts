@@ -1,5 +1,17 @@
 # Release Notes
 
+## [27.0.1](https://github.com/streetsidesoftware/cspell-dicts/compare/cspell-dicts@27.0.0...cspell-dicts@27.0.1) (2024-07-23)
+
+
+### Updates and Bug Fixes
+
+* **software-terms:** add softphone(s) ([#3399](https://github.com/streetsidesoftware/cspell-dicts/issues/3399)) ([c41dce5](https://github.com/streetsidesoftware/cspell-dicts/commit/c41dce565a6dbb572c8c49fb45ae766d80e17907))
+* Update companies dict ([#3403](https://github.com/streetsidesoftware/cspell-dicts/issues/3403)) ([70092ac](https://github.com/streetsidesoftware/cspell-dicts/commit/70092acde645888c3daa9711d9f350c82a14562f))
+* Update k8s dict (add kubebuilder) ([#3402](https://github.com/streetsidesoftware/cspell-dicts/issues/3402)) ([fcde6e1](https://github.com/streetsidesoftware/cspell-dicts/commit/fcde6e1dbe2ae6b8b3d6e11b97a2d7137f133caf))
+* Update software-terms dict ([#3404](https://github.com/streetsidesoftware/cspell-dicts/issues/3404)) ([feb83a7](https://github.com/streetsidesoftware/cspell-dicts/commit/feb83a76b09e19b69b2f81e70262f8dde2f795df))
+* Workflow Bot -- Build Dictionaries ([#3401](https://github.com/streetsidesoftware/cspell-dicts/issues/3401)) ([37c9abe](https://github.com/streetsidesoftware/cspell-dicts/commit/37c9abea15db89c340e7bee20c10cbfb71a9ceb7))
+* Workflow Bot -- Build Dictionaries ([#3405](https://github.com/streetsidesoftware/cspell-dicts/issues/3405)) ([8624bcb](https://github.com/streetsidesoftware/cspell-dicts/commit/8624bcbce44dad3fb99bb0ae446df08f377e1679))
+
 ## [27.0.0](https://github.com/streetsidesoftware/cspell-dicts/compare/cspell-dicts@26.5.2...cspell-dicts@27.0.0) (2024-07-18)
 
 
