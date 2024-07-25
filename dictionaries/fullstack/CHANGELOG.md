@@ -3,6 +3,13 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+## [3.2.0](https://github.com/streetsidesoftware/cspell-dicts/compare/@cspell/dict-fullstack@3.1.9...@cspell/dict-fullstack@3.2.0) (2024-07-25)
+
+
+### Features
+
+* Enable fullstack by default for css, scss, and Razor ([#3419](https://github.com/streetsidesoftware/cspell-dicts/issues/3419)) ([e673008](https://github.com/streetsidesoftware/cspell-dicts/commit/e6730085c84ac0813d1dd47f6843c293054ffb99))
+
 ## [3.1.9](https://github.com/streetsidesoftware/cspell-dicts/compare/@cspell/dict-fullstack@3.1.8...@cspell/dict-fullstack@3.1.9) (2024-07-25)
 
 
