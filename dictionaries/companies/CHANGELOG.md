@@ -3,6 +3,14 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+## [3.1.4](https://github.com/streetsidesoftware/cspell-dicts/compare/@cspell/dict-companies@3.1.3...@cspell/dict-companies@3.1.4) (2024-08-03)
+
+
+### Updates and Bug Fixes
+
+* add missing company acronym for Analog Devices ([#3424](https://github.com/streetsidesoftware/cspell-dicts/issues/3424)) ([a3a13fc](https://github.com/streetsidesoftware/cspell-dicts/commit/a3a13fcd1224e0540ac61794b3d8f659da335b07))
+* Workflow Bot -- Build Dictionaries ([#3426](https://github.com/streetsidesoftware/cspell-dicts/issues/3426)) ([92a71ac](https://github.com/streetsidesoftware/cspell-dicts/commit/92a71ac7a406545fc7f27e768b79c400fce197e7))
+
 ## [3.1.3](https://github.com/streetsidesoftware/cspell-dicts/compare/@cspell/dict-companies@3.1.2...@cspell/dict-companies@3.1.3) (2024-07-23)
 
 

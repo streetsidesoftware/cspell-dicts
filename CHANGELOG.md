@@ -1,5 +1,14 @@
 # Release Notes
 
+## [27.1.1](https://github.com/streetsidesoftware/cspell-dicts/compare/cspell-dicts@27.1.0...cspell-dicts@27.1.1) (2024-08-03)
+
+
+### Updates and Bug Fixes
+
+* add missing company acronym for Analog Devices ([#3424](https://github.com/streetsidesoftware/cspell-dicts/issues/3424)) ([a3a13fc](https://github.com/streetsidesoftware/cspell-dicts/commit/a3a13fcd1224e0540ac61794b3d8f659da335b07))
+* Workflow Bot -- Build Dictionaries ([#3426](https://github.com/streetsidesoftware/cspell-dicts/issues/3426)) ([92a71ac](https://github.com/streetsidesoftware/cspell-dicts/commit/92a71ac7a406545fc7f27e768b79c400fce197e7))
+* Workflow Bot -- Build Dictionaries ([#3434](https://github.com/streetsidesoftware/cspell-dicts/issues/3434)) ([226b2cb](https://github.com/streetsidesoftware/cspell-dicts/commit/226b2cb9123c462ec2bbd35fca00f3c2ddcddbc9))
+
 ## [27.1.0](https://github.com/streetsidesoftware/cspell-dicts/compare/cspell-dicts@27.0.3...cspell-dicts@27.1.0) (2024-07-25)
 
 
