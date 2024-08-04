@@ -1,5 +1,14 @@
 # Release Notes
 
+## [27.1.2](https://github.com/streetsidesoftware/cspell-dicts/compare/cspell-dicts@27.1.1...cspell-dicts@27.1.2) (2024-08-04)
+
+
+### Updates and Bug Fixes
+
+* Add common terms to SQL ([#3439](https://github.com/streetsidesoftware/cspell-dicts/issues/3439)) ([4d4901e](https://github.com/streetsidesoftware/cspell-dicts/commit/4d4901e93bfa8a19fecd0205e660d1eddc788548))
+* add POSIX and fix for `doens't` ([#3436](https://github.com/streetsidesoftware/cspell-dicts/issues/3436)) ([736cbd8](https://github.com/streetsidesoftware/cspell-dicts/commit/736cbd84e216fee438031497a0656a19a962e61f))
+* Workflow Bot -- Build Dictionaries ([#3438](https://github.com/streetsidesoftware/cspell-dicts/issues/3438)) ([8b557a5](https://github.com/streetsidesoftware/cspell-dicts/commit/8b557a57a9faf9de7c4c853497d49cf9e629dbb2))
+
 ## [27.1.1](https://github.com/streetsidesoftware/cspell-dicts/compare/cspell-dicts@27.1.0...cspell-dicts@27.1.1) (2024-08-03)
 
 

@@ -1,5 +1,12 @@
 # Change Log
 
+## [2.0.4](https://github.com/streetsidesoftware/cspell-dicts/compare/@cspell/dict-en-common-misspellings@2.0.3...@cspell/dict-en-common-misspellings@2.0.4) (2024-08-04)
+
+
+### Updates and Bug Fixes
+
+* add POSIX and fix for `doens't` ([#3436](https://github.com/streetsidesoftware/cspell-dicts/issues/3436)) ([736cbd8](https://github.com/streetsidesoftware/cspell-dicts/commit/736cbd84e216fee438031497a0656a19a962e61f))
+
 ## [2.0.3](https://github.com/streetsidesoftware/cspell-dicts/compare/@cspell/dict-en-common-misspellings@2.0.2...@cspell/dict-en-common-misspellings@2.0.3) (2024-06-20)
 
 
