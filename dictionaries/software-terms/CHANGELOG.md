@@ -3,6 +3,14 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+## [4.0.5](https://github.com/streetsidesoftware/cspell-dicts/compare/@cspell/dict-software-terms@4.0.4...@cspell/dict-software-terms@4.0.5) (2024-08-06)
+
+
+### Updates and Bug Fixes
+
+* add unsort to the list of software terms ([#3442](https://github.com/streetsidesoftware/cspell-dicts/issues/3442)) ([30a72d8](https://github.com/streetsidesoftware/cspell-dicts/commit/30a72d8d6a2ec30e9a4fcfcf9cfad6e0abe6f7c7))
+* Workflow Bot -- Build Dictionaries ([#3443](https://github.com/streetsidesoftware/cspell-dicts/issues/3443)) ([6d7eb6f](https://github.com/streetsidesoftware/cspell-dicts/commit/6d7eb6fd4340b0b49a688df7cd866780d5d80759))
+
 ## [4.0.4](https://github.com/streetsidesoftware/cspell-dicts/compare/@cspell/dict-software-terms@4.0.3...@cspell/dict-software-terms@4.0.4) (2024-08-04)
 
 

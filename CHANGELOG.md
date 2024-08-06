@@ -1,5 +1,14 @@
 # Release Notes
 
+## [27.1.3](https://github.com/streetsidesoftware/cspell-dicts/compare/cspell-dicts@27.1.2...cspell-dicts@27.1.3) (2024-08-06)
+
+
+### Updates and Bug Fixes
+
+* add unsort to the list of software terms ([#3442](https://github.com/streetsidesoftware/cspell-dicts/issues/3442)) ([30a72d8](https://github.com/streetsidesoftware/cspell-dicts/commit/30a72d8d6a2ec30e9a4fcfcf9cfad6e0abe6f7c7))
+* Workflow Bot -- Build Dictionaries ([#3440](https://github.com/streetsidesoftware/cspell-dicts/issues/3440)) ([35301dd](https://github.com/streetsidesoftware/cspell-dicts/commit/35301dd444f99324a40501f782b14f434512dfe4))
+* Workflow Bot -- Build Dictionaries ([#3443](https://github.com/streetsidesoftware/cspell-dicts/issues/3443)) ([6d7eb6f](https://github.com/streetsidesoftware/cspell-dicts/commit/6d7eb6fd4340b0b49a688df7cd866780d5d80759))
+
 ## [27.1.2](https://github.com/streetsidesoftware/cspell-dicts/compare/cspell-dicts@27.1.1...cspell-dicts@27.1.2) (2024-08-04)
 
 
