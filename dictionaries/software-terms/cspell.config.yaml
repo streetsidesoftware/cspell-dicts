@@ -13,7 +13,7 @@ ignorePaths:
   - dict
 patterns:
   - name: term-comment
-    pattern: '/#.*/g'
+    pattern: '/(?<!^)#.*/gm'
 overrides:
   - filename: 'src/*.txt'
     ignoreRegExpList:
