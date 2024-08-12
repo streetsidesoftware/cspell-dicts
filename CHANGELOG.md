@@ -8,6 +8,11 @@
 * add lowercase version of `text-rendering` values ([#3457](https://github.com/streetsidesoftware/cspell-dicts/issues/3457)) ([5808186](https://github.com/streetsidesoftware/cspell-dicts/commit/58081864b619b9dadcbc089b360e512cd6be42c7))
 * Workflow Bot -- Build Dictionaries ([#3462](https://github.com/streetsidesoftware/cspell-dicts/issues/3462)) ([a75889e](https://github.com/streetsidesoftware/cspell-dicts/commit/a75889e8da2597f16130a74725d0e3d479c4aa13))
 
+
+### Tests
+
+* Add CSS samples ([#3463](https://github.com/streetsidesoftware/cspell-dicts/issues/3463)) ([065a9c5](https://github.com/streetsidesoftware/cspell-dicts/commit/065a9c5daf62d450c7f180ca13eb9ec74b61e73b))
+
 ## [27.1.4](https://github.com/streetsidesoftware/cspell-dicts/compare/cspell-dicts@27.1.3...cspell-dicts@27.1.4) (2024-08-09)
 
 
