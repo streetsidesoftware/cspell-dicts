@@ -1,5 +1,12 @@
 # Release Notes
 
+## [27.1.6](https://github.com/streetsidesoftware/cspell-dicts/compare/cspell-dicts@27.1.5...cspell-dicts@27.1.6) (2024-08-21)
+
+
+### Updates and Bug Fixes
+
+* Workflow Bot -- Build Dictionaries ([#3478](https://github.com/streetsidesoftware/cspell-dicts/issues/3478)) ([835c809](https://github.com/streetsidesoftware/cspell-dicts/commit/835c809a158c35a2f0bde23bfdad482232c8fbc3))
+
 ## [27.1.5](https://github.com/streetsidesoftware/cspell-dicts/compare/cspell-dicts@27.1.4...cspell-dicts@27.1.5) (2024-08-12)
 
 
