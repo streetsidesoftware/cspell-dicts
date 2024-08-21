@@ -1,5 +1,15 @@
 # Release Notes
 
+## [27.1.8](https://github.com/streetsidesoftware/cspell-dicts/compare/cspell-dicts@27.1.7...cspell-dicts@27.1.8) (2024-08-21)
+
+
+### Updates and Bug Fixes
+
+* Ad un terms to coding ([#3488](https://github.com/streetsidesoftware/cspell-dicts/issues/3488)) ([0d7f860](https://github.com/streetsidesoftware/cspell-dicts/commit/0d7f8605aa16398920d96db1eb09abde1c36dfb5))
+* Add brotli to software-terms.txt ([#3486](https://github.com/streetsidesoftware/cspell-dicts/issues/3486)) ([d456674](https://github.com/streetsidesoftware/cspell-dicts/commit/d4566746245f940f1d3f3f2f53acdae313b56b71))
+* Workflow Bot -- Build Dictionaries ([#3487](https://github.com/streetsidesoftware/cspell-dicts/issues/3487)) ([7e24140](https://github.com/streetsidesoftware/cspell-dicts/commit/7e24140a4d6866e11c14580102211847ad68bd52))
+* Workflow Bot -- Build Dictionaries ([#3489](https://github.com/streetsidesoftware/cspell-dicts/issues/3489)) ([8c400a5](https://github.com/streetsidesoftware/cspell-dicts/commit/8c400a54ab8cca80636452b5c595cc3727ee0341))
+
 ## [27.1.7](https://github.com/streetsidesoftware/cspell-dicts/compare/cspell-dicts@27.1.6...cspell-dicts@27.1.7) (2024-08-21)
 
 
