@@ -263,9 +263,13 @@ See: [Contributing](CONTRIBUTING.md)
 
 Special thanks to all of our amazing contributors!
 
+<!--- @@inject: static/contributors.md --->
+
 <a href="https://github.com/streetsidesoftware/cspell-dicts/graphs/contributors">
   <img src="https://contrib.rocks/image?repo=streetsidesoftware/cspell-dicts&r="  width="800px"/>
 </a>
+
+<!--- @@inject-end: static/contributors.md --->
 
 ## How to create a new dictionary
 
