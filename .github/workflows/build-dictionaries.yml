@@ -44,6 +44,11 @@ jobs:
       - name: Build
         run: |
           pnpm run conditional-build
+
+      - name: Update Contributors
+        run: |
+          pnpm update-contributors ${{ secrets.GITHUB_TOKEN }}
+
       - name: Build Readme
         run: |
           pnpm run build:readme
