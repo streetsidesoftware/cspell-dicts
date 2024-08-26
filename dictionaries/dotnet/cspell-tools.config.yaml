@@ -4,7 +4,7 @@ targets:
   - name: 'dotnet'
     sources:
       - filename: src/dotnet.txt
-        split: legacy
+        split: true
         allowedSplitWords:
           - ../en_US/en_US.trie
           - ../software-terms/dict/softwareTerms.txt
