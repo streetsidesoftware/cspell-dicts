@@ -27,6 +27,13 @@ See [Conventional Commits](https://conventionalcommits.org) for commit guideline
 
 
 
+## [5.0.6](https://github.com/streetsidesoftware/cspell-dicts/compare/@cspell/dict-powershell@5.0.5...@cspell/dict-powershell@5.0.6) (2024-08-26)
+
+
+### Updates and Bug Fixes
+
+* Workflow Bot -- Build Dictionaries ([#3510](https://github.com/streetsidesoftware/cspell-dicts/issues/3510)) ([a684808](https://github.com/streetsidesoftware/cspell-dicts/commit/a684808a8e36f8fb5c5b2d282dc336206b520cd7))
+
 ## [5.0.5](https://github.com/streetsidesoftware/cspell-dicts/compare/@cspell/dict-powershell@5.0.4...@cspell/dict-powershell@5.0.5) (2024-07-18)
 
 
