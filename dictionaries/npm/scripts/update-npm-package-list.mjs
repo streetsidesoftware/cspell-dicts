@@ -104,7 +104,7 @@ async function writeList(lines, newPackages) {
         .map((value) => ({ value, comment: '' }));
     const linesOut = [...lines, ...newLines];
 
-    const outContent = linesOut.map(stringifyLine).join('\n') + '\n';
+    const outContent = linesOut.map(stringifyLine).join('\n').trim() + '\n';
 
     await fs.writeFile(urlList, outContent);
 }
