@@ -1,4 +1,10 @@
 // @ts-check
+
+/**
+ * NPM Registry API
+ * See: https://github.com/npm/registry/blob/main/docs/REGISTRY-API.md#endpoints
+ */
+
 /**
  *
  * @param {string} packageName
@@ -19,4 +25,28 @@ export async function getPackageDependencies(packageName) {
             .filter(([_, value]) => regExpPossibleSemVer.test(value))
             .map(([key]) => key),
     };
+}
+
+export const commonKeywords = ['front-ent', 'frontend', 'backend', 'mobile', 'cli', 'framework'];
+
+export async function searchForPackagesByKeyword(...keywords) {
+    const url = new URL('https://registry.npmjs.org/-/v1/search');
+    const text = ['keywords:' + keywords.join(','), 'not:insecure'].join(' ');
+    url.searchParams.set('text', text);
+    url.searchParams.set('size', '100');
+    url.searchParams.set('popularity', '1.0');
+    url.searchParams.set('quality', '0.75');
+    url.searchParams.set('maintenance', '0.75');
+    const response = await fetch(url);
+    if (!response.ok) {
+        return [];
+    }
+    /**
+     * @typedef {{ package: { name: string }}} PackageObject
+     * @typedef {{ objects: PackageObject[] }} SearchResult
+     */
+    /** @type {SearchResult} */
+    const result = await response.json();
+    const { objects = [] } = result;
+    return objects.map((o) => o.package.name);
 }

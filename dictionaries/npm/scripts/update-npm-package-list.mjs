@@ -8,7 +8,7 @@
 
 import fs from 'node:fs/promises';
 
-import { getPackageDependencies } from './lib/get-package-dependencies.mjs';
+import { commonKeywords, getPackageDependencies, searchForPackagesByKeyword } from './lib/get-package-dependencies.mjs';
 
 const urlList = new URL('../src/npm.txt', import.meta.url);
 const urlPackagesInfo = new URL('../src/.npm-packages-info.json', import.meta.url);
@@ -26,7 +26,7 @@ const staleEntry = 1000 * 60 * 60 * 24 * 30; // 30 days
 const includeDevDependencies = true;
 
 /**
- * @typedef {{ ts: number, dependencies: string[], devDependencies: string[] }} PackageInfo
+ * @typedef {{ ts: number, dependencies?: string[] | undefined, devDependencies?: string[] | undefined }} PackageInfo
  * @typedef {{ value: string; comment: string }} Line
  * @typedef {{[key: string]: PackageInfo }} PackagesInfo
  */
@@ -49,8 +49,19 @@ async function readPackagesInfo() {
  * @param {PackagesInfo} info
  */
 async function writePackagesInfo(info) {
-    const content = JSON.stringify(info, null, 2) + '\n';
+    // prettier will clean it up later.
+    const content = JSON.stringify(info) + '\n';
     await fs.writeFile(urlPackagesInfo, content);
+}
+
+/**
+ *
+ * @param {PackageInfo} info
+ */
+function cleanPackageInfo(info) {
+    info.dependencies = info.dependencies?.length ? info.dependencies : undefined;
+    info.devDependencies = info.devDependencies?.length ? info.devDependencies : undefined;
+    return info;
 }
 
 /**
@@ -61,12 +72,13 @@ async function writePackagesInfo(info) {
 async function getPackageInfo(packages, packageName) {
     const now = Date.now();
 
-    if (packages[packageName] && now - packages[packageName].ts < staleEntry) return packages[packageName];
+    if (packages[packageName] && now - packages[packageName].ts < staleEntry)
+        return cleanPackageInfo(packages[packageName]);
 
     const info = await getPackageDependencies(packageName);
     if (!info) return undefined;
 
-    const pkgInfo = { ...info, ts: now };
+    const pkgInfo = cleanPackageInfo({ ...info, ts: now });
     packages[packageName] = pkgInfo;
     writePackagesInfo(packages);
     return pkgInfo;
@@ -120,16 +132,7 @@ async function updateList() {
 
     const packagesInfo = await readPackagesInfo();
 
-    /**
-     *
-     * @param {string} dep
-     */
-    function addToNewPackages(dep) {
-        const c = newPackages.get(dep) || 0;
-        const n = c + 1;
-        if (n == minRefs) console.log('Adding: %s', dep);
-        newPackages.set(dep, n);
-    }
+    await queryPopular();
 
     let count = 0;
 
@@ -146,12 +149,12 @@ async function updateList() {
                 line.comment = '# Not Found';
                 continue;
             }
-            for (const dep of deps.dependencies) {
+            for (const dep of deps.dependencies || []) {
                 if (knownPackages.has(dep) || dep.startsWith('@types/')) continue;
                 addToNewPackages(dep);
             }
             if (includeDevDependencies) {
-                for (const dep of deps.devDependencies) {
+                for (const dep of deps.devDependencies || []) {
                     if (knownPackages.has(dep) || dep.startsWith('@')) continue;
                     addToNewPackages(dep);
                 }
@@ -163,6 +166,28 @@ async function updateList() {
     }
 
     await writeList(lines, newPackages);
+
+    return;
+
+    async function queryPopular() {
+        const requests = await Promise.all(commonKeywords.map((key) => searchForPackagesByKeyword(key)));
+        const packages = new Set(requests.flat().sort());
+        for (const pkg of packages) {
+            if (knownPackages.has(pkg)) continue;
+            lines.push({ value: pkg, comment: '' });
+        }
+    }
+
+    /**
+     *
+     * @param {string} dep
+     */
+    function addToNewPackages(dep) {
+        const c = newPackages.get(dep) || 0;
+        const n = c + 1;
+        if (n == minRefs) console.log('Adding: %s', dep);
+        newPackages.set(dep, n);
+    }
 }
 
 async function run() {
