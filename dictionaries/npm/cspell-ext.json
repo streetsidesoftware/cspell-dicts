@@ -16,5 +16,11 @@
             "locale": "*",
             "dictionaries": ["npm"]
         }
+    ],
+    "overrides": [
+        {
+            "filename": "**/package.json",
+            "dictionaries": ["npm"]
+        }
     ]
 }

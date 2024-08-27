@@ -14,6 +14,8 @@ const urlList = new URL('../src/npm.txt', import.meta.url);
 
 const limit = 0;
 
+const includeDevDependencies = false;
+
 /**
  * @typedef {{ value: string; comment: string }} Line
  */
@@ -68,10 +70,12 @@ async function updateList() {
                 !newPackages.has(dep) && console.log('Adding: %s', dep);
                 newPackages.add(dep);
             }
-            for (const dep of deps.devDependencies) {
-                if (knownPackages.has(dep) || dep.startsWith('@')) continue;
-                !newPackages.has(dep) && console.log('Adding: %s', dep);
-                newPackages.add(dep);
+            if (includeDevDependencies) {
+                for (const dep of deps.devDependencies) {
+                    if (knownPackages.has(dep) || dep.startsWith('@')) continue;
+                    !newPackages.has(dep) && console.log('Adding: %s', dep);
+                    newPackages.add(dep);
+                }
             }
         }
     }
