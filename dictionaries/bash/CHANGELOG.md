@@ -3,6 +3,14 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+## [4.1.4](https://github.com/streetsidesoftware/cspell-dicts/compare/@cspell/dict-bash@4.1.3...@cspell/dict-bash@4.1.4) (2024-08-27)
+
+
+### Updates and Bug Fixes
+
+* update to aws, bash, and terraform dictionaries ([#3511](https://github.com/streetsidesoftware/cspell-dicts/issues/3511)) ([60ce322](https://github.com/streetsidesoftware/cspell-dicts/commit/60ce322b1efc569cc44df8ef1d2718fb9dccd2f1))
+* Workflow Bot -- Build Dictionaries ([#3513](https://github.com/streetsidesoftware/cspell-dicts/issues/3513)) ([dd62160](https://github.com/streetsidesoftware/cspell-dicts/commit/dd621602b82bf6fbaab9a927614d440642a9bc13))
+
 ## [4.1.3](https://github.com/streetsidesoftware/cspell-dicts/compare/@cspell/dict-bash@4.1.2...@cspell/dict-bash@4.1.3) (2023-12-05)
 
 

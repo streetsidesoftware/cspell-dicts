@@ -1,5 +1,14 @@
 # Release Notes
 
+## [27.2.1](https://github.com/streetsidesoftware/cspell-dicts/compare/cspell-dicts@27.2.0...cspell-dicts@27.2.1) (2024-08-27)
+
+
+### Updates and Bug Fixes
+
+* update to aws, bash, and terraform dictionaries ([#3511](https://github.com/streetsidesoftware/cspell-dicts/issues/3511)) ([60ce322](https://github.com/streetsidesoftware/cspell-dicts/commit/60ce322b1efc569cc44df8ef1d2718fb9dccd2f1))
+* Workflow Bot -- Build Dictionaries ([#3513](https://github.com/streetsidesoftware/cspell-dicts/issues/3513)) ([dd62160](https://github.com/streetsidesoftware/cspell-dicts/commit/dd621602b82bf6fbaab9a927614d440642a9bc13))
+* Workflow Bot -- Build Dictionaries ([#3514](https://github.com/streetsidesoftware/cspell-dicts/issues/3514)) ([804c732](https://github.com/streetsidesoftware/cspell-dicts/commit/804c7325c0aa3a05ac36ba3a8e289255fea71475))
+
 ## [27.2.0](https://github.com/streetsidesoftware/cspell-dicts/compare/cspell-dicts@27.1.10...cspell-dicts@27.2.0) (2024-08-26)
 
 
