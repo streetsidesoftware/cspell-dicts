@@ -1,5 +1,19 @@
 # Release Notes
 
+## [27.3.0](https://github.com/streetsidesoftware/cspell-dicts/compare/cspell-dicts@27.2.1...cspell-dicts@27.3.0) (2024-08-27)
+
+
+### Features
+
+* Add the top 1k packages to npm dict ([#3517](https://github.com/streetsidesoftware/cspell-dicts/issues/3517)) ([2275551](https://github.com/streetsidesoftware/cspell-dicts/commit/227555126df5de7dd5cee2ca9b143f454facbf04))
+
+
+### Updates and Bug Fixes
+
+* add a couple of coding-terms ([#3518](https://github.com/streetsidesoftware/cspell-dicts/issues/3518)) ([d667ec2](https://github.com/streetsidesoftware/cspell-dicts/commit/d667ec24896eb25f2cb222aa500e86be0604c4e1))
+* make sure constraints.txt includes python dict ([#3515](https://github.com/streetsidesoftware/cspell-dicts/issues/3515)) ([dbf2955](https://github.com/streetsidesoftware/cspell-dicts/commit/dbf29555b9a49b71e038224a0dbed4e3a677405e))
+* Workflow Bot -- Build Dictionaries ([#3519](https://github.com/streetsidesoftware/cspell-dicts/issues/3519)) ([c262e8f](https://github.com/streetsidesoftware/cspell-dicts/commit/c262e8ffce931215ba61d3530abfdace88906ba2))
+
 ## [27.2.1](https://github.com/streetsidesoftware/cspell-dicts/compare/cspell-dicts@27.2.0...cspell-dicts@27.2.1) (2024-08-27)
 
 
