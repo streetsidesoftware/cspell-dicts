@@ -47181,5 +47181,465 @@
             "eslint-plugin-simple-import-sort"
         ],
         "ts": 1724778907955
+    },
+    "@ckeditor/ckeditor5-clipboard": {
+        "dependencies": [
+            "lodash-es",
+            "@ckeditor/ckeditor5-ui",
+            "@ckeditor/ckeditor5-core",
+            "@ckeditor/ckeditor5-utils",
+            "@ckeditor/ckeditor5-engine",
+            "@ckeditor/ckeditor5-widget"
+        ],
+        "ts": 1724779431110
+    },
+    "@ckeditor/ckeditor5-ui": {
+        "dependencies": [
+            "lodash-es",
+            "color-parse",
+            "color-convert",
+            "vanilla-colorful",
+            "@ckeditor/ckeditor5-core",
+            "@ckeditor/ckeditor5-utils"
+        ],
+        "ts": 1724779431322
+    },
+    "@ckeditor/ckeditor5-upload": {
+        "dependencies": ["@ckeditor/ckeditor5-core", "@ckeditor/ckeditor5-utils"],
+        "ts": 1724779431501
+    },
+    "@ckeditor/ckeditor5-utils": { "dependencies": ["lodash-es"], "ts": 1724779431790 },
+    "@ckeditor/ckeditor5-widget": {
+        "dependencies": [
+            "lodash-es",
+            "@ckeditor/ckeditor5-ui",
+            "@ckeditor/ckeditor5-core",
+            "@ckeditor/ckeditor5-enter",
+            "@ckeditor/ckeditor5-utils",
+            "@ckeditor/ckeditor5-engine",
+            "@ckeditor/ckeditor5-typing"
+        ],
+        "ts": 1724779431976
+    },
+    "@npmcli/run-script": {
+        "dependencies": [
+            "which",
+            "node-gyp",
+            "proc-log",
+            "@npmcli/node-gyp",
+            "@npmcli/package-json",
+            "@npmcli/promise-spawn"
+        ],
+        "devDependencies": ["tap", "spawk", "@npmcli/template-oss", "@npmcli/eslint-config"],
+        "ts": 1724779432191
+    },
+    "@typescript-eslint/utils": {
+        "dependencies": [
+            "@typescript-eslint/types",
+            "@eslint-community/eslint-utils",
+            "@typescript-eslint/scope-manager",
+            "@typescript-eslint/typescript-estree"
+        ],
+        "devDependencies": ["jest", "prettier"],
+        "ts": 1724779432368
+    },
+    "builtin-modules": { "devDependencies": ["ava", "tsd", "xo"], "ts": 1724779433612 },
+    "changelogen": {
+        "dependencies": [
+            "c12",
+            "colorette",
+            "consola",
+            "convert-gitmoji",
+            "execa",
+            "mri",
+            "node-fetch-native",
+            "ofetch",
+            "open",
+            "pathe",
+            "pkg-types",
+            "scule",
+            "semver",
+            "std-env",
+            "yaml"
+        ],
+        "devDependencies": [
+            "@types/node",
+            "@types/semver",
+            "@vitest/coverage-v8",
+            "eslint",
+            "eslint-config-unjs",
+            "jiti",
+            "prettier",
+            "standard-version",
+            "typescript",
+            "unbuild",
+            "vitest"
+        ],
+        "ts": 1724779433861
+    },
+    "copy-to-clipboard": {
+        "dependencies": ["toggle-selection"],
+        "devDependencies": [
+            "browserify",
+            "minimist",
+            "nightwatch",
+            "@brettz9/node-static",
+            "optimist",
+            "selenium-server-standalone-jar",
+            "uglify-js"
+        ],
+        "ts": 1724779434582
+    },
+    "crypto-browserify": {
+        "dependencies": [
+            "browserify-cipher",
+            "browserify-sign",
+            "create-ecdh",
+            "create-hash",
+            "create-hmac",
+            "diffie-hellman",
+            "inherits",
+            "pbkdf2",
+            "public-encrypt",
+            "randombytes",
+            "randomfill"
+        ],
+        "devDependencies": ["hash-test-vectors", "pseudorandombytes", "safe-buffer", "standard", "tape", "zuul"],
+        "ts": 1724779435082
+    },
+    "css-tree": {
+        "dependencies": ["mdn-data", "source-map-js"],
+        "devDependencies": ["c8", "clap", "esbuild", "eslint", "json-to-ast", "mocha", "rollup"],
+        "ts": 1724779435264
+    },
+    "eslint-config-unjs": {
+        "dependencies": [
+            "@eslint/js",
+            "eslint-plugin-markdown",
+            "eslint-plugin-unicorn",
+            "globals",
+            "typescript-eslint"
+        ],
+        "devDependencies": [
+            "@eslint/config-inspector",
+            "@types/eslint",
+            "@types/eslint__js",
+            "@types/node",
+            "automd",
+            "changelogen",
+            "eslint",
+            "eslint-typegen",
+            "jiti",
+            "prettier",
+            "typescript",
+            "unbuild"
+        ],
+        "ts": 1724779435538
+    },
+    "eslint-plugin-jsonc": {
+        "dependencies": [
+            "@eslint-community/eslint-utils",
+            "eslint-compat-utils",
+            "espree",
+            "graphemer",
+            "jsonc-eslint-parser",
+            "natural-compare",
+            "synckit"
+        ],
+        "devDependencies": [
+            "@babel/eslint-parser",
+            "@changesets/changelog-github",
+            "@changesets/cli",
+            "@ota-meshi/eslint-plugin",
+            "@ota-meshi/site-kit-eslint-editor-vue",
+            "@types/eslint",
+            "@types/eslint-scope",
+            "@types/eslint-visitor-keys",
+            "@types/mocha",
+            "@types/natural-compare",
+            "@types/node",
+            "@types/semver",
+            "@typescript-eslint/eslint-plugin",
+            "@typescript-eslint/parser",
+            "dts-bundle",
+            "env-cmd",
+            "esbuild",
+            "eslint",
+            "eslint-config-prettier",
+            "eslint-plugin-eslint-comments",
+            "eslint-plugin-eslint-plugin",
+            "eslint-plugin-eslint-rule-tester",
+            "eslint-plugin-json-schema-validator",
+            "eslint-plugin-jsonc",
+            "eslint-plugin-markdown",
+            "eslint-plugin-n",
+            "eslint-plugin-node-dependencies",
+            "eslint-plugin-prettier",
+            "eslint-plugin-regexp",
+            "eslint-plugin-vue",
+            "eslint-plugin-yml",
+            "events",
+            "mocha",
+            "nyc",
+            "pako",
+            "prettier",
+            "semver",
+            "stylelint",
+            "stylelint-config-recommended-vue",
+            "stylelint-config-standard",
+            "stylelint-config-standard-vue",
+            "stylelint-stylus",
+            "ts-node",
+            "typescript",
+            "vite-plugin-eslint4b",
+            "vitepress",
+            "vue-eslint-parser"
+        ],
+        "ts": 1724779435676
+    },
+    "eslint-remote-tester": {
+        "dependencies": ["@babel/code-frame", "JSONStream", "chalk", "ink", "object-hash", "react", "simple-git"],
+        "devDependencies": [
+            "@eslint/eslintrc",
+            "@types/babel__code-frame",
+            "@types/eslint",
+            "@types/node",
+            "@types/object-hash",
+            "@types/react",
+            "conventional-changelog-cli",
+            "eslint",
+            "eslint-plugin-local-rules",
+            "importx",
+            "ink-testing-library",
+            "jiti",
+            "node-pty",
+            "strip-ansi",
+            "typescript",
+            "vitest"
+        ],
+        "ts": 1724779435922
+    },
+    "eslint-scope": {
+        "dependencies": ["esrecurse", "estraverse"],
+        "devDependencies": [
+            "@typescript-eslint/parser",
+            "c8",
+            "chai",
+            "eslint",
+            "eslint-config-eslint",
+            "eslint-plugin-chai-friendly",
+            "eslint-release",
+            "eslint-visitor-keys",
+            "espree",
+            "globals",
+            "mocha",
+            "npm-license",
+            "rollup",
+            "shelljs",
+            "typescript"
+        ],
+        "ts": 1724779436131
+    },
+    "eslint-visitor-keys": {
+        "devDependencies": [
+            "@types/estree",
+            "@types/estree-jsx",
+            "@typescript-eslint/parser",
+            "c8",
+            "chai",
+            "eslint",
+            "eslint-config-eslint",
+            "eslint-plugin-jsdoc",
+            "eslint-plugin-node",
+            "eslint-release",
+            "esquery",
+            "json-diff",
+            "mocha",
+            "opener",
+            "rollup",
+            "rollup-plugin-dts",
+            "tsd",
+            "typescript"
+        ],
+        "ts": 1724779436299
+    },
+    "import-fresh": {
+        "dependencies": ["parent-module", "resolve-from"],
+        "devDependencies": ["ava", "heapdump", "tsd", "xo"],
+        "ts": 1724779437382
+    },
+    "is-plain-obj": { "devDependencies": ["ava", "tsd", "xo"], "ts": 1724779437773 },
+    "mdast-util-from-markdown": {
+        "dependencies": [
+            "@types/mdast",
+            "@types/unist",
+            "decode-named-character-reference",
+            "devlop",
+            "mdast-util-to-string",
+            "micromark",
+            "micromark-util-decode-numeric-character-reference",
+            "micromark-util-decode-string",
+            "micromark-util-normalize-identifier",
+            "micromark-util-symbol",
+            "micromark-util-types",
+            "unist-util-stringify-position"
+        ],
+        "devDependencies": [
+            "@types/node",
+            "c8",
+            "commonmark.json",
+            "esbuild",
+            "gzip-size-cli",
+            "hast-util-from-html",
+            "hast-util-to-html",
+            "mdast-util-to-hast",
+            "micromark-build",
+            "prettier",
+            "remark-cli",
+            "remark-preset-wooorm",
+            "terser",
+            "type-coverage",
+            "typescript",
+            "xo"
+        ],
+        "ts": 1724779438851
+    },
+    "npm-packlist": {
+        "dependencies": ["ignore-walk"],
+        "devDependencies": ["tap", "mutate-fs", "@npmcli/arborist", "@npmcli/template-oss", "@npmcli/eslint-config"],
+        "ts": 1724779439592
+    },
+    "npm-registry-fetch": {
+        "dependencies": [
+            "minipass",
+            "minizlib",
+            "proc-log",
+            "jsonparse",
+            "@npmcli/redact",
+            "minipass-fetch",
+            "npm-package-arg",
+            "make-fetch-happen"
+        ],
+        "devDependencies": [
+            "tap",
+            "nock",
+            "ssri",
+            "cacache",
+            "require-inject",
+            "@npmcli/template-oss",
+            "@npmcli/eslint-config"
+        ],
+        "ts": 1724779439718
+    },
+    "p-timeout": {
+        "devDependencies": ["ava", "delay", "in-range", "p-cancelable", "time-span", "tsd", "xo"],
+        "ts": 1724779439961
+    },
+    "prettier-plugin-organize-imports": {
+        "devDependencies": ["@types/node", "@vue/language-plugin-pug", "ava", "prettier", "typescript", "vue-tsc"],
+        "ts": 1724779440235
+    },
+    "prettier-plugin-packagejson": {
+        "dependencies": ["sort-package-json", "synckit"],
+        "devDependencies": ["cross-env", "jest", "npm-run-all2", "prettier"],
+        "ts": 1724779440397
+    },
+    "proc-log": { "devDependencies": ["tap", "@npmcli/template-oss", "@npmcli/eslint-config"], "ts": 1724779440542 },
+    "remark-preset-wooorm": {
+        "dependencies": [
+            "remark-comment-config",
+            "remark-gfm",
+            "remark-github",
+            "remark-lint-blockquote-indentation",
+            "remark-lint-checkbox-character-style",
+            "remark-lint-checkbox-content-indent",
+            "remark-lint-code-block-style",
+            "remark-lint-definition-case",
+            "remark-lint-definition-spacing",
+            "remark-lint-emphasis-marker",
+            "remark-lint-fenced-code-flag",
+            "remark-lint-fenced-code-marker",
+            "remark-lint-file-extension",
+            "remark-lint-final-definition",
+            "remark-lint-first-heading-level",
+            "remark-lint-heading-style",
+            "remark-lint-link-title-style",
+            "remark-lint-maximum-heading-length",
+            "remark-lint-maximum-line-length",
+            "remark-lint-no-consecutive-blank-lines",
+            "remark-lint-no-duplicate-defined-urls",
+            "remark-lint-no-duplicate-definitions",
+            "remark-lint-no-duplicate-headings-in-section",
+            "remark-lint-no-emphasis-as-heading",
+            "remark-lint-no-empty-url",
+            "remark-lint-no-file-name-articles",
+            "remark-lint-no-file-name-consecutive-dashes",
+            "remark-lint-no-file-name-irregular-characters",
+            "remark-lint-no-file-name-mixed-case",
+            "remark-lint-no-file-name-outer-dashes",
+            "remark-lint-no-heading-content-indent",
+            "remark-lint-no-heading-indent",
+            "remark-lint-no-heading-like-paragraph",
+            "remark-lint-no-heading-punctuation",
+            "remark-lint-no-html",
+            "remark-lint-no-missing-blank-lines",
+            "remark-lint-no-multiple-toplevel-headings",
+            "remark-lint-no-paragraph-content-indent",
+            "remark-lint-no-reference-like-url",
+            "remark-lint-no-shell-dollars",
+            "remark-lint-no-table-indentation",
+            "remark-lint-no-tabs",
+            "remark-lint-no-unneeded-full-reference-image",
+            "remark-lint-no-unneeded-full-reference-link",
+            "remark-lint-ordered-list-marker-value",
+            "remark-lint-rule-style",
+            "remark-lint-strong-marker",
+            "remark-lint-table-cell-padding",
+            "remark-lint-table-pipe-alignment",
+            "remark-lint-table-pipes",
+            "remark-lint-unordered-list-marker-style",
+            "remark-preset-lint-recommended",
+            "remark-retext",
+            "remark-stringify",
+            "remark-toc",
+            "remark-validate-links",
+            "retext-english",
+            "retext-preset-wooorm",
+            "unified"
+        ],
+        "devDependencies": ["prettier", "remark-cli", "type-coverage", "typescript", "xo"],
+        "ts": 1724779440984
+    },
+    "ssri": {
+        "dependencies": ["minipass"],
+        "devDependencies": ["tap", "@npmcli/template-oss", "@npmcli/eslint-config"],
+        "ts": 1724779442154
+    },
+    "sugarss": { "ts": 1724779442571 },
+    "ts-morph": {
+        "dependencies": ["@ts-morph/common", "code-block-writer"],
+        "devDependencies": [
+            "@rollup/plugin-typescript",
+            "@types/chai",
+            "@types/diff",
+            "@types/mocha",
+            "@types/node",
+            "chai",
+            "conditional-type-checks",
+            "cross-env",
+            "diff",
+            "mocha",
+            "rimraf",
+            "rollup",
+            "ts-node",
+            "typescript"
+        ],
+        "ts": 1724779443360
+    },
+    "untildify": { "devDependencies": ["ava", "esmock", "tsd", "xo"], "ts": 1724779443682 },
+    "write-file-atomic": {
+        "dependencies": ["imurmurhash", "signal-exit"],
+        "devDependencies": ["tap", "@npmcli/template-oss", "@npmcli/eslint-config"],
+        "ts": 1724779444483
     }
 }
