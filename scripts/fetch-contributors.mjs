@@ -1,7 +1,7 @@
-const perPage = 100;
+const perPage = 50;
 
 /**
- * @typedef {{ login: string; html_url: string; avatar_url: string; }} Contributor
+ * @typedef {{ login: string; html_url: string; avatar_url: string; contributions: number }} Contributor
  */
 
 /**
@@ -38,6 +38,7 @@ export async function fetchContributors(token) {
 
     for (let page = 1; page < 5; page++) {
         const c = await fetchPage(page);
+        sortContributorsByContributionsThenLogin(c);
         contributors.push(...c);
         if (c.length < perPage) {
             break;
@@ -45,4 +46,8 @@ export async function fetchContributors(token) {
     }
 
     return contributors;
+}
+
+export function sortContributorsByContributionsThenLogin(contributors) {
+    return contributors.sort((a, b) => b.contributions - a.contributions || a.login.localeCompare(b.login));
 }
