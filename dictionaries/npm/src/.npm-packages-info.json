@@ -29751,5 +29751,34 @@
         "dependencies": [],
         "devDependencies": ["esm", "uvu"],
         "ts": 1724771761217
+    },
+    "@sveltejs/eslint-config": {
+        "dependencies": ["globals"],
+        "devDependencies": [
+            "@changesets/cli",
+            "@stylistic/eslint-plugin-js",
+            "@svitejs/changesets-changelog-github-compact",
+            "eslint",
+            "eslint-config-prettier",
+            "eslint-plugin-n",
+            "eslint-plugin-svelte",
+            "svelte",
+            "typescript",
+            "typescript-eslint"
+        ],
+        "ts": 1724774187497
+    },
+    "@sveltejs/vite-plugin-svelte": {
+        "dependencies": [
+            "@sveltejs/vite-plugin-svelte-inspector",
+            "debug",
+            "deepmerge",
+            "kleur",
+            "magic-string",
+            "svelte-hmr",
+            "vitefu"
+        ],
+        "devDependencies": ["@types/debug", "esbuild", "sass", "svelte", "vite"],
+        "ts": 1724774187736
     }
 }
