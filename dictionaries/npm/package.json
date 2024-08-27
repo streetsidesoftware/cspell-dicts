@@ -11,8 +11,10 @@
     "./cspell-ext.json": "./cspell-ext.json"
   },
   "scripts": {
-    "build": "cspell-tools-cli compile --split \"src/npm.txt\" --no-compress -o ./dict -m npm",
-    "test": "shx head -n 100 \"src/npm.txt\" | cspell -c ./cspell-ext.json \"--locale=*\" \"--languageId=javascript\" stdin",
+    "conditional-build": "pnpm update-npm-package-list && pnpm run build && pnpm prettier src --write",
+    "build": "cspell-tools-cli build",
+    "test": "cspell samples/list.txt -c ./cspell-ext.json \"--locale=*\" --languageId=javascript",
+    "update-npm-package-list": "./scripts/update-npm-package-list.mjs",
     "prepublishOnly": "echo pre-publish",
     "prepare:dictionary": "pnpm run build"
   },
