@@ -5,7 +5,7 @@ targets:
   - name: npm
     targetDirectory: ./dict
     compress: false
-    format: trie3
+    format: plaintext
     sources:
       - filename: src/npm.txt
         split: true

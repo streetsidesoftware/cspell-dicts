@@ -9,9 +9,14 @@ export async function getPackageDependencies(packageName) {
     if (!response.ok) {
         return undefined;
     }
-    const { dependencies, devDependencies } = await response.json();
+    const regExpPossibleSemVer = /^[=~^]?\d/;
+    const { dependencies = {}, devDependencies = {} } = await response.json();
+    // const p = Object.entries(devDependencies).filter(([_, value]) => !regExpPossibleSemVer.test(value));
+    // if (p.length > 0) console.warn('Private deps: %o', p);
     return {
-        dependencies: Object.keys({ ...dependencies }),
-        devDependencies: Object.keys({ ...devDependencies }),
+        dependencies: Object.keys(dependencies),
+        devDependencies: Object.entries(devDependencies)
+            .filter(([_, value]) => regExpPossibleSemVer.test(value))
+            .map(([key]) => key),
     };
 }
