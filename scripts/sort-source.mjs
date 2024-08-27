@@ -3,8 +3,7 @@
 import { globby } from 'globby';
 import { program } from 'commander';
 import { promises as fs } from 'fs';
-
-const compare = Intl.Collator('en-US').compare;
+import { sortSourceContent } from './lib/sortContent.mjs';
 
 let info = console.log;
 
@@ -13,7 +12,7 @@ async function processFile(filename, options) {
 
     if (!content.trim()) return;
 
-    const sorted = sortContent(content).replace(/^(.*\n)\1+/gm, '$1');
+    const sorted = sortSourceContent(content).replace(/^(.*\n)\1+/gm, '$1');
 
     if (sorted === content) {
         info(`${filename} - ok`);
@@ -28,44 +27,6 @@ async function processFile(filename, options) {
     } else {
         info(`${filename} - skipped --dry-run`);
     }
-}
-
-function sortContent(content) {
-    const lines = content.trim().split('\n');
-    const groups = [];
-    let group = 0;
-
-    function addLineToGroup(line) {
-        line = line.trim();
-        if (!line) return;
-        groups[group] = groups[group] || [];
-        groups[group].push(line);
-    }
-
-    function addLine(line) {
-        if (line.startsWith('#')) {
-            // One comment per group.
-            if (groups[group]) {
-                // Add an empty line in front of the first comment.
-                groups[++group] = [];
-                ++group;
-            }
-            groups[group++] = [line];
-        } else {
-            addLineToGroup(line);
-        }
-    }
-
-    for (const line of lines) {
-        addLine(line);
-    }
-
-    return (
-        groups
-            .map((a) => a.sort(compare).join('\n'))
-            .join('\n')
-            .trim() + '\n'
-    );
 }
 
 function isAllowedFileType(filename) {

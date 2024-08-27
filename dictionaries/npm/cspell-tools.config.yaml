@@ -9,4 +9,8 @@ targets:
     sources:
       - filename: src/npm.txt
         split: true
+        allowedSplitWords:
+          - ../en_US/en_US.trie
+          - ../software-terms/dict/softwareTerms.txt
+      - src/npm-keywords.txt
     sort: true
