@@ -1,0 +1,12 @@
+# yaml-language-server: $schema=https://raw.githubusercontent.com/streetsidesoftware/cspell/main/packages/cspell-tools/cspell-tools.config.schema.json
+
+$schema: https://raw.githubusercontent.com/streetsidesoftware/cspell/main/packages/cspell-tools/cspell-tools.config.schema.json
+targets:
+  - name: npm
+    targetDirectory: ./dict
+    compress: false
+    format: plaintext
+    sources:
+      - filename: src/npm.txt
+        split: true
+    sort: true

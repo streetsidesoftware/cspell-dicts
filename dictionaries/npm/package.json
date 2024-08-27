@@ -11,8 +11,8 @@
     "./cspell-ext.json": "./cspell-ext.json"
   },
   "scripts": {
-    "build": "cspell-tools-cli compile --split \"src/npm.txt\" --no-compress -o ./dict -m npm",
-    "test": "shx head -n 100 \"src/npm.txt\" | cspell -c ./cspell-ext.json \"--locale=*\" \"--languageId=javascript\" stdin",
+    "build": "cspell-tools-cli build",
+    "test": "cspell samples/list.txt -c ./cspell-ext.json \"--locale=*\" --languageId=javascript",
     "prepublishOnly": "echo pre-publish",
     "prepare:dictionary": "pnpm run build"
   },
