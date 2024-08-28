@@ -9,6 +9,7 @@
 import fs from 'node:fs/promises';
 
 import { commonKeywords, getPackageDependencies, searchForPackagesByKeyword } from './lib/get-package-dependencies.mjs';
+import { PackageDependencies } from './lib/PackageDependencies.mjs';
 
 const urlList = new URL('../src/npm.txt', import.meta.url);
 const urlPackagesInfo = new URL('../src/.npm-packages-info.json', import.meta.url);
@@ -19,7 +20,7 @@ const limit = 0;
  * Minimum number of references to include in the list.
  * This is to prevent including packages that are not used by other packages.
  */
-const minRefs = 5;
+const minRefs = 10;
 
 const staleEntry = 1000 * 60 * 60 * 24 * 30; // 30 days
 
@@ -27,30 +28,30 @@ const includeDevDependencies = true;
 
 /**
  * @typedef {{ ts: number, dependencies?: string[] | undefined, devDependencies?: string[] | undefined }} PackageInfo
- * @typedef {{ value: string; comment: string }} Line
  * @typedef {{[key: string]: PackageInfo }} PackagesInfo
+ * @typedef {{ value: string; comment: string }} Line
  */
 
 /**
  * Read the list of packages and their dependencies.
- * @returns {Promise<PackagesInfo>}
+ * @returns {Promise<PackageDependencies>}
  */
 async function readPackagesInfo() {
     try {
         const content = await fs.readFile(urlPackagesInfo, 'utf-8');
-        return JSON.parse(content);
+        return PackageDependencies.fromJSON(JSON.parse(content));
     } catch {
-        return {};
+        return new PackageDependencies();
     }
 }
 
 /**
  * Write the list of packages and
- * @param {PackagesInfo} info
+ * @param {PackageDependencies} info
  */
-async function writePackagesInfo(info) {
+async function writePackagesDependencies(info) {
     // prettier will clean it up later.
-    const content = JSON.stringify(info) + '\n';
+    const content = JSON.stringify(info, null, 2) + '\n';
     await fs.writeFile(urlPackagesInfo, content);
 }
 
@@ -65,22 +66,26 @@ function cleanPackageInfo(info) {
 }
 
 /**
- * @param {PackagesInfo} packages
+ * @param {PackageDependencies} packages
  * @param {string} packageName
  * @returns {Promise<PackageInfo | undefined>}
  */
 async function getPackageInfo(packages, packageName) {
     const now = Date.now();
 
-    if (packages[packageName] && now - packages[packageName].ts < staleEntry)
-        return cleanPackageInfo(packages[packageName]);
+    let pInfo = packages.get(packageName);
+    if (pInfo && now - pInfo.ts < staleEntry) return cleanPackageInfo(pInfo);
 
     const info = await getPackageDependencies(packageName);
-    if (!info) return undefined;
+    if (!info) {
+        packages.set(packageName, { ts: now, nf: true });
+        writePackagesDependencies(packages);
+        return undefined;
+    }
 
     const pkgInfo = cleanPackageInfo({ ...info, ts: now });
-    packages[packageName] = pkgInfo;
-    writePackagesInfo(packages);
+    packages.set(packageName, pkgInfo);
+    writePackagesDependencies(packages);
     return pkgInfo;
 }
 
@@ -146,7 +151,8 @@ async function updateList() {
             const deps = await getPackageInfo(packagesInfo, line.value);
             if (!deps) {
                 console.log('Not Found: %s', line.value);
-                line.comment = '# Not Found';
+                line.value = '';
+                line.comment = '';
                 continue;
             }
             for (const dep of deps.dependencies || []) {
