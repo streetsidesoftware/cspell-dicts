@@ -13,6 +13,7 @@ import { PackageDependencies } from './lib/PackageDependencies.mjs';
 
 const urlList = new URL('../src/npm.txt', import.meta.url);
 const urlPackagesInfo = new URL('../src/.npm-packages-info.json', import.meta.url);
+const urlPackageRecCounts = new URL('../dict/.npm-package-ref-counts.json', import.meta.url);
 
 const limit = 0;
 
@@ -20,9 +21,11 @@ const limit = 0;
  * Minimum number of references to include in the list.
  * This is to prevent including packages that are not used by other packages.
  */
-const autoIncludeMinNumRefs = 100;
+const autoIncludeMinNumRefs = 40;
 
-const lowRefCount = 10;
+const lowRefCount = 5;
+const markLowRefCount = false;
+const addRefCounts = false;
 
 const staleEntry = 1000 * 60 * 60 * 24 * 30; // 30 days
 
@@ -59,6 +62,15 @@ async function writePackagesDependencies(info) {
 
 /**
  *
+ * @param {Map<string, number>} refCounts
+ */
+async function writePackageRefCounts(refCounts) {
+    const entries = Object.fromEntries([...refCounts].sort((a, b) => a[0].localeCompare(b[0])));
+    await fs.writeFile(urlPackageRecCounts, JSON.stringify(entries, null, 2) + '\n');
+}
+
+/**
+ *
  * @param {PackageInfo} info
  */
 function cleanPackageInfo(info) {
@@ -81,13 +93,13 @@ async function getPackageInfo(packages, packageName) {
     const info = await getPackageDependencies(packageName);
     if (!info) {
         packages.set(packageName, { ts: now, nf: true });
-        writePackagesDependencies(packages);
+        await writePackagesDependencies(packages);
         return undefined;
     }
 
     const pkgInfo = cleanPackageInfo({ ...info, ts: now });
     packages.set(packageName, pkgInfo);
-    writePackagesDependencies(packages);
+    await writePackagesDependencies(packages);
     return pkgInfo;
 }
 
@@ -119,10 +131,15 @@ async function writeList(packageDep, lines, newPackages) {
     const newLines = [...newPackages]
         .filter((name) => packageDep.has(name) && packageDep.getRefCount(name) >= autoIncludeMinNumRefs)
         .sort()
-        .map((value) => ({ value, comment: '' }));
+        .map((name) => ({ value: name, comment: addRefCounts ? `# count ${packageDep.getRefCount(name)}` : '' }));
     const linesOut = [...lines, ...newLines];
 
-    const outContent = linesOut.map(stringifyLine).join('\n').trim() + '\n';
+    const outContent =
+        linesOut
+            .map(stringifyLine)
+            .filter((a) => !!a)
+            .join('\n')
+            .trim() + '\n';
 
     await fs.writeFile(urlList, outContent);
 }
@@ -157,7 +174,7 @@ async function updateList() {
                 line.comment = '';
                 continue;
             }
-            if (packagesInfo.getRefCount(pkgName) < lowRefCount) {
+            if (markLowRefCount && packagesInfo.getRefCount(pkgName) < lowRefCount) {
                 line.comment = `# Low Ref Count ${packagesInfo.getRefCount(pkgName)}`;
             } else if (line.comment.startsWith('# Low Ref Count')) {
                 line.comment = '';
@@ -179,6 +196,7 @@ async function updateList() {
     }
 
     await writeList(packagesInfo, lines, newPackages);
+    await writePackageRefCounts(packagesInfo.packageRefCounts);
 
     return;
 

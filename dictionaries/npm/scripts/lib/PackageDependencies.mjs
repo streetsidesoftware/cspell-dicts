@@ -20,7 +20,7 @@ export class PackageDependencies {
         /**
          * @type {Map<string, number>}
          */
-        this.thisPackageRefCounts = new Map();
+        this.packageRefCounts = new Map();
 
         this.calcRefCounts();
     }
@@ -61,10 +61,12 @@ export class PackageDependencies {
     /**
      * Get the number of references to the package.
      * @param {string} packageName
+     * @param {boolean} [zeroNotFound] Return zero if the package is not found in the registry.
      * @returns {number} Returns the number of references to the package, 0 if the package is not found or referenced.
      */
-    getRefCount(packageName) {
-        return this.thisPackageRefCounts.get(packageName) || 0;
+    getRefCount(packageName, zeroNotFound = true) {
+        if (zeroNotFound && !this.get(packageName)) return 0;
+        return this.packageRefCounts.get(packageName) || 0;
     }
 
     /**
@@ -87,10 +89,10 @@ export class PackageDependencies {
      * Calculate the reference counts for the packages.
      */
     calcRefCounts() {
-        this.thisPackageRefCounts.clear();
+        this.packageRefCounts.clear();
         for (const [, { dependencies = [], devDependencies = [] }] of this.packagesInfo) {
             for (const dep of [...dependencies, ...devDependencies]) {
-                this.thisPackageRefCounts.set(dep, (this.thisPackageRefCounts.get(dep) || 0) + 1);
+                this.packageRefCounts.set(dep, (this.packageRefCounts.get(dep) || 0) + 1);
             }
         }
     }
