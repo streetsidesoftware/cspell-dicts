@@ -320,6 +320,12 @@ importers:
 
   dictionaries/npm: {}
 
+  dictionaries/npm/scripts:
+    dependencies:
+      '@cspell/normalize-json':
+        specifier: ^8.14.2
+        version: 8.14.2
+
   dictionaries/people-names:
     devDependencies:
       '@internal/en-freq':
@@ -688,6 +694,10 @@ packages:
 
   '@cspell/filetypes@8.14.2':
     resolution: {integrity: sha512-ZevArA0mWeVTTqHicxCPZIAeCibpY3NwWK/x6d1Lgu7RPk/daoGAM546Q2SLChFu+r10tIH7pRG212A6Q9ihPA==}
+    engines: {node: '>=18'}
+
+  '@cspell/normalize-json@8.14.2':
+    resolution: {integrity: sha512-XfLLLU5TMTZ91B1IF2UY4TqJZJqWCn5luS+uuDjDSQIfmbOW1Z89QeduoMAHHMApFxTF7GIZvjy7J0uqklBmRA==}
     engines: {node: '>=18'}
 
   '@cspell/strong-weak-map@8.14.2':
@@ -4258,6 +4268,8 @@ snapshots:
       import-meta-resolve: 4.1.0
 
   '@cspell/filetypes@8.14.2': {}
+
+  '@cspell/normalize-json@8.14.2': {}
 
   '@cspell/strong-weak-map@8.14.2': {}
 
