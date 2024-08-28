@@ -14,8 +14,8 @@ import { writeKeywordsCsv, writePackageRefCountsCsv } from './lib/util.mjs';
 
 const urlList = new URL('../src/npm.txt', import.meta.url);
 const urlPackagesInfo = new URL('../src/.npm-packages-info.json', import.meta.url);
-const urlPackageRecCounts = new URL('../dict/.npm-package-ref-counts.csv', import.meta.url);
-const urlKeywords = new URL('../dict/.npm-keywords.csv', import.meta.url);
+const urlPackageRecCounts = new URL('../src/npm/.npm-package-ref-counts.csv', import.meta.url);
+const urlKeywords = new URL('../src/npm/.npm-keywords.csv', import.meta.url);
 
 const limit = 0;
 

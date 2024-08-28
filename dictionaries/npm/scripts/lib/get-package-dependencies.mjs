@@ -24,7 +24,7 @@ export async function getPackageDependencies(packageName) {
         devDependencies: Object.entries(devDependencies)
             .filter(([_, value]) => regExpPossibleSemVer.test(value))
             .map(([key]) => key),
-        keywords,
+        keywords: Array.isArray(keywords) ? keywords : [],
     };
 }
 
