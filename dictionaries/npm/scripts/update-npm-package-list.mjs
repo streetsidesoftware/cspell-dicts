@@ -10,10 +10,12 @@ import fs from 'node:fs/promises';
 
 import { commonKeywords, getPackageDependencies, searchForPackagesByKeyword } from './lib/get-package-dependencies.mjs';
 import { PackageDependencies } from './lib/PackageDependencies.mjs';
+import { writeKeywordsCsv, writePackageRefCountsCsv } from './lib/util.mjs';
 
 const urlList = new URL('../src/npm.txt', import.meta.url);
 const urlPackagesInfo = new URL('../src/.npm-packages-info.json', import.meta.url);
-const urlPackageRecCounts = new URL('../dict/.npm-package-ref-counts.json', import.meta.url);
+const urlPackageRecCounts = new URL('../dict/.npm-package-ref-counts.csv', import.meta.url);
+const urlKeywords = new URL('../dict/.npm-keywords.csv', import.meta.url);
 
 const limit = 0;
 
@@ -58,15 +60,6 @@ async function writePackagesDependencies(info) {
     // prettier will clean it up later.
     const content = JSON.stringify(info, null, 2) + '\n';
     await fs.writeFile(urlPackagesInfo, content);
-}
-
-/**
- *
- * @param {Map<string, number>} refCounts
- */
-async function writePackageRefCounts(refCounts) {
-    const entries = Object.fromEntries([...refCounts].sort((a, b) => a[0].localeCompare(b[0])));
-    await fs.writeFile(urlPackageRecCounts, JSON.stringify(entries, null, 2) + '\n');
 }
 
 /**
@@ -196,7 +189,8 @@ async function updateList() {
     }
 
     await writeList(packagesInfo, lines, newPackages);
-    await writePackageRefCounts(packagesInfo.packageRefCounts);
+    await writePackageRefCountsCsv(urlPackageRecCounts, packagesInfo.packageRefCounts);
+    await writeKeywordsCsv(urlKeywords, packagesInfo.keywords);
 
     return;
 

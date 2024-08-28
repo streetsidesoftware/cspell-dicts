@@ -8,7 +8,7 @@
 /**
  *
  * @param {string} packageName
- * @returns {Promise<{ dependencies: string[]; devDependencies: string[] } | undefined>}
+ * @returns {Promise<{ dependencies: string[]; devDependencies: string[]; keywords: string[] } | undefined>}
  */
 export async function getPackageDependencies(packageName) {
     const response = await fetch(`https://registry.npmjs.org/${packageName}/latest`);
@@ -16,7 +16,7 @@ export async function getPackageDependencies(packageName) {
         return undefined;
     }
     const regExpPossibleSemVer = /^[=~^]?\d/;
-    const { dependencies = {}, devDependencies = {} } = await response.json();
+    const { dependencies = {}, devDependencies = {}, keywords = [] } = await response.json();
     // const p = Object.entries(devDependencies).filter(([_, value]) => !regExpPossibleSemVer.test(value));
     // if (p.length > 0) console.warn('Private deps: %o', p);
     return {
@@ -24,6 +24,7 @@ export async function getPackageDependencies(packageName) {
         devDependencies: Object.entries(devDependencies)
             .filter(([_, value]) => regExpPossibleSemVer.test(value))
             .map(([key]) => key),
+        keywords,
     };
 }
 
@@ -37,14 +38,17 @@ export const commonKeywords = [
     'frontend',
     'html',
     'mobile',
+    'react',
     'testing',
 ];
+
+const defaultSize = 50;
 
 export async function searchForPackagesByKeyword(...keywords) {
     const url = new URL('https://registry.npmjs.org/-/v1/search');
     const text = ['keywords:' + keywords.join(','), 'not:insecure'].join(' ');
     url.searchParams.set('text', text);
-    url.searchParams.set('size', '100');
+    url.searchParams.set('size', defaultSize.toString());
     url.searchParams.set('popularity', '1.0');
     url.searchParams.set('quality', '0.75');
     url.searchParams.set('maintenance', '0.75');

@@ -1,7 +1,13 @@
 import { toJSON, fromJSON } from '@cspell/normalize-json';
 
 /**
- * @typedef {{ ts: number, dependencies?: string[] | undefined, devDependencies?: string[] | undefined, nf?: true }} PackageInfo
+ * @typedef {{
+ *  ts: number;
+ *  dependencies?: string[] | undefined;
+ *  devDependencies?: string[] | undefined;
+ *  keywords?: string[] | undefined;
+ *  nf?: true
+ * }} PackageInfo
  * @typedef {{[key: string]: PackageInfo }} PackagesInfo
  */
 
@@ -21,6 +27,11 @@ export class PackageDependencies {
          * @type {Map<string, number>}
          */
         this.packageRefCounts = new Map();
+
+        /**
+         * @type {Map<string, number>}
+         */
+        this.keywords = new Map();
 
         this.calcRefCounts();
     }
@@ -90,9 +101,13 @@ export class PackageDependencies {
      */
     calcRefCounts() {
         this.packageRefCounts.clear();
-        for (const [, { dependencies = [], devDependencies = [] }] of this.packagesInfo) {
+        this.keywords.clear();
+        for (const [, { dependencies = [], devDependencies = [], keywords = [] }] of this.packagesInfo) {
             for (const dep of [...dependencies, ...devDependencies]) {
                 this.packageRefCounts.set(dep, (this.packageRefCounts.get(dep) || 0) + 1);
+            }
+            for (const keyword of keywords) {
+                this.keywords.set(keyword, (this.keywords.get(keyword) || 0) + 1);
             }
         }
     }
