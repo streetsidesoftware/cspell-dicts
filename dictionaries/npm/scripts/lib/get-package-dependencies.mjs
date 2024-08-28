@@ -27,7 +27,18 @@ export async function getPackageDependencies(packageName) {
     };
 }
 
-export const commonKeywords = ['front-ent', 'frontend', 'backend', 'mobile', 'cli', 'framework'];
+export const commonKeywords = [
+    'backend',
+    'cli',
+    'css',
+    'documentation',
+    'framework',
+    'front-ent',
+    'frontend',
+    'html',
+    'mobile',
+    'testing',
+];
 
 export async function searchForPackagesByKeyword(...keywords) {
     const url = new URL('https://registry.npmjs.org/-/v1/search');

@@ -21,7 +21,7 @@ const limit = 0;
  * Minimum number of references to include in the list.
  * This is to prevent including packages that are not used by other packages.
  */
-const autoIncludeMinNumRefs = 40;
+const autoIncludeMinNumRefs = 20;
 
 const lowRefCount = 5;
 const markLowRefCount = false;
