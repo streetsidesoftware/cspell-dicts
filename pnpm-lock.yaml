@@ -325,6 +325,9 @@ importers:
       '@cspell/normalize-json':
         specifier: ^8.14.2
         version: 8.14.2
+      csv-stringify:
+        specifier: ^6.5.1
+        version: 6.5.1
 
   dictionaries/people-names:
     devDependencies:
@@ -1729,6 +1732,9 @@ packages:
     resolution: {integrity: sha512-/Tb/JcjK111nNScGob5MNtsntNM1aCNUDipB/TkwZFhyDrrE47SOx/18wF2bbjgc3ZzCSKW1T5nt5EbFoAz/Vg==}
     engines: {node: '>=4'}
     hasBin: true
+
+  csv-stringify@6.5.1:
+    resolution: {integrity: sha512-+9lpZfwpLntpTIEpFbwQyWuW/hmI/eHuJZD1XzeZpfZTqkf1fyvBbBLXTJJMsBuuS11uTShMqPwzx4A6ffXgRQ==}
 
   currently-unhandled@0.4.1:
     resolution: {integrity: sha512-/fITjgjGU50vjQ4FH6eUoYu+iUoUKIXws2hL15JJpIR+BbTxaXQsMuuyjtNh2WqsSBS5nsaZHFsFecyw5CCAng==}
@@ -5718,6 +5724,8 @@ snapshots:
       strip-ansi: 7.1.0
 
   cssesc@3.0.0: {}
+
+  csv-stringify@6.5.1: {}
 
   currently-unhandled@0.4.1:
     dependencies:

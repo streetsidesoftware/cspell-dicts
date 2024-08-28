@@ -1,7 +1,13 @@
 import { toJSON, fromJSON } from '@cspell/normalize-json';
 
 /**
- * @typedef {{ ts: number, dependencies?: string[] | undefined, devDependencies?: string[] | undefined, nf?: true }} PackageInfo
+ * @typedef {{
+ *  ts: number;
+ *  dependencies?: string[] | undefined;
+ *  devDependencies?: string[] | undefined;
+ *  keywords?: string[] | undefined;
+ *  nf?: true
+ * }} PackageInfo
  * @typedef {{[key: string]: PackageInfo }} PackagesInfo
  */
 
@@ -17,6 +23,17 @@ export class PackageDependencies {
          * @type {Map<string, PackageInfo>}
          */
         this.packagesInfo = packagesInfo || new Map();
+        /**
+         * @type {Map<string, number>}
+         */
+        this.packageRefCounts = new Map();
+
+        /**
+         * @type {Map<string, number>}
+         */
+        this.keywords = new Map();
+
+        this.calcRefCounts();
     }
 
     toJSON() {
@@ -46,15 +63,52 @@ export class PackageDependencies {
     /**
      *
      * @param {string} packageName
+     * @returns {boolean} Returns true if the package is found and referenced.
+     */
+    has(packageName) {
+        return this.packagesInfo.has(packageName);
+    }
+
+    /**
+     * Get the number of references to the package.
+     * @param {string} packageName
+     * @param {boolean} [zeroNotFound] Return zero if the package is not found in the registry.
+     * @returns {number} Returns the number of references to the package, 0 if the package is not found or referenced.
+     */
+    getRefCount(packageName, zeroNotFound = true) {
+        if (zeroNotFound && !this.get(packageName)) return 0;
+        return this.packageRefCounts.get(packageName) || 0;
+    }
+
+    /**
+     *
+     * @param {string} packageName
      * @param {PackageInfo | undefined} info
      */
     set(packageName, info) {
         ++this.version;
         info = info || { ts: Date.now(), nf: true };
         this.packagesInfo.set(packageName, info);
+        this.calcRefCounts();
     }
 
     get size() {
         return this.packagesInfo.size;
+    }
+
+    /**
+     * Calculate the reference counts for the packages.
+     */
+    calcRefCounts() {
+        this.packageRefCounts.clear();
+        this.keywords.clear();
+        for (const [, { dependencies = [], devDependencies = [], keywords = [] }] of this.packagesInfo) {
+            for (const dep of [...dependencies, ...devDependencies]) {
+                this.packageRefCounts.set(dep, (this.packageRefCounts.get(dep) || 0) + 1);
+            }
+            for (const keyword of keywords) {
+                this.keywords.set(keyword, (this.keywords.get(keyword) || 0) + 1);
+            }
+        }
     }
 }
