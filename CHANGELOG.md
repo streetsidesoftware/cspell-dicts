@@ -1,5 +1,24 @@
 # Release Notes
 
+## [27.4.0](https://github.com/streetsidesoftware/cspell-dicts/compare/cspell-dicts@27.3.1...cspell-dicts@27.4.0) (2024-08-29)
+
+
+### Features
+
+* add flutter dictioanry ([#3547](https://github.com/streetsidesoftware/cspell-dicts/issues/3547)) ([c96649b](https://github.com/streetsidesoftware/cspell-dicts/commit/c96649b1058bcea82e2c8da395da07f91fd9d7b5))
+* add more detailed dart dictionary ([#3546](https://github.com/streetsidesoftware/cspell-dicts/issues/3546)) ([9a55820](https://github.com/streetsidesoftware/cspell-dicts/commit/9a558202a30b2a7319f217b017608e04202b9f88))
+
+
+### Updates and Bug Fixes
+
+* Add comment and tests to powershell ([#3541](https://github.com/streetsidesoftware/cspell-dicts/issues/3541)) ([0f11e78](https://github.com/streetsidesoftware/cspell-dicts/commit/0f11e787a7a5e97458ade76ba7ea2e954ee1219c))
+* Workflow Bot -- Build Dictionaries ([#3538](https://github.com/streetsidesoftware/cspell-dicts/issues/3538)) ([298f728](https://github.com/streetsidesoftware/cspell-dicts/commit/298f728ff2f61d785ee428e198b5f42af9cd1319))
+* Workflow Bot -- Build Dictionaries ([#3539](https://github.com/streetsidesoftware/cspell-dicts/issues/3539)) ([c6002a4](https://github.com/streetsidesoftware/cspell-dicts/commit/c6002a4014013db406bead64a848588f166f8204))
+* Workflow Bot -- Build Dictionaries ([#3542](https://github.com/streetsidesoftware/cspell-dicts/issues/3542)) ([472d315](https://github.com/streetsidesoftware/cspell-dicts/commit/472d3153f38f7d57282f9986c5010f7885e81262))
+* Workflow Bot -- Build Dictionaries ([#3544](https://github.com/streetsidesoftware/cspell-dicts/issues/3544)) ([ae48ffe](https://github.com/streetsidesoftware/cspell-dicts/commit/ae48ffea6cd3e176415578a0082947a6d458e3a2))
+* Workflow Bot -- Build Dictionaries ([#3545](https://github.com/streetsidesoftware/cspell-dicts/issues/3545)) ([00cc9c6](https://github.com/streetsidesoftware/cspell-dicts/commit/00cc9c6201842b3687ff132e3b5a68e7eca3c743))
+* Workflow Bot -- Build Dictionaries ([#3548](https://github.com/streetsidesoftware/cspell-dicts/issues/3548)) ([54448f8](https://github.com/streetsidesoftware/cspell-dicts/commit/54448f8bed05285d3233c392a245a09f21ba372d))
+
 ## [27.3.1](https://github.com/streetsidesoftware/cspell-dicts/compare/cspell-dicts@27.3.0...cspell-dicts@27.3.1) (2024-08-28)
 
 
