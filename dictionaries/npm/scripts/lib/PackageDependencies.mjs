@@ -107,6 +107,7 @@ export class PackageDependencies {
                 this.packageRefCounts.set(dep, (this.packageRefCounts.get(dep) || 0) + 1);
             }
             for (const keyword of keywords) {
+                if (typeof keyword !== 'string') continue;
                 this.keywords.set(keyword, (this.keywords.get(keyword) || 0) + 1);
             }
         }

@@ -33,6 +33,8 @@ const staleEntry = 1000 * 60 * 60 * 24 * 30; // 30 days
 
 const includeDevDependencies = true;
 
+const compare = new Intl.Collator('en').compare;
+
 /**
  * @typedef {{ ts: number, dependencies?: string[] | undefined, devDependencies?: string[] | undefined }} PackageInfo
  * @typedef {{[key: string]: PackageInfo }} PackagesInfo
@@ -110,6 +112,17 @@ function parseLine(line) {
     return { value: value.trim(), comment: comment.trim() };
 }
 
+/**
+ *
+ * @param {Line[]} lines
+ */
+function sortLines(lines) {
+    const idx = new Map(lines.map((line, i) => [line, i]));
+    return lines
+        .filter((a) => a.value || a.comment)
+        .sort((a, b) => compare(a.value, b.value) || (idx.get(a) || 0) - (idx.get(b) || 0));
+}
+
 function stringifyLine(line) {
     if (!line.value) return line.comment;
     return line.comment ? `${line.value} ${line.comment}` : line.value;
@@ -123,9 +136,8 @@ function stringifyLine(line) {
 async function writeList(packageDep, lines, newPackages) {
     const newLines = [...newPackages]
         .filter((name) => packageDep.has(name) && packageDep.getRefCount(name) >= autoIncludeMinNumRefs)
-        .sort()
         .map((name) => ({ value: name, comment: addRefCounts ? `# count ${packageDep.getRefCount(name)}` : '' }));
-    const linesOut = [...lines, ...newLines];
+    const linesOut = sortLines([...lines, ...newLines]);
 
     const outContent =
         linesOut
@@ -192,7 +204,7 @@ async function updateList() {
     await writePackageRefCountsCsv(urlPackageRecCounts, packagesInfo.packageRefCounts);
     await writeKeywordsCsv(urlKeywords, packagesInfo.keywords);
 
-    return;
+    return newPackages.size;
 
     async function queryPopular() {
         const requests = await Promise.all(commonKeywords.map((key) => searchForPackagesByKeyword(key)));
@@ -219,10 +231,13 @@ async function updateList() {
 
 async function run() {
     try {
-        return await updateList();
+        const startTime = Date.now();
+        while (Date.now() - startTime < 10000) {
+            if (!(await updateList())) break;
+        }
     } catch (e) {
         console.error(e);
-        process.exit(1);
+        process.exitCode = 1;
     }
 }
 
