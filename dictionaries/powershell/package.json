@@ -12,7 +12,7 @@
   },
   "scripts": {
     "build": "cspell-tools-cli build",
-    "test": "shx head -n 100 src/powershell.txt | cspell -c ./cspell-ext.json \"--locale=*\" \"--languageId=powershell\" stdin",
+    "test": "cspell samples -c samples/cspell.json",
     "prepublishOnly": "echo pre-publish",
     "prepare:dictionary": "pnpm run build"
   },
