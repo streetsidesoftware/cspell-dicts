@@ -14,7 +14,7 @@
     "build": "cspell-tools-cli build",
     "test": "npm run test-dict && npm run test-samples",
     "test-samples": "cspell \"samples/**/*.dart\"",
-    "test-dict": "shx head -n 1000 \"src/dart.txt\" | cspell -c ./cspell-ext.json \"--locale=*\" \"--languageId=dart\" stdin",
+    "test-dict": "shx head -n 1000 \"src/dart-common.txt\" | cspell -c ./cspell-ext.json \"--locale=*\" \"--languageId=dart\" stdin",
     "prepublishOnly": "echo pre-publish",
     "prepare:dictionary": "pnpm run build"
   },
@@ -38,7 +38,7 @@
   },
   "homepage": "https://github.com/streetsidesoftware/cspell-dicts/blob/main/dictionaries/dart#readme",
   "files": [
-    "dart.txt.gz",
+    "dart-common.txt.gz",
     "cspell-ext.json"
   ]
 }
