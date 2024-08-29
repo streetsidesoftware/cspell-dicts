@@ -1,5 +1,19 @@
 # Release Notes
 
+## [27.5.0](https://github.com/streetsidesoftware/cspell-dicts/compare/cspell-dicts@27.4.0...cspell-dicts@27.5.0) (2024-08-29)
+
+
+### Features
+
+* add top pubdev package name ([#3551](https://github.com/streetsidesoftware/cspell-dicts/issues/3551)) ([cbdf919](https://github.com/streetsidesoftware/cspell-dicts/commit/cbdf9190b2c67025fa90581210efe69f2ab8d68f))
+
+
+### Updates and Bug Fixes
+
+* PowerShell add Runspace(s) ([#3553](https://github.com/streetsidesoftware/cspell-dicts/issues/3553)) ([09d6034](https://github.com/streetsidesoftware/cspell-dicts/commit/09d60349ff8cabef17fa88f4dd890079846a4592))
+* Workflow Bot -- Build Dictionaries ([#3550](https://github.com/streetsidesoftware/cspell-dicts/issues/3550)) ([3ce1df0](https://github.com/streetsidesoftware/cspell-dicts/commit/3ce1df0f34ddd51a2738b86420f90765044cffd4))
+* Workflow Bot -- Build Dictionaries ([#3555](https://github.com/streetsidesoftware/cspell-dicts/issues/3555)) ([68e8145](https://github.com/streetsidesoftware/cspell-dicts/commit/68e814526214b2fe59dfe5a367615b7dad56c495))
+
 ## [27.4.0](https://github.com/streetsidesoftware/cspell-dicts/compare/cspell-dicts@27.3.1...cspell-dicts@27.4.0) (2024-08-29)
 
 
