@@ -11,6 +11,12 @@
             "description": "Dart dictionary for cspell."
         }
     ],
+    "patterns": [
+        {
+            "name": "wxyz",
+            "pattern": "/\\b[wxyz]{4}\\b/g"
+        }
+    ],
     "dictionaries": [],
     "enableFiletypes": ["dart"],
     "languageSettings": [
