@@ -3,6 +3,13 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+## [2.2.0](https://github.com/streetsidesoftware/cspell-dicts/compare/@cspell/dict-dart@2.1.0...@cspell/dict-dart@2.2.0) (2024-08-29)
+
+
+### Features
+
+* add top pubdev package name ([#3551](https://github.com/streetsidesoftware/cspell-dicts/issues/3551)) ([cbdf919](https://github.com/streetsidesoftware/cspell-dicts/commit/cbdf9190b2c67025fa90581210efe69f2ab8d68f))
+
 ## [2.1.0](https://github.com/streetsidesoftware/cspell-dicts/compare/@cspell/dict-dart@2.0.3...@cspell/dict-dart@2.1.0) (2024-08-29)
 
 
