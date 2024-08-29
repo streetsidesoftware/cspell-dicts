@@ -3,6 +3,13 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+## [2.1.0](https://github.com/streetsidesoftware/cspell-dicts/compare/@cspell/dict-dart@2.0.3...@cspell/dict-dart@2.1.0) (2024-08-29)
+
+
+### Features
+
+* add more detailed dart dictionary ([#3546](https://github.com/streetsidesoftware/cspell-dicts/issues/3546)) ([9a55820](https://github.com/streetsidesoftware/cspell-dicts/commit/9a558202a30b2a7319f217b017608e04202b9f88))
+
 ## [2.0.3](https://github.com/streetsidesoftware/cspell-dicts/compare/@cspell/dict-dart@2.0.2...@cspell/dict-dart@2.0.3) (2023-07-19)
 
 
