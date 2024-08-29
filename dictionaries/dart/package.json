@@ -14,7 +14,7 @@
     "build": "cspell-tools-cli build",
     "test": "npm run test-dict && npm run test-samples",
     "test-samples": "cspell \"samples/**/*.dart\"",
-    "test-dict": "shx head -n 1000 \"src/dart.txt\" | cspell -c ./cspell-ext.json \"--locale=*\" \"--languageId=dart\" stdin",
+    "test-dict": "cspell -c ./cspell-ext.json \"--locale=*\" \"--languageId=dart\" samples/dart-common.txt",
     "prepublishOnly": "echo pre-publish",
     "prepare:dictionary": "pnpm run build"
   },
