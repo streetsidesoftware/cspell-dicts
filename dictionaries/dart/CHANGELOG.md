@@ -3,6 +3,14 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+## [2.2.1](https://github.com/streetsidesoftware/cspell-dicts/compare/@cspell/dict-dart@2.2.0...@cspell/dict-dart@2.2.1) (2024-08-31)
+
+
+### Updates and Bug Fixes
+
+* Add `instancetype` and `cstr` to Dart ([#3557](https://github.com/streetsidesoftware/cspell-dicts/issues/3557)) ([0dd4c91](https://github.com/streetsidesoftware/cspell-dicts/commit/0dd4c9148a4dd84e6de5af6380fbb90f51fce38b))
+* Workflow Bot -- Build Dictionaries ([#3560](https://github.com/streetsidesoftware/cspell-dicts/issues/3560)) ([b3b9349](https://github.com/streetsidesoftware/cspell-dicts/commit/b3b934945a99dd019f9bb88ff93f44aacb67a9ed))
+
 ## [2.2.0](https://github.com/streetsidesoftware/cspell-dicts/compare/@cspell/dict-dart@2.1.0...@cspell/dict-dart@2.2.0) (2024-08-29)
 
 
