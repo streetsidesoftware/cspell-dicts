@@ -1,5 +1,15 @@
 # Release Notes
 
+## [27.5.1](https://github.com/streetsidesoftware/cspell-dicts/compare/cspell-dicts@27.5.0...cspell-dicts@27.5.1) (2024-08-31)
+
+
+### Updates and Bug Fixes
+
+* Add `instancetype` and `cstr` to Dart ([#3557](https://github.com/streetsidesoftware/cspell-dicts/issues/3557)) ([0dd4c91](https://github.com/streetsidesoftware/cspell-dicts/commit/0dd4c9148a4dd84e6de5af6380fbb90f51fce38b))
+* Add `stringifyable` to software-terms.txt ([#3558](https://github.com/streetsidesoftware/cspell-dicts/issues/3558)) ([28a11e7](https://github.com/streetsidesoftware/cspell-dicts/commit/28a11e7824c9ffb62254d2ba1717982452ae4f6e))
+* Workflow Bot -- Build Dictionaries ([#3560](https://github.com/streetsidesoftware/cspell-dicts/issues/3560)) ([b3b9349](https://github.com/streetsidesoftware/cspell-dicts/commit/b3b934945a99dd019f9bb88ff93f44aacb67a9ed))
+* Workflow Bot -- Build Dictionaries ([#3561](https://github.com/streetsidesoftware/cspell-dicts/issues/3561)) ([0c3941c](https://github.com/streetsidesoftware/cspell-dicts/commit/0c3941cd9453caac52519a216ec3666be3d90bf9))
+
 ## [27.5.0](https://github.com/streetsidesoftware/cspell-dicts/compare/cspell-dicts@27.4.0...cspell-dicts@27.5.0) (2024-08-29)
 
 
