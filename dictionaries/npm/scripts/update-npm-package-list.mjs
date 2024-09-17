@@ -147,6 +147,8 @@ async function writeList(packageDep, lines, newPackages) {
     await fs.writeFile(urlList, outContent);
 }
 
+const formatPackageInfoOnly = false;
+
 async function updateList() {
     const listContent = await fs.readFile(urlList, 'utf-8');
     const lines = listContent.split('\n').map(parseLine);
@@ -157,6 +159,9 @@ async function updateList() {
     const newPackages = new Set();
 
     const packagesInfo = await readPackagesInfo();
+
+    await writePackagesDependencies(packagesInfo);
+    if (formatPackageInfoOnly) return;
 
     await queryPopular();
 
