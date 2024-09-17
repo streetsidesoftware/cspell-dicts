@@ -14,6 +14,8 @@ import { FlatpackStore } from '@cspell/normalize-json';
  * @typedef {{[key: string]: PackageInfo }} PackagesInfo
  */
 
+export const msPerDay = 24 * 60 * 60 * 1000;
+
 export class PackageDependencies {
     version = 0;
 
@@ -43,12 +45,12 @@ export class PackageDependencies {
     }
 
     toJSON() {
-        this.flatpackStore.setValue(this.packagesInfo);
+        this.flatpackStore.setValue(new Map(this.packagesInfo));
         return this.flatpackStore.toJSON();
     }
 
     stringify() {
-        this.flatpackStore.setValue(this.packagesInfo);
+        this.flatpackStore.setValue(new Map(this.packagesInfo));
         return this.flatpackStore.stringify();
     }
 
@@ -102,8 +104,11 @@ export class PackageDependencies {
      * @param {PackageInfo | undefined} info
      */
     set(packageName, info) {
+        info = info && { ...info };
         ++this.version;
         info = info || { ts: Date.now(), nf: true };
+        // truncate the ts to the day.
+        cleanTimestamp(info);
         this.packagesInfo.set(packageName, info);
         this.calcRefCounts();
     }
@@ -137,4 +142,13 @@ export class PackageDependencies {
  */
 function isPackagesInfo(info) {
     return info && typeof info === 'object' && info instanceof Map;
+}
+
+/**
+ * To save on space, we truncate the timestamp to the day.
+ * @param {PackageInfo} info
+ * @returns
+ */
+export function cleanTimestamp(info) {
+    info.ts = Math.floor(info.ts / msPerDay) * msPerDay;
 }

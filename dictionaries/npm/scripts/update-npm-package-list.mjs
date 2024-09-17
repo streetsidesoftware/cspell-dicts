@@ -29,7 +29,9 @@ const lowRefCount = 5;
 const markLowRefCount = false;
 const addRefCounts = false;
 
-const staleEntry = 1000 * 60 * 60 * 24 * 30; // 30 days
+const msPerDay = 1000 * 60 * 60 * 24;
+const staleEntry = msPerDay * 30;
+const staleDither = 0.4 * staleEntry;
 
 const includeDevDependencies = true;
 
@@ -81,7 +83,11 @@ async function getPackageInfo(packages, packageName) {
     const now = Date.now();
 
     let pInfo = packages.get(packageName);
-    if (pInfo && now - pInfo.ts < staleEntry) return cleanPackageInfo(pInfo);
+    if (pInfo && !isStale(pInfo)) {
+        const info = cleanPackageInfo(pInfo);
+        packages.set(packageName, info);
+        return info;
+    }
 
     const info = await getPackageDependencies(packageName);
     if (!info) {
@@ -94,6 +100,20 @@ async function getPackageInfo(packages, packageName) {
     packages.set(packageName, pkgInfo);
     await writePackagesDependencies(packages);
     return pkgInfo;
+}
+
+/**
+ * Check if the package info is stale.
+ * A dither is used to spread out the updates.
+ * @param {PackageInfo} info
+ * @returns
+ */
+function isStale(info) {
+    const stale = Date.now() - info.ts > staleEntry - Math.random() * staleDither;
+    if (stale) {
+        console.log('Stale: %o', info);
+    }
+    return stale;
 }
 
 /**
