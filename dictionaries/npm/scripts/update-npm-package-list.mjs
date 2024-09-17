@@ -110,9 +110,9 @@ async function getPackageInfo(packages, packageName) {
  */
 function isStale(info) {
     const stale = Date.now() - info.ts > staleEntry - Math.random() * staleDither;
-    if (stale) {
-        console.log('Stale: %o', info);
-    }
+    // if (stale) {
+    //     console.log('Stale: %o', info);
+    // }
     return stale;
 }
 
