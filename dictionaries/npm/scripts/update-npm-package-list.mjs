@@ -59,9 +59,7 @@ async function readPackagesInfo() {
  * @param {PackageDependencies} info
  */
 async function writePackagesDependencies(info) {
-    // prettier will clean it up later.
-    const content = JSON.stringify(info, null, 2) + '\n';
-    await fs.writeFile(urlPackagesInfo, content);
+    await fs.writeFile(urlPackagesInfo, info.stringify());
 }
 
 /**

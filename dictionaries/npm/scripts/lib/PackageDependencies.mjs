@@ -1,4 +1,7 @@
-import { toJSON, fromJSON } from '@cspell/normalize-json';
+// @ts-check
+import assert from 'node:assert';
+
+import { FlatpackStore } from '@cspell/normalize-json';
 
 /**
  * @typedef {{
@@ -17,8 +20,9 @@ export class PackageDependencies {
     /**
      *
      * @param {Map<string, PackageInfo> | undefined} [packagesInfo]
+     * @param {FlatpackStore} [flatpackStore]
      */
-    constructor(packagesInfo) {
+    constructor(packagesInfo, flatpackStore) {
         /**
          * @type {Map<string, PackageInfo>}
          */
@@ -34,18 +38,30 @@ export class PackageDependencies {
         this.keywords = new Map();
 
         this.calcRefCounts();
+
+        this.flatpackStore = flatpackStore || new FlatpackStore(packagesInfo);
     }
 
     toJSON() {
-        return toJSON(this.packagesInfo);
+        this.flatpackStore.setValue(this.packagesInfo);
+        return this.flatpackStore.toJSON();
+    }
+
+    stringify() {
+        this.flatpackStore.setValue(this.packagesInfo);
+        return this.flatpackStore.stringify();
     }
 
     static fromJSON(json) {
         // @ts-ignore
         if (!json || typeof json !== 'object') return new PackageDependencies();
-        return Array.isArray(json)
-            ? new PackageDependencies(fromJSON(json))
-            : new PackageDependencies(new Map(Object.entries(json)));
+        if (!Array.isArray(json)) {
+            new PackageDependencies(new Map(Object.entries(json)));
+        }
+        const store = FlatpackStore.fromJSON(json);
+        const packagesInfo = store.toValue();
+        assert(isPackagesInfo(packagesInfo), 'Invalid PackageInfo');
+        return new PackageDependencies(packagesInfo, store);
     }
 
     /**
@@ -112,4 +128,13 @@ export class PackageDependencies {
             }
         }
     }
+}
+
+/**
+ *
+ * @param {*} info
+ * @returns {info is Map<string, PackageInfo>}
+ */
+function isPackagesInfo(info) {
+    return info && typeof info === 'object' && info instanceof Map;
 }
