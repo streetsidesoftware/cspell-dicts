@@ -19,6 +19,14 @@ const urlKeywords = new URL('../src/npm/.npm-keywords.csv', import.meta.url);
 
 const limit = 0;
 
+let silent = false;
+
+function consoleLog(...args) {
+    if (!silent) {
+        console.log(...args);
+    }
+}
+
 /**
  * Minimum number of references to include in the list.
  * This is to prevent including packages that are not used by other packages.
@@ -111,7 +119,7 @@ async function getPackageInfo(packages, packageName) {
 function isStale(info) {
     const stale = Date.now() - info.ts > staleEntry - Math.random() * staleDither;
     // if (stale) {
-    //     console.log('Stale: %o', info);
+    //     consoleLog('Stale: %o', info);
     // }
     return stale;
 }
@@ -194,10 +202,10 @@ async function updateList() {
         if (pkgName) {
             if (processedPackages.has(pkgName)) continue;
             processedPackages.add(pkgName);
-            console.log('Processing: %s', pkgName);
+            consoleLog('Processing: %s', pkgName);
             const deps = await getPackageInfo(packagesInfo, pkgName);
             if (!deps) {
-                console.log('Not Found: %s', pkgName);
+                consoleLog('Not Found: %s', pkgName);
                 line.value = '';
                 line.comment = '';
                 continue;
@@ -246,7 +254,7 @@ async function updateList() {
         newPackages.add(dep);
         if (packagesInfo.getRefCount(dep) < autoIncludeMinNumRefs) return;
 
-        console.log('Adding: %s', dep);
+        consoleLog('Adding: %s', dep);
         // Fetch the package into
         await getPackageInfo(packagesInfo, dep);
     }
@@ -254,6 +262,9 @@ async function updateList() {
 
 async function run() {
     try {
+        const args = [...process.argv];
+        silent = args.includes('--silent');
+
         const startTime = Date.now();
         while (Date.now() - startTime < 10000) {
             if (!(await updateList())) break;
