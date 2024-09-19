@@ -1,5 +1,19 @@
 # Release Notes
 
+## [27.5.2](https://github.com/streetsidesoftware/cspell-dicts/compare/cspell-dicts@27.5.1...cspell-dicts@27.5.2) (2024-09-19)
+
+
+### Updates and Bug Fixes
+
+* A docblock terms to coding terms. ([#3581](https://github.com/streetsidesoftware/cspell-dicts/issues/3581)) ([376f956](https://github.com/streetsidesoftware/cspell-dicts/commit/376f9564a6125717ad2f33c74f38fbaf29667dd6))
+* Add `permutate` to software terms ([#3592](https://github.com/streetsidesoftware/cspell-dicts/issues/3592)) ([696edf8](https://github.com/streetsidesoftware/cspell-dicts/commit/696edf8fc9531c209247795a1d3020b69b5bc162))
+* Build NPM ([#3585](https://github.com/streetsidesoftware/cspell-dicts/issues/3585)) ([5ced03c](https://github.com/streetsidesoftware/cspell-dicts/commit/5ced03c42776b86857499215f2e59a9b451089fd))
+* Workflow Bot -- Build Dictionaries ([#3569](https://github.com/streetsidesoftware/cspell-dicts/issues/3569)) ([920aa52](https://github.com/streetsidesoftware/cspell-dicts/commit/920aa5253df031c14fff185513bfa5a0e94b9859))
+* Workflow Bot -- Build Dictionaries ([#3575](https://github.com/streetsidesoftware/cspell-dicts/issues/3575)) ([86881e3](https://github.com/streetsidesoftware/cspell-dicts/commit/86881e3964568f4ca03e4f5aa3c5635b28f6e14c))
+* Workflow Bot -- Build Dictionaries ([#3587](https://github.com/streetsidesoftware/cspell-dicts/issues/3587)) ([957a238](https://github.com/streetsidesoftware/cspell-dicts/commit/957a238eadeb802e43f1922e9ef2a54b6579a7f2))
+* Workflow Bot -- Build Dictionaries ([#3588](https://github.com/streetsidesoftware/cspell-dicts/issues/3588)) ([e846468](https://github.com/streetsidesoftware/cspell-dicts/commit/e8464688f844c2e5fc725144d93056ee67f2ecef))
+* Workflow Bot -- Build Dictionaries ([#3593](https://github.com/streetsidesoftware/cspell-dicts/issues/3593)) ([0120f65](https://github.com/streetsidesoftware/cspell-dicts/commit/0120f654e7fccc0a38779331325362a7ea17b8d2))
+
 ## [27.5.1](https://github.com/streetsidesoftware/cspell-dicts/compare/cspell-dicts@27.5.0...cspell-dicts@27.5.1) (2024-08-31)
 
 

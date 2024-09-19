@@ -3,6 +3,16 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+## [4.1.4](https://github.com/streetsidesoftware/cspell-dicts/compare/@cspell/dict-software-terms@4.1.3...@cspell/dict-software-terms@4.1.4) (2024-09-19)
+
+
+### Updates and Bug Fixes
+
+* A docblock terms to coding terms. ([#3581](https://github.com/streetsidesoftware/cspell-dicts/issues/3581)) ([376f956](https://github.com/streetsidesoftware/cspell-dicts/commit/376f9564a6125717ad2f33c74f38fbaf29667dd6))
+* Add `permutate` to software terms ([#3592](https://github.com/streetsidesoftware/cspell-dicts/issues/3592)) ([696edf8](https://github.com/streetsidesoftware/cspell-dicts/commit/696edf8fc9531c209247795a1d3020b69b5bc162))
+* Workflow Bot -- Build Dictionaries ([#3575](https://github.com/streetsidesoftware/cspell-dicts/issues/3575)) ([86881e3](https://github.com/streetsidesoftware/cspell-dicts/commit/86881e3964568f4ca03e4f5aa3c5635b28f6e14c))
+* Workflow Bot -- Build Dictionaries ([#3593](https://github.com/streetsidesoftware/cspell-dicts/issues/3593)) ([0120f65](https://github.com/streetsidesoftware/cspell-dicts/commit/0120f654e7fccc0a38779331325362a7ea17b8d2))
+
 ## [4.1.3](https://github.com/streetsidesoftware/cspell-dicts/compare/@cspell/dict-software-terms@4.1.2...@cspell/dict-software-terms@4.1.3) (2024-08-31)
 
 
