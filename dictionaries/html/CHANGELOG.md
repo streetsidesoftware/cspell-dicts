@@ -3,6 +3,14 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+## [4.0.6](https://github.com/streetsidesoftware/cspell-dicts/compare/@cspell/dict-html@4.0.5...@cspell/dict-html@4.0.6) (2024-09-22)
+
+
+### Updates and Bug Fixes
+
+* Add new Shadow Root related HTML attributes ([#3598](https://github.com/streetsidesoftware/cspell-dicts/issues/3598)) ([c2ffcd5](https://github.com/streetsidesoftware/cspell-dicts/commit/c2ffcd558f0703031da7a1729d0227b47ed207ef))
+* Workflow Bot -- Build Dictionaries ([#3601](https://github.com/streetsidesoftware/cspell-dicts/issues/3601)) ([3d2aaf2](https://github.com/streetsidesoftware/cspell-dicts/commit/3d2aaf244cd5bb39cd19998b43b7f6fb8bf614ee))
+
 ## [4.0.5](https://github.com/streetsidesoftware/cspell-dicts/compare/@cspell/dict-html@4.0.4...@cspell/dict-html@4.0.5) (2023-09-27)
 
 
