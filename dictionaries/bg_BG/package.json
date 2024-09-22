@@ -1,43 +1,43 @@
 {
-  "name": "@cspell/dict-bg-bg",
-  "version": "3.0.2",
-  "description": "Bulgarian dictionary for cspell.",
-  "publishConfig": {
-    "access": "public"
-  },
-  "exports": {
-    ".": "./cspell-ext.json",
-    "./cspell": "./cspell-ext.json",
-    "./cspell-ext.json": "./cspell-ext.json"
-  },
-  "scripts": {
-    "build": "cspell-tools-cli build && pnpm run gz",
-    "build:conditional": "cspell-tools-cli build --conditional && pnpm gz",
-    "test": "pipe-cmds \"hunspell-reader words -n 1000 \\\"src/bg_BG.dic\\\"\" \"cspell -c ./cspell-ext.json \\\"--locale=bg\\\" \\\"--languageId=*\\\" stdin\"",
-    "prepare:dictionary": "pnpm run gz",
-    "gz": "cspell-tools-cli gzip \"dict/*.trie\"",
-    "prepublishOnly": "echo pre-publish"
-  },
-  "repository": {
-    "type": "git",
-    "url": "https://github.com/streetsidesoftware/cspell-dict.git",
-    "directory": "dictionaries/bg_BG"
-  },
-  "keywords": [
-    "cspell",
-    "bg_BG",
-    "Bulgarian",
-    "dictionary",
-    "spelling"
-  ],
-  "author": "Street Side Software <support@streetsidesoftware.nl>",
-  "license": "MIT",
-  "bugs": {
-    "url": "https://github.com/streetsidesoftware/cspell-dicts/issues"
-  },
-  "homepage": "https://github.com/streetsidesoftware/cspell-dicts/blob/main/dictionaries/bg_BG#readme",
-  "files": [
-    "dict/*.trie.gz",
-    "cspell-ext.json"
-  ]
+    "name": "@cspell/dict-bg-bg",
+    "version": "3.0.2",
+    "description": "Bulgarian dictionary for cspell.",
+    "publishConfig": {
+        "access": "public"
+    },
+    "exports": {
+        ".": "./cspell-ext.json",
+        "./cspell": "./cspell-ext.json",
+        "./cspell-ext.json": "./cspell-ext.json"
+    },
+    "scripts": {
+        "build": "cspell-tools-cli build && pnpm run gz",
+        "build:conditional": "cspell-tools-cli build --conditional && pnpm gz",
+        "test": "pipe-cmds \"hunspell-reader words -n 1000 \\\"src/bg_BG.dic\\\"\" \"cspell -c ./cspell-ext.json \\\"--locale=bg\\\" \\\"--languageId=*\\\" stdin\"",
+        "prepare:dictionary": "pnpm run gz",
+        "gz": "cspell-tools-cli gzip \"dict/*.trie\"",
+        "prepublishOnly": "echo pre-publish"
+    },
+    "repository": {
+        "type": "git",
+        "url": "https://github.com/streetsidesoftware/cspell-dict.git",
+        "directory": "dictionaries/bg_BG"
+    },
+    "keywords": [
+        "cspell",
+        "bg_BG",
+        "Bulgarian",
+        "dictionary",
+        "spelling"
+    ],
+    "author": "Street Side Software <support@streetsidesoftware.nl>",
+    "license": "MIT",
+    "bugs": {
+        "url": "https://github.com/streetsidesoftware/cspell-dicts/issues"
+    },
+    "homepage": "https://github.com/streetsidesoftware/cspell-dicts/blob/main/dictionaries/bg_BG#readme",
+    "files": [
+        "dict/*.trie.gz",
+        "cspell-ext.json"
+    ]
 }

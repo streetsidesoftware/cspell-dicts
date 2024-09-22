@@ -1,44 +1,44 @@
 {
-  "name": "@cspell/dict-pl_pl",
-  "version": "3.0.1",
-  "description": "Polish dictionary for cspell.",
-  "publishConfig": {
-    "access": "public"
-  },
-  "exports": {
-    ".": "./cspell-ext.json",
-    "./cspell": "./cspell-ext.json",
-    "./cspell-ext.json": "./cspell-ext.json"
-  },
-  "scripts": {
-    "build": "cspell-tools-cli build && pnpm gz",
-    "conditional-build": "cspell-tools-cli build --conditional && pnpm gz",
-    "test": "cspell samples",
-    "gz": "cspell-tools-cli gzip \"*.trie\"",
-    "prepare:dictionary": "pnpm gz",
-    "prepublishOnly": "echo pre-publish"
-  },
-  "repository": {
-    "type": "git",
-    "url": "https://github.com/streetsidesoftware/cspell-dict.git",
-    "directory": "dictionaries/pl_PL"
-  },
-  "keywords": [
-    "cspell",
-    "pl_PL",
-    "Polish",
-    "dictionary",
-    "spelling"
-  ],
-  "author": "Street Side Software <support@streetsidesoftware.nl>",
-  "license": "LGPL-3.0+",
-  "bugs": {
-    "url": "https://github.com/streetsidesoftware/cspell-dicts/issues"
-  },
-  "homepage": "https://github.com/streetsidesoftware/cspell-dicts/blob/main/dictionaries/pl_PL#readme",
-  "files": [
-    "pl_pl.trie.gz",
-    "src/hunspell/license",
-    "cspell-ext.json"
-  ]
+    "name": "@cspell/dict-pl_pl",
+    "version": "3.0.1",
+    "description": "Polish dictionary for cspell.",
+    "publishConfig": {
+        "access": "public"
+    },
+    "exports": {
+        ".": "./cspell-ext.json",
+        "./cspell": "./cspell-ext.json",
+        "./cspell-ext.json": "./cspell-ext.json"
+    },
+    "scripts": {
+        "build": "cspell-tools-cli build && pnpm gz",
+        "conditional-build": "cspell-tools-cli build --conditional && pnpm gz",
+        "test": "cspell samples",
+        "gz": "cspell-tools-cli gzip \"*.trie\"",
+        "prepare:dictionary": "pnpm gz",
+        "prepublishOnly": "echo pre-publish"
+    },
+    "repository": {
+        "type": "git",
+        "url": "https://github.com/streetsidesoftware/cspell-dict.git",
+        "directory": "dictionaries/pl_PL"
+    },
+    "keywords": [
+        "cspell",
+        "pl_PL",
+        "Polish",
+        "dictionary",
+        "spelling"
+    ],
+    "author": "Street Side Software <support@streetsidesoftware.nl>",
+    "license": "LGPL-3.0+",
+    "bugs": {
+        "url": "https://github.com/streetsidesoftware/cspell-dicts/issues"
+    },
+    "homepage": "https://github.com/streetsidesoftware/cspell-dicts/blob/main/dictionaries/pl_PL#readme",
+    "files": [
+        "pl_pl.trie.gz",
+        "src/hunspell/license",
+        "cspell-ext.json"
+    ]
 }

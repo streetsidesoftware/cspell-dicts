@@ -1,48 +1,48 @@
 {
-  "name": "generator-cspell-dicts",
-  "version": "0.1.1",
-  "description": "Generate cspell dictionary subprojects.",
-  "homepage": "https://github.com/streetsidesoftware/cspell-dicts",
-  "type": "module",
-  "private": true,
-  "author": "Jason Dent <jason@streetsidesoftware.nl>",
-  "files": [
-    "generators"
-  ],
-  "main": "generators/app/index.js",
-  "bin": {
-    "run": "./run.js"
-  },
-  "keywords": [
-    "cspell dictionary generator",
-    "yeoman-generator"
-  ],
-  "dependencies": {
-    "chalk": "^5.3.0",
-    "yeoman-environment": "^4.4.1",
-    "yeoman-generator": "^7.3.2",
-    "yosay": "^3.0.0"
-  },
-  "jest": {
-    "testEnvironment": "node"
-  },
-  "scripts": {
-    "test": "echo no tests"
-  },
-  "repository": {
-    "type": "git",
-    "url": "git+https://github.com/streetsidesoftware/cspell-dicts.git"
-  },
-  "license": "MIT",
-  "bugs": {
-    "url": "https://github.com/streetsidesoftware/cspell-dicts/issues"
-  },
-  "cspell": {
-    "words": [
-      "appname",
-      "mkdir",
-      "subprojects",
-      "yosay"
-    ]
-  }
+    "name": "generator-cspell-dicts",
+    "version": "0.1.1",
+    "description": "Generate cspell dictionary subprojects.",
+    "homepage": "https://github.com/streetsidesoftware/cspell-dicts",
+    "type": "module",
+    "private": true,
+    "author": "Jason Dent <jason@streetsidesoftware.nl>",
+    "files": [
+        "generators"
+    ],
+    "main": "generators/app/index.js",
+    "bin": {
+        "run": "./run.js"
+    },
+    "keywords": [
+        "cspell dictionary generator",
+        "yeoman-generator"
+    ],
+    "dependencies": {
+        "chalk": "^5.3.0",
+        "yeoman-environment": "^4.4.1",
+        "yeoman-generator": "^7.3.2",
+        "yosay": "^3.0.0"
+    },
+    "jest": {
+        "testEnvironment": "node"
+    },
+    "scripts": {
+        "test": "echo no tests"
+    },
+    "repository": {
+        "type": "git",
+        "url": "git+https://github.com/streetsidesoftware/cspell-dicts.git"
+    },
+    "license": "MIT",
+    "bugs": {
+        "url": "https://github.com/streetsidesoftware/cspell-dicts/issues"
+    },
+    "cspell": {
+        "words": [
+            "appname",
+            "mkdir",
+            "subprojects",
+            "yosay"
+        ]
+    }
 }

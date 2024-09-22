@@ -1,53 +1,53 @@
 {
-  "name": "@cspell/dict-en-gb-mit",
-  "version": "2.1.23",
-  "description": "British English dictionary for cspell with MIT License.",
-  "publishConfig": {
-    "access": "public"
-  },
-  "exports": {
-    ".": "./cspell-ext.json",
-    "./cspell": "./cspell-ext.json",
-    "./cspell-ext.json": "./cspell-ext.json"
-  },
-  "scripts": {
-    "build": "pnpm run compile",
-    "checksum": "cspell-tools-cli shasum -c checksum.txt",
-    "compile": "cspell-tools-cli build && pnpm run gen-checksum",
-    "conditional-build": "pnpm run --silent checksum || pnpm run build",
-    "gen-checksum": "cspell-tools-cli shasum -u checksum.txt --list-file source-files.txt source-dependencies.txt",
-    "prepare:dictionary": "cspell-tools-cli gzip \"*.trie\"",
-    "prepublishOnly": "echo pre-publish",
-    "test-dict": "shx head -n 1000 \"./src/wordsEnGb.txt\" | cspell -c ./cspell-ext.json --locale=en_gb --languageId=* stdin",
-    "test-text": "cspell -c ./cspell-ext.json --locale=en_gb --languageId=* \"tests/*.txt\"",
-    "test": "pnpm run test-dict && pnpm run test-text"
-  },
-  "repository": {
-    "type": "git",
-    "url": "https://github.com/streetsidesoftware/cspell-dict.git",
-    "directory": "dictionaries/en_GB-MIT"
-  },
-  "keywords": [
-    "cspell",
-    "cspell-ext",
-    "en_GB",
-    "dictionary",
-    "spelling"
-  ],
-  "author": "Street Side Software <support@streetsidesoftware.nl>",
-  "license": "MIT",
-  "bugs": {
-    "url": "https://github.com/streetsidesoftware/cspell-dicts/issues"
-  },
-  "homepage": "https://github.com/streetsidesoftware/cspell-dicts/blob/main/dictionaries/en_GB#readme",
-  "files": [
-    "en_GB.trie.gz",
-    "cspell-ext.json"
-  ],
-  "directories": {
-    "test": "tests"
-  },
-  "devDependencies": {
-    "@cspell/dict-en-shared": "workspace:*"
-  }
+    "name": "@cspell/dict-en-gb-mit",
+    "version": "2.1.23",
+    "description": "British English dictionary for cspell with MIT License.",
+    "publishConfig": {
+        "access": "public"
+    },
+    "exports": {
+        ".": "./cspell-ext.json",
+        "./cspell": "./cspell-ext.json",
+        "./cspell-ext.json": "./cspell-ext.json"
+    },
+    "scripts": {
+        "build": "pnpm run compile",
+        "checksum": "cspell-tools-cli shasum -c checksum.txt",
+        "compile": "cspell-tools-cli build && pnpm run gen-checksum",
+        "conditional-build": "pnpm run --silent checksum || pnpm run build",
+        "gen-checksum": "cspell-tools-cli shasum -u checksum.txt --list-file source-files.txt source-dependencies.txt",
+        "prepare:dictionary": "cspell-tools-cli gzip \"*.trie\"",
+        "prepublishOnly": "echo pre-publish",
+        "test-dict": "shx head -n 1000 \"./src/wordsEnGb.txt\" | cspell -c ./cspell-ext.json --locale=en_gb --languageId=* stdin",
+        "test-text": "cspell -c ./cspell-ext.json --locale=en_gb --languageId=* \"tests/*.txt\"",
+        "test": "pnpm run test-dict && pnpm run test-text"
+    },
+    "repository": {
+        "type": "git",
+        "url": "https://github.com/streetsidesoftware/cspell-dict.git",
+        "directory": "dictionaries/en_GB-MIT"
+    },
+    "keywords": [
+        "cspell",
+        "cspell-ext",
+        "en_GB",
+        "dictionary",
+        "spelling"
+    ],
+    "author": "Street Side Software <support@streetsidesoftware.nl>",
+    "license": "MIT",
+    "bugs": {
+        "url": "https://github.com/streetsidesoftware/cspell-dicts/issues"
+    },
+    "homepage": "https://github.com/streetsidesoftware/cspell-dicts/blob/main/dictionaries/en_GB#readme",
+    "files": [
+        "en_GB.trie.gz",
+        "cspell-ext.json"
+    ],
+    "directories": {
+        "test": "tests"
+    },
+    "devDependencies": {
+        "@cspell/dict-en-shared": "workspace:*"
+    }
 }

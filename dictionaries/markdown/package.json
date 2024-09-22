@@ -1,48 +1,48 @@
 {
-  "name": "@cspell/dict-markdown",
-  "version": "2.0.2",
-  "description": "Markdown dictionary for cspell.",
-  "publishConfig": {
-    "access": "public"
-  },
-  "exports": {
-    ".": "./cspell-ext.json",
-    "./cspell": "./cspell-ext.json",
-    "./cspell-ext.json": "./cspell-ext.json"
-  },
-  "scripts": {
-    "build": "cross-env NODE_OPTIONS=--max_old_space_size=8192 cspell-tools-cli compile \"src/markdown.txt\" -o .",
-    "test": "pnpm run test-dict && pnpm run test-check",
-    "test-dict": "shx head -n 1000 \"src/markdown.txt\" | cspell -c ./cspell-ext.json \"--locale=*\" \"--languageId=markdown\" stdin",
-    "test-check": "ava",
-    "prepublishOnly": "echo pre-publish",
-    "prepare:dictionary": "pnpm run build"
-  },
-  "repository": {
-    "type": "git",
-    "url": "https://github.com/streetsidesoftware/cspell-dict.git",
-    "directory": "dictionaries/markdown"
-  },
-  "keywords": [
-    "cspell",
-    "cspell-ext",
-    "markdown",
-    "Markdown",
-    "dictionary",
-    "spelling"
-  ],
-  "author": "Street Side Software <support@streetsidesoftware.nl>",
-  "license": "MIT",
-  "bugs": {
-    "url": "https://github.com/streetsidesoftware/cspell-dicts/issues"
-  },
-  "homepage": "https://github.com/streetsidesoftware/cspell-dicts/blob/main/dictionaries/markdown#readme",
-  "devDependencies": {},
-  "dependencies": {},
-  "files": [
-    "markdown.txt.gz",
-    "cspell-ext.json",
-    "*.js",
-    "*.d.ts"
-  ]
+    "name": "@cspell/dict-markdown",
+    "version": "2.0.2",
+    "description": "Markdown dictionary for cspell.",
+    "publishConfig": {
+        "access": "public"
+    },
+    "exports": {
+        ".": "./cspell-ext.json",
+        "./cspell": "./cspell-ext.json",
+        "./cspell-ext.json": "./cspell-ext.json"
+    },
+    "scripts": {
+        "build": "cross-env NODE_OPTIONS=--max_old_space_size=8192 cspell-tools-cli compile \"src/markdown.txt\" -o .",
+        "test": "pnpm run test-dict && pnpm run test-check",
+        "test-dict": "shx head -n 1000 \"src/markdown.txt\" | cspell -c ./cspell-ext.json \"--locale=*\" \"--languageId=markdown\" stdin",
+        "test-check": "ava",
+        "prepublishOnly": "echo pre-publish",
+        "prepare:dictionary": "pnpm run build"
+    },
+    "repository": {
+        "type": "git",
+        "url": "https://github.com/streetsidesoftware/cspell-dict.git",
+        "directory": "dictionaries/markdown"
+    },
+    "keywords": [
+        "cspell",
+        "cspell-ext",
+        "markdown",
+        "Markdown",
+        "dictionary",
+        "spelling"
+    ],
+    "author": "Street Side Software <support@streetsidesoftware.nl>",
+    "license": "MIT",
+    "bugs": {
+        "url": "https://github.com/streetsidesoftware/cspell-dicts/issues"
+    },
+    "homepage": "https://github.com/streetsidesoftware/cspell-dicts/blob/main/dictionaries/markdown#readme",
+    "devDependencies": {},
+    "dependencies": {},
+    "files": [
+        "markdown.txt.gz",
+        "cspell-ext.json",
+        "*.js",
+        "*.d.ts"
+    ]
 }

@@ -1,53 +1,53 @@
 {
-  "name": "@cspell/dict-nl-nl",
-  "version": "2.3.0",
-  "description": "Dutch dictionary for cspell.",
-  "publishConfig": {
-    "access": "public"
-  },
-  "exports": {
-    ".": "./cspell-ext.json",
-    "./cspell": "./cspell-ext.json",
-    "./cspell-ext.json": "./cspell-ext.json"
-  },
-  "scripts": {
-    "cspell-yaml-to-json": "pnpm -s yaml2json -p cspell.config.yaml > cspell-ext.json && pnpm lint",
-    "build": "cspell-tools-cli build",
-    "sync": "pnpm cpy \"node_modules/dictionary-nl/**\" src/hunspell",
-    "conditional-build": "pnpm run sync && pnpm run build --conditional && pnpm gz",
-    "lint": "pnpm prettier -w \"*.{yaml,json}\"",
-    "test-dict": "pipe-cmds \"hunspell-reader words -n 1000 \\\"src/hunspell/index.dic\\\"\" \"cspell -c ./cspell-ext.json --locale=nl --languageId=* stdin\"",
-    "test-text": "cspell",
-    "test": "pnpm run test-dict && pnpm run test-text",
-    "gz": "cspell-tools-cli gzip \"*.trie\"",
-    "prepare:dictionary": "pnpm gz",
-    "prepublishOnly": "echo pre-publish"
-  },
-  "repository": {
-    "type": "git",
-    "url": "https://github.com/streetsidesoftware/cspell-dict.git",
-    "directory": "dictionaries/nl_NL"
-  },
-  "keywords": [
-    "cspell",
-    "cspell-ext",
-    "nl_NL",
-    "dictionary",
-    "spelling"
-  ],
-  "author": "Street Side Software <support@streetsidesoftware.nl>",
-  "license": "MIT",
-  "bugs": {
-    "url": "https://github.com/streetsidesoftware/cspell-dicts/issues"
-  },
-  "homepage": "https://github.com/streetsidesoftware/cspell-dicts/blob/main/dictionaries/nl_NL#readme",
-  "files": [
-    "Dutch.trie.gz",
-    "cspell-ext.json",
-    "cspell.config.yaml",
-    "src/hunspell/license"
-  ],
-  "devDependencies": {
-    "dictionary-nl": "^2.0.0"
-  }
+    "name": "@cspell/dict-nl-nl",
+    "version": "2.3.0",
+    "description": "Dutch dictionary for cspell.",
+    "publishConfig": {
+        "access": "public"
+    },
+    "exports": {
+        ".": "./cspell-ext.json",
+        "./cspell": "./cspell-ext.json",
+        "./cspell-ext.json": "./cspell-ext.json"
+    },
+    "scripts": {
+        "cspell-yaml-to-json": "pnpm -s yaml2json -p cspell.config.yaml > cspell-ext.json && pnpm lint",
+        "build": "cspell-tools-cli build",
+        "sync": "pnpm cpy \"node_modules/dictionary-nl/**\" src/hunspell",
+        "conditional-build": "pnpm run sync && pnpm run build --conditional && pnpm gz",
+        "lint": "pnpm prettier -w \"*.{yaml,json}\"",
+        "test-dict": "pipe-cmds \"hunspell-reader words -n 1000 \\\"src/hunspell/index.dic\\\"\" \"cspell -c ./cspell-ext.json --locale=nl --languageId=* stdin\"",
+        "test-text": "cspell",
+        "test": "pnpm run test-dict && pnpm run test-text",
+        "gz": "cspell-tools-cli gzip \"*.trie\"",
+        "prepare:dictionary": "pnpm gz",
+        "prepublishOnly": "echo pre-publish"
+    },
+    "repository": {
+        "type": "git",
+        "url": "https://github.com/streetsidesoftware/cspell-dict.git",
+        "directory": "dictionaries/nl_NL"
+    },
+    "keywords": [
+        "cspell",
+        "cspell-ext",
+        "nl_NL",
+        "dictionary",
+        "spelling"
+    ],
+    "author": "Street Side Software <support@streetsidesoftware.nl>",
+    "license": "MIT",
+    "bugs": {
+        "url": "https://github.com/streetsidesoftware/cspell-dicts/issues"
+    },
+    "homepage": "https://github.com/streetsidesoftware/cspell-dicts/blob/main/dictionaries/nl_NL#readme",
+    "files": [
+        "Dutch.trie.gz",
+        "cspell-ext.json",
+        "cspell.config.yaml",
+        "src/hunspell/license"
+    ],
+    "devDependencies": {
+        "dictionary-nl": "^2.0.0"
+    }
 }

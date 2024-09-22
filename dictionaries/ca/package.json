@@ -1,43 +1,43 @@
 {
-  "name": "@cspell/dict-ca",
-  "version": "3.0.1",
-  "description": "Catalan dictionary for cspell.",
-  "publishConfig": {
-    "access": "public"
-  },
-  "exports": {
-    ".": "./cspell-ext.json",
-    "./cspell": "./cspell-ext.json",
-    "./cspell-ext.json": "./cspell-ext.json"
-  },
-  "scripts": {
-    "build": "cspell-tools-cli build && pnpm prepare:dictionary",
-    "build:conditional": "cspell-tools-cli build --conditional && pnpm gz",
-    "test": "pipe-cmds \"hunspell-reader words -n 1000 \\\"src/ca.dic\\\"\" \"cspell -c ./cspell-ext.json --locale=ca --languageId=* stdin\"",
-    "prepare:dictionary": "pnpm run gz",
-    "gz": "cspell-tools-cli gzip \"*.trie\"",
-    "prepublishOnly": "echo pre-publish"
-  },
-  "repository": {
-    "type": "git",
-    "url": "https://github.com/streetsidesoftware/cspell-dict.git",
-    "directory": "dictionaries/ca"
-  },
-  "keywords": [
-    "cspell",
-    "ca",
-    "Catalan",
-    "dictionary",
-    "spelling"
-  ],
-  "author": "Street Side Software <support@streetsidesoftware.nl>",
-  "license": "MIT",
-  "bugs": {
-    "url": "https://github.com/streetsidesoftware/cspell-dicts/issues"
-  },
-  "homepage": "https://github.com/streetsidesoftware/cspell-dicts/blob/main/dictionaries/ca#readme",
-  "files": [
-    "ca.trie.gz",
-    "cspell-ext.json"
-  ]
+    "name": "@cspell/dict-ca",
+    "version": "3.0.1",
+    "description": "Catalan dictionary for cspell.",
+    "publishConfig": {
+        "access": "public"
+    },
+    "exports": {
+        ".": "./cspell-ext.json",
+        "./cspell": "./cspell-ext.json",
+        "./cspell-ext.json": "./cspell-ext.json"
+    },
+    "scripts": {
+        "build": "cspell-tools-cli build && pnpm prepare:dictionary",
+        "build:conditional": "cspell-tools-cli build --conditional && pnpm gz",
+        "test": "pipe-cmds \"hunspell-reader words -n 1000 \\\"src/ca.dic\\\"\" \"cspell -c ./cspell-ext.json --locale=ca --languageId=* stdin\"",
+        "prepare:dictionary": "pnpm run gz",
+        "gz": "cspell-tools-cli gzip \"*.trie\"",
+        "prepublishOnly": "echo pre-publish"
+    },
+    "repository": {
+        "type": "git",
+        "url": "https://github.com/streetsidesoftware/cspell-dict.git",
+        "directory": "dictionaries/ca"
+    },
+    "keywords": [
+        "cspell",
+        "ca",
+        "Catalan",
+        "dictionary",
+        "spelling"
+    ],
+    "author": "Street Side Software <support@streetsidesoftware.nl>",
+    "license": "MIT",
+    "bugs": {
+        "url": "https://github.com/streetsidesoftware/cspell-dicts/issues"
+    },
+    "homepage": "https://github.com/streetsidesoftware/cspell-dicts/blob/main/dictionaries/ca#readme",
+    "files": [
+        "ca.trie.gz",
+        "cspell-ext.json"
+    ]
 }

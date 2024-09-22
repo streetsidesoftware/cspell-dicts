@@ -1,43 +1,43 @@
 {
-  "name": "@cspell/dict-pt-pt",
-  "version": "3.0.1",
-  "description": "Portuguese dictionary for cspell.",
-  "publishConfig": {
-    "access": "public"
-  },
-  "exports": {
-    ".": "./cspell-ext.json",
-    "./cspell": "./cspell-ext.json",
-    "./cspell-ext.json": "./cspell-ext.json"
-  },
-  "scripts": {
-    "build": "cspell-tools-cli build",
-    "build:conditional": "cspell-tools-cli build --conditional && pnpm gz",
-    "gz": "cspell-tools-cli gzip \"dict/*.trie\"",
-    "prepare:dictionary": "pnpm run gz",
-    "test": "cspell samples"
-  },
-  "repository": {
-    "type": "git",
-    "url": "https://github.com/streetsidesoftware/cspell-dict.git",
-    "directory": "dictionaries/pt_PT"
-  },
-  "keywords": [
-    "cspell",
-    "pt_PT",
-    "Portuguese",
-    "dictionary",
-    "spelling"
-  ],
-  "author": "Street Side Software <support@streetsidesoftware.nl>",
-  "license": "LGPL-3.0",
-  "bugs": {
-    "url": "https://github.com/streetsidesoftware/cspell-dicts/issues"
-  },
-  "homepage": "https://github.com/streetsidesoftware/cspell-dicts/blob/main/dictionaries/pt_PT#readme",
-  "files": [
-    "dict/Portuguese-European.trie.gz",
-    "cspell-ext.json",
-    "src/hunspell/LICENSE"
-  ]
+    "name": "@cspell/dict-pt-pt",
+    "version": "3.0.1",
+    "description": "Portuguese dictionary for cspell.",
+    "publishConfig": {
+        "access": "public"
+    },
+    "exports": {
+        ".": "./cspell-ext.json",
+        "./cspell": "./cspell-ext.json",
+        "./cspell-ext.json": "./cspell-ext.json"
+    },
+    "scripts": {
+        "build": "cspell-tools-cli build",
+        "build:conditional": "cspell-tools-cli build --conditional && pnpm gz",
+        "gz": "cspell-tools-cli gzip \"dict/*.trie\"",
+        "prepare:dictionary": "pnpm run gz",
+        "test": "cspell samples"
+    },
+    "repository": {
+        "type": "git",
+        "url": "https://github.com/streetsidesoftware/cspell-dict.git",
+        "directory": "dictionaries/pt_PT"
+    },
+    "keywords": [
+        "cspell",
+        "pt_PT",
+        "Portuguese",
+        "dictionary",
+        "spelling"
+    ],
+    "author": "Street Side Software <support@streetsidesoftware.nl>",
+    "license": "LGPL-3.0",
+    "bugs": {
+        "url": "https://github.com/streetsidesoftware/cspell-dicts/issues"
+    },
+    "homepage": "https://github.com/streetsidesoftware/cspell-dicts/blob/main/dictionaries/pt_PT#readme",
+    "files": [
+        "dict/Portuguese-European.trie.gz",
+        "cspell-ext.json",
+        "src/hunspell/LICENSE"
+    ]
 }

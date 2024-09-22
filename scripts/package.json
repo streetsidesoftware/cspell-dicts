@@ -1,27 +1,27 @@
 {
-  "name": "scripts",
-  "version": "1.0.0",
-  "description": "Scripts used with maintaining the dictionaries.",
-  "private": true,
-  "type": "module",
-  "bin": {
-    "sort-source": "sort-source.mjs",
-    "update-package-json": "update-package-json.mjs",
-    "update-contributors": "update-contributors.mjs",
-    "pipe-cmds": "pipe-cmds.mjs"
-  },
-  "scripts": {
-    "test": "echo \"Error: no test specified\""
-  },
-  "keywords": [],
-  "author": "",
-  "license": "MIT",
-  "dependencies": {
-    "commander": "^12.1.0",
-    "globby": "^14.0.2",
-    "shelljs": "^0.8.5"
-  },
-  "engines": {
-    "node": ">=18.0.0"
-  }
+    "name": "scripts",
+    "version": "1.0.0",
+    "description": "Scripts used with maintaining the dictionaries.",
+    "private": true,
+    "type": "module",
+    "bin": {
+        "sort-source": "sort-source.mjs",
+        "update-package-json": "update-package-json.mjs",
+        "update-contributors": "update-contributors.mjs",
+        "pipe-cmds": "pipe-cmds.mjs"
+    },
+    "scripts": {
+        "test": "echo \"Error: no test specified\""
+    },
+    "keywords": [],
+    "author": "",
+    "license": "MIT",
+    "dependencies": {
+        "commander": "^12.1.0",
+        "globby": "^14.0.2",
+        "shelljs": "^0.8.5"
+    },
+    "engines": {
+        "node": ">=18.0.0"
+    }
 }

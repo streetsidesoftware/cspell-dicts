@@ -1,47 +1,47 @@
 {
-  "name": "@cspell/dict-he",
-  "version": "4.0.0",
-  "description": "Hebrew dictionary for cspell",
-  "publishConfig": {
-    "access": "public"
-  },
-  "exports": {
-    ".": "./cspell-ext.json",
-    "./cspell": "./cspell-ext.json",
-    "./cspell-ext.json": "./cspell-ext.json"
-  },
-  "scripts": {
-    "build": "cspell-tools-cli build && pnpm gz",
-    "build:conditional": "cspell-tools-cli build --conditional && pnpm gz",
-    "test": "cspell samples",
-    "gz": "cspell-tools-cli gzip \"*.trie\"",
-    "prepare:dictionary": "pnpm gz",
-    "prepublishOnly": "echo pre-publish"
-  },
-  "repository": {
-    "type": "git",
-    "url": "https://github.com/streetsidesoftware/cspell-dict.git",
-    "directory": "dictionaries/he"
-  },
-  "keywords": [
-    "cspell",
-    "he",
-    "Hebrew",
-    "dictionary",
-    "spelling"
-  ],
-  "author": "Street Side Software <support@streetsidesoftware.nl>",
-  "contributors": [
-    "Noam Ben Shabat"
-  ],
-  "license": "AGPLv3",
-  "bugs": {
-    "url": "https://github.com/streetsidesoftware/cspell-dicts/issues"
-  },
-  "homepage": "https://github.com/streetsidesoftware/cspell-dicts/blob/main/dictionaries/he#readme",
-  "files": [
-    "he.trie.gz",
-    "cspell-ext.json",
-    "!samples"
-  ]
+    "name": "@cspell/dict-he",
+    "version": "4.0.0",
+    "description": "Hebrew dictionary for cspell",
+    "publishConfig": {
+        "access": "public"
+    },
+    "exports": {
+        ".": "./cspell-ext.json",
+        "./cspell": "./cspell-ext.json",
+        "./cspell-ext.json": "./cspell-ext.json"
+    },
+    "scripts": {
+        "build": "cspell-tools-cli build && pnpm gz",
+        "build:conditional": "cspell-tools-cli build --conditional && pnpm gz",
+        "test": "cspell samples",
+        "gz": "cspell-tools-cli gzip \"*.trie\"",
+        "prepare:dictionary": "pnpm gz",
+        "prepublishOnly": "echo pre-publish"
+    },
+    "repository": {
+        "type": "git",
+        "url": "https://github.com/streetsidesoftware/cspell-dict.git",
+        "directory": "dictionaries/he"
+    },
+    "keywords": [
+        "cspell",
+        "he",
+        "Hebrew",
+        "dictionary",
+        "spelling"
+    ],
+    "author": "Street Side Software <support@streetsidesoftware.nl>",
+    "contributors": [
+        "Noam Ben Shabat"
+    ],
+    "license": "AGPLv3",
+    "bugs": {
+        "url": "https://github.com/streetsidesoftware/cspell-dicts/issues"
+    },
+    "homepage": "https://github.com/streetsidesoftware/cspell-dicts/blob/main/dictionaries/he#readme",
+    "files": [
+        "he.trie.gz",
+        "cspell-ext.json",
+        "!samples"
+    ]
 }

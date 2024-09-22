@@ -1,45 +1,45 @@
 {
-  "name": "@cspell/dict-win32",
-  "version": "2.0.3",
-  "description": "Win32 dictionary for cspell.",
-  "publishConfig": {
-    "access": "public"
-  },
-  "exports": {
-    ".": "./cspell-ext.json",
-    "./cspell": "./cspell-ext.json",
-    "./cspell-ext.json": "./cspell-ext.json"
-  },
-  "scripts": {
-    "build": "cspell-tools-cli build",
-    "test": "pnpm run test-src && pnpm run test-samples",
-    "test-src": "shx head -n 10000 \"src/win32.txt\" | cspell -c ./cspell.json \"--locale=*\" stdin",
-    "test-samples": "cspell samples/**",
-    "prepublishOnly": "echo pre-publish",
-    "prepare:dictionary": "pnpm run build"
-  },
-  "repository": {
-    "type": "git",
-    "url": "https://github.com/streetsidesoftware/cspell-dict.git",
-    "directory": "dictionaries/win32"
-  },
-  "keywords": [
-    "cspell",
-    "cspell-ext",
-    "Win32",
-    "dictionary",
-    "spelling"
-  ],
-  "author": "Street Side Software <support@streetsidesoftware.nl>",
-  "license": "MIT",
-  "bugs": {
-    "url": "https://github.com/streetsidesoftware/cspell-dicts/issues"
-  },
-  "homepage": "https://github.com/streetsidesoftware/cspell-dicts/blob/main/dictionaries/Win32#readme",
-  "files": [
-    "win32.txt.gz",
-    "cspell-ext.json",
-    "*.js",
-    "*.d.ts"
-  ]
+    "name": "@cspell/dict-win32",
+    "version": "2.0.3",
+    "description": "Win32 dictionary for cspell.",
+    "publishConfig": {
+        "access": "public"
+    },
+    "exports": {
+        ".": "./cspell-ext.json",
+        "./cspell": "./cspell-ext.json",
+        "./cspell-ext.json": "./cspell-ext.json"
+    },
+    "scripts": {
+        "build": "cspell-tools-cli build",
+        "test": "pnpm run test-src && pnpm run test-samples",
+        "test-src": "shx head -n 10000 \"src/win32.txt\" | cspell -c ./cspell.json \"--locale=*\" stdin",
+        "test-samples": "cspell samples/**",
+        "prepublishOnly": "echo pre-publish",
+        "prepare:dictionary": "pnpm run build"
+    },
+    "repository": {
+        "type": "git",
+        "url": "https://github.com/streetsidesoftware/cspell-dict.git",
+        "directory": "dictionaries/win32"
+    },
+    "keywords": [
+        "cspell",
+        "cspell-ext",
+        "Win32",
+        "dictionary",
+        "spelling"
+    ],
+    "author": "Street Side Software <support@streetsidesoftware.nl>",
+    "license": "MIT",
+    "bugs": {
+        "url": "https://github.com/streetsidesoftware/cspell-dicts/issues"
+    },
+    "homepage": "https://github.com/streetsidesoftware/cspell-dicts/blob/main/dictionaries/Win32#readme",
+    "files": [
+        "win32.txt.gz",
+        "cspell-ext.json",
+        "*.js",
+        "*.d.ts"
+    ]
 }

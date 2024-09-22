@@ -1,55 +1,55 @@
 {
-  "name": "@cspell/dict-en-gb",
-  "version": "4.1.46",
-  "description": "British English dictionary for cspell.",
-  "publishConfig": {
-    "access": "public"
-  },
-  "exports": {
-    ".": "./cspell-ext.json",
-    "./cspell": "./cspell-ext.json",
-    "./cspell-ext.json": "./cspell-ext.json"
-  },
-  "scripts": {
-    "build": "cspell-tools-cli build",
-    "sync": "pnpm cpy \"node_modules/aoo-mozilla-en-dict/en_GB*/**\" \"src/aoo-mozilla-en-dict\" --flat && pnpm sync-clean",
-    "sync-clean": "shx rm -rf \"src/*/wordlist*.txt\" \"src/*/*speller*.txt\"",
-    "conditional-build": "pnpm run sync && pnpm build --conditional && pnpm gz",
-    "gz": "cspell-tools-cli gzip \"*.trie\"",
-    "prepare:dictionary": "pnpm gz",
-    "prepublishOnly": "echo pre-publish",
-    "test-dict": "shx head -n 1000 \"./src/wordsEnGb.txt\" | cspell -c ./cspell-ext.json --locale=en_gb --languageId=* stdin",
-    "test-text": "cspell -c ./cspell-ext.json --locale=en_gb --languageId=* \"tests/*.txt\"",
-    "test": "pnpm run test-dict && pnpm run test-text"
-  },
-  "repository": {
-    "type": "git",
-    "url": "https://github.com/streetsidesoftware/cspell-dict.git",
-    "directory": "dictionaries/en_GB"
-  },
-  "keywords": [
-    "cspell",
-    "cspell-ext",
-    "en_GB",
-    "dictionary",
-    "spelling"
-  ],
-  "author": "Street Side Software <support@streetsidesoftware.nl>",
-  "license": "LGPL-3.0",
-  "bugs": {
-    "url": "https://github.com/streetsidesoftware/cspell-dicts/issues"
-  },
-  "homepage": "https://github.com/streetsidesoftware/cspell-dicts/blob/main/dictionaries/en_GB#readme",
-  "files": [
-    "en_GB.trie.gz",
-    "cspell-ext.json",
-    "src/**/README_en_GB.txt"
-  ],
-  "directories": {
-    "test": "tests"
-  },
-  "devDependencies": {
-    "@cspell/dict-en-shared": "workspace:*",
-    "aoo-mozilla-en-dict": "github:marcoagpinto/aoo-mozilla-en-dict"
-  }
+    "name": "@cspell/dict-en-gb",
+    "version": "4.1.46",
+    "description": "British English dictionary for cspell.",
+    "publishConfig": {
+        "access": "public"
+    },
+    "exports": {
+        ".": "./cspell-ext.json",
+        "./cspell": "./cspell-ext.json",
+        "./cspell-ext.json": "./cspell-ext.json"
+    },
+    "scripts": {
+        "build": "cspell-tools-cli build",
+        "sync": "pnpm cpy \"node_modules/aoo-mozilla-en-dict/en_GB*/**\" \"src/aoo-mozilla-en-dict\" --flat && pnpm sync-clean",
+        "sync-clean": "shx rm -rf \"src/*/wordlist*.txt\" \"src/*/*speller*.txt\"",
+        "conditional-build": "pnpm run sync && pnpm build --conditional && pnpm gz",
+        "gz": "cspell-tools-cli gzip \"*.trie\"",
+        "prepare:dictionary": "pnpm gz",
+        "prepublishOnly": "echo pre-publish",
+        "test-dict": "shx head -n 1000 \"./src/wordsEnGb.txt\" | cspell -c ./cspell-ext.json --locale=en_gb --languageId=* stdin",
+        "test-text": "cspell -c ./cspell-ext.json --locale=en_gb --languageId=* \"tests/*.txt\"",
+        "test": "pnpm run test-dict && pnpm run test-text"
+    },
+    "repository": {
+        "type": "git",
+        "url": "https://github.com/streetsidesoftware/cspell-dict.git",
+        "directory": "dictionaries/en_GB"
+    },
+    "keywords": [
+        "cspell",
+        "cspell-ext",
+        "en_GB",
+        "dictionary",
+        "spelling"
+    ],
+    "author": "Street Side Software <support@streetsidesoftware.nl>",
+    "license": "LGPL-3.0",
+    "bugs": {
+        "url": "https://github.com/streetsidesoftware/cspell-dicts/issues"
+    },
+    "homepage": "https://github.com/streetsidesoftware/cspell-dicts/blob/main/dictionaries/en_GB#readme",
+    "files": [
+        "en_GB.trie.gz",
+        "cspell-ext.json",
+        "src/**/README_en_GB.txt"
+    ],
+    "directories": {
+        "test": "tests"
+    },
+    "devDependencies": {
+        "@cspell/dict-en-shared": "workspace:*",
+        "aoo-mozilla-en-dict": "github:marcoagpinto/aoo-mozilla-en-dict"
+    }
 }

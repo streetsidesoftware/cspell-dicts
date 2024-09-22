@@ -1,46 +1,46 @@
 {
-  "name": "@cspell/dict-gaming-terms",
-  "version": "1.0.5",
-  "description": "Gaming dictionary for cspell.",
-  "publishConfig": {
-    "access": "public"
-  },
-  "exports": {
-    ".": "./cspell-ext.json",
-    "./cspell": "./cspell-ext.json",
-    "./cspell-ext.json": "./cspell-ext.json"
-  },
-  "scripts": {
-    "build": "cspell-tools-cli build",
-    "test": "shx head -n 1000 \"src/gaming-terms.txt\" | cspell -c ./cspell.json stdin",
-    "prepublishOnly": "echo OK",
-    "prepare:dictionary": "pnpm run build"
-  },
-  "repository": {
-    "type": "git",
-    "url": "https://github.com/streetsidesoftware/cspell-dict.git",
-    "directory": "dictionaries/gaming-terms"
-  },
-  "keywords": [
-    "cspell",
-    "cspell-ext",
-    "gaming-terms",
-    "Gaming",
-    "dictionary",
-    "spelling"
-  ],
-  "author": "Street Side Software <support@streetsidesoftware.nl>",
-  "license": "MIT",
-  "bugs": {
-    "url": "https://github.com/streetsidesoftware/cspell-dicts/issues"
-  },
-  "homepage": "https://github.com/streetsidesoftware/cspell-dicts/blob/main/dictionaries/gaming-terms#readme",
-  "devDependencies": {},
-  "dependencies": {},
-  "files": [
-    "dict/gaming-terms.txt",
-    "cspell-ext.json",
-    "*.js",
-    "*.d.ts"
-  ]
+    "name": "@cspell/dict-gaming-terms",
+    "version": "1.0.5",
+    "description": "Gaming dictionary for cspell.",
+    "publishConfig": {
+        "access": "public"
+    },
+    "exports": {
+        ".": "./cspell-ext.json",
+        "./cspell": "./cspell-ext.json",
+        "./cspell-ext.json": "./cspell-ext.json"
+    },
+    "scripts": {
+        "build": "cspell-tools-cli build",
+        "test": "shx head -n 1000 \"src/gaming-terms.txt\" | cspell -c ./cspell.json stdin",
+        "prepublishOnly": "echo OK",
+        "prepare:dictionary": "pnpm run build"
+    },
+    "repository": {
+        "type": "git",
+        "url": "https://github.com/streetsidesoftware/cspell-dict.git",
+        "directory": "dictionaries/gaming-terms"
+    },
+    "keywords": [
+        "cspell",
+        "cspell-ext",
+        "gaming-terms",
+        "Gaming",
+        "dictionary",
+        "spelling"
+    ],
+    "author": "Street Side Software <support@streetsidesoftware.nl>",
+    "license": "MIT",
+    "bugs": {
+        "url": "https://github.com/streetsidesoftware/cspell-dicts/issues"
+    },
+    "homepage": "https://github.com/streetsidesoftware/cspell-dicts/blob/main/dictionaries/gaming-terms#readme",
+    "devDependencies": {},
+    "dependencies": {},
+    "files": [
+        "dict/gaming-terms.txt",
+        "cspell-ext.json",
+        "*.js",
+        "*.d.ts"
+    ]
 }

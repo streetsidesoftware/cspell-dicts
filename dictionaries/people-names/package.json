@@ -1,48 +1,48 @@
 {
-  "name": "@cspell/dict-people-names",
-  "version": "1.1.1",
-  "description": "People Names dictionary for cspell.",
-  "publishConfig": {
-    "access": "public"
-  },
-  "exports": {
-    ".": "./cspell-ext.json",
-    "./cspell": "./cspell-ext.json",
-    "./cspell-ext.json": "./cspell-ext.json"
-  },
-  "scripts": {
-    "build": "cspell-tools-cli build",
-    "test": "head -n 1000 \"src/names.txt\" | cspell -c ./cspell-ext.json  \"--languageId=*\" stdin",
-    "prepublishOnly": "echo OK",
-    "prepare:dictionary": "pnpm run build"
-  },
-  "repository": {
-    "type": "git",
-    "url": "git+https://github.com/streetsidesoftware/cspell-dicts.git"
-  },
-  "keywords": [
-    "cspell",
-    "cspell-ext",
-    "people-names",
-    "People Names",
-    "dictionary",
-    "spelling"
-  ],
-  "author": "Street Side Software",
-  "contributors": [],
-  "license": "MIT",
-  "bugs": {
-    "url": "https://github.com/streetsidesoftware/cspell-dicts/issues"
-  },
-  "homepage": "https://github.com/streetsidesoftware/cspell-dicts/blob/main/dictionaries/people-names#readme",
-  "devDependencies": {
-    "@internal/en-freq": "workspace:*"
-  },
-  "dependencies": {},
-  "files": [
-    "dict/people-names.txt",
-    "cspell-ext.json",
-    "*.js",
-    "*.d.ts"
-  ]
+    "name": "@cspell/dict-people-names",
+    "version": "1.1.1",
+    "description": "People Names dictionary for cspell.",
+    "publishConfig": {
+        "access": "public"
+    },
+    "exports": {
+        ".": "./cspell-ext.json",
+        "./cspell": "./cspell-ext.json",
+        "./cspell-ext.json": "./cspell-ext.json"
+    },
+    "scripts": {
+        "build": "cspell-tools-cli build",
+        "test": "head -n 1000 \"src/names.txt\" | cspell -c ./cspell-ext.json  \"--languageId=*\" stdin",
+        "prepublishOnly": "echo OK",
+        "prepare:dictionary": "pnpm run build"
+    },
+    "repository": {
+        "type": "git",
+        "url": "git+https://github.com/streetsidesoftware/cspell-dicts.git"
+    },
+    "keywords": [
+        "cspell",
+        "cspell-ext",
+        "people-names",
+        "People Names",
+        "dictionary",
+        "spelling"
+    ],
+    "author": "Street Side Software",
+    "contributors": [],
+    "license": "MIT",
+    "bugs": {
+        "url": "https://github.com/streetsidesoftware/cspell-dicts/issues"
+    },
+    "homepage": "https://github.com/streetsidesoftware/cspell-dicts/blob/main/dictionaries/people-names#readme",
+    "devDependencies": {
+        "@internal/en-freq": "workspace:*"
+    },
+    "dependencies": {},
+    "files": [
+        "dict/people-names.txt",
+        "cspell-ext.json",
+        "*.js",
+        "*.d.ts"
+    ]
 }

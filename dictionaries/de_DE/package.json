@@ -1,52 +1,52 @@
 {
-  "name": "@cspell/dict-de-de",
-  "version": "4.0.0",
-  "description": "German dictionary for cspell.",
-  "publishConfig": {
-    "access": "public"
-  },
-  "exports": {
-    ".": "./cspell-ext.json",
-    "./cspell": "./cspell-ext.json",
-    "./cspell-ext.json": "./cspell-ext.json"
-  },
-  "scripts": {
-    "build": "cspell-tools-cli build && pnpm gz",
-    "conditional-build": "pnpm run sync && cspell-tools-cli build --conditional && pnpm gz",
-    "sync": "pnpm cpy \"node_modules/dictionary-de/**\" src/hunspell",
-    "test-de": "pipe-cmds \"hunspell-reader words -n 1000 \\\"src/hunspell/index.dic\\\"\" \"cspell -c ./cspell-ext.json --locale=de --languageId=* stdin\"",
-    "test-de-old": "pipe-cmds \"hunspell-reader words -n 1000 \\\"src/German_de_DE.dic\\\"\" \"cspell -c ./cspell-ext.json --locale=de --languageId=* stdin\"",
-    "test-samples": "cspell -c ./cspell-ext.json --locale=de,en \"samples/**\"",
-    "test": "pnpm run test-de && pnpm run test-samples && pnpm run test-de-old",
-    "gz": "cspell-tools-cli gzip \"*.trie\"",
-    "prepare:dictionary": "pnpm gz",
-    "prepublishOnly": "pnpm run conditional-build && pnpm test"
-  },
-  "repository": {
-    "type": "git",
-    "url": "https://github.com/streetsidesoftware/cspell-dict.git",
-    "directory": "dictionaries/de_DE"
-  },
-  "keywords": [
-    "cspell",
-    "de_DE",
-    "German",
-    "dictionary",
-    "spelling"
-  ],
-  "author": "Street Side Software <support@streetsidesoftware.nl>",
-  "license": "LGPL-3.0",
-  "bugs": {
-    "url": "https://github.com/streetsidesoftware/cspell-dicts/issues"
-  },
-  "homepage": "https://github.com/streetsidesoftware/cspell-dicts/blob/main/dictionaries/de_DE#readme",
-  "files": [
-    "de_DE.trie.gz",
-    "cspell-ext.json",
-    "src/German_de_DE.txt",
-    "src/hunspell/license"
-  ],
-  "devDependencies": {
-    "dictionary-de": "^3.0.0"
-  }
+    "name": "@cspell/dict-de-de",
+    "version": "4.0.0",
+    "description": "German dictionary for cspell.",
+    "publishConfig": {
+        "access": "public"
+    },
+    "exports": {
+        ".": "./cspell-ext.json",
+        "./cspell": "./cspell-ext.json",
+        "./cspell-ext.json": "./cspell-ext.json"
+    },
+    "scripts": {
+        "build": "cspell-tools-cli build && pnpm gz",
+        "conditional-build": "pnpm run sync && cspell-tools-cli build --conditional && pnpm gz",
+        "sync": "pnpm cpy \"node_modules/dictionary-de/**\" src/hunspell",
+        "test-de": "pipe-cmds \"hunspell-reader words -n 1000 \\\"src/hunspell/index.dic\\\"\" \"cspell -c ./cspell-ext.json --locale=de --languageId=* stdin\"",
+        "test-de-old": "pipe-cmds \"hunspell-reader words -n 1000 \\\"src/German_de_DE.dic\\\"\" \"cspell -c ./cspell-ext.json --locale=de --languageId=* stdin\"",
+        "test-samples": "cspell -c ./cspell-ext.json --locale=de,en \"samples/**\"",
+        "test": "pnpm run test-de && pnpm run test-samples && pnpm run test-de-old",
+        "gz": "cspell-tools-cli gzip \"*.trie\"",
+        "prepare:dictionary": "pnpm gz",
+        "prepublishOnly": "pnpm run conditional-build && pnpm test"
+    },
+    "repository": {
+        "type": "git",
+        "url": "https://github.com/streetsidesoftware/cspell-dict.git",
+        "directory": "dictionaries/de_DE"
+    },
+    "keywords": [
+        "cspell",
+        "de_DE",
+        "German",
+        "dictionary",
+        "spelling"
+    ],
+    "author": "Street Side Software <support@streetsidesoftware.nl>",
+    "license": "LGPL-3.0",
+    "bugs": {
+        "url": "https://github.com/streetsidesoftware/cspell-dicts/issues"
+    },
+    "homepage": "https://github.com/streetsidesoftware/cspell-dicts/blob/main/dictionaries/de_DE#readme",
+    "files": [
+        "de_DE.trie.gz",
+        "cspell-ext.json",
+        "src/German_de_DE.txt",
+        "src/hunspell/license"
+    ],
+    "devDependencies": {
+        "dictionary-de": "^3.0.0"
+    }
 }

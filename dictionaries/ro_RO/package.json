@@ -1,50 +1,50 @@
 {
-  "name": "@cspell/dict-ro-ro",
-  "version": "2.0.0",
-  "description": "Romanian dictionary for cspell.",
-  "publishConfig": {
-    "access": "public"
-  },
-  "exports": {
-    ".": "./cspell-ext.json",
-    "./cspell": "./cspell-ext.json",
-    "./cspell-ext.json": "./cspell-ext.json"
-  },
-  "scripts": {
-    "build": "cspell-tools-cli build",
-    "sync": "pnpm cpy \"node_modules/dictionary-ro/**\" src/hunspell",
-    "conditional-build": "pnpm sync && pnpm build --conditional",
-    "test": "shx head -n 1000 \"src/Wordlist-Romanian.txt\" | cspell -c ./cspell-ext.json \"--locale=ro,ro-RO,ro_RO\" \"--languageId=*\" stdin",
-    "prepublishOnly": "echo OK",
-    "prepare:dictionary": "echo OK"
-  },
-  "repository": {
-    "type": "git",
-    "url": "https://github.com/streetsidesoftware/cspell-dict.git",
-    "directory": "dictionaries/ro_RO"
-  },
-  "keywords": [
-    "cspell",
-    "cspell-ext",
-    "ro_RO",
-    "Romanian",
-    "dictionary",
-    "spelling"
-  ],
-  "author": "Street Side Software <support@streetsidesoftware.nl>",
-  "license": "GPL-3.0",
-  "bugs": {
-    "url": "https://github.com/streetsidesoftware/cspell-dicts/issues"
-  },
-  "homepage": "https://github.com/streetsidesoftware/cspell-dicts/blob/main/dictionaries/ro_RO#readme",
-  "devDependencies": {
-    "dictionary-ro": "^3.0.0"
-  },
-  "files": [
-    "dict/ro-ro.trie",
-    "cspell-ext.json",
-    "src/hunspell/license",
-    "*.js",
-    "*.d.ts"
-  ]
+    "name": "@cspell/dict-ro-ro",
+    "version": "2.0.0",
+    "description": "Romanian dictionary for cspell.",
+    "publishConfig": {
+        "access": "public"
+    },
+    "exports": {
+        ".": "./cspell-ext.json",
+        "./cspell": "./cspell-ext.json",
+        "./cspell-ext.json": "./cspell-ext.json"
+    },
+    "scripts": {
+        "build": "cspell-tools-cli build",
+        "sync": "pnpm cpy \"node_modules/dictionary-ro/**\" src/hunspell",
+        "conditional-build": "pnpm sync && pnpm build --conditional",
+        "test": "shx head -n 1000 \"src/Wordlist-Romanian.txt\" | cspell -c ./cspell-ext.json \"--locale=ro,ro-RO,ro_RO\" \"--languageId=*\" stdin",
+        "prepublishOnly": "echo OK",
+        "prepare:dictionary": "echo OK"
+    },
+    "repository": {
+        "type": "git",
+        "url": "https://github.com/streetsidesoftware/cspell-dict.git",
+        "directory": "dictionaries/ro_RO"
+    },
+    "keywords": [
+        "cspell",
+        "cspell-ext",
+        "ro_RO",
+        "Romanian",
+        "dictionary",
+        "spelling"
+    ],
+    "author": "Street Side Software <support@streetsidesoftware.nl>",
+    "license": "GPL-3.0",
+    "bugs": {
+        "url": "https://github.com/streetsidesoftware/cspell-dicts/issues"
+    },
+    "homepage": "https://github.com/streetsidesoftware/cspell-dicts/blob/main/dictionaries/ro_RO#readme",
+    "devDependencies": {
+        "dictionary-ro": "^3.0.0"
+    },
+    "files": [
+        "dict/ro-ro.trie",
+        "cspell-ext.json",
+        "src/hunspell/license",
+        "*.js",
+        "*.d.ts"
+    ]
 }

@@ -1,50 +1,50 @@
 {
-  "name": "@cspell/dict-medicalterms",
-  "version": "4.1.2",
-  "description": "Medical Terms dictionary for cspell.",
-  "publishConfig": {
-    "access": "public"
-  },
-  "exports": {
-    ".": "./cspell-ext.json",
-    "./cspell": "./cspell-ext.json",
-    "./cspell-ext.json": "./cspell-ext.json"
-  },
-  "scripts": {
-    "build": "cspell-tools-cli build && pnpm run gz",
-    "build:conditional": "pnpm cspell-tools-cli build --conditional && pnpm run gz",
-    "sync": "shx rm -rf src/wordlist-medicalterms-en && shx cp -r node_modules/wordlist-medicalterms-en src/",
-    "test": "cspell samples --no-progress",
-    "gz": "cspell-tools-cli gzip \"dict/*.txt\"",
-    "prepublishOnly": "echo pre-publish",
-    "prepare:dictionary": "pnpm run build"
-  },
-  "repository": {
-    "type": "git",
-    "url": "https://github.com/streetsidesoftware/cspell-dict.git",
-    "directory": "dictionaries/medicalterms"
-  },
-  "keywords": [
-    "cspell",
-    "medical-terms",
-    "Medical Terms",
-    "dictionary",
-    "spelling"
-  ],
-  "author": "Street Side Software <support@streetsidesoftware.nl>",
-  "license": "GPL-3.0-or-later",
-  "bugs": {
-    "url": "https://github.com/streetsidesoftware/cspell-dicts/issues"
-  },
-  "homepage": "https://github.com/streetsidesoftware/cspell-dicts/blob/main/dictionaries/medicalterms#readme",
-  "files": [
-    "dict/medicalterms-en.txt.gz",
-    "src/wordlist-medicalterms-en/LICENSE",
-    "src/wordlist-medicalterms-en/README.md",
-    "!dict/README.md",
-    "cspell-ext.json"
-  ],
-  "devDependencies": {
-    "wordlist-medicalterms-en": "github:Glutanimate/wordlist-medicalterms-en#d87b48e"
-  }
+    "name": "@cspell/dict-medicalterms",
+    "version": "4.1.2",
+    "description": "Medical Terms dictionary for cspell.",
+    "publishConfig": {
+        "access": "public"
+    },
+    "exports": {
+        ".": "./cspell-ext.json",
+        "./cspell": "./cspell-ext.json",
+        "./cspell-ext.json": "./cspell-ext.json"
+    },
+    "scripts": {
+        "build": "cspell-tools-cli build && pnpm run gz",
+        "build:conditional": "pnpm cspell-tools-cli build --conditional && pnpm run gz",
+        "sync": "shx rm -rf src/wordlist-medicalterms-en && shx cp -r node_modules/wordlist-medicalterms-en src/",
+        "test": "cspell samples --no-progress",
+        "gz": "cspell-tools-cli gzip \"dict/*.txt\"",
+        "prepublishOnly": "echo pre-publish",
+        "prepare:dictionary": "pnpm run build"
+    },
+    "repository": {
+        "type": "git",
+        "url": "https://github.com/streetsidesoftware/cspell-dict.git",
+        "directory": "dictionaries/medicalterms"
+    },
+    "keywords": [
+        "cspell",
+        "medical-terms",
+        "Medical Terms",
+        "dictionary",
+        "spelling"
+    ],
+    "author": "Street Side Software <support@streetsidesoftware.nl>",
+    "license": "GPL-3.0-or-later",
+    "bugs": {
+        "url": "https://github.com/streetsidesoftware/cspell-dicts/issues"
+    },
+    "homepage": "https://github.com/streetsidesoftware/cspell-dicts/blob/main/dictionaries/medicalterms#readme",
+    "files": [
+        "dict/medicalterms-en.txt.gz",
+        "src/wordlist-medicalterms-en/LICENSE",
+        "src/wordlist-medicalterms-en/README.md",
+        "!dict/README.md",
+        "cspell-ext.json"
+    ],
+    "devDependencies": {
+        "wordlist-medicalterms-en": "github:Glutanimate/wordlist-medicalterms-en#d87b48e"
+    }
 }

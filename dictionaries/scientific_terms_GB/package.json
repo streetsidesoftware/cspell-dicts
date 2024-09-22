@@ -1,46 +1,46 @@
 {
-  "name": "@cspell/dict-scientific-terms-gb",
-  "version": "1.0.0",
-  "description": "Scientific Terms GB dictionary for cspell.",
-  "publishConfig": {
-    "access": "public"
-  },
-  "exports": {
-    ".": "./cspell-ext.json",
-    "./cspell": "./cspell-ext.json",
-    "./cspell-ext.json": "./cspell-ext.json"
-  },
-  "scripts": {
-    "build": "cspell-tools-cli build && pnpm gz",
-    "conditional-build": "cspell-tools-cli build --conditional && pnpm gz",
-    "test": "cspell samples",
-    "gz": "cspell-tools-cli gzip \"dict/*.trie\"",
-    "prepare:dictionary": "pnpm gz",
-    "prepublishOnly": "echo pre-publish"
-  },
-  "repository": {
-    "type": "git",
-    "url": "https://github.com/streetsidesoftware/cspell-dict.git",
-    "directory": "dictionaries/scientific_terms_GB"
-  },
-  "keywords": [
-    "cspell",
-    "cspell-ext",
-    "scientific_terms_GB",
-    "Scientific Terms GB",
-    "dictionary",
-    "spelling"
-  ],
-  "author": "Street Side Software <support@streetsidesoftware.nl>",
-  "license": "MIT",
-  "bugs": {
-    "url": "https://github.com/streetsidesoftware/cspell-dicts/issues"
-  },
-  "homepage": "https://github.com/streetsidesoftware/cspell-dicts/blob/main/dictionaries/scientific_terms_GB#readme",
-  "files": [
-    "dict/scientific-terms-gb.trie.gz",
-    "cspell-ext.json",
-    "*.js",
-    "*.d.ts"
-  ]
+    "name": "@cspell/dict-scientific-terms-gb",
+    "version": "1.0.0",
+    "description": "Scientific Terms GB dictionary for cspell.",
+    "publishConfig": {
+        "access": "public"
+    },
+    "exports": {
+        ".": "./cspell-ext.json",
+        "./cspell": "./cspell-ext.json",
+        "./cspell-ext.json": "./cspell-ext.json"
+    },
+    "scripts": {
+        "build": "cspell-tools-cli build && pnpm gz",
+        "conditional-build": "cspell-tools-cli build --conditional && pnpm gz",
+        "test": "cspell samples",
+        "gz": "cspell-tools-cli gzip \"dict/*.trie\"",
+        "prepare:dictionary": "pnpm gz",
+        "prepublishOnly": "echo pre-publish"
+    },
+    "repository": {
+        "type": "git",
+        "url": "https://github.com/streetsidesoftware/cspell-dict.git",
+        "directory": "dictionaries/scientific_terms_GB"
+    },
+    "keywords": [
+        "cspell",
+        "cspell-ext",
+        "scientific_terms_GB",
+        "Scientific Terms GB",
+        "dictionary",
+        "spelling"
+    ],
+    "author": "Street Side Software <support@streetsidesoftware.nl>",
+    "license": "MIT",
+    "bugs": {
+        "url": "https://github.com/streetsidesoftware/cspell-dicts/issues"
+    },
+    "homepage": "https://github.com/streetsidesoftware/cspell-dicts/blob/main/dictionaries/scientific_terms_GB#readme",
+    "files": [
+        "dict/scientific-terms-gb.trie.gz",
+        "cspell-ext.json",
+        "*.js",
+        "*.d.ts"
+    ]
 }

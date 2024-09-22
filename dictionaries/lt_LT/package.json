@@ -1,45 +1,45 @@
 {
-  "name": "@cspell/dict-lt-lt",
-  "version": "4.0.0",
-  "description": "Lithuanian dictionary for cspell.",
-  "publishConfig": {
-    "access": "public"
-  },
-  "exports": {
-    ".": "./cspell-ext.json",
-    "./cspell": "./cspell-ext.json",
-    "./cspell-ext.json": "./cspell-ext.json"
-  },
-  "scripts": {
-    "build": "cspell-tools-cli build",
-    "build:conditional": "cspell-tools-cli build --conditional && pnpm gz",
-    "gz": "cspell-tools-cli gzip \"*.trie\"",
-    "test": "cspell samples --no-progress",
-    "prepare:dictionary": "pnpm gz",
-    "prepublishOnly": "echo pre-publish"
-  },
-  "repository": {
-    "type": "git",
-    "url": "https://github.com/streetsidesoftware/cspell-dict.git",
-    "directory": "dictionaries/lt_LT"
-  },
-  "keywords": [
-    "cspell",
-    "lt_LT",
-    "Lithuanian",
-    "dictionary",
-    "spelling"
-  ],
-  "author": "Street Side Software <support@streetsidesoftware.nl>",
-  "license": "BSD-3-Clause",
-  "bugs": {
-    "url": "https://github.com/streetsidesoftware/cspell-dicts/issues"
-  },
-  "homepage": "https://github.com/streetsidesoftware/cspell-dicts/blob/main/dictionaries/lt_LT#readme",
-  "files": [
-    "src/hunspell/COPYING",
-    "src/hunspell/AUTHORS",
-    "lt_LT.trie.gz",
-    "cspell-ext.json"
-  ]
+    "name": "@cspell/dict-lt-lt",
+    "version": "4.0.0",
+    "description": "Lithuanian dictionary for cspell.",
+    "publishConfig": {
+        "access": "public"
+    },
+    "exports": {
+        ".": "./cspell-ext.json",
+        "./cspell": "./cspell-ext.json",
+        "./cspell-ext.json": "./cspell-ext.json"
+    },
+    "scripts": {
+        "build": "cspell-tools-cli build",
+        "build:conditional": "cspell-tools-cli build --conditional && pnpm gz",
+        "gz": "cspell-tools-cli gzip \"*.trie\"",
+        "test": "cspell samples --no-progress",
+        "prepare:dictionary": "pnpm gz",
+        "prepublishOnly": "echo pre-publish"
+    },
+    "repository": {
+        "type": "git",
+        "url": "https://github.com/streetsidesoftware/cspell-dict.git",
+        "directory": "dictionaries/lt_LT"
+    },
+    "keywords": [
+        "cspell",
+        "lt_LT",
+        "Lithuanian",
+        "dictionary",
+        "spelling"
+    ],
+    "author": "Street Side Software <support@streetsidesoftware.nl>",
+    "license": "BSD-3-Clause",
+    "bugs": {
+        "url": "https://github.com/streetsidesoftware/cspell-dicts/issues"
+    },
+    "homepage": "https://github.com/streetsidesoftware/cspell-dicts/blob/main/dictionaries/lt_LT#readme",
+    "files": [
+        "src/hunspell/COPYING",
+        "src/hunspell/AUTHORS",
+        "lt_LT.trie.gz",
+        "cspell-ext.json"
+    ]
 }

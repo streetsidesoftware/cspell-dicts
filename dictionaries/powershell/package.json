@@ -1,41 +1,41 @@
 {
-  "name": "@cspell/dict-powershell",
-  "version": "5.0.8",
-  "description": "PowerShell Keyword Dictionary",
-  "publishConfig": {
-    "access": "public"
-  },
-  "exports": {
-    ".": "./cspell-ext.json",
-    "./cspell": "./cspell-ext.json",
-    "./cspell-ext.json": "./cspell-ext.json"
-  },
-  "scripts": {
-    "build": "cspell-tools-cli build",
-    "test": "cspell samples -c samples/cspell.json",
-    "prepublishOnly": "echo pre-publish",
-    "prepare:dictionary": "pnpm run build"
-  },
-  "repository": {
-    "type": "git",
-    "url": "https://github.com/streetsidesoftware/cspell-dict.git",
-    "directory": "dictionaries/powershell"
-  },
-  "keywords": [
-    "cspell",
-    "powershell",
-    "PowerShell",
-    "dictionary",
-    "spelling"
-  ],
-  "author": "Street Side Software <support@streetsidesoftware.nl>",
-  "license": "MIT",
-  "bugs": {
-    "url": "https://github.com/streetsidesoftware/cspell-dicts/issues"
-  },
-  "homepage": "https://github.com/streetsidesoftware/cspell-dicts/blob/main/dictionaries/powershell#readme",
-  "files": [
-    "dict/powershell.txt",
-    "cspell-ext.json"
-  ]
+    "name": "@cspell/dict-powershell",
+    "version": "5.0.8",
+    "description": "PowerShell Keyword Dictionary",
+    "publishConfig": {
+        "access": "public"
+    },
+    "exports": {
+        ".": "./cspell-ext.json",
+        "./cspell": "./cspell-ext.json",
+        "./cspell-ext.json": "./cspell-ext.json"
+    },
+    "scripts": {
+        "build": "cspell-tools-cli build",
+        "test": "cspell samples -c samples/cspell.json",
+        "prepublishOnly": "echo pre-publish",
+        "prepare:dictionary": "pnpm run build"
+    },
+    "repository": {
+        "type": "git",
+        "url": "https://github.com/streetsidesoftware/cspell-dict.git",
+        "directory": "dictionaries/powershell"
+    },
+    "keywords": [
+        "cspell",
+        "powershell",
+        "PowerShell",
+        "dictionary",
+        "spelling"
+    ],
+    "author": "Street Side Software <support@streetsidesoftware.nl>",
+    "license": "MIT",
+    "bugs": {
+        "url": "https://github.com/streetsidesoftware/cspell-dicts/issues"
+    },
+    "homepage": "https://github.com/streetsidesoftware/cspell-dicts/blob/main/dictionaries/powershell#readme",
+    "files": [
+        "dict/powershell.txt",
+        "cspell-ext.json"
+    ]
 }

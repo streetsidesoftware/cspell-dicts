@@ -1,47 +1,47 @@
 {
-  "name": "@cspell/dict-google",
-  "version": "1.0.1",
-  "description": "Google Cloud Development dictionary for cspell.",
-  "publishConfig": {
-    "access": "public"
-  },
-  "exports": {
-    ".": "./cspell-ext.json",
-    "./cspell": "./cspell-ext.json",
-    "./cspell-ext.json": "./cspell-ext.json"
-  },
-  "scripts": {
-    "build": "cross-env NODE_OPTIONS=--max_old_space_size=8192 cspell-tools-cli build",
-    "test": "head -n 1000 \"src/google.txt\" | cspell \"--locale=*\" \"--languageId=*\" stdin",
-    "prepublishOnly": "echo OK",
-    "prepare:dictionary": "pnpm run build"
-  },
-  "repository": {
-    "type": "git",
-    "url": "git+https://github.com/streetsidesoftware/cspell-dicts.git"
-  },
-  "keywords": [
-    "cspell",
-    "cspell-ext",
-    "cloud",
-    "google",
-    "Google",
-    "dictionary",
-    "spelling"
-  ],
-  "author": "Street Side Software",
-  "contributors": [],
-  "license": "MIT",
-  "bugs": {
-    "url": "https://github.com/streetsidesoftware/cspell-dicts/issues"
-  },
-  "homepage": "https://github.com/streetsidesoftware/cspell-dicts/blob/main/dictionaries/google#readme",
-  "devDependencies": {},
-  "dependencies": {},
-  "files": [
-    "dict/google.txt",
-    "cspell-ext.json",
-    "*.js",
-    "*.d.ts"
-  ]
+    "name": "@cspell/dict-google",
+    "version": "1.0.1",
+    "description": "Google Cloud Development dictionary for cspell.",
+    "publishConfig": {
+        "access": "public"
+    },
+    "exports": {
+        ".": "./cspell-ext.json",
+        "./cspell": "./cspell-ext.json",
+        "./cspell-ext.json": "./cspell-ext.json"
+    },
+    "scripts": {
+        "build": "cross-env NODE_OPTIONS=--max_old_space_size=8192 cspell-tools-cli build",
+        "test": "head -n 1000 \"src/google.txt\" | cspell \"--locale=*\" \"--languageId=*\" stdin",
+        "prepublishOnly": "echo OK",
+        "prepare:dictionary": "pnpm run build"
+    },
+    "repository": {
+        "type": "git",
+        "url": "git+https://github.com/streetsidesoftware/cspell-dicts.git"
+    },
+    "keywords": [
+        "cspell",
+        "cspell-ext",
+        "cloud",
+        "google",
+        "Google",
+        "dictionary",
+        "spelling"
+    ],
+    "author": "Street Side Software",
+    "contributors": [],
+    "license": "MIT",
+    "bugs": {
+        "url": "https://github.com/streetsidesoftware/cspell-dicts/issues"
+    },
+    "homepage": "https://github.com/streetsidesoftware/cspell-dicts/blob/main/dictionaries/google#readme",
+    "devDependencies": {},
+    "dependencies": {},
+    "files": [
+        "dict/google.txt",
+        "cspell-ext.json",
+        "*.js",
+        "*.d.ts"
+    ]
 }
