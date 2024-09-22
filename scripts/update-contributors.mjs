@@ -63,7 +63,7 @@ async function readContributors() {
  */
 async function writeContributors(contributors) {
     await writeFile(outputFileUrl, contributorsToMd(contributors));
-    await writeFile(contributorsFileUrl, JSON.stringify(sortContributorsByLogin([...contributors]), null, 2));
+    await writeFile(contributorsFileUrl, JSON.stringify(sortContributorsByLogin([...contributors]), null, 2) + '\n');
 }
 
 async function run() {
