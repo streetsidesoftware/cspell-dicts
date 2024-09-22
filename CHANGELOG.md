@@ -1,5 +1,15 @@
 # Release Notes
 
+## [27.5.3](https://github.com/streetsidesoftware/cspell-dicts/compare/cspell-dicts@27.5.2...cspell-dicts@27.5.3) (2024-09-22)
+
+
+### Updates and Bug Fixes
+
+* add `-isnot` to powershell dictionary fixes streetsidesoftware/cspell-dicts[#3577](https://github.com/streetsidesoftware/cspell-dicts/issues/3577) ([#3599](https://github.com/streetsidesoftware/cspell-dicts/issues/3599)) ([c930090](https://github.com/streetsidesoftware/cspell-dicts/commit/c9300902e5b411b855e29118fbcaed7c05393549))
+* Add new Shadow Root related HTML attributes ([#3598](https://github.com/streetsidesoftware/cspell-dicts/issues/3598)) ([c2ffcd5](https://github.com/streetsidesoftware/cspell-dicts/commit/c2ffcd558f0703031da7a1729d0227b47ed207ef))
+* Workflow Bot -- Build Dictionaries ([#3601](https://github.com/streetsidesoftware/cspell-dicts/issues/3601)) ([3d2aaf2](https://github.com/streetsidesoftware/cspell-dicts/commit/3d2aaf244cd5bb39cd19998b43b7f6fb8bf614ee))
+* Workflow Bot -- Build Dictionaries ([#3603](https://github.com/streetsidesoftware/cspell-dicts/issues/3603)) ([8b9664b](https://github.com/streetsidesoftware/cspell-dicts/commit/8b9664b6e3aa1311c0c0a188b06d1139e53a7abf))
+
 ## [27.5.2](https://github.com/streetsidesoftware/cspell-dicts/compare/cspell-dicts@27.5.1...cspell-dicts@27.5.2) (2024-09-19)
 
 
