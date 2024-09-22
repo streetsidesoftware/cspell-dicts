@@ -11,7 +11,7 @@ insert_final_newline = true
 [*.{yaml,yml}]
 indent_size = 2
 
-[{package*.json,lerna.json}]
+[{package*.json,lerna.json,static/**/*.json}]
 indent_size = 2
 
 [*.md]
