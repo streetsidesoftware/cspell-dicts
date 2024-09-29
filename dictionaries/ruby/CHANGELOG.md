@@ -3,6 +3,14 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+## [5.0.4](https://github.com/streetsidesoftware/cspell-dicts/compare/@cspell/dict-ruby@5.0.3...@cspell/dict-ruby@5.0.4) (2024-09-29)
+
+
+### Updates and Bug Fixes
+
+* Add some Ruby words ([#3610](https://github.com/streetsidesoftware/cspell-dicts/issues/3610)) ([5079d05](https://github.com/streetsidesoftware/cspell-dicts/commit/5079d05cd436b9008401de016f8f4565a3c6d6b5))
+* Workflow Bot -- Build Dictionaries ([#3613](https://github.com/streetsidesoftware/cspell-dicts/issues/3613)) ([1bab624](https://github.com/streetsidesoftware/cspell-dicts/commit/1bab6245fa864729d266c11e2fdc1b38cfe890e0))
+
 ## [5.0.3](https://github.com/streetsidesoftware/cspell-dicts/compare/@cspell/dict-ruby@5.0.2...@cspell/dict-ruby@5.0.3) (2024-08-26)
 
 
