@@ -312,7 +312,7 @@ Special thanks to all of our amazing contributors!
 [<img alt="Contributor fa0311" src="https://avatars.githubusercontent.com/u/34892635?v=4&size=128" width=64>](https://github.com/fa0311)
 [<img alt="Contributor jordiolivares" src="https://avatars.githubusercontent.com/u/1163790?v=4&size=128" width=64>](https://github.com/jordiolivares)
 [<img alt="Contributor mad-gooze" src="https://avatars.githubusercontent.com/u/1188779?v=4&size=128" width=64>](https://github.com/mad-gooze)
-[<img alt="Contributor Maxim-Mazurok" src="https://avatars.githubusercontent.com/u/7756211?v=4&size=128" width=64>](https://github.com/Maxim-Mazurok)
+[<img alt="Contributor ssbarnea" src="https://avatars.githubusercontent.com/u/102495?v=4&size=128" width=64>](https://github.com/ssbarnea)
 [<img alt="Contributor TomAFrench" src="https://avatars.githubusercontent.com/u/15848336?v=4&size=128" width=64>](https://github.com/TomAFrench)
 [<img alt="Contributor treemmett" src="https://avatars.githubusercontent.com/u/10267629?v=4&size=128" width=64>](https://github.com/treemmett)
 [<img alt="Contributor alecmev" src="https://avatars.githubusercontent.com/u/2584727?v=4&size=128" width=64>](https://github.com/alecmev)
@@ -320,6 +320,7 @@ Special thanks to all of our amazing contributors!
 [<img alt="Contributor david-fong" src="https://avatars.githubusercontent.com/u/42986768?v=4&size=128" width=64>](https://github.com/david-fong)
 [<img alt="Contributor Encephala" src="https://avatars.githubusercontent.com/u/29434548?v=4&size=128" width=64>](https://github.com/Encephala)
 [<img alt="Contributor jcgoette" src="https://avatars.githubusercontent.com/u/53531335?v=4&size=128" width=64>](https://github.com/jcgoette)
+[<img alt="Contributor Maxim-Mazurok" src="https://avatars.githubusercontent.com/u/7756211?v=4&size=128" width=64>](https://github.com/Maxim-Mazurok)
 [<img alt="Contributor asportnoy" src="https://avatars.githubusercontent.com/u/14863373?v=4&size=128" width=64>](https://github.com/asportnoy)
 [<img alt="Contributor bentolor" src="https://avatars.githubusercontent.com/u/588260?v=4&size=128" width=64>](https://github.com/bentolor)
 [<img alt="Contributor brmonaghan" src="https://avatars.githubusercontent.com/u/71337477?v=4&size=128" width=64>](https://github.com/brmonaghan)
@@ -448,7 +449,6 @@ Special thanks to all of our amazing contributors!
 [<img alt="Contributor thehappydinoa" src="https://avatars.githubusercontent.com/u/30162978?v=4&size=128" width=64>](https://github.com/thehappydinoa)
 [<img alt="Contributor verythorough" src="https://avatars.githubusercontent.com/u/6111186?v=4&size=128" width=64>](https://github.com/verythorough)
 [<img alt="Contributor Zereges" src="https://avatars.githubusercontent.com/u/7399594?v=4&size=128" width=64>](https://github.com/Zereges)
-[<img alt="Contributor ssbarnea" src="https://avatars.githubusercontent.com/u/102495?v=4&size=128" width=64>](https://github.com/ssbarnea)
 
 <!--- cspell:enable --->
 
