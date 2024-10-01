@@ -3,6 +3,13 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+## [4.1.5](https://github.com/streetsidesoftware/cspell-dicts/compare/@cspell/dict-bash@4.1.4...@cspell/dict-bash@4.1.5) (2024-10-01)
+
+
+### Updates and Bug Fixes
+
+* Recognize bash strict mode arguments ([#3616](https://github.com/streetsidesoftware/cspell-dicts/issues/3616)) ([ab2077d](https://github.com/streetsidesoftware/cspell-dicts/commit/ab2077d5274d7ce2a19e2751c60d678a7ca28fb5))
+
 ## [4.1.4](https://github.com/streetsidesoftware/cspell-dicts/compare/@cspell/dict-bash@4.1.3...@cspell/dict-bash@4.1.4) (2024-08-27)
 
 

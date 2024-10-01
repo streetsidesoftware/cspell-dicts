@@ -1,5 +1,15 @@
 # Release Notes
 
+## [27.5.5](https://github.com/streetsidesoftware/cspell-dicts/compare/cspell-dicts@27.5.4...cspell-dicts@27.5.5) (2024-10-01)
+
+
+### Updates and Bug Fixes
+
+* Add some software-terms words that start with "un" ([#3446](https://github.com/streetsidesoftware/cspell-dicts/issues/3446)) ([1144d9e](https://github.com/streetsidesoftware/cspell-dicts/commit/1144d9e37ca9033d39d4732541f51490f6042a40))
+* Recognize bash strict mode arguments ([#3616](https://github.com/streetsidesoftware/cspell-dicts/issues/3616)) ([ab2077d](https://github.com/streetsidesoftware/cspell-dicts/commit/ab2077d5274d7ce2a19e2751c60d678a7ca28fb5))
+* Workflow Bot -- Build Dictionaries ([#3619](https://github.com/streetsidesoftware/cspell-dicts/issues/3619)) ([e86c716](https://github.com/streetsidesoftware/cspell-dicts/commit/e86c716d6c8b2bef5c14a5c27e7e6d7628b49ec3))
+* Workflow Bot -- Build Dictionaries ([#3622](https://github.com/streetsidesoftware/cspell-dicts/issues/3622)) ([7312bf0](https://github.com/streetsidesoftware/cspell-dicts/commit/7312bf091b18f6022eb787c653bb90b0a211e82d))
+
 ## [27.5.4](https://github.com/streetsidesoftware/cspell-dicts/compare/cspell-dicts@27.5.3...cspell-dicts@27.5.4) (2024-09-29)
 
 

@@ -3,6 +3,14 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+## [4.1.5](https://github.com/streetsidesoftware/cspell-dicts/compare/@cspell/dict-software-terms@4.1.4...@cspell/dict-software-terms@4.1.5) (2024-10-01)
+
+
+### Updates and Bug Fixes
+
+* Add some software-terms words that start with "un" ([#3446](https://github.com/streetsidesoftware/cspell-dicts/issues/3446)) ([1144d9e](https://github.com/streetsidesoftware/cspell-dicts/commit/1144d9e37ca9033d39d4732541f51490f6042a40))
+* Workflow Bot -- Build Dictionaries ([#3619](https://github.com/streetsidesoftware/cspell-dicts/issues/3619)) ([e86c716](https://github.com/streetsidesoftware/cspell-dicts/commit/e86c716d6c8b2bef5c14a5c27e7e6d7628b49ec3))
+
 ## [4.1.4](https://github.com/streetsidesoftware/cspell-dicts/compare/@cspell/dict-software-terms@4.1.3...@cspell/dict-software-terms@4.1.4) (2024-09-19)
 
 
