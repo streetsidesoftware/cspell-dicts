@@ -361,7 +361,6 @@ Special thanks to all of our amazing contributors!
 [<img alt="Contributor smaraf" src="https://avatars.githubusercontent.com/u/1213709?v=4&size=128" width=64>](https://github.com/smaraf)
 [<img alt="Contributor snyk-bot" src="https://avatars.githubusercontent.com/u/19733683?v=4&size=128" width=64>](https://github.com/snyk-bot)
 [<img alt="Contributor spiftire" src="https://avatars.githubusercontent.com/u/44159536?v=4&size=128" width=64>](https://github.com/spiftire)
-[<img alt="Contributor ssbarnea" src="https://avatars.githubusercontent.com/u/102495?v=4&size=128" width=64>](https://github.com/ssbarnea)
 [<img alt="Contributor thakyZ" src="https://avatars.githubusercontent.com/u/950594?v=4&size=128" width=64>](https://github.com/thakyZ)
 [<img alt="Contributor thegraffix" src="https://avatars.githubusercontent.com/u/57874058?v=4&size=128" width=64>](https://github.com/thegraffix)
 [<img alt="Contributor thenamankumar" src="https://avatars.githubusercontent.com/u/22571395?v=4&size=128" width=64>](https://github.com/thenamankumar)
@@ -449,6 +448,7 @@ Special thanks to all of our amazing contributors!
 [<img alt="Contributor thehappydinoa" src="https://avatars.githubusercontent.com/u/30162978?v=4&size=128" width=64>](https://github.com/thehappydinoa)
 [<img alt="Contributor verythorough" src="https://avatars.githubusercontent.com/u/6111186?v=4&size=128" width=64>](https://github.com/verythorough)
 [<img alt="Contributor Zereges" src="https://avatars.githubusercontent.com/u/7399594?v=4&size=128" width=64>](https://github.com/Zereges)
+[<img alt="Contributor ssbarnea" src="https://avatars.githubusercontent.com/u/102495?v=4&size=128" width=64>](https://github.com/ssbarnea)
 
 <!--- cspell:enable --->
 
