@@ -1,0 +1,48 @@
+{
+  "name": "@cspell/dict-fr-fr",
+  "version": "2.2.2",
+  "description": "French dictionary for cspell.",
+  "publishConfig": {
+    "access": "public"
+  },
+  "exports": {
+    ".": "./cspell-ext.json",
+    "./cspell": "./cspell-ext.json",
+    "./cspell-ext.json": "./cspell-ext.json"
+  },
+  "scripts": {
+    "build": "pnpm run compile",
+    "compile": "cspell-tools-cli build",
+    "conditional-build": "pnpm run build --conditional",
+    "gz": "cspell-tools-cli gzip \"*.trie\"",
+    "prepare:dictionary": "pnpm gz",
+    "prepublishOnly": "echo pre-publish",
+    "test-dict": "pipe-cmds \"hunspell-reader words -n 1000 \\\"./src/hunspell-french-dictionaries-v7.0/fr-classique.dic\\\"\" \"cspell -c ./cspell-ext.json \\\"--locale=fr\\\" \\\"--languageId=*\\\" stdin\"",
+    "test-text": "cspell -c ./cspell-ext.json --locale=fr --languageId=* \"samples/**\"",
+    "test": "pnpm run test-dict && pnpm run test-text"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/streetsidesoftware/cspell-dict.git",
+    "directory": "dictionaries/fr_FR"
+  },
+  "keywords": [
+    "cspell",
+    "cspell-ext",
+    "fr_FR",
+    "French",
+    "dictionary",
+    "spelling"
+  ],
+  "author": "Street Side Software <support@streetsidesoftware.nl>",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/streetsidesoftware/cspell-dicts/issues"
+  },
+  "homepage": "https://github.com/streetsidesoftware/cspell-dicts/blob/main/dictionaries/fr_FR#readme",
+  "files": [
+    "cspell-ext.json",
+    "fr-fr.trie.gz",
+    "src/hunspell-french-dictionaries-v7.0/README_dict_fr.txt"
+  ]
+}

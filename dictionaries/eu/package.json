@@ -1,0 +1,46 @@
+{
+  "name": "@cspell/dict-eu",
+  "version": "1.0.0",
+  "description": "Basque dictionary for cspell.",
+  "publishConfig": {
+    "access": "public"
+  },
+  "exports": {
+    ".": "./cspell-ext.json",
+    "./cspell": "./cspell-ext.json",
+    "./cspell-ext.json": "./cspell-ext.json"
+  },
+  "scripts": {
+    "build": "cspell-tools-cli build",
+    "conditional-build": "pnpm run sync && pnpm run build --conditional",
+    "sync": "echo OK || pnpm cpy \"node_modules/basque_hunspell/eu.*\" \"src/basque_hunspell\" --flat",
+    "test": "pipe-cmds \"hunspell-reader words -n 1000 -m 1 \\\"src/basque_hunspell/eu.dic\\\"\" \"cspell -c ./cspell-ext.json \\\"--locale=eu\\\" \\\"--languageId=*\\\" stdin\"",
+    "prepublishOnly": "echo OK",
+    "prepare:dictionary": "echo OK"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/streetsidesoftware/cspell-dict.git",
+    "directory": "dictionaries/eu"
+  },
+  "keywords": [
+    "cspell",
+    "cspell-ext",
+    "eu",
+    "Basque",
+    "dictionary",
+    "spelling"
+  ],
+  "author": "Street Side Software <support@streetsidesoftware.nl>",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/streetsidesoftware/cspell-dicts/issues"
+  },
+  "homepage": "https://github.com/streetsidesoftware/cspell-dicts/blob/main/dictionaries/eu#readme",
+  "files": [
+    "dict/eu.trie",
+    "cspell-ext.json",
+    "*.js",
+    "*.d.ts"
+  ]
+}

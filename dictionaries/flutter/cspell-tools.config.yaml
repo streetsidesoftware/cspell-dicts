@@ -1,0 +1,10 @@
+# yaml-language-server: $schema=https://raw.githubusercontent.com/streetsidesoftware/cspell/main/packages/cspell-tools/cspell-tools.config.schema.json
+
+targets:
+  - name: flutter
+    targetDirectory: .
+    compress: true
+    format: plaintext
+    sources:
+      - src/flutter.txt
+    sort: true

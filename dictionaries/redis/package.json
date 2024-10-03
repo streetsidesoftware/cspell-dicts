@@ -1,0 +1,46 @@
+{
+  "name": "@cspell/dict-redis",
+  "version": "1.0.1",
+  "description": "Redis dictionary for cspell.",
+  "publishConfig": {
+    "access": "public"
+  },
+  "exports": {
+    ".": "./cspell-ext.json",
+    "./cspell": "./cspell-ext.json",
+    "./cspell-ext.json": "./cspell-ext.json"
+  },
+  "scripts": {
+    "build": "cross-env NODE_OPTIONS=--max_old_space_size=8192 cspell-tools-cli build",
+    "test": "shx head -n 1000 \"src/redis-commands.txt\" | cspell -c ./cspell.json \"--locale=*\" \"--languageId=*\" stdin",
+    "prepublishOnly": "echo OK",
+    "prepare:dictionary": "pnpm run build"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/streetsidesoftware/cspell-dict.git",
+    "directory": "dictionaries/redis"
+  },
+  "keywords": [
+    "cspell",
+    "cspell-ext",
+    "redis",
+    "redis",
+    "dictionary",
+    "spelling"
+  ],
+  "author": "Street Side Software <support@streetsidesoftware.nl>",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/streetsidesoftware/cspell-dicts/issues"
+  },
+  "homepage": "https://github.com/streetsidesoftware/cspell-dicts/blob/main/dictionaries/redis#readme",
+  "devDependencies": {},
+  "dependencies": {},
+  "files": [
+    "dict/redis.txt",
+    "cspell-ext.json",
+    "*.js",
+    "*.d.ts"
+  ]
+}

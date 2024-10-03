@@ -1,0 +1,54 @@
+{
+  "name": "@cspell/dict-et-ee",
+  "version": "3.1.0",
+  "description": "Estonian dictionary for cspell.",
+  "private": false,
+  "publishConfig": {
+    "access": "public"
+  },
+  "exports": {
+    ".": "./cspell-ext.json",
+    "./cspell": "./cspell-ext.json",
+    "./cspell-ext.json": "./cspell-ext.json"
+  },
+  "scripts": {
+    "build": "pnpm run compile",
+    "sync": "pnpm cpy \"node_modules/dictionary-et/index.{aff,dic}\" src",
+    "compile": "cspell-tools-cli build",
+    "conditional-build": "pnpm run sync && pnpm run build --conditional && pnpm gz",
+    "test-dict": "pipe-cmds \"hunspell-reader words -n 10000 \\\"src/index.dic\\\"\" \"cspell -c ./cspell-ext.json --locale=et --languageId=* stdin\"",
+    "test-text": "cspell -c ./cspell-ext.json --locale=et --languageId=* \"samples/**\"",
+    "test": "pnpm run test-dict && pnpm run test-text",
+    "gz": "cspell-tools-cli gzip \"*.trie\"",
+    "prepare:dictionary": "pnpm gz",
+    "prepublishOnly": "echo pre-publish"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/streetsidesoftware/cspell-dict.git",
+    "directory": "dictionaries/et-EE"
+  },
+  "keywords": [
+    "cspell",
+    "et-EE",
+    "Estonian",
+    "dictionary",
+    "spelling"
+  ],
+  "author": "Street Side Software <support@streetsidesoftware.nl>",
+  "license": "LGPL-3.0+",
+  "bugs": {
+    "url": "https://github.com/streetsidesoftware/cspell-dicts/issues"
+  },
+  "homepage": "https://github.com/streetsidesoftware/cspell-dicts/blob/main/dictionaries/et-EE#readme",
+  "files": [
+    "src/LICENSE",
+    "et_EE.trie.gz",
+    "cspell-ext.json",
+    "*.js",
+    "*.d.ts"
+  ],
+  "devDependencies": {
+    "dictionary-et": "^2.0.0"
+  }
+}

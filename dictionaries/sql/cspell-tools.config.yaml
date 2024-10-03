@@ -1,0 +1,12 @@
+# yaml-language-server: $schema=https://raw.githubusercontent.com/streetsidesoftware/cspell/main/packages/cspell-tools/cspell-tools.config.schema.json
+
+targets:
+  - name: sql
+    targetDirectory: .
+    compress: true
+    format: plaintext
+    sources:
+      - src/sql.txt
+      - src/tsql.txt
+      - src/common-terms.txt
+    sort: true

@@ -1,0 +1,11 @@
+# yaml-language-server: $schema=https://raw.githubusercontent.com/streetsidesoftware/cspell/main/packages/cspell-tools/cspell-tools.config.schema.json
+
+targets:
+  - name: da_DK
+    sources:
+      - src/additional_words.txt
+      - src/hunspell/index.dic
+    format: trie3
+    targetDirectory: '.'
+    generateNonStrict: true
+checksumFile: true

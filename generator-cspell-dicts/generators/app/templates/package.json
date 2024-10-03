@@ -1,0 +1,47 @@
+{
+  "name": "<%= fullPackageName %>",
+  "version": "1.0.0",
+  "description": "<%= description %> -- Private until verified",
+  "private": true,
+  "publishConfig": {
+    "access": "public"
+  },
+  "exports": {
+    ".": "./cspell-ext.json",
+    "./cspell": "./cspell-ext.json",
+    "./cspell-ext.json": "./cspell-ext.json"
+  },
+  "scripts": {
+    "build": "cross-env NODE_OPTIONS=--max_old_space_size=8192 cspell-tools-cli build",
+    "test": "<%= srcFileReader %> \"<%= srcFile %>\" | cspell -c ./cspell-ext.json \"--locale=<%= locale %>\" \"--languageId=<%= languageId %>\" stdin",
+    "prepublishOnly": "<%= prepublishOnlyScript %>",
+    "prepare:dictionary": "<%= prepareScript %>"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/streetsidesoftware/cspell-dicts.git"
+  },
+  "keywords": [
+    "cspell",
+    "cspell-ext",
+    "<%= name %>",
+    "<%= friendlyName %>",
+    "dictionary",
+    "spelling"
+  ],
+  "author": "Street Side Software",
+  "contributors": [],
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/streetsidesoftware/cspell-dicts/issues"
+  },
+  "homepage": "https://github.com/streetsidesoftware/cspell-dicts/blob/main/dictionaries/<%= name %>#readme",
+  "devDependencies": {},
+  "dependencies": {},
+  "files": [
+    "<%= dstFullFileName %>",
+    "cspell-ext.json",
+    "*.js",
+    "*.d.ts"
+  ]
+}

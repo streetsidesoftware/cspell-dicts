@@ -1,0 +1,14 @@
+# yaml-language-server: $schema=https://raw.githubusercontent.com/streetsidesoftware/cspell/main/packages/cspell-tools/cspell-tools.config.schema.json
+
+$schema: https://raw.githubusercontent.com/streetsidesoftware/cspell/main/packages/cspell-tools/cspell-tools.config.schema.json
+targets:
+  - name: fa-IR
+    targetDirectory: .
+    compress: false
+    format: trie3
+    sources:
+      - filename: hunspell/fa-IR.dic
+        split: true
+    sort: true
+    generateNonStrict: true
+checksumFile: true

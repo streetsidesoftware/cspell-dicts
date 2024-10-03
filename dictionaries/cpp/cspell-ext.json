@@ -1,0 +1,61 @@
+// cSpell Settings
+{
+    "id": "cpp-dict",
+    "name": "C/C++ Dictionary",
+    "description": "C/C++ Keywords and common library functions.",
+    "readonly": true,
+    // List of dictionary files to add to the global list of dictionaries
+    "dictionaryDefinitions": [
+        {
+            "name": "cpp-legacy",
+            "path": "./dict/cpp-legacy.txt",
+            "description": "Legacy C/C++ Keywords and common library functions."
+        },
+        {
+            "name": "cpp",
+            "path": "./dict/cpp.txt",
+            "description": "C/C++ Keywords and common library functions."
+        },
+        {
+            "name": "cpp-refined",
+            "path": "./dict/cpp-refined.txt",
+            "description": "Refined list of C/C++ Keywords and common library functions."
+        }
+    ],
+    // Dictionaries to always be used.
+    // Generally left empty
+    "dictionaries": [],
+    // Language Rules to apply to matching files.
+    // Files are matched on `languageId` and `locale`
+    "languageSettings": [
+        {
+            // VSCode languageId. i.e. typescript, java, go, cpp, javascript, markdown, latex
+            // * will match against any file type.
+            "languageId": "c,cpp",
+            // Language locale. i.e. en-US, de-AT, or ru. * will match all locals.
+            // Multiple locals can be specified like: "en, en-US" to match both English and English US.
+            "locale": "*",
+            // This can be removed once cspell-tools are upgraded to @cspell/cspell-tools.
+            "words": [],
+            // To exclude patterns, add them to "ignoreRegExpList"
+            "ignoreRegExpList": ["includes", "hex-digits"],
+            // regex patterns than can be used with ignoreRegExpList or includeRegExpList
+            // Example: "pattern": [{ "name": "mdash", "pattern": "&mdash;" }]
+            // This could be included in "ignoreRegExpList": ["mdash"]
+            "patterns": [
+                {
+                    "name": "includes",
+                    "pattern": "/#include.*/g"
+                },
+                {
+                    "name": "hex-digits",
+                    "pattern": "/0[xX][0-9a-fA-F](?:'?[0-9a-fA-F])*/g"
+                }
+            ],
+            // List of dictionaries to enable by name in `dictionaryDefinitions`
+            "dictionaries": ["cpp", "cpp-refined", "cpp-legacy"],
+            // Dictionary definitions can also be supplied here. They are only used iff "languageId" and "locale" match.
+            "dictionaryDefinitions": []
+        }
+    ]
+}

@@ -1,0 +1,23 @@
+{
+    "id": "pt-br",
+    "version": "0.2",
+    "readonly": true,
+    "name": "Portuguese (Brazilian) Dictionary",
+    "description": "Portuguese (Brazilian) Dictionary",
+    "dictionaryDefinitions": [
+        {
+            "name": "pt-br",
+            "path": "./pt_BR.trie.gz",
+            "description": "Portuguese (Brazilian) Dictionary"
+        }
+    ],
+    "dictionaries": [],
+    "languageSettings": [
+        {
+            "languageId": "*",
+            "locale": "pt,pt_BR",
+            "caseSensitive": true,
+            "dictionaries": ["pt-br"]
+        }
+    ]
+}

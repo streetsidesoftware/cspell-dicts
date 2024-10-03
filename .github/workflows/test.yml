@@ -1,0 +1,56 @@
+name: 'build-test'
+on: # rebuild any PRs and main branch changes
+  pull_request:
+  push:
+    branches:
+      - main
+
+permissions:
+  contents: read
+
+jobs:
+  # Test supported Node versions
+  test-node-versions:
+    runs-on: ${{ matrix.os }}
+    strategy:
+      fail-fast: false
+      matrix:
+        node-version:
+          - 18.x
+          - 20.x
+          - 22.x
+
+        os:
+          - ubuntu-latest
+
+    steps:
+      - uses: actions/checkout@v4
+
+      - name: Setup
+        uses: ./.github/actions/setup
+        with:
+          node-version: ${{ matrix.node-version }}
+
+      - run: pnpm test
+
+  # Test supported Operating Systems
+  test-os:
+    runs-on: ${{ matrix.os }}
+    strategy:
+      matrix:
+        node-version:
+          - 18.x
+
+        os:
+          - windows-latest
+          # - macos-latest # GitHub perf issues on MacOS makes this too painful to run.
+
+    steps:
+      - uses: actions/checkout@v4
+
+      - name: Setup
+        uses: ./.github/actions/setup
+        with:
+          node-version: ${{ matrix.node-version }}
+
+      - run: pnpm test

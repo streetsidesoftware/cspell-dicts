@@ -1,0 +1,21 @@
+{
+    "id": "eu",
+    "version": "0.2",
+    "name": "Basque",
+    "description": "Basque dictionary for cspell.",
+    "readonly": true,
+    "dictionaryDefinitions": [
+        {
+            "name": "eu",
+            "path": "./dict/eu.trie",
+            "description": "Basque dictionary for cspell."
+        }
+    ],
+    "languageSettings": [
+        {
+            "languageId": "*",
+            "locale": "eu",
+            "dictionaries": ["eu"]
+        }
+    ]
+}

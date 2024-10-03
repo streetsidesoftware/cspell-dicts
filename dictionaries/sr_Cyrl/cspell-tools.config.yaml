@@ -1,0 +1,12 @@
+# yaml-language-server: $schema=https://raw.githubusercontent.com/streetsidesoftware/cspell/main/packages/cspell-tools/cspell-tools.config.schema.json
+
+targets:
+  - name: sr-cyrl
+    targetDirectory: dict
+    compress: false
+    format: trie3
+    sources:
+      - src/additional_tokens.txt
+      - src/sr.dic
+    generateNonStrict: true
+checksumFile: true

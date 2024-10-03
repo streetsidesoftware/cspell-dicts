@@ -1,0 +1,1338 @@
+# cspell:ignore enconding
+__dirname
+__filename
+--enable-fips
+--force-fips
+--icu-data-dir=file
+--no-deprecation
+--no-warnings
+--openssl-config=file
+--preserve-symlinks
+--prof-process
+--throw-deprecation
+--tls-cipher-list=list
+--trace-deprecation
+--trace-sync-io
+--trace-warnings
+--track-heap-objects
+--v8-options
+--zero-fill-buffers
+-c, --check
+-e, --eval "script"
+-h, --help
+-i, --interactive
+-p, --print "script"
+-r, --require module
+-v, --version
+Accessing Core Node.js Modules
+Accessing the main module
+Addenda: Package Manager Tips
+Additional Notes
+Additions to Error objects
+ADDRGETNETWORKPARAMS
+Advanced Usage
+agent.createConnection(options[, callback])
+agent.destroy()
+agent.freeSockets
+agent.getName(options)
+agent.maxFreeSockets
+agent.maxSockets
+agent.requests
+agent.sockets
+All Together...
+ALPN, NPN and SNI
+An Example Counting Stream
+An Example Duplex Stream
+An Example Writable Stream
+ANYCONNECT
+API for Stream Consumers
+API for Stream Implementers
+Assert
+assert.deepEqual(actual, expected[, message])
+assert.deepStrictEqual(actual, expected[, message])
+assert.doesNotThrow(block[, error][, message])
+assert.equal(actual, expected[, message])
+assert.fail(actual, expected, message, operator)
+assert.ifError(value)
+assert.notDeepEqual(actual, expected[, message])
+assert.notDeepStrictEqual(actual, expected[, message])
+assert.notEqual(actual, expected[, message])
+assert.notStrictEqual(actual, expected[, message])
+assert.ok(value[, message])
+assert.strictEqual(actual, expected[, message])
+assert.throws(block[, error][, message])
+assert(value[, message])
+Assignment of the _ (underscore) variable
+Asynchronous Process Creation
+Asynchronous vs Synchronous Consoles
+Asynchronous vs. Synchronous
+Availability
+Avoiding duplicate warnings
+BADFAMILY
+BADFLAGS
+BADHINTS
+BADNAME
+BADQUERY
+BADRESP
+BADSTR
+birthtime
+blksize
+Breakpoints
+buf.compare(target[, targetStart[, targetEnd[, sourceStart[, sourceEnd]]]])
+buf.copy(target[, targetStart[, sourceStart[, sourceEnd]]])
+buf.entries()
+buf.equals(otherBuffer)
+buf.fill(value[, offset[, end]][, encoding])
+buf.includes(value[, byteOffset][, encoding])
+buf.indexOf(value[, byteOffset][, encoding])
+buf.keys()
+buf.lastIndexOf(value[, byteOffset][, encoding])
+buf.length
+buf.readDoubleBE(offset[, noAssert])
+buf.readDoubleLE(offset[, noAssert])
+buf.readFloatBE(offset[, noAssert])
+buf.readFloatLE(offset[, noAssert])
+buf.readInt16BE(offset[, noAssert])
+buf.readInt16LE(offset[, noAssert])
+buf.readInt32BE(offset[, noAssert])
+buf.readInt32LE(offset[, noAssert])
+buf.readInt8(offset[, noAssert])
+buf.readIntBE(offset, byteLength[, noAssert])
+buf.readIntLE(offset, byteLength[, noAssert])
+buf.readUInt16BE(offset[, noAssert])
+buf.readUInt16LE(offset[, noAssert])
+buf.readUInt32BE(offset[, noAssert])
+buf.readUInt32LE(offset[, noAssert])
+buf.readUInt8(offset[, noAssert])
+buf.readUIntBE(offset, byteLength[, noAssert])
+buf.readUIntLE(offset, byteLength[, noAssert])
+buf.slice([start[, end]])
+buf.swap16()
+buf.swap32()
+buf.swap64()
+buf.toJSON()
+buf.toString([encoding[, start[, end]]])
+buf.values()
+buf.write(string[, offset[, length]][, encoding])
+buf.writeDoubleBE(value, offset[, noAssert])
+buf.writeDoubleLE(value, offset[, noAssert])
+buf.writeFloatBE(value, offset[, noAssert])
+buf.writeFloatLE(value, offset[, noAssert])
+buf.writeInt16BE(value, offset[, noAssert])
+buf.writeInt16LE(value, offset[, noAssert])
+buf.writeInt32BE(value, offset[, noAssert])
+buf.writeInt32LE(value, offset[, noAssert])
+buf.writeInt8(value, offset[, noAssert])
+buf.writeIntBE(value, offset, byteLength[, noAssert])
+buf.writeIntLE(value, offset, byteLength[, noAssert])
+buf.writeUInt16BE(value, offset[, noAssert])
+buf.writeUInt16LE(value, offset[, noAssert])
+buf.writeUInt32BE(value, offset[, noAssert])
+buf.writeUInt32LE(value, offset[, noAssert])
+buf.writeUInt8(value, offset[, noAssert])
+buf.writeUIntBE(value, offset, byteLength[, noAssert])
+buf.writeUIntLE(value, offset, byteLength[, noAssert])
+buf[index]
+Buffer
+Buffer API
+Buffer.from(), Buffer.alloc(), and Buffer.allocUnsafe()
+buffer.INSPECT_MAX_BYTES
+buffer.kMaxLength
+buffer.transcode(source, fromEnc, toEnc)
+Buffering
+Buffers and Character Encodings
+Buffers and ES6 iteration
+Buffers and TypedArray
+Caching
+Cancelling Timers
+Caveats
+certificate.exportChallenge(spkac)
+certificate.exportPublicKey(spkac)
+certificate.verifySpkac(spkac)
+cflags
+Change to asynchronous socket.bind() behavior
+Child Process
+child_process.exec(command[, options][, callback])
+child_process.execFile(file[, args][, options][, callback])
+child_process.execFileSync(file[, args][, options])
+child_process.execSync(command[, options])
+child_process.fork(modulePath[, args][, options])
+child_process.spawn(command[, args][, options])
+child_process.spawnSync(command[, args][, options])
+child.channel
+child.connected
+child.disconnect()
+child.kill([signal])
+child.pid
+child.send(message[, sendHandle[, options]][, callback])
+child.stderr
+child.stdin
+child.stdio
+child.stdout
+Choose One
+cipher.final([output_encoding])
+cipher.getAuthTag()
+cipher.setAAD(buffer)
+cipher.setAutoPadding(auto_padding=true)
+cipher.update(data[, input_encoding][, output_encoding])
+Class Method: Buffer.alloc(size[, fill[, encoding]])
+Class Method: Buffer.allocUnsafe(size)
+Class Method: Buffer.allocUnsafeSlow(size)
+Class Method: Buffer.byteLength(string[, encoding])
+Class Method: Buffer.compare(buf1, buf2)
+Class Method: Buffer.concat(list[, totalLength])
+Class Method: Buffer.from(array)
+Class Method: Buffer.from(arrayBuffer[, byteOffset[, length]])
+Class Method: Buffer.from(buffer)
+Class Method: Buffer.from(string[, encoding])
+Class Method: Buffer.isBuffer(obj)
+Class Method: Buffer.isEncoding(encoding)
+Class Options
+Class Property: Buffer.poolSize
+Class: Buffer
+Class: Certificate
+Class: ChildProcess
+Class: Cipher
+Class: Console
+Class: CryptoStream
+Class: Decipher
+Class: dgram.Socket
+Class: DiffieHellman
+Class: Domain
+Class: ECDH
+Class: Error
+Class: EventEmitter
+Class: fs.FSWatcher
+Class: fs.ReadStream
+Class: fs.Stats
+Class: fs.WriteStream
+Class: Hash
+Class: Hmac
+Class: http.Agent
+Class: http.ClientRequest
+Class: http.IncomingMessage
+Class: http.Server
+Class: http.ServerResponse
+Class: https.Agent
+Class: https.Server
+Class: Immediate
+Class: Interface
+Class: net.Server
+Class: net.Socket
+Class: new StringDecoder([encoding])
+Class: RangeError
+Class: ReferenceError
+Class: REPLServer
+Class: SecurePair
+Class: Sign
+Class: SlowBuffer
+Class: stream.Duplex
+Class: stream.PassThrough
+Class: stream.Readable
+Class: stream.Transform
+Class: stream.Writable
+Class: SyntaxError
+Class: System Error
+Class: Timeout
+Class: tls.Server
+Class: tls.TLSSocket
+Class: tty.ReadStream
+Class: tty.WriteStream
+Class: TypeError
+Class: Verify
+Class: vm.Script
+Class: Worker
+Class: zlib.Deflate
+Class: zlib.DeflateRaw
+Class: zlib.Gunzip
+Class: zlib.Gzip
+Class: zlib.Inflate
+Class: zlib.InflateRaw
+Class: zlib.Unzip
+Class: zlib.Zlib
+clearImmediate(immediate)
+clearImmediate(immediateObject)
+clearInterval(intervalObject)
+clearInterval(timeout)
+cleartext
+clearTimeout(timeout)
+clearTimeout(timeoutObject)
+Client-initiated renegotiation attack mitigation
+Cluster
+cluster.disconnect([callback])
+cluster.fork([env])
+cluster.isMaster
+cluster.isWorker
+cluster.schedulingPolicy
+cluster.settings
+cluster.setupMaster([settings])
+cluster.worker
+cluster.workers
+Command Line Options
+Command reference
+Commands and Special Keys
+Common System Errors
+Compatibility with Older Node.js Versions
+Compressing HTTP requests and responses
+CONNREFUSED
+console
+Console
+console.assert(value[, message][, ...args])
+console.dir(obj[, options])
+console.error([data][, ...args])
+console.info([data][, ...args])
+console.log([data][, ...args])
+console.time(label)
+console.timeEnd(label)
+console.trace(message[, ...args])
+console.warn([data][, ...args])
+Constant	Description
+Constants
+Constructor: new stream.Writable([options])
+Convenience Methods
+Core Modules
+Crypto
+Crypto Constants
+crypto module methods and properties
+crypto.constants
+crypto.createCipher(algorithm, password)
+crypto.createCipheriv(algorithm, key, iv)
+crypto.createCredentials(details)
+crypto.createDecipher(algorithm, password)
+crypto.createDecipheriv(algorithm, key, iv)
+crypto.createDiffieHellman(prime_length[, generator])
+crypto.createDiffieHellman(prime[, prime_encoding][, generator][, generator_encoding])
+crypto.createECDH(curve_name)
+crypto.createHash(algorithm)
+crypto.createHmac(algorithm, key)
+crypto.createSign(algorithm)
+crypto.createVerify(algorithm)
+crypto.DEFAULT_ENCODING
+crypto.fips
+crypto.getCiphers()
+crypto.getCurves()
+crypto.getDiffieHellman(group_name)
+crypto.getHashes()
+crypto.pbkdf2(password, salt, iterations, keylen, digest, callback)
+crypto.pbkdf2Sync(password, salt, iterations, keylen, digest)
+crypto.privateDecrypt(private_key, buffer)
+crypto.privateEncrypt(private_key, buffer)
+crypto.publicDecrypt(public_key, buffer)
+crypto.publicEncrypt(public_key, buffer)
+crypto.randomBytes(size[, callback])
+crypto.setEngine(engine[, flags])
+crypto.timingSafeEqual(a, b)
+CRYPTOPRO
+cryptoStream.bytesWritten
+ctime
+curr
+Custom Evaluation Functions
+Custom inspection functions on Objects
+Customizing REPL Output
+Customizing util.inspect colors
+Cycles
+Debugger
+decipher.final([output_encoding])
+decipher.setAAD(buffer)
+decipher.setAuthTag(buffer)
+decipher.setAutoPadding(auto_padding=true)
+decipher.update(data[, input_encoding][, output_encoding])
+Default Evaluation
+Deprecated APIs
+Design and Features
+Determining if crypto support is unavailable
+dgram module functions
+dgram.createSocket(options[, callback])
+dgram.createSocket(type[, callback])
+dhparam
+diffieHellman.computeSecret(other_public_key[, input_encoding][, output_encoding])
+diffieHellman.generateKeys([encoding])
+diffieHellman.getGenerator([encoding])
+diffieHellman.getPrime([encoding])
+diffieHellman.getPrivateKey([encoding])
+diffieHellman.getPublicKey([encoding])
+diffieHellman.setPrivateKey(private_key[, encoding])
+diffieHellman.setPublicKey(public_key[, encoding])
+diffieHellman.verifyError
+DNS
+dns.getServers()
+dns.lookup()
+dns.lookup(hostname[, options], callback)
+dns.lookupService(address, port, callback)
+dns.resolve(), dns.resolve*() and dns.reverse()
+dns.resolve(hostname[, rrtype], callback)
+dns.resolve4(hostname[, options], callback)
+dns.resolve6(hostname[, options], callback)
+dns.resolveCname(hostname, callback)
+dns.resolveMx(hostname, callback)
+dns.resolveNaptr(hostname, callback)
+dns.resolveNs(hostname, callback)
+dns.resolvePtr(hostname, callback)
+dns.resolveSoa(hostname, callback)
+dns.resolveSrv(hostname, callback)
+dns.resolveTxt(hostname, callback)
+dns.reverse(ip, callback)
+dns.setServers(servers)
+Domain
+domain.add(emitter)
+domain.bind(callback)
+domain.create()
+domain.dispose()
+domain.enter()
+domain.exit()
+domain.intercept(callback)
+domain.members
+domain.remove(emitter)
+domain.run(fn[, ...args])
+dstpath
+dtrace
+Duplex and Transform Streams
+EACCES (Permission denied): An attempt was made to access a file in a way forbidden by its file access permissions.
+EADDRINUSE (Address already in use): An attempt to bind a server (net, http, or https) to a local address failed due to another server on the local system already occupying that address.
+EADDRNOTAVAIL
+EAFNOSUPPORT
+EAGAIN
+EALREADY
+EBADMSG
+EBUSY
+ECANCELED
+ecdh.computeSecret(other_public_key[, input_encoding][, output_encoding])
+ecdh.generateKeys([encoding[, format]])
+ecdh.getPrivateKey([encoding])
+ecdh.getPublicKey([encoding[, format]])
+ecdh.setPrivateKey(private_key[, encoding])
+ecdh.setPublicKey(public_key[, encoding])
+ECHILD
+ECONNABORTED
+ECONNREFUSED (Connection refused): No connection could be made because the target machine actively refused it. This usually results from trying to connect to a service that is inactive on the foreign host.
+ECONNRESET (Connection reset by peer): A connection was forcibly closed by a peer. This normally results from a loss of the connection on the remote socket due to a timeout or reboot. Commonly encountered via the http and net modules.
+EDEADLK
+EDESTADDRREQ
+EDOM
+EDQUOT
+EEXIST (File exists): An existing file was the target of an operation that required that the target not exist.
+EFAULT
+EFBIG
+EHOSTUNREACH
+EIDRM
+EILSEQ
+EINPROGRESS
+EINTR
+EINVAL
+EISCONN
+EISDIR (Is a directory): An operation expected a file, but the given pathname was a directory.
+ELOOP
+EMFILE (Too many open files in system): Maximum number of file descriptors allowable on the system has been reached, and requests for another descriptor cannot be fulfilled until at least one has been closed. This is encountered when opening many files at once in parallel, especially on systems (in particular, OS X) where there is a low file descriptor limit for processes. To remedy a low limit, run ulimit -n 2048 in the same shell that will run the Node.js process.
+emitter.addListener(eventName, listener)
+emitter.emit(eventName[, ...args])
+emitter.eventNames()
+emitter.getMaxListeners()
+emitter.listenerCount(eventName)
+emitter.listeners(eventName)
+emitter.on(eventName, listener)
+emitter.once(eventName, listener)
+emitter.prependListener(eventName, listener)
+emitter.prependOnceListener(eventName, listener)
+emitter.removeAllListeners([eventName])
+emitter.removeListener(eventName, listener)
+emitter.setMaxListeners(n)
+Emitting custom warnings
+EMLINK
+EMSGSIZE
+EMULTIHOP
+ENAMETOOLONG
+enconding
+ENETDOWN
+ENETRESET
+ENETUNREACH
+ENFILE
+ENOBUFS
+ENODATA
+ENODEV
+ENOENT (No such file or directory): Commonly raised by fs operations to indicate that a component of the specified pathname does not exist -- no entity (file or directory) could be found by the given path.
+ENOEXEC
+ENOLCK
+ENOLINK
+ENOMEM
+ENOMSG
+ENOPROTOOPT
+ENOSPC
+ENOSR
+ENOSTR
+ENOSYS
+ENOTCONN
+ENOTDIR (Not a directory): A component of the given pathname existed, but was not a directory as expected. Commonly raised by fs.readdir.
+ENOTEMPTY (Directory not empty): A directory with entries was the target of an operation that requires an empty directory -- usually fs.unlink.
+ENOTSOCK
+ENOTSUP
+ENOTTY
+Environment Variable Options
+Environment Variables
+ENXIO
+EOPNOTSUPP
+EOVERFLOW
+EPERM (Operation not permitted): An attempt was made to perform an operation that requires elevated privileges.
+EPIPE (Broken pipe): A write on a pipe, socket, or FIFO for which there is no process to read the data. Commonly encountered at the net and http layers, indicative that the remote side of the stream being written to has been closed.
+EPROTO
+EPROTONOSUPPORT
+EPROTOTYPE
+ERANGE
+EROFS
+Error codes
+Error Constants
+Error events
+Error Propagation and Interception
+Error.captureStackTrace(targetObject[, constructorOpt])
+error.code
+error.errno
+error.message
+error.stack
+Error.stackTraceLimit
+error.syscall
+Errors
+Errors While Reading
+Errors While Writing
+Escaped Characters
+ESPIPE
+ESRCH
+ESTALE
+ETIME
+ETIMEDOUT (Operation timed out): A connect or send request failed because the connected party did not properly respond after a period of time. Usually encountered by http or net -- often a sign that a socket.end() was not properly called.
+ETXTBSY
+Event: 'abort'
+Event: 'aborted'
+Event: 'beforeExit'
+Event: 'change'
+Event: 'checkContinue'
+Event: 'checkExpectation'
+Event: 'clientError'
+Event: 'close'
+Event: 'connect'
+Event: 'connection'
+Event: 'continue'
+Event: 'data'
+Event: 'disconnect'
+Event: 'drain'
+Event: 'end'
+Event: 'error'
+Event: 'exit'
+Event: 'finish'
+Event: 'fork'
+Event: 'line'
+Event: 'listening'
+Event: 'lookup'
+Event: 'message'
+Event: 'newListener'
+Event: 'newSession'
+Event: 'OCSPRequest'
+Event: 'OCSPResponse'
+Event: 'online'
+Event: 'open'
+Event: 'pause'
+Event: 'pipe'
+Event: 'readable'
+Event: 'rejectionHandled'
+Event: 'removeListener'
+Event: 'request'
+Event: 'reset'
+Event: 'resize'
+Event: 'response'
+Event: 'resume'
+Event: 'resumeSession'
+Event: 'secure'
+Event: 'secureConnect'
+Event: 'secureConnection'
+Event: 'setup'
+Event: 'SIGCONT'
+Event: 'SIGINT'
+Event: 'SIGTSTP'
+Event: 'socket'
+Event: 'timeout'
+Event: 'tlsClientError'
+Event: 'uncaughtException'
+Event: 'unhandledRejection'
+Event: 'unpipe'
+Event: 'upgrade'
+Event: 'warning'
+EventEmitter.defaultMaxListeners
+EventEmitter.listenerCount(emitter, eventName)
+Events
+Events: 'finish' and 'end'
+EWOULDBLOCK
+Example
+Example: Read File Stream Line-by-Line
+Example: Running an HTTP Server within a VM
+Example: sending a server object
+Example: sending a socket object
+Example: Tiny CLI
+Exceptions vs. Errors
+EXDEV
+Executing JavaScript
+Execution control
+Exit Codes
+Explicit Binding
+exports
+exports shortcut
+F_OK	Flag indicating that the file is visible to the calling process.
+File Access Constants
+File Mode Constants
+File Mode Constants#
+File Modules
+File Open Constants
+File Open Constants#
+File System
+File Type Constants
+File Type Constants#
+Filename Argument
+Flushing
+Folders as Modules
+FORMERR
+FS Constants
+fs.access(path[, mode], callback)
+fs.accessSync(path[, mode])
+fs.appendFile(file, data[, options], callback)
+fs.appendFileSync(file, data[, options])
+fs.chmod(path, mode, callback)
+fs.chmodSync(path, mode)
+fs.chown(path, uid, gid, callback)
+fs.chownSync(path, uid, gid)
+fs.close(fd, callback)
+fs.closeSync(fd)
+fs.constants
+fs.createReadStream(path[, options])
+fs.createWriteStream(path[, options])
+fs.exists(path, callback)
+fs.existsSync(path)
+fs.fchmod(fd, mode, callback)
+fs.fchmodSync(fd, mode)
+fs.fchown(fd, uid, gid, callback)
+fs.fchownSync(fd, uid, gid)
+fs.fdatasync(fd, callback)
+fs.fdatasyncSync(fd)
+fs.fstat(fd, callback)
+fs.fstatSync(fd)
+fs.fsync(fd, callback)
+fs.fsyncSync(fd)
+fs.ftruncate(fd, len, callback)
+fs.ftruncateSync(fd, len)
+fs.futimes(fd, atime, mtime, callback)
+fs.futimesSync(fd, atime, mtime)
+fs.lchmod(path, mode, callback)
+fs.lchmodSync(path, mode)
+fs.lchown(path, uid, gid, callback)
+fs.lchownSync(path, uid, gid)
+fs.link(existingPath, newPath, callback)
+fs.linkSync(existingPath, newPath)
+fs.lstat(path, callback)
+fs.lstatSync(path)
+fs.mkdir(path[, mode], callback)
+fs.mkdirSync(path[, mode])
+fs.mkdtemp(prefix[, options], callback)
+fs.mkdtempSync(prefix[, options])
+fs.open(path, flags[, mode], callback)
+fs.openSync(path, flags[, mode])
+fs.read(fd, buffer, offset, length, position, callback)
+fs.readdir(path[, options], callback)
+fs.readdirSync(path[, options])
+fs.readFile(file[, options], callback)
+fs.readFileSync(file[, options])
+fs.readlink(path[, options], callback)
+fs.readlinkSync(path[, options])
+fs.readSync(fd, buffer, offset, length, position)
+fs.realpath(path[, options], callback)
+fs.realpathSync(path[, options])
+fs.rename(oldPath, newPath, callback)
+fs.renameSync(oldPath, newPath)
+fs.rmdir(path, callback)
+fs.rmdirSync(path)
+fs.stat(path, callback)
+fs.statSync(path)
+fs.symlink(target, path[, type], callback)
+fs.symlinkSync(target, path[, type])
+fs.truncate(path, len, callback)
+fs.truncateSync(path, len)
+fs.unlink(path, callback)
+fs.unlinkSync(path)
+fs.unwatchFile(filename[, listener])
+fs.utimes(path, atime, mtime, callback)
+fs.utimesSync(path, atime, mtime)
+fs.watch(filename[, options][, listener])
+fs.watchFile(filename[, options], listener)
+fs.write(fd, buffer[, offset[, length[, position]]], callback)
+fs.write(fd, string[, position[, encoding]], callback)
+fs.writeFile(file, data[, options], callback)
+fs.writeFileSync(file, data[, options])
+fs.writeSync(fd, buffer[, offset[, length[, position]]])
+fs.writeSync(fd, string[, position[, encoding]])
+global
+Global and Local Scope
+Global Objects
+Handling events only once
+hash.digest([encoding])
+hash.update(data[, input_encoding])
+hmac.digest([encoding])
+hmac.update(data[, input_encoding])
+How It Works
+HTTP
+http.createServer([requestListener])
+http.get(options[, callback])
+http.globalAgent
+http.METHODS
+http.request(options[, callback])
+http.STATUS_CODES
+HTTPS
+https.createServer(options[, requestListener])
+https.get(options, callback)
+https.globalAgent
+https.request(options, callback)
+Implementation considerations
+Implementing a Duplex Stream
+Implementing a Readable Stream
+Implementing a Transform Stream
+Implementing a Writable Stream
+Implicit Binding
+Information
+Inodes
+JavaScript Expressions
+Legacy Streams API (pre Node.js v0.10)
+libuv Constants
+listbreakpoints
+Loading from node_modules Folders
+Loading from the global folders
+LOADIPHLPAPI
+malloced
+maxBuffer and Unicode
+Memory Usage Tuning
+message.destroy([error])
+message.headers
+message.httpVersion
+message.method
+message.rawHeaders
+message.rawTrailers
+message.setTimeout(msecs, callback)
+message.socket
+message.statusCode
+message.statusMessage
+message.trailers
+message.url
+Modifying the Default TLS Cipher suite
+module
+Module Caching Caveats
+module.children
+module.exports
+module.filename
+module.id
+module.loaded
+module.parent
+module.require(id)
+Modules
+MSIE
+net
+net.connect(options[, connectListener])
+net.connect(path[, connectListener])
+net.connect(port[, host][, connectListener])
+net.createConnection(options[, connectListener])
+net.createConnection(path[, connectListener])
+net.createConnection(port[, host][, connectListener])
+net.createServer([options][, connectionListener])
+net.isIP(input)
+net.isIPv4(input)
+net.isIPv6(input)
+netmask
+new Agent([options])
+new Buffer(array)
+new Buffer(arrayBuffer[, byteOffset [, length]])
+new Buffer(buffer)
+new Buffer(size)
+new Buffer(string[, encoding])
+new Console(stdout[, stderr])
+new crypto.Certificate()
+new Error(message)
+new net.Socket([options])
+new SlowBuffer(size)
+new stream.Duplex(options)
+new stream.Readable([options])
+new stream.Transform([options])
+new tls.TLSSocket(socket[, options])
+new vm.Script(code, options)
+nlink
+NODATA
+NODE_DEBUG=module[,…]
+NODE_DISABLE_COLORS=1
+NODE_EXTRA_CA_CERTS=file
+NODE_ICU_DATA=file
+NODE_PATH=path[:…]
+NODE_PRESERVE_SYMLINKS=1
+NODE_REPL_HISTORY_FILE
+NODE_REPL_HISTORY=file
+NODE_TTY_UNSAFE_ASYNC=1
+Node.js Crypto Constants
+Node.js style callbacks
+NOMEM
+NONAME
+Notes
+NOTFOUND
+NOTIMP
+NOTINITIALIZED
+O_APPEND	Flag indicating that data will be appended to the end of the file.
+O_CREAT	Flag indicating to create the file if it does not already exist.
+O_DIRECT	When set, an attempt will be made to minimize caching effects of file I/O.
+O_DIRECTORY	Flag indicating that the open should fail if the path is not a directory.
+O_EXCL	Flag indicating that opening a file should fail if the O_CREAT flag is set and the file already exists.
+O_NOATIME	Flag indicating reading accesses to the file system will no longer result in an update to the atime information associated with the file. This flag is available on Linux operating systems only.
+O_NOCTTY	Flag indicating that if path identifies a terminal device, opening the path shall not cause that terminal to become the controlling terminal for the process (if the process does not already have one).
+O_NOFOLLOW	Flag indicating that the open should fail if the path is a symbolic link.
+O_NONBLOCK	Flag indicating to open the file in non-blocking mode when possible.
+O_RDONLY	Flag indicating to open a file for read-only access.
+O_RDWR	Flag indicating to open a file for read-write access.
+O_SYMLINK	Flag indicating to open the symbolic link itself rather than the resource it is pointing to.
+O_SYNC	Flag indicating that the file is opened for synchronous I/O.
+O_TRUNC	Flag indicating that if the file exists and is a regular file, and the file is opened successfully for write access, its length shall be truncated to zero.
+O_WRONLY	Flag indicating to open a file for write-only access.
+Object Mode
+Object Mode Duplex Streams
+OCSP
+OpenSSL Engine Constants
+OpenSSL Options
+Options
+options.detached
+options.stdio
+Organization of this Document
+OS
+OS Constants
+os.arch()
+os.constants
+os.cpus()
+os.endianness()
+os.EOL
+os.freemem()
+os.homedir()
+os.hostname()
+os.loadavg()
+os.networkInterfaces()
+os.platform()
+os.release()
+os.tmpdir()
+os.totalmem()
+os.type()
+os.uptime()
+os.userInfo([options])
+Other OpenSSL Constants
+Passing arguments and this to listeners
+Path
+path.basename(path[, ext])
+path.delimiter
+path.dirname(path)
+path.extname(path)
+path.format(pathObject)
+path.isAbsolute(path)
+path.join([...paths])
+path.normalize(path)
+path.parse(path)
+path.posix
+path.relative(from, to)
+path.resolve([...paths])
+path.sep
+path.win32
+Perfect Forward Secrecy
+Persistent History
+PKEY
+POSIX Error Constants
+prepended
+process
+Process Events
+process.abort()
+process.arch
+process.argv
+process.argv0
+process.channel
+process.chdir(directory)
+process.config
+process.connected
+process.cpuUsage([previousValue])
+process.cwd()
+process.disconnect()
+process.emitWarning(warning[, name][, ctor])
+process.env
+process.execArgv
+process.execPath
+process.exit([code])
+process.exitCode
+process.getegid()
+process.geteuid()
+process.getgid()
+process.getgroups()
+process.getuid()
+process.hrtime([time])
+process.initgroups(user, extra_group)
+process.kill(pid[, signal])
+process.mainModule
+process.memoryUsage()
+process.nextTick(callback[, ...args])
+process.pid
+process.platform
+process.release
+process.send(message[, sendHandle[, options]][, callback])
+process.setegid(id)
+process.seteuid(id)
+process.setgid(id)
+process.setgroups(groups)
+process.setuid(id)
+process.stderr
+process.stdin
+process.stdout
+process.title
+process.umask([mask])
+process.uptime()
+process.version
+process.versions
+punycode
+punycode.decode(string)
+punycode.encode(string)
+punycode.toASCII(domain)
+punycode.toUnicode(domain)
+punycode.ucs2
+punycode.ucs2.decode(string)
+punycode.ucs2.encode(codePoints)
+punycode.version
+Query String
+querystring.escape(str)
+querystring.parse(str[, sep[, eq[, options]]])
+querystring.stringify(obj[, sep[, eq[, options]]])
+querystring.unescape(str)
+R_OK	Flag indicating that the file can be read by the calling process.
+rdev
+Readable Streams
+readable._read(size)
+readable.isPaused()
+readable.pause()
+readable.pipe(destination[, options])
+readable.push('')
+readable.push(chunk[, encoding])
+readable.read([size])
+readable.read(0)
+readable.resume()
+readable.setEncoding(encoding)
+readable.unpipe([destination])
+readable.unshift(chunk)
+readable.wrap(stream)
+Readline
+readline.clearLine(stream, dir)
+readline.clearScreenDown(stream)
+readline.createInterface(options)
+readline.cursorTo(stream, x, y)
+readline.emitKeypressEvents(stream[, interface])
+readline.moveCursor(stream, dx, dy)
+readStream.bytesRead
+readStream.isRaw
+readStream.path
+readStream.setRawMode(mode)
+Recent ECDH Changes
+Recoverable Errors
+RENEG
+REPL
+repl.start([options])
+replServer.defineCommand(keyword, cmd)
+replServer.displayPrompt([preserveCursor])
+request.abort()
+request.end([data][, encoding][, callback])
+request.flushHeaders()
+request.setNoDelay([noDelay])
+request.setSocketKeepAlive([enable][, initialDelay])
+request.setTimeout(timeout[, callback])
+request.write(chunk[, encoding][, callback])
+require.cache
+require.extensions
+require.resolve()
+require()
+response.addTrailers(headers)
+response.end([data][, encoding][, callback])
+response.finished
+response.getHeader(name)
+response.headersSent
+response.removeHeader(name)
+response.sendDate
+response.setHeader(name, value)
+response.setTimeout(msecs, callback)
+response.statusCode
+response.statusMessage
+response.write(chunk[, encoding][, callback])
+response.writeContinue()
+response.writeHead(statusCode[, statusMessage][, headers])
+REUSEADDR
+rinfo
+rl.close()
+rl.pause()
+rl.prompt([preserveCursor])
+rl.question(query, callback)
+rl.resume()
+rl.setPrompt(prompt)
+rl.write(data[, key])
+roundtrips
+S_IFBLK	File type constant for a block-oriented device file.
+S_IFCHR	File type constant for a character-oriented device file.
+S_IFDIR	File type constant for a directory.
+S_IFIFO	File type constant for a FIFO/pipe.
+S_IFLNK	File type constant for a symbolic link.
+S_IFMT	Bit mask used to extract the file type code.
+S_IFREG	File type constant for a regular file.
+S_IFSOCK	File type constant for a socket.
+S_IRGRP	File mode indicating readable by group.
+S_IROTH	File mode indicating readable by others.
+S_IRUSR	File mode indicating readable by owner.
+S_IRWXG	File mode indicating readable, writable and executable by group.
+S_IRWXO	File mode indicating readable, writable and executable by others.
+S_IRWXU	File mode indicating readable, writable and executable by owner.
+S_IWGRP	File mode indicating writable by group.
+S_IWOTH	File mode indicating writable by others.
+S_IWUSR	File mode indicating writable by owner.
+S_IXGRP	File mode indicating executable by group.
+S_IXOTH	File mode indicating executable by others.
+S_IXUSR	File mode indicating executable by owner.
+Scheduling Timers
+script.runInContext(contextifiedSandbox[, options])
+script.runInNewContext([sandbox][, options])
+script.runInThisContext([options])
+server.addContext(hostname, context)
+server.address()
+server.close([callback])
+server.connections
+server.getConnections(callback)
+server.getTicketKeys()
+server.listen([port][, hostname][, backlog][, callback])
+server.listen(handle[, backlog][, callback])
+server.listen(handle[, callback])
+server.listen(options[, callback])
+server.listen(path[, backlog][, callback])
+server.listen(path[, callback])
+server.listen(port[, host][, backlog][, callback])
+server.listen(port[, hostname][, callback])
+server.listening
+server.maxConnections
+server.maxHeadersCount
+server.ref()
+server.setTicketKeys(keys)
+server.setTimeout(msecs, callback)
+server.timeout
+server.unref()
+servername
+SERVFAIL
+SESS
+setImmediate(callback[, ...args])
+setInterval(callback, delay[, ...args])
+setTimeout(callback, delay[, ...args])
+SIGABRT
+SIGALRM
+SIGBREAK
+SIGBUS
+SIGCHLD
+SIGCONT
+SIGFPE
+SIGHUP
+SIGILL
+Sigint
+SIGINT
+SIGIO
+SIGIOT
+SIGKILL
+sign.sign(private_key[, output_format])
+sign.update(data[, input_encoding])
+Signal Constants
+Signal Events
+SIGPIPE
+SIGPOLL
+SIGPROF
+SIGPWR
+SIGQUIT
+SIGSEGV
+SIGSTKFLT
+SIGSTOP
+SIGSYS
+SIGTERM
+SIGTRAP
+SIGTSTP
+SIGTTIN
+SIGTTOU
+SIGUNUSED
+SIGURG
+SIGUSR
+SIGVTALRM
+SIGWINCH
+SIGXCPU
+SIGXFSZ
+Simplified Construction
+socket.addMembership(multicastAddress[, multicastInterface])
+socket.address()
+socket.bind([port][, address][, callback])
+socket.bind(options[, callback])
+socket.bufferSize
+socket.bytesRead
+socket.bytesWritten
+socket.close([callback])
+socket.connect(options[, connectListener])
+socket.connect(path[, connectListener])
+socket.connect(port[, host][, connectListener])
+socket.connecting
+socket.destroy([exception])
+socket.destroyed
+socket.dropMembership(multicastAddress[, multicastInterface])
+socket.end([data][, encoding])
+socket.localAddress
+socket.localPort
+socket.pause()
+socket.ref()
+socket.remoteAddress
+socket.remoteFamily
+socket.remotePort
+socket.resume()
+socket.send(msg, [offset, length,] port, address[, callback])
+socket.setBroadcast(flag)
+socket.setEncoding([encoding])
+socket.setKeepAlive([enable][, initialDelay])
+socket.setMulticastLoopback(flag)
+socket.setMulticastTTL(ttl)
+socket.setNoDelay([noDelay])
+socket.setTimeout(timeout[, callback])
+socket.setTTL(ttl)
+socket.unref()
+socket.write(data[, encoding][, callback])
+Spawning .bat and .cmd files on Windows
+srcpath
+SSLEAY
+SSLREF
+SSLV
+Starting multiple REPL instances against a single running instance
+Stat Time Values
+Stepping
+Stream
+StringDecoder
+stringDecoder.end([buffer])
+stringDecoder.write(buffer)
+Support for weak or compromised algorithms
+Supported getaddrinfo flags
+Synchronous Process Creation
+Synopsis
+System Errors
+The --zero-fill-buffers command line option
+The following constants are meant for use with fs.open().
+The following constants are meant for use with the fs.Stats object's mode property for determining a file's type.
+The following constants are meant for use with the fs.Stats object's mode property for determining the access permissions for a file.
+The module Object
+The module wrapper
+The Node.js REPL
+Three States
+timeout.ref()
+timeout.unref()
+Timers
+TLS (SSL)
+tls.connect(options[, callback])
+tls.connect(path[, options][, callback])
+tls.connect(port[, host][, options][, callback])
+tls.createSecureContext(options)
+tls.createSecurePair([context][, isServer][, requestCert][, rejectUnauthorized][, options])
+tls.createServer([options][, secureConnectionListener])
+tls.DEFAULT_ECDH_CURVE
+tls.getCiphers()
+TLS/SSL Concepts
+TLSEXT
+tlsSocket.address()
+tlsSocket.authorizationError
+tlsSocket.authorized
+tlsSocket.encrypted
+tlsSocket.getCipher()
+tlsSocket.getEphemeralKeyInfo()
+tlsSocket.getPeerCertificate([ detailed ])
+tlsSocket.getProtocol()
+tlsSocket.getSession()
+tlsSocket.getTLSTicket()
+tlsSocket.localAddress
+tlsSocket.localPort
+tlsSocket.remoteAddress
+tlsSocket.remoteFamily
+tlsSocket.remotePort
+tlsSocket.renegotiate(options, callback)
+tlsSocket.setMaxSendFragment(size)
+transform._flush(callback)
+transform._transform(chunk, encoding, callback)
+TTY
+TTY Terminals and process.stdout
+tty.isatty(fd)
+Two Modes
+Types of Streams
+UDP / Datagram Sockets
+URL
+URL Strings and URL Objects
+url.format(urlObject)
+url.parse(urlString[, parseQueryString[, slashesDenoteHost]])
+url.resolve(from, to)
+urlObject.auth
+urlObject.hash
+urlObject.host
+urlObject.hostname
+urlObject.href
+urlObject.path
+urlObject.pathname
+urlObject.port
+urlObject.protocol
+urlObject.query
+urlObject.search
+urlObject.slashes
+Use of the completer Function
+Using the Node.js REPL with advanced line-editors
+util
+util._extend(target, source)
+util.debug(string)
+util.debuglog(section)
+util.deprecate(function, string)
+util.error([...strings])
+util.format(format[, ...args])
+util.inherits(constructor, superConstructor)
+util.inspect.custom
+util.inspect.defaultOptions
+util.inspect(object[, options])
+util.isArray(object)
+util.isBoolean(object)
+util.isBuffer(object)
+util.isDate(object)
+util.isError(object)
+util.isFunction(object)
+util.isNull(object)
+util.isNullOrUndefined(object)
+util.isNumber(object)
+util.isObject(object)
+util.isPrimitive(object)
+util.isRegExp(object)
+util.isString(object)
+util.isSymbol(object)
+util.isUndefined(object)
+util.log(string)
+util.print([...strings])
+util.puts([...strings])
+V8
+V8 Inspector Integration for Node.js
+v8.getHeapSpaceStatistics()
+v8.getHeapStatistics()
+v8.setFlagsFromString(string)
+Various
+verifier.update(data[, input_encoding])
+verifier.verify(object, signature[, signature_format])
+vm.createContext([sandbox])
+vm.isContext(sandbox)
+vm.runInContext(code, contextifiedSandbox[, options])
+vm.runInDebugContext(code)
+vm.runInNewContext(code[, sandbox][, options])
+vm.runInThisContext(code[, options])
+W_OK	Flag indicating that the file can be written by the calling process.
+Warning: Don't Ignore Errors!
+Warning: Using 'uncaughtException' correctly
+watcher.close()
+Watchers
+What does it mean to "contextify" an object?
+What makes Buffer.allocUnsafe() and Buffer.allocUnsafeSlow() "unsafe"?
+Windows Specific Error Constants
+Windows vs. POSIX
+worker.disconnect()
+worker.exitedAfterDisconnect
+worker.id
+worker.isConnected()
+worker.isDead()
+worker.kill([signal='SIGTERM'])
+worker.process
+worker.send(message[, sendHandle][, callback])
+worker.suicide
+Writable Streams
+writable._write(chunk, encoding, callback)
+writable._writev(chunks, callback)
+writable.cork()
+writable.end([chunk][, encoding][, callback])
+writable.setDefaultEncoding(encoding)
+writable.uncork()
+writable.write(chunk[, encoding][, callback])
+Writeable
+writeStream.bytesWritten
+writeStream.columns
+writeStream.path
+writeStream.rows
+WSAEACCES
+WSAEADDRINUSE
+WSAEADDRNOTAVAIL
+WSAEAFNOSUPPORT
+WSAEALREADY
+WSAEBADF
+WSAECANCELLED
+WSAECONNABORTED
+WSAECONNREFUSED
+WSAECONNRESET
+WSAEDESTADDRREQ
+WSAEDISCON
+WSAEDQUOT
+WSAEFAULT
+WSAEHOSTDOWN
+WSAEHOSTUNREACH
+WSAEINPROGRESS
+WSAEINTR
+WSAEINVAL
+WSAEINVALIDPROCTABLE
+WSAEINVALIDPROVIDER
+WSAEISCONN
+WSAELOOP
+WSAEMFILE
+WSAEMSGSIZE
+WSAENAMETOOLONG
+WSAENETDOWN
+WSAENETRESET
+WSAENETUNREACH
+WSAENOBUFS
+WSAENOMORE
+WSAENOPROTOOPT
+WSAENOTCONN
+WSAENOTEMPTY
+WSAENOTSOCK
+WSAEOPNOTSUPP
+WSAEPFNOSUPPORT
+WSAEPROCLIM
+WSAEPROTONOSUPPORT
+WSAEPROTOTYPE
+WSAEPROVIDERFAILEDINIT
+WSAEREFUSED
+WSAEREMOTE
+WSAESHUTDOWN
+WSAESOCKTNOSUPPORT
+WSAESTALE
+WSAETIMEDOUT
+WSAETOOMANYREFS
+WSAEUSERS
+WSAEWOULDBLOCK
+WSANOTINITIALISED
+WSASERVICE
+WSASYSCALLFAILURE
+WSASYSNOTREADY
+WSATYPE
+WSAVERNOTSUPPORTED
+X_OK	Flag indicating that the file can be executed by the calling process.
+Zlib
+zlib.constants
+zlib.createDeflate([options])
+zlib.createDeflateRaw([options])
+zlib.createGunzip([options])
+zlib.createGzip([options])
+zlib.createInflate([options])
+zlib.createInflateRaw([options])
+zlib.createUnzip([options])
+zlib.deflate(buf[, options], callback)
+zlib.deflateRaw(buf[, options], callback)
+zlib.deflateRawSync(buf[, options])
+zlib.deflateSync(buf[, options])
+zlib.flush([kind], callback)
+zlib.gunzip(buf[, options], callback)
+zlib.gunzipSync(buf[, options])
+zlib.gzip(buf[, options], callback)
+zlib.gzipSync(buf[, options])
+zlib.inflate(buf[, options], callback)
+zlib.inflateRaw(buf[, options], callback)
+zlib.inflateRawSync(buf[, options])
+zlib.inflateSync(buf[, options])
+zlib.params(level, strategy, callback)
+zlib.reset()
+zlib.unzip(buf[, options], callback)
+zlib.unzipSync(buf[, options])

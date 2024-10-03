@@ -1,0 +1,18 @@
+# yaml-language-server: $schema=https://raw.githubusercontent.com/streetsidesoftware/cspell/main/packages/cspell-tools/cspell-tools.config.schema.json
+
+targets:
+  - name: en_GB
+    targetDirectory: .
+    compress: false
+    format: trie3
+    sources:
+      - src/additional_words.txt
+      - src/aoo-mozilla-en-dict/en-GB.dic
+      - src/hunspell/en_GB.dic
+      - src/wordsEnGb.txt
+      - node_modules/@cspell/dict-en-shared/src/shared-additional-words.txt
+    sort: true
+    generateNonStrict: true
+    excludeWordsFrom:
+      - node_modules/@cspell/dict-en-shared/src/exclude-words.txt
+checksumFile: true

@@ -1,0 +1,32 @@
+{
+    "id": "elisp",
+    "version": "0.2",
+    "name": "Emacs Lisp",
+    "description": "Emacs Lisp dictionary for cspell.",
+    "readonly": true,
+    "dictionaryDefinitions": [
+        {
+            "name": "elisp",
+            "path": "./dict/elisp.txt",
+            "description": "Emacs Lisp dictionary for cspell."
+        }
+    ],
+    "dictionaries": [],
+    "languageSettings": [
+        {
+            "languageId": "elisp,lisp",
+            "locale": "*",
+            "includeRegExpList": [],
+            "ignoreRegExpList": [],
+            "patterns": [],
+            "dictionaries": ["elisp"],
+            "dictionaryDefinitions": []
+        }
+    ],
+    "overrides": [
+        {
+            "filename": ["**/*.{el,lisp,lsp,l}"],
+            "dictionaries": ["elisp"]
+        }
+    ]
+}

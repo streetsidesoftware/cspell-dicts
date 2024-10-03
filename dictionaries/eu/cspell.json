@@ -1,0 +1,16 @@
+{
+    "version": "0.2",
+    "files": [
+        "**/*.{md,txt}"
+    ],
+    "ignorePaths": [
+        "src/**",
+        "*.trie"
+    ],
+    "dictionaries": [
+        "eu"
+    ],
+    "import": [
+        "./cspell-ext.json"
+    ]
+}

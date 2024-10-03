@@ -1,0 +1,12 @@
+{
+    "version": "0.2",
+    "files": ["**/*.{md,txt,sql}"],
+    "dictionaries": [],
+    "overrides": [
+        {
+            "filename": "*.txt",
+            "dictionaries": ["sql"]
+        }
+    ],
+    "import": ["./cspell-ext.json"]
+}

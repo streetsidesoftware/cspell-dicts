@@ -1,0 +1,27 @@
+{
+    "id": "fsharp",
+    "version": "0.2",
+    "name": "f#",
+    "description": "F# dictionary for cspell.",
+    "readonly": true,
+    "dictionaryDefinitions": [
+        {
+            "name": "fsharp",
+            "path": "./dict/fsharp.txt",
+            "description": "F# dictionary for cspell."
+        }
+    ],
+    "dictionaries": [],
+    "enableFiletypes": ["fsharp"],
+    "languageSettings": [
+        {
+            "languageId": "fsharp",
+            "locale": "*",
+            "includeRegExpList": [],
+            "ignoreRegExpList": [],
+            "patterns": [],
+            "dictionaries": ["fsharp", "dotnet"],
+            "dictionaryDefinitions": []
+        }
+    ]
+}

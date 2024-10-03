@@ -1,0 +1,23 @@
+{
+  "name": "@internal/npm-scripts",
+  "version": "1.0.0",
+  "description": "Scripts used with maintaining the dictionaries.",
+  "private": true,
+  "type": "module",
+  "bin": {
+    "update-npm-package-list": "update-npm-package-list.mjs"
+  },
+  "scripts": {
+    "test": "echo \"Error: no test specified\""
+  },
+  "keywords": [],
+  "author": "",
+  "license": "MIT",
+  "dependencies": {
+    "@cspell/normalize-json": "^8.14.4",
+    "csv-stringify": "^6.5.1"
+  },
+  "engines": {
+    "node": ">=18.0.0"
+  }
+}

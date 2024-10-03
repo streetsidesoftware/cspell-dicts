@@ -1,0 +1,21 @@
+{
+    "id": "sr-latn",
+    "version": "0.2",
+    "name": "Serbian (Latin)",
+    "description": "Serbian (Latin) dictionary for cspell.",
+    "readonly": true,
+    "dictionaryDefinitions": [
+        {
+            "name": "sr-latn",
+            "path": "./dict/sr-latn.trie",
+            "description": "Serbian (Latin) dictionary for cspell."
+        }
+    ],
+    "languageSettings": [
+        {
+            "languageId": "*",
+            "locale": "sr,sr-Latn",
+            "dictionaries": ["sr-latn"]
+        }
+    ]
+}

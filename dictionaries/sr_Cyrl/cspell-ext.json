@@ -1,0 +1,21 @@
+{
+    "id": "sr-cyrl",
+    "version": "0.2",
+    "name": "Serbian (Cyrillic)",
+    "description": "Serbian (Cyrillic) dictionary for cspell.",
+    "readonly": true,
+    "dictionaryDefinitions": [
+        {
+            "name": "sr-cyrl",
+            "path": "./dict/sr-cyrl.trie",
+            "description": "Serbian (Cyrillic) dictionary for cspell."
+        }
+    ],
+    "languageSettings": [
+        {
+            "languageId": "*",
+            "locale": "sr,sr-Cyrl",
+            "dictionaries": ["sr-cyrl"]
+        }
+    ]
+}

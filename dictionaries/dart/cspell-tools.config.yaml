@@ -1,0 +1,13 @@
+# yaml-language-server: $schema=https://raw.githubusercontent.com/streetsidesoftware/cspell/main/packages/cspell-tools/cspell-tools.config.schema.json
+
+targets:
+  - name: dart
+    targetDirectory: .
+    compress: true
+    format: plaintext
+    sources:
+      - src/dart.txt
+      - src/dart-common.txt
+      - src/dart-pubdev.txt
+      - src/dart-wxyz.txt
+    sort: true

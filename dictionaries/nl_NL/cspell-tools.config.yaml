@@ -1,0 +1,13 @@
+# yaml-language-server: $schema=https://raw.githubusercontent.com/streetsidesoftware/cspell/main/packages/cspell-tools/cspell-tools.config.schema.json
+
+targets:
+  - name: Dutch
+    targetDirectory: .
+    compress: false
+    format: trie3
+    sources:
+      - src/additional_words.txt
+      - src/hunspell/index.dic
+    sort: true
+    generateNonStrict: true
+checksumFile: true

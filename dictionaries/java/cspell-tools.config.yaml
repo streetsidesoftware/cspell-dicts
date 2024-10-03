@@ -1,0 +1,19 @@
+# yaml-language-server: $schema=https://raw.githubusercontent.com/streetsidesoftware/cspell/main/packages/cspell-tools/cspell-tools.config.schema.json
+
+targets:
+  - name: java
+    sources:
+      - src/java.txt
+      - src/additional-terms.txt
+      - src/java-terms.txt
+    format: trie3
+    targetDirectory: './dict'
+    generateNonStrict: false
+  # - name: java
+  #   sources:
+  #     - src/java.txt
+  #     - src/additional-terms.txt
+  #     - src/java-terms.txt
+  #   format: plaintext
+  #   targetDirectory: "."
+  #   generateNonStrict: false

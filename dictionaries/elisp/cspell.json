@@ -1,0 +1,11 @@
+{
+    "version": "0.2",
+    "files": [
+        "**/*.{md,txt}"
+    ],
+    "import": [
+        "./cspell-ext.json"
+    ],
+    "enableFiletypes": ["elisp", "lisp"],
+    "overrides": [{ "filename": "**/*.{md,txt}", "dictionaries": ["elisp"]}]
+}

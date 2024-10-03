@@ -1,0 +1,51 @@
+{
+    "id": "de-at",
+    "version": "0.2",
+    "name": "Austrian German Dictionary",
+    "description": "Austrian German (de-AT) Dictionary.",
+    "readonly": true,
+    "dictionaryDefinitions": [
+        {
+            "name": "de-at",
+            "path": "./de_AT.trie.gz",
+            "description": "Austrian German (de-AT) Dictionary.",
+            "repMap": [
+                ["ae", "ä"],
+                ["oe", "ö"],
+                ["ue", "ü"],
+                ["Ae|AE", "Ä"],
+                ["Oe|OE", "Ö"],
+                ["Ue|UE", "Ü"],
+                ["ss", "ß"]
+            ],
+            "dictionaryInformation": {
+                "locale": "de-AT",
+                "alphabet": "a-zA-ZäüößáéêàâñÄÜÖÉ",
+                "suggestionEditCosts": [
+                    {
+                        "map": "(ae)ä|(oe)ö|(ue)ü(Ae)Ä|(Oe)Ö|(Ue)Ü|(ss)ß",
+                        "replace": 0
+                    },
+                    {
+                        "map": "eéèëê|aáà|iíìïî|oóòöô|uüúùû|(ij)(ĳ)(IJ)(Ĳ)",
+                        "replace": 1
+                    },
+                    {
+                        "map": "(ah)a|(ch)k|(ee)e|(eh)e|(ph)f|(th)t|dt|i(ie)|o(oh)|r(rh)|s(ss)|t(th)",
+                        "replace": 50
+                    }
+                ]
+            }
+        }
+    ],
+    "dictionaries": [],
+    "languageSettings": [
+        {
+            "languageId": "*",
+            "locale": "de_AT",
+            "caseSensitive": true,
+            "dictionaries": ["de-at"],
+            "dictionaryDefinitions": []
+        }
+    ]
+}

@@ -1,0 +1,35 @@
+{
+    "version": "0.2",
+    "files": [
+        "**/*.{md,txt}"
+    ],
+    "import": [
+        "./cspell-ext.json"
+    ],
+    "ignorePaths": [
+        "src/hunspell"
+    ],
+    "ignoreWords": [
+        "frami",
+        "Huggenberger",
+        "igerman",
+        "Naber",
+        "zeiler",
+        "Zäüößáéêàâñ",
+        "ÄÜÖÉ",
+        "eéèëê",
+        "iíìïî",
+        "oóòöô",
+        "uüúùû",
+        "Zeiler"
+    ],
+    "overrides": [
+        {
+            "filename": "samples/**/*.md",
+            "caseSensitive": true,
+            "dictionaries": [
+                "de-at"
+            ]
+        }
+    ]
+}

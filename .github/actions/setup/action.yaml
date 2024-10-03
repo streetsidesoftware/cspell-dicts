@@ -1,0 +1,18 @@
+name: setup_node_and_install
+description: Setup Node, install Pnpm, and `pnpm install`
+inputs:
+  node-version:
+    required: false
+    description: The version of Node to use.
+    default: '18.x'
+runs:
+  using: 'composite'
+  steps:
+    - name: Quick Setup
+      uses: ./.github/actions/quick-setup
+      with:
+        node-version: ${{ inputs.node-version }}
+
+    - name: Install
+      run: pnpm i
+      shell: bash

@@ -1,0 +1,23 @@
+{
+    "id": "sl-si",
+    "version": "0.2",
+    "name": "Slovenian",
+    "description": "Slovenian dictionary for CSpell.",
+    "readonly": true,
+    "dictionaryDefinitions": [
+        {
+            "name": "sl-si",
+            "path": "./sl_si.trie.gz",
+            "description": "Slovenian dictionary for CSpell."
+        }
+    ],
+    "dictionaries": [],
+    "languageSettings": [
+        {
+            "languageId": "*",
+            "locale": "sl,sl-SI",
+            "caseSensitive": true,
+            "dictionaries": ["sl-si"]
+        }
+    ]
+}

@@ -1,0 +1,32 @@
+{
+    "id": "data-science",
+    "version": "0.2",
+    "name": "Data Science",
+    "description": "Data Science dictionary for cspell.",
+    "readonly": true,
+    "dictionaryDefinitions": [
+        {
+            "name": "data-science",
+            "path": "./dict/data-science.txt",
+            "description": "Data Science Terms dictionary for cspell."
+        },
+        {
+            "name": "data-science-models",
+            "path": "./dict/data-science-models.txt",
+            "description": "Data Science Models dictionary for cspell."
+        },
+        {
+            "name": "data-science-tools",
+            "path": "./dict/data-science-tools.txt",
+            "description": "Data Science Tools dictionary for cspell."
+        }
+    ],
+    "dictionaries": [],
+    "languageSettings": [
+        {
+            "languageId": "python",
+            "locale": "*",
+            "dictionaries": ["data-science", "data-science-models", "data-science-tools"]
+        }
+    ]
+}

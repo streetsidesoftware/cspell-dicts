@@ -1,0 +1,34 @@
+{
+  "name": "dictionary-es",
+  "version": "4.0.0",
+  "description": "Spanish spelling dictionary",
+  "license": "(GPL-3.0 OR LGPL-3.0 OR MPL-1.1)",
+  "keywords": [
+    "dictionary",
+    "es",
+    "hunspell",
+    "myspell",
+    "spanish",
+    "spelling"
+  ],
+  "repository": "https://github.com/wooorm/dictionaries/tree/main/dictionaries/es",
+  "bugs": "https://github.com/wooorm/dictionaries/issues",
+  "funding": {
+    "type": "github",
+    "url": "https://github.com/sponsors/wooorm"
+  },
+  "author": "Titus Wormer <tituswormer@gmail.com> (https://wooorm.com)",
+  "contributors": [
+    "Titus Wormer <tituswormer@gmail.com> (https://wooorm.com)",
+    "Thomas Beverley <tom.beverley101@gmail.com>"
+  ],
+  "type": "module",
+  "exports": "./index.js",
+  "files": [
+    "index.aff",
+    "index.d.ts",
+    "index.dic",
+    "index.js",
+    "index.map"
+  ]
+}

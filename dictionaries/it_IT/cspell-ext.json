@@ -1,0 +1,30 @@
+{
+    "id": "it-it",
+    "name": "Italian",
+    "description": "Italian dictionary for cspell.",
+    "readonly": true,
+    "dictionaryDefinitions": [
+        {
+            "name": "it-it",
+            "path": "./dict/it-it.trie",
+            "description": "Italian dictionary for cspell.",
+            "dictionaryInformation": {
+                "locale": "it-IT",
+                "alphabet": "a-zA-ZàòéùèìÙÀÒÈÌÉ",
+                "suggestionEditCosts": [
+                    {
+                        "map": "AÀÂÄÅ|CÇ|EÈÉÊË|IÎÏ|OÔÖ|UÙÛÜ|aàáâãä|(ae)æ|cç|eèéêë|iíîï|nñń|oóôö|uùûü|yÿ|Œ(OE)|sś|(oe)œ",
+                        "replace": 1
+                    }
+                ]
+            }
+        }
+    ],
+    "languageSettings": [
+        {
+            "languageId": "*",
+            "locale": "it,it-IT",
+            "dictionaries": ["it-it"]
+        }
+    ]
+}

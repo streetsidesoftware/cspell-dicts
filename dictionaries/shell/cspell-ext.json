@@ -1,0 +1,31 @@
+{
+    "id": "shellscript",
+    "name": "ShellScript",
+    "description": "ShellScript dictionary for cspell.",
+    "readonly": true,
+    "dictionaryDefinitions": [
+        {
+            "name": "bash",
+            "path": "./dict/bash-words.txt",
+            "description": "Bash dictionary for cspell."
+        },
+        {
+            "name": "shellscript",
+            "path": "./dict/shell-all-words.txt",
+            "description": "ShellScript dictionary for cspell."
+        }
+    ],
+    "dictionaries": [],
+    "languageSettings": [
+        {
+            "languageId": "shellscript",
+            "locale": "*",
+            "dictionaries": ["shellscript"]
+        },
+        {
+            "languageId": "bashscript",
+            "locale": "*",
+            "dictionaries": ["bash"]
+        }
+    ]
+}

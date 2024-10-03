@@ -1,0 +1,22 @@
+{
+    "id": "r",
+    "version": "0.2",
+    "name": "R",
+    "description": "R dictionary for cspell.",
+    "readonly": true,
+    "dictionaryDefinitions": [
+        {
+            "name": "r",
+            "path": "./r.txt.gz",
+            "description": "R dictionary for cspell."
+        }
+    ],
+    "languageSettings": [
+        {
+            "languageId": "r",
+            "locale": "*",
+            "dictionaries": ["r"]
+        }
+    ],
+    "enableFiletypes": ["r"]
+}

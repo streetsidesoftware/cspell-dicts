@@ -1,0 +1,51 @@
+{
+  "name": "@cspell/dict-pt-br",
+  "version": "2.3.0",
+  "description": "Brazilian Portuguese dictionary for cspell.",
+  "publishConfig": {
+    "access": "public"
+  },
+  "exports": {
+    ".": "./cspell-ext.json",
+    "./cspell": "./cspell-ext.json",
+    "./cspell-ext.json": "./cspell-ext.json"
+  },
+  "scripts": {
+    "build": "pnpm run compile",
+    "sync": "pnpm cpy \"node_modules/dictionary-pt/**\" src/hunspell",
+    "compile": "cspell-tools-cli build",
+    "conditional-build": "pnpm run sync && cspell-tools-cli build --conditional",
+    "test-dict": "pipe-cmds \"hunspell-reader words -n 1000 \\\"src/hunspell/index.dic\\\"\" \"cspell -c ./cspell-ext.json --locale=pt --languageId=* stdin\"",
+    "test-text": "cspell",
+    "test": "pnpm run test-dict && pnpm run test-text",
+    "prepare:dictionary": "cspell-tools-cli gzip \"*.trie\"",
+    "prepublishOnly": "echo pre-publish"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/streetsidesoftware/cspell-dict.git",
+    "directory": "dictionaries/pt_BR"
+  },
+  "keywords": [
+    "cspell",
+    "cspell-ext",
+    "pt_BR",
+    "Brazilian Portuguese",
+    "dictionary",
+    "spelling"
+  ],
+  "author": "Street Side Software <support@streetsidesoftware.nl>",
+  "license": "GPL-3.0-or-later",
+  "bugs": {
+    "url": "https://github.com/streetsidesoftware/cspell-dicts/issues"
+  },
+  "homepage": "https://github.com/streetsidesoftware/cspell-dicts/blob/main/dictionaries/pt_BR#readme",
+  "files": [
+    "pt_BR.trie.gz",
+    "src/hunspell/license",
+    "cspell-ext.json"
+  ],
+  "devDependencies": {
+    "dictionary-pt": "^4.0.0"
+  }
+}

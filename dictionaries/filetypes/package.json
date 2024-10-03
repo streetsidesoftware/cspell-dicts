@@ -1,0 +1,41 @@
+{
+  "name": "@cspell/dict-filetypes",
+  "version": "3.0.4",
+  "description": "Filetypes dictionary for cspell.",
+  "publishConfig": {
+    "access": "public"
+  },
+  "exports": {
+    ".": "./cspell-ext.json",
+    "./cspell": "./cspell-ext.json",
+    "./cspell-ext.json": "./cspell-ext.json"
+  },
+  "scripts": {
+    "build": "cspell-tools-cli build",
+    "test": "shx cat \"src/filetypes.txt\" | cspell -c ./cspell-ext.json \"--locale=*\" \"--languageId=*\" stdin",
+    "prepublishOnly": "echo pre-publish",
+    "prepare:dictionary": "pnpm run build"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/streetsidesoftware/cspell-dict.git",
+    "directory": "dictionaries/filetypes"
+  },
+  "keywords": [
+    "cspell",
+    "filetypes",
+    "filetypes",
+    "dictionary",
+    "spelling"
+  ],
+  "author": "Street Side Software <support@streetsidesoftware.nl>",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/streetsidesoftware/cspell-dicts/issues"
+  },
+  "homepage": "https://github.com/streetsidesoftware/cspell-dicts/blob/main/dictionaries/filetypes#readme",
+  "files": [
+    "filetypes.txt.gz",
+    "cspell-ext.json"
+  ]
+}

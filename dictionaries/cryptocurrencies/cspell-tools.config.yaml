@@ -1,0 +1,19 @@
+# yaml-language-server: $schema=https://raw.githubusercontent.com/streetsidesoftware/cspell/main/packages/cspell-tools/cspell-tools.config.schema.json
+
+$schema: https://raw.githubusercontent.com/streetsidesoftware/cspell/main/packages/cspell-tools/cspell-tools.config.schema.json
+targets:
+  - name: cryptocurrencies
+    targetDirectory: ./dict
+    compress: false
+    format: plaintext
+    sources:
+      - src/cryptocurrencies.txt
+      - src/crypto-terms.txt
+    sort: true
+  - name: cryptocurrencies-legacy
+    targetDirectory: ./dict
+    compress: false
+    format: plaintext
+    sources:
+      - src/crypto-terms.legacy.txt
+    sort: true

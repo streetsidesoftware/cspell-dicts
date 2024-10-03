@@ -1,0 +1,19 @@
+{
+    "id": "mnemonics",
+    "name": "Mnemonics",
+    "description": "i86 Mnemonics dictionary for cspell",
+    "readonly": true,
+    "dictionaryDefinitions": [
+        {
+            "name": "mnemonics",
+            "path": "./dict/mnemonics.txt",
+            "description": "i86 Mnemonics dictionary for cspell"
+        }
+    ],
+    "languageSettings": [
+        {
+            "languageId": "c,cpp,h,hpp",
+            "dictionaries": ["mnemonics"]
+        }
+    ]
+}

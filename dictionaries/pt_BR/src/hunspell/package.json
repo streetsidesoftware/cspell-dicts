@@ -1,0 +1,34 @@
+{
+  "name": "dictionary-pt",
+  "version": "4.0.0",
+  "description": "Portuguese spelling dictionary",
+  "license": "(LGPL-3.0 OR MPL-2.0)",
+  "keywords": [
+    "dictionary",
+    "hunspell",
+    "myspell",
+    "portuguese",
+    "pt",
+    "spelling"
+  ],
+  "repository": "https://github.com/wooorm/dictionaries/tree/main/dictionaries/pt",
+  "bugs": "https://github.com/wooorm/dictionaries/issues",
+  "funding": {
+    "type": "github",
+    "url": "https://github.com/sponsors/wooorm"
+  },
+  "author": "Titus Wormer <tituswormer@gmail.com> (https://wooorm.com)",
+  "contributors": [
+    "Titus Wormer <tituswormer@gmail.com> (https://wooorm.com)",
+    "Thomas Beverley <tom.beverley101@gmail.com>"
+  ],
+  "type": "module",
+  "exports": "./index.js",
+  "files": [
+    "index.aff",
+    "index.d.ts",
+    "index.dic",
+    "index.js",
+    "index.map"
+  ]
+}

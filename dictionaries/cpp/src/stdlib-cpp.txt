@@ -1,0 +1,445 @@
+# https://en.cppreference.com/w/cpp/header/version
+__cpp_aggregate_nsdmi
+__cpp_aggregate_paren_init
+__cpp_lib_nonmember_container_access
+__cpp_multidimensional_subscript
+
+# https://en.cppreference.com/w/cpp/header/limits
+denorm
+is_iec559
+signaling # single "l" not a typo
+tinyness_before # "y" not a typo
+
+# https://en.cppreference.com/w/cpp/header/new
+bad_alloc
+
+# https://en.cppreference.com/w/cpp/header/typeinfo
+typeinfo
+
+# https://en.cppreference.com/w/cpp/header/source_location
+# https://en.cppreference.com/w/cpp/header/exception
+exception_ptr
+
+# https://en.cppreference.com/w/cpp/header/initializer_list
+# https://en.cppreference.com/w/cpp/header/compare
+is_eq
+is_gt
+is_gteq
+is_lt
+is_lteq
+is_neq
+
+# https://en.cppreference.com/w/cpp/header/coroutine
+coroutine
+noop_coroutine
+
+# https://en.cppreference.com/w/cpp/header/concepts
+# https://en.cppreference.com/w/cpp/header/stdexcept
+# https://en.cppreference.com/w/cpp/header/system_error
+errc
+
+# https://en.cppreference.com/w/cpp/header/utility
+cmp
+declval
+rel_ops
+
+# https://en.cppreference.com/w/cpp/header/memory
+addressof
+auto_ptr # deprecated in c++11, removed in c++17
+inout_ptr
+out_ptr
+shared_ptr
+undeclare_no_pointers # removed in c++23
+undeclare_reachable # removed in c++23
+unique_ptr
+weak_ptr
+
+# https://en.cppreference.com/w/cpp/header/memory_resource
+# https://en.cppreference.com/w/cpp/header/scoped_allocator
+# https://en.cppreference.com/w/cpp/header/expected
+# https://en.cppreference.com/w/cpp/header/bitset
+bitset
+
+# https://en.cppreference.com/w/cpp/header/tuple
+# https://en.cppreference.com/w/cpp/header/optional
+nullopt
+
+# https://en.cppreference.com/w/cpp/header/any
+# https://en.cppreference.com/w/cpp/utility/variant
+monostate
+
+# https://en.cppreference.com/w/cpp/header/type_traits
+nothrow
+remove_cvref
+
+# https://en.cppreference.com/w/cpp/header/ratio
+# https://en.cppreference.com/w/cpp/header/chrono
+chrono
+
+# https://en.cppreference.com/w/cpp/header/typeindex
+typeindex
+
+# https://en.cppreference.com/w/cpp/header/functional
+boyer
+cref
+horspool
+moore
+
+# https://en.cppreference.com/w/cpp/header/stacktrace
+# https://en.cppreference.com/w/cpp/header/string
+# https://en.cppreference.com/w/cpp/string/basic_string
+# https://en.cppreference.com/w/cpp/header/string_view
+# https://en.cppreference.com/w/cpp/string/basic_string_view
+getline
+npos
+rfind
+stod
+stof
+stoi
+stol
+stold
+stoll
+stoul
+stoull
+substr
+wstring
+
+# https://en.cppreference.com/w/cpp/header/charconv
+# https://en.cppreference.com/w/cpp/header/format
+vformat
+wformat
+
+# https://en.cppreference.com/w/cpp/header/locale
+codecvt
+moneypunct
+numpunct
+wbuffer
+
+# https://en.cppreference.com/w/cpp/header/codecvt
+# https://en.cppreference.com/w/cpp/header/span
+subspan
+
+# https://en.cppreference.com/w/cpp/header/array
+# https://en.cppreference.com/w/cpp/header/vector
+# https://en.cppreference.com/w/cpp/header/deque
+deque
+
+# https://en.cppreference.com/w/cpp/header/forward_list
+# https://en.cppreference.com/w/cpp/header/list
+# https://en.cppreference.com/w/cpp/header/map
+# https://en.cppreference.com/w/cpp/container/multimap
+# https://en.cppreference.com/w/cpp/container/set
+# https://en.cppreference.com/w/cpp/container/multiset
+# https://en.cppreference.com/w/cpp/header/queue
+# https://en.cppreference.com/w/cpp/header/unordered_map
+# https://en.cppreference.com/w/cpp/header/unordered_set
+# https://en.cppreference.com/w/cpp/header/stack
+# https://en.cppreference.com/w/cpp/header/iterator
+cbegin
+cend
+crbegin
+crend
+iter
+prev
+rbegin
+rend
+ssize
+
+# https://en.cppreference.com/w/cpp/header/ranges
+# https://en.cppreference.com/w/cpp/header/algorithm
+inplace_merge
+minmax
+
+# https://en.cppreference.com/w/cpp/header/execution
+par
+seq
+unseq
+unsequenced
+
+# https://en.cppreference.com/w/cpp/header/complex
+acos
+acosh
+asin
+asinh
+atan
+atanh
+conj
+cosh
+imag
+proj
+sinh
+tanh
+
+# https://en.cppreference.com/w/cpp/header/random
+bernoulli
+cauchy
+gamma
+knuth
+mersenne
+minstd
+poisson
+ranlux
+weibull
+
+# https://en.cppreference.com/w/cpp/header/valarray
+cshift
+gslice
+valarray
+
+# https://en.cppreference.com/w/cpp/header/numeric
+# https://en.cppreference.com/w/cpp/header/bit
+byteswap
+countl
+countr
+popcount
+rotl
+rotr
+
+# https://en.cppreference.com/w/cpp/header/numbers
+egamma
+phi
+sqrtpi
+
+# https://en.cppreference.com/w/cpp/header/ios
+boolalpha
+dec
+defaultfloat
+fpos
+hex
+hexfloat
+noboolalpha
+noshowbase
+noshowpoint
+noshowpos
+noskipws
+nounitbuf
+nouppercase
+oct
+showbase
+showpoint
+showpos
+skipws
+streamoff
+streampos
+streamsize
+unitbuf
+wstreampos
+
+# https://en.cppreference.com/w/cpp/header/iosfwd
+iosfwd
+
+# https://en.cppreference.com/w/cpp/header/iomanip
+resetiosflags
+setbase
+setfill
+setiosflags
+setprecision
+setw
+
+# https://en.cppreference.com/w/cpp/header/streambuf
+# https://en.cppreference.com/w/cpp/io/basic_streambuf
+eback
+egptr
+epptr
+gbump
+getloc
+gptr
+pbackfail
+pbase
+pbump
+pptr
+pubimbue
+pubseekoff
+pubseekpos
+pubsetbuf
+pubsync
+sbumpc
+seekoff
+seekpos
+setbuf
+setg
+setp
+sgetc
+sgetn
+showmanyc
+snextc
+sputbackc
+sputc
+sputn
+stossc # removed in c++17
+streambuf
+sungetc
+uflow
+underflow
+wstreambuf
+xsgetn
+xsputn
+
+# https://en.cppreference.com/w/cpp/header/iostream
+cerr
+cin
+clog
+cout
+iostream
+istream
+istreambuf
+ostream
+ostreambuf
+streambuf
+wcerr
+wcin
+wclog
+wcout
+wiostream
+wistream
+wostream
+
+# https://en.cppreference.com/w/cpp/header/ostream
+endl
+ends
+noemit_on_flush
+
+# https://en.cppreference.com/w/cpp/header/iostream
+# https://en.cppreference.com/w/cpp/io/basic_iostream
+adjustfield
+badbit
+basefield
+beg
+boolalpha
+copyfmt
+eofbit
+failbit
+floatfield
+fmtflags
+gcount
+getline
+getloc
+goodbit
+iostate
+iword
+openmode
+putback
+pword
+rdbuf
+rdstate
+readsome
+seekdir
+seekg
+setf
+setstate
+showbase
+showpoint
+showpos
+skipws
+tellg
+trunc
+unget
+unitbuf
+unsetf
+xalloc
+
+#end
+cur
+
+# https://en.cppreference.com/w/cpp/header/sstream
+istringstream
+ostringstream
+stringbuf
+stringstream
+wistringstream
+wostringstream
+wstringbuf
+wstringstream
+
+# https://en.cppreference.com/w/cpp/header/spanstream
+ispanstream
+ospanstream
+spanbuf
+spanstream
+wispanstream
+wospanstream
+wspanbuf
+wspanstream
+
+# https://en.cppreference.com/w/cpp/header/fstream
+filebuf
+fstream
+ifstream
+ofstream
+wfilebuf
+wfstream
+wifstream
+wofstream
+
+# https://en.cppreference.com/w/cpp/header/syncstream
+osyncstream
+syncbuf
+wosyncstream
+wsyncbuf
+
+# https://en.cppreference.com/w/cpp/header/strstream
+# deprecated in c++98
+istrstream
+ostrstream
+strstream
+strstreambuf
+
+# https://en.cppreference.com/w/cpp/regex/basic_regex
+cregex
+sregex
+wcregex
+wsregex
+
+# https://en.cppreference.com/w/cpp/regex/syntax_option_type
+awk
+ECMAScript
+egrep
+grep
+icase
+multiline
+nosubs
+
+# https://en.cppreference.com/w/cpp/regex/sub_match
+csub_match
+ssub_match
+wcsub_match
+wssub_match
+
+# https://en.cppreference.com/w/cpp/regex/match_results
+cmatch
+smatch
+wcmatch
+wsmatch
+
+# https://en.cppreference.com/w/cpp/regex/error_type
+backref
+badbrace
+badrepeat
+brack
+paren
+
+# https://en.cppreference.com/w/cpp/regex/regex_traits
+isctype
+lookup_classname
+lookup_collatename
+translate_notrace
+
+# https://en.cppreference.com/w/cpp/header/filesystem
+nofollow # perm_options::
+
+# https://en.cppreference.com/w/cpp/header/thread
+jthread
+
+# https://en.cppreference.com/w/cpp/header/atomic
+atomic_ushort
+
+# https://en.cppreference.com/w/cpp/header/mutex
+# https://en.cppreference.com/w/cpp/header/shared_mutex
+# https://en.cppreference.com/w/cpp/header/condition_variable
+# https://en.cppreference.com/w/cpp/header/future
+# https://en.cppreference.com/w/cpp/header/stop_token
+nostopstate
+
+# https://en.cppreference.com/w/cpp/header/semaphore
+# https://en.cppreference.com/w/cpp/header/latch
+# https://en.cppreference.com/w/cpp/header/barrier

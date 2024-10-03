@@ -1,0 +1,13 @@
+# yaml-language-server: $schema=https://raw.githubusercontent.com/streetsidesoftware/cspell/main/packages/cspell-tools/cspell-tools.config.schema.json
+
+$schema: https://raw.githubusercontent.com/streetsidesoftware/cspell/main/packages/cspell-tools/cspell-tools.config.schema.json
+targets:
+  - name: pt_BR
+    targetDirectory: .
+    compress: false
+    format: trie3
+    sources:
+      - src/additional_words.txt
+      - src/hunspell/index.dic
+    generateNonStrict: true
+checksumFile: true

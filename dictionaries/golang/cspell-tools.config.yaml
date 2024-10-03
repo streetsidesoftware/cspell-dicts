@@ -1,0 +1,24 @@
+# yaml-language-server: $schema=https://raw.githubusercontent.com/streetsidesoftware/cspell/main/packages/cspell-tools/cspell-tools.config.schema.json
+
+targets:
+  - name: 'go'
+    sources:
+      - filename: src/go.txt
+        split: true
+        allowedSplitWords:
+          - ../en_US/en_US.trie
+          - ../software-terms/dict/softwareTerms.txt
+          - src/allowed-terms.txt
+          - src/go.txt # Use the source for whole words when splitting.
+      - filename: src/go-words/go.txt
+        split: true
+        allowedSplitWords:
+          - ../en_US/en_US.trie
+          - ../software-terms/dict/softwareTerms.txt
+          - src/allowed-terms.txt
+          - src/go-words/go.txt # Use the source for whole words when splitting.
+      - filename: src/allowed-terms.txt
+    format: plaintext
+    targetDirectory: './dict'
+    generateNonStrict: false
+    compress: false

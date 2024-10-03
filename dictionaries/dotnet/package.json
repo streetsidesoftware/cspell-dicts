@@ -1,0 +1,41 @@
+{
+  "name": "@cspell/dict-dotnet",
+  "version": "5.0.5",
+  "description": ".Net dictionary for cspell.",
+  "publishConfig": {
+    "access": "public"
+  },
+  "exports": {
+    ".": "./cspell-ext.json",
+    "./cspell": "./cspell-ext.json",
+    "./cspell-ext.json": "./cspell-ext.json"
+  },
+  "scripts": {
+    "build": "cspell-tools-cli build",
+    "test": "shx head -n 100 src/dotnet.txt | cspell -c ./cspell-ext.json --locale=* --languageId=cs stdin",
+    "prepublishOnly": "echo pre-publish",
+    "prepare:dictionary": "pnpm run build"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/streetsidesoftware/cspell-dict.git",
+    "directory": "dictionaries/dotnet"
+  },
+  "keywords": [
+    "cspell",
+    "dotnet",
+    ".Net",
+    "dictionary",
+    "spelling"
+  ],
+  "author": "Street Side Software <support@streetsidesoftware.nl>",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/streetsidesoftware/cspell-dicts/issues"
+  },
+  "homepage": "https://github.com/streetsidesoftware/cspell-dicts/blob/main/dictionaries/dotnet#readme",
+  "files": [
+    "dict/*",
+    "cspell-ext.json"
+  ]
+}

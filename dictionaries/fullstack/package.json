@@ -1,0 +1,41 @@
+{
+  "name": "@cspell/dict-fullstack",
+  "version": "3.2.0",
+  "description": "Dictionary of terms used in Fullstack development.",
+  "publishConfig": {
+    "access": "public"
+  },
+  "exports": {
+    ".": "./cspell-ext.json",
+    "./cspell": "./cspell-ext.json",
+    "./cspell-ext.json": "./cspell-ext.json"
+  },
+  "scripts": {
+    "build": "cspell-tools-cli build",
+    "test": "shx cat \"src/fullstack.txt\" | cspell -c ./cspell-ext.json --locale=* --languageId=php stdin",
+    "prepublishOnly": "echo pre-publish",
+    "prepare:dictionary": "pnpm run build"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/streetsidesoftware/cspell-dict.git",
+    "directory": "dictionaries/fullstack"
+  },
+  "keywords": [
+    "cspell",
+    "cspell-ext",
+    "fullstack",
+    "dictionary",
+    "spelling"
+  ],
+  "author": "Street Side Software <support@streetsidesoftware.nl>",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/streetsidesoftware/cspell-dicts/issues"
+  },
+  "homepage": "https://github.com/streetsidesoftware/cspell-dicts/blob/main/dictionaries/fullstack#readme",
+  "files": [
+    "dict/fullstack.txt",
+    "cspell-ext.json"
+  ]
+}

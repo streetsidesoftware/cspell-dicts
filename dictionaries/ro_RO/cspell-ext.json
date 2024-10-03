@@ -1,0 +1,22 @@
+{
+    "id": "ro-ro",
+    "version": "0.2",
+    "name": "Romanian",
+    "description": "Romanian dictionary for cspell.",
+    "readonly": true,
+    "dictionaryDefinitions": [
+        {
+            "name": "ro-ro",
+            "path": "./dict/ro-ro.trie",
+            "description": "Romanian dictionary for cspell."
+        }
+    ],
+    "languageSettings": [
+        {
+            "languageId": "*",
+            "locale": "ro,ro-RO",
+            "dictionaries": ["ro-ro"],
+            "dictionaryDefinitions": []
+        }
+    ]
+}

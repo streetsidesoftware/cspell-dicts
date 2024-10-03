@@ -1,0 +1,49 @@
+{
+  "name": "@cspell/dict-da-dk",
+  "version": "4.0.0",
+  "description": "Danish dictionary for CSpell.",
+  "publishConfig": {
+    "access": "public"
+  },
+  "exports": {
+    ".": "./cspell-ext.json",
+    "./cspell": "./cspell-ext.json",
+    "./cspell-ext.json": "./cspell-ext.json"
+  },
+  "scripts": {
+    "build": "cspell-tools-cli build",
+    "sync": "pnpm cpy \"node_modules/dictionary-da/**\" src/hunspell",
+    "conditional-build": "pnpm sync && pnpm build --conditional",
+    "test-de": "pipe-cmds \"hunspell-reader words -n 1000 \\\"src/hunspell/index.dic\\\"\" \"cspell -c ./cspell-ext.json --locale=da-DK --languageId=* stdin\"",
+    "test-samples": "cspell -c ./cspell-ext.json --locale=da-dk,en \"samples/**\"",
+    "test": "pnpm run test-de && pnpm run test-samples",
+    "prepare:dictionary": "echo ok",
+    "prepublishOnly": "pnpm run conditional-build"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/streetsidesoftware/cspell-dict.git",
+    "directory": "dictionaries/da_DK"
+  },
+  "keywords": [
+    "cspell",
+    "da-DK",
+    "Danish",
+    "dictionary",
+    "spelling"
+  ],
+  "author": "Street Side Software <support@streetsidesoftware.nl>",
+  "license": "LGPL-3.0",
+  "bugs": {
+    "url": "https://github.com/streetsidesoftware/cspell-dicts/issues"
+  },
+  "homepage": "https://github.com/streetsidesoftware/cspell-dicts/blob/main/dictionaries/da_DK#readme",
+  "files": [
+    "da_DK.trie",
+    "cspell-ext.json",
+    "src/hunspell/license"
+  ],
+  "devDependencies": {
+    "dictionary-da": "^6.0.0"
+  }
+}

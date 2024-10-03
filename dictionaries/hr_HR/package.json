@@ -1,0 +1,45 @@
+{
+  "name": "@cspell/dict-hr-hr",
+  "version": "3.0.0",
+  "description": "Croatian dictionary for cspell.",
+  "publishConfig": {
+    "access": "public"
+  },
+  "exports": {
+    ".": "./cspell-ext.json",
+    "./cspell": "./cspell-ext.json",
+    "./cspell-ext.json": "./cspell-ext.json"
+  },
+  "scripts": {
+    "build": "cspell-tools-cli build",
+    "build:conditional": "cspell-tools-cli build --conditional && pnpm gz",
+    "gz": "cspell-tools-cli gzip \"dict/*.trie\"",
+    "test": "cspell samples --no-progress",
+    "prepublishOnly": "echo pre-publish",
+    "prepare:dictionary": "pnpm gz"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/streetsidesoftware/cspell-dict.git",
+    "directory": "dictionaries/hr_HR"
+  },
+  "keywords": [
+    "cspell",
+    "hr_HR",
+    "Croatian",
+    "dictionary",
+    "spelling"
+  ],
+  "author": "Street Side Software <support@streetsidesoftware.nl>",
+  "license": "LGPL-3.0",
+  "bugs": {
+    "url": "https://github.com/streetsidesoftware/cspell-dicts/issues"
+  },
+  "homepage": "https://github.com/streetsidesoftware/cspell-dicts/blob/main/dictionaries/hr_HR#readme",
+  "files": [
+    "dict/hr_HR.trie.gz",
+    "cspell-ext.json",
+    "src/README.md",
+    "src/README_hr_HR.txt"
+  ]
+}

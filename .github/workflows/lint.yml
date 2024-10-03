@@ -1,0 +1,47 @@
+name: Lint
+on:
+  pull_request:
+    paths:
+      - .prettier*"
+      - '**/*.js'
+      - '**/*.mjs'
+      - '**/*.md'
+      - '**/*.json'
+      - '**/*.yml'
+      - '**/*.yaml'
+  push:
+    paths:
+      - .prettier*"
+      - '**/*.js'
+      - '**/*.mjs'
+      - '**/*.md'
+      - '**/*.json'
+      - '**/*.yml'
+      - '**/*.yaml'
+    branches:
+      - main
+
+permissions:
+  contents: read
+
+jobs:
+  lint:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+
+      - name: Setup
+        uses: ./.github/actions/setup
+
+      - name: Restore CSpell cache
+        uses: actions/cache@v4
+        with:
+          key: cspell-cache-${{ runner.os }}-lint-${{ hashFiles('**/*.ts', '**/*.md') }}
+          path: |
+            .cspellcache
+          restore-keys: |
+            cspell-cache-${{ runner.os }}-lint-
+            cspell-cache-${{ runner.os }}-
+
+      - run: pnpm i
+      - run: pnpm run lint

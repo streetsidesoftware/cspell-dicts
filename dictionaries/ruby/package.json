@@ -1,0 +1,41 @@
+{
+  "name": "@cspell/dict-ruby",
+  "version": "5.0.4",
+  "description": "For ruby and ruby on rails",
+  "publishConfig": {
+    "access": "public"
+  },
+  "exports": {
+    ".": "./cspell-ext.json",
+    "./cspell": "./cspell-ext.json",
+    "./cspell-ext.json": "./cspell-ext.json"
+  },
+  "scripts": {
+    "build": "cspell-tools-cli build",
+    "test": "shx head -n 100 src/ruby.txt | cspell -c ./cspell-ext.json \"--locale=en\" \"--languageId=ruby\" stdin",
+    "prepublishOnly": "echo pre-publish",
+    "prepare:dictionary": "pnpm run build"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/streetsidesoftware/cspell-dict.git",
+    "directory": "dictionaries/ruby"
+  },
+  "keywords": [
+    "cspell",
+    "ruby",
+    "Ruby",
+    "dictionary",
+    "spelling"
+  ],
+  "author": "Street Side Software <support@streetsidesoftware.nl>",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/streetsidesoftware/cspell-dicts/issues"
+  },
+  "homepage": "https://github.com/streetsidesoftware/cspell-dicts/blob/main/dictionaries/ruby#readme",
+  "files": [
+    "dict/ruby.txt",
+    "cspell-ext.json"
+  ]
+}

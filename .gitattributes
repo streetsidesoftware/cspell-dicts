@@ -1,0 +1,12 @@
+# Set the default behavior, in case people don't have core.autocrlf set.
+* text=auto eol=lf
+*.txt       text eol=lf
+*.ts        text eol=lf
+*.js        text eol=lf
+*.trie      text eol=lf
+
+*.trie linguist-generated=true
+**/dict/*.txt linguist-generated=true
+**/dict/*.trie linguist-generated=true
+
+# cspell:ignore autocrlf

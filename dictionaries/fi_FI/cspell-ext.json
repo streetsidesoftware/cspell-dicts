@@ -1,0 +1,26 @@
+{
+    "id": "fi-fi",
+    "version": "0.2",
+    "name": "Finnish",
+    "description": "Finnish dictionary for cspell.",
+    "readonly": true,
+    "dictionaryDefinitions": [
+        {
+            "name": "fi-fi",
+            "path": "./dict/fi-fi.trie.gz",
+            "description": "Finnish dictionary for cspell."
+        }
+    ],
+    "languageSettings": [
+        {
+            // VSCode languageId. i.e. typescript, java, go, cpp, javascript, markdown, latex
+            // * will match against any file type.
+            "languageId": "*",
+            // Language locale. i.e. en-US, de-AT, or ru. * will match all locales.
+            // Multiple locales can be specified like: "en, en-US" to match both English and English US.
+            "locale": "fi,fi-fi",
+            // List of dictionaries to enable by name in `dictionaryDefinitions`
+            "dictionaries": ["fi-fi"]
+        }
+    ]
+}

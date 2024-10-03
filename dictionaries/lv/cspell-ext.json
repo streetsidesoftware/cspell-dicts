@@ -1,0 +1,22 @@
+{
+    "id": "lv",
+    "version": "0.2",
+    "name": "Latvian",
+    "description": "Latvian dictionary for cspell.",
+    "readonly": true,
+    "dictionaryDefinitions": [
+        {
+            "name": "lv",
+            "path": "./dict/lv.trie.gz",
+            "description": "Latvian dictionary for cspell."
+        }
+    ],
+    "dictionaries": [],
+    "languageSettings": [
+        {
+            "languageId": "*",
+            "locale": "lv",
+            "dictionaries": ["lv"]
+        }
+    ]
+}

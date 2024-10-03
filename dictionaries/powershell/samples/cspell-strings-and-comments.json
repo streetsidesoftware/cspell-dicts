@@ -1,0 +1,11 @@
+{
+    "$schema": "https://raw.githubusercontent.com/streetsidesoftware/cspell/master/cspell.schema.json",
+    "import": ["../cspell-ext.json"],
+    "languageSettings": [
+        {
+            "languageId": "powershell",
+            "includeRegExpList": ["strings", "comments"],
+            "ignoreRegExpList": ["variables"]
+        }
+    ]
+}

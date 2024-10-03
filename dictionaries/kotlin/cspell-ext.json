@@ -1,0 +1,26 @@
+// cSpell Settings
+{
+    "id": "kotlin",
+    "version": "0.2",
+    "name": "Kotlin",
+    "description": "Kotlin dictionary for cspell.",
+    "readonly": true,
+    "dictionaryDefinitions": [
+        {
+            "name": "kotlin",
+            "path": "./dict/kotlin.txt",
+            "description": "Kotlin dictionary for cspell."
+        }
+    ],
+    "enabledLanguageIds": ["kotlin"],
+    "languageSettings": [
+        {
+            "languageId": "kotlin",
+            "locale": "*",
+            "includeRegExpList": [],
+            "ignoreRegExpList": [],
+            "patterns": [],
+            "dictionaries": ["kotlin", "java"]
+        }
+    ]
+}

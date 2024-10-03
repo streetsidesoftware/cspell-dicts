@@ -1,0 +1,26 @@
+{
+    "$schema": "https://raw.githubusercontent.com/streetsidesoftware/cspell/main/cspell.schema.json",
+    "id": "et-ee",
+    "name": "Estonian",
+    "description": "Estonian dictionary for cspell.",
+    "version": "0.2",
+    "dictionaryDefinitions": [
+        {
+            "name": "et-ee",
+            "path": "./et_EE.trie.gz",
+            "description": "Estonian dictionary for cspell.",
+            "dictionaryInformation": {
+                "locale": "et-EE",
+                "alphabet": "a-zA-ZðšŠžŽõÕäÄöÖüÜþ"
+            }
+        }
+    ],
+    "languageSettings": [
+        {
+            "languageId": "*",
+            "locale": "et,et-EE",
+            "dictionaries": ["et-ee"],
+            "caseSensitive": true
+        }
+    ]
+}

@@ -1,0 +1,11 @@
+# yaml-language-server: $schema=https://raw.githubusercontent.com/streetsidesoftware/cspell/main/packages/cspell-tools/cspell-tools.config.schema.json
+
+targets:
+  - name: ada
+    targetDirectory: ./dict
+    compress: false
+    format: plaintext
+    sources:
+      - src/ada.txt
+    sort: true
+keepRawCase: true

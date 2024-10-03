@@ -1,0 +1,24 @@
+{
+    "id": "node",
+    "name": "Node.js",
+    "description": "Node.js dictionary for cspell.",
+    "readonly": true,
+    "dictionaryDefinitions": [
+        {
+            "name": "node",
+            "path": "./dict/node.txt",
+            "description": "Node.js dictionary for cspell."
+        }
+    ],
+    "dictionaries": [],
+    "languageSettings": [
+        {
+            "languageId": "javascript,typescript",
+            "locale": "*",
+            "includeRegExpList": [],
+            "ignoreRegExpList": [],
+            "dictionaries": ["node"],
+            "dictionaryDefinitions": []
+        }
+    ]
+}

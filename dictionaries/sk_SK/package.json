@@ -1,0 +1,43 @@
+{
+  "name": "@cspell/dict-sk-sk",
+  "version": "1.1.1",
+  "description": "Slovak dictionary for cspell.",
+  "publishConfig": {
+    "access": "public"
+  },
+  "exports": {
+    ".": "./cspell-ext.json",
+    "./cspell": "./cspell-ext.json",
+    "./cspell-ext.json": "./cspell-ext.json"
+  },
+  "scripts": {
+    "build": "cspell-tools-cli build && pnpm prepare:dictionary",
+    "build:conditional": "cspell-tools-cli build --conditional && pnpm prepare:dictionary",
+    "test": "pipe-cmds \"hunspell-reader words -n 1000 src/Slovak.dic\" \"cspell -c ./cspell-ext.json --locale=sk --languageId=* stdin\"",
+    "prepare:dictionary": "cspell-tools-cli gzip \"*.trie\"",
+    "prepublishOnly": "echo pre-publish"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/streetsidesoftware/cspell-dict.git",
+    "directory": "dictionaries/sk_SK"
+  },
+  "keywords": [
+    "cspell",
+    "sk_SK",
+    "Slovak",
+    "dictionary",
+    "spelling"
+  ],
+  "author": "Street Side Software <support@streetsidesoftware.nl>",
+  "license": "MPL v2",
+  "bugs": {
+    "url": "https://github.com/streetsidesoftware/cspell-dicts/issues"
+  },
+  "homepage": "https://github.com/streetsidesoftware/cspell-dicts/blob/main/dictionaries/sk_SK#readme",
+  "files": [
+    "Slovak.txt",
+    "Slovak.trie.gz",
+    "cspell-ext.json"
+  ]
+}

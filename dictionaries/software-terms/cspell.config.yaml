@@ -1,0 +1,20 @@
+version: '0.2'
+dictionaries:
+  - softwareTerms
+  - networking-terms
+  - web-services
+  - computing-acronyms
+import:
+  - ./cspell-ext.json
+ignoreWords:
+  - mdash
+ignorePaths:
+  - CHANGELOG.md
+  - dict
+patterns:
+  - name: term-comment
+    pattern: '/(?<!^)#.*/gm'
+overrides:
+  - filename: 'src/*.txt'
+    ignoreRegExpList:
+      - term-comment

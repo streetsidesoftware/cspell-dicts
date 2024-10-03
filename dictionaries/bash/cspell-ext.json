@@ -1,0 +1,21 @@
+{
+    "id": "bash",
+    "name": "bash",
+    "description": "Bash dictionary for cspell.",
+    "readonly": true,
+    "dictionaryDefinitions": [
+        {
+            "name": "bash",
+            "path": "./dict/bash-words.txt",
+            "description": "Bash dictionary for cspell."
+        }
+    ],
+    "dictionaries": [],
+    "languageSettings": [
+        {
+            "languageId": "shellscript",
+            "locale": "*",
+            "dictionaries": ["bash"]
+        }
+    ]
+}

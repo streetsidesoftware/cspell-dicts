@@ -1,0 +1,26 @@
+{
+    "version": "0.2",
+    "files": [
+        "**/*.{md,txt}"
+    ],
+    "language": "en-us",
+    "import": [
+        "./cspell-ext.json"
+    ],
+    "ignorePaths": [
+        "/src",
+        "/cspell-ext.json"
+    ],
+    "ignoreWords": [],
+    "overrides": [
+        {
+            "filename": "/src",
+            "enabled": false
+        }
+    ],
+    "words": [
+        "issuecomment",
+        "shasum",
+        "xargs"
+    ]
+}

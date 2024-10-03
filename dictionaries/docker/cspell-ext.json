@@ -1,0 +1,33 @@
+{
+    "id": "docker",
+    "version": "0.2",
+    "name": "Docker Dictionary",
+    "description": "Docker dictionary for cspell.",
+    "readonly": true,
+    "dictionaryDefinitions": [
+        {
+            "name": "docker",
+            "path": "./docker-words.txt.gz",
+            "description": "Docker dictionary for cspell."
+        }
+    ],
+    "dictionaries": [],
+    "languageSettings": [
+        {
+            "languageId": "dockerfile",
+            "locale": "*",
+            "includeRegExpList": [],
+            "ignoreRegExpList": [],
+            "patterns": [],
+            "dictionaries": ["docker"],
+            "dictionaryDefinitions": []
+        }
+    ],
+    "globRoot": "${cwd}",
+    "overrides": [
+        {
+            "filename": "**/Dockerfile",
+            "languageId": "dockerfile"
+        }
+    ]
+}

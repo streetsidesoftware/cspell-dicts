@@ -1,0 +1,54 @@
+{
+  "name": "@cspell/dict-es-es",
+  "version": "3.0.0",
+  "description": "Spanish dictionary for cspell.",
+  "publishConfig": {
+    "access": "public"
+  },
+  "exports": {
+    ".": "./cspell-ext.json",
+    "./cspell": "./cspell-ext.json",
+    "./cspell-ext.json": "./cspell-ext.json"
+  },
+  "scripts": {
+    "cspell-yaml-to-json": "pnpm -s yaml2json -p cspell.config.yaml > cspell-ext.json && pnpm lint",
+    "build": "pnpm run compile",
+    "sync": "pnpm cpy \"node_modules/dictionary-es/**\" src/hunspell",
+    "compile": "cspell-tools-cli build",
+    "conditional-build": "pnpm run sync && pnpm run build --conditional && pnpm gz",
+    "lint": "pnpm prettier -w \"*.{yaml,json}\"",
+    "test-dict": "pipe-cmds \"hunspell-reader words -n 1000 \\\"src/hunspell/index.dic\\\"\" \"cspell -c ./cspell-ext.json --locale=es --languageId=* stdin\"",
+    "test-text": "cspell",
+    "test": "pnpm run test-dict && pnpm run test-text",
+    "gz": "cspell-tools-cli gzip \"*.trie\"",
+    "prepare:dictionary": "pnpm gz",
+    "prepublishOnly": "echo pre-publish"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/streetsidesoftware/cspell-dict.git",
+    "directory": "dictionaries/es_ES"
+  },
+  "keywords": [
+    "cspell",
+    "es_ES",
+    "Spanish",
+    "dictionary",
+    "spelling"
+  ],
+  "author": "Street Side Software <support@streetsidesoftware.nl>",
+  "license": "LGPL-3.0",
+  "bugs": {
+    "url": "https://github.com/streetsidesoftware/cspell-dicts/issues"
+  },
+  "homepage": "https://github.com/streetsidesoftware/cspell-dicts/blob/main/dictionaries/es_ES#readme",
+  "files": [
+    "Spanish.trie.gz",
+    "cspell-ext.json",
+    "src/es_ES/README_es_ES.txt",
+    "src/hunspell/license"
+  ],
+  "devDependencies": {
+    "dictionary-es": "^4.0.0"
+  }
+}

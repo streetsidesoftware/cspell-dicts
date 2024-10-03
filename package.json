@@ -1,0 +1,60 @@
+{
+  "name": "cspell-dicts",
+  "version": "27.5.5",
+  "private": true,
+  "packageManager": "pnpm@9.4.0",
+  "scripts": {
+    "test": "pnpm -r run --workspace-concurrency 2 --stream test",
+    "lint": "pnpm run lint:fix && cspell --no-progress",
+    "lint-ci": "eslint . && prettier -c . && cspell --no-progress",
+    "lint:fix": "eslint --fix . && prettier -w .",
+    "build:all": "pnpm -r run --stream --workspace-concurrency 2 build --no-bail",
+    "build:readme": "pnpm run readme:generate-doc-dictionaries && pnpm run readme:inject",
+    "build:conditional": "pnpm -r run --workspace-concurrency 2 --stream build:conditional --no-bail && pnpm -r run --workspace-concurrency 2 --stream conditional-build --no-bail",
+    "lint:fix:sort-source-files": "sort-source -c sort-source.config.json",
+    "conditional-build": "pnpm build:conditional",
+    "check-dirty": "git --no-pager diff --compact-summary --exit-code",
+    "check-spelling": "cspell",
+    "checksum": "pnpm -r run checksum",
+    "create-dictionary": "node ./generator-cspell-dicts/run.js",
+    "clean": "shx rm -rf \"packages/*/*.txt.gz\" \"dictionaries/*/*.txt.gz\"",
+    "readme:generate-doc-dictionaries": "./scripts/dictionaries.sh > dictionaries.md",
+    "readme:inject": "inject-markdown \"*.md\" \"dictionaries/*/README.md\" && prettier -w \"*.md\" \"dictionaries/*/README.md\"",
+    "prepare": "pnpm -r run --stream --workspace-concurrency 3 prepare:dictionary",
+    "pub-recover": "lerna publish from-package --no-push --no-private --concurrency 1",
+    "update:contributors": "update-contributors $(gh auth token)",
+    "update-packages": "pnpm up",
+    "preinstall": "npx only-allow pnpm"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/streetsidesoftware/cspell-dicts.git"
+  },
+  "devDependencies": {
+    "@cspell/cspell-tools": "^8.14.4",
+    "@lerna-lite/cli": "^3.9.2",
+    "@lerna-lite/exec": "^3.9.2",
+    "@lerna-lite/publish": "^3.9.2",
+    "@lerna-lite/run": "^3.9.2",
+    "ava": "^6.1.3",
+    "cpy-cli": "^5.0.0",
+    "cross-env": "^7.0.3",
+    "cspell": "^8.14.4",
+    "cspell-dict-file-checker": "workspace:*",
+    "cspell-trie": "^8.14.4",
+    "eslint": "^9.11.1",
+    "generator-cspell-dicts": "workspace:*",
+    "globals": "^15.10.0",
+    "hunspell-reader": "^8.14.4",
+    "inject-markdown": "^3.1.0",
+    "json5": "2.2.3",
+    "prettier": "^3.3.3",
+    "scripts": "link:scripts",
+    "shx": "^0.3.4",
+    "yamljs": "^0.3.0"
+  },
+  "engines": {
+    "node": ">=18"
+  },
+  "license": "GPL-3.0-or-later"
+}

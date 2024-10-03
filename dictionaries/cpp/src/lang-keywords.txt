@@ -1,0 +1,59 @@
+# https://en.cppreference.com/w/cpp/keyword
+alignas
+alignof
+asm
+bitand
+bitor
+bool
+compl
+const
+consteval
+constexpr
+constinit
+decltype
+enum
+extern
+goto
+namespace
+noexcept
+nullptr
+reflexpr
+sizeof
+struct
+structs # not an actual keyword
+typedef
+typedefs # not an actual keyword
+typeid
+typename
+wchar
+
+# preprocessor things
+elif
+endif
+ifdef
+ifndef
+pragma
+undef
+
+# attributes
+fallthrough
+nodiscard
+noreturn
+
+# https://en.cppreference.com/w/cpp/language/value_category
+glvalue
+lvalue
+prvalue
+rvalue
+trigraph
+udls # plural of UDL (user-defined-literal)
+xvalue
+
+# not really keywords. just contractions.
+builtin
+deref
+
+# clang-tidy lint comments
+NOLINT
+NOLINTBEGIN
+NOLINTEND
