@@ -10,6 +10,7 @@
 4b1d # ("forbid") https://en.wikipedia.org/wiki/Hexspeak
 50ffc001 # ("soff[t] cool") https://en.wikipedia.org/wiki/Hexspeak
 8badf00d # ("ate bad food") https://en.wikipedia.org/wiki/Hexspeak
+aarch64
 abab # hex test sequence
 abadbabe # ("a bad babe") https://en.wikipedia.org/wiki/Hexspeak
 abcba # hex test sequence
@@ -40,6 +41,7 @@ aead # [authenticated encryption with associated data](https://en.wikipedia.org/
 agentLess
 alloc # memory allocation
 allocs
+appdata
 astype
 auth # authentication
 authed # authenticated
@@ -123,6 +125,8 @@ browserConfig
 browserstack
 bufIndex
 bufSize
+builddir
+buildsystem
 buildtime
 builtins
 bzFile
@@ -186,6 +190,7 @@ curr # current
 cValue
 d0d0caca # ("doo-doo caca") https://en.wikipedia.org/wiki/Hexspeak
 dabbad00 # ("dabba doo") https://en.wikipedia.org/wiki/Hexspeak
+datadir
 dataFile
 dateInterval
 dateObject
@@ -282,6 +287,7 @@ fixedmode
 fixedsize
 func # short for function
 fValue
+gettext
 gitignores
 gitroot
 globalstrict
@@ -296,6 +302,7 @@ hashbang
 hashbangs
 helloWorld
 hFile
+hicolor
 hiddenfolder
 hoistable # https://en.wiktionary.org/wiki/hoistable
 hola
@@ -344,6 +351,8 @@ kvCopy # key value copy
 kvPair # key value pair
 laddrs # long address
 leds
+libgranite
+libgtk
 linebreak
 linebreaks
 linewidth
@@ -353,6 +362,7 @@ linkName
 linkplain # Docblock link
 linkRef
 listbox
+LOCALEDIR
 localizable
 localStorage
 LONGLONG
@@ -370,7 +380,9 @@ mockFile
 mockFn
 mockFunction
 mockPath
+msgid
 msgList
+msgstr
 MSSQLSERVER
 multipass
 multitouch
@@ -453,6 +465,8 @@ pBuffer
 pConnection
 pFile
 PHPs
+pkgconfig
+PKGDATADIR
 platformio
 pluggable
 plusplus
@@ -692,6 +706,7 @@ ushort
 uVal
 uword
 val
+vala
 valign
 vals
 varstatement
@@ -709,6 +724,7 @@ xCoords
 xKey
 xPos
 xVal
+xvfb
 yCoord
 yCoords
 yKey
@@ -721,21 +737,3 @@ zKey
 zLog
 zPos
 zVal
-builddir
-aarch64
-xvfb
-hicolor
-datadir
-appdata
-subdir
-msgid
-msgstr
-gettext
-LOCALEDIR
-PKGDATADIR
-valign
-buildsystem
-pkgconfig
-libgtk
-libgranite
-vala
