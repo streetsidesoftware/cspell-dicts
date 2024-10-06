@@ -82,6 +82,7 @@ autoScroll
 autoSpy
 azureCR # (Azure Container Registry)
 azureRM # (Azure Resource Manager)
+azureTools
 azureWebsites # (azurewebsites.net domain)
 b0bababe # ("boba babe") https://en.wikipedia.org/wiki/Hexspeak
 b105f00d # ("BIOS food") https://en.wikipedia.org/wiki/Hexspeak
@@ -103,7 +104,9 @@ basePath
 basePtr
 beefbabe # ("beef babe") https://en.wikipedia.org/wiki/Hexspeak
 bitand
+bitCount
 bitor
+bitSize
 bitxor
 blockcount
 blockless
@@ -120,12 +123,16 @@ boilerplating
 bootloader
 bork
 borked # https://en.wiktionary.org/wiki/borked
+bottomLeft
+bottomRight
 braceless
 browserConfig
 browserstack
+bSize
 bufIndex
 bufSize
 builddir
+buildFolder
 buildsystem
 buildtime
 builtins
@@ -144,6 +151,7 @@ callstack
 camelcase
 camelcased
 castable
+categoryName
 CDATA
 CDATASection
 cefaedfe # ("face feed") https://en.wikipedia.org/wiki/Hexspeak
@@ -151,12 +159,15 @@ cert # Certificate
 certId
 certStore
 changeDir
+changeList
+changeLists
 checkstyle
 childNode
 childpath
 classdef
 classlib
 classname
+classPath
 cmd # command
 cmds
 codebase
@@ -169,11 +180,13 @@ codepath
 codestyle
 coding
 colocation
+colorRef
 colspan
 combobox
 commithash
 commitid
 compat
+componentManager
 COMPUTERNAME
 concat
 cond
@@ -187,7 +200,10 @@ csvLine
 cur # current or cursor
 curLoc # current location
 curr # current
+customDomain
 cValue
+cVar
+cVars
 d0d0caca # ("doo-doo caca") https://en.wikipedia.org/wiki/Hexspeak
 dabbad00 # ("dabba doo") https://en.wikipedia.org/wiki/Hexspeak
 datadir
@@ -216,6 +232,10 @@ deallocations
 dealloced
 debugBreak
 decafbad # ("decaf bad") https://en.wikipedia.org/wiki/Hexspeak
+decompress
+decompressed
+decompressing
+decompressor
 defec8ed # ("defecated") https://en.wikipedia.org/wiki/Hexspeak
 defrag
 defragger # https://en.wiktionary.org/wiki/defragger
@@ -223,7 +243,9 @@ delim # short from of delimiter
 delims
 devcontainer
 deviceId
+deviceInfo
 deviceIp
+deviceName
 dirId
 dirLen
 dirPath
@@ -240,12 +262,17 @@ doublequote
 downloadFile
 downloadFolder
 downloadId
+dPad
+driveInfo
+driveName
+dSize
 dstFile
 dstStream
 dValue
 dword
 e011cfd0 # ("docfile0") https://en.wikipedia.org/wiki/Hexspeak
 endregion
+endScroll
 endtime
 endUnless
 entryName
@@ -258,6 +285,7 @@ esquery
 eventid
 eventLog
 eventqueue
+externalProject
 f00dbabe # ("food babe") https://en.wikipedia.org/wiki/Hexspeak
 f0cacc1a # ("focaccia") https://en.wikipedia.org/wiki/Hexspeak
 f1ac # ("FLAC") https://en.wikipedia.org/wiki/Hexspeak
@@ -272,12 +300,16 @@ feedc0de # ("feed code") https://en.wikipedia.org/wiki/Hexspeak
 feedfacecafebeef # ("feed face cafe beef") https://en.wikipedia.org/wiki/Hexspeak
 ffbadd11 # ("bad DLL") https://en.wikipedia.org/wiki/Hexspeak
 fileData
+fileDir
 fileExt
+fileFolder
 fileId
 fileIdx
 fileIndex
+fileInfo
 fileLen
 fileLog
+fileName
 fileoverview
 filePath
 fileUtil
@@ -285,14 +317,23 @@ fileUtils
 fillcolor
 fixedmode
 fixedsize
+folderInfo
+folderName
+frameBuffer
+fullScreen
 func # short for function
 fValue
+gamePad
+getFont
+getSel # get selected
 gettext
 gitignores
 gitroot
 globalstrict
+gnuLocaleDir
 GPIO
 gridcell
+groupBox
 gRPC
 gzFile
 gzipFile
@@ -300,25 +341,35 @@ hashable
 hashables
 hashbang
 hashbangs
+hBrush
+hCursor
 helloWorld
 hFile
 hicolor
+hIcon
 hiddenfolder
+hKey
+hModule
 hoistable # https://en.wiktionary.org/wiki/hoistable
 hola
 HOMEDRIVE
 HOMEPATH
 hostentry
 hrTime
+hScroll
 httpSocket
 httpUrl
+hWin
+hWnd
 iData
 ifnot
 iife # Immediately Invoked Function Expression
 iifes # Immediately Invoked Function Expressions
 imageSize
 importLib
+inBuffer
 indexFile
+instanceDir
 instanceof
 instantiatable
 intervalObj
@@ -342,6 +393,8 @@ javadoc
 jPos
 jsdoc
 jVal
+keyDown
+keyMenu
 keyname
 keyOf
 keyVault
@@ -350,11 +403,15 @@ kVal
 kvCopy # key value copy
 kvPair # key value pair
 laddrs # long address
+lButton
 leds
+libDir
+libDirs
 libgranite
 libgtk
 linebreak
 linebreaks
+lineDown
 linewidth
 linewidths
 linkcode # Docblock link
@@ -363,12 +420,25 @@ linkplain # Docblock link
 linkRef
 listbox
 LOCALEDIR
+localeInfo
 localizable
 localStorage
 LONGLONG
 lookaround
 lookbehinds
+lParam
+lpBuffer
+lpctStr
+lpDWord
+lptStr
+lpVoid
+lpWord
+lResult
+lSize
+lVar
+lVars
 maxCPUs
+mButton
 messageId
 messageIds
 messageList
@@ -376,10 +446,12 @@ migratable
 migratables
 minifier
 minify
+minMaxInfo
 mockFile
 mockFn
 mockFunction
 mockPath
+mouseWheel
 msgid
 msgList
 msgstr
@@ -394,6 +466,7 @@ newDir
 newFile
 newId
 nextIdx
+nFile
 nKey
 nocheck
 noCookie
@@ -415,6 +488,7 @@ notArray
 notObject
 OAuthLib
 objectId
+okCancel
 oldFile
 onabort
 onboard
@@ -448,6 +522,7 @@ onsuccess
 ontimeout
 onversionchange
 orderId
+outBuffer
 outDir
 pageData
 pageView
@@ -462,6 +537,7 @@ parentpath
 pausable
 pBuf
 pBuffer
+pcFileDir
 pConnection
 pFile
 PHPs
@@ -501,6 +577,7 @@ pseudoclass
 pseudoclasses
 pubkey # public key
 punycode
+pVar
 querystring
 quickstart
 quickstarter
@@ -508,10 +585,16 @@ quickstarters
 qunit
 qword
 radiogroup
+raycast
+raycasting
+raycasts
+rButton
+readDir
 readError
 readErrorLog
 readErrorLogs
 readErrors
+readFile
 readline
 realloc
 redeclaration
@@ -525,6 +608,7 @@ redetection
 ref # reference
 refCount # the reference count
 refCounting  # https://en.wikipedia.org/wiki/Reference_counting
+refNum
 refs # references
 refVal
 refValue
@@ -540,20 +624,28 @@ relDate
 relDateTime
 relTime
 reparse
+repoRoot
 rethrown
+retryCancel
 rewritable
 rootpath
 rowId
+rSize
 rulesdir
 rulesdirs
 runtimes
 sameSite
 schemeId
 screenShare
+scrollInfo
 searchbox
 securityLevel
 setAffinity
 setEnv
+setFont
+setRedraw
+setSel # set selected
+setText
 shiftleft
 shiftright
 shiftrightunsigned
@@ -562,6 +654,7 @@ shortcodes
 shortcutted
 shortpress
 sideEffect
+SIMD
 singleline
 singlequote
 sLen # often string length
@@ -571,11 +664,16 @@ smarttabs
 socketId
 somefile
 someHost # common in docs as `somehost`
+sourceIdx
 sqlservice
+srcDir
 srcFile
+srcFolder
 srcStream
 starttime
 staticFile
+stdCall
+stdWin
 strLen
 subdir
 subDirective
@@ -588,9 +686,13 @@ substr
 sUser # super user
 SwedenCentral # (Sweden Central Location in Azure)
 sysError
+sysKeyDown
+sysRoot
+sysRoots
 tabpanel
 tarFile
 tBody
+tChar
 tCol
 tDiff
 tempdir
@@ -615,6 +717,8 @@ testSuites
 testVal
 testValue
 testVar
+texCoord
+texCoords
 textbox
 textFile
 textFiles
@@ -626,12 +730,15 @@ tmbundle
 tmpDir
 tmpFile
 tmpStr
+topLeft
+topRight
 touchpad
 tPtr # temp pointer
 traceback
 tracebacks
 treeitem
 tRow
+tSize
 tValue
 typecheck
 typechecked
@@ -649,6 +756,10 @@ unaggregated
 unauth # unauthentication
 unauthed # unauthenticated
 unauths # unauthentications
+uncompress
+uncompressed
+uncompressing
+uncompressor
 uncustomized
 undeclare
 undef # Undefined
@@ -670,6 +781,7 @@ unignores
 uninstantiatable
 uniqueId
 uniqueIdentifier
+unixRoot
 unmangle
 unmangled
 unmock
@@ -682,6 +794,10 @@ unmunging
 unnest
 unnested
 unnesting
+unnormalize
+unnormalized
+unnormalizer
+unnormalizing
 unoptimized
 unpackage
 unpackaged
@@ -710,24 +826,38 @@ vala
 valign
 vals
 varstatement
+vCursor
 vFile
+vScroll
 waitfor
 waitUntil
 webextensions
 webIndex
 webIndexFile
 webserver
+widgetManager
 WindowsLogin
+wireframe
 workArea
+workDir
+workFolder
+wParam
+writeDir
+writeFile
 xCoord
 xCoords
 xKey
+xMax
+xMin
 xPos
 xVal
 xvfb
 yCoord
 yCoords
+yesNo
 yKey
+yMax
+yMin
 yPos
 yVal
 zCoord
@@ -735,138 +865,7 @@ zCoords
 zipFile
 zKey
 zLog
+zMax
+zMin
 zPos
 zVal
-bitCount
-bitSize
-bottomLeft
-bottomRight
-deviceInfo
-deviceName
-dPad
-driveInfo
-driveName
-endScroll
-fileInfo
-fileName
-folderInfo
-folderName
-gamePad
-getFont
-getSel # get selected
-gettext
-groupBox
-hBrush
-hCursor
-hIcon
-hKey
-hScroll
-hWnd
-hWin
-keyDown
-keyMenu
-lButton
-lineDown
-lParam
-lptStr
-lpctStr
-lpVoid
-mButton
-minMaxInfo
-mouseWheel
-okCancel
-rButton
-retryCancel
-scrollInfo
-setFont
-setRedraw
-setSel # set selected
-setText
-stdCall
-stdWin
-sysKeyDown
-topLeft
-topRight
-vCursor
-vScroll
-wParam
-yesNo
-tChar
-lpWord
-lpDWord
-hModule
-lResult
-colorRef
-refNum
-rSize
-tSize
-lSize
-bSize
-dSize
-uncompress
-uncompressed
-uncompressor
-uncompressing
-decompressor
-decompressed
-decompressing
-decompress
-inBuffer
-outBuffer
-lpBuffer
-cVar
-cVars
-lVar
-lVars
-pVar
-SIMD
-fullScreen
-wireframe
-texCoords
-texCoord
-raycast
-raycasting
-raycasts
-xMin
-xMax
-yMin
-yMax
-zMin
-zMax
-frameBuffer
-unnormalized
-unnormalize
-unnormalizer
-unnormalizing
-repoRoot
-gnuLocaleDir
-localeInfo
-instanceDir
-sourceIdx
-categoryName
-nFile
-widgetManager
-componentManager
-unixRoot
-workDir
-workFolder
-fileDir
-fileFolder
-changeList
-changeLists
-sysRoot
-sysRoots
-libDir
-libDirs
-pcFileDir
-externalProject
-readFile
-writeFile
-readDir
-writeDir
-customDomain
-srcDir
-srcFolder
-buildFolder
-azureTools
-classPath
