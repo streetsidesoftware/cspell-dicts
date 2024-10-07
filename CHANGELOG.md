@@ -1,5 +1,13 @@
 # Release Notes
 
+## [27.5.8](https://github.com/streetsidesoftware/cspell-dicts/compare/cspell-dicts@27.5.7...cspell-dicts@27.5.8) (2024-10-07)
+
+
+### Updates and Bug Fixes
+
+* add llm terms ([#3647](https://github.com/streetsidesoftware/cspell-dicts/issues/3647)) ([a6afaf3](https://github.com/streetsidesoftware/cspell-dicts/commit/a6afaf30b7f2c04f471234b625d8877bbfb09f77))
+* Workflow Bot -- Build Dictionaries ([#3649](https://github.com/streetsidesoftware/cspell-dicts/issues/3649)) ([e785068](https://github.com/streetsidesoftware/cspell-dicts/commit/e7850682033573787480ec9c1ca235daa12d73bd))
+
 ## [27.5.7](https://github.com/streetsidesoftware/cspell-dicts/compare/cspell-dicts@27.5.6...cspell-dicts@27.5.7) (2024-10-06)
 
 
