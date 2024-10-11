@@ -22,6 +22,13 @@ See [Conventional Commits](https://conventionalcommits.org) for commit guideline
 
 
 
+## [3.1.3](https://github.com/streetsidesoftware/cspell-dicts/compare/@cspell/dict-it-it@3.1.2...@cspell/dict-it-it@3.1.3) (2024-10-11)
+
+
+### Updates and Bug Fixes
+
+* Update package git url ([#3667](https://github.com/streetsidesoftware/cspell-dicts/issues/3667)) ([629c7d0](https://github.com/streetsidesoftware/cspell-dicts/commit/629c7d0a5e1bacad1d3874b1f8372edc3494ef97))
+
 ## [3.1.2](https://github.com/streetsidesoftware/cspell-dicts/compare/@cspell/dict-it-it@3.1.1...@cspell/dict-it-it@3.1.2) (2024-10-11)
 
 

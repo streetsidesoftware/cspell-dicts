@@ -22,6 +22,13 @@ See [Conventional Commits](https://conventionalcommits.org) for commit guideline
 
 
 
+## [4.0.16](https://github.com/streetsidesoftware/cspell-dicts/compare/@cspell/dict-css@4.0.15...@cspell/dict-css@4.0.16) (2024-10-11)
+
+
+### Updates and Bug Fixes
+
+* Update package git url ([#3667](https://github.com/streetsidesoftware/cspell-dicts/issues/3667)) ([629c7d0](https://github.com/streetsidesoftware/cspell-dicts/commit/629c7d0a5e1bacad1d3874b1f8372edc3494ef97))
+
 ## [4.0.15](https://github.com/streetsidesoftware/cspell-dicts/compare/@cspell/dict-css@4.0.14...@cspell/dict-css@4.0.15) (2024-10-11)
 
 
