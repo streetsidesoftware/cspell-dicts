@@ -4,7 +4,8 @@
   "description": "English words shared between the various English dictionaries. -- Private until verified",
   "private": true,
   "publishConfig": {
-    "access": "public"
+    "access": "public",
+    "provenance": true
   },
   "exports": {
     ".": "./cspell-ext.json",

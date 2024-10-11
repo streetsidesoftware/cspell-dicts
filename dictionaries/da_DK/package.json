@@ -3,7 +3,8 @@
   "version": "4.0.0",
   "description": "Danish dictionary for CSpell.",
   "publishConfig": {
-    "access": "public"
+    "access": "public",
+    "provenance": true
   },
   "exports": {
     ".": "./cspell-ext.json",
