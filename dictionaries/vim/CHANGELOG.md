@@ -1,5 +1,12 @@
 # Change Log
 
+## [1.0.7](https://github.com/streetsidesoftware/cspell-dicts/compare/@cspell/dict-vim@1.0.6...@cspell/dict-vim@1.0.7) (2024-10-11)
+
+
+### Updates and Bug Fixes
+
+* Update package git url ([#3667](https://github.com/streetsidesoftware/cspell-dicts/issues/3667)) ([629c7d0](https://github.com/streetsidesoftware/cspell-dicts/commit/629c7d0a5e1bacad1d3874b1f8372edc3494ef97))
+
 ## [1.0.6](https://github.com/streetsidesoftware/cspell-dicts/compare/@cspell/dict-vim@1.0.5...@cspell/dict-vim@1.0.6) (2024-10-11)
 
 
