@@ -3,6 +3,13 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+## [5.1.21](https://github.com/streetsidesoftware/cspell-dicts/compare/@cspell/dict-cpp@5.1.20...@cspell/dict-cpp@5.1.21) (2024-10-11)
+
+
+### Updates and Bug Fixes
+
+* Fix the git repository URL ([#3665](https://github.com/streetsidesoftware/cspell-dicts/issues/3665)) ([ac050b6](https://github.com/streetsidesoftware/cspell-dicts/commit/ac050b697d57820109995e92fac5ccc32ced1723))
+
 ## [5.1.20](https://github.com/streetsidesoftware/cspell-dicts/compare/@cspell/dict-cpp@5.1.19...@cspell/dict-cpp@5.1.20) (2024-10-11)
 
 

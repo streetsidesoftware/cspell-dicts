@@ -1,5 +1,12 @@
 # Changelog
 
+## [1.2.2](https://github.com/streetsidesoftware/cspell-dicts/compare/@cspell/dict-de-ch@1.2.1...@cspell/dict-de-ch@1.2.2) (2024-10-11)
+
+
+### Updates and Bug Fixes
+
+* Fix the git repository URL ([#3665](https://github.com/streetsidesoftware/cspell-dicts/issues/3665)) ([ac050b6](https://github.com/streetsidesoftware/cspell-dicts/commit/ac050b697d57820109995e92fac5ccc32ced1723))
+
 ## [1.2.1](https://github.com/streetsidesoftware/cspell-dicts/compare/@cspell/dict-de-ch@1.2.0...@cspell/dict-de-ch@1.2.1) (2024-10-11)
 
 
