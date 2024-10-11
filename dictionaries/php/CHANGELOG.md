@@ -22,6 +22,13 @@ See [Conventional Commits](https://conventionalcommits.org) for commit guideline
 
 
 
+## [4.0.11](https://github.com/streetsidesoftware/cspell-dicts/compare/@cspell/dict-php@4.0.10...@cspell/dict-php@4.0.11) (2024-10-11)
+
+
+### Updates and Bug Fixes
+
+* Sign all dictionaries ([#3661](https://github.com/streetsidesoftware/cspell-dicts/issues/3661)) ([6b8d560](https://github.com/streetsidesoftware/cspell-dicts/commit/6b8d560cf51a593458ce42bca415859f872cfc97))
+
 ## [4.0.10](https://github.com/streetsidesoftware/cspell-dicts/compare/@cspell/dict-php@4.0.9...@cspell/dict-php@4.0.10) (2024-08-26)
 
 
