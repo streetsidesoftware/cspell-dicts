@@ -3,6 +3,13 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+## [5.1.20](https://github.com/streetsidesoftware/cspell-dicts/compare/@cspell/dict-cpp@5.1.19...@cspell/dict-cpp@5.1.20) (2024-10-11)
+
+
+### Updates and Bug Fixes
+
+* Sign all dictionaries ([#3661](https://github.com/streetsidesoftware/cspell-dicts/issues/3661)) ([6b8d560](https://github.com/streetsidesoftware/cspell-dicts/commit/6b8d560cf51a593458ce42bca415859f872cfc97))
+
 ## [5.1.19](https://github.com/streetsidesoftware/cspell-dicts/compare/@cspell/dict-cpp@5.1.18...@cspell/dict-cpp@5.1.19) (2024-10-06)
 
 

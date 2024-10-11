@@ -1,5 +1,13 @@
 # Change Log
 
+## [1.0.15](https://github.com/streetsidesoftware/cspell-dicts/compare/@cspell/dict-en-shared@1.0.14...@cspell/dict-en-shared@1.0.15) (2024-10-11)
+
+
+### Updates and Bug Fixes
+
+* **shared-additional-words:** haptic/s ([#3659](https://github.com/streetsidesoftware/cspell-dicts/issues/3659)) ([e33b9e2](https://github.com/streetsidesoftware/cspell-dicts/commit/e33b9e2948825e138b443fa4f5989c5c2f5082da))
+* Sign all dictionaries ([#3661](https://github.com/streetsidesoftware/cspell-dicts/issues/3661)) ([6b8d560](https://github.com/streetsidesoftware/cspell-dicts/commit/6b8d560cf51a593458ce42bca415859f872cfc97))
+
 ## [1.0.14](https://github.com/streetsidesoftware/cspell-dicts/compare/@cspell/dict-en-shared@1.0.13...@cspell/dict-en-shared@1.0.14) (2024-06-20)
 
 

@@ -22,6 +22,13 @@ See [Conventional Commits](https://conventionalcommits.org) for commit guideline
 
 
 
+## [3.0.3](https://github.com/streetsidesoftware/cspell-dicts/compare/@cspell/dict-bg-bg@3.0.2...@cspell/dict-bg-bg@3.0.3) (2024-10-11)
+
+
+### Updates and Bug Fixes
+
+* Sign all dictionaries ([#3661](https://github.com/streetsidesoftware/cspell-dicts/issues/3661)) ([6b8d560](https://github.com/streetsidesoftware/cspell-dicts/commit/6b8d560cf51a593458ce42bca415859f872cfc97))
+
 ## [3.0.2](https://github.com/streetsidesoftware/cspell-dicts/compare/@cspell/dict-bg-bg@3.0.1...@cspell/dict-bg-bg@3.0.2) (2023-07-03)
 
 
