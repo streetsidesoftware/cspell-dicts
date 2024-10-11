@@ -1,5 +1,12 @@
 # Changelog
 
+## [1.0.8](https://github.com/streetsidesoftware/cspell-dicts/compare/@cspell/dict-k8s@1.0.7...@cspell/dict-k8s@1.0.8) (2024-10-11)
+
+
+### Updates and Bug Fixes
+
+* Fix the git repository URL ([#3665](https://github.com/streetsidesoftware/cspell-dicts/issues/3665)) ([ac050b6](https://github.com/streetsidesoftware/cspell-dicts/commit/ac050b697d57820109995e92fac5ccc32ced1723))
+
 ## [1.0.7](https://github.com/streetsidesoftware/cspell-dicts/compare/@cspell/dict-k8s@1.0.6...@cspell/dict-k8s@1.0.7) (2024-10-11)
 
 
