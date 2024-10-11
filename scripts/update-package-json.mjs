@@ -24,6 +24,10 @@ async function updatePackageJson(pkgFile) {
 
     pkg.repository = repository;
     pkg.author = 'Street Side Software <support@streetsidesoftware.nl>';
+    pkg.publishConfig = {
+        access: 'public',
+        provenance: true,
+    };
 
     await fs.writeFile(pkgFile, JSON.stringify(pkg, null, 2) + '\n');
 }

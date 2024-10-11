@@ -4,7 +4,8 @@
   "description": "Estonian dictionary for cspell.",
   "private": false,
   "publishConfig": {
-    "access": "public"
+    "access": "public",
+    "provenance": true
   },
   "exports": {
     ".": "./cspell-ext.json",

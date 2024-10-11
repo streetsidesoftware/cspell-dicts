@@ -3,7 +3,8 @@
   "version": "1.1.1",
   "description": "People Names dictionary for cspell.",
   "publishConfig": {
-    "access": "public"
+    "access": "public",
+    "provenance": true
   },
   "exports": {
     ".": "./cspell-ext.json",
@@ -18,7 +19,8 @@
   },
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/streetsidesoftware/cspell-dicts.git"
+    "url": "https://github.com/streetsidesoftware/cspell-dict.git",
+    "directory": "dictionaries/people-names"
   },
   "keywords": [
     "cspell",
@@ -28,7 +30,7 @@
     "dictionary",
     "spelling"
   ],
-  "author": "Street Side Software",
+  "author": "Street Side Software <support@streetsidesoftware.nl>",
   "contributors": [],
   "license": "MIT",
   "bugs": {
