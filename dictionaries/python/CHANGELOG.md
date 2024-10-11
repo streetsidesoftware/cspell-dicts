@@ -3,6 +3,13 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+## [4.2.10](https://github.com/streetsidesoftware/cspell-dicts/compare/@cspell/dict-python@4.2.9...@cspell/dict-python@4.2.10) (2024-10-11)
+
+
+### Updates and Bug Fixes
+
+* Fix the git repository URL ([#3665](https://github.com/streetsidesoftware/cspell-dicts/issues/3665)) ([ac050b6](https://github.com/streetsidesoftware/cspell-dicts/commit/ac050b697d57820109995e92fac5ccc32ced1723))
+
 ## [4.2.9](https://github.com/streetsidesoftware/cspell-dicts/compare/@cspell/dict-python@4.2.8...@cspell/dict-python@4.2.9) (2024-10-11)
 
 
