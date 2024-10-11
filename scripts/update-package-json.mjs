@@ -18,7 +18,7 @@ async function updatePackageJson(pkgFile) {
 
     const repository = {
         type: 'git',
-        url: 'https://github.com/streetsidesoftware/cspell-dict',
+        url: 'https://github.com/streetsidesoftware/cspell-dicts',
         directory,
     };
 
