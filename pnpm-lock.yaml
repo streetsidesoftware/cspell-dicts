@@ -2774,8 +2774,8 @@ packages:
   mdast-util-to-string@4.0.0:
     resolution: {integrity: sha512-0H44vDimn51F0YwvxSJSm0eCDOJTRlmN0R1yBh4HLj9wiV1Dn0QoXGbvFAWj2hSItVTlCmBF1hqKlIyUBVFLPg==}
 
-  mem-fs-editor@11.1.1:
-    resolution: {integrity: sha512-bjBczabthdOjNE9+gRk+wObTihMgwkrhr/ffk7e+adZk0F5I3i5fE/MApOwSG/JYmFAfpoThPkA6i+kKShcl0w==}
+  mem-fs-editor@11.1.2:
+    resolution: {integrity: sha512-yUVFK96XhGv31iWZ3G60pGNIuXuZTUsWz0GQzv9ffjYFf1oXs0PcD3LFZHzRDImH+Da21x/C4csEjN0W5ygdQA==}
     engines: {node: '>=18.0.0'}
     peerDependencies:
       mem-fs: ^4.0.0
@@ -3218,8 +3218,8 @@ packages:
     resolution: {integrity: sha512-UbD77BuZ9Bc9aABo74gfXhNvzC9Tx7SxtHSh1fxvx3jTLLYvmVhiQZZrJzqqU0jKbN32kb5VOKiLEQI/3bIjgQ==}
     engines: {node: '>=14.16'}
 
-  p-transform@4.1.5:
-    resolution: {integrity: sha512-CsXIiCOeBUYMBLpcY71DTq+fg8268ux31pAxI5TcoYEPfWCw5ozrbgWdZ9QmSDd8dUzvNXtmiwJOdTIxIFptfQ==}
+  p-transform@4.1.6:
+    resolution: {integrity: sha512-ub9xBaRuk5FhfyzJv9y4OF8i7/3wH0gRG4C3jUp2pFcoftzkopgr6H0BJNcvbJBGsr7KmHHNWN+DCRPfPBIlAQ==}
     engines: {node: '>=16.13.0'}
 
   p-try@2.2.0:
@@ -4048,8 +4048,8 @@ packages:
   yallist@4.0.0:
     resolution: {integrity: sha512-3wdGidZyq5PB084XLES5TpOSRA3wjXAlIWMhum2kRcv/41Sn2emQ0dycQW4uZXLejwKvg6EsvbdlVL+FYEct7A==}
 
-  yaml@2.5.1:
-    resolution: {integrity: sha512-bLQOjaX/ADgQ20isPJRvF0iRUHIxVhYvr53Of7wGcWlO2jvtUlH5m87DsmulFVxRpNLOnI4tB6p/oh8D7kpn9Q==}
+  yaml@2.6.0:
+    resolution: {integrity: sha512-a6ae//JvKDEra2kdi1qzCyrJW/WZCgFi8ydDV+eXExl95t+5R+ijnqHJbz9tmMh8FUjx3iv2fCQ4dclAQlO2UQ==}
     engines: {node: '>= 14'}
     hasBin: true
 
@@ -4200,7 +4200,7 @@ snapshots:
       cspell-trie-lib: 8.15.1
       glob: 10.4.5
       hunspell-reader: 8.15.1
-      yaml: 2.5.1
+      yaml: 2.6.0
     transitivePeerDependencies:
       - typescript
 
@@ -5164,9 +5164,9 @@ snapshots:
       diff: 7.0.0
       isbinaryfile: 5.0.2
       mem-fs: 4.1.0
-      mem-fs-editor: 11.1.1(mem-fs@4.1.0)
+      mem-fs-editor: 11.1.2(mem-fs@4.1.0)
       minimatch: 9.0.5
-      p-transform: 4.1.5
+      p-transform: 4.1.6
       pretty-bytes: 6.1.1
       slash: 5.1.0
       textextensions: 6.11.0
@@ -5701,7 +5701,7 @@ snapshots:
     dependencies:
       '@cspell/cspell-types': 8.15.1
       comment-json: 4.2.5
-      yaml: 2.5.1
+      yaml: 2.6.0
 
   cspell-dictionary@8.15.1:
     dependencies:
@@ -6875,10 +6875,10 @@ snapshots:
     dependencies:
       '@types/mdast': 4.0.4
 
-  mem-fs-editor@11.1.1(mem-fs@4.1.0):
+  mem-fs-editor@11.1.2(mem-fs@4.1.0):
     dependencies:
       '@types/ejs': 3.1.5
-      '@types/node': 18.19.55
+      '@types/node': 22.7.5
       binaryextensions: 6.11.0
       commondir: 1.0.1
       deep-extend: 0.6.0
@@ -7491,9 +7491,9 @@ snapshots:
 
   p-timeout@6.1.2: {}
 
-  p-transform@4.1.5:
+  p-transform@4.1.6:
     dependencies:
-      '@types/node': 16.18.113
+      '@types/node': 22.7.5
       p-queue: 7.4.1
       readable-stream: 4.5.2
 
@@ -8353,7 +8353,7 @@ snapshots:
 
   yallist@4.0.0: {}
 
-  yaml@2.5.1: {}
+  yaml@2.6.0: {}
 
   yamljs@0.3.0:
     dependencies:
@@ -8390,7 +8390,7 @@ snapshots:
       locate-path: 7.2.0
       lodash-es: 4.17.21
       mem-fs: 4.1.0
-      mem-fs-editor: 11.1.1(mem-fs@4.1.0)
+      mem-fs-editor: 11.1.2(mem-fs@4.1.0)
       semver: 7.6.3
       slash: 5.1.0
       untildify: 5.0.0
@@ -8414,7 +8414,7 @@ snapshots:
       latest-version: 7.0.0
       lodash-es: 4.17.21
       mem-fs: 4.1.0
-      mem-fs-editor: 11.1.1(mem-fs@4.1.0)
+      mem-fs-editor: 11.1.2(mem-fs@4.1.0)
       minimist: 1.2.8
       read-package-up: 11.0.0
       semver: 7.6.3
