@@ -1,9 +1,10 @@
 {
   "name": "@cspell/dict-medicalterms",
-  "version": "4.1.2",
+  "version": "4.1.5",
   "description": "Medical Terms dictionary for cspell.",
   "publishConfig": {
-    "access": "public"
+    "access": "public",
+    "provenance": true
   },
   "exports": {
     ".": "./cspell-ext.json",
@@ -21,7 +22,7 @@
   },
   "repository": {
     "type": "git",
-    "url": "https://github.com/streetsidesoftware/cspell-dict.git",
+    "url": "https://github.com/streetsidesoftware/cspell-dicts",
     "directory": "dictionaries/medicalterms"
   },
   "keywords": [

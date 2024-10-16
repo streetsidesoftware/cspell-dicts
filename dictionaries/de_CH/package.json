@@ -1,9 +1,10 @@
 {
   "name": "@cspell/dict-de-ch",
-  "version": "1.2.0",
+  "version": "1.2.3",
   "description": "Swiss German dictionary for CSpell.",
   "publishConfig": {
-    "access": "public"
+    "access": "public",
+    "provenance": true
   },
   "exports": {
     ".": "./cspell-ext.json",
@@ -23,7 +24,7 @@
   },
   "repository": {
     "type": "git",
-    "url": "https://github.com/streetsidesoftware/cspell-dict.git",
+    "url": "https://github.com/streetsidesoftware/cspell-dicts",
     "directory": "dictionaries/de_CH"
   },
   "keywords": [

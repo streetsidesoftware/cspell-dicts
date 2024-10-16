@@ -10,6 +10,7 @@
 4b1d # ("forbid") https://en.wikipedia.org/wiki/Hexspeak
 50ffc001 # ("soff[t] cool") https://en.wikipedia.org/wiki/Hexspeak
 8badf00d # ("ate bad food") https://en.wikipedia.org/wiki/Hexspeak
+aarch64
 abab # hex test sequence
 abadbabe # ("a bad babe") https://en.wikipedia.org/wiki/Hexspeak
 abcba # hex test sequence
@@ -40,6 +41,7 @@ aead # [authenticated encryption with associated data](https://en.wikipedia.org/
 agentLess
 alloc # memory allocation
 allocs
+appdata
 astype
 auth # authentication
 authed # authenticated
@@ -78,8 +80,10 @@ autoMocks
 autoproxy
 autoScroll
 autoSpy
+azdo # Azure DevOps
 azureCR # (Azure Container Registry)
 azureRM # (Azure Resource Manager)
+azureTools
 azureWebsites # (azurewebsites.net domain)
 b0bababe # ("boba babe") https://en.wikipedia.org/wiki/Hexspeak
 b105f00d # ("BIOS food") https://en.wikipedia.org/wiki/Hexspeak
@@ -101,7 +105,9 @@ basePath
 basePtr
 beefbabe # ("beef babe") https://en.wikipedia.org/wiki/Hexspeak
 bitand
+bitCount
 bitor
+bitSize
 bitxor
 blockcount
 blockless
@@ -115,13 +121,20 @@ boilerplate
 boilerplated
 boilerplates
 boilerplating
+bootloader
 bork
 borked # https://en.wiktionary.org/wiki/borked
+bottomLeft
+bottomRight
 braceless
 browserConfig
 browserstack
+bSize
 bufIndex
 bufSize
+builddir
+buildFolder
+buildsystem
 buildtime
 builtins
 bzFile
@@ -139,6 +152,7 @@ callstack
 camelcase
 camelcased
 castable
+categoryName
 CDATA
 CDATASection
 cefaedfe # ("face feed") https://en.wikipedia.org/wiki/Hexspeak
@@ -146,12 +160,15 @@ cert # Certificate
 certId
 certStore
 changeDir
+changeList
+changeLists
 checkstyle
 childNode
 childpath
 classdef
 classlib
 classname
+classPath
 cmd # command
 cmds
 codebase
@@ -164,11 +181,13 @@ codepath
 codestyle
 coding
 colocation
+colorRef
 colspan
 combobox
 commithash
 commitid
 compat
+componentManager
 COMPUTERNAME
 concat
 cond
@@ -182,9 +201,13 @@ csvLine
 cur # current or cursor
 curLoc # current location
 curr # current
+customDomain
 cValue
+cVar
+cVars
 d0d0caca # ("doo-doo caca") https://en.wikipedia.org/wiki/Hexspeak
 dabbad00 # ("dabba doo") https://en.wikipedia.org/wiki/Hexspeak
+datadir
 dataFile
 dateInterval
 dateObject
@@ -210,13 +233,20 @@ deallocations
 dealloced
 debugBreak
 decafbad # ("decaf bad") https://en.wikipedia.org/wiki/Hexspeak
+decompress
+decompressed
+decompressing
+decompressor
 defec8ed # ("defecated") https://en.wikipedia.org/wiki/Hexspeak
 defrag
 defragger # https://en.wiktionary.org/wiki/defragger
 delim # short from of delimiter
 delims
+devcontainer
 deviceId
+deviceInfo
 deviceIp
+deviceName
 dirId
 dirLen
 dirPath
@@ -233,11 +263,17 @@ doublequote
 downloadFile
 downloadFolder
 downloadId
+dPad
+driveInfo
+driveName
+dSize
 dstFile
 dstStream
 dValue
 dword
 e011cfd0 # ("docfile0") https://en.wikipedia.org/wiki/Hexspeak
+endregion
+endScroll
 endtime
 endUnless
 entryName
@@ -249,6 +285,8 @@ errormessage
 esquery
 eventid
 eventLog
+eventqueue
+externalProject
 f00dbabe # ("food babe") https://en.wikipedia.org/wiki/Hexspeak
 f0cacc1a # ("focaccia") https://en.wikipedia.org/wiki/Hexspeak
 f1ac # ("FLAC") https://en.wikipedia.org/wiki/Hexspeak
@@ -263,12 +301,16 @@ feedc0de # ("feed code") https://en.wikipedia.org/wiki/Hexspeak
 feedfacecafebeef # ("feed face cafe beef") https://en.wikipedia.org/wiki/Hexspeak
 ffbadd11 # ("bad DLL") https://en.wikipedia.org/wiki/Hexspeak
 fileData
+fileDir
 fileExt
+fileFolder
 fileId
 fileIdx
 fileIndex
+fileInfo
 fileLen
 fileLog
+fileName
 fileoverview
 filePath
 fileUtil
@@ -276,12 +318,23 @@ fileUtils
 fillcolor
 fixedmode
 fixedsize
+folderInfo
+folderName
+frameBuffer
+fullScreen
 func # short for function
 fValue
+gamePad
+getFont
+getSel # get selected
+gettext
 gitignores
 gitroot
 globalstrict
+gnuLocaleDir
+GPIO
 gridcell
+groupBox
 gRPC
 gzFile
 gzipFile
@@ -289,24 +342,35 @@ hashable
 hashables
 hashbang
 hashbangs
+hBrush
+hCursor
 helloWorld
 hFile
+hicolor
+hIcon
 hiddenfolder
+hKey
+hModule
 hoistable # https://en.wiktionary.org/wiki/hoistable
 hola
 HOMEDRIVE
 HOMEPATH
 hostentry
 hrTime
+hScroll
 httpSocket
 httpUrl
+hWin
+hWnd
 iData
 ifnot
 iife # Immediately Invoked Function Expression
 iifes # Immediately Invoked Function Expressions
 imageSize
 importLib
+inBuffer
 indexFile
+instanceDir
 instanceof
 instantiatable
 intervalObj
@@ -330,6 +394,8 @@ javadoc
 jPos
 jsdoc
 jVal
+keyDown
+keyMenu
 keyname
 keyOf
 keyVault
@@ -338,8 +404,15 @@ kVal
 kvCopy # key value copy
 kvPair # key value pair
 laddrs # long address
+lButton
+leds
+libDir
+libDirs
+libgranite
+libgtk
 linebreak
 linebreaks
+lineDown
 linewidth
 linewidths
 linkcode # Docblock link
@@ -347,12 +420,26 @@ linkName
 linkplain # Docblock link
 linkRef
 listbox
+LOCALEDIR
+localeInfo
 localizable
 localStorage
 LONGLONG
 lookaround
 lookbehinds
+lParam
+lpBuffer
+lpctStr
+lpDWord
+lptStr
+lpVoid
+lpWord
+lResult
+lSize
+lVar
+lVars
 maxCPUs
+mButton
 messageId
 messageIds
 messageList
@@ -360,13 +447,18 @@ migratable
 migratables
 minifier
 minify
+minMaxInfo
 mockFile
 mockFn
 mockFunction
 mockPath
+mouseWheel
+msgid
 msgList
+msgstr
 MSSQLSERVER
 multipass
+multitouch
 nbtstat
 netstat
 NEWDATE
@@ -375,6 +467,7 @@ newDir
 newFile
 newId
 nextIdx
+nFile
 nKey
 nocheck
 noCookie
@@ -396,6 +489,7 @@ notArray
 notObject
 OAuthLib
 objectId
+okCancel
 oldFile
 onabort
 onboard
@@ -429,6 +523,7 @@ onsuccess
 ontimeout
 onversionchange
 orderId
+outBuffer
 outDir
 pageData
 pageView
@@ -443,9 +538,13 @@ parentpath
 pausable
 pBuf
 pBuffer
+pcFileDir
 pConnection
 pFile
 PHPs
+pkgconfig
+PKGDATADIR
+platformio
 pluggable
 plusplus
 postprocess
@@ -479,6 +578,7 @@ pseudoclass
 pseudoclasses
 pubkey # public key
 punycode
+pVar
 querystring
 quickstart
 quickstarter
@@ -486,10 +586,16 @@ quickstarters
 qunit
 qword
 radiogroup
+raycast
+raycasting
+raycasts
+rButton
+readDir
 readError
 readErrorLog
 readErrorLogs
 readErrors
+readFile
 readline
 realloc
 redeclaration
@@ -503,6 +609,7 @@ redetection
 ref # reference
 refCount # the reference count
 refCounting  # https://en.wikipedia.org/wiki/Reference_counting
+refNum
 refs # references
 refVal
 refValue
@@ -518,27 +625,37 @@ relDate
 relDateTime
 relTime
 reparse
+repoRoot
 rethrown
+retryCancel
 rewritable
 rootpath
 rowId
+rSize
 rulesdir
 rulesdirs
 runtimes
 sameSite
 schemeId
 screenShare
+scrollInfo
 searchbox
 securityLevel
 setAffinity
 setEnv
+setFont
+setRedraw
+setSel # set selected
+setText
 shiftleft
 shiftright
 shiftrightunsigned
 shortcode
 shortcodes
 shortcutted
+shortpress
 sideEffect
+SIMD
 singleline
 singlequote
 sLen # often string length
@@ -548,11 +665,16 @@ smarttabs
 socketId
 somefile
 someHost # common in docs as `somehost`
+sourceIdx
 sqlservice
+srcDir
 srcFile
+srcFolder
 srcStream
 starttime
 staticFile
+stdCall
+stdWin
 strLen
 subdir
 subDirective
@@ -565,9 +687,13 @@ substr
 sUser # super user
 SwedenCentral # (Sweden Central Location in Azure)
 sysError
+sysKeyDown
+sysRoot
+sysRoots
 tabpanel
 tarFile
 tBody
+tChar
 tCol
 tDiff
 tempdir
@@ -580,32 +706,40 @@ terms
 testcase
 testcases
 testEnv
-testfile
-testfiles
+testFile
+testFiles
+testId
 testMessage
 testMsg
 testParam
 testParams
-testsuite
-testsuites
+testSuite
+testSuites
 testVal
 testValue
 testVar
+texCoord
+texCoords
 textbox
-textfile
-textfiles
+textFile
+textFiles
 tFoot
 tHead
+tickrate
 timeInterval
 tmbundle
 tmpDir
 tmpFile
 tmpStr
+topLeft
+topRight
+touchpad
 tPtr # temp pointer
 traceback
 tracebacks
 treeitem
 tRow
+tSize
 tValue
 typecheck
 typechecked
@@ -617,11 +751,16 @@ tzId # Timezone ID
 tzObj # Timezone object
 uCoord
 uCoords
+udev
 ulong
 unaggregated
 unauth # unauthentication
 unauthed # unauthenticated
 unauths # unauthentications
+uncompress
+uncompressed
+uncompressing
+uncompressor
 uncustomized
 undeclare
 undef # Undefined
@@ -643,6 +782,7 @@ unignores
 uninstantiatable
 uniqueId
 uniqueIdentifier
+unixRoot
 unmangle
 unmangled
 unmock
@@ -655,6 +795,10 @@ unmunging
 unnest
 unnested
 unnesting
+unnormalize
+unnormalized
+unnormalizer
+unnormalizing
 unoptimized
 unpackage
 unpackaged
@@ -679,26 +823,42 @@ ushort
 uVal
 uword
 val
+vala
 valign
 vals
 varstatement
+vCursor
 vFile
+vScroll
 waitfor
 waitUntil
 webextensions
 webIndex
 webIndexFile
 webserver
+widgetManager
 WindowsLogin
+wireframe
 workArea
+workDir
+workFolder
+wParam
+writeDir
+writeFile
 xCoord
 xCoords
 xKey
+xMax
+xMin
 xPos
 xVal
+xvfb
 yCoord
 yCoords
+yesNo
 yKey
+yMax
+yMin
 yPos
 yVal
 zCoord
@@ -706,5 +866,7 @@ zCoords
 zipFile
 zKey
 zLog
+zMax
+zMin
 zPos
 zVal

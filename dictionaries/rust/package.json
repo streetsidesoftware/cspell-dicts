@@ -1,9 +1,10 @@
 {
   "name": "@cspell/dict-rust",
-  "version": "4.0.5",
+  "version": "4.0.9",
   "description": "Rust dictionary for cspell.",
   "publishConfig": {
-    "access": "public"
+    "access": "public",
+    "provenance": true
   },
   "exports": {
     ".": "./cspell-ext.json",
@@ -18,7 +19,7 @@
   },
   "repository": {
     "type": "git",
-    "url": "https://github.com/streetsidesoftware/cspell-dict.git",
+    "url": "https://github.com/streetsidesoftware/cspell-dicts",
     "directory": "dictionaries/rust"
   },
   "keywords": [

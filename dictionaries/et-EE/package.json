@@ -1,10 +1,11 @@
 {
   "name": "@cspell/dict-et-ee",
-  "version": "3.1.0",
+  "version": "3.1.3",
   "description": "Estonian dictionary for cspell.",
   "private": false,
   "publishConfig": {
-    "access": "public"
+    "access": "public",
+    "provenance": true
   },
   "exports": {
     ".": "./cspell-ext.json",
@@ -25,7 +26,7 @@
   },
   "repository": {
     "type": "git",
-    "url": "https://github.com/streetsidesoftware/cspell-dict.git",
+    "url": "https://github.com/streetsidesoftware/cspell-dicts",
     "directory": "dictionaries/et-EE"
   },
   "keywords": [

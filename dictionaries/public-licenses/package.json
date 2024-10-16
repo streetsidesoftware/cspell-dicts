@@ -1,10 +1,11 @@
 {
   "name": "@cspell/dict-public-licenses",
-  "version": "2.0.8",
+  "version": "2.0.11",
   "description": "Common Public Licenses dictionary for cspell.",
   "private": false,
   "publishConfig": {
-    "access": "public"
+    "access": "public",
+    "provenance": true
   },
   "exports": {
     ".": "./cspell-ext.json",
@@ -25,7 +26,7 @@
   },
   "repository": {
     "type": "git",
-    "url": "https://github.com/streetsidesoftware/cspell-dict.git",
+    "url": "https://github.com/streetsidesoftware/cspell-dicts",
     "directory": "dictionaries/public-licenses"
   },
   "keywords": [

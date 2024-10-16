@@ -1,5 +1,64 @@
 # Release Notes
 
+## [27.5.11](https://github.com/streetsidesoftware/cspell-dicts/compare/cspell-dicts@27.5.10...cspell-dicts@27.5.11) (2024-10-11)
+
+
+### Updates and Bug Fixes
+
+* Update package git url ([#3667](https://github.com/streetsidesoftware/cspell-dicts/issues/3667)) ([629c7d0](https://github.com/streetsidesoftware/cspell-dicts/commit/629c7d0a5e1bacad1d3874b1f8372edc3494ef97))
+
+## [27.5.10](https://github.com/streetsidesoftware/cspell-dicts/compare/cspell-dicts@27.5.9...cspell-dicts@27.5.10) (2024-10-11)
+
+
+### Updates and Bug Fixes
+
+* Fix the git repository URL ([#3665](https://github.com/streetsidesoftware/cspell-dicts/issues/3665)) ([ac050b6](https://github.com/streetsidesoftware/cspell-dicts/commit/ac050b697d57820109995e92fac5ccc32ced1723))
+
+## [27.5.9](https://github.com/streetsidesoftware/cspell-dicts/compare/cspell-dicts@27.5.8...cspell-dicts@27.5.9) (2024-10-11)
+
+
+### Updates and Bug Fixes
+
+* add httpbin to software tools ([#3657](https://github.com/streetsidesoftware/cspell-dicts/issues/3657)) ([15ee83f](https://github.com/streetsidesoftware/cspell-dicts/commit/15ee83f10b74661d49362b86ff4f5ca7dcc682e5))
+* **shared-additional-words:** haptic/s ([#3659](https://github.com/streetsidesoftware/cspell-dicts/issues/3659)) ([e33b9e2](https://github.com/streetsidesoftware/cspell-dicts/commit/e33b9e2948825e138b443fa4f5989c5c2f5082da))
+* Sign all dictionaries ([#3661](https://github.com/streetsidesoftware/cspell-dicts/issues/3661)) ([6b8d560](https://github.com/streetsidesoftware/cspell-dicts/commit/6b8d560cf51a593458ce42bca415859f872cfc97))
+* Workflow Bot -- Build Dictionaries ([#3653](https://github.com/streetsidesoftware/cspell-dicts/issues/3653)) ([0149bcd](https://github.com/streetsidesoftware/cspell-dicts/commit/0149bcda3a4d4834aac0929d51908ac0c67e6890))
+* Workflow Bot -- Build Dictionaries ([#3660](https://github.com/streetsidesoftware/cspell-dicts/issues/3660)) ([4f77f34](https://github.com/streetsidesoftware/cspell-dicts/commit/4f77f3405be7b3ff3ee0d4118f9f3af2476ee24c))
+
+## [27.5.8](https://github.com/streetsidesoftware/cspell-dicts/compare/cspell-dicts@27.5.7...cspell-dicts@27.5.8) (2024-10-07)
+
+
+### Updates and Bug Fixes
+
+* add llm terms ([#3647](https://github.com/streetsidesoftware/cspell-dicts/issues/3647)) ([a6afaf3](https://github.com/streetsidesoftware/cspell-dicts/commit/a6afaf30b7f2c04f471234b625d8877bbfb09f77))
+* Workflow Bot -- Build Dictionaries ([#3649](https://github.com/streetsidesoftware/cspell-dicts/issues/3649)) ([e785068](https://github.com/streetsidesoftware/cspell-dicts/commit/e7850682033573787480ec9c1ca235daa12d73bd))
+
+## [27.5.7](https://github.com/streetsidesoftware/cspell-dicts/compare/cspell-dicts@27.5.6...cspell-dicts@27.5.7) (2024-10-06)
+
+
+### Updates and Bug Fixes
+
+* Add some coding terms ([#3641](https://github.com/streetsidesoftware/cspell-dicts/issues/3641)) ([c6cf948](https://github.com/streetsidesoftware/cspell-dicts/commit/c6cf948580631719eb5e0cd8c2fcd7074c18d649))
+* Workflow Bot -- Build Dictionaries ([#3643](https://github.com/streetsidesoftware/cspell-dicts/issues/3643)) ([2955084](https://github.com/streetsidesoftware/cspell-dicts/commit/29550848da659f03ccd1e36b2a66b6a3cfcdc6f4))
+
+## [27.5.6](https://github.com/streetsidesoftware/cspell-dicts/compare/cspell-dicts@27.5.5...cspell-dicts@27.5.6) (2024-10-05)
+
+
+### Updates and Bug Fixes
+
+* add devcontainer ([#3631](https://github.com/streetsidesoftware/cspell-dicts/issues/3631)) ([917e1c2](https://github.com/streetsidesoftware/cspell-dicts/commit/917e1c218949432b82651fa77f59b0582e7be934))
+* add endregion ([#3625](https://github.com/streetsidesoftware/cspell-dicts/issues/3625)) ([ffe2cff](https://github.com/streetsidesoftware/cspell-dicts/commit/ffe2cffafd45e9992e8c58fc9609a465d714238e))
+* add microcontroller programming terms ([#3634](https://github.com/streetsidesoftware/cspell-dicts/issues/3634)) ([a06e1b0](https://github.com/streetsidesoftware/cspell-dicts/commit/a06e1b03752db2ab5d1e176a492c74bedb54e1da))
+* add more linux desktop software dev terms ([#3638](https://github.com/streetsidesoftware/cspell-dicts/issues/3638)) ([0ec27a9](https://github.com/streetsidesoftware/cspell-dicts/commit/0ec27a9a883c26352dc2d934dbb524dcd30e6470))
+* add rust toolchain names ([#3628](https://github.com/streetsidesoftware/cspell-dicts/issues/3628)) ([2ebb00a](https://github.com/streetsidesoftware/cspell-dicts/commit/2ebb00ae0ad43f1c1a29e6562872791a410e0ac1))
+* add terraform terms ([#3629](https://github.com/streetsidesoftware/cspell-dicts/issues/3629)) ([5ee6c99](https://github.com/streetsidesoftware/cspell-dicts/commit/5ee6c995725b05bcb7c143406593fedcd1e5f8c3))
+* add testid to the list of coding terms ([#3623](https://github.com/streetsidesoftware/cspell-dicts/issues/3623)) ([1757ae8](https://github.com/streetsidesoftware/cspell-dicts/commit/1757ae89027a613b505eaa9fe4adfb3835fb10ac))
+* linux desktop apps words ([#3632](https://github.com/streetsidesoftware/cspell-dicts/issues/3632)) ([18ddce3](https://github.com/streetsidesoftware/cspell-dicts/commit/18ddce3d0279c0cef6a9bce8611be3ae9149836a))
+* Workflow Bot -- Build Dictionaries ([#3627](https://github.com/streetsidesoftware/cspell-dicts/issues/3627)) ([55b75ea](https://github.com/streetsidesoftware/cspell-dicts/commit/55b75ea1037089c64399b1e68b1d38a16a1fd3f5))
+* Workflow Bot -- Build Dictionaries ([#3635](https://github.com/streetsidesoftware/cspell-dicts/issues/3635)) ([25b0f1d](https://github.com/streetsidesoftware/cspell-dicts/commit/25b0f1df069601c5bc16084afe35ed5b9a75cf5c))
+* Workflow Bot -- Build Dictionaries ([#3636](https://github.com/streetsidesoftware/cspell-dicts/issues/3636)) ([d043d49](https://github.com/streetsidesoftware/cspell-dicts/commit/d043d4931ec8e8f0e980dcf3c5cc1f97155c5486))
+* Workflow Bot -- Build Dictionaries ([#3637](https://github.com/streetsidesoftware/cspell-dicts/issues/3637)) ([c7f9ff3](https://github.com/streetsidesoftware/cspell-dicts/commit/c7f9ff39b920eb148794d3dd0eed531dcab8fb57))
+
 ## [27.5.5](https://github.com/streetsidesoftware/cspell-dicts/compare/cspell-dicts@27.5.4...cspell-dicts@27.5.5) (2024-10-01)
 
 

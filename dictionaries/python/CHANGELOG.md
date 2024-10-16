@@ -3,6 +3,41 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+## [4.2.11](https://github.com/streetsidesoftware/cspell-dicts/compare/@cspell/dict-python@4.2.10...@cspell/dict-python@4.2.11) (2024-10-11)
+
+
+### Updates and Bug Fixes
+
+* Update package git url ([#3667](https://github.com/streetsidesoftware/cspell-dicts/issues/3667)) ([629c7d0](https://github.com/streetsidesoftware/cspell-dicts/commit/629c7d0a5e1bacad1d3874b1f8372edc3494ef97))
+
+## [4.2.10](https://github.com/streetsidesoftware/cspell-dicts/compare/@cspell/dict-python@4.2.9...@cspell/dict-python@4.2.10) (2024-10-11)
+
+
+### Updates and Bug Fixes
+
+* Fix the git repository URL ([#3665](https://github.com/streetsidesoftware/cspell-dicts/issues/3665)) ([ac050b6](https://github.com/streetsidesoftware/cspell-dicts/commit/ac050b697d57820109995e92fac5ccc32ced1723))
+
+## [4.2.9](https://github.com/streetsidesoftware/cspell-dicts/compare/@cspell/dict-python@4.2.8...@cspell/dict-python@4.2.9) (2024-10-11)
+
+
+### Updates and Bug Fixes
+
+* Sign all dictionaries ([#3661](https://github.com/streetsidesoftware/cspell-dicts/issues/3661)) ([6b8d560](https://github.com/streetsidesoftware/cspell-dicts/commit/6b8d560cf51a593458ce42bca415859f872cfc97))
+
+## [4.2.8](https://github.com/streetsidesoftware/cspell-dicts/compare/@cspell/dict-python@4.2.7...@cspell/dict-python@4.2.8) (2024-10-06)
+
+
+### Updates and Bug Fixes
+
+* Workflow Bot -- Build Dictionaries ([#3643](https://github.com/streetsidesoftware/cspell-dicts/issues/3643)) ([2955084](https://github.com/streetsidesoftware/cspell-dicts/commit/29550848da659f03ccd1e36b2a66b6a3cfcdc6f4))
+
+## [4.2.7](https://github.com/streetsidesoftware/cspell-dicts/compare/@cspell/dict-python@4.2.6...@cspell/dict-python@4.2.7) (2024-10-05)
+
+
+### Updates and Bug Fixes
+
+* Workflow Bot -- Build Dictionaries ([#3635](https://github.com/streetsidesoftware/cspell-dicts/issues/3635)) ([25b0f1d](https://github.com/streetsidesoftware/cspell-dicts/commit/25b0f1df069601c5bc16084afe35ed5b9a75cf5c))
+
 ## [4.2.6](https://github.com/streetsidesoftware/cspell-dicts/compare/@cspell/dict-python@4.2.5...@cspell/dict-python@4.2.6) (2024-08-27)
 
 

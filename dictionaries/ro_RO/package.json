@@ -1,9 +1,10 @@
 {
   "name": "@cspell/dict-ro-ro",
-  "version": "2.0.0",
+  "version": "2.0.3",
   "description": "Romanian dictionary for cspell.",
   "publishConfig": {
-    "access": "public"
+    "access": "public",
+    "provenance": true
   },
   "exports": {
     ".": "./cspell-ext.json",
@@ -20,7 +21,7 @@
   },
   "repository": {
     "type": "git",
-    "url": "https://github.com/streetsidesoftware/cspell-dict.git",
+    "url": "https://github.com/streetsidesoftware/cspell-dicts",
     "directory": "dictionaries/ro_RO"
   },
   "keywords": [

@@ -18,12 +18,16 @@ async function updatePackageJson(pkgFile) {
 
     const repository = {
         type: 'git',
-        url: 'https://github.com/streetsidesoftware/cspell-dict.git',
+        url: 'https://github.com/streetsidesoftware/cspell-dicts',
         directory,
     };
 
     pkg.repository = repository;
     pkg.author = 'Street Side Software <support@streetsidesoftware.nl>';
+    pkg.publishConfig = {
+        access: 'public',
+        provenance: true,
+    };
 
     await fs.writeFile(pkgFile, JSON.stringify(pkg, null, 2) + '\n');
 }

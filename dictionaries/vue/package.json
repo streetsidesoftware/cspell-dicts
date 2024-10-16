@@ -1,9 +1,10 @@
 {
   "name": "@cspell/dict-vue",
-  "version": "3.0.0",
+  "version": "3.0.3",
   "description": "CSpell configuration for VUE files.",
   "publishConfig": {
-    "access": "public"
+    "access": "public",
+    "provenance": true
   },
   "exports": {
     ".": "./cspell-ext.json",
@@ -18,7 +19,7 @@
   },
   "repository": {
     "type": "git",
-    "url": "https://github.com/streetsidesoftware/cspell-dict.git",
+    "url": "https://github.com/streetsidesoftware/cspell-dicts",
     "directory": "dictionaries/vue"
   },
   "keywords": [

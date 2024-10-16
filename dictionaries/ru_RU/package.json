@@ -1,9 +1,10 @@
 {
   "name": "@cspell/dict-ru_ru",
-  "version": "2.2.1",
+  "version": "2.2.4",
   "description": "Russian dictionary for cspell.",
   "publishConfig": {
-    "access": "public"
+    "access": "public",
+    "provenance": true
   },
   "exports": {
     ".": "./cspell-ext.json",
@@ -23,7 +24,7 @@
   },
   "repository": {
     "type": "git",
-    "url": "https://github.com/streetsidesoftware/cspell-dict.git",
+    "url": "https://github.com/streetsidesoftware/cspell-dicts",
     "directory": "dictionaries/ru_RU"
   },
   "keywords": [

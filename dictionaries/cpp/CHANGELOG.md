@@ -3,6 +3,41 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+## [5.1.22](https://github.com/streetsidesoftware/cspell-dicts/compare/@cspell/dict-cpp@5.1.21...@cspell/dict-cpp@5.1.22) (2024-10-11)
+
+
+### Updates and Bug Fixes
+
+* Update package git url ([#3667](https://github.com/streetsidesoftware/cspell-dicts/issues/3667)) ([629c7d0](https://github.com/streetsidesoftware/cspell-dicts/commit/629c7d0a5e1bacad1d3874b1f8372edc3494ef97))
+
+## [5.1.21](https://github.com/streetsidesoftware/cspell-dicts/compare/@cspell/dict-cpp@5.1.20...@cspell/dict-cpp@5.1.21) (2024-10-11)
+
+
+### Updates and Bug Fixes
+
+* Fix the git repository URL ([#3665](https://github.com/streetsidesoftware/cspell-dicts/issues/3665)) ([ac050b6](https://github.com/streetsidesoftware/cspell-dicts/commit/ac050b697d57820109995e92fac5ccc32ced1723))
+
+## [5.1.20](https://github.com/streetsidesoftware/cspell-dicts/compare/@cspell/dict-cpp@5.1.19...@cspell/dict-cpp@5.1.20) (2024-10-11)
+
+
+### Updates and Bug Fixes
+
+* Sign all dictionaries ([#3661](https://github.com/streetsidesoftware/cspell-dicts/issues/3661)) ([6b8d560](https://github.com/streetsidesoftware/cspell-dicts/commit/6b8d560cf51a593458ce42bca415859f872cfc97))
+
+## [5.1.19](https://github.com/streetsidesoftware/cspell-dicts/compare/@cspell/dict-cpp@5.1.18...@cspell/dict-cpp@5.1.19) (2024-10-06)
+
+
+### Updates and Bug Fixes
+
+* Workflow Bot -- Build Dictionaries ([#3643](https://github.com/streetsidesoftware/cspell-dicts/issues/3643)) ([2955084](https://github.com/streetsidesoftware/cspell-dicts/commit/29550848da659f03ccd1e36b2a66b6a3cfcdc6f4))
+
+## [5.1.18](https://github.com/streetsidesoftware/cspell-dicts/compare/@cspell/dict-cpp@5.1.17...@cspell/dict-cpp@5.1.18) (2024-10-05)
+
+
+### Updates and Bug Fixes
+
+* Workflow Bot -- Build Dictionaries ([#3637](https://github.com/streetsidesoftware/cspell-dicts/issues/3637)) ([c7f9ff3](https://github.com/streetsidesoftware/cspell-dicts/commit/c7f9ff39b920eb148794d3dd0eed531dcab8fb57))
+
 ## [5.1.17](https://github.com/streetsidesoftware/cspell-dicts/compare/@cspell/dict-cpp@5.1.16...@cspell/dict-cpp@5.1.17) (2024-10-01)
 
 

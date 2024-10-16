@@ -1,9 +1,10 @@
 {
   "name": "@cspell/dict-software-terms",
-  "version": "4.1.5",
+  "version": "4.1.10",
   "description": "Software related dictionaries for cspell.",
   "publishConfig": {
-    "access": "public"
+    "access": "public",
+    "provenance": true
   },
   "exports": {
     ".": "./cspell-ext.json",
@@ -20,7 +21,7 @@
   },
   "repository": {
     "type": "git",
-    "url": "https://github.com/streetsidesoftware/cspell-dict.git",
+    "url": "https://github.com/streetsidesoftware/cspell-dicts",
     "directory": "dictionaries/software-terms"
   },
   "keywords": [

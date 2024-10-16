@@ -1,9 +1,10 @@
 {
   "name": "@cspell/dict-el",
-  "version": "3.1.2",
+  "version": "3.1.5",
   "description": "Greek dictionary for cspell.",
   "publishConfig": {
-    "access": "public"
+    "access": "public",
+    "provenance": true
   },
   "exports": {
     ".": "./cspell-ext.json",
@@ -24,7 +25,7 @@
   },
   "repository": {
     "type": "git",
-    "url": "https://github.com/streetsidesoftware/cspell-dict.git",
+    "url": "https://github.com/streetsidesoftware/cspell-dicts",
     "directory": "dictionaries/el"
   },
   "keywords": [

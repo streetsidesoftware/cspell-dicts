@@ -1,9 +1,10 @@
 {
   "name": "@cspell/dict-en-gb",
-  "version": "4.1.46",
+  "version": "4.1.49",
   "description": "British English dictionary for cspell.",
   "publishConfig": {
-    "access": "public"
+    "access": "public",
+    "provenance": true
   },
   "exports": {
     ".": "./cspell-ext.json",
@@ -24,7 +25,7 @@
   },
   "repository": {
     "type": "git",
-    "url": "https://github.com/streetsidesoftware/cspell-dict.git",
+    "url": "https://github.com/streetsidesoftware/cspell-dicts",
     "directory": "dictionaries/en_GB"
   },
   "keywords": [

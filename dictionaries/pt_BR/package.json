@@ -1,9 +1,10 @@
 {
   "name": "@cspell/dict-pt-br",
-  "version": "2.3.0",
+  "version": "2.3.3",
   "description": "Brazilian Portuguese dictionary for cspell.",
   "publishConfig": {
-    "access": "public"
+    "access": "public",
+    "provenance": true
   },
   "exports": {
     ".": "./cspell-ext.json",
@@ -23,7 +24,7 @@
   },
   "repository": {
     "type": "git",
-    "url": "https://github.com/streetsidesoftware/cspell-dict.git",
+    "url": "https://github.com/streetsidesoftware/cspell-dicts",
     "directory": "dictionaries/pt_BR"
   },
   "keywords": [

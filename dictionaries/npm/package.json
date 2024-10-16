@@ -1,9 +1,10 @@
 {
   "name": "@cspell/dict-npm",
-  "version": "5.1.5",
+  "version": "5.1.8",
   "description": "Dictionary of common NPM packages for cspell.",
   "publishConfig": {
-    "access": "public"
+    "access": "public",
+    "provenance": true
   },
   "exports": {
     ".": "./cspell-ext.json",
@@ -21,7 +22,7 @@
   },
   "repository": {
     "type": "git",
-    "url": "https://github.com/streetsidesoftware/cspell-dict.git",
+    "url": "https://github.com/streetsidesoftware/cspell-dicts",
     "directory": "dictionaries/npm"
   },
   "keywords": [

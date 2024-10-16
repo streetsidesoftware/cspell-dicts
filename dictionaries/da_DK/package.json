@@ -1,9 +1,10 @@
 {
   "name": "@cspell/dict-da-dk",
-  "version": "4.0.0",
+  "version": "4.0.3",
   "description": "Danish dictionary for CSpell.",
   "publishConfig": {
-    "access": "public"
+    "access": "public",
+    "provenance": true
   },
   "exports": {
     ".": "./cspell-ext.json",
@@ -22,7 +23,7 @@
   },
   "repository": {
     "type": "git",
-    "url": "https://github.com/streetsidesoftware/cspell-dict.git",
+    "url": "https://github.com/streetsidesoftware/cspell-dicts",
     "directory": "dictionaries/da_DK"
   },
   "keywords": [

@@ -1,9 +1,10 @@
 {
   "name": "@cspell/dict-cryptocurrencies",
-  "version": "5.0.0",
+  "version": "5.0.3",
   "description": "Cryptocurrencies dictionary for cspell.",
   "publishConfig": {
-    "access": "public"
+    "access": "public",
+    "provenance": true
   },
   "exports": {
     ".": "./cspell-ext.json",
@@ -18,7 +19,7 @@
   },
   "repository": {
     "type": "git",
-    "url": "https://github.com/streetsidesoftware/cspell-dict.git",
+    "url": "https://github.com/streetsidesoftware/cspell-dicts",
     "directory": "dictionaries/cryptocurrencies"
   },
   "keywords": [
