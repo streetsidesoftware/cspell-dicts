@@ -3,6 +3,18 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+## [4.1.11](https://github.com/streetsidesoftware/cspell-dicts/compare/@cspell/dict-software-terms@4.1.10...@cspell/dict-software-terms@4.1.11) (2024-10-17)
+
+
+### Updates and Bug Fixes
+
+* add all-contributorsrc to software-tools.txt ([#3679](https://github.com/streetsidesoftware/cspell-dicts/issues/3679)) ([d913a05](https://github.com/streetsidesoftware/cspell-dicts/commit/d913a054105dcfe6b61413f938fc490141427c76))
+* add azdo to coding-terms.txt ([#3676](https://github.com/streetsidesoftware/cspell-dicts/issues/3676)) ([de1b59c](https://github.com/streetsidesoftware/cspell-dicts/commit/de1b59ce8b097b533e4e10e84421aeaff309832b))
+* **software-terms.txt:** add routable ([#3697](https://github.com/streetsidesoftware/cspell-dicts/issues/3697)) ([b4b595f](https://github.com/streetsidesoftware/cspell-dicts/commit/b4b595f3023fcb61291423f90f19246ac7f22f2b))
+* Workflow Bot -- Build Dictionaries ([#3681](https://github.com/streetsidesoftware/cspell-dicts/issues/3681)) ([b566ab9](https://github.com/streetsidesoftware/cspell-dicts/commit/b566ab9ab550598d6cfaeb559d71db4b587fdeaa))
+* Workflow Bot -- Build Dictionaries ([#3682](https://github.com/streetsidesoftware/cspell-dicts/issues/3682)) ([b8d41dc](https://github.com/streetsidesoftware/cspell-dicts/commit/b8d41dc2626c70d2bc2502545d3a5a5465dfd2d5))
+* Workflow Bot -- Build Dictionaries ([#3690](https://github.com/streetsidesoftware/cspell-dicts/issues/3690)) ([6e7735b](https://github.com/streetsidesoftware/cspell-dicts/commit/6e7735b371a96854f53ba26f8c687b3aa5db1ed6))
+
 ## [4.1.10](https://github.com/streetsidesoftware/cspell-dicts/compare/@cspell/dict-software-terms@4.1.9...@cspell/dict-software-terms@4.1.10) (2024-10-11)
 
 

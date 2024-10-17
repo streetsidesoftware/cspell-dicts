@@ -1,5 +1,13 @@
 # Changelog
 
+## [1.0.10](https://github.com/streetsidesoftware/cspell-dicts/compare/@cspell/dict-shell@1.0.9...@cspell/dict-shell@1.0.10) (2024-10-17)
+
+
+### Updates and Bug Fixes
+
+* add zdotdir to shell dictionary ([#3678](https://github.com/streetsidesoftware/cspell-dicts/issues/3678)) ([665eb48](https://github.com/streetsidesoftware/cspell-dicts/commit/665eb488c30cdc6216ba1da516df520a96451299))
+* Workflow Bot -- Build Dictionaries ([#3681](https://github.com/streetsidesoftware/cspell-dicts/issues/3681)) ([b566ab9](https://github.com/streetsidesoftware/cspell-dicts/commit/b566ab9ab550598d6cfaeb559d71db4b587fdeaa))
+
 ## [1.0.9](https://github.com/streetsidesoftware/cspell-dicts/compare/@cspell/dict-shell@1.0.8...@cspell/dict-shell@1.0.9) (2024-10-11)
 
 

@@ -3,6 +3,13 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+## [1.1.11](https://github.com/streetsidesoftware/cspell-dicts/compare/@cspell/dict-docker@1.1.10...@cspell/dict-docker@1.1.11) (2024-10-17)
+
+
+### Updates and Bug Fixes
+
+* add hadolint to docker dictionary ([#3677](https://github.com/streetsidesoftware/cspell-dicts/issues/3677)) ([559a4ac](https://github.com/streetsidesoftware/cspell-dicts/commit/559a4ac63080631aa8c66da6a6a0df31e6ce61d3))
+
 ## [1.1.10](https://github.com/streetsidesoftware/cspell-dicts/compare/@cspell/dict-docker@1.1.9...@cspell/dict-docker@1.1.10) (2024-10-11)
 
 

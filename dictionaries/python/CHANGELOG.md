@@ -3,6 +3,14 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+## [4.2.12](https://github.com/streetsidesoftware/cspell-dicts/compare/@cspell/dict-python@4.2.11...@cspell/dict-python@4.2.12) (2024-10-17)
+
+
+### Updates and Bug Fixes
+
+* Add "maxsplit" to python.txt dictionary ([#3663](https://github.com/streetsidesoftware/cspell-dicts/issues/3663)) ([a448054](https://github.com/streetsidesoftware/cspell-dicts/commit/a4480541fbcc6b4709e0b03367f56b59fffaf424))
+* Workflow Bot -- Build Dictionaries ([#3683](https://github.com/streetsidesoftware/cspell-dicts/issues/3683)) ([a47d7cb](https://github.com/streetsidesoftware/cspell-dicts/commit/a47d7cbb2b28cf7570734c01c2c9d1c87316e94c))
+
 ## [4.2.11](https://github.com/streetsidesoftware/cspell-dicts/compare/@cspell/dict-python@4.2.10...@cspell/dict-python@4.2.11) (2024-10-11)
 
 
