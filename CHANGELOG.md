@@ -1,5 +1,24 @@
 # Release Notes
 
+## [27.5.12](https://github.com/streetsidesoftware/cspell-dicts/compare/cspell-dicts@27.5.11...cspell-dicts@27.5.12) (2024-10-17)
+
+
+### Updates and Bug Fixes
+
+* Add "maxsplit" to python.txt dictionary ([#3663](https://github.com/streetsidesoftware/cspell-dicts/issues/3663)) ([a448054](https://github.com/streetsidesoftware/cspell-dicts/commit/a4480541fbcc6b4709e0b03367f56b59fffaf424))
+* add all-contributorsrc to software-tools.txt ([#3679](https://github.com/streetsidesoftware/cspell-dicts/issues/3679)) ([d913a05](https://github.com/streetsidesoftware/cspell-dicts/commit/d913a054105dcfe6b61413f938fc490141427c76))
+* add azdo to coding-terms.txt ([#3676](https://github.com/streetsidesoftware/cspell-dicts/issues/3676)) ([de1b59c](https://github.com/streetsidesoftware/cspell-dicts/commit/de1b59ce8b097b533e4e10e84421aeaff309832b))
+* Add DOM events to TypeScript ([#3700](https://github.com/streetsidesoftware/cspell-dicts/issues/3700)) ([21b587f](https://github.com/streetsidesoftware/cspell-dicts/commit/21b587f93d03ce922a7cb6f7b5a1ae0d554db81a))
+* add hadolint to docker dictionary ([#3677](https://github.com/streetsidesoftware/cspell-dicts/issues/3677)) ([559a4ac](https://github.com/streetsidesoftware/cspell-dicts/commit/559a4ac63080631aa8c66da6a6a0df31e6ce61d3))
+* add zdotdir to shell dictionary ([#3678](https://github.com/streetsidesoftware/cspell-dicts/issues/3678)) ([665eb48](https://github.com/streetsidesoftware/cspell-dicts/commit/665eb488c30cdc6216ba1da516df520a96451299))
+* **software-terms.txt:** add routable ([#3697](https://github.com/streetsidesoftware/cspell-dicts/issues/3697)) ([b4b595f](https://github.com/streetsidesoftware/cspell-dicts/commit/b4b595f3023fcb61291423f90f19246ac7f22f2b))
+* Workflow Bot -- Build Dictionaries ([#3664](https://github.com/streetsidesoftware/cspell-dicts/issues/3664)) ([a415b1d](https://github.com/streetsidesoftware/cspell-dicts/commit/a415b1d933eb1b2b1eb36325765da3204e98167b))
+* Workflow Bot -- Build Dictionaries ([#3681](https://github.com/streetsidesoftware/cspell-dicts/issues/3681)) ([b566ab9](https://github.com/streetsidesoftware/cspell-dicts/commit/b566ab9ab550598d6cfaeb559d71db4b587fdeaa))
+* Workflow Bot -- Build Dictionaries ([#3682](https://github.com/streetsidesoftware/cspell-dicts/issues/3682)) ([b8d41dc](https://github.com/streetsidesoftware/cspell-dicts/commit/b8d41dc2626c70d2bc2502545d3a5a5465dfd2d5))
+* Workflow Bot -- Build Dictionaries ([#3683](https://github.com/streetsidesoftware/cspell-dicts/issues/3683)) ([a47d7cb](https://github.com/streetsidesoftware/cspell-dicts/commit/a47d7cbb2b28cf7570734c01c2c9d1c87316e94c))
+* Workflow Bot -- Build Dictionaries ([#3690](https://github.com/streetsidesoftware/cspell-dicts/issues/3690)) ([6e7735b](https://github.com/streetsidesoftware/cspell-dicts/commit/6e7735b371a96854f53ba26f8c687b3aa5db1ed6))
+* Workflow Bot -- Build Dictionaries ([#3698](https://github.com/streetsidesoftware/cspell-dicts/issues/3698)) ([9595d6d](https://github.com/streetsidesoftware/cspell-dicts/commit/9595d6da23a4c44d5f41582694cb1a32fe7d404e))
+
 ## [27.5.11](https://github.com/streetsidesoftware/cspell-dicts/compare/cspell-dicts@27.5.10...cspell-dicts@27.5.11) (2024-10-11)
 
 

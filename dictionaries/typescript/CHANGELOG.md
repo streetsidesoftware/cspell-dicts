@@ -3,6 +3,13 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+## [3.1.10](https://github.com/streetsidesoftware/cspell-dicts/compare/@cspell/dict-typescript@3.1.9...@cspell/dict-typescript@3.1.10) (2024-10-17)
+
+
+### Updates and Bug Fixes
+
+* Add DOM events to TypeScript ([#3700](https://github.com/streetsidesoftware/cspell-dicts/issues/3700)) ([21b587f](https://github.com/streetsidesoftware/cspell-dicts/commit/21b587f93d03ce922a7cb6f7b5a1ae0d554db81a))
+
 ## [3.1.9](https://github.com/streetsidesoftware/cspell-dicts/compare/@cspell/dict-typescript@3.1.8...@cspell/dict-typescript@3.1.9) (2024-10-11)
 
 
