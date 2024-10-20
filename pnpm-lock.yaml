@@ -13,7 +13,7 @@ importers:
         version: 8.15.4(typescript@5.6.3)
       '@lerna-lite/cli':
         specifier: ^3.10.0
-        version: 3.10.0(@lerna-lite/exec@3.10.0(@lerna-lite/publish@3.10.0)(@lerna-lite/run@3.10.0)(@types/node@22.7.7)(typescript@5.6.3))(@lerna-lite/publish@3.10.0(@lerna-lite/exec@3.10.0)(@lerna-lite/run@3.10.0)(@types/node@22.7.7)(typescript@5.6.3))(@lerna-lite/run@3.10.0(@lerna-lite/exec@3.10.0)(@lerna-lite/publish@3.10.0)(@types/node@22.7.7)(typescript@5.6.3))(@lerna-lite/version@3.10.0(@lerna-lite/exec@3.10.0(@lerna-lite/publish@3.10.0)(@lerna-lite/run@3.10.0)(@types/node@22.7.7)(typescript@5.6.3))(@lerna-lite/publish@3.10.0(@lerna-lite/exec@3.10.0)(@lerna-lite/run@3.10.0)(@types/node@22.7.7)(typescript@5.6.3))(@lerna-lite/run@3.10.0(@lerna-lite/exec@3.10.0)(@lerna-lite/publish@3.10.0)(@types/node@22.7.7)(typescript@5.6.3))(@types/node@22.7.7)(typescript@5.6.3))(@types/node@22.7.7)(typescript@5.6.3)
+        version: 3.10.0(@lerna-lite/exec@3.10.0)(@lerna-lite/publish@3.10.0)(@lerna-lite/run@3.10.0)(@lerna-lite/version@3.10.0(@lerna-lite/exec@3.10.0)(@lerna-lite/publish@3.10.0)(@lerna-lite/run@3.10.0)(@types/node@22.7.7)(typescript@5.6.3))(@types/node@22.7.7)(typescript@5.6.3)
       '@lerna-lite/exec':
         specifier: ^3.10.0
         version: 3.10.0(@lerna-lite/publish@3.10.0)(@lerna-lite/run@3.10.0)(@types/node@22.7.7)(typescript@5.6.3)
@@ -111,6 +111,167 @@ importers:
   dictionaries/cs_CZ: {}
 
   dictionaries/csharp: {}
+
+  dictionaries/cspell:
+    dependencies:
+      '@cspell/dict-ada':
+        specifier: workspace:*
+        version: link:../ada
+      '@cspell/dict-aws':
+        specifier: workspace:*
+        version: link:../aws
+      '@cspell/dict-bash':
+        specifier: workspace:*
+        version: link:../bash
+      '@cspell/dict-companies':
+        specifier: workspace:*
+        version: link:../companies
+      '@cspell/dict-cpp':
+        specifier: workspace:*
+        version: link:../cpp
+      '@cspell/dict-cryptocurrencies':
+        specifier: workspace:*
+        version: link:../cryptocurrencies
+      '@cspell/dict-csharp':
+        specifier: workspace:*
+        version: link:../csharp
+      '@cspell/dict-css':
+        specifier: workspace:*
+        version: link:../css
+      '@cspell/dict-dart':
+        specifier: workspace:*
+        version: link:../dart
+      '@cspell/dict-django':
+        specifier: workspace:*
+        version: link:../django
+      '@cspell/dict-docker':
+        specifier: workspace:*
+        version: link:../docker
+      '@cspell/dict-dotnet':
+        specifier: workspace:*
+        version: link:../dotnet
+      '@cspell/dict-elixir':
+        specifier: workspace:*
+        version: link:../elixir
+      '@cspell/dict-en-common-misspellings':
+        specifier: workspace:*
+        version: link:../en-common-misspellings
+      '@cspell/dict-en_us':
+        specifier: workspace:*
+        version: link:../en_US
+      '@cspell/dict-filetypes':
+        specifier: workspace:*
+        version: link:../filetypes
+      '@cspell/dict-flutter':
+        specifier: workspace:*
+        version: link:../flutter
+      '@cspell/dict-fonts':
+        specifier: workspace:*
+        version: link:../fonts
+      '@cspell/dict-fsharp':
+        specifier: workspace:*
+        version: link:../fsharp
+      '@cspell/dict-fullstack':
+        specifier: workspace:*
+        version: link:../fullstack
+      '@cspell/dict-gaming-terms':
+        specifier: workspace:*
+        version: link:../gaming-terms
+      '@cspell/dict-git':
+        specifier: workspace:*
+        version: link:../git
+      '@cspell/dict-golang':
+        specifier: workspace:*
+        version: link:../golang
+      '@cspell/dict-google':
+        specifier: workspace:*
+        version: link:../google
+      '@cspell/dict-haskell':
+        specifier: workspace:*
+        version: link:../haskell
+      '@cspell/dict-html':
+        specifier: workspace:*
+        version: link:../html
+      '@cspell/dict-html-symbol-entities':
+        specifier: workspace:*
+        version: link:../html-symbol-entities
+      '@cspell/dict-java':
+        specifier: workspace:*
+        version: link:../java
+      '@cspell/dict-julia':
+        specifier: workspace:*
+        version: link:../julia
+      '@cspell/dict-k8s':
+        specifier: workspace:*
+        version: link:../k8s
+      '@cspell/dict-latex':
+        specifier: workspace:*
+        version: link:../latex
+      '@cspell/dict-lorem-ipsum':
+        specifier: workspace:*
+        version: link:../lorem-ipsum
+      '@cspell/dict-lua':
+        specifier: workspace:*
+        version: link:../lua
+      '@cspell/dict-makefile':
+        specifier: workspace:*
+        version: link:../makefile
+      '@cspell/dict-monkeyc':
+        specifier: workspace:*
+        version: link:../monkeyc
+      '@cspell/dict-node':
+        specifier: workspace:*
+        version: link:../node
+      '@cspell/dict-npm':
+        specifier: workspace:*
+        version: link:../npm
+      '@cspell/dict-php':
+        specifier: workspace:*
+        version: link:../php
+      '@cspell/dict-powershell':
+        specifier: workspace:*
+        version: link:../powershell
+      '@cspell/dict-public-licenses':
+        specifier: workspace:*
+        version: link:../public-licenses
+      '@cspell/dict-python':
+        specifier: workspace:*
+        version: link:../python
+      '@cspell/dict-r':
+        specifier: workspace:*
+        version: link:../r
+      '@cspell/dict-ruby':
+        specifier: workspace:*
+        version: link:../ruby
+      '@cspell/dict-rust':
+        specifier: workspace:*
+        version: link:../rust
+      '@cspell/dict-scala':
+        specifier: workspace:*
+        version: link:../scala
+      '@cspell/dict-software-terms':
+        specifier: workspace:*
+        version: link:../software-terms
+      '@cspell/dict-sql':
+        specifier: workspace:*
+        version: link:../sql
+      '@cspell/dict-svelte':
+        specifier: workspace:*
+        version: link:../svelte
+      '@cspell/dict-swift':
+        specifier: workspace:*
+        version: link:../swift
+      '@cspell/dict-terraform':
+        specifier: workspace:*
+        version: link:../terraform
+      '@cspell/dict-typescript':
+        specifier: workspace:*
+        version: link:../typescript
+      '@cspell/dict-vue':
+        specifier: workspace:*
+        version: link:../vue
+
+  dictionaries/cspell/scripts: {}
 
   dictionaries/css: {}
 
@@ -4429,7 +4590,7 @@ snapshots:
 
   '@kwsites/promise-deferred@1.1.1': {}
 
-  '@lerna-lite/cli@3.10.0(@lerna-lite/exec@3.10.0(@lerna-lite/publish@3.10.0)(@lerna-lite/run@3.10.0)(@types/node@22.7.7)(typescript@5.6.3))(@lerna-lite/publish@3.10.0(@lerna-lite/exec@3.10.0)(@lerna-lite/run@3.10.0)(@types/node@22.7.7)(typescript@5.6.3))(@lerna-lite/run@3.10.0(@lerna-lite/exec@3.10.0)(@lerna-lite/publish@3.10.0)(@types/node@22.7.7)(typescript@5.6.3))(@lerna-lite/version@3.10.0(@lerna-lite/exec@3.10.0(@lerna-lite/publish@3.10.0)(@lerna-lite/run@3.10.0)(@types/node@22.7.7)(typescript@5.6.3))(@lerna-lite/publish@3.10.0(@lerna-lite/exec@3.10.0)(@lerna-lite/run@3.10.0)(@types/node@22.7.7)(typescript@5.6.3))(@lerna-lite/run@3.10.0(@lerna-lite/exec@3.10.0)(@lerna-lite/publish@3.10.0)(@types/node@22.7.7)(typescript@5.6.3))(@types/node@22.7.7)(typescript@5.6.3))(@types/node@22.7.7)(typescript@5.6.3)':
+  '@lerna-lite/cli@3.10.0(@lerna-lite/exec@3.10.0)(@lerna-lite/publish@3.10.0)(@lerna-lite/run@3.10.0)(@lerna-lite/version@3.10.0(@lerna-lite/exec@3.10.0)(@lerna-lite/publish@3.10.0)(@lerna-lite/run@3.10.0)(@types/node@22.7.7)(typescript@5.6.3))(@types/node@22.7.7)(typescript@5.6.3)':
     dependencies:
       '@lerna-lite/core': 3.10.0(@types/node@22.7.7)(typescript@5.6.3)
       '@lerna-lite/init': 3.10.0(@types/node@22.7.7)(typescript@5.6.3)
@@ -4443,7 +4604,7 @@ snapshots:
       '@lerna-lite/exec': 3.10.0(@lerna-lite/publish@3.10.0)(@lerna-lite/run@3.10.0)(@types/node@22.7.7)(typescript@5.6.3)
       '@lerna-lite/publish': 3.10.0(@lerna-lite/exec@3.10.0)(@lerna-lite/run@3.10.0)(@types/node@22.7.7)(typescript@5.6.3)
       '@lerna-lite/run': 3.10.0(@lerna-lite/exec@3.10.0)(@lerna-lite/publish@3.10.0)(@types/node@22.7.7)(typescript@5.6.3)
-      '@lerna-lite/version': 3.10.0(@lerna-lite/exec@3.10.0(@lerna-lite/publish@3.10.0)(@lerna-lite/run@3.10.0)(@types/node@22.7.7)(typescript@5.6.3))(@lerna-lite/publish@3.10.0(@lerna-lite/exec@3.10.0)(@lerna-lite/run@3.10.0)(@types/node@22.7.7)(typescript@5.6.3))(@lerna-lite/run@3.10.0(@lerna-lite/exec@3.10.0)(@lerna-lite/publish@3.10.0)(@types/node@22.7.7)(typescript@5.6.3))(@types/node@22.7.7)(typescript@5.6.3)
+      '@lerna-lite/version': 3.10.0(@lerna-lite/exec@3.10.0)(@lerna-lite/publish@3.10.0)(@lerna-lite/run@3.10.0)(@types/node@22.7.7)(typescript@5.6.3)
     transitivePeerDependencies:
       - '@types/node'
       - babel-plugin-macros
@@ -4491,7 +4652,7 @@ snapshots:
 
   '@lerna-lite/exec@3.10.0(@lerna-lite/publish@3.10.0)(@lerna-lite/run@3.10.0)(@types/node@22.7.7)(typescript@5.6.3)':
     dependencies:
-      '@lerna-lite/cli': 3.10.0(@lerna-lite/exec@3.10.0(@lerna-lite/publish@3.10.0)(@lerna-lite/run@3.10.0)(@types/node@22.7.7)(typescript@5.6.3))(@lerna-lite/publish@3.10.0(@lerna-lite/exec@3.10.0)(@lerna-lite/run@3.10.0)(@types/node@22.7.7)(typescript@5.6.3))(@lerna-lite/run@3.10.0(@lerna-lite/exec@3.10.0)(@lerna-lite/publish@3.10.0)(@types/node@22.7.7)(typescript@5.6.3))(@lerna-lite/version@3.10.0(@lerna-lite/exec@3.10.0(@lerna-lite/publish@3.10.0)(@lerna-lite/run@3.10.0)(@types/node@22.7.7)(typescript@5.6.3))(@lerna-lite/publish@3.10.0(@lerna-lite/exec@3.10.0)(@lerna-lite/run@3.10.0)(@types/node@22.7.7)(typescript@5.6.3))(@lerna-lite/run@3.10.0(@lerna-lite/exec@3.10.0)(@lerna-lite/publish@3.10.0)(@types/node@22.7.7)(typescript@5.6.3))(@types/node@22.7.7)(typescript@5.6.3))(@types/node@22.7.7)(typescript@5.6.3)
+      '@lerna-lite/cli': 3.10.0(@lerna-lite/exec@3.10.0)(@lerna-lite/publish@3.10.0)(@lerna-lite/run@3.10.0)(@lerna-lite/version@3.10.0(@lerna-lite/exec@3.10.0)(@lerna-lite/publish@3.10.0)(@lerna-lite/run@3.10.0)(@types/node@22.7.7)(typescript@5.6.3))(@types/node@22.7.7)(typescript@5.6.3)
       '@lerna-lite/core': 3.10.0(@types/node@22.7.7)(typescript@5.6.3)
       '@lerna-lite/profiler': 3.10.0(@types/node@22.7.7)(typescript@5.6.3)
       dotenv: 16.4.5
@@ -4549,10 +4710,10 @@ snapshots:
 
   '@lerna-lite/publish@3.10.0(@lerna-lite/exec@3.10.0)(@lerna-lite/run@3.10.0)(@types/node@22.7.7)(typescript@5.6.3)':
     dependencies:
-      '@lerna-lite/cli': 3.10.0(@lerna-lite/exec@3.10.0(@lerna-lite/publish@3.10.0)(@lerna-lite/run@3.10.0)(@types/node@22.7.7)(typescript@5.6.3))(@lerna-lite/publish@3.10.0(@lerna-lite/exec@3.10.0)(@lerna-lite/run@3.10.0)(@types/node@22.7.7)(typescript@5.6.3))(@lerna-lite/run@3.10.0(@lerna-lite/exec@3.10.0)(@lerna-lite/publish@3.10.0)(@types/node@22.7.7)(typescript@5.6.3))(@lerna-lite/version@3.10.0(@lerna-lite/exec@3.10.0(@lerna-lite/publish@3.10.0)(@lerna-lite/run@3.10.0)(@types/node@22.7.7)(typescript@5.6.3))(@lerna-lite/publish@3.10.0(@lerna-lite/exec@3.10.0)(@lerna-lite/run@3.10.0)(@types/node@22.7.7)(typescript@5.6.3))(@lerna-lite/run@3.10.0(@lerna-lite/exec@3.10.0)(@lerna-lite/publish@3.10.0)(@types/node@22.7.7)(typescript@5.6.3))(@types/node@22.7.7)(typescript@5.6.3))(@types/node@22.7.7)(typescript@5.6.3)
+      '@lerna-lite/cli': 3.10.0(@lerna-lite/exec@3.10.0)(@lerna-lite/publish@3.10.0)(@lerna-lite/run@3.10.0)(@lerna-lite/version@3.10.0(@lerna-lite/exec@3.10.0)(@lerna-lite/publish@3.10.0)(@lerna-lite/run@3.10.0)(@types/node@22.7.7)(typescript@5.6.3))(@types/node@22.7.7)(typescript@5.6.3)
       '@lerna-lite/core': 3.10.0(@types/node@22.7.7)(typescript@5.6.3)
       '@lerna-lite/npmlog': 3.10.0
-      '@lerna-lite/version': 3.10.0(@lerna-lite/exec@3.10.0(@lerna-lite/publish@3.10.0)(@lerna-lite/run@3.10.0)(@types/node@22.7.7)(typescript@5.6.3))(@lerna-lite/publish@3.10.0(@lerna-lite/exec@3.10.0)(@lerna-lite/run@3.10.0)(@types/node@22.7.7)(typescript@5.6.3))(@lerna-lite/run@3.10.0(@lerna-lite/exec@3.10.0)(@lerna-lite/publish@3.10.0)(@types/node@22.7.7)(typescript@5.6.3))(@types/node@22.7.7)(typescript@5.6.3)
+      '@lerna-lite/version': 3.10.0(@lerna-lite/exec@3.10.0)(@lerna-lite/publish@3.10.0)(@lerna-lite/run@3.10.0)(@types/node@22.7.7)(typescript@5.6.3)
       '@npmcli/arborist': 7.5.4
       '@npmcli/package-json': 5.2.1
       byte-size: 9.0.0
@@ -4587,7 +4748,7 @@ snapshots:
 
   '@lerna-lite/run@3.10.0(@lerna-lite/exec@3.10.0)(@lerna-lite/publish@3.10.0)(@types/node@22.7.7)(typescript@5.6.3)':
     dependencies:
-      '@lerna-lite/cli': 3.10.0(@lerna-lite/exec@3.10.0(@lerna-lite/publish@3.10.0)(@lerna-lite/run@3.10.0)(@types/node@22.7.7)(typescript@5.6.3))(@lerna-lite/publish@3.10.0(@lerna-lite/exec@3.10.0)(@lerna-lite/run@3.10.0)(@types/node@22.7.7)(typescript@5.6.3))(@lerna-lite/run@3.10.0(@lerna-lite/exec@3.10.0)(@lerna-lite/publish@3.10.0)(@types/node@22.7.7)(typescript@5.6.3))(@lerna-lite/version@3.10.0(@lerna-lite/exec@3.10.0(@lerna-lite/publish@3.10.0)(@lerna-lite/run@3.10.0)(@types/node@22.7.7)(typescript@5.6.3))(@lerna-lite/publish@3.10.0(@lerna-lite/exec@3.10.0)(@lerna-lite/run@3.10.0)(@types/node@22.7.7)(typescript@5.6.3))(@lerna-lite/run@3.10.0(@lerna-lite/exec@3.10.0)(@lerna-lite/publish@3.10.0)(@types/node@22.7.7)(typescript@5.6.3))(@types/node@22.7.7)(typescript@5.6.3))(@types/node@22.7.7)(typescript@5.6.3)
+      '@lerna-lite/cli': 3.10.0(@lerna-lite/exec@3.10.0)(@lerna-lite/publish@3.10.0)(@lerna-lite/run@3.10.0)(@lerna-lite/version@3.10.0(@lerna-lite/exec@3.10.0)(@lerna-lite/publish@3.10.0)(@lerna-lite/run@3.10.0)(@types/node@22.7.7)(typescript@5.6.3))(@types/node@22.7.7)(typescript@5.6.3)
       '@lerna-lite/core': 3.10.0(@types/node@22.7.7)(typescript@5.6.3)
       '@lerna-lite/npmlog': 3.10.0
       '@lerna-lite/profiler': 3.10.0(@types/node@22.7.7)(typescript@5.6.3)
@@ -4606,9 +4767,9 @@ snapshots:
       - supports-color
       - typescript
 
-  '@lerna-lite/version@3.10.0(@lerna-lite/exec@3.10.0(@lerna-lite/publish@3.10.0)(@lerna-lite/run@3.10.0)(@types/node@22.7.7)(typescript@5.6.3))(@lerna-lite/publish@3.10.0(@lerna-lite/exec@3.10.0)(@lerna-lite/run@3.10.0)(@types/node@22.7.7)(typescript@5.6.3))(@lerna-lite/run@3.10.0(@lerna-lite/exec@3.10.0)(@lerna-lite/publish@3.10.0)(@types/node@22.7.7)(typescript@5.6.3))(@types/node@22.7.7)(typescript@5.6.3)':
+  '@lerna-lite/version@3.10.0(@lerna-lite/exec@3.10.0)(@lerna-lite/publish@3.10.0)(@lerna-lite/run@3.10.0)(@types/node@22.7.7)(typescript@5.6.3)':
     dependencies:
-      '@lerna-lite/cli': 3.10.0(@lerna-lite/exec@3.10.0(@lerna-lite/publish@3.10.0)(@lerna-lite/run@3.10.0)(@types/node@22.7.7)(typescript@5.6.3))(@lerna-lite/publish@3.10.0(@lerna-lite/exec@3.10.0)(@lerna-lite/run@3.10.0)(@types/node@22.7.7)(typescript@5.6.3))(@lerna-lite/run@3.10.0(@lerna-lite/exec@3.10.0)(@lerna-lite/publish@3.10.0)(@types/node@22.7.7)(typescript@5.6.3))(@lerna-lite/version@3.10.0(@lerna-lite/exec@3.10.0(@lerna-lite/publish@3.10.0)(@lerna-lite/run@3.10.0)(@types/node@22.7.7)(typescript@5.6.3))(@lerna-lite/publish@3.10.0(@lerna-lite/exec@3.10.0)(@lerna-lite/run@3.10.0)(@types/node@22.7.7)(typescript@5.6.3))(@lerna-lite/run@3.10.0(@lerna-lite/exec@3.10.0)(@lerna-lite/publish@3.10.0)(@types/node@22.7.7)(typescript@5.6.3))(@types/node@22.7.7)(typescript@5.6.3))(@types/node@22.7.7)(typescript@5.6.3)
+      '@lerna-lite/cli': 3.10.0(@lerna-lite/exec@3.10.0)(@lerna-lite/publish@3.10.0)(@lerna-lite/run@3.10.0)(@lerna-lite/version@3.10.0(@lerna-lite/exec@3.10.0)(@lerna-lite/publish@3.10.0)(@lerna-lite/run@3.10.0)(@types/node@22.7.7)(typescript@5.6.3))(@types/node@22.7.7)(typescript@5.6.3)
       '@lerna-lite/core': 3.10.0(@types/node@22.7.7)(typescript@5.6.3)
       '@lerna-lite/npmlog': 3.10.0
       '@octokit/plugin-enterprise-rest': 6.0.1
@@ -5089,7 +5250,7 @@ snapshots:
   '@types/vinyl@2.0.12':
     dependencies:
       '@types/expect': 1.20.4
-      '@types/node': 22.7.7
+      '@types/node': 20.16.13
 
   '@vercel/nft@0.26.5(encoding@0.1.13)':
     dependencies:
