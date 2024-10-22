@@ -66,6 +66,11 @@
         {
             "name": "HTML-IDREF-for",
             "pattern": "/\\bfor=\"[^\"]*\"/gi"
+        },
+        {
+            "name": "HTML-symbol-entity",
+            "description": "Matches on HTML symbols like `&clubs;`",
+            "pattern": "/&[a-z]+;/gi"
         }
     ],
     // Language Rules to apply to matching files.

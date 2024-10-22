@@ -13,7 +13,7 @@
     "./cspell-ext.json": "./cspell-ext.json"
   },
   "scripts": {
-    "build": "node ./scripts/build.mjs",
+    "build": "node ./scripts/build.mjs && prettier cspell-ext.json --write ",
     "test": "cspell --no-default-configuration .",
     "prepublishOnly": "echo OK",
     "prepare:dictionary": "pnpm run build"
@@ -72,6 +72,7 @@
     "@cspell/dict-lorem-ipsum": "workspace:*",
     "@cspell/dict-lua": "workspace:*",
     "@cspell/dict-makefile": "workspace:*",
+    "@cspell/dict-markdown": "workspace:*",
     "@cspell/dict-monkeyc": "workspace:*",
     "@cspell/dict-node": "workspace:*",
     "@cspell/dict-npm": "workspace:*",
