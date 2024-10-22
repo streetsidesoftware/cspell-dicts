@@ -1,5 +1,17 @@
 # Release Notes
 
+## [27.5.14](https://github.com/streetsidesoftware/cspell-dicts/compare/cspell-dicts@27.5.13...cspell-dicts@27.5.14) (2024-10-22)
+
+
+### Updates and Bug Fixes
+
+* Add Astro to TypeScript dictionary settings ([#3717](https://github.com/streetsidesoftware/cspell-dicts/issues/3717)) ([be7fdb3](https://github.com/streetsidesoftware/cspell-dicts/commit/be7fdb31f9e65f76b5410d353e24ac775631cf8a))
+* CSpell - Use Semver for dependencies ([#3720](https://github.com/streetsidesoftware/cspell-dicts/issues/3720)) ([4bca061](https://github.com/streetsidesoftware/cspell-dicts/commit/4bca0614260531a067dec8fffb954fe17f60cb98))
+* Update Markdown dictionary ([#3713](https://github.com/streetsidesoftware/cspell-dicts/issues/3713)) ([1394c0b](https://github.com/streetsidesoftware/cspell-dicts/commit/1394c0bf2e2518508470089cabaf1c69260e42c2))
+* Workflow Bot -- Build Dictionaries ([#3715](https://github.com/streetsidesoftware/cspell-dicts/issues/3715)) ([7072609](https://github.com/streetsidesoftware/cspell-dicts/commit/7072609f5bc1b8cee3a2e61fddb1c5a8c8d357cd))
+* Workflow Bot -- Build Dictionaries ([#3718](https://github.com/streetsidesoftware/cspell-dicts/issues/3718)) ([d4c72e4](https://github.com/streetsidesoftware/cspell-dicts/commit/d4c72e49743a15fb7babc80142ef0817d2d7b394))
+* Workflow Bot -- Build Dictionaries ([#3719](https://github.com/streetsidesoftware/cspell-dicts/issues/3719)) ([6ce9d0d](https://github.com/streetsidesoftware/cspell-dicts/commit/6ce9d0d4599c43068cf5c97f8428c60eff1b7d9e))
+
 ## [27.5.13](https://github.com/streetsidesoftware/cspell-dicts/compare/cspell-dicts@27.5.12...cspell-dicts@27.5.13) (2024-10-20)
 
 
