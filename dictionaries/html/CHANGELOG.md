@@ -3,6 +3,13 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+## [4.0.10](https://github.com/streetsidesoftware/cspell-dicts/compare/@cspell/dict-html@4.0.9...@cspell/dict-html@4.0.10) (2024-10-22)
+
+
+### Updates and Bug Fixes
+
+* Update Markdown dictionary ([#3713](https://github.com/streetsidesoftware/cspell-dicts/issues/3713)) ([1394c0b](https://github.com/streetsidesoftware/cspell-dicts/commit/1394c0bf2e2518508470089cabaf1c69260e42c2))
+
 ## [4.0.9](https://github.com/streetsidesoftware/cspell-dicts/compare/@cspell/dict-html@4.0.8...@cspell/dict-html@4.0.9) (2024-10-11)
 
 

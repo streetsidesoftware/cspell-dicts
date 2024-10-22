@@ -3,6 +3,14 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+## [3.1.11](https://github.com/streetsidesoftware/cspell-dicts/compare/@cspell/dict-typescript@3.1.10...@cspell/dict-typescript@3.1.11) (2024-10-22)
+
+
+### Updates and Bug Fixes
+
+* Add Astro to TypeScript dictionary settings ([#3717](https://github.com/streetsidesoftware/cspell-dicts/issues/3717)) ([be7fdb3](https://github.com/streetsidesoftware/cspell-dicts/commit/be7fdb31f9e65f76b5410d353e24ac775631cf8a))
+* Workflow Bot -- Build Dictionaries ([#3718](https://github.com/streetsidesoftware/cspell-dicts/issues/3718)) ([d4c72e4](https://github.com/streetsidesoftware/cspell-dicts/commit/d4c72e49743a15fb7babc80142ef0817d2d7b394))
+
 ## [3.1.10](https://github.com/streetsidesoftware/cspell-dicts/compare/@cspell/dict-typescript@3.1.9...@cspell/dict-typescript@3.1.10) (2024-10-17)
 
 

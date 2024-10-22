@@ -1,5 +1,13 @@
 # Change Log
 
+## [1.0.1](https://github.com/streetsidesoftware/cspell-dicts/compare/@cspell/dict-cspell-bundle@1.0.0...@cspell/dict-cspell-bundle@1.0.1) (2024-10-22)
+
+
+### Updates and Bug Fixes
+
+* CSpell - Use Semver for dependencies ([#3720](https://github.com/streetsidesoftware/cspell-dicts/issues/3720)) ([4bca061](https://github.com/streetsidesoftware/cspell-dicts/commit/4bca0614260531a067dec8fffb954fe17f60cb98))
+* Update Markdown dictionary ([#3713](https://github.com/streetsidesoftware/cspell-dicts/issues/3713)) ([1394c0b](https://github.com/streetsidesoftware/cspell-dicts/commit/1394c0bf2e2518508470089cabaf1c69260e42c2))
+
 ## 1.0.0 (2024-10-20)
 
 
