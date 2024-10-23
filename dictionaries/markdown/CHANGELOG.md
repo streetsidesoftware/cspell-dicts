@@ -1,5 +1,12 @@
 # Change Log
 
+## [2.0.7](https://github.com/streetsidesoftware/cspell-dicts/compare/@cspell/dict-markdown@2.0.6...@cspell/dict-markdown@2.0.7) (2024-10-23)
+
+
+### Updates and Bug Fixes
+
+* Adjust markdown dictionaries ([#3724](https://github.com/streetsidesoftware/cspell-dicts/issues/3724)) ([af176d0](https://github.com/streetsidesoftware/cspell-dicts/commit/af176d09eafb4bdd558429c86a3f4b396712124a))
+
 ## [2.0.6](https://github.com/streetsidesoftware/cspell-dicts/compare/@cspell/dict-markdown@2.0.5...@cspell/dict-markdown@2.0.6) (2024-10-22)
 
 
