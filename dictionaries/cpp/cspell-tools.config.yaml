@@ -4,12 +4,17 @@ targets:
   - name: 'cpp'
     sources:
       - filename: src/additional-terms.txt
+      - filename: src/cpp2.txt
+        split: true
+      - filename: src/cpp3.txt
+        split: true
       - filename: src/cpp.txt
         split: true
         allowedSplitWords:
           - ../en_US/en_US.trie
           - ../software-terms/dict/softwareTerms.txt
           - src/cpp.txt
+          - src/cpp3.txt
           - src/allowed-terms.txt
           - src/compiler-clang-attributes.txt
           - src/compiler-gcc.txt
@@ -23,6 +28,7 @@ targets:
           - src/stdlib-cmath.txt
           - src/stdlib-cpp.txt
           - src/template-strings.txt
+        # storeSplitWordsAsCompounds: true
       - filename: src/allowed-terms.txt
         split: true
     format: plaintext
@@ -38,7 +44,6 @@ targets:
         # allowedSplitWords:
         #   - ../en_US/en_US.trie
         #   - ../software-terms/dict/softwareTerms.txt
-        #   - src/allowed-terms.txt
     format: plaintext
     targetDirectory: './dict'
     generateNonStrict: false
