@@ -1,5 +1,17 @@
 # Release Notes
 
+## [27.5.16](https://github.com/streetsidesoftware/cspell-dicts/compare/cspell-dicts@27.5.15...cspell-dicts@27.5.16) (2024-10-27)
+
+
+### Updates and Bug Fixes
+
+* Add AL dict to cspell bundle ([#3735](https://github.com/streetsidesoftware/cspell-dicts/issues/3735)) ([b34c750](https://github.com/streetsidesoftware/cspell-dicts/commit/b34c750a32dfa7d10586f6c0da201118f39ff014))
+* Add randomizer to software terms ([#3733](https://github.com/streetsidesoftware/cspell-dicts/issues/3733)) ([0fa691e](https://github.com/streetsidesoftware/cspell-dicts/commit/0fa691ea767f5facfd05418b0fdea6b9f483f0c7))
+* Adjust CPP words ([#3736](https://github.com/streetsidesoftware/cspell-dicts/issues/3736)) ([aef6353](https://github.com/streetsidesoftware/cspell-dicts/commit/aef63535911d23657549884ff2c7c72cf50b2210))
+* Workflow Bot -- Build Dictionaries ([#3721](https://github.com/streetsidesoftware/cspell-dicts/issues/3721)) ([fbb085c](https://github.com/streetsidesoftware/cspell-dicts/commit/fbb085c4bfad2e318f8b49a9cbc3cdea35f155ea))
+* Workflow Bot -- Build Dictionaries ([#3734](https://github.com/streetsidesoftware/cspell-dicts/issues/3734)) ([015ade4](https://github.com/streetsidesoftware/cspell-dicts/commit/015ade4886cbe196a1114a7ef2f8cf0cc5ea1701))
+* Workflow Bot -- Build Dictionaries ([#3738](https://github.com/streetsidesoftware/cspell-dicts/issues/3738)) ([3d89ef2](https://github.com/streetsidesoftware/cspell-dicts/commit/3d89ef217eccdfc6b609e88859ebe7b5800dfe62))
+
 ## [27.5.15](https://github.com/streetsidesoftware/cspell-dicts/compare/cspell-dicts@27.5.14...cspell-dicts@27.5.15) (2024-10-23)
 
 

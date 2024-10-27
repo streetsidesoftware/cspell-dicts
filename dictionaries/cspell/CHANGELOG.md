@@ -1,5 +1,20 @@
 # Change Log
 
+## [1.0.2](https://github.com/streetsidesoftware/cspell-dicts/compare/@cspell/dict-cspell-bundle@1.0.1...@cspell/dict-cspell-bundle@1.0.2) (2024-10-27)
+
+
+### Updates and Bug Fixes
+
+* Add AL dict to cspell bundle ([#3735](https://github.com/streetsidesoftware/cspell-dicts/issues/3735)) ([b34c750](https://github.com/streetsidesoftware/cspell-dicts/commit/b34c750a32dfa7d10586f6c0da201118f39ff014))
+
+
+### Dependencies
+
+* The following workspace dependencies were updated
+  * dependencies
+    * @cspell/dict-cpp bumped to 5.1.23
+    * @cspell/dict-software-terms bumped to 4.1.12
+
 ## [1.0.1](https://github.com/streetsidesoftware/cspell-dicts/compare/@cspell/dict-cspell-bundle@1.0.0...@cspell/dict-cspell-bundle@1.0.1) (2024-10-22)
 
 
