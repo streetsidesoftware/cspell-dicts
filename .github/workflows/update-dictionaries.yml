@@ -48,7 +48,7 @@ jobs:
       - name: PR
         uses: streetsidesoftware/actions/.github/actions/pr@v1
         with:
-          commit-message: 'ci: Workflow Bot -- Update Dictionaries'
+          commit-message: 'fix: Workflow Bot -- Update Dictionaries'
           branch: ${{ env.NEW_BRANCH }}
           base: ${{ env.REF_BRANCH }}
           body: ${{ steps.body.outputs.body }}
