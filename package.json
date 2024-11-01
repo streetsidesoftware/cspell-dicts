@@ -22,6 +22,8 @@
     "readme:inject": "inject-markdown \"*.md\" \"dictionaries/*/README.md\" && prettier -w \"*.md\" \"dictionaries/*/README.md\"",
     "prepare": "pnpm -r run --stream --workspace-concurrency 3 prepare:dictionary",
     "pub-recover": "lerna publish from-package --no-push --no-private --concurrency 1",
+    "#update-dictionaries": "# Update dictionaries will run the update-dictionary script in each dictionary package.",
+    "update-dictionaries": "pnpm -r run --stream --workspace-concurrency 2 update-dictionary",
     "update:contributors": "update-contributors $(gh auth token)",
     "update-packages": "pnpm up",
     "preinstall": "npx only-allow pnpm"
