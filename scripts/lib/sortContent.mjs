@@ -5,6 +5,11 @@ export function sortSourceContent(content) {
     const groups = [];
     let group = 0;
 
+    /**
+     *
+     * @param {string} line
+     * @returns {void}
+     */
     function addLineToGroup(line) {
         line = line.trim();
         if (!line) return;
@@ -12,6 +17,11 @@ export function sortSourceContent(content) {
         groups[group].push(line);
     }
 
+    /**
+     *
+     * @param {string} line
+     * @returns {void}
+     */
     function addLine(line) {
         if (line.startsWith('#')) {
             // One comment per group.
@@ -26,13 +36,32 @@ export function sortSourceContent(content) {
         }
     }
 
+    /**
+     *
+     * @param {string} a
+     * @returns
+     */
+    function removeCompoundPrefix(a) {
+        return a.replaceAll('*', '').replaceAll('+', '');
+    }
+
+    /**
+     *
+     * @param {string} a
+     * @param {string} b
+     * @returns {number}
+     */
+    function compareWords(a, b) {
+        return compare(removeCompoundPrefix(a), removeCompoundPrefix(b)) || compare(a, b);
+    }
+
     for (const line of lines) {
         addLine(line);
     }
 
     return (
         groups
-            .map((a) => a.sort(compare).join('\n'))
+            .map((a) => a.sort(compareWords).join('\n'))
             .join('\n')
             .trim() + '\n'
     );
