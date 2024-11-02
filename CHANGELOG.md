@@ -1,5 +1,28 @@
 # Release Notes
 
+## [28.0.0](https://github.com/streetsidesoftware/cspell-dicts/compare/cspell-dicts@27.5.16...cspell-dicts@28.0.0) (2024-11-02)
+
+
+### ⚠ BREAKING CHANGES
+
+* Add common compound words to cpp dict ([#3761](https://github.com/streetsidesoftware/cspell-dicts/issues/3761))
+
+### Features
+
+* Add common compound words to cpp dict ([#3761](https://github.com/streetsidesoftware/cspell-dicts/issues/3761)) ([dbfbcae](https://github.com/streetsidesoftware/cspell-dicts/commit/dbfbcaef810f4607fb44bddf3f1733d5d1be99e4))
+
+
+### Updates and Bug Fixes
+
+* Add synckit to npm dictionary ([#3762](https://github.com/streetsidesoftware/cspell-dicts/issues/3762)) ([42c9912](https://github.com/streetsidesoftware/cspell-dicts/commit/42c99120e32005d59edf4e95a9d7e25eccfdab93))
+* Add tinyglobby to npm ([#3756](https://github.com/streetsidesoftware/cspell-dicts/issues/3756)) ([2f01404](https://github.com/streetsidesoftware/cspell-dicts/commit/2f014048fec2f3fcaafadf5e42b22d12c661688b))
+* **terraform:** add alltrue to allowed words ([#3750](https://github.com/streetsidesoftware/cspell-dicts/issues/3750)) ([0ca5e8e](https://github.com/streetsidesoftware/cspell-dicts/commit/0ca5e8ea0c949f566393c03ba13d28d7eb81c308))
+* Workflow Bot -- Build Dictionaries ([#3739](https://github.com/streetsidesoftware/cspell-dicts/issues/3739)) ([12e1ea8](https://github.com/streetsidesoftware/cspell-dicts/commit/12e1ea8e2016d9f67f573bc795e5f9e482e36d3b))
+* Workflow Bot -- Build Dictionaries ([#3755](https://github.com/streetsidesoftware/cspell-dicts/issues/3755)) ([5afa596](https://github.com/streetsidesoftware/cspell-dicts/commit/5afa5963fe556b65acf4f8f5682266d1d5208e1d))
+* Workflow Bot -- Build Dictionaries ([#3757](https://github.com/streetsidesoftware/cspell-dicts/issues/3757)) ([6083d27](https://github.com/streetsidesoftware/cspell-dicts/commit/6083d278c3b092dbf06fc4938fb1b59e835a1e8e))
+* Workflow Bot -- Build Dictionaries ([#3759](https://github.com/streetsidesoftware/cspell-dicts/issues/3759)) ([3ea113f](https://github.com/streetsidesoftware/cspell-dicts/commit/3ea113fa887be043b65774c94fd643b3948545dc))
+* Workflow Bot -- Build Dictionaries ([#3763](https://github.com/streetsidesoftware/cspell-dicts/issues/3763)) ([126bad7](https://github.com/streetsidesoftware/cspell-dicts/commit/126bad7f32730fcdb30a876119d691708cc2a133))
+
 ## [27.5.16](https://github.com/streetsidesoftware/cspell-dicts/compare/cspell-dicts@27.5.15...cspell-dicts@27.5.16) (2024-10-27)
 
 

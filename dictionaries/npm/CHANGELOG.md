@@ -3,6 +3,16 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+## [5.1.9](https://github.com/streetsidesoftware/cspell-dicts/compare/@cspell/dict-npm@5.1.8...@cspell/dict-npm@5.1.9) (2024-11-02)
+
+
+### Updates and Bug Fixes
+
+* Add synckit to npm dictionary ([#3762](https://github.com/streetsidesoftware/cspell-dicts/issues/3762)) ([42c9912](https://github.com/streetsidesoftware/cspell-dicts/commit/42c99120e32005d59edf4e95a9d7e25eccfdab93))
+* Add tinyglobby to npm ([#3756](https://github.com/streetsidesoftware/cspell-dicts/issues/3756)) ([2f01404](https://github.com/streetsidesoftware/cspell-dicts/commit/2f014048fec2f3fcaafadf5e42b22d12c661688b))
+* Workflow Bot -- Build Dictionaries ([#3757](https://github.com/streetsidesoftware/cspell-dicts/issues/3757)) ([6083d27](https://github.com/streetsidesoftware/cspell-dicts/commit/6083d278c3b092dbf06fc4938fb1b59e835a1e8e))
+* Workflow Bot -- Build Dictionaries ([#3763](https://github.com/streetsidesoftware/cspell-dicts/issues/3763)) ([126bad7](https://github.com/streetsidesoftware/cspell-dicts/commit/126bad7f32730fcdb30a876119d691708cc2a133))
+
 ## [5.1.8](https://github.com/streetsidesoftware/cspell-dicts/compare/@cspell/dict-npm@5.1.7...@cspell/dict-npm@5.1.8) (2024-10-11)
 
 
