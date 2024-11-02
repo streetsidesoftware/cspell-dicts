@@ -1,5 +1,13 @@
 # Change Log
 
+## [1.0.6](https://github.com/streetsidesoftware/cspell-dicts/compare/@cspell/dict-terraform@1.0.5...@cspell/dict-terraform@1.0.6) (2024-11-02)
+
+
+### Updates and Bug Fixes
+
+* **terraform:** add alltrue to allowed words ([#3750](https://github.com/streetsidesoftware/cspell-dicts/issues/3750)) ([0ca5e8e](https://github.com/streetsidesoftware/cspell-dicts/commit/0ca5e8ea0c949f566393c03ba13d28d7eb81c308))
+* Workflow Bot -- Build Dictionaries ([#3739](https://github.com/streetsidesoftware/cspell-dicts/issues/3739)) ([12e1ea8](https://github.com/streetsidesoftware/cspell-dicts/commit/12e1ea8e2016d9f67f573bc795e5f9e482e36d3b))
+
 ## [1.0.5](https://github.com/streetsidesoftware/cspell-dicts/compare/@cspell/dict-terraform@1.0.4...@cspell/dict-terraform@1.0.5) (2024-10-11)
 
 
