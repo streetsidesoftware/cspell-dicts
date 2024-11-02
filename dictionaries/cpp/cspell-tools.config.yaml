@@ -29,6 +29,7 @@ targets:
           - src/stdlib-cpp.txt
           - src/template-strings.txt
         storeSplitWordsAsCompounds: true
+        minCompoundLength: 3
       - filename: src/allowed-terms.txt
         split: true
       - filename: src/compound-words.txt
