@@ -28,13 +28,16 @@ targets:
           - src/stdlib-cmath.txt
           - src/stdlib-cpp.txt
           - src/template-strings.txt
-        # storeSplitWordsAsCompounds: true
+        storeSplitWordsAsCompounds: true
+        minCompoundLength: 3
       - filename: src/allowed-terms.txt
         split: true
+      - filename: src/compound-words.txt
     format: plaintext
     targetDirectory: './dict'
     generateNonStrict: false
     compress: false
+    removeDuplicates: true
     sort: true
 
   - name: cpp-refined
@@ -47,6 +50,7 @@ targets:
     format: plaintext
     targetDirectory: './dict'
     generateNonStrict: false
+    removeDuplicates: true
     compress: false
 
   - name: 'cpp-legacy'
@@ -78,4 +82,5 @@ targets:
       - ../software-terms/dict/softwareTerms.txt
     targetDirectory: './dict'
     generateNonStrict: false
+    removeDuplicates: true
     compress: false
