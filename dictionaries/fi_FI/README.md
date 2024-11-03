@@ -45,8 +45,6 @@ See: [How to Create a New Dictionary](https://github.com/streetsidesoftware/cspe
 
 MIT
 
-fi_FI.dic and fi_FI.aff are under GNU ([source](https://github.com/fluks/fi-FI-mozilla-spellchecker))
-
 > Some packages may have other licenses included.
 
 <!--- @@inject: ../../static/footer.md --->
