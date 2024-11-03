@@ -22,6 +22,13 @@ See [Conventional Commits](https://conventionalcommits.org) for commit guideline
 
 
 
+## [3.0.5](https://github.com/streetsidesoftware/cspell-dicts/compare/@cspell/dict-scientific-terms-us@3.0.4...@cspell/dict-scientific-terms-us@3.0.5) (2024-11-03)
+
+
+### Updates and Bug Fixes
+
+* Workflow Bot -- Build Dictionaries ([#3771](https://github.com/streetsidesoftware/cspell-dicts/issues/3771)) ([2cfa1eb](https://github.com/streetsidesoftware/cspell-dicts/commit/2cfa1ebce68e789285f8bf8f7b3e1402cb4c1b80))
+
 ## [3.0.4](https://github.com/streetsidesoftware/cspell-dicts/compare/@cspell/dict-scientific-terms-us@3.0.3...@cspell/dict-scientific-terms-us@3.0.4) (2024-10-11)
 
 

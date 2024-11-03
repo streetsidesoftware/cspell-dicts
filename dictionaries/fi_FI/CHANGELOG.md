@@ -1,5 +1,12 @@
 # Change Log
 
+## [1.1.0](https://github.com/streetsidesoftware/cspell-dicts/compare/@cspell/dict-fi-fi@1.0.3...@cspell/dict-fi-fi@1.1.0) (2024-11-03)
+
+
+### Features
+
+* Finnish dictionary ([#3774](https://github.com/streetsidesoftware/cspell-dicts/issues/3774)) ([7499383](https://github.com/streetsidesoftware/cspell-dicts/commit/7499383daa691badeac714008976cca74230b391))
+
 ## [1.0.3](https://github.com/streetsidesoftware/cspell-dicts/compare/@cspell/dict-fi-fi@1.0.2...@cspell/dict-fi-fi@1.0.3) (2024-10-11)
 
 
