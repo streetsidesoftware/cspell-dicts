@@ -31,6 +31,7 @@ Various [cspell](https://github.com/streetsidesoftware/cspell) dictionaries. Eac
 - [English - Shared](dictionaries/en_shared)
 - [Esperanto](dictionaries/eo)
 - [Estonian](dictionaries/et-ee)
+- [Finnish](dictionaries/fi_FI)
 - [Français Réforme 1990](dictionaries/fr_FR_90)
 - [French](dictionaries/fr_FR)
 - [German](dictionaries/de_DE)
