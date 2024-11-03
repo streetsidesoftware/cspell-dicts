@@ -2236,9 +2236,9 @@ dns.NOTINITIALIZED
 dns.promises
 dns.REFUSED
 dns.resolve()
-dns.resolve(hostname[, rrtype], callback)
 dns.resolve*()
 dns.resolve*()/dns.reverse()
+dns.resolve(hostname[, rrtype], callback)
 dns.resolve4()
 dns.resolve4(hostname[, options], callback)
 dns.resolve6()
@@ -3125,8 +3125,8 @@ getSource(url, context, defaultGetSource)
 https://
 https://example.com/app.js
 import
-import { sep } from  path
 import * as m from  cjs
+import { sep } from  path
 import.meta
 import.meta.resolve
 import.meta.resolve(specifier[, parent])
@@ -5157,7 +5157,6 @@ y.js
 [out] type
 [out] version
 [out] words
-+Infinity
 abort
 added in:
 addon_node.c
@@ -5218,6 +5217,7 @@ handle
 hello
 hook
 index
++Infinity
 init
 Init
 initial_thread_count
@@ -6243,6 +6243,7 @@ true
 --trace-warnings
 --unhandled-rejections
 --v8-options
+*-deprecation
 -r
 ...args
 ./configure
@@ -6250,7 +6251,6 @@ true
 .tar.gz
 .unref()
 [seconds, nanoseconds]
-*-deprecation
 /etc/group
 128 + signal number
 add()
@@ -9307,7 +9307,6 @@ worker.workerData
 # From src/api/zlib.md
 .flush()
 .write()
-*Sync
 1 << NPOSTFIX
 1 << windowBits
 15 << NPOSTFIX
@@ -9376,6 +9375,7 @@ require( zlib )
 require( zlib ).constants
 strategy
 stream.Transform
+*Sync
 Transform
 true
 TypedArray
