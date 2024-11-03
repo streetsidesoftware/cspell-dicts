@@ -1,5 +1,22 @@
 # Release Notes
 
+## [28.1.0](https://github.com/streetsidesoftware/cspell-dicts/compare/cspell-dicts@28.0.0...cspell-dicts@28.1.0) (2024-11-03)
+
+
+### Features
+
+* Finnish dictionary ([#3774](https://github.com/streetsidesoftware/cspell-dicts/issues/3774)) ([7499383](https://github.com/streetsidesoftware/cspell-dicts/commit/7499383daa691badeac714008976cca74230b391))
+
+
+### Updates and Bug Fixes
+
+* Add `corepack` to tools ([#3773](https://github.com/streetsidesoftware/cspell-dicts/issues/3773)) ([6130c25](https://github.com/streetsidesoftware/cspell-dicts/commit/6130c25eed04b21e530eceb136528fcd1ac76862))
+* Add more compounds to CPP ([#3770](https://github.com/streetsidesoftware/cspell-dicts/issues/3770)) ([671ccdc](https://github.com/streetsidesoftware/cspell-dicts/commit/671ccdc0af91eaaf2f4a91249bcd24c08fcf2068))
+* Workflow Bot -- Build Dictionaries ([#3764](https://github.com/streetsidesoftware/cspell-dicts/issues/3764)) ([6a3e0cd](https://github.com/streetsidesoftware/cspell-dicts/commit/6a3e0cd054aedcacfc83fe717649183a7107b1ac))
+* Workflow Bot -- Build Dictionaries ([#3768](https://github.com/streetsidesoftware/cspell-dicts/issues/3768)) ([5de522b](https://github.com/streetsidesoftware/cspell-dicts/commit/5de522ba1557f8a83fc396c44d77cac1e63e546b))
+* Workflow Bot -- Build Dictionaries ([#3771](https://github.com/streetsidesoftware/cspell-dicts/issues/3771)) ([2cfa1eb](https://github.com/streetsidesoftware/cspell-dicts/commit/2cfa1ebce68e789285f8bf8f7b3e1402cb4c1b80))
+* Workflow Bot -- Build Dictionaries ([#3775](https://github.com/streetsidesoftware/cspell-dicts/issues/3775)) ([8b74d20](https://github.com/streetsidesoftware/cspell-dicts/commit/8b74d20b6024669804f2f8aa3698400d18328ec2))
+
 ## [28.0.0](https://github.com/streetsidesoftware/cspell-dicts/compare/cspell-dicts@27.5.16...cspell-dicts@28.0.0) (2024-11-02)
 
 
