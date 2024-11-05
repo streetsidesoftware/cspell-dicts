@@ -1,5 +1,14 @@
 # Release Notes
 
+## [28.1.1](https://github.com/streetsidesoftware/cspell-dicts/compare/cspell-dicts@28.1.0...cspell-dicts@28.1.1) (2024-11-05)
+
+
+### Updates and Bug Fixes
+
+* add `tstyche` to npm dictionary ([#3778](https://github.com/streetsidesoftware/cspell-dicts/issues/3778)) ([982a4bc](https://github.com/streetsidesoftware/cspell-dicts/commit/982a4bc664ac878873a929814e2bf79fdd646515))
+* add few more npm package names ([#3781](https://github.com/streetsidesoftware/cspell-dicts/issues/3781)) ([d4c34a6](https://github.com/streetsidesoftware/cspell-dicts/commit/d4c34a6c371cf83c8154ab524e06484ac07e4ef8))
+* Workflow Bot -- Build Dictionaries ([#3780](https://github.com/streetsidesoftware/cspell-dicts/issues/3780)) ([46578f0](https://github.com/streetsidesoftware/cspell-dicts/commit/46578f01ba30007670bb8446da9140e27d553a49))
+
 ## [28.1.0](https://github.com/streetsidesoftware/cspell-dicts/compare/cspell-dicts@28.0.0...cspell-dicts@28.1.0) (2024-11-03)
 
 
