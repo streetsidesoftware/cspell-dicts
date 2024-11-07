@@ -1,5 +1,15 @@
 # Release Notes
 
+## [28.1.2](https://github.com/streetsidesoftware/cspell-dicts/compare/cspell-dicts@28.1.1...cspell-dicts@28.1.2) (2024-11-07)
+
+
+### Updates and Bug Fixes
+
+* add leaderboard ([#3787](https://github.com/streetsidesoftware/cspell-dicts/issues/3787)) ([4f7719c](https://github.com/streetsidesoftware/cspell-dicts/commit/4f7719c7d05c89b5940e8411f6a0f73bb6940f67))
+* Add more compound words ([#3789](https://github.com/streetsidesoftware/cspell-dicts/issues/3789)) ([fa141ab](https://github.com/streetsidesoftware/cspell-dicts/commit/fa141ab70e32e149916fc055fc7853997f060631))
+* Workflow Bot -- Build Dictionaries ([#3784](https://github.com/streetsidesoftware/cspell-dicts/issues/3784)) ([27485ef](https://github.com/streetsidesoftware/cspell-dicts/commit/27485ef0751ca8871b573af557b0bc9fcd94ac95))
+* Workflow Bot -- Build Dictionaries ([#3788](https://github.com/streetsidesoftware/cspell-dicts/issues/3788)) ([17390bc](https://github.com/streetsidesoftware/cspell-dicts/commit/17390bcd6d457603eddaf62d506a4a2f0f8ae482))
+
 ## [28.1.1](https://github.com/streetsidesoftware/cspell-dicts/compare/cspell-dicts@28.1.0...cspell-dicts@28.1.1) (2024-11-05)
 
 
