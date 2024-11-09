@@ -1,5 +1,17 @@
 # Release Notes
 
+## [28.1.3](https://github.com/streetsidesoftware/cspell-dicts/compare/cspell-dicts@28.1.2...cspell-dicts@28.1.3) (2024-11-09)
+
+
+### Updates and Bug Fixes
+
+* add autodocstring vs code plugin ([#3793](https://github.com/streetsidesoftware/cspell-dicts/issues/3793)) ([f45294d](https://github.com/streetsidesoftware/cspell-dicts/commit/f45294d78be4d02123a34edf42c5638c9d177ee3))
+* add sysmon ([#3794](https://github.com/streetsidesoftware/cspell-dicts/issues/3794)) ([67347d0](https://github.com/streetsidesoftware/cspell-dicts/commit/67347d0e42571dd74cc404e0928fc42ecd7e2bd9))
+* add vala programming language ([#3795](https://github.com/streetsidesoftware/cspell-dicts/issues/3795)) ([b5533c4](https://github.com/streetsidesoftware/cspell-dicts/commit/b5533c4e5ad6f873b6c645d7907961a6aa5ee627))
+* Workflow Bot -- Build Dictionaries ([#3790](https://github.com/streetsidesoftware/cspell-dicts/issues/3790)) ([aae021d](https://github.com/streetsidesoftware/cspell-dicts/commit/aae021db2a1a7af1a689e7cbecba81302160684a))
+* Workflow Bot -- Build Dictionaries ([#3796](https://github.com/streetsidesoftware/cspell-dicts/issues/3796)) ([11bd9bc](https://github.com/streetsidesoftware/cspell-dicts/commit/11bd9bcb5e18a27e4ce45194f74217ff2cb4949d))
+* Workflow Bot -- Build Dictionaries ([#3797](https://github.com/streetsidesoftware/cspell-dicts/issues/3797)) ([48557a9](https://github.com/streetsidesoftware/cspell-dicts/commit/48557a9921db821089d032524421ff95940af5d9))
+
 ## [28.1.2](https://github.com/streetsidesoftware/cspell-dicts/compare/cspell-dicts@28.1.1...cspell-dicts@28.1.2) (2024-11-07)
 
 
