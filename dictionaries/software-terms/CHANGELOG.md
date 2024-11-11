@@ -3,6 +3,14 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+## [4.1.15](https://github.com/streetsidesoftware/cspell-dicts/compare/@cspell/dict-software-terms@4.1.14...@cspell/dict-software-terms@4.1.15) (2024-11-11)
+
+
+### Updates and Bug Fixes
+
+* add rust toolchain ([#3803](https://github.com/streetsidesoftware/cspell-dicts/issues/3803)) ([cc04da0](https://github.com/streetsidesoftware/cspell-dicts/commit/cc04da04115734d595e3d03c3862cbf5b4600577))
+* Workflow Bot -- Build Dictionaries ([#3805](https://github.com/streetsidesoftware/cspell-dicts/issues/3805)) ([289644b](https://github.com/streetsidesoftware/cspell-dicts/commit/289644b6605102db73d68683cb649ba73458364c))
+
 ## [4.1.14](https://github.com/streetsidesoftware/cspell-dicts/compare/@cspell/dict-software-terms@4.1.13...@cspell/dict-software-terms@4.1.14) (2024-11-09)
 
 
