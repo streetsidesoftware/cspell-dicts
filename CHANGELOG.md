@@ -1,5 +1,16 @@
 # Release Notes
 
+## [28.1.4](https://github.com/streetsidesoftware/cspell-dicts/compare/cspell-dicts@28.1.3...cspell-dicts@28.1.4) (2024-11-11)
+
+
+### Updates and Bug Fixes
+
+* add missing rust terms ([#3804](https://github.com/streetsidesoftware/cspell-dicts/issues/3804)) ([eb95572](https://github.com/streetsidesoftware/cspell-dicts/commit/eb95572987fc447638f53c0bb250295489a9ab62))
+* add rust toolchain ([#3803](https://github.com/streetsidesoftware/cspell-dicts/issues/3803)) ([cc04da0](https://github.com/streetsidesoftware/cspell-dicts/commit/cc04da04115734d595e3d03c3862cbf5b4600577))
+* Workflow Bot -- Build Dictionaries ([#3802](https://github.com/streetsidesoftware/cspell-dicts/issues/3802)) ([9bfd5c7](https://github.com/streetsidesoftware/cspell-dicts/commit/9bfd5c796c78785d3e90e8303e2316788eb03acd))
+* Workflow Bot -- Build Dictionaries ([#3805](https://github.com/streetsidesoftware/cspell-dicts/issues/3805)) ([289644b](https://github.com/streetsidesoftware/cspell-dicts/commit/289644b6605102db73d68683cb649ba73458364c))
+* Workflow Bot -- Update Dictionaries ([#3799](https://github.com/streetsidesoftware/cspell-dicts/issues/3799)) ([9d5994f](https://github.com/streetsidesoftware/cspell-dicts/commit/9d5994fea1cf8d53afe05d7992fd970c1b4db894))
+
 ## [28.1.3](https://github.com/streetsidesoftware/cspell-dicts/compare/cspell-dicts@28.1.2...cspell-dicts@28.1.3) (2024-11-09)
 
 
