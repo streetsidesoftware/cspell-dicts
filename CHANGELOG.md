@@ -1,5 +1,19 @@
 # Release Notes
 
+## [28.2.0](https://github.com/streetsidesoftware/cspell-dicts/compare/cspell-dicts@28.1.4...cspell-dicts@28.2.0) (2024-11-16)
+
+
+### Features
+
+* Added Macedonian Cyrillic Dictionary ([#3807](https://github.com/streetsidesoftware/cspell-dicts/issues/3807)) ([ed45994](https://github.com/streetsidesoftware/cspell-dicts/commit/ed459942f7cc71b65f5bfaeba4b5a2d2036556a4))
+
+
+### Updates and Bug Fixes
+
+* Add KeyCloak to cybersecurity-terms.txt ([#3813](https://github.com/streetsidesoftware/cspell-dicts/issues/3813)) ([788d78d](https://github.com/streetsidesoftware/cspell-dicts/commit/788d78d901156cfe1beb2cc8473bcb2c0736372e))
+* Workflow Bot -- Build Dictionaries ([#3810](https://github.com/streetsidesoftware/cspell-dicts/issues/3810)) ([ac5ce98](https://github.com/streetsidesoftware/cspell-dicts/commit/ac5ce9856cf260680030e3c119bb84078bce250c))
+* Workflow Bot -- Build Dictionaries ([#3814](https://github.com/streetsidesoftware/cspell-dicts/issues/3814)) ([441cff6](https://github.com/streetsidesoftware/cspell-dicts/commit/441cff66060cbb67e66e83bdb43b52838976dc13))
+
 ## [28.1.4](https://github.com/streetsidesoftware/cspell-dicts/compare/cspell-dicts@28.1.3...cspell-dicts@28.1.4) (2024-11-11)
 
 
