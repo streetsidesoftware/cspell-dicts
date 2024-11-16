@@ -1,8 +1,7 @@
 {
   "name": "@cspell/dict-mk",
   "version": "1.0.0",
-  "description": "Macedonian dictionary for cspell. -- Private until verified",
-  "private": true,
+  "description": "Macedonian dictionary for cspell",
   "publishConfig": {
     "access": "public",
     "provenance": true
@@ -13,8 +12,12 @@
     "./cspell-ext.json": "./cspell-ext.json"
   },
   "scripts": {
-    "build": "cross-env NODE_OPTIONS=--max_old_space_size=8192 cspell-tools-cli build",
-    "test": "hunspell-reader words -n 1000 -m 0 \"src/index.dic\" | cspell -c ./cspell-ext.json \"--locale=mk-cyrl\" \"--languageId=*\" stdin",
+    "build": "cspell-tools-cli build",
+    "build:conditional": "pnpm sync && cspell-tools-cli build --conditional",
+    "sync": "pnpm cpy \"node_modules/dictionary-mk/{index.{aff,dic},license,readme.md}\" src/hunspell/ --flat",
+    "test": "pnpm test:words && pnpm test:cspell",
+    "test:cspell": "cspell samples",
+    "test:words": "hunspell-reader words -n 1000 -m 0 \"src/index.dic\" | cspell -c ./cspell-ext.json \"--locale=mk\" \"--languageId=*\" stdin",
     "prepublishOnly": "echo OK",
     "prepare:dictionary": "echo OK"
   },
@@ -32,14 +35,16 @@
   ],
   "author": "Street Side Software",
   "contributors": [],
-  "license": "MIT",
+  "license": "LGPL-3.0",
   "bugs": {
     "url": "https://github.com/streetsidesoftware/cspell-dicts/issues"
   },
   "homepage": "https://github.com/streetsidesoftware/cspell-dicts/blob/main/dictionaries/mk#readme",
-  "devDependencies": {},
-  "dependencies": {},
+  "devDependencies": {
+    "dictionary-mk": "^2.0.0"
+  },
   "files": [
+    "src/hunspell/license",
     "dict/mk.trie",
     "cspell-ext.json",
     "*.js",
