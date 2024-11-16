@@ -468,9 +468,13 @@ Special thanks to all of our amazing contributors!
 
 Please fork this repository to add new dictionaries.
 
-## Install Pnpm
+## Enable Corepack
 
-[Installation | pnpm](https://pnpm.io/installation)
+See: [Corepack](https://github.com/nodejs/corepack#corepack-enable--name)
+
+```
+corepack enable
+```
 
 ### Using Yeoman script
 
