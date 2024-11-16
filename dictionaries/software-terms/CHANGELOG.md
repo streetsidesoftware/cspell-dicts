@@ -3,6 +3,14 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+## [4.1.16](https://github.com/streetsidesoftware/cspell-dicts/compare/@cspell/dict-software-terms@4.1.15...@cspell/dict-software-terms@4.1.16) (2024-11-16)
+
+
+### Updates and Bug Fixes
+
+* Add KeyCloak to cybersecurity-terms.txt ([#3813](https://github.com/streetsidesoftware/cspell-dicts/issues/3813)) ([788d78d](https://github.com/streetsidesoftware/cspell-dicts/commit/788d78d901156cfe1beb2cc8473bcb2c0736372e))
+* Workflow Bot -- Build Dictionaries ([#3814](https://github.com/streetsidesoftware/cspell-dicts/issues/3814)) ([441cff6](https://github.com/streetsidesoftware/cspell-dicts/commit/441cff66060cbb67e66e83bdb43b52838976dc13))
+
 ## [4.1.15](https://github.com/streetsidesoftware/cspell-dicts/compare/@cspell/dict-software-terms@4.1.14...@cspell/dict-software-terms@4.1.15) (2024-11-11)
 
 
