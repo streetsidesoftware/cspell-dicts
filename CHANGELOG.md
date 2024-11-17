@@ -1,5 +1,19 @@
 # Release Notes
 
+## [28.2.1](https://github.com/streetsidesoftware/cspell-dicts/compare/cspell-dicts@28.2.0...cspell-dicts@28.2.1) (2024-11-17)
+
+
+### Updates and Bug Fixes
+
+* Add `easing` to software terms ([#3822](https://github.com/streetsidesoftware/cspell-dicts/issues/3822)) ([5645fc6](https://github.com/streetsidesoftware/cspell-dicts/commit/5645fc65a677c297ee8825225d0f201a2da6dfc2))
+* Add `GLAPI` ([#3823](https://github.com/streetsidesoftware/cspell-dicts/issues/3823)) ([fdefd95](https://github.com/streetsidesoftware/cspell-dicts/commit/fdefd95a180ccad1e781033a0a27b2742519d181))
+* Add various make tools ([#3825](https://github.com/streetsidesoftware/cspell-dicts/issues/3825)) ([92c8949](https://github.com/streetsidesoftware/cspell-dicts/commit/92c8949b1da8b1878dd3675b489f3b9ead91d04c))
+* Workflow Bot -- Build Dictionaries ([#3818](https://github.com/streetsidesoftware/cspell-dicts/issues/3818)) ([b0ac634](https://github.com/streetsidesoftware/cspell-dicts/commit/b0ac6344d8f48275aa6957282e833ef86233d07d))
+* Workflow Bot -- Build Dictionaries ([#3824](https://github.com/streetsidesoftware/cspell-dicts/issues/3824)) ([7d398e2](https://github.com/streetsidesoftware/cspell-dicts/commit/7d398e236a54bed63ca114d095d35d26a71569f2))
+* Workflow Bot -- Build Dictionaries ([#3826](https://github.com/streetsidesoftware/cspell-dicts/issues/3826)) ([85b3fda](https://github.com/streetsidesoftware/cspell-dicts/commit/85b3fda3c3a90fd391161332058273ba58aa73e3))
+* Workflow Bot -- Build Dictionaries ([#3828](https://github.com/streetsidesoftware/cspell-dicts/issues/3828)) ([31c0ea6](https://github.com/streetsidesoftware/cspell-dicts/commit/31c0ea6e778c292849c49e5a600f651470f0640c))
+* Workflow Bot -- Update Dictionaries ([#3827](https://github.com/streetsidesoftware/cspell-dicts/issues/3827)) ([fb466c0](https://github.com/streetsidesoftware/cspell-dicts/commit/fb466c01c9c69e640556467b51743aadbfe3439e))
+
 ## [28.2.0](https://github.com/streetsidesoftware/cspell-dicts/compare/cspell-dicts@28.1.4...cspell-dicts@28.2.0) (2024-11-16)
 
 

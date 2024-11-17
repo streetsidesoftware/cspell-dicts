@@ -3,6 +3,17 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+## [4.1.17](https://github.com/streetsidesoftware/cspell-dicts/compare/@cspell/dict-software-terms@4.1.16...@cspell/dict-software-terms@4.1.17) (2024-11-17)
+
+
+### Updates and Bug Fixes
+
+* Add `easing` to software terms ([#3822](https://github.com/streetsidesoftware/cspell-dicts/issues/3822)) ([5645fc6](https://github.com/streetsidesoftware/cspell-dicts/commit/5645fc65a677c297ee8825225d0f201a2da6dfc2))
+* Add `GLAPI` ([#3823](https://github.com/streetsidesoftware/cspell-dicts/issues/3823)) ([fdefd95](https://github.com/streetsidesoftware/cspell-dicts/commit/fdefd95a180ccad1e781033a0a27b2742519d181))
+* Add various make tools ([#3825](https://github.com/streetsidesoftware/cspell-dicts/issues/3825)) ([92c8949](https://github.com/streetsidesoftware/cspell-dicts/commit/92c8949b1da8b1878dd3675b489f3b9ead91d04c))
+* Workflow Bot -- Build Dictionaries ([#3824](https://github.com/streetsidesoftware/cspell-dicts/issues/3824)) ([7d398e2](https://github.com/streetsidesoftware/cspell-dicts/commit/7d398e236a54bed63ca114d095d35d26a71569f2))
+* Workflow Bot -- Build Dictionaries ([#3826](https://github.com/streetsidesoftware/cspell-dicts/issues/3826)) ([85b3fda](https://github.com/streetsidesoftware/cspell-dicts/commit/85b3fda3c3a90fd391161332058273ba58aa73e3))
+
 ## [4.1.16](https://github.com/streetsidesoftware/cspell-dicts/compare/@cspell/dict-software-terms@4.1.15...@cspell/dict-software-terms@4.1.16) (2024-11-16)
 
 
