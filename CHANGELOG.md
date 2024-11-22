@@ -6,6 +6,7 @@
 ### Updates and Bug Fixes
 
 * update golang words to Go 1.23 ([#3829](https://github.com/streetsidesoftware/cspell-dicts/issues/3829)) ([503098f](https://github.com/streetsidesoftware/cspell-dicts/commit/503098f057842152b02f6a2b145b50a7116712bc))
+* Workflow Bot -- Build Dictionaries ([#3832](https://github.com/streetsidesoftware/cspell-dicts/issues/3832)) ([5d42db1](https://github.com/streetsidesoftware/cspell-dicts/commit/5d42db18f8395433e8d4394a5b0128a4d63ae94a))
 
 ## [28.2.1](https://github.com/streetsidesoftware/cspell-dicts/compare/cspell-dicts@28.2.0...cspell-dicts@28.2.1) (2024-11-17)
 
