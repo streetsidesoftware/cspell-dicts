@@ -1,5 +1,12 @@
 # Release Notes
 
+## [28.2.2](https://github.com/streetsidesoftware/cspell-dicts/compare/cspell-dicts@28.2.1...cspell-dicts@28.2.2) (2024-11-22)
+
+
+### Updates and Bug Fixes
+
+* update golang words to Go 1.23 ([#3829](https://github.com/streetsidesoftware/cspell-dicts/issues/3829)) ([503098f](https://github.com/streetsidesoftware/cspell-dicts/commit/503098f057842152b02f6a2b145b50a7116712bc))
+
 ## [28.2.1](https://github.com/streetsidesoftware/cspell-dicts/compare/cspell-dicts@28.2.0...cspell-dicts@28.2.1) (2024-11-17)
 
 
