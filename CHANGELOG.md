@@ -1,5 +1,14 @@
 # Release Notes
 
+## [28.2.3](https://github.com/streetsidesoftware/cspell-dicts/compare/cspell-dicts@28.2.2...cspell-dicts@28.2.3) (2024-11-26)
+
+
+### Updates and Bug Fixes
+
+* add savviness ([#3842](https://github.com/streetsidesoftware/cspell-dicts/issues/3842)) ([261e915](https://github.com/streetsidesoftware/cspell-dicts/commit/261e915b71945aa8eb0dadcc3ee6a5ba02a5bd80))
+* Workflow Bot -- Build Dictionaries ([#3843](https://github.com/streetsidesoftware/cspell-dicts/issues/3843)) ([bfa0e37](https://github.com/streetsidesoftware/cspell-dicts/commit/bfa0e3768426e06971b517eb4dd26148aece100e))
+* Workflow Bot -- Update Dictionaries ([#3837](https://github.com/streetsidesoftware/cspell-dicts/issues/3837)) ([fad88ea](https://github.com/streetsidesoftware/cspell-dicts/commit/fad88ead97d4abe87b36dfe37ce00f3fc8046f3b))
+
 ## [28.2.2](https://github.com/streetsidesoftware/cspell-dicts/compare/cspell-dicts@28.2.1...cspell-dicts@28.2.2) (2024-11-22)
 
 

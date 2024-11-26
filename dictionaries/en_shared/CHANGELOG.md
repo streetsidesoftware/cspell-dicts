@@ -1,5 +1,12 @@
 # Change Log
 
+## [1.0.19](https://github.com/streetsidesoftware/cspell-dicts/compare/@cspell/dict-en-shared@1.0.18...@cspell/dict-en-shared@1.0.19) (2024-11-26)
+
+
+### Updates and Bug Fixes
+
+* add savviness ([#3842](https://github.com/streetsidesoftware/cspell-dicts/issues/3842)) ([261e915](https://github.com/streetsidesoftware/cspell-dicts/commit/261e915b71945aa8eb0dadcc3ee6a5ba02a5bd80))
+
 ## [1.0.18](https://github.com/streetsidesoftware/cspell-dicts/compare/@cspell/dict-en-shared@1.0.17...@cspell/dict-en-shared@1.0.18) (2024-11-07)
 
 
