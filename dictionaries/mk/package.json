@@ -17,7 +17,7 @@
     "sync": "pnpm cpy \"node_modules/dictionary-mk/{index.{aff,dic},license,readme.md}\" src/hunspell/ --flat",
     "test": "pnpm test:words && pnpm test:cspell",
     "test:cspell": "cspell samples",
-    "test:words": "hunspell-reader words -n 1000 -m 0 \"src/index.dic\" | cspell -c ./cspell-ext.json \"--locale=mk\" \"--languageId=*\" stdin",
+    "test:words": "hunspell-reader words -n 1000 -m 0 \"src/hunspell/index.dic\" | cspell -c ./cspell-ext.json \"--locale=mk\" \"--languageId=*\" stdin",
     "prepublishOnly": "echo OK",
     "prepare:dictionary": "echo OK"
   },
