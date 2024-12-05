@@ -1,5 +1,18 @@
 # Release Notes
 
+## [28.2.4](https://github.com/streetsidesoftware/cspell-dicts/compare/cspell-dicts@28.2.3...cspell-dicts@28.2.4) (2024-12-05)
+
+
+### Updates and Bug Fixes
+
+* Add metasyntactic variables to coding-terms ([#3845](https://github.com/streetsidesoftware/cspell-dicts/issues/3845)) ([0d3e75a](https://github.com/streetsidesoftware/cspell-dicts/commit/0d3e75adb4f336e062e9ec7f83b139858588c520))
+* Added some Python package names ([#3850](https://github.com/streetsidesoftware/cspell-dicts/issues/3850)) ([a093c9d](https://github.com/streetsidesoftware/cspell-dicts/commit/a093c9d9a27073af2762e0f37d27472451c31bf5))
+* Workflow Bot -- Build Dictionaries ([#3848](https://github.com/streetsidesoftware/cspell-dicts/issues/3848)) ([bd59429](https://github.com/streetsidesoftware/cspell-dicts/commit/bd59429be74906713ddab843092163f07d23e650))
+* Workflow Bot -- Build Dictionaries ([#3851](https://github.com/streetsidesoftware/cspell-dicts/issues/3851)) ([0c9be81](https://github.com/streetsidesoftware/cspell-dicts/commit/0c9be814359ee9f49bf04596701db77e2a614bef))
+* Workflow Bot -- Build Dictionaries ([#3852](https://github.com/streetsidesoftware/cspell-dicts/issues/3852)) ([5f14f9f](https://github.com/streetsidesoftware/cspell-dicts/commit/5f14f9f6b9c294c74fe949fb78738e7f5b512ae3))
+* Workflow Bot -- Build Dictionaries ([#3859](https://github.com/streetsidesoftware/cspell-dicts/issues/3859)) ([ab9635c](https://github.com/streetsidesoftware/cspell-dicts/commit/ab9635c17f2105d33df7ec2c679c9a83c0421855))
+* Workflow Bot -- Update Dictionaries ([#3862](https://github.com/streetsidesoftware/cspell-dicts/issues/3862)) ([e904ca7](https://github.com/streetsidesoftware/cspell-dicts/commit/e904ca77576865d42dea261d7417e5d5d480c258))
+
 ## [28.2.3](https://github.com/streetsidesoftware/cspell-dicts/compare/cspell-dicts@28.2.2...cspell-dicts@28.2.3) (2024-11-26)
 
 
