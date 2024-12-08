@@ -17,6 +17,24 @@
       "dictionaries": ["npm"]
     }
   ],
+  "ignoreRegExpList": ["npm-scripts"],
+  "patterns": [
+    {
+      "name": "npm-scripts",
+      "pattern": ["npm-scripts-pre", "npm-scripts-post"],
+      "description": "Matches NPM scripts pre and post from NPM lifecycle."
+    },
+    {
+      "name": "npm-scripts-pre",
+      "pattern": "/pre[^\"]+/",
+      "description": "Matches NPM scripts pre from NPM lifecycle."
+    },
+    {
+      "name": "npm-scripts-post",
+      "pattern": "/post[^\"]+/",
+      "description": "Matches NPM scripts post from NPM lifecycle."
+    }
+  ],
   "overrides": [
     {
       "filename": "**/package.json",
