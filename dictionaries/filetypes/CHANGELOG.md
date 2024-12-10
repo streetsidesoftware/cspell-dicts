@@ -3,6 +3,13 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+## [3.0.9](https://github.com/streetsidesoftware/cspell-dicts/compare/@cspell/dict-filetypes@3.0.8...@cspell/dict-filetypes@3.0.9) (2024-12-10)
+
+
+### Updates and Bug Fixes
+
+* add lockb to filetypes ([#3872](https://github.com/streetsidesoftware/cspell-dicts/issues/3872)) ([956db0a](https://github.com/streetsidesoftware/cspell-dicts/commit/956db0a33f7a0f23a87b34451fe7cfb44c5e68dc))
+
 ## [3.0.8](https://github.com/streetsidesoftware/cspell-dicts/compare/@cspell/dict-filetypes@3.0.7...@cspell/dict-filetypes@3.0.8) (2024-10-22)
 
 

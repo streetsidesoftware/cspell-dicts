@@ -1,5 +1,14 @@
 # Release Notes
 
+## [28.2.5](https://github.com/streetsidesoftware/cspell-dicts/compare/cspell-dicts@28.2.4...cspell-dicts@28.2.5) (2024-12-10)
+
+
+### Updates and Bug Fixes
+
+* add lockb to filetypes ([#3872](https://github.com/streetsidesoftware/cspell-dicts/issues/3872)) ([956db0a](https://github.com/streetsidesoftware/cspell-dicts/commit/956db0a33f7a0f23a87b34451fe7cfb44c5e68dc))
+* Workflow Bot -- Build Dictionaries ([#3874](https://github.com/streetsidesoftware/cspell-dicts/issues/3874)) ([6033d6f](https://github.com/streetsidesoftware/cspell-dicts/commit/6033d6ffe9eaf28e1c0cf3a8858c68d17ca7bb59))
+* Workflow Bot -- Update Dictionaries ([#3870](https://github.com/streetsidesoftware/cspell-dicts/issues/3870)) ([638409d](https://github.com/streetsidesoftware/cspell-dicts/commit/638409d9a646afd5dbdd401103be308655dbed6d))
+
 ## [28.2.4](https://github.com/streetsidesoftware/cspell-dicts/compare/cspell-dicts@28.2.3...cspell-dicts@28.2.4) (2024-12-05)
 
 
