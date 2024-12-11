@@ -1,6 +1,6 @@
 # CSpell GIS and PostGIS Dictionary
 
-GIS and PostGIS dictionary for cspell.
+GIS (geographic information system) and [PostGIS](https://postgis.net/) dictionary for cspell.
 
 This is a pre-built dictionary for use with CSpell.
 
