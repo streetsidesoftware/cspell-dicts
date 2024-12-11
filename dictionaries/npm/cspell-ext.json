@@ -17,28 +17,28 @@
       "dictionaries": ["npm"]
     }
   ],
-  "ignoreRegExpList": ["npm-scripts"],
-  "patterns": [
-    {
-      "name": "npm-scripts",
-      "pattern": ["npm-scripts-pre", "npm-scripts-post"],
-      "description": "Matches NPM scripts pre and post from NPM lifecycle."
-    },
-    {
-      "name": "npm-scripts-pre",
-      "pattern": "/pre[^\"]+/",
-      "description": "Matches NPM scripts pre from NPM lifecycle."
-    },
-    {
-      "name": "npm-scripts-post",
-      "pattern": "/post[^\"]+/",
-      "description": "Matches NPM scripts post from NPM lifecycle."
-    }
-  ],
   "overrides": [
     {
       "filename": "**/package.json",
-      "dictionaries": ["npm"]
+      "dictionaries": ["npm"],
+      "ignoreRegExpList": ["npm-scripts"],
+      "patterns": [
+        {
+          "name": "npm-scripts",
+          "pattern": ["npm-scripts-pre", "npm-scripts-post"],
+          "description": "Matches any NPM pre and post scripts from NPM lifecycle."
+        },
+        {
+          "name": "npm-scripts-pre",
+          "pattern": "/pre[^\"]+/",
+          "description": "Matches any NPM pre scripts from NPM lifecycle."
+        },
+        {
+          "name": "npm-scripts-post",
+          "pattern": "/post[^\"]+/",
+          "description": "Matches any NPM post scripts from NPM lifecycle."
+        }
+      ]
     }
   ]
 }
