@@ -23,7 +23,7 @@ cspell link remove @cspell/dict-gis
 
 Manual installation is useful if you want to include this dictionary as part of your CI/CD lint process.
 
-```
+```sh
 npm i @cspell/dict-gis
 ```
 
@@ -33,6 +33,7 @@ The `cspell-ext.json` file in this package should be added to the import section
 {
     // …
     "import": ["@cspell/dict-gis/cspell-ext.json"],
+    "dictionaries": ["gis"]
     // …
 }
 ```
