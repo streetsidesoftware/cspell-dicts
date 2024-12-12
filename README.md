@@ -185,6 +185,7 @@ Various [cspell](https://github.com/streetsidesoftware/cspell) dictionaries. Eac
 | [@cspell/dict-fsharp](./dictionaries/fsharp#readme)                                 | fsharp                                                                  | f#                                 | F# dictionary for cspell.                                      |
 | [@cspell/dict-fullstack](./dictionaries/fullstack#readme)                           | fullstack                                                               | Fullstack                          | Common words encountered during fullstack development          |
 | [@cspell/dict-gaming-terms](./dictionaries/gaming-terms#readme)                     | gaming-terms                                                            | Gaming                             | Gaming dictionary for cspell.                                  |
+| [@cspell/dict-gis](./dictionaries/gis#readme)                                       | gis                                                                     | GIS and PostGIS                    | GIS and PostGIS dictionary for cspell.                         |
 | [@cspell/dict-git](./dictionaries/git#readme)                                       | git                                                                     | git                                | CSpell configuration for GIT                                   |
 | [@cspell/dict-golang](./dictionaries/golang#readme)                                 | golang                                                                  | Go Language                        | Go Language Dictionary                                         |
 | [@cspell/dict-google](./dictionaries/google#readme)                                 | google                                                                  | Google                             | Google Cloud Development Dictionary for cspell.                |
@@ -334,6 +335,7 @@ Special thanks to all of our amazing contributors!
 [<img alt="Contributor dwenegar" src="https://avatars.githubusercontent.com/u/473494?v=4&size=128" width=64>](https://github.com/dwenegar)
 [<img alt="Contributor holtskinner" src="https://avatars.githubusercontent.com/u/13262395?v=4&size=128" width=64>](https://github.com/holtskinner)
 [<img alt="Contributor inwardmovement" src="https://avatars.githubusercontent.com/u/9438102?v=4&size=128" width=64>](https://github.com/inwardmovement)
+[<img alt="Contributor JoshuaKGoldberg" src="https://avatars.githubusercontent.com/u/3335181?v=4&size=128" width=64>](https://github.com/JoshuaKGoldberg)
 [<img alt="Contributor jsoref" src="https://avatars.githubusercontent.com/u/2119212?v=4&size=128" width=64>](https://github.com/jsoref)
 [<img alt="Contributor Kissaki" src="https://avatars.githubusercontent.com/u/93181?v=4&size=128" width=64>](https://github.com/Kissaki)
 [<img alt="Contributor liby" src="https://avatars.githubusercontent.com/u/38807139?v=4&size=128" width=64>](https://github.com/liby)
@@ -366,8 +368,7 @@ Special thanks to all of our amazing contributors!
 [<img alt="Contributor snyk-bot" src="https://avatars.githubusercontent.com/u/19733683?v=4&size=128" width=64>](https://github.com/snyk-bot)
 [<img alt="Contributor thakyZ" src="https://avatars.githubusercontent.com/u/950594?v=4&size=128" width=64>](https://github.com/thakyZ)
 [<img alt="Contributor thegraffix" src="https://avatars.githubusercontent.com/u/57874058?v=4&size=128" width=64>](https://github.com/thegraffix)
-[<img alt="Contributor thenamankumar" src="https://avatars.githubusercontent.com/u/22571395?v=4&size=128" width=64>](https://github.com/thenamankumar)
-[<img alt="Contributor zilayo" src="https://avatars.githubusercontent.com/u/84344709?v=4&size=128" width=64>](https://github.com/zilayo)
+[<img alt="Contributor vineyardbovines" src="https://avatars.githubusercontent.com/u/15176096?v=4&size=128" width=64>](https://github.com/vineyardbovines)
 [<img alt="Contributor azat-io" src="https://avatars.githubusercontent.com/u/5698350?v=4&size=128" width=64>](https://github.com/azat-io)
 [<img alt="Contributor Billzabob" src="https://avatars.githubusercontent.com/u/3711832?v=4&size=128" width=64>](https://github.com/Billzabob)
 [<img alt="Contributor BoltonBailey" src="https://avatars.githubusercontent.com/u/8030599?v=4&size=128" width=64>](https://github.com/BoltonBailey)
@@ -381,13 +382,13 @@ Special thanks to all of our amazing contributors!
 [<img alt="Contributor dalindev" src="https://avatars.githubusercontent.com/u/6508763?v=4&size=128" width=64>](https://github.com/dalindev)
 [<img alt="Contributor davidmh" src="https://avatars.githubusercontent.com/u/594302?v=4&size=128" width=64>](https://github.com/davidmh)
 [<img alt="Contributor DCsunset" src="https://avatars.githubusercontent.com/u/23468812?v=4&size=128" width=64>](https://github.com/DCsunset)
+[<img alt="Contributor dimitropoulos" src="https://avatars.githubusercontent.com/u/15232461?v=4&size=128" width=64>](https://github.com/dimitropoulos)
 [<img alt="Contributor Fydon" src="https://avatars.githubusercontent.com/u/3404761?v=4&size=128" width=64>](https://github.com/Fydon)
 [<img alt="Contributor izzqz" src="https://avatars.githubusercontent.com/u/35831725?v=4&size=128" width=64>](https://github.com/izzqz)
 [<img alt="Contributor koooge" src="https://avatars.githubusercontent.com/u/7419215?v=4&size=128" width=64>](https://github.com/koooge)
 [<img alt="Contributor koviubi56" src="https://avatars.githubusercontent.com/u/58398849?v=4&size=128" width=64>](https://github.com/koviubi56)
 [<img alt="Contributor krzysiekwie" src="https://avatars.githubusercontent.com/u/54991735?v=4&size=128" width=64>](https://github.com/krzysiekwie)
 [<img alt="Contributor lnasc256" src="https://avatars.githubusercontent.com/u/29936145?v=4&size=128" width=64>](https://github.com/lnasc256)
-[<img alt="Contributor lukasfro" src="https://avatars.githubusercontent.com/u/1529698?v=4&size=128" width=64>](https://github.com/lukasfro)
 [<img alt="Contributor magnushiie" src="https://avatars.githubusercontent.com/u/734170?v=4&size=128" width=64>](https://github.com/magnushiie)
 [<img alt="Contributor Majid110" src="https://avatars.githubusercontent.com/u/22748381?v=4&size=128" width=64>](https://github.com/Majid110)
 [<img alt="Contributor markgaze" src="https://avatars.githubusercontent.com/u/16718355?v=4&size=128" width=64>](https://github.com/markgaze)
@@ -395,7 +396,6 @@ Special thanks to all of our amazing contributors!
 [<img alt="Contributor matter123" src="https://avatars.githubusercontent.com/u/714007?v=4&size=128" width=64>](https://github.com/matter123)
 [<img alt="Contributor MBehtemam" src="https://avatars.githubusercontent.com/u/1811124?v=4&size=128" width=64>](https://github.com/MBehtemam)
 [<img alt="Contributor mhasanmeet" src="https://avatars.githubusercontent.com/u/24842666?v=4&size=128" width=64>](https://github.com/mhasanmeet)
-[<img alt="Contributor mhf-ir" src="https://avatars.githubusercontent.com/u/1172526?v=4&size=128" width=64>](https://github.com/mhf-ir)
 [<img alt="Contributor msftenhanceprovenance" src="https://avatars.githubusercontent.com/u/85908596?v=4&size=128" width=64>](https://github.com/msftenhanceprovenance)
 [<img alt="Contributor pepelsbey" src="https://avatars.githubusercontent.com/u/105274?v=4&size=128" width=64>](https://github.com/pepelsbey)
 [<img alt="Contributor purplekeyboard" src="https://avatars.githubusercontent.com/u/88773786?v=4&size=128" width=64>](https://github.com/purplekeyboard)
@@ -418,6 +418,7 @@ Special thanks to all of our amazing contributors!
 [<img alt="Contributor Yizack" src="https://avatars.githubusercontent.com/u/16264115?v=4&size=128" width=64>](https://github.com/Yizack)
 [<img alt="Contributor zdposter" src="https://avatars.githubusercontent.com/u/76629990?v=4&size=128" width=64>](https://github.com/zdposter)
 [<img alt="Contributor zhenzhenChange" src="https://avatars.githubusercontent.com/u/51586637?v=4&size=128" width=64>](https://github.com/zhenzhenChange)
+[<img alt="Contributor zilayo" src="https://avatars.githubusercontent.com/u/84344709?v=4&size=128" width=64>](https://github.com/zilayo)
 [<img alt="Contributor adam-zielonka" src="https://avatars.githubusercontent.com/u/31104775?v=4&size=128" width=64>](https://github.com/adam-zielonka)
 [<img alt="Contributor ADTC" src="https://avatars.githubusercontent.com/u/6047296?v=4&size=128" width=64>](https://github.com/ADTC)
 [<img alt="Contributor afifvdin" src="https://avatars.githubusercontent.com/u/94339143?v=4&size=128" width=64>](https://github.com/afifvdin)
@@ -430,7 +431,6 @@ Special thanks to all of our amazing contributors!
 [<img alt="Contributor ava57r" src="https://avatars.githubusercontent.com/u/20382553?v=4&size=128" width=64>](https://github.com/ava57r)
 [<img alt="Contributor badouralix" src="https://avatars.githubusercontent.com/u/19719047?v=4&size=128" width=64>](https://github.com/badouralix)
 [<img alt="Contributor dcvikl" src="https://avatars.githubusercontent.com/u/65993?v=4&size=128" width=64>](https://github.com/dcvikl)
-[<img alt="Contributor dimitropoulos" src="https://avatars.githubusercontent.com/u/15232461?v=4&size=128" width=64>](https://github.com/dimitropoulos)
 [<img alt="Contributor edwardwilson" src="https://avatars.githubusercontent.com/u/871802?v=4&size=128" width=64>](https://github.com/edwardwilson)
 [<img alt="Contributor el-ethan" src="https://avatars.githubusercontent.com/u/10249884?v=4&size=128" width=64>](https://github.com/el-ethan)
 [<img alt="Contributor Eldemarkki" src="https://avatars.githubusercontent.com/u/38920928?v=4&size=128" width=64>](https://github.com/Eldemarkki)
@@ -449,6 +449,7 @@ Special thanks to all of our amazing contributors!
 [<img alt="Contributor kseino" src="https://avatars.githubusercontent.com/u/1378066?v=4&size=128" width=64>](https://github.com/kseino)
 [<img alt="Contributor lauraBaakman" src="https://avatars.githubusercontent.com/u/4301624?v=4&size=128" width=64>](https://github.com/lauraBaakman)
 [<img alt="Contributor lee0c" src="https://avatars.githubusercontent.com/u/13122293?v=4&size=128" width=64>](https://github.com/lee0c)
+[<img alt="Contributor lukasfro" src="https://avatars.githubusercontent.com/u/1529698?v=4&size=128" width=64>](https://github.com/lukasfro)
 [<img alt="Contributor ndthanhdev" src="https://avatars.githubusercontent.com/u/16331812?v=4&size=128" width=64>](https://github.com/ndthanhdev)
 [<img alt="Contributor NutCr4cker12" src="https://avatars.githubusercontent.com/u/44898642?v=4&size=128" width=64>](https://github.com/NutCr4cker12)
 [<img alt="Contributor Poikilos" src="https://avatars.githubusercontent.com/u/7557867?v=4&size=128" width=64>](https://github.com/Poikilos)
@@ -459,8 +460,9 @@ Special thanks to all of our amazing contributors!
 [<img alt="Contributor verythorough" src="https://avatars.githubusercontent.com/u/6111186?v=4&size=128" width=64>](https://github.com/verythorough)
 [<img alt="Contributor Zereges" src="https://avatars.githubusercontent.com/u/7399594?v=4&size=128" width=64>](https://github.com/Zereges)
 [<img alt="Contributor j-ans1" src="https://avatars.githubusercontent.com/u/88773786?v=4&size=128" width=64>](https://github.com/j-ans1)
-[<img alt="Contributor JoshuaKGoldberg" src="https://avatars.githubusercontent.com/u/3335181?v=4&size=128" width=64>](https://github.com/JoshuaKGoldberg)
 [<img alt="Contributor LucasOe" src="https://avatars.githubusercontent.com/u/16548335?v=4&size=128" width=64>](https://github.com/LucasOe)
+[<img alt="Contributor mhf-ir" src="https://avatars.githubusercontent.com/u/1172526?v=4&size=128" width=64>](https://github.com/mhf-ir)
+[<img alt="Contributor thenamankumar" src="https://avatars.githubusercontent.com/u/22571395?v=4&size=128" width=64>](https://github.com/thenamankumar)
 
 <!--- cspell:enable --->
 
