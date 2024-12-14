@@ -3,6 +3,16 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+## [5.1.17](https://github.com/streetsidesoftware/cspell-dicts/compare/@cspell/dict-npm@5.1.16...@cspell/dict-npm@5.1.17) (2024-12-14)
+
+
+### Updates and Bug Fixes
+
+* Add @arethetypeswrong/cli ([#3889](https://github.com/streetsidesoftware/cspell-dicts/issues/3889)) ([1d64ec6](https://github.com/streetsidesoftware/cspell-dicts/commit/1d64ec6f452f8525d439b1fb6a6683e83788e909))
+* add a few web terms ([#3882](https://github.com/streetsidesoftware/cspell-dicts/issues/3882)) ([f16e2e9](https://github.com/streetsidesoftware/cspell-dicts/commit/f16e2e9b9c90e1393513773b7bde4cd75e2a9246))
+* Workflow Bot -- Build Dictionaries ([#3887](https://github.com/streetsidesoftware/cspell-dicts/issues/3887)) ([b4592fd](https://github.com/streetsidesoftware/cspell-dicts/commit/b4592fd4e27f4ef1aa08e98735e1cda04dc1eb73))
+* Workflow Bot -- Update Dictionaries ([#3890](https://github.com/streetsidesoftware/cspell-dicts/issues/3890)) ([8b2866c](https://github.com/streetsidesoftware/cspell-dicts/commit/8b2866c2f26b91f2dd3e4a63281eebdfb049bf96))
+
 ## [5.1.16](https://github.com/streetsidesoftware/cspell-dicts/compare/@cspell/dict-npm@5.1.15...@cspell/dict-npm@5.1.16) (2024-12-10)
 
 

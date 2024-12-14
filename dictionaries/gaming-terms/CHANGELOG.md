@@ -1,5 +1,13 @@
 # Change Log
 
+## [1.0.9](https://github.com/streetsidesoftware/cspell-dicts/compare/@cspell/dict-gaming-terms@1.0.8...@cspell/dict-gaming-terms@1.0.9) (2024-12-14)
+
+
+### Updates and Bug Fixes
+
+* add a few coding and software terms ([#3881](https://github.com/streetsidesoftware/cspell-dicts/issues/3881)) ([0f6a91d](https://github.com/streetsidesoftware/cspell-dicts/commit/0f6a91d7c4aa74180798a1b2fcbe338c3900d173))
+* Workflow Bot -- Build Dictionaries ([#3895](https://github.com/streetsidesoftware/cspell-dicts/issues/3895)) ([7286910](https://github.com/streetsidesoftware/cspell-dicts/commit/72869100c67a69419f53aa6c1033f45a856c7ca6))
+
 ## [1.0.8](https://github.com/streetsidesoftware/cspell-dicts/compare/@cspell/dict-gaming-terms@1.0.7...@cspell/dict-gaming-terms@1.0.8) (2024-10-11)
 
 
