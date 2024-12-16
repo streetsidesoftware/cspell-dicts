@@ -30,12 +30,12 @@
         },
         {
           "name": "pre-npm-scripts",
-          "pattern": "/\"pre[^\"]+\":/",
+          "pattern": "/^\\s*\"pre[^\"]+\":/gm",
           "description": "Matches any NPM pre scripts from NPM lifecycle."
         },
         {
           "name": "post-npm-scripts",
-          "pattern": "/\"post[^\"]+\":/",
+          "pattern": "/^\\s*\"post[^\"]+\":/gm",
           "description": "Matches any NPM post scripts from NPM lifecycle."
         }
       ]
