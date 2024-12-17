@@ -1,5 +1,14 @@
 # Release Notes
 
+## [28.3.2](https://github.com/streetsidesoftware/cspell-dicts/compare/cspell-dicts@28.3.1...cspell-dicts@28.3.2) (2024-12-17)
+
+
+### Updates and Bug Fixes
+
+* Add word preid to npm dictionary ([#3910](https://github.com/streetsidesoftware/cspell-dicts/issues/3910)) ([1005721](https://github.com/streetsidesoftware/cspell-dicts/commit/10057211ad6934a36a6f4201fd4ca8db2305c1f4))
+* Workflow Bot -- Build Dictionaries ([#3908](https://github.com/streetsidesoftware/cspell-dicts/issues/3908)) ([d1c27e5](https://github.com/streetsidesoftware/cspell-dicts/commit/d1c27e506ff525b4a938cd59bdb89a67bf34314a))
+* Workflow Bot -- Build Dictionaries ([#3911](https://github.com/streetsidesoftware/cspell-dicts/issues/3911)) ([cc628a8](https://github.com/streetsidesoftware/cspell-dicts/commit/cc628a8e7873dc28a1eb9b60bcce81d2f7c111ec))
+
 ## [28.3.1](https://github.com/streetsidesoftware/cspell-dicts/compare/cspell-dicts@28.3.0...cspell-dicts@28.3.1) (2024-12-16)
 
 
