@@ -1,5 +1,18 @@
 # Release Notes
 
+## [28.3.2](https://github.com/streetsidesoftware/cspell-dicts/compare/cspell-dicts@28.3.1...cspell-dicts@28.3.2) (2024-12-21)
+
+
+### Updates and Bug Fixes
+
+* add Bluesky and Emojipedia to companies dictionary ([#3916](https://github.com/streetsidesoftware/cspell-dicts/issues/3916)) ([3a92d32](https://github.com/streetsidesoftware/cspell-dicts/commit/3a92d326b8fcd3a5386ac6fcc2dd08aaf13f5df6))
+* add ruleset(s) to coding-terms ([#3915](https://github.com/streetsidesoftware/cspell-dicts/issues/3915)) ([7c8b4a6](https://github.com/streetsidesoftware/cspell-dicts/commit/7c8b4a61c9fa4aa82a9708683687fc357e1371b2))
+* Add word preid to npm dictionary ([#3910](https://github.com/streetsidesoftware/cspell-dicts/issues/3910)) ([1005721](https://github.com/streetsidesoftware/cspell-dicts/commit/10057211ad6934a36a6f4201fd4ca8db2305c1f4))
+* Workflow Bot -- Build Dictionaries ([#3908](https://github.com/streetsidesoftware/cspell-dicts/issues/3908)) ([d1c27e5](https://github.com/streetsidesoftware/cspell-dicts/commit/d1c27e506ff525b4a938cd59bdb89a67bf34314a))
+* Workflow Bot -- Build Dictionaries ([#3911](https://github.com/streetsidesoftware/cspell-dicts/issues/3911)) ([cc628a8](https://github.com/streetsidesoftware/cspell-dicts/commit/cc628a8e7873dc28a1eb9b60bcce81d2f7c111ec))
+* Workflow Bot -- Build Dictionaries ([#3913](https://github.com/streetsidesoftware/cspell-dicts/issues/3913)) ([8b4ca21](https://github.com/streetsidesoftware/cspell-dicts/commit/8b4ca215293028647c8d1dc6b2088d1d4b75f380))
+* Workflow Bot -- Build Dictionaries ([#3914](https://github.com/streetsidesoftware/cspell-dicts/issues/3914)) ([7cbc5bf](https://github.com/streetsidesoftware/cspell-dicts/commit/7cbc5bff8336a47d0602e823149e26a3996d3c4c))
+
 ## [28.3.1](https://github.com/streetsidesoftware/cspell-dicts/compare/cspell-dicts@28.3.0...cspell-dicts@28.3.1) (2024-12-16)
 
 
