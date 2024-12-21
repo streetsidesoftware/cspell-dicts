@@ -3,6 +3,14 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+## [5.1.19](https://github.com/streetsidesoftware/cspell-dicts/compare/@cspell/dict-npm@5.1.18...@cspell/dict-npm@5.1.19) (2024-12-21)
+
+
+### Updates and Bug Fixes
+
+* Add word preid to npm dictionary ([#3910](https://github.com/streetsidesoftware/cspell-dicts/issues/3910)) ([1005721](https://github.com/streetsidesoftware/cspell-dicts/commit/10057211ad6934a36a6f4201fd4ca8db2305c1f4))
+* Workflow Bot -- Build Dictionaries ([#3911](https://github.com/streetsidesoftware/cspell-dicts/issues/3911)) ([cc628a8](https://github.com/streetsidesoftware/cspell-dicts/commit/cc628a8e7873dc28a1eb9b60bcce81d2f7c111ec))
+
 ## [5.1.18](https://github.com/streetsidesoftware/cspell-dicts/compare/@cspell/dict-npm@5.1.17...@cspell/dict-npm@5.1.18) (2024-12-16)
 
 

@@ -3,6 +3,14 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+## [3.1.10](https://github.com/streetsidesoftware/cspell-dicts/compare/@cspell/dict-companies@3.1.9...@cspell/dict-companies@3.1.10) (2024-12-21)
+
+
+### Updates and Bug Fixes
+
+* add Bluesky and Emojipedia to companies dictionary ([#3916](https://github.com/streetsidesoftware/cspell-dicts/issues/3916)) ([3a92d32](https://github.com/streetsidesoftware/cspell-dicts/commit/3a92d326b8fcd3a5386ac6fcc2dd08aaf13f5df6))
+* Workflow Bot -- Build Dictionaries ([#3914](https://github.com/streetsidesoftware/cspell-dicts/issues/3914)) ([7cbc5bf](https://github.com/streetsidesoftware/cspell-dicts/commit/7cbc5bff8336a47d0602e823149e26a3996d3c4c))
+
 ## [3.1.9](https://github.com/streetsidesoftware/cspell-dicts/compare/@cspell/dict-companies@3.1.8...@cspell/dict-companies@3.1.9) (2024-12-16)
 
 
