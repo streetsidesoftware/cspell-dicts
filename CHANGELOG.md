@@ -1,5 +1,22 @@
 # Release Notes
 
+## [28.4.0](https://github.com/streetsidesoftware/cspell-dicts/compare/cspell-dicts@28.3.2...cspell-dicts@28.4.0) (2024-12-24)
+
+
+### Features
+
+* Add coding compound terms. ([#3920](https://github.com/streetsidesoftware/cspell-dicts/issues/3920)) ([d414545](https://github.com/streetsidesoftware/cspell-dicts/commit/d414545b796bdf55dbaaeeb1954430323baf56bb))
+
+
+### Updates and Bug Fixes
+
+* Add missing Terraform terms ([#3923](https://github.com/streetsidesoftware/cspell-dicts/issues/3923)) ([e2d3af4](https://github.com/streetsidesoftware/cspell-dicts/commit/e2d3af48881222742f88771716fdf74f80f39c18))
+* Add pinia to npmjs ([#3922](https://github.com/streetsidesoftware/cspell-dicts/issues/3922)) ([e0054be](https://github.com/streetsidesoftware/cspell-dicts/commit/e0054be589eb357e6c07ca0bbe8fe1eb312a1398))
+* Workflow Bot -- Build Dictionaries ([#3921](https://github.com/streetsidesoftware/cspell-dicts/issues/3921)) ([9b8eea2](https://github.com/streetsidesoftware/cspell-dicts/commit/9b8eea22b9554fda83c904adfb68066cd4b800d8))
+* Workflow Bot -- Build Dictionaries ([#3926](https://github.com/streetsidesoftware/cspell-dicts/issues/3926)) ([fef49e3](https://github.com/streetsidesoftware/cspell-dicts/commit/fef49e35f7e461df959b6c8f7253aab9b0205a34))
+* Workflow Bot -- Update Dictionaries ([#3918](https://github.com/streetsidesoftware/cspell-dicts/issues/3918)) ([bdd0f54](https://github.com/streetsidesoftware/cspell-dicts/commit/bdd0f5435c82ab3cba19d8280aeb57a659c91a13))
+* Workflow Bot -- Update Dictionaries ([#3924](https://github.com/streetsidesoftware/cspell-dicts/issues/3924)) ([396dce0](https://github.com/streetsidesoftware/cspell-dicts/commit/396dce0681c617eaa7ef7dc646054b8b61e8277b))
+
 ## [28.3.2](https://github.com/streetsidesoftware/cspell-dicts/compare/cspell-dicts@28.3.1...cspell-dicts@28.3.2) (2024-12-21)
 
 
