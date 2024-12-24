@@ -1,5 +1,13 @@
 # Change Log
 
+## [1.0.7](https://github.com/streetsidesoftware/cspell-dicts/compare/@cspell/dict-terraform@1.0.6...@cspell/dict-terraform@1.0.7) (2024-12-24)
+
+
+### Updates and Bug Fixes
+
+* Add missing Terraform terms ([#3923](https://github.com/streetsidesoftware/cspell-dicts/issues/3923)) ([e2d3af4](https://github.com/streetsidesoftware/cspell-dicts/commit/e2d3af48881222742f88771716fdf74f80f39c18))
+* Workflow Bot -- Build Dictionaries ([#3926](https://github.com/streetsidesoftware/cspell-dicts/issues/3926)) ([fef49e3](https://github.com/streetsidesoftware/cspell-dicts/commit/fef49e35f7e461df959b6c8f7253aab9b0205a34))
+
 ## [1.0.6](https://github.com/streetsidesoftware/cspell-dicts/compare/@cspell/dict-terraform@1.0.5...@cspell/dict-terraform@1.0.6) (2024-11-02)
 
 

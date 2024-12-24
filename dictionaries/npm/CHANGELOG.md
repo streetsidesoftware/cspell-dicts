@@ -3,6 +3,15 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+## [5.1.20](https://github.com/streetsidesoftware/cspell-dicts/compare/@cspell/dict-npm@5.1.19...@cspell/dict-npm@5.1.20) (2024-12-24)
+
+
+### Updates and Bug Fixes
+
+* Add pinia to npmjs ([#3922](https://github.com/streetsidesoftware/cspell-dicts/issues/3922)) ([e0054be](https://github.com/streetsidesoftware/cspell-dicts/commit/e0054be589eb357e6c07ca0bbe8fe1eb312a1398))
+* Workflow Bot -- Update Dictionaries ([#3918](https://github.com/streetsidesoftware/cspell-dicts/issues/3918)) ([bdd0f54](https://github.com/streetsidesoftware/cspell-dicts/commit/bdd0f5435c82ab3cba19d8280aeb57a659c91a13))
+* Workflow Bot -- Update Dictionaries ([#3924](https://github.com/streetsidesoftware/cspell-dicts/issues/3924)) ([396dce0](https://github.com/streetsidesoftware/cspell-dicts/commit/396dce0681c617eaa7ef7dc646054b8b61e8277b))
+
 ## [5.1.19](https://github.com/streetsidesoftware/cspell-dicts/compare/@cspell/dict-npm@5.1.18...@cspell/dict-npm@5.1.19) (2024-12-21)
 
 
