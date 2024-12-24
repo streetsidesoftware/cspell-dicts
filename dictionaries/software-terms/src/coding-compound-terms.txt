@@ -22,25 +22,38 @@
 *buffers*
 *button*
 *buttons*
+*cache*
 *channel*
 *clear*
+*click*
 *client*
 *cloud*
 *code*
 *commit*
 *connect*
 *connection*
-*data*
-*data*
+*count*
+*countable*
 *data*
 *domain*
 *down*
+*dropdown*
 *enable*
 *encrypt*
 *error*
 *field*
+*file*
+*files*
 *fix*
 *gateway*
++goog
+goog+
+h+ # common prefix like `HKEY_LOCAL_HOST`
+i+ # Only use as a prefix, like `ilimit` or `istream`
+*index*
+*indexable*
++io
+io+
 *left*
 *limit*
 *limited*
@@ -50,19 +63,26 @@
 *load*
 *meta*
 *migration*
+my*
 *name*
 *net*
 *network*
+o+ # Only use as a prefix, like `oauth` or `ostream`
 *out*
 *over*
+*page*
+*pick*
 *plane*
 *plot*
 *policy*
+post* # Only use as a prefix
+pre+ # Only use as a prefix
 *query*
 *rate*
+re+ # Only use as a prefix
 *reservation*
 *right*
-*scale*
+*save*
 *scale*
 *scaled*
 *scaler*
@@ -75,44 +95,19 @@
 *split*
 *sqrt*
 *square*
++std
+std+
 *storage*
 *store*
 *stream*
+sub+
 *switch*
 *text*
 *transfer*
+*trash*
 *trigger*
 *triggered*
-*up*
-*zip*
-+goog
-+io
-+std
-goog+
-h+ # common prefix like `HKEY_LOCAL_HOST`
-i+ # Only use as a prefix, like `ilimit` or `istream`
-io+
-my*
-o+ # Only use as a prefix, like `oauth` or `ostream`
-post* # Only use as a prefix
-pre+ # Only use as a prefix
-re+ # Only use as a prefix
-std+
-sub+
 un+ # Only use as a prefix
-*index*
-*indexable*
-*count*
-*countable*
+*up*
 *window*
-*cache*
-*file*
-*files*
-*save*
-*load*
-*trash*
-*click*
-*pick*
-*box*
-*dropdown*
-*page*
+*zip*
