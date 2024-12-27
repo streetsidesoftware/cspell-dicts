@@ -306,6 +306,7 @@ CONFIG
 CONFLICT
 CONNECT
 CONST
+CONT
 CONTINUE
 COOL
 COPY
@@ -2220,8 +2221,7 @@ PSSWithSHA384
 PSSWithSHA512
 PT
 PTR
-PTRACE_CONT
-PTRACE_KILL
+PTRACE
 PTRACE_TRACEME
 PT_AARCH64_ARCHEXT
 PT_AARCH64_UNWIND
@@ -2283,8 +2283,6 @@ Preorder
 PrimeRK
 ProcessEnv
 ProcsSection
-PtraceAttach
-PtraceDetach
 Ptsname
 PtyError
 Punct
@@ -3628,7 +3626,6 @@ SYS_PSYNCH_RW_UNLOCK2
 SYS_PSYNCH_RW_UPGRADE
 SYS_PSYNCH_RW_WRLOCK
 SYS_PSYNCH_RW_YIELDWRLOCK
-SYS_PTRACE
 SYS_PWRITE
 SYS_PWRITE_NOCANCEL
 SYS_QUOTACTL
@@ -4303,6 +4300,7 @@ async
 at
 atan
 atomic
+attach
 attr
 attribute
 attributes
@@ -4642,6 +4640,7 @@ description
 descriptions
 descriptor
 destroy
+detach
 detail
 details
 detect
@@ -5535,6 +5534,7 @@ psalter
 pseudo
 pt
 ptr
+ptrace
 public
 publish
 pull
