@@ -1,5 +1,24 @@
 # Release Notes
 
+## [28.5.0](https://github.com/streetsidesoftware/cspell-dicts/compare/cspell-dicts@28.4.0...cspell-dicts@28.5.0) (2024-12-27)
+
+
+### Features
+
+* add Pokémon dict ([#3932](https://github.com/streetsidesoftware/cspell-dicts/issues/3932)) ([c0a35fc](https://github.com/streetsidesoftware/cspell-dicts/commit/c0a35fc3388a44903e18ea2950ff4268c27721f8))
+
+
+### Updates and Bug Fixes
+
+* Add missing companies + software tool terms ([#3934](https://github.com/streetsidesoftware/cspell-dicts/issues/3934)) ([dd7b4d5](https://github.com/streetsidesoftware/cspell-dicts/commit/dd7b4d554cbe5f42f91e4a7c00398074c4aa85b5))
+* make it easier to turn off dictionary ([#3940](https://github.com/streetsidesoftware/cspell-dicts/issues/3940)) ([d9821c6](https://github.com/streetsidesoftware/cspell-dicts/commit/d9821c66026e122d5718487a8de3c3ff687bf72d))
+* Rebuild the Pokémon dictionary to make sure it can be published. ([#3939](https://github.com/streetsidesoftware/cspell-dicts/issues/3939)) ([505d4a0](https://github.com/streetsidesoftware/cspell-dicts/commit/505d4a08d13b8e3ac4a9680931d881ca96fe526a))
+* Reduce false positives in compound terms. ([#3937](https://github.com/streetsidesoftware/cspell-dicts/issues/3937)) ([82f17ca](https://github.com/streetsidesoftware/cspell-dicts/commit/82f17ca46e7c63180f3f83ea9555a79c25a31d62))
+* Use `Goog` to minimize false negatives. ([#3942](https://github.com/streetsidesoftware/cspell-dicts/issues/3942)) ([3916429](https://github.com/streetsidesoftware/cspell-dicts/commit/3916429b6e3a266fa00b7202e7cb771e24eef127))
+* Workflow Bot -- Build Dictionaries ([#3927](https://github.com/streetsidesoftware/cspell-dicts/issues/3927)) ([e5c5bb0](https://github.com/streetsidesoftware/cspell-dicts/commit/e5c5bb0ce6073112b2bf4c98260f4b7087060147))
+* Workflow Bot -- Build Dictionaries ([#3935](https://github.com/streetsidesoftware/cspell-dicts/issues/3935)) ([2b9ec7f](https://github.com/streetsidesoftware/cspell-dicts/commit/2b9ec7fb86c55c20e1719816fb6ec33b661e48d7))
+* Workflow Bot -- Build Dictionaries ([#3938](https://github.com/streetsidesoftware/cspell-dicts/issues/3938)) ([031e463](https://github.com/streetsidesoftware/cspell-dicts/commit/031e463cf759dbdd68a55e1946995d020afc7d69))
+
 ## [28.4.0](https://github.com/streetsidesoftware/cspell-dicts/compare/cspell-dicts@28.3.2...cspell-dicts@28.4.0) (2024-12-24)
 
 
