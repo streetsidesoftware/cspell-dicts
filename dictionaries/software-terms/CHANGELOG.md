@@ -3,6 +3,17 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+## [4.2.1](https://github.com/streetsidesoftware/cspell-dicts/compare/@cspell/dict-software-terms@4.2.0...@cspell/dict-software-terms@4.2.1) (2024-12-27)
+
+
+### Updates and Bug Fixes
+
+* Add missing companies + software tool terms ([#3934](https://github.com/streetsidesoftware/cspell-dicts/issues/3934)) ([dd7b4d5](https://github.com/streetsidesoftware/cspell-dicts/commit/dd7b4d554cbe5f42f91e4a7c00398074c4aa85b5))
+* Reduce false positives in compound terms. ([#3937](https://github.com/streetsidesoftware/cspell-dicts/issues/3937)) ([82f17ca](https://github.com/streetsidesoftware/cspell-dicts/commit/82f17ca46e7c63180f3f83ea9555a79c25a31d62))
+* Use `Goog` to minimize false negatives. ([#3942](https://github.com/streetsidesoftware/cspell-dicts/issues/3942)) ([3916429](https://github.com/streetsidesoftware/cspell-dicts/commit/3916429b6e3a266fa00b7202e7cb771e24eef127))
+* Workflow Bot -- Build Dictionaries ([#3935](https://github.com/streetsidesoftware/cspell-dicts/issues/3935)) ([2b9ec7f](https://github.com/streetsidesoftware/cspell-dicts/commit/2b9ec7fb86c55c20e1719816fb6ec33b661e48d7))
+* Workflow Bot -- Build Dictionaries ([#3938](https://github.com/streetsidesoftware/cspell-dicts/issues/3938)) ([031e463](https://github.com/streetsidesoftware/cspell-dicts/commit/031e463cf759dbdd68a55e1946995d020afc7d69))
+
 ## [4.2.0](https://github.com/streetsidesoftware/cspell-dicts/compare/@cspell/dict-software-terms@4.1.21...@cspell/dict-software-terms@4.2.0) (2024-12-24)
 
 

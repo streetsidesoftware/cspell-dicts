@@ -1,5 +1,12 @@
 # Change Log
 
+## [1.1.5](https://github.com/streetsidesoftware/cspell-dicts/compare/@cspell/dict-people-names@1.1.4...@cspell/dict-people-names@1.1.5) (2024-12-27)
+
+
+### Updates and Bug Fixes
+
+* make it easier to turn off dictionary ([#3940](https://github.com/streetsidesoftware/cspell-dicts/issues/3940)) ([d9821c6](https://github.com/streetsidesoftware/cspell-dicts/commit/d9821c66026e122d5718487a8de3c3ff687bf72d))
+
 ## [1.1.4](https://github.com/streetsidesoftware/cspell-dicts/compare/@cspell/dict-people-names@1.1.3...@cspell/dict-people-names@1.1.4) (2024-10-11)
 
 
