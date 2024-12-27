@@ -13,6 +13,7 @@ See [Conventional Commits](https://conventionalcommits.org) for commit guideline
 * Use `Goog` to minimize false negatives. ([#3942](https://github.com/streetsidesoftware/cspell-dicts/issues/3942)) ([3916429](https://github.com/streetsidesoftware/cspell-dicts/commit/3916429b6e3a266fa00b7202e7cb771e24eef127))
 * Workflow Bot -- Build Dictionaries ([#3935](https://github.com/streetsidesoftware/cspell-dicts/issues/3935)) ([2b9ec7f](https://github.com/streetsidesoftware/cspell-dicts/commit/2b9ec7fb86c55c20e1719816fb6ec33b661e48d7))
 * Workflow Bot -- Build Dictionaries ([#3938](https://github.com/streetsidesoftware/cspell-dicts/issues/3938)) ([031e463](https://github.com/streetsidesoftware/cspell-dicts/commit/031e463cf759dbdd68a55e1946995d020afc7d69))
+* Workflow Bot -- Build Dictionaries ([#3941](https://github.com/streetsidesoftware/cspell-dicts/issues/3941)) ([972a9a2](https://github.com/streetsidesoftware/cspell-dicts/commit/972a9a22d29cf3e616d8bbb0ecc3191e98039f34))
 
 ## [4.2.0](https://github.com/streetsidesoftware/cspell-dicts/compare/@cspell/dict-software-terms@4.1.21...@cspell/dict-software-terms@4.2.0) (2024-12-24)
 
