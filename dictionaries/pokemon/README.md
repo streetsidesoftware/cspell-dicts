@@ -1,6 +1,6 @@
-# CSpell Pokemon Dictionary
+# CSpell Pokémon Dictionary
 
-Pokemon dictionary for cspell.
+Pokémon dictionary for cspell.
 
 This is a pre-built dictionary for use with CSpell.
 
