@@ -3,6 +3,121 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+## [4.2.13](https://github.com/streetsidesoftware/cspell-dicts/compare/@cspell/dict-python@4.2.12...@cspell/dict-python@4.2.13) (2024-12-05)
+
+
+### Updates and Bug Fixes
+
+* Added some Python package names ([#3850](https://github.com/streetsidesoftware/cspell-dicts/issues/3850)) ([a093c9d](https://github.com/streetsidesoftware/cspell-dicts/commit/a093c9d9a27073af2762e0f37d27472451c31bf5))
+* Workflow Bot -- Build Dictionaries ([#3851](https://github.com/streetsidesoftware/cspell-dicts/issues/3851)) ([0c9be81](https://github.com/streetsidesoftware/cspell-dicts/commit/0c9be814359ee9f49bf04596701db77e2a614bef))
+
+## [4.2.12](https://github.com/streetsidesoftware/cspell-dicts/compare/@cspell/dict-python@4.2.11...@cspell/dict-python@4.2.12) (2024-10-17)
+
+
+### Updates and Bug Fixes
+
+* Add "maxsplit" to python.txt dictionary ([#3663](https://github.com/streetsidesoftware/cspell-dicts/issues/3663)) ([a448054](https://github.com/streetsidesoftware/cspell-dicts/commit/a4480541fbcc6b4709e0b03367f56b59fffaf424))
+* Workflow Bot -- Build Dictionaries ([#3683](https://github.com/streetsidesoftware/cspell-dicts/issues/3683)) ([a47d7cb](https://github.com/streetsidesoftware/cspell-dicts/commit/a47d7cbb2b28cf7570734c01c2c9d1c87316e94c))
+
+## [4.2.11](https://github.com/streetsidesoftware/cspell-dicts/compare/@cspell/dict-python@4.2.10...@cspell/dict-python@4.2.11) (2024-10-11)
+
+
+### Updates and Bug Fixes
+
+* Update package git url ([#3667](https://github.com/streetsidesoftware/cspell-dicts/issues/3667)) ([629c7d0](https://github.com/streetsidesoftware/cspell-dicts/commit/629c7d0a5e1bacad1d3874b1f8372edc3494ef97))
+
+## [4.2.10](https://github.com/streetsidesoftware/cspell-dicts/compare/@cspell/dict-python@4.2.9...@cspell/dict-python@4.2.10) (2024-10-11)
+
+
+### Updates and Bug Fixes
+
+* Fix the git repository URL ([#3665](https://github.com/streetsidesoftware/cspell-dicts/issues/3665)) ([ac050b6](https://github.com/streetsidesoftware/cspell-dicts/commit/ac050b697d57820109995e92fac5ccc32ced1723))
+
+## [4.2.9](https://github.com/streetsidesoftware/cspell-dicts/compare/@cspell/dict-python@4.2.8...@cspell/dict-python@4.2.9) (2024-10-11)
+
+
+### Updates and Bug Fixes
+
+* Sign all dictionaries ([#3661](https://github.com/streetsidesoftware/cspell-dicts/issues/3661)) ([6b8d560](https://github.com/streetsidesoftware/cspell-dicts/commit/6b8d560cf51a593458ce42bca415859f872cfc97))
+
+## [4.2.8](https://github.com/streetsidesoftware/cspell-dicts/compare/@cspell/dict-python@4.2.7...@cspell/dict-python@4.2.8) (2024-10-06)
+
+
+### Updates and Bug Fixes
+
+* Workflow Bot -- Build Dictionaries ([#3643](https://github.com/streetsidesoftware/cspell-dicts/issues/3643)) ([2955084](https://github.com/streetsidesoftware/cspell-dicts/commit/29550848da659f03ccd1e36b2a66b6a3cfcdc6f4))
+
+## [4.2.7](https://github.com/streetsidesoftware/cspell-dicts/compare/@cspell/dict-python@4.2.6...@cspell/dict-python@4.2.7) (2024-10-05)
+
+
+### Updates and Bug Fixes
+
+* Workflow Bot -- Build Dictionaries ([#3635](https://github.com/streetsidesoftware/cspell-dicts/issues/3635)) ([25b0f1d](https://github.com/streetsidesoftware/cspell-dicts/commit/25b0f1df069601c5bc16084afe35ed5b9a75cf5c))
+
+## [4.2.6](https://github.com/streetsidesoftware/cspell-dicts/compare/@cspell/dict-python@4.2.5...@cspell/dict-python@4.2.6) (2024-08-27)
+
+
+### Updates and Bug Fixes
+
+* make sure constraints.txt includes python dict ([#3515](https://github.com/streetsidesoftware/cspell-dicts/issues/3515)) ([dbf2955](https://github.com/streetsidesoftware/cspell-dicts/commit/dbf29555b9a49b71e038224a0dbed4e3a677405e))
+
+## [4.2.5](https://github.com/streetsidesoftware/cspell-dicts/compare/@cspell/dict-python@4.2.4...@cspell/dict-python@4.2.5) (2024-08-26)
+
+
+### Updates and Bug Fixes
+
+* Update software-terms ([#3506](https://github.com/streetsidesoftware/cspell-dicts/issues/3506)) ([5d8c9c5](https://github.com/streetsidesoftware/cspell-dicts/commit/5d8c9c56567417c5ef7de3e29ac62623f27e2a63))
+* Workflow Bot -- Build Dictionaries ([#3510](https://github.com/streetsidesoftware/cspell-dicts/issues/3510)) ([a684808](https://github.com/streetsidesoftware/cspell-dicts/commit/a684808a8e36f8fb5c5b2d282dc336206b520cd7))
+
+## [4.2.4](https://github.com/streetsidesoftware/cspell-dicts/compare/@cspell/dict-python@4.2.3...@cspell/dict-python@4.2.4) (2024-08-06)
+
+
+### Updates and Bug Fixes
+
+* Workflow Bot -- Build Dictionaries ([#3443](https://github.com/streetsidesoftware/cspell-dicts/issues/3443)) ([6d7eb6f](https://github.com/streetsidesoftware/cspell-dicts/commit/6d7eb6fd4340b0b49a688df7cd866780d5d80759))
+
+## [4.2.3](https://github.com/streetsidesoftware/cspell-dicts/compare/@cspell/dict-python@4.2.2...@cspell/dict-python@4.2.3) (2024-07-24)
+
+
+### Updates and Bug Fixes
+
+* Workflow Bot -- Build Dictionaries ([#3411](https://github.com/streetsidesoftware/cspell-dicts/issues/3411)) ([a6adc8f](https://github.com/streetsidesoftware/cspell-dicts/commit/a6adc8f8b867c86b315873b2dc80344d344ad8b5))
+
+## [4.2.2](https://github.com/streetsidesoftware/cspell-dicts/compare/@cspell/dict-python@4.2.1...@cspell/dict-python@4.2.2) (2024-07-23)
+
+
+### Updates and Bug Fixes
+
+* Workflow Bot -- Build Dictionaries ([#3405](https://github.com/streetsidesoftware/cspell-dicts/issues/3405)) ([8624bcb](https://github.com/streetsidesoftware/cspell-dicts/commit/8624bcbce44dad3fb99bb0ae446df08f377e1679))
+
+## [4.2.1](https://github.com/streetsidesoftware/cspell-dicts/compare/@cspell/dict-python@4.2.0...@cspell/dict-python@4.2.1) (2024-06-06)
+
+
+### Updates and Bug Fixes
+
+* Add back some legacy terms ([#3261](https://github.com/streetsidesoftware/cspell-dicts/issues/3261)) ([346ddf8](https://github.com/streetsidesoftware/cspell-dicts/commit/346ddf8d4e0e3b4f89fcf75ea85a765f01c17a5e))
+* Workflow Bot -- Build Dictionaries ([#3263](https://github.com/streetsidesoftware/cspell-dicts/issues/3263)) ([9ade3b6](https://github.com/streetsidesoftware/cspell-dicts/commit/9ade3b6d1f55bbbd6d9a239c5ecf04c247df0443))
+
+## [4.2.0](https://github.com/streetsidesoftware/cspell-dicts/compare/@cspell/dict-python@4.1.11...@cspell/dict-python@4.2.0) (2024-06-06)
+
+
+### Features
+
+* reduce the size of the python dictionary ([#3259](https://github.com/streetsidesoftware/cspell-dicts/issues/3259)) ([a9c1302](https://github.com/streetsidesoftware/cspell-dicts/commit/a9c1302ab3d27b29a8eeb2e019cbc7364ccd1192))
+
+
+### Updates and Bug Fixes
+
+* Issue [#972](https://github.com/streetsidesoftware/cspell-dicts/issues/972): Add common python package names to exception list ([#3256](https://github.com/streetsidesoftware/cspell-dicts/issues/3256)) ([0918dc3](https://github.com/streetsidesoftware/cspell-dicts/commit/0918dc3f4a6ae9b339eeab2900eb7b7df6a5c647))
+* Workflow Bot -- Build Dictionaries ([#3258](https://github.com/streetsidesoftware/cspell-dicts/issues/3258)) ([4e49a5d](https://github.com/streetsidesoftware/cspell-dicts/commit/4e49a5daa2dd862b70cb8dc0de9bcdee9a5a85ac))
+
+## [4.1.11](https://github.com/streetsidesoftware/cspell-dicts/compare/@cspell/dict-python@4.1.10...@cspell/dict-python@4.1.11) (2023-12-25)
+
+
+### Updates and Bug Fixes
+
+* [python] Add "djlint" term ([#2835](https://github.com/streetsidesoftware/cspell-dicts/issues/2835)) ([92a2686](https://github.com/streetsidesoftware/cspell-dicts/commit/92a2686401d73d77d81a2824e88ac8ac9ce57488))
+
 ## [4.1.10](https://github.com/streetsidesoftware/cspell-dicts/compare/@cspell/dict-python@4.1.9...@cspell/dict-python@4.1.10) (2023-10-30)
 
 

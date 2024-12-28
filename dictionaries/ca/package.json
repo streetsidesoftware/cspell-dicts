@@ -1,9 +1,10 @@
 {
   "name": "@cspell/dict-ca",
-  "version": "3.0.1",
+  "version": "3.0.4",
   "description": "Catalan dictionary for cspell.",
   "publishConfig": {
-    "access": "public"
+    "access": "public",
+    "provenance": true
   },
   "exports": {
     ".": "./cspell-ext.json",
@@ -13,14 +14,15 @@
   "scripts": {
     "build": "cspell-tools-cli build && pnpm prepare:dictionary",
     "build:conditional": "cspell-tools-cli build --conditional && pnpm gz",
-    "test": "hunspell-reader words -n 1000 \"src/ca.dic\" | cspell -v -c ./cspell-ext.json --local=ca --languageId=* stdin",
+    "test": "pipe-cmds \"hunspell-reader words -n 1000 \\\"src/ca.dic\\\"\" \"cspell -c ./cspell-ext.json --locale=ca --languageId=* stdin\"",
     "prepare:dictionary": "pnpm run gz",
     "gz": "cspell-tools-cli gzip \"*.trie\"",
     "prepublishOnly": "echo pre-publish"
   },
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/streetsidesoftware/cspell-dicts.git"
+    "url": "https://github.com/streetsidesoftware/cspell-dicts",
+    "directory": "dictionaries/ca"
   },
   "keywords": [
     "cspell",
@@ -29,7 +31,7 @@
     "dictionary",
     "spelling"
   ],
-  "author": "Jason Dent",
+  "author": "Street Side Software <support@streetsidesoftware.nl>",
   "license": "MIT",
   "bugs": {
     "url": "https://github.com/streetsidesoftware/cspell-dicts/issues"

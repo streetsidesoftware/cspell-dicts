@@ -1,3 +1,6 @@
+# Keywords and terms related to Powershell
+# Please add new words after this line, one word per line.
+-isnot
 [Microsoft.PowerShell.ExecutionPolicy]::AllSigned
 [Microsoft.PowerShell.ExecutionPolicy]::Bypass
 [Microsoft.PowerShell.ExecutionPolicy]::Default
@@ -151,14 +154,27 @@ CACHE
 capture
 captures
 catch
+ccontains
 CD
 CDBURN
+ceq
+cge
+cgt
 character
 ci
+CIAOPS
 class
+cle
+clike
 Clixml
+clt
+cmatch
 cmd
 cmdlets
+cne
+cnotcontains
+cnotlike
+cnotmatch
 color
 com
 come
@@ -187,6 +203,7 @@ control
 CONTROLS
 COOKIES
 correctly
+creplace
 CSIDL
 d
 DATE
@@ -255,6 +272,7 @@ FORWARDHELPTARGETNAME
 from
 function
 FUNCTIONALITY
+ge
 gl
 global
 good
@@ -271,11 +289,23 @@ Host
 http
 i
 ic
+icontains
+ieq
 if
+ige
+igt
+ile
+ilike
+ilt
+imatch
 imprecise
 in
 include
+ine
 inlinescript
+inotcontains
+inotlike
+inotmatch
 Input
 INPUTS
 INTERNET
@@ -283,7 +313,9 @@ interpolated
 interpolatedStringContent
 interpolation
 invocation
+ireplace
 is
+isnot
 it
 key
 keyword
@@ -292,6 +324,7 @@ known
 L
 language
 LastExitCode
+le
 lg
 like
 line
@@ -332,8 +365,10 @@ NETHOOD
 NETWORK
 normal
 not
+notcontains
 NOTES
 notin
+notlike
 notmatch
 Noun
 Null
@@ -417,6 +452,8 @@ requires
 reserved
 RESOURCES
 return
+runspace
+runspaces
 s
 schema
 scientific
@@ -430,7 +467,9 @@ SENDTO
 separator
 setlocal
 ShellId
+shl
 should
+shr
 sign
 simple
 single

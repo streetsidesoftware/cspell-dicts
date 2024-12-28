@@ -22,6 +22,43 @@ See [Conventional Commits](https://conventionalcommits.org) for commit guideline
 
 
 
+## [5.0.3](https://github.com/streetsidesoftware/cspell-dicts/compare/@cspell/dict-cryptocurrencies@5.0.2...@cspell/dict-cryptocurrencies@5.0.3) (2024-10-11)
+
+
+### Updates and Bug Fixes
+
+* Update package git url ([#3667](https://github.com/streetsidesoftware/cspell-dicts/issues/3667)) ([629c7d0](https://github.com/streetsidesoftware/cspell-dicts/commit/629c7d0a5e1bacad1d3874b1f8372edc3494ef97))
+
+## [5.0.2](https://github.com/streetsidesoftware/cspell-dicts/compare/@cspell/dict-cryptocurrencies@5.0.1...@cspell/dict-cryptocurrencies@5.0.2) (2024-10-11)
+
+
+### Updates and Bug Fixes
+
+* Fix the git repository URL ([#3665](https://github.com/streetsidesoftware/cspell-dicts/issues/3665)) ([ac050b6](https://github.com/streetsidesoftware/cspell-dicts/commit/ac050b697d57820109995e92fac5ccc32ced1723))
+
+## [5.0.1](https://github.com/streetsidesoftware/cspell-dicts/compare/@cspell/dict-cryptocurrencies@5.0.0...@cspell/dict-cryptocurrencies@5.0.1) (2024-10-11)
+
+
+### Updates and Bug Fixes
+
+* Sign all dictionaries ([#3661](https://github.com/streetsidesoftware/cspell-dicts/issues/3661)) ([6b8d560](https://github.com/streetsidesoftware/cspell-dicts/commit/6b8d560cf51a593458ce42bca415859f872cfc97))
+
+## [5.0.0](https://github.com/streetsidesoftware/cspell-dicts/compare/@cspell/dict-cryptocurrencies@4.0.0...@cspell/dict-cryptocurrencies@5.0.0) (2023-12-29)
+
+
+### ⚠ BREAKING CHANGES
+
+* [cryptocurrencies] organize + modernize the crypto wordlists ([#2846](https://github.com/streetsidesoftware/cspell-dicts/issues/2846))
+
+### Features
+
+* [cryptocurrencies] organize + modernize the crypto wordlists ([#2846](https://github.com/streetsidesoftware/cspell-dicts/issues/2846)) ([1d18683](https://github.com/streetsidesoftware/cspell-dicts/commit/1d186837e92a1d3eee2265c6980bda0d8e490b59))
+
+
+### Updates and Bug Fixes
+
+* Crypto make sure dict files are packaged. ([#2860](https://github.com/streetsidesoftware/cspell-dicts/issues/2860)) ([f7dbbdf](https://github.com/streetsidesoftware/cspell-dicts/commit/f7dbbdfd8c8d9f29b7b616b87461844d0a054c58))
+
 ## [4.0.0](https://github.com/streetsidesoftware/cspell-dicts/compare/@cspell/dict-cryptocurrencies@3.0.1...@cspell/dict-cryptocurrencies@4.0.0) (2023-08-31)
 
 

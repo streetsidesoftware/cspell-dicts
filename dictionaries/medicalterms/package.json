@@ -1,9 +1,10 @@
 {
   "name": "@cspell/dict-medicalterms",
-  "version": "4.1.0",
+  "version": "4.1.5",
   "description": "Medical Terms dictionary for cspell.",
   "publishConfig": {
-    "access": "public"
+    "access": "public",
+    "provenance": true
   },
   "exports": {
     ".": "./cspell-ext.json",
@@ -11,15 +12,18 @@
     "./cspell-ext.json": "./cspell-ext.json"
   },
   "scripts": {
-    "build": "cspell-tools-cli build",
-    "build:conditional": "pnpm build --conditional",
+    "build": "cspell-tools-cli build && pnpm run gz",
+    "build:conditional": "pnpm cspell-tools-cli build --conditional && pnpm run gz",
+    "sync": "shx rm -rf src/wordlist-medicalterms-en && shx cp -r node_modules/wordlist-medicalterms-en src/",
     "test": "cspell samples --no-progress",
+    "gz": "cspell-tools-cli gzip \"dict/*.txt\"",
     "prepublishOnly": "echo pre-publish",
     "prepare:dictionary": "pnpm run build"
   },
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/streetsidesoftware/cspell-dicts.git"
+    "url": "https://github.com/streetsidesoftware/cspell-dicts",
+    "directory": "dictionaries/medicalterms"
   },
   "keywords": [
     "cspell",
@@ -28,14 +32,17 @@
     "dictionary",
     "spelling"
   ],
-  "author": "Jason Dent",
+  "author": "Street Side Software <support@streetsidesoftware.nl>",
   "license": "GPL-3.0-or-later",
   "bugs": {
     "url": "https://github.com/streetsidesoftware/cspell-dicts/issues"
   },
   "homepage": "https://github.com/streetsidesoftware/cspell-dicts/blob/main/dictionaries/medicalterms#readme",
   "files": [
-    "medicalterms-en.txt.gz",
+    "dict/medicalterms-en.txt.gz",
+    "src/wordlist-medicalterms-en/LICENSE",
+    "src/wordlist-medicalterms-en/README.md",
+    "!dict/README.md",
     "cspell-ext.json"
   ],
   "devDependencies": {

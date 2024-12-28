@@ -1,0 +1,15 @@
+# yaml-language-server: $schema=https://raw.githubusercontent.com/streetsidesoftware/cspell/main/packages/cspell-tools/cspell-tools.config.schema.json
+
+$schema: https://raw.githubusercontent.com/streetsidesoftware/cspell/main/packages/cspell-tools/cspell-tools.config.schema.json
+targets:
+  - name: typescript
+    targetDirectory: ./dict
+    compress: false
+    format: plaintext
+    sources:
+      - src/domGlobalEventHandlers.txt
+      - src/domGlobalEvents.txt
+      - src/ecosystem-terms.txt
+      - src/typescript.txt
+    sort: true
+keepRawCase: true

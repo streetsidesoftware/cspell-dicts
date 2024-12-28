@@ -2,6 +2,13 @@
     "bootstrap-sha": "57747d12b18819775592694ea936eb9e4ce875b6",
     "include-v-in-tag": false,
     "tag-separator": "@",
+    "plugins": [
+        {
+            "type": "node-workspace",
+            "always-link-local": true,
+            "updatePeerDependencies": true
+        }
+    ],
     "changelog-sections": [
         {
             "type": "feat",
@@ -126,6 +133,10 @@
             "component": "@cspell/dict-csharp",
             "releaseType": "node"
         },
+        "dictionaries/cspell": {
+            "component": "@cspell/dict-cspell-bundle",
+            "releaseType": "node"
+        },
         "dictionaries/css": {
             "component": "@cspell/dict-css",
             "releaseType": "node"
@@ -168,6 +179,10 @@
         },
         "dictionaries/el": {
             "component": "@cspell/dict-el",
+            "releaseType": "node"
+        },
+        "dictionaries/elisp": {
+            "component": "@cspell/dict-elisp",
             "releaseType": "node"
         },
         "dictionaries/elixir": {
@@ -222,8 +237,16 @@
             "component": "@cspell/dict-fa-ir",
             "releaseType": "node"
         },
+        "dictionaries/fi_FI": {
+            "component": "@cspell/dict-fi-fi",
+            "releaseType": "node"
+        },
         "dictionaries/filetypes": {
             "component": "@cspell/dict-filetypes",
+            "releaseType": "node"
+        },
+        "dictionaries/flutter": {
+            "component": "@cspell/dict-flutter",
             "releaseType": "node"
         },
         "dictionaries/fonts": {
@@ -250,12 +273,24 @@
             "component": "@cspell/dict-gaming-terms",
             "releaseType": "node"
         },
+        "dictionaries/gis": {
+            "component": "@cspell/dict-gis",
+            "releaseType": "node"
+        },
         "dictionaries/git": {
             "component": "@cspell/dict-git",
             "releaseType": "node"
         },
         "dictionaries/golang": {
             "component": "@cspell/dict-golang",
+            "releaseType": "node"
+        },
+        "dictionaries/google": {
+            "component": "@cspell/dict-google",
+            "releaseType": "node"
+        },
+        "dictionaries/grc_GR": {
+            "component": "@cspell/dict-grc",
             "releaseType": "node"
         },
         "dictionaries/haskell": {
@@ -278,6 +313,14 @@
             "component": "@cspell/dict-html",
             "releaseType": "node"
         },
+        "dictionaries/hu_HU": {
+            "component": "@cspell/dict-hu-hu",
+            "releaseType": "node"
+        },
+        "dictionaries/id_ID": {
+            "component": "@cspell/dict-id-id",
+            "releaseType": "node"
+        },
         "dictionaries/it_IT": {
             "component": "@cspell/dict-it-it",
             "releaseType": "node"
@@ -286,12 +329,20 @@
             "component": "@cspell/dict-java",
             "releaseType": "node"
         },
+        "dictionaries/julia": {
+            "component": "@cspell/dict-julia",
+            "releaseType": "node"
+        },
         "dictionaries/k8s": {
             "component": "@cspell/dict-k8s",
             "releaseType": "node"
         },
         "dictionaries/kotlin": {
             "component": "@cspell/dict-kotlin",
+            "releaseType": "node"
+        },
+        "dictionaries/la": {
+            "component": "@cspell/dict-la",
             "releaseType": "node"
         },
         "dictionaries/latex": {
@@ -326,6 +377,10 @@
             "component": "@cspell/dict-medicalterms",
             "releaseType": "node"
         },
+        "dictionaries/mk": {
+            "component": "@cspell/dict-mk",
+            "releaseType": "node"
+        },
         "dictionaries/mnemonics": {
             "component": "@cspell/dict-mnemonics",
             "releaseType": "node"
@@ -350,12 +405,20 @@
             "component": "@cspell/dict-npm",
             "releaseType": "node"
         },
+        "dictionaries/people-names": {
+            "component": "@cspell/dict-people-names",
+            "releaseType": "node"
+        },
         "dictionaries/php": {
             "component": "@cspell/dict-php",
             "releaseType": "node"
         },
         "dictionaries/pl_PL": {
             "component": "@cspell/dict-pl_pl",
+            "releaseType": "node"
+        },
+        "dictionaries/pokemon": {
+            "component": "@cspell/dict-pokemon",
             "releaseType": "node"
         },
         "dictionaries/powershell": {
@@ -454,6 +517,10 @@
             "component": "@cspell/dict-swift",
             "releaseType": "node"
         },
+        "dictionaries/terraform": {
+            "component": "@cspell/dict-terraform",
+            "releaseType": "node"
+        },
         "dictionaries/tr_TR": {
             "component": "@cspell/dict-tr-tr",
             "releaseType": "node"
@@ -480,6 +547,10 @@
         },
         "dictionaries/win32": {
             "component": "@cspell/dict-win32",
+            "releaseType": "node"
+        },
+        "packages/en-freq": {
+            "component": "@internal/en-freq",
             "releaseType": "node"
         }
     }

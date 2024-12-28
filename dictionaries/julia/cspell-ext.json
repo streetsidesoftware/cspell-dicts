@@ -1,0 +1,32 @@
+{
+    "id": "julia",
+    "version": "0.2",
+    "name": "Julia Dictionary",
+    "description": "Julia function and keyword dictionary",
+    "readonly": true,
+    "dictionaryDefinitions": [
+        {
+            "name": "julia",
+            "path": "./dict/julia.txt",
+            "description": "Julia Dictionary"
+        }
+    ],
+    "enableFiletypes": ["julia"],
+    "languageSettings": [
+        {
+            "languageId": "julia",
+            "locale": "*",
+            "includeRegExpList": [],
+            "ignoreRegExpList": [],
+            "patterns": [],
+            "dictionaries": ["julia"],
+            "dictionaryDefinitions": []
+        }
+    ],
+    "overrides": [
+        {
+            "filename": "**/*.jl",
+            "languageId": "julia"
+        }
+    ]
+}

@@ -7,12 +7,12 @@
     "dictionaryDefinitions": [
         {
             "name": "python",
-            "path": "./python.txt.gz",
+            "path": "./dict/python.txt",
             "description": "Python Dictionary"
         },
         {
             "name": "python-common",
-            "path": "./python-common.txt.gz",
+            "path": "./dict/python-common.txt",
             "description": "Python Common Terms Dictionary"
         }
     ],
@@ -71,6 +71,12 @@
                     ]
                 }
             ]
+        }
+    ],
+    "overrides": [
+        {
+            "filename": "**/constraints.txt",
+            "dictionaries": ["python", "python-common"]
         }
     ]
 }

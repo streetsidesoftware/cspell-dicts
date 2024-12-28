@@ -1,9 +1,10 @@
 {
   "name": "@cspell/dict-ar",
-  "version": "1.1.0",
+  "version": "1.1.3",
   "description": "Arabic dictionary for CSpell.",
   "publishConfig": {
-    "access": "public"
+    "access": "public",
+    "provenance": true
   },
   "exports": {
     ".": "./cspell-ext.json",
@@ -16,8 +17,8 @@
     "conditional-build": "pnpm run --silent checksum || pnpm run build",
     "lint": "pnpm prettier -w \"**/*.{md,json}\"",
     "gen-checksum": "cspell-tools-cli shasum -u checksum.txt --list-file source-files.txt source-dependencies.txt",
-    "test-ar": "hunspell-reader words -m 0 -n 1000 \"src/ar.dic\" | cspell -v -c ./cspell-ext.json \"--local=ar\" \"--languageId=*\" stdin",
-    "test-samples": "cspell -v -c ./cspell-ext.json --local=ar,en \"samples/**\"",
+    "test-ar": "pipe-cmds \"hunspell-reader words -m 0 -n 1000 \\\"src/ayaspell/ar.dic\\\"\" \"cspell -c ./cspell-ext.json \\\"--locale=ar\\\" \\\"--languageId=*\\\" stdin\"",
+    "test-samples": "cspell -c ./cspell-ext.json --locale=ar,en \"samples/**\"",
     "test": "pnpm run test-ar && pnpm run test-samples",
     "sync": "bash ./scripts/sync.sh && pnpm lint",
     "prepare:dictionary": "cspell-tools-cli gzip \"*.trie\"",
@@ -25,7 +26,8 @@
   },
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/streetsidesoftware/cspell-dicts.git"
+    "url": "https://github.com/streetsidesoftware/cspell-dicts",
+    "directory": "dictionaries/ar"
   },
   "keywords": [
     "cspell",
@@ -35,7 +37,7 @@
     "dictionary",
     "spelling"
   ],
-  "author": "Jason Dent",
+  "author": "Street Side Software <support@streetsidesoftware.nl>",
   "license": "LGPL-3.0",
   "bugs": {
     "url": "https://github.com/streetsidesoftware/cspell-dicts/issues"

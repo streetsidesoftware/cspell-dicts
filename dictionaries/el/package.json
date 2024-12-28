@@ -1,9 +1,10 @@
 {
   "name": "@cspell/dict-el",
-  "version": "3.1.0",
+  "version": "3.1.5",
   "description": "Greek dictionary for cspell.",
   "publishConfig": {
-    "access": "public"
+    "access": "public",
+    "provenance": true
   },
   "exports": {
     ".": "./cspell-ext.json",
@@ -20,11 +21,12 @@
     "sync": "pnpm cpy \"node_modules/dictionary-el/{*.dic,*.aff,*.md,**/license}\" src/hunspell",
     "gz": "cspell-tools-cli gzip \"*.trie\"",
     "prepare:dictionary": "pnpm gz",
-    "test": "shx head -n 1000 ./src/Greek.txt | cspell -v -c cspell-ext.json --local=el stdin"
+    "test": "shx head -n 1000 ./src/Greek.txt | cspell -c cspell-ext.json --locale=el stdin"
   },
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/streetsidesoftware/cspell-dicts.git"
+    "url": "https://github.com/streetsidesoftware/cspell-dicts",
+    "directory": "dictionaries/el"
   },
   "keywords": [
     "cspell",
@@ -33,7 +35,7 @@
     "dictionary",
     "spelling"
   ],
-  "author": "Jason Dent",
+  "author": "Street Side Software <support@streetsidesoftware.nl>",
   "license": "GPL-3.0+",
   "bugs": {
     "url": "https://github.com/streetsidesoftware/cspell-dicts/issues"

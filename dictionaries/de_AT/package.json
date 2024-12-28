@@ -1,9 +1,10 @@
 {
   "name": "@cspell/dict-de-at",
-  "version": "1.1.0",
+  "version": "1.1.3",
   "description": "Austrian German dictionary for CSpell.",
   "publishConfig": {
-    "access": "public"
+    "access": "public",
+    "provenance": true
   },
   "exports": {
     ".": "./cspell-ext.json",
@@ -14,8 +15,8 @@
     "build": "cspell-tools-cli build && pnpm gz",
     "conditional-build": "pnpm run sync && cspell-tools-cli build --conditional && pnpm gz",
     "sync": "pnpm cpy \"node_modules/dictionary-de-at/**\" src/hunspell",
-    "test-de": "hunspell-reader words -n 1000 \"src/hunspell/index.dic\" | cspell -v -c ./cspell-ext.json --local=de-AT --languageId=* stdin",
-    "test-samples": "cspell -v -c ./cspell-ext.json --local=de-at,en \"samples/**\"",
+    "test-de": "pipe-cmds \"hunspell-reader words -n 1000 \\\"src/hunspell/index.dic\\\"\" \"cspell -c ./cspell-ext.json --locale=de-AT --languageId=* stdin\"",
+    "test-samples": "cspell -c ./cspell-ext.json --locale=de-at,en \"samples/**\"",
     "test": "pnpm run test-de && pnpm run test-samples",
     "gz": "cspell-tools-cli gzip \"*.trie\"",
     "prepare:dictionary": "pnpm gz",
@@ -23,7 +24,8 @@
   },
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/streetsidesoftware/cspell-dicts.git"
+    "url": "https://github.com/streetsidesoftware/cspell-dicts",
+    "directory": "dictionaries/de_AT"
   },
   "keywords": [
     "cspell",
@@ -33,7 +35,7 @@
     "dictionary",
     "spelling"
   ],
-  "author": "Jason Dent",
+  "author": "Street Side Software <support@streetsidesoftware.nl>",
   "license": "GPL-3.0-or-later",
   "bugs": {
     "url": "https://github.com/streetsidesoftware/cspell-dicts/issues"

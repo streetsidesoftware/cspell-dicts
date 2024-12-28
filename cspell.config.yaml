@@ -1,9 +1,9 @@
-version: "0.2"
+version: '0.2'
 language: en
 files:
   - .github/**/*.{md,txt,yaml,yml}
   - .git/COMMIT_EDITMSG
-  - "*.{md,txt,yaml,yml}"
+  - '*.{md,txt,yaml,yml}'
   - dictionaries/**/*.{md,txt,yaml,yml,js,tex}
   - docs/**/*.md
   - scripts/**
@@ -16,6 +16,7 @@ words:
   - autobuild
   - Bokmål
   - cli
+  - cmds
   - codeql
   - configstore
   - crowdsourcing
@@ -24,8 +25,11 @@ words:
   - django
   - django's
   - EDITMSG
+  - elisp
+  - Français
   - globby
   - Glutanimate
+  - googleapis
   - hunspell
   - issuehunt
   - Kieran
@@ -38,12 +42,14 @@ words:
   - nohoist
   - otechie
   - patreon
+  - pipefail
   - prebuilds
   - Réforme
   - streetsidesoftware
   - Sublicensing
   - tidelift
   - WIPO
+  - Wooorm's
   - wordlist
   - z
 flagWords: []
@@ -51,16 +57,16 @@ maxNumberOfProblems: 1000
 ignorePaths:
   - .gitignore
   - .vscode/**
-  - "*-lock.yaml"
-  - "*.aff"
-  - "*.dic"
-  - "*.gz"
-  - "*.lock"
-  - "*.log"
-  - "*.snap"
-  - "*.trie"
-  - "**/.git/!(COMMIT_EDITMSG)"
-  - "**/.git/!(COMMIT_EDITMSG)/**"
+  - '*-lock.yaml'
+  - '*.aff'
+  - '*.dic'
+  - '*.gz'
+  - '*.lock'
+  - '*.log'
+  - '*.snap'
+  - '*.trie'
+  - '**/.git/!(COMMIT_EDITMSG)'
+  - '**/.git/!(COMMIT_EDITMSG)/**'
   - CHANGELOG.md
   - checksum.txt
   - cSpell.json
@@ -70,7 +76,7 @@ ignorePaths:
   - generator-cspell-dicts/generators/app/templates/**
   - lerna.json
   - node_modules
-  - package.json
+  - /package.json
   - shared-additional-words.txt
   - source-dependencies.txt
   - source-files.txt
@@ -78,12 +84,20 @@ ignorePaths:
 import: []
 useGitignore: true
 overrides:
-  - filename: "**/nl_NL/**"
+  - filename: '**/nl_NL/**'
     language: en,nl
-  - filename: "**/ru_RU/samples/**"
+  - filename: '**/ru_RU/samples/**'
     language: ru,en
-  - filename: "**/sv/**"
+  - filename: '**/sv/**'
     language: en,sv
+  - filename: '**/package.json'
+    patterns:
+      - name: devDependencies
+        pattern: |
+          /"devDependencies": \{[^}]*?\}/g
+        description: Ignore "devDependencies"
+    ignoreRegExpList:
+      - devDependencies
 cache:
   useCache: true
   cacheStrategy: content

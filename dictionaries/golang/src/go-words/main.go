@@ -29,8 +29,8 @@ var (
 	// https://golang.org/pkg/builtin/
 	Builtins = []string{
 		"true", "false", "iota", "nil",
-		"append", "cap", "close", "complex", "copy", "delete", "imag",
-		"len", "make", "new", "panic", "print", "println", "real", "recover",
+		"append", "cap", "clear", "close", "complex", "copy", "delete", "imag",
+		"len", "make", "max", "min", "new", "panic", "print", "println", "real", "recover",
 		"bool", "byte", "complex128", "complex64", "error", "float32", "float64",
 		"int", "int16", "int32", "int64", "int8",
 		"rune", "string",
@@ -47,11 +47,12 @@ var (
 
 		// https://github.com/golang/go/blob/master/src/cmd/dist/build.go
 		"386", "amd64", "arm", "arm64", "loong64", "mips", "mipsle", "mips64", "mips64le", "ppc64", "ppc64le", "riscv64", "s390x", "sparc64", "wasm", // GOARCH
-		"darwin", "dragonfly", "illumos", "ios", "js", "linux", "android", "solaris", "freebsd", "nacl", "netbsd", "openbsd", "plan9", "windows", "aix", // GOOS
+		"darwin", "dragonfly", "illumos", "ios", "js", "wasip1", "linux", "android", "solaris", "freebsd", "nacl", "netbsd", "openbsd", "plan9", "windows", "aix", // GOOS
 
 		"gc", "gccgo", "gcc", "cgo",
 		"go1.1", "go1.2", "go1.3", "go1.4", "go1.5", "go1.6", "go1.7", "go1.8", "go1.9", "go1.10",
 		"go1.11", "go1.12", "go1.13", "go1.14", "go1.15", "go1.16", "go1.17", "go1.18", "go1.19", "go1.20",
+		"go1.21", "go1.22", "go1.23", "go1.24",
 	}
 )
 

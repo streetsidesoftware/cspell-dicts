@@ -2,6 +2,13 @@
     "bootstrap-sha": "57747d12b18819775592694ea936eb9e4ce875b6",
     "include-v-in-tag": false,
     "tag-separator": "@",
+    "plugins": [
+        {
+            "type": "node-workspace",
+            "always-link-local": true,
+            "updatePeerDependencies": true
+        }
+    ],
     "changelog-sections": [
         { type: "feat", "section": "Features", "hidden": false },
         { type: "feature", "section": "Features" },

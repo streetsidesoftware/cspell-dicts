@@ -3,6 +3,57 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+## [3.0.9](https://github.com/streetsidesoftware/cspell-dicts/compare/@cspell/dict-filetypes@3.0.8...@cspell/dict-filetypes@3.0.9) (2024-12-10)
+
+
+### Updates and Bug Fixes
+
+* add lockb to filetypes ([#3872](https://github.com/streetsidesoftware/cspell-dicts/issues/3872)) ([956db0a](https://github.com/streetsidesoftware/cspell-dicts/commit/956db0a33f7a0f23a87b34451fe7cfb44c5e68dc))
+
+## [3.0.8](https://github.com/streetsidesoftware/cspell-dicts/compare/@cspell/dict-filetypes@3.0.7...@cspell/dict-filetypes@3.0.8) (2024-10-22)
+
+
+### Updates and Bug Fixes
+
+* Add Astro to TypeScript dictionary settings ([#3717](https://github.com/streetsidesoftware/cspell-dicts/issues/3717)) ([be7fdb3](https://github.com/streetsidesoftware/cspell-dicts/commit/be7fdb31f9e65f76b5410d353e24ac775631cf8a))
+* Workflow Bot -- Build Dictionaries ([#3718](https://github.com/streetsidesoftware/cspell-dicts/issues/3718)) ([d4c72e4](https://github.com/streetsidesoftware/cspell-dicts/commit/d4c72e49743a15fb7babc80142ef0817d2d7b394))
+
+## [3.0.7](https://github.com/streetsidesoftware/cspell-dicts/compare/@cspell/dict-filetypes@3.0.6...@cspell/dict-filetypes@3.0.7) (2024-10-11)
+
+
+### Updates and Bug Fixes
+
+* Update package git url ([#3667](https://github.com/streetsidesoftware/cspell-dicts/issues/3667)) ([629c7d0](https://github.com/streetsidesoftware/cspell-dicts/commit/629c7d0a5e1bacad1d3874b1f8372edc3494ef97))
+
+## [3.0.6](https://github.com/streetsidesoftware/cspell-dicts/compare/@cspell/dict-filetypes@3.0.5...@cspell/dict-filetypes@3.0.6) (2024-10-11)
+
+
+### Updates and Bug Fixes
+
+* Fix the git repository URL ([#3665](https://github.com/streetsidesoftware/cspell-dicts/issues/3665)) ([ac050b6](https://github.com/streetsidesoftware/cspell-dicts/commit/ac050b697d57820109995e92fac5ccc32ced1723))
+
+## [3.0.5](https://github.com/streetsidesoftware/cspell-dicts/compare/@cspell/dict-filetypes@3.0.4...@cspell/dict-filetypes@3.0.5) (2024-10-11)
+
+
+### Updates and Bug Fixes
+
+* Sign all dictionaries ([#3661](https://github.com/streetsidesoftware/cspell-dicts/issues/3661)) ([6b8d560](https://github.com/streetsidesoftware/cspell-dicts/commit/6b8d560cf51a593458ce42bca415859f872cfc97))
+
+## [3.0.4](https://github.com/streetsidesoftware/cspell-dicts/compare/@cspell/dict-filetypes@3.0.3...@cspell/dict-filetypes@3.0.4) (2024-05-18)
+
+
+### Updates and Bug Fixes
+
+* Add some common coding terms ([#3165](https://github.com/streetsidesoftware/cspell-dicts/issues/3165)) ([99a10bc](https://github.com/streetsidesoftware/cspell-dicts/commit/99a10bc436b1b1b6e1922b8a152aff33a6f09ada))
+* Workflow Bot -- Build Dictionaries ([#3167](https://github.com/streetsidesoftware/cspell-dicts/issues/3167)) ([a94f73b](https://github.com/streetsidesoftware/cspell-dicts/commit/a94f73b4ff267e143d97208cf1c93b2b772bea51))
+
+## [3.0.3](https://github.com/streetsidesoftware/cspell-dicts/compare/@cspell/dict-filetypes@3.0.2...@cspell/dict-filetypes@3.0.3) (2023-11-19)
+
+
+### Updates and Bug Fixes
+
+* add various terms ([#2734](https://github.com/streetsidesoftware/cspell-dicts/issues/2734)) ([1058a2c](https://github.com/streetsidesoftware/cspell-dicts/commit/1058a2c5a53bd9aa72958943062d4d454678c2f5))
+
 ## [3.0.2](https://github.com/streetsidesoftware/cspell-dicts/compare/@cspell/dict-filetypes@3.0.1...@cspell/dict-filetypes@3.0.2) (2023-10-30)
 
 

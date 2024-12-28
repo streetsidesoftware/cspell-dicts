@@ -1,3 +1,9 @@
 {
-    "import": "../cspell-ext.json"
+    "import": "../cspell-ext.json",
+    "overrides": [
+        {
+            "filename": "dart-common.txt",
+            "dictionaries": ["dart"]
+        }
+    ]
 }

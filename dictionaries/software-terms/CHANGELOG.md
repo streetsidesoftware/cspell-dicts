@@ -3,6 +3,577 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+## [4.2.1](https://github.com/streetsidesoftware/cspell-dicts/compare/@cspell/dict-software-terms@4.2.0...@cspell/dict-software-terms@4.2.1) (2024-12-27)
+
+
+### Updates and Bug Fixes
+
+* Add missing companies + software tool terms ([#3934](https://github.com/streetsidesoftware/cspell-dicts/issues/3934)) ([dd7b4d5](https://github.com/streetsidesoftware/cspell-dicts/commit/dd7b4d554cbe5f42f91e4a7c00398074c4aa85b5))
+* Reduce false positives in compound terms. ([#3937](https://github.com/streetsidesoftware/cspell-dicts/issues/3937)) ([82f17ca](https://github.com/streetsidesoftware/cspell-dicts/commit/82f17ca46e7c63180f3f83ea9555a79c25a31d62))
+* Use `Goog` to minimize false negatives. ([#3942](https://github.com/streetsidesoftware/cspell-dicts/issues/3942)) ([3916429](https://github.com/streetsidesoftware/cspell-dicts/commit/3916429b6e3a266fa00b7202e7cb771e24eef127))
+* Workflow Bot -- Build Dictionaries ([#3935](https://github.com/streetsidesoftware/cspell-dicts/issues/3935)) ([2b9ec7f](https://github.com/streetsidesoftware/cspell-dicts/commit/2b9ec7fb86c55c20e1719816fb6ec33b661e48d7))
+* Workflow Bot -- Build Dictionaries ([#3938](https://github.com/streetsidesoftware/cspell-dicts/issues/3938)) ([031e463](https://github.com/streetsidesoftware/cspell-dicts/commit/031e463cf759dbdd68a55e1946995d020afc7d69))
+* Workflow Bot -- Build Dictionaries ([#3941](https://github.com/streetsidesoftware/cspell-dicts/issues/3941)) ([972a9a2](https://github.com/streetsidesoftware/cspell-dicts/commit/972a9a22d29cf3e616d8bbb0ecc3191e98039f34))
+
+## [4.2.0](https://github.com/streetsidesoftware/cspell-dicts/compare/@cspell/dict-software-terms@4.1.21...@cspell/dict-software-terms@4.2.0) (2024-12-24)
+
+
+### Features
+
+* Add coding compound terms. ([#3920](https://github.com/streetsidesoftware/cspell-dicts/issues/3920)) ([d414545](https://github.com/streetsidesoftware/cspell-dicts/commit/d414545b796bdf55dbaaeeb1954430323baf56bb))
+
+
+### Updates and Bug Fixes
+
+* Workflow Bot -- Build Dictionaries ([#3921](https://github.com/streetsidesoftware/cspell-dicts/issues/3921)) ([9b8eea2](https://github.com/streetsidesoftware/cspell-dicts/commit/9b8eea22b9554fda83c904adfb68066cd4b800d8))
+
+## [4.1.21](https://github.com/streetsidesoftware/cspell-dicts/compare/@cspell/dict-software-terms@4.1.20...@cspell/dict-software-terms@4.1.21) (2024-12-21)
+
+
+### Updates and Bug Fixes
+
+* add ruleset(s) to coding-terms ([#3915](https://github.com/streetsidesoftware/cspell-dicts/issues/3915)) ([7c8b4a6](https://github.com/streetsidesoftware/cspell-dicts/commit/7c8b4a61c9fa4aa82a9708683687fc357e1371b2))
+* Workflow Bot -- Build Dictionaries ([#3914](https://github.com/streetsidesoftware/cspell-dicts/issues/3914)) ([7cbc5bf](https://github.com/streetsidesoftware/cspell-dicts/commit/7cbc5bff8336a47d0602e823149e26a3996d3c4c))
+
+## [4.1.20](https://github.com/streetsidesoftware/cspell-dicts/compare/@cspell/dict-software-terms@4.1.19...@cspell/dict-software-terms@4.1.20) (2024-12-16)
+
+
+### Updates and Bug Fixes
+
+* Add words to companies, npm and software-terms dictionnaries ([#3864](https://github.com/streetsidesoftware/cspell-dicts/issues/3864)) ([26faf0e](https://github.com/streetsidesoftware/cspell-dicts/commit/26faf0eadee55c3ee704aed949d424fae1c82373))
+* Workflow Bot -- Build Dictionaries ([#3905](https://github.com/streetsidesoftware/cspell-dicts/issues/3905)) ([be13370](https://github.com/streetsidesoftware/cspell-dicts/commit/be133706cc0ce07c27f5b7c649d9623a61c0cbea))
+
+## [4.1.19](https://github.com/streetsidesoftware/cspell-dicts/compare/@cspell/dict-software-terms@4.1.18...@cspell/dict-software-terms@4.1.19) (2024-12-14)
+
+
+### Updates and Bug Fixes
+
+* add a few coding and software terms ([#3881](https://github.com/streetsidesoftware/cspell-dicts/issues/3881)) ([0f6a91d](https://github.com/streetsidesoftware/cspell-dicts/commit/0f6a91d7c4aa74180798a1b2fcbe338c3900d173))
+* add a few web terms ([#3882](https://github.com/streetsidesoftware/cspell-dicts/issues/3882)) ([f16e2e9](https://github.com/streetsidesoftware/cspell-dicts/commit/f16e2e9b9c90e1393513773b7bde4cd75e2a9246))
+* Workflow Bot -- Build Dictionaries ([#3887](https://github.com/streetsidesoftware/cspell-dicts/issues/3887)) ([b4592fd](https://github.com/streetsidesoftware/cspell-dicts/commit/b4592fd4e27f4ef1aa08e98735e1cda04dc1eb73))
+* Workflow Bot -- Build Dictionaries ([#3895](https://github.com/streetsidesoftware/cspell-dicts/issues/3895)) ([7286910](https://github.com/streetsidesoftware/cspell-dicts/commit/72869100c67a69419f53aa6c1033f45a856c7ca6))
+
+## [4.1.18](https://github.com/streetsidesoftware/cspell-dicts/compare/@cspell/dict-software-terms@4.1.17...@cspell/dict-software-terms@4.1.18) (2024-12-05)
+
+
+### Updates and Bug Fixes
+
+* Add metasyntactic variables to coding-terms ([#3845](https://github.com/streetsidesoftware/cspell-dicts/issues/3845)) ([0d3e75a](https://github.com/streetsidesoftware/cspell-dicts/commit/0d3e75adb4f336e062e9ec7f83b139858588c520))
+* Workflow Bot -- Build Dictionaries ([#3848](https://github.com/streetsidesoftware/cspell-dicts/issues/3848)) ([bd59429](https://github.com/streetsidesoftware/cspell-dicts/commit/bd59429be74906713ddab843092163f07d23e650))
+
+## [4.1.17](https://github.com/streetsidesoftware/cspell-dicts/compare/@cspell/dict-software-terms@4.1.16...@cspell/dict-software-terms@4.1.17) (2024-11-17)
+
+
+### Updates and Bug Fixes
+
+* Add `easing` to software terms ([#3822](https://github.com/streetsidesoftware/cspell-dicts/issues/3822)) ([5645fc6](https://github.com/streetsidesoftware/cspell-dicts/commit/5645fc65a677c297ee8825225d0f201a2da6dfc2))
+* Add `GLAPI` ([#3823](https://github.com/streetsidesoftware/cspell-dicts/issues/3823)) ([fdefd95](https://github.com/streetsidesoftware/cspell-dicts/commit/fdefd95a180ccad1e781033a0a27b2742519d181))
+* Add various make tools ([#3825](https://github.com/streetsidesoftware/cspell-dicts/issues/3825)) ([92c8949](https://github.com/streetsidesoftware/cspell-dicts/commit/92c8949b1da8b1878dd3675b489f3b9ead91d04c))
+* Workflow Bot -- Build Dictionaries ([#3824](https://github.com/streetsidesoftware/cspell-dicts/issues/3824)) ([7d398e2](https://github.com/streetsidesoftware/cspell-dicts/commit/7d398e236a54bed63ca114d095d35d26a71569f2))
+* Workflow Bot -- Build Dictionaries ([#3826](https://github.com/streetsidesoftware/cspell-dicts/issues/3826)) ([85b3fda](https://github.com/streetsidesoftware/cspell-dicts/commit/85b3fda3c3a90fd391161332058273ba58aa73e3))
+
+## [4.1.16](https://github.com/streetsidesoftware/cspell-dicts/compare/@cspell/dict-software-terms@4.1.15...@cspell/dict-software-terms@4.1.16) (2024-11-16)
+
+
+### Updates and Bug Fixes
+
+* Add KeyCloak to cybersecurity-terms.txt ([#3813](https://github.com/streetsidesoftware/cspell-dicts/issues/3813)) ([788d78d](https://github.com/streetsidesoftware/cspell-dicts/commit/788d78d901156cfe1beb2cc8473bcb2c0736372e))
+* Workflow Bot -- Build Dictionaries ([#3814](https://github.com/streetsidesoftware/cspell-dicts/issues/3814)) ([441cff6](https://github.com/streetsidesoftware/cspell-dicts/commit/441cff66060cbb67e66e83bdb43b52838976dc13))
+
+## [4.1.15](https://github.com/streetsidesoftware/cspell-dicts/compare/@cspell/dict-software-terms@4.1.14...@cspell/dict-software-terms@4.1.15) (2024-11-11)
+
+
+### Updates and Bug Fixes
+
+* add rust toolchain ([#3803](https://github.com/streetsidesoftware/cspell-dicts/issues/3803)) ([cc04da0](https://github.com/streetsidesoftware/cspell-dicts/commit/cc04da04115734d595e3d03c3862cbf5b4600577))
+* Workflow Bot -- Build Dictionaries ([#3805](https://github.com/streetsidesoftware/cspell-dicts/issues/3805)) ([289644b](https://github.com/streetsidesoftware/cspell-dicts/commit/289644b6605102db73d68683cb649ba73458364c))
+
+## [4.1.14](https://github.com/streetsidesoftware/cspell-dicts/compare/@cspell/dict-software-terms@4.1.13...@cspell/dict-software-terms@4.1.14) (2024-11-09)
+
+
+### Updates and Bug Fixes
+
+* add autodocstring vs code plugin ([#3793](https://github.com/streetsidesoftware/cspell-dicts/issues/3793)) ([f45294d](https://github.com/streetsidesoftware/cspell-dicts/commit/f45294d78be4d02123a34edf42c5638c9d177ee3))
+* add sysmon ([#3794](https://github.com/streetsidesoftware/cspell-dicts/issues/3794)) ([67347d0](https://github.com/streetsidesoftware/cspell-dicts/commit/67347d0e42571dd74cc404e0928fc42ecd7e2bd9))
+* add vala programming language ([#3795](https://github.com/streetsidesoftware/cspell-dicts/issues/3795)) ([b5533c4](https://github.com/streetsidesoftware/cspell-dicts/commit/b5533c4e5ad6f873b6c645d7907961a6aa5ee627))
+* Workflow Bot -- Build Dictionaries ([#3796](https://github.com/streetsidesoftware/cspell-dicts/issues/3796)) ([11bd9bc](https://github.com/streetsidesoftware/cspell-dicts/commit/11bd9bcb5e18a27e4ce45194f74217ff2cb4949d))
+* Workflow Bot -- Build Dictionaries ([#3797](https://github.com/streetsidesoftware/cspell-dicts/issues/3797)) ([48557a9](https://github.com/streetsidesoftware/cspell-dicts/commit/48557a9921db821089d032524421ff95940af5d9))
+
+## [4.1.13](https://github.com/streetsidesoftware/cspell-dicts/compare/@cspell/dict-software-terms@4.1.12...@cspell/dict-software-terms@4.1.13) (2024-11-03)
+
+
+### Updates and Bug Fixes
+
+* Add `corepack` to tools ([#3773](https://github.com/streetsidesoftware/cspell-dicts/issues/3773)) ([6130c25](https://github.com/streetsidesoftware/cspell-dicts/commit/6130c25eed04b21e530eceb136528fcd1ac76862))
+
+## [4.1.12](https://github.com/streetsidesoftware/cspell-dicts/compare/@cspell/dict-software-terms@4.1.11...@cspell/dict-software-terms@4.1.12) (2024-10-27)
+
+
+### Updates and Bug Fixes
+
+* Add randomizer to software terms ([#3733](https://github.com/streetsidesoftware/cspell-dicts/issues/3733)) ([0fa691e](https://github.com/streetsidesoftware/cspell-dicts/commit/0fa691ea767f5facfd05418b0fdea6b9f483f0c7))
+* Workflow Bot -- Build Dictionaries ([#3734](https://github.com/streetsidesoftware/cspell-dicts/issues/3734)) ([015ade4](https://github.com/streetsidesoftware/cspell-dicts/commit/015ade4886cbe196a1114a7ef2f8cf0cc5ea1701))
+
+## [4.1.11](https://github.com/streetsidesoftware/cspell-dicts/compare/@cspell/dict-software-terms@4.1.10...@cspell/dict-software-terms@4.1.11) (2024-10-17)
+
+
+### Updates and Bug Fixes
+
+* add all-contributorsrc to software-tools.txt ([#3679](https://github.com/streetsidesoftware/cspell-dicts/issues/3679)) ([d913a05](https://github.com/streetsidesoftware/cspell-dicts/commit/d913a054105dcfe6b61413f938fc490141427c76))
+* add azdo to coding-terms.txt ([#3676](https://github.com/streetsidesoftware/cspell-dicts/issues/3676)) ([de1b59c](https://github.com/streetsidesoftware/cspell-dicts/commit/de1b59ce8b097b533e4e10e84421aeaff309832b))
+* **software-terms.txt:** add routable ([#3697](https://github.com/streetsidesoftware/cspell-dicts/issues/3697)) ([b4b595f](https://github.com/streetsidesoftware/cspell-dicts/commit/b4b595f3023fcb61291423f90f19246ac7f22f2b))
+* Workflow Bot -- Build Dictionaries ([#3681](https://github.com/streetsidesoftware/cspell-dicts/issues/3681)) ([b566ab9](https://github.com/streetsidesoftware/cspell-dicts/commit/b566ab9ab550598d6cfaeb559d71db4b587fdeaa))
+* Workflow Bot -- Build Dictionaries ([#3682](https://github.com/streetsidesoftware/cspell-dicts/issues/3682)) ([b8d41dc](https://github.com/streetsidesoftware/cspell-dicts/commit/b8d41dc2626c70d2bc2502545d3a5a5465dfd2d5))
+* Workflow Bot -- Build Dictionaries ([#3690](https://github.com/streetsidesoftware/cspell-dicts/issues/3690)) ([6e7735b](https://github.com/streetsidesoftware/cspell-dicts/commit/6e7735b371a96854f53ba26f8c687b3aa5db1ed6))
+
+## [4.1.10](https://github.com/streetsidesoftware/cspell-dicts/compare/@cspell/dict-software-terms@4.1.9...@cspell/dict-software-terms@4.1.10) (2024-10-11)
+
+
+### Updates and Bug Fixes
+
+* Update package git url ([#3667](https://github.com/streetsidesoftware/cspell-dicts/issues/3667)) ([629c7d0](https://github.com/streetsidesoftware/cspell-dicts/commit/629c7d0a5e1bacad1d3874b1f8372edc3494ef97))
+
+## [4.1.9](https://github.com/streetsidesoftware/cspell-dicts/compare/@cspell/dict-software-terms@4.1.8...@cspell/dict-software-terms@4.1.9) (2024-10-11)
+
+
+### Updates and Bug Fixes
+
+* Fix the git repository URL ([#3665](https://github.com/streetsidesoftware/cspell-dicts/issues/3665)) ([ac050b6](https://github.com/streetsidesoftware/cspell-dicts/commit/ac050b697d57820109995e92fac5ccc32ced1723))
+
+## [4.1.8](https://github.com/streetsidesoftware/cspell-dicts/compare/@cspell/dict-software-terms@4.1.7...@cspell/dict-software-terms@4.1.8) (2024-10-11)
+
+
+### Updates and Bug Fixes
+
+* add httpbin to software tools ([#3657](https://github.com/streetsidesoftware/cspell-dicts/issues/3657)) ([15ee83f](https://github.com/streetsidesoftware/cspell-dicts/commit/15ee83f10b74661d49362b86ff4f5ca7dcc682e5))
+* Sign all dictionaries ([#3661](https://github.com/streetsidesoftware/cspell-dicts/issues/3661)) ([6b8d560](https://github.com/streetsidesoftware/cspell-dicts/commit/6b8d560cf51a593458ce42bca415859f872cfc97))
+* Workflow Bot -- Build Dictionaries ([#3653](https://github.com/streetsidesoftware/cspell-dicts/issues/3653)) ([0149bcd](https://github.com/streetsidesoftware/cspell-dicts/commit/0149bcda3a4d4834aac0929d51908ac0c67e6890))
+
+## [4.1.7](https://github.com/streetsidesoftware/cspell-dicts/compare/@cspell/dict-software-terms@4.1.6...@cspell/dict-software-terms@4.1.7) (2024-10-06)
+
+
+### Updates and Bug Fixes
+
+* Add some coding terms ([#3641](https://github.com/streetsidesoftware/cspell-dicts/issues/3641)) ([c6cf948](https://github.com/streetsidesoftware/cspell-dicts/commit/c6cf948580631719eb5e0cd8c2fcd7074c18d649))
+* Workflow Bot -- Build Dictionaries ([#3643](https://github.com/streetsidesoftware/cspell-dicts/issues/3643)) ([2955084](https://github.com/streetsidesoftware/cspell-dicts/commit/29550848da659f03ccd1e36b2a66b6a3cfcdc6f4))
+
+## [4.1.6](https://github.com/streetsidesoftware/cspell-dicts/compare/@cspell/dict-software-terms@4.1.5...@cspell/dict-software-terms@4.1.6) (2024-10-05)
+
+
+### Updates and Bug Fixes
+
+* add devcontainer ([#3631](https://github.com/streetsidesoftware/cspell-dicts/issues/3631)) ([917e1c2](https://github.com/streetsidesoftware/cspell-dicts/commit/917e1c218949432b82651fa77f59b0582e7be934))
+* add endregion ([#3625](https://github.com/streetsidesoftware/cspell-dicts/issues/3625)) ([ffe2cff](https://github.com/streetsidesoftware/cspell-dicts/commit/ffe2cffafd45e9992e8c58fc9609a465d714238e))
+* add microcontroller programming terms ([#3634](https://github.com/streetsidesoftware/cspell-dicts/issues/3634)) ([a06e1b0](https://github.com/streetsidesoftware/cspell-dicts/commit/a06e1b03752db2ab5d1e176a492c74bedb54e1da))
+* add more linux desktop software dev terms ([#3638](https://github.com/streetsidesoftware/cspell-dicts/issues/3638)) ([0ec27a9](https://github.com/streetsidesoftware/cspell-dicts/commit/0ec27a9a883c26352dc2d934dbb524dcd30e6470))
+* add testid to the list of coding terms ([#3623](https://github.com/streetsidesoftware/cspell-dicts/issues/3623)) ([1757ae8](https://github.com/streetsidesoftware/cspell-dicts/commit/1757ae89027a613b505eaa9fe4adfb3835fb10ac))
+* linux desktop apps words ([#3632](https://github.com/streetsidesoftware/cspell-dicts/issues/3632)) ([18ddce3](https://github.com/streetsidesoftware/cspell-dicts/commit/18ddce3d0279c0cef6a9bce8611be3ae9149836a))
+* Workflow Bot -- Build Dictionaries ([#3627](https://github.com/streetsidesoftware/cspell-dicts/issues/3627)) ([55b75ea](https://github.com/streetsidesoftware/cspell-dicts/commit/55b75ea1037089c64399b1e68b1d38a16a1fd3f5))
+* Workflow Bot -- Build Dictionaries ([#3635](https://github.com/streetsidesoftware/cspell-dicts/issues/3635)) ([25b0f1d](https://github.com/streetsidesoftware/cspell-dicts/commit/25b0f1df069601c5bc16084afe35ed5b9a75cf5c))
+* Workflow Bot -- Build Dictionaries ([#3636](https://github.com/streetsidesoftware/cspell-dicts/issues/3636)) ([d043d49](https://github.com/streetsidesoftware/cspell-dicts/commit/d043d4931ec8e8f0e980dcf3c5cc1f97155c5486))
+* Workflow Bot -- Build Dictionaries ([#3637](https://github.com/streetsidesoftware/cspell-dicts/issues/3637)) ([c7f9ff3](https://github.com/streetsidesoftware/cspell-dicts/commit/c7f9ff39b920eb148794d3dd0eed531dcab8fb57))
+
+## [4.1.5](https://github.com/streetsidesoftware/cspell-dicts/compare/@cspell/dict-software-terms@4.1.4...@cspell/dict-software-terms@4.1.5) (2024-10-01)
+
+
+### Updates and Bug Fixes
+
+* Add some software-terms words that start with "un" ([#3446](https://github.com/streetsidesoftware/cspell-dicts/issues/3446)) ([1144d9e](https://github.com/streetsidesoftware/cspell-dicts/commit/1144d9e37ca9033d39d4732541f51490f6042a40))
+* Workflow Bot -- Build Dictionaries ([#3619](https://github.com/streetsidesoftware/cspell-dicts/issues/3619)) ([e86c716](https://github.com/streetsidesoftware/cspell-dicts/commit/e86c716d6c8b2bef5c14a5c27e7e6d7628b49ec3))
+
+## [4.1.4](https://github.com/streetsidesoftware/cspell-dicts/compare/@cspell/dict-software-terms@4.1.3...@cspell/dict-software-terms@4.1.4) (2024-09-19)
+
+
+### Updates and Bug Fixes
+
+* A docblock terms to coding terms. ([#3581](https://github.com/streetsidesoftware/cspell-dicts/issues/3581)) ([376f956](https://github.com/streetsidesoftware/cspell-dicts/commit/376f9564a6125717ad2f33c74f38fbaf29667dd6))
+* Add `permutate` to software terms ([#3592](https://github.com/streetsidesoftware/cspell-dicts/issues/3592)) ([696edf8](https://github.com/streetsidesoftware/cspell-dicts/commit/696edf8fc9531c209247795a1d3020b69b5bc162))
+* Workflow Bot -- Build Dictionaries ([#3575](https://github.com/streetsidesoftware/cspell-dicts/issues/3575)) ([86881e3](https://github.com/streetsidesoftware/cspell-dicts/commit/86881e3964568f4ca03e4f5aa3c5635b28f6e14c))
+* Workflow Bot -- Build Dictionaries ([#3593](https://github.com/streetsidesoftware/cspell-dicts/issues/3593)) ([0120f65](https://github.com/streetsidesoftware/cspell-dicts/commit/0120f654e7fccc0a38779331325362a7ea17b8d2))
+
+## [4.1.3](https://github.com/streetsidesoftware/cspell-dicts/compare/@cspell/dict-software-terms@4.1.2...@cspell/dict-software-terms@4.1.3) (2024-08-31)
+
+
+### Updates and Bug Fixes
+
+* Add `stringifyable` to software-terms.txt ([#3558](https://github.com/streetsidesoftware/cspell-dicts/issues/3558)) ([28a11e7](https://github.com/streetsidesoftware/cspell-dicts/commit/28a11e7824c9ffb62254d2ba1717982452ae4f6e))
+* Workflow Bot -- Build Dictionaries ([#3561](https://github.com/streetsidesoftware/cspell-dicts/issues/3561)) ([0c3941c](https://github.com/streetsidesoftware/cspell-dicts/commit/0c3941cd9453caac52519a216ec3666be3d90bf9))
+
+## [4.1.2](https://github.com/streetsidesoftware/cspell-dicts/compare/@cspell/dict-software-terms@4.1.1...@cspell/dict-software-terms@4.1.2) (2024-08-28)
+
+
+### Updates and Bug Fixes
+
+* Add popular packages ([#3525](https://github.com/streetsidesoftware/cspell-dicts/issues/3525)) ([b5eac4b](https://github.com/streetsidesoftware/cspell-dicts/commit/b5eac4b0541c0b93ef2e941de2c9bcae834b8495))
+* Workflow Bot -- Build Dictionaries ([#3527](https://github.com/streetsidesoftware/cspell-dicts/issues/3527)) ([8802a67](https://github.com/streetsidesoftware/cspell-dicts/commit/8802a67f4d267dc19ca38f2e6efc9e9c7450ecad))
+
+## [4.1.1](https://github.com/streetsidesoftware/cspell-dicts/compare/@cspell/dict-software-terms@4.1.0...@cspell/dict-software-terms@4.1.1) (2024-08-27)
+
+
+### Updates and Bug Fixes
+
+* add a couple of coding-terms ([#3518](https://github.com/streetsidesoftware/cspell-dicts/issues/3518)) ([d667ec2](https://github.com/streetsidesoftware/cspell-dicts/commit/d667ec24896eb25f2cb222aa500e86be0604c4e1))
+* Workflow Bot -- Build Dictionaries ([#3519](https://github.com/streetsidesoftware/cspell-dicts/issues/3519)) ([c262e8f](https://github.com/streetsidesoftware/cspell-dicts/commit/c262e8ffce931215ba61d3530abfdace88906ba2))
+
+## [4.1.0](https://github.com/streetsidesoftware/cspell-dicts/compare/@cspell/dict-software-terms@4.0.11...@cspell/dict-software-terms@4.1.0) (2024-08-26)
+
+
+### Features
+
+* add terms from [#3499](https://github.com/streetsidesoftware/cspell-dicts/issues/3499) ([#3507](https://github.com/streetsidesoftware/cspell-dicts/issues/3507)) ([d731a2d](https://github.com/streetsidesoftware/cspell-dicts/commit/d731a2d09ca6f56fa6bea571f268c77fb87f6a14))
+
+
+### Updates and Bug Fixes
+
+* Update software-terms ([#3506](https://github.com/streetsidesoftware/cspell-dicts/issues/3506)) ([5d8c9c5](https://github.com/streetsidesoftware/cspell-dicts/commit/5d8c9c56567417c5ef7de3e29ac62623f27e2a63))
+* Workflow Bot -- Build Dictionaries ([#3509](https://github.com/streetsidesoftware/cspell-dicts/issues/3509)) ([bba69bd](https://github.com/streetsidesoftware/cspell-dicts/commit/bba69bd023a143b797077b2bdaa9cb25f7b232b6))
+* Workflow Bot -- Build Dictionaries ([#3510](https://github.com/streetsidesoftware/cspell-dicts/issues/3510)) ([a684808](https://github.com/streetsidesoftware/cspell-dicts/commit/a684808a8e36f8fb5c5b2d282dc336206b520cd7))
+
+## [4.0.11](https://github.com/streetsidesoftware/cspell-dicts/compare/@cspell/dict-software-terms@4.0.10...@cspell/dict-software-terms@4.0.11) (2024-08-26)
+
+
+### Updates and Bug Fixes
+
+* Add a few coding terms ([#3503](https://github.com/streetsidesoftware/cspell-dicts/issues/3503)) ([7b52c8d](https://github.com/streetsidesoftware/cspell-dicts/commit/7b52c8d6409ba5dbb60e72c2e290ff7e0bf02675))
+* Add computing terms ([#3500](https://github.com/streetsidesoftware/cspell-dicts/issues/3500)) ([215fecb](https://github.com/streetsidesoftware/cspell-dicts/commit/215fecb152c7139930efd4ef75c85a9427dd584c))
+* Workflow Bot -- Build Dictionaries ([#3502](https://github.com/streetsidesoftware/cspell-dicts/issues/3502)) ([8e84a1a](https://github.com/streetsidesoftware/cspell-dicts/commit/8e84a1a7dd297f136b670c772634d476fbc7c762))
+* Workflow Bot -- Build Dictionaries ([#3504](https://github.com/streetsidesoftware/cspell-dicts/issues/3504)) ([e85c3e9](https://github.com/streetsidesoftware/cspell-dicts/commit/e85c3e992835f7b4d797d90546e58fb486c199d0))
+
+## [4.0.10](https://github.com/streetsidesoftware/cspell-dicts/compare/@cspell/dict-software-terms@4.0.9...@cspell/dict-software-terms@4.0.10) (2024-08-23)
+
+
+### Updates and Bug Fixes
+
+* **coding-terms.txt:** add upsert ([#3493](https://github.com/streetsidesoftware/cspell-dicts/issues/3493)) ([34f22dd](https://github.com/streetsidesoftware/cspell-dicts/commit/34f22dd49b02234c04411a280df824f40f27fa55))
+* Workflow Bot -- Build Dictionaries ([#3495](https://github.com/streetsidesoftware/cspell-dicts/issues/3495)) ([187165e](https://github.com/streetsidesoftware/cspell-dicts/commit/187165e0418f79cf6e6d4d6de36a8964d0549ae0))
+
+## [4.0.9](https://github.com/streetsidesoftware/cspell-dicts/compare/@cspell/dict-software-terms@4.0.8...@cspell/dict-software-terms@4.0.9) (2024-08-21)
+
+
+### Updates and Bug Fixes
+
+* Ad un terms to coding ([#3488](https://github.com/streetsidesoftware/cspell-dicts/issues/3488)) ([0d7f860](https://github.com/streetsidesoftware/cspell-dicts/commit/0d7f8605aa16398920d96db1eb09abde1c36dfb5))
+* Add brotli to software-terms.txt ([#3486](https://github.com/streetsidesoftware/cspell-dicts/issues/3486)) ([d456674](https://github.com/streetsidesoftware/cspell-dicts/commit/d4566746245f940f1d3f3f2f53acdae313b56b71))
+* Workflow Bot -- Build Dictionaries ([#3487](https://github.com/streetsidesoftware/cspell-dicts/issues/3487)) ([7e24140](https://github.com/streetsidesoftware/cspell-dicts/commit/7e24140a4d6866e11c14580102211847ad68bd52))
+* Workflow Bot -- Build Dictionaries ([#3489](https://github.com/streetsidesoftware/cspell-dicts/issues/3489)) ([8c400a5](https://github.com/streetsidesoftware/cspell-dicts/commit/8c400a54ab8cca80636452b5c595cc3727ee0341))
+
+## [4.0.8](https://github.com/streetsidesoftware/cspell-dicts/compare/@cspell/dict-software-terms@4.0.7...@cspell/dict-software-terms@4.0.8) (2024-08-21)
+
+
+### Updates and Bug Fixes
+
+* Add some more common software terms ([#3481](https://github.com/streetsidesoftware/cspell-dicts/issues/3481)) ([2e79fa7](https://github.com/streetsidesoftware/cspell-dicts/commit/2e79fa74142d7fcf9c0cad15ff396fb3e1e6eb7a))
+* Workflow Bot -- Build Dictionaries ([#3482](https://github.com/streetsidesoftware/cspell-dicts/issues/3482)) ([e83d0a8](https://github.com/streetsidesoftware/cspell-dicts/commit/e83d0a895762a6a64ab46de83fd3441e0287c8a3))
+
+## [4.0.7](https://github.com/streetsidesoftware/cspell-dicts/compare/@cspell/dict-software-terms@4.0.6...@cspell/dict-software-terms@4.0.7) (2024-08-21)
+
+
+### Updates and Bug Fixes
+
+* Workflow Bot -- Build Dictionaries ([#3478](https://github.com/streetsidesoftware/cspell-dicts/issues/3478)) ([835c809](https://github.com/streetsidesoftware/cspell-dicts/commit/835c809a158c35a2f0bde23bfdad482232c8fbc3))
+
+## [4.0.6](https://github.com/streetsidesoftware/cspell-dicts/compare/@cspell/dict-software-terms@4.0.5...@cspell/dict-software-terms@4.0.6) (2024-08-09)
+
+
+### Updates and Bug Fixes
+
+* Update computing-acronyms.txt ([#3453](https://github.com/streetsidesoftware/cspell-dicts/issues/3453)) ([4814e17](https://github.com/streetsidesoftware/cspell-dicts/commit/4814e175e4e95b610cf42b37031c4d6c6a279496))
+* Update Software Terms README ([#3447](https://github.com/streetsidesoftware/cspell-dicts/issues/3447)) ([6dff0b1](https://github.com/streetsidesoftware/cspell-dicts/commit/6dff0b1b0bb65cc0949a02d79daf541a3905a7a6))
+* Workflow Bot -- Build Dictionaries ([#3449](https://github.com/streetsidesoftware/cspell-dicts/issues/3449)) ([216018a](https://github.com/streetsidesoftware/cspell-dicts/commit/216018a7ac2220bfe653b1d88559afa597c1f0e0))
+* Workflow Bot -- Build Dictionaries ([#3454](https://github.com/streetsidesoftware/cspell-dicts/issues/3454)) ([0cbb972](https://github.com/streetsidesoftware/cspell-dicts/commit/0cbb972f4e2ebb49eb0c750482ea51cfc02c9c22))
+
+## [4.0.5](https://github.com/streetsidesoftware/cspell-dicts/compare/@cspell/dict-software-terms@4.0.4...@cspell/dict-software-terms@4.0.5) (2024-08-06)
+
+
+### Updates and Bug Fixes
+
+* add unsort to the list of software terms ([#3442](https://github.com/streetsidesoftware/cspell-dicts/issues/3442)) ([30a72d8](https://github.com/streetsidesoftware/cspell-dicts/commit/30a72d8d6a2ec30e9a4fcfcf9cfad6e0abe6f7c7))
+* Workflow Bot -- Build Dictionaries ([#3443](https://github.com/streetsidesoftware/cspell-dicts/issues/3443)) ([6d7eb6f](https://github.com/streetsidesoftware/cspell-dicts/commit/6d7eb6fd4340b0b49a688df7cd866780d5d80759))
+
+## [4.0.4](https://github.com/streetsidesoftware/cspell-dicts/compare/@cspell/dict-software-terms@4.0.3...@cspell/dict-software-terms@4.0.4) (2024-08-04)
+
+
+### Updates and Bug Fixes
+
+* add POSIX and fix for `doens't` ([#3436](https://github.com/streetsidesoftware/cspell-dicts/issues/3436)) ([736cbd8](https://github.com/streetsidesoftware/cspell-dicts/commit/736cbd84e216fee438031497a0656a19a962e61f))
+* Workflow Bot -- Build Dictionaries ([#3438](https://github.com/streetsidesoftware/cspell-dicts/issues/3438)) ([8b557a5](https://github.com/streetsidesoftware/cspell-dicts/commit/8b557a57a9faf9de7c4c853497d49cf9e629dbb2))
+
+## [4.0.3](https://github.com/streetsidesoftware/cspell-dicts/compare/@cspell/dict-software-terms@4.0.2...@cspell/dict-software-terms@4.0.3) (2024-07-25)
+
+
+### Updates and Bug Fixes
+
+* Add some full stack related terms ([#3415](https://github.com/streetsidesoftware/cspell-dicts/issues/3415)) ([94b3556](https://github.com/streetsidesoftware/cspell-dicts/commit/94b355671d87cd6a8691c1fbae5cefba9a3a5170))
+
+## [4.0.2](https://github.com/streetsidesoftware/cspell-dicts/compare/@cspell/dict-software-terms@4.0.1...@cspell/dict-software-terms@4.0.2) (2024-07-24)
+
+
+### Updates and Bug Fixes
+
+* Add some software coding terms ([#3409](https://github.com/streetsidesoftware/cspell-dicts/issues/3409)) ([5674a63](https://github.com/streetsidesoftware/cspell-dicts/commit/5674a638f252698cb44ee9ee92fa8de6e0565ae8))
+* Workflow Bot -- Build Dictionaries ([#3411](https://github.com/streetsidesoftware/cspell-dicts/issues/3411)) ([a6adc8f](https://github.com/streetsidesoftware/cspell-dicts/commit/a6adc8f8b867c86b315873b2dc80344d344ad8b5))
+
+## [4.0.1](https://github.com/streetsidesoftware/cspell-dicts/compare/@cspell/dict-software-terms@4.0.0...@cspell/dict-software-terms@4.0.1) (2024-07-23)
+
+
+### Updates and Bug Fixes
+
+* **software-terms:** add softphone(s) ([#3399](https://github.com/streetsidesoftware/cspell-dicts/issues/3399)) ([c41dce5](https://github.com/streetsidesoftware/cspell-dicts/commit/c41dce565a6dbb572c8c49fb45ae766d80e17907))
+* Update software-terms dict ([#3404](https://github.com/streetsidesoftware/cspell-dicts/issues/3404)) ([feb83a7](https://github.com/streetsidesoftware/cspell-dicts/commit/feb83a76b09e19b69b2f81e70262f8dde2f795df))
+* Workflow Bot -- Build Dictionaries ([#3401](https://github.com/streetsidesoftware/cspell-dicts/issues/3401)) ([37c9abe](https://github.com/streetsidesoftware/cspell-dicts/commit/37c9abea15db89c340e7bee20c10cbfb71a9ceb7))
+* Workflow Bot -- Build Dictionaries ([#3405](https://github.com/streetsidesoftware/cspell-dicts/issues/3405)) ([8624bcb](https://github.com/streetsidesoftware/cspell-dicts/commit/8624bcbce44dad3fb99bb0ae446df08f377e1679))
+
+## [4.0.0](https://github.com/streetsidesoftware/cspell-dicts/compare/@cspell/dict-software-terms@3.4.10...@cspell/dict-software-terms@4.0.0) (2024-07-18)
+
+
+### ⚠ BREAKING CHANGES
+
+* Add corrections to software-terms ([#3393](https://github.com/streetsidesoftware/cspell-dicts/issues/3393))
+
+### Features
+
+* Add corrections to software-terms ([#3393](https://github.com/streetsidesoftware/cspell-dicts/issues/3393)) ([1c9b80c](https://github.com/streetsidesoftware/cspell-dicts/commit/1c9b80ca793cf44d82f18409c335181f97ee695a))
+
+
+### Updates and Bug Fixes
+
+* Workflow Bot -- Build Dictionaries ([#3396](https://github.com/streetsidesoftware/cspell-dicts/issues/3396)) ([4702b0c](https://github.com/streetsidesoftware/cspell-dicts/commit/4702b0cbe15a26f994232d8020f28dde2c707fd8))
+
+## [3.4.10](https://github.com/streetsidesoftware/cspell-dicts/compare/@cspell/dict-software-terms@3.4.9...@cspell/dict-software-terms@3.4.10) (2024-07-07)
+
+
+### Updates and Bug Fixes
+
+* Add to softwareTerms dictionary ([#3380](https://github.com/streetsidesoftware/cspell-dicts/issues/3380)) ([fc4b30a](https://github.com/streetsidesoftware/cspell-dicts/commit/fc4b30ad4e443ce837f2a3dbf2e911c38e5f16cc))
+
+## [3.4.9](https://github.com/streetsidesoftware/cspell-dicts/compare/@cspell/dict-software-terms@3.4.8...@cspell/dict-software-terms@3.4.9) (2024-07-01)
+
+
+### Updates and Bug Fixes
+
+* Update software-terms dict ([#3332](https://github.com/streetsidesoftware/cspell-dicts/issues/3332)) ([7a6a7f8](https://github.com/streetsidesoftware/cspell-dicts/commit/7a6a7f8da7408fe5604533259e1b59c6bff5dc37))
+* Workflow Bot -- Build Dictionaries ([#3334](https://github.com/streetsidesoftware/cspell-dicts/issues/3334)) ([0c4b198](https://github.com/streetsidesoftware/cspell-dicts/commit/0c4b19819e267fd668e1a0cf73bc746354b5bea8))
+
+## [3.4.8](https://github.com/streetsidesoftware/cspell-dicts/compare/@cspell/dict-software-terms@3.4.7...@cspell/dict-software-terms@3.4.8) (2024-06-23)
+
+
+### Updates and Bug Fixes
+
+* Add more Hex Speak terms ([#3330](https://github.com/streetsidesoftware/cspell-dicts/issues/3330)) ([9b0005f](https://github.com/streetsidesoftware/cspell-dicts/commit/9b0005f4cb61c107c722632707b985b1d8987db9))
+* Workflow Bot -- Build Dictionaries ([#3331](https://github.com/streetsidesoftware/cspell-dicts/issues/3331)) ([783a59e](https://github.com/streetsidesoftware/cspell-dicts/commit/783a59e2cba2f1c070ab5c83003c20e77f9525bc))
+
+## [3.4.7](https://github.com/streetsidesoftware/cspell-dicts/compare/@cspell/dict-software-terms@3.4.6...@cspell/dict-software-terms@3.4.7) (2024-06-20)
+
+
+### Updates and Bug Fixes
+
+* Update coding-terms.txt ([#3310](https://github.com/streetsidesoftware/cspell-dicts/issues/3310)) ([98e571a](https://github.com/streetsidesoftware/cspell-dicts/commit/98e571abb3757ece639b3a9349016af612be3f05))
+* Workflow Bot -- Build Dictionaries ([#3314](https://github.com/streetsidesoftware/cspell-dicts/issues/3314)) ([5e9d5e3](https://github.com/streetsidesoftware/cspell-dicts/commit/5e9d5e3663e4eb21c683932108453e67d86919c3))
+
+## [3.4.6](https://github.com/streetsidesoftware/cspell-dicts/compare/@cspell/dict-software-terms@3.4.5...@cspell/dict-software-terms@3.4.6) (2024-06-14)
+
+
+### Updates and Bug Fixes
+
+* Update software-terms dictionary (add XFS, CSAT) ([#3286](https://github.com/streetsidesoftware/cspell-dicts/issues/3286)) ([6607508](https://github.com/streetsidesoftware/cspell-dicts/commit/6607508280e9246f93d6749e4e44e1e6abc48ee1))
+* Workflow Bot -- Build Dictionaries ([#3288](https://github.com/streetsidesoftware/cspell-dicts/issues/3288)) ([ccb2c9b](https://github.com/streetsidesoftware/cspell-dicts/commit/ccb2c9b43c404be5f4017828850ca4c32cc0cb43))
+
+## [3.4.5](https://github.com/streetsidesoftware/cspell-dicts/compare/@cspell/dict-software-terms@3.4.4...@cspell/dict-software-terms@3.4.5) (2024-06-11)
+
+
+### Updates and Bug Fixes
+
+* Add tokio ([#3282](https://github.com/streetsidesoftware/cspell-dicts/issues/3282)) ([7c330ee](https://github.com/streetsidesoftware/cspell-dicts/commit/7c330ee8fa9de714b60738f92a483309f261619f))
+
+## [3.4.4](https://github.com/streetsidesoftware/cspell-dicts/compare/@cspell/dict-software-terms@3.4.3...@cspell/dict-software-terms@3.4.4) (2024-06-10)
+
+
+### Updates and Bug Fixes
+
+* add Lexer to Software Terms dictionaries ([#3266](https://github.com/streetsidesoftware/cspell-dicts/issues/3266)) ([341fcb1](https://github.com/streetsidesoftware/cspell-dicts/commit/341fcb138930e97c0149305ec823e45e41b1c39b))
+* add to software-terms dictionary ([#3280](https://github.com/streetsidesoftware/cspell-dicts/issues/3280)) ([adfd62d](https://github.com/streetsidesoftware/cspell-dicts/commit/adfd62dc781818d29a97a25ed4b9b8198bf0c252))
+* Workflow Bot -- Build Dictionaries ([#3279](https://github.com/streetsidesoftware/cspell-dicts/issues/3279)) ([236f6ac](https://github.com/streetsidesoftware/cspell-dicts/commit/236f6ac6fa91867502ded6473a09161cc5955e05))
+
+## [3.4.3](https://github.com/streetsidesoftware/cspell-dicts/compare/@cspell/dict-software-terms@3.4.2...@cspell/dict-software-terms@3.4.3) (2024-06-08)
+
+
+### Updates and Bug Fixes
+
+* Update software-terms dictionary ([#3273](https://github.com/streetsidesoftware/cspell-dicts/issues/3273)) ([c85a832](https://github.com/streetsidesoftware/cspell-dicts/commit/c85a832fc8cb7ab5a737ce5ff711d4f0fbc06dd0))
+* Workflow Bot -- Build Dictionaries ([#3275](https://github.com/streetsidesoftware/cspell-dicts/issues/3275)) ([7569e95](https://github.com/streetsidesoftware/cspell-dicts/commit/7569e956420a7aafa17467b65c0c8a3ab69751f7))
+
+## [3.4.2](https://github.com/streetsidesoftware/cspell-dicts/compare/@cspell/dict-software-terms@3.4.1...@cspell/dict-software-terms@3.4.2) (2024-06-06)
+
+
+### Updates and Bug Fixes
+
+* **software-tools:** add upstash ([#3255](https://github.com/streetsidesoftware/cspell-dicts/issues/3255)) ([3d609fd](https://github.com/streetsidesoftware/cspell-dicts/commit/3d609fd2a0a2d7c899bd0c480d4393ba446aa046))
+* Workflow Bot -- Build Dictionaries ([#3258](https://github.com/streetsidesoftware/cspell-dicts/issues/3258)) ([4e49a5d](https://github.com/streetsidesoftware/cspell-dicts/commit/4e49a5daa2dd862b70cb8dc0de9bcdee9a5a85ac))
+
+## [3.4.1](https://github.com/streetsidesoftware/cspell-dicts/compare/@cspell/dict-software-terms@3.4.0...@cspell/dict-software-terms@3.4.1) (2024-05-31)
+
+
+### Updates and Bug Fixes
+
+* update software-terms dict ([#3242](https://github.com/streetsidesoftware/cspell-dicts/issues/3242)) ([4bca32a](https://github.com/streetsidesoftware/cspell-dicts/commit/4bca32a7d167a46ab4b056bf66c39d9d6210fd71))
+* Workflow Bot -- Build Dictionaries ([#3245](https://github.com/streetsidesoftware/cspell-dicts/issues/3245)) ([6da813f](https://github.com/streetsidesoftware/cspell-dicts/commit/6da813f91399cb061ff722cf55a99a6d6184a464))
+
+## [3.4.0](https://github.com/streetsidesoftware/cspell-dicts/compare/@cspell/dict-software-terms@3.3.26...@cspell/dict-software-terms@3.4.0) (2024-05-30)
+
+
+### Features
+
+* Extend software-terms dictionary w/ cybersecurity terms ([#3237](https://github.com/streetsidesoftware/cspell-dicts/issues/3237)) ([1d8bd69](https://github.com/streetsidesoftware/cspell-dicts/commit/1d8bd69a5f80019e09e77c285e626cdea14fe99c))
+
+
+### Updates and Bug Fixes
+
+* Workflow Bot -- Build Dictionaries ([#3239](https://github.com/streetsidesoftware/cspell-dicts/issues/3239)) ([2e775e9](https://github.com/streetsidesoftware/cspell-dicts/commit/2e775e9bc5474bbf1b1b61fad140787a194c849c))
+
+## [3.3.26](https://github.com/streetsidesoftware/cspell-dicts/compare/@cspell/dict-software-terms@3.3.25...@cspell/dict-software-terms@3.3.26) (2024-05-28)
+
+
+### Updates and Bug Fixes
+
+* Update software-tools dict (add dogstatsd, VPS) ([#3231](https://github.com/streetsidesoftware/cspell-dicts/issues/3231)) ([3bf66d5](https://github.com/streetsidesoftware/cspell-dicts/commit/3bf66d5fabfd6925bf8f15c2a934e94cf56bbf42))
+* Workflow Bot -- Build Dictionaries ([#3233](https://github.com/streetsidesoftware/cspell-dicts/issues/3233)) ([77ce4fd](https://github.com/streetsidesoftware/cspell-dicts/commit/77ce4fd2d8eb7b379b701c63614a5cfb565c03ec))
+
+## [3.3.25](https://github.com/streetsidesoftware/cspell-dicts/compare/@cspell/dict-software-terms@3.3.24...@cspell/dict-software-terms@3.3.25) (2024-05-26)
+
+
+### Updates and Bug Fixes
+
+* update software-terms dict ([#3221](https://github.com/streetsidesoftware/cspell-dicts/issues/3221)) ([9bb9747](https://github.com/streetsidesoftware/cspell-dicts/commit/9bb9747677de331b175723a9e71144513adb5b0e))
+* Workflow Bot -- Build Dictionaries ([#3224](https://github.com/streetsidesoftware/cspell-dicts/issues/3224)) ([5b32489](https://github.com/streetsidesoftware/cspell-dicts/commit/5b3248981ddba36972c1673bc3fa36d027b07151))
+
+## [3.3.24](https://github.com/streetsidesoftware/cspell-dicts/compare/@cspell/dict-software-terms@3.3.23...@cspell/dict-software-terms@3.3.24) (2024-05-24)
+
+
+### Updates and Bug Fixes
+
+* update software-terms dict ([#3203](https://github.com/streetsidesoftware/cspell-dicts/issues/3203)) ([bdf10d1](https://github.com/streetsidesoftware/cspell-dicts/commit/bdf10d17f26cb94a4128155376a4f3c94679dffd))
+* Workflow Bot -- Build Dictionaries ([#3216](https://github.com/streetsidesoftware/cspell-dicts/issues/3216)) ([1f48312](https://github.com/streetsidesoftware/cspell-dicts/commit/1f483125280d927cfb94faca357f5b18baa5c29c))
+
+## [3.3.23](https://github.com/streetsidesoftware/cspell-dicts/compare/@cspell/dict-software-terms@3.3.22...@cspell/dict-software-terms@3.3.23) (2024-05-22)
+
+
+### Updates and Bug Fixes
+
+* add back a few terms ([#3187](https://github.com/streetsidesoftware/cspell-dicts/issues/3187)) ([74340db](https://github.com/streetsidesoftware/cspell-dicts/commit/74340dbf3844307772cf1d58f23f6671380b7345))
+* update software-terms dict ([#3183](https://github.com/streetsidesoftware/cspell-dicts/issues/3183)) ([0d235ca](https://github.com/streetsidesoftware/cspell-dicts/commit/0d235ca3b04c242edc132c9b113442354c4b314e))
+* Workflow Bot -- Build Dictionaries ([#3185](https://github.com/streetsidesoftware/cspell-dicts/issues/3185)) ([4db7ac2](https://github.com/streetsidesoftware/cspell-dicts/commit/4db7ac294d819233196226cf692e6438fc59462c))
+
+## [3.3.22](https://github.com/streetsidesoftware/cspell-dicts/compare/@cspell/dict-software-terms@3.3.21...@cspell/dict-software-terms@3.3.22) (2024-05-19)
+
+
+### Updates and Bug Fixes
+
+* Add more coding terms ([#3172](https://github.com/streetsidesoftware/cspell-dicts/issues/3172)) ([0e737b4](https://github.com/streetsidesoftware/cspell-dicts/commit/0e737b4048957774f353f4690588403a4c126294))
+* Workflow Bot -- Build Dictionaries ([#3174](https://github.com/streetsidesoftware/cspell-dicts/issues/3174)) ([0f13b2b](https://github.com/streetsidesoftware/cspell-dicts/commit/0f13b2b983fc00f83789795a34f432b9d439152e))
+
+## [3.3.21](https://github.com/streetsidesoftware/cspell-dicts/compare/@cspell/dict-software-terms@3.3.20...@cspell/dict-software-terms@3.3.21) (2024-05-18)
+
+
+### Updates and Bug Fixes
+
+* Add some common coding terms ([#3165](https://github.com/streetsidesoftware/cspell-dicts/issues/3165)) ([99a10bc](https://github.com/streetsidesoftware/cspell-dicts/commit/99a10bc436b1b1b6e1922b8a152aff33a6f09ada))
+* Workflow Bot -- Build Dictionaries ([#3167](https://github.com/streetsidesoftware/cspell-dicts/issues/3167)) ([a94f73b](https://github.com/streetsidesoftware/cspell-dicts/commit/a94f73b4ff267e143d97208cf1c93b2b772bea51))
+
+## [3.3.20](https://github.com/streetsidesoftware/cspell-dicts/compare/@cspell/dict-software-terms@3.3.19...@cspell/dict-software-terms@3.3.20) (2024-04-18)
+
+
+### Updates and Bug Fixes
+
+* add `iife` to TypeScript dictionary ([#3124](https://github.com/streetsidesoftware/cspell-dicts/issues/3124)) ([ce98df3](https://github.com/streetsidesoftware/cspell-dicts/commit/ce98df375754f2be85c1dbfea512e5dfabb7089f))
+* Workflow Bot -- Build Dictionaries ([#3126](https://github.com/streetsidesoftware/cspell-dicts/issues/3126)) ([8870263](https://github.com/streetsidesoftware/cspell-dicts/commit/8870263e94f9076c7cd250d303e6d171dc7a878d))
+
+## [3.3.19](https://github.com/streetsidesoftware/cspell-dicts/compare/@cspell/dict-software-terms@3.3.18...@cspell/dict-software-terms@3.3.19) (2024-04-15)
+
+
+### Updates and Bug Fixes
+
+* add "kanban" to software terms ([#3107](https://github.com/streetsidesoftware/cspell-dicts/issues/3107)) ([eb488c5](https://github.com/streetsidesoftware/cspell-dicts/commit/eb488c5adf76621f44ba47cc4517e2065375c5cb))
+* Workflow Bot -- Build Dictionaries ([#3110](https://github.com/streetsidesoftware/cspell-dicts/issues/3110)) ([d5ee05d](https://github.com/streetsidesoftware/cspell-dicts/commit/d5ee05dfa61e68f8703db822ca9d074a4625d945))
+
+## [3.3.18](https://github.com/streetsidesoftware/cspell-dicts/compare/@cspell/dict-software-terms@3.3.17...@cspell/dict-software-terms@3.3.18) (2024-02-09)
+
+
+### Updates and Bug Fixes
+
+* add typeahead to software terms ([#2978](https://github.com/streetsidesoftware/cspell-dicts/issues/2978)) ([3e8d2ed](https://github.com/streetsidesoftware/cspell-dicts/commit/3e8d2ed3fad0f35d57d791d10dd71f94e7bfea86))
+* Workflow Bot -- Build Dictionaries ([#2982](https://github.com/streetsidesoftware/cspell-dicts/issues/2982)) ([28d4083](https://github.com/streetsidesoftware/cspell-dicts/commit/28d4083c238b330772186ff7bb25f8ace97e8e61))
+
+## [3.3.17](https://github.com/streetsidesoftware/cspell-dicts/compare/@cspell/dict-software-terms@3.3.16...@cspell/dict-software-terms@3.3.17) (2024-01-29)
+
+
+### Updates and Bug Fixes
+
+* **software-terms:** voxel ([#2959](https://github.com/streetsidesoftware/cspell-dicts/issues/2959)) ([dc4644f](https://github.com/streetsidesoftware/cspell-dicts/commit/dc4644f83e4b1b14e99c89995b59e3b246daa281))
+* Workflow Bot -- Build Dictionaries ([#2963](https://github.com/streetsidesoftware/cspell-dicts/issues/2963)) ([e5b5682](https://github.com/streetsidesoftware/cspell-dicts/commit/e5b5682e112fe8f888a399016932972fc7763aa2))
+
+## [3.3.16](https://github.com/streetsidesoftware/cspell-dicts/compare/@cspell/dict-software-terms@3.3.15...@cspell/dict-software-terms@3.3.16) (2024-01-04)
+
+
+### Updates and Bug Fixes
+
+* Add back some terms that got missed ([#2884](https://github.com/streetsidesoftware/cspell-dicts/issues/2884)) ([34af92a](https://github.com/streetsidesoftware/cspell-dicts/commit/34af92aabd97768e7bfdeb99f24c5ac1f54426ab))
+* Add diarization ([#2888](https://github.com/streetsidesoftware/cspell-dicts/issues/2888)) ([865d13d](https://github.com/streetsidesoftware/cspell-dicts/commit/865d13d9b7ab685192450ac58b836fbd2017ec27))
+* Workflow Bot -- Build Dictionaries ([#2887](https://github.com/streetsidesoftware/cspell-dicts/issues/2887)) ([7e6a88b](https://github.com/streetsidesoftware/cspell-dicts/commit/7e6a88b7ade0656ce02d2aa0200a976848e711d5))
+* Workflow Bot -- Build Dictionaries ([#2889](https://github.com/streetsidesoftware/cspell-dicts/issues/2889)) ([614618f](https://github.com/streetsidesoftware/cspell-dicts/commit/614618fb1e03e7094a4ffae0a0b56fdfbf3089f2))
+
+## [3.3.15](https://github.com/streetsidesoftware/cspell-dicts/compare/@cspell/dict-software-terms@3.3.14...@cspell/dict-software-terms@3.3.15) (2023-12-25)
+
+
+### Updates and Bug Fixes
+
+* add `evaluatable` to software terms ([#2848](https://github.com/streetsidesoftware/cspell-dicts/issues/2848)) ([bce7b40](https://github.com/streetsidesoftware/cspell-dicts/commit/bce7b40b60988f60d22b2b19df2be4898ceb9705))
+* Workflow Bot -- Build Dictionaries ([#2849](https://github.com/streetsidesoftware/cspell-dicts/issues/2849)) ([4615e6e](https://github.com/streetsidesoftware/cspell-dicts/commit/4615e6e42f2a0806416ff45a6279e6e3fd6544b6))
+
+## [3.3.14](https://github.com/streetsidesoftware/cspell-dicts/compare/@cspell/dict-software-terms@3.3.13...@cspell/dict-software-terms@3.3.14) (2023-12-20)
+
+
+### Updates and Bug Fixes
+
+* Add some Gitleaks, Slack API, and Trivy terms ([#2824](https://github.com/streetsidesoftware/cspell-dicts/issues/2824)) ([5207c1f](https://github.com/streetsidesoftware/cspell-dicts/commit/5207c1f360fbd970fe9794675daf132bc0581ff1))
+* Add some missing IT & software related terms ([#2820](https://github.com/streetsidesoftware/cspell-dicts/issues/2820)) ([936d4be](https://github.com/streetsidesoftware/cspell-dicts/commit/936d4bebbe8f7e8ba33956dcbd5016c48e2c1967))
+* Workflow Bot -- Build Dictionaries ([#2826](https://github.com/streetsidesoftware/cspell-dicts/issues/2826)) ([2dddf85](https://github.com/streetsidesoftware/cspell-dicts/commit/2dddf855327d88af4134e0a609fc91b74c45efb6))
+* Workflow Bot -- Build Dictionaries ([#2829](https://github.com/streetsidesoftware/cspell-dicts/issues/2829)) ([b4ecdae](https://github.com/streetsidesoftware/cspell-dicts/commit/b4ecdaeca74e12036f812c714411f61918fab5c7))
+
+## [3.3.13](https://github.com/streetsidesoftware/cspell-dicts/compare/@cspell/dict-software-terms@3.3.12...@cspell/dict-software-terms@3.3.13) (2023-12-17)
+
+
+### Updates and Bug Fixes
+
+* Add "datasources" to software-terms dict ([#2814](https://github.com/streetsidesoftware/cspell-dicts/issues/2814)) ([a2dcbe9](https://github.com/streetsidesoftware/cspell-dicts/commit/a2dcbe9312666b3fcbba9fd03436dd219d272d0b))
+* Workflow Bot -- Build Dictionaries ([#2816](https://github.com/streetsidesoftware/cspell-dicts/issues/2816)) ([ef4df30](https://github.com/streetsidesoftware/cspell-dicts/commit/ef4df300933961d90e048cfcb89c3ca9bd3c9630))
+
+## [3.3.12](https://github.com/streetsidesoftware/cspell-dicts/compare/@cspell/dict-software-terms@3.3.11...@cspell/dict-software-terms@3.3.12) (2023-12-07)
+
+
+### Updates and Bug Fixes
+
+* added a few software words, mostly quality attributes. ([#2782](https://github.com/streetsidesoftware/cspell-dicts/issues/2782)) ([b3fb2f0](https://github.com/streetsidesoftware/cspell-dicts/commit/b3fb2f02997695104e2cd350b47496aab3aa8a2e))
+* Workflow Bot -- Build Dictionaries ([#2784](https://github.com/streetsidesoftware/cspell-dicts/issues/2784)) ([f9698b3](https://github.com/streetsidesoftware/cspell-dicts/commit/f9698b3adbdf5a7638c2e8f668b448d6f9ec5f7a))
+
+## [3.3.11](https://github.com/streetsidesoftware/cspell-dicts/compare/@cspell/dict-software-terms@3.3.10...@cspell/dict-software-terms@3.3.11) (2023-11-28)
+
+
+### Updates and Bug Fixes
+
+* Add a few common software terms ([#2738](https://github.com/streetsidesoftware/cspell-dicts/issues/2738)) ([153ceb2](https://github.com/streetsidesoftware/cspell-dicts/commit/153ceb286019f9b5741c12d3caf0e86ce866c67b))
+* add Pseudocode ([#2745](https://github.com/streetsidesoftware/cspell-dicts/issues/2745)) ([0d16908](https://github.com/streetsidesoftware/cspell-dicts/commit/0d1690847bf6745d67f281b9cae29f57e98a4222))
+* Workflow Bot -- Build Dictionaries ([#2740](https://github.com/streetsidesoftware/cspell-dicts/issues/2740)) ([f79bf45](https://github.com/streetsidesoftware/cspell-dicts/commit/f79bf4552b87c0e8826f9542358b84ede0ff32da))
+* Workflow Bot -- Build Dictionaries ([#2750](https://github.com/streetsidesoftware/cspell-dicts/issues/2750)) ([ab999a5](https://github.com/streetsidesoftware/cspell-dicts/commit/ab999a5c714dc6c003029daae1a06df0beb47a61))
+
+## [3.3.10](https://github.com/streetsidesoftware/cspell-dicts/compare/@cspell/dict-software-terms@3.3.9...@cspell/dict-software-terms@3.3.10) (2023-11-19)
+
+
+### Updates and Bug Fixes
+
+* add pbcopy and pbpaste to software terms ([#2729](https://github.com/streetsidesoftware/cspell-dicts/issues/2729)) ([7729782](https://github.com/streetsidesoftware/cspell-dicts/commit/772978293171e926591d4a36549dcc6b11b74557))
+* add various terms ([#2734](https://github.com/streetsidesoftware/cspell-dicts/issues/2734)) ([1058a2c](https://github.com/streetsidesoftware/cspell-dicts/commit/1058a2c5a53bd9aa72958943062d4d454678c2f5))
+* Workflow Bot -- Build Dictionaries ([#2731](https://github.com/streetsidesoftware/cspell-dicts/issues/2731)) ([c8fcb7c](https://github.com/streetsidesoftware/cspell-dicts/commit/c8fcb7c9b5e3adf1f977634ca81802d69d20749b))
+
 ## [3.3.9](https://github.com/streetsidesoftware/cspell-dicts/compare/@cspell/dict-software-terms@3.3.8...@cspell/dict-software-terms@3.3.9) (2023-10-22)
 
 

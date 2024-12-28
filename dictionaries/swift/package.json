@@ -1,9 +1,10 @@
 {
   "name": "@cspell/dict-swift",
-  "version": "2.0.1",
+  "version": "2.0.4",
   "description": "Swift dictionary for cspell.",
   "publishConfig": {
-    "access": "public"
+    "access": "public",
+    "provenance": true
   },
   "exports": {
     ".": "./cspell-ext.json",
@@ -12,13 +13,14 @@
   },
   "scripts": {
     "build": "cross-env NODE_OPTIONS=--max_old_space_size=8192 cspell-tools-cli compile \"src/swift.txt\" -o .",
-    "test": "shx head -n 1000 \"src/swift.txt\" | cspell -v -c ./cspell-ext.json \"--local=*\" \"--languageId=swift\" stdin",
+    "test": "shx head -n 1000 \"src/swift.txt\" | cspell -c ./cspell-ext.json \"--locale=*\" \"--languageId=swift\" stdin",
     "prepublishOnly": "echo pre-publish",
     "prepare:dictionary": "pnpm run build"
   },
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/streetsidesoftware/cspell-dicts.git"
+    "url": "https://github.com/streetsidesoftware/cspell-dicts",
+    "directory": "dictionaries/swift"
   },
   "keywords": [
     "cspell",
@@ -28,7 +30,7 @@
     "dictionary",
     "spelling"
   ],
-  "author": "Jason Dent",
+  "author": "Street Side Software <support@streetsidesoftware.nl>",
   "license": "MIT",
   "bugs": {
     "url": "https://github.com/streetsidesoftware/cspell-dicts/issues"

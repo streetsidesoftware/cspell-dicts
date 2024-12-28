@@ -1,9 +1,10 @@
 {
   "name": "@cspell/dict-city-names-finland",
-  "version": "3.0.0",
+  "version": "3.0.4",
   "description": "City area names in Finland for cspell.",
   "publishConfig": {
-    "access": "public"
+    "access": "public",
+    "provenance": true
   },
   "exports": {
     ".": "./cspell-ext.json",
@@ -12,13 +13,14 @@
   },
   "scripts": {
     "build": "cspell-tools-cli compile --keep-raw-case --use-legacy-splitter src/city-names-finland.txt --no-compress -o ./dict",
-    "test": "shx head -n 100 src/city-names-finland.txt | cspell -v -c ./cspell-ext.json --local=* --languageId=* stdin",
+    "test": "shx head -n 100 src/city-names-finland.txt | cspell -c ./cspell-ext.json --locale=* --languageId=* stdin",
     "prepublishOnly": "echo pre-publish",
     "prepare:dictionary": "pnpm run build"
   },
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/streetsidesoftware/cspell-dicts.git"
+    "url": "https://github.com/streetsidesoftware/cspell-dicts",
+    "directory": "dictionaries/city-names-finland"
   },
   "keywords": [
     "cspell",
@@ -27,7 +29,7 @@
     "dictionary",
     "spelling"
   ],
-  "author": "Jason Dent",
+  "author": "Street Side Software <support@streetsidesoftware.nl>",
   "license": "MIT",
   "bugs": {
     "url": "https://github.com/streetsidesoftware/cspell-dicts/issues"

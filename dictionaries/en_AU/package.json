@@ -1,9 +1,10 @@
 {
   "name": "@cspell/dict-en-au",
-  "version": "1.0.6",
+  "version": "1.0.19",
   "description": "Australian English dictionary for cspell.",
   "publishConfig": {
-    "access": "public"
+    "access": "public",
+    "provenance": true
   },
   "exports": {
     ".": "./cspell-ext.json",
@@ -19,12 +20,13 @@
     "gz": "cspell-tools-cli gzip \"*.trie\"",
     "prepare:dictionary": "pnpm gz",
     "prepublishOnly": "echo pre-publish",
-    "test-text": "cspell -v -c ./cspell-ext.json --local=en-au --languageId=* \"tests/*.txt\"",
+    "test-text": "cspell -c ./cspell-ext.json --locale=en-au --languageId=* \"tests/*.txt\"",
     "test": "pnpm run test-text"
   },
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/streetsidesoftware/cspell-dicts.git"
+    "url": "https://github.com/streetsidesoftware/cspell-dicts",
+    "directory": "dictionaries/en_AU"
   },
   "keywords": [
     "cspell",
@@ -34,7 +36,7 @@
     "dictionary",
     "spelling"
   ],
-  "author": "Jason Dent",
+  "author": "Street Side Software <support@streetsidesoftware.nl>",
   "license": "LGPL-3.0",
   "bugs": {
     "url": "https://github.com/streetsidesoftware/cspell-dicts/issues"
@@ -49,7 +51,7 @@
     "test": "tests"
   },
   "devDependencies": {
-    "@cspell/dict-en-shared": "workspace:*",
+    "@cspell/dict-en-shared": "workspace:^",
     "aoo-mozilla-en-dict": "github:marcoagpinto/aoo-mozilla-en-dict"
   }
 }

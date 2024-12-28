@@ -1,9 +1,10 @@
 {
   "name": "@cspell/dict-vim",
-  "version": "1.0.1",
+  "version": "1.0.7",
   "description": "Vim dictionary for cspell.",
   "publishConfig": {
-    "access": "public"
+    "access": "public",
+    "provenance": true
   },
   "exports": {
     ".": "./cspell-ext.json",
@@ -12,13 +13,14 @@
   },
   "scripts": {
     "build": "cross-env NODE_OPTIONS=--max_old_space_size=8192 cspell-tools-cli build",
-    "test": "head -n 1000 \"src/vim.txt\" | cspell \"--local=*\" \"--languageId=*\" stdin",
+    "test": "head -n 1000 \"src/vim.txt\" | cspell \"--locale=*\" \"--languageId=*\" stdin",
     "prepublishOnly": "echo OK",
     "prepare:dictionary": "pnpm run build"
   },
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/streetsidesoftware/cspell-dicts.git"
+    "url": "https://github.com/streetsidesoftware/cspell-dicts",
+    "directory": "dictionaries/vim"
   },
   "keywords": [
     "cspell",
@@ -27,7 +29,10 @@
     "dictionary",
     "spelling"
   ],
-  "author": "Kevin Traver and Street Side Software",
+  "author": "Street Side Software <support@streetsidesoftware.nl>",
+  "contributors": [
+    "Kevin Traver"
+  ],
   "license": "MIT",
   "bugs": {
     "url": "https://github.com/streetsidesoftware/cspell-dicts/issues"

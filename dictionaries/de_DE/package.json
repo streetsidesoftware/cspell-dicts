@@ -1,9 +1,10 @@
 {
   "name": "@cspell/dict-de-de",
-  "version": "3.2.0",
+  "version": "4.0.3",
   "description": "German dictionary for cspell.",
   "publishConfig": {
-    "access": "public"
+    "access": "public",
+    "provenance": true
   },
   "exports": {
     ".": "./cspell-ext.json",
@@ -14,9 +15,9 @@
     "build": "cspell-tools-cli build && pnpm gz",
     "conditional-build": "pnpm run sync && cspell-tools-cli build --conditional && pnpm gz",
     "sync": "pnpm cpy \"node_modules/dictionary-de/**\" src/hunspell",
-    "test-de": "hunspell-reader words -n 1000 \"src/hunspell/index.dic\" | cspell -v -c ./cspell-ext.json --local=de --languageId=* stdin",
-    "test-de-old": "hunspell-reader words -n 1000 \"src/German_de_DE.dic\" | cspell -v -c ./cspell-ext.json --local=de --languageId=* stdin",
-    "test-samples": "cspell -v -c ./cspell-ext.json --local=de,en \"samples/**\"",
+    "test-de": "pipe-cmds \"hunspell-reader words -n 1000 \\\"src/hunspell/index.dic\\\"\" \"cspell -c ./cspell-ext.json --locale=de --languageId=* stdin\"",
+    "test-de-old": "pipe-cmds \"hunspell-reader words -n 1000 \\\"src/German_de_DE.dic\\\"\" \"cspell -c ./cspell-ext.json --locale=de --languageId=* stdin\"",
+    "test-samples": "cspell -c ./cspell-ext.json --locale=de,en \"samples/**\"",
     "test": "pnpm run test-de && pnpm run test-samples && pnpm run test-de-old",
     "gz": "cspell-tools-cli gzip \"*.trie\"",
     "prepare:dictionary": "pnpm gz",
@@ -24,7 +25,8 @@
   },
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/streetsidesoftware/cspell-dicts.git"
+    "url": "https://github.com/streetsidesoftware/cspell-dicts",
+    "directory": "dictionaries/de_DE"
   },
   "keywords": [
     "cspell",
@@ -33,8 +35,8 @@
     "dictionary",
     "spelling"
   ],
-  "author": "Jason Dent",
-  "license": "GPL-3.0-or-later",
+  "author": "Street Side Software <support@streetsidesoftware.nl>",
+  "license": "LGPL-3.0",
   "bugs": {
     "url": "https://github.com/streetsidesoftware/cspell-dicts/issues"
   },

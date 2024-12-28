@@ -1,9 +1,10 @@
 {
   "name": "@cspell/dict-sl-si",
-  "version": "1.0.5",
+  "version": "1.0.8",
   "description": "Slovenian dictionary for cspell.",
   "publishConfig": {
-    "access": "public"
+    "access": "public",
+    "provenance": true
   },
   "exports": {
     ".": "./cspell-ext.json",
@@ -15,13 +16,14 @@
     "conditional-build": "pnpm run build --conditional",
     "prepare:dictionary": "cspell-tools-cli gzip \"*.trie\"",
     "prepublishOnly": "echo pre-publish",
-    "test-dict": "hunspell-reader words -n 1000 \"./src/hunspell-french-dictionaries-v7.0/fr-classique.dic\" | cspell -v -c ./cspell-ext.json \"--local=fr\" \"--languageId=*\" stdin",
-    "test-text": "cspell -v -c ./cspell-ext.json --local=sl \"samples/**\"",
+    "test-dict": "pipe-cmds \"hunspell-reader words -n 1000 \\\"./src/sl_SI.dic\\\"\" \"cspell -c ./cspell-ext.json \\\"--locale=sl\\\" \\\"--languageId=*\\\" stdin\"",
+    "test-text": "cspell -c ./cspell-ext.json --locale=sl \"samples/**\"",
     "test": "pnpm run test-dict && pnpm run test-text"
   },
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/streetsidesoftware/cspell-dicts.git"
+    "url": "https://github.com/streetsidesoftware/cspell-dicts",
+    "directory": "dictionaries/sl_SI"
   },
   "keywords": [
     "cspell",
@@ -31,7 +33,7 @@
     "dictionary",
     "spelling"
   ],
-  "author": "Street Side Software",
+  "author": "Street Side Software <support@streetsidesoftware.nl>",
   "license": "LGPL-3.0-or-later",
   "bugs": {
     "url": "https://github.com/streetsidesoftware/cspell-dicts/issues"

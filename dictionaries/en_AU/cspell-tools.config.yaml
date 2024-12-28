@@ -8,6 +8,8 @@ targets:
       - ./src/hunspell-en_AU-large/en_AU-large.dic
       - ./node_modules/@cspell/dict-en-shared/src/shared-additional-words.txt
     format: trie3
-    targetDirectory: "."
+    targetDirectory: '.'
     generateNonStrict: true
+    excludeWordsFrom:
+      - node_modules/@cspell/dict-en-shared/src/exclude-words.txt
 checksumFile: true

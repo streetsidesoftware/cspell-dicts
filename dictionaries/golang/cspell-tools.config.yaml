@@ -1,7 +1,7 @@
 # yaml-language-server: $schema=https://raw.githubusercontent.com/streetsidesoftware/cspell/main/packages/cspell-tools/cspell-tools.config.schema.json
 
 targets:
-  - name: "go"
+  - name: 'go'
     sources:
       - filename: src/go.txt
         split: true
@@ -19,6 +19,6 @@ targets:
           - src/go-words/go.txt # Use the source for whole words when splitting.
       - filename: src/allowed-terms.txt
     format: plaintext
-    targetDirectory: "./dict"
+    targetDirectory: './dict'
     generateNonStrict: false
     compress: false

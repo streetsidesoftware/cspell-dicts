@@ -1,0 +1,14 @@
+{
+    "version": "0.2",
+    "files": [
+        "**/*.{md,txt}"
+    ],
+    "import": [
+        "./cspell-ext.json"
+    ],
+    "overrides": [{
+        "filename":  "**/*.{md,txt}",
+        "dictionaries": ["terraform"]
+    }],
+    "words": ["tfvars"]
+}

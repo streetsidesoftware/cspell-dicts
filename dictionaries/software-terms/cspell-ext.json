@@ -3,6 +3,7 @@
     "name": "Software Terms",
     "readonly": true,
     "description": "Software terms dictionary for cspell.",
+    "import": ["./cspell-corrections.yaml"],
     "dictionaryDefinitions": [
         {
             // changing the name is a breaking change.
@@ -28,12 +29,19 @@
             "name": "computing-acronyms",
             "path": "./dict/computing-acronyms.txt",
             "description": "Common acronyms related to computing."
+        },
+        {
+            "name": "coding-compound-terms",
+            "path": "./dict/coding-compound-terms.txt",
+            "description": "Common codding compound terms."
         }
     ],
     // Enable `softwareTerms` by default if this extension is imported.
     "dictionaries": [
         "softwareTerms",
+        "coding-compound-terms",
         "computing-acronyms",
+        "software-term-suggestions",
         // "networking-terms" - is not included by default because it is very specific.
         "web-services"
     ]

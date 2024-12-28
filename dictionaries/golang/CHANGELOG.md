@@ -3,6 +3,107 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+## [6.0.18](https://github.com/streetsidesoftware/cspell-dicts/compare/@cspell/dict-golang@6.0.17...@cspell/dict-golang@6.0.18) (2024-12-27)
+
+
+### Updates and Bug Fixes
+
+* Workflow Bot -- Build Dictionaries ([#3935](https://github.com/streetsidesoftware/cspell-dicts/issues/3935)) ([2b9ec7f](https://github.com/streetsidesoftware/cspell-dicts/commit/2b9ec7fb86c55c20e1719816fb6ec33b661e48d7))
+
+## [6.0.17](https://github.com/streetsidesoftware/cspell-dicts/compare/@cspell/dict-golang@6.0.16...@cspell/dict-golang@6.0.17) (2024-11-22)
+
+
+### Updates and Bug Fixes
+
+* update golang words to Go 1.23 ([#3829](https://github.com/streetsidesoftware/cspell-dicts/issues/3829)) ([503098f](https://github.com/streetsidesoftware/cspell-dicts/commit/503098f057842152b02f6a2b145b50a7116712bc))
+
+## [6.0.16](https://github.com/streetsidesoftware/cspell-dicts/compare/@cspell/dict-golang@6.0.15...@cspell/dict-golang@6.0.16) (2024-10-11)
+
+
+### Updates and Bug Fixes
+
+* Update package git url ([#3667](https://github.com/streetsidesoftware/cspell-dicts/issues/3667)) ([629c7d0](https://github.com/streetsidesoftware/cspell-dicts/commit/629c7d0a5e1bacad1d3874b1f8372edc3494ef97))
+
+## [6.0.15](https://github.com/streetsidesoftware/cspell-dicts/compare/@cspell/dict-golang@6.0.14...@cspell/dict-golang@6.0.15) (2024-10-11)
+
+
+### Updates and Bug Fixes
+
+* Fix the git repository URL ([#3665](https://github.com/streetsidesoftware/cspell-dicts/issues/3665)) ([ac050b6](https://github.com/streetsidesoftware/cspell-dicts/commit/ac050b697d57820109995e92fac5ccc32ced1723))
+
+## [6.0.14](https://github.com/streetsidesoftware/cspell-dicts/compare/@cspell/dict-golang@6.0.13...@cspell/dict-golang@6.0.14) (2024-10-11)
+
+
+### Updates and Bug Fixes
+
+* Sign all dictionaries ([#3661](https://github.com/streetsidesoftware/cspell-dicts/issues/3661)) ([6b8d560](https://github.com/streetsidesoftware/cspell-dicts/commit/6b8d560cf51a593458ce42bca415859f872cfc97))
+
+## [6.0.13](https://github.com/streetsidesoftware/cspell-dicts/compare/@cspell/dict-golang@6.0.12...@cspell/dict-golang@6.0.13) (2024-10-06)
+
+
+### Updates and Bug Fixes
+
+* Workflow Bot -- Build Dictionaries ([#3643](https://github.com/streetsidesoftware/cspell-dicts/issues/3643)) ([2955084](https://github.com/streetsidesoftware/cspell-dicts/commit/29550848da659f03ccd1e36b2a66b6a3cfcdc6f4))
+
+## [6.0.12](https://github.com/streetsidesoftware/cspell-dicts/compare/@cspell/dict-golang@6.0.11...@cspell/dict-golang@6.0.12) (2024-08-26)
+
+
+### Updates and Bug Fixes
+
+* Workflow Bot -- Build Dictionaries ([#3510](https://github.com/streetsidesoftware/cspell-dicts/issues/3510)) ([a684808](https://github.com/streetsidesoftware/cspell-dicts/commit/a684808a8e36f8fb5c5b2d282dc336206b520cd7))
+
+## [6.0.11](https://github.com/streetsidesoftware/cspell-dicts/compare/@cspell/dict-golang@6.0.10...@cspell/dict-golang@6.0.11) (2024-08-21)
+
+
+### Updates and Bug Fixes
+
+* Workflow Bot -- Build Dictionaries ([#3482](https://github.com/streetsidesoftware/cspell-dicts/issues/3482)) ([e83d0a8](https://github.com/streetsidesoftware/cspell-dicts/commit/e83d0a895762a6a64ab46de83fd3441e0287c8a3))
+
+## [6.0.10](https://github.com/streetsidesoftware/cspell-dicts/compare/@cspell/dict-golang@6.0.9...@cspell/dict-golang@6.0.10) (2024-08-21)
+
+
+### Updates and Bug Fixes
+
+* Workflow Bot -- Build Dictionaries ([#3478](https://github.com/streetsidesoftware/cspell-dicts/issues/3478)) ([835c809](https://github.com/streetsidesoftware/cspell-dicts/commit/835c809a158c35a2f0bde23bfdad482232c8fbc3))
+
+## [6.0.9](https://github.com/streetsidesoftware/cspell-dicts/compare/@cspell/dict-golang@6.0.8...@cspell/dict-golang@6.0.9) (2024-05-22)
+
+
+### Updates and Bug Fixes
+
+* add back a few terms ([#3187](https://github.com/streetsidesoftware/cspell-dicts/issues/3187)) ([74340db](https://github.com/streetsidesoftware/cspell-dicts/commit/74340dbf3844307772cf1d58f23f6671380b7345))
+* update golang dictionary ([#3179](https://github.com/streetsidesoftware/cspell-dicts/issues/3179)) ([5b9887a](https://github.com/streetsidesoftware/cspell-dicts/commit/5b9887a309984a88d03e36a14d7e60fdc3aea7a6))
+* Workflow Bot -- Build Dictionaries ([#3185](https://github.com/streetsidesoftware/cspell-dicts/issues/3185)) ([4db7ac2](https://github.com/streetsidesoftware/cspell-dicts/commit/4db7ac294d819233196226cf692e6438fc59462c))
+
+## [6.0.8](https://github.com/streetsidesoftware/cspell-dicts/compare/@cspell/dict-golang@6.0.7...@cspell/dict-golang@6.0.8) (2024-05-19)
+
+
+### Updates and Bug Fixes
+
+* Workflow Bot -- Build Dictionaries ([#3174](https://github.com/streetsidesoftware/cspell-dicts/issues/3174)) ([0f13b2b](https://github.com/streetsidesoftware/cspell-dicts/commit/0f13b2b983fc00f83789795a34f432b9d439152e))
+
+## [6.0.7](https://github.com/streetsidesoftware/cspell-dicts/compare/@cspell/dict-golang@6.0.6...@cspell/dict-golang@6.0.7) (2024-05-18)
+
+
+### Updates and Bug Fixes
+
+* Workflow Bot -- Build Dictionaries ([#3167](https://github.com/streetsidesoftware/cspell-dicts/issues/3167)) ([a94f73b](https://github.com/streetsidesoftware/cspell-dicts/commit/a94f73b4ff267e143d97208cf1c93b2b772bea51))
+
+## [6.0.6](https://github.com/streetsidesoftware/cspell-dicts/compare/@cspell/dict-golang@6.0.5...@cspell/dict-golang@6.0.6) (2024-05-16)
+
+
+### Updates and Bug Fixes
+
+* add "GOGC" to golang dictionary  ([#3153](https://github.com/streetsidesoftware/cspell-dicts/issues/3153)) ([f7ca301](https://github.com/streetsidesoftware/cspell-dicts/commit/f7ca301c0cd15880601bb33183c5be01f3d1804a))
+* Workflow Bot -- Build Dictionaries ([#3155](https://github.com/streetsidesoftware/cspell-dicts/issues/3155)) ([dcddd8a](https://github.com/streetsidesoftware/cspell-dicts/commit/dcddd8a1f7922c6b7666dca664c3c1f15f2e187f))
+
+## [6.0.5](https://github.com/streetsidesoftware/cspell-dicts/compare/@cspell/dict-golang@6.0.4...@cspell/dict-golang@6.0.5) (2023-11-19)
+
+
+### Updates and Bug Fixes
+
+* Workflow Bot -- Build Dictionaries ([#2735](https://github.com/streetsidesoftware/cspell-dicts/issues/2735)) ([ef0afb1](https://github.com/streetsidesoftware/cspell-dicts/commit/ef0afb1582802bd7705cb62ae8c6c6f939921b30))
+
 ## [6.0.4](https://github.com/streetsidesoftware/cspell-dicts/compare/@cspell/dict-golang@6.0.3...@cspell/dict-golang@6.0.4) (2023-10-18)
 
 

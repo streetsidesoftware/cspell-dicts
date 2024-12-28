@@ -1,9 +1,10 @@
 {
   "name": "@cspell/dict-nb-no",
-  "version": "2.0.0",
+  "version": "2.0.3",
   "description": "Norwegian Bokmål dictionary for cspell.",
   "publishConfig": {
-    "access": "public"
+    "access": "public",
+    "provenance": true
   },
   "exports": {
     ".": "./cspell-ext.json",
@@ -14,7 +15,7 @@
     "build": "cspell-tools-cli build && pnpm gz",
     "build:conditional": "cspell-tools-cli build --conditional && pnpm gz",
     "gz": "cspell-tools-cli gzip \"*.trie\"",
-    "test-words": "hunspell-reader words -n 1000 \"src/nb.dic\" | cspell -v -c ./cspell-ext.json \"--local=nb\" \"--languageId=*\" stdin",
+    "test-words": "pipe-cmds \"hunspell-reader words -n 1000 \\\"src/nb.dic\\\"\" \"cspell -c ./cspell-ext.json \\\"--locale=nb\\\" \\\"--languageId=*\\\" stdin\"",
     "test-samples": "cspell \"samples/**\"",
     "test": "pnpm run test-words && pnpm run test-samples",
     "prepublishOnly": "echo pre-publish",
@@ -22,7 +23,8 @@
   },
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/streetsidesoftware/cspell-dicts.git"
+    "url": "https://github.com/streetsidesoftware/cspell-dicts",
+    "directory": "dictionaries/nb_NO"
   },
   "keywords": [
     "cspell",
@@ -32,7 +34,7 @@
     "dictionary",
     "spelling"
   ],
-  "author": "Jason Dent",
+  "author": "Street Side Software <support@streetsidesoftware.nl>",
   "license": "GPL-3.0-or-later",
   "bugs": {
     "url": "https://github.com/streetsidesoftware/cspell-dicts/issues"

@@ -1,0 +1,52 @@
+{
+  "name": "@cspell/dict-grc",
+  "version": "1.0.4",
+  "description": "Ancient Greek dictionary for cspell.",
+  "publishConfig": {
+    "access": "public",
+    "provenance": true
+  },
+  "exports": {
+    ".": "./cspell-ext.json",
+    "./cspell": "./cspell-ext.json",
+    "./cspell-ext.json": "./cspell-ext.json"
+  },
+  "scripts": {
+    "build": "cspell-tools-cli build",
+    "test": "npm run test:words && npm run test:samples",
+    "test:samples": "cspell samples",
+    "test:words": "pipe-cmds \"hunspell-reader words -n 1000 -m 0 \\\"src/hunspell/grc_GR.aff\\\"\" \"cspell -c ./cspell-ext.json \\\"--locale=grc\\\" \\\"--languageId=*\\\" stdin\"",
+    "prepublishOnly": "echo OK",
+    "prepare:dictionary": "echo OK"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/streetsidesoftware/cspell-dicts",
+    "directory": "dictionaries/grc_GR"
+  },
+  "keywords": [
+    "cspell",
+    "cspell-ext",
+    "grc",
+    "Ancient Greek",
+    "dictionary",
+    "spelling"
+  ],
+  "author": "Street Side Software <support@streetsidesoftware.nl>",
+  "contributors": [],
+  "license": "GPL-3.0",
+  "bugs": {
+    "url": "https://github.com/streetsidesoftware/cspell-dicts/issues"
+  },
+  "homepage": "https://github.com/streetsidesoftware/cspell-dicts/blob/main/dictionaries/grc#readme",
+  "devDependencies": {},
+  "dependencies": {},
+  "files": [
+    "dict/grc.trie",
+    "cspell-ext.json",
+    "LICENSE",
+    "src/hunspell/LICENSE",
+    "*.js",
+    "*.d.ts"
+  ]
+}

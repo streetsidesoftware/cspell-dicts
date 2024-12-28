@@ -1,9 +1,10 @@
 {
   "name": "@cspell/dict-win32",
-  "version": "2.0.2",
+  "version": "2.0.6",
   "description": "Win32 dictionary for cspell.",
   "publishConfig": {
-    "access": "public"
+    "access": "public",
+    "provenance": true
   },
   "exports": {
     ".": "./cspell-ext.json",
@@ -11,16 +12,17 @@
     "./cspell-ext.json": "./cspell-ext.json"
   },
   "scripts": {
-    "build": "cross-env NODE_OPTIONS=--max_old_space_size=8192 cspell-tools-cli compile --keep-raw-case \"src/win32.txt\" -o .",
+    "build": "cspell-tools-cli build",
     "test": "pnpm run test-src && pnpm run test-samples",
-    "test-src": "shx head -n 10000 \"src/win32.txt\" | cspell -v -c ./cspell.json \"--local=*\" stdin",
+    "test-src": "shx head -n 10000 \"src/win32.txt\" | cspell -c ./cspell.json \"--locale=*\" stdin",
     "test-samples": "cspell samples/**",
     "prepublishOnly": "echo pre-publish",
     "prepare:dictionary": "pnpm run build"
   },
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/streetsidesoftware/cspell-dicts.git"
+    "url": "https://github.com/streetsidesoftware/cspell-dicts",
+    "directory": "dictionaries/win32"
   },
   "keywords": [
     "cspell",
@@ -29,7 +31,7 @@
     "dictionary",
     "spelling"
   ],
-  "author": "Jason Dent",
+  "author": "Street Side Software <support@streetsidesoftware.nl>",
   "license": "MIT",
   "bugs": {
     "url": "https://github.com/streetsidesoftware/cspell-dicts/issues"

@@ -2,6 +2,12 @@
     "version": "0.2",
     "files": ["**/*.{md,txt}"],
     "dictionaries": ["en-common-misspellings"],
-    "ignorePaths": ["cspell*.json"],
+    "words": [
+        "creativecommons",
+        "compatiblelicenses",
+        "sublicensable",
+        "waivable"
+    ],
+    "ignorePaths": ["cspell*.json", "CHANGELOG.md"],
     "import": ["./cspell-ext.json"]
 }

@@ -59,7 +59,7 @@ export default class extends Generator {
             },
             {
                 type: 'input',
-                name: 'local',
+                name: 'locale',
                 message:
                     'Language locale, example: "en,en-US" for English and English US, "fr" for French, or use "*" for programming language dictionaries.',
                 default: '*',

@@ -1,9 +1,10 @@
 {
   "name": "@cspell/dict-php",
-  "version": "4.0.4",
+  "version": "4.0.13",
   "description": "Php dictionary for cspell.",
   "publishConfig": {
-    "access": "public"
+    "access": "public",
+    "provenance": true
   },
   "exports": {
     ".": "./cspell-ext.json",
@@ -12,13 +13,14 @@
   },
   "scripts": {
     "build": "cspell-tools-cli build",
-    "test": "shx cat \"php.txt\" | cspell -v -c ./cspell-ext.json --local=* --languageId=php stdin",
+    "test": "shx cat \"php.txt\" | cspell -c ./cspell-ext.json --locale=* --languageId=php stdin",
     "prepublishOnly": "echo pre-publish",
     "prepare:dictionary": "pnpm run build"
   },
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/streetsidesoftware/cspell-dicts.git"
+    "url": "https://github.com/streetsidesoftware/cspell-dicts",
+    "directory": "dictionaries/php"
   },
   "keywords": [
     "cspell",
@@ -26,7 +28,7 @@
     "dictionary",
     "spelling"
   ],
-  "author": "Jason Dent",
+  "author": "Street Side Software <support@streetsidesoftware.nl>",
   "license": "MIT",
   "bugs": {
     "url": "https://github.com/streetsidesoftware/cspell-dicts/issues"

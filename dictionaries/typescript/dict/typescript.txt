@@ -4,8 +4,10 @@
 AAGUID
 ANGLETYPE
 ANISOTROPY
+AnimationEvent
 Array
 ArrayBuffer
+Astro
 AsyncFunction
 Atomics
 BYTES_PER_ELEMENT
@@ -22,8 +24,10 @@ Boolean
 CDATA
 CLOSEPATH
 CSSOM
+ClipboardEvent
 Cmac
 Collator
+CompositionEvent
 Convolve
 Convolver
 Curveto
@@ -38,6 +42,7 @@ Date
 DateTimeFormat
 Destructuring
 Dirs
+DragEvent
 Dtls
 Dtmf
 E
@@ -49,7 +54,9 @@ Ecdsa
 Elvis
 Endian
 Error
+ErrorEvent
 EvalError
+Event
 FEBLEND
 FECOLORMATRIX
 FECOMPONENTTRANSFER
@@ -62,6 +69,8 @@ Float32Array
 Float32x4
 Float64Array
 Float64x2
+FocusEvent
+FormDataEvent
 Formatonkey
 Framebuffer
 Function
@@ -72,6 +81,7 @@ Generator
 GeneratorFunction
 Geolocation
 Geterr
+GlobalEventHandlersEventMap
 HARDWARECHANGE
 HTMLBR
 HTMLD
@@ -88,6 +98,7 @@ INCR
 INUSE
 Indeterm
 Infinity
+InputEvent
 Int16Array
 Int16x8
 Int32Array
@@ -100,6 +111,7 @@ JSON
 JSX
 KEYERR
 Kashida
+KeyboardEvent
 Keyframe
 Keyframes
 LENGTHADJUST
@@ -145,6 +157,7 @@ Map
 Math
 Mipmap
 Miterlimit
+MouseEvent
 Moveto
 NEGATIVE_INFINITY
 NFKC
@@ -171,9 +184,11 @@ ParallelArray
 Parameterf
 Parameteri
 PluralRules
+PointerEvent
 Polyline
 Predecrement
 Progi
+ProgressEvent
 Promise
 Properties
 Proxy
@@ -212,6 +227,7 @@ SVGT
 SVGURI
 Saveto
 Sdes
+SecurityPolicyViolationEvent
 Serializer
 Set
 SharedArrayBuffer
@@ -222,12 +238,16 @@ StopIteration
 String
 Stylesheet
 Subdownload
+SubmitEvent
 Symbol
 SyntaxError
 TEXTPATH
 TSX
+TouchEvent
+TransitionEvent
 TypeError
 TypedArray
+UIEvent
 UNCACHED
 URIError
 USERSPACEONUSE
@@ -248,6 +268,7 @@ WWAN
 WeakMap
 WeakSet
 WebAssembly
+WheelEvent
 XDPI
 XMAXYMAX
 XMAXYMID
@@ -297,6 +318,7 @@ actual
 actuator
 actuators
 add
+addEventListener
 added
 addition
 additional
@@ -501,8 +523,10 @@ beforecopy
 beforecut
 beforedeactivate
 beforeend
+beforeinput
 beforepaste
 beforeprint
+beforetoggle
 beforeunload
 begin
 beginning
@@ -518,6 +542,7 @@ big
 bigint
 binary
 bind
+bindgen
 binding
 bindings
 biquad
@@ -765,6 +790,9 @@ composing
 composite
 compositing
 composition
+compositionend
+compositionstart
+compositionupdate
 compound
 compressed
 compression
@@ -814,7 +842,9 @@ contains
 content
 contents
 context
+contextlost
 contextmenu
+contextrestored
 contextual
 continue
 continuous
@@ -873,12 +903,14 @@ cursor
 curve
 curveto
 custom
+cut
 cycle
 darken
 dash
 dasharray
 dashoffset
 data
+dataavailable
 database
 datachannel
 datalist
@@ -1327,6 +1359,7 @@ formatToParts
 formatonkey
 formats
 formatting
+formdata
 forms
 forward
 forwards
@@ -1529,6 +1562,7 @@ iframe
 ignore
 ignoreCase
 ignored
+iife
 imag
 image
 imagedata
@@ -2101,8 +2135,10 @@ onbeforeactivate
 onbeforecopy
 onbeforecut
 onbeforedeactivate
+onbeforeinput
 onbeforepaste
 onbeforeprint
+onbeforetoggle
 onbeforeunload
 onblocked
 onblur
@@ -2127,11 +2163,14 @@ oncompassneedscalibration
 oncomplete
 onconnect
 onconnectionstatechange
+oncontextlost
 oncontextmenu
+oncontextrestored
 oncontrollerchange
 oncopy
 oncuechange
 oncut
+ondataavailable
 ondatachannel
 ondblclick
 ondeactivate
@@ -2164,6 +2203,7 @@ onfinish
 onfocus
 onfocusin
 onfocusout
+onformdata
 onfulfilled
 onfullscreenchange
 onfullscreenerror
@@ -2273,6 +2313,7 @@ onresourcetimingbufferfull
 onresult
 onresume
 onscroll
+onscrollend
 onsecuritypolicyviolation
 onseeked
 onseeking
@@ -2284,6 +2325,7 @@ onshippingaddresschange
 onshippingoptionchange
 onshow
 onsignalingstatechange
+onslotchange
 onsoundend
 onsoundstart
 onsourceclose
@@ -2339,8 +2381,12 @@ onvrdisplaypointerunrestricted
 onvrdisplaypresentchange
 onwaiting
 onwaitingforkey
+onwebkitanimationend
+onwebkitanimationiteration
+onwebkitanimationstart
 onwebkitfullscreenchange
 onwebkitfullscreenerror
+onwebkittransitionend
 onwheel
 onzoom
 opacity
@@ -2745,6 +2791,7 @@ remote
 remotecandidate
 removal
 remove
+removeEventListener
 removed
 removesourcebuffer
 removetrack
@@ -2871,6 +2918,7 @@ script
 scripts
 scroll
 scrollbars
+scrollend
 scrolling
 sctp
 sdes
@@ -3025,6 +3073,7 @@ sleep
 slice
 slope
 slot
+slotchange
 slottable
 small
 smart
@@ -3550,9 +3599,13 @@ web
 webdriver
 webgl
 webkit
+webkitanimationend
+webkitanimationiteration
+webkitanimationstart
 webkitdirectory
 webkitfullscreenchange
 webkitfullscreenerror
+webkittransitionend
 webnotifications
 webview
 week

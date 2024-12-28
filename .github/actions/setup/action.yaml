@@ -4,9 +4,9 @@ inputs:
   node-version:
     required: false
     description: The version of Node to use.
-    default: "18.x"
+    default: '18.x'
 runs:
-  using: "composite"
+  using: 'composite'
   steps:
     - name: Quick Setup
       uses: ./.github/actions/quick-setup

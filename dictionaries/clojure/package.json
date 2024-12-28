@@ -1,9 +1,10 @@
 {
   "name": "@cspell/dict-clojure",
-  "version": "2.0.2",
+  "version": "2.0.5",
   "description": "Clojure dictionary for cspell.",
   "publishConfig": {
-    "access": "public"
+    "access": "public",
+    "provenance": true
   },
   "exports": {
     ".": "./cspell-ext.json",
@@ -12,13 +13,14 @@
   },
   "scripts": {
     "build": "cspell-tools-cli build",
-    "test": "shx head -n 1000 \"src/clojure.txt\" | cspell -v -c ./cspell-ext.json \"--local=en\" \"--languageId=clojure\" stdin",
+    "test": "shx head -n 1000 \"src/clojure.txt\" | cspell -c ./cspell-ext.json \"--locale=en\" \"--languageId=clojure\" stdin",
     "prepublishOnly": "echo pre-publish",
     "prepare:dictionary": "pnpm run build"
   },
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/streetsidesoftware/cspell-dicts.git"
+    "url": "https://github.com/streetsidesoftware/cspell-dicts",
+    "directory": "dictionaries/clojure"
   },
   "keywords": [
     "cspell",
@@ -28,7 +30,7 @@
     "dictionary",
     "spelling"
   ],
-  "author": "Jason Dent",
+  "author": "Street Side Software <support@streetsidesoftware.nl>",
   "license": "MIT",
   "bugs": {
     "url": "https://github.com/streetsidesoftware/cspell-dicts/issues"

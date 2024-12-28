@@ -1,0 +1,26 @@
+{
+    "id": "flutter",
+    "version": "0.2",
+    "name": "flutter",
+    "description": "Flutter dictionary for cspell.",
+    "readonly": true,
+    "dictionaryDefinitions": [
+        {
+            "name": "flutter",
+            "path": "./flutter.txt.gz",
+            "description": "Flutter dictionary for cspell."
+        }
+    ],
+    "dictionaries": [],
+    "enableFiletypes": ["dart"],
+    "languageSettings": [
+        {
+            "languageId": "dart",
+            "locale": "*",
+            "includeRegExpList": [],
+            "ignoreRegExpList": [],
+            "patterns": [],
+            "dictionaries": ["flutter"]
+        }
+    ]
+}

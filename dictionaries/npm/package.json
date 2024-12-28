@@ -1,9 +1,10 @@
 {
   "name": "@cspell/dict-npm",
-  "version": "5.0.12",
+  "version": "5.1.20",
   "description": "Dictionary of common NPM packages for cspell.",
   "publishConfig": {
-    "access": "public"
+    "access": "public",
+    "provenance": true
   },
   "exports": {
     ".": "./cspell-ext.json",
@@ -11,14 +12,18 @@
     "./cspell-ext.json": "./cspell-ext.json"
   },
   "scripts": {
-    "build": "cspell-tools-cli compile --split \"src/npm.txt\" --no-compress -o ./dict -m npm",
-    "test": "shx head -n 100 \"src/npm.txt\" | cspell -v -c ./cspell-ext.json \"--local=*\" \"--languageId=javascript\" stdin",
+    "#update-dictionary": "# Update dictionary will download the latest list of npm packages and build the dictionary.",
+    "update-dictionary": "pnpm update-npm-package-list --silent && pnpm run build",
+    "build": "cspell-tools-cli build",
+    "test": "cspell samples/list.txt -c ./cspell-ext.json \"--locale=*\" --languageId=javascript",
+    "update-npm-package-list": "./scripts/update-npm-package-list.mjs",
     "prepublishOnly": "echo pre-publish",
     "prepare:dictionary": "pnpm run build"
   },
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/streetsidesoftware/cspell-dicts.git"
+    "url": "https://github.com/streetsidesoftware/cspell-dicts",
+    "directory": "dictionaries/npm"
   },
   "keywords": [
     "cspell",
@@ -27,7 +32,7 @@
     "dictionary",
     "spelling"
   ],
-  "author": "Jason Dent",
+  "author": "Street Side Software <support@streetsidesoftware.nl>",
   "license": "MIT",
   "bugs": {
     "url": "https://github.com/streetsidesoftware/cspell-dicts/issues"

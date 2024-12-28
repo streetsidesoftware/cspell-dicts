@@ -1,0 +1,18 @@
+// cSpell Settings
+{
+    "id": "people-names",
+    "version": "0.2",
+    "name": "People Names",
+    "description": "People Names dictionary for cspell.",
+    "readonly": true,
+    // List of dictionary files to add to the global list of dictionaries
+    "dictionaryDefinitions": [
+        {
+            "name": "people-names",
+            "path": "./dict/people-names.txt",
+            "description": "People Names dictionary for cspell."
+        }
+    ],
+    // Dictionaries to always be used.
+    "dictionaries": ["people-names"]
+}

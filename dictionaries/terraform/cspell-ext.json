@@ -1,0 +1,26 @@
+{
+    "id": "terraform",
+    "version": "0.2",
+    "name": "Terraform",
+    "description": "Terraform dictionary for cspell.",
+    "readonly": true,
+    "dictionaryDefinitions": [
+        {
+            "name": "terraform",
+            "path": "./dict/terraform.txt",
+            "description": "Terraform dictionary for cspell."
+        }
+    ],
+    "languageSettings": [
+        {
+            "languageId": "terraform,tfvars",
+            "locale": "*",
+            "includeRegExpList": [],
+            "ignoreRegExpList": [],
+            "patterns": [],
+            "dictionaries": ["terraform"]
+        }
+    ],
+    "enableFiletypes": ["terraform"],
+    "overrides": [{ "filename": "**/*.tf", "languageId": "terraform" }]
+}

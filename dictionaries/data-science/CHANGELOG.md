@@ -1,5 +1,53 @@
 # Change Log
 
+## [2.0.5](https://github.com/streetsidesoftware/cspell-dicts/compare/@cspell/dict-data-science@2.0.4...@cspell/dict-data-science@2.0.5) (2024-10-11)
+
+
+### Updates and Bug Fixes
+
+* Update package git url ([#3667](https://github.com/streetsidesoftware/cspell-dicts/issues/3667)) ([629c7d0](https://github.com/streetsidesoftware/cspell-dicts/commit/629c7d0a5e1bacad1d3874b1f8372edc3494ef97))
+
+## [2.0.4](https://github.com/streetsidesoftware/cspell-dicts/compare/@cspell/dict-data-science@2.0.3...@cspell/dict-data-science@2.0.4) (2024-10-11)
+
+
+### Updates and Bug Fixes
+
+* Fix the git repository URL ([#3665](https://github.com/streetsidesoftware/cspell-dicts/issues/3665)) ([ac050b6](https://github.com/streetsidesoftware/cspell-dicts/commit/ac050b697d57820109995e92fac5ccc32ced1723))
+
+## [2.0.3](https://github.com/streetsidesoftware/cspell-dicts/compare/@cspell/dict-data-science@2.0.2...@cspell/dict-data-science@2.0.3) (2024-10-11)
+
+
+### Updates and Bug Fixes
+
+* Sign all dictionaries ([#3661](https://github.com/streetsidesoftware/cspell-dicts/issues/3661)) ([6b8d560](https://github.com/streetsidesoftware/cspell-dicts/commit/6b8d560cf51a593458ce42bca415859f872cfc97))
+
+## [2.0.2](https://github.com/streetsidesoftware/cspell-dicts/compare/@cspell/dict-data-science@2.0.1...@cspell/dict-data-science@2.0.2) (2024-10-07)
+
+
+### Updates and Bug Fixes
+
+* add llm terms ([#3647](https://github.com/streetsidesoftware/cspell-dicts/issues/3647)) ([a6afaf3](https://github.com/streetsidesoftware/cspell-dicts/commit/a6afaf30b7f2c04f471234b625d8877bbfb09f77))
+* Workflow Bot -- Build Dictionaries ([#3649](https://github.com/streetsidesoftware/cspell-dicts/issues/3649)) ([e785068](https://github.com/streetsidesoftware/cspell-dicts/commit/e7850682033573787480ec9c1ca235daa12d73bd))
+
+## [2.0.1](https://github.com/streetsidesoftware/cspell-dicts/compare/@cspell/dict-data-science@2.0.0...@cspell/dict-data-science@2.0.1) (2024-05-23)
+
+
+### Updates and Bug Fixes
+
+* update data-science dict ([#3199](https://github.com/streetsidesoftware/cspell-dicts/issues/3199)) ([9bacde3](https://github.com/streetsidesoftware/cspell-dicts/commit/9bacde3e6b885036ee80e5d7b5d45014c09f9f3f))
+* Workflow Bot -- Build Dictionaries ([#3205](https://github.com/streetsidesoftware/cspell-dicts/issues/3205)) ([8a56dba](https://github.com/streetsidesoftware/cspell-dicts/commit/8a56dba2acc59b9b1345d7657cd7aefcb4932824))
+
+## [2.0.0](https://github.com/streetsidesoftware/cspell-dicts/compare/@cspell/dict-data-science@1.0.11...@cspell/dict-data-science@2.0.0) (2024-01-02)
+
+
+### ⚠ BREAKING CHANGES
+
+* Split data-science terms into multiple dictionaries ([#2874](https://github.com/streetsidesoftware/cspell-dicts/issues/2874))
+
+### Features
+
+* Split data-science terms into multiple dictionaries ([#2874](https://github.com/streetsidesoftware/cspell-dicts/issues/2874)) ([93a8e09](https://github.com/streetsidesoftware/cspell-dicts/commit/93a8e09727819c4a6e0576fc6d0b65e307805da8))
+
 ## [1.0.11](https://github.com/streetsidesoftware/cspell-dicts/compare/@cspell/dict-data-science@1.0.10...@cspell/dict-data-science@1.0.11) (2023-08-21)
 
 

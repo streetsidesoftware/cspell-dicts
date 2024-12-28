@@ -3,6 +3,50 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+## [4.1.8](https://github.com/streetsidesoftware/cspell-dicts/compare/@cspell/dict-bash@4.1.7...@cspell/dict-bash@4.1.8) (2024-10-11)
+
+
+### Updates and Bug Fixes
+
+* Update package git url ([#3667](https://github.com/streetsidesoftware/cspell-dicts/issues/3667)) ([629c7d0](https://github.com/streetsidesoftware/cspell-dicts/commit/629c7d0a5e1bacad1d3874b1f8372edc3494ef97))
+
+## [4.1.7](https://github.com/streetsidesoftware/cspell-dicts/compare/@cspell/dict-bash@4.1.6...@cspell/dict-bash@4.1.7) (2024-10-11)
+
+
+### Updates and Bug Fixes
+
+* Fix the git repository URL ([#3665](https://github.com/streetsidesoftware/cspell-dicts/issues/3665)) ([ac050b6](https://github.com/streetsidesoftware/cspell-dicts/commit/ac050b697d57820109995e92fac5ccc32ced1723))
+
+## [4.1.6](https://github.com/streetsidesoftware/cspell-dicts/compare/@cspell/dict-bash@4.1.5...@cspell/dict-bash@4.1.6) (2024-10-11)
+
+
+### Updates and Bug Fixes
+
+* Sign all dictionaries ([#3661](https://github.com/streetsidesoftware/cspell-dicts/issues/3661)) ([6b8d560](https://github.com/streetsidesoftware/cspell-dicts/commit/6b8d560cf51a593458ce42bca415859f872cfc97))
+
+## [4.1.5](https://github.com/streetsidesoftware/cspell-dicts/compare/@cspell/dict-bash@4.1.4...@cspell/dict-bash@4.1.5) (2024-10-01)
+
+
+### Updates and Bug Fixes
+
+* Recognize bash strict mode arguments ([#3616](https://github.com/streetsidesoftware/cspell-dicts/issues/3616)) ([ab2077d](https://github.com/streetsidesoftware/cspell-dicts/commit/ab2077d5274d7ce2a19e2751c60d678a7ca28fb5))
+
+## [4.1.4](https://github.com/streetsidesoftware/cspell-dicts/compare/@cspell/dict-bash@4.1.3...@cspell/dict-bash@4.1.4) (2024-08-27)
+
+
+### Updates and Bug Fixes
+
+* update to aws, bash, and terraform dictionaries ([#3511](https://github.com/streetsidesoftware/cspell-dicts/issues/3511)) ([60ce322](https://github.com/streetsidesoftware/cspell-dicts/commit/60ce322b1efc569cc44df8ef1d2718fb9dccd2f1))
+* Workflow Bot -- Build Dictionaries ([#3513](https://github.com/streetsidesoftware/cspell-dicts/issues/3513)) ([dd62160](https://github.com/streetsidesoftware/cspell-dicts/commit/dd621602b82bf6fbaab9a927614d440642a9bc13))
+
+## [4.1.3](https://github.com/streetsidesoftware/cspell-dicts/compare/@cspell/dict-bash@4.1.2...@cspell/dict-bash@4.1.3) (2023-12-05)
+
+
+### Updates and Bug Fixes
+
+* Add OPTARG to bash-words.txt ([#2758](https://github.com/streetsidesoftware/cspell-dicts/issues/2758)) ([0d4dc9c](https://github.com/streetsidesoftware/cspell-dicts/commit/0d4dc9cfae3550cc489bd8d41172cae91983e490))
+* Workflow Bot -- Build Dictionaries ([#2765](https://github.com/streetsidesoftware/cspell-dicts/issues/2765)) ([237283b](https://github.com/streetsidesoftware/cspell-dicts/commit/237283b3b6c48f3c0f44736d1743094934e6eb60))
+
 ## [4.1.2](https://github.com/streetsidesoftware/cspell-dicts/compare/@cspell/dict-bash@4.1.1...@cspell/dict-bash@4.1.2) (2023-09-27)
 
 

@@ -1,0 +1,101 @@
+{
+  "name": "@cspell/dict-cspell-bundle",
+  "version": "1.0.19",
+  "description": "Dictionaries included with the CSpell Command Line tool.",
+  "private": false,
+  "publishConfig": {
+    "access": "public",
+    "provenance": true
+  },
+  "exports": {
+    ".": "./cspell-ext.json",
+    "./cspell": "./cspell-ext.json",
+    "./cspell-ext.json": "./cspell-ext.json"
+  },
+  "scripts": {
+    "build": "node ./scripts/build.mjs && prettier cspell-ext.json --write ",
+    "test": "cspell --no-default-configuration .",
+    "prepublishOnly": "echo OK",
+    "prepare:dictionary": "pnpm run build"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/streetsidesoftware/cspell-dicts"
+  },
+  "keywords": [
+    "cspell",
+    "cspell-ext",
+    "CSpell Bundle",
+    "dictionary",
+    "spelling"
+  ],
+  "author": "Street Side Software",
+  "contributors": [],
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/streetsidesoftware/cspell-dicts/issues"
+  },
+  "homepage": "https://github.com/streetsidesoftware/cspell-dicts/blob/main/dictionaries/cspell#readme",
+  "devDependencies": {},
+  "dependencies": {
+    "@cspell/dict-ada": "workspace:^",
+    "@cspell/dict-al": "workspace:^",
+    "@cspell/dict-aws": "workspace:^",
+    "@cspell/dict-bash": "workspace:^",
+    "@cspell/dict-companies": "workspace:^",
+    "@cspell/dict-cpp": "workspace:^",
+    "@cspell/dict-cryptocurrencies": "workspace:^",
+    "@cspell/dict-csharp": "workspace:^",
+    "@cspell/dict-css": "workspace:^",
+    "@cspell/dict-dart": "workspace:^",
+    "@cspell/dict-django": "workspace:^",
+    "@cspell/dict-docker": "workspace:^",
+    "@cspell/dict-dotnet": "workspace:^",
+    "@cspell/dict-elixir": "workspace:^",
+    "@cspell/dict-en-common-misspellings": "workspace:^",
+    "@cspell/dict-en_us": "workspace:^",
+    "@cspell/dict-filetypes": "workspace:^",
+    "@cspell/dict-flutter": "workspace:^",
+    "@cspell/dict-fonts": "workspace:^",
+    "@cspell/dict-fsharp": "workspace:^",
+    "@cspell/dict-fullstack": "workspace:^",
+    "@cspell/dict-gaming-terms": "workspace:^",
+    "@cspell/dict-git": "workspace:^",
+    "@cspell/dict-golang": "workspace:^",
+    "@cspell/dict-google": "workspace:^",
+    "@cspell/dict-haskell": "workspace:^",
+    "@cspell/dict-html": "workspace:^",
+    "@cspell/dict-html-symbol-entities": "workspace:^",
+    "@cspell/dict-java": "workspace:^",
+    "@cspell/dict-julia": "workspace:^",
+    "@cspell/dict-k8s": "workspace:^",
+    "@cspell/dict-latex": "workspace:^",
+    "@cspell/dict-lorem-ipsum": "workspace:^",
+    "@cspell/dict-lua": "workspace:^",
+    "@cspell/dict-makefile": "workspace:^",
+    "@cspell/dict-markdown": "workspace:^",
+    "@cspell/dict-monkeyc": "workspace:^",
+    "@cspell/dict-node": "workspace:^",
+    "@cspell/dict-npm": "workspace:^",
+    "@cspell/dict-php": "workspace:^",
+    "@cspell/dict-powershell": "workspace:^",
+    "@cspell/dict-public-licenses": "workspace:^",
+    "@cspell/dict-python": "workspace:^",
+    "@cspell/dict-r": "workspace:^",
+    "@cspell/dict-ruby": "workspace:^",
+    "@cspell/dict-rust": "workspace:^",
+    "@cspell/dict-scala": "workspace:^",
+    "@cspell/dict-software-terms": "workspace:^",
+    "@cspell/dict-sql": "workspace:^",
+    "@cspell/dict-svelte": "workspace:^",
+    "@cspell/dict-swift": "workspace:^",
+    "@cspell/dict-terraform": "workspace:^",
+    "@cspell/dict-typescript": "workspace:^",
+    "@cspell/dict-vue": "workspace:^"
+  },
+  "files": [
+    "cspell-ext.json",
+    "*.js",
+    "*.d.ts"
+  ]
+}

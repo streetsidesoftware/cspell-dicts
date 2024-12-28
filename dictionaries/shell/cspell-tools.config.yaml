@@ -6,7 +6,7 @@ targets:
       - listFile: ./common-source-files.txt
       - ./src/shell-bash-words.txt
     format: plaintext
-    targetDirectory: "./dict"
+    targetDirectory: './dict'
     generateNonStrict: false
   - name: shell-all-words
     sources:
@@ -14,5 +14,5 @@ targets:
       - ./src/shell-bash-words.txt
       - ./src/shell-zsh-words.txt
     format: plaintext
-    targetDirectory: "./dict"
+    targetDirectory: './dict'
     generateNonStrict: false

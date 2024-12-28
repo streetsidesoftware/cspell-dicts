@@ -1,9 +1,10 @@
 {
   "name": "@cspell/dict-sv",
-  "version": "2.2.0",
+  "version": "2.2.3",
   "description": "Swedish dictionary for CSpell.",
   "publishConfig": {
-    "access": "public"
+    "access": "public",
+    "provenance": true
   },
   "exports": {
     ".": "./cspell-ext.json",
@@ -14,15 +15,16 @@
     "build": "cspell-tools-cli build",
     "sync": "pnpm cpy \"node_modules/dictionary-sv/**\" src/hunspell",
     "conditional-build": "pnpm sync && pnpm build --conditional",
-    "test-sv": "hunspell-reader words -n 1000 \"src/ooo-swedish-dict-2-42/dictionaries/sv_SE.dic\" | shx tail -n 200 | cspell -v -c ./cspell-ext.json --local=sv --languageId=* stdin",
-    "test-samples": "cspell -v -c ./cspell-ext.json --local=sv,en \"samples/**\"",
+    "test-sv": "pipe-cmds \"hunspell-reader words -n 1000 \\\"src/ooo-swedish-dict-2-42/dictionaries/sv_SE.dic\\\"\" \"shx tail -n 200\" \"cspell -c ./cspell-ext.json --locale=sv --languageId=* stdin\"",
+    "test-samples": "cspell -c ./cspell-ext.json --locale=sv,en \"samples/**\"",
     "test": "pnpm run test-sv && pnpm run test-samples",
     "prepare:dictionary": "cspell-tools-cli gzip \"*.trie\"",
     "prepublishOnly": "pnpm run conditional-build && pnpm test"
   },
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/streetsidesoftware/cspell-dicts.git"
+    "url": "https://github.com/streetsidesoftware/cspell-dicts",
+    "directory": "dictionaries/sv"
   },
   "keywords": [
     "cspell",
@@ -32,7 +34,7 @@
     "dictionary",
     "spelling"
   ],
-  "author": "Jason Dent",
+  "author": "Street Side Software <support@streetsidesoftware.nl>",
   "license": "GPL-3.0-or-later",
   "bugs": {
     "url": "https://github.com/streetsidesoftware/cspell-dicts/issues"

@@ -3,6 +3,77 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+## [4.0.10](https://github.com/streetsidesoftware/cspell-dicts/compare/@cspell/dict-rust@4.0.9...@cspell/dict-rust@4.0.10) (2024-11-11)
+
+
+### Updates and Bug Fixes
+
+* add missing rust terms ([#3804](https://github.com/streetsidesoftware/cspell-dicts/issues/3804)) ([eb95572](https://github.com/streetsidesoftware/cspell-dicts/commit/eb95572987fc447638f53c0bb250295489a9ab62))
+* Workflow Bot -- Build Dictionaries ([#3805](https://github.com/streetsidesoftware/cspell-dicts/issues/3805)) ([289644b](https://github.com/streetsidesoftware/cspell-dicts/commit/289644b6605102db73d68683cb649ba73458364c))
+
+## [4.0.9](https://github.com/streetsidesoftware/cspell-dicts/compare/@cspell/dict-rust@4.0.8...@cspell/dict-rust@4.0.9) (2024-10-11)
+
+
+### Updates and Bug Fixes
+
+* Update package git url ([#3667](https://github.com/streetsidesoftware/cspell-dicts/issues/3667)) ([629c7d0](https://github.com/streetsidesoftware/cspell-dicts/commit/629c7d0a5e1bacad1d3874b1f8372edc3494ef97))
+
+## [4.0.8](https://github.com/streetsidesoftware/cspell-dicts/compare/@cspell/dict-rust@4.0.7...@cspell/dict-rust@4.0.8) (2024-10-11)
+
+
+### Updates and Bug Fixes
+
+* Fix the git repository URL ([#3665](https://github.com/streetsidesoftware/cspell-dicts/issues/3665)) ([ac050b6](https://github.com/streetsidesoftware/cspell-dicts/commit/ac050b697d57820109995e92fac5ccc32ced1723))
+
+## [4.0.7](https://github.com/streetsidesoftware/cspell-dicts/compare/@cspell/dict-rust@4.0.6...@cspell/dict-rust@4.0.7) (2024-10-11)
+
+
+### Updates and Bug Fixes
+
+* Sign all dictionaries ([#3661](https://github.com/streetsidesoftware/cspell-dicts/issues/3661)) ([6b8d560](https://github.com/streetsidesoftware/cspell-dicts/commit/6b8d560cf51a593458ce42bca415859f872cfc97))
+
+## [4.0.6](https://github.com/streetsidesoftware/cspell-dicts/compare/@cspell/dict-rust@4.0.5...@cspell/dict-rust@4.0.6) (2024-10-05)
+
+
+### Updates and Bug Fixes
+
+* add rust toolchain names ([#3628](https://github.com/streetsidesoftware/cspell-dicts/issues/3628)) ([2ebb00a](https://github.com/streetsidesoftware/cspell-dicts/commit/2ebb00ae0ad43f1c1a29e6562872791a410e0ac1))
+* Workflow Bot -- Build Dictionaries ([#3635](https://github.com/streetsidesoftware/cspell-dicts/issues/3635)) ([25b0f1d](https://github.com/streetsidesoftware/cspell-dicts/commit/25b0f1df069601c5bc16084afe35ed5b9a75cf5c))
+
+## [4.0.5](https://github.com/streetsidesoftware/cspell-dicts/compare/@cspell/dict-rust@4.0.4...@cspell/dict-rust@4.0.5) (2024-07-25)
+
+
+### Updates and Bug Fixes
+
+* Add some full stack related terms ([#3415](https://github.com/streetsidesoftware/cspell-dicts/issues/3415)) ([94b3556](https://github.com/streetsidesoftware/cspell-dicts/commit/94b355671d87cd6a8691c1fbae5cefba9a3a5170))
+
+## [4.0.4](https://github.com/streetsidesoftware/cspell-dicts/compare/@cspell/dict-rust@4.0.3...@cspell/dict-rust@4.0.4) (2024-06-11)
+
+
+### Updates and Bug Fixes
+
+* Add tokio ([#3282](https://github.com/streetsidesoftware/cspell-dicts/issues/3282)) ([7c330ee](https://github.com/streetsidesoftware/cspell-dicts/commit/7c330ee8fa9de714b60738f92a483309f261619f))
+* Workflow Bot -- Build Dictionaries ([#3284](https://github.com/streetsidesoftware/cspell-dicts/issues/3284)) ([2c65c07](https://github.com/streetsidesoftware/cspell-dicts/commit/2c65c073fd88ccaddb3dcdfa4be0f08407d25779))
+
+## [4.0.3](https://github.com/streetsidesoftware/cspell-dicts/compare/@cspell/dict-rust@4.0.2...@cspell/dict-rust@4.0.3) (2024-05-02)
+
+
+### Updates and Bug Fixes
+
+* add `powf` and `powi` to rust dictionary ([#3131](https://github.com/streetsidesoftware/cspell-dicts/issues/3131)) ([84ab85e](https://github.com/streetsidesoftware/cspell-dicts/commit/84ab85ebb24aceab7b3485727105d280621f4d3f))
+* Workflow Bot -- Build Dictionaries ([#3133](https://github.com/streetsidesoftware/cspell-dicts/issues/3133)) ([b8c7d1a](https://github.com/streetsidesoftware/cspell-dicts/commit/b8c7d1a1eab2b0756f8cc188f858568e89d5d95b))
+
+## [4.0.2](https://github.com/streetsidesoftware/cspell-dicts/compare/@cspell/dict-rust@4.0.1...@cspell/dict-rust@4.0.2) (2024-01-10)
+
+
+### Updates and Bug Fixes
+
+* add "msrv" to rust dictionary ([#2897](https://github.com/streetsidesoftware/cspell-dicts/issues/2897)) ([a662025](https://github.com/streetsidesoftware/cspell-dicts/commit/a662025a79c50c3e5a6b95bdaaa906ce2f6fcddc))
+* add `rustfmt` to rust dictionary ([#2896](https://github.com/streetsidesoftware/cspell-dicts/issues/2896)) ([c56c8a3](https://github.com/streetsidesoftware/cspell-dicts/commit/c56c8a3373447db8268f9f089599249f67aaac3a))
+* correct "BitAdd" to "BitAnd" in rust dictionary ([#2898](https://github.com/streetsidesoftware/cspell-dicts/issues/2898)) ([4d3e454](https://github.com/streetsidesoftware/cspell-dicts/commit/4d3e45428c5c4ce9a9676ef5184d90d7e7fb573b))
+* Workflow Bot -- Build Dictionaries ([#2901](https://github.com/streetsidesoftware/cspell-dicts/issues/2901)) ([1af708d](https://github.com/streetsidesoftware/cspell-dicts/commit/1af708d3cad81813206ff93b65d651e4735ec108))
+* Workflow Bot -- Build Dictionaries ([#2903](https://github.com/streetsidesoftware/cspell-dicts/issues/2903)) ([91d2ab0](https://github.com/streetsidesoftware/cspell-dicts/commit/91d2ab0be21ef8fd6e9b2e3c8790ba5a53a3cbd6))
+
 ## [4.0.1](https://github.com/streetsidesoftware/cspell-dicts/compare/@cspell/dict-rust@4.0.0...@cspell/dict-rust@4.0.1) (2023-02-22)
 
 

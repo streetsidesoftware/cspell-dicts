@@ -1,9 +1,10 @@
 {
   "name": "@cspell/dict-dart",
-  "version": "2.0.3",
+  "version": "2.2.4",
   "description": "Dart dictionary for cspell.",
   "publishConfig": {
-    "access": "public"
+    "access": "public",
+    "provenance": true
   },
   "exports": {
     ".": "./cspell-ext.json",
@@ -14,13 +15,14 @@
     "build": "cspell-tools-cli build",
     "test": "npm run test-dict && npm run test-samples",
     "test-samples": "cspell \"samples/**/*.dart\"",
-    "test-dict": "shx head -n 1000 \"src/dart.txt\" | cspell -v -c ./cspell-ext.json \"--local=*\" \"--languageId=dart\" stdin",
+    "test-dict": "cspell -c ./cspell-ext.json \"--locale=*\" \"--languageId=dart\" samples/dart-common.txt",
     "prepublishOnly": "echo pre-publish",
     "prepare:dictionary": "pnpm run build"
   },
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/streetsidesoftware/cspell-dicts.git"
+    "url": "https://github.com/streetsidesoftware/cspell-dicts",
+    "directory": "dictionaries/dart"
   },
   "keywords": [
     "cspell",
@@ -30,7 +32,7 @@
     "dictionary",
     "spelling"
   ],
-  "author": "Jason Dent",
+  "author": "Street Side Software <support@streetsidesoftware.nl>",
   "license": "MIT",
   "bugs": {
     "url": "https://github.com/streetsidesoftware/cspell-dicts/issues"

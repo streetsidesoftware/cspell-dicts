@@ -1,9 +1,10 @@
 {
   "name": "@cspell/dict-django",
-  "version": "4.1.0",
+  "version": "4.1.3",
   "description": "Django dictionary for cspell.",
   "publishConfig": {
-    "access": "public"
+    "access": "public",
+    "provenance": true
   },
   "exports": {
     ".": "./cspell-ext.json",
@@ -12,13 +13,14 @@
   },
   "scripts": {
     "build": "cspell-tools-cli compile --keep-raw-case \"src/*.txt\" -M django --no-compress -o ./dict",
-    "test": "shx head -n 100 src/django.txt | cspell -v -c ./cspell-ext.json --local=* --languageId=python stdin",
+    "test": "shx head -n 100 src/django.txt | cspell -c ./cspell-ext.json --locale=* --languageId=python stdin",
     "prepublishOnly": "echo pre-publish",
     "prepare:dictionary": "pnpm run build"
   },
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/streetsidesoftware/cspell-dicts.git"
+    "url": "https://github.com/streetsidesoftware/cspell-dicts",
+    "directory": "dictionaries/django"
   },
   "keywords": [
     "cspell",
@@ -26,7 +28,11 @@
     "dictionary",
     "spelling"
   ],
-  "author": "Jason Dent & canarduck",
+  "author": "Street Side Software <support@streetsidesoftware.nl>",
+  "contributors": [
+    "canarduck",
+    "Jason Dent <jason@streetsidesoftware.nl>"
+  ],
   "license": "MIT",
   "bugs": {
     "url": "https://github.com/streetsidesoftware/cspell-dicts/issues"

@@ -1,9 +1,10 @@
 {
   "name": "@cspell/dict-ada",
-  "version": "4.0.2",
+  "version": "4.0.5",
   "description": "Ada Language dictionary for cspell.",
   "publishConfig": {
-    "access": "public"
+    "access": "public",
+    "provenance": true
   },
   "exports": {
     ".": "./cspell-ext.json",
@@ -13,14 +14,15 @@
   "scripts": {
     "build": "cspell-tools-cli build",
     "test": "pnpm run test-dict && pnpm run test-samples",
-    "test-dict": "shx head -n 100 src/ada.txt | cspell -v -c ./cspell-ext.json --local=* --languageId=ada stdin",
+    "test-dict": "shx head -n 100 src/ada.txt | cspell -c ./cspell-ext.json --locale=* --languageId=ada stdin",
     "test-samples": "cspell \"samples/**\"",
     "prepublishOnly": "echo pre-publish",
     "prepare:dictionary": "pnpm run build"
   },
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/streetsidesoftware/cspell-dicts.git"
+    "url": "https://github.com/streetsidesoftware/cspell-dicts",
+    "directory": "dictionaries/ada"
   },
   "keywords": [
     "cspell",
@@ -29,7 +31,7 @@
     "dictionary",
     "spelling"
   ],
-  "author": "Jason Dent",
+  "author": "Street Side Software <support@streetsidesoftware.nl>",
   "license": "MIT",
   "bugs": {
     "url": "https://github.com/streetsidesoftware/cspell-dicts/issues"

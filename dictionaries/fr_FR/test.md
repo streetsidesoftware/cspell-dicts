@@ -4,4 +4,4 @@ Exemple de texte à vérifier.
 - Tu **m'aimes**
 - Il **m'adore**
 
-cspell:local fr
+cspell:locale fr

@@ -3,11 +3,11 @@
 $schema: https://raw.githubusercontent.com/streetsidesoftware/cspell/main/packages/cspell-tools/cspell-tools.config.schema.json
 targets:
   - name: medicalterms-en.txt
-    targetDirectory: .
-    compress: true
+    targetDirectory: ./dict
+    compress: false
     format: plaintext
     sources:
-      - node_modules/wordlist-medicalterms-en/wordlist.txt
+      - src/wordlist-medicalterms-en/wordlist.txt
       - src/additional_words.txt
     sort: true
 checksumFile: true

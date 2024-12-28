@@ -1,9 +1,10 @@
 {
   "name": "@cspell/dict-k8s",
-  "version": "1.0.2",
+  "version": "1.0.9",
   "description": "K8s dictionary for cspell.",
   "publishConfig": {
-    "access": "public"
+    "access": "public",
+    "provenance": true
   },
   "exports": {
     ".": "./cspell-ext.json",
@@ -13,13 +14,14 @@
   "scripts": {
     "download": "./src/build.sh --out-file ./src/k8s.txt",
     "build": "cspell-tools-cli compile --keep-raw-case src/k8s.txt --no-compress -o ./dict",
-    "test": "shx head -n 100 src/k8s.txt | cspell -v -c ./cspell-ext.json \"--local=*\" \"--languageId=yaml\" stdin",
+    "test": "shx head -n 100 src/k8s.txt | cspell -c ./cspell-ext.json \"--locale=*\" \"--languageId=yaml\" stdin",
     "prepublishOnly": "echo pre-publish",
     "prepare:dictionary": "pnpm run build"
   },
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/streetsidesoftware/cspell-dicts.git"
+    "url": "https://github.com/streetsidesoftware/cspell-dicts",
+    "directory": "dictionaries/k8s"
   },
   "keywords": [
     "cspell",
@@ -28,7 +30,11 @@
     "dictionary",
     "spelling"
   ],
-  "author": "Jason Dent & Carlo Corradini",
+  "author": "Street Side Software <support@streetsidesoftware.nl>",
+  "contributors": [
+    "Carlo Corradini",
+    "Jason Dent"
+  ],
   "license": "MIT",
   "bugs": {
     "url": "https://github.com/streetsidesoftware/cspell-dicts/issues"

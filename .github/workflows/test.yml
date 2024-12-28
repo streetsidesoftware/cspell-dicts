@@ -1,4 +1,4 @@
-name: "build-test"
+name: 'build-test'
 on: # rebuild any PRs and main branch changes
   pull_request:
   push:
@@ -18,7 +18,7 @@ jobs:
         node-version:
           - 18.x
           - 20.x
-          - 21.x
+          - 22.x
 
         os:
           - ubuntu-latest

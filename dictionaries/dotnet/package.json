@@ -1,9 +1,10 @@
 {
   "name": "@cspell/dict-dotnet",
-  "version": "5.0.0",
+  "version": "5.0.8",
   "description": ".Net dictionary for cspell.",
   "publishConfig": {
-    "access": "public"
+    "access": "public",
+    "provenance": true
   },
   "exports": {
     ".": "./cspell-ext.json",
@@ -12,13 +13,14 @@
   },
   "scripts": {
     "build": "cspell-tools-cli build",
-    "test": "shx head -n 100 src/dotnet.txt | cspell -v -c ./cspell-ext.json --local=* --languageId=cs stdin",
+    "test": "shx head -n 100 src/dotnet.txt | cspell -c ./cspell-ext.json --locale=* --languageId=cs stdin",
     "prepublishOnly": "echo pre-publish",
     "prepare:dictionary": "pnpm run build"
   },
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/streetsidesoftware/cspell-dicts.git"
+    "url": "https://github.com/streetsidesoftware/cspell-dicts",
+    "directory": "dictionaries/dotnet"
   },
   "keywords": [
     "cspell",
@@ -27,7 +29,7 @@
     "dictionary",
     "spelling"
   ],
-  "author": "Jason Dent",
+  "author": "Street Side Software <support@streetsidesoftware.nl>",
   "license": "MIT",
   "bugs": {
     "url": "https://github.com/streetsidesoftware/cspell-dicts/issues"

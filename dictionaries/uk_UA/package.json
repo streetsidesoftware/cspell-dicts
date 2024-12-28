@@ -1,9 +1,10 @@
 {
   "name": "@cspell/dict-uk-ua",
-  "version": "4.0.0",
+  "version": "4.0.4",
   "description": "Ukrainian dictionary for cspell",
   "publishConfig": {
-    "access": "public"
+    "access": "public",
+    "provenance": true
   },
   "exports": {
     ".": "./cspell-ext.json",
@@ -15,14 +16,15 @@
     "sync": "pnpm cpy \"node_modules/dictionary-uk/**\" src/hunspell",
     "compile": "cspell-tools-cli build",
     "conditional-build": "pnpm sync && pnpm build --conditional",
-    "test-dict": "hunspell-reader words -n 1000 \"src/hunspell/index.dic\" | cspell -v -c ./cspell-ext.json --local=uk --languageId=* stdin",
+    "test-dict": "pipe-cmds \"hunspell-reader words -n 1000 \\\"src/hunspell/index.dic\\\"\" \"cspell -c ./cspell-ext.json --locale=uk --languageId=* stdin\"",
     "test-text": "cspell samples",
     "test": "pnpm run test-dict && pnpm run test-text",
     "prepublishOnly": "echo pre-publish"
   },
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/streetsidesoftware/cspell-dicts.git"
+    "url": "https://github.com/streetsidesoftware/cspell-dicts",
+    "directory": "dictionaries/uk_UA"
   },
   "keywords": [
     "cspell",
@@ -31,7 +33,7 @@
     "dictionary",
     "spelling"
   ],
-  "author": "Street Side Software",
+  "author": "Street Side Software <support@streetsidesoftware.nl>",
   "license": "GPL-3.0",
   "bugs": {
     "url": "https://github.com/streetsidesoftware/cspell-dicts/issues"

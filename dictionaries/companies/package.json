@@ -1,9 +1,10 @@
 {
   "name": "@cspell/dict-companies",
-  "version": "3.0.27",
+  "version": "3.1.11",
   "description": "Company names dictionary for cspell.",
   "publishConfig": {
-    "access": "public"
+    "access": "public",
+    "provenance": true
   },
   "exports": {
     ".": "./cspell-ext.json",
@@ -12,13 +13,14 @@
   },
   "scripts": {
     "build": "cspell-tools-cli compile --no-compress --split \"src/companies.txt\" -o ./dict",
-    "test": "shx cat \"src/companies.txt\" | cspell -v -c ./cspell-ext.json --local=* --languageId=* stdin",
+    "test": "shx cat \"src/companies.txt\" | cspell -c ./cspell-ext.json --locale=* --languageId=* stdin",
     "prepublishOnly": "echo pre-publish",
     "prepare:dictionary": "pnpm run build"
   },
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/streetsidesoftware/cspell-dicts.git"
+    "url": "https://github.com/streetsidesoftware/cspell-dicts",
+    "directory": "dictionaries/companies"
   },
   "keywords": [
     "cspell",
@@ -28,7 +30,7 @@
     "dictionary",
     "spelling"
   ],
-  "author": "Jason Dent",
+  "author": "Street Side Software <support@streetsidesoftware.nl>",
   "license": "MIT",
   "bugs": {
     "url": "https://github.com/streetsidesoftware/cspell-dicts/issues"

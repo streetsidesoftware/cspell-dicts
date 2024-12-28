@@ -30,6 +30,55 @@ See [Conventional Commits](https://conventionalcommits.org) for commit guideline
 
 
 
+## [3.0.3](https://github.com/streetsidesoftware/cspell-dicts/compare/@cspell/dict-es-es@3.0.2...@cspell/dict-es-es@3.0.3) (2024-10-11)
+
+
+### Updates and Bug Fixes
+
+* Update package git url ([#3667](https://github.com/streetsidesoftware/cspell-dicts/issues/3667)) ([629c7d0](https://github.com/streetsidesoftware/cspell-dicts/commit/629c7d0a5e1bacad1d3874b1f8372edc3494ef97))
+
+## [3.0.2](https://github.com/streetsidesoftware/cspell-dicts/compare/@cspell/dict-es-es@3.0.1...@cspell/dict-es-es@3.0.2) (2024-10-11)
+
+
+### Updates and Bug Fixes
+
+* Fix the git repository URL ([#3665](https://github.com/streetsidesoftware/cspell-dicts/issues/3665)) ([ac050b6](https://github.com/streetsidesoftware/cspell-dicts/commit/ac050b697d57820109995e92fac5ccc32ced1723))
+
+## [3.0.1](https://github.com/streetsidesoftware/cspell-dicts/compare/@cspell/dict-es-es@3.0.0...@cspell/dict-es-es@3.0.1) (2024-10-11)
+
+
+### Updates and Bug Fixes
+
+* Sign all dictionaries ([#3661](https://github.com/streetsidesoftware/cspell-dicts/issues/3661)) ([6b8d560](https://github.com/streetsidesoftware/cspell-dicts/commit/6b8d560cf51a593458ce42bca415859f872cfc97))
+
+## [3.0.0](https://github.com/streetsidesoftware/cspell-dicts/compare/@cspell/dict-es-es@2.4.0...@cspell/dict-es-es@3.0.0) (2024-04-03)
+
+
+### ⚠ BREAKING CHANGES
+
+* Use LGPL instead of GPL ([#3080](https://github.com/streetsidesoftware/cspell-dicts/issues/3080))
+
+### Updates and Bug Fixes
+
+* Add new valid words: comparabilidad, pizarrón, videollamada, relevamiento ([#3075](https://github.com/streetsidesoftware/cspell-dicts/issues/3075)) ([fd524d9](https://github.com/streetsidesoftware/cspell-dicts/commit/fd524d9bd3bad0869c70bec69bb799aa03bcd3a8))
+* Use LGPL instead of GPL ([#3080](https://github.com/streetsidesoftware/cspell-dicts/issues/3080)) ([23e6558](https://github.com/streetsidesoftware/cspell-dicts/commit/23e655853b0a20a6265144920a48df080ac19235))
+* Workflow Bot -- Build Dictionaries ([#3077](https://github.com/streetsidesoftware/cspell-dicts/issues/3077)) ([7312f9c](https://github.com/streetsidesoftware/cspell-dicts/commit/7312f9ccaec6a742c5e35c35d78b0411575497cc))
+
+## [2.4.0](https://github.com/streetsidesoftware/cspell-dicts/compare/@cspell/dict-es-es@2.3.1...@cspell/dict-es-es@2.4.0) (2024-02-26)
+
+
+### Features
+
+* Add a larger Spanish dictionary ([#3011](https://github.com/streetsidesoftware/cspell-dicts/issues/3011)) ([5e327bf](https://github.com/streetsidesoftware/cspell-dicts/commit/5e327bf60b9c2240e930d5a60ee8f78bd05e8cfb))
+
+## [2.3.1](https://github.com/streetsidesoftware/cspell-dicts/compare/@cspell/dict-es-es@2.3.0...@cspell/dict-es-es@2.3.1) (2023-12-17)
+
+
+### Updates and Bug Fixes
+
+* Add some missing terms to Spanish dictionary ([#2811](https://github.com/streetsidesoftware/cspell-dicts/issues/2811)) ([5eb67c0](https://github.com/streetsidesoftware/cspell-dicts/commit/5eb67c0bea478f779052e2b04ce79c034eb754e0))
+* Workflow Bot -- Build Dictionaries ([#2817](https://github.com/streetsidesoftware/cspell-dicts/issues/2817)) ([ac1ca17](https://github.com/streetsidesoftware/cspell-dicts/commit/ac1ca17cefe8f678effeba41905fa2222253c8bf))
+
 ## [2.3.0](https://github.com/streetsidesoftware/cspell-dicts/compare/@cspell/dict-es-es@2.2.7...@cspell/dict-es-es@2.3.0) (2023-11-06)
 
 

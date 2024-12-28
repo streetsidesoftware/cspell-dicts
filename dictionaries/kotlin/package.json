@@ -1,9 +1,10 @@
 {
   "name": "@cspell/dict-kotlin",
-  "version": "1.0.0",
+  "version": "1.0.3",
   "description": "Kotlin dictionary for cspell.",
   "publishConfig": {
-    "access": "public"
+    "access": "public",
+    "provenance": true
   },
   "exports": {
     ".": "./cspell-ext.json",
@@ -14,13 +15,14 @@
     "build": "cspell-tools-cli build",
     "test": "pnpm test:samples && pnpm test:src",
     "test:samples": "cspell \"samples/*.kt\"",
-    "test:src": "head -n 1000 \"src/kotlin.txt\" | cspell -c ./cspell-ext.json \"--local=*\" \"--languageId=kotlin\" stdin",
+    "test:src": "head -n 1000 \"src/kotlin.txt\" | cspell -c ./cspell-ext.json \"--locale=*\" \"--languageId=kotlin\" stdin",
     "prepublishOnly": "echo OK",
     "prepare:dictionary": "pnpm run build"
   },
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/streetsidesoftware/cspell-dicts.git"
+    "url": "https://github.com/streetsidesoftware/cspell-dicts",
+    "directory": "dictionaries/kotlin"
   },
   "keywords": [
     "cspell",
@@ -30,7 +32,7 @@
     "dictionary",
     "spelling"
   ],
-  "author": "Jason Dent",
+  "author": "Street Side Software <support@streetsidesoftware.nl>",
   "license": "MIT",
   "bugs": {
     "url": "https://github.com/streetsidesoftware/cspell-dicts/issues"

@@ -27,6 +27,86 @@ See [Conventional Commits](https://conventionalcommits.org) for commit guideline
 
 
 
+## [5.0.13](https://github.com/streetsidesoftware/cspell-dicts/compare/@cspell/dict-powershell@5.0.12...@cspell/dict-powershell@5.0.13) (2024-10-11)
+
+
+### Updates and Bug Fixes
+
+* Update package git url ([#3667](https://github.com/streetsidesoftware/cspell-dicts/issues/3667)) ([629c7d0](https://github.com/streetsidesoftware/cspell-dicts/commit/629c7d0a5e1bacad1d3874b1f8372edc3494ef97))
+
+## [5.0.12](https://github.com/streetsidesoftware/cspell-dicts/compare/@cspell/dict-powershell@5.0.11...@cspell/dict-powershell@5.0.12) (2024-10-11)
+
+
+### Updates and Bug Fixes
+
+* Fix the git repository URL ([#3665](https://github.com/streetsidesoftware/cspell-dicts/issues/3665)) ([ac050b6](https://github.com/streetsidesoftware/cspell-dicts/commit/ac050b697d57820109995e92fac5ccc32ced1723))
+
+## [5.0.11](https://github.com/streetsidesoftware/cspell-dicts/compare/@cspell/dict-powershell@5.0.10...@cspell/dict-powershell@5.0.11) (2024-10-11)
+
+
+### Updates and Bug Fixes
+
+* Sign all dictionaries ([#3661](https://github.com/streetsidesoftware/cspell-dicts/issues/3661)) ([6b8d560](https://github.com/streetsidesoftware/cspell-dicts/commit/6b8d560cf51a593458ce42bca415859f872cfc97))
+
+## [5.0.10](https://github.com/streetsidesoftware/cspell-dicts/compare/@cspell/dict-powershell@5.0.9...@cspell/dict-powershell@5.0.10) (2024-10-05)
+
+
+### Updates and Bug Fixes
+
+* Workflow Bot -- Build Dictionaries ([#3637](https://github.com/streetsidesoftware/cspell-dicts/issues/3637)) ([c7f9ff3](https://github.com/streetsidesoftware/cspell-dicts/commit/c7f9ff39b920eb148794d3dd0eed531dcab8fb57))
+
+## [5.0.9](https://github.com/streetsidesoftware/cspell-dicts/compare/@cspell/dict-powershell@5.0.8...@cspell/dict-powershell@5.0.9) (2024-09-22)
+
+
+### Updates and Bug Fixes
+
+* add `-isnot` to powershell dictionary fixes streetsidesoftware/cspell-dicts[#3577](https://github.com/streetsidesoftware/cspell-dicts/issues/3577) ([#3599](https://github.com/streetsidesoftware/cspell-dicts/issues/3599)) ([c930090](https://github.com/streetsidesoftware/cspell-dicts/commit/c9300902e5b411b855e29118fbcaed7c05393549))
+
+## [5.0.8](https://github.com/streetsidesoftware/cspell-dicts/compare/@cspell/dict-powershell@5.0.7...@cspell/dict-powershell@5.0.8) (2024-08-29)
+
+
+### Updates and Bug Fixes
+
+* PowerShell add Runspace(s) ([#3553](https://github.com/streetsidesoftware/cspell-dicts/issues/3553)) ([09d6034](https://github.com/streetsidesoftware/cspell-dicts/commit/09d60349ff8cabef17fa88f4dd890079846a4592))
+* Workflow Bot -- Build Dictionaries ([#3555](https://github.com/streetsidesoftware/cspell-dicts/issues/3555)) ([68e8145](https://github.com/streetsidesoftware/cspell-dicts/commit/68e814526214b2fe59dfe5a367615b7dad56c495))
+
+## [5.0.7](https://github.com/streetsidesoftware/cspell-dicts/compare/@cspell/dict-powershell@5.0.6...@cspell/dict-powershell@5.0.7) (2024-08-29)
+
+
+### Updates and Bug Fixes
+
+* Add comment and tests to powershell ([#3541](https://github.com/streetsidesoftware/cspell-dicts/issues/3541)) ([0f11e78](https://github.com/streetsidesoftware/cspell-dicts/commit/0f11e787a7a5e97458ade76ba7ea2e954ee1219c))
+* Workflow Bot -- Build Dictionaries ([#3542](https://github.com/streetsidesoftware/cspell-dicts/issues/3542)) ([472d315](https://github.com/streetsidesoftware/cspell-dicts/commit/472d3153f38f7d57282f9986c5010f7885e81262))
+
+## [5.0.6](https://github.com/streetsidesoftware/cspell-dicts/compare/@cspell/dict-powershell@5.0.5...@cspell/dict-powershell@5.0.6) (2024-08-26)
+
+
+### Updates and Bug Fixes
+
+* Workflow Bot -- Build Dictionaries ([#3510](https://github.com/streetsidesoftware/cspell-dicts/issues/3510)) ([a684808](https://github.com/streetsidesoftware/cspell-dicts/commit/a684808a8e36f8fb5c5b2d282dc336206b520cd7))
+
+## [5.0.5](https://github.com/streetsidesoftware/cspell-dicts/compare/@cspell/dict-powershell@5.0.4...@cspell/dict-powershell@5.0.5) (2024-07-18)
+
+
+### Updates and Bug Fixes
+
+* Workflow Bot -- Build Dictionaries ([#3396](https://github.com/streetsidesoftware/cspell-dicts/issues/3396)) ([4702b0c](https://github.com/streetsidesoftware/cspell-dicts/commit/4702b0cbe15a26f994232d8020f28dde2c707fd8))
+
+## [5.0.4](https://github.com/streetsidesoftware/cspell-dicts/compare/@cspell/dict-powershell@5.0.3...@cspell/dict-powershell@5.0.4) (2024-05-22)
+
+
+### Updates and Bug Fixes
+
+* Workflow Bot -- Build Dictionaries ([#3185](https://github.com/streetsidesoftware/cspell-dicts/issues/3185)) ([4db7ac2](https://github.com/streetsidesoftware/cspell-dicts/commit/4db7ac294d819233196226cf692e6438fc59462c))
+
+## [5.0.3](https://github.com/streetsidesoftware/cspell-dicts/compare/@cspell/dict-powershell@5.0.2...@cspell/dict-powershell@5.0.3) (2023-12-11)
+
+
+### Updates and Bug Fixes
+
+* Added missing comparison operators ([#2802](https://github.com/streetsidesoftware/cspell-dicts/issues/2802)) ([2887c19](https://github.com/streetsidesoftware/cspell-dicts/commit/2887c19a5f8be4bcfdc8d8c54e06ca106a1612ed))
+* Workflow Bot -- Build Dictionaries ([#2796](https://github.com/streetsidesoftware/cspell-dicts/issues/2796)) ([515711d](https://github.com/streetsidesoftware/cspell-dicts/commit/515711d7dc8e9ae39f1e4e7aebe84af5cc19b4de))
+
 ## [5.0.2](https://github.com/streetsidesoftware/cspell-dicts/compare/@cspell/dict-powershell@5.0.1...@cspell/dict-powershell@5.0.2) (2023-07-03)
 
 

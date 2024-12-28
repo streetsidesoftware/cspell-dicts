@@ -1,9 +1,10 @@
 {
   "name": "@cspell/dict-bg-bg",
-  "version": "3.0.2",
+  "version": "3.0.5",
   "description": "Bulgarian dictionary for cspell.",
   "publishConfig": {
-    "access": "public"
+    "access": "public",
+    "provenance": true
   },
   "exports": {
     ".": "./cspell-ext.json",
@@ -13,14 +14,15 @@
   "scripts": {
     "build": "cspell-tools-cli build && pnpm run gz",
     "build:conditional": "cspell-tools-cli build --conditional && pnpm gz",
-    "test": "hunspell-reader words -n 1000 \"src/bg_BG.dic\" | cspell -v -c ./cspell-ext.json \"--local=bg\" \"--languageId=*\" stdin",
+    "test": "pipe-cmds \"hunspell-reader words -n 1000 \\\"src/bg_BG.dic\\\"\" \"cspell -c ./cspell-ext.json \\\"--locale=bg\\\" \\\"--languageId=*\\\" stdin\"",
     "prepare:dictionary": "pnpm run gz",
     "gz": "cspell-tools-cli gzip \"dict/*.trie\"",
     "prepublishOnly": "echo pre-publish"
   },
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/streetsidesoftware/cspell-dicts.git"
+    "url": "https://github.com/streetsidesoftware/cspell-dicts",
+    "directory": "dictionaries/bg_BG"
   },
   "keywords": [
     "cspell",
@@ -29,7 +31,7 @@
     "dictionary",
     "spelling"
   ],
-  "author": "Jason Dent",
+  "author": "Street Side Software <support@streetsidesoftware.nl>",
   "license": "MIT",
   "bugs": {
     "url": "https://github.com/streetsidesoftware/cspell-dicts/issues"

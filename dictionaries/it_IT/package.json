@@ -1,9 +1,10 @@
 {
   "name": "@cspell/dict-it-it",
-  "version": "3.1.0",
+  "version": "3.1.3",
   "description": "Italian dictionary for cspell.",
   "publishConfig": {
-    "access": "public"
+    "access": "public",
+    "provenance": true
   },
   "exports": {
     ".": "./cspell-ext.json",
@@ -14,14 +15,15 @@
     "build": "cspell-tools-cli build",
     "sync": "pnpm cpy \"node_modules/dictionary-it/**\" src/hunspell",
     "conditional-build": "pnpm sync && pnpm build --conditional",
-    "test-samples": "cspell -v -c ./cspell-ext.json --local=it,en \"samples/**\"",
-    "test-dict": "hunspell-reader words -n 1000 \"src/hunspell/index.dic\" | cspell -v -c ./cspell-ext.json \"--local=it,it-IT\" \"--languageId=*\" stdin",
+    "test-samples": "cspell -c ./cspell-ext.json --locale=it,en \"samples/**\"",
+    "test-dict": "pipe-cmds \"hunspell-reader words -n 1000 \\\"src/hunspell/index.dic\\\"\" \"cspell -c ./cspell-ext.json \\\"--locale=it,it-IT\\\" \\\"--languageId=*\\\" stdin\"",
     "test": "pnpm run test-samples && pnpm run test-dict",
     "prepublishOnly": "echo pre-publish"
   },
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/streetsidesoftware/cspell-dicts.git"
+    "url": "https://github.com/streetsidesoftware/cspell-dicts",
+    "directory": "dictionaries/it_IT"
   },
   "keywords": [
     "cspell",
@@ -30,7 +32,7 @@
     "dictionary",
     "spelling"
   ],
-  "author": "Jason Dent",
+  "author": "Street Side Software <support@streetsidesoftware.nl>",
   "license": "GPL-3.0-or-later",
   "bugs": {
     "url": "https://github.com/streetsidesoftware/cspell-dicts/issues"

@@ -1,4 +1,4 @@
-version: "0.2"
+version: '0.2'
 dictionaries:
   - softwareTerms
   - networking-terms
@@ -11,3 +11,10 @@ ignoreWords:
 ignorePaths:
   - CHANGELOG.md
   - dict
+patterns:
+  - name: term-comment
+    pattern: '/(?<!^)#.*/gm'
+overrides:
+  - filename: 'src/*.txt'
+    ignoreRegExpList:
+      - term-comment

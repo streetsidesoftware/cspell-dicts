@@ -1,9 +1,10 @@
 {
   "name": "@cspell/dict-software-terms",
-  "version": "3.3.9",
+  "version": "4.2.1",
   "description": "Software related dictionaries for cspell.",
   "publishConfig": {
-    "access": "public"
+    "access": "public",
+    "provenance": true
   },
   "exports": {
     ".": "./cspell-ext.json",
@@ -13,14 +14,15 @@
   "scripts": {
     "build": "cspell-tools-cli build",
     "test": "pnpm test-software-terms && pnpm test-networking-terms",
-    "test-software-terms": "cspell -v -c ./cspell-ext.json \"--local=*\" \"--languageId=*\" --file-list src/source-files-software.txt",
-    "test-networking-terms": "cspell -v \"--local=*\" \"--languageId=*\" --file-list src/source-files-networking.txt",
+    "test-software-terms": "cspell -c ./cspell-ext.json \"--locale=en\" \"--languageId=*\" --file-list src/source-files-software.txt",
+    "test-networking-terms": "cspell \"--locale=*\" \"--languageId=*\" --file-list src/source-files-networking.txt",
     "prepublishOnly": "echo pre-publish",
     "prepare:dictionary": "pnpm build"
   },
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/streetsidesoftware/cspell-dicts.git"
+    "url": "https://github.com/streetsidesoftware/cspell-dicts",
+    "directory": "dictionaries/software-terms"
   },
   "keywords": [
     "cspell",
@@ -31,7 +33,7 @@
     "dictionary",
     "spelling"
   ],
-  "author": "Jason Dent",
+  "author": "Street Side Software <support@streetsidesoftware.nl>",
   "license": "MIT",
   "bugs": {
     "url": "https://github.com/streetsidesoftware/cspell-dicts/issues"
@@ -40,6 +42,7 @@
   "files": [
     "dict/*",
     "!dict/README.md",
+    "cspell-corrections.yaml",
     "cspell-ext.json"
   ]
 }

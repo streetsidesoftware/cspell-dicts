@@ -3,6 +3,42 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+## [4.0.10](https://github.com/streetsidesoftware/cspell-dicts/compare/@cspell/dict-html@4.0.9...@cspell/dict-html@4.0.10) (2024-10-22)
+
+
+### Updates and Bug Fixes
+
+* Update Markdown dictionary ([#3713](https://github.com/streetsidesoftware/cspell-dicts/issues/3713)) ([1394c0b](https://github.com/streetsidesoftware/cspell-dicts/commit/1394c0bf2e2518508470089cabaf1c69260e42c2))
+
+## [4.0.9](https://github.com/streetsidesoftware/cspell-dicts/compare/@cspell/dict-html@4.0.8...@cspell/dict-html@4.0.9) (2024-10-11)
+
+
+### Updates and Bug Fixes
+
+* Update package git url ([#3667](https://github.com/streetsidesoftware/cspell-dicts/issues/3667)) ([629c7d0](https://github.com/streetsidesoftware/cspell-dicts/commit/629c7d0a5e1bacad1d3874b1f8372edc3494ef97))
+
+## [4.0.8](https://github.com/streetsidesoftware/cspell-dicts/compare/@cspell/dict-html@4.0.7...@cspell/dict-html@4.0.8) (2024-10-11)
+
+
+### Updates and Bug Fixes
+
+* Fix the git repository URL ([#3665](https://github.com/streetsidesoftware/cspell-dicts/issues/3665)) ([ac050b6](https://github.com/streetsidesoftware/cspell-dicts/commit/ac050b697d57820109995e92fac5ccc32ced1723))
+
+## [4.0.7](https://github.com/streetsidesoftware/cspell-dicts/compare/@cspell/dict-html@4.0.6...@cspell/dict-html@4.0.7) (2024-10-11)
+
+
+### Updates and Bug Fixes
+
+* Sign all dictionaries ([#3661](https://github.com/streetsidesoftware/cspell-dicts/issues/3661)) ([6b8d560](https://github.com/streetsidesoftware/cspell-dicts/commit/6b8d560cf51a593458ce42bca415859f872cfc97))
+
+## [4.0.6](https://github.com/streetsidesoftware/cspell-dicts/compare/@cspell/dict-html@4.0.5...@cspell/dict-html@4.0.6) (2024-09-22)
+
+
+### Updates and Bug Fixes
+
+* Add new Shadow Root related HTML attributes ([#3598](https://github.com/streetsidesoftware/cspell-dicts/issues/3598)) ([c2ffcd5](https://github.com/streetsidesoftware/cspell-dicts/commit/c2ffcd558f0703031da7a1729d0227b47ed207ef))
+* Workflow Bot -- Build Dictionaries ([#3601](https://github.com/streetsidesoftware/cspell-dicts/issues/3601)) ([3d2aaf2](https://github.com/streetsidesoftware/cspell-dicts/commit/3d2aaf244cd5bb39cd19998b43b7f6fb8bf614ee))
+
 ## [4.0.5](https://github.com/streetsidesoftware/cspell-dicts/compare/@cspell/dict-html@4.0.4...@cspell/dict-html@4.0.5) (2023-09-27)
 
 

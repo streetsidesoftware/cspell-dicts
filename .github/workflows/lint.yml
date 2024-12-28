@@ -2,22 +2,22 @@ name: Lint
 on:
   pull_request:
     paths:
-      - ".eslint*"
       - .prettier*"
-      - "**/*.js"
-      - "**/*.md"
-      - "**/*.json"
-      - "**/*.yml"
-      - "**/*.yaml"
+      - '**/*.js'
+      - '**/*.mjs'
+      - '**/*.md'
+      - '**/*.json'
+      - '**/*.yml'
+      - '**/*.yaml'
   push:
     paths:
-      - ".eslint*"
       - .prettier*"
-      - "**/*.js"
-      - "**/*.md"
-      - "**/*.json"
-      - "**/*.yml"
-      - "**/*.yaml"
+      - '**/*.js'
+      - '**/*.mjs'
+      - '**/*.md'
+      - '**/*.json'
+      - '**/*.yml'
+      - '**/*.yaml'
     branches:
       - main
 
@@ -34,7 +34,7 @@ jobs:
         uses: ./.github/actions/setup
 
       - name: Restore CSpell cache
-        uses: actions/cache@v3
+        uses: actions/cache@v4.2.0
         with:
           key: cspell-cache-${{ runner.os }}-lint-${{ hashFiles('**/*.ts', '**/*.md') }}
           path: |

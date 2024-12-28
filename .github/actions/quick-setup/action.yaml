@@ -4,16 +4,17 @@ inputs:
   node-version:
     required: false
     description: The version of Node to use.
-    default: "18.x"
+    default: '18.x'
 runs:
-  using: "composite"
+  using: 'composite'
   steps:
-    - name: Setup pnpm
-      uses: pnpm/action-setup@v2.4.0
+    - name: Enable Corepack
+      run: corepack enable
+      shell: bash
 
     - name: Use Node.js ${{ inputs.node-version }}
       uses: actions/setup-node@v4
       with:
-        registry-url: "https://registry.npmjs.org"
+        registry-url: 'https://registry.npmjs.org'
         node-version: ${{ inputs.node-version }}
-        cache: "pnpm"
+        cache: 'pnpm'

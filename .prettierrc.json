@@ -5,7 +5,13 @@
         {
             "files": "**/*.{yaml,yml}",
             "options": {
-                "singleQuote": false
+                "singleQuote": true
+            }
+        },
+        {
+            "files": "dictionaries/npm/**/*.json",
+            "options": {
+                "tabWidth": 2
             }
         }
     ]

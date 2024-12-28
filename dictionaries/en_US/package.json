@@ -1,9 +1,10 @@
 {
   "name": "@cspell/dict-en_us",
-  "version": "4.3.11",
+  "version": "4.3.28",
   "description": "English dictionary for cspell.",
   "publishConfig": {
-    "access": "public"
+    "access": "public",
+    "provenance": true
   },
   "exports": {
     ".": "./cspell-ext.json",
@@ -15,8 +16,8 @@
     "sync": "pnpm cpy \"node_modules/aoo-mozilla-en-dict/en_US*/**\" \"src/aoo-mozilla-en-dict\" --flat",
     "compile": "cspell-tools-cli build",
     "conditional-build": "pnpm run sync && pnpm run build --conditional && pnpm gz",
-    "test-dict": "hunspell-reader words -n 10000 \"src/hunspell/en_US.dic\" | cspell -v -c ./cspell-ext.json --local=en --languageId=* stdin",
-    "test-text": "cspell -v -c ./cspell-ext.json --local=en --languageId=* \"tests/*.txt\"",
+    "test-dict": "pipe-cmds \"hunspell-reader words -n 10000 src/hunspell/en_US-large.dic\" \"cspell -c ./cspell-ext.json --locale=en --languageId=* stdin\"",
+    "test-text": "cspell -c ./cspell-ext.json --locale=en --languageId=* \"tests/*.txt\"",
     "test": "pnpm run test-dict && pnpm run test-text",
     "gz": "cspell-tools-cli gzip \"*.trie\"",
     "prepare:dictionary": "pnpm gz",
@@ -24,7 +25,8 @@
   },
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/streetsidesoftware/cspell-dicts.git"
+    "url": "https://github.com/streetsidesoftware/cspell-dicts",
+    "directory": "dictionaries/en_US"
   },
   "keywords": [
     "cspell",
@@ -36,7 +38,7 @@
     "dictionary",
     "spelling"
   ],
-  "author": "Jason Dent",
+  "author": "Street Side Software <support@streetsidesoftware.nl>",
   "license": "MIT",
   "bugs": {
     "url": "https://github.com/streetsidesoftware/cspell-dicts/issues"
@@ -52,7 +54,7 @@
     "test": "tests"
   },
   "devDependencies": {
-    "@cspell/dict-en-shared": "workspace:*",
+    "@cspell/dict-en-shared": "workspace:^",
     "aoo-mozilla-en-dict": "github:marcoagpinto/aoo-mozilla-en-dict"
   }
 }

@@ -3,6 +3,48 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+## [2.1.8](https://github.com/streetsidesoftware/cspell-dicts/compare/@cspell/dict-sql@2.1.7...@cspell/dict-sql@2.1.8) (2024-10-11)
+
+
+### Updates and Bug Fixes
+
+* Update package git url ([#3667](https://github.com/streetsidesoftware/cspell-dicts/issues/3667)) ([629c7d0](https://github.com/streetsidesoftware/cspell-dicts/commit/629c7d0a5e1bacad1d3874b1f8372edc3494ef97))
+
+## [2.1.7](https://github.com/streetsidesoftware/cspell-dicts/compare/@cspell/dict-sql@2.1.6...@cspell/dict-sql@2.1.7) (2024-10-11)
+
+
+### Updates and Bug Fixes
+
+* Fix the git repository URL ([#3665](https://github.com/streetsidesoftware/cspell-dicts/issues/3665)) ([ac050b6](https://github.com/streetsidesoftware/cspell-dicts/commit/ac050b697d57820109995e92fac5ccc32ced1723))
+
+## [2.1.6](https://github.com/streetsidesoftware/cspell-dicts/compare/@cspell/dict-sql@2.1.5...@cspell/dict-sql@2.1.6) (2024-10-11)
+
+
+### Updates and Bug Fixes
+
+* Sign all dictionaries ([#3661](https://github.com/streetsidesoftware/cspell-dicts/issues/3661)) ([6b8d560](https://github.com/streetsidesoftware/cspell-dicts/commit/6b8d560cf51a593458ce42bca415859f872cfc97))
+
+## [2.1.5](https://github.com/streetsidesoftware/cspell-dicts/compare/@cspell/dict-sql@2.1.4...@cspell/dict-sql@2.1.5) (2024-08-06)
+
+
+### Updates and Bug Fixes
+
+* Workflow Bot -- Build Dictionaries ([#3440](https://github.com/streetsidesoftware/cspell-dicts/issues/3440)) ([35301dd](https://github.com/streetsidesoftware/cspell-dicts/commit/35301dd444f99324a40501f782b14f434512dfe4))
+
+## [2.1.4](https://github.com/streetsidesoftware/cspell-dicts/compare/@cspell/dict-sql@2.1.3...@cspell/dict-sql@2.1.4) (2024-08-04)
+
+
+### Updates and Bug Fixes
+
+* Add common terms to SQL ([#3439](https://github.com/streetsidesoftware/cspell-dicts/issues/3439)) ([4d4901e](https://github.com/streetsidesoftware/cspell-dicts/commit/4d4901e93bfa8a19fecd0205e660d1eddc788548))
+
+## [2.1.3](https://github.com/streetsidesoftware/cspell-dicts/compare/@cspell/dict-sql@2.1.2...@cspell/dict-sql@2.1.3) (2023-12-20)
+
+
+### Updates and Bug Fixes
+
+* [sql] Add "InnoDB" term ([#2821](https://github.com/streetsidesoftware/cspell-dicts/issues/2821)) ([cd95717](https://github.com/streetsidesoftware/cspell-dicts/commit/cd95717d7054e0768335951cfbb87ff1c5ff8a97))
+
 ## [2.1.2](https://github.com/streetsidesoftware/cspell-dicts/compare/@cspell/dict-sql@2.1.1...@cspell/dict-sql@2.1.2) (2023-10-11)
 
 

@@ -22,6 +22,71 @@ See [Conventional Commits](https://conventionalcommits.org) for commit guideline
 
 
 
+## [4.0.13](https://github.com/streetsidesoftware/cspell-dicts/compare/@cspell/dict-php@4.0.12...@cspell/dict-php@4.0.13) (2024-10-11)
+
+
+### Updates and Bug Fixes
+
+* Update package git url ([#3667](https://github.com/streetsidesoftware/cspell-dicts/issues/3667)) ([629c7d0](https://github.com/streetsidesoftware/cspell-dicts/commit/629c7d0a5e1bacad1d3874b1f8372edc3494ef97))
+
+## [4.0.12](https://github.com/streetsidesoftware/cspell-dicts/compare/@cspell/dict-php@4.0.11...@cspell/dict-php@4.0.12) (2024-10-11)
+
+
+### Updates and Bug Fixes
+
+* Fix the git repository URL ([#3665](https://github.com/streetsidesoftware/cspell-dicts/issues/3665)) ([ac050b6](https://github.com/streetsidesoftware/cspell-dicts/commit/ac050b697d57820109995e92fac5ccc32ced1723))
+
+## [4.0.11](https://github.com/streetsidesoftware/cspell-dicts/compare/@cspell/dict-php@4.0.10...@cspell/dict-php@4.0.11) (2024-10-11)
+
+
+### Updates and Bug Fixes
+
+* Sign all dictionaries ([#3661](https://github.com/streetsidesoftware/cspell-dicts/issues/3661)) ([6b8d560](https://github.com/streetsidesoftware/cspell-dicts/commit/6b8d560cf51a593458ce42bca415859f872cfc97))
+
+## [4.0.10](https://github.com/streetsidesoftware/cspell-dicts/compare/@cspell/dict-php@4.0.9...@cspell/dict-php@4.0.10) (2024-08-26)
+
+
+### Updates and Bug Fixes
+
+* Workflow Bot -- Build Dictionaries ([#3510](https://github.com/streetsidesoftware/cspell-dicts/issues/3510)) ([a684808](https://github.com/streetsidesoftware/cspell-dicts/commit/a684808a8e36f8fb5c5b2d282dc336206b520cd7))
+
+## [4.0.9](https://github.com/streetsidesoftware/cspell-dicts/compare/@cspell/dict-php@4.0.8...@cspell/dict-php@4.0.9) (2024-08-26)
+
+
+### Updates and Bug Fixes
+
+* Workflow Bot -- Build Dictionaries ([#3502](https://github.com/streetsidesoftware/cspell-dicts/issues/3502)) ([8e84a1a](https://github.com/streetsidesoftware/cspell-dicts/commit/8e84a1a7dd297f136b670c772634d476fbc7c762))
+
+## [4.0.8](https://github.com/streetsidesoftware/cspell-dicts/compare/@cspell/dict-php@4.0.7...@cspell/dict-php@4.0.8) (2024-06-08)
+
+
+### Updates and Bug Fixes
+
+* Update PHP dictionary ([#3272](https://github.com/streetsidesoftware/cspell-dicts/issues/3272)) ([8a81c98](https://github.com/streetsidesoftware/cspell-dicts/commit/8a81c981c0a5634e512e226df373aa9d52fbe51d))
+* Workflow Bot -- Build Dictionaries ([#3275](https://github.com/streetsidesoftware/cspell-dicts/issues/3275)) ([7569e95](https://github.com/streetsidesoftware/cspell-dicts/commit/7569e956420a7aafa17467b65c0c8a3ab69751f7))
+
+## [4.0.7](https://github.com/streetsidesoftware/cspell-dicts/compare/@cspell/dict-php@4.0.6...@cspell/dict-php@4.0.7) (2024-05-18)
+
+
+### Updates and Bug Fixes
+
+* Workflow Bot -- Build Dictionaries ([#3167](https://github.com/streetsidesoftware/cspell-dicts/issues/3167)) ([a94f73b](https://github.com/streetsidesoftware/cspell-dicts/commit/a94f73b4ff267e143d97208cf1c93b2b772bea51))
+
+## [4.0.6](https://github.com/streetsidesoftware/cspell-dicts/compare/@cspell/dict-php@4.0.5...@cspell/dict-php@4.0.6) (2024-02-09)
+
+
+### Updates and Bug Fixes
+
+* Workflow Bot -- Build Dictionaries ([#2982](https://github.com/streetsidesoftware/cspell-dicts/issues/2982)) ([28d4083](https://github.com/streetsidesoftware/cspell-dicts/commit/28d4083c238b330772186ff7bb25f8ace97e8e61))
+
+## [4.0.5](https://github.com/streetsidesoftware/cspell-dicts/compare/@cspell/dict-php@4.0.4...@cspell/dict-php@4.0.5) (2023-12-25)
+
+
+### Updates and Bug Fixes
+
+* [php] Add some vendor and package names ([#2836](https://github.com/streetsidesoftware/cspell-dicts/issues/2836)) ([2d6d4bd](https://github.com/streetsidesoftware/cspell-dicts/commit/2d6d4bd42087f7e0e413ef1f01dd2d601b0c6eb3))
+* Workflow Bot -- Build Dictionaries ([#2843](https://github.com/streetsidesoftware/cspell-dicts/issues/2843)) ([d430c85](https://github.com/streetsidesoftware/cspell-dicts/commit/d430c8564e2238615ebc0a83aeaa941a499b9360))
+
 ## [4.0.4](https://github.com/streetsidesoftware/cspell-dicts/compare/@cspell/dict-php@4.0.3...@cspell/dict-php@4.0.4) (2023-10-18)
 
 

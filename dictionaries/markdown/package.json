@@ -1,9 +1,10 @@
 {
   "name": "@cspell/dict-markdown",
-  "version": "2.0.1",
+  "version": "2.0.7",
   "description": "Markdown dictionary for cspell.",
   "publishConfig": {
-    "access": "public"
+    "access": "public",
+    "provenance": true
   },
   "exports": {
     ".": "./cspell-ext.json",
@@ -11,16 +12,16 @@
     "./cspell-ext.json": "./cspell-ext.json"
   },
   "scripts": {
-    "build": "cross-env NODE_OPTIONS=--max_old_space_size=8192 cspell-tools-cli compile \"src/markdown.txt\" -o .",
-    "test": "pnpm run test-dict && pnpm run test-check",
-    "test-dict": "shx head -n 1000 \"src/markdown.txt\" | cspell -v -c ./cspell-ext.json \"--local=*\" \"--languageId=markdown\" stdin",
+    "build": "cspell-tools-cli build",
+    "test": "pnpm run test-check",
     "test-check": "ava",
     "prepublishOnly": "echo pre-publish",
     "prepare:dictionary": "pnpm run build"
   },
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/streetsidesoftware/cspell-dicts.git"
+    "url": "https://github.com/streetsidesoftware/cspell-dicts",
+    "directory": "dictionaries/markdown"
   },
   "keywords": [
     "cspell",
@@ -30,7 +31,7 @@
     "dictionary",
     "spelling"
   ],
-  "author": "Jason Dent",
+  "author": "Street Side Software <support@streetsidesoftware.nl>",
   "license": "MIT",
   "bugs": {
     "url": "https://github.com/streetsidesoftware/cspell-dicts/issues"
@@ -38,9 +39,16 @@
   "homepage": "https://github.com/streetsidesoftware/cspell-dicts/blob/main/dictionaries/markdown#readme",
   "devDependencies": {},
   "dependencies": {},
+  "peerDependencies": {
+    "@cspell/dict-css": "workspace:^",
+    "@cspell/dict-html": "workspace:^",
+    "@cspell/dict-html-symbol-entities": "workspace:^",
+    "@cspell/dict-typescript": "workspace:^"
+  },
   "files": [
     "markdown.txt.gz",
     "cspell-ext.json",
+    "cspell-ext.yaml",
     "*.js",
     "*.d.ts"
   ]

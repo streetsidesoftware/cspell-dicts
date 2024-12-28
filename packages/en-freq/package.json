@@ -1,0 +1,49 @@
+{
+  "name": "@internal/en-freq",
+  "version": "1.0.0",
+  "description": "English Word Frequency List",
+  "private": true,
+  "keywords": [],
+  "author": "Street Side Software",
+  "license": "MIT",
+  "bin": {
+    "ngram": "./nGram.mjs"
+  },
+  "type": "module",
+  "module": "dist/index.js",
+  "exports": {
+    ".": "./dist/index.js",
+    "./index.js": "./dist/index.js",
+    "./nGram.mjs": "./nGram.mjs",
+    "./en-freq.tsv": "./dict/en-freq.tsv"
+  },
+  "scripts": {
+    "build": "tsc -p .",
+    "watch": "tsc -p . --watch",
+    "test": "echo \"Error: no test specified\"",
+    "prepare:dictionary": "pnpm run build"
+  },
+  "devDependencies": {
+    "@tsconfig/node20": "^20.1.4",
+    "@types/node": "^20.17.10",
+    "typescript": "^5.7.2"
+  },
+  "dependencies": {
+    "@cspell/cspell-pipe": "^8.17.1",
+    "as-table": "^1.0.55",
+    "chalk": "^5.4.1",
+    "commander": "^12.1.0",
+    "cspell-trie-lib": "^8.17.1",
+    "globby": "^14.0.2"
+  },
+  "files": [
+    "dict/**",
+    "dist/**/*.mjs",
+    "dist/**/*.js",
+    "!**/*.test.*",
+    "!**/*.map"
+  ],
+  "engines": {
+    "node": ">=18"
+  }
+}

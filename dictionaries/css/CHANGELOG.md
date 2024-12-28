@@ -22,6 +22,35 @@ See [Conventional Commits](https://conventionalcommits.org) for commit guideline
 
 
 
+## [4.0.16](https://github.com/streetsidesoftware/cspell-dicts/compare/@cspell/dict-css@4.0.15...@cspell/dict-css@4.0.16) (2024-10-11)
+
+
+### Updates and Bug Fixes
+
+* Update package git url ([#3667](https://github.com/streetsidesoftware/cspell-dicts/issues/3667)) ([629c7d0](https://github.com/streetsidesoftware/cspell-dicts/commit/629c7d0a5e1bacad1d3874b1f8372edc3494ef97))
+
+## [4.0.15](https://github.com/streetsidesoftware/cspell-dicts/compare/@cspell/dict-css@4.0.14...@cspell/dict-css@4.0.15) (2024-10-11)
+
+
+### Updates and Bug Fixes
+
+* Fix the git repository URL ([#3665](https://github.com/streetsidesoftware/cspell-dicts/issues/3665)) ([ac050b6](https://github.com/streetsidesoftware/cspell-dicts/commit/ac050b697d57820109995e92fac5ccc32ced1723))
+
+## [4.0.14](https://github.com/streetsidesoftware/cspell-dicts/compare/@cspell/dict-css@4.0.13...@cspell/dict-css@4.0.14) (2024-10-11)
+
+
+### Updates and Bug Fixes
+
+* Sign all dictionaries ([#3661](https://github.com/streetsidesoftware/cspell-dicts/issues/3661)) ([6b8d560](https://github.com/streetsidesoftware/cspell-dicts/commit/6b8d560cf51a593458ce42bca415859f872cfc97))
+
+## [4.0.13](https://github.com/streetsidesoftware/cspell-dicts/compare/@cspell/dict-css@4.0.12...@cspell/dict-css@4.0.13) (2024-08-12)
+
+
+### Updates and Bug Fixes
+
+* add lowercase version of `text-rendering` values ([#3457](https://github.com/streetsidesoftware/cspell-dicts/issues/3457)) ([5808186](https://github.com/streetsidesoftware/cspell-dicts/commit/58081864b619b9dadcbc089b360e512cd6be42c7))
+* Workflow Bot -- Build Dictionaries ([#3462](https://github.com/streetsidesoftware/cspell-dicts/issues/3462)) ([a75889e](https://github.com/streetsidesoftware/cspell-dicts/commit/a75889e8da2597f16130a74725d0e3d479c4aa13))
+
 ## [4.0.12](https://github.com/streetsidesoftware/cspell-dicts/compare/@cspell/dict-css@4.0.11...@cspell/dict-css@4.0.12) (2023-10-05)
 
 

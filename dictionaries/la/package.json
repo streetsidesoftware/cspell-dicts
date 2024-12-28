@@ -1,0 +1,51 @@
+{
+  "name": "@cspell/dict-la",
+  "version": "1.0.3",
+  "description": "Latin dictionary for cspell.",
+  "publishConfig": {
+    "access": "public",
+    "provenance": true
+  },
+  "exports": {
+    ".": "./cspell-ext.json",
+    "./cspell": "./cspell-ext.json",
+    "./cspell-ext.json": "./cspell-ext.json"
+  },
+  "scripts": {
+    "build": "cspell-tools-cli build && pnpm gz",
+    "build:conditional": "cspell-tools-cli build --conditional && pnpm gz",
+    "test:dic": "pipe-cmds \"hunspell-reader words -n 1000 \\\"src/hunspell/la.dic\\\"\" \"cspell -c ./cspell-ext.json \\\"--locale=la,la-VA\\\" \\\"--languageId=*\\\" stdin\"",
+    "test:samples": "cspell samples",
+    "test": "pnpm test:dic && pnpm test:samples",
+    "gz": "cspell-tools-cli gzip \"*.trie\"",
+    "prepare:dictionary": "pnpm gz",
+    "prepublishOnly": "echo pre-publish"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/streetsidesoftware/cspell-dicts",
+    "directory": "dictionaries/la"
+  },
+  "keywords": [
+    "cspell",
+    "cspell-ext",
+    "la",
+    "Latin",
+    "dictionary",
+    "spelling"
+  ],
+  "author": "Street Side Software <support@streetsidesoftware.nl>",
+  "contributors": [],
+  "license": "GPL-3.0+",
+  "bugs": {
+    "url": "https://github.com/streetsidesoftware/cspell-dicts/issues"
+  },
+  "homepage": "https://github.com/streetsidesoftware/cspell-dicts/blob/main/dictionaries/la#readme",
+  "devDependencies": {},
+  "dependencies": {},
+  "files": [
+    "la.trie.gz",
+    "src/hunspell/la_license.txt",
+    "cspell-ext.json"
+  ]
+}

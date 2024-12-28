@@ -1,9 +1,10 @@
 {
   "name": "@cspell/dict-cpp",
-  "version": "5.0.9",
+  "version": "6.0.2",
   "description": "C/C++ Dictionary dictionary for cspell.",
   "publishConfig": {
-    "access": "public"
+    "access": "public",
+    "provenance": true
   },
   "exports": {
     ".": "./cspell-ext.json",
@@ -12,13 +13,16 @@
   },
   "scripts": {
     "build": "cspell-tools-cli build",
-    "test": "shx head -n 1000 \"src/cpp.txt\" | cspell -v -c ./cspell-ext.json --local=* --languageId=cpp stdin",
+    "test": "pnpm test-samples && pnpm test-src",
+    "test-samples": "cspell samples",
+    "test-src": "shx head -n 10000 \"src/cpp.txt\" | cspell -c ./cspell-ext.json --locale=* --languageId=cpp stdin",
     "prepublishOnly": "echo pre-publish",
     "prepare:dictionary": "pnpm run build"
   },
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/streetsidesoftware/cspell-dicts.git"
+    "url": "https://github.com/streetsidesoftware/cspell-dicts",
+    "directory": "dictionaries/cpp"
   },
   "keywords": [
     "cspell",
@@ -29,7 +33,7 @@
     "dictionary",
     "spelling"
   ],
-  "author": "Jason Dent",
+  "author": "Street Side Software <support@streetsidesoftware.nl>",
   "license": "MIT",
   "bugs": {
     "url": "https://github.com/streetsidesoftware/cspell-dicts/issues"

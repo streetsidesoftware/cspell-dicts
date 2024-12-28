@@ -2,23 +2,50 @@
 
 targets:
   - name: python
-    # "build-python": "cspell-tools-cli compile \"src/python/*.txt\" \"src/additional_words.txt\" --split --keep-raw-case --merge python -o .",
     sources:
       - filename: src/python/python-lib.txt
+        allowedSplitWords:
+          - ../en_US/en_US.trie
+          - ../software-terms/dict/softwareTerms.txt
+          - src/additional_words.txt
+          - src/common_packages.txt
+          - src/common/extra.txt
+          - src/python/python-lib.txt
+          - src/python/python.txt
         split: true
       - filename: src/python/python.txt
+        allowedSplitWords:
+          - ../en_US/en_US.trie
+          - ../software-terms/dict/softwareTerms.txt
+          - src/additional_words.txt
+          - src/common_packages.txt
+          - src/common/extra.txt
+          - src/python/python-lib.txt
+          - src/python/python.txt
         split: true
       - src/additional_words.txt
-      - src/common_packages.txt
+      - filename: src/common_packages.txt
+        split: true
+        allowedSplitWords:
+          - ../en_US/en_US.trie
+          - ../software-terms/dict/softwareTerms.txt
+          - src/additional_words.txt
+          - src/common_packages.txt
+          - src/common/extra.txt
+          - src/python/python-lib.txt
+          - src/python/python.txt
       - src/data_science.txt
+      - src/legacy.txt
     format: plaintext
-    targetDirectory: "."
-    compress: true
+    targetDirectory: './dict'
+    compress: false
+    sort: true
 
   - name: python-common
     # "build-common": "cspell-tools-cli compile \"src/common/*.txt\" --keep-raw-case --merge python-common -o .",
     sources:
       - src/common/extra.txt
-    targetDirectory: .
+    targetDirectory: ./dict
     format: plaintext
-    compress: true
+    compress: false
+    sort: true

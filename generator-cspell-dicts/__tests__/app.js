@@ -1,4 +1,3 @@
-/* eslint-env jest */
 'use strict';
 var path = require('path');
 var assert = require('yeoman-assert');

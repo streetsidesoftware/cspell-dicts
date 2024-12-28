@@ -4,12 +4,13 @@
     ],
     "ignorePaths": [
         "/src/cpp.txt",
-        "cpp-legacy.txt",
+        "/src/cpp-legacy.txt",
         "dict"
     ],
     "dictionaries": [
         "cpp",
-        "cpp-refined"
+        "cpp-refined",
+        "cpp-legacy"
     ],
     "import": [
         "./cspell-ext.json"
@@ -24,7 +25,7 @@
             ]
         },
         {
-            "filename": "src/cpp.txt",
+            "filename": "src/cpp*.txt",
             "enabled": false
         }
     ],

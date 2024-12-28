@@ -1,9 +1,10 @@
 {
   "name": "@cspell/dict-python",
-  "version": "4.1.10",
+  "version": "4.2.13",
   "description": "Python dictionary for cspell.",
   "publishConfig": {
-    "access": "public"
+    "access": "public",
+    "provenance": true
   },
   "exports": {
     ".": "./cspell-ext.json",
@@ -12,8 +13,8 @@
   },
   "scripts": {
     "build": "pnpm cspell-tools-cli build",
-    "test-dictionary": "cspell -v -c ./cspell-ext.json --local=en --languageId=python \"src/python/py*.txt\"",
-    "test-samples": "cspell -v -c ./cspell-ext.json \"samples/**/*.py\"",
+    "test-dictionary": "cspell -c ./cspell-ext.json --locale=en --languageId=python \"src/python/py*.txt\"",
+    "test-samples": "cspell -c ./cspell-ext.json \"samples/**/*{.py,.txt}\"",
     "test": "pnpm run test-dictionary && pnpm run test-samples",
     "update-python-lib": "./scripts/fetch-python.sh",
     "prepublishOnly": "echo pre-publish",
@@ -21,7 +22,8 @@
   },
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/streetsidesoftware/cspell-dicts.git"
+    "url": "https://github.com/streetsidesoftware/cspell-dicts",
+    "directory": "dictionaries/python"
   },
   "keywords": [
     "cspell",
@@ -31,7 +33,7 @@
     "dictionary",
     "spelling"
   ],
-  "author": "Jason Dent",
+  "author": "Street Side Software <support@streetsidesoftware.nl>",
   "license": "MIT",
   "bugs": {
     "url": "https://github.com/streetsidesoftware/cspell-dicts/issues"
@@ -41,8 +43,8 @@
     "@cspell/dict-data-science": "workspace:^"
   },
   "files": [
-    "python.txt.gz",
-    "python-common.txt.gz",
+    "dict/python.txt",
+    "dict/python-common.txt",
     "cspell-ext.json"
   ]
 }
