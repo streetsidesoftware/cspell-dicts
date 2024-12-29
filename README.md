@@ -34,7 +34,7 @@ Various [cspell](https://github.com/streetsidesoftware/cspell) dictionaries. Eac
 - [English - British](dictionaries/en_GB)**<sup>\*</sup>**
 - [English - British (Limited)](dictionaries/en_GB-MIT)
 - [English - Canadian](dictionaries/en_CA)
-- [English Shared](dictionaries/en_shared)
+- [English - Shared](dictionaries/en_shared)
 - [Esperanto](dictionaries/eo)
 - [Estonian](dictionaries/et-EE)
 - [Finnish](dictionaries/fi_FI)
@@ -184,7 +184,7 @@ Various [cspell](https://github.com/streetsidesoftware/cspell) dictionaries. Eac
 | [@cspell/dict-en-common-misspellings](./dictionaries/en-common-misspellings#readme) |                                                                                                  | English - Common Misspellings     | Common English misspellings dictionary for cspell.             |
 | [@cspell/dict-en-gb](./dictionaries/en_GB#readme)                                   | en-gb                                                                                            | English - British                 | British English Dictionary                                     |
 | [@cspell/dict-en-gb-mit](./dictionaries/en_GB-MIT#readme)                           | en-gb-mit                                                                                        | English - British (Limited)       | British English Dictionary with MIT License                    |
-| [@cspell/dict-en-shared](./dictionaries/en_shared#readme)                           | en-shared                                                                                        | English Shared                    | English words shared between the various English dictionaries. |
+| [@cspell/dict-en-shared](./dictionaries/en_shared#readme)                           | en-shared                                                                                        | English - Shared                  | English words shared between the various English dictionaries. |
 | [@cspell/dict-eo](./dictionaries/eo#readme)                                         | eo                                                                                               | Esperanto                         | Esperanto dictionary for cspell.                               |
 | [@cspell/dict-es-es](./dictionaries/es_ES#readme)                                   | es-es                                                                                            | Spanish Dictionary (Spain)        | Spanish Dictionary (Spain)                                     |
 | [@cspell/dict-et-ee](./dictionaries/et-EE#readme)                                   | et-ee                                                                                            | Estonian                          | Estonian dictionary for cspell.                                |
