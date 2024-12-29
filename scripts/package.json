@@ -6,6 +6,7 @@
   "type": "module",
   "bin": {
     "sort-source": "sort-source.mjs",
+    "gen-dictionary-info": "gen-dictionary-info.mjs",
     "update-package-json": "update-package-json.mjs",
     "update-contributors": "update-contributors.mjs",
     "pipe-cmds": "pipe-cmds.mjs"
@@ -17,11 +18,19 @@
   "author": "",
   "license": "MIT",
   "dependencies": {
+    "@cspell/cspell-bundled-dicts": "^8.17.1",
     "commander": "^12.1.0",
     "globby": "^14.0.2",
+    "json5": "2.2.3",
+    "remark": "^15.0.1",
+    "remark-gfm": "^4.0.0",
     "shelljs": "^0.8.5"
   },
   "engines": {
     "node": ">=18.0.0"
+  },
+  "devDependencies": {
+    "@cspell/cspell-types": "^8.17.1",
+    "@types/mdast": "^4.0.4"
   }
 }

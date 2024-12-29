@@ -1,9 +1,8 @@
 #!/usr/bin/env node
 
 import fs from 'node:fs/promises';
-import { globby } from 'globby';
 
-const rootUrl = new URL('../', import.meta.url);
+import { findDictionaryPackages } from './lib/find-dictionary-packages.mjs';
 
 /**
  * Update fields in the package.json file.
@@ -35,9 +34,7 @@ async function updatePackageJson(pkgFile) {
 async function run() {
     console.log('Updating package.json files...\n');
 
-    const glob = process.argv[2] || 'dictionaries/*/package.json';
-
-    const files = await globby(glob, { cwd: rootUrl, absolute: true });
+    const files = await findDictionaryPackages(process.argv[2]);
 
     if (!files.length) {
         console.log('No package.json files found.');
