@@ -38,6 +38,25 @@
     ]
   },
   {
+    "name": "Arabic",
+    "dir": "dictionaries/ar",
+    "packageName": "@cspell/dict-ar",
+    "description": "Arabic dictionary for CSpell.",
+    "bundled": false,
+    "categories": [
+      "natural-language"
+    ],
+    "dictionaries": [
+      {
+        "name": "ar",
+        "description": "Arabic dictionary for CSpell.",
+        "locales": [
+          "ar"
+        ]
+      }
+    ]
+  },
+  {
     "name": "AWS",
     "dir": "dictionaries/aws",
     "packageName": "@cspell/dict-aws",
@@ -70,25 +89,6 @@
         "description": "Bash dictionary for cspell.",
         "fileTypes": [
           "shellscript"
-        ]
-      }
-    ]
-  },
-  {
-    "name": "Arabic",
-    "dir": "dictionaries/ar",
-    "packageName": "@cspell/dict-ar",
-    "description": "Arabic dictionary for CSpell.",
-    "bundled": false,
-    "categories": [
-      "natural-language"
-    ],
-    "dictionaries": [
-      {
-        "name": "ar",
-        "description": "Arabic dictionary for CSpell.",
-        "locales": [
-          "ar"
         ]
       }
     ]
@@ -559,15 +559,6 @@
     ]
   },
   {
-    "name": "English - Common Misspellings",
-    "dir": "dictionaries/en-common-misspellings",
-    "packageName": "@cspell/dict-en-common-misspellings",
-    "description": "Common English misspellings dictionary for cspell.",
-    "bundled": true,
-    "categories": [],
-    "dictionaries": []
-  },
-  {
     "name": "Australian English Dictionary",
     "dir": "dictionaries/en_AU",
     "packageName": "@cspell/dict-en-au",
@@ -644,6 +635,25 @@
     ]
   },
   {
+    "name": "en_shared",
+    "dir": "dictionaries/en_shared",
+    "packageName": "@cspell/dict-en-shared",
+    "description": "English words shared between the various English dictionaries.",
+    "bundled": false,
+    "categories": [
+      "natural-language"
+    ],
+    "dictionaries": [
+      {
+        "name": "en-shared",
+        "description": "English words shared between the various English dictionaries.",
+        "locales": [
+          "en"
+        ]
+      }
+    ]
+  },
+  {
     "name": "American English Dictionary",
     "dir": "dictionaries/en_US",
     "packageName": "@cspell/dict-en_us",
@@ -664,23 +674,13 @@
     ]
   },
   {
-    "name": "en_shared",
-    "dir": "dictionaries/en_shared",
-    "packageName": "@cspell/dict-en-shared",
-    "description": "English words shared between the various English dictionaries.",
-    "bundled": false,
-    "categories": [
-      "natural-language"
-    ],
-    "dictionaries": [
-      {
-        "name": "en-shared",
-        "description": "English words shared between the various English dictionaries.",
-        "locales": [
-          "en"
-        ]
-      }
-    ]
+    "name": "English - Common Misspellings",
+    "dir": "dictionaries/en-common-misspellings",
+    "packageName": "@cspell/dict-en-common-misspellings",
+    "description": "Common English misspellings dictionary for cspell.",
+    "bundled": true,
+    "categories": [],
+    "dictionaries": []
   },
   {
     "name": "Esperanto",

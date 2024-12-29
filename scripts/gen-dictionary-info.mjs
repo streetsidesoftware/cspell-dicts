@@ -14,6 +14,7 @@ async function run() {
     const packages = await findDictionaryPackages();
 
     const packageInfo = await Promise.all(packages.map((file) => fetchDictionaryInfo(pathToFileURL(file))));
+    packageInfo.sort((a, b) => a.dir.localeCompare(b.dir));
 
     await fs.writeFile(
         new URL('static/dictionary-packages.json', rootUrl),

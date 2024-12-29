@@ -19,7 +19,7 @@ const categoryToTitle = new Map([
  * @returns {Promise<string>}
  */
 export async function packageInfoToMarkdown(packages) {
-    packages = packages.sort((a, b) => a.name.localeCompare(b.name));
+    packages = [...packages].sort((a, b) => a.name.localeCompare(b.name));
     const seen = new Set();
     const categories = new Set(['natural-language', 'programming', 'other']);
     const byCategory = groupByCategory(packages);
@@ -53,6 +53,7 @@ export async function packageInfoToMarkdown(packages) {
  * @returns {string}
  */
 function extractDictionaryTable(packages) {
+    packages = [...packages].sort((a, b) => a.packageName.localeCompare(b.packageName));
     return `
 ## All Dictionaries
 
