@@ -3,6 +3,15 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+## [4.2.2](https://github.com/streetsidesoftware/cspell-dicts/compare/@cspell/dict-software-terms@4.2.1...@cspell/dict-software-terms@4.2.2) (2024-12-30)
+
+
+### Updates and Bug Fixes
+
+* Add `docSearch` to coding-terms.txt ([#3950](https://github.com/streetsidesoftware/cspell-dicts/issues/3950)) ([fef9bf4](https://github.com/streetsidesoftware/cspell-dicts/commit/fef9bf433c382c28ef3b10710921abb0919b83ef))
+* Adjust dictionary names ([#3958](https://github.com/streetsidesoftware/cspell-dicts/issues/3958)) ([8a96533](https://github.com/streetsidesoftware/cspell-dicts/commit/8a96533bec21280103740868b81559437c413501))
+* Workflow Bot -- Build Dictionaries ([#3949](https://github.com/streetsidesoftware/cspell-dicts/issues/3949)) ([398b727](https://github.com/streetsidesoftware/cspell-dicts/commit/398b727fbb12431be9f23348eadf54a79bfc5589))
+
 ## [4.2.1](https://github.com/streetsidesoftware/cspell-dicts/compare/@cspell/dict-software-terms@4.2.0...@cspell/dict-software-terms@4.2.1) (2024-12-27)
 
 
