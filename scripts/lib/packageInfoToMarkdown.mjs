@@ -42,7 +42,10 @@ export async function packageInfoToMarkdown(packages) {
         md += formatCategory(category, filtered);
     }
 
-    md += '\n\n<sup>*</sup> Bundled with CSpell\n\n';
+    md +=
+        '\n\n' +
+        '<sup>1</sup> Bundled with CSpell.<br>' +
+        '<sup>2</sup> Dictionaries are enabled when packages is imported.\n\n';
     md += extractDictionaryTable(packages);
 
     return formatMarkdown(md);
@@ -91,7 +94,7 @@ function formatCategory(category, packages) {
  * @returns {string}
  */
 function formatPackage(pkg) {
-    return `- [${pkg.name}](${pkg.dir}) - <small>${pkg.description}</small>${pkg.cspell ? '**<sup>*</sup>**' : ''}`;
+    return `- [${pkg.name}](${pkg.dir}) - <small>${pkg.description}</small> ${pkg.cspell ? '<sup>1</sup>' : ''} ${pkg.hasEnabledByDefault ? '<sup>2</sup>' : ''}`;
 }
 
 /**

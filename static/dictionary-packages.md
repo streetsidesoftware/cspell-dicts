@@ -12,12 +12,12 @@
 - [Czech](dictionaries/cs_CZ) - <small>Czech dictionary.</small>
 - [Danish Dictionary](dictionaries/da_DK) - <small>Danish (da-DK) Dictionary.</small>
 - [Dutch (Netherlands) Dictionary](dictionaries/nl_NL) - <small>Dutch (Netherlands) Dictionary</small>
-- [English - American](dictionaries/en_US) - <small>American English Dictionary</small>**<sup>\*</sup>**
+- [English - American](dictionaries/en_US) - <small>American English Dictionary</small> <sup>1</sup>
 - [English - Australian](dictionaries/en_AU) - <small>Australian English Dictionary</small>
-- [English - British](dictionaries/en_GB) - <small>British English Dictionary</small>**<sup>\*</sup>**
+- [English - British](dictionaries/en_GB) - <small>British English Dictionary</small> <sup>1</sup>
 - [English - British (Limited)](dictionaries/en_GB-MIT) - <small>British English Dictionary with MIT License</small>
 - [English - Canadian](dictionaries/en_CA) - <small>Canadian English Dictionary</small>
-- [English - Common Misspellings](dictionaries/en-common-misspellings) - <small>Common English misspellings dictionary.</small>**<sup>\*</sup>**
+- [English - Common Misspellings](dictionaries/en-common-misspellings) - <small>Common English misspellings dictionary.</small> <sup>1</sup>
 - [English - Shared](dictionaries/en_shared) - <small>English words shared between the various English dictionaries.</small>
 - [Esperanto](dictionaries/eo) - <small>Esperanto dictionary.</small>
 - [Estonian](dictionaries/et-EE) - <small>Estonian dictionary.</small>
@@ -33,7 +33,7 @@
 - [Latin](dictionaries/la) - <small>Latin dictionary.</small>
 - [Latvian](dictionaries/lv) - <small>Latvian dictionary.</small>
 - [Lithuanian](dictionaries/lt_LT) - <small>Lithuanian dictionary.</small>
-- [Lorem-ipsum](dictionaries/lorem-ipsum) - <small>Lorem-ipsum dictionary.</small>**<sup>\*</sup>**
+- [Lorem-ipsum](dictionaries/lorem-ipsum) - <small>Lorem-ipsum dictionary.</small> <sup>1</sup>
 - [Macedonian](dictionaries/mk) - <small>Macedonian dictionary.</small>
 - [Norwegian Bokmål](dictionaries/nb_NO) - <small>Norwegian Bokmål dictionary.</small>
 - [Persian Dictionary](dictionaries/fa_IR) - <small>Persian Dictionary</small>
@@ -56,81 +56,81 @@
 
 ## Programming Dictionaries
 
-- [.Net](dictionaries/dotnet) - <small>.Net keywords Dictionary.</small>**<sup>\*</sup>**
-- [Ada](dictionaries/ada) - <small>Ada Language Dictionary</small>**<sup>\*</sup>**
-- [AL](dictionaries/al) - <small>AL (Microsoft Business Central) Dictionary</small>**<sup>\*</sup>**
-- [bash](dictionaries/bash) - <small>Bash dictionary.</small>**<sup>\*</sup>**
-- [C/C++](dictionaries/cpp) - <small>C/C++ Keywords and common library functions.</small>**<sup>\*</sup>**
-- [C#](dictionaries/csharp) - <small>C# dictionary.</small>**<sup>\*</sup>**
+- [.Net](dictionaries/dotnet) - <small>.Net keywords Dictionary.</small> <sup>1</sup>
+- [Ada](dictionaries/ada) - <small>Ada Language Dictionary</small> <sup>1</sup>
+- [AL](dictionaries/al) - <small>AL (Microsoft Business Central) Dictionary</small> <sup>1</sup>
+- [bash](dictionaries/bash) - <small>Bash dictionary.</small> <sup>1</sup>
+- [C/C++](dictionaries/cpp) - <small>C/C++ Keywords and common library functions.</small> <sup>1</sup>
+- [C#](dictionaries/csharp) - <small>C# dictionary.</small> <sup>1</sup>
 - [Clojure](dictionaries/clojure) - <small>Clojure dictionary.</small>
-- [CSS](dictionaries/css) - <small>CSS dictionary.</small>**<sup>\*</sup>**
-- [Dart](dictionaries/dart) - <small>Dart dictionary.</small>**<sup>\*</sup>**
+- [CSS](dictionaries/css) - <small>CSS dictionary.</small> <sup>1</sup>
+- [Dart](dictionaries/dart) - <small>Dart dictionary.</small> <sup>1</sup>
 - [Data Science](dictionaries/data-science) - <small>Data Science dictionary.</small>
-- [Django](dictionaries/django) - <small>List of Python Django Framework keywords.</small>**<sup>\*</sup>**
-- [Docker](dictionaries/docker) - <small>Docker dictionary.</small>**<sup>\*</sup>**
-- [Elixir](dictionaries/elixir) - <small>Elixir dictionary.</small>**<sup>\*</sup>**
+- [Django](dictionaries/django) - <small>List of Python Django Framework keywords.</small> <sup>1</sup>
+- [Docker](dictionaries/docker) - <small>Docker dictionary.</small> <sup>1</sup>
+- [Elixir](dictionaries/elixir) - <small>Elixir dictionary.</small> <sup>1</sup>
 - [Emacs Lisp](dictionaries/elisp) - <small>Emacs Lisp dictionary.</small>
-- [F#](dictionaries/fsharp) - <small>F# dictionary.</small>**<sup>\*</sup>**
-- [Flutter](dictionaries/flutter) - <small>Flutter dictionary.</small>**<sup>\*</sup>**
-- [Fullstack](dictionaries/fullstack) - <small>Common words encountered during fullstack development</small>**<sup>\*</sup>**
-- [Go Language](dictionaries/golang) - <small>Go Language Dictionary</small>**<sup>\*</sup>**
-- [Haskell](dictionaries/haskell) - <small>Haskell dictionary.</small>**<sup>\*</sup>**
-- [HTML](dictionaries/html) - <small>HTML dictionary.</small>**<sup>\*</sup>**
-- [HTML Symbol Entities](dictionaries/html-symbol-entities) - <small>HTML Symbol Entities Dictionary</small>**<sup>\*</sup>**
-- [Java](dictionaries/java) - <small>Java dictionary.</small>**<sup>\*</sup>**
-- [Julia](dictionaries/julia) - <small>Julia function and keyword dictionary</small>**<sup>\*</sup>**
-- [K8s](dictionaries/k8s) - <small>K8s dictionary.</small>**<sup>\*</sup>**
+- [F#](dictionaries/fsharp) - <small>F# dictionary.</small> <sup>1</sup>
+- [Flutter](dictionaries/flutter) - <small>Flutter dictionary.</small> <sup>1</sup>
+- [Fullstack](dictionaries/fullstack) - <small>Common words encountered during fullstack development</small> <sup>1</sup>
+- [Go Language](dictionaries/golang) - <small>Go Language Dictionary</small> <sup>1</sup>
+- [Haskell](dictionaries/haskell) - <small>Haskell dictionary.</small> <sup>1</sup>
+- [HTML](dictionaries/html) - <small>HTML dictionary.</small> <sup>1</sup>
+- [HTML Symbol Entities](dictionaries/html-symbol-entities) - <small>HTML Symbol Entities Dictionary</small> <sup>1</sup>
+- [Java](dictionaries/java) - <small>Java dictionary.</small> <sup>1</sup>
+- [Julia](dictionaries/julia) - <small>Julia function and keyword dictionary</small> <sup>1</sup>
+- [K8s](dictionaries/k8s) - <small>K8s dictionary.</small> <sup>1</sup>
 - [Kotlin](dictionaries/kotlin) - <small>Kotlin dictionary.</small>
-- [LaTeX](dictionaries/latex) - <small>LaTeX cspell dictionary</small>**<sup>\*</sup>**
-- [Lua](dictionaries/lua) - <small>Lua dictionary.</small>**<sup>\*</sup>**
-- [Makefile](dictionaries/makefile) - <small>Makefile dictionary.</small>**<sup>\*</sup>**
+- [LaTeX](dictionaries/latex) - <small>LaTeX cspell dictionary</small> <sup>1</sup>
+- [Lua](dictionaries/lua) - <small>Lua dictionary.</small> <sup>1</sup>
+- [Makefile](dictionaries/makefile) - <small>Makefile dictionary.</small> <sup>1</sup>
 - [Mnemonics](dictionaries/mnemonics) - <small>i86 Mnemonics dictionary for cspell</small>
-- [Monkey C](dictionaries/monkeyc) - <small>Monkey C dictionary.</small>**<sup>\*</sup>**
-- [Node.js](dictionaries/node) - <small>Node.js dictionary.</small>**<sup>\*</sup>**
-- [NPM](dictionaries/npm) - <small>Dictionary of Common Javascript Packages.</small>**<sup>\*</sup>**
-- [PHP](dictionaries/php) - <small>Php dictionary.</small>**<sup>\*</sup>**
-- [PowerShell](dictionaries/powershell) - <small>PowerShell Keyword Dictionary</small>**<sup>\*</sup>**
-- [Python](dictionaries/python) - <small>Python Keyword Dictionary</small>**<sup>\*</sup>**
-- [R](dictionaries/r) - <small>R dictionary.</small>**<sup>\*</sup>**
-- [Ruby](dictionaries/ruby) - <small>For ruby and ruby on rails</small>**<sup>\*</sup>**
-- [Rust](dictionaries/rust) - <small>Rust Keyword Dictionary</small>**<sup>\*</sup>**
-- [Scala](dictionaries/scala) - <small>Scala dictionary.</small>**<sup>\*</sup>**
+- [Monkey C](dictionaries/monkeyc) - <small>Monkey C dictionary.</small> <sup>1</sup>
+- [Node.js](dictionaries/node) - <small>Node.js dictionary.</small> <sup>1</sup>
+- [NPM](dictionaries/npm) - <small>Dictionary of Common Javascript Packages.</small> <sup>1</sup>
+- [PHP](dictionaries/php) - <small>Php dictionary.</small> <sup>1</sup>
+- [PowerShell](dictionaries/powershell) - <small>PowerShell Keyword Dictionary</small> <sup>1</sup>
+- [Python](dictionaries/python) - <small>Python Keyword Dictionary</small> <sup>1</sup>
+- [R](dictionaries/r) - <small>R dictionary.</small> <sup>1</sup>
+- [Ruby](dictionaries/ruby) - <small>For ruby and ruby on rails</small> <sup>1</sup>
+- [Rust](dictionaries/rust) - <small>Rust Keyword Dictionary</small> <sup>1</sup>
+- [Scala](dictionaries/scala) - <small>Scala dictionary.</small> <sup>1</sup>
 - [ShellScript](dictionaries/shell) - <small>ShellScript dictionary.</small>
-- [SQL](dictionaries/sql) - <small>SQL dictionary.</small>**<sup>\*</sup>**
-- [Svelte](dictionaries/svelte) - <small>Svelte dictionary.</small>**<sup>\*</sup>**
-- [Swift](dictionaries/swift) - <small>Swift dictionary.</small>**<sup>\*</sup>**
-- [Terraform](dictionaries/terraform) - <small>Terraform dictionary.</small>**<sup>\*</sup>**
-- [TypeScript/JavaScript](dictionaries/typescript) - <small>TypeScript and JavaScript dictionary.</small>**<sup>\*</sup>**
+- [SQL](dictionaries/sql) - <small>SQL dictionary.</small> <sup>1</sup>
+- [Svelte](dictionaries/svelte) - <small>Svelte dictionary.</small> <sup>1</sup>
+- [Swift](dictionaries/swift) - <small>Swift dictionary.</small> <sup>1</sup>
+- [Terraform](dictionaries/terraform) - <small>Terraform dictionary.</small> <sup>1</sup>
+- [TypeScript/JavaScript](dictionaries/typescript) - <small>TypeScript and JavaScript dictionary.</small> <sup>1</sup>
 - [Win32](dictionaries/win32) - <small>Win32 dictionary.</small>
 
 ## Specialized Dictionaries
 
-- [AWS](dictionaries/aws) - <small>AWS dictionary.</small>**<sup>\*</sup>**
-- [Cities of Finland](dictionaries/city-names-finland) - <small>List of cities in Finland.</small>
-- [Common Public Licenses](dictionaries/public-licenses) - <small>Common Public Licenses dictionary.</small>**<sup>\*</sup>**
-- [Company names](dictionaries/companies) - <small>Company names dictionary.</small>**<sup>\*</sup>**
-- [Cryptocurrencies](dictionaries/cryptocurrencies) - <small>Cryptocurrencies dictionary.</small>**<sup>\*</sup>**
-- [File Types](dictionaries/filetypes) - <small>File types dictionary.</small>**<sup>\*</sup>**
-- [Font Names](dictionaries/fonts) - <small>Font names dictionary.</small>**<sup>\*</sup>**
-- [Gaming](dictionaries/gaming-terms) - <small>Gaming dictionary.</small>**<sup>\*</sup>**
+- [AWS](dictionaries/aws) - <small>AWS dictionary.</small> <sup>1</sup> <sup>2</sup>
+- [Cities of Finland](dictionaries/city-names-finland) - <small>List of cities in Finland.</small> <sup>2</sup>
+- [Common Public Licenses](dictionaries/public-licenses) - <small>Common Public Licenses dictionary.</small> <sup>1</sup> <sup>2</sup>
+- [Company names](dictionaries/companies) - <small>Company names dictionary.</small> <sup>1</sup> <sup>2</sup>
+- [Cryptocurrencies](dictionaries/cryptocurrencies) - <small>Cryptocurrencies dictionary.</small> <sup>1</sup> <sup>2</sup>
+- [File Types](dictionaries/filetypes) - <small>File types dictionary.</small> <sup>1</sup> <sup>2</sup>
+- [Font Names](dictionaries/fonts) - <small>Font names dictionary.</small> <sup>1</sup>
+- [Gaming](dictionaries/gaming-terms) - <small>Gaming dictionary.</small> <sup>1</sup>
 - [GIS and PostGIS](dictionaries/gis) - <small>GIS and PostGIS dictionary.</small>
-- [Git](dictionaries/git) - <small>CSpell configuration for GIT</small>**<sup>\*</sup>**
-- [Google Cloud](dictionaries/google) - <small>Google Cloud Development Dictionary.</small>**<sup>\*</sup>**
-- [Markdown](dictionaries/markdown) - <small>Markdown dictionary.</small>**<sup>\*</sup>**
-- [Medical terms](dictionaries/medicalterms) - <small>Medical Terms Dictionary</small>
-- [People Names](dictionaries/people-names) - <small>People Names dictionary.</small>
-- [Pokémon](dictionaries/pokemon) - <small>Pokémon dictionary.</small>
+- [Git](dictionaries/git) - <small>CSpell configuration for GIT</small> <sup>1</sup>
+- [Google Cloud](dictionaries/google) - <small>Google Cloud Development Dictionary.</small> <sup>1</sup>
+- [Markdown](dictionaries/markdown) - <small>Markdown dictionary.</small> <sup>1</sup>
+- [Medical terms](dictionaries/medicalterms) - <small>Medical Terms Dictionary</small> <sup>2</sup>
+- [People Names](dictionaries/people-names) - <small>People Names dictionary.</small> <sup>2</sup>
+- [Pokémon](dictionaries/pokemon) - <small>Pokémon dictionary.</small> <sup>2</sup>
 - [Redis](dictionaries/redis) - <small>Redis dictionary.</small>
-- [Scientific Terms US](dictionaries/scientific_terms_US) - <small>Scientific Terms US dictionary.</small>
-- [Software Terms](dictionaries/software-terms) - <small>Software terms dictionary.</small>**<sup>\*</sup>**
+- [Scientific Terms US](dictionaries/scientific_terms_US) - <small>Scientific Terms US dictionary.</small> <sup>2</sup>
+- [Software Terms](dictionaries/software-terms) - <small>Software terms dictionary.</small> <sup>1</sup> <sup>2</sup>
 - [Vim](dictionaries/vim) - <small>Vim developers dictionary.</small>
-- [Vue](dictionaries/vue) - <small>CSpell configuration for VUE files</small>**<sup>\*</sup>**
+- [Vue](dictionaries/vue) - <small>CSpell configuration for VUE files</small> <sup>1</sup>
 
 ## Dictionary Bundles
 
-- [CSpell Dictionaries Bundle](dictionaries/cspell) - <small>Dictionaries included with the CSpell Command Line tool.</small>
+- [CSpell Dictionaries Bundle](dictionaries/cspell) - <small>Dictionaries included with the CSpell Command Line tool.</small> <sup>2</sup>
 
-<sup>\*</sup> Bundled with CSpell
+<sup>1</sup> Bundled with CSpell.<br><sup>2</sup> Dictionaries are enabled when packages is imported.
 
 ## All Dictionaries
 

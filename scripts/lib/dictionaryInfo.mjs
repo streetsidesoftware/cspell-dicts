@@ -33,6 +33,7 @@ const rootUrl = new URL('../../', import.meta.url);
  * @property {string[]} categories The category of the package. (e.g. programming, natural-language)
  * @property {DictionaryInfo[]} dictionaries The dictionaries in the package.
  * @property {boolean} [isBundle] The dictionary package is a bundle of other packages.
+ * @property {boolean} [hasEnabledByDefault] The dictionary package has dictionaries enabled by default.
  */
 
 /**
@@ -59,8 +60,9 @@ export async function fetchDictionaryInfo(dictURL) {
     const extConfigFile = await readConfigFile(cspellExtUrl);
     /** @type {CSpellSettings} */
     const cspellExt = extConfigFile.settings;
-    const isBundle = extractImports(cspellExt).filter((i) => i.startsWith('@cspell/')).length > 1 || undefined;
+    const isBundle = extractImports(cspellExt).filter((i) => i.startsWith('@cspell/')).length > 2 || undefined;
     const dictionaries = await extractDictionaryInfo(extConfigFile);
+    const hasEnabledByDefault = dictionaries.some((d) => d.enabled) || undefined;
     return {
         name: cspellExt.name || pkgJson.name,
         dir: path.relative(rootUrl.pathname, dictURL.pathname),
@@ -70,6 +72,7 @@ export async function fetchDictionaryInfo(dictURL) {
         categories: extractCategories(pkgJson, dictionaries),
         dictionaries,
         isBundle,
+        hasEnabledByDefault,
     };
 }
 
