@@ -104,7 +104,7 @@ function formatCategory(category, packages) {
  * @returns {string}
  */
 function formatPackage(pkg) {
-    return `- [${pkg.name}](${pkg.dir}) - <small>${pkg.description}</small> ${pkg.cspell ? '<sup>1</sup>' : ''} ${pkg.hasEnabledByDefault ? '<sup>2</sup>' : ''}`;
+    return `- [${pkg.name}](${pkg.dir}) - ${pkg.description} ${pkg.cspell ? '<sup>1</sup>' : ''} ${pkg.hasEnabledByDefault ? '<sup>2</sup>' : ''}`;
 }
 
 /**
