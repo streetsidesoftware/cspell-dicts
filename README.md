@@ -76,14 +76,14 @@ Various [cspell](https://github.com/streetsidesoftware/cspell) dictionaries. Eac
 - [Ada](dictionaries/ada)**<sup>\*</sup>**
 - [AL](dictionaries/al)**<sup>\*</sup>**
 - [bash](dictionaries/bash)**<sup>\*</sup>**
-- [C/C++ Dictionary](dictionaries/cpp)**<sup>\*</sup>**
+- [C/C++](dictionaries/cpp)**<sup>\*</sup>**
 - [C#](dictionaries/csharp)**<sup>\*</sup>**
 - [Clojure](dictionaries/clojure)
 - [CSS](dictionaries/css)**<sup>\*</sup>**
 - [Dart](dictionaries/dart)**<sup>\*</sup>**
 - [Data Science](dictionaries/data-science)
-- [Django Keywords](dictionaries/django)**<sup>\*</sup>**
-- [Docker Dictionary](dictionaries/docker)**<sup>\*</sup>**
+- [Django](dictionaries/django)**<sup>\*</sup>**
+- [Docker](dictionaries/docker)**<sup>\*</sup>**
 - [Elixir](dictionaries/elixir)**<sup>\*</sup>**
 - [Emacs Lisp](dictionaries/elisp)
 - [F#](dictionaries/fsharp)**<sup>\*</sup>**
@@ -160,7 +160,7 @@ Various [cspell](https://github.com/streetsidesoftware/cspell) dictionaries. Eac
 | [@cspell/dict-city-names-finland](./dictionaries/city-names-finland#readme)         | city-names-finland                                                                               | Cities of Finland                 | List of cities in Finland.                                     |
 | [@cspell/dict-clojure](./dictionaries/clojure#readme)                               | clojure                                                                                          | Clojure                           | Clojure dictionary.                                            |
 | [@cspell/dict-companies](./dictionaries/companies#readme)                           | companies                                                                                        | Company names                     | Company names dictionary.                                      |
-| [@cspell/dict-cpp](./dictionaries/cpp#readme)                                       | cpp-legacy<br>cpp<br>cpp-refined                                                                 | C/C++ Dictionary                  | C/C++ Keywords and common library functions.                   |
+| [@cspell/dict-cpp](./dictionaries/cpp#readme)                                       | cpp-legacy<br>cpp<br>cpp-refined                                                                 | C/C++                             | C/C++ Keywords and common library functions.                   |
 | [@cspell/dict-cryptocurrencies](./dictionaries/cryptocurrencies#readme)             | cryptocurrencies<br>cryptocurrencies-legacy                                                      | Cryptocurrencies                  | Cryptocurrencies dictionary.                                   |
 | [@cspell/dict-cs-cz](./dictionaries/cs_CZ#readme)                                   | cs-cz                                                                                            | Czech                             | Czech dictionary.                                              |
 | [@cspell/dict-csharp](./dictionaries/csharp#readme)                                 | csharp                                                                                           | C#                                | C# dictionary.                                                 |
@@ -172,8 +172,8 @@ Various [cspell](https://github.com/streetsidesoftware/cspell) dictionaries. Eac
 | [@cspell/dict-de-at](./dictionaries/de_AT#readme)                                   | de-at                                                                                            | Austrian German Dictionary        | Austrian German (de-AT) Dictionary.                            |
 | [@cspell/dict-de-ch](./dictionaries/de_CH#readme)                                   | de-ch                                                                                            | Swiss German Dictionary           | Swiss German (de-CH) Dictionary.                               |
 | [@cspell/dict-de-de](./dictionaries/de_DE#readme)                                   | de-de                                                                                            | German Dictionary                 | German (de-DE) Dictionary.                                     |
-| [@cspell/dict-django](./dictionaries/django#readme)                                 | django                                                                                           | Django Keywords                   | List of Python Django Framework keywords.                      |
-| [@cspell/dict-docker](./dictionaries/docker#readme)                                 | docker                                                                                           | Docker Dictionary                 | Docker dictionary.                                             |
+| [@cspell/dict-django](./dictionaries/django#readme)                                 | django                                                                                           | Django                            | List of Python Django Framework keywords.                      |
+| [@cspell/dict-docker](./dictionaries/docker#readme)                                 | docker                                                                                           | Docker                            | Docker dictionary.                                             |
 | [@cspell/dict-dotnet](./dictionaries/dotnet#readme)                                 | dotnet                                                                                           | .Net                              | .Net keywords Dictionary.                                      |
 | [@cspell/dict-el](./dictionaries/el#readme)                                         | el                                                                                               | Greek                             | Greek dictionary.                                              |
 | [@cspell/dict-elisp](./dictionaries/elisp#readme)                                   | elisp                                                                                            | Emacs Lisp                        | Emacs Lisp dictionary.                                         |
