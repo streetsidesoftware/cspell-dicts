@@ -33,7 +33,7 @@ jobs:
 
       - name: Install
         run: |
-          pnpm i
+          pnpm run setup
 
       - name: Lint
         run: |

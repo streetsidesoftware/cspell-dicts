@@ -14,5 +14,7 @@ runs:
         node-version: ${{ inputs.node-version }}
 
     - name: Install
-      run: pnpm i
+      run: |
+        pnpm i
+        pnpm run setup
       shell: bash

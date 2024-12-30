@@ -40,7 +40,7 @@ jobs:
           pnpm run lint:fix:sort-source-files
       - name: Re-Install to build
         run: |
-          pnpm i
+          pnpm run setup
       - name: Build
         run: |
           pnpm run conditional-build

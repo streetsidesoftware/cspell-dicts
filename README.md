@@ -509,6 +509,7 @@ Run `pnpm` to make sure everything is installed.
 
 ```sh
 pnpm i
+pnpm run setup
 ```
 
 Run `create-dictionary` to start the Yeoman script.
