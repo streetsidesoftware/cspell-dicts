@@ -3,9 +3,14 @@ import fs from 'node:fs/promises';
 import path from 'node:path/posix';
 
 import bundledWithCSpell from '@cspell/cspell-bundled-dicts';
+import { readConfigFile, resolveConfigFileImports } from 'cspell-lib';
 import json5 from 'json5';
 
 const rootUrl = new URL('../../', import.meta.url);
+
+/**
+ * @typedef {Awaited<ReturnType<import('cspell-lib').readConfigFile>>} CSpellConfigFile
+ */
 
 /**
  * Dictionary information.
@@ -23,10 +28,11 @@ const rootUrl = new URL('../../', import.meta.url);
  * @property {string} name The name of the dictionary.
  * @property {string} packageName The name of the package.
  * @property {string} dir The directory containing the dictionary package.
- * @property {boolean} bundled The dictionary package is bundled with cspell.
+ * @property {boolean} cspell The dictionary package is bundled with cspell.
  * @property {string} description The description of the package.
  * @property {string[]} categories The category of the package. (e.g. programming, natural-language)
  * @property {DictionaryInfo[]} dictionaries The dictionaries in the package.
+ * @property {boolean} [isBundle] The dictionary package is a bundle of other packages.
  */
 
 /**
@@ -50,26 +56,30 @@ export async function fetchDictionaryInfo(dictURL) {
     const pkgJson = await readJson(pkgUrl);
     const extFile = pkgJson.exports?.['.'] || 'cspell-ext.json';
     const cspellExtUrl = new URL(extFile, dictURL);
+    const extConfigFile = await readConfigFile(cspellExtUrl);
     /** @type {CSpellSettings} */
-    const cspellExt = await readJson(cspellExtUrl);
-    const dictionaries = extractDictionaryInfo(cspellExt);
+    const cspellExt = extConfigFile.settings;
+    const isBundle = extractImports(cspellExt).filter((i) => i.startsWith('@cspell/')).length > 1 || undefined;
+    const dictionaries = await extractDictionaryInfo(extConfigFile);
     return {
         name: cspellExt.name || pkgJson.name,
         dir: path.relative(rootUrl.pathname, dictURL.pathname),
         packageName: pkgJson.name,
         description: cspellExt.description || pkgJson.description || '',
-        bundled: defaultCSpellImports.has(pkgJson.name),
-        categories: extractCategories(pkgJson, cspellExt),
+        cspell: defaultCSpellImports.has(pkgJson.name),
+        categories: extractCategories(pkgJson, dictionaries),
         dictionaries,
+        isBundle,
     };
 }
 
 /**
  *
- * @param {CSpellSettings} cspellExt
- * @returns {DictionaryInfo[]}
+ * @param {CSpellConfigFile} cspellConfigFile
+ * @returns {Promise<DictionaryInfo[]>}
  */
-export function extractDictionaryInfo(cspellExt) {
+export async function extractDictionaryInfo(cspellConfigFile) {
+    const cspellExt = await resolveConfigFileImports(cspellConfigFile);
     const dictionaryDefs = cspellExt.dictionaryDefinitions || [];
     /** @type {Map<string, DictionaryInfo>} */
     const dictMap = new Map(dictionaryDefs.map((d) => [d.name, { name: d.name, description: d.description }]));
@@ -160,17 +170,17 @@ function extractImports(cspellExt) {
 
 /**
  * @param {Record<string, any>} pkgJson
- * @param {CSpellSettings} cspellExt
+ * @param {DictionaryInfo[]} dictionaries
  * @returns {string[]}
  */
-function extractCategories(pkgJson, cspellExt) {
+function extractCategories(pkgJson, dictionaries) {
     const pkgCategories = Array.isArray(pkgJson.categories) ? pkgJson.categories : undefined;
-    return pkgCategories || extractCategoriesFromDictionaries(extractDictionaryInfo(cspellExt));
+    return pkgCategories || extractCategoriesFromDictionaries(dictionaries);
 }
 
 /**
  *
- * @param {DictionaryInfo} dictionaries
+ * @param {DictionaryInfo[]} dictionaries
  * @returns {string[]}
  */
 function extractCategoriesFromDictionaries(dictionaries) {

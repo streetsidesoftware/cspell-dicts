@@ -4,7 +4,7 @@
     "dir": "dictionaries/ada",
     "packageName": "@cspell/dict-ada",
     "description": "Ada Language Dictionary",
-    "bundled": true,
+    "cspell": true,
     "categories": ["programming"],
     "dictionaries": [
       {
@@ -19,7 +19,7 @@
     "dir": "dictionaries/al",
     "packageName": "@cspell/dict-al",
     "description": "AL (Microsoft Business Central) Dictionary",
-    "bundled": true,
+    "cspell": true,
     "categories": ["programming"],
     "dictionaries": [
       {
@@ -34,7 +34,7 @@
     "dir": "dictionaries/ar",
     "packageName": "@cspell/dict-ar",
     "description": "Arabic dictionary.",
-    "bundled": false,
+    "cspell": false,
     "categories": ["natural-language"],
     "dictionaries": [
       {
@@ -49,7 +49,7 @@
     "dir": "dictionaries/aws",
     "packageName": "@cspell/dict-aws",
     "description": "AWS dictionary.",
-    "bundled": true,
+    "cspell": true,
     "categories": ["other", "default"],
     "dictionaries": [
       {
@@ -64,7 +64,7 @@
     "dir": "dictionaries/bash",
     "packageName": "@cspell/dict-bash",
     "description": "Bash dictionary.",
-    "bundled": true,
+    "cspell": true,
     "categories": ["programming"],
     "dictionaries": [
       {
@@ -79,7 +79,7 @@
     "dir": "dictionaries/bg_BG",
     "packageName": "@cspell/dict-bg-bg",
     "description": "Bulgarian dictionary.",
-    "bundled": false,
+    "cspell": false,
     "categories": ["natural-language"],
     "dictionaries": [
       {
@@ -94,7 +94,7 @@
     "dir": "dictionaries/ca",
     "packageName": "@cspell/dict-ca",
     "description": "Catalan dictionary.",
-    "bundled": false,
+    "cspell": false,
     "categories": ["natural-language"],
     "dictionaries": [
       {
@@ -109,7 +109,7 @@
     "dir": "dictionaries/city-names-finland",
     "packageName": "@cspell/dict-city-names-finland",
     "description": "List of cities in Finland.",
-    "bundled": false,
+    "cspell": false,
     "categories": ["other", "default"],
     "dictionaries": [
       {
@@ -124,7 +124,7 @@
     "dir": "dictionaries/clojure",
     "packageName": "@cspell/dict-clojure",
     "description": "Clojure dictionary.",
-    "bundled": false,
+    "cspell": false,
     "categories": ["programming"],
     "dictionaries": [
       {
@@ -139,7 +139,7 @@
     "dir": "dictionaries/companies",
     "packageName": "@cspell/dict-companies",
     "description": "Company names dictionary.",
-    "bundled": true,
+    "cspell": true,
     "categories": ["other", "default"],
     "dictionaries": [
       {
@@ -154,7 +154,7 @@
     "dir": "dictionaries/cpp",
     "packageName": "@cspell/dict-cpp",
     "description": "C/C++ Keywords and common library functions.",
-    "bundled": true,
+    "cspell": true,
     "categories": ["programming"],
     "dictionaries": [
       {
@@ -179,7 +179,7 @@
     "dir": "dictionaries/cryptocurrencies",
     "packageName": "@cspell/dict-cryptocurrencies",
     "description": "Cryptocurrencies dictionary.",
-    "bundled": true,
+    "cspell": true,
     "categories": ["other", "default"],
     "dictionaries": [
       {
@@ -198,7 +198,7 @@
     "dir": "dictionaries/cs_CZ",
     "packageName": "@cspell/dict-cs-cz",
     "description": "Czech dictionary.",
-    "bundled": false,
+    "cspell": false,
     "categories": ["natural-language"],
     "dictionaries": [
       {
@@ -213,7 +213,7 @@
     "dir": "dictionaries/csharp",
     "packageName": "@cspell/dict-csharp",
     "description": "C# dictionary.",
-    "bundled": true,
+    "cspell": true,
     "categories": ["programming"],
     "dictionaries": [
       {
@@ -228,16 +228,481 @@
     "dir": "dictionaries/cspell",
     "packageName": "@cspell/dict-cspell-bundle",
     "description": "Dictionaries included with the CSpell Command Line tool.",
-    "bundled": false,
-    "categories": [],
-    "dictionaries": []
+    "cspell": false,
+    "categories": ["programming", "other", "default", "natural-language"],
+    "dictionaries": [
+      {
+        "name": "ada",
+        "description": "Ada Language Dictionary",
+        "fileTypes": ["ada"]
+      },
+      {
+        "name": "al",
+        "description": "AL Keywords Dictionary",
+        "fileTypes": ["al"]
+      },
+      {
+        "name": "aws",
+        "description": "AWS dictionary.",
+        "enabled": true
+      },
+      {
+        "name": "bash",
+        "description": "Bash dictionary.",
+        "fileTypes": ["shellscript"]
+      },
+      {
+        "name": "companies",
+        "description": "Company names dictionary.",
+        "enabled": true
+      },
+      {
+        "name": "cpp-legacy",
+        "description": "Legacy C/C++ Keywords and common library functions.",
+        "fileTypes": ["c", "cpp"]
+      },
+      {
+        "name": "cpp",
+        "description": "C/C++ Keywords and common library functions.",
+        "fileTypes": ["c", "cpp"]
+      },
+      {
+        "name": "cpp-refined",
+        "description": "Refined list of C/C++ Keywords and common library functions.",
+        "fileTypes": ["c", "cpp"]
+      },
+      {
+        "name": "cryptocurrencies",
+        "description": "Cryptocurrencies dictionary.",
+        "enabled": true
+      },
+      {
+        "name": "cryptocurrencies-legacy",
+        "description": "Legacy Cryptocurrency dictionary."
+      },
+      {
+        "name": "csharp",
+        "description": "C# dictionary.",
+        "fileTypes": ["csharp"]
+      },
+      {
+        "name": "css",
+        "description": "Css dictionary.",
+        "fileTypes": [
+          "css",
+          "css",
+          "handlebars",
+          "html",
+          "jade",
+          "javascriptreact",
+          "less",
+          "mdx",
+          "mdx",
+          "php",
+          "pug",
+          "scss",
+          "svelte",
+          "typescriptreact",
+          "vue"
+        ]
+      },
+      {
+        "name": "dart",
+        "description": "Dart dictionary.",
+        "fileTypes": ["dart"]
+      },
+      {
+        "name": "django",
+        "description": "List of Python Django Framework keywords.",
+        "fileTypes": ["html", "python"]
+      },
+      {
+        "name": "docker",
+        "description": "Docker dictionary.",
+        "fileTypes": ["dockerfile"]
+      },
+      {
+        "name": "dotnet",
+        "description": ".Net keywords.",
+        "fileTypes": ["cs", "csharp", "fsharp"]
+      },
+      {
+        "name": "elixir",
+        "description": "Elixir dictionary.",
+        "fileTypes": ["elixir"]
+      },
+      {
+        "name": "en-common-misspellings",
+        "locales": ["en"]
+      },
+      {
+        "name": "en-gb-common-misspellings",
+        "locales": ["en-gb"]
+      },
+      {
+        "name": "en-us-common-misspellings",
+        "locales": ["en-us"]
+      },
+      {
+        "name": "en_us",
+        "description": "American English Dictionary",
+        "locales": ["en", "en-US"]
+      },
+      {
+        "name": "filetypes",
+        "description": "File types dictionary.",
+        "enabled": true
+      },
+      {
+        "name": "flutter",
+        "description": "Flutter dictionary.",
+        "fileTypes": ["dart"]
+      },
+      {
+        "name": "fonts",
+        "description": "Font names dictionary.",
+        "fileTypes": [
+          "css",
+          "handlebars",
+          "html",
+          "jade",
+          "javascriptreact",
+          "less",
+          "mdx",
+          "php",
+          "pug",
+          "scss",
+          "svelte",
+          "typescriptreact",
+          "vue"
+        ]
+      },
+      {
+        "name": "fsharp",
+        "description": "F# dictionary.",
+        "fileTypes": ["fsharp"]
+      },
+      {
+        "name": "fullstack",
+        "description": "Common words encountered during fullstack development",
+        "fileTypes": [
+          "ada",
+          "c",
+          "cpp",
+          "csharp",
+          "css",
+          "h",
+          "hpp",
+          "html",
+          "java",
+          "javascript",
+          "javascriptreact",
+          "lua",
+          "mdx",
+          "php",
+          "python",
+          "razor",
+          "ruby",
+          "rust",
+          "scala",
+          "scss",
+          "swift",
+          "typescript",
+          "typescriptreact",
+          "vue"
+        ]
+      },
+      {
+        "name": "gaming-terms",
+        "description": "Gaming dictionary."
+      },
+      {
+        "name": "git",
+        "description": "Git Terms"
+      },
+      {
+        "name": "golang",
+        "description": "Go Language Dictionary",
+        "fileTypes": ["go"]
+      },
+      {
+        "name": "google",
+        "description": "Google Cloud Development dictionary."
+      },
+      {
+        "name": "haskell",
+        "description": "Haskell dictionary.",
+        "fileTypes": ["haskell"]
+      },
+      {
+        "name": "html-symbol-entities",
+        "description": "HTML Symbol Entities Dictionary",
+        "fileTypes": [
+          "asciidoc",
+          "astro",
+          "handlebars",
+          "html",
+          "html",
+          "jade",
+          "javascriptreact",
+          "markdown",
+          "markdown",
+          "markdown",
+          "mdx",
+          "mdx",
+          "php",
+          "pug",
+          "svelte",
+          "typescriptreact"
+        ]
+      },
+      {
+        "name": "html",
+        "description": "HTML dictionary.",
+        "fileTypes": [
+          "asciidoc",
+          "astro",
+          "handlebars",
+          "html",
+          "html",
+          "jade",
+          "javascriptreact",
+          "markdown",
+          "markdown",
+          "mdx",
+          "mdx",
+          "php",
+          "pug",
+          "svelte",
+          "typescriptreact",
+          "vue"
+        ]
+      },
+      {
+        "name": "java",
+        "description": "Java dictionary.",
+        "fileTypes": ["java"]
+      },
+      {
+        "name": "julia",
+        "description": "Julia Dictionary",
+        "fileTypes": ["julia"]
+      },
+      {
+        "name": "k8s",
+        "description": "K8s dictionary.",
+        "fileTypes": ["yaml"]
+      },
+      {
+        "name": "latex",
+        "description": "LaTeX dictionary",
+        "fileTypes": ["latex"]
+      },
+      {
+        "name": "lorem-ipsum",
+        "description": "Lorem-ipsum dictionary.",
+        "locales": ["lorem", "lorem-ipsum"]
+      },
+      {
+        "name": "lua",
+        "description": "Lua dictionary.",
+        "fileTypes": ["lua"]
+      },
+      {
+        "name": "makefile",
+        "description": "Makefile dictionary.",
+        "fileTypes": ["makefile"]
+      },
+      {
+        "name": "monkeyc",
+        "description": "Monkey C dictionary.",
+        "fileTypes": ["monkeyc"]
+      },
+      {
+        "name": "node",
+        "description": "Node.js dictionary.",
+        "fileTypes": [
+          "javascript",
+          "javascript",
+          "javascriptreact",
+          "javascriptreact",
+          "json",
+          "jsonc",
+          "mdx",
+          "typescript",
+          "typescript",
+          "typescriptreact",
+          "typescriptreact"
+        ]
+      },
+      {
+        "name": "npm",
+        "description": "Dictionary of Common Javascript Packages.",
+        "fileTypes": [
+          "asciidoc",
+          "csharp",
+          "handlebars",
+          "html",
+          "jade",
+          "javascript",
+          "javascript",
+          "javascriptreact",
+          "javascriptreact",
+          "json",
+          "jsonc",
+          "markdown",
+          "mdx",
+          "php",
+          "pug",
+          "svelte",
+          "typescript",
+          "typescript",
+          "typescriptreact",
+          "typescriptreact"
+        ]
+      },
+      {
+        "name": "php",
+        "description": "Php dictionary.",
+        "fileTypes": ["php", "php", "vue"]
+      },
+      {
+        "name": "powershell",
+        "description": "PowerShell Keyword Dictionary",
+        "fileTypes": ["powershell"]
+      },
+      {
+        "name": "public-licenses",
+        "description": "Common Public Licenses dictionary.",
+        "enabled": true
+      },
+      {
+        "name": "data-science",
+        "description": "Data Science Terms dictionary.",
+        "fileTypes": ["python"]
+      },
+      {
+        "name": "data-science-models",
+        "description": "Data Science Models dictionary.",
+        "fileTypes": ["python"]
+      },
+      {
+        "name": "data-science-tools",
+        "description": "Data Science Tools dictionary.",
+        "fileTypes": ["python"]
+      },
+      {
+        "name": "python",
+        "description": "Python Dictionary",
+        "fileTypes": ["python"]
+      },
+      {
+        "name": "python-common",
+        "description": "Python Common Terms Dictionary",
+        "fileTypes": ["python"]
+      },
+      {
+        "name": "r",
+        "description": "R dictionary.",
+        "fileTypes": ["r"]
+      },
+      {
+        "name": "ruby",
+        "description": "For ruby and ruby on rails",
+        "fileTypes": ["ruby"]
+      },
+      {
+        "name": "rust",
+        "description": "Rust Keyword Dictionary",
+        "fileTypes": ["rust"]
+      },
+      {
+        "name": "scala",
+        "description": "Scala dictionary.",
+        "fileTypes": ["scala"]
+      },
+      {
+        "name": "software-term-suggestions",
+        "enabled": true
+      },
+      {
+        "name": "softwareTerms",
+        "description": "Software terms dictionary.",
+        "enabled": true
+      },
+      {
+        "name": "networking-terms",
+        "description": "Software networking terms dictionary."
+      },
+      {
+        "name": "web-services",
+        "description": "Web Services and APIs dictionary.",
+        "enabled": true
+      },
+      {
+        "name": "computing-acronyms",
+        "description": "Common acronyms related to computing.",
+        "enabled": true
+      },
+      {
+        "name": "coding-compound-terms",
+        "description": "Common codding compound terms.",
+        "enabled": true
+      },
+      {
+        "name": "sql",
+        "description": "SQL dictionary.",
+        "fileTypes": ["sql"]
+      },
+      {
+        "name": "svelte",
+        "description": "Svelte dictionary.",
+        "fileTypes": ["javascript", "svelte", "typescript"]
+      },
+      {
+        "name": "swift",
+        "description": "Swift dictionary.",
+        "fileTypes": ["swift"]
+      },
+      {
+        "name": "terraform",
+        "description": "Terraform dictionary.",
+        "fileTypes": ["terraform", "tfvars"]
+      },
+      {
+        "name": "typescript",
+        "description": "TypeScript and JavaScript dictionary.",
+        "fileTypes": [
+          "astro",
+          "handlebars",
+          "html",
+          "jade",
+          "javascript",
+          "javascript",
+          "javascriptreact",
+          "javascriptreact",
+          "mdx",
+          "mdx",
+          "mdx",
+          "php",
+          "pug",
+          "svelte",
+          "typescript",
+          "typescript",
+          "typescriptreact",
+          "typescriptreact",
+          "vue"
+        ]
+      }
+    ],
+    "isBundle": true
   },
   {
     "name": "CSS",
     "dir": "dictionaries/css",
     "packageName": "@cspell/dict-css",
     "description": "CSS dictionary.",
-    "bundled": true,
+    "cspell": true,
     "categories": ["programming"],
     "dictionaries": [
       {
@@ -252,7 +717,7 @@
     "dir": "dictionaries/da_DK",
     "packageName": "@cspell/dict-da-dk",
     "description": "Danish (da-DK) Dictionary.",
-    "bundled": false,
+    "cspell": false,
     "categories": ["natural-language"],
     "dictionaries": [
       {
@@ -267,7 +732,7 @@
     "dir": "dictionaries/dart",
     "packageName": "@cspell/dict-dart",
     "description": "Dart dictionary.",
-    "bundled": true,
+    "cspell": true,
     "categories": ["programming"],
     "dictionaries": [
       {
@@ -282,7 +747,7 @@
     "dir": "dictionaries/data-science",
     "packageName": "@cspell/dict-data-science",
     "description": "Data Science dictionary.",
-    "bundled": false,
+    "cspell": false,
     "categories": ["programming"],
     "dictionaries": [
       {
@@ -307,7 +772,7 @@
     "dir": "dictionaries/de_AT",
     "packageName": "@cspell/dict-de-at",
     "description": "Austrian German (de-AT) Dictionary.",
-    "bundled": false,
+    "cspell": false,
     "categories": ["natural-language"],
     "dictionaries": [
       {
@@ -322,7 +787,7 @@
     "dir": "dictionaries/de_CH",
     "packageName": "@cspell/dict-de-ch",
     "description": "Swiss German (de-CH) Dictionary.",
-    "bundled": false,
+    "cspell": false,
     "categories": ["natural-language"],
     "dictionaries": [
       {
@@ -337,7 +802,7 @@
     "dir": "dictionaries/de_DE",
     "packageName": "@cspell/dict-de-de",
     "description": "German (de-DE) Dictionary.",
-    "bundled": false,
+    "cspell": false,
     "categories": ["natural-language"],
     "dictionaries": [
       {
@@ -352,7 +817,7 @@
     "dir": "dictionaries/django",
     "packageName": "@cspell/dict-django",
     "description": "List of Python Django Framework keywords.",
-    "bundled": true,
+    "cspell": true,
     "categories": ["programming"],
     "dictionaries": [
       {
@@ -367,7 +832,7 @@
     "dir": "dictionaries/docker",
     "packageName": "@cspell/dict-docker",
     "description": "Docker dictionary.",
-    "bundled": true,
+    "cspell": true,
     "categories": ["programming"],
     "dictionaries": [
       {
@@ -382,7 +847,7 @@
     "dir": "dictionaries/dotnet",
     "packageName": "@cspell/dict-dotnet",
     "description": ".Net keywords Dictionary.",
-    "bundled": true,
+    "cspell": true,
     "categories": ["programming"],
     "dictionaries": [
       {
@@ -397,7 +862,7 @@
     "dir": "dictionaries/el",
     "packageName": "@cspell/dict-el",
     "description": "Greek dictionary.",
-    "bundled": false,
+    "cspell": false,
     "categories": ["natural-language"],
     "dictionaries": [
       {
@@ -412,7 +877,7 @@
     "dir": "dictionaries/elisp",
     "packageName": "@cspell/dict-elisp",
     "description": "Emacs Lisp dictionary.",
-    "bundled": false,
+    "cspell": false,
     "categories": ["programming"],
     "dictionaries": [
       {
@@ -427,7 +892,7 @@
     "dir": "dictionaries/elixir",
     "packageName": "@cspell/dict-elixir",
     "description": "Elixir dictionary.",
-    "bundled": true,
+    "cspell": true,
     "categories": ["programming"],
     "dictionaries": [
       {
@@ -442,7 +907,7 @@
     "dir": "dictionaries/en_AU",
     "packageName": "@cspell/dict-en-au",
     "description": "Australian English Dictionary",
-    "bundled": false,
+    "cspell": false,
     "categories": ["natural-language"],
     "dictionaries": [
       {
@@ -457,7 +922,7 @@
     "dir": "dictionaries/en_CA",
     "packageName": "@cspell/dict-en-ca",
     "description": "Canadian English Dictionary",
-    "bundled": false,
+    "cspell": false,
     "categories": ["natural-language"],
     "dictionaries": [
       {
@@ -472,7 +937,7 @@
     "dir": "dictionaries/en_GB",
     "packageName": "@cspell/dict-en-gb",
     "description": "British English Dictionary",
-    "bundled": true,
+    "cspell": true,
     "categories": ["natural-language"],
     "dictionaries": [
       {
@@ -487,7 +952,7 @@
     "dir": "dictionaries/en_GB-MIT",
     "packageName": "@cspell/dict-en-gb-mit",
     "description": "British English Dictionary with MIT License",
-    "bundled": false,
+    "cspell": false,
     "categories": ["natural-language"],
     "dictionaries": [
       {
@@ -502,7 +967,7 @@
     "dir": "dictionaries/en_shared",
     "packageName": "@cspell/dict-en-shared",
     "description": "English words shared between the various English dictionaries.",
-    "bundled": false,
+    "cspell": false,
     "categories": ["natural-language"],
     "dictionaries": [
       {
@@ -517,7 +982,7 @@
     "dir": "dictionaries/en_US",
     "packageName": "@cspell/dict-en_us",
     "description": "American English Dictionary",
-    "bundled": true,
+    "cspell": true,
     "categories": ["natural-language"],
     "dictionaries": [
       {
@@ -532,16 +997,29 @@
     "dir": "dictionaries/en-common-misspellings",
     "packageName": "@cspell/dict-en-common-misspellings",
     "description": "Common English misspellings dictionary.",
-    "bundled": true,
-    "categories": [],
-    "dictionaries": []
+    "cspell": true,
+    "categories": ["natural-language"],
+    "dictionaries": [
+      {
+        "name": "en-common-misspellings",
+        "locales": ["en"]
+      },
+      {
+        "name": "en-gb-common-misspellings",
+        "locales": ["en-gb"]
+      },
+      {
+        "name": "en-us-common-misspellings",
+        "locales": ["en-us"]
+      }
+    ]
   },
   {
     "name": "Esperanto",
     "dir": "dictionaries/eo",
     "packageName": "@cspell/dict-eo",
     "description": "Esperanto dictionary.",
-    "bundled": false,
+    "cspell": false,
     "categories": ["natural-language"],
     "dictionaries": [
       {
@@ -556,7 +1034,7 @@
     "dir": "dictionaries/es_ES",
     "packageName": "@cspell/dict-es-es",
     "description": "Spanish Dictionary (Spain)",
-    "bundled": false,
+    "cspell": false,
     "categories": ["natural-language"],
     "dictionaries": [
       {
@@ -571,7 +1049,7 @@
     "dir": "dictionaries/et-EE",
     "packageName": "@cspell/dict-et-ee",
     "description": "Estonian dictionary.",
-    "bundled": false,
+    "cspell": false,
     "categories": ["natural-language"],
     "dictionaries": [
       {
@@ -586,7 +1064,7 @@
     "dir": "dictionaries/eu",
     "packageName": "@cspell/dict-eu",
     "description": "Basque dictionary.",
-    "bundled": false,
+    "cspell": false,
     "categories": ["natural-language"],
     "dictionaries": [
       {
@@ -601,7 +1079,7 @@
     "dir": "dictionaries/fa_IR",
     "packageName": "@cspell/dict-fa-ir",
     "description": "Persian Dictionary",
-    "bundled": false,
+    "cspell": false,
     "categories": ["natural-language"],
     "dictionaries": [
       {
@@ -616,7 +1094,7 @@
     "dir": "dictionaries/fi_FI",
     "packageName": "@cspell/dict-fi-fi",
     "description": "Finnish dictionary.",
-    "bundled": false,
+    "cspell": false,
     "categories": ["natural-language"],
     "dictionaries": [
       {
@@ -631,7 +1109,7 @@
     "dir": "dictionaries/filetypes",
     "packageName": "@cspell/dict-filetypes",
     "description": "File types dictionary.",
-    "bundled": true,
+    "cspell": true,
     "categories": ["other", "default"],
     "dictionaries": [
       {
@@ -646,7 +1124,7 @@
     "dir": "dictionaries/flutter",
     "packageName": "@cspell/dict-flutter",
     "description": "Flutter dictionary.",
-    "bundled": true,
+    "cspell": true,
     "categories": ["programming"],
     "dictionaries": [
       {
@@ -661,7 +1139,7 @@
     "dir": "dictionaries/fonts",
     "packageName": "@cspell/dict-fonts",
     "description": "Font names dictionary.",
-    "bundled": true,
+    "cspell": true,
     "categories": ["other"],
     "dictionaries": [
       {
@@ -675,7 +1153,7 @@
     "dir": "dictionaries/fr_FR",
     "packageName": "@cspell/dict-fr-fr",
     "description": "French Dictionary (France)",
-    "bundled": false,
+    "cspell": false,
     "categories": ["natural-language"],
     "dictionaries": [
       {
@@ -690,7 +1168,7 @@
     "dir": "dictionaries/fr_FR_90",
     "packageName": "@cspell/dict-fr-reforme",
     "description": "Français Réforme 1990 dictionary.",
-    "bundled": false,
+    "cspell": false,
     "categories": ["natural-language"],
     "dictionaries": [
       {
@@ -705,7 +1183,7 @@
     "dir": "dictionaries/fsharp",
     "packageName": "@cspell/dict-fsharp",
     "description": "F# dictionary.",
-    "bundled": true,
+    "cspell": true,
     "categories": ["programming"],
     "dictionaries": [
       {
@@ -720,7 +1198,7 @@
     "dir": "dictionaries/fullstack",
     "packageName": "@cspell/dict-fullstack",
     "description": "Common words encountered during fullstack development",
-    "bundled": true,
+    "cspell": true,
     "categories": ["programming"],
     "dictionaries": [
       {
@@ -759,7 +1237,7 @@
     "dir": "dictionaries/gaming-terms",
     "packageName": "@cspell/dict-gaming-terms",
     "description": "Gaming dictionary.",
-    "bundled": true,
+    "cspell": true,
     "categories": ["other"],
     "dictionaries": [
       {
@@ -773,7 +1251,7 @@
     "dir": "dictionaries/gis",
     "packageName": "@cspell/dict-gis",
     "description": "GIS and PostGIS dictionary.",
-    "bundled": false,
+    "cspell": false,
     "categories": ["other"],
     "dictionaries": [
       {
@@ -787,7 +1265,7 @@
     "dir": "dictionaries/git",
     "packageName": "@cspell/dict-git",
     "description": "CSpell configuration for GIT",
-    "bundled": true,
+    "cspell": true,
     "categories": ["other"],
     "dictionaries": [
       {
@@ -801,7 +1279,7 @@
     "dir": "dictionaries/golang",
     "packageName": "@cspell/dict-golang",
     "description": "Go Language Dictionary",
-    "bundled": true,
+    "cspell": true,
     "categories": ["programming"],
     "dictionaries": [
       {
@@ -816,7 +1294,7 @@
     "dir": "dictionaries/google",
     "packageName": "@cspell/dict-google",
     "description": "Google Cloud Development Dictionary.",
-    "bundled": true,
+    "cspell": true,
     "categories": ["other"],
     "dictionaries": [
       {
@@ -830,7 +1308,7 @@
     "dir": "dictionaries/grc_GR",
     "packageName": "@cspell/dict-grc",
     "description": "Ancient Greek dictionary.",
-    "bundled": false,
+    "cspell": false,
     "categories": ["natural-language"],
     "dictionaries": [
       {
@@ -845,7 +1323,7 @@
     "dir": "dictionaries/haskell",
     "packageName": "@cspell/dict-haskell",
     "description": "Haskell dictionary.",
-    "bundled": true,
+    "cspell": true,
     "categories": ["programming"],
     "dictionaries": [
       {
@@ -860,7 +1338,7 @@
     "dir": "dictionaries/he",
     "packageName": "@cspell/dict-he",
     "description": "Hebrew Dictionary",
-    "bundled": false,
+    "cspell": false,
     "categories": ["natural-language"],
     "dictionaries": [
       {
@@ -875,7 +1353,7 @@
     "dir": "dictionaries/hr_HR",
     "packageName": "@cspell/dict-hr-hr",
     "description": "Croatian dictionary.",
-    "bundled": false,
+    "cspell": false,
     "categories": ["natural-language"],
     "dictionaries": [
       {
@@ -890,7 +1368,7 @@
     "dir": "dictionaries/html",
     "packageName": "@cspell/dict-html",
     "description": "HTML dictionary.",
-    "bundled": true,
+    "cspell": true,
     "categories": ["programming"],
     "dictionaries": [
       {
@@ -905,7 +1383,7 @@
     "dir": "dictionaries/html-symbol-entities",
     "packageName": "@cspell/dict-html-symbol-entities",
     "description": "HTML Symbol Entities Dictionary",
-    "bundled": true,
+    "cspell": true,
     "categories": ["programming"],
     "dictionaries": [
       {
@@ -920,7 +1398,7 @@
     "dir": "dictionaries/hu_HU",
     "packageName": "@cspell/dict-hu-hu",
     "description": "Hungarian dictionary.",
-    "bundled": false,
+    "cspell": false,
     "categories": ["natural-language"],
     "dictionaries": [
       {
@@ -935,7 +1413,7 @@
     "dir": "dictionaries/id_ID",
     "packageName": "@cspell/dict-id-id",
     "description": "Indonesia dictionary.",
-    "bundled": false,
+    "cspell": false,
     "categories": ["natural-language"],
     "dictionaries": [
       {
@@ -950,7 +1428,7 @@
     "dir": "dictionaries/it_IT",
     "packageName": "@cspell/dict-it-it",
     "description": "Italian dictionary.",
-    "bundled": false,
+    "cspell": false,
     "categories": ["natural-language"],
     "dictionaries": [
       {
@@ -965,7 +1443,7 @@
     "dir": "dictionaries/java",
     "packageName": "@cspell/dict-java",
     "description": "Java dictionary.",
-    "bundled": true,
+    "cspell": true,
     "categories": ["programming"],
     "dictionaries": [
       {
@@ -980,7 +1458,7 @@
     "dir": "dictionaries/julia",
     "packageName": "@cspell/dict-julia",
     "description": "Julia function and keyword dictionary",
-    "bundled": true,
+    "cspell": true,
     "categories": ["programming"],
     "dictionaries": [
       {
@@ -995,7 +1473,7 @@
     "dir": "dictionaries/k8s",
     "packageName": "@cspell/dict-k8s",
     "description": "K8s dictionary.",
-    "bundled": true,
+    "cspell": true,
     "categories": ["programming"],
     "dictionaries": [
       {
@@ -1010,7 +1488,7 @@
     "dir": "dictionaries/kotlin",
     "packageName": "@cspell/dict-kotlin",
     "description": "Kotlin dictionary.",
-    "bundled": false,
+    "cspell": false,
     "categories": ["programming"],
     "dictionaries": [
       {
@@ -1025,7 +1503,7 @@
     "dir": "dictionaries/la",
     "packageName": "@cspell/dict-la",
     "description": "Latin dictionary.",
-    "bundled": false,
+    "cspell": false,
     "categories": ["natural-language"],
     "dictionaries": [
       {
@@ -1040,7 +1518,7 @@
     "dir": "dictionaries/latex",
     "packageName": "@cspell/dict-latex",
     "description": "LaTeX cspell dictionary",
-    "bundled": true,
+    "cspell": true,
     "categories": ["programming"],
     "dictionaries": [
       {
@@ -1055,7 +1533,7 @@
     "dir": "dictionaries/lorem-ipsum",
     "packageName": "@cspell/dict-lorem-ipsum",
     "description": "Lorem-ipsum dictionary.",
-    "bundled": true,
+    "cspell": true,
     "categories": ["natural-language"],
     "dictionaries": [
       {
@@ -1070,7 +1548,7 @@
     "dir": "dictionaries/lt_LT",
     "packageName": "@cspell/dict-lt-lt",
     "description": "Lithuanian dictionary.",
-    "bundled": false,
+    "cspell": false,
     "categories": ["natural-language"],
     "dictionaries": [
       {
@@ -1085,7 +1563,7 @@
     "dir": "dictionaries/lua",
     "packageName": "@cspell/dict-lua",
     "description": "Lua dictionary.",
-    "bundled": true,
+    "cspell": true,
     "categories": ["programming"],
     "dictionaries": [
       {
@@ -1100,7 +1578,7 @@
     "dir": "dictionaries/lv",
     "packageName": "@cspell/dict-lv",
     "description": "Latvian dictionary.",
-    "bundled": false,
+    "cspell": false,
     "categories": ["natural-language"],
     "dictionaries": [
       {
@@ -1115,7 +1593,7 @@
     "dir": "dictionaries/makefile",
     "packageName": "@cspell/dict-makefile",
     "description": "Makefile dictionary.",
-    "bundled": true,
+    "cspell": true,
     "categories": ["programming"],
     "dictionaries": [
       {
@@ -1130,7 +1608,7 @@
     "dir": "dictionaries/markdown",
     "packageName": "@cspell/dict-markdown",
     "description": "Markdown dictionary.",
-    "bundled": true,
+    "cspell": true,
     "categories": [],
     "dictionaries": []
   },
@@ -1139,7 +1617,7 @@
     "dir": "dictionaries/medicalterms",
     "packageName": "@cspell/dict-medicalterms",
     "description": "Medical Terms Dictionary",
-    "bundled": false,
+    "cspell": false,
     "categories": ["other", "default"],
     "dictionaries": [
       {
@@ -1154,7 +1632,7 @@
     "dir": "dictionaries/mk",
     "packageName": "@cspell/dict-mk",
     "description": "Macedonian dictionary.",
-    "bundled": false,
+    "cspell": false,
     "categories": ["natural-language"],
     "dictionaries": [
       {
@@ -1169,7 +1647,7 @@
     "dir": "dictionaries/mnemonics",
     "packageName": "@cspell/dict-mnemonics",
     "description": "i86 Mnemonics dictionary for cspell",
-    "bundled": false,
+    "cspell": false,
     "categories": ["programming"],
     "dictionaries": [
       {
@@ -1184,7 +1662,7 @@
     "dir": "dictionaries/monkeyc",
     "packageName": "@cspell/dict-monkeyc",
     "description": "Monkey C dictionary.",
-    "bundled": true,
+    "cspell": true,
     "categories": ["programming"],
     "dictionaries": [
       {
@@ -1199,7 +1677,7 @@
     "dir": "dictionaries/nb_NO",
     "packageName": "@cspell/dict-nb-no",
     "description": "Norwegian Bokmål dictionary.",
-    "bundled": false,
+    "cspell": false,
     "categories": ["natural-language"],
     "dictionaries": [
       {
@@ -1214,7 +1692,7 @@
     "dir": "dictionaries/nl_NL",
     "packageName": "@cspell/dict-nl-nl",
     "description": "Dutch (Netherlands) Dictionary",
-    "bundled": false,
+    "cspell": false,
     "categories": ["natural-language"],
     "dictionaries": [
       {
@@ -1229,7 +1707,7 @@
     "dir": "dictionaries/node",
     "packageName": "@cspell/dict-node",
     "description": "Node.js dictionary.",
-    "bundled": true,
+    "cspell": true,
     "categories": ["programming"],
     "dictionaries": [
       {
@@ -1249,7 +1727,7 @@
     "dir": "dictionaries/npm",
     "packageName": "@cspell/dict-npm",
     "description": "Dictionary of Common Javascript Packages.",
-    "bundled": true,
+    "cspell": true,
     "categories": ["programming"],
     "dictionaries": [
       {
@@ -1269,7 +1747,7 @@
     "dir": "dictionaries/people-names",
     "packageName": "@cspell/dict-people-names",
     "description": "People Names dictionary.",
-    "bundled": false,
+    "cspell": false,
     "categories": ["other", "default"],
     "dictionaries": [
       {
@@ -1284,7 +1762,7 @@
     "dir": "dictionaries/php",
     "packageName": "@cspell/dict-php",
     "description": "Php dictionary.",
-    "bundled": true,
+    "cspell": true,
     "categories": ["programming"],
     "dictionaries": [
       {
@@ -1299,7 +1777,7 @@
     "dir": "dictionaries/pl_PL",
     "packageName": "@cspell/dict-pl_pl",
     "description": "Polish Dictionary",
-    "bundled": false,
+    "cspell": false,
     "categories": ["natural-language"],
     "dictionaries": [
       {
@@ -1314,7 +1792,7 @@
     "dir": "dictionaries/pokemon",
     "packageName": "@cspell/dict-pokemon",
     "description": "Pokémon dictionary.",
-    "bundled": false,
+    "cspell": false,
     "categories": ["other", "default"],
     "dictionaries": [
       {
@@ -1329,7 +1807,7 @@
     "dir": "dictionaries/powershell",
     "packageName": "@cspell/dict-powershell",
     "description": "PowerShell Keyword Dictionary",
-    "bundled": true,
+    "cspell": true,
     "categories": ["programming"],
     "dictionaries": [
       {
@@ -1344,7 +1822,7 @@
     "dir": "dictionaries/pt_BR",
     "packageName": "@cspell/dict-pt-br",
     "description": "Portuguese (Brazilian) Dictionary",
-    "bundled": false,
+    "cspell": false,
     "categories": ["natural-language"],
     "dictionaries": [
       {
@@ -1359,7 +1837,7 @@
     "dir": "dictionaries/pt_PT",
     "packageName": "@cspell/dict-pt-pt",
     "description": "Portuguese Dictionary (Portugal)",
-    "bundled": false,
+    "cspell": false,
     "categories": ["natural-language"],
     "dictionaries": [
       {
@@ -1374,7 +1852,7 @@
     "dir": "dictionaries/public-licenses",
     "packageName": "@cspell/dict-public-licenses",
     "description": "Common Public Licenses dictionary.",
-    "bundled": true,
+    "cspell": true,
     "categories": ["other", "default"],
     "dictionaries": [
       {
@@ -1389,9 +1867,24 @@
     "dir": "dictionaries/python",
     "packageName": "@cspell/dict-python",
     "description": "Python Keyword Dictionary",
-    "bundled": true,
+    "cspell": true,
     "categories": ["programming"],
     "dictionaries": [
+      {
+        "name": "data-science",
+        "description": "Data Science Terms dictionary.",
+        "fileTypes": ["python"]
+      },
+      {
+        "name": "data-science-models",
+        "description": "Data Science Models dictionary.",
+        "fileTypes": ["python"]
+      },
+      {
+        "name": "data-science-tools",
+        "description": "Data Science Tools dictionary.",
+        "fileTypes": ["python"]
+      },
       {
         "name": "python",
         "description": "Python Dictionary",
@@ -1409,7 +1902,7 @@
     "dir": "dictionaries/r",
     "packageName": "@cspell/dict-r",
     "description": "R dictionary.",
-    "bundled": true,
+    "cspell": true,
     "categories": ["programming"],
     "dictionaries": [
       {
@@ -1424,7 +1917,7 @@
     "dir": "dictionaries/redis",
     "packageName": "@cspell/dict-redis",
     "description": "Redis dictionary.",
-    "bundled": false,
+    "cspell": false,
     "categories": ["other"],
     "dictionaries": [
       {
@@ -1438,7 +1931,7 @@
     "dir": "dictionaries/ro_RO",
     "packageName": "@cspell/dict-ro-ro",
     "description": "Romanian dictionary.",
-    "bundled": false,
+    "cspell": false,
     "categories": ["natural-language"],
     "dictionaries": [
       {
@@ -1453,7 +1946,7 @@
     "dir": "dictionaries/ru_RU",
     "packageName": "@cspell/dict-ru_ru",
     "description": "Russian Dictionary (Combined)",
-    "bundled": false,
+    "cspell": false,
     "categories": ["natural-language"],
     "dictionaries": [
       {
@@ -1468,7 +1961,7 @@
     "dir": "dictionaries/ruby",
     "packageName": "@cspell/dict-ruby",
     "description": "For ruby and ruby on rails",
-    "bundled": true,
+    "cspell": true,
     "categories": ["programming"],
     "dictionaries": [
       {
@@ -1483,7 +1976,7 @@
     "dir": "dictionaries/rust",
     "packageName": "@cspell/dict-rust",
     "description": "Rust Keyword Dictionary",
-    "bundled": true,
+    "cspell": true,
     "categories": ["programming"],
     "dictionaries": [
       {
@@ -1498,7 +1991,7 @@
     "dir": "dictionaries/scala",
     "packageName": "@cspell/dict-scala",
     "description": "Scala dictionary.",
-    "bundled": true,
+    "cspell": true,
     "categories": ["programming"],
     "dictionaries": [
       {
@@ -1513,7 +2006,7 @@
     "dir": "dictionaries/scientific_terms_GB",
     "packageName": "@cspell/dict-scientific-terms-gb",
     "description": "Scientific Terms GB dictionary.",
-    "bundled": false,
+    "cspell": false,
     "categories": ["natural-language"],
     "dictionaries": [
       {
@@ -1528,7 +2021,7 @@
     "dir": "dictionaries/scientific_terms_US",
     "packageName": "@cspell/dict-scientific-terms-us",
     "description": "Scientific Terms US dictionary.",
-    "bundled": false,
+    "cspell": false,
     "categories": ["other", "default"],
     "dictionaries": [
       {
@@ -1543,7 +2036,7 @@
     "dir": "dictionaries/shell",
     "packageName": "@cspell/dict-shell",
     "description": "ShellScript dictionary.",
-    "bundled": false,
+    "cspell": false,
     "categories": ["programming"],
     "dictionaries": [
       {
@@ -1563,7 +2056,7 @@
     "dir": "dictionaries/sk_SK",
     "packageName": "@cspell/dict-sk-sk",
     "description": "Slovak dictionary.",
-    "bundled": false,
+    "cspell": false,
     "categories": ["natural-language"],
     "dictionaries": [
       {
@@ -1578,7 +2071,7 @@
     "dir": "dictionaries/sl_SI",
     "packageName": "@cspell/dict-sl-si",
     "description": "Slovenian dictionary.",
-    "bundled": false,
+    "cspell": false,
     "categories": ["natural-language"],
     "dictionaries": [
       {
@@ -1593,9 +2086,13 @@
     "dir": "dictionaries/software-terms",
     "packageName": "@cspell/dict-software-terms",
     "description": "Software terms dictionary.",
-    "bundled": true,
+    "cspell": true,
     "categories": ["other", "default"],
     "dictionaries": [
+      {
+        "name": "software-term-suggestions",
+        "enabled": true
+      },
       {
         "name": "softwareTerms",
         "description": "Software terms dictionary.",
@@ -1627,7 +2124,7 @@
     "dir": "dictionaries/sql",
     "packageName": "@cspell/dict-sql",
     "description": "SQL dictionary.",
-    "bundled": true,
+    "cspell": true,
     "categories": ["programming"],
     "dictionaries": [
       {
@@ -1642,7 +2139,7 @@
     "dir": "dictionaries/sr_Cyrl",
     "packageName": "@cspell/dict-sr-cyrl",
     "description": "Serbian (Cyrillic) dictionary.",
-    "bundled": false,
+    "cspell": false,
     "categories": ["natural-language"],
     "dictionaries": [
       {
@@ -1657,7 +2154,7 @@
     "dir": "dictionaries/sr_Latn",
     "packageName": "@cspell/dict-sr-latn",
     "description": "Serbian (Latin) dictionary.",
-    "bundled": false,
+    "cspell": false,
     "categories": ["natural-language"],
     "dictionaries": [
       {
@@ -1672,7 +2169,7 @@
     "dir": "dictionaries/sv",
     "packageName": "@cspell/dict-sv",
     "description": "Swedish Dictionary",
-    "bundled": false,
+    "cspell": false,
     "categories": ["natural-language"],
     "dictionaries": [
       {
@@ -1687,7 +2184,7 @@
     "dir": "dictionaries/svelte",
     "packageName": "@cspell/dict-svelte",
     "description": "Svelte dictionary.",
-    "bundled": true,
+    "cspell": true,
     "categories": ["programming"],
     "dictionaries": [
       {
@@ -1702,7 +2199,7 @@
     "dir": "dictionaries/swift",
     "packageName": "@cspell/dict-swift",
     "description": "Swift dictionary.",
-    "bundled": true,
+    "cspell": true,
     "categories": ["programming"],
     "dictionaries": [
       {
@@ -1717,7 +2214,7 @@
     "dir": "dictionaries/terraform",
     "packageName": "@cspell/dict-terraform",
     "description": "Terraform dictionary.",
-    "bundled": true,
+    "cspell": true,
     "categories": ["programming"],
     "dictionaries": [
       {
@@ -1732,7 +2229,7 @@
     "dir": "dictionaries/tr_TR",
     "packageName": "@cspell/dict-tr-tr",
     "description": "Turkish dictionary.",
-    "bundled": false,
+    "cspell": false,
     "categories": ["natural-language"],
     "dictionaries": [
       {
@@ -1747,7 +2244,7 @@
     "dir": "dictionaries/typescript",
     "packageName": "@cspell/dict-typescript",
     "description": "TypeScript and JavaScript dictionary.",
-    "bundled": true,
+    "cspell": true,
     "categories": ["programming"],
     "dictionaries": [
       {
@@ -1769,7 +2266,7 @@
     "dir": "dictionaries/uk_UA",
     "packageName": "@cspell/dict-uk-ua",
     "description": "Ukrainian Dictionary",
-    "bundled": false,
+    "cspell": false,
     "categories": ["natural-language"],
     "dictionaries": [
       {
@@ -1784,7 +2281,7 @@
     "dir": "dictionaries/vi_VN",
     "packageName": "@cspell/dict-vi-vn",
     "description": "Vietnamese dictionary.",
-    "bundled": false,
+    "cspell": false,
     "categories": ["natural-language"],
     "dictionaries": [
       {
@@ -1799,7 +2296,7 @@
     "dir": "dictionaries/vim",
     "packageName": "@cspell/dict-vim",
     "description": "Vim developers dictionary.",
-    "bundled": false,
+    "cspell": false,
     "categories": ["other"],
     "dictionaries": [
       {
@@ -1813,7 +2310,7 @@
     "dir": "dictionaries/vue",
     "packageName": "@cspell/dict-vue",
     "description": "CSpell configuration for VUE files",
-    "bundled": true,
+    "cspell": true,
     "categories": [],
     "dictionaries": []
   },
@@ -1822,7 +2319,7 @@
     "dir": "dictionaries/win32",
     "packageName": "@cspell/dict-win32",
     "description": "Win32 dictionary.",
-    "bundled": false,
+    "cspell": false,
     "categories": ["programming"],
     "dictionaries": [
       {

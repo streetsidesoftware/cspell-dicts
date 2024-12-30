@@ -11,6 +11,7 @@ const categoryToTitle = new Map([
     ['programming', 'Programming Dictionaries'],
     ['other', 'Specialized Dictionaries'],
     ['default', 'Default Dictionaries'],
+    ['bundle', 'Dictionary Bundles'],
 ]);
 
 /**
@@ -21,7 +22,7 @@ const categoryToTitle = new Map([
 export async function packageInfoToMarkdown(packages) {
     packages = [...packages].sort((a, b) => a.name.localeCompare(b.name));
     const seen = new Set();
-    const categories = new Set(['natural-language', 'programming', 'other']);
+    const categories = new Set(['natural-language', 'programming', 'other', 'bundle']);
     const byCategory = groupByCategory(packages);
 
     let md = '<!--- Use `pnpm build:readme` to generate this table --->\n\n';
@@ -57,16 +58,19 @@ function extractDictionaryTable(packages) {
     return `
 ## All Dictionaries
 
-| package | dictionary ID | name | description |
-| --- | --- | --- | --- |
+| Package | Name | Dictionary IDs |
+| ------- | ---- | -------------- |
 ${packages.map(formatPackageRow).join('\n')}
 `;
 }
 
 function formatPackageRow(pkg) {
     const { packageName, dictionaries, dir } = pkg;
-    // | package | dictionary ID | name | description |
-    return `| [${packageName}](./${dir}#readme) | ${dictionaries.map((d) => d.name).join('<br>')} | ${pkg.name} | ${pkg.description} |`;
+
+    const dictNames = pkg.isBundle ? '' : dictionaries.map((d) => d.name).join('<br>');
+
+    // | Package | Name | Dictionary IDs |
+    return `| [${packageName}](./${dir}#readme) | ${pkg.name} | ${dictNames} |`;
 }
 
 /**
@@ -87,7 +91,7 @@ function formatCategory(category, packages) {
  * @returns {string}
  */
 function formatPackage(pkg) {
-    return `- [${pkg.name}](${pkg.dir})${pkg.bundled ? '**<sup>*</sup>**' : ''}`;
+    return `- [${pkg.name}](${pkg.dir}) - <small>${pkg.description}</small>${pkg.cspell ? '**<sup>*</sup>**' : ''}`;
 }
 
 /**
@@ -98,7 +102,7 @@ function formatPackage(pkg) {
 function groupByCategory(packages) {
     const byCategory = new Map();
     for (const pkg of packages) {
-        const categories = pkg.categories || [];
+        const categories = pkg.isBundle ? ['bundle'] : pkg.categories || [];
         if (categories.length === 0) {
             categories.push('other');
         }
