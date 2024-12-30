@@ -3,6 +3,13 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+## [2.0.12](https://github.com/streetsidesoftware/cspell-dicts/compare/@cspell/dict-public-licenses@2.0.11...@cspell/dict-public-licenses@2.0.12) (2024-12-30)
+
+
+### Updates and Bug Fixes
+
+* Adjust dictionary names ([#3958](https://github.com/streetsidesoftware/cspell-dicts/issues/3958)) ([8a96533](https://github.com/streetsidesoftware/cspell-dicts/commit/8a96533bec21280103740868b81559437c413501))
+
 ## [2.0.11](https://github.com/streetsidesoftware/cspell-dicts/compare/@cspell/dict-public-licenses@2.0.10...@cspell/dict-public-licenses@2.0.11) (2024-10-11)
 
 

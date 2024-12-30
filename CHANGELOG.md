@@ -1,5 +1,17 @@
 # Release Notes
 
+## [28.5.1](https://github.com/streetsidesoftware/cspell-dicts/compare/cspell-dicts@28.5.0...cspell-dicts@28.5.1) (2024-12-30)
+
+
+### Updates and Bug Fixes
+
+* Add `docSearch` to coding-terms.txt ([#3950](https://github.com/streetsidesoftware/cspell-dicts/issues/3950)) ([fef9bf4](https://github.com/streetsidesoftware/cspell-dicts/commit/fef9bf433c382c28ef3b10710921abb0919b83ef))
+* add terms to GIS dict ([#3946](https://github.com/streetsidesoftware/cspell-dicts/issues/3946)) ([672185a](https://github.com/streetsidesoftware/cspell-dicts/commit/672185a02a83392da6f497a97948fdf564283f5b))
+* Adjust dictionary names ([#3958](https://github.com/streetsidesoftware/cspell-dicts/issues/3958)) ([8a96533](https://github.com/streetsidesoftware/cspell-dicts/commit/8a96533bec21280103740868b81559437c413501))
+* Fix dictionary package info ([#3956](https://github.com/streetsidesoftware/cspell-dicts/issues/3956)) ([090c088](https://github.com/streetsidesoftware/cspell-dicts/commit/090c0881c3a66e946fe49baf16e54c4b1231cceb))
+* Workflow Bot -- Build Dictionaries ([#3949](https://github.com/streetsidesoftware/cspell-dicts/issues/3949)) ([398b727](https://github.com/streetsidesoftware/cspell-dicts/commit/398b727fbb12431be9f23348eadf54a79bfc5589))
+* Workflow Bot -- Update Dictionaries ([#3947](https://github.com/streetsidesoftware/cspell-dicts/issues/3947)) ([65fc219](https://github.com/streetsidesoftware/cspell-dicts/commit/65fc219a32e569fac4da8aa820fc812ee6ae9040))
+
 ## [28.5.0](https://github.com/streetsidesoftware/cspell-dicts/compare/cspell-dicts@28.4.0...cspell-dicts@28.5.0) (2024-12-27)
 
 
