@@ -2,7 +2,9 @@
 
 // ts-check
 import fs from 'node:fs/promises';
-import { pathToFileURL } from 'node:url';
+import { pathToFileURL, fileURLToPath } from 'node:url';
+
+import { format } from 'prettier';
 
 import { findDictionaryPackages } from './lib/find-dictionary-packages.mjs';
 import { fetchDictionaryInfo } from './lib/dictionaryInfo.mjs';
@@ -16,13 +18,17 @@ async function run() {
     const packageInfo = await Promise.all(packages.map((file) => fetchDictionaryInfo(pathToFileURL(file))));
     packageInfo.sort((a, b) => a.dir.localeCompare(b.dir));
 
+    const fileJsonURL = new URL('static/dictionary-packages.json', rootUrl);
+
     await fs.writeFile(
-        new URL('static/dictionary-packages.json', rootUrl),
-        JSON.stringify(packageInfo, null, 2) + '\n',
+        fileJsonURL,
+        await format(JSON.stringify(packageInfo, null, 2) + '\n', { filepath: fileURLToPath(fileJsonURL) }),
     );
 
-    const md = await packageInfoToMarkdown(packageInfo);
-    await fs.writeFile(new URL('static/dictionary-packages.md', rootUrl), md);
+    const fileMdURL = new URL('static/dictionary-packages.md', rootUrl);
+
+    const md = await format(await packageInfoToMarkdown(packageInfo), { filepath: fileURLToPath(fileMdURL) });
+    await fs.writeFile(fileMdURL, md);
 }
 
 run();
