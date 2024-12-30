@@ -21,10 +21,6 @@ jobs:
       - name: Setup
         uses: ./.github/actions/setup
 
-      - name: Install / Build
-        run: |
-          pnpm i
-
       # Release Please has already incremented versions and published tags, so we just
       # need to publish all unpublished versions to NPM here
       # See: https://github.com/lerna/lerna/tree/main/commands/publish#bump-from-package
