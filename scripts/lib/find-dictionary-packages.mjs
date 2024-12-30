@@ -2,7 +2,6 @@ import { globby } from 'globby';
 
 const rootUrl = new URL('../../', import.meta.url);
 
-
 /**
  * Find dictionary `package.json` files.
  * @param {string} [glob] - optional glob pattern
