@@ -64,16 +64,26 @@ function extractDictionaryTable(packages) {
 | Package | Name | Dictionary IDs |
 | ------- | ---- | -------------- |
 ${packages.map(formatPackageRow).join('\n')}
+
+<sup>1</sup> Bundled with CSpell.<br><sup>2</sup> Dictionaries are enabled when packages is imported.
+
 `;
 }
 
+/**
+ *
+ * @param {DictionaryPackageInfo} pkg
+ * @returns {string}
+ */
 function formatPackageRow(pkg) {
     const { packageName, dictionaries, dir } = pkg;
 
-    const dictNames = pkg.isBundle ? '' : dictionaries.map((d) => d.name).join('<br>');
+    const dictNames = pkg.isBundle
+        ? ''
+        : dictionaries.map((d) => d.name + (d.enabled ? '<sup>2</sup>' : '')).join('<br>');
 
     // | Package | Name | Dictionary IDs |
-    return `| [${packageName}](./${dir}#readme) | ${pkg.name} | ${dictNames} |`;
+    return `| [${packageName}](./${dir}#readme)${pkg.cspell ? '<sup>1</sup>' : ''} | ${pkg.name} | ${dictNames} |`;
 }
 
 /**
