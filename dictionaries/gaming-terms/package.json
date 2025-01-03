@@ -13,7 +13,7 @@
   },
   "scripts": {
     "build": "cspell-tools-cli build",
-    "test": "shx head -n 1000 \"src/gaming-terms.txt\" | cspell -c ./cspell.json stdin",
+    "test": "cspell .",
     "prepublishOnly": "echo OK",
     "prepare:dictionary": "pnpm run build"
   },
