@@ -6,6 +6,10 @@ import { formatMarkdown } from './formatMarkdown.mjs';
  * @typedef {import('./dictionaryInfo.mjs').DictionaryPackageInfo} DictionaryPackageInfo
  */
 
+/**
+ * @typedef {import('./dictionaryInfo.mjs').DictionaryInfo} DictionaryInfo
+ */
+
 const categoryToTitle = new Map([
     ['natural-language', 'Natural Language Dictionaries'],
     ['programming', 'Programming Dictionaries'],
@@ -21,11 +25,26 @@ const categoryToTitle = new Map([
  */
 export async function packageInfoToMarkdown(packages) {
     packages = [...packages].sort((a, b) => a.name.localeCompare(b.name));
+
+    let md = '<!--- Use `pnpm build:readme` to generate this table --->\n\n';
+    md += listDictionariesByCategory(packages);
+    md += extractDictionaryTable(packages);
+    md += listDictionaryIds(packages);
+
+    return formatMarkdown(md);
+}
+
+/**
+ * List dictionaries by category
+ * @param {DictionaryPackageInfo[]} packages
+ * @returns {Promise<string>}
+ */
+function listDictionariesByCategory(packages) {
     const seen = new Set();
     const categories = new Set(['natural-language', 'programming', 'other', 'bundle']);
     const byCategory = groupByCategory(packages);
 
-    let md = '<!--- Use `pnpm build:readme` to generate this table --->\n\n';
+    let md = '';
 
     for (const category of categories) {
         const list = byCategory.get(category);
@@ -46,9 +65,42 @@ export async function packageInfoToMarkdown(packages) {
         '\n\n' +
         '<sup>1</sup> Bundled with CSpell.<br>' +
         '<sup>2</sup> Dictionaries are enabled when packages is imported.\n\n';
-    md += extractDictionaryTable(packages);
 
-    return formatMarkdown(md);
+    return md;
+}
+
+/**
+ * List dictionary IDs and descriptions.
+ * @param {DictionaryPackageInfo[]} packages
+ * @returns {Promise<string>}
+ */
+function listDictionaryIds(packages) {
+    const dictionaries = packages
+        .filter((pkg) => !pkg.isBundle)
+        .flatMap((pkg) => pkg.dictionaries.map((d) => ({ ...d, pkg })))
+        .sort((a, b) => a.name.localeCompare(b.name));
+    let md = `
+## Sorted by Dictionary Name IDs
+
+| Name ID | Description | Locale | File Type |
+| ------- | ----------- | ------ | --------- |
+`;
+
+    for (const dict of dictionaries) {
+        const cspell = dict.pkg.cspell ? ' <sup>1</sup>' : '';
+        const enabled = dict.enabled ? ' <sup>2</sup>' : '';
+        const locales = dict.locales ? `${dict.locales.sort().join('<br>')}` : '-';
+        const fileTypes = dict.fileTypes ? `${dict.fileTypes.sort().join('<br>')}` : '-';
+        // | Name | Description | Locale | File Type |
+        md += `| [\`${dict.name}\`](${dict.pkg.dir})${cspell}${enabled} | ${dict.description} | ${locales} | ${fileTypes} |\n`;
+    }
+
+    md +=
+        '\n\n' +
+        '<sup>1</sup> Bundled with CSpell.<br>' +
+        '<sup>2</sup> Dictionaries are enabled when packages is imported.\n\n';
+
+    return md;
 }
 
 /**
