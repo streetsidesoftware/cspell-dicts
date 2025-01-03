@@ -6,24 +6,13 @@ This is a pre-built dictionary for use with CSpell.
 
 ## Installation
 
-Global Install and add to CSpell global settings.
-
-```sh
-npm install -g @cspell/dict-gaming-terms
-cspell link add @cspell/dict-gaming-terms
-```
-
-## Uninstall from CSpell
-
-```sh
-cspell link remove @cspell/dict-gaming-terms
-```
+This dictionary comes bundled with the latest versions of `cspell`.
 
 ## Manual Installation
 
 Manual installation is useful if you want to include this dictionary as part of your CI/CD lint process.
 
-```
+```sh
 npm i @cspell/dict-gaming-terms
 ```
 
@@ -32,15 +21,18 @@ The `cspell-ext.json` file in this package should be added to the import section
 ```javascript
 {
     // …
-    "import": ["@cspell/dict-gaming-terms/cspell-ext.json"],
-    // It is necessary to explicitly enable `gaming-terms` dictionary by including it in the
-    // list of dictionaries.
-    "dictionaries": ["gaming-terms"]
+    // It is necessary to explicitly enable `gaming-terms` and `game-development` dictionaries by
+    // including it in the list of dictionaries.
+    "dictionaries": ["gaming-terms", "game-development"]
     // …
 }
 ```
 
-# Dictionary Development
+## Adding Terms to the Dictionaries
+
+See: [`src/README.md`](https://github.com/streetsidesoftware/cspell-dicts/tree/main/dictionaries/gaming-terms/src#readme)
+
+## Dictionary Development
 
 See: [How to Create a New Dictionary](https://github.com/streetsidesoftware/cspell-dicts#how-to-create-a-new-dictionary)
 
