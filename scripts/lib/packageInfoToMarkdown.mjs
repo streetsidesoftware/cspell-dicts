@@ -90,7 +90,7 @@ function listDictionaryIds(packages) {
         const cspell = dict.pkg.cspell ? ' <sup>1</sup>' : '';
         const enabled = dict.enabled ? ' <sup>2</sup>' : '';
         const locales = dict.locales ? `${dict.locales.sort().join('<br>')}` : '-';
-        const fileTypes = dict.fileTypes ? `${dict.fileTypes.sort().join('<br>')}` : '-';
+        const fileTypes = dict.fileTypes ? `${take(4, dict.fileTypes.sort()).join('<br>')}` : '-';
         // | Name | Description | Locale | File Type |
         md += `| [\`${dict.name}\`](${dict.pkg.dir})${cspell}${enabled} | ${dict.description} | ${locales} | ${fileTypes} |\n`;
     }
@@ -178,4 +178,18 @@ function groupByCategory(packages) {
         }
     }
     return byCategory;
+}
+
+/**
+ *
+ * @param {number} n
+ * @param {string[]} arr
+ * @returns {string[]}
+ */
+function take(n, arr) {
+    const result = arr.slice(0, n);
+    if (result.length < arr.length) {
+        result.push('...');
+    }
+    return result;
 }

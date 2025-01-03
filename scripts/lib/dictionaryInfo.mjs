@@ -61,6 +61,10 @@ export async function fetchDictionaryInfo(dictURL) {
     /** @type {CSpellSettings} */
     const cspellExt = extConfigFile.settings;
     const isBundle = extractImports(cspellExt).filter((i) => i.startsWith('@cspell/')).length > 2 || undefined;
+    // Remove package imports from the list of imports.
+    extConfigFile.settings.import = Array.isArray(extConfigFile.settings.import)
+        ? extConfigFile.settings.import.filter((i) => i.startsWith('./'))
+        : extConfigFile.settings.import;
     const dictionaries = await extractDictionaryInfo(extConfigFile);
     const hasEnabledByDefault = dictionaries.some((d) => d.enabled) || undefined;
     return {
