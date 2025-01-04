@@ -22,6 +22,13 @@ See [Conventional Commits](https://conventionalcommits.org) for commit guideline
 
 
 
+## [4.0.9](https://github.com/streetsidesoftware/cspell-dicts/compare/@cspell/dict-aws@4.0.8...@cspell/dict-aws@4.0.9) (2025-01-03)
+
+
+### Updates and Bug Fixes
+
+* Enable AWS at the top level ([#3968](https://github.com/streetsidesoftware/cspell-dicts/issues/3968)) ([c367e21](https://github.com/streetsidesoftware/cspell-dicts/commit/c367e21f4d4dc536218aa611a4ff2e4ca6e20378))
+
 ## [4.0.8](https://github.com/streetsidesoftware/cspell-dicts/compare/@cspell/dict-aws@4.0.7...@cspell/dict-aws@4.0.8) (2024-12-30)
 
 

@@ -1,5 +1,19 @@
 # Change Log
 
+## [1.1.0](https://github.com/streetsidesoftware/cspell-dicts/compare/@cspell/dict-gaming-terms@1.0.10...@cspell/dict-gaming-terms@1.1.0) (2025-01-03)
+
+
+### Features
+
+* Add game development terms ([#3973](https://github.com/streetsidesoftware/cspell-dicts/issues/3973)) ([c7cee89](https://github.com/streetsidesoftware/cspell-dicts/commit/c7cee89f83ff8924d58cbb1fcc31a1d68ba94c7c))
+
+
+### Updates and Bug Fixes
+
+* Add Godot terms ([#3981](https://github.com/streetsidesoftware/cspell-dicts/issues/3981)) ([dff5446](https://github.com/streetsidesoftware/cspell-dicts/commit/dff544642bd7a0f1594674d1d2e4b74b427a3724))
+* Workflow Bot -- Build Dictionaries ([#3974](https://github.com/streetsidesoftware/cspell-dicts/issues/3974)) ([2057b7d](https://github.com/streetsidesoftware/cspell-dicts/commit/2057b7d2fc5e8ad0b0ba7b097f360983b0dea63b))
+* Workflow Bot -- Build Dictionaries ([#3979](https://github.com/streetsidesoftware/cspell-dicts/issues/3979)) ([b68f509](https://github.com/streetsidesoftware/cspell-dicts/commit/b68f5092d86fd7d85ab001262ec73c1fa636c24c))
+
 ## [1.0.10](https://github.com/streetsidesoftware/cspell-dicts/compare/@cspell/dict-gaming-terms@1.0.9...@cspell/dict-gaming-terms@1.0.10) (2024-12-30)
 
 

@@ -1,5 +1,12 @@
 # Changelog
 
+## [1.0.20](https://github.com/streetsidesoftware/cspell-dicts/compare/@cspell/dict-en-au@1.0.19...@cspell/dict-en-au@1.0.20) (2025-01-03)
+
+
+### Updates and Bug Fixes
+
+* Workflow Bot -- Build Dictionaries ([#3976](https://github.com/streetsidesoftware/cspell-dicts/issues/3976)) ([92cc01c](https://github.com/streetsidesoftware/cspell-dicts/commit/92cc01cba7bbfc4b600408507e584442972088b0))
+
 ## [1.0.19](https://github.com/streetsidesoftware/cspell-dicts/compare/@cspell/dict-en-au@1.0.18...@cspell/dict-en-au@1.0.19) (2024-11-26)
 
 
