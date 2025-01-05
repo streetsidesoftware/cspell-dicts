@@ -38,6 +38,7 @@ MACHTYPE
 MAIL
 MAILCHECK
 MAILPATH
+MANPATH
 OLDPWD
 OPTARG
 OPTERR
@@ -51,6 +52,7 @@ PPID
 PROMPT_COMMAND
 PS1
 PS2
+PS3
 PS4
 READLINE_LINE
 READLINE_MARK
@@ -72,6 +74,7 @@ UID
 alias
 allexport
 autoremove
+bashscript
 bg
 bind
 braceexpand
@@ -99,6 +102,7 @@ elif
 else
 emacs
 enable
+enarmor
 errexit
 errtrace
 esac
@@ -139,6 +143,8 @@ logout
 mapfile
 mkdir
 monitor
+mvim
+neovim
 newgidmap
 newuidmap
 noclobber
@@ -147,6 +153,7 @@ noglob
 nolog
 notify
 nounset
+nvim
 onecmd
 pgrep
 physical
@@ -167,6 +174,7 @@ return
 select
 set
 shellcheck
+shellscript
 shfmt
 shift
 shopt
@@ -189,6 +197,7 @@ unset
 until
 verbose
 vi
+vim
 wait
 while
 xtrace
