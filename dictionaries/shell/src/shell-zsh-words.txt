@@ -1,6 +1,7 @@
 ARCHFLAGS
 autoload
 bindkey
+chpwd
 compadd
 compctl
 compdef
@@ -18,6 +19,8 @@ MANPATH
 mvim
 myzsh
 ohmyzsh
+precmd
+preexec
 promptinit
 setopt
 strftime
@@ -27,5 +30,7 @@ TTYIDLE
 unsetopt
 WATCHFMT
 zdotdir
+zshaddhistory
 zshconfig
+zshexit
 zstyle
