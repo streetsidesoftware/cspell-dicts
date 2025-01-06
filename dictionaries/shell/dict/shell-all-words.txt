@@ -1,6 +1,7 @@
 
 # cspell-tools: keep-case no-split
 
+--no-globalrcs
 ARCHFLAGS
 BASHOPTS
 BASH_ARGV0
@@ -12,6 +13,7 @@ COLUMNS
 COMPREPLY
 COMP_WORDBREAKS
 CWORD
+EPOCHREALTIME
 EUID
 EXECIGNORE
 FUNCNAME
@@ -36,6 +38,7 @@ LC_MESSAGES
 LC_NUMERIC
 LC_TIME
 LINES
+LOGCHECK
 MACHTYPE
 MAIL
 MAILCHECK
@@ -70,13 +73,18 @@ TERMCAP
 TERMINFO
 TEXTDOMAIN
 TEXTDOMAINDIR
+TIMEFMT
 TMOUT
+TTYIDLE
 TZ
 UID
+WATCHFMT
 alias
 allexport
+alnum
 autoload
 autoremove
+bashcompinit
 bashscript
 bg
 bind
@@ -87,6 +95,9 @@ builtin
 caller
 case
 cd
+chpwd
+chsh
+cntrl
 command
 compadd
 compctl
@@ -112,6 +123,7 @@ else
 emacs
 enable
 enarmor
+epochtime
 errexit
 errtrace
 esac
@@ -124,6 +136,7 @@ fc
 fg
 fi
 for
+funcfiletrace
 function
 functrace
 getopts
@@ -147,6 +160,7 @@ logout
 ltrim
 mapfile
 mkdir
+mktemp
 monitor
 mvim
 myzsh
@@ -166,16 +180,20 @@ physical
 pipefail
 popd
 posix
+precmd
+preexec
 printf
 privileged
 promptinit
 proxyd
+punct
 pushd
 pwd
 read
 readarray
 readlink
 readonly
+realpath
 return
 select
 set
@@ -210,7 +228,10 @@ vi
 vim
 wait
 while
+xdigit
 xtrace
 zdotdir
+zshaddhistory
 zshconfig
+zshexit
 zstyle
