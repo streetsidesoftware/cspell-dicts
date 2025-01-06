@@ -1,5 +1,15 @@
 # Release Notes
 
+## [28.6.1](https://github.com/streetsidesoftware/cspell-dicts/compare/cspell-dicts@28.6.0...cspell-dicts@28.6.1) (2025-01-06)
+
+
+### Updates and Bug Fixes
+
+* Add Bash, Zsh and Shell related terms ([#3985](https://github.com/streetsidesoftware/cspell-dicts/issues/3985)) ([681e8d2](https://github.com/streetsidesoftware/cspell-dicts/commit/681e8d2e1fd4302dbc2ce613b2e428f555dc17cb))
+* Update Bash dictionary ([#3988](https://github.com/streetsidesoftware/cspell-dicts/issues/3988)) ([165c758](https://github.com/streetsidesoftware/cspell-dicts/commit/165c758fa135f0f1af7799d3969bdcc5bfa8e656))
+* Workflow Bot -- Build Dictionaries ([#3989](https://github.com/streetsidesoftware/cspell-dicts/issues/3989)) ([ef10b4a](https://github.com/streetsidesoftware/cspell-dicts/commit/ef10b4aa07893bc7b9a7187c8f1bb0b3973fb97c))
+* Workflow Bot -- Update Dictionaries ([#3984](https://github.com/streetsidesoftware/cspell-dicts/issues/3984)) ([ad39bc3](https://github.com/streetsidesoftware/cspell-dicts/commit/ad39bc3df59cd0fb63f7cc3a33eef319f55b01db))
+
 ## [28.6.0](https://github.com/streetsidesoftware/cspell-dicts/compare/cspell-dicts@28.5.1...cspell-dicts@28.6.0) (2025-01-03)
 
 
