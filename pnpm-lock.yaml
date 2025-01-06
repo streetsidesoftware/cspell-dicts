@@ -2297,8 +2297,8 @@ packages:
   fast-diff@1.3.0:
     resolution: {integrity: sha512-VxPP4NqbUjj6MaAOafWeUn2cXWLcCtljklUtZf0Ind4XQ+QPtmA0b18zZy0jIQx+ExRVCR/ZQpBmik5lXshNsw==}
 
-  fast-equals@5.1.3:
-    resolution: {integrity: sha512-6117/nJPFyrTjoCBQI7lpRFf+Oda4mH8HtlNMi28os+URb7MQU/dXUTrKhA2KR4G0O1MCfdi/KExIVEmzEh3qA==}
+  fast-equals@5.2.0:
+    resolution: {integrity: sha512-3VpaQYf+CDFdRQfgsb+3vY7XaKjM35WCMoQTTE8h4S/eUkHzyJFOOA/gATYgoLejy4FBrEQD/sXe5Auk4cW/AQ==}
     engines: {node: '>=6.0.0'}
 
   fast-fifo@1.3.2:
@@ -4149,8 +4149,8 @@ packages:
   util-deprecate@1.0.2:
     resolution: {integrity: sha512-EPD5q1uXyFxJpCrLnCc1nHnq3gOa6DZBocAIiI2TaSCA7VCJ1UJDMagCzIkXNsUYfD1daK//LTEQ8xiIbrHtcw==}
 
-  uuid@11.0.3:
-    resolution: {integrity: sha512-d0z310fCWv5dJwnX1Y/MncBAqGMKEzlBb1AOf7z9K8ALnd0utBX/msg/fA0+sbyN1ihbMsLhrBlnl1ak7Wa0rg==}
+  uuid@11.0.4:
+    resolution: {integrity: sha512-IzL6VtTTYcAhA/oghbFJ1Dkmqev+FpQWnCBaKq/gUluLxliWvO8DPFWfIviRmYbtaavtSQe4WBL++rFjdcGWEg==}
     hasBin: true
 
   validate-npm-package-license@3.0.4:
@@ -4927,7 +4927,7 @@ snapshots:
       slash: 5.1.0
       temp-dir: 3.0.0
       tinyrainbow: 1.2.0
-      uuid: 11.0.3
+      uuid: 11.0.4
       write-json-file: 6.0.0
     transitivePeerDependencies:
       - '@lerna-lite/exec'
@@ -5942,7 +5942,7 @@ snapshots:
       '@cspell/cspell-pipe': 8.17.1
       '@cspell/cspell-types': 8.17.1
       cspell-trie-lib: 8.17.1
-      fast-equals: 5.1.3
+      fast-equals: 5.2.0
 
   cspell-gitignore@8.17.1:
     dependencies:
@@ -5985,7 +5985,7 @@ snapshots:
       cspell-io: 8.17.1
       cspell-trie-lib: 8.17.1
       env-paths: 3.0.0
-      fast-equals: 5.1.3
+      fast-equals: 5.2.0
       gensequence: 7.0.0
       import-fresh: 3.3.0
       resolve-from: 5.0.0
@@ -6290,7 +6290,7 @@ snapshots:
 
   fast-diff@1.3.0: {}
 
-  fast-equals@5.1.3: {}
+  fast-equals@5.2.0: {}
 
   fast-fifo@1.3.2: {}
 
@@ -8424,7 +8424,7 @@ snapshots:
 
   util-deprecate@1.0.2: {}
 
-  uuid@11.0.3: {}
+  uuid@11.0.4: {}
 
   validate-npm-package-license@3.0.4:
     dependencies:
