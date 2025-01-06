@@ -1,9 +1,13 @@
+--noprofile
+--norc
+--rcfile
 alias
 allexport
 autoremove
 BASH_ARGV0
 BASH_COMPAT
 BASH_SOURCE
+BASH_VERSINFO
 BASH_XTRACEFD
 BASHOPTS
 bg
@@ -37,6 +41,7 @@ elif
 else
 emacs
 enable
+EPOCHREALTIME
 errexit
 errtrace
 esac
@@ -158,6 +163,7 @@ shfmt
 shift
 shopt
 source
+SRANDOM
 SSH_CLIENT
 SSH2_CLIENT
 suspend
@@ -169,6 +175,7 @@ TEXTDOMAIN
 TEXTDOMAINDIR
 then
 time
+TIMEFORMAT
 times
 TMOUT
 tput
