@@ -3,6 +3,20 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+## [4.2.0](https://github.com/streetsidesoftware/cspell-dicts/compare/@cspell/dict-bash@4.1.10...@cspell/dict-bash@4.2.0) (2025-01-07)
+
+
+### Features
+
+* Merge bash package into shell ([#3991](https://github.com/streetsidesoftware/cspell-dicts/issues/3991)) ([f088033](https://github.com/streetsidesoftware/cspell-dicts/commit/f088033df250d4b97381412c8d7059b83484cc8a))
+
+
+### Dependencies
+
+* The following workspace dependencies were updated
+  * dependencies
+    * @cspell/dict-shell bumped to 1.1.0
+
 ## [4.1.10](https://github.com/streetsidesoftware/cspell-dicts/compare/@cspell/dict-bash@4.1.9...@cspell/dict-bash@4.1.10) (2025-01-06)
 
 

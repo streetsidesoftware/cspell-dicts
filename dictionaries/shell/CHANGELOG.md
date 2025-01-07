@@ -1,5 +1,12 @@
 # Changelog
 
+## [1.1.0](https://github.com/streetsidesoftware/cspell-dicts/compare/@cspell/dict-shell@1.0.12...@cspell/dict-shell@1.1.0) (2025-01-07)
+
+
+### Features
+
+* Merge bash package into shell ([#3991](https://github.com/streetsidesoftware/cspell-dicts/issues/3991)) ([f088033](https://github.com/streetsidesoftware/cspell-dicts/commit/f088033df250d4b97381412c8d7059b83484cc8a))
+
 ## [1.0.12](https://github.com/streetsidesoftware/cspell-dicts/compare/@cspell/dict-shell@1.0.11...@cspell/dict-shell@1.0.12) (2025-01-06)
 
 
