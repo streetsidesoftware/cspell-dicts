@@ -2,11 +2,15 @@
 # cspell-tools: keep-case no-split
 
 --no-globalrcs
+--noprofile
+--norc
+--rcfile
 ARCHFLAGS
 BASHOPTS
 BASH_ARGV0
 BASH_COMPAT
 BASH_SOURCE
+BASH_VERSINFO
 BASH_XTRACEFD
 CHILD_MAX
 COLUMNS
@@ -46,6 +50,7 @@ MAILPATH
 MANPAGER
 MANPATH
 OLDPWD
+OPTARG
 OPTERR
 OPTIND
 OSTYPE
@@ -66,6 +71,7 @@ SCRIPTDIR
 SECONDS
 SHELL
 SHELLOPTS
+SRANDOM
 SSH2_CLIENT
 SSH_CLIENT
 TERM
@@ -74,6 +80,7 @@ TERMINFO
 TEXTDOMAIN
 TEXTDOMAINDIR
 TIMEFMT
+TIMEFORMAT
 TMOUT
 TTYIDLE
 TZ
@@ -127,15 +134,18 @@ epochtime
 errexit
 errtrace
 esac
+euxo
 eval
 exec
 exit
 export
+fallocate
 false
 fc
 fg
 fi
 for
+fstype
 funcfiletrace
 function
 functrace
@@ -151,6 +161,8 @@ ignoreeof
 in
 inlib
 jobs
+keymap
+keymaps
 keyrings
 keyword
 kill
@@ -176,6 +188,7 @@ nounset
 nvim
 ohmyzsh
 onecmd
+pgrep
 physical
 pipefail
 popd
@@ -191,6 +204,7 @@ pushd
 pwd
 read
 readarray
+readline
 readlink
 readonly
 realpath

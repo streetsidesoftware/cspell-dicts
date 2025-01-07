@@ -95,7 +95,11 @@ importers:
 
   dictionaries/aws: {}
 
-  dictionaries/bash: {}
+  dictionaries/bash:
+    dependencies:
+      '@cspell/dict-shell':
+        specifier: workspace:*
+        version: link:../shell
 
   dictionaries/bg_BG: {}
 
@@ -5377,7 +5381,7 @@ snapshots:
   '@types/vinyl@2.0.12':
     dependencies:
       '@types/expect': 1.20.4
-      '@types/node': 22.10.5
+      '@types/node': 20.17.12
 
   '@vercel/nft@0.27.10(encoding@0.1.13)':
     dependencies:
