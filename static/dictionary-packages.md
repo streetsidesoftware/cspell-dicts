@@ -59,7 +59,6 @@
 - [.Net](dictionaries/dotnet) - .Net keywords Dictionary. <sup>1</sup>
 - [Ada](dictionaries/ada) - Ada Language Dictionary <sup>1</sup>
 - [AL](dictionaries/al) - AL (Microsoft Business Central) Dictionary <sup>1</sup>
-- [bash](dictionaries/bash) - Bash dictionary. <sup>1</sup>
 - [C/C++](dictionaries/cpp) - C/C++ Keywords and common library functions. <sup>1</sup>
 - [C#](dictionaries/csharp) - C# dictionary. <sup>1</sup>
 - [Clojure](dictionaries/clojure) - Clojure dictionary.
@@ -106,6 +105,7 @@
 ## Specialized Dictionaries
 
 - [AWS](dictionaries/aws) - AWS dictionary. <sup>1</sup> <sup>2</sup>
+- [bash](dictionaries/bash) - Bash dictionary. <sup>1</sup>
 - [Cities of Finland](dictionaries/city-names-finland) - List of cities in Finland. <sup>2</sup>
 - [Common Public Licenses](dictionaries/public-licenses) - Common Public Licenses dictionary. <sup>1</sup> <sup>2</sup>
 - [Company names](dictionaries/companies) - Company names dictionary. <sup>1</sup> <sup>2</sup>
@@ -140,7 +140,7 @@
 | [@cspell/dict-al](./dictionaries/al#readme)<sup>1</sup>                                         | AL                                | al                                                                                                                                                                                        |
 | [@cspell/dict-ar](./dictionaries/ar#readme)                                                     | Arabic                            | ar                                                                                                                                                                                        |
 | [@cspell/dict-aws](./dictionaries/aws#readme)<sup>1</sup>                                       | AWS                               | aws<sup>2</sup>                                                                                                                                                                           |
-| [@cspell/dict-bash](./dictionaries/bash#readme)<sup>1</sup>                                     | bash                              | bash                                                                                                                                                                                      |
+| [@cspell/dict-bash](./dictionaries/bash#readme)<sup>1</sup>                                     | bash                              |                                                                                                                                                                                           |
 | [@cspell/dict-bg-bg](./dictionaries/bg_BG#readme)                                               | Bulgarian                         | bg-bg                                                                                                                                                                                     |
 | [@cspell/dict-ca](./dictionaries/ca#readme)                                                     | Catalan                           | ca                                                                                                                                                                                        |
 | [@cspell/dict-city-names-finland](./dictionaries/city-names-finland#readme)                     | Cities of Finland                 | city-names-finland<sup>2</sup>                                                                                                                                                            |
@@ -265,7 +265,6 @@
 | [`al`](dictionaries/al) <sup>1</sup>                                                 | AL Keywords Dictionary                                              | -                             | al                                                             |
 | [`ar`](dictionaries/ar)                                                              | Arabic dictionary.                                                  | ar                            | -                                                              |
 | [`aws`](dictionaries/aws) <sup>1</sup> <sup>2</sup>                                  | AWS dictionary.                                                     | -                             | -                                                              |
-| [`bash`](dictionaries/bash) <sup>1</sup>                                             | Bash dictionary.                                                    | -                             | shellscript                                                    |
 | [`bash`](dictionaries/shell)                                                         | Bash dictionary.                                                    | -                             | bashscript                                                     |
 | [`bg-bg`](dictionaries/bg_BG)                                                        | Bulgarian dictionary.                                               | bg<br>bg-BG                   | -                                                              |
 | [`ca`](dictionaries/ca)                                                              | Catalan dictionary.                                                 | ca                            | -                                                              |
