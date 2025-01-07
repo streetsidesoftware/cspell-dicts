@@ -1,5 +1,17 @@
 # Release Notes
 
+## [28.7.0](https://github.com/streetsidesoftware/cspell-dicts/compare/cspell-dicts@28.6.1...cspell-dicts@28.7.0) (2025-01-07)
+
+
+### Features
+
+* Merge bash package into shell ([#3991](https://github.com/streetsidesoftware/cspell-dicts/issues/3991)) ([f088033](https://github.com/streetsidesoftware/cspell-dicts/commit/f088033df250d4b97381412c8d7059b83484cc8a))
+
+
+### Updates and Bug Fixes
+
+* Workflow Bot -- Build Dictionaries ([#3994](https://github.com/streetsidesoftware/cspell-dicts/issues/3994)) ([2dd2517](https://github.com/streetsidesoftware/cspell-dicts/commit/2dd25171b259ef73f988e51151d6b890ae49c1ca))
+
 ## [28.6.1](https://github.com/streetsidesoftware/cspell-dicts/compare/cspell-dicts@28.6.0...cspell-dicts@28.6.1) (2025-01-06)
 
 
