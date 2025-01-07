@@ -5,7 +5,6 @@ targets:
     sources:
       - listFile: ./common-source-files.txt
       - ./src/shell-bash-words.txt
-      - ../bash/src/bash-words.txt
     format: plaintext
     targetDirectory: './dict'
     generateNonStrict: false

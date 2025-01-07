@@ -2,15 +2,7 @@
     "id": "bash",
     "name": "bash",
     "description": "Bash dictionary.",
-    "readonly": true,
-    "dictionaryDefinitions": [
-        {
-            "name": "bash",
-            "path": "./dict/bash-words.txt",
-            "description": "Bash dictionary."
-        }
-    ],
-    "dictionaries": [],
+    "import": ["@cspell/dict-shell"],
     "languageSettings": [
         {
             "languageId": "shellscript",
