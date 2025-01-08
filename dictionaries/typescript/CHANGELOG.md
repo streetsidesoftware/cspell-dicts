@@ -3,6 +3,13 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+## [3.2.0](https://github.com/streetsidesoftware/cspell-dicts/compare/@cspell/dict-typescript@3.1.12...@cspell/dict-typescript@3.2.0) (2025-01-08)
+
+
+### Features
+
+* remove `enableFiletypes` ([#3996](https://github.com/streetsidesoftware/cspell-dicts/issues/3996)) ([6011700](https://github.com/streetsidesoftware/cspell-dicts/commit/6011700cc2d90edd2048f293fe2235b6212a805a))
+
 ## [3.1.12](https://github.com/streetsidesoftware/cspell-dicts/compare/@cspell/dict-typescript@3.1.11...@cspell/dict-typescript@3.1.12) (2024-12-30)
 
 
