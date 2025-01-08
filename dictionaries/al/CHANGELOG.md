@@ -1,5 +1,12 @@
 # Change Log
 
+## [1.1.0](https://github.com/streetsidesoftware/cspell-dicts/compare/@cspell/dict-al@1.0.4...@cspell/dict-al@1.1.0) (2025-01-08)
+
+
+### Features
+
+* remove `enableFiletypes` ([#3996](https://github.com/streetsidesoftware/cspell-dicts/issues/3996)) ([6011700](https://github.com/streetsidesoftware/cspell-dicts/commit/6011700cc2d90edd2048f293fe2235b6212a805a))
+
 ## [1.0.4](https://github.com/streetsidesoftware/cspell-dicts/compare/@cspell/dict-al@1.0.3...@cspell/dict-al@1.0.4) (2024-12-30)
 
 

@@ -1,5 +1,24 @@
 # Change Log
 
+## [1.0.24](https://github.com/streetsidesoftware/cspell-dicts/compare/@cspell/dict-cspell-bundle@1.0.23...@cspell/dict-cspell-bundle@1.0.24) (2025-01-08)
+
+
+### Dependencies
+
+* The following workspace dependencies were updated
+  * dependencies
+    * @cspell/dict-ada bumped to 4.1.0
+    * @cspell/dict-al bumped to 1.1.0
+    * @cspell/dict-dart bumped to 2.3.0
+    * @cspell/dict-flutter bumped to 1.1.0
+    * @cspell/dict-fsharp bumped to 1.1.0
+    * @cspell/dict-julia bumped to 1.1.0
+    * @cspell/dict-markdown bumped to 2.0.9
+    * @cspell/dict-r bumped to 2.1.0
+    * @cspell/dict-sql bumped to 2.2.0
+    * @cspell/dict-terraform bumped to 1.1.0
+    * @cspell/dict-typescript bumped to 3.2.0
+
 ## [1.0.23](https://github.com/streetsidesoftware/cspell-dicts/compare/@cspell/dict-cspell-bundle@1.0.22...@cspell/dict-cspell-bundle@1.0.23) (2025-01-07)
 
 

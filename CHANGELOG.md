@@ -1,5 +1,12 @@
 # Release Notes
 
+## [28.8.0](https://github.com/streetsidesoftware/cspell-dicts/compare/cspell-dicts@28.7.0...cspell-dicts@28.8.0) (2025-01-08)
+
+
+### Features
+
+* remove `enableFiletypes` ([#3996](https://github.com/streetsidesoftware/cspell-dicts/issues/3996)) ([6011700](https://github.com/streetsidesoftware/cspell-dicts/commit/6011700cc2d90edd2048f293fe2235b6212a805a))
+
 ## [28.7.0](https://github.com/streetsidesoftware/cspell-dicts/compare/cspell-dicts@28.6.1...cspell-dicts@28.7.0) (2025-01-07)
 
 

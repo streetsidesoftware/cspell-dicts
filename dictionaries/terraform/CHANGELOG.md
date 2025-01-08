@@ -1,5 +1,12 @@
 # Change Log
 
+## [1.1.0](https://github.com/streetsidesoftware/cspell-dicts/compare/@cspell/dict-terraform@1.0.8...@cspell/dict-terraform@1.1.0) (2025-01-08)
+
+
+### Features
+
+* remove `enableFiletypes` ([#3996](https://github.com/streetsidesoftware/cspell-dicts/issues/3996)) ([6011700](https://github.com/streetsidesoftware/cspell-dicts/commit/6011700cc2d90edd2048f293fe2235b6212a805a))
+
 ## [1.0.8](https://github.com/streetsidesoftware/cspell-dicts/compare/@cspell/dict-terraform@1.0.7...@cspell/dict-terraform@1.0.8) (2024-12-30)
 
 
