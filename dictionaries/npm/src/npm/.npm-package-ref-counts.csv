@@ -68,6 +68,7 @@ package,count
 @alifd/stylelint-config-next,1
 @alifd/validate,1
 @alloc/quick-lru,1
+@amaui/ui-react,1
 @aminya/babel-plugin-replace-import-extension,1
 @ampproject/remapping,4
 @ampproject/toolbox-optimizer,2
@@ -152,9 +153,11 @@ package,count
 @apollo/react-hooks,1
 @apollo/react-ssr,1
 @appium/eslint-config-appium-ts,1
+@appium/logger,1
+@appium/schema,1
 @appium/support,1
 @appium/test-support,1
-@appium/tsconfig,1
+@appium/tsconfig,2
 @appium/types,1
 @applitools/test-utils,1
 @arethetypeswrong/cli,19
@@ -337,7 +340,7 @@ package,count
 @babel/plugin-transform-regenerator,2
 @babel/plugin-transform-regexp-modifiers,1
 @babel/plugin-transform-reserved-words,1
-@babel/plugin-transform-runtime,42
+@babel/plugin-transform-runtime,43
 @babel/plugin-transform-shorthand-properties,1
 @babel/plugin-transform-spread,2
 @babel/plugin-transform-sticky-regex,1
@@ -359,7 +362,7 @@ package,count
 @babel/preset-stage-3,1
 @babel/preset-typescript,48
 @babel/register,44
-@babel/runtime,81
+@babel/runtime,82
 @babel/runtime-corejs3,6
 @babel/standalone,1
 @babel/template,3
@@ -594,7 +597,7 @@ package,count
 @csstools/selector-resolve-nested,1
 @csstools/selector-specificity,3
 @csstools/utilities,3
-@ctrl/tinycolor,6
+@ctrl/tinycolor,7
 @cucumber/ci-environment,1
 @cucumber/compatibility-kit,1
 @cucumber/cucumber,1
@@ -717,7 +720,6 @@ package,count
 @edge-runtime/ponyfill,2
 @edge-runtime/primitives,2
 @edge-runtime/vm,1
-@effect/schema,1
 @eggjs/tsconfig,2
 @eightshift/ui-components,1
 @electric-sql/pglite,1
@@ -1010,7 +1012,7 @@ package,count
 @jest/environment,3
 @jest/expect-utils,2
 @jest/fake-timers,3
-@jest/globals,10
+@jest/globals,9
 @jest/reporters,2
 @jest/schemas,2
 @jest/test-result,3
@@ -1277,7 +1279,7 @@ package,count
 @nx/devkit,13
 @nx/eslint,4
 @nx/jest,1
-@nx/js,9
+@nx/js,8
 @nx/node,2
 @nx/workspace,2
 @observablehq/plot,1
@@ -1762,7 +1764,7 @@ package,count
 @riotjs/util,1
 @rkusa/linebreak,1
 @rollup/browser,1
-@rollup/plugin-alias,15
+@rollup/plugin-alias,14
 @rollup/plugin-babel,41
 @rollup/plugin-buble,5
 @rollup/plugin-commonjs,76
@@ -1810,7 +1812,7 @@ package,count
 @sapphire/utilities,1
 @scalar/api-client,1
 @scalar/api-reference,1
-@scalar/build-tooling,1
+@scalar/build-tooling,2
 @scalar/code-highlight,1
 @scalar/components,1
 @scalar/galaxy,1
@@ -2131,16 +2133,25 @@ package,count
 @tsconfig/recommended,1
 @tsconfig/strictest,1
 @tsd/typescript,8
-@tsparticles/engine,17
+@tsparticles/engine,19
 @tsparticles/interaction-external-trail,1
+@tsparticles/move-base,1
 @tsparticles/plugin-absorbers,1
 @tsparticles/plugin-emitters,1
 @tsparticles/plugin-emitters-shape-circle,1
 @tsparticles/plugin-emitters-shape-square,1
+@tsparticles/plugin-hex-color,1
+@tsparticles/plugin-hsl-color,1
+@tsparticles/plugin-rgb-color,1
+@tsparticles/shape-circle,1
 @tsparticles/shape-text,1
 @tsparticles/slim,1
+@tsparticles/updater-color,1
 @tsparticles/updater-destroy,1
+@tsparticles/updater-opacity,1
+@tsparticles/updater-out-modes,1
 @tsparticles/updater-roll,1
+@tsparticles/updater-size,1
 @tsparticles/updater-tilt,1
 @tsparticles/updater-twinkle,1
 @tsparticles/updater-wobble,1
@@ -2297,7 +2308,7 @@ package,count
 @types/events,1
 @types/execa,1
 @types/exit,2
-@types/express,30
+@types/express,31
 @types/express-fileupload,2
 @types/express-rate-limit,1
 @types/express-serve-static-core,2
@@ -2392,7 +2403,7 @@ package,count
 @types/istanbul-reports,2
 @types/jasmine,8
 @types/jasminewd2,1
-@types/jest,169
+@types/jest,168
 @types/jest-axe,5
 @types/jest-environment-puppeteer,3
 @types/jest-expect-message,1
@@ -2559,7 +2570,7 @@ package,count
 @types/postcss-resolve-nested-selector,1
 @types/postcss-safe-parser,2
 @types/power-assert,1
-@types/prettier,6
+@types/prettier,7
 @types/prettier-linter-helpers,1
 @types/pretty,1
 @types/pretty-hrtime,1
@@ -2740,7 +2751,7 @@ package,count
 @types/wrap-ansi,3
 @types/write-file-atomic,3
 @types/write-json-file,1
-@types/ws,14
+@types/ws,15
 @types/xml-name-validator,1
 @types/xml2js,4
 @types/yargs,21
@@ -2752,9 +2763,9 @@ package,count
 @typeschema/core,1
 @typeschema/main,1
 @typeschema/zod,1
-@typescript-eslint/eslint-plugin,212
+@typescript-eslint/eslint-plugin,211
 @typescript-eslint/eslint-plugin-tslint,1
-@typescript-eslint/parser,224
+@typescript-eslint/parser,223
 @typescript-eslint/rule-schema-to-typescript-types,1
 @typescript-eslint/rule-tester,6
 @typescript-eslint/scope-manager,5
@@ -2900,8 +2911,8 @@ package,count
 @vitest/browser,4
 @vitest/coverage-c8,1
 @vitest/coverage-istanbul,5
-@vitest/coverage-v8,41
-@vitest/eslint-plugin,2
+@vitest/coverage-v8,42
+@vitest/eslint-plugin,3
 @vitest/expect,3
 @vitest/mocker,1
 @vitest/pretty-format,1
@@ -3036,7 +3047,7 @@ package,count
 @zeit/schemas,1
 @zip.js/zip.js,1
 @zkochan/js-yaml,2
-@zmotivat0r/o0,1
+@zmotivat0r/o0,2
 @zxing/browser,1
 @zxing/library,1
 0x,1
@@ -3996,7 +4007,7 @@ clean-base-url,1
 clean-css,13
 clean-css-cli,4
 clean-for-publish,1
-clean-jsdoc-theme,3
+clean-jsdoc-theme,4
 clean-publish,3
 clean-regexp,1
 clean-stack,2
@@ -4037,7 +4048,7 @@ clone-stats,1
 closer-composed-particularly-shout,41
 closurecompiler,2
 cls-hooked,3
-clsx,26
+clsx,27
 clui,1
 cluster-key-slot,1
 cmd-shim,2
@@ -4076,7 +4087,7 @@ color-string,3
 color-support,2
 color2k,2
 colord,3
-colorette,10
+colorette,9
 colorful,2
 colorjs.io,1
 colors,36
@@ -4515,7 +4526,7 @@ dir-compare,3
 direction,2
 directory-tree,1
 dirsum,1
-dirty-chai,7
+dirty-chai,6
 disc,1
 discord-api-types,2
 discord.js,1
@@ -4821,7 +4832,7 @@ es6-promisify,1
 es6-shim,5
 es6-symbol,1
 esast-util-from-js,2
-esbuild,63
+esbuild,64
 esbuild-extra,2
 esbuild-loader,8
 esbuild-node-externals,2
@@ -4850,7 +4861,7 @@ esdoc-ecmascript-proposal-plugin,1
 esdoc-importpath-plugin,1
 esdoc-inject-style-plugin,1
 esdoc-standard-plugin,1
-eslint,859
+eslint,858
 eslint-ava-rule-tester,2
 eslint-compat-utils,2
 eslint-config-airbnb,33
@@ -4908,7 +4919,7 @@ eslint-config-oclif-typescript,6
 eslint-config-ostai,1
 eslint-config-populist,1
 eslint-config-preact,1
-eslint-config-prettier,280
+eslint-config-prettier,279
 eslint-config-prettier-standard,1
 eslint-config-problems,2
 eslint-config-quasar,1
@@ -5027,7 +5038,7 @@ eslint-plugin-path-import-extension,1
 eslint-plugin-perfectionist,3
 eslint-plugin-playwright,1
 eslint-plugin-prefer-arrow,3
-eslint-plugin-prettier,175
+eslint-plugin-prettier,174
 eslint-plugin-prettier-vue,2
 eslint-plugin-promise,105
 eslint-plugin-pug,1
@@ -5057,7 +5068,7 @@ eslint-plugin-tsdoc,6
 eslint-plugin-typescript,1
 eslint-plugin-unicorn,31
 eslint-plugin-unused-imports,3
-eslint-plugin-vitest,6
+eslint-plugin-vitest,5
 eslint-plugin-vitest-globals,1
 eslint-plugin-vue,11
 eslint-plugin-vue-libs,2
@@ -6245,7 +6256,7 @@ jasminewd2,1
 javascript-natural-sort,1
 javascript-stringify,1
 jazz,1
-jest,300
+jest,298
 jest-axe,5
 jest-canvas-mock,6
 jest-changed-files,1
@@ -6325,7 +6336,7 @@ jqtpl,1
 jquery,18
 jquery-hammerjs,1
 js-base64,7
-js-beautify,9
+js-beautify,8
 js-calendar,1
 js-cleanup,1
 js-combinatorics,1
@@ -6349,7 +6360,7 @@ jscpd-sarif-reporter,1
 jscs,8
 jscs-jsdoc,1
 jscs-preset-wikimedia,1
-jsdoc,25
+jsdoc,26
 jsdoc-api,1
 jsdoc-babel,1
 jsdoc-escape-at,1
@@ -6358,7 +6369,7 @@ jsdoc-to-markdown,11
 jsdoc-ts-utils,1
 jsdoc-tsimport-plugin,1
 jsdoc-type-pratt-parser,2
-jsdom,67
+jsdom,68
 jsdom-global,7
 jsdom-screenshot,1
 jsdomify,1
@@ -7019,7 +7030,7 @@ microbundle,14
 microfiber,1
 micromark,3
 micromark-build,1
-micromark-core-commonmark,1
+micromark-core-commonmark,2
 micromark-extension-directive,1
 micromark-extension-gfm,3
 micromark-extension-gfm-autolink-literal,1
@@ -7296,6 +7307,7 @@ node-hook,1
 node-html-parser,6
 node-icu-charset-detector,1
 node-inspector,1
+node-ipc,1
 node-jq,1
 node-libs-browser,2
 node-localstorage,1
@@ -7490,7 +7502,7 @@ outpipe,1
 output-file-sync,1
 outvariant,2
 ow,2
-oxlint,1
+oxlint,2
 p-all,3
 p-cancelable,2
 p-defer,2
@@ -7619,9 +7631,8 @@ phin,1
 phonegap-build,1
 phosphor-react,1
 picklog,1
-picocolors,30
+picocolors,31
 picomatch,13
-picomatch-browser,1
 picture-tuber,1
 pidtree,4
 pidusage,2
@@ -7899,7 +7910,7 @@ prompt-sync,2
 promptly,1
 prompts,15
 prompts-ncu,1
-prop-types,61
+prop-types,60
 prop-types-extra,1
 propagate,1
 proper-lockfile,4
@@ -8444,7 +8455,7 @@ rewrite-imports,1
 rfc-log-levels,1
 rfdc,6
 rhea-promise,1
-rimraf,332
+rimraf,333
 ripemd160,1
 riteway,1
 rlp,1
@@ -8453,6 +8464,7 @@ rmdir,1
 roadrunner,1
 roboter,1
 rocket-location-calm-valley,11
+rolldown,1
 rolling-stats,1
 rollup,233
 rollup-plugin-alias,2
@@ -9320,7 +9332,7 @@ ts-essentials,1
 ts-expose-internals,1
 ts-ignore-import,1
 ts-invariant,4
-ts-jest,116
+ts-jest,114
 ts-jest-resolver,8
 ts-loader,35
 ts-mocha,1
@@ -9344,10 +9356,10 @@ tsd,112
 tsd-lite,6
 tsdx,4
 tsgen,1
-tshy,13
+tshy,14
 tshy-after,2
 tsify,3
-tslib,130
+tslib,131
 tslint,39
 tslint-config-common,1
 tslint-config-prettier,7
@@ -9387,7 +9399,7 @@ type-check,1
 type-coverage,41
 type-coverage-core,1
 type-detect,1
-type-fest,28
+type-fest,29
 type-is,8
 type-tester,1
 typechecker,1
@@ -9507,6 +9519,7 @@ unorm,2
 unpipe,3
 unquote,1
 unset-value,1
+unstorage,1
 untildify,5
 untyped,1
 unused-filename,1
@@ -9640,7 +9653,7 @@ vite-plugin-tdoc,1
 vite-tsconfig-paths,3
 vitefu,2
 vitepress,7
-vitest,92
+vitest,94
 vitest-axe,1
 vitest-canvas-mock,1
 vitest-environment-miniflare,2
@@ -9759,7 +9772,7 @@ webdriverio,5
 webfont,1
 webidl-conversions,2
 webidl2js,1
-webpack,169
+webpack,168
 webpack-blocks,1
 webpack-bundle-analyzer,17
 webpack-chain,1
@@ -9893,7 +9906,7 @@ yamlify-object,1
 yamljs,4
 yamlparser,1
 yargonaut,1
-yargs,70
+yargs,71
 yargs-parser,17
 yargs-test-extends,1
 yargs-unparser,1
@@ -9926,6 +9939,7 @@ yup,6
 z-use-drag,1
 zen-observable,4
 zen-observable-ts,2
+zeptomatch,1
 zeros,1
 zimmerframe,1
 zip-stream,1
