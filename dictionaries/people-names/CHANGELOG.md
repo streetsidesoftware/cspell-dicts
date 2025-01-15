@@ -1,5 +1,13 @@
 # Change Log
 
+## [1.1.7](https://github.com/streetsidesoftware/cspell-dicts/compare/@cspell/dict-people-names@1.1.6...@cspell/dict-people-names@1.1.7) (2025-01-15)
+
+
+### Updates and Bug Fixes
+
+* Update people-names dictionary ([#4004](https://github.com/streetsidesoftware/cspell-dicts/issues/4004)) ([a81047e](https://github.com/streetsidesoftware/cspell-dicts/commit/a81047e7d73f16d981227cca331a0de811088162))
+* Workflow Bot -- Build Dictionaries ([#4006](https://github.com/streetsidesoftware/cspell-dicts/issues/4006)) ([2a7aad6](https://github.com/streetsidesoftware/cspell-dicts/commit/2a7aad6d22c8540674fa6bb56f0caff43ad1888f))
+
 ## [1.1.6](https://github.com/streetsidesoftware/cspell-dicts/compare/@cspell/dict-people-names@1.1.5...@cspell/dict-people-names@1.1.6) (2024-12-30)
 
 
