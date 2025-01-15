@@ -1,5 +1,16 @@
 # Release Notes
 
+## [28.8.1](https://github.com/streetsidesoftware/cspell-dicts/compare/cspell-dicts@28.8.0...cspell-dicts@28.8.1) (2025-01-15)
+
+
+### Updates and Bug Fixes
+
+* Update people-names dictionary ([#4004](https://github.com/streetsidesoftware/cspell-dicts/issues/4004)) ([a81047e](https://github.com/streetsidesoftware/cspell-dicts/commit/a81047e7d73f16d981227cca331a0de811088162))
+* Workflow Bot -- Build Dictionaries ([#4006](https://github.com/streetsidesoftware/cspell-dicts/issues/4006)) ([2a7aad6](https://github.com/streetsidesoftware/cspell-dicts/commit/2a7aad6d22c8540674fa6bb56f0caff43ad1888f))
+* Workflow Bot -- Build Dictionaries ([#4008](https://github.com/streetsidesoftware/cspell-dicts/issues/4008)) ([8f031e2](https://github.com/streetsidesoftware/cspell-dicts/commit/8f031e277f057c3b52faf7e766fc0ee3d40931fd))
+* Workflow Bot -- Build Dictionaries ([#4011](https://github.com/streetsidesoftware/cspell-dicts/issues/4011)) ([eb570b1](https://github.com/streetsidesoftware/cspell-dicts/commit/eb570b1d71c0b301c6a0d6faed2e8f58fd68b438))
+* Workflow Bot -- Update Dictionaries ([#3999](https://github.com/streetsidesoftware/cspell-dicts/issues/3999)) ([3419a00](https://github.com/streetsidesoftware/cspell-dicts/commit/3419a002312edac15d37eceec8324b3e6b787669))
+
 ## [28.8.0](https://github.com/streetsidesoftware/cspell-dicts/compare/cspell-dicts@28.7.0...cspell-dicts@28.8.0) (2025-01-08)
 
 
