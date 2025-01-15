@@ -551,8 +551,8 @@ importers:
   dictionaries/public-licenses:
     devDependencies:
       spdx-license-ids:
-        specifier: ^3.0.20
-        version: 3.0.20
+        specifier: ^3.0.21
+        version: 3.0.21
 
   dictionaries/python:
     dependencies:
@@ -670,8 +670,8 @@ importers:
         specifier: ^20.1.4
         version: 20.1.4
       '@types/node':
-        specifier: ^20.17.12
-        version: 20.17.12
+        specifier: ^20.17.13
+        version: 20.17.13
       typescript:
         specifier: ^5.7.3
         version: 5.7.3
@@ -1415,8 +1415,8 @@ packages:
   '@types/node@16.18.123':
     resolution: {integrity: sha512-/n7I6V/4agSpJtFDKKFEa763Hc1z3hmvchobHS1TisCOTKD5nxq8NJ2iK7SRIMYL276Q9mgWOx2AWp5n2XI6eA==}
 
-  '@types/node@20.17.12':
-    resolution: {integrity: sha512-vo/wmBgMIiEA23A/knMfn/cf37VnuF52nZh5ZoW0GWt4e4sxNquibrMRJ7UQsA06+MBx9r/H1jsI9grYjQCQlw==}
+  '@types/node@20.17.13':
+    resolution: {integrity: sha512-RNf+4dEeV69PIvyp++4IKM2vnLXtmp/JovfeQm5P5+qpKb6wHoH7INywLdZ7z+gVX46kgBP/fwJJvZYaHxtdyw==}
 
   '@types/node@22.10.6':
     resolution: {integrity: sha512-qNiuwC4ZDAUNcY47xgaSuS92cjf8JbSUoaKS77bmLG1rU7MlATVSiw/IlrjtIyyskXBZ8KkNfjK/P5na7rgXbQ==}
@@ -3904,8 +3904,8 @@ packages:
   spdx-expression-parse@3.0.1:
     resolution: {integrity: sha512-cbqHunsQWnJNE6KhVSMsMeH5H/L9EpymbzqTQ3uLwNCLZ1Q481oWaofqH7nO6V07xlXwY6PhQdQ2IedWx/ZK4Q==}
 
-  spdx-license-ids@3.0.20:
-    resolution: {integrity: sha512-jg25NiDV/1fLtSgEgyvVyDunvaNHbuwF9lfNV17gSmPFAlYzdfNBlLtLzXTevwkPj7DhGbmN9VnmJIgLnhvaBw==}
+  spdx-license-ids@3.0.21:
+    resolution: {integrity: sha512-Bvg/8F5XephndSK3JffaRqdT+gyhfqIPwDHpX80tJrF8QQRYMo8sNMeaZ2Dp5+jhwKnUmIOyFFQfHRkjJm5nXg==}
 
   split2@4.2.0:
     resolution: {integrity: sha512-UcjcJOWknrNkF6PLX83qcHM6KHgVKNkV62Y8a5uYDVv9ydGQVwAHMKqHdJje1VTWpljG0WYpCDhrCdAOYH4TWg==}
@@ -5393,7 +5393,7 @@ snapshots:
 
   '@types/node@16.18.123': {}
 
-  '@types/node@20.17.12':
+  '@types/node@20.17.13':
     dependencies:
       undici-types: 6.19.8
 
@@ -5418,7 +5418,7 @@ snapshots:
   '@types/vinyl@2.0.12':
     dependencies:
       '@types/expect': 1.20.4
-      '@types/node': 20.17.12
+      '@types/node': 22.10.6
 
   '@vercel/nft@0.27.10(encoding@0.1.13)':
     dependencies:
@@ -7162,7 +7162,7 @@ snapshots:
 
   mem-fs@4.1.0:
     dependencies:
-      '@types/node': 20.17.12
+      '@types/node': 20.17.13
       '@types/vinyl': 2.0.12
       vinyl: 3.0.0
       vinyl-file: 5.0.0
@@ -8206,16 +8206,16 @@ snapshots:
   spdx-correct@3.2.0:
     dependencies:
       spdx-expression-parse: 3.0.1
-      spdx-license-ids: 3.0.20
+      spdx-license-ids: 3.0.21
 
   spdx-exceptions@2.5.0: {}
 
   spdx-expression-parse@3.0.1:
     dependencies:
       spdx-exceptions: 2.5.0
-      spdx-license-ids: 3.0.20
+      spdx-license-ids: 3.0.21
 
-  spdx-license-ids@3.0.20: {}
+  spdx-license-ids@3.0.21: {}
 
   split2@4.2.0: {}
 
