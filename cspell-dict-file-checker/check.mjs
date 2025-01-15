@@ -1,3 +1,4 @@
+// @ts-check
 import test from 'ava';
 import { checkText } from 'cspell';
 import { glob } from 'glob';
