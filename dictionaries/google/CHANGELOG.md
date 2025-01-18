@@ -1,5 +1,13 @@
 # Change Log
 
+## [1.0.7](https://github.com/streetsidesoftware/cspell-dicts/compare/@cspell/dict-google@1.0.6...@cspell/dict-google@1.0.7) (2025-01-18)
+
+
+### Updates and Bug Fixes
+
+* Add TensorBoard to google dict ([#4020](https://github.com/streetsidesoftware/cspell-dicts/issues/4020)) ([c151fe0](https://github.com/streetsidesoftware/cspell-dicts/commit/c151fe0e9af68396eeaad4ea6eead3f807298e51))
+* Workflow Bot -- Build Dictionaries ([#4021](https://github.com/streetsidesoftware/cspell-dicts/issues/4021)) ([f4345e6](https://github.com/streetsidesoftware/cspell-dicts/commit/f4345e63ffc2fbe025eaf74d1d5a78d9b481b643))
+
 ## [1.0.6](https://github.com/streetsidesoftware/cspell-dicts/compare/@cspell/dict-google@1.0.5...@cspell/dict-google@1.0.6) (2025-01-18)
 
 
