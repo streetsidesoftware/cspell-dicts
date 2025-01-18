@@ -1,5 +1,30 @@
 # Change Log
 
+## [2.0.9](https://github.com/streetsidesoftware/cspell-dicts/compare/@cspell/dict-markdown@2.0.8...@cspell/dict-markdown@2.0.9) (2025-01-08)
+
+
+### Dependencies
+
+* The following workspace dependencies were updated
+  * peerDependencies
+    * @cspell/dict-typescript bumped to 3.2.0
+
+## [2.0.8](https://github.com/streetsidesoftware/cspell-dicts/compare/@cspell/dict-markdown@2.0.7...@cspell/dict-markdown@2.0.8) (2024-12-30)
+
+
+### Updates and Bug Fixes
+
+* Adjust dictionary names ([#3958](https://github.com/streetsidesoftware/cspell-dicts/issues/3958)) ([8a96533](https://github.com/streetsidesoftware/cspell-dicts/commit/8a96533bec21280103740868b81559437c413501))
+
+
+### Dependencies
+
+* The following workspace dependencies were updated
+  * peerDependencies
+    * @cspell/dict-css bumped to 4.0.17
+    * @cspell/dict-html bumped to 4.0.11
+    * @cspell/dict-typescript bumped to 3.1.12
+
 ## [2.0.7](https://github.com/streetsidesoftware/cspell-dicts/compare/@cspell/dict-markdown@2.0.6...@cspell/dict-markdown@2.0.7) (2024-10-23)
 
 

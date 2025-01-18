@@ -4,7 +4,7 @@ inputs:
   node-version:
     required: false
     description: The version of Node to use.
-    default: '18.x'
+    default: '22.x'
 runs:
   using: 'composite'
   steps:
@@ -14,5 +14,7 @@ runs:
         node-version: ${{ inputs.node-version }}
 
     - name: Install
-      run: pnpm i
+      run: |
+        pnpm i
+        pnpm run setup
       shell: bash

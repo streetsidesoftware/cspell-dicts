@@ -3,6 +3,81 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+## [4.2.3](https://github.com/streetsidesoftware/cspell-dicts/compare/@cspell/dict-software-terms@4.2.2...@cspell/dict-software-terms@4.2.3) (2025-01-18)
+
+
+### Updates and Bug Fixes
+
+* Add additional terms to spelling lists from `GoogleCloudPlatform/generative-ai` ([#4013](https://github.com/streetsidesoftware/cspell-dicts/issues/4013)) ([ed34213](https://github.com/streetsidesoftware/cspell-dicts/commit/ed342139c37a50c7fd35ea6b15e54947076686c7))
+* Workflow Bot -- Build Dictionaries ([#4016](https://github.com/streetsidesoftware/cspell-dicts/issues/4016)) ([ced2e71](https://github.com/streetsidesoftware/cspell-dicts/commit/ced2e7193013a4011555a690171431d4cab6734f))
+
+## [4.2.2](https://github.com/streetsidesoftware/cspell-dicts/compare/@cspell/dict-software-terms@4.2.1...@cspell/dict-software-terms@4.2.2) (2024-12-30)
+
+
+### Updates and Bug Fixes
+
+* Add `docSearch` to coding-terms.txt ([#3950](https://github.com/streetsidesoftware/cspell-dicts/issues/3950)) ([fef9bf4](https://github.com/streetsidesoftware/cspell-dicts/commit/fef9bf433c382c28ef3b10710921abb0919b83ef))
+* Adjust dictionary names ([#3958](https://github.com/streetsidesoftware/cspell-dicts/issues/3958)) ([8a96533](https://github.com/streetsidesoftware/cspell-dicts/commit/8a96533bec21280103740868b81559437c413501))
+* Workflow Bot -- Build Dictionaries ([#3949](https://github.com/streetsidesoftware/cspell-dicts/issues/3949)) ([398b727](https://github.com/streetsidesoftware/cspell-dicts/commit/398b727fbb12431be9f23348eadf54a79bfc5589))
+
+## [4.2.1](https://github.com/streetsidesoftware/cspell-dicts/compare/@cspell/dict-software-terms@4.2.0...@cspell/dict-software-terms@4.2.1) (2024-12-27)
+
+
+### Updates and Bug Fixes
+
+* Add missing companies + software tool terms ([#3934](https://github.com/streetsidesoftware/cspell-dicts/issues/3934)) ([dd7b4d5](https://github.com/streetsidesoftware/cspell-dicts/commit/dd7b4d554cbe5f42f91e4a7c00398074c4aa85b5))
+* Reduce false positives in compound terms. ([#3937](https://github.com/streetsidesoftware/cspell-dicts/issues/3937)) ([82f17ca](https://github.com/streetsidesoftware/cspell-dicts/commit/82f17ca46e7c63180f3f83ea9555a79c25a31d62))
+* Use `Goog` to minimize false negatives. ([#3942](https://github.com/streetsidesoftware/cspell-dicts/issues/3942)) ([3916429](https://github.com/streetsidesoftware/cspell-dicts/commit/3916429b6e3a266fa00b7202e7cb771e24eef127))
+* Workflow Bot -- Build Dictionaries ([#3935](https://github.com/streetsidesoftware/cspell-dicts/issues/3935)) ([2b9ec7f](https://github.com/streetsidesoftware/cspell-dicts/commit/2b9ec7fb86c55c20e1719816fb6ec33b661e48d7))
+* Workflow Bot -- Build Dictionaries ([#3938](https://github.com/streetsidesoftware/cspell-dicts/issues/3938)) ([031e463](https://github.com/streetsidesoftware/cspell-dicts/commit/031e463cf759dbdd68a55e1946995d020afc7d69))
+* Workflow Bot -- Build Dictionaries ([#3941](https://github.com/streetsidesoftware/cspell-dicts/issues/3941)) ([972a9a2](https://github.com/streetsidesoftware/cspell-dicts/commit/972a9a22d29cf3e616d8bbb0ecc3191e98039f34))
+
+## [4.2.0](https://github.com/streetsidesoftware/cspell-dicts/compare/@cspell/dict-software-terms@4.1.21...@cspell/dict-software-terms@4.2.0) (2024-12-24)
+
+
+### Features
+
+* Add coding compound terms. ([#3920](https://github.com/streetsidesoftware/cspell-dicts/issues/3920)) ([d414545](https://github.com/streetsidesoftware/cspell-dicts/commit/d414545b796bdf55dbaaeeb1954430323baf56bb))
+
+
+### Updates and Bug Fixes
+
+* Workflow Bot -- Build Dictionaries ([#3921](https://github.com/streetsidesoftware/cspell-dicts/issues/3921)) ([9b8eea2](https://github.com/streetsidesoftware/cspell-dicts/commit/9b8eea22b9554fda83c904adfb68066cd4b800d8))
+
+## [4.1.21](https://github.com/streetsidesoftware/cspell-dicts/compare/@cspell/dict-software-terms@4.1.20...@cspell/dict-software-terms@4.1.21) (2024-12-21)
+
+
+### Updates and Bug Fixes
+
+* add ruleset(s) to coding-terms ([#3915](https://github.com/streetsidesoftware/cspell-dicts/issues/3915)) ([7c8b4a6](https://github.com/streetsidesoftware/cspell-dicts/commit/7c8b4a61c9fa4aa82a9708683687fc357e1371b2))
+* Workflow Bot -- Build Dictionaries ([#3914](https://github.com/streetsidesoftware/cspell-dicts/issues/3914)) ([7cbc5bf](https://github.com/streetsidesoftware/cspell-dicts/commit/7cbc5bff8336a47d0602e823149e26a3996d3c4c))
+
+## [4.1.20](https://github.com/streetsidesoftware/cspell-dicts/compare/@cspell/dict-software-terms@4.1.19...@cspell/dict-software-terms@4.1.20) (2024-12-16)
+
+
+### Updates and Bug Fixes
+
+* Add words to companies, npm and software-terms dictionnaries ([#3864](https://github.com/streetsidesoftware/cspell-dicts/issues/3864)) ([26faf0e](https://github.com/streetsidesoftware/cspell-dicts/commit/26faf0eadee55c3ee704aed949d424fae1c82373))
+* Workflow Bot -- Build Dictionaries ([#3905](https://github.com/streetsidesoftware/cspell-dicts/issues/3905)) ([be13370](https://github.com/streetsidesoftware/cspell-dicts/commit/be133706cc0ce07c27f5b7c649d9623a61c0cbea))
+
+## [4.1.19](https://github.com/streetsidesoftware/cspell-dicts/compare/@cspell/dict-software-terms@4.1.18...@cspell/dict-software-terms@4.1.19) (2024-12-14)
+
+
+### Updates and Bug Fixes
+
+* add a few coding and software terms ([#3881](https://github.com/streetsidesoftware/cspell-dicts/issues/3881)) ([0f6a91d](https://github.com/streetsidesoftware/cspell-dicts/commit/0f6a91d7c4aa74180798a1b2fcbe338c3900d173))
+* add a few web terms ([#3882](https://github.com/streetsidesoftware/cspell-dicts/issues/3882)) ([f16e2e9](https://github.com/streetsidesoftware/cspell-dicts/commit/f16e2e9b9c90e1393513773b7bde4cd75e2a9246))
+* Workflow Bot -- Build Dictionaries ([#3887](https://github.com/streetsidesoftware/cspell-dicts/issues/3887)) ([b4592fd](https://github.com/streetsidesoftware/cspell-dicts/commit/b4592fd4e27f4ef1aa08e98735e1cda04dc1eb73))
+* Workflow Bot -- Build Dictionaries ([#3895](https://github.com/streetsidesoftware/cspell-dicts/issues/3895)) ([7286910](https://github.com/streetsidesoftware/cspell-dicts/commit/72869100c67a69419f53aa6c1033f45a856c7ca6))
+
+## [4.1.18](https://github.com/streetsidesoftware/cspell-dicts/compare/@cspell/dict-software-terms@4.1.17...@cspell/dict-software-terms@4.1.18) (2024-12-05)
+
+
+### Updates and Bug Fixes
+
+* Add metasyntactic variables to coding-terms ([#3845](https://github.com/streetsidesoftware/cspell-dicts/issues/3845)) ([0d3e75a](https://github.com/streetsidesoftware/cspell-dicts/commit/0d3e75adb4f336e062e9ec7f83b139858588c520))
+* Workflow Bot -- Build Dictionaries ([#3848](https://github.com/streetsidesoftware/cspell-dicts/issues/3848)) ([bd59429](https://github.com/streetsidesoftware/cspell-dicts/commit/bd59429be74906713ddab843092163f07d23e650))
+
 ## [4.1.17](https://github.com/streetsidesoftware/cspell-dicts/compare/@cspell/dict-software-terms@4.1.16...@cspell/dict-software-terms@4.1.17) (2024-11-17)
 
 

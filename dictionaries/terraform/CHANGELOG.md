@@ -1,5 +1,27 @@
 # Change Log
 
+## [1.1.0](https://github.com/streetsidesoftware/cspell-dicts/compare/@cspell/dict-terraform@1.0.8...@cspell/dict-terraform@1.1.0) (2025-01-08)
+
+
+### Features
+
+* remove `enableFiletypes` ([#3996](https://github.com/streetsidesoftware/cspell-dicts/issues/3996)) ([6011700](https://github.com/streetsidesoftware/cspell-dicts/commit/6011700cc2d90edd2048f293fe2235b6212a805a))
+
+## [1.0.8](https://github.com/streetsidesoftware/cspell-dicts/compare/@cspell/dict-terraform@1.0.7...@cspell/dict-terraform@1.0.8) (2024-12-30)
+
+
+### Updates and Bug Fixes
+
+* Adjust dictionary names ([#3958](https://github.com/streetsidesoftware/cspell-dicts/issues/3958)) ([8a96533](https://github.com/streetsidesoftware/cspell-dicts/commit/8a96533bec21280103740868b81559437c413501))
+
+## [1.0.7](https://github.com/streetsidesoftware/cspell-dicts/compare/@cspell/dict-terraform@1.0.6...@cspell/dict-terraform@1.0.7) (2024-12-24)
+
+
+### Updates and Bug Fixes
+
+* Add missing Terraform terms ([#3923](https://github.com/streetsidesoftware/cspell-dicts/issues/3923)) ([e2d3af4](https://github.com/streetsidesoftware/cspell-dicts/commit/e2d3af48881222742f88771716fdf74f80f39c18))
+* Workflow Bot -- Build Dictionaries ([#3926](https://github.com/streetsidesoftware/cspell-dicts/issues/3926)) ([fef49e3](https://github.com/streetsidesoftware/cspell-dicts/commit/fef49e35f7e461df959b6c8f7253aab9b0205a34))
+
 ## [1.0.6](https://github.com/streetsidesoftware/cspell-dicts/compare/@cspell/dict-terraform@1.0.5...@cspell/dict-terraform@1.0.6) (2024-11-02)
 
 

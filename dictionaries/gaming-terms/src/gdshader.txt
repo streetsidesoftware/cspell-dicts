@@ -1,0 +1,35 @@
+# Terms related to the GD Shader
+bool # # GLSL type - Boolean datatype, can only contain true or false.
+bvec2 # # GLSL type - Two-component vector of booleans.
+bvec3 # # GLSL type - Three-component vector of booleans.
+bvec4 # # GLSL type - Four-component vector of booleans.
+float # # GLSL type - 32 bit floating-point scalar.
+int # # GLSL type - 32 bit signed scalar integer.
+isampler
+isampler2D # # GLSL type - Sampler type for binding 2D textures, which are read as signed integer.
+isampler2DArray # # GLSL type - Sampler type for binding 2D texture arrays, which are read as signed integer.
+isampler3D # # GLSL type - Sampler type for binding 3D textures, which are read as signed integer.
+ivec2 # # GLSL type - Two-component vector of signed integers.
+ivec3 # # GLSL type - Three-component vector of signed integers.
+ivec4 # # GLSL type - Four-component vector of signed integers.
+mat2 # # GLSL type - 2x2 matrix, in column major order.
+mat3 # # GLSL type - 3x3 matrix, in column major order.
+mat4 # # GLSL type - 4x4 matrix, in column major order.
+sampler2D # # GLSL type - Sampler type for binding 2D textures, which are read as float.
+sampler2DArray # # GLSL type - Sampler type for binding 2D texture arrays, which are read as float.
+sampler3D # # GLSL type - Sampler type for binding 3D textures, which are read as float.
+samplerCube # # GLSL type - Sampler type for binding Cubemaps, which are read as float.
+samplerCubeArray # # GLSL type - Sampler type for binding Cubemap arrays, which are read as float. Only supported in Forward+ and Mobile, not Compatibility.
+uint # # GLSL type - Unsigned scalar integer; can't contain negative numbers.
+usampler
+usampler2D # # GLSL type - Sampler type for binding 2D textures, which are read as unsigned integer.
+usampler2DArray # # GLSL type - Sampler type for binding 2D texture arrays, which are read as unsigned integer.
+usampler3D # # GLSL type - Sampler type for binding 3D textures, which are read as unsigned integer.
+uvec2 # # GLSL type - Two-component vector of unsigned integers.
+uvec3 # # GLSL type - Three-component vector of unsigned integers.
+uvec4 # # GLSL type - Four-component vector of unsigned integers.
+vec2 # # GLSL type - Two-component vector of floating-point values.
+vec3 # # GLSL type - Three-component vector of floating-point values.
+vec4 # # GLSL type - Four-component vector of floating-point values.
+void # # GLSL type - Void datatype, useful only for functions that return nothing.
+xform

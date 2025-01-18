@@ -20,7 +20,25 @@
   "overrides": [
     {
       "filename": "**/package.json",
-      "dictionaries": ["npm"]
+      "dictionaries": ["npm"],
+      "ignoreRegExpList": ["npm-scripts"],
+      "patterns": [
+        {
+          "name": "npm-scripts",
+          "pattern": ["pre-npm-scripts", "post-npm-scripts"],
+          "description": "Matches any NPM pre and post scripts from NPM lifecycle."
+        },
+        {
+          "name": "pre-npm-scripts",
+          "pattern": "/^\\s*\"pre[^\"]+\":/gm",
+          "description": "Matches any NPM pre scripts from NPM lifecycle."
+        },
+        {
+          "name": "post-npm-scripts",
+          "pattern": "/^\\s*\"post[^\"]+\":/gm",
+          "description": "Matches any NPM post scripts from NPM lifecycle."
+        }
+      ]
     }
   ]
 }

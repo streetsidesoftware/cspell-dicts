@@ -3,6 +3,53 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+## [3.1.13](https://github.com/streetsidesoftware/cspell-dicts/compare/@cspell/dict-companies@3.1.12...@cspell/dict-companies@3.1.13) (2025-01-18)
+
+
+### Updates and Bug Fixes
+
+* Add additional terms to spelling lists from `GoogleCloudPlatform/generative-ai` ([#4013](https://github.com/streetsidesoftware/cspell-dicts/issues/4013)) ([ed34213](https://github.com/streetsidesoftware/cspell-dicts/commit/ed342139c37a50c7fd35ea6b15e54947076686c7))
+* Workflow Bot -- Build Dictionaries ([#4016](https://github.com/streetsidesoftware/cspell-dicts/issues/4016)) ([ced2e71](https://github.com/streetsidesoftware/cspell-dicts/commit/ced2e7193013a4011555a690171431d4cab6734f))
+
+## [3.1.12](https://github.com/streetsidesoftware/cspell-dicts/compare/@cspell/dict-companies@3.1.11...@cspell/dict-companies@3.1.12) (2024-12-30)
+
+
+### Updates and Bug Fixes
+
+* Adjust dictionary names ([#3958](https://github.com/streetsidesoftware/cspell-dicts/issues/3958)) ([8a96533](https://github.com/streetsidesoftware/cspell-dicts/commit/8a96533bec21280103740868b81559437c413501))
+
+## [3.1.11](https://github.com/streetsidesoftware/cspell-dicts/compare/@cspell/dict-companies@3.1.10...@cspell/dict-companies@3.1.11) (2024-12-27)
+
+
+### Updates and Bug Fixes
+
+* Add missing companies + software tool terms ([#3934](https://github.com/streetsidesoftware/cspell-dicts/issues/3934)) ([dd7b4d5](https://github.com/streetsidesoftware/cspell-dicts/commit/dd7b4d554cbe5f42f91e4a7c00398074c4aa85b5))
+* Workflow Bot -- Build Dictionaries ([#3935](https://github.com/streetsidesoftware/cspell-dicts/issues/3935)) ([2b9ec7f](https://github.com/streetsidesoftware/cspell-dicts/commit/2b9ec7fb86c55c20e1719816fb6ec33b661e48d7))
+
+## [3.1.10](https://github.com/streetsidesoftware/cspell-dicts/compare/@cspell/dict-companies@3.1.9...@cspell/dict-companies@3.1.10) (2024-12-21)
+
+
+### Updates and Bug Fixes
+
+* add Bluesky and Emojipedia to companies dictionary ([#3916](https://github.com/streetsidesoftware/cspell-dicts/issues/3916)) ([3a92d32](https://github.com/streetsidesoftware/cspell-dicts/commit/3a92d326b8fcd3a5386ac6fcc2dd08aaf13f5df6))
+* Workflow Bot -- Build Dictionaries ([#3914](https://github.com/streetsidesoftware/cspell-dicts/issues/3914)) ([7cbc5bf](https://github.com/streetsidesoftware/cspell-dicts/commit/7cbc5bff8336a47d0602e823149e26a3996d3c4c))
+
+## [3.1.9](https://github.com/streetsidesoftware/cspell-dicts/compare/@cspell/dict-companies@3.1.8...@cspell/dict-companies@3.1.9) (2024-12-16)
+
+
+### Updates and Bug Fixes
+
+* Add words to companies, npm and software-terms dictionnaries ([#3864](https://github.com/streetsidesoftware/cspell-dicts/issues/3864)) ([26faf0e](https://github.com/streetsidesoftware/cspell-dicts/commit/26faf0eadee55c3ee704aed949d424fae1c82373))
+* Workflow Bot -- Build Dictionaries ([#3905](https://github.com/streetsidesoftware/cspell-dicts/issues/3905)) ([be13370](https://github.com/streetsidesoftware/cspell-dicts/commit/be133706cc0ce07c27f5b7c649d9623a61c0cbea))
+
+## [3.1.8](https://github.com/streetsidesoftware/cspell-dicts/compare/@cspell/dict-companies@3.1.7...@cspell/dict-companies@3.1.8) (2024-12-14)
+
+
+### Updates and Bug Fixes
+
+* add a few coding and software terms ([#3881](https://github.com/streetsidesoftware/cspell-dicts/issues/3881)) ([0f6a91d](https://github.com/streetsidesoftware/cspell-dicts/commit/0f6a91d7c4aa74180798a1b2fcbe338c3900d173))
+* Workflow Bot -- Build Dictionaries ([#3895](https://github.com/streetsidesoftware/cspell-dicts/issues/3895)) ([7286910](https://github.com/streetsidesoftware/cspell-dicts/commit/72869100c67a69419f53aa6c1033f45a856c7ca6))
+
 ## [3.1.7](https://github.com/streetsidesoftware/cspell-dicts/compare/@cspell/dict-companies@3.1.6...@cspell/dict-companies@3.1.7) (2024-10-11)
 
 

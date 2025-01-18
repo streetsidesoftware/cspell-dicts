@@ -1,15 +1,20 @@
 
 # cspell-tools: keep-case no-split
 
+--noprofile
+--norc
+--rcfile
 BASHOPTS
 BASH_ARGV0
 BASH_COMPAT
 BASH_SOURCE
+BASH_VERSINFO
 BASH_XTRACEFD
 CHILD_MAX
 COLUMNS
 COMPREPLY
 COMP_WORDBREAKS
+EPOCHREALTIME
 EUID
 EXECIGNORE
 FUNCNAME
@@ -40,6 +45,7 @@ MAILCHECK
 MAILPATH
 MANPATH
 OLDPWD
+OPTARG
 OPTERR
 OPTIND
 OSTYPE
@@ -60,6 +66,7 @@ SCRIPTDIR
 SECONDS
 SHELL
 SHELLOPTS
+SRANDOM
 SSH2_CLIENT
 SSH_CLIENT
 TERM
@@ -67,11 +74,13 @@ TERMCAP
 TERMINFO
 TEXTDOMAIN
 TEXTDOMAINDIR
+TIMEFORMAT
 TMOUT
 TZ
 UID
 alias
 allexport
+alnum
 autoremove
 bashscript
 bg
@@ -82,11 +91,14 @@ builtin
 caller
 case
 cd
+chsh
+cntrl
 command
 compgen
 complete
 compopt
 continue
+coproc
 dbus
 dearmor
 declare
@@ -104,15 +116,18 @@ enarmor
 errexit
 errtrace
 esac
+euxo
 eval
 exec
 exit
 export
+fallocate
 false
 fc
 fg
 fi
 for
+fstype
 function
 functrace
 getopts
@@ -127,6 +142,8 @@ ignoreeof
 in
 inlib
 jobs
+keymap
+keymaps
 keyrings
 keyword
 kill
@@ -135,6 +152,7 @@ local
 logout
 mapfile
 mkdir
+mktemp
 monitor
 mvim
 neovim
@@ -148,6 +166,7 @@ notify
 nounset
 nvim
 onecmd
+pgrep
 physical
 pipefail
 popd
@@ -155,12 +174,15 @@ posix
 printf
 privileged
 proxyd
+punct
 pushd
 pwd
 read
 readarray
+readline
 readlink
 readonly
+realpath
 return
 select
 set
@@ -191,4 +213,5 @@ vi
 vim
 wait
 while
+xdigit
 xtrace

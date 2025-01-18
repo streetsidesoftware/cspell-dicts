@@ -1,5 +1,13 @@
 # Change Log
 
+## [1.0.1](https://github.com/streetsidesoftware/cspell-dicts/compare/@cspell/dict-mk@1.0.0...@cspell/dict-mk@1.0.1) (2024-12-30)
+
+
+### Updates and Bug Fixes
+
+* Adjust dictionary names ([#3958](https://github.com/streetsidesoftware/cspell-dicts/issues/3958)) ([8a96533](https://github.com/streetsidesoftware/cspell-dicts/commit/8a96533bec21280103740868b81559437c413501))
+* Fix dictionary package info ([#3956](https://github.com/streetsidesoftware/cspell-dicts/issues/3956)) ([090c088](https://github.com/streetsidesoftware/cspell-dicts/commit/090c0881c3a66e946fe49baf16e54c4b1231cceb))
+
 ## 1.0.0 (2024-11-16)
 
 

@@ -3,8 +3,25 @@
 targets:
   - name: 'gaming-terms'
     sources:
-      - 'src/gaming-terms.txt'
+      - filename: 'src/gaming-terms.txt'
+        split: true # split lines with spaces into multiple words
     format: 'plaintext'
     targetDirectory: './dict'
-    generateNonStrict: true
+    generateNonStrict: false
+    compress: false
+  - name: 'game-development'
+    sources:
+      - filename: 'src/game-development.txt'
+        split: true # split lines with spaces into multiple words
+      - filename: 'src/gdscript.txt'
+        split: true # split lines with spaces into multiple words
+      - filename: 'src/gdshader.txt'
+        split: true # split lines with spaces into multiple words
+      - filename: 'src/godot.txt'
+        split: true # split lines with spaces into multiple words
+      - filename: 'src/unity.txt'
+        split: true # split lines with spaces into multiple words
+    format: 'plaintext'
+    targetDirectory: './dict'
+    generateNonStrict: false
     compress: false

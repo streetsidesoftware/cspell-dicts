@@ -3,6 +3,36 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+## [4.2.0](https://github.com/streetsidesoftware/cspell-dicts/compare/@cspell/dict-bash@4.1.10...@cspell/dict-bash@4.2.0) (2025-01-07)
+
+
+### Features
+
+* Merge bash package into shell ([#3991](https://github.com/streetsidesoftware/cspell-dicts/issues/3991)) ([f088033](https://github.com/streetsidesoftware/cspell-dicts/commit/f088033df250d4b97381412c8d7059b83484cc8a))
+
+
+### Dependencies
+
+* The following workspace dependencies were updated
+  * dependencies
+    * @cspell/dict-shell bumped to 1.1.0
+
+## [4.1.10](https://github.com/streetsidesoftware/cspell-dicts/compare/@cspell/dict-bash@4.1.9...@cspell/dict-bash@4.1.10) (2025-01-06)
+
+
+### Updates and Bug Fixes
+
+* Add Bash, Zsh and Shell related terms ([#3985](https://github.com/streetsidesoftware/cspell-dicts/issues/3985)) ([681e8d2](https://github.com/streetsidesoftware/cspell-dicts/commit/681e8d2e1fd4302dbc2ce613b2e428f555dc17cb))
+* Update Bash dictionary ([#3988](https://github.com/streetsidesoftware/cspell-dicts/issues/3988)) ([165c758](https://github.com/streetsidesoftware/cspell-dicts/commit/165c758fa135f0f1af7799d3969bdcc5bfa8e656))
+* Workflow Bot -- Build Dictionaries ([#3989](https://github.com/streetsidesoftware/cspell-dicts/issues/3989)) ([ef10b4a](https://github.com/streetsidesoftware/cspell-dicts/commit/ef10b4aa07893bc7b9a7187c8f1bb0b3973fb97c))
+
+## [4.1.9](https://github.com/streetsidesoftware/cspell-dicts/compare/@cspell/dict-bash@4.1.8...@cspell/dict-bash@4.1.9) (2024-12-30)
+
+
+### Updates and Bug Fixes
+
+* Adjust dictionary names ([#3958](https://github.com/streetsidesoftware/cspell-dicts/issues/3958)) ([8a96533](https://github.com/streetsidesoftware/cspell-dicts/commit/8a96533bec21280103740868b81559437c413501))
+
 ## [4.1.8](https://github.com/streetsidesoftware/cspell-dicts/compare/@cspell/dict-bash@4.1.7...@cspell/dict-bash@4.1.8) (2024-10-11)
 
 

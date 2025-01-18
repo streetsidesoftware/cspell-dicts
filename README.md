@@ -13,247 +13,404 @@ Various [cspell](https://github.com/streetsidesoftware/cspell) dictionaries. Eac
 
 <!--- @@inject-end: https://github.com/streetsidesoftware/cspell/blob/main/static/sponsor.md --->
 
-## Language Dictionaries
-
-- [Arabic](dictionaries/ar)
-- [Basque](dictionaries/eu)
-- [Bulgarian](dictionaries/bg_BG)
-- [Catalan](dictionaries/ca)
-- [Croatian](dictionaries/hr_HR)
-- [Czech](dictionaries/cs_CZ)
-- [Danish](dictionaries/da_DK)
-- [Dutch](dictionaries/nl_NL)
-- [English - American](dictionaries/en_US) (Included by default in cspell and [VS Code Spell Checker](https://github.com/Jason-Rev/vscode-spell-checker))
-- [English - Australian](dictionaries/en_AU)
-- [English - British](dictionaries/en_GB) (Included by default in cspell and VS Code Spell Checker)
-- [English - British - MIT License](dictionaries/en_GB-MIT)
-- [English - Canadian](dictionaries/en_CA)
-- [English - Shared](dictionaries/en_shared)
-- [Esperanto](dictionaries/eo)
-- [Estonian](dictionaries/et-ee)
-- [Finnish](dictionaries/fi_FI)
-- [Français Réforme 1990](dictionaries/fr_FR_90)
-- [French](dictionaries/fr_FR)
-- [German](dictionaries/de_DE)
-- [German - Austrian German](dictionaries/de-AT)
-- [German - Swiss German](dictionaries/de-CH)
-- [Greek](dictionaries/el)
-- [Hebrew](dictionaries/he)
-- [Italian](dictionaries/it_IT)
-- [Latvian](dictionaries/lv)
-- [Lithuanian](dictionaries/lt_LT)
-- [Norwegian Bokmål](dictionaries/nb_NO)
-- [Persian](dictionaries/fa_IR)
-- [Polish](dictionaries/pl_PL)
-- [Portuguese - Brazilian](dictionaries/pt_BR)
-- [Portuguese](dictionaries/pt_PT)
-- [Romanian](dictionaries/ro_RO)
-- [Russian](dictionaries/ru_RU)
-- [Serbian (Cyrillic)](dictionaries/sr_Cyrl/)
-- [Serbian (Latin)](dictionaries/sr_Latn/)
-- [Slovak](dictionaries/sk_SK)
-- [Slovenian](dictionaries/sl_SI)
-- [Spanish](dictionaries/es_ES)
-- [Swedish](dictionaries/sv)
-- [Turkish](dictionaries/tr_TR)
-- [Ukrainian](dictionaries/uk_UA)
-- [Vietnamese](dictionaries/vi_VN)
-
-## Programming Dictionaries
-
-- [Ada](dictionaries/ada)
-- [AL (Microsoft Business Central)](dictionaries/al)
-- [AWS](dictionaries/aws)
-- [Bash](dictionaries/bash) - Bash/Shell scripts
-- [C and C++](dictionaries/cpp)
-- [C#](dictionaries/csharp)
-- [Clojure](dictionaries/clojure)
-- [CSS](dictionaries/css)
-- [Dart](dictionaries/dart)
-- [Django](dictionaries/django) - Django framework function names
-- [Docker](dictionaries/docker) - Dockerfile instructions
-- [.NET](dictionaries/dotnet)
-- [ELisp](dictionaries/elisp)
-- [Elixir](dictionaries/elixir)
-- [F#](dictionaries/fsharp)
-- [GIT](dictionaries/git)
-- [Google](dictionaries/google)
-- [Go](dictionaries/golang)
-- [Haskell](dictionaries/haskell)
-- [HTML](dictionaries/html)
-- [i86 Mnemonics](dictionaries/mnemonics)
-- [Java](dictionaries/java)
-- JavaScript - See [TypeScript and JavaScript](dictionaries/typescript)
-- [K8s](dictionaries/k8s)
-- [Kotlin](dictionaries/kotlin)
-- [LaTeX](dictionaries/latex)
-- [Lua](dictionaries/lua)
-- [Markdown](dictionaries/markdown)
-- [Monkey C](dictionaries/monkeyc)
-- [Node.js](dictionaries/node)
-- [NPM](dictionaries/npm)
-- [PHP](dictionaries/php)
-- [PowerShell](dictionaries/powershell)
-- [Python](dictionaries/python)
-- [R](dictionaries/r)
-- [Redis](dictionaries/redis)
-- [Ruby](dictionaries/ruby)
-- [Rust](dictionaries/rust)
-- [Scala](dictionaries/scala)
-- [ShellScript](dictionaries/shell)
-- [SQL](dictionaries/sql)
-- [Svelte](dictionaries/svelte)
-- [Swift](dictionaries/swift)
-- [Terraform](dictionaries/terraform)
-- [TypeScript and JavaScript](dictionaries/typescript)
-- [Vue](dictionaries/vue)
-- [Win32](dictionaries/win32)
-
-## Specialized Dictionaries
-
-- [Cities of Finland](dictionaries/city-names-finland)
-- [Company Names](dictionaries/companies)
-- [Cryptocurrencies](dictionaries/cryptocurrencies)
-- [Data Science](dictionaries/data-science)
-- [English misspellings](dictionaries/en-common-misspellings)
-- [Filetypes](dictionaries/filetypes)
-- [Font Names](dictionaries/fonts)
-- [Fullstack development](dictionaries/fullstack)
-- [Gaming](dictionaries/gaming-terms)
-- [HTML Symbol Entities](dictionaries/html-symbol-entities)
-- [lorem ipsum](dictionaries/lorem-ipsum)
-- [Medical Terms](dictionaries/medicalterms)
-- [Public Licenses](dictionaries/public-licenses)
-- [Scientific Terms UK](dictionaries/scientific_terms_GB)
-- [Scientific Terms US](dictionaries/scientific_terms_US)
-- [Software Terms](dictionaries/software-terms)
-
-<!--- @@inject: dictionaries.md --->
-
-## All Dictionaries
+<!--- @@inject: static/dictionary-packages.md --->
 
 <!--- Use `pnpm build:readme` to generate this table --->
 
-| package                                                                             | dictionary ID                                                           | name                               | description                                                    |
-| ----------------------------------------------------------------------------------- | ----------------------------------------------------------------------- | ---------------------------------- | -------------------------------------------------------------- |
-| [@cspell/dict-ada](./dictionaries/ada#readme)                                       | ada                                                                     | Ada Language                       | Ada Language Dictionary                                        |
-| [@cspell/dict-al](./dictionaries/al#readme)                                         | al                                                                      | AL                                 | AL Dictionary                                                  |
-| [@cspell/dict-ar](./dictionaries/ar#readme)                                         | ar                                                                      | Arabic                             | Arabic dictionary for CSpell.                                  |
-| [@cspell/dict-aws](./dictionaries/aws#readme)                                       | aws                                                                     | AWS                                | AWS dictionary for cspell.                                     |
-| [@cspell/dict-bash](./dictionaries/bash#readme)                                     | bash                                                                    | bash                               | Bash dictionary for cspell.                                    |
-| [@cspell/dict-bg-bg](./dictionaries/bg_BG#readme)                                   | bg-bg                                                                   | Bulgarian                          | Bulgarian dictionary for cspell.                               |
-| [@cspell/dict-ca](./dictionaries/ca#readme)                                         | ca                                                                      | Catalan                            | Catalan dictionary for cspell.                                 |
-| [@cspell/dict-city-names-finland](./dictionaries/city-names-finland#readme)         | city-names-finland                                                      | Cities of Finland                  | List of cities in Finland.                                     |
-| [@cspell/dict-clojure](./dictionaries/clojure#readme)                               | clojure                                                                 | clojure                            | Clojure dictionary for cspell.                                 |
-| [@cspell/dict-companies](./dictionaries/companies#readme)                           | companies                                                               | Company names                      | Company names dictionary for cspell.                           |
-| [@cspell/dict-cpp](./dictionaries/cpp#readme)                                       | cpp-legacy<br>cpp<br>cpp-refined                                        | C/C++ Dictionary                   | C/C++ Keywords and common library functions.                   |
-| [@cspell/dict-cryptocurrencies](./dictionaries/cryptocurrencies#readme)             | cryptocurrencies<br>cryptocurrencies-legacy                             | Cryptocurrencies                   | Cryptocurrencies dictionary for cspell.                        |
-| [@cspell/dict-cs-cz](./dictionaries/cs_CZ#readme)                                   | cs-cz                                                                   | Czech                              | Czech dictionary for cspell.                                   |
-| [@cspell/dict-csharp](./dictionaries/csharp#readme)                                 | csharp                                                                  | csharp                             | C# dictionary for cspell.                                      |
-| [@cspell/dict-cspell-bundle](./dictionaries/cspell#readme)                          |                                                                         | CSpell Dictionaries Bundle         | Dictionaries included with the CSpell Command Line tool.       |
-| [@cspell/dict-css](./dictionaries/css#readme)                                       | css                                                                     | css                                | Css dictionary for cspell.                                     |
-| [@cspell/dict-da-dk](./dictionaries/da_DK#readme)                                   | da-dk                                                                   | Danish Dictionary                  | Danish (da-DK) Dictionary.                                     |
-| [@cspell/dict-dart](./dictionaries/dart#readme)                                     | dart                                                                    | dart                               | Dart dictionary for cspell.                                    |
-| [@cspell/dict-data-science](./dictionaries/data-science#readme)                     | data-science<br>data-science-models<br>data-science-tools               | Data Science                       | Data Science dictionary for cspell.                            |
-| [@cspell/dict-de-at](./dictionaries/de_AT#readme)                                   | de-at                                                                   | Austrian German Dictionary         | Austrian German (de-AT) Dictionary.                            |
-| [@cspell/dict-de-ch](./dictionaries/de_CH#readme)                                   | de-ch                                                                   | Swiss German Dictionary            | Swiss German (de-CH) Dictionary.                               |
-| [@cspell/dict-de-de](./dictionaries/de_DE#readme)                                   | de-de                                                                   | German Dictionary                  | German (de-DE) Dictionary.                                     |
-| [@cspell/dict-django](./dictionaries/django#readme)                                 | django                                                                  | Django Keywords                    | List of Python Django Framework keywords.                      |
-| [@cspell/dict-docker](./dictionaries/docker#readme)                                 | docker                                                                  | Docker Dictionary                  | Docker dictionary for cspell.                                  |
-| [@cspell/dict-dotnet](./dictionaries/dotnet#readme)                                 | dotnet                                                                  | .Net Dictionary                    | .Net keywords.                                                 |
-| [@cspell/dict-el](./dictionaries/el#readme)                                         | el                                                                      | Greek                              | Greek dictionary for cspell.                                   |
-| [@cspell/dict-elisp](./dictionaries/elisp#readme)                                   | elisp                                                                   | Emacs Lisp                         | Emacs Lisp dictionary for cspell.                              |
-| [@cspell/dict-elixir](./dictionaries/elixir#readme)                                 | elixir                                                                  | elixir                             | Elixir dictionary for cspell.                                  |
-| [@cspell/dict-en-common-misspellings](./dictionaries/en-common-misspellings#readme) |                                                                         | English - Common Misspellings      | Common English misspellings dictionary for cspell.             |
-| [@cspell/dict-en-au](./dictionaries/en_AU#readme)                                   | en-au                                                                   | Australian English Dictionary      | Australian English Dictionary                                  |
-| [@cspell/dict-en-ca](./dictionaries/en_CA#readme)                                   | en-ca                                                                   | Canadian English Dictionary        | Canadian English Dictionary                                    |
-| [@cspell/dict-en-gb](./dictionaries/en_GB#readme)                                   | en-gb                                                                   | British English Dictionary         | British English Dictionary                                     |
-| [@cspell/dict-en-gb-mit](./dictionaries/en_GB-MIT#readme)                           | en-gb-mit                                                               | British English Dictionary Limited | British English Dictionary with MIT License                    |
-| [@cspell/dict-en_us](./dictionaries/en_US#readme)                                   | en_us                                                                   | American English Dictionary        | American English Dictionary                                    |
-| [@cspell/dict-en-shared](./dictionaries/en_shared#readme)                           | en-shared                                                               | en_shared                          | English words shared between the various English dictionaries. |
-| [@cspell/dict-eo](./dictionaries/eo#readme)                                         | eo                                                                      | Esperanto                          | Esperanto dictionary for cspell.                               |
-| [@cspell/dict-es-es](./dictionaries/es_ES#readme)                                   | es-es                                                                   | Spanish Dictionary (Spain)         | Spanish Dictionary (Spain)                                     |
-| [@cspell/dict-et-ee](./dictionaries/et-EE#readme)                                   | et-ee                                                                   | Estonian                           | Estonian dictionary for cspell.                                |
-| [@cspell/dict-eu](./dictionaries/eu#readme)                                         | eu                                                                      | Basque                             | Basque dictionary for cspell.                                  |
-| [@cspell/dict-fa-ir](./dictionaries/fa_IR#readme)                                   | fa-ir                                                                   | Persian Dictionary                 | Persian Dictionary                                             |
-| [@cspell/dict-fi-fi](./dictionaries/fi_FI#readme)                                   | fi-fi                                                                   | Finnish                            | Finnish dictionary for cspell.                                 |
-| [@cspell/dict-filetypes](./dictionaries/filetypes#readme)                           | filetypes                                                               | filetypes                          | Filetypes dictionary for cspell.                               |
-| [@cspell/dict-flutter](./dictionaries/flutter#readme)                               | flutter                                                                 | flutter                            | Flutter dictionary for cspell.                                 |
-| [@cspell/dict-fonts](./dictionaries/fonts#readme)                                   | fonts                                                                   | font names                         | Font names dictionary for cspell.                              |
-| [@cspell/dict-fr-fr](./dictionaries/fr_FR#readme)                                   | fr-fr                                                                   | French Dictionary (France)         | French Dictionary (France)                                     |
-| [@cspell/dict-fr-reforme](./dictionaries/fr_FR_90#readme)                           | fr-fr-90                                                                | Français Réforme 1990              | Français Réforme 1990 dictionary for cspell.                   |
-| [@cspell/dict-fsharp](./dictionaries/fsharp#readme)                                 | fsharp                                                                  | f#                                 | F# dictionary for cspell.                                      |
-| [@cspell/dict-fullstack](./dictionaries/fullstack#readme)                           | fullstack                                                               | Fullstack                          | Common words encountered during fullstack development          |
-| [@cspell/dict-gaming-terms](./dictionaries/gaming-terms#readme)                     | gaming-terms                                                            | Gaming                             | Gaming dictionary for cspell.                                  |
-| [@cspell/dict-git](./dictionaries/git#readme)                                       | git                                                                     | git                                | CSpell configuration for GIT                                   |
-| [@cspell/dict-golang](./dictionaries/golang#readme)                                 | golang                                                                  | Go Language                        | Go Language Dictionary                                         |
-| [@cspell/dict-google](./dictionaries/google#readme)                                 | google                                                                  | Google                             | Google Cloud Development Dictionary for cspell.                |
-| [@cspell/dict-grc](./dictionaries/grc_GR#readme)                                    | grc                                                                     | Ancient Greek                      | Ancient Greek dictionary for cspell.                           |
-| [@cspell/dict-haskell](./dictionaries/haskell#readme)                               | haskell                                                                 | Haskell                            | Haskell dictionary for cspell.                                 |
-| [@cspell/dict-he](./dictionaries/he#readme)                                         | he                                                                      | Hebrew Dictionary                  | Hebrew Dictionary                                              |
-| [@cspell/dict-hr-hr](./dictionaries/hr_HR#readme)                                   | hr-hr                                                                   | Croatian                           | Croatian dictionary for cspell.                                |
-| [@cspell/dict-html](./dictionaries/html#readme)                                     | html                                                                    | html                               | Html dictionary for cspell.                                    |
-| [@cspell/dict-html-symbol-entities](./dictionaries/html-symbol-entities#readme)     | html-symbol-entities                                                    | HTML Symbol Entities               | HTML Symbol Entities Dictionary                                |
-| [@cspell/dict-hu-hu](./dictionaries/hu_HU#readme)                                   | hu-hu                                                                   | Hungarian                          | Hungarian dictionary for cspell.                               |
-| [@cspell/dict-id-id](./dictionaries/id_ID#readme)                                   | id-id                                                                   | Indonesia                          | Indonesia dictionary for cspell.                               |
-| [@cspell/dict-it-it](./dictionaries/it_IT#readme)                                   | it-it                                                                   | Italian                            | Italian dictionary for cspell.                                 |
-| [@cspell/dict-java](./dictionaries/java#readme)                                     | java                                                                    | Java                               | Java dictionary for cspell.                                    |
-| [@cspell/dict-julia](./dictionaries/julia#readme)                                   | julia                                                                   | Julia Dictionary                   | Julia function and keyword dictionary                          |
-| [@cspell/dict-k8s](./dictionaries/k8s#readme)                                       | k8s                                                                     | k8s                                | K8s dictionary for cspell.                                     |
-| [@cspell/dict-kotlin](./dictionaries/kotlin#readme)                                 | kotlin                                                                  | Kotlin                             | Kotlin dictionary for cspell.                                  |
-| [@cspell/dict-la](./dictionaries/la#readme)                                         | la                                                                      | Latin                              | Latin dictionary for cspell.                                   |
-| [@cspell/dict-latex](./dictionaries/latex#readme)                                   | latex                                                                   | LaTeX                              | LaTeX cspell dictionary                                        |
-| [@cspell/dict-lorem-ipsum](./dictionaries/lorem-ipsum#readme)                       | lorem-ipsum                                                             | lorem-ipsum                        | Lorem-ipsum dictionary for cspell.                             |
-| [@cspell/dict-lt-lt](./dictionaries/lt_LT#readme)                                   | lt-lt                                                                   | Lithuanian                         | Lithuanian dictionary for cspell.                              |
-| [@cspell/dict-lua](./dictionaries/lua#readme)                                       | lua                                                                     | lua                                | Lua dictionary for cspell.                                     |
-| [@cspell/dict-lv](./dictionaries/lv#readme)                                         | lv                                                                      | Latvian                            | Latvian dictionary for cspell.                                 |
-| [@cspell/dict-makefile](./dictionaries/makefile#readme)                             | makefile                                                                | Makefile                           | Makefile dictionary for cspell.                                |
-| [@cspell/dict-markdown](./dictionaries/markdown#readme)                             |                                                                         | Markdown                           | Markdown dictionary for cspell.                                |
-| [@cspell/dict-medicalterms](./dictionaries/medicalterms#readme)                     | medical terms                                                           | Medical terms                      | Medical Terms Dictionary                                       |
-| [@cspell/dict-mk](./dictionaries/mk#readme)                                         | mk                                                                      | Macedonian                         | Macedonian dictionary for cspell.                              |
-| [@cspell/dict-mnemonics](./dictionaries/mnemonics#readme)                           | mnemonics                                                               | Mnemonics                          | i86 Mnemonics dictionary for cspell                            |
-| [@cspell/dict-monkeyc](./dictionaries/monkeyc#readme)                               | monkeyc                                                                 | Monkey C                           | Monkey C dictionary for cspell.                                |
-| [@cspell/dict-nb-no](./dictionaries/nb_NO#readme)                                   | nb-no                                                                   | Norwegian Bokmål                   | Norwegian Bokmål dictionary for cspell.                        |
-| [@cspell/dict-nl-nl](./dictionaries/nl_NL#readme)                                   | nl-nl                                                                   | Dutch (Netherlands) Dictionary     | Dutch (Netherlands) Dictionary                                 |
-| [@cspell/dict-node](./dictionaries/node#readme)                                     | node                                                                    | Node.js                            | Node.js dictionary for cspell.                                 |
-| [@cspell/dict-npm](./dictionaries/npm#readme)                                       | npm                                                                     | NPM                                | Dictionary of Common Javascript Packages.                      |
-| [@cspell/dict-people-names](./dictionaries/people-names#readme)                     | people-names                                                            | People Names                       | People Names dictionary for cspell.                            |
-| [@cspell/dict-php](./dictionaries/php#readme)                                       | php                                                                     | PHP Dictionary                     | Php dictionary for cspell.                                     |
-| [@cspell/dict-pl_pl](./dictionaries/pl_PL#readme)                                   | pl-pl                                                                   | Polish Dictionary                  | Polish Dictionary                                              |
-| [@cspell/dict-powershell](./dictionaries/powershell#readme)                         | powershell                                                              | PowerShell Dictionary              | PowerShell Keyword Dictionary                                  |
-| [@cspell/dict-pt-br](./dictionaries/pt_BR#readme)                                   | pt-br                                                                   | Portuguese (Brazilian) Dictionary  | Portuguese (Brazilian) Dictionary                              |
-| [@cspell/dict-pt-pt](./dictionaries/pt_PT#readme)                                   | pt-pt                                                                   | Portuguese Dictionary (Portugal)   | Portuguese Dictionary (Portugal)                               |
-| [@cspell/dict-public-licenses](./dictionaries/public-licenses#readme)               | public-licenses                                                         | Common Public Licenses             | Common Public Licenses dictionary for cspell.                  |
-| [@cspell/dict-python](./dictionaries/python#readme)                                 | python<br>python-common                                                 | Python Dictionary                  | Python Keyword Dictionary                                      |
-| [@cspell/dict-r](./dictionaries/r#readme)                                           | r                                                                       | R                                  | R dictionary for cspell.                                       |
-| [@cspell/dict-redis](./dictionaries/redis#readme)                                   | redis                                                                   | redis                              | Redis dictionary for cspell.                                   |
-| [@cspell/dict-ro-ro](./dictionaries/ro_RO#readme)                                   | ro-ro                                                                   | Romanian                           | Romanian dictionary for cspell.                                |
-| [@cspell/dict-ru_ru](./dictionaries/ru_RU#readme)                                   | ru-ru                                                                   | Russian Dictionary (Combined)      | Russian Dictionary (Combined)                                  |
-| [@cspell/dict-ruby](./dictionaries/ruby#readme)                                     | ruby                                                                    | Ruby                               | For ruby and ruby on rails                                     |
-| [@cspell/dict-rust](./dictionaries/rust#readme)                                     | rust                                                                    | Rust Dictionary                    | Rust Keyword Dictionary                                        |
-| [@cspell/dict-scala](./dictionaries/scala#readme)                                   | scala                                                                   | Scala                              | Scala dictionary for cspell.                                   |
-| [@cspell/dict-scientific-terms-gb](./dictionaries/scientific_terms_GB#readme)       | scientific-terms-gb                                                     | Scientific Terms GB                | Scientific Terms GB dictionary for cspell.                     |
-| [@cspell/dict-scientific-terms-us](./dictionaries/scientific_terms_US#readme)       | scientific-terms-us                                                     | Scientific Terms US                | Scientific Terms US dictionary for cspell.                     |
-| [@cspell/dict-shell](./dictionaries/shell#readme)                                   | bash<br>shellscript                                                     | ShellScript                        | ShellScript dictionary for cspell.                             |
-| [@cspell/dict-sk-sk](./dictionaries/sk_SK#readme)                                   | sk-sk                                                                   | Slovak                             | Slovak dictionary for cspell.                                  |
-| [@cspell/dict-sl-si](./dictionaries/sl_SI#readme)                                   | sl-si                                                                   | Slovenian                          | Slovenian dictionary for CSpell.                               |
-| [@cspell/dict-software-terms](./dictionaries/software-terms#readme)                 | softwareTerms<br>networking-terms<br>web-services<br>computing-acronyms | Software Terms                     | Software terms dictionary for cspell.                          |
-| [@cspell/dict-sql](./dictionaries/sql#readme)                                       | sql                                                                     | sql                                | SQL dictionary for CSpell.                                     |
-| [@cspell/dict-sr-cyrl](./dictionaries/sr_Cyrl#readme)                               | sr-cyrl                                                                 | Serbian (Cyrillic)                 | Serbian (Cyrillic) dictionary for cspell.                      |
-| [@cspell/dict-sr-latn](./dictionaries/sr_Latn#readme)                               | sr-latn                                                                 | Serbian (Latin)                    | Serbian (Latin) dictionary for cspell.                         |
-| [@cspell/dict-sv](./dictionaries/sv#readme)                                         | sv                                                                      | Swedish Dictionary                 | Swedish Dictionary                                             |
-| [@cspell/dict-svelte](./dictionaries/svelte#readme)                                 | svelte                                                                  | Svelte                             | Svelte dictionary for cspell.                                  |
-| [@cspell/dict-swift](./dictionaries/swift#readme)                                   | swift                                                                   | Swift                              | Swift dictionary for cspell.                                   |
-| [@cspell/dict-terraform](./dictionaries/terraform#readme)                           | terraform                                                               | Terraform                          | Terraform dictionary for cspell.                               |
-| [@cspell/dict-tr-tr](./dictionaries/tr_TR#readme)                                   | tr-tr                                                                   | Turkish                            | Turkish dictionary for cspell.                                 |
-| [@cspell/dict-typescript](./dictionaries/typescript#readme)                         | typescript                                                              | TypeScript                         | TypeScript and JavaScript dictionary for CSpell.               |
-| [@cspell/dict-uk-ua](./dictionaries/uk_UA#readme)                                   | uk-ua                                                                   | Ukrainian Dictionary               | Ukrainian Dictionary                                           |
-| [@cspell/dict-vi-vn](./dictionaries/vi_VN#readme)                                   | vi-vn                                                                   | Vietnamese                         | Vietnamese dictionary for cspell.                              |
-| [@cspell/dict-vim](./dictionaries/vim#readme)                                       | vim                                                                     | Vim                                | Vim developers dictionary for cspell.                          |
-| [@cspell/dict-vue](./dictionaries/vue#readme)                                       |                                                                         | vue                                | CSpell configuration for VUE files                             |
-| [@cspell/dict-win32](./dictionaries/win32#readme)                                   | win32                                                                   | Win32                              | Win32 dictionary for cspell.                                   |
+## Natural Language Dictionaries
 
-<!--- @@inject-end: dictionaries.md --->
+- [Ancient Greek](dictionaries/grc_GR) - Ancient Greek dictionary.
+- [Arabic](dictionaries/ar) - Arabic dictionary.
+- [Austrian German Dictionary](dictionaries/de_AT) - Austrian German (de-AT) Dictionary.
+- [Basque](dictionaries/eu) - Basque dictionary.
+- [Bulgarian](dictionaries/bg_BG) - Bulgarian dictionary.
+- [Catalan](dictionaries/ca) - Catalan dictionary.
+- [Croatian](dictionaries/hr_HR) - Croatian dictionary.
+- [Czech](dictionaries/cs_CZ) - Czech dictionary.
+- [Danish Dictionary](dictionaries/da_DK) - Danish (da-DK) Dictionary.
+- [Dutch (Netherlands) Dictionary](dictionaries/nl_NL) - Dutch (Netherlands) Dictionary
+- [English - American](dictionaries/en_US) - American English Dictionary <sup>1</sup>
+- [English - Australian](dictionaries/en_AU) - Australian English Dictionary
+- [English - British](dictionaries/en_GB) - British English Dictionary <sup>1</sup>
+- [English - British (Limited)](dictionaries/en_GB-MIT) - British English Dictionary with MIT License
+- [English - Canadian](dictionaries/en_CA) - Canadian English Dictionary
+- [English - Common Misspellings](dictionaries/en-common-misspellings) - Common English misspellings dictionary. <sup>1</sup>
+- [English - Shared](dictionaries/en_shared) - English words shared between the various English dictionaries.
+- [Esperanto](dictionaries/eo) - Esperanto dictionary.
+- [Estonian](dictionaries/et-EE) - Estonian dictionary.
+- [Finnish](dictionaries/fi_FI) - Finnish dictionary.
+- [Français Réforme 1990](dictionaries/fr_FR_90) - Français Réforme 1990 dictionary.
+- [French Dictionary (France)](dictionaries/fr_FR) - French Dictionary (France)
+- [German Dictionary](dictionaries/de_DE) - German (de-DE) Dictionary.
+- [Greek](dictionaries/el) - Greek dictionary.
+- [Hebrew Dictionary](dictionaries/he) - Hebrew Dictionary
+- [Hungarian](dictionaries/hu_HU) - Hungarian dictionary.
+- [Indonesia](dictionaries/id_ID) - Indonesia dictionary.
+- [Italian](dictionaries/it_IT) - Italian dictionary.
+- [Latin](dictionaries/la) - Latin dictionary.
+- [Latvian](dictionaries/lv) - Latvian dictionary.
+- [Lithuanian](dictionaries/lt_LT) - Lithuanian dictionary.
+- [Lorem-ipsum](dictionaries/lorem-ipsum) - Lorem-ipsum dictionary. <sup>1</sup>
+- [Macedonian](dictionaries/mk) - Macedonian dictionary.
+- [Norwegian Bokmål](dictionaries/nb_NO) - Norwegian Bokmål dictionary.
+- [Persian Dictionary](dictionaries/fa_IR) - Persian Dictionary
+- [Polish Dictionary](dictionaries/pl_PL) - Polish Dictionary
+- [Portuguese (Brazilian) Dictionary](dictionaries/pt_BR) - Portuguese (Brazilian) Dictionary
+- [Portuguese Dictionary (Portugal)](dictionaries/pt_PT) - Portuguese Dictionary (Portugal)
+- [Romanian](dictionaries/ro_RO) - Romanian dictionary.
+- [Russian Dictionary (Combined)](dictionaries/ru_RU) - Russian Dictionary (Combined)
+- [Scientific Terms GB](dictionaries/scientific_terms_GB) - Scientific Terms GB dictionary.
+- [Serbian (Cyrillic)](dictionaries/sr_Cyrl) - Serbian (Cyrillic) dictionary.
+- [Serbian (Latin)](dictionaries/sr_Latn) - Serbian (Latin) dictionary.
+- [Slovak](dictionaries/sk_SK) - Slovak dictionary.
+- [Slovenian](dictionaries/sl_SI) - Slovenian dictionary.
+- [Spanish Dictionary (Spain)](dictionaries/es_ES) - Spanish Dictionary (Spain)
+- [Swedish Dictionary](dictionaries/sv) - Swedish Dictionary
+- [Swiss German Dictionary](dictionaries/de_CH) - Swiss German (de-CH) Dictionary.
+- [Turkish](dictionaries/tr_TR) - Turkish dictionary.
+- [Ukrainian Dictionary](dictionaries/uk_UA) - Ukrainian Dictionary
+- [Vietnamese](dictionaries/vi_VN) - Vietnamese dictionary.
+
+## Programming Dictionaries
+
+- [.Net](dictionaries/dotnet) - .Net keywords Dictionary. <sup>1</sup>
+- [Ada](dictionaries/ada) - Ada Language Dictionary <sup>1</sup>
+- [AL](dictionaries/al) - AL (Microsoft Business Central) Dictionary <sup>1</sup>
+- [C/C++](dictionaries/cpp) - C/C++ Keywords and common library functions. <sup>1</sup>
+- [C#](dictionaries/csharp) - C# dictionary. <sup>1</sup>
+- [Clojure](dictionaries/clojure) - Clojure dictionary.
+- [CSS](dictionaries/css) - CSS dictionary. <sup>1</sup>
+- [Dart](dictionaries/dart) - Dart dictionary. <sup>1</sup>
+- [Data Science](dictionaries/data-science) - Data Science dictionary. <sup>1</sup>
+- [Django](dictionaries/django) - List of Python Django Framework keywords. <sup>1</sup>
+- [Docker](dictionaries/docker) - Docker dictionary. <sup>1</sup>
+- [Elixir](dictionaries/elixir) - Elixir dictionary. <sup>1</sup>
+- [Emacs Lisp](dictionaries/elisp) - Emacs Lisp dictionary.
+- [F#](dictionaries/fsharp) - F# dictionary. <sup>1</sup>
+- [Flutter](dictionaries/flutter) - Flutter dictionary. <sup>1</sup>
+- [Fullstack](dictionaries/fullstack) - Common words encountered during fullstack development <sup>1</sup>
+- [Go Language](dictionaries/golang) - Go Language Dictionary <sup>1</sup>
+- [Haskell](dictionaries/haskell) - Haskell dictionary. <sup>1</sup>
+- [HTML](dictionaries/html) - HTML dictionary. <sup>1</sup>
+- [HTML Symbol Entities](dictionaries/html-symbol-entities) - HTML Symbol Entities Dictionary <sup>1</sup>
+- [Java](dictionaries/java) - Java dictionary. <sup>1</sup>
+- [Julia](dictionaries/julia) - Julia function and keyword dictionary <sup>1</sup>
+- [K8s](dictionaries/k8s) - K8s dictionary. <sup>1</sup>
+- [Kotlin](dictionaries/kotlin) - Kotlin dictionary. <sup>1</sup>
+- [LaTeX](dictionaries/latex) - LaTeX cspell dictionary <sup>1</sup>
+- [Lua](dictionaries/lua) - Lua dictionary. <sup>1</sup>
+- [Makefile](dictionaries/makefile) - Makefile dictionary. <sup>1</sup>
+- [Mnemonics](dictionaries/mnemonics) - i86 Mnemonics dictionary for cspell
+- [Monkey C](dictionaries/monkeyc) - Monkey C dictionary. <sup>1</sup>
+- [Node.js](dictionaries/node) - Node.js dictionary. <sup>1</sup>
+- [NPM](dictionaries/npm) - Dictionary of Common Javascript Packages. <sup>1</sup>
+- [PHP](dictionaries/php) - Php dictionary. <sup>1</sup>
+- [PowerShell](dictionaries/powershell) - PowerShell Keyword Dictionary <sup>1</sup>
+- [Python](dictionaries/python) - Python Keyword Dictionary <sup>1</sup>
+- [R](dictionaries/r) - R dictionary. <sup>1</sup>
+- [Ruby](dictionaries/ruby) - For ruby and ruby on rails <sup>1</sup>
+- [Rust](dictionaries/rust) - Rust Keyword Dictionary <sup>1</sup>
+- [Scala](dictionaries/scala) - Scala dictionary. <sup>1</sup>
+- [ShellScript](dictionaries/shell) - ShellScript dictionary. <sup>1</sup>
+- [SQL](dictionaries/sql) - SQL dictionary. <sup>1</sup>
+- [Svelte](dictionaries/svelte) - Svelte dictionary. <sup>1</sup>
+- [Swift](dictionaries/swift) - Swift dictionary. <sup>1</sup>
+- [Terraform](dictionaries/terraform) - Terraform dictionary. <sup>1</sup>
+- [TypeScript/JavaScript](dictionaries/typescript) - TypeScript and JavaScript dictionary. <sup>1</sup>
+- [Win32](dictionaries/win32) - Win32 dictionary.
+
+## Specialized Dictionaries
+
+- [AWS](dictionaries/aws) - AWS dictionary. <sup>1</sup> <sup>2</sup>
+- [bash](dictionaries/bash) - Bash dictionary. <sup>1</sup>
+- [Cities of Finland](dictionaries/city-names-finland) - List of cities in Finland. <sup>2</sup>
+- [Common Public Licenses](dictionaries/public-licenses) - Common Public Licenses dictionary. <sup>1</sup> <sup>2</sup>
+- [Company names](dictionaries/companies) - Company names dictionary. <sup>1</sup> <sup>2</sup>
+- [Cryptocurrencies](dictionaries/cryptocurrencies) - Cryptocurrencies dictionary. <sup>1</sup> <sup>2</sup>
+- [File Types](dictionaries/filetypes) - File types dictionary. <sup>1</sup> <sup>2</sup>
+- [Font Names](dictionaries/fonts) - Font names dictionary. <sup>1</sup>
+- [Gaming](dictionaries/gaming-terms) - Gaming dictionary. <sup>1</sup>
+- [GIS and PostGIS](dictionaries/gis) - GIS and PostGIS dictionary.
+- [Git](dictionaries/git) - CSpell configuration for GIT <sup>1</sup>
+- [Google Cloud](dictionaries/google) - Google Cloud Development Dictionary. <sup>1</sup>
+- [Markdown](dictionaries/markdown) - Markdown dictionary. <sup>1</sup>
+- [Medical terms](dictionaries/medicalterms) - Medical Terms Dictionary <sup>2</sup>
+- [People Names](dictionaries/people-names) - People Names dictionary. <sup>2</sup>
+- [Pokémon](dictionaries/pokemon) - Pokémon dictionary. <sup>2</sup>
+- [Redis](dictionaries/redis) - Redis dictionary.
+- [Scientific Terms US](dictionaries/scientific_terms_US) - Scientific Terms US dictionary. <sup>2</sup>
+- [Software Terms](dictionaries/software-terms) - Software terms dictionary. <sup>1</sup> <sup>2</sup>
+- [Vim](dictionaries/vim) - Vim developers dictionary.
+- [Vue](dictionaries/vue) - CSpell configuration for VUE files <sup>1</sup>
+
+## Dictionary Bundles
+
+- [CSpell Dictionaries Bundle](dictionaries/cspell) - Dictionaries included with the CSpell Command Line tool.
+
+<sup>1</sup> Bundled with CSpell.<br><sup>2</sup> Dictionaries are enabled when packages is imported.
+
+## All Dictionaries
+
+| Package                                                                                         | Name                              | Dictionary IDs                                                                                                                                                                            |
+| ----------------------------------------------------------------------------------------------- | --------------------------------- | ----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
+| [@cspell/dict-ada](./dictionaries/ada#readme)<sup>1</sup>                                       | Ada                               | ada                                                                                                                                                                                       |
+| [@cspell/dict-al](./dictionaries/al#readme)<sup>1</sup>                                         | AL                                | al                                                                                                                                                                                        |
+| [@cspell/dict-ar](./dictionaries/ar#readme)                                                     | Arabic                            | ar                                                                                                                                                                                        |
+| [@cspell/dict-aws](./dictionaries/aws#readme)<sup>1</sup>                                       | AWS                               | aws<sup>2</sup>                                                                                                                                                                           |
+| [@cspell/dict-bash](./dictionaries/bash#readme)<sup>1</sup>                                     | bash                              |                                                                                                                                                                                           |
+| [@cspell/dict-bg-bg](./dictionaries/bg_BG#readme)                                               | Bulgarian                         | bg-bg                                                                                                                                                                                     |
+| [@cspell/dict-ca](./dictionaries/ca#readme)                                                     | Catalan                           | ca                                                                                                                                                                                        |
+| [@cspell/dict-city-names-finland](./dictionaries/city-names-finland#readme)                     | Cities of Finland                 | city-names-finland<sup>2</sup>                                                                                                                                                            |
+| [@cspell/dict-clojure](./dictionaries/clojure#readme)                                           | Clojure                           | clojure                                                                                                                                                                                   |
+| [@cspell/dict-companies](./dictionaries/companies#readme)<sup>1</sup>                           | Company names                     | companies<sup>2</sup>                                                                                                                                                                     |
+| [@cspell/dict-cpp](./dictionaries/cpp#readme)<sup>1</sup>                                       | C/C++                             | cpp-legacy<br>cpp<br>cpp-refined                                                                                                                                                          |
+| [@cspell/dict-cryptocurrencies](./dictionaries/cryptocurrencies#readme)<sup>1</sup>             | Cryptocurrencies                  | cryptocurrencies<sup>2</sup><br>cryptocurrencies-legacy                                                                                                                                   |
+| [@cspell/dict-cs-cz](./dictionaries/cs_CZ#readme)                                               | Czech                             | cs-cz                                                                                                                                                                                     |
+| [@cspell/dict-csharp](./dictionaries/csharp#readme)<sup>1</sup>                                 | C#                                | csharp                                                                                                                                                                                    |
+| [@cspell/dict-cspell-bundle](./dictionaries/cspell#readme)                                      | CSpell Dictionaries Bundle        |                                                                                                                                                                                           |
+| [@cspell/dict-css](./dictionaries/css#readme)<sup>1</sup>                                       | CSS                               | css                                                                                                                                                                                       |
+| [@cspell/dict-da-dk](./dictionaries/da_DK#readme)                                               | Danish Dictionary                 | da-dk                                                                                                                                                                                     |
+| [@cspell/dict-dart](./dictionaries/dart#readme)<sup>1</sup>                                     | Dart                              | dart                                                                                                                                                                                      |
+| [@cspell/dict-data-science](./dictionaries/data-science#readme)<sup>1</sup>                     | Data Science                      | data-science<br>data-science-models<br>data-science-tools                                                                                                                                 |
+| [@cspell/dict-de-at](./dictionaries/de_AT#readme)                                               | Austrian German Dictionary        | de-at                                                                                                                                                                                     |
+| [@cspell/dict-de-ch](./dictionaries/de_CH#readme)                                               | Swiss German Dictionary           | de-ch                                                                                                                                                                                     |
+| [@cspell/dict-de-de](./dictionaries/de_DE#readme)                                               | German Dictionary                 | de-de                                                                                                                                                                                     |
+| [@cspell/dict-django](./dictionaries/django#readme)<sup>1</sup>                                 | Django                            | django                                                                                                                                                                                    |
+| [@cspell/dict-docker](./dictionaries/docker#readme)<sup>1</sup>                                 | Docker                            | docker                                                                                                                                                                                    |
+| [@cspell/dict-dotnet](./dictionaries/dotnet#readme)<sup>1</sup>                                 | .Net                              | dotnet                                                                                                                                                                                    |
+| [@cspell/dict-el](./dictionaries/el#readme)                                                     | Greek                             | el                                                                                                                                                                                        |
+| [@cspell/dict-elisp](./dictionaries/elisp#readme)                                               | Emacs Lisp                        | elisp                                                                                                                                                                                     |
+| [@cspell/dict-elixir](./dictionaries/elixir#readme)<sup>1</sup>                                 | Elixir                            | elixir                                                                                                                                                                                    |
+| [@cspell/dict-en_us](./dictionaries/en_US#readme)<sup>1</sup>                                   | English - American                | en_us                                                                                                                                                                                     |
+| [@cspell/dict-en-au](./dictionaries/en_AU#readme)                                               | English - Australian              | en-au                                                                                                                                                                                     |
+| [@cspell/dict-en-ca](./dictionaries/en_CA#readme)                                               | English - Canadian                | en-ca                                                                                                                                                                                     |
+| [@cspell/dict-en-common-misspellings](./dictionaries/en-common-misspellings#readme)<sup>1</sup> | English - Common Misspellings     | en-common-misspellings<br>en-gb-common-misspellings<br>en-us-common-misspellings                                                                                                          |
+| [@cspell/dict-en-gb](./dictionaries/en_GB#readme)<sup>1</sup>                                   | English - British                 | en-gb                                                                                                                                                                                     |
+| [@cspell/dict-en-gb-mit](./dictionaries/en_GB-MIT#readme)                                       | English - British (Limited)       | en-gb-mit                                                                                                                                                                                 |
+| [@cspell/dict-en-shared](./dictionaries/en_shared#readme)                                       | English - Shared                  | en-shared                                                                                                                                                                                 |
+| [@cspell/dict-eo](./dictionaries/eo#readme)                                                     | Esperanto                         | eo                                                                                                                                                                                        |
+| [@cspell/dict-es-es](./dictionaries/es_ES#readme)                                               | Spanish Dictionary (Spain)        | es-es                                                                                                                                                                                     |
+| [@cspell/dict-et-ee](./dictionaries/et-EE#readme)                                               | Estonian                          | et-ee                                                                                                                                                                                     |
+| [@cspell/dict-eu](./dictionaries/eu#readme)                                                     | Basque                            | eu                                                                                                                                                                                        |
+| [@cspell/dict-fa-ir](./dictionaries/fa_IR#readme)                                               | Persian Dictionary                | fa-ir                                                                                                                                                                                     |
+| [@cspell/dict-fi-fi](./dictionaries/fi_FI#readme)                                               | Finnish                           | fi-fi                                                                                                                                                                                     |
+| [@cspell/dict-filetypes](./dictionaries/filetypes#readme)<sup>1</sup>                           | File Types                        | filetypes<sup>2</sup>                                                                                                                                                                     |
+| [@cspell/dict-flutter](./dictionaries/flutter#readme)<sup>1</sup>                               | Flutter                           | flutter                                                                                                                                                                                   |
+| [@cspell/dict-fonts](./dictionaries/fonts#readme)<sup>1</sup>                                   | Font Names                        | fonts                                                                                                                                                                                     |
+| [@cspell/dict-fr-fr](./dictionaries/fr_FR#readme)                                               | French Dictionary (France)        | fr-fr                                                                                                                                                                                     |
+| [@cspell/dict-fr-reforme](./dictionaries/fr_FR_90#readme)                                       | Français Réforme 1990             | fr-fr-90                                                                                                                                                                                  |
+| [@cspell/dict-fsharp](./dictionaries/fsharp#readme)<sup>1</sup>                                 | F#                                | fsharp                                                                                                                                                                                    |
+| [@cspell/dict-fullstack](./dictionaries/fullstack#readme)<sup>1</sup>                           | Fullstack                         | fullstack                                                                                                                                                                                 |
+| [@cspell/dict-gaming-terms](./dictionaries/gaming-terms#readme)<sup>1</sup>                     | Gaming                            | gaming-terms<br>game-development                                                                                                                                                          |
+| [@cspell/dict-gis](./dictionaries/gis#readme)                                                   | GIS and PostGIS                   | gis                                                                                                                                                                                       |
+| [@cspell/dict-git](./dictionaries/git#readme)<sup>1</sup>                                       | Git                               | git                                                                                                                                                                                       |
+| [@cspell/dict-golang](./dictionaries/golang#readme)<sup>1</sup>                                 | Go Language                       | golang                                                                                                                                                                                    |
+| [@cspell/dict-google](./dictionaries/google#readme)<sup>1</sup>                                 | Google Cloud                      | google                                                                                                                                                                                    |
+| [@cspell/dict-grc](./dictionaries/grc_GR#readme)                                                | Ancient Greek                     | grc                                                                                                                                                                                       |
+| [@cspell/dict-haskell](./dictionaries/haskell#readme)<sup>1</sup>                               | Haskell                           | haskell                                                                                                                                                                                   |
+| [@cspell/dict-he](./dictionaries/he#readme)                                                     | Hebrew Dictionary                 | he                                                                                                                                                                                        |
+| [@cspell/dict-hr-hr](./dictionaries/hr_HR#readme)                                               | Croatian                          | hr-hr                                                                                                                                                                                     |
+| [@cspell/dict-html](./dictionaries/html#readme)<sup>1</sup>                                     | HTML                              | html                                                                                                                                                                                      |
+| [@cspell/dict-html-symbol-entities](./dictionaries/html-symbol-entities#readme)<sup>1</sup>     | HTML Symbol Entities              | html-symbol-entities                                                                                                                                                                      |
+| [@cspell/dict-hu-hu](./dictionaries/hu_HU#readme)                                               | Hungarian                         | hu-hu                                                                                                                                                                                     |
+| [@cspell/dict-id-id](./dictionaries/id_ID#readme)                                               | Indonesia                         | id-id                                                                                                                                                                                     |
+| [@cspell/dict-it-it](./dictionaries/it_IT#readme)                                               | Italian                           | it-it                                                                                                                                                                                     |
+| [@cspell/dict-java](./dictionaries/java#readme)<sup>1</sup>                                     | Java                              | java                                                                                                                                                                                      |
+| [@cspell/dict-julia](./dictionaries/julia#readme)<sup>1</sup>                                   | Julia                             | julia                                                                                                                                                                                     |
+| [@cspell/dict-k8s](./dictionaries/k8s#readme)<sup>1</sup>                                       | K8s                               | k8s                                                                                                                                                                                       |
+| [@cspell/dict-kotlin](./dictionaries/kotlin#readme)<sup>1</sup>                                 | Kotlin                            | kotlin                                                                                                                                                                                    |
+| [@cspell/dict-la](./dictionaries/la#readme)                                                     | Latin                             | la                                                                                                                                                                                        |
+| [@cspell/dict-latex](./dictionaries/latex#readme)<sup>1</sup>                                   | LaTeX                             | latex                                                                                                                                                                                     |
+| [@cspell/dict-lorem-ipsum](./dictionaries/lorem-ipsum#readme)<sup>1</sup>                       | Lorem-ipsum                       | lorem-ipsum                                                                                                                                                                               |
+| [@cspell/dict-lt-lt](./dictionaries/lt_LT#readme)                                               | Lithuanian                        | lt-lt                                                                                                                                                                                     |
+| [@cspell/dict-lua](./dictionaries/lua#readme)<sup>1</sup>                                       | Lua                               | lua                                                                                                                                                                                       |
+| [@cspell/dict-lv](./dictionaries/lv#readme)                                                     | Latvian                           | lv                                                                                                                                                                                        |
+| [@cspell/dict-makefile](./dictionaries/makefile#readme)<sup>1</sup>                             | Makefile                          | makefile                                                                                                                                                                                  |
+| [@cspell/dict-markdown](./dictionaries/markdown#readme)<sup>1</sup>                             | Markdown                          |                                                                                                                                                                                           |
+| [@cspell/dict-medicalterms](./dictionaries/medicalterms#readme)                                 | Medical terms                     | medical terms<sup>2</sup>                                                                                                                                                                 |
+| [@cspell/dict-mk](./dictionaries/mk#readme)                                                     | Macedonian                        | mk                                                                                                                                                                                        |
+| [@cspell/dict-mnemonics](./dictionaries/mnemonics#readme)                                       | Mnemonics                         | mnemonics                                                                                                                                                                                 |
+| [@cspell/dict-monkeyc](./dictionaries/monkeyc#readme)<sup>1</sup>                               | Monkey C                          | monkeyc                                                                                                                                                                                   |
+| [@cspell/dict-nb-no](./dictionaries/nb_NO#readme)                                               | Norwegian Bokmål                  | nb-no                                                                                                                                                                                     |
+| [@cspell/dict-nl-nl](./dictionaries/nl_NL#readme)                                               | Dutch (Netherlands) Dictionary    | nl-nl                                                                                                                                                                                     |
+| [@cspell/dict-node](./dictionaries/node#readme)<sup>1</sup>                                     | Node.js                           | node                                                                                                                                                                                      |
+| [@cspell/dict-npm](./dictionaries/npm#readme)<sup>1</sup>                                       | NPM                               | npm                                                                                                                                                                                       |
+| [@cspell/dict-people-names](./dictionaries/people-names#readme)                                 | People Names                      | people-names<sup>2</sup>                                                                                                                                                                  |
+| [@cspell/dict-php](./dictionaries/php#readme)<sup>1</sup>                                       | PHP                               | php                                                                                                                                                                                       |
+| [@cspell/dict-pl_pl](./dictionaries/pl_PL#readme)                                               | Polish Dictionary                 | pl-pl                                                                                                                                                                                     |
+| [@cspell/dict-pokemon](./dictionaries/pokemon#readme)                                           | Pokémon                           | pokemon<sup>2</sup>                                                                                                                                                                       |
+| [@cspell/dict-powershell](./dictionaries/powershell#readme)<sup>1</sup>                         | PowerShell                        | powershell                                                                                                                                                                                |
+| [@cspell/dict-pt-br](./dictionaries/pt_BR#readme)                                               | Portuguese (Brazilian) Dictionary | pt-br                                                                                                                                                                                     |
+| [@cspell/dict-pt-pt](./dictionaries/pt_PT#readme)                                               | Portuguese Dictionary (Portugal)  | pt-pt                                                                                                                                                                                     |
+| [@cspell/dict-public-licenses](./dictionaries/public-licenses#readme)<sup>1</sup>               | Common Public Licenses            | public-licenses<sup>2</sup>                                                                                                                                                               |
+| [@cspell/dict-python](./dictionaries/python#readme)<sup>1</sup>                                 | Python                            | python<br>python-common                                                                                                                                                                   |
+| [@cspell/dict-r](./dictionaries/r#readme)<sup>1</sup>                                           | R                                 | r                                                                                                                                                                                         |
+| [@cspell/dict-redis](./dictionaries/redis#readme)                                               | Redis                             | redis                                                                                                                                                                                     |
+| [@cspell/dict-ro-ro](./dictionaries/ro_RO#readme)                                               | Romanian                          | ro-ro                                                                                                                                                                                     |
+| [@cspell/dict-ru_ru](./dictionaries/ru_RU#readme)                                               | Russian Dictionary (Combined)     | ru-ru                                                                                                                                                                                     |
+| [@cspell/dict-ruby](./dictionaries/ruby#readme)<sup>1</sup>                                     | Ruby                              | ruby                                                                                                                                                                                      |
+| [@cspell/dict-rust](./dictionaries/rust#readme)<sup>1</sup>                                     | Rust                              | rust                                                                                                                                                                                      |
+| [@cspell/dict-scala](./dictionaries/scala#readme)<sup>1</sup>                                   | Scala                             | scala                                                                                                                                                                                     |
+| [@cspell/dict-scientific-terms-gb](./dictionaries/scientific_terms_GB#readme)                   | Scientific Terms GB               | scientific-terms-gb                                                                                                                                                                       |
+| [@cspell/dict-scientific-terms-us](./dictionaries/scientific_terms_US#readme)                   | Scientific Terms US               | scientific-terms-us<sup>2</sup>                                                                                                                                                           |
+| [@cspell/dict-shell](./dictionaries/shell#readme)<sup>1</sup>                                   | ShellScript                       | bash<br>shellscript                                                                                                                                                                       |
+| [@cspell/dict-sk-sk](./dictionaries/sk_SK#readme)                                               | Slovak                            | sk-sk                                                                                                                                                                                     |
+| [@cspell/dict-sl-si](./dictionaries/sl_SI#readme)                                               | Slovenian                         | sl-si                                                                                                                                                                                     |
+| [@cspell/dict-software-terms](./dictionaries/software-terms#readme)<sup>1</sup>                 | Software Terms                    | software-term-suggestions<sup>2</sup><br>softwareTerms<sup>2</sup><br>networking-terms<br>web-services<sup>2</sup><br>computing-acronyms<sup>2</sup><br>coding-compound-terms<sup>2</sup> |
+| [@cspell/dict-sql](./dictionaries/sql#readme)<sup>1</sup>                                       | SQL                               | sql                                                                                                                                                                                       |
+| [@cspell/dict-sr-cyrl](./dictionaries/sr_Cyrl#readme)                                           | Serbian (Cyrillic)                | sr-cyrl                                                                                                                                                                                   |
+| [@cspell/dict-sr-latn](./dictionaries/sr_Latn#readme)                                           | Serbian (Latin)                   | sr-latn                                                                                                                                                                                   |
+| [@cspell/dict-sv](./dictionaries/sv#readme)                                                     | Swedish Dictionary                | sv                                                                                                                                                                                        |
+| [@cspell/dict-svelte](./dictionaries/svelte#readme)<sup>1</sup>                                 | Svelte                            | svelte                                                                                                                                                                                    |
+| [@cspell/dict-swift](./dictionaries/swift#readme)<sup>1</sup>                                   | Swift                             | swift                                                                                                                                                                                     |
+| [@cspell/dict-terraform](./dictionaries/terraform#readme)<sup>1</sup>                           | Terraform                         | terraform                                                                                                                                                                                 |
+| [@cspell/dict-tr-tr](./dictionaries/tr_TR#readme)                                               | Turkish                           | tr-tr                                                                                                                                                                                     |
+| [@cspell/dict-typescript](./dictionaries/typescript#readme)<sup>1</sup>                         | TypeScript/JavaScript             | typescript                                                                                                                                                                                |
+| [@cspell/dict-uk-ua](./dictionaries/uk_UA#readme)                                               | Ukrainian Dictionary              | uk-ua                                                                                                                                                                                     |
+| [@cspell/dict-vi-vn](./dictionaries/vi_VN#readme)                                               | Vietnamese                        | vi-vn                                                                                                                                                                                     |
+| [@cspell/dict-vim](./dictionaries/vim#readme)                                                   | Vim                               | vim                                                                                                                                                                                       |
+| [@cspell/dict-vue](./dictionaries/vue#readme)<sup>1</sup>                                       | Vue                               |                                                                                                                                                                                           |
+| [@cspell/dict-win32](./dictionaries/win32#readme)                                               | Win32                             | win32                                                                                                                                                                                     |
+
+<sup>1</sup> Bundled with CSpell.<br><sup>2</sup> Dictionaries are enabled when packages is imported.
+
+## Sorted by Dictionary Name IDs
+
+| Name ID                                                                              | Description                                                         | Locale                        | File Type                                                      |
+| ------------------------------------------------------------------------------------ | ------------------------------------------------------------------- | ----------------------------- | -------------------------------------------------------------- |
+| [`ada`](dictionaries/ada) <sup>1</sup>                                               | Ada Language Dictionary                                             | -                             | ada                                                            |
+| [`al`](dictionaries/al) <sup>1</sup>                                                 | AL Keywords Dictionary                                              | -                             | al                                                             |
+| [`ar`](dictionaries/ar)                                                              | Arabic dictionary.                                                  | ar                            | -                                                              |
+| [`aws`](dictionaries/aws) <sup>1</sup> <sup>2</sup>                                  | AWS dictionary.                                                     | -                             | -                                                              |
+| [`bash`](dictionaries/shell) <sup>1</sup>                                            | Bash dictionary.                                                    | -                             | bashscript                                                     |
+| [`bg-bg`](dictionaries/bg_BG)                                                        | Bulgarian dictionary.                                               | bg<br>bg-BG                   | -                                                              |
+| [`ca`](dictionaries/ca)                                                              | Catalan dictionary.                                                 | ca                            | -                                                              |
+| [`city-names-finland`](dictionaries/city-names-finland) <sup>2</sup>                 | List of cities in Finland.                                          | -                             | -                                                              |
+| [`clojure`](dictionaries/clojure)                                                    | Clojure dictionary.                                                 | -                             | clojure                                                        |
+| [`coding-compound-terms`](dictionaries/software-terms) <sup>1</sup> <sup>2</sup>     | Common codding compound terms.                                      | -                             | -                                                              |
+| [`companies`](dictionaries/companies) <sup>1</sup> <sup>2</sup>                      | Company names dictionary.                                           | -                             | -                                                              |
+| [`computing-acronyms`](dictionaries/software-terms) <sup>1</sup> <sup>2</sup>        | Common acronyms related to computing.                               | -                             | -                                                              |
+| [`cpp`](dictionaries/cpp) <sup>1</sup>                                               | C/C++ Keywords and common library functions.                        | -                             | c<br>cpp                                                       |
+| [`cpp-legacy`](dictionaries/cpp) <sup>1</sup>                                        | Legacy C/C++ Keywords and common library functions.                 | -                             | c<br>cpp                                                       |
+| [`cpp-refined`](dictionaries/cpp) <sup>1</sup>                                       | Refined list of C/C++ Keywords and common library functions.        | -                             | c<br>cpp                                                       |
+| [`cryptocurrencies`](dictionaries/cryptocurrencies) <sup>1</sup> <sup>2</sup>        | Cryptocurrencies dictionary.                                        | -                             | -                                                              |
+| [`cryptocurrencies-legacy`](dictionaries/cryptocurrencies) <sup>1</sup>              | Legacy Cryptocurrency dictionary.                                   | -                             | -                                                              |
+| [`cs-cz`](dictionaries/cs_CZ)                                                        | Czech dictionary.                                                   | cs                            | -                                                              |
+| [`csharp`](dictionaries/csharp) <sup>1</sup>                                         | C# dictionary.                                                      | -                             | csharp                                                         |
+| [`css`](dictionaries/css) <sup>1</sup>                                               | Css dictionary.                                                     | -                             | css                                                            |
+| [`da-dk`](dictionaries/da_DK)                                                        | Danish (da-DK) Dictionary.                                          | da<br>da-DK                   | -                                                              |
+| [`dart`](dictionaries/dart) <sup>1</sup>                                             | Dart dictionary.                                                    | -                             | dart                                                           |
+| [`data-science`](dictionaries/data-science) <sup>1</sup>                             | Data Science Terms dictionary.                                      | -                             | python                                                         |
+| [`data-science-models`](dictionaries/data-science) <sup>1</sup>                      | Data Science Models dictionary.                                     | -                             | python                                                         |
+| [`data-science-tools`](dictionaries/data-science) <sup>1</sup>                       | Data Science Tools dictionary.                                      | -                             | python                                                         |
+| [`de-at`](dictionaries/de_AT)                                                        | Austrian German (de-AT) Dictionary.                                 | de_AT                         | -                                                              |
+| [`de-ch`](dictionaries/de_CH)                                                        | Swiss German (de-CH) Dictionary.                                    | de<br>de_CH                   | -                                                              |
+| [`de-de`](dictionaries/de_DE)                                                        | German (de-DE) Dictionary.                                          | de<br>de_DE                   | -                                                              |
+| [`django`](dictionaries/django) <sup>1</sup>                                         | List of Python Django Framework keywords.                           | -                             | html<br>python                                                 |
+| [`docker`](dictionaries/docker) <sup>1</sup>                                         | Docker dictionary.                                                  | -                             | dockerfile                                                     |
+| [`dotnet`](dictionaries/dotnet) <sup>1</sup>                                         | .Net keywords.                                                      | -                             | cs                                                             |
+| [`el`](dictionaries/el)                                                              | Greek dictionary.                                                   | el                            | -                                                              |
+| [`elisp`](dictionaries/elisp)                                                        | Emacs Lisp dictionary.                                              | -                             | elisp<br>lisp                                                  |
+| [`elixir`](dictionaries/elixir) <sup>1</sup>                                         | Elixir dictionary.                                                  | -                             | elixir                                                         |
+| [`en_us`](dictionaries/en_US) <sup>1</sup>                                           | American English Dictionary                                         | en<br>en-US                   | -                                                              |
+| [`en-au`](dictionaries/en_AU)                                                        | Australian English Dictionary                                       | en-AU                         | -                                                              |
+| [`en-ca`](dictionaries/en_CA)                                                        | Canadian English Dictionary                                         | en-CA                         | -                                                              |
+| [`en-common-misspellings`](dictionaries/en-common-misspellings) <sup>1</sup>         | undefined                                                           | en                            | -                                                              |
+| [`en-gb`](dictionaries/en_GB) <sup>1</sup>                                           | British English Dictionary                                          | en-GB                         | -                                                              |
+| [`en-gb-common-misspellings`](dictionaries/en-common-misspellings) <sup>1</sup>      | undefined                                                           | en-gb                         | -                                                              |
+| [`en-gb-mit`](dictionaries/en_GB-MIT)                                                | British English Dictionary                                          | en-GB                         | -                                                              |
+| [`en-shared`](dictionaries/en_shared)                                                | English words shared between the various English dictionaries.      | en                            | -                                                              |
+| [`en-us-common-misspellings`](dictionaries/en-common-misspellings) <sup>1</sup>      | undefined                                                           | en-us                         | -                                                              |
+| [`eo`](dictionaries/eo)                                                              | Esperanto dictionary.                                               | eo                            | -                                                              |
+| [`es-es`](dictionaries/es_ES)                                                        | Spanish Dictionary (Spain)                                          | es<br>es_ES                   | -                                                              |
+| [`et-ee`](dictionaries/et-EE)                                                        | Estonian dictionary.                                                | et<br>et-EE                   | -                                                              |
+| [`eu`](dictionaries/eu)                                                              | Basque dictionary.                                                  | eu                            | -                                                              |
+| [`fa-ir`](dictionaries/fa_IR)                                                        | Persian Dictionary                                                  | fa<br>fa-IR                   | -                                                              |
+| [`fi-fi`](dictionaries/fi_FI)                                                        | Finnish dictionary.                                                 | fi<br>fi-fi                   | -                                                              |
+| [`filetypes`](dictionaries/filetypes) <sup>1</sup> <sup>2</sup>                      | File types dictionary.                                              | -                             | -                                                              |
+| [`flutter`](dictionaries/flutter) <sup>1</sup>                                       | Flutter dictionary.                                                 | -                             | dart                                                           |
+| [`fonts`](dictionaries/fonts) <sup>1</sup>                                           | Font names dictionary.                                              | -                             | -                                                              |
+| [`fr-fr`](dictionaries/fr_FR)                                                        | French Dictionary (France)                                          | fr<br>fr_FR                   | -                                                              |
+| [`fr-fr-90`](dictionaries/fr_FR_90)                                                  | Français Réforme 1990 dictionary.                                   | fr<br>fr-90<br>fr-fr          | -                                                              |
+| [`fsharp`](dictionaries/fsharp) <sup>1</sup>                                         | F# dictionary.                                                      | -                             | fsharp                                                         |
+| [`fullstack`](dictionaries/fullstack) <sup>1</sup>                                   | Common words encountered during fullstack development               | -                             | ada<br>c<br>cpp<br>csharp<br>...                               |
+| [`game-development`](dictionaries/gaming-terms) <sup>1</sup>                         | Game development dictionary. Includes Godot, Unity, and more terms. | -                             | -                                                              |
+| [`gaming-terms`](dictionaries/gaming-terms) <sup>1</sup>                             | Gaming dictionary.                                                  | -                             | -                                                              |
+| [`gis`](dictionaries/gis)                                                            | GIS and PostGIS dictionary.                                         | -                             | -                                                              |
+| [`git`](dictionaries/git) <sup>1</sup>                                               | Git Terms                                                           | -                             | -                                                              |
+| [`golang`](dictionaries/golang) <sup>1</sup>                                         | Go Language Dictionary                                              | -                             | go                                                             |
+| [`google`](dictionaries/google) <sup>1</sup>                                         | Google Cloud Development dictionary.                                | -                             | -                                                              |
+| [`grc`](dictionaries/grc_GR)                                                         | Ancient Greek dictionary.                                           | el-GRC<br>gr<br>grc<br>grc_GR | -                                                              |
+| [`haskell`](dictionaries/haskell) <sup>1</sup>                                       | Haskell dictionary.                                                 | -                             | haskell                                                        |
+| [`he`](dictionaries/he)                                                              | Hebrew Dictionary                                                   | he                            | -                                                              |
+| [`hr-hr`](dictionaries/hr_HR)                                                        | Croatian dictionary.                                                | hr<br>hr-HR                   | -                                                              |
+| [`html`](dictionaries/html) <sup>1</sup>                                             | HTML dictionary.                                                    | -                             | html                                                           |
+| [`html-symbol-entities`](dictionaries/html-symbol-entities) <sup>1</sup>             | HTML Symbol Entities Dictionary                                     | -                             | html<br>markdown                                               |
+| [`hu-hu`](dictionaries/hu_HU)                                                        | Hungarian dictionary.                                               | hu<br>hu-hu                   | -                                                              |
+| [`id-id`](dictionaries/id_ID)                                                        | Indonesia dictionary.                                               | id<br>id-ID                   | -                                                              |
+| [`it-it`](dictionaries/it_IT)                                                        | Italian dictionary.                                                 | it<br>it-IT                   | -                                                              |
+| [`java`](dictionaries/java) <sup>1</sup>                                             | Java dictionary.                                                    | -                             | java                                                           |
+| [`julia`](dictionaries/julia) <sup>1</sup>                                           | Julia Dictionary                                                    | -                             | julia                                                          |
+| [`k8s`](dictionaries/k8s) <sup>1</sup>                                               | K8s dictionary.                                                     | -                             | yaml                                                           |
+| [`kotlin`](dictionaries/kotlin) <sup>1</sup>                                         | Kotlin dictionary.                                                  | -                             | kotlin                                                         |
+| [`la`](dictionaries/la)                                                              | Latin dictionary.                                                   | la<br>la-VA                   | -                                                              |
+| [`latex`](dictionaries/latex) <sup>1</sup>                                           | LaTeX dictionary                                                    | -                             | latex                                                          |
+| [`lorem-ipsum`](dictionaries/lorem-ipsum) <sup>1</sup>                               | Lorem-ipsum dictionary.                                             | lorem<br>lorem-ipsum          | -                                                              |
+| [`lt-lt`](dictionaries/lt_LT)                                                        | Lithuanian dictionary.                                              | lt<br>lt-LT                   | -                                                              |
+| [`lua`](dictionaries/lua) <sup>1</sup>                                               | Lua dictionary.                                                     | -                             | lua                                                            |
+| [`lv`](dictionaries/lv)                                                              | Latvian dictionary.                                                 | lv                            | -                                                              |
+| [`makefile`](dictionaries/makefile) <sup>1</sup>                                     | Makefile dictionary.                                                | -                             | makefile                                                       |
+| [`medical terms`](dictionaries/medicalterms) <sup>2</sup>                            | List of nearly 100,000 medical terms.                               | -                             | -                                                              |
+| [`mk`](dictionaries/mk)                                                              | Macedonian dictionary.                                              | mk<br>mk-cyrl                 | -                                                              |
+| [`mnemonics`](dictionaries/mnemonics)                                                | i86 Mnemonics dictionary for cspell                                 | -                             | c<br>cpp<br>h<br>hpp                                           |
+| [`monkeyc`](dictionaries/monkeyc) <sup>1</sup>                                       | Monkey C dictionary.                                                | -                             | monkeyc                                                        |
+| [`nb-no`](dictionaries/nb_NO)                                                        | Norwegian Bokmål dictionary.                                        | nb<br>nb-no                   | -                                                              |
+| [`networking-terms`](dictionaries/software-terms) <sup>1</sup>                       | Software networking terms dictionary.                               | -                             | -                                                              |
+| [`nl-nl`](dictionaries/nl_NL)                                                        | Dutch (Netherlands) Dictionary                                      | nl<br>nl-NL                   | -                                                              |
+| [`node`](dictionaries/node) <sup>1</sup>                                             | Node.js dictionary.                                                 | -                             | javascript<br>javascriptreact<br>typescript<br>typescriptreact |
+| [`npm`](dictionaries/npm) <sup>1</sup>                                               | Dictionary of Common Javascript Packages.                           | -                             | javascript<br>javascriptreact<br>typescript<br>typescriptreact |
+| [`people-names`](dictionaries/people-names) <sup>2</sup>                             | People Names dictionary.                                            | -                             | -                                                              |
+| [`php`](dictionaries/php) <sup>1</sup>                                               | Php dictionary.                                                     | -                             | php                                                            |
+| [`pl-pl`](dictionaries/pl_PL)                                                        | Polish Dictionary                                                   | pl<br>pl_PL                   | -                                                              |
+| [`pokemon`](dictionaries/pokemon) <sup>2</sup>                                       | Pokémon dictionary.                                                 | -                             | -                                                              |
+| [`powershell`](dictionaries/powershell) <sup>1</sup>                                 | PowerShell Keyword Dictionary                                       | -                             | powershell                                                     |
+| [`pt-br`](dictionaries/pt_BR)                                                        | Portuguese (Brazilian) Dictionary                                   | pt<br>pt_BR                   | -                                                              |
+| [`pt-pt`](dictionaries/pt_PT)                                                        | Portuguese Dictionary (Portugal)                                    | pt<br>pt_PT                   | -                                                              |
+| [`public-licenses`](dictionaries/public-licenses) <sup>1</sup> <sup>2</sup>          | Common Public Licenses dictionary.                                  | -                             | -                                                              |
+| [`python`](dictionaries/python) <sup>1</sup>                                         | Python Dictionary                                                   | -                             | python                                                         |
+| [`python-common`](dictionaries/python) <sup>1</sup>                                  | Python Common Terms Dictionary                                      | -                             | python                                                         |
+| [`r`](dictionaries/r) <sup>1</sup>                                                   | R dictionary.                                                       | -                             | r                                                              |
+| [`redis`](dictionaries/redis)                                                        | Redis dictionary.                                                   | -                             | -                                                              |
+| [`ro-ro`](dictionaries/ro_RO)                                                        | Romanian dictionary.                                                | ro<br>ro-RO                   | -                                                              |
+| [`ru-ru`](dictionaries/ru_RU)                                                        | Russian Dictionary (Combined)                                       | ru<br>ru-ru                   | -                                                              |
+| [`ruby`](dictionaries/ruby) <sup>1</sup>                                             | For ruby and ruby on rails                                          | -                             | ruby                                                           |
+| [`rust`](dictionaries/rust) <sup>1</sup>                                             | Rust Keyword Dictionary                                             | -                             | rust                                                           |
+| [`scala`](dictionaries/scala) <sup>1</sup>                                           | Scala dictionary.                                                   | -                             | scala                                                          |
+| [`scientific-terms-gb`](dictionaries/scientific_terms_GB)                            | Scientific Terms GB dictionary.                                     | en-GB                         | -                                                              |
+| [`scientific-terms-us`](dictionaries/scientific_terms_US) <sup>2</sup>               | Scientific Terms US dictionary.                                     | -                             | -                                                              |
+| [`shellscript`](dictionaries/shell) <sup>1</sup>                                     | ShellScript dictionary.                                             | -                             | shellscript                                                    |
+| [`sk-sk`](dictionaries/sk_SK)                                                        | Slovak dictionary.                                                  | sk                            | -                                                              |
+| [`sl-si`](dictionaries/sl_SI)                                                        | Slovenian dictionary.                                               | sl<br>sl-SI                   | -                                                              |
+| [`software-term-suggestions`](dictionaries/software-terms) <sup>1</sup> <sup>2</sup> | undefined                                                           | -                             | -                                                              |
+| [`softwareTerms`](dictionaries/software-terms) <sup>1</sup> <sup>2</sup>             | Software terms dictionary.                                          | -                             | -                                                              |
+| [`sql`](dictionaries/sql) <sup>1</sup>                                               | SQL dictionary.                                                     | -                             | sql                                                            |
+| [`sr-cyrl`](dictionaries/sr_Cyrl)                                                    | Serbian (Cyrillic) dictionary.                                      | sr<br>sr-Cyrl                 | -                                                              |
+| [`sr-latn`](dictionaries/sr_Latn)                                                    | Serbian (Latin) dictionary.                                         | sr<br>sr-Latn                 | -                                                              |
+| [`sv`](dictionaries/sv)                                                              | Swedish Dictionary                                                  | sv<br>sv_SE                   | -                                                              |
+| [`svelte`](dictionaries/svelte) <sup>1</sup>                                         | Svelte dictionary.                                                  | -                             | javascript<br>svelte<br>typescript                             |
+| [`swift`](dictionaries/swift) <sup>1</sup>                                           | Swift dictionary.                                                   | -                             | swift                                                          |
+| [`terraform`](dictionaries/terraform) <sup>1</sup>                                   | Terraform dictionary.                                               | -                             | terraform<br>tfvars                                            |
+| [`tr-tr`](dictionaries/tr_TR)                                                        | Turkish dictionary.                                                 | tr<br>tr-TR                   | -                                                              |
+| [`typescript`](dictionaries/typescript) <sup>1</sup>                                 | TypeScript and JavaScript dictionary.                               | -                             | astro<br>javascript<br>javascriptreact<br>mdx<br>...           |
+| [`uk-ua`](dictionaries/uk_UA)                                                        | Ukrainian Dictionary                                                | uk                            | -                                                              |
+| [`vi-vn`](dictionaries/vi_VN)                                                        | Vietnamese dictionary.                                              | vi                            | -                                                              |
+| [`vim`](dictionaries/vim)                                                            | Vim dictionary.                                                     | -                             | -                                                              |
+| [`web-services`](dictionaries/software-terms) <sup>1</sup> <sup>2</sup>              | Web Services and APIs dictionary.                                   | -                             | -                                                              |
+| [`win32`](dictionaries/win32)                                                        | Win32 dictionary.                                                   | -                             | c<br>cpp                                                       |
+
+<sup>1</sup> Bundled with CSpell.<br><sup>2</sup> Dictionaries are enabled when packages is imported.
+
+<!--- @@inject-end: static/dictionary-packages.md --->
 
 ## Documentation
 
@@ -288,17 +445,19 @@ Special thanks to all of our amazing contributors!
 [<img alt="Contributor cidrblock" src="https://avatars.githubusercontent.com/u/18386516?v=4&size=128" width=64>](https://github.com/cidrblock)
 [<img alt="Contributor phansys" src="https://avatars.githubusercontent.com/u/1231441?v=4&size=128" width=64>](https://github.com/phansys)
 [<img alt="Contributor mwarres" src="https://avatars.githubusercontent.com/u/86576377?v=4&size=128" width=64>](https://github.com/mwarres)
+[<img alt="Contributor tas50" src="https://avatars.githubusercontent.com/u/1015200?v=4&size=128" width=64>](https://github.com/tas50)
+[<img alt="Contributor Zamiell" src="https://avatars.githubusercontent.com/u/5511220?v=4&size=128" width=64>](https://github.com/Zamiell)
 [<img alt="Contributor AlekSi" src="https://avatars.githubusercontent.com/u/11512?v=4&size=128" width=64>](https://github.com/AlekSi)
+[<img alt="Contributor mfulton26" src="https://avatars.githubusercontent.com/u/5588957?v=4&size=128" width=64>](https://github.com/mfulton26)
 [<img alt="Contributor ndac-todoroki" src="https://avatars.githubusercontent.com/u/11530165?v=4&size=128" width=64>](https://github.com/ndac-todoroki)
 [<img alt="Contributor simon-v-swyftx" src="https://avatars.githubusercontent.com/u/109499378?v=4&size=128" width=64>](https://github.com/simon-v-swyftx)
-[<img alt="Contributor tas50" src="https://avatars.githubusercontent.com/u/1015200?v=4&size=128" width=64>](https://github.com/tas50)
 [<img alt="Contributor trentbl" src="https://avatars.githubusercontent.com/u/60485557?v=4&size=128" width=64>](https://github.com/trentbl)
-[<img alt="Contributor Zamiell" src="https://avatars.githubusercontent.com/u/5511220?v=4&size=128" width=64>](https://github.com/Zamiell)
 [<img alt="Contributor jaycenhorton" src="https://avatars.githubusercontent.com/u/18407013?v=4&size=128" width=64>](https://github.com/jaycenhorton)
 [<img alt="Contributor jim-hays-root" src="https://avatars.githubusercontent.com/u/54556994?v=4&size=128" width=64>](https://github.com/jim-hays-root)
-[<img alt="Contributor mfulton26" src="https://avatars.githubusercontent.com/u/5588957?v=4&size=128" width=64>](https://github.com/mfulton26)
+[<img alt="Contributor JoshuaKGoldberg" src="https://avatars.githubusercontent.com/u/3335181?v=4&size=128" width=64>](https://github.com/JoshuaKGoldberg)
 [<img alt="Contributor shaihu" src="https://avatars.githubusercontent.com/u/61219328?v=4&size=128" width=64>](https://github.com/shaihu)
 [<img alt="Contributor viktorstrate" src="https://avatars.githubusercontent.com/u/4233458?v=4&size=128" width=64>](https://github.com/viktorstrate)
+[<img alt="Contributor andyw8" src="https://avatars.githubusercontent.com/u/13400?v=4&size=128" width=64>](https://github.com/andyw8)
 [<img alt="Contributor astorije" src="https://avatars.githubusercontent.com/u/113730?v=4&size=128" width=64>](https://github.com/astorije)
 [<img alt="Contributor crapStone" src="https://avatars.githubusercontent.com/u/23100555?v=4&size=128" width=64>](https://github.com/crapStone)
 [<img alt="Contributor dflock" src="https://avatars.githubusercontent.com/u/47756?v=4&size=128" width=64>](https://github.com/dflock)
@@ -313,27 +472,28 @@ Special thanks to all of our amazing contributors!
 [<img alt="Contributor sitch" src="https://avatars.githubusercontent.com/u/2736163?v=4&size=128" width=64>](https://github.com/sitch)
 [<img alt="Contributor ssbarnea" src="https://avatars.githubusercontent.com/u/102495?v=4&size=128" width=64>](https://github.com/ssbarnea)
 [<img alt="Contributor tobysmith568" src="https://avatars.githubusercontent.com/u/22356255?v=4&size=128" width=64>](https://github.com/tobysmith568)
-[<img alt="Contributor andyw8" src="https://avatars.githubusercontent.com/u/13400?v=4&size=128" width=64>](https://github.com/andyw8)
 [<img alt="Contributor babyraging" src="https://avatars.githubusercontent.com/u/14004642?v=4&size=128" width=64>](https://github.com/babyraging)
 [<img alt="Contributor fa0311" src="https://avatars.githubusercontent.com/u/34892635?v=4&size=128" width=64>](https://github.com/fa0311)
-[<img alt="Contributor jordiolivares" src="https://avatars.githubusercontent.com/u/1163790?v=4&size=128" width=64>](https://github.com/jordiolivares)
 [<img alt="Contributor mad-gooze" src="https://avatars.githubusercontent.com/u/1188779?v=4&size=128" width=64>](https://github.com/mad-gooze)
 [<img alt="Contributor alecmev" src="https://avatars.githubusercontent.com/u/2584727?v=4&size=128" width=64>](https://github.com/alecmev)
 [<img alt="Contributor awgeorge" src="https://avatars.githubusercontent.com/u/1777444?v=4&size=128" width=64>](https://github.com/awgeorge)
 [<img alt="Contributor david-fong" src="https://avatars.githubusercontent.com/u/42986768?v=4&size=128" width=64>](https://github.com/david-fong)
 [<img alt="Contributor Encephala" src="https://avatars.githubusercontent.com/u/29434548?v=4&size=128" width=64>](https://github.com/Encephala)
+[<img alt="Contributor holtskinner" src="https://avatars.githubusercontent.com/u/13262395?v=4&size=128" width=64>](https://github.com/holtskinner)
 [<img alt="Contributor jcgoette" src="https://avatars.githubusercontent.com/u/53531335?v=4&size=128" width=64>](https://github.com/jcgoette)
+[<img alt="Contributor jordiolivares" src="https://avatars.githubusercontent.com/u/1163790?v=4&size=128" width=64>](https://github.com/jordiolivares)
 [<img alt="Contributor Maxim-Mazurok" src="https://avatars.githubusercontent.com/u/7756211?v=4&size=128" width=64>](https://github.com/Maxim-Mazurok)
 [<img alt="Contributor TomAFrench" src="https://avatars.githubusercontent.com/u/15848336?v=4&size=128" width=64>](https://github.com/TomAFrench)
 [<img alt="Contributor treemmett" src="https://avatars.githubusercontent.com/u/10267629?v=4&size=128" width=64>](https://github.com/treemmett)
+[<img alt="Contributor VictorRos" src="https://avatars.githubusercontent.com/u/6940422?v=4&size=128" width=64>](https://github.com/VictorRos)
 [<img alt="Contributor asportnoy" src="https://avatars.githubusercontent.com/u/14863373?v=4&size=128" width=64>](https://github.com/asportnoy)
 [<img alt="Contributor bentolor" src="https://avatars.githubusercontent.com/u/588260?v=4&size=128" width=64>](https://github.com/bentolor)
 [<img alt="Contributor brmonaghan" src="https://avatars.githubusercontent.com/u/71337477?v=4&size=128" width=64>](https://github.com/brmonaghan)
 [<img alt="Contributor datafoo" src="https://avatars.githubusercontent.com/u/34766150?v=4&size=128" width=64>](https://github.com/datafoo)
 [<img alt="Contributor djmattyg007" src="https://avatars.githubusercontent.com/u/489338?v=4&size=128" width=64>](https://github.com/djmattyg007)
 [<img alt="Contributor dwenegar" src="https://avatars.githubusercontent.com/u/473494?v=4&size=128" width=64>](https://github.com/dwenegar)
-[<img alt="Contributor holtskinner" src="https://avatars.githubusercontent.com/u/13262395?v=4&size=128" width=64>](https://github.com/holtskinner)
 [<img alt="Contributor inwardmovement" src="https://avatars.githubusercontent.com/u/9438102?v=4&size=128" width=64>](https://github.com/inwardmovement)
+[<img alt="Contributor jcfranco" src="https://avatars.githubusercontent.com/u/197440?v=4&size=128" width=64>](https://github.com/jcfranco)
 [<img alt="Contributor jsoref" src="https://avatars.githubusercontent.com/u/2119212?v=4&size=128" width=64>](https://github.com/jsoref)
 [<img alt="Contributor Kissaki" src="https://avatars.githubusercontent.com/u/93181?v=4&size=128" width=64>](https://github.com/Kissaki)
 [<img alt="Contributor liby" src="https://avatars.githubusercontent.com/u/38807139?v=4&size=128" width=64>](https://github.com/liby)
@@ -350,13 +510,12 @@ Special thanks to all of our amazing contributors!
 [<img alt="Contributor tvardero" src="https://avatars.githubusercontent.com/u/45442278?v=4&size=128" width=64>](https://github.com/tvardero)
 [<img alt="Contributor ChocolateLoverRaj" src="https://avatars.githubusercontent.com/u/52586855?v=4&size=128" width=64>](https://github.com/ChocolateLoverRaj)
 [<img alt="Contributor KB-perByte" src="https://avatars.githubusercontent.com/u/19584197?v=4&size=128" width=64>](https://github.com/KB-perByte)
-[<img alt="Contributor mhf-ir" src="https://avatars.githubusercontent.com/u/1172526?v=4&size=128" width=64>](https://github.com/mhf-ir)
-[<img alt="Contributor nlbuescher" src="https://avatars.githubusercontent.com/u/2711898?v=4&size=128" width=64>](https://github.com/nlbuescher)
+[<img alt="Contributor nomadsherpa" src="https://avatars.githubusercontent.com/u/1914993?v=4&size=128" width=64>](https://github.com/nomadsherpa)
 [<img alt="Contributor pbrit" src="https://avatars.githubusercontent.com/u/554135?v=4&size=128" width=64>](https://github.com/pbrit)
 [<img alt="Contributor peteraritchie" src="https://avatars.githubusercontent.com/u/408620?v=4&size=128" width=64>](https://github.com/peteraritchie)
 [<img alt="Contributor Peterdedecker" src="https://avatars.githubusercontent.com/u/2641214?v=4&size=128" width=64>](https://github.com/Peterdedecker)
-[<img alt="Contributor plasticrake" src="https://avatars.githubusercontent.com/u/1383980?v=4&size=128" width=64>](https://github.com/plasticrake)
 [<img alt="Contributor rasa" src="https://avatars.githubusercontent.com/u/220772?v=4&size=128" width=64>](https://github.com/rasa)
+[<img alt="Contributor Real-Gecko" src="https://avatars.githubusercontent.com/u/2231969?v=4&size=128" width=64>](https://github.com/Real-Gecko)
 [<img alt="Contributor revelt" src="https://avatars.githubusercontent.com/u/8344688?v=4&size=128" width=64>](https://github.com/revelt)
 [<img alt="Contributor Rollcloud" src="https://avatars.githubusercontent.com/u/8591026?v=4&size=128" width=64>](https://github.com/Rollcloud)
 [<img alt="Contributor RotationMatrix" src="https://avatars.githubusercontent.com/u/52428419?v=4&size=128" width=64>](https://github.com/RotationMatrix)
@@ -364,15 +523,8 @@ Special thanks to all of our amazing contributors!
 [<img alt="Contributor shanefontaine" src="https://avatars.githubusercontent.com/u/9441295?v=4&size=128" width=64>](https://github.com/shanefontaine)
 [<img alt="Contributor smaraf" src="https://avatars.githubusercontent.com/u/1213709?v=4&size=128" width=64>](https://github.com/smaraf)
 [<img alt="Contributor snyk-bot" src="https://avatars.githubusercontent.com/u/19733683?v=4&size=128" width=64>](https://github.com/snyk-bot)
-[<img alt="Contributor thakyZ" src="https://avatars.githubusercontent.com/u/950594?v=4&size=128" width=64>](https://github.com/thakyZ)
 [<img alt="Contributor thegraffix" src="https://avatars.githubusercontent.com/u/57874058?v=4&size=128" width=64>](https://github.com/thegraffix)
-[<img alt="Contributor thenamankumar" src="https://avatars.githubusercontent.com/u/22571395?v=4&size=128" width=64>](https://github.com/thenamankumar)
-[<img alt="Contributor zilayo" src="https://avatars.githubusercontent.com/u/84344709?v=4&size=128" width=64>](https://github.com/zilayo)
-[<img alt="Contributor azat-io" src="https://avatars.githubusercontent.com/u/5698350?v=4&size=128" width=64>](https://github.com/azat-io)
-[<img alt="Contributor badouralix" src="https://avatars.githubusercontent.com/u/19719047?v=4&size=128" width=64>](https://github.com/badouralix)
-[<img alt="Contributor Billzabob" src="https://avatars.githubusercontent.com/u/3711832?v=4&size=128" width=64>](https://github.com/Billzabob)
-[<img alt="Contributor BoltonBailey" src="https://avatars.githubusercontent.com/u/8030599?v=4&size=128" width=64>](https://github.com/BoltonBailey)
-[<img alt="Contributor Boshkovski-David" src="https://avatars.githubusercontent.com/u/172494720?v=4&size=128" width=64>](https://github.com/Boshkovski-David)
+[<img alt="Contributor vineyardbovines" src="https://avatars.githubusercontent.com/u/15176096?v=4&size=128" width=64>](https://github.com/vineyardbovines)
 [<img alt="Contributor brandonching" src="https://avatars.githubusercontent.com/u/68457375?v=4&size=128" width=64>](https://github.com/brandonching)
 [<img alt="Contributor carlocorradini" src="https://avatars.githubusercontent.com/u/21266147?v=4&size=128" width=64>](https://github.com/carlocorradini)
 [<img alt="Contributor carmenbianca" src="https://avatars.githubusercontent.com/u/12065945?v=4&size=128" width=64>](https://github.com/carmenbianca)
@@ -382,22 +534,24 @@ Special thanks to all of our amazing contributors!
 [<img alt="Contributor dalindev" src="https://avatars.githubusercontent.com/u/6508763?v=4&size=128" width=64>](https://github.com/dalindev)
 [<img alt="Contributor davidmh" src="https://avatars.githubusercontent.com/u/594302?v=4&size=128" width=64>](https://github.com/davidmh)
 [<img alt="Contributor DCsunset" src="https://avatars.githubusercontent.com/u/23468812?v=4&size=128" width=64>](https://github.com/DCsunset)
+[<img alt="Contributor dimitropoulos" src="https://avatars.githubusercontent.com/u/15232461?v=4&size=128" width=64>](https://github.com/dimitropoulos)
 [<img alt="Contributor Fydon" src="https://avatars.githubusercontent.com/u/3404761?v=4&size=128" width=64>](https://github.com/Fydon)
 [<img alt="Contributor izzqz" src="https://avatars.githubusercontent.com/u/35831725?v=4&size=128" width=64>](https://github.com/izzqz)
 [<img alt="Contributor koooge" src="https://avatars.githubusercontent.com/u/7419215?v=4&size=128" width=64>](https://github.com/koooge)
 [<img alt="Contributor koviubi56" src="https://avatars.githubusercontent.com/u/58398849?v=4&size=128" width=64>](https://github.com/koviubi56)
 [<img alt="Contributor krzysiekwie" src="https://avatars.githubusercontent.com/u/54991735?v=4&size=128" width=64>](https://github.com/krzysiekwie)
 [<img alt="Contributor lnasc256" src="https://avatars.githubusercontent.com/u/29936145?v=4&size=128" width=64>](https://github.com/lnasc256)
-[<img alt="Contributor lukasfro" src="https://avatars.githubusercontent.com/u/1529698?v=4&size=128" width=64>](https://github.com/lukasfro)
-[<img alt="Contributor magnushiie" src="https://avatars.githubusercontent.com/u/734170?v=4&size=128" width=64>](https://github.com/magnushiie)
 [<img alt="Contributor Majid110" src="https://avatars.githubusercontent.com/u/22748381?v=4&size=128" width=64>](https://github.com/Majid110)
 [<img alt="Contributor markgaze" src="https://avatars.githubusercontent.com/u/16718355?v=4&size=128" width=64>](https://github.com/markgaze)
 [<img alt="Contributor martinlindhe" src="https://avatars.githubusercontent.com/u/181531?v=4&size=128" width=64>](https://github.com/martinlindhe)
 [<img alt="Contributor matter123" src="https://avatars.githubusercontent.com/u/714007?v=4&size=128" width=64>](https://github.com/matter123)
 [<img alt="Contributor MBehtemam" src="https://avatars.githubusercontent.com/u/1811124?v=4&size=128" width=64>](https://github.com/MBehtemam)
 [<img alt="Contributor mhasanmeet" src="https://avatars.githubusercontent.com/u/24842666?v=4&size=128" width=64>](https://github.com/mhasanmeet)
+[<img alt="Contributor mhf-ir" src="https://avatars.githubusercontent.com/u/1172526?v=4&size=128" width=64>](https://github.com/mhf-ir)
 [<img alt="Contributor msftenhanceprovenance" src="https://avatars.githubusercontent.com/u/85908596?v=4&size=128" width=64>](https://github.com/msftenhanceprovenance)
+[<img alt="Contributor nlbuescher" src="https://avatars.githubusercontent.com/u/2711898?v=4&size=128" width=64>](https://github.com/nlbuescher)
 [<img alt="Contributor pepelsbey" src="https://avatars.githubusercontent.com/u/105274?v=4&size=128" width=64>](https://github.com/pepelsbey)
+[<img alt="Contributor plasticrake" src="https://avatars.githubusercontent.com/u/1383980?v=4&size=128" width=64>](https://github.com/plasticrake)
 [<img alt="Contributor purplekeyboard" src="https://avatars.githubusercontent.com/u/88773786?v=4&size=128" width=64>](https://github.com/purplekeyboard)
 [<img alt="Contributor rabchev" src="https://avatars.githubusercontent.com/u/1876061?v=4&size=128" width=64>](https://github.com/rabchev)
 [<img alt="Contributor roydukkey" src="https://avatars.githubusercontent.com/u/1509616?v=4&size=128" width=64>](https://github.com/roydukkey)
@@ -406,6 +560,8 @@ Special thanks to all of our amazing contributors!
 [<img alt="Contributor sheldonhull" src="https://avatars.githubusercontent.com/u/3526320?v=4&size=128" width=64>](https://github.com/sheldonhull)
 [<img alt="Contributor spiftire" src="https://avatars.githubusercontent.com/u/44159536?v=4&size=128" width=64>](https://github.com/spiftire)
 [<img alt="Contributor ssr-yuki" src="https://avatars.githubusercontent.com/u/15957608?v=4&size=128" width=64>](https://github.com/ssr-yuki)
+[<img alt="Contributor thakyZ" src="https://avatars.githubusercontent.com/u/950594?v=4&size=128" width=64>](https://github.com/thakyZ)
+[<img alt="Contributor thenamankumar" src="https://avatars.githubusercontent.com/u/22571395?v=4&size=128" width=64>](https://github.com/thenamankumar)
 [<img alt="Contributor theogf" src="https://avatars.githubusercontent.com/u/11480067?v=4&size=128" width=64>](https://github.com/theogf)
 [<img alt="Contributor ThomasMConnors" src="https://avatars.githubusercontent.com/u/16136459?v=4&size=128" width=64>](https://github.com/ThomasMConnors)
 [<img alt="Contributor ThomasNieto" src="https://avatars.githubusercontent.com/u/38873752?v=4&size=128" width=64>](https://github.com/ThomasNieto)
@@ -418,6 +574,7 @@ Special thanks to all of our amazing contributors!
 [<img alt="Contributor Yizack" src="https://avatars.githubusercontent.com/u/16264115?v=4&size=128" width=64>](https://github.com/Yizack)
 [<img alt="Contributor zdposter" src="https://avatars.githubusercontent.com/u/76629990?v=4&size=128" width=64>](https://github.com/zdposter)
 [<img alt="Contributor zhenzhenChange" src="https://avatars.githubusercontent.com/u/51586637?v=4&size=128" width=64>](https://github.com/zhenzhenChange)
+[<img alt="Contributor zilayo" src="https://avatars.githubusercontent.com/u/84344709?v=4&size=128" width=64>](https://github.com/zilayo)
 [<img alt="Contributor adam-zielonka" src="https://avatars.githubusercontent.com/u/31104775?v=4&size=128" width=64>](https://github.com/adam-zielonka)
 [<img alt="Contributor ADTC" src="https://avatars.githubusercontent.com/u/6047296?v=4&size=128" width=64>](https://github.com/ADTC)
 [<img alt="Contributor afifvdin" src="https://avatars.githubusercontent.com/u/94339143?v=4&size=128" width=64>](https://github.com/afifvdin)
@@ -428,8 +585,12 @@ Special thanks to all of our amazing contributors!
 [<img alt="Contributor arledesma" src="https://avatars.githubusercontent.com/u/4999353?v=4&size=128" width=64>](https://github.com/arledesma)
 [<img alt="Contributor asktree" src="https://avatars.githubusercontent.com/u/12001874?v=4&size=128" width=64>](https://github.com/asktree)
 [<img alt="Contributor ava57r" src="https://avatars.githubusercontent.com/u/20382553?v=4&size=128" width=64>](https://github.com/ava57r)
+[<img alt="Contributor azat-io" src="https://avatars.githubusercontent.com/u/5698350?v=4&size=128" width=64>](https://github.com/azat-io)
+[<img alt="Contributor badouralix" src="https://avatars.githubusercontent.com/u/19719047?v=4&size=128" width=64>](https://github.com/badouralix)
+[<img alt="Contributor Billzabob" src="https://avatars.githubusercontent.com/u/3711832?v=4&size=128" width=64>](https://github.com/Billzabob)
+[<img alt="Contributor BoltonBailey" src="https://avatars.githubusercontent.com/u/8030599?v=4&size=128" width=64>](https://github.com/BoltonBailey)
+[<img alt="Contributor Boshkovski-David" src="https://avatars.githubusercontent.com/u/172494720?v=4&size=128" width=64>](https://github.com/Boshkovski-David)
 [<img alt="Contributor dcvikl" src="https://avatars.githubusercontent.com/u/65993?v=4&size=128" width=64>](https://github.com/dcvikl)
-[<img alt="Contributor dimitropoulos" src="https://avatars.githubusercontent.com/u/15232461?v=4&size=128" width=64>](https://github.com/dimitropoulos)
 [<img alt="Contributor edwardwilson" src="https://avatars.githubusercontent.com/u/871802?v=4&size=128" width=64>](https://github.com/edwardwilson)
 [<img alt="Contributor el-ethan" src="https://avatars.githubusercontent.com/u/10249884?v=4&size=128" width=64>](https://github.com/el-ethan)
 [<img alt="Contributor Eldemarkki" src="https://avatars.githubusercontent.com/u/38920928?v=4&size=128" width=64>](https://github.com/Eldemarkki)
@@ -448,6 +609,8 @@ Special thanks to all of our amazing contributors!
 [<img alt="Contributor kseino" src="https://avatars.githubusercontent.com/u/1378066?v=4&size=128" width=64>](https://github.com/kseino)
 [<img alt="Contributor lauraBaakman" src="https://avatars.githubusercontent.com/u/4301624?v=4&size=128" width=64>](https://github.com/lauraBaakman)
 [<img alt="Contributor lee0c" src="https://avatars.githubusercontent.com/u/13122293?v=4&size=128" width=64>](https://github.com/lee0c)
+[<img alt="Contributor lukasfro" src="https://avatars.githubusercontent.com/u/1529698?v=4&size=128" width=64>](https://github.com/lukasfro)
+[<img alt="Contributor magnushiie" src="https://avatars.githubusercontent.com/u/734170?v=4&size=128" width=64>](https://github.com/magnushiie)
 [<img alt="Contributor ndthanhdev" src="https://avatars.githubusercontent.com/u/16331812?v=4&size=128" width=64>](https://github.com/ndthanhdev)
 [<img alt="Contributor NutCr4cker12" src="https://avatars.githubusercontent.com/u/44898642?v=4&size=128" width=64>](https://github.com/NutCr4cker12)
 [<img alt="Contributor Poikilos" src="https://avatars.githubusercontent.com/u/7557867?v=4&size=128" width=64>](https://github.com/Poikilos)
@@ -488,6 +651,7 @@ Run `pnpm` to make sure everything is installed.
 
 ```sh
 pnpm i
+pnpm run setup
 ```
 
 Run `create-dictionary` to start the Yeoman script.
@@ -573,7 +737,7 @@ It has the following pattern: `cspell link add @cspell/dict-<name>`.
 To unlink: `cspell link remove @cspell/dict-<name>`
 
 <!--
-  cspell:ignore medicalterms Réforme
+  cspell:ignore medicalterms Réforme bashscript tfvars
 -->
 
 <!--- @@inject: static/footer.md --->

@@ -1,6 +1,6 @@
 {
   "name": "@cspell/dict-google",
-  "version": "1.0.4",
+  "version": "1.0.6",
   "description": "Google Cloud Development dictionary for cspell.",
   "publishConfig": {
     "access": "public",
@@ -13,7 +13,7 @@
   },
   "scripts": {
     "build": "cross-env NODE_OPTIONS=--max_old_space_size=8192 cspell-tools-cli build",
-    "test": "head -n 1000 \"src/google.txt\" | cspell \"--locale=*\" \"--languageId=*\" stdin",
+    "test": "cspell \"--locale=*\" \"--languageId=*\" samples",
     "prepublishOnly": "echo OK",
     "prepare:dictionary": "pnpm run build"
   },

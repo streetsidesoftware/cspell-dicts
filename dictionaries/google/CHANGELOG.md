@@ -1,5 +1,25 @@
 # Change Log
 
+## [1.0.6](https://github.com/streetsidesoftware/cspell-dicts/compare/@cspell/dict-google@1.0.5...@cspell/dict-google@1.0.6) (2025-01-18)
+
+
+### Updates and Bug Fixes
+
+* Add additional terms to spelling lists from `GoogleCloudPlatform/generative-ai` ([#4013](https://github.com/streetsidesoftware/cspell-dicts/issues/4013)) ([ed34213](https://github.com/streetsidesoftware/cspell-dicts/commit/ed342139c37a50c7fd35ea6b15e54947076686c7))
+* Workflow Bot -- Build Dictionaries ([#4016](https://github.com/streetsidesoftware/cspell-dicts/issues/4016)) ([ced2e71](https://github.com/streetsidesoftware/cspell-dicts/commit/ced2e7193013a4011555a690171431d4cab6734f))
+
+
+### Tests
+
+* Improve google dict test ([#4015](https://github.com/streetsidesoftware/cspell-dicts/issues/4015)) ([fbc1ccc](https://github.com/streetsidesoftware/cspell-dicts/commit/fbc1cccf607a083849aaf4234f96129eba75730b))
+
+## [1.0.5](https://github.com/streetsidesoftware/cspell-dicts/compare/@cspell/dict-google@1.0.4...@cspell/dict-google@1.0.5) (2024-12-30)
+
+
+### Updates and Bug Fixes
+
+* Adjust dictionary names ([#3958](https://github.com/streetsidesoftware/cspell-dicts/issues/3958)) ([8a96533](https://github.com/streetsidesoftware/cspell-dicts/commit/8a96533bec21280103740868b81559437c413501))
+
 ## [1.0.4](https://github.com/streetsidesoftware/cspell-dicts/compare/@cspell/dict-google@1.0.3...@cspell/dict-google@1.0.4) (2024-10-11)
 
 

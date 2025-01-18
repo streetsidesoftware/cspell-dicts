@@ -200,6 +200,10 @@ OOo Issue 63541 — remove *dessicated
 2024-04-02:
            — Improved flag “S”, increasing the wordlist in 13 valid words.
 
+2024-12-17:
+           - “REP si ci” and merged/sorted REP GB/ZA (Shantanu Oak): https://bugs.documentfoundation.org/show_bug.cgi?id=152554 .
+           - Copied the ICONV and OCONV from ZA.
+
 -------
 
 MARCO A.G.PINTO:

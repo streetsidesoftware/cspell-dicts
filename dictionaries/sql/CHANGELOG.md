@@ -3,6 +3,20 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+## [2.2.0](https://github.com/streetsidesoftware/cspell-dicts/compare/@cspell/dict-sql@2.1.9...@cspell/dict-sql@2.2.0) (2025-01-08)
+
+
+### Features
+
+* remove `enableFiletypes` ([#3996](https://github.com/streetsidesoftware/cspell-dicts/issues/3996)) ([6011700](https://github.com/streetsidesoftware/cspell-dicts/commit/6011700cc2d90edd2048f293fe2235b6212a805a))
+
+## [2.1.9](https://github.com/streetsidesoftware/cspell-dicts/compare/@cspell/dict-sql@2.1.8...@cspell/dict-sql@2.1.9) (2024-12-30)
+
+
+### Updates and Bug Fixes
+
+* Adjust dictionary names ([#3958](https://github.com/streetsidesoftware/cspell-dicts/issues/3958)) ([8a96533](https://github.com/streetsidesoftware/cspell-dicts/commit/8a96533bec21280103740868b81559437c413501))
+
 ## [2.1.8](https://github.com/streetsidesoftware/cspell-dicts/compare/@cspell/dict-sql@2.1.7...@cspell/dict-sql@2.1.8) (2024-10-11)
 
 

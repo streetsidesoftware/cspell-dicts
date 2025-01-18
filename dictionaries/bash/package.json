@@ -1,6 +1,6 @@
 {
   "name": "@cspell/dict-bash",
-  "version": "4.1.8",
+  "version": "4.2.0",
   "description": "Bash dictionary for cspell.",
   "publishConfig": {
     "access": "public",
@@ -12,8 +12,8 @@
     "./cspell-ext.json": "./cspell-ext.json"
   },
   "scripts": {
-    "build": "cspell-tools-cli build",
-    "test": "shx head -n 100 src/bash-words.txt | cspell -c ./cspell-ext.json \"--locale=*\" \"--languageId=shellscript\" stdin",
+    "build": "echo ok",
+    "test": "shx cat samples/bash-words.txt | cspell -c ./cspell-ext.json \"--locale=*\" \"--languageId=shellscript\" stdin",
     "prepublishOnly": "echo pre-publish",
     "prepare:dictionary": "pnpm run build"
   },
@@ -38,5 +38,8 @@
   "files": [
     "dict/*",
     "cspell-ext.json"
-  ]
+  ],
+  "dependencies": {
+    "@cspell/dict-shell": "workspace:*"
+  }
 }
