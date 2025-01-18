@@ -5,6 +5,8 @@ targets:
     sources:
       - filename: 'src/google.txt'
         split: true
+      - filename: 'src/misc.txt'
+        split: true
     format: 'plaintext'
     targetDirectory: './dict'
     generateNonStrict: false
