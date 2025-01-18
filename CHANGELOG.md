@@ -1,5 +1,18 @@
 # Release Notes
 
+## [28.8.2](https://github.com/streetsidesoftware/cspell-dicts/compare/cspell-dicts@28.8.1...cspell-dicts@28.8.2) (2025-01-18)
+
+
+### Updates and Bug Fixes
+
+* Add additional terms to spelling lists from `GoogleCloudPlatform/generative-ai` ([#4013](https://github.com/streetsidesoftware/cspell-dicts/issues/4013)) ([ed34213](https://github.com/streetsidesoftware/cspell-dicts/commit/ed342139c37a50c7fd35ea6b15e54947076686c7))
+* Workflow Bot -- Build Dictionaries ([#4016](https://github.com/streetsidesoftware/cspell-dicts/issues/4016)) ([ced2e71](https://github.com/streetsidesoftware/cspell-dicts/commit/ced2e7193013a4011555a690171431d4cab6734f))
+
+
+### Tests
+
+* Improve google dict test ([#4015](https://github.com/streetsidesoftware/cspell-dicts/issues/4015)) ([fbc1ccc](https://github.com/streetsidesoftware/cspell-dicts/commit/fbc1cccf607a083849aaf4234f96129eba75730b))
+
 ## [28.8.1](https://github.com/streetsidesoftware/cspell-dicts/compare/cspell-dicts@28.8.0...cspell-dicts@28.8.1) (2025-01-15)
 
 

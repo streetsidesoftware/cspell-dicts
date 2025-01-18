@@ -1,5 +1,13 @@
 # Change Log
 
+## [1.1.8](https://github.com/streetsidesoftware/cspell-dicts/compare/@cspell/dict-people-names@1.1.7...@cspell/dict-people-names@1.1.8) (2025-01-18)
+
+
+### Updates and Bug Fixes
+
+* Add additional terms to spelling lists from `GoogleCloudPlatform/generative-ai` ([#4013](https://github.com/streetsidesoftware/cspell-dicts/issues/4013)) ([ed34213](https://github.com/streetsidesoftware/cspell-dicts/commit/ed342139c37a50c7fd35ea6b15e54947076686c7))
+* Workflow Bot -- Build Dictionaries ([#4016](https://github.com/streetsidesoftware/cspell-dicts/issues/4016)) ([ced2e71](https://github.com/streetsidesoftware/cspell-dicts/commit/ced2e7193013a4011555a690171431d4cab6734f))
+
 ## [1.1.7](https://github.com/streetsidesoftware/cspell-dicts/compare/@cspell/dict-people-names@1.1.6...@cspell/dict-people-names@1.1.7) (2025-01-15)
 
 
