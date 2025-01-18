@@ -3,6 +3,20 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+## [4.3.30](https://github.com/streetsidesoftware/cspell-dicts/compare/@cspell/dict-en_us@4.3.29...@cspell/dict-en_us@4.3.30) (2025-01-18)
+
+
+### Updates and Bug Fixes
+
+* Workflow Bot -- Build Dictionaries ([#4019](https://github.com/streetsidesoftware/cspell-dicts/issues/4019)) ([b116fdc](https://github.com/streetsidesoftware/cspell-dicts/commit/b116fdcfa5f4e31f652891fd240058d5755e1950))
+
+
+### Dependencies
+
+* The following workspace dependencies were updated
+  * devDependencies
+    * @cspell/dict-en-shared bumped to 1.0.20
+
 ## [4.3.29](https://github.com/streetsidesoftware/cspell-dicts/compare/@cspell/dict-en_us@4.3.28...@cspell/dict-en_us@4.3.29) (2025-01-03)
 
 

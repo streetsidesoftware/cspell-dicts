@@ -1,5 +1,15 @@
 # Release Notes
 
+## [28.8.3](https://github.com/streetsidesoftware/cspell-dicts/compare/cspell-dicts@28.8.2...cspell-dicts@28.8.3) (2025-01-18)
+
+
+### Updates and Bug Fixes
+
+* Add TensorBoard to google dict ([#4020](https://github.com/streetsidesoftware/cspell-dicts/issues/4020)) ([c151fe0](https://github.com/streetsidesoftware/cspell-dicts/commit/c151fe0e9af68396eeaad4ea6eead3f807298e51))
+* Add words from my project ([#3846](https://github.com/streetsidesoftware/cspell-dicts/issues/3846)) ([97282e6](https://github.com/streetsidesoftware/cspell-dicts/commit/97282e6f3e0022e5f527acbb5746a47dbb37d822))
+* Workflow Bot -- Build Dictionaries ([#4019](https://github.com/streetsidesoftware/cspell-dicts/issues/4019)) ([b116fdc](https://github.com/streetsidesoftware/cspell-dicts/commit/b116fdcfa5f4e31f652891fd240058d5755e1950))
+* Workflow Bot -- Build Dictionaries ([#4021](https://github.com/streetsidesoftware/cspell-dicts/issues/4021)) ([f4345e6](https://github.com/streetsidesoftware/cspell-dicts/commit/f4345e63ffc2fbe025eaf74d1d5a78d9b481b643))
+
 ## [28.8.2](https://github.com/streetsidesoftware/cspell-dicts/compare/cspell-dicts@28.8.1...cspell-dicts@28.8.2) (2025-01-18)
 
 
