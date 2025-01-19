@@ -1,6 +1,6 @@
 # CSpell Google Dictionary
 
-Google Cloud Development Dictionary for cspell.
+Google Cloud Development Dictionary for CSpell. It contains common terms found while working with Google products, services, and APIs.
 
 This is a pre-built dictionary for use with CSpell.
 
