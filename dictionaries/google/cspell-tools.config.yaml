@@ -7,6 +7,7 @@ targets:
         split: true
       - filename: 'src/misc.txt'
         split: true
+      - src/legacy.txt
     format: 'plaintext'
     targetDirectory: './dict'
     generateNonStrict: false

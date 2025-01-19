@@ -7,8 +7,10 @@
     "dictionaries": [
         "google"
     ],
+    "maxNumberOfProblems": 10000,
     "overrides": [{ "filename": "samples/**", "dictionaries": ["google"], "minWordLength": 3 }],
     "import": [
         "./cspell-ext.json"
-    ]
+    ],
+    "words": ["titlecase"]
 }
