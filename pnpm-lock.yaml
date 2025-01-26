@@ -42,8 +42,8 @@ importers:
         specifier: ^8.17.2
         version: 8.17.2
       eslint:
-        specifier: ^9.18.0
-        version: 9.18.0
+        specifier: ^9.19.0
+        version: 9.19.0
       generator-cspell-dicts:
         specifier: workspace:^
         version: link:generator-cspell-dicts
@@ -973,8 +973,8 @@ packages:
     resolution: {integrity: sha512-grOjVNN8P3hjJn/eIETF1wwd12DdnwFDoyceUJLYYdkpbwq3nLi+4fqrTAONx7XDALqlL220wC/RHSC/QTI/0w==}
     engines: {node: ^18.18.0 || ^20.9.0 || >=21.1.0}
 
-  '@eslint/js@9.18.0':
-    resolution: {integrity: sha512-fK6L7rxcq6/z+AaQMtiFTkvbHkBLNlwyRxHpKawP0x3u9+NC6MQTnFW+AdpwC6gfHTW0051cokQgtTN2FqlxQA==}
+  '@eslint/js@9.19.0':
+    resolution: {integrity: sha512-rbq9/g38qjfqFLOVPvwjIvFFdNziEC5S65jmjPw5r6A//QH+W91akh9irMwjDN8zKUTak6W9EsAv4m/7Wnw0UQ==}
     engines: {node: ^18.18.0 || ^20.9.0 || >=21.1.0}
 
   '@eslint/object-schema@2.1.5':
@@ -1115,8 +1115,8 @@ packages:
     resolution: {integrity: sha512-8GsivndWmYsJRU/bAFGRPLVCwo2uVCFDT3zBelNkZM6YGwFXwuGC4anm94JO7IfCxqddY57L8W7CYSdfbezfjQ==}
     engines: {node: ^18.0.0 || >=20.0.0}
 
-  '@mapbox/node-pre-gyp@2.0.0-rc.0':
-    resolution: {integrity: sha512-nhSMNprz3WmeRvd8iUs5JqkKr0Ncx46JtPxM3AhXes84XpSJfmIwKeWXRpsr53S7kqPkQfPhzrMFUxSNb23qSA==}
+  '@mapbox/node-pre-gyp@2.0.0':
+    resolution: {integrity: sha512-llMXd39jtP0HpQLVI37Bf1m2ADlEb35GYSh1SDSLsBhR+5iCxiNGlT31yqbNtVHygHAtMy6dWFERpU2JgufhPg==}
     engines: {node: '>=18'}
     hasBin: true
 
@@ -2229,8 +2229,8 @@ packages:
     resolution: {integrity: sha512-UyLnSehNt62FFhSwjZlHmeokpRK59rcz29j+F1/aDgbkbRTk7wIc9XzdoasMUbRNKDM0qQt/+BJ4BrpFeABemw==}
     engines: {node: ^18.18.0 || ^20.9.0 || >=21.1.0}
 
-  eslint@9.18.0:
-    resolution: {integrity: sha512-+waTfRWQlSbpt3KWE+CjrPPYnbq9kfZIYUqapc0uBXyjTp8aYXZDsUH16m39Ryq3NjAVP4tjuF7KaukeqoCoaA==}
+  eslint@9.19.0:
+    resolution: {integrity: sha512-ug92j0LepKlbbEv6hD911THhoRHmbdXt2gX+VDABAW/Ir7D3nqKdv5Pf5vtlyY6HQMTEP2skXY43ueqTCWssEA==}
     engines: {node: ^18.18.0 || ^20.9.0 || >=21.1.0}
     hasBin: true
     peerDependencies:
@@ -4639,9 +4639,9 @@ snapshots:
 
   '@cspell/url@8.17.2': {}
 
-  '@eslint-community/eslint-utils@4.4.1(eslint@9.18.0)':
+  '@eslint-community/eslint-utils@4.4.1(eslint@9.19.0)':
     dependencies:
-      eslint: 9.18.0
+      eslint: 9.19.0
       eslint-visitor-keys: 3.4.3
 
   '@eslint-community/regexpp@4.12.1': {}
@@ -4672,7 +4672,7 @@ snapshots:
     transitivePeerDependencies:
       - supports-color
 
-  '@eslint/js@9.18.0': {}
+  '@eslint/js@9.19.0': {}
 
   '@eslint/object-schema@2.1.5': {}
 
@@ -4986,7 +4986,7 @@ snapshots:
       - supports-color
       - typescript
 
-  '@mapbox/node-pre-gyp@2.0.0-rc.0(encoding@0.1.13)':
+  '@mapbox/node-pre-gyp@2.0.0(encoding@0.1.13)':
     dependencies:
       consola: 3.4.0
       detect-libc: 2.0.3
@@ -5426,7 +5426,7 @@ snapshots:
 
   '@vercel/nft@0.27.10(encoding@0.1.13)':
     dependencies:
-      '@mapbox/node-pre-gyp': 2.0.0-rc.0(encoding@0.1.13)
+      '@mapbox/node-pre-gyp': 2.0.0(encoding@0.1.13)
       '@rollup/pluginutils': 5.1.4
       acorn: 8.14.0
       acorn-import-attributes: 1.9.5(acorn@8.14.0)
@@ -6223,14 +6223,14 @@ snapshots:
 
   eslint-visitor-keys@4.2.0: {}
 
-  eslint@9.18.0:
+  eslint@9.19.0:
     dependencies:
-      '@eslint-community/eslint-utils': 4.4.1(eslint@9.18.0)
+      '@eslint-community/eslint-utils': 4.4.1(eslint@9.19.0)
       '@eslint-community/regexpp': 4.12.1
       '@eslint/config-array': 0.19.1
       '@eslint/core': 0.10.0
       '@eslint/eslintrc': 3.2.0
-      '@eslint/js': 9.18.0
+      '@eslint/js': 9.19.0
       '@eslint/plugin-kit': 0.2.5
       '@humanfs/node': 0.16.6
       '@humanwhocodes/module-importer': 1.0.1
