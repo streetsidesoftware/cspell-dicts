@@ -7,6 +7,7 @@
 
 * Add back legacy terms to the google dictionary ([#4023](https://github.com/streetsidesoftware/cspell-dicts/issues/4023)) ([fdec8a4](https://github.com/streetsidesoftware/cspell-dicts/commit/fdec8a43d8b8ad1106da25bd7863d46cefc59074))
 * Workflow Bot -- Build Dictionaries ([#4024](https://github.com/streetsidesoftware/cspell-dicts/issues/4024)) ([e8327c0](https://github.com/streetsidesoftware/cspell-dicts/commit/e8327c07f632a05e32afb99d055ad460420aac39))
+* Workflow Bot -- Build Dictionaries ([#4033](https://github.com/streetsidesoftware/cspell-dicts/issues/4033)) ([4e19a7a](https://github.com/streetsidesoftware/cspell-dicts/commit/4e19a7a8117a999639f41948502cffb1d1b2df2d))
 * Workflow Bot -- Update Dictionaries ([#4032](https://github.com/streetsidesoftware/cspell-dicts/issues/4032)) ([70d7935](https://github.com/streetsidesoftware/cspell-dicts/commit/70d793554543519965bd776fc74b29f44854b9b3))
 
 ## [28.8.3](https://github.com/streetsidesoftware/cspell-dicts/compare/cspell-dicts@28.8.2...cspell-dicts@28.8.3) (2025-01-18)
