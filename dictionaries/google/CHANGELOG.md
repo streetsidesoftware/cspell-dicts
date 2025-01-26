@@ -1,5 +1,13 @@
 # Change Log
 
+## [1.0.8](https://github.com/streetsidesoftware/cspell-dicts/compare/@cspell/dict-google@1.0.7...@cspell/dict-google@1.0.8) (2025-01-26)
+
+
+### Updates and Bug Fixes
+
+* Add back legacy terms to the google dictionary ([#4023](https://github.com/streetsidesoftware/cspell-dicts/issues/4023)) ([fdec8a4](https://github.com/streetsidesoftware/cspell-dicts/commit/fdec8a43d8b8ad1106da25bd7863d46cefc59074))
+* Workflow Bot -- Build Dictionaries ([#4024](https://github.com/streetsidesoftware/cspell-dicts/issues/4024)) ([e8327c0](https://github.com/streetsidesoftware/cspell-dicts/commit/e8327c07f632a05e32afb99d055ad460420aac39))
+
 ## [1.0.7](https://github.com/streetsidesoftware/cspell-dicts/compare/@cspell/dict-google@1.0.6...@cspell/dict-google@1.0.7) (2025-01-18)
 
 
