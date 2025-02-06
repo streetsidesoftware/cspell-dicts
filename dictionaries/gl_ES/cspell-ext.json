@@ -1,0 +1,26 @@
+{
+    "id": "gl-es",
+    "version": "0.2",
+    "readonly": true,
+    "name": "Galician Dictionary (Galicia)",
+    "description": "Galician Dictionary (Galicia)",
+    "dictionaryDefinitions": [
+        {
+            "name": "gl-es",
+            "path": "./dict/gl_ES.trie",
+            "description": "Galician Dictionary (Galicia)"
+        }
+    ],
+    "dictionaries": [],
+    "languageSettings": [
+        {
+            "languageId": "*",
+            "locale": "gl,gl_ES",
+            "includeRegExpList": [],
+            "ignoreRegExpList": [],
+            "patterns": [],
+            "dictionaries": ["gl-es"],
+            "dictionaryDefinitions": []
+        }
+    ]
+}

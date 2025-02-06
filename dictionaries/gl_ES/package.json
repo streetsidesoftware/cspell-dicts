@@ -1,0 +1,48 @@
+{
+  "name": "@cspell/dict-gl-es",
+  "version": "1.0.0",
+  "description": "Galician Dictionary (Galicia) -- Private until verified",
+  "private": true,
+  "publishConfig": {
+    "access": "public",
+    "provenance": true
+  },
+  "exports": {
+    ".": "./cspell-ext.json",
+    "./cspell": "./cspell-ext.json",
+    "./cspell-ext.json": "./cspell-ext.json"
+  },
+  "scripts": {
+    "build": "cross-env NODE_OPTIONS=--max_old_space_size=8192 cspell-tools-cli build",
+    "test": "cspell -c ./cspell-ext.json \"--locale=gl\" \"--languageId=*\" \"samples/**\"",
+    "prepublishOnly": "echo OK",
+    "prepare:dictionary": "pnpm run build"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/streetsidesoftware/cspell-dicts"
+  },
+  "keywords": [
+    "cspell",
+    "cspell-ext",
+    "gl_ES",
+    "Galician Dictionary (Galicia)",
+    "dictionary",
+    "spelling"
+  ],
+  "author": "Street Side Software",
+  "contributors": [],
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/streetsidesoftware/cspell-dicts/issues"
+  },
+  "homepage": "https://github.com/streetsidesoftware/cspell-dicts/blob/main/dictionaries/gl_ES#readme",
+  "devDependencies": {},
+  "dependencies": {},
+  "files": [
+    "dict/gl_ES.trie",
+    "cspell-ext.json",
+    "*.js",
+    "*.d.ts"
+  ]
+}
