@@ -1,6 +1,6 @@
-# CSpell Galician Dictionary (Galicia) Dictionary
+# CSpell Galician Dictionary (Spain) Dictionary
 
-Galician Dictionary (Galicia)
+Galician Dictionary (Spain)
 
 This is a pre-built dictionary for use with CSpell.
 
