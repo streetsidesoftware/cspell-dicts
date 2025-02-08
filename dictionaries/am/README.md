@@ -37,14 +37,22 @@ The `cspell-ext.json` file in this package should be added to the import section
 }
 ```
 
-# Dictionary Development
+## Dictionary Development
 
 See: [How to Create a New Dictionary](https://github.com/streetsidesoftware/cspell-dicts#how-to-create-a-new-dictionary)
+
+## Source
+
+[martakert/hyspell: Hunspell dictionary for Armenian language](https://github.com/martakert/hyspell)
 
 ## License
 
 MIT
 
 > Some packages may have other licenses included.
+
+<!--
+cspell:words hyspell martakert
+-->
 
 <!--- @@inject: ../../static/footer.md --->
