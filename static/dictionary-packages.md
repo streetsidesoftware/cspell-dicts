@@ -4,6 +4,7 @@
 
 - [Ancient Greek](dictionaries/grc_GR) - Ancient Greek dictionary.
 - [Arabic](dictionaries/ar) - Arabic dictionary.
+- [Armenian](dictionaries/hy) - Armenian dictionary for cspell.
 - [Austrian German Dictionary](dictionaries/de_AT) - Austrian German (de-AT) Dictionary.
 - [Basque](dictionaries/eu) - Basque dictionary.
 - [Bulgarian](dictionaries/bg_BG) - Bulgarian dictionary.
@@ -198,6 +199,7 @@
 | [@cspell/dict-html](./dictionaries/html#readme)<sup>1</sup>                                     | HTML                              | html                                                                                                                                                                                      |
 | [@cspell/dict-html-symbol-entities](./dictionaries/html-symbol-entities#readme)<sup>1</sup>     | HTML Symbol Entities              | html-symbol-entities                                                                                                                                                                      |
 | [@cspell/dict-hu-hu](./dictionaries/hu_HU#readme)                                               | Hungarian                         | hu-hu                                                                                                                                                                                     |
+| [@cspell/dict-hy](./dictionaries/hy#readme)                                                     | Armenian                          | hy_am                                                                                                                                                                                     |
 | [@cspell/dict-id-id](./dictionaries/id_ID#readme)                                               | Indonesia                         | id-id                                                                                                                                                                                     |
 | [@cspell/dict-it-it](./dictionaries/it_IT#readme)                                               | Italian                           | it-it                                                                                                                                                                                     |
 | [@cspell/dict-java](./dictionaries/java#readme)<sup>1</sup>                                     | Java                              | java                                                                                                                                                                                      |
@@ -333,6 +335,7 @@
 | [`html`](dictionaries/html) <sup>1</sup>                                             | HTML dictionary.                                                    | -                             | html                                                           |
 | [`html-symbol-entities`](dictionaries/html-symbol-entities) <sup>1</sup>             | HTML Symbol Entities Dictionary                                     | -                             | html<br>markdown                                               |
 | [`hu-hu`](dictionaries/hu_HU)                                                        | Hungarian dictionary.                                               | hu<br>hu-hu                   | -                                                              |
+| [`hy_am`](dictionaries/hy)                                                           | Armenian dictionary for cspell.                                     | hy<br>hy-AM                   | -                                                              |
 | [`id-id`](dictionaries/id_ID)                                                        | Indonesia dictionary.                                               | id<br>id-ID                   | -                                                              |
 | [`it-it`](dictionaries/it_IT)                                                        | Italian dictionary.                                                 | it<br>it-IT                   | -                                                              |
 | [`java`](dictionaries/java) <sup>1</sup>                                             | Java dictionary.                                                    | -                             | java                                                           |
