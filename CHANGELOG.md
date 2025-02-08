@@ -1,5 +1,25 @@
 # Release Notes
 
+## [28.9.0](https://github.com/streetsidesoftware/cspell-dicts/compare/cspell-dicts@28.8.4...cspell-dicts@28.9.0) (2025-02-08)
+
+
+### Features
+
+* Add Armenian Library ([#4052](https://github.com/streetsidesoftware/cspell-dicts/issues/4052)) ([a6f77ba](https://github.com/streetsidesoftware/cspell-dicts/commit/a6f77baa4da10c4a45cd5d833ed6b2e0f8d21bf7))
+* Add Galician Dictionary (Spain) ([#4050](https://github.com/streetsidesoftware/cspell-dicts/issues/4050)) ([6cad211](https://github.com/streetsidesoftware/cspell-dicts/commit/6cad21129716322b5bb889db4d9f21c66930c10b))
+
+
+### Updates and Bug Fixes
+
+* add `Infisical` dicts ([#4046](https://github.com/streetsidesoftware/cspell-dicts/issues/4046)) ([efdb5c5](https://github.com/streetsidesoftware/cspell-dicts/commit/efdb5c5f029318b12e39f7946b40569a32683617))
+* **en_US:** add neglection ([#4051](https://github.com/streetsidesoftware/cspell-dicts/issues/4051)) ([6be630e](https://github.com/streetsidesoftware/cspell-dicts/commit/6be630e99f39d51db326e24b8befc124b256fe5c))
+* Workflow Bot -- Build Dictionaries ([#4048](https://github.com/streetsidesoftware/cspell-dicts/issues/4048)) ([edbca9e](https://github.com/streetsidesoftware/cspell-dicts/commit/edbca9e6445b519d4cb027518d1c47f146214ec9))
+* Workflow Bot -- Build Dictionaries ([#4053](https://github.com/streetsidesoftware/cspell-dicts/issues/4053)) ([4cfa7cf](https://github.com/streetsidesoftware/cspell-dicts/commit/4cfa7cf6cd4c346528a0778d56f8c50fb2408436))
+* Workflow Bot -- Build Dictionaries ([#4058](https://github.com/streetsidesoftware/cspell-dicts/issues/4058)) ([d682f7b](https://github.com/streetsidesoftware/cspell-dicts/commit/d682f7b14b9a7f10acb31fb782438225fa4bef14))
+* Workflow Bot -- Build Dictionaries ([#4062](https://github.com/streetsidesoftware/cspell-dicts/issues/4062)) ([a7f7461](https://github.com/streetsidesoftware/cspell-dicts/commit/a7f74615a64427e63925673ed99d1fd5aa926a3a))
+* Workflow Bot -- Build Dictionaries ([#4063](https://github.com/streetsidesoftware/cspell-dicts/issues/4063)) ([b11fa66](https://github.com/streetsidesoftware/cspell-dicts/commit/b11fa66bdbd721a39d6d01b63cad1268124a51b5))
+* Workflow Bot -- Update Dictionaries ([#4042](https://github.com/streetsidesoftware/cspell-dicts/issues/4042)) ([c13fdfc](https://github.com/streetsidesoftware/cspell-dicts/commit/c13fdfc142fc5b9d9e0f014f5aa8553f509e3b76))
+
 ## [28.8.4](https://github.com/streetsidesoftware/cspell-dicts/compare/cspell-dicts@28.8.3...cspell-dicts@28.8.4) (2025-01-26)
 
 

@@ -3,6 +3,14 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+## [4.3.31](https://github.com/streetsidesoftware/cspell-dicts/compare/@cspell/dict-en_us@4.3.30...@cspell/dict-en_us@4.3.31) (2025-02-08)
+
+
+### Updates and Bug Fixes
+
+* **en_US:** add neglection ([#4051](https://github.com/streetsidesoftware/cspell-dicts/issues/4051)) ([6be630e](https://github.com/streetsidesoftware/cspell-dicts/commit/6be630e99f39d51db326e24b8befc124b256fe5c))
+* Workflow Bot -- Build Dictionaries ([#4048](https://github.com/streetsidesoftware/cspell-dicts/issues/4048)) ([edbca9e](https://github.com/streetsidesoftware/cspell-dicts/commit/edbca9e6445b519d4cb027518d1c47f146214ec9))
+
 ## [4.3.30](https://github.com/streetsidesoftware/cspell-dicts/compare/@cspell/dict-en_us@4.3.29...@cspell/dict-en_us@4.3.30) (2025-01-18)
 
 
