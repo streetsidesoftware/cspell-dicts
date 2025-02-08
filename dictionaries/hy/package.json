@@ -1,0 +1,50 @@
+{
+  "name": "@cspell/dict-hy",
+  "version": "1.0.0",
+  "description": "Armenian dictionary for cspell.",
+  "publishConfig": {
+    "access": "public",
+    "provenance": true
+  },
+  "exports": {
+    ".": "./cspell-ext.json",
+    "./cspell": "./cspell-ext.json",
+    "./cspell-ext.json": "./cspell-ext.json"
+  },
+  "scripts": {
+    "build": "cspell-tools-cli build",
+    "conditional-build": "cspell-tools-cli build --conditional",
+    "test": "cspell samples",
+    "prepublishOnly": "echo OK",
+    "prepare:dictionary": "pnpm run build"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/streetsidesoftware/cspell-dicts"
+  },
+  "keywords": [
+    "cspell",
+    "cspell-ext",
+    "am",
+    "Armenian",
+    "dictionary",
+    "spelling"
+  ],
+  "author": "Street Side Software",
+  "contributors": [
+    "Kieran (https://github.com/Ki-er)"
+  ],
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/streetsidesoftware/cspell-dicts/issues"
+  },
+  "homepage": "https://github.com/streetsidesoftware/cspell-dicts/blob/main/dictionaries/am#readme",
+  "devDependencies": {},
+  "dependencies": {},
+  "files": [
+    "dict/hy.trie",
+    "cspell-ext.json",
+    "*.js",
+    "*.d.ts"
+  ]
+}
