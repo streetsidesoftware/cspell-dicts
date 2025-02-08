@@ -1,0 +1,12 @@
+# yaml-language-server: $schema=https://raw.githubusercontent.com/streetsidesoftware/cspell/main/packages/cspell-tools/cspell-tools.config.schema.json
+
+targets:
+  - name: gl_ES
+    sources:
+      - src/gl_ES.dic
+    format: trie3
+    targetDirectory: ./dict
+    generateNonStrict: true
+    compress: false
+    sort: true
+checksumFile: true

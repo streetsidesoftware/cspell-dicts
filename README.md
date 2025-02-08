@@ -41,6 +41,7 @@ Various [cspell](https://github.com/streetsidesoftware/cspell) dictionaries. Eac
 - [Finnish](dictionaries/fi_FI) - Finnish dictionary.
 - [Français Réforme 1990](dictionaries/fr_FR_90) - Français Réforme 1990 dictionary.
 - [French Dictionary (France)](dictionaries/fr_FR) - French Dictionary (France)
+- [Galician Dictionary (Spain)](dictionaries/gl_ES) - Galician Dictionary (Spain)
 - [German Dictionary](dictionaries/de_DE) - German (de-DE) Dictionary.
 - [Greek](dictionaries/el) - Greek dictionary.
 - [Hebrew Dictionary](dictionaries/he) - Hebrew Dictionary

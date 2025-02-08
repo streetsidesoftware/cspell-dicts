@@ -1,0 +1,58 @@
+{
+  "name": "@cspell/dict-gl-es",
+  "version": "1.0.0",
+  "description": "Galician Dictionary (Spain) for CSpell. -- Private until verified",
+  "private": true,
+  "publishConfig": {
+    "access": "public",
+    "provenance": true
+  },
+  "exports": {
+    ".": "./cspell-ext.json",
+    "./cspell": "./cspell-ext.json",
+    "./cspell-ext.json": "./cspell-ext.json"
+  },
+  "scripts": {
+    "build": "cspell-tools-cli build",
+    "build:conditional": "cspell-tools-cli build --conditional && pnpm gz",
+    "gz": "cspell-tools-cli gzip \"dict/*.trie\"",
+    "test": "cspell -c ./cspell-ext.json \"--locale=gl\" \"--languageId=*\" \"samples/**\"",
+    "prepublishOnly": "echo OK",
+    "prepare:dictionary": "pnpm run gz"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/streetsidesoftware/cspell-dicts",
+    "directory": "dictionaries/gl_ES"
+  },
+  "keywords": [
+    "cspell",
+    "cspell-ext",
+    "gl_ES",
+    "Galician Dictionary",
+    "galician",
+    "galicia",
+    "galiza",
+    "dictionary",
+    "spelling"
+  ],
+  "author": "Street Side Software",
+  "contributors": [
+    "Borja Paz Rodríguez <borjapazr@gmail.com> (https://bpaz.dev)",
+    "Proxecto Trasno (https://trasno.gal)"
+  ],
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/streetsidesoftware/cspell-dicts/issues"
+  },
+  "homepage": "https://github.com/streetsidesoftware/cspell-dicts/blob/main/dictionaries/gl_ES#readme",
+  "devDependencies": {},
+  "dependencies": {},
+  "files": [
+    "dict/gl_ES.trie",
+    "dict/gl_ES.trie.gz",
+    "cspell-ext.json",
+    "*.js",
+    "*.d.ts"
+  ]
+}
