@@ -24,6 +24,7 @@
 - [Finnish](dictionaries/fi_FI) - Finnish dictionary.
 - [Français Réforme 1990](dictionaries/fr_FR_90) - Français Réforme 1990 dictionary.
 - [French Dictionary (France)](dictionaries/fr_FR) - French Dictionary (France)
+- [Galician Dictionary (Spain)](dictionaries/gl_ES) - Galician Dictionary (Spain)
 - [German Dictionary](dictionaries/de_DE) - German (de-DE) Dictionary.
 - [Greek](dictionaries/el) - Greek dictionary.
 - [Hebrew Dictionary](dictionaries/he) - Hebrew Dictionary
@@ -187,6 +188,7 @@
 | [@cspell/dict-gaming-terms](./dictionaries/gaming-terms#readme)<sup>1</sup>                     | Gaming                            | gaming-terms<br>game-development                                                                                                                                                          |
 | [@cspell/dict-gis](./dictionaries/gis#readme)                                                   | GIS and PostGIS                   | gis                                                                                                                                                                                       |
 | [@cspell/dict-git](./dictionaries/git#readme)<sup>1</sup>                                       | Git                               | git                                                                                                                                                                                       |
+| [@cspell/dict-gl-es](./dictionaries/gl_ES#readme)                                               | Galician Dictionary (Spain)       | gl-es                                                                                                                                                                                     |
 | [@cspell/dict-golang](./dictionaries/golang#readme)<sup>1</sup>                                 | Go Language                       | golang                                                                                                                                                                                    |
 | [@cspell/dict-google](./dictionaries/google#readme)<sup>1</sup>                                 | Google Cloud                      | google                                                                                                                                                                                    |
 | [@cspell/dict-grc](./dictionaries/grc_GR#readme)                                                | Ancient Greek                     | grc                                                                                                                                                                                       |
@@ -321,6 +323,7 @@
 | [`gaming-terms`](dictionaries/gaming-terms) <sup>1</sup>                             | Gaming dictionary.                                                  | -                             | -                                                              |
 | [`gis`](dictionaries/gis)                                                            | GIS and PostGIS dictionary.                                         | -                             | -                                                              |
 | [`git`](dictionaries/git) <sup>1</sup>                                               | Git Terms                                                           | -                             | -                                                              |
+| [`gl-es`](dictionaries/gl_ES)                                                        | Galician Dictionary (Spain)                                         | gl<br>gl_ES                   | -                                                              |
 | [`golang`](dictionaries/golang) <sup>1</sup>                                         | Go Language Dictionary                                              | -                             | go                                                             |
 | [`google`](dictionaries/google) <sup>1</sup>                                         | Google Cloud Development dictionary.                                | -                             | -                                                              |
 | [`grc`](dictionaries/grc_GR)                                                         | Ancient Greek dictionary.                                           | el-GRC<br>gr<br>grc<br>grc_GR | -                                                              |
