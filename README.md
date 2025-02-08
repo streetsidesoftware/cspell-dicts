@@ -21,7 +21,7 @@ Various [cspell](https://github.com/streetsidesoftware/cspell) dictionaries. Eac
 
 - [Ancient Greek](dictionaries/grc_GR) - Ancient Greek dictionary.
 - [Arabic](dictionaries/ar) - Arabic dictionary.
-- [Armenian](dictionaries/hy) - Armenian dictionary for cspell.
+- [Armenian](dictionaries/hy) - Armenian dictionary.
 - [Austrian German Dictionary](dictionaries/de_AT) - Austrian German (de-AT) Dictionary.
 - [Basque](dictionaries/eu) - Basque dictionary.
 - [Bulgarian](dictionaries/bg_BG) - Bulgarian dictionary.
@@ -352,7 +352,7 @@ Various [cspell](https://github.com/streetsidesoftware/cspell) dictionaries. Eac
 | [`html`](dictionaries/html) <sup>1</sup>                                             | HTML dictionary.                                                    | -                             | html                                                           |
 | [`html-symbol-entities`](dictionaries/html-symbol-entities) <sup>1</sup>             | HTML Symbol Entities Dictionary                                     | -                             | html<br>markdown                                               |
 | [`hu-hu`](dictionaries/hu_HU)                                                        | Hungarian dictionary.                                               | hu<br>hu-hu                   | -                                                              |
-| [`hy_am`](dictionaries/hy)                                                           | Armenian dictionary for cspell.                                     | hy<br>hy-AM                   | -                                                              |
+| [`hy_am`](dictionaries/hy)                                                           | Armenian dictionary                                                 | hy<br>hy-AM                   | -                                                              |
 | [`id-id`](dictionaries/id_ID)                                                        | Indonesia dictionary.                                               | id<br>id-ID                   | -                                                              |
 | [`it-it`](dictionaries/it_IT)                                                        | Italian dictionary.                                                 | it<br>it-IT                   | -                                                              |
 | [`java`](dictionaries/java) <sup>1</sup>                                             | Java dictionary.                                                    | -                             | java                                                           |
