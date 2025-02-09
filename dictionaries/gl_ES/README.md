@@ -1,4 +1,4 @@
-# CSpell Galician Dictionary (Spain) Dictionary
+# CSpell Galician Dictionary (Spain)
 
 Galician Dictionary (Spain)
 
@@ -46,6 +46,16 @@ See: [How to Create a New Dictionary](https://github.com/streetsidesoftware/cspe
 MIT
 
 > Some packages may have other licenses included.
+
+## Acknowledgements
+
+Contributed by:
+
+- [Borja Paz Rodríguez](https://github.com/borjapazr)
+
+This dictionary makes use of the following open source projects:
+
+- [hunspell-gl](https://gitlab.com/trasno/hunspell-gl) ([Proxecto Trasno](https://trasno.gal/))
 
 <!--- @@inject: ../../static/footer.md --->
 
