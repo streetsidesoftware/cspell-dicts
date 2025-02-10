@@ -3,6 +3,7 @@
 targets:
   - name: gl_ES
     sources:
+      - src/additional_words.txt
       - src/gl_ES.dic
     format: trie3
     targetDirectory: ./dict

@@ -37,6 +37,10 @@ The `cspell-ext.json` file in this package should be added to the import section
 }
 ```
 
+## Adding Words
+
+Please add any words to [src/additional_words.txt](https://github.com/streetsidesoftware/cspell-dicts/blob/main/dictionaries/gl_ES/src/additional_words.txt) by making a pull request.
+
 # Dictionary Development
 
 See: [How to Create a New Dictionary](https://github.com/streetsidesoftware/cspell-dicts#how-to-create-a-new-dictionary)
