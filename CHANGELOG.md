@@ -1,5 +1,31 @@
 # Release Notes
 
+## [28.10.0](https://github.com/streetsidesoftware/cspell-dicts/compare/cspell-dicts@28.9.0...cspell-dicts@28.10.0) (2025-02-10)
+
+
+### Features
+
+* add additional words configuration file to `gl-es` dictionary ([#4072](https://github.com/streetsidesoftware/cspell-dicts/issues/4072)) ([800ab04](https://github.com/streetsidesoftware/cspell-dicts/commit/800ab04fd1b36f2b03db75e7b746ba01c5357909))
+
+
+### Updates and Bug Fixes
+
+* Add nupkg ([#4073](https://github.com/streetsidesoftware/cspell-dicts/issues/4073)) ([5512a0c](https://github.com/streetsidesoftware/cspell-dicts/commit/5512a0c15933dfaab52c33deca7ddb6e5cebf904))
+* **fullstack.txt:** changefreq ([#4081](https://github.com/streetsidesoftware/cspell-dicts/issues/4081)) ([d901865](https://github.com/streetsidesoftware/cspell-dicts/commit/d9018650b1c40c4595a54e7d99d2271f41c26bb1))
+* **fullstack.txt:** lastmod ([#4077](https://github.com/streetsidesoftware/cspell-dicts/issues/4077)) ([f052f44](https://github.com/streetsidesoftware/cspell-dicts/commit/f052f44f24e1af49983ceb18ebd5bbb1df0959b3))
+* **fullstack.txt:** urlset ([#4078](https://github.com/streetsidesoftware/cspell-dicts/issues/4078)) ([6c0f808](https://github.com/streetsidesoftware/cspell-dicts/commit/6c0f808396da8a35d5df3303434dde22f2476b8d))
+* update `readme.md` to fix title and add contributors (`gl_ES`) ([#4066](https://github.com/streetsidesoftware/cspell-dicts/issues/4066)) ([85a9377](https://github.com/streetsidesoftware/cspell-dicts/commit/85a9377228c3c600fc10db401b42478ffce1daa1))
+* Workflow Bot -- Build Dictionaries ([#4065](https://github.com/streetsidesoftware/cspell-dicts/issues/4065)) ([f75f641](https://github.com/streetsidesoftware/cspell-dicts/commit/f75f6415fa40a33cd6ee8b8d0f094de10da0b697))
+* Workflow Bot -- Build Dictionaries ([#4070](https://github.com/streetsidesoftware/cspell-dicts/issues/4070)) ([4e58cb2](https://github.com/streetsidesoftware/cspell-dicts/commit/4e58cb2322b1784c833434163f93d3007ba17096))
+* Workflow Bot -- Build Dictionaries ([#4082](https://github.com/streetsidesoftware/cspell-dicts/issues/4082)) ([321f1ca](https://github.com/streetsidesoftware/cspell-dicts/commit/321f1cac9370e08bf843c5d1bca2d248ebbc7dc0))
+* Workflow Bot -- Update Dictionaries ([#4068](https://github.com/streetsidesoftware/cspell-dicts/issues/4068)) ([017ffc1](https://github.com/streetsidesoftware/cspell-dicts/commit/017ffc1e0adce44740abc9b12f7102ee369c79c7))
+
+
+### Documentation
+
+* **CONTRIBUTING.md:** about multiple words ([#4080](https://github.com/streetsidesoftware/cspell-dicts/issues/4080)) ([de3c779](https://github.com/streetsidesoftware/cspell-dicts/commit/de3c7791ca7c7acb418a8b797f470ef921e2cc40))
+* **CONTRIBUTING.md:** proposing words ([#4079](https://github.com/streetsidesoftware/cspell-dicts/issues/4079)) ([0012e70](https://github.com/streetsidesoftware/cspell-dicts/commit/0012e70c5ee47ce5c120c4f95b508d0dafb5982c))
+
 ## [28.9.0](https://github.com/streetsidesoftware/cspell-dicts/compare/cspell-dicts@28.8.4...cspell-dicts@28.9.0) (2025-02-08)
 
 

@@ -1,5 +1,17 @@
 # Change Log
 
+## [1.1.0](https://github.com/streetsidesoftware/cspell-dicts/compare/@cspell/dict-gl-es@1.0.0...@cspell/dict-gl-es@1.1.0) (2025-02-10)
+
+
+### Features
+
+* add additional words configuration file to `gl-es` dictionary ([#4072](https://github.com/streetsidesoftware/cspell-dicts/issues/4072)) ([800ab04](https://github.com/streetsidesoftware/cspell-dicts/commit/800ab04fd1b36f2b03db75e7b746ba01c5357909))
+
+
+### Updates and Bug Fixes
+
+* update `readme.md` to fix title and add contributors (`gl_ES`) ([#4066](https://github.com/streetsidesoftware/cspell-dicts/issues/4066)) ([85a9377](https://github.com/streetsidesoftware/cspell-dicts/commit/85a9377228c3c600fc10db401b42478ffce1daa1))
+
 ## 1.0.0 (2025-02-08)
 
 
