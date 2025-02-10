@@ -3,6 +3,16 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+## [3.2.4](https://github.com/streetsidesoftware/cspell-dicts/compare/@cspell/dict-fullstack@3.2.3...@cspell/dict-fullstack@3.2.4) (2025-02-10)
+
+
+### Updates and Bug Fixes
+
+* **fullstack.txt:** changefreq ([#4081](https://github.com/streetsidesoftware/cspell-dicts/issues/4081)) ([d901865](https://github.com/streetsidesoftware/cspell-dicts/commit/d9018650b1c40c4595a54e7d99d2271f41c26bb1))
+* **fullstack.txt:** lastmod ([#4077](https://github.com/streetsidesoftware/cspell-dicts/issues/4077)) ([f052f44](https://github.com/streetsidesoftware/cspell-dicts/commit/f052f44f24e1af49983ceb18ebd5bbb1df0959b3))
+* **fullstack.txt:** urlset ([#4078](https://github.com/streetsidesoftware/cspell-dicts/issues/4078)) ([6c0f808](https://github.com/streetsidesoftware/cspell-dicts/commit/6c0f808396da8a35d5df3303434dde22f2476b8d))
+* Workflow Bot -- Build Dictionaries ([#4082](https://github.com/streetsidesoftware/cspell-dicts/issues/4082)) ([321f1ca](https://github.com/streetsidesoftware/cspell-dicts/commit/321f1cac9370e08bf843c5d1bca2d248ebbc7dc0))
+
 ## [3.2.3](https://github.com/streetsidesoftware/cspell-dicts/compare/@cspell/dict-fullstack@3.2.2...@cspell/dict-fullstack@3.2.3) (2024-10-11)
 
 
