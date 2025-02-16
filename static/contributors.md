@@ -83,8 +83,7 @@
 [<img alt="Contributor tvardero" src="https://avatars.githubusercontent.com/u/45442278?v=4&size=128" width=64>](https://github.com/tvardero)
 [<img alt="Contributor ChocolateLoverRaj" src="https://avatars.githubusercontent.com/u/52586855?v=4&size=128" width=64>](https://github.com/ChocolateLoverRaj)
 [<img alt="Contributor KB-perByte" src="https://avatars.githubusercontent.com/u/19584197?v=4&size=128" width=64>](https://github.com/KB-perByte)
-[<img alt="Contributor nomadsherpa" src="https://avatars.githubusercontent.com/u/1914993?v=4&size=128" width=64>](https://github.com/nomadsherpa)
-[<img alt="Contributor pbrit" src="https://avatars.githubusercontent.com/u/554135?v=4&size=128" width=64>](https://github.com/pbrit)
+[<img alt="Contributor paaloeye" src="https://avatars.githubusercontent.com/u/554135?v=4&size=128" width=64>](https://github.com/paaloeye)
 [<img alt="Contributor peteraritchie" src="https://avatars.githubusercontent.com/u/408620?v=4&size=128" width=64>](https://github.com/peteraritchie)
 [<img alt="Contributor Peterdedecker" src="https://avatars.githubusercontent.com/u/2641214?v=4&size=128" width=64>](https://github.com/Peterdedecker)
 [<img alt="Contributor plasticrake" src="https://avatars.githubusercontent.com/u/1383980?v=4&size=128" width=64>](https://github.com/plasticrake)
@@ -95,6 +94,7 @@
 [<img alt="Contributor RotationMatrix" src="https://avatars.githubusercontent.com/u/52428419?v=4&size=128" width=64>](https://github.com/RotationMatrix)
 [<img alt="Contributor SethFalco" src="https://avatars.githubusercontent.com/u/22801583?v=4&size=128" width=64>](https://github.com/SethFalco)
 [<img alt="Contributor shanefontaine" src="https://avatars.githubusercontent.com/u/9441295?v=4&size=128" width=64>](https://github.com/shanefontaine)
+[<img alt="Contributor sherpalabsio" src="https://avatars.githubusercontent.com/u/1914993?v=4&size=128" width=64>](https://github.com/sherpalabsio)
 [<img alt="Contributor smaraf" src="https://avatars.githubusercontent.com/u/1213709?v=4&size=128" width=64>](https://github.com/smaraf)
 [<img alt="Contributor thegraffix" src="https://avatars.githubusercontent.com/u/57874058?v=4&size=128" width=64>](https://github.com/thegraffix)
 [<img alt="Contributor brandonching" src="https://avatars.githubusercontent.com/u/68457375?v=4&size=128" width=64>](https://github.com/brandonching)
@@ -195,6 +195,8 @@
 [<img alt="Contributor brmonaghan" src="https://avatars.githubusercontent.com/u/71337477?v=4&size=128" width=64>](https://github.com/brmonaghan)
 [<img alt="Contributor j-ans1" src="https://avatars.githubusercontent.com/u/88773786?v=4&size=128" width=64>](https://github.com/j-ans1)
 [<img alt="Contributor LucasOe" src="https://avatars.githubusercontent.com/u/16548335?v=4&size=128" width=64>](https://github.com/LucasOe)
+[<img alt="Contributor nomadsherpa" src="https://avatars.githubusercontent.com/u/1914993?v=4&size=128" width=64>](https://github.com/nomadsherpa)
+[<img alt="Contributor pbrit" src="https://avatars.githubusercontent.com/u/554135?v=4&size=128" width=64>](https://github.com/pbrit)
 [<img alt="Contributor uncenter" src="https://avatars.githubusercontent.com/u/47499684?v=4&size=128" width=64>](https://github.com/uncenter)
 
 <!--- cspell:enable --->
