@@ -341,7 +341,7 @@ importers:
         version: link:../en_shared
       aoo-mozilla-en-dict:
         specifier: github:marcoagpinto/aoo-mozilla-en-dict
-        version: https://codeload.github.com/marcoagpinto/aoo-mozilla-en-dict/tar.gz/36023c0a34a1121d12a35d575906e686db84b990
+        version: git+https://git@github.com:marcoagpinto/aoo-mozilla-en-dict.git#36023c0a34a1121d12a35d575906e686db84b990
 
   dictionaries/en_CA:
     devDependencies:
@@ -350,7 +350,7 @@ importers:
         version: link:../en_shared
       aoo-mozilla-en-dict:
         specifier: github:marcoagpinto/aoo-mozilla-en-dict
-        version: https://codeload.github.com/marcoagpinto/aoo-mozilla-en-dict/tar.gz/36023c0a34a1121d12a35d575906e686db84b990
+        version: git+https://git@github.com:marcoagpinto/aoo-mozilla-en-dict.git#36023c0a34a1121d12a35d575906e686db84b990
 
   dictionaries/en_GB:
     devDependencies:
@@ -359,7 +359,7 @@ importers:
         version: link:../en_shared
       aoo-mozilla-en-dict:
         specifier: github:marcoagpinto/aoo-mozilla-en-dict
-        version: https://codeload.github.com/marcoagpinto/aoo-mozilla-en-dict/tar.gz/36023c0a34a1121d12a35d575906e686db84b990
+        version: git+https://git@github.com:marcoagpinto/aoo-mozilla-en-dict.git#36023c0a34a1121d12a35d575906e686db84b990
 
   dictionaries/en_GB-MIT:
     devDependencies:
@@ -374,7 +374,7 @@ importers:
         version: link:../en_shared
       aoo-mozilla-en-dict:
         specifier: github:marcoagpinto/aoo-mozilla-en-dict
-        version: https://codeload.github.com/marcoagpinto/aoo-mozilla-en-dict/tar.gz/36023c0a34a1121d12a35d575906e686db84b990
+        version: git+https://git@github.com:marcoagpinto/aoo-mozilla-en-dict.git#36023c0a34a1121d12a35d575906e686db84b990
 
   dictionaries/en_shared: {}
 
@@ -424,7 +424,7 @@ importers:
     devDependencies:
       go-words:
         specifier: github:AlekSi/go-words
-        version: https://codeload.github.com/AlekSi/go-words/tar.gz/484c289403fbe48c7f082443df63f8fbb5621301
+        version: git+https://git@github.com:AlekSi/go-words.git#484c289403fbe48c7f082443df63f8fbb5621301
 
   dictionaries/google: {}
 
@@ -497,7 +497,7 @@ importers:
     devDependencies:
       wordlist-medicalterms-en:
         specifier: github:Glutanimate/wordlist-medicalterms-en#d87b48e
-        version: wordlist-medicalterms-en#d87b48e@https://codeload.github.com/Glutanimate/wordlist-medicalterms-en/tar.gz/d87b48e
+        version: wordlist-medicalterms-en#d87b48e@git+https://git@github.com:Glutanimate/wordlist-medicalterms-en.git#d87b48e
 
   dictionaries/mk:
     devDependencies:
@@ -525,7 +525,7 @@ importers:
     dependencies:
       '@cspell/normalize-json':
         specifier: ^8.17.3
-        version: 8.17.3
+        version: 8.17.4
       csv-stringify:
         specifier: ^6.5.2
         version: 6.5.2
@@ -943,8 +943,8 @@ packages:
     resolution: {integrity: sha512-UFqRmJPccOSo+RYP/jZ4cr0s7ni37GrvnNAg1H/qIIxfmBYsexTAmsNzMqxp1M31NeI1Cx3LL7PspPMT0ms+7w==}
     engines: {node: '>=18'}
 
-  '@cspell/normalize-json@8.17.3':
-    resolution: {integrity: sha512-898O/wsEl5NNCasUQl4+roWTKdDIQP/x9izHPq1o7b3RHh57p00U3yn04oa2D92Al4EOWkl6aws+898mgF6kdA==}
+  '@cspell/normalize-json@8.17.4':
+    resolution: {integrity: sha512-i1d6ZAo3Wybbx4B9AlzKWOzdUpRRxmPa7f/2N8WcDgIxl/1YrFtF5CD7zMvxNuIsD2+NCymqbN67on+X8C/xCg==}
     engines: {node: '>=18'}
 
   '@cspell/strong-weak-map@8.17.3':
@@ -1581,8 +1581,8 @@ packages:
     resolution: {integrity: sha512-bN798gFfQX+viw3R7yrGWRqnrN2oRkEkUjjl4JNn4E8GxxbjtG3FbrEIIY3l8/hrwUwIeCZvi4QuOTP4MErVug==}
     engines: {node: '>=12'}
 
-  aoo-mozilla-en-dict@https://codeload.github.com/marcoagpinto/aoo-mozilla-en-dict/tar.gz/36023c0a34a1121d12a35d575906e686db84b990:
-    resolution: {tarball: https://codeload.github.com/marcoagpinto/aoo-mozilla-en-dict/tar.gz/36023c0a34a1121d12a35d575906e686db84b990}
+  aoo-mozilla-en-dict@git+https://git@github.com:marcoagpinto/aoo-mozilla-en-dict.git#36023c0a34a1121d12a35d575906e686db84b990:
+    resolution: {commit: 36023c0a34a1121d12a35d575906e686db84b990, repo: git@github.com:marcoagpinto/aoo-mozilla-en-dict.git, type: git}
     version: 0.0.0
 
   aproba@2.0.0:
@@ -2418,8 +2418,8 @@ packages:
     resolution: {integrity: sha512-JrqFmyUl2PnPi1OvLyTVHnQvwQ0S+e6lGSwu8OkAZlSaNIZciTY2H/cOOROxsBA1m/LZNHDsqAgDZt6akWcjsQ==}
     engines: {node: '>=18'}
 
-  flatpack-json@8.17.3:
-    resolution: {integrity: sha512-WENgV4DsFMNK8MP4/huHFpM2imTvID+ahzl6WkOKwsq8+pgG1N+7v6F3Yod9yVjxA3os0ZC6tWdTlkv1F1qVDA==}
+  flatpack-json@8.17.4:
+    resolution: {integrity: sha512-OMTTO0Bo2qtMN8wjMiPCF+VDslQWWuIJdX6TXSBuyiRmVx5x3gC4BQfZsNRKUxBhU80vTGhb+j1WV2HUOXXfnA==}
     engines: {node: '>=18'}
 
   flatted@3.3.2:
@@ -2551,8 +2551,8 @@ packages:
     resolution: {integrity: sha512-0Ia46fDOaT7k4og1PDW4YbodWWr3scS2vAr2lTbsplOt2WkKp0vQbkI9wKis/T5LV/dqPjO3bpS/z6GTJB82LA==}
     engines: {node: '>=18'}
 
-  go-words@https://codeload.github.com/AlekSi/go-words/tar.gz/484c289403fbe48c7f082443df63f8fbb5621301:
-    resolution: {tarball: https://codeload.github.com/AlekSi/go-words/tar.gz/484c289403fbe48c7f082443df63f8fbb5621301}
+  go-words@git+https://git@github.com:AlekSi/go-words.git#484c289403fbe48c7f082443df63f8fbb5621301:
+    resolution: {commit: 484c289403fbe48c7f082443df63f8fbb5621301, repo: git@github.com:AlekSi/go-words.git, type: git}
     version: 0.0.0
 
   graceful-fs@4.2.10:
@@ -4302,8 +4302,8 @@ packages:
     resolution: {integrity: sha512-BN22B5eaMMI9UMtjrGd5g5eCYPpCPDUy0FJXbYsaT5zYxjFOckS53SQDE3pWkVoWpHXVb3BrYcEN4Twa55B5cA==}
     engines: {node: '>=0.10.0'}
 
-  wordlist-medicalterms-en#d87b48e@https://codeload.github.com/Glutanimate/wordlist-medicalterms-en/tar.gz/d87b48e:
-    resolution: {tarball: https://codeload.github.com/Glutanimate/wordlist-medicalterms-en/tar.gz/d87b48e}
+  wordlist-medicalterms-en#d87b48e@git+https://git@github.com:Glutanimate/wordlist-medicalterms-en.git#d87b48e:
+    resolution: {commit: d87b48e, repo: git@github.com:Glutanimate/wordlist-medicalterms-en.git, type: git}
     version: 0.0.0
 
   wordwrap@1.0.0:
@@ -4661,9 +4661,9 @@ snapshots:
 
   '@cspell/filetypes@8.17.3': {}
 
-  '@cspell/normalize-json@8.17.3':
+  '@cspell/normalize-json@8.17.4':
     dependencies:
-      flatpack-json: 8.17.3
+      flatpack-json: 8.17.4
 
   '@cspell/strong-weak-map@8.17.3': {}
 
@@ -5584,7 +5584,7 @@ snapshots:
 
   ansi-styles@6.2.1: {}
 
-  aoo-mozilla-en-dict@https://codeload.github.com/marcoagpinto/aoo-mozilla-en-dict/tar.gz/36023c0a34a1121d12a35d575906e686db84b990: {}
+  aoo-mozilla-en-dict@git+https://git@github.com:marcoagpinto/aoo-mozilla-en-dict.git#36023c0a34a1121d12a35d575906e686db84b990: {}
 
   aproba@2.0.0: {}
 
@@ -6453,7 +6453,7 @@ snapshots:
       flatted: 3.3.2
       keyv: 4.5.4
 
-  flatpack-json@8.17.3: {}
+  flatpack-json@8.17.4: {}
 
   flatted@3.3.2: {}
 
@@ -6601,7 +6601,7 @@ snapshots:
       slash: 5.1.0
       unicorn-magic: 0.3.0
 
-  go-words@https://codeload.github.com/AlekSi/go-words/tar.gz/484c289403fbe48c7f082443df63f8fbb5621301: {}
+  go-words@git+https://git@github.com:AlekSi/go-words.git#484c289403fbe48c7f082443df63f8fbb5621301: {}
 
   graceful-fs@4.2.10: {}
 
@@ -8632,7 +8632,7 @@ snapshots:
 
   word-wrap@1.2.5: {}
 
-  wordlist-medicalterms-en#d87b48e@https://codeload.github.com/Glutanimate/wordlist-medicalterms-en/tar.gz/d87b48e: {}
+  wordlist-medicalterms-en#d87b48e@git+https://git@github.com:Glutanimate/wordlist-medicalterms-en.git#d87b48e: {}
 
   wordwrap@1.0.0: {}
 
