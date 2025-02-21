@@ -3,6 +3,14 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+## [3.2.5](https://github.com/streetsidesoftware/cspell-dicts/compare/@cspell/dict-fullstack@3.2.4...@cspell/dict-fullstack@3.2.5) (2025-02-21)
+
+
+### Updates and Bug Fixes
+
+* add `nodenext` ([#4095](https://github.com/streetsidesoftware/cspell-dicts/issues/4095)) ([b74262c](https://github.com/streetsidesoftware/cspell-dicts/commit/b74262ce19c3ea8580268447467963b6147c1352))
+* Workflow Bot -- Build Dictionaries ([#4096](https://github.com/streetsidesoftware/cspell-dicts/issues/4096)) ([ad6cf04](https://github.com/streetsidesoftware/cspell-dicts/commit/ad6cf045d1d6d33ad02b8a177e01f1b46e7b11f0))
+
 ## [3.2.4](https://github.com/streetsidesoftware/cspell-dicts/compare/@cspell/dict-fullstack@3.2.3...@cspell/dict-fullstack@3.2.4) (2025-02-10)
 
 

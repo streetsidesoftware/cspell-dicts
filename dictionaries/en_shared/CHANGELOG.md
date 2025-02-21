@@ -1,5 +1,14 @@
 # Change Log
 
+## [1.0.21](https://github.com/streetsidesoftware/cspell-dicts/compare/@cspell/dict-en-shared@1.0.20...@cspell/dict-en-shared@1.0.21) (2025-02-21)
+
+
+### Updates and Bug Fixes
+
+* add additional words to en_shared ([#4092](https://github.com/streetsidesoftware/cspell-dicts/issues/4092)) ([c7e43bc](https://github.com/streetsidesoftware/cspell-dicts/commit/c7e43bc257e6e09f423bda5e9bd662e3131d0d98))
+* **en_shared:** buildable ([#4105](https://github.com/streetsidesoftware/cspell-dicts/issues/4105)) ([5e0544e](https://github.com/streetsidesoftware/cspell-dicts/commit/5e0544ee55796ee84f479affe3a8080969bdb3d0))
+* Workflow Bot -- Build Dictionaries ([#4106](https://github.com/streetsidesoftware/cspell-dicts/issues/4106)) ([a6ce4a2](https://github.com/streetsidesoftware/cspell-dicts/commit/a6ce4a2891ecc574423a657f69814a809348f532))
+
 ## [1.0.20](https://github.com/streetsidesoftware/cspell-dicts/compare/@cspell/dict-en-shared@1.0.19...@cspell/dict-en-shared@1.0.20) (2025-01-18)
 
 
