@@ -13,10 +13,11 @@
     "./cspell-ext.json": "./cspell-ext.json"
   },
   "scripts": {
-    "build": "cross-env NODE_OPTIONS=--max_old_space_size=8192 cspell-tools-cli build",
-    "test": "hunspell-reader words -n 1000 -m 0 \"src/mn_MN.dic\" | cspell -c ./cspell-ext.json \"--locale=mn,mn-MN\" \"--languageId=*\" stdin",
+    "build": "cross-env cspell-tools-cli build",
+    "test": "hunspell-reader words -n 1000 -m 0 \"src/hunspell/mn_MN.dic\" | cspell -c ./cspell-ext.json \"--locale=mn,mn-MN\" \"--languageId=*\" stdin",
     "prepublishOnly": "echo OK",
-    "prepare:dictionary": "echo OK"
+    "prepare:dictionary": "echo OK",
+    "gz": "cspell-tools-cli gzip \"*.trie\""
   },
   "repository": {
     "type": "git",
