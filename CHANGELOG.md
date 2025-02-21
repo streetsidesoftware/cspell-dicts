@@ -1,5 +1,19 @@
 # Release Notes
 
+## [28.10.1](https://github.com/streetsidesoftware/cspell-dicts/compare/cspell-dicts@28.10.0...cspell-dicts@28.10.1) (2025-02-21)
+
+
+### Updates and Bug Fixes
+
+* add `nodenext` ([#4095](https://github.com/streetsidesoftware/cspell-dicts/issues/4095)) ([b74262c](https://github.com/streetsidesoftware/cspell-dicts/commit/b74262ce19c3ea8580268447467963b6147c1352))
+* add additional words to en_shared ([#4092](https://github.com/streetsidesoftware/cspell-dicts/issues/4092)) ([c7e43bc](https://github.com/streetsidesoftware/cspell-dicts/commit/c7e43bc257e6e09f423bda5e9bd662e3131d0d98))
+* **en_shared:** buildable ([#4105](https://github.com/streetsidesoftware/cspell-dicts/issues/4105)) ([5e0544e](https://github.com/streetsidesoftware/cspell-dicts/commit/5e0544ee55796ee84f479affe3a8080969bdb3d0))
+* Workflow Bot -- Build Dictionaries ([#4088](https://github.com/streetsidesoftware/cspell-dicts/issues/4088)) ([bafaee6](https://github.com/streetsidesoftware/cspell-dicts/commit/bafaee6a6e171c6107b755e74e8c656c7be258c1))
+* Workflow Bot -- Build Dictionaries ([#4094](https://github.com/streetsidesoftware/cspell-dicts/issues/4094)) ([51eb42d](https://github.com/streetsidesoftware/cspell-dicts/commit/51eb42d18602c991044aadcf22421704700247bb))
+* Workflow Bot -- Build Dictionaries ([#4096](https://github.com/streetsidesoftware/cspell-dicts/issues/4096)) ([ad6cf04](https://github.com/streetsidesoftware/cspell-dicts/commit/ad6cf045d1d6d33ad02b8a177e01f1b46e7b11f0))
+* Workflow Bot -- Build Dictionaries ([#4106](https://github.com/streetsidesoftware/cspell-dicts/issues/4106)) ([a6ce4a2](https://github.com/streetsidesoftware/cspell-dicts/commit/a6ce4a2891ecc574423a657f69814a809348f532))
+* Workflow Bot -- Update Dictionaries ([#4093](https://github.com/streetsidesoftware/cspell-dicts/issues/4093)) ([7a68882](https://github.com/streetsidesoftware/cspell-dicts/commit/7a688823faf10ded46285ee03a64677c3d75bc11))
+
 ## [28.10.0](https://github.com/streetsidesoftware/cspell-dicts/compare/cspell-dicts@28.9.0...cspell-dicts@28.10.0) (2025-02-10)
 
 
