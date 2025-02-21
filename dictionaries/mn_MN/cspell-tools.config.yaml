@@ -3,10 +3,10 @@
 targets:
   - name: 'mn-mn'
     sources:
-      - filename: 'src/hunspell/mn_MN.dic'
+      - filename: 'src/mn_MN.dic'
         maxDepth: 1 # This is set to 1 to prevent initial builds from taking too long.
-    format: 'plaintext'
+    format: 'trie3'
     targetDirectory: './dict'
-    generateNonStrict: false
+    generateNonStrict: true
     compress: false
 checksumFile: true

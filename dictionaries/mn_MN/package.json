@@ -13,11 +13,12 @@
     "./cspell-ext.json": "./cspell-ext.json"
   },
   "scripts": {
-    "build": "cross-env cspell-tools-cli build",
-    "test": "hunspell-reader words -n 1000 -m 0 \"src/hunspell/mn_MN.dic\" | cspell -c ./cspell-ext.json \"--locale=mn,mn-MN\" \"--languageId=*\" stdin",
-    "prepublishOnly": "echo OK",
-    "prepare:dictionary": "echo OK",
-    "gz": "cspell-tools-cli gzip \"*.trie\""
+    "build": "cross-env NODE_OPTIONS=--max_old_space_size=8192 cspell-tools-cli build",
+    "test": "hunspell-reader words -n 1000 -m 0 \"src/mn_MN.dic\" | cspell -c ./cspell-ext.json \"--locale=mn,mn-MN\" \"--languageId=*\" stdin",
+    "prepublishOnly": "pnpm run conditional-build && pnpm test",
+    "prepare:dictionary": "cspell-tools-cli gzip \"dict/*.trie\"",
+    "conditional-build": "pnpm run sync && pnpm run build --conditional",
+    "sync": "pnpm cpy \"node_modules/dictionary-ru/**\" src/hunspell"
   },
   "repository": {
     "type": "git",
@@ -41,7 +42,7 @@
   "devDependencies": {},
   "dependencies": {},
   "files": [
-    "dict/mn-mn.txt",
+    "dict/mn-mn.trie",
     "cspell-ext.json",
     "*.js",
     "*.d.ts"
