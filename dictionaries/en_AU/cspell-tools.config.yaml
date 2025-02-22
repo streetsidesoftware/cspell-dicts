@@ -6,10 +6,10 @@ targets:
       - ./src/additional_words.txt
       - ./src/aoo-mozilla-en-dict/en_AU.dic
       - ./src/hunspell-en_AU-large/en_AU-large.dic
-      - ./node_modules/@cspell/dict-en-shared/src/shared-additional-words.txt
+      - ./node_modules/@cspell/dict-en-shared/dict/shared-additional-words.txt
     format: trie3
     targetDirectory: '.'
     generateNonStrict: true
     excludeWordsFrom:
-      - node_modules/@cspell/dict-en-shared/src/exclude-words.txt
+      - node_modules/@cspell/dict-en-shared/dict/exclude-words.txt
 checksumFile: true

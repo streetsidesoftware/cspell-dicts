@@ -10,9 +10,9 @@ targets:
       - src/aoo-mozilla-en-dict/en-GB.dic
       - src/hunspell/en_GB.dic
       - src/wordsEnGb.txt
-      - node_modules/@cspell/dict-en-shared/src/shared-additional-words.txt
+      - node_modules/@cspell/dict-en-shared/dict/shared-additional-words.txt
     sort: true
     generateNonStrict: true
     excludeWordsFrom:
-      - node_modules/@cspell/dict-en-shared/src/exclude-words.txt
+      - node_modules/@cspell/dict-en-shared/dict/exclude-words.txt
 checksumFile: true
