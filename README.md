@@ -54,6 +54,7 @@ Various [cspell](https://github.com/streetsidesoftware/cspell) dictionaries. Eac
 - [Lithuanian](dictionaries/lt_LT) - Lithuanian dictionary.
 - [Lorem-ipsum](dictionaries/lorem-ipsum) - Lorem-ipsum dictionary. <sup>1</sup>
 - [Macedonian](dictionaries/mk) - Macedonian dictionary.
+- [Mongolian](dictionaries/mn_MN) - Mongolian dictionary for cspell.
 - [Norwegian Bokmål](dictionaries/nb_NO) - Norwegian Bokmål dictionary.
 - [Persian Dictionary](dictionaries/fa_IR) - Persian Dictionary
 - [Polish Dictionary](dictionaries/pl_PL) - Polish Dictionary
@@ -233,6 +234,7 @@ Various [cspell](https://github.com/streetsidesoftware/cspell) dictionaries. Eac
 | [@cspell/dict-markdown](./dictionaries/markdown#readme)<sup>1</sup>                             | Markdown                          |                                                                                                                                                                                           |
 | [@cspell/dict-medicalterms](./dictionaries/medicalterms#readme)                                 | Medical terms                     | medical terms<sup>2</sup>                                                                                                                                                                 |
 | [@cspell/dict-mk](./dictionaries/mk#readme)                                                     | Macedonian                        | mk                                                                                                                                                                                        |
+| [@cspell/dict-mn-mn](./dictionaries/mn_MN#readme)                                               | Mongolian                         | mn-mn                                                                                                                                                                                     |
 | [@cspell/dict-mnemonics](./dictionaries/mnemonics#readme)                                       | Mnemonics                         | mnemonics                                                                                                                                                                                 |
 | [@cspell/dict-monkeyc](./dictionaries/monkeyc#readme)<sup>1</sup>                               | Monkey C                          | monkeyc                                                                                                                                                                                   |
 | [@cspell/dict-nb-no](./dictionaries/nb_NO#readme)                                               | Norwegian Bokmål                  | nb-no                                                                                                                                                                                     |
@@ -368,6 +370,7 @@ Various [cspell](https://github.com/streetsidesoftware/cspell) dictionaries. Eac
 | [`makefile`](dictionaries/makefile) <sup>1</sup>                                     | Makefile dictionary.                                                | -                             | makefile                                                       |
 | [`medical terms`](dictionaries/medicalterms) <sup>2</sup>                            | List of nearly 100,000 medical terms.                               | -                             | -                                                              |
 | [`mk`](dictionaries/mk)                                                              | Macedonian dictionary.                                              | mk<br>mk-cyrl                 | -                                                              |
+| [`mn-mn`](dictionaries/mn_MN)                                                        | Mongolian dictionary.                                               | mn<br>mn-MN                   | -                                                              |
 | [`mnemonics`](dictionaries/mnemonics)                                                | i86 Mnemonics dictionary for cspell                                 | -                             | c<br>cpp<br>h<br>hpp                                           |
 | [`monkeyc`](dictionaries/monkeyc) <sup>1</sup>                                       | Monkey C dictionary.                                                | -                             | monkeyc                                                        |
 | [`nb-no`](dictionaries/nb_NO)                                                        | Norwegian Bokmål dictionary.                                        | nb<br>nb-no                   | -                                                              |
@@ -529,8 +532,8 @@ Special thanks to all of our amazing contributors!
 [<img alt="Contributor shanefontaine" src="https://avatars.githubusercontent.com/u/9441295?v=4&size=128" width=64>](https://github.com/shanefontaine)
 [<img alt="Contributor sherpalabsio" src="https://avatars.githubusercontent.com/u/1914993?v=4&size=128" width=64>](https://github.com/sherpalabsio)
 [<img alt="Contributor smaraf" src="https://avatars.githubusercontent.com/u/1213709?v=4&size=128" width=64>](https://github.com/smaraf)
-[<img alt="Contributor snyk-bot" src="https://avatars.githubusercontent.com/u/19733683?v=4&size=128" width=64>](https://github.com/snyk-bot)
 [<img alt="Contributor thegraffix" src="https://avatars.githubusercontent.com/u/57874058?v=4&size=128" width=64>](https://github.com/thegraffix)
+[<img alt="Contributor zilayo" src="https://avatars.githubusercontent.com/u/84344709?v=4&size=128" width=64>](https://github.com/zilayo)
 [<img alt="Contributor brandonching" src="https://avatars.githubusercontent.com/u/68457375?v=4&size=128" width=64>](https://github.com/brandonching)
 [<img alt="Contributor carlocorradini" src="https://avatars.githubusercontent.com/u/21266147?v=4&size=128" width=64>](https://github.com/carlocorradini)
 [<img alt="Contributor carmenbianca" src="https://avatars.githubusercontent.com/u/12065945?v=4&size=128" width=64>](https://github.com/carmenbianca)
@@ -539,7 +542,6 @@ Special thanks to all of our amazing contributors!
 [<img alt="Contributor ctimmortal" src="https://avatars.githubusercontent.com/u/7118109?v=4&size=128" width=64>](https://github.com/ctimmortal)
 [<img alt="Contributor dalindev" src="https://avatars.githubusercontent.com/u/6508763?v=4&size=128" width=64>](https://github.com/dalindev)
 [<img alt="Contributor DanielHougaard" src="https://avatars.githubusercontent.com/u/62331820?v=4&size=128" width=64>](https://github.com/DanielHougaard)
-[<img alt="Contributor davidmh" src="https://avatars.githubusercontent.com/u/594302?v=4&size=128" width=64>](https://github.com/davidmh)
 [<img alt="Contributor DCsunset" src="https://avatars.githubusercontent.com/u/23468812?v=4&size=128" width=64>](https://github.com/DCsunset)
 [<img alt="Contributor Fydon" src="https://avatars.githubusercontent.com/u/3404761?v=4&size=128" width=64>](https://github.com/Fydon)
 [<img alt="Contributor izzqz" src="https://avatars.githubusercontent.com/u/35831725?v=4&size=128" width=64>](https://github.com/izzqz)
@@ -547,6 +549,7 @@ Special thanks to all of our amazing contributors!
 [<img alt="Contributor koviubi56" src="https://avatars.githubusercontent.com/u/58398849?v=4&size=128" width=64>](https://github.com/koviubi56)
 [<img alt="Contributor krzysiekwie" src="https://avatars.githubusercontent.com/u/54991735?v=4&size=128" width=64>](https://github.com/krzysiekwie)
 [<img alt="Contributor lnasc256" src="https://avatars.githubusercontent.com/u/29936145?v=4&size=128" width=64>](https://github.com/lnasc256)
+[<img alt="Contributor lukasfro" src="https://avatars.githubusercontent.com/u/1529698?v=4&size=128" width=64>](https://github.com/lukasfro)
 [<img alt="Contributor magnushiie" src="https://avatars.githubusercontent.com/u/734170?v=4&size=128" width=64>](https://github.com/magnushiie)
 [<img alt="Contributor Majid110" src="https://avatars.githubusercontent.com/u/22748381?v=4&size=128" width=64>](https://github.com/Majid110)
 [<img alt="Contributor markgaze" src="https://avatars.githubusercontent.com/u/16718355?v=4&size=128" width=64>](https://github.com/markgaze)
@@ -564,6 +567,7 @@ Special thanks to all of our amazing contributors!
 [<img alt="Contributor sasaking-k" src="https://avatars.githubusercontent.com/u/77533746?v=4&size=128" width=64>](https://github.com/sasaking-k)
 [<img alt="Contributor sennpang" src="https://avatars.githubusercontent.com/u/16861647?v=4&size=128" width=64>](https://github.com/sennpang)
 [<img alt="Contributor sheldonhull" src="https://avatars.githubusercontent.com/u/3526320?v=4&size=128" width=64>](https://github.com/sheldonhull)
+[<img alt="Contributor snyk-bot" src="https://avatars.githubusercontent.com/u/19733683?v=4&size=128" width=64>](https://github.com/snyk-bot)
 [<img alt="Contributor spiftire" src="https://avatars.githubusercontent.com/u/44159536?v=4&size=128" width=64>](https://github.com/spiftire)
 [<img alt="Contributor ssr-yuki" src="https://avatars.githubusercontent.com/u/15957608?v=4&size=128" width=64>](https://github.com/ssr-yuki)
 [<img alt="Contributor thakyZ" src="https://avatars.githubusercontent.com/u/950594?v=4&size=128" width=64>](https://github.com/thakyZ)
@@ -580,7 +584,6 @@ Special thanks to all of our amazing contributors!
 [<img alt="Contributor Yizack" src="https://avatars.githubusercontent.com/u/16264115?v=4&size=128" width=64>](https://github.com/Yizack)
 [<img alt="Contributor zdposter" src="https://avatars.githubusercontent.com/u/76629990?v=4&size=128" width=64>](https://github.com/zdposter)
 [<img alt="Contributor zhenzhenChange" src="https://avatars.githubusercontent.com/u/51586637?v=4&size=128" width=64>](https://github.com/zhenzhenChange)
-[<img alt="Contributor zilayo" src="https://avatars.githubusercontent.com/u/84344709?v=4&size=128" width=64>](https://github.com/zilayo)
 [<img alt="Contributor adam-zielonka" src="https://avatars.githubusercontent.com/u/31104775?v=4&size=128" width=64>](https://github.com/adam-zielonka)
 [<img alt="Contributor ADTC" src="https://avatars.githubusercontent.com/u/6047296?v=4&size=128" width=64>](https://github.com/ADTC)
 [<img alt="Contributor afifvdin" src="https://avatars.githubusercontent.com/u/94339143?v=4&size=128" width=64>](https://github.com/afifvdin)
@@ -596,6 +599,8 @@ Special thanks to all of our amazing contributors!
 [<img alt="Contributor Billzabob" src="https://avatars.githubusercontent.com/u/3711832?v=4&size=128" width=64>](https://github.com/Billzabob)
 [<img alt="Contributor BoltonBailey" src="https://avatars.githubusercontent.com/u/8030599?v=4&size=128" width=64>](https://github.com/BoltonBailey)
 [<img alt="Contributor Boshkovski-David" src="https://avatars.githubusercontent.com/u/172494720?v=4&size=128" width=64>](https://github.com/Boshkovski-David)
+[<img alt="Contributor btseee" src="https://avatars.githubusercontent.com/u/55880054?v=4&size=128" width=64>](https://github.com/btseee)
+[<img alt="Contributor davidmh" src="https://avatars.githubusercontent.com/u/594302?v=4&size=128" width=64>](https://github.com/davidmh)
 [<img alt="Contributor dcvikl" src="https://avatars.githubusercontent.com/u/65993?v=4&size=128" width=64>](https://github.com/dcvikl)
 [<img alt="Contributor dimitropoulos" src="https://avatars.githubusercontent.com/u/15232461?v=4&size=128" width=64>](https://github.com/dimitropoulos)
 [<img alt="Contributor edwardwilson" src="https://avatars.githubusercontent.com/u/871802?v=4&size=128" width=64>](https://github.com/edwardwilson)
@@ -616,7 +621,6 @@ Special thanks to all of our amazing contributors!
 [<img alt="Contributor kseino" src="https://avatars.githubusercontent.com/u/1378066?v=4&size=128" width=64>](https://github.com/kseino)
 [<img alt="Contributor lauraBaakman" src="https://avatars.githubusercontent.com/u/4301624?v=4&size=128" width=64>](https://github.com/lauraBaakman)
 [<img alt="Contributor lee0c" src="https://avatars.githubusercontent.com/u/13122293?v=4&size=128" width=64>](https://github.com/lee0c)
-[<img alt="Contributor lukasfro" src="https://avatars.githubusercontent.com/u/1529698?v=4&size=128" width=64>](https://github.com/lukasfro)
 [<img alt="Contributor ndthanhdev" src="https://avatars.githubusercontent.com/u/16331812?v=4&size=128" width=64>](https://github.com/ndthanhdev)
 [<img alt="Contributor NutCr4cker12" src="https://avatars.githubusercontent.com/u/44898642?v=4&size=128" width=64>](https://github.com/NutCr4cker12)
 [<img alt="Contributor Poikilos" src="https://avatars.githubusercontent.com/u/7557867?v=4&size=128" width=64>](https://github.com/Poikilos)
