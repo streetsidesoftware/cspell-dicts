@@ -3,6 +3,20 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+## [4.1.56](https://github.com/streetsidesoftware/cspell-dicts/compare/@cspell/dict-en-gb@4.1.55...@cspell/dict-en-gb@4.1.56) (2025-02-22)
+
+
+### Updates and Bug Fixes
+
+* Add back missing English words ([#4119](https://github.com/streetsidesoftware/cspell-dicts/issues/4119)) ([22126fb](https://github.com/streetsidesoftware/cspell-dicts/commit/22126fb65d0d2edbb0a627a3a013a988de41bc49))
+
+
+### Dependencies
+
+* The following workspace dependencies were updated
+  * devDependencies
+    * @cspell/dict-en-shared bumped to 1.0.22
+
 ## [4.1.55](https://github.com/streetsidesoftware/cspell-dicts/compare/@cspell/dict-en-gb@4.1.54...@cspell/dict-en-gb@4.1.55) (2025-02-21)
 
 
