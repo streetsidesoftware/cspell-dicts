@@ -37,6 +37,7 @@
 - [Lithuanian](dictionaries/lt_LT) - Lithuanian dictionary.
 - [Lorem-ipsum](dictionaries/lorem-ipsum) - Lorem-ipsum dictionary. <sup>1</sup>
 - [Macedonian](dictionaries/mk) - Macedonian dictionary.
+- [Mongolian](dictionaries/mn_MN) - Mongolian dictionary for cspell.
 - [Norwegian Bokmål](dictionaries/nb_NO) - Norwegian Bokmål dictionary.
 - [Persian Dictionary](dictionaries/fa_IR) - Persian Dictionary
 - [Polish Dictionary](dictionaries/pl_PL) - Polish Dictionary
@@ -216,6 +217,7 @@
 | [@cspell/dict-markdown](./dictionaries/markdown#readme)<sup>1</sup>                             | Markdown                          |                                                                                                                                                                                           |
 | [@cspell/dict-medicalterms](./dictionaries/medicalterms#readme)                                 | Medical terms                     | medical terms<sup>2</sup>                                                                                                                                                                 |
 | [@cspell/dict-mk](./dictionaries/mk#readme)                                                     | Macedonian                        | mk                                                                                                                                                                                        |
+| [@cspell/dict-mn-mn](./dictionaries/mn_MN#readme)                                               | Mongolian                         | mn-mn                                                                                                                                                                                     |
 | [@cspell/dict-mnemonics](./dictionaries/mnemonics#readme)                                       | Mnemonics                         | mnemonics                                                                                                                                                                                 |
 | [@cspell/dict-monkeyc](./dictionaries/monkeyc#readme)<sup>1</sup>                               | Monkey C                          | monkeyc                                                                                                                                                                                   |
 | [@cspell/dict-nb-no](./dictionaries/nb_NO#readme)                                               | Norwegian Bokmål                  | nb-no                                                                                                                                                                                     |
@@ -351,6 +353,7 @@
 | [`makefile`](dictionaries/makefile) <sup>1</sup>                                     | Makefile dictionary.                                                | -                             | makefile                                                       |
 | [`medical terms`](dictionaries/medicalterms) <sup>2</sup>                            | List of nearly 100,000 medical terms.                               | -                             | -                                                              |
 | [`mk`](dictionaries/mk)                                                              | Macedonian dictionary.                                              | mk<br>mk-cyrl                 | -                                                              |
+| [`mn-mn`](dictionaries/mn_MN)                                                        | Mongolian dictionary.                                               | mn<br>mn-MN                   | -                                                              |
 | [`mnemonics`](dictionaries/mnemonics)                                                | i86 Mnemonics dictionary for cspell                                 | -                             | c<br>cpp<br>h<br>hpp                                           |
 | [`monkeyc`](dictionaries/monkeyc) <sup>1</sup>                                       | Monkey C dictionary.                                                | -                             | monkeyc                                                        |
 | [`nb-no`](dictionaries/nb_NO)                                                        | Norwegian Bokmål dictionary.                                        | nb<br>nb-no                   | -                                                              |
