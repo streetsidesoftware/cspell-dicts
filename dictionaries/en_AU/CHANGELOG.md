@@ -1,5 +1,19 @@
 # Changelog
 
+## [1.0.23](https://github.com/streetsidesoftware/cspell-dicts/compare/@cspell/dict-en-au@1.0.22...@cspell/dict-en-au@1.0.23) (2025-02-22)
+
+
+### Updates and Bug Fixes
+
+* Add back missing English words ([#4119](https://github.com/streetsidesoftware/cspell-dicts/issues/4119)) ([22126fb](https://github.com/streetsidesoftware/cspell-dicts/commit/22126fb65d0d2edbb0a627a3a013a988de41bc49))
+
+
+### Dependencies
+
+* The following workspace dependencies were updated
+  * devDependencies
+    * @cspell/dict-en-shared bumped to 1.0.22
+
 ## [1.0.22](https://github.com/streetsidesoftware/cspell-dicts/compare/@cspell/dict-en-au@1.0.21...@cspell/dict-en-au@1.0.22) (2025-02-21)
 
 
