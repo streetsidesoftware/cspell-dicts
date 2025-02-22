@@ -1,5 +1,20 @@
 # Release Notes
 
+## [28.11.0](https://github.com/streetsidesoftware/cspell-dicts/compare/cspell-dicts@28.10.1...cspell-dicts@28.11.0) (2025-02-22)
+
+
+### Features
+
+* Adding Mongolian language ([#4109](https://github.com/streetsidesoftware/cspell-dicts/issues/4109)) ([ae8745d](https://github.com/streetsidesoftware/cspell-dicts/commit/ae8745deab0a57a45e59cbd32373113809710982))
+
+
+### Updates and Bug Fixes
+
+* Remove misspelling from cpp dict ([#4111](https://github.com/streetsidesoftware/cspell-dicts/issues/4111)) ([443473e](https://github.com/streetsidesoftware/cspell-dicts/commit/443473e150629d6b77c3c91a97a95dbf27ba0d67))
+* Use Mongolian dictionary from `wooorm/dictionaries` ([#4116](https://github.com/streetsidesoftware/cspell-dicts/issues/4116)) ([77932b2](https://github.com/streetsidesoftware/cspell-dicts/commit/77932b27b40283862aa04f5df7bd269492a3c46f))
+* Workflow Bot -- Build Dictionaries ([#4113](https://github.com/streetsidesoftware/cspell-dicts/issues/4113)) ([42d7438](https://github.com/streetsidesoftware/cspell-dicts/commit/42d74384a16825fd0877bd9f426f1d2133687d79))
+* Workflow Bot -- Build Dictionaries ([#4114](https://github.com/streetsidesoftware/cspell-dicts/issues/4114)) ([c37dae7](https://github.com/streetsidesoftware/cspell-dicts/commit/c37dae7d20b8448ff92361dd72f65c10701be616))
+
 ## [28.10.1](https://github.com/streetsidesoftware/cspell-dicts/compare/cspell-dicts@28.10.0...cspell-dicts@28.10.1) (2025-02-21)
 
 
