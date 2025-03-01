@@ -11,6 +11,9 @@ importers:
       '@cspell/cspell-tools':
         specifier: ^8.17.5
         version: 8.17.5(typescript@5.7.3)
+      '@eslint/js':
+        specifier: ^9.21.0
+        version: 9.21.0
       '@lerna-lite/cli':
         specifier: ^3.12.1
         version: 3.12.1(@lerna-lite/exec@3.12.1)(@lerna-lite/publish@3.12.1)(@lerna-lite/run@3.12.1)(@lerna-lite/version@3.12.1(@lerna-lite/exec@3.12.1)(@lerna-lite/publish@3.12.1)(@lerna-lite/run@3.12.1)(@types/node@22.13.5)(typescript@5.7.3))(@types/node@22.13.5)(typescript@5.7.3)
@@ -5459,7 +5462,7 @@ snapshots:
   '@types/vinyl@2.0.12':
     dependencies:
       '@types/expect': 1.20.4
-      '@types/node': 22.13.5
+      '@types/node': 20.17.19
 
   '@vercel/nft@0.27.10(encoding@0.1.13)':
     dependencies:
