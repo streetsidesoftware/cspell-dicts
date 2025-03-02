@@ -1,5 +1,12 @@
 # Change Log
 
+## [1.1.1](https://github.com/streetsidesoftware/cspell-dicts/compare/@cspell/dict-terraform@1.1.0...@cspell/dict-terraform@1.1.1) (2025-03-02)
+
+
+### Updates and Bug Fixes
+
+* Make sure files of type `tf` use `terraform` dict ([#4137](https://github.com/streetsidesoftware/cspell-dicts/issues/4137)) ([a6e896b](https://github.com/streetsidesoftware/cspell-dicts/commit/a6e896ba4775c11dfac83cd61e991e1a01a21692))
+
 ## [1.1.0](https://github.com/streetsidesoftware/cspell-dicts/compare/@cspell/dict-terraform@1.0.8...@cspell/dict-terraform@1.1.0) (2025-01-08)
 
 
