@@ -3,6 +3,14 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+## [3.2.6](https://github.com/streetsidesoftware/cspell-dicts/compare/@cspell/dict-fullstack@3.2.5...@cspell/dict-fullstack@3.2.6) (2025-03-02)
+
+
+### Updates and Bug Fixes
+
+* **fullstack:** pocketbase ([#4124](https://github.com/streetsidesoftware/cspell-dicts/issues/4124)) ([d803864](https://github.com/streetsidesoftware/cspell-dicts/commit/d803864add6015fed9c5a4b0e0e675eb3a1f88a7))
+* Workflow Bot -- Update Dictionaries ([#4121](https://github.com/streetsidesoftware/cspell-dicts/issues/4121)) ([2c8e60d](https://github.com/streetsidesoftware/cspell-dicts/commit/2c8e60d98a652482024d61317ce7ba0850aa620e))
+
 ## [3.2.5](https://github.com/streetsidesoftware/cspell-dicts/compare/@cspell/dict-fullstack@3.2.4...@cspell/dict-fullstack@3.2.5) (2025-02-21)
 
 

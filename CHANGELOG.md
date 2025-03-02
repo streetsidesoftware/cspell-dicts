@@ -1,5 +1,15 @@
 # Release Notes
 
+## [28.11.2](https://github.com/streetsidesoftware/cspell-dicts/compare/cspell-dicts@28.11.1...cspell-dicts@28.11.2) (2025-03-02)
+
+
+### Updates and Bug Fixes
+
+* **fullstack:** pocketbase ([#4124](https://github.com/streetsidesoftware/cspell-dicts/issues/4124)) ([d803864](https://github.com/streetsidesoftware/cspell-dicts/commit/d803864add6015fed9c5a4b0e0e675eb3a1f88a7))
+* Make sure files of type `tf` use `terraform` dict ([#4137](https://github.com/streetsidesoftware/cspell-dicts/issues/4137)) ([a6e896b](https://github.com/streetsidesoftware/cspell-dicts/commit/a6e896ba4775c11dfac83cd61e991e1a01a21692))
+* Workflow Bot -- Build Dictionaries ([#4127](https://github.com/streetsidesoftware/cspell-dicts/issues/4127)) ([793b1aa](https://github.com/streetsidesoftware/cspell-dicts/commit/793b1aabc14f4fdfffb7dc2789b558f885b20920))
+* Workflow Bot -- Update Dictionaries ([#4121](https://github.com/streetsidesoftware/cspell-dicts/issues/4121)) ([2c8e60d](https://github.com/streetsidesoftware/cspell-dicts/commit/2c8e60d98a652482024d61317ce7ba0850aa620e))
+
 ## [28.11.1](https://github.com/streetsidesoftware/cspell-dicts/compare/cspell-dicts@28.11.0...cspell-dicts@28.11.1) (2025-02-22)
 
 
