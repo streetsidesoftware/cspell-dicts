@@ -1,5 +1,14 @@
 # Release Notes
 
+## [28.11.3](https://github.com/streetsidesoftware/cspell-dicts/compare/cspell-dicts@28.11.2...cspell-dicts@28.11.3) (2025-03-03)
+
+
+### Updates and Bug Fixes
+
+* correct 'definition' spellings in cpp.txt ([#4131](https://github.com/streetsidesoftware/cspell-dicts/issues/4131)) ([51bb994](https://github.com/streetsidesoftware/cspell-dicts/commit/51bb994b90a19dd05a7c309f75a5620a8d6de1bd))
+* Workflow Bot -- Build Dictionaries ([#4142](https://github.com/streetsidesoftware/cspell-dicts/issues/4142)) ([494c36d](https://github.com/streetsidesoftware/cspell-dicts/commit/494c36d42e908dc8f8d6b55f9c4f3da147942126))
+* Workflow Bot -- Update Dictionaries ([#4140](https://github.com/streetsidesoftware/cspell-dicts/issues/4140)) ([8a363ee](https://github.com/streetsidesoftware/cspell-dicts/commit/8a363ee1c237eb4d3b5a2aaa7ea1662a308bbb97))
+
 ## [28.11.2](https://github.com/streetsidesoftware/cspell-dicts/compare/cspell-dicts@28.11.1...cspell-dicts@28.11.2) (2025-03-02)
 
 
