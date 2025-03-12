@@ -12,6 +12,12 @@
             "description": "Software terms dictionary."
         },
         {
+            // changing the name is a breaking change.
+            "name": "software-tools",
+            "path": "./dict/software-tools.txt",
+            "description": "Software tools dictionary."
+        },
+        {
             // Note this dictionary name is not consistent with `softwareTerms` but it is
             // consistent with other dictionaries.
             "name": "networking-terms",
@@ -42,6 +48,7 @@
         "coding-compound-terms",
         "computing-acronyms",
         "software-term-suggestions",
+        "software-tools",
         // "networking-terms" - is not included by default because it is very specific.
         "web-services"
     ]
