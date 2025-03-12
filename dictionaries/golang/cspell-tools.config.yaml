@@ -8,6 +8,7 @@ targets:
         allowedSplitWords:
           - ../en_US/en_US.trie
           - ../software-terms/dict/softwareTerms.txt
+          - ../software-terms/dict/software-tools.txt
           - src/allowed-terms.txt
           - src/go.txt # Use the source for whole words when splitting.
       - filename: src/go-words/go.txt
@@ -15,6 +16,7 @@ targets:
         allowedSplitWords:
           - ../en_US/en_US.trie
           - ../software-terms/dict/softwareTerms.txt
+          - ../software-terms/dict/software-tools.txt
           - src/allowed-terms.txt
           - src/go-words/go.txt # Use the source for whole words when splitting.
       - filename: src/allowed-terms.txt
