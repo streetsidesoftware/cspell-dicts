@@ -1,5 +1,19 @@
 # Change Log
 
+## [1.0.37](https://github.com/streetsidesoftware/cspell-dicts/compare/@cspell/dict-cspell-bundle@1.0.36...@cspell/dict-cspell-bundle@1.0.37) (2025-03-12)
+
+
+### Dependencies
+
+* The following workspace dependencies were updated
+  * dependencies
+    * @cspell/dict-cpp bumped to 6.0.6
+    * @cspell/dict-golang bumped to 6.0.19
+    * @cspell/dict-npm bumped to 5.1.30
+    * @cspell/dict-python bumped to 4.2.16
+    * @cspell/dict-ruby bumped to 5.0.8
+    * @cspell/dict-software-terms bumped to 5.0.0
+
 ## [1.0.36](https://github.com/streetsidesoftware/cspell-dicts/compare/@cspell/dict-cspell-bundle@1.0.35...@cspell/dict-cspell-bundle@1.0.36) (2025-03-03)
 
 

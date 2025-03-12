@@ -1,5 +1,26 @@
 # Release Notes
 
+## [29.0.0](https://github.com/streetsidesoftware/cspell-dicts/compare/cspell-dicts@28.11.4...cspell-dicts@29.0.0) (2025-03-12)
+
+
+### ⚠ BREAKING CHANGES
+
+* separate out software tools from terms ([#4161](https://github.com/streetsidesoftware/cspell-dicts/issues/4161))
+
+### Features
+
+* separate out software tools from terms ([#4161](https://github.com/streetsidesoftware/cspell-dicts/issues/4161)) ([0484924](https://github.com/streetsidesoftware/cspell-dicts/commit/0484924d94f1dbe550c04a7a332b00e9bca386b6))
+
+
+### Updates and Bug Fixes
+
+* Add memo and nano to software terms ([#4165](https://github.com/streetsidesoftware/cspell-dicts/issues/4165)) ([aaf8998](https://github.com/streetsidesoftware/cspell-dicts/commit/aaf899837c3f0fd8df32a679b956bc7ad99a2666))
+* Add Samba-related words ([#4162](https://github.com/streetsidesoftware/cspell-dicts/issues/4162)) ([820de63](https://github.com/streetsidesoftware/cspell-dicts/commit/820de63eeeea55fc228f4a33908698dea256d91b))
+* Add software tool names and options ([#4159](https://github.com/streetsidesoftware/cspell-dicts/issues/4159)) ([07035c5](https://github.com/streetsidesoftware/cspell-dicts/commit/07035c585b042ff45d42dfd51ed81ad1e66974ae))
+* Add software tools ([#4164](https://github.com/streetsidesoftware/cspell-dicts/issues/4164)) ([94e3172](https://github.com/streetsidesoftware/cspell-dicts/commit/94e31725b12affbd1b408a51c6258eb89cd2d3cb))
+* Workflow Bot -- Build Dictionaries ([#4160](https://github.com/streetsidesoftware/cspell-dicts/issues/4160)) ([35540f6](https://github.com/streetsidesoftware/cspell-dicts/commit/35540f66b9b0774cd0b57052b8da149e2da39510))
+* Workflow Bot -- Update Dictionaries ([#4154](https://github.com/streetsidesoftware/cspell-dicts/issues/4154)) ([da3fe8a](https://github.com/streetsidesoftware/cspell-dicts/commit/da3fe8adcfc82a932537085d2aab45516295b330))
+
 ## [28.11.4](https://github.com/streetsidesoftware/cspell-dicts/compare/cspell-dicts@28.11.3...cspell-dicts@28.11.4) (2025-03-03)
 
 

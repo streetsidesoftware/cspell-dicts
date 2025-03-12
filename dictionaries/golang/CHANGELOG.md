@@ -3,6 +3,13 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+## [6.0.19](https://github.com/streetsidesoftware/cspell-dicts/compare/@cspell/dict-golang@6.0.18...@cspell/dict-golang@6.0.19) (2025-03-12)
+
+
+### Updates and Bug Fixes
+
+* Add memo and nano to software terms ([#4165](https://github.com/streetsidesoftware/cspell-dicts/issues/4165)) ([aaf8998](https://github.com/streetsidesoftware/cspell-dicts/commit/aaf899837c3f0fd8df32a679b956bc7ad99a2666))
+
 ## [6.0.18](https://github.com/streetsidesoftware/cspell-dicts/compare/@cspell/dict-golang@6.0.17...@cspell/dict-golang@6.0.18) (2024-12-27)
 
 

@@ -3,6 +3,13 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+## [4.2.16](https://github.com/streetsidesoftware/cspell-dicts/compare/@cspell/dict-python@4.2.15...@cspell/dict-python@4.2.16) (2025-03-12)
+
+
+### Updates and Bug Fixes
+
+* Add memo and nano to software terms ([#4165](https://github.com/streetsidesoftware/cspell-dicts/issues/4165)) ([aaf8998](https://github.com/streetsidesoftware/cspell-dicts/commit/aaf899837c3f0fd8df32a679b956bc7ad99a2666))
+
 ## [4.2.15](https://github.com/streetsidesoftware/cspell-dicts/compare/@cspell/dict-python@4.2.14...@cspell/dict-python@4.2.15) (2025-01-18)
 
 
