@@ -9,6 +9,12 @@ targets:
         split: true
       - filename: src/software-terms.txt
         split: true
+    format: plaintext
+    targetDirectory: './dict'
+    generateNonStrict: false
+    compress: false
+  - name: 'software-tools'
+    sources:
       - filename: src/software-tools.txt
         split: true
     format: plaintext
