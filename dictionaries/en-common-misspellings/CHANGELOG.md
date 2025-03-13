@@ -1,5 +1,12 @@
 # Change Log
 
+## [2.0.10](https://github.com/streetsidesoftware/cspell-dicts/compare/@cspell/dict-en-common-misspellings@2.0.9...@cspell/dict-en-common-misspellings@2.0.10) (2025-03-13)
+
+
+### Updates and Bug Fixes
+
+* add programatic-&gt;programmatic suggestion ([6f4ec6b](https://github.com/streetsidesoftware/cspell-dicts/commit/6f4ec6b8376732a7ee6b120d5a1d28b5c142a6be))
+
 ## [2.0.9](https://github.com/streetsidesoftware/cspell-dicts/compare/@cspell/dict-en-common-misspellings@2.0.8...@cspell/dict-en-common-misspellings@2.0.9) (2025-01-18)
 
 
