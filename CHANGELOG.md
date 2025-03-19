@@ -9,6 +9,7 @@
 * Fix typo of indentless_arrays ([#4177](https://github.com/streetsidesoftware/cspell-dicts/issues/4177)) ([e1ac617](https://github.com/streetsidesoftware/cspell-dicts/commit/e1ac6175e5f8cac4d8f653fa95d3ab3a2a87eef0))
 * Workflow Bot -- Build Dictionaries ([#4178](https://github.com/streetsidesoftware/cspell-dicts/issues/4178)) ([899ae8e](https://github.com/streetsidesoftware/cspell-dicts/commit/899ae8ee64083047a961bfb92fca4ddd3f6161ab))
 * Workflow Bot -- Build Dictionaries ([#4182](https://github.com/streetsidesoftware/cspell-dicts/issues/4182)) ([2eec6cd](https://github.com/streetsidesoftware/cspell-dicts/commit/2eec6cda280ea293905f32830dcd19014aaa1293))
+* Workflow Bot -- Build Dictionaries ([#4186](https://github.com/streetsidesoftware/cspell-dicts/issues/4186)) ([f059ec7](https://github.com/streetsidesoftware/cspell-dicts/commit/f059ec7b8cf60eb25775f42975a626ea864635f5))
 * Workflow Bot -- Update Dictionaries ([#4175](https://github.com/streetsidesoftware/cspell-dicts/issues/4175)) ([2a62b0d](https://github.com/streetsidesoftware/cspell-dicts/commit/2a62b0d9fd2af497dbf9beaf794ea7c20a93b325))
 
 ## [29.0.1](https://github.com/streetsidesoftware/cspell-dicts/compare/cspell-dicts@29.0.0...cspell-dicts@29.0.1) (2025-03-13)
