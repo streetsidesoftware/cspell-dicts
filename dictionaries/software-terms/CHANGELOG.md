@@ -3,6 +3,14 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+## [5.0.2](https://github.com/streetsidesoftware/cspell-dicts/compare/@cspell/dict-software-terms@5.0.1...@cspell/dict-software-terms@5.0.2) (2025-03-19)
+
+
+### Updates and Bug Fixes
+
+* Fix typo of indentless_arrays ([#4177](https://github.com/streetsidesoftware/cspell-dicts/issues/4177)) ([e1ac617](https://github.com/streetsidesoftware/cspell-dicts/commit/e1ac6175e5f8cac4d8f653fa95d3ab3a2a87eef0))
+* Workflow Bot -- Build Dictionaries ([#4178](https://github.com/streetsidesoftware/cspell-dicts/issues/4178)) ([899ae8e](https://github.com/streetsidesoftware/cspell-dicts/commit/899ae8ee64083047a961bfb92fca4ddd3f6161ab))
+
 ## [5.0.1](https://github.com/streetsidesoftware/cspell-dicts/compare/@cspell/dict-software-terms@5.0.0...@cspell/dict-software-terms@5.0.1) (2025-03-13)
 
 

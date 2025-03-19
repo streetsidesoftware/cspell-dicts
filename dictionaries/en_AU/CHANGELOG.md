@@ -1,5 +1,19 @@
 # Changelog
 
+## [1.0.25](https://github.com/streetsidesoftware/cspell-dicts/compare/@cspell/dict-en-au@1.0.24...@cspell/dict-en-au@1.0.25) (2025-03-19)
+
+
+### Updates and Bug Fixes
+
+* Workflow Bot -- Build Dictionaries ([#4182](https://github.com/streetsidesoftware/cspell-dicts/issues/4182)) ([2eec6cd](https://github.com/streetsidesoftware/cspell-dicts/commit/2eec6cda280ea293905f32830dcd19014aaa1293))
+
+
+### Dependencies
+
+* The following workspace dependencies were updated
+  * devDependencies
+    * @cspell/dict-en-shared bumped to 1.0.24
+
 ## [1.0.24](https://github.com/streetsidesoftware/cspell-dicts/compare/@cspell/dict-en-au@1.0.23...@cspell/dict-en-au@1.0.24) (2025-03-03)
 
 

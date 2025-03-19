@@ -1,5 +1,13 @@
 # Change Log
 
+## [1.0.24](https://github.com/streetsidesoftware/cspell-dicts/compare/@cspell/dict-en-shared@1.0.23...@cspell/dict-en-shared@1.0.24) (2025-03-19)
+
+
+### Updates and Bug Fixes
+
+* Add "succumber", "succumbence", and "succumbency" to the en_shared dictionary to complement the existing. ([#4184](https://github.com/streetsidesoftware/cspell-dicts/issues/4184)) ([6c17fb1](https://github.com/streetsidesoftware/cspell-dicts/commit/6c17fb1919846e87bdcef04c40d5733c0365242c))
+* Workflow Bot -- Build Dictionaries ([#4182](https://github.com/streetsidesoftware/cspell-dicts/issues/4182)) ([2eec6cd](https://github.com/streetsidesoftware/cspell-dicts/commit/2eec6cda280ea293905f32830dcd19014aaa1293))
+
 ## [1.0.23](https://github.com/streetsidesoftware/cspell-dicts/compare/@cspell/dict-en-shared@1.0.22...@cspell/dict-en-shared@1.0.23) (2025-03-03)
 
 
