@@ -1,0 +1,52 @@
+{
+  "name": "@cspell/dict-bn",
+  "version": "1.0.0",
+  "description": "Bengali dictionary for cspell.",
+  "publishConfig": {
+    "access": "public",
+    "provenance": true
+  },
+  "exports": {
+    ".": "./cspell-ext.json",
+    "./cspell": "./cspell-ext.json",
+    "./cspell-ext.json": "./cspell-ext.json"
+  },
+  "scripts": {
+    "build": "cspell-tools-cli build --conditional",
+    "conditional-build": "pnpm run sync && pnpm run build",
+    "sync": "pnpm cpy ./node_modules/BengaliDictionary/BengaliWordList_439.txt src/BengaliDictionary/BengaliWordList_439.txt",
+    "test": "pnpm run test:words && pnpm run test:text",
+    "test:text": "cspell samples",
+    "test:words": "head -n 1000 \"src/BengaliDictionary/BengaliWordList_439.txt\" | cspell -c ./cspell.json \"--locale=bn\" \"--languageId=*\" stdin",
+    "prepublishOnly": "echo OK",
+    "prepare:dictionary": "echo OK"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/streetsidesoftware/cspell-dicts"
+  },
+  "keywords": [
+    "cspell",
+    "cspell-ext",
+    "bn",
+    "Bengali",
+    "dictionary",
+    "spelling"
+  ],
+  "author": "Street Side Software",
+  "contributors": [],
+  "license": "GPL-3.0",
+  "bugs": {
+    "url": "https://github.com/streetsidesoftware/cspell-dicts/issues"
+  },
+  "homepage": "https://github.com/streetsidesoftware/cspell-dicts/blob/main/dictionaries/bn#readme",
+  "devDependencies": {
+    "BengaliDictionary": "github:MinhasKamal/BengaliDictionary"
+  },
+  "files": [
+    "dict/bn.trie",
+    "cspell-ext.json",
+    "*.js",
+    "*.d.ts"
+  ]
+}
