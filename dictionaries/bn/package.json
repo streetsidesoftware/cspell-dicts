@@ -13,10 +13,12 @@
     "./cspell-ext.json": "./cspell-ext.json"
   },
   "scripts": {
-    "build": "cross-env NODE_OPTIONS=--max_old_space_size=8192 cspell-tools-cli build",
-    "test": "head -n 1000 \"src/bn.txt\" | cspell -c ./cspell-ext.json \"--locale=bn\" \"--languageId=*\" stdin",
+    "build": "cspell-tools-cli build --conditional",
+    "conditional-build": "pnpm run sync && pnpm run build",
+    "sync": "pnpm cpy ./node_modules/BengaliDictionary/BengaliWordList_439.txt src/BengaliDictionary/BengaliWordList_439.txt",
+    "test": "head -n 1000 \"src/BengaliDictionary/BengaliWordList_439.txt\" | cspell -c ./cspell.json \"--locale=bn\" \"--languageId=*\" stdin",
     "prepublishOnly": "echo OK",
-    "prepare:dictionary": "pnpm run build"
+    "prepare:dictionary": "echo OK"
   },
   "repository": {
     "type": "git",
@@ -37,8 +39,9 @@
     "url": "https://github.com/streetsidesoftware/cspell-dicts/issues"
   },
   "homepage": "https://github.com/streetsidesoftware/cspell-dicts/blob/main/dictionaries/bn#readme",
-  "devDependencies": {},
-  "dependencies": {},
+  "devDependencies": {
+    "BengaliDictionary": "github:MinhasKamal/BengaliDictionary"
+  },
   "files": [
     "dict/bn.trie",
     "cspell-ext.json",
