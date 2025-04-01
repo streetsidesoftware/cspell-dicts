@@ -3,6 +3,15 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+## [5.0.3](https://github.com/streetsidesoftware/cspell-dicts/compare/@cspell/dict-software-terms@5.0.2...@cspell/dict-software-terms@5.0.3) (2025-04-01)
+
+
+### Updates and Bug Fixes
+
+* add 'boop' ([#4211](https://github.com/streetsidesoftware/cspell-dicts/issues/4211)) ([ff66b5d](https://github.com/streetsidesoftware/cspell-dicts/commit/ff66b5d04094048afdac3153dace1edc6d8a7fdc))
+* add attw, markdownlintignore, npmjs words ([#4210](https://github.com/streetsidesoftware/cspell-dicts/issues/4210)) ([1a91661](https://github.com/streetsidesoftware/cspell-dicts/commit/1a916615490980c0d598b48379635a58ceb33a4f))
+* Workflow Bot -- Build Dictionaries ([#4212](https://github.com/streetsidesoftware/cspell-dicts/issues/4212)) ([347217e](https://github.com/streetsidesoftware/cspell-dicts/commit/347217e0493ac89335829185365f97148354f821))
+
 ## [5.0.2](https://github.com/streetsidesoftware/cspell-dicts/compare/@cspell/dict-software-terms@5.0.1...@cspell/dict-software-terms@5.0.2) (2025-03-19)
 
 

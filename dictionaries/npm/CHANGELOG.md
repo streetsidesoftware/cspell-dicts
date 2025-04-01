@@ -3,6 +3,16 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+## [5.1.32](https://github.com/streetsidesoftware/cspell-dicts/compare/@cspell/dict-npm@5.1.31...@cspell/dict-npm@5.1.32) (2025-04-01)
+
+
+### Updates and Bug Fixes
+
+* add attw, markdownlintignore, npmjs words ([#4210](https://github.com/streetsidesoftware/cspell-dicts/issues/4210)) ([1a91661](https://github.com/streetsidesoftware/cspell-dicts/commit/1a916615490980c0d598b48379635a58ceb33a4f))
+* Workflow Bot -- Build Dictionaries ([#4212](https://github.com/streetsidesoftware/cspell-dicts/issues/4212)) ([347217e](https://github.com/streetsidesoftware/cspell-dicts/commit/347217e0493ac89335829185365f97148354f821))
+* Workflow Bot -- Update Dictionaries ([#4194](https://github.com/streetsidesoftware/cspell-dicts/issues/4194)) ([fb725da](https://github.com/streetsidesoftware/cspell-dicts/commit/fb725daa258cb63afd0a542dff7d7c6e40d838e0))
+* Workflow Bot -- Update Dictionaries ([#4217](https://github.com/streetsidesoftware/cspell-dicts/issues/4217)) ([47bd3db](https://github.com/streetsidesoftware/cspell-dicts/commit/47bd3db52eedb736b5dbc770e77665cfd58e968e))
+
 ## [5.1.31](https://github.com/streetsidesoftware/cspell-dicts/compare/@cspell/dict-npm@5.1.30...@cspell/dict-npm@5.1.31) (2025-03-19)
 
 

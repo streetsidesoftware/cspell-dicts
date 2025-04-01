@@ -3,6 +3,13 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+## [6.0.7](https://github.com/streetsidesoftware/cspell-dicts/compare/@cspell/dict-cpp@6.0.6...@cspell/dict-cpp@6.0.7) (2025-04-01)
+
+
+### Updates and Bug Fixes
+
+* Remove misspelling `equivelent ` from CPP ([#4226](https://github.com/streetsidesoftware/cspell-dicts/issues/4226)) ([0958747](https://github.com/streetsidesoftware/cspell-dicts/commit/09587475e516ee864782abf89f256d1b430618c9))
+
 ## [6.0.6](https://github.com/streetsidesoftware/cspell-dicts/compare/@cspell/dict-cpp@6.0.5...@cspell/dict-cpp@6.0.6) (2025-03-12)
 
 
