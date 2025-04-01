@@ -15,3 +15,5 @@ function main() {
 const r0 = /Apples\s\w+/gimusy;
 
 const dir = '/files/guys/';
+
+const bigNum = 0xffn;
