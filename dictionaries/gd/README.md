@@ -41,9 +41,13 @@ The `cspell-ext.json` file in this package should be added to the import section
 
 See: [How to Create a New Dictionary](https://github.com/streetsidesoftware/cspell-dicts#how-to-create-a-new-dictionary)
 
+## Source
+
+- [Hunspell-gd](https://github.com/kscanne/hunspell-gd)
+
 ## License
 
-MIT
+GPL-3
 
 > Some packages may have other licenses included.
 

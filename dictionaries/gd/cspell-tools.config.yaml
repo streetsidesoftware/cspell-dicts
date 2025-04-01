@@ -3,7 +3,7 @@
 targets:
   - name: 'gd'
     sources:
-      - filename: 'src/gd.dic'
+      - filename: 'src/hunspell-gd/gd.dic'
       - filename: 'src/additional_words.txt'
     format: 'trie3'
     targetDirectory: './dict'
