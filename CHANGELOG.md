@@ -1,5 +1,17 @@
 # Release Notes
 
+## [29.1.1](https://github.com/streetsidesoftware/cspell-dicts/compare/cspell-dicts@29.1.0...cspell-dicts@29.1.1) (2025-04-01)
+
+
+### Updates and Bug Fixes
+
+* add `neostandard` ([#4236](https://github.com/streetsidesoftware/cspell-dicts/issues/4236)) ([7f01686](https://github.com/streetsidesoftware/cspell-dicts/commit/7f0168689e18d8a463be4764866e43719408e782))
+* add `unsized` to `en_shared` dictionary ([#4224](https://github.com/streetsidesoftware/cspell-dicts/issues/4224)) ([aa188f2](https://github.com/streetsidesoftware/cspell-dicts/commit/aa188f2073ceb58f31aa48630d11ad5358fdd060))
+* Ignore BitInt literal hex numbers. ([#4238](https://github.com/streetsidesoftware/cspell-dicts/issues/4238)) ([db56427](https://github.com/streetsidesoftware/cspell-dicts/commit/db56427bdaaa3bea91a49347fbe393432e2e4731))
+* Workflow Bot -- Build Dictionaries ([#4235](https://github.com/streetsidesoftware/cspell-dicts/issues/4235)) ([cb96bfd](https://github.com/streetsidesoftware/cspell-dicts/commit/cb96bfd8b81f38b62af1b87704dfb2de8f651cc9))
+* Workflow Bot -- Build Dictionaries ([#4239](https://github.com/streetsidesoftware/cspell-dicts/issues/4239)) ([0f45809](https://github.com/streetsidesoftware/cspell-dicts/commit/0f458090372e24af38251804e0b39e07a1105637))
+* Workflow Bot -- Build Dictionaries ([#4240](https://github.com/streetsidesoftware/cspell-dicts/issues/4240)) ([4718e6c](https://github.com/streetsidesoftware/cspell-dicts/commit/4718e6ce7a4b412092733a74013c27ca8c4989fb))
+
 ## [29.1.0](https://github.com/streetsidesoftware/cspell-dicts/compare/cspell-dicts@29.0.2...cspell-dicts@29.1.0) (2025-04-01)
 
 

@@ -3,6 +3,13 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+## [3.2.1](https://github.com/streetsidesoftware/cspell-dicts/compare/@cspell/dict-typescript@3.2.0...@cspell/dict-typescript@3.2.1) (2025-04-01)
+
+
+### Updates and Bug Fixes
+
+* Ignore BitInt literal hex numbers. ([#4238](https://github.com/streetsidesoftware/cspell-dicts/issues/4238)) ([db56427](https://github.com/streetsidesoftware/cspell-dicts/commit/db56427bdaaa3bea91a49347fbe393432e2e4731))
+
 ## [3.2.0](https://github.com/streetsidesoftware/cspell-dicts/compare/@cspell/dict-typescript@3.1.12...@cspell/dict-typescript@3.2.0) (2025-01-08)
 
 
