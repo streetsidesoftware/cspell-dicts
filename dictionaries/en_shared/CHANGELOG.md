@@ -1,5 +1,13 @@
 # Change Log
 
+## [1.0.25](https://github.com/streetsidesoftware/cspell-dicts/compare/@cspell/dict-en-shared@1.0.24...@cspell/dict-en-shared@1.0.25) (2025-04-01)
+
+
+### Updates and Bug Fixes
+
+* add `unsized` to `en_shared` dictionary ([#4224](https://github.com/streetsidesoftware/cspell-dicts/issues/4224)) ([aa188f2](https://github.com/streetsidesoftware/cspell-dicts/commit/aa188f2073ceb58f31aa48630d11ad5358fdd060))
+* Workflow Bot -- Build Dictionaries ([#4235](https://github.com/streetsidesoftware/cspell-dicts/issues/4235)) ([cb96bfd](https://github.com/streetsidesoftware/cspell-dicts/commit/cb96bfd8b81f38b62af1b87704dfb2de8f651cc9))
+
 ## [1.0.24](https://github.com/streetsidesoftware/cspell-dicts/compare/@cspell/dict-en-shared@1.0.23...@cspell/dict-en-shared@1.0.24) (2025-03-19)
 
 
