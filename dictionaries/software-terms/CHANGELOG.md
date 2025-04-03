@@ -3,6 +3,16 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+## [5.0.4](https://github.com/streetsidesoftware/cspell-dicts/compare/@cspell/dict-software-terms@5.0.3...@cspell/dict-software-terms@5.0.4) (2025-04-03)
+
+
+### Updates and Bug Fixes
+
+* Add automotive-related words ([#4244](https://github.com/streetsidesoftware/cspell-dicts/issues/4244)) ([8112eb8](https://github.com/streetsidesoftware/cspell-dicts/commit/8112eb8fb2a9d31f344128ed5bb3f7bcd549a547))
+* Add software tool names ([#4248](https://github.com/streetsidesoftware/cspell-dicts/issues/4248)) ([d32b339](https://github.com/streetsidesoftware/cspell-dicts/commit/d32b339a140b7a43807a74e8900d780bf854998b))
+* Workflow Bot -- Build Dictionaries ([#4246](https://github.com/streetsidesoftware/cspell-dicts/issues/4246)) ([80d32f5](https://github.com/streetsidesoftware/cspell-dicts/commit/80d32f5f2cfef5bb8eac8af7c3f218861109a1ef))
+* Workflow Bot -- Build Dictionaries ([#4249](https://github.com/streetsidesoftware/cspell-dicts/issues/4249)) ([480fcf7](https://github.com/streetsidesoftware/cspell-dicts/commit/480fcf73ac97e5017376e6ab61e757e7d7725143))
+
 ## [5.0.3](https://github.com/streetsidesoftware/cspell-dicts/compare/@cspell/dict-software-terms@5.0.2...@cspell/dict-software-terms@5.0.3) (2025-04-01)
 
 

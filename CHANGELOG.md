@@ -1,5 +1,17 @@
 # Release Notes
 
+## [29.1.2](https://github.com/streetsidesoftware/cspell-dicts/compare/cspell-dicts@29.1.1...cspell-dicts@29.1.2) (2025-04-03)
+
+
+### Updates and Bug Fixes
+
+* Add automotive-related words ([#4244](https://github.com/streetsidesoftware/cspell-dicts/issues/4244)) ([8112eb8](https://github.com/streetsidesoftware/cspell-dicts/commit/8112eb8fb2a9d31f344128ed5bb3f7bcd549a547))
+* Add pandas words ([#4243](https://github.com/streetsidesoftware/cspell-dicts/issues/4243)) ([110f925](https://github.com/streetsidesoftware/cspell-dicts/commit/110f925229c1726277bc8e20fae623ed4648458d))
+* Add software tool names ([#4248](https://github.com/streetsidesoftware/cspell-dicts/issues/4248)) ([d32b339](https://github.com/streetsidesoftware/cspell-dicts/commit/d32b339a140b7a43807a74e8900d780bf854998b))
+* Workflow Bot -- Build Dictionaries ([#4246](https://github.com/streetsidesoftware/cspell-dicts/issues/4246)) ([80d32f5](https://github.com/streetsidesoftware/cspell-dicts/commit/80d32f5f2cfef5bb8eac8af7c3f218861109a1ef))
+* Workflow Bot -- Build Dictionaries ([#4247](https://github.com/streetsidesoftware/cspell-dicts/issues/4247)) ([62b16ad](https://github.com/streetsidesoftware/cspell-dicts/commit/62b16ad12e07e025c69a31e10a0bd3e79d7413b6))
+* Workflow Bot -- Build Dictionaries ([#4249](https://github.com/streetsidesoftware/cspell-dicts/issues/4249)) ([480fcf7](https://github.com/streetsidesoftware/cspell-dicts/commit/480fcf73ac97e5017376e6ab61e757e7d7725143))
+
 ## [29.1.1](https://github.com/streetsidesoftware/cspell-dicts/compare/cspell-dicts@29.1.0...cspell-dicts@29.1.1) (2025-04-01)
 
 
