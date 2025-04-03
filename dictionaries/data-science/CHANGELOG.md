@@ -1,5 +1,13 @@
 # Change Log
 
+## [2.0.8](https://github.com/streetsidesoftware/cspell-dicts/compare/@cspell/dict-data-science@2.0.7...@cspell/dict-data-science@2.0.8) (2025-04-03)
+
+
+### Updates and Bug Fixes
+
+* Add pandas words ([#4243](https://github.com/streetsidesoftware/cspell-dicts/issues/4243)) ([110f925](https://github.com/streetsidesoftware/cspell-dicts/commit/110f925229c1726277bc8e20fae623ed4648458d))
+* Workflow Bot -- Build Dictionaries ([#4246](https://github.com/streetsidesoftware/cspell-dicts/issues/4246)) ([80d32f5](https://github.com/streetsidesoftware/cspell-dicts/commit/80d32f5f2cfef5bb8eac8af7c3f218861109a1ef))
+
 ## [2.0.7](https://github.com/streetsidesoftware/cspell-dicts/compare/@cspell/dict-data-science@2.0.6...@cspell/dict-data-science@2.0.7) (2025-01-18)
 
 

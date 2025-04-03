@@ -1,5 +1,13 @@
 # Change Log
 
+## [1.0.26](https://github.com/streetsidesoftware/cspell-dicts/compare/@cspell/dict-en-shared@1.0.25...@cspell/dict-en-shared@1.0.26) (2025-04-03)
+
+
+### Updates and Bug Fixes
+
+* Add automotive-related words ([#4244](https://github.com/streetsidesoftware/cspell-dicts/issues/4244)) ([8112eb8](https://github.com/streetsidesoftware/cspell-dicts/commit/8112eb8fb2a9d31f344128ed5bb3f7bcd549a547))
+* Workflow Bot -- Build Dictionaries ([#4246](https://github.com/streetsidesoftware/cspell-dicts/issues/4246)) ([80d32f5](https://github.com/streetsidesoftware/cspell-dicts/commit/80d32f5f2cfef5bb8eac8af7c3f218861109a1ef))
+
 ## [1.0.25](https://github.com/streetsidesoftware/cspell-dicts/compare/@cspell/dict-en-shared@1.0.24...@cspell/dict-en-shared@1.0.25) (2025-04-01)
 
 
