@@ -1,5 +1,22 @@
 # Release Notes
 
+## [29.2.0](https://github.com/streetsidesoftware/cspell-dicts/compare/cspell-dicts@29.1.2...cspell-dicts@29.2.0) (2025-04-05)
+
+
+### Features
+
+* add acronyms for en_us ([#4253](https://github.com/streetsidesoftware/cspell-dicts/issues/4253)) ([29b5b4e](https://github.com/streetsidesoftware/cspell-dicts/commit/29b5b4ea84448ae553addb257fec7c9cef022ed8))
+
+
+### Updates and Bug Fixes
+
+* add casl to npm ([#4254](https://github.com/streetsidesoftware/cspell-dicts/issues/4254)) ([29aa92a](https://github.com/streetsidesoftware/cspell-dicts/commit/29aa92ab4069ead0651a577332d50c298ae37c45))
+* add decompile to software terms ([#4255](https://github.com/streetsidesoftware/cspell-dicts/issues/4255)) ([8517aba](https://github.com/streetsidesoftware/cspell-dicts/commit/8517aba90a6316506ccb10e843c40bf4534926b2))
+* add words to dictionary ([#4252](https://github.com/streetsidesoftware/cspell-dicts/issues/4252)) ([a1b70e1](https://github.com/streetsidesoftware/cspell-dicts/commit/a1b70e156c63cfe02e6a9d70d614da1894661906))
+* Workflow Bot -- Build Dictionaries ([#4257](https://github.com/streetsidesoftware/cspell-dicts/issues/4257)) ([ccd5d14](https://github.com/streetsidesoftware/cspell-dicts/commit/ccd5d149f3c705da32692e4298ab6ea7bae31cea))
+* Workflow Bot -- Build Dictionaries ([#4258](https://github.com/streetsidesoftware/cspell-dicts/issues/4258)) ([aac7974](https://github.com/streetsidesoftware/cspell-dicts/commit/aac79748d2801d84571fbe6167b48b952ed07398))
+* Workflow Bot -- Build Dictionaries ([#4259](https://github.com/streetsidesoftware/cspell-dicts/issues/4259)) ([54183d6](https://github.com/streetsidesoftware/cspell-dicts/commit/54183d646e35df0f421bd27ba72c67054a6bbbd6))
+
 ## [29.1.2](https://github.com/streetsidesoftware/cspell-dicts/compare/cspell-dicts@29.1.1...cspell-dicts@29.1.2) (2025-04-03)
 
 
