@@ -10,22 +10,22 @@ importers:
     devDependencies:
       '@cspell/cspell-tools':
         specifier: ^8.18.1
-        version: 8.18.1(typescript@5.8.2)
+        version: 8.18.1(typescript@5.8.3)
       '@eslint/js':
-        specifier: ^9.23.0
-        version: 9.23.0
+        specifier: ^9.24.0
+        version: 9.24.0
       '@lerna-lite/cli':
         specifier: ^4.0.0
-        version: 4.0.0(@lerna-lite/exec@4.0.0)(@lerna-lite/publish@4.0.0)(@lerna-lite/run@4.0.0)(@lerna-lite/version@4.0.0(@lerna-lite/exec@4.0.0)(@lerna-lite/publish@4.0.0)(@lerna-lite/run@4.0.0)(@types/node@22.14.0)(conventional-commits-filter@5.0.0)(typescript@5.8.2))(@types/node@22.14.0)(typescript@5.8.2)
+        version: 4.0.0(@lerna-lite/exec@4.0.0)(@lerna-lite/publish@4.0.0)(@lerna-lite/run@4.0.0)(@lerna-lite/version@4.0.0(@lerna-lite/exec@4.0.0)(@lerna-lite/publish@4.0.0)(@lerna-lite/run@4.0.0)(@types/node@22.14.0)(conventional-commits-filter@5.0.0)(typescript@5.8.3))(@types/node@22.14.0)(typescript@5.8.3)
       '@lerna-lite/exec':
         specifier: ^4.0.0
-        version: 4.0.0(@lerna-lite/publish@4.0.0)(@lerna-lite/run@4.0.0)(@types/node@22.14.0)(typescript@5.8.2)
+        version: 4.0.0(@lerna-lite/publish@4.0.0)(@lerna-lite/run@4.0.0)(@types/node@22.14.0)(typescript@5.8.3)
       '@lerna-lite/publish':
         specifier: ^4.0.0
-        version: 4.0.0(@lerna-lite/exec@4.0.0)(@lerna-lite/run@4.0.0)(@types/node@22.14.0)(conventional-commits-filter@5.0.0)(typescript@5.8.2)
+        version: 4.0.0(@lerna-lite/exec@4.0.0)(@lerna-lite/run@4.0.0)(@types/node@22.14.0)(conventional-commits-filter@5.0.0)(typescript@5.8.3)
       '@lerna-lite/run':
         specifier: ^4.0.0
-        version: 4.0.0(@lerna-lite/exec@4.0.0)(@lerna-lite/publish@4.0.0)(@types/node@22.14.0)(typescript@5.8.2)
+        version: 4.0.0(@lerna-lite/exec@4.0.0)(@lerna-lite/publish@4.0.0)(@types/node@22.14.0)(typescript@5.8.3)
       ava:
         specifier: ^6.2.0
         version: 6.2.0(encoding@0.1.13)
@@ -45,8 +45,8 @@ importers:
         specifier: ^8.18.1
         version: 8.18.1
       eslint:
-        specifier: ^9.23.0
-        version: 9.23.0
+        specifier: ^9.24.0
+        version: 9.24.0
       generator-cspell-dicts:
         specifier: workspace:^
         version: link:generator-cspell-dicts
@@ -350,7 +350,7 @@ importers:
         version: link:../en_shared
       aoo-mozilla-en-dict:
         specifier: github:marcoagpinto/aoo-mozilla-en-dict
-        version: https://codeload.github.com/marcoagpinto/aoo-mozilla-en-dict/tar.gz/44c81053a7ccaf4dce4ea98e0d90343deb239ca4
+        version: https://codeload.github.com/marcoagpinto/aoo-mozilla-en-dict/tar.gz/ff73014a7f1af85b387a975800ec498e89d17d50
 
   dictionaries/en_CA:
     devDependencies:
@@ -359,7 +359,7 @@ importers:
         version: link:../en_shared
       aoo-mozilla-en-dict:
         specifier: github:marcoagpinto/aoo-mozilla-en-dict
-        version: https://codeload.github.com/marcoagpinto/aoo-mozilla-en-dict/tar.gz/44c81053a7ccaf4dce4ea98e0d90343deb239ca4
+        version: https://codeload.github.com/marcoagpinto/aoo-mozilla-en-dict/tar.gz/ff73014a7f1af85b387a975800ec498e89d17d50
 
   dictionaries/en_GB:
     devDependencies:
@@ -368,7 +368,7 @@ importers:
         version: link:../en_shared
       aoo-mozilla-en-dict:
         specifier: github:marcoagpinto/aoo-mozilla-en-dict
-        version: https://codeload.github.com/marcoagpinto/aoo-mozilla-en-dict/tar.gz/44c81053a7ccaf4dce4ea98e0d90343deb239ca4
+        version: https://codeload.github.com/marcoagpinto/aoo-mozilla-en-dict/tar.gz/ff73014a7f1af85b387a975800ec498e89d17d50
 
   dictionaries/en_GB-MIT:
     devDependencies:
@@ -383,7 +383,7 @@ importers:
         version: link:../en_shared
       aoo-mozilla-en-dict:
         specifier: github:marcoagpinto/aoo-mozilla-en-dict
-        version: https://codeload.github.com/marcoagpinto/aoo-mozilla-en-dict/tar.gz/44c81053a7ccaf4dce4ea98e0d90343deb239ca4
+        version: https://codeload.github.com/marcoagpinto/aoo-mozilla-en-dict/tar.gz/ff73014a7f1af85b387a975800ec498e89d17d50
 
   dictionaries/en_shared: {}
 
@@ -694,8 +694,8 @@ importers:
         specifier: ^20.17.30
         version: 20.17.30
       typescript:
-        specifier: ^5.8.2
-        version: 5.8.2
+        specifier: ^5.8.3
+        version: 5.8.3
 
   scripts:
     dependencies:
@@ -1006,8 +1006,8 @@ packages:
     resolution: {integrity: sha512-CCZCDJuduB9OUkFkY2IgppNZMi2lBQgD2qzwXkEia16cge2pijY/aXi96CJMquDMn3nJdlPV1A5KrJEXwfLNzQ==}
     engines: {node: ^12.0.0 || ^14.0.0 || >=16.0.0}
 
-  '@eslint/config-array@0.19.2':
-    resolution: {integrity: sha512-GNKqxfHG2ySmJOBSHg7LxeUx4xpuCoFjacmlCoYWEbaPXLwvfIjixRI12xCQZeULksQb23uiA8F40w5TojpV7w==}
+  '@eslint/config-array@0.20.0':
+    resolution: {integrity: sha512-fxlS1kkIjx8+vy2SjuCB94q3htSNrufYTXubwiBFeaQHbH6Ipi43gFJq2zCMt6PHhImH3Xmr0NksKDvchWlpQQ==}
     engines: {node: ^18.18.0 || ^20.9.0 || >=21.1.0}
 
   '@eslint/config-helpers@0.2.1':
@@ -1026,8 +1026,8 @@ packages:
     resolution: {integrity: sha512-gtF186CXhIl1p4pJNGZw8Yc6RlshoePRvE0X91oPGb3vZ8pM3qOS9W9NGPat9LziaBV7XrJWGylNQXkGcnM3IQ==}
     engines: {node: ^18.18.0 || ^20.9.0 || >=21.1.0}
 
-  '@eslint/js@9.23.0':
-    resolution: {integrity: sha512-35MJ8vCPU0ZMxo7zfev2pypqTwWTofFZO6m4KAtdoFhRpLJUpHTZZ+KB3C7Hb1d7bULYwO4lJXGCi5Se+8OMbw==}
+  '@eslint/js@9.24.0':
+    resolution: {integrity: sha512-uIY/y3z0uvOGX8cp1C2fiC4+ZmBhp6yZWkojtHL1YEMnRt1Y63HB9TM17proGEmeG7HeUY+UP36F0aknKYTpYA==}
     engines: {node: ^18.18.0 || ^20.9.0 || >=21.1.0}
 
   '@eslint/object-schema@2.1.6':
@@ -1655,8 +1655,8 @@ packages:
     resolution: {integrity: sha512-bN798gFfQX+viw3R7yrGWRqnrN2oRkEkUjjl4JNn4E8GxxbjtG3FbrEIIY3l8/hrwUwIeCZvi4QuOTP4MErVug==}
     engines: {node: '>=12'}
 
-  aoo-mozilla-en-dict@https://codeload.github.com/marcoagpinto/aoo-mozilla-en-dict/tar.gz/44c81053a7ccaf4dce4ea98e0d90343deb239ca4:
-    resolution: {tarball: https://codeload.github.com/marcoagpinto/aoo-mozilla-en-dict/tar.gz/44c81053a7ccaf4dce4ea98e0d90343deb239ca4}
+  aoo-mozilla-en-dict@https://codeload.github.com/marcoagpinto/aoo-mozilla-en-dict/tar.gz/ff73014a7f1af85b387a975800ec498e89d17d50:
+    resolution: {tarball: https://codeload.github.com/marcoagpinto/aoo-mozilla-en-dict/tar.gz/ff73014a7f1af85b387a975800ec498e89d17d50}
     version: 0.0.0
 
   aproba@2.0.0:
@@ -2376,8 +2376,8 @@ packages:
     resolution: {integrity: sha512-UyLnSehNt62FFhSwjZlHmeokpRK59rcz29j+F1/aDgbkbRTk7wIc9XzdoasMUbRNKDM0qQt/+BJ4BrpFeABemw==}
     engines: {node: ^18.18.0 || ^20.9.0 || >=21.1.0}
 
-  eslint@9.23.0:
-    resolution: {integrity: sha512-jV7AbNoFPAY1EkFYpLq5bslU9NLNO8xnEeQXwErNibVryjk67wHVmddTBilc5srIttJDBrB0eMHKZBFbSIABCw==}
+  eslint@9.24.0:
+    resolution: {integrity: sha512-eh/jxIEJyZrvbWRe4XuVclLPDYSYYYgLy5zXGGxD6j8zjSAxFEzI2fL/8xNq6O2yKqVt+eF2YhV+hxjV6UKXwQ==}
     engines: {node: ^18.18.0 || ^20.9.0 || >=21.1.0}
     hasBin: true
     peerDependencies:
@@ -4364,8 +4364,8 @@ packages:
   typedarray-to-buffer@3.1.5:
     resolution: {integrity: sha512-zdu8XMNEDepKKR+XYOXAVPtWui0ly0NtohUscw+UmaHiAWT8hrV1rr//H6V+0DvJ3OQ19S979M0laLfX8rm82Q==}
 
-  typescript@5.8.2:
-    resolution: {integrity: sha512-aJn6wq13/afZp/jT9QZmwEjDqqvSGp1VT5GVg+f/t6/oVyrgXM6BY1h9BRh/O5p3PlUPAe+WuiEZOmb/49RqoQ==}
+  typescript@5.8.3:
+    resolution: {integrity: sha512-p1diW6TqL9L07nNxvRMM7hMMw4c5XOo/1ibL4aAIGmSAt9slTE1Xgw5KWuof2uTOvCg9BY7ZRi+GaF+7sfgPeQ==}
     engines: {node: '>=14.17'}
     hasBin: true
 
@@ -4792,11 +4792,11 @@ snapshots:
 
   '@cspell/cspell-service-bus@8.18.1': {}
 
-  '@cspell/cspell-tools@8.18.1(typescript@5.8.2)':
+  '@cspell/cspell-tools@8.18.1(typescript@5.8.3)':
     dependencies:
       '@cspell/cspell-pipe': 8.18.1
       commander: 13.1.0
-      cosmiconfig: 9.0.0(typescript@5.8.2)
+      cosmiconfig: 9.0.0(typescript@5.8.3)
       cspell-trie-lib: 8.18.1
       glob: 10.4.5
       hunspell-reader: 8.18.1
@@ -4946,14 +4946,14 @@ snapshots:
 
   '@cspell/url@8.18.1': {}
 
-  '@eslint-community/eslint-utils@4.5.1(eslint@9.23.0)':
+  '@eslint-community/eslint-utils@4.5.1(eslint@9.24.0)':
     dependencies:
-      eslint: 9.23.0
+      eslint: 9.24.0
       eslint-visitor-keys: 3.4.3
 
   '@eslint-community/regexpp@4.12.1': {}
 
-  '@eslint/config-array@0.19.2':
+  '@eslint/config-array@0.20.0':
     dependencies:
       '@eslint/object-schema': 2.1.6
       debug: 4.4.0
@@ -4985,7 +4985,7 @@ snapshots:
     transitivePeerDependencies:
       - supports-color
 
-  '@eslint/js@9.23.0': {}
+  '@eslint/js@9.24.0': {}
 
   '@eslint/object-schema@2.1.6': {}
 
@@ -5076,10 +5076,10 @@ snapshots:
 
   '@kwsites/promise-deferred@1.1.1': {}
 
-  '@lerna-lite/cli@4.0.0(@lerna-lite/exec@4.0.0)(@lerna-lite/publish@4.0.0)(@lerna-lite/run@4.0.0)(@lerna-lite/version@4.0.0(@lerna-lite/exec@4.0.0)(@lerna-lite/publish@4.0.0)(@lerna-lite/run@4.0.0)(@types/node@22.14.0)(conventional-commits-filter@5.0.0)(typescript@5.8.2))(@types/node@22.14.0)(typescript@5.8.2)':
+  '@lerna-lite/cli@4.0.0(@lerna-lite/exec@4.0.0)(@lerna-lite/publish@4.0.0)(@lerna-lite/run@4.0.0)(@lerna-lite/version@4.0.0(@lerna-lite/exec@4.0.0)(@lerna-lite/publish@4.0.0)(@lerna-lite/run@4.0.0)(@types/node@22.14.0)(conventional-commits-filter@5.0.0)(typescript@5.8.3))(@types/node@22.14.0)(typescript@5.8.3)':
     dependencies:
-      '@lerna-lite/core': 4.0.0(@types/node@22.14.0)(typescript@5.8.2)
-      '@lerna-lite/init': 4.0.0(@types/node@22.14.0)(typescript@5.8.2)
+      '@lerna-lite/core': 4.0.0(@types/node@22.14.0)(typescript@5.8.3)
+      '@lerna-lite/init': 4.0.0(@types/node@22.14.0)(typescript@5.8.3)
       '@lerna-lite/npmlog': 4.0.0
       dedent: 1.5.3
       dotenv: 16.4.7
@@ -5087,17 +5087,17 @@ snapshots:
       load-json-file: 7.0.1
       yargs: 17.7.2
     optionalDependencies:
-      '@lerna-lite/exec': 4.0.0(@lerna-lite/publish@4.0.0)(@lerna-lite/run@4.0.0)(@types/node@22.14.0)(typescript@5.8.2)
-      '@lerna-lite/publish': 4.0.0(@lerna-lite/exec@4.0.0)(@lerna-lite/run@4.0.0)(@types/node@22.14.0)(conventional-commits-filter@5.0.0)(typescript@5.8.2)
-      '@lerna-lite/run': 4.0.0(@lerna-lite/exec@4.0.0)(@lerna-lite/publish@4.0.0)(@types/node@22.14.0)(typescript@5.8.2)
-      '@lerna-lite/version': 4.0.0(@lerna-lite/exec@4.0.0)(@lerna-lite/publish@4.0.0)(@lerna-lite/run@4.0.0)(@types/node@22.14.0)(conventional-commits-filter@5.0.0)(typescript@5.8.2)
+      '@lerna-lite/exec': 4.0.0(@lerna-lite/publish@4.0.0)(@lerna-lite/run@4.0.0)(@types/node@22.14.0)(typescript@5.8.3)
+      '@lerna-lite/publish': 4.0.0(@lerna-lite/exec@4.0.0)(@lerna-lite/run@4.0.0)(@types/node@22.14.0)(conventional-commits-filter@5.0.0)(typescript@5.8.3)
+      '@lerna-lite/run': 4.0.0(@lerna-lite/exec@4.0.0)(@lerna-lite/publish@4.0.0)(@types/node@22.14.0)(typescript@5.8.3)
+      '@lerna-lite/version': 4.0.0(@lerna-lite/exec@4.0.0)(@lerna-lite/publish@4.0.0)(@lerna-lite/run@4.0.0)(@types/node@22.14.0)(conventional-commits-filter@5.0.0)(typescript@5.8.3)
     transitivePeerDependencies:
       - '@types/node'
       - babel-plugin-macros
       - supports-color
       - typescript
 
-  '@lerna-lite/core@4.0.0(@types/node@22.14.0)(typescript@5.8.2)':
+  '@lerna-lite/core@4.0.0(@types/node@22.14.0)(typescript@5.8.3)':
     dependencies:
       '@inquirer/expand': 4.0.12(@types/node@22.14.0)
       '@inquirer/input': 4.1.9(@types/node@22.14.0)
@@ -5106,7 +5106,7 @@ snapshots:
       '@npmcli/run-script': 9.1.0
       clone-deep: 4.0.1
       config-chain: 1.1.13
-      cosmiconfig: 9.0.0(typescript@5.8.2)
+      cosmiconfig: 9.0.0(typescript@5.8.3)
       dedent: 1.5.3
       execa: 8.0.1
       fs-extra: 11.3.0
@@ -5135,11 +5135,11 @@ snapshots:
       - supports-color
       - typescript
 
-  '@lerna-lite/exec@4.0.0(@lerna-lite/publish@4.0.0)(@lerna-lite/run@4.0.0)(@types/node@22.14.0)(typescript@5.8.2)':
+  '@lerna-lite/exec@4.0.0(@lerna-lite/publish@4.0.0)(@lerna-lite/run@4.0.0)(@types/node@22.14.0)(typescript@5.8.3)':
     dependencies:
-      '@lerna-lite/cli': 4.0.0(@lerna-lite/exec@4.0.0)(@lerna-lite/publish@4.0.0)(@lerna-lite/run@4.0.0)(@lerna-lite/version@4.0.0(@lerna-lite/exec@4.0.0)(@lerna-lite/publish@4.0.0)(@lerna-lite/run@4.0.0)(@types/node@22.14.0)(conventional-commits-filter@5.0.0)(typescript@5.8.2))(@types/node@22.14.0)(typescript@5.8.2)
-      '@lerna-lite/core': 4.0.0(@types/node@22.14.0)(typescript@5.8.2)
-      '@lerna-lite/profiler': 4.0.0(@types/node@22.14.0)(typescript@5.8.2)
+      '@lerna-lite/cli': 4.0.0(@lerna-lite/exec@4.0.0)(@lerna-lite/publish@4.0.0)(@lerna-lite/run@4.0.0)(@lerna-lite/version@4.0.0(@lerna-lite/exec@4.0.0)(@lerna-lite/publish@4.0.0)(@lerna-lite/run@4.0.0)(@types/node@22.14.0)(conventional-commits-filter@5.0.0)(typescript@5.8.3))(@types/node@22.14.0)(typescript@5.8.3)
+      '@lerna-lite/core': 4.0.0(@types/node@22.14.0)(typescript@5.8.3)
+      '@lerna-lite/profiler': 4.0.0(@types/node@22.14.0)(typescript@5.8.3)
       dotenv: 16.4.7
       p-map: 7.0.3
       tinyrainbow: 2.0.0
@@ -5154,9 +5154,9 @@ snapshots:
       - supports-color
       - typescript
 
-  '@lerna-lite/init@4.0.0(@types/node@22.14.0)(typescript@5.8.2)':
+  '@lerna-lite/init@4.0.0(@types/node@22.14.0)(typescript@5.8.3)':
     dependencies:
-      '@lerna-lite/core': 4.0.0(@types/node@22.14.0)(typescript@5.8.2)
+      '@lerna-lite/core': 4.0.0(@types/node@22.14.0)(typescript@5.8.3)
       fs-extra: 11.3.0
       p-map: 7.0.3
       write-json-file: 6.0.0
@@ -5177,9 +5177,9 @@ snapshots:
       string-width: 7.2.0
       wide-align: 1.1.5
 
-  '@lerna-lite/profiler@4.0.0(@types/node@22.14.0)(typescript@5.8.2)':
+  '@lerna-lite/profiler@4.0.0(@types/node@22.14.0)(typescript@5.8.3)':
     dependencies:
-      '@lerna-lite/core': 4.0.0(@types/node@22.14.0)(typescript@5.8.2)
+      '@lerna-lite/core': 4.0.0(@types/node@22.14.0)(typescript@5.8.3)
       '@lerna-lite/npmlog': 4.0.0
       fs-extra: 11.3.0
       upath: 2.0.1
@@ -5189,12 +5189,12 @@ snapshots:
       - supports-color
       - typescript
 
-  '@lerna-lite/publish@4.0.0(@lerna-lite/exec@4.0.0)(@lerna-lite/run@4.0.0)(@types/node@22.14.0)(conventional-commits-filter@5.0.0)(typescript@5.8.2)':
+  '@lerna-lite/publish@4.0.0(@lerna-lite/exec@4.0.0)(@lerna-lite/run@4.0.0)(@types/node@22.14.0)(conventional-commits-filter@5.0.0)(typescript@5.8.3)':
     dependencies:
-      '@lerna-lite/cli': 4.0.0(@lerna-lite/exec@4.0.0)(@lerna-lite/publish@4.0.0)(@lerna-lite/run@4.0.0)(@lerna-lite/version@4.0.0(@lerna-lite/exec@4.0.0)(@lerna-lite/publish@4.0.0)(@lerna-lite/run@4.0.0)(@types/node@22.14.0)(conventional-commits-filter@5.0.0)(typescript@5.8.2))(@types/node@22.14.0)(typescript@5.8.2)
-      '@lerna-lite/core': 4.0.0(@types/node@22.14.0)(typescript@5.8.2)
+      '@lerna-lite/cli': 4.0.0(@lerna-lite/exec@4.0.0)(@lerna-lite/publish@4.0.0)(@lerna-lite/run@4.0.0)(@lerna-lite/version@4.0.0(@lerna-lite/exec@4.0.0)(@lerna-lite/publish@4.0.0)(@lerna-lite/run@4.0.0)(@types/node@22.14.0)(conventional-commits-filter@5.0.0)(typescript@5.8.3))(@types/node@22.14.0)(typescript@5.8.3)
+      '@lerna-lite/core': 4.0.0(@types/node@22.14.0)(typescript@5.8.3)
       '@lerna-lite/npmlog': 4.0.0
-      '@lerna-lite/version': 4.0.0(@lerna-lite/exec@4.0.0)(@lerna-lite/publish@4.0.0)(@lerna-lite/run@4.0.0)(@types/node@22.14.0)(conventional-commits-filter@5.0.0)(typescript@5.8.2)
+      '@lerna-lite/version': 4.0.0(@lerna-lite/exec@4.0.0)(@lerna-lite/publish@4.0.0)(@lerna-lite/run@4.0.0)(@types/node@22.14.0)(conventional-commits-filter@5.0.0)(typescript@5.8.3)
       '@npmcli/arborist': 9.0.1
       '@npmcli/package-json': 6.1.1
       byte-size: 9.0.1
@@ -5228,12 +5228,12 @@ snapshots:
       - supports-color
       - typescript
 
-  '@lerna-lite/run@4.0.0(@lerna-lite/exec@4.0.0)(@lerna-lite/publish@4.0.0)(@types/node@22.14.0)(typescript@5.8.2)':
+  '@lerna-lite/run@4.0.0(@lerna-lite/exec@4.0.0)(@lerna-lite/publish@4.0.0)(@types/node@22.14.0)(typescript@5.8.3)':
     dependencies:
-      '@lerna-lite/cli': 4.0.0(@lerna-lite/exec@4.0.0)(@lerna-lite/publish@4.0.0)(@lerna-lite/run@4.0.0)(@lerna-lite/version@4.0.0(@lerna-lite/exec@4.0.0)(@lerna-lite/publish@4.0.0)(@lerna-lite/run@4.0.0)(@types/node@22.14.0)(conventional-commits-filter@5.0.0)(typescript@5.8.2))(@types/node@22.14.0)(typescript@5.8.2)
-      '@lerna-lite/core': 4.0.0(@types/node@22.14.0)(typescript@5.8.2)
+      '@lerna-lite/cli': 4.0.0(@lerna-lite/exec@4.0.0)(@lerna-lite/publish@4.0.0)(@lerna-lite/run@4.0.0)(@lerna-lite/version@4.0.0(@lerna-lite/exec@4.0.0)(@lerna-lite/publish@4.0.0)(@lerna-lite/run@4.0.0)(@types/node@22.14.0)(conventional-commits-filter@5.0.0)(typescript@5.8.3))(@types/node@22.14.0)(typescript@5.8.3)
+      '@lerna-lite/core': 4.0.0(@types/node@22.14.0)(typescript@5.8.3)
       '@lerna-lite/npmlog': 4.0.0
-      '@lerna-lite/profiler': 4.0.0(@types/node@22.14.0)(typescript@5.8.2)
+      '@lerna-lite/profiler': 4.0.0(@types/node@22.14.0)(typescript@5.8.3)
       fs-extra: 11.3.0
       p-map: 7.0.3
       tinyrainbow: 2.0.0
@@ -5248,10 +5248,10 @@ snapshots:
       - supports-color
       - typescript
 
-  '@lerna-lite/version@4.0.0(@lerna-lite/exec@4.0.0)(@lerna-lite/publish@4.0.0)(@lerna-lite/run@4.0.0)(@types/node@22.14.0)(conventional-commits-filter@5.0.0)(typescript@5.8.2)':
+  '@lerna-lite/version@4.0.0(@lerna-lite/exec@4.0.0)(@lerna-lite/publish@4.0.0)(@lerna-lite/run@4.0.0)(@types/node@22.14.0)(conventional-commits-filter@5.0.0)(typescript@5.8.3)':
     dependencies:
-      '@lerna-lite/cli': 4.0.0(@lerna-lite/exec@4.0.0)(@lerna-lite/publish@4.0.0)(@lerna-lite/run@4.0.0)(@lerna-lite/version@4.0.0(@lerna-lite/exec@4.0.0)(@lerna-lite/publish@4.0.0)(@lerna-lite/run@4.0.0)(@types/node@22.14.0)(conventional-commits-filter@5.0.0)(typescript@5.8.2))(@types/node@22.14.0)(typescript@5.8.2)
-      '@lerna-lite/core': 4.0.0(@types/node@22.14.0)(typescript@5.8.2)
+      '@lerna-lite/cli': 4.0.0(@lerna-lite/exec@4.0.0)(@lerna-lite/publish@4.0.0)(@lerna-lite/run@4.0.0)(@lerna-lite/version@4.0.0(@lerna-lite/exec@4.0.0)(@lerna-lite/publish@4.0.0)(@lerna-lite/run@4.0.0)(@types/node@22.14.0)(conventional-commits-filter@5.0.0)(typescript@5.8.3))(@types/node@22.14.0)(typescript@5.8.3)
+      '@lerna-lite/core': 4.0.0(@types/node@22.14.0)(typescript@5.8.3)
       '@lerna-lite/npmlog': 4.0.0
       '@octokit/plugin-enterprise-rest': 6.0.1
       '@octokit/rest': 21.1.1
@@ -5928,7 +5928,7 @@ snapshots:
 
   ansi-styles@6.2.1: {}
 
-  aoo-mozilla-en-dict@https://codeload.github.com/marcoagpinto/aoo-mozilla-en-dict/tar.gz/44c81053a7ccaf4dce4ea98e0d90343deb239ca4: {}
+  aoo-mozilla-en-dict@https://codeload.github.com/marcoagpinto/aoo-mozilla-en-dict/tar.gz/ff73014a7f1af85b387a975800ec498e89d17d50: {}
 
   aproba@2.0.0: {}
 
@@ -6370,14 +6370,14 @@ snapshots:
 
   core-util-is@1.0.3: {}
 
-  cosmiconfig@9.0.0(typescript@5.8.2):
+  cosmiconfig@9.0.0(typescript@5.8.3):
     dependencies:
       env-paths: 2.2.1
       import-fresh: 3.3.1
       js-yaml: 4.1.0
       parse-json: 5.2.0
     optionalDependencies:
-      typescript: 5.8.2
+      typescript: 5.8.3
 
   cp-file@10.0.0:
     dependencies:
@@ -6667,15 +6667,15 @@ snapshots:
 
   eslint-visitor-keys@4.2.0: {}
 
-  eslint@9.23.0:
+  eslint@9.24.0:
     dependencies:
-      '@eslint-community/eslint-utils': 4.5.1(eslint@9.23.0)
+      '@eslint-community/eslint-utils': 4.5.1(eslint@9.24.0)
       '@eslint-community/regexpp': 4.12.1
-      '@eslint/config-array': 0.19.2
+      '@eslint/config-array': 0.20.0
       '@eslint/config-helpers': 0.2.1
       '@eslint/core': 0.12.0
       '@eslint/eslintrc': 3.3.1
-      '@eslint/js': 9.23.0
+      '@eslint/js': 9.24.0
       '@eslint/plugin-kit': 0.2.8
       '@humanfs/node': 0.16.6
       '@humanwhocodes/module-importer': 1.0.1
@@ -9024,7 +9024,7 @@ snapshots:
     dependencies:
       is-typedarray: 1.0.0
 
-  typescript@5.8.2: {}
+  typescript@5.8.3: {}
 
   uglify-js@3.19.3:
     optional: true
