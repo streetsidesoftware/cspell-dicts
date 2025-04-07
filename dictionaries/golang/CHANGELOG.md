@@ -3,6 +3,17 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+## [6.0.20](https://github.com/streetsidesoftware/cspell-dicts/compare/@cspell/dict-golang@6.0.19...@cspell/dict-golang@6.0.20) (2025-04-07)
+
+
+### Updates and Bug Fixes
+
+* Add build-oriented words to golang ([#4260](https://github.com/streetsidesoftware/cspell-dicts/issues/4260)) ([6341731](https://github.com/streetsidesoftware/cspell-dicts/commit/634173178186a1cc6797ce2eab58517ce909cb8a))
+* Add more build-oriented words to golang ([#4269](https://github.com/streetsidesoftware/cspell-dicts/issues/4269)) ([bf493eb](https://github.com/streetsidesoftware/cspell-dicts/commit/bf493eba7dfd5609d9ed52215b16a24f69d8cc47))
+* Add Msgf to golang ([#4261](https://github.com/streetsidesoftware/cspell-dicts/issues/4261)) ([adf634e](https://github.com/streetsidesoftware/cspell-dicts/commit/adf634e6f6861e42c52f7bd45c7960fc139e8a76))
+* Workflow Bot -- Build Dictionaries ([#4265](https://github.com/streetsidesoftware/cspell-dicts/issues/4265)) ([d6b38b8](https://github.com/streetsidesoftware/cspell-dicts/commit/d6b38b8de5eff9e1b596daaf242b9bf9c834603f))
+* Workflow Bot -- Build Dictionaries ([#4267](https://github.com/streetsidesoftware/cspell-dicts/issues/4267)) ([560b73f](https://github.com/streetsidesoftware/cspell-dicts/commit/560b73f8434074ffd7faa016e8a7e45245a1aa75))
+
 ## [6.0.19](https://github.com/streetsidesoftware/cspell-dicts/compare/@cspell/dict-golang@6.0.18...@cspell/dict-golang@6.0.19) (2025-03-12)
 
 
