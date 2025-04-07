@@ -22,6 +22,16 @@ See [Conventional Commits](https://conventionalcommits.org) for commit guideline
 
 
 
+## [4.0.10](https://github.com/streetsidesoftware/cspell-dicts/compare/@cspell/dict-aws@4.0.9...@cspell/dict-aws@4.0.10) (2025-04-07)
+
+
+### Updates and Bug Fixes
+
+* Add corretto to aws ([#4268](https://github.com/streetsidesoftware/cspell-dicts/issues/4268)) ([8fd793d](https://github.com/streetsidesoftware/cspell-dicts/commit/8fd793db27a6ca051bd83b7ff91feacd85df0aaf))
+* Add words to aws ([#4262](https://github.com/streetsidesoftware/cspell-dicts/issues/4262)) ([b4021f9](https://github.com/streetsidesoftware/cspell-dicts/commit/b4021f93dd94bc61bd438d1f630f61568b598f30))
+* Workflow Bot -- Build Dictionaries ([#4265](https://github.com/streetsidesoftware/cspell-dicts/issues/4265)) ([d6b38b8](https://github.com/streetsidesoftware/cspell-dicts/commit/d6b38b8de5eff9e1b596daaf242b9bf9c834603f))
+* Workflow Bot -- Build Dictionaries ([#4267](https://github.com/streetsidesoftware/cspell-dicts/issues/4267)) ([560b73f](https://github.com/streetsidesoftware/cspell-dicts/commit/560b73f8434074ffd7faa016e8a7e45245a1aa75))
+
 ## [4.0.9](https://github.com/streetsidesoftware/cspell-dicts/compare/@cspell/dict-aws@4.0.8...@cspell/dict-aws@4.0.9) (2025-01-03)
 
 

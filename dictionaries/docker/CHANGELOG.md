@@ -3,6 +3,13 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+## [1.1.13](https://github.com/streetsidesoftware/cspell-dicts/compare/@cspell/dict-docker@1.1.12...@cspell/dict-docker@1.1.13) (2025-04-07)
+
+
+### Updates and Bug Fixes
+
+* Add dind to docker ([#4270](https://github.com/streetsidesoftware/cspell-dicts/issues/4270)) ([5948f26](https://github.com/streetsidesoftware/cspell-dicts/commit/5948f2614e4a18bb2d65c7e1f6137f9ac8e6c842))
+
 ## [1.1.12](https://github.com/streetsidesoftware/cspell-dicts/compare/@cspell/dict-docker@1.1.11...@cspell/dict-docker@1.1.12) (2024-12-30)
 
 

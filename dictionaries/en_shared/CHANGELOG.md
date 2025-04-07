@@ -1,5 +1,13 @@
 # Change Log
 
+## [1.0.27](https://github.com/streetsidesoftware/cspell-dicts/compare/@cspell/dict-en-shared@1.0.26...@cspell/dict-en-shared@1.0.27) (2025-04-07)
+
+
+### Updates and Bug Fixes
+
+* add words to dictionary ([#4252](https://github.com/streetsidesoftware/cspell-dicts/issues/4252)) ([a1b70e1](https://github.com/streetsidesoftware/cspell-dicts/commit/a1b70e156c63cfe02e6a9d70d614da1894661906))
+* Workflow Bot -- Build Dictionaries ([#4257](https://github.com/streetsidesoftware/cspell-dicts/issues/4257)) ([ccd5d14](https://github.com/streetsidesoftware/cspell-dicts/commit/ccd5d149f3c705da32692e4298ab6ea7bae31cea))
+
 ## [1.0.26](https://github.com/streetsidesoftware/cspell-dicts/compare/@cspell/dict-en-shared@1.0.25...@cspell/dict-en-shared@1.0.26) (2025-04-03)
 
 
