@@ -20,6 +20,8 @@ targets:
           - src/allowed-terms.txt
           - src/go-words/go.txt # Use the source for whole words when splitting.
       - filename: src/allowed-terms.txt
+      - filename: src/additional-terms.txt
+      - filename: src/go-lib.txt
     format: plaintext
     targetDirectory: './dict'
     generateNonStrict: false
