@@ -1,7 +1,7 @@
 # This file contains words that are often compounded with other words
 # A `*` is used to indicate an optional compound
-# A `+` is used to indicate the would should be in a compound.
-# A `*` at the beginning of a word means that a another compound can be added to the font.
+# A `+` is used to indicate the word should be in a compound.
+# A `*` at the beginning of a word means that a another compound can be added to the front.
 a+
 *above*
 *absolute*
@@ -523,7 +523,7 @@ NS+
 *null*
 *num*
 *number*
-o+
+# o+ # o.cur.red -- a common error
 *obj*
 obj*
 *object*

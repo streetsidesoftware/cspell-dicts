@@ -2420,7 +2420,6 @@
 +note*
 +notification*
 +numname
-+obuf
 +occupation
 +ogham
 +once*
@@ -3166,6 +3165,7 @@ AUTOFLOWLABEL
 AUTOINCREMENT
 AUTOREFERER
 AUTOTEST
+AUT_OHEADER
 AUT_UPRIV
 AUT_XATOM
 AUT_XATPATH
@@ -6065,6 +6065,7 @@ HAVE_STRUCT_IFNET_IF_IMCASTS
 HAVE_STRUCT_IFNET_IF_IQDROPS
 HAVE_STRUCT_IFNET_IF_LASTCHANGE_TV_NSEC
 HAVE_STRUCT_IFNET_IF_LASTCHANGE_TV_SEC
+HAVE_STRUCT_IFNET_IF_OBYTES
 HAVE_STRUCT_IFNET_IF_OMCASTS
 HAVE_STRUCT_IFNET_IF_XNAME
 HAVE_STRUCT_IPSTAT_IPS_CANTFORWARD
@@ -6085,6 +6086,7 @@ HAVE_STRUCT_STATVFS_F_FRSIZE
 HAVE_STRUCT_SWDEVT_SW_NBLKSENABLED
 HAVE_STRUCT_TM_TM_GMTOFF
 HAVE_STRUCT_UDPSTAT_UDPS_NOPORTBCAST
+HAVE_STRUCT_UDPSTAT_UDPS_OPACKETS
 HAVE_TIDYOPTGETDOC
 HAVE_TM_GMTOFF
 HAVE_UDBCEXT_H
@@ -6319,6 +6321,7 @@ IFCAP_VLAN_HWTAGGING
 IFF_ALTPHYS
 IFF_NOARP
 IFF_NOTRAILERS
+IFF_OACTIVE
 IFF_POINTOPOINT
 IFF_PROMISC
 IFID
@@ -6332,6 +6335,7 @@ IFM_FDX
 IFM_GMASK
 IFM_HDX
 IFM_MAKEWORD
+IFM_OMASK
 IFM_SUBTYPE_TOKENRING_ALIASES
 IFM_SUBTYPE_TOKENRING_DESCRIPTIONS
 IFM_SUBTYPE_TOKENRING_OPTION_DESCRIPTIONS
@@ -6511,6 +6515,7 @@ IORW
 IOS
 IOV_MAX
 IOWR
+IObuf
 IOfeFE
 IPCOMP_CPI_NEGOTIATE_MIN
 IPCOMP_DEFLATE
@@ -7385,6 +7390,7 @@ LOG_FACMASK
 LOG_MAKEPRI
 LOG_MEGASAFE
 LOG_NFACILITIES
+LOG_ODELAY
 LOG_RAS
 LOSACTIVITY
 LOSLOG
@@ -8158,6 +8164,8 @@ NETSNMP_DS_LIB_AUTHPASSPHRASE
 NETSNMP_DS_LIB_CLIENTRECVBUF
 NETSNMP_DS_LIB_CLIENTSENDBUF
 NETSNMP_DS_LIB_MIBDIRS
+NETSNMP_DS_LIB_OIDPREFIX
+NETSNMP_DS_LIB_OIDSUFFIX
 NETSNMP_DS_LIB_OPTIONALCONFIG
 NETSNMP_DS_LIB_PRIVPASSPHRASE
 NETSNMP_DS_LIB_QUICKE_PRINT
@@ -8660,6 +8668,7 @@ N_LBRAC
 N_LCSYM
 N_LENG
 N_LSYM
+N_OLEVEL
 N_OPENBUSY
 N_OPENWANT
 N_OSO
@@ -8759,6 +8768,7 @@ OD_CFRETAIN_SAFE
 ODk
 OEAP
 OEHWqJLkNW
+OEND
 OEOL
 OEOW
 OElig
@@ -8831,6 +8841,7 @@ OR
 ORPAREN
 ORPHAN
 OR_AUTHCFG
+OR_oidlen
 ORs
 OS
 OSATOMIC_BARRIER_DEPRECATED_MSG
@@ -8908,6 +8919,7 @@ Ograve
 Ohgaki
 OjP
 Okasaki
+Olibcalls
 Ollmann
 Olson
 OlzWtSrdc
@@ -8932,9 +8944,11 @@ Orlandi
 Oroginal
 Orr
 Oscr
+Oslash
 Osu
 OtEzuf
 Otilde
+Otimes
 Ottyb
 OtyV
 OucWPSAyQw
@@ -8980,6 +8994,10 @@ PB_DS_CKDED_CLASS_NAME
 PB_DS_COND_DEALTOR_CLASS_C_DEC
 PB_DS_COND_DEALTOR_CLASS_T_DEC
 PB_DS_COND_DEALTOR_HPP
+PB_DS_CONST_ODIR_IT_C_DEC
+PB_DS_ODIR_IT_C_DEC
+PB_DS_TREE_CONST_ODIR_IT_C_DEC
+PB_DS_TREE_ODIR_IT_C_DEC
 PC
 PCAP
 PCAPNG
@@ -10470,6 +10488,7 @@ SLAPI_MODRDN_NEWSUPERIOR_ADDRESS
 SLAPI_OPERATION_MODDN
 SLAPI_OPINITIATED_TIME
 SLAPI_PLUGIN_EXTENDEDOP
+SLAPI_PLUGIN_EXT_OP_OIDLIST
 SLAPI_PLUGIN_OPRETURN
 SLAPI_REQUESTOR_ISUPDATEDN
 SLAPI_RESCONTROLS
@@ -11672,7 +11691,10 @@ TSTMP_LT
 TSUID
 TSVTX
 TS_BKSL
+TS_CAR_OFLOW
 TS_CNTTB
+TS_CTS_OFLOW
+TS_DSR_OFLOW
 TS_PGRPHUP
 TS_SO_OCOMPLETE
 TS_SO_OLOWAT
@@ -13727,6 +13749,9 @@ _SW
 _SX
 _S_g
 _S_iminus
+_S_odigits
+_S_odigits_end
+_S_oend
 _S_oudigits
 _S_oudigits_end
 _S_substringfn
@@ -20862,6 +20887,7 @@ f_fssubtype
 f_mntonname
 f_nxt
 f_offlg
+f_otype
 fa
 fabs
 fabsf
@@ -23093,7 +23119,10 @@ if_lastchange
 if_mtu
 if_nameindex
 if_nametoindex
+if_obytes
+if_oerrors
 if_omcasts
+if_opackets
 if_xname
 ifa
 iface
@@ -23144,7 +23173,10 @@ ifi_imcasts
 ifi_iqdrops
 ifi_lastchange
 ifi_mtu
+ifi_obytes
+ifi_oerrors
 ifi_omcasts
+ifi_opackets
 ifi_recvquota
 ifi_recvtiming
 ifi_xmitquota
@@ -28659,7 +28691,7 @@ nxna_sec
 nyear
 nz
 nzval
-o*
+o
 oANsQAVZ
 oASZXw
 oAd
@@ -28686,7 +28718,6 @@ oaGBHysNMGTFinPZik
 oa_base
 oa_flavor
 oa_length
-oactive
 oasis
 oast
 oauth
@@ -28746,7 +28777,6 @@ obtains
 obvious
 obviously
 obxCps
-obytes
 oc
 occasionally
 occupied
@@ -28791,9 +28821,6 @@ oddballs
 oddities
 oddlen
 odds
-odelay
-odigits
-odir
 odiv
 odm
 odm_
@@ -28828,8 +28855,6 @@ odx_object_t
 oe
 oeg
 oemPXbi
-oend
-oerrors
 ofcir
 offbig
 offer
@@ -28852,7 +28877,7 @@ offtime
 offtoblk
 oflag
 oflags
-oflow
+oflow_info
 ofs
 ofstream
 often
@@ -28863,18 +28888,12 @@ ogorman
 oh
 ohVLJGi
 ohbar
-oheader
 ohm
 ohter
 ohzf
 oi
-oidlen
-oidlist
 oidp
-oidprefix
 oids
-oidsuffix
-oidtree
 oint
 oiquz
 oj_jumbo_len
@@ -28932,14 +28951,10 @@ oldsock
 oldtss
 oldv
 olength
-olevel
-olibcalls
-olimit
 oline
 olive
 olt
 olyz
-omask
 ombstat
 omega
 omicron
@@ -28990,8 +29005,6 @@ ooopacket
 ooyeqy
 op*
 opacity
-opacket
-opackets
 opaq
 opaquelocktoken
 opar
@@ -29151,7 +29164,6 @@ osfhandle
 osfile
 osfmk
 osize
-oslash
 oslog
 oslogstring
 osockaddr
@@ -29188,10 +29200,8 @@ other
 otherchild
 others
 otime
-otimes
 otimesas
 otw
-otype
 ought
 ouput
 our
@@ -29364,6 +29374,7 @@ p_fqnname
 p_greatgrandparent
 p_holdcnt
 p_l
+p_olimit
 p_pctcpu
 p_r
 p_ru
@@ -32477,6 +32488,8 @@ s_odst_unreach_admin
 s_odst_unreach_beyondscope
 s_odst_unreach_noport
 s_odst_unreach_noroute
+s_opacket_too_big
+s_opackets
 s_oparamprob_header
 s_oparamprob_nextheader
 s_oparamprob_option
@@ -33796,6 +33809,7 @@ snmpUDPIPv
 snmp_disable_stderrlog
 snmp_enable_stderrlog
 snmp_oidsubtree_compare
+snmp_oidtree_compare
 snmp_stderrlog_status
 snmpcmd
 snmpd*
@@ -36316,6 +36330,7 @@ udps
 udps_filtermcast
 udps_noportbcast
 udps_noportmcast
+udps_opackets
 udps_rcv_swcsum
 udps_rcv_swcsum_bytes
 udps_snd_swcsum
