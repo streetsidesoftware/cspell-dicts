@@ -8,6 +8,10 @@ on: # rebuild any PRs and main branch changes
 permissions:
   contents: read
 
+concurrency:
+  group: ${{ github.workflow }}-${{ github.ref }}
+  cancel-in-progress: true
+
 jobs:
   # Test supported Node versions
   test-node-versions:
