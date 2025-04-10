@@ -3,6 +3,14 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+## [6.0.8](https://github.com/streetsidesoftware/cspell-dicts/compare/@cspell/dict-cpp@6.0.7...@cspell/dict-cpp@6.0.8) (2025-04-09)
+
+
+### Updates and Bug Fixes
+
+* Make sure `ocurred` isn't valid ([#4274](https://github.com/streetsidesoftware/cspell-dicts/issues/4274)) ([d695b45](https://github.com/streetsidesoftware/cspell-dicts/commit/d695b45b83f4baa4345b0c81b9756635d145086d))
+* Workflow Bot -- Build Dictionaries ([#4277](https://github.com/streetsidesoftware/cspell-dicts/issues/4277)) ([21e4337](https://github.com/streetsidesoftware/cspell-dicts/commit/21e4337229752202d29654a6e1c2487373137bb0))
+
 ## [6.0.7](https://github.com/streetsidesoftware/cspell-dicts/compare/@cspell/dict-cpp@6.0.6...@cspell/dict-cpp@6.0.7) (2025-04-01)
 
 
