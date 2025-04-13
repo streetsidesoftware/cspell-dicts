@@ -1,5 +1,21 @@
 # Release Notes
 
+## [29.3.0](https://github.com/streetsidesoftware/cspell-dicts/compare/cspell-dicts@29.2.1...cspell-dicts@29.3.0) (2025-04-13)
+
+
+### Features
+
+* add packages to npm ([#4281](https://github.com/streetsidesoftware/cspell-dicts/issues/4281)) ([cc09989](https://github.com/streetsidesoftware/cspell-dicts/commit/cc0998990311482624081ace3acd9a325d275d8e))
+
+
+### Updates and Bug Fixes
+
+* add bézier to dictionary ([#4282](https://github.com/streetsidesoftware/cspell-dicts/issues/4282)) ([ca46765](https://github.com/streetsidesoftware/cspell-dicts/commit/ca46765131a7c36202bd9c91b4cdd2c4d3bab290))
+* add fonticons (fontawesome) to companies ([#4280](https://github.com/streetsidesoftware/cspell-dicts/issues/4280)) ([c1fc864](https://github.com/streetsidesoftware/cspell-dicts/commit/c1fc864a4b81222260c7a8dfa93ed30063e5959a))
+* Workflow Bot -- Build Dictionaries ([#4286](https://github.com/streetsidesoftware/cspell-dicts/issues/4286)) ([69da562](https://github.com/streetsidesoftware/cspell-dicts/commit/69da562bdbd13d9211fa1392b532565b1ea74735))
+* Workflow Bot -- Build Dictionaries ([#4287](https://github.com/streetsidesoftware/cspell-dicts/issues/4287)) ([9ab559e](https://github.com/streetsidesoftware/cspell-dicts/commit/9ab559e17e9d5ffba2408d95d985c13bf2739d2a))
+* Workflow Bot -- Update Dictionaries ([#4288](https://github.com/streetsidesoftware/cspell-dicts/issues/4288)) ([d20b246](https://github.com/streetsidesoftware/cspell-dicts/commit/d20b246cdcbf35eac79e6b2973d7e2f8d712a0ec))
+
 ## [29.2.1](https://github.com/streetsidesoftware/cspell-dicts/compare/cspell-dicts@29.2.0...cspell-dicts@29.2.1) (2025-04-09)
 
 
