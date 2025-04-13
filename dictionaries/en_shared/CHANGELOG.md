@@ -1,5 +1,13 @@
 # Change Log
 
+## [1.0.28](https://github.com/streetsidesoftware/cspell-dicts/compare/@cspell/dict-en-shared@1.0.27...@cspell/dict-en-shared@1.0.28) (2025-04-13)
+
+
+### Updates and Bug Fixes
+
+* add bézier to dictionary ([#4282](https://github.com/streetsidesoftware/cspell-dicts/issues/4282)) ([ca46765](https://github.com/streetsidesoftware/cspell-dicts/commit/ca46765131a7c36202bd9c91b4cdd2c4d3bab290))
+* Workflow Bot -- Build Dictionaries ([#4287](https://github.com/streetsidesoftware/cspell-dicts/issues/4287)) ([9ab559e](https://github.com/streetsidesoftware/cspell-dicts/commit/9ab559e17e9d5ffba2408d95d985c13bf2739d2a))
+
 ## [1.0.27](https://github.com/streetsidesoftware/cspell-dicts/compare/@cspell/dict-en-shared@1.0.26...@cspell/dict-en-shared@1.0.27) (2025-04-07)
 
 

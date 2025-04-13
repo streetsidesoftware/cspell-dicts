@@ -3,6 +3,14 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+## [3.1.15](https://github.com/streetsidesoftware/cspell-dicts/compare/@cspell/dict-companies@3.1.14...@cspell/dict-companies@3.1.15) (2025-04-13)
+
+
+### Updates and Bug Fixes
+
+* add fonticons (fontawesome) to companies ([#4280](https://github.com/streetsidesoftware/cspell-dicts/issues/4280)) ([c1fc864](https://github.com/streetsidesoftware/cspell-dicts/commit/c1fc864a4b81222260c7a8dfa93ed30063e5959a))
+* Workflow Bot -- Build Dictionaries ([#4286](https://github.com/streetsidesoftware/cspell-dicts/issues/4286)) ([69da562](https://github.com/streetsidesoftware/cspell-dicts/commit/69da562bdbd13d9211fa1392b532565b1ea74735))
+
 ## [3.1.14](https://github.com/streetsidesoftware/cspell-dicts/compare/@cspell/dict-companies@3.1.13...@cspell/dict-companies@3.1.14) (2025-02-08)
 
 

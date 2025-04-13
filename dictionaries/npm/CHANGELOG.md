@@ -3,6 +3,19 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+## [5.2.0](https://github.com/streetsidesoftware/cspell-dicts/compare/@cspell/dict-npm@5.1.34...@cspell/dict-npm@5.2.0) (2025-04-13)
+
+
+### Features
+
+* add packages to npm ([#4281](https://github.com/streetsidesoftware/cspell-dicts/issues/4281)) ([cc09989](https://github.com/streetsidesoftware/cspell-dicts/commit/cc0998990311482624081ace3acd9a325d275d8e))
+
+
+### Updates and Bug Fixes
+
+* Workflow Bot -- Build Dictionaries ([#4286](https://github.com/streetsidesoftware/cspell-dicts/issues/4286)) ([69da562](https://github.com/streetsidesoftware/cspell-dicts/commit/69da562bdbd13d9211fa1392b532565b1ea74735))
+* Workflow Bot -- Update Dictionaries ([#4288](https://github.com/streetsidesoftware/cspell-dicts/issues/4288)) ([d20b246](https://github.com/streetsidesoftware/cspell-dicts/commit/d20b246cdcbf35eac79e6b2973d7e2f8d712a0ec))
+
 ## [5.1.34](https://github.com/streetsidesoftware/cspell-dicts/compare/@cspell/dict-npm@5.1.33...@cspell/dict-npm@5.1.34) (2025-04-07)
 
 
