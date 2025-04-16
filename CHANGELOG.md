@@ -1,5 +1,19 @@
 # Release Notes
 
+## [29.4.0](https://github.com/streetsidesoftware/cspell-dicts/compare/cspell-dicts@29.3.0...cspell-dicts@29.4.0) (2025-04-16)
+
+
+### Features
+
+* Ignore Forbidden Words ([#4289](https://github.com/streetsidesoftware/cspell-dicts/issues/4289)) ([147e72b](https://github.com/streetsidesoftware/cspell-dicts/commit/147e72b3a2acbf54013fc46f36f18cb17b8d6ba7))
+
+
+### Updates and Bug Fixes
+
+* **en_US:** add neurodivergent and neurodiversity ([#4293](https://github.com/streetsidesoftware/cspell-dicts/issues/4293)) ([676f255](https://github.com/streetsidesoftware/cspell-dicts/commit/676f255d49a561344f49a1a708adf80971869d95))
+* Workflow Bot -- Build Dictionaries ([#4291](https://github.com/streetsidesoftware/cspell-dicts/issues/4291)) ([d2c2eaa](https://github.com/streetsidesoftware/cspell-dicts/commit/d2c2eaaf1fd927e5dc7b3b38e2fbedd6cd98f36a))
+* Workflow Bot -- Build Dictionaries ([#4294](https://github.com/streetsidesoftware/cspell-dicts/issues/4294)) ([bd44890](https://github.com/streetsidesoftware/cspell-dicts/commit/bd44890499489cdc0f5fc249c07167358a202678))
+
 ## [29.3.0](https://github.com/streetsidesoftware/cspell-dicts/compare/cspell-dicts@29.2.1...cspell-dicts@29.3.0) (2025-04-13)
 
 
