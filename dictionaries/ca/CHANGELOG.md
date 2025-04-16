@@ -22,6 +22,13 @@ See [Conventional Commits](https://conventionalcommits.org) for commit guideline
 
 
 
+## [3.1.0](https://github.com/streetsidesoftware/cspell-dicts/compare/@cspell/dict-ca@3.0.5...@cspell/dict-ca@3.1.0) (2025-04-16)
+
+
+### Features
+
+* Ignore Forbidden Words ([#4289](https://github.com/streetsidesoftware/cspell-dicts/issues/4289)) ([147e72b](https://github.com/streetsidesoftware/cspell-dicts/commit/147e72b3a2acbf54013fc46f36f18cb17b8d6ba7))
+
 ## [3.0.5](https://github.com/streetsidesoftware/cspell-dicts/compare/@cspell/dict-ca@3.0.4...@cspell/dict-ca@3.0.5) (2024-12-30)
 
 

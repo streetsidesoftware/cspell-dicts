@@ -1,5 +1,12 @@
 # Changelog
 
+## [1.2.0](https://github.com/streetsidesoftware/cspell-dicts/compare/@cspell/dict-de-at@1.1.3...@cspell/dict-de-at@1.2.0) (2025-04-16)
+
+
+### Features
+
+* Ignore Forbidden Words ([#4289](https://github.com/streetsidesoftware/cspell-dicts/issues/4289)) ([147e72b](https://github.com/streetsidesoftware/cspell-dicts/commit/147e72b3a2acbf54013fc46f36f18cb17b8d6ba7))
+
 ## [1.1.3](https://github.com/streetsidesoftware/cspell-dicts/compare/@cspell/dict-de-at@1.1.2...@cspell/dict-de-at@1.1.3) (2024-10-11)
 
 

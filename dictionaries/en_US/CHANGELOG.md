@@ -3,6 +3,14 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+## [4.4.2](https://github.com/streetsidesoftware/cspell-dicts/compare/@cspell/dict-en_us@4.4.1...@cspell/dict-en_us@4.4.2) (2025-04-16)
+
+
+### Updates and Bug Fixes
+
+* **en_US:** add neurodivergent and neurodiversity ([#4293](https://github.com/streetsidesoftware/cspell-dicts/issues/4293)) ([676f255](https://github.com/streetsidesoftware/cspell-dicts/commit/676f255d49a561344f49a1a708adf80971869d95))
+* Workflow Bot -- Build Dictionaries ([#4291](https://github.com/streetsidesoftware/cspell-dicts/issues/4291)) ([d2c2eaa](https://github.com/streetsidesoftware/cspell-dicts/commit/d2c2eaaf1fd927e5dc7b3b38e2fbedd6cd98f36a))
+
 ## [4.4.1](https://github.com/streetsidesoftware/cspell-dicts/compare/@cspell/dict-en_us@4.4.0...@cspell/dict-en_us@4.4.1) (2025-04-13)
 
 

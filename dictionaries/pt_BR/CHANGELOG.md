@@ -3,6 +3,13 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+## [2.4.0](https://github.com/streetsidesoftware/cspell-dicts/compare/@cspell/dict-pt-br@2.3.3...@cspell/dict-pt-br@2.4.0) (2025-04-16)
+
+
+### Features
+
+* Ignore Forbidden Words ([#4289](https://github.com/streetsidesoftware/cspell-dicts/issues/4289)) ([147e72b](https://github.com/streetsidesoftware/cspell-dicts/commit/147e72b3a2acbf54013fc46f36f18cb17b8d6ba7))
+
 ## [2.3.3](https://github.com/streetsidesoftware/cspell-dicts/compare/@cspell/dict-pt-br@2.3.2...@cspell/dict-pt-br@2.3.3) (2024-10-11)
 
 
