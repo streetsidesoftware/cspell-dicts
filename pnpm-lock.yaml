@@ -13,7 +13,7 @@ importers:
         version: 8.19.2(typescript@5.8.3)
       '@eslint/js':
         specifier: ^9.25.0
-        version: 9.25.0
+        version: 9.25.1
       '@lerna-lite/cli':
         specifier: ^4.0.0
         version: 4.0.0(@lerna-lite/exec@4.0.0)(@lerna-lite/publish@4.0.0)(@lerna-lite/run@4.0.0)(@lerna-lite/version@4.0.0(@lerna-lite/exec@4.0.0)(@lerna-lite/publish@4.0.0)(@lerna-lite/run@4.0.0)(@types/node@22.14.1)(conventional-commits-filter@5.0.0)(typescript@5.8.3))(@types/node@22.14.1)(typescript@5.8.3)
@@ -1024,6 +1024,10 @@ packages:
 
   '@eslint/js@9.25.0':
     resolution: {integrity: sha512-iWhsUS8Wgxz9AXNfvfOPFSW4VfMXdVhp1hjkZVhXCrpgh/aLcc45rX6MPu+tIVUWDw0HfNwth7O28M1xDxNf9w==}
+    engines: {node: ^18.18.0 || ^20.9.0 || >=21.1.0}
+
+  '@eslint/js@9.25.1':
+    resolution: {integrity: sha512-dEIwmjntEx8u3Uvv+kr3PDeeArL8Hw07H9kyYxCjnM9pBjfEhk6uLXSchxxzgiwtRhhzVzqmUSDFBOi1TuZ7qg==}
     engines: {node: ^18.18.0 || ^20.9.0 || >=21.1.0}
 
   '@eslint/object-schema@2.1.6':
@@ -4990,6 +4994,8 @@ snapshots:
 
   '@eslint/js@9.25.0': {}
 
+  '@eslint/js@9.25.1': {}
+
   '@eslint/object-schema@2.1.6': {}
 
   '@eslint/plugin-kit@0.2.8':
@@ -5814,7 +5820,7 @@ snapshots:
   '@types/vinyl@2.0.12':
     dependencies:
       '@types/expect': 1.20.4
-      '@types/node': 22.14.1
+      '@types/node': 20.17.30
 
   '@vercel/nft@0.27.10(encoding@0.1.13)':
     dependencies:
