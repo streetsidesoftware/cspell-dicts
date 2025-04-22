@@ -1,5 +1,13 @@
 # Change Log
 
+## [1.0.29](https://github.com/streetsidesoftware/cspell-dicts/compare/@cspell/dict-en-shared@1.0.28...@cspell/dict-en-shared@1.0.29) (2025-04-22)
+
+
+### Updates and Bug Fixes
+
+* add the word "initialisms" to en_shared ([#4303](https://github.com/streetsidesoftware/cspell-dicts/issues/4303)) ([9957ed8](https://github.com/streetsidesoftware/cspell-dicts/commit/9957ed86c4042c148d34cd82802e354290424c37))
+* Workflow Bot -- Build Dictionaries ([#4305](https://github.com/streetsidesoftware/cspell-dicts/issues/4305)) ([10ad522](https://github.com/streetsidesoftware/cspell-dicts/commit/10ad5222455afc0a5f8fb1a3233c8055fa044697))
+
 ## [1.0.28](https://github.com/streetsidesoftware/cspell-dicts/compare/@cspell/dict-en-shared@1.0.27...@cspell/dict-en-shared@1.0.28) (2025-04-13)
 
 
