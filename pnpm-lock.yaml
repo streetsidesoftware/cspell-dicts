@@ -13,7 +13,7 @@ importers:
         version: 8.19.2(typescript@5.8.3)
       '@eslint/js':
         specifier: ^9.25.0
-        version: 9.25.0
+        version: 9.25.1
       '@lerna-lite/cli':
         specifier: ^4.0.0
         version: 4.0.0(@lerna-lite/exec@4.0.0)(@lerna-lite/publish@4.0.0)(@lerna-lite/run@4.0.0)(@lerna-lite/version@4.0.0(@lerna-lite/exec@4.0.0)(@lerna-lite/publish@4.0.0)(@lerna-lite/run@4.0.0)(@types/node@22.14.1)(conventional-commits-filter@5.0.0)(typescript@5.8.3))(@types/node@22.14.1)(typescript@5.8.3)
@@ -46,7 +46,7 @@ importers:
         version: 8.19.2
       eslint:
         specifier: ^9.25.0
-        version: 9.25.0
+        version: 9.25.1
       generator-cspell-dicts:
         specifier: workspace:^
         version: link:generator-cspell-dicts
@@ -1022,8 +1022,8 @@ packages:
     resolution: {integrity: sha512-gtF186CXhIl1p4pJNGZw8Yc6RlshoePRvE0X91oPGb3vZ8pM3qOS9W9NGPat9LziaBV7XrJWGylNQXkGcnM3IQ==}
     engines: {node: ^18.18.0 || ^20.9.0 || >=21.1.0}
 
-  '@eslint/js@9.25.0':
-    resolution: {integrity: sha512-iWhsUS8Wgxz9AXNfvfOPFSW4VfMXdVhp1hjkZVhXCrpgh/aLcc45rX6MPu+tIVUWDw0HfNwth7O28M1xDxNf9w==}
+  '@eslint/js@9.25.1':
+    resolution: {integrity: sha512-dEIwmjntEx8u3Uvv+kr3PDeeArL8Hw07H9kyYxCjnM9pBjfEhk6uLXSchxxzgiwtRhhzVzqmUSDFBOi1TuZ7qg==}
     engines: {node: ^18.18.0 || ^20.9.0 || >=21.1.0}
 
   '@eslint/object-schema@2.1.6':
@@ -2378,8 +2378,8 @@ packages:
     resolution: {integrity: sha512-UyLnSehNt62FFhSwjZlHmeokpRK59rcz29j+F1/aDgbkbRTk7wIc9XzdoasMUbRNKDM0qQt/+BJ4BrpFeABemw==}
     engines: {node: ^18.18.0 || ^20.9.0 || >=21.1.0}
 
-  eslint@9.25.0:
-    resolution: {integrity: sha512-MsBdObhM4cEwkzCiraDv7A6txFXEqtNXOb877TsSp2FCkBNl8JfVQrmiuDqC1IkejT6JLPzYBXx/xAiYhyzgGA==}
+  eslint@9.25.1:
+    resolution: {integrity: sha512-E6Mtz9oGQWDCpV12319d59n4tx9zOTXSTmc8BLVxBx+G/0RdM5MvEEJLU9c0+aleoePYYgVTOsRblx433qmhWQ==}
     engines: {node: ^18.18.0 || ^20.9.0 || >=21.1.0}
     hasBin: true
     peerDependencies:
@@ -4953,9 +4953,9 @@ snapshots:
 
   '@cspell/url@8.19.2': {}
 
-  '@eslint-community/eslint-utils@4.6.1(eslint@9.25.0)':
+  '@eslint-community/eslint-utils@4.6.1(eslint@9.25.1)':
     dependencies:
-      eslint: 9.25.0
+      eslint: 9.25.1
       eslint-visitor-keys: 3.4.3
 
   '@eslint-community/regexpp@4.12.1': {}
@@ -4988,7 +4988,7 @@ snapshots:
     transitivePeerDependencies:
       - supports-color
 
-  '@eslint/js@9.25.0': {}
+  '@eslint/js@9.25.1': {}
 
   '@eslint/object-schema@2.1.6': {}
 
@@ -5814,7 +5814,7 @@ snapshots:
   '@types/vinyl@2.0.12':
     dependencies:
       '@types/expect': 1.20.4
-      '@types/node': 22.14.1
+      '@types/node': 20.17.30
 
   '@vercel/nft@0.27.10(encoding@0.1.13)':
     dependencies:
@@ -6676,15 +6676,15 @@ snapshots:
 
   eslint-visitor-keys@4.2.0: {}
 
-  eslint@9.25.0:
+  eslint@9.25.1:
     dependencies:
-      '@eslint-community/eslint-utils': 4.6.1(eslint@9.25.0)
+      '@eslint-community/eslint-utils': 4.6.1(eslint@9.25.1)
       '@eslint-community/regexpp': 4.12.1
       '@eslint/config-array': 0.20.0
       '@eslint/config-helpers': 0.2.1
       '@eslint/core': 0.13.0
       '@eslint/eslintrc': 3.3.1
-      '@eslint/js': 9.25.0
+      '@eslint/js': 9.25.1
       '@eslint/plugin-kit': 0.2.8
       '@humanfs/node': 0.16.6
       '@humanwhocodes/module-importer': 1.0.1
