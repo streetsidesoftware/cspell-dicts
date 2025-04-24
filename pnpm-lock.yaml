@@ -88,7 +88,7 @@ importers:
         version: 8.19.2
       glob:
         specifier: ^11.0.1
-        version: 11.0.1
+        version: 11.0.2
 
   dictionaries/ada: {}
 
@@ -350,7 +350,7 @@ importers:
         version: link:../en_shared
       aoo-mozilla-en-dict:
         specifier: github:marcoagpinto/aoo-mozilla-en-dict
-        version: https://codeload.github.com/marcoagpinto/aoo-mozilla-en-dict/tar.gz/ff73014a7f1af85b387a975800ec498e89d17d50
+        version: https://codeload.github.com/marcoagpinto/aoo-mozilla-en-dict/tar.gz/2bf52cf3c39cebbdf26bbefccbeef476ca793d12
 
   dictionaries/en_CA:
     devDependencies:
@@ -359,7 +359,7 @@ importers:
         version: link:../en_shared
       aoo-mozilla-en-dict:
         specifier: github:marcoagpinto/aoo-mozilla-en-dict
-        version: https://codeload.github.com/marcoagpinto/aoo-mozilla-en-dict/tar.gz/ff73014a7f1af85b387a975800ec498e89d17d50
+        version: https://codeload.github.com/marcoagpinto/aoo-mozilla-en-dict/tar.gz/2bf52cf3c39cebbdf26bbefccbeef476ca793d12
 
   dictionaries/en_GB:
     devDependencies:
@@ -368,7 +368,7 @@ importers:
         version: link:../en_shared
       aoo-mozilla-en-dict:
         specifier: github:marcoagpinto/aoo-mozilla-en-dict
-        version: https://codeload.github.com/marcoagpinto/aoo-mozilla-en-dict/tar.gz/ff73014a7f1af85b387a975800ec498e89d17d50
+        version: https://codeload.github.com/marcoagpinto/aoo-mozilla-en-dict/tar.gz/2bf52cf3c39cebbdf26bbefccbeef476ca793d12
 
   dictionaries/en_GB-MIT:
     devDependencies:
@@ -383,7 +383,7 @@ importers:
         version: link:../en_shared
       aoo-mozilla-en-dict:
         specifier: github:marcoagpinto/aoo-mozilla-en-dict
-        version: https://codeload.github.com/marcoagpinto/aoo-mozilla-en-dict/tar.gz/ff73014a7f1af85b387a975800ec498e89d17d50
+        version: https://codeload.github.com/marcoagpinto/aoo-mozilla-en-dict/tar.gz/2bf52cf3c39cebbdf26bbefccbeef476ca793d12
 
   dictionaries/en_shared: {}
 
@@ -1657,8 +1657,8 @@ packages:
     resolution: {integrity: sha512-bN798gFfQX+viw3R7yrGWRqnrN2oRkEkUjjl4JNn4E8GxxbjtG3FbrEIIY3l8/hrwUwIeCZvi4QuOTP4MErVug==}
     engines: {node: '>=12'}
 
-  aoo-mozilla-en-dict@https://codeload.github.com/marcoagpinto/aoo-mozilla-en-dict/tar.gz/ff73014a7f1af85b387a975800ec498e89d17d50:
-    resolution: {tarball: https://codeload.github.com/marcoagpinto/aoo-mozilla-en-dict/tar.gz/ff73014a7f1af85b387a975800ec498e89d17d50}
+  aoo-mozilla-en-dict@https://codeload.github.com/marcoagpinto/aoo-mozilla-en-dict/tar.gz/2bf52cf3c39cebbdf26bbefccbeef476ca793d12:
+    resolution: {tarball: https://codeload.github.com/marcoagpinto/aoo-mozilla-en-dict/tar.gz/2bf52cf3c39cebbdf26bbefccbeef476ca793d12}
     version: 0.0.0
 
   aproba@2.0.0:
@@ -2654,8 +2654,8 @@ packages:
     resolution: {integrity: sha512-7Bv8RF0k6xjo7d4A/PxYLbUCfb6c+Vpd2/mB2yRDlew7Jb5hEXiCD9ibfO7wpk8i4sevK6DFny9h7EYbM3/sHg==}
     hasBin: true
 
-  glob@11.0.1:
-    resolution: {integrity: sha512-zrQDm8XPnYEKawJScsnM0QzobJxlT/kHOOlRTio8IH/GrmxRE5fjllkzdaHclIuNjUQTJYH2xHNIGfdpJkDJUw==}
+  glob@11.0.2:
+    resolution: {integrity: sha512-YT7U7Vye+t5fZ/QMkBFrTJ7ZQxInIUjwyAjVj84CYXqgBdv30MFUPGnBR6sQaVq6Is15wYJUsnzTuWaGRBhBAQ==}
     engines: {node: 20 || >=22}
     hasBin: true
 
@@ -5937,7 +5937,7 @@ snapshots:
 
   ansi-styles@6.2.1: {}
 
-  aoo-mozilla-en-dict@https://codeload.github.com/marcoagpinto/aoo-mozilla-en-dict/tar.gz/ff73014a7f1af85b387a975800ec498e89d17d50: {}
+  aoo-mozilla-en-dict@https://codeload.github.com/marcoagpinto/aoo-mozilla-en-dict/tar.gz/2bf52cf3c39cebbdf26bbefccbeef476ca793d12: {}
 
   aproba@2.0.0: {}
 
@@ -6993,7 +6993,7 @@ snapshots:
       package-json-from-dist: 1.0.1
       path-scurry: 1.11.1
 
-  glob@11.0.1:
+  glob@11.0.2:
     dependencies:
       foreground-child: 3.3.1
       jackspeak: 4.1.0
