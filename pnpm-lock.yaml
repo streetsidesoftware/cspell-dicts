@@ -15,16 +15,16 @@ importers:
         specifier: ^9.25.1
         version: 9.25.1
       '@lerna-lite/cli':
-        specifier: ^4.0.0
+        specifier: ^4.1.1
         version: 4.1.1(@lerna-lite/exec@4.1.1)(@lerna-lite/publish@4.1.1)(@lerna-lite/run@4.1.1)(@lerna-lite/version@4.1.1(@lerna-lite/exec@4.1.1)(@lerna-lite/publish@4.1.1)(@lerna-lite/run@4.1.1)(@types/node@22.15.3)(conventional-commits-filter@5.0.0)(typescript@5.8.3))(@types/node@22.15.3)(typescript@5.8.3)
       '@lerna-lite/exec':
-        specifier: ^4.0.0
+        specifier: ^4.1.1
         version: 4.1.1(@lerna-lite/publish@4.1.1)(@lerna-lite/run@4.1.1)(@types/node@22.15.3)(typescript@5.8.3)
       '@lerna-lite/publish':
-        specifier: ^4.0.0
+        specifier: ^4.1.1
         version: 4.1.1(@lerna-lite/exec@4.1.1)(@lerna-lite/run@4.1.1)(@types/node@22.15.3)(conventional-commits-filter@5.0.0)(typescript@5.8.3)
       '@lerna-lite/run':
-        specifier: ^4.0.0
+        specifier: ^4.1.1
         version: 4.1.1(@lerna-lite/exec@4.1.1)(@lerna-lite/publish@4.1.1)(@types/node@22.15.3)(typescript@5.8.3)
       ava:
         specifier: ^6.2.0
@@ -691,7 +691,7 @@ importers:
         specifier: ^20.1.5
         version: 20.1.5
       '@types/node':
-        specifier: ^20.17.31
+        specifier: ^20.17.32
         version: 20.17.32
       typescript:
         specifier: ^5.8.3
@@ -5818,7 +5818,7 @@ snapshots:
 
   '@types/through@0.0.33':
     dependencies:
-      '@types/node': 20.17.32
+      '@types/node': 22.15.3
 
   '@types/unist@2.0.11': {}
 
@@ -5827,7 +5827,7 @@ snapshots:
   '@types/vinyl@2.0.12':
     dependencies:
       '@types/expect': 1.20.4
-      '@types/node': 20.17.32
+      '@types/node': 22.15.3
 
   '@vercel/nft@0.27.10(encoding@0.1.13)':
     dependencies:
@@ -7674,7 +7674,7 @@ snapshots:
   mem-fs-editor@11.1.4(mem-fs@4.1.0):
     dependencies:
       '@types/ejs': 3.1.5
-      '@types/node': 20.17.32
+      '@types/node': 22.15.3
       binaryextensions: 6.11.0
       commondir: 1.0.1
       deep-extend: 0.6.0
@@ -8367,7 +8367,7 @@ snapshots:
 
   p-transform@4.1.6:
     dependencies:
-      '@types/node': 20.17.32
+      '@types/node': 22.15.3
       p-queue: 7.4.1
       readable-stream: 4.7.0
 
