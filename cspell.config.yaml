@@ -40,6 +40,7 @@ words:
   - mdash
   - medicalterms
   - monkeyc
+  - ngram
   - nohoist
   - otechie
   - patreon
@@ -68,15 +69,19 @@ ignorePaths:
   - '*.trie'
   - '**/.git/!(COMMIT_EDITMSG)'
   - '**/.git/!(COMMIT_EDITMSG)/**'
+  - '*.tsv'
   - CHANGELOG.md
   - checksum.txt
   - cSpell.json
   - cspell.json
+  - packages/*/dict
   - dictionaries/*/dict/**/*.txt
   - dictionaries/*/src/**
+  - dictionaries/aoo-mozilla-en-dict/dicts
   - generator-cspell-dicts/generators/app/templates/**
   - lerna.json
   - node_modules
+  - static/*.json
   - /package.json
   - shared-additional-words.txt
   - source-dependencies.txt

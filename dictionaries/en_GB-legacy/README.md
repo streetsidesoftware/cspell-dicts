@@ -1,8 +1,9 @@
-# CSpell en_GB Dictionary
+# CSpell en_GB Legacy Dictionary
 
-British English dictionary for cspell.
+British English Legacy dictionary for cspell.
 
-This is a pre-built dictionary for use with cspell.
+This dictionary includes words that had been included in older versions of the en_GB dictionary.
+They have been moved here to make the en_GB dictionary easier to maintain.
 
 ## Requirements
 
@@ -16,14 +17,7 @@ This is a pre-built dictionary for use with cspell.
 Global Install and add to cspell global settings.
 
 ```sh
-npm install -g @cspell/dict-en-gb
-cspell link add @cspell/dict-en-gb
-```
-
-## Uninstall from cspell
-
-```sh
-cspell link remove @cspell/dict-en-gb
+npm install @cspell/dict-en-gb-legacy
 ```
 
 ## Manual Installation
@@ -38,13 +32,9 @@ The `cspell-ext.json` file in this package should be added to the import section
 }
 ```
 
-## Adding Words
-
-Please add any words to [src/additional_words.txt](https://github.com/streetsidesoftware/cspell-dicts/blob/main/dictionaries/en_GB/src/additional_words.txt) by making a pull request.
-
 ## License
 
-GPL-3.0-or-later
+MIT
 
 > Some packages may have other licenses included.
 
