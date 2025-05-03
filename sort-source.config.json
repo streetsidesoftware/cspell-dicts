@@ -1,11 +1,15 @@
 {
-    "files": ["dictionaries/*/src/*.txt"],
+    "files": [
+        "dictionaries/*/{src,src/legacy}/*.txt"
+    ],
     "exclude": [
         "**/README*",
         "**/cpp.txt",
         "**/Gree*.txt",
         "**/r/src/r.txt",
         "**/win32.txt",
+        "**/hunspell/**",
+        "**/generated/**",
         "dictionaries/de_DE/src/German_de_DE.txt"
     ]
 }
