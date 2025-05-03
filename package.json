@@ -8,6 +8,7 @@
     "lint": "pnpm run lint:fix && cspell --no-progress",
     "lint-ci": "eslint . && prettier -c . && cspell --no-progress",
     "lint:fix": "eslint --fix . && prettier -w .",
+    "build": "pnpm run setup && pnpm run build:conditional",
     "build:all": "pnpm -r run --stream --workspace-concurrency 2 build --no-bail",
     "build:readme": "pnpm run readme:generate-doc-dictionaries && pnpm run readme:inject",
     "build:conditional": "pnpm -r run --workspace-concurrency 2 --stream build:conditional --no-bail && pnpm -r run --workspace-concurrency 2 --stream conditional-build --no-bail",
