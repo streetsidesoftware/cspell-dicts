@@ -1,14 +1,108 @@
 # yaml-language-server: $schema=https://raw.githubusercontent.com/streetsidesoftware/cspell/main/packages/cspell-tools/cspell-tools.config.schema.json
 
 targets:
+  # The base set of words.
+  - name: base
+    targetDirectory: src/generated
+    compress: false
+    format: plaintext
+    sources:
+      - ../en_GB/src/additional_words.txt
+      - ./node_modules/@cspell/dict-en-shared/dict/acronyms.txt
+      - ./node_modules/@cspell/dict-en-shared/dict/shared-additional-words.txt
+      - ./src/acronyms.txt
+      - ./src/additional_words.txt
+      - ./src/legacy/verified.txt
+      - ./src/legacy/wordsEnGb.txt
+    sort: true
+    generateNonStrict: false
+
+  # Words genrated from the MIT dictionaries.
+  - name: en-gb-generated
+    targetDirectory: src/generated
+    compress: false
+    format: plaintext
+    sources:
+      - ./node_modules/@cspell/aoo-mozilla-en-dict/dicts/en_AU (Kevin Atkinson)/en_AU.dic
+      - ./node_modules/@cspell/aoo-mozilla-en-dict/dicts/en_CA (Kevin Atkinson)/en_CA.dic
+      - ./node_modules/@cspell/aoo-mozilla-en-dict/dicts/en_US (Kevin Atkinson)/en_US.dic
+      - ../en_AU/src/hunspell-en_AU-large/en_AU-large.dic
+      - ../en_US/src/hunspell/en_US-large.dic
+    excludeWordsNotFoundIn:
+      - ./node_modules/@cspell/aoo-mozilla-en-dict/dicts/en_GB (Marco Pinto) (-ise -ize) (2025+)/en_GB.dic
+    excludeWordsFrom:
+      - ./src/generated/base.txt
+    sort: true
+    generateNonStrict: false
+
+  # Words to be kept because they have been verified.
+  - name: en-gb-keep
+    targetDirectory: src/generated
+    compress: false
+    format: plaintext
+    sources:
+      - ./src/generated/base.txt
+    excludeWordsNotFoundIn:
+      - ./node_modules/@cspell/aoo-mozilla-en-dict/dicts/en_AU (Kevin Atkinson)/en_AU.dic
+      - ./node_modules/@cspell/aoo-mozilla-en-dict/dicts/en_CA (Kevin Atkinson)/en_CA.dic
+      - ./node_modules/@cspell/aoo-mozilla-en-dict/dicts/en_US (Kevin Atkinson)/en_US.dic
+      - ../en_AU/src/hunspell-en_AU-large/en_AU-large.dic
+      - ../en_US/src/hunspell/en_US-large.dic
+    excludeWordsFrom:
+      - ./src/generated/en-gb-generated.txt
+    sort: true
+    generateNonStrict: false
+
+  # Legacy words that are unique to this dictionary.
+  - name: en-gb-unique
+    targetDirectory: src/generated
+    compress: false
+    format: plaintext
+    sources:
+      - ./src/legacy/wordsEnGb.txt
+    excludeWordsFrom:
+      - ./node_modules/@cspell/aoo-mozilla-en-dict/dicts/en_GB (Marco Pinto) (-ise -ize) (2025+)/en_GB.dic
+      - ./src/generated/en-gb-keep.txt
+      - ./src/generated/en-gb-generated.txt
+    sort: true
+    generateNonStrict: false
+
+  # These are the words that have been found in the LGPL dictionary, but not in another source.
+  # It is not clear where the words are from.
+  - name: en-gb-words-of-unknown-source
+    targetDirectory: src/generated
+    compress: false
+    format: plaintext
+    sources:
+      - ./src/legacy/wordsEnGb.txt
+    excludeWordsNotFoundIn:
+      - ./node_modules/@cspell/aoo-mozilla-en-dict/dicts/en_GB (Marco Pinto) (-ise -ize) (2025+)/en_GB.dic
+    excludeWordsFrom:
+      - ./src/generated/en-gb-generated.txt
+      - ./src/generated/en-gb-keep.txt
+      - ./src/generated/en-gb-unique.txt
+      - ./src/legacy/verified.txt
+    sort: true
+    generateNonStrict: false
+
+  # The final dictionary.
   - name: en_GB
     targetDirectory: .
     compress: false
     format: trie3
     sources:
-      - listFile: source-files.txt
+      - ../en_GB/src/additional_words.txt
+      - ./node_modules/@cspell/dict-en-shared/dict/acronyms.txt
+      - ./node_modules/@cspell/dict-en-shared/dict/shared-additional-words.txt
+      - ./src/acronyms.txt
+      - ./src/additional_words.txt
+      - ./src/generated/en-gb-generated.txt
+      - ./src/generated/en-gb-keep.txt
+      - ./src/generated/en-gb-unique.txt
+      - ./src/legacy/verified.txt
     sort: true
     generateNonStrict: true
     excludeWordsFrom:
-      - node_modules/@cspell/dict-en-shared/dict/exclude-words.txt
+      - ./node_modules/@cspell/dict-en-shared/dict/exclude-words.txt
+
 checksumFile: true
