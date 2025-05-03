@@ -12,14 +12,12 @@
     "./cspell-ext.json": "./cspell-ext.json"
   },
   "scripts": {
-    "build": "cspell-tools-cli build",
+    "build": "cspell-tools-cli build && pnpm gz",
     "conditional-build": "pnpm build --conditional && pnpm gz",
     "gz": "cspell-tools-cli gzip \"*.trie\"",
     "prepare:dictionary": "pnpm gz",
     "prepublishOnly": "echo pre-publish",
-    "test-dict": "shx head -n 1000 \"./test/legacy/wordsEnGb.txt\" | cspell -c ./cspell-ext.json --locale=en_gb --languageId=* stdin",
-    "test-text": "cspell -c ./cspell-ext.json --locale=en_gb --languageId=* \"tests/*.txt\"",
-    "test": "pnpm run test-dict && pnpm run test-text"
+    "test": "cspell -c ./cspell-ext.json --locale=en_gb --languageId=* \"tests\""
   },
   "repository": {
     "type": "git",
