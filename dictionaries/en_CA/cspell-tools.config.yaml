@@ -4,8 +4,8 @@ targets:
   - name: en_CA
     sources:
       - src/additional_words.txt
-      - src/aoo-mozilla-en-dict/en_CA.dic
       - src/hunspell-en_CA-large/en_CA-large.dic
+      - node_modules/@cspell/aoo-mozilla-en-dict/dicts/en_CA (Kevin Atkinson)/en_CA.dic
       - node_modules/@cspell/dict-en-shared/dict/shared-additional-words.txt
     format: trie3
     targetDirectory: '.'

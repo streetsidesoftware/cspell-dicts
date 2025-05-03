@@ -360,12 +360,12 @@ importers:
 
   dictionaries/en_CA:
     devDependencies:
+      '@cspell/aoo-mozilla-en-dict':
+        specifier: workspace:^
+        version: link:../aoo-mozilla-en-dict
       '@cspell/dict-en-shared':
         specifier: workspace:^
         version: link:../en_shared
-      aoo-mozilla-en-dict:
-        specifier: github:marcoagpinto/aoo-mozilla-en-dict
-        version: https://codeload.github.com/marcoagpinto/aoo-mozilla-en-dict/tar.gz/2bf52cf3c39cebbdf26bbefccbeef476ca793d12
 
   dictionaries/en_GB:
     devDependencies:
