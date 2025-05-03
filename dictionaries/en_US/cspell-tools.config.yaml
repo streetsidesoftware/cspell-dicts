@@ -3,15 +3,15 @@
 targets:
   - name: en_US
     sources:
-      - src/additional_words.txt
-      - src/acronyms.txt
+      - node_modules/@cspell/aoo-mozilla-en-dict/dicts/en_US (Kevin Atkinson)/en_US.dic
       - node_modules/@cspell/dict-en-shared/dict/acronyms.txt
-      - src/aoo-mozilla-en-dict/en_US.dic
+      - node_modules/@cspell/dict-en-shared/dict/shared-additional-words.txt
+      - src/acronyms.txt
+      - src/additional_words.txt
       - src/contractions-and-possessives.txt
-      - src/legacy/en_US.txt
       - src/hunspell/en_US-large.dic
       - src/hyphenated-words.txt
-      - node_modules/@cspell/dict-en-shared/dict/shared-additional-words.txt
+      - src/legacy/en_US.txt
     format: trie3
     targetDirectory: '.'
     generateNonStrict: true
