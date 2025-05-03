@@ -497,6 +497,36 @@
     ]
   },
   {
+    "name": "English - British (-ise)",
+    "dir": "dictionaries/en_GB-ise",
+    "packageName": "@cspell/dict-en-gb-ise",
+    "description": "British English (-ise) Dictionary",
+    "cspell": false,
+    "categories": ["natural-language"],
+    "dictionaries": [
+      {
+        "name": "en-gb",
+        "description": "British English Dictionary",
+        "locales": ["en-GB"]
+      }
+    ]
+  },
+  {
+    "name": "English - British (Legacy)",
+    "dir": "dictionaries/en_GB-legacy",
+    "packageName": "@cspell/dict-en-gb-legacy",
+    "description": "British English Dictionary (Legacy)",
+    "cspell": false,
+    "categories": ["natural-language"],
+    "dictionaries": [
+      {
+        "name": "en-gb-legacy",
+        "description": "Legacy British English Dictionary",
+        "locales": ["en-GB"]
+      }
+    ]
+  },
+  {
     "name": "English - British (Limited)",
     "dir": "dictionaries/en_GB-MIT",
     "packageName": "@cspell/dict-en-gb-mit",
