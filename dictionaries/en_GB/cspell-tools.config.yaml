@@ -7,12 +7,24 @@ targets:
     format: trie3
     sources:
       - src/additional_words.txt
-      - src/aoo-mozilla-en-dict/en-GB.dic
-      - src/hunspell/en_GB.dic
-      - src/wordsEnGb.txt
+      - node_modules/@cspell/aoo-mozilla-en-dict/dicts/en_GB (Marco Pinto) (-ise -ize) (2025+)/en_GB.dic
       - node_modules/@cspell/dict-en-shared/dict/shared-additional-words.txt
     sort: true
     generateNonStrict: true
     excludeWordsFrom:
+      - node_modules/@cspell/dict-en-shared/dict/exclude-words.txt
+
+  - name: en_GB-legacy
+    targetDirectory: dict
+    compress: false
+    format: trie3
+    sources:
+      - src/legacy/wordsEnGb.txt
+    sort: true
+    generateNonStrict: false
+    excludeWordsFrom:
+      - src/additional_words.txt
+      - node_modules/@cspell/aoo-mozilla-en-dict/dicts/en_GB (Marco Pinto) (-ise -ize) (2025+)/en_GB.dic
+      - node_modules/@cspell/dict-en-shared/dict/shared-additional-words.txt
       - node_modules/@cspell/dict-en-shared/dict/exclude-words.txt
 checksumFile: true

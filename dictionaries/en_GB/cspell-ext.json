@@ -11,6 +11,12 @@
             "path": "./en_GB.trie.gz",
             "repMap": [["'|`|’", "'"]],
             "description": "British English Dictionary"
+        },
+        {
+            "name": "en-gb-legacy",
+            "path": "./dict/en_GB-legacy.trie.gz",
+            "repMap": [["'|`|’", "'"]],
+            "description": "Legacy British English Dictionary"
         }
     ],
     // Dictionaries to always be used.
@@ -38,7 +44,7 @@
                 }
             ],
             // List of dictionaries to enable by name in `dictionaryDefinitions`
-            "dictionaries": ["en-gb"],
+            "dictionaries": ["en-gb", "en-gb-legacy"],
             // Dictionary definitions can also be supplied here
             "dictionaryDefinitions": []
         }
