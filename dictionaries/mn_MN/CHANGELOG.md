@@ -1,5 +1,12 @@
 # Change Log
 
+## [1.1.1](https://github.com/streetsidesoftware/cspell-dicts/compare/@cspell/dict-mn-mn@1.1.0...@cspell/dict-mn-mn@1.1.1) (2025-05-03)
+
+
+### Updates and Bug Fixes
+
+* fix package.json information ([cf96cac](https://github.com/streetsidesoftware/cspell-dicts/commit/cf96cace738432c4fb006460f5ca0f1b79e38a8b))
+
 ## [1.1.0](https://github.com/streetsidesoftware/cspell-dicts/compare/@cspell/dict-mn-mn@1.0.0...@cspell/dict-mn-mn@1.1.0) (2025-04-16)
 
 

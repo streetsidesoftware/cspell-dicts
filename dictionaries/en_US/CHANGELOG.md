@@ -3,6 +3,24 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+## [4.4.4](https://github.com/streetsidesoftware/cspell-dicts/compare/@cspell/dict-en_us@4.4.3...@cspell/dict-en_us@4.4.4) (2025-05-03)
+
+
+### Updates and Bug Fixes
+
+* add lidars to en_US ([#4325](https://github.com/streetsidesoftware/cspell-dicts/issues/4325)) ([f615a6c](https://github.com/streetsidesoftware/cspell-dicts/commit/f615a6c72261ae4c70f3d304754073325d31c006))
+* english acronyms ([#4356](https://github.com/streetsidesoftware/cspell-dicts/issues/4356)) ([bf7287d](https://github.com/streetsidesoftware/cspell-dicts/commit/bf7287dc7353045d3a9c97e3975afdb0b7c23f4b))
+* Workflow Bot -- Build Dictionaries ([#4333](https://github.com/streetsidesoftware/cspell-dicts/issues/4333)) ([532adeb](https://github.com/streetsidesoftware/cspell-dicts/commit/532adeb899ce52bff9228d8532cb6efbe2061ffe))
+* Workflow Bot -- Build Dictionaries ([#4364](https://github.com/streetsidesoftware/cspell-dicts/issues/4364)) ([7c216ed](https://github.com/streetsidesoftware/cspell-dicts/commit/7c216edb421a3b5b58577ec091fdce83fe0d4b85))
+
+
+### Dependencies
+
+* The following workspace dependencies were updated
+  * devDependencies
+    * @cspell/dict-en-shared bumped to 1.0.30
+    * @cspell/aoo-mozilla-en-dict bumped to 1.0.0
+
 ## [4.4.3](https://github.com/streetsidesoftware/cspell-dicts/compare/@cspell/dict-en_us@4.4.2...@cspell/dict-en_us@4.4.3) (2025-04-22)
 
 
