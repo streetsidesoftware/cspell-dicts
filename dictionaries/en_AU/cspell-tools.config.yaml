@@ -4,8 +4,8 @@ targets:
   - name: en_AU
     sources:
       - ./src/additional_words.txt
-      - ./src/aoo-mozilla-en-dict/en_AU.dic
       - ./src/hunspell-en_AU-large/en_AU-large.dic
+      - ./node_modules/@cspell/aoo-mozilla-en-dict/dicts/en_AU (Kevin Atkinson)/en_AU.dic
       - ./node_modules/@cspell/dict-en-shared/dict/shared-additional-words.txt
     format: trie3
     targetDirectory: '.'
