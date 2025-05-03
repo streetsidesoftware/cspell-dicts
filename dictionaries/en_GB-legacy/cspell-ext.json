@@ -1,0 +1,21 @@
+{
+    "id": "en-gb-legacy",
+    "name": "English - British (Legacy)",
+    "description": "British English Dictionary (Legacy)",
+    "readonly": true,
+    "dictionaryDefinitions": [
+        {
+            "name": "en-gb-legacy",
+            "path": "./dict/en_GB-legacy.trie.gz",
+            "repMap": [["'|`|’", "'"]],
+            "description": "Legacy British English Dictionary"
+        }
+    ],
+    "languageSettings": [
+        {
+            "languageId": "*",
+            "locale": "en-GB",
+            "dictionaries": ["en-gb-legacy"]
+        }
+    ]
+}
