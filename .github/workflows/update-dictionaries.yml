@@ -31,6 +31,10 @@ jobs:
       - name: Setup
         uses: ./.github/actions/setup
 
+      - name: Normalize Package.json
+        run: |
+          pnpm update-package-json
+
       - name: Update
         run: |
           pnpm update-dictionaries
