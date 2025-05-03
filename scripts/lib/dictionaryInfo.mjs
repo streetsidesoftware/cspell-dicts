@@ -48,7 +48,7 @@ const defaultCSpellImports = new Set(extractImports(cspellBundle));
 /**
  *
  * @param {URL} dictURL
- * @returns {Promise<DictionaryPackageInfo>}
+ * @returns {Promise<DictionaryPackageInfo | undefined>}
  */
 export async function fetchDictionaryInfo(dictURL) {
     dictURL = new URL('./', dictURL);
@@ -57,7 +57,10 @@ export async function fetchDictionaryInfo(dictURL) {
     const pkgJson = await readJson(pkgUrl);
     const extFile = pkgJson.exports?.['.'] || 'cspell-ext.json';
     const cspellExtUrl = new URL(extFile, dictURL);
-    const extConfigFile = await readConfigFile(cspellExtUrl);
+    const extConfigFile = await readConfigFileOrUndefined(cspellExtUrl);
+    if (!extConfigFile) {
+        return undefined;
+    }
     /** @type {CSpellSettings} */
     const cspellExt = extConfigFile.settings;
     const isBundle = extractImports(cspellExt).filter((i) => i.startsWith('@cspell/')).length > 2 || undefined;
@@ -78,6 +81,18 @@ export async function fetchDictionaryInfo(dictURL) {
         isBundle,
         hasEnabledByDefault,
     };
+}
+
+async function readConfigFileOrUndefined(cspellExtUrl) {
+    try {
+        return await readConfigFile(cspellExtUrl);
+    } catch (e) {
+        if (e.code === 'ENOENT' || e.cause?.code === 'ENOENT') {
+            return undefined;
+        }
+        console.error(`Error reading config file: ${cspellExtUrl} - ${e.message} %o`, e);
+        throw e;
+    }
 }
 
 /**

@@ -15,7 +15,9 @@ const rootUrl = new URL('../', import.meta.url);
 async function run() {
     const packages = await findDictionaryPackages();
 
-    const packageInfo = await Promise.all(packages.map((file) => fetchDictionaryInfo(pathToFileURL(file))));
+    const packageInfo = (await Promise.all(packages.map((file) => fetchDictionaryInfo(pathToFileURL(file))))).filter(
+        (a) => !!a,
+    );
     packageInfo.sort((a, b) => a.dir.localeCompare(b.dir));
 
     const fileJsonURL = new URL('static/dictionary-packages.json', rootUrl);
