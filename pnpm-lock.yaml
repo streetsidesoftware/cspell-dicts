@@ -378,6 +378,9 @@ importers:
 
   dictionaries/en_GB-MIT:
     devDependencies:
+      '@cspell/aoo-mozilla-en-dict':
+        specifier: workspace:^
+        version: link:../aoo-mozilla-en-dict
       '@cspell/dict-en-shared':
         specifier: workspace:^
         version: link:../en_shared
@@ -6117,7 +6120,7 @@ snapshots:
   '@types/vinyl@2.0.12':
     dependencies:
       '@types/expect': 1.20.4
-      '@types/node': 22.15.3
+      '@types/node': 20.17.32
 
   '@vercel/nft@0.29.2(encoding@0.1.13)':
     dependencies:
