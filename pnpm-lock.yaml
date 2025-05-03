@@ -382,6 +382,15 @@ importers:
         specifier: workspace:^
         version: link:../en_shared
 
+  dictionaries/en_GB-ise:
+    devDependencies:
+      '@cspell/aoo-mozilla-en-dict':
+        specifier: workspace:^
+        version: link:../aoo-mozilla-en-dict
+      '@cspell/dict-en-shared':
+        specifier: workspace:^
+        version: link:../en_shared
+
   dictionaries/en_GB-legacy:
     devDependencies:
       '@cspell/aoo-mozilla-en-dict':
