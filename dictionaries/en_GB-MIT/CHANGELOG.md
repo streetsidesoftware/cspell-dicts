@@ -3,6 +3,34 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+## [3.0.0](https://github.com/streetsidesoftware/cspell-dicts/compare/@cspell/dict-en-gb-mit@2.1.38...@cspell/dict-en-gb-mit@3.0.0) (2025-05-03)
+
+
+### ⚠ BREAKING CHANGES
+
+* en-GB-MIT restructure. ([#4360](https://github.com/streetsidesoftware/cspell-dicts/issues/4360))
+* split legacy words from en_GB ([#4349](https://github.com/streetsidesoftware/cspell-dicts/issues/4349))
+
+### Features
+
+* en-GB-MIT restructure. ([#4360](https://github.com/streetsidesoftware/cspell-dicts/issues/4360)) ([d9a8b6d](https://github.com/streetsidesoftware/cspell-dicts/commit/d9a8b6da03bc757facaafa6ee8f327e797068f84))
+* split legacy words from en_GB ([#4349](https://github.com/streetsidesoftware/cspell-dicts/issues/4349)) ([b13f803](https://github.com/streetsidesoftware/cspell-dicts/commit/b13f8035d03d5491cd8fe618cab532e4ff58ffd2))
+
+
+### Updates and Bug Fixes
+
+* Workflow Bot -- Build Dictionaries ([#4352](https://github.com/streetsidesoftware/cspell-dicts/issues/4352)) ([04ef207](https://github.com/streetsidesoftware/cspell-dicts/commit/04ef207d8b5c9e3997b2bc1835eb291bb94e4c3e))
+* Workflow Bot -- Build Dictionaries ([#4361](https://github.com/streetsidesoftware/cspell-dicts/issues/4361)) ([2121667](https://github.com/streetsidesoftware/cspell-dicts/commit/212166781ede07744f38c58c29e7ea69b12ec10a))
+* Workflow Bot -- Build Dictionaries ([#4364](https://github.com/streetsidesoftware/cspell-dicts/issues/4364)) ([7c216ed](https://github.com/streetsidesoftware/cspell-dicts/commit/7c216edb421a3b5b58577ec091fdce83fe0d4b85))
+
+
+### Dependencies
+
+* The following workspace dependencies were updated
+  * devDependencies
+    * @cspell/aoo-mozilla-en-dict bumped to 1.0.0
+    * @cspell/dict-en-shared bumped to 1.0.30
+
 ## [2.1.38](https://github.com/streetsidesoftware/cspell-dicts/compare/@cspell/dict-en-gb-mit@2.1.37...@cspell/dict-en-gb-mit@2.1.38) (2025-04-22)
 
 
