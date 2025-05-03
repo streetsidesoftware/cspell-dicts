@@ -1,8 +1,8 @@
-# CSpell en_GB Dictionary
+# CSpell British English (-ise) Dictionary
 
 British English dictionary for cspell.
 
-This is a pre-built dictionary for use with cspell.
+Use this dictionary if you do not want the (-ize) spelling variants commonly used in US English.
 
 ## Requirements
 

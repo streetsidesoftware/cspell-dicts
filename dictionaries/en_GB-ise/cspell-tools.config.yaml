@@ -1,0 +1,16 @@
+# yaml-language-server: $schema=https://raw.githubusercontent.com/streetsidesoftware/cspell/main/packages/cspell-tools/cspell-tools.config.schema.json
+
+targets:
+  - name: en_GB
+    targetDirectory: .
+    compress: false
+    format: trie3
+    sources:
+      - src/additional_words.txt
+      - node_modules/@cspell/aoo-mozilla-en-dict/dicts/en_GB (Marco Pinto) (-ise) (2025+)/en_GB.dic
+      - node_modules/@cspell/dict-en-shared/dict/shared-additional-words.txt
+    sort: true
+    generateNonStrict: true
+    excludeWordsFrom:
+      - node_modules/@cspell/dict-en-shared/dict/exclude-words.txt
+checksumFile: true
