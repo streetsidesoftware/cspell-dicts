@@ -12,7 +12,7 @@
     "./cspell-ext.json": "./cspell-ext.json"
   },
   "scripts": {
-    "build": "cspell-tools-cli build",
+    "build": "cspell-tools-cli build && pnpm gz",
     "conditional-build": "pnpm build --conditional && pnpm gz",
     "gz": "cspell-tools-cli gzip \"dict/*.trie\"",
     "prepare:dictionary": "pnpm gz",
