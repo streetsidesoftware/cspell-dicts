@@ -105,7 +105,12 @@ export function nGramAccumulator(
                 continue;
             }
 
-            const [word, pos = ''] = wordEx.split('_');
+            const [rawWord, pos = ''] = wordEx.split('_');
+
+            const word = rawWord.normalize('NFC').replace(/^(.*)\.(?<!\d\.)\d+$/gm, '$1');
+            if (!word || word.startsWith('http:')) {
+                continue;
+            }
 
             if (curr?.word !== word) {
                 if (curr) {
