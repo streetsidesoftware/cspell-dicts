@@ -12,7 +12,6 @@ targets:
       - ./node_modules/@cspell/dict-en-shared/dict/shared-additional-words.txt
       - ./src/acronyms.txt
       - ./src/additional_words.txt
-      - ./src/legacy/verified.txt
       - ./src/legacy/wordsEnGb.txt
     sort: true
     generateNonStrict: false
@@ -43,11 +42,12 @@ targets:
     sources:
       - ./src/generated/base.txt
     excludeWordsNotFoundIn:
+      - ../en_AU/src/hunspell-en_AU-large/en_AU-large.dic
+      - ../en_US/src/hunspell/en_US-large.dic
       - ./node_modules/@cspell/aoo-mozilla-en-dict/dicts/en_AU (Kevin Atkinson)/en_AU.dic
       - ./node_modules/@cspell/aoo-mozilla-en-dict/dicts/en_CA (Kevin Atkinson)/en_CA.dic
       - ./node_modules/@cspell/aoo-mozilla-en-dict/dicts/en_US (Kevin Atkinson)/en_US.dic
-      - ../en_AU/src/hunspell-en_AU-large/en_AU-large.dic
-      - ../en_US/src/hunspell/en_US-large.dic
+      - ./src/legacy/1Grams.txt
     excludeWordsFrom:
       - ./src/generated/en-gb-generated.txt
     sort: true
@@ -67,8 +67,7 @@ targets:
     sort: true
     generateNonStrict: false
 
-  # These are the words that have been found in the LGPL dictionary, but not in another source.
-  # It is not clear where the words are from.
+  # It is not clear where the words are from, but they have been found in en_GB.
   - name: en-gb-words-of-unknown-source
     targetDirectory: src/generated
     compress: false
@@ -81,7 +80,6 @@ targets:
       - ./src/generated/en-gb-generated.txt
       - ./src/generated/en-gb-keep.txt
       - ./src/generated/en-gb-unique.txt
-      - ./src/legacy/verified.txt
     sort: true
     generateNonStrict: false
 
@@ -99,7 +97,7 @@ targets:
       - ./src/generated/en-gb-generated.txt
       - ./src/generated/en-gb-keep.txt
       - ./src/generated/en-gb-unique.txt
-      - ./src/legacy/verified.txt
+      - ./src/generated/en-gb-words-of-unknown-source.txt
     sort: true
     generateNonStrict: true
     excludeWordsFrom:
