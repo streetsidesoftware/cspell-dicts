@@ -11,9 +11,10 @@ permissions:
   pull-requests: write
   id-token: write
 
-concurrency:
-  group: ${{ github.workflow }}
-  cancel-in-progress: true
+## Do not cancel in-progress jobs. This can break the publish flow.
+# concurrency:
+#   group: ${{ github.workflow }}
+#   cancel-in-progress: true
 
 jobs:
   release-please:
