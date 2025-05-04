@@ -9,7 +9,7 @@ import { downloadNGrams, fetchTotals } from './fetch-n-gram.mjs';
 export async function app(program = defaultCommand): Promise<Command> {
     program
         .name('N-Gram Helper')
-        .description('Run performance tests.')
+        .description('N-Gram Helper')
         .addCommand(commandDownload())
         .addCommand(commandDownloadTotals());
 
@@ -44,15 +44,19 @@ function commandDownload(): Command {
         output?: string;
         nGram: string;
         all?: boolean;
+        minVolumes?: string;
     }
 
     const defaultOutput = 'ngram/n-gram.tsv';
+    const defaultMinVolumes = 1000;
+    const defaultMinVolumesOption = defaultMinVolumes.toString(10);
 
     const command = new Command('download')
         .description('Download the N-Gram totals.')
         .arguments('[prefixes...]')
         .option('-o, --output <file>', 'output file', defaultOutput)
         .option('-a, --all', 'download all prefixes')
+        .option('--min-volumes <number>', 'Minimum number of volumes the n-gram appears in', defaultMinVolumesOption)
         .addOption(
             new Option(
                 '-n, --ngram <n>',
@@ -68,8 +72,9 @@ function commandDownload(): Command {
                 console.log(chalk.red('No prefixes specified.'));
                 return;
             }
+            const minVolumes = Number.parseInt(options.minVolumes || defaultMinVolumesOption, 10) || defaultMinVolumes;
             const nGram = Number.parseInt(options.nGram || '1', 10) || 1;
-            for await (const file of downloadNGrams(options.all ? {} : { prefixes })) {
+            for await (const file of downloadNGrams(options.all ? { minVolumes } : { prefixes, minVolumes })) {
                 console.log('Saving %s...', file.prefix);
                 const filename = calcFilename(baseFilename, nGram, file.prefix);
                 await fs.mkdir(path.dirname(filename), { recursive: true });
