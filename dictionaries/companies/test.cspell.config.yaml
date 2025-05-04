@@ -1,0 +1,16 @@
+# yaml-language-server: $schema=https://raw.githubusercontent.com/streetsidesoftware/cspell/main/cspell.schema.json
+
+import:
+  - ./cspell-ext.json
+
+files:
+  - 'src/companies.txt'
+
+noConfigSearch: true
+
+overrides:
+  - filename: 'src/**'
+    languageId: '*'
+    language: '*'
+    ignoreRegExpList:
+      - '#.*' # Ignore comments
