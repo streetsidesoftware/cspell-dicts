@@ -3,6 +3,21 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+## [4.4.6](https://github.com/streetsidesoftware/cspell-dicts/compare/@cspell/dict-en_us@4.4.5...@cspell/dict-en_us@4.4.6) (2025-05-04)
+
+
+### Updates and Bug Fixes
+
+* **english:** add « decluttering » word ([#4341](https://github.com/streetsidesoftware/cspell-dicts/issues/4341)) ([2f98ad1](https://github.com/streetsidesoftware/cspell-dicts/commit/2f98ad16e70bed2481580a5e4e1176c77dd3c9be))
+* Workflow Bot -- Build Dictionaries ([#4386](https://github.com/streetsidesoftware/cspell-dicts/issues/4386)) ([2e1d877](https://github.com/streetsidesoftware/cspell-dicts/commit/2e1d8776dcf8e93bbd9b130db05559916ad81c0b))
+
+
+### Dependencies
+
+* The following workspace dependencies were updated
+  * devDependencies
+    * @cspell/dict-en-shared bumped to 1.0.32
+
 ## [4.4.5](https://github.com/streetsidesoftware/cspell-dicts/compare/@cspell/dict-en_us@4.4.4...@cspell/dict-en_us@4.4.5) (2025-05-04)
 
 

@@ -1,5 +1,15 @@
 # Release Notes
 
+## [30.1.1](https://github.com/streetsidesoftware/cspell-dicts/compare/cspell-dicts@30.1.0...cspell-dicts@30.1.1) (2025-05-04)
+
+
+### Updates and Bug Fixes
+
+* Add more legacy words to en_GB-MIT ([#4385](https://github.com/streetsidesoftware/cspell-dicts/issues/4385)) ([4e6394a](https://github.com/streetsidesoftware/cspell-dicts/commit/4e6394abd77cd65f9aa6dab5466b4ba2be0f2a71))
+* **english:** add « decluttering » word ([#4341](https://github.com/streetsidesoftware/cspell-dicts/issues/4341)) ([2f98ad1](https://github.com/streetsidesoftware/cspell-dicts/commit/2f98ad16e70bed2481580a5e4e1176c77dd3c9be))
+* Workflow Bot -- Build Dictionaries ([#4383](https://github.com/streetsidesoftware/cspell-dicts/issues/4383)) ([9e84dfc](https://github.com/streetsidesoftware/cspell-dicts/commit/9e84dfcc64fac08bb5a6e92ccfc80121e069ff45))
+* Workflow Bot -- Build Dictionaries ([#4386](https://github.com/streetsidesoftware/cspell-dicts/issues/4386)) ([2e1d877](https://github.com/streetsidesoftware/cspell-dicts/commit/2e1d8776dcf8e93bbd9b130db05559916ad81c0b))
+
 ## [30.1.0](https://github.com/streetsidesoftware/cspell-dicts/compare/cspell-dicts@30.0.1...cspell-dicts@30.1.0) (2025-05-04)
 
 

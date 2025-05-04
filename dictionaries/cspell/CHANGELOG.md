@@ -1,5 +1,15 @@
 # Change Log
 
+## [1.0.51](https://github.com/streetsidesoftware/cspell-dicts/compare/@cspell/dict-cspell-bundle@1.0.50...@cspell/dict-cspell-bundle@1.0.51) (2025-05-04)
+
+
+### Dependencies
+
+* The following workspace dependencies were updated
+  * dependencies
+    * @cspell/dict-companies bumped to 3.2.1
+    * @cspell/dict-en_us bumped to 4.4.6
+
 ## [1.0.50](https://github.com/streetsidesoftware/cspell-dicts/compare/@cspell/dict-cspell-bundle@1.0.49...@cspell/dict-cspell-bundle@1.0.50) (2025-05-04)
 
 
