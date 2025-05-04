@@ -3,6 +3,13 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+## [3.0.2](https://github.com/streetsidesoftware/cspell-dicts/compare/@cspell/dict-en-gb-mit@3.0.1...@cspell/dict-en-gb-mit@3.0.2) (2025-05-04)
+
+
+### Updates and Bug Fixes
+
+* Make sure `en_GB-MIT` is a drop in replacement for `en_GB`. ([#4380](https://github.com/streetsidesoftware/cspell-dicts/issues/4380)) ([38843d4](https://github.com/streetsidesoftware/cspell-dicts/commit/38843d455b2adc0482a5c85377feb210c7b23c91))
+
 ## [3.0.1](https://github.com/streetsidesoftware/cspell-dicts/compare/@cspell/dict-en-gb-mit@3.0.0...@cspell/dict-en-gb-mit@3.0.1) (2025-05-04)
 
 

@@ -1,5 +1,23 @@
 # Release Notes
 
+## [30.1.0](https://github.com/streetsidesoftware/cspell-dicts/compare/cspell-dicts@30.0.1...cspell-dicts@30.1.0) (2025-05-04)
+
+
+### Features
+
+* add new companies ([#4367](https://github.com/streetsidesoftware/cspell-dicts/issues/4367)) ([0d0b60f](https://github.com/streetsidesoftware/cspell-dicts/commit/0d0b60f9f3d542c8ec3eb14e4bedb87085305dee))
+
+
+### Updates and Bug Fixes
+
+* Make sure `en_GB-MIT` is a drop in replacement for `en_GB`. ([#4380](https://github.com/streetsidesoftware/cspell-dicts/issues/4380)) ([38843d4](https://github.com/streetsidesoftware/cspell-dicts/commit/38843d455b2adc0482a5c85377feb210c7b23c91))
+* Workflow Bot -- Update Dictionaries ([#4382](https://github.com/streetsidesoftware/cspell-dicts/issues/4382)) ([f35bbf0](https://github.com/streetsidesoftware/cspell-dicts/commit/f35bbf048eb631963f62eece5843573a821103d5))
+
+
+### Tests
+
+* Improve tests for Companies ([#4378](https://github.com/streetsidesoftware/cspell-dicts/issues/4378)) ([62d03f1](https://github.com/streetsidesoftware/cspell-dicts/commit/62d03f1155a9f11e352e688e916dde7c5f233254))
+
 ## [30.0.1](https://github.com/streetsidesoftware/cspell-dicts/compare/cspell-dicts@30.0.0...cspell-dicts@30.0.1) (2025-05-04)
 
 
