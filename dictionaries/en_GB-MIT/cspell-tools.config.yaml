@@ -13,6 +13,7 @@ targets:
       - ./src/acronyms.txt
       - ./src/additional_words.txt
       - ./src/legacy/wordsEnGb.txt
+      - ./src/names.txt
     sort: true
     generateNonStrict: false
 
@@ -27,6 +28,7 @@ targets:
       - ./node_modules/@cspell/aoo-mozilla-en-dict/dicts/en_US (Kevin Atkinson)/en_US.dic
       - ../en_AU/src/hunspell-en_AU-large/en_AU-large.dic
       - ../en_US/src/hunspell/en_US-large.dic
+      - ./src/legacy/missing.txt
     excludeWordsNotFoundIn:
       - ./node_modules/@cspell/aoo-mozilla-en-dict/dicts/en_GB (Marco Pinto) (-ise -ize) (2025+)/en_GB.dic
     excludeWordsFrom:
@@ -98,6 +100,9 @@ targets:
       - ./src/generated/en-gb-keep.txt
       - ./src/generated/en-gb-unique.txt
       - ./src/generated/en-gb-words-of-unknown-source.txt
+      - ./src/legacy/legacy.txt
+      - filename: ./src/names.txt
+        split: true
     sort: true
     generateNonStrict: true
     excludeWordsFrom:
