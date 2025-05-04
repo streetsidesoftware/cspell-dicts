@@ -7,7 +7,7 @@
     // List of dictionary files to add to the global list of dictionaries
     "dictionaryDefinitions": [
         {
-            "name": "en-gb-mit",
+            "name": "en-gb",
             "path": "./en_GB.trie.gz",
             "repMap": [["'|`|’", "'"]],
             "description": "British English Dictionary"
@@ -38,7 +38,7 @@
                 }
             ],
             // List of dictionaries to enable by name in `dictionaryDefinitions`
-            "dictionaries": ["en-gb-mit"],
+            "dictionaries": ["en-gb"],
             // Dictionary definitions can also be supplied here
             "dictionaryDefinitions": []
         }
