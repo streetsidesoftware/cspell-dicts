@@ -3,6 +3,16 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+## [5.0.7](https://github.com/streetsidesoftware/cspell-dicts/compare/@cspell/dict-software-terms@5.0.6...@cspell/dict-software-terms@5.0.7) (2025-05-04)
+
+
+### Updates and Bug Fixes
+
+* add computing acronyms ([#4370](https://github.com/streetsidesoftware/cspell-dicts/issues/4370)) ([9725f65](https://github.com/streetsidesoftware/cspell-dicts/commit/9725f655d38e6f57c4018f2bf6fcbba99c8f449b))
+* add software tools to software-terms dictionary ([#4368](https://github.com/streetsidesoftware/cspell-dicts/issues/4368)) ([df0fd38](https://github.com/streetsidesoftware/cspell-dicts/commit/df0fd385a25908964695f0f9567f16549f76cf99))
+* Workflow Bot -- Build Dictionaries ([#4373](https://github.com/streetsidesoftware/cspell-dicts/issues/4373)) ([6bf448a](https://github.com/streetsidesoftware/cspell-dicts/commit/6bf448abae2c3c2999e761c7a335276573eebce9))
+* Workflow Bot -- Build Dictionaries ([#4374](https://github.com/streetsidesoftware/cspell-dicts/issues/4374)) ([10384fc](https://github.com/streetsidesoftware/cspell-dicts/commit/10384fcdc9d53e5961d234ef2979f94e049aa592))
+
 ## [5.0.6](https://github.com/streetsidesoftware/cspell-dicts/compare/@cspell/dict-software-terms@5.0.5...@cspell/dict-software-terms@5.0.6) (2025-05-03)
 
 

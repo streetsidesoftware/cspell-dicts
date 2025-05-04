@@ -1,5 +1,13 @@
 # Change Log
 
+## [1.0.31](https://github.com/streetsidesoftware/cspell-dicts/compare/@cspell/dict-en-shared@1.0.30...@cspell/dict-en-shared@1.0.31) (2025-05-04)
+
+
+### Updates and Bug Fixes
+
+* add common English acronyms ([#4371](https://github.com/streetsidesoftware/cspell-dicts/issues/4371)) ([2062be7](https://github.com/streetsidesoftware/cspell-dicts/commit/2062be74ee4cfb52cbffcf9ceb092b39368e9a49))
+* Workflow Bot -- Build Dictionaries ([#4373](https://github.com/streetsidesoftware/cspell-dicts/issues/4373)) ([6bf448a](https://github.com/streetsidesoftware/cspell-dicts/commit/6bf448abae2c3c2999e761c7a335276573eebce9))
+
 ## [1.0.30](https://github.com/streetsidesoftware/cspell-dicts/compare/@cspell/dict-en-shared@1.0.29...@cspell/dict-en-shared@1.0.30) (2025-05-03)
 
 

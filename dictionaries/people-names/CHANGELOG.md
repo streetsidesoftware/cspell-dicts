@@ -1,5 +1,14 @@
 # Change Log
 
+## [1.1.9](https://github.com/streetsidesoftware/cspell-dicts/compare/@cspell/dict-people-names@1.1.8...@cspell/dict-people-names@1.1.9) (2025-05-04)
+
+
+### Dependencies
+
+* The following workspace dependencies were updated
+  * devDependencies
+    * @internal/en-freq bumped to 1.0.0
+
 ## [1.1.8](https://github.com/streetsidesoftware/cspell-dicts/compare/@cspell/dict-people-names@1.1.7...@cspell/dict-people-names@1.1.8) (2025-01-18)
 
 
