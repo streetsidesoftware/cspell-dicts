@@ -44,7 +44,7 @@ Contributions are welcomed and encouraged, please read [src/README.md](https://g
 
 ## License
 
-GPL-3.0-or-later
+LGPL-3.0-or-later
 
 > Some packages may have other licenses included.
 
