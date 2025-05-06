@@ -3,6 +3,28 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+## [3.0.4](https://github.com/streetsidesoftware/cspell-dicts/compare/@cspell/dict-en-gb-mit@3.0.3...@cspell/dict-en-gb-mit@3.0.4) (2025-05-06)
+
+
+### Updates and Bug Fixes
+
+* Add `rigueur` to en_GB-MIT ([#4390](https://github.com/streetsidesoftware/cspell-dicts/issues/4390)) ([4a4dd5c](https://github.com/streetsidesoftware/cspell-dicts/commit/4a4dd5ceda6c192afef7b513d277528507bddf5a))
+* Workflow Bot -- Build Dictionaries ([#4393](https://github.com/streetsidesoftware/cspell-dicts/issues/4393)) ([64dedb4](https://github.com/streetsidesoftware/cspell-dicts/commit/64dedb43c7146ac51f8ee9a1b12cc51864362b5d))
+* Workflow Bot -- Build Dictionaries ([#4406](https://github.com/streetsidesoftware/cspell-dicts/issues/4406)) ([7e02e36](https://github.com/streetsidesoftware/cspell-dicts/commit/7e02e36dd735dd9d28639f230301cd057715873d))
+
+
+### Code Refactoring
+
+* consolidate English shared `-ise` words into `shared-additional-words-ise.txt` ([#4397](https://github.com/streetsidesoftware/cspell-dicts/issues/4397)) ([36a1d61](https://github.com/streetsidesoftware/cspell-dicts/commit/36a1d612042a7e1d707a1c10c6c59c948fb43034))
+
+
+### Dependencies
+
+* The following workspace dependencies were updated
+  * devDependencies
+    * @cspell/aoo-mozilla-en-dict bumped to 1.0.1
+    * @cspell/dict-en-shared bumped to 1.0.33
+
 ## [3.0.3](https://github.com/streetsidesoftware/cspell-dicts/compare/@cspell/dict-en-gb-mit@3.0.2...@cspell/dict-en-gb-mit@3.0.3) (2025-05-04)
 
 

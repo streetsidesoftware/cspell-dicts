@@ -1,5 +1,26 @@
 # Release Notes
 
+## [30.1.2](https://github.com/streetsidesoftware/cspell-dicts/compare/cspell-dicts@30.1.1...cspell-dicts@30.1.2) (2025-05-06)
+
+
+### Updates and Bug Fixes
+
+* Add `rigueur` to en_GB-MIT ([#4390](https://github.com/streetsidesoftware/cspell-dicts/issues/4390)) ([4a4dd5c](https://github.com/streetsidesoftware/cspell-dicts/commit/4a4dd5ceda6c192afef7b513d277528507bddf5a))
+* Add a few coding terms ([#4394](https://github.com/streetsidesoftware/cspell-dicts/issues/4394)) ([c86f1ea](https://github.com/streetsidesoftware/cspell-dicts/commit/c86f1eaf2d9b1c015264cf845c4c78efb6efc54a))
+* Workflow Bot -- Build Dictionaries ([#4393](https://github.com/streetsidesoftware/cspell-dicts/issues/4393)) ([64dedb4](https://github.com/streetsidesoftware/cspell-dicts/commit/64dedb43c7146ac51f8ee9a1b12cc51864362b5d))
+* Workflow Bot -- Build Dictionaries ([#4396](https://github.com/streetsidesoftware/cspell-dicts/issues/4396)) ([e403efc](https://github.com/streetsidesoftware/cspell-dicts/commit/e403efc5edc0c356d03e61fc62c78955baa7973e))
+* Workflow Bot -- Build Dictionaries ([#4406](https://github.com/streetsidesoftware/cspell-dicts/issues/4406)) ([7e02e36](https://github.com/streetsidesoftware/cspell-dicts/commit/7e02e36dd735dd9d28639f230301cd057715873d))
+
+
+### Code Refactoring
+
+* consolidate English shared `-ise` words into `shared-additional-words-ise.txt` ([#4397](https://github.com/streetsidesoftware/cspell-dicts/issues/4397)) ([36a1d61](https://github.com/streetsidesoftware/cspell-dicts/commit/36a1d612042a7e1d707a1c10c6c59c948fb43034))
+
+
+### Tests
+
+* make sure conditional builds are tested. ([#4404](https://github.com/streetsidesoftware/cspell-dicts/issues/4404)) ([e9dffbc](https://github.com/streetsidesoftware/cspell-dicts/commit/e9dffbcd9e3ff53c455cfaa9c0eff9b30cc9f115))
+
 ## [30.1.1](https://github.com/streetsidesoftware/cspell-dicts/compare/cspell-dicts@30.1.0...cspell-dicts@30.1.1) (2025-05-04)
 
 
