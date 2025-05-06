@@ -3,6 +3,21 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+## [4.4.7](https://github.com/streetsidesoftware/cspell-dicts/compare/@cspell/dict-en_us@4.4.6...@cspell/dict-en_us@4.4.7) (2025-05-06)
+
+
+### Code Refactoring
+
+* consolidate English shared `-ise` words into `shared-additional-words-ise.txt` ([#4397](https://github.com/streetsidesoftware/cspell-dicts/issues/4397)) ([36a1d61](https://github.com/streetsidesoftware/cspell-dicts/commit/36a1d612042a7e1d707a1c10c6c59c948fb43034))
+
+
+### Dependencies
+
+* The following workspace dependencies were updated
+  * devDependencies
+    * @cspell/dict-en-shared bumped to 1.0.33
+    * @cspell/aoo-mozilla-en-dict bumped to 1.0.1
+
 ## [4.4.6](https://github.com/streetsidesoftware/cspell-dicts/compare/@cspell/dict-en_us@4.4.5...@cspell/dict-en_us@4.4.6) (2025-05-04)
 
 

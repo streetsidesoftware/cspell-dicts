@@ -1,5 +1,17 @@
 # Change Log
 
+## [1.0.33](https://github.com/streetsidesoftware/cspell-dicts/compare/@cspell/dict-en-shared@1.0.32...@cspell/dict-en-shared@1.0.33) (2025-05-06)
+
+
+### Updates and Bug Fixes
+
+* Workflow Bot -- Build Dictionaries ([#4406](https://github.com/streetsidesoftware/cspell-dicts/issues/4406)) ([7e02e36](https://github.com/streetsidesoftware/cspell-dicts/commit/7e02e36dd735dd9d28639f230301cd057715873d))
+
+
+### Code Refactoring
+
+* consolidate English shared `-ise` words into `shared-additional-words-ise.txt` ([#4397](https://github.com/streetsidesoftware/cspell-dicts/issues/4397)) ([36a1d61](https://github.com/streetsidesoftware/cspell-dicts/commit/36a1d612042a7e1d707a1c10c6c59c948fb43034))
+
 ## [1.0.32](https://github.com/streetsidesoftware/cspell-dicts/compare/@cspell/dict-en-shared@1.0.31...@cspell/dict-en-shared@1.0.32) (2025-05-04)
 
 
