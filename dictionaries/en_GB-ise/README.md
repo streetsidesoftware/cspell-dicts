@@ -44,6 +44,10 @@ Contributions are welcomed and encouraged, please read [src/README.md](https://g
 
 ## License
 
+The code used to build this dictionary is licensed under `MIT` license.
+
+But because of the sources it includes, the `@cspell/dict-en-gb-ise` package is released under:
+
 LGPL-3.0-or-later
 
 > Some packages may have other licenses included.
