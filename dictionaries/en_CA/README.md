@@ -50,7 +50,6 @@ npm run build
 
 Contributions are welcomed and encouraged, please read [src/README.md](https://github.com/streetsidesoftware/cspell-dicts/blob/main/dictionaries/en_CA/src/README.md).
 
-
 ## License
 
 GPL-3.0-or-later

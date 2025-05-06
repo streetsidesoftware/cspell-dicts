@@ -12,4 +12,3 @@ All source files used to generate the `en_GB-legacy` dictionary should be stored
 
 > [!NOTE]
 > Please consider adding words to [`en_GB`](https://github.com/streetsidesoftware/cspell-dicts/tree/main/dictionaries/en_GB/src) dictionary.
-
