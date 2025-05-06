@@ -40,7 +40,7 @@ The `cspell-ext.json` file in this package should be added to the import section
 
 ## Adding Words
 
-Please add any words to [src/additional_words.txt](https://github.com/streetsidesoftware/cspell-dicts/blob/main/dictionaries/en_GB-ise/src/additional_words.txt) by making a pull request.
+Contributions are welcomed and encouraged, please read [src/README.md](https://github.com/streetsidesoftware/cspell-dicts/blob/main/dictionaries/en_GB-ise/src/README.md).
 
 ## License
 

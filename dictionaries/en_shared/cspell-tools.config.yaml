@@ -11,6 +11,16 @@ targets:
     compress: false
     excludeWordsFrom:
       - src/exclude-words.txt
+  - name: 'shared-additional-words-ise'
+    sources:
+      - filename: src/shared-additional-words-ise.txt
+        split: true
+    format: plaintext
+    targetDirectory: './dict'
+    generateNonStrict: false
+    compress: false
+    excludeWordsFrom:
+      - src/exclude-words.txt
   - name: exclude-words
     sources:
       - filename: src/exclude-words.txt

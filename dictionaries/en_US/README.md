@@ -52,7 +52,7 @@ npm run build
 
 ## Adding Words
 
-Please add any words to [src/additional_words.txt](https://github.com/streetsidesoftware/cspell-dicts/blob/main/dictionaries/en_US/src/additional_words.txt) by making a pull request.
+Contributions are welcomed and encouraged, please read [src/README.md](https://github.com/streetsidesoftware/cspell-dicts/blob/main/dictionaries/en_US/src/README.md).
 
 ## Resources
 
