@@ -10,6 +10,7 @@
     "update-package-json": "update-package-json.mjs",
     "update-contributors": "update-contributors.mjs",
     "merge": "merge.mjs",
+    "filter-words": "filter-words.mjs",
     "pipe-cmds": "pipe-cmds.mjs"
   },
   "scripts": {
@@ -21,7 +22,10 @@
   "dependencies": {
     "@cspell/cspell-bundled-dicts": "^9.0.0",
     "commander": "^13.1.0",
+    "cspell-dictionary": "^9.0.0",
+    "cspell-io": "^9.0.0",
     "cspell-lib": "^9.0.0",
+    "cspell-trie-lib": "^9.0.0",
     "globby": "^14.1.0",
     "json5": "2.2.3",
     "prettier": "^3.5.3",

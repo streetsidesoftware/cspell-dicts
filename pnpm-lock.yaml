@@ -732,7 +732,16 @@ importers:
       commander:
         specifier: ^13.1.0
         version: 13.1.0
+      cspell-dictionary:
+        specifier: ^9.0.0
+        version: 9.0.0
+      cspell-io:
+        specifier: ^9.0.0
+        version: 9.0.0
       cspell-lib:
+        specifier: ^9.0.0
+        version: 9.0.0
+      cspell-trie-lib:
         specifier: ^9.0.0
         version: 9.0.0
       globby:
@@ -6123,7 +6132,7 @@ snapshots:
   '@types/vinyl@2.0.12':
     dependencies:
       '@types/expect': 1.20.4
-      '@types/node': 22.15.12
+      '@types/node': 20.17.41
 
   '@vercel/nft@0.29.2(encoding@0.1.13)':
     dependencies:
