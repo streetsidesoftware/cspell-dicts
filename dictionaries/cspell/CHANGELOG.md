@@ -1,5 +1,29 @@
 # Change Log
 
+## [2.0.0](https://github.com/streetsidesoftware/cspell-dicts/compare/@cspell/dict-cspell-bundle@1.0.52...@cspell/dict-cspell-bundle@2.0.0) (2025-05-07)
+
+
+### ⚠ BREAKING CHANGES
+
+* sync CSpell v9 dictionaries ([#4417](https://github.com/streetsidesoftware/cspell-dicts/issues/4417))
+
+### Features
+
+* sync CSpell v9 dictionaries ([#4417](https://github.com/streetsidesoftware/cspell-dicts/issues/4417)) ([bdc0644](https://github.com/streetsidesoftware/cspell-dicts/commit/bdc06444ff8fc7a1293c60ca6f3f8c0ea5fc470a))
+
+
+### Updates and Bug Fixes
+
+* Workflow Bot -- Build Dictionaries ([#4419](https://github.com/streetsidesoftware/cspell-dicts/issues/4419)) ([5c17a0d](https://github.com/streetsidesoftware/cspell-dicts/commit/5c17a0d503a8572745ec5e18d3de9c3a5f12fd83))
+
+
+### Dependencies
+
+* The following workspace dependencies were updated
+  * dependencies
+    * @cspell/dict-en_us bumped to 4.4.8
+    * @cspell/dict-en-gb-mit bumped to 3.0.5
+
 ## [1.0.52](https://github.com/streetsidesoftware/cspell-dicts/compare/@cspell/dict-cspell-bundle@1.0.51...@cspell/dict-cspell-bundle@1.0.52) (2025-05-06)
 
 
