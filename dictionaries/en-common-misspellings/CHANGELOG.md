@@ -1,5 +1,12 @@
 # Change Log
 
+## [2.0.11](https://github.com/streetsidesoftware/cspell-dicts/compare/@cspell/dict-en-common-misspellings@2.0.10...@cspell/dict-en-common-misspellings@2.0.11) (2025-05-08)
+
+
+### Updates and Bug Fixes
+
+* Remove `witten` from dictionary. ([#4421](https://github.com/streetsidesoftware/cspell-dicts/issues/4421)) ([cf88ff2](https://github.com/streetsidesoftware/cspell-dicts/commit/cf88ff2419366f74e4558236b00eef5740e12038))
+
 ## [2.0.10](https://github.com/streetsidesoftware/cspell-dicts/compare/@cspell/dict-en-common-misspellings@2.0.9...@cspell/dict-en-common-misspellings@2.0.10) (2025-03-13)
 
 
