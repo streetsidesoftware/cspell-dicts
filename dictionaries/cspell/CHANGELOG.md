@@ -1,5 +1,15 @@
 # Change Log
 
+## [2.0.1](https://github.com/streetsidesoftware/cspell-dicts/compare/@cspell/dict-cspell-bundle@2.0.0...@cspell/dict-cspell-bundle@2.0.1) (2025-05-08)
+
+
+### Dependencies
+
+* The following workspace dependencies were updated
+  * dependencies
+    * @cspell/dict-en-common-misspellings bumped to 2.0.11
+    * @cspell/dict-en-gb-mit bumped to 3.0.6
+
 ## [2.0.0](https://github.com/streetsidesoftware/cspell-dicts/compare/@cspell/dict-cspell-bundle@1.0.52...@cspell/dict-cspell-bundle@2.0.0) (2025-05-07)
 
 

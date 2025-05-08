@@ -1,5 +1,12 @@
 # Release Notes
 
+## [31.0.1](https://github.com/streetsidesoftware/cspell-dicts/compare/cspell-dicts@31.0.0...cspell-dicts@31.0.1) (2025-05-08)
+
+
+### Updates and Bug Fixes
+
+* Remove `witten` from dictionary. ([#4421](https://github.com/streetsidesoftware/cspell-dicts/issues/4421)) ([cf88ff2](https://github.com/streetsidesoftware/cspell-dicts/commit/cf88ff2419366f74e4558236b00eef5740e12038))
+
 ## [31.0.0](https://github.com/streetsidesoftware/cspell-dicts/compare/cspell-dicts@30.1.2...cspell-dicts@31.0.0) (2025-05-07)
 
 
