@@ -572,7 +572,7 @@ importers:
     dependencies:
       '@cspell/normalize-json':
         specifier: ^9.0.0
-        version: 9.0.0
+        version: 9.0.1
       csv-stringify:
         specifier: ^6.5.2
         version: 6.5.2
@@ -1031,8 +1031,8 @@ packages:
     resolution: {integrity: sha512-PL6ty0Xdn1UmRXwIwkze3IizgVbJSCvP0yMQF5xRQixTfidBfxrvnqjAWOGNuQifgIk1PVyFvik7ubLG0skw3w==}
     engines: {node: '>=20'}
 
-  '@cspell/normalize-json@9.0.0':
-    resolution: {integrity: sha512-rTOHPdgvc+mMl7OI+6vHmPcm7FqF92CkUmJCrTuzJcB1WltmhFNEDziA7woBOJG96DLDJA9mCHw8uzwDlSH7Ow==}
+  '@cspell/normalize-json@9.0.1':
+    resolution: {integrity: sha512-y5LZtuJe01pwU+rwPI/1v17qdF46dRQttcr0EIFcouQsbRnfKJzqWeSuByOl6hZOBvGwPPTD1xHYAl8J5PMu4A==}
     engines: {node: '>=20'}
 
   '@cspell/strong-weak-map@9.0.0':
@@ -2706,8 +2706,8 @@ packages:
     resolution: {integrity: sha512-JrqFmyUl2PnPi1OvLyTVHnQvwQ0S+e6lGSwu8OkAZlSaNIZciTY2H/cOOROxsBA1m/LZNHDsqAgDZt6akWcjsQ==}
     engines: {node: '>=18'}
 
-  flatpack-json@9.0.0:
-    resolution: {integrity: sha512-dP27Swh1sUT4pkVISe5mayOzssm7udw6CDU9LWaqFr6tk7LiGPYaMOSJuFSO8UyuhktylBeg9tG1+096NnVZtw==}
+  flatpack-json@9.0.1:
+    resolution: {integrity: sha512-rhustIqwgDIm8Dz2yGiyDF26G6yfeMsR1+jfPy7d1Wo2u/j0HxTNRsbELMrqUL2V7lAJ8oK93C/oOTnhvOFNhg==}
     engines: {node: '>=20'}
 
   flatted@3.3.3:
@@ -5263,9 +5263,9 @@ snapshots:
 
   '@cspell/filetypes@9.0.0': {}
 
-  '@cspell/normalize-json@9.0.0':
+  '@cspell/normalize-json@9.0.1':
     dependencies:
-      flatpack-json: 9.0.0
+      flatpack-json: 9.0.1
 
   '@cspell/strong-weak-map@9.0.0': {}
 
@@ -6151,7 +6151,7 @@ snapshots:
   '@types/vinyl@2.0.12':
     dependencies:
       '@types/expect': 1.20.4
-      '@types/node': 20.17.46
+      '@types/node': 22.15.17
 
   '@vercel/nft@0.29.2(encoding@0.1.13)':
     dependencies:
@@ -7363,7 +7363,7 @@ snapshots:
       flatted: 3.3.3
       keyv: 4.5.4
 
-  flatpack-json@9.0.0: {}
+  flatpack-json@9.0.1: {}
 
   flatted@3.3.3: {}
 
