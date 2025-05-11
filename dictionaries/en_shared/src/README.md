@@ -8,5 +8,7 @@ If the words you want to add is valid for:
 
 - all English flavors (en_US, en_AU, en_CA, en_GB, ...),
   add them to [shared-additional-words.txt](https://github.com/streetsidesoftware/cspell-dicts/blob/main/dictionaries/en_shared/src/shared-additional-words.txt)
+- all American English (en_US)
+  add them to [shared-additional-words-ize.txt](https://github.com/streetsidesoftware/cspell-dicts/blob/main/dictionaries/en_shared/src/shared-additional-words-ize.txt)
 - all non-American English flavors (en_AU, en_CA, en_GB, ...),
   add them to [shared-additional-words-ise.txt](https://github.com/streetsidesoftware/cspell-dicts/blob/main/dictionaries/en_shared/src/shared-additional-words-ise.txt)
