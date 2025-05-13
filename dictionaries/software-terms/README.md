@@ -46,6 +46,10 @@ Building is only necessary if you want to modify the contents of the dictionary.
 npm run build
 ```
 
+## Adding Words
+
+Contributions are welcomed and encouraged, please read [src/README.md](https://github.com/streetsidesoftware/cspell-dicts/blob/main/dictionaries/software-terms/src/README.md).
+
 ## License
 
 MIT

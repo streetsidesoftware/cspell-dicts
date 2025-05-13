@@ -9,6 +9,8 @@ targets:
         split: true
       - filename: src/software-terms.txt
         split: true
+      - filename: src/software-terms-legacy.txt
+        split: true
     format: plaintext
     targetDirectory: './dict'
     generateNonStrict: false
