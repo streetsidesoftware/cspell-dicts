@@ -6,13 +6,18 @@ There is an ongoing attempt to have the terms in the correct file.
 
 ## Software Terms
 
-This file should contain software terms and concepts. Rule of thumb: [software-terms.txt](./software-terms.txt) should contains
-terms and concepts taught in a software development course. General terms used while coding should be added to [coding-terms.txt](./coding-terms.txt).
-Due to how the file evolved, this file also contains tools, products, applications, and even some brands.
-If you see these, please move them into the correct file.
+This file should contain software terms and concepts.
 
-- [software-terms.txt](./software-terms.txt) - Concepts.
-- [computing-acronyms.txt](./computing-acronyms.txt) - Acronyms and abbreviations.
+> [!NOTE]
+> - [software-terms.txt](./software-terms.txt) - Concepts and terms taught in a software development course.
+> - [computing-acronyms.txt](./computing-acronyms.txt) - Acronyms and abbreviations.
+> - [coding-terms.txt](./coding-terms.txt) -  General terms used while coding.
+
+> [!WARNING]
+> [software-terms-legacy.txt](./software-terms-legacy.txt) is also present and should be considered a legacy.
+> This file is the result of years of contributions without clear rules.
+> It contains tools, products, applications, and even some brands, all these are now in dedicated dictionaries.
+> If you see these, please move them into the correct file.
 
 ## Coding Terms -- General words used while coding
 
