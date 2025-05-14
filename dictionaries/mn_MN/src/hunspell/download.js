@@ -1,4 +1,4 @@
-import fetch from 'node-fetch';
+// ts-check
 import { writeFile } from 'fs/promises';
 
 const files = [
