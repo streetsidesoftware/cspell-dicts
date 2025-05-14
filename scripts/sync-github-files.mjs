@@ -1,7 +1,7 @@
 #!/usr/bin/env node
 
 import { promises as fs } from 'node:fs';
-import Path from 'node:path';
+import Path from 'node:path/posix';
 
 import { program } from 'commander';
 
@@ -73,6 +73,7 @@ async function syncTreeEntry(entry, token, outDir) {
     } else if (entry.type === 'tree') {
         const response = await fetchGithubRest(entry.url, token);
         for (const child of response.tree) {
+            child.fullPath = Path.join(entry.fullPath, child.path);
             await syncTreeEntry(child, token, Path.join(outDir, entry.path));
         }
     }
@@ -112,6 +113,7 @@ async function syncPath(repo, path, token, tag, outDir) {
     if (current.type === 'tree') {
         current.path = '';
     }
+    current.fullPath = path;
     await syncTreeEntry(current, token, outDir);
 }
 
@@ -120,7 +122,7 @@ async function shouldSyncFile(outDir, entry) {
         return true;
     }
     const syncFile = await readSyncFile(outDir);
-    return syncFile[entry.path] !== entry.sha;
+    return syncFile[entry.fullPath] !== entry.sha;
 }
 
 async function syncPaths(repo, paths, options) {
@@ -133,12 +135,12 @@ async function syncPaths(repo, paths, options) {
     for (const path of paths) {
         await syncPath(repo, path, token, tag, output);
     }
-    await updateSyncFile(output, { path: urlGithub(repo), sha: tag });
+    await updateSyncFile(output, { fullPath: urlGithub(repo), sha: tag });
 }
 
 async function updateSyncFile(outDir, entry) {
     const syncFile = await readSyncFile(outDir);
-    syncFile[entry.path] = entry.sha;
+    syncFile[entry.fullPath] = entry.sha;
     await writeSyncFile(outDir, syncFile);
 }
 
