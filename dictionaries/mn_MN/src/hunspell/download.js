@@ -31,5 +31,6 @@ async function downloadFile(url, output) {
         console.log('✅ All files downloaded.');
     } catch (error) {
         console.error('❌ Error:', error.message);
+        process.exitCode = 1;        
     }
 })();
