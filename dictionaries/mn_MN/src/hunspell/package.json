@@ -1,6 +1,6 @@
 {
   "name": "dictionary-mn",
-  "version": "3.0.1",
+  "version": "3.0.0",
   "description": "Mongolian spelling dictionary",
   "license": "LPPL-1.3c",
   "keywords": [
@@ -11,14 +11,16 @@
     "myspell",
     "spelling"
   ],
-  "repository": "https://github.com/btseee/vscode-cspell-dict-extensions-mn",
+  "repository": "https://github.com/wooorm/dictionaries/tree/main/dictionaries/mn",
+  "bugs": "https://github.com/wooorm/dictionaries/issues",
   "funding": {
     "type": "github",
-    "url": "https://github.com/btseeee"
+    "url": "https://github.com/sponsors/wooorm"
   },
-  "author": "Battseren Badral <bbattseren88@gmail.com>",
+  "author": "Titus Wormer <tituswormer@gmail.com> (https://wooorm.com)",
   "contributors": [
-    "Battseren Badral <bbattseren88@gmail.com>"
+    "Titus Wormer <tituswormer@gmail.com> (https://wooorm.com)",
+    "Thomas Beverley <tom.beverley101@gmail.com>"
   ],
   "type": "module",
   "exports": "./index.js",
@@ -28,5 +30,8 @@
     "index.dic",
     "index.js",
     "index.map"
-  ]
+  ],
+  "scripts": {
+    "start": "node download.js"
+  }
 }
