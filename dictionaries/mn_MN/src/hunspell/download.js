@@ -8,7 +8,7 @@ const files = [
     },
     {
         url: 'https://raw.githubusercontent.com/bataak/dict-mn/main/mn_MN/mn_MN.dic',
-        output: 'index.dic'
+        output: new URL('index.dic', import.meta.url)
     }
 ];
 
