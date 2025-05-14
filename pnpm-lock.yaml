@@ -41,6 +41,9 @@ importers:
       cspell-dict-file-checker:
         specifier: workspace:^
         version: link:cspell-dict-file-checker
+      cspell-dicts-scripts:
+        specifier: workspace:*
+        version: link:scripts
       cspell-trie:
         specifier: ^9.0.1
         version: 9.0.1
@@ -68,9 +71,6 @@ importers:
       prettier:
         specifier: ^3.5.3
         version: 3.5.3
-      scripts:
-        specifier: link:scripts
-        version: link:scripts
       shx:
         specifier: ^0.4.0
         version: 0.4.0
