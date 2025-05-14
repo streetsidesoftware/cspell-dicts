@@ -4,7 +4,7 @@ import { writeFile } from 'fs/promises';
 const files = [
     {
         url: 'https://raw.githubusercontent.com/bataak/dict-mn/main/mn_MN/mn_MN.aff',
-        output: 'index.aff'
+        output: new URL('index.aff', import.meta.url)
     },
     {
         url: 'https://raw.githubusercontent.com/bataak/dict-mn/main/mn_MN/mn_MN.dic',
