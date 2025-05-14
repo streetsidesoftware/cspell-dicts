@@ -18,7 +18,7 @@ async function downloadFile(url, output) {
     if (!response.ok) {
         throw new Error(`Failed to fetch ${url}: ${response.statusText}`);
     }
-    const data = await response.text();
+    const data = await response.bytes();
     await writeFile(output, data);
     console.log(`Saved to ${output}`);
 }
