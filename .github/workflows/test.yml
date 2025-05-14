@@ -70,7 +70,10 @@ jobs:
         with:
           node-version: 22.x
 
-      - run: pnpm conditional-build
+      - name: Conditional Build
+        env:
+          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+        run: pnpm conditional-build
 
       - name: Build Report
         # Use the PR body action to create a report of the build.
