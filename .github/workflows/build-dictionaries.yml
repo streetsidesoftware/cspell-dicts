@@ -46,6 +46,8 @@ jobs:
         run: |
           pnpm run setup
       - name: Build
+        env:
+          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
         run: |
           pnpm run conditional-build
 
