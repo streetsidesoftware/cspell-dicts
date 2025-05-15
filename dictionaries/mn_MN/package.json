@@ -15,11 +15,12 @@
     "build": "cross-env NODE_OPTIONS=--max_old_space_size=8192 cspell-tools-cli build",
     "test": "pnpm test:words && pnpm test:samples",
     "test:samples": "cspell samples",
-    "test:words": "hunspell-reader words -n 1000 -m 0 \"src/hunspell/index.dic\" | cspell -c ./cspell-ext.json \"--locale=mn,mn-MN\" \"--languageId=*\" stdin",
+    "test:words": "hunspell-reader words -n 1000 -m 0 \"src/hunspell/mn_MN.dic\" | cspell -c ./cspell-ext.json \"--locale=mn,mn-MN\" \"--languageId=*\" stdin",
     "prepublishOnly": "pnpm run conditional-build && pnpm test",
     "prepare:dictionary": "cspell-tools-cli gzip \"dict/*.trie\"",
     "conditional-build": "pnpm run sync && pnpm run build --conditional && pnpm run prepare:dictionary",
-    "sync": "node src/hunspell/download.js"
+    "sync:manual": "GITHUB_TOKEN=$(gh auth token) pnpm sync",
+    "sync": "sync-github-files bataak/dict-mn mn_MN LICENSE --latest -o src/hunspell"
   },
   "repository": {
     "type": "git",
@@ -35,14 +36,14 @@
     "spelling"
   ],
   "author": "Street Side Software <support@streetsidesoftware.nl>",
-  "contributors": [],
+  "contributors": [
+    "Battseren Badral <bbattseren88@gmail.com>"
+  ],
   "license": "MIT",
   "bugs": {
     "url": "https://github.com/streetsidesoftware/cspell-dicts/issues"
   },
   "homepage": "https://github.com/streetsidesoftware/cspell-dicts/blob/main/dictionaries/mn_MN#readme",
-  "devDependencies": {
-  },
   "files": [
     "dict/mn-mn.trie.gz",
     "cspell-ext.json",

@@ -3,7 +3,7 @@
 targets:
   - name: 'mn-mn'
     sources:
-      - filename: 'src/hunspell/index.dic'
+      - filename: 'src/hunspell/mn_MN.dic'
         maxDepth: 1 # This is set to 1 to prevent builds from taking too long.
       - src/additional-words.txt
     format: 'trie3'
