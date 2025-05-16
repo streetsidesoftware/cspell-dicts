@@ -96,6 +96,7 @@ Various [cspell](https://github.com/streetsidesoftware/cspell) dictionaries. Eac
 - [F#](dictionaries/fsharp) - F# dictionary. <sup>1</sup>
 - [Flutter](dictionaries/flutter) - Flutter dictionary. <sup>1</sup>
 - [Fullstack](dictionaries/fullstack) - Common words encountered during fullstack development <sup>1</sup>
+- [Git](dictionaries/git) - CSpell configuration for GIT <sup>1</sup>
 - [Go Language](dictionaries/golang) - Go Language Dictionary <sup>1</sup>
 - [Haskell](dictionaries/haskell) - Haskell dictionary. <sup>1</sup>
 - [HTML](dictionaries/html) - HTML dictionary. <sup>1</sup>
@@ -138,7 +139,6 @@ Various [cspell](https://github.com/streetsidesoftware/cspell) dictionaries. Eac
 - [Font Names](dictionaries/fonts) - Font names dictionary. <sup>1</sup>
 - [Gaming](dictionaries/gaming-terms) - Gaming dictionary. <sup>1</sup>
 - [GIS and PostGIS](dictionaries/gis) - GIS and PostGIS dictionary.
-- [Git](dictionaries/git) - CSpell configuration for GIT <sup>1</sup>
 - [Google Cloud](dictionaries/google) - Google Cloud Development Dictionary. <sup>1</sup>
 - [Markdown](dictionaries/markdown) - Markdown dictionary. <sup>1</sup>
 - [Medical terms](dictionaries/medicalterms) - Medical Terms Dictionary <sup>2</sup>
@@ -355,7 +355,7 @@ Various [cspell](https://github.com/streetsidesoftware/cspell) dictionaries. Eac
 | [`gaming-terms`](dictionaries/gaming-terms) <sup>1</sup>                             | Gaming dictionary.                                                  | -                             | -                                                              |
 | [`gd`](dictionaries/gd)                                                              | Scottish Gaelic dictionary                                          | gd                            | -                                                              |
 | [`gis`](dictionaries/gis)                                                            | GIS and PostGIS dictionary.                                         | -                             | -                                                              |
-| [`git`](dictionaries/git) <sup>1</sup>                                               | Git Terms                                                           | -                             | -                                                              |
+| [`git`](dictionaries/git) <sup>1</sup>                                               | Git Terms                                                           | -                             | commit-msg<br>git-commit                                       |
 | [`gl-es`](dictionaries/gl_ES)                                                        | Galician Dictionary (Spain)                                         | gl<br>gl_ES                   | -                                                              |
 | [`golang`](dictionaries/golang) <sup>1</sup>                                         | Go Language Dictionary                                              | -                             | go                                                             |
 | [`google`](dictionaries/google) <sup>1</sup>                                         | Google Cloud Development dictionary.                                | -                             | -                                                              |
