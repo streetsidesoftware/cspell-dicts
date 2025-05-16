@@ -6,6 +6,8 @@ on:
     secrets:
       PUBLISH_NPM:
         required: true
+      GITHUB_TOKEN:
+        required: true
 
 permissions:
   contents: read
@@ -27,4 +29,5 @@ jobs:
       - name: Publish to NPM
         env:
           NODE_AUTH_TOKEN: ${{secrets.PUBLISH_NPM}}
+          GITHUB_TOKEN: ${{secrets.GITHUB_TOKEN}}
         run: pnpm lerna publish from-package --no-push --no-private --yes
