@@ -1221,8 +1221,8 @@ packages:
     engines: {node: '>=18'}
     hasBin: true
 
-  '@modelcontextprotocol/sdk@1.11.2':
-    resolution: {integrity: sha512-H9vwztj5OAqHg9GockCQC06k1natgcxWQSRpQcPJf6i5+MWBzfKkRtxGbjQf0X2ihii0ffLZCRGbYV2f2bjNCQ==}
+  '@modelcontextprotocol/sdk@1.11.3':
+    resolution: {integrity: sha512-rmOWVRUbUJD7iSvJugjUbFZshTAuJ48MXoZ80Osx1GM0K/H1w7rSEvmw8m6vdWxNASgtaHIhAgre4H/E9GJiYQ==}
     engines: {node: '>=18'}
 
   '@nodelib/fs.scandir@2.1.5':
@@ -1250,8 +1250,8 @@ packages:
     engines: {node: ^16.14.0 || >=18.0.0}
     hasBin: true
 
-  '@npmcli/arborist@9.0.2':
-    resolution: {integrity: sha512-9z5FgIYd62LxcuCF2BAXnsEo059pGoPv/1E3XkrKBlB9kOQnJ6WSsyOjuGIcZfLAXseamyAif2J7yAVkWNdWzA==}
+  '@npmcli/arborist@9.1.0':
+    resolution: {integrity: sha512-PoOjBc3stYoaI2ehGC0hKQLoa18UYuSxxNZMm86f1y/mjokOvLrshbes7Fne2fk/4V1wR4s2BRdHpYHbp+PJcg==}
     engines: {node: ^20.17.0 || >=22.9.0}
     hasBin: true
 
@@ -3265,8 +3265,8 @@ packages:
     resolution: {integrity: sha512-+bT2uH4E5LGE7h/n3evcS/sQlJXCpIp6ym8OWJ5eV6+67Dsql/LaaT7qJBAt2rzfoa/5QBGBhxDix1dMt2kQKQ==}
     engines: {node: '>= 0.8.0'}
 
-  libnpmaccess@10.0.0:
-    resolution: {integrity: sha512-Nz9Lolajvh6nPA5ixdKNfN2BJS0N7LvqTXPqy3+F37i3T4mcped24JCjwnp5KCPCB0ewX3ccopwUnhaTS1/yXg==}
+  libnpmaccess@10.0.1:
+    resolution: {integrity: sha512-o5eAnMxOCR27pceUzJsXVQ0+/u7KcwqkLIlviu1U54PK+cO2FaFr0zXvmrwNJzq8Rkj4ybx2G/U/G9IfWVM7eQ==}
     engines: {node: ^20.17.0 || >=22.9.0}
 
   libnpmpublish@11.0.0:
@@ -4949,6 +4949,11 @@ packages:
     engines: {node: '>= 14'}
     hasBin: true
 
+  yaml@2.8.0:
+    resolution: {integrity: sha512-4lLa/EcQCB0cJkyts+FpIRx5G/llPxfP6VQU5KByHEhLxY3IJCH0f0Hy1MHI8sClTvsIb8qwRJ6R/ZdlDJ/leQ==}
+    engines: {node: '>= 14.6'}
+    hasBin: true
+
   yamljs@0.3.0:
     resolution: {integrity: sha512-C/FsVVhht4iPQYXOInoxUM/1ELSf9EsgKH34FofQOp6hwCPrW4vG4w5++TED3xRUo8gD7l0P1J1dLlDYzODsTQ==}
     hasBin: true
@@ -5126,7 +5131,7 @@ snapshots:
       cspell-trie-lib: 9.0.1
       glob: 10.4.5
       hunspell-reader: 9.0.1
-      yaml: 2.7.1
+      yaml: 2.8.0
     transitivePeerDependencies:
       - typescript
 
@@ -5517,13 +5522,13 @@ snapshots:
       '@lerna-lite/core': 4.1.2(@types/node@22.15.18)(typescript@5.8.3)
       '@lerna-lite/npmlog': 4.1.2
       '@lerna-lite/version': 4.1.2(@lerna-lite/exec@4.1.2)(@lerna-lite/publish@4.1.2)(@lerna-lite/run@4.1.2)(@types/node@22.15.18)(conventional-commits-filter@5.0.0)(typescript@5.8.3)
-      '@npmcli/arborist': 9.0.2
+      '@npmcli/arborist': 9.1.0
       '@npmcli/package-json': 6.1.1
       byte-size: 9.0.1
       columnify: 1.6.0
       fs-extra: 11.3.0
       has-unicode: 2.0.1
-      libnpmaccess: 10.0.0
+      libnpmaccess: 10.0.1
       libnpmpublish: 11.0.0
       normalize-path: 3.0.0
       npm-package-arg: 12.0.2
@@ -5629,7 +5634,7 @@ snapshots:
       - encoding
       - supports-color
 
-  '@modelcontextprotocol/sdk@1.11.2':
+  '@modelcontextprotocol/sdk@1.11.3':
     dependencies:
       content-type: 1.0.5
       cors: 2.8.5
@@ -5717,7 +5722,7 @@ snapshots:
       - bluebird
       - supports-color
 
-  '@npmcli/arborist@9.0.2':
+  '@npmcli/arborist@9.1.0':
     dependencies:
       '@isaacs/string-locale-compare': 1.1.0
       '@npmcli/fs': 4.0.0
@@ -6818,7 +6823,7 @@ snapshots:
     dependencies:
       '@cspell/cspell-types': 9.0.1
       comment-json: 4.2.5
-      yaml: 2.7.1
+      yaml: 2.8.0
 
   cspell-dictionary@9.0.1:
     dependencies:
@@ -7092,7 +7097,7 @@ snapshots:
       '@humanfs/node': 0.16.6
       '@humanwhocodes/module-importer': 1.0.1
       '@humanwhocodes/retry': 0.4.3
-      '@modelcontextprotocol/sdk': 1.11.2
+      '@modelcontextprotocol/sdk': 1.11.3
       '@types/estree': 1.0.7
       '@types/json-schema': 7.0.15
       ajv: 6.12.6
@@ -7896,7 +7901,7 @@ snapshots:
       prelude-ls: 1.2.1
       type-check: 0.4.0
 
-  libnpmaccess@10.0.0:
+  libnpmaccess@10.0.1:
     dependencies:
       npm-package-arg: 12.0.2
       npm-registry-fetch: 18.0.2
@@ -9975,6 +9980,8 @@ snapshots:
   yallist@5.0.0: {}
 
   yaml@2.7.1: {}
+
+  yaml@2.8.0: {}
 
   yamljs@0.3.0:
     dependencies:
