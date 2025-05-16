@@ -1,5 +1,12 @@
 # Change Log
 
+## [1.2.0](https://github.com/streetsidesoftware/cspell-dicts/compare/@cspell/dict-mn-mn@1.1.1...@cspell/dict-mn-mn@1.2.0) (2025-05-16)
+
+
+### Features
+
+* update mn_MN dictionary package and add download script ([83b2d58](https://github.com/streetsidesoftware/cspell-dicts/commit/83b2d583166512b05c572f92b28ad05e1843ba84))
+
 ## [1.1.1](https://github.com/streetsidesoftware/cspell-dicts/compare/@cspell/dict-mn-mn@1.1.0...@cspell/dict-mn-mn@1.1.1) (2025-05-03)
 
 

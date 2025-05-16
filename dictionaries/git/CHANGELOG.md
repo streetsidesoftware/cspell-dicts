@@ -3,6 +3,13 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+## [3.0.5](https://github.com/streetsidesoftware/cspell-dicts/compare/@cspell/dict-git@3.0.4...@cspell/dict-git@3.0.5) (2025-05-16)
+
+
+### Updates and Bug Fixes
+
+* Enable git dictionary for commit-msg ([#4452](https://github.com/streetsidesoftware/cspell-dicts/issues/4452)) ([8b5e858](https://github.com/streetsidesoftware/cspell-dicts/commit/8b5e85839bd6495e4a2341cae08c05f46ce8a4e5))
+
 ## [3.0.4](https://github.com/streetsidesoftware/cspell-dicts/compare/@cspell/dict-git@3.0.3...@cspell/dict-git@3.0.4) (2024-12-30)
 
 

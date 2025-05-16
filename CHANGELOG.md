@@ -1,5 +1,21 @@
 # Release Notes
 
+## [31.1.0](https://github.com/streetsidesoftware/cspell-dicts/compare/cspell-dicts@31.0.1...cspell-dicts@31.1.0) (2025-05-16)
+
+
+### Features
+
+* update mn_MN dictionary package and add download script ([83b2d58](https://github.com/streetsidesoftware/cspell-dicts/commit/83b2d583166512b05c572f92b28ad05e1843ba84))
+
+
+### Updates and Bug Fixes
+
+* add variations of commit to software corrections ([#4437](https://github.com/streetsidesoftware/cspell-dicts/issues/4437)) ([46b5a25](https://github.com/streetsidesoftware/cspell-dicts/commit/46b5a2565f887fd377b9f96b22f6c700e2b052ce))
+* Enable git dictionary for commit-msg ([#4452](https://github.com/streetsidesoftware/cspell-dicts/issues/4452)) ([8b5e858](https://github.com/streetsidesoftware/cspell-dicts/commit/8b5e85839bd6495e4a2341cae08c05f46ce8a4e5))
+* Workflow Bot -- Build Dictionaries ([#4420](https://github.com/streetsidesoftware/cspell-dicts/issues/4420)) ([7cff30d](https://github.com/streetsidesoftware/cspell-dicts/commit/7cff30db548d9e5a519d23aa57497e0ca1a627bb))
+* Workflow Bot -- Build Dictionaries ([#4446](https://github.com/streetsidesoftware/cspell-dicts/issues/4446)) ([7ecdad5](https://github.com/streetsidesoftware/cspell-dicts/commit/7ecdad50c8b6d2e4a23862725d2f9cf75dc8501d))
+* Workflow Bot -- Build Dictionaries ([#4450](https://github.com/streetsidesoftware/cspell-dicts/issues/4450)) ([45257b1](https://github.com/streetsidesoftware/cspell-dicts/commit/45257b1be89abe2553438422babe8a1d3866cbd1))
+
 ## [31.0.1](https://github.com/streetsidesoftware/cspell-dicts/compare/cspell-dicts@31.0.0...cspell-dicts@31.0.1) (2025-05-08)
 
 
