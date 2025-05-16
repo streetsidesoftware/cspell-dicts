@@ -865,11 +865,12 @@
     "packageName": "@cspell/dict-git",
     "description": "CSpell configuration for GIT",
     "cspell": true,
-    "categories": ["other"],
+    "categories": ["programming"],
     "dictionaries": [
       {
         "name": "git",
-        "description": "Git Terms"
+        "description": "Git Terms",
+        "fileTypes": ["commit-msg", "git-commit"]
       }
     ]
   },
