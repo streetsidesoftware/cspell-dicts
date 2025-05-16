@@ -34,6 +34,5 @@ jobs:
     uses: ./.github/workflows/publish.yml
     secrets:
       PUBLISH_NPM: ${{ secrets.PUBLISH_NPM }}
-      GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
     if: ${{ needs.release-please.outputs.release_created }}
 # cspell:ignore noreply
