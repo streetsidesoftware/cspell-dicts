@@ -27,11 +27,9 @@ but encountered while writing code.
 > It also contains tools, products, applications, and even some brands, all these are now in other files from this dictionary.
 
 > [!WARNING]
-> For compatibility reason, no words should be removed from this dictionary, it would break the CI of some projects.
+> For compatibility reason, please move non-relevant words into the [software-terms-legacy.txt](./software-terms-legacy.txt) or one of the other word lists. This will help with future clean up.
 >
-> Instead, please move them into the [software-terms-legacy.txt](./software-terms-legacy.txt).
->
-> They will remain in the `software-terms` dictionary by doing so, and they will be clearly identified.
+> Words moved to software-terms-legacy.txt will remain in the `software-terms` dictionary by doing so they will be clearly identified for possible deprecation.
 
 ### Software Tools
 
