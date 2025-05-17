@@ -15,7 +15,7 @@ Contributions are welcomed and encouraged, please read this whole file to figure
 ### Coding Terms -- General words used while coding
 
 - [coding-terms.txt](./coding-terms.txt) is a good place for general words used while coding. These words are uncommon in general English speech and writing,
-but encountered while writing code.
+  but encountered while writing code.
 
 ### Software Terms
 
