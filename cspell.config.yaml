@@ -1,5 +1,7 @@
 version: '0.2'
 language: en
+import:
+  - '@cspell/dict-cspell-bundle'
 files:
   - .github/**/*.{md,txt,yaml,yml}
   - .git/COMMIT_EDITMSG
@@ -88,7 +90,6 @@ ignorePaths:
   - source-dependencies.txt
   - source-files.txt
   - snapshots/**
-import: []
 useGitignore: true
 overrides:
   - filename: '**/nl_NL/**'

@@ -11,6 +11,9 @@ importers:
       '@cspell/cspell-tools':
         specifier: ^9.0.1
         version: 9.0.1(typescript@5.8.3)
+      '@cspell/dict-cspell-bundle':
+        specifier: workspace:*
+        version: link:dictionaries/cspell
       '@eslint/js':
         specifier: ^9.26.0
         version: 9.26.0
@@ -94,11 +97,7 @@ importers:
 
   dictionaries/al: {}
 
-  dictionaries/aoo-mozilla-en-dict:
-    devDependencies:
-      aoo-mozilla-en-dict:
-        specifier: github:marcoagpinto/aoo-mozilla-en-dict
-        version: https://codeload.github.com/marcoagpinto/aoo-mozilla-en-dict/tar.gz/2bf52cf3c39cebbdf26bbefccbeef476ca793d12
+  dictionaries/aoo-mozilla-en-dict: {}
 
   dictionaries/ar: {}
 
@@ -112,11 +111,7 @@ importers:
 
   dictionaries/bg_BG: {}
 
-  dictionaries/bn:
-    devDependencies:
-      BengaliDictionary:
-        specifier: github:MinhasKamal/BengaliDictionary
-        version: https://codeload.github.com/MinhasKamal/BengaliDictionary/tar.gz/ae5391cd88abc802c4f2c56c5eb7abccc5407ab6
+  dictionaries/bn: {}
 
   dictionaries/ca: {}
 
@@ -461,11 +456,7 @@ importers:
 
   dictionaries/gl_ES: {}
 
-  dictionaries/golang:
-    devDependencies:
-      go-words:
-        specifier: github:AlekSi/go-words
-        version: https://codeload.github.com/AlekSi/go-words/tar.gz/484c289403fbe48c7f082443df63f8fbb5621301
+  dictionaries/golang: {}
 
   dictionaries/google: {}
 
@@ -534,11 +525,7 @@ importers:
         specifier: workspace:^
         version: link:../typescript
 
-  dictionaries/medicalterms:
-    devDependencies:
-      wordlist-medicalterms-en:
-        specifier: github:Glutanimate/wordlist-medicalterms-en#d87b48e
-        version: wordlist-medicalterms-en#d87b48e@https://codeload.github.com/Glutanimate/wordlist-medicalterms-en/tar.gz/d87b48e
+  dictionaries/medicalterms: {}
 
   dictionaries/mk:
     devDependencies:
@@ -728,6 +715,9 @@ importers:
       '@cspell/cspell-bundled-dicts':
         specifier: ^9.0.1
         version: 9.0.1
+      '@octokit/core':
+        specifier: ^6.1.5
+        version: 6.1.5
       commander:
         specifier: ^13.1.0
         version: 13.1.0
@@ -746,6 +736,9 @@ importers:
       globby:
         specifier: ^14.1.0
         version: 14.1.0
+      globrex:
+        specifier: ^0.1.2
+        version: 0.1.2
       json5:
         specifier: 2.2.3
         version: 2.2.3
@@ -1628,10 +1621,6 @@ packages:
       mem-fs-editor:
         optional: true
 
-  BengaliDictionary@https://codeload.github.com/MinhasKamal/BengaliDictionary/tar.gz/ae5391cd88abc802c4f2c56c5eb7abccc5407ab6:
-    resolution: {tarball: https://codeload.github.com/MinhasKamal/BengaliDictionary/tar.gz/ae5391cd88abc802c4f2c56c5eb7abccc5407ab6}
-    version: 0.0.0
-
   abbrev@2.0.0:
     resolution: {integrity: sha512-6/mh1E2u2YgEsCHdY0Yx5oW+61gZU+1vXaoiHHrpKeuRNNgFvS+/jrwHiQhB5apAf5oB7UB7E19ol2R2LKH8hQ==}
     engines: {node: ^14.17.0 || ^16.13.0 || >=18.0.0}
@@ -1704,10 +1693,6 @@ packages:
   ansi-styles@6.2.1:
     resolution: {integrity: sha512-bN798gFfQX+viw3R7yrGWRqnrN2oRkEkUjjl4JNn4E8GxxbjtG3FbrEIIY3l8/hrwUwIeCZvi4QuOTP4MErVug==}
     engines: {node: '>=12'}
-
-  aoo-mozilla-en-dict@https://codeload.github.com/marcoagpinto/aoo-mozilla-en-dict/tar.gz/2bf52cf3c39cebbdf26bbefccbeef476ca793d12:
-    resolution: {tarball: https://codeload.github.com/marcoagpinto/aoo-mozilla-en-dict/tar.gz/2bf52cf3c39cebbdf26bbefccbeef476ca793d12}
-    version: 0.0.0
 
   aproba@2.0.0:
     resolution: {integrity: sha512-lYe4Gx7QT+MKGbDsA+Z+he/Wtef0BiwDOlK/XkBrdfsh9J/jPPXbX0tE9x9cl27Tmu5gg3QUbUrQYa/y+KOHPQ==}
@@ -2840,9 +2825,8 @@ packages:
     resolution: {integrity: sha512-0Ia46fDOaT7k4og1PDW4YbodWWr3scS2vAr2lTbsplOt2WkKp0vQbkI9wKis/T5LV/dqPjO3bpS/z6GTJB82LA==}
     engines: {node: '>=18'}
 
-  go-words@https://codeload.github.com/AlekSi/go-words/tar.gz/484c289403fbe48c7f082443df63f8fbb5621301:
-    resolution: {tarball: https://codeload.github.com/AlekSi/go-words/tar.gz/484c289403fbe48c7f082443df63f8fbb5621301}
-    version: 0.0.0
+  globrex@0.1.2:
+    resolution: {integrity: sha512-uHJgbwAMwNFf5mLst7IWLNg14x1CkeqglJb/K3doi4dw6q2IvAAmM/Y81kevy83wP+Sst+nutFTYOGg3d1lsxg==}
 
   gopd@1.2.0:
     resolution: {integrity: sha512-ZUKRh6/kUFoAiTAtTYPZJ3hw9wNxx+BIBOijnlG9PnrJsCcSjs1wyyD6vJpaYtgnzDrKYRSqf3OO6Rfa93xsRg==}
@@ -4878,10 +4862,6 @@ packages:
     resolution: {integrity: sha512-BN22B5eaMMI9UMtjrGd5g5eCYPpCPDUy0FJXbYsaT5zYxjFOckS53SQDE3pWkVoWpHXVb3BrYcEN4Twa55B5cA==}
     engines: {node: '>=0.10.0'}
 
-  wordlist-medicalterms-en#d87b48e@https://codeload.github.com/Glutanimate/wordlist-medicalterms-en/tar.gz/d87b48e:
-    resolution: {tarball: https://codeload.github.com/Glutanimate/wordlist-medicalterms-en/tar.gz/d87b48e}
-    version: 0.0.0
-
   wordwrap@1.0.0:
     resolution: {integrity: sha512-gvVzJFlPycKc5dZN4yPkP8w7Dc37BtP1yczEneOb4uq34pXZcvrtRTmWV8W+Ume+XCxKgbjM+nevkyFPMybd4Q==}
 
@@ -6157,7 +6137,7 @@ snapshots:
   '@types/vinyl@2.0.12':
     dependencies:
       '@types/expect': 1.20.4
-      '@types/node': 22.15.18
+      '@types/node': 20.17.47
 
   '@vercel/nft@0.29.3(encoding@0.1.13)':
     dependencies:
@@ -6221,8 +6201,6 @@ snapshots:
     optionalDependencies:
       mem-fs: 4.1.0
 
-  BengaliDictionary@https://codeload.github.com/MinhasKamal/BengaliDictionary/tar.gz/ae5391cd88abc802c4f2c56c5eb7abccc5407ab6: {}
-
   abbrev@2.0.0: {}
 
   abbrev@3.0.1: {}
@@ -6284,8 +6262,6 @@ snapshots:
       color-convert: 2.0.1
 
   ansi-styles@6.2.1: {}
-
-  aoo-mozilla-en-dict@https://codeload.github.com/marcoagpinto/aoo-mozilla-en-dict/tar.gz/2bf52cf3c39cebbdf26bbefccbeef476ca793d12: {}
 
   aproba@2.0.0: {}
 
@@ -7548,7 +7524,7 @@ snapshots:
       slash: 5.1.0
       unicorn-magic: 0.3.0
 
-  go-words@https://codeload.github.com/AlekSi/go-words/tar.gz/484c289403fbe48c7f082443df63f8fbb5621301: {}
+  globrex@0.1.2: {}
 
   gopd@1.2.0: {}
 
@@ -9908,8 +9884,6 @@ snapshots:
       string-width: 4.2.3
 
   word-wrap@1.2.5: {}
-
-  wordlist-medicalterms-en#d87b48e@https://codeload.github.com/Glutanimate/wordlist-medicalterms-en/tar.gz/d87b48e: {}
 
   wordwrap@1.0.0: {}
 

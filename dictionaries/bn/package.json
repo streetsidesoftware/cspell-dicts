@@ -14,7 +14,8 @@
   "scripts": {
     "build": "cspell-tools-cli build --conditional",
     "conditional-build": "pnpm run sync && pnpm run build",
-    "sync": "pnpm shx cp ./node_modules/BengaliDictionary/BengaliWordList_439.txt src/BengaliDictionary",
+    "sync:manual": "GITHUB_TOKEN=$(gh auth token) pnpm sync",
+    "sync": "sync-github-files MinhasKamal/BengaliDictionary --filter BengaliWordList_439.txt --filter LICENSE --filter README.md  --tag=master -o src/BengaliDictionary",
     "test": "pnpm run test:words && pnpm run test:text",
     "test:text": "cspell samples",
     "test:words": "head -n 1000 \"src/BengaliDictionary/BengaliWordList_439.txt\" | cspell -c ./cspell.json \"--locale=bn\" \"--languageId=*\" stdin",
@@ -41,9 +42,6 @@
     "url": "https://github.com/streetsidesoftware/cspell-dicts/issues"
   },
   "homepage": "https://github.com/streetsidesoftware/cspell-dicts/blob/main/dictionaries/bn#readme",
-  "devDependencies": {
-    "BengaliDictionary": "github:MinhasKamal/BengaliDictionary"
-  },
   "files": [
     "dict/bn.trie",
     "cspell-ext.json",

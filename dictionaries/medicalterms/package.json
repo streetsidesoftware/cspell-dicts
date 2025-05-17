@@ -14,7 +14,8 @@
   "scripts": {
     "build": "cspell-tools-cli build && pnpm run gz",
     "build:conditional": "pnpm cspell-tools-cli build --conditional && pnpm run gz",
-    "sync": "shx rm -rf src/wordlist-medicalterms-en && shx cp -r node_modules/wordlist-medicalterms-en src/",
+    "sync:manual": "GITHUB_TOKEN=$(gh auth token) pnpm sync",
+    "sync": "sync-github-files Glutanimate/wordlist-medicalterms-en  --tag=d87b48e -o src/wordlist-medicalterms-en",
     "test": "cspell samples --no-progress",
     "gz": "cspell-tools-cli gzip \"dict/*.txt\"",
     "prepublishOnly": "echo pre-publish",
@@ -44,8 +45,5 @@
     "src/wordlist-medicalterms-en/README.md",
     "!dict/README.md",
     "cspell-ext.json"
-  ],
-  "devDependencies": {
-    "wordlist-medicalterms-en": "github:Glutanimate/wordlist-medicalterms-en#d87b48e"
-  }
+  ]
 }

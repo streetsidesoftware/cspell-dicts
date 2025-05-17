@@ -8,7 +8,8 @@
   },
   "private": true,
   "scripts": {
-    "sync": "pnpm cpy \"node_modules/aoo-mozilla-en-dict/en_*/**/*.{aff,dic,txt,md}\" \"dicts\"  && pnpm sync-clean",
+    "sync:manual": "GITHUB_TOKEN=$(gh auth token) pnpm sync",
+    "sync": "sync-github-files marcoagpinto/aoo-mozilla-en-dict --filter \"**/en_*/**/*.{aff,dic}\" --filter \"**/en_*/**/README*\" --tag=master -o dicts && pnpm sync-clean",
     "sync-clean": "shx rm -rf \"dicts/*/wordlist*.txt\" \"dicts/*/*speller*.txt\"",
     "conditional-build": "pnpm run sync"
   },
@@ -21,8 +22,5 @@
   "author": "Street Side Software <support@streetsidesoftware.nl>",
   "files": [
     "dicts"
-  ],
-  "devDependencies": {
-    "aoo-mozilla-en-dict": "github:marcoagpinto/aoo-mozilla-en-dict"
-  }
+  ]
 }
