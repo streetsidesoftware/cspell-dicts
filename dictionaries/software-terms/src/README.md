@@ -24,7 +24,6 @@ but encountered while writing code.
 > [!NOTE]
 > This file is unfortunately the result of years of contributions without clear rules.
 > It is known to contain words that should not be in this `software-terms` dictionary.
-> It contains words that should have been added to English or `en_shared` dictionaries.
 > It also contains tools, products, applications, and even some brands, all these are now in other files from this dictionary.
 
 > [!WARNING]
