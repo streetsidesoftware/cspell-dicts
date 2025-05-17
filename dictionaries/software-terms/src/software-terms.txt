@@ -1,11 +1,22 @@
-# Software Concepts and common terminology
-# This file has grow quite large and contains words that would
-# be better in another file. Before adding a word, consider if it is
-# a concept (like routing, sorting, encryption) or a common coding word (hover, unroute, unmangle).
-# Please add common coding words to ./coding-terms.txt
-# Please add tools to ./software-tools.txt
-# Please add services to ./software-services.txt
-# Please add new terms below this line, one per line. They will get automatically sorted.
+# Software Concepts and terms
+#
+# This file is about concepts and terms that are taught in a software development course.
+#
+# Please follow ./README.md instructions, here is a summary:
+#
+# Add the following type of words to the appropriate files:
+# - acronyms and abbreviations, use ./computing-acronyms.txt
+# - common coding words, use ./coding-terms.txt
+# - software tools, se ./software-tools.txt
+# - software services/API names, use ./software-services.txt
+#
+# This file is the result of years of contributions without clear rules.
+# It is known to contain words that should not be in this dictionary.
+# Please move terms to ./software-terms-legacy.txt if needed.
+# More information in the ./README.md file.
+#
+# Add terms at the end of this file, it minimizes the risks of facing Git conflicts.
+# Terms will get automatically sorted and deduplicated by CI once merged
 AAAI
 abortable
 accessor
@@ -2217,3 +2228,4 @@ zip
 zlib
 ZPool
 ZPools
+# Please add new terms above this line, one per line. They will get automatically sorted.
