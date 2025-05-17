@@ -111,11 +111,7 @@ importers:
 
   dictionaries/bg_BG: {}
 
-  dictionaries/bn:
-    devDependencies:
-      BengaliDictionary:
-        specifier: github:MinhasKamal/BengaliDictionary
-        version: https://codeload.github.com/MinhasKamal/BengaliDictionary/tar.gz/ae5391cd88abc802c4f2c56c5eb7abccc5407ab6
+  dictionaries/bn: {}
 
   dictionaries/ca: {}
 
@@ -1624,10 +1620,6 @@ packages:
         optional: true
       mem-fs-editor:
         optional: true
-
-  BengaliDictionary@https://codeload.github.com/MinhasKamal/BengaliDictionary/tar.gz/ae5391cd88abc802c4f2c56c5eb7abccc5407ab6:
-    resolution: {tarball: https://codeload.github.com/MinhasKamal/BengaliDictionary/tar.gz/ae5391cd88abc802c4f2c56c5eb7abccc5407ab6}
-    version: 0.0.0
 
   abbrev@2.0.0:
     resolution: {integrity: sha512-6/mh1E2u2YgEsCHdY0Yx5oW+61gZU+1vXaoiHHrpKeuRNNgFvS+/jrwHiQhB5apAf5oB7UB7E19ol2R2LKH8hQ==}
@@ -6208,8 +6200,6 @@ snapshots:
       '@types/node': 16.18.126
     optionalDependencies:
       mem-fs: 4.1.0
-
-  BengaliDictionary@https://codeload.github.com/MinhasKamal/BengaliDictionary/tar.gz/ae5391cd88abc802c4f2c56c5eb7abccc5407ab6: {}
 
   abbrev@2.0.0: {}
 
