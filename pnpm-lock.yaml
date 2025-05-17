@@ -529,11 +529,7 @@ importers:
         specifier: workspace:^
         version: link:../typescript
 
-  dictionaries/medicalterms:
-    devDependencies:
-      wordlist-medicalterms-en:
-        specifier: github:Glutanimate/wordlist-medicalterms-en#d87b48e
-        version: wordlist-medicalterms-en#d87b48e@https://codeload.github.com/Glutanimate/wordlist-medicalterms-en/tar.gz/d87b48e
+  dictionaries/medicalterms: {}
 
   dictionaries/mk:
     devDependencies:
@@ -4873,10 +4869,6 @@ packages:
   word-wrap@1.2.5:
     resolution: {integrity: sha512-BN22B5eaMMI9UMtjrGd5g5eCYPpCPDUy0FJXbYsaT5zYxjFOckS53SQDE3pWkVoWpHXVb3BrYcEN4Twa55B5cA==}
     engines: {node: '>=0.10.0'}
-
-  wordlist-medicalterms-en#d87b48e@https://codeload.github.com/Glutanimate/wordlist-medicalterms-en/tar.gz/d87b48e:
-    resolution: {tarball: https://codeload.github.com/Glutanimate/wordlist-medicalterms-en/tar.gz/d87b48e}
-    version: 0.0.0
 
   wordwrap@1.0.0:
     resolution: {integrity: sha512-gvVzJFlPycKc5dZN4yPkP8w7Dc37BtP1yczEneOb4uq34pXZcvrtRTmWV8W+Ume+XCxKgbjM+nevkyFPMybd4Q==}
@@ -9902,8 +9894,6 @@ snapshots:
       string-width: 4.2.3
 
   word-wrap@1.2.5: {}
-
-  wordlist-medicalterms-en#d87b48e@https://codeload.github.com/Glutanimate/wordlist-medicalterms-en/tar.gz/d87b48e: {}
 
   wordwrap@1.0.0: {}
 
