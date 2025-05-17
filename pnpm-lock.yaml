@@ -11,6 +11,9 @@ importers:
       '@cspell/cspell-tools':
         specifier: ^9.0.1
         version: 9.0.1(typescript@5.8.3)
+      '@cspell/dict-cspell-bundle':
+        specifier: workspace:*
+        version: link:dictionaries/cspell
       '@eslint/js':
         specifier: ^9.26.0
         version: 9.26.0
@@ -94,11 +97,7 @@ importers:
 
   dictionaries/al: {}
 
-  dictionaries/aoo-mozilla-en-dict:
-    devDependencies:
-      aoo-mozilla-en-dict:
-        specifier: github:marcoagpinto/aoo-mozilla-en-dict
-        version: https://codeload.github.com/marcoagpinto/aoo-mozilla-en-dict/tar.gz/2bf52cf3c39cebbdf26bbefccbeef476ca793d12
+  dictionaries/aoo-mozilla-en-dict: {}
 
   dictionaries/ar: {}
 
@@ -461,11 +460,7 @@ importers:
 
   dictionaries/gl_ES: {}
 
-  dictionaries/golang:
-    devDependencies:
-      go-words:
-        specifier: github:AlekSi/go-words
-        version: https://codeload.github.com/AlekSi/go-words/tar.gz/484c289403fbe48c7f082443df63f8fbb5621301
+  dictionaries/golang: {}
 
   dictionaries/google: {}
 
@@ -728,6 +723,9 @@ importers:
       '@cspell/cspell-bundled-dicts':
         specifier: ^9.0.1
         version: 9.0.1
+      '@octokit/core':
+        specifier: ^6.1.5
+        version: 6.1.5
       commander:
         specifier: ^13.1.0
         version: 13.1.0
@@ -746,6 +744,9 @@ importers:
       globby:
         specifier: ^14.1.0
         version: 14.1.0
+      globrex:
+        specifier: ^0.1.2
+        version: 0.1.2
       json5:
         specifier: 2.2.3
         version: 2.2.3
@@ -1704,10 +1705,6 @@ packages:
   ansi-styles@6.2.1:
     resolution: {integrity: sha512-bN798gFfQX+viw3R7yrGWRqnrN2oRkEkUjjl4JNn4E8GxxbjtG3FbrEIIY3l8/hrwUwIeCZvi4QuOTP4MErVug==}
     engines: {node: '>=12'}
-
-  aoo-mozilla-en-dict@https://codeload.github.com/marcoagpinto/aoo-mozilla-en-dict/tar.gz/2bf52cf3c39cebbdf26bbefccbeef476ca793d12:
-    resolution: {tarball: https://codeload.github.com/marcoagpinto/aoo-mozilla-en-dict/tar.gz/2bf52cf3c39cebbdf26bbefccbeef476ca793d12}
-    version: 0.0.0
 
   aproba@2.0.0:
     resolution: {integrity: sha512-lYe4Gx7QT+MKGbDsA+Z+he/Wtef0BiwDOlK/XkBrdfsh9J/jPPXbX0tE9x9cl27Tmu5gg3QUbUrQYa/y+KOHPQ==}
@@ -2840,9 +2837,8 @@ packages:
     resolution: {integrity: sha512-0Ia46fDOaT7k4og1PDW4YbodWWr3scS2vAr2lTbsplOt2WkKp0vQbkI9wKis/T5LV/dqPjO3bpS/z6GTJB82LA==}
     engines: {node: '>=18'}
 
-  go-words@https://codeload.github.com/AlekSi/go-words/tar.gz/484c289403fbe48c7f082443df63f8fbb5621301:
-    resolution: {tarball: https://codeload.github.com/AlekSi/go-words/tar.gz/484c289403fbe48c7f082443df63f8fbb5621301}
-    version: 0.0.0
+  globrex@0.1.2:
+    resolution: {integrity: sha512-uHJgbwAMwNFf5mLst7IWLNg14x1CkeqglJb/K3doi4dw6q2IvAAmM/Y81kevy83wP+Sst+nutFTYOGg3d1lsxg==}
 
   gopd@1.2.0:
     resolution: {integrity: sha512-ZUKRh6/kUFoAiTAtTYPZJ3hw9wNxx+BIBOijnlG9PnrJsCcSjs1wyyD6vJpaYtgnzDrKYRSqf3OO6Rfa93xsRg==}
@@ -6157,7 +6153,7 @@ snapshots:
   '@types/vinyl@2.0.12':
     dependencies:
       '@types/expect': 1.20.4
-      '@types/node': 22.15.18
+      '@types/node': 20.17.47
 
   '@vercel/nft@0.29.3(encoding@0.1.13)':
     dependencies:
@@ -6284,8 +6280,6 @@ snapshots:
       color-convert: 2.0.1
 
   ansi-styles@6.2.1: {}
-
-  aoo-mozilla-en-dict@https://codeload.github.com/marcoagpinto/aoo-mozilla-en-dict/tar.gz/2bf52cf3c39cebbdf26bbefccbeef476ca793d12: {}
 
   aproba@2.0.0: {}
 
@@ -7548,7 +7542,7 @@ snapshots:
       slash: 5.1.0
       unicorn-magic: 0.3.0
 
-  go-words@https://codeload.github.com/AlekSi/go-words/tar.gz/484c289403fbe48c7f082443df63f8fbb5621301: {}
+  globrex@0.1.2: {}
 
   gopd@1.2.0: {}
 

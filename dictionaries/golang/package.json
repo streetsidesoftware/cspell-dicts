@@ -12,7 +12,9 @@
     "./cspell-ext.json": "./cspell-ext.json"
   },
   "scripts": {
-    "sync": "pnpm cpy \"node_modules/go-words/**\" \"src/go-words\" --flat",
+    "sync:manual": "GITHUB_TOKEN=$(gh auth token) pnpm sync",
+    "sync": "sync-github-files AlekSi/go-words  --tag=main -o src/go-words",
+    "syncX": "pnpm cpy \"node_modules/go-words/**\" \"src/go-words\" --flat",
     "conditional-build": "pnpm run sync && pnpm run build",
     "build": "cspell-tools-cli build",
     "test": "shx head -n 100 src/go.txt | cspell -c ./cspell-ext.json --locale=* --languageId=go stdin",
@@ -44,8 +46,5 @@
   "files": [
     "./dict/go.txt",
     "cspell-ext.json"
-  ],
-  "devDependencies": {
-    "go-words": "github:AlekSi/go-words"
-  }
+  ]
 }
