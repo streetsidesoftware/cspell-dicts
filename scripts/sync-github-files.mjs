@@ -343,7 +343,7 @@ async function readSyncFile(outDir) {
 async function writeSyncFile(outDir, data) {
     const syncFilePath = Path.join(outDir, syncFileName);
     await fs.mkdir(Path.dirname(syncFilePath), { recursive: true });
-    await fs.writeFile(syncFilePath, JSON.stringify(data, null, 2) + '\n', 'utf-8');
+    await fs.writeFile(syncFilePath, JSON.stringify(data, null, 4) + '\n', 'utf-8');
 }
 
 /**
