@@ -1,5 +1,23 @@
 # Release Notes
 
+## [31.1.1](https://github.com/streetsidesoftware/cspell-dicts/compare/cspell-dicts@31.1.0...cspell-dicts@31.1.1) (2025-05-20)
+
+
+### Updates and Bug Fixes
+
+* Update people-names dictionary ([#4466](https://github.com/streetsidesoftware/cspell-dicts/issues/4466)) ([24c4469](https://github.com/streetsidesoftware/cspell-dicts/commit/24c446930c8d238c1e98f373fd5e8d69896520ab))
+* Workflow Bot -- Build Dictionaries ([#4455](https://github.com/streetsidesoftware/cspell-dicts/issues/4455)) ([2269177](https://github.com/streetsidesoftware/cspell-dicts/commit/2269177dc85095fde86003d5b112bbba218ed8a7))
+* Workflow Bot -- Build Dictionaries ([#4459](https://github.com/streetsidesoftware/cspell-dicts/issues/4459)) ([7e768c7](https://github.com/streetsidesoftware/cspell-dicts/commit/7e768c7e443745ab4b8d09bddf23312f3768f666))
+* Workflow Bot -- Build Dictionaries ([#4469](https://github.com/streetsidesoftware/cspell-dicts/issues/4469)) ([89b0f94](https://github.com/streetsidesoftware/cspell-dicts/commit/89b0f9471aff20ceaa44279cc586b7b1c038af97))
+* Workflow Bot -- Update Dictionaries ([#4462](https://github.com/streetsidesoftware/cspell-dicts/issues/4462)) ([37ab5c4](https://github.com/streetsidesoftware/cspell-dicts/commit/37ab5c4d2759f9f76818c45b052955428a8f4635))
+
+
+### Dependencies
+
+* The following workspace dependencies were updated
+  * devDependencies
+    * @cspell/dict-cspell-bundle bumped to 2.0.3
+
 ## [31.1.0](https://github.com/streetsidesoftware/cspell-dicts/compare/cspell-dicts@31.0.1...cspell-dicts@31.1.0) (2025-05-16)
 
 
