@@ -726,7 +726,7 @@ importers:
         version: 9.0.1
       cspell-io:
         specifier: ^9.0.1
-        version: 9.0.1
+        version: 9.0.2
       cspell-lib:
         specifier: ^9.0.1
         version: 9.0.1
@@ -818,6 +818,10 @@ packages:
 
   '@cspell/cspell-service-bus@9.0.1':
     resolution: {integrity: sha512-DoW6hLkFIO3BXePtUYQEax3FTH9fkwCUbf6qphAEXnr4PjoyPZsgBhR6iCrZd4DyhuFiRvK3Cgpq2o3O0NdODQ==}
+    engines: {node: '>=20'}
+
+  '@cspell/cspell-service-bus@9.0.2':
+    resolution: {integrity: sha512-OjfZ3vnBjmkctC9xs/87/9bx/3kZYUPJkWsZxzfH4rla/HeIUrm9UZlDqCibhWifhPHrDdV9hDW5QEGXkYR2hw==}
     engines: {node: '>=20'}
 
   '@cspell/cspell-tools@9.0.2':
@@ -1030,6 +1034,10 @@ packages:
 
   '@cspell/url@9.0.1':
     resolution: {integrity: sha512-8xaLrsQ742dmwXwS6tjreps3NpSQe6WEZFPQQT2DprVJXGZnfQR8ob0c+kPhD0hu9A6PwShJsRsfh3DQGKCqAw==}
+    engines: {node: '>=20'}
+
+  '@cspell/url@9.0.2':
+    resolution: {integrity: sha512-KwCDL0ejgwVSZB8KTp8FhDe42UOaebTVIMi3O5GcYHi9Cut8B5QU4tbQOFGXP6E4pjimeO9yIkr9Z34kTljj/g==}
     engines: {node: '>=20'}
 
   '@eslint-community/eslint-utils@4.7.0':
@@ -2171,6 +2179,10 @@ packages:
 
   cspell-io@9.0.1:
     resolution: {integrity: sha512-L5fZY0glVeQb6nmt1WL1wKzZzoHJUkBQ9BGCrwqSXIrjZrYmBNSKixCjo6o9n2keRUwpNjsvZj1TQDKDV+FsXA==}
+    engines: {node: '>=20'}
+
+  cspell-io@9.0.2:
+    resolution: {integrity: sha512-TO93FTgQjjp62nAn213885RdyOTsQwdjSHdeYaaNiaTBOBgj2jR8M8bi3+h2imGBlinlYERoVbPF9wghJEK2nw==}
     engines: {node: '>=20'}
 
   cspell-lib@9.0.1:
@@ -4870,6 +4882,8 @@ snapshots:
 
   '@cspell/cspell-service-bus@9.0.1': {}
 
+  '@cspell/cspell-service-bus@9.0.2': {}
+
   '@cspell/cspell-tools@9.0.2(typescript@5.8.3)':
     dependencies:
       '@cspell/cspell-pipe': 9.0.2
@@ -5025,6 +5039,8 @@ snapshots:
   '@cspell/strong-weak-map@9.0.1': {}
 
   '@cspell/url@9.0.1': {}
+
+  '@cspell/url@9.0.2': {}
 
   '@eslint-community/eslint-utils@4.7.0(eslint@9.27.0)':
     dependencies:
@@ -5891,7 +5907,7 @@ snapshots:
   '@types/vinyl@2.0.12':
     dependencies:
       '@types/expect': 1.20.4
-      '@types/node': 20.17.50
+      '@types/node': 22.15.21
 
   '@vercel/nft@0.29.3(encoding@0.1.13)':
     dependencies:
@@ -6538,6 +6554,11 @@ snapshots:
     dependencies:
       '@cspell/cspell-service-bus': 9.0.1
       '@cspell/url': 9.0.1
+
+  cspell-io@9.0.2:
+    dependencies:
+      '@cspell/cspell-service-bus': 9.0.2
+      '@cspell/url': 9.0.2
 
   cspell-lib@9.0.1:
     dependencies:
