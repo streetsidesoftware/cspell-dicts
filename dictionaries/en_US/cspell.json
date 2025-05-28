@@ -8,13 +8,15 @@
         "./cspell-ext.json"
     ],
     "ignorePaths": [
-        "/src",
-        "/cspell-ext.json"
+        "/src/legacy/**",
+        "/src/hunspell/**",
+        "/cspell-ext.json",
+        "CHANGELOG.md"
     ],
     "ignoreWords": [],
     "overrides": [
         {
-            "filename": "/src",
+            "filename": "/src/{legacy,hunspell}/**",
             "enabled": false
         }
     ],
