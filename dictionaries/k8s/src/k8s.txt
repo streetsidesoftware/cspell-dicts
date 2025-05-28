@@ -10,6 +10,7 @@ add
 additionalItems
 additionalPrinterColumns
 additionalProperties
+addonmanager
 address
 addresses
 addressType
@@ -28,11 +29,13 @@ allowPrivilegeEscalation
 allowVolumeExpansion
 annotations
 anyOf
+apiextensions
 apiGroup
 apiGroups
 apiServerID
 apiVersion
 apiVersions
+applySet
 appProtocol
 architecture
 args
@@ -46,6 +49,7 @@ attachRequired
 audience
 audiences
 authenticated
+automanaged
 automountServiceAccountToken
 availableOnNodes
 availableReplicas
@@ -83,6 +87,10 @@ clientConfig
 clientIP
 clusterIP
 clusterIPs
+clusterRole
+clusterRoleBinding
+clusterRoleBindings
+clusterRoles
 clusterRoleSelectors
 clusterScope
 code
@@ -181,6 +189,8 @@ emptyDir
 enableServiceLinks
 encodingVersion
 endpoints
+endpointSlice
+endpointSlices
 endpointsNamespace
 endPort
 enum
@@ -221,6 +231,7 @@ fieldRef
 fieldsType
 fieldsV1
 finalizers
+finalScore
 finishedAt
 firstTimestamp
 flexVolume
@@ -285,6 +296,7 @@ images
 immutable
 incomplete
 ingress
+ingressClass
 ingressClassName
 initContainers
 initContainerStatuses
@@ -304,6 +316,7 @@ iqn
 iscsi
 iscsiInterface
 items
+jobSet
 jobTemplate
 jsonPath
 kernelVersion
@@ -314,11 +327,13 @@ konnectivity
 kube
 kubeadm
 kubebuilder
+kubeconfig
 kubelet
 kubeletConfigKey
 kubeletEndpoint
 kubelets
 kubeletVersion
+KubeProxyConfiguration
 kubeProxyVersion
 kubernetes
 kustomization
@@ -471,6 +486,7 @@ periodSeconds
 perNodeHostBits
 persistentVolumeClaim
 persistentVolumeClaimRetentionPolicy
+persistentVolumeClaims
 persistentVolumeName
 persistentVolumeReclaimPolicy
 phase
@@ -482,6 +498,7 @@ podAffinityTerm
 podAntiAffinity
 podCIDR
 podCIDRs
+poddisruptionbudget
 podFailurePolicy
 podFixed
 podInfoOnMount
@@ -499,17 +516,21 @@ Port
 portals
 ports
 portworxVolume
+postFilter
 postStart
 potentialNodes
+preBind
 preconditions
 preemptionPolicy
 preference
 preferredDuringSchedulingIgnoredDuringExecution
 preferredVersion
+preFilter
 prefix
 preserveUnknownFields
 preStop
 priority
+priorityclass
 priorityClassName
 priorityLevelConfiguration
 privileged
@@ -544,6 +565,11 @@ related
 remainingItemCount
 renewTime
 replicas
+replicaSet
+replicaSets
+replicatedJob
+replicationController
+replicationControllers
 reportingComponent
 reportingController
 reportingInstance
@@ -564,6 +590,8 @@ resourceClassName
 resourceFieldRef
 resourceHandle
 resourceNames
+resourceQuota
+resourceQuotas
 resourceRules
 resources
 resourceVersion
@@ -573,6 +601,7 @@ retryAfterSeconds
 revision
 revisionHistoryLimit
 role
+roleBinding
 roleRef
 rollingUpdate
 rule
@@ -588,6 +617,7 @@ scaleDown
 scaleIO
 scaleTargetRef
 scaleUp
+schedulable
 schedule
 schedulerName
 scheduling
@@ -599,6 +629,7 @@ scopeName
 scopes
 scopeSelector
 searches
+seccomp
 seccompProfile
 secret
 secretFile
@@ -652,12 +683,15 @@ startingDeadlineSeconds
 startTime
 startupProbe
 state
+StatefulSet
+StatefulSets
 status
 statusReplicasPath
 stdin
 stdinOnce
 storage
 storageCapacity
+storageClass
 storageClassName
 storageMode
 storageos
@@ -720,6 +754,7 @@ tty
 type
 uid
 unavailableReplicas
+uncordon
 uncountedTerminatedPods
 unhealthyPodEvictionPolicy
 uniqueItems
