@@ -7,13 +7,14 @@
 # cspell:locale en
 #
 # Tell cspell to not spell check the misspelled words:
-# cspell:ignoreRegExp /\b[\w'-]+->/gm
+# cspell:ignoreRegExp /\b[\p{L}'-]+->/gmu
 !curch->church
 !programing->programming
 acitve->active
 colum->column
 doens't->doesn't
 enterprize->enterprise
+enterprizes->enterprises
 idealogue->ideologue
 peventing->preventing
 pocessing->processing

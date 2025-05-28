@@ -7,4 +7,4 @@
 # cspell:locale en-gb
 #
 # Tell cspell to not spell check the misspelled words:
-# cspell:ignoreRegExp /\b[\w'-]+->/gm
+# cspell:ignoreRegExp /\b[\p{L}'-]+->/gmu

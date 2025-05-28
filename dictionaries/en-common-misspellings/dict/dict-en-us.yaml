@@ -1,5 +1,6 @@
 # yaml-language-server: $schema=https://raw.githubusercontent.com/streetsidesoftware/cspell/main/cspell.schema.json
-# cspell:ignoreRegExp /\b[\w'-]+->/gm
+# Tell cspell to not spell check the misspelled words:
+# cspell:ignoreRegExp /\b[\p{L}'-]+->/gmu
 # cspell:locale en-us
 
 # The words below apply only to American English
