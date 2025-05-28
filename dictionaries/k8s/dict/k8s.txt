@@ -4,7 +4,10 @@
 $ref
 $schema
 HPA
+KubeProxyConfiguration
 Port
+StatefulSet
+StatefulSets
 VPA
 acceptedNames
 accessModes
@@ -16,6 +19,7 @@ add
 additionalItems
 additionalPrinterColumns
 additionalProperties
+addonmanager
 address
 addressType
 addresses
@@ -39,7 +43,9 @@ apiGroups
 apiServerID
 apiVersion
 apiVersions
+apiextensions
 appProtocol
+applySet
 architecture
 args
 assigned
@@ -52,6 +58,7 @@ attachmentMetadata
 audience
 audiences
 authenticated
+automanaged
 automountServiceAccountToken
 availableOnNodes
 availableReplicas
@@ -89,7 +96,11 @@ clientConfig
 clientIP
 clusterIP
 clusterIPs
+clusterRole
+clusterRoleBinding
+clusterRoleBindings
 clusterRoleSelectors
+clusterRoles
 clusterScope
 code
 collisionCount
@@ -187,6 +198,8 @@ emptyDir
 enableServiceLinks
 encodingVersion
 endPort
+endpointSlice
+endpointSlices
 endpoints
 endpointsNamespace
 enum
@@ -226,6 +239,7 @@ fieldPath
 fieldRef
 fieldsType
 fieldsV1
+finalScore
 finalizers
 finishedAt
 firstTimestamp
@@ -290,6 +304,7 @@ images
 immutable
 incomplete
 ingress
+ingressClass
 ingressClassName
 initContainerStatuses
 initContainers
@@ -309,6 +324,7 @@ iqn
 iscsi
 iscsiInterface
 items
+jobSet
 jobTemplate
 jsonPath
 kernelVersion
@@ -320,6 +336,7 @@ kube
 kubeProxyVersion
 kubeadm
 kubebuilder
+kubeconfig
 kubelet
 kubeletConfigKey
 kubeletEndpoint
@@ -476,6 +493,7 @@ perNodeHostBits
 periodSeconds
 persistentVolumeClaim
 persistentVolumeClaimRetentionPolicy
+persistentVolumeClaims
 persistentVolumeName
 persistentVolumeReclaimPolicy
 phase
@@ -494,6 +512,7 @@ podIPs
 podInfoOnMount
 podManagementPolicy
 podSelector
+poddisruptionbudget
 pods
 policies
 policyName
@@ -503,8 +522,11 @@ port
 portals
 ports
 portworxVolume
+postFilter
 postStart
 potentialNodes
+preBind
+preFilter
 preStop
 preconditions
 preemptionPolicy
@@ -516,6 +538,7 @@ preserveUnknownFields
 priority
 priorityClassName
 priorityLevelConfiguration
+priorityclass
 privileged
 procMount
 progressDeadlineSeconds
@@ -547,7 +570,12 @@ reinvocationPolicy
 related
 remainingItemCount
 renewTime
+replicaSet
+replicaSets
 replicas
+replicatedJob
+replicationController
+replicationControllers
 reportingComponent
 reportingController
 reportingInstance
@@ -568,6 +596,8 @@ resourceClassName
 resourceFieldRef
 resourceHandle
 resourceNames
+resourceQuota
+resourceQuotas
 resourceRules
 resourceVersion
 resources
@@ -577,6 +607,7 @@ retryAfterSeconds
 revision
 revisionHistoryLimit
 role
+roleBinding
 roleRef
 rollingUpdate
 rule
@@ -592,6 +623,7 @@ scaleDown
 scaleIO
 scaleTargetRef
 scaleUp
+schedulable
 schedule
 schedulerName
 scheduling
@@ -605,6 +637,7 @@ scopes
 seLinuxMount
 seLinuxOptions
 searches
+seccomp
 seccompProfile
 secret
 secretFile
@@ -662,6 +695,7 @@ stdin
 stdinOnce
 storage
 storageCapacity
+storageClass
 storageClassName
 storageMode
 storagePolicyID
@@ -724,6 +758,7 @@ tty
 type
 uid
 unavailableReplicas
+uncordon
 uncountedTerminatedPods
 unhealthyPodEvictionPolicy
 uniqueItems
