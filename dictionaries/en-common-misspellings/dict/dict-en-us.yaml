@@ -1,5 +1,6 @@
 # yaml-language-server: $schema=https://raw.githubusercontent.com/streetsidesoftware/cspell/main/cspell.schema.json
-# cspell:ignoreRegExp /- \w+-/
+# Tell cspell to not spell check the misspelled words:
+# cspell:ignoreRegExp /\b[\p{L}'-]+->/gmu
 # cspell:locale en-us
 
 # The words below apply only to American English
@@ -7,7 +8,12 @@ dictionaryDefinitions:
   - name: en-us-common-misspellings
     suggestWords:
       - ansalization->nasalization
+      - archaoelogy->archeology, archaeology
+      - archaology->archeology, archaeology
+      - archeaologist->archeologist, archaeologist
+      - archeaologists->archeologists, archaeologists
       - behavour->behavior
+      - calaber->caliber
       - councellor->counselor, councilor
       - councellors->counselors, councilors
       - critising->criticizing
@@ -18,14 +24,28 @@ dictionaryDefinitions:
       - critisizing->criticizing
       - crticised->criticized
       - crystalisation->crystallization
+      - damenor->demeanor
+      - Dardenelles->Dardanelles
+      - demenor->demeanor
       - draughtman->draftsman
       - emphaised->emphasized
+      - enameld->enameled
+      - endevors->endeavors
       - favoutrable->favorable
       - fontrier->frontier
+      - Formalhaut->Fomalhaut
+      - fufill->fulfill
+      - fullfill->fulfill
+      - futhroc->futhark, futhorc
+      - Godounov->Godunov
       - haemorrage->hemorrhage
       - Hallowean->Halloween
+      - hemmorhage->hemorrhage
+      - humer->humor
       - intepretator->interpreter
       - jewllery->jewelry
+      - labled->labeled
+      - lippizaner->lipizzaner
       - liscense->license
       - lisence->license
       - lisense->license
@@ -40,64 +60,46 @@ dictionaryDefinitions:
       - manouvers->maneuvers
       - manuever->maneuver
       - manuevers->maneuvers
-      - neigborhood->neighborhood
-      - neigbour->neighbor
-      - neigbourhood->neighborhood
-      - neigbouring->neighboring
-      - neigbours->neighbors
-      - organistion->organization
-      - organiztion->organization
-      - orginize->organize
-      - paralel->parallel
-      - paralell->parallel
-      - parralel->parallel
-      - parrallel->parallel
-      - parrallell->parallel
-      - recogise->recognize
-      - recogize->recognize
-      - relized->realized
-      - reorganision->reorganization
-      - speciallized->specialized
-      - spendour->splendor
-      - unathorised->unauthorized
-      - unmanouverable->unmaneuverable
-      - vigeur->vigour, vigor
-      - archaoelogy->archeology, archaeology
-      - archaology->archeology, archaeology
-      - archeaologist->archeologist, archaeologist
-      - archeaologists->archeologists, archaeologists
-      - calaber->caliber
-      - damenor->demeanor
-      - Dardenelles->Dardanelles
-      - enameld->enameled
-      - endevors->endeavors
-      - Formalhaut->Fomalhaut
-      - fufill->fulfill
-      - fullfill->fulfill
-      - futhroc->futhark, futhorc
-      - Godounov->Godunov
-      - hemmorhage->hemorrhage
-      - humer->humor
-      - labled->labeled
-      - lippizaner->lipizzaner
       - manuver->maneuver
       - membranaphone->membranophone
       - misdameanor->misdemeanor
       - misdameanors->misdemeanors
       - misdemenor->misdemeanor
       - misdemenors->misdemeanors
+      - neigborhood->neighborhood
+      - neigbour->neighbor
+      - neigbourhood->neighborhood
+      - neigbouring->neighboring
+      - neigbours->neighbors
       - noncombatents->noncombatants
+      - organistion->organization
+      - organiztion->organization
+      - orginize->organize
       - paleolitic->paleolithic
+      - paralel->parallel
+      - paralell->parallel
+      - parralel->parallel
+      - parrallel->parallel
+      - parrallell->parallel
       - passerbys->passersby
       - premillenial->premillennial
       - preminence->preeminence
+      - recogise->recognize
+      - recogize->recognize
       - relected->reelected
+      - relized->realized
+      - reorganision->reorganization
       - rigeur->rigueur, rigour, rigor
       - roomate->roommate
       - sepulchure->sepulchre, sepulcher
       - sepulcre->sepulchre, sepulcher
       - sophmore->sophomore
+      - speciallized->specialized
+      - spendour->splendor
       - surveill->surveil
       - theather->theater
+      - unathorised->unauthorized
+      - unmanouverable->unmaneuverable
       - unoperational->nonoperational
+      - vigeur->vigour, vigor
       - Yementite->Yemenite, Yemeni

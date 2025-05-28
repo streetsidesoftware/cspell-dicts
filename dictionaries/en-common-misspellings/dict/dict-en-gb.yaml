@@ -1,5 +1,6 @@
 # yaml-language-server: $schema=https://raw.githubusercontent.com/streetsidesoftware/cspell/main/cspell.schema.json
-# cspell:ignoreRegExp /- \w+-/
+# Tell cspell to not spell check the misspelled words:
+# cspell:ignoreRegExp /\b[\p{L}'-]+->/gmu
 # cspell:locale en-gb
 # cspell:ignore unmanoeuvrable futhorc lippizaner
 # cspell:ignore parallelly resignment rigueur
@@ -9,7 +10,12 @@ dictionaryDefinitions:
   - name: en-gb-common-misspellings
     suggestWords:
       - ansalisation->nasalisation
+      - archaoelogy->archaeology
+      - archaology->archaeology
+      - archeaologist->archaeologist
+      - archeaologists->archaeologists
       - behavour->behaviour
+      - calaber->calibre
       - councellor->counsellor, councillor
       - councellors->counsellors, councillors
       - critising->criticising
@@ -20,14 +26,25 @@ dictionaryDefinitions:
       - critisizing->criticising
       - crticised->criticised
       - crystalisation->crystallisation
+      - damenor->demeanour
+      - demenor->demeanour
       - draughtman->draughtsman
       - emphaised->emphasised
+      - enameld->enamelled
+      - endevors->endeavours
       - favoutrable->favourable
       - fontrier->frontier
+      - fufill->fulfil
+      - fullfill->fulfil
+      - futhroc->futhorc
       - haemorrage->haemorrhage
       - Hallowean->Halloween
+      - hemmorhage->haemorrhage
+      - humer->humour
       - intepretator->interpretor
       - jewllery->jewellery
+      - labled->labelled
+      - lipizzaner->lippizaner
       - liscense->licence
       - lisence->licence
       - lisense->licence
@@ -42,14 +59,21 @@ dictionaryDefinitions:
       - manouvers->manoeuvres
       - manuever->manoeuvre
       - manuevers->manoeuvres
+      - manuver->manoeuvre
+      - misdameanor->misdemeanour
+      - misdameanors->misdemeanours
+      - misdemenor->misdemeanour
+      - misdemenors->misdemeanours
       - neigborhood->neighbourhood
       - neigbour->neighbour
       - neigbourhood->neighbourhood
       - neigbouring->neighbouring
       - neigbours->neighbours
+      - noncombatents->non-combatants
       - organistion->organisation
       - organiztion->organization
       - orginize->organise
+      - paleolitic->palaeolithic
       - paralel->parallel
       - paralell->parallel
       - paralelly->parallelly
@@ -60,44 +84,22 @@ dictionaryDefinitions:
       - parrallell->parallel
       - parrallelly->parallelly
       - parrallely->parallelly
+      - passerbys->passers-by, passer-by
+      - preminence->pre-eminence
       - recogise->recognise
       - recogize->recognise, recognize
+      - relected->re-elected
       - relized->realised, realized
       - reorganision->reorganisation
       - resignement->resignment
-      - speciallized->specialised, specialized
-      - spendour->splendour
-      - unathorised->unauthorised
-      - unmanouverable->unmanoeuvrable
-      - vigeur->vigour
-      - archaoelogy->archaeology
-      - archaology->archaeology
-      - archeaologist->archaeologist
-      - archeaologists->archaeologists
-      - calaber->calibre
-      - damenor->demeanour
-      - enameld->enamelled
-      - endevors->endeavours
-      - fufill->fulfil
-      - fullfill->fulfil
-      - futhroc->futhorc
-      - hemmorhage->haemorrhage
-      - humer->humour
-      - labled->labelled
-      - lipizzaner->lippizaner
-      - manuver->manoeuvre
-      - misdameanor->misdemeanour
-      - misdameanors->misdemeanours
-      - misdemenor->misdemeanour
-      - misdemenors->misdemeanours
-      - noncombatents->non-combatants
-      - paleolitic->palaeolithic
-      - passerbys->passers-by, passer-by
-      - preminence->pre-eminence
-      - relected->re-elected
       - rigeur->rigueur, rigour
       - roomate->room-mate
       - sepulchure->sepulchre
       - sepulcre->sepulchre
+      - speciallized->specialised, specialized
+      - spendour->splendour
       - theather->theatre
+      - unathorised->unauthorised
+      - unmanouverable->unmanoeuvrable
       - unoperational->non-operational
+      - vigeur->vigour
