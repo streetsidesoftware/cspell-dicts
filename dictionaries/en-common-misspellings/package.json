@@ -12,7 +12,7 @@
     "./cspell-ext.json": "./cspell-ext.json"
   },
   "scripts": {
-    "build": "echo ok",
+    "build": "node ./scripts/build.mjs",
     "test": "cspell .",
     "prepublishOnly": "echo OK",
     "prepare:dictionary": "pnpm run build"

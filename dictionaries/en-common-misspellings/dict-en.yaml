@@ -1,5 +1,5 @@
 # yaml-language-server: $schema=https://raw.githubusercontent.com/streetsidesoftware/cspell/main/cspell.schema.json
-# cspell:ignoreRegExp /- [\w'-]+->/
+# cspell:ignoreRegExp /\b[\w'-]+->/gm
 # cspell:words extremophile gardaí guaraná Gothenburg Gottlieb Giulia Giulio Johannine Rican Ricans
 # cspell:locale en
 
@@ -1458,6 +1458,7 @@ dictionaryDefinitions:
       - ensconsed->ensconced
       - entaglements->entanglements
       - enteratinment->entertainment
+      - enterprize->enterprise
       - enthusiatic->enthusiastic
       - entitity->entity
       - entitlied->entitled
