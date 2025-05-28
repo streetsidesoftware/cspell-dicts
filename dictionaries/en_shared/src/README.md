@@ -5,6 +5,7 @@ All source files used to generate the English dictionaries should be stored in t
 ## Remarks about `-ize` and `-ise` words
 
 [!NOTE]
+
 > `-ize` words are not specific to US English (`en_US`)
 > US Americans chose to use them over `-ise` words.
 >
@@ -34,4 +35,3 @@ If the words you want to add is valid for:
 MIT
 
 > Some packages may have other licenses included.
-
