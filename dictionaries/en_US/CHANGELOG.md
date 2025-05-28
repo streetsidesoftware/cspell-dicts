@@ -3,6 +3,14 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+## [4.4.10](https://github.com/streetsidesoftware/cspell-dicts/compare/@cspell/dict-en_us@4.4.9...@cspell/dict-en_us@4.4.10) (2025-05-28)
+
+
+### Updates and Bug Fixes
+
+* Remove "enterprize" from the US dict. ([#4496](https://github.com/streetsidesoftware/cspell-dicts/issues/4496)) ([963415c](https://github.com/streetsidesoftware/cspell-dicts/commit/963415c8ac80ba67e068d0d6813fc3a6601f0861))
+* Workflow Bot -- Build Dictionaries ([#4497](https://github.com/streetsidesoftware/cspell-dicts/issues/4497)) ([770f2cc](https://github.com/streetsidesoftware/cspell-dicts/commit/770f2ccd2cf52472dd6547dc117e4cc75ad5e212))
+
 ## [4.4.9](https://github.com/streetsidesoftware/cspell-dicts/compare/@cspell/dict-en_us@4.4.8...@cspell/dict-en_us@4.4.9) (2025-05-20)
 
 

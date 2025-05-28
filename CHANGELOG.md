@@ -1,5 +1,32 @@
 # Release Notes
 
+## [31.2.0](https://github.com/streetsidesoftware/cspell-dicts/compare/cspell-dicts@31.1.1...cspell-dicts@31.2.0) (2025-05-28)
+
+
+### Features
+
+* add en_shared -ize forms to en_GB-MIT ([#4486](https://github.com/streetsidesoftware/cspell-dicts/issues/4486)) ([a0b8074](https://github.com/streetsidesoftware/cspell-dicts/commit/a0b807473646e2a864be7bacbf076f98605d6ce2))
+
+
+### Updates and Bug Fixes
+
+* add more k8s words ([#4492](https://github.com/streetsidesoftware/cspell-dicts/issues/4492)) ([a6a90dd](https://github.com/streetsidesoftware/cspell-dicts/commit/a6a90dd16c98e21106565445d54166d3ba7df582))
+* add suggestion of enterprise. ([#4495](https://github.com/streetsidesoftware/cspell-dicts/issues/4495)) ([de20da8](https://github.com/streetsidesoftware/cspell-dicts/commit/de20da81f2d3f6fd41d40244df1a74f4b5be8ebd))
+* Remove "enterprize" from the US dict. ([#4496](https://github.com/streetsidesoftware/cspell-dicts/issues/4496)) ([963415c](https://github.com/streetsidesoftware/cspell-dicts/commit/963415c8ac80ba67e068d0d6813fc3a6601f0861))
+* Workflow Bot -- Build Dictionaries ([#4470](https://github.com/streetsidesoftware/cspell-dicts/issues/4470)) ([ffba13a](https://github.com/streetsidesoftware/cspell-dicts/commit/ffba13a9367cf1b2b9ae1118d7423be59c83bb8b))
+* Workflow Bot -- Build Dictionaries ([#4488](https://github.com/streetsidesoftware/cspell-dicts/issues/4488)) ([198b430](https://github.com/streetsidesoftware/cspell-dicts/commit/198b430ad795189eda9248eb704114b93f5e77d8))
+* Workflow Bot -- Build Dictionaries ([#4489](https://github.com/streetsidesoftware/cspell-dicts/issues/4489)) ([7b4b194](https://github.com/streetsidesoftware/cspell-dicts/commit/7b4b194b97a5254af403b832a12ef2378ccc61fb))
+* Workflow Bot -- Build Dictionaries ([#4494](https://github.com/streetsidesoftware/cspell-dicts/issues/4494)) ([273998b](https://github.com/streetsidesoftware/cspell-dicts/commit/273998b2f0a005186220b71948d72556d923de57))
+* Workflow Bot -- Build Dictionaries ([#4497](https://github.com/streetsidesoftware/cspell-dicts/issues/4497)) ([770f2cc](https://github.com/streetsidesoftware/cspell-dicts/commit/770f2ccd2cf52472dd6547dc117e4cc75ad5e212))
+* Workflow Bot -- Update Dictionaries ([#4481](https://github.com/streetsidesoftware/cspell-dicts/issues/4481)) ([3c0b311](https://github.com/streetsidesoftware/cspell-dicts/commit/3c0b31118768e3d099138ed411120bfe18403eff))
+
+
+### Dependencies
+
+* The following workspace dependencies were updated
+  * devDependencies
+    * @cspell/dict-cspell-bundle bumped to 2.0.4
+
 ## [31.1.1](https://github.com/streetsidesoftware/cspell-dicts/compare/cspell-dicts@31.1.0...cspell-dicts@31.1.1) (2025-05-20)
 
 
