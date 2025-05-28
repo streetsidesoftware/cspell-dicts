@@ -3,6 +3,13 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+## [3.1.0](https://github.com/streetsidesoftware/cspell-dicts/compare/@cspell/dict-en-gb-mit@3.0.7...@cspell/dict-en-gb-mit@3.1.0) (2025-05-28)
+
+
+### Features
+
+* add en_shared -ize forms to en_GB-MIT ([#4486](https://github.com/streetsidesoftware/cspell-dicts/issues/4486)) ([a0b8074](https://github.com/streetsidesoftware/cspell-dicts/commit/a0b807473646e2a864be7bacbf076f98605d6ce2))
+
 ## [3.0.7](https://github.com/streetsidesoftware/cspell-dicts/compare/@cspell/dict-en-gb-mit@3.0.6...@cspell/dict-en-gb-mit@3.0.7) (2025-05-20)
 
 
