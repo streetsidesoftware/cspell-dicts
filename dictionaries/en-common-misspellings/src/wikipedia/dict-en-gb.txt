@@ -7,7 +7,7 @@
 # cspell:locale en-gb
 #
 # Tell cspell to not spell check the misspelled words:
-# cspell:ignoreRegExp /\b[\w'-]+->/gm
+# cspell:ignoreRegExp /\b[\p{L}'-]+->/gmu
 ansalisation->nasalisation
 archaoelogy->archaeology
 archaology->archaeology
@@ -101,3 +101,4 @@ unathorised->unauthorised
 unmanouverable->unmanoeuvrable
 unoperational->non-operational
 vigeur->vigour
+demenor->demeanour

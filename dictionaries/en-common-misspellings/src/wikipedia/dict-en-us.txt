@@ -7,7 +7,7 @@
 # cspell:locale en-us
 #
 # Tell cspell to not spell check the misspelled words:
-# cspell:ignoreRegExp /\b[\w'-]+->/gm
+# cspell:ignoreRegExp /\b[\p{L}'-]+->/gmu
 ansalization->nasalization
 archaoelogy->archeology, archaeology
 archaology->archeology, archaeology
@@ -27,6 +27,7 @@ crticised->criticized
 crystalisation->crystallization
 damenor->demeanor
 Dardenelles->Dardanelles
+demenor->demeanor
 draughtman->draftsman
 emphaised->emphasized
 enameld->enameled

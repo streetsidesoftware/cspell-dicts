@@ -9,6 +9,7 @@ const root = new URL('../', import.meta.url);
 
 const srcFiles = ['dict-en.txt', 'dict-en-gb.txt', 'dict-en-us.txt'];
 const srcDirs = ['src/', 'src/wikipedia/'];
+const targetDir = new URL('dict/', root);
 
 /**
  * @import { Document, Scalar, YAMLSeq } from 'yaml';
@@ -24,7 +25,7 @@ async function readSrcFileLines(file) {
     return content
         .split(/\r?\n/)
         .map((line) => line.trim())
-        .filter((line) => !line || !line.startsWith('#'));
+        .filter((line) => line && !line.startsWith('#'));
 }
 
 /**
@@ -97,7 +98,7 @@ function compareEntries(a, b) {
  */
 async function processSrc(srcBaseName) {
     const dstYamlFileName = srcBaseName.replace('.txt', '.yaml');
-    const dstYamlFile = new URL(dstYamlFileName, root);
+    const dstYamlFile = new URL(dstYamlFileName, targetDir);
 
     /** @type {Map<string, Entry>} */
     const entriesSug = new Map();
