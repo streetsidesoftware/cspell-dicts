@@ -23,6 +23,8 @@
                 "clean",
                 "clone",
                 "commit",
+                "commit-ish",
+                "commitish",
                 "cygwin",
                 "describe",
                 "diff",
@@ -102,7 +104,7 @@
             "minWordLength": 3
         },
         {
-            "filename": "**/.git/**",
+            "filename": ["**/.git/**", "**/.github/**"],
             "dictionaries": ["git"]
         }
     ]
