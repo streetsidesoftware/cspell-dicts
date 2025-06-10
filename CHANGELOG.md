@@ -1,5 +1,35 @@
 # Release Notes
 
+## [31.2.1](https://github.com/streetsidesoftware/cspell-dicts/compare/cspell-dicts@31.2.0...cspell-dicts@31.2.1) (2025-06-10)
+
+
+### Updates and Bug Fixes
+
+* add 'Adminer' to software tools dictionary ([#4509](https://github.com/streetsidesoftware/cspell-dicts/issues/4509)) ([d7b3503](https://github.com/streetsidesoftware/cspell-dicts/commit/d7b350327efdea90034b00aff4a5a0e4d1b86886))
+* add 'Gerrit' to software tools dictionary ([#4510](https://github.com/streetsidesoftware/cspell-dicts/issues/4510)) ([710a19e](https://github.com/streetsidesoftware/cspell-dicts/commit/710a19ea972d2f32a58f9481a564af92306656f3))
+* add 'helm' and 'helmfile' to software tools dictionary ([#4515](https://github.com/streetsidesoftware/cspell-dicts/issues/4515)) ([b63afb9](https://github.com/streetsidesoftware/cspell-dicts/commit/b63afb92c543d29f7bccd7268e825bd7f9d730b4))
+* add 'logrus' to common Go libraries dictionary ([#4513](https://github.com/streetsidesoftware/cspell-dicts/issues/4513)) ([4062ed3](https://github.com/streetsidesoftware/cspell-dicts/commit/4062ed3ba2f1f76272ba8fa1a4117a8179d39bab))
+* add 'Mailgun' to software services dictionary ([#4517](https://github.com/streetsidesoftware/cspell-dicts/issues/4517)) ([89e7f7e](https://github.com/streetsidesoftware/cspell-dicts/commit/89e7f7eb54a5bb80061996c8dea838932dd96694))
+* add 'MailHog' to software tools dictionary ([#4514](https://github.com/streetsidesoftware/cspell-dicts/issues/4514)) ([d8e3582](https://github.com/streetsidesoftware/cspell-dicts/commit/d8e3582e9c5aeb908a82193d24cef5fc7559a6d0))
+* add 'OpenTofu' to software tools dictionary ([#4511](https://github.com/streetsidesoftware/cspell-dicts/issues/4511)) ([e63ed94](https://github.com/streetsidesoftware/cspell-dicts/commit/e63ed94bb30006be7b26281915c956555a55ac45))
+* add 'unbundle' ([#4518](https://github.com/streetsidesoftware/cspell-dicts/issues/4518)) ([a651e8b](https://github.com/streetsidesoftware/cspell-dicts/commit/a651e8bd8b9ffdff2f70176b1cebdeefd39aa29f))
+* add "Phabricator" and "Phorge" to `software-tools.txt` ([#4512](https://github.com/streetsidesoftware/cspell-dicts/issues/4512)) ([5248da1](https://github.com/streetsidesoftware/cspell-dicts/commit/5248da1b5449cb4e0cb0e1805a56907574c4cf82))
+* Add `unbundle` to English shared ([#4522](https://github.com/streetsidesoftware/cspell-dicts/issues/4522)) ([cef32fa](https://github.com/streetsidesoftware/cspell-dicts/commit/cef32fa94cb737155d344dc069eac5549b347759))
+* add tool options to npm dictionary ([#4523](https://github.com/streetsidesoftware/cspell-dicts/issues/4523)) ([5de90ba](https://github.com/streetsidesoftware/cspell-dicts/commit/5de90ba072ac6d1f4898c596ccb35f740902ffe2))
+* git - enable git dictionary in `.github` ([#4516](https://github.com/streetsidesoftware/cspell-dicts/issues/4516)) ([be26a4d](https://github.com/streetsidesoftware/cspell-dicts/commit/be26a4d167aa8e1c063868cc40963b3e06402b22))
+* Workflow Bot -- Build Dictionaries ([#4507](https://github.com/streetsidesoftware/cspell-dicts/issues/4507)) ([f1739a7](https://github.com/streetsidesoftware/cspell-dicts/commit/f1739a7b97a319e19680de5dea4b6790ba40d638))
+* Workflow Bot -- Build Dictionaries ([#4520](https://github.com/streetsidesoftware/cspell-dicts/issues/4520)) ([8b2f899](https://github.com/streetsidesoftware/cspell-dicts/commit/8b2f89967cf8aceea5e53011b34540b3a70eb254))
+* Workflow Bot -- Build Dictionaries ([#4521](https://github.com/streetsidesoftware/cspell-dicts/issues/4521)) ([8c68505](https://github.com/streetsidesoftware/cspell-dicts/commit/8c68505f0ccb0f762571485f845cf9476303f57e))
+* Workflow Bot -- Build Dictionaries ([#4526](https://github.com/streetsidesoftware/cspell-dicts/issues/4526)) ([3fcf71f](https://github.com/streetsidesoftware/cspell-dicts/commit/3fcf71fd8e9dbfa5f15644daa4f09da1a1853316))
+* Workflow Bot -- Update Dictionaries ([#4501](https://github.com/streetsidesoftware/cspell-dicts/issues/4501)) ([cb7d315](https://github.com/streetsidesoftware/cspell-dicts/commit/cb7d31597bdd521e459962a0a8949924ba887a48))
+
+
+### Dependencies
+
+* The following workspace dependencies were updated
+  * devDependencies
+    * @cspell/dict-cspell-bundle bumped to 2.0.5
+
 ## [31.2.0](https://github.com/streetsidesoftware/cspell-dicts/compare/cspell-dicts@31.1.1...cspell-dicts@31.2.0) (2025-05-28)
 
 

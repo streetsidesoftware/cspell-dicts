@@ -3,6 +3,21 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+## [5.0.11](https://github.com/streetsidesoftware/cspell-dicts/compare/@cspell/dict-software-terms@5.0.10...@cspell/dict-software-terms@5.0.11) (2025-06-10)
+
+
+### Updates and Bug Fixes
+
+* add 'Adminer' to software tools dictionary ([#4509](https://github.com/streetsidesoftware/cspell-dicts/issues/4509)) ([d7b3503](https://github.com/streetsidesoftware/cspell-dicts/commit/d7b350327efdea90034b00aff4a5a0e4d1b86886))
+* add 'Gerrit' to software tools dictionary ([#4510](https://github.com/streetsidesoftware/cspell-dicts/issues/4510)) ([710a19e](https://github.com/streetsidesoftware/cspell-dicts/commit/710a19ea972d2f32a58f9481a564af92306656f3))
+* add 'helm' and 'helmfile' to software tools dictionary ([#4515](https://github.com/streetsidesoftware/cspell-dicts/issues/4515)) ([b63afb9](https://github.com/streetsidesoftware/cspell-dicts/commit/b63afb92c543d29f7bccd7268e825bd7f9d730b4))
+* add 'Mailgun' to software services dictionary ([#4517](https://github.com/streetsidesoftware/cspell-dicts/issues/4517)) ([89e7f7e](https://github.com/streetsidesoftware/cspell-dicts/commit/89e7f7eb54a5bb80061996c8dea838932dd96694))
+* add 'MailHog' to software tools dictionary ([#4514](https://github.com/streetsidesoftware/cspell-dicts/issues/4514)) ([d8e3582](https://github.com/streetsidesoftware/cspell-dicts/commit/d8e3582e9c5aeb908a82193d24cef5fc7559a6d0))
+* add 'OpenTofu' to software tools dictionary ([#4511](https://github.com/streetsidesoftware/cspell-dicts/issues/4511)) ([e63ed94](https://github.com/streetsidesoftware/cspell-dicts/commit/e63ed94bb30006be7b26281915c956555a55ac45))
+* add "Phabricator" and "Phorge" to `software-tools.txt` ([#4512](https://github.com/streetsidesoftware/cspell-dicts/issues/4512)) ([5248da1](https://github.com/streetsidesoftware/cspell-dicts/commit/5248da1b5449cb4e0cb0e1805a56907574c4cf82))
+* Workflow Bot -- Build Dictionaries ([#4507](https://github.com/streetsidesoftware/cspell-dicts/issues/4507)) ([f1739a7](https://github.com/streetsidesoftware/cspell-dicts/commit/f1739a7b97a319e19680de5dea4b6790ba40d638))
+* Workflow Bot -- Build Dictionaries ([#4520](https://github.com/streetsidesoftware/cspell-dicts/issues/4520)) ([8b2f899](https://github.com/streetsidesoftware/cspell-dicts/commit/8b2f89967cf8aceea5e53011b34540b3a70eb254))
+
 ## [5.0.10](https://github.com/streetsidesoftware/cspell-dicts/compare/@cspell/dict-software-terms@5.0.9...@cspell/dict-software-terms@5.0.10) (2025-05-20)
 
 
