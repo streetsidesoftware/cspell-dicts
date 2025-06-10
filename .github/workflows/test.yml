@@ -22,7 +22,7 @@ jobs:
         node-version:
           - 20.x
           - 22.x
-          - 23.x
+          - 24.x
 
         os:
           - ubuntu-latest
@@ -43,7 +43,7 @@ jobs:
     strategy:
       matrix:
         node-version:
-          - 23.x
+          - 24.x
 
         os:
           - windows-latest
