@@ -1,5 +1,13 @@
 # Change Log
 
+## [1.0.35](https://github.com/streetsidesoftware/cspell-dicts/compare/@cspell/dict-en-shared@1.0.34...@cspell/dict-en-shared@1.0.35) (2025-06-10)
+
+
+### Updates and Bug Fixes
+
+* Add `unbundle` to English shared ([#4522](https://github.com/streetsidesoftware/cspell-dicts/issues/4522)) ([cef32fa](https://github.com/streetsidesoftware/cspell-dicts/commit/cef32fa94cb737155d344dc069eac5549b347759))
+* Workflow Bot -- Build Dictionaries ([#4521](https://github.com/streetsidesoftware/cspell-dicts/issues/4521)) ([8c68505](https://github.com/streetsidesoftware/cspell-dicts/commit/8c68505f0ccb0f762571485f845cf9476303f57e))
+
 ## [1.0.34](https://github.com/streetsidesoftware/cspell-dicts/compare/@cspell/dict-en-shared@1.0.33...@cspell/dict-en-shared@1.0.34) (2025-05-07)
 
 

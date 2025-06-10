@@ -3,6 +3,16 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+## [5.2.6](https://github.com/streetsidesoftware/cspell-dicts/compare/@cspell/dict-npm@5.2.5...@cspell/dict-npm@5.2.6) (2025-06-10)
+
+
+### Updates and Bug Fixes
+
+* add 'unbundle' ([#4518](https://github.com/streetsidesoftware/cspell-dicts/issues/4518)) ([a651e8b](https://github.com/streetsidesoftware/cspell-dicts/commit/a651e8bd8b9ffdff2f70176b1cebdeefd39aa29f))
+* add tool options to npm dictionary ([#4523](https://github.com/streetsidesoftware/cspell-dicts/issues/4523)) ([5de90ba](https://github.com/streetsidesoftware/cspell-dicts/commit/5de90ba072ac6d1f4898c596ccb35f740902ffe2))
+* Workflow Bot -- Build Dictionaries ([#4526](https://github.com/streetsidesoftware/cspell-dicts/issues/4526)) ([3fcf71f](https://github.com/streetsidesoftware/cspell-dicts/commit/3fcf71fd8e9dbfa5f15644daa4f09da1a1853316))
+* Workflow Bot -- Update Dictionaries ([#4501](https://github.com/streetsidesoftware/cspell-dicts/issues/4501)) ([cb7d315](https://github.com/streetsidesoftware/cspell-dicts/commit/cb7d31597bdd521e459962a0a8949924ba887a48))
+
 ## [5.2.5](https://github.com/streetsidesoftware/cspell-dicts/compare/@cspell/dict-npm@5.2.4...@cspell/dict-npm@5.2.5) (2025-05-28)
 
 

@@ -3,6 +3,14 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+## [6.0.22](https://github.com/streetsidesoftware/cspell-dicts/compare/@cspell/dict-golang@6.0.21...@cspell/dict-golang@6.0.22) (2025-06-10)
+
+
+### Updates and Bug Fixes
+
+* add 'logrus' to common Go libraries dictionary ([#4513](https://github.com/streetsidesoftware/cspell-dicts/issues/4513)) ([4062ed3](https://github.com/streetsidesoftware/cspell-dicts/commit/4062ed3ba2f1f76272ba8fa1a4117a8179d39bab))
+* Workflow Bot -- Build Dictionaries ([#4507](https://github.com/streetsidesoftware/cspell-dicts/issues/4507)) ([f1739a7](https://github.com/streetsidesoftware/cspell-dicts/commit/f1739a7b97a319e19680de5dea4b6790ba40d638))
+
 ## [6.0.21](https://github.com/streetsidesoftware/cspell-dicts/compare/@cspell/dict-golang@6.0.20...@cspell/dict-golang@6.0.21) (2025-05-06)
 
 
