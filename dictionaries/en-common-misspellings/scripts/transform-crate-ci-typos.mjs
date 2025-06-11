@@ -56,9 +56,9 @@ async function readTyposEntries() {
 }
 
 function processEntry(entry, dict) {
-    if (dict.has(entry.word)) {
-        return undefined; // Skip if the word is already in the dictionary
-    }
+    // if (dict.has(entry.word)) {
+    //     return undefined; // Skip if the word is already in the dictionary
+    // }
     const suggestions = entry.suggestions.filter((sug) => dict.has(sug));
     if (!suggestions.length) {
         return undefined; // Skip if no valid suggestions
