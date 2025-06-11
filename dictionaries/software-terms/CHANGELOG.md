@@ -3,6 +3,13 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+## [5.1.0](https://github.com/streetsidesoftware/cspell-dicts/compare/@cspell/dict-software-terms@5.0.11...@cspell/dict-software-terms@5.1.0) (2025-06-11)
+
+
+### Features
+
+* Add many spelling suggestions from "typos" ([#4542](https://github.com/streetsidesoftware/cspell-dicts/issues/4542)) ([7cce1a4](https://github.com/streetsidesoftware/cspell-dicts/commit/7cce1a4f6585f148befed8416d4e20df06d1f73c))
+
 ## [5.0.11](https://github.com/streetsidesoftware/cspell-dicts/compare/@cspell/dict-software-terms@5.0.10...@cspell/dict-software-terms@5.0.11) (2025-06-10)
 
 

@@ -1,5 +1,28 @@
 # Release Notes
 
+## [31.3.0](https://github.com/streetsidesoftware/cspell-dicts/compare/cspell-dicts@31.2.1...cspell-dicts@31.3.0) (2025-06-11)
+
+
+### Features
+
+* Add many spelling suggestions from "typos" ([#4542](https://github.com/streetsidesoftware/cspell-dicts/issues/4542)) ([7cce1a4](https://github.com/streetsidesoftware/cspell-dicts/commit/7cce1a4f6585f148befed8416d4e20df06d1f73c))
+* Add typos from crate-ci ([#4538](https://github.com/streetsidesoftware/cspell-dicts/issues/4538)) ([9acc823](https://github.com/streetsidesoftware/cspell-dicts/commit/9acc823eb836c106a93843b93982c13043d22a2d))
+
+
+### Updates and Bug Fixes
+
+* add missing 'nodenext' to dict/typescript.txt ([#4539](https://github.com/streetsidesoftware/cspell-dicts/issues/4539)) ([272d3a5](https://github.com/streetsidesoftware/cspell-dicts/commit/272d3a5a0136e42dd5bb1c6cb93448471721f4db))
+* add Vue-related terms to typescript ecosystem dictionary ([#4532](https://github.com/streetsidesoftware/cspell-dicts/issues/4532)) ([94c1446](https://github.com/streetsidesoftware/cspell-dicts/commit/94c1446c9e9d29a638e6dcf42804014e3819ce65))
+* Workflow Bot -- Build Dictionaries ([#4535](https://github.com/streetsidesoftware/cspell-dicts/issues/4535)) ([762778e](https://github.com/streetsidesoftware/cspell-dicts/commit/762778e257838b1bdeebf1eb6e110574c9707325))
+* Workflow Bot -- Build Dictionaries ([#4537](https://github.com/streetsidesoftware/cspell-dicts/issues/4537)) ([d961b7b](https://github.com/streetsidesoftware/cspell-dicts/commit/d961b7bddf2390d7606681433b4245aa2b660778))
+
+
+### Dependencies
+
+* The following workspace dependencies were updated
+  * devDependencies
+    * @cspell/dict-cspell-bundle bumped to 2.0.6
+
 ## [31.2.1](https://github.com/streetsidesoftware/cspell-dicts/compare/cspell-dicts@31.2.0...cspell-dicts@31.2.1) (2025-06-10)
 
 
