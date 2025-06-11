@@ -18,11 +18,11 @@ const dictionaryUrls = {
     exclude: new URL('src/excludeWords.txt', root),
 };
 
-function getHeader(locale) {
+function getHeader(locale, syncTag) {
     return `\
-# This file is generated from the words.csv
-# Add additional suggestions here.
-# the form is:
+# This file is generated from:
+#   https://github.com/crate-ci/typos/blob/${syncTag}/crates/typos-dict/assets/words.csv
+# The form is:
 # misspelling->suggestion
 #
 # cspell\x3Alocale ${locale}
@@ -68,12 +68,14 @@ function processEntry(entry, dict, excludeDict) {
     return `${entry.word}->${suggestions.join(',')}`;
 }
 
-async function writeEntriesToFile(url, entries, locale) {
-    const content = getHeader(locale) + [...entries].sort().join('\n') + '\n';
+async function writeEntriesToFile(url, entries, locale, syncTag) {
+    const content = getHeader(locale, syncTag) + [...entries].sort().join('\n') + '\n';
     await fs.writeFile(url, content, 'utf8');
 }
 
 async function main() {
+    const syncInfo = JSON.parse(await fs.readFile(new URL('.sync-github-files.json', typesDirURL), 'utf8'));
+    const syncTag = syncInfo['https://github.com/crate-ci/typos'] || 'v1.33.1';
     const dictionaries = await loadDictionaries();
     const typosEntries = await readTyposEntries();
     const entriesEnAll = new Set();
@@ -102,10 +104,10 @@ async function main() {
         }
     }
 
-    await writeEntriesToFile(new URL('dict-en-us.txt', outdirURL), entriesEnUS, 'en-US');
-    await writeEntriesToFile(new URL('dict-en-gb.txt', outdirURL), entriesEnGB, 'en-GB');
-    await writeEntriesToFile(new URL('dict-en.txt', outdirURL), entriesEnAll, 'en');
-    await writeEntriesToFile(new URL('softwareTerms.txt', outdirURL), entriesSoftwareTerms, 'en');
+    await writeEntriesToFile(new URL('dict-en-us.txt', outdirURL), entriesEnUS, 'en-US', syncTag);
+    await writeEntriesToFile(new URL('dict-en-gb.txt', outdirURL), entriesEnGB, 'en-GB', syncTag);
+    await writeEntriesToFile(new URL('dict-en.txt', outdirURL), entriesEnAll, 'en', syncTag);
+    await writeEntriesToFile(new URL('softwareTerms.txt', outdirURL), entriesSoftwareTerms, 'en', syncTag);
 }
 
 main();
