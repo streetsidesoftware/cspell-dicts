@@ -8,6 +8,6 @@
         "sublicensable",
         "waivable"
     ],
-    "ignorePaths": ["cspell*.json", "CHANGELOG.md"],
-    "import": ["./cspell-ext.json"]
+    "ignorePaths": ["cspell*.json", "CHANGELOG.md", "dict", "**/*.csv", "fromCrateTypos"],
+    "import": ["./cspell-ext.json", "../en_GB/cspell-ext.json"],
 }

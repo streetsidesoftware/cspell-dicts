@@ -4,7 +4,8 @@
   "description": "",
   "type": "module",
   "bin": {
-    "build-dicts": "./build.mjs"
+    "build-dicts": "./build.mjs",
+    "transform-crate-ci-types": "./transform-crate-ci-types.mjs"
   },
   "scripts": {
     "test": "echo \"Error: no test specified\""
@@ -13,6 +14,8 @@
   "author": "",
   "license": "MIT",
   "dependencies": {
+    "cspell-io": "^9.0.2",
+    "cspell-trie-lib": "^9.0.2",
     "yaml": "^2.8.0"
   }
 }
