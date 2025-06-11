@@ -8,7 +8,7 @@ import { parseDocument } from 'yaml';
 const root = new URL('../', import.meta.url);
 
 const srcFiles = ['dict-en.txt', 'dict-en-gb.txt', 'dict-en-us.txt'];
-const srcDirs = ['src/', 'src/wikipedia/'];
+const srcDirs = ['src/', 'src/wikipedia/', 'src/crate-ci/typos/'];
 const targetDir = new URL('dict/', root);
 
 /**
