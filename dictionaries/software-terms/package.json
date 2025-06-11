@@ -13,7 +13,7 @@
   },
   "scripts": {
     "build": "pnpm build:dicts && pnpm build:suggestions",
-    "build:suggestions": "node ./scripts/build.mjs",
+    "build:suggestions": "node ./scripts/build-cspell-corrections.mjs",
     "build:dicts": "cspell-tools-cli build",
     "test": "pnpm test-software-terms && pnpm test-networking-terms",
     "test-software-terms": "cspell -c ./cspell-ext.json \"--locale=en\" \"--languageId=*\" --file-list src/source-files-software.txt",
