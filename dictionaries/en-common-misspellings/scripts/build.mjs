@@ -10,6 +10,7 @@ const root = new URL('../', import.meta.url);
 const srcFiles = ['dict-en.txt', 'dict-en-gb.txt', 'dict-en-us.txt'];
 const srcDirs = ['src/', 'src/wikipedia/', 'src/fromCrateTypos/'];
 const targetDir = new URL('dict/', root);
+const srcDir = new URL('src/', root);
 
 /**
  * @import { Document, Scalar, YAMLSeq } from 'yaml';
@@ -99,6 +100,7 @@ function compareEntries(a, b) {
 async function processSrc(srcBaseName) {
     const dstYamlFileName = srcBaseName.replace('.txt', '.yaml');
     const dstYamlFile = new URL(dstYamlFileName, targetDir);
+    const srcYamlFile = new URL(dstYamlFileName, srcDir);
 
     /** @type {Map<string, Entry>} */
     const entriesSug = new Map();
@@ -120,7 +122,7 @@ async function processSrc(srcBaseName) {
         }
     }
 
-    const strYaml = await fs.readFile(dstYamlFile, 'utf8');
+    const strYaml = await fs.readFile(srcYamlFile, 'utf8');
     const doc = parseDocument(strYaml);
     const dict = doc.getIn(['dictionaryDefinitions', 0]);
     const toProcess = [
