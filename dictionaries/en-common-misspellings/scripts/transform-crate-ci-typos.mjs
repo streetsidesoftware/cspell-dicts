@@ -6,11 +6,15 @@ import fs from 'node:fs/promises';
 import { readFileText } from 'cspell-io';
 import { decodeTrie, parseDictionary } from 'cspell-trie-lib';
 
-const typesDirURL = new URL('../src/crate-ci/typos/', import.meta.url);
+const root = new URL('../', import.meta.url);
+
+const typesDirURL = new URL('src/crate-ci/typos/', root);
+const outdirURL = new URL('src/fromCrateTypos/', root);
 
 const dictionaryUrls = {
-    'en-US': new URL('../../en_US/en_US.trie', import.meta.url),
-    'en-GB': new URL('../../en_GB/en_GB.trie', import.meta.url),
+    'en-US': new URL('../en_US/en_US.trie', root),
+    'en-GB': new URL('../en_GB/en_GB.trie', root),
+    softwareTerms: new URL('../software-terms/dict/softwareTerms.txt', root),
 };
 
 function getHeader(locale) {
@@ -38,6 +42,7 @@ async function loadDictionaries() {
     return {
         'en-US': await loadDictionaryFromFile(dictionaryUrls['en-US']),
         'en-GB': await loadDictionaryFromFile(dictionaryUrls['en-GB']),
+        softwareTerms: await loadDictionaryFromFile(dictionaryUrls.softwareTerms),
     };
 }
 
@@ -72,6 +77,7 @@ async function main() {
     const entriesEnAll = new Set();
     const entriesEnUS = new Set();
     const entriesEnGB = new Set();
+    const entriesSoftwareTerms = new Set();
 
     for (const entry of typosEntries) {
         const enUS = processEntry(entry, dictionaries['en-US']);
@@ -88,11 +94,16 @@ async function main() {
                 entriesEnGB.add(enGB);
             }
         }
+        const softwareTerms = processEntry(entry, dictionaries.softwareTerms);
+        if (softwareTerms && softwareTerms !== enUS) {
+            entriesSoftwareTerms.add(softwareTerms);
+        }
     }
 
-    await writeEntriesToFile(new URL('dict-en-us.txt', typesDirURL), entriesEnUS, 'en-US');
-    await writeEntriesToFile(new URL('dict-en-gb.txt', typesDirURL), entriesEnGB, 'en-GB');
-    await writeEntriesToFile(new URL('dict-en.txt', typesDirURL), entriesEnAll, 'en');
+    await writeEntriesToFile(new URL('dict-en-us.txt', outdirURL), entriesEnUS, 'en-US');
+    await writeEntriesToFile(new URL('dict-en-gb.txt', outdirURL), entriesEnGB, 'en-GB');
+    await writeEntriesToFile(new URL('dict-en.txt', outdirURL), entriesEnAll, 'en');
+    await writeEntriesToFile(new URL('softwareTerms.txt', outdirURL), entriesSoftwareTerms, 'en');
 }
 
 main();
