@@ -12,7 +12,9 @@
     "./cspell-ext.json": "./cspell-ext.json"
   },
   "scripts": {
-    "build": "cspell-tools-cli build",
+    "build": "pnpm build:dicts && pnpm build:suggestions",
+    "build:suggestions": "node ./scripts/build.mjs",
+    "build:dicts": "cspell-tools-cli build",
     "test": "pnpm test-software-terms && pnpm test-networking-terms",
     "test-software-terms": "cspell -c ./cspell-ext.json \"--locale=en\" \"--languageId=*\" --file-list src/source-files-software.txt",
     "test-networking-terms": "cspell \"--locale=*\" \"--languageId=*\" --file-list src/source-files-networking.txt",

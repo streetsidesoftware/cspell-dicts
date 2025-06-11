@@ -637,6 +637,12 @@ importers:
 
   dictionaries/software-terms: {}
 
+  dictionaries/software-terms/scripts:
+    dependencies:
+      yaml:
+        specifier: ^2.8.0
+        version: 2.8.0
+
   dictionaries/sql: {}
 
   dictionaries/sr_Cyrl: {}
