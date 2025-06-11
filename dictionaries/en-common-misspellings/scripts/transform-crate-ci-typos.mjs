@@ -15,6 +15,7 @@ const dictionaryUrls = {
     'en-US': new URL('../en_US/en_US.trie', root),
     'en-GB': new URL('../en_GB/en_GB.trie', root),
     softwareTerms: new URL('../software-terms/dict/softwareTerms.txt', root),
+    exclude: new URL('src/excludeWords.txt', root),
 };
 
 function getHeader(locale) {
@@ -43,6 +44,7 @@ async function loadDictionaries() {
         'en-US': await loadDictionaryFromFile(dictionaryUrls['en-US']),
         'en-GB': await loadDictionaryFromFile(dictionaryUrls['en-GB']),
         softwareTerms: await loadDictionaryFromFile(dictionaryUrls.softwareTerms),
+        exclude: await loadDictionaryFromFile(dictionaryUrls.exclude),
     };
 }
 
@@ -55,11 +57,11 @@ async function readTyposEntries() {
         .map((words) => ({ word: words[0], suggestions: words.slice(1) }));
 }
 
-function processEntry(entry, dict) {
+function processEntry(entry, dict, excludeDict) {
     // if (dict.has(entry.word)) {
     //     return undefined; // Skip if the word is already in the dictionary
     // }
-    const suggestions = entry.suggestions.filter((sug) => dict.has(sug));
+    const suggestions = entry.suggestions.filter((sug) => !excludeDict.has(sug) && dict.has(sug));
     if (!suggestions.length) {
         return undefined; // Skip if no valid suggestions
     }
@@ -80,8 +82,8 @@ async function main() {
     const entriesSoftwareTerms = new Set();
 
     for (const entry of typosEntries) {
-        const enUS = processEntry(entry, dictionaries['en-US']);
-        const enGB = processEntry(entry, dictionaries['en-GB']);
+        const enUS = processEntry(entry, dictionaries['en-US'], dictionaries.exclude);
+        const enGB = processEntry(entry, dictionaries['en-GB'], dictionaries.exclude);
         if (enUS === enGB) {
             if (enUS) {
                 entriesEnAll.add(enUS);
@@ -94,7 +96,7 @@ async function main() {
                 entriesEnGB.add(enGB);
             }
         }
-        const softwareTerms = processEntry(entry, dictionaries.softwareTerms);
+        const softwareTerms = processEntry(entry, dictionaries.softwareTerms, dictionaries.exclude);
         if (softwareTerms && softwareTerms !== enUS) {
             entriesSoftwareTerms.add(softwareTerms);
         }
