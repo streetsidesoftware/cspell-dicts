@@ -1,5 +1,17 @@
 # Change Log
 
+## [2.1.0](https://github.com/streetsidesoftware/cspell-dicts/compare/@cspell/dict-en-common-misspellings@2.0.12...@cspell/dict-en-common-misspellings@2.1.0) (2025-06-11)
+
+
+### Features
+
+* Add typos from crate-ci ([#4538](https://github.com/streetsidesoftware/cspell-dicts/issues/4538)) ([9acc823](https://github.com/streetsidesoftware/cspell-dicts/commit/9acc823eb836c106a93843b93982c13043d22a2d))
+
+
+### Updates and Bug Fixes
+
+* Workflow Bot -- Build Dictionaries ([#4537](https://github.com/streetsidesoftware/cspell-dicts/issues/4537)) ([d961b7b](https://github.com/streetsidesoftware/cspell-dicts/commit/d961b7bddf2390d7606681433b4245aa2b660778))
+
 ## [2.0.12](https://github.com/streetsidesoftware/cspell-dicts/compare/@cspell/dict-en-common-misspellings@2.0.11...@cspell/dict-en-common-misspellings@2.0.12) (2025-05-28)
 
 
