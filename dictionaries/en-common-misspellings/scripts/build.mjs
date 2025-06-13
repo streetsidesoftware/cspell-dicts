@@ -98,9 +98,10 @@ function compareEntries(a, b) {
  * @param {string} srcBaseName
  */
 async function processSrc(srcBaseName) {
-    const dstYamlFileName = srcBaseName.replace('.txt', '.yaml');
-    const dstYamlFile = new URL(dstYamlFileName, targetDir);
-    const srcYamlFile = new URL(dstYamlFileName, srcDir);
+    const yamlFileName = srcBaseName.replace('.txt', '.yaml');
+    const jsonFileName = srcBaseName.replace('.txt', '.json');
+    const dstJsonFile = new URL(jsonFileName, targetDir);
+    const srcYamlFile = new URL(yamlFileName, srcDir);
 
     /** @type {Map<string, Entry>} */
     const entriesSug = new Map();
@@ -138,7 +139,7 @@ async function processSrc(srcBaseName) {
         }
     }
 
-    await fs.writeFile(dstYamlFile, doc.toString(), 'utf8');
+    await fs.writeFile(dstJsonFile, JSON.stringify(doc.toJS(), null, 1), 'utf8');
 }
 
 async function run() {
