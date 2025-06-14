@@ -1,5 +1,12 @@
 # Change Log
 
+## [2.1.1](https://github.com/streetsidesoftware/cspell-dicts/compare/@cspell/dict-en-common-misspellings@2.1.0...@cspell/dict-en-common-misspellings@2.1.1) (2025-06-14)
+
+
+### Updates and Bug Fixes
+
+* Convert YAML to JSON for speed. ([#4545](https://github.com/streetsidesoftware/cspell-dicts/issues/4545)) ([d12dfe6](https://github.com/streetsidesoftware/cspell-dicts/commit/d12dfe65ece54a1508533c3aed44ceb6e79af4da))
+
 ## [2.1.0](https://github.com/streetsidesoftware/cspell-dicts/compare/@cspell/dict-en-common-misspellings@2.0.12...@cspell/dict-en-common-misspellings@2.1.0) (2025-06-11)
 
 

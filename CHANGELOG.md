@@ -1,5 +1,19 @@
 # Release Notes
 
+## [31.3.1](https://github.com/streetsidesoftware/cspell-dicts/compare/cspell-dicts@31.3.0...cspell-dicts@31.3.1) (2025-06-14)
+
+
+### Updates and Bug Fixes
+
+* Convert YAML to JSON for speed. ([#4545](https://github.com/streetsidesoftware/cspell-dicts/issues/4545)) ([d12dfe6](https://github.com/streetsidesoftware/cspell-dicts/commit/d12dfe65ece54a1508533c3aed44ceb6e79af4da))
+
+
+### Dependencies
+
+* The following workspace dependencies were updated
+  * devDependencies
+    * @cspell/dict-cspell-bundle bumped to 2.0.7
+
 ## [31.3.0](https://github.com/streetsidesoftware/cspell-dicts/compare/cspell-dicts@31.2.1...cspell-dicts@31.3.0) (2025-06-11)
 
 
