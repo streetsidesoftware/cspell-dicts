@@ -1,5 +1,22 @@
 # Release Notes
 
+## [31.3.2](https://github.com/streetsidesoftware/cspell-dicts/compare/cspell-dicts@31.3.1...cspell-dicts@31.3.2) (2025-06-23)
+
+
+### Updates and Bug Fixes
+
+* add 'conventionalcommits' ([#4557](https://github.com/streetsidesoftware/cspell-dicts/issues/4557)) ([758d091](https://github.com/streetsidesoftware/cspell-dicts/commit/758d091fdc146a5094974eba696d9f3f07491a85))
+* add `mercurius` ([#4558](https://github.com/streetsidesoftware/cspell-dicts/issues/4558)) ([df6ec48](https://github.com/streetsidesoftware/cspell-dicts/commit/df6ec4892e45fd959321aacd54afa5fdfd0e9972))
+* Workflow Bot -- Build Dictionaries ([#4549](https://github.com/streetsidesoftware/cspell-dicts/issues/4549)) ([b91ccb8](https://github.com/streetsidesoftware/cspell-dicts/commit/b91ccb8e0ad792355214be16e1bb4443c641242f))
+* Workflow Bot -- Update Dictionaries ([#4561](https://github.com/streetsidesoftware/cspell-dicts/issues/4561)) ([487e3a8](https://github.com/streetsidesoftware/cspell-dicts/commit/487e3a80c82ead6baa9e5cac274e8c1a267c5671))
+
+
+### Dependencies
+
+* The following workspace dependencies were updated
+  * devDependencies
+    * @cspell/dict-cspell-bundle bumped to 2.0.8
+
 ## [31.3.1](https://github.com/streetsidesoftware/cspell-dicts/compare/cspell-dicts@31.3.0...cspell-dicts@31.3.1) (2025-06-14)
 
 
