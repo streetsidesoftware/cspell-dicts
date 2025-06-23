@@ -21,7 +21,6 @@ this dictionary. The idea here is to include names from all kinds of backgrounds
 
   Exceptions:
   Names that were once common, but have become slang
-
   - `Dick` is allowed because it is a common derivate of `Richard`.
   - `Fanny` is allowed because it is a common derivate of `Frances`.
 
