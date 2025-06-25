@@ -17,6 +17,8 @@ Please feel free to contribute to this project.
 - For general-purpose words, put them in the closest appropriate `dictionaries/<general-area>`(s).
 - See the `README.md` files in those directories for more information.
 
+<!-- cspell:locale en,en-GB,en-AU -->
+
 ## Word Formatting Guidelines
 
 When adding words to dictionaries, please follow these formatting guidelines to maintain consistency:
