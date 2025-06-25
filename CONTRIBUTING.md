@@ -71,7 +71,7 @@ Bondi Beach
 - **Spelling variants**: Use the spelling appropriate for the regional dictionary
   - For `en_AU` and `en_GB`: Use -ise endings (e.g., `organise`)
   - For `en_US`: Use -ize endings (e.g., `organize`)
-  
-<!-- 
-  cspell:words Bondi brekkie CSIRO Uluru  
+
+<!--
+  cspell:words Bondi brekkie CSIRO Uluru
 -->
