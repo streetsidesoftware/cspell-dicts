@@ -12,7 +12,7 @@ import { fetchContributors, normalizeContributors, sortContributorsByLogin } fro
  * @typedef {Contributors[0]} Contributor
  */
 
-const token = process.argv[2] || (await getToken());
+const token = process.argv[2] || process.env['GITHUB_TOKEN'] || (await getToken());
 
 const contributorsFileUrl = new URL('../static/contributors.json', import.meta.url);
 const outputFileUrl = new URL('../static/contributors.md', import.meta.url);

@@ -25,44 +25,24 @@ inputs:
 runs:
   using: 'composite'
   steps:
-    - name: Has changes
-      shell: bash
-      run: |
-        git --no-pager diff --compact-summary  --exit-code && echo "git_status=clean" >> $GITHUB_ENV || echo "git_status=dirty" >> $GITHUB_ENV
-        git --no-pager diff --compact-summary
-    - name: Gen Body
-      shell: bash
-      env:
-        BODY: ${{ inputs.body }}
-      run: |
-        echo 'git_body<<DIFF' >> $GITHUB_ENV
-        echo "$BODY" >> $GITHUB_ENV
-        git --no-pager diff --compact-summary >> $GITHUB_ENV
-        echo 'DIFF' >> $GITHUB_ENV
-    - name: Echo git_status
-      shell: bash
-      run: echo "${{ env.git_status }}"
+    - name: Check for changes
+      id: is-dirty
+      uses: streetsidesoftware/actions/public/dirty@v1
 
-    - name: Body
-      shell: bash
-      run: |
-        echo "$git_body"
-
-    - uses: ./.github/actions/github-app-token
-      if: env.git_status == 'dirty'
-      id: generate-token
+    - name: PR Body
+      id: body
+      uses: streetsidesoftware/actions/public/pr-body@v1
       with:
-        app_id: ${{ inputs.app_id }}
-        app_private_key: ${{ inputs.app_private_key }}
+        title: ${{ inputs.title || inputs.commit-message }}
+        message: ${{ inputs.body || '' }}
 
-    - name: Create Pull Request
-      if: env.git_status == 'dirty'
-      uses: peter-evans/create-pull-request@271a8d0340265f705b14b6d32b9829c1cb33d45e # v7.0.8
+    - name: PR
+      uses: streetsidesoftware/actions/.github/actions/pr@v1
       with:
         commit-message: ${{ inputs.commit-message }}
+        title: ${{ steps.body.outputs.title }}
         branch: ${{ inputs.branch }}
-        base: ${{ inputs.base }}
-        title: ${{ inputs.title || inputs.commit-message }}
-        token: ${{ steps.generate-token.outputs.token }}
-        body: ${{ env.git_body }}
-        delete-branch: true
+        base: ${{ inputs.base || 'main' }}
+        body: ${{ steps.body.outputs.body }}
+        app_id: ${{ inputs.app_id }}
+        app_private_key: ${{ inputs.app_private_key }}
