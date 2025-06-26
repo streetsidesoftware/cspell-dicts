@@ -1,5 +1,12 @@
 # Changelog
 
+## [1.0.3](https://github.com/streetsidesoftware/cspell-dicts/compare/@cspell/aoo-mozilla-en-dict@1.0.2...@cspell/aoo-mozilla-en-dict@1.0.3) (2025-06-26)
+
+
+### Documentation
+
+* add information about aoo-mozilla-en licenses ([#4583](https://github.com/streetsidesoftware/cspell-dicts/issues/4583)) ([088f6e1](https://github.com/streetsidesoftware/cspell-dicts/commit/088f6e1c36e8b1d54ebe89c051d4a4e6089cbe17))
+
 ## [1.0.2](https://github.com/streetsidesoftware/cspell-dicts/compare/@cspell/aoo-mozilla-en-dict@1.0.1...@cspell/aoo-mozilla-en-dict@1.0.2) (2025-05-20)
 
 

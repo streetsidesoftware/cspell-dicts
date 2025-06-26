@@ -3,6 +3,15 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+## [5.0.7](https://github.com/streetsidesoftware/cspell-dicts/compare/@cspell/dict-en-gb@5.0.6...@cspell/dict-en-gb@5.0.7) (2025-06-26)
+
+
+### Dependencies
+
+* The following workspace dependencies were updated
+  * devDependencies
+    * @cspell/aoo-mozilla-en-dict bumped to 1.0.3
+
 ## [5.0.6](https://github.com/streetsidesoftware/cspell-dicts/compare/@cspell/dict-en-gb@5.0.5...@cspell/dict-en-gb@5.0.6) (2025-06-10)
 
 

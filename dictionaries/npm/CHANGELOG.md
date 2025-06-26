@@ -3,6 +3,13 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+## [5.2.8](https://github.com/streetsidesoftware/cspell-dicts/compare/@cspell/dict-npm@5.2.7...@cspell/dict-npm@5.2.8) (2025-06-26)
+
+
+### Updates and Bug Fixes
+
+* add `borp` ([#4580](https://github.com/streetsidesoftware/cspell-dicts/issues/4580)) ([d4a02c5](https://github.com/streetsidesoftware/cspell-dicts/commit/d4a02c53ca253cbb744429b162fc4865744ca701))
+
 ## [5.2.7](https://github.com/streetsidesoftware/cspell-dicts/compare/@cspell/dict-npm@5.2.6...@cspell/dict-npm@5.2.7) (2025-06-23)
 
 

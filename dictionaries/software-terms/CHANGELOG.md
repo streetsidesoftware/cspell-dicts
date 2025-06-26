@@ -3,6 +3,14 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+## [5.1.2](https://github.com/streetsidesoftware/cspell-dicts/compare/@cspell/dict-software-terms@5.1.1...@cspell/dict-software-terms@5.1.2) (2025-06-26)
+
+
+### Updates and Bug Fixes
+
+* add 'mdast' ([#4585](https://github.com/streetsidesoftware/cspell-dicts/issues/4585)) ([c1472b3](https://github.com/streetsidesoftware/cspell-dicts/commit/c1472b324249a34026441a22263e7bffd4a021be))
+* Workflow Bot -- Build Dictionaries ([#4586](https://github.com/streetsidesoftware/cspell-dicts/issues/4586)) ([c7deced](https://github.com/streetsidesoftware/cspell-dicts/commit/c7deced68417d00fb325ed190494f7297f62f661))
+
 ## [5.1.1](https://github.com/streetsidesoftware/cspell-dicts/compare/@cspell/dict-software-terms@5.1.0...@cspell/dict-software-terms@5.1.1) (2025-06-23)
 
 

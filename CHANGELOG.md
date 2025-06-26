@@ -1,5 +1,33 @@
 # Release Notes
 
+## [31.4.0](https://github.com/streetsidesoftware/cspell-dicts/compare/cspell-dicts@31.3.2...cspell-dicts@31.4.0) (2025-06-26)
+
+
+### Features
+
+* **en_AU:** Add 83 Australian-specific words to dictionary ([#4573](https://github.com/streetsidesoftware/cspell-dicts/issues/4573)) ([6103ed1](https://github.com/streetsidesoftware/cspell-dicts/commit/6103ed1fdcaaf9f5a6ee530960488c2c8521a766))
+
+
+### Updates and Bug Fixes
+
+* add 'mdast' ([#4585](https://github.com/streetsidesoftware/cspell-dicts/issues/4585)) ([c1472b3](https://github.com/streetsidesoftware/cspell-dicts/commit/c1472b324249a34026441a22263e7bffd4a021be))
+* add `borp` ([#4580](https://github.com/streetsidesoftware/cspell-dicts/issues/4580)) ([d4a02c5](https://github.com/streetsidesoftware/cspell-dicts/commit/d4a02c53ca253cbb744429b162fc4865744ca701))
+* Workflow Bot -- Build Dictionaries ([#4576](https://github.com/streetsidesoftware/cspell-dicts/issues/4576)) ([7679f4a](https://github.com/streetsidesoftware/cspell-dicts/commit/7679f4abc90b9897c14f0be2940e4ba0c13ed3ce))
+* Workflow Bot -- Build Dictionaries ([#4586](https://github.com/streetsidesoftware/cspell-dicts/issues/4586)) ([c7deced](https://github.com/streetsidesoftware/cspell-dicts/commit/c7deced68417d00fb325ed190494f7297f62f661))
+
+
+### Documentation
+
+* add information about aoo-mozilla-en licenses ([#4583](https://github.com/streetsidesoftware/cspell-dicts/issues/4583)) ([088f6e1](https://github.com/streetsidesoftware/cspell-dicts/commit/088f6e1c36e8b1d54ebe89c051d4a4e6089cbe17))
+* Add word formatting guidelines to CONTRIBUTING.md ([#4574](https://github.com/streetsidesoftware/cspell-dicts/issues/4574)) ([f2dfc7f](https://github.com/streetsidesoftware/cspell-dicts/commit/f2dfc7fee9fcf7dc7ddc9abe54fb58d52dae0197))
+
+
+### Dependencies
+
+* The following workspace dependencies were updated
+  * devDependencies
+    * @cspell/dict-cspell-bundle bumped to 2.0.9
+
 ## [31.3.2](https://github.com/streetsidesoftware/cspell-dicts/compare/cspell-dicts@31.3.1...cspell-dicts@31.3.2) (2025-06-23)
 
 

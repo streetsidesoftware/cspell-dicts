@@ -1,5 +1,24 @@
 # Changelog
 
+## [1.1.0](https://github.com/streetsidesoftware/cspell-dicts/compare/@cspell/dict-en-au@1.0.37...@cspell/dict-en-au@1.1.0) (2025-06-26)
+
+
+### Features
+
+* **en_AU:** Add 83 Australian-specific words to dictionary ([#4573](https://github.com/streetsidesoftware/cspell-dicts/issues/4573)) ([6103ed1](https://github.com/streetsidesoftware/cspell-dicts/commit/6103ed1fdcaaf9f5a6ee530960488c2c8521a766))
+
+
+### Updates and Bug Fixes
+
+* Workflow Bot -- Build Dictionaries ([#4576](https://github.com/streetsidesoftware/cspell-dicts/issues/4576)) ([7679f4a](https://github.com/streetsidesoftware/cspell-dicts/commit/7679f4abc90b9897c14f0be2940e4ba0c13ed3ce))
+
+
+### Dependencies
+
+* The following workspace dependencies were updated
+  * devDependencies
+    * @cspell/aoo-mozilla-en-dict bumped to 1.0.3
+
 ## [1.0.37](https://github.com/streetsidesoftware/cspell-dicts/compare/@cspell/dict-en-au@1.0.36...@cspell/dict-en-au@1.0.37) (2025-06-10)
 
 
