@@ -45,11 +45,3 @@ updates:
       interval: daily
     commit-message:
       prefix: ci
-
-  # Automatically added by streetsidesoftware/public/update-dependabot-github-actions
-  - package-ecosystem: github-actions
-    directory: /.github/actions/github-app-token
-    schedule:
-      interval: daily
-    commit-message:
-      prefix: ci
