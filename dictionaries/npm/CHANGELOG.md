@@ -3,6 +3,14 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+## [5.2.9](https://github.com/streetsidesoftware/cspell-dicts/compare/@cspell/dict-npm@5.2.8...@cspell/dict-npm@5.2.9) (2025-06-30)
+
+
+### Updates and Bug Fixes
+
+* add `pagefind` ([#4592](https://github.com/streetsidesoftware/cspell-dicts/issues/4592)) ([e186217](https://github.com/streetsidesoftware/cspell-dicts/commit/e186217c7f0a344bc6bbd907dc7dab689ce1c5d2))
+* Workflow Bot -- Update Dictionaries ([#4595](https://github.com/streetsidesoftware/cspell-dicts/issues/4595)) ([7f43ad1](https://github.com/streetsidesoftware/cspell-dicts/commit/7f43ad1cc438580b897cfd0a6b2338a9b9d464f3))
+
 ## [5.2.8](https://github.com/streetsidesoftware/cspell-dicts/compare/@cspell/dict-npm@5.2.7...@cspell/dict-npm@5.2.8) (2025-06-26)
 
 

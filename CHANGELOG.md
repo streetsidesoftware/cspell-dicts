@@ -1,5 +1,20 @@
 # Release Notes
 
+## [31.4.1](https://github.com/streetsidesoftware/cspell-dicts/compare/cspell-dicts@31.4.0...cspell-dicts@31.4.1) (2025-06-30)
+
+
+### Updates and Bug Fixes
+
+* add `pagefind` ([#4592](https://github.com/streetsidesoftware/cspell-dicts/issues/4592)) ([e186217](https://github.com/streetsidesoftware/cspell-dicts/commit/e186217c7f0a344bc6bbd907dc7dab689ce1c5d2))
+* Workflow Bot -- Update Dictionaries ([#4595](https://github.com/streetsidesoftware/cspell-dicts/issues/4595)) ([7f43ad1](https://github.com/streetsidesoftware/cspell-dicts/commit/7f43ad1cc438580b897cfd0a6b2338a9b9d464f3))
+
+
+### Dependencies
+
+* The following workspace dependencies were updated
+  * devDependencies
+    * @cspell/dict-cspell-bundle bumped to 2.0.10
+
 ## [31.4.0](https://github.com/streetsidesoftware/cspell-dicts/compare/cspell-dicts@31.3.2...cspell-dicts@31.4.0) (2025-06-26)
 
 
