@@ -1,5 +1,12 @@
 # Change Log
 
+## [1.0.36](https://github.com/streetsidesoftware/cspell-dicts/compare/@cspell/dict-en-shared@1.0.35...@cspell/dict-en-shared@1.0.36) (2025-07-01)
+
+
+### Updates and Bug Fixes
+
+* add Australian animals names to en_shared ([#4581](https://github.com/streetsidesoftware/cspell-dicts/issues/4581)) ([aec1a8e](https://github.com/streetsidesoftware/cspell-dicts/commit/aec1a8e26d85fa5f117052bbcd2af8066079c24e))
+
 ## [1.0.35](https://github.com/streetsidesoftware/cspell-dicts/compare/@cspell/dict-en-shared@1.0.34...@cspell/dict-en-shared@1.0.35) (2025-06-10)
 
 
