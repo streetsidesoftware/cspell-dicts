@@ -1,5 +1,20 @@
 # Release Notes
 
+## [31.4.2](https://github.com/streetsidesoftware/cspell-dicts/compare/cspell-dicts@31.4.1...cspell-dicts@31.4.2) (2025-07-01)
+
+
+### Updates and Bug Fixes
+
+* add Australian animals names to en_shared ([#4581](https://github.com/streetsidesoftware/cspell-dicts/issues/4581)) ([aec1a8e](https://github.com/streetsidesoftware/cspell-dicts/commit/aec1a8e26d85fa5f117052bbcd2af8066079c24e))
+* Workflow Bot -- Build Dictionaries ([#4599](https://github.com/streetsidesoftware/cspell-dicts/issues/4599)) ([a273cbc](https://github.com/streetsidesoftware/cspell-dicts/commit/a273cbca8dfc04a9635fe701f2184d56c170eb1d))
+
+
+### Dependencies
+
+* The following workspace dependencies were updated
+  * devDependencies
+    * @cspell/dict-cspell-bundle bumped to 2.0.11
+
 ## [31.4.1](https://github.com/streetsidesoftware/cspell-dicts/compare/cspell-dicts@31.4.0...cspell-dicts@31.4.1) (2025-06-30)
 
 

@@ -1,5 +1,20 @@
 # Changelog
 
+## [1.0.8](https://github.com/streetsidesoftware/cspell-dicts/compare/@cspell/dict-en-gb-legacy@1.0.7...@cspell/dict-en-gb-legacy@1.0.8) (2025-07-01)
+
+
+### Updates and Bug Fixes
+
+* Workflow Bot -- Build Dictionaries ([#4599](https://github.com/streetsidesoftware/cspell-dicts/issues/4599)) ([a273cbc](https://github.com/streetsidesoftware/cspell-dicts/commit/a273cbca8dfc04a9635fe701f2184d56c170eb1d))
+
+
+### Dependencies
+
+* The following workspace dependencies were updated
+  * devDependencies
+    * @cspell/dict-en-shared bumped to 1.0.36
+    * @cspell/aoo-mozilla-en-dict bumped to 1.0.4
+
 ## [1.0.7](https://github.com/streetsidesoftware/cspell-dicts/compare/@cspell/dict-en-gb-legacy@1.0.6...@cspell/dict-en-gb-legacy@1.0.7) (2025-06-26)
 
 
