@@ -21,10 +21,10 @@
 #
 # Dictionary Information:
 # English variant: British
-#         Version: 4.0.1, 2025-04-01
+#         Version: 4.0.2, 2025-07-01
 #        Encoding: UTF-8-BOM Unix (LF)
-#       -ise/-ize: -ise
-#        Comments: For specific -ise/-ize variants, some verbs, and words may be missing or incorrectly included.
+#       -ise/-ize: Both
+#        Comments: For specific -ise/-ize variants, some verbs, and words MAY be missing or incorrectly included.
 #
 # Maintainer: Marco A.G.Pinto
 #   Homepage: https://proofingtoolgui.org
@@ -505,18 +505,18 @@ SFX d Y 16
 SFX d 0 d e 
 SFX d 0 ed [^aeiou][cl] 
 SFX d 0 ed [^ecly] 
-SFX d 0 ed [aeio][aeiou][cl] 
+SFX d 0 ed [aeimo][aeiou][cl] 
 SFX d 0 ed [aeiou]y 
 SFX d y ied [^aeiou]y 
 SFX d 0 ing [^aeiou][cl] 
 SFX d 0 ing [^ecl] 
 SFX d e ing [^eioy]e 
-SFX d 0 ing [aeio][aeiou][cl] 
+SFX d 0 ing [aeimo][aeiou][cl] 
 SFX d 0 ing [eoy]e 
 SFX d 0 ked [^aeio][aeiou]c 
 SFX d 0 king [^aeio][aeiou]c 
-SFX d 0 led [^aeio][aeiou]l 
-SFX d 0 ling [^aeio][aeiou]l 
+SFX d 0 led [^aeimo][aeiou]l 
+SFX d 0 ling [^aemio][aeiou]l 
 SFX d ie ying ie 
 SFX h Y 22
 SFX h 0 bedly [^aeio][aeiou]b 
@@ -1372,7 +1372,7 @@ SFX o 0 ually [px]t
 SFX W Y 27
 SFX W e atic [^cx][aeioumy]me 
 SFX W 0 atic [aeiou]m 
-SFX W 0 c [bdghlmnsz]i 
+SFX W 0 c [bdghlmnstz]i 
 SFX W a c [i]a 
 SFX W e c [o][l][i]e 
 SFX W y etic thy 
