@@ -1,5 +1,12 @@
 # Change Log
 
+## [1.1.2](https://github.com/streetsidesoftware/cspell-dicts/compare/@cspell/dict-terraform@1.1.1...@cspell/dict-terraform@1.1.2) (2025-07-04)
+
+
+### Updates and Bug Fixes
+
+* [terraform] Add missing Terraform related terms ([#4609](https://github.com/streetsidesoftware/cspell-dicts/issues/4609)) ([a1bc3d3](https://github.com/streetsidesoftware/cspell-dicts/commit/a1bc3d32d476c0f07daa37abc8ad8eb0e2657ec6))
+
 ## [1.1.1](https://github.com/streetsidesoftware/cspell-dicts/compare/@cspell/dict-terraform@1.1.0...@cspell/dict-terraform@1.1.1) (2025-03-02)
 
 

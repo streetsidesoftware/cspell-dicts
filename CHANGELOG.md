@@ -1,5 +1,19 @@
 # Release Notes
 
+## [31.4.4](https://github.com/streetsidesoftware/cspell-dicts/compare/cspell-dicts@31.4.3...cspell-dicts@31.4.4) (2025-07-04)
+
+
+### Updates and Bug Fixes
+
+* [terraform] Add missing Terraform related terms ([#4609](https://github.com/streetsidesoftware/cspell-dicts/issues/4609)) ([a1bc3d3](https://github.com/streetsidesoftware/cspell-dicts/commit/a1bc3d32d476c0f07daa37abc8ad8eb0e2657ec6))
+
+
+### Dependencies
+
+* The following workspace dependencies were updated
+  * devDependencies
+    * @cspell/dict-cspell-bundle bumped to 2.0.12
+
 ## [31.4.3](https://github.com/streetsidesoftware/cspell-dicts/compare/cspell-dicts@31.4.2...cspell-dicts@31.4.3) (2025-07-03)
 
 
