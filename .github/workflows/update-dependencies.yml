@@ -33,7 +33,12 @@ jobs:
           ref: ${{ env.REF_BRANCH }}
 
       - name: Setup
-        uses: ./.github/actions/setup
+        uses: ./.github/actions/quick-setup
+
+      - name: Install
+        run: |
+          pnpm i --fix-lockfile --frozen-lockfile=false
+          pnpm run setup
 
       - name: Update
         run: |
