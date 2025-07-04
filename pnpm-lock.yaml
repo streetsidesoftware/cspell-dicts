@@ -63,8 +63,8 @@ importers:
         specifier: ^9.1.2
         version: 9.1.2
       inject-markdown:
-        specifier: ^4.0.0
-        version: 4.0.0
+        specifier: ^3.1.4
+        version: 3.1.4
       json5:
         specifier: 2.2.3
         version: 2.2.3
@@ -2032,6 +2032,10 @@ packages:
     resolution: {integrity: sha512-yPVavfyCcRhmorC7rWlkHn15b4wDVgVmBA7kV4QVBsF7kv/9TKJAbAXVTxvTnwP8HHKjRCJDClKbciiYS7p0DQ==}
     engines: {node: '>=16'}
 
+  commander@12.1.0:
+    resolution: {integrity: sha512-Vw8qHK3bZM9y/P10u3Vib8o/DdkvA2OtPtZvD871QKjy74Wj1WSKFILMPRPSdUSx5RFK1arlJzEtA4PkFgnbuA==}
+    engines: {node: '>=18'}
+
   commander@14.0.0:
     resolution: {integrity: sha512-2uM9rYjPvyq39NwLRqaiLtWHyDC1FvryJDa2ATTVims5YAS4PupsEQsDvP14FqhFr0P49CYDugi59xaxJlTXRA==}
     engines: {node: '>=20'}
@@ -2858,9 +2862,9 @@ packages:
     resolution: {integrity: sha512-+N0ngpO3e7cRUWOJAS7qw0IZIVc6XPrW4MlFBdD066F2L4k1L6ker3hLqSq7iXxU5tgS4WGkIUElWn5vogAEnw==}
     engines: {node: ^18.17.0 || >=20.5.0}
 
-  inject-markdown@4.0.0:
-    resolution: {integrity: sha512-22LnlffSjyDEXWkjHIKLJcLFQXV7CVf/QC58rRkVROQNml7M1MW0L8wfmpQyp8YxgtOOBVDk06ki9n7QeeB4bg==}
-    engines: {node: '>=20'}
+  inject-markdown@3.1.4:
+    resolution: {integrity: sha512-PKn0pdzF283r5HQI0czE51dozVw3dui5v9Et5cSBFezgMnbsq+J74y1hlAPcgNvws9yt+QIUspY39LT2FHDqlg==}
+    engines: {node: '>=18'}
     hasBin: true
 
   inquirer@9.3.7:
@@ -6282,6 +6286,8 @@ snapshots:
 
   commander@11.1.0: {}
 
+  commander@12.1.0: {}
+
   commander@14.0.0: {}
 
   comment-json@4.2.5:
@@ -7160,10 +7166,10 @@ snapshots:
 
   ini@5.0.0: {}
 
-  inject-markdown@4.0.0:
+  inject-markdown@3.1.4:
     dependencies:
       chalk: 5.4.1
-      commander: 14.0.0
+      commander: 12.1.0
       globby: 14.1.0
       node-fetch: 3.3.2
       remark: 15.0.1
