@@ -30,6 +30,14 @@ See [Conventional Commits](https://conventionalcommits.org) for commit guideline
 
 
 
+## [3.0.4](https://github.com/streetsidesoftware/cspell-dicts/compare/@cspell/dict-es-es@3.0.3...@cspell/dict-es-es@3.0.4) (2025-07-06)
+
+
+### Updates and Bug Fixes
+
+* [es] Add missing Spanish terms ([#4622](https://github.com/streetsidesoftware/cspell-dicts/issues/4622)) ([f5b262f](https://github.com/streetsidesoftware/cspell-dicts/commit/f5b262f8c903417273ba05a413f5453244127860))
+* Workflow Bot -- Build Dictionaries ([#4626](https://github.com/streetsidesoftware/cspell-dicts/issues/4626)) ([8ad67e9](https://github.com/streetsidesoftware/cspell-dicts/commit/8ad67e97f5b0c44a58d5699eb3c11921b0de9d44))
+
 ## [3.0.3](https://github.com/streetsidesoftware/cspell-dicts/compare/@cspell/dict-es-es@3.0.2...@cspell/dict-es-es@3.0.3) (2024-10-11)
 
 
