@@ -1,5 +1,19 @@
 # Release Notes
 
+## [31.4.7](https://github.com/streetsidesoftware/cspell-dicts/compare/cspell-dicts@31.4.6...cspell-dicts@31.4.7) (2025-07-07)
+
+
+### Updates and Bug Fixes
+
+* [software-tools] Added IaC tools ([#4627](https://github.com/streetsidesoftware/cspell-dicts/issues/4627)) ([4ee9981](https://github.com/streetsidesoftware/cspell-dicts/commit/4ee9981b0c663785ddc5fbde12f4ccb065411763))
+
+
+### Dependencies
+
+* The following workspace dependencies were updated
+  * devDependencies
+    * @cspell/dict-cspell-bundle bumped to 2.0.15
+
 ## [31.4.6](https://github.com/streetsidesoftware/cspell-dicts/compare/cspell-dicts@31.4.5...cspell-dicts@31.4.6) (2025-07-06)
 
 
