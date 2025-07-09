@@ -4,23 +4,11 @@ Dictionaries included with the CSpell Command Line tool.
 
 This is a pre-built dictionary for use with CSpell.
 
-## Manual Installation
+<!--- @@inject: ../../static/requirements.md --->
 
-Manual installation is useful if you want to include this dictionary as part of your CI/CD lint process.
+<!--- @@inject: ./static/install.md --->
 
-```sh
-npm i -D @cspell/dict-cspell-bundle
-```
-
-The `cspell-ext.json` file in this package should be added to the import section in your `cspell.json` file.
-
-```jsonc
-{
-  // …
-  "import": ["@cspell/dict-cspell-bundle/cspell-ext.json"],
-  // …
-}
-```
+<!--- @@inject: ../../static/contributing.md --->
 
 ## License
 

@@ -30,7 +30,7 @@ When adding words to dictionaries, please follow these formatting guidelines to 
 - **Brand names and trademarked terms**: Use the official capitalization
   - Examples: `Vegemite`, `TimTam`, `Milo`, `ANZAC` (when referring to the biscuit)
 - **Common nouns and general terms**: Use lowercase
-  - Examples: `kangaroo`, `barbie`, `arvo`, `lamington`
+  - Examples: `kangaroo`, `carrot`, `placement`
 - **Acronyms and initialisms**: Use standard capitalization
   - Examples: `NSW`, `AFL`, `CSIRO`
 

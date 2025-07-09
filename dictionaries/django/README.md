@@ -4,39 +4,11 @@ Django dictionary for cspell.
 
 This is a pre-built dictionary for use with cspell.
 
-## Requirements
+<!--- @@inject: ../../static/requirements.md --->
 
-| Tool                                                                                                                                 | Version |
-| ------------------------------------------------------------------------------------------------------------------------------------ | ------- |
-| [cspell](https://github.com/streetsidesoftware/cspell)                                                                               | `>= 6`  |
-| [Code Spell Checker - Visual Studio Code](https://marketplace.visualstudio.com/items?itemName=streetsidesoftware.code-spell-checker) | `>= 2`  |
+<!--- @@inject: ./static/install.md --->
 
-## Installation
-
-Global Install and add to cspell global settings.
-
-```sh
-npm install -g @cspell/dict-django
-cspell link add @cspell/dict-django
-```
-
-## Uninstall from cspell
-
-```sh
-cspell link remove @cspell/dict-django
-```
-
-## Manual Installation
-
-The `cspell-ext.json` file in this package should be added to the import section in your cspell.json file.
-
-```javascript
-{
-    // …
-    "import": ["@cspell/dict-django/cspell-ext.json"],
-    // …
-}
-```
+<!--- @@inject: ../../static/contributing.md --->
 
 ## Updating
 
@@ -48,14 +20,8 @@ pip install -r requirements.txt
 python update.py
 ```
 
-## Building
-
-Building is only necessary if you want to modify the contents of the dictionary. Note: Building will take a few minutes for large files.
-
-```sh
-npm run build
-```
-
 ## License
 
 WTFPL
+
+<!--- @@inject: ../../static/footer.md --->

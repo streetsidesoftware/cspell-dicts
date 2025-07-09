@@ -4,40 +4,11 @@ German dictionary for cspell.
 
 This is a pre-built dictionary for use with cspell.
 
-## Installation
+<!--- @@inject: ../../static/requirements.md --->
 
-Global Install and add to cspell global settings.
+<!--- @@inject: ./static/install.md --->
 
-```sh
-npm install -g @cspell/dict-de-de
-cspell link add @cspell/dict-de-de
-```
-
-## Uninstall from cspell
-
-```sh
-cspell link remove @cspell/dict-de-de
-```
-
-## Manual Installation
-
-The `cspell-ext.json` file in this package should be added to the import section in your cspell.json file.
-
-```javascript
-{
-    // …
-    "import": ["@cspell/dict-de-de/cspell-ext.json"],
-    // …
-}
-```
-
-## Building
-
-Building is only necessary if you want to modify the contents of the dictionary. Note: Building will take a few minutes for large files.
-
-```sh
-npm run build
-```
+<!--- @@inject: ../../static/contributing.md --->
 
 ## Resources
 
@@ -51,3 +22,5 @@ LGPL-3.0
 
 > Some packages may have other licenses included.
 > See [src/hunspell/license](https://github.com/streetsidesoftware/cspell-dicts/blob/main/dictionaries/de_DE/src/hunspell/license) and [src/German_de_DE.txt](https://github.com/streetsidesoftware/cspell-dicts/blob/main/dictionaries/de_DE/src/German_de_DE.txt)
+
+<!--- @@inject: ../../static/footer.md --->
