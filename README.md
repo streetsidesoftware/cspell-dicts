@@ -430,7 +430,7 @@ Various [cspell](https://github.com/streetsidesoftware/cspell) dictionaries. Eac
 | [`web-services`](dictionaries/software-terms) <sup>1</sup> <sup>2</sup>              | Web Services and APIs dictionary.                                   | -                             | -                                                              |
 | [`win32`](dictionaries/win32)                                                        | Win32 dictionary.                                                   | -                             | c<br>cpp                                                       |
 
-<sup>1</sup> Bundled with CSpell.<br><sup>2</sup> Dictionaries are enabled when packages is imported.
+<sup>1</sup> Bundled with CSpell.<br> <sup>2</sup> Dictionaries are enabled when packages is imported.
 
 <!--- @@inject-end: static/dictionary-packages.md --->
 
