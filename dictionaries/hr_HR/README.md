@@ -135,6 +135,8 @@ See: [How to Create a New Dictionary](https://github.com/streetsidesoftware/cspe
 
 The Hunspell source for this dictionary can be found: [krunose/hunspell-hr](https://github.com/krunose/hunspell-hr)
 
+<!--- cspell:ignore krunose --->
+
 ## License
 
 MIT

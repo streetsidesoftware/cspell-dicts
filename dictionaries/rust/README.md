@@ -93,6 +93,9 @@ Keywords are taken from the repository
 
 [rust-lang/gedit-config](https://github.com/rust-lang/gedit-config)
 
+<!--- cspell:ignore gedit-config --->
+
+
 <!--- @@inject: ../../static/footer.md --->
 
 <br/>

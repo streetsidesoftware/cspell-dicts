@@ -138,6 +138,8 @@ The Hunspell source for this dictionary can be found in several repositories:
 - [titoBouzout/Dictionaries](https://github.com/titoBouzout/Dictionaries)
 - [dictionaries/pl_PL](https://github.com/wooorm/dictionaries/tree/master/dictionaries/pl_PL)
 
+<!--- cspell:ignore titoBouzout --->
+
 ## License
 
 LGPL-3.0+

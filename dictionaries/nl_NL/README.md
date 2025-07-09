@@ -144,6 +144,8 @@ The Hunspell source for this dictionary can be found:
 
 - [titoBouzout/Dictionaries](https://github.com/titoBouzout/Dictionaries)
 
+<!--- cspell:ignore titoBouzout --->
+
 <!--- @@inject: ../../static/footer.md --->
 
 <br/>

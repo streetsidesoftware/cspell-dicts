@@ -137,6 +137,8 @@ The Hunspell source for this dictionary can be found:
 
 - [b00f/lilak](https://github.com/b00f/lilak)
 
+<!--- cspell:ignore lilak --->
+
 ## License
 
 Apache 2.0
