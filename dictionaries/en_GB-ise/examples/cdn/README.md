@@ -1,6 +1,7 @@
 # VSCode: Using `@cspell/dict-en-gb-ise` via CDN
 
 `.vscode/settings.json`
+
 ```json
 {
   "cSpell.language": "en-gb",
