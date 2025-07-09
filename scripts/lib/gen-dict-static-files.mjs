@@ -37,46 +37,45 @@ export async function writeStaticFilesForPackage(pkgInfo) {
 
     await fs.mkdir(pkgStaticDirUrl, { recursive: true });
 
-    const codeVSCode = vscodeSettingsToCdn(pkgInfo);
-    const codeJson = settingsJsonToCdn(pkgInfo);
-    const codeYaml = settingsYamlToCdn(pkgInfo);
+    const codeVSCode = vscodeSettingsToCdn(pkgInfo, true);
+    const codeJson = toSettingsJson(pkgInfo, true);
+    const codeYaml = toSettingsYaml(pkgInfo, true);
 
     await fs.writeFile(new URL('vscode-settings.json', pkgStaticDirUrl), codeVSCode, 'utf8');
     await fs.writeFile(new URL('example.cspell.json', pkgStaticDirUrl), codeJson, 'utf8');
     await fs.writeFile(new URL('example.cspell.config.yaml', pkgStaticDirUrl), codeYaml, 'utf8');
-    await fs.writeFile(
-        new URL('install.md', pkgStaticDirUrl),
-        toInstallMarkdown(pkgInfo, codeVSCode, codeJson, codeYaml),
-        'utf8',
-    );
+    await fs.writeFile(new URL('install.md', pkgStaticDirUrl), toInstallMarkdown(pkgInfo), 'utf8');
 }
 
 /**
  * @param {DictionaryPackageInfo} pkgInfo
+ * @param {boolean} useCdn
  * @returns {string}
  */
-function vscodeSettingsToCdn(pkgInfo) {
+function vscodeSettingsToCdn(pkgInfo, useCdn) {
     const vscodeSettings = Object.fromEntries(
-        Object.entries(toCSpellSettings(pkgInfo)).map(([k, v]) => ['cSpell.' + k, v]),
+        Object.entries(toCSpellSettings(pkgInfo, useCdn)).map(([k, v]) => ['cSpell.' + k, v]),
     );
     return JSON.stringify(vscodeSettings, null, 2) + '\n';
 }
 
 /**
  * @param {DictionaryPackageInfo} pkgInfo
+ * @param {boolean} useCdn
  * @returns {string}
  */
-function settingsJsonToCdn(pkgInfo) {
-    const settings = toCSpellSettings(pkgInfo);
+function toSettingsJson(pkgInfo, useCdn) {
+    const settings = toCSpellSettings(pkgInfo, useCdn);
     return JSON.stringify(settings, null, 2) + '\n';
 }
 
 /**
  * @param {DictionaryPackageInfo} pkgInfo
+ * @param {boolean} useCdn
  * @returns {string}
  */
-function settingsYamlToCdn(pkgInfo) {
-    const settings = toCSpellSettings(pkgInfo);
+function toSettingsYaml(pkgInfo, useCdn) {
+    const settings = toCSpellSettings(pkgInfo, useCdn);
     const doc = new YamlDocument(settings);
     return doc.toString() + '\n';
 }
@@ -84,15 +83,18 @@ function settingsYamlToCdn(pkgInfo) {
 /**
  *
  * @param {DictionaryPackageInfo} pkgInfo
+ * @param {boolean} useCdn
  * @returns {CSpellSettings}
  */
-function toCSpellSettings(pkgInfo) {
+function toCSpellSettings(pkgInfo, useCdn) {
     /** @type {CSpellSettings} */
     const settings = {};
 
     const locales = [...new Set(pkgInfo.dictionaries.flatMap((d) => d.locales || []))].join(', ');
     if (!pkgInfo.cspell) {
-        settings['import'] = [pkgNameToCdnUrl(pkgInfo.packageName)];
+        settings['import'] = [
+            (useCdn ? pkgNameToCdnUrl(pkgInfo.packageName) : pkgInfo.packageName) + '/cspell-ext.json',
+        ];
     }
     if (locales) {
         settings['language'] = locales;
@@ -115,20 +117,42 @@ function pkgNameToCdnUrl(pkgName) {
 /**
  *
  * @param {DictionaryPackageInfo} pkgInfo
- * @param {string} codeVScode
- * @param {string} codeJson
- * @param {string} codeYaml
  * @returns {string}
  */
-function toInstallMarkdown(pkgInfo, codeVScode, codeJson, codeYaml) {
+function toInstallMarkdown(pkgInfo) {
     const pkgName = pkgInfo.packageName;
 
     return unindent`
-        ## Installation
+        ## Local Installation
 
         ${pkgInfo.cspell ? '**This package is bundled with CSpell.**' : codeBlockInstall(pkgName)}
 
-        ## Configuration
+        ${toConfiguration(pkgInfo, false)}
+
+        ${toConfiguration(pkgInfo, true)}
+
+    `;
+}
+
+/**
+ *
+ * @param {DictionaryPackageInfo} pkgInfo
+ * @param {boolean} useCdn
+ * @returns {string}
+ */
+function toConfiguration(pkgInfo, useCdn) {
+    if (pkgInfo.cspell && useCdn) {
+        return unindent`
+            > Note: **This package is bundled with CSpell.**
+        `;
+    }
+
+    const codeVSCode = vscodeSettingsToCdn(pkgInfo, useCdn);
+    const codeJson = toSettingsJson(pkgInfo, useCdn);
+    const codeYaml = toSettingsYaml(pkgInfo, useCdn);
+
+    return unindent`
+        ## ${useCdn ? 'CDN ' : ''}Configuration
 
         ${detailsMarkdown(
             'VSCode Settings',
@@ -137,7 +161,7 @@ function toInstallMarkdown(pkgInfo, codeVScode, codeJson, codeYaml) {
 
             **${inlineCode('.vscode/settings.json')}**
 
-            ${codeBlock(codeVScode, 'jsonc')}
+            ${codeBlock(codeVSCode, 'jsonc')}
         `,
         )}
 
@@ -190,14 +214,13 @@ function inlineCode(code) {
  * @param {string} content
  */
 function detailsMarkdown(title, content) {
-    return unindent`
+    return unindent`\
         <details>
         <summary>${title}</summary>
 
-        ${content}
+        ${removeNewlines(content)}
 
-        </details>
-    `;
+        </details>`;
 }
 
 /**
@@ -207,5 +230,30 @@ function detailsMarkdown(title, content) {
  * @returns {string}
  */
 function codeBlock(code, lang = '') {
-    return `\`\`\`${lang}\n${code.replace(/^(\r?\n)+/, '').replace(/\r?\n$/, '')}\n\`\`\``;
+    return `\`\`\`${lang}\n${removeNewlines(code)}\n\`\`\``;
+}
+
+/**
+ * Remove all leading and trailing newlines from a string.
+ * @param {string} str
+ * @returns {string}
+ */
+function removeNewlines(str) {
+    return removeTrailingNewlines(removeLeadingNewlines(str));
+}
+
+/**
+ * @param {string} str
+ * @returns {string}
+ */
+function removeTrailingNewlines(str) {
+    return str.replace(/(\r?\n)+$/, '');
+}
+
+/**
+ * @param {string} str
+ * @returns {string}
+ */
+function removeLeadingNewlines(str) {
+    return str.replace(/^(\r?\n)+/, '');
 }
