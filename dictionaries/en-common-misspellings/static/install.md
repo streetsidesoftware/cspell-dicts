@@ -43,4 +43,5 @@ language: en, en-gb, en-us
 
 </details>
 
-> Note: **This package is bundled with CSpell.**
+> [!NOTE]
+> **This package is bundled with CSpell.**

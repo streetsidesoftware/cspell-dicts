@@ -5,14 +5,15 @@
   "private": true,
   "type": "module",
   "bin": {
-    "sort-source": "sort-source.mjs",
-    "gen-dictionary-info": "gen-dictionary-info.mjs",
-    "update-package-json": "update-package-json.mjs",
-    "update-contributors": "update-contributors.mjs",
-    "sync-github-files": "sync-github-files.mjs",
-    "merge": "merge.mjs",
     "filter-words": "filter-words.mjs",
-    "pipe-cmds": "pipe-cmds.mjs"
+    "fix-readme-markdown": "fix-readme-markdown.mjs",
+    "gen-dictionary-info": "gen-dictionary-info.mjs",
+    "merge": "merge.mjs",
+    "pipe-cmds": "pipe-cmds.mjs",
+    "sort-source": "sort-source.mjs",
+    "sync-github-files": "sync-github-files.mjs",
+    "update-contributors": "update-contributors.mjs",
+    "update-package-json": "update-package-json.mjs"
   },
   "scripts": {
     "test": "echo \"Error: no test specified\""

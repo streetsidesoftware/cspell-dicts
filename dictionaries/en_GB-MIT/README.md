@@ -64,7 +64,8 @@ language: en-GB
 
 </details>
 
-> Note: **This package is bundled with CSpell.**
+> [!NOTE]
+> **This package is bundled with CSpell.**
 
 <!--- @@inject-end: ./static/install.md --->
 
@@ -78,7 +79,7 @@ See: [Contributing](https://github.com/streetsidesoftware/cspell-dicts#contribut
 
 Special thanks to all of our amazing contributors!
 
-# Dictionary Development
+### Dictionary Development
 
 See: [How to Create a New Dictionary](https://github.com/streetsidesoftware/cspell-dicts#how-to-create-a-new-dictionary)
 

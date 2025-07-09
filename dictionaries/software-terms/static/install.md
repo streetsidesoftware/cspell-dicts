@@ -66,4 +66,5 @@ dictionaries:
 
 </details>
 
-> Note: **This package is bundled with CSpell.**
+> [!NOTE]
+> **This package is bundled with CSpell.**

@@ -21,7 +21,7 @@
     "clean": "shx rm -rf \"packages/*/*.txt.gz\" \"dictionaries/*/*.txt.gz\"",
     "readme:generate-doc-dictionaries": "gen-dictionary-info",
     "readme:inject": "inject-markdown \"*.md\" \"dictionaries/*/README.md\" && pnpm run readme:format",
-    "readme:format": "prettier -w \"*.md\" \"dictionaries/*/README.md\" \"dictionaries/*/static/*\"",
+    "readme:format": " node ./scripts/fix-readme-markdown.mjs && prettier -w \"*.md\" \"dictionaries/*/README.md\" \"dictionaries/*/static/*\"",
     "prepublishOnly": "pnpm prepare:dictionaries",
     "prepare:dictionaries": "pnpm -r run --stream --workspace-concurrency 3 prepare:dictionary",
     "setup": "pnpm i && pnpm prepare:dictionaries",

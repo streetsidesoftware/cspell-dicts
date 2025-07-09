@@ -143,7 +143,8 @@ function toInstallMarkdown(pkgInfo) {
 function toConfiguration(pkgInfo, useCdn) {
     if (pkgInfo.cspell && useCdn) {
         return unindent`
-            > Note: **This package is bundled with CSpell.**
+            > [!NOTE]
+            > **This package is bundled with CSpell.**
         `;
     }
 
