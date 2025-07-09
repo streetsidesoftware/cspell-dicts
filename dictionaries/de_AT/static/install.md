@@ -1,10 +1,8 @@
-
 ## Local Installation
 
 ```sh
 npm install -D @cspell/dict-de-at
 ```
-
 
 ## Configuration
 
@@ -17,10 +15,8 @@ Add the following to your VSCode settings:
 
 ```jsonc
 {
-  "cSpell.import": [
-    "@cspell/dict-de-at/cspell-ext.json"
-  ],
-  "cSpell.language": "de_AT"
+  "cSpell.import": ["@cspell/dict-de-at/cspell-ext.json"],
+  "cSpell.language": "de_AT",
 }
 ```
 
@@ -33,10 +29,8 @@ Add the following to your VSCode settings:
 
 ```jsonc
 {
-  "import": [
-    "@cspell/dict-de-at/cspell-ext.json"
-  ],
-  "language": "de_AT"
+  "import": ["@cspell/dict-de-at/cspell-ext.json"],
+  "language": "de_AT",
 }
 ```
 
@@ -49,13 +43,11 @@ Add the following to your VSCode settings:
 
 ```yaml
 import:
-  - "@cspell/dict-de-at/cspell-ext.json"
+  - '@cspell/dict-de-at/cspell-ext.json'
 language: de_AT
 ```
 
 </details>
-
-
 
 ## CDN Configuration
 
@@ -68,10 +60,8 @@ Add the following to your VSCode settings:
 
 ```jsonc
 {
-  "cSpell.import": [
-    "https://cdn.jsdelivr.net/npm/@cspell/dict-de-at@latest/cspell-ext.json/cspell-ext.json"
-  ],
-  "cSpell.language": "de_AT"
+  "cSpell.import": ["https://cdn.jsdelivr.net/npm/@cspell/dict-de-at@latest/cspell-ext.json/cspell-ext.json"],
+  "cSpell.language": "de_AT",
 }
 ```
 
@@ -84,10 +74,8 @@ Add the following to your VSCode settings:
 
 ```jsonc
 {
-  "import": [
-    "https://cdn.jsdelivr.net/npm/@cspell/dict-de-at@latest/cspell-ext.json/cspell-ext.json"
-  ],
-  "language": "de_AT"
+  "import": ["https://cdn.jsdelivr.net/npm/@cspell/dict-de-at@latest/cspell-ext.json/cspell-ext.json"],
+  "language": "de_AT",
 }
 ```
 
@@ -105,5 +93,3 @@ language: de_AT
 ```
 
 </details>
-
-

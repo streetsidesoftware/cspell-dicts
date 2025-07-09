@@ -1,8 +1,6 @@
-
 ## Local Installation
 
 **This package is bundled with CSpell.**
-
 
 ## Configuration
 
@@ -22,8 +20,8 @@ Add the following to your VSCode settings:
     "networking-terms",
     "web-services",
     "computing-acronyms",
-    "coding-compound-terms"
-  ]
+    "coding-compound-terms",
+  ],
 }
 ```
 
@@ -43,8 +41,8 @@ Add the following to your VSCode settings:
     "networking-terms",
     "web-services",
     "computing-acronyms",
-    "coding-compound-terms"
-  ]
+    "coding-compound-terms",
+  ],
 }
 ```
 
@@ -68,8 +66,4 @@ dictionaries:
 
 </details>
 
-
-
 > Note: **This package is bundled with CSpell.**
-
-

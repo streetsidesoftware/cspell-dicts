@@ -1,10 +1,8 @@
-
 ## Local Installation
 
 ```sh
 npm install -D @cspell/dict-medicalterms
 ```
-
 
 ## Configuration
 
@@ -17,12 +15,8 @@ Add the following to your VSCode settings:
 
 ```jsonc
 {
-  "cSpell.import": [
-    "@cspell/dict-medicalterms/cspell-ext.json"
-  ],
-  "cSpell.dictionaries": [
-    "medical terms"
-  ]
+  "cSpell.import": ["@cspell/dict-medicalterms/cspell-ext.json"],
+  "cSpell.dictionaries": ["medical terms"],
 }
 ```
 
@@ -35,12 +29,8 @@ Add the following to your VSCode settings:
 
 ```jsonc
 {
-  "import": [
-    "@cspell/dict-medicalterms/cspell-ext.json"
-  ],
-  "dictionaries": [
-    "medical terms"
-  ]
+  "import": ["@cspell/dict-medicalterms/cspell-ext.json"],
+  "dictionaries": ["medical terms"],
 }
 ```
 
@@ -53,14 +43,12 @@ Add the following to your VSCode settings:
 
 ```yaml
 import:
-  - "@cspell/dict-medicalterms/cspell-ext.json"
+  - '@cspell/dict-medicalterms/cspell-ext.json'
 dictionaries:
   - medical terms
 ```
 
 </details>
-
-
 
 ## CDN Configuration
 
@@ -73,12 +61,8 @@ Add the following to your VSCode settings:
 
 ```jsonc
 {
-  "cSpell.import": [
-    "https://cdn.jsdelivr.net/npm/@cspell/dict-medicalterms@latest/cspell-ext.json/cspell-ext.json"
-  ],
-  "cSpell.dictionaries": [
-    "medical terms"
-  ]
+  "cSpell.import": ["https://cdn.jsdelivr.net/npm/@cspell/dict-medicalterms@latest/cspell-ext.json/cspell-ext.json"],
+  "cSpell.dictionaries": ["medical terms"],
 }
 ```
 
@@ -91,12 +75,8 @@ Add the following to your VSCode settings:
 
 ```jsonc
 {
-  "import": [
-    "https://cdn.jsdelivr.net/npm/@cspell/dict-medicalterms@latest/cspell-ext.json/cspell-ext.json"
-  ],
-  "dictionaries": [
-    "medical terms"
-  ]
+  "import": ["https://cdn.jsdelivr.net/npm/@cspell/dict-medicalterms@latest/cspell-ext.json/cspell-ext.json"],
+  "dictionaries": ["medical terms"],
 }
 ```
 
@@ -115,5 +95,3 @@ dictionaries:
 ```
 
 </details>
-
-

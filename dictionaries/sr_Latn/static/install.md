@@ -1,10 +1,8 @@
-
 ## Local Installation
 
 ```sh
 npm install -D @cspell/dict-sr-latn
 ```
-
 
 ## Configuration
 
@@ -17,10 +15,8 @@ Add the following to your VSCode settings:
 
 ```jsonc
 {
-  "cSpell.import": [
-    "@cspell/dict-sr-latn/cspell-ext.json"
-  ],
-  "cSpell.language": "sr, sr-Latn"
+  "cSpell.import": ["@cspell/dict-sr-latn/cspell-ext.json"],
+  "cSpell.language": "sr, sr-Latn",
 }
 ```
 
@@ -33,10 +29,8 @@ Add the following to your VSCode settings:
 
 ```jsonc
 {
-  "import": [
-    "@cspell/dict-sr-latn/cspell-ext.json"
-  ],
-  "language": "sr, sr-Latn"
+  "import": ["@cspell/dict-sr-latn/cspell-ext.json"],
+  "language": "sr, sr-Latn",
 }
 ```
 
@@ -49,13 +43,11 @@ Add the following to your VSCode settings:
 
 ```yaml
 import:
-  - "@cspell/dict-sr-latn/cspell-ext.json"
+  - '@cspell/dict-sr-latn/cspell-ext.json'
 language: sr, sr-Latn
 ```
 
 </details>
-
-
 
 ## CDN Configuration
 
@@ -68,10 +60,8 @@ Add the following to your VSCode settings:
 
 ```jsonc
 {
-  "cSpell.import": [
-    "https://cdn.jsdelivr.net/npm/@cspell/dict-sr-latn@latest/cspell-ext.json/cspell-ext.json"
-  ],
-  "cSpell.language": "sr, sr-Latn"
+  "cSpell.import": ["https://cdn.jsdelivr.net/npm/@cspell/dict-sr-latn@latest/cspell-ext.json/cspell-ext.json"],
+  "cSpell.language": "sr, sr-Latn",
 }
 ```
 
@@ -84,10 +74,8 @@ Add the following to your VSCode settings:
 
 ```jsonc
 {
-  "import": [
-    "https://cdn.jsdelivr.net/npm/@cspell/dict-sr-latn@latest/cspell-ext.json/cspell-ext.json"
-  ],
-  "language": "sr, sr-Latn"
+  "import": ["https://cdn.jsdelivr.net/npm/@cspell/dict-sr-latn@latest/cspell-ext.json/cspell-ext.json"],
+  "language": "sr, sr-Latn",
 }
 ```
 
@@ -105,5 +93,3 @@ language: sr, sr-Latn
 ```
 
 </details>
-
-

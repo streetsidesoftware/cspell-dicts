@@ -1,10 +1,8 @@
-
 ## Local Installation
 
 ```sh
 npm install -D @cspell/dict-mnemonics
 ```
-
 
 ## Configuration
 
@@ -17,12 +15,8 @@ Add the following to your VSCode settings:
 
 ```jsonc
 {
-  "cSpell.import": [
-    "@cspell/dict-mnemonics/cspell-ext.json"
-  ],
-  "cSpell.dictionaries": [
-    "mnemonics"
-  ]
+  "cSpell.import": ["@cspell/dict-mnemonics/cspell-ext.json"],
+  "cSpell.dictionaries": ["mnemonics"],
 }
 ```
 
@@ -35,12 +29,8 @@ Add the following to your VSCode settings:
 
 ```jsonc
 {
-  "import": [
-    "@cspell/dict-mnemonics/cspell-ext.json"
-  ],
-  "dictionaries": [
-    "mnemonics"
-  ]
+  "import": ["@cspell/dict-mnemonics/cspell-ext.json"],
+  "dictionaries": ["mnemonics"],
 }
 ```
 
@@ -53,14 +43,12 @@ Add the following to your VSCode settings:
 
 ```yaml
 import:
-  - "@cspell/dict-mnemonics/cspell-ext.json"
+  - '@cspell/dict-mnemonics/cspell-ext.json'
 dictionaries:
   - mnemonics
 ```
 
 </details>
-
-
 
 ## CDN Configuration
 
@@ -73,12 +61,8 @@ Add the following to your VSCode settings:
 
 ```jsonc
 {
-  "cSpell.import": [
-    "https://cdn.jsdelivr.net/npm/@cspell/dict-mnemonics@latest/cspell-ext.json/cspell-ext.json"
-  ],
-  "cSpell.dictionaries": [
-    "mnemonics"
-  ]
+  "cSpell.import": ["https://cdn.jsdelivr.net/npm/@cspell/dict-mnemonics@latest/cspell-ext.json/cspell-ext.json"],
+  "cSpell.dictionaries": ["mnemonics"],
 }
 ```
 
@@ -91,12 +75,8 @@ Add the following to your VSCode settings:
 
 ```jsonc
 {
-  "import": [
-    "https://cdn.jsdelivr.net/npm/@cspell/dict-mnemonics@latest/cspell-ext.json/cspell-ext.json"
-  ],
-  "dictionaries": [
-    "mnemonics"
-  ]
+  "import": ["https://cdn.jsdelivr.net/npm/@cspell/dict-mnemonics@latest/cspell-ext.json/cspell-ext.json"],
+  "dictionaries": ["mnemonics"],
 }
 ```
 
@@ -115,5 +95,3 @@ dictionaries:
 ```
 
 </details>
-
-

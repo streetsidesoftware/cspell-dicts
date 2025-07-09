@@ -1,10 +1,8 @@
-
 ## Local Installation
 
 ```sh
 npm install -D @cspell/dict-clojure
 ```
-
 
 ## Configuration
 
@@ -17,12 +15,8 @@ Add the following to your VSCode settings:
 
 ```jsonc
 {
-  "cSpell.import": [
-    "@cspell/dict-clojure/cspell-ext.json"
-  ],
-  "cSpell.dictionaries": [
-    "clojure"
-  ]
+  "cSpell.import": ["@cspell/dict-clojure/cspell-ext.json"],
+  "cSpell.dictionaries": ["clojure"],
 }
 ```
 
@@ -35,12 +29,8 @@ Add the following to your VSCode settings:
 
 ```jsonc
 {
-  "import": [
-    "@cspell/dict-clojure/cspell-ext.json"
-  ],
-  "dictionaries": [
-    "clojure"
-  ]
+  "import": ["@cspell/dict-clojure/cspell-ext.json"],
+  "dictionaries": ["clojure"],
 }
 ```
 
@@ -53,14 +43,12 @@ Add the following to your VSCode settings:
 
 ```yaml
 import:
-  - "@cspell/dict-clojure/cspell-ext.json"
+  - '@cspell/dict-clojure/cspell-ext.json'
 dictionaries:
   - clojure
 ```
 
 </details>
-
-
 
 ## CDN Configuration
 
@@ -73,12 +61,8 @@ Add the following to your VSCode settings:
 
 ```jsonc
 {
-  "cSpell.import": [
-    "https://cdn.jsdelivr.net/npm/@cspell/dict-clojure@latest/cspell-ext.json/cspell-ext.json"
-  ],
-  "cSpell.dictionaries": [
-    "clojure"
-  ]
+  "cSpell.import": ["https://cdn.jsdelivr.net/npm/@cspell/dict-clojure@latest/cspell-ext.json/cspell-ext.json"],
+  "cSpell.dictionaries": ["clojure"],
 }
 ```
 
@@ -91,12 +75,8 @@ Add the following to your VSCode settings:
 
 ```jsonc
 {
-  "import": [
-    "https://cdn.jsdelivr.net/npm/@cspell/dict-clojure@latest/cspell-ext.json/cspell-ext.json"
-  ],
-  "dictionaries": [
-    "clojure"
-  ]
+  "import": ["https://cdn.jsdelivr.net/npm/@cspell/dict-clojure@latest/cspell-ext.json/cspell-ext.json"],
+  "dictionaries": ["clojure"],
 }
 ```
 
@@ -115,5 +95,3 @@ dictionaries:
 ```
 
 </details>
-
-

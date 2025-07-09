@@ -1,10 +1,8 @@
-
 ## Local Installation
 
 ```sh
 npm install -D @cspell/dict-cspell-bundle
 ```
-
 
 ## Configuration
 
@@ -17,10 +15,8 @@ Add the following to your VSCode settings:
 
 ```jsonc
 {
-  "cSpell.import": [
-    "@cspell/dict-cspell-bundle/cspell-ext.json"
-  ],
-  "cSpell.dictionaries": []
+  "cSpell.import": ["@cspell/dict-cspell-bundle/cspell-ext.json"],
+  "cSpell.dictionaries": [],
 }
 ```
 
@@ -33,10 +29,8 @@ Add the following to your VSCode settings:
 
 ```jsonc
 {
-  "import": [
-    "@cspell/dict-cspell-bundle/cspell-ext.json"
-  ],
-  "dictionaries": []
+  "import": ["@cspell/dict-cspell-bundle/cspell-ext.json"],
+  "dictionaries": [],
 }
 ```
 
@@ -49,13 +43,11 @@ Add the following to your VSCode settings:
 
 ```yaml
 import:
-  - "@cspell/dict-cspell-bundle/cspell-ext.json"
+  - '@cspell/dict-cspell-bundle/cspell-ext.json'
 dictionaries: []
 ```
 
 </details>
-
-
 
 ## CDN Configuration
 
@@ -68,10 +60,8 @@ Add the following to your VSCode settings:
 
 ```jsonc
 {
-  "cSpell.import": [
-    "https://cdn.jsdelivr.net/npm/@cspell/dict-cspell-bundle@latest/cspell-ext.json/cspell-ext.json"
-  ],
-  "cSpell.dictionaries": []
+  "cSpell.import": ["https://cdn.jsdelivr.net/npm/@cspell/dict-cspell-bundle@latest/cspell-ext.json/cspell-ext.json"],
+  "cSpell.dictionaries": [],
 }
 ```
 
@@ -84,10 +74,8 @@ Add the following to your VSCode settings:
 
 ```jsonc
 {
-  "import": [
-    "https://cdn.jsdelivr.net/npm/@cspell/dict-cspell-bundle@latest/cspell-ext.json/cspell-ext.json"
-  ],
-  "dictionaries": []
+  "import": ["https://cdn.jsdelivr.net/npm/@cspell/dict-cspell-bundle@latest/cspell-ext.json/cspell-ext.json"],
+  "dictionaries": [],
 }
 ```
 
@@ -105,5 +93,3 @@ dictionaries: []
 ```
 
 </details>
-
-

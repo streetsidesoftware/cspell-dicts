@@ -1,8 +1,6 @@
-
 ## Local Installation
 
 **This package is bundled with CSpell.**
-
 
 ## Configuration
 
@@ -15,7 +13,7 @@ Add the following to your VSCode settings:
 
 ```jsonc
 {
-  "cSpell.language": "en-GB"
+  "cSpell.language": "en-GB",
 }
 ```
 
@@ -28,7 +26,7 @@ Add the following to your VSCode settings:
 
 ```jsonc
 {
-  "language": "en-GB"
+  "language": "en-GB",
 }
 ```
 
@@ -45,8 +43,4 @@ language: en-GB
 
 </details>
 
-
-
 > Note: **This package is bundled with CSpell.**
-
-

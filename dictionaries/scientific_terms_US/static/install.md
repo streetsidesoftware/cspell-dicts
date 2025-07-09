@@ -1,10 +1,8 @@
-
 ## Local Installation
 
 ```sh
 npm install -D @cspell/dict-scientific-terms-us
 ```
-
 
 ## Configuration
 
@@ -17,12 +15,8 @@ Add the following to your VSCode settings:
 
 ```jsonc
 {
-  "cSpell.import": [
-    "@cspell/dict-scientific-terms-us/cspell-ext.json"
-  ],
-  "cSpell.dictionaries": [
-    "scientific-terms-us"
-  ]
+  "cSpell.import": ["@cspell/dict-scientific-terms-us/cspell-ext.json"],
+  "cSpell.dictionaries": ["scientific-terms-us"],
 }
 ```
 
@@ -35,12 +29,8 @@ Add the following to your VSCode settings:
 
 ```jsonc
 {
-  "import": [
-    "@cspell/dict-scientific-terms-us/cspell-ext.json"
-  ],
-  "dictionaries": [
-    "scientific-terms-us"
-  ]
+  "import": ["@cspell/dict-scientific-terms-us/cspell-ext.json"],
+  "dictionaries": ["scientific-terms-us"],
 }
 ```
 
@@ -53,14 +43,12 @@ Add the following to your VSCode settings:
 
 ```yaml
 import:
-  - "@cspell/dict-scientific-terms-us/cspell-ext.json"
+  - '@cspell/dict-scientific-terms-us/cspell-ext.json'
 dictionaries:
   - scientific-terms-us
 ```
 
 </details>
-
-
 
 ## CDN Configuration
 
@@ -74,11 +62,9 @@ Add the following to your VSCode settings:
 ```jsonc
 {
   "cSpell.import": [
-    "https://cdn.jsdelivr.net/npm/@cspell/dict-scientific-terms-us@latest/cspell-ext.json/cspell-ext.json"
+    "https://cdn.jsdelivr.net/npm/@cspell/dict-scientific-terms-us@latest/cspell-ext.json/cspell-ext.json",
   ],
-  "cSpell.dictionaries": [
-    "scientific-terms-us"
-  ]
+  "cSpell.dictionaries": ["scientific-terms-us"],
 }
 ```
 
@@ -91,12 +77,8 @@ Add the following to your VSCode settings:
 
 ```jsonc
 {
-  "import": [
-    "https://cdn.jsdelivr.net/npm/@cspell/dict-scientific-terms-us@latest/cspell-ext.json/cspell-ext.json"
-  ],
-  "dictionaries": [
-    "scientific-terms-us"
-  ]
+  "import": ["https://cdn.jsdelivr.net/npm/@cspell/dict-scientific-terms-us@latest/cspell-ext.json/cspell-ext.json"],
+  "dictionaries": ["scientific-terms-us"],
 }
 ```
 
@@ -115,5 +97,3 @@ dictionaries:
 ```
 
 </details>
-
-

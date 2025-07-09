@@ -1,10 +1,8 @@
-
 ## Local Installation
 
 ```sh
 npm install -D @cspell/dict-scientific-terms-gb
 ```
-
 
 ## Configuration
 
@@ -17,10 +15,8 @@ Add the following to your VSCode settings:
 
 ```jsonc
 {
-  "cSpell.import": [
-    "@cspell/dict-scientific-terms-gb/cspell-ext.json"
-  ],
-  "cSpell.language": "en-GB"
+  "cSpell.import": ["@cspell/dict-scientific-terms-gb/cspell-ext.json"],
+  "cSpell.language": "en-GB",
 }
 ```
 
@@ -33,10 +29,8 @@ Add the following to your VSCode settings:
 
 ```jsonc
 {
-  "import": [
-    "@cspell/dict-scientific-terms-gb/cspell-ext.json"
-  ],
-  "language": "en-GB"
+  "import": ["@cspell/dict-scientific-terms-gb/cspell-ext.json"],
+  "language": "en-GB",
 }
 ```
 
@@ -49,13 +43,11 @@ Add the following to your VSCode settings:
 
 ```yaml
 import:
-  - "@cspell/dict-scientific-terms-gb/cspell-ext.json"
+  - '@cspell/dict-scientific-terms-gb/cspell-ext.json'
 language: en-GB
 ```
 
 </details>
-
-
 
 ## CDN Configuration
 
@@ -69,9 +61,9 @@ Add the following to your VSCode settings:
 ```jsonc
 {
   "cSpell.import": [
-    "https://cdn.jsdelivr.net/npm/@cspell/dict-scientific-terms-gb@latest/cspell-ext.json/cspell-ext.json"
+    "https://cdn.jsdelivr.net/npm/@cspell/dict-scientific-terms-gb@latest/cspell-ext.json/cspell-ext.json",
   ],
-  "cSpell.language": "en-GB"
+  "cSpell.language": "en-GB",
 }
 ```
 
@@ -84,10 +76,8 @@ Add the following to your VSCode settings:
 
 ```jsonc
 {
-  "import": [
-    "https://cdn.jsdelivr.net/npm/@cspell/dict-scientific-terms-gb@latest/cspell-ext.json/cspell-ext.json"
-  ],
-  "language": "en-GB"
+  "import": ["https://cdn.jsdelivr.net/npm/@cspell/dict-scientific-terms-gb@latest/cspell-ext.json/cspell-ext.json"],
+  "language": "en-GB",
 }
 ```
 
@@ -105,5 +95,3 @@ language: en-GB
 ```
 
 </details>
-
-

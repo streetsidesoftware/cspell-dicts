@@ -1,8 +1,6 @@
-
 ## Local Installation
 
 **This package is bundled with CSpell.**
-
 
 ## Configuration
 
@@ -15,11 +13,7 @@ Add the following to your VSCode settings:
 
 ```jsonc
 {
-  "cSpell.dictionaries": [
-    "data-science",
-    "data-science-models",
-    "data-science-tools"
-  ]
+  "cSpell.dictionaries": ["data-science", "data-science-models", "data-science-tools"],
 }
 ```
 
@@ -32,11 +26,7 @@ Add the following to your VSCode settings:
 
 ```jsonc
 {
-  "dictionaries": [
-    "data-science",
-    "data-science-models",
-    "data-science-tools"
-  ]
+  "dictionaries": ["data-science", "data-science-models", "data-science-tools"],
 }
 ```
 
@@ -56,8 +46,4 @@ dictionaries:
 
 </details>
 
-
-
 > Note: **This package is bundled with CSpell.**
-
-

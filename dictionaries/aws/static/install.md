@@ -1,8 +1,6 @@
-
 ## Local Installation
 
 **This package is bundled with CSpell.**
-
 
 ## Configuration
 
@@ -15,9 +13,7 @@ Add the following to your VSCode settings:
 
 ```jsonc
 {
-  "cSpell.dictionaries": [
-    "aws"
-  ]
+  "cSpell.dictionaries": ["aws"],
 }
 ```
 
@@ -30,9 +26,7 @@ Add the following to your VSCode settings:
 
 ```jsonc
 {
-  "dictionaries": [
-    "aws"
-  ]
+  "dictionaries": ["aws"],
 }
 ```
 
@@ -50,8 +44,4 @@ dictionaries:
 
 </details>
 
-
-
 > Note: **This package is bundled with CSpell.**
-
-

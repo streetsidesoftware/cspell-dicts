@@ -1,10 +1,8 @@
-
 ## Local Installation
 
 ```sh
 npm install -D @cspell/dict-gd
 ```
-
 
 ## Configuration
 
@@ -17,10 +15,8 @@ Add the following to your VSCode settings:
 
 ```jsonc
 {
-  "cSpell.import": [
-    "@cspell/dict-gd/cspell-ext.json"
-  ],
-  "cSpell.language": "gd"
+  "cSpell.import": ["@cspell/dict-gd/cspell-ext.json"],
+  "cSpell.language": "gd",
 }
 ```
 
@@ -33,10 +29,8 @@ Add the following to your VSCode settings:
 
 ```jsonc
 {
-  "import": [
-    "@cspell/dict-gd/cspell-ext.json"
-  ],
-  "language": "gd"
+  "import": ["@cspell/dict-gd/cspell-ext.json"],
+  "language": "gd",
 }
 ```
 
@@ -49,13 +43,11 @@ Add the following to your VSCode settings:
 
 ```yaml
 import:
-  - "@cspell/dict-gd/cspell-ext.json"
+  - '@cspell/dict-gd/cspell-ext.json'
 language: gd
 ```
 
 </details>
-
-
 
 ## CDN Configuration
 
@@ -68,10 +60,8 @@ Add the following to your VSCode settings:
 
 ```jsonc
 {
-  "cSpell.import": [
-    "https://cdn.jsdelivr.net/npm/@cspell/dict-gd@latest/cspell-ext.json/cspell-ext.json"
-  ],
-  "cSpell.language": "gd"
+  "cSpell.import": ["https://cdn.jsdelivr.net/npm/@cspell/dict-gd@latest/cspell-ext.json/cspell-ext.json"],
+  "cSpell.language": "gd",
 }
 ```
 
@@ -84,10 +74,8 @@ Add the following to your VSCode settings:
 
 ```jsonc
 {
-  "import": [
-    "https://cdn.jsdelivr.net/npm/@cspell/dict-gd@latest/cspell-ext.json/cspell-ext.json"
-  ],
-  "language": "gd"
+  "import": ["https://cdn.jsdelivr.net/npm/@cspell/dict-gd@latest/cspell-ext.json/cspell-ext.json"],
+  "language": "gd",
 }
 ```
 
@@ -105,5 +93,3 @@ language: gd
 ```
 
 </details>
-
-

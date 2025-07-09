@@ -1,10 +1,8 @@
-
 ## Local Installation
 
 ```sh
 npm install -D @cspell/dict-mk
 ```
-
 
 ## Configuration
 
@@ -17,10 +15,8 @@ Add the following to your VSCode settings:
 
 ```jsonc
 {
-  "cSpell.import": [
-    "@cspell/dict-mk/cspell-ext.json"
-  ],
-  "cSpell.language": "mk, mk-cyrl"
+  "cSpell.import": ["@cspell/dict-mk/cspell-ext.json"],
+  "cSpell.language": "mk, mk-cyrl",
 }
 ```
 
@@ -33,10 +29,8 @@ Add the following to your VSCode settings:
 
 ```jsonc
 {
-  "import": [
-    "@cspell/dict-mk/cspell-ext.json"
-  ],
-  "language": "mk, mk-cyrl"
+  "import": ["@cspell/dict-mk/cspell-ext.json"],
+  "language": "mk, mk-cyrl",
 }
 ```
 
@@ -49,13 +43,11 @@ Add the following to your VSCode settings:
 
 ```yaml
 import:
-  - "@cspell/dict-mk/cspell-ext.json"
+  - '@cspell/dict-mk/cspell-ext.json'
 language: mk, mk-cyrl
 ```
 
 </details>
-
-
 
 ## CDN Configuration
 
@@ -68,10 +60,8 @@ Add the following to your VSCode settings:
 
 ```jsonc
 {
-  "cSpell.import": [
-    "https://cdn.jsdelivr.net/npm/@cspell/dict-mk@latest/cspell-ext.json/cspell-ext.json"
-  ],
-  "cSpell.language": "mk, mk-cyrl"
+  "cSpell.import": ["https://cdn.jsdelivr.net/npm/@cspell/dict-mk@latest/cspell-ext.json/cspell-ext.json"],
+  "cSpell.language": "mk, mk-cyrl",
 }
 ```
 
@@ -84,10 +74,8 @@ Add the following to your VSCode settings:
 
 ```jsonc
 {
-  "import": [
-    "https://cdn.jsdelivr.net/npm/@cspell/dict-mk@latest/cspell-ext.json/cspell-ext.json"
-  ],
-  "language": "mk, mk-cyrl"
+  "import": ["https://cdn.jsdelivr.net/npm/@cspell/dict-mk@latest/cspell-ext.json/cspell-ext.json"],
+  "language": "mk, mk-cyrl",
 }
 ```
 
@@ -105,5 +93,3 @@ language: mk, mk-cyrl
 ```
 
 </details>
-
-

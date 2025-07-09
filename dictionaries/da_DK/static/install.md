@@ -1,10 +1,8 @@
-
 ## Local Installation
 
 ```sh
 npm install -D @cspell/dict-da-dk
 ```
-
 
 ## Configuration
 
@@ -17,10 +15,8 @@ Add the following to your VSCode settings:
 
 ```jsonc
 {
-  "cSpell.import": [
-    "@cspell/dict-da-dk/cspell-ext.json"
-  ],
-  "cSpell.language": "da, da-DK"
+  "cSpell.import": ["@cspell/dict-da-dk/cspell-ext.json"],
+  "cSpell.language": "da, da-DK",
 }
 ```
 
@@ -33,10 +29,8 @@ Add the following to your VSCode settings:
 
 ```jsonc
 {
-  "import": [
-    "@cspell/dict-da-dk/cspell-ext.json"
-  ],
-  "language": "da, da-DK"
+  "import": ["@cspell/dict-da-dk/cspell-ext.json"],
+  "language": "da, da-DK",
 }
 ```
 
@@ -49,13 +43,11 @@ Add the following to your VSCode settings:
 
 ```yaml
 import:
-  - "@cspell/dict-da-dk/cspell-ext.json"
+  - '@cspell/dict-da-dk/cspell-ext.json'
 language: da, da-DK
 ```
 
 </details>
-
-
 
 ## CDN Configuration
 
@@ -68,10 +60,8 @@ Add the following to your VSCode settings:
 
 ```jsonc
 {
-  "cSpell.import": [
-    "https://cdn.jsdelivr.net/npm/@cspell/dict-da-dk@latest/cspell-ext.json/cspell-ext.json"
-  ],
-  "cSpell.language": "da, da-DK"
+  "cSpell.import": ["https://cdn.jsdelivr.net/npm/@cspell/dict-da-dk@latest/cspell-ext.json/cspell-ext.json"],
+  "cSpell.language": "da, da-DK",
 }
 ```
 
@@ -84,10 +74,8 @@ Add the following to your VSCode settings:
 
 ```jsonc
 {
-  "import": [
-    "https://cdn.jsdelivr.net/npm/@cspell/dict-da-dk@latest/cspell-ext.json/cspell-ext.json"
-  ],
-  "language": "da, da-DK"
+  "import": ["https://cdn.jsdelivr.net/npm/@cspell/dict-da-dk@latest/cspell-ext.json/cspell-ext.json"],
+  "language": "da, da-DK",
 }
 ```
 
@@ -105,5 +93,3 @@ language: da, da-DK
 ```
 
 </details>
-
-

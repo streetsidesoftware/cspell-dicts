@@ -1,10 +1,8 @@
-
 ## Local Installation
 
 ```sh
 npm install -D @cspell/dict-gis
 ```
-
 
 ## Configuration
 
@@ -17,12 +15,8 @@ Add the following to your VSCode settings:
 
 ```jsonc
 {
-  "cSpell.import": [
-    "@cspell/dict-gis/cspell-ext.json"
-  ],
-  "cSpell.dictionaries": [
-    "gis"
-  ]
+  "cSpell.import": ["@cspell/dict-gis/cspell-ext.json"],
+  "cSpell.dictionaries": ["gis"],
 }
 ```
 
@@ -35,12 +29,8 @@ Add the following to your VSCode settings:
 
 ```jsonc
 {
-  "import": [
-    "@cspell/dict-gis/cspell-ext.json"
-  ],
-  "dictionaries": [
-    "gis"
-  ]
+  "import": ["@cspell/dict-gis/cspell-ext.json"],
+  "dictionaries": ["gis"],
 }
 ```
 
@@ -53,14 +43,12 @@ Add the following to your VSCode settings:
 
 ```yaml
 import:
-  - "@cspell/dict-gis/cspell-ext.json"
+  - '@cspell/dict-gis/cspell-ext.json'
 dictionaries:
   - gis
 ```
 
 </details>
-
-
 
 ## CDN Configuration
 
@@ -73,12 +61,8 @@ Add the following to your VSCode settings:
 
 ```jsonc
 {
-  "cSpell.import": [
-    "https://cdn.jsdelivr.net/npm/@cspell/dict-gis@latest/cspell-ext.json/cspell-ext.json"
-  ],
-  "cSpell.dictionaries": [
-    "gis"
-  ]
+  "cSpell.import": ["https://cdn.jsdelivr.net/npm/@cspell/dict-gis@latest/cspell-ext.json/cspell-ext.json"],
+  "cSpell.dictionaries": ["gis"],
 }
 ```
 
@@ -91,12 +75,8 @@ Add the following to your VSCode settings:
 
 ```jsonc
 {
-  "import": [
-    "https://cdn.jsdelivr.net/npm/@cspell/dict-gis@latest/cspell-ext.json/cspell-ext.json"
-  ],
-  "dictionaries": [
-    "gis"
-  ]
+  "import": ["https://cdn.jsdelivr.net/npm/@cspell/dict-gis@latest/cspell-ext.json/cspell-ext.json"],
+  "dictionaries": ["gis"],
 }
 ```
 
@@ -115,5 +95,3 @@ dictionaries:
 ```
 
 </details>
-
-

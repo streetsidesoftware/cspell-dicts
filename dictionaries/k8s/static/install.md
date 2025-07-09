@@ -1,8 +1,6 @@
-
 ## Local Installation
 
 **This package is bundled with CSpell.**
-
 
 ## Configuration
 
@@ -15,9 +13,7 @@ Add the following to your VSCode settings:
 
 ```jsonc
 {
-  "cSpell.dictionaries": [
-    "k8s"
-  ]
+  "cSpell.dictionaries": ["k8s"],
 }
 ```
 
@@ -30,9 +26,7 @@ Add the following to your VSCode settings:
 
 ```jsonc
 {
-  "dictionaries": [
-    "k8s"
-  ]
+  "dictionaries": ["k8s"],
 }
 ```
 
@@ -50,8 +44,4 @@ dictionaries:
 
 </details>
 
-
-
 > Note: **This package is bundled with CSpell.**
-
-

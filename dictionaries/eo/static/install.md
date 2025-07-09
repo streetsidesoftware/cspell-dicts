@@ -1,10 +1,8 @@
-
 ## Local Installation
 
 ```sh
 npm install -D @cspell/dict-eo
 ```
-
 
 ## Configuration
 
@@ -17,10 +15,8 @@ Add the following to your VSCode settings:
 
 ```jsonc
 {
-  "cSpell.import": [
-    "@cspell/dict-eo/cspell-ext.json"
-  ],
-  "cSpell.language": "eo"
+  "cSpell.import": ["@cspell/dict-eo/cspell-ext.json"],
+  "cSpell.language": "eo",
 }
 ```
 
@@ -33,10 +29,8 @@ Add the following to your VSCode settings:
 
 ```jsonc
 {
-  "import": [
-    "@cspell/dict-eo/cspell-ext.json"
-  ],
-  "language": "eo"
+  "import": ["@cspell/dict-eo/cspell-ext.json"],
+  "language": "eo",
 }
 ```
 
@@ -49,13 +43,11 @@ Add the following to your VSCode settings:
 
 ```yaml
 import:
-  - "@cspell/dict-eo/cspell-ext.json"
+  - '@cspell/dict-eo/cspell-ext.json'
 language: eo
 ```
 
 </details>
-
-
 
 ## CDN Configuration
 
@@ -68,10 +60,8 @@ Add the following to your VSCode settings:
 
 ```jsonc
 {
-  "cSpell.import": [
-    "https://cdn.jsdelivr.net/npm/@cspell/dict-eo@latest/cspell-ext.json/cspell-ext.json"
-  ],
-  "cSpell.language": "eo"
+  "cSpell.import": ["https://cdn.jsdelivr.net/npm/@cspell/dict-eo@latest/cspell-ext.json/cspell-ext.json"],
+  "cSpell.language": "eo",
 }
 ```
 
@@ -84,10 +74,8 @@ Add the following to your VSCode settings:
 
 ```jsonc
 {
-  "import": [
-    "https://cdn.jsdelivr.net/npm/@cspell/dict-eo@latest/cspell-ext.json/cspell-ext.json"
-  ],
-  "language": "eo"
+  "import": ["https://cdn.jsdelivr.net/npm/@cspell/dict-eo@latest/cspell-ext.json/cspell-ext.json"],
+  "language": "eo",
 }
 ```
 
@@ -105,5 +93,3 @@ language: eo
 ```
 
 </details>
-
-

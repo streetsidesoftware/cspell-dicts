@@ -1,8 +1,6 @@
-
 ## Local Installation
 
 **This package is bundled with CSpell.**
-
 
 ## Configuration
 
@@ -15,10 +13,7 @@ Add the following to your VSCode settings:
 
 ```jsonc
 {
-  "cSpell.dictionaries": [
-    "gaming-terms",
-    "game-development"
-  ]
+  "cSpell.dictionaries": ["gaming-terms", "game-development"],
 }
 ```
 
@@ -31,10 +26,7 @@ Add the following to your VSCode settings:
 
 ```jsonc
 {
-  "dictionaries": [
-    "gaming-terms",
-    "game-development"
-  ]
+  "dictionaries": ["gaming-terms", "game-development"],
 }
 ```
 
@@ -53,8 +45,4 @@ dictionaries:
 
 </details>
 
-
-
 > Note: **This package is bundled with CSpell.**
-
-

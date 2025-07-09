@@ -1,10 +1,8 @@
-
 ## Local Installation
 
 ```sh
 npm install -D @cspell/dict-ca
 ```
-
 
 ## Configuration
 
@@ -17,10 +15,8 @@ Add the following to your VSCode settings:
 
 ```jsonc
 {
-  "cSpell.import": [
-    "@cspell/dict-ca/cspell-ext.json"
-  ],
-  "cSpell.language": "ca"
+  "cSpell.import": ["@cspell/dict-ca/cspell-ext.json"],
+  "cSpell.language": "ca",
 }
 ```
 
@@ -33,10 +29,8 @@ Add the following to your VSCode settings:
 
 ```jsonc
 {
-  "import": [
-    "@cspell/dict-ca/cspell-ext.json"
-  ],
-  "language": "ca"
+  "import": ["@cspell/dict-ca/cspell-ext.json"],
+  "language": "ca",
 }
 ```
 
@@ -49,13 +43,11 @@ Add the following to your VSCode settings:
 
 ```yaml
 import:
-  - "@cspell/dict-ca/cspell-ext.json"
+  - '@cspell/dict-ca/cspell-ext.json'
 language: ca
 ```
 
 </details>
-
-
 
 ## CDN Configuration
 
@@ -68,10 +60,8 @@ Add the following to your VSCode settings:
 
 ```jsonc
 {
-  "cSpell.import": [
-    "https://cdn.jsdelivr.net/npm/@cspell/dict-ca@latest/cspell-ext.json/cspell-ext.json"
-  ],
-  "cSpell.language": "ca"
+  "cSpell.import": ["https://cdn.jsdelivr.net/npm/@cspell/dict-ca@latest/cspell-ext.json/cspell-ext.json"],
+  "cSpell.language": "ca",
 }
 ```
 
@@ -84,10 +74,8 @@ Add the following to your VSCode settings:
 
 ```jsonc
 {
-  "import": [
-    "https://cdn.jsdelivr.net/npm/@cspell/dict-ca@latest/cspell-ext.json/cspell-ext.json"
-  ],
-  "language": "ca"
+  "import": ["https://cdn.jsdelivr.net/npm/@cspell/dict-ca@latest/cspell-ext.json/cspell-ext.json"],
+  "language": "ca",
 }
 ```
 
@@ -105,5 +93,3 @@ language: ca
 ```
 
 </details>
-
-

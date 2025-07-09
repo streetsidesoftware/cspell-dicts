@@ -1,10 +1,8 @@
-
 ## Local Installation
 
 ```sh
 npm install -D @cspell/dict-fa-ir
 ```
-
 
 ## Configuration
 
@@ -17,10 +15,8 @@ Add the following to your VSCode settings:
 
 ```jsonc
 {
-  "cSpell.import": [
-    "@cspell/dict-fa-ir/cspell-ext.json"
-  ],
-  "cSpell.language": "fa, fa-IR"
+  "cSpell.import": ["@cspell/dict-fa-ir/cspell-ext.json"],
+  "cSpell.language": "fa, fa-IR",
 }
 ```
 
@@ -33,10 +29,8 @@ Add the following to your VSCode settings:
 
 ```jsonc
 {
-  "import": [
-    "@cspell/dict-fa-ir/cspell-ext.json"
-  ],
-  "language": "fa, fa-IR"
+  "import": ["@cspell/dict-fa-ir/cspell-ext.json"],
+  "language": "fa, fa-IR",
 }
 ```
 
@@ -49,13 +43,11 @@ Add the following to your VSCode settings:
 
 ```yaml
 import:
-  - "@cspell/dict-fa-ir/cspell-ext.json"
+  - '@cspell/dict-fa-ir/cspell-ext.json'
 language: fa, fa-IR
 ```
 
 </details>
-
-
 
 ## CDN Configuration
 
@@ -68,10 +60,8 @@ Add the following to your VSCode settings:
 
 ```jsonc
 {
-  "cSpell.import": [
-    "https://cdn.jsdelivr.net/npm/@cspell/dict-fa-ir@latest/cspell-ext.json/cspell-ext.json"
-  ],
-  "cSpell.language": "fa, fa-IR"
+  "cSpell.import": ["https://cdn.jsdelivr.net/npm/@cspell/dict-fa-ir@latest/cspell-ext.json/cspell-ext.json"],
+  "cSpell.language": "fa, fa-IR",
 }
 ```
 
@@ -84,10 +74,8 @@ Add the following to your VSCode settings:
 
 ```jsonc
 {
-  "import": [
-    "https://cdn.jsdelivr.net/npm/@cspell/dict-fa-ir@latest/cspell-ext.json/cspell-ext.json"
-  ],
-  "language": "fa, fa-IR"
+  "import": ["https://cdn.jsdelivr.net/npm/@cspell/dict-fa-ir@latest/cspell-ext.json/cspell-ext.json"],
+  "language": "fa, fa-IR",
 }
 ```
 
@@ -105,5 +93,3 @@ language: fa, fa-IR
 ```
 
 </details>
-
-

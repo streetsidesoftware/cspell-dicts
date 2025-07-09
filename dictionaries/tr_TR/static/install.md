@@ -1,10 +1,8 @@
-
 ## Local Installation
 
 ```sh
 npm install -D @cspell/dict-tr-tr
 ```
-
 
 ## Configuration
 
@@ -17,10 +15,8 @@ Add the following to your VSCode settings:
 
 ```jsonc
 {
-  "cSpell.import": [
-    "@cspell/dict-tr-tr/cspell-ext.json"
-  ],
-  "cSpell.language": "tr, tr-TR"
+  "cSpell.import": ["@cspell/dict-tr-tr/cspell-ext.json"],
+  "cSpell.language": "tr, tr-TR",
 }
 ```
 
@@ -33,10 +29,8 @@ Add the following to your VSCode settings:
 
 ```jsonc
 {
-  "import": [
-    "@cspell/dict-tr-tr/cspell-ext.json"
-  ],
-  "language": "tr, tr-TR"
+  "import": ["@cspell/dict-tr-tr/cspell-ext.json"],
+  "language": "tr, tr-TR",
 }
 ```
 
@@ -49,13 +43,11 @@ Add the following to your VSCode settings:
 
 ```yaml
 import:
-  - "@cspell/dict-tr-tr/cspell-ext.json"
+  - '@cspell/dict-tr-tr/cspell-ext.json'
 language: tr, tr-TR
 ```
 
 </details>
-
-
 
 ## CDN Configuration
 
@@ -68,10 +60,8 @@ Add the following to your VSCode settings:
 
 ```jsonc
 {
-  "cSpell.import": [
-    "https://cdn.jsdelivr.net/npm/@cspell/dict-tr-tr@latest/cspell-ext.json/cspell-ext.json"
-  ],
-  "cSpell.language": "tr, tr-TR"
+  "cSpell.import": ["https://cdn.jsdelivr.net/npm/@cspell/dict-tr-tr@latest/cspell-ext.json/cspell-ext.json"],
+  "cSpell.language": "tr, tr-TR",
 }
 ```
 
@@ -84,10 +74,8 @@ Add the following to your VSCode settings:
 
 ```jsonc
 {
-  "import": [
-    "https://cdn.jsdelivr.net/npm/@cspell/dict-tr-tr@latest/cspell-ext.json/cspell-ext.json"
-  ],
-  "language": "tr, tr-TR"
+  "import": ["https://cdn.jsdelivr.net/npm/@cspell/dict-tr-tr@latest/cspell-ext.json/cspell-ext.json"],
+  "language": "tr, tr-TR",
 }
 ```
 
@@ -105,5 +93,3 @@ language: tr, tr-TR
 ```
 
 </details>
-
-

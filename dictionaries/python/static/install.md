@@ -1,8 +1,6 @@
-
 ## Local Installation
 
 **This package is bundled with CSpell.**
-
 
 ## Configuration
 
@@ -15,10 +13,7 @@ Add the following to your VSCode settings:
 
 ```jsonc
 {
-  "cSpell.dictionaries": [
-    "python",
-    "python-common"
-  ]
+  "cSpell.dictionaries": ["python", "python-common"],
 }
 ```
 
@@ -31,10 +26,7 @@ Add the following to your VSCode settings:
 
 ```jsonc
 {
-  "dictionaries": [
-    "python",
-    "python-common"
-  ]
+  "dictionaries": ["python", "python-common"],
 }
 ```
 
@@ -53,8 +45,4 @@ dictionaries:
 
 </details>
 
-
-
 > Note: **This package is bundled with CSpell.**
-
-

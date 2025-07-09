@@ -1,10 +1,8 @@
-
 ## Local Installation
 
 ```sh
 npm install -D @cspell/dict-nb-no
 ```
-
 
 ## Configuration
 
@@ -17,10 +15,8 @@ Add the following to your VSCode settings:
 
 ```jsonc
 {
-  "cSpell.import": [
-    "@cspell/dict-nb-no/cspell-ext.json"
-  ],
-  "cSpell.language": "nb, nb-no"
+  "cSpell.import": ["@cspell/dict-nb-no/cspell-ext.json"],
+  "cSpell.language": "nb, nb-no",
 }
 ```
 
@@ -33,10 +29,8 @@ Add the following to your VSCode settings:
 
 ```jsonc
 {
-  "import": [
-    "@cspell/dict-nb-no/cspell-ext.json"
-  ],
-  "language": "nb, nb-no"
+  "import": ["@cspell/dict-nb-no/cspell-ext.json"],
+  "language": "nb, nb-no",
 }
 ```
 
@@ -49,13 +43,11 @@ Add the following to your VSCode settings:
 
 ```yaml
 import:
-  - "@cspell/dict-nb-no/cspell-ext.json"
+  - '@cspell/dict-nb-no/cspell-ext.json'
 language: nb, nb-no
 ```
 
 </details>
-
-
 
 ## CDN Configuration
 
@@ -68,10 +60,8 @@ Add the following to your VSCode settings:
 
 ```jsonc
 {
-  "cSpell.import": [
-    "https://cdn.jsdelivr.net/npm/@cspell/dict-nb-no@latest/cspell-ext.json/cspell-ext.json"
-  ],
-  "cSpell.language": "nb, nb-no"
+  "cSpell.import": ["https://cdn.jsdelivr.net/npm/@cspell/dict-nb-no@latest/cspell-ext.json/cspell-ext.json"],
+  "cSpell.language": "nb, nb-no",
 }
 ```
 
@@ -84,10 +74,8 @@ Add the following to your VSCode settings:
 
 ```jsonc
 {
-  "import": [
-    "https://cdn.jsdelivr.net/npm/@cspell/dict-nb-no@latest/cspell-ext.json/cspell-ext.json"
-  ],
-  "language": "nb, nb-no"
+  "import": ["https://cdn.jsdelivr.net/npm/@cspell/dict-nb-no@latest/cspell-ext.json/cspell-ext.json"],
+  "language": "nb, nb-no",
 }
 ```
 
@@ -105,5 +93,3 @@ language: nb, nb-no
 ```
 
 </details>
-
-

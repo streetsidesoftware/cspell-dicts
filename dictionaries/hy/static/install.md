@@ -1,10 +1,8 @@
-
 ## Local Installation
 
 ```sh
 npm install -D @cspell/dict-hy
 ```
-
 
 ## Configuration
 
@@ -17,10 +15,8 @@ Add the following to your VSCode settings:
 
 ```jsonc
 {
-  "cSpell.import": [
-    "@cspell/dict-hy/cspell-ext.json"
-  ],
-  "cSpell.language": "hy, hy-AM"
+  "cSpell.import": ["@cspell/dict-hy/cspell-ext.json"],
+  "cSpell.language": "hy, hy-AM",
 }
 ```
 
@@ -33,10 +29,8 @@ Add the following to your VSCode settings:
 
 ```jsonc
 {
-  "import": [
-    "@cspell/dict-hy/cspell-ext.json"
-  ],
-  "language": "hy, hy-AM"
+  "import": ["@cspell/dict-hy/cspell-ext.json"],
+  "language": "hy, hy-AM",
 }
 ```
 
@@ -49,13 +43,11 @@ Add the following to your VSCode settings:
 
 ```yaml
 import:
-  - "@cspell/dict-hy/cspell-ext.json"
+  - '@cspell/dict-hy/cspell-ext.json'
 language: hy, hy-AM
 ```
 
 </details>
-
-
 
 ## CDN Configuration
 
@@ -68,10 +60,8 @@ Add the following to your VSCode settings:
 
 ```jsonc
 {
-  "cSpell.import": [
-    "https://cdn.jsdelivr.net/npm/@cspell/dict-hy@latest/cspell-ext.json/cspell-ext.json"
-  ],
-  "cSpell.language": "hy, hy-AM"
+  "cSpell.import": ["https://cdn.jsdelivr.net/npm/@cspell/dict-hy@latest/cspell-ext.json/cspell-ext.json"],
+  "cSpell.language": "hy, hy-AM",
 }
 ```
 
@@ -84,10 +74,8 @@ Add the following to your VSCode settings:
 
 ```jsonc
 {
-  "import": [
-    "https://cdn.jsdelivr.net/npm/@cspell/dict-hy@latest/cspell-ext.json/cspell-ext.json"
-  ],
-  "language": "hy, hy-AM"
+  "import": ["https://cdn.jsdelivr.net/npm/@cspell/dict-hy@latest/cspell-ext.json/cspell-ext.json"],
+  "language": "hy, hy-AM",
 }
 ```
 
@@ -105,5 +93,3 @@ language: hy, hy-AM
 ```
 
 </details>
-
-

@@ -1,10 +1,8 @@
-
 ## Local Installation
 
 ```sh
 npm install -D @cspell/dict-hu-hu
 ```
-
 
 ## Configuration
 
@@ -17,10 +15,8 @@ Add the following to your VSCode settings:
 
 ```jsonc
 {
-  "cSpell.import": [
-    "@cspell/dict-hu-hu/cspell-ext.json"
-  ],
-  "cSpell.language": "hu, hu-hu"
+  "cSpell.import": ["@cspell/dict-hu-hu/cspell-ext.json"],
+  "cSpell.language": "hu, hu-hu",
 }
 ```
 
@@ -33,10 +29,8 @@ Add the following to your VSCode settings:
 
 ```jsonc
 {
-  "import": [
-    "@cspell/dict-hu-hu/cspell-ext.json"
-  ],
-  "language": "hu, hu-hu"
+  "import": ["@cspell/dict-hu-hu/cspell-ext.json"],
+  "language": "hu, hu-hu",
 }
 ```
 
@@ -49,13 +43,11 @@ Add the following to your VSCode settings:
 
 ```yaml
 import:
-  - "@cspell/dict-hu-hu/cspell-ext.json"
+  - '@cspell/dict-hu-hu/cspell-ext.json'
 language: hu, hu-hu
 ```
 
 </details>
-
-
 
 ## CDN Configuration
 
@@ -68,10 +60,8 @@ Add the following to your VSCode settings:
 
 ```jsonc
 {
-  "cSpell.import": [
-    "https://cdn.jsdelivr.net/npm/@cspell/dict-hu-hu@latest/cspell-ext.json/cspell-ext.json"
-  ],
-  "cSpell.language": "hu, hu-hu"
+  "cSpell.import": ["https://cdn.jsdelivr.net/npm/@cspell/dict-hu-hu@latest/cspell-ext.json/cspell-ext.json"],
+  "cSpell.language": "hu, hu-hu",
 }
 ```
 
@@ -84,10 +74,8 @@ Add the following to your VSCode settings:
 
 ```jsonc
 {
-  "import": [
-    "https://cdn.jsdelivr.net/npm/@cspell/dict-hu-hu@latest/cspell-ext.json/cspell-ext.json"
-  ],
-  "language": "hu, hu-hu"
+  "import": ["https://cdn.jsdelivr.net/npm/@cspell/dict-hu-hu@latest/cspell-ext.json/cspell-ext.json"],
+  "language": "hu, hu-hu",
 }
 ```
 
@@ -105,5 +93,3 @@ language: hu, hu-hu
 ```
 
 </details>
-
-

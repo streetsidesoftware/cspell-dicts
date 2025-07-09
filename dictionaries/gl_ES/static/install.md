@@ -1,10 +1,8 @@
-
 ## Local Installation
 
 ```sh
 npm install -D @cspell/dict-gl-es
 ```
-
 
 ## Configuration
 
@@ -17,10 +15,8 @@ Add the following to your VSCode settings:
 
 ```jsonc
 {
-  "cSpell.import": [
-    "@cspell/dict-gl-es/cspell-ext.json"
-  ],
-  "cSpell.language": "gl, gl_ES"
+  "cSpell.import": ["@cspell/dict-gl-es/cspell-ext.json"],
+  "cSpell.language": "gl, gl_ES",
 }
 ```
 
@@ -33,10 +29,8 @@ Add the following to your VSCode settings:
 
 ```jsonc
 {
-  "import": [
-    "@cspell/dict-gl-es/cspell-ext.json"
-  ],
-  "language": "gl, gl_ES"
+  "import": ["@cspell/dict-gl-es/cspell-ext.json"],
+  "language": "gl, gl_ES",
 }
 ```
 
@@ -49,13 +43,11 @@ Add the following to your VSCode settings:
 
 ```yaml
 import:
-  - "@cspell/dict-gl-es/cspell-ext.json"
+  - '@cspell/dict-gl-es/cspell-ext.json'
 language: gl, gl_ES
 ```
 
 </details>
-
-
 
 ## CDN Configuration
 
@@ -68,10 +60,8 @@ Add the following to your VSCode settings:
 
 ```jsonc
 {
-  "cSpell.import": [
-    "https://cdn.jsdelivr.net/npm/@cspell/dict-gl-es@latest/cspell-ext.json/cspell-ext.json"
-  ],
-  "cSpell.language": "gl, gl_ES"
+  "cSpell.import": ["https://cdn.jsdelivr.net/npm/@cspell/dict-gl-es@latest/cspell-ext.json/cspell-ext.json"],
+  "cSpell.language": "gl, gl_ES",
 }
 ```
 
@@ -84,10 +74,8 @@ Add the following to your VSCode settings:
 
 ```jsonc
 {
-  "import": [
-    "https://cdn.jsdelivr.net/npm/@cspell/dict-gl-es@latest/cspell-ext.json/cspell-ext.json"
-  ],
-  "language": "gl, gl_ES"
+  "import": ["https://cdn.jsdelivr.net/npm/@cspell/dict-gl-es@latest/cspell-ext.json/cspell-ext.json"],
+  "language": "gl, gl_ES",
 }
 ```
 
@@ -105,5 +93,3 @@ language: gl, gl_ES
 ```
 
 </details>
-
-

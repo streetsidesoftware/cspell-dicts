@@ -1,10 +1,8 @@
-
 ## Local Installation
 
 ```sh
 npm install -D @cspell/dict-people-names
 ```
-
 
 ## Configuration
 
@@ -17,12 +15,8 @@ Add the following to your VSCode settings:
 
 ```jsonc
 {
-  "cSpell.import": [
-    "@cspell/dict-people-names/cspell-ext.json"
-  ],
-  "cSpell.dictionaries": [
-    "people-names"
-  ]
+  "cSpell.import": ["@cspell/dict-people-names/cspell-ext.json"],
+  "cSpell.dictionaries": ["people-names"],
 }
 ```
 
@@ -35,12 +29,8 @@ Add the following to your VSCode settings:
 
 ```jsonc
 {
-  "import": [
-    "@cspell/dict-people-names/cspell-ext.json"
-  ],
-  "dictionaries": [
-    "people-names"
-  ]
+  "import": ["@cspell/dict-people-names/cspell-ext.json"],
+  "dictionaries": ["people-names"],
 }
 ```
 
@@ -53,14 +43,12 @@ Add the following to your VSCode settings:
 
 ```yaml
 import:
-  - "@cspell/dict-people-names/cspell-ext.json"
+  - '@cspell/dict-people-names/cspell-ext.json'
 dictionaries:
   - people-names
 ```
 
 </details>
-
-
 
 ## CDN Configuration
 
@@ -73,12 +61,8 @@ Add the following to your VSCode settings:
 
 ```jsonc
 {
-  "cSpell.import": [
-    "https://cdn.jsdelivr.net/npm/@cspell/dict-people-names@latest/cspell-ext.json/cspell-ext.json"
-  ],
-  "cSpell.dictionaries": [
-    "people-names"
-  ]
+  "cSpell.import": ["https://cdn.jsdelivr.net/npm/@cspell/dict-people-names@latest/cspell-ext.json/cspell-ext.json"],
+  "cSpell.dictionaries": ["people-names"],
 }
 ```
 
@@ -91,12 +75,8 @@ Add the following to your VSCode settings:
 
 ```jsonc
 {
-  "import": [
-    "https://cdn.jsdelivr.net/npm/@cspell/dict-people-names@latest/cspell-ext.json/cspell-ext.json"
-  ],
-  "dictionaries": [
-    "people-names"
-  ]
+  "import": ["https://cdn.jsdelivr.net/npm/@cspell/dict-people-names@latest/cspell-ext.json/cspell-ext.json"],
+  "dictionaries": ["people-names"],
 }
 ```
 
@@ -115,5 +95,3 @@ dictionaries:
 ```
 
 </details>
-
-

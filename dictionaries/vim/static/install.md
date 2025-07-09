@@ -1,10 +1,8 @@
-
 ## Local Installation
 
 ```sh
 npm install -D @cspell/dict-vim
 ```
-
 
 ## Configuration
 
@@ -17,12 +15,8 @@ Add the following to your VSCode settings:
 
 ```jsonc
 {
-  "cSpell.import": [
-    "@cspell/dict-vim/cspell-ext.json"
-  ],
-  "cSpell.dictionaries": [
-    "vim"
-  ]
+  "cSpell.import": ["@cspell/dict-vim/cspell-ext.json"],
+  "cSpell.dictionaries": ["vim"],
 }
 ```
 
@@ -35,12 +29,8 @@ Add the following to your VSCode settings:
 
 ```jsonc
 {
-  "import": [
-    "@cspell/dict-vim/cspell-ext.json"
-  ],
-  "dictionaries": [
-    "vim"
-  ]
+  "import": ["@cspell/dict-vim/cspell-ext.json"],
+  "dictionaries": ["vim"],
 }
 ```
 
@@ -53,14 +43,12 @@ Add the following to your VSCode settings:
 
 ```yaml
 import:
-  - "@cspell/dict-vim/cspell-ext.json"
+  - '@cspell/dict-vim/cspell-ext.json'
 dictionaries:
   - vim
 ```
 
 </details>
-
-
 
 ## CDN Configuration
 
@@ -73,12 +61,8 @@ Add the following to your VSCode settings:
 
 ```jsonc
 {
-  "cSpell.import": [
-    "https://cdn.jsdelivr.net/npm/@cspell/dict-vim@latest/cspell-ext.json/cspell-ext.json"
-  ],
-  "cSpell.dictionaries": [
-    "vim"
-  ]
+  "cSpell.import": ["https://cdn.jsdelivr.net/npm/@cspell/dict-vim@latest/cspell-ext.json/cspell-ext.json"],
+  "cSpell.dictionaries": ["vim"],
 }
 ```
 
@@ -91,12 +75,8 @@ Add the following to your VSCode settings:
 
 ```jsonc
 {
-  "import": [
-    "https://cdn.jsdelivr.net/npm/@cspell/dict-vim@latest/cspell-ext.json/cspell-ext.json"
-  ],
-  "dictionaries": [
-    "vim"
-  ]
+  "import": ["https://cdn.jsdelivr.net/npm/@cspell/dict-vim@latest/cspell-ext.json/cspell-ext.json"],
+  "dictionaries": ["vim"],
 }
 ```
 
@@ -115,5 +95,3 @@ dictionaries:
 ```
 
 </details>
-
-

@@ -1,8 +1,6 @@
-
 ## Local Installation
 
 **This package is bundled with CSpell.**
-
 
 ## Configuration
 
@@ -15,7 +13,7 @@ Add the following to your VSCode settings:
 
 ```jsonc
 {
-  "cSpell.language": "lorem, lorem-ipsum"
+  "cSpell.language": "lorem, lorem-ipsum",
 }
 ```
 
@@ -28,7 +26,7 @@ Add the following to your VSCode settings:
 
 ```jsonc
 {
-  "language": "lorem, lorem-ipsum"
+  "language": "lorem, lorem-ipsum",
 }
 ```
 
@@ -45,8 +43,4 @@ language: lorem, lorem-ipsum
 
 </details>
 
-
-
 > Note: **This package is bundled with CSpell.**
-
-

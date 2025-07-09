@@ -1,10 +1,8 @@
-
 ## Local Installation
 
 ```sh
 npm install -D @cspell/dict-et-ee
 ```
-
 
 ## Configuration
 
@@ -17,10 +15,8 @@ Add the following to your VSCode settings:
 
 ```jsonc
 {
-  "cSpell.import": [
-    "@cspell/dict-et-ee/cspell-ext.json"
-  ],
-  "cSpell.language": "et, et-EE"
+  "cSpell.import": ["@cspell/dict-et-ee/cspell-ext.json"],
+  "cSpell.language": "et, et-EE",
 }
 ```
 
@@ -33,10 +29,8 @@ Add the following to your VSCode settings:
 
 ```jsonc
 {
-  "import": [
-    "@cspell/dict-et-ee/cspell-ext.json"
-  ],
-  "language": "et, et-EE"
+  "import": ["@cspell/dict-et-ee/cspell-ext.json"],
+  "language": "et, et-EE",
 }
 ```
 
@@ -49,13 +43,11 @@ Add the following to your VSCode settings:
 
 ```yaml
 import:
-  - "@cspell/dict-et-ee/cspell-ext.json"
+  - '@cspell/dict-et-ee/cspell-ext.json'
 language: et, et-EE
 ```
 
 </details>
-
-
 
 ## CDN Configuration
 
@@ -68,10 +60,8 @@ Add the following to your VSCode settings:
 
 ```jsonc
 {
-  "cSpell.import": [
-    "https://cdn.jsdelivr.net/npm/@cspell/dict-et-ee@latest/cspell-ext.json/cspell-ext.json"
-  ],
-  "cSpell.language": "et, et-EE"
+  "cSpell.import": ["https://cdn.jsdelivr.net/npm/@cspell/dict-et-ee@latest/cspell-ext.json/cspell-ext.json"],
+  "cSpell.language": "et, et-EE",
 }
 ```
 
@@ -84,10 +74,8 @@ Add the following to your VSCode settings:
 
 ```jsonc
 {
-  "import": [
-    "https://cdn.jsdelivr.net/npm/@cspell/dict-et-ee@latest/cspell-ext.json/cspell-ext.json"
-  ],
-  "language": "et, et-EE"
+  "import": ["https://cdn.jsdelivr.net/npm/@cspell/dict-et-ee@latest/cspell-ext.json/cspell-ext.json"],
+  "language": "et, et-EE",
 }
 ```
 
@@ -105,5 +93,3 @@ language: et, et-EE
 ```
 
 </details>
-
-

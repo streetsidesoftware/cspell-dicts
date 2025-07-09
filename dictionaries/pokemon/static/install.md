@@ -1,10 +1,8 @@
-
 ## Local Installation
 
 ```sh
 npm install -D @cspell/dict-pokemon
 ```
-
 
 ## Configuration
 
@@ -17,12 +15,8 @@ Add the following to your VSCode settings:
 
 ```jsonc
 {
-  "cSpell.import": [
-    "@cspell/dict-pokemon/cspell-ext.json"
-  ],
-  "cSpell.dictionaries": [
-    "pokemon"
-  ]
+  "cSpell.import": ["@cspell/dict-pokemon/cspell-ext.json"],
+  "cSpell.dictionaries": ["pokemon"],
 }
 ```
 
@@ -35,12 +29,8 @@ Add the following to your VSCode settings:
 
 ```jsonc
 {
-  "import": [
-    "@cspell/dict-pokemon/cspell-ext.json"
-  ],
-  "dictionaries": [
-    "pokemon"
-  ]
+  "import": ["@cspell/dict-pokemon/cspell-ext.json"],
+  "dictionaries": ["pokemon"],
 }
 ```
 
@@ -53,14 +43,12 @@ Add the following to your VSCode settings:
 
 ```yaml
 import:
-  - "@cspell/dict-pokemon/cspell-ext.json"
+  - '@cspell/dict-pokemon/cspell-ext.json'
 dictionaries:
   - pokemon
 ```
 
 </details>
-
-
 
 ## CDN Configuration
 
@@ -73,12 +61,8 @@ Add the following to your VSCode settings:
 
 ```jsonc
 {
-  "cSpell.import": [
-    "https://cdn.jsdelivr.net/npm/@cspell/dict-pokemon@latest/cspell-ext.json/cspell-ext.json"
-  ],
-  "cSpell.dictionaries": [
-    "pokemon"
-  ]
+  "cSpell.import": ["https://cdn.jsdelivr.net/npm/@cspell/dict-pokemon@latest/cspell-ext.json/cspell-ext.json"],
+  "cSpell.dictionaries": ["pokemon"],
 }
 ```
 
@@ -91,12 +75,8 @@ Add the following to your VSCode settings:
 
 ```jsonc
 {
-  "import": [
-    "https://cdn.jsdelivr.net/npm/@cspell/dict-pokemon@latest/cspell-ext.json/cspell-ext.json"
-  ],
-  "dictionaries": [
-    "pokemon"
-  ]
+  "import": ["https://cdn.jsdelivr.net/npm/@cspell/dict-pokemon@latest/cspell-ext.json/cspell-ext.json"],
+  "dictionaries": ["pokemon"],
 }
 ```
 
@@ -115,5 +95,3 @@ dictionaries:
 ```
 
 </details>
-
-

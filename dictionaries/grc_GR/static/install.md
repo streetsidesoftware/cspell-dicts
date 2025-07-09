@@ -1,10 +1,8 @@
-
 ## Local Installation
 
 ```sh
 npm install -D @cspell/dict-grc
 ```
-
 
 ## Configuration
 
@@ -17,10 +15,8 @@ Add the following to your VSCode settings:
 
 ```jsonc
 {
-  "cSpell.import": [
-    "@cspell/dict-grc/cspell-ext.json"
-  ],
-  "cSpell.language": "el-GRC, gr, grc, grc_GR"
+  "cSpell.import": ["@cspell/dict-grc/cspell-ext.json"],
+  "cSpell.language": "el-GRC, gr, grc, grc_GR",
 }
 ```
 
@@ -33,10 +29,8 @@ Add the following to your VSCode settings:
 
 ```jsonc
 {
-  "import": [
-    "@cspell/dict-grc/cspell-ext.json"
-  ],
-  "language": "el-GRC, gr, grc, grc_GR"
+  "import": ["@cspell/dict-grc/cspell-ext.json"],
+  "language": "el-GRC, gr, grc, grc_GR",
 }
 ```
 
@@ -49,13 +43,11 @@ Add the following to your VSCode settings:
 
 ```yaml
 import:
-  - "@cspell/dict-grc/cspell-ext.json"
+  - '@cspell/dict-grc/cspell-ext.json'
 language: el-GRC, gr, grc, grc_GR
 ```
 
 </details>
-
-
 
 ## CDN Configuration
 
@@ -68,10 +60,8 @@ Add the following to your VSCode settings:
 
 ```jsonc
 {
-  "cSpell.import": [
-    "https://cdn.jsdelivr.net/npm/@cspell/dict-grc@latest/cspell-ext.json/cspell-ext.json"
-  ],
-  "cSpell.language": "el-GRC, gr, grc, grc_GR"
+  "cSpell.import": ["https://cdn.jsdelivr.net/npm/@cspell/dict-grc@latest/cspell-ext.json/cspell-ext.json"],
+  "cSpell.language": "el-GRC, gr, grc, grc_GR",
 }
 ```
 
@@ -84,10 +74,8 @@ Add the following to your VSCode settings:
 
 ```jsonc
 {
-  "import": [
-    "https://cdn.jsdelivr.net/npm/@cspell/dict-grc@latest/cspell-ext.json/cspell-ext.json"
-  ],
-  "language": "el-GRC, gr, grc, grc_GR"
+  "import": ["https://cdn.jsdelivr.net/npm/@cspell/dict-grc@latest/cspell-ext.json/cspell-ext.json"],
+  "language": "el-GRC, gr, grc, grc_GR",
 }
 ```
 
@@ -105,5 +93,3 @@ language: el-GRC, gr, grc, grc_GR
 ```
 
 </details>
-
-

@@ -1,8 +1,6 @@
-
 ## Local Installation
 
 **This package is bundled with CSpell.**
-
 
 ## Configuration
 
@@ -15,10 +13,7 @@ Add the following to your VSCode settings:
 
 ```jsonc
 {
-  "cSpell.dictionaries": [
-    "cryptocurrencies",
-    "cryptocurrencies-legacy"
-  ]
+  "cSpell.dictionaries": ["cryptocurrencies", "cryptocurrencies-legacy"],
 }
 ```
 
@@ -31,10 +26,7 @@ Add the following to your VSCode settings:
 
 ```jsonc
 {
-  "dictionaries": [
-    "cryptocurrencies",
-    "cryptocurrencies-legacy"
-  ]
+  "dictionaries": ["cryptocurrencies", "cryptocurrencies-legacy"],
 }
 ```
 
@@ -53,8 +45,4 @@ dictionaries:
 
 </details>
 
-
-
 > Note: **This package is bundled with CSpell.**
-
-

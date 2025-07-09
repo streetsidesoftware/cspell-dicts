@@ -1,10 +1,8 @@
-
 ## Local Installation
 
 ```sh
 npm install -D @cspell/dict-redis
 ```
-
 
 ## Configuration
 
@@ -17,12 +15,8 @@ Add the following to your VSCode settings:
 
 ```jsonc
 {
-  "cSpell.import": [
-    "@cspell/dict-redis/cspell-ext.json"
-  ],
-  "cSpell.dictionaries": [
-    "redis"
-  ]
+  "cSpell.import": ["@cspell/dict-redis/cspell-ext.json"],
+  "cSpell.dictionaries": ["redis"],
 }
 ```
 
@@ -35,12 +29,8 @@ Add the following to your VSCode settings:
 
 ```jsonc
 {
-  "import": [
-    "@cspell/dict-redis/cspell-ext.json"
-  ],
-  "dictionaries": [
-    "redis"
-  ]
+  "import": ["@cspell/dict-redis/cspell-ext.json"],
+  "dictionaries": ["redis"],
 }
 ```
 
@@ -53,14 +43,12 @@ Add the following to your VSCode settings:
 
 ```yaml
 import:
-  - "@cspell/dict-redis/cspell-ext.json"
+  - '@cspell/dict-redis/cspell-ext.json'
 dictionaries:
   - redis
 ```
 
 </details>
-
-
 
 ## CDN Configuration
 
@@ -73,12 +61,8 @@ Add the following to your VSCode settings:
 
 ```jsonc
 {
-  "cSpell.import": [
-    "https://cdn.jsdelivr.net/npm/@cspell/dict-redis@latest/cspell-ext.json/cspell-ext.json"
-  ],
-  "cSpell.dictionaries": [
-    "redis"
-  ]
+  "cSpell.import": ["https://cdn.jsdelivr.net/npm/@cspell/dict-redis@latest/cspell-ext.json/cspell-ext.json"],
+  "cSpell.dictionaries": ["redis"],
 }
 ```
 
@@ -91,12 +75,8 @@ Add the following to your VSCode settings:
 
 ```jsonc
 {
-  "import": [
-    "https://cdn.jsdelivr.net/npm/@cspell/dict-redis@latest/cspell-ext.json/cspell-ext.json"
-  ],
-  "dictionaries": [
-    "redis"
-  ]
+  "import": ["https://cdn.jsdelivr.net/npm/@cspell/dict-redis@latest/cspell-ext.json/cspell-ext.json"],
+  "dictionaries": ["redis"],
 }
 ```
 
@@ -115,5 +95,3 @@ dictionaries:
 ```
 
 </details>
-
-
