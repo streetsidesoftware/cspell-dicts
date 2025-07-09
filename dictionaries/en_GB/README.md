@@ -4,39 +4,11 @@ British English dictionary for cspell.
 
 This is a pre-built dictionary for use with cspell.
 
-## Requirements
+<!--- @@inject: ../../static/requirements.md --->
 
-| Tool                                                                                                                                 | Version |
-| ------------------------------------------------------------------------------------------------------------------------------------ | ------- |
-| [cspell](https://github.com/streetsidesoftware/cspell)                                                                               | `>= 6`  |
-| [Code Spell Checker - Visual Studio Code](https://marketplace.visualstudio.com/items?itemName=streetsidesoftware.code-spell-checker) | `>= 2`  |
+<!--- @@inject: ./static/install.md --->
 
-## Installation
-
-Global Install and add to cspell global settings.
-
-```sh
-npm install -g @cspell/dict-en-gb
-cspell link add @cspell/dict-en-gb
-```
-
-## Uninstall from cspell
-
-```sh
-cspell link remove @cspell/dict-en-gb
-```
-
-## Manual Installation
-
-The `cspell-ext.json` file in this package should be added to the import section in your cspell.json file.
-
-```javascript
-{
-    // …
-    "import": ["@cspell/dict-en-gb/cspell-ext.json"],
-    // …
-}
-```
+<!--- @@inject: ../../static/contributing.md --->
 
 ## Adding Words
 

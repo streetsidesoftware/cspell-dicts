@@ -4,39 +4,11 @@ British English dictionary for cspell.
 
 Use this dictionary if you do not want the (-ize) spelling variants commonly used in US English.
 
-## Requirements
+<!--- @@inject: ../../static/requirements.md --->
 
-| Tool                                                                                                                                 | Version |
-| ------------------------------------------------------------------------------------------------------------------------------------ | ------- |
-| [cspell](https://github.com/streetsidesoftware/cspell)                                                                               | `>= 6`  |
-| [Code Spell Checker - Visual Studio Code](https://marketplace.visualstudio.com/items?itemName=streetsidesoftware.code-spell-checker) | `>= 2`  |
+<!--- @@inject: ./static/install.md --->
 
-## Installation
-
-Global Install and add to cspell global settings.
-
-```sh
-npm install -g @cspell/dict-en-gb-ise
-cspell link add @cspell/dict-en-gb-ise
-```
-
-## Uninstall from cspell
-
-```sh
-cspell link remove @cspell/dict-en-gb-ise
-```
-
-## Manual Installation
-
-The `cspell-ext.json` file in this package should be added to the import section in your cspell.json file.
-
-```javascript
-{
-    // …
-    "import": ["@cspell/dict-en-gb-ise/cspell-ext.json"],
-    // …
-}
-```
+<!--- @@inject: ../../static/contributing.md --->
 
 ## Adding Words
 

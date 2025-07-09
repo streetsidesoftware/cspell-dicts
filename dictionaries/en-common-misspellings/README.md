@@ -4,45 +4,11 @@ Common English Misspellings dictionary for cspell.
 
 This is a pre-built dictionary for use with CSpell.
 
-## Requirements
+<!--- @@inject: ../../static/requirements.md --->
 
-| Tool                                                                                                                                 | Version      |
-| ------------------------------------------------------------------------------------------------------------------------------------ | ------------ |
-| [cspell](https://github.com/streetsidesoftware/cspell)                                                                               | `>= 6.25.0 ` |
-| [Code Spell Checker - Visual Studio Code](https://marketplace.visualstudio.com/items?itemName=streetsidesoftware.code-spell-checker) | `>= 2.17.0`  |
+<!--- @@inject: ./static/install.md --->
 
-## Installation
-
-Global Install and add to CSpell global settings.
-
-```sh
-npm install -g @cspell/dict-en-common-misspellings
-cspell link add @cspell/dict-en-common-misspellings
-```
-
-## Uninstall from CSpell
-
-```sh
-cspell link remove @cspell/dict-en-common-misspellings
-```
-
-## Manual Installation
-
-Manual installation is useful if you want to include this dictionary as part of your CI/CD lint process.
-
-```
-npm i @cspell/dict-en-common-misspellings
-```
-
-The `cspell-ext.json` file in this package should be added to the import section in your `cspell.json` file.
-
-```javascript
-{
-    // …
-    "import": ["@cspell/dict-en-common-misspellings/cspell-ext.json"],
-    // …
-}
-```
+<!--- @@inject: ../../static/contributing.md --->
 
 ## Reference
 
