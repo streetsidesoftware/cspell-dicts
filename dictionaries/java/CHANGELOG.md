@@ -3,6 +3,13 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+## [5.0.12](https://github.com/streetsidesoftware/cspell-dicts/compare/@cspell/dict-java@5.0.11...@cspell/dict-java@5.0.12) (2025-07-09)
+
+
+### Updates and Bug Fixes
+
+* Improve install documentation ([#4640](https://github.com/streetsidesoftware/cspell-dicts/issues/4640)) ([ce83729](https://github.com/streetsidesoftware/cspell-dicts/commit/ce837295163125b6ff57494d9de1609edc6204e6))
+
 ## [5.0.11](https://github.com/streetsidesoftware/cspell-dicts/compare/@cspell/dict-java@5.0.10...@cspell/dict-java@5.0.11) (2024-12-30)
 
 

@@ -22,6 +22,13 @@ See [Conventional Commits](https://conventionalcommits.org) for commit guideline
 
 
 
+## [4.1.6](https://github.com/streetsidesoftware/cspell-dicts/compare/@cspell/dict-medicalterms@4.1.5...@cspell/dict-medicalterms@4.1.6) (2025-07-09)
+
+
+### Updates and Bug Fixes
+
+* Improve install documentation ([#4640](https://github.com/streetsidesoftware/cspell-dicts/issues/4640)) ([ce83729](https://github.com/streetsidesoftware/cspell-dicts/commit/ce837295163125b6ff57494d9de1609edc6204e6))
+
 ## [4.1.5](https://github.com/streetsidesoftware/cspell-dicts/compare/@cspell/dict-medicalterms@4.1.4...@cspell/dict-medicalterms@4.1.5) (2024-10-11)
 
 
