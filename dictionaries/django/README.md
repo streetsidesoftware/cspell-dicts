@@ -4,43 +4,91 @@ Django dictionary for cspell.
 
 This is a pre-built dictionary for use with cspell.
 
+<!--- @@inject: ../../static/requirements.md --->
+
 ## Requirements
 
 | Tool                                                                                                                                 | Version |
 | ------------------------------------------------------------------------------------------------------------------------------------ | ------- |
-| [cspell](https://github.com/streetsidesoftware/cspell)                                                                               | `>= 6`  |
-| [Code Spell Checker - Visual Studio Code](https://marketplace.visualstudio.com/items?itemName=streetsidesoftware.code-spell-checker) | `>= 2`  |
+| [cspell](https://github.com/streetsidesoftware/cspell)                                                                               | `>= 8`  |
+| [Code Spell Checker - Visual Studio Code](https://marketplace.visualstudio.com/items?itemName=streetsidesoftware.code-spell-checker) | `>= 4`  |
 
-## Installation
+<!--- @@inject-end: ../../static/requirements.md --->
 
-Global Install and add to cspell global settings.
+<!--- @@inject: ./static/install.md --->
 
-```sh
-npm install -g @cspell/dict-django
-cspell link add @cspell/dict-django
-```
+## Local Installation
 
-## Uninstall from cspell
+**This package is bundled with CSpell.**
 
-```sh
-cspell link remove @cspell/dict-django
-```
+## Configuration
 
-## Manual Installation
+<details>
+<summary>VSCode Settings</summary>
 
-The `cspell-ext.json` file in this package should be added to the import section in your cspell.json file.
+Add the following to your VSCode settings:
 
-```javascript
+**`.vscode/settings.json`**
+
+```jsonc
 {
-    // …
-    "import": ["@cspell/dict-django/cspell-ext.json"],
-    // …
+  "cSpell.dictionaries": ["django"],
 }
 ```
 
+</details>
+
+<details>
+<summary>CSpell Settings `cspell.json`</summary>
+
+**`cspell.json`**
+
+```jsonc
+{
+  "dictionaries": ["django"],
+}
+```
+
+</details>
+
+<details>
+<summary>CSpell Settings `cspell.config.yaml`</summary>
+
+**`cspell.config.yaml`**
+
+```yaml
+dictionaries:
+  - django
+```
+
+</details>
+
+> [!NOTE]
+> **This package is bundled with CSpell.**
+
+<!--- @@inject-end: ./static/install.md --->
+
+<!--- @@inject: ../../static/contributing.md --->
+
+## Contributing
+
+Please help correct any mistakes in the dictionaries.
+
+See: [Contributing](https://github.com/streetsidesoftware/cspell-dicts#contributing)
+
+Special thanks to all of our amazing contributors!
+
+### Dictionary Development
+
+See: [How to Create a New Dictionary](https://github.com/streetsidesoftware/cspell-dicts#how-to-create-a-new-dictionary)
+
+<!--- @@inject-end: ../../static/contributing.md --->
+
 ## Updating
 
-This dictionary is generated from django's official documentation index : https://docs.djangoproject.com/en/`VERSION`/genindex/.
+<!--- cspell:ignore genindex --->
+
+This dictionary is generated from django's official documentation index : [genindex/](https://docs.djangoproject.com/en/`VERSION`/genindex/).
 To update it, edit `update.py`to match wanted django's `VERSION`, install requirements ([requests](http://docs.python-requests.org) and [BeautifulSoup](https://www.crummy.com/software/BeautifulSoup/)) and run the script :
 
 ```sh
@@ -48,14 +96,20 @@ pip install -r requirements.txt
 python update.py
 ```
 
-## Building
-
-Building is only necessary if you want to modify the contents of the dictionary. Note: Building will take a few minutes for large files.
-
-```sh
-npm run build
-```
-
 ## License
 
 WTFPL
+
+<!--- @@inject: ../../static/footer.md --->
+
+<br/>
+
+---
+
+<p align="center">
+Brought to you by <a href="https://streetsidesoftware.com" title="Street Side Software">
+<img width="16" alt="Street Side Software Logo" src="https://i.imgur.com/CyduuVY.png" /> Street Side Software
+</a>
+</p>
+
+<!--- @@inject-end: ../../static/footer.md --->

@@ -5,32 +5,132 @@ British English Legacy dictionary for cspell.
 This dictionary includes words that had been included in older versions of the en_GB dictionary.
 They have been moved here to make the en_GB dictionary easier to maintain.
 
+<!--- @@inject: ../../static/requirements.md --->
+
 ## Requirements
 
 | Tool                                                                                                                                 | Version |
 | ------------------------------------------------------------------------------------------------------------------------------------ | ------- |
-| [cspell](https://github.com/streetsidesoftware/cspell)                                                                               | `>= 6`  |
-| [Code Spell Checker - Visual Studio Code](https://marketplace.visualstudio.com/items?itemName=streetsidesoftware.code-spell-checker) | `>= 2`  |
+| [cspell](https://github.com/streetsidesoftware/cspell)                                                                               | `>= 8`  |
+| [Code Spell Checker - Visual Studio Code](https://marketplace.visualstudio.com/items?itemName=streetsidesoftware.code-spell-checker) | `>= 4`  |
 
-## Installation
+<!--- @@inject-end: ../../static/requirements.md --->
 
-Global Install and add to cspell global settings.
+<!--- @@inject: ./static/install.md --->
+
+## Local Installation
 
 ```sh
-npm install @cspell/dict-en-gb-legacy
+npm install -D @cspell/dict-en-gb-legacy
 ```
 
-## Manual Installation
+## Configuration
 
-The `cspell-ext.json` file in this package should be added to the import section in your cspell.json file.
+<details>
+<summary>VSCode Settings</summary>
 
-```javascript
+Add the following to your VSCode settings:
+
+**`.vscode/settings.json`**
+
+```jsonc
 {
-    // …
-    "import": ["@cspell/dict-en-gb/cspell-ext.json"],
-    // …
+  "cSpell.import": ["@cspell/dict-en-gb-legacy/cspell-ext.json"],
+  "cSpell.language": "en-GB",
 }
 ```
+
+</details>
+
+<details>
+<summary>CSpell Settings `cspell.json`</summary>
+
+**`cspell.json`**
+
+```jsonc
+{
+  "import": ["@cspell/dict-en-gb-legacy/cspell-ext.json"],
+  "language": "en-GB",
+}
+```
+
+</details>
+
+<details>
+<summary>CSpell Settings `cspell.config.yaml`</summary>
+
+**`cspell.config.yaml`**
+
+```yaml
+import:
+  - '@cspell/dict-en-gb-legacy/cspell-ext.json'
+language: en-GB
+```
+
+</details>
+
+## CDN Configuration
+
+<details>
+<summary>VSCode Settings</summary>
+
+Add the following to your VSCode settings:
+
+**`.vscode/settings.json`**
+
+```jsonc
+{
+  "cSpell.import": ["https://cdn.jsdelivr.net/npm/@cspell/dict-en-gb-legacy@latest/cspell-ext.json/cspell-ext.json"],
+  "cSpell.language": "en-GB",
+}
+```
+
+</details>
+
+<details>
+<summary>CSpell Settings `cspell.json`</summary>
+
+**`cspell.json`**
+
+```jsonc
+{
+  "import": ["https://cdn.jsdelivr.net/npm/@cspell/dict-en-gb-legacy@latest/cspell-ext.json/cspell-ext.json"],
+  "language": "en-GB",
+}
+```
+
+</details>
+
+<details>
+<summary>CSpell Settings `cspell.config.yaml`</summary>
+
+**`cspell.config.yaml`**
+
+```yaml
+import:
+  - https://cdn.jsdelivr.net/npm/@cspell/dict-en-gb-legacy@latest/cspell-ext.json/cspell-ext.json
+language: en-GB
+```
+
+</details>
+
+<!--- @@inject-end: ./static/install.md --->
+
+<!--- @@inject: ../../static/contributing.md --->
+
+## Contributing
+
+Please help correct any mistakes in the dictionaries.
+
+See: [Contributing](https://github.com/streetsidesoftware/cspell-dicts#contributing)
+
+Special thanks to all of our amazing contributors!
+
+### Dictionary Development
+
+See: [How to Create a New Dictionary](https://github.com/streetsidesoftware/cspell-dicts#how-to-create-a-new-dictionary)
+
+<!--- @@inject-end: ../../static/contributing.md --->
 
 ## License
 

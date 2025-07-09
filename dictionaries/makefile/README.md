@@ -4,42 +4,85 @@ Makefile dictionary for cspell.
 
 This is a pre-built dictionary for use with CSpell.
 
-## Installation
+<!--- @@inject: ../../static/requirements.md --->
 
-Global Install and add to CSpell global settings.
+## Requirements
 
-```sh
-npm install -g @cspell/dict-makefile
-cspell link add @cspell/dict-makefile
-```
+| Tool                                                                                                                                 | Version |
+| ------------------------------------------------------------------------------------------------------------------------------------ | ------- |
+| [cspell](https://github.com/streetsidesoftware/cspell)                                                                               | `>= 8`  |
+| [Code Spell Checker - Visual Studio Code](https://marketplace.visualstudio.com/items?itemName=streetsidesoftware.code-spell-checker) | `>= 4`  |
 
-## Uninstall from CSpell
+<!--- @@inject-end: ../../static/requirements.md --->
 
-```sh
-cspell link remove @cspell/dict-makefile
-```
+<!--- @@inject: ./static/install.md --->
 
-## Manual Installation
+## Local Installation
 
-Manual installation is useful if you want to include this dictionary as part of your CI/CD lint process.
+**This package is bundled with CSpell.**
 
-```
-npm i @cspell/dict-makefile
-```
+## Configuration
 
-The `cspell-ext.json` file in this package should be added to the import section in your `cspell.json` file.
+<details>
+<summary>VSCode Settings</summary>
 
-```javascript
+Add the following to your VSCode settings:
+
+**`.vscode/settings.json`**
+
+```jsonc
 {
-    // …
-    "import": ["@cspell/dict-makefile/cspell-ext.json"],
-    // …
+  "cSpell.dictionaries": ["makefile"],
 }
 ```
 
-# Dictionary Development
+</details>
+
+<details>
+<summary>CSpell Settings `cspell.json`</summary>
+
+**`cspell.json`**
+
+```jsonc
+{
+  "dictionaries": ["makefile"],
+}
+```
+
+</details>
+
+<details>
+<summary>CSpell Settings `cspell.config.yaml`</summary>
+
+**`cspell.config.yaml`**
+
+```yaml
+dictionaries:
+  - makefile
+```
+
+</details>
+
+> [!NOTE]
+> **This package is bundled with CSpell.**
+
+<!--- @@inject-end: ./static/install.md --->
+
+<!--- @@inject: ../../static/contributing.md --->
+
+## Contributing
+
+Please help correct any mistakes in the dictionaries.
+
+See: [Contributing](https://github.com/streetsidesoftware/cspell-dicts#contributing)
+
+Special thanks to all of our amazing contributors!
+
+### Dictionary Development
 
 See: [How to Create a New Dictionary](https://github.com/streetsidesoftware/cspell-dicts#how-to-create-a-new-dictionary)
+
+<!--- @@inject-end: ../../static/contributing.md --->
 
 ## License
 

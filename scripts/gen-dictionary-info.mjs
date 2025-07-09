@@ -9,6 +9,7 @@ import { format } from 'prettier';
 import { findDictionaryPackages } from './lib/find-dictionary-packages.mjs';
 import { fetchDictionaryInfo } from './lib/dictionaryInfo.mjs';
 import { packageInfoToMarkdown } from './lib/packageInfoToMarkdown.mjs';
+import { writeStaticFilesForPackages } from './lib/gen-dict-static-files.mjs';
 
 const rootUrl = new URL('../', import.meta.url);
 
@@ -19,6 +20,8 @@ async function run() {
         (a) => !!a,
     );
     packageInfo.sort((a, b) => a.dir.localeCompare(b.dir));
+
+    await writeStaticFilesForPackages(packageInfo);
 
     const fileJsonURL = new URL('static/dictionary-packages.json', rootUrl);
 

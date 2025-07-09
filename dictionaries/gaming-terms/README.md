@@ -4,40 +4,103 @@ Gaming dictionary for cspell.
 
 This is a pre-built dictionary for use with CSpell.
 
-## Installation
+<!--- @@inject: ../../static/requirements.md --->
 
-This dictionary comes bundled with the latest versions of `cspell`.
+## Requirements
 
-## Manual Installation
+| Tool                                                                                                                                 | Version |
+| ------------------------------------------------------------------------------------------------------------------------------------ | ------- |
+| [cspell](https://github.com/streetsidesoftware/cspell)                                                                               | `>= 8`  |
+| [Code Spell Checker - Visual Studio Code](https://marketplace.visualstudio.com/items?itemName=streetsidesoftware.code-spell-checker) | `>= 4`  |
 
-Manual installation is useful if you want to include this dictionary as part of your CI/CD lint process.
+<!--- @@inject-end: ../../static/requirements.md --->
 
-```sh
-npm i @cspell/dict-gaming-terms
-```
+<!--- @@inject: ./static/install.md --->
 
-The `cspell-ext.json` file in this package should be added to the import section in your `cspell.json` file.
+## Local Installation
 
-```javascript
+**This package is bundled with CSpell.**
+
+## Configuration
+
+<details>
+<summary>VSCode Settings</summary>
+
+Add the following to your VSCode settings:
+
+**`.vscode/settings.json`**
+
+```jsonc
 {
-    // …
-    // It is necessary to explicitly enable `gaming-terms` and `game-development` dictionaries by
-    // including it in the list of dictionaries.
-    "dictionaries": ["gaming-terms", "game-development"]
-    // …
+  "cSpell.dictionaries": ["gaming-terms", "game-development"],
 }
 ```
 
-## Adding Terms to the Dictionaries
+</details>
 
-See: [`src/README.md`](https://github.com/streetsidesoftware/cspell-dicts/tree/main/dictionaries/gaming-terms/src#readme)
+<details>
+<summary>CSpell Settings `cspell.json`</summary>
 
-## Dictionary Development
+**`cspell.json`**
+
+```jsonc
+{
+  "dictionaries": ["gaming-terms", "game-development"],
+}
+```
+
+</details>
+
+<details>
+<summary>CSpell Settings `cspell.config.yaml`</summary>
+
+**`cspell.config.yaml`**
+
+```yaml
+dictionaries:
+  - gaming-terms
+  - game-development
+```
+
+</details>
+
+> [!NOTE]
+> **This package is bundled with CSpell.**
+
+<!--- @@inject-end: ./static/install.md --->
+
+<!--- @@inject: ../../static/contributing.md --->
+
+## Contributing
+
+Please help correct any mistakes in the dictionaries.
+
+See: [Contributing](https://github.com/streetsidesoftware/cspell-dicts#contributing)
+
+Special thanks to all of our amazing contributors!
+
+### Dictionary Development
 
 See: [How to Create a New Dictionary](https://github.com/streetsidesoftware/cspell-dicts#how-to-create-a-new-dictionary)
+
+<!--- @@inject-end: ../../static/contributing.md --->
 
 ## License
 
 MIT
 
 > Some packages may have other licenses included.
+
+<!--- @@inject: ../../static/footer.md --->
+
+<br/>
+
+---
+
+<p align="center">
+Brought to you by <a href="https://streetsidesoftware.com" title="Street Side Software">
+<img width="16" alt="Street Side Software Logo" src="https://i.imgur.com/CyduuVY.png" /> Street Side Software
+</a>
+</p>
+
+<!--- @@inject-end: ../../static/footer.md --->

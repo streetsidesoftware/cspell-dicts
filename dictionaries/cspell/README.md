@@ -4,23 +4,132 @@ Dictionaries included with the CSpell Command Line tool.
 
 This is a pre-built dictionary for use with CSpell.
 
-## Manual Installation
+<!--- @@inject: ../../static/requirements.md --->
 
-Manual installation is useful if you want to include this dictionary as part of your CI/CD lint process.
+## Requirements
+
+| Tool                                                                                                                                 | Version |
+| ------------------------------------------------------------------------------------------------------------------------------------ | ------- |
+| [cspell](https://github.com/streetsidesoftware/cspell)                                                                               | `>= 8`  |
+| [Code Spell Checker - Visual Studio Code](https://marketplace.visualstudio.com/items?itemName=streetsidesoftware.code-spell-checker) | `>= 4`  |
+
+<!--- @@inject-end: ../../static/requirements.md --->
+
+<!--- @@inject: ./static/install.md --->
+
+## Local Installation
 
 ```sh
-npm i -D @cspell/dict-cspell-bundle
+npm install -D @cspell/dict-cspell-bundle
 ```
 
-The `cspell-ext.json` file in this package should be added to the import section in your `cspell.json` file.
+## Configuration
+
+<details>
+<summary>VSCode Settings</summary>
+
+Add the following to your VSCode settings:
+
+**`.vscode/settings.json`**
 
 ```jsonc
 {
-  // …
-  "import": ["@cspell/dict-cspell-bundle/cspell-ext.json"],
-  // …
+  "cSpell.import": ["@cspell/dict-cspell-bundle/cspell-ext.json"],
+  "cSpell.dictionaries": [],
 }
 ```
+
+</details>
+
+<details>
+<summary>CSpell Settings `cspell.json`</summary>
+
+**`cspell.json`**
+
+```jsonc
+{
+  "import": ["@cspell/dict-cspell-bundle/cspell-ext.json"],
+  "dictionaries": [],
+}
+```
+
+</details>
+
+<details>
+<summary>CSpell Settings `cspell.config.yaml`</summary>
+
+**`cspell.config.yaml`**
+
+```yaml
+import:
+  - '@cspell/dict-cspell-bundle/cspell-ext.json'
+dictionaries: []
+```
+
+</details>
+
+## CDN Configuration
+
+<details>
+<summary>VSCode Settings</summary>
+
+Add the following to your VSCode settings:
+
+**`.vscode/settings.json`**
+
+```jsonc
+{
+  "cSpell.import": ["https://cdn.jsdelivr.net/npm/@cspell/dict-cspell-bundle@latest/cspell-ext.json/cspell-ext.json"],
+  "cSpell.dictionaries": [],
+}
+```
+
+</details>
+
+<details>
+<summary>CSpell Settings `cspell.json`</summary>
+
+**`cspell.json`**
+
+```jsonc
+{
+  "import": ["https://cdn.jsdelivr.net/npm/@cspell/dict-cspell-bundle@latest/cspell-ext.json/cspell-ext.json"],
+  "dictionaries": [],
+}
+```
+
+</details>
+
+<details>
+<summary>CSpell Settings `cspell.config.yaml`</summary>
+
+**`cspell.config.yaml`**
+
+```yaml
+import:
+  - https://cdn.jsdelivr.net/npm/@cspell/dict-cspell-bundle@latest/cspell-ext.json/cspell-ext.json
+dictionaries: []
+```
+
+</details>
+
+<!--- @@inject-end: ./static/install.md --->
+
+<!--- @@inject: ../../static/contributing.md --->
+
+## Contributing
+
+Please help correct any mistakes in the dictionaries.
+
+See: [Contributing](https://github.com/streetsidesoftware/cspell-dicts#contributing)
+
+Special thanks to all of our amazing contributors!
+
+### Dictionary Development
+
+See: [How to Create a New Dictionary](https://github.com/streetsidesoftware/cspell-dicts#how-to-create-a-new-dictionary)
+
+<!--- @@inject-end: ../../static/contributing.md --->
 
 ## License
 

@@ -4,42 +4,134 @@ Emacs Lisp dictionary for cspell.
 
 This is a pre-built dictionary for use with CSpell.
 
-## Installation
+<!--- @@inject: ../../static/requirements.md --->
 
-Global Install and add to CSpell global settings.
+## Requirements
+
+| Tool                                                                                                                                 | Version |
+| ------------------------------------------------------------------------------------------------------------------------------------ | ------- |
+| [cspell](https://github.com/streetsidesoftware/cspell)                                                                               | `>= 8`  |
+| [Code Spell Checker - Visual Studio Code](https://marketplace.visualstudio.com/items?itemName=streetsidesoftware.code-spell-checker) | `>= 4`  |
+
+<!--- @@inject-end: ../../static/requirements.md --->
+
+<!--- @@inject: ./static/install.md --->
+
+## Local Installation
 
 ```sh
-npm install -g @cspell/dict-elisp
-cspell link add @cspell/dict-elisp
+npm install -D @cspell/dict-elisp
 ```
 
-## Uninstall from CSpell
+## Configuration
 
-```sh
-cspell link remove @cspell/dict-elisp
-```
+<details>
+<summary>VSCode Settings</summary>
 
-## Manual Installation
+Add the following to your VSCode settings:
 
-Manual installation is useful if you want to include this dictionary as part of your CI/CD lint process.
+**`.vscode/settings.json`**
 
-```
-npm i @cspell/dict-elisp
-```
-
-The `cspell-ext.json` file in this package should be added to the import section in your `cspell.json` file.
-
-```javascript
+```jsonc
 {
-    // …
-    "import": ["@cspell/dict-elisp/cspell-ext.json"],
-    // …
+  "cSpell.import": ["@cspell/dict-elisp/cspell-ext.json"],
+  "cSpell.dictionaries": ["elisp"],
 }
 ```
 
-# Dictionary Development
+</details>
+
+<details>
+<summary>CSpell Settings `cspell.json`</summary>
+
+**`cspell.json`**
+
+```jsonc
+{
+  "import": ["@cspell/dict-elisp/cspell-ext.json"],
+  "dictionaries": ["elisp"],
+}
+```
+
+</details>
+
+<details>
+<summary>CSpell Settings `cspell.config.yaml`</summary>
+
+**`cspell.config.yaml`**
+
+```yaml
+import:
+  - '@cspell/dict-elisp/cspell-ext.json'
+dictionaries:
+  - elisp
+```
+
+</details>
+
+## CDN Configuration
+
+<details>
+<summary>VSCode Settings</summary>
+
+Add the following to your VSCode settings:
+
+**`.vscode/settings.json`**
+
+```jsonc
+{
+  "cSpell.import": ["https://cdn.jsdelivr.net/npm/@cspell/dict-elisp@latest/cspell-ext.json/cspell-ext.json"],
+  "cSpell.dictionaries": ["elisp"],
+}
+```
+
+</details>
+
+<details>
+<summary>CSpell Settings `cspell.json`</summary>
+
+**`cspell.json`**
+
+```jsonc
+{
+  "import": ["https://cdn.jsdelivr.net/npm/@cspell/dict-elisp@latest/cspell-ext.json/cspell-ext.json"],
+  "dictionaries": ["elisp"],
+}
+```
+
+</details>
+
+<details>
+<summary>CSpell Settings `cspell.config.yaml`</summary>
+
+**`cspell.config.yaml`**
+
+```yaml
+import:
+  - https://cdn.jsdelivr.net/npm/@cspell/dict-elisp@latest/cspell-ext.json/cspell-ext.json
+dictionaries:
+  - elisp
+```
+
+</details>
+
+<!--- @@inject-end: ./static/install.md --->
+
+<!--- @@inject: ../../static/contributing.md --->
+
+## Contributing
+
+Please help correct any mistakes in the dictionaries.
+
+See: [Contributing](https://github.com/streetsidesoftware/cspell-dicts#contributing)
+
+Special thanks to all of our amazing contributors!
+
+### Dictionary Development
 
 See: [How to Create a New Dictionary](https://github.com/streetsidesoftware/cspell-dicts#how-to-create-a-new-dictionary)
+
+<!--- @@inject-end: ../../static/contributing.md --->
 
 ## License
 

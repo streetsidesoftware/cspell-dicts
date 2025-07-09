@@ -4,54 +4,103 @@ Python dictionary for cspell.
 
 This is a pre-built dictionary for use with cspell.
 
+<!--- @@inject: ../../static/requirements.md --->
+
 ## Requirements
 
 | Tool                                                                                                                                 | Version |
 | ------------------------------------------------------------------------------------------------------------------------------------ | ------- |
-| [cspell](https://github.com/streetsidesoftware/cspell)                                                                               | `>= 6`  |
-| [Code Spell Checker - Visual Studio Code](https://marketplace.visualstudio.com/items?itemName=streetsidesoftware.code-spell-checker) | `>= 2`  |
+| [cspell](https://github.com/streetsidesoftware/cspell)                                                                               | `>= 8`  |
+| [Code Spell Checker - Visual Studio Code](https://marketplace.visualstudio.com/items?itemName=streetsidesoftware.code-spell-checker) | `>= 4`  |
 
-## Installation
+<!--- @@inject-end: ../../static/requirements.md --->
 
-Global Install and add to cspell global settings.
+<!--- @@inject: ./static/install.md --->
 
-```sh
-npm install -g @cspell/dict-python
-cspell link add @cspell/dict-python
-```
+## Local Installation
 
-## Uninstall from cspell
+**This package is bundled with CSpell.**
 
-```sh
-cspell link remove @cspell/dict-python
-```
+## Configuration
 
-## Manual Installation
+<details>
+<summary>VSCode Settings</summary>
 
-The `cspell-ext.json` file in this package should be added to the import section in your cspell.json file.
+Add the following to your VSCode settings:
 
-```javascript
+**`.vscode/settings.json`**
+
+```jsonc
 {
-    // …
-    "import": ["@cspell/dict-python/cspell-ext.json"],
-    // …
+  "cSpell.dictionaries": ["python", "python-common"],
 }
 ```
 
-## Requirements
+</details>
 
-Requires `cspell >= 5.5.0`
+<details>
+<summary>CSpell Settings `cspell.json`</summary>
 
-## Building
+**`cspell.json`**
 
-Building is only necessary if you want to modify the contents of the dictionary. Note: Building will take a few minutes for large files.
-
-```sh
-npm run build
+```jsonc
+{
+  "dictionaries": ["python", "python-common"],
+}
 ```
+
+</details>
+
+<details>
+<summary>CSpell Settings `cspell.config.yaml`</summary>
+
+**`cspell.config.yaml`**
+
+```yaml
+dictionaries:
+  - python
+  - python-common
+```
+
+</details>
+
+> [!NOTE]
+> **This package is bundled with CSpell.**
+
+<!--- @@inject-end: ./static/install.md --->
+
+<!--- @@inject: ../../static/contributing.md --->
+
+## Contributing
+
+Please help correct any mistakes in the dictionaries.
+
+See: [Contributing](https://github.com/streetsidesoftware/cspell-dicts#contributing)
+
+Special thanks to all of our amazing contributors!
+
+### Dictionary Development
+
+See: [How to Create a New Dictionary](https://github.com/streetsidesoftware/cspell-dicts#how-to-create-a-new-dictionary)
+
+<!--- @@inject-end: ../../static/contributing.md --->
 
 ## License
 
 MIT
 
 > Some packages may have other licenses included.
+
+<!--- @@inject: ../../static/footer.md --->
+
+<br/>
+
+---
+
+<p align="center">
+Brought to you by <a href="https://streetsidesoftware.com" title="Street Side Software">
+<img width="16" alt="Street Side Software Logo" src="https://i.imgur.com/CyduuVY.png" /> Street Side Software
+</a>
+</p>
+
+<!--- @@inject-end: ../../static/footer.md --->

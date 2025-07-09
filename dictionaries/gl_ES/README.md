@@ -4,46 +4,136 @@ Galician Dictionary (Spain)
 
 This is a pre-built dictionary for use with CSpell.
 
-## Installation
+<!--- @@inject: ../../static/requirements.md --->
 
-Global Install and add to CSpell global settings.
+## Requirements
+
+| Tool                                                                                                                                 | Version |
+| ------------------------------------------------------------------------------------------------------------------------------------ | ------- |
+| [cspell](https://github.com/streetsidesoftware/cspell)                                                                               | `>= 8`  |
+| [Code Spell Checker - Visual Studio Code](https://marketplace.visualstudio.com/items?itemName=streetsidesoftware.code-spell-checker) | `>= 4`  |
+
+<!--- @@inject-end: ../../static/requirements.md --->
+
+<!--- @@inject: ./static/install.md --->
+
+## Local Installation
 
 ```sh
-npm install -g @cspell/dict-gl-es
-cspell link add @cspell/dict-gl-es
+npm install -D @cspell/dict-gl-es
 ```
 
-## Uninstall from CSpell
+## Configuration
 
-```sh
-cspell link remove @cspell/dict-gl-es
-```
+<details>
+<summary>VSCode Settings</summary>
 
-## Manual Installation
+Add the following to your VSCode settings:
 
-Manual installation is useful if you want to include this dictionary as part of your CI/CD lint process.
+**`.vscode/settings.json`**
 
-```
-npm i @cspell/dict-gl-es
-```
-
-The `cspell-ext.json` file in this package should be added to the import section in your `cspell.json` file.
-
-```javascript
+```jsonc
 {
-    // …
-    "import": ["@cspell/dict-gl-es/cspell-ext.json"],
-    // …
+  "cSpell.import": ["@cspell/dict-gl-es/cspell-ext.json"],
+  "cSpell.language": "gl, gl_ES",
 }
 ```
+
+</details>
+
+<details>
+<summary>CSpell Settings `cspell.json`</summary>
+
+**`cspell.json`**
+
+```jsonc
+{
+  "import": ["@cspell/dict-gl-es/cspell-ext.json"],
+  "language": "gl, gl_ES",
+}
+```
+
+</details>
+
+<details>
+<summary>CSpell Settings `cspell.config.yaml`</summary>
+
+**`cspell.config.yaml`**
+
+```yaml
+import:
+  - '@cspell/dict-gl-es/cspell-ext.json'
+language: gl, gl_ES
+```
+
+</details>
+
+## CDN Configuration
+
+<details>
+<summary>VSCode Settings</summary>
+
+Add the following to your VSCode settings:
+
+**`.vscode/settings.json`**
+
+```jsonc
+{
+  "cSpell.import": ["https://cdn.jsdelivr.net/npm/@cspell/dict-gl-es@latest/cspell-ext.json/cspell-ext.json"],
+  "cSpell.language": "gl, gl_ES",
+}
+```
+
+</details>
+
+<details>
+<summary>CSpell Settings `cspell.json`</summary>
+
+**`cspell.json`**
+
+```jsonc
+{
+  "import": ["https://cdn.jsdelivr.net/npm/@cspell/dict-gl-es@latest/cspell-ext.json/cspell-ext.json"],
+  "language": "gl, gl_ES",
+}
+```
+
+</details>
+
+<details>
+<summary>CSpell Settings `cspell.config.yaml`</summary>
+
+**`cspell.config.yaml`**
+
+```yaml
+import:
+  - https://cdn.jsdelivr.net/npm/@cspell/dict-gl-es@latest/cspell-ext.json/cspell-ext.json
+language: gl, gl_ES
+```
+
+</details>
+
+<!--- @@inject-end: ./static/install.md --->
+
+<!--- @@inject: ../../static/contributing.md --->
+
+## Contributing
+
+Please help correct any mistakes in the dictionaries.
+
+See: [Contributing](https://github.com/streetsidesoftware/cspell-dicts#contributing)
+
+Special thanks to all of our amazing contributors!
+
+### Dictionary Development
+
+See: [How to Create a New Dictionary](https://github.com/streetsidesoftware/cspell-dicts#how-to-create-a-new-dictionary)
+
+<!--- @@inject-end: ../../static/contributing.md --->
 
 ## Adding Words
 
 Please add any words to [src/additional_words.txt](https://github.com/streetsidesoftware/cspell-dicts/blob/main/dictionaries/gl_ES/src/additional_words.txt) by making a pull request.
-
-# Dictionary Development
-
-See: [How to Create a New Dictionary](https://github.com/streetsidesoftware/cspell-dicts#how-to-create-a-new-dictionary)
 
 ## License
 

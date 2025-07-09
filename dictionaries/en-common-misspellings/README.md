@@ -4,45 +4,84 @@ Common English Misspellings dictionary for cspell.
 
 This is a pre-built dictionary for use with CSpell.
 
+<!--- @@inject: ../../static/requirements.md --->
+
 ## Requirements
 
-| Tool                                                                                                                                 | Version      |
-| ------------------------------------------------------------------------------------------------------------------------------------ | ------------ |
-| [cspell](https://github.com/streetsidesoftware/cspell)                                                                               | `>= 6.25.0 ` |
-| [Code Spell Checker - Visual Studio Code](https://marketplace.visualstudio.com/items?itemName=streetsidesoftware.code-spell-checker) | `>= 2.17.0`  |
+| Tool                                                                                                                                 | Version |
+| ------------------------------------------------------------------------------------------------------------------------------------ | ------- |
+| [cspell](https://github.com/streetsidesoftware/cspell)                                                                               | `>= 8`  |
+| [Code Spell Checker - Visual Studio Code](https://marketplace.visualstudio.com/items?itemName=streetsidesoftware.code-spell-checker) | `>= 4`  |
 
-## Installation
+<!--- @@inject-end: ../../static/requirements.md --->
 
-Global Install and add to CSpell global settings.
+<!--- @@inject: ./static/install.md --->
 
-```sh
-npm install -g @cspell/dict-en-common-misspellings
-cspell link add @cspell/dict-en-common-misspellings
-```
+## Local Installation
 
-## Uninstall from CSpell
+**This package is bundled with CSpell.**
 
-```sh
-cspell link remove @cspell/dict-en-common-misspellings
-```
+## Configuration
 
-## Manual Installation
+<details>
+<summary>VSCode Settings</summary>
 
-Manual installation is useful if you want to include this dictionary as part of your CI/CD lint process.
+Add the following to your VSCode settings:
 
-```
-npm i @cspell/dict-en-common-misspellings
-```
+**`.vscode/settings.json`**
 
-The `cspell-ext.json` file in this package should be added to the import section in your `cspell.json` file.
-
-```javascript
+```jsonc
 {
-    // …
-    "import": ["@cspell/dict-en-common-misspellings/cspell-ext.json"],
-    // …
+  "cSpell.language": "en, en-gb, en-us",
 }
 ```
+
+</details>
+
+<details>
+<summary>CSpell Settings `cspell.json`</summary>
+
+**`cspell.json`**
+
+```jsonc
+{
+  "language": "en, en-gb, en-us",
+}
+```
+
+</details>
+
+<details>
+<summary>CSpell Settings `cspell.config.yaml`</summary>
+
+**`cspell.config.yaml`**
+
+```yaml
+language: en, en-gb, en-us
+```
+
+</details>
+
+> [!NOTE]
+> **This package is bundled with CSpell.**
+
+<!--- @@inject-end: ./static/install.md --->
+
+<!--- @@inject: ../../static/contributing.md --->
+
+## Contributing
+
+Please help correct any mistakes in the dictionaries.
+
+See: [Contributing](https://github.com/streetsidesoftware/cspell-dicts#contributing)
+
+Special thanks to all of our amazing contributors!
+
+### Dictionary Development
+
+See: [How to Create a New Dictionary](https://github.com/streetsidesoftware/cspell-dicts#how-to-create-a-new-dictionary)
+
+<!--- @@inject-end: ../../static/contributing.md --->
 
 ## Reference
 

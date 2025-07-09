@@ -6,40 +6,84 @@ This is a pre-built dictionary for use with cspell.
 
 **Note:** this is a limited dictionary, it is an old word list. Use `@cspell/dict-en-gb` for a more extensive dictionary.
 
-## Installation
+<!--- @@inject: ../../static/requirements.md --->
 
-Global Install and add to cspell global settings.
+## Requirements
 
-```sh
-npm install -g @cspell/dict-en-gb-mit
-cspell link add @cspell/dict-en-gb-mit
-```
+| Tool                                                                                                                                 | Version |
+| ------------------------------------------------------------------------------------------------------------------------------------ | ------- |
+| [cspell](https://github.com/streetsidesoftware/cspell)                                                                               | `>= 8`  |
+| [Code Spell Checker - Visual Studio Code](https://marketplace.visualstudio.com/items?itemName=streetsidesoftware.code-spell-checker) | `>= 4`  |
 
-## Uninstall from cspell
+<!--- @@inject-end: ../../static/requirements.md --->
 
-```sh
-cspell link remove @cspell/dict-en-gb-mit
-```
+<!--- @@inject: ./static/install.md --->
 
-## Manual Installation
+## Local Installation
 
-The `cspell-ext.json` file in this package should be added to the import section in your cspell.json file.
+**This package is bundled with CSpell.**
 
-```javascript
+## Configuration
+
+<details>
+<summary>VSCode Settings</summary>
+
+Add the following to your VSCode settings:
+
+**`.vscode/settings.json`**
+
+```jsonc
 {
-    // …
-    "import": ["@cspell/dict-en-gb-mit/cspell-ext.json"],
-    // …
+  "cSpell.language": "en-GB",
 }
 ```
 
-## Building
+</details>
 
-Building is only necessary if you want to modify the contents of the dictionary. Note: Building will take a few minutes for large files.
+<details>
+<summary>CSpell Settings `cspell.json`</summary>
 
-```sh
-npm run build
+**`cspell.json`**
+
+```jsonc
+{
+  "language": "en-GB",
+}
 ```
+
+</details>
+
+<details>
+<summary>CSpell Settings `cspell.config.yaml`</summary>
+
+**`cspell.config.yaml`**
+
+```yaml
+language: en-GB
+```
+
+</details>
+
+> [!NOTE]
+> **This package is bundled with CSpell.**
+
+<!--- @@inject-end: ./static/install.md --->
+
+<!--- @@inject: ../../static/contributing.md --->
+
+## Contributing
+
+Please help correct any mistakes in the dictionaries.
+
+See: [Contributing](https://github.com/streetsidesoftware/cspell-dicts#contributing)
+
+Special thanks to all of our amazing contributors!
+
+### Dictionary Development
+
+See: [How to Create a New Dictionary](https://github.com/streetsidesoftware/cspell-dicts#how-to-create-a-new-dictionary)
+
+<!--- @@inject-end: ../../static/contributing.md --->
 
 ## Adding Words
 

@@ -4,49 +4,155 @@ Lithuanian dictionary for cspell. Based on ispell-lt package, version 1.3.
 
 This is a pre-built dictionary for use with cspell.
 
-## Installation
+<!--- @@inject: ../../static/requirements.md --->
 
-Global Install and add to cspell global settings.
+## Requirements
+
+| Tool                                                                                                                                 | Version |
+| ------------------------------------------------------------------------------------------------------------------------------------ | ------- |
+| [cspell](https://github.com/streetsidesoftware/cspell)                                                                               | `>= 8`  |
+| [Code Spell Checker - Visual Studio Code](https://marketplace.visualstudio.com/items?itemName=streetsidesoftware.code-spell-checker) | `>= 4`  |
+
+<!--- @@inject-end: ../../static/requirements.md --->
+
+<!--- @@inject: ./static/install.md --->
+
+## Local Installation
 
 ```sh
-npm install -g @cspell/dict-lt-lt
-cspell link add @cspell/dict-lt-lt
+npm install -D @cspell/dict-lt-lt
 ```
 
-## Uninstall from cspell
+## Configuration
 
-```sh
-cspell link remove @cspell/dict-lt-lt
-```
+<details>
+<summary>VSCode Settings</summary>
 
-## Manual Installation
+Add the following to your VSCode settings:
 
-The `cspell-ext.json` file in this package should be added to the import section in your cspell.json file.
+**`.vscode/settings.json`**
 
-```javascript
+```jsonc
 {
-    // …
-    "import": ["@cspell/dict-lt-lt/cspell-ext.json"],
-    // …
+  "cSpell.import": ["@cspell/dict-lt-lt/cspell-ext.json"],
+  "cSpell.language": "lt, lt-LT",
 }
 ```
 
-## Building
+</details>
 
-Building is only necessary if you want to modify the contents of the dictionary. Note: Building will take a few minutes for large files.
+<details>
+<summary>CSpell Settings `cspell.json`</summary>
 
-```sh
-npm run build
+**`cspell.json`**
+
+```jsonc
+{
+  "import": ["@cspell/dict-lt-lt/cspell-ext.json"],
+  "language": "lt, lt-LT",
+}
 ```
+
+</details>
+
+<details>
+<summary>CSpell Settings `cspell.config.yaml`</summary>
+
+**`cspell.config.yaml`**
+
+```yaml
+import:
+  - '@cspell/dict-lt-lt/cspell-ext.json'
+language: lt, lt-LT
+```
+
+</details>
+
+## CDN Configuration
+
+<details>
+<summary>VSCode Settings</summary>
+
+Add the following to your VSCode settings:
+
+**`.vscode/settings.json`**
+
+```jsonc
+{
+  "cSpell.import": ["https://cdn.jsdelivr.net/npm/@cspell/dict-lt-lt@latest/cspell-ext.json/cspell-ext.json"],
+  "cSpell.language": "lt, lt-LT",
+}
+```
+
+</details>
+
+<details>
+<summary>CSpell Settings `cspell.json`</summary>
+
+**`cspell.json`**
+
+```jsonc
+{
+  "import": ["https://cdn.jsdelivr.net/npm/@cspell/dict-lt-lt@latest/cspell-ext.json/cspell-ext.json"],
+  "language": "lt, lt-LT",
+}
+```
+
+</details>
+
+<details>
+<summary>CSpell Settings `cspell.config.yaml`</summary>
+
+**`cspell.config.yaml`**
+
+```yaml
+import:
+  - https://cdn.jsdelivr.net/npm/@cspell/dict-lt-lt@latest/cspell-ext.json/cspell-ext.json
+language: lt, lt-LT
+```
+
+</details>
+
+<!--- @@inject-end: ./static/install.md --->
+
+<!--- @@inject: ../../static/contributing.md --->
+
+## Contributing
+
+Please help correct any mistakes in the dictionaries.
+
+See: [Contributing](https://github.com/streetsidesoftware/cspell-dicts#contributing)
+
+Special thanks to all of our amazing contributors!
+
+### Dictionary Development
+
+See: [How to Create a New Dictionary](https://github.com/streetsidesoftware/cspell-dicts#how-to-create-a-new-dictionary)
+
+<!--- @@inject-end: ../../static/contributing.md --->
 
 ## Resources
 
 The Hunspell source for this dictionary can be found:
 
-- https://launchpad.net/ispell-lt
+- [launchpad.net/ispell-lt](https://launchpad.net/ispell-lt)
 
 ## License
 
 BSD-3-Clause
 
 > Some packages may have other licenses included.
+
+<!--- @@inject: ../../static/footer.md --->
+
+<br/>
+
+---
+
+<p align="center">
+Brought to you by <a href="https://streetsidesoftware.com" title="Street Side Software">
+<img width="16" alt="Street Side Software Logo" src="https://i.imgur.com/CyduuVY.png" /> Street Side Software
+</a>
+</p>
+
+<!--- @@inject-end: ../../static/footer.md --->

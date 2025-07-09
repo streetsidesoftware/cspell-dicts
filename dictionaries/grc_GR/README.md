@@ -4,39 +4,132 @@ Ancient Greek dictionary for cspell.
 
 This is a pre-built dictionary for use with CSpell.
 
-## Installation
+<!--- @@inject: ../../static/requirements.md --->
 
-Global Install and add to CSpell global settings.
+## Requirements
 
-```sh
-npm install -g @cspell/dict-grc
-cspell link add @cspell/dict-grc
-```
+| Tool                                                                                                                                 | Version |
+| ------------------------------------------------------------------------------------------------------------------------------------ | ------- |
+| [cspell](https://github.com/streetsidesoftware/cspell)                                                                               | `>= 8`  |
+| [Code Spell Checker - Visual Studio Code](https://marketplace.visualstudio.com/items?itemName=streetsidesoftware.code-spell-checker) | `>= 4`  |
 
-## Uninstall from CSpell
+<!--- @@inject-end: ../../static/requirements.md --->
 
-```sh
-cspell link remove @cspell/dict-grc
-```
+<!--- @@inject: ./static/install.md --->
 
-## Manual Installation
-
-Manual installation is useful if you want to include this dictionary as part of your CI/CD lint process.
+## Local Installation
 
 ```sh
-npm i @cspell/dict-grc
+npm install -D @cspell/dict-grc
 ```
 
-The `cspell-ext.json` file in this package should be added to the import section in your `cspell.json` file.
+## Configuration
 
-```javascript
+<details>
+<summary>VSCode Settings</summary>
+
+Add the following to your VSCode settings:
+
+**`.vscode/settings.json`**
+
+```jsonc
 {
-    // …
-    "import": ["@cspell/dict-grc/cspell-ext.json"],
-    "language": "en,grc", // this will enable both English and Ancient Greek
-    // …
+  "cSpell.import": ["@cspell/dict-grc/cspell-ext.json"],
+  "cSpell.language": "el-GRC, gr, grc, grc_GR",
 }
 ```
+
+</details>
+
+<details>
+<summary>CSpell Settings `cspell.json`</summary>
+
+**`cspell.json`**
+
+```jsonc
+{
+  "import": ["@cspell/dict-grc/cspell-ext.json"],
+  "language": "el-GRC, gr, grc, grc_GR",
+}
+```
+
+</details>
+
+<details>
+<summary>CSpell Settings `cspell.config.yaml`</summary>
+
+**`cspell.config.yaml`**
+
+```yaml
+import:
+  - '@cspell/dict-grc/cspell-ext.json'
+language: el-GRC, gr, grc, grc_GR
+```
+
+</details>
+
+## CDN Configuration
+
+<details>
+<summary>VSCode Settings</summary>
+
+Add the following to your VSCode settings:
+
+**`.vscode/settings.json`**
+
+```jsonc
+{
+  "cSpell.import": ["https://cdn.jsdelivr.net/npm/@cspell/dict-grc@latest/cspell-ext.json/cspell-ext.json"],
+  "cSpell.language": "el-GRC, gr, grc, grc_GR",
+}
+```
+
+</details>
+
+<details>
+<summary>CSpell Settings `cspell.json`</summary>
+
+**`cspell.json`**
+
+```jsonc
+{
+  "import": ["https://cdn.jsdelivr.net/npm/@cspell/dict-grc@latest/cspell-ext.json/cspell-ext.json"],
+  "language": "el-GRC, gr, grc, grc_GR",
+}
+```
+
+</details>
+
+<details>
+<summary>CSpell Settings `cspell.config.yaml`</summary>
+
+**`cspell.config.yaml`**
+
+```yaml
+import:
+  - https://cdn.jsdelivr.net/npm/@cspell/dict-grc@latest/cspell-ext.json/cspell-ext.json
+language: el-GRC, gr, grc, grc_GR
+```
+
+</details>
+
+<!--- @@inject-end: ./static/install.md --->
+
+<!--- @@inject: ../../static/contributing.md --->
+
+## Contributing
+
+Please help correct any mistakes in the dictionaries.
+
+See: [Contributing](https://github.com/streetsidesoftware/cspell-dicts#contributing)
+
+Special thanks to all of our amazing contributors!
+
+### Dictionary Development
+
+See: [How to Create a New Dictionary](https://github.com/streetsidesoftware/cspell-dicts#how-to-create-a-new-dictionary)
+
+<!--- @@inject-end: ../../static/contributing.md --->
 
 ## Usage
 
@@ -93,10 +186,6 @@ cspell:dictionaries grc
 dictionaries:
   - grc # Always enable the Ancient Greek dictionary
 ```
-
-## Dictionary Development
-
-See: [How to Create a New Dictionary](https://github.com/streetsidesoftware/cspell-dicts#how-to-create-a-new-dictionary)
 
 ## License
 
