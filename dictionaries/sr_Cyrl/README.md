@@ -7,42 +7,11 @@ Milutin Smiljanić's [korektor](https://github.com/msmiljan/korektor). The cspel
 dictionary has been compiled and is maintained by [Toma
 Tasovac](https://github.com/ttasovac).
 
-## Installation
+<!--- @@inject: ../../static/requirements.md --->
 
-Global Install and add to CSpell global settings.
+<!--- @@inject: ./static/install.md --->
 
-```sh
-npm install -g @cspell/dict-sr-cyrl
-cspell link add @cspell/dict-sr-cyrl
-```
-
-## Uninstall from CSpell
-
-```sh
-cspell link remove @cspell/dict-sr-cyrl
-```
-
-## Manual Installation
-
-Manual installation is useful if you want to include this dictionary as part of your CI/CD lint process.
-
-```
-npm i @cspell/dict-sr-cyrl
-```
-
-The `cspell-ext.json` file in this package should be added to the import section in your `cspell.json` file.
-
-```javascript
-{
-    // …
-    "import": ["@cspell/dict-sr-cyrl/cspell-ext.json"],
-    // …
-}
-```
-
-# Dictionary Development
-
-See: [How to Create a New Dictionary](https://github.com/streetsidesoftware/cspell-dicts#how-to-create-a-new-dictionary)
+<!--- @@inject: ../../static/contributing.md --->
 
 ## License
 
@@ -51,3 +20,5 @@ GNU GPL
 > Some packages may have other licenses included.
 
 <!--- cspell:words  Milutin Smiljanić Smiljanić's korektor Toma Tasovac --->
+
+<!--- @@inject: ../../static/footer.md --->

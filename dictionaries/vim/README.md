@@ -4,39 +4,11 @@ Vim dictionary for cspell.
 
 This is a pre-built dictionary for use with CSpell.
 
-## Installation
+<!--- @@inject: ../../static/requirements.md --->
 
-Global Install and add to CSpell global settings.
+<!--- @@inject: ./static/install.md --->
 
-```sh
-npm install -g @cspell/dict-vim
-cspell link add @cspell/dict-vim
-```
-
-## Uninstall from CSpell
-
-```sh
-cspell link remove @cspell/dict-vim
-```
-
-## Manual Installation
-
-Manual installation is useful if you want to include this dictionary as part of your CI/CD lint process.
-
-```
-npm i @cspell/dict-vim
-```
-
-The `cspell-ext.json` file in this package should be added to the import section in your `cspell.json` file.
-
-```javascript
-{
-    // …
-    "import": ["@cspell/dict-vim/cspell-ext.json"],
-    "dictionaries": ["vim"]
-    // …
-}
-```
+<!--- @@inject: ../../static/contributing.md --->
 
 ## License
 
