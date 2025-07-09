@@ -95,7 +95,6 @@ Keywords are taken from the repository
 
 <!--- cspell:ignore gedit-config --->
 
-
 <!--- @@inject: ../../static/footer.md --->
 
 <br/>
