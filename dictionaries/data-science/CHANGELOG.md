@@ -1,5 +1,12 @@
 # Change Log
 
+## [2.0.9](https://github.com/streetsidesoftware/cspell-dicts/compare/@cspell/dict-data-science@2.0.8...@cspell/dict-data-science@2.0.9) (2025-07-09)
+
+
+### Updates and Bug Fixes
+
+* Improve install documentation ([#4640](https://github.com/streetsidesoftware/cspell-dicts/issues/4640)) ([ce83729](https://github.com/streetsidesoftware/cspell-dicts/commit/ce837295163125b6ff57494d9de1609edc6204e6))
+
 ## [2.0.8](https://github.com/streetsidesoftware/cspell-dicts/compare/@cspell/dict-data-science@2.0.7...@cspell/dict-data-science@2.0.8) (2025-04-03)
 
 
