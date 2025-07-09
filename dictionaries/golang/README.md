@@ -89,7 +89,7 @@ See: [How to Create a New Dictionary](https://github.com/streetsidesoftware/cspe
 
 ## Contributors
 
-@AlekSi - Alexey Palazhchenko: <https://github.com/AlekSi/go-words>
+@AlekSi - Alexey Palazhchenko: [AlekSi/go-words](https://github.com/AlekSi/go-words)
 
 ## License
 

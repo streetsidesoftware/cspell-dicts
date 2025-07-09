@@ -135,7 +135,7 @@ See: [How to Create a New Dictionary](https://github.com/streetsidesoftware/cspe
 
 The Hunspell source for this dictionary can be found:
 
-- <https://github.com/titoBouzout/Dictionaries>
+- [titoBouzout/Dictionaries](https://github.com/titoBouzout/Dictionaries)
 
 ## License
 

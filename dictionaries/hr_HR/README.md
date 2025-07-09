@@ -133,7 +133,7 @@ See: [How to Create a New Dictionary](https://github.com/streetsidesoftware/cspe
 
 ## Resources
 
-The Hunspell source for this dictionary can be found: <https://github.com/krunose/hunspell-hr>
+The Hunspell source for this dictionary can be found: [krunose/hunspell-hr](https://github.com/krunose/hunspell-hr)
 
 ## License
 

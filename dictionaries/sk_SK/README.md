@@ -135,7 +135,7 @@ See: [How to Create a New Dictionary](https://github.com/streetsidesoftware/cspe
 
 The Hunspell source for this dictionary can be found:
 
-- <https://github.com/sk-spell/hunspell-sk>
+- [sk-spell/hunspell-sk](https://github.com/sk-spell/hunspell-sk)
 
 ## License
 

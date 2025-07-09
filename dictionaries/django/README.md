@@ -85,7 +85,7 @@ See: [How to Create a New Dictionary](https://github.com/streetsidesoftware/cspe
 
 ## Updating
 
-This dictionary is generated from django's official documentation index : <https://docs.djangoproject.com/en/`VERSION`/genindex/>.
+This dictionary is generated from django's official documentation index : [genindex/](https://docs.djangoproject.com/en/`VERSION`/genindex/).
 To update it, edit `update.py`to match wanted django's `VERSION`, install requirements ([requests](http://docs.python-requests.org) and [BeautifulSoup](https://www.crummy.com/software/BeautifulSoup/)) and run the script :
 
 ```sh

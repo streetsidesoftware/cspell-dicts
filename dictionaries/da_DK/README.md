@@ -135,7 +135,7 @@ See: [How to Create a New Dictionary](https://github.com/streetsidesoftware/cspe
 
 The Hunspell source for this dictionary can be found:
 
-- <https://github.com/wooorm/dictionaries/tree/main#readme>
+- [tree/main#readme](https://github.com/wooorm/dictionaries/tree/main#readme)
 
 <!--- cspell:ignore Stavekontrolden --->
 

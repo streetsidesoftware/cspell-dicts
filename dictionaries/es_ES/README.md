@@ -139,7 +139,7 @@ Please add any words to [src/additional_words.txt](https://github.com/streetside
 
 The Hunspell source for this dictionary can be found:
 
-- <https://github.com/titoBouzout/Dictionaries>
+- [titoBouzout/Dictionaries](https://github.com/titoBouzout/Dictionaries)
 
 ## License
 

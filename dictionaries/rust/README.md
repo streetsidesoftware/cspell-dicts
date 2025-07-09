@@ -91,7 +91,7 @@ MIT
 
 Keywords are taken from the repository
 
-<https://github.com/rust-lang/gedit-config>
+[rust-lang/gedit-config](https://github.com/rust-lang/gedit-config)
 
 <!--- @@inject: ../../static/footer.md --->
 

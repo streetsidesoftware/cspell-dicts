@@ -135,8 +135,8 @@ See: [How to Create a New Dictionary](https://github.com/streetsidesoftware/cspe
 
 The Hunspell source for this dictionary can be found in several repositories:
 
-- <https://github.com/titoBouzout/Dictionaries>
-- <https://github.com/wooorm/dictionaries/tree/master/dictionaries/pl_PL>
+- [titoBouzout/Dictionaries](https://github.com/titoBouzout/Dictionaries)
+- [dictionaries/pl_PL](https://github.com/wooorm/dictionaries/tree/master/dictionaries/pl_PL)
 
 ## License
 

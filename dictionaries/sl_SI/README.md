@@ -135,7 +135,7 @@ See: [How to Create a New Dictionary](https://github.com/streetsidesoftware/cspe
 
 The Hunspell source for this dictionary can be found:
 
-- <https://cgit.freedesktop.org/libreoffice/dictionaries/tree/sl_SI/>
+- [sl_SI/](https://cgit.freedesktop.org/libreoffice/dictionaries/tree/sl_SI/)
 
 ## License
 

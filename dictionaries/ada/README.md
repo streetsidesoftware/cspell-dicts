@@ -87,7 +87,7 @@ See: [How to Create a New Dictionary](https://github.com/streetsidesoftware/cspe
 
 ## Reference
 
-<https://www.adaic.org/resources/add_content/standards/05rm/html/RM-2-9.html>
+[html/RM-2-9.html](https://www.adaic.org/resources/add_content/standards/05rm/html/RM-2-9.html)
 
 ## Contributors
 

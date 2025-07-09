@@ -142,7 +142,7 @@ MIT
 
 The Hunspell source for this dictionary can be found:
 
-- <https://github.com/titoBouzout/Dictionaries>
+- [titoBouzout/Dictionaries](https://github.com/titoBouzout/Dictionaries)
 
 <!--- @@inject: ../../static/footer.md --->
 
