@@ -1,5 +1,73 @@
 # Change Log
 
+## [2.0.16](https://github.com/streetsidesoftware/cspell-dicts/compare/@cspell/dict-cspell-bundle@2.0.15...@cspell/dict-cspell-bundle@2.0.16) (2025-07-09)
+
+
+### Updates and Bug Fixes
+
+* Improve install documentation ([#4640](https://github.com/streetsidesoftware/cspell-dicts/issues/4640)) ([ce83729](https://github.com/streetsidesoftware/cspell-dicts/commit/ce837295163125b6ff57494d9de1609edc6204e6))
+
+
+### Dependencies
+
+* The following workspace dependencies were updated
+  * dependencies
+    * @cspell/dict-ada bumped to 4.1.1
+    * @cspell/dict-al bumped to 1.1.1
+    * @cspell/dict-aws bumped to 4.0.12
+    * @cspell/dict-bash bumped to 4.2.1
+    * @cspell/dict-companies bumped to 3.2.2
+    * @cspell/dict-cpp bumped to 6.0.9
+    * @cspell/dict-cryptocurrencies bumped to 5.0.5
+    * @cspell/dict-csharp bumped to 4.0.7
+    * @cspell/dict-css bumped to 4.0.18
+    * @cspell/dict-dart bumped to 2.3.1
+    * @cspell/dict-django bumped to 4.1.5
+    * @cspell/dict-docker bumped to 1.1.15
+    * @cspell/dict-dotnet bumped to 5.0.10
+    * @cspell/dict-elixir bumped to 4.0.8
+    * @cspell/dict-en-common-misspellings bumped to 2.1.3
+    * @cspell/dict-en_us bumped to 4.4.14
+    * @cspell/dict-en-gb-mit bumped to 3.1.4
+    * @cspell/dict-filetypes bumped to 3.0.13
+    * @cspell/dict-flutter bumped to 1.1.1
+    * @cspell/dict-fonts bumped to 4.0.5
+    * @cspell/dict-fsharp bumped to 1.1.1
+    * @cspell/dict-fullstack bumped to 3.2.7
+    * @cspell/dict-gaming-terms bumped to 1.1.2
+    * @cspell/dict-git bumped to 3.0.7
+    * @cspell/dict-golang bumped to 6.0.23
+    * @cspell/dict-google bumped to 1.0.9
+    * @cspell/dict-haskell bumped to 4.0.6
+    * @cspell/dict-html bumped to 4.0.12
+    * @cspell/dict-html-symbol-entities bumped to 4.0.4
+    * @cspell/dict-java bumped to 5.0.12
+    * @cspell/dict-julia bumped to 1.1.1
+    * @cspell/dict-k8s bumped to 1.0.12
+    * @cspell/dict-latex bumped to 4.0.4
+    * @cspell/dict-lorem-ipsum bumped to 4.0.5
+    * @cspell/dict-lua bumped to 4.0.8
+    * @cspell/dict-makefile bumped to 1.0.5
+    * @cspell/dict-markdown bumped to 2.0.12
+    * @cspell/dict-monkeyc bumped to 1.0.11
+    * @cspell/dict-node bumped to 5.0.8
+    * @cspell/dict-npm bumped to 5.2.11
+    * @cspell/dict-php bumped to 4.0.15
+    * @cspell/dict-powershell bumped to 5.0.15
+    * @cspell/dict-public-licenses bumped to 2.0.14
+    * @cspell/dict-python bumped to 4.2.19
+    * @cspell/dict-r bumped to 2.1.1
+    * @cspell/dict-ruby bumped to 5.0.9
+    * @cspell/dict-rust bumped to 4.0.12
+    * @cspell/dict-scala bumped to 5.0.8
+    * @cspell/dict-software-terms bumped to 5.1.4
+    * @cspell/dict-sql bumped to 2.2.1
+    * @cspell/dict-svelte bumped to 1.0.7
+    * @cspell/dict-swift bumped to 2.0.6
+    * @cspell/dict-terraform bumped to 1.1.3
+    * @cspell/dict-typescript bumped to 3.2.3
+    * @cspell/dict-vue bumped to 3.0.5
+
 ## [2.0.15](https://github.com/streetsidesoftware/cspell-dicts/compare/@cspell/dict-cspell-bundle@2.0.14...@cspell/dict-cspell-bundle@2.0.15) (2025-07-07)
 
 
