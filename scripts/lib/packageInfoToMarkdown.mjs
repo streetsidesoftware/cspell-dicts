@@ -1,6 +1,7 @@
 // ts-check
 
 import { formatMarkdown } from './formatMarkdown.mjs';
+import { unindent } from './utils.mjs';
 
 /**
  * @typedef {import('./dictionaryInfo.mjs').DictionaryPackageInfo} DictionaryPackageInfo
@@ -79,12 +80,12 @@ function listDictionaryIds(packages) {
         .filter((pkg) => !pkg.isBundle)
         .flatMap((pkg) => pkg.dictionaries.map((d) => ({ ...d, pkg })))
         .sort((a, b) => a.name.localeCompare(b.name));
-    let md = `
-## Sorted by Dictionary Name IDs
+    let md = unindent`
+        ## Sorted by Dictionary Name IDs
 
-| Name ID | Description | Locale | File Type |
-| ------- | ----------- | ------ | --------- |
-`;
+        | Name ID | Description | Locale | File Type |
+        | ------- | ----------- | ------ | --------- |
+    `;
 
     for (const dict of dictionaries) {
         const cspell = dict.pkg.cspell ? ' <sup>1</sup>' : '';
@@ -95,10 +96,12 @@ function listDictionaryIds(packages) {
         md += `| [\`${dict.name}\`](${dict.pkg.dir})${cspell}${enabled} | ${dict.description} | ${locales} | ${fileTypes} |\n`;
     }
 
-    md +=
-        '\n\n' +
-        '<sup>1</sup> Bundled with CSpell.<br>' +
-        '<sup>2</sup> Dictionaries are enabled when packages is imported.\n\n';
+    md += unindent`
+
+        <sup>1</sup> Bundled with CSpell.<br>
+        <sup>2</sup> Dictionaries are enabled when packages is imported.
+
+    `;
 
     return md;
 }
@@ -110,16 +113,16 @@ function listDictionaryIds(packages) {
  */
 function extractDictionaryTable(packages) {
     packages = [...packages].sort((a, b) => a.packageName.localeCompare(b.packageName));
-    return `
-## All Dictionaries
+    return unindent`
+        ## All Dictionaries
 
-| Package | Name | Dictionary IDs |
-| ------- | ---- | -------------- |
-${packages.map(formatPackageRow).join('\n')}
+        | Package | Name | Dictionary IDs |
+        | ------- | ---- | -------------- |
+        ${packages.map(formatPackageRow).join('\n')}
 
-<sup>1</sup> Bundled with CSpell.<br><sup>2</sup> Dictionaries are enabled when packages is imported.
+        <sup>1</sup> Bundled with CSpell.<br><sup>2</sup> Dictionaries are enabled when packages is imported.
 
-`;
+    `;
 }
 
 /**
