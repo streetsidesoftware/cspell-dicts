@@ -1,5 +1,19 @@
 # Changelog
 
+## [1.0.10](https://github.com/streetsidesoftware/cspell-dicts/compare/@cspell/dict-en-gb-legacy@1.0.9...@cspell/dict-en-gb-legacy@1.0.10) (2025-07-10)
+
+
+### Documentation
+
+* Improve README info ([#4645](https://github.com/streetsidesoftware/cspell-dicts/issues/4645)) ([3746416](https://github.com/streetsidesoftware/cspell-dicts/commit/37464162c8df11283e896a901995c50c7805324a))
+
+
+### Dependencies
+
+* The following workspace dependencies were updated
+  * devDependencies
+    * @cspell/dict-en-shared bumped to 1.0.38
+
 ## [1.0.9](https://github.com/streetsidesoftware/cspell-dicts/compare/@cspell/dict-en-gb-legacy@1.0.8...@cspell/dict-en-gb-legacy@1.0.9) (2025-07-09)
 
 

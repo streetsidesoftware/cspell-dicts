@@ -3,6 +3,20 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+## [4.4.15](https://github.com/streetsidesoftware/cspell-dicts/compare/@cspell/dict-en_us@4.4.14...@cspell/dict-en_us@4.4.15) (2025-07-10)
+
+
+### Documentation
+
+* Improve README info ([#4645](https://github.com/streetsidesoftware/cspell-dicts/issues/4645)) ([3746416](https://github.com/streetsidesoftware/cspell-dicts/commit/37464162c8df11283e896a901995c50c7805324a))
+
+
+### Dependencies
+
+* The following workspace dependencies were updated
+  * devDependencies
+    * @cspell/dict-en-shared bumped to 1.0.38
+
 ## [4.4.14](https://github.com/streetsidesoftware/cspell-dicts/compare/@cspell/dict-en_us@4.4.13...@cspell/dict-en_us@4.4.14) (2025-07-09)
 
 

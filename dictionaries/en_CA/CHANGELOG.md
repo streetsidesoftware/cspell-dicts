@@ -1,5 +1,19 @@
 # Changelog
 
+## [1.0.41](https://github.com/streetsidesoftware/cspell-dicts/compare/@cspell/dict-en-ca@1.0.40...@cspell/dict-en-ca@1.0.41) (2025-07-10)
+
+
+### Documentation
+
+* Improve README info ([#4645](https://github.com/streetsidesoftware/cspell-dicts/issues/4645)) ([3746416](https://github.com/streetsidesoftware/cspell-dicts/commit/37464162c8df11283e896a901995c50c7805324a))
+
+
+### Dependencies
+
+* The following workspace dependencies were updated
+  * devDependencies
+    * @cspell/dict-en-shared bumped to 1.0.38
+
 ## [1.0.40](https://github.com/streetsidesoftware/cspell-dicts/compare/@cspell/dict-en-ca@1.0.39...@cspell/dict-en-ca@1.0.40) (2025-07-09)
 
 
