@@ -3,6 +3,13 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+## [2.3.2](https://github.com/streetsidesoftware/cspell-dicts/compare/@cspell/dict-sv@2.3.1...@cspell/dict-sv@2.3.2) (2025-07-10)
+
+
+### Documentation
+
+* Improve README info ([#4645](https://github.com/streetsidesoftware/cspell-dicts/issues/4645)) ([3746416](https://github.com/streetsidesoftware/cspell-dicts/commit/37464162c8df11283e896a901995c50c7805324a))
+
 ## [2.3.1](https://github.com/streetsidesoftware/cspell-dicts/compare/@cspell/dict-sv@2.3.0...@cspell/dict-sv@2.3.1) (2025-07-09)
 
 
