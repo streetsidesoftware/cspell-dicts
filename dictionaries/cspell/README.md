@@ -42,7 +42,7 @@ Add the following to your VSCode settings:
 </details>
 
 <details>
-<summary>CSpell Settings `cspell.json`</summary>
+<summary>CSpell Settings <code>cspell.json</code></summary>
 
 **`cspell.json`**
 
@@ -56,7 +56,7 @@ Add the following to your VSCode settings:
 </details>
 
 <details>
-<summary>CSpell Settings `cspell.config.yaml`</summary>
+<summary>CSpell Settings <code>cspell.config.yaml</code></summary>
 
 **`cspell.config.yaml`**
 
@@ -67,6 +67,8 @@ dictionaries: []
 ```
 
 </details>
+
+## Local Installation using CDN
 
 ## CDN Configuration
 
@@ -87,7 +89,7 @@ Add the following to your VSCode settings:
 </details>
 
 <details>
-<summary>CSpell Settings `cspell.json`</summary>
+<summary>CSpell Settings <code>cspell.json</code></summary>
 
 **`cspell.json`**
 
@@ -101,7 +103,7 @@ Add the following to your VSCode settings:
 </details>
 
 <details>
-<summary>CSpell Settings `cspell.config.yaml`</summary>
+<summary>CSpell Settings <code>cspell.config.yaml</code></summary>
 
 **`cspell.config.yaml`**
 
@@ -112,6 +114,48 @@ dictionaries: []
 ```
 
 </details>
+
+## Dictionary Information
+
+| Name                   | Enabled | Description |
+| ---------------------- | ------- | ----------- |
+| `typescript`           |         | _External_  |
+| `node`                 |         | _External_  |
+| `npm`                  |         | _External_  |
+| `html`                 |         | _External_  |
+| `html-symbol-entities` |         | _External_  |
+| `css`                  |         | _External_  |
+| `fonts`                |         | _External_  |
+| `php`                  |         | _External_  |
+
+## Language Settings
+
+| Name                   | Locale | File Type                                   |
+| ---------------------- | ------ | ------------------------------------------- |
+| `typescript`           |        | `javascript`, `javascriptreact`             |
+| `typescript`           |        | `typescript`, `typescriptreact`, `mdx`      |
+| `typescript`           |        | `html`, `pug`, `jade`, `php`, `handlebars`  |
+| `node`                 |        | `javascript`, `javascriptreact`             |
+| `node`                 |        | `typescript`, `typescriptreact`, `mdx`      |
+| `node`                 |        | `json`, `jsonc`                             |
+| `npm`                  |        | `javascript`, `javascriptreact`             |
+| `npm`                  |        | `typescript`, `typescriptreact`, `mdx`      |
+| `npm`                  |        | `markdown`, `asciidoc`                      |
+| `npm`                  |        | `html`, `pug`, `jade`, `php`, `handlebars`  |
+| `npm`                  |        | `json`, `jsonc`                             |
+| `html`                 |        | `javascriptreact`, `typescriptreact`, `mdx` |
+| `html`                 |        | `markdown`, `asciidoc`                      |
+| `html`                 |        | `html`, `pug`, `jade`, `php`, `handlebars`  |
+| `html-symbol-entities` |        | `javascriptreact`, `typescriptreact`, `mdx` |
+| `html-symbol-entities` |        | `markdown`, `asciidoc`                      |
+| `html-symbol-entities` |        | `html`, `pug`, `jade`, `php`, `handlebars`  |
+| `css`                  |        | `javascriptreact`, `typescriptreact`, `mdx` |
+| `css`                  |        | `html`, `pug`, `jade`, `php`, `handlebars`  |
+| `css`                  |        | `css`, `less`, `scss`                       |
+| `fonts`                |        | `javascriptreact`, `typescriptreact`, `mdx` |
+| `fonts`                |        | `html`, `pug`, `jade`, `php`, `handlebars`  |
+| `fonts`                |        | `css`, `less`, `scss`                       |
+| `php`                  |        | `php`                                       |
 
 <!--- @@inject-end: ./static/install.md --->
 

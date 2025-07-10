@@ -13,6 +13,10 @@ const rootUrl = new URL('../../', import.meta.url);
  */
 
 /**
+ * @typedef {string} MarkdownString
+ */
+
+/**
  *
  * @param {DictionaryPackageInfo[]} packages
  */
@@ -44,7 +48,7 @@ export async function writeStaticFilesForPackage(pkgInfo) {
     await fs.writeFile(new URL('vscode-settings.json', pkgStaticDirUrl), codeVSCode, 'utf8');
     await fs.writeFile(new URL('example.cspell.json', pkgStaticDirUrl), codeJson, 'utf8');
     await fs.writeFile(new URL('example.cspell.config.yaml', pkgStaticDirUrl), codeYaml, 'utf8');
-    await fs.writeFile(new URL('install.md', pkgStaticDirUrl), toInstallMarkdown(pkgInfo), 'utf8');
+    await fs.writeFile(new URL('install.md', pkgStaticDirUrl), toPackageInformationMarkdown(pkgInfo), 'utf8');
 }
 
 /**
@@ -99,7 +103,7 @@ function toCSpellSettings(pkgInfo, useCdn) {
     if (locales) {
         settings['language'] = locales;
     } else {
-        settings['dictionaries'] = pkgInfo.dictionaries.map((d) => d.name);
+        settings['dictionaries'] = pkgInfo.dictionaries.filter((d) => !d.external).map((d) => d.name);
     }
 
     return settings;
@@ -108,7 +112,7 @@ function toCSpellSettings(pkgInfo, useCdn) {
 /**
  *
  * @param {string} pkgName
- * @returns
+ * @returns {string}
  */
 function pkgNameToCdnUrl(pkgName) {
     return `https://cdn.jsdelivr.net/npm/${pkgName}@latest/cspell-ext.json`;
@@ -117,34 +121,39 @@ function pkgNameToCdnUrl(pkgName) {
 /**
  *
  * @param {DictionaryPackageInfo} pkgInfo
- * @returns {string}
+ * @returns {MarkdownString}
  */
-function toInstallMarkdown(pkgInfo) {
+function toPackageInformationMarkdown(pkgInfo) {
     const pkgName = pkgInfo.packageName;
 
-    return unindent`
+    const md = unindent`
         ## Local Installation
 
         ${pkgInfo.cspell ? '**This package is bundled with CSpell.**' : codeBlockInstall(pkgName)}
 
         ${toConfiguration(pkgInfo, false)}
 
+        ## Local Installation using CDN
+
         ${toConfiguration(pkgInfo, true)}
 
+        ${toLanguageSettingsMarkdown(pkgInfo)}
+
+        ${toDefinedPatternsMarkdown(pkgInfo)}
     `;
+    return cleanMarkdown(md);
 }
 
 /**
  *
  * @param {DictionaryPackageInfo} pkgInfo
  * @param {boolean} useCdn
- * @returns {string}
+ * @returns {MarkdownString}
  */
 function toConfiguration(pkgInfo, useCdn) {
     if (pkgInfo.cspell && useCdn) {
         return unindent`
-            > [!NOTE]
-            > **This package is bundled with CSpell.**
+            > **NOTE:** This package is bundled with CSpell.
         `;
     }
 
@@ -167,7 +176,7 @@ function toConfiguration(pkgInfo, useCdn) {
         )}
 
         ${detailsMarkdown(
-            'CSpell Settings `cspell.json`',
+            'CSpell Settings <code>cspell.json</code>',
             unindent`
             **${inlineCode('cspell.json')}**
 
@@ -176,7 +185,7 @@ function toConfiguration(pkgInfo, useCdn) {
         )}
 
         ${detailsMarkdown(
-            'CSpell Settings `cspell.config.yaml`',
+            'CSpell Settings <code>cspell.config.yaml</code>',
             unindent`
             **${inlineCode('cspell.config.yaml')}**
 
@@ -189,7 +198,7 @@ function toConfiguration(pkgInfo, useCdn) {
 /**
  *
  * @param {string} pkgName
- * @returns {string}
+ * @returns {MarkdownString}
  */
 function codeBlockInstall(pkgName) {
     return codeBlock(
@@ -203,7 +212,7 @@ function codeBlockInstall(pkgName) {
 /**
  *
  * @param {string} code
- * @returns {string}
+ * @returns {MarkdownString}
  */
 function inlineCode(code) {
     return '`' + code + '`';
@@ -212,7 +221,7 @@ function inlineCode(code) {
 /**
  *
  * @param {string} title
- * @param {string} content
+ * @param {MarkdownString} content
  */
 function detailsMarkdown(title, content) {
     return unindent`\
@@ -228,7 +237,7 @@ function detailsMarkdown(title, content) {
  *
  * @param {string} code
  * @param {string} [lang]
- * @returns {string}
+ * @returns {MarkdownString}
  */
 function codeBlock(code, lang = '') {
     return `\`\`\`${lang}\n${removeNewlines(code)}\n\`\`\``;
@@ -257,4 +266,102 @@ function removeTrailingNewlines(str) {
  */
 function removeLeadingNewlines(str) {
     return str.replace(/^(\r?\n)+/, '');
+}
+
+/**
+ *
+ * @param {string} str
+ * @returns
+ */
+function cleanMarkdown(str) {
+    const s = str
+        .replace(/(\r?\n)/g, '\n') // Normalize newlines
+        .replace(/\n{3,}/g, '\n\n'); // Replace multiple newlines with two
+    return removeNewlines(s) + '\n'; // Ensure a single trailing newline
+}
+
+/**
+ *
+ * @param {DictionaryPackageInfo} pkgInfo
+ * @returns {MarkdownString}
+ */
+function toLanguageSettingsMarkdown(pkgInfo) {
+    const dictionaries = pkgInfo.dictionaries?.map((d) => ({
+        name: d.name,
+        enabled: d.enabled,
+        external: d.external,
+        description: d.description || '',
+    }));
+    const distLangSettings = pkgInfo.dictionaries?.flatMap((d) =>
+        (d.localeFileTypes || []).map((lft) => ({
+            name: d.name,
+            locale: lft.locale,
+            fileType: lft.fileType,
+            description: d.description || '',
+        })),
+    );
+
+    const s = splitStringIntoInlineCodeBlocks;
+
+    const dictionaryInfo = dictionaries?.length
+        ? unindent`
+            ## Dictionary Information
+
+            | Name | Enabled | Description |
+            | ---- | ------- | ----------- |
+            ${dictionaries.map((l) => `| \`${l.name}\` | ${l.enabled ? '**Yes**' : ''} | ${l.description}${l.external ? '_External_' : ''} |`).join('\n')}
+
+        `
+        : '';
+
+    const languageSettings = distLangSettings?.length
+        ? unindent`
+            ## Language Settings
+
+            | Name | Locale | File Type |
+            | ---- | ------ | --------- |
+            ${distLangSettings.map((l) => `| \`${l.name}\` | ${s(l.locale)} | ${s(l.fileType)} |`).join('\n')}
+
+        `
+        : '';
+
+    return unindent`
+        ${dictionaryInfo}
+        ${languageSettings}
+    `;
+}
+
+/**
+ *
+ * @param {string} str
+ * @returns {MarkdownString}
+ */
+function splitStringIntoInlineCodeBlocks(str) {
+    return str
+        .split(',')
+        .map((s) => (s.trim() ? inlineCode(s.trim()) : s))
+        .join(', ');
+}
+
+/**
+ *
+ * @param {DictionaryPackageInfo} pkgInfo
+ * @returns {MarkdownString}
+ */
+function toDefinedPatternsMarkdown(pkgInfo) {
+    if (!pkgInfo.patterns?.length) {
+        return '';
+    }
+    const patterns = pkgInfo.patterns.map((p) => `| \`${p.name}\` | ${p.description || ''} | `).join('\n');
+    return unindent`
+        ## Predefined Patterns
+
+        Predefined patterns can be used to ignore or include sequences of text to be spell checked.
+
+        The following patterns are defined in this dictionary:
+
+        | Name | Description |
+        | ---- | ----------- |
+        ${patterns}
+    `;
 }

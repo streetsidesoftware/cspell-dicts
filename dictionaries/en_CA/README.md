@@ -42,7 +42,7 @@ Add the following to your VSCode settings:
 </details>
 
 <details>
-<summary>CSpell Settings `cspell.json`</summary>
+<summary>CSpell Settings <code>cspell.json</code></summary>
 
 **`cspell.json`**
 
@@ -56,7 +56,7 @@ Add the following to your VSCode settings:
 </details>
 
 <details>
-<summary>CSpell Settings `cspell.config.yaml`</summary>
+<summary>CSpell Settings <code>cspell.config.yaml</code></summary>
 
 **`cspell.config.yaml`**
 
@@ -67,6 +67,8 @@ language: en-CA
 ```
 
 </details>
+
+## Local Installation using CDN
 
 ## CDN Configuration
 
@@ -87,7 +89,7 @@ Add the following to your VSCode settings:
 </details>
 
 <details>
-<summary>CSpell Settings `cspell.json`</summary>
+<summary>CSpell Settings <code>cspell.json</code></summary>
 
 **`cspell.json`**
 
@@ -101,7 +103,7 @@ Add the following to your VSCode settings:
 </details>
 
 <details>
-<summary>CSpell Settings `cspell.config.yaml`</summary>
+<summary>CSpell Settings <code>cspell.config.yaml</code></summary>
 
 **`cspell.config.yaml`**
 
@@ -112,6 +114,20 @@ language: en-CA
 ```
 
 </details>
+
+## Dictionary Information
+
+| Name                     | Enabled | Description                 |
+| ------------------------ | ------- | --------------------------- |
+| `en-ca`                  |         | Canadian English Dictionary |
+| `en-common-misspellings` |         | _External_                  |
+
+## Language Settings
+
+| Name                     | Locale  | File Type |
+| ------------------------ | ------- | --------- |
+| `en-ca`                  | `en-CA` | `*`       |
+| `en-common-misspellings` | `en-CA` | `*`       |
 
 <!--- @@inject-end: ./static/install.md --->
 

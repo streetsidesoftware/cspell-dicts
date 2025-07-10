@@ -10,6 +10,15 @@ const rootUrl = new URL('../../', import.meta.url);
 
 /**
  * @typedef {Awaited<ReturnType<import('cspell-lib').readConfigFile>>} CSpellConfigFile
+ * @typedef {import('@cspell/cspell-types').RegExpPatternDefinition} PatternDefinition
+ * @typedef {import('@cspell/cspell-types').CSpellSettings} CSpellSettings
+ */
+
+/**
+ * Locale/FileType Pair.
+ * @typedef {object} LocaleFileTypePair
+ * @property {string} locale The locale of the dictionary.
+ * @property {string} fileType The file type of the dictionary.
  */
 
 /**
@@ -19,7 +28,9 @@ const rootUrl = new URL('../../', import.meta.url);
  * @property {string} [description] The description of the dictionary.
  * @property {string[]} [locales] The locales supported by the dictionary.
  * @property {string[]} [fileTypes] The dictionary is enabled for the following file types.
+ * @property {LocaleFileTypePair[]} [localeFileTypes] The dictionary is enabled for the following locale/file type pairs.
  * @property {boolean} [enabled] The dictionary is enabled by default.
+ * @property {boolean} [external] The dictionary is defined in an external package.
  */
 
 /**
@@ -34,10 +45,7 @@ const rootUrl = new URL('../../', import.meta.url);
  * @property {DictionaryInfo[]} dictionaries The dictionaries in the package.
  * @property {boolean} [isBundle] The dictionary package is a bundle of other packages.
  * @property {boolean} [hasEnabledByDefault] The dictionary package has dictionaries enabled by default.
- */
-
-/**
- * @typedef {import('@cspell/cspell-types').CSpellSettings} CSpellSettings
+ * @property {PatternDefinition[]} [patterns] The patterns defined by the dictionary.
  */
 
 /** @type {CSpellSettings} */
@@ -68,7 +76,9 @@ export async function fetchDictionaryInfo(dictURL) {
     extConfigFile.settings.import = Array.isArray(extConfigFile.settings.import)
         ? extConfigFile.settings.import.filter((i) => i.startsWith('./'))
         : extConfigFile.settings.import;
-    const dictionaries = await extractDictionaryInfo(extConfigFile);
+
+    const cspellSettings = await resolveConfigFileImports(extConfigFile);
+    const dictionaries = extractDictionaryInfo(cspellSettings);
     const hasEnabledByDefault = dictionaries.some((d) => d.enabled) || undefined;
     return {
         name: cspellExt.name || pkgJson.name,
@@ -80,6 +90,7 @@ export async function fetchDictionaryInfo(dictURL) {
         dictionaries,
         isBundle,
         hasEnabledByDefault,
+        patterns: cspellSettings.patterns || [],
     };
 }
 
@@ -96,20 +107,22 @@ async function readConfigFileOrUndefined(cspellExtUrl) {
 }
 
 /**
- *
- * @param {CSpellConfigFile} cspellConfigFile
- * @returns {Promise<DictionaryInfo[]>}
+ * @param {CSpellSettings} cspellSettings
+ * @returns {DictionaryInfo[]}
  */
-export async function extractDictionaryInfo(cspellConfigFile) {
-    const cspellExt = await resolveConfigFileImports(cspellConfigFile);
-    const dictionaryDefs = cspellExt.dictionaryDefinitions || [];
+export function extractDictionaryInfo(cspellSettings) {
+    const dictionaryDefs = cspellSettings.dictionaryDefinitions || [];
     /** @type {Map<string, DictionaryInfo>} */
     const dictMap = new Map(dictionaryDefs.map((d) => [d.name, { name: d.name, description: d.description }]));
 
-    for (const langSetting of cspellExt.languageSettings || []) {
+    for (const langSetting of cspellSettings.languageSettings || []) {
         const { languageId, locale, dictionaries = [] } = langSetting;
         for (const dictName of dictionaries) {
-            const dict = dictMap.get(dictName);
+            const external = !dictMap.has(dictName);
+            const dict = dictMap.get(dictName) || { name: dictName, external, description: '' };
+            if (external) {
+                dictMap.set(dictName, dict);
+            }
             if (dict) {
                 const locales = expandStringOrStringArray(locale);
                 if (locales) {
@@ -121,11 +134,23 @@ export async function extractDictionaryInfo(cspellConfigFile) {
                     dict.fileTypes = dict.fileTypes || [];
                     dict.fileTypes.push(...langIds);
                 }
+                const localesStr = locales?.join(', ') || '';
+                const fileTypesStr = langIds?.join(', ') || '';
+                if (localesStr.includes('*') && fileTypesStr.includes('*')) {
+                    dict.enabled = true;
+                }
+                if (localesStr || fileTypesStr) {
+                    dict.localeFileTypes = dict.localeFileTypes || [];
+                    dict.localeFileTypes.push({
+                        locale: localesStr.includes('*') ? '*' : localesStr,
+                        fileType: fileTypesStr.includes('*') ? '*' : fileTypesStr,
+                    });
+                }
             }
         }
     }
 
-    for (const dict of cspellExt.dictionaries || []) {
+    for (const dict of cspellSettings.dictionaries || []) {
         const d = dictMap.get(dict);
         if (d) {
             d.enabled = true;
@@ -140,13 +165,15 @@ export async function extractDictionaryInfo(cspellConfigFile) {
     function cleanUpDict(d) {
         d.locales = dedupe(d.locales)?.sort();
         d.fileTypes = dedupe(d.fileTypes)?.sort();
-        if (d.locales?.includes('*') && d.fileTypes?.includes('*')) {
+        const selectors = d.localeFileTypes?.map((lft) => `${lft.locale}/${lft.fileType}`) || [];
+        const enabled = selectors.some((s) => s === '*/*');
+        if (enabled) {
             d.enabled = true;
         }
-        if (!d.locales?.length || d.locales[0] === '*') {
+        if (enabled || d.locales?.[0] === '*') {
             d.locales = undefined;
         }
-        if (!d.fileTypes?.length || d.fileTypes[0] === '*') {
+        if (enabled || d.fileTypes?.[0] === '*') {
             d.fileTypes = undefined;
         }
         return d;

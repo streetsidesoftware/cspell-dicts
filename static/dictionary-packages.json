@@ -10,9 +10,16 @@
       {
         "name": "ada",
         "description": "Ada Language Dictionary",
-        "fileTypes": ["ada"]
+        "fileTypes": ["ada"],
+        "localeFileTypes": [
+          {
+            "locale": "*",
+            "fileType": "ada"
+          }
+        ]
       }
-    ]
+    ],
+    "patterns": []
   },
   {
     "name": "AL",
@@ -25,9 +32,16 @@
       {
         "name": "al",
         "description": "AL Keywords Dictionary",
-        "fileTypes": ["al"]
+        "fileTypes": ["al"],
+        "localeFileTypes": [
+          {
+            "locale": "*",
+            "fileType": "al"
+          }
+        ]
       }
-    ]
+    ],
+    "patterns": []
   },
   {
     "name": "Arabic",
@@ -40,9 +54,16 @@
       {
         "name": "ar",
         "description": "Arabic dictionary.",
-        "locales": ["ar"]
+        "locales": ["ar"],
+        "localeFileTypes": [
+          {
+            "locale": "ar",
+            "fileType": "*"
+          }
+        ]
       }
-    ]
+    ],
+    "patterns": []
   },
   {
     "name": "AWS",
@@ -55,10 +76,13 @@
       {
         "name": "aws",
         "description": "AWS dictionary.",
-        "enabled": true
+        "enabled": true,
+        "locales": [],
+        "fileTypes": []
       }
     ],
-    "hasEnabledByDefault": true
+    "hasEnabledByDefault": true,
+    "patterns": []
   },
   {
     "name": "bash",
@@ -66,8 +90,22 @@
     "packageName": "@cspell/dict-bash",
     "description": "Bash dictionary.",
     "cspell": true,
-    "categories": [],
-    "dictionaries": []
+    "categories": ["programming"],
+    "dictionaries": [
+      {
+        "name": "bash",
+        "external": true,
+        "description": "",
+        "fileTypes": ["shellscript"],
+        "localeFileTypes": [
+          {
+            "locale": "*",
+            "fileType": "shellscript"
+          }
+        ]
+      }
+    ],
+    "patterns": []
   },
   {
     "name": "Bulgarian",
@@ -80,9 +118,16 @@
       {
         "name": "bg-bg",
         "description": "Bulgarian dictionary.",
-        "locales": ["bg", "bg-BG"]
+        "locales": ["bg", "bg-BG"],
+        "localeFileTypes": [
+          {
+            "locale": "bg, bg-BG",
+            "fileType": "*"
+          }
+        ]
       }
-    ]
+    ],
+    "patterns": []
   },
   {
     "name": "Bengali",
@@ -95,9 +140,16 @@
       {
         "name": "bn",
         "description": "Bengali dictionary for cspell.",
-        "locales": ["bn"]
+        "locales": ["bn"],
+        "localeFileTypes": [
+          {
+            "locale": "bn",
+            "fileType": "*"
+          }
+        ]
       }
-    ]
+    ],
+    "patterns": []
   },
   {
     "name": "Catalan",
@@ -110,9 +162,16 @@
       {
         "name": "ca",
         "description": "Catalan dictionary.",
-        "locales": ["ca"]
+        "locales": ["ca"],
+        "localeFileTypes": [
+          {
+            "locale": "ca",
+            "fileType": "*"
+          }
+        ]
       }
-    ]
+    ],
+    "patterns": []
   },
   {
     "name": "Cities of Finland",
@@ -125,10 +184,13 @@
       {
         "name": "city-names-finland",
         "description": "List of cities in Finland.",
-        "enabled": true
+        "enabled": true,
+        "locales": [],
+        "fileTypes": []
       }
     ],
-    "hasEnabledByDefault": true
+    "hasEnabledByDefault": true,
+    "patterns": []
   },
   {
     "name": "Clojure",
@@ -141,9 +203,16 @@
       {
         "name": "clojure",
         "description": "Clojure dictionary.",
-        "fileTypes": ["clojure"]
+        "fileTypes": ["clojure"],
+        "localeFileTypes": [
+          {
+            "locale": "*",
+            "fileType": "clojure"
+          }
+        ]
       }
-    ]
+    ],
+    "patterns": []
   },
   {
     "name": "Company names",
@@ -156,10 +225,13 @@
       {
         "name": "companies",
         "description": "Company names dictionary.",
-        "enabled": true
+        "enabled": true,
+        "locales": [],
+        "fileTypes": []
       }
     ],
-    "hasEnabledByDefault": true
+    "hasEnabledByDefault": true,
+    "patterns": []
   },
   {
     "name": "C/C++",
@@ -172,19 +244,38 @@
       {
         "name": "cpp-legacy",
         "description": "Legacy C/C++ Keywords and common library functions.",
-        "fileTypes": ["c", "cpp"]
+        "fileTypes": ["c", "cpp"],
+        "localeFileTypes": [
+          {
+            "locale": "*",
+            "fileType": "c, cpp"
+          }
+        ]
       },
       {
         "name": "cpp",
         "description": "C/C++ Keywords and common library functions.",
-        "fileTypes": ["c", "cpp"]
+        "fileTypes": ["c", "cpp"],
+        "localeFileTypes": [
+          {
+            "locale": "*",
+            "fileType": "c, cpp"
+          }
+        ]
       },
       {
         "name": "cpp-refined",
         "description": "Refined list of C/C++ Keywords and common library functions.",
-        "fileTypes": ["c", "cpp"]
+        "fileTypes": ["c", "cpp"],
+        "localeFileTypes": [
+          {
+            "locale": "*",
+            "fileType": "c, cpp"
+          }
+        ]
       }
-    ]
+    ],
+    "patterns": []
   },
   {
     "name": "Cryptocurrencies",
@@ -197,14 +288,19 @@
       {
         "name": "cryptocurrencies",
         "description": "Cryptocurrencies dictionary.",
-        "enabled": true
+        "enabled": true,
+        "locales": [],
+        "fileTypes": []
       },
       {
         "name": "cryptocurrencies-legacy",
-        "description": "Legacy Cryptocurrency dictionary."
+        "description": "Legacy Cryptocurrency dictionary.",
+        "locales": [],
+        "fileTypes": []
       }
     ],
-    "hasEnabledByDefault": true
+    "hasEnabledByDefault": true,
+    "patterns": []
   },
   {
     "name": "Czech",
@@ -217,9 +313,16 @@
       {
         "name": "cs-cz",
         "description": "Czech dictionary.",
-        "locales": ["cs"]
+        "locales": ["cs"],
+        "localeFileTypes": [
+          {
+            "locale": "cs",
+            "fileType": "*"
+          }
+        ]
       }
-    ]
+    ],
+    "patterns": []
   },
   {
     "name": "C#",
@@ -232,9 +335,43 @@
       {
         "name": "csharp",
         "description": "C# dictionary.",
-        "fileTypes": ["csharp"]
+        "fileTypes": ["csharp"],
+        "localeFileTypes": [
+          {
+            "locale": "",
+            "fileType": "csharp"
+          }
+        ],
+        "locales": []
+      },
+      {
+        "name": "dotnet",
+        "external": true,
+        "description": "",
+        "fileTypes": ["csharp"],
+        "localeFileTypes": [
+          {
+            "locale": "",
+            "fileType": "csharp"
+          }
+        ],
+        "locales": []
+      },
+      {
+        "name": "npm",
+        "external": true,
+        "description": "",
+        "fileTypes": ["csharp"],
+        "localeFileTypes": [
+          {
+            "locale": "",
+            "fileType": "csharp"
+          }
+        ],
+        "locales": []
       }
-    ]
+    ],
+    "patterns": []
   },
   {
     "name": "CSpell Dictionaries Bundle",
@@ -242,9 +379,259 @@
     "packageName": "@cspell/dict-cspell-bundle",
     "description": "Dictionaries included with the CSpell Command Line tool.",
     "cspell": false,
-    "categories": [],
-    "dictionaries": [],
-    "isBundle": true
+    "categories": ["programming"],
+    "dictionaries": [
+      {
+        "name": "typescript",
+        "external": true,
+        "description": "",
+        "fileTypes": [
+          "handlebars",
+          "html",
+          "jade",
+          "javascript",
+          "javascriptreact",
+          "mdx",
+          "php",
+          "pug",
+          "typescript",
+          "typescriptreact"
+        ],
+        "localeFileTypes": [
+          {
+            "locale": "",
+            "fileType": "javascript, javascriptreact"
+          },
+          {
+            "locale": "",
+            "fileType": "typescript, typescriptreact, mdx"
+          },
+          {
+            "locale": "",
+            "fileType": "html, pug, jade, php, handlebars"
+          }
+        ],
+        "locales": []
+      },
+      {
+        "name": "node",
+        "external": true,
+        "description": "",
+        "fileTypes": [
+          "javascript",
+          "javascriptreact",
+          "json",
+          "jsonc",
+          "mdx",
+          "typescript",
+          "typescriptreact"
+        ],
+        "localeFileTypes": [
+          {
+            "locale": "",
+            "fileType": "javascript, javascriptreact"
+          },
+          {
+            "locale": "",
+            "fileType": "typescript, typescriptreact, mdx"
+          },
+          {
+            "locale": "",
+            "fileType": "json, jsonc"
+          }
+        ],
+        "locales": []
+      },
+      {
+        "name": "npm",
+        "external": true,
+        "description": "",
+        "fileTypes": [
+          "asciidoc",
+          "handlebars",
+          "html",
+          "jade",
+          "javascript",
+          "javascriptreact",
+          "json",
+          "jsonc",
+          "markdown",
+          "mdx",
+          "php",
+          "pug",
+          "typescript",
+          "typescriptreact"
+        ],
+        "localeFileTypes": [
+          {
+            "locale": "",
+            "fileType": "javascript, javascriptreact"
+          },
+          {
+            "locale": "",
+            "fileType": "typescript, typescriptreact, mdx"
+          },
+          {
+            "locale": "",
+            "fileType": "markdown, asciidoc"
+          },
+          {
+            "locale": "",
+            "fileType": "html, pug, jade, php, handlebars"
+          },
+          {
+            "locale": "",
+            "fileType": "json, jsonc"
+          }
+        ],
+        "locales": []
+      },
+      {
+        "name": "html",
+        "external": true,
+        "description": "",
+        "fileTypes": [
+          "asciidoc",
+          "handlebars",
+          "html",
+          "jade",
+          "javascriptreact",
+          "markdown",
+          "mdx",
+          "php",
+          "pug",
+          "typescriptreact"
+        ],
+        "localeFileTypes": [
+          {
+            "locale": "",
+            "fileType": "javascriptreact, typescriptreact, mdx"
+          },
+          {
+            "locale": "",
+            "fileType": "markdown, asciidoc"
+          },
+          {
+            "locale": "",
+            "fileType": "html, pug, jade, php, handlebars"
+          }
+        ],
+        "locales": []
+      },
+      {
+        "name": "html-symbol-entities",
+        "external": true,
+        "description": "",
+        "fileTypes": [
+          "asciidoc",
+          "handlebars",
+          "html",
+          "jade",
+          "javascriptreact",
+          "markdown",
+          "mdx",
+          "php",
+          "pug",
+          "typescriptreact"
+        ],
+        "localeFileTypes": [
+          {
+            "locale": "",
+            "fileType": "javascriptreact, typescriptreact, mdx"
+          },
+          {
+            "locale": "",
+            "fileType": "markdown, asciidoc"
+          },
+          {
+            "locale": "",
+            "fileType": "html, pug, jade, php, handlebars"
+          }
+        ],
+        "locales": []
+      },
+      {
+        "name": "css",
+        "external": true,
+        "description": "",
+        "fileTypes": [
+          "css",
+          "handlebars",
+          "html",
+          "jade",
+          "javascriptreact",
+          "less",
+          "mdx",
+          "php",
+          "pug",
+          "scss",
+          "typescriptreact"
+        ],
+        "localeFileTypes": [
+          {
+            "locale": "",
+            "fileType": "javascriptreact, typescriptreact, mdx"
+          },
+          {
+            "locale": "",
+            "fileType": "html, pug, jade, php, handlebars"
+          },
+          {
+            "locale": "",
+            "fileType": "css, less, scss"
+          }
+        ],
+        "locales": []
+      },
+      {
+        "name": "fonts",
+        "external": true,
+        "description": "",
+        "fileTypes": [
+          "css",
+          "handlebars",
+          "html",
+          "jade",
+          "javascriptreact",
+          "less",
+          "mdx",
+          "php",
+          "pug",
+          "scss",
+          "typescriptreact"
+        ],
+        "localeFileTypes": [
+          {
+            "locale": "",
+            "fileType": "javascriptreact, typescriptreact, mdx"
+          },
+          {
+            "locale": "",
+            "fileType": "html, pug, jade, php, handlebars"
+          },
+          {
+            "locale": "",
+            "fileType": "css, less, scss"
+          }
+        ],
+        "locales": []
+      },
+      {
+        "name": "php",
+        "external": true,
+        "description": "",
+        "fileTypes": ["php"],
+        "localeFileTypes": [
+          {
+            "locale": "",
+            "fileType": "php"
+          }
+        ],
+        "locales": []
+      }
+    ],
+    "isBundle": true,
+    "patterns": []
   },
   {
     "name": "CSS",
@@ -257,9 +644,16 @@
       {
         "name": "css",
         "description": "Css dictionary.",
-        "fileTypes": ["css"]
+        "fileTypes": ["css"],
+        "localeFileTypes": [
+          {
+            "locale": "*",
+            "fileType": "css"
+          }
+        ]
       }
-    ]
+    ],
+    "patterns": []
   },
   {
     "name": "Danish Dictionary",
@@ -272,9 +666,16 @@
       {
         "name": "da-dk",
         "description": "Danish (da-DK) Dictionary.",
-        "locales": ["da", "da-DK"]
+        "locales": ["da", "da-DK"],
+        "localeFileTypes": [
+          {
+            "locale": "da, da-DK",
+            "fileType": "*"
+          }
+        ]
       }
-    ]
+    ],
+    "patterns": []
   },
   {
     "name": "Dart",
@@ -287,9 +688,16 @@
       {
         "name": "dart",
         "description": "Dart dictionary.",
-        "fileTypes": ["dart"]
+        "fileTypes": ["dart"],
+        "localeFileTypes": [
+          {
+            "locale": "*",
+            "fileType": "dart"
+          }
+        ]
       }
-    ]
+    ],
+    "patterns": []
   },
   {
     "name": "Data Science",
@@ -302,19 +710,38 @@
       {
         "name": "data-science",
         "description": "Data Science Terms dictionary.",
-        "fileTypes": ["python"]
+        "fileTypes": ["python"],
+        "localeFileTypes": [
+          {
+            "locale": "*",
+            "fileType": "python"
+          }
+        ]
       },
       {
         "name": "data-science-models",
         "description": "Data Science Models dictionary.",
-        "fileTypes": ["python"]
+        "fileTypes": ["python"],
+        "localeFileTypes": [
+          {
+            "locale": "*",
+            "fileType": "python"
+          }
+        ]
       },
       {
         "name": "data-science-tools",
         "description": "Data Science Tools dictionary.",
-        "fileTypes": ["python"]
+        "fileTypes": ["python"],
+        "localeFileTypes": [
+          {
+            "locale": "*",
+            "fileType": "python"
+          }
+        ]
       }
-    ]
+    ],
+    "patterns": []
   },
   {
     "name": "Austrian German Dictionary",
@@ -327,9 +754,16 @@
       {
         "name": "de-at",
         "description": "Austrian German (de-AT) Dictionary.",
-        "locales": ["de_AT"]
+        "locales": ["de_AT"],
+        "localeFileTypes": [
+          {
+            "locale": "de_AT",
+            "fileType": "*"
+          }
+        ]
       }
-    ]
+    ],
+    "patterns": []
   },
   {
     "name": "Swiss German Dictionary",
@@ -342,9 +776,16 @@
       {
         "name": "de-ch",
         "description": "Swiss German (de-CH) Dictionary.",
-        "locales": ["de", "de_CH"]
+        "locales": ["de", "de_CH"],
+        "localeFileTypes": [
+          {
+            "locale": "de, de_CH",
+            "fileType": "*"
+          }
+        ]
       }
-    ]
+    ],
+    "patterns": []
   },
   {
     "name": "German Dictionary",
@@ -357,9 +798,16 @@
       {
         "name": "de-de",
         "description": "German (de-DE) Dictionary.",
-        "locales": ["de", "de_DE"]
+        "locales": ["de", "de_DE"],
+        "localeFileTypes": [
+          {
+            "locale": "de, de_DE",
+            "fileType": "*"
+          }
+        ]
       }
-    ]
+    ],
+    "patterns": []
   },
   {
     "name": "Django",
@@ -372,9 +820,21 @@
       {
         "name": "django",
         "description": "List of Python Django Framework keywords.",
-        "fileTypes": ["html", "python"]
+        "fileTypes": ["html", "python"],
+        "localeFileTypes": [
+          {
+            "locale": "",
+            "fileType": "html"
+          },
+          {
+            "locale": "",
+            "fileType": "python"
+          }
+        ],
+        "locales": []
       }
-    ]
+    ],
+    "patterns": []
   },
   {
     "name": "Docker",
@@ -387,9 +847,16 @@
       {
         "name": "docker",
         "description": "Docker dictionary.",
-        "fileTypes": ["dockerfile"]
+        "fileTypes": ["dockerfile"],
+        "localeFileTypes": [
+          {
+            "locale": "*",
+            "fileType": "dockerfile"
+          }
+        ]
       }
-    ]
+    ],
+    "patterns": []
   },
   {
     "name": ".Net",
@@ -402,9 +869,16 @@
       {
         "name": "dotnet",
         "description": ".Net keywords.",
-        "fileTypes": ["cs"]
+        "fileTypes": ["cs"],
+        "localeFileTypes": [
+          {
+            "locale": "*",
+            "fileType": "cs"
+          }
+        ]
       }
-    ]
+    ],
+    "patterns": []
   },
   {
     "name": "Greek",
@@ -417,9 +891,16 @@
       {
         "name": "el",
         "description": "Greek dictionary.",
-        "locales": ["el"]
+        "locales": ["el"],
+        "localeFileTypes": [
+          {
+            "locale": "el",
+            "fileType": "*"
+          }
+        ]
       }
-    ]
+    ],
+    "patterns": []
   },
   {
     "name": "Emacs Lisp",
@@ -432,9 +913,16 @@
       {
         "name": "elisp",
         "description": "Emacs Lisp dictionary.",
-        "fileTypes": ["elisp", "lisp"]
+        "fileTypes": ["elisp", "lisp"],
+        "localeFileTypes": [
+          {
+            "locale": "*",
+            "fileType": "elisp, lisp"
+          }
+        ]
       }
-    ]
+    ],
+    "patterns": []
   },
   {
     "name": "Elixir",
@@ -447,9 +935,16 @@
       {
         "name": "elixir",
         "description": "Elixir dictionary.",
-        "fileTypes": ["elixir"]
+        "fileTypes": ["elixir"],
+        "localeFileTypes": [
+          {
+            "locale": "*",
+            "fileType": "elixir"
+          }
+        ]
       }
-    ]
+    ],
+    "patterns": []
   },
   {
     "name": "English - Australian",
@@ -462,9 +957,28 @@
       {
         "name": "en-au",
         "description": "Australian English Dictionary",
-        "locales": ["en-AU"]
+        "locales": ["en-AU"],
+        "localeFileTypes": [
+          {
+            "locale": "en-AU",
+            "fileType": "*"
+          }
+        ]
+      },
+      {
+        "name": "en-common-misspellings",
+        "external": true,
+        "description": "",
+        "locales": ["en-AU"],
+        "localeFileTypes": [
+          {
+            "locale": "en-AU",
+            "fileType": "*"
+          }
+        ]
       }
-    ]
+    ],
+    "patterns": []
   },
   {
     "name": "English - Canadian",
@@ -477,9 +991,28 @@
       {
         "name": "en-ca",
         "description": "Canadian English Dictionary",
-        "locales": ["en-CA"]
+        "locales": ["en-CA"],
+        "localeFileTypes": [
+          {
+            "locale": "en-CA",
+            "fileType": "*"
+          }
+        ]
+      },
+      {
+        "name": "en-common-misspellings",
+        "external": true,
+        "description": "",
+        "locales": ["en-CA"],
+        "localeFileTypes": [
+          {
+            "locale": "en-CA",
+            "fileType": "*"
+          }
+        ]
       }
-    ]
+    ],
+    "patterns": []
   },
   {
     "name": "English - British",
@@ -492,9 +1025,16 @@
       {
         "name": "en-gb",
         "description": "British English Dictionary",
-        "locales": ["en-GB"]
+        "locales": ["en-GB"],
+        "localeFileTypes": [
+          {
+            "locale": "en-GB",
+            "fileType": "*"
+          }
+        ]
       }
-    ]
+    ],
+    "patterns": []
   },
   {
     "name": "English - British (-ise)",
@@ -507,9 +1047,16 @@
       {
         "name": "en-gb",
         "description": "British English Dictionary",
-        "locales": ["en-GB"]
+        "locales": ["en-GB"],
+        "localeFileTypes": [
+          {
+            "locale": "en-GB",
+            "fileType": "*"
+          }
+        ]
       }
-    ]
+    ],
+    "patterns": []
   },
   {
     "name": "English - British (Legacy)",
@@ -522,9 +1069,16 @@
       {
         "name": "en-gb-legacy",
         "description": "Legacy British English Dictionary",
-        "locales": ["en-GB"]
+        "locales": ["en-GB"],
+        "localeFileTypes": [
+          {
+            "locale": "en-GB",
+            "fileType": "*"
+          }
+        ]
       }
-    ]
+    ],
+    "patterns": []
   },
   {
     "name": "English - British (Limited)",
@@ -537,9 +1091,16 @@
       {
         "name": "en-gb",
         "description": "British English Dictionary",
-        "locales": ["en-GB"]
+        "locales": ["en-GB"],
+        "localeFileTypes": [
+          {
+            "locale": "en-GB",
+            "fileType": "*"
+          }
+        ]
       }
-    ]
+    ],
+    "patterns": []
   },
   {
     "name": "English - Shared",
@@ -552,9 +1113,16 @@
       {
         "name": "en-shared",
         "description": "English words shared between the various English dictionaries.",
-        "locales": ["en"]
+        "locales": ["en"],
+        "localeFileTypes": [
+          {
+            "locale": "en",
+            "fileType": "*"
+          }
+        ]
       }
-    ]
+    ],
+    "patterns": []
   },
   {
     "name": "English - American",
@@ -567,9 +1135,16 @@
       {
         "name": "en_us",
         "description": "American English Dictionary",
-        "locales": ["en", "en-US"]
+        "locales": ["en", "en-US"],
+        "localeFileTypes": [
+          {
+            "locale": "en, en-US",
+            "fileType": "*"
+          }
+        ]
       }
-    ]
+    ],
+    "patterns": []
   },
   {
     "name": "English - Common Misspellings",
@@ -581,17 +1156,36 @@
     "dictionaries": [
       {
         "name": "en-common-misspellings",
-        "locales": ["en"]
+        "locales": ["en"],
+        "localeFileTypes": [
+          {
+            "locale": "en",
+            "fileType": "*"
+          }
+        ]
       },
       {
         "name": "en-gb-common-misspellings",
-        "locales": ["en-gb"]
+        "locales": ["en-gb"],
+        "localeFileTypes": [
+          {
+            "locale": "en-gb",
+            "fileType": "*"
+          }
+        ]
       },
       {
         "name": "en-us-common-misspellings",
-        "locales": ["en-us"]
+        "locales": ["en-us"],
+        "localeFileTypes": [
+          {
+            "locale": "en-us",
+            "fileType": "*"
+          }
+        ]
       }
-    ]
+    ],
+    "patterns": []
   },
   {
     "name": "Esperanto",
@@ -604,9 +1198,16 @@
       {
         "name": "eo",
         "description": "Esperanto dictionary.",
-        "locales": ["eo"]
+        "locales": ["eo"],
+        "localeFileTypes": [
+          {
+            "locale": "eo",
+            "fileType": "*"
+          }
+        ]
       }
-    ]
+    ],
+    "patterns": []
   },
   {
     "name": "Spanish Dictionary (Spain)",
@@ -619,9 +1220,16 @@
       {
         "name": "es-es",
         "description": "Spanish Dictionary (Spain)",
-        "locales": ["es", "es_ES"]
+        "locales": ["es", "es_ES"],
+        "localeFileTypes": [
+          {
+            "locale": "es, es_ES",
+            "fileType": "*"
+          }
+        ]
       }
-    ]
+    ],
+    "patterns": []
   },
   {
     "name": "Estonian",
@@ -634,9 +1242,16 @@
       {
         "name": "et-ee",
         "description": "Estonian dictionary.",
-        "locales": ["et", "et-EE"]
+        "locales": ["et", "et-EE"],
+        "localeFileTypes": [
+          {
+            "locale": "et, et-EE",
+            "fileType": "*"
+          }
+        ]
       }
-    ]
+    ],
+    "patterns": []
   },
   {
     "name": "Basque",
@@ -649,9 +1264,16 @@
       {
         "name": "eu",
         "description": "Basque dictionary.",
-        "locales": ["eu"]
+        "locales": ["eu"],
+        "localeFileTypes": [
+          {
+            "locale": "eu",
+            "fileType": "*"
+          }
+        ]
       }
-    ]
+    ],
+    "patterns": []
   },
   {
     "name": "Persian Dictionary",
@@ -664,9 +1286,16 @@
       {
         "name": "fa-ir",
         "description": "Persian Dictionary",
-        "locales": ["fa", "fa-IR"]
+        "locales": ["fa", "fa-IR"],
+        "localeFileTypes": [
+          {
+            "locale": "fa, fa-IR",
+            "fileType": "*"
+          }
+        ]
       }
-    ]
+    ],
+    "patterns": []
   },
   {
     "name": "Finnish",
@@ -679,9 +1308,16 @@
       {
         "name": "fi-fi",
         "description": "Finnish dictionary.",
-        "locales": ["fi", "fi-fi"]
+        "locales": ["fi", "fi-fi"],
+        "localeFileTypes": [
+          {
+            "locale": "fi, fi-fi",
+            "fileType": "*"
+          }
+        ]
       }
-    ]
+    ],
+    "patterns": []
   },
   {
     "name": "File Types",
@@ -694,10 +1330,13 @@
       {
         "name": "filetypes",
         "description": "File types dictionary.",
-        "enabled": true
+        "enabled": true,
+        "locales": [],
+        "fileTypes": []
       }
     ],
-    "hasEnabledByDefault": true
+    "hasEnabledByDefault": true,
+    "patterns": []
   },
   {
     "name": "Flutter",
@@ -710,9 +1349,16 @@
       {
         "name": "flutter",
         "description": "Flutter dictionary.",
-        "fileTypes": ["dart"]
+        "fileTypes": ["dart"],
+        "localeFileTypes": [
+          {
+            "locale": "*",
+            "fileType": "dart"
+          }
+        ]
       }
-    ]
+    ],
+    "patterns": []
   },
   {
     "name": "Font Names",
@@ -724,9 +1370,12 @@
     "dictionaries": [
       {
         "name": "fonts",
-        "description": "Font names dictionary."
+        "description": "Font names dictionary.",
+        "locales": [],
+        "fileTypes": []
       }
-    ]
+    ],
+    "patterns": []
   },
   {
     "name": "French Dictionary (France)",
@@ -739,9 +1388,16 @@
       {
         "name": "fr-fr",
         "description": "French Dictionary (France)",
-        "locales": ["fr", "fr_FR"]
+        "locales": ["fr", "fr_FR"],
+        "localeFileTypes": [
+          {
+            "locale": "fr, fr_FR",
+            "fileType": "*"
+          }
+        ]
       }
-    ]
+    ],
+    "patterns": []
   },
   {
     "name": "Français Réforme 1990",
@@ -754,9 +1410,16 @@
       {
         "name": "fr-fr-90",
         "description": "Français Réforme 1990 dictionary.",
-        "locales": ["fr", "fr-90", "fr-fr"]
+        "locales": ["fr", "fr-90", "fr-fr"],
+        "localeFileTypes": [
+          {
+            "locale": "fr, fr-fr, fr-90",
+            "fileType": "*"
+          }
+        ]
       }
-    ]
+    ],
+    "patterns": []
   },
   {
     "name": "F#",
@@ -769,9 +1432,28 @@
       {
         "name": "fsharp",
         "description": "F# dictionary.",
-        "fileTypes": ["fsharp"]
+        "fileTypes": ["fsharp"],
+        "localeFileTypes": [
+          {
+            "locale": "*",
+            "fileType": "fsharp"
+          }
+        ]
+      },
+      {
+        "name": "dotnet",
+        "external": true,
+        "description": "",
+        "fileTypes": ["fsharp"],
+        "localeFileTypes": [
+          {
+            "locale": "*",
+            "fileType": "fsharp"
+          }
+        ]
       }
-    ]
+    ],
+    "patterns": []
   },
   {
     "name": "Fullstack",
@@ -808,9 +1490,16 @@
           "swift",
           "typescript",
           "typescriptreact"
+        ],
+        "localeFileTypes": [
+          {
+            "locale": "*",
+            "fileType": "ada, c, cpp, csharp, css, h, hpp, html, java, javascript, javascriptreact, lua, mdx, php, python, razor, ruby, rust, scala, scss, swift, typescript, typescriptreact"
+          }
         ]
       }
-    ]
+    ],
+    "patterns": []
   },
   {
     "name": "Gaming",
@@ -822,13 +1511,18 @@
     "dictionaries": [
       {
         "name": "gaming-terms",
-        "description": "Gaming dictionary."
+        "description": "Gaming dictionary.",
+        "locales": [],
+        "fileTypes": []
       },
       {
         "name": "game-development",
-        "description": "Game development dictionary. Includes Godot, Unity, and more terms."
+        "description": "Game development dictionary. Includes Godot, Unity, and more terms.",
+        "locales": [],
+        "fileTypes": []
       }
-    ]
+    ],
+    "patterns": []
   },
   {
     "name": "Scottish Gaelic",
@@ -841,9 +1535,16 @@
       {
         "name": "gd",
         "description": "Scottish Gaelic dictionary",
-        "locales": ["gd"]
+        "locales": ["gd"],
+        "localeFileTypes": [
+          {
+            "locale": "gd",
+            "fileType": "*"
+          }
+        ]
       }
-    ]
+    ],
+    "patterns": []
   },
   {
     "name": "GIS and PostGIS",
@@ -855,9 +1556,12 @@
     "dictionaries": [
       {
         "name": "gis",
-        "description": "GIS and PostGIS dictionary."
+        "description": "GIS and PostGIS dictionary.",
+        "locales": [],
+        "fileTypes": []
       }
-    ]
+    ],
+    "patterns": []
   },
   {
     "name": "Git",
@@ -870,9 +1574,17 @@
       {
         "name": "git",
         "description": "Git Terms",
-        "fileTypes": ["commit-msg", "git-commit"]
+        "fileTypes": ["commit-msg", "git-commit"],
+        "localeFileTypes": [
+          {
+            "locale": "",
+            "fileType": "commit-msg, git-commit"
+          }
+        ],
+        "locales": []
       }
-    ]
+    ],
+    "patterns": []
   },
   {
     "name": "Galician Dictionary (Spain)",
@@ -885,9 +1597,16 @@
       {
         "name": "gl-es",
         "description": "Galician Dictionary (Spain)",
-        "locales": ["gl", "gl_ES"]
+        "locales": ["gl", "gl_ES"],
+        "localeFileTypes": [
+          {
+            "locale": "gl, gl_ES",
+            "fileType": "*"
+          }
+        ]
       }
-    ]
+    ],
+    "patterns": []
   },
   {
     "name": "Go Language",
@@ -900,9 +1619,16 @@
       {
         "name": "golang",
         "description": "Go Language Dictionary",
-        "fileTypes": ["go"]
+        "fileTypes": ["go"],
+        "localeFileTypes": [
+          {
+            "locale": "*",
+            "fileType": "go"
+          }
+        ]
       }
-    ]
+    ],
+    "patterns": []
   },
   {
     "name": "Google Cloud",
@@ -914,9 +1640,12 @@
     "dictionaries": [
       {
         "name": "google",
-        "description": "Google Cloud Development dictionary."
+        "description": "Google Cloud Development dictionary.",
+        "locales": [],
+        "fileTypes": []
       }
-    ]
+    ],
+    "patterns": []
   },
   {
     "name": "Ancient Greek",
@@ -929,9 +1658,16 @@
       {
         "name": "grc",
         "description": "Ancient Greek dictionary.",
-        "locales": ["el-GRC", "gr", "grc", "grc_GR"]
+        "locales": ["el-GRC", "gr", "grc", "grc_GR"],
+        "localeFileTypes": [
+          {
+            "locale": "grc, grc_GR, gr, el-GRC",
+            "fileType": "*"
+          }
+        ]
       }
-    ]
+    ],
+    "patterns": []
   },
   {
     "name": "Haskell",
@@ -944,9 +1680,16 @@
       {
         "name": "haskell",
         "description": "Haskell dictionary.",
-        "fileTypes": ["haskell"]
+        "fileTypes": ["haskell"],
+        "localeFileTypes": [
+          {
+            "locale": "*",
+            "fileType": "haskell"
+          }
+        ]
       }
-    ]
+    ],
+    "patterns": []
   },
   {
     "name": "Hebrew Dictionary",
@@ -959,9 +1702,16 @@
       {
         "name": "he",
         "description": "Hebrew Dictionary",
-        "locales": ["he"]
+        "locales": ["he"],
+        "localeFileTypes": [
+          {
+            "locale": "he",
+            "fileType": "*"
+          }
+        ]
       }
-    ]
+    ],
+    "patterns": []
   },
   {
     "name": "Croatian",
@@ -974,9 +1724,16 @@
       {
         "name": "hr-hr",
         "description": "Croatian dictionary.",
-        "locales": ["hr", "hr-HR"]
+        "locales": ["hr", "hr-HR"],
+        "localeFileTypes": [
+          {
+            "locale": "hr, hr-HR",
+            "fileType": "*"
+          }
+        ]
       }
-    ]
+    ],
+    "patterns": []
   },
   {
     "name": "HTML",
@@ -989,7 +1746,68 @@
       {
         "name": "html",
         "description": "HTML dictionary.",
-        "fileTypes": ["html"]
+        "fileTypes": ["html"],
+        "localeFileTypes": [
+          {
+            "locale": "*",
+            "fileType": "html"
+          }
+        ]
+      }
+    ],
+    "patterns": [
+      {
+        "name": "HTML-id",
+        "pattern": "/\\bid=\"[^\"]*\"/gi"
+      },
+      {
+        "name": "HTML-src",
+        "pattern": "/\\bsrc=\"[^\"]*\"/gi"
+      },
+      {
+        "name": "HTML-class",
+        "pattern": "/\\bclass=\"[^\"]*\"/gi"
+      },
+      {
+        "name": "HTML-IDREF-aria-activedescendant",
+        "pattern": "/\\baria-activedescendant=\"[^\"]*\"/gi"
+      },
+      {
+        "name": "HTML-IDREF-aria-controls",
+        "pattern": "/\\baria-controls=\"[^\"]*\"/gi"
+      },
+      {
+        "name": "HTML-IDREF-aria-describedby",
+        "pattern": "/\\baria-describedby=\"[^\"]*\"/gi"
+      },
+      {
+        "name": "HTML-IDREF-aria-details",
+        "pattern": "/\\baria-details=\"[^\"]*\"/gi"
+      },
+      {
+        "name": "HTML-IDREF-aria-errormessage",
+        "pattern": "/\\baria-errormessage=\"[^\"]*\"/gi"
+      },
+      {
+        "name": "HTML-IDREF-aria-flowto",
+        "pattern": "/\\baria-flowto=\"[^\"]*\"/gi"
+      },
+      {
+        "name": "HTML-IDREF-aria-labelledby",
+        "pattern": "/\\baria-labelledby=\"[^\"]*\"/gi"
+      },
+      {
+        "name": "HTML-IDREF-aria-owns",
+        "pattern": "/\\baria-owns=\"[^\"]*\"/gi"
+      },
+      {
+        "name": "HTML-IDREF-for",
+        "pattern": "/\\bfor=\"[^\"]*\"/gi"
+      },
+      {
+        "name": "HTML-symbol-entity",
+        "description": "Matches on HTML symbols like `&clubs;`",
+        "pattern": "/&[a-z]+;/gi"
       }
     ]
   },
@@ -1004,9 +1822,21 @@
       {
         "name": "html-symbol-entities",
         "description": "HTML Symbol Entities Dictionary",
-        "fileTypes": ["html", "markdown"]
+        "fileTypes": ["html", "markdown"],
+        "localeFileTypes": [
+          {
+            "locale": "",
+            "fileType": "html"
+          },
+          {
+            "locale": "",
+            "fileType": "markdown"
+          }
+        ],
+        "locales": []
       }
-    ]
+    ],
+    "patterns": []
   },
   {
     "name": "Hungarian",
@@ -1019,9 +1849,16 @@
       {
         "name": "hu-hu",
         "description": "Hungarian dictionary.",
-        "locales": ["hu", "hu-hu"]
+        "locales": ["hu", "hu-hu"],
+        "localeFileTypes": [
+          {
+            "locale": "hu, hu-hu",
+            "fileType": "*"
+          }
+        ]
       }
-    ]
+    ],
+    "patterns": []
   },
   {
     "name": "Armenian",
@@ -1034,9 +1871,16 @@
       {
         "name": "hy_am",
         "description": "Armenian dictionary",
-        "locales": ["hy", "hy-AM"]
+        "locales": ["hy", "hy-AM"],
+        "localeFileTypes": [
+          {
+            "locale": "hy, hy-AM",
+            "fileType": "*"
+          }
+        ]
       }
-    ]
+    ],
+    "patterns": []
   },
   {
     "name": "Indonesia",
@@ -1049,9 +1893,16 @@
       {
         "name": "id-id",
         "description": "Indonesia dictionary.",
-        "locales": ["id", "id-ID"]
+        "locales": ["id", "id-ID"],
+        "localeFileTypes": [
+          {
+            "locale": "id, id-ID",
+            "fileType": "*"
+          }
+        ]
       }
-    ]
+    ],
+    "patterns": []
   },
   {
     "name": "Italian",
@@ -1064,9 +1915,16 @@
       {
         "name": "it-it",
         "description": "Italian dictionary.",
-        "locales": ["it", "it-IT"]
+        "locales": ["it", "it-IT"],
+        "localeFileTypes": [
+          {
+            "locale": "it, it-IT",
+            "fileType": "*"
+          }
+        ]
       }
-    ]
+    ],
+    "patterns": []
   },
   {
     "name": "Java",
@@ -1079,7 +1937,25 @@
       {
         "name": "java",
         "description": "Java dictionary.",
-        "fileTypes": ["java"]
+        "fileTypes": ["java"],
+        "localeFileTypes": [
+          {
+            "locale": "*",
+            "fileType": "java"
+          }
+        ]
+      }
+    ],
+    "patterns": [
+      {
+        "name": "java-statement-import",
+        "description": "Matches the import statement",
+        "pattern": "/^\\s*import\\s+[\\w.]+/gm"
+      },
+      {
+        "name": "java-member-function",
+        "description": "Ignore member functions etc, these are checked by the compiler.",
+        "pattern": "/(\\.\\w+)+(?=\\()/g"
       }
     ]
   },
@@ -1094,9 +1970,16 @@
       {
         "name": "julia",
         "description": "Julia Dictionary",
-        "fileTypes": ["julia"]
+        "fileTypes": ["julia"],
+        "localeFileTypes": [
+          {
+            "locale": "*",
+            "fileType": "julia"
+          }
+        ]
       }
-    ]
+    ],
+    "patterns": []
   },
   {
     "name": "K8s",
@@ -1109,9 +1992,16 @@
       {
         "name": "k8s",
         "description": "K8s dictionary.",
-        "fileTypes": ["yaml"]
+        "fileTypes": ["yaml"],
+        "localeFileTypes": [
+          {
+            "locale": "*",
+            "fileType": "yaml"
+          }
+        ]
       }
-    ]
+    ],
+    "patterns": []
   },
   {
     "name": "Kotlin",
@@ -1124,9 +2014,28 @@
       {
         "name": "kotlin",
         "description": "Kotlin dictionary.",
-        "fileTypes": ["kotlin"]
+        "fileTypes": ["kotlin"],
+        "localeFileTypes": [
+          {
+            "locale": "*",
+            "fileType": "kotlin"
+          }
+        ]
+      },
+      {
+        "name": "java",
+        "external": true,
+        "description": "",
+        "fileTypes": ["kotlin"],
+        "localeFileTypes": [
+          {
+            "locale": "*",
+            "fileType": "kotlin"
+          }
+        ]
       }
-    ]
+    ],
+    "patterns": []
   },
   {
     "name": "Latin",
@@ -1139,9 +2048,16 @@
       {
         "name": "la",
         "description": "Latin dictionary.",
-        "locales": ["la", "la-VA"]
+        "locales": ["la", "la-VA"],
+        "localeFileTypes": [
+          {
+            "locale": "la, la-VA",
+            "fileType": "*"
+          }
+        ]
       }
-    ]
+    ],
+    "patterns": []
   },
   {
     "name": "LaTeX",
@@ -1154,9 +2070,16 @@
       {
         "name": "latex",
         "description": "LaTeX dictionary",
-        "fileTypes": ["latex"]
+        "fileTypes": ["latex"],
+        "localeFileTypes": [
+          {
+            "locale": "*",
+            "fileType": "latex"
+          }
+        ]
       }
-    ]
+    ],
+    "patterns": []
   },
   {
     "name": "Lorem-ipsum",
@@ -1169,9 +2092,16 @@
       {
         "name": "lorem-ipsum",
         "description": "Lorem-ipsum dictionary.",
-        "locales": ["lorem", "lorem-ipsum"]
+        "locales": ["lorem", "lorem-ipsum"],
+        "localeFileTypes": [
+          {
+            "locale": "lorem, lorem-ipsum",
+            "fileType": "*"
+          }
+        ]
       }
-    ]
+    ],
+    "patterns": []
   },
   {
     "name": "Lithuanian",
@@ -1184,9 +2114,16 @@
       {
         "name": "lt-lt",
         "description": "Lithuanian dictionary.",
-        "locales": ["lt", "lt-LT"]
+        "locales": ["lt", "lt-LT"],
+        "localeFileTypes": [
+          {
+            "locale": "lt, lt-LT",
+            "fileType": "*"
+          }
+        ]
       }
-    ]
+    ],
+    "patterns": []
   },
   {
     "name": "Lua",
@@ -1199,9 +2136,16 @@
       {
         "name": "lua",
         "description": "Lua dictionary.",
-        "fileTypes": ["lua"]
+        "fileTypes": ["lua"],
+        "localeFileTypes": [
+          {
+            "locale": "*",
+            "fileType": "lua"
+          }
+        ]
       }
-    ]
+    ],
+    "patterns": []
   },
   {
     "name": "Latvian",
@@ -1214,9 +2158,16 @@
       {
         "name": "lv",
         "description": "Latvian dictionary.",
-        "locales": ["lv"]
+        "locales": ["lv"],
+        "localeFileTypes": [
+          {
+            "locale": "lv",
+            "fileType": "*"
+          }
+        ]
       }
-    ]
+    ],
+    "patterns": []
   },
   {
     "name": "Makefile",
@@ -1229,9 +2180,16 @@
       {
         "name": "makefile",
         "description": "Makefile dictionary.",
-        "fileTypes": ["makefile"]
+        "fileTypes": ["makefile"],
+        "localeFileTypes": [
+          {
+            "locale": "*",
+            "fileType": "makefile"
+          }
+        ]
       }
-    ]
+    ],
+    "patterns": []
   },
   {
     "name": "Markdown",
@@ -1239,8 +2197,79 @@
     "packageName": "@cspell/dict-markdown",
     "description": "Markdown dictionary.",
     "cspell": true,
-    "categories": [],
-    "dictionaries": []
+    "categories": ["programming"],
+    "dictionaries": [
+      {
+        "name": "html",
+        "external": true,
+        "description": "",
+        "fileTypes": ["markdown", "mdx"],
+        "localeFileTypes": [
+          {
+            "locale": "*",
+            "fileType": "markdown, mdx"
+          }
+        ]
+      },
+      {
+        "name": "html-symbol-entities",
+        "external": true,
+        "description": "",
+        "fileTypes": ["markdown", "mdx"],
+        "localeFileTypes": [
+          {
+            "locale": "*",
+            "fileType": "markdown, mdx"
+          }
+        ]
+      },
+      {
+        "name": "typescript",
+        "external": true,
+        "description": "",
+        "fileTypes": ["mdx"],
+        "localeFileTypes": [
+          {
+            "locale": "*",
+            "fileType": "mdx"
+          }
+        ]
+      },
+      {
+        "name": "css",
+        "external": true,
+        "description": "",
+        "fileTypes": ["mdx"],
+        "localeFileTypes": [
+          {
+            "locale": "*",
+            "fileType": "mdx"
+          }
+        ]
+      }
+    ],
+    "patterns": [
+      {
+        "name": "MARKDOWN-link-reference",
+        "description": "Markdown reference link: `[This is a link][reference]`, matches `[reference]`",
+        "pattern": "/(?<=\\])\\[[-\\w.`'\"*&;#@ ]+\\]/g"
+      },
+      {
+        "name": "MARKDOWN-link-footer",
+        "description": "Markdown referenced link: `[reference]: https://www.google.com`, matches the entire reference.",
+        "pattern": "/\\[[-\\w.`'\"*&;#@ ]+\\]:( [^\\s]*)?/g"
+      },
+      {
+        "name": "MARKDOWN-link",
+        "description": "Markdown link: `[link text](link)`, matches `link`",
+        "pattern": "/(?<=\\]\\()[^)\\s]+/g"
+      },
+      {
+        "name": "MARKDOWN-anchor",
+        "description": "Markdown Anchors: `<a id=\"my_link\"></a>`, matches `my_link`",
+        "pattern": "/(?<=<a\\s+id=\")[^\"\\s]+/g"
+      }
+    ]
   },
   {
     "name": "Medical terms",
@@ -1253,10 +2282,13 @@
       {
         "name": "medical terms",
         "description": "List of nearly 100,000 medical terms.",
-        "enabled": true
+        "enabled": true,
+        "locales": [],
+        "fileTypes": []
       }
     ],
-    "hasEnabledByDefault": true
+    "hasEnabledByDefault": true,
+    "patterns": []
   },
   {
     "name": "Macedonian",
@@ -1269,9 +2301,16 @@
       {
         "name": "mk",
         "description": "Macedonian dictionary.",
-        "locales": ["mk", "mk-cyrl"]
+        "locales": ["mk", "mk-cyrl"],
+        "localeFileTypes": [
+          {
+            "locale": "mk, mk-cyrl",
+            "fileType": "*"
+          }
+        ]
       }
-    ]
+    ],
+    "patterns": []
   },
   {
     "name": "Mongolian",
@@ -1284,9 +2323,16 @@
       {
         "name": "mn-mn",
         "description": "Mongolian dictionary.",
-        "locales": ["mn", "mn-MN"]
+        "locales": ["mn", "mn-MN"],
+        "localeFileTypes": [
+          {
+            "locale": "mn, mn-MN",
+            "fileType": "*"
+          }
+        ]
       }
-    ]
+    ],
+    "patterns": []
   },
   {
     "name": "Mnemonics",
@@ -1299,9 +2345,17 @@
       {
         "name": "mnemonics",
         "description": "i86 Mnemonics dictionary for cspell",
-        "fileTypes": ["c", "cpp", "h", "hpp"]
+        "fileTypes": ["c", "cpp", "h", "hpp"],
+        "localeFileTypes": [
+          {
+            "locale": "",
+            "fileType": "c, cpp, h, hpp"
+          }
+        ],
+        "locales": []
       }
-    ]
+    ],
+    "patterns": []
   },
   {
     "name": "Monkey C",
@@ -1314,9 +2368,16 @@
       {
         "name": "monkeyc",
         "description": "Monkey C dictionary.",
-        "fileTypes": ["monkeyc"]
+        "fileTypes": ["monkeyc"],
+        "localeFileTypes": [
+          {
+            "locale": "*",
+            "fileType": "monkeyc"
+          }
+        ]
       }
-    ]
+    ],
+    "patterns": []
   },
   {
     "name": "Norwegian Bokmål",
@@ -1329,9 +2390,16 @@
       {
         "name": "nb-no",
         "description": "Norwegian Bokmål dictionary.",
-        "locales": ["nb", "nb-no"]
+        "locales": ["nb", "nb-no"],
+        "localeFileTypes": [
+          {
+            "locale": "nb, nb-no",
+            "fileType": "*"
+          }
+        ]
       }
-    ]
+    ],
+    "patterns": []
   },
   {
     "name": "Dutch (Netherlands) Dictionary",
@@ -1344,9 +2412,16 @@
       {
         "name": "nl-nl",
         "description": "Dutch (Netherlands) Dictionary",
-        "locales": ["nl", "nl-NL"]
+        "locales": ["nl", "nl-NL"],
+        "localeFileTypes": [
+          {
+            "locale": "nl, nl-NL",
+            "fileType": "*"
+          }
+        ]
       }
-    ]
+    ],
+    "patterns": []
   },
   {
     "name": "Node.js",
@@ -1364,9 +2439,16 @@
           "javascriptreact",
           "typescript",
           "typescriptreact"
+        ],
+        "localeFileTypes": [
+          {
+            "locale": "*",
+            "fileType": "javascript, typescript, javascriptreact, typescriptreact"
+          }
         ]
       }
-    ]
+    ],
+    "patterns": []
   },
   {
     "name": "NPM",
@@ -1384,9 +2466,16 @@
           "javascriptreact",
           "typescript",
           "typescriptreact"
+        ],
+        "localeFileTypes": [
+          {
+            "locale": "*",
+            "fileType": "javascript, typescript, javascriptreact, typescriptreact"
+          }
         ]
       }
-    ]
+    ],
+    "patterns": []
   },
   {
     "name": "People Names",
@@ -1399,10 +2488,13 @@
       {
         "name": "people-names",
         "description": "People Names dictionary.",
-        "enabled": true
+        "enabled": true,
+        "locales": [],
+        "fileTypes": []
       }
     ],
-    "hasEnabledByDefault": true
+    "hasEnabledByDefault": true,
+    "patterns": []
   },
   {
     "name": "PHP",
@@ -1415,9 +2507,16 @@
       {
         "name": "php",
         "description": "Php dictionary.",
-        "fileTypes": ["php"]
+        "fileTypes": ["php"],
+        "localeFileTypes": [
+          {
+            "locale": "*",
+            "fileType": "php"
+          }
+        ]
       }
-    ]
+    ],
+    "patterns": []
   },
   {
     "name": "Polish Dictionary",
@@ -1430,9 +2529,16 @@
       {
         "name": "pl-pl",
         "description": "Polish Dictionary",
-        "locales": ["pl", "pl_PL"]
+        "locales": ["pl", "pl_PL"],
+        "localeFileTypes": [
+          {
+            "locale": "pl, pl_PL",
+            "fileType": "*"
+          }
+        ]
       }
-    ]
+    ],
+    "patterns": []
   },
   {
     "name": "Pokémon",
@@ -1445,10 +2551,13 @@
       {
         "name": "pokemon",
         "description": "Pokémon dictionary.",
-        "enabled": true
+        "enabled": true,
+        "locales": [],
+        "fileTypes": []
       }
     ],
-    "hasEnabledByDefault": true
+    "hasEnabledByDefault": true,
+    "patterns": []
   },
   {
     "name": "PowerShell",
@@ -1461,9 +2570,16 @@
       {
         "name": "powershell",
         "description": "PowerShell Keyword Dictionary",
-        "fileTypes": ["powershell"]
+        "fileTypes": ["powershell"],
+        "localeFileTypes": [
+          {
+            "locale": "*",
+            "fileType": "powershell"
+          }
+        ]
       }
-    ]
+    ],
+    "patterns": []
   },
   {
     "name": "Portuguese (Brazilian) Dictionary",
@@ -1476,9 +2592,16 @@
       {
         "name": "pt-br",
         "description": "Portuguese (Brazilian) Dictionary",
-        "locales": ["pt", "pt_BR"]
+        "locales": ["pt", "pt_BR"],
+        "localeFileTypes": [
+          {
+            "locale": "pt, pt_BR",
+            "fileType": "*"
+          }
+        ]
       }
-    ]
+    ],
+    "patterns": []
   },
   {
     "name": "Portuguese Dictionary (Portugal)",
@@ -1491,9 +2614,16 @@
       {
         "name": "pt-pt",
         "description": "Portuguese Dictionary (Portugal)",
-        "locales": ["pt", "pt_PT"]
+        "locales": ["pt", "pt_PT"],
+        "localeFileTypes": [
+          {
+            "locale": "pt, pt_PT",
+            "fileType": "*"
+          }
+        ]
       }
-    ]
+    ],
+    "patterns": []
   },
   {
     "name": "Common Public Licenses",
@@ -1506,10 +2636,13 @@
       {
         "name": "public-licenses",
         "description": "Common Public Licenses dictionary.",
-        "enabled": true
+        "enabled": true,
+        "locales": [],
+        "fileTypes": []
       }
     ],
-    "hasEnabledByDefault": true
+    "hasEnabledByDefault": true,
+    "patterns": []
   },
   {
     "name": "Python",
@@ -1522,14 +2655,29 @@
       {
         "name": "python",
         "description": "Python Dictionary",
-        "fileTypes": ["python"]
+        "fileTypes": ["python"],
+        "localeFileTypes": [
+          {
+            "locale": "",
+            "fileType": "python"
+          }
+        ],
+        "locales": []
       },
       {
         "name": "python-common",
         "description": "Python Common Terms Dictionary",
-        "fileTypes": ["python"]
+        "fileTypes": ["python"],
+        "localeFileTypes": [
+          {
+            "locale": "",
+            "fileType": "python"
+          }
+        ],
+        "locales": []
       }
-    ]
+    ],
+    "patterns": []
   },
   {
     "name": "R",
@@ -1542,9 +2690,16 @@
       {
         "name": "r",
         "description": "R dictionary.",
-        "fileTypes": ["r"]
+        "fileTypes": ["r"],
+        "localeFileTypes": [
+          {
+            "locale": "*",
+            "fileType": "r"
+          }
+        ]
       }
-    ]
+    ],
+    "patterns": []
   },
   {
     "name": "Redis",
@@ -1556,9 +2711,12 @@
     "dictionaries": [
       {
         "name": "redis",
-        "description": "Redis dictionary."
+        "description": "Redis dictionary.",
+        "locales": [],
+        "fileTypes": []
       }
-    ]
+    ],
+    "patterns": []
   },
   {
     "name": "Romanian",
@@ -1571,9 +2729,16 @@
       {
         "name": "ro-ro",
         "description": "Romanian dictionary.",
-        "locales": ["ro", "ro-RO"]
+        "locales": ["ro", "ro-RO"],
+        "localeFileTypes": [
+          {
+            "locale": "ro, ro-RO",
+            "fileType": "*"
+          }
+        ]
       }
-    ]
+    ],
+    "patterns": []
   },
   {
     "name": "Russian Dictionary (Combined)",
@@ -1586,9 +2751,16 @@
       {
         "name": "ru-ru",
         "description": "Russian Dictionary (Combined)",
-        "locales": ["ru", "ru-ru"]
+        "locales": ["ru", "ru-ru"],
+        "localeFileTypes": [
+          {
+            "locale": "ru, ru-ru",
+            "fileType": "*"
+          }
+        ]
       }
-    ]
+    ],
+    "patterns": []
   },
   {
     "name": "Ruby",
@@ -1601,9 +2773,16 @@
       {
         "name": "ruby",
         "description": "For ruby and ruby on rails",
-        "fileTypes": ["ruby"]
+        "fileTypes": ["ruby"],
+        "localeFileTypes": [
+          {
+            "locale": "*",
+            "fileType": "ruby"
+          }
+        ]
       }
-    ]
+    ],
+    "patterns": []
   },
   {
     "name": "Rust",
@@ -1616,9 +2795,16 @@
       {
         "name": "rust",
         "description": "Rust Keyword Dictionary",
-        "fileTypes": ["rust"]
+        "fileTypes": ["rust"],
+        "localeFileTypes": [
+          {
+            "locale": "*",
+            "fileType": "rust"
+          }
+        ]
       }
-    ]
+    ],
+    "patterns": []
   },
   {
     "name": "Scala",
@@ -1631,9 +2817,16 @@
       {
         "name": "scala",
         "description": "Scala dictionary.",
-        "fileTypes": ["scala"]
+        "fileTypes": ["scala"],
+        "localeFileTypes": [
+          {
+            "locale": "*",
+            "fileType": "scala"
+          }
+        ]
       }
-    ]
+    ],
+    "patterns": []
   },
   {
     "name": "Scientific Terms GB",
@@ -1646,9 +2839,16 @@
       {
         "name": "scientific-terms-gb",
         "description": "Scientific Terms GB dictionary.",
-        "locales": ["en-GB"]
+        "locales": ["en-GB"],
+        "localeFileTypes": [
+          {
+            "locale": "en-GB",
+            "fileType": "*"
+          }
+        ]
       }
-    ]
+    ],
+    "patterns": []
   },
   {
     "name": "Scientific Terms US",
@@ -1661,10 +2861,17 @@
       {
         "name": "scientific-terms-us",
         "description": "Scientific Terms US dictionary.",
-        "enabled": true
+        "enabled": true,
+        "localeFileTypes": [
+          {
+            "locale": "*",
+            "fileType": "*"
+          }
+        ]
       }
     ],
-    "hasEnabledByDefault": true
+    "hasEnabledByDefault": true,
+    "patterns": []
   },
   {
     "name": "ShellScript",
@@ -1677,14 +2884,27 @@
       {
         "name": "bash",
         "description": "Bash dictionary.",
-        "fileTypes": ["bashscript"]
+        "fileTypes": ["bashscript"],
+        "localeFileTypes": [
+          {
+            "locale": "*",
+            "fileType": "bashscript"
+          }
+        ]
       },
       {
         "name": "shellscript",
         "description": "ShellScript dictionary.",
-        "fileTypes": ["shellscript"]
+        "fileTypes": ["shellscript"],
+        "localeFileTypes": [
+          {
+            "locale": "*",
+            "fileType": "shellscript"
+          }
+        ]
       }
-    ]
+    ],
+    "patterns": []
   },
   {
     "name": "Slovak",
@@ -1697,9 +2917,16 @@
       {
         "name": "sk-sk",
         "description": "Slovak dictionary.",
-        "locales": ["sk"]
+        "locales": ["sk"],
+        "localeFileTypes": [
+          {
+            "locale": "sk",
+            "fileType": "*"
+          }
+        ]
       }
-    ]
+    ],
+    "patterns": []
   },
   {
     "name": "Slovenian",
@@ -1712,9 +2939,16 @@
       {
         "name": "sl-si",
         "description": "Slovenian dictionary.",
-        "locales": ["sl", "sl-SI"]
+        "locales": ["sl", "sl-SI"],
+        "localeFileTypes": [
+          {
+            "locale": "sl, sl-SI",
+            "fileType": "*"
+          }
+        ]
       }
-    ]
+    ],
+    "patterns": []
   },
   {
     "name": "Software Terms",
@@ -1726,39 +2960,54 @@
     "dictionaries": [
       {
         "name": "software-term-suggestions",
-        "enabled": true
+        "enabled": true,
+        "locales": [],
+        "fileTypes": []
       },
       {
         "name": "softwareTerms",
         "description": "Software terms dictionary.",
-        "enabled": true
+        "enabled": true,
+        "locales": [],
+        "fileTypes": []
       },
       {
         "name": "software-tools",
         "description": "Software tools dictionary.",
-        "enabled": true
+        "enabled": true,
+        "locales": [],
+        "fileTypes": []
       },
       {
         "name": "networking-terms",
-        "description": "Software networking terms dictionary."
+        "description": "Software networking terms dictionary.",
+        "locales": [],
+        "fileTypes": []
       },
       {
         "name": "web-services",
         "description": "Web Services and APIs dictionary.",
-        "enabled": true
+        "enabled": true,
+        "locales": [],
+        "fileTypes": []
       },
       {
         "name": "computing-acronyms",
         "description": "Common acronyms related to computing.",
-        "enabled": true
+        "enabled": true,
+        "locales": [],
+        "fileTypes": []
       },
       {
         "name": "coding-compound-terms",
         "description": "Common codding compound terms.",
-        "enabled": true
+        "enabled": true,
+        "locales": [],
+        "fileTypes": []
       }
     ],
-    "hasEnabledByDefault": true
+    "hasEnabledByDefault": true,
+    "patterns": []
   },
   {
     "name": "SQL",
@@ -1771,7 +3020,23 @@
       {
         "name": "sql",
         "description": "SQL dictionary.",
-        "fileTypes": ["sql"]
+        "fileTypes": ["sql"],
+        "localeFileTypes": [
+          {
+            "locale": "*",
+            "fileType": "sql"
+          }
+        ]
+      }
+    ],
+    "patterns": [
+      {
+        "name": "sql-hex-number",
+        "pattern": "/0x[a-f0-9]*/gi"
+      },
+      {
+        "name": "sql-unicode-string-prefix",
+        "pattern": "/\\bN'/g"
       }
     ]
   },
@@ -1786,9 +3051,16 @@
       {
         "name": "sr-cyrl",
         "description": "Serbian (Cyrillic) dictionary.",
-        "locales": ["sr", "sr-Cyrl"]
+        "locales": ["sr", "sr-Cyrl"],
+        "localeFileTypes": [
+          {
+            "locale": "sr, sr-Cyrl",
+            "fileType": "*"
+          }
+        ]
       }
-    ]
+    ],
+    "patterns": []
   },
   {
     "name": "Serbian (Latin)",
@@ -1801,9 +3073,16 @@
       {
         "name": "sr-latn",
         "description": "Serbian (Latin) dictionary.",
-        "locales": ["sr", "sr-Latn"]
+        "locales": ["sr", "sr-Latn"],
+        "localeFileTypes": [
+          {
+            "locale": "sr, sr-Latn",
+            "fileType": "*"
+          }
+        ]
       }
-    ]
+    ],
+    "patterns": []
   },
   {
     "name": "Swedish Dictionary",
@@ -1816,9 +3095,16 @@
       {
         "name": "sv",
         "description": "Swedish Dictionary",
-        "locales": ["sv", "sv_SE"]
+        "locales": ["sv", "sv_SE"],
+        "localeFileTypes": [
+          {
+            "locale": "sv, sv_SE",
+            "fileType": "*"
+          }
+        ]
       }
-    ]
+    ],
+    "patterns": []
   },
   {
     "name": "Svelte",
@@ -1831,9 +3117,92 @@
       {
         "name": "svelte",
         "description": "Svelte dictionary.",
-        "fileTypes": ["javascript", "svelte", "typescript"]
+        "fileTypes": ["javascript", "svelte", "typescript"],
+        "localeFileTypes": [
+          {
+            "locale": "*",
+            "fileType": "svelte"
+          },
+          {
+            "locale": "",
+            "fileType": "typescript, javascript"
+          }
+        ]
+      },
+      {
+        "name": "typescript",
+        "external": true,
+        "description": "",
+        "fileTypes": ["svelte"],
+        "localeFileTypes": [
+          {
+            "locale": "*",
+            "fileType": "svelte"
+          }
+        ]
+      },
+      {
+        "name": "npm",
+        "external": true,
+        "description": "",
+        "fileTypes": ["svelte"],
+        "localeFileTypes": [
+          {
+            "locale": "*",
+            "fileType": "svelte"
+          }
+        ]
+      },
+      {
+        "name": "html",
+        "external": true,
+        "description": "",
+        "fileTypes": ["svelte"],
+        "localeFileTypes": [
+          {
+            "locale": "*",
+            "fileType": "svelte"
+          }
+        ]
+      },
+      {
+        "name": "html-symbol-entities",
+        "external": true,
+        "description": "",
+        "fileTypes": ["svelte"],
+        "localeFileTypes": [
+          {
+            "locale": "*",
+            "fileType": "svelte"
+          }
+        ]
+      },
+      {
+        "name": "css",
+        "external": true,
+        "description": "",
+        "fileTypes": ["svelte"],
+        "localeFileTypes": [
+          {
+            "locale": "*",
+            "fileType": "svelte"
+          }
+        ]
+      },
+      {
+        "name": "fonts",
+        "external": true,
+        "description": "",
+        "fileTypes": ["svelte"],
+        "localeFileTypes": [
+          {
+            "locale": "*",
+            "fileType": "svelte"
+          }
+        ]
       }
-    ]
+    ],
+    "patterns": []
   },
   {
     "name": "Swift",
@@ -1846,9 +3215,16 @@
       {
         "name": "swift",
         "description": "Swift dictionary.",
-        "fileTypes": ["swift"]
+        "fileTypes": ["swift"],
+        "localeFileTypes": [
+          {
+            "locale": "*",
+            "fileType": "swift"
+          }
+        ]
       }
-    ]
+    ],
+    "patterns": []
   },
   {
     "name": "Terraform",
@@ -1861,9 +3237,16 @@
       {
         "name": "terraform",
         "description": "Terraform dictionary.",
-        "fileTypes": ["terraform", "tf", "tfvars"]
+        "fileTypes": ["terraform", "tf", "tfvars"],
+        "localeFileTypes": [
+          {
+            "locale": "*",
+            "fileType": "terraform, tf, tfvars"
+          }
+        ]
       }
-    ]
+    ],
+    "patterns": []
   },
   {
     "name": "Turkish",
@@ -1876,9 +3259,16 @@
       {
         "name": "tr-tr",
         "description": "Turkish dictionary.",
-        "locales": ["tr", "tr-TR"]
+        "locales": ["tr", "tr-TR"],
+        "localeFileTypes": [
+          {
+            "locale": "tr, tr-TR",
+            "fileType": "*"
+          }
+        ]
       }
-    ]
+    ],
+    "patterns": []
   },
   {
     "name": "TypeScript/JavaScript",
@@ -1898,7 +3288,61 @@
           "mdx",
           "typescript",
           "typescriptreact"
+        ],
+        "localeFileTypes": [
+          {
+            "locale": "*",
+            "fileType": "typescript, javascript, typescriptreact, javascriptreact, mdx, astro"
+          }
         ]
+      },
+      {
+        "name": "html",
+        "external": true,
+        "description": "",
+        "fileTypes": ["astro"],
+        "localeFileTypes": [
+          {
+            "locale": "",
+            "fileType": "astro"
+          }
+        ],
+        "locales": []
+      },
+      {
+        "name": "html-symbol-entities",
+        "external": true,
+        "description": "",
+        "fileTypes": ["astro"],
+        "localeFileTypes": [
+          {
+            "locale": "",
+            "fileType": "astro"
+          }
+        ],
+        "locales": []
+      }
+    ],
+    "patterns": [
+      {
+        "name": "js-hex-number",
+        "pattern": "/\\b0[xX][a-fA-F0-9]+n?\\b/g",
+        "description": "JavaScript Hexadecimal Number including BigInt."
+      },
+      {
+        "name": "js-hex-escape",
+        "pattern": "/\\\\x[a-f0-9]{2}/gi",
+        "description": "JavaScript String Hexadecimal Escape sequence."
+      },
+      {
+        "name": "js-unicode-escape",
+        "pattern": "/\\\\u[a-f0-9]{4}/gi",
+        "description": "JavaScript String Unicode Escape sequence."
+      },
+      {
+        "name": "js-regexp-flags",
+        "pattern": "/\\/[dgimsuy]{1,7}\\b(?=(?:\\.flags\\b)|\\s*$|[;),])/g",
+        "description": "JavaScript Match Regular Expression Flags"
       }
     ]
   },
@@ -1913,9 +3357,16 @@
       {
         "name": "uk-ua",
         "description": "Ukrainian Dictionary",
-        "locales": ["uk"]
+        "locales": ["uk"],
+        "localeFileTypes": [
+          {
+            "locale": "uk",
+            "fileType": "*"
+          }
+        ]
       }
-    ]
+    ],
+    "patterns": []
   },
   {
     "name": "Vietnamese",
@@ -1928,9 +3379,16 @@
       {
         "name": "vi-vn",
         "description": "Vietnamese dictionary.",
-        "locales": ["vi"]
+        "locales": ["vi"],
+        "localeFileTypes": [
+          {
+            "locale": "vi",
+            "fileType": "*"
+          }
+        ]
       }
-    ]
+    ],
+    "patterns": []
   },
   {
     "name": "Vim",
@@ -1942,9 +3400,12 @@
     "dictionaries": [
       {
         "name": "vim",
-        "description": "Vim dictionary."
+        "description": "Vim dictionary.",
+        "locales": [],
+        "fileTypes": []
       }
-    ]
+    ],
+    "patterns": []
   },
   {
     "name": "Vue",
@@ -1952,8 +3413,82 @@
     "packageName": "@cspell/dict-vue",
     "description": "CSpell configuration for VUE files",
     "cspell": true,
-    "categories": [],
-    "dictionaries": []
+    "categories": ["programming"],
+    "dictionaries": [
+      {
+        "name": "css",
+        "external": true,
+        "description": "",
+        "fileTypes": ["vue"],
+        "localeFileTypes": [
+          {
+            "locale": "*",
+            "fileType": "vue"
+          }
+        ]
+      },
+      {
+        "name": "fonts",
+        "external": true,
+        "description": "",
+        "fileTypes": ["vue"],
+        "localeFileTypes": [
+          {
+            "locale": "*",
+            "fileType": "vue"
+          }
+        ]
+      },
+      {
+        "name": "fullstack",
+        "external": true,
+        "description": "",
+        "fileTypes": ["vue"],
+        "localeFileTypes": [
+          {
+            "locale": "*",
+            "fileType": "vue"
+          }
+        ]
+      },
+      {
+        "name": "html",
+        "external": true,
+        "description": "",
+        "fileTypes": ["vue"],
+        "localeFileTypes": [
+          {
+            "locale": "*",
+            "fileType": "vue"
+          }
+        ]
+      },
+      {
+        "name": "php",
+        "external": true,
+        "description": "",
+        "fileTypes": ["vue"],
+        "localeFileTypes": [
+          {
+            "locale": "*",
+            "fileType": "vue"
+          }
+        ]
+      },
+      {
+        "name": "typescript",
+        "external": true,
+        "description": "",
+        "fileTypes": ["vue"],
+        "localeFileTypes": [
+          {
+            "locale": "*",
+            "fileType": "vue"
+          }
+        ]
+      }
+    ],
+    "patterns": []
   },
   {
     "name": "Win32",
@@ -1966,8 +3501,15 @@
       {
         "name": "win32",
         "description": "Win32 dictionary.",
-        "fileTypes": ["c", "cpp"]
+        "fileTypes": ["c", "cpp"],
+        "localeFileTypes": [
+          {
+            "locale": "*",
+            "fileType": "c, cpp"
+          }
+        ]
       }
-    ]
+    ],
+    "patterns": []
   }
 ]

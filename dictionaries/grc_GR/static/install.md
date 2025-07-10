@@ -23,7 +23,7 @@ Add the following to your VSCode settings:
 </details>
 
 <details>
-<summary>CSpell Settings `cspell.json`</summary>
+<summary>CSpell Settings <code>cspell.json</code></summary>
 
 **`cspell.json`**
 
@@ -37,7 +37,7 @@ Add the following to your VSCode settings:
 </details>
 
 <details>
-<summary>CSpell Settings `cspell.config.yaml`</summary>
+<summary>CSpell Settings <code>cspell.config.yaml</code></summary>
 
 **`cspell.config.yaml`**
 
@@ -48,6 +48,8 @@ language: el-GRC, gr, grc, grc_GR
 ```
 
 </details>
+
+## Local Installation using CDN
 
 ## CDN Configuration
 
@@ -68,7 +70,7 @@ Add the following to your VSCode settings:
 </details>
 
 <details>
-<summary>CSpell Settings `cspell.json`</summary>
+<summary>CSpell Settings <code>cspell.json</code></summary>
 
 **`cspell.json`**
 
@@ -82,7 +84,7 @@ Add the following to your VSCode settings:
 </details>
 
 <details>
-<summary>CSpell Settings `cspell.config.yaml`</summary>
+<summary>CSpell Settings <code>cspell.config.yaml</code></summary>
 
 **`cspell.config.yaml`**
 
@@ -93,3 +95,15 @@ language: el-GRC, gr, grc, grc_GR
 ```
 
 </details>
+
+## Dictionary Information
+
+| Name  | Enabled | Description               |
+| ----- | ------- | ------------------------- |
+| `grc` |         | Ancient Greek dictionary. |
+
+## Language Settings
+
+| Name  | Locale                          | File Type |
+| ----- | ------------------------------- | --------- |
+| `grc` | `grc`, `grc_GR`, `gr`, `el-GRC` | `*`       |
