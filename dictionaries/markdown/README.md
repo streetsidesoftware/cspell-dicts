@@ -39,7 +39,7 @@ Add the following to your VSCode settings:
 </details>
 
 <details>
-<summary>CSpell Settings `cspell.json`</summary>
+<summary>CSpell Settings <code>cspell.json</code></summary>
 
 **`cspell.json`**
 
@@ -52,7 +52,7 @@ Add the following to your VSCode settings:
 </details>
 
 <details>
-<summary>CSpell Settings `cspell.config.yaml`</summary>
+<summary>CSpell Settings <code>cspell.config.yaml</code></summary>
 
 **`cspell.config.yaml`**
 
@@ -62,8 +62,40 @@ dictionaries: []
 
 </details>
 
-> [!NOTE]
-> **This package is bundled with CSpell.**
+## Local Installation using CDN
+
+> **NOTE:** This package is bundled with CSpell.
+
+## Dictionary Information
+
+| Name                   | Enabled | Description |
+| ---------------------- | ------- | ----------- |
+| `html`                 |         | _External_  |
+| `html-symbol-entities` |         | _External_  |
+| `typescript`           |         | _External_  |
+| `css`                  |         | _External_  |
+
+## Language Settings
+
+| Name                   | Locale | File Type         |
+| ---------------------- | ------ | ----------------- |
+| `html`                 | `*`    | `markdown`, `mdx` |
+| `html-symbol-entities` | `*`    | `markdown`, `mdx` |
+| `typescript`           | `*`    | `mdx`             |
+| `css`                  | `*`    | `mdx`             |
+
+## Predefined Patterns
+
+Predefined patterns can be used to ignore or include sequences of text to be spell checked.
+
+The following patterns are defined in this dictionary:
+
+| Name                      | Description                                                                                    |
+| ------------------------- | ---------------------------------------------------------------------------------------------- |
+| `MARKDOWN-link-reference` | Markdown reference link: `[This is a link][reference]`, matches `[reference]`                  |
+| `MARKDOWN-link-footer`    | Markdown referenced link: `[reference]: https://www.google.com`, matches the entire reference. |
+| `MARKDOWN-link`           | Markdown link: `[link text](link)`, matches `link`                                             |
+| `MARKDOWN-anchor`         | Markdown Anchors: `<a id="my_link"></a>`, matches `my_link`                                    |
 
 <!--- @@inject-end: ./static/install.md --->
 

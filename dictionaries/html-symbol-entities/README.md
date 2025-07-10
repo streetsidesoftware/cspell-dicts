@@ -41,7 +41,7 @@ Add the following to your VSCode settings:
 </details>
 
 <details>
-<summary>CSpell Settings `cspell.json`</summary>
+<summary>CSpell Settings <code>cspell.json</code></summary>
 
 **`cspell.json`**
 
@@ -54,7 +54,7 @@ Add the following to your VSCode settings:
 </details>
 
 <details>
-<summary>CSpell Settings `cspell.config.yaml`</summary>
+<summary>CSpell Settings <code>cspell.config.yaml</code></summary>
 
 **`cspell.config.yaml`**
 
@@ -65,8 +65,22 @@ dictionaries:
 
 </details>
 
-> [!NOTE]
-> **This package is bundled with CSpell.**
+## Local Installation using CDN
+
+> **NOTE:** This package is bundled with CSpell.
+
+## Dictionary Information
+
+| Name                   | Enabled | Description                     |
+| ---------------------- | ------- | ------------------------------- |
+| `html-symbol-entities` |         | HTML Symbol Entities Dictionary |
+
+## Language Settings
+
+| Name                   | Locale | File Type  |
+| ---------------------- | ------ | ---------- |
+| `html-symbol-entities` |        | `html`     |
+| `html-symbol-entities` |        | `markdown` |
 
 <!--- @@inject-end: ./static/install.md --->
 

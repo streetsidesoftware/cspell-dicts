@@ -47,7 +47,7 @@ Add the following to your VSCode settings:
 </details>
 
 <details>
-<summary>CSpell Settings `cspell.json`</summary>
+<summary>CSpell Settings <code>cspell.json</code></summary>
 
 **`cspell.json`**
 
@@ -68,7 +68,7 @@ Add the following to your VSCode settings:
 </details>
 
 <details>
-<summary>CSpell Settings `cspell.config.yaml`</summary>
+<summary>CSpell Settings <code>cspell.config.yaml</code></summary>
 
 **`cspell.config.yaml`**
 
@@ -85,8 +85,21 @@ dictionaries:
 
 </details>
 
-> [!NOTE]
-> **This package is bundled with CSpell.**
+## Local Installation using CDN
+
+> **NOTE:** This package is bundled with CSpell.
+
+## Dictionary Information
+
+| Name                        | Enabled | Description                           |
+| --------------------------- | ------- | ------------------------------------- |
+| `software-term-suggestions` | **Yes** |                                       |
+| `softwareTerms`             | **Yes** | Software terms dictionary.            |
+| `software-tools`            | **Yes** | Software tools dictionary.            |
+| `networking-terms`          |         | Software networking terms dictionary. |
+| `web-services`              | **Yes** | Web Services and APIs dictionary.     |
+| `computing-acronyms`        | **Yes** | Common acronyms related to computing. |
+| `coding-compound-terms`     | **Yes** | Common codding compound terms.        |
 
 <!--- @@inject-end: ./static/install.md --->
 

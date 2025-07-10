@@ -39,7 +39,7 @@ Add the following to your VSCode settings:
 </details>
 
 <details>
-<summary>CSpell Settings `cspell.json`</summary>
+<summary>CSpell Settings <code>cspell.json</code></summary>
 
 **`cspell.json`**
 
@@ -52,7 +52,7 @@ Add the following to your VSCode settings:
 </details>
 
 <details>
-<summary>CSpell Settings `cspell.config.yaml`</summary>
+<summary>CSpell Settings <code>cspell.config.yaml</code></summary>
 
 **`cspell.config.yaml`**
 
@@ -63,8 +63,32 @@ dictionaries:
 
 </details>
 
-> [!NOTE]
-> **This package is bundled with CSpell.**
+## Local Installation using CDN
+
+> **NOTE:** This package is bundled with CSpell.
+
+## Dictionary Information
+
+| Name  | Enabled | Description     |
+| ----- | ------- | --------------- |
+| `sql` |         | SQL dictionary. |
+
+## Language Settings
+
+| Name  | Locale | File Type |
+| ----- | ------ | --------- |
+| `sql` | `*`    | `sql`     |
+
+## Predefined Patterns
+
+Predefined patterns can be used to ignore or include sequences of text to be spell checked.
+
+The following patterns are defined in this dictionary:
+
+| Name                        | Description |
+| --------------------------- | ----------- |
+| `sql-hex-number`            |             |
+| `sql-unicode-string-prefix` |             |
 
 <!--- @@inject-end: ./static/install.md --->
 
