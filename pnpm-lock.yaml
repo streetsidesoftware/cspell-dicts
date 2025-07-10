@@ -2083,8 +2083,8 @@ packages:
     resolution: {integrity: sha512-SetDSntXLk8Jh1NOAl1Gu5uLiCNSYenB5tm0YVeZKePRIgDW9lQImromTwLa3c/Gae298tsgOM+/CYT9XAl0NA==}
     engines: {node: '>=18'}
 
-  conventional-changelog-writer@8.1.0:
-    resolution: {integrity: sha512-dpC440QnORNCO81XYuRRFOLCsjKj4W7tMkUIn3lR6F/FAaJcWLi7iCj6IcEvSQY2zw6VUgwUKd5DEHKEWrpmEQ==}
+  conventional-changelog-writer@8.2.0:
+    resolution: {integrity: sha512-Y2aW4596l9AEvFJRwFGJGiQjt2sBYTjPD18DdvxX9Vpz0Z7HQ+g1Z+6iYDAm1vR3QOJrDBkRHixHK/+FhkR6Pw==}
     engines: {node: '>=18'}
     hasBin: true
 
@@ -5240,7 +5240,7 @@ snapshots:
       '@octokit/rest': 22.0.0
       conventional-changelog: 7.1.0(conventional-commits-filter@5.0.0)
       conventional-changelog-angular: 8.0.0
-      conventional-changelog-writer: 8.1.0
+      conventional-changelog-writer: 8.2.0
       conventional-commits-parser: 6.2.0
       conventional-recommended-bump: 11.2.0
       dedent: 1.6.0
@@ -6329,7 +6329,7 @@ snapshots:
 
   conventional-changelog-preset-loader@5.0.0: {}
 
-  conventional-changelog-writer@8.1.0:
+  conventional-changelog-writer@8.2.0:
     dependencies:
       conventional-commits-filter: 5.0.0
       handlebars: 4.7.8
@@ -6341,7 +6341,7 @@ snapshots:
       '@conventional-changelog/git-client': 2.5.1(conventional-commits-filter@5.0.0)(conventional-commits-parser@6.2.0)
       '@types/normalize-package-data': 2.4.4
       conventional-changelog-preset-loader: 5.0.0
-      conventional-changelog-writer: 8.1.0
+      conventional-changelog-writer: 8.2.0
       conventional-commits-parser: 6.2.0
       fd-package-json: 1.2.0
       meow: 13.2.0
