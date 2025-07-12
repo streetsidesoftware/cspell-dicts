@@ -13,8 +13,8 @@
     "./cspell-ext.json": "./cspell-ext.json"
   },
   "scripts": {
-    "build": "cross-env NODE_OPTIONS=--max_old_space_size=8192 cspell-tools-cli build",
-    "test": "head -n 1000 \"src/en-slang.txt\" | cspell -c ./cspell-ext.json \"--locale=*\" \"--languageId=*\" stdin",
+    "build": "cspell-tools-cli build",
+    "test": "cspell samples",
     "prepublishOnly": "echo OK",
     "prepare:dictionary": "pnpm run build"
   },
