@@ -1,5 +1,25 @@
 # Release Notes
 
+## [31.5.0](https://github.com/streetsidesoftware/cspell-dicts/compare/cspell-dicts@31.4.8...cspell-dicts@31.5.0) (2025-07-12)
+
+
+### Features
+
+* Add English Slang Words ([#4654](https://github.com/streetsidesoftware/cspell-dicts/issues/4654)) ([06ea7bc](https://github.com/streetsidesoftware/cspell-dicts/commit/06ea7bc891569be6e95d6927c1d8467f3d63e46a))
+
+
+### Updates and Bug Fixes
+
+* Add a few English words ([#4655](https://github.com/streetsidesoftware/cspell-dicts/issues/4655)) ([e035a38](https://github.com/streetsidesoftware/cspell-dicts/commit/e035a388bfd73a6201a3c69b44f188af303ff1eb))
+* Workflow Bot -- Build Dictionaries ([#4657](https://github.com/streetsidesoftware/cspell-dicts/issues/4657)) ([f1dcc18](https://github.com/streetsidesoftware/cspell-dicts/commit/f1dcc18e22e3d06ab438d46205d1b06dc622d5ee))
+
+
+### Dependencies
+
+* The following workspace dependencies were updated
+  * devDependencies
+    * @cspell/dict-cspell-bundle bumped to 2.0.17
+
 ## [31.4.8](https://github.com/streetsidesoftware/cspell-dicts/compare/cspell-dicts@31.4.7...cspell-dicts@31.4.8) (2025-07-09)
 
 
