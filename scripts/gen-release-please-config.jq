@@ -17,7 +17,7 @@
         { type: "ci", "section": "Continuous Integration", "hidden": true },
         { type: "chore", "section": "Miscellaneous", "hidden": true },
         { type: "revert", "section": "Reverts" },
-        { type: "docs", "section": "Documentation" },
+        { type: "docs", "section": "Documentation", "hidden": true },
         { type: "style", "section": "Styles", "hidden": false },
         { type: "refactor", "section": "Code Refactoring", "hidden": false },
         { type: "test", "section": "Tests", "hidden": false },
