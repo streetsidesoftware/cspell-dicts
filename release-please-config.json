@@ -44,8 +44,7 @@
         },
         {
             "type": "docs",
-            "section": "Documentation",
-            "hidden": true
+            "section": "Documentation"
         },
         {
             "type": "style",
@@ -200,6 +199,10 @@
         },
         "dictionaries/en-common-misspellings": {
             "component": "@cspell/dict-en-common-misspellings",
+            "releaseType": "node"
+        },
+        "dictionaries/en-slang": {
+            "component": "@cspell/dict-en-slang",
             "releaseType": "node"
         },
         "dictionaries/en_AU": {
