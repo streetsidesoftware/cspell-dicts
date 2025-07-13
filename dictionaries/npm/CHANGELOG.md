@@ -3,6 +3,15 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+## [5.2.12](https://github.com/streetsidesoftware/cspell-dicts/compare/@cspell/dict-npm@5.2.11...@cspell/dict-npm@5.2.12) (2025-07-13)
+
+
+### Updates and Bug Fixes
+
+* Add tsdown and rolldown to npm ([#4662](https://github.com/streetsidesoftware/cspell-dicts/issues/4662)) ([6cfdb4a](https://github.com/streetsidesoftware/cspell-dicts/commit/6cfdb4a1331d254391147b7bfec3956ff407cbaf))
+* Workflow Bot -- Build Dictionaries ([#4664](https://github.com/streetsidesoftware/cspell-dicts/issues/4664)) ([04138ad](https://github.com/streetsidesoftware/cspell-dicts/commit/04138ad246f9ebb6c0dab8fefc99d464ae3590c4))
+* Workflow Bot -- Update Dictionaries ([#4665](https://github.com/streetsidesoftware/cspell-dicts/issues/4665)) ([065cb7a](https://github.com/streetsidesoftware/cspell-dicts/commit/065cb7afe78c6402a189f3a645ddb97569ac3dc9))
+
 ## [5.2.11](https://github.com/streetsidesoftware/cspell-dicts/compare/@cspell/dict-npm@5.2.10...@cspell/dict-npm@5.2.11) (2025-07-09)
 
 
