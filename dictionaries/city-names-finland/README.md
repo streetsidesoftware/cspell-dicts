@@ -82,9 +82,7 @@ Add the following to your VSCode settings:
 
 ```jsonc
 {
-  "cSpell.import": [
-    "https://cdn.jsdelivr.net/npm/@cspell/dict-city-names-finland@latest/cspell-ext.json/cspell-ext.json",
-  ],
+  "cSpell.import": ["https://cdn.jsdelivr.net/npm/@cspell/dict-city-names-finland/cspell-ext.json"],
   "cSpell.dictionaries": ["city-names-finland"],
 }
 ```
@@ -98,7 +96,7 @@ Add the following to your VSCode settings:
 
 ```jsonc
 {
-  "import": ["https://cdn.jsdelivr.net/npm/@cspell/dict-city-names-finland@latest/cspell-ext.json/cspell-ext.json"],
+  "import": ["https://cdn.jsdelivr.net/npm/@cspell/dict-city-names-finland/cspell-ext.json"],
   "dictionaries": ["city-names-finland"],
 }
 ```
@@ -112,7 +110,7 @@ Add the following to your VSCode settings:
 
 ```yaml
 import:
-  - https://cdn.jsdelivr.net/npm/@cspell/dict-city-names-finland@latest/cspell-ext.json/cspell-ext.json
+  - https://cdn.jsdelivr.net/npm/@cspell/dict-city-names-finland/cspell-ext.json
 dictionaries:
   - city-names-finland
 ```
