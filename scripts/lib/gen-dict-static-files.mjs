@@ -115,7 +115,7 @@ function toCSpellSettings(pkgInfo, useCdn) {
  * @returns {string}
  */
 function pkgNameToCdnUrl(pkgName) {
-    return `https://cdn.jsdelivr.net/npm/${pkgName}/cspell-ext.json`;
+    return `https://cdn.jsdelivr.net/npm/${pkgName}`;
 }
 
 /**
