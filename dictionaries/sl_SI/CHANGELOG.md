@@ -3,6 +3,13 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+## [1.0.11](https://github.com/streetsidesoftware/cspell-dicts/compare/@cspell/dict-sl-si@1.0.10...@cspell/dict-sl-si@1.0.11) (2025-07-19)
+
+
+### Updates and Bug Fixes
+
+* Update README.md ([#4660](https://github.com/streetsidesoftware/cspell-dicts/issues/4660)) ([e0f9c43](https://github.com/streetsidesoftware/cspell-dicts/commit/e0f9c43f2dc0170a118dfe3a5008d3cf017e36ce))
+
 ## [1.0.10](https://github.com/streetsidesoftware/cspell-dicts/compare/@cspell/dict-sl-si@1.0.9...@cspell/dict-sl-si@1.0.10) (2025-07-09)
 
 

@@ -1,5 +1,19 @@
 # Changelog
 
+## [1.0.11](https://github.com/streetsidesoftware/cspell-dicts/compare/@cspell/dict-en-gb-ise@1.0.10...@cspell/dict-en-gb-ise@1.0.11) (2025-07-19)
+
+
+### Updates and Bug Fixes
+
+* Update README.md ([#4660](https://github.com/streetsidesoftware/cspell-dicts/issues/4660)) ([e0f9c43](https://github.com/streetsidesoftware/cspell-dicts/commit/e0f9c43f2dc0170a118dfe3a5008d3cf017e36ce))
+
+
+### Dependencies
+
+* The following workspace dependencies were updated
+  * devDependencies
+    * @cspell/dict-en-shared bumped to 1.0.39
+
 ## [1.0.10](https://github.com/streetsidesoftware/cspell-dicts/compare/@cspell/dict-en-gb-ise@1.0.9...@cspell/dict-en-gb-ise@1.0.10) (2025-07-12)
 
 

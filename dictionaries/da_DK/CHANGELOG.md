@@ -22,6 +22,13 @@ See [Conventional Commits](https://conventionalcommits.org) for commit guideline
 
 
 
+## [4.1.2](https://github.com/streetsidesoftware/cspell-dicts/compare/@cspell/dict-da-dk@4.1.1...@cspell/dict-da-dk@4.1.2) (2025-07-19)
+
+
+### Updates and Bug Fixes
+
+* Update README.md ([#4660](https://github.com/streetsidesoftware/cspell-dicts/issues/4660)) ([e0f9c43](https://github.com/streetsidesoftware/cspell-dicts/commit/e0f9c43f2dc0170a118dfe3a5008d3cf017e36ce))
+
 ## [4.1.1](https://github.com/streetsidesoftware/cspell-dicts/compare/@cspell/dict-da-dk@4.1.0...@cspell/dict-da-dk@4.1.1) (2025-07-09)
 
 

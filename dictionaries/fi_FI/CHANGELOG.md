@@ -1,5 +1,12 @@
 # Change Log
 
+## [1.1.3](https://github.com/streetsidesoftware/cspell-dicts/compare/@cspell/dict-fi-fi@1.1.2...@cspell/dict-fi-fi@1.1.3) (2025-07-19)
+
+
+### Updates and Bug Fixes
+
+* Update README.md ([#4660](https://github.com/streetsidesoftware/cspell-dicts/issues/4660)) ([e0f9c43](https://github.com/streetsidesoftware/cspell-dicts/commit/e0f9c43f2dc0170a118dfe3a5008d3cf017e36ce))
+
 ## [1.1.2](https://github.com/streetsidesoftware/cspell-dicts/compare/@cspell/dict-fi-fi@1.1.1...@cspell/dict-fi-fi@1.1.2) (2025-07-09)
 
 
