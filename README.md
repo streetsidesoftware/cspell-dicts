@@ -7,9 +7,12 @@ Various [cspell](https://github.com/streetsidesoftware/cspell) dictionaries. Eac
 <!--- @@inject: https://github.com/streetsidesoftware/cspell/blob/main/static/sponsor.md --->
 
 - [![GitHub Sponsors](https://img.shields.io/badge/-black?style=social&logo=githubsponsors&label=GitHub%20Sponsor%3A%20Street%20Side%20Software)](https://github.com/sponsors/streetsidesoftware)
-- [![Patreon](https://img.shields.io/badge/-black?style=social&logo=patreon&label=Patreon%3A%20Street%20Side%20Software)](https://patreon.com/streetsidesoftware)
 - [![PayPal](https://img.shields.io/badge/-black?style=social&logo=paypal&label=PayPal%20Donate%3A%20Street%20Side%20Software)](https://www.paypal.com/donate/?hosted_button_id=26LNBP2Q6MKCY)
 - [![Open Collective](https://img.shields.io/badge/-black?style=social&logo=opencollective&label=Open%20Collective%3A%20CSpell)](https://opencollective.com/cspell)
+
+<!---
+- [![Patreon](https://img.shields.io/badge/-black?style=social&logo=patreon&label=Patreon%3A%20Street%20Side%20Software)](https://patreon.com/streetsidesoftware)
+  --->
 
 <!--- @@inject-end: https://github.com/streetsidesoftware/cspell/blob/main/static/sponsor.md --->
 
@@ -486,8 +489,8 @@ Special thanks to all of our amazing contributors!
 [<img alt="Contributor Ki-er" src="https://avatars.githubusercontent.com/u/32241933?v=4&size=128" width=64>](https://github.com/Ki-er)
 [<img alt="Contributor arkid15r" src="https://avatars.githubusercontent.com/u/2201626?v=4&size=128" width=64>](https://github.com/arkid15r)
 [<img alt="Contributor rbalet" src="https://avatars.githubusercontent.com/u/44493964?v=4&size=128" width=64>](https://github.com/rbalet)
-[<img alt="Contributor ccoVeille" src="https://avatars.githubusercontent.com/u/3875889?v=4&size=128" width=64>](https://github.com/ccoVeille)
 [<img alt="Contributor calvinballing" src="https://avatars.githubusercontent.com/u/5534029?v=4&size=128" width=64>](https://github.com/calvinballing)
+[<img alt="Contributor ccoVeille" src="https://avatars.githubusercontent.com/u/3875889?v=4&size=128" width=64>](https://github.com/ccoVeille)
 [<img alt="Contributor phansys" src="https://avatars.githubusercontent.com/u/1231441?v=4&size=128" width=64>](https://github.com/phansys)
 [<img alt="Contributor kenji-miyake" src="https://avatars.githubusercontent.com/u/31987104?v=4&size=128" width=64>](https://github.com/kenji-miyake)
 [<img alt="Contributor spotlesscoder" src="https://avatars.githubusercontent.com/u/25173078?v=4&size=128" width=64>](https://github.com/spotlesscoder)
