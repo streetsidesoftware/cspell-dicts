@@ -1,5 +1,23 @@
 # Release Notes
 
+## [31.5.4](https://github.com/streetsidesoftware/cspell-dicts/compare/cspell-dicts@31.5.3...cspell-dicts@31.5.4) (2025-07-21)
+
+
+### Updates and Bug Fixes
+
+* [aws] Add missing AWS related terms ([#4633](https://github.com/streetsidesoftware/cspell-dicts/issues/4633)) ([b9d0677](https://github.com/streetsidesoftware/cspell-dicts/commit/b9d0677ad0fe59aa81c79a049b74dcbd1df03744))
+* [docker] Add missing Docker related terms ([#4678](https://github.com/streetsidesoftware/cspell-dicts/issues/4678)) ([058506f](https://github.com/streetsidesoftware/cspell-dicts/commit/058506f24c1ccb10e2775713e60792df70454124))
+* [es] Add missing Spanish terms ([#4680](https://github.com/streetsidesoftware/cspell-dicts/issues/4680)) ([d0c4d3d](https://github.com/streetsidesoftware/cspell-dicts/commit/d0c4d3d13e735a0ecc0f381d19b6550431ca2423))
+* [software-tools] Add missing tools ([#4679](https://github.com/streetsidesoftware/cspell-dicts/issues/4679)) ([f11bf97](https://github.com/streetsidesoftware/cspell-dicts/commit/f11bf978bbc66b7377dcd3cce278a7ca65f5ab24))
+* Workflow Bot -- Build Dictionaries ([#4682](https://github.com/streetsidesoftware/cspell-dicts/issues/4682)) ([3f8cf0a](https://github.com/streetsidesoftware/cspell-dicts/commit/3f8cf0a3c71f66075582a6d524da5b8b15ba5502))
+
+
+### Dependencies
+
+* The following workspace dependencies were updated
+  * devDependencies
+    * @cspell/dict-cspell-bundle bumped to 2.0.20
+
 ## [31.5.3](https://github.com/streetsidesoftware/cspell-dicts/compare/cspell-dicts@31.5.2...cspell-dicts@31.5.3) (2025-07-20)
 
 
