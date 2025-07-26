@@ -17,7 +17,7 @@ jobs:
       - name: Setup
         uses: ./.github/actions/setup
         with:
-          node-version: 22.x
+          node-version: 24.x
 
       - name: Lint
         run: pnpm run lint:fix
