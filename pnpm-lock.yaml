@@ -354,7 +354,7 @@ importers:
         version: 9.2.0
       yaml:
         specifier: ^2.8.0
-        version: 2.8.0
+        version: 2.8.1
 
   dictionaries/en-slang: {}
 
@@ -643,7 +643,7 @@ importers:
     dependencies:
       yaml:
         specifier: ^2.8.0
-        version: 2.8.0
+        version: 2.8.1
 
   dictionaries/sql: {}
 
@@ -776,7 +776,7 @@ importers:
         version: 0.10.0
       yaml:
         specifier: ^2.8.0
-        version: 2.8.0
+        version: 2.8.1
     devDependencies:
       '@cspell/cspell-types':
         specifier: ^9.2.0
@@ -4617,8 +4617,8 @@ packages:
     resolution: {integrity: sha512-YgvUTfwqyc7UXVMrB+SImsVYSmTS8X/tSrtdNZMImM+n7+QTriRXyXim0mBrTXNeqzVF0KWGgHPeiyViFFrNDw==}
     engines: {node: '>=18'}
 
-  yaml@2.8.0:
-    resolution: {integrity: sha512-4lLa/EcQCB0cJkyts+FpIRx5G/llPxfP6VQU5KByHEhLxY3IJCH0f0Hy1MHI8sClTvsIb8qwRJ6R/ZdlDJ/leQ==}
+  yaml@2.8.1:
+    resolution: {integrity: sha512-lcYcMxX2PO9XMGvAJkJ3OsNMw+/7FKes7/hgerGUYWIoWu5j/+YQqcZr5JnPZWzOsEBgMbSbiSTn/dv/69Mkpw==}
     engines: {node: '>= 14.6'}
     hasBin: true
 
@@ -4788,7 +4788,7 @@ snapshots:
       cspell-trie-lib: 9.2.0
       glob: 10.4.5
       hunspell-reader: 9.2.0
-      yaml: 2.8.0
+      yaml: 2.8.1
     transitivePeerDependencies:
       - typescript
 
@@ -5115,7 +5115,7 @@ snapshots:
       write-file-atomic: 6.0.0
       write-json-file: 6.0.0
       write-package: 7.1.0
-      yaml: 2.8.0
+      yaml: 2.8.1
       zeptomatch: 2.0.2
     transitivePeerDependencies:
       - '@types/node'
@@ -5858,7 +5858,7 @@ snapshots:
   '@types/vinyl@2.0.12':
     dependencies:
       '@types/expect': 1.20.4
-      '@types/node': 20.19.9
+      '@types/node': 24.1.0
 
   '@vercel/nft@0.29.4(encoding@0.1.13)':
     dependencies:
@@ -6421,7 +6421,7 @@ snapshots:
       '@cspell/cspell-types': 9.2.0
       comment-json: 4.2.5
       smol-toml: 1.4.1
-      yaml: 2.8.0
+      yaml: 2.8.1
 
   cspell-dictionary@9.2.0:
     dependencies:
@@ -9258,7 +9258,7 @@ snapshots:
 
   yallist@5.0.0: {}
 
-  yaml@2.8.0: {}
+  yaml@2.8.1: {}
 
   yamljs@0.3.0:
     dependencies:
