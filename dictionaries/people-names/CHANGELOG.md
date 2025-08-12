@@ -1,5 +1,14 @@
 # Change Log
 
+## [1.1.14](https://github.com/streetsidesoftware/cspell-dicts/compare/@cspell/dict-people-names@1.1.13...@cspell/dict-people-names@1.1.14) (2025-08-12)
+
+
+### Updates and Bug Fixes
+
+* Add Bachstein to names.txt ([#4723](https://github.com/streetsidesoftware/cspell-dicts/issues/4723)) ([fccaf37](https://github.com/streetsidesoftware/cspell-dicts/commit/fccaf3706f782b34a2882ee3199636222f3823cc))
+* Add Bjorn to names.txt ([#4721](https://github.com/streetsidesoftware/cspell-dicts/issues/4721)) ([426f4e3](https://github.com/streetsidesoftware/cspell-dicts/commit/426f4e30e1abe2efe3695a89a177f02f7a1c872d))
+* Add Clarkberg to names.txt ([#4722](https://github.com/streetsidesoftware/cspell-dicts/issues/4722)) ([d9797b9](https://github.com/streetsidesoftware/cspell-dicts/commit/d9797b96202526697d342a6cf0a5482d16eef4bb))
+
 ## [1.1.13](https://github.com/streetsidesoftware/cspell-dicts/compare/@cspell/dict-people-names@1.1.12...@cspell/dict-people-names@1.1.13) (2025-07-19)
 
 
