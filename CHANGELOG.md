@@ -1,5 +1,19 @@
 # Release Notes
 
+## [31.5.7](https://github.com/streetsidesoftware/cspell-dicts/compare/cspell-dicts@31.5.6...cspell-dicts@31.5.7) (2025-08-15)
+
+
+### Updates and Bug Fixes
+
+* Update companies.txt ([#4733](https://github.com/streetsidesoftware/cspell-dicts/issues/4733)) ([569f766](https://github.com/streetsidesoftware/cspell-dicts/commit/569f766fcda09fe9a46a0817edd70dd6ca9c79b9))
+
+
+### Dependencies
+
+* The following workspace dependencies were updated
+  * devDependencies
+    * @cspell/dict-cspell-bundle bumped to 2.0.23
+
 ## [31.5.6](https://github.com/streetsidesoftware/cspell-dicts/compare/cspell-dicts@31.5.5...cspell-dicts@31.5.6) (2025-08-12)
 
 
