@@ -1735,8 +1735,8 @@ packages:
     resolution: {integrity: sha512-quJQXlTSUGL2LH9SUXo8VwsY4soanhgo6LNSm84E1LBcE8s3O0wpdiRzyR9z/ZZJMlMWv37qOOb9pdJlMUEKFQ==}
     engines: {node: '>=8'}
 
-  ansi-regex@6.1.0:
-    resolution: {integrity: sha512-7HSX4QQb4CspciLpVFwyRe79O3xsIZDDLER21kERQ71oaPodF8jL725AgJMFAYbooIqolJoRLuM81SpeUkpkvA==}
+  ansi-regex@6.2.0:
+    resolution: {integrity: sha512-TKY5pyBkHyADOPYlRT9Lx6F544mPl0vS5Ew7BJ45hA08Q+t3GjbueLliBWN3sMICk6+y7HdyxSzC4bWS8baBdg==}
     engines: {node: '>=12'}
 
   ansi-styles@4.3.0:
@@ -2697,8 +2697,8 @@ packages:
   grammex@3.1.10:
     resolution: {integrity: sha512-UCfMsV/sfqk4TN1+m5ehSOXuADyLUgSuwMI2vCVlbN/REoSmTl4eagswC9DzzVxtsKv7Yp2CmIJNn4fMk8PaQA==}
 
-  grouped-queue@2.0.0:
-    resolution: {integrity: sha512-/PiFUa7WIsl48dUeCvhIHnwNmAAzlI/eHoJl0vu3nsFA366JleY7Ff8EVTplZu5kO0MIdZjKTTnzItL61ahbnw==}
+  grouped-queue@2.1.0:
+    resolution: {integrity: sha512-c5NDCWO0XiXuJAhOegMiNotkDmgORN+VNo3+YHMhWpoWG/u2+8im8byqsOe3/myI9YcC//plRdqGa2AE3Qsdjw==}
     engines: {node: '>=8.0.0'}
 
   handlebars@4.7.8:
@@ -5921,7 +5921,7 @@ snapshots:
 
   ansi-regex@5.0.1: {}
 
-  ansi-regex@6.1.0: {}
+  ansi-regex@6.2.0: {}
 
   ansi-styles@4.3.0:
     dependencies:
@@ -6973,7 +6973,7 @@ snapshots:
 
   grammex@3.1.10: {}
 
-  grouped-queue@2.0.0: {}
+  grouped-queue@2.1.0: {}
 
   handlebars@4.7.8:
     dependencies:
@@ -8826,7 +8826,7 @@ snapshots:
 
   strip-ansi@7.1.0:
     dependencies:
-      ansi-regex: 6.1.0
+      ansi-regex: 6.2.0
 
   strip-bom-buf@3.0.1:
     dependencies:
@@ -9247,7 +9247,7 @@ snapshots:
       execa: 8.0.1
       fly-import: 0.4.1
       globby: 14.1.0
-      grouped-queue: 2.0.0
+      grouped-queue: 2.1.0
       locate-path: 7.2.0
       lodash-es: 4.17.21
       mem-fs: 4.1.0
@@ -9296,7 +9296,7 @@ snapshots:
 
   yosay@3.0.0:
     dependencies:
-      ansi-regex: 6.1.0
+      ansi-regex: 6.2.0
       ansi-styles: 6.2.1
       chalk: 5.6.0
       cli-boxes: 3.0.0
