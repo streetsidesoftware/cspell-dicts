@@ -22,6 +22,13 @@ See [Conventional Commits](https://conventionalcommits.org) for commit guideline
 
 
 
+## [4.0.15](https://github.com/streetsidesoftware/cspell-dicts/compare/@cspell/dict-aws@4.0.14...@cspell/dict-aws@4.0.15) (2025-08-19)
+
+
+### Updates and Bug Fixes
+
+* add "stepfunctions" to the AWS dictionary ([#4744](https://github.com/streetsidesoftware/cspell-dicts/issues/4744)) ([e225726](https://github.com/streetsidesoftware/cspell-dicts/commit/e225726602b5dbb8ed7aa4c0a27be238f434361b))
+
 ## [4.0.14](https://github.com/streetsidesoftware/cspell-dicts/compare/@cspell/dict-aws@4.0.13...@cspell/dict-aws@4.0.14) (2025-07-26)
 
 
