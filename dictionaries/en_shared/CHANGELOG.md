@@ -1,5 +1,12 @@
 # Change Log
 
+## [1.0.40](https://github.com/streetsidesoftware/cspell-dicts/compare/@cspell/dict-en-shared@1.0.39...@cspell/dict-en-shared@1.0.40) (2025-08-19)
+
+
+### Updates and Bug Fixes
+
+* add software terms ([#4739](https://github.com/streetsidesoftware/cspell-dicts/issues/4739)) ([0c0f942](https://github.com/streetsidesoftware/cspell-dicts/commit/0c0f942cd96b392c0273540c90c556f7e1ef73f3))
+
 ## [1.0.39](https://github.com/streetsidesoftware/cspell-dicts/compare/@cspell/dict-en-shared@1.0.38...@cspell/dict-en-shared@1.0.39) (2025-07-19)
 
 

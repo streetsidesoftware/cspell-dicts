@@ -1,5 +1,23 @@
 # Release Notes
 
+## [31.5.8](https://github.com/streetsidesoftware/cspell-dicts/compare/cspell-dicts@31.5.7...cspell-dicts@31.5.8) (2025-08-19)
+
+
+### Updates and Bug Fixes
+
+* add "stepfunctions" to the AWS dictionary ([#4744](https://github.com/streetsidesoftware/cspell-dicts/issues/4744)) ([e225726](https://github.com/streetsidesoftware/cspell-dicts/commit/e225726602b5dbb8ed7aa4c0a27be238f434361b))
+* add software terms ([#4739](https://github.com/streetsidesoftware/cspell-dicts/issues/4739)) ([0c0f942](https://github.com/streetsidesoftware/cspell-dicts/commit/0c0f942cd96b392c0273540c90c556f7e1ef73f3))
+* Update companies.txt ([#4747](https://github.com/streetsidesoftware/cspell-dicts/issues/4747)) ([ea4b6c7](https://github.com/streetsidesoftware/cspell-dicts/commit/ea4b6c776b0746d6fc8e1a6a2b09a7a35eff9698))
+* Workflow Bot -- Build Dictionaries ([#4743](https://github.com/streetsidesoftware/cspell-dicts/issues/4743)) ([29cf356](https://github.com/streetsidesoftware/cspell-dicts/commit/29cf35675be7ba5160ab2665c9574ac3ded68d05))
+* Workflow Bot -- Build Dictionaries ([#4749](https://github.com/streetsidesoftware/cspell-dicts/issues/4749)) ([fc46b0f](https://github.com/streetsidesoftware/cspell-dicts/commit/fc46b0f1111dc443fa588ba84dde1576d1be661e))
+
+
+### Dependencies
+
+* The following workspace dependencies were updated
+  * devDependencies
+    * @cspell/dict-cspell-bundle bumped to 2.0.24
+
 ## [31.5.7](https://github.com/streetsidesoftware/cspell-dicts/compare/cspell-dicts@31.5.6...cspell-dicts@31.5.7) (2025-08-15)
 
 
