@@ -1,5 +1,19 @@
 # Release Notes
 
+## [31.5.9](https://github.com/streetsidesoftware/cspell-dicts/compare/cspell-dicts@31.5.8...cspell-dicts@31.5.9) (2025-08-21)
+
+
+### Updates and Bug Fixes
+
+* exclude "consistant" from cpp dictionary  ([#4754](https://github.com/streetsidesoftware/cspell-dicts/issues/4754)) ([373a29f](https://github.com/streetsidesoftware/cspell-dicts/commit/373a29ff3fba7f676a714a037faface400118be2))
+
+
+### Dependencies
+
+* The following workspace dependencies were updated
+  * devDependencies
+    * @cspell/dict-cspell-bundle bumped to 2.0.25
+
 ## [31.5.8](https://github.com/streetsidesoftware/cspell-dicts/compare/cspell-dicts@31.5.7...cspell-dicts@31.5.8) (2025-08-19)
 
 
