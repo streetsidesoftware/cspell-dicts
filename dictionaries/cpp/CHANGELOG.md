@@ -3,6 +3,13 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+## [6.0.10](https://github.com/streetsidesoftware/cspell-dicts/compare/@cspell/dict-cpp@6.0.9...@cspell/dict-cpp@6.0.10) (2025-08-21)
+
+
+### Updates and Bug Fixes
+
+* exclude "consistant" from cpp dictionary  ([#4754](https://github.com/streetsidesoftware/cspell-dicts/issues/4754)) ([373a29f](https://github.com/streetsidesoftware/cspell-dicts/commit/373a29ff3fba7f676a714a037faface400118be2))
+
 ## [6.0.9](https://github.com/streetsidesoftware/cspell-dicts/compare/@cspell/dict-cpp@6.0.8...@cspell/dict-cpp@6.0.9) (2025-07-09)
 
 
