@@ -3062,8 +3062,8 @@ packages:
   keyv@4.5.4:
     resolution: {integrity: sha512-oxVHkHR/EJf2CNXnWxRLW6mg7JyCCUcG0DtEGmL2ctUo1PNTin1PUil+r/+4r5MpVgC/fn1kjsx7mjSujKqIpw==}
 
-  ky@1.8.2:
-    resolution: {integrity: sha512-XybQJ3d4Ea1kI27DoelE5ZCT3bSJlibYTtQuMsyzKox3TMyayw1asgQdl54WroAm+fIA3ZCr8zXW2RpR7qWVpA==}
+  ky@1.9.0:
+    resolution: {integrity: sha512-NgBeR/cu7kuC4BAeF1rnXhfoI2uQ9RBe8zl5vo87ASsf1iIQoCeOxyt6Io6K4Ki++5ItCavXAtbEWWCGFciQ6g==}
     engines: {node: '>=18'}
 
   latest-version@9.0.0:
@@ -3489,8 +3489,8 @@ packages:
     engines: {node: ^16.14.0 || >=18.0.0}
     hasBin: true
 
-  node-gyp@11.3.0:
-    resolution: {integrity: sha512-9J0+C+2nt3WFuui/mC46z2XCZ21/cKlFDuywULmseD/LlmnOrSeEAE4c/1jw6aybXLmpZnQY3/LmOJfgyHIcng==}
+  node-gyp@11.4.1:
+    resolution: {integrity: sha512-GiVxQ1e4TdZSSVmFDYUn6uUsrEUP68pa8C/xBzCfL/FcLHa4reWrxxTP7tRGhNdviYrNsL5kRolBL5LNYEutCw==}
     engines: {node: ^18.17.0 || >=20.5.0}
     hasBin: true
 
@@ -4627,8 +4627,8 @@ packages:
     resolution: {integrity: sha512-AyeEbWOu/TAXdxlV9wmGcR0+yh2j3vYPGOECcIj2S7MkrLyC7ne+oye2BKTItt0ii2PHk4cDy+95+LshzbXnGg==}
     engines: {node: '>=12.20'}
 
-  yoctocolors-cjs@2.1.2:
-    resolution: {integrity: sha512-cYVsTjKl8b+FrnidjibDWskAv7UKOfcwaVZdp/it9n1s9fU3IkgDbhdIRKCW4JDsAlECJY0ytoVPT3sK6kideA==}
+  yoctocolors-cjs@2.1.3:
+    resolution: {integrity: sha512-U/PBtDf35ff0D8X8D0jfdzHYEPFxAI7jJlxZXwCSez5M3190m+QobIfh+sWDWSHMCWWJN2AWamkegn6vr6YBTw==}
     engines: {node: '>=18'}
 
   yoctocolors@2.1.2:
@@ -4960,7 +4960,7 @@ snapshots:
       mute-stream: 2.0.0
       signal-exit: 4.1.0
       wrap-ansi: 6.2.0
-      yoctocolors-cjs: 2.1.2
+      yoctocolors-cjs: 2.1.3
     optionalDependencies:
       '@types/node': 24.3.0
 
@@ -4968,7 +4968,7 @@ snapshots:
     dependencies:
       '@inquirer/core': 10.1.15(@types/node@24.3.0)
       '@inquirer/type': 3.0.8(@types/node@24.3.0)
-      yoctocolors-cjs: 2.1.2
+      yoctocolors-cjs: 2.1.3
     optionalDependencies:
       '@types/node': 24.3.0
 
@@ -4987,7 +4987,7 @@ snapshots:
       '@inquirer/figures': 1.0.13
       '@inquirer/type': 3.0.8(@types/node@24.3.0)
       ansi-escapes: 4.3.2
-      yoctocolors-cjs: 2.1.2
+      yoctocolors-cjs: 2.1.3
     optionalDependencies:
       '@types/node': 24.3.0
 
@@ -5499,7 +5499,7 @@ snapshots:
       '@npmcli/node-gyp': 4.0.0
       '@npmcli/package-json': 6.2.0
       '@npmcli/promise-spawn': 8.0.2
-      node-gyp: 11.3.0
+      node-gyp: 11.4.1
       proc-log: 5.0.0
       which: 5.0.0
     transitivePeerDependencies:
@@ -7132,7 +7132,7 @@ snapshots:
       string-width: 4.2.3
       strip-ansi: 6.0.1
       wrap-ansi: 6.2.0
-      yoctocolors-cjs: 2.1.2
+      yoctocolors-cjs: 2.1.3
 
   interpret@1.4.0: {}
 
@@ -7276,7 +7276,7 @@ snapshots:
     dependencies:
       json-buffer: 3.0.1
 
-  ky@1.8.2: {}
+  ky@1.9.0: {}
 
   latest-version@9.0.0:
     dependencies:
@@ -8001,7 +8001,7 @@ snapshots:
     transitivePeerDependencies:
       - supports-color
 
-  node-gyp@11.3.0:
+  node-gyp@11.4.1:
     dependencies:
       env-paths: 2.2.1
       exponential-backoff: 3.1.2
@@ -8289,7 +8289,7 @@ snapshots:
 
   package-json@10.0.1:
     dependencies:
-      ky: 1.8.2
+      ky: 1.9.0
       registry-auth-token: 5.1.0
       registry-url: 6.0.1
       semver: 7.7.2
@@ -9289,7 +9289,7 @@ snapshots:
 
   yocto-queue@1.2.1: {}
 
-  yoctocolors-cjs@2.1.2: {}
+  yoctocolors-cjs@2.1.3: {}
 
   yoctocolors@2.1.2: {}
 
