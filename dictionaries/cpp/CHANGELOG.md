@@ -3,6 +3,14 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+## [6.0.11](https://github.com/streetsidesoftware/cspell-dicts/compare/@cspell/dict-cpp@6.0.10...@cspell/dict-cpp@6.0.11) (2025-08-30)
+
+
+### Updates and Bug Fixes
+
+* Do not allow `remnats` ([#4766](https://github.com/streetsidesoftware/cspell-dicts/issues/4766)) ([29eec21](https://github.com/streetsidesoftware/cspell-dicts/commit/29eec217874e33270fda8425358f0aacb20ee207))
+* Workflow Bot -- Build Dictionaries ([#4770](https://github.com/streetsidesoftware/cspell-dicts/issues/4770)) ([b6a0831](https://github.com/streetsidesoftware/cspell-dicts/commit/b6a0831f0383deafa209ad383575c3188b10d0f2))
+
 ## [6.0.10](https://github.com/streetsidesoftware/cspell-dicts/compare/@cspell/dict-cpp@6.0.9...@cspell/dict-cpp@6.0.10) (2025-08-21)
 
 
