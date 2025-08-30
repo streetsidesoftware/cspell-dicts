@@ -9,17 +9,20 @@
         {
             "name": "cpp-legacy",
             "path": "./dict/cpp-legacy.txt",
-            "description": "Legacy C/C++ Keywords and common library functions."
+            "description": "Legacy C/C++ Keywords and common library functions.",
+            "ignoreForbiddenWords": true
         },
         {
             "name": "cpp",
-            "path": "./dict/cpp.txt",
-            "description": "C/C++ Keywords and common library functions."
+            "path": "./dict/cpp.txt.gz",
+            "description": "C/C++ Keywords and common library functions.",
+            "ignoreForbiddenWords": true
         },
         {
             "name": "cpp-refined",
             "path": "./dict/cpp-refined.txt",
-            "description": "Refined list of C/C++ Keywords and common library functions."
+            "description": "Refined list of C/C++ Keywords and common library functions.",
+            "ignoreForbiddenWords": true
         }
     ],
     // Dictionaries to always be used.
