@@ -3,6 +3,13 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+## [5.1.7](https://github.com/streetsidesoftware/cspell-dicts/compare/@cspell/dict-software-terms@5.1.6...@cspell/dict-software-terms@5.1.7) (2025-08-30)
+
+
+### Updates and Bug Fixes
+
+* Update software-services.txt ([#4758](https://github.com/streetsidesoftware/cspell-dicts/issues/4758)) ([874b309](https://github.com/streetsidesoftware/cspell-dicts/commit/874b309a9fa778829db77a62415e2f494a4e0df5))
+
 ## [5.1.6](https://github.com/streetsidesoftware/cspell-dicts/compare/@cspell/dict-software-terms@5.1.5...@cspell/dict-software-terms@5.1.6) (2025-08-19)
 
 

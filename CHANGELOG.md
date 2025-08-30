@@ -1,5 +1,23 @@
 # Release Notes
 
+## [31.5.10](https://github.com/streetsidesoftware/cspell-dicts/compare/cspell-dicts@31.5.9...cspell-dicts@31.5.10) (2025-08-30)
+
+
+### Updates and Bug Fixes
+
+* Add misspelling suggestion for `remnat->remnant` ([#4767](https://github.com/streetsidesoftware/cspell-dicts/issues/4767)) ([4f8de9c](https://github.com/streetsidesoftware/cspell-dicts/commit/4f8de9cecb1333c9d0426449e7ecad782be88c31))
+* Do not allow `remnats` ([#4766](https://github.com/streetsidesoftware/cspell-dicts/issues/4766)) ([29eec21](https://github.com/streetsidesoftware/cspell-dicts/commit/29eec217874e33270fda8425358f0aacb20ee207))
+* Update software-services.txt ([#4758](https://github.com/streetsidesoftware/cspell-dicts/issues/4758)) ([874b309](https://github.com/streetsidesoftware/cspell-dicts/commit/874b309a9fa778829db77a62415e2f494a4e0df5))
+* Workflow Bot -- Build Dictionaries ([#4770](https://github.com/streetsidesoftware/cspell-dicts/issues/4770)) ([b6a0831](https://github.com/streetsidesoftware/cspell-dicts/commit/b6a0831f0383deafa209ad383575c3188b10d0f2))
+* Workflow Bot -- Update Dictionaries ([#4761](https://github.com/streetsidesoftware/cspell-dicts/issues/4761)) ([ce5a646](https://github.com/streetsidesoftware/cspell-dicts/commit/ce5a6469387e76fde2299241a09d4acfeabb1934))
+
+
+### Dependencies
+
+* The following workspace dependencies were updated
+  * devDependencies
+    * @cspell/dict-cspell-bundle bumped to 2.0.26
+
 ## [31.5.9](https://github.com/streetsidesoftware/cspell-dicts/compare/cspell-dicts@31.5.8...cspell-dicts@31.5.9) (2025-08-21)
 
 

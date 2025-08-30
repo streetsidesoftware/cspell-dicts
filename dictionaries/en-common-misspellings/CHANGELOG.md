@@ -1,5 +1,12 @@
 # Change Log
 
+## [2.1.4](https://github.com/streetsidesoftware/cspell-dicts/compare/@cspell/dict-en-common-misspellings@2.1.3...@cspell/dict-en-common-misspellings@2.1.4) (2025-08-30)
+
+
+### Updates and Bug Fixes
+
+* Add misspelling suggestion for `remnat->remnant` ([#4767](https://github.com/streetsidesoftware/cspell-dicts/issues/4767)) ([4f8de9c](https://github.com/streetsidesoftware/cspell-dicts/commit/4f8de9cecb1333c9d0426449e7ecad782be88c31))
+
 ## [2.1.3](https://github.com/streetsidesoftware/cspell-dicts/compare/@cspell/dict-en-common-misspellings@2.1.2...@cspell/dict-en-common-misspellings@2.1.3) (2025-07-09)
 
 
