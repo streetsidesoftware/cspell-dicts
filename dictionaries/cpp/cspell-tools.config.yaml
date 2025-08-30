@@ -38,11 +38,22 @@ targets:
     excludeWordsFrom:
       - src/exclude-terms.txt
     format: plaintext
-    targetDirectory: './dict'
+    targetDirectory: './dict/intermediate'
     generateNonStrict: false
     compress: false
     removeDuplicates: true
     sort: true
+
+  - name: 'cpp'
+    # This dictionary is the compressed version of the above cpp dictionary.
+    # It is used to fix an issue with ClamAV signatures that accidentally match C++ keywords.
+    # See: https://github.com/streetsidesoftware/vscode-spell-checker/issues/4654#issuecomment-3236562620
+    sources:
+      - filename: dict/intermediate/cpp.txt
+    format: plaintext
+    targetDirectory: './dict'
+    generateNonStrict: false
+    compress: true
 
   - name: cpp-refined
     sources:
@@ -82,7 +93,7 @@ targets:
           - src/template-strings.txt
     format: plaintext
     excludeWordsFrom:
-      - dict/cpp.txt
+      - dict/intermediate/cpp.txt
       - dict/cpp-refined.txt
       - ../en_US/en_US.trie
       - ../software-terms/dict/softwareTerms.txt
