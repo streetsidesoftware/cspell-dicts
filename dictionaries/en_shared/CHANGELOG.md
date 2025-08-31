@@ -1,5 +1,12 @@
 # Change Log
 
+## [1.0.41](https://github.com/streetsidesoftware/cspell-dicts/compare/@cspell/dict-en-shared@1.0.40...@cspell/dict-en-shared@1.0.41) (2025-08-31)
+
+
+### Updates and Bug Fixes
+
+* Remove `typw` from the English dictionary ([#4774](https://github.com/streetsidesoftware/cspell-dicts/issues/4774)) ([b57f9a2](https://github.com/streetsidesoftware/cspell-dicts/commit/b57f9a2db71043ffa16f7c895fa8b82f39f5bb78))
+
 ## [1.0.40](https://github.com/streetsidesoftware/cspell-dicts/compare/@cspell/dict-en-shared@1.0.39...@cspell/dict-en-shared@1.0.40) (2025-08-19)
 
 

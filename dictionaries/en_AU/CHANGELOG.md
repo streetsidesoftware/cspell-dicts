@@ -1,5 +1,19 @@
 # Changelog
 
+## [1.1.6](https://github.com/streetsidesoftware/cspell-dicts/compare/@cspell/dict-en-au@1.1.5...@cspell/dict-en-au@1.1.6) (2025-08-31)
+
+
+### Updates and Bug Fixes
+
+* Remove `typw` from the English dictionary ([#4774](https://github.com/streetsidesoftware/cspell-dicts/issues/4774)) ([b57f9a2](https://github.com/streetsidesoftware/cspell-dicts/commit/b57f9a2db71043ffa16f7c895fa8b82f39f5bb78))
+
+
+### Dependencies
+
+* The following workspace dependencies were updated
+  * devDependencies
+    * @cspell/dict-en-shared bumped to 1.0.41
+
 ## [1.1.5](https://github.com/streetsidesoftware/cspell-dicts/compare/@cspell/dict-en-au@1.1.4...@cspell/dict-en-au@1.1.5) (2025-08-19)
 
 
