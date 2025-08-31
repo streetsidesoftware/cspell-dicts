@@ -1,10 +1,8 @@
-// cSpell Settings
 {
     "id": "en-gb-mit",
     "name": "English - British (Limited)",
     "description": "British English Dictionary with MIT License",
     "readonly": true,
-    // List of dictionary files to add to the global list of dictionaries
     "dictionaryDefinitions": [
         {
             "name": "en-gb",
@@ -14,34 +12,17 @@
             "ignoreForbiddenWords": true
         }
     ],
-    // Dictionaries to always be used.
-    // Generally left empty
-    "dictionaries": [],
-    // Language Rules to apply to matching files.
-    // Files are matched on `languageId` and `locale`
     "languageSettings": [
         {
-            // VSCode languageId. i.e. typescript, java, go, cpp, javascript, markdown, latex
-            // * will match against any file type.
             "languageId": "*",
-            // Language locale. i.e. en-US, de-AT, or ru. * will match all locals.
             "locale": "en-GB",
-            //
-            "ignoreRegExpList": [],
-            "includeRegExpList": [],
-            // regex patterns than can be used with ignoreRegExpList or includeRegExpList
-            // Example: "pattern": [{ "name": "mdash", "pattern": "&mdash;" }]
-            // This could be included in "ignoreRegExpList": ["mdash"]
             "patterns": [
                 {
                     "name": "possessive_s",
                     "pattern": "/'s\\b/gi"
                 }
             ],
-            // List of dictionaries to enable by name in `dictionaryDefinitions`
-            "dictionaries": ["en-gb"],
-            // Dictionary definitions can also be supplied here
-            "dictionaryDefinitions": []
+            "dictionaries": ["en-gb"]
         }
     ]
 }

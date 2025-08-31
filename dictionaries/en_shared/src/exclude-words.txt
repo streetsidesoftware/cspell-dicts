@@ -1,4 +1,11 @@
+# This file is a list of words that should not be included in the dictionary.
+#
+# cspell:locale en
+#
+# Tell cspell to not spell check the misspelled words:
+# cspell:ignoreRegExp /^.*?(#|$)/gmu
 ~colum
 colum
 knifes
 midwifes
+typw # this is an abbreviation for "typewriter", but a common misspelling of "type". See: https://github.com/streetsidesoftware/cspell-dicts/discussions/4773
