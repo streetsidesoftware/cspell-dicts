@@ -3,6 +3,20 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+## [5.0.13](https://github.com/streetsidesoftware/cspell-dicts/compare/@cspell/dict-en-gb@5.0.12...@cspell/dict-en-gb@5.0.13) (2025-08-31)
+
+
+### Updates and Bug Fixes
+
+* Remove `typw` from the English dictionary ([#4774](https://github.com/streetsidesoftware/cspell-dicts/issues/4774)) ([b57f9a2](https://github.com/streetsidesoftware/cspell-dicts/commit/b57f9a2db71043ffa16f7c895fa8b82f39f5bb78))
+
+
+### Dependencies
+
+* The following workspace dependencies were updated
+  * devDependencies
+    * @cspell/dict-en-shared bumped to 1.0.41
+
 ## [5.0.12](https://github.com/streetsidesoftware/cspell-dicts/compare/@cspell/dict-en-gb@5.0.11...@cspell/dict-en-gb@5.0.12) (2025-08-19)
 
 

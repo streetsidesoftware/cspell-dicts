@@ -3,6 +3,13 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+## [6.0.12](https://github.com/streetsidesoftware/cspell-dicts/compare/@cspell/dict-cpp@6.0.11...@cspell/dict-cpp@6.0.12) (2025-08-31)
+
+
+### Updates and Bug Fixes
+
+* Remove `typw` from the English dictionary ([#4774](https://github.com/streetsidesoftware/cspell-dicts/issues/4774)) ([b57f9a2](https://github.com/streetsidesoftware/cspell-dicts/commit/b57f9a2db71043ffa16f7c895fa8b82f39f5bb78))
+
 ## [6.0.11](https://github.com/streetsidesoftware/cspell-dicts/compare/@cspell/dict-cpp@6.0.10...@cspell/dict-cpp@6.0.11) (2025-08-30)
 
 

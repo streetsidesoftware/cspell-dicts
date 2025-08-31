@@ -1,5 +1,12 @@
 # Change Log
 
+## [2.1.5](https://github.com/streetsidesoftware/cspell-dicts/compare/@cspell/dict-en-common-misspellings@2.1.4...@cspell/dict-en-common-misspellings@2.1.5) (2025-08-31)
+
+
+### Updates and Bug Fixes
+
+* Remove `typw` from the English dictionary ([#4774](https://github.com/streetsidesoftware/cspell-dicts/issues/4774)) ([b57f9a2](https://github.com/streetsidesoftware/cspell-dicts/commit/b57f9a2db71043ffa16f7c895fa8b82f39f5bb78))
+
 ## [2.1.4](https://github.com/streetsidesoftware/cspell-dicts/compare/@cspell/dict-en-common-misspellings@2.1.3...@cspell/dict-en-common-misspellings@2.1.4) (2025-08-30)
 
 
