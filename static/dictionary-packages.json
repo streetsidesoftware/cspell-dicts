@@ -976,6 +976,18 @@
             "fileType": "*"
           }
         ]
+      },
+      {
+        "name": "en-gb-common-misspellings",
+        "external": true,
+        "description": "",
+        "locales": ["en-AU"],
+        "localeFileTypes": [
+          {
+            "locale": "en-AU",
+            "fileType": "*"
+          }
+        ]
       }
     ],
     "patterns": []
@@ -1001,6 +1013,18 @@
       },
       {
         "name": "en-common-misspellings",
+        "external": true,
+        "description": "",
+        "locales": ["en-CA"],
+        "localeFileTypes": [
+          {
+            "locale": "en-CA",
+            "fileType": "*"
+          }
+        ]
+      },
+      {
+        "name": "en-gb-common-misspellings",
         "external": true,
         "description": "",
         "locales": ["en-CA"],
@@ -1156,10 +1180,18 @@
     "dictionaries": [
       {
         "name": "en-common-misspellings",
-        "locales": ["en"],
+        "locales": ["en", "en-gb", "en-us"],
         "localeFileTypes": [
           {
             "locale": "en",
+            "fileType": "*"
+          },
+          {
+            "locale": "en-gb",
+            "fileType": "*"
+          },
+          {
+            "locale": "en-us",
             "fileType": "*"
           }
         ]

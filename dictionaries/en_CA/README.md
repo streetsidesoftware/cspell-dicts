@@ -117,17 +117,19 @@ language: en-CA
 
 ## Dictionary Information
 
-| Name                     | Enabled | Description                 |
-| ------------------------ | ------- | --------------------------- |
-| `en-ca`                  |         | Canadian English Dictionary |
-| `en-common-misspellings` |         | _External_                  |
+| Name                        | Enabled | Description                 |
+| --------------------------- | ------- | --------------------------- |
+| `en-ca`                     |         | Canadian English Dictionary |
+| `en-common-misspellings`    |         | _External_                  |
+| `en-gb-common-misspellings` |         | _External_                  |
 
 ## Language Settings
 
-| Name                     | Locale  | File Type |
-| ------------------------ | ------- | --------- |
-| `en-ca`                  | `en-CA` | `*`       |
-| `en-common-misspellings` | `en-CA` | `*`       |
+| Name                        | Locale  | File Type |
+| --------------------------- | ------- | --------- |
+| `en-ca`                     | `en-CA` | `*`       |
+| `en-common-misspellings`    | `en-CA` | `*`       |
+| `en-gb-common-misspellings` | `en-CA` | `*`       |
 
 <!--- @@inject-end: ./static/install.md --->
 

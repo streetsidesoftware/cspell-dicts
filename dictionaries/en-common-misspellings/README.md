@@ -79,6 +79,8 @@ language: en, en-gb, en-us
 | Name                        | Locale  | File Type |
 | --------------------------- | ------- | --------- |
 | `en-common-misspellings`    | `en`    | `*`       |
+| `en-common-misspellings`    | `en-gb` | `*`       |
+| `en-common-misspellings`    | `en-us` | `*`       |
 | `en-gb-common-misspellings` | `en-gb` | `*`       |
 | `en-us-common-misspellings` | `en-us` | `*`       |
 

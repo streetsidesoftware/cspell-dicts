@@ -98,14 +98,16 @@ language: en-AU
 
 ## Dictionary Information
 
-| Name                     | Enabled | Description                   |
-| ------------------------ | ------- | ----------------------------- |
-| `en-au`                  |         | Australian English Dictionary |
-| `en-common-misspellings` |         | _External_                    |
+| Name                        | Enabled | Description                   |
+| --------------------------- | ------- | ----------------------------- |
+| `en-au`                     |         | Australian English Dictionary |
+| `en-common-misspellings`    |         | _External_                    |
+| `en-gb-common-misspellings` |         | _External_                    |
 
 ## Language Settings
 
-| Name                     | Locale  | File Type |
-| ------------------------ | ------- | --------- |
-| `en-au`                  | `en-AU` | `*`       |
-| `en-common-misspellings` | `en-AU` | `*`       |
+| Name                        | Locale  | File Type |
+| --------------------------- | ------- | --------- |
+| `en-au`                     | `en-AU` | `*`       |
+| `en-common-misspellings`    | `en-AU` | `*`       |
+| `en-gb-common-misspellings` | `en-AU` | `*`       |
