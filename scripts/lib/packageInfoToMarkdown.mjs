@@ -79,6 +79,7 @@ function listDictionaryIds(packages) {
     const dictionaries = packages
         .filter((pkg) => !pkg.isBundle)
         .flatMap((pkg) => pkg.dictionaries.map((d) => ({ ...d, pkg })))
+        .filter((d) => !d.external)
         .sort((a, b) => a.name.localeCompare(b.name));
     let md = unindent`
         ## Sorted by Dictionary Name IDs
@@ -135,7 +136,10 @@ function formatPackageRow(pkg) {
 
     const dictNames = pkg.isBundle
         ? ''
-        : dictionaries.map((d) => d.name + (d.enabled ? '<sup>2</sup>' : '')).join('<br>');
+        : dictionaries
+              .filter((d) => !d.external)
+              .map((d) => d.name + (d.enabled ? '<sup>2</sup>' : ''))
+              .join('<br>');
 
     // | Package | Name | Dictionary IDs |
     return `| [${packageName}](./${dir}#readme)${pkg.cspell ? '<sup>1</sup>' : ''} | ${pkg.name} | ${dictNames} |`;

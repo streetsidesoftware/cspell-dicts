@@ -12,6 +12,12 @@ const srcDirs = ['src/', 'src/wikipedia/', 'src/fromCrateTypos/'];
 const targetDir = new URL('dict/', root);
 const srcDir = new URL('src/', root);
 
+const descriptions = {
+    'dict-en.txt': 'Common English misspellings',
+    'dict-en-gb.txt': 'Common British English misspellings',
+    'dict-en-us.txt': 'Common American English misspellings',
+};
+
 /**
  * @import { Document, Scalar, YAMLSeq } from 'yaml';
  */
@@ -30,7 +36,7 @@ async function readSrcFileLines(file) {
 }
 
 /**
- * @typedef { word: string; suggestions: string[]; comment: string } Entry
+ * @typedef { {word: string; suggestions: string[]; comment: string} } Entry
  */
 
 /**
@@ -102,6 +108,7 @@ async function processSrc(srcBaseName) {
     const jsonFileName = srcBaseName.replace('.txt', '.json');
     const dstJsonFile = new URL(jsonFileName, targetDir);
     const srcYamlFile = new URL(yamlFileName, srcDir);
+    const description = descriptions[srcBaseName] || '';
 
     /** @type {Map<string, Entry>} */
     const entriesSug = new Map();
@@ -126,6 +133,7 @@ async function processSrc(srcBaseName) {
     const strYaml = await fs.readFile(srcYamlFile, 'utf8');
     const doc = parseDocument(strYaml);
     const dict = doc.getIn(['dictionaryDefinitions', 0]);
+    dict.set('description', description);
     const toProcess = [
         ['flagWords', entriesFlag],
         ['suggestWords', entriesSug],

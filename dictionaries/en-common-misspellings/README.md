@@ -68,11 +68,11 @@ language: en, en-gb, en-us
 
 ## Dictionary Information
 
-| Name                        | Enabled | Description |
-| --------------------------- | ------- | ----------- |
-| `en-common-misspellings`    |         |             |
-| `en-gb-common-misspellings` |         |             |
-| `en-us-common-misspellings` |         |             |
+| Name                        | Enabled | Description                          |
+| --------------------------- | ------- | ------------------------------------ |
+| `en-common-misspellings`    |         | Common English misspellings          |
+| `en-gb-common-misspellings` |         | Common British English misspellings  |
+| `en-us-common-misspellings` |         | Common American English misspellings |
 
 ## Language Settings
 
