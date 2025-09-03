@@ -10,7 +10,7 @@ importers:
     devDependencies:
       '@cspell/cspell-tools':
         specifier: ^9.2.0
-        version: 9.2.0(typescript@5.9.2)
+        version: 9.2.1(typescript@5.9.2)
       '@cspell/dict-cspell-bundle':
         specifier: workspace:*
         version: link:dictionaries/cspell
@@ -49,7 +49,7 @@ importers:
         version: link:scripts
       cspell-trie:
         specifier: ^9.2.0
-        version: 9.2.0
+        version: 9.2.1
       eslint:
         specifier: ^9.34.0
         version: 9.34.0
@@ -61,7 +61,7 @@ importers:
         version: 16.3.0
       hunspell-reader:
         specifier: ^9.2.0
-        version: 9.2.0
+        version: 9.2.1
       inject-markdown:
         specifier: ^4.0.0
         version: 4.0.0
@@ -780,7 +780,7 @@ importers:
     devDependencies:
       '@cspell/cspell-types':
         specifier: ^9.2.0
-        version: 9.2.0
+        version: 9.2.1
       '@types/mdast':
         specifier: ^4.0.4
         version: 4.0.4
@@ -819,6 +819,10 @@ packages:
     resolution: {integrity: sha512-RO3adcsr7Ek+4511nyEOWDhOYYU1ogRs1Mo5xx3kDIdcKAJzhFdGry35T2wqft4dPASLCXcemBrhoS+hdQ+z+Q==}
     engines: {node: '>=20'}
 
+  '@cspell/cspell-pipe@9.2.1':
+    resolution: {integrity: sha512-2N1H63If5cezLqKToY/YSXon4m4REg/CVTFZr040wlHRbbQMh5EF3c7tEC/ue3iKAQR4sm52ihfqo1n4X6kz+g==}
+    engines: {node: '>=20'}
+
   '@cspell/cspell-resolver@9.2.0':
     resolution: {integrity: sha512-0Xvwq0iezfO71Alw+DjsGxacAzydqOAxdXnY4JknHuxt2l8GTSMjRwj65QAflv3PN6h1QoRZEeWdiKtusceWAw==}
     engines: {node: '>=20'}
@@ -827,13 +831,17 @@ packages:
     resolution: {integrity: sha512-ZDvcOTFk3cCVW+OjlkljeP7aSuV8tIguVn+GMco1/A+961hsEP20hngK9zJtyfpXqyvJKtvCVlyzS+z8VRrZGg==}
     engines: {node: '>=20'}
 
-  '@cspell/cspell-tools@9.2.0':
-    resolution: {integrity: sha512-pTZN9rFjHnytIq1kiWLGz5EKjP2TWYaTBJanlM5n30OF3uekHaIKccIwaXsD5hfmFlxn+03RUc0+M6/zpGTk9Q==}
+  '@cspell/cspell-tools@9.2.1':
+    resolution: {integrity: sha512-t2kEcaDKA3tA2otIJl0sRfV6Bv+3xwzNeaRbKACFD0FT+BXzVwNpm+WzcVPFKXe1Dk5UlFRKXh1KhIpZaXc5BQ==}
     engines: {node: '>=20'}
     hasBin: true
 
   '@cspell/cspell-types@9.2.0':
     resolution: {integrity: sha512-hL4ltFwiARpFxlfXt4GiTWQxIFyZp4wrlp7dozZbitYO6QlYc5fwQ8jBc5zFUqknuH4gx/sCMLNXhAv3enNGZQ==}
+    engines: {node: '>=20'}
+
+  '@cspell/cspell-types@9.2.1':
+    resolution: {integrity: sha512-FQHgQYdTHkcpxT0u1ddLIg5Cc5ePVDcLg9+b5Wgaubmc5I0tLotgYj8c/mvStWuKsuZIs6sUopjJrE91wk6Onw==}
     engines: {node: '>=20'}
 
   '@cspell/dict-ada@4.1.1':
@@ -2180,8 +2188,12 @@ packages:
     resolution: {integrity: sha512-6GHL1KvLQzcPBSNY6QWOabq8YwRJAnNKamA0O/tRKy+11Hy99ysD4xvfu3kKYPAcobp5ZykX4nudHxy8yrEvng==}
     engines: {node: '>=20'}
 
-  cspell-trie@9.2.0:
-    resolution: {integrity: sha512-TLzWY4wip2EndvqKkE7BI7VNEHgGKIaQ4ku0TesR10Bz+GL6XCqAs4ZjQTBnlilOeEtszuDVcVnBoNzVyCW0eA==}
+  cspell-trie-lib@9.2.1:
+    resolution: {integrity: sha512-qOtbL+/tUzGFHH0Uq2wi7sdB9iTy66QNx85P7DKeRdX9ZH53uQd7qC4nEk+/JPclx1EgXX26svxr0jTGISJhLw==}
+    engines: {node: '>=20'}
+
+  cspell-trie@9.2.1:
+    resolution: {integrity: sha512-KSC3RYyqgpRMWv5ELgtvWiA0qUf+jEg5FwsPbBZsVDY6vYcnq+m/Yuje4bufsIp5Bph3fFOFKeyLBjoPLVPvoA==}
     engines: {node: '>=20'}
     hasBin: true
 
@@ -2767,8 +2779,8 @@ packages:
     resolution: {integrity: sha512-eKCa6bwnJhvxj14kZk5NCPc6Hb6BdsU9DZcOnmQKSnO1VKrfV0zCvtttPZUsBvjmNDn8rpcJfpwSYnHBjc95MQ==}
     engines: {node: '>=18.18.0'}
 
-  hunspell-reader@9.2.0:
-    resolution: {integrity: sha512-E0GwoKWHejaneHKYgvubtlQOELSM5INRP6wXiO1AC8qD/VSn1jhytJhx2LzJxgJBCyTXyuA834nW+IXSn7CUmA==}
+  hunspell-reader@9.2.1:
+    resolution: {integrity: sha512-yzRMVblErFiL3gDBuqBCmxNpTAiZ9spExQf9AMHlZq01vySVuPXh5+D2S/qfArMPibwNtjyIezndERq7KcpX6A==}
     engines: {node: '>=20'}
     hasBin: true
 
@@ -2778,6 +2790,10 @@ packages:
 
   iconv-lite@0.6.3:
     resolution: {integrity: sha512-4fCk79wshMdzMp2rH06qWrJE4iolqLhCUH+OiuIgU++RB0+94NlDL81atO7GX55uUKueo0txHNtvEyI6D7WdMw==}
+    engines: {node: '>=0.10.0'}
+
+  iconv-lite@0.7.0:
+    resolution: {integrity: sha512-cf6L2Ds3h57VVmkZe+Pn+5APsT7FpqJtEhhieDCvrE2MK5Qk9MyffgQyuxQTm6BChfeZNtcOLHp9IcWRVcIcBQ==}
     engines: {node: '>=0.10.0'}
 
   ieee754@1.2.1:
@@ -4736,25 +4752,29 @@ snapshots:
 
   '@cspell/cspell-pipe@9.2.0': {}
 
+  '@cspell/cspell-pipe@9.2.1': {}
+
   '@cspell/cspell-resolver@9.2.0':
     dependencies:
       global-directory: 4.0.1
 
   '@cspell/cspell-service-bus@9.2.0': {}
 
-  '@cspell/cspell-tools@9.2.0(typescript@5.9.2)':
+  '@cspell/cspell-tools@9.2.1(typescript@5.9.2)':
     dependencies:
-      '@cspell/cspell-pipe': 9.2.0
+      '@cspell/cspell-pipe': 9.2.1
       commander: 14.0.0
       cosmiconfig: 9.0.0(typescript@5.9.2)
-      cspell-trie-lib: 9.2.0
+      cspell-trie-lib: 9.2.1
       glob: 10.4.5
-      hunspell-reader: 9.2.0
+      hunspell-reader: 9.2.1
       yaml: 2.8.1
     transitivePeerDependencies:
       - typescript
 
   '@cspell/cspell-types@9.2.0': {}
+
+  '@cspell/cspell-types@9.2.1': {}
 
   '@cspell/dict-ada@4.1.1': {}
 
@@ -5829,7 +5849,7 @@ snapshots:
   '@types/vinyl@2.0.12':
     dependencies:
       '@types/expect': 1.20.4
-      '@types/node': 24.3.0
+      '@types/node': 20.19.11
 
   '@vercel/nft@0.29.4(encoding@0.1.13)':
     dependencies:
@@ -6451,10 +6471,16 @@ snapshots:
       '@cspell/cspell-types': 9.2.0
       gensequence: 7.0.0
 
-  cspell-trie@9.2.0:
+  cspell-trie-lib@9.2.1:
+    dependencies:
+      '@cspell/cspell-pipe': 9.2.1
+      '@cspell/cspell-types': 9.2.1
+      gensequence: 7.0.0
+
+  cspell-trie@9.2.1:
     dependencies:
       commander: 14.0.0
-      cspell-trie-lib: 9.2.0
+      cspell-trie-lib: 9.2.1
       gensequence: 7.0.0
 
   cspell@9.2.0:
@@ -7045,20 +7071,25 @@ snapshots:
 
   human-signals@8.0.1: {}
 
-  hunspell-reader@9.2.0:
+  hunspell-reader@9.2.1:
     dependencies:
-      '@cspell/cspell-pipe': 9.2.0
-      '@cspell/cspell-types': 9.2.0
+      '@cspell/cspell-pipe': 9.2.1
+      '@cspell/cspell-types': 9.2.1
       commander: 14.0.0
       gensequence: 7.0.0
       html-entities: 2.6.0
-      iconv-lite: 0.6.3
+      iconv-lite: 0.7.0
 
   iconv-lite@0.4.24:
     dependencies:
       safer-buffer: 2.1.2
 
   iconv-lite@0.6.3:
+    dependencies:
+      safer-buffer: 2.1.2
+    optional: true
+
+  iconv-lite@0.7.0:
     dependencies:
       safer-buffer: 2.1.2
 
