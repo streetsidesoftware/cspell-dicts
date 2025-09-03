@@ -743,7 +743,7 @@ importers:
         version: 9.2.0
       cspell-dictionary:
         specifier: ^9.2.0
-        version: 9.2.0
+        version: 9.2.1
       cspell-io:
         specifier: ^9.2.0
         version: 9.2.0
@@ -1628,6 +1628,9 @@ packages:
   '@types/node@20.19.11':
     resolution: {integrity: sha512-uug3FEEGv0r+jrecvUUpbY8lLisvIjg6AAic6a2bSP5OEOLeJsDSnvhCDov7ipFFMXS3orMpzlmi0ZcuGkBbow==}
 
+  '@types/node@20.19.12':
+    resolution: {integrity: sha512-lSOjyS6vdO2G2g2CWrETTV3Jz2zlCXHpu1rcubLKpz9oj+z/1CceHlj+yq53W+9zgb98nSov/wjEKYDNauD+Hw==}
+
   '@types/node@22.18.0':
     resolution: {integrity: sha512-m5ObIqwsUp6BZzyiy4RdZpzWGub9bqLJMvZDD0QMXhxjqMHMENlj+SqF5QxoUwaQNFe+8kz8XM8ZQhqkQPTgMQ==}
 
@@ -2160,6 +2163,10 @@ packages:
 
   cspell-dictionary@9.2.0:
     resolution: {integrity: sha512-lV4VtjsDtxu8LyCcb6DY7Br4e/Aw1xfR8QvjYhHaJ8t03xry9STey5Rkfp+lz+hlVevNcn3lfCaacGuXyD+lLg==}
+    engines: {node: '>=20'}
+
+  cspell-dictionary@9.2.1:
+    resolution: {integrity: sha512-0hQVFySPsoJ0fONmDPwCWGSG6SGj4ERolWdx4t42fzg5zMs+VYGXpQW4BJneQ5Tfxy98Wx8kPhmh/9E8uYzLTw==}
     engines: {node: '>=20'}
 
   cspell-gitignore@9.2.0:
@@ -5822,6 +5829,10 @@ snapshots:
     dependencies:
       undici-types: 6.21.0
 
+  '@types/node@20.19.12':
+    dependencies:
+      undici-types: 6.21.0
+
   '@types/node@22.18.0':
     dependencies:
       undici-types: 6.21.0
@@ -5849,7 +5860,7 @@ snapshots:
   '@types/vinyl@2.0.12':
     dependencies:
       '@types/expect': 1.20.4
-      '@types/node': 20.19.11
+      '@types/node': 24.3.0
 
   '@vercel/nft@0.29.4(encoding@0.1.13)':
     dependencies:
@@ -6415,6 +6426,13 @@ snapshots:
       '@cspell/cspell-pipe': 9.2.0
       '@cspell/cspell-types': 9.2.0
       cspell-trie-lib: 9.2.0
+      fast-equals: 5.2.2
+
+  cspell-dictionary@9.2.1:
+    dependencies:
+      '@cspell/cspell-pipe': 9.2.1
+      '@cspell/cspell-types': 9.2.1
+      cspell-trie-lib: 9.2.1
       fast-equals: 5.2.2
 
   cspell-gitignore@9.2.0:
@@ -7626,7 +7644,7 @@ snapshots:
 
   mem-fs@4.1.0:
     dependencies:
-      '@types/node': 20.19.11
+      '@types/node': 20.19.12
       '@types/vinyl': 2.0.12
       vinyl: 3.0.1
       vinyl-file: 5.0.0
