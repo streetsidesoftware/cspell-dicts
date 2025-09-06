@@ -1,5 +1,12 @@
 # Change Log
 
+## [1.0.42](https://github.com/streetsidesoftware/cspell-dicts/compare/@cspell/dict-en-shared@1.0.41...@cspell/dict-en-shared@1.0.42) (2025-09-06)
+
+
+### Updates and Bug Fixes
+
+* add disinvite  ([#4794](https://github.com/streetsidesoftware/cspell-dicts/issues/4794)) ([7a41159](https://github.com/streetsidesoftware/cspell-dicts/commit/7a411598cf80e50776de830a0a094a0d3fe661f3))
+
 ## [1.0.41](https://github.com/streetsidesoftware/cspell-dicts/compare/@cspell/dict-en-shared@1.0.40...@cspell/dict-en-shared@1.0.41) (2025-08-31)
 
 

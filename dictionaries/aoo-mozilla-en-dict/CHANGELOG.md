@@ -1,5 +1,12 @@
 # Changelog
 
+## [1.0.5](https://github.com/streetsidesoftware/cspell-dicts/compare/@cspell/aoo-mozilla-en-dict@1.0.4...@cspell/aoo-mozilla-en-dict@1.0.5) (2025-09-06)
+
+
+### Updates and Bug Fixes
+
+* Workflow Bot -- Build Dictionaries ([#4790](https://github.com/streetsidesoftware/cspell-dicts/issues/4790)) ([3864e50](https://github.com/streetsidesoftware/cspell-dicts/commit/3864e508eac5c7fbb3124b54d8acd28985a234af))
+
 ## [1.0.4](https://github.com/streetsidesoftware/cspell-dicts/compare/@cspell/aoo-mozilla-en-dict@1.0.3...@cspell/aoo-mozilla-en-dict@1.0.4) (2025-07-01)
 
 
