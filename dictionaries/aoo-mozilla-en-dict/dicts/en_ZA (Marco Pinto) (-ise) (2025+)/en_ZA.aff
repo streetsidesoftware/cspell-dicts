@@ -9,11 +9,11 @@
 #
 #
 # Dictionary Information:
-# English variant: South African
-#         Version: 2025-07-01
-#        Encoding: UTF-8-BOM Unix (LF)
-#       -ise/-ize: -ise
-#        Comments: For specific -ise/-ize variants, some verbs, and words MAY be missing or incorrectly included.
+#   English variant: South African
+#           Version: 2025-09-01
+#          Encoding: UTF-8-BOM Unix (LF)
+#    -ise/-ize/Both: -ise
+#          Comments: For specific -ise/-ize variants, some verbs and words MAY be missing or incorrectly included.
 #
 # Maintainer: Marco A.G.Pinto
 #   Homepage: https://proofingtoolgui.org
@@ -379,7 +379,7 @@ SFX Y 0 ly [aeiou][ly]
 SFX Y 0 ly [aeiou]le 
 SFX Y 0 y [^aeiou]l 
 SFX Y e y [^aeiou]le 
-SFX G Y 24
+SFX G Y 26
 SFX G 0 bing [^aeio][aeiou]b 
 SFX G 0 ding [^aeio][aeiou]d 
 SFX G 0 fing [^aeio][aeiou]f 
@@ -398,12 +398,14 @@ SFX G 0 ling [^aeo]al
 SFX G 0 ming [^aeio][aeiou]m 
 SFX G 0 ning [^aeio][aeiou]n 
 SFX G 0 ping [^aeio][aeiou]p 
-SFX G 0 ring [^aeio][aeiou]r 
+SFX G 0 ring [^aeiolvb][aeiou]r 
 SFX G 0 sing [^aeio][aeiou]s 
 SFX G 0 ting [^aeio][aeiou]t 
 SFX G 0 ving [^aeio][aeiou]v 
 SFX G ie ying ie 
 SFX G 0 zing [^aeio][aeiou]z 
+SFX G 0 ing [lvb]or 
+SFX G 0 ring [lvb][aeu]r 
 SFX J Y 50
 SFX J 0 bing's [^aeio][aeiou]b 
 SFX J 0 bings [^aeio][aeiou]b 
@@ -464,7 +466,7 @@ SFX k 0 ingly [eoy]e
 SFX k 0 kingly [^aeio][aeiou]c 
 SFX k 0 lingly [^aeio][aeiou]l 
 SFX k ie yingly ie 
-SFX D Y 25
+SFX D Y 28
 SFX D 0 bed [^aeio][aeiou]b 
 SFX D 0 d [^e]e 
 SFX D e d ee 
@@ -485,11 +487,14 @@ SFX D 0 led [^aeo]al
 SFX D 0 med [^aeio][aeiou]m 
 SFX D 0 ned [^aeio][aeiou]n 
 SFX D 0 ped [^aeio][aeiou]p 
-SFX D 0 red [^aeio][aeiou]r 
+SFX D 0 red [^aeiovb][aeiou]r 
 SFX D 0 sed [^aeio][aeiou]s 
 SFX D 0 ted [^aeio][aeiou]t 
 SFX D 0 ved [^aeio][aeiou]v 
 SFX D 0 zed [^aeio][aeiou]z 
+SFX D 0 ed [lvb]or 
+SFX D 0 red [^aeiowsnb][lvb][aeou]r 
+SFX D 0 red [bv][aeu]r 
 SFX d Y 16
 SFX d 0 d e 
 SFX d 0 ed [^aeiou][cl] 
@@ -640,7 +645,7 @@ SFX T 0 ver [^aeio][aeiou]v
 SFX T 0 vest [^aeio][aeiou]v
 SFX T 0 zer [^aeio][aeiou]z 
 SFX T 0 zest [^aeio][aeiou]z
-SFX R Y 72
+SFX R Y 75
 SFX R 0 ber [^aeio][aeiou]b 
 SFX R 0 ber's [^aeio][aeiou]b 
 SFX R 0 bers [^aeio][aeiou]b 
@@ -697,9 +702,12 @@ SFX R 0 per's [^aeio][aeiou]p
 SFX R 0 pers [^aeio][aeiou]p 
 SFX R 0 r e 
 SFX R 0 r's e 
-SFX R 0 rer [^aeio][aeiou]r 
-SFX R 0 rer's [^aeio][aeiou]r 
-SFX R 0 rers [^aeio][aeiou]r 
+SFX R 0 rer [^aeiol][aeiou]r 
+SFX R 0 rer's [^aeiol][aeiou]r 
+SFX R 0 rers [^aeiol][aeiou]r 
+SFX R 0 er [l]or 
+SFX R 0 er's [l]or 
+SFX R 0 ers [l]or 
 SFX R 0 rs e 
 SFX R 0 ser [^aeio][aeiou]s 
 SFX R 0 ser's [^aeio][aeiou]s 
