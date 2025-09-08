@@ -3,6 +3,15 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+## [5.1.8](https://github.com/streetsidesoftware/cspell-dicts/compare/@cspell/dict-software-terms@5.1.7...@cspell/dict-software-terms@5.1.8) (2025-09-08)
+
+
+### Updates and Bug Fixes
+
+* Add 'devContainers' to coding terms list ([#4798](https://github.com/streetsidesoftware/cspell-dicts/issues/4798)) ([70e1a94](https://github.com/streetsidesoftware/cspell-dicts/commit/70e1a943caeee23b4741d646a689e10c48637ab3))
+* Add 'ohmyzsh' and 'oh-my-zsh' to software tools list ([#4799](https://github.com/streetsidesoftware/cspell-dicts/issues/4799)) ([0effc1f](https://github.com/streetsidesoftware/cspell-dicts/commit/0effc1f0fb8d12df82e3d28305573be48ee09d17))
+* Workflow Bot -- Build Dictionaries ([#4801](https://github.com/streetsidesoftware/cspell-dicts/issues/4801)) ([81198ca](https://github.com/streetsidesoftware/cspell-dicts/commit/81198cae03a3ecdb4252326e9fbbe194daa32a9c))
+
 ## [5.1.7](https://github.com/streetsidesoftware/cspell-dicts/compare/@cspell/dict-software-terms@5.1.6...@cspell/dict-software-terms@5.1.7) (2025-08-30)
 
 
