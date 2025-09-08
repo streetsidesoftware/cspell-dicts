@@ -1,5 +1,22 @@
 # Release Notes
 
+## [31.5.13](https://github.com/streetsidesoftware/cspell-dicts/compare/cspell-dicts@31.5.12...cspell-dicts@31.5.13) (2025-09-08)
+
+
+### Updates and Bug Fixes
+
+* Add 'devContainers' to coding terms list ([#4798](https://github.com/streetsidesoftware/cspell-dicts/issues/4798)) ([70e1a94](https://github.com/streetsidesoftware/cspell-dicts/commit/70e1a943caeee23b4741d646a689e10c48637ab3))
+* Add 'ohmyzsh' and 'oh-my-zsh' to software tools list ([#4799](https://github.com/streetsidesoftware/cspell-dicts/issues/4799)) ([0effc1f](https://github.com/streetsidesoftware/cspell-dicts/commit/0effc1f0fb8d12df82e3d28305573be48ee09d17))
+* Workflow Bot -- Build Dictionaries ([#4801](https://github.com/streetsidesoftware/cspell-dicts/issues/4801)) ([81198ca](https://github.com/streetsidesoftware/cspell-dicts/commit/81198cae03a3ecdb4252326e9fbbe194daa32a9c))
+* Workflow Bot -- Update Dictionaries ([#4803](https://github.com/streetsidesoftware/cspell-dicts/issues/4803)) ([d665532](https://github.com/streetsidesoftware/cspell-dicts/commit/d665532b482d0d04f867c0d75a734eb3e466cfdf))
+
+
+### Dependencies
+
+* The following workspace dependencies were updated
+  * devDependencies
+    * @cspell/dict-cspell-bundle bumped to 2.0.29
+
 ## [31.5.12](https://github.com/streetsidesoftware/cspell-dicts/compare/cspell-dicts@31.5.11...cspell-dicts@31.5.12) (2025-09-06)
 
 
