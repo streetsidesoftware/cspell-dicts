@@ -1038,8 +1038,8 @@ packages:
   '@epic-web/invariant@1.0.0':
     resolution: {integrity: sha512-lrTPqgvfFQtR/eY/qkIzp98OGdNJu0m5ji3q/nJI8v3SXkRKEnWiOxMmbvcSoAIzv/cGiuvRy57k4suKQSAdwA==}
 
-  '@eslint-community/eslint-utils@4.8.0':
-    resolution: {integrity: sha512-MJQFqrZgcW0UNYLGOuQpey/oTN59vyWwplvCGZztn1cKz9agZPPYpJB7h2OMmuu7VLqkvEjN8feFZJmxNF9D+Q==}
+  '@eslint-community/eslint-utils@4.9.0':
+    resolution: {integrity: sha512-ayVFHdtZ+hsq1t2Dy24wCmGXGe4q9Gu3smhLYALJrr473ZH27MsnSL+LKUlimp4BWJqMDMLmPpx/Q9R3OAlL4g==}
     engines: {node: ^12.22.0 || ^14.17.0 || >=16.0.0}
     peerDependencies:
       eslint: ^6.0.0 || ^7.0.0 || >=8.0.0
@@ -3723,8 +3723,8 @@ packages:
     resolution: {integrity: sha512-vRpMXmIkYF2/1hLBKisKeVYJZ8S2tZ0zEAmIJgdVKP2nq0nh4qCdf8bgw+ZgKrkh71AOCaqzwbJJk1WtdcF3VA==}
     engines: {node: '>=12'}
 
-  p-queue@8.1.0:
-    resolution: {integrity: sha512-mxLDbbGIBEXTJL0zEx8JIylaj3xQ7Z/7eEVjcF9fJX4DBiH9oqe+oahYnlKKxm0Ci9TlWTyhSHgygxMxjIB2jw==}
+  p-queue@8.1.1:
+    resolution: {integrity: sha512-aNZ+VfjobsWryoiPnEApGGmf5WmNsCo9xu8dfaYamG5qaLP7ClhLN6NgsFe6SwJ2UbLEBK5dv9x8Mn5+RVhMWQ==}
     engines: {node: '>=18'}
 
   p-reduce@3.0.0:
@@ -4938,7 +4938,7 @@ snapshots:
 
   '@epic-web/invariant@1.0.0': {}
 
-  '@eslint-community/eslint-utils@4.8.0(eslint@9.35.0)':
+  '@eslint-community/eslint-utils@4.9.0(eslint@9.35.0)':
     dependencies:
       eslint: 9.35.0
       eslint-visitor-keys: 3.4.3
@@ -5104,7 +5104,7 @@ snapshots:
       load-json-file: 7.0.1
       npm-package-arg: 13.0.0
       p-map: 7.0.3
-      p-queue: 8.1.0
+      p-queue: 8.1.1
       picomatch: 4.0.3
       resolve-from: 5.0.0
       semver: 7.7.2
@@ -5943,7 +5943,7 @@ snapshots:
       inquirer: 9.3.7
       log-symbols: 7.0.1
       ora: 8.2.0
-      p-queue: 8.1.0
+      p-queue: 8.1.1
       text-table: 0.2.0
 
   '@yeoman/conflicter@2.4.0(@types/node@24.3.1)(@yeoman/types@1.2.0(@types/inquirer@9.0.9)(mem-fs@4.1.0))(mem-fs@4.1.0)':
@@ -6706,7 +6706,7 @@ snapshots:
 
   eslint@9.35.0:
     dependencies:
-      '@eslint-community/eslint-utils': 4.8.0(eslint@9.35.0)
+      '@eslint-community/eslint-utils': 4.9.0(eslint@9.35.0)
       '@eslint-community/regexpp': 4.12.1
       '@eslint/config-array': 0.21.0
       '@eslint/config-helpers': 0.3.1
@@ -8366,7 +8366,7 @@ snapshots:
       eventemitter3: 5.0.1
       p-timeout: 5.1.0
 
-  p-queue@8.1.0:
+  p-queue@8.1.1:
     dependencies:
       eventemitter3: 5.0.1
       p-timeout: 6.1.4
