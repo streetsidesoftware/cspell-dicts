@@ -709,7 +709,7 @@ importers:
         version: 5.6.0
       commander:
         specifier: ^14.0.0
-        version: 14.0.0
+        version: 14.0.1
       cspell-trie-lib:
         specifier: ^9.2.1
         version: 9.2.1
@@ -737,7 +737,7 @@ importers:
         version: 7.0.3
       commander:
         specifier: ^14.0.0
-        version: 14.0.0
+        version: 14.0.1
       cspell-config-lib:
         specifier: ^9.2.1
         version: 9.2.1
@@ -2065,6 +2065,10 @@ packages:
 
   commander@14.0.0:
     resolution: {integrity: sha512-2uM9rYjPvyq39NwLRqaiLtWHyDC1FvryJDa2ATTVims5YAS4PupsEQsDvP14FqhFr0P49CYDugi59xaxJlTXRA==}
+    engines: {node: '>=20'}
+
+  commander@14.0.1:
+    resolution: {integrity: sha512-2JkV3gUZUVrbNA+1sjBOYLsMZ5cEEl8GTFP2a4AVz5hvasAMCQ1D2l2le/cX+pV4N6ZU17zjUahLpIXRrnWL8A==}
     engines: {node: '>=20'}
 
   comment-json@4.2.5:
@@ -4785,7 +4789,7 @@ snapshots:
   '@cspell/cspell-tools@9.2.1(typescript@5.9.2)':
     dependencies:
       '@cspell/cspell-pipe': 9.2.1
-      commander: 14.0.0
+      commander: 14.0.1
       cosmiconfig: 9.0.0(typescript@5.9.2)
       cspell-trie-lib: 9.2.1
       glob: 10.4.5
@@ -6337,6 +6341,8 @@ snapshots:
 
   commander@14.0.0: {}
 
+  commander@14.0.1: {}
+
   comment-json@4.2.5:
     dependencies:
       array-timsort: 1.0.3
@@ -6539,7 +6545,7 @@ snapshots:
 
   cspell-trie@9.2.1:
     dependencies:
-      commander: 14.0.0
+      commander: 14.0.1
       cspell-trie-lib: 9.2.1
       gensequence: 7.0.0
 
@@ -7135,7 +7141,7 @@ snapshots:
     dependencies:
       '@cspell/cspell-pipe': 9.2.1
       '@cspell/cspell-types': 9.2.1
-      commander: 14.0.0
+      commander: 14.0.1
       gensequence: 7.0.0
       html-entities: 2.6.0
       iconv-lite: 0.7.0
@@ -7207,7 +7213,7 @@ snapshots:
   inject-markdown@4.0.0:
     dependencies:
       chalk: 5.6.0
-      commander: 14.0.0
+      commander: 14.0.1
       globby: 14.1.0
       node-fetch: 3.3.2
       remark: 15.0.1
