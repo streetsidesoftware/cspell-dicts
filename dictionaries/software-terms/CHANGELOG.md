@@ -3,6 +3,15 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+## [5.1.9](https://github.com/streetsidesoftware/cspell-dicts/compare/@cspell/dict-software-terms@5.1.8...@cspell/dict-software-terms@5.1.9) (2025-09-25)
+
+
+### Updates and Bug Fixes
+
+* add `Nushell` to `software-tools` ([#4826](https://github.com/streetsidesoftware/cspell-dicts/issues/4826)) ([b25b06e](https://github.com/streetsidesoftware/cspell-dicts/commit/b25b06ed0bc955f104d9b4efef2070c9ed5511ee))
+* add `pixi` to `software-tools` ([#4821](https://github.com/streetsidesoftware/cspell-dicts/issues/4821)) ([c885ae5](https://github.com/streetsidesoftware/cspell-dicts/commit/c885ae572437d6f50737f4417662be3ceda521ab))
+* add `Valgrind` to `software-tools` ([#4825](https://github.com/streetsidesoftware/cspell-dicts/issues/4825)) ([a57d8d0](https://github.com/streetsidesoftware/cspell-dicts/commit/a57d8d09dd45d2ab6bb059d24605ececc3682ae1))
+
 ## [5.1.8](https://github.com/streetsidesoftware/cspell-dicts/compare/@cspell/dict-software-terms@5.1.7...@cspell/dict-software-terms@5.1.8) (2025-09-08)
 
 
