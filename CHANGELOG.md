@@ -1,5 +1,27 @@
 # Release Notes
 
+## [31.5.14](https://github.com/streetsidesoftware/cspell-dicts/compare/cspell-dicts@31.5.13...cspell-dicts@31.5.14) (2025-09-25)
+
+
+### Updates and Bug Fixes
+
+* add `hstack` to `python` ([#4823](https://github.com/streetsidesoftware/cspell-dicts/issues/4823)) ([c3250c6](https://github.com/streetsidesoftware/cspell-dicts/commit/c3250c6fecabbe8e73eb2045865a233f38222b23))
+* add `meshgrid` to `python` and `data-science` ([#4822](https://github.com/streetsidesoftware/cspell-dicts/issues/4822)) ([f6bfbc2](https://github.com/streetsidesoftware/cspell-dicts/commit/f6bfbc21a778be2b4d0d4ab9340317b72d4e1da5))
+* add `Nushell` to `software-tools` ([#4826](https://github.com/streetsidesoftware/cspell-dicts/issues/4826)) ([b25b06e](https://github.com/streetsidesoftware/cspell-dicts/commit/b25b06ed0bc955f104d9b4efef2070c9ed5511ee))
+* add `pixi` to `software-tools` ([#4821](https://github.com/streetsidesoftware/cspell-dicts/issues/4821)) ([c885ae5](https://github.com/streetsidesoftware/cspell-dicts/commit/c885ae572437d6f50737f4417662be3ceda521ab))
+* add `pyrefly` to `python` ([#4820](https://github.com/streetsidesoftware/cspell-dicts/issues/4820)) ([242f370](https://github.com/streetsidesoftware/cspell-dicts/commit/242f3700da89fc2f586693c4cf3e7bf33902f18d))
+* add `reduceat` to `python` ([#4824](https://github.com/streetsidesoftware/cspell-dicts/issues/4824)) ([7cf6246](https://github.com/streetsidesoftware/cspell-dicts/commit/7cf6246a2d8998f252d3ab059ec43d8021d0d263))
+* add `Valgrind` to `software-tools` ([#4825](https://github.com/streetsidesoftware/cspell-dicts/issues/4825)) ([a57d8d0](https://github.com/streetsidesoftware/cspell-dicts/commit/a57d8d09dd45d2ab6bb059d24605ececc3682ae1))
+* Workflow Bot -- Update Dictionaries ([#4810](https://github.com/streetsidesoftware/cspell-dicts/issues/4810)) ([f57d9ca](https://github.com/streetsidesoftware/cspell-dicts/commit/f57d9ca10efd07ec9dcdc00cbb8f8dcb41eefd3d))
+* Workflow Bot -- Update Dictionaries ([#4819](https://github.com/streetsidesoftware/cspell-dicts/issues/4819)) ([8224a16](https://github.com/streetsidesoftware/cspell-dicts/commit/8224a16913bc7b75caca45cdd471cda927f8c600))
+
+
+### Dependencies
+
+* The following workspace dependencies were updated
+  * devDependencies
+    * @cspell/dict-cspell-bundle bumped to 2.0.30
+
 ## [31.5.13](https://github.com/streetsidesoftware/cspell-dicts/compare/cspell-dicts@31.5.12...cspell-dicts@31.5.13) (2025-09-08)
 
 
