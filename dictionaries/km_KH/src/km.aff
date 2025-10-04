@@ -5,3 +5,27 @@ REP 2
 REP ្ត ្ដ
 # Invisible double spaces "​​" to one invisible space "​"
 REP ​​ ​
+
+# Prefix rule for "ទី" (place/location marker)
+# ទីកន្លែង
+# ទីប្រឹក្សា
+# ទីបញ្ជាការ
+# ទីរហោស្ថាន
+# ទីវាល
+# ទីផ្សារ
+# ទីក្រុង
+PFX T Y 1
+PFX T 0 ទី .
+
+# Prefix rule for "ការ" (action/nominalization prefix)
+# ការស្លាប់
+# ...
+PFX G Y 1
+PFX G 0 ការ .
+
+# Suffix rule for "ការណ៍" (report/statement suffix)
+# ផ្លូវការណ៍
+# របាយការណ៍
+# ថ្លែងការណ៍
+SFX K Y 1
+SFX K 0 ការណ៍ .
