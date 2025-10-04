@@ -1,12 +1,12 @@
 # yaml-language-server: $schema=https://raw.githubusercontent.com/streetsidesoftware/cspell/main/packages/cspell-tools/cspell-tools.config.schema.json
 
 targets:
-  - name: km
-    targetDirectory: .
-    compress: false
-    format: trie3
+  - name: 'km-kh'
     sources:
-      - src/hunspell/km.dic
-    sort: true
+      - filename: 'src/km.dic'
+        maxDepth: 1 # This is set to 1 to prevent initial builds from taking too long.
+    format: 'trie3'
+    targetDirectory: './dict'
     generateNonStrict: true
+    compress: false
 checksumFile: true
