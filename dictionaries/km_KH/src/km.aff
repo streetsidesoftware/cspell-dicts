@@ -1,4 +1,7 @@
 SET UTF-8
 
-REP 1
+REP 2
+# "្"+"ត" to "្"+"ដ"
 REP ្ត ្ដ
+# Invisible double spaces "​​" to one invisible space "​"
+REP ​​ ​
