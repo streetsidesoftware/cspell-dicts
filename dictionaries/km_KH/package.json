@@ -1,0 +1,44 @@
+{
+  "name": "@cspell/dict-km-kh",
+  "version": "0.0.1",
+  "description": "Khmer dictionary for cspell.",
+  "publishConfig": {
+    "access": "public",
+    "provenance": true
+  },
+  "exports": {
+    ".": "./cspell-ext.json",
+    "./cspell": "./cspell-ext.json",
+    "./cspell-ext.json": "./cspell-ext.json"
+  },
+  "scripts": {
+    "build": "cspell-tools-cli build && pnpm gz",
+    "build:conditional": "cspell-tools-cli build --conditional && pnpm gz",
+    "test": "cspell samples",
+    "gz": "cspell-tools-cli gzip *.trie",
+    "prepare:dictionary": "pnpm run gz",
+    "prepublishOnly": "echo pre-publish"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/streetsidesoftware/cspell-dicts",
+    "directory": "dictionaries/km_KH"
+  },
+  "keywords": [
+    "cspell",
+    "km_KH",
+    "Khmer",
+    "dictionary",
+    "spelling"
+  ],
+  "author": "Street Side Software <support@streetsidesoftware.nl>",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/streetsidesoftware/cspell-dicts/issues"
+  },
+  "homepage": "https://github.com/streetsidesoftware/cspell-dicts/blob/main/dictionaries/km_KH#readme",
+  "files": [
+    "km.trie.gz",
+    "cspell-ext.json"
+  ]
+}
