@@ -1,9 +1,20 @@
 SET UTF-8
 
+# BREAK: Define word break characters
+# "​" (U+200B Zero Width Space) is an invisible character used as a word boundary marker in Khmer text
+# "៕" (U+17D5 Khmer Sign Bariyoosan) - section sign
+# "។" (U+17D4 Khmer Sign Khan) - full stop/period
+# " " (U+0020 Space) - regular space
+BREAK 4
+BREAK ​
+BREAK ៕
+BREAK ។
+BREAK  
+
 REP 2
 # "្"+"ត" to "្"+"ដ"
 REP ្ត ្ដ
-# Invisible double spaces "​​" to one invisible space "​"
+# Double zero-width spaces "​​" (U+200B U+200B) to single zero-width space "​" (U+200B)
 REP ​​ ​
 
 # Prefix rule for "ទី" (place/location marker)
