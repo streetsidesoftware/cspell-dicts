@@ -131,7 +131,7 @@
 [<img alt="Contributor sennpang" src="https://avatars.githubusercontent.com/u/16861647?v=4&size=128" width=64>](https://github.com/sennpang)
 [<img alt="Contributor shanefontaine" src="https://avatars.githubusercontent.com/u/9441295?v=4&size=128" width=64>](https://github.com/shanefontaine)
 [<img alt="Contributor sheldonhull" src="https://avatars.githubusercontent.com/u/3526320?v=4&size=128" width=64>](https://github.com/sheldonhull)
-[<img alt="Contributor smaraf" src="https://avatars.githubusercontent.com/u/1213709?v=4&size=128" width=64>](https://github.com/smaraf)
+[<img alt="Contributor smara-codes" src="https://avatars.githubusercontent.com/u/1213709?v=4&size=128" width=64>](https://github.com/smara-codes)
 [<img alt="Contributor snyk-bot" src="https://avatars.githubusercontent.com/u/19733683?v=4&size=128" width=64>](https://github.com/snyk-bot)
 [<img alt="Contributor ssr-yuki" src="https://avatars.githubusercontent.com/u/15957608?v=4&size=128" width=64>](https://github.com/ssr-yuki)
 [<img alt="Contributor thakyZ" src="https://avatars.githubusercontent.com/u/950594?v=4&size=128" width=64>](https://github.com/thakyZ)
@@ -222,6 +222,7 @@
 [<img alt="Contributor LucasOe" src="https://avatars.githubusercontent.com/u/16548335?v=4&size=128" width=64>](https://github.com/LucasOe)
 [<img alt="Contributor nomadsherpa" src="https://avatars.githubusercontent.com/u/1914993?v=4&size=128" width=64>](https://github.com/nomadsherpa)
 [<img alt="Contributor pbrit" src="https://avatars.githubusercontent.com/u/554135?v=4&size=128" width=64>](https://github.com/pbrit)
+[<img alt="Contributor smaraf" src="https://avatars.githubusercontent.com/u/1213709?v=4&size=128" width=64>](https://github.com/smaraf)
 [<img alt="Contributor uncenter" src="https://avatars.githubusercontent.com/u/47499684?v=4&size=128" width=64>](https://github.com/uncenter)
 
 <!--- cspell:enable --->
