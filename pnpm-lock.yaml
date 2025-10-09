@@ -1270,8 +1270,8 @@ packages:
     engines: {node: ^16.14.0 || >=18.0.0}
     hasBin: true
 
-  '@npmcli/arborist@9.1.5':
-    resolution: {integrity: sha512-aUaE3vMilrPUV4M98NGB0yHqAKGLIxfXMFbxMm2Aw66V35hfS3cx3SIuj1Ptf8sBwwvD/Gbp4KlGPZOfKCApfg==}
+  '@npmcli/arborist@9.1.6':
+    resolution: {integrity: sha512-c5Pr3EG8UP5ollkJy2x+UdEQC5sEHe3H9whYn6hb2HJimAKS4zmoJkx5acCiR/g4P38RnCSMlsYQyyHnKYeLvQ==}
     engines: {node: ^20.17.0 || >=22.9.0}
     hasBin: true
 
@@ -2752,8 +2752,8 @@ packages:
     resolution: {integrity: sha512-Rw/B2DNQaPBICNXEm8balFz9a6WpZrkCGpcWFpy7nCj+NyhSdqXipmfvtmWt9xGfp0wZnBxB+iVpLmQMYt47Tw==}
     engines: {node: ^18.17.0 || >=20.5.0}
 
-  hosted-git-info@9.0.0:
-    resolution: {integrity: sha512-gEf705MZLrDPkbbhi8PnoO4ZwYgKoNL+ISZ3AjZMht2r3N5tuTwncyDi6Fv2/qDnMmZxgs0yI8WDOyR8q3G+SQ==}
+  hosted-git-info@9.0.2:
+    resolution: {integrity: sha512-M422h7o/BR3rmCQ8UHi7cyyMqKltdP9Uo+J2fXK+RSAY+wTcKOIRyhTuKv4qn+DJf3g+PL890AzId5KZpX+CBg==}
     engines: {node: ^20.17.0 || >=22.9.0}
 
   html-entities@2.6.0:
@@ -3097,12 +3097,12 @@ packages:
     resolution: {integrity: sha512-+bT2uH4E5LGE7h/n3evcS/sQlJXCpIp6ym8OWJ5eV6+67Dsql/LaaT7qJBAt2rzfoa/5QBGBhxDix1dMt2kQKQ==}
     engines: {node: '>= 0.8.0'}
 
-  libnpmaccess@10.0.2:
-    resolution: {integrity: sha512-WQI+aBcwyAfhor2yDL8OUV/jkrQLzObMED27jigpVdlqZPXxbBua1C+yFpHJfmj3gHRg+Se4glzlrKAazd8INg==}
+  libnpmaccess@10.0.3:
+    resolution: {integrity: sha512-JPHTfWJxIK+NVPdNMNGnkz4XGX56iijPbe0qFWbdt68HL+kIvSzh+euBL8npLZvl2fpaxo+1eZSdoG15f5YdIQ==}
     engines: {node: ^20.17.0 || >=22.9.0}
 
-  libnpmpublish@11.1.1:
-    resolution: {integrity: sha512-T842x3WVhWdHQ9b8ukC37nW9UOfdvqzXxRuijzmYgpsunSQnykwP8IaA76Oxr8OQ3xB39BYVI9gwHQE5Pd8Fig==}
+  libnpmpublish@11.1.2:
+    resolution: {integrity: sha512-tNcU3cLH7toloAzhOOrBDhjzgbxpyuYvkf+BPPnnJCdc5EIcdJ8JcT+SglvCQKKyZ6m9dVXtCVlJcA6csxKdEA==}
     engines: {node: ^20.17.0 || >=22.9.0}
 
   lilconfig@3.1.3:
@@ -3566,8 +3566,8 @@ packages:
     resolution: {integrity: sha512-sHGJy8sOC1YraBywpzQlIKBE4pBbGbiF95U6Auspzyem956E0+FtDtsx1ZxlOJkQCZ1AFXAY/yuvtFYrOxF+Bw==}
     engines: {node: ^16.14.0 || >=18.0.0}
 
-  npm-package-arg@13.0.0:
-    resolution: {integrity: sha512-+t2etZAGcB7TbbLHfDwooV9ppB2LhhcT6A+L9cahsf9mEUAoQ6CktLEVvEnpD0N5CkX7zJqnPGaFtoQDy9EkHQ==}
+  npm-package-arg@13.0.1:
+    resolution: {integrity: sha512-6zqls5xFvJbgFjB1B2U6yITtyGBjDBORB7suI4zA4T/sZ1OmkMFlaQSNB/4K0LtXNA1t4OprAFxPisadK5O2ag==}
     engines: {node: ^20.17.0 || >=22.9.0}
 
   npm-packlist@10.0.2:
@@ -4046,8 +4046,8 @@ packages:
     resolution: {integrity: sha512-cBznnQ9KjJqU67B52RMC65CMarK2600WFnbkcaiwWq3xy/5haFJlshgnpjovMVJ+Hff49d8GEn0b87C5pDQ10g==}
     hasBin: true
 
-  semver@7.7.2:
-    resolution: {integrity: sha512-RF0Fw+rO5AMf9MAyaRXI4AV0Ulj5lMHqVxxdSgiVbixSCXoEmmX/jk0CuJw4+3SqroYO9VoUh+HcuJivvtJemA==}
+  semver@7.7.3:
+    resolution: {integrity: sha512-SdsKMrI9TdgjdweUSR9MweHA4EJ8YxHn8DFaDisvhVlUOe4BF1tLD7GAj0lIqWVl+dPb/rExr0Btby5loQm20Q==}
     engines: {node: '>=10'}
     hasBin: true
 
@@ -4662,7 +4662,7 @@ snapshots:
     dependencies:
       '@simple-libs/child-process-utils': 1.0.1
       '@simple-libs/stream-utils': 1.1.0
-      semver: 7.7.2
+      semver: 7.7.3
     optionalDependencies:
       conventional-commits-filter: 5.0.0
       conventional-commits-parser: 6.2.0
@@ -5071,12 +5071,12 @@ snapshots:
       json5: 2.2.3
       lilconfig: 3.1.3
       load-json-file: 7.0.1
-      npm-package-arg: 13.0.0
+      npm-package-arg: 13.0.1
       p-map: 7.0.3
       p-queue: 8.1.1
       picomatch: 4.0.3
       resolve-from: 5.0.0
-      semver: 7.7.2
+      semver: 7.7.3
       slash: 5.1.0
       tinyglobby: 0.2.15
       tinyrainbow: 3.0.3
@@ -5147,23 +5147,23 @@ snapshots:
       '@lerna-lite/core': 4.9.0(@types/node@24.7.0)
       '@lerna-lite/npmlog': 4.7.3
       '@lerna-lite/version': 4.9.0(@lerna-lite/exec@4.9.0)(@lerna-lite/publish@4.9.0)(@lerna-lite/run@4.9.0)(@types/node@24.7.0)(conventional-commits-filter@5.0.0)
-      '@npmcli/arborist': 9.1.5
+      '@npmcli/arborist': 9.1.6
       '@npmcli/package-json': 7.0.1
       byte-size: 9.0.1
       ci-info: 4.3.1
       columnify: 1.6.0
       fs-extra: 11.3.2
       has-unicode: 2.0.1
-      libnpmaccess: 10.0.2
-      libnpmpublish: 11.1.1
+      libnpmaccess: 10.0.3
+      libnpmpublish: 11.1.2
       normalize-path: 3.0.0
-      npm-package-arg: 13.0.0
+      npm-package-arg: 13.0.1
       npm-packlist: 10.0.2
       npm-registry-fetch: 19.0.0
       p-map: 7.0.3
       p-pipe: 4.0.0
       pacote: 21.0.3
-      semver: 7.7.2
+      semver: 7.7.3
       ssri: 12.0.0
       tar: 7.5.1
       tinyglobby: 0.2.15
@@ -5217,13 +5217,13 @@ snapshots:
       is-stream: 4.0.1
       load-json-file: 7.0.1
       new-github-release-url: 2.0.0
-      npm-package-arg: 13.0.0
+      npm-package-arg: 13.0.1
       p-limit: 7.1.1
       p-map: 7.0.3
       p-pipe: 4.0.0
       p-reduce: 3.0.0
       pify: 6.1.0
-      semver: 7.7.2
+      semver: 7.7.3
       slash: 5.1.0
       tinyrainbow: 3.0.3
       uuid: 13.0.0
@@ -5247,7 +5247,7 @@ snapshots:
       https-proxy-agent: 7.0.6
       node-fetch: 2.7.0(encoding@0.1.13)
       nopt: 8.1.0
-      semver: 7.7.2
+      semver: 7.7.3
       tar: 7.5.1
     transitivePeerDependencies:
       - encoding
@@ -5328,7 +5328,7 @@ snapshots:
       promise-all-reject-late: 1.0.1
       promise-call-limit: 3.0.2
       read-package-json-fast: 3.0.2
-      semver: 7.7.2
+      semver: 7.7.3
       ssri: 10.0.6
       treeverse: 3.0.0
       walk-up-path: 3.0.1
@@ -5336,7 +5336,7 @@ snapshots:
       - bluebird
       - supports-color
 
-  '@npmcli/arborist@9.1.5':
+  '@npmcli/arborist@9.1.6':
     dependencies:
       '@isaacs/string-locale-compare': 1.1.0
       '@npmcli/fs': 4.0.0
@@ -5352,13 +5352,13 @@ snapshots:
       bin-links: 5.0.0
       cacache: 20.0.1
       common-ancestor-path: 1.0.1
-      hosted-git-info: 9.0.0
+      hosted-git-info: 9.0.2
       json-stringify-nice: 1.1.4
       lru-cache: 11.2.2
       minimatch: 10.0.3
       nopt: 8.1.0
       npm-install-checks: 7.1.2
-      npm-package-arg: 13.0.0
+      npm-package-arg: 13.0.1
       npm-pick-manifest: 11.0.1
       npm-registry-fetch: 19.0.0
       pacote: 21.0.3
@@ -5367,7 +5367,7 @@ snapshots:
       proggy: 3.0.0
       promise-all-reject-late: 1.0.1
       promise-call-limit: 3.0.2
-      semver: 7.7.2
+      semver: 7.7.3
       ssri: 12.0.0
       treeverse: 3.0.0
       walk-up-path: 4.0.0
@@ -5376,11 +5376,11 @@ snapshots:
 
   '@npmcli/fs@3.1.1':
     dependencies:
-      semver: 7.7.2
+      semver: 7.7.3
 
   '@npmcli/fs@4.0.0':
     dependencies:
-      semver: 7.7.2
+      semver: 7.7.3
 
   '@npmcli/git@5.0.8':
     dependencies:
@@ -5391,7 +5391,7 @@ snapshots:
       proc-log: 4.2.0
       promise-inflight: 1.0.1
       promise-retry: 2.0.1
-      semver: 7.7.2
+      semver: 7.7.3
       which: 4.0.0
     transitivePeerDependencies:
       - bluebird
@@ -5404,7 +5404,7 @@ snapshots:
       npm-pick-manifest: 11.0.1
       proc-log: 5.0.0
       promise-retry: 2.0.1
-      semver: 7.7.2
+      semver: 7.7.3
       which: 5.0.0
 
   '@npmcli/installed-package-contents@2.1.0':
@@ -5437,7 +5437,7 @@ snapshots:
       json-parse-even-better-errors: 3.0.2
       pacote: 18.0.6
       proc-log: 4.2.0
-      semver: 7.7.2
+      semver: 7.7.3
     transitivePeerDependencies:
       - bluebird
       - supports-color
@@ -5448,7 +5448,7 @@ snapshots:
       json-parse-even-better-errors: 4.0.0
       pacote: 21.0.3
       proc-log: 5.0.0
-      semver: 7.7.2
+      semver: 7.7.3
     transitivePeerDependencies:
       - supports-color
 
@@ -5468,7 +5468,7 @@ snapshots:
       json-parse-even-better-errors: 3.0.2
       normalize-package-data: 6.0.2
       proc-log: 4.2.0
-      semver: 7.7.2
+      semver: 7.7.3
     transitivePeerDependencies:
       - bluebird
 
@@ -5476,10 +5476,10 @@ snapshots:
     dependencies:
       '@npmcli/git': 7.0.0
       glob: 11.0.3
-      hosted-git-info: 9.0.0
+      hosted-git-info: 9.0.2
       json-parse-even-better-errors: 4.0.0
       proc-log: 5.0.0
-      semver: 7.7.2
+      semver: 7.7.3
       validate-npm-package-license: 3.0.4
 
   '@npmcli/promise-spawn@7.0.2':
@@ -6293,7 +6293,7 @@ snapshots:
       js-string-escape: 1.0.1
       lodash: 4.17.21
       md5-hex: 3.0.1
-      semver: 7.7.2
+      semver: 7.7.3
       well-known-symbols: 2.0.0
 
   config-chain@1.1.13:
@@ -6316,7 +6316,7 @@ snapshots:
       conventional-commits-filter: 5.0.0
       handlebars: 4.7.8
       meow: 13.2.0
-      semver: 7.7.2
+      semver: 7.7.3
 
   conventional-changelog@7.1.1(conventional-commits-filter@5.0.0):
     dependencies:
@@ -6488,7 +6488,7 @@ snapshots:
       cspell-lib: 9.2.1
       fast-json-stable-stringify: 2.1.0
       flatted: 3.3.3
-      semver: 7.7.2
+      semver: 7.7.3
       tinyglobby: 0.2.15
 
   cssesc@3.0.0: {}
@@ -7033,7 +7033,7 @@ snapshots:
     dependencies:
       lru-cache: 10.4.3
 
-  hosted-git-info@9.0.0:
+  hosted-git-info@9.0.2:
     dependencies:
       lru-cache: 11.2.2
 
@@ -7322,21 +7322,21 @@ snapshots:
       prelude-ls: 1.2.1
       type-check: 0.4.0
 
-  libnpmaccess@10.0.2:
+  libnpmaccess@10.0.3:
     dependencies:
-      npm-package-arg: 13.0.0
+      npm-package-arg: 13.0.1
       npm-registry-fetch: 19.0.0
     transitivePeerDependencies:
       - supports-color
 
-  libnpmpublish@11.1.1:
+  libnpmpublish@11.1.2:
     dependencies:
       '@npmcli/package-json': 7.0.1
       ci-info: 4.3.1
-      npm-package-arg: 13.0.0
+      npm-package-arg: 13.0.1
       npm-registry-fetch: 19.0.0
       proc-log: 5.0.0
-      semver: 7.7.2
+      semver: 7.7.3
       sigstore: 4.0.0
       ssri: 12.0.0
     transitivePeerDependencies:
@@ -8032,7 +8032,7 @@ snapshots:
       make-fetch-happen: 13.0.1
       nopt: 7.2.1
       proc-log: 4.2.0
-      semver: 7.7.2
+      semver: 7.7.3
       tar: 6.2.1
       which: 4.0.0
     transitivePeerDependencies:
@@ -8046,7 +8046,7 @@ snapshots:
       make-fetch-happen: 14.0.3
       nopt: 8.1.0
       proc-log: 5.0.0
-      semver: 7.7.2
+      semver: 7.7.3
       tar: 7.5.1
       tinyglobby: 0.2.15
       which: 5.0.0
@@ -8066,13 +8066,13 @@ snapshots:
   normalize-package-data@6.0.2:
     dependencies:
       hosted-git-info: 7.0.2
-      semver: 7.7.2
+      semver: 7.7.3
       validate-npm-package-license: 3.0.4
 
   normalize-package-data@7.0.1:
     dependencies:
       hosted-git-info: 8.1.0
-      semver: 7.7.2
+      semver: 7.7.3
       validate-npm-package-license: 3.0.4
 
   normalize-path@3.0.0: {}
@@ -8087,11 +8087,11 @@ snapshots:
 
   npm-install-checks@6.3.0:
     dependencies:
-      semver: 7.7.2
+      semver: 7.7.3
 
   npm-install-checks@7.1.2:
     dependencies:
-      semver: 7.7.2
+      semver: 7.7.3
 
   npm-normalize-package-bin@3.0.1: {}
 
@@ -8101,14 +8101,14 @@ snapshots:
     dependencies:
       hosted-git-info: 7.0.2
       proc-log: 4.2.0
-      semver: 7.7.2
+      semver: 7.7.3
       validate-npm-package-name: 5.0.1
 
-  npm-package-arg@13.0.0:
+  npm-package-arg@13.0.1:
     dependencies:
-      hosted-git-info: 9.0.0
+      hosted-git-info: 9.0.2
       proc-log: 5.0.0
-      semver: 7.7.2
+      semver: 7.7.3
       validate-npm-package-name: 6.0.2
 
   npm-packlist@10.0.2:
@@ -8124,15 +8124,15 @@ snapshots:
     dependencies:
       npm-install-checks: 7.1.2
       npm-normalize-package-bin: 4.0.0
-      npm-package-arg: 13.0.0
-      semver: 7.7.2
+      npm-package-arg: 13.0.1
+      semver: 7.7.3
 
   npm-pick-manifest@9.1.0:
     dependencies:
       npm-install-checks: 6.3.0
       npm-normalize-package-bin: 3.0.1
       npm-package-arg: 11.0.3
-      semver: 7.7.2
+      semver: 7.7.3
 
   npm-registry-fetch@17.1.0:
     dependencies:
@@ -8155,7 +8155,7 @@ snapshots:
       minipass: 7.1.2
       minipass-fetch: 4.0.1
       minizlib: 3.1.0
-      npm-package-arg: 13.0.0
+      npm-package-arg: 13.0.1
       proc-log: 5.0.0
     transitivePeerDependencies:
       - supports-color
@@ -8308,7 +8308,7 @@ snapshots:
       ky: 1.11.0
       registry-auth-token: 5.1.0
       registry-url: 6.0.1
-      semver: 7.7.2
+      semver: 7.7.3
 
   pacote@18.0.6:
     dependencies:
@@ -8343,7 +8343,7 @@ snapshots:
       cacache: 20.0.1
       fs-minipass: 3.0.3
       minipass: 7.1.2
-      npm-package-arg: 13.0.0
+      npm-package-arg: 13.0.1
       npm-packlist: 10.0.2
       npm-pick-manifest: 11.0.1
       npm-registry-fetch: 19.0.0
@@ -8657,7 +8657,7 @@ snapshots:
 
   semver@5.7.2: {}
 
-  semver@7.7.2: {}
+  semver@7.7.3: {}
 
   serialize-error@7.0.1:
     dependencies:
@@ -9275,7 +9275,7 @@ snapshots:
       lodash-es: 4.17.21
       mem-fs: 4.1.0
       mem-fs-editor: 11.1.4(mem-fs@4.1.0)
-      semver: 7.7.2
+      semver: 7.7.3
       slash: 5.1.0
       untildify: 5.0.0
       which-package-manager: 0.0.1
@@ -9301,7 +9301,7 @@ snapshots:
       mem-fs-editor: 11.1.4(mem-fs@4.1.0)
       minimist: 1.2.8
       read-package-up: 11.0.0
-      semver: 7.7.2
+      semver: 7.7.3
       simple-git: 3.28.0
       sort-keys: 5.1.0
       text-table: 0.2.0
