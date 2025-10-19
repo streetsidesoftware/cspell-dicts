@@ -1,5 +1,12 @@
 # Change Log
 
+## [1.0.43](https://github.com/streetsidesoftware/cspell-dicts/compare/@cspell/dict-en-shared@1.0.42...@cspell/dict-en-shared@1.0.43) (2025-10-19)
+
+
+### Updates and Bug Fixes
+
+* Add homoglyph ([#4861](https://github.com/streetsidesoftware/cspell-dicts/issues/4861)) ([94fef8c](https://github.com/streetsidesoftware/cspell-dicts/commit/94fef8cc58de32a6fd650e7e71c2e713fd9f4a6f))
+
 ## [1.0.42](https://github.com/streetsidesoftware/cspell-dicts/compare/@cspell/dict-en-shared@1.0.41...@cspell/dict-en-shared@1.0.42) (2025-09-06)
 
 
