@@ -77,5 +77,16 @@ There is also a simple Java implementation of [Bengali Spell Checker](https://gi
 </tr>
 </table>
 
+### Citation
+```bibtex
+@misc{Minhas2016BengaliDictionary,
+  author    = {Kamal, Minhas},
+  title     = {Bengali Dictionary: A Large Collection of Bengali Words & Translations},
+  year      = {2016},
+  publisher = {GitHub},
+  url       = {https://github.com/MinhasKamal/BengaliDictionary}
+}
+```
+
 ### License
 <a rel="license" href="http://www.gnu.org/licenses/gpl.html"><img alt="GNU General Public License" style="border-width:0" src="http://www.gnu.org/graphics/gplv3-88x31.png" /></a><br/>BengaliDictionary is licensed under a <a rel="license" href="http://www.gnu.org/licenses/gpl.html">GNU General Public License version-3</a>.
