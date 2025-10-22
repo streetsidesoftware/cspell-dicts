@@ -1,5 +1,27 @@
 # Release Notes
 
+## [31.6.0](https://github.com/streetsidesoftware/cspell-dicts/compare/cspell-dicts@31.5.14...cspell-dicts@31.6.0) (2025-10-22)
+
+
+### Features
+
+* Add support for blade template engine to cspell ([#4875](https://github.com/streetsidesoftware/cspell-dicts/issues/4875)) ([48369e7](https://github.com/streetsidesoftware/cspell-dicts/commit/48369e753199358c50bf7e90df651e984e073959))
+
+
+### Updates and Bug Fixes
+
+* adding word "setpoint" ([#4874](https://github.com/streetsidesoftware/cspell-dicts/issues/4874)) ([01f0d12](https://github.com/streetsidesoftware/cspell-dicts/commit/01f0d1265e15a35752b442b74964cfb0032e3ce5))
+* Remove "strate" from the US dict. ([#4872](https://github.com/streetsidesoftware/cspell-dicts/issues/4872)) ([5550336](https://github.com/streetsidesoftware/cspell-dicts/commit/55503363f07dd823eb003ba3b1f54bfcee5a8f22))
+* Workflow Bot -- Build Dictionaries ([#4878](https://github.com/streetsidesoftware/cspell-dicts/issues/4878)) ([9395555](https://github.com/streetsidesoftware/cspell-dicts/commit/9395555b191a632e8ec65a45e775790978f8dbb5))
+* Workflow Bot -- Update Dictionaries ([#4870](https://github.com/streetsidesoftware/cspell-dicts/issues/4870)) ([7baa6fe](https://github.com/streetsidesoftware/cspell-dicts/commit/7baa6fe639b824288001fd4e85b618df20c7a229))
+
+
+### Dependencies
+
+* The following workspace dependencies were updated
+  * devDependencies
+    * @cspell/dict-cspell-bundle bumped to 2.0.31
+
 ## [31.5.14](https://github.com/streetsidesoftware/cspell-dicts/compare/cspell-dicts@31.5.13...cspell-dicts@31.5.14) (2025-10-19)
 
 
