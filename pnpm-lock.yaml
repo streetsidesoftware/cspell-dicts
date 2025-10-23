@@ -743,7 +743,7 @@ importers:
         version: 9.2.1
       cspell-dictionary:
         specifier: ^9.2.1
-        version: 9.2.1
+        version: 9.2.2
       cspell-io:
         specifier: ^9.2.1
         version: 9.2.1
@@ -2181,6 +2181,10 @@ packages:
 
   cspell-dictionary@9.2.1:
     resolution: {integrity: sha512-0hQVFySPsoJ0fONmDPwCWGSG6SGj4ERolWdx4t42fzg5zMs+VYGXpQW4BJneQ5Tfxy98Wx8kPhmh/9E8uYzLTw==}
+    engines: {node: '>=20'}
+
+  cspell-dictionary@9.2.2:
+    resolution: {integrity: sha512-lnoCFoCAaiFJi+Hz22t+tdTj76jyTA76EYFKhmf/dbj5UO6kVy8by08uFfUbbMaC9Oi09YHnI62P/e+LBx1v8Q==}
     engines: {node: '>=20'}
 
   cspell-gitignore@9.2.1:
@@ -5867,7 +5871,7 @@ snapshots:
   '@types/vinyl@2.0.12':
     dependencies:
       '@types/expect': 1.20.4
-      '@types/node': 20.19.23
+      '@types/node': 24.8.1
 
   '@vercel/nft@0.29.4(encoding@0.1.13)':
     dependencies:
@@ -6431,6 +6435,13 @@ snapshots:
       '@cspell/cspell-pipe': 9.2.1
       '@cspell/cspell-types': 9.2.1
       cspell-trie-lib: 9.2.1
+      fast-equals: 5.3.2
+
+  cspell-dictionary@9.2.2:
+    dependencies:
+      '@cspell/cspell-pipe': 9.2.2
+      '@cspell/cspell-types': 9.2.2
+      cspell-trie-lib: 9.2.2
       fast-equals: 5.3.2
 
   cspell-gitignore@9.2.1:
