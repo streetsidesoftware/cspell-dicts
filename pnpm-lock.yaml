@@ -348,7 +348,7 @@ importers:
     dependencies:
       cspell-io:
         specifier: ^9.2.1
-        version: 9.2.1
+        version: 9.2.2
       cspell-trie-lib:
         specifier: ^9.2.1
         version: 9.2.1
@@ -746,7 +746,7 @@ importers:
         version: 9.2.1
       cspell-io:
         specifier: ^9.2.1
-        version: 9.2.1
+        version: 9.2.2
       cspell-lib:
         specifier: ^9.2.1
         version: 9.2.1
@@ -829,6 +829,10 @@ packages:
 
   '@cspell/cspell-service-bus@9.2.1':
     resolution: {integrity: sha512-k4M6bqdvWbcGSbcfLD7Lf4coZVObsISDW+sm/VaWp9aZ7/uwiz1IuGUxL9WO4JIdr9CFEf7Ivmvd2txZpVOCIA==}
+    engines: {node: '>=20'}
+
+  '@cspell/cspell-service-bus@9.2.2':
+    resolution: {integrity: sha512-AxJuw/YPJkz1Ali5mA+OW9y4JiJzb2U7H4pGYq0nRB/mWwI/xtFjuWVkI+BhwrA2P6hHdifu0JdxSLqW4IYpPQ==}
     engines: {node: '>=20'}
 
   '@cspell/cspell-tools@9.2.2':
@@ -1041,6 +1045,10 @@ packages:
 
   '@cspell/url@9.2.1':
     resolution: {integrity: sha512-9EHCoGKtisPNsEdBQ28tKxKeBmiVS3D4j+AN8Yjr+Dmtu+YACKGWiMOddNZG2VejQNIdFx7FwzU00BGX68ELhA==}
+    engines: {node: '>=20'}
+
+  '@cspell/url@9.2.2':
+    resolution: {integrity: sha512-gvLprhrArvLP/rnC8b766dA80EXwBbzXqb9tNDRk1esQV7d3uS1Ftk1970MRlAfLg1pG6V+3C4UrB6WOB/rMCQ==}
     engines: {node: '>=20'}
 
   '@epic-web/invariant@1.0.0':
@@ -2199,6 +2207,10 @@ packages:
 
   cspell-io@9.2.1:
     resolution: {integrity: sha512-v9uWXtRzB+RF/Mzg5qMzpb8/yt+1bwtTt2rZftkLDLrx5ybVvy6rhRQK05gFWHmWVtWEe0P/pIxaG2Vz92C8Ag==}
+    engines: {node: '>=20'}
+
+  cspell-io@9.2.2:
+    resolution: {integrity: sha512-Rpky4woeB6/1VUCk7DtRm94A6c5XRbhcj5dUZh851EpZ0ItEz3S9+MhkX8g1sTVkDg6Hln1pu+Nbm9dFIpGkGA==}
     engines: {node: '>=20'}
 
   cspell-lib@9.2.1:
@@ -4763,6 +4775,8 @@ snapshots:
 
   '@cspell/cspell-service-bus@9.2.1': {}
 
+  '@cspell/cspell-service-bus@9.2.2': {}
+
   '@cspell/cspell-tools@9.2.2(typescript@5.9.3)':
     dependencies:
       '@cspell/cspell-pipe': 9.2.2
@@ -4918,6 +4932,8 @@ snapshots:
   '@cspell/strong-weak-map@9.2.1': {}
 
   '@cspell/url@9.2.1': {}
+
+  '@cspell/url@9.2.2': {}
 
   '@epic-web/invariant@1.0.0': {}
 
@@ -5867,7 +5883,7 @@ snapshots:
   '@types/vinyl@2.0.12':
     dependencies:
       '@types/expect': 1.20.4
-      '@types/node': 20.19.23
+      '@types/node': 24.8.1
 
   '@vercel/nft@0.29.4(encoding@0.1.13)':
     dependencies:
@@ -6453,6 +6469,11 @@ snapshots:
     dependencies:
       '@cspell/cspell-service-bus': 9.2.1
       '@cspell/url': 9.2.1
+
+  cspell-io@9.2.2:
+    dependencies:
+      '@cspell/cspell-service-bus': 9.2.2
+      '@cspell/url': 9.2.2
 
   cspell-lib@9.2.1:
     dependencies:
