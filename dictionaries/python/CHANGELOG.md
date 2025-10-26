@@ -3,6 +3,25 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+## [4.2.20](https://github.com/streetsidesoftware/cspell-dicts/compare/@cspell/dict-python@4.2.19...@cspell/dict-python@4.2.20) (2025-10-19)
+
+
+### Updates and Bug Fixes
+
+* add `hstack` to `python` ([#4823](https://github.com/streetsidesoftware/cspell-dicts/issues/4823)) ([c3250c6](https://github.com/streetsidesoftware/cspell-dicts/commit/c3250c6fecabbe8e73eb2045865a233f38222b23))
+* add `meshgrid` to `python` and `data-science` ([#4822](https://github.com/streetsidesoftware/cspell-dicts/issues/4822)) ([f6bfbc2](https://github.com/streetsidesoftware/cspell-dicts/commit/f6bfbc21a778be2b4d0d4ab9340317b72d4e1da5))
+* add `pyrefly` to `python` ([#4820](https://github.com/streetsidesoftware/cspell-dicts/issues/4820)) ([242f370](https://github.com/streetsidesoftware/cspell-dicts/commit/242f3700da89fc2f586693c4cf3e7bf33902f18d))
+* add `reduceat` to `python` ([#4824](https://github.com/streetsidesoftware/cspell-dicts/issues/4824)) ([7cf6246](https://github.com/streetsidesoftware/cspell-dicts/commit/7cf6246a2d8998f252d3ab059ec43d8021d0d263))
+* add words related to software tools and python ([#4834](https://github.com/streetsidesoftware/cspell-dicts/issues/4834)) ([7e903d3](https://github.com/streetsidesoftware/cspell-dicts/commit/7e903d32e6c631b127e72ef78bb8887503767a70))
+* Workflow Bot -- Build Dictionaries ([#4840](https://github.com/streetsidesoftware/cspell-dicts/issues/4840)) ([3def534](https://github.com/streetsidesoftware/cspell-dicts/commit/3def534b2bdf1aac21d61276cfeb774112808ad0))
+
+
+### Dependencies
+
+* The following workspace dependencies were updated
+  * dependencies
+    * @cspell/dict-data-science bumped to 2.0.10
+
 ## [4.2.19](https://github.com/streetsidesoftware/cspell-dicts/compare/@cspell/dict-python@4.2.18...@cspell/dict-python@4.2.19) (2025-07-09)
 
 

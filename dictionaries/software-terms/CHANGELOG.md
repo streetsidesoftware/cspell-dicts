@@ -3,6 +3,19 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+## [5.1.9](https://github.com/streetsidesoftware/cspell-dicts/compare/@cspell/dict-software-terms@5.1.8...@cspell/dict-software-terms@5.1.9) (2025-10-19)
+
+
+### Updates and Bug Fixes
+
+* add `Nushell` to `software-tools` ([#4826](https://github.com/streetsidesoftware/cspell-dicts/issues/4826)) ([b25b06e](https://github.com/streetsidesoftware/cspell-dicts/commit/b25b06ed0bc955f104d9b4efef2070c9ed5511ee))
+* add `pixi` to `software-tools` ([#4821](https://github.com/streetsidesoftware/cspell-dicts/issues/4821)) ([c885ae5](https://github.com/streetsidesoftware/cspell-dicts/commit/c885ae572437d6f50737f4417662be3ceda521ab))
+* add `SquashFS` to `softwareTerms` ([#4835](https://github.com/streetsidesoftware/cspell-dicts/issues/4835)) ([e3c0a47](https://github.com/streetsidesoftware/cspell-dicts/commit/e3c0a47eea6bbb8125fc1fbbcc96a1eac858c435))
+* add `Valgrind` to `software-tools` ([#4825](https://github.com/streetsidesoftware/cspell-dicts/issues/4825)) ([a57d8d0](https://github.com/streetsidesoftware/cspell-dicts/commit/a57d8d09dd45d2ab6bb059d24605ececc3682ae1))
+* Add scrollbars to software-terms ([#4842](https://github.com/streetsidesoftware/cspell-dicts/issues/4842)) ([1e7a4dc](https://github.com/streetsidesoftware/cspell-dicts/commit/1e7a4dcaeb2936f3ff17956ee7653cdb1c67ebd4))
+* add words related to software tools and python ([#4834](https://github.com/streetsidesoftware/cspell-dicts/issues/4834)) ([7e903d3](https://github.com/streetsidesoftware/cspell-dicts/commit/7e903d32e6c631b127e72ef78bb8887503767a70))
+* Workflow Bot -- Build Dictionaries ([#4840](https://github.com/streetsidesoftware/cspell-dicts/issues/4840)) ([3def534](https://github.com/streetsidesoftware/cspell-dicts/commit/3def534b2bdf1aac21d61276cfeb774112808ad0))
+
 ## [5.1.8](https://github.com/streetsidesoftware/cspell-dicts/compare/@cspell/dict-software-terms@5.1.7...@cspell/dict-software-terms@5.1.8) (2025-09-08)
 
 
