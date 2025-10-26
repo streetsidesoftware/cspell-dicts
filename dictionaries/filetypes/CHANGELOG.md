@@ -3,6 +3,13 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+## [3.0.14](https://github.com/streetsidesoftware/cspell-dicts/compare/@cspell/dict-filetypes@3.0.13...@cspell/dict-filetypes@3.0.14) (2025-10-19)
+
+
+### Updates and Bug Fixes
+
+* add `icns` to `filetypes` ([#4831](https://github.com/streetsidesoftware/cspell-dicts/issues/4831)) ([182bcca](https://github.com/streetsidesoftware/cspell-dicts/commit/182bcca858d3be0c9bed042591aba74f90758b03))
+
 ## [3.0.13](https://github.com/streetsidesoftware/cspell-dicts/compare/@cspell/dict-filetypes@3.0.12...@cspell/dict-filetypes@3.0.13) (2025-07-09)
 
 

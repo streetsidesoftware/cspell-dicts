@@ -22,6 +22,13 @@ See [Conventional Commits](https://conventionalcommits.org) for commit guideline
 
 
 
+## [4.1.0](https://github.com/streetsidesoftware/cspell-dicts/compare/@cspell/dict-php@4.0.15...@cspell/dict-php@4.1.0) (2025-10-22)
+
+
+### Features
+
+* Add support for blade template engine to cspell ([#4875](https://github.com/streetsidesoftware/cspell-dicts/issues/4875)) ([48369e7](https://github.com/streetsidesoftware/cspell-dicts/commit/48369e753199358c50bf7e90df651e984e073959))
+
 ## [4.0.15](https://github.com/streetsidesoftware/cspell-dicts/compare/@cspell/dict-php@4.0.14...@cspell/dict-php@4.0.15) (2025-07-09)
 
 

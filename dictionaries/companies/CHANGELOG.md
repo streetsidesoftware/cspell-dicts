@@ -3,6 +3,13 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+## [3.2.6](https://github.com/streetsidesoftware/cspell-dicts/compare/@cspell/dict-companies@3.2.5...@cspell/dict-companies@3.2.6) (2025-10-19)
+
+
+### Updates and Bug Fixes
+
+* add Asana, Pinterest ([#4859](https://github.com/streetsidesoftware/cspell-dicts/issues/4859)) ([1ff80d3](https://github.com/streetsidesoftware/cspell-dicts/commit/1ff80d373ef37cad657c4b23e51fff05aea4a43b))
+
 ## [3.2.5](https://github.com/streetsidesoftware/cspell-dicts/compare/@cspell/dict-companies@3.2.4...@cspell/dict-companies@3.2.5) (2025-08-19)
 
 
