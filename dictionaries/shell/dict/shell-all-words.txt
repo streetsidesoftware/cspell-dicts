@@ -1,6 +1,9 @@
 
 # cspell-tools: keep-case no-split
 
+--allow-badname
+--force-badname
+--gecos
 --no-globalrcs
 --noprofile
 --norc
@@ -86,6 +89,7 @@ TTYIDLE
 TZ
 UID
 WATCHFMT
+addgroup
 alias
 allexport
 alnum
@@ -142,13 +146,16 @@ export
 fallocate
 false
 fc
+fdfind
 fg
 fi
 for
+fromjson
 fstype
 funcfiletrace
 function
 functrace
+getent
 getopts
 globstar
 hash
@@ -166,6 +173,7 @@ keymaps
 keyrings
 keyword
 kill
+ldconfig
 let
 local
 logout
@@ -198,6 +206,7 @@ preexec
 printf
 privileged
 promptinit
+protoc
 proxyd
 punct
 pushd
@@ -225,6 +234,7 @@ test
 then
 time
 times
+tojson
 tput
 trap
 true
@@ -237,6 +247,7 @@ unalias
 unset
 unsetopt
 until
+usermod
 verbose
 vi
 vim
@@ -244,6 +255,7 @@ wait
 while
 xdigit
 xtrace
+xzvf
 zdotdir
 zshaddhistory
 zshconfig

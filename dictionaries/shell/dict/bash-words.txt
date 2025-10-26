@@ -1,6 +1,9 @@
 
 # cspell-tools: keep-case no-split
 
+--allow-badname
+--force-badname
+--gecos
 --noprofile
 --norc
 --rcfile
@@ -78,6 +81,7 @@ TIMEFORMAT
 TMOUT
 TZ
 UID
+addgroup
 alias
 allexport
 alnum
@@ -124,12 +128,15 @@ export
 fallocate
 false
 fc
+fdfind
 fg
 fi
 for
+fromjson
 fstype
 function
 functrace
+getent
 getopts
 globstar
 hash
@@ -147,6 +154,7 @@ keymaps
 keyrings
 keyword
 kill
+ldconfig
 let
 local
 logout
@@ -173,6 +181,7 @@ popd
 posix
 printf
 privileged
+protoc
 proxyd
 punct
 pushd
@@ -197,6 +206,7 @@ test
 then
 time
 times
+tojson
 tput
 trap
 true
@@ -208,6 +218,7 @@ umask
 unalias
 unset
 until
+usermod
 verbose
 vi
 vim
@@ -215,3 +226,4 @@ wait
 while
 xdigit
 xtrace
+xzvf
