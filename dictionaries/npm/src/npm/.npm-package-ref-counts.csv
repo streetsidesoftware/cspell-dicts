@@ -181,6 +181,7 @@ package,count
 @applitools/test-utils,1
 @arethetypeswrong/cli,26
 @arethetypeswrong/core,3
+@ark/attest,1
 @arktype/attest,1
 @artdeco/clean-stack,1
 @artdeco/erte,1
@@ -468,8 +469,8 @@ package,count
 @changesets/apply-release-plan,1
 @changesets/assemble-release-plan,1
 @changesets/changelog-git,1
-@changesets/changelog-github,6
-@changesets/cli,22
+@changesets/changelog-github,5
+@changesets/cli,21
 @changesets/config,1
 @changesets/errors,1
 @changesets/get-dependents-graph,1
@@ -1053,6 +1054,7 @@ package,count
 @intlayer/chokidar,1
 @intlayer/config,1
 @intlayer/core,1
+@intlayer/types,1
 @intlify/core-base,1
 @intlify/devtools-types,1
 @intlify/shared,1
@@ -1467,9 +1469,10 @@ package,count
 @open-wc/testing,2
 @openrouter/ai-sdk-provider,1
 @openrouter/ai-sdk-provider-v5,1
-@opentelemetry/api,6
+@opentelemetry/api,7
 @opentelemetry/api-logs,2
 @opentelemetry/auto-instrumentations-node,1
+@opentelemetry/context-async-hooks,1
 @opentelemetry/core,3
 @opentelemetry/exporter-logs-otlp-http,1
 @opentelemetry/exporter-metrics-otlp-http,1
@@ -1482,7 +1485,7 @@ package,count
 @opentelemetry/sdk-logs,2
 @opentelemetry/sdk-metrics,3
 @opentelemetry/sdk-node,1
-@opentelemetry/sdk-trace-base,3
+@opentelemetry/sdk-trace-base,4
 @opentelemetry/sdk-trace-node,2
 @opentelemetry/semantic-conventions,2
 @opentiny/utils,1
@@ -1800,6 +1803,7 @@ package,count
 @prisma/config,1
 @prisma/debug,1
 @prisma/dmmf,1
+@prisma/driver-adapter-utils,1
 @prisma/engines,1
 @prisma/fetch-engine,1
 @prisma/generator,1
@@ -1925,7 +1929,7 @@ package,count
 @rollup/plugin-node-resolve,97
 @rollup/plugin-replace,35
 @rollup/plugin-sucrase,1
-@rollup/plugin-terser,38
+@rollup/plugin-terser,39
 @rollup/plugin-typescript,29
 @rollup/plugin-url,1
 @rollup/plugin-virtual,4
@@ -2203,7 +2207,7 @@ package,count
 @tanstack/react-query,1
 @tanstack/react-virtual,2
 @tanstack/vue-table,1
-@tanstack/vue-virtual,1
+@tanstack/vue-virtual,2
 @tapjs/after,1
 @tapjs/after-each,1
 @tapjs/asserts,1
@@ -2458,7 +2462,7 @@ package,count
 @types/d3-shape,2
 @types/d3-time-format,1
 @types/dasherize,1
-@types/debug,48
+@types/debug,47
 @types/decompress,1
 @types/dedent,1
 @types/deep-eql,1
@@ -2705,7 +2709,7 @@ package,count
 @types/negotiator,1
 @types/nightwatch,1
 @types/nock,3
-@types/node,538
+@types/node,539
 @types/node-fetch,10
 @types/node-forge,4
 @types/nodemailer,2
@@ -2954,7 +2958,7 @@ package,count
 @typeschema/zod,1
 @typescript-eslint/eslint-plugin,208
 @typescript-eslint/eslint-plugin-tslint,2
-@typescript-eslint/parser,222
+@typescript-eslint/parser,221
 @typescript-eslint/rule-schema-to-typescript-types,1
 @typescript-eslint/rule-tester,4
 @typescript-eslint/scope-manager,6
@@ -3060,10 +3064,9 @@ package,count
 @uploadcare/upload-client,1
 @use-gesture/react,1
 @use-gesture/vanilla,1
-@utils/eslint-config,1
 @utils/ts-config,1
 @utils/ts-config-types,1
-@utils/tsup-config,1
+@utils/tsdown-config,1
 @utoo/pack,1
 @vant/area-data,1
 @vant/cli,1
@@ -3296,7 +3299,7 @@ agent-base,2
 agentkeepalive,1
 aggregate-error,1
 ahooks,2
-ai,1
+ai,2
 ai-v5,1
 aid-guard1,11
 airbnb-js-shims,2
@@ -3515,7 +3518,7 @@ automd,2
 autoprefixer,43
 autoprefixer-loader,1
 autoprefixer-stylus,1
-ava,149
+ava,148
 available-typed-arrays,1
 avsc,1
 avvio,1
@@ -3580,7 +3583,6 @@ babel-plugin-htmlbars-inline-precompile,1
 babel-plugin-import,2
 babel-plugin-import-export-rename,1
 babel-plugin-inline-import-data-uri,2
-babel-plugin-inline-package-json,1
 babel-plugin-inline-react-svg,1
 babel-plugin-inline-svg,1
 babel-plugin-istanbul,25
@@ -3988,7 +3990,7 @@ browser-sync-client,1
 browser-sync-ui,1
 browser-unpack,3
 browserfs,1
-browserify,88
+browserify,87
 browserify-cipher,1
 browserify-derequire,1
 browserify-fs,1
@@ -4059,7 +4061,7 @@ byte-size,2
 bytes,14
 bytes-iec,1
 c12,2
-c8,125
+c8,126
 cac,10
 cacache,5
 cache-chunk-store,1
@@ -4117,7 +4119,7 @@ cc,1
 ccount,1
 cent-matter-to,41
 cfb,1
-chai,250
+chai,249
 chai-as-promised,34
 chai-connect-middleware,1
 chai-datetime,1
@@ -4191,6 +4193,7 @@ chrome-remote-interface,1
 chrome-trace-event,1
 chromedriver,1
 chromium-bidi,1
+chunk-data,1
 chunk-store-iterator,1
 chunkd,1
 ci-info,17
@@ -4363,7 +4366,7 @@ concat-with-sourcemaps,3
 concatenate,1
 concordance,1
 concurrent-transform,1
-concurrently,25
+concurrently,24
 conditional-type-checks,2
 conf,3
 confbox,1
@@ -4396,9 +4399,9 @@ content-disposition,8
 content-tag,1
 content-type,9
 contributor,1
-conventional-changelog,8
+conventional-changelog,9
 conventional-changelog-angular,3
-conventional-changelog-cli,24
+conventional-changelog-cli,23
 conventional-changelog-config-spec,1
 conventional-changelog-conventionalcommits,7
 conventional-changelog-core,1
@@ -4637,7 +4640,7 @@ de-indent,1
 deabsdeep,1
 death,1
 debounce,2
-debug,137
+debug,136
 debug-fabulous,1
 decache,6
 decamelize,4
@@ -4821,7 +4824,7 @@ domutils,3
 dont-crack,1
 dot,4
 dot-prop,5
-dotenv,36
+dotenv,35
 dotenv-cli,2
 dotenv-expand,9
 dotenv-flow,1
@@ -4934,7 +4937,7 @@ editor,1
 editorconfig,5
 editorconfig-checker,1
 ee-first,1
-effect,2
+effect,1
 egg-bin,1
 egjs-jsdoc-template,1
 eigen,1
@@ -5110,7 +5113,7 @@ esdoc-ecmascript-proposal-plugin,1
 esdoc-importpath-plugin,1
 esdoc-inject-style-plugin,1
 esdoc-standard-plugin,1
-eslint,861
+eslint,860
 eslint-ava-rule-tester,2
 eslint-compat-utils,1
 eslint-config-airbnb,33
@@ -5466,7 +5469,7 @@ fast-copy,1
 fast-deep-equal,9
 fast-equals,1
 fast-fifo,1
-fast-glob,36
+fast-glob,35
 fast-json-body,1
 fast-json-patch,1
 fast-json-stable-stringify,3
@@ -5648,7 +5651,7 @@ fs-copy-file-sync,1
 fs-ext,1
 fs-extra,133
 fs-fixture,3
-fs-jetpack,6
+fs-jetpack,5
 fs-minipass,2
 fs-mkdirp-stream,1
 fs-readdir-recursive,3
@@ -5714,7 +5717,7 @@ get-port-cli,1
 get-root-node-polyfill,2
 get-stdin,6
 get-stream,17
-get-tsconfig,6
+get-tsconfig,5
 get-value,1
 getopts,2
 gex,1
@@ -5967,7 +5970,7 @@ gulp-data,2
 gulp-debug,1
 gulp-declare,1
 gulp-define-module,1
-gulp-derequire,2
+gulp-derequire,1
 gulp-diff,1
 gulp-emu,1
 gulp-eslint,17
@@ -5986,7 +5989,6 @@ gulp-htmlmin,1
 gulp-if,8
 gulp-imagemin,1
 gulp-inject,1
-gulp-insert,1
 gulp-istanbul,9
 gulp-jasmine,2
 gulp-jasmine-browser,1
@@ -6011,7 +6013,7 @@ gulp-plugin-extras,10
 gulp-plumber,4
 gulp-postcss,6
 gulp-qunit-harness,1
-gulp-rename,27
+gulp-rename,26
 gulp-replace,9
 gulp-reporter,1
 gulp-rev,2
@@ -6042,7 +6044,7 @@ gulp-ttf2eot,1
 gulp-ttf2woff,1
 gulp-ttf2woff2,1
 gulp-typescript,6
-gulp-uglify,14
+gulp-uglify,13
 gulp-uglify-es,1
 gulp-util,23
 gulp-vinyl-zip,1
@@ -6253,7 +6255,7 @@ humanize-duration,3
 humanize-number,1
 humanize-string,1
 hundreds,1
-husky,271
+husky,270
 hyperlinker,1
 hyperquest,1
 hyphenate-style-name,1
@@ -6824,7 +6826,7 @@ keymirror,1
 keypress,1
 keytar,1
 keyux,1
-keyv,2
+keyv,3
 kill-port,1
 kind-of,3
 klaw,2
@@ -7367,7 +7369,7 @@ minstache,1
 missing-sport-living,55
 mississippi,1
 mixin-deep,1
-mkdirp,89
+mkdirp,88
 mkdirp-classic,1
 mkdist,1
 mkfiletree,1
@@ -7379,7 +7381,7 @@ mnemonic-id,1
 mobx,5
 mobx-react,4
 mobx-react-lite,2
-mocha,642
+mocha,641
 mocha-chai-jest-snapshot,2
 mocha-each,1
 mocha-eslint,4
@@ -7657,7 +7659,7 @@ normalize-range,1
 normalize-wheel,1
 normalize.css,4
 notepack.io,1
-np,21
+np,20
 npm,3
 npm-audit-report,1
 npm-check,1
@@ -7705,7 +7707,7 @@ nuqs,1
 nuxt,1
 nwmatcher,1
 nx,12
-nyc,251
+nyc,249
 oas,1
 oas-normalize,1
 oas-schemas,1
@@ -7776,7 +7778,7 @@ optimize-css-assets-webpack-plugin,4
 optionator,2
 optioner,1
 opts,2
-ora,26
+ora,25
 oracledb,3
 ordinal,1
 ordu,1
@@ -8138,7 +8140,7 @@ premove,3
 prepare-package,8
 preprocess,1
 presentable-error,2
-prettier,546
+prettier,544
 prettier-bytes,1
 prettier-check,1
 prettier-config-hudochenkov,1
@@ -8252,7 +8254,7 @@ ps-tree,2
 pseudorandombytes,1
 pstree.remy,1
 public-encrypt,1
-publint,15
+publint,16
 publish,1
 publish-please,4
 pug,12
@@ -8305,7 +8307,7 @@ queue,2
 queue-microtask,2
 quibble,2
 quick-format-unescaped,1
-quick-lru,2
+quick-lru,3
 quick-temp,2
 quiet-grunt,1
 quill-delta,1
@@ -8329,7 +8331,7 @@ random-int,2
 random-item,1
 random-iterate,1
 random-words,119
-randombytes,3
+randombytes,2
 randomcolor,1
 randomfill,1
 range-parser,7
@@ -8799,7 +8801,7 @@ rewrite-imports,1
 rfc-log-levels,1
 rfdc,5
 rhea-promise,1
-rimraf,344
+rimraf,343
 ripemd160,1
 riteway,1
 rlp,1
@@ -9538,7 +9540,7 @@ terminal-link,2
 terminal.js,1
 ternary-stream,2
 terser,37
-terser-webpack-plugin,22
+terser-webpack-plugin,23
 terser-webpack-plugin-legacy,1
 test,2
 test-all-versions,1
@@ -9718,19 +9720,19 @@ ts-pnp,1
 ts-standard,2
 ts-toolbelt,1
 ts2mjs,1
-tsc-alias,4
+tsc-alias,3
 tsconfck,4
 tsconfig,4
 tsconfig-paths,10
 tsconfig-paths-webpack-plugin,4
 tsd,116
-tsdown,7
+tsdown,8
 tsdx,3
 tsgen,1
 tshy,20
 tshy-after,2
 tsify,3
-tslib,131
+tslib,132
 tslint,37
 tslint-config-common,1
 tslint-config-prettier,7
@@ -9748,9 +9750,9 @@ tslint-plugin-prettier,2
 tslint-react,1
 tslog,1
 tsm,1
-tsup,45
+tsup,44
 tsutils,3
-tsx,43
+tsx,42
 tty-browserify,3
 ttypescript,1
 tunnel,2
@@ -9899,6 +9901,7 @@ unplugin-unused,1
 unplugin-vue-components,1
 unquote,1
 unrs-resolver,2
+unrun,1
 unset-value,1
 unstorage,1
 unstructured-client,1
@@ -10015,7 +10018,7 @@ vinyl-bufferstream,1
 vinyl-file,4
 vinyl-fs,16
 vinyl-named,1
-vinyl-source-stream,11
+vinyl-source-stream,10
 vinyl-sourcemap,1
 vinyl-sourcemaps-apply,16
 vinyl-string,1
@@ -10023,26 +10026,27 @@ vinyl-transform,1
 vis-network,1
 vision,1
 visualwidth,1
-vite,48
+vite,49
 vite-bundle-analyzer,2
 vite-node,2
 vite-plugin-banner,2
 vite-plugin-builder,1
 vite-plugin-clean-build,1
+vite-plugin-commonjs,1
 vite-plugin-css-injected-by-js,1
 vite-plugin-dts,9
 vite-plugin-eslint4b,3
 vite-plugin-fastly-js-compute,1
 vite-plugin-istanbul,1
-vite-plugin-node-polyfills,1
+vite-plugin-node-polyfills,2
 vite-plugin-svgr,1
 vite-plugin-tdoc,1
 vite-tsconfig-paths,3
 vitefu,2
 vitepress,8
 vitepress-plugin-group-icons,1
-vitest,134
-vitest-axe,1
+vitest,133
+vitest-axe,2
 vitest-browser-react,1
 vitest-canvas-mock,1
 vitest-environment-miniflare,2
@@ -10268,7 +10272,7 @@ xml-js,1
 xml-name-validator,3
 xml2js,14
 xmlbuilder,6
-xmlhttprequest,2
+xmlhttprequest,1
 xmllint,1
 xmltest,1
 xo,193
@@ -10347,5 +10351,5 @@ zuul,8
 zuul-localtunnel,1
 zuul-ngrok,1
 zwitch,5
-zx,5
+zx,4
 
