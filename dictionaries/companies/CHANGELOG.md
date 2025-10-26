@@ -3,6 +3,14 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+## [3.2.7](https://github.com/streetsidesoftware/cspell-dicts/compare/@cspell/dict-companies@3.2.6...@cspell/dict-companies@3.2.7) (2025-10-26)
+
+
+### Updates and Bug Fixes
+
+* Add Lidar companies ([#4885](https://github.com/streetsidesoftware/cspell-dicts/issues/4885)) ([d72e98b](https://github.com/streetsidesoftware/cspell-dicts/commit/d72e98b84aaa7db4b6f42800bd7bab163149afaa))
+* Workflow Bot -- Build Dictionaries ([#4901](https://github.com/streetsidesoftware/cspell-dicts/issues/4901)) ([545c4d2](https://github.com/streetsidesoftware/cspell-dicts/commit/545c4d265aa85c3f7a0e7761e29b8542b5f5b2c5))
+
 ## [3.2.6](https://github.com/streetsidesoftware/cspell-dicts/compare/@cspell/dict-companies@3.2.5...@cspell/dict-companies@3.2.6) (2025-10-19)
 
 

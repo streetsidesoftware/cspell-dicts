@@ -1,5 +1,13 @@
 # Change Log
 
+## [1.1.15](https://github.com/streetsidesoftware/cspell-dicts/compare/@cspell/dict-people-names@1.1.14...@cspell/dict-people-names@1.1.15) (2025-10-26)
+
+
+### Updates and Bug Fixes
+
+* Add family name Strate ([#4903](https://github.com/streetsidesoftware/cspell-dicts/issues/4903)) ([be0b1f7](https://github.com/streetsidesoftware/cspell-dicts/commit/be0b1f7a042949bc7971f6c064ed5fd3e6129958))
+* Workflow Bot -- Build Dictionaries ([#4905](https://github.com/streetsidesoftware/cspell-dicts/issues/4905)) ([138677d](https://github.com/streetsidesoftware/cspell-dicts/commit/138677d3302f967bba1a238a20c94e28043017ae))
+
 ## [1.1.14](https://github.com/streetsidesoftware/cspell-dicts/compare/@cspell/dict-people-names@1.1.13...@cspell/dict-people-names@1.1.14) (2025-08-12)
 
 
