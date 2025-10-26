@@ -3,6 +3,15 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+## [4.2.2](https://github.com/streetsidesoftware/cspell-dicts/compare/@cspell/dict-bash@4.2.1...@cspell/dict-bash@4.2.2) (2025-10-26)
+
+
+### Dependencies
+
+* The following workspace dependencies were updated
+  * dependencies
+    * @cspell/dict-shell bumped to 1.1.2
+
 ## [4.2.1](https://github.com/streetsidesoftware/cspell-dicts/compare/@cspell/dict-bash@4.2.0...@cspell/dict-bash@4.2.1) (2025-07-09)
 
 
