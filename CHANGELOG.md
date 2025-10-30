@@ -1,5 +1,26 @@
 # Release Notes
 
+## [31.6.2](https://github.com/streetsidesoftware/cspell-dicts/compare/cspell-dicts@31.6.1...cspell-dicts@31.6.2) (2025-10-30)
+
+
+### Updates and Bug Fixes
+
+* Add C++ words ([#4886](https://github.com/streetsidesoftware/cspell-dicts/issues/4886)) ([8c91d34](https://github.com/streetsidesoftware/cspell-dicts/commit/8c91d34f9adf5f104ec14602cb952858d7dcfe54))
+* add coding terms ([#4915](https://github.com/streetsidesoftware/cspell-dicts/issues/4915)) ([1bc19a3](https://github.com/streetsidesoftware/cspell-dicts/commit/1bc19a3fb7bdda10b1ab319caad1c31cf8defc41))
+* add passband ([#4916](https://github.com/streetsidesoftware/cspell-dicts/issues/4916)) ([a63b785](https://github.com/streetsidesoftware/cspell-dicts/commit/a63b78555d4558bf25541e83b8d2c8a1b7f92b44))
+* add signal-processing acronyms ([#4917](https://github.com/streetsidesoftware/cspell-dicts/issues/4917)) ([ae60acd](https://github.com/streetsidesoftware/cspell-dicts/commit/ae60acd243812465eeeafcc986bc6229e1eb1843))
+* Workflow Bot -- Build Dictionaries ([#4910](https://github.com/streetsidesoftware/cspell-dicts/issues/4910)) ([a309e28](https://github.com/streetsidesoftware/cspell-dicts/commit/a309e282de74321ee21e8591b25d8da2267b3e5e))
+* Workflow Bot -- Build Dictionaries ([#4918](https://github.com/streetsidesoftware/cspell-dicts/issues/4918)) ([9cb387f](https://github.com/streetsidesoftware/cspell-dicts/commit/9cb387f110cb7dd1691397507c6f40ade8c6e63b))
+* Workflow Bot -- Build Dictionaries ([#4920](https://github.com/streetsidesoftware/cspell-dicts/issues/4920)) ([625f1ff](https://github.com/streetsidesoftware/cspell-dicts/commit/625f1ff41cc6369a540b1ce81f7c4bc3372efca6))
+* Workflow Bot -- Update Dictionaries ([#4906](https://github.com/streetsidesoftware/cspell-dicts/issues/4906)) ([ed64602](https://github.com/streetsidesoftware/cspell-dicts/commit/ed646022efd26c75b9c0263396b5ae88c6b8db89))
+
+
+### Dependencies
+
+* The following workspace dependencies were updated
+  * devDependencies
+    * @cspell/dict-cspell-bundle bumped to 2.0.33
+
 ## [31.6.1](https://github.com/streetsidesoftware/cspell-dicts/compare/cspell-dicts@31.6.0...cspell-dicts@31.6.1) (2025-10-26)
 
 
