@@ -1,5 +1,19 @@
 # Changelog
 
+## [1.0.49](https://github.com/streetsidesoftware/cspell-dicts/compare/@cspell/dict-en-ca@1.0.48...@cspell/dict-en-ca@1.0.49) (2025-10-30)
+
+
+### Updates and Bug Fixes
+
+* Workflow Bot -- Build Dictionaries ([#4920](https://github.com/streetsidesoftware/cspell-dicts/issues/4920)) ([625f1ff](https://github.com/streetsidesoftware/cspell-dicts/commit/625f1ff41cc6369a540b1ce81f7c4bc3372efca6))
+
+
+### Dependencies
+
+* The following workspace dependencies were updated
+  * devDependencies
+    * @cspell/dict-en-shared bumped to 1.0.46
+
 ## [1.0.48](https://github.com/streetsidesoftware/cspell-dicts/compare/@cspell/dict-en-ca@1.0.47...@cspell/dict-en-ca@1.0.48) (2025-10-26)
 
 

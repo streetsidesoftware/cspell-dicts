@@ -3,6 +3,17 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+## [5.1.11](https://github.com/streetsidesoftware/cspell-dicts/compare/@cspell/dict-software-terms@5.1.10...@cspell/dict-software-terms@5.1.11) (2025-10-30)
+
+
+### Updates and Bug Fixes
+
+* add coding terms ([#4915](https://github.com/streetsidesoftware/cspell-dicts/issues/4915)) ([1bc19a3](https://github.com/streetsidesoftware/cspell-dicts/commit/1bc19a3fb7bdda10b1ab319caad1c31cf8defc41))
+* add passband ([#4916](https://github.com/streetsidesoftware/cspell-dicts/issues/4916)) ([a63b785](https://github.com/streetsidesoftware/cspell-dicts/commit/a63b78555d4558bf25541e83b8d2c8a1b7f92b44))
+* add signal-processing acronyms ([#4917](https://github.com/streetsidesoftware/cspell-dicts/issues/4917)) ([ae60acd](https://github.com/streetsidesoftware/cspell-dicts/commit/ae60acd243812465eeeafcc986bc6229e1eb1843))
+* Workflow Bot -- Build Dictionaries ([#4918](https://github.com/streetsidesoftware/cspell-dicts/issues/4918)) ([9cb387f](https://github.com/streetsidesoftware/cspell-dicts/commit/9cb387f110cb7dd1691397507c6f40ade8c6e63b))
+* Workflow Bot -- Build Dictionaries ([#4920](https://github.com/streetsidesoftware/cspell-dicts/issues/4920)) ([625f1ff](https://github.com/streetsidesoftware/cspell-dicts/commit/625f1ff41cc6369a540b1ce81f7c4bc3372efca6))
+
 ## [5.1.10](https://github.com/streetsidesoftware/cspell-dicts/compare/@cspell/dict-software-terms@5.1.9...@cspell/dict-software-terms@5.1.10) (2025-10-26)
 
 
