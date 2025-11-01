@@ -1,5 +1,20 @@
 # Release Notes
 
+## [31.6.3](https://github.com/streetsidesoftware/cspell-dicts/compare/cspell-dicts@31.6.2...cspell-dicts@31.6.3) (2025-11-01)
+
+
+### Updates and Bug Fixes
+
+* Add autocorrect terms to shared additional words ([#4923](https://github.com/streetsidesoftware/cspell-dicts/issues/4923)) ([e24cd46](https://github.com/streetsidesoftware/cspell-dicts/commit/e24cd46c5940c79940aeaf6682baf791d649dbc0))
+* Workflow Bot -- Build Dictionaries ([#4926](https://github.com/streetsidesoftware/cspell-dicts/issues/4926)) ([f8ded5e](https://github.com/streetsidesoftware/cspell-dicts/commit/f8ded5ee85937e215022ef392af8266f9c6adc03))
+
+
+### Dependencies
+
+* The following workspace dependencies were updated
+  * devDependencies
+    * @cspell/dict-cspell-bundle bumped to 2.0.34
+
 ## [31.6.2](https://github.com/streetsidesoftware/cspell-dicts/compare/cspell-dicts@31.6.1...cspell-dicts@31.6.2) (2025-10-30)
 
 
