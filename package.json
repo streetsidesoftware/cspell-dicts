@@ -2,7 +2,7 @@
   "name": "cspell-dicts",
   "version": "31.6.2",
   "private": true,
-  "packageManager": "pnpm@10.5.2+sha512.da9dc28cd3ff40d0592188235ab25d3202add8a207afbedc682220e4a0029ffbff4562102b9e6e46b4e3f9e8bd53e6d05de48544b0c57d4b0179e22c76d1199b",
+  "packageManager": "pnpm@10.20.0+sha512.cf9998222162dd85864d0a8102e7892e7ba4ceadebbf5a31f9c2fce48dfce317a9c53b9f6464d1ef9042cba2e02ae02a9f7c143a2b438cd93c91840f0192b9dd",
   "scripts": {
     "test": "pnpm -r run --workspace-concurrency 2 --stream test",
     "lint": "pnpm run lint:fix && cspell --no-progress",
