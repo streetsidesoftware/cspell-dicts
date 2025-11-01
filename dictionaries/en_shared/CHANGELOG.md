@@ -1,5 +1,12 @@
 # Change Log
 
+## [1.0.47](https://github.com/streetsidesoftware/cspell-dicts/compare/@cspell/dict-en-shared@1.0.46...@cspell/dict-en-shared@1.0.47) (2025-11-01)
+
+
+### Updates and Bug Fixes
+
+* Add autocorrect terms to shared additional words ([#4923](https://github.com/streetsidesoftware/cspell-dicts/issues/4923)) ([e24cd46](https://github.com/streetsidesoftware/cspell-dicts/commit/e24cd46c5940c79940aeaf6682baf791d649dbc0))
+
 ## [1.0.46](https://github.com/streetsidesoftware/cspell-dicts/compare/@cspell/dict-en-shared@1.0.45...@cspell/dict-en-shared@1.0.46) (2025-10-30)
 
 
