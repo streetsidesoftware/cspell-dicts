@@ -3,6 +3,13 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+## [5.1.12](https://github.com/streetsidesoftware/cspell-dicts/compare/@cspell/dict-software-terms@5.1.11...@cspell/dict-software-terms@5.1.12) (2025-11-05)
+
+
+### Updates and Bug Fixes
+
+* Add Lucene to software-tools.txt ([#4930](https://github.com/streetsidesoftware/cspell-dicts/issues/4930)) ([04b9fdb](https://github.com/streetsidesoftware/cspell-dicts/commit/04b9fdbac726a214b1cf697b4843fc5cf07205a1))
+
 ## [5.1.11](https://github.com/streetsidesoftware/cspell-dicts/compare/@cspell/dict-software-terms@5.1.10...@cspell/dict-software-terms@5.1.11) (2025-10-30)
 
 

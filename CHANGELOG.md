@@ -1,5 +1,20 @@
 # Release Notes
 
+## [31.6.4](https://github.com/streetsidesoftware/cspell-dicts/compare/cspell-dicts@31.6.3...cspell-dicts@31.6.4) (2025-11-05)
+
+
+### Updates and Bug Fixes
+
+* Add Lucene to software-tools.txt ([#4930](https://github.com/streetsidesoftware/cspell-dicts/issues/4930)) ([04b9fdb](https://github.com/streetsidesoftware/cspell-dicts/commit/04b9fdbac726a214b1cf697b4843fc5cf07205a1))
+* Workflow Bot -- Update Dictionaries ([#4929](https://github.com/streetsidesoftware/cspell-dicts/issues/4929)) ([14aeb16](https://github.com/streetsidesoftware/cspell-dicts/commit/14aeb16fb7485db42bea96c5f81edd74f55fd534))
+
+
+### Dependencies
+
+* The following workspace dependencies were updated
+  * devDependencies
+    * @cspell/dict-cspell-bundle bumped to 2.0.35
+
 ## [31.6.3](https://github.com/streetsidesoftware/cspell-dicts/compare/cspell-dicts@31.6.2...cspell-dicts@31.6.3) (2025-11-01)
 
 
