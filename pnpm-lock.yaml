@@ -15,19 +15,19 @@ importers:
         specifier: workspace:*
         version: link:dictionaries/cspell
       '@eslint/js':
-        specifier: ^9.39.1
+        specifier: ^9.39.0
         version: 9.39.1
       '@lerna-lite/cli':
-        specifier: ^4.9.2
+        specifier: ^4.9.1
         version: 4.9.2(@lerna-lite/exec@4.9.2)(@lerna-lite/publish@4.9.2)(@lerna-lite/run@4.9.2)(@lerna-lite/version@4.9.2(@lerna-lite/exec@4.9.2)(@lerna-lite/publish@4.9.2)(@lerna-lite/run@4.9.2)(@types/node@24.10.0)(conventional-commits-filter@5.0.0))(@types/node@24.10.0)
       '@lerna-lite/exec':
-        specifier: ^4.9.2
+        specifier: ^4.9.1
         version: 4.9.2(@lerna-lite/publish@4.9.2)(@lerna-lite/run@4.9.2)(@types/node@24.10.0)
       '@lerna-lite/publish':
-        specifier: ^4.9.2
+        specifier: ^4.9.1
         version: 4.9.2(@lerna-lite/exec@4.9.2)(@lerna-lite/run@4.9.2)(@types/node@24.10.0)(conventional-commits-filter@5.0.0)
       '@lerna-lite/run':
-        specifier: ^4.9.2
+        specifier: ^4.9.1
         version: 4.9.2(@lerna-lite/exec@4.9.2)(@lerna-lite/publish@4.9.2)(@types/node@24.10.0)
       ava:
         specifier: ^6.4.1
@@ -51,7 +51,7 @@ importers:
         specifier: ^9.2.2
         version: 9.2.2
       eslint:
-        specifier: ^9.39.1
+        specifier: ^9.39.0
         version: 9.39.1
       generator-cspell-dicts:
         specifier: workspace:^
@@ -566,7 +566,7 @@ importers:
     dependencies:
       '@cspell/normalize-json':
         specifier: ^9.2.2
-        version: 9.2.2
+        version: 9.3.0
       csv-stringify:
         specifier: ^6.6.0
         version: 6.6.0
@@ -1023,8 +1023,8 @@ packages:
     resolution: {integrity: sha512-oM+cqipbZ4PNxQcKP9sKOeRKBG+oM3NKO3To1FyxYxvnUG7DukW2yH6BS0/GUY7qK+oSftuq5d6DXEAl9wzbEQ==}
     engines: {node: '>=20'}
 
-  '@cspell/normalize-json@9.2.2':
-    resolution: {integrity: sha512-/foiDf2wYYfp/6EToUcqTz50ksNV/jsGYYsdENmScJRNSh/Jv5QOtlWy9hklirl0VTp2OVLo3Nzn0JdxFiNLXQ==}
+  '@cspell/normalize-json@9.3.0':
+    resolution: {integrity: sha512-baGmPxr1VIMwFuqCom+BMeerDGodu8dQ4nHgF38IrXuzwy2+Vx/UaTtJhglgM6ruDIrrXOppmoDk/uMT+LjMlg==}
     engines: {node: '>=20'}
 
   '@cspell/strong-weak-map@9.2.2':
@@ -2606,8 +2606,8 @@ packages:
     resolution: {integrity: sha512-f7ccFPK3SXFHpx15UIGyRJ/FJQctuKZ0zVuN3frBo4HnK3cay9VEW0R6yPYFHC0AgqhukPzKjq22t5DmAyqGyw==}
     engines: {node: '>=16'}
 
-  flatpack-json@9.2.2:
-    resolution: {integrity: sha512-AYUV+QSmyFyASZKNvAIqru13wz/B2p68nfmOQyeaMJQ7jrvsScnlr0ErDc5iTvAAqkJvw8SbmZeGzwjZ2H7HBA==}
+  flatpack-json@9.3.0:
+    resolution: {integrity: sha512-MZLVK37C7n8HlqAHo0TaaFMMEdzWewLztWAuxGAo/SFAgoFzLO+7qCRf90LP4upf7BKcR9dK842Xio0GrV6EgA==}
     engines: {node: '>=20'}
 
   flatted@3.3.3:
@@ -4931,9 +4931,9 @@ snapshots:
 
   '@cspell/filetypes@9.2.2': {}
 
-  '@cspell/normalize-json@9.2.2':
+  '@cspell/normalize-json@9.3.0':
     dependencies:
-      flatpack-json: 9.2.2
+      flatpack-json: 9.3.0
 
   '@cspell/strong-weak-map@9.2.2': {}
 
@@ -6910,7 +6910,7 @@ snapshots:
       flatted: 3.3.3
       keyv: 4.5.4
 
-  flatpack-json@9.2.2: {}
+  flatpack-json@9.3.0: {}
 
   flatted@3.3.3: {}
 
