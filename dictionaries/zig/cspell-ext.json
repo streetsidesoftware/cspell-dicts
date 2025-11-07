@@ -25,7 +25,7 @@
         {
             "languageId": "zon",
             "locale": "*",
-            "ignoreRegExpList": ["/\\.hash =.*/"],
+            "ignoreRegExpList": ["/\\.hash =.*/g"],
             "dictionaries": ["zig"]
         }
     ],
@@ -33,6 +33,10 @@
         {
             "filename": "**/*.zig.zon",
             "languageId": "zon"
+        },
+        {
+            "filename": "**/*.zig",
+            "languageId": "zig"
         }
     ]
 }
