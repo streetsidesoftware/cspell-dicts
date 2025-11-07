@@ -3563,5 +3563,31 @@
       }
     ],
     "patterns": []
+  },
+  {
+    "name": "Zig",
+    "dir": "dictionaries/zig",
+    "packageName": "@cspell/dict-zig",
+    "description": "Zig dictionary for cspell.",
+    "cspell": false,
+    "categories": ["programming"],
+    "dictionaries": [
+      {
+        "name": "zig",
+        "description": "Zig dictionary for cspell.",
+        "fileTypes": ["zig", "zon"],
+        "localeFileTypes": [
+          {
+            "locale": "*",
+            "fileType": "zig"
+          },
+          {
+            "locale": "*",
+            "fileType": "zon"
+          }
+        ]
+      }
+    ],
+    "patterns": []
   }
 ]
