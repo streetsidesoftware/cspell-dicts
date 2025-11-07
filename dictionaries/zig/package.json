@@ -1,8 +1,7 @@
 {
   "name": "@cspell/dict-zig",
   "version": "1.0.0",
-  "description": "Zig dictionary for cspell. -- Private until verified",
-  "private": true,
+  "description": "Zig dictionary for cspell.",
   "publishConfig": {
     "access": "public",
     "provenance": true
@@ -14,7 +13,7 @@
   },
   "scripts": {
     "build": "cross-env NODE_OPTIONS=--max_old_space_size=8192 cspell-tools-cli build",
-    "test": "head -n 1000 \"src/zig.txt\" | cspell -c ./cspell-ext.json \"--locale=*\" \"--languageId=zig\" stdin",
+    "test": "cspell samples",
     "prepublishOnly": "echo OK",
     "prepare:dictionary": "pnpm run build"
   },

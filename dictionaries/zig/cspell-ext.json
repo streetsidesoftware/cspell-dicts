@@ -8,7 +8,7 @@
         {
             "name": "zig",
             "path": "./dict/zig.txt",
-            "description": "Zig dictionary for cspell."
+            "description": "Zig dictionary"
         }
     ],
     "dictionaries": [],
@@ -25,7 +25,13 @@
         {
             "languageId": "zon",
             "locale": "*",
-            "ignoreRegExpList": ["/\\.hash =.*/g"],
+            "patterns": [
+                {
+                    "name": "zig-hash",
+                    "pattern": "/\\.hash\\s=.*/g"
+                }
+            ],
+            "ignoreRegExpList": ["zig-hash"],
             "dictionaries": ["zig"]
         }
     ],
