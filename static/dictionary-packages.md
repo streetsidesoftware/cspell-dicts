@@ -112,6 +112,7 @@
 - [TypeScript/JavaScript](dictionaries/typescript) - TypeScript and JavaScript dictionary. <sup>1</sup>
 - [Vue](dictionaries/vue) - CSpell configuration for VUE files <sup>1</sup>
 - [Win32](dictionaries/win32) - Win32 dictionary.
+- [Zig](dictionaries/zig) - Zig dictionary for cspell.
 
 ## Specialized Dictionaries
 
@@ -270,6 +271,7 @@
 | [@cspell/dict-vim](./dictionaries/vim#readme)                                                   | Vim                               | vim                                                                                                                                                                                                                     |
 | [@cspell/dict-vue](./dictionaries/vue#readme)<sup>1</sup>                                       | Vue                               |                                                                                                                                                                                                                         |
 | [@cspell/dict-win32](./dictionaries/win32#readme)                                               | Win32                             | win32                                                                                                                                                                                                                   |
+| [@cspell/dict-zig](./dictionaries/zig#readme)                                                   | Zig                               | zig                                                                                                                                                                                                                     |
 
 <sup>1</sup> Bundled with CSpell.<br><sup>2</sup> Dictionaries are enabled when packages is imported.
 
@@ -415,5 +417,6 @@
 | [`vim`](dictionaries/vim)                                                            | Vim dictionary.                                                     |                               |                                                                |
 | [`web-services`](dictionaries/software-terms) <sup>1</sup> <sup>2</sup>              | Web Services and APIs dictionary.                                   |                               |                                                                |
 | [`win32`](dictionaries/win32)                                                        | Win32 dictionary.                                                   | -                             | c<br>cpp                                                       |
+| [`zig`](dictionaries/zig)                                                            | Zig dictionary for cspell.                                          | -                             | zig<br>zon                                                     |
 
 <sup>1</sup> Bundled with CSpell.<br> <sup>2</sup> Dictionaries are enabled when packages is imported.
