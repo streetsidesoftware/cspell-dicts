@@ -31,12 +31,12 @@
     ],
     "overrides": [
         {
-            "filename": "**/*.zig.zon",
-            "languageId": "zon"
-        },
-        {
             "filename": "**/*.zig",
             "languageId": "zig"
+        },
+        {
+            "filename": "**/*.zon",
+            "languageId": "zon"
         }
     ]
 }
