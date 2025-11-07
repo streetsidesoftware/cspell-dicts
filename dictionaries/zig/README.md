@@ -19,4 +19,7 @@ MIT
 Keywords taken from [emanspeaks/cspell-zig](https://github.com/emanspeaks/cspell-zig),
 licensed under the terms of the MIT license.
 
+Code samples in the `samples/` directory taken from the [Zig standard library](https://github.com/ziglang/zig),
+licensed under the terms of the MIT license.
+
 <!--- @@inject: ../../static/footer.md --->
