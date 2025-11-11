@@ -119,9 +119,9 @@ dictionaries:
 
 ## Dictionary Information
 
-| Name  | Enabled | Description                |
-| ----- | ------- | -------------------------- |
-| `zig` |         | Zig dictionary for cspell. |
+| Name  | Enabled | Description    |
+| ----- | ------- | -------------- |
+| `zig` |         | Zig dictionary |
 
 ## Language Settings
 

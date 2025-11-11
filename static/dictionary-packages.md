@@ -417,6 +417,6 @@
 | [`vim`](dictionaries/vim)                                                            | Vim dictionary.                                                     |                               |                                                                |
 | [`web-services`](dictionaries/software-terms) <sup>1</sup> <sup>2</sup>              | Web Services and APIs dictionary.                                   |                               |                                                                |
 | [`win32`](dictionaries/win32)                                                        | Win32 dictionary.                                                   | -                             | c<br>cpp                                                       |
-| [`zig`](dictionaries/zig)                                                            | Zig dictionary for cspell.                                          | -                             | zig<br>zon                                                     |
+| [`zig`](dictionaries/zig)                                                            | Zig dictionary                                                      | -                             | zig<br>zon                                                     |
 
 <sup>1</sup> Bundled with CSpell.<br> <sup>2</sup> Dictionaries are enabled when packages is imported.
