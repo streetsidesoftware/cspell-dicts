@@ -702,7 +702,7 @@ importers:
     dependencies:
       '@cspell/cspell-pipe':
         specifier: ^9.3.0
-        version: 9.3.0
+        version: 9.3.1
       as-table:
         specifier: ^1.0.55
         version: 1.0.55
@@ -819,6 +819,10 @@ packages:
 
   '@cspell/cspell-pipe@9.3.0':
     resolution: {integrity: sha512-LEl2TYvXnGk/D+Vjq5DBsNQuLsmn3/2QV9dxteK5e323pJRcpEosq76elzsYpVLuB3s1hp2pFQhppWk69Gx2CQ==}
+    engines: {node: '>=20'}
+
+  '@cspell/cspell-pipe@9.3.1':
+    resolution: {integrity: sha512-MqCoUDwq2z4dn5fYMFrLYHjQyueqhvCNyztPS2ifhXJiEyr/YV61cLvQh/HoZlFmBSL7ViMXjejtL29LTLOEzA==}
     engines: {node: '>=20'}
 
   '@cspell/cspell-resolver@9.3.0':
@@ -1648,6 +1652,9 @@ packages:
 
   '@types/node@20.19.24':
     resolution: {integrity: sha512-FE5u0ezmi6y9OZEzlJfg37mqqf6ZDSF2V/NLjUyGrR9uTZ7Sb9F7bLNZ03S4XVUNRWGA7Ck4c1kK+YnuWjl+DA==}
+
+  '@types/node@20.19.25':
+    resolution: {integrity: sha512-ZsJzA5thDQMSQO788d7IocwwQbI8B5OPzmqNvpf3NY/+MHDAS759Wo0gd2WQeXYt5AAAQjzcrTVC6SKCuYgoCQ==}
 
   '@types/node@22.19.0':
     resolution: {integrity: sha512-xpr/lmLPQEj+TUnHmR+Ab91/glhJvsqcjB+yY0Ix9GO70H6Lb4FHH5GeqdOE5btAx7eIMwuHkp4H2MSkLcqWbA==}
@@ -4781,6 +4788,8 @@ snapshots:
 
   '@cspell/cspell-pipe@9.3.0': {}
 
+  '@cspell/cspell-pipe@9.3.1': {}
+
   '@cspell/cspell-resolver@9.3.0':
     dependencies:
       global-directory: 4.0.1
@@ -5863,6 +5872,10 @@ snapshots:
   '@types/node@16.18.126': {}
 
   '@types/node@20.19.24':
+    dependencies:
+      undici-types: 6.21.0
+
+  '@types/node@20.19.25':
     dependencies:
       undici-types: 6.21.0
 
@@ -7115,7 +7128,7 @@ snapshots:
 
   hunspell-reader@9.3.0:
     dependencies:
-      '@cspell/cspell-pipe': 9.3.0
+      '@cspell/cspell-pipe': 9.3.1
       '@cspell/cspell-types': 9.3.0
       commander: 14.0.2
       gensequence: 7.0.0
@@ -7671,7 +7684,7 @@ snapshots:
 
   mem-fs@4.1.0:
     dependencies:
-      '@types/node': 20.19.24
+      '@types/node': 20.19.25
       '@types/vinyl': 2.0.12
       vinyl: 3.0.1
       vinyl-file: 5.0.0
