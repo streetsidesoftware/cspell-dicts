@@ -566,7 +566,7 @@ importers:
     dependencies:
       '@cspell/normalize-json':
         specifier: ^9.3.0
-        version: 9.3.0
+        version: 9.3.1
       csv-stringify:
         specifier: ^6.6.0
         version: 6.6.0
@@ -1025,8 +1025,8 @@ packages:
     resolution: {integrity: sha512-pH413zKkMd5lh40HyLNgYfTacIryxsHDhxWShyxS7M+8W9MPl+tmzIHlSEvEVcKUUe3Qpowxo6b6Xkg7taRp/A==}
     engines: {node: '>=20'}
 
-  '@cspell/normalize-json@9.3.0':
-    resolution: {integrity: sha512-baGmPxr1VIMwFuqCom+BMeerDGodu8dQ4nHgF38IrXuzwy2+Vx/UaTtJhglgM6ruDIrrXOppmoDk/uMT+LjMlg==}
+  '@cspell/normalize-json@9.3.1':
+    resolution: {integrity: sha512-UriEo8DP6EOR6R59SVxFs1WfCzCZkx49/6MPOOBXridh2AT8jMoGagaeH/6B1fldaR+KAtexMOBifkSiVdKo/Q==}
     engines: {node: '>=20'}
 
   '@cspell/strong-weak-map@9.3.0':
@@ -1648,6 +1648,9 @@ packages:
 
   '@types/node@20.19.24':
     resolution: {integrity: sha512-FE5u0ezmi6y9OZEzlJfg37mqqf6ZDSF2V/NLjUyGrR9uTZ7Sb9F7bLNZ03S4XVUNRWGA7Ck4c1kK+YnuWjl+DA==}
+
+  '@types/node@20.19.25':
+    resolution: {integrity: sha512-ZsJzA5thDQMSQO788d7IocwwQbI8B5OPzmqNvpf3NY/+MHDAS759Wo0gd2WQeXYt5AAAQjzcrTVC6SKCuYgoCQ==}
 
   '@types/node@22.19.0':
     resolution: {integrity: sha512-xpr/lmLPQEj+TUnHmR+Ab91/glhJvsqcjB+yY0Ix9GO70H6Lb4FHH5GeqdOE5btAx7eIMwuHkp4H2MSkLcqWbA==}
@@ -2608,8 +2611,8 @@ packages:
     resolution: {integrity: sha512-f7ccFPK3SXFHpx15UIGyRJ/FJQctuKZ0zVuN3frBo4HnK3cay9VEW0R6yPYFHC0AgqhukPzKjq22t5DmAyqGyw==}
     engines: {node: '>=16'}
 
-  flatpack-json@9.3.0:
-    resolution: {integrity: sha512-MZLVK37C7n8HlqAHo0TaaFMMEdzWewLztWAuxGAo/SFAgoFzLO+7qCRf90LP4upf7BKcR9dK842Xio0GrV6EgA==}
+  flatpack-json@9.3.1:
+    resolution: {integrity: sha512-8GZ5fkgeegq+AgBjUCWdXFnOBp98RcVuIzvLUe3TRMwf4Espf73PxoUf8JYc7cXnQlowkE/oRmMVvWOPFS1+3Q==}
     engines: {node: '>=20'}
 
   flatted@3.3.3:
@@ -4933,9 +4936,9 @@ snapshots:
 
   '@cspell/filetypes@9.3.0': {}
 
-  '@cspell/normalize-json@9.3.0':
+  '@cspell/normalize-json@9.3.1':
     dependencies:
-      flatpack-json: 9.3.0
+      flatpack-json: 9.3.1
 
   '@cspell/strong-weak-map@9.3.0': {}
 
@@ -5863,6 +5866,10 @@ snapshots:
   '@types/node@16.18.126': {}
 
   '@types/node@20.19.24':
+    dependencies:
+      undici-types: 6.21.0
+
+  '@types/node@20.19.25':
     dependencies:
       undici-types: 6.21.0
 
@@ -6912,7 +6919,7 @@ snapshots:
       flatted: 3.3.3
       keyv: 4.5.4
 
-  flatpack-json@9.3.0: {}
+  flatpack-json@9.3.1: {}
 
   flatted@3.3.3: {}
 
@@ -7671,7 +7678,7 @@ snapshots:
 
   mem-fs@4.1.0:
     dependencies:
-      '@types/node': 20.19.24
+      '@types/node': 20.19.25
       '@types/vinyl': 2.0.12
       vinyl: 3.0.1
       vinyl-file: 5.0.0
