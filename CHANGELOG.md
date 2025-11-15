@@ -1,5 +1,28 @@
 # Release Notes
 
+## [31.7.0](https://github.com/streetsidesoftware/cspell-dicts/compare/cspell-dicts@31.6.4...cspell-dicts@31.7.0) (2025-11-15)
+
+
+### Features
+
+* add dictionary for the Zig programming language ([#4943](https://github.com/streetsidesoftware/cspell-dicts/issues/4943)) ([ee472ce](https://github.com/streetsidesoftware/cspell-dicts/commit/ee472cec0331681233349002579aff07748524f8))
+
+
+### Updates and Bug Fixes
+
+* [aws] Add missing AWS related terms ([#4962](https://github.com/streetsidesoftware/cspell-dicts/issues/4962)) ([36e2719](https://github.com/streetsidesoftware/cspell-dicts/commit/36e2719e045aa5180f40f3f5cf56e532d78d3597))
+* [software-tools] Add missing software related terms ([#4963](https://github.com/streetsidesoftware/cspell-dicts/issues/4963)) ([8d57961](https://github.com/streetsidesoftware/cspell-dicts/commit/8d579619d6d0202f7479e87e0f5d09519b606bf7))
+* [software-tools] Add missing software related terms ([#4966](https://github.com/streetsidesoftware/cspell-dicts/issues/4966)) ([da1f4b5](https://github.com/streetsidesoftware/cspell-dicts/commit/da1f4b58f7e32833c940a66c02b981f69275c132))
+* Prep zig for publishing ([#4948](https://github.com/streetsidesoftware/cspell-dicts/issues/4948)) ([f5d71ac](https://github.com/streetsidesoftware/cspell-dicts/commit/f5d71ac9cd8e993ede76fb819f4d821698b35934))
+* Workflow Bot -- Update Dictionaries ([#4952](https://github.com/streetsidesoftware/cspell-dicts/issues/4952)) ([79ecdd8](https://github.com/streetsidesoftware/cspell-dicts/commit/79ecdd804133287a3e92dbcee451c8ae920bceba))
+
+
+### Dependencies
+
+* The following workspace dependencies were updated
+  * devDependencies
+    * @cspell/dict-cspell-bundle bumped to 2.0.36
+
 ## [31.6.4](https://github.com/streetsidesoftware/cspell-dicts/compare/cspell-dicts@31.6.3...cspell-dicts@31.6.4) (2025-11-05)
 
 
