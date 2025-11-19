@@ -1,5 +1,23 @@
 # Release Notes
 
+## [31.7.1](https://github.com/streetsidesoftware/cspell-dicts/compare/cspell-dicts@31.7.0...cspell-dicts@31.7.1) (2025-11-19)
+
+
+### Updates and Bug Fixes
+
+* Add filter names ([#4979](https://github.com/streetsidesoftware/cspell-dicts/issues/4979)) ([7fcb770](https://github.com/streetsidesoftware/cspell-dicts/commit/7fcb7700a37070c6957514063302446d6feb8ec0))
+* Add new coding terms to coding-terms.txt ([#4987](https://github.com/streetsidesoftware/cspell-dicts/issues/4987)) ([4ce8077](https://github.com/streetsidesoftware/cspell-dicts/commit/4ce8077ca25a41121024c9dd430ad0d284014e55))
+* Workflow Bot -- Build Dictionaries ([#4981](https://github.com/streetsidesoftware/cspell-dicts/issues/4981)) ([a336241](https://github.com/streetsidesoftware/cspell-dicts/commit/a336241014df59db6a3e2f0442c352fe13983afb))
+* Workflow Bot -- Build Dictionaries ([#4988](https://github.com/streetsidesoftware/cspell-dicts/issues/4988)) ([13ce836](https://github.com/streetsidesoftware/cspell-dicts/commit/13ce8367c0236ce8a882d7d93fb8c7b18e8d13af))
+* Workflow Bot -- Update Dictionaries ([#4974](https://github.com/streetsidesoftware/cspell-dicts/issues/4974)) ([e20088f](https://github.com/streetsidesoftware/cspell-dicts/commit/e20088f08d61d8f62004f9afe5ac4cc77e44cfba))
+
+
+### Dependencies
+
+* The following workspace dependencies were updated
+  * devDependencies
+    * @cspell/dict-cspell-bundle bumped to 2.0.37
+
 ## [31.7.0](https://github.com/streetsidesoftware/cspell-dicts/compare/cspell-dicts@31.6.4...cspell-dicts@31.7.0) (2025-11-15)
 
 
