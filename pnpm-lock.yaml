@@ -720,8 +720,8 @@ importers:
         version: 16.0.0
     devDependencies:
       '@tsconfig/node20':
-        specifier: ^20.1.7
-        version: 20.1.7
+        specifier: ^20.1.8
+        version: 20.1.8
       '@types/node':
         specifier: ^20.19.25
         version: 20.19.25
@@ -1311,8 +1311,8 @@ packages:
     resolution: {integrity: sha512-tkYs0OYnzQm6iIRdfy+LcLBjcKuQCeE5YLb8KnrIlutJfheNaPvPpgoFEyEFgbjzl5PLZ3IA/BWAwRU0eHuQDA==}
     engines: {node: ^14.17.0 || ^16.13.0 || >=18.0.0}
 
-  '@npmcli/map-workspaces@5.0.1':
-    resolution: {integrity: sha512-LFEh3vY5nyiVI9IY9rko7FtAtS9fjgQySARlccKbnS7BMWFyQF73OT/n8NG22/8xyp57xPIl13gwO/OD63nktg==}
+  '@npmcli/map-workspaces@5.0.2':
+    resolution: {integrity: sha512-Qg508s4CTD4FQxBJyvmRkf9t0s1MaaV09zo3VBg6JT7XIWZlzhcvgB/hzwS0OFRYQUgup5Ovoxb7evTW0kdnpA==}
     engines: {node: ^20.17.0 || >=22.9.0}
 
   '@npmcli/metavuln-calculator@7.1.1':
@@ -1351,8 +1351,8 @@ packages:
     resolution: {integrity: sha512-f7zYC6kQautXHvNbLEWgD/uGu1+xCn9izgqBfgItWSx22U0ZDekxN08A1vM8cTxj/cRVe0Q94Ode+tdoYmIOOQ==}
     engines: {node: ^16.14.0 || >=18.0.0}
 
-  '@npmcli/package-json@7.0.2':
-    resolution: {integrity: sha512-0ylN3U5htO1SJTmy2YI78PZZjLkKUGg7EKgukb2CRi0kzyoDr0cfjHAzi7kozVhj2V3SxN1oyKqZ2NSo40z00g==}
+  '@npmcli/package-json@7.0.3':
+    resolution: {integrity: sha512-XT8016UrDfnR7yh2XvnIqaPnA5v2QomaWryDYYgKNT0LaX0vcKf4gu2f3CWD/ltV4tOto4MwZynWlynMJL8bBQ==}
     engines: {node: ^20.17.0 || >=22.9.0}
 
   '@npmcli/promise-spawn@7.0.2':
@@ -1596,8 +1596,8 @@ packages:
     resolution: {integrity: sha512-tlqY9xq5ukxTUZBmoOp+m61cqwQD5pHJtFY3Mn8CA8ps6yghLH/Hw8UPdqg4OLmFW3IFlcXnQNmo/dh8HzXYIQ==}
     engines: {node: '>=18'}
 
-  '@tsconfig/node20@20.1.7':
-    resolution: {integrity: sha512-Lt137u6AoCCJNNklpNtfGIYFEywma7Hd3B083jqMga37opSEVw7beWsD4OTXyzKS0I3G2kbQJVoZpOxy9GnxBQ==}
+  '@tsconfig/node20@20.1.8':
+    resolution: {integrity: sha512-Em+IdPfByIzWRRpqWL4Z7ArLHZGxmc36BxE3jCz9nBFSm+5aLaPMZyjwu4yetvyKXeogWcxik4L1jB5JTWfw7A==}
 
   '@tufjs/canonical-json@2.0.0':
     resolution: {integrity: sha512-yVtV8zsdo8qFHe+/3kw81dSLyF7D576A5cCFCi4X7B39tWT7SekaEFUnvnWJHz+9qO7qJTah1JbrDjWKqFtdWA==}
@@ -1927,8 +1927,8 @@ packages:
     resolution: {integrity: sha512-B+L5iIa9mgcjLbliir2th36yEwPftrzteHYujzsx3dFP/31GCHcIeS8f5MGd80odLOjaOvSpU3EEAmRQptkxLQ==}
     engines: {node: ^16.14.0 || >=18.0.0}
 
-  cacache@20.0.1:
-    resolution: {integrity: sha512-+7LYcYGBYoNqTp1Rv7Ny1YjUo5E0/ftkQtraH3vkfAGgVHc+ouWdC8okAwQgQR7EVIdW6JTzTmhKFwzb+4okAQ==}
+  cacache@20.0.2:
+    resolution: {integrity: sha512-rVWvqtWcgSzB22wImrVto+7PmE+lUqv5dYzRHD0QJsfpSwTkW+GIqA4ykSt/CCjQlQle8USn8CO8vcWNrIqktg==}
     engines: {node: ^20.17.0 || >=22.9.0}
 
   callsites@3.1.0:
@@ -3746,8 +3746,8 @@ packages:
     resolution: {integrity: sha512-aNZ+VfjobsWryoiPnEApGGmf5WmNsCo9xu8dfaYamG5qaLP7ClhLN6NgsFe6SwJ2UbLEBK5dv9x8Mn5+RVhMWQ==}
     engines: {node: '>=18'}
 
-  p-queue@9.0.0:
-    resolution: {integrity: sha512-KO1RyxstL9g1mK76530TExamZC/S2Glm080Nx8PE5sTd7nlduDQsAfEl4uXX+qZjLiwvDauvzXavufy3+rJ9zQ==}
+  p-queue@9.0.1:
+    resolution: {integrity: sha512-RhBdVhSwJb7Ocn3e8ULk4NMwBEuOxe+1zcgphUy9c2e5aR/xbEsdVXxHJ3lynw6Qiqu7OINEyHlZkiblEpaq7w==}
     engines: {node: '>=20'}
 
   p-reduce@3.0.0:
@@ -5149,7 +5149,7 @@ snapshots:
       load-json-file: 7.0.1
       npm-package-arg: 13.0.2
       p-map: 7.0.4
-      p-queue: 9.0.0
+      p-queue: 9.0.1
       semver: 7.7.3
       slash: 5.1.0
       tinyglobby: 0.2.15
@@ -5221,7 +5221,7 @@ snapshots:
       '@lerna-lite/npmlog': 4.9.1
       '@lerna-lite/version': 4.9.2(@lerna-lite/exec@4.9.2)(@lerna-lite/publish@4.9.2)(@lerna-lite/run@4.9.2)(@types/node@24.10.1)(conventional-commits-filter@5.0.0)
       '@npmcli/arborist': 9.1.6
-      '@npmcli/package-json': 7.0.2
+      '@npmcli/package-json': 7.0.3
       byte-size: 9.0.1
       ci-info: 4.3.1
       columnify: 1.6.0
@@ -5404,16 +5404,16 @@ snapshots:
       '@isaacs/string-locale-compare': 1.1.0
       '@npmcli/fs': 4.0.0
       '@npmcli/installed-package-contents': 3.0.0
-      '@npmcli/map-workspaces': 5.0.1
+      '@npmcli/map-workspaces': 5.0.2
       '@npmcli/metavuln-calculator': 9.0.3
       '@npmcli/name-from-folder': 3.0.0
       '@npmcli/node-gyp': 4.0.0
-      '@npmcli/package-json': 7.0.2
+      '@npmcli/package-json': 7.0.3
       '@npmcli/query': 4.0.1
       '@npmcli/redact': 3.2.2
       '@npmcli/run-script': 10.0.3
       bin-links: 5.0.0
-      cacache: 20.0.1
+      cacache: 20.0.2
       common-ancestor-path: 1.0.1
       hosted-git-info: 9.0.2
       json-stringify-nice: 1.1.4
@@ -5492,11 +5492,11 @@ snapshots:
       minimatch: 9.0.5
       read-package-json-fast: 3.0.2
 
-  '@npmcli/map-workspaces@5.0.1':
+  '@npmcli/map-workspaces@5.0.2':
     dependencies:
       '@npmcli/name-from-folder': 4.0.0
-      '@npmcli/package-json': 7.0.2
-      glob: 11.1.0
+      '@npmcli/package-json': 7.0.3
+      glob: 12.0.0
       minimatch: 10.1.1
 
   '@npmcli/metavuln-calculator@7.1.1':
@@ -5512,7 +5512,7 @@ snapshots:
 
   '@npmcli/metavuln-calculator@9.0.3':
     dependencies:
-      cacache: 20.0.1
+      cacache: 20.0.2
       json-parse-even-better-errors: 5.0.0
       pacote: 21.0.4
       proc-log: 6.0.0
@@ -5544,10 +5544,10 @@ snapshots:
     transitivePeerDependencies:
       - bluebird
 
-  '@npmcli/package-json@7.0.2':
+  '@npmcli/package-json@7.0.3':
     dependencies:
       '@npmcli/git': 7.0.1
-      glob: 11.1.0
+      glob: 12.0.0
       hosted-git-info: 9.0.2
       json-parse-even-better-errors: 5.0.0
       proc-log: 6.0.0
@@ -5579,7 +5579,7 @@ snapshots:
   '@npmcli/run-script@10.0.3':
     dependencies:
       '@npmcli/node-gyp': 5.0.0
-      '@npmcli/package-json': 7.0.2
+      '@npmcli/package-json': 7.0.3
       '@npmcli/promise-spawn': 9.0.1
       node-gyp: 12.1.0
       proc-log: 6.0.0
@@ -5831,7 +5831,7 @@ snapshots:
 
   '@sindresorhus/merge-streams@4.0.0': {}
 
-  '@tsconfig/node20@20.1.7': {}
+  '@tsconfig/node20@20.1.8': {}
 
   '@tufjs/canonical-json@2.0.0': {}
 
@@ -5915,7 +5915,7 @@ snapshots:
   '@types/vinyl@2.0.12':
     dependencies:
       '@types/expect': 1.20.4
-      '@types/node': 20.19.25
+      '@types/node': 24.10.1
 
   '@vercel/nft@0.29.4(encoding@0.1.13)':
     dependencies:
@@ -6200,7 +6200,7 @@ snapshots:
       tar: 6.2.1
       unique-filename: 3.0.0
 
-  cacache@20.0.1:
+  cacache@20.0.2:
     dependencies:
       '@npmcli/fs': 4.0.0
       fs-minipass: 3.0.3
@@ -6211,7 +6211,7 @@ snapshots:
       minipass-flush: 1.0.5
       minipass-pipeline: 1.2.4
       p-map: 7.0.4
-      ssri: 12.0.0
+      ssri: 13.0.0
       unique-filename: 4.0.0
 
   callsites@3.1.0: {}
@@ -7412,7 +7412,7 @@ snapshots:
 
   libnpmpublish@11.1.2:
     dependencies:
-      '@npmcli/package-json': 7.0.2
+      '@npmcli/package-json': 7.0.3
       ci-info: 4.3.1
       npm-package-arg: 13.0.2
       npm-registry-fetch: 19.1.1
@@ -7488,7 +7488,7 @@ snapshots:
   make-fetch-happen@15.0.3:
     dependencies:
       '@npmcli/agent': 4.0.0
-      cacache: 20.0.1
+      cacache: 20.0.2
       http-cache-semantics: 4.2.0
       minipass: 7.1.2
       minipass-fetch: 5.0.0
@@ -8363,7 +8363,7 @@ snapshots:
       eventemitter3: 5.0.1
       p-timeout: 6.1.4
 
-  p-queue@9.0.0:
+  p-queue@9.0.1:
     dependencies:
       eventemitter3: 5.0.1
       p-timeout: 7.0.1
@@ -8425,10 +8425,10 @@ snapshots:
     dependencies:
       '@npmcli/git': 7.0.1
       '@npmcli/installed-package-contents': 4.0.0
-      '@npmcli/package-json': 7.0.2
+      '@npmcli/package-json': 7.0.3
       '@npmcli/promise-spawn': 9.0.1
       '@npmcli/run-script': 10.0.3
-      cacache: 20.0.1
+      cacache: 20.0.2
       fs-minipass: 3.0.3
       minipass: 7.1.2
       npm-package-arg: 13.0.2
