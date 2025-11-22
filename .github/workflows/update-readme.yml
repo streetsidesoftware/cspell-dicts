@@ -13,7 +13,7 @@ on:
       new-branch:
         description: 'PR Branch to create'
         type: string
-        default: update-dictionaries
+        default: update-readme
         required: false
 
 permissions:
@@ -33,9 +33,11 @@ jobs:
       REF_BRANCH: ${{ inputs.ref || github.event.inputs.ref }}
     steps:
       - name: Checkout code
-        uses: actions/checkout@v5
+        uses: actions/checkout@1af3b93b6815bc44a9784bd300feb67ff0d1eeb3 # v6.0.0
         with:
+          persist-credentials: false
           ref: ${{ env.REF_BRANCH }}
+          token: ${{ secrets.GITHUB_TOKEN }}
 
       - name: Setup
         uses: ./.github/actions/setup
