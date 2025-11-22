@@ -37,6 +37,7 @@ jobs:
         with:
           persist-credentials: false
           ref: ${{ env.REF_BRANCH }}
+          token: ${{ secrets.GITHUB_TOKEN }}
 
       - name: Setup
         uses: ./.github/actions/setup
