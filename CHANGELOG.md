@@ -1,5 +1,19 @@
 # Release Notes
 
+## [31.7.2](https://github.com/streetsidesoftware/cspell-dicts/compare/cspell-dicts@31.7.1...cspell-dicts@31.7.2) (2025-11-22)
+
+
+### Updates and Bug Fixes
+
+* **npm:** add shadcn to dictionary ([#4992](https://github.com/streetsidesoftware/cspell-dicts/issues/4992)) ([7f9d561](https://github.com/streetsidesoftware/cspell-dicts/commit/7f9d5614a6dcea8ed944d3f15eb5f16ea212bdda))
+
+
+### Dependencies
+
+* The following workspace dependencies were updated
+  * devDependencies
+    * @cspell/dict-cspell-bundle bumped to 2.0.38
+
 ## [31.7.1](https://github.com/streetsidesoftware/cspell-dicts/compare/cspell-dicts@31.7.0...cspell-dicts@31.7.1) (2025-11-19)
 
 

@@ -3,6 +3,13 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+## [5.2.24](https://github.com/streetsidesoftware/cspell-dicts/compare/@cspell/dict-npm@5.2.23...@cspell/dict-npm@5.2.24) (2025-11-22)
+
+
+### Updates and Bug Fixes
+
+* **npm:** add shadcn to dictionary ([#4992](https://github.com/streetsidesoftware/cspell-dicts/issues/4992)) ([7f9d561](https://github.com/streetsidesoftware/cspell-dicts/commit/7f9d5614a6dcea8ed944d3f15eb5f16ea212bdda))
+
 ## [5.2.23](https://github.com/streetsidesoftware/cspell-dicts/compare/@cspell/dict-npm@5.2.22...@cspell/dict-npm@5.2.23) (2025-11-19)
 
 
