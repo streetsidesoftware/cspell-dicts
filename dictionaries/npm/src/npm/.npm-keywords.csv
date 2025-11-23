@@ -24,10 +24,12 @@ $.extend,2
 11ty,1
 16m,1
 16x2 LCD,1
+2 factor,1
 20x4 LCD,1
 256,8
 256 colors,1
 2D120X,1
+2fa,1
 2Y0A02,1
 2Y0A21,1
 300ms,1
@@ -313,7 +315,8 @@ augment-vir,2
 augmented-reality,1
 aurora,1
 auth,14
-authentication,15
+authentication,16
+authenticator,1
 authjs,1
 authn,6
 author,1
@@ -375,7 +378,7 @@ babel-preset,1
 babylon,1
 back end,2
 back-end,5
-backend,129
+backend,130
 Backend,8
 backend-as-a-service,2
 backend-framework,1
@@ -512,7 +515,7 @@ bridge,1
 Brill tagger,1
 broccoli-plugin,2
 brotli,3
-browser,75
+browser,76
 browser sync,1
 browser-client,1
 browser-detection,1
@@ -711,7 +714,7 @@ client,26
 client library,1
 client-hints,1
 client-server,1
-client-side,6
+client-side,7
 clip,1
 clipboard,4
 clock,1
@@ -830,7 +833,7 @@ component,174
 component library,4
 component-library,5
 component-testing,2
-components,186
+components,187
 Components,3
 compose,2
 composition,3
@@ -1098,14 +1101,17 @@ data logging,1
 data management,1
 data structure,3
 data structures,3
+data-collection,1
 data-join,1
 data-structure,3
 data-structures,3
+data-validation,1
 data-visualization,1
 data-viz,1
 database,24
 databinding,1
 datadog,1
+datagrid,1
 datamapper,1
 datastore,2
 datastructure,4
@@ -1374,6 +1380,7 @@ duration,1
 dwg,1
 dynamic,1
 dynamic resizing,1
+dynamic-form,1
 dynamodb,2
 dzi,1
 e2e,7
@@ -1828,9 +1835,13 @@ forever-monitor,1
 forge,1
 fork,4
 forkpty,1
-form,16
+form,17
+form-component,1
 form-data,2
-form-validation,2
+form-library,1
+form-management,1
+form-rendering,1
+form-validation,3
 format,17
 formate,1
 formatted,2
@@ -1865,7 +1876,7 @@ front-backend,1
 front-end,67
 Front-end,5
 front-matter,1
-frontend,262
+frontend,264
 frontmatter,1
 frp,1
 FRP,1
@@ -1961,6 +1972,7 @@ goat,1
 google,7
 google api,1
 google apis,1
+google authenticator,1
 google docs,1
 google drive,2
 google fonts,2
@@ -2145,6 +2157,7 @@ hot,5
 hot module replacement,1
 hot reload,1
 hot-reloading,1
+hotp,1
 hotreload,1
 how-to,1
 HRLV-MaxSonar-EZ0,1
@@ -2333,6 +2346,7 @@ InnoDB memcached API,1
 innosetup,1
 input,30
 input field,1
+input-validation,1
 inquire,7
 inquirer,8
 insertion,2
@@ -2362,6 +2376,7 @@ inter-element,1
 interact,2
 interaction,1
 interactive,6
+interactive-form,1
 intercept,1
 interface,11
 interfaces,5
@@ -2462,7 +2477,7 @@ java,2
 java edition,1
 java script,3
 java.util,3
-javascript,153
+javascript,155
 Javascript,1
 JavaScript,6
 javascript rule engine,1
@@ -2521,14 +2536,14 @@ jsi,1
 jslint,3
 jsmin,1
 jsnext,2
-json,67
+json,68
 JSON,7
 JSON Body Parser,1
 json schema,1
 json to html,1
 json-2-csv,1
 json-api,3
-json-schema,3
+json-schema,4
 JSON-Schema,5
 json-schema-validation,1
 json-schema-validator,2
@@ -2986,7 +3001,7 @@ MMA7361,1
 MMA7660,1
 MMA8462Q,1
 mobi,1
-mobile,84
+mobile,83
 Mobile,2
 mobile testing,1
 mobile-development,2
@@ -3165,7 +3180,7 @@ nlp,1
 nMemcached,1
 no,1
 no-code,1
-node,59
+node,60
 Node,13
 node cron,1
 node degree,1
@@ -3308,6 +3323,8 @@ once,4
 onclick,1
 onclickoutside,1
 one,2
+one time password,1
+one-time-password,1
 oneline,1
 onesy,1
 oop,1
@@ -3385,7 +3402,7 @@ ot,11
 otel,1
 otf,1
 otg,1
-otp,2
+otp,3
 ots,1
 ott,1
 otterhttp,4
@@ -3784,6 +3801,7 @@ querybuilder,1
 queryselector,1
 querystring,7
 question,8
+questionnaire,1
 queue,7
 queue js,1
 queue priority,1
@@ -3801,7 +3819,7 @@ Rabbit,1
 RabbitMQ,1
 race,1
 rack,2
-radix-ui,1
+radix-ui,2
 raf,1
 rag,1
 rake,1
@@ -3834,7 +3852,7 @@ RC4,1
 rdbms,2
 rds,1
 re,1
-react,380
+react,381
 React,10
 react animation,1
 react components,1
@@ -4145,6 +4163,7 @@ scanner,1
 schedule,3
 scheduler,4
 schema,27
+schema-form,1
 schema-validation,1
 schemas,1
 schematics,1
@@ -4255,7 +4274,7 @@ sha256,2
 SHA256,1
 sha384,1
 sha512,2
-shadcn,1
+shadcn,2
 shadow dom,3
 shadow root,2
 shadowdom,1
@@ -4373,7 +4392,7 @@ sockets,1
 soft,1
 software quality,1
 sol,1
-solid,4
+solid,5
 some,1
 sonarjs,1
 sort,6
@@ -4606,6 +4625,10 @@ supervisor,3
 supervisord,1
 support,3
 supports,1
+survey,1
+survey-library,1
+survey-renderer,2
+surveyjs,1
 svelte,21
 svelte framework,1
 sveltejs,1
@@ -4685,7 +4708,7 @@ tagfilter,1
 tagged,1
 tagname,1
 tags,3
-tailwind,6
+tailwind,7
 tailwind angular,1
 tailwind astro,2
 tailwind component,1
@@ -4745,7 +4768,6 @@ telemetry,2
 telephone,3
 telephone-codes,1
 telephone-prefixes,1
-telerik,1
 temp,3
 tempdir,3
 Temperature,1
@@ -4868,6 +4890,7 @@ tools,10
 tooltip,5
 topologic,1
 topological,1
+topt,1
 torrent,1
 toSorted,1
 tostring,1
@@ -4980,7 +5003,7 @@ typeorm,5
 types,16
 typesafe,1
 typeschema,1
-typescript,161
+typescript,163
 Typescript,1
 TypeScript,14
 typescript packager,1
@@ -5002,13 +5025,14 @@ uglifier,3
 uglify,10
 uglify-es,4
 uglify-js,4
-ui,191
+ui,192
 UI,2
 ui component,1
 ui components,1
 ui kit,1
 ui library,2
 ui toolkit,1
+ui-component,1
 ui-framework,1
 ui-kit,11
 ui-router,1
@@ -5180,9 +5204,10 @@ vinyl-adapter,1
 vinyl-zip,1
 vips,1
 vir,2
-virtual,5
+virtual,6
 virtual box,1
 virtual dom,2
+virtual-core,1
 virtual-reality,1
 virtualbox,1
 virtualized,1
@@ -5219,7 +5244,7 @@ vsdx,1
 vt100,2
 vtree,1
 vtt,1
-vue,83
+vue,84
 Vue,1
 vue 3,2
 vue 3.x,2
