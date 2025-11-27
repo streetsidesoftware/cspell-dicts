@@ -3,6 +3,13 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+## [4.0.13](https://github.com/streetsidesoftware/cspell-dicts/compare/@cspell/dict-html@4.0.12...@cspell/dict-html@4.0.13) (2025-11-27)
+
+
+### Updates and Bug Fixes
+
+* **html:** add `srcset` ([#5004](https://github.com/streetsidesoftware/cspell-dicts/issues/5004)) ([b9c48e3](https://github.com/streetsidesoftware/cspell-dicts/commit/b9c48e34e8d7fae320c0009e8181baae68308565))
+
 ## [4.0.12](https://github.com/streetsidesoftware/cspell-dicts/compare/@cspell/dict-html@4.0.11...@cspell/dict-html@4.0.12) (2025-07-09)
 
 

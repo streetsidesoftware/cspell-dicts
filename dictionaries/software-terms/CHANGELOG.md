@@ -3,6 +3,14 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+## [5.1.15](https://github.com/streetsidesoftware/cspell-dicts/compare/@cspell/dict-software-terms@5.1.14...@cspell/dict-software-terms@5.1.15) (2025-11-27)
+
+
+### Updates and Bug Fixes
+
+* Add LoongArch / Loongson architecture terms to software-terms di… ([#5005](https://github.com/streetsidesoftware/cspell-dicts/issues/5005)) ([8c66116](https://github.com/streetsidesoftware/cspell-dicts/commit/8c6611667a7ec262a829e92dc1f1710033d311bd))
+* Workflow Bot -- Build Dictionaries ([#5009](https://github.com/streetsidesoftware/cspell-dicts/issues/5009)) ([4b3a78f](https://github.com/streetsidesoftware/cspell-dicts/commit/4b3a78f945eae80e87119465c278e5a6cbbfb9fb))
+
 ## [5.1.14](https://github.com/streetsidesoftware/cspell-dicts/compare/@cspell/dict-software-terms@5.1.13...@cspell/dict-software-terms@5.1.14) (2025-11-19)
 
 

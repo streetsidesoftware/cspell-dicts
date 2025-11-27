@@ -1,5 +1,23 @@
 # Release Notes
 
+## [31.7.3](https://github.com/streetsidesoftware/cspell-dicts/compare/cspell-dicts@31.7.2...cspell-dicts@31.7.3) (2025-11-27)
+
+
+### Updates and Bug Fixes
+
+* Add LoongArch / Loongson architecture terms to software-terms di… ([#5005](https://github.com/streetsidesoftware/cspell-dicts/issues/5005)) ([8c66116](https://github.com/streetsidesoftware/cspell-dicts/commit/8c6611667a7ec262a829e92dc1f1710033d311bd))
+* Add Python words ([#5001](https://github.com/streetsidesoftware/cspell-dicts/issues/5001)) ([ec6906b](https://github.com/streetsidesoftware/cspell-dicts/commit/ec6906bf2464bf70296e9d3d28382b968bd55fca))
+* **html:** add `srcset` ([#5004](https://github.com/streetsidesoftware/cspell-dicts/issues/5004)) ([b9c48e3](https://github.com/streetsidesoftware/cspell-dicts/commit/b9c48e34e8d7fae320c0009e8181baae68308565))
+* Workflow Bot -- Build Dictionaries ([#5009](https://github.com/streetsidesoftware/cspell-dicts/issues/5009)) ([4b3a78f](https://github.com/streetsidesoftware/cspell-dicts/commit/4b3a78f945eae80e87119465c278e5a6cbbfb9fb))
+* Workflow Bot -- Update Dictionaries ([#4999](https://github.com/streetsidesoftware/cspell-dicts/issues/4999)) ([b2b5703](https://github.com/streetsidesoftware/cspell-dicts/commit/b2b570394ae03c94011e8af4ed2368e15008f5e4))
+
+
+### Dependencies
+
+* The following workspace dependencies were updated
+  * devDependencies
+    * @cspell/dict-cspell-bundle bumped to 2.0.39
+
 ## [31.7.2](https://github.com/streetsidesoftware/cspell-dicts/compare/cspell-dicts@31.7.1...cspell-dicts@31.7.2) (2025-11-22)
 
 
