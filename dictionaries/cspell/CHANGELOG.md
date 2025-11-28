@@ -1,5 +1,14 @@
 # Change Log
 
+## [2.0.40](https://github.com/streetsidesoftware/cspell-dicts/compare/@cspell/dict-cspell-bundle@2.0.39...@cspell/dict-cspell-bundle@2.0.40) (2025-11-28)
+
+
+### Dependencies
+
+* The following workspace dependencies were updated
+  * dependencies
+    * @cspell/dict-cpp bumped to 6.0.15
+
 ## [2.0.39](https://github.com/streetsidesoftware/cspell-dicts/compare/@cspell/dict-cspell-bundle@2.0.38...@cspell/dict-cspell-bundle@2.0.39) (2025-11-27)
 
 
