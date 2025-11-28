@@ -1,5 +1,20 @@
 # Release Notes
 
+## [31.7.4](https://github.com/streetsidesoftware/cspell-dicts/compare/cspell-dicts@31.7.3...cspell-dicts@31.7.4) (2025-11-28)
+
+
+### Updates and Bug Fixes
+
+* Add Eigen words ([#5010](https://github.com/streetsidesoftware/cspell-dicts/issues/5010)) ([604034f](https://github.com/streetsidesoftware/cspell-dicts/commit/604034f5e5a880b3d687730bb21fe1744ae419a9))
+* Workflow Bot -- Build Dictionaries ([#5012](https://github.com/streetsidesoftware/cspell-dicts/issues/5012)) ([462df0a](https://github.com/streetsidesoftware/cspell-dicts/commit/462df0a66d1a63fe636596e8e69594206cd56e2e))
+
+
+### Dependencies
+
+* The following workspace dependencies were updated
+  * devDependencies
+    * @cspell/dict-cspell-bundle bumped to 2.0.40
+
 ## [31.7.3](https://github.com/streetsidesoftware/cspell-dicts/compare/cspell-dicts@31.7.2...cspell-dicts@31.7.3) (2025-11-27)
 
 
