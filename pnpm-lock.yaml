@@ -10,7 +10,7 @@ importers:
     devDependencies:
       '@cspell/cspell-tools':
         specifier: ^9.3.2
-        version: 9.3.2(typescript@5.9.3)
+        version: 9.4.0(typescript@5.9.3)
       '@cspell/dict-cspell-bundle':
         specifier: workspace:*
         version: link:dictionaries/cspell
@@ -49,7 +49,7 @@ importers:
         version: link:scripts
       cspell-trie:
         specifier: ^9.3.2
-        version: 9.3.2
+        version: 9.4.0
       eslint:
         specifier: ^9.39.1
         version: 9.39.1
@@ -61,7 +61,7 @@ importers:
         version: 16.5.0
       hunspell-reader:
         specifier: ^9.3.2
-        version: 9.3.2
+        version: 9.4.0
       inject-markdown:
         specifier: ^4.0.0
         version: 4.0.0
@@ -782,7 +782,7 @@ importers:
     devDependencies:
       '@cspell/cspell-types':
         specifier: ^9.3.2
-        version: 9.3.2
+        version: 9.4.0
       '@types/mdast':
         specifier: ^4.0.4
         version: 4.0.4
@@ -821,6 +821,10 @@ packages:
     resolution: {integrity: sha512-REF7ibG79WLEynIMUss/IRDCdYEb1nlE1rj/gt2CbPFzLa6t5MRwW2lajEvXS6/WgbMtsTVHAWi3ALqJzCwxng==}
     engines: {node: '>=20'}
 
+  '@cspell/cspell-pipe@9.4.0':
+    resolution: {integrity: sha512-cI0sUe7SB99hJB1T6PhH/MpSrnml1kOekTCE+VH3Eb7zkVP5/mwJXs8BlufdvwBona+Cgkx6jeWlhFpxLc39Yg==}
+    engines: {node: '>=20'}
+
   '@cspell/cspell-resolver@9.3.2':
     resolution: {integrity: sha512-jLN2Aa/vxm8+IBvTd884SwPEfjxnDwIEPBT3hmqgLlKuUHQ3FMG27lsM4Ik9L2KWBXMgV/wGz4BaxfhKI41Ttw==}
     engines: {node: '>=20'}
@@ -829,13 +833,17 @@ packages:
     resolution: {integrity: sha512-/rB8LazM0JzKL+AvZa5fEpLutmwy5QFMpzw8HJd+rDGkzb5r79hURWSRo84QArgaskUqA9XlOHSieDE9pt+WAA==}
     engines: {node: '>=20'}
 
-  '@cspell/cspell-tools@9.3.2':
-    resolution: {integrity: sha512-9cYq6pOTNcl0MHbWLHkCN5fY3BEqAjP+GwWHu9H+B/kkpAhnBwoyMeM841jjWVxOeEhFUM+4OsDQ7XtQ9ypUIw==}
+  '@cspell/cspell-tools@9.4.0':
+    resolution: {integrity: sha512-vMrHZEmgLdpeV6GeVPqUZ5kMoqjMBZ9s3akubzmDUSbQdrNvNA+VhL4yl3mEaF3uDz1jSVYP0ALICzw0/Dg1TQ==}
     engines: {node: '>=20'}
     hasBin: true
 
   '@cspell/cspell-types@9.3.2':
     resolution: {integrity: sha512-l4H8bMAmdzCbXHO8y1JZiAKszrPEiuLFKWrbhCacHF0iP+PIc/yuQp7cO70m0p70vArRfih6kgGyHFaCy47CfA==}
+    engines: {node: '>=20'}
+
+  '@cspell/cspell-types@9.4.0':
+    resolution: {integrity: sha512-vSpd50OfmthBH0aRFRLA2zJFtwli3ntHA0WAOJ8tIMLUCJgF3udooRXFeX3wR8ri69C9mc3864LC4inyRC/E9w==}
     engines: {node: '>=20'}
 
   '@cspell/dict-ada@4.1.1':
@@ -2199,8 +2207,12 @@ packages:
     resolution: {integrity: sha512-1Af7Mq9jIccFQyJl/ZCcqQbtJwuDqpQVkk8xfs/92x4OI6gW1iTVRMtsrh0RTw1HZoR8aQD7tRRCiLPf/D+UiQ==}
     engines: {node: '>=20'}
 
-  cspell-trie@9.3.2:
-    resolution: {integrity: sha512-OENY/ny6xNzyHd3hmynfO+EJYLp8qkYPmgUiruIztSXi+fPqs3QxhQlTVrJ/qQMAQ9jCzzysY82QUz0W+CwlIA==}
+  cspell-trie-lib@9.4.0:
+    resolution: {integrity: sha512-bySJTm8XDiJAoC1MDo4lE/KpSNxydo13ZETC8TF7Hb3rbWI1c6o5eZ4+i/tkG3M94OvKV91+MeAvoMCe7GGgAw==}
+    engines: {node: '>=20'}
+
+  cspell-trie@9.4.0:
+    resolution: {integrity: sha512-zR2rKhsJvEC5oXFjQ4o3hQxkqLsccILWyQzaZYwVxTvDMNlQeGPJrxCO+N0fVEZU8BXotQ1PKoDK/PFGYFUWQw==}
     engines: {node: '>=20'}
     hasBin: true
 
@@ -2791,8 +2803,8 @@ packages:
     resolution: {integrity: sha512-eKCa6bwnJhvxj14kZk5NCPc6Hb6BdsU9DZcOnmQKSnO1VKrfV0zCvtttPZUsBvjmNDn8rpcJfpwSYnHBjc95MQ==}
     engines: {node: '>=18.18.0'}
 
-  hunspell-reader@9.3.2:
-    resolution: {integrity: sha512-riVDXShDeOCgO+gaslpid38FBzO0RRVxQCS+Q2cbI/od8T5+yX6M12aMI3caD29SX8dZsHbzJ1+VYyH6rnC3LA==}
+  hunspell-reader@9.4.0:
+    resolution: {integrity: sha512-qkNM0gHmV8/CquMrbNL7QNNUGD4p5P6LRkZGTJZCcV3y9wvysHaut9iDuzgzIJqlPa+rzWwYxSJHgnCNE8tfvg==}
     engines: {node: '>=20'}
     hasBin: true
 
@@ -4761,25 +4773,29 @@ snapshots:
 
   '@cspell/cspell-pipe@9.3.2': {}
 
+  '@cspell/cspell-pipe@9.4.0': {}
+
   '@cspell/cspell-resolver@9.3.2':
     dependencies:
       global-directory: 4.0.1
 
   '@cspell/cspell-service-bus@9.3.2': {}
 
-  '@cspell/cspell-tools@9.3.2(typescript@5.9.3)':
+  '@cspell/cspell-tools@9.4.0(typescript@5.9.3)':
     dependencies:
-      '@cspell/cspell-pipe': 9.3.2
+      '@cspell/cspell-pipe': 9.4.0
       commander: 14.0.2
       cosmiconfig: 9.0.0(typescript@5.9.3)
-      cspell-trie-lib: 9.3.2
-      glob: 10.5.0
-      hunspell-reader: 9.3.2
+      cspell-trie-lib: 9.4.0
+      glob: 13.0.0
+      hunspell-reader: 9.4.0
       yaml: 2.8.2
     transitivePeerDependencies:
       - typescript
 
   '@cspell/cspell-types@9.3.2': {}
+
+  '@cspell/cspell-types@9.4.0': {}
 
   '@cspell/dict-ada@4.1.1': {}
 
@@ -6462,10 +6478,16 @@ snapshots:
       '@cspell/cspell-types': 9.3.2
       gensequence: 8.0.8
 
-  cspell-trie@9.3.2:
+  cspell-trie-lib@9.4.0:
+    dependencies:
+      '@cspell/cspell-pipe': 9.4.0
+      '@cspell/cspell-types': 9.4.0
+      gensequence: 8.0.8
+
+  cspell-trie@9.4.0:
     dependencies:
       commander: 14.0.2
-      cspell-trie-lib: 9.3.2
+      cspell-trie-lib: 9.4.0
       gensequence: 8.0.8
 
   cspell@9.3.2:
@@ -7070,10 +7092,10 @@ snapshots:
 
   human-signals@8.0.1: {}
 
-  hunspell-reader@9.3.2:
+  hunspell-reader@9.4.0:
     dependencies:
-      '@cspell/cspell-pipe': 9.3.2
-      '@cspell/cspell-types': 9.3.2
+      '@cspell/cspell-pipe': 9.4.0
+      '@cspell/cspell-types': 9.4.0
       commander: 14.0.2
       gensequence: 8.0.8
       html-entities: 2.6.0
