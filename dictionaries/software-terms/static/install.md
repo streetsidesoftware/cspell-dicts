@@ -80,4 +80,4 @@ dictionaries:
 | `networking-terms`          |         | Software networking terms dictionary. |
 | `web-services`              | **Yes** | Web Services and APIs dictionary.     |
 | `computing-acronyms`        | **Yes** | Common acronyms related to computing. |
-| `coding-compound-terms`     | **Yes** | Common codding compound terms.        |
+| `coding-compound-terms`     | **Yes** | Common coding compound terms.         |
