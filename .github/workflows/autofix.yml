@@ -24,4 +24,8 @@ jobs:
       - name: Lint
         run: pnpm run lint:fix
 
+      - name: Sort Source
+        run: |
+          pnpm run lint:fix:sort-source-files
+
       - uses: autofix-ci/action@635ffb0c9798bd160680f18fd73371e355b85f27
