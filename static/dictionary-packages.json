@@ -1599,6 +1599,28 @@
     "patterns": []
   },
   {
+    "name": "GDScript",
+    "dir": "dictionaries/gdscript",
+    "packageName": "@cspell/dict-gdscript",
+    "description": "GDScript dictionary for cspell.",
+    "cspell": false,
+    "categories": ["programming"],
+    "dictionaries": [
+      {
+        "name": "gdscript",
+        "description": "GDScript dictionary for cspell.",
+        "fileTypes": ["gdscript"],
+        "localeFileTypes": [
+          {
+            "locale": "*",
+            "fileType": "gdscript"
+          }
+        ]
+      }
+    ],
+    "patterns": []
+  },
+  {
     "name": "GIS and PostGIS",
     "dir": "dictionaries/gis",
     "packageName": "@cspell/dict-gis",
