@@ -72,7 +72,7 @@ def clone_or_update_godot_repo() -> Repo | None:
             print("[+] Branch checked out")
 
         print("[-] Updating repo...")
-        repo.remotes.origin.pull("master")
+        repo.remotes.origin.pull("master", depth=1)
         print("[+] Repo updated")
     else:
         print(f"[-] Cloning repo into '{repo_dir}'...")
@@ -194,6 +194,7 @@ def main():
     )
 
     with open("gdscript.txt", "w") as fd:
+        fd.write("# Automatically generated word list. Do NOT modify manually.\n")
         fd.writelines([f"{word}\n" for word in sorted(words)])
 
 

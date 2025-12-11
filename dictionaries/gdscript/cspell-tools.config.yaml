@@ -8,6 +8,11 @@ targets:
         allowedSplitWords:
           - ../en_US/en_US.trie
           - ../software-terms/dict/softwareTerms.txt
+      - filename: 'src/gdscript.txt'
+        split: true
+        allowedSplitWords:
+          - ../en_US/en_US.trie
+          - ../software-terms/dict/softwareTerms.txt
     format: 'plaintext'
     targetDirectory: './dict'
     generateNonStrict: false
