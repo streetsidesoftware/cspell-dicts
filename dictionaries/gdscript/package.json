@@ -14,7 +14,7 @@
   },
   "scripts": {
     "build": "cross-env NODE_OPTIONS=--max_old_space_size=8192 cspell-tools-cli build",
-    "test": "head -n 1000 \"src/gdscript.txt\" | cspell -c ./cspell-ext.json \"--locale=*\" \"--languageId=gdscript\" stdin",
+    "test": "cspell --root samples .",
     "prepublishOnly": "echo OK",
     "prepare:dictionary": "pnpm run build"
   },

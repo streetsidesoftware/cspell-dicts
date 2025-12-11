@@ -3,8 +3,11 @@
 targets:
   - name: 'gdscript'
     sources:
-      - filename: 'src/gdscript.txt'
-        maxDepth: 1 # This is set to 1 to prevent initial builds from taking too long.
+      - filename: 'src/gdscript-words/gdscript.txt'
+        split: true
+        allowedSplitWords:
+          - ../en_US/en_US.trie
+          - ../software-terms/dict/softwareTerms.txt
     format: 'plaintext'
     targetDirectory: './dict'
     generateNonStrict: false
