@@ -1,8 +1,7 @@
 {
   "name": "@cspell/dict-gdscript",
   "version": "1.0.0",
-  "description": "GDScript dictionary for cspell. -- Private until verified",
-  "private": true,
+  "description": "GDScript dictionary for cspell.",
   "publishConfig": {
     "access": "public",
     "provenance": true
@@ -13,7 +12,7 @@
     "./cspell-ext.json": "./cspell-ext.json"
   },
   "scripts": {
-    "build": "cross-env NODE_OPTIONS=--max_old_space_size=8192 cspell-tools-cli build",
+    "build": "cspell-tools-cli build",
     "test": "cspell --root samples .",
     "prepublishOnly": "echo OK",
     "prepare:dictionary": "pnpm run build"
