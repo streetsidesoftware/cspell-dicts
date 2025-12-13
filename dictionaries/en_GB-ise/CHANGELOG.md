@@ -1,5 +1,19 @@
 # Changelog
 
+## [1.0.20](https://github.com/streetsidesoftware/cspell-dicts/compare/@cspell/dict-en-gb-ise@1.0.19...@cspell/dict-en-gb-ise@1.0.20) (2025-12-13)
+
+
+### Updates and Bug Fixes
+
+* Workflow Bot -- Build Dictionaries ([#5037](https://github.com/streetsidesoftware/cspell-dicts/issues/5037)) ([c4b91d1](https://github.com/streetsidesoftware/cspell-dicts/commit/c4b91d112eb1e7c772295f4295ed2d26fa8019e0))
+
+
+### Dependencies
+
+* The following workspace dependencies were updated
+  * devDependencies
+    * @cspell/dict-en-shared bumped to 1.0.48
+
 ## [1.0.19](https://github.com/streetsidesoftware/cspell-dicts/compare/@cspell/dict-en-gb-ise@1.0.18...@cspell/dict-en-gb-ise@1.0.19) (2025-11-01)
 
 

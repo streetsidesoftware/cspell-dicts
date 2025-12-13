@@ -3,6 +3,14 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+## [3.2.8](https://github.com/streetsidesoftware/cspell-dicts/compare/@cspell/dict-companies@3.2.7...@cspell/dict-companies@3.2.8) (2025-12-13)
+
+
+### Updates and Bug Fixes
+
+* Add `Mailchimp` to companies.txt ([#5048](https://github.com/streetsidesoftware/cspell-dicts/issues/5048)) ([5ab63f5](https://github.com/streetsidesoftware/cspell-dicts/commit/5ab63f54aec36d0644b42fa6625c4c1d4d54f69a))
+* Add new companies to companies.txt ([#5042](https://github.com/streetsidesoftware/cspell-dicts/issues/5042)) ([27605d7](https://github.com/streetsidesoftware/cspell-dicts/commit/27605d746d0d886a71620c43bedce4ebe654773c))
+
 ## [3.2.7](https://github.com/streetsidesoftware/cspell-dicts/compare/@cspell/dict-companies@3.2.6...@cspell/dict-companies@3.2.7) (2025-10-26)
 
 

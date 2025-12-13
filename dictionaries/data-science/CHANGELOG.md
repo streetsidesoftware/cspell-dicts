@@ -1,5 +1,12 @@
 # Change Log
 
+## [2.0.13](https://github.com/streetsidesoftware/cspell-dicts/compare/@cspell/dict-data-science@2.0.12...@cspell/dict-data-science@2.0.13) (2025-12-13)
+
+
+### Updates and Bug Fixes
+
+* Add argmin ([#5043](https://github.com/streetsidesoftware/cspell-dicts/issues/5043)) ([1ec6c6d](https://github.com/streetsidesoftware/cspell-dicts/commit/1ec6c6dcc5cd001c193443dfb78cd2b58cc5846c))
+
 ## [2.0.12](https://github.com/streetsidesoftware/cspell-dicts/compare/@cspell/dict-data-science@2.0.11...@cspell/dict-data-science@2.0.12) (2025-11-19)
 
 

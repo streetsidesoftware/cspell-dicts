@@ -1,5 +1,12 @@
 # Change Log
 
+## [2.1.9](https://github.com/streetsidesoftware/cspell-dicts/compare/@cspell/dict-en-common-misspellings@2.1.8...@cspell/dict-en-common-misspellings@2.1.9) (2025-12-13)
+
+
+### Updates and Bug Fixes
+
+* Add timestep ([#5031](https://github.com/streetsidesoftware/cspell-dicts/issues/5031)) ([cffc7f4](https://github.com/streetsidesoftware/cspell-dicts/commit/cffc7f42ff468bb49a571f3ee17735f55e4507ca))
+
 ## [2.1.8](https://github.com/streetsidesoftware/cspell-dicts/compare/@cspell/dict-en-common-misspellings@2.1.7...@cspell/dict-en-common-misspellings@2.1.8) (2025-11-01)
 
 
