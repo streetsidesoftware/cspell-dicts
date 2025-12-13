@@ -3,6 +3,15 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+## [4.2.24](https://github.com/streetsidesoftware/cspell-dicts/compare/@cspell/dict-python@4.2.23...@cspell/dict-python@4.2.24) (2025-12-13)
+
+
+### Dependencies
+
+* The following workspace dependencies were updated
+  * dependencies
+    * @cspell/dict-data-science bumped to 2.0.13
+
 ## [4.2.23](https://github.com/streetsidesoftware/cspell-dicts/compare/@cspell/dict-python@4.2.22...@cspell/dict-python@4.2.23) (2025-11-27)
 
 

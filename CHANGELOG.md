@@ -1,5 +1,37 @@
 # Release Notes
 
+## [31.8.0](https://github.com/streetsidesoftware/cspell-dicts/compare/cspell-dicts@31.7.4...cspell-dicts@31.8.0) (2025-12-13)
+
+
+### Features
+
+* add dictionary for the GDScript scripting language ([#5041](https://github.com/streetsidesoftware/cspell-dicts/issues/5041)) ([9ebdb50](https://github.com/streetsidesoftware/cspell-dicts/commit/9ebdb508232c49350db842db04f898b5858f49c4))
+
+
+### Updates and Bug Fixes
+
+* Add `Mailchimp` to companies.txt ([#5048](https://github.com/streetsidesoftware/cspell-dicts/issues/5048)) ([5ab63f5](https://github.com/streetsidesoftware/cspell-dicts/commit/5ab63f54aec36d0644b42fa6625c4c1d4d54f69a))
+* Add argmin ([#5043](https://github.com/streetsidesoftware/cspell-dicts/issues/5043)) ([1ec6c6d](https://github.com/streetsidesoftware/cspell-dicts/commit/1ec6c6dcc5cd001c193443dfb78cd2b58cc5846c))
+* Add automotive-related acronyms ([#5032](https://github.com/streetsidesoftware/cspell-dicts/issues/5032)) ([6120b73](https://github.com/streetsidesoftware/cspell-dicts/commit/6120b73529e9a13a025e38297f270835d5fba6d5))
+* add missing getters, setters, and module symbols ([#5052](https://github.com/streetsidesoftware/cspell-dicts/issues/5052)) ([0f07502](https://github.com/streetsidesoftware/cspell-dicts/commit/0f07502cdff8d965529731a5cbd322f6f66cfcb3))
+* Add multilog ([#5035](https://github.com/streetsidesoftware/cspell-dicts/issues/5035)) ([aaab104](https://github.com/streetsidesoftware/cspell-dicts/commit/aaab10479bab2be2909308c2689ab1d99565db3a))
+* Add new companies to companies.txt ([#5042](https://github.com/streetsidesoftware/cspell-dicts/issues/5042)) ([27605d7](https://github.com/streetsidesoftware/cspell-dicts/commit/27605d746d0d886a71620c43bedce4ebe654773c))
+* Add prepopulate to coding terms ([#5034](https://github.com/streetsidesoftware/cspell-dicts/issues/5034)) ([2a93621](https://github.com/streetsidesoftware/cspell-dicts/commit/2a93621fb82c60ff119e31ee42f370f7401e1f0b))
+* Add timestep ([#5031](https://github.com/streetsidesoftware/cspell-dicts/issues/5031)) ([cffc7f4](https://github.com/streetsidesoftware/cspell-dicts/commit/cffc7f42ff468bb49a571f3ee17735f55e4507ca))
+* adds aws terms and fixes typos ([#5026](https://github.com/streetsidesoftware/cspell-dicts/issues/5026)) ([2c2730b](https://github.com/streetsidesoftware/cspell-dicts/commit/2c2730b9cd03ed797ae83002f44b6c45cbcea831))
+* reduce gdscript dictionary size ([#5053](https://github.com/streetsidesoftware/cspell-dicts/issues/5053)) ([8d6ef78](https://github.com/streetsidesoftware/cspell-dicts/commit/8d6ef78e94a677ab637647aa20d4fdba8e72fe69))
+* Workflow Bot -- Build Dictionaries ([#5030](https://github.com/streetsidesoftware/cspell-dicts/issues/5030)) ([50db2f5](https://github.com/streetsidesoftware/cspell-dicts/commit/50db2f5e5d7c5edba20eef764503aa76a162e090))
+* Workflow Bot -- Build Dictionaries ([#5037](https://github.com/streetsidesoftware/cspell-dicts/issues/5037)) ([c4b91d1](https://github.com/streetsidesoftware/cspell-dicts/commit/c4b91d112eb1e7c772295f4295ed2d26fa8019e0))
+* Workflow Bot -- Update Dictionaries ([#5016](https://github.com/streetsidesoftware/cspell-dicts/issues/5016)) ([256b798](https://github.com/streetsidesoftware/cspell-dicts/commit/256b798b2d68009de4b8ccec18f7e61e56347b14))
+* Workflow Bot -- Update Dictionaries ([#5019](https://github.com/streetsidesoftware/cspell-dicts/issues/5019)) ([e87900f](https://github.com/streetsidesoftware/cspell-dicts/commit/e87900f49365d92f6e50d931e0ac1100ebc97b49))
+
+
+### Dependencies
+
+* The following workspace dependencies were updated
+  * devDependencies
+    * @cspell/dict-cspell-bundle bumped to 2.0.41
+
 ## [31.7.4](https://github.com/streetsidesoftware/cspell-dicts/compare/cspell-dicts@31.7.3...cspell-dicts@31.7.4) (2025-11-28)
 
 

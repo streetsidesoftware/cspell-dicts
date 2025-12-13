@@ -1,5 +1,12 @@
 # Change Log
 
+## [1.0.48](https://github.com/streetsidesoftware/cspell-dicts/compare/@cspell/dict-en-shared@1.0.47...@cspell/dict-en-shared@1.0.48) (2025-12-13)
+
+
+### Updates and Bug Fixes
+
+* Add automotive-related acronyms ([#5032](https://github.com/streetsidesoftware/cspell-dicts/issues/5032)) ([6120b73](https://github.com/streetsidesoftware/cspell-dicts/commit/6120b73529e9a13a025e38297f270835d5fba6d5))
+
 ## [1.0.47](https://github.com/streetsidesoftware/cspell-dicts/compare/@cspell/dict-en-shared@1.0.46...@cspell/dict-en-shared@1.0.47) (2025-11-01)
 
 

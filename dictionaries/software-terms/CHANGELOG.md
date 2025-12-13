@@ -3,6 +3,16 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+## [5.1.16](https://github.com/streetsidesoftware/cspell-dicts/compare/@cspell/dict-software-terms@5.1.15...@cspell/dict-software-terms@5.1.16) (2025-12-13)
+
+
+### Updates and Bug Fixes
+
+* Add multilog ([#5035](https://github.com/streetsidesoftware/cspell-dicts/issues/5035)) ([aaab104](https://github.com/streetsidesoftware/cspell-dicts/commit/aaab10479bab2be2909308c2689ab1d99565db3a))
+* Add prepopulate to coding terms ([#5034](https://github.com/streetsidesoftware/cspell-dicts/issues/5034)) ([2a93621](https://github.com/streetsidesoftware/cspell-dicts/commit/2a93621fb82c60ff119e31ee42f370f7401e1f0b))
+* Add timestep ([#5031](https://github.com/streetsidesoftware/cspell-dicts/issues/5031)) ([cffc7f4](https://github.com/streetsidesoftware/cspell-dicts/commit/cffc7f42ff468bb49a571f3ee17735f55e4507ca))
+* adds aws terms and fixes typos ([#5026](https://github.com/streetsidesoftware/cspell-dicts/issues/5026)) ([2c2730b](https://github.com/streetsidesoftware/cspell-dicts/commit/2c2730b9cd03ed797ae83002f44b6c45cbcea831))
+
 ## [5.1.15](https://github.com/streetsidesoftware/cspell-dicts/compare/@cspell/dict-software-terms@5.1.14...@cspell/dict-software-terms@5.1.15) (2025-11-27)
 
 

@@ -22,6 +22,13 @@ See [Conventional Commits](https://conventionalcommits.org) for commit guideline
 
 
 
+## [4.0.17](https://github.com/streetsidesoftware/cspell-dicts/compare/@cspell/dict-aws@4.0.16...@cspell/dict-aws@4.0.17) (2025-12-13)
+
+
+### Updates and Bug Fixes
+
+* adds aws terms and fixes typos ([#5026](https://github.com/streetsidesoftware/cspell-dicts/issues/5026)) ([2c2730b](https://github.com/streetsidesoftware/cspell-dicts/commit/2c2730b9cd03ed797ae83002f44b6c45cbcea831))
+
 ## [4.0.16](https://github.com/streetsidesoftware/cspell-dicts/compare/@cspell/dict-aws@4.0.15...@cspell/dict-aws@4.0.16) (2025-11-15)
 
 

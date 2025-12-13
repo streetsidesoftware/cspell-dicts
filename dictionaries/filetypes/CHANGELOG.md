@@ -3,6 +3,13 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+## [3.0.15](https://github.com/streetsidesoftware/cspell-dicts/compare/@cspell/dict-filetypes@3.0.14...@cspell/dict-filetypes@3.0.15) (2025-12-13)
+
+
+### Updates and Bug Fixes
+
+* reduce gdscript dictionary size ([#5053](https://github.com/streetsidesoftware/cspell-dicts/issues/5053)) ([8d6ef78](https://github.com/streetsidesoftware/cspell-dicts/commit/8d6ef78e94a677ab637647aa20d4fdba8e72fe69))
+
 ## [3.0.14](https://github.com/streetsidesoftware/cspell-dicts/compare/@cspell/dict-filetypes@3.0.13...@cspell/dict-filetypes@3.0.14) (2025-10-19)
 
 
