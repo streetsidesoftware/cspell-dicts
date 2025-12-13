@@ -19,6 +19,7 @@
 * Add prepopulate to coding terms ([#5034](https://github.com/streetsidesoftware/cspell-dicts/issues/5034)) ([2a93621](https://github.com/streetsidesoftware/cspell-dicts/commit/2a93621fb82c60ff119e31ee42f370f7401e1f0b))
 * Add timestep ([#5031](https://github.com/streetsidesoftware/cspell-dicts/issues/5031)) ([cffc7f4](https://github.com/streetsidesoftware/cspell-dicts/commit/cffc7f42ff468bb49a571f3ee17735f55e4507ca))
 * adds aws terms and fixes typos ([#5026](https://github.com/streetsidesoftware/cspell-dicts/issues/5026)) ([2c2730b](https://github.com/streetsidesoftware/cspell-dicts/commit/2c2730b9cd03ed797ae83002f44b6c45cbcea831))
+* Reduce dictionary size ([#5057](https://github.com/streetsidesoftware/cspell-dicts/issues/5057)) ([a154de2](https://github.com/streetsidesoftware/cspell-dicts/commit/a154de2144cc45da7c210cd9208d667ca22ce041))
 * reduce gdscript dictionary size ([#5053](https://github.com/streetsidesoftware/cspell-dicts/issues/5053)) ([8d6ef78](https://github.com/streetsidesoftware/cspell-dicts/commit/8d6ef78e94a677ab637647aa20d4fdba8e72fe69))
 * Workflow Bot -- Build Dictionaries ([#5030](https://github.com/streetsidesoftware/cspell-dicts/issues/5030)) ([50db2f5](https://github.com/streetsidesoftware/cspell-dicts/commit/50db2f5e5d7c5edba20eef764503aa76a162e090))
 * Workflow Bot -- Build Dictionaries ([#5037](https://github.com/streetsidesoftware/cspell-dicts/issues/5037)) ([c4b91d1](https://github.com/streetsidesoftware/cspell-dicts/commit/c4b91d112eb1e7c772295f4295ed2d26fa8019e0))

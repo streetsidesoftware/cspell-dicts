@@ -11,6 +11,7 @@
 ### Updates and Bug Fixes
 
 * add missing getters, setters, and module symbols ([#5052](https://github.com/streetsidesoftware/cspell-dicts/issues/5052)) ([0f07502](https://github.com/streetsidesoftware/cspell-dicts/commit/0f07502cdff8d965529731a5cbd322f6f66cfcb3))
+* Reduce dictionary size ([#5057](https://github.com/streetsidesoftware/cspell-dicts/issues/5057)) ([a154de2](https://github.com/streetsidesoftware/cspell-dicts/commit/a154de2144cc45da7c210cd9208d667ca22ce041))
 * reduce gdscript dictionary size ([#5053](https://github.com/streetsidesoftware/cspell-dicts/issues/5053)) ([8d6ef78](https://github.com/streetsidesoftware/cspell-dicts/commit/8d6ef78e94a677ab637647aa20d4fdba8e72fe69))
 
 ## 1.0.0
