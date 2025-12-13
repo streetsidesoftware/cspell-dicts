@@ -17,6 +17,7 @@ autowrap
 backbuffer
 backface
 BASESTATION
+BDIAGSIZE
 bezier
 bg
 bgcolor
@@ -26,8 +27,6 @@ bitfield
 blit
 bmp
 bokeh
-BPTC
-BPTC
 BPTC
 breakpoint
 breakpointed
@@ -40,6 +39,7 @@ ccdik
 cmdline
 colorpicker
 cpu
+CTYPE
 deadzone
 debanding
 DECEMBER
@@ -59,6 +59,8 @@ euler
 Euler
 EULER
 fabrik
+FASTLZ
+FDIAGSIZE
 FEBRUARY
 fft # Fast Fourier transform
 fg
@@ -87,6 +89,7 @@ h
 handshake
 handshakes
 handshaking
+HBGR
 hbox
 hcenter
 hdr
@@ -95,9 +98,13 @@ heightmap
 HLSL
 hmd
 hotspot
+HRGB
+HSIZE
 hsl
+HSPLIT
 HSV
 hz
+IBEAM
 idx
 ik
 IMA
@@ -146,7 +153,6 @@ NOVEMBER
 numpad
 nvidia
 occluder
-occluder
 occluders
 OCTOBER
 octree
@@ -165,12 +171,11 @@ po
 postinitialize
 predelay
 predelete
+PREMULT
 prepass
 ptr
 pushed
 pushin
-pushin
-pushout
 pushout
 pwa
 px
@@ -186,8 +191,6 @@ REINHARDT
 renderable
 reprojection
 RG
-RG
-RG
 rgb
 rgba
 RGBA
@@ -195,12 +198,10 @@ RGBAF
 RGBAH
 rgbe
 RGBF
-RGBF
 RGBFU
 RGBH
 RGF
 RGH
-RGTC
 RGTC
 RH
 RLE
@@ -254,6 +255,7 @@ tts
 TTS
 TUESDAY
 tweens
+TYPECHANGE
 UCC
 ufloat
 ui
@@ -270,16 +272,19 @@ uscaled
 usec
 utf
 uv
-uv
 UV
 uvec
 uvw
+VBGR
 vbox
 vcenter
 vcs
 VCS
 vec
 vram
+VRGB
+VSIZE
+VSPLIT
 vt
 wav
 wchar
@@ -299,18 +304,3 @@ YCB
 YCBCR
 yz
 znear
-HBGR
-HRGB
-VBGR
-VRGB
-BDIAGSIZE
-FDIAGSIZE
-HSIZE
-HSPLIT
-IBEAM
-VSIZE
-VSPLIT
-CTYPE
-FASTLZ
-TYPECHANGE
-PREMULT
