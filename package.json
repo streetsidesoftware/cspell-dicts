@@ -25,6 +25,7 @@
     "prepublishOnly": "pnpm prepare:dictionaries",
     "prepare:dictionaries": "pnpm -r run --stream --workspace-concurrency 3 prepare:dictionary",
     "setup": "pnpm i && pnpm prepare:dictionaries",
+    "setup-repo": "pnpm run setup",
     "pub-recover": "lerna publish from-package --no-push --no-private --concurrency 1",
     "#update-dictionaries": "# Update dictionaries will run the update-dictionary script in each dictionary package.",
     "update-dictionaries": "pnpm -r run --stream --workspace-concurrency 2 update-dictionary",
