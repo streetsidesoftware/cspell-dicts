@@ -1,8 +1,10 @@
 #!/usr/bin/env python3
-from typing import Set, List
+from typing import Set
 
-from os import listdir, getcwd
-from os.path import join, exists, isfile
+from os import getcwd
+from os.path import join, exists, isfile, abspath
+
+import glob
 
 import git
 from git import Repo
@@ -117,6 +119,12 @@ def parse_file(filepath: str) -> None:
             enum = m.get("enum")
             if enum is not None:
                 TYPES.update(enum.split("."))
+            getter = m.get("getter")
+            if getter is not None and len(getter) > 0:
+                METHODS.add(getter)
+            setter = m.get("setter")
+            if setter is not None and len(setter) > 0:
+                METHODS.add(setter)
 
     signals = root.find("signals")
     if signals is not None:
@@ -149,23 +157,14 @@ def main():
     if repo is None:
         return
 
-    doc_dirs: List[str] = [
-        join(repo.working_dir, "doc", "classes"),
-        join(repo.working_dir, "modules", "gdscript", "doc_classes"),
-    ]
-
-    files: Set[str] = set()
-    for dir in doc_dirs:
-        if not exists(dir):
-            print(f"[!] Directory '{dir}' doesn't exist")
-            continue
-        files.update(
-            [
-                join(dir, f)
-                for f in listdir(dir)
-                if f.endswith(".xml") and isfile(join(dir, f))
-            ]
-        )
+    files: Set[str] = {
+        abspath(f)
+        for f in [
+            *glob.glob("./godot/doc/classes/*.xml"),
+            *glob.glob("./godot/modules/**/doc_classes/*.xml", recursive=True),
+        ]
+        if isfile(f)
+    }
     print(f"[-] Found {len(files)} files to parse")
 
     print("[-] Parsing files...")
