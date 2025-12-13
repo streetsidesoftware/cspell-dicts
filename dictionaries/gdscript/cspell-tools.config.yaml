@@ -7,12 +7,13 @@ targets:
         split: true
         allowedSplitWords:
           - ../en_US/en_US.trie
+          - ../html/dict/html.txt
           - ../software-terms/dict/softwareTerms.txt
+          - ./src/gdscript-words/gdscript.txt # We can use whole words from the source file for splitting.
+          - ./src/gdscript.txt
+          - ./src/split-words.txt
       - filename: 'src/gdscript.txt'
         split: true
-        allowedSplitWords:
-          - ../en_US/en_US.trie
-          - ../software-terms/dict/softwareTerms.txt
     format: 'plaintext'
     targetDirectory: './dict'
     generateNonStrict: false
