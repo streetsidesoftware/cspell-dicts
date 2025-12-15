@@ -19,16 +19,16 @@ importers:
         version: 9.39.2
       '@lerna-lite/cli':
         specifier: ^4.10.2
-        version: 4.10.2(@lerna-lite/exec@4.10.2)(@lerna-lite/publish@4.10.2)(@lerna-lite/run@4.10.2)(@lerna-lite/version@4.10.2(@lerna-lite/exec@4.10.2)(@lerna-lite/publish@4.10.2)(@lerna-lite/run@4.10.2)(@types/node@25.0.1)(conventional-commits-filter@5.0.0))(@types/node@25.0.1)
+        version: 4.10.2(@lerna-lite/exec@4.10.2)(@lerna-lite/publish@4.10.2)(@lerna-lite/run@4.10.2)(@lerna-lite/version@4.10.2(@lerna-lite/exec@4.10.2)(@lerna-lite/publish@4.10.2)(@lerna-lite/run@4.10.2)(@types/node@25.0.2)(conventional-commits-filter@5.0.0))(@types/node@25.0.2)
       '@lerna-lite/exec':
         specifier: ^4.10.2
-        version: 4.10.2(@lerna-lite/publish@4.10.2)(@lerna-lite/run@4.10.2)(@types/node@25.0.1)
+        version: 4.10.2(@lerna-lite/publish@4.10.2)(@lerna-lite/run@4.10.2)(@types/node@25.0.2)
       '@lerna-lite/publish':
         specifier: ^4.10.2
-        version: 4.10.2(@lerna-lite/exec@4.10.2)(@lerna-lite/run@4.10.2)(@types/node@25.0.1)(conventional-commits-filter@5.0.0)
+        version: 4.10.2(@lerna-lite/exec@4.10.2)(@lerna-lite/run@4.10.2)(@types/node@25.0.2)(conventional-commits-filter@5.0.0)
       '@lerna-lite/run':
         specifier: ^4.10.2
-        version: 4.10.2(@lerna-lite/exec@4.10.2)(@lerna-lite/publish@4.10.2)(@types/node@25.0.1)
+        version: 4.10.2(@lerna-lite/exec@4.10.2)(@lerna-lite/publish@4.10.2)(@types/node@25.0.2)
       ava:
         specifier: ^6.4.1
         version: 6.4.1(encoding@0.1.13)
@@ -692,10 +692,10 @@ importers:
         version: 5.6.2
       yeoman-environment:
         specifier: ^4.4.3
-        version: 4.4.3(@types/node@25.0.1)(@yeoman/types@1.2.0(@types/inquirer@9.0.9)(mem-fs@4.1.0))(mem-fs@4.1.0)
+        version: 4.4.3(@types/node@25.0.2)(@yeoman/types@1.2.0(@types/inquirer@9.0.9)(mem-fs@4.1.0))(mem-fs@4.1.0)
       yeoman-generator:
         specifier: ^7.5.1
-        version: 7.5.1(@types/node@25.0.1)(@yeoman/types@1.2.0(@types/inquirer@9.0.9)(mem-fs@4.1.0))(mem-fs@4.1.0)
+        version: 7.5.1(@types/node@25.0.2)(@yeoman/types@1.2.0(@types/inquirer@9.0.9)(mem-fs@4.1.0))(mem-fs@4.1.0)
       yosay:
         specifier: ^3.0.0
         version: 3.0.0
@@ -725,8 +725,8 @@ importers:
         specifier: ^20.1.8
         version: 20.1.8
       '@types/node':
-        specifier: ^20.19.26
-        version: 20.19.26
+        specifier: ^25.0.2
+        version: 25.0.2
       typescript:
         specifier: ^5.9.3
         version: 5.9.3
@@ -1635,14 +1635,14 @@ packages:
   '@types/node@16.18.126':
     resolution: {integrity: sha512-OTcgaiwfGFBKacvfwuHzzn1KLxH/er8mluiy8/uM3sGXHaRe73RrSIj01jow9t4kJEW633Ov+cOexXeiApTyAw==}
 
-  '@types/node@20.19.26':
-    resolution: {integrity: sha512-0l6cjgF0XnihUpndDhk+nyD3exio3iKaYROSgvh/qSevPXax3L8p5DBRFjbvalnwatGgHEQn2R88y2fA3g4irg==}
+  '@types/node@20.19.27':
+    resolution: {integrity: sha512-N2clP5pJhB2YnZJ3PIHFk5RkygRX5WO/5f0WC08tp0wd+sv0rsJk3MqWn3CbNmT2J505a5336jaQj4ph1AdMug==}
 
-  '@types/node@22.19.2':
-    resolution: {integrity: sha512-LPM2G3Syo1GLzXLGJAKdqoU35XvrWzGJ21/7sgZTUpbkBaOasTj8tjwn6w+hCkqaa1TfJ/w67rJSwYItlJ2mYw==}
+  '@types/node@22.19.3':
+    resolution: {integrity: sha512-1N9SBnWYOJTrNZCdh/yJE+t910Y128BoyY+zBLWhL3r0TYzlTmFdXrPwHL9DyFZmlEXNQQolTZh3KHV31QDhyA==}
 
-  '@types/node@25.0.1':
-    resolution: {integrity: sha512-czWPzKIAXucn9PtsttxmumiQ9N0ok9FrBwgRWrwmVLlp86BrMExzvXRLFYRJ+Ex3g6yqj+KuaxfX1JTgV2lpfg==}
+  '@types/node@25.0.2':
+    resolution: {integrity: sha512-gWEkeiyYE4vqjON/+Obqcoeffmk0NF15WSBwSs7zwVA2bAbTaE0SJ7P0WNGoJn8uE7fiaV5a7dKYIJriEqOrmA==}
 
   '@types/normalize-package-data@2.4.4':
     resolution: {integrity: sha512-37i+OaWTh9qeK4LSHPsyRC7NahnGotNuZvjLSgcPzblpHB3rrCJxAOgI5gCdKm7coonsaX1Of0ILiTcnZjbfxA==}
@@ -4986,56 +4986,56 @@ snapshots:
 
   '@inquirer/ansi@1.0.2': {}
 
-  '@inquirer/core@10.3.2(@types/node@25.0.1)':
+  '@inquirer/core@10.3.2(@types/node@25.0.2)':
     dependencies:
       '@inquirer/ansi': 1.0.2
       '@inquirer/figures': 1.0.15
-      '@inquirer/type': 3.0.10(@types/node@25.0.1)
+      '@inquirer/type': 3.0.10(@types/node@25.0.2)
       cli-width: 4.1.0
       mute-stream: 2.0.0
       signal-exit: 4.1.0
       wrap-ansi: 6.2.0
       yoctocolors-cjs: 2.1.3
     optionalDependencies:
-      '@types/node': 25.0.1
+      '@types/node': 25.0.2
 
-  '@inquirer/expand@4.0.23(@types/node@25.0.1)':
+  '@inquirer/expand@4.0.23(@types/node@25.0.2)':
     dependencies:
-      '@inquirer/core': 10.3.2(@types/node@25.0.1)
-      '@inquirer/type': 3.0.10(@types/node@25.0.1)
+      '@inquirer/core': 10.3.2(@types/node@25.0.2)
+      '@inquirer/type': 3.0.10(@types/node@25.0.2)
       yoctocolors-cjs: 2.1.3
     optionalDependencies:
-      '@types/node': 25.0.1
+      '@types/node': 25.0.2
 
-  '@inquirer/external-editor@1.0.3(@types/node@25.0.1)':
+  '@inquirer/external-editor@1.0.3(@types/node@25.0.2)':
     dependencies:
       chardet: 2.1.1
       iconv-lite: 0.7.1
     optionalDependencies:
-      '@types/node': 25.0.1
+      '@types/node': 25.0.2
 
   '@inquirer/figures@1.0.15': {}
 
-  '@inquirer/input@4.3.1(@types/node@25.0.1)':
+  '@inquirer/input@4.3.1(@types/node@25.0.2)':
     dependencies:
-      '@inquirer/core': 10.3.2(@types/node@25.0.1)
-      '@inquirer/type': 3.0.10(@types/node@25.0.1)
+      '@inquirer/core': 10.3.2(@types/node@25.0.2)
+      '@inquirer/type': 3.0.10(@types/node@25.0.2)
     optionalDependencies:
-      '@types/node': 25.0.1
+      '@types/node': 25.0.2
 
-  '@inquirer/select@4.4.2(@types/node@25.0.1)':
+  '@inquirer/select@4.4.2(@types/node@25.0.2)':
     dependencies:
       '@inquirer/ansi': 1.0.2
-      '@inquirer/core': 10.3.2(@types/node@25.0.1)
+      '@inquirer/core': 10.3.2(@types/node@25.0.2)
       '@inquirer/figures': 1.0.15
-      '@inquirer/type': 3.0.10(@types/node@25.0.1)
+      '@inquirer/type': 3.0.10(@types/node@25.0.2)
       yoctocolors-cjs: 2.1.3
     optionalDependencies:
-      '@types/node': 25.0.1
+      '@types/node': 25.0.2
 
-  '@inquirer/type@3.0.10(@types/node@25.0.1)':
+  '@inquirer/type@3.0.10(@types/node@25.0.2)':
     optionalDependencies:
-      '@types/node': 25.0.1
+      '@types/node': 25.0.2
 
   '@isaacs/balanced-match@4.0.1': {}
 
@@ -5066,10 +5066,10 @@ snapshots:
 
   '@kwsites/promise-deferred@1.1.1': {}
 
-  '@lerna-lite/cli@4.10.2(@lerna-lite/exec@4.10.2)(@lerna-lite/publish@4.10.2)(@lerna-lite/run@4.10.2)(@lerna-lite/version@4.10.2(@lerna-lite/exec@4.10.2)(@lerna-lite/publish@4.10.2)(@lerna-lite/run@4.10.2)(@types/node@25.0.1)(conventional-commits-filter@5.0.0))(@types/node@25.0.1)':
+  '@lerna-lite/cli@4.10.2(@lerna-lite/exec@4.10.2)(@lerna-lite/publish@4.10.2)(@lerna-lite/run@4.10.2)(@lerna-lite/version@4.10.2(@lerna-lite/exec@4.10.2)(@lerna-lite/publish@4.10.2)(@lerna-lite/run@4.10.2)(@types/node@25.0.2)(conventional-commits-filter@5.0.0))(@types/node@25.0.2)':
     dependencies:
-      '@lerna-lite/core': 4.10.2(@types/node@25.0.1)
-      '@lerna-lite/init': 4.10.2(@types/node@25.0.1)
+      '@lerna-lite/core': 4.10.2(@types/node@25.0.2)
+      '@lerna-lite/init': 4.10.2(@types/node@25.0.2)
       '@lerna-lite/npmlog': 4.10.0
       dedent: 1.7.0
       dotenv: 17.2.3
@@ -5077,20 +5077,20 @@ snapshots:
       load-json-file: 7.0.1
       yargs: 18.0.0
     optionalDependencies:
-      '@lerna-lite/exec': 4.10.2(@lerna-lite/publish@4.10.2)(@lerna-lite/run@4.10.2)(@types/node@25.0.1)
-      '@lerna-lite/publish': 4.10.2(@lerna-lite/exec@4.10.2)(@lerna-lite/run@4.10.2)(@types/node@25.0.1)(conventional-commits-filter@5.0.0)
-      '@lerna-lite/run': 4.10.2(@lerna-lite/exec@4.10.2)(@lerna-lite/publish@4.10.2)(@types/node@25.0.1)
-      '@lerna-lite/version': 4.10.2(@lerna-lite/exec@4.10.2)(@lerna-lite/publish@4.10.2)(@lerna-lite/run@4.10.2)(@types/node@25.0.1)(conventional-commits-filter@5.0.0)
+      '@lerna-lite/exec': 4.10.2(@lerna-lite/publish@4.10.2)(@lerna-lite/run@4.10.2)(@types/node@25.0.2)
+      '@lerna-lite/publish': 4.10.2(@lerna-lite/exec@4.10.2)(@lerna-lite/run@4.10.2)(@types/node@25.0.2)(conventional-commits-filter@5.0.0)
+      '@lerna-lite/run': 4.10.2(@lerna-lite/exec@4.10.2)(@lerna-lite/publish@4.10.2)(@types/node@25.0.2)
+      '@lerna-lite/version': 4.10.2(@lerna-lite/exec@4.10.2)(@lerna-lite/publish@4.10.2)(@lerna-lite/run@4.10.2)(@types/node@25.0.2)(conventional-commits-filter@5.0.0)
     transitivePeerDependencies:
       - '@types/node'
       - babel-plugin-macros
       - supports-color
 
-  '@lerna-lite/core@4.10.2(@types/node@25.0.1)':
+  '@lerna-lite/core@4.10.2(@types/node@25.0.2)':
     dependencies:
-      '@inquirer/expand': 4.0.23(@types/node@25.0.1)
-      '@inquirer/input': 4.3.1(@types/node@25.0.1)
-      '@inquirer/select': 4.4.2(@types/node@25.0.1)
+      '@inquirer/expand': 4.0.23(@types/node@25.0.2)
+      '@inquirer/input': 4.3.1(@types/node@25.0.2)
+      '@inquirer/select': 4.4.2(@types/node@25.0.2)
       '@lerna-lite/npmlog': 4.10.0
       '@npmcli/run-script': 10.0.3
       ci-info: 4.3.1
@@ -5119,11 +5119,11 @@ snapshots:
       - babel-plugin-macros
       - supports-color
 
-  '@lerna-lite/exec@4.10.2(@lerna-lite/publish@4.10.2)(@lerna-lite/run@4.10.2)(@types/node@25.0.1)':
+  '@lerna-lite/exec@4.10.2(@lerna-lite/publish@4.10.2)(@lerna-lite/run@4.10.2)(@types/node@25.0.2)':
     dependencies:
-      '@lerna-lite/cli': 4.10.2(@lerna-lite/exec@4.10.2)(@lerna-lite/publish@4.10.2)(@lerna-lite/run@4.10.2)(@lerna-lite/version@4.10.2(@lerna-lite/exec@4.10.2)(@lerna-lite/publish@4.10.2)(@lerna-lite/run@4.10.2)(@types/node@25.0.1)(conventional-commits-filter@5.0.0))(@types/node@25.0.1)
-      '@lerna-lite/core': 4.10.2(@types/node@25.0.1)
-      '@lerna-lite/profiler': 4.10.2(@types/node@25.0.1)
+      '@lerna-lite/cli': 4.10.2(@lerna-lite/exec@4.10.2)(@lerna-lite/publish@4.10.2)(@lerna-lite/run@4.10.2)(@lerna-lite/version@4.10.2(@lerna-lite/exec@4.10.2)(@lerna-lite/publish@4.10.2)(@lerna-lite/run@4.10.2)(@types/node@25.0.2)(conventional-commits-filter@5.0.0))(@types/node@25.0.2)
+      '@lerna-lite/core': 4.10.2(@types/node@25.0.2)
+      '@lerna-lite/profiler': 4.10.2(@types/node@25.0.2)
       dotenv: 17.2.3
       p-map: 7.0.4
       tinyrainbow: 3.0.3
@@ -5137,9 +5137,9 @@ snapshots:
       - babel-plugin-macros
       - supports-color
 
-  '@lerna-lite/init@4.10.2(@types/node@25.0.1)':
+  '@lerna-lite/init@4.10.2(@types/node@25.0.2)':
     dependencies:
-      '@lerna-lite/core': 4.10.2(@types/node@25.0.1)
+      '@lerna-lite/core': 4.10.2(@types/node@25.0.2)
       fs-extra: 11.3.2
       p-map: 7.0.4
       write-json-file: 7.0.0
@@ -5158,9 +5158,9 @@ snapshots:
       tinyrainbow: 3.0.3
       wide-align: 1.1.5
 
-  '@lerna-lite/profiler@4.10.2(@types/node@25.0.1)':
+  '@lerna-lite/profiler@4.10.2(@types/node@25.0.2)':
     dependencies:
-      '@lerna-lite/core': 4.10.2(@types/node@25.0.1)
+      '@lerna-lite/core': 4.10.2(@types/node@25.0.2)
       '@lerna-lite/npmlog': 4.10.0
       fs-extra: 11.3.2
       upath: 2.0.1
@@ -5169,12 +5169,12 @@ snapshots:
       - babel-plugin-macros
       - supports-color
 
-  '@lerna-lite/publish@4.10.2(@lerna-lite/exec@4.10.2)(@lerna-lite/run@4.10.2)(@types/node@25.0.1)(conventional-commits-filter@5.0.0)':
+  '@lerna-lite/publish@4.10.2(@lerna-lite/exec@4.10.2)(@lerna-lite/run@4.10.2)(@types/node@25.0.2)(conventional-commits-filter@5.0.0)':
     dependencies:
-      '@lerna-lite/cli': 4.10.2(@lerna-lite/exec@4.10.2)(@lerna-lite/publish@4.10.2)(@lerna-lite/run@4.10.2)(@lerna-lite/version@4.10.2(@lerna-lite/exec@4.10.2)(@lerna-lite/publish@4.10.2)(@lerna-lite/run@4.10.2)(@types/node@25.0.1)(conventional-commits-filter@5.0.0))(@types/node@25.0.1)
-      '@lerna-lite/core': 4.10.2(@types/node@25.0.1)
+      '@lerna-lite/cli': 4.10.2(@lerna-lite/exec@4.10.2)(@lerna-lite/publish@4.10.2)(@lerna-lite/run@4.10.2)(@lerna-lite/version@4.10.2(@lerna-lite/exec@4.10.2)(@lerna-lite/publish@4.10.2)(@lerna-lite/run@4.10.2)(@types/node@25.0.2)(conventional-commits-filter@5.0.0))(@types/node@25.0.2)
+      '@lerna-lite/core': 4.10.2(@types/node@25.0.2)
       '@lerna-lite/npmlog': 4.10.0
-      '@lerna-lite/version': 4.10.2(@lerna-lite/exec@4.10.2)(@lerna-lite/publish@4.10.2)(@lerna-lite/run@4.10.2)(@types/node@25.0.1)(conventional-commits-filter@5.0.0)
+      '@lerna-lite/version': 4.10.2(@lerna-lite/exec@4.10.2)(@lerna-lite/publish@4.10.2)(@lerna-lite/run@4.10.2)(@types/node@25.0.2)(conventional-commits-filter@5.0.0)
       '@npmcli/arborist': 9.1.9
       '@npmcli/package-json': 7.0.4
       byte-size: 9.0.1
@@ -5207,12 +5207,12 @@ snapshots:
       - conventional-commits-filter
       - supports-color
 
-  '@lerna-lite/run@4.10.2(@lerna-lite/exec@4.10.2)(@lerna-lite/publish@4.10.2)(@types/node@25.0.1)':
+  '@lerna-lite/run@4.10.2(@lerna-lite/exec@4.10.2)(@lerna-lite/publish@4.10.2)(@types/node@25.0.2)':
     dependencies:
-      '@lerna-lite/cli': 4.10.2(@lerna-lite/exec@4.10.2)(@lerna-lite/publish@4.10.2)(@lerna-lite/run@4.10.2)(@lerna-lite/version@4.10.2(@lerna-lite/exec@4.10.2)(@lerna-lite/publish@4.10.2)(@lerna-lite/run@4.10.2)(@types/node@25.0.1)(conventional-commits-filter@5.0.0))(@types/node@25.0.1)
-      '@lerna-lite/core': 4.10.2(@types/node@25.0.1)
+      '@lerna-lite/cli': 4.10.2(@lerna-lite/exec@4.10.2)(@lerna-lite/publish@4.10.2)(@lerna-lite/run@4.10.2)(@lerna-lite/version@4.10.2(@lerna-lite/exec@4.10.2)(@lerna-lite/publish@4.10.2)(@lerna-lite/run@4.10.2)(@types/node@25.0.2)(conventional-commits-filter@5.0.0))(@types/node@25.0.2)
+      '@lerna-lite/core': 4.10.2(@types/node@25.0.2)
       '@lerna-lite/npmlog': 4.10.0
-      '@lerna-lite/profiler': 4.10.2(@types/node@25.0.1)
+      '@lerna-lite/profiler': 4.10.2(@types/node@25.0.2)
       fs-extra: 11.3.2
       p-map: 7.0.4
       tinyrainbow: 3.0.3
@@ -5226,11 +5226,11 @@ snapshots:
       - babel-plugin-macros
       - supports-color
 
-  '@lerna-lite/version@4.10.2(@lerna-lite/exec@4.10.2)(@lerna-lite/publish@4.10.2)(@lerna-lite/run@4.10.2)(@types/node@25.0.1)(conventional-commits-filter@5.0.0)':
+  '@lerna-lite/version@4.10.2(@lerna-lite/exec@4.10.2)(@lerna-lite/publish@4.10.2)(@lerna-lite/run@4.10.2)(@types/node@25.0.2)(conventional-commits-filter@5.0.0)':
     dependencies:
       '@conventional-changelog/git-client': 2.5.1(conventional-commits-filter@5.0.0)(conventional-commits-parser@6.2.1)
-      '@lerna-lite/cli': 4.10.2(@lerna-lite/exec@4.10.2)(@lerna-lite/publish@4.10.2)(@lerna-lite/run@4.10.2)(@lerna-lite/version@4.10.2(@lerna-lite/exec@4.10.2)(@lerna-lite/publish@4.10.2)(@lerna-lite/run@4.10.2)(@types/node@25.0.1)(conventional-commits-filter@5.0.0))(@types/node@25.0.1)
-      '@lerna-lite/core': 4.10.2(@types/node@25.0.1)
+      '@lerna-lite/cli': 4.10.2(@lerna-lite/exec@4.10.2)(@lerna-lite/publish@4.10.2)(@lerna-lite/run@4.10.2)(@lerna-lite/version@4.10.2(@lerna-lite/exec@4.10.2)(@lerna-lite/publish@4.10.2)(@lerna-lite/run@4.10.2)(@types/node@25.0.2)(conventional-commits-filter@5.0.0))(@types/node@25.0.2)
+      '@lerna-lite/core': 4.10.2(@types/node@25.0.2)
       '@lerna-lite/npmlog': 4.10.0
       '@octokit/plugin-enterprise-rest': 6.0.1
       '@octokit/rest': 22.0.1
@@ -5765,11 +5765,11 @@ snapshots:
   '@simple-libs/child-process-utils@1.0.1':
     dependencies:
       '@simple-libs/stream-utils': 1.1.0
-      '@types/node': 22.19.2
+      '@types/node': 22.19.3
 
   '@simple-libs/stream-utils@1.1.0':
     dependencies:
-      '@types/node': 22.19.2
+      '@types/node': 22.19.3
 
   '@sindresorhus/merge-streams@2.3.0': {}
 
@@ -5828,15 +5828,15 @@ snapshots:
 
   '@types/node@16.18.126': {}
 
-  '@types/node@20.19.26':
+  '@types/node@20.19.27':
     dependencies:
       undici-types: 6.21.0
 
-  '@types/node@22.19.2':
+  '@types/node@22.19.3':
     dependencies:
       undici-types: 6.21.0
 
-  '@types/node@25.0.1':
+  '@types/node@25.0.2':
     dependencies:
       undici-types: 7.16.0
 
@@ -5850,7 +5850,7 @@ snapshots:
 
   '@types/through@0.0.33':
     dependencies:
-      '@types/node': 25.0.1
+      '@types/node': 25.0.2
 
   '@types/unist@2.0.11': {}
 
@@ -5859,7 +5859,7 @@ snapshots:
   '@types/vinyl@2.0.12':
     dependencies:
       '@types/expect': 1.20.4
-      '@types/node': 25.0.1
+      '@types/node': 25.0.2
 
   '@vercel/nft@0.29.4(encoding@0.1.13)':
     dependencies:
@@ -5880,11 +5880,11 @@ snapshots:
       - rollup
       - supports-color
 
-  '@yeoman/adapter@1.6.0(@types/node@25.0.1)':
+  '@yeoman/adapter@1.6.0(@types/node@25.0.2)':
     dependencies:
       '@types/inquirer': 9.0.9
       chalk: 5.6.2
-      inquirer: 9.3.8(@types/node@25.0.1)
+      inquirer: 9.3.8(@types/node@25.0.2)
       log-symbols: 7.0.1
       ora: 8.2.0
       p-queue: 8.1.1
@@ -5892,9 +5892,9 @@ snapshots:
     transitivePeerDependencies:
       - '@types/node'
 
-  '@yeoman/conflicter@2.4.0(@types/node@25.0.1)(@yeoman/types@1.2.0(@types/inquirer@9.0.9)(mem-fs@4.1.0))(mem-fs@4.1.0)':
+  '@yeoman/conflicter@2.4.0(@types/node@25.0.2)(@yeoman/types@1.2.0(@types/inquirer@9.0.9)(mem-fs@4.1.0))(mem-fs@4.1.0)':
     dependencies:
-      '@types/node': 25.0.1
+      '@types/node': 25.0.2
       '@yeoman/transform': 1.2.0
       '@yeoman/types': 1.2.0(@types/inquirer@9.0.9)(mem-fs@4.1.0)
       binary-extensions: 2.3.0
@@ -7162,9 +7162,9 @@ snapshots:
     transitivePeerDependencies:
       - supports-color
 
-  inquirer@9.3.8(@types/node@25.0.1):
+  inquirer@9.3.8(@types/node@25.0.2):
     dependencies:
-      '@inquirer/external-editor': 1.0.3(@types/node@25.0.1)
+      '@inquirer/external-editor': 1.0.3(@types/node@25.0.2)
       '@inquirer/figures': 1.0.15
       ansi-escapes: 4.3.2
       cli-width: 4.1.0
@@ -7592,7 +7592,7 @@ snapshots:
   mem-fs-editor@11.1.4(mem-fs@4.1.0):
     dependencies:
       '@types/ejs': 3.1.5
-      '@types/node': 25.0.1
+      '@types/node': 25.0.2
       binaryextensions: 6.11.0
       commondir: 1.0.1
       deep-extend: 0.6.0
@@ -7611,7 +7611,7 @@ snapshots:
 
   mem-fs@4.1.0:
     dependencies:
-      '@types/node': 20.19.26
+      '@types/node': 20.19.27
       '@types/vinyl': 2.0.12
       vinyl: 3.0.1
       vinyl-file: 5.0.0
@@ -8295,7 +8295,7 @@ snapshots:
 
   p-transform@4.1.6:
     dependencies:
-      '@types/node': 25.0.1
+      '@types/node': 25.0.2
       p-queue: 7.4.1
       readable-stream: 4.7.0
 
@@ -9274,10 +9274,10 @@ snapshots:
       y18n: 5.0.8
       yargs-parser: 22.0.0
 
-  yeoman-environment@4.4.3(@types/node@25.0.1)(@yeoman/types@1.2.0(@types/inquirer@9.0.9)(mem-fs@4.1.0))(mem-fs@4.1.0):
+  yeoman-environment@4.4.3(@types/node@25.0.2)(@yeoman/types@1.2.0(@types/inquirer@9.0.9)(mem-fs@4.1.0))(mem-fs@4.1.0):
     dependencies:
-      '@yeoman/adapter': 1.6.0(@types/node@25.0.1)
-      '@yeoman/conflicter': 2.4.0(@types/node@25.0.1)(@yeoman/types@1.2.0(@types/inquirer@9.0.9)(mem-fs@4.1.0))(mem-fs@4.1.0)
+      '@yeoman/adapter': 1.6.0(@types/node@25.0.2)
+      '@yeoman/conflicter': 2.4.0(@types/node@25.0.2)(@yeoman/types@1.2.0(@types/inquirer@9.0.9)(mem-fs@4.1.0))(mem-fs@4.1.0)
       '@yeoman/namespace': 1.0.1
       '@yeoman/transform': 1.2.0
       '@yeoman/types': 1.2.0(@types/inquirer@9.0.9)(mem-fs@4.1.0)
@@ -9304,7 +9304,7 @@ snapshots:
       - react-native-b4a
       - supports-color
 
-  yeoman-generator@7.5.1(@types/node@25.0.1)(@yeoman/types@1.2.0(@types/inquirer@9.0.9)(mem-fs@4.1.0))(mem-fs@4.1.0):
+  yeoman-generator@7.5.1(@types/node@25.0.2)(@yeoman/types@1.2.0(@types/inquirer@9.0.9)(mem-fs@4.1.0))(mem-fs@4.1.0):
     dependencies:
       '@types/lodash-es': 4.17.12
       '@yeoman/namespace': 1.0.1
@@ -9325,7 +9325,7 @@ snapshots:
       sort-keys: 5.1.0
       text-table: 0.2.0
     optionalDependencies:
-      '@types/node': 25.0.1
+      '@types/node': 25.0.2
     transitivePeerDependencies:
       - bare-abort-controller
       - react-native-b4a
