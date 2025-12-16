@@ -9,7 +9,7 @@ importers:
   .:
     devDependencies:
       '@cspell/cspell-tools':
-        specifier: ^9.4.0
+        specifier: ^9.5.0
         version: 9.5.0(typescript@5.9.3)
       '@cspell/dict-cspell-bundle':
         specifier: workspace:*
@@ -48,7 +48,7 @@ importers:
         specifier: workspace:*
         version: link:scripts
       cspell-trie:
-        specifier: ^9.4.0
+        specifier: ^9.5.0
         version: 9.5.0
       eslint:
         specifier: ^9.39.2
@@ -60,7 +60,7 @@ importers:
         specifier: ^16.5.0
         version: 16.5.0
       hunspell-reader:
-        specifier: ^9.4.0
+        specifier: ^9.5.0
         version: 9.5.0
       inject-markdown:
         specifier: ^4.0.0
@@ -347,11 +347,11 @@ importers:
   dictionaries/en-common-misspellings/scripts:
     dependencies:
       cspell-io:
-        specifier: ^9.4.0
-        version: 9.4.0
+        specifier: ^9.5.0
+        version: 9.5.0
       cspell-trie-lib:
-        specifier: ^9.4.0
-        version: 9.4.0
+        specifier: ^9.5.0
+        version: 9.5.0
       yaml:
         specifier: ^2.8.2
         version: 2.8.2
@@ -567,8 +567,8 @@ importers:
   dictionaries/npm/scripts:
     dependencies:
       '@cspell/normalize-json':
-        specifier: ^9.4.0
-        version: 9.4.0
+        specifier: ^9.5.0
+        version: 9.5.0
       csv-stringify:
         specifier: ^6.6.0
         version: 6.6.0
@@ -703,8 +703,8 @@ importers:
   packages/en-freq:
     dependencies:
       '@cspell/cspell-pipe':
-        specifier: ^9.4.0
-        version: 9.4.0
+        specifier: ^9.5.0
+        version: 9.5.0
       as-table:
         specifier: ^1.0.55
         version: 1.0.55
@@ -715,8 +715,8 @@ importers:
         specifier: ^14.0.2
         version: 14.0.2
       cspell-trie-lib:
-        specifier: ^9.4.0
-        version: 9.4.0
+        specifier: ^9.5.0
+        version: 9.5.0
       globby:
         specifier: ^16.0.0
         version: 16.0.0
@@ -743,20 +743,20 @@ importers:
         specifier: ^14.0.2
         version: 14.0.2
       cspell-config-lib:
-        specifier: ^9.4.0
-        version: 9.4.0
+        specifier: ^9.5.0
+        version: 9.5.0
       cspell-dictionary:
         specifier: ^9.4.0
         version: 9.4.0
       cspell-io:
-        specifier: ^9.4.0
-        version: 9.4.0
+        specifier: ^9.5.0
+        version: 9.5.0
       cspell-lib:
         specifier: ^9.4.0
         version: 9.4.0
       cspell-trie-lib:
-        specifier: ^9.4.0
-        version: 9.4.0
+        specifier: ^9.5.0
+        version: 9.5.0
       globby:
         specifier: ^16.0.0
         version: 16.0.0
@@ -783,7 +783,7 @@ importers:
         version: 2.8.2
     devDependencies:
       '@cspell/cspell-types':
-        specifier: ^9.4.0
+        specifier: ^9.5.0
         version: 9.5.0
       '@types/mdast':
         specifier: ^4.0.4
@@ -833,6 +833,10 @@ packages:
 
   '@cspell/cspell-service-bus@9.4.0':
     resolution: {integrity: sha512-UottRlFPN6FGUfojx5HtUPZTeYXg2rf2HvO/HLh0KicirVYO16vFxTevg9MyOvw1EXSsDRz8ECANjiE7fnzBCQ==}
+    engines: {node: '>=20'}
+
+  '@cspell/cspell-service-bus@9.5.0':
+    resolution: {integrity: sha512-LmALjTBv08RfnNWMNWUDinarZTmbF0iTHEX5gad+WWipu65pJxsehfP/ItCBOWIs9JYUeTKod8svvxsm/WiEgw==}
     engines: {node: '>=20'}
 
   '@cspell/cspell-tools@9.5.0':
@@ -1038,8 +1042,8 @@ packages:
     resolution: {integrity: sha512-RMrYHkvPF0tHVFM+T4voEhX9sfYQrd/mnNbf6+O4CWUyLCz4NQ5H9yOgEIJwEcLu4y3NESGXFef/Jn5xo0CUfg==}
     engines: {node: '>=20'}
 
-  '@cspell/normalize-json@9.4.0':
-    resolution: {integrity: sha512-rnZozwpJb2WM6FqZhIU38yBY1C+jEEj/vs+Cc6AcjgSfZ7TT1FeAFLi9afQM2pFg+f5q6vXp6+dGbZ/w2YoGQg==}
+  '@cspell/normalize-json@9.5.0':
+    resolution: {integrity: sha512-O5BC8USPjHYtjYU84bqeV0rIocmK/QI9lrKjAn1+pjF4oglth6V5LDTTVI5FegQyjlzUo69nP5rZpW0+mrY5fg==}
     engines: {node: '>=20'}
 
   '@cspell/strong-weak-map@9.4.0':
@@ -1048,6 +1052,10 @@ packages:
 
   '@cspell/url@9.4.0':
     resolution: {integrity: sha512-nt88P6m20AaVbqMxsyPf8KqyWPaFEW2UANi0ijBxc2xTkD2KiUovxfZUYW6NMU9XBYZlovT5LztkEhst2yBcSA==}
+    engines: {node: '>=20'}
+
+  '@cspell/url@9.5.0':
+    resolution: {integrity: sha512-1Lqohnc1eTC5o5SYmm3VsUH1iIthvDkPkLXswgMQgIjmfWIXn/fRuPPsB0Mo0vZB/+LMbmpcMVuvNeO/n8uJDg==}
     engines: {node: '>=20'}
 
   '@epic-web/invariant@1.0.0':
@@ -2179,6 +2187,10 @@ packages:
     resolution: {integrity: sha512-CvQKSmK/DRIf3LpNx2sZth65pHW2AHngZqLkH3DTwnAPbiCAsE0XvCrVhvDfCNu/6uJIaa+NVHSs8GOf//DHBQ==}
     engines: {node: '>=20'}
 
+  cspell-config-lib@9.5.0:
+    resolution: {integrity: sha512-1ZCfKUJ8Q0udTIfzglgxQFe6H9l0MhCjPMzsOUtBcQnUsjI7JZpQAe6ij7GIeJjOVVXdcB/WfXScBQ508YHSfA==}
+    engines: {node: '>=20'}
+
   cspell-dictionary@9.4.0:
     resolution: {integrity: sha512-c2qscanRZChoHZFYI7KpvBMdy8i6wNwl2EflcNRrFiFOq67t9CgxLe54PafaqhrHGpBc8nElaZKciLvjj6Uscw==}
     engines: {node: '>=20'}
@@ -2199,6 +2211,10 @@ packages:
 
   cspell-io@9.4.0:
     resolution: {integrity: sha512-8w30dqlO54H9w6WGlvZhHI5kytVbF3bYPqKJAZLWKEO36L2mdpf6/abx/FA4yVLJ56wmH1x0N0ZK32wNRl5C6A==}
+    engines: {node: '>=20'}
+
+  cspell-io@9.5.0:
+    resolution: {integrity: sha512-T8gBAtiLFK7JNk9lGvQdeDqR7sCRKeOh0vGw8wc8eXQhodtFkxLXPnJKL3HxsFoxsxaSYU8sqe4AVTpPYDkcDw==}
     engines: {node: '>=20'}
 
   cspell-lib@9.4.0:
@@ -2609,8 +2625,8 @@ packages:
     resolution: {integrity: sha512-f7ccFPK3SXFHpx15UIGyRJ/FJQctuKZ0zVuN3frBo4HnK3cay9VEW0R6yPYFHC0AgqhukPzKjq22t5DmAyqGyw==}
     engines: {node: '>=16'}
 
-  flatpack-json@9.4.0:
-    resolution: {integrity: sha512-NFQ8hSphJ/Ex8j4pB1Os0E79KBAxrppoR+OvWbPsJaado+UaYrYQ5jjh233VaywIrBw3dyGCD1s0rwRQ/80vSw==}
+  flatpack-json@9.5.0:
+    resolution: {integrity: sha512-cvS7zlhO7tkHpGnalttkfdqYYshZJHoiFp8CPvsr8t2Tb9t6frB1ODO0s5JLCdasgB79AgossO05I1h1pY+uZg==}
     engines: {node: '>=20'}
 
   flatted@3.3.3:
@@ -3151,8 +3167,8 @@ packages:
     resolution: {integrity: sha512-gvVijfZvn7R+2qyPX8mAuKcFGDf6Nc61GdvGafQsHL0sBIxfKzA+usWn4GFC/bk+QdwPUD4kWFJLhElipq+0VA==}
     engines: {node: ^12.20.0 || ^14.13.1 || >=16.0.0}
 
-  lodash-es@4.17.21:
-    resolution: {integrity: sha512-mKnC+QJ9pWVzv+C4/U3rRsHapFfHvQFoFB92e52xeyGMcX6/OlIl78je1u8vePzYZSkkogMPJ2yjxxsb89cxyw==}
+  lodash-es@4.17.22:
+    resolution: {integrity: sha512-XEawp1t0gxSi9x01glktRZ5HDy0HXqrM0x5pXQM98EaI0NxO6jVM7omDOxsuEo5UIASAnm2bRp1Jt/e0a2XU8Q==}
 
   lodash.merge@4.6.2:
     resolution: {integrity: sha512-0KpjqXRVvrYyCsX1swR/XTK0va6VQkQM6MNo7PqW77ByjAhoARA8EfrP1N4+KlKj8YS0ZUCtRT/YUuhyYDujIQ==}
@@ -4787,6 +4803,8 @@ snapshots:
 
   '@cspell/cspell-service-bus@9.4.0': {}
 
+  '@cspell/cspell-service-bus@9.5.0': {}
+
   '@cspell/cspell-tools@9.5.0(typescript@5.9.3)':
     dependencies:
       '@cspell/cspell-pipe': 9.5.0
@@ -4937,13 +4955,15 @@ snapshots:
 
   '@cspell/filetypes@9.4.0': {}
 
-  '@cspell/normalize-json@9.4.0':
+  '@cspell/normalize-json@9.5.0':
     dependencies:
-      flatpack-json: 9.4.0
+      flatpack-json: 9.5.0
 
   '@cspell/strong-weak-map@9.4.0': {}
 
   '@cspell/url@9.4.0': {}
+
+  '@cspell/url@9.5.0': {}
 
   '@epic-web/invariant@1.0.0': {}
 
@@ -5879,7 +5899,7 @@ snapshots:
   '@types/vinyl@2.0.12':
     dependencies:
       '@types/expect': 1.20.4
-      '@types/node': 20.19.27
+      '@types/node': 25.0.2
 
   '@vercel/nft@0.29.4(encoding@0.1.13)':
     dependencies:
@@ -6425,6 +6445,13 @@ snapshots:
       smol-toml: 1.5.2
       yaml: 2.8.2
 
+  cspell-config-lib@9.5.0:
+    dependencies:
+      '@cspell/cspell-types': 9.5.0
+      comment-json: 4.5.0
+      smol-toml: 1.5.2
+      yaml: 2.8.2
+
   cspell-dictionary@9.4.0:
     dependencies:
       '@cspell/cspell-pipe': 9.4.0
@@ -6452,6 +6479,11 @@ snapshots:
     dependencies:
       '@cspell/cspell-service-bus': 9.4.0
       '@cspell/url': 9.4.0
+
+  cspell-io@9.5.0:
+    dependencies:
+      '@cspell/cspell-service-bus': 9.5.0
+      '@cspell/url': 9.5.0
 
   cspell-lib@9.4.0:
     dependencies:
@@ -6892,7 +6924,7 @@ snapshots:
       flatted: 3.3.3
       keyv: 4.5.4
 
-  flatpack-json@9.4.0: {}
+  flatpack-json@9.5.0: {}
 
   flatted@3.3.3: {}
 
@@ -7398,7 +7430,7 @@ snapshots:
     dependencies:
       p-locate: 6.0.0
 
-  lodash-es@4.17.21: {}
+  lodash-es@4.17.22: {}
 
   lodash.merge@4.6.2: {}
 
@@ -9320,7 +9352,7 @@ snapshots:
       globby: 14.1.0
       grouped-queue: 2.1.0
       locate-path: 7.2.0
-      lodash-es: 4.17.21
+      lodash-es: 4.17.22
       mem-fs: 4.1.0
       mem-fs-editor: 11.1.4(mem-fs@4.1.0)
       semver: 7.7.3
@@ -9345,7 +9377,7 @@ snapshots:
       github-username: 9.0.0
       json-schema: 0.4.0
       latest-version: 9.0.0
-      lodash-es: 4.17.21
+      lodash-es: 4.17.22
       mem-fs: 4.1.0
       mem-fs-editor: 11.1.4(mem-fs@4.1.0)
       minimist: 1.2.8
