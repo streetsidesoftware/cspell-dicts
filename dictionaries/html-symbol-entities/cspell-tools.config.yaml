@@ -1,11 +1,12 @@
 # yaml-language-server: $schema=https://raw.githubusercontent.com/streetsidesoftware/cspell/main/packages/cspell-tools/cspell-tools.config.schema.json
 
+$schema: https://raw.githubusercontent.com/streetsidesoftware/cspell/main/packages/cspell-tools/cspell-tools.config.schema.json
 targets:
-  - name: clojure
+  - name: entities
     targetDirectory: dict
     compress: true
     keepUncompressed: true
     format: plaintext
     sources:
-      - src/clojure.txt
+      - src/entities.txt
     sort: true
