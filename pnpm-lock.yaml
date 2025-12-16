@@ -744,7 +744,7 @@ importers:
         version: 14.0.2
       cspell-config-lib:
         specifier: ^9.4.0
-        version: 9.4.0
+        version: 9.5.0
       cspell-dictionary:
         specifier: ^9.4.0
         version: 9.4.0
@@ -838,6 +838,10 @@ packages:
 
   '@cspell/cspell-types@9.4.0':
     resolution: {integrity: sha512-vSpd50OfmthBH0aRFRLA2zJFtwli3ntHA0WAOJ8tIMLUCJgF3udooRXFeX3wR8ri69C9mc3864LC4inyRC/E9w==}
+    engines: {node: '>=20'}
+
+  '@cspell/cspell-types@9.5.0':
+    resolution: {integrity: sha512-S7jiggB7iuvCG9R5O42PA7HoRtSIvWfUVUTRAd4eDBWOAR6vUQRuksbI79Qb+b4mhKajrkUGOCInnPDlniFMpA==}
     engines: {node: '>=20'}
 
   '@cspell/dict-ada@4.1.1':
@@ -2169,6 +2173,10 @@ packages:
 
   cspell-config-lib@9.4.0:
     resolution: {integrity: sha512-CvQKSmK/DRIf3LpNx2sZth65pHW2AHngZqLkH3DTwnAPbiCAsE0XvCrVhvDfCNu/6uJIaa+NVHSs8GOf//DHBQ==}
+    engines: {node: '>=20'}
+
+  cspell-config-lib@9.5.0:
+    resolution: {integrity: sha512-1ZCfKUJ8Q0udTIfzglgxQFe6H9l0MhCjPMzsOUtBcQnUsjI7JZpQAe6ij7GIeJjOVVXdcB/WfXScBQ508YHSfA==}
     engines: {node: '>=20'}
 
   cspell-dictionary@9.4.0:
@@ -4783,6 +4791,8 @@ snapshots:
 
   '@cspell/cspell-types@9.4.0': {}
 
+  '@cspell/cspell-types@9.5.0': {}
+
   '@cspell/dict-ada@4.1.1': {}
 
   '@cspell/dict-al@1.1.1': {}
@@ -6401,6 +6411,13 @@ snapshots:
   cspell-config-lib@9.4.0:
     dependencies:
       '@cspell/cspell-types': 9.4.0
+      comment-json: 4.5.0
+      smol-toml: 1.5.2
+      yaml: 2.8.2
+
+  cspell-config-lib@9.5.0:
+    dependencies:
+      '@cspell/cspell-types': 9.5.0
       comment-json: 4.5.0
       smol-toml: 1.5.2
       yaml: 2.8.2
