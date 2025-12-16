@@ -17,7 +17,7 @@
             "patterns": [
                 {
                     "name": "LaTexMacrosFunctionNames",
-                    "pattern": "/(?<!\\\\)\\\\\\w+/g",
+                    "pattern": "/(?<!\\\\)(\\\\\\\\)*\\\\\\w+/g",
                     "description": "Match against LaTex Macro function names"
                 },
                 {
@@ -27,17 +27,17 @@
                 },
                 {
                     "name": "LaTexMacrosMultiLine",
-                    "pattern": "/(?<!\\\\)\\\\(?!(?:title|color|section|subsection|footnote|chapter|part|caption|emph|enquote|text|in\\b))\\w+(?:\\[[^]*?\\]|\\{[^]*?\\})*/gi",
+                    "pattern": "/(?<!\\\\)(\\\\\\\\)*\\\\(?!(?:title|color|section|subsection|footnote|chapter|part|caption|emph|enquote|text|in\\b))\\w+(?:\\[[^]*?\\]|\\{[^]*?\\})*/gi",
                     "description": "Match against multi-line LaTex Macros"
                 },
                 {
                     "name": "LaTexMath",
-                    "pattern": "/(?<!(?<!(?<!\\\\)\\\\)\\\\)[$][^$]*[$]/g",
-                    "description": "Match against LaTex Math Macros"
+                    "pattern": "/(?<!(?<!\\\\)(\\\\\\\\)*%.*)(?<!\\\\)(\\\\\\\\)*[$]+(.|\r|\n)+?(?<!(?<!\\\\)(\\\\\\\\)*%.*)(?<!\\\\)(\\\\\\\\)*[$]+/",
+                    "description": "Match against LaTex Math Macros (dollar-delimited and uncommented only)"
                 },
                 {
                     "name": "comments",
-                    "pattern": "/(?<!\\\\)%.*/g",
+                    "pattern": "/((?<!\\\\)(\\\\\\\\)*)%.*/g",
                     "description": "Matches single-line comments in a LaTeX File"
                 }
             ],
