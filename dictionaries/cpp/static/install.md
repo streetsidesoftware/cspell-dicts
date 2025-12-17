@@ -13,7 +13,7 @@ Add the following to your VSCode settings:
 
 ```jsonc
 {
-  "cSpell.dictionaries": ["cpp-legacy", "cpp", "cpp-refined"],
+  "cSpell.dictionaries": ["cpp-legacy", "cpp", "cpp-compound-words", "cpp-refined"],
 }
 ```
 
@@ -26,7 +26,7 @@ Add the following to your VSCode settings:
 
 ```jsonc
 {
-  "dictionaries": ["cpp-legacy", "cpp", "cpp-refined"],
+  "dictionaries": ["cpp-legacy", "cpp", "cpp-compound-words", "cpp-refined"],
 }
 ```
 
@@ -41,6 +41,7 @@ Add the following to your VSCode settings:
 dictionaries:
   - cpp-legacy
   - cpp
+  - cpp-compound-words
   - cpp-refined
 ```
 
@@ -52,16 +53,18 @@ dictionaries:
 
 ## Dictionary Information
 
-| Name          | Enabled | Description                                                  |
-| ------------- | ------- | ------------------------------------------------------------ |
-| `cpp-legacy`  |         | Legacy C/C++ Keywords and common library functions.          |
-| `cpp`         |         | C/C++ Keywords and common library functions.                 |
-| `cpp-refined` |         | Refined list of C/C++ Keywords and common library functions. |
+| Name                 | Enabled | Description                                                  |
+| -------------------- | ------- | ------------------------------------------------------------ |
+| `cpp-legacy`         |         | Legacy C/C++ Keywords and common library functions.          |
+| `cpp`                |         | C/C++ Keywords and common library functions.                 |
+| `cpp-compound-words` |         | C/C++ Common word compounds.                                 |
+| `cpp-refined`        |         | Refined list of C/C++ Keywords and common library functions. |
 
 ## Language Settings
 
-| Name          | Locale | File Type  |
-| ------------- | ------ | ---------- |
-| `cpp-legacy`  | `*`    | `c`, `cpp` |
-| `cpp`         | `*`    | `c`, `cpp` |
-| `cpp-refined` | `*`    | `c`, `cpp` |
+| Name                 | Locale | File Type  |
+| -------------------- | ------ | ---------- |
+| `cpp-legacy`         | `*`    | `c`, `cpp` |
+| `cpp`                | `*`    | `c`, `cpp` |
+| `cpp-compound-words` | `*`    | `c`, `cpp` |
+| `cpp-refined`        | `*`    | `c`, `cpp` |
