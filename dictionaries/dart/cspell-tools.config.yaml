@@ -2,7 +2,8 @@
 
 targets:
   - name: dart
-    targetDirectory: .
+    targetDirectory: dict
+    keepUncompressed: true
     compress: true
     format: plaintext
     sources:

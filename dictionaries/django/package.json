@@ -12,7 +12,7 @@
     "./cspell-ext.json": "./cspell-ext.json"
   },
   "scripts": {
-    "build": "cspell-tools-cli compile --keep-raw-case \"src/*.txt\" -M django --no-compress -o ./dict",
+    "build": "cspell-tools-cli build",
     "test": "shx head -n 100 src/django.txt | cspell -c ./cspell-ext.json --locale=* --languageId=python stdin",
     "prepublishOnly": "echo pre-publish",
     "prepare:dictionary": "pnpm run build"
@@ -39,7 +39,7 @@
   },
   "homepage": "https://github.com/streetsidesoftware/cspell-dicts/blob/main/dictionaries/django#readme",
   "files": [
-    "dict/django.txt",
+    "dict/django.txt.gz",
     "cspell-ext.json"
   ]
 }
