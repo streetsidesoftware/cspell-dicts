@@ -3,6 +3,13 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+## [7.0.1](https://github.com/streetsidesoftware/cspell-dicts/compare/@cspell/dict-cpp@7.0.0...@cspell/dict-cpp@7.0.1) (2025-12-17)
+
+
+### Updates and Bug Fixes
+
+* Add back some compound words ([#5088](https://github.com/streetsidesoftware/cspell-dicts/issues/5088)) ([cb35979](https://github.com/streetsidesoftware/cspell-dicts/commit/cb35979c45b768e7403b803a0b024ac61742e8e9))
+
 ## [7.0.0](https://github.com/streetsidesoftware/cspell-dicts/compare/@cspell/dict-cpp@6.0.15...@cspell/dict-cpp@7.0.0) (2025-12-17)
 
 
