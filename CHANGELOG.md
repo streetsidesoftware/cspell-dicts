@@ -1,5 +1,19 @@
 # Release Notes
 
+## [32.0.1](https://github.com/streetsidesoftware/cspell-dicts/compare/cspell-dicts@32.0.0...cspell-dicts@32.0.1) (2025-12-17)
+
+
+### Updates and Bug Fixes
+
+* Add back some compound words ([#5088](https://github.com/streetsidesoftware/cspell-dicts/issues/5088)) ([cb35979](https://github.com/streetsidesoftware/cspell-dicts/commit/cb35979c45b768e7403b803a0b024ac61742e8e9))
+
+
+### Dependencies
+
+* The following workspace dependencies were updated
+  * devDependencies
+    * @cspell/dict-cspell-bundle bumped to 2.0.43
+
 ## [32.0.0](https://github.com/streetsidesoftware/cspell-dicts/compare/cspell-dicts@31.8.0...cspell-dicts@32.0.0) (2025-12-17)
 
 
