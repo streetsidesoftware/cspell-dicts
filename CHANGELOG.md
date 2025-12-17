@@ -1,5 +1,35 @@
 # Release Notes
 
+## [32.0.0](https://github.com/streetsidesoftware/cspell-dicts/compare/cspell-dicts@31.8.0...cspell-dicts@32.0.0) (2025-12-17)
+
+
+### ⚠ BREAKING CHANGES
+
+* Separate C++ compound words into their own dictionary ([#5085](https://github.com/streetsidesoftware/cspell-dicts/issues/5085))
+
+### Features
+
+* Separate C++ compound words into their own dictionary ([#5085](https://github.com/streetsidesoftware/cspell-dicts/issues/5085)) ([d579dd3](https://github.com/streetsidesoftware/cspell-dicts/commit/d579dd3bcab693b5f6cc39592f01386cb3f2b646))
+
+
+### Updates and Bug Fixes
+
+* Add 'operationalize' to additional words list ([#5069](https://github.com/streetsidesoftware/cspell-dicts/issues/5069)) ([aa60613](https://github.com/streetsidesoftware/cspell-dicts/commit/aa606133a3e980637719ebeb24e5188982f14000))
+* Add CMOS ([#5081](https://github.com/streetsidesoftware/cspell-dicts/issues/5081)) ([87d9565](https://github.com/streetsidesoftware/cspell-dicts/commit/87d9565123cfc0ca8132fc8c66a0f4e4d4111438))
+* Add cpplint and cpptools ([#5080](https://github.com/streetsidesoftware/cspell-dicts/issues/5080)) ([8737676](https://github.com/streetsidesoftware/cspell-dicts/commit/87376769ad5d5a2cc86da8ba80de264ff0174536))
+* Add HTML attribute names to CSS dictionary ([#5068](https://github.com/streetsidesoftware/cspell-dicts/issues/5068)) ([5ceffe1](https://github.com/streetsidesoftware/cspell-dicts/commit/5ceffe17391181873ea12228f238d74c16829c86))
+* adjust dictionary location ([#5065](https://github.com/streetsidesoftware/cspell-dicts/issues/5065)) ([9aba3ca](https://github.com/streetsidesoftware/cspell-dicts/commit/9aba3caf1afe5ed84212059932fffa8cc35896c4))
+* Move compiled files to dict and compress ([#5082](https://github.com/streetsidesoftware/cspell-dicts/issues/5082)) ([6f39ecd](https://github.com/streetsidesoftware/cspell-dicts/commit/6f39ecd9e2360ed51afbd6969c2b1b6a36fa3b34))
+* Workflow Bot -- Build Dictionaries ([#5071](https://github.com/streetsidesoftware/cspell-dicts/issues/5071)) ([2a2d04e](https://github.com/streetsidesoftware/cspell-dicts/commit/2a2d04e1a3bf5dd548fa049e354bb4927252d5ab))
+* Workflow Bot -- Update Dictionaries ([#5061](https://github.com/streetsidesoftware/cspell-dicts/issues/5061)) ([72e66ae](https://github.com/streetsidesoftware/cspell-dicts/commit/72e66aee48187259f489dc1a930746f4f0303f40))
+
+
+### Dependencies
+
+* The following workspace dependencies were updated
+  * devDependencies
+    * @cspell/dict-cspell-bundle bumped to 2.0.42
+
 ## [31.8.0](https://github.com/streetsidesoftware/cspell-dicts/compare/cspell-dicts@31.7.4...cspell-dicts@31.8.0) (2025-12-13)
 
 

@@ -3,6 +3,14 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+## [4.4.26](https://github.com/streetsidesoftware/cspell-dicts/compare/@cspell/dict-en_us@4.4.25...@cspell/dict-en_us@4.4.26) (2025-12-17)
+
+
+### Updates and Bug Fixes
+
+* Add 'operationalize' to additional words list ([#5069](https://github.com/streetsidesoftware/cspell-dicts/issues/5069)) ([aa60613](https://github.com/streetsidesoftware/cspell-dicts/commit/aa606133a3e980637719ebeb24e5188982f14000))
+* Workflow Bot -- Build Dictionaries ([#5071](https://github.com/streetsidesoftware/cspell-dicts/issues/5071)) ([2a2d04e](https://github.com/streetsidesoftware/cspell-dicts/commit/2a2d04e1a3bf5dd548fa049e354bb4927252d5ab))
+
 ## [4.4.25](https://github.com/streetsidesoftware/cspell-dicts/compare/@cspell/dict-en_us@4.4.24...@cspell/dict-en_us@4.4.25) (2025-12-13)
 
 

@@ -22,6 +22,13 @@ See [Conventional Commits](https://conventionalcommits.org) for commit guideline
 
 
 
+## [4.1.6](https://github.com/streetsidesoftware/cspell-dicts/compare/@cspell/dict-django@4.1.5...@cspell/dict-django@4.1.6) (2025-12-17)
+
+
+### Updates and Bug Fixes
+
+* Move compiled files to dict and compress ([#5082](https://github.com/streetsidesoftware/cspell-dicts/issues/5082)) ([6f39ecd](https://github.com/streetsidesoftware/cspell-dicts/commit/6f39ecd9e2360ed51afbd6969c2b1b6a36fa3b34))
+
 ## [4.1.5](https://github.com/streetsidesoftware/cspell-dicts/compare/@cspell/dict-django@4.1.4...@cspell/dict-django@4.1.5) (2025-07-09)
 
 
