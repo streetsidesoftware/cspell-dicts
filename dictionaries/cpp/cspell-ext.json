@@ -6,7 +6,7 @@
     "dictionaryDefinitions": [
         {
             "name": "cpp-legacy",
-            "path": "./dict/cpp-legacy.txt",
+            "path": "./dict/cpp-legacy.txt.gz",
             "description": "Legacy C/C++ Keywords and common library functions.",
             "ignoreForbiddenWords": true
         },
@@ -17,8 +17,14 @@
             "ignoreForbiddenWords": true
         },
         {
+            "name": "cpp-compound-words",
+            "path": "./dict/cpp-compound-words.txt.gz",
+            "description": "C/C++ Common word compounds.",
+            "ignoreForbiddenWords": true
+        },
+        {
             "name": "cpp-refined",
-            "path": "./dict/cpp-refined.txt",
+            "path": "./dict/cpp-refined.txt.gz",
             "description": "Refined list of C/C++ Keywords and common library functions.",
             "ignoreForbiddenWords": true
         }
@@ -39,7 +45,7 @@
                     "pattern": "/0[xX][0-9a-fA-F](?:'?[0-9a-fA-F])*/g"
                 }
             ],
-            "dictionaries": ["cpp", "cpp-refined", "cpp-legacy"],
+            "dictionaries": ["cpp", "cpp-refined", "cpp-legacy", "cpp-compound-words"],
             "dictionaryDefinitions": []
         }
     ]
