@@ -62,6 +62,11 @@ targets:
 
   - name: cpp-compound-words
     sources:
+      - filename: src/additional-terms.txt
+      - filename: src/cpp2.txt
+        split: true
+      - filename: src/cpp3.txt
+        split: true
       - filename: src/cpp.txt
         split: true
         allowedSplitWords:
