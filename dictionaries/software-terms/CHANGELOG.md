@@ -3,6 +3,14 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+## [5.1.17](https://github.com/streetsidesoftware/cspell-dicts/compare/@cspell/dict-software-terms@5.1.16...@cspell/dict-software-terms@5.1.17) (2025-12-17)
+
+
+### Updates and Bug Fixes
+
+* Add CMOS ([#5081](https://github.com/streetsidesoftware/cspell-dicts/issues/5081)) ([87d9565](https://github.com/streetsidesoftware/cspell-dicts/commit/87d9565123cfc0ca8132fc8c66a0f4e4d4111438))
+* Add cpplint and cpptools ([#5080](https://github.com/streetsidesoftware/cspell-dicts/issues/5080)) ([8737676](https://github.com/streetsidesoftware/cspell-dicts/commit/87376769ad5d5a2cc86da8ba80de264ff0174536))
+
 ## [5.1.16](https://github.com/streetsidesoftware/cspell-dicts/compare/@cspell/dict-software-terms@5.1.15...@cspell/dict-software-terms@5.1.16) (2025-12-13)
 
 
