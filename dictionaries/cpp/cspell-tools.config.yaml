@@ -30,30 +30,19 @@ targets:
           - src/stdlib-cmath.txt
           - src/stdlib-cpp.txt
           - src/template-strings.txt
-        storeSplitWordsAsCompounds: true
-        minCompoundLength: 3
+        # storeSplitWordsAsCompounds: true
+        # minCompoundLength: 3
       - filename: src/allowed-terms.txt
         split: true
-      - filename: src/compound-words.txt
     excludeWordsFrom:
       - src/exclude-terms.txt
-    format: plaintext
-    targetDirectory: './dict/intermediate'
-    generateNonStrict: false
-    compress: false
-    removeDuplicates: true
-    sort: true
-
-  - name: 'cpp'
-    # This dictionary is the compressed version of the above cpp dictionary.
-    # It is used to fix an issue with ClamAV signatures that accidentally match C++ keywords.
-    # See: https://github.com/streetsidesoftware/vscode-spell-checker/issues/4654#issuecomment-3236562620
-    sources:
-      - filename: dict/intermediate/cpp.txt
     format: plaintext
     targetDirectory: './dict'
     generateNonStrict: false
     compress: true
+    keepUncompressed: true
+    removeDuplicates: true
+    sort: true
 
   - name: cpp-refined
     sources:
@@ -68,7 +57,44 @@ targets:
     targetDirectory: './dict'
     generateNonStrict: false
     removeDuplicates: true
-    compress: false
+    compress: true
+    keepUncompressed: true
+
+  - name: cpp-compound-words
+    sources:
+      - filename: src/cpp.txt
+        split: true
+        allowedSplitWords:
+          - ../en_US/en_US.trie
+          - ../software-terms/dict/softwareTerms.txt
+          - ../software-terms/dict/software-tools.txt
+          - src/allowed-terms.txt
+          - src/compiler-clang-attributes.txt
+          - src/compiler-gcc.txt
+          - src/compiler-msvc.txt
+          - src/compound-words.txt
+          - src/cpp.txt
+          - src/cpp3.txt
+          - src/ecosystem.txt
+          - src/lang-jargon.txt
+          - src/lang-keywords.txt
+          - src/people.txt
+          - src/stdlib-c.txt
+          - src/stdlib-cerrno.txt
+          - src/stdlib-cmath.txt
+          - src/stdlib-cpp.txt
+          - src/template-strings.txt
+        storeSplitWordsAsCompounds: true
+        minCompoundLength: 3
+      - filename: src/compound-words.txt
+    excludeWordsFrom:
+      - src/exclude-terms.txt
+    format: plaintext
+    targetDirectory: './dict'
+    generateNonStrict: false
+    removeDuplicates: true
+    compress: true
+    keepUncompressed: true
 
   - name: 'cpp-legacy'
     sources:
@@ -93,12 +119,14 @@ targets:
           - src/template-strings.txt
     format: plaintext
     excludeWordsFrom:
-      - dict/intermediate/cpp.txt
+      - dict/cpp.txt
       - dict/cpp-refined.txt
+      - dict/cpp-compound-words.txt
       - ../en_US/en_US.trie
       - ../software-terms/dict/softwareTerms.txt
       - src/exclude-terms.txt
     targetDirectory: './dict'
     generateNonStrict: false
     removeDuplicates: true
-    compress: false
+    compress: true
+    keepUncompressed: true

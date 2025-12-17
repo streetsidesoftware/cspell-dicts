@@ -87,6 +87,21 @@ dictionaries:
 
 <!--- @@inject-end: ./static/install.md --->
 
+## C/C++ Compound Words
+
+It is very common for C/C++ code to contain word compound like `errorcode` and `hashcode`.
+The `cpp-compound-words` dictionary is designed to help avoid false positives. But, this can
+mean that valid errors are hidden due to the way compounds are combined.
+
+The following configuration can be used to disable the compound dictionary:
+
+```yaml
+languageSettings:
+  languageId: 'c,cpp' # '*' can be used to disable it for all file types.
+  dictionaries:
+    - '!cpp-compound-words'
+```
+
 <!--- @@inject: ../../static/contributing.md --->
 
 ## Contributing
