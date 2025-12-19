@@ -725,8 +725,8 @@ importers:
         specifier: ^20.1.8
         version: 20.1.8
       '@types/node':
-        specifier: ^20.19.27
-        version: 20.19.27
+        specifier: ^24.10.4
+        version: 24.10.4
       typescript:
         specifier: ^5.9.3
         version: 5.9.3
@@ -1656,6 +1656,9 @@ packages:
 
   '@types/node@22.19.3':
     resolution: {integrity: sha512-1N9SBnWYOJTrNZCdh/yJE+t910Y128BoyY+zBLWhL3r0TYzlTmFdXrPwHL9DyFZmlEXNQQolTZh3KHV31QDhyA==}
+
+  '@types/node@24.10.4':
+    resolution: {integrity: sha512-vnDVpYPMzs4wunl27jHrfmwojOGKya0xyM3sH+UE5iv5uPS6vX7UIoh6m+vQc5LGBq52HBKPIn/zcSZVzeDEZg==}
 
   '@types/node@25.0.3':
     resolution: {integrity: sha512-W609buLVRVmeW693xKfzHeIV6nJGGz98uCPfeXI1ELMLXVeKYZ9m15fAMSaUPBHYLGFsVRcMmSCksQOrZV9BYA==}
@@ -5876,6 +5879,10 @@ snapshots:
     dependencies:
       undici-types: 6.21.0
 
+  '@types/node@24.10.4':
+    dependencies:
+      undici-types: 7.16.0
+
   '@types/node@25.0.3':
     dependencies:
       undici-types: 7.16.0
@@ -5890,7 +5897,7 @@ snapshots:
 
   '@types/through@0.0.33':
     dependencies:
-      '@types/node': 25.0.3
+      '@types/node': 24.10.4
 
   '@types/unist@2.0.11': {}
 
@@ -5899,7 +5906,7 @@ snapshots:
   '@types/vinyl@2.0.12':
     dependencies:
       '@types/expect': 1.20.4
-      '@types/node': 25.0.3
+      '@types/node': 24.10.4
 
   '@vercel/nft@0.29.4(encoding@0.1.13)':
     dependencies:
@@ -7654,7 +7661,7 @@ snapshots:
   mem-fs-editor@11.1.4(mem-fs@4.1.0):
     dependencies:
       '@types/ejs': 3.1.5
-      '@types/node': 25.0.3
+      '@types/node': 24.10.4
       binaryextensions: 6.11.0
       commondir: 1.0.1
       deep-extend: 0.6.0
@@ -8357,7 +8364,7 @@ snapshots:
 
   p-transform@4.1.6:
     dependencies:
-      '@types/node': 25.0.3
+      '@types/node': 24.10.4
       p-queue: 7.4.1
       readable-stream: 4.7.0
 
