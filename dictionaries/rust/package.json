@@ -12,7 +12,7 @@
     "./cspell-ext.json": "./cspell-ext.json"
   },
   "scripts": {
-    "build": "cspell-tools-cli compile --keep-raw-case src/rust.txt --no-compress -o ./dict",
+    "build": "cspell-tools-cli compile --keep-raw-case src/rust.txt src/crates.txt --no-compress -o ./dict",
     "test": "shx head -n 1000 src/rust.txt | cspell -c ./cspell-ext.json --locale=* --languageId=rust stdin",
     "prepublishOnly": "echo pre-publish",
     "prepare:dictionary": "pnpm run build"
@@ -40,6 +40,7 @@
   "homepage": "https://github.com/streetsidesoftware/cspell-dicts/blob/main/dictionaries/rust#readme",
   "files": [
     "dict/rust.txt",
+    "dict/crates.txt",
     "cspell-ext.json"
   ]
 }
