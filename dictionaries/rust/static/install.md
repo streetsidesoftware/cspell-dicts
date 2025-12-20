@@ -13,7 +13,7 @@ Add the following to your VSCode settings:
 
 ```jsonc
 {
-  "cSpell.dictionaries": ["rust"],
+  "cSpell.dictionaries": ["rust", "rust-crates"],
 }
 ```
 
@@ -26,7 +26,7 @@ Add the following to your VSCode settings:
 
 ```jsonc
 {
-  "dictionaries": ["rust"],
+  "dictionaries": ["rust", "rust-crates"],
 }
 ```
 
@@ -40,6 +40,7 @@ Add the following to your VSCode settings:
 ```yaml
 dictionaries:
   - rust
+  - rust-crates
 ```
 
 </details>
@@ -50,12 +51,14 @@ dictionaries:
 
 ## Dictionary Information
 
-| Name   | Enabled | Description             |
-| ------ | ------- | ----------------------- |
-| `rust` |         | Rust Keyword Dictionary |
+| Name          | Enabled | Description                   |
+| ------------- | ------- | ----------------------------- |
+| `rust`        |         | Rust Keyword Dictionary       |
+| `rust-crates` |         | Common Rust Crates Dictionary |
 
 ## Language Settings
 
-| Name   | Locale | File Type |
-| ------ | ------ | --------- |
-| `rust` | `*`    | `rust`    |
+| Name          | Locale | File Type |
+| ------------- | ------ | --------- |
+| `rust`        | `*`    | `rust`    |
+| `rust-crates` | `*`    | `rust`    |
