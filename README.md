@@ -271,7 +271,7 @@ Various [cspell](https://github.com/streetsidesoftware/cspell) dictionaries. Eac
 | [@cspell/dict-ro-ro](./dictionaries/ro_RO#readme)                                               | Romanian                          | ro-ro                                                                                                                                                                                                                   |
 | [@cspell/dict-ru_ru](./dictionaries/ru_RU#readme)                                               | Russian Dictionary (Combined)     | ru-ru                                                                                                                                                                                                                   |
 | [@cspell/dict-ruby](./dictionaries/ruby#readme)<sup>1</sup>                                     | Ruby                              | ruby                                                                                                                                                                                                                    |
-| [@cspell/dict-rust](./dictionaries/rust#readme)<sup>1</sup>                                     | Rust                              | rust                                                                                                                                                                                                                    |
+| [@cspell/dict-rust](./dictionaries/rust#readme)<sup>1</sup>                                     | Rust                              | rust<br>rust-crates                                                                                                                                                                                                     |
 | [@cspell/dict-scala](./dictionaries/scala#readme)<sup>1</sup>                                   | Scala                             | scala                                                                                                                                                                                                                   |
 | [@cspell/dict-scientific-terms-gb](./dictionaries/scientific_terms_GB#readme)                   | Scientific Terms GB               | scientific-terms-gb                                                                                                                                                                                                     |
 | [@cspell/dict-scientific-terms-us](./dictionaries/scientific_terms_US#readme)                   | Scientific Terms US               | scientific-terms-us<sup>2</sup>                                                                                                                                                                                         |
@@ -418,6 +418,7 @@ Various [cspell](https://github.com/streetsidesoftware/cspell) dictionaries. Eac
 | [`ru-ru`](dictionaries/ru_RU)                                                        | Russian Dictionary (Combined)                                       | ru<br>ru-ru                   | -                                                              |
 | [`ruby`](dictionaries/ruby) <sup>1</sup>                                             | For ruby and ruby on rails                                          | -                             | ruby                                                           |
 | [`rust`](dictionaries/rust) <sup>1</sup>                                             | Rust Keyword Dictionary                                             | -                             | rust                                                           |
+| [`rust-crates`](dictionaries/rust) <sup>1</sup>                                      | Common Rust Crates Dictionary                                       | -                             | rust                                                           |
 | [`scala`](dictionaries/scala) <sup>1</sup>                                           | Scala dictionary.                                                   | -                             | scala                                                          |
 | [`scientific-terms-gb`](dictionaries/scientific_terms_GB)                            | Scientific Terms GB dictionary.                                     | en-GB                         | -                                                              |
 | [`scientific-terms-us`](dictionaries/scientific_terms_US) <sup>2</sup>               | Scientific Terms US dictionary.                                     | -                             | -                                                              |
@@ -553,12 +554,12 @@ Special thanks to all of our amazing contributors!
 [<img alt="Contributor mvilrokx" src="https://avatars.githubusercontent.com/u/507728?v=4&size=128" width=64>](https://github.com/mvilrokx)
 [<img alt="Contributor OnkarRuikar" src="https://avatars.githubusercontent.com/u/87750369?v=4&size=128" width=64>](https://github.com/OnkarRuikar)
 [<img alt="Contributor scripthunter7" src="https://avatars.githubusercontent.com/u/57285466?v=4&size=128" width=64>](https://github.com/scripthunter7)
+[<img alt="Contributor thompson-tomo" src="https://avatars.githubusercontent.com/u/19771933?v=4&size=128" width=64>](https://github.com/thompson-tomo)
 [<img alt="Contributor trollixx" src="https://avatars.githubusercontent.com/u/714940?v=4&size=128" width=64>](https://github.com/trollixx)
 [<img alt="Contributor ttasovac" src="https://avatars.githubusercontent.com/u/5304839?v=4&size=128" width=64>](https://github.com/ttasovac)
 [<img alt="Contributor tvardero" src="https://avatars.githubusercontent.com/u/45442278?v=4&size=128" width=64>](https://github.com/tvardero)
 [<img alt="Contributor lukasfro" src="https://avatars.githubusercontent.com/u/1529698?v=4&size=128" width=64>](https://github.com/lukasfro)
 [<img alt="Contributor paaloeye" src="https://avatars.githubusercontent.com/u/554135?v=4&size=128" width=64>](https://github.com/paaloeye)
-[<img alt="Contributor pedro3g" src="https://avatars.githubusercontent.com/u/30221184?v=4&size=128" width=64>](https://github.com/pedro3g)
 [<img alt="Contributor thegraffix" src="https://avatars.githubusercontent.com/u/57874058?v=4&size=128" width=64>](https://github.com/thegraffix)
 [<img alt="Contributor 0xnmn" src="https://avatars.githubusercontent.com/u/22571395?v=4&size=128" width=64>](https://github.com/0xnmn)
 [<img alt="Contributor ChocolateLoverRaj" src="https://avatars.githubusercontent.com/u/52586855?v=4&size=128" width=64>](https://github.com/ChocolateLoverRaj)
@@ -584,6 +585,7 @@ Special thanks to all of our amazing contributors!
 [<img alt="Contributor msftenhanceprovenance" src="https://avatars.githubusercontent.com/u/85908596?v=4&size=128" width=64>](https://github.com/msftenhanceprovenance)
 [<img alt="Contributor niiccolas" src="https://avatars.githubusercontent.com/u/40167702?v=4&size=128" width=64>](https://github.com/niiccolas)
 [<img alt="Contributor nlbuescher" src="https://avatars.githubusercontent.com/u/2711898?v=4&size=128" width=64>](https://github.com/nlbuescher)
+[<img alt="Contributor pedro3g" src="https://avatars.githubusercontent.com/u/30221184?v=4&size=128" width=64>](https://github.com/pedro3g)
 [<img alt="Contributor peteraritchie" src="https://avatars.githubusercontent.com/u/408620?v=4&size=128" width=64>](https://github.com/peteraritchie)
 [<img alt="Contributor Peterdedecker" src="https://avatars.githubusercontent.com/u/2641214?v=4&size=128" width=64>](https://github.com/Peterdedecker)
 [<img alt="Contributor plasticrake" src="https://avatars.githubusercontent.com/u/1383980?v=4&size=128" width=64>](https://github.com/plasticrake)
@@ -601,7 +603,6 @@ Special thanks to all of our amazing contributors!
 [<img alt="Contributor sherpalabsio" src="https://avatars.githubusercontent.com/u/1914993?v=4&size=128" width=64>](https://github.com/sherpalabsio)
 [<img alt="Contributor smara-codes" src="https://avatars.githubusercontent.com/u/1213709?v=4&size=128" width=64>](https://github.com/smara-codes)
 [<img alt="Contributor snyk-bot" src="https://avatars.githubusercontent.com/u/19733683?v=4&size=128" width=64>](https://github.com/snyk-bot)
-[<img alt="Contributor spiftire" src="https://avatars.githubusercontent.com/u/44159536?v=4&size=128" width=64>](https://github.com/spiftire)
 [<img alt="Contributor thakyZ" src="https://avatars.githubusercontent.com/u/950594?v=4&size=128" width=64>](https://github.com/thakyZ)
 [<img alt="Contributor vineyardbovines" src="https://avatars.githubusercontent.com/u/15176096?v=4&size=128" width=64>](https://github.com/vineyardbovines)
 [<img alt="Contributor wavygecko" src="https://avatars.githubusercontent.com/u/110956608?v=4&size=128" width=64>](https://github.com/wavygecko)
@@ -642,11 +643,11 @@ Special thanks to all of our amazing contributors!
 [<img alt="Contributor iainbeeston" src="https://avatars.githubusercontent.com/u/111963?v=4&size=128" width=64>](https://github.com/iainbeeston)
 [<img alt="Contributor IanG" src="https://avatars.githubusercontent.com/u/98599?v=4&size=128" width=64>](https://github.com/IanG)
 [<img alt="Contributor izzqz" src="https://avatars.githubusercontent.com/u/35831725?v=4&size=128" width=64>](https://github.com/izzqz)
-[<img alt="Contributor jakezatecky" src="https://avatars.githubusercontent.com/u/3210703?v=4&size=128" width=64>](https://github.com/jakezatecky)
 [<img alt="Contributor pepelsbey" src="https://avatars.githubusercontent.com/u/105274?v=4&size=128" width=64>](https://github.com/pepelsbey)
 [<img alt="Contributor Poikilos" src="https://avatars.githubusercontent.com/u/7557867?v=4&size=128" width=64>](https://github.com/Poikilos)
 [<img alt="Contributor rabchev" src="https://avatars.githubusercontent.com/u/1876061?v=4&size=128" width=64>](https://github.com/rabchev)
 [<img alt="Contributor snelling-a" src="https://avatars.githubusercontent.com/u/72226000?v=4&size=128" width=64>](https://github.com/snelling-a)
+[<img alt="Contributor spiftire" src="https://avatars.githubusercontent.com/u/44159536?v=4&size=128" width=64>](https://github.com/spiftire)
 [<img alt="Contributor ssr-yuki" src="https://avatars.githubusercontent.com/u/15957608?v=4&size=128" width=64>](https://github.com/ssr-yuki)
 [<img alt="Contributor teddybradford" src="https://avatars.githubusercontent.com/u/3684553?v=4&size=128" width=64>](https://github.com/teddybradford)
 [<img alt="Contributor the-chris-strange" src="https://avatars.githubusercontent.com/u/7118109?v=4&size=128" width=64>](https://github.com/the-chris-strange)
@@ -672,6 +673,7 @@ Special thanks to all of our amazing contributors!
 [<img alt="Contributor HansRobo" src="https://avatars.githubusercontent.com/u/12395284?v=4&size=128" width=64>](https://github.com/HansRobo)
 [<img alt="Contributor HarryAllen1" src="https://avatars.githubusercontent.com/u/66224939?v=4&size=128" width=64>](https://github.com/HarryAllen1)
 [<img alt="Contributor hiroya-uga" src="https://avatars.githubusercontent.com/u/46584540?v=4&size=128" width=64>](https://github.com/hiroya-uga)
+[<img alt="Contributor jakezatecky" src="https://avatars.githubusercontent.com/u/3210703?v=4&size=128" width=64>](https://github.com/jakezatecky)
 [<img alt="Contributor janosh" src="https://avatars.githubusercontent.com/u/30958850?v=4&size=128" width=64>](https://github.com/janosh)
 [<img alt="Contributor jmfederico" src="https://avatars.githubusercontent.com/u/237977?v=4&size=128" width=64>](https://github.com/jmfederico)
 [<img alt="Contributor jntesteves" src="https://avatars.githubusercontent.com/u/133886?v=4&size=128" width=64>](https://github.com/jntesteves)
