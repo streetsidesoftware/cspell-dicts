@@ -12,7 +12,7 @@
     "./cspell-ext.json": "./cspell-ext.json"
   },
   "scripts": {
-    "build": "cspell-tools-cli build",
+    "build": "cspell-tools-cli compile --keep-raw-case src/ruby.txt src/gems.txt --no-compress -o ./dict",
     "test": "shx head -n 100 src/ruby.txt | cspell -c ./cspell-ext.json \"--locale=en\" \"--languageId=ruby\" stdin",
     "prepublishOnly": "echo pre-publish",
     "prepare:dictionary": "pnpm run build"
@@ -37,6 +37,7 @@
   "homepage": "https://github.com/streetsidesoftware/cspell-dicts/blob/main/dictionaries/ruby#readme",
   "files": [
     "dict/ruby.txt",
+    "dict/gems.txt",
     "cspell-ext.json"
   ]
 }

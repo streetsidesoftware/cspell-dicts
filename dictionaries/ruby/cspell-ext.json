@@ -10,6 +10,11 @@
             "name": "ruby",
             "path": "./dict/ruby.txt",
             "description": "For ruby and ruby on rails"
+        },
+        {
+            "name": "ruby-gems",
+            "path": "./dict/gems.txt",
+            "description": "For common ruby gems"
         }
     ],
     // Dictionaries to always be used.
@@ -35,7 +40,10 @@
             // This could be included in "ignoreRegExpList": ["mdash"]
             "patterns": [],
             // List of dictionaries to enable by name in `dictionaryDefinitions`
-            "dictionaries": ["ruby"],
+            "dictionaries": [
+                "ruby",
+                "ruby-gems"
+            ],
             // Dictionary definitions can also be supplied here. They are only used iff "languageId" and "locale" match.
             "dictionaryDefinitions": []
         }
