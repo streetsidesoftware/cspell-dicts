@@ -12,7 +12,7 @@
     "./cspell-ext.json": "./cspell-ext.json"
   },
   "scripts": {
-    "build": "cspell-tools-cli compile --keep-raw-case src/ruby.txt src/gems.txt --no-compress -o ./dict",
+    "build": "cspell-tools-cli build",
     "test": "shx head -n 100 src/ruby.txt | cspell -c ./cspell-ext.json \"--locale=en\" \"--languageId=ruby\" stdin",
     "prepublishOnly": "echo pre-publish",
     "prepare:dictionary": "pnpm run build"

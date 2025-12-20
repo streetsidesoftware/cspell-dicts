@@ -15,3 +15,10 @@ targets:
     targetDirectory: './dict'
     generateNonStrict: false
     compress: false
+  - name: 'gems'
+    sources:
+      - filename: src/gems.txt
+    format: plaintext
+    targetDirectory: './dict'
+    generateNonStrict: false
+    compress: false

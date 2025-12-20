@@ -73,7 +73,7 @@ dictionaries:
 | Name        | Enabled | Description                |
 | ----------- | ------- | -------------------------- |
 | `ruby`      |         | For ruby and ruby on rails |
-| `ruby-gems` |         | Common ruby gems           |
+| `ruby-gems` |         | For common ruby gems       |
 
 ## Language Settings
 

@@ -13,7 +13,7 @@ Add the following to your VSCode settings:
 
 ```jsonc
 {
-  "cSpell.dictionaries": ["ruby", "ruby-gems"],
+  "cSpell.dictionaries": ["ruby"],
 }
 ```
 
@@ -26,7 +26,7 @@ Add the following to your VSCode settings:
 
 ```jsonc
 {
-  "dictionaries": ["ruby", "ruby-gems"],
+  "dictionaries": ["ruby"],
 }
 ```
 
@@ -40,7 +40,6 @@ Add the following to your VSCode settings:
 ```yaml
 dictionaries:
   - ruby
-  - ruby-gems
 ```
 
 </details>
@@ -51,10 +50,9 @@ dictionaries:
 
 ## Dictionary Information
 
-| Name        | Enabled | Description                |
-| ----------- | ------- | -------------------------- |
-| `ruby`      |         | For ruby and ruby on rails |
-| `ruby-gems` |         | Common ruby gems           |
+| Name   | Enabled | Description                |
+| ------ | ------- | -------------------------- |
+| `ruby` |         | For ruby and ruby on rails |
 
 ## Language Settings
 
