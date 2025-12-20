@@ -1,5 +1,29 @@
 # Release Notes
 
+## [32.1.0](https://github.com/streetsidesoftware/cspell-dicts/compare/cspell-dicts@32.0.1...cspell-dicts@32.1.0) (2025-12-20)
+
+
+### Features
+
+* Introduce a rust crates dictionary ([#5094](https://github.com/streetsidesoftware/cspell-dicts/issues/5094)) ([77ae7f1](https://github.com/streetsidesoftware/cspell-dicts/commit/77ae7f116f63c7482f0abc9aa5577b0afbadb1a8))
+
+
+### Updates and Bug Fixes
+
+* Add `dalek` to rust crates ([#5103](https://github.com/streetsidesoftware/cspell-dicts/issues/5103)) ([1cda114](https://github.com/streetsidesoftware/cspell-dicts/commit/1cda11419bfc92a39645b585b96d612171ea89f4))
+* Add GPKG ([#5095](https://github.com/streetsidesoftware/cspell-dicts/issues/5095)) ([617634f](https://github.com/streetsidesoftware/cspell-dicts/commit/617634f254937f842b76cc41bc6af482aeea0e47))
+* add more names ([#5100](https://github.com/streetsidesoftware/cspell-dicts/issues/5100)) ([f438bb3](https://github.com/streetsidesoftware/cspell-dicts/commit/f438bb3832289c85ce0cf5c82cbac55c7722ce07))
+* Add more rust crates ([#5099](https://github.com/streetsidesoftware/cspell-dicts/issues/5099)) ([49b73b5](https://github.com/streetsidesoftware/cspell-dicts/commit/49b73b5c90dfcea41bfdaa25303861deccff459a))
+* Add more terms to software/company dictionaries ([#5093](https://github.com/streetsidesoftware/cspell-dicts/issues/5093)) ([35393f9](https://github.com/streetsidesoftware/cspell-dicts/commit/35393f921cbf7ee47bb8a027697211c61a76fa1c))
+* Adjust the layout of the rust dictionary ([#5101](https://github.com/streetsidesoftware/cspell-dicts/issues/5101)) ([a0a9719](https://github.com/streetsidesoftware/cspell-dicts/commit/a0a971923ee04e1f4d4b6a5b7bc86170cf17511c))
+
+
+### Dependencies
+
+* The following workspace dependencies were updated
+  * devDependencies
+    * @cspell/dict-cspell-bundle bumped to 2.0.44
+
 ## [32.0.1](https://github.com/streetsidesoftware/cspell-dicts/compare/cspell-dicts@32.0.0...cspell-dicts@32.0.1) (2025-12-17)
 
 

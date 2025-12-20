@@ -3,6 +3,14 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+## [5.1.18](https://github.com/streetsidesoftware/cspell-dicts/compare/@cspell/dict-software-terms@5.1.17...@cspell/dict-software-terms@5.1.18) (2025-12-20)
+
+
+### Updates and Bug Fixes
+
+* Add GPKG ([#5095](https://github.com/streetsidesoftware/cspell-dicts/issues/5095)) ([617634f](https://github.com/streetsidesoftware/cspell-dicts/commit/617634f254937f842b76cc41bc6af482aeea0e47))
+* Add more terms to software/company dictionaries ([#5093](https://github.com/streetsidesoftware/cspell-dicts/issues/5093)) ([35393f9](https://github.com/streetsidesoftware/cspell-dicts/commit/35393f921cbf7ee47bb8a027697211c61a76fa1c))
+
 ## [5.1.17](https://github.com/streetsidesoftware/cspell-dicts/compare/@cspell/dict-software-terms@5.1.16...@cspell/dict-software-terms@5.1.17) (2025-12-17)
 
 

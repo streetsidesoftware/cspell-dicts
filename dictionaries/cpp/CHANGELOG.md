@@ -3,6 +3,13 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+## [7.0.2](https://github.com/streetsidesoftware/cspell-dicts/compare/@cspell/dict-cpp@7.0.1...@cspell/dict-cpp@7.0.2) (2025-12-20)
+
+
+### Updates and Bug Fixes
+
+* Add more terms to software/company dictionaries ([#5093](https://github.com/streetsidesoftware/cspell-dicts/issues/5093)) ([35393f9](https://github.com/streetsidesoftware/cspell-dicts/commit/35393f921cbf7ee47bb8a027697211c61a76fa1c))
+
 ## [7.0.1](https://github.com/streetsidesoftware/cspell-dicts/compare/@cspell/dict-cpp@7.0.0...@cspell/dict-cpp@7.0.1) (2025-12-17)
 
 

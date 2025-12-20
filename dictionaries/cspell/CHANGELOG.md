@@ -1,5 +1,19 @@
 # Change Log
 
+## [2.0.44](https://github.com/streetsidesoftware/cspell-dicts/compare/@cspell/dict-cspell-bundle@2.0.43...@cspell/dict-cspell-bundle@2.0.44) (2025-12-20)
+
+
+### Dependencies
+
+* The following workspace dependencies were updated
+  * dependencies
+    * @cspell/dict-companies bumped to 3.2.9
+    * @cspell/dict-cpp bumped to 7.0.2
+    * @cspell/dict-en-common-misspellings bumped to 2.1.10
+    * @cspell/dict-golang bumped to 6.0.25
+    * @cspell/dict-rust bumped to 4.1.0
+    * @cspell/dict-software-terms bumped to 5.1.18
+
 ## [2.0.43](https://github.com/streetsidesoftware/cspell-dicts/compare/@cspell/dict-cspell-bundle@2.0.42...@cspell/dict-cspell-bundle@2.0.43) (2025-12-17)
 
 
