@@ -77,9 +77,10 @@ dictionaries:
 
 ## Language Settings
 
-| Name   | Locale | File Type |
-| ------ | ------ | --------- |
-| `ruby` | `*`    | `ruby`    |
+| Name        | Locale | File Type |
+| ----------- | ------ | --------- |
+| `ruby`      | `*`    | `ruby`    |
+| `ruby-gems` | `*`    | `ruby`    |
 
 <!--- @@inject-end: ./static/install.md --->
 
