@@ -1,0 +1,51 @@
+% [Issue #754](https://github.com/streetsidesoftware/cspell-dicts/issues/754)
+
+% "LaTexMacrosFunctionNames"
+% TEST: Function names should be ignored
+% Should ignore
+\spellingerrorone
+\\\spellingerrorthree
+\\\\\spellingerrorfive
+\\\\\\\spellingerrorsevern
+% Should spellcheck
+spellingerrorzero
+\\spellingerrortwo
+\\\\spellingerrorfour
+\\\\\\spellingerrorsix
+
+% "LaTexMacrosMultiLine"
+% TEST: Arguments of allowlisted commands should be spellchecked
+% Should spellcheck arguments
+\title{spellingerrorone}{spellingerroroneB}
+\\\title{spellingerrorthree}{spellingerrorthreeB}
+\\\\\title{spellingerrorfive}
+\\\\\\\title{spellingerrorsevern}
+% Should spellcheck
+title{spellingerrorzero}{spellingerrorzeroB}
+\\title{spellingerrortwo}{spellingerrortwoB}
+\\\\title{spellingerrorfour}
+\\\\\\title{spellingerrorsix}
+% TEST: Arguments of non-allowlisted commands should be ignored
+% Should ignore
+\abc{spellingerrorone}
+\\\abc{spellingerrorthree}
+\\\\\abc{spellingerrorfive}
+\\\\\\\abc{spellingerrorsevern}
+% Should spellcheck
+abc{spellingerrorzero}
+\\abc{spellingerrortwo}
+\\\\abc{spellingerrorfour}
+\\\\\\abc{spellingerrorsix}
+
+% "comments" (default disabled)
+% TEST: Comments should be ignored
+% Should spellcheck by default, but should ignore when enabled
+%spellingerrorzero
+\\%spellingerrortwo
+\\\\%spellingerrorfour
+\\\\\\%spellingerrorsix
+% Should spellcheck
+\%spellingerrorone
+\\\%spellingerrorthree
+\\\\\%spellingerrorfive
+\\\\\\\%spellingerrorsevern
