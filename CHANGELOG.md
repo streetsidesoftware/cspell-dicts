@@ -1,5 +1,29 @@
 # Release Notes
 
+## [32.2.0](https://github.com/streetsidesoftware/cspell-dicts/compare/cspell-dicts@32.1.0...cspell-dicts@32.2.0) (2025-12-27)
+
+
+### Features
+
+* Add in a ruby Gem dictionary ([#5106](https://github.com/streetsidesoftware/cspell-dicts/issues/5106)) ([4e07a82](https://github.com/streetsidesoftware/cspell-dicts/commit/4e07a8205d8f7910470e4dcb75aa0ebbf982be0f))
+
+
+### Updates and Bug Fixes
+
+* Add Ccache ([#5114](https://github.com/streetsidesoftware/cspell-dicts/issues/5114)) ([c1f6d31](https://github.com/streetsidesoftware/cspell-dicts/commit/c1f6d31de46d1f8e9be0636a235f762090e5e890))
+* Add general terms ([#5117](https://github.com/streetsidesoftware/cspell-dicts/issues/5117)) ([5c5a602](https://github.com/streetsidesoftware/cspell-dicts/commit/5c5a602bc71a7958f3868ebd3b1e8482c772aca7))
+* Add Open* tools ([#5113](https://github.com/streetsidesoftware/cspell-dicts/issues/5113)) ([7f6f7ff](https://github.com/streetsidesoftware/cspell-dicts/commit/7f6f7ff6a0ffd69e3dfff103b6571c60463f3ab7))
+* Encorporate more sw dev terms ([#5116](https://github.com/streetsidesoftware/cspell-dicts/issues/5116)) ([2a080b7](https://github.com/streetsidesoftware/cspell-dicts/commit/2a080b78f1cc164d75a897d89d4416fc84138b46))
+* More ruby terms ([#5115](https://github.com/streetsidesoftware/cspell-dicts/issues/5115)) ([4048105](https://github.com/streetsidesoftware/cspell-dicts/commit/40481050fa7bc46854f4849688a7d16991267110))
+* Workflow Bot -- Update Dictionaries ([#5108](https://github.com/streetsidesoftware/cspell-dicts/issues/5108)) ([1967869](https://github.com/streetsidesoftware/cspell-dicts/commit/1967869ba62f2b30f58a40bf29288003e0b9ba93))
+
+
+### Dependencies
+
+* The following workspace dependencies were updated
+  * devDependencies
+    * @cspell/dict-cspell-bundle bumped to 2.0.45
+
 ## [32.1.0](https://github.com/streetsidesoftware/cspell-dicts/compare/cspell-dicts@32.0.1...cspell-dicts@32.1.0) (2025-12-20)
 
 
