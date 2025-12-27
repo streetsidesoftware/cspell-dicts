@@ -719,7 +719,7 @@ importers:
         version: 9.5.0
       globby:
         specifier: ^16.0.0
-        version: 16.0.0
+        version: 16.1.0
     devDependencies:
       '@tsconfig/node20':
         specifier: ^20.1.8
@@ -759,7 +759,7 @@ importers:
         version: 9.5.0
       globby:
         specifier: ^16.0.0
-        version: 16.0.0
+        version: 16.1.0
       globrex:
         specifier: ^0.1.2
         version: 0.1.2
@@ -2740,8 +2740,8 @@ packages:
     resolution: {integrity: sha512-oB4vkQGqlMl682wL1IlWd02tXCbquGWM4voPEI85QmNKCaw8zGTm1f1rubFgkg3Eli2PtKlFgrnmUqasbQWlkw==}
     engines: {node: '>=20'}
 
-  globby@16.0.0:
-    resolution: {integrity: sha512-ejy4TJFga99yW6Q0uhM3pFawKWZmtZzZD/v/GwI5+9bCV5Ew+D2pSND6W7fUes5UykqSsJkUfxFVdRh7Q1+P3Q==}
+  globby@16.1.0:
+    resolution: {integrity: sha512-+A4Hq7m7Ze592k9gZRy4gJ27DrXRNnC1vPjxTt1qQxEY8RxagBkBxivkCwg7FxSTG0iLLEMaUx13oOr0R2/qcQ==}
     engines: {node: '>=20'}
 
   globrex@0.1.2:
@@ -7051,7 +7051,7 @@ snapshots:
       slash: 5.1.0
       unicorn-magic: 0.3.0
 
-  globby@16.0.0:
+  globby@16.1.0:
     dependencies:
       '@sindresorhus/merge-streams': 4.0.0
       fast-glob: 3.3.3
