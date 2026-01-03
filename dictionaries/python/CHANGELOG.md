@@ -3,6 +3,13 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+## [4.2.25](https://github.com/streetsidesoftware/cspell-dicts/compare/@cspell/dict-python@4.2.24...@cspell/dict-python@4.2.25) (2026-01-03)
+
+
+### Updates and Bug Fixes
+
+* Encorporate more sw dev terms ([#5116](https://github.com/streetsidesoftware/cspell-dicts/issues/5116)) ([2a080b7](https://github.com/streetsidesoftware/cspell-dicts/commit/2a080b78f1cc164d75a897d89d4416fc84138b46))
+
 ## [4.2.24](https://github.com/streetsidesoftware/cspell-dicts/compare/@cspell/dict-python@4.2.23...@cspell/dict-python@4.2.24) (2025-12-13)
 
 

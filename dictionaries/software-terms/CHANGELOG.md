@@ -3,6 +3,16 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+## [5.1.19](https://github.com/streetsidesoftware/cspell-dicts/compare/@cspell/dict-software-terms@5.1.18...@cspell/dict-software-terms@5.1.19) (2026-01-03)
+
+
+### Updates and Bug Fixes
+
+* Add Ccache ([#5114](https://github.com/streetsidesoftware/cspell-dicts/issues/5114)) ([c1f6d31](https://github.com/streetsidesoftware/cspell-dicts/commit/c1f6d31de46d1f8e9be0636a235f762090e5e890))
+* Add general terms ([#5117](https://github.com/streetsidesoftware/cspell-dicts/issues/5117)) ([5c5a602](https://github.com/streetsidesoftware/cspell-dicts/commit/5c5a602bc71a7958f3868ebd3b1e8482c772aca7))
+* Add Open* tools ([#5113](https://github.com/streetsidesoftware/cspell-dicts/issues/5113)) ([7f6f7ff](https://github.com/streetsidesoftware/cspell-dicts/commit/7f6f7ff6a0ffd69e3dfff103b6571c60463f3ab7))
+* Encorporate more sw dev terms ([#5116](https://github.com/streetsidesoftware/cspell-dicts/issues/5116)) ([2a080b7](https://github.com/streetsidesoftware/cspell-dicts/commit/2a080b78f1cc164d75a897d89d4416fc84138b46))
+
 ## [5.1.18](https://github.com/streetsidesoftware/cspell-dicts/compare/@cspell/dict-software-terms@5.1.17...@cspell/dict-software-terms@5.1.18) (2025-12-20)
 
 
