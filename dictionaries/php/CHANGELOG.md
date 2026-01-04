@@ -22,6 +22,13 @@ See [Conventional Commits](https://conventionalcommits.org) for commit guideline
 
 
 
+## [4.1.1](https://github.com/streetsidesoftware/cspell-dicts/compare/@cspell/dict-php@4.1.0...@cspell/dict-php@4.1.1) (2026-01-03)
+
+
+### Updates and Bug Fixes
+
+* Encorporate more sw dev terms ([#5116](https://github.com/streetsidesoftware/cspell-dicts/issues/5116)) ([2a080b7](https://github.com/streetsidesoftware/cspell-dicts/commit/2a080b78f1cc164d75a897d89d4416fc84138b46))
+
 ## [4.1.0](https://github.com/streetsidesoftware/cspell-dicts/compare/@cspell/dict-php@4.0.15...@cspell/dict-php@4.1.0) (2025-10-22)
 
 

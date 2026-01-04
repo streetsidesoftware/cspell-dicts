@@ -3,6 +3,16 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+## [5.2.28](https://github.com/streetsidesoftware/cspell-dicts/compare/@cspell/dict-npm@5.2.27...@cspell/dict-npm@5.2.28) (2026-01-03)
+
+
+### Updates and Bug Fixes
+
+* add 'canvaskit' ([#5125](https://github.com/streetsidesoftware/cspell-dicts/issues/5125)) ([4cc7c19](https://github.com/streetsidesoftware/cspell-dicts/commit/4cc7c192dc3673cbd08c88fb71f3f9e1e2037579))
+* Add 'canvaskit' to npmjs imports list ([#5127](https://github.com/streetsidesoftware/cspell-dicts/issues/5127)) ([78890f4](https://github.com/streetsidesoftware/cspell-dicts/commit/78890f47d9ae83c848db0cb7b5373c4075410e98))
+* Workflow Bot -- Update Dictionaries ([#5108](https://github.com/streetsidesoftware/cspell-dicts/issues/5108)) ([1967869](https://github.com/streetsidesoftware/cspell-dicts/commit/1967869ba62f2b30f58a40bf29288003e0b9ba93))
+* Workflow Bot -- Update Dictionaries ([#5121](https://github.com/streetsidesoftware/cspell-dicts/issues/5121)) ([29a891d](https://github.com/streetsidesoftware/cspell-dicts/commit/29a891d9eb59cdda013206598398e18af007e804))
+
 ## [5.2.27](https://github.com/streetsidesoftware/cspell-dicts/compare/@cspell/dict-npm@5.2.26...@cspell/dict-npm@5.2.27) (2025-12-17)
 
 
