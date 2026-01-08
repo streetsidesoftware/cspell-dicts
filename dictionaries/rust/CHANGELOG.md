@@ -3,6 +3,13 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+## [4.1.1](https://github.com/streetsidesoftware/cspell-dicts/compare/@cspell/dict-rust@4.1.0...@cspell/dict-rust@4.1.1) (2026-01-08)
+
+
+### Updates and Bug Fixes
+
+* Add more rust terms ([#5133](https://github.com/streetsidesoftware/cspell-dicts/issues/5133)) ([224ecf2](https://github.com/streetsidesoftware/cspell-dicts/commit/224ecf28c50fd5bb75f25be824bdf57776f130e3))
+
 ## [4.1.0](https://github.com/streetsidesoftware/cspell-dicts/compare/@cspell/dict-rust@4.0.12...@cspell/dict-rust@4.1.0) (2025-12-20)
 
 

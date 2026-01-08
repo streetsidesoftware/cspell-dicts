@@ -3,6 +3,13 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+## [5.1.20](https://github.com/streetsidesoftware/cspell-dicts/compare/@cspell/dict-software-terms@5.1.19...@cspell/dict-software-terms@5.1.20) (2026-01-08)
+
+
+### Updates and Bug Fixes
+
+* Add new coding term 'btrie' to dictionary ([#5136](https://github.com/streetsidesoftware/cspell-dicts/issues/5136)) ([2cee5fd](https://github.com/streetsidesoftware/cspell-dicts/commit/2cee5fd4fd0921df5048ceefca52128a56371a92))
+
 ## [5.1.19](https://github.com/streetsidesoftware/cspell-dicts/compare/@cspell/dict-software-terms@5.1.18...@cspell/dict-software-terms@5.1.19) (2026-01-03)
 
 
