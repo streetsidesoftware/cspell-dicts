@@ -3,6 +3,15 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+## [5.2.29](https://github.com/streetsidesoftware/cspell-dicts/compare/@cspell/dict-npm@5.2.28...@cspell/dict-npm@5.2.29) (2026-01-08)
+
+
+### Updates and Bug Fixes
+
+* Add 'skia-canvas' to NPM packages list ([#5139](https://github.com/streetsidesoftware/cspell-dicts/issues/5139)) ([3fc85e1](https://github.com/streetsidesoftware/cspell-dicts/commit/3fc85e1b1431f87bfd91fdb48a94c9e097fc5d8e))
+* Add @observablehq/plot to npm package list ([#5138](https://github.com/streetsidesoftware/cspell-dicts/issues/5138)) ([b224c0c](https://github.com/streetsidesoftware/cspell-dicts/commit/b224c0c3b4c9fc5072e9533bf0789b26e1fe68b4))
+* Workflow Bot -- Update Dictionaries ([#5131](https://github.com/streetsidesoftware/cspell-dicts/issues/5131)) ([364db1e](https://github.com/streetsidesoftware/cspell-dicts/commit/364db1e6ad80c19ff94b80aa46228e74bfe9397d))
+
 ## [5.2.28](https://github.com/streetsidesoftware/cspell-dicts/compare/@cspell/dict-npm@5.2.27...@cspell/dict-npm@5.2.28) (2026-01-03)
 
 

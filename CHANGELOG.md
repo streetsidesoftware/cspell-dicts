@@ -1,5 +1,23 @@
 # Release Notes
 
+## [32.2.1](https://github.com/streetsidesoftware/cspell-dicts/compare/cspell-dicts@32.2.0...cspell-dicts@32.2.1) (2026-01-08)
+
+
+### Updates and Bug Fixes
+
+* Add 'skia-canvas' to NPM packages list ([#5139](https://github.com/streetsidesoftware/cspell-dicts/issues/5139)) ([3fc85e1](https://github.com/streetsidesoftware/cspell-dicts/commit/3fc85e1b1431f87bfd91fdb48a94c9e097fc5d8e))
+* Add @observablehq/plot to npm package list ([#5138](https://github.com/streetsidesoftware/cspell-dicts/issues/5138)) ([b224c0c](https://github.com/streetsidesoftware/cspell-dicts/commit/b224c0c3b4c9fc5072e9533bf0789b26e1fe68b4))
+* Add more rust terms ([#5133](https://github.com/streetsidesoftware/cspell-dicts/issues/5133)) ([224ecf2](https://github.com/streetsidesoftware/cspell-dicts/commit/224ecf28c50fd5bb75f25be824bdf57776f130e3))
+* Add new coding term 'btrie' to dictionary ([#5136](https://github.com/streetsidesoftware/cspell-dicts/issues/5136)) ([2cee5fd](https://github.com/streetsidesoftware/cspell-dicts/commit/2cee5fd4fd0921df5048ceefca52128a56371a92))
+* Workflow Bot -- Update Dictionaries ([#5131](https://github.com/streetsidesoftware/cspell-dicts/issues/5131)) ([364db1e](https://github.com/streetsidesoftware/cspell-dicts/commit/364db1e6ad80c19ff94b80aa46228e74bfe9397d))
+
+
+### Dependencies
+
+* The following workspace dependencies were updated
+  * devDependencies
+    * @cspell/dict-cspell-bundle bumped to 2.0.46
+
 ## [32.2.0](https://github.com/streetsidesoftware/cspell-dicts/compare/cspell-dicts@32.1.0...cspell-dicts@32.2.0) (2026-01-03)
 
 
