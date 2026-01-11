@@ -209,7 +209,6 @@ package,count
 @asyncapi/generator-hooks,1
 @asyncapi/generator-react-sdk,1
 @asyncapi/multi-parser,1
-@asyncapi/nunjucks-filters,1
 @asyncapi/parser,2
 @asyncapi/specs,1
 @atlaskit/pragmatic-drag-and-drop,1
@@ -476,7 +475,7 @@ package,count
 @changesets/assemble-release-plan,1
 @changesets/changelog-git,1
 @changesets/changelog-github,6
-@changesets/cli,22
+@changesets/cli,23
 @changesets/config,1
 @changesets/errors,1
 @changesets/get-dependents-graph,1
@@ -852,10 +851,10 @@ package,count
 @eslint/config-inspector,1
 @eslint/core,4
 @eslint/css,1
-@eslint/eslintrc,31
-@eslint/js,112
+@eslint/eslintrc,32
+@eslint/js,113
 @eslint/json,4
-@eslint/markdown,16
+@eslint/markdown,17
 @eslint/plugin-kit,2
 @esm-bundle/chai,3
 @esm-bundle/chai-as-promised,1
@@ -869,6 +868,8 @@ package,count
 @express-zod-api/zod-plugin,1
 @expressots/core,1
 @expressots/shared,2
+@extend-chrome/messages,1
+@extend-chrome/storage,1
 @externs/nodejs,1
 @faker-js/faker,6
 @fakeyanss/redocly-openapi-core,1
@@ -1019,7 +1020,7 @@ package,count
 @homer0/eslint-plugin,1
 @homer0/prettier-config,1
 @hono/eslint-config,1
-@hono/node-server,7
+@hono/node-server,8
 @hot-loader/react-dom,2
 @html-eslint/eslint-plugin,1
 @html-eslint/parser,1
@@ -1456,7 +1457,8 @@ package,count
 @nx/node,2
 @nx/workspace,2
 @observablehq/plot,1
-@observablehq/runtime,1
+@observablehq/runtime,2
+@observablehq/stdlib,1
 @oclif/config,1
 @oclif/core,4
 @oclif/errors,2
@@ -1843,6 +1845,7 @@ package,count
 @prisma/migrate,1
 @prisma/query-plan-executor,1
 @prisma/studio-core,1
+@profoundlogic/hogan,1
 @protobufjs/aspromise,1
 @protobufjs/base64,1
 @protobufjs/codegen,1
@@ -1985,25 +1988,25 @@ package,count
 @rkusa/linebreak,1
 @rolldown/pluginutils,5
 @rollup/browser,1
-@rollup/plugin-alias,17
+@rollup/plugin-alias,18
 @rollup/plugin-babel,40
 @rollup/plugin-buble,5
-@rollup/plugin-commonjs,81
+@rollup/plugin-commonjs,83
 @rollup/plugin-dynamic-import-vars,3
 @rollup/plugin-eslint,2
 @rollup/plugin-graphql,1
 @rollup/plugin-html,1
 @rollup/plugin-inject,4
-@rollup/plugin-json,34
+@rollup/plugin-json,36
 @rollup/plugin-multi-entry,2
-@rollup/plugin-node-resolve,98
+@rollup/plugin-node-resolve,100
 @rollup/plugin-replace,35
 @rollup/plugin-sucrase,1
-@rollup/plugin-terser,39
+@rollup/plugin-terser,40
 @rollup/plugin-typescript,28
 @rollup/plugin-url,1
 @rollup/plugin-virtual,4
-@rollup/pluginutils,12
+@rollup/pluginutils,13
 @rspack/cli,1
 @rspack/core,3
 @rtsao/scc,1
@@ -2145,7 +2148,7 @@ package,count
 @solidjs/testing-library,1
 @sqltools/formatter,1
 @stackblitz/sdk,10
-@standard-schema/spec,5
+@standard-schema/spec,6
 @standard-schema/utils,2
 @stencil/angular-output-target,1
 @stencil/core,2
@@ -2237,7 +2240,7 @@ package,count
 @sveltejs/adapter-auto,2
 @sveltejs/kit,2
 @sveltejs/package,3
-@sveltejs/vite-plugin-svelte,5
+@sveltejs/vite-plugin-svelte,6
 @sveltejs/vite-plugin-svelte-inspector,1
 @svgr/babel-preset,2
 @svgr/core,4
@@ -2446,7 +2449,7 @@ package,count
 @twurple/common,1
 @type-challenges/utils,1
 @types/abbrev,1
-@types/acorn,1
+@types/acorn,2
 @types/adm-zip,3
 @types/ali-oss,2
 @types/amphtml-validator,1
@@ -2488,7 +2491,7 @@ package,count
 @types/boolbase,2
 @types/brace-expansion,1
 @types/buble,1
-@types/bun,4
+@types/bun,5
 @types/bunyan,1
 @types/busboy,2
 @types/byline,2
@@ -2507,6 +2510,7 @@ package,count
 @types/cheerio,2
 @types/chokidar,2
 @types/chroma-js,1
+@types/chrome,1
 @types/ci-info,2
 @types/classnames,5
 @types/clean-css,1
@@ -2529,7 +2533,7 @@ package,count
 @types/console-ui,1
 @types/content-disposition,2
 @types/content-type,3
-@types/convert-source-map,2
+@types/convert-source-map,3
 @types/cookie,4
 @types/cookie-parser,2
 @types/copy-webpack-plugin,1
@@ -2543,6 +2547,7 @@ package,count
 @types/cssesc,2
 @types/csso,2
 @types/cypress-image-snapshot,1
+@types/d3,1
 @types/d3-array,1
 @types/d3-color,1
 @types/d3-drag,1
@@ -2553,7 +2558,7 @@ package,count
 @types/d3-shape,2
 @types/d3-time-format,1
 @types/dasherize,1
-@types/debug,45
+@types/debug,46
 @types/decompress,1
 @types/dedent,1
 @types/deep-eql,1
@@ -2622,7 +2627,7 @@ package,count
 @types/form-data,1
 @types/formidable,3
 @types/fresh,2
-@types/fs-extra,41
+@types/fs-extra,42
 @types/fs-readdir-recursive,1
 @types/function-bind,1
 @types/functions-have-names,1
@@ -2694,7 +2699,7 @@ package,count
 @types/jest-axe,6
 @types/jest-environment-puppeteer,3
 @types/jest-expect-message,1
-@types/jest-image-snapshot,3
+@types/jest-image-snapshot,4
 @types/jest-in-case,2
 @types/jju,1
 @types/jquery,6
@@ -2703,6 +2708,7 @@ package,count
 @types/js-yaml,22
 @types/jsbarcode,1
 @types/jsdom,17
+@types/jsesc,1
 @types/json-bigint,1
 @types/json-diff,1
 @types/json-parse-better-errors,1
@@ -2725,6 +2731,7 @@ package,count
 @types/koa,2
 @types/koa__router,1
 @types/less,3
+@types/listr,1
 @types/load-json-file,1
 @types/loader-runner,1
 @types/lodash,54
@@ -2760,7 +2767,7 @@ package,count
 @types/markdown-table,1
 @types/markdown-to-jsx,1
 @types/markdownlint,1
-@types/marked,4
+@types/marked,5
 @types/marked-terminal,2
 @types/match-media-mock,1
 @types/matchmediaquery,1
@@ -2779,7 +2786,7 @@ package,count
 @types/minimatch,11
 @types/minimist,13
 @types/mkdirp,3
-@types/mocha,97
+@types/mocha,98
 @types/mock-fs,5
 @types/mock-property,1
 @types/mock-require,1
@@ -2800,7 +2807,7 @@ package,count
 @types/negotiator,1
 @types/nightwatch,1
 @types/nock,3
-@types/node,549
+@types/node,552
 @types/node-fetch,10
 @types/node-forge,4
 @types/nodemailer,2
@@ -2880,11 +2887,12 @@ package,count
 @types/raf,2
 @types/ramda,2
 @types/randomcolor,1
-@types/react,230
+@types/range-parser,1
+@types/react,232
 @types/react-beautiful-dnd,1
 @types/react-color,1
 @types/react-copy-to-clipboard,6
-@types/react-dom,195
+@types/react-dom,197
 @types/react-frame-component,2
 @types/react-highlight-words,3
 @types/react-is,6
@@ -2928,12 +2936,12 @@ package,count
 @types/secp256k1,1
 @types/selenium-webdriver,6
 @types/selfsigned,1
-@types/semver,54
+@types/semver,55
 @types/semver-compare,1
 @types/semver-utils,1
 @types/send,2
 @types/serialize-javascript,3
-@types/serve-handler,4
+@types/serve-handler,5
 @types/serve-index,1
 @types/serve-static,1
 @types/serviceworker,1
@@ -3019,6 +3027,7 @@ package,count
 @types/useragent,1
 @types/utf8,1
 @types/uuid,15
+@types/validate-npm-package-name,1
 @types/validator,3
 @types/vinyl,7
 @types/vinyl-fs,2
@@ -3039,7 +3048,7 @@ package,count
 @types/wrap-ansi,2
 @types/write-file-atomic,3
 @types/write-json-file,1
-@types/ws,19
+@types/ws,20
 @types/xml-name-validator,1
 @types/xml2js,4
 @types/xxhashjs,1
@@ -3052,9 +3061,9 @@ package,count
 @typeschema/core,1
 @typeschema/main,1
 @typeschema/zod,1
-@typescript-eslint/eslint-plugin,207
+@typescript-eslint/eslint-plugin,209
 @typescript-eslint/eslint-plugin-tslint,2
-@typescript-eslint/parser,219
+@typescript-eslint/parser,221
 @typescript-eslint/rule-schema-to-typescript-types,1
 @typescript-eslint/rule-tester,4
 @typescript-eslint/scope-manager,6
@@ -3064,7 +3073,7 @@ package,count
 @typescript-eslint/utils,12
 @typescript-eslint/visitor-keys,2
 @typescript/analyze-trace,1
-@typescript/native-preview,5
+@typescript/native-preview,6
 @typescript/vfs,1
 @typicode/eslint-config,1
 @tyriar/fibonacci-heap,1
@@ -3214,18 +3223,18 @@ package,count
 @virtuoso.dev/masonry,1
 @vitejs/devtools,1
 @vitejs/plugin-legacy,1
-@vitejs/plugin-react,17
+@vitejs/plugin-react,18
 @vitejs/plugin-react-swc,3
-@vitejs/plugin-vue,8
+@vitejs/plugin-vue,9
 @vitejs/plugin-vue-jsx,3
-@vitest/browser,7
+@vitest/browser,8
 @vitest/browser-playwright,2
 @vitest/coverage-c8,1
 @vitest/coverage-istanbul,9
 @vitest/coverage-v8,64
 @vitest/eslint-plugin,10
 @vitest/expect,4
-@vitest/mocker,1
+@vitest/mocker,2
 @vitest/pretty-format,1
 @vitest/runner,2
 @vitest/snapshot,1
@@ -3308,7 +3317,7 @@ package,count
 @webassemblyjs/ast,1
 @webassemblyjs/wasm-edit,1
 @webassemblyjs/wasm-parser,1
-@webcomponents/custom-elements,1
+@webcomponents/custom-elements,2
 @webcomponents/shadycss,2
 @webcomponents/template,1
 @webcomponents/webcomponentsjs,3
@@ -3388,7 +3397,7 @@ acorn-import-assertions,1
 acorn-import-phases,1
 acorn-jsx,6
 acorn-typescript,1
-acorn-walk,5
+acorn-walk,6
 acquit,1
 acquit-ignore,1
 acquit-require,1
@@ -3481,6 +3490,7 @@ any-promise,2
 any-shell-escape,2
 anymatch,2
 anyway-south-boy-pilot,41
+apache-arrow,1
 aphrodite,1
 apidoc-light,1
 apollo-cache,2
@@ -3515,7 +3525,7 @@ archiver-utils,1
 archy,2
 are-docs-informative,1
 are-we-there-yet,1
-arg,9
+arg,10
 argon2,1
 argparse,5
 args,3
@@ -3622,7 +3632,7 @@ automd,2
 autoprefixer,43
 autoprefixer-loader,1
 autoprefixer-stylus,1
-ava,144
+ava,145
 available-typed-arrays,1
 avsc,1
 avvio,1
@@ -4169,7 +4179,7 @@ byte-size,2
 bytes,14
 bytes-iec,1
 c12,2
-c8,132
+c8,133
 cac,10
 cacache,5
 cache-chunk-store,1
@@ -4202,7 +4212,7 @@ camelize-ts,1
 caniuse-api,4
 caniuse-lite,8
 canonical-json,1
-canvas,1
+canvas,3
 capital-case,1
 caporal,1
 captains-log,1
@@ -4211,6 +4221,7 @@ capture-stream,1
 capture-website,1
 cardinal,1
 careful-faster-dirty-matter,55
+cargo-cp-artifact,1
 case-sensitive-paths-webpack-plugin,5
 caseless,1
 cash-cat,1
@@ -4247,7 +4258,7 @@ chai-string,5
 chai-subset,4
 chai-subset-in-order,1
 chai-xml,1
-chalk,207
+chalk,208
 chalk-template,4
 chance,1
 chance-able-necessary-bell,55
@@ -4281,7 +4292,7 @@ check-side-effects,1
 check-types,1
 check-version-modules,1
 checkpoint-client,1
-cheerio,33
+cheerio,34
 cheerio-select,1
 cheerio-soupselect,1
 chicken-fell-spread,11
@@ -4289,7 +4300,7 @@ child_process,118
 child-process-promise,2
 chmodr,1
 choerodon-ui-font,1
-chokidar,60
+chokidar,61
 chokidar-cli,2
 chownr,1
 chroma-js,3
@@ -4523,7 +4534,7 @@ conventional-commits-parser,3
 conventional-github-releaser,4
 conventional-recommended-bump,3
 convert-gitmoji,1
-convert-source-map,18
+convert-source-map,19
 convict,1
 cookie,16
 cookie-encrypter,1
@@ -4691,7 +4702,7 @@ cz-conventional-changelog-default-export,1
 cz-format-extension,1
 cz-git,1
 d,2
-d3,1
+d3,2
 d3-array,4
 d3-axis,1
 d3-brush,1
@@ -4707,6 +4718,7 @@ d3-fetch,1
 d3-force,2
 d3-format,2
 d3-geo,1
+d3-geo-projection,1
 d3-hierarchy,2
 d3-interpolate,2
 d3-interpolate-path,1
@@ -4737,6 +4749,7 @@ data-urls,1
 dataloader,1
 datasette,1
 date-fns,9
+date-fns-tz,1
 date-format,1
 date-time,2
 date.js,1
@@ -4749,7 +4762,7 @@ de-indent,1
 deabsdeep,1
 death,1
 debounce,2
-debug,133
+debug,134
 debug-fabulous,1
 decache,6
 decamelize,4
@@ -4829,7 +4842,7 @@ detect-europe-js,1
 detect-file,1
 detect-gpu,1
 detect-indent,6
-detect-libc,4
+detect-libc,5
 detect-newline,4
 detect-node-es,1
 detect-port,5
@@ -4881,7 +4894,7 @@ dnode-protocol,1
 dns-packet,1
 doc-detective-common,2
 doc-detective-core,1
-doc-detective-resolver,1
+doc-detective-resolver,2
 doc-path,1
 docco,6
 docdash,1
@@ -5170,7 +5183,7 @@ es-escape-html,2
 es-get-iterator,1
 es-iterator-helpers,1
 es-lookup-scope,1
-es-module-lexer,5
+es-module-lexer,6
 es-object-atoms,2
 es-set-tostringtag,1
 es-shim-unscopables,1
@@ -5190,7 +5203,7 @@ es6-promisify,1
 es6-shim,5
 es6-symbol,1
 esast-util-from-js,2
-esbuild,69
+esbuild,70
 esbuild-extra,2
 esbuild-loader,8
 esbuild-node-externals,2
@@ -5203,7 +5216,7 @@ esbuild-plugin-umd-wrapper,3
 esbuild-plugin-version-injector,1
 esbuild-react-compiler-plugin,1
 esbuild-register,4
-esbuild-runner,1
+esbuild-runner,2
 esbuild-sass-plugin,2
 esbuild-wasm,2
 escalade,4
@@ -5221,7 +5234,7 @@ esdoc-ecmascript-proposal-plugin,1
 esdoc-importpath-plugin,1
 esdoc-inject-style-plugin,1
 esdoc-standard-plugin,1
-eslint,862
+eslint,864
 eslint-ava-rule-tester,2
 eslint-compat-utils,1
 eslint-config-airbnb,33
@@ -5281,7 +5294,7 @@ eslint-config-ostai,1
 eslint-config-phun-ky,1
 eslint-config-populist,1
 eslint-config-preact,1
-eslint-config-prettier,270
+eslint-config-prettier,271
 eslint-config-problems,2
 eslint-config-quasar,1
 eslint-config-raine,1
@@ -5375,7 +5388,7 @@ eslint-plugin-jsonc,7
 eslint-plugin-jsx-a11y,51
 eslint-plugin-local-rules,2
 eslint-plugin-lodash,2
-eslint-plugin-markdown,48
+eslint-plugin-markdown,47
 eslint-plugin-markdown-preferences,1
 eslint-plugin-mdx,1
 eslint-plugin-mmkal,1
@@ -5400,7 +5413,7 @@ eslint-plugin-prettier-vue,2
 eslint-plugin-promise,101
 eslint-plugin-putout,1
 eslint-plugin-qunit,3
-eslint-plugin-react,95
+eslint-plugin-react,96
 eslint-plugin-react-hooks,41
 eslint-plugin-react-native,1
 eslint-plugin-react-perf,1
@@ -5575,7 +5588,7 @@ fast-copy,1
 fast-deep-equal,9
 fast-equals,1
 fast-fifo,1
-fast-glob,35
+fast-glob,36
 fast-json-body,1
 fast-json-patch,1
 fast-json-stable-stringify,3
@@ -5692,6 +5705,7 @@ flatted,3
 flattie,1
 flaverr,2
 flexsearch,1
+flmngr,1
 flow-bin,20
 flow-copy-source,5
 flow-coverage-report,1
@@ -5712,7 +5726,7 @@ flux-standard-action,2
 fly-import,1
 fn.name,1
 focus-trap,1
-follow-redirects,4
+follow-redirects,5
 font-awesome,1
 font-finder,1
 fontace,1
@@ -5726,7 +5740,7 @@ foreground-child,4
 forever-agent,1
 forever-monitor,1
 fork-ts-checker-webpack-plugin,5
-form-data,11
+form-data,12
 form-data-encoder,1
 formatly,1
 formdata-node,4
@@ -5755,7 +5769,7 @@ fs,2
 fs-chunk-store,1
 fs-copy-file-sync,1
 fs-ext,1
-fs-extra,133
+fs-extra,134
 fs-fixture,3
 fs-jetpack,5
 fs-minipass,2
@@ -5818,11 +5832,11 @@ get-package-type,5
 get-paths,1
 get-pixels,1
 get-pkg-repo,2
-get-port,17
+get-port,18
 get-port-cli,1
 get-port-please,2
 get-root-node-polyfill,2
-get-stdin,6
+get-stdin,7
 get-stream,18
 get-tsconfig,6
 get-value,1
@@ -5895,7 +5909,7 @@ global-directory,1
 global-dirs,1
 global-jsdom,3
 global-modules,4
-globals,97
+globals,98
 globals-docs,1
 globalthis,2
 globby,38
@@ -5938,7 +5952,7 @@ graphql-scalars,2
 graphql-tag,9
 graphql-ws,1
 grass-dollar-crew-floating,55
-gray-matter,11
+gray-matter,12
 greenlock-express,1
 gridfs-stream,1
 grommet-icons,1
@@ -6266,7 +6280,7 @@ high5,1
 highland,1
 highlight-codemirror,1
 highlight-words-core,3
-highlight.js,22
+highlight.js,23
 highlights,2
 highlights-tokens,2
 history,2
@@ -6277,13 +6291,13 @@ hmac-drbg,1
 hoare,1
 hock,1
 hoek,6
-hogan.js,3
+hogan.js,2
 hoist-non-react-statics,9
 holderjs,1
 home-or-tmp,2
 home-path,1
 homedir-polyfill,1
-hono,7
+hono,8
 hono-openapi,1
 hook-std,3
 hookable,3
@@ -6293,6 +6307,7 @@ hope-slight-walk1,11
 host-validation-middleware,2
 hosted-git-info,11
 hpagent,2
+htl,1
 html_codesniffer,1
 html-dom-parser,2
 html-element-attributes,2
@@ -6350,7 +6365,7 @@ http-status-emojis,1
 http2,3
 http2-wrapper,3
 https-browserify,3
-https-proxy-agent,11
+https-proxy-agent,12
 hugo-bin,1
 human-id,1
 human-interval,1
@@ -6378,7 +6393,7 @@ icc,1
 ice-cap,1
 iconista,1
 iconv,2
-iconv-lite,18
+iconv-lite,19
 icss-utils,6
 idb-keyval,2
 identity-obj-proxy,9
@@ -6474,6 +6489,7 @@ intern,1
 internmap,1
 interpret,4
 intersection-observer,2
+interval-tree-1d,1
 intl-fallback-symbol,1
 intl-messageformat,1
 intlayer,1
@@ -6582,6 +6598,7 @@ iserror,1
 isexe,1
 iso-639-1,1
 isobject,3
+isoformat,1
 isogram,1
 isomorphic-fetch,3
 isomorphic-git,1
@@ -6652,7 +6669,7 @@ jest-extended,2
 jest-fetch-mock,1
 jest-fixed-jsdom,1
 jest-haste-map,2
-jest-image-snapshot,5
+jest-image-snapshot,6
 jest-in-case,3
 jest-junit,9
 jest-leak-detector,1
@@ -6714,7 +6731,7 @@ jqtpl,1
 jquery,19
 jquery-hammerjs,1
 js-base64,10
-js-beautify,8
+js-beautify,9
 js-calendar,1
 js-cleanup,1
 js-combinatorics,1
@@ -6752,12 +6769,12 @@ jsdoc-to-mdx,1
 jsdoc-ts-utils,1
 jsdoc-tsimport-plugin,1
 jsdoc-type-pratt-parser,3
-jsdom,75
+jsdom,77
 jsdom-global,3
 jsdom-screenshot,1
 jsdomify,1
 jsep,1
-jsesc,7
+jsesc,8
 jsftp,2
 jsftp-mkdirp,1
 jshint,53
@@ -7083,7 +7100,7 @@ list-dependents-cli,1
 list-item,1
 listen-private-thee6,11
 listify,2
-listr,3
+listr,4
 listr-input,1
 listr-silent-renderer,1
 listr-update-renderer,1
@@ -7239,7 +7256,7 @@ machinepack-redis,1
 madge,2
 madrun,1
 magic-bytes.js,2
-magic-string,25
+magic-string,26
 magicast,1
 mailparser,1
 mainly-cent,11
@@ -7274,7 +7291,7 @@ markdown-it-anchor,10
 markdown-it-attrs,8
 markdown-it-chain,2
 markdown-it-codetabs,2
-markdown-it-container,7
+markdown-it-container,8
 markdown-it-deflist,3
 markdown-it-emoji,8
 markdown-it-expand-tabs,2
@@ -7310,7 +7327,7 @@ markdownlint-cli2,2
 markdownlint-rule-extended-ascii,1
 markdownlint-rule-helpers,2
 markdox,1
-marked,36
+marked,37
 marked-highlight,1
 marked-man,1
 marked-terminal,5
@@ -7492,7 +7509,7 @@ mnemonic-id,1
 mobx,5
 mobx-react,4
 mobx-react-lite,2
-mocha,636
+mocha,637
 mocha-chai-jest-snapshot,2
 mocha-each,1
 mocha-eslint,4
@@ -7691,7 +7708,7 @@ nightwatch-helpers,1
 nine-yes-merely6,55
 nlm,1
 nocache,1
-nock,38
+nock,39
 node-7z,1
 node-abi,2
 node-abort-controller,1
@@ -7791,7 +7808,7 @@ npm-pick-manifest,3
 npm-profile,1
 npm-registry-fetch,5
 npm-registry-mock,1
-npm-run-all,101
+npm-run-all,102
 npm-run-all2,24
 npm-run-path,4
 npm-run-posix-or-windows,1
@@ -7814,12 +7831,12 @@ number-allocator,1
 number-is-nan,1
 numeral,2
 numericjs,1
-nunjucks,8
+nunjucks,7
 nuqs,1
 nuxt,1
 nwmatcher,1
 nx,12
-nyc,243
+nyc,244
 oas,1
 oas-normalize,1
 oauth,2
@@ -7845,6 +7862,7 @@ object.pick,2
 object.values,4
 observe-food-motion-hidden,55
 obug,4
+obuild,1
 oclif,3
 octokit,1
 octonode,1
@@ -7914,6 +7932,7 @@ outvariant,2
 ow,2
 oxc-parser,2
 oxc-resolver,1
+oxfmt,1
 oxlint,5
 p-all,3
 p-cancelable,2
@@ -8011,7 +8030,7 @@ path-scurry,1
 path-to-regexp,15
 path-type,1
 path-unified,1
-pathe,13
+pathe,14
 pathval,2
 patrun,1
 pause,1
@@ -8022,7 +8041,7 @@ pbxproj-dom,1
 pcre-to-regexp,1
 pdf-parse,1
 pdf-text,1
-pdfjs-dist,3
+pdfjs-dist,4
 pdfjs-viewer-element,2
 pdfkit,1
 pdfmake,2
@@ -8055,7 +8074,7 @@ phonegap-build,1
 phosphor-react,1
 piccolore,1
 picklog,1
-picocolors,41
+picocolors,42
 picomatch,23
 picoquery,1
 picture-tuber,1
@@ -8090,8 +8109,8 @@ plain-object-clone,1
 plain-promise,1
 plates,1
 platform,4
-playwright,15
-playwright-chromium,2
+playwright,16
+playwright-chromium,3
 playwright-core,2
 playwright-webkit,1
 please-release-me,1
@@ -8256,7 +8275,7 @@ prepare-package,8
 prepend-file,1
 preprocess,1
 presentable-error,2
-prettier,545
+prettier,547
 prettier-bytes,1
 prettier-check,1
 prettier-config-hudochenkov,1
@@ -8270,7 +8289,7 @@ prettier-plugin-astro,2
 prettier-plugin-curly,2
 prettier-plugin-jsdoc,3
 prettier-plugin-organize-attributes,1
-prettier-plugin-organize-imports,7
+prettier-plugin-organize-imports,8
 prettier-plugin-package,1
 prettier-plugin-packagejson,10
 prettier-plugin-pkg,1
@@ -8390,7 +8409,7 @@ pump,7
 punycode,8
 punycode.js,1
 pupa,1
-puppeteer,36
+puppeteer,37
 puppeteer-core,2
 pure-rand,2
 purgecss,1
@@ -8451,7 +8470,7 @@ random-words,119
 randombytes,2
 randomcolor,1
 randomfill,1
-range-parser,7
+range-parser,8
 ranges-apply,1
 ranges-invert,1
 ranges-push,1
@@ -8504,7 +8523,7 @@ rc-virtual-list,3
 rcedit,2
 rcloader,2
 re2,1
-react,292
+react,294
 react-ace,1
 react-addons-test-utils,2
 react-app-polyfill,3
@@ -8532,7 +8551,7 @@ react-docgen-annotation-resolver,1
 react-docgen-displayname-handler,1
 react-docgen-typescript,1
 react-document-title,2
-react-dom,268
+react-dom,270
 react-draggable,4
 react-dropzone,1
 react-easy-crop,1
@@ -8596,7 +8615,7 @@ react-quill,1
 react-reconciler,2
 react-redux,9
 react-refractor,1
-react-refresh,10
+react-refresh,11
 react-remove-scroll,1
 react-resizable,4
 react-responsive,2
@@ -8922,7 +8941,7 @@ rewrite-imports,1
 rfc-log-levels,1
 rfdc,5
 rhea-promise,1
-rimraf,344
+rimraf,345
 ripemd160,1
 riteway,1
 rlp,1
@@ -8936,7 +8955,7 @@ rolldown-plugin-dts,4
 rolldown-plugin-dts-snapshot,1
 rolldown-plugin-require-cjs,1
 rolling-stats,1
-rollup,236
+rollup,238
 rollup-plugin-alias,1
 rollup-plugin-analyzer,2
 rollup-plugin-async,1
@@ -8950,8 +8969,8 @@ rollup-plugin-commonjs,19
 rollup-plugin-copy,11
 rollup-plugin-cpy,1
 rollup-plugin-delete,3
-rollup-plugin-dts,20
-rollup-plugin-esbuild,7
+rollup-plugin-dts,21
+rollup-plugin-esbuild,8
 rollup-plugin-esbuild-minify,1
 rollup-plugin-executable,1
 rollup-plugin-filesize,5
@@ -9029,7 +9048,7 @@ runes2,2
 runmd,2
 runstorm,1
 rx,2
-rxjs,17
+rxjs,18
 sade,6
 safe-buffer,18
 safe-json-stringify,1
@@ -9120,7 +9139,7 @@ semantic-release-telegram,1
 semantic-ui-css,1
 semaphore,8
 semistandard,3
-semver,221
+semver,222
 semver-compare,1
 semver-diff,2
 semver-regex,2
@@ -9146,7 +9165,7 @@ serialize-javascript,8
 serialport,1
 serve,9
 serve-favicon,4
-serve-handler,7
+serve-handler,8
 serve-index,8
 serve-index-75lb,1
 serve-static,22
@@ -9430,6 +9449,7 @@ string-length,4
 string-natural-compare,1
 string-replace-async,1
 string-replace-loader,2
+string-split-by,1
 string-table,1
 string-to-stream,1
 string-width,25
@@ -9535,7 +9555,7 @@ surrounded-characteristic-or-rain,55
 suspend-react,1
 sv-selenium,1
 sval,1
-svelte,16
+svelte,17
 svelte-check,3
 svelte-eslint-parser,1
 svelte-i18n,1
@@ -9612,7 +9632,7 @@ tap-mocha-reporter,1
 tap-out,1
 tap-parser,6
 tap-spec,19
-tap-xunit,1
+tap-xunit,2
 tapable,7
 tape,142
 tape-catch,1
@@ -9743,7 +9763,7 @@ tinygradient,1
 tinyify,1
 tinyliquid,1
 tinypool,1
-tinyrainbow,1
+tinyrainbow,2
 tinyspy,3
 tinytim,1
 title,3
@@ -9751,7 +9771,7 @@ title-case,2
 titlecase,1
 titleize,2
 tldts,2
-tmp,44
+tmp,45
 tmp-promise,5
 to-absolute-glob,1
 to-ast,2
@@ -9774,7 +9794,7 @@ toml,7
 tool-invented-girl-jungle,11
 top-sites,1
 topo,1
-topojson-client,1
+topojson-client,2
 toposort,1
 toposort-class,1
 torrent-discovery,1
@@ -9829,12 +9849,12 @@ ts-ignore-import,1
 ts-invariant,3
 ts-jest,114
 ts-jest-resolver,7
-ts-loader,36
+ts-loader,37
 ts-md5,1
 ts-mocha,1
 ts-mock-imports,1
-ts-morph,10
-ts-node,153
+ts-morph,11
+ts-node,154
 ts-node-dev,1
 ts-node-maintained,1
 ts-pattern,1
@@ -9847,7 +9867,7 @@ tsconfck,4
 tsconfig,4
 tsconfig-paths,11
 tsconfig-paths-webpack-plugin,4
-tsd,115
+tsd,116
 tsdoc-build-rig,3
 tsdown,15
 tsdx,3
@@ -9873,9 +9893,9 @@ tslint-plugin-prettier,2
 tslint-react,1
 tslog,1
 tsm,1
-tsup,44
+tsup,45
 tsutils,3
-tsx,44
+tsx,45
 tty-browserify,3
 ttypescript,1
 tunnel,2
@@ -9897,8 +9917,9 @@ type-check,1
 type-coverage,42
 type-coverage-core,1
 type-detect,1
-type-fest,36
+type-fest,37
 type-is,8
+type-plus,1
 type-tester,1
 typechecker,1
 typed-event-target,1
@@ -9918,7 +9939,7 @@ typedoc-plugin-remark,1
 typedoc-plugin-rename-defaults,1
 typedoc-vitepress-theme,1
 typeorm,2
-typescript,848
+typescript,852
 typescript-cached-transpile,2
 typescript-eslint,77
 typescript-eslint-parser,3
@@ -9954,7 +9975,7 @@ umi,3
 umi-request,1
 unassertify,1
 unbounded,1
-unbuild,7
+unbuild,6
 unconfig-core,1
 uncontrollable,1
 uncss,2
@@ -10108,7 +10129,7 @@ valibot,4
 valid-directory,2
 validate-commit-msg,5
 validate-npm-package-license,2
-validate-npm-package-name,6
+validate-npm-package-name,7
 validator,8
 value-or-function,1
 values.js,1
@@ -10152,7 +10173,7 @@ vinyl-transform,1
 vis-network,1
 vision,1
 visualwidth,1
-vite,52
+vite,54
 vite-bundle-analyzer,2
 vite-node,1
 vite-plugin-banner,2
@@ -10163,15 +10184,16 @@ vite-plugin-css-injected-by-js,1
 vite-plugin-dts,10
 vite-plugin-eslint4b,3
 vite-plugin-fastly-js-compute,1
+vite-plugin-inspect,1
 vite-plugin-istanbul,1
 vite-plugin-node-polyfills,2
 vite-plugin-svgr,2
 vite-plugin-tdoc,1
 vite-tsconfig-paths,3
 vitefu,2
-vitepress,8
+vitepress,9
 vitepress-plugin-group-icons,1
-vitest,143
+vitest,145
 vitest-axe,2
 vitest-browser-react,1
 vitest-canvas-mock,1
@@ -10194,7 +10216,7 @@ vscode-languageserver-textdocument,1
 vscode-languageserver-types,2
 vscode-oniguruma,1
 vscode-uri,2
-vue,30
+vue,31
 vue-class-component,2
 vue-clipboard2,1
 vue-component-type-helpers,1
@@ -10290,11 +10312,11 @@ webdriverio,6
 webfont,1
 webidl-conversions,1
 webidl2js,1
-webpack,168
+webpack,169
 webpack-blocks,1
 webpack-bundle-analyzer,17
 webpack-chain,1
-webpack-cli,76
+webpack-cli,77
 webpack-defaults,1
 webpack-dev-middleware,5
 webpack-dev-server,45
@@ -10376,7 +10398,7 @@ write-file-atomic,5
 write-json-file,2
 write-package,1
 write-pkg,1
-ws,37
+ws,38
 wsl-utils,1
 x-is-array,1
 x-is-string,1
@@ -10400,7 +10422,7 @@ xmlbuilder,6
 xmlhttprequest,1
 xmllint,1
 xmltest,1
-xo,193
+xo,194
 xpath,3
 xregexp,1
 xss,1
