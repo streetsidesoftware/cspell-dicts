@@ -1,4 +1,3 @@
----
 packages:
   - cspell-dict-file-checker
   - dictionaries/*
@@ -6,3 +5,10 @@ packages:
   - packages/*
   - generator-cspell-dicts
   - scripts
+
+overrides:
+  '@cspell/cspell-tools': link:../../code/projects/cspell/packages/cspell-tools
+  cspell: link:../../code/projects/cspell/packages/cspell
+  cspell-trie: link:../../code/projects/cspell/packages/cspell-trie
+  cspell-types: link:../../code/projects/cspell/packages/cspell-types
+  hunspell-reader: link:../../code/projects/cspell/packages/hunspell-reader
