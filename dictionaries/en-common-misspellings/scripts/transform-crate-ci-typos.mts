@@ -76,7 +76,7 @@ function processEntry(entry: TyposEntry, dict: ITrie, excludeDict: ITrie): strin
     // if (dict.has(entry.word)) {
     //     return undefined; // Skip if the word is already in the dictionary
     // }
-    const suggestions = entry.suggestions.filter((sug) => !excludeDict.has(sug) && dict.has(sug));
+    const suggestions = entry.suggestions.filter((sug) => !excludeDict.hasWord(sug, false) && dict.hasWord(sug, false));
     if (!suggestions.length) {
         return undefined; // Skip if no valid suggestions
     }
