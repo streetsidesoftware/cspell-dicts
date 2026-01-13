@@ -1,10 +1,9 @@
 #!/usr/bin/env node
 
-// ts-check
 import fs from 'node:fs/promises';
 
 import { readFileText } from 'cspell-io';
-import { decodeTrie, parseDictionary } from 'cspell-trie-lib';
+import { decodeTrie, parseDictionary, type ITrie } from 'cspell-trie-lib';
 
 const root = new URL('../', import.meta.url);
 
@@ -16,9 +15,25 @@ const dictionaryUrls = {
     'en-GB': new URL('../en_GB/en_GB.trie', root),
     softwareTerms: new URL('../software-terms/dict/softwareTerms.txt', root),
     exclude: new URL('src/excludeWords.txt', root),
-};
+} as const;
 
-function getHeader(locale, syncTag) {
+interface SyncInfo {
+    'https://github.com/crate-ci/typos'?: string;
+}
+
+interface TyposEntry {
+    word: string;
+    suggestions: string[];
+}
+
+interface Dictionaries {
+    'en-US': ITrie;
+    'en-GB': ITrie;
+    softwareTerms: ITrie;
+    exclude: ITrie;
+}
+
+function getHeader(locale: string, syncTag: string): string {
     return `\
 # This file is generated from:
 #   https://github.com/crate-ci/typos/blob/${syncTag}/crates/typos-dict/assets/words.csv
@@ -33,13 +48,13 @@ function getHeader(locale, syncTag) {
 `;
 }
 
-async function loadDictionaryFromFile(fileName) {
+async function loadDictionaryFromFile(fileName: URL): Promise<ITrie> {
     const file = await readFileText(fileName);
-    const trie = /\.trie\b/.test(fileName) ? decodeTrie(file) : parseDictionary(file);
+    const trie = /\.trie\b/.test(fileName.pathname) ? decodeTrie(file) : parseDictionary(file);
     return trie;
 }
 
-async function loadDictionaries() {
+async function loadDictionaries(): Promise<Dictionaries> {
     return {
         'en-US': await loadDictionaryFromFile(dictionaryUrls['en-US']),
         'en-GB': await loadDictionaryFromFile(dictionaryUrls['en-GB']),
@@ -48,7 +63,7 @@ async function loadDictionaries() {
     };
 }
 
-async function readTyposEntries() {
+async function readTyposEntries(): Promise<TyposEntry[]> {
     const file = await readFileText(new URL('words.csv', typesDirURL));
     return file
         .split(/\r?\n/g)
@@ -57,7 +72,7 @@ async function readTyposEntries() {
         .map((words) => ({ word: words[0], suggestions: words.slice(1) }));
 }
 
-function processEntry(entry, dict, excludeDict) {
+function processEntry(entry: TyposEntry, dict: ITrie, excludeDict: ITrie): string | undefined {
     // if (dict.has(entry.word)) {
     //     return undefined; // Skip if the word is already in the dictionary
     // }
@@ -68,20 +83,20 @@ function processEntry(entry, dict, excludeDict) {
     return `${entry.word}->${suggestions.join(',')}`;
 }
 
-async function writeEntriesToFile(url, entries, locale, syncTag) {
+async function writeEntriesToFile(url: URL, entries: Set<string>, locale: string, syncTag: string): Promise<void> {
     const content = getHeader(locale, syncTag) + [...entries].sort().join('\n') + '\n';
     await fs.writeFile(url, content, 'utf8');
 }
 
-async function main() {
-    const syncInfo = JSON.parse(await fs.readFile(new URL('.sync-github-files.json', typesDirURL), 'utf8'));
+async function main(): Promise<void> {
+    const syncInfo = JSON.parse(await fs.readFile(new URL('.sync-github-files.json', typesDirURL), 'utf8')) as SyncInfo;
     const syncTag = syncInfo['https://github.com/crate-ci/typos'] || 'v1.33.1';
     const dictionaries = await loadDictionaries();
     const typosEntries = await readTyposEntries();
-    const entriesEnAll = new Set();
-    const entriesEnUS = new Set();
-    const entriesEnGB = new Set();
-    const entriesSoftwareTerms = new Set();
+    const entriesEnAll = new Set<string>();
+    const entriesEnUS = new Set<string>();
+    const entriesEnGB = new Set<string>();
+    const entriesSoftwareTerms = new Set<string>();
 
     for (const entry of typosEntries) {
         const enUS = processEntry(entry, dictionaries['en-US'], dictionaries.exclude);
