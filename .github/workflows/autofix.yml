@@ -1,6 +1,7 @@
 name: autofix.ci
 on:
   pull_request:
+    types: [labeled, unlabeled, opened, synchronize, reopened]
 permissions:
   contents: read
 
