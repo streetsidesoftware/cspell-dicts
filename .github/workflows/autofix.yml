@@ -1,12 +1,16 @@
 name: autofix.ci
 on:
   pull_request:
+    types: [labeled, unlabeled, opened, synchronize, reopened]
 permissions:
   contents: read
 
 concurrency:
   group: ${{ github.workflow }}-${{ github.ref }}
   cancel-in-progress: true
+
+env:
+  USE_AUTOFIX: ${{ !contains(github.event.pull_request.labels.*.name, 'no-autofix') }}
 
 jobs:
   autofix:
@@ -28,4 +32,6 @@ jobs:
         run: |
           pnpm run lint:fix:sort-source-files
 
-      - uses: autofix-ci/action@635ffb0c9798bd160680f18fd73371e355b85f27
+      - name: Run autofix.ci
+        if: env.USE_AUTOFIX == 'true'
+        uses: autofix-ci/action@635ffb0c9798bd160680f18fd73371e355b85f27

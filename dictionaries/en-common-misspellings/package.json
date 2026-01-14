@@ -12,7 +12,7 @@
     "./cspell-ext.json": "./cspell-ext.json"
   },
   "scripts": {
-    "build": "node ./scripts/transform-crate-ci-typos.mjs && node ./scripts/build.mjs",
+    "build": "node ./scripts/transform-crate-ci-typos.mts && node ./scripts/build.mts",
     "test": "cspell .",
     "sync": "sync-github-files crate-ci/typos crates/typos-dict/assets/words.csv LICENSE-MIT --tag=v1.33.1 -o src/crate-ci/typos",
     "sync:manual": "GITHUB_TOKEN=$(gh auth token) pnpm sync",

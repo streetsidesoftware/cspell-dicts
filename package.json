@@ -38,7 +38,7 @@
     "url": "https://github.com/streetsidesoftware/cspell-dicts.git"
   },
   "devDependencies": {
-    "@cspell/cspell-tools": "9.4.0",
+    "@cspell/cspell-tools": "^9.6.0",
     "@cspell/dict-cspell-bundle": "workspace:*",
     "@eslint/js": "^9.39.2",
     "@lerna-lite/cli": "^4.10.5",
@@ -48,14 +48,14 @@
     "ava": "^6.4.1",
     "cpy-cli": "^6.0.0",
     "cross-env": "^10.1.0",
-    "cspell": "9.4.0",
+    "cspell": "^9.6.0",
     "cspell-dict-file-checker": "workspace:^",
     "cspell-dicts-scripts": "workspace:*",
-    "cspell-trie": "9.4.0",
+    "cspell-trie": "^9.6.0",
     "eslint": "^9.39.2",
     "generator-cspell-dicts": "workspace:^",
     "globals": "^17.0.0",
-    "hunspell-reader": "9.4.0",
+    "hunspell-reader": "^9.6.0",
     "inject-markdown": "^4.0.0",
     "json5": "2.2.3",
     "prettier": "^3.7.4",
@@ -63,7 +63,7 @@
     "yamljs": "^0.3.0"
   },
   "engines": {
-    "node": ">=18"
+    "node": ">=22.19"
   },
   "license": "GPL-3.0-or-later"
 }
