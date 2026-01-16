@@ -1,5 +1,20 @@
 # Release Notes
 
+## [32.2.2](https://github.com/streetsidesoftware/cspell-dicts/compare/cspell-dicts@32.2.1...cspell-dicts@32.2.2) (2026-01-16)
+
+
+### Updates and Bug Fixes
+
+* Add crxjs to npm.txt ([#5142](https://github.com/streetsidesoftware/cspell-dicts/issues/5142)) ([89c380f](https://github.com/streetsidesoftware/cspell-dicts/commit/89c380f020ad9df69061b1e8ac544724309663f1))
+* Workflow Bot -- Update Dictionaries ([#5143](https://github.com/streetsidesoftware/cspell-dicts/issues/5143)) ([68e0e51](https://github.com/streetsidesoftware/cspell-dicts/commit/68e0e515df62573b2badf08e92cf5d0ab146df46))
+
+
+### Dependencies
+
+* The following workspace dependencies were updated
+  * devDependencies
+    * @cspell/dict-cspell-bundle bumped to 2.0.47
+
 ## [32.2.1](https://github.com/streetsidesoftware/cspell-dicts/compare/cspell-dicts@32.2.0...cspell-dicts@32.2.1) (2026-01-08)
 
 
