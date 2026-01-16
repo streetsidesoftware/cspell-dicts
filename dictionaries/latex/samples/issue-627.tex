@@ -1,0 +1,87 @@
+% [Issue #627](https://github.com/streetsidesoftware/cspell-dicts/issues/627)
+
+% Maths
+%	- Detecting commented maths is not possible, as the requirements for escaping do not apply.
+% 	- It is extremely important to be careful about handling escaped dollar chars,
+% 	  otherwise, large portions of the document could be ignored.
+%	  e.g. if a commented dollar is interpreted as the start/end of math mode
+%	  e.g. if an escaped dollar is interpreted as the start/end of math mode
+% Syntax rules (single or double dollar)
+% 	Unescaped pairs of dollar chars (which are not commented) delimit math mode
+%	This can span multiple lines
+%	This can contain escaped dollar chars
+%	This can contain comments (which can contain escaped/unescaped dollar chars)
+% 	Pairs of single/double dollar chars should be matched, and should not be nested
+% Other syntax is not considered (non-exhaustive list)
+\(maths\)
+\[maths\]
+\begin{equation}maths\end{equation}
+\begin{align}maths\end{align}
+
+% "LaTexMath"
+% TEST: Uncommented maths should be ignored
+% Should spellcheck comments, but ignore maths
+The equation is wordzero $mathzero$ wordzero
+The equation is wordzerodd $$mathzero$$ wordzerodd
+\% The equation is commentone $mathone$ commentone
+\\\% The equation is commentthree $maththree$ commentthree
+\\\\\% The equation is commentfive $mathfive$ commentfive
+\\\\\\\% The equation is commentsevern $mathsevern$ commentsevern
+\% The equation is commentone \\$mathone$ commentone
+\\\% The equation is commentthree \\$maththree$ commentthree
+\% The equation is commentonedd $$mathonedd$$ commentonedd
+\\\% The equation is commentthreedd $$maththreedd$$ commentthreedd
+\% The equation is commentonedd \\$$mathonedd$$ commentonedd
+\\\% The equation is commentthreedd \\$$maththreedd$$ commentthreedd
+% Should spellcheck
+% The equation is commentzero $mathzero$ commentzero
+\\% The equation is commenttwo $mathtwo$ commenttwo
+\\\\% The equation is commentfour $mathfour$ commentfour
+\\\\\\% The equation is commentsix $mathsix$ commentsix
+\% The equation is commentone \$mathone\$ commentone
+\\\% The equation is commentthree \$maththree\$ commentthree
+% The equation is commentzero \$mathzero$ commentzero
+\\% The equation is commenttwo \$mathtwo\$ commenttwo
+\\\\% The equation is commentfour \$mathfour\$ commentfour
+% The equation is commentzero \\$mathzero$ commentzero
+\\% The equation is commenttwo \\$mathtwo$ commenttwo
+\\\\% The equation is commentfour \\$mathfour$ commentfour
+% The equation is commentzerodd $$mathzerodd$$ commentzerodd
+\\% The equation is commenttwodd $$mathtwodd$$ commenttwodd
+\\\\% The equation is commentfourdd $$mathfourdd$$ commentfourdd
+% The equation is commentzerodd \\$$mathzerodd$$ commentzerodd
+\\% The equation is commenttwodd \\$$mathtwodd$$ commenttwodd
+\\\\% The equation is commentfourdd \\$$mathfourdd$$ commentfourdd
+
+% TEST: Should still work over multiple lines
+textzero $
+mathzero
+$ textzero
+
+textzerodd $$
+mathzerodd
+$$ textzerodd
+
+% TEST: the painful combination that makes the regex complicated
+\% The equation is textone $
+mathone \$
+% spelling error in commentone
+% commented dollar $
+% spelling error in commenttwo
+% commented escaped dollar \$
+$ textone
+
+% TEST: Extra checks that math mode starts/ends where it should
+spellingerrorone $a$ spellingerrortwo
+
+%Unmatched dollar 1 $
+
+spellingerrorthree $b$ spellingerrorfour
+
+% Unmatched dollar 2 $
+
+spellingerrorfive $c$ spellingerrorsix
+
+% Unmatched dollar 3 $
+
+spellingerrorsevern $d$ spellingerroreight
