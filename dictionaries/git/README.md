@@ -76,6 +76,7 @@ dictionaries:
 | Name  | Locale | File Type                  |
 | ----- | ------ | -------------------------- |
 | `git` |        | `commit-msg`, `git-commit` |
+| `git` |        | `shellscript`              |
 
 <!--- @@inject-end: ./static/install.md --->
 
