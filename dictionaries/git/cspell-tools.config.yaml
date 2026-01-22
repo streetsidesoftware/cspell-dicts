@@ -1,0 +1,13 @@
+# yaml-language-server: $schema=https://raw.githubusercontent.com/streetsidesoftware/cspell/main/packages/cspell-tools/cspell-tools.config.schema.json
+
+$schema: https://raw.githubusercontent.com/streetsidesoftware/cspell/main/packages/cspell-tools/cspell-tools.config.schema.json
+targets:
+  - name: git-terms
+    targetDirectory: dict
+    compress: false
+    format: plaintext
+    sources:
+      - src/terms.txt
+      - src/additional_words.txt
+    sort: true
+checksumFile: false
