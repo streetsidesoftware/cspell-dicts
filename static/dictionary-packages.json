@@ -1659,11 +1659,15 @@
       {
         "name": "git",
         "description": "Git Terms",
-        "fileTypes": ["commit-msg", "git-commit"],
+        "fileTypes": ["commit-msg", "git-commit", "shellscript"],
         "localeFileTypes": [
           {
             "locale": "",
             "fileType": "commit-msg, git-commit"
+          },
+          {
+            "locale": "",
+            "fileType": "shellscript"
           }
         ],
         "locales": []
