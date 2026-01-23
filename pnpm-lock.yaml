@@ -58,7 +58,7 @@ importers:
         version: link:generator-cspell-dicts
       globals:
         specifier: ^17.0.0
-        version: 17.0.0
+        version: 17.1.0
       hunspell-reader:
         specifier: ^9.6.0
         version: 9.6.0
@@ -2574,8 +2574,8 @@ packages:
     resolution: {integrity: sha512-oahGvuMGQlPw/ivIYBjVSrWAfWLBeku5tpPE2fOPLi+WHffIWbuh2tCjhyQhTBPMf5E9jDEH4FOmTYgYwbKwtQ==}
     engines: {node: '>=18'}
 
-  globals@17.0.0:
-    resolution: {integrity: sha512-gv5BeD2EssA793rlFWVPMMCqefTlpusw6/2TbAVMy0FzcG8wKJn4O+NqJ4+XWmmwrayJgw5TzrmWjFgmz1XPqw==}
+  globals@17.1.0:
+    resolution: {integrity: sha512-8HoIcWI5fCvG5NADj4bDav+er9B9JMj2vyL2pI8D0eismKyUvPLTSs+Ln3wqhwcp306i73iyVnEKx3F6T47TGw==}
     engines: {node: '>=18'}
 
   globby@14.1.0:
@@ -5393,7 +5393,7 @@ snapshots:
 
   '@types/through@0.0.33':
     dependencies:
-      '@types/node': 25.0.10
+      '@types/node': 20.19.30
 
   '@types/unist@2.0.11': {}
 
@@ -5402,7 +5402,7 @@ snapshots:
   '@types/vinyl@2.0.12':
     dependencies:
       '@types/expect': 1.20.4
-      '@types/node': 25.0.10
+      '@types/node': 20.19.30
 
   '@vercel/nft@0.29.4(encoding@0.1.13)':
     dependencies:
@@ -6453,7 +6453,7 @@ snapshots:
 
   globals@14.0.0: {}
 
-  globals@17.0.0: {}
+  globals@17.1.0: {}
 
   globby@14.1.0:
     dependencies:
