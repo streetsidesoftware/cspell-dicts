@@ -1,5 +1,35 @@
 # Release Notes
 
+## [33.0.0](https://github.com/streetsidesoftware/cspell-dicts/compare/cspell-dicts@32.2.1...cspell-dicts@33.0.0) (2026-01-24)
+
+
+### ⚠ BREAKING CHANGES
+
+* Use yaml file for Latex Patterns ([#5180](https://github.com/streetsidesoftware/cspell-dicts/issues/5180))
+
+### Features
+
+* support git terms in shell script files ([#5166](https://github.com/streetsidesoftware/cspell-dicts/issues/5166)) ([5106185](https://github.com/streetsidesoftware/cspell-dicts/commit/51061857fe56181a714cd8c389b3508d6e6f4368))
+* Use yaml file for Latex Patterns ([#5180](https://github.com/streetsidesoftware/cspell-dicts/issues/5180)) ([6b651a8](https://github.com/streetsidesoftware/cspell-dicts/commit/6b651a8675d5065a075030f5787996363a2c9163))
+
+
+### Updates and Bug Fixes
+
+* Add crxjs to npm.txt ([#5142](https://github.com/streetsidesoftware/cspell-dicts/issues/5142)) ([89c380f](https://github.com/streetsidesoftware/cspell-dicts/commit/89c380f020ad9df69061b1e8ac544724309663f1))
+* Add WebStorage ([#5157](https://github.com/streetsidesoftware/cspell-dicts/issues/5157)) ([b8b1542](https://github.com/streetsidesoftware/cspell-dicts/commit/b8b15429fadd20be9835e3a2144d5053beb647f8))
+* **fullstack.txt:** orcp ([#5173](https://github.com/streetsidesoftware/cspell-dicts/issues/5173)) ([b1bf8db](https://github.com/streetsidesoftware/cspell-dicts/commit/b1bf8db7d0de0af98c427d8c6b32185984759e95))
+* Latex ignore patterns ([#5179](https://github.com/streetsidesoftware/cspell-dicts/issues/5179)) ([e41e1f9](https://github.com/streetsidesoftware/cspell-dicts/commit/e41e1f9fb7eb979870eea80f6ce43747f9cf65d9))
+* Workflow Bot -- Build Dictionaries ([#5162](https://github.com/streetsidesoftware/cspell-dicts/issues/5162)) ([8a56bff](https://github.com/streetsidesoftware/cspell-dicts/commit/8a56bffc1d2103c231a1c66b4dd995db96c4f5c8))
+* Workflow Bot -- Update Dictionaries ([#5143](https://github.com/streetsidesoftware/cspell-dicts/issues/5143)) ([68e0e51](https://github.com/streetsidesoftware/cspell-dicts/commit/68e0e515df62573b2badf08e92cf5d0ab146df46))
+* Workflow Bot -- Update Dictionaries ([#5159](https://github.com/streetsidesoftware/cspell-dicts/issues/5159)) ([2bcb0dd](https://github.com/streetsidesoftware/cspell-dicts/commit/2bcb0dd24794eb7a4dd99fb391c7fc79af1215a2))
+
+
+### Dependencies
+
+* The following workspace dependencies were updated
+  * devDependencies
+    * @cspell/dict-cspell-bundle bumped to 2.0.47
+
 ## [32.2.1](https://github.com/streetsidesoftware/cspell-dicts/compare/cspell-dicts@32.2.0...cspell-dicts@32.2.1) (2026-01-08)
 
 

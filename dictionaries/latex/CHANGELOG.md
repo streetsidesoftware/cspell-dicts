@@ -3,6 +3,22 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+## [5.0.0](https://github.com/streetsidesoftware/cspell-dicts/compare/@cspell/dict-latex@4.0.4...@cspell/dict-latex@5.0.0) (2026-01-24)
+
+
+### ⚠ BREAKING CHANGES
+
+* Use yaml file for Latex Patterns ([#5180](https://github.com/streetsidesoftware/cspell-dicts/issues/5180))
+
+### Features
+
+* Use yaml file for Latex Patterns ([#5180](https://github.com/streetsidesoftware/cspell-dicts/issues/5180)) ([6b651a8](https://github.com/streetsidesoftware/cspell-dicts/commit/6b651a8675d5065a075030f5787996363a2c9163))
+
+
+### Updates and Bug Fixes
+
+* Latex ignore patterns ([#5179](https://github.com/streetsidesoftware/cspell-dicts/issues/5179)) ([e41e1f9](https://github.com/streetsidesoftware/cspell-dicts/commit/e41e1f9fb7eb979870eea80f6ce43747f9cf65d9))
+
 ## [4.0.4](https://github.com/streetsidesoftware/cspell-dicts/compare/@cspell/dict-latex@4.0.3...@cspell/dict-latex@4.0.4) (2025-07-09)
 
 
