@@ -1,6 +1,6 @@
 {
   "name": "cspell-dicts",
-  "version": "31.8.0",
+  "version": "32.2.1",
   "private": true,
   "packageManager": "pnpm@10.20.0+sha512.cf9998222162dd85864d0a8102e7892e7ba4ceadebbf5a31f9c2fce48dfce317a9c53b9f6464d1ef9042cba2e02ae02a9f7c143a2b438cd93c91840f0192b9dd",
   "scripts": {
@@ -38,32 +38,32 @@
     "url": "https://github.com/streetsidesoftware/cspell-dicts.git"
   },
   "devDependencies": {
-    "@cspell/cspell-tools": "^9.4.0",
+    "@cspell/cspell-tools": "^9.6.0",
     "@cspell/dict-cspell-bundle": "workspace:*",
     "@eslint/js": "^9.39.2",
-    "@lerna-lite/cli": "^4.10.2",
-    "@lerna-lite/exec": "^4.10.2",
-    "@lerna-lite/publish": "^4.10.2",
-    "@lerna-lite/run": "^4.10.2",
+    "@lerna-lite/cli": "^4.11.0",
+    "@lerna-lite/exec": "^4.11.1",
+    "@lerna-lite/publish": "^4.11.1",
+    "@lerna-lite/run": "^4.11.1",
     "ava": "^6.4.1",
     "cpy-cli": "^6.0.0",
     "cross-env": "^10.1.0",
-    "cspell": "^9.4.0",
+    "cspell": "^9.6.0",
     "cspell-dict-file-checker": "workspace:^",
     "cspell-dicts-scripts": "workspace:*",
-    "cspell-trie": "^9.4.0",
+    "cspell-trie": "^9.6.0",
     "eslint": "^9.39.2",
     "generator-cspell-dicts": "workspace:^",
-    "globals": "^16.5.0",
-    "hunspell-reader": "^9.4.0",
+    "globals": "^17.0.0",
+    "hunspell-reader": "^9.6.0",
     "inject-markdown": "^4.0.0",
     "json5": "2.2.3",
-    "prettier": "^3.7.4",
+    "prettier": "^3.8.1",
     "shx": "^0.4.0",
     "yamljs": "^0.3.0"
   },
   "engines": {
-    "node": ">=18"
+    "node": ">=22.19"
   },
   "license": "GPL-3.0-or-later"
 }

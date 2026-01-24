@@ -1,6 +1,6 @@
 {
   "name": "@cspell/dict-monkeyc",
-  "version": "1.0.11",
+  "version": "1.0.12",
   "description": "Monkey C dictionary for cspell.",
   "publishConfig": {
     "access": "public",
@@ -12,7 +12,7 @@
     "./cspell-ext.json": "./cspell-ext.json"
   },
   "scripts": {
-    "build": "cross-env NODE_OPTIONS=--max_old_space_size=8192 cspell-tools-cli compile \"src/monkeyc_keywords.txt\" -o .",
+    "build": "cspell-tools-cli build",
     "test": "shx head -n 1000 \"src/monkeyc_keywords.txt\" | cspell -c ./cspell-ext.json \"--locale=*\" \"--languageId=monkeyc\" stdin",
     "prepublishOnly": "echo pre-publish",
     "prepare:dictionary": "pnpm run build"
@@ -37,7 +37,7 @@
   },
   "homepage": "https://github.com/streetsidesoftware/cspell-dicts/blob/main/dictionaries/monkeyc#readme",
   "files": [
-    "monkeyc_keywords.txt.gz",
+    "dict/monkeyc_keywords.txt.gz",
     "cspell-ext.json",
     "*.js",
     "*.d.ts"

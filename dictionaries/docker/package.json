@@ -1,6 +1,6 @@
 {
   "name": "@cspell/dict-docker",
-  "version": "1.1.16",
+  "version": "1.1.17",
   "description": "Docker dictionary for cspell.",
   "publishConfig": {
     "access": "public",
@@ -13,7 +13,7 @@
   },
   "scripts": {
     "build": "cspell-tools-cli build",
-    "test": "shx head -n 1000 \"src/docker-words.txt\" | cspell -c ./cspell-ext.json \"--locale=*\" \"--languageId=dockerfile\" stdin",
+    "test": "cspell samples",
     "prepublishOnly": "echo pre-publish",
     "prepare:dictionary": "pnpm run build"
   },
@@ -36,7 +36,7 @@
   },
   "homepage": "https://github.com/streetsidesoftware/cspell-dicts/blob/main/dictionaries/docker#readme",
   "files": [
-    "docker-words.txt.gz",
+    "dict/docker-words.txt.gz",
     "cspell-ext.json",
     "*.js",
     "*.d.ts"

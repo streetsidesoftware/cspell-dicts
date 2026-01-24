@@ -4,8 +4,8 @@
   "description": "",
   "type": "module",
   "bin": {
-    "build-dicts": "./build.mjs",
-    "transform-crate-ci-types": "./transform-crate-ci-types.mjs"
+    "build-dicts": "./build.mts",
+    "transform-crate-ci-types": "./transform-crate-ci-types.mts"
   },
   "scripts": {
     "test": "echo \"Error: no test specified\""
@@ -14,8 +14,15 @@
   "author": "",
   "license": "MIT",
   "dependencies": {
-    "cspell-io": "^9.4.0",
-    "cspell-trie-lib": "^9.4.0",
+    "cspell-io": "^9.6.0",
+    "cspell-trie-lib": "^9.6.0",
     "yaml": "^2.8.2"
+  },
+  "devDependencies": {
+    "@tsconfig/node24": "^24.0.4",
+    "@types/node": "^20.19.30"
+  },
+  "engines": {
+    "node": ">=22.19"
   }
 }

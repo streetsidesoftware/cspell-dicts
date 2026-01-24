@@ -3,6 +3,27 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+## [4.1.1](https://github.com/streetsidesoftware/cspell-dicts/compare/@cspell/dict-rust@4.1.0...@cspell/dict-rust@4.1.1) (2026-01-08)
+
+
+### Updates and Bug Fixes
+
+* Add more rust terms ([#5133](https://github.com/streetsidesoftware/cspell-dicts/issues/5133)) ([224ecf2](https://github.com/streetsidesoftware/cspell-dicts/commit/224ecf28c50fd5bb75f25be824bdf57776f130e3))
+
+## [4.1.0](https://github.com/streetsidesoftware/cspell-dicts/compare/@cspell/dict-rust@4.0.12...@cspell/dict-rust@4.1.0) (2025-12-20)
+
+
+### Features
+
+* Introduce a rust crates dictionary ([#5094](https://github.com/streetsidesoftware/cspell-dicts/issues/5094)) ([77ae7f1](https://github.com/streetsidesoftware/cspell-dicts/commit/77ae7f116f63c7482f0abc9aa5577b0afbadb1a8))
+
+
+### Updates and Bug Fixes
+
+* Add `dalek` to rust crates ([#5103](https://github.com/streetsidesoftware/cspell-dicts/issues/5103)) ([1cda114](https://github.com/streetsidesoftware/cspell-dicts/commit/1cda11419bfc92a39645b585b96d612171ea89f4))
+* Add more rust crates ([#5099](https://github.com/streetsidesoftware/cspell-dicts/issues/5099)) ([49b73b5](https://github.com/streetsidesoftware/cspell-dicts/commit/49b73b5c90dfcea41bfdaa25303861deccff459a))
+* Adjust the layout of the rust dictionary ([#5101](https://github.com/streetsidesoftware/cspell-dicts/issues/5101)) ([a0a9719](https://github.com/streetsidesoftware/cspell-dicts/commit/a0a971923ee04e1f4d4b6a5b7bc86170cf17511c))
+
 ## [4.0.12](https://github.com/streetsidesoftware/cspell-dicts/compare/@cspell/dict-rust@4.0.11...@cspell/dict-rust@4.0.12) (2025-07-09)
 
 

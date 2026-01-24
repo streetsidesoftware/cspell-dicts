@@ -43,6 +43,13 @@ Co-authored-by: Nick Schonning <nschonni@gmail.com>
 
 
 
+## [4.0.5](https://github.com/streetsidesoftware/cspell-dicts/compare/@cspell/dict-html-symbol-entities@4.0.4...@cspell/dict-html-symbol-entities@4.0.5) (2025-12-17)
+
+
+### Updates and Bug Fixes
+
+* adjust dictionary location ([#5065](https://github.com/streetsidesoftware/cspell-dicts/issues/5065)) ([9aba3ca](https://github.com/streetsidesoftware/cspell-dicts/commit/9aba3caf1afe5ed84212059932fffa8cc35896c4))
+
 ## [4.0.4](https://github.com/streetsidesoftware/cspell-dicts/compare/@cspell/dict-html-symbol-entities@4.0.3...@cspell/dict-html-symbol-entities@4.0.4) (2025-07-09)
 
 

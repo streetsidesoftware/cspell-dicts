@@ -3,6 +3,39 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+## [5.1.20](https://github.com/streetsidesoftware/cspell-dicts/compare/@cspell/dict-software-terms@5.1.19...@cspell/dict-software-terms@5.1.20) (2026-01-08)
+
+
+### Updates and Bug Fixes
+
+* Add new coding term 'btrie' to dictionary ([#5136](https://github.com/streetsidesoftware/cspell-dicts/issues/5136)) ([2cee5fd](https://github.com/streetsidesoftware/cspell-dicts/commit/2cee5fd4fd0921df5048ceefca52128a56371a92))
+
+## [5.1.19](https://github.com/streetsidesoftware/cspell-dicts/compare/@cspell/dict-software-terms@5.1.18...@cspell/dict-software-terms@5.1.19) (2026-01-03)
+
+
+### Updates and Bug Fixes
+
+* Add Ccache ([#5114](https://github.com/streetsidesoftware/cspell-dicts/issues/5114)) ([c1f6d31](https://github.com/streetsidesoftware/cspell-dicts/commit/c1f6d31de46d1f8e9be0636a235f762090e5e890))
+* Add general terms ([#5117](https://github.com/streetsidesoftware/cspell-dicts/issues/5117)) ([5c5a602](https://github.com/streetsidesoftware/cspell-dicts/commit/5c5a602bc71a7958f3868ebd3b1e8482c772aca7))
+* Add Open* tools ([#5113](https://github.com/streetsidesoftware/cspell-dicts/issues/5113)) ([7f6f7ff](https://github.com/streetsidesoftware/cspell-dicts/commit/7f6f7ff6a0ffd69e3dfff103b6571c60463f3ab7))
+* Encorporate more sw dev terms ([#5116](https://github.com/streetsidesoftware/cspell-dicts/issues/5116)) ([2a080b7](https://github.com/streetsidesoftware/cspell-dicts/commit/2a080b78f1cc164d75a897d89d4416fc84138b46))
+
+## [5.1.18](https://github.com/streetsidesoftware/cspell-dicts/compare/@cspell/dict-software-terms@5.1.17...@cspell/dict-software-terms@5.1.18) (2025-12-20)
+
+
+### Updates and Bug Fixes
+
+* Add GPKG ([#5095](https://github.com/streetsidesoftware/cspell-dicts/issues/5095)) ([617634f](https://github.com/streetsidesoftware/cspell-dicts/commit/617634f254937f842b76cc41bc6af482aeea0e47))
+* Add more terms to software/company dictionaries ([#5093](https://github.com/streetsidesoftware/cspell-dicts/issues/5093)) ([35393f9](https://github.com/streetsidesoftware/cspell-dicts/commit/35393f921cbf7ee47bb8a027697211c61a76fa1c))
+
+## [5.1.17](https://github.com/streetsidesoftware/cspell-dicts/compare/@cspell/dict-software-terms@5.1.16...@cspell/dict-software-terms@5.1.17) (2025-12-17)
+
+
+### Updates and Bug Fixes
+
+* Add CMOS ([#5081](https://github.com/streetsidesoftware/cspell-dicts/issues/5081)) ([87d9565](https://github.com/streetsidesoftware/cspell-dicts/commit/87d9565123cfc0ca8132fc8c66a0f4e4d4111438))
+* Add cpplint and cpptools ([#5080](https://github.com/streetsidesoftware/cspell-dicts/issues/5080)) ([8737676](https://github.com/streetsidesoftware/cspell-dicts/commit/87376769ad5d5a2cc86da8ba80de264ff0174536))
+
 ## [5.1.16](https://github.com/streetsidesoftware/cspell-dicts/compare/@cspell/dict-software-terms@5.1.15...@cspell/dict-software-terms@5.1.16) (2025-12-13)
 
 

@@ -264,6 +264,17 @@
         ]
       },
       {
+        "name": "cpp-compound-words",
+        "description": "C/C++ Common word compounds.",
+        "fileTypes": ["c", "cpp"],
+        "localeFileTypes": [
+          {
+            "locale": "*",
+            "fileType": "c, cpp"
+          }
+        ]
+      },
+      {
         "name": "cpp-refined",
         "description": "Refined list of C/C++ Keywords and common library functions.",
         "fileTypes": ["c", "cpp"],
@@ -1648,11 +1659,15 @@
       {
         "name": "git",
         "description": "Git Terms",
-        "fileTypes": ["commit-msg", "git-commit"],
+        "fileTypes": ["commit-msg", "git-commit", "shellscript"],
         "localeFileTypes": [
           {
             "locale": "",
             "fileType": "commit-msg, git-commit"
+          },
+          {
+            "locale": "",
+            "fileType": "shellscript"
           }
         ],
         "locales": []
@@ -2854,6 +2869,17 @@
             "fileType": "ruby"
           }
         ]
+      },
+      {
+        "name": "ruby-gems",
+        "description": "For common ruby gems",
+        "fileTypes": ["ruby"],
+        "localeFileTypes": [
+          {
+            "locale": "*",
+            "fileType": "ruby"
+          }
+        ]
       }
     ],
     "patterns": []
@@ -2869,6 +2895,17 @@
       {
         "name": "rust",
         "description": "Rust Keyword Dictionary",
+        "fileTypes": ["rust"],
+        "localeFileTypes": [
+          {
+            "locale": "*",
+            "fileType": "rust"
+          }
+        ]
+      },
+      {
+        "name": "rust-crates",
+        "description": "Common Rust Crates Dictionary",
         "fileTypes": ["rust"],
         "localeFileTypes": [
           {

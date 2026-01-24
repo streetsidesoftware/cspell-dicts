@@ -3,6 +3,32 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+## [5.2.29](https://github.com/streetsidesoftware/cspell-dicts/compare/@cspell/dict-npm@5.2.28...@cspell/dict-npm@5.2.29) (2026-01-08)
+
+
+### Updates and Bug Fixes
+
+* Add 'skia-canvas' to NPM packages list ([#5139](https://github.com/streetsidesoftware/cspell-dicts/issues/5139)) ([3fc85e1](https://github.com/streetsidesoftware/cspell-dicts/commit/3fc85e1b1431f87bfd91fdb48a94c9e097fc5d8e))
+* Add @observablehq/plot to npm package list ([#5138](https://github.com/streetsidesoftware/cspell-dicts/issues/5138)) ([b224c0c](https://github.com/streetsidesoftware/cspell-dicts/commit/b224c0c3b4c9fc5072e9533bf0789b26e1fe68b4))
+* Workflow Bot -- Update Dictionaries ([#5131](https://github.com/streetsidesoftware/cspell-dicts/issues/5131)) ([364db1e](https://github.com/streetsidesoftware/cspell-dicts/commit/364db1e6ad80c19ff94b80aa46228e74bfe9397d))
+
+## [5.2.28](https://github.com/streetsidesoftware/cspell-dicts/compare/@cspell/dict-npm@5.2.27...@cspell/dict-npm@5.2.28) (2026-01-03)
+
+
+### Updates and Bug Fixes
+
+* add 'canvaskit' ([#5125](https://github.com/streetsidesoftware/cspell-dicts/issues/5125)) ([4cc7c19](https://github.com/streetsidesoftware/cspell-dicts/commit/4cc7c192dc3673cbd08c88fb71f3f9e1e2037579))
+* Add 'canvaskit' to npmjs imports list ([#5127](https://github.com/streetsidesoftware/cspell-dicts/issues/5127)) ([78890f4](https://github.com/streetsidesoftware/cspell-dicts/commit/78890f47d9ae83c848db0cb7b5373c4075410e98))
+* Workflow Bot -- Update Dictionaries ([#5108](https://github.com/streetsidesoftware/cspell-dicts/issues/5108)) ([1967869](https://github.com/streetsidesoftware/cspell-dicts/commit/1967869ba62f2b30f58a40bf29288003e0b9ba93))
+* Workflow Bot -- Update Dictionaries ([#5121](https://github.com/streetsidesoftware/cspell-dicts/issues/5121)) ([29a891d](https://github.com/streetsidesoftware/cspell-dicts/commit/29a891d9eb59cdda013206598398e18af007e804))
+
+## [5.2.27](https://github.com/streetsidesoftware/cspell-dicts/compare/@cspell/dict-npm@5.2.26...@cspell/dict-npm@5.2.27) (2025-12-17)
+
+
+### Updates and Bug Fixes
+
+* Workflow Bot -- Update Dictionaries ([#5061](https://github.com/streetsidesoftware/cspell-dicts/issues/5061)) ([72e66ae](https://github.com/streetsidesoftware/cspell-dicts/commit/72e66aee48187259f489dc1a930746f4f0303f40))
+
 ## [5.2.26](https://github.com/streetsidesoftware/cspell-dicts/compare/@cspell/dict-npm@5.2.25...@cspell/dict-npm@5.2.26) (2025-12-13)
 
 

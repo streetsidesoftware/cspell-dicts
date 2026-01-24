@@ -3,6 +3,29 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+## [4.4.27](https://github.com/streetsidesoftware/cspell-dicts/compare/@cspell/dict-en_us@4.4.26...@cspell/dict-en_us@4.4.27) (2026-01-03)
+
+
+### Updates and Bug Fixes
+
+* Add general terms ([#5117](https://github.com/streetsidesoftware/cspell-dicts/issues/5117)) ([5c5a602](https://github.com/streetsidesoftware/cspell-dicts/commit/5c5a602bc71a7958f3868ebd3b1e8482c772aca7))
+* Workflow Bot -- Build Dictionaries ([#5123](https://github.com/streetsidesoftware/cspell-dicts/issues/5123)) ([7b4a15f](https://github.com/streetsidesoftware/cspell-dicts/commit/7b4a15ffc7f1ef36a4d3dd320e88c9d12303730d))
+
+
+### Dependencies
+
+* The following workspace dependencies were updated
+  * devDependencies
+    * @cspell/aoo-mozilla-en-dict bumped to 1.0.6
+
+## [4.4.26](https://github.com/streetsidesoftware/cspell-dicts/compare/@cspell/dict-en_us@4.4.25...@cspell/dict-en_us@4.4.26) (2025-12-17)
+
+
+### Updates and Bug Fixes
+
+* Add 'operationalize' to additional words list ([#5069](https://github.com/streetsidesoftware/cspell-dicts/issues/5069)) ([aa60613](https://github.com/streetsidesoftware/cspell-dicts/commit/aa606133a3e980637719ebeb24e5188982f14000))
+* Workflow Bot -- Build Dictionaries ([#5071](https://github.com/streetsidesoftware/cspell-dicts/issues/5071)) ([2a2d04e](https://github.com/streetsidesoftware/cspell-dicts/commit/2a2d04e1a3bf5dd548fa049e354bb4927252d5ab))
+
 ## [4.4.25](https://github.com/streetsidesoftware/cspell-dicts/compare/@cspell/dict-en_us@4.4.24...@cspell/dict-en_us@4.4.25) (2025-12-13)
 
 

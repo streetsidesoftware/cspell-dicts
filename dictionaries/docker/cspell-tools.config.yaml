@@ -2,8 +2,9 @@
 
 targets:
   - name: docker-words
-    targetDirectory: .
+    targetDirectory: dict
     compress: true
+    keepUncompressed: true
     format: plaintext
     sources:
       - src/docker-words.txt

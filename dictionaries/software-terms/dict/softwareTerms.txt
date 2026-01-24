@@ -11,12 +11,14 @@
 50ffc001
 8badf00d
 AAAI
+ABNF
 AES128
 ASLR
 ATAPI
 Ackermann
 Affero
 BOM
+BSON
 BYOD
 Berksfile
 Bitrate
@@ -31,6 +33,7 @@ CSRF
 CVE
 CWE
 Camunda
+Capnproto
 Caskroom
 ChefDK
 Cholesky
@@ -51,6 +54,7 @@ DOM
 DeepScale
 DoS
 DocBlock
+Dyno
 ECDHE
 ECDSA
 ECMA
@@ -68,6 +72,7 @@ Exps
 Exts
 FIXURL
 FQDNS
+FaaS
 Frenet
 GCM
 GDPR
@@ -88,6 +93,7 @@ IOUtil
 Initializers
 Itanium
 JBoss
+JDBC
 JWK
 JavaScript
 JavaScriptReact
@@ -105,6 +111,7 @@ Kramdown
 LHS
 LOCALEDIR
 LONGLONG
+LTSV
 Law
 Levenshtein
 LinkCode
@@ -139,10 +146,14 @@ NodeNext
 Nullable
 Nullables
 OAuthLib
+OLAP
+OLTP
 OOBE
+OOTB
 ORM
 OSA
 OSINT
+OSTIF
 OWASP
 OleDLL
 OpenID
@@ -150,6 +161,7 @@ OpenTelemetry
 PCAP
 PCAPNG
 PHPs
+PKCS
 PKGDATADIR
 POJO
 POJOs
@@ -216,6 +228,8 @@ TypeCheck
 TypeScript
 TypeScriptReact
 Typedef
+UCIM
+UCUM
 UUID
 UUIDs
 VLAN
@@ -239,6 +253,7 @@ WSMan
 WSUS
 WWAN
 Watchr
+WebJS
 Wikidata
 Wikimedia
 Wikipedia
@@ -341,6 +356,8 @@ apis
 app
 appdata
 append
+appender
+appenders
 appid
 approximant
 arbitraries
@@ -505,6 +522,8 @@ bin
 bitCount
 bitSize
 bitand
+bitmask
+bitmasks
 bitor
 bitset
 bitwise
@@ -557,6 +576,7 @@ browserConfig
 browserstack
 btoa
 btree
+btrie
 bubble
 bufIndex
 bufSize
@@ -643,6 +663,7 @@ classdef
 classlib
 classname
 clint
+cloneable
 cloner
 clothoid
 clothoids
@@ -665,6 +686,8 @@ codecs
 codefixes
 codeframe
 codelens
+codeowner
+codeowners
 codepath
 codestyle
 coding
@@ -1076,8 +1099,10 @@ dtor
 dtors
 duvian
 dword
+dylib
 e011cfd0
 eAPI
+eBPF
 eSignature
 easing
 easings
@@ -1660,6 +1685,7 @@ macosx
 mailfrom
 mailmap
 mailto
+maintainership
 make
 makefile
 manpage
@@ -1708,6 +1734,7 @@ messageIds
 messageList
 meta
 metadata
+microbenchmarking
 micromatch
 microservice
 microservices
@@ -1769,6 +1796,7 @@ mrkdwn
 msdn
 msgList
 msgid
+msgpack
 msgs
 msgstr
 mtime
@@ -1803,6 +1831,7 @@ nack
 namespace
 namespaced
 namespaces
+namespacing
 nano
 nanos
 nav
@@ -1854,6 +1883,7 @@ nondefault
 nonstatic
 nonterminating
 noop
+noops
 noreply
 nospace
 notArray
@@ -1951,10 +1981,12 @@ parentNode
 parenthesised
 parentpath
 parm
+parseable
 pascal
 passband
 passbands
 passcode
+passcodes
 passwd
 password
 pata
@@ -2014,6 +2046,7 @@ powercli
 poweredby
 powerpc
 powershell
+pprof
 pragma
 pragmas
 pragmata
@@ -2031,6 +2064,8 @@ precompressor
 precompressors
 precompute
 precomputing
+preconfigure
+preconfigured
 predef
 predicate
 predicates
@@ -2119,6 +2154,8 @@ pwd
 python
 qemu
 qps
+quantile
+quantiles
 queryable
 querystring
 queue
@@ -2331,6 +2368,7 @@ retriggered
 retriggering
 retriggers
 retryCancel
+retryable
 return
 retweet
 reupload
@@ -2341,6 +2379,7 @@ rewritable
 richtext
 rmdir
 roadmap
+roadmaps
 rollDown
 root
 rootful
@@ -2358,6 +2397,8 @@ rulesdirs
 ruleset
 rulesets
 run
+runbook
+runbooks
 runnable
 runnables
 running
@@ -2456,6 +2497,7 @@ sideEffect
 signOff
 signin
 signout
+signup
 sigs
 sin
 singleline
@@ -2565,6 +2607,8 @@ subpath
 subpixel
 subprocess
 subprocesses
+subproject
+subprojects
 subprotocol
 subprotocols
 subq
@@ -2692,6 +2736,7 @@ timeSteps
 timeline
 timelines
 timeseries
+timeslot
 timestamp
 tmbundle
 tmerc
@@ -2747,6 +2792,9 @@ trees
 treeshake
 treeshaking
 treesitter
+triage
+triager
+triagers
 trie
 tries
 tripleslash
@@ -2848,6 +2896,7 @@ uninstall
 uninstallation
 uninstalling
 uninstantiatable
+uninstrumented
 uniq
 uniqueId
 uniqueIdentifier
@@ -2932,9 +2981,11 @@ unreferencing
 unregister
 unregistered
 unregistering
+unregisters
 unrendered
 unrestrict
 unroute
+unsampled
 unschedulable
 unschedulables
 unschedule
@@ -2950,6 +3001,7 @@ unselects
 unserializable
 unset
 unsetting
+unshallow
 unshare
 unsort
 unsortable
@@ -2966,6 +3018,7 @@ unsubstituted
 unswappable
 unswappables
 unsynced
+untrace
 untrack
 untracked
 untrigger
@@ -3008,6 +3061,7 @@ util
 utils
 uword
 vCursor
+vDSO
 vFile
 vScroll
 vSphere
@@ -3116,6 +3170,7 @@ workspace
 worldGen
 writeDir
 writeFile
+wstring
 www
 xCoord
 xCoords

@@ -1,5 +1,121 @@
 # Release Notes
 
+## [32.2.1](https://github.com/streetsidesoftware/cspell-dicts/compare/cspell-dicts@32.2.0...cspell-dicts@32.2.1) (2026-01-08)
+
+
+### Updates and Bug Fixes
+
+* Add 'skia-canvas' to NPM packages list ([#5139](https://github.com/streetsidesoftware/cspell-dicts/issues/5139)) ([3fc85e1](https://github.com/streetsidesoftware/cspell-dicts/commit/3fc85e1b1431f87bfd91fdb48a94c9e097fc5d8e))
+* Add @observablehq/plot to npm package list ([#5138](https://github.com/streetsidesoftware/cspell-dicts/issues/5138)) ([b224c0c](https://github.com/streetsidesoftware/cspell-dicts/commit/b224c0c3b4c9fc5072e9533bf0789b26e1fe68b4))
+* Add more rust terms ([#5133](https://github.com/streetsidesoftware/cspell-dicts/issues/5133)) ([224ecf2](https://github.com/streetsidesoftware/cspell-dicts/commit/224ecf28c50fd5bb75f25be824bdf57776f130e3))
+* Add new coding term 'btrie' to dictionary ([#5136](https://github.com/streetsidesoftware/cspell-dicts/issues/5136)) ([2cee5fd](https://github.com/streetsidesoftware/cspell-dicts/commit/2cee5fd4fd0921df5048ceefca52128a56371a92))
+* Workflow Bot -- Update Dictionaries ([#5131](https://github.com/streetsidesoftware/cspell-dicts/issues/5131)) ([364db1e](https://github.com/streetsidesoftware/cspell-dicts/commit/364db1e6ad80c19ff94b80aa46228e74bfe9397d))
+
+
+### Dependencies
+
+* The following workspace dependencies were updated
+  * devDependencies
+    * @cspell/dict-cspell-bundle bumped to 2.0.46
+
+## [32.2.0](https://github.com/streetsidesoftware/cspell-dicts/compare/cspell-dicts@32.1.0...cspell-dicts@32.2.0) (2026-01-03)
+
+
+### Features
+
+* Add in a ruby Gem dictionary ([#5106](https://github.com/streetsidesoftware/cspell-dicts/issues/5106)) ([4e07a82](https://github.com/streetsidesoftware/cspell-dicts/commit/4e07a8205d8f7910470e4dcb75aa0ebbf982be0f))
+
+
+### Updates and Bug Fixes
+
+* add 'canvaskit' ([#5125](https://github.com/streetsidesoftware/cspell-dicts/issues/5125)) ([4cc7c19](https://github.com/streetsidesoftware/cspell-dicts/commit/4cc7c192dc3673cbd08c88fb71f3f9e1e2037579))
+* Add 'canvaskit' to npmjs imports list ([#5127](https://github.com/streetsidesoftware/cspell-dicts/issues/5127)) ([78890f4](https://github.com/streetsidesoftware/cspell-dicts/commit/78890f47d9ae83c848db0cb7b5373c4075410e98))
+* Add Ccache ([#5114](https://github.com/streetsidesoftware/cspell-dicts/issues/5114)) ([c1f6d31](https://github.com/streetsidesoftware/cspell-dicts/commit/c1f6d31de46d1f8e9be0636a235f762090e5e890))
+* Add general terms ([#5117](https://github.com/streetsidesoftware/cspell-dicts/issues/5117)) ([5c5a602](https://github.com/streetsidesoftware/cspell-dicts/commit/5c5a602bc71a7958f3868ebd3b1e8482c772aca7))
+* Add Open* tools ([#5113](https://github.com/streetsidesoftware/cspell-dicts/issues/5113)) ([7f6f7ff](https://github.com/streetsidesoftware/cspell-dicts/commit/7f6f7ff6a0ffd69e3dfff103b6571c60463f3ab7))
+* Encorporate more sw dev terms ([#5116](https://github.com/streetsidesoftware/cspell-dicts/issues/5116)) ([2a080b7](https://github.com/streetsidesoftware/cspell-dicts/commit/2a080b78f1cc164d75a897d89d4416fc84138b46))
+* More ruby terms ([#5115](https://github.com/streetsidesoftware/cspell-dicts/issues/5115)) ([4048105](https://github.com/streetsidesoftware/cspell-dicts/commit/40481050fa7bc46854f4849688a7d16991267110))
+* Update Ruby dictionary with standard library words ([#5122](https://github.com/streetsidesoftware/cspell-dicts/issues/5122)) ([5fdf055](https://github.com/streetsidesoftware/cspell-dicts/commit/5fdf055499d9f4ac7305d6fb569b6508bad54a8b))
+* Workflow Bot -- Build Dictionaries ([#5123](https://github.com/streetsidesoftware/cspell-dicts/issues/5123)) ([7b4a15f](https://github.com/streetsidesoftware/cspell-dicts/commit/7b4a15ffc7f1ef36a4d3dd320e88c9d12303730d))
+* Workflow Bot -- Build Dictionaries ([#5129](https://github.com/streetsidesoftware/cspell-dicts/issues/5129)) ([6dfa082](https://github.com/streetsidesoftware/cspell-dicts/commit/6dfa082dd6bab39f5f83200098a45af7e0957a75))
+* Workflow Bot -- Update Dictionaries ([#5108](https://github.com/streetsidesoftware/cspell-dicts/issues/5108)) ([1967869](https://github.com/streetsidesoftware/cspell-dicts/commit/1967869ba62f2b30f58a40bf29288003e0b9ba93))
+* Workflow Bot -- Update Dictionaries ([#5121](https://github.com/streetsidesoftware/cspell-dicts/issues/5121)) ([29a891d](https://github.com/streetsidesoftware/cspell-dicts/commit/29a891d9eb59cdda013206598398e18af007e804))
+
+
+### Dependencies
+
+* The following workspace dependencies were updated
+  * devDependencies
+    * @cspell/dict-cspell-bundle bumped to 2.0.45
+
+## [32.1.0](https://github.com/streetsidesoftware/cspell-dicts/compare/cspell-dicts@32.0.1...cspell-dicts@32.1.0) (2025-12-20)
+
+
+### Features
+
+* Introduce a rust crates dictionary ([#5094](https://github.com/streetsidesoftware/cspell-dicts/issues/5094)) ([77ae7f1](https://github.com/streetsidesoftware/cspell-dicts/commit/77ae7f116f63c7482f0abc9aa5577b0afbadb1a8))
+
+
+### Updates and Bug Fixes
+
+* Add `dalek` to rust crates ([#5103](https://github.com/streetsidesoftware/cspell-dicts/issues/5103)) ([1cda114](https://github.com/streetsidesoftware/cspell-dicts/commit/1cda11419bfc92a39645b585b96d612171ea89f4))
+* Add GPKG ([#5095](https://github.com/streetsidesoftware/cspell-dicts/issues/5095)) ([617634f](https://github.com/streetsidesoftware/cspell-dicts/commit/617634f254937f842b76cc41bc6af482aeea0e47))
+* add more names ([#5100](https://github.com/streetsidesoftware/cspell-dicts/issues/5100)) ([f438bb3](https://github.com/streetsidesoftware/cspell-dicts/commit/f438bb3832289c85ce0cf5c82cbac55c7722ce07))
+* Add more rust crates ([#5099](https://github.com/streetsidesoftware/cspell-dicts/issues/5099)) ([49b73b5](https://github.com/streetsidesoftware/cspell-dicts/commit/49b73b5c90dfcea41bfdaa25303861deccff459a))
+* Add more terms to software/company dictionaries ([#5093](https://github.com/streetsidesoftware/cspell-dicts/issues/5093)) ([35393f9](https://github.com/streetsidesoftware/cspell-dicts/commit/35393f921cbf7ee47bb8a027697211c61a76fa1c))
+* Adjust the layout of the rust dictionary ([#5101](https://github.com/streetsidesoftware/cspell-dicts/issues/5101)) ([a0a9719](https://github.com/streetsidesoftware/cspell-dicts/commit/a0a971923ee04e1f4d4b6a5b7bc86170cf17511c))
+
+
+### Dependencies
+
+* The following workspace dependencies were updated
+  * devDependencies
+    * @cspell/dict-cspell-bundle bumped to 2.0.44
+
+## [32.0.1](https://github.com/streetsidesoftware/cspell-dicts/compare/cspell-dicts@32.0.0...cspell-dicts@32.0.1) (2025-12-17)
+
+
+### Updates and Bug Fixes
+
+* Add back some compound words ([#5088](https://github.com/streetsidesoftware/cspell-dicts/issues/5088)) ([cb35979](https://github.com/streetsidesoftware/cspell-dicts/commit/cb35979c45b768e7403b803a0b024ac61742e8e9))
+
+
+### Dependencies
+
+* The following workspace dependencies were updated
+  * devDependencies
+    * @cspell/dict-cspell-bundle bumped to 2.0.43
+
+## [32.0.0](https://github.com/streetsidesoftware/cspell-dicts/compare/cspell-dicts@31.8.0...cspell-dicts@32.0.0) (2025-12-17)
+
+
+### ⚠ BREAKING CHANGES
+
+* Separate C++ compound words into their own dictionary ([#5085](https://github.com/streetsidesoftware/cspell-dicts/issues/5085))
+
+### Features
+
+* Separate C++ compound words into their own dictionary ([#5085](https://github.com/streetsidesoftware/cspell-dicts/issues/5085)) ([d579dd3](https://github.com/streetsidesoftware/cspell-dicts/commit/d579dd3bcab693b5f6cc39592f01386cb3f2b646))
+
+
+### Updates and Bug Fixes
+
+* Add 'operationalize' to additional words list ([#5069](https://github.com/streetsidesoftware/cspell-dicts/issues/5069)) ([aa60613](https://github.com/streetsidesoftware/cspell-dicts/commit/aa606133a3e980637719ebeb24e5188982f14000))
+* Add CMOS ([#5081](https://github.com/streetsidesoftware/cspell-dicts/issues/5081)) ([87d9565](https://github.com/streetsidesoftware/cspell-dicts/commit/87d9565123cfc0ca8132fc8c66a0f4e4d4111438))
+* Add cpplint and cpptools ([#5080](https://github.com/streetsidesoftware/cspell-dicts/issues/5080)) ([8737676](https://github.com/streetsidesoftware/cspell-dicts/commit/87376769ad5d5a2cc86da8ba80de264ff0174536))
+* Add HTML attribute names to CSS dictionary ([#5068](https://github.com/streetsidesoftware/cspell-dicts/issues/5068)) ([5ceffe1](https://github.com/streetsidesoftware/cspell-dicts/commit/5ceffe17391181873ea12228f238d74c16829c86))
+* adjust dictionary location ([#5065](https://github.com/streetsidesoftware/cspell-dicts/issues/5065)) ([9aba3ca](https://github.com/streetsidesoftware/cspell-dicts/commit/9aba3caf1afe5ed84212059932fffa8cc35896c4))
+* Move compiled files to dict and compress ([#5082](https://github.com/streetsidesoftware/cspell-dicts/issues/5082)) ([6f39ecd](https://github.com/streetsidesoftware/cspell-dicts/commit/6f39ecd9e2360ed51afbd6969c2b1b6a36fa3b34))
+* Workflow Bot -- Build Dictionaries ([#5071](https://github.com/streetsidesoftware/cspell-dicts/issues/5071)) ([2a2d04e](https://github.com/streetsidesoftware/cspell-dicts/commit/2a2d04e1a3bf5dd548fa049e354bb4927252d5ab))
+* Workflow Bot -- Update Dictionaries ([#5061](https://github.com/streetsidesoftware/cspell-dicts/issues/5061)) ([72e66ae](https://github.com/streetsidesoftware/cspell-dicts/commit/72e66aee48187259f489dc1a930746f4f0303f40))
+
+
+### Dependencies
+
+* The following workspace dependencies were updated
+  * devDependencies
+    * @cspell/dict-cspell-bundle bumped to 2.0.42
+
 ## [31.8.0](https://github.com/streetsidesoftware/cspell-dicts/compare/cspell-dicts@31.7.4...cspell-dicts@31.8.0) (2025-12-13)
 
 

@@ -1,0 +1,14 @@
+# yaml-language-server: $schema=https://raw.githubusercontent.com/streetsidesoftware/cspell/main/packages/cspell-tools/cspell-tools.config.schema.json
+
+$schema: https://raw.githubusercontent.com/streetsidesoftware/cspell/main/packages/cspell-tools/cspell-tools.config.schema.json
+targets:
+  - name: django
+    targetDirectory: ./dict
+    compress: true
+    keepUncompressed: true
+    format: plaintext
+    sources:
+      - src/legacy_terms.txt
+      - src/django.txt
+    sort: true
+keepRawCase: true

@@ -1,5 +1,12 @@
 # Change Log
 
+## [1.1.16](https://github.com/streetsidesoftware/cspell-dicts/compare/@cspell/dict-people-names@1.1.15...@cspell/dict-people-names@1.1.16) (2025-12-20)
+
+
+### Updates and Bug Fixes
+
+* add more names ([#5100](https://github.com/streetsidesoftware/cspell-dicts/issues/5100)) ([f438bb3](https://github.com/streetsidesoftware/cspell-dicts/commit/f438bb3832289c85ce0cf5c82cbac55c7722ce07))
+
 ## [1.1.15](https://github.com/streetsidesoftware/cspell-dicts/compare/@cspell/dict-people-names@1.1.14...@cspell/dict-people-names@1.1.15) (2025-10-26)
 
 

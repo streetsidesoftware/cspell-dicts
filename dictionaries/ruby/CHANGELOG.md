@@ -3,6 +3,19 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+## [5.1.0](https://github.com/streetsidesoftware/cspell-dicts/compare/@cspell/dict-ruby@5.0.9...@cspell/dict-ruby@5.1.0) (2026-01-03)
+
+
+### Features
+
+* Add in a ruby Gem dictionary ([#5106](https://github.com/streetsidesoftware/cspell-dicts/issues/5106)) ([4e07a82](https://github.com/streetsidesoftware/cspell-dicts/commit/4e07a8205d8f7910470e4dcb75aa0ebbf982be0f))
+
+
+### Updates and Bug Fixes
+
+* More ruby terms ([#5115](https://github.com/streetsidesoftware/cspell-dicts/issues/5115)) ([4048105](https://github.com/streetsidesoftware/cspell-dicts/commit/40481050fa7bc46854f4849688a7d16991267110))
+* Update Ruby dictionary with standard library words ([#5122](https://github.com/streetsidesoftware/cspell-dicts/issues/5122)) ([5fdf055](https://github.com/streetsidesoftware/cspell-dicts/commit/5fdf055499d9f4ac7305d6fb569b6508bad54a8b))
+
 ## [5.0.9](https://github.com/streetsidesoftware/cspell-dicts/compare/@cspell/dict-ruby@5.0.8...@cspell/dict-ruby@5.0.9) (2025-07-09)
 
 

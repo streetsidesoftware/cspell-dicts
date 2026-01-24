@@ -1,0 +1,18 @@
+# yaml-language-server: $schema=https://raw.githubusercontent.com/streetsidesoftware/cspell/main/packages/cspell-tools/cspell-tools.config.schema.json
+
+$schema: https://raw.githubusercontent.com/streetsidesoftware/cspell/main/packages/cspell-tools/cspell-tools.config.schema.json
+targets:
+  - name: monkeyc_keywords
+    targetDirectory: dict
+    compress: true
+    keepUncompressed: true
+    format: plaintext
+    sources:
+      - filename: src/monkeyc_keywords.txt
+        split: true
+        allowedSplitWords:
+          - ../en_US/en_US.trie
+          - ../html/dict/html.txt
+          - ../software-terms/dict/softwareTerms.txt
+          - ./src/split_words.txt
+    sort: true

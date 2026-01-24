@@ -12,8 +12,8 @@
     "./cspell-ext.json": "./cspell-ext.json"
   },
   "scripts": {
-    "build": "echo skip",
-    "test": "echo skip",
+    "build": "cspell-tools build",
+    "test": "cspell samples",
     "prepublishOnly": "echo pre-publish",
     "prepare:dictionary": "pnpm run build"
   },
@@ -36,6 +36,7 @@
   },
   "homepage": "https://github.com/streetsidesoftware/cspell-dicts/blob/main/dictionaries/vue#readme",
   "files": [
-    "cspell-ext.json"
+    "cspell-ext.json",
+    "dict/*.txt"
   ]
 }

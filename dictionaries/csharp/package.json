@@ -1,6 +1,6 @@
 {
   "name": "@cspell/dict-csharp",
-  "version": "4.0.7",
+  "version": "4.0.8",
   "description": "C# dictionary for cspell.",
   "publishConfig": {
     "access": "public",
@@ -12,8 +12,8 @@
     "./cspell-ext.json": "./cspell-ext.json"
   },
   "scripts": {
-    "build": "cspell-tools-cli compile --split \"csharp.txt\" -o .",
-    "test": "shx head -n 100 \"csharp.txt\" | cspell -c ./cspell-ext.json \"--locale=*\" \"--languageId=csharp\" stdin",
+    "build": "cspell-tools-cli build",
+    "test": "shx head -n 100 src/csharp.txt | cspell -c ./cspell-ext.json \"--locale=*\" --languageId=csharp stdin",
     "prepublishOnly": "echo pre-publish",
     "prepare:dictionary": "pnpm run build"
   },
@@ -37,7 +37,7 @@
   },
   "homepage": "https://github.com/streetsidesoftware/cspell-dicts/blob/main/dictionaries/csharp#readme",
   "files": [
-    "csharp.txt.gz",
+    "dict/csharp.txt.gz",
     "cspell-ext.json"
   ]
 }

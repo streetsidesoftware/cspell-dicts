@@ -3,9 +3,14 @@ import test from 'ava';
 import { checkText } from 'cspell';
 import { glob } from 'glob';
 
+/**
+ *
+ * @param {number | string} val
+ * @param {number} n
+ * @returns {string}
+ */
 function rightJustify(val, n = 5) {
-    val = val.toString();
-    return ' '.repeat(Math.max(0, n - val.length)) + val;
+    return val.toString().padStart(n, ' ');
 }
 
 /**

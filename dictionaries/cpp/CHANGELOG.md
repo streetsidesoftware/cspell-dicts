@@ -3,6 +3,36 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+## [7.0.2](https://github.com/streetsidesoftware/cspell-dicts/compare/@cspell/dict-cpp@7.0.1...@cspell/dict-cpp@7.0.2) (2025-12-20)
+
+
+### Updates and Bug Fixes
+
+* Add more terms to software/company dictionaries ([#5093](https://github.com/streetsidesoftware/cspell-dicts/issues/5093)) ([35393f9](https://github.com/streetsidesoftware/cspell-dicts/commit/35393f921cbf7ee47bb8a027697211c61a76fa1c))
+
+## [7.0.1](https://github.com/streetsidesoftware/cspell-dicts/compare/@cspell/dict-cpp@7.0.0...@cspell/dict-cpp@7.0.1) (2025-12-17)
+
+
+### Updates and Bug Fixes
+
+* Add back some compound words ([#5088](https://github.com/streetsidesoftware/cspell-dicts/issues/5088)) ([cb35979](https://github.com/streetsidesoftware/cspell-dicts/commit/cb35979c45b768e7403b803a0b024ac61742e8e9))
+
+## [7.0.0](https://github.com/streetsidesoftware/cspell-dicts/compare/@cspell/dict-cpp@6.0.15...@cspell/dict-cpp@7.0.0) (2025-12-17)
+
+
+### ⚠ BREAKING CHANGES
+
+* Separate C++ compound words into their own dictionary ([#5085](https://github.com/streetsidesoftware/cspell-dicts/issues/5085))
+
+### Features
+
+* Separate C++ compound words into their own dictionary ([#5085](https://github.com/streetsidesoftware/cspell-dicts/issues/5085)) ([d579dd3](https://github.com/streetsidesoftware/cspell-dicts/commit/d579dd3bcab693b5f6cc39592f01386cb3f2b646))
+
+
+### Updates and Bug Fixes
+
+* Add cpplint and cpptools ([#5080](https://github.com/streetsidesoftware/cspell-dicts/issues/5080)) ([8737676](https://github.com/streetsidesoftware/cspell-dicts/commit/87376769ad5d5a2cc86da8ba80de264ff0174536))
+
 ## [6.0.15](https://github.com/streetsidesoftware/cspell-dicts/compare/@cspell/dict-cpp@6.0.14...@cspell/dict-cpp@6.0.15) (2025-11-28)
 
 

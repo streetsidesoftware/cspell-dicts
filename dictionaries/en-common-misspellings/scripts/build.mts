@@ -1,33 +1,23 @@
 #!/usr/bin/env node
 
-// ts-check
 import { promises as fs } from 'node:fs';
 
-import { parseDocument } from 'yaml';
+import { parseDocument, type Document, type Scalar, type YAMLSeq } from 'yaml';
 
 const root = new URL('../', import.meta.url);
 
-const srcFiles = ['dict-en.txt', 'dict-en-gb.txt', 'dict-en-us.txt'];
-const srcDirs = ['src/', 'src/wikipedia/', 'src/fromCrateTypos/'];
+const srcFiles = ['dict-en.txt', 'dict-en-gb.txt', 'dict-en-us.txt'] as const;
+const srcDirs = ['src/', 'src/wikipedia/', 'src/fromCrateTypos/'] as const;
 const targetDir = new URL('dict/', root);
 const srcDir = new URL('src/', root);
 
-const descriptions = {
+const descriptions: Record<string, string> = {
     'dict-en.txt': 'Common English misspellings',
     'dict-en-gb.txt': 'Common British English misspellings',
     'dict-en-us.txt': 'Common American English misspellings',
 };
 
-/**
- * @import { Document, Scalar, YAMLSeq } from 'yaml';
- */
-
-/**
- *
- * @param {string | URL} file
- * @returns Promise<string[]>
- */
-async function readSrcFileLines(file) {
+async function readSrcFileLines(file: string | URL): Promise<string[]> {
     const content = await fs.readFile(file, 'utf8');
     return content
         .split(/\r?\n/)
@@ -35,16 +25,13 @@ async function readSrcFileLines(file) {
         .filter((line) => line && !line.startsWith('#'));
 }
 
-/**
- * @typedef { {word: string; suggestions: string[]; comment: string} } Entry
- */
+interface Entry {
+    word: string;
+    suggestions: string[];
+    comment: string;
+}
 
-/**
- *
- * @param {string} line
- * @returns {Entry}
- */
-function lineToEntry(line) {
+function lineToEntry(line: string): Entry {
     const [word, rest] = line.split('->', 2);
     const [sug, comment = ''] = rest.split('#', 2);
     const suggestions = sug.split(',').map((s) => s.trim());
@@ -55,17 +42,11 @@ function lineToEntry(line) {
     };
 }
 
-/**
- *
- * @param {Entry | undefined} a
- * @param {Entry} b
- * @returns {Entry}
- */
-function mergeEntries(a, b) {
+function mergeEntries(a: Entry | undefined, b: Entry): Entry {
     if (!a) {
         return b;
     }
-    const merged = {
+    const merged: Entry = {
         word: a.word,
         suggestions: [...new Set([...a.suggestions, ...b.suggestions])].sort((a, b) => a.localeCompare(b)),
         comment: a.comment || b.comment,
@@ -73,47 +54,29 @@ function mergeEntries(a, b) {
     return merged;
 }
 
-/**
- *
- * @param {Document} doc
- * @param {Entry} entry
- * @returns {Scalar<string>}
- */
-function yamlEntry(doc, entry) {
+function yamlEntry(doc: Document, entry: Entry): Scalar<string> {
     const { word, suggestions, comment } = entry;
     const value = `${word}->${suggestions.join(', ')}`.trim();
-    const yamlEntry = doc.createNode(value);
+    const yamlEntry = doc.createNode(value) as Scalar<string>;
     if (comment) {
         yamlEntry.comment = comment;
     }
     return yamlEntry;
 }
 
-/**
- *
- * @param {Entry} a
- * @param {Entry} b
- * @returns
- */
-function compareEntries(a, b) {
+function compareEntries(a: Entry, b: Entry): number {
     return a.word.localeCompare(b.word);
 }
 
-/**
- *
- * @param {string} srcBaseName
- */
-async function processSrc(srcBaseName) {
+async function processSrc(srcBaseName: string): Promise<void> {
     const yamlFileName = srcBaseName.replace('.txt', '.yaml');
     const jsonFileName = srcBaseName.replace('.txt', '.json');
     const dstJsonFile = new URL(jsonFileName, targetDir);
     const srcYamlFile = new URL(yamlFileName, srcDir);
     const description = descriptions[srcBaseName] || '';
 
-    /** @type {Map<string, Entry>} */
-    const entriesSug = new Map();
-    /** @type {Map<string, Entry>} */
-    const entriesFlag = new Map();
+    const entriesSug = new Map<string, Entry>();
+    const entriesFlag = new Map<string, Entry>();
 
     for (const srcDir of srcDirs) {
         const srcFile = new URL(srcBaseName, new URL(srcDir, root));
@@ -132,9 +95,9 @@ async function processSrc(srcBaseName) {
 
     const strYaml = await fs.readFile(srcYamlFile, 'utf8');
     const doc = parseDocument(strYaml);
-    const dict = doc.getIn(['dictionaryDefinitions', 0]);
+    const dict = doc.getIn(['dictionaryDefinitions', 0]) as YAMLSeq;
     dict.set('description', description);
-    const toProcess = [
+    const toProcess: [string, Map<string, Entry>][] = [
         ['flagWords', entriesFlag],
         ['suggestWords', entriesSug],
     ];
@@ -150,7 +113,7 @@ async function processSrc(srcBaseName) {
     await fs.writeFile(dstJsonFile, JSON.stringify(doc.toJS(), null, 1), 'utf8');
 }
 
-async function run() {
+async function run(): Promise<void> {
     for (const srcFile of srcFiles) {
         await processSrc(srcFile);
     }
