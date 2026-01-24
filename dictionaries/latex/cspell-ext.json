@@ -3,6 +3,7 @@
     "name": "LaTeX",
     "description": "LaTeX cspell dictionary",
     "readonly": true,
+    "import": "./cspell-ext.config.yaml",
     "dictionaryDefinitions": [
         {
             "name": "latex",
@@ -14,33 +15,6 @@
         {
             "languageId": "latex",
             "locale": "*",
-            "patterns": [
-                {
-                    "name": "LaTexMacrosFunctionNames",
-                    "pattern": "/(?<!\\\\)(\\\\\\\\)*\\\\\\w+/g",
-                    "description": "Match against LaTex Macro function names"
-                },
-                {
-                    "name": "LaTexMacros",
-                    "pattern": "/(?<!\\\\)\\\\\\w*(\\[.*?\\])?(\\{.*?\\})?/g",
-                    "description": "Match against single-line LaTex Macros"
-                },
-                {
-                    "name": "LaTexMacrosMultiLine",
-                    "pattern": "/(?<!\\\\)(\\\\\\\\)*\\\\(?!(?:title|color|section|subsection|footnote|chapter|part|caption|emph|enquote|text|in\\b))\\w+(?:\\[[^]*?\\]|\\{[^]*?\\})*/gi",
-                    "description": "Match against multi-line LaTex Macros"
-                },
-                {
-                    "name": "LaTexMath",
-                    "pattern": "/(?<!(?<!\\\\)(\\\\\\\\)*%.*)(?<!\\\\)(\\\\\\\\)*[$]+(.|\r|\n)+?(?<!(?<!\\\\)(\\\\\\\\)*%.*)(?<!\\\\)(\\\\\\\\)*[$]+/",
-                    "description": "Match against LaTex Math Macros (dollar-delimited and uncommented only)"
-                },
-                {
-                    "name": "comments",
-                    "pattern": "/((?<!\\\\)(\\\\\\\\)*)%.*/g",
-                    "description": "Matches single-line comments in a LaTeX File"
-                }
-            ],
             "ignoreRegExpList": ["LaTexMacrosMultiLine", "LaTexMath", "LaTexMacrosFunctionNames"],
             "dictionaries": ["latex"]
         }

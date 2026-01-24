@@ -1,4 +1,4 @@
-import { checkSnapshots } from 'cspell-dict-file-checker/index.mjs';
+import { spellcheckFilesAgainstSnapshot } from 'cspell-dict-file-checker/index.mjs';
 
 const testFiles = [
     'samples/issue-1097.tex',
@@ -7,4 +7,4 @@ const testFiles = [
     'samples/issue-754.tex',
 ];
 
-checkSnapshots(testFiles);
+spellcheckFilesAgainstSnapshot(testFiles);
