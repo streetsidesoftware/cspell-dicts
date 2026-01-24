@@ -3,6 +3,15 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+## [5.2.30](https://github.com/streetsidesoftware/cspell-dicts/compare/@cspell/dict-npm@5.2.29...@cspell/dict-npm@5.2.30) (2026-01-24)
+
+
+### Updates and Bug Fixes
+
+* Add crxjs to npm.txt ([#5142](https://github.com/streetsidesoftware/cspell-dicts/issues/5142)) ([89c380f](https://github.com/streetsidesoftware/cspell-dicts/commit/89c380f020ad9df69061b1e8ac544724309663f1))
+* Workflow Bot -- Update Dictionaries ([#5143](https://github.com/streetsidesoftware/cspell-dicts/issues/5143)) ([68e0e51](https://github.com/streetsidesoftware/cspell-dicts/commit/68e0e515df62573b2badf08e92cf5d0ab146df46))
+* Workflow Bot -- Update Dictionaries ([#5159](https://github.com/streetsidesoftware/cspell-dicts/issues/5159)) ([2bcb0dd](https://github.com/streetsidesoftware/cspell-dicts/commit/2bcb0dd24794eb7a4dd99fb391c7fc79af1215a2))
+
 ## [5.2.29](https://github.com/streetsidesoftware/cspell-dicts/compare/@cspell/dict-npm@5.2.28...@cspell/dict-npm@5.2.29) (2026-01-08)
 
 

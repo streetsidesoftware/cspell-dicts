@@ -3,6 +3,13 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+## [3.1.0](https://github.com/streetsidesoftware/cspell-dicts/compare/@cspell/dict-git@3.0.7...@cspell/dict-git@3.1.0) (2026-01-24)
+
+
+### Features
+
+* support git terms in shell script files ([#5166](https://github.com/streetsidesoftware/cspell-dicts/issues/5166)) ([5106185](https://github.com/streetsidesoftware/cspell-dicts/commit/51061857fe56181a714cd8c389b3508d6e6f4368))
+
 ## [3.0.7](https://github.com/streetsidesoftware/cspell-dicts/compare/@cspell/dict-git@3.0.6...@cspell/dict-git@3.0.7) (2025-07-09)
 
 

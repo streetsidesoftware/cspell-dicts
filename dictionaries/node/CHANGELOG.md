@@ -3,6 +3,13 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+## [5.0.9](https://github.com/streetsidesoftware/cspell-dicts/compare/@cspell/dict-node@5.0.8...@cspell/dict-node@5.0.9) (2026-01-24)
+
+
+### Updates and Bug Fixes
+
+* Add WebStorage ([#5157](https://github.com/streetsidesoftware/cspell-dicts/issues/5157)) ([b8b1542](https://github.com/streetsidesoftware/cspell-dicts/commit/b8b15429fadd20be9835e3a2144d5053beb647f8))
+
 ## [5.0.8](https://github.com/streetsidesoftware/cspell-dicts/compare/@cspell/dict-node@5.0.7...@cspell/dict-node@5.0.8) (2025-07-09)
 
 

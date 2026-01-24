@@ -3,6 +3,13 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+## [3.2.8](https://github.com/streetsidesoftware/cspell-dicts/compare/@cspell/dict-fullstack@3.2.7...@cspell/dict-fullstack@3.2.8) (2026-01-24)
+
+
+### Updates and Bug Fixes
+
+* **fullstack.txt:** orcp ([#5173](https://github.com/streetsidesoftware/cspell-dicts/issues/5173)) ([b1bf8db](https://github.com/streetsidesoftware/cspell-dicts/commit/b1bf8db7d0de0af98c427d8c6b32185984759e95))
+
 ## [3.2.7](https://github.com/streetsidesoftware/cspell-dicts/compare/@cspell/dict-fullstack@3.2.6...@cspell/dict-fullstack@3.2.7) (2025-07-09)
 
 

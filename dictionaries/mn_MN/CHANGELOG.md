@@ -1,5 +1,12 @@
 # Change Log
 
+## [1.2.4](https://github.com/streetsidesoftware/cspell-dicts/compare/@cspell/dict-mn-mn@1.2.3...@cspell/dict-mn-mn@1.2.4) (2026-01-24)
+
+
+### Updates and Bug Fixes
+
+* Workflow Bot -- Build Dictionaries ([#5162](https://github.com/streetsidesoftware/cspell-dicts/issues/5162)) ([8a56bff](https://github.com/streetsidesoftware/cspell-dicts/commit/8a56bffc1d2103c231a1c66b4dd995db96c4f5c8))
+
 ## [1.2.3](https://github.com/streetsidesoftware/cspell-dicts/compare/@cspell/dict-mn-mn@1.2.2...@cspell/dict-mn-mn@1.2.3) (2025-12-13)
 
 
