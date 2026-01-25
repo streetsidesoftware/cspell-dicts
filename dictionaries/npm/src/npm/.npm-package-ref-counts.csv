@@ -125,6 +125,7 @@ package,count
 @ant-design/web3-common,118
 @ant-design/web3-icons,118
 @ant-design/x,1
+@ant-design/x-sdk,1
 @antfu/eslint-config,2
 @antfu/install-pkg,2
 @antfu/ni,1
@@ -180,12 +181,16 @@ package,count
 @appium/tsconfig,3
 @appium/types,2
 @applitools/core,1
-@applitools/logger,1
+@applitools/driver,1
+@applitools/image,1
+@applitools/logger,3
 @applitools/req,1
-@applitools/test-utils,1
-@applitools/utils,1
+@applitools/snippets,2
+@applitools/spec-driver-webdriver,1
+@applitools/test-utils,2
+@applitools/utils,3
 @architect/eslint-config,1
-@arethetypeswrong/cli,25
+@arethetypeswrong/cli,26
 @arethetypeswrong/core,3
 @ark/attest,1
 @arktype/attest,1
@@ -248,6 +253,8 @@ package,count
 @aws-sdk/signature-v4,1
 @aws-sdk/types,2
 @aws-sdk/util-dynamodb,2
+@aws/durable-execution-sdk-js,1
+@aws/durable-execution-sdk-js-testing,1
 @axe-core/playwright,1
 @axe-core/webdriverjs,1
 @azure-rest/ai-inference,1
@@ -426,8 +433,8 @@ package,count
 @beyond-js/fs,1
 @beyond-js/specifier-parser,1
 @biomejs/biome,26
-@biomejs/js-api,1
-@biomejs/wasm-nodejs,1
+@biomejs/js-api,2
+@biomejs/wasm-nodejs,2
 @biz-dev-ops/web-components,2
 @blakeembrey/deque,1
 @blakeembrey/template,1
@@ -595,9 +602,9 @@ package,count
 @commercetools-frontend/mc-html-template,1
 @commercetools/composable-commerce-test-data,1
 @commercetools/http-user-agent,1
-@commitlint/cli,112
+@commitlint/cli,113
 @commitlint/config-angular,10
-@commitlint/config-conventional,99
+@commitlint/config-conventional,100
 @commitlint/cz-commitlint,1
 @commitlint/format,1
 @commitlint/lint,2
@@ -856,7 +863,7 @@ package,count
 @eslint/core,4
 @eslint/css,1
 @eslint/eslintrc,31
-@eslint/js,114
+@eslint/js,113
 @eslint/json,4
 @eslint/markdown,18
 @eslint/plugin-kit,2
@@ -1083,7 +1090,7 @@ package,count
 @intlayer/chokidar,1
 @intlayer/config,2
 @intlayer/core,1
-@intlayer/types,1
+@intlayer/types,2
 @intlify/core-base,1
 @intlify/devtools-types,1
 @intlify/shared,1
@@ -1178,6 +1185,7 @@ package,count
 @jridgewell/sourcemap-codec,6
 @jridgewell/trace-mapping,9
 @js-temporal/polyfill,1
+@jscpd/badge-reporter,1
 @jscpd/core,1
 @jscpd/finder,1
 @jscpd/html-reporter,1
@@ -1188,6 +1196,14 @@ package,count
 @jsonforms/core,7
 @jsonforms/react,2
 @jsonforms/vue,1
+@jsonjoy.com/fs-core,1
+@jsonjoy.com/fs-fsa,1
+@jsonjoy.com/fs-node,1
+@jsonjoy.com/fs-node-builtins,1
+@jsonjoy.com/fs-node-to-fsa,1
+@jsonjoy.com/fs-node-utils,1
+@jsonjoy.com/fs-print,1
+@jsonjoy.com/fs-snapshot,1
 @jsonjoy.com/json-pack,1
 @jsonjoy.com/util,1
 @jsopen/objects,1
@@ -1995,15 +2011,15 @@ package,count
 @rollup/plugin-alias,18
 @rollup/plugin-babel,40
 @rollup/plugin-buble,5
-@rollup/plugin-commonjs,83
+@rollup/plugin-commonjs,82
 @rollup/plugin-dynamic-import-vars,3
 @rollup/plugin-eslint,2
 @rollup/plugin-graphql,1
 @rollup/plugin-html,1
 @rollup/plugin-inject,4
-@rollup/plugin-json,36
+@rollup/plugin-json,35
 @rollup/plugin-multi-entry,2
-@rollup/plugin-node-resolve,100
+@rollup/plugin-node-resolve,99
 @rollup/plugin-replace,35
 @rollup/plugin-sucrase,1
 @rollup/plugin-terser,40
@@ -2067,14 +2083,16 @@ package,count
 @scripts/build,2
 @scripts/jest-config,2
 @sec-ant/readable-stream,1
+@secretlint/secretlint-rule-github,1
+@secretlint/secretlint-rule-npm,1
 @selderee/plugin-htmlparser2,1
-@semantic-release/changelog,30
+@semantic-release/changelog,29
 @semantic-release/commit-analyzer,10
 @semantic-release/error,1
 @semantic-release/exec,5
-@semantic-release/git,31
+@semantic-release/git,30
 @semantic-release/github,12
-@semantic-release/npm,16
+@semantic-release/npm,15
 @semantic-release/release-notes-generator,8
 @semantic-ui-react/event-stack,1
 @seneca/test-plugin,1
@@ -2122,7 +2140,7 @@ package,count
 @sindresorhus/is,4
 @sindresorhus/merge-streams,2
 @sindresorhus/slugify,6
-@sindresorhus/tsconfig,10
+@sindresorhus/tsconfig,9
 @sinonjs/commons,3
 @sinonjs/eslint-config,3
 @sinonjs/eslint-plugin-no-prototype-methods,1
@@ -2228,7 +2246,8 @@ package,count
 @strapi/upload,1
 @strapi/utils,1
 @stryker-mutator/core,3
-@stryker-mutator/mocha-runner,2
+@stryker-mutator/mocha-runner,1
+@stryker-mutator/tap-runner,1
 @stryker-mutator/typescript-checker,1
 @stryker-mutator/vitest-runner,1
 @studio/changes,1
@@ -2275,7 +2294,7 @@ package,count
 @tailwindcss/forms,1
 @tailwindcss/oxide,1
 @tailwindcss/postcss,2
-@tailwindcss/typography,4
+@tailwindcss/typography,3
 @tailwindcss/ui,1
 @tailwindcss/vite,4
 @tailwindplus/elements,1
@@ -2386,7 +2405,6 @@ package,count
 @trpc/server,3
 @truffle/hdwallet-provider,1
 @trunkio/launcher,1
-@ts-ast-parser/core,1
 @ts-morph/common,1
 @tsconfig/node-lts,1
 @tsconfig/node10,1
@@ -2401,7 +2419,7 @@ package,count
 @tsconfig/strictest,3
 @tsd/typescript,2
 @tsparticles/basic,1
-@tsparticles/engine,27
+@tsparticles/engine,29
 @tsparticles/interaction-external-attract,1
 @tsparticles/interaction-external-bounce,1
 @tsparticles/interaction-external-bubble,1
@@ -2495,12 +2513,12 @@ package,count
 @types/boolbase,2
 @types/brace-expansion,1
 @types/buble,1
-@types/bun,5
+@types/bun,6
 @types/bunyan,1
 @types/busboy,2
 @types/byline,2
 @types/bytebuffer,1
-@types/bytes,5
+@types/bytes,6
 @types/call-bind,2
 @types/callsite,1
 @types/caniuse-api,3
@@ -2570,7 +2588,7 @@ package,count
 @types/depd,1
 @types/detect-port,2
 @types/diacritics,1
-@types/diff,10
+@types/diff,9
 @types/dirty-chai,1
 @types/dlv,1
 @types/dockerode,1
@@ -2592,7 +2610,6 @@ package,count
 @types/eslint__js,1
 @types/eslint-config-prettier,1
 @types/eslint-plugin-markdown,1
-@types/eslint-plugin-mocha,1
 @types/eslint-plugin-prettier,1
 @types/eslint-scope,4
 @types/eslint-utils,1
@@ -2606,7 +2623,7 @@ package,count
 @types/esutils,1
 @types/events,1
 @types/execa,1
-@types/express,33
+@types/express,32
 @types/express-fileupload,2
 @types/express-serve-static-core,3
 @types/express-session,4
@@ -2640,7 +2657,7 @@ package,count
 @types/git-clone,1
 @types/git-url-parse,1
 @types/github-slugger,5
-@types/glob,21
+@types/glob,20
 @types/glob-parent,2
 @types/glob-to-regexp,2
 @types/global-agent,1
@@ -2790,7 +2807,7 @@ package,count
 @types/minimatch,11
 @types/minimist,13
 @types/mkdirp,3
-@types/mocha,98
+@types/mocha,97
 @types/mock-fs,3
 @types/mock-property,1
 @types/mock-require,1
@@ -2811,7 +2828,7 @@ package,count
 @types/negotiator,1
 @types/nightwatch,1
 @types/nock,3
-@types/node,553
+@types/node,556
 @types/node-fetch,10
 @types/node-forge,4
 @types/nodemailer,2
@@ -2903,7 +2920,7 @@ package,count
 @types/react-native-vector-icons,1
 @types/react-reconciler,1
 @types/react-redux,3
-@types/react-resizable,3
+@types/react-resizable,2
 @types/react-router,1
 @types/react-router-config,1
 @types/react-router-dom,3
@@ -2951,6 +2968,7 @@ package,count
 @types/set-cookie-parser,4
 @types/sha.js,1
 @types/shallowequal,1
+@types/sharp,1
 @types/shell-quote,3
 @types/shelljs,6
 @types/should,1
@@ -3267,6 +3285,7 @@ package,count
 @vue/server-renderer,4
 @vue/shared,4
 @vue/test-utils,12
+@vue/tsconfig,1
 @vue/vue3-jest,4
 @vuepress/core,1
 @vuepress/markdown,2
@@ -3510,7 +3529,7 @@ app-module-path,2
 app-root-path,3
 apparatus,1
 append-field,1
-appium,1
+appium,2
 appium-adb,1
 appium-chromedriver,1
 appium-chromium-driver,1
@@ -4044,7 +4063,7 @@ bootstrap-styl,1
 bootstrap.native,1
 boring-avatars,1
 born-greatly-explain3,11
-borp,6
+borp,5
 bossy,1
 bounce,2
 bow-swam-troops-care,55
@@ -4095,7 +4114,6 @@ brotli,1
 brotli-size,2
 brotli-wasm,1
 brought-tried-whether8,55
-browser-driver-manager,1
 browser-dtector,1
 browser-level,1
 browser-pack,2
@@ -4179,7 +4197,7 @@ bx-jest-electron,1
 byline,3
 byte-counter,1
 byte-size,2
-bytes,14
+bytes,15
 bytes-iec,1
 c12,2
 c8,133
@@ -4209,7 +4227,6 @@ callsite-record,1
 callsites,2
 camel-case,2
 camelcase,15
-camelcase-css,1
 camelcase-keys,1
 camelize-ts,1
 caniuse-api,4
@@ -4279,7 +4296,7 @@ character-entities-html4,1
 character-entities-legacy,2
 character-parser,1
 character-reference-invalid,1
-charcodes,1
+charcodes,2
 chardet,1
 charenc,2
 charm,2
@@ -4295,7 +4312,7 @@ check-side-effects,1
 check-types,1
 check-version-modules,1
 checkpoint-client,1
-cheerio,34
+cheerio,33
 cheerio-select,1
 cheerio-soupselect,1
 chicken-fell-spread,11
@@ -4945,6 +4962,7 @@ domain-browser,3
 domelementtype,2
 domhandler,6
 domino,1
+domparser-rs,1
 dompurify,2
 domutils,3
 dont-crack,1
@@ -5538,7 +5556,7 @@ expose-gc,2
 expose-loader,1
 exposify,1
 expr-eval,2
-express,94
+express,93
 express-async-handler,1
 express-body-parser-error-handler,1
 express-fileupload,4
@@ -5912,7 +5930,7 @@ global-directory,1
 global-dirs,1
 global-jsdom,3
 global-modules,4
-globals,99
+globals,98
 globals-docs,1
 globalthis,2
 globby,38
@@ -6377,7 +6395,7 @@ humanize-duration,3
 humanize-number,1
 humanize-string,1
 hundreds,1
-husky,269
+husky,270
 hyperlinker,1
 hyperquest,1
 hyphenate-style-name,1
@@ -6749,7 +6767,7 @@ js-sha256,1
 js-string-escape,2
 js-tiktoken,1
 js-tokens,4
-js-yaml,73
+js-yaml,71
 js-yaml-js-types,2
 js2xmlparser,1
 jsbarcode,1
@@ -6850,7 +6868,7 @@ jsonpointer,2
 JSONStream,8
 jsonwebtoken,11
 jsqr,1
-jsr,2
+jsr,3
 jss,1
 jss-plugin-camel-case,1
 jss-plugin-compose,1
@@ -7133,7 +7151,7 @@ localforage,1
 locate-character,5
 locate-path,3
 lockfile,1
-lockfile-lint,7
+lockfile-lint,8
 lockfile-lint-api,1
 lodash,187
 lodash-bound,1
@@ -7512,7 +7530,7 @@ mnemonic-id,1
 mobx,5
 mobx-react,4
 mobx-react-lite,2
-mocha,637
+mocha,636
 mocha-chai-jest-snapshot,2
 mocha-each,1
 mocha-eslint,4
@@ -7935,8 +7953,8 @@ outvariant,2
 ow,2
 oxc-parser,2
 oxc-resolver,1
-oxfmt,1
-oxlint,5
+oxfmt,2
+oxlint,6
 p-all,3
 p-cancelable,2
 p-defer,2
@@ -8098,7 +8116,7 @@ pinst,6
 pirates,3
 piscina,2
 pitch-somehow-earth-brave,55
-pixelmatch,9
+pixelmatch,10
 pixrem,1
 pkg,1
 pkg-dir,7
@@ -8259,7 +8277,7 @@ power-assert,5
 power-assert-formatter,1
 power-assign,1
 power-tasks,1
-powershell-utils,1
+powershell-utils,2
 pre-commit,34
 pre-git,1
 pre-suf,1
@@ -8620,7 +8638,7 @@ react-redux,9
 react-refractor,1
 react-refresh,11
 react-remove-scroll,1
-react-resizable,4
+react-resizable,3
 react-responsive,2
 react-rnd,1
 react-router,9
@@ -9008,7 +9026,7 @@ rollup-plugin-riot,1
 rollup-plugin-serve,4
 rollup-plugin-sourcemaps,8
 rollup-plugin-static-import,1
-rollup-plugin-string,2
+rollup-plugin-string,1
 rollup-plugin-strip-banner,1
 rollup-plugin-styles,1
 rollup-plugin-swc3,1
@@ -9116,6 +9134,7 @@ scss-loader,1
 scule,3
 seamless-immutable,1
 seblakhotspicy,1
+secretlint,1
 section-matter,1
 sections,1
 secure-compare,1
@@ -9134,7 +9153,7 @@ selenium-standalone,2
 selenium-webdriver,8
 self-cert,1
 selfsigned,4
-semantic-release,60
+semantic-release,59
 semantic-release-conventional-commits,1
 semantic-release-fail-on-major-bump,1
 semantic-release-plugin-update-version-in-files,1
@@ -9142,7 +9161,7 @@ semantic-release-telegram,1
 semantic-ui-css,1
 semaphore,8
 semistandard,3
-semver,221
+semver,222
 semver-compare,1
 semver-diff,2
 semver-regex,2
@@ -9195,7 +9214,7 @@ shallow-equal,2
 shallow-equal-fuzzy,1
 shallowequal,5
 shared-scripts,1
-sharp,12
+sharp,13
 shasum-object,1
 shebang-command,1
 shell-quote,12
@@ -9896,9 +9915,9 @@ tslint-plugin-prettier,2
 tslint-react,1
 tslog,1
 tsm,1
-tsup,46
+tsup,47
 tsutils,3
-tsx,45
+tsx,44
 tty-browserify,3
 ttypescript,1
 tunnel,2
@@ -9942,9 +9961,9 @@ typedoc-plugin-remark,1
 typedoc-plugin-rename-defaults,1
 typedoc-vitepress-theme,1
 typeorm,2
-typescript,853
+typescript,855
 typescript-cached-transpile,2
-typescript-eslint,78
+typescript-eslint,77
 typescript-eslint-parser,3
 typescript-formatter,2
 typescript-json-schema,3
@@ -10184,7 +10203,7 @@ vite-plugin-builder,1
 vite-plugin-clean-build,1
 vite-plugin-commonjs,1
 vite-plugin-css-injected-by-js,1
-vite-plugin-dts,10
+vite-plugin-dts,11
 vite-plugin-eslint4b,3
 vite-plugin-fastly-js-compute,1
 vite-plugin-inspect,1
@@ -10237,7 +10256,7 @@ vue-server-renderer,1
 vue-style-loader,4
 vue-template-compiler,6
 vue-template-es2015-compiler,1
-vue-tsc,6
+vue-tsc,7
 vue-types,1
 vuepress,3
 vuepress-html-webpack-plugin,1
@@ -10309,6 +10328,7 @@ web3-utils,1
 web3-validator,1
 webassembly-feature,1
 webdav,1
+webdriver,1
 webdriver-js-extender,1
 webdriver-manager,2
 webdriverio,6
@@ -10440,7 +10460,7 @@ yaeti,1
 yalc,1
 yallist,1
 yam,1
-yaml,20
+yaml,21
 yaml-eslint-parser,2
 yaml-front-matter,1
 yaml-js,1
