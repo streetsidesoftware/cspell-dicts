@@ -1,5 +1,12 @@
 # Change Log
 
+## [2.1.12](https://github.com/streetsidesoftware/cspell-dicts/compare/@cspell/dict-en-common-misspellings@2.1.11...@cspell/dict-en-common-misspellings@2.1.12) (2026-01-26)
+
+
+### Updates and Bug Fixes
+
+* Add 'therefor' as a common misspelling of therefore. ([#5184](https://github.com/streetsidesoftware/cspell-dicts/issues/5184)) ([872b145](https://github.com/streetsidesoftware/cspell-dicts/commit/872b145c40e401b1a84d237607b39ecb808f7a37))
+
 ## [2.1.11](https://github.com/streetsidesoftware/cspell-dicts/compare/@cspell/dict-en-common-misspellings@2.1.10...@cspell/dict-en-common-misspellings@2.1.11) (2026-01-03)
 
 
