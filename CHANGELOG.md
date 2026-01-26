@@ -1,5 +1,20 @@
 # Release Notes
 
+## [33.0.1](https://github.com/streetsidesoftware/cspell-dicts/compare/cspell-dicts@33.0.0...cspell-dicts@33.0.1) (2026-01-26)
+
+
+### Updates and Bug Fixes
+
+* Add 'therefor' as a common misspelling of therefore. ([#5184](https://github.com/streetsidesoftware/cspell-dicts/issues/5184)) ([872b145](https://github.com/streetsidesoftware/cspell-dicts/commit/872b145c40e401b1a84d237607b39ecb808f7a37))
+* Workflow Bot -- Update Dictionaries ([#5186](https://github.com/streetsidesoftware/cspell-dicts/issues/5186)) ([26b83c6](https://github.com/streetsidesoftware/cspell-dicts/commit/26b83c66f66d557339bf5d6b86f30e295db63f3a))
+
+
+### Dependencies
+
+* The following workspace dependencies were updated
+  * devDependencies
+    * @cspell/dict-cspell-bundle bumped to 2.0.48
+
 ## [33.0.0](https://github.com/streetsidesoftware/cspell-dicts/compare/cspell-dicts@32.2.1...cspell-dicts@33.0.0) (2026-01-24)
 
 
