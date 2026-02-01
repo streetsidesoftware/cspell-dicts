@@ -3,6 +3,13 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+## [4.1.2](https://github.com/streetsidesoftware/cspell-dicts/compare/@cspell/dict-rust@4.1.1...@cspell/dict-rust@4.1.2) (2026-02-01)
+
+
+### Updates and Bug Fixes
+
+* Add `configparser` Rust crate ([#5194](https://github.com/streetsidesoftware/cspell-dicts/issues/5194)) ([fe05d04](https://github.com/streetsidesoftware/cspell-dicts/commit/fe05d0498c7f412b15b8337170e70de4c7fc7c7b))
+
 ## [4.1.1](https://github.com/streetsidesoftware/cspell-dicts/compare/@cspell/dict-rust@4.1.0...@cspell/dict-rust@4.1.1) (2026-01-08)
 
 
