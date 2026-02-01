@@ -37,6 +37,7 @@ const rootUrl = new URL('../../', import.meta.url);
  * Dictionary Package information.
  * @typedef {object} DictionaryPackageInfo
  * @property {string} name The name of the dictionary.
+ * @property {string} version The version of the package.
  * @property {string} packageName The name of the package.
  * @property {string} dir The directory containing the dictionary package.
  * @property {boolean} cspell The dictionary package is bundled with cspell.
@@ -82,6 +83,7 @@ export async function fetchDictionaryInfo(dictURL) {
     const hasEnabledByDefault = dictionaries.some((d) => d.enabled) || undefined;
     return {
         name: cspellExt.name || pkgJson.name,
+        version: pkgJson.version,
         dir: path.relative(rootUrl.pathname, dictURL.pathname),
         packageName: pkgJson.name,
         description: cspellExt.description || pkgJson.description || '',

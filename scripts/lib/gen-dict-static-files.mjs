@@ -96,9 +96,10 @@ function toCSpellSettings(pkgInfo, useCdn) {
 
     const locales = [...new Set(pkgInfo.dictionaries.flatMap((d) => d.locales || []))].join(', ');
     if (!pkgInfo.cspell) {
-        settings['import'] = [
-            (useCdn ? pkgNameToCdnUrl(pkgInfo.packageName) : pkgInfo.packageName) + '/cspell-ext.json',
-        ];
+        const importPkg = useCdn
+            ? new URL('cspell-ext.json', pkgNameToCdnUrl(pkgInfo.packageName, pkgInfo.version)).href
+            : pkgInfo.packageName + '/cspell-ext.json';
+        settings['import'] = [importPkg];
     }
     if (locales) {
         settings['language'] = locales;
@@ -112,10 +113,12 @@ function toCSpellSettings(pkgInfo, useCdn) {
 /**
  *
  * @param {string} pkgName
+ * @param {string} version
  * @returns {string}
  */
-function pkgNameToCdnUrl(pkgName) {
-    return `https://cdn.jsdelivr.net/npm/${pkgName}`;
+function pkgNameToCdnUrl(pkgName, version) {
+    const v = version.split('.')[0] || '0';
+    return `https://cdn.jsdelivr.net/npm/${pkgName}@${v}/`;
 }
 
 /**
