@@ -62,7 +62,7 @@ Add the following to your VSCode settings:
 
 ```jsonc
 {
-  "cSpell.import": ["https://cdn.jsdelivr.net/npm/@cspell/dict-hr-hr/cspell-ext.json"],
+  "cSpell.import": ["https://cdn.jsdelivr.net/npm/@cspell/dict-hr-hr@3/cspell-ext.json"],
   "cSpell.language": "hr, hr-HR",
 }
 ```
@@ -76,7 +76,7 @@ Add the following to your VSCode settings:
 
 ```jsonc
 {
-  "import": ["https://cdn.jsdelivr.net/npm/@cspell/dict-hr-hr/cspell-ext.json"],
+  "import": ["https://cdn.jsdelivr.net/npm/@cspell/dict-hr-hr@3/cspell-ext.json"],
   "language": "hr, hr-HR",
 }
 ```
@@ -90,7 +90,7 @@ Add the following to your VSCode settings:
 
 ```yaml
 import:
-  - https://cdn.jsdelivr.net/npm/@cspell/dict-hr-hr/cspell-ext.json
+  - https://cdn.jsdelivr.net/npm/@cspell/dict-hr-hr@3/cspell-ext.json
 language: hr, hr-HR
 ```
 

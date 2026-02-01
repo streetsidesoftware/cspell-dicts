@@ -62,7 +62,7 @@ Add the following to your VSCode settings:
 
 ```jsonc
 {
-  "cSpell.import": ["https://cdn.jsdelivr.net/npm/@cspell/dict-bn/cspell-ext.json"],
+  "cSpell.import": ["https://cdn.jsdelivr.net/npm/@cspell/dict-bn@1/cspell-ext.json"],
   "cSpell.language": "bn",
 }
 ```
@@ -76,7 +76,7 @@ Add the following to your VSCode settings:
 
 ```jsonc
 {
-  "import": ["https://cdn.jsdelivr.net/npm/@cspell/dict-bn/cspell-ext.json"],
+  "import": ["https://cdn.jsdelivr.net/npm/@cspell/dict-bn@1/cspell-ext.json"],
   "language": "bn",
 }
 ```
@@ -90,7 +90,7 @@ Add the following to your VSCode settings:
 
 ```yaml
 import:
-  - https://cdn.jsdelivr.net/npm/@cspell/dict-bn/cspell-ext.json
+  - https://cdn.jsdelivr.net/npm/@cspell/dict-bn@1/cspell-ext.json
 language: bn
 ```
 

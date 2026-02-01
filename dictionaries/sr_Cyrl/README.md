@@ -84,7 +84,7 @@ Add the following to your VSCode settings:
 
 ```jsonc
 {
-  "cSpell.import": ["https://cdn.jsdelivr.net/npm/@cspell/dict-sr-cyrl/cspell-ext.json"],
+  "cSpell.import": ["https://cdn.jsdelivr.net/npm/@cspell/dict-sr-cyrl@1/cspell-ext.json"],
   "cSpell.language": "sr, sr-Cyrl",
 }
 ```
@@ -98,7 +98,7 @@ Add the following to your VSCode settings:
 
 ```jsonc
 {
-  "import": ["https://cdn.jsdelivr.net/npm/@cspell/dict-sr-cyrl/cspell-ext.json"],
+  "import": ["https://cdn.jsdelivr.net/npm/@cspell/dict-sr-cyrl@1/cspell-ext.json"],
   "language": "sr, sr-Cyrl",
 }
 ```
@@ -112,7 +112,7 @@ Add the following to your VSCode settings:
 
 ```yaml
 import:
-  - https://cdn.jsdelivr.net/npm/@cspell/dict-sr-cyrl/cspell-ext.json
+  - https://cdn.jsdelivr.net/npm/@cspell/dict-sr-cyrl@1/cspell-ext.json
 language: sr, sr-Cyrl
 ```
 

@@ -82,7 +82,7 @@ Add the following to your VSCode settings:
 
 ```jsonc
 {
-  "cSpell.import": ["https://cdn.jsdelivr.net/npm/@cspell/dict-pokemon/cspell-ext.json"],
+  "cSpell.import": ["https://cdn.jsdelivr.net/npm/@cspell/dict-pokemon@1/cspell-ext.json"],
   "cSpell.dictionaries": ["pokemon"],
 }
 ```
@@ -96,7 +96,7 @@ Add the following to your VSCode settings:
 
 ```jsonc
 {
-  "import": ["https://cdn.jsdelivr.net/npm/@cspell/dict-pokemon/cspell-ext.json"],
+  "import": ["https://cdn.jsdelivr.net/npm/@cspell/dict-pokemon@1/cspell-ext.json"],
   "dictionaries": ["pokemon"],
 }
 ```
@@ -110,7 +110,7 @@ Add the following to your VSCode settings:
 
 ```yaml
 import:
-  - https://cdn.jsdelivr.net/npm/@cspell/dict-pokemon/cspell-ext.json
+  - https://cdn.jsdelivr.net/npm/@cspell/dict-pokemon@1/cspell-ext.json
 dictionaries:
   - pokemon
 ```
