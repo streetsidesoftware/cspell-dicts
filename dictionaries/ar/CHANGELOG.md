@@ -1,5 +1,12 @@
 # Change Log
 
+## [1.1.7](https://github.com/streetsidesoftware/cspell-dicts/compare/@cspell/dict-ar@1.1.6...@cspell/dict-ar@1.1.7) (2026-02-01)
+
+
+### Updates and Bug Fixes
+
+* Workflow Bot -- Build Dictionaries ([#5190](https://github.com/streetsidesoftware/cspell-dicts/issues/5190)) ([1b68196](https://github.com/streetsidesoftware/cspell-dicts/commit/1b68196762a769f95403de3e7b12f43bbb8cf3b8))
+
 ## [1.1.6](https://github.com/streetsidesoftware/cspell-dicts/compare/@cspell/dict-ar@1.1.5...@cspell/dict-ar@1.1.6) (2025-07-19)
 
 

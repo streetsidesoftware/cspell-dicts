@@ -1,5 +1,22 @@
 # Release Notes
 
+## [33.0.2](https://github.com/streetsidesoftware/cspell-dicts/compare/cspell-dicts@33.0.1...cspell-dicts@33.0.2) (2026-02-01)
+
+
+### Updates and Bug Fixes
+
+* Add `configparser` Rust crate ([#5194](https://github.com/streetsidesoftware/cspell-dicts/issues/5194)) ([fe05d04](https://github.com/streetsidesoftware/cspell-dicts/commit/fe05d0498c7f412b15b8337170e70de4c7fc7c7b))
+* Workflow Bot -- Build Dictionaries ([#5190](https://github.com/streetsidesoftware/cspell-dicts/issues/5190)) ([1b68196](https://github.com/streetsidesoftware/cspell-dicts/commit/1b68196762a769f95403de3e7b12f43bbb8cf3b8))
+* Workflow Bot -- Build Dictionaries ([#5202](https://github.com/streetsidesoftware/cspell-dicts/issues/5202)) ([a164a5f](https://github.com/streetsidesoftware/cspell-dicts/commit/a164a5f059a92e6088f2dd50fd33777d84d4e4c3))
+* Workflow Bot -- Update Dictionaries ([#5200](https://github.com/streetsidesoftware/cspell-dicts/issues/5200)) ([821eb6c](https://github.com/streetsidesoftware/cspell-dicts/commit/821eb6c4e8aa5bac325dcdedd2066dea1b44b8d6))
+
+
+### Dependencies
+
+* The following workspace dependencies were updated
+  * devDependencies
+    * @cspell/dict-cspell-bundle bumped to 2.0.49
+
 ## [33.0.1](https://github.com/streetsidesoftware/cspell-dicts/compare/cspell-dicts@33.0.0...cspell-dicts@33.0.1) (2026-01-26)
 
 
