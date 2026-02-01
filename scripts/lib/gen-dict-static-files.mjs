@@ -117,8 +117,9 @@ function toCSpellSettings(pkgInfo, useCdn) {
  * @returns {string}
  */
 function pkgNameToCdnUrl(pkgName, version) {
+    console.log({ pkgName, version });
     const v = version.split('.')[0] || '0';
-    return `https://cdn.jsdelivr.net/npm/${pkgName}@^${v}/`;
+    return `https://cdn.jsdelivr.net/npm/${pkgName}@${v}/`;
 }
 
 /**
