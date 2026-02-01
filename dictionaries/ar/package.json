@@ -12,9 +12,8 @@
     "./cspell-ext.json": "./cspell-ext.json"
   },
   "scripts": {
-    "build": "cross-env NODE_OPTIONS=--max_old_space_size=12288 cspell-tools-cli build && pnpm run gen-checksum",
-    "checksum": "cspell-tools-cli shasum -c checksum.txt",
-    "conditional-build": "pnpm run --silent checksum || pnpm run build",
+    "build": "cross-env NODE_OPTIONS=--max_old_space_size=12288 cspell-tools-cli build",
+    "conditional-build": "pnpm run build --conditional",
     "lint": "pnpm prettier -w \"**/*.{md,json}\"",
     "gen-checksum": "cspell-tools-cli shasum -u checksum.txt --list-file source-files.txt source-dependencies.txt",
     "test-ar": "pipe-cmds \"hunspell-reader words -m 0 -n 1000 \\\"src/ayaspell/ar.dic\\\"\" \"cspell -c ./cspell-ext.json \\\"--locale=ar\\\" \\\"--languageId=*\\\" stdin\"",

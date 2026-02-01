@@ -3,10 +3,12 @@
 targets:
   - name: ar
     targetDirectory: .
-    compress: false
+    compress: true
+    keepUncompressed: true
     format: trie3
     sources:
       - listFile: source-files.txt
     sort: true
     generateNonStrict: true
+checksumFile: true
 maxDepth: 5
