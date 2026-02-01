@@ -14,8 +14,9 @@ Feedback is welcome to help keep these dictionaries accurate and reliable.
 
 DICTIONARY MAINTENANCE  
 ======================  
-Marco maintains five main English variants:  
+Marco maintains six main English variants:  
   • en_GB (British, “ise”), since 25.Aug.2013  
+  • en_GB-oxendict (Oxford English Dictionary, “ize”), since 1.Mar.2025  
   • en_ZA (South African, “ise”), since 01.Jan.2025  
   • en_US (American, “ize”), since 01.Jan.2026 (alternative version)  
   • en_CA (Canadian, “ise”), since 01.Jan.2026 (alternative version)  
@@ -132,14 +133,21 @@ Marco A.G.Pinto
 
 CHANGELOG (2025+)  
 =================  
+2026-02-01 (Marco A.G.Pinto)
+           - Flag enhancements, mainly for U.S. words.
+           - Major fixes and improvements to the US, CA, and AU dictionaries.
+           - Added an OED (Oxford English Dictionary) dictionary to the LibreOffice extension.
+
 2026-01-01 (Marco A.G.Pinto)
            - Marco began maintaining alternative versions of the US, CA, and AU dictionaries.
            - Merged the GB dictionary into the ZA dictionary.
-           - Aligned all five dictionaries to the GB versioning format for consistency.
+           - Aligned all six dictionaries to the GB versioning format for consistency.
            - Removed numerous Americanisms from the GB dictionary.
            - The hyph US and GB files now use UTF-8-BOM Unix (LF).
            - The thesaurus now uses UTF-8-BOM Unix (LF).
            - Improved images for extensions.
+
+----------
 
 2025-03-02 to 2025-12-31 (Marco A.G.Pinto)
            - Better -ise/-ize handling.
