@@ -24,12 +24,12 @@
 #
 #  Dictionary Information:
 #      English variant: Canadian (alt)
-#              Version: 4.0.4, 2026-01-01
+#              Version: 4.0.5, 2026-02-01
 #             Encoding: UTF-8-BOM Unix (LF)
 #       -ise/-ize/Both: -ise
 #             Comments: For specific -ise/-ize variants, some verbs and words MAY be missing or included differently.
 #                       The U.S., Canadian, and Australian dictionaries MAY differ slightly in coverage for some region-specific terms.
-#  Variants maintained: British, South African, American (alt), Canadian (alt), Australian (alt)
+#  Variants maintained: British, OED (Oxford English Dictionary), South African, American (alt), Canadian (alt), Australian (alt)
 #
 #
 # Maintainer: Marco A.G.Pinto
@@ -468,11 +468,13 @@ SFX Y 0 ly [aeiou][ly]
 SFX Y 0 ly [aeiou]le 
 SFX Y 0 y [^aeiou]l 
 SFX Y e y [^aeiou]le 
-SFX G Y 33
+SFX G Y 36
 SFX G 0 bing [^aeio][aeiou]b 
 SFX G 0 ding [^aeio][aeiou]d 
 SFX G 0 fing [^aeio][aeiou]f 
-SFX G 0 ging [^aeio][aeiou]g 
+SFX G 0 ging [^aeiol][aeiou]g 
+SFX G 0 ging [^ao][l][aeiou]g 
+SFX G 0 ging ^([l][aeiou]g) 
 SFX G 0 ing [^aeiou][bcdfgklmnprstvz] 
 SFX G 0 ing [^ai][lvbmpndc][oe]r 
 SFX G 0 ing [^ebcdfgklmnprstvz] 
@@ -481,6 +483,7 @@ SFX G 0 ing [a][bvpm][o][r]
 SFX G 0 ing [aeio][aeiou][bcdfgkmnprstvz] 
 SFX G 0 ing [aeio][eiou]l 
 SFX G 0 ing [aeo]al 
+SFX G 0 ing [ao]log 
 SFX G 0 ing [emfo][eniu][tb][e]r 
 SFX G 0 ing [eoy]e 
 SFX G 0 king [^aeio][aeiou]c 
@@ -502,15 +505,19 @@ SFX G 0 ting [^aeio][aeiou]t
 SFX G 0 ving [^aeio][aeiou]v 
 SFX G ie ying ie 
 SFX G 0 zing [^aeio][aeiou]z 
-SFX J Y 54
+SFX J Y 60
 SFX J 0 bing's [^aeio][aeiou]b 
 SFX J 0 bings [^aeio][aeiou]b 
 SFX J 0 ding's [^aeio][aeiou]d 
 SFX J 0 dings [^aeio][aeiou]d 
 SFX J 0 fing's [^aeio][aeiou]f 
 SFX J 0 fings [^aeio][aeiou]f 
-SFX J 0 ging's [^aeio][aeiou]g 
-SFX J 0 gings [^aeio][aeiou]g 
+SFX J 0 ging's [^aeiol][aeiou]g 
+SFX J 0 ging's [^ao][l][aeiou]g 
+SFX J 0 ging's ^([l][aeiou]g) 
+SFX J 0 gings [^aeiol][aeiou]g 
+SFX J 0 gings [^ao][l][aeiou]g 
+SFX J 0 gings ^([l][aeiou]g) 
 SFX J 0 ing's [^aeio]e[nrt] 
 SFX J 0 ing's [^aeiou][bcdfgklmnprstvz] 
 SFX J 0 ing's [^ebcdfgklmnprstvz] 
@@ -518,6 +525,7 @@ SFX J e ing's [^eioy]e
 SFX J 0 ing's [aeio][aeiou][bcdfgkmnprstvz] 
 SFX J 0 ing's [aeio][eiou]l 
 SFX J 0 ing's [aeo]al 
+SFX J 0 ing's [ao]log 
 SFX J 0 ing's [eoy]e 
 SFX J 0 ing's [oa][lvpb][o]r 
 SFX J 0 ings [^aeio]e[nrt] 
@@ -527,6 +535,7 @@ SFX J e ings [^eioy]e
 SFX J 0 ings [aeio][aeiou][bcdfgkmnprstvz] 
 SFX J 0 ings [aeio][eiou]l 
 SFX J 0 ings [aeo]al 
+SFX J 0 ings [ao]log 
 SFX J 0 ings [eoy]e 
 SFX J 0 ings [oa][lvpb][o]r 
 SFX J 0 king's [^aeio][aeiou]c 
@@ -566,7 +575,7 @@ SFX k 0 ingly [eoy]e
 SFX k 0 kingly [^aeio][aeiou]c 
 SFX k 0 lingly [^aeio][aeiou]l 
 SFX k ie yingly ie 
-SFX D Y 35
+SFX D Y 38
 SFX D 0 bed [^aeio][aeiou]b 
 SFX D 0 d [^e]e 
 SFX D e d [^or]ee 
@@ -580,9 +589,12 @@ SFX D 0 ed [aeio][aeiou][bcdfgkmnprstvz]
 SFX D 0 ed [aeio][eiou]l 
 SFX D 0 ed [aeiou]y 
 SFX D 0 ed [aeo]al 
+SFX D 0 ed [ao]log 
 SFX D 0 ed [emfos][eniua][tb][e]r 
 SFX D 0 fed [^aeio][aeiou]f 
-SFX D 0 ged [^aeio][aeiou]g 
+SFX D 0 ged [^aeiol][aeiou]g 
+SFX D 0 ged [^ao][l][aeiou]g 
+SFX D 0 ged ^([l][aeiou]g) 
 SFX D y ied [^aeiou]y 
 SFX D 0 ked [^aeio][aeiou]c 
 SFX D 0 ked [^aeio][aeiou]k 
@@ -930,12 +942,14 @@ SFX j Y 3
 SFX j 0 fully [^y] 
 SFX j 0 fully [aeiou]y 
 SFX j y ifully [^aeiou]y 
-SFX p Y 5
+SFX p Y 7
 SFX p 0 ess ll 
-SFX p y iless [^aeiou]y 
+SFX p y iless [^or][^aeiousk]y 
+SFX p y iless [or][cd]y 
+SFX p 0 less [^aeiou][aeiourt]y 
 SFX p 0 less [^l]l 
 SFX p 0 less [^ly] 
-SFX p 0 less [aeiou]y 
+SFX p 0 less [ous][prsk]y 
 SFX Q Y 44
 SFX Q le ilise [^aeiou]le 
 SFX Q le ilised [^aeiou]le 
@@ -1485,9 +1499,10 @@ SFX o 0 ially [bcrx]
 SFX o 0 lly a 
 SFX o 0 tally [iu]t 
 SFX o 0 ually [px]t 
-SFX W Y 27
+SFX W Y 30
 SFX W e atic [^cx][aeioumy]me 
-SFX W 0 atic [aeiou]m 
+SFX W 0 atic [^r][aeiou]m 
+SFX W 0 atic [d][r][aeiou]m 
 SFX W 0 c [bdghlmnstz]i 
 SFX W a c [i]a 
 SFX W e c [o][l][i]e 
@@ -1496,7 +1511,7 @@ SFX W 0 ic [^aeilmrsy]
 SFX W 0 ic [^aeiou]m 
 SFX W 0 ic [^ay]l 
 SFX W e ic [^b]le 
-SFX W e ic [^cilms]e 
+SFX W e ic [^cilmsz]e 
 SFX W 0 ic [^e]r 
 SFX W e ic [^hn][e]me 
 SFX W y ic [^hs]y 
@@ -1507,11 +1522,13 @@ SFX W 0 ic [nx][ay]l
 SFX W le ic ble 
 SFX W us ic us 
 SFX W 0 lic [^nx][ay]l 
+SFX W 0 matic [g][r][aeiou]m 
 SFX W er ric [^hmv]er 
 SFX W 0 tic [^u]s 
 SFX W 0 tic ma 
 SFX W se tic se 
 SFX W y tic sy 
+SFX W ze tic ze 
 SFX W ce tific ce 
 SFX w Y 9
 SFX w 0 atical [aeiou]m 
