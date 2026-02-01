@@ -82,7 +82,7 @@ Add the following to your VSCode settings:
 
 ```jsonc
 {
-  "cSpell.import": ["https://cdn.jsdelivr.net/npm/@cspell/dict-elisp/cspell-ext.json"],
+  "cSpell.import": ["https://cdn.jsdelivr.net/npm/@cspell/dict-elisp@1/cspell-ext.json"],
   "cSpell.dictionaries": ["elisp"],
 }
 ```
@@ -96,7 +96,7 @@ Add the following to your VSCode settings:
 
 ```jsonc
 {
-  "import": ["https://cdn.jsdelivr.net/npm/@cspell/dict-elisp/cspell-ext.json"],
+  "import": ["https://cdn.jsdelivr.net/npm/@cspell/dict-elisp@1/cspell-ext.json"],
   "dictionaries": ["elisp"],
 }
 ```
@@ -110,7 +110,7 @@ Add the following to your VSCode settings:
 
 ```yaml
 import:
-  - https://cdn.jsdelivr.net/npm/@cspell/dict-elisp/cspell-ext.json
+  - https://cdn.jsdelivr.net/npm/@cspell/dict-elisp@1/cspell-ext.json
 dictionaries:
   - elisp
 ```

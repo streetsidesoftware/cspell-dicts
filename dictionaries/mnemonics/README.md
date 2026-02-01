@@ -82,7 +82,7 @@ Add the following to your VSCode settings:
 
 ```jsonc
 {
-  "cSpell.import": ["https://cdn.jsdelivr.net/npm/@cspell/dict-mnemonics/cspell-ext.json"],
+  "cSpell.import": ["https://cdn.jsdelivr.net/npm/@cspell/dict-mnemonics@3/cspell-ext.json"],
   "cSpell.dictionaries": ["mnemonics"],
 }
 ```
@@ -96,7 +96,7 @@ Add the following to your VSCode settings:
 
 ```jsonc
 {
-  "import": ["https://cdn.jsdelivr.net/npm/@cspell/dict-mnemonics/cspell-ext.json"],
+  "import": ["https://cdn.jsdelivr.net/npm/@cspell/dict-mnemonics@3/cspell-ext.json"],
   "dictionaries": ["mnemonics"],
 }
 ```
@@ -110,7 +110,7 @@ Add the following to your VSCode settings:
 
 ```yaml
 import:
-  - https://cdn.jsdelivr.net/npm/@cspell/dict-mnemonics/cspell-ext.json
+  - https://cdn.jsdelivr.net/npm/@cspell/dict-mnemonics@3/cspell-ext.json
 dictionaries:
   - mnemonics
 ```

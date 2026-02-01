@@ -63,7 +63,7 @@ Add the following to your VSCode settings:
 
 ```jsonc
 {
-  "cSpell.import": ["https://cdn.jsdelivr.net/npm/@cspell/dict-vim/cspell-ext.json"],
+  "cSpell.import": ["https://cdn.jsdelivr.net/npm/@cspell/dict-vim@1/cspell-ext.json"],
   "cSpell.dictionaries": ["vim"],
 }
 ```
@@ -77,7 +77,7 @@ Add the following to your VSCode settings:
 
 ```jsonc
 {
-  "import": ["https://cdn.jsdelivr.net/npm/@cspell/dict-vim/cspell-ext.json"],
+  "import": ["https://cdn.jsdelivr.net/npm/@cspell/dict-vim@1/cspell-ext.json"],
   "dictionaries": ["vim"],
 }
 ```
@@ -91,7 +91,7 @@ Add the following to your VSCode settings:
 
 ```yaml
 import:
-  - https://cdn.jsdelivr.net/npm/@cspell/dict-vim/cspell-ext.json
+  - https://cdn.jsdelivr.net/npm/@cspell/dict-vim@1/cspell-ext.json
 dictionaries:
   - vim
 ```
