@@ -14,6 +14,8 @@
 3d_render
 8_bit
 AABB
+ACCELERATION_STRUCTURE_GEOMETRY_NO_DUPLICATE_ANY_HIT_INVOCATION
+ACCELERATION_STRUCTURE_GEOMETRY_OPAQUE
 ACCESS_FILESYSTEM
 ACCESS_RESOURCES
 ACCESS_USERDATA
@@ -247,6 +249,7 @@ AXIS_X
 AXIS_Y
 AXIS_Z
 AZURE
+AccelerationStructureGeometryBits
 AcceptDialog
 Access
 AccessibilityAction
@@ -460,6 +463,7 @@ BLEND_FACTOR_SRC_ALPHA_SATURATE
 BLEND_FACTOR_SRC_COLOR
 BLEND_FACTOR_ZERO
 BLEND_MODE_ADD
+BLEND_MODE_DISABLED
 BLEND_MODE_DISCRETE
 BLEND_MODE_DISCRETE_CARRY
 BLEND_MODE_INTERPOLATED
@@ -538,6 +542,7 @@ BREAK_TRIM_INDENT
 BREAK_TRIM_START_EDGE_SPACES
 BREAK_WORD_BOUND
 BROWN
+BUFFER_CREATION_ACCELERATION_STRUCTURE_BUILD_INPUT_READ_ONLY_BIT
 BUFFER_CREATION_AS_STORAGE_BIT
 BUFFER_CREATION_DEVICE_ADDRESS_BIT
 BUILD_SEGMENTS
@@ -560,6 +565,7 @@ BlendMode
 BlendOperation
 BlendShapeEntry
 BlendShapeMode
+BlitMaterial
 BodyAxis
 BodyDampMode
 BodyFlags
@@ -1464,6 +1470,10 @@ DPITexture
 DRAGGER_HIDDEN
 DRAGGER_HIDDEN_COLLAPSED
 DRAGGER_VISIBLE
+DRAWABLE_FORMAT_RGBA8
+DRAWABLE_FORMAT_RGBA8_SRGB
+DRAWABLE_FORMAT_RGBAF
+DRAWABLE_FORMAT_RGBAH
 DRAW_CLEAR_ALL
 DRAW_CLEAR_COLOR_0
 DRAW_CLEAR_COLOR_1
@@ -1582,6 +1592,8 @@ DraggerVisibility
 DrawFlags
 DrawMode
 DrawOrder
+DrawableFormat
+DrawableTexture2D
 DriverResource
 DropModeFlags
 DuplicateFlags
@@ -1776,6 +1788,9 @@ EXPORT_MESSAGE_NONE
 EXPORT_MESSAGE_WARNING
 EXPORT_SELECTED_RESOURCES
 EXPORT_SELECTED_SCENES
+EYE_VISIBILITY_BOTH
+EYE_VISIBILITY_LEFT
+EYE_VISIBILITY_RIGHT
 EaseType
 EditAction
 EditorCommandPalette
@@ -1861,6 +1876,7 @@ ExportFilter
 ExportMessageType
 Expression
 ExternalTexture
+EyeVisibility
 FABRIK3D
 FACE_X
 FACE_Y
@@ -3064,6 +3080,9 @@ JOINT_UPPER_CHEST
 JOIN_MITER
 JOIN_ROUND
 JOIN_SQUARE
+JOYSTICK_DYNAMIC
+JOYSTICK_FIXED
+JOYSTICK_FOLLOWING
 JOY_AXIS_INVALID
 JOY_AXIS_LEFT_X
 JOY_AXIS_LEFT_Y
@@ -3124,6 +3143,7 @@ JointParam
 JointType
 JoyAxis
 JoyButton
+JoystickMode
 JustificationFlag
 KEEP_HEIGHT
 KEEP_WIDTH
@@ -3766,6 +3786,7 @@ MODE_SKY
 MODE_SPATIAL
 MODE_SPIN
 MODE_TANGENTIAL
+MODE_TEXTURE_BLIT
 MODE_WAVESHAPE
 MODE_WINDOWED
 MODIFIER_CALLBACK_MODE_PROCESS_IDLE
@@ -5030,6 +5051,7 @@ ROLE_MULTILINE_TEXT_FIELD
 ROLE_PANEL
 ROLE_PROGRESS_INDICATOR
 ROLE_RADIO_BUTTON
+ROLE_REGION
 ROLE_ROW
 ROLE_ROW_GROUP
 ROLE_ROW_HEADER
@@ -5281,17 +5303,28 @@ SHADER_MAX
 SHADER_PARTICLES
 SHADER_SKY
 SHADER_SPATIAL
+SHADER_STAGE_ANY_HIT
+SHADER_STAGE_ANY_HIT_BIT
+SHADER_STAGE_CLOSEST_HIT
+SHADER_STAGE_CLOSEST_HIT_BIT
 SHADER_STAGE_COMPUTE
 SHADER_STAGE_COMPUTE_BIT
 SHADER_STAGE_FRAGMENT
 SHADER_STAGE_FRAGMENT_BIT
+SHADER_STAGE_INTERSECTION
+SHADER_STAGE_INTERSECTION_BIT
 SHADER_STAGE_MAX
+SHADER_STAGE_MISS
+SHADER_STAGE_MISS_BIT
+SHADER_STAGE_RAYGEN
+SHADER_STAGE_RAYGEN_BIT
 SHADER_STAGE_TESSELATION_CONTROL
 SHADER_STAGE_TESSELATION_CONTROL_BIT
 SHADER_STAGE_TESSELATION_EVALUATION
 SHADER_STAGE_TESSELATION_EVALUATION_BIT
 SHADER_STAGE_VERTEX
 SHADER_STAGE_VERTEX_BIT
+SHADER_TEXTURE_BLIT
 SHADING_MODE_MAX
 SHADING_MODE_PER_PIXEL
 SHADING_MODE_PER_VERTEX
@@ -5562,6 +5595,8 @@ SUPPORTS_BUFFER_DEVICE_ADDRESS
 SUPPORTS_IMAGE_ATOMIC_32_BIT
 SUPPORTS_METALFX_SPATIAL
 SUPPORTS_METALFX_TEMPORAL
+SUPPORTS_RAYTRACING_PIPELINE
+SUPPORTS_RAY_QUERY
 SWITCH_MODE_AT_END
 SWITCH_MODE_IMMEDIATE
 SWITCH_MODE_SYNC
@@ -5770,6 +5805,10 @@ TEXTURE_CLEARCOAT
 TEXTURE_DETAIL_ALBEDO
 TEXTURE_DETAIL_MASK
 TEXTURE_DETAIL_NORMAL
+TEXTURE_DRAWABLE_FORMAT_RGBA8
+TEXTURE_DRAWABLE_FORMAT_RGBA8_SRGB
+TEXTURE_DRAWABLE_FORMAT_RGBAF
+TEXTURE_DRAWABLE_FORMAT_RGBAH
 TEXTURE_EMISSION
 TEXTURE_FILTER_LINEAR
 TEXTURE_FILTER_LINEAR_WITH_MIPMAPS
@@ -6021,6 +6060,7 @@ TYPE_START
 TYPE_START_CUSTOM
 TYPE_STRING
 TYPE_STRING_NAME
+TYPE_TEXTURE_BLIT
 TYPE_TRANSFORM2D
 TYPE_TRANSFORM3D
 TYPE_VALUE
@@ -6065,6 +6105,7 @@ TextureButton
 TextureChannel
 TextureCubemapArrayRD
 TextureCubemapRD
+TextureDrawableFormat
 TextureFilter
 TextureLayered
 TextureLayeredRD
@@ -6142,6 +6183,7 @@ UI_PASS
 UNDERLINE_MODE_ALWAYS
 UNDERLINE_MODE_NEVER
 UNDERLINE_MODE_ON_HOVER
+UNIFORM_TYPE_ACCELERATION_STRUCTURE
 UNIFORM_TYPE_IMAGE
 UNIFORM_TYPE_IMAGE_BUFFER
 UNIFORM_TYPE_INPUT_ATTACHMENT
@@ -6360,6 +6402,7 @@ VISIBILITY_RANGE_FADE_DEPENDENCIES
 VISIBILITY_RANGE_FADE_DISABLED
 VISIBILITY_RANGE_FADE_SELF
 VISIBILITY_TOUCHSCREEN_ONLY
+VISIBILITY_WHEN_TOUCHED
 VOXEL_GI_QUALITY_HIGH
 VOXEL_GI_QUALITY_LOW
 VRSMode
@@ -6416,6 +6459,7 @@ ViewportTexture
 ViewportUpdateMode
 ViewportVRSMode
 ViewportVRSUpdateMode
+VirtualJoystick
 VirtualKeyboardType
 VisibilityMode
 VisibilityRangeFadeMode
@@ -6712,6 +6756,7 @@ absf
 absi
 absorbent
 abstract
+acceleration_structure_build
 accent_color
 accept_dialog_cancel_ok_buttons
 accept_event
@@ -6739,6 +6784,7 @@ accessibility_has_element
 accessibility_labeled_by_nodes
 accessibility_live
 accessibility_name
+accessibility_region
 accessibility_screen_reader_active
 accessibility_set_window_focused
 accessibility_set_window_rect
@@ -6815,21 +6861,25 @@ acos
 acosh
 action
 action_add_event
+action_down
 action_erase_event
 action_erase_events
 action_get_deadzone
 action_get_events
 action_get_handle
 action_has_event
+action_left
 action_mode
 action_on_play
 action_on_stop
 action_press
 action_release
+action_right
 action_set
 action_set_deadzone
 action_sets
 action_type
+action_up
 actions
 activate_feed
 activate_item_by_event
@@ -6903,6 +6953,7 @@ add_export_plugin
 add_faces
 add_feed
 add_file
+add_file_from_buffer
 add_file_removal
 add_filter
 add_focusable
@@ -7439,6 +7490,7 @@ auto_indent_code
 auto_refresh_interval
 auto_reload_and_parse_scripts_on_save
 auto_reload_scripts_on_external_change
+auto_resample_delay
 auto_save
 auto_select_current_scene_file
 auto_switch_to_remote_scene_tree
@@ -7599,6 +7651,7 @@ binding_path
 bindings
 bindv
 bitmask
+blas_create
 blend
 blend_animation
 blend_constant
@@ -7617,6 +7670,7 @@ blender
 blender_path
 blit_rect
 blit_rect_mask
+blit_rect_multi
 block_size_kb
 blocking_mode_enabled
 blue
@@ -7807,8 +7861,13 @@ bvh_build_quality
 byte_length
 byte_offset
 byte_stride
+bytecode_any_hit
+bytecode_closest_hit
 bytecode_compute
 bytecode_fragment
+bytecode_intersection
+bytecode_miss
+bytecode_raygen
 bytecode_tesselation_control
 bytecode_tesselation_evaluation
 bytecode_vertex
@@ -8043,6 +8102,7 @@ center_of_mass
 center_of_mass_local
 center_of_mass_mode
 center_offset
+center_on_current
 center_on_hmd
 center_region
 center_viewport_to_caret
@@ -8087,6 +8147,7 @@ clamp_angle
 clamp_split_offset
 clampf
 clampi
+clampzone_ratio
 class
 class_call_static
 class_exists
@@ -8161,6 +8222,7 @@ clear_history
 clear_icon
 clear_ids
 clear_input_ports
+clear_joy_motion_sensors_calibration
 clear_kerning_map
 clear_keyword_colors
 clear_layer
@@ -8300,8 +8362,13 @@ compare_locales
 compare_op
 compatibility
 compile
+compile_error_any_hit
+compile_error_closest_hit
 compile_error_compute
 compile_error_fragment
+compile_error_intersection
+compile_error_miss
+compile_error_raygen
 compile_error_tesselation_control
 compile_error_tesselation_evaluation
 compile_error_vertex
@@ -8625,6 +8692,7 @@ data_array
 data_channel_received
 db_to_linear
 deactivate_feed
+deadzone_ratio
 debug
 debug_bake
 debug_canvas_item_get_rect
@@ -9439,6 +9507,7 @@ extract_format
 extract_path
 eye_gaze_interaction
 eye_height
+eye_visibility
 fabrik_data_chain_length
 face_tracker
 factor
@@ -9580,6 +9649,8 @@ fixed_size_scale_mode
 flags
 flat
 flatness
+flick_canceled
+flicked
 flip_bend_direction
 flip_faces
 flip_h
@@ -9996,14 +10067,18 @@ get_accessors
 get_action
 get_action_count
 get_action_description
+get_action_down
+get_action_left
 get_action_mode
 get_action_name
 get_action_raw_strength
+get_action_right
 get_action_set
 get_action_set_count
 get_action_sets
 get_action_strength
 get_action_type
+get_action_up
 get_actions
 get_active_material
 get_add_uv2
@@ -10479,6 +10554,7 @@ get_child_by_name
 get_child_count
 get_child_nodes
 get_children
+get_clampzone_ratio
 get_class
 get_class_icon_path
 get_class_list
@@ -10775,6 +10851,7 @@ get_datetime_string_from_system
 get_datetime_string_from_unix_time
 get_db
 get_deadzone
+get_deadzone_ratio
 get_debug_color
 get_debug_custom_color
 get_debug_draw
@@ -11110,6 +11187,7 @@ get_extra_baseline_offset
 get_extra_cull_margin
 get_extra_spacing
 get_eye_height
+get_eye_visibility
 get_fabrik_data_chain_length
 get_fabrik_joint_bone2d_node
 get_fabrik_joint_bone_index
@@ -11514,6 +11592,7 @@ get_inherit_velocity_ratio
 get_inheriters_from_class
 get_initial_clip
 get_initial_offset
+get_initial_offset_ratio
 get_initial_position
 get_inner_cone_angle
 get_inner_radius
@@ -11680,12 +11759,20 @@ get_joint_two_bone_idx
 get_joint_type
 get_joints
 get_joints_original
+get_joy_accelerometer
 get_joy_axis
+get_joy_gravity
 get_joy_guid
+get_joy_gyroscope
 get_joy_info
+get_joy_motion_sensors_calibration
+get_joy_motion_sensors_rate
 get_joy_name
 get_joy_vibration_duration
 get_joy_vibration_strength
+get_joystick_mode
+get_joystick_size
+get_joystick_texture
 get_json
 get_json_pointers
 get_justification_flags
@@ -12517,7 +12604,6 @@ get_radial_steps
 get_radiance_size
 get_radius
 get_radius_damping_curve
-get_radius_range
 get_random_pitch
 get_random_pitch_semitones
 get_random_volume_offset_db
@@ -12851,6 +12937,8 @@ get_shortest_axis
 get_shortest_axis_index
 get_shortest_axis_size
 get_show_when_tracked
+get_shrink_height
+get_shrink_width
 get_shrinking_factor
 get_shuffle
 get_shutter_speed
@@ -13139,6 +13227,7 @@ get_system_id
 get_system_info
 get_system_menu
 get_system_menu_name
+get_system_menu_text
 get_tab_alignment
 get_tab_bar
 get_tab_button_icon
@@ -13301,6 +13390,8 @@ get_tint_progress
 get_tint_under
 get_tip_bone
 get_tip_node
+get_tip_size
+get_tip_texture
 get_title
 get_title_alignment
 get_title_color
@@ -13923,6 +14014,7 @@ has_ime_text
 has_input_port
 has_java_method
 has_joy_light
+has_joy_motion_sensors
 has_json_pointers
 has_keyword_color
 has_loop
@@ -14169,6 +14261,7 @@ init
 init_ref
 initial_clip
 initial_offset
+initial_offset_ratio
 initial_position
 initial_position_type
 initial_screen
@@ -14313,6 +14406,7 @@ is_absorbent
 is_abstract
 is_accepting_gzip
 is_accessibility_enabled
+is_accessibility_region
 is_accessibility_supported
 is_action
 is_action_just_pressed
@@ -14646,6 +14740,9 @@ is_item_shortcut_disabled
 is_item_tooltip_enabled
 is_joy_button_pressed
 is_joy_known
+is_joy_motion_sensors_calibrated
+is_joy_motion_sensors_calibrating
+is_joy_motion_sensors_enabled
 is_js_buffer
 is_jumping_enabled
 is_keep_pressed_outside
@@ -14682,6 +14779,7 @@ is_listening
 is_local_to_scene
 is_local_transform_notification_enabled
 is_locale_right_to_left
+is_locale_using_support_data
 is_localizing_numeral_system
 is_lock_rotation_enabled
 is_loop_broken_at_end
@@ -14989,6 +15087,8 @@ is_uppercase
 is_use_all_surfaces
 is_used_as_steering
 is_used_as_traction
+is_user_presence_supported
+is_user_present
 is_userfs_persistent
 is_using_accumulated_input
 is_using_angle_limitation
@@ -15106,6 +15206,9 @@ joints
 joints_original
 jolt_physics_3d
 joy_connection_changed
+joystick_mode
+joystick_size
+joystick_texture
 js_buffer_to_packed_byte_array
 json
 json_escape
@@ -16062,6 +16165,7 @@ orbit_velocity_max
 orbit_velocity_min
 ord
 orientation
+orientation_changed
 origin
 origin_bone
 origin_bone_name
@@ -16677,7 +16781,6 @@ radial_velocity_max
 radial_velocity_min
 radiance_size
 radius
-radius_range
 raise_request
 rand_from_seed
 rand_weighted
@@ -16708,6 +16811,14 @@ ray_intersects_triangle
 ray_pickable
 rayleigh_coefficient
 rayleigh_color
+raytracing_list_begin
+raytracing_list_bind_raytracing_pipeline
+raytracing_list_bind_uniform_set
+raytracing_list_end
+raytracing_list_set_push_constant
+raytracing_list_trace_rays
+raytracing_pipeline_create
+raytracing_pipeline_is_valid
 rdo_dict_size
 rdo_quality_loss
 read
@@ -17254,6 +17365,7 @@ sampling_rate
 saturation
 save
 save_all_scenes
+save_all_scripts
 save_before_running
 save_chunk_size_mb
 save_custom
@@ -17522,14 +17634,19 @@ set_accessibility_flow_to_nodes
 set_accessibility_labeled_by_nodes
 set_accessibility_live
 set_accessibility_name
+set_accessibility_region
 set_accessor_type
 set_accessors
 set_action
+set_action_down
+set_action_left
 set_action_mode
+set_action_right
 set_action_set
 set_action_set_active
 set_action_sets
 set_action_type
+set_action_up
 set_actions
 set_active
 set_add_uv2
@@ -17598,6 +17715,7 @@ set_anchors_and_offsets_preset
 set_anchors_preset
 set_android_surface_size
 set_android_surface_swapchain_create_info_and_get_next_pointer
+set_angle
 set_angular_damp
 set_angular_damp_mode
 set_angular_damp_space_override_mode
@@ -17957,6 +18075,7 @@ set_channel
 set_checkable
 set_checked
 set_children
+set_clampzone_ratio
 set_clear_button_enabled
 set_clear_margin
 set_clear_mode
@@ -18144,6 +18263,7 @@ set_data
 set_data_array
 set_db
 set_deadzone
+set_deadzone_ratio
 set_debug_collisions_hint
 set_debug_color
 set_debug_custom_color
@@ -18463,6 +18583,7 @@ set_extra_baseline_offset
 set_extra_cull_margin
 set_extra_spacing
 set_eye_height
+set_eye_visibility
 set_fabrik_data_chain_length
 set_fabrik_joint_bone2d_node
 set_fabrik_joint_bone_index
@@ -18824,6 +18945,7 @@ set_influence
 set_inherit_velocity_ratio
 set_initial_clip
 set_initial_offset
+set_initial_offset_ratio
 set_initial_position
 set_initial_value
 set_inner_cone_angle
@@ -18903,6 +19025,7 @@ set_item_icon_transposed
 set_item_id
 set_item_indent
 set_item_indentation_level
+set_item_index
 set_item_key_callback
 set_item_language
 set_item_max_states
@@ -18967,6 +19090,11 @@ set_joint_type
 set_joints
 set_joints_original
 set_joy_light
+set_joy_motion_sensors_calibration
+set_joy_motion_sensors_enabled
+set_joystick_mode
+set_joystick_size
+set_joystick_texture
 set_json
 set_json_pointers
 set_jumping_enabled
@@ -19584,7 +19712,6 @@ set_radial_steps
 set_radiance_size
 set_radius
 set_radius_damping_curve
-set_radius_range
 set_random_pitch
 set_random_pitch_semitones
 set_random_volume_offset_db
@@ -19852,6 +19979,8 @@ set_show_rest_only
 set_show_when_tracked
 set_show_zoom_buttons
 set_show_zoom_label
+set_shrink_height
+set_shrink_width
 set_shrinking_factor
 set_shuffle
 set_shutter_speed
@@ -20073,6 +20202,7 @@ set_sync_stream_volume
 set_sync_to_physics
 set_syntax_highlighter
 set_system_menu
+set_system_menu_text
 set_system_properties_and_get_next_pointer
 set_system_theme_change_callback
 set_tab_alignment
@@ -20203,6 +20333,8 @@ set_tint_progress
 set_tint_under
 set_tip_bone
 set_tip_node
+set_tip_size
+set_tip_texture
 set_title
 set_title_alignment
 set_title_color
@@ -20694,8 +20826,10 @@ should_update_export_options
 show
 show_arrange_button
 show_behind_parent
+show_collision_shapes_only_when_selected
 show_emoji_and_symbol_picker
 show_focus_state_on_pointer_event
+show_gizmo_during_rotation
 show_grid
 show_grid_buttons
 show_help_index
@@ -20726,6 +20860,8 @@ show_viewport_rotation_gizmo
 show_when_tracked
 show_zoom_buttons
 show_zoom_label
+shrink_height
+shrink_width
 shrink_x2
 shrinking_factor
 shuffle
@@ -20894,6 +21030,8 @@ sorting_offset
 sorting_order
 sorting_use_aabb_center
 source
+source_any_hit
+source_closest_hit
 source_code
 source_compute
 source_fragment
@@ -20901,6 +21039,9 @@ source_geometry_group_name
 source_geometry_mode
 source_geometry_parser_create
 source_geometry_parser_set_callback
+source_intersection
+source_miss
+source_raygen
 source_tesselation_control
 source_tesselation_evaluation
 source_vertex
@@ -21022,6 +21163,7 @@ start_drag
 start_file
 start_force_keep_in_merge_ends
 start_index
+start_joy_motion_sensors_calibration
 start_joy_vibration
 start_offset
 start_passthrough
@@ -21057,6 +21199,7 @@ step_finished
 stereo
 stiffness
 stop
+stop_joy_motion_sensors_calibration
 stop_joy_vibration
 stop_passthrough
 stop_playing_scene
@@ -21288,7 +21431,9 @@ tap2_delay_ms
 tap2_level_db
 tap2_pan
 tap_back_pos
+tapped
 target
+target_api_version
 target_desired_distance
 target_maximum_distance
 target_minimum_distance
@@ -21360,6 +21505,10 @@ texture_create_shared
 texture_create_shared_from_slice
 texture_disabled
 texture_download_region_size_px
+texture_drawable_blit_rect
+texture_drawable_create
+texture_drawable_generate_mipmaps
+texture_drawable_get_default_material
 texture_emission
 texture_filter
 texture_focused
@@ -21460,6 +21609,8 @@ tint_progress
 tint_under
 tip_bone
 tip_nodepath
+tip_size
+tip_texture
 title
 title_alignment
 title_changed
@@ -21468,6 +21619,9 @@ title_position
 title_text_direction
 title_text_overrun_behavior
 titlebar_changed
+tlas_create
+tlas_instances_buffer_create
+tlas_instances_buffer_fill
 tls
 to_abgr32
 to_abgr64
@@ -21940,6 +22094,8 @@ use_two_bounces
 use_xr
 use_z_clip_scale
 use_zstd_compression
+user_presence
+user_presence_changed
 user_type_color
 username
 utf8_to_base64
