@@ -285,6 +285,7 @@ CLOCK
 CLOCKWISE
 CLOSE
 CLOSED
+CLOSEST
 CLOSING
 CLUSTER
 CMD
@@ -492,6 +493,7 @@ DRAB
 DRAG
 DRAGGER
 DRAW
+DRAWABLE
 DRIVE
 DRIVER
 DROP
@@ -647,6 +649,7 @@ FOCUSED
 FOG
 FOLDER
 FOLLOW
+FOLLOWING
 FONT
 FOOT
 FOR
@@ -771,6 +774,7 @@ HINT
 HINTING
 HIPS
 HISTORY
+HIT
 HL
 HLSL
 HMAC
@@ -866,6 +870,7 @@ INVALIDATE
 INVERSE
 INVERT
 INVERTED
+INVOCATION
 INVOCATIONS
 IP
 IPV
@@ -886,6 +891,7 @@ JOIN
 JOINED
 JOINT
 JOY
+JOYSTICK
 JSON
 JSONRPC
 JULY
@@ -1093,6 +1099,7 @@ MIRRORED
 MISC
 MISDIRECTED
 MISMATCH
+MISS
 MISSING
 MISTY
 MITER
@@ -1633,6 +1640,8 @@ SHA
 SHADED
 SHADER
 SHADERS
+SHADER_STAGE_RAYGEN
+SHADER_STAGE_RAYGEN_BIT
 SHADING
 SHADOW
 SHADOWMASK
@@ -1765,6 +1774,7 @@ STRIDE
 STRING
 STRIP
 STRIPS
+STRUCTURE
 STRUCTURED
 STYLEBOX
 SUB
@@ -1788,6 +1798,7 @@ SUNDAY
 SUPPORT
 SUPPORTED
 SUPPORTS
+SUPPORTS_RAYTRACING_PIPELINE
 SURFACE
 SURFACES
 SURROUND
@@ -1872,6 +1883,7 @@ TOP
 TOPMOST
 TOTAL
 TOUCH
+TOUCHED
 TOUCHPAD
 TOUCHSCREEN
 TRACE
@@ -2100,6 +2112,7 @@ absolute
 absorbent
 abstract
 accel
+acceleration
 accelerator
 accelerometer
 accent
@@ -2353,6 +2366,7 @@ bitmaps
 bitmask
 bits
 blank
+blas_create
 bleed
 blend
 blender
@@ -2432,6 +2446,7 @@ bypass
 bypassing
 byte
 bytecode
+bytecode_raygen
 bytes
 c
 ca
@@ -2440,6 +2455,9 @@ cached
 caches
 calculate
 calculating
+calibrated
+calibrating
+calibration
 call
 callable
 callback
@@ -2521,6 +2539,7 @@ clamp
 clamped
 clampf
 clampi
+clampzone_ratio
 class
 classes
 classname
@@ -2580,6 +2599,7 @@ comparison
 compatibility
 compensation
 compile
+compile_error_raygen
 compiler
 complete
 completed
@@ -2861,6 +2881,7 @@ dragged
 dragger
 dragging
 draw
+drawable
 drawing
 drawn
 drive
@@ -2875,6 +2896,7 @@ dummy
 dupes
 duplicate
 duration
+during
 dynamic
 e
 each
@@ -3066,6 +3088,8 @@ flag
 flags
 flat
 flatness
+flick
+flicked
 flip
 flipped
 float
@@ -3162,6 +3186,7 @@ get
 get_aruco_dict
 get_autocalculate_length_and_angle
 get_bitv
+get_clampzone_ratio
 get_foveation_dynamic
 get_foveation_level
 get_fovy
@@ -3447,6 +3472,7 @@ jolt
 joy
 joypad
 joypads
+joystick
 jpg
 js
 json
@@ -3667,6 +3693,7 @@ mipmap
 mipmaps
 mirroring
 mismatch
+miss
 misses
 missing
 mix
@@ -4046,6 +4073,8 @@ premultiply
 prepare
 prepass
 preprocess
+presence
+present
 preserialize
 preserve
 preset
@@ -4170,6 +4199,14 @@ ray
 raycast
 rayleigh
 rays
+raytracing_list_begin
+raytracing_list_bind_raytracing_pipeline
+raytracing_list_bind_uniform_set
+raytracing_list_end
+raytracing_list_set_push_constant
+raytracing_list_trace_rays
+raytracing_pipeline_create
+raytracing_pipeline_is_valid
 rd
 rdo_dict_size
 rdo_quality_loss
@@ -4439,6 +4476,7 @@ set
 set_aruco_dict
 set_autocalculate_length_and_angle
 set_bitv
+set_clampzone_ratio
 set_foveation_dynamic
 set_foveation_level
 set_glb_data
@@ -4571,6 +4609,7 @@ sort
 sorted
 sorting
 source
+source_raygen
 sources
 space
 spacer
@@ -4751,6 +4790,7 @@ tangential
 tangents
 tanh
 tap
+tapped
 target
 task
 tcp
@@ -4815,6 +4855,9 @@ tip
 title
 titlebar
 titles
+tlas_create
+tlas_instances_buffer_create
+tlas_instances_buffer_fill
 tls
 to
 to_abgr32
