@@ -1,5 +1,12 @@
 # Release Notes
 
+## [33.1.0](https://github.com/streetsidesoftware/cspell-dicts/compare/cspell-dicts@33.0.2...cspell-dicts@33.1.0) (2026-02-03)
+
+
+### Features
+
+* update GDScript dictionary for Godot 4.6 ([#5206](https://github.com/streetsidesoftware/cspell-dicts/issues/5206)) ([4b81a02](https://github.com/streetsidesoftware/cspell-dicts/commit/4b81a02c0b968b7e7be65945cfa2418ad6895fb5))
+
 ## [33.0.2](https://github.com/streetsidesoftware/cspell-dicts/compare/cspell-dicts@33.0.1...cspell-dicts@33.0.2) (2026-02-01)
 
 
