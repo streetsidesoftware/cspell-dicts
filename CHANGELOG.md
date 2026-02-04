@@ -1,5 +1,17 @@
 # Release Notes
 
+## [33.2.0](https://github.com/streetsidesoftware/cspell-dicts/compare/cspell-dicts@33.1.0...cspell-dicts@33.2.0) (2026-02-04)
+
+
+### Features
+
+* Add mathematics dictionary in the scientific terms ([#5215](https://github.com/streetsidesoftware/cspell-dicts/issues/5215)) ([ca34df7](https://github.com/streetsidesoftware/cspell-dicts/commit/ca34df7f23c2c59be2949c846d0a58bcdcd30a6e))
+
+
+### Updates and Bug Fixes
+
+* move generated files to `dict` dir ([#5219](https://github.com/streetsidesoftware/cspell-dicts/issues/5219)) ([393f472](https://github.com/streetsidesoftware/cspell-dicts/commit/393f472b97d66c0bec675b8e23e2376a9242b80e))
+
 ## [33.1.0](https://github.com/streetsidesoftware/cspell-dicts/compare/cspell-dicts@33.0.2...cspell-dicts@33.1.0) (2026-02-03)
 
 
