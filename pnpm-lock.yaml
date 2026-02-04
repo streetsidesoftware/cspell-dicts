@@ -363,8 +363,8 @@ importers:
         specifier: ^24.0.4
         version: 24.0.4
       '@types/node':
-        specifier: ^20.19.31
-        version: 20.19.31
+        specifier: ^24.10.10
+        version: 24.10.10
 
   dictionaries/en-slang: {}
 
@@ -735,8 +735,8 @@ importers:
         specifier: ^20.1.8
         version: 20.1.8
       '@types/node':
-        specifier: ^20.19.31
-        version: 20.19.31
+        specifier: ^24.10.10
+        version: 24.10.10
       typescript:
         specifier: ^5.9.3
         version: 5.9.3
@@ -1579,6 +1579,9 @@ packages:
 
   '@types/node@22.19.8':
     resolution: {integrity: sha512-ebO/Yl+EAvVe8DnMfi+iaAyIqYdK0q/q0y0rw82INWEKJOBe6b/P3YWE8NW7oOlF/nXFNrHwhARrN/hdgDkraA==}
+
+  '@types/node@24.10.10':
+    resolution: {integrity: sha512-+0/4J266CBGPUq/ELg7QUHhN25WYjE0wYTPSQJn1xeu8DOlIOPxXxrNGiLmfAWl7HMMgWFWXpt9IDjMWrF5Iow==}
 
   '@types/node@25.2.0':
     resolution: {integrity: sha512-DZ8VwRFUNzuqJ5khrvwMXHmvPe+zGayJhr2CDNiKB1WBE1ST8Djl00D0IC4vvNmHMdj6DlbYRIaFE7WHjlDl5w==}
@@ -2575,6 +2578,7 @@ packages:
 
   glob@10.5.0:
     resolution: {integrity: sha512-DfXN8DfhJ7NH3Oe7cFmu3NCu1wKbkReJ8TorzSAFbSKrlNaQSKfIzqYqVY8zlbs2NLBbWpRiU52GX2PbaBVNkg==}
+    deprecated: Old versions of glob are not supported, and contain widely publicized security vulnerabilities, which have been fixed in the current version. Please update. Support for old versions may be purchased (at exorbitant rates) by contacting i@izs.me
     hasBin: true
 
   glob@13.0.0:
@@ -2583,7 +2587,7 @@ packages:
 
   glob@7.2.3:
     resolution: {integrity: sha512-nFR0zLpU2YCaRxwoCJvL6UvCH2JFyFVIvwTLsIf21AuHlMskA1hhTdk+LlYJtOlYt9v6dvszD2BGRqBL+iQK9Q==}
-    deprecated: Glob versions prior to v9 are no longer supported
+    deprecated: Old versions of glob are not supported, and contain widely publicized security vulnerabilities, which have been fixed in the current version. Please update. Support for old versions may be purchased (at exorbitant rates) by contacting i@izs.me
 
   global-directory@4.0.1:
     resolution: {integrity: sha512-wHTUcDUoZ1H5/0iVqEudYW4/kAlN5cZ3j/bXn0Dpbizl9iaUVeWSHqiOjsgk6OW2bkLclbBjzewBz6weQ1zA2Q==}
@@ -5406,6 +5410,10 @@ snapshots:
     dependencies:
       undici-types: 6.21.0
 
+  '@types/node@24.10.10':
+    dependencies:
+      undici-types: 7.16.0
+
   '@types/node@25.2.0':
     dependencies:
       undici-types: 7.16.0
@@ -5420,7 +5428,7 @@ snapshots:
 
   '@types/through@0.0.33':
     dependencies:
-      '@types/node': 25.2.0
+      '@types/node': 24.10.10
 
   '@types/unist@2.0.11': {}
 
@@ -5429,7 +5437,7 @@ snapshots:
   '@types/vinyl@2.0.12':
     dependencies:
       '@types/expect': 1.20.4
-      '@types/node': 25.2.0
+      '@types/node': 24.10.10
 
   '@vercel/nft@0.29.4(encoding@0.1.13)':
     dependencies:
@@ -7081,7 +7089,7 @@ snapshots:
   mem-fs-editor@11.1.4(mem-fs@4.1.0):
     dependencies:
       '@types/ejs': 3.1.5
-      '@types/node': 25.2.0
+      '@types/node': 24.10.10
       binaryextensions: 6.11.0
       commondir: 1.0.1
       deep-extend: 0.6.0
@@ -7694,7 +7702,7 @@ snapshots:
 
   p-transform@5.0.1:
     dependencies:
-      '@types/node': 25.2.0
+      '@types/node': 24.10.10
       p-queue: 8.1.1
 
   p-try@2.2.0: {}
