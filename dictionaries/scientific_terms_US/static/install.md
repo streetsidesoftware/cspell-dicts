@@ -16,7 +16,7 @@ Add the following to your VSCode settings:
 ```jsonc
 {
   "cSpell.import": ["@cspell/dict-scientific-terms-us/cspell-ext.json"],
-  "cSpell.dictionaries": ["scientific-terms-us"],
+  "cSpell.dictionaries": ["scientific-terms-us", "mathematics-terms-us"],
 }
 ```
 
@@ -30,7 +30,7 @@ Add the following to your VSCode settings:
 ```jsonc
 {
   "import": ["@cspell/dict-scientific-terms-us/cspell-ext.json"],
-  "dictionaries": ["scientific-terms-us"],
+  "dictionaries": ["scientific-terms-us", "mathematics-terms-us"],
 }
 ```
 
@@ -46,6 +46,7 @@ import:
   - '@cspell/dict-scientific-terms-us/cspell-ext.json'
 dictionaries:
   - scientific-terms-us
+  - mathematics-terms-us
 ```
 
 </details>
@@ -64,7 +65,7 @@ Add the following to your VSCode settings:
 ```jsonc
 {
   "cSpell.import": ["https://cdn.jsdelivr.net/npm/@cspell/dict-scientific-terms-us@3/cspell-ext.json"],
-  "cSpell.dictionaries": ["scientific-terms-us"],
+  "cSpell.dictionaries": ["scientific-terms-us", "mathematics-terms-us"],
 }
 ```
 
@@ -78,7 +79,7 @@ Add the following to your VSCode settings:
 ```jsonc
 {
   "import": ["https://cdn.jsdelivr.net/npm/@cspell/dict-scientific-terms-us@3/cspell-ext.json"],
-  "dictionaries": ["scientific-terms-us"],
+  "dictionaries": ["scientific-terms-us", "mathematics-terms-us"],
 }
 ```
 
@@ -94,18 +95,21 @@ import:
   - https://cdn.jsdelivr.net/npm/@cspell/dict-scientific-terms-us@3/cspell-ext.json
 dictionaries:
   - scientific-terms-us
+  - mathematics-terms-us
 ```
 
 </details>
 
 ## Dictionary Information
 
-| Name                  | Enabled | Description                     |
-| --------------------- | ------- | ------------------------------- |
-| `scientific-terms-us` | **Yes** | Scientific Terms US dictionary. |
+| Name                   | Enabled | Description                      |
+| ---------------------- | ------- | -------------------------------- |
+| `scientific-terms-us`  | **Yes** | Scientific Terms US dictionary.  |
+| `mathematics-terms-us` | **Yes** | Mathematics Terms US dictionary. |
 
 ## Language Settings
 
-| Name                  | Locale | File Type |
-| --------------------- | ------ | --------- |
-| `scientific-terms-us` | `*`    | `*`       |
+| Name                   | Locale | File Type |
+| ---------------------- | ------ | --------- |
+| `scientific-terms-us`  | `*`    | `*`       |
+| `mathematics-terms-us` | `*`    | `*`       |
