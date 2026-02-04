@@ -2,18 +2,22 @@
 
 targets:
   - name: custom_scientific_US
-    targetDirectory: .
-    compress: false
+    targetDirectory: dict
+    compress: true
+    keepUncompressed: true
     format: trie3
     sources:
       - src/custom_scientific_US.dic.txt
       - src/additional_words.txt
     generateNonStrict: true
+
   - name: mathematics_US
-    targetDirectory: .
-    compress: false
-    format: trie3
+    targetDirectory: dict
+    compress: true
+    keepUncompressed: true
+    format: plaintext
     sources:
       - src/mathematics.txt
-    generateNonStrict: true
+    generateNonStrict: false
+
 checksumFile: true

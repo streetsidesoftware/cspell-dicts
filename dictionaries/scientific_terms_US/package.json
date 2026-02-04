@@ -12,10 +12,10 @@
     "./cspell-ext.json": "./cspell-ext.json"
   },
   "scripts": {
-    "build": "cspell-tools-cli build && pnpm gz",
-    "conditional-build": "cspell-tools-cli build --conditional && pnpm gz",
+    "build": "cspell-tools-cli build",
+    "conditional-build": "cspell-tools-cli build --conditional",
     "test": "shx head -n 1000 \"src/custom_scientific_US.dic.txt\" | cspell -c ./cspell-ext.json --locale=en --languageId=* stdin",
-    "gz": "cspell-tools-cli gzip \"*.trie\"",
+    "gz": "cspell-tools-cli gzip \"dict/*.trie\" \"dict/*.txt\"",
     "prepare:dictionary": "pnpm gz",
     "prepublishOnly": "echo pre-publish"
   },
@@ -38,7 +38,7 @@
   },
   "homepage": "https://github.com/streetsidesoftware/cspell-dicts/blob/main/dictionaries/scientific_terms_US#readme",
   "files": [
-    "custom_scientific_US.trie.gz",
+    "dict/*.gz",
     "cspell-ext.json"
   ]
 }
