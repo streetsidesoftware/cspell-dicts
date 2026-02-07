@@ -147,7 +147,10 @@ See: [How to Create a New Dictionary](https://github.com/streetsidesoftware/cspe
 
 ## Source
 
-[martakert/hyspell: Hunspell dictionary for Armenian language](https://github.com/martakert/hyspell)
+- [martakert/hyspell: Hunspell dictionary for Armenian language](https://github.com/martakert/hyspell)
+- [HySpell 3.0.1 (Nayiri): Armenian spell-checker](https://github.com/hyspell/HySpell_3.0.1)
+
+<!-- cspell:ignore Nayiri -->
 
 ## License
 
