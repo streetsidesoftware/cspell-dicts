@@ -151,6 +151,7 @@ See: [How to Create a New Dictionary](https://github.com/streetsidesoftware/cspe
 - [HySpell 3.0.1 (Nayiri): Armenian spell-checker](https://github.com/hyspell/HySpell_3.0.1)
 
 <!-- cspell:ignore Nayiri -->
+
 ## License
 
 MIT
