@@ -5,7 +5,7 @@ targets:
     sources:
       - filename: 'src/additional_words.txt'
       - filename: 'src/hy_AM.dic'
-      - filename: 'src/nayiri/hy-AM.dic'
+      - filename: 'src/nayiri/hy-AM.dic' # cspell:ignore nayiri
         maxDepth: 3
     format: 'trie3'
     targetDirectory: './dict'
