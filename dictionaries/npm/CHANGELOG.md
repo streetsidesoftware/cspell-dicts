@@ -3,6 +3,13 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+## [5.2.33](https://github.com/streetsidesoftware/cspell-dicts/compare/@cspell/dict-npm@5.2.32...@cspell/dict-npm@5.2.33) (2026-02-08)
+
+
+### Updates and Bug Fixes
+
+* Add 'unplugin' to the NPM packages list ([#5230](https://github.com/streetsidesoftware/cspell-dicts/issues/5230)) ([26a6cd2](https://github.com/streetsidesoftware/cspell-dicts/commit/26a6cd2765b13011705188fa94585f3b509217d8))
+
 ## [5.2.32](https://github.com/streetsidesoftware/cspell-dicts/compare/@cspell/dict-npm@5.2.31...@cspell/dict-npm@5.2.32) (2026-02-01)
 
 
