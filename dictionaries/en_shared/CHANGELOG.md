@@ -1,5 +1,12 @@
 # Change Log
 
+## [1.0.49](https://github.com/streetsidesoftware/cspell-dicts/compare/@cspell/dict-en-shared@1.0.48...@cspell/dict-en-shared@1.0.49) (2026-02-08)
+
+
+### Updates and Bug Fixes
+
+* add word overreliance to en_shared ([#5227](https://github.com/streetsidesoftware/cspell-dicts/issues/5227)) ([05b4f55](https://github.com/streetsidesoftware/cspell-dicts/commit/05b4f55f8d6f197437c1f0b63a46a682012e327b))
+
 ## [1.0.48](https://github.com/streetsidesoftware/cspell-dicts/compare/@cspell/dict-en-shared@1.0.47...@cspell/dict-en-shared@1.0.48) (2025-12-13)
 
 

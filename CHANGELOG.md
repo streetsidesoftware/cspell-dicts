@@ -1,5 +1,27 @@
 # Release Notes
 
+## [33.3.0](https://github.com/streetsidesoftware/cspell-dicts/compare/cspell-dicts@33.2.0...cspell-dicts@33.3.0) (2026-02-08)
+
+
+### Features
+
+* add HySpell (Nayiri) Armenian dictionary as upstream source ([#5232](https://github.com/streetsidesoftware/cspell-dicts/issues/5232)) ([9a6c2d5](https://github.com/streetsidesoftware/cspell-dicts/commit/9a6c2d525bef215e63d9ec96e4e8c6a75dc8b4e4))
+
+
+### Updates and Bug Fixes
+
+* Add 'unplugin' to the NPM packages list ([#5230](https://github.com/streetsidesoftware/cspell-dicts/issues/5230)) ([26a6cd2](https://github.com/streetsidesoftware/cspell-dicts/commit/26a6cd2765b13011705188fa94585f3b509217d8))
+* add word overreliance to en_shared ([#5227](https://github.com/streetsidesoftware/cspell-dicts/issues/5227)) ([05b4f55](https://github.com/streetsidesoftware/cspell-dicts/commit/05b4f55f8d6f197437c1f0b63a46a682012e327b))
+* Workflow Bot -- Build Dictionaries ([#5235](https://github.com/streetsidesoftware/cspell-dicts/issues/5235)) ([b066f3d](https://github.com/streetsidesoftware/cspell-dicts/commit/b066f3df2b58a7cd5a86bcad64e87aeed57f5a86))
+* Workflow Bot -- Build Dictionaries ([#5236](https://github.com/streetsidesoftware/cspell-dicts/issues/5236)) ([0edbc2e](https://github.com/streetsidesoftware/cspell-dicts/commit/0edbc2e38623d9a42f7375bacc5e3371fed54bca))
+
+
+### Dependencies
+
+* The following workspace dependencies were updated
+  * devDependencies
+    * @cspell/dict-cspell-bundle bumped to 2.0.50
+
 ## [33.2.0](https://github.com/streetsidesoftware/cspell-dicts/compare/cspell-dicts@33.1.0...cspell-dicts@33.2.0) (2026-02-04)
 
 
