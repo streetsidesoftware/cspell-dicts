@@ -363,8 +363,8 @@ importers:
         specifier: ^24.0.4
         version: 24.0.4
       '@types/node':
-        specifier: ^20.19.33
-        version: 20.19.33
+        specifier: ^24.10.12
+        version: 24.10.12
 
   dictionaries/en-slang: {}
 
@@ -735,8 +735,8 @@ importers:
         specifier: ^20.1.9
         version: 20.1.9
       '@types/node':
-        specifier: ^20.19.33
-        version: 20.19.33
+        specifier: ^24.10.12
+        version: 24.10.12
       typescript:
         specifier: ^5.9.3
         version: 5.9.3
@@ -1579,6 +1579,9 @@ packages:
 
   '@types/node@22.19.10':
     resolution: {integrity: sha512-tF5VOugLS/EuDlTBijk0MqABfP8UxgYazTLo3uIn3b4yJgg26QRbVYJYsDtHrjdDUIRfP70+VfhTTc+CE1yskw==}
+
+  '@types/node@24.10.12':
+    resolution: {integrity: sha512-68e+T28EbdmLSTkPgs3+UacC6rzmqrcWFPQs1C8mwJhI/r5Uxr0yEuQotczNRROd1gq30NGxee+fo0rSIxpyAw==}
 
   '@types/node@25.2.2':
     resolution: {integrity: sha512-BkmoP5/FhRYek5izySdkOneRyXYN35I860MFAGupTdebyE66uZaR+bXLHq8k4DirE5DwQi3NuhvRU1jqTVwUrQ==}
@@ -5407,6 +5410,10 @@ snapshots:
     dependencies:
       undici-types: 6.21.0
 
+  '@types/node@24.10.12':
+    dependencies:
+      undici-types: 7.16.0
+
   '@types/node@25.2.2':
     dependencies:
       undici-types: 7.16.0
@@ -5421,7 +5428,7 @@ snapshots:
 
   '@types/through@0.0.33':
     dependencies:
-      '@types/node': 25.2.2
+      '@types/node': 24.10.12
 
   '@types/unist@2.0.11': {}
 
@@ -5430,7 +5437,7 @@ snapshots:
   '@types/vinyl@2.0.12':
     dependencies:
       '@types/expect': 1.20.4
-      '@types/node': 25.2.2
+      '@types/node': 24.10.12
 
   '@vercel/nft@0.29.4(encoding@0.1.13)':
     dependencies:
@@ -7082,7 +7089,7 @@ snapshots:
   mem-fs-editor@11.1.4(mem-fs@4.1.0):
     dependencies:
       '@types/ejs': 3.1.5
-      '@types/node': 25.2.2
+      '@types/node': 24.10.12
       binaryextensions: 6.11.0
       commondir: 1.0.1
       deep-extend: 0.6.0
@@ -7695,7 +7702,7 @@ snapshots:
 
   p-transform@5.0.1:
     dependencies:
-      '@types/node': 25.2.2
+      '@types/node': 24.10.12
       p-queue: 8.1.1
 
   p-try@2.2.0: {}
