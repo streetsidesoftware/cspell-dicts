@@ -2,7 +2,7 @@
   "name": "cspell-dicts",
   "version": "33.3.0",
   "private": true,
-  "packageManager": "pnpm@10.20.0+sha512.cf9998222162dd85864d0a8102e7892e7ba4ceadebbf5a31f9c2fce48dfce317a9c53b9f6464d1ef9042cba2e02ae02a9f7c143a2b438cd93c91840f0192b9dd",
+  "packageManager": "pnpm@10.29.2+sha512.bef43fa759d91fd2da4b319a5a0d13ef7a45bb985a3d7342058470f9d2051a3ba8674e629672654686ef9443ad13a82da2beb9eeb3e0221c87b8154fff9d74b8",
   "scripts": {
     "test": "pnpm -r run --workspace-concurrency 2 --stream test",
     "lint": "pnpm run lint:fix && cspell --no-progress",
@@ -46,7 +46,7 @@
     "@lerna-lite/publish": "^4.11.2",
     "@lerna-lite/run": "^4.11.2",
     "ava": "^6.4.1",
-    "cpy-cli": "^6.0.0",
+    "cpy-cli": "^7.0.0",
     "cross-env": "^10.1.0",
     "cspell": "^9.6.4",
     "cspell-dict-file-checker": "workspace:^",

@@ -1,6 +1,7 @@
 #!/usr/bin/env node
 
 // ts-check
+import { execSync } from 'node:child_process';
 import { promises as fs } from 'node:fs';
 import Path from 'node:path/posix';
 import { formatWithOptions } from 'node:util';
@@ -64,6 +65,16 @@ class FileSync {
     }
 }
 
+function getToken() {
+    try {
+        const stdout = execSync('gh auth token').toString();
+        console.log('Using GitHub token from `gh auth token`');
+        return stdout.trim();
+    } catch {
+        return undefined;
+    }
+}
+
 /**
  * @typedef {{
  *     path: string,
@@ -101,6 +112,14 @@ async function fetchGithubRest(url, token) {
     return data;
 }
 
+/**
+ *
+ * @param {string} ownerRepo
+ * @param {string} tree_sha
+ * @param {string} token
+ * @param {boolean} recursive
+ * @returns
+ */
 async function fetchTree(ownerRepo, tree_sha, token, recursive) {
     const octokit = getOctokit(token);
     const [owner, repo] = ownerRepo.split('/');
@@ -360,6 +379,7 @@ async function getLatestTag(repo, token) {
 
 let octokit = undefined;
 function getOctokit(token) {
+    console.assert(token, 'Token is required');
     if (!octokit) {
         octokit = new Octokit({ auth: token });
     }
@@ -393,7 +413,7 @@ program
     .action(async (repo, paths, options) => {
         console.log('Syncing files from GitHub: repo: %s%s', repo, paths.length ? `, paths: ${paths}` : '');
 
-        options.token ??= process.env.GITHUB_TOKEN;
+        options.token ??= process.env.GITHUB_TOKEN || getToken();
         const token = options.token;
         if (!token) {
             console.error(
