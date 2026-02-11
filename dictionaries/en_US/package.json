@@ -13,9 +13,8 @@
   },
   "scripts": {
     "build": "pnpm run compile",
-    "sync": "pnpm cpy \"node_modules/aoo-mozilla-en-dict/en_US*/**\" \"src/aoo-mozilla-en-dict\" --flat",
     "compile": "cspell-tools-cli build",
-    "conditional-build": "pnpm run sync && pnpm run build --conditional && pnpm gz",
+    "conditional-build": "pnpm run build --conditional && pnpm gz",
     "test-dict": "pipe-cmds \"hunspell-reader words -n 10000 src/hunspell/en_US-large.dic\" \"cspell -c ./cspell-ext.json --locale=en --languageId=* stdin\"",
     "test-text": "cspell -c ./cspell-ext.json --locale=en --languageId=* \"tests/*.txt\"",
     "test": "pnpm run test-dict && pnpm run test-text",
