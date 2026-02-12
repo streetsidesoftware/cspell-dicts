@@ -1286,8 +1286,8 @@ packages:
     resolution: {integrity: sha512-kAQTcEN9E8ERLVg5AsGwLNoFb+oEG6engbqAU2P43gD4JEIkNGMHdVQ096FsOAAYpZPB0RSt0zgInKIAS1l5QA==}
     engines: {node: ^20.17.0 || >=22.9.0}
 
-  '@npmcli/arborist@9.2.0':
-    resolution: {integrity: sha512-FRvpUoL5RUaMZ+CNJAZAegHymbamcGptjktD72T8Td94OllbJcBlOZQ69cB/DiNTYDvGBU0uvmcBWivlip1h+Q==}
+  '@npmcli/arborist@9.3.0':
+    resolution: {integrity: sha512-+iH0S4YZBsSgItmFWJsxbxtuFmaldGG8h9hQfCHeYHQxFZuIKD8NZB960c22OeFtQnI0FcuGLRA+sWQ3/4EEHQ==}
     engines: {node: ^20.17.0 || >=22.9.0}
     hasBin: true
 
@@ -4911,7 +4911,7 @@ snapshots:
       '@lerna-lite/core': 4.11.2(@types/node@25.2.3)
       '@lerna-lite/npmlog': 4.11.0
       '@lerna-lite/version': 4.11.2(@lerna-lite/exec@4.11.2)(@lerna-lite/publish@4.11.2)(@lerna-lite/run@4.11.2)(@types/node@25.2.3)(conventional-commits-filter@5.0.0)
-      '@npmcli/arborist': 9.2.0
+      '@npmcli/arborist': 9.3.0
       '@npmcli/package-json': 7.0.4
       byte-size: 9.0.1
       ci-info: 4.4.0
@@ -5039,7 +5039,7 @@ snapshots:
     transitivePeerDependencies:
       - supports-color
 
-  '@npmcli/arborist@9.2.0':
+  '@npmcli/arborist@9.3.0':
     dependencies:
       '@isaacs/string-locale-compare': 1.1.0
       '@npmcli/fs': 5.0.0
@@ -6391,7 +6391,7 @@ snapshots:
 
   fly-import@1.0.0:
     dependencies:
-      '@npmcli/arborist': 9.2.0
+      '@npmcli/arborist': 9.3.0
       env-paths: 3.0.0
       registry-auth-token: 5.1.1
       registry-url: 7.2.0
