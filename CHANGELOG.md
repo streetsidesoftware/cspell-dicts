@@ -1,5 +1,20 @@
 # Release Notes
 
+## [33.3.2](https://github.com/streetsidesoftware/cspell-dicts/compare/cspell-dicts@33.3.1...cspell-dicts@33.3.2) (2026-02-17)
+
+
+### Updates and Bug Fixes
+
+* Add MCAP to software-tools.txt ([#5257](https://github.com/streetsidesoftware/cspell-dicts/issues/5257)) ([e03e50a](https://github.com/streetsidesoftware/cspell-dicts/commit/e03e50af7a16b7cf2b01a533bb330a49a6c3d289))
+* Workflow Bot -- Update Dictionaries ([#5256](https://github.com/streetsidesoftware/cspell-dicts/issues/5256)) ([6c4877e](https://github.com/streetsidesoftware/cspell-dicts/commit/6c4877e11657747c2c41ace8b7bba96e902a3aa6))
+
+
+### Dependencies
+
+* The following workspace dependencies were updated
+  * devDependencies
+    * @cspell/dict-cspell-bundle bumped to 2.0.52
+
 ## [33.3.1](https://github.com/streetsidesoftware/cspell-dicts/compare/cspell-dicts@33.3.0...cspell-dicts@33.3.1) (2026-02-12)
 
 

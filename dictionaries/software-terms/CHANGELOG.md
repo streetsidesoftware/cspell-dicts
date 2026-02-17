@@ -3,6 +3,13 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+## [5.1.22](https://github.com/streetsidesoftware/cspell-dicts/compare/@cspell/dict-software-terms@5.1.21...@cspell/dict-software-terms@5.1.22) (2026-02-17)
+
+
+### Updates and Bug Fixes
+
+* Add MCAP to software-tools.txt ([#5257](https://github.com/streetsidesoftware/cspell-dicts/issues/5257)) ([e03e50a](https://github.com/streetsidesoftware/cspell-dicts/commit/e03e50af7a16b7cf2b01a533bb330a49a6c3d289))
+
 ## [5.1.21](https://github.com/streetsidesoftware/cspell-dicts/compare/@cspell/dict-software-terms@5.1.20...@cspell/dict-software-terms@5.1.21) (2026-02-12)
 
 
