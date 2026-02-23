@@ -1,5 +1,26 @@
 # Release Notes
 
+## [33.3.2](https://github.com/streetsidesoftware/cspell-dicts/compare/cspell-dicts@33.3.1...cspell-dicts@33.3.2) (2026-02-23)
+
+
+### Updates and Bug Fixes
+
+* Add MCAP to software-tools.txt ([#5257](https://github.com/streetsidesoftware/cspell-dicts/issues/5257)) ([e03e50a](https://github.com/streetsidesoftware/cspell-dicts/commit/e03e50af7a16b7cf2b01a533bb330a49a6c3d289))
+* add missing file extensions ([#5275](https://github.com/streetsidesoftware/cspell-dicts/issues/5275)) ([35a28ea](https://github.com/streetsidesoftware/cspell-dicts/commit/35a28ead3102db4b9536752157cfbad37ad89629))
+* add overscan to npm dictionary ([#5277](https://github.com/streetsidesoftware/cspell-dicts/issues/5277)) ([f0605d1](https://github.com/streetsidesoftware/cspell-dicts/commit/f0605d198922576cad06e0dccabf51db5a2c2722))
+* add packages and tools to npm dictionary ([#5272](https://github.com/streetsidesoftware/cspell-dicts/issues/5272)) ([5f2ce3f](https://github.com/streetsidesoftware/cspell-dicts/commit/5f2ce3f8a8fd2d5cc8a1706a8ef542b55e63e89b))
+* add tsgo to npm dictionary ([#5285](https://github.com/streetsidesoftware/cspell-dicts/issues/5285)) ([0594194](https://github.com/streetsidesoftware/cspell-dicts/commit/059419404cac38ff49b57d1f4bc98fc746ea851e))
+* Workflow Bot -- Build Dictionaries ([#5283](https://github.com/streetsidesoftware/cspell-dicts/issues/5283)) ([e6410ec](https://github.com/streetsidesoftware/cspell-dicts/commit/e6410ece9dcf20b71cafde465e2d6657b6a37f13))
+* Workflow Bot -- Update Dictionaries ([#5256](https://github.com/streetsidesoftware/cspell-dicts/issues/5256)) ([6c4877e](https://github.com/streetsidesoftware/cspell-dicts/commit/6c4877e11657747c2c41ace8b7bba96e902a3aa6))
+* Workflow Bot -- Update Dictionaries ([#5282](https://github.com/streetsidesoftware/cspell-dicts/issues/5282)) ([f5e54be](https://github.com/streetsidesoftware/cspell-dicts/commit/f5e54be2bd706fe841db17103b9fa7b56d77dc90))
+
+
+### Dependencies
+
+* The following workspace dependencies were updated
+  * devDependencies
+    * @cspell/dict-cspell-bundle bumped to 2.0.52
+
 ## [33.3.1](https://github.com/streetsidesoftware/cspell-dicts/compare/cspell-dicts@33.3.0...cspell-dicts@33.3.1) (2026-02-12)
 
 

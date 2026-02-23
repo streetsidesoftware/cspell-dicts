@@ -3,6 +3,17 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+## [5.2.35](https://github.com/streetsidesoftware/cspell-dicts/compare/@cspell/dict-npm@5.2.34...@cspell/dict-npm@5.2.35) (2026-02-23)
+
+
+### Updates and Bug Fixes
+
+* add overscan to npm dictionary ([#5277](https://github.com/streetsidesoftware/cspell-dicts/issues/5277)) ([f0605d1](https://github.com/streetsidesoftware/cspell-dicts/commit/f0605d198922576cad06e0dccabf51db5a2c2722))
+* add packages and tools to npm dictionary ([#5272](https://github.com/streetsidesoftware/cspell-dicts/issues/5272)) ([5f2ce3f](https://github.com/streetsidesoftware/cspell-dicts/commit/5f2ce3f8a8fd2d5cc8a1706a8ef542b55e63e89b))
+* add tsgo to npm dictionary ([#5285](https://github.com/streetsidesoftware/cspell-dicts/issues/5285)) ([0594194](https://github.com/streetsidesoftware/cspell-dicts/commit/059419404cac38ff49b57d1f4bc98fc746ea851e))
+* Workflow Bot -- Update Dictionaries ([#5256](https://github.com/streetsidesoftware/cspell-dicts/issues/5256)) ([6c4877e](https://github.com/streetsidesoftware/cspell-dicts/commit/6c4877e11657747c2c41ace8b7bba96e902a3aa6))
+* Workflow Bot -- Update Dictionaries ([#5282](https://github.com/streetsidesoftware/cspell-dicts/issues/5282)) ([f5e54be](https://github.com/streetsidesoftware/cspell-dicts/commit/f5e54be2bd706fe841db17103b9fa7b56d77dc90))
+
 ## [5.2.34](https://github.com/streetsidesoftware/cspell-dicts/compare/@cspell/dict-npm@5.2.33...@cspell/dict-npm@5.2.34) (2026-02-12)
 
 

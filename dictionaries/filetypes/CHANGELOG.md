@@ -3,6 +3,13 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+## [3.0.16](https://github.com/streetsidesoftware/cspell-dicts/compare/@cspell/dict-filetypes@3.0.15...@cspell/dict-filetypes@3.0.16) (2026-02-23)
+
+
+### Updates and Bug Fixes
+
+* add missing file extensions ([#5275](https://github.com/streetsidesoftware/cspell-dicts/issues/5275)) ([35a28ea](https://github.com/streetsidesoftware/cspell-dicts/commit/35a28ead3102db4b9536752157cfbad37ad89629))
+
 ## [3.0.15](https://github.com/streetsidesoftware/cspell-dicts/compare/@cspell/dict-filetypes@3.0.14...@cspell/dict-filetypes@3.0.15) (2025-12-13)
 
 
