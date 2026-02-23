@@ -16,6 +16,7 @@ permissions:
 
 jobs:
   update-dependabot:
+    if: github.repository_owner == 'streetsidesoftware'
     runs-on: ubuntu-latest
     env:
       NEW_BRANCH: update-dependabot-${{ inputs.base || 'main' }}
