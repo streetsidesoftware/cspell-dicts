@@ -3,6 +3,13 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+## [5.1.0](https://github.com/streetsidesoftware/cspell-dicts/compare/@cspell/dict-latex@5.0.0...@cspell/dict-latex@5.1.0) (2026-02-23)
+
+
+### Features
+
+* Add basic accent support ([#5292](https://github.com/streetsidesoftware/cspell-dicts/issues/5292)) ([c38fc40](https://github.com/streetsidesoftware/cspell-dicts/commit/c38fc40de089b9af56c5de76d8886713760e97dc))
+
 ## [5.0.0](https://github.com/streetsidesoftware/cspell-dicts/compare/@cspell/dict-latex@4.0.4...@cspell/dict-latex@5.0.0) (2026-01-24)
 
 

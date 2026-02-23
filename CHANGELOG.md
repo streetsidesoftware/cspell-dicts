@@ -1,5 +1,19 @@
 # Release Notes
 
+## [33.4.0](https://github.com/streetsidesoftware/cspell-dicts/compare/cspell-dicts@33.3.2...cspell-dicts@33.4.0) (2026-02-23)
+
+
+### Features
+
+* Add basic accent support ([#5292](https://github.com/streetsidesoftware/cspell-dicts/issues/5292)) ([c38fc40](https://github.com/streetsidesoftware/cspell-dicts/commit/c38fc40de089b9af56c5de76d8886713760e97dc))
+
+
+### Dependencies
+
+* The following workspace dependencies were updated
+  * devDependencies
+    * @cspell/dict-cspell-bundle bumped to 2.0.53
+
 ## [33.3.2](https://github.com/streetsidesoftware/cspell-dicts/compare/cspell-dicts@33.3.1...cspell-dicts@33.3.2) (2026-02-23)
 
 
