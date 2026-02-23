@@ -1,0 +1,11 @@
+{
+  "name": "@cspell/dict-latex-scripts",
+  "private": true,
+  "type": "module",
+  "scripts": {
+    "gen-accents": "node generate-accents.ts"
+  },
+  "devDependencies": {
+    "@cspell/cspell-types": "^9.7.0"
+  }
+}

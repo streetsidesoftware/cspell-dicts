@@ -5,6 +5,7 @@ const testFiles = [
     'samples/papers/**/*.tex',
     'samples/issue-627.tex',
     'samples/issue-754.tex',
+    'samples/issue-5291.tex',
 ];
 
 checkSnapshots(testFiles);
