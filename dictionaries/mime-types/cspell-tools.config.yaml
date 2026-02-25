@@ -1,0 +1,10 @@
+# yaml-language-server: $schema=https://raw.githubusercontent.com/streetsidesoftware/cspell/main/packages/cspell-tools/cspell-tools.config.schema.json
+
+targets:
+  - name: mime-types
+    targetDirectory: ./dict
+    compress: false
+    format: plaintext
+    sources:
+      - src/mime-words.txt
+    sort: true
