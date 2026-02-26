@@ -3,6 +3,13 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+## [5.1.23](https://github.com/streetsidesoftware/cspell-dicts/compare/@cspell/dict-software-terms@5.1.22...@cspell/dict-software-terms@5.1.23) (2026-02-26)
+
+
+### Updates and Bug Fixes
+
+* add term "subdeps" ([#5302](https://github.com/streetsidesoftware/cspell-dicts/issues/5302)) ([e4bb876](https://github.com/streetsidesoftware/cspell-dicts/commit/e4bb8769c0d3b80cb62775066a0129afff41b635))
+
 ## [5.1.22](https://github.com/streetsidesoftware/cspell-dicts/compare/@cspell/dict-software-terms@5.1.21...@cspell/dict-software-terms@5.1.22) (2026-02-23)
 
 
