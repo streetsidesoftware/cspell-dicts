@@ -3,9 +3,11 @@
 targets:
   - name: mime-types
     targetDirectory: ./dict
-    compress: false
+    compress: true
+    keepUncompressed: true
     format: plaintext
     sources:
       - filename: src/mime-types.txt
         split: true
     sort: true
+checksumFile: true
