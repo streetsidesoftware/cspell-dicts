@@ -6,36 +6,36 @@
     "access": "public",
     "provenance": true
   },
-  "exports": {
-    ".": "./cspell-ext.json",
-    "./cspell": "./cspell-ext.json",
-    "./cspell-ext.json": "./cspell-ext.json"
-  },
-  "scripts": {
-    "build": "cspell-tools-cli build",
-    "test": "shx cat \"php.txt\" | cspell -c ./cspell-ext.json --locale=* --languageId=php stdin",
-    "prepublishOnly": "echo pre-publish",
-    "prepare:dictionary": "pnpm run build"
-  },
-  "repository": {
-    "type": "git",
-    "url": "https://github.com/streetsidesoftware/cspell-dicts",
-    "directory": "dictionaries/php"
-  },
   "keywords": [
     "cspell",
     "php",
     "dictionary",
     "spelling"
   ],
-  "author": "Street Side Software <support@streetsidesoftware.nl>",
-  "license": "MIT",
+  "homepage": "https://github.com/streetsidesoftware/cspell-dicts/blob/main/dictionaries/php#readme",
   "bugs": {
     "url": "https://github.com/streetsidesoftware/cspell-dicts/issues"
   },
-  "homepage": "https://github.com/streetsidesoftware/cspell-dicts/blob/main/dictionaries/php#readme",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/streetsidesoftware/cspell-dicts",
+    "directory": "dictionaries/php"
+  },
+  "license": "MIT",
+  "author": "Street Side Software <support@streetsidesoftware.nl>",
+  "exports": {
+    ".": "./cspell-ext.json",
+    "./cspell": "./cspell-ext.json",
+    "./cspell-ext.json": "./cspell-ext.json"
+  },
   "files": [
     "dict/*",
     "cspell-ext.json"
-  ]
+  ],
+  "scripts": {
+    "build": "cspell-tools-cli build",
+    "prepare:dictionary": "pnpm run build",
+    "prepublishOnly": "echo pre-publish",
+    "test": "shx cat \"php.txt\" | cspell -c ./cspell-ext.json --locale=* --languageId=php stdin"
+  }
 }

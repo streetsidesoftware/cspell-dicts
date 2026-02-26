@@ -6,24 +6,6 @@
     "access": "public",
     "provenance": true
   },
-  "exports": {
-    ".": "./cspell-ext.json",
-    "./cspell": "./cspell-ext.json",
-    "./cspell-ext.json": "./cspell-ext.json"
-  },
-  "scripts": {
-    "build": "cspell-tools-cli build && pnpm gz",
-    "build:conditional": "cspell-tools-cli build --conditional && pnpm gz",
-    "test": "cspell samples",
-    "gz": "cspell-tools-cli gzip \"*.trie\"",
-    "prepare:dictionary": "pnpm gz",
-    "prepublishOnly": "echo pre-publish"
-  },
-  "repository": {
-    "type": "git",
-    "url": "https://github.com/streetsidesoftware/cspell-dicts",
-    "directory": "dictionaries/he"
-  },
   "keywords": [
     "cspell",
     "he",
@@ -31,18 +13,36 @@
     "dictionary",
     "spelling"
   ],
+  "homepage": "https://github.com/streetsidesoftware/cspell-dicts/blob/main/dictionaries/he#readme",
+  "bugs": {
+    "url": "https://github.com/streetsidesoftware/cspell-dicts/issues"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/streetsidesoftware/cspell-dicts",
+    "directory": "dictionaries/he"
+  },
+  "license": "AGPLv3",
   "author": "Street Side Software <support@streetsidesoftware.nl>",
   "contributors": [
     "Noam Ben Shabat"
   ],
-  "license": "AGPLv3",
-  "bugs": {
-    "url": "https://github.com/streetsidesoftware/cspell-dicts/issues"
+  "exports": {
+    ".": "./cspell-ext.json",
+    "./cspell": "./cspell-ext.json",
+    "./cspell-ext.json": "./cspell-ext.json"
   },
-  "homepage": "https://github.com/streetsidesoftware/cspell-dicts/blob/main/dictionaries/he#readme",
   "files": [
     "he.trie.gz",
     "cspell-ext.json",
     "!samples"
-  ]
+  ],
+  "scripts": {
+    "build": "cspell-tools-cli build && pnpm gz",
+    "build:conditional": "cspell-tools-cli build --conditional && pnpm gz",
+    "gz": "cspell-tools-cli gzip \"*.trie\"",
+    "prepare:dictionary": "pnpm gz",
+    "prepublishOnly": "echo pre-publish",
+    "test": "cspell samples"
+  }
 }

@@ -6,24 +6,6 @@
     "access": "public",
     "provenance": true
   },
-  "exports": {
-    ".": "./cspell-ext.json",
-    "./cspell": "./cspell-ext.json",
-    "./cspell-ext.json": "./cspell-ext.json"
-  },
-  "scripts": {
-    "build": "cspell-tools-cli build",
-    "build:conditional": "cspell-tools-cli build --conditional && pnpm gz",
-    "gz": "cspell-tools-cli gzip \"*.trie\"",
-    "test": "cspell samples --no-progress",
-    "prepare:dictionary": "pnpm gz",
-    "prepublishOnly": "echo pre-publish"
-  },
-  "repository": {
-    "type": "git",
-    "url": "https://github.com/streetsidesoftware/cspell-dicts",
-    "directory": "dictionaries/lt_LT"
-  },
   "keywords": [
     "cspell",
     "lt_LT",
@@ -31,16 +13,34 @@
     "dictionary",
     "spelling"
   ],
-  "author": "Street Side Software <support@streetsidesoftware.nl>",
-  "license": "BSD-3-Clause",
+  "homepage": "https://github.com/streetsidesoftware/cspell-dicts/blob/main/dictionaries/lt_LT#readme",
   "bugs": {
     "url": "https://github.com/streetsidesoftware/cspell-dicts/issues"
   },
-  "homepage": "https://github.com/streetsidesoftware/cspell-dicts/blob/main/dictionaries/lt_LT#readme",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/streetsidesoftware/cspell-dicts",
+    "directory": "dictionaries/lt_LT"
+  },
+  "license": "BSD-3-Clause",
+  "author": "Street Side Software <support@streetsidesoftware.nl>",
+  "exports": {
+    ".": "./cspell-ext.json",
+    "./cspell": "./cspell-ext.json",
+    "./cspell-ext.json": "./cspell-ext.json"
+  },
   "files": [
     "src/hunspell/COPYING",
     "src/hunspell/AUTHORS",
     "lt_LT.trie.gz",
     "cspell-ext.json"
-  ]
+  ],
+  "scripts": {
+    "build": "cspell-tools-cli build",
+    "build:conditional": "cspell-tools-cli build --conditional && pnpm gz",
+    "gz": "cspell-tools-cli gzip \"*.trie\"",
+    "prepare:dictionary": "pnpm gz",
+    "prepublishOnly": "echo pre-publish",
+    "test": "cspell samples --no-progress"
+  }
 }

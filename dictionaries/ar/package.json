@@ -6,28 +6,6 @@
     "access": "public",
     "provenance": true
   },
-  "exports": {
-    ".": "./cspell-ext.json",
-    "./cspell": "./cspell-ext.json",
-    "./cspell-ext.json": "./cspell-ext.json"
-  },
-  "scripts": {
-    "build": "cross-env NODE_OPTIONS=--max_old_space_size=12288 cspell-tools-cli build",
-    "conditional-build": "pnpm run build --conditional",
-    "lint": "pnpm prettier -w \"**/*.{md,json}\"",
-    "gen-checksum": "cspell-tools-cli shasum -u checksum.txt --list-file source-files.txt source-dependencies.txt",
-    "test-ar": "pipe-cmds \"hunspell-reader words -m 0 -n 1000 \\\"src/ayaspell/ar.dic\\\"\" \"cspell -c ./cspell-ext.json \\\"--locale=ar\\\" \\\"--languageId=*\\\" stdin\"",
-    "test-samples": "cspell -c ./cspell-ext.json --locale=ar,en \"samples/**\"",
-    "test": "pnpm run test-ar && pnpm run test-samples",
-    "sync": "bash ./scripts/sync.sh && pnpm lint",
-    "prepare:dictionary": "cspell-tools-cli gzip \"*.trie\"",
-    "prepublishOnly": "pnpm run conditional-build && pnpm test"
-  },
-  "repository": {
-    "type": "git",
-    "url": "https://github.com/streetsidesoftware/cspell-dicts",
-    "directory": "dictionaries/ar"
-  },
   "keywords": [
     "cspell",
     "cspell-ext",
@@ -36,16 +14,22 @@
     "dictionary",
     "spelling"
   ],
-  "author": "Street Side Software <support@streetsidesoftware.nl>",
-  "license": "LGPL-3.0",
+  "homepage": "https://github.com/streetsidesoftware/cspell-dicts/blob/main/dictionaries/ar#readme",
   "bugs": {
     "url": "https://github.com/streetsidesoftware/cspell-dicts/issues"
   },
-  "homepage": "https://github.com/streetsidesoftware/cspell-dicts/blob/main/dictionaries/ar#readme",
-  "comment-devDependencies": {
-    "ayaspell": "https://github.com/linuxscout/ayaspell"
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/streetsidesoftware/cspell-dicts",
+    "directory": "dictionaries/ar"
   },
-  "dependencies": {},
+  "license": "LGPL-3.0",
+  "author": "Street Side Software <support@streetsidesoftware.nl>",
+  "exports": {
+    ".": "./cspell-ext.json",
+    "./cspell": "./cspell-ext.json",
+    "./cspell-ext.json": "./cspell-ext.json"
+  },
   "files": [
     "src/ayaspell/COPYING",
     "src/ayaspell/README.md",
@@ -53,5 +37,21 @@
     "cspell-ext.json",
     "*.js",
     "*.d.ts"
-  ]
+  ],
+  "scripts": {
+    "build": "cross-env NODE_OPTIONS=--max_old_space_size=12288 cspell-tools-cli build",
+    "conditional-build": "pnpm run build --conditional",
+    "gen-checksum": "cspell-tools-cli shasum -u checksum.txt --list-file source-files.txt source-dependencies.txt",
+    "lint": "pnpm prettier -w \"**/*.{md,json}\"",
+    "prepare:dictionary": "cspell-tools-cli gzip \"*.trie\"",
+    "prepublishOnly": "pnpm run conditional-build && pnpm test",
+    "sync": "bash ./scripts/sync.sh && pnpm lint",
+    "test": "pnpm run test-ar && pnpm run test-samples",
+    "test-ar": "pipe-cmds \"hunspell-reader words -m 0 -n 1000 \\\"src/ayaspell/ar.dic\\\"\" \"cspell -c ./cspell-ext.json \\\"--locale=ar\\\" \\\"--languageId=*\\\" stdin\"",
+    "test-samples": "cspell -c ./cspell-ext.json --locale=ar,en \"samples/**\""
+  },
+  "dependencies": {},
+  "comment-devDependencies": {
+    "ayaspell": "https://github.com/linuxscout/ayaspell"
+  }
 }

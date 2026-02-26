@@ -6,27 +6,6 @@
     "access": "public",
     "provenance": true
   },
-  "exports": {
-    ".": "./cspell-ext.json",
-    "./cspell": "./cspell-ext.json",
-    "./cspell-ext.json": "./cspell-ext.json"
-  },
-  "scripts": {
-    "build": "cspell-tools-cli build && pnpm gz",
-    "conditional-build": "pnpm run sync && cspell-tools-cli build --conditional && pnpm gz",
-    "sync": "pnpm cpy \"node_modules/dictionary-de-at/**\" src/hunspell",
-    "test-de": "pipe-cmds \"hunspell-reader words -n 1000 \\\"src/hunspell/index.dic\\\"\" \"cspell -c ./cspell-ext.json --locale=de-AT --languageId=* stdin\"",
-    "test-samples": "cspell -c ./cspell-ext.json --locale=de-at,en \"samples/**\"",
-    "test": "pnpm run test-de && pnpm run test-samples",
-    "gz": "cspell-tools-cli gzip \"*.trie\"",
-    "prepare:dictionary": "pnpm gz",
-    "prepublishOnly": "pnpm run conditional-build && pnpm test"
-  },
-  "repository": {
-    "type": "git",
-    "url": "https://github.com/streetsidesoftware/cspell-dicts",
-    "directory": "dictionaries/de_AT"
-  },
   "keywords": [
     "cspell",
     "de-AT",
@@ -35,17 +14,38 @@
     "dictionary",
     "spelling"
   ],
-  "author": "Street Side Software <support@streetsidesoftware.nl>",
-  "license": "GPL-3.0-or-later",
+  "homepage": "https://github.com/streetsidesoftware/cspell-dicts/blob/main/dictionaries/de_AT#readme",
   "bugs": {
     "url": "https://github.com/streetsidesoftware/cspell-dicts/issues"
   },
-  "homepage": "https://github.com/streetsidesoftware/cspell-dicts/blob/main/dictionaries/de_AT#readme",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/streetsidesoftware/cspell-dicts",
+    "directory": "dictionaries/de_AT"
+  },
+  "license": "GPL-3.0-or-later",
+  "author": "Street Side Software <support@streetsidesoftware.nl>",
+  "exports": {
+    ".": "./cspell-ext.json",
+    "./cspell": "./cspell-ext.json",
+    "./cspell-ext.json": "./cspell-ext.json"
+  },
   "files": [
     "de_AT.trie.gz",
     "cspell-ext.json",
     "src/hunspell/license"
   ],
+  "scripts": {
+    "build": "cspell-tools-cli build && pnpm gz",
+    "conditional-build": "pnpm run sync && cspell-tools-cli build --conditional && pnpm gz",
+    "gz": "cspell-tools-cli gzip \"*.trie\"",
+    "prepare:dictionary": "pnpm gz",
+    "prepublishOnly": "pnpm run conditional-build && pnpm test",
+    "sync": "pnpm cpy \"node_modules/dictionary-de-at/**\" src/hunspell",
+    "test": "pnpm run test-de && pnpm run test-samples",
+    "test-de": "pipe-cmds \"hunspell-reader words -n 1000 \\\"src/hunspell/index.dic\\\"\" \"cspell -c ./cspell-ext.json --locale=de-AT --languageId=* stdin\"",
+    "test-samples": "cspell -c ./cspell-ext.json --locale=de-at,en \"samples/**\""
+  },
   "devDependencies": {
     "dictionary-de-at": "^3.0.0"
   }

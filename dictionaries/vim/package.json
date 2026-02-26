@@ -6,22 +6,6 @@
     "access": "public",
     "provenance": true
   },
-  "exports": {
-    ".": "./cspell-ext.json",
-    "./cspell": "./cspell-ext.json",
-    "./cspell-ext.json": "./cspell-ext.json"
-  },
-  "scripts": {
-    "build": "cross-env NODE_OPTIONS=--max_old_space_size=8192 cspell-tools-cli build",
-    "test": "head -n 1000 \"src/vim.txt\" | cspell \"--locale=*\" \"--languageId=*\" stdin",
-    "prepublishOnly": "echo OK",
-    "prepare:dictionary": "pnpm run build"
-  },
-  "repository": {
-    "type": "git",
-    "url": "https://github.com/streetsidesoftware/cspell-dicts",
-    "directory": "dictionaries/vim"
-  },
   "keywords": [
     "cspell",
     "cspell-ext",
@@ -29,21 +13,37 @@
     "dictionary",
     "spelling"
   ],
+  "homepage": "https://github.com/streetsidesoftware/cspell-dicts/blob/main/dictionaries/vim#readme",
+  "bugs": {
+    "url": "https://github.com/streetsidesoftware/cspell-dicts/issues"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/streetsidesoftware/cspell-dicts",
+    "directory": "dictionaries/vim"
+  },
+  "license": "MIT",
   "author": "Street Side Software <support@streetsidesoftware.nl>",
   "contributors": [
     "Kevin Traver"
   ],
-  "license": "MIT",
-  "bugs": {
-    "url": "https://github.com/streetsidesoftware/cspell-dicts/issues"
+  "exports": {
+    ".": "./cspell-ext.json",
+    "./cspell": "./cspell-ext.json",
+    "./cspell-ext.json": "./cspell-ext.json"
   },
-  "homepage": "https://github.com/streetsidesoftware/cspell-dicts/blob/main/dictionaries/vim#readme",
-  "devDependencies": {},
-  "dependencies": {},
   "files": [
     "dict/vim.txt",
     "cspell-ext.json",
     "*.js",
     "*.d.ts"
-  ]
+  ],
+  "scripts": {
+    "build": "cross-env NODE_OPTIONS=--max_old_space_size=8192 cspell-tools-cli build",
+    "prepare:dictionary": "pnpm run build",
+    "prepublishOnly": "echo OK",
+    "test": "head -n 1000 \"src/vim.txt\" | cspell \"--locale=*\" \"--languageId=*\" stdin"
+  },
+  "dependencies": {},
+  "devDependencies": {}
 }

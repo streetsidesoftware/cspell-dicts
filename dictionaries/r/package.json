@@ -6,22 +6,6 @@
     "access": "public",
     "provenance": true
   },
-  "exports": {
-    ".": "./cspell-ext.json",
-    "./cspell": "./cspell-ext.json",
-    "./cspell-ext.json": "./cspell-ext.json"
-  },
-  "scripts": {
-    "build": "cross-env NODE_OPTIONS=--max_old_space_size=8192 cspell-tools-cli compile --split \"src/r.txt\" -o .",
-    "test": "shx head -n 1000 \"src/r.txt\" | cspell -c ./cspell-ext.json \"--locale=*\" \"--languageId=r\" stdin",
-    "prepublishOnly": "echo pre-publish",
-    "prepare:dictionary": "pnpm run build"
-  },
-  "repository": {
-    "type": "git",
-    "url": "https://github.com/streetsidesoftware/cspell-dicts",
-    "directory": "dictionaries/r"
-  },
   "keywords": [
     "cspell",
     "cspell-ext",
@@ -30,19 +14,35 @@
     "dictionary",
     "spelling"
   ],
+  "homepage": "https://github.com/streetsidesoftware/cspell-dicts/blob/main/dictionaries/r#readme",
+  "bugs": {
+    "url": "https://github.com/streetsidesoftware/cspell-dicts/issues"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/streetsidesoftware/cspell-dicts",
+    "directory": "dictionaries/r"
+  },
+  "license": "MIT",
   "author": "Street Side Software <support@streetsidesoftware.nl>",
   "contributors": [
     "Matthew Toohey <contact@mtoohey.com>"
   ],
-  "license": "MIT",
-  "bugs": {
-    "url": "https://github.com/streetsidesoftware/cspell-dicts/issues"
+  "exports": {
+    ".": "./cspell-ext.json",
+    "./cspell": "./cspell-ext.json",
+    "./cspell-ext.json": "./cspell-ext.json"
   },
-  "homepage": "https://github.com/streetsidesoftware/cspell-dicts/blob/main/dictionaries/r#readme",
   "files": [
     "r.txt.gz",
     "cspell-ext.json",
     "*.js",
     "*.d.ts"
-  ]
+  ],
+  "scripts": {
+    "build": "cross-env NODE_OPTIONS=--max_old_space_size=8192 cspell-tools-cli compile --split \"src/r.txt\" -o .",
+    "prepare:dictionary": "pnpm run build",
+    "prepublishOnly": "echo pre-publish",
+    "test": "shx head -n 1000 \"src/r.txt\" | cspell -c ./cspell-ext.json \"--locale=*\" \"--languageId=r\" stdin"
+  }
 }

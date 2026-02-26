@@ -6,22 +6,6 @@
     "access": "public",
     "provenance": true
   },
-  "exports": {
-    ".": "./cspell-ext.json",
-    "./cspell": "./cspell-ext.json",
-    "./cspell-ext.json": "./cspell-ext.json"
-  },
-  "scripts": {
-    "build": "cspell-tools-cli build",
-    "conditional-build": "pnpm run build --conditional",
-    "prepublishOnly": "echo pre-publish",
-    "test": "cspell -c ./cspell-ext.json --locale=sr-Latn \"samples/**\""
-  },
-  "repository": {
-    "type": "git",
-    "url": "https://github.com/streetsidesoftware/cspell-dicts",
-    "directory": "dictionaries/sr_Latn"
-  },
   "keywords": [
     "cspell",
     "cspell-ext",
@@ -30,18 +14,34 @@
     "dictionary",
     "spelling"
   ],
-  "author": "Street Side Software <support@streetsidesoftware.nl>",
-  "license": "MIT",
+  "homepage": "https://github.com/streetsidesoftware/cspell-dicts/blob/main/dictionaries/sr_Latn#readme",
   "bugs": {
     "url": "https://github.com/streetsidesoftware/cspell-dicts/issues"
   },
-  "homepage": "https://github.com/streetsidesoftware/cspell-dicts/blob/main/dictionaries/sr_Latn#readme",
-  "devDependencies": {},
-  "dependencies": {},
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/streetsidesoftware/cspell-dicts",
+    "directory": "dictionaries/sr_Latn"
+  },
+  "license": "MIT",
+  "author": "Street Side Software <support@streetsidesoftware.nl>",
+  "exports": {
+    ".": "./cspell-ext.json",
+    "./cspell": "./cspell-ext.json",
+    "./cspell-ext.json": "./cspell-ext.json"
+  },
   "files": [
     "dict/sr-latn.trie",
     "cspell-ext.json",
     "*.js",
     "*.d.ts"
-  ]
+  ],
+  "scripts": {
+    "build": "cspell-tools-cli build",
+    "conditional-build": "pnpm run build --conditional",
+    "prepublishOnly": "echo pre-publish",
+    "test": "cspell -c ./cspell-ext.json --locale=sr-Latn \"samples/**\""
+  },
+  "dependencies": {},
+  "devDependencies": {}
 }

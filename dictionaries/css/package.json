@@ -6,39 +6,38 @@
     "access": "public",
     "provenance": true
   },
-  "exports": {
-    ".": "./cspell-ext.json",
-    "./cspell": "./cspell-ext.json",
-    "./cspell-ext.json": "./cspell-ext.json"
-  },
-  "scripts": {
-    "build": "cspell-tools-cli compile --keep-raw-case src/css.txt --no-compress -o ./dict",
-    "test": "pnpm run test:keywords && pnpm run test:samples",
-    "test:keywords": "shx head -n 100 src/css.txt | cspell -c ./cspell-ext.json \"--locale=*\" \"--languageId=css\" stdin",
-    "test:samples": "cspell samples",
-    "prepublishOnly": "echo pre-publish",
-    "prepare:dictionary": "pnpm run build"
+  "keywords": [
+    "cspell",
+    "css",
+    "dictionary",
+    "spelling"
+  ],
+  "homepage": "https://github.com/streetsidesoftware/cspell-dicts/blob/main/dictionaries/css#readme",
+  "bugs": {
+    "url": "https://github.com/streetsidesoftware/cspell-dicts/issues"
   },
   "repository": {
     "type": "git",
     "url": "https://github.com/streetsidesoftware/cspell-dicts",
     "directory": "dictionaries/css"
   },
-  "keywords": [
-    "cspell",
-    "css",
-    "css",
-    "dictionary",
-    "spelling"
-  ],
-  "author": "Street Side Software <support@streetsidesoftware.nl>",
   "license": "MIT",
-  "bugs": {
-    "url": "https://github.com/streetsidesoftware/cspell-dicts/issues"
+  "author": "Street Side Software <support@streetsidesoftware.nl>",
+  "exports": {
+    ".": "./cspell-ext.json",
+    "./cspell": "./cspell-ext.json",
+    "./cspell-ext.json": "./cspell-ext.json"
   },
-  "homepage": "https://github.com/streetsidesoftware/cspell-dicts/blob/main/dictionaries/css#readme",
   "files": [
     "dict/css.txt",
     "cspell-ext.json"
-  ]
+  ],
+  "scripts": {
+    "build": "cspell-tools-cli compile --keep-raw-case src/css.txt --no-compress -o ./dict",
+    "prepare:dictionary": "pnpm run build",
+    "prepublishOnly": "echo pre-publish",
+    "test": "pnpm run test:keywords && pnpm run test:samples",
+    "test:keywords": "shx head -n 100 src/css.txt | cspell -c ./cspell-ext.json \"--locale=*\" \"--languageId=css\" stdin",
+    "test:samples": "cspell samples"
+  }
 }

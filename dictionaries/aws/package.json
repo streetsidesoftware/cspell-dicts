@@ -6,22 +6,6 @@
     "access": "public",
     "provenance": true
   },
-  "exports": {
-    ".": "./cspell-ext.json",
-    "./cspell": "./cspell-ext.json",
-    "./cspell-ext.json": "./cspell-ext.json"
-  },
-  "scripts": {
-    "build": "cspell-tools-cli compile --keep-raw-case --use-legacy-splitter src/aws.txt --no-compress -o ./dict",
-    "test": "head -n 100 src/aws.txt | cspell -c ./cspell-ext.json \"--locale=*\" \"--languageId=aws\" stdin",
-    "prepublishOnly": "echo pre-publish",
-    "prepare:dictionary": "pnpm run build"
-  },
-  "repository": {
-    "type": "git",
-    "url": "https://github.com/streetsidesoftware/cspell-dicts",
-    "directory": "dictionaries/aws"
-  },
   "keywords": [
     "cspell",
     "aws",
@@ -29,14 +13,30 @@
     "dictionary",
     "spelling"
   ],
-  "author": "Street Side Software <support@streetsidesoftware.nl>",
-  "license": "MIT",
+  "homepage": "https://github.com/streetsidesoftware/cspell-dicts/blob/main/dictionaries/aws#readme",
   "bugs": {
     "url": "https://github.com/streetsidesoftware/cspell-dicts/issues"
   },
-  "homepage": "https://github.com/streetsidesoftware/cspell-dicts/blob/main/dictionaries/aws#readme",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/streetsidesoftware/cspell-dicts",
+    "directory": "dictionaries/aws"
+  },
+  "license": "MIT",
+  "author": "Street Side Software <support@streetsidesoftware.nl>",
+  "exports": {
+    ".": "./cspell-ext.json",
+    "./cspell": "./cspell-ext.json",
+    "./cspell-ext.json": "./cspell-ext.json"
+  },
   "files": [
     "dict/aws.txt",
     "cspell-ext.json"
-  ]
+  ],
+  "scripts": {
+    "build": "cspell-tools-cli compile --keep-raw-case --use-legacy-splitter src/aws.txt --no-compress -o ./dict",
+    "prepare:dictionary": "pnpm run build",
+    "prepublishOnly": "echo pre-publish",
+    "test": "head -n 100 src/aws.txt | cspell -c ./cspell-ext.json \"--locale=*\" \"--languageId=aws\" stdin"
+  }
 }

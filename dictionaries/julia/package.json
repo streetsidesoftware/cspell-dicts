@@ -6,24 +6,6 @@
     "access": "public",
     "provenance": true
   },
-  "exports": {
-    ".": "./cspell-ext.json",
-    "./cspell": "./cspell-ext.json",
-    "./cspell-ext.json": "./cspell-ext.json"
-  },
-  "scripts": {
-    "build": "cspell-tools-cli build",
-    "test": "pnpm run test:words && pnpm run test:samples",
-    "test:samples": "cspell samples",
-    "test:words": "head -n 1000 \"src/julia.txt\" | cspell -c ./cspell-ext.json \"--locale=*\" \"--languageId=julia\" stdin",
-    "prepublishOnly": "echo OK",
-    "prepare:dictionary": "pnpm run build"
-  },
-  "repository": {
-    "type": "git",
-    "url": "https://github.com/streetsidesoftware/cspell-dicts",
-    "directory": "dictionaries/julia"
-  },
   "keywords": [
     "cspell",
     "cspell-ext",
@@ -33,19 +15,37 @@
     "dictionary",
     "spelling"
   ],
-  "author": "Street Side Software <support@streetsidesoftware.nl>",
-  "contributors": [],
-  "license": "MIT",
+  "homepage": "https://github.com/streetsidesoftware/cspell-dicts/blob/main/dictionaries/julia#readme",
   "bugs": {
     "url": "https://github.com/streetsidesoftware/cspell-dicts/issues"
   },
-  "homepage": "https://github.com/streetsidesoftware/cspell-dicts/blob/main/dictionaries/julia#readme",
-  "devDependencies": {},
-  "dependencies": {},
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/streetsidesoftware/cspell-dicts",
+    "directory": "dictionaries/julia"
+  },
+  "license": "MIT",
+  "author": "Street Side Software <support@streetsidesoftware.nl>",
+  "contributors": [],
+  "exports": {
+    ".": "./cspell-ext.json",
+    "./cspell": "./cspell-ext.json",
+    "./cspell-ext.json": "./cspell-ext.json"
+  },
   "files": [
     "dict/julia.txt",
     "cspell-ext.json",
     "*.js",
     "*.d.ts"
-  ]
+  ],
+  "scripts": {
+    "build": "cspell-tools-cli build",
+    "prepare:dictionary": "pnpm run build",
+    "prepublishOnly": "echo OK",
+    "test": "pnpm run test:words && pnpm run test:samples",
+    "test:samples": "cspell samples",
+    "test:words": "head -n 1000 \"src/julia.txt\" | cspell -c ./cspell-ext.json \"--locale=*\" \"--languageId=julia\" stdin"
+  },
+  "dependencies": {},
+  "devDependencies": {}
 }

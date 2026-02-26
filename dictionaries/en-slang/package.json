@@ -1,27 +1,11 @@
 {
   "name": "@cspell/dict-en-slang",
   "version": "1.0.2",
-  "description": "Modern English slang words dictionary. -- Private until verified",
   "private": true,
+  "description": "Modern English slang words dictionary. -- Private until verified",
   "publishConfig": {
     "access": "public",
     "provenance": true
-  },
-  "exports": {
-    ".": "./cspell-ext.json",
-    "./cspell": "./cspell-ext.json",
-    "./cspell-ext.json": "./cspell-ext.json"
-  },
-  "scripts": {
-    "build": "cspell-tools-cli build",
-    "test": "cspell samples",
-    "prepublishOnly": "echo OK",
-    "prepare:dictionary": "pnpm run build"
-  },
-  "repository": {
-    "type": "git",
-    "url": "https://github.com/streetsidesoftware/cspell-dicts",
-    "directory": "dictionaries/en-slang"
   },
   "keywords": [
     "cspell",
@@ -31,19 +15,35 @@
     "dictionary",
     "spelling"
   ],
-  "author": "Street Side Software <support@streetsidesoftware.nl>",
-  "contributors": [],
-  "license": "MIT",
+  "homepage": "https://github.com/streetsidesoftware/cspell-dicts/blob/main/dictionaries/en-slang#readme",
   "bugs": {
     "url": "https://github.com/streetsidesoftware/cspell-dicts/issues"
   },
-  "homepage": "https://github.com/streetsidesoftware/cspell-dicts/blob/main/dictionaries/en-slang#readme",
-  "devDependencies": {},
-  "dependencies": {},
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/streetsidesoftware/cspell-dicts",
+    "directory": "dictionaries/en-slang"
+  },
+  "license": "MIT",
+  "author": "Street Side Software <support@streetsidesoftware.nl>",
+  "contributors": [],
+  "exports": {
+    ".": "./cspell-ext.json",
+    "./cspell": "./cspell-ext.json",
+    "./cspell-ext.json": "./cspell-ext.json"
+  },
   "files": [
     "dict/en-slang.txt",
     "cspell-ext.json",
     "*.js",
     "*.d.ts"
-  ]
+  ],
+  "scripts": {
+    "build": "cspell-tools-cli build",
+    "prepare:dictionary": "pnpm run build",
+    "prepublishOnly": "echo OK",
+    "test": "cspell samples"
+  },
+  "dependencies": {},
+  "devDependencies": {}
 }

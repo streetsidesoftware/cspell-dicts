@@ -1,27 +1,11 @@
 {
   "name": "@cspell/dict-cspell-bundle",
   "version": "2.0.54",
-  "description": "Dictionaries included with the CSpell Command Line tool.",
   "private": false,
+  "description": "Dictionaries included with the CSpell Command Line tool.",
   "publishConfig": {
     "access": "public",
     "provenance": true
-  },
-  "exports": {
-    ".": "./cspell-ext.json",
-    "./cspell": "./cspell-ext.json",
-    "./cspell-ext.json": "./cspell-ext.json"
-  },
-  "scripts": {
-    "build": "node ./scripts/build.mjs && prettier cspell-ext.json --write ",
-    "test": "cspell --no-default-configuration .",
-    "prepublishOnly": "echo OK",
-    "prepare:dictionary": "pnpm run build"
-  },
-  "repository": {
-    "type": "git",
-    "url": "https://github.com/streetsidesoftware/cspell-dicts",
-    "directory": "dictionaries/cspell"
   },
   "keywords": [
     "cspell",
@@ -30,14 +14,34 @@
     "dictionary",
     "spelling"
   ],
-  "author": "Street Side Software <support@streetsidesoftware.nl>",
-  "contributors": [],
-  "license": "MIT",
+  "homepage": "https://github.com/streetsidesoftware/cspell-dicts/blob/main/dictionaries/cspell#readme",
   "bugs": {
     "url": "https://github.com/streetsidesoftware/cspell-dicts/issues"
   },
-  "homepage": "https://github.com/streetsidesoftware/cspell-dicts/blob/main/dictionaries/cspell#readme",
-  "devDependencies": {},
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/streetsidesoftware/cspell-dicts",
+    "directory": "dictionaries/cspell"
+  },
+  "license": "MIT",
+  "author": "Street Side Software <support@streetsidesoftware.nl>",
+  "contributors": [],
+  "exports": {
+    ".": "./cspell-ext.json",
+    "./cspell": "./cspell-ext.json",
+    "./cspell-ext.json": "./cspell-ext.json"
+  },
+  "files": [
+    "cspell-ext.json",
+    "*.js",
+    "*.d.ts"
+  ],
+  "scripts": {
+    "build": "node ./scripts/build.mjs && prettier cspell-ext.json --write ",
+    "prepare:dictionary": "pnpm run build",
+    "prepublishOnly": "echo OK",
+    "test": "cspell --no-default-configuration ."
+  },
   "dependencies": {
     "@cspell/dict-ada": "workspace:^",
     "@cspell/dict-al": "workspace:^",
@@ -54,8 +58,8 @@
     "@cspell/dict-dotnet": "workspace:^",
     "@cspell/dict-elixir": "workspace:^",
     "@cspell/dict-en-common-misspellings": "workspace:^",
-    "@cspell/dict-en_us": "workspace:^",
     "@cspell/dict-en-gb-mit": "workspace:^",
+    "@cspell/dict-en_us": "workspace:^",
     "@cspell/dict-filetypes": "workspace:^",
     "@cspell/dict-flutter": "workspace:^",
     "@cspell/dict-fonts": "workspace:^",
@@ -95,9 +99,5 @@
     "@cspell/dict-typescript": "workspace:^",
     "@cspell/dict-vue": "workspace:^"
   },
-  "files": [
-    "cspell-ext.json",
-    "*.js",
-    "*.d.ts"
-  ]
+  "devDependencies": {}
 }

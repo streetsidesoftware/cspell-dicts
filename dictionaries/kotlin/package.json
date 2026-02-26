@@ -6,24 +6,6 @@
     "access": "public",
     "provenance": true
   },
-  "exports": {
-    ".": "./cspell-ext.json",
-    "./cspell": "./cspell-ext.json",
-    "./cspell-ext.json": "./cspell-ext.json"
-  },
-  "scripts": {
-    "build": "cspell-tools-cli build",
-    "test": "pnpm test:samples && pnpm test:src",
-    "test:samples": "cspell \"samples/*.kt\"",
-    "test:src": "head -n 1000 \"src/kotlin.txt\" | cspell -c ./cspell-ext.json \"--locale=*\" \"--languageId=kotlin\" stdin",
-    "prepublishOnly": "echo OK",
-    "prepare:dictionary": "pnpm run build"
-  },
-  "repository": {
-    "type": "git",
-    "url": "https://github.com/streetsidesoftware/cspell-dicts",
-    "directory": "dictionaries/kotlin"
-  },
   "keywords": [
     "cspell",
     "cspell-ext",
@@ -32,18 +14,36 @@
     "dictionary",
     "spelling"
   ],
-  "author": "Street Side Software <support@streetsidesoftware.nl>",
-  "license": "MIT",
+  "homepage": "https://github.com/streetsidesoftware/cspell-dicts/blob/main/dictionaries/kotlin#readme",
   "bugs": {
     "url": "https://github.com/streetsidesoftware/cspell-dicts/issues"
   },
-  "homepage": "https://github.com/streetsidesoftware/cspell-dicts/blob/main/dictionaries/kotlin#readme",
-  "devDependencies": {},
-  "dependencies": {},
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/streetsidesoftware/cspell-dicts",
+    "directory": "dictionaries/kotlin"
+  },
+  "license": "MIT",
+  "author": "Street Side Software <support@streetsidesoftware.nl>",
+  "exports": {
+    ".": "./cspell-ext.json",
+    "./cspell": "./cspell-ext.json",
+    "./cspell-ext.json": "./cspell-ext.json"
+  },
   "files": [
     "dict/kotlin.txt",
     "cspell-ext.json",
     "*.js",
     "*.d.ts"
-  ]
+  ],
+  "scripts": {
+    "build": "cspell-tools-cli build",
+    "prepare:dictionary": "pnpm run build",
+    "prepublishOnly": "echo OK",
+    "test": "pnpm test:samples && pnpm test:src",
+    "test:samples": "cspell \"samples/*.kt\"",
+    "test:src": "head -n 1000 \"src/kotlin.txt\" | cspell -c ./cspell-ext.json \"--locale=*\" \"--languageId=kotlin\" stdin"
+  },
+  "dependencies": {},
+  "devDependencies": {}
 }

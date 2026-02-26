@@ -6,23 +6,6 @@
     "access": "public",
     "provenance": true
   },
-  "exports": {
-    ".": "./cspell-ext.json",
-    "./cspell": "./cspell-ext.json",
-    "./cspell-ext.json": "./cspell-ext.json"
-  },
-  "scripts": {
-    "build": "cspell-tools-cli build",
-    "test": "pnpm run test-check",
-    "test-check": "ava",
-    "prepublishOnly": "echo pre-publish",
-    "prepare:dictionary": "pnpm run build"
-  },
-  "repository": {
-    "type": "git",
-    "url": "https://github.com/streetsidesoftware/cspell-dicts",
-    "directory": "dictionaries/markdown"
-  },
   "keywords": [
     "cspell",
     "cspell-ext",
@@ -31,19 +14,21 @@
     "dictionary",
     "spelling"
   ],
-  "author": "Street Side Software <support@streetsidesoftware.nl>",
-  "license": "MIT",
+  "homepage": "https://github.com/streetsidesoftware/cspell-dicts/blob/main/dictionaries/markdown#readme",
   "bugs": {
     "url": "https://github.com/streetsidesoftware/cspell-dicts/issues"
   },
-  "homepage": "https://github.com/streetsidesoftware/cspell-dicts/blob/main/dictionaries/markdown#readme",
-  "devDependencies": {},
-  "dependencies": {},
-  "peerDependencies": {
-    "@cspell/dict-css": "workspace:^",
-    "@cspell/dict-html": "workspace:^",
-    "@cspell/dict-html-symbol-entities": "workspace:^",
-    "@cspell/dict-typescript": "workspace:^"
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/streetsidesoftware/cspell-dicts",
+    "directory": "dictionaries/markdown"
+  },
+  "license": "MIT",
+  "author": "Street Side Software <support@streetsidesoftware.nl>",
+  "exports": {
+    ".": "./cspell-ext.json",
+    "./cspell": "./cspell-ext.json",
+    "./cspell-ext.json": "./cspell-ext.json"
   },
   "files": [
     "markdown.txt.gz",
@@ -51,5 +36,20 @@
     "cspell-ext.yaml",
     "*.js",
     "*.d.ts"
-  ]
+  ],
+  "scripts": {
+    "build": "cspell-tools-cli build",
+    "prepare:dictionary": "pnpm run build",
+    "prepublishOnly": "echo pre-publish",
+    "test": "pnpm run test-check",
+    "test-check": "ava"
+  },
+  "dependencies": {},
+  "devDependencies": {},
+  "peerDependencies": {
+    "@cspell/dict-css": "workspace:^",
+    "@cspell/dict-html": "workspace:^",
+    "@cspell/dict-html-symbol-entities": "workspace:^",
+    "@cspell/dict-typescript": "workspace:^"
+  }
 }

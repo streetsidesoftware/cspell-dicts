@@ -6,26 +6,6 @@
     "access": "public",
     "provenance": true
   },
-  "exports": {
-    ".": "./cspell-ext.json",
-    "./cspell": "./cspell-ext.json",
-    "./cspell-ext.json": "./cspell-ext.json"
-  },
-  "scripts": {
-    "build": "cspell-tools-cli build && pnpm gz",
-    "build:conditional": "cspell-tools-cli build --conditional && pnpm gz",
-    "test:dic": "pipe-cmds \"hunspell-reader words -n 1000 \\\"src/hunspell/eo.dic\\\"\" \"cspell -c ./cspell-ext.json \\\"--locale=eo\\\" \\\"--languageId=*\\\" stdin\"",
-    "test:samples": "cspell samples",
-    "test": "pnpm test:dic && pnpm test:samples",
-    "gz": "cspell-tools-cli gzip \"*.trie\"",
-    "prepare:dictionary": "pnpm gz",
-    "prepublishOnly": "echo pre-publish"
-  },
-  "repository": {
-    "type": "git",
-    "url": "https://github.com/streetsidesoftware/cspell-dicts",
-    "directory": "dictionaries/eo"
-  },
   "keywords": [
     "cspell",
     "eo",
@@ -33,15 +13,35 @@
     "dictionary",
     "spelling"
   ],
-  "author": "Street Side Software <support@streetsidesoftware.nl>",
-  "license": "GPL-3.0+",
+  "homepage": "https://github.com/streetsidesoftware/cspell-dicts/blob/main/dictionaries/eo#readme",
   "bugs": {
     "url": "https://github.com/streetsidesoftware/cspell-dicts/issues"
   },
-  "homepage": "https://github.com/streetsidesoftware/cspell-dicts/blob/main/dictionaries/eo#readme",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/streetsidesoftware/cspell-dicts",
+    "directory": "dictionaries/eo"
+  },
+  "license": "GPL-3.0+",
+  "author": "Street Side Software <support@streetsidesoftware.nl>",
+  "exports": {
+    ".": "./cspell-ext.json",
+    "./cspell": "./cspell-ext.json",
+    "./cspell-ext.json": "./cspell-ext.json"
+  },
   "files": [
     "eo.trie.gz",
     "src/hunspell/eo_license.txt",
     "cspell-ext.json"
-  ]
+  ],
+  "scripts": {
+    "build": "cspell-tools-cli build && pnpm gz",
+    "build:conditional": "cspell-tools-cli build --conditional && pnpm gz",
+    "gz": "cspell-tools-cli gzip \"*.trie\"",
+    "prepare:dictionary": "pnpm gz",
+    "prepublishOnly": "echo pre-publish",
+    "test": "pnpm test:dic && pnpm test:samples",
+    "test:dic": "pipe-cmds \"hunspell-reader words -n 1000 \\\"src/hunspell/eo.dic\\\"\" \"cspell -c ./cspell-ext.json \\\"--locale=eo\\\" \\\"--languageId=*\\\" stdin\"",
+    "test:samples": "cspell samples"
+  }
 }
