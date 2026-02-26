@@ -51,6 +51,6 @@ dictionaries:
 
 ## Dictionary Information
 
-| Name         | Enabled | Description           |
-| ------------ | ------- | --------------------- |
+| Name         | Enabled | Description            |
+| ------------ | ------- | ---------------------- |
 | `mime-types` | Yes     | MIME Types dictionary. |

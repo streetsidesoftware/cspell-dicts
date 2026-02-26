@@ -72,8 +72,8 @@ dictionaries:
 
 ## Dictionary Information
 
-| Name         | Enabled | Description           |
-| ------------ | ------- | --------------------- |
+| Name         | Enabled | Description            |
+| ------------ | ------- | ---------------------- |
 | `mime-types` | Yes     | MIME Types dictionary. |
 
 <!--- @@inject-end: ./static/install.md --->
