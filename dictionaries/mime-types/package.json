@@ -13,13 +13,13 @@
   },
   "scripts": {
     "build": "cspell-tools-cli build",
-    "test": "shx head -n 100 src/mime-types.txt | cspell -c ./cspell-ext.json --dictionary=mime-types \"--locale=*\" stdin",
+    "test": "shx head -n 100 src/mime-types.txt | cspell --dictionary=mime-types stdin",
     "prepublishOnly": "echo pre-publish",
     "prepare:dictionary": "pnpm run build",
     "sync:manual": "GITHUB_TOKEN=$(gh auth token) pnpm sync",
     "sync": "sync-github-files jshttp/mime-db --tag=master --filter \"src/*.*\" --filter LICENSE -o src/mime-db",
     "postsync": "node ./scripts/mime-db-to-txt.mjs",
-    "conditional-build": "pnpm run sync && pnpm run build"
+    "conditional-build": "pnpm run sync && pnpm run postsync && pnpm run build"
   },
   "repository": {
     "type": "git",
@@ -36,10 +36,16 @@
   ],
   "author": "Street Side Software <support@streetsidesoftware.nl>",
   "license": "MIT",
+  "contributors": [
+    "Jason Dent <jason+github@streetsidesoftware.nl>"
+  ],
   "bugs": {
     "url": "https://github.com/streetsidesoftware/cspell-dicts/issues"
   },
   "homepage": "https://github.com/streetsidesoftware/cspell-dicts/blob/main/dictionaries/mime-types#readme",
+  "devDependencies": {
+    "cspell-dicts-scripts": "workspace:*"
+  },
   "files": [
     "dict/mime-types.txt.gz",
     "cspell-ext.json"
