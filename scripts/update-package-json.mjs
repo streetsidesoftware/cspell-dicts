@@ -1,6 +1,7 @@
 #!/usr/bin/env node
 
 import fs from 'node:fs/promises';
+import { sortPackageJson, sortOrder as defaultSortOrder } from 'sort-package-json';
 
 import { findDictionaryPackages } from './lib/find-dictionary-packages.mjs';
 
@@ -28,7 +29,22 @@ async function updatePackageJson(pkgFile) {
         provenance: true,
     };
 
-    await fs.writeFile(pkgFile, JSON.stringify(pkg, null, 2) + '\n');
+    const pkgJson = JSON.stringify(pkg, null, 2) + '\n';
+
+    const sortOrder = [
+        ...new Set([
+            '$schema',
+            'name',
+            'displayName',
+            'version',
+            'private',
+            'description',
+            'publishConfig',
+            ...defaultSortOrder,
+        ]),
+    ];
+
+    await fs.writeFile(pkgFile, sortPackageJson(pkgJson, { sortOrder }));
 }
 
 async function run() {
