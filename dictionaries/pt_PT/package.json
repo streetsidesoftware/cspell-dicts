@@ -6,23 +6,6 @@
     "access": "public",
     "provenance": true
   },
-  "exports": {
-    ".": "./cspell-ext.json",
-    "./cspell": "./cspell-ext.json",
-    "./cspell-ext.json": "./cspell-ext.json"
-  },
-  "scripts": {
-    "build": "cspell-tools-cli build",
-    "build:conditional": "cspell-tools-cli build --conditional && pnpm gz",
-    "gz": "cspell-tools-cli gzip \"dict/*.trie\"",
-    "prepare:dictionary": "pnpm run gz",
-    "test": "cspell samples"
-  },
-  "repository": {
-    "type": "git",
-    "url": "https://github.com/streetsidesoftware/cspell-dicts",
-    "directory": "dictionaries/pt_PT"
-  },
   "keywords": [
     "cspell",
     "pt_PT",
@@ -30,15 +13,32 @@
     "dictionary",
     "spelling"
   ],
-  "author": "Street Side Software <support@streetsidesoftware.nl>",
-  "license": "LGPL-3.0",
+  "homepage": "https://github.com/streetsidesoftware/cspell-dicts/blob/main/dictionaries/pt_PT#readme",
   "bugs": {
     "url": "https://github.com/streetsidesoftware/cspell-dicts/issues"
   },
-  "homepage": "https://github.com/streetsidesoftware/cspell-dicts/blob/main/dictionaries/pt_PT#readme",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/streetsidesoftware/cspell-dicts",
+    "directory": "dictionaries/pt_PT"
+  },
+  "license": "LGPL-3.0",
+  "author": "Street Side Software <support@streetsidesoftware.nl>",
+  "exports": {
+    ".": "./cspell-ext.json",
+    "./cspell": "./cspell-ext.json",
+    "./cspell-ext.json": "./cspell-ext.json"
+  },
   "files": [
     "dict/Portuguese-European.trie.gz",
     "cspell-ext.json",
     "src/hunspell/LICENSE"
-  ]
+  ],
+  "scripts": {
+    "build": "cspell-tools-cli build",
+    "build:conditional": "cspell-tools-cli build --conditional && pnpm gz",
+    "gz": "cspell-tools-cli gzip \"dict/*.trie\"",
+    "prepare:dictionary": "pnpm run gz",
+    "test": "cspell samples"
+  }
 }

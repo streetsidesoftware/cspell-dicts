@@ -1,33 +1,11 @@
 {
   "name": "@cspell/dict-et-ee",
   "version": "3.1.6",
-  "description": "Estonian dictionary for cspell.",
   "private": false,
+  "description": "Estonian dictionary for cspell.",
   "publishConfig": {
     "access": "public",
     "provenance": true
-  },
-  "exports": {
-    ".": "./cspell-ext.json",
-    "./cspell": "./cspell-ext.json",
-    "./cspell-ext.json": "./cspell-ext.json"
-  },
-  "scripts": {
-    "build": "pnpm run compile",
-    "sync": "pnpm cpy \"node_modules/dictionary-et/index.{aff,dic}\" src",
-    "compile": "cspell-tools-cli build",
-    "conditional-build": "pnpm run sync && pnpm run build --conditional && pnpm gz",
-    "test-dict": "pipe-cmds \"hunspell-reader words -n 10000 \\\"src/index.dic\\\"\" \"cspell -c ./cspell-ext.json --locale=et --languageId=* stdin\"",
-    "test-text": "cspell -c ./cspell-ext.json --locale=et --languageId=* \"samples/**\"",
-    "test": "pnpm run test-dict && pnpm run test-text",
-    "gz": "cspell-tools-cli gzip \"*.trie\"",
-    "prepare:dictionary": "pnpm gz",
-    "prepublishOnly": "echo pre-publish"
-  },
-  "repository": {
-    "type": "git",
-    "url": "https://github.com/streetsidesoftware/cspell-dicts",
-    "directory": "dictionaries/et-EE"
   },
   "keywords": [
     "cspell",
@@ -36,12 +14,22 @@
     "dictionary",
     "spelling"
   ],
-  "author": "Street Side Software <support@streetsidesoftware.nl>",
-  "license": "LGPL-3.0+",
+  "homepage": "https://github.com/streetsidesoftware/cspell-dicts/blob/main/dictionaries/et-EE#readme",
   "bugs": {
     "url": "https://github.com/streetsidesoftware/cspell-dicts/issues"
   },
-  "homepage": "https://github.com/streetsidesoftware/cspell-dicts/blob/main/dictionaries/et-EE#readme",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/streetsidesoftware/cspell-dicts",
+    "directory": "dictionaries/et-EE"
+  },
+  "license": "LGPL-3.0+",
+  "author": "Street Side Software <support@streetsidesoftware.nl>",
+  "exports": {
+    ".": "./cspell-ext.json",
+    "./cspell": "./cspell-ext.json",
+    "./cspell-ext.json": "./cspell-ext.json"
+  },
   "files": [
     "src/LICENSE",
     "et_EE.trie.gz",
@@ -49,6 +37,18 @@
     "*.js",
     "*.d.ts"
   ],
+  "scripts": {
+    "build": "pnpm run compile",
+    "compile": "cspell-tools-cli build",
+    "conditional-build": "pnpm run sync && pnpm run build --conditional && pnpm gz",
+    "gz": "cspell-tools-cli gzip \"*.trie\"",
+    "prepare:dictionary": "pnpm gz",
+    "prepublishOnly": "echo pre-publish",
+    "sync": "pnpm cpy \"node_modules/dictionary-et/index.{aff,dic}\" src",
+    "test": "pnpm run test-dict && pnpm run test-text",
+    "test-dict": "pipe-cmds \"hunspell-reader words -n 10000 \\\"src/index.dic\\\"\" \"cspell -c ./cspell-ext.json --locale=et --languageId=* stdin\"",
+    "test-text": "cspell -c ./cspell-ext.json --locale=et --languageId=* \"samples/**\""
+  },
   "devDependencies": {
     "dictionary-et": "^2.0.0"
   }

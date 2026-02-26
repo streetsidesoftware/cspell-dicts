@@ -6,30 +6,6 @@
     "access": "public",
     "provenance": true
   },
-  "exports": {
-    ".": "./cspell-ext.json",
-    "./cspell": "./cspell-ext.json",
-    "./cspell-ext.json": "./cspell-ext.json"
-  },
-  "scripts": {
-    "cspell-yaml-to-json": "pnpm -s yaml2json -p cspell.config.yaml > cspell-ext.json && pnpm lint",
-    "build": "pnpm run compile",
-    "sync": "pnpm cpy \"node_modules/dictionary-es/**\" src/hunspell",
-    "compile": "cspell-tools-cli build",
-    "conditional-build": "pnpm run sync && pnpm run build --conditional && pnpm gz",
-    "lint": "pnpm prettier -w \"*.{yaml,json}\"",
-    "test-dict": "pipe-cmds \"hunspell-reader words -n 1000 \\\"src/hunspell/index.dic\\\"\" \"cspell -c ./cspell-ext.json --locale=es --languageId=* stdin\"",
-    "test-text": "cspell",
-    "test": "pnpm run test-dict && pnpm run test-text",
-    "gz": "cspell-tools-cli gzip \"*.trie\"",
-    "prepare:dictionary": "pnpm gz",
-    "prepublishOnly": "echo pre-publish"
-  },
-  "repository": {
-    "type": "git",
-    "url": "https://github.com/streetsidesoftware/cspell-dicts",
-    "directory": "dictionaries/es_ES"
-  },
   "keywords": [
     "cspell",
     "es_ES",
@@ -37,18 +13,42 @@
     "dictionary",
     "spelling"
   ],
-  "author": "Street Side Software <support@streetsidesoftware.nl>",
-  "license": "LGPL-3.0",
+  "homepage": "https://github.com/streetsidesoftware/cspell-dicts/blob/main/dictionaries/es_ES#readme",
   "bugs": {
     "url": "https://github.com/streetsidesoftware/cspell-dicts/issues"
   },
-  "homepage": "https://github.com/streetsidesoftware/cspell-dicts/blob/main/dictionaries/es_ES#readme",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/streetsidesoftware/cspell-dicts",
+    "directory": "dictionaries/es_ES"
+  },
+  "license": "LGPL-3.0",
+  "author": "Street Side Software <support@streetsidesoftware.nl>",
+  "exports": {
+    ".": "./cspell-ext.json",
+    "./cspell": "./cspell-ext.json",
+    "./cspell-ext.json": "./cspell-ext.json"
+  },
   "files": [
     "Spanish.trie.gz",
     "cspell-ext.json",
     "src/es_ES/README_es_ES.txt",
     "src/hunspell/license"
   ],
+  "scripts": {
+    "build": "pnpm run compile",
+    "compile": "cspell-tools-cli build",
+    "conditional-build": "pnpm run sync && pnpm run build --conditional && pnpm gz",
+    "cspell-yaml-to-json": "pnpm -s yaml2json -p cspell.config.yaml > cspell-ext.json && pnpm lint",
+    "gz": "cspell-tools-cli gzip \"*.trie\"",
+    "lint": "pnpm prettier -w \"*.{yaml,json}\"",
+    "prepare:dictionary": "pnpm gz",
+    "prepublishOnly": "echo pre-publish",
+    "sync": "pnpm cpy \"node_modules/dictionary-es/**\" src/hunspell",
+    "test": "pnpm run test-dict && pnpm run test-text",
+    "test-dict": "pipe-cmds \"hunspell-reader words -n 1000 \\\"src/hunspell/index.dic\\\"\" \"cspell -c ./cspell-ext.json --locale=es --languageId=* stdin\"",
+    "test-text": "cspell"
+  },
   "devDependencies": {
     "dictionary-es": "^4.0.0"
   }

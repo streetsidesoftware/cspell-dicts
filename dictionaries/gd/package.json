@@ -6,23 +6,6 @@
     "access": "public",
     "provenance": true
   },
-  "exports": {
-    ".": "./cspell-ext.json",
-    "./cspell": "./cspell-ext.json",
-    "./cspell-ext.json": "./cspell-ext.json"
-  },
-  "scripts": {
-    "build": "cspell-tools-cli build --conditional",
-    "conditional-build": "pnpm run build",
-    "test": "cspell samples",
-    "prepublishOnly": "echo OK",
-    "prepare:dictionary": "echo OK"
-  },
-  "repository": {
-    "type": "git",
-    "url": "https://github.com/streetsidesoftware/cspell-dicts",
-    "directory": "dictionaries/gd"
-  },
   "keywords": [
     "cspell",
     "cspell-ext",
@@ -31,18 +14,35 @@
     "dictionary",
     "spelling"
   ],
-  "author": "Street Side Software <support@streetsidesoftware.nl>",
-  "contributors": [],
-  "license": "GPL-3.0",
+  "homepage": "https://github.com/streetsidesoftware/cspell-dicts/blob/main/dictionaries/gd#readme",
   "bugs": {
     "url": "https://github.com/streetsidesoftware/cspell-dicts/issues"
   },
-  "homepage": "https://github.com/streetsidesoftware/cspell-dicts/blob/main/dictionaries/gd#readme",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/streetsidesoftware/cspell-dicts",
+    "directory": "dictionaries/gd"
+  },
+  "license": "GPL-3.0",
+  "author": "Street Side Software <support@streetsidesoftware.nl>",
+  "contributors": [],
+  "exports": {
+    ".": "./cspell-ext.json",
+    "./cspell": "./cspell-ext.json",
+    "./cspell-ext.json": "./cspell-ext.json"
+  },
   "files": [
     "dict/gd.trie",
     "src/hunspell-gd/README_gd_GB.txt",
     "cspell-ext.json",
     "*.js",
     "*.d.ts"
-  ]
+  ],
+  "scripts": {
+    "build": "cspell-tools-cli build --conditional",
+    "conditional-build": "pnpm run build",
+    "prepare:dictionary": "echo OK",
+    "prepublishOnly": "echo OK",
+    "test": "cspell samples"
+  }
 }

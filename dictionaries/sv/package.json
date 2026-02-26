@@ -6,26 +6,6 @@
     "access": "public",
     "provenance": true
   },
-  "exports": {
-    ".": "./cspell-ext.json",
-    "./cspell": "./cspell-ext.json",
-    "./cspell-ext.json": "./cspell-ext.json"
-  },
-  "scripts": {
-    "build": "cspell-tools-cli build",
-    "sync": "pnpm cpy \"node_modules/dictionary-sv/**\" src/hunspell",
-    "conditional-build": "pnpm sync && pnpm build --conditional",
-    "test-sv": "pipe-cmds \"hunspell-reader words -n 1000 \\\"src/ooo-swedish-dict-2-42/dictionaries/sv_SE.dic\\\"\" \"shx tail -n 200\" \"cspell -c ./cspell-ext.json --locale=sv --languageId=* stdin\"",
-    "test-samples": "cspell -c ./cspell-ext.json --locale=sv,en \"samples/**\"",
-    "test": "pnpm run test-sv && pnpm run test-samples",
-    "prepare:dictionary": "cspell-tools-cli gzip \"*.trie\"",
-    "prepublishOnly": "pnpm run conditional-build && pnpm test"
-  },
-  "repository": {
-    "type": "git",
-    "url": "https://github.com/streetsidesoftware/cspell-dicts",
-    "directory": "dictionaries/sv"
-  },
   "keywords": [
     "cspell",
     "cspell-ext",
@@ -34,16 +14,36 @@
     "dictionary",
     "spelling"
   ],
-  "author": "Street Side Software <support@streetsidesoftware.nl>",
-  "license": "GPL-3.0-or-later",
+  "homepage": "https://github.com/streetsidesoftware/cspell-dicts/blob/main/dictionaries/sv#readme",
   "bugs": {
     "url": "https://github.com/streetsidesoftware/cspell-dicts/issues"
   },
-  "homepage": "https://github.com/streetsidesoftware/cspell-dicts/blob/main/dictionaries/sv#readme",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/streetsidesoftware/cspell-dicts",
+    "directory": "dictionaries/sv"
+  },
+  "license": "GPL-3.0-or-later",
+  "author": "Street Side Software <support@streetsidesoftware.nl>",
+  "exports": {
+    ".": "./cspell-ext.json",
+    "./cspell": "./cspell-ext.json",
+    "./cspell-ext.json": "./cspell-ext.json"
+  },
   "files": [
     "Swedish.trie.gz",
     "cspell-ext.json"
   ],
+  "scripts": {
+    "build": "cspell-tools-cli build",
+    "conditional-build": "pnpm sync && pnpm build --conditional",
+    "prepare:dictionary": "cspell-tools-cli gzip \"*.trie\"",
+    "prepublishOnly": "pnpm run conditional-build && pnpm test",
+    "sync": "pnpm cpy \"node_modules/dictionary-sv/**\" src/hunspell",
+    "test": "pnpm run test-sv && pnpm run test-samples",
+    "test-samples": "cspell -c ./cspell-ext.json --locale=sv,en \"samples/**\"",
+    "test-sv": "pipe-cmds \"hunspell-reader words -n 1000 \\\"src/ooo-swedish-dict-2-42/dictionaries/sv_SE.dic\\\"\" \"shx tail -n 200\" \"cspell -c ./cspell-ext.json --locale=sv --languageId=* stdin\""
+  },
   "devDependencies": {
     "dictionary-sv": "^4.0.0"
   }

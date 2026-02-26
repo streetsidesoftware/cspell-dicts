@@ -6,23 +6,6 @@
     "access": "public",
     "provenance": true
   },
-  "exports": {
-    ".": "./cspell-ext.json",
-    "./cspell": "./cspell-ext.json",
-    "./cspell-ext.json": "./cspell-ext.json"
-  },
-  "scripts": {
-    "build": "cspell-tools-cli build && pnpm prepare:dictionary",
-    "build:conditional": "cspell-tools-cli build --conditional && pnpm prepare:dictionary",
-    "test": "pipe-cmds \"hunspell-reader words -n 1000 src/Czech.dic\" \"cspell -c ./cspell-ext.json --locale=cs --languageId=* stdin\"",
-    "prepare:dictionary": "cspell-tools-cli gzip \"*.trie\"",
-    "prepublishOnly": "echo pre-publish"
-  },
-  "repository": {
-    "type": "git",
-    "url": "https://github.com/streetsidesoftware/cspell-dicts",
-    "directory": "dictionaries/cs_CZ"
-  },
   "keywords": [
     "cspell",
     "cs_CZ",
@@ -30,15 +13,32 @@
     "dictionary",
     "spelling"
   ],
-  "author": "Street Side Software <support@streetsidesoftware.nl>",
-  "license": "GPL-3.0+",
+  "homepage": "https://github.com/streetsidesoftware/cspell-dicts/blob/main/dictionaries/cs_CZ#readme",
   "bugs": {
     "url": "https://github.com/streetsidesoftware/cspell-dicts/issues"
   },
-  "homepage": "https://github.com/streetsidesoftware/cspell-dicts/blob/main/dictionaries/cs_CZ#readme",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/streetsidesoftware/cspell-dicts",
+    "directory": "dictionaries/cs_CZ"
+  },
+  "license": "GPL-3.0+",
+  "author": "Street Side Software <support@streetsidesoftware.nl>",
+  "exports": {
+    ".": "./cspell-ext.json",
+    "./cspell": "./cspell-ext.json",
+    "./cspell-ext.json": "./cspell-ext.json"
+  },
   "files": [
     "Czech.txt",
     "Czech.trie.gz",
     "cspell-ext.json"
-  ]
+  ],
+  "scripts": {
+    "build": "cspell-tools-cli build && pnpm prepare:dictionary",
+    "build:conditional": "cspell-tools-cli build --conditional && pnpm prepare:dictionary",
+    "prepare:dictionary": "cspell-tools-cli gzip \"*.trie\"",
+    "prepublishOnly": "echo pre-publish",
+    "test": "pipe-cmds \"hunspell-reader words -n 1000 src/Czech.dic\" \"cspell -c ./cspell-ext.json --locale=cs --languageId=* stdin\""
+  }
 }

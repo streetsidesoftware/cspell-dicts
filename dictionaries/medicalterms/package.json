@@ -6,26 +6,6 @@
     "access": "public",
     "provenance": true
   },
-  "exports": {
-    ".": "./cspell-ext.json",
-    "./cspell": "./cspell-ext.json",
-    "./cspell-ext.json": "./cspell-ext.json"
-  },
-  "scripts": {
-    "build": "cspell-tools-cli build && pnpm run gz",
-    "build:conditional": "pnpm cspell-tools-cli build --conditional && pnpm run gz",
-    "sync:manual": "GITHUB_TOKEN=$(gh auth token) pnpm sync",
-    "sync": "sync-github-files Glutanimate/wordlist-medicalterms-en  --tag=d87b48e -o src/wordlist-medicalterms-en",
-    "test": "cspell samples --no-progress",
-    "gz": "cspell-tools-cli gzip \"dict/*.txt\"",
-    "prepublishOnly": "echo pre-publish",
-    "prepare:dictionary": "pnpm run build"
-  },
-  "repository": {
-    "type": "git",
-    "url": "https://github.com/streetsidesoftware/cspell-dicts",
-    "directory": "dictionaries/medicalterms"
-  },
   "keywords": [
     "cspell",
     "medical-terms",
@@ -33,17 +13,37 @@
     "dictionary",
     "spelling"
   ],
-  "author": "Street Side Software <support@streetsidesoftware.nl>",
-  "license": "GPL-3.0-or-later",
+  "homepage": "https://github.com/streetsidesoftware/cspell-dicts/blob/main/dictionaries/medicalterms#readme",
   "bugs": {
     "url": "https://github.com/streetsidesoftware/cspell-dicts/issues"
   },
-  "homepage": "https://github.com/streetsidesoftware/cspell-dicts/blob/main/dictionaries/medicalterms#readme",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/streetsidesoftware/cspell-dicts",
+    "directory": "dictionaries/medicalterms"
+  },
+  "license": "GPL-3.0-or-later",
+  "author": "Street Side Software <support@streetsidesoftware.nl>",
+  "exports": {
+    ".": "./cspell-ext.json",
+    "./cspell": "./cspell-ext.json",
+    "./cspell-ext.json": "./cspell-ext.json"
+  },
   "files": [
     "dict/medicalterms-en.txt.gz",
     "src/wordlist-medicalterms-en/LICENSE",
     "src/wordlist-medicalterms-en/README.md",
     "!dict/README.md",
     "cspell-ext.json"
-  ]
+  ],
+  "scripts": {
+    "build": "cspell-tools-cli build && pnpm run gz",
+    "build:conditional": "pnpm cspell-tools-cli build --conditional && pnpm run gz",
+    "gz": "cspell-tools-cli gzip \"dict/*.txt\"",
+    "prepare:dictionary": "pnpm run build",
+    "prepublishOnly": "echo pre-publish",
+    "sync": "sync-github-files Glutanimate/wordlist-medicalterms-en  --tag=d87b48e -o src/wordlist-medicalterms-en",
+    "sync:manual": "GITHUB_TOKEN=$(gh auth token) pnpm sync",
+    "test": "cspell samples --no-progress"
+  }
 }

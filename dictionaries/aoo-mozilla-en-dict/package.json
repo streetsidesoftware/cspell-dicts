@@ -1,26 +1,26 @@
 {
   "name": "@cspell/aoo-mozilla-en-dict",
   "version": "1.0.7",
+  "private": true,
   "description": "Selective copy of the aoo-mozilla-en-dict dictionary sources.",
   "publishConfig": {
     "access": "public",
     "provenance": true
   },
-  "private": true,
-  "scripts": {
-    "sync:manual": "GITHUB_TOKEN=$(gh auth token) pnpm sync",
-    "sync": "sync-github-files marcoagpinto/aoo-mozilla-en-dict --filter \"**/en_*/**/*.{aff,dic}\" --filter \"**/en_*/**/README*\" --tag=master -o dicts && pnpm sync-clean",
-    "sync-clean": "shx rm -rf \"dicts/*/wordlist*.txt\" \"dicts/*/*speller*.txt\"",
-    "conditional-build": "pnpm run sync"
-  },
+  "keywords": [],
   "repository": {
     "type": "git",
     "url": "https://github.com/streetsidesoftware/cspell-dicts",
     "directory": "dictionaries/aoo-mozilla-en-dict"
   },
-  "keywords": [],
   "author": "Street Side Software <support@streetsidesoftware.nl>",
   "files": [
     "dicts"
-  ]
+  ],
+  "scripts": {
+    "conditional-build": "pnpm run sync",
+    "sync": "sync-github-files marcoagpinto/aoo-mozilla-en-dict --filter \"**/en_*/**/*.{aff,dic}\" --filter \"**/en_*/**/README*\" --tag=master -o dicts && pnpm sync-clean",
+    "sync:manual": "GITHUB_TOKEN=$(gh auth token) pnpm sync",
+    "sync-clean": "shx rm -rf \"dicts/*/wordlist*.txt\" \"dicts/*/*speller*.txt\""
+  }
 }

@@ -6,23 +6,6 @@
     "access": "public",
     "provenance": true
   },
-  "exports": {
-    ".": "./cspell-ext.json",
-    "./cspell": "./cspell-ext.json",
-    "./cspell-ext.json": "./cspell-ext.json"
-  },
-  "scripts": {
-    "build": "cspell-tools-cli build",
-    "conditional-build": "cspell-tools-cli build --conditional",
-    "test": "cspell samples",
-    "prepublishOnly": "echo OK",
-    "prepare:dictionary": "echo OK"
-  },
-  "repository": {
-    "type": "git",
-    "url": "https://github.com/streetsidesoftware/cspell-dicts",
-    "directory": "dictionaries/hy"
-  },
   "keywords": [
     "cspell",
     "cspell-ext",
@@ -31,21 +14,38 @@
     "dictionary",
     "spelling"
   ],
+  "homepage": "https://github.com/streetsidesoftware/cspell-dicts/blob/main/dictionaries/am#readme",
+  "bugs": {
+    "url": "https://github.com/streetsidesoftware/cspell-dicts/issues"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/streetsidesoftware/cspell-dicts",
+    "directory": "dictionaries/hy"
+  },
+  "license": "MIT",
   "author": "Street Side Software <support@streetsidesoftware.nl>",
   "contributors": [
     "Kieran (https://github.com/Ki-er)"
   ],
-  "license": "MIT",
-  "bugs": {
-    "url": "https://github.com/streetsidesoftware/cspell-dicts/issues"
+  "exports": {
+    ".": "./cspell-ext.json",
+    "./cspell": "./cspell-ext.json",
+    "./cspell-ext.json": "./cspell-ext.json"
   },
-  "homepage": "https://github.com/streetsidesoftware/cspell-dicts/blob/main/dictionaries/am#readme",
-  "devDependencies": {},
-  "dependencies": {},
   "files": [
     "dict/hy.trie",
     "cspell-ext.json",
     "*.js",
     "*.d.ts"
-  ]
+  ],
+  "scripts": {
+    "build": "cspell-tools-cli build",
+    "conditional-build": "cspell-tools-cli build --conditional",
+    "prepare:dictionary": "echo OK",
+    "prepublishOnly": "echo OK",
+    "test": "cspell samples"
+  },
+  "dependencies": {},
+  "devDependencies": {}
 }

@@ -6,23 +6,6 @@
     "access": "public",
     "provenance": true
   },
-  "exports": {
-    ".": "./cspell-ext.json",
-    "./cspell": "./cspell-ext.json",
-    "./cspell-ext.json": "./cspell-ext.json"
-  },
-  "scripts": {
-    "download": "./src/build.sh --out-file ./src/k8s.txt",
-    "build": "cspell-tools-cli compile --keep-raw-case src/k8s.txt --no-compress -o ./dict",
-    "test": "shx head -n 100 src/k8s.txt | cspell -c ./cspell-ext.json \"--locale=*\" \"--languageId=yaml\" stdin",
-    "prepublishOnly": "echo pre-publish",
-    "prepare:dictionary": "pnpm run build"
-  },
-  "repository": {
-    "type": "git",
-    "url": "https://github.com/streetsidesoftware/cspell-dicts",
-    "directory": "dictionaries/k8s"
-  },
   "keywords": [
     "cspell",
     "k8s",
@@ -30,18 +13,35 @@
     "dictionary",
     "spelling"
   ],
+  "homepage": "https://github.com/streetsidesoftware/cspell-dicts/blob/main/dictionaries/k8s#readme",
+  "bugs": {
+    "url": "https://github.com/streetsidesoftware/cspell-dicts/issues"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/streetsidesoftware/cspell-dicts",
+    "directory": "dictionaries/k8s"
+  },
+  "license": "MIT",
   "author": "Street Side Software <support@streetsidesoftware.nl>",
   "contributors": [
     "Carlo Corradini",
     "Jason Dent"
   ],
-  "license": "MIT",
-  "bugs": {
-    "url": "https://github.com/streetsidesoftware/cspell-dicts/issues"
+  "exports": {
+    ".": "./cspell-ext.json",
+    "./cspell": "./cspell-ext.json",
+    "./cspell-ext.json": "./cspell-ext.json"
   },
-  "homepage": "https://github.com/streetsidesoftware/cspell-dicts/blob/main/dictionaries/k8s#readme",
   "files": [
     "dict/k8s.txt",
     "cspell-ext.json"
-  ]
+  ],
+  "scripts": {
+    "build": "cspell-tools-cli compile --keep-raw-case src/k8s.txt --no-compress -o ./dict",
+    "download": "./src/build.sh --out-file ./src/k8s.txt",
+    "prepare:dictionary": "pnpm run build",
+    "prepublishOnly": "echo pre-publish",
+    "test": "shx head -n 100 src/k8s.txt | cspell -c ./cspell-ext.json \"--locale=*\" \"--languageId=yaml\" stdin"
+  }
 }

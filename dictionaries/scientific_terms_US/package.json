@@ -6,24 +6,6 @@
     "access": "public",
     "provenance": true
   },
-  "exports": {
-    ".": "./cspell-ext.json",
-    "./cspell": "./cspell-ext.json",
-    "./cspell-ext.json": "./cspell-ext.json"
-  },
-  "scripts": {
-    "build": "cspell-tools-cli build",
-    "conditional-build": "cspell-tools-cli build --conditional",
-    "test": "shx head -n 1000 \"src/custom_scientific_US.dic.txt\" | cspell -c ./cspell-ext.json --locale=en --languageId=* stdin",
-    "gz": "cspell-tools-cli gzip \"dict/*.trie\" \"dict/*.txt\"",
-    "prepare:dictionary": "pnpm gz",
-    "prepublishOnly": "echo pre-publish"
-  },
-  "repository": {
-    "type": "git",
-    "url": "https://github.com/streetsidesoftware/cspell-dicts",
-    "directory": "dictionaries/scientific_terms_US"
-  },
   "keywords": [
     "cspell",
     "scientific_terms_US",
@@ -31,14 +13,32 @@
     "dictionary",
     "spelling"
   ],
-  "author": "Street Side Software <support@streetsidesoftware.nl>",
-  "license": "MIT",
+  "homepage": "https://github.com/streetsidesoftware/cspell-dicts/blob/main/dictionaries/scientific_terms_US#readme",
   "bugs": {
     "url": "https://github.com/streetsidesoftware/cspell-dicts/issues"
   },
-  "homepage": "https://github.com/streetsidesoftware/cspell-dicts/blob/main/dictionaries/scientific_terms_US#readme",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/streetsidesoftware/cspell-dicts",
+    "directory": "dictionaries/scientific_terms_US"
+  },
+  "license": "MIT",
+  "author": "Street Side Software <support@streetsidesoftware.nl>",
+  "exports": {
+    ".": "./cspell-ext.json",
+    "./cspell": "./cspell-ext.json",
+    "./cspell-ext.json": "./cspell-ext.json"
+  },
   "files": [
     "dict/*.gz",
     "cspell-ext.json"
-  ]
+  ],
+  "scripts": {
+    "build": "cspell-tools-cli build",
+    "conditional-build": "cspell-tools-cli build --conditional",
+    "gz": "cspell-tools-cli gzip \"dict/*.trie\" \"dict/*.txt\"",
+    "prepare:dictionary": "pnpm gz",
+    "prepublishOnly": "echo pre-publish",
+    "test": "shx head -n 1000 \"src/custom_scientific_US.dic.txt\" | cspell -c ./cspell-ext.json --locale=en --languageId=* stdin"
+  }
 }

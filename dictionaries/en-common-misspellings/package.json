@@ -6,24 +6,6 @@
     "access": "public",
     "provenance": true
   },
-  "exports": {
-    ".": "./cspell-ext.json",
-    "./cspell": "./cspell-ext.json",
-    "./cspell-ext.json": "./cspell-ext.json"
-  },
-  "scripts": {
-    "build": "node ./scripts/transform-crate-ci-typos.mts && node ./scripts/build.mts",
-    "test": "cspell .",
-    "sync": "sync-github-files crate-ci/typos crates/typos-dict/assets/words.csv LICENSE-MIT --tag=v1.33.1 -o src/crate-ci/typos",
-    "sync:manual": "GITHUB_TOKEN=$(gh auth token) pnpm sync",
-    "prepublishOnly": "echo OK",
-    "prepare:dictionary": "pnpm run build"
-  },
-  "repository": {
-    "type": "git",
-    "url": "https://github.com/streetsidesoftware/cspell-dicts",
-    "directory": "dictionaries/en-common-misspellings"
-  },
   "keywords": [
     "cspell",
     "cspell-ext",
@@ -32,16 +14,34 @@
     "dictionary",
     "spelling"
   ],
-  "author": "Street Side Software <support@streetsidesoftware.nl>",
-  "license": "CC BY-SA 4.0",
+  "homepage": "https://github.com/streetsidesoftware/cspell-dicts/blob/main/dictionaries/en-common-misspellings#readme",
   "bugs": {
     "url": "https://github.com/streetsidesoftware/cspell-dicts/issues"
   },
-  "homepage": "https://github.com/streetsidesoftware/cspell-dicts/blob/main/dictionaries/en-common-misspellings#readme",
-  "devDependencies": {},
-  "dependencies": {},
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/streetsidesoftware/cspell-dicts",
+    "directory": "dictionaries/en-common-misspellings"
+  },
+  "license": "CC BY-SA 4.0",
+  "author": "Street Side Software <support@streetsidesoftware.nl>",
+  "exports": {
+    ".": "./cspell-ext.json",
+    "./cspell": "./cspell-ext.json",
+    "./cspell-ext.json": "./cspell-ext.json"
+  },
   "files": [
     "cspell-ext.json",
     "dict/dict-*.json"
-  ]
+  ],
+  "scripts": {
+    "build": "node ./scripts/transform-crate-ci-typos.mts && node ./scripts/build.mts",
+    "prepare:dictionary": "pnpm run build",
+    "prepublishOnly": "echo OK",
+    "sync": "sync-github-files crate-ci/typos crates/typos-dict/assets/words.csv LICENSE-MIT --tag=v1.33.1 -o src/crate-ci/typos",
+    "sync:manual": "GITHUB_TOKEN=$(gh auth token) pnpm sync",
+    "test": "cspell ."
+  },
+  "dependencies": {},
+  "devDependencies": {}
 }

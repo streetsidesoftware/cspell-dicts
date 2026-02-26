@@ -6,25 +6,6 @@
     "access": "public",
     "provenance": true
   },
-  "exports": {
-    ".": "./cspell-ext.json",
-    "./cspell": "./cspell-ext.json",
-    "./cspell-ext.json": "./cspell-ext.json"
-  },
-  "scripts": {
-    "build": "cspell-tools-cli build",
-    "build:conditional": "pnpm sync && cspell-tools-cli build --conditional && pnpm gz",
-    "sync": "pnpm cpy \"node_modules/dictionary-lv/{index.{aff,dic},license,readme.md}\" \"src/hunspell/dictionary-lv/\" --flat",
-    "gz": "cspell-tools-cli gzip \"dict/*.trie\"",
-    "test": "cspell samples --no-progress",
-    "prepare:dictionary": "pnpm gz",
-    "prepublishOnly": "echo pre-publish"
-  },
-  "repository": {
-    "type": "git",
-    "url": "https://github.com/streetsidesoftware/cspell-dicts",
-    "directory": "dictionaries/lv"
-  },
   "keywords": [
     "cspell",
     "cspell-ext",
@@ -33,12 +14,22 @@
     "dictionary",
     "spelling"
   ],
-  "author": "Street Side Software <support@streetsidesoftware.nl>",
-  "license": "LGPL-3.0+",
+  "homepage": "https://github.com/streetsidesoftware/cspell-dicts/blob/main/dictionaries/lv#readme",
   "bugs": {
     "url": "https://github.com/streetsidesoftware/cspell-dicts/issues"
   },
-  "homepage": "https://github.com/streetsidesoftware/cspell-dicts/blob/main/dictionaries/lv#readme",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/streetsidesoftware/cspell-dicts",
+    "directory": "dictionaries/lv"
+  },
+  "license": "LGPL-3.0+",
+  "author": "Street Side Software <support@streetsidesoftware.nl>",
+  "exports": {
+    ".": "./cspell-ext.json",
+    "./cspell": "./cspell-ext.json",
+    "./cspell-ext.json": "./cspell-ext.json"
+  },
   "files": [
     "dict/lv.trie.gz",
     "cspell-ext.json",
@@ -47,6 +38,15 @@
     "*.js",
     "*.d.ts"
   ],
+  "scripts": {
+    "build": "cspell-tools-cli build",
+    "build:conditional": "pnpm sync && cspell-tools-cli build --conditional && pnpm gz",
+    "gz": "cspell-tools-cli gzip \"dict/*.trie\"",
+    "prepare:dictionary": "pnpm gz",
+    "prepublishOnly": "echo pre-publish",
+    "sync": "pnpm cpy \"node_modules/dictionary-lv/{index.{aff,dic},license,readme.md}\" \"src/hunspell/dictionary-lv/\" --flat",
+    "test": "cspell samples --no-progress"
+  },
   "devDependencies": {
     "dictionary-lv": "^2.0.0"
   }

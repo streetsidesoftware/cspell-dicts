@@ -1,33 +1,11 @@
 {
   "name": "@cspell/dict-public-licenses",
   "version": "2.0.16",
-  "description": "Common Public Licenses dictionary for cspell.",
   "private": false,
+  "description": "Common Public Licenses dictionary for cspell.",
   "publishConfig": {
     "access": "public",
     "provenance": true
-  },
-  "exports": {
-    ".": "./cspell-ext.json",
-    "./cspell": "./cspell-ext.json",
-    "./cspell-ext.json": "./cspell-ext.json"
-  },
-  "scripts": {
-    "build": "pnpm run generate && pnpm run compile",
-    "generate": "node ./src/extract.js",
-    "checksum": "cspell-tools-cli shasum -c checksum.txt",
-    "compile": "cspell-tools-cli build",
-    "conditional-build": "pnpm run --silent checksum || pnpm run build && pnpm run gen-checksum",
-    "test-dict": "cspell -c ./cspell-ext.json --locale=en --languageId=* --file-list source-files.txt",
-    "gen-checksum": "cspell-tools-cli shasum -u checksum.txt --list-file source-files.txt source-dependencies.txt",
-    "test": "pnpm run test-dict",
-    "prepublishOnly": "echo pre-publish",
-    "prepare:dictionary": "pnpm run build"
-  },
-  "repository": {
-    "type": "git",
-    "url": "https://github.com/streetsidesoftware/cspell-dicts",
-    "directory": "dictionaries/public-licenses"
   },
   "keywords": [
     "cspell",
@@ -36,19 +14,41 @@
     "dictionary",
     "spelling"
   ],
-  "author": "Street Side Software <support@streetsidesoftware.nl>",
-  "license": "MIT",
+  "homepage": "https://github.com/streetsidesoftware/cspell-dicts/blob/main/dictionaries/public-licenses#readme",
   "bugs": {
     "url": "https://github.com/streetsidesoftware/cspell-dicts/issues"
   },
-  "homepage": "https://github.com/streetsidesoftware/cspell-dicts/blob/main/dictionaries/public-licenses#readme",
-  "devDependencies": {
-    "spdx-license-ids": "^3.0.23"
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/streetsidesoftware/cspell-dicts",
+    "directory": "dictionaries/public-licenses"
+  },
+  "license": "MIT",
+  "author": "Street Side Software <support@streetsidesoftware.nl>",
+  "exports": {
+    ".": "./cspell-ext.json",
+    "./cspell": "./cspell-ext.json",
+    "./cspell-ext.json": "./cspell-ext.json"
   },
   "files": [
     "public-licenses.txt.gz",
     "cspell-ext.json",
     "*.js",
     "*.d.ts"
-  ]
+  ],
+  "scripts": {
+    "build": "pnpm run generate && pnpm run compile",
+    "checksum": "cspell-tools-cli shasum -c checksum.txt",
+    "compile": "cspell-tools-cli build",
+    "conditional-build": "pnpm run --silent checksum || pnpm run build && pnpm run gen-checksum",
+    "gen-checksum": "cspell-tools-cli shasum -u checksum.txt --list-file source-files.txt source-dependencies.txt",
+    "generate": "node ./src/extract.js",
+    "prepare:dictionary": "pnpm run build",
+    "prepublishOnly": "echo pre-publish",
+    "test": "pnpm run test-dict",
+    "test-dict": "cspell -c ./cspell-ext.json --locale=en --languageId=* --file-list source-files.txt"
+  },
+  "devDependencies": {
+    "spdx-license-ids": "^3.0.23"
+  }
 }

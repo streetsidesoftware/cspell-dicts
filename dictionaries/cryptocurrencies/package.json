@@ -6,37 +6,36 @@
     "access": "public",
     "provenance": true
   },
-  "exports": {
-    ".": "./cspell-ext.json",
-    "./cspell": "./cspell-ext.json",
-    "./cspell-ext.json": "./cspell-ext.json"
-  },
-  "scripts": {
-    "build": "cspell-tools-cli build",
-    "test": "cspell samples --no-progress",
-    "prepublishOnly": "echo pre-publish",
-    "prepare:dictionary": "pnpm run build"
+  "keywords": [
+    "cspell",
+    "Cryptocurrencies",
+    "dictionary",
+    "spelling"
+  ],
+  "homepage": "https://github.com/streetsidesoftware/cspell-dicts/blob/main/dictionaries/cryptocurrencies#readme",
+  "bugs": {
+    "url": "https://github.com/streetsidesoftware/cspell-dicts/issues"
   },
   "repository": {
     "type": "git",
     "url": "https://github.com/streetsidesoftware/cspell-dicts",
     "directory": "dictionaries/cryptocurrencies"
   },
-  "keywords": [
-    "cspell",
-    "Cryptocurrencies",
-    "Cryptocurrencies",
-    "dictionary",
-    "spelling"
-  ],
-  "author": "Street Side Software <support@streetsidesoftware.nl>",
   "license": "MIT",
-  "bugs": {
-    "url": "https://github.com/streetsidesoftware/cspell-dicts/issues"
+  "author": "Street Side Software <support@streetsidesoftware.nl>",
+  "exports": {
+    ".": "./cspell-ext.json",
+    "./cspell": "./cspell-ext.json",
+    "./cspell-ext.json": "./cspell-ext.json"
   },
-  "homepage": "https://github.com/streetsidesoftware/cspell-dicts/blob/main/dictionaries/cryptocurrencies#readme",
   "files": [
     "dict/*.txt",
     "cspell-ext.json"
-  ]
+  ],
+  "scripts": {
+    "build": "cspell-tools-cli build",
+    "prepare:dictionary": "pnpm run build",
+    "prepublishOnly": "echo pre-publish",
+    "test": "cspell samples --no-progress"
+  }
 }

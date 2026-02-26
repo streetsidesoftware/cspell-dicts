@@ -2,28 +2,9 @@
   "name": "@cspell/dict-latex",
   "version": "5.1.0",
   "description": "LaTeX cspell dictionary",
-  "type": "module",
   "publishConfig": {
     "access": "public",
     "provenance": true
-  },
-  "exports": {
-    ".": "./cspell-ext.json",
-    "./cspell": "./cspell-ext.json",
-    "./cspell-ext.json": "./cspell-ext.json"
-  },
-  "scripts": {
-    "build": "cspell-tools-cli compile build",
-    "test": "pnpm run test-dict && pnpm run test-check",
-    "test-dict": "shx head -n 1000 src/latex.txt | cspell -c ./cspell-ext.json --locale=* --languageId=latex stdin",
-    "test-check": "ava",
-    "prepublishOnly": "echo pre-publish",
-    "prepare:dictionary": "pnpm run build"
-  },
-  "repository": {
-    "type": "git",
-    "url": "https://github.com/streetsidesoftware/cspell-dicts",
-    "directory": "dictionaries/latex"
   },
   "keywords": [
     "cspell",
@@ -31,15 +12,34 @@
     "dictionary",
     "spelling"
   ],
-  "author": "Street Side Software <support@streetsidesoftware.nl>",
-  "license": "MIT",
+  "homepage": "https://github.com/streetsidesoftware/cspell-dicts/blob/main/dictionaries/latex#readme",
   "bugs": {
     "url": "https://github.com/streetsidesoftware/cspell-dicts/issues"
   },
-  "homepage": "https://github.com/streetsidesoftware/cspell-dicts/blob/main/dictionaries/latex#readme",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/streetsidesoftware/cspell-dicts",
+    "directory": "dictionaries/latex"
+  },
+  "license": "MIT",
+  "author": "Street Side Software <support@streetsidesoftware.nl>",
+  "type": "module",
+  "exports": {
+    ".": "./cspell-ext.json",
+    "./cspell": "./cspell-ext.json",
+    "./cspell-ext.json": "./cspell-ext.json"
+  },
   "files": [
     "dict/latex.txt",
     "cspell-ext.config.yaml",
     "cspell-ext.json"
-  ]
+  ],
+  "scripts": {
+    "build": "cspell-tools-cli compile build",
+    "prepare:dictionary": "pnpm run build",
+    "prepublishOnly": "echo pre-publish",
+    "test": "pnpm run test-dict && pnpm run test-check",
+    "test-check": "ava",
+    "test-dict": "shx head -n 1000 src/latex.txt | cspell -c ./cspell-ext.json --locale=* --languageId=latex stdin"
+  }
 }

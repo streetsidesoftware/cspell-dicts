@@ -6,39 +6,38 @@
     "access": "public",
     "provenance": true
   },
-  "exports": {
-    ".": "./cspell-ext.json",
-    "./cspell": "./cspell-ext.json",
-    "./cspell-ext.json": "./cspell-ext.json"
-  },
-  "scripts": {
-    "build": "echo ok",
-    "test": "shx cat samples/bash-words.txt | cspell -c ./cspell-ext.json \"--locale=*\" \"--languageId=shellscript\" stdin",
-    "prepublishOnly": "echo pre-publish",
-    "prepare:dictionary": "pnpm run build"
+  "keywords": [
+    "cspell",
+    "bash",
+    "dictionary",
+    "spelling"
+  ],
+  "homepage": "https://github.com/streetsidesoftware/cspell-dicts/blob/main/dictionaries/bash#readme",
+  "bugs": {
+    "url": "https://github.com/streetsidesoftware/cspell-dicts/issues"
   },
   "repository": {
     "type": "git",
     "url": "https://github.com/streetsidesoftware/cspell-dicts",
     "directory": "dictionaries/bash"
   },
-  "keywords": [
-    "cspell",
-    "bash",
-    "bash",
-    "dictionary",
-    "spelling"
-  ],
-  "author": "Street Side Software <support@streetsidesoftware.nl>",
   "license": "MIT",
-  "bugs": {
-    "url": "https://github.com/streetsidesoftware/cspell-dicts/issues"
+  "author": "Street Side Software <support@streetsidesoftware.nl>",
+  "exports": {
+    ".": "./cspell-ext.json",
+    "./cspell": "./cspell-ext.json",
+    "./cspell-ext.json": "./cspell-ext.json"
   },
-  "homepage": "https://github.com/streetsidesoftware/cspell-dicts/blob/main/dictionaries/bash#readme",
   "files": [
     "dict/*",
     "cspell-ext.json"
   ],
+  "scripts": {
+    "build": "echo ok",
+    "prepare:dictionary": "pnpm run build",
+    "prepublishOnly": "echo pre-publish",
+    "test": "shx cat samples/bash-words.txt | cspell -c ./cspell-ext.json \"--locale=*\" \"--languageId=shellscript\" stdin"
+  },
   "dependencies": {
     "@cspell/dict-shell": "workspace:*"
   }

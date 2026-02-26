@@ -468,6 +468,10 @@ package,count
 @bundled-es-modules/glob,1
 @bundled-es-modules/memfs,1
 @busy-hour/blaze,1
+@c15t/logger,1
+@c15t/translations,1
+@c15t/typescript-config,1
+@c15t/vitest-config,1
 @cacheable/utils,1
 @callstack/eslint-config,1
 @capacitor/cli,1
@@ -573,7 +577,7 @@ package,count
 @ckeditor/ckeditor5-watchdog,2
 @ckeditor/ckeditor5-widget,7
 @ckeditor/ckeditor5-word-count,1
-@clack/prompts,5
+@clack/prompts,4
 @clerk/localizations,1
 @clerk/nextjs,1
 @clerk/themes,1
@@ -798,7 +802,7 @@ package,count
 @egjs/imready,1
 @egjs/list-differ,1
 @egjs/release-helper,1
-@electric-sql/pglite,3
+@electric-sql/pglite,4
 @electric-sql/pglite-socket,1
 @electric-sql/pglite-tools,2
 @electron-forge/cli,1
@@ -1260,6 +1264,7 @@ package,count
 @lerna/create,1
 @lezer/highlight,1
 @libsql/client,1
+@libsql/kysely-libsql,1
 @lit-internal/scripts,1
 @lit-labs/ssr-dom-shim,1
 @lit-labs/testing,1
@@ -1533,7 +1538,7 @@ package,count
 @open-wc/eslint-config,2
 @open-wc/testing,2
 @openrouter/ai-sdk-provider,1
-@opentelemetry/api,7
+@opentelemetry/api,8
 @opentelemetry/api-logs,2
 @opentelemetry/context-async-hooks,1
 @opentelemetry/core,2
@@ -1543,10 +1548,11 @@ package,count
 @opentelemetry/exporter-metrics-otlp-proto,2
 @opentelemetry/exporter-trace-otlp-http,1
 @opentelemetry/otlp-exporter-base,1
-@opentelemetry/resources,2
+@opentelemetry/resources,3
 @opentelemetry/sdk-logs,2
 @opentelemetry/sdk-metrics,2
-@opentelemetry/sdk-trace-base,3
+@opentelemetry/sdk-node,1
+@opentelemetry/sdk-trace-base,4
 @opentelemetry/sdk-trace-node,1
 @opentelemetry/semantic-conventions,1
 @opentelemetry/winston-transport,1
@@ -1751,6 +1757,11 @@ package,count
 @opentiny/vue-wizard,1
 @opentiny/vue-year-range,1
 @opentiny/vue-year-table,1
+@orpc/contract,1
+@orpc/openapi,1
+@orpc/otel,1
+@orpc/server,1
+@orpc/zod,1
 @oslojs/encoding,1
 @ossjs/release,2
 @ota-meshi/eslint-plugin,3
@@ -2528,7 +2539,7 @@ package,count
 @types/balanced-match,1
 @types/bcrypt,2
 @types/benchmark,13
-@types/better-sqlite3,1
+@types/better-sqlite3,2
 @types/big.js,1
 @types/blessed,1
 @types/bluebird,3
@@ -2649,7 +2660,7 @@ package,count
 @types/esutils,1
 @types/events,1
 @types/execa,1
-@types/express,32
+@types/express,33
 @types/express-fileupload,2
 @types/express-serve-static-core,3
 @types/express-session,4
@@ -2856,7 +2867,7 @@ package,count
 @types/neo-async,1
 @types/nightwatch,1
 @types/nock,3
-@types/node,559
+@types/node,561
 @types/node-fetch,10
 @types/node-forge,4
 @types/nodemailer,2
@@ -2889,12 +2900,12 @@ package,count
 @types/path-to-regexp,2
 @types/pdfkit,1
 @types/pem,1
-@types/pg,2
+@types/pg,3
 @types/picomatch,15
 @types/pino,1
 @types/pixelmatch,2
 @types/platform,2
-@types/plist,3
+@types/plist,4
 @types/plugin-error,1
 @types/pluralize,6
 @types/png.js,1
@@ -2936,7 +2947,7 @@ package,count
 @types/ramda,2
 @types/randomcolor,1
 @types/range-parser,1
-@types/react,233
+@types/react,234
 @types/react-beautiful-dnd,1
 @types/react-color,1
 @types/react-copy-to-clipboard,6
@@ -3125,7 +3136,7 @@ package,count
 @typescript-eslint/utils,12
 @typescript-eslint/visitor-keys,2
 @typescript/analyze-trace,1
-@typescript/native-preview,8
+@typescript/native-preview,9
 @typescript/vfs,1
 @typicode/eslint-config,1
 @tyriar/fibonacci-heap,1
@@ -3912,7 +3923,7 @@ bannerize,1
 bare-script,1
 bark-needs-visit4,11
 base-individual-comfortable-crop,55
-base-x,1
+base-x,2
 Base64,1
 base64-arraybuffer,1
 base64-js,5
@@ -4012,7 +4023,7 @@ bem-cn-lite,1
 ben,1
 bench,1
 bench-node,1
-benchmark,60
+benchmark,61
 benchmarked,2
 benchmarkify,1
 bencho,1
@@ -4141,7 +4152,6 @@ broccoli-stew,3
 broccoli-test-helper,5
 broccoli-uglify-js,2
 broccoli-watchify,2
-broken-link-checker,1
 brorand,1
 brotli,1
 brotli-size,2
@@ -4234,7 +4244,7 @@ byte-size,2
 bytes,15
 bytes-iec,1
 c12,2
-c8,133
+c8,134
 cac,10
 cacache,5
 cache-chunk-store,1
@@ -4859,11 +4869,11 @@ define-lazy-prop,2
 define-properties,4
 defined,4
 deft,1
-defu,5
+defu,6
 deglob,1
 dekko,5
 del,45
-del-cli,34
+del-cli,35
 delay,9
 delayed,2
 delayed-stream,1
@@ -5030,7 +5040,7 @@ draht,1
 drawille-canvas-blessed-contrib,1
 drizzle-dbml-generator,1
 drizzle-kit,1
-drizzle-orm,1
+drizzle-orm,2
 drizzle-zod,1
 dset,1
 dtrace-provider,2
@@ -5259,7 +5269,7 @@ es6-promisify,1
 es6-shim,5
 es6-symbol,1
 esast-util-from-js,2
-esbuild,76
+esbuild,77
 esbuild-extra,2
 esbuild-loader,8
 esbuild-minify-templates,1
@@ -5448,7 +5458,7 @@ eslint-plugin-jsx-a11y,51
 eslint-plugin-lit,1
 eslint-plugin-local-rules,2
 eslint-plugin-lodash,2
-eslint-plugin-markdown,46
+eslint-plugin-markdown,45
 eslint-plugin-markdown-preferences,1
 eslint-plugin-mdx,1
 eslint-plugin-mmkal,1
@@ -5741,7 +5751,7 @@ find-rc,1
 find-replace,2
 find-root,3
 find-unused-sass-variables,2
-find-up,19
+find-up,20
 find-up-simple,3
 find-versions,1
 find-yarn-workspace-root,1
@@ -5850,6 +5860,7 @@ fsevents,1
 fstream,1
 ftp-test-server,1
 fullname,1
+fumadb,1
 func-xml,1
 function-bind,2
 function-source,1
@@ -5882,7 +5893,7 @@ generator-loopback,1
 generic-pool,1
 gensync,1
 gentle-party-other,55
-genversion,2
+genversion,3
 get-caller-file,4
 get-east-asian-width,1
 get-folder-size,1
@@ -6655,7 +6666,7 @@ is-wsl,10
 is-zip,1
 is64bit,1
 isarray,7
-isbinaryfile,3
+isbinaryfile,2
 isemail,1
 iserror,1
 isexe,1
@@ -6890,6 +6901,7 @@ json3,1
 json5,27
 jsonc-eslint-parser,5
 jsonc-parser,14
+jsonc-simple-parser,1
 jsondiffpatch,1
 jsonfile,3
 jsonic,1
@@ -6902,7 +6914,7 @@ jsonml-to-react-element,3
 jsonml.js,5
 jsonp,2
 jsonparse,2
-jsonpath,2
+jsonpath,1
 jsonpath-plus,2
 jsonpathly,1
 jsonpointer,2
@@ -7039,6 +7051,8 @@ konan,1
 kruptein,1
 kva-email-service,1
 ky,1
+kysely,1
+kysely-pglite,1
 lab,7
 lab-event-reporter,1
 lab-transform-typescript,1
@@ -7147,7 +7161,7 @@ lines-and-columns,1
 linez,1
 linkedom,1
 linkify-it,1
-linkinator,1
+linkinator,2
 linklocal,1
 lint,1
 lint-staged,217
@@ -7681,7 +7695,7 @@ mrmime,5
 ms,15
 msgpack5,1
 mssql,1
-msw,10
+msw,11
 mu2,1
 mud-slowly-five3,55
 muggle-string,1
@@ -7751,6 +7765,7 @@ neotraverse,2
 netlify-plugin-cache,2
 network-address,1
 neutron-html5parser,1
+neverthrow,1
 new-github-release-url,2
 newtype-ts,1
 nexe,1
@@ -7899,7 +7914,7 @@ nuqs,1
 nuxt,1
 nwmatcher,1
 nx,13
-nyc,244
+nyc,243
 oas,1
 oas-normalize,1
 oauth,2
@@ -7941,6 +7956,7 @@ on-finished,9
 on-headers,4
 on-stream-close,1
 once,9
+onchange,1
 one-how-hand,55
 one-time,1
 onetime,4
@@ -8136,7 +8152,7 @@ phonegap-build,1
 phosphor-react,1
 piccolore,1
 picklog,1
-picocolors,44
+picocolors,45
 picomatch,25
 picoquery,1
 picture-tuber,1
@@ -8177,7 +8193,7 @@ playwright-core,2
 please-release-me,1
 please-upgrade-node,2
 pleeease-filters,2
-plist,5
+plist,6
 plist-merge-patch,1
 plugin-error,55
 plugin-log,1
@@ -8652,7 +8668,7 @@ react-mark,1
 react-medium-image-zoom,1
 react-mount,1
 react-native,12
-react-native-builder-bob,4
+react-native-builder-bob,5
 react-native-codegen,1
 react-native-collapsible,1
 react-native-crypto-js,1
@@ -9597,7 +9613,7 @@ summary,1
 sun-grass-circle0,55
 superagent,9
 superagent-proxy,1
-superjson,1
+superjson,2
 superstatic,1
 superstruct,3
 supertap,1
@@ -9678,7 +9694,7 @@ tailwindcss,13
 tailwindcss-themer,1
 talisman,1
 tanem-scripts,2
-tap,79
+tap,78
 tap-arc,1
 tap-bail,1
 tap-browser-color,1
@@ -9928,7 +9944,7 @@ tsconfck,4
 tsconfig,4
 tsconfig-paths,11
 tsconfig-paths-webpack-plugin,4
-tsd,116
+tsd,115
 tsdoc-build-rig,3
 tsdown,20
 tsdx,3
@@ -9954,6 +9970,7 @@ tslint-plugin-prettier,2
 tslint-react,1
 tslog,1
 tsm,1
+tstyche,1
 tsup,47
 tsutils,3
 tsx,47
@@ -9999,7 +10016,7 @@ typedoc-plugin-remark,1
 typedoc-plugin-rename-defaults,1
 typedoc-vitepress-theme,1
 typeorm,2
-typescript,860
+typescript,862
 typescript-cached-transpile,2
 typescript-eslint,83
 typescript-eslint-parser,3
@@ -10549,7 +10566,7 @@ zeptomatch,2
 zeros,1
 zimmerframe,1
 zip-stream,1
-zod,27
+zod,28
 zod-to-json-schema,3
 zod-to-ts,1
 zod-validation-error,3
