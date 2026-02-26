@@ -1,5 +1,10 @@
 const compare = Intl.Collator('en-US').compare;
 
+/**
+ * Sort the content of a source file, keeping comments together and sorting the rest.
+ * @param {string} content
+ * @returns {string}
+ */
 export function sortSourceContent(content) {
     const lines = content.trim().split('\n');
     const groups = [];

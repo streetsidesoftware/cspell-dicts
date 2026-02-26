@@ -559,7 +559,11 @@ importers:
 
   dictionaries/medicalterms: {}
 
-  dictionaries/mime-types: {}
+  dictionaries/mime-types:
+    devDependencies:
+      cspell-dicts-scripts:
+        specifier: workspace:*
+        version: link:../../scripts
 
   dictionaries/mk:
     devDependencies:
@@ -713,10 +717,10 @@ importers:
         version: 5.6.2
       yeoman-environment:
         specifier: ^5.1.3
-        version: 5.1.3(@types/node@22.19.12)(@yeoman/adapter@1.6.0(@types/node@22.19.12))(@yeoman/types@1.2.0(@types/inquirer@9.0.9)(mem-fs@4.1.0))(mem-fs@4.1.0)
+        version: 5.1.3(@types/node@25.3.1)(@yeoman/adapter@1.6.0(@types/node@25.3.1))(@yeoman/types@1.2.0(@types/inquirer@9.0.9)(mem-fs@4.1.0))(mem-fs@4.1.0)
       yeoman-generator:
         specifier: ^7.5.1
-        version: 7.5.1(@types/node@22.19.12)(@yeoman/types@1.2.0(@types/inquirer@9.0.9)(mem-fs@4.1.0))(mem-fs@4.1.0)
+        version: 7.5.1(@types/node@25.3.1)(@yeoman/types@1.2.0(@types/inquirer@9.0.9)(mem-fs@4.1.0))(mem-fs@4.1.0)
       yosay:
         specifier: ^3.0.0
         version: 3.0.0
@@ -4750,12 +4754,12 @@ snapshots:
     optionalDependencies:
       '@types/node': 22.19.12
 
-  '@inquirer/external-editor@1.0.3(@types/node@22.19.12)':
+  '@inquirer/external-editor@1.0.3(@types/node@25.3.1)':
     dependencies:
       chardet: 2.1.1
       iconv-lite: 0.7.2
     optionalDependencies:
-      '@types/node': 22.19.12
+      '@types/node': 25.3.1
 
   '@inquirer/figures@1.0.15': {}
 
@@ -5454,11 +5458,11 @@ snapshots:
       - rollup
       - supports-color
 
-  '@yeoman/adapter@1.6.0(@types/node@22.19.12)':
+  '@yeoman/adapter@1.6.0(@types/node@25.3.1)':
     dependencies:
       '@types/inquirer': 9.0.9
       chalk: 5.6.2
-      inquirer: 9.3.8(@types/node@22.19.12)
+      inquirer: 9.3.8(@types/node@25.3.1)
       log-symbols: 7.0.1
       ora: 8.2.0
       p-queue: 8.1.1
@@ -5466,10 +5470,10 @@ snapshots:
     transitivePeerDependencies:
       - '@types/node'
 
-  '@yeoman/conflicter@4.0.0(@types/node@22.19.12)(@yeoman/types@1.2.0(@types/inquirer@9.0.9)(mem-fs@4.1.0))(mem-fs@4.1.0)':
+  '@yeoman/conflicter@4.0.0(@types/node@25.3.1)(@yeoman/types@1.2.0(@types/inquirer@9.0.9)(mem-fs@4.1.0))(mem-fs@4.1.0)':
     dependencies:
-      '@types/node': 22.19.12
-      '@yeoman/transform': 2.1.0(@types/node@22.19.12)
+      '@types/node': 25.3.1
+      '@yeoman/transform': 2.1.0(@types/node@25.3.1)
       '@yeoman/types': 1.2.0(@types/inquirer@9.0.9)(mem-fs@4.1.0)
       binary-extensions: 3.1.0
       cli-table: 0.3.11
@@ -5489,9 +5493,9 @@ snapshots:
 
   '@yeoman/namespace@1.0.1': {}
 
-  '@yeoman/transform@2.1.0(@types/node@22.19.12)':
+  '@yeoman/transform@2.1.0(@types/node@25.3.1)':
     dependencies:
-      '@types/node': 22.19.12
+      '@types/node': 25.3.1
       minimatch: 9.0.8
 
   '@yeoman/types@1.2.0(@types/inquirer@9.0.9)(mem-fs@4.1.0)':
@@ -6662,9 +6666,9 @@ snapshots:
     transitivePeerDependencies:
       - supports-color
 
-  inquirer@9.3.8(@types/node@22.19.12):
+  inquirer@9.3.8(@types/node@25.3.1):
     dependencies:
-      '@inquirer/external-editor': 1.0.3(@types/node@22.19.12)
+      '@inquirer/external-editor': 1.0.3(@types/node@25.3.1)
       '@inquirer/figures': 1.0.15
       ansi-escapes: 4.3.2
       cli-width: 4.1.0
@@ -8572,12 +8576,12 @@ snapshots:
       y18n: 5.0.8
       yargs-parser: 22.0.0
 
-  yeoman-environment@5.1.3(@types/node@22.19.12)(@yeoman/adapter@1.6.0(@types/node@22.19.12))(@yeoman/types@1.2.0(@types/inquirer@9.0.9)(mem-fs@4.1.0))(mem-fs@4.1.0):
+  yeoman-environment@5.1.3(@types/node@25.3.1)(@yeoman/adapter@1.6.0(@types/node@25.3.1))(@yeoman/types@1.2.0(@types/inquirer@9.0.9)(mem-fs@4.1.0))(mem-fs@4.1.0):
     dependencies:
-      '@yeoman/adapter': 1.6.0(@types/node@22.19.12)
-      '@yeoman/conflicter': 4.0.0(@types/node@22.19.12)(@yeoman/types@1.2.0(@types/inquirer@9.0.9)(mem-fs@4.1.0))(mem-fs@4.1.0)
+      '@yeoman/adapter': 1.6.0(@types/node@25.3.1)
+      '@yeoman/conflicter': 4.0.0(@types/node@25.3.1)(@yeoman/types@1.2.0(@types/inquirer@9.0.9)(mem-fs@4.1.0))(mem-fs@4.1.0)
       '@yeoman/namespace': 1.0.1
-      '@yeoman/transform': 2.1.0(@types/node@22.19.12)
+      '@yeoman/transform': 2.1.0(@types/node@25.3.1)
       '@yeoman/types': 1.2.0(@types/inquirer@9.0.9)(mem-fs@4.1.0)
       arrify: 3.0.0
       chalk: 5.6.2
@@ -8601,7 +8605,7 @@ snapshots:
       - react-native-b4a
       - supports-color
 
-  yeoman-generator@7.5.1(@types/node@22.19.12)(@yeoman/types@1.2.0(@types/inquirer@9.0.9)(mem-fs@4.1.0))(mem-fs@4.1.0):
+  yeoman-generator@7.5.1(@types/node@25.3.1)(@yeoman/types@1.2.0(@types/inquirer@9.0.9)(mem-fs@4.1.0))(mem-fs@4.1.0):
     dependencies:
       '@types/lodash-es': 4.17.12
       '@yeoman/namespace': 1.0.1
@@ -8622,7 +8626,7 @@ snapshots:
       sort-keys: 5.1.0
       text-table: 0.2.0
     optionalDependencies:
-      '@types/node': 22.19.12
+      '@types/node': 25.3.1
     transitivePeerDependencies:
       - bare-abort-controller
       - react-native-b4a
