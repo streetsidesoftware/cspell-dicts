@@ -6,5 +6,6 @@ targets:
     compress: false
     format: plaintext
     sources:
-      - src/mime-words.txt
+      - filename: src/mime-types.txt
+        split: true
     sort: true
