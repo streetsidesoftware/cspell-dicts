@@ -148,7 +148,7 @@ Various [cspell](https://github.com/streetsidesoftware/cspell) dictionaries. Eac
 - [GIS and PostGIS](dictionaries/gis) - GIS and PostGIS dictionary.
 - [Google Cloud](dictionaries/google) - Google Cloud Development Dictionary. <sup>1</sup>
 - [Medical terms](dictionaries/medicalterms) - Medical Terms Dictionary <sup>2</sup>
-- [MIME Types](dictionaries/mime-types) - MIME Types dictionary.
+- [mime-types](dictionaries/mime-types) - MIME Types dictionary.
 - [Modern English Slang Words](dictionaries/en-slang) - Modern English slang words dictionary.
 - [People Names](dictionaries/people-names) - People Names dictionary. <sup>2</sup>
 - [Pokémon](dictionaries/pokemon) - Pokémon dictionary. <sup>2</sup>
@@ -250,7 +250,7 @@ Various [cspell](https://github.com/streetsidesoftware/cspell) dictionaries. Eac
 | [@cspell/dict-makefile](./dictionaries/makefile#readme)<sup>1</sup>                             | Makefile                          | makefile                                                                                                                                                                                                                |
 | [@cspell/dict-markdown](./dictionaries/markdown#readme)<sup>1</sup>                             | Markdown                          |                                                                                                                                                                                                                         |
 | [@cspell/dict-medicalterms](./dictionaries/medicalterms#readme)                                 | Medical terms                     | medical terms<sup>2</sup>                                                                                                                                                                                               |
-| [@cspell/dict-mime-types](./dictionaries/mime-types#readme)                                     | MIME Types                        | mime-types                                                                                                                                                                                                              |
+| [@cspell/dict-mime-types](./dictionaries/mime-types#readme)                                     | mime-types                        | mime-types                                                                                                                                                                                                              |
 | [@cspell/dict-mk](./dictionaries/mk#readme)                                                     | Macedonian                        | mk                                                                                                                                                                                                                      |
 | [@cspell/dict-mn-mn](./dictionaries/mn_MN#readme)                                               | Mongolian                         | mn-mn                                                                                                                                                                                                                   |
 | [@cspell/dict-mnemonics](./dictionaries/mnemonics#readme)                                       | Mnemonics                         | mnemonics                                                                                                                                                                                                               |
@@ -396,7 +396,7 @@ Various [cspell](https://github.com/streetsidesoftware/cspell) dictionaries. Eac
 | [`makefile`](dictionaries/makefile) <sup>1</sup>                                     | Makefile dictionary.                                                | -                             | makefile                                                       |
 | [`mathematics-terms-us`](dictionaries/scientific_terms_US) <sup>2</sup>              | Mathematics Terms US dictionary.                                    | -                             | -                                                              |
 | [`medical terms`](dictionaries/medicalterms) <sup>2</sup>                            | List of nearly 100,000 medical terms.                               |                               |                                                                |
-| [`mime-types`](dictionaries/mime-types)                                              | MIME Types dictionary.                                              | -                             | -                                                              |
+| [`mime-types`](dictionaries/mime-types)                                              | MIME Types dictionary.                                              |                               |                                                                |
 | [`mk`](dictionaries/mk)                                                              | Macedonian dictionary.                                              | mk<br>mk-cyrl                 | -                                                              |
 | [`mn-mn`](dictionaries/mn_MN)                                                        | Mongolian dictionary.                                               | mn<br>mn-MN                   | -                                                              |
 | [`mnemonics`](dictionaries/mnemonics)                                                | i86 Mnemonics dictionary for cspell                                 |                               | c<br>cpp<br>h<br>hpp                                           |
@@ -510,12 +510,12 @@ Special thanks to all of our amazing contributors!
 [<img alt="Contributor jim-hays-root" src="https://avatars.githubusercontent.com/u/54556994?v=4&size=128" width=64>](https://github.com/jim-hays-root)
 [<img alt="Contributor mnemotic" src="https://avatars.githubusercontent.com/u/4642186?v=4&size=128" width=64>](https://github.com/mnemotic)
 [<img alt="Contributor shaihu" src="https://avatars.githubusercontent.com/u/61219328?v=4&size=128" width=64>](https://github.com/shaihu)
+[<img alt="Contributor StyleShit" src="https://avatars.githubusercontent.com/u/32631382?v=4&size=128" width=64>](https://github.com/StyleShit)
 [<img alt="Contributor viktorstrate" src="https://avatars.githubusercontent.com/u/4233458?v=4&size=128" width=64>](https://github.com/viktorstrate)
 [<img alt="Contributor crapStone" src="https://avatars.githubusercontent.com/u/23100555?v=4&size=128" width=64>](https://github.com/crapStone)
 [<img alt="Contributor hdahlheim" src="https://avatars.githubusercontent.com/u/16597280?v=4&size=128" width=64>](https://github.com/hdahlheim)
 [<img alt="Contributor sitch" src="https://avatars.githubusercontent.com/u/2736163?v=4&size=128" width=64>](https://github.com/sitch)
 [<img alt="Contributor ssbarnea" src="https://avatars.githubusercontent.com/u/102495?v=4&size=128" width=64>](https://github.com/ssbarnea)
-[<img alt="Contributor tobysmith568" src="https://avatars.githubusercontent.com/u/22356255?v=4&size=128" width=64>](https://github.com/tobysmith568)
 [<img alt="Contributor cjduncana" src="https://avatars.githubusercontent.com/u/1977082?v=4&size=128" width=64>](https://github.com/cjduncana)
 [<img alt="Contributor dflock" src="https://avatars.githubusercontent.com/u/47756?v=4&size=128" width=64>](https://github.com/dflock)
 [<img alt="Contributor IvanGoncharov" src="https://avatars.githubusercontent.com/u/8336157?v=4&size=128" width=64>](https://github.com/IvanGoncharov)
@@ -525,7 +525,7 @@ Special thanks to all of our amazing contributors!
 [<img alt="Contributor LuizZak" src="https://avatars.githubusercontent.com/u/6502879?v=4&size=128" width=64>](https://github.com/LuizZak)
 [<img alt="Contributor natescherer" src="https://avatars.githubusercontent.com/u/376408?v=4&size=128" width=64>](https://github.com/natescherer)
 [<img alt="Contributor pzmarzly" src="https://avatars.githubusercontent.com/u/8074163?v=4&size=128" width=64>](https://github.com/pzmarzly)
-[<img alt="Contributor StyleShit" src="https://avatars.githubusercontent.com/u/32631382?v=4&size=128" width=64>](https://github.com/StyleShit)
+[<img alt="Contributor tobysmith568" src="https://avatars.githubusercontent.com/u/22356255?v=4&size=128" width=64>](https://github.com/tobysmith568)
 [<img alt="Contributor alecmev" src="https://avatars.githubusercontent.com/u/2584727?v=4&size=128" width=64>](https://github.com/alecmev)
 [<img alt="Contributor awgeorge" src="https://avatars.githubusercontent.com/u/1777444?v=4&size=128" width=64>](https://github.com/awgeorge)
 [<img alt="Contributor babyraging" src="https://avatars.githubusercontent.com/u/14004642?v=4&size=128" width=64>](https://github.com/babyraging)
@@ -567,6 +567,7 @@ Special thanks to all of our amazing contributors!
 [<img alt="Contributor paaloeye" src="https://avatars.githubusercontent.com/u/554135?v=4&size=128" width=64>](https://github.com/paaloeye)
 [<img alt="Contributor thegraffix" src="https://avatars.githubusercontent.com/u/57874058?v=4&size=128" width=64>](https://github.com/thegraffix)
 [<img alt="Contributor 0xnmn" src="https://avatars.githubusercontent.com/u/22571395?v=4&size=128" width=64>](https://github.com/0xnmn)
+[<img alt="Contributor ADTC" src="https://avatars.githubusercontent.com/u/6047296?v=4&size=128" width=64>](https://github.com/ADTC)
 [<img alt="Contributor ChocolateLoverRaj" src="https://avatars.githubusercontent.com/u/52586855?v=4&size=128" width=64>](https://github.com/ChocolateLoverRaj)
 [<img alt="Contributor cylewaitforit" src="https://avatars.githubusercontent.com/u/54253392?v=4&size=128" width=64>](https://github.com/cylewaitforit)
 [<img alt="Contributor INOMO-RKr" src="https://avatars.githubusercontent.com/u/128165217?v=4&size=128" width=64>](https://github.com/INOMO-RKr)
@@ -575,7 +576,6 @@ Special thanks to all of our amazing contributors!
 [<img alt="Contributor koviubi56" src="https://avatars.githubusercontent.com/u/58398849?v=4&size=128" width=64>](https://github.com/koviubi56)
 [<img alt="Contributor krzysiekwie" src="https://avatars.githubusercontent.com/u/54991735?v=4&size=128" width=64>](https://github.com/krzysiekwie)
 [<img alt="Contributor lnasc256" src="https://avatars.githubusercontent.com/u/29936145?v=4&size=128" width=64>](https://github.com/lnasc256)
-[<img alt="Contributor lukasfro" src="https://avatars.githubusercontent.com/u/1529698?v=4&size=128" width=64>](https://github.com/lukasfro)
 [<img alt="Contributor magnushiie" src="https://avatars.githubusercontent.com/u/734170?v=4&size=128" width=64>](https://github.com/magnushiie)
 [<img alt="Contributor Majid110" src="https://avatars.githubusercontent.com/u/22748381?v=4&size=128" width=64>](https://github.com/Majid110)
 [<img alt="Contributor mantasu" src="https://avatars.githubusercontent.com/u/56790921?v=4&size=128" width=64>](https://github.com/mantasu)
@@ -610,13 +610,12 @@ Special thanks to all of our amazing contributors!
 [<img alt="Contributor smara-codes" src="https://avatars.githubusercontent.com/u/1213709?v=4&size=128" width=64>](https://github.com/smara-codes)
 [<img alt="Contributor snyk-bot" src="https://avatars.githubusercontent.com/u/19733683?v=4&size=128" width=64>](https://github.com/snyk-bot)
 [<img alt="Contributor thakyZ" src="https://avatars.githubusercontent.com/u/950594?v=4&size=128" width=64>](https://github.com/thakyZ)
+[<img alt="Contributor vineyardbovines" src="https://avatars.githubusercontent.com/u/15176096?v=4&size=128" width=64>](https://github.com/vineyardbovines)
 [<img alt="Contributor wavygecko" src="https://avatars.githubusercontent.com/u/110956608?v=4&size=128" width=64>](https://github.com/wavygecko)
 [<img alt="Contributor yf-yang" src="https://avatars.githubusercontent.com/u/36890796?v=4&size=128" width=64>](https://github.com/yf-yang)
 [<img alt="Contributor zdposter" src="https://avatars.githubusercontent.com/u/76629990?v=4&size=128" width=64>](https://github.com/zdposter)
 [<img alt="Contributor zhenzhenChange" src="https://avatars.githubusercontent.com/u/51586637?v=4&size=128" width=64>](https://github.com/zhenzhenChange)
-[<img alt="Contributor zilayo" src="https://avatars.githubusercontent.com/u/84344709?v=4&size=128" width=64>](https://github.com/zilayo)
 [<img alt="Contributor adam-zielonka" src="https://avatars.githubusercontent.com/u/31104775?v=4&size=128" width=64>](https://github.com/adam-zielonka)
-[<img alt="Contributor ADTC" src="https://avatars.githubusercontent.com/u/6047296?v=4&size=128" width=64>](https://github.com/ADTC)
 [<img alt="Contributor afifvdin" src="https://avatars.githubusercontent.com/u/94339143?v=4&size=128" width=64>](https://github.com/afifvdin)
 [<img alt="Contributor AhmedAlaa4611" src="https://avatars.githubusercontent.com/u/92916738?v=4&size=128" width=64>](https://github.com/AhmedAlaa4611)
 [<img alt="Contributor alcapitan" src="https://avatars.githubusercontent.com/u/60216981?v=4&size=128" width=64>](https://github.com/alcapitan)
@@ -653,6 +652,7 @@ Special thanks to all of our amazing contributors!
 [<img alt="Contributor spenserblack" src="https://avatars.githubusercontent.com/u/8546709?v=4&size=128" width=64>](https://github.com/spenserblack)
 [<img alt="Contributor spiftire" src="https://avatars.githubusercontent.com/u/44159536?v=4&size=128" width=64>](https://github.com/spiftire)
 [<img alt="Contributor ssr-yuki" src="https://avatars.githubusercontent.com/u/15957608?v=4&size=128" width=64>](https://github.com/ssr-yuki)
+[<img alt="Contributor tats-u" src="https://avatars.githubusercontent.com/u/12870451?v=4&size=128" width=64>](https://github.com/tats-u)
 [<img alt="Contributor teddybradford" src="https://avatars.githubusercontent.com/u/3684553?v=4&size=128" width=64>](https://github.com/teddybradford)
 [<img alt="Contributor the-chris-strange" src="https://avatars.githubusercontent.com/u/7118109?v=4&size=128" width=64>](https://github.com/the-chris-strange)
 [<img alt="Contributor thehappydinoa" src="https://avatars.githubusercontent.com/u/30162978?v=4&size=128" width=64>](https://github.com/thehappydinoa)
@@ -662,9 +662,9 @@ Special thanks to all of our amazing contributors!
 [<img alt="Contributor tobiasdiez" src="https://avatars.githubusercontent.com/u/5037600?v=4&size=128" width=64>](https://github.com/tobiasdiez)
 [<img alt="Contributor tueda" src="https://avatars.githubusercontent.com/u/1481665?v=4&size=128" width=64>](https://github.com/tueda)
 [<img alt="Contributor varonix0" src="https://avatars.githubusercontent.com/u/62331820?v=4&size=128" width=64>](https://github.com/varonix0)
-[<img alt="Contributor vineyardbovines" src="https://avatars.githubusercontent.com/u/15176096?v=4&size=128" width=64>](https://github.com/vineyardbovines)
 [<img alt="Contributor vitaliytv" src="https://avatars.githubusercontent.com/u/1549046?v=4&size=128" width=64>](https://github.com/vitaliytv)
 [<img alt="Contributor Yizack" src="https://avatars.githubusercontent.com/u/16264115?v=4&size=128" width=64>](https://github.com/Yizack)
+[<img alt="Contributor zilayo" src="https://avatars.githubusercontent.com/u/84344709?v=4&size=128" width=64>](https://github.com/zilayo)
 [<img alt="Contributor Billzabob" src="https://avatars.githubusercontent.com/u/3711832?v=4&size=128" width=64>](https://github.com/Billzabob)
 [<img alt="Contributor BoltonBailey" src="https://avatars.githubusercontent.com/u/8030599?v=4&size=128" width=64>](https://github.com/BoltonBailey)
 [<img alt="Contributor builtbyproxy" src="https://avatars.githubusercontent.com/u/16897508?v=4&size=128" width=64>](https://github.com/builtbyproxy)
@@ -692,6 +692,7 @@ Special thanks to all of our amazing contributors!
 [<img alt="Contributor kseino" src="https://avatars.githubusercontent.com/u/1378066?v=4&size=128" width=64>](https://github.com/kseino)
 [<img alt="Contributor lauraBaakman" src="https://avatars.githubusercontent.com/u/4301624?v=4&size=128" width=64>](https://github.com/lauraBaakman)
 [<img alt="Contributor lee0c" src="https://avatars.githubusercontent.com/u/13122293?v=4&size=128" width=64>](https://github.com/lee0c)
+[<img alt="Contributor lukasfro" src="https://avatars.githubusercontent.com/u/1529698?v=4&size=128" width=64>](https://github.com/lukasfro)
 [<img alt="Contributor ndthanhdev" src="https://avatars.githubusercontent.com/u/16331812?v=4&size=128" width=64>](https://github.com/ndthanhdev)
 [<img alt="Contributor NutCr4cker12" src="https://avatars.githubusercontent.com/u/44898642?v=4&size=128" width=64>](https://github.com/NutCr4cker12)
 [<img alt="Contributor PaperbagWriter" src="https://avatars.githubusercontent.com/u/8887121?v=4&size=128" width=64>](https://github.com/PaperbagWriter)
