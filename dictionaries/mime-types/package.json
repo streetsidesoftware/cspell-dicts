@@ -13,7 +13,7 @@
   },
   "scripts": {
     "build": "cspell-tools-cli build",
-    "test": "shx head -n 100 src/mime-types.txt | cspell -c ./cspell-ext.json \"--locale=*\" stdin",
+    "test": "shx head -n 100 src/mime-types.txt | cspell -c ./cspell-ext.json --dictionary=mime-types \"--locale=*\" stdin",
     "prepublishOnly": "echo pre-publish",
     "prepare:dictionary": "pnpm run build",
     "sync:manual": "GITHUB_TOKEN=$(gh auth token) pnpm sync",
