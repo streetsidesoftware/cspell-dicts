@@ -401,7 +401,7 @@
   },
   {
     "name": "CSpell Dictionaries Bundle",
-    "version": "2.0.53",
+    "version": "2.0.54",
     "dir": "dictionaries/cspell",
     "packageName": "@cspell/dict-cspell-bundle",
     "description": "Dictionaries included with the CSpell Command Line tool.",
@@ -2463,6 +2463,24 @@
     "patterns": []
   },
   {
+    "name": "mime-types",
+    "version": "1.0.0",
+    "dir": "dictionaries/mime-types",
+    "packageName": "@cspell/dict-mime-types",
+    "description": "MIME Types dictionary.",
+    "cspell": false,
+    "categories": ["other"],
+    "dictionaries": [
+      {
+        "name": "mime-types",
+        "description": "MIME Types dictionary.",
+        "locales": [],
+        "fileTypes": []
+      }
+    ],
+    "patterns": []
+  },
+  {
     "name": "Macedonian",
     "version": "1.0.3",
     "dir": "dictionaries/mk",
@@ -3186,7 +3204,7 @@
   },
   {
     "name": "Software Terms",
-    "version": "5.1.22",
+    "version": "5.1.23",
     "dir": "dictionaries/software-terms",
     "packageName": "@cspell/dict-software-terms",
     "description": "Software terms dictionary.",

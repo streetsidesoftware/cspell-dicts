@@ -1,10 +1,7 @@
-## Installation
-
-Global Install and add to cspell global settings.
+## Local Installation
 
 ```sh
-npm install -g @cspell/dict-mime-types
-cspell link add @cspell/dict-mime-types
+npm install -D @cspell/dict-mime-types
 ```
 
 ## Configuration
@@ -18,6 +15,7 @@ Add the following to your VSCode settings:
 
 ```jsonc
 {
+  "cSpell.import": ["@cspell/dict-mime-types/cspell-ext.json"],
   "cSpell.dictionaries": ["mime-types"],
 }
 ```
@@ -31,6 +29,7 @@ Add the following to your VSCode settings:
 
 ```jsonc
 {
+  "import": ["@cspell/dict-mime-types/cspell-ext.json"],
   "dictionaries": ["mime-types"],
 }
 ```
@@ -43,6 +42,56 @@ Add the following to your VSCode settings:
 **`cspell.config.yaml`**
 
 ```yaml
+import:
+  - '@cspell/dict-mime-types/cspell-ext.json'
+dictionaries:
+  - mime-types
+```
+
+</details>
+
+## Local Installation using CDN
+
+## CDN Configuration
+
+<details>
+<summary>VSCode Settings</summary>
+
+Add the following to your VSCode settings:
+
+**`.vscode/settings.json`**
+
+```jsonc
+{
+  "cSpell.import": ["https://cdn.jsdelivr.net/npm/@cspell/dict-mime-types@1/cspell-ext.json"],
+  "cSpell.dictionaries": ["mime-types"],
+}
+```
+
+</details>
+
+<details>
+<summary>CSpell Settings <code>cspell.json</code></summary>
+
+**`cspell.json`**
+
+```jsonc
+{
+  "import": ["https://cdn.jsdelivr.net/npm/@cspell/dict-mime-types@1/cspell-ext.json"],
+  "dictionaries": ["mime-types"],
+}
+```
+
+</details>
+
+<details>
+<summary>CSpell Settings <code>cspell.config.yaml</code></summary>
+
+**`cspell.config.yaml`**
+
+```yaml
+import:
+  - https://cdn.jsdelivr.net/npm/@cspell/dict-mime-types@1/cspell-ext.json
 dictionaries:
   - mime-types
 ```
@@ -53,4 +102,4 @@ dictionaries:
 
 | Name         | Enabled | Description            |
 | ------------ | ------- | ---------------------- |
-| `mime-types` | Yes     | MIME Types dictionary. |
+| `mime-types` |         | MIME Types dictionary. |
