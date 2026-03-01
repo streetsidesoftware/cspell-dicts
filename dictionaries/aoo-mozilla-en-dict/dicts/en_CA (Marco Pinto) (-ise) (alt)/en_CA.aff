@@ -24,10 +24,10 @@
 #
 #  Dictionary Information:
 #      English variant: Canadian (alt)
-#              Version: 4.0.5, 2026-02-01
+#              Version: 4.0.6, 2026-03-01
 #             Encoding: UTF-8-BOM Unix (LF)
 #       -ise/-ize/Both: -ise
-#             Comments: For specific -ise/-ize variants, some verbs and words MAY be missing or included differently.
+#             Comments: For specific -ise/-ize variants, some verbs, and words MAY be missing or included differently.
 #                       The U.S., Canadian, and Australian dictionaries MAY differ slightly in coverage for some region-specific terms.
 #  Variants maintained: British, OED (Oxford English Dictionary), South African, American (alt), Canadian (alt), Australian (alt)
 #
@@ -476,7 +476,7 @@ SFX G 0 ging [^aeiol][aeiou]g
 SFX G 0 ging [^ao][l][aeiou]g 
 SFX G 0 ging ^([l][aeiou]g) 
 SFX G 0 ing [^aeiou][bcdfgklmnprstvz] 
-SFX G 0 ing [^ai][lvbmpndc][oe]r 
+SFX G 0 ing [^ai][lvbmpndcg][oe]r 
 SFX G 0 ing [^ebcdfgklmnprstvz] 
 SFX G e ing [^eioy]e 
 SFX G 0 ing [a][bvpm][o][r] 
@@ -495,7 +495,7 @@ SFX G 0 ning [^aeio][aeiou]n
 SFX G 0 ping [^aeio][aeiou]p 
 SFX G 0 ring [^enoarhiubc][vlmjptwfchb][aeiou]r 
 SFX G 0 ring [^lfeas][^iobrswh][vb][aeou]r 
-SFX G 0 ring [^nsecbwo][^aeiovblmpnt][aeiou]r 
+SFX G 0 ring [^nsecbwo][^aeiovblmpntd][aeiou]r 
 SFX G 0 ring [bc][hl][aeiou]r 
 SFX G 0 ring [icdro][enc][mtfc][aeiou]r 
 SFX G 0 ring ^([bfjmpwth][aue]r) 
@@ -582,7 +582,7 @@ SFX D e d [^or]ee
 SFX D 0 d [or]ee 
 SFX D 0 ded [^aeio][aeiou]d 
 SFX D 0 ed [^aeiou][bcdfgklmnprstvz] 
-SFX D 0 ed [^ai][lvbmpndc][oe]r 
+SFX D 0 ed [^ai][lvbmpndcg][oe]r 
 SFX D 0 ed [^ebcdfgklmnprstvyz] 
 SFX D 0 ed [a][bvpm][o][r] 
 SFX D 0 ed [aeio][aeiou][bcdfgkmnprstvz] 
@@ -604,8 +604,8 @@ SFX D 0 med [^aeio][aeiou]m
 SFX D 0 ned [^aeio][aeiou]n 
 SFX D 0 ped [^aeio][aeiou]p 
 SFX D 0 red [^enoarhiubc][vlmjptwfchb][aeiou]r 
-SFX D 0 red [^lfeas][^iobrswh][vb][aeou]r 
-SFX D 0 red [^nsecbwo][^aeiovblmpnt][aeiou]r 
+SFX D 0 red [^lfeas][^iobrswhu][vb][aeou]r 
+SFX D 0 red [^nsecbwo][^aeiovblmpntd][aeiou]r 
 SFX D 0 red [bc][hl][aeiou]r 
 SFX D 0 red [icdro][enc][mtfc][aeiou]r 
 SFX D 0 red ^([bfjmpwth][aue]r) 
@@ -849,15 +849,15 @@ SFX R 0 zers [^aeio][aeiou]z
 SFX r Y 24
 SFX r 0 er [^aeiou][cl] 
 SFX r 0 er [^ecly] 
-SFX r 0 er [aeiodnrmvhwcs][aeiou][cl] 
+SFX r 0 er [aeiodnrmvhwcsub][aeiou][cl] 
 SFX r 0 er [aeiou]y 
 SFX r 0 er's [^aeiou][cl] 
 SFX r 0 er's [^ecly] 
-SFX r 0 er's [aeiodnrmvhwcs][aeiou][cl] 
+SFX r 0 er's [aeiodnrmvhwcsub][aeiou][cl] 
 SFX r 0 er's [aeiou]y 
 SFX r 0 ers [^aeiou][cl] 
 SFX r 0 ers [^ecly] 
-SFX r 0 ers [aeiodnrmvhwcs][aeiou][cl] 
+SFX r 0 ers [aeiodnrmvhwcsub][aeiou][cl] 
 SFX r 0 ers [aeiou]y 
 SFX r y ier [^aeiou]y 
 SFX r y ier's [^aeiou]y 
@@ -865,9 +865,9 @@ SFX r y iers [^aeiou]y
 SFX r 0 ker [^aeio][aeiou]c 
 SFX r 0 ker's [^aeio][aeiou]c 
 SFX r 0 kers [^aeio][aeiou]c 
-SFX r 0 ler [^aeiodnrmvhwcs][aeiou]l 
-SFX r 0 ler's [^aeiodnrmvhwcs][aeiou]l 
-SFX r 0 lers [^aeiodnrmvhwcs][aeiou]l 
+SFX r 0 ler [^aeiodnrmvhwcsub][aeiou]l 
+SFX r 0 ler's [^aeiodnrmvhwcsub][aeiou]l 
+SFX r 0 lers [^aeiodnrmvhwcsub][aeiou]l 
 SFX r 0 r e 
 SFX r 0 r's e 
 SFX r 0 rs e 
@@ -1598,14 +1598,14 @@ SFX = 0 lessnesses [aeiou]y
 SFX ~ Y 1
 SFX ~ 0 ish .
 SFX | Y 4
-SFX | 0 ed [lrp]
+SFX | 0 ed [lrps]
 SFX | e ed e
-SFX | 0 ing [lrp]
+SFX | 0 ing [lrps]
 SFX | e ing e
 SFX ; Y 4
-SFX ; 0 ing's [lrp]
+SFX ; 0 ing's [lrps]
 SFX ; e ing's e
-SFX ; 0 ings [lrp]
+SFX ; 0 ings [lrps]
 SFX ; e ings e
 
 BREAK 3

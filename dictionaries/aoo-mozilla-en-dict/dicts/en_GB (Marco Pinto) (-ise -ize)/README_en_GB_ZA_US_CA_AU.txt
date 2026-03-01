@@ -133,6 +133,10 @@ Marco A.G.Pinto
 
 CHANGELOG (2025+)  
 =================  
+2026-03-01 (Marco A.G.Pinto)
+           - Flag enhancements, mainly for U.S. words.
+           - Major fixes and improvements to the US dictionary.
+
 2026-02-01 (Marco A.G.Pinto)
            - Flag enhancements, mainly for U.S. words.
            - Major fixes and improvements to the US, CA, and AU dictionaries.
