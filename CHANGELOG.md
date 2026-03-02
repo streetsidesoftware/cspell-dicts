@@ -1,5 +1,26 @@
 # Release Notes
 
+## [33.6.0](https://github.com/streetsidesoftware/cspell-dicts/compare/cspell-dicts@33.5.0...cspell-dicts@33.6.0) (2026-03-02)
+
+
+### Features
+
+* Ignores URLs in CSS ([#5323](https://github.com/streetsidesoftware/cspell-dicts/issues/5323)) ([21df0f7](https://github.com/streetsidesoftware/cspell-dicts/commit/21df0f7786a8ae672f4301609afc11f905db33ce))
+
+
+### Updates and Bug Fixes
+
+* add "invokable" to software-terms dictionary ([#5317](https://github.com/streetsidesoftware/cspell-dicts/issues/5317)) ([49134a1](https://github.com/streetsidesoftware/cspell-dicts/commit/49134a1b8aa38f94e336c044af46c4d683c16a97))
+* Workflow Bot -- Build Dictionaries ([#5321](https://github.com/streetsidesoftware/cspell-dicts/issues/5321)) ([fe34721](https://github.com/streetsidesoftware/cspell-dicts/commit/fe34721a0b815acdc4c24756c10aa91ba86efb91))
+* Workflow Bot -- Update Dictionaries ([#5318](https://github.com/streetsidesoftware/cspell-dicts/issues/5318)) ([a27588e](https://github.com/streetsidesoftware/cspell-dicts/commit/a27588ee2990cdf7a0d26202560d3cef5c677baf))
+
+
+### Dependencies
+
+* The following workspace dependencies were updated
+  * devDependencies
+    * @cspell/dict-cspell-bundle bumped to 2.0.55
+
 ## [33.5.0](https://github.com/streetsidesoftware/cspell-dicts/compare/cspell-dicts@33.4.0...cspell-dicts@33.5.0) (2026-02-26)
 
 

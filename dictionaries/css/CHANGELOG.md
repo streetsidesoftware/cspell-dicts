@@ -22,6 +22,13 @@ See [Conventional Commits](https://conventionalcommits.org) for commit guideline
 
 
 
+## [4.1.0](https://github.com/streetsidesoftware/cspell-dicts/compare/@cspell/dict-css@4.0.19...@cspell/dict-css@4.1.0) (2026-03-02)
+
+
+### Features
+
+* Ignores URLs in CSS ([#5323](https://github.com/streetsidesoftware/cspell-dicts/issues/5323)) ([21df0f7](https://github.com/streetsidesoftware/cspell-dicts/commit/21df0f7786a8ae672f4301609afc11f905db33ce))
+
 ## [4.0.19](https://github.com/streetsidesoftware/cspell-dicts/compare/@cspell/dict-css@4.0.18...@cspell/dict-css@4.0.19) (2025-12-17)
 
 

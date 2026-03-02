@@ -1,5 +1,14 @@
 # Changelog
 
+## [1.1.17](https://github.com/streetsidesoftware/cspell-dicts/compare/@cspell/dict-en-au@1.1.16...@cspell/dict-en-au@1.1.17) (2026-03-02)
+
+
+### Dependencies
+
+* The following workspace dependencies were updated
+  * devDependencies
+    * @cspell/aoo-mozilla-en-dict bumped to 1.0.8
+
 ## [1.1.16](https://github.com/streetsidesoftware/cspell-dicts/compare/@cspell/dict-en-au@1.1.15...@cspell/dict-en-au@1.1.16) (2026-02-08)
 
 

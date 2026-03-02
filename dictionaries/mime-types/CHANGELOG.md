@@ -1,5 +1,12 @@
 # Changelog
 
+## [1.0.1](https://github.com/streetsidesoftware/cspell-dicts/compare/@cspell/dict-mime-types@1.0.0...@cspell/dict-mime-types@1.0.1) (2026-03-02)
+
+
+### Updates and Bug Fixes
+
+* Workflow Bot -- Build Dictionaries ([#5321](https://github.com/streetsidesoftware/cspell-dicts/issues/5321)) ([fe34721](https://github.com/streetsidesoftware/cspell-dicts/commit/fe34721a0b815acdc4c24756c10aa91ba86efb91))
+
 ## 1.0.0 (2026-02-26)
 
 
