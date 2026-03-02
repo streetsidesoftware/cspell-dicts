@@ -15,6 +15,15 @@
     // Dictionaries to always be used.
     // Generally left empty
     "dictionaries": [],
+    // regex patterns than can be used with ignoreRegExpList or includeRegExpList
+    // Example: "pattern": [{ "name": "mdash", "pattern": "&mdash;" }]
+    // This could be included in "ignoreRegExpList": ["mdash"]
+    "patterns": [
+        {
+            "name": "CSS-url",
+            "pattern": "/\\burl\\((?:\"data:[^\"]*\"|'data:[^']*')\\)/gm"
+        }
+    ],
     // Language Rules to apply to matching files.
     // Files are matched on `languageId` and `locale`
     "languageSettings": [
@@ -29,7 +38,7 @@
             // Adding patterns to the "includeRegExpList" to only include matching patterns
             "includeRegExpList": [],
             // To exclude patterns, add them to "ignoreRegExpList"
-            "ignoreRegExpList": [],
+            "ignoreRegExpList": ["CSS-url"],
             // regex patterns than can be used with ignoreRegExpList or includeRegExpList
             // Example: "pattern": [{ "name": "mdash", "pattern": "&mdash;" }]
             // This could be included in "ignoreRegExpList": ["mdash"]
