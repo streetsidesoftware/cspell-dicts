@@ -59,3 +59,13 @@ dictionaries:
 | Name  | Locale | File Type |
 | ----- | ------ | --------- |
 | `css` | `*`    | `css`     |
+
+## Predefined Patterns
+
+Predefined patterns can be used to ignore or include sequences of text to be spell checked.
+
+The following patterns are defined in this dictionary:
+
+| Name      | Description |
+| --------- | ----------- |
+| `CSS-url` |             |
