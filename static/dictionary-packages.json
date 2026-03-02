@@ -681,7 +681,12 @@
         ]
       }
     ],
-    "patterns": []
+    "patterns": [
+      {
+        "name": "CSS-url",
+        "pattern": "/\\burl\\((?:\"data:[^\"]*\"|'data:[^']*')\\)/gm"
+      }
+    ]
   },
   {
     "name": "Danish Dictionary",
