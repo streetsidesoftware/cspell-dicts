@@ -1,5 +1,14 @@
 # Changelog
 
+## [1.0.55](https://github.com/streetsidesoftware/cspell-dicts/compare/@cspell/dict-en-ca@1.0.54...@cspell/dict-en-ca@1.0.55) (2026-03-02)
+
+
+### Dependencies
+
+* The following workspace dependencies were updated
+  * devDependencies
+    * @cspell/aoo-mozilla-en-dict bumped to 1.0.8
+
 ## [1.0.54](https://github.com/streetsidesoftware/cspell-dicts/compare/@cspell/dict-en-ca@1.0.53...@cspell/dict-en-ca@1.0.54) (2026-02-08)
 
 
