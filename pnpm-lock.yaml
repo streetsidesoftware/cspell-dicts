@@ -717,10 +717,10 @@ importers:
         version: 5.6.2
       yeoman-environment:
         specifier: ^6.0.0
-        version: 6.0.0(@types/node@25.3.3)(@yeoman/adapter@1.6.0(@types/node@25.3.3))(@yeoman/types@1.2.0(@types/inquirer@9.0.9)(mem-fs@4.1.0))(mem-fs@4.1.0)
+        version: 6.0.0(@types/node@22.19.13)(@yeoman/adapter@1.6.0(@types/node@22.19.13))(@yeoman/types@1.2.0(@types/inquirer@9.0.9)(mem-fs@4.1.0))(mem-fs@4.1.0)
       yeoman-generator:
         specifier: ^8.0.0
-        version: 8.0.0(@types/node@25.3.3)(@yeoman/types@1.2.0(@types/inquirer@9.0.9)(mem-fs@4.1.0))(mem-fs@4.1.0)
+        version: 8.0.0(@types/node@22.19.13)(@yeoman/types@1.2.0(@types/inquirer@9.0.9)(mem-fs@4.1.0))(mem-fs@4.1.0)
       yosay:
         specifier: ^3.0.0
         version: 3.0.0
@@ -900,8 +900,8 @@ packages:
   '@cspell/dict-csharp@4.0.8':
     resolution: {integrity: sha512-qmk45pKFHSxckl5mSlbHxmDitSsGMlk/XzFgt7emeTJWLNSTUK//MbYAkBNRtfzB4uD7pAFiKgpKgtJrTMRnrQ==}
 
-  '@cspell/dict-css@4.0.19':
-    resolution: {integrity: sha512-VYHtPnZt/Zd/ATbW3rtexWpBnHUohUrQOHff/2JBhsVgxOrksAxJnLAO43Q1ayLJBJUUwNVo+RU0sx0aaysZfg==}
+  '@cspell/dict-css@4.1.0':
+    resolution: {integrity: sha512-bfuvlTeGoK5QgXzzjn+PvqXU5J6mwraIdESNDSvPyplr/EbGFSuvgW3TOuoVNqW4WdDI7eM4tmoP5Dn1ZVgLag==}
 
   '@cspell/dict-dart@2.3.2':
     resolution: {integrity: sha512-sUiLW56t9gfZcu8iR/5EUg+KYyRD83Cjl3yjDEA2ApVuJvK1HhX+vn4e4k4YfjpUQMag8XO2AaRhARE09+/rqw==}
@@ -924,11 +924,11 @@ packages:
   '@cspell/dict-en-common-misspellings@2.1.12':
     resolution: {integrity: sha512-14Eu6QGqyksqOd4fYPuRb58lK1Va7FQK9XxFsRKnZU8LhL3N+kj7YKDW+7aIaAN/0WGEqslGP6lGbQzNti8Akw==}
 
-  '@cspell/dict-en-gb-mit@3.1.18':
-    resolution: {integrity: sha512-AXaMzbaxhSc32MSzKX0cpwT+Thv1vPfxQz1nTly1VHw3wQcwPqVFSqrLOYwa8VNqAPR45583nnhD6iqJ9YESoQ==}
+  '@cspell/dict-en-gb-mit@3.1.19':
+    resolution: {integrity: sha512-Ni8eobxohZjVnzpUufMK2oLLRTUwFY4tF7pE2clAmM8ELgBaAheXlm5U52SpWmyhumz/c9fzburEYXKHG4spzQ==}
 
-  '@cspell/dict-en_us@4.4.29':
-    resolution: {integrity: sha512-G3B27++9ziRdgbrY/G/QZdFAnMzzx17u8nCb2Xyd4q6luLpzViRM/CW3jA+Mb/cGT5zR/9N+Yz9SrGu1s0bq7g==}
+  '@cspell/dict-en_us@4.4.30':
+    resolution: {integrity: sha512-+eVO/VNw8IzQpDIL/SCj+ytd5WbzbHZdU+GAM8eUY2ZU1KTxRw6BoDO+hEFB4cGkD9x+BXm0OKVGSWHNCSGdVw==}
 
   '@cspell/dict-filetypes@3.0.16':
     resolution: {integrity: sha512-SyrtuK2/sx+cr94jOp2/uOAb43ngZEVISUTRj4SR6SfoGULVV1iJS7Drqn7Ul9HJ731QDttwWlOUgcQ+yMRblg==}
@@ -990,10 +990,10 @@ packages:
   '@cspell/dict-makefile@1.0.5':
     resolution: {integrity: sha512-4vrVt7bGiK8Rx98tfRbYo42Xo2IstJkAF4tLLDMNQLkQ86msDlYSKG1ZCk8Abg+EdNcFAjNhXIiNO+w4KflGAQ==}
 
-  '@cspell/dict-markdown@2.0.14':
-    resolution: {integrity: sha512-uLKPNJsUcumMQTsZZgAK9RgDLyQhUz/uvbQTEkvF/Q4XfC1i/BnA8XrOrd0+Vp6+tPOKyA+omI5LRWfMu5K/Lw==}
+  '@cspell/dict-markdown@2.0.15':
+    resolution: {integrity: sha512-xz3LJfFCIJaxHu5Msu9UUSev1R1urVkERb5h1Yc5lJyNOkk/SQTSlNyME0Oma1sXlp6dLnIekL8GyeXJYszQ2w==}
     peerDependencies:
-      '@cspell/dict-css': ^4.0.19
+      '@cspell/dict-css': ^4.1.0
       '@cspell/dict-html': ^4.0.14
       '@cspell/dict-html-symbol-entities': ^4.0.5
       '@cspell/dict-typescript': ^3.2.3
@@ -1004,8 +1004,8 @@ packages:
   '@cspell/dict-node@5.0.9':
     resolution: {integrity: sha512-hO+ga+uYZ/WA4OtiMEyKt5rDUlUyu3nXMf8KVEeqq2msYvAPdldKBGH7lGONg6R/rPhv53Rb+0Y1SLdoK1+7wQ==}
 
-  '@cspell/dict-npm@5.2.35':
-    resolution: {integrity: sha512-w0VIDUvzHSTt4S9pfvSatApxtCesLMFrDUYD0Wjtw91EBRkB2wVw/RV3q1Ni9Nzpx6pCFpcB7c1xBY8l22cyiQ==}
+  '@cspell/dict-npm@5.2.36':
+    resolution: {integrity: sha512-QeoanpVt8QrSxDQVseXn+qk4sy79TAkbgB0G7q3klsZAByr61gXd1yDQ/0wp8xXsyPx+M/BIj5Qd6B8GnozFLA==}
 
   '@cspell/dict-php@4.1.1':
     resolution: {integrity: sha512-EXelI+4AftmdIGtA8HL8kr4WlUE11OqCSVlnIgZekmTkEGSZdYnkFdiJ5IANSALtlQ1mghKjz+OFqVs6yowgWA==}
@@ -1034,8 +1034,8 @@ packages:
   '@cspell/dict-shell@1.1.2':
     resolution: {integrity: sha512-WqOUvnwcHK1X61wAfwyXq04cn7KYyskg90j4lLg3sGGKMW9Sq13hs91pqrjC44Q+lQLgCobrTkMDw9Wyl9nRFA==}
 
-  '@cspell/dict-software-terms@5.1.23':
-    resolution: {integrity: sha512-YzxBeqP1j8+hg/+pmw7XHvYrQLO5ttDpZ0rqZiS7y2vnku3Cv1OQZgt9y/3SsTgcUPSCWSRHGgWfrMGqEGNB6g==}
+  '@cspell/dict-software-terms@5.1.24':
+    resolution: {integrity: sha512-Y+5b5mw8lnovcoyuiVJJX5PpNPMbdpNyILR4wJDsUMWPK2ZVcl0yyG2UYJmevY7jq/+LY48Ai9RSp0ARAlDzEQ==}
 
   '@cspell/dict-sql@2.2.1':
     resolution: {integrity: sha512-qDHF8MpAYCf4pWU8NKbnVGzkoxMNrFqBHyG/dgrlic5EQiKANCLELYtGlX5auIMDLmTf1inA0eNtv74tyRJ/vg==}
@@ -1925,8 +1925,8 @@ packages:
     resolution: {integrity: sha512-H+y0Jo/T1RZ9qPP4Eh1pkcQcLRglraJaSLoyOtHxu6AapkjWVCy2Sit1QQ4x3Dng8qDlSsZEet7g5Pq06MvTgw==}
     engines: {node: '>=20'}
 
-  comment-json@4.6.1:
-    resolution: {integrity: sha512-kdBIsBGqD/sAeqvzeOhBvO/bhtpbfbIU/2lw7bp182FV1cVlY7gr1Jf3Q1I+NOsCk8e4gF5Sl9iYH5cNvVmx5w==}
+  comment-json@4.6.2:
+    resolution: {integrity: sha512-R2rze/hDX30uul4NZoIZ76ImSJLFxn/1/ZxtKC1L77y2X1k+yYu1joKbAtMA2Fg3hZrTOiw0I5mwVMo0cf250w==}
     engines: {node: '>= 6'}
 
   common-ancestor-path@2.0.0:
@@ -1995,9 +1995,6 @@ packages:
   copy-file@11.1.0:
     resolution: {integrity: sha512-X8XDzyvYaA6msMyAM575CUoygY5b44QzLcGRKsK3MFmXcOvQa518dNPLsKYwkYsn72g3EiW+LE0ytd/FlqWmyw==}
     engines: {node: '>=18'}
-
-  core-util-is@1.0.3:
-    resolution: {integrity: sha512-ZQBvi1DcpJ4GDqanjucZ2Hj3wEO5pZDS89BWbkcrvdxksJorwUDDZamX9ldFkp9aw2lmBDLgkObEA4DWNJ9FYQ==}
 
   cosmiconfig@9.0.0:
     resolution: {integrity: sha512-itvL5h8RETACmOTFc4UfIyB2RfEHi71Ax6E/PivVxq9NseKbOWpeyHEOIbmAw1rs8Ak0VursQNww7lf7YtUwzg==}
@@ -4346,7 +4343,7 @@ snapshots:
       '@cspell/dict-cpp': 7.0.2
       '@cspell/dict-cryptocurrencies': 5.0.5
       '@cspell/dict-csharp': 4.0.8
-      '@cspell/dict-css': 4.0.19
+      '@cspell/dict-css': 4.1.0
       '@cspell/dict-dart': 2.3.2
       '@cspell/dict-data-science': 2.0.13
       '@cspell/dict-django': 4.1.6
@@ -4354,8 +4351,8 @@ snapshots:
       '@cspell/dict-dotnet': 5.0.12
       '@cspell/dict-elixir': 4.0.8
       '@cspell/dict-en-common-misspellings': 2.1.12
-      '@cspell/dict-en-gb-mit': 3.1.18
-      '@cspell/dict-en_us': 4.4.29
+      '@cspell/dict-en-gb-mit': 3.1.19
+      '@cspell/dict-en_us': 4.4.30
       '@cspell/dict-filetypes': 3.0.16
       '@cspell/dict-flutter': 1.1.1
       '@cspell/dict-fonts': 4.0.5
@@ -4376,10 +4373,10 @@ snapshots:
       '@cspell/dict-lorem-ipsum': 4.0.5
       '@cspell/dict-lua': 4.0.8
       '@cspell/dict-makefile': 1.0.5
-      '@cspell/dict-markdown': 2.0.14(@cspell/dict-css@4.0.19)(@cspell/dict-html-symbol-entities@4.0.5)(@cspell/dict-html@4.0.14)(@cspell/dict-typescript@3.2.3)
+      '@cspell/dict-markdown': 2.0.15(@cspell/dict-css@4.1.0)(@cspell/dict-html-symbol-entities@4.0.5)(@cspell/dict-html@4.0.14)(@cspell/dict-typescript@3.2.3)
       '@cspell/dict-monkeyc': 1.0.12
       '@cspell/dict-node': 5.0.9
-      '@cspell/dict-npm': 5.2.35
+      '@cspell/dict-npm': 5.2.36
       '@cspell/dict-php': 4.1.1
       '@cspell/dict-powershell': 5.0.15
       '@cspell/dict-public-licenses': 2.0.16
@@ -4389,7 +4386,7 @@ snapshots:
       '@cspell/dict-rust': 4.1.2
       '@cspell/dict-scala': 5.0.9
       '@cspell/dict-shell': 1.1.2
-      '@cspell/dict-software-terms': 5.1.23
+      '@cspell/dict-software-terms': 5.1.24
       '@cspell/dict-sql': 2.2.1
       '@cspell/dict-svelte': 1.0.7
       '@cspell/dict-swift': 2.0.6
@@ -4449,7 +4446,7 @@ snapshots:
 
   '@cspell/dict-csharp@4.0.8': {}
 
-  '@cspell/dict-css@4.0.19': {}
+  '@cspell/dict-css@4.1.0': {}
 
   '@cspell/dict-dart@2.3.2': {}
 
@@ -4465,9 +4462,9 @@ snapshots:
 
   '@cspell/dict-en-common-misspellings@2.1.12': {}
 
-  '@cspell/dict-en-gb-mit@3.1.18': {}
+  '@cspell/dict-en-gb-mit@3.1.19': {}
 
-  '@cspell/dict-en_us@4.4.29': {}
+  '@cspell/dict-en_us@4.4.30': {}
 
   '@cspell/dict-filetypes@3.0.16': {}
 
@@ -4509,9 +4506,9 @@ snapshots:
 
   '@cspell/dict-makefile@1.0.5': {}
 
-  '@cspell/dict-markdown@2.0.14(@cspell/dict-css@4.0.19)(@cspell/dict-html-symbol-entities@4.0.5)(@cspell/dict-html@4.0.14)(@cspell/dict-typescript@3.2.3)':
+  '@cspell/dict-markdown@2.0.15(@cspell/dict-css@4.1.0)(@cspell/dict-html-symbol-entities@4.0.5)(@cspell/dict-html@4.0.14)(@cspell/dict-typescript@3.2.3)':
     dependencies:
-      '@cspell/dict-css': 4.0.19
+      '@cspell/dict-css': 4.1.0
       '@cspell/dict-html': 4.0.14
       '@cspell/dict-html-symbol-entities': 4.0.5
       '@cspell/dict-typescript': 3.2.3
@@ -4520,7 +4517,7 @@ snapshots:
 
   '@cspell/dict-node@5.0.9': {}
 
-  '@cspell/dict-npm@5.2.35': {}
+  '@cspell/dict-npm@5.2.36': {}
 
   '@cspell/dict-php@4.1.1': {}
 
@@ -4542,7 +4539,7 @@ snapshots:
 
   '@cspell/dict-shell@1.1.2': {}
 
-  '@cspell/dict-software-terms@5.1.23': {}
+  '@cspell/dict-software-terms@5.1.24': {}
 
   '@cspell/dict-sql@2.2.1': {}
 
@@ -4649,12 +4646,12 @@ snapshots:
     optionalDependencies:
       '@types/node': 22.19.13
 
-  '@inquirer/external-editor@1.0.3(@types/node@25.3.3)':
+  '@inquirer/external-editor@1.0.3(@types/node@22.19.13)':
     dependencies:
       chardet: 2.1.1
       iconv-lite: 0.7.2
     optionalDependencies:
-      '@types/node': 25.3.3
+      '@types/node': 22.19.13
 
   '@inquirer/figures@1.0.15': {}
 
@@ -5273,11 +5270,11 @@ snapshots:
       - rollup
       - supports-color
 
-  '@yeoman/adapter@1.6.0(@types/node@25.3.3)':
+  '@yeoman/adapter@1.6.0(@types/node@22.19.13)':
     dependencies:
       '@types/inquirer': 9.0.9
       chalk: 5.6.2
-      inquirer: 9.3.8(@types/node@25.3.3)
+      inquirer: 9.3.8(@types/node@22.19.13)
       log-symbols: 7.0.1
       ora: 8.2.0
       p-queue: 8.1.1
@@ -5285,10 +5282,10 @@ snapshots:
     transitivePeerDependencies:
       - '@types/node'
 
-  '@yeoman/conflicter@4.0.1(@types/node@25.3.3)(@yeoman/types@1.2.0(@types/inquirer@9.0.9)(mem-fs@4.1.0))(mem-fs@4.1.0)':
+  '@yeoman/conflicter@4.0.1(@types/node@22.19.13)(@yeoman/types@1.2.0(@types/inquirer@9.0.9)(mem-fs@4.1.0))(mem-fs@4.1.0)':
     dependencies:
-      '@types/node': 25.3.3
-      '@yeoman/transform': 2.1.0(@types/node@25.3.3)
+      '@types/node': 22.19.13
+      '@yeoman/transform': 2.1.0(@types/node@22.19.13)
       '@yeoman/types': 1.2.0(@types/inquirer@9.0.9)(mem-fs@4.1.0)
       binary-extensions: 3.1.0
       cli-table: 0.3.11
@@ -5296,7 +5293,7 @@ snapshots:
       diff: 8.0.3
       isbinaryfile: 5.0.7
       mem-fs: 4.1.0
-      mem-fs-editor: 12.0.2(@types/node@25.3.3)(mem-fs@4.1.0)
+      mem-fs-editor: 12.0.2(@types/node@22.19.13)(mem-fs@4.1.0)
       minimatch: 10.2.4
       p-transform: 5.0.1
       pretty-bytes: 7.1.0
@@ -5309,9 +5306,9 @@ snapshots:
 
   '@yeoman/namespace@1.0.1': {}
 
-  '@yeoman/transform@2.1.0(@types/node@25.3.3)':
+  '@yeoman/transform@2.1.0(@types/node@22.19.13)':
     dependencies:
-      '@types/node': 25.3.3
+      '@types/node': 22.19.13
       minimatch: 9.0.9
 
   '@yeoman/types@1.2.0(@types/inquirer@9.0.9)(mem-fs@4.1.0)':
@@ -5614,10 +5611,9 @@ snapshots:
 
   commander@14.0.3: {}
 
-  comment-json@4.6.1:
+  comment-json@4.6.2:
     dependencies:
       array-timsort: 1.0.3
-      core-util-is: 1.0.3
       esprima: 4.0.1
 
   common-ancestor-path@2.0.0: {}
@@ -5701,8 +5697,6 @@ snapshots:
       graceful-fs: 4.2.11
       p-event: 6.0.1
 
-  core-util-is@1.0.3: {}
-
   cosmiconfig@9.0.0(typescript@5.9.3):
     dependencies:
       env-paths: 2.2.1
@@ -5749,7 +5743,7 @@ snapshots:
   cspell-config-lib@9.7.0:
     dependencies:
       '@cspell/cspell-types': 9.7.0
-      comment-json: 4.6.1
+      comment-json: 4.6.2
       smol-toml: 1.6.0
       yaml: 2.8.2
 
@@ -6444,9 +6438,9 @@ snapshots:
     transitivePeerDependencies:
       - supports-color
 
-  inquirer@9.3.8(@types/node@25.3.3):
+  inquirer@9.3.8(@types/node@22.19.13):
     dependencies:
-      '@inquirer/external-editor': 1.0.3(@types/node@25.3.3)
+      '@inquirer/external-editor': 1.0.3(@types/node@22.19.13)
       '@inquirer/figures': 1.0.15
       ansi-escapes: 4.3.2
       cli-width: 4.1.0
@@ -6846,7 +6840,7 @@ snapshots:
     dependencies:
       '@types/mdast': 4.0.4
 
-  mem-fs-editor@12.0.2(@types/node@25.3.3)(mem-fs@4.1.0):
+  mem-fs-editor@12.0.2(@types/node@22.19.13)(mem-fs@4.1.0):
     dependencies:
       '@types/ejs': 3.1.5
       '@types/picomatch': 4.0.2
@@ -6864,7 +6858,7 @@ snapshots:
       tinyglobby: 0.2.15
       vinyl: 3.0.1
     optionalDependencies:
-      '@types/node': 25.3.3
+      '@types/node': 22.19.13
     transitivePeerDependencies:
       - bare-abort-controller
       - react-native-b4a
@@ -7464,7 +7458,7 @@ snapshots:
 
   p-transform@5.0.1:
     dependencies:
-      '@types/node': 22.19.13
+      '@types/node': 25.3.3
       p-queue: 8.1.1
 
   p-try@2.2.0: {}
@@ -8345,12 +8339,12 @@ snapshots:
       y18n: 5.0.8
       yargs-parser: 22.0.0
 
-  yeoman-environment@6.0.0(@types/node@25.3.3)(@yeoman/adapter@1.6.0(@types/node@25.3.3))(@yeoman/types@1.2.0(@types/inquirer@9.0.9)(mem-fs@4.1.0))(mem-fs@4.1.0):
+  yeoman-environment@6.0.0(@types/node@22.19.13)(@yeoman/adapter@1.6.0(@types/node@22.19.13))(@yeoman/types@1.2.0(@types/inquirer@9.0.9)(mem-fs@4.1.0))(mem-fs@4.1.0):
     dependencies:
-      '@yeoman/adapter': 1.6.0(@types/node@25.3.3)
-      '@yeoman/conflicter': 4.0.1(@types/node@25.3.3)(@yeoman/types@1.2.0(@types/inquirer@9.0.9)(mem-fs@4.1.0))(mem-fs@4.1.0)
+      '@yeoman/adapter': 1.6.0(@types/node@22.19.13)
+      '@yeoman/conflicter': 4.0.1(@types/node@22.19.13)(@yeoman/types@1.2.0(@types/inquirer@9.0.9)(mem-fs@4.1.0))(mem-fs@4.1.0)
       '@yeoman/namespace': 1.0.1
-      '@yeoman/transform': 2.1.0(@types/node@25.3.3)
+      '@yeoman/transform': 2.1.0(@types/node@22.19.13)
       '@yeoman/types': 1.2.0(@types/inquirer@9.0.9)(mem-fs@4.1.0)
       arrify: 3.0.0
       chalk: 5.6.2
@@ -8363,7 +8357,7 @@ snapshots:
       locate-path: 8.0.0
       lodash-es: 4.17.23
       mem-fs: 4.1.0
-      mem-fs-editor: 12.0.2(@types/node@25.3.3)(mem-fs@4.1.0)
+      mem-fs-editor: 12.0.2(@types/node@22.19.13)(mem-fs@4.1.0)
       semver: 7.7.4
       slash: 5.1.0
       untildify: 6.0.0
@@ -8374,7 +8368,7 @@ snapshots:
       - react-native-b4a
       - supports-color
 
-  yeoman-generator@8.0.0(@types/node@25.3.3)(@yeoman/types@1.2.0(@types/inquirer@9.0.9)(mem-fs@4.1.0))(mem-fs@4.1.0):
+  yeoman-generator@8.0.0(@types/node@22.19.13)(@yeoman/types@1.2.0(@types/inquirer@9.0.9)(mem-fs@4.1.0))(mem-fs@4.1.0):
     dependencies:
       '@types/debug': 4.1.12
       '@types/lodash-es': 4.17.12
@@ -8386,7 +8380,7 @@ snapshots:
       latest-version: 9.0.0
       lodash-es: 4.17.23
       mem-fs: 4.1.0
-      mem-fs-editor: 12.0.2(@types/node@25.3.3)(mem-fs@4.1.0)
+      mem-fs-editor: 12.0.2(@types/node@22.19.13)(mem-fs@4.1.0)
       minimist: 1.2.8
       read-package-up: 12.0.0
       semver: 7.7.4
@@ -8395,7 +8389,7 @@ snapshots:
       text-table: 0.2.0
       type-fest: 5.4.4
     optionalDependencies:
-      '@types/node': 25.3.3
+      '@types/node': 22.19.13
     transitivePeerDependencies:
       - bare-abort-controller
       - react-native-b4a
