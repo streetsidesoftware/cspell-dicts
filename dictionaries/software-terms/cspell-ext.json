@@ -8,7 +8,7 @@
         {
             // changing the name is a breaking change.
             "name": "softwareTerms",
-            "path": "./dict/softwareTerms.txt",
+            "path": "./dict/softwareTerms.txt.gz",
             "description": "Software terms dictionary."
         },
         {
@@ -40,6 +40,11 @@
             "name": "coding-compound-terms",
             "path": "./dict/coding-compound-terms.txt",
             "description": "Common coding compound terms."
+        },
+        {
+            "name": "software-terms-alternative",
+            "path": "./dict/software-terms-alternative.txt",
+            "description": "Alternative software terms dictionary."
         }
     ],
     // Enable `softwareTerms` by default if this extension is imported.

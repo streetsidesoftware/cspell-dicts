@@ -14,7 +14,8 @@ targets:
     format: plaintext
     targetDirectory: './dict'
     generateNonStrict: false
-    compress: false
+    compress: true
+    keepUncompressed: true
   - name: 'software-tools'
     sources:
       - filename: src/software-tools.txt
@@ -56,3 +57,12 @@ targets:
     targetDirectory: './dict'
     generateNonStrict: false
     compress: false
+  - name: 'software-terms-alternative'
+    sources:
+      - filename: src/software-terms-alternative.txt
+        split: true
+    format: plaintext
+    targetDirectory: './dict'
+    generateNonStrict: false
+    compress: false
+    keepUncompressed: true
