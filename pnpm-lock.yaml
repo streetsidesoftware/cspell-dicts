@@ -716,11 +716,11 @@ importers:
         specifier: ^5.6.2
         version: 5.6.2
       yeoman-environment:
-        specifier: ^5.1.3
-        version: 5.1.3(@types/node@22.19.13)(@yeoman/adapter@1.6.0(@types/node@22.19.13))(@yeoman/types@1.2.0(@types/inquirer@9.0.9)(mem-fs@4.1.0))(mem-fs@4.1.0)
+        specifier: ^6.0.0
+        version: 6.0.0(@types/node@25.3.3)(@yeoman/adapter@1.6.0(@types/node@25.3.3))(@yeoman/types@1.2.0(@types/inquirer@9.0.9)(mem-fs@4.1.0))(mem-fs@4.1.0)
       yeoman-generator:
         specifier: ^7.5.1
-        version: 7.5.1(@types/node@22.19.13)(@yeoman/types@1.2.0(@types/inquirer@9.0.9)(mem-fs@4.1.0))(mem-fs@4.1.0)
+        version: 7.5.1(@types/node@25.3.3)(@yeoman/types@1.2.0(@types/inquirer@9.0.9)(mem-fs@4.1.0))(mem-fs@4.1.0)
       yosay:
         specifier: ^3.0.0
         version: 3.0.0
@@ -4419,14 +4419,14 @@ packages:
     resolution: {integrity: sha512-4UEqdc2RYGHZc7Doyqkrqiln3p9X2DZVxaGbwhn2pi7MrRagKaOcIKe8L3OxYcbhXLgLFUS3zAYuQjKBQgmuNg==}
     engines: {node: ^20.19.0 || ^22.12.0 || >=23}
 
-  yeoman-environment@5.1.3:
-    resolution: {integrity: sha512-SqxwIDysjTqNG1YX9LgrC5y5c6L9qfBjMD1u81co1Cze6kZwQzW8lzivCug283UbSOhEA0as39rO6EyzDJYhuw==}
+  yeoman-environment@6.0.0:
+    resolution: {integrity: sha512-FhVZ9bmA7Glu0M0Vfk5qR7obl27cUzdXEEvmtWAdzDSEub8mdTyElC7bxn7lwrrsLYmXYG+iN9G5xzcLky7d0w==}
     engines: {node: ^20.17.0 || >=22.9.0}
     hasBin: true
     peerDependencies:
-      '@yeoman/adapter': ^3.0.0
-      '@yeoman/types': ^1.8.0
-      mem-fs: ^4.1.2
+      '@yeoman/adapter': ^4.0.2
+      '@yeoman/types': ^1.10.3
+      mem-fs: ^4.1.4
 
   yeoman-generator@7.5.1:
     resolution: {integrity: sha512-MYncRvzSTd71BMwiUMAVhfX00sDD8DZDrmPzRxQkWuWQ0V1Qt4Rd0gS/Nee2QDTWvRjvCa+KBfiAVrtOySq+JA==}
@@ -4798,12 +4798,12 @@ snapshots:
     optionalDependencies:
       '@types/node': 22.19.13
 
-  '@inquirer/external-editor@1.0.3(@types/node@22.19.13)':
+  '@inquirer/external-editor@1.0.3(@types/node@25.3.3)':
     dependencies:
       chardet: 2.1.1
       iconv-lite: 0.7.2
     optionalDependencies:
-      '@types/node': 22.19.13
+      '@types/node': 25.3.3
 
   '@inquirer/figures@1.0.15': {}
 
@@ -5502,11 +5502,11 @@ snapshots:
       - rollup
       - supports-color
 
-  '@yeoman/adapter@1.6.0(@types/node@22.19.13)':
+  '@yeoman/adapter@1.6.0(@types/node@25.3.3)':
     dependencies:
       '@types/inquirer': 9.0.9
       chalk: 5.6.2
-      inquirer: 9.3.8(@types/node@22.19.13)
+      inquirer: 9.3.8(@types/node@25.3.3)
       log-symbols: 7.0.1
       ora: 8.2.0
       p-queue: 8.1.1
@@ -5514,10 +5514,10 @@ snapshots:
     transitivePeerDependencies:
       - '@types/node'
 
-  '@yeoman/conflicter@4.0.1(@types/node@22.19.13)(@yeoman/types@1.2.0(@types/inquirer@9.0.9)(mem-fs@4.1.0))(mem-fs@4.1.0)':
+  '@yeoman/conflicter@4.0.1(@types/node@25.3.3)(@yeoman/types@1.2.0(@types/inquirer@9.0.9)(mem-fs@4.1.0))(mem-fs@4.1.0)':
     dependencies:
-      '@types/node': 22.19.13
-      '@yeoman/transform': 2.1.0(@types/node@22.19.13)
+      '@types/node': 25.3.3
+      '@yeoman/transform': 2.1.0(@types/node@25.3.3)
       '@yeoman/types': 1.2.0(@types/inquirer@9.0.9)(mem-fs@4.1.0)
       binary-extensions: 3.1.0
       cli-table: 0.3.11
@@ -5525,7 +5525,7 @@ snapshots:
       diff: 8.0.3
       isbinaryfile: 5.0.7
       mem-fs: 4.1.0
-      mem-fs-editor: 12.0.2(@types/node@22.19.13)(mem-fs@4.1.0)
+      mem-fs-editor: 12.0.2(@types/node@25.3.3)(mem-fs@4.1.0)
       minimatch: 10.2.4
       p-transform: 5.0.1
       pretty-bytes: 7.1.0
@@ -5538,9 +5538,9 @@ snapshots:
 
   '@yeoman/namespace@1.0.1': {}
 
-  '@yeoman/transform@2.1.0(@types/node@22.19.13)':
+  '@yeoman/transform@2.1.0(@types/node@25.3.3)':
     dependencies:
-      '@types/node': 22.19.13
+      '@types/node': 25.3.3
       minimatch: 9.0.9
 
   '@yeoman/types@1.2.0(@types/inquirer@9.0.9)(mem-fs@4.1.0)':
@@ -6722,9 +6722,9 @@ snapshots:
     transitivePeerDependencies:
       - supports-color
 
-  inquirer@9.3.8(@types/node@22.19.13):
+  inquirer@9.3.8(@types/node@25.3.3):
     dependencies:
-      '@inquirer/external-editor': 1.0.3(@types/node@22.19.13)
+      '@inquirer/external-editor': 1.0.3(@types/node@25.3.3)
       '@inquirer/figures': 1.0.15
       ansi-escapes: 4.3.2
       cli-width: 4.1.0
@@ -7154,7 +7154,7 @@ snapshots:
       - bare-abort-controller
       - react-native-b4a
 
-  mem-fs-editor@12.0.2(@types/node@22.19.13)(mem-fs@4.1.0):
+  mem-fs-editor@12.0.2(@types/node@25.3.3)(mem-fs@4.1.0):
     dependencies:
       '@types/ejs': 3.1.5
       '@types/picomatch': 4.0.2
@@ -7172,7 +7172,7 @@ snapshots:
       tinyglobby: 0.2.15
       vinyl: 3.0.1
     optionalDependencies:
-      '@types/node': 22.19.13
+      '@types/node': 25.3.3
     transitivePeerDependencies:
       - bare-abort-controller
       - react-native-b4a
@@ -7782,7 +7782,7 @@ snapshots:
 
   p-transform@5.0.1:
     dependencies:
-      '@types/node': 25.3.3
+      '@types/node': 22.19.13
       p-queue: 8.1.1
 
   p-try@2.2.0: {}
@@ -8673,12 +8673,12 @@ snapshots:
       y18n: 5.0.8
       yargs-parser: 22.0.0
 
-  yeoman-environment@5.1.3(@types/node@22.19.13)(@yeoman/adapter@1.6.0(@types/node@22.19.13))(@yeoman/types@1.2.0(@types/inquirer@9.0.9)(mem-fs@4.1.0))(mem-fs@4.1.0):
+  yeoman-environment@6.0.0(@types/node@25.3.3)(@yeoman/adapter@1.6.0(@types/node@25.3.3))(@yeoman/types@1.2.0(@types/inquirer@9.0.9)(mem-fs@4.1.0))(mem-fs@4.1.0):
     dependencies:
-      '@yeoman/adapter': 1.6.0(@types/node@22.19.13)
-      '@yeoman/conflicter': 4.0.1(@types/node@22.19.13)(@yeoman/types@1.2.0(@types/inquirer@9.0.9)(mem-fs@4.1.0))(mem-fs@4.1.0)
+      '@yeoman/adapter': 1.6.0(@types/node@25.3.3)
+      '@yeoman/conflicter': 4.0.1(@types/node@25.3.3)(@yeoman/types@1.2.0(@types/inquirer@9.0.9)(mem-fs@4.1.0))(mem-fs@4.1.0)
       '@yeoman/namespace': 1.0.1
-      '@yeoman/transform': 2.1.0(@types/node@22.19.13)
+      '@yeoman/transform': 2.1.0(@types/node@25.3.3)
       '@yeoman/types': 1.2.0(@types/inquirer@9.0.9)(mem-fs@4.1.0)
       arrify: 3.0.0
       chalk: 5.6.2
@@ -8691,7 +8691,7 @@ snapshots:
       locate-path: 8.0.0
       lodash-es: 4.17.23
       mem-fs: 4.1.0
-      mem-fs-editor: 11.1.4(mem-fs@4.1.0)
+      mem-fs-editor: 12.0.2(@types/node@25.3.3)(mem-fs@4.1.0)
       semver: 7.7.4
       slash: 5.1.0
       untildify: 6.0.0
@@ -8702,7 +8702,7 @@ snapshots:
       - react-native-b4a
       - supports-color
 
-  yeoman-generator@7.5.1(@types/node@22.19.13)(@yeoman/types@1.2.0(@types/inquirer@9.0.9)(mem-fs@4.1.0))(mem-fs@4.1.0):
+  yeoman-generator@7.5.1(@types/node@25.3.3)(@yeoman/types@1.2.0(@types/inquirer@9.0.9)(mem-fs@4.1.0))(mem-fs@4.1.0):
     dependencies:
       '@types/lodash-es': 4.17.12
       '@yeoman/namespace': 1.0.1
@@ -8723,7 +8723,7 @@ snapshots:
       sort-keys: 5.1.0
       text-table: 0.2.0
     optionalDependencies:
-      '@types/node': 22.19.13
+      '@types/node': 25.3.3
     transitivePeerDependencies:
       - bare-abort-controller
       - react-native-b4a
