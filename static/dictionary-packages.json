@@ -401,7 +401,7 @@
   },
   {
     "name": "CSpell Dictionaries Bundle",
-    "version": "2.0.54",
+    "version": "2.0.55",
     "dir": "dictionaries/cspell",
     "packageName": "@cspell/dict-cspell-bundle",
     "description": "Dictionaries included with the CSpell Command Line tool.",
@@ -662,7 +662,7 @@
   },
   {
     "name": "CSS",
-    "version": "4.0.19",
+    "version": "4.1.0",
     "dir": "dictionaries/css",
     "packageName": "@cspell/dict-css",
     "description": "CSS dictionary.",
@@ -993,7 +993,7 @@
   },
   {
     "name": "English - Australian",
-    "version": "1.1.16",
+    "version": "1.1.17",
     "dir": "dictionaries/en_AU",
     "packageName": "@cspell/dict-en-au",
     "description": "Australian English Dictionary",
@@ -1040,7 +1040,7 @@
   },
   {
     "name": "English - Canadian",
-    "version": "1.0.54",
+    "version": "1.0.55",
     "dir": "dictionaries/en_CA",
     "packageName": "@cspell/dict-en-ca",
     "description": "Canadian English Dictionary",
@@ -1087,7 +1087,7 @@
   },
   {
     "name": "English - British",
-    "version": "5.0.23",
+    "version": "5.0.24",
     "dir": "dictionaries/en_GB",
     "packageName": "@cspell/dict-en-gb",
     "description": "British English Dictionary",
@@ -1110,7 +1110,7 @@
   },
   {
     "name": "English - British (-ise)",
-    "version": "1.0.23",
+    "version": "1.0.24",
     "dir": "dictionaries/en_GB-ise",
     "packageName": "@cspell/dict-en-gb-ise",
     "description": "British English (-ise) Dictionary",
@@ -1133,7 +1133,7 @@
   },
   {
     "name": "English - British (Legacy)",
-    "version": "1.0.23",
+    "version": "1.0.24",
     "dir": "dictionaries/en_GB-legacy",
     "packageName": "@cspell/dict-en-gb-legacy",
     "description": "British English Dictionary (Legacy)",
@@ -1156,7 +1156,7 @@
   },
   {
     "name": "English - British (Limited)",
-    "version": "3.1.18",
+    "version": "3.1.19",
     "dir": "dictionaries/en_GB-MIT",
     "packageName": "@cspell/dict-en-gb-mit",
     "description": "British English Dictionary with MIT License",
@@ -1202,7 +1202,7 @@
   },
   {
     "name": "English - American",
-    "version": "4.4.29",
+    "version": "4.4.30",
     "dir": "dictionaries/en_US",
     "packageName": "@cspell/dict-en_us",
     "description": "American English Dictionary",
@@ -2368,7 +2368,7 @@
   },
   {
     "name": "Markdown",
-    "version": "2.0.14",
+    "version": "2.0.15",
     "dir": "dictionaries/markdown",
     "packageName": "@cspell/dict-markdown",
     "description": "Markdown dictionary.",
@@ -2469,7 +2469,7 @@
   },
   {
     "name": "mime-types",
-    "version": "1.0.0",
+    "version": "1.0.1",
     "dir": "dictionaries/mime-types",
     "packageName": "@cspell/dict-mime-types",
     "description": "MIME Types dictionary.",
@@ -2654,7 +2654,7 @@
   },
   {
     "name": "NPM",
-    "version": "5.2.35",
+    "version": "5.2.36",
     "dir": "dictionaries/npm",
     "packageName": "@cspell/dict-npm",
     "description": "Dictionary of Common Javascript Packages.",
@@ -3209,7 +3209,7 @@
   },
   {
     "name": "Software Terms",
-    "version": "5.1.23",
+    "version": "5.1.24",
     "dir": "dictionaries/software-terms",
     "packageName": "@cspell/dict-software-terms",
     "description": "Software terms dictionary.",
@@ -3260,6 +3260,12 @@
         "name": "coding-compound-terms",
         "description": "Common coding compound terms.",
         "enabled": true,
+        "locales": [],
+        "fileTypes": []
+      },
+      {
+        "name": "software-terms-alternative",
+        "description": "Alternative software terms dictionary.",
         "locales": [],
         "fileTypes": []
       }
