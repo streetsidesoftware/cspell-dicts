@@ -40,6 +40,7 @@ Add the following to your VSCode settings:
     "web-services",
     "computing-acronyms",
     "coding-compound-terms",
+    "software-terms-alternative",
   ],
 }
 ```
@@ -61,6 +62,7 @@ Add the following to your VSCode settings:
     "web-services",
     "computing-acronyms",
     "coding-compound-terms",
+    "software-terms-alternative",
   ],
 }
 ```
@@ -81,6 +83,7 @@ dictionaries:
   - web-services
   - computing-acronyms
   - coding-compound-terms
+  - software-terms-alternative
 ```
 
 </details>
@@ -91,15 +94,16 @@ dictionaries:
 
 ## Dictionary Information
 
-| Name                        | Enabled | Description                           |
-| --------------------------- | ------- | ------------------------------------- |
-| `software-term-suggestions` | **Yes** |                                       |
-| `softwareTerms`             | **Yes** | Software terms dictionary.            |
-| `software-tools`            | **Yes** | Software tools dictionary.            |
-| `networking-terms`          |         | Software networking terms dictionary. |
-| `web-services`              | **Yes** | Web Services and APIs dictionary.     |
-| `computing-acronyms`        | **Yes** | Common acronyms related to computing. |
-| `coding-compound-terms`     | **Yes** | Common coding compound terms.         |
+| Name                         | Enabled | Description                            |
+| ---------------------------- | ------- | -------------------------------------- |
+| `software-term-suggestions`  | **Yes** |                                        |
+| `softwareTerms`              | **Yes** | Software terms dictionary.             |
+| `software-tools`             | **Yes** | Software tools dictionary.             |
+| `networking-terms`           |         | Software networking terms dictionary.  |
+| `web-services`               | **Yes** | Web Services and APIs dictionary.      |
+| `computing-acronyms`         | **Yes** | Common acronyms related to computing.  |
+| `coding-compound-terms`      | **Yes** | Common coding compound terms.          |
+| `software-terms-alternative` |         | Alternative software terms dictionary. |
 
 <!--- @@inject-end: ./static/install.md --->
 
