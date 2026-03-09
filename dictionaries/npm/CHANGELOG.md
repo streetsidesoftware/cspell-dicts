@@ -3,6 +3,16 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+## [5.2.37](https://github.com/streetsidesoftware/cspell-dicts/compare/@cspell/dict-npm@5.2.36...@cspell/dict-npm@5.2.37) (2026-03-09)
+
+
+### Updates and Bug Fixes
+
+* Fixes problem with mailbox-gl ([#5341](https://github.com/streetsidesoftware/cspell-dicts/issues/5341)) ([a629412](https://github.com/streetsidesoftware/cspell-dicts/commit/a6294126c28e3bb70633fa365e7c3654eed42fa6))
+* Updates to npm dict ([#5330](https://github.com/streetsidesoftware/cspell-dicts/issues/5330)) ([5ef7b5d](https://github.com/streetsidesoftware/cspell-dicts/commit/5ef7b5d68098a646e2c4b9efe5c512bd193964fd))
+* Workflow Bot -- Update Dictionaries ([#5334](https://github.com/streetsidesoftware/cspell-dicts/issues/5334)) ([6ade504](https://github.com/streetsidesoftware/cspell-dicts/commit/6ade50400ac44f2fabda9f16b12ffab3ba44e500))
+* Workflow Bot -- Update Dictionaries ([#5345](https://github.com/streetsidesoftware/cspell-dicts/issues/5345)) ([8560c5e](https://github.com/streetsidesoftware/cspell-dicts/commit/8560c5e3bac3cec8bae046c82083ec879e77fada))
+
 ## [5.2.36](https://github.com/streetsidesoftware/cspell-dicts/compare/@cspell/dict-npm@5.2.35...@cspell/dict-npm@5.2.36) (2026-03-02)
 
 

@@ -3,6 +3,13 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+## [3.0.17](https://github.com/streetsidesoftware/cspell-dicts/compare/@cspell/dict-filetypes@3.0.16...@cspell/dict-filetypes@3.0.17) (2026-03-09)
+
+
+### Updates and Bug Fixes
+
+* Add '.ipynb' to filetypes dictionary ([#5339](https://github.com/streetsidesoftware/cspell-dicts/issues/5339)) ([83fea9d](https://github.com/streetsidesoftware/cspell-dicts/commit/83fea9d750e317711e6173de4fecc5a9035c7a59))
+
 ## [3.0.16](https://github.com/streetsidesoftware/cspell-dicts/compare/@cspell/dict-filetypes@3.0.15...@cspell/dict-filetypes@3.0.16) (2026-02-23)
 
 

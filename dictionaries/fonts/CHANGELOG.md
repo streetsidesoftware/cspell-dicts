@@ -3,6 +3,13 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+## [4.0.6](https://github.com/streetsidesoftware/cspell-dicts/compare/@cspell/dict-fonts@4.0.5...@cspell/dict-fonts@4.0.6) (2026-03-09)
+
+
+### Updates and Bug Fixes
+
+* Updates fonts dict ([#5328](https://github.com/streetsidesoftware/cspell-dicts/issues/5328)) ([a6a7162](https://github.com/streetsidesoftware/cspell-dicts/commit/a6a7162af17ee639dbd20365ec29eb4efc217a32))
+
 ## [4.0.5](https://github.com/streetsidesoftware/cspell-dicts/compare/@cspell/dict-fonts@4.0.4...@cspell/dict-fonts@4.0.5) (2025-07-09)
 
 

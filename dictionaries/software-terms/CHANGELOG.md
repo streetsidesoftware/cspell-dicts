@@ -3,6 +3,18 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+## [5.2.0](https://github.com/streetsidesoftware/cspell-dicts/compare/@cspell/dict-software-terms@5.1.24...@cspell/dict-software-terms@5.2.0) (2026-03-09)
+
+
+### Features
+
+* Add software-terms-alternative dictionary ([#5340](https://github.com/streetsidesoftware/cspell-dicts/issues/5340)) ([ac70115](https://github.com/streetsidesoftware/cspell-dicts/commit/ac701158df0739298df435fb8e2bf0c46972b5b1))
+
+
+### Updates and Bug Fixes
+
+* Revert "fix: add "invokable" to software-terms dictionary ([#5317](https://github.com/streetsidesoftware/cspell-dicts/issues/5317))" ([#5338](https://github.com/streetsidesoftware/cspell-dicts/issues/5338)) ([6186999](https://github.com/streetsidesoftware/cspell-dicts/commit/618699956084765199a71a3c67453338487547ff))
+
 ## [5.1.24](https://github.com/streetsidesoftware/cspell-dicts/compare/@cspell/dict-software-terms@5.1.23...@cspell/dict-software-terms@5.1.24) (2026-03-02)
 
 

@@ -3,6 +3,13 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+## [5.1.1](https://github.com/streetsidesoftware/cspell-dicts/compare/@cspell/dict-ruby@5.1.0...@cspell/dict-ruby@5.1.1) (2026-03-09)
+
+
+### Updates and Bug Fixes
+
+* Updates to ruby dict ([#5331](https://github.com/streetsidesoftware/cspell-dicts/issues/5331)) ([dfaddd4](https://github.com/streetsidesoftware/cspell-dicts/commit/dfaddd4cbfd924dd34644c7b70227b1069747f9a))
+
 ## [5.1.0](https://github.com/streetsidesoftware/cspell-dicts/compare/@cspell/dict-ruby@5.0.9...@cspell/dict-ruby@5.1.0) (2026-01-03)
 
 

@@ -1,5 +1,35 @@
 # Release Notes
 
+## [33.7.0](https://github.com/streetsidesoftware/cspell-dicts/compare/cspell-dicts@33.6.0...cspell-dicts@33.7.0) (2026-03-09)
+
+
+### Features
+
+* Add software-terms-alternative dictionary ([#5340](https://github.com/streetsidesoftware/cspell-dicts/issues/5340)) ([ac70115](https://github.com/streetsidesoftware/cspell-dicts/commit/ac701158df0739298df435fb8e2bf0c46972b5b1))
+
+
+### Updates and Bug Fixes
+
+* Add '.ipynb' to filetypes dictionary ([#5339](https://github.com/streetsidesoftware/cspell-dicts/issues/5339)) ([83fea9d](https://github.com/streetsidesoftware/cspell-dicts/commit/83fea9d750e317711e6173de4fecc5a9035c7a59))
+* Add HTML specification terms and new attribute names to dictionaries ([#5344](https://github.com/streetsidesoftware/cspell-dicts/issues/5344)) ([a2c2d8a](https://github.com/streetsidesoftware/cspell-dicts/commit/a2c2d8a3495e4a38739fab2aaa9d2415871f6b97))
+* Fixes problem with mailbox-gl ([#5341](https://github.com/streetsidesoftware/cspell-dicts/issues/5341)) ([a629412](https://github.com/streetsidesoftware/cspell-dicts/commit/a6294126c28e3bb70633fa365e7c3654eed42fa6))
+* Revert "fix: add "invokable" to software-terms dictionary ([#5317](https://github.com/streetsidesoftware/cspell-dicts/issues/5317))" ([#5338](https://github.com/streetsidesoftware/cspell-dicts/issues/5338)) ([6186999](https://github.com/streetsidesoftware/cspell-dicts/commit/618699956084765199a71a3c67453338487547ff))
+* Updates companies dict ([#5327](https://github.com/streetsidesoftware/cspell-dicts/issues/5327)) ([afd7481](https://github.com/streetsidesoftware/cspell-dicts/commit/afd7481910b46662d9b8e9a049a9498f58f28f4c))
+* Updates fonts dict ([#5328](https://github.com/streetsidesoftware/cspell-dicts/issues/5328)) ([a6a7162](https://github.com/streetsidesoftware/cspell-dicts/commit/a6a7162af17ee639dbd20365ec29eb4efc217a32))
+* Updates medicalterms dict ([#5329](https://github.com/streetsidesoftware/cspell-dicts/issues/5329)) ([6e25ff2](https://github.com/streetsidesoftware/cspell-dicts/commit/6e25ff2a3ef7aa33f67554e0fbcff3b2d12f052a))
+* Updates to npm dict ([#5330](https://github.com/streetsidesoftware/cspell-dicts/issues/5330)) ([5ef7b5d](https://github.com/streetsidesoftware/cspell-dicts/commit/5ef7b5d68098a646e2c4b9efe5c512bd193964fd))
+* Updates to ruby dict ([#5331](https://github.com/streetsidesoftware/cspell-dicts/issues/5331)) ([dfaddd4](https://github.com/streetsidesoftware/cspell-dicts/commit/dfaddd4cbfd924dd34644c7b70227b1069747f9a))
+* Workflow Bot -- Build Dictionaries ([#5347](https://github.com/streetsidesoftware/cspell-dicts/issues/5347)) ([6ed38c8](https://github.com/streetsidesoftware/cspell-dicts/commit/6ed38c81797eccf9f0a3f55b9f0c58d20028a2b7))
+* Workflow Bot -- Update Dictionaries ([#5334](https://github.com/streetsidesoftware/cspell-dicts/issues/5334)) ([6ade504](https://github.com/streetsidesoftware/cspell-dicts/commit/6ade50400ac44f2fabda9f16b12ffab3ba44e500))
+* Workflow Bot -- Update Dictionaries ([#5345](https://github.com/streetsidesoftware/cspell-dicts/issues/5345)) ([8560c5e](https://github.com/streetsidesoftware/cspell-dicts/commit/8560c5e3bac3cec8bae046c82083ec879e77fada))
+
+
+### Dependencies
+
+* The following workspace dependencies were updated
+  * devDependencies
+    * @cspell/dict-cspell-bundle bumped to 2.0.56
+
 ## [33.6.0](https://github.com/streetsidesoftware/cspell-dicts/compare/cspell-dicts@33.5.0...cspell-dicts@33.6.0) (2026-03-02)
 
 

@@ -3,6 +3,13 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+## [4.0.15](https://github.com/streetsidesoftware/cspell-dicts/compare/@cspell/dict-html@4.0.14...@cspell/dict-html@4.0.15) (2026-03-09)
+
+
+### Updates and Bug Fixes
+
+* Add HTML specification terms and new attribute names to dictionaries ([#5344](https://github.com/streetsidesoftware/cspell-dicts/issues/5344)) ([a2c2d8a](https://github.com/streetsidesoftware/cspell-dicts/commit/a2c2d8a3495e4a38739fab2aaa9d2415871f6b97))
+
 ## [4.0.14](https://github.com/streetsidesoftware/cspell-dicts/compare/@cspell/dict-html@4.0.13...@cspell/dict-html@4.0.14) (2025-12-17)
 
 
