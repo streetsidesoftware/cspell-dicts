@@ -3,6 +3,13 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+## [5.2.1](https://github.com/streetsidesoftware/cspell-dicts/compare/@cspell/dict-software-terms@5.2.0...@cspell/dict-software-terms@5.2.1) (2026-03-22)
+
+
+### Updates and Bug Fixes
+
+* add new technical terms (fernet, fontawesome, Zensical, etc.) ([#5364](https://github.com/streetsidesoftware/cspell-dicts/issues/5364)) ([2bd3c3a](https://github.com/streetsidesoftware/cspell-dicts/commit/2bd3c3ae6479737a0353a2d74475f7338cc540f7))
+
 ## [5.2.0](https://github.com/streetsidesoftware/cspell-dicts/compare/@cspell/dict-software-terms@5.1.24...@cspell/dict-software-terms@5.2.0) (2026-03-09)
 
 

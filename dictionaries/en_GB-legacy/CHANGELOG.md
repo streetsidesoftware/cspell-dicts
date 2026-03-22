@@ -1,5 +1,19 @@
 # Changelog
 
+## [1.0.26](https://github.com/streetsidesoftware/cspell-dicts/compare/@cspell/dict-en-gb-legacy@1.0.25...@cspell/dict-en-gb-legacy@1.0.26) (2026-03-22)
+
+
+### Updates and Bug Fixes
+
+* Workflow Bot -- Build Dictionaries ([#5365](https://github.com/streetsidesoftware/cspell-dicts/issues/5365)) ([ecdb6f1](https://github.com/streetsidesoftware/cspell-dicts/commit/ecdb6f1e46b9f1c742fb7006e59e88b20d4bfe5b))
+
+
+### Dependencies
+
+* The following workspace dependencies were updated
+  * devDependencies
+    * @cspell/dict-en-shared bumped to 1.0.50
+
 ## [1.0.25](https://github.com/streetsidesoftware/cspell-dicts/compare/@cspell/dict-en-gb-legacy@1.0.24...@cspell/dict-en-gb-legacy@1.0.25) (2026-03-09)
 
 

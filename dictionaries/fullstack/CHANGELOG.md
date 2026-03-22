@@ -3,6 +3,13 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+## [3.2.9](https://github.com/streetsidesoftware/cspell-dicts/compare/@cspell/dict-fullstack@3.2.8...@cspell/dict-fullstack@3.2.9) (2026-03-22)
+
+
+### Updates and Bug Fixes
+
+* add new technical terms (fernet, fontawesome, Zensical, etc.) ([#5364](https://github.com/streetsidesoftware/cspell-dicts/issues/5364)) ([2bd3c3a](https://github.com/streetsidesoftware/cspell-dicts/commit/2bd3c3ae6479737a0353a2d74475f7338cc540f7))
+
 ## [3.2.8](https://github.com/streetsidesoftware/cspell-dicts/compare/@cspell/dict-fullstack@3.2.7...@cspell/dict-fullstack@3.2.8) (2026-01-24)
 
 
