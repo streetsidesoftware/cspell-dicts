@@ -1,5 +1,20 @@
 # Release Notes
 
+## [33.7.2](https://github.com/streetsidesoftware/cspell-dicts/compare/cspell-dicts@33.7.1...cspell-dicts@33.7.2) (2026-03-24)
+
+
+### Updates and Bug Fixes
+
+* Add 'agentic' to shared additional words list ([#5369](https://github.com/streetsidesoftware/cspell-dicts/issues/5369)) ([d59e71a](https://github.com/streetsidesoftware/cspell-dicts/commit/d59e71a0fa83bca34262550cd76e130a3d42e1ef))
+* Workflow Bot -- Build Dictionaries ([#5372](https://github.com/streetsidesoftware/cspell-dicts/issues/5372)) ([d63a09b](https://github.com/streetsidesoftware/cspell-dicts/commit/d63a09b2e927ca5b8be7202bb2359e668f8fd9bf))
+
+
+### Dependencies
+
+* The following workspace dependencies were updated
+  * devDependencies
+    * @cspell/dict-cspell-bundle bumped to 2.0.58
+
 ## [33.7.1](https://github.com/streetsidesoftware/cspell-dicts/compare/cspell-dicts@33.7.0...cspell-dicts@33.7.1) (2026-03-22)
 
 
