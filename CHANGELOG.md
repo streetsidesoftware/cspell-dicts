@@ -1,5 +1,19 @@
 # Release Notes
 
+## [33.7.3](https://github.com/streetsidesoftware/cspell-dicts/compare/cspell-dicts@33.7.2...cspell-dicts@33.7.3) (2026-03-26)
+
+
+### Updates and Bug Fixes
+
+* **coding-terms:** reorderable ([#5375](https://github.com/streetsidesoftware/cspell-dicts/issues/5375)) ([a549db2](https://github.com/streetsidesoftware/cspell-dicts/commit/a549db21eb07f65ef4a43b5026372d9055ee93ef))
+
+
+### Dependencies
+
+* The following workspace dependencies were updated
+  * devDependencies
+    * @cspell/dict-cspell-bundle bumped to 2.0.59
+
 ## [33.7.2](https://github.com/streetsidesoftware/cspell-dicts/compare/cspell-dicts@33.7.1...cspell-dicts@33.7.2) (2026-03-24)
 
 
