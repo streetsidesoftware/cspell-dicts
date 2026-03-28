@@ -1,5 +1,19 @@
 # Change Log
 
+## [1.0.51](https://github.com/streetsidesoftware/cspell-dicts/compare/@cspell/dict-en-shared@1.0.50...@cspell/dict-en-shared@1.0.51) (2026-03-24)
+
+
+### Updates and Bug Fixes
+
+* Add 'agentic' to shared additional words list ([#5369](https://github.com/streetsidesoftware/cspell-dicts/issues/5369)) ([d59e71a](https://github.com/streetsidesoftware/cspell-dicts/commit/d59e71a0fa83bca34262550cd76e130a3d42e1ef))
+
+## [1.0.50](https://github.com/streetsidesoftware/cspell-dicts/compare/@cspell/dict-en-shared@1.0.49...@cspell/dict-en-shared@1.0.50) (2026-03-22)
+
+
+### Updates and Bug Fixes
+
+* Add 'misattribution' to shared additional words ([#5360](https://github.com/streetsidesoftware/cspell-dicts/issues/5360)) ([f1c5df9](https://github.com/streetsidesoftware/cspell-dicts/commit/f1c5df9ae56dfbf0d838a421de851eaa8dd2940e))
+
 ## [1.0.49](https://github.com/streetsidesoftware/cspell-dicts/compare/@cspell/dict-en-shared@1.0.48...@cspell/dict-en-shared@1.0.49) (2026-02-08)
 
 

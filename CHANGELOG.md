@@ -1,5 +1,52 @@
 # Release Notes
 
+## [33.7.3](https://github.com/streetsidesoftware/cspell-dicts/compare/cspell-dicts@33.7.2...cspell-dicts@33.7.3) (2026-03-26)
+
+
+### Updates and Bug Fixes
+
+* **coding-terms:** reorderable ([#5375](https://github.com/streetsidesoftware/cspell-dicts/issues/5375)) ([a549db2](https://github.com/streetsidesoftware/cspell-dicts/commit/a549db21eb07f65ef4a43b5026372d9055ee93ef))
+
+
+### Dependencies
+
+* The following workspace dependencies were updated
+  * devDependencies
+    * @cspell/dict-cspell-bundle bumped to 2.0.59
+
+## [33.7.2](https://github.com/streetsidesoftware/cspell-dicts/compare/cspell-dicts@33.7.1...cspell-dicts@33.7.2) (2026-03-24)
+
+
+### Updates and Bug Fixes
+
+* Add 'agentic' to shared additional words list ([#5369](https://github.com/streetsidesoftware/cspell-dicts/issues/5369)) ([d59e71a](https://github.com/streetsidesoftware/cspell-dicts/commit/d59e71a0fa83bca34262550cd76e130a3d42e1ef))
+* Workflow Bot -- Build Dictionaries ([#5372](https://github.com/streetsidesoftware/cspell-dicts/issues/5372)) ([d63a09b](https://github.com/streetsidesoftware/cspell-dicts/commit/d63a09b2e927ca5b8be7202bb2359e668f8fd9bf))
+
+
+### Dependencies
+
+* The following workspace dependencies were updated
+  * devDependencies
+    * @cspell/dict-cspell-bundle bumped to 2.0.58
+
+## [33.7.1](https://github.com/streetsidesoftware/cspell-dicts/compare/cspell-dicts@33.7.0...cspell-dicts@33.7.1) (2026-03-22)
+
+
+### Updates and Bug Fixes
+
+* Add 'misattribution' to shared additional words ([#5360](https://github.com/streetsidesoftware/cspell-dicts/issues/5360)) ([f1c5df9](https://github.com/streetsidesoftware/cspell-dicts/commit/f1c5df9ae56dfbf0d838a421de851eaa8dd2940e))
+* add new technical terms (fernet, fontawesome, Zensical, etc.) ([#5364](https://github.com/streetsidesoftware/cspell-dicts/issues/5364)) ([2bd3c3a](https://github.com/streetsidesoftware/cspell-dicts/commit/2bd3c3ae6479737a0353a2d74475f7338cc540f7))
+* Workflow Bot -- Build Dictionaries ([#5365](https://github.com/streetsidesoftware/cspell-dicts/issues/5365)) ([ecdb6f1](https://github.com/streetsidesoftware/cspell-dicts/commit/ecdb6f1e46b9f1c742fb7006e59e88b20d4bfe5b))
+* Workflow Bot -- Update Dictionaries ([#5354](https://github.com/streetsidesoftware/cspell-dicts/issues/5354)) ([e885a32](https://github.com/streetsidesoftware/cspell-dicts/commit/e885a32d0f86d052b2b9ef2fcd26f3112f2c19bb))
+* Workflow Bot -- Update Dictionaries ([#5363](https://github.com/streetsidesoftware/cspell-dicts/issues/5363)) ([55a5e64](https://github.com/streetsidesoftware/cspell-dicts/commit/55a5e64f60e8a496b43f81b2785c30f181c47a67))
+
+
+### Dependencies
+
+* The following workspace dependencies were updated
+  * devDependencies
+    * @cspell/dict-cspell-bundle bumped to 2.0.57
+
 ## [33.7.0](https://github.com/streetsidesoftware/cspell-dicts/compare/cspell-dicts@33.6.0...cspell-dicts@33.7.0) (2026-03-09)
 
 

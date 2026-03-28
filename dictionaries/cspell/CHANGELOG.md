@@ -1,5 +1,40 @@
 # Change Log
 
+## [2.0.59](https://github.com/streetsidesoftware/cspell-dicts/compare/@cspell/dict-cspell-bundle@2.0.58...@cspell/dict-cspell-bundle@2.0.59) (2026-03-26)
+
+
+### Dependencies
+
+* The following workspace dependencies were updated
+  * dependencies
+    * @cspell/dict-dotnet bumped to 5.0.13
+    * @cspell/dict-software-terms bumped to 5.2.2
+
+## [2.0.58](https://github.com/streetsidesoftware/cspell-dicts/compare/@cspell/dict-cspell-bundle@2.0.57...@cspell/dict-cspell-bundle@2.0.58) (2026-03-24)
+
+
+### Dependencies
+
+* The following workspace dependencies were updated
+  * dependencies
+    * @cspell/dict-en-gb-mit bumped to 3.1.22
+    * @cspell/dict-en_us bumped to 4.4.33
+
+## [2.0.57](https://github.com/streetsidesoftware/cspell-dicts/compare/@cspell/dict-cspell-bundle@2.0.56...@cspell/dict-cspell-bundle@2.0.57) (2026-03-22)
+
+
+### Dependencies
+
+* The following workspace dependencies were updated
+  * dependencies
+    * @cspell/dict-en-gb-mit bumped to 3.1.21
+    * @cspell/dict-en_us bumped to 4.4.32
+    * @cspell/dict-filetypes bumped to 3.0.18
+    * @cspell/dict-fullstack bumped to 3.2.9
+    * @cspell/dict-npm bumped to 5.2.38
+    * @cspell/dict-python bumped to 4.2.26
+    * @cspell/dict-software-terms bumped to 5.2.1
+
 ## [2.0.56](https://github.com/streetsidesoftware/cspell-dicts/compare/@cspell/dict-cspell-bundle@2.0.55...@cspell/dict-cspell-bundle@2.0.56) (2026-03-09)
 
 

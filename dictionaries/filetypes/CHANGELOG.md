@@ -3,6 +3,13 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+## [3.0.18](https://github.com/streetsidesoftware/cspell-dicts/compare/@cspell/dict-filetypes@3.0.17...@cspell/dict-filetypes@3.0.18) (2026-03-22)
+
+
+### Updates and Bug Fixes
+
+* add new technical terms (fernet, fontawesome, Zensical, etc.) ([#5364](https://github.com/streetsidesoftware/cspell-dicts/issues/5364)) ([2bd3c3a](https://github.com/streetsidesoftware/cspell-dicts/commit/2bd3c3ae6479737a0353a2d74475f7338cc540f7))
+
 ## [3.0.17](https://github.com/streetsidesoftware/cspell-dicts/compare/@cspell/dict-filetypes@3.0.16...@cspell/dict-filetypes@3.0.17) (2026-03-09)
 
 
