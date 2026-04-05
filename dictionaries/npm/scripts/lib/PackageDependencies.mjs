@@ -1,7 +1,7 @@
 // @ts-check
 import assert from 'node:assert';
 
-import { fromJSON, toJSON, stringify } from 'flatpack-json';
+import { FlatpackStore, fromJSON } from 'flatpack-json';
 
 /**
  * @typedef {{
@@ -33,6 +33,8 @@ export class PackageDependencies {
      * @param {Options} [options]
      */
     constructor(packagesInfo, options) {
+        this.store = new FlatpackStore(packagesInfo, options);
+
         /**
          * @type {Map<string, PackageInfo>}
          */
@@ -56,11 +58,13 @@ export class PackageDependencies {
     }
 
     toJSON() {
-        return toJSON(new Map(this.packagesInfo), { format: 'V2', ...this.options });
+        this.store.setValue(this.packagesInfo);
+        return this.store.toJSON();
     }
 
     stringify() {
-        return stringify(new Map(this.packagesInfo), true, { format: 'V2', ...this.options });
+        this.store.setValue(this.packagesInfo);
+        return this.store.stringify();
     }
 
     /**
