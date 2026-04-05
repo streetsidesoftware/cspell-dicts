@@ -1,7 +1,7 @@
 // @ts-check
 import assert from 'node:assert';
 
-import { FlatpackStore, fromJSON } from 'flatpack-json';
+import { FlatpackStore, fromJSON, stringifyFlatpacked } from 'flatpack-json';
 
 /**
  * @typedef {{
@@ -63,8 +63,7 @@ export class PackageDependencies {
     }
 
     stringify() {
-        this.store.setValue(this.packagesInfo);
-        return this.store.stringify();
+        return stringifyFlatpacked(this.toJSON(), {});
     }
 
     /**
