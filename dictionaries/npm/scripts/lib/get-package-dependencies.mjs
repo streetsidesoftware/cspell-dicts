@@ -44,6 +44,11 @@ export const commonKeywords = [
 
 const defaultSize = 50;
 
+/**
+ *
+ * @param  {string[]} keywords
+ * @returns
+ */
 export async function searchForPackagesByKeyword(...keywords) {
     const url = new URL('https://registry.npmjs.org/-/v1/search');
     const text = ['keywords:' + keywords.join(','), 'not:insecure'].join(' ');

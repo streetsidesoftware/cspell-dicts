@@ -591,12 +591,12 @@ importers:
 
   dictionaries/npm/scripts:
     dependencies:
-      '@cspell/normalize-json':
-        specifier: ^9.8.0
-        version: 9.8.0
       csv-stringify:
         specifier: ^6.7.0
         version: 6.7.0
+      flatpack-json:
+        specifier: ^9.8.0
+        version: 9.8.0
 
   dictionaries/people-names:
     devDependencies:
@@ -1064,10 +1064,6 @@ packages:
 
   '@cspell/filetypes@9.8.0':
     resolution: {integrity: sha512-yHvtYn9qt6zykua77sNzTcf7HrG/dpo/+2pCMGSrfSrQypSNT6FUFvMS04W7kwhP86U1GkCjppNykXuoH3cqug==}
-    engines: {node: '>=20'}
-
-  '@cspell/normalize-json@9.8.0':
-    resolution: {integrity: sha512-gFWXwT1ONXXB0LUbG0Y3t4z9S3XqQu4DdJ75N8Qv0mSZwrZnfRe86/Z+RrhEB4aQaYgnQq5VFrqIDSawCS3cCQ==}
     engines: {node: '>=20'}
 
   '@cspell/rpc@9.8.0':
@@ -4466,10 +4462,6 @@ snapshots:
       import-meta-resolve: 4.2.0
 
   '@cspell/filetypes@9.8.0': {}
-
-  '@cspell/normalize-json@9.8.0':
-    dependencies:
-      flatpack-json: 9.8.0
 
   '@cspell/rpc@9.8.0': {}
 

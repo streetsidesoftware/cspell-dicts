@@ -1,7 +1,7 @@
 // @ts-check
 import assert from 'node:assert';
 
-import { FlatpackStore } from '@cspell/normalize-json';
+import { fromJSON, toJSON, stringify } from 'flatpack-json';
 
 /**
  * @typedef {{
@@ -12,6 +12,14 @@ import { FlatpackStore } from '@cspell/normalize-json';
  *  nf?: true
  * }} PackageInfo
  * @typedef {{[key: string]: PackageInfo }} PackagesInfo
+ * @import { Flatpacked } from 'flatpack-json';
+ *
+ * @typedef {{
+ *  sortKeys?: boolean;
+ *  dedupe?: boolean;
+ *  optimize?: boolean;
+ *  format?: 'V1' | 'V2';
+ * }} Options
  */
 
 export const msPerDay = 24 * 60 * 60 * 1000;
@@ -22,9 +30,9 @@ export class PackageDependencies {
     /**
      *
      * @param {Map<string, PackageInfo> | undefined} [packagesInfo]
-     * @param {FlatpackStore} [flatpackStore]
+     * @param {Options} [options]
      */
-    constructor(packagesInfo, flatpackStore) {
+    constructor(packagesInfo, options) {
         /**
          * @type {Map<string, PackageInfo>}
          */
@@ -39,31 +47,36 @@ export class PackageDependencies {
          */
         this.keywords = new Map();
 
-        this.calcRefCounts();
+        /**
+         * @type {Options}
+         */
+        this.options = options || {};
 
-        this.flatpackStore = flatpackStore || new FlatpackStore(packagesInfo);
+        this.calcRefCounts();
     }
 
     toJSON() {
-        this.flatpackStore.setValue(new Map(this.packagesInfo));
-        return this.flatpackStore.toJSON();
+        return toJSON(new Map(this.packagesInfo), { format: 'V2', ...this.options });
     }
 
     stringify() {
-        this.flatpackStore.setValue(new Map(this.packagesInfo));
-        return this.flatpackStore.stringify();
+        return stringify(new Map(this.packagesInfo), true, { format: 'V2', ...this.options });
     }
 
-    static fromJSON(json) {
-        // @ts-ignore
+    /**
+     *
+     * @param {Flatpacked} json
+     * @param {Options} [options]
+     * @returns
+     */
+    static fromJSON(json, options) {
         if (!json || typeof json !== 'object') return new PackageDependencies();
         if (!Array.isArray(json)) {
-            new PackageDependencies(new Map(Object.entries(json)));
+            new PackageDependencies(new Map(Object.entries(json)), options);
         }
-        const store = FlatpackStore.fromJSON(json);
-        const packagesInfo = store.toValue();
+        const packagesInfo = fromJSON(json);
         assert(isPackagesInfo(packagesInfo), 'Invalid PackageInfo');
-        return new PackageDependencies(packagesInfo, store);
+        return new PackageDependencies(packagesInfo, options);
     }
 
     /**

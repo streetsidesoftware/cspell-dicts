@@ -21,6 +21,10 @@ const limit = 0;
 
 let silent = false;
 
+/**
+ *
+ * @param  {Parameters<typeof console.log>} args
+ */
 function consoleLog(...args) {
     if (!silent) {
         console.log(...args);
@@ -52,15 +56,20 @@ const compare = new Intl.Collator('en').compare;
  */
 
 /**
+ * @import { Options } from './lib/PackageDependencies.mjs';
+ */
+
+/**
  * Read the list of packages and their dependencies.
+ * @param {Options} [options]
  * @returns {Promise<PackageDependencies>}
  */
-async function readPackagesInfo() {
+async function readPackagesInfo(options) {
     try {
         const content = await fs.readFile(urlPackagesInfo, 'utf-8');
-        return PackageDependencies.fromJSON(JSON.parse(content));
+        return PackageDependencies.fromJSON(JSON.parse(content), options);
     } catch {
-        return new PackageDependencies();
+        return new PackageDependencies(undefined, options);
     }
 }
 
@@ -149,6 +158,11 @@ function sortLines(lines) {
         .sort((a, b) => compare(a.value, b.value) || (idx.get(a) || 0) - (idx.get(b) || 0));
 }
 
+/**
+ *
+ * @param {Line} line
+ * @returns
+ */
 function stringifyLine(line) {
     if (!line.value) return line.comment;
     return line.comment ? `${line.value} ${line.comment}` : line.value;
@@ -175,7 +189,10 @@ async function writeList(packageDep, lines, newPackages) {
     await fs.writeFile(urlList, outContent);
 }
 
-const formatPackageInfoOnly = false;
+let formatPackageInfoOnly = false;
+let optimize = false; // We want to make it diff friendly, so we don't optimize the package info file.
+const dedupe = true;
+const format = 'V2';
 
 async function updateList() {
     const listContent = await fs.readFile(urlList, 'utf-8');
@@ -186,7 +203,7 @@ async function updateList() {
     /** @type {Set<string>} */
     const newPackages = new Set();
 
-    const packagesInfo = await readPackagesInfo();
+    const packagesInfo = await readPackagesInfo({ optimize, format, dedupe });
 
     await writePackagesDependencies(packagesInfo);
     if (formatPackageInfoOnly) return;
@@ -264,6 +281,14 @@ async function run() {
     try {
         const args = [...process.argv];
         silent = args.includes('--silent');
+
+        if (args.includes('--format-only')) {
+            formatPackageInfoOnly = true;
+        }
+
+        if (args.includes('--optimize')) {
+            optimize = true;
+        }
 
         const startTime = Date.now();
         while (Date.now() - startTime < 10000) {
