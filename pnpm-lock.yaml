@@ -10,7 +10,7 @@ importers:
     devDependencies:
       '@cspell/cspell-tools':
         specifier: ^9.7.0
-        version: 9.7.0(@cspell/cspell-types@9.7.0)(typescript@6.0.2)
+        version: 9.8.0(@cspell/cspell-types@9.8.0)(typescript@6.0.2)
       '@cspell/dict-cspell-bundle':
         specifier: workspace:*
         version: link:dictionaries/cspell
@@ -52,7 +52,7 @@ importers:
         version: link:scripts
       cspell-trie:
         specifier: ^9.7.0
-        version: 9.7.0(@cspell/cspell-types@9.7.0)
+        version: 9.8.0(@cspell/cspell-types@9.8.0)
       eslint:
         specifier: ^10.2.0
         version: 10.2.0
@@ -64,7 +64,7 @@ importers:
         version: 17.4.0
       hunspell-reader:
         specifier: ^9.7.0
-        version: 9.7.0
+        version: 9.8.0
       inject-markdown:
         specifier: ^4.0.0
         version: 4.0.0
@@ -357,7 +357,7 @@ importers:
         version: 9.7.0
       cspell-trie-lib:
         specifier: ^9.7.0
-        version: 9.7.0(@cspell/cspell-types@9.7.0)
+        version: 9.7.0(@cspell/cspell-types@9.8.0)
       yaml:
         specifier: ^2.8.3
         version: 2.8.3
@@ -526,7 +526,7 @@ importers:
     devDependencies:
       '@cspell/cspell-types':
         specifier: ^9.7.0
-        version: 9.7.0
+        version: 9.8.0
 
   dictionaries/lorem-ipsum: {}
 
@@ -717,10 +717,10 @@ importers:
         version: 5.6.2
       yeoman-environment:
         specifier: ^6.0.0
-        version: 6.0.0(@types/node@22.19.17)(@yeoman/adapter@1.6.0(@types/node@22.19.17))(@yeoman/types@1.2.0(@types/inquirer@9.0.9)(mem-fs@4.1.0))(mem-fs@4.1.0)
+        version: 6.0.0(@types/node@25.5.2)(@yeoman/adapter@1.6.0(@types/node@25.5.2))(@yeoman/types@1.2.0(@types/inquirer@9.0.9)(mem-fs@4.1.0))(mem-fs@4.1.0)
       yeoman-generator:
         specifier: ^8.1.2
-        version: 8.1.2(@types/node@22.19.17)(@yeoman/types@1.2.0(@types/inquirer@9.0.9)(mem-fs@4.1.0))(mem-fs@4.1.0)
+        version: 8.1.2(@types/node@25.5.2)(@yeoman/types@1.2.0(@types/inquirer@9.0.9)(mem-fs@4.1.0))(mem-fs@4.1.0)
       yosay:
         specifier: ^3.0.0
         version: 3.0.0
@@ -741,7 +741,7 @@ importers:
         version: 14.0.3
       cspell-trie-lib:
         specifier: ^9.7.0
-        version: 9.7.0(@cspell/cspell-types@9.7.0)
+        version: 9.7.0(@cspell/cspell-types@9.8.0)
       globby:
         specifier: ^16.2.0
         version: 16.2.0
@@ -781,7 +781,7 @@ importers:
         version: 9.7.0
       cspell-trie-lib:
         specifier: ^9.7.0
-        version: 9.7.0(@cspell/cspell-types@9.7.0)
+        version: 9.7.0(@cspell/cspell-types@9.8.0)
       globby:
         specifier: ^16.2.0
         version: 16.2.0
@@ -812,7 +812,7 @@ importers:
     devDependencies:
       '@cspell/cspell-types':
         specifier: ^9.7.0
-        version: 9.7.0
+        version: 9.8.0
       '@types/mdast':
         specifier: ^4.0.4
         version: 4.0.4
@@ -855,6 +855,10 @@ packages:
     resolution: {integrity: sha512-iiisyRpJciU9SOHNSi0ZEK0pqbEMFRatI/R4O+trVKb+W44p4MNGClLVRWPGUmsFbZKPJL3jDtz0wPlG0/JCZA==}
     engines: {node: '>=20'}
 
+  '@cspell/cspell-pipe@9.8.0':
+    resolution: {integrity: sha512-ISEUD8PHYkd2Ktafc6hFfIXdGKYUvthA09NbwwZsWmOqYyk4wWKHZKqyyxD+BcrFwOyMOJcD8OEvIjkRQp2SJw==}
+    engines: {node: '>=20'}
+
   '@cspell/cspell-resolver@9.7.0':
     resolution: {integrity: sha512-uiEgS238mdabDnwavo6HXt8K98jlh/jpm7NONroM9NTr9rzck2VZKD2kXEj85wDNMtRsRXNoywTjwQ8WTB6/+w==}
     engines: {node: '>=20'}
@@ -863,13 +867,17 @@ packages:
     resolution: {integrity: sha512-fkqtaCkg4jY/FotmzjhIavbXuH0AgUJxZk78Ktf4XlhqOZ4wDeUWrCf220bva4mh3TWiLx/ae9lIlpl59Vx6hA==}
     engines: {node: '>=20'}
 
-  '@cspell/cspell-tools@9.7.0':
-    resolution: {integrity: sha512-4uvPNyDagOU6S6EUWPa/qkpxhVxPv0+kTLOK0Qz4neJ/HZsZ5+Hw+h1KA+T2rcW1pLwGSoTg4R3P7kBFqc3xZQ==}
+  '@cspell/cspell-tools@9.8.0':
+    resolution: {integrity: sha512-zo6Abcxg7ZLf9efNNAmMktXL2sOMda35kxcOR8LyUX4jdJVduECXY+LHTKLLEBeqK7HY+E4fk2yTXiqJU/Z7Ow==}
     engines: {node: '>=20'}
     hasBin: true
 
   '@cspell/cspell-types@9.7.0':
     resolution: {integrity: sha512-Tdfx4eH2uS+gv9V9NCr3Rz+c7RSS6ntXp3Blliud18ibRUlRxO9dTaOjG4iv4x0nAmMeedP1ORkEpeXSkh2QiQ==}
+    engines: {node: '>=20'}
+
+  '@cspell/cspell-types@9.8.0':
+    resolution: {integrity: sha512-7Ge4UD6SCA49Tcc3+GTlz3Xn4cqVUAXtDO0u9IeHvJgkN3Me2Rw2GB/CtGmhKST3YeEeZMX7ww09TdHMUJlehw==}
     engines: {node: '>=20'}
 
   '@cspell/cspell-worker@9.7.0':
@@ -1996,8 +2004,8 @@ packages:
     resolution: {integrity: sha512-X8XDzyvYaA6msMyAM575CUoygY5b44QzLcGRKsK3MFmXcOvQa518dNPLsKYwkYsn72g3EiW+LE0ytd/FlqWmyw==}
     engines: {node: '>=18'}
 
-  cosmiconfig@9.0.0:
-    resolution: {integrity: sha512-itvL5h8RETACmOTFc4UfIyB2RfEHi71Ax6E/PivVxq9NseKbOWpeyHEOIbmAw1rs8Ak0VursQNww7lf7YtUwzg==}
+  cosmiconfig@9.0.1:
+    resolution: {integrity: sha512-hr4ihw+DBqcvrsEDioRO31Z17x71pUYoNe/4h6Z0wB72p7MU7/9gH8Q3s12NFhHPfYBBOV3qyfUxmr/Yn3shnQ==}
     engines: {node: '>=14'}
     peerDependencies:
       typescript: '>=4.9.5'
@@ -2063,8 +2071,14 @@ packages:
     peerDependencies:
       '@cspell/cspell-types': 9.7.0
 
-  cspell-trie@9.7.0:
-    resolution: {integrity: sha512-ciWN604CCxIllIDQ/TH7TiYyjsaJlwZSoBUARYZozOGqAymcBuAaWPCD6uPRa3CkwvjvJLojGV2jMnWqGYfC7Q==}
+  cspell-trie-lib@9.8.0:
+    resolution: {integrity: sha512-GXIyqxya8QLp6SjKsAN9w3apvt1Ww7GKcZvTBaP76OfLoyb1QC6unwmObY2cZs1manCntGwHrgU6vFNuXnTzpw==}
+    engines: {node: '>=20'}
+    peerDependencies:
+      '@cspell/cspell-types': 9.8.0
+
+  cspell-trie@9.8.0:
+    resolution: {integrity: sha512-xT5Q97TKBWT/FVfGOxoTGaF1Bxw3bof0MZkhcjapFeglUau3rmllYaXaHA5Igpkny5r1DjK8b1Wa7p0iEa6kEg==}
     engines: {node: '>=20'}
     hasBin: true
 
@@ -2600,8 +2614,8 @@ packages:
     resolution: {integrity: sha512-eKCa6bwnJhvxj14kZk5NCPc6Hb6BdsU9DZcOnmQKSnO1VKrfV0zCvtttPZUsBvjmNDn8rpcJfpwSYnHBjc95MQ==}
     engines: {node: '>=18.18.0'}
 
-  hunspell-reader@9.7.0:
-    resolution: {integrity: sha512-U3kI37RZjXAvnO0ZGo6r5BN+rT4sbdOLK8X4JQJFM6n0Commjwt0X/feW/yYK+Ml0f65npQz3V7y48K6YxvUhQ==}
+  hunspell-reader@9.8.0:
+    resolution: {integrity: sha512-hDus0TRpve7xU1zlCy7+L81z5asAa8aLxJW/HWUYy7BEUi+SM9AfhTtLrJIQXzDZhOq4cojYCq9BLgb2Dsngow==}
     engines: {node: '>=20'}
     hasBin: true
 
@@ -4325,26 +4339,30 @@ snapshots:
 
   '@cspell/cspell-pipe@9.7.0': {}
 
+  '@cspell/cspell-pipe@9.8.0': {}
+
   '@cspell/cspell-resolver@9.7.0':
     dependencies:
       global-directory: 5.0.0
 
   '@cspell/cspell-service-bus@9.7.0': {}
 
-  '@cspell/cspell-tools@9.7.0(@cspell/cspell-types@9.7.0)(typescript@6.0.2)':
+  '@cspell/cspell-tools@9.8.0(@cspell/cspell-types@9.8.0)(typescript@6.0.2)':
     dependencies:
-      '@cspell/cspell-pipe': 9.7.0
+      '@cspell/cspell-pipe': 9.8.0
       commander: 14.0.3
-      cosmiconfig: 9.0.0(typescript@6.0.2)
-      cspell-trie-lib: 9.7.0(@cspell/cspell-types@9.7.0)
+      cosmiconfig: 9.0.1(typescript@6.0.2)
+      cspell-trie-lib: 9.8.0(@cspell/cspell-types@9.8.0)
       glob: 13.0.6
-      hunspell-reader: 9.7.0
+      hunspell-reader: 9.8.0
       yaml: 2.8.3
     transitivePeerDependencies:
       - '@cspell/cspell-types'
       - typescript
 
   '@cspell/cspell-types@9.7.0': {}
+
+  '@cspell/cspell-types@9.8.0': {}
 
   '@cspell/cspell-worker@9.7.0':
     dependencies:
@@ -4566,12 +4584,12 @@ snapshots:
     optionalDependencies:
       '@types/node': 22.19.17
 
-  '@inquirer/external-editor@1.0.3(@types/node@22.19.17)':
+  '@inquirer/external-editor@1.0.3(@types/node@25.5.2)':
     dependencies:
       chardet: 2.1.1
       iconv-lite: 0.7.2
     optionalDependencies:
-      '@types/node': 22.19.17
+      '@types/node': 25.5.2
 
   '@inquirer/figures@1.0.15': {}
 
@@ -5180,11 +5198,11 @@ snapshots:
       - rollup
       - supports-color
 
-  '@yeoman/adapter@1.6.0(@types/node@22.19.17)':
+  '@yeoman/adapter@1.6.0(@types/node@25.5.2)':
     dependencies:
       '@types/inquirer': 9.0.9
       chalk: 5.6.2
-      inquirer: 9.3.8(@types/node@22.19.17)
+      inquirer: 9.3.8(@types/node@25.5.2)
       log-symbols: 7.0.1
       ora: 8.2.0
       p-queue: 8.1.1
@@ -5192,10 +5210,10 @@ snapshots:
     transitivePeerDependencies:
       - '@types/node'
 
-  '@yeoman/conflicter@4.0.1(@types/node@22.19.17)(@yeoman/types@1.2.0(@types/inquirer@9.0.9)(mem-fs@4.1.0))(mem-fs@4.1.0)':
+  '@yeoman/conflicter@4.0.1(@types/node@25.5.2)(@yeoman/types@1.2.0(@types/inquirer@9.0.9)(mem-fs@4.1.0))(mem-fs@4.1.0)':
     dependencies:
-      '@types/node': 22.19.17
-      '@yeoman/transform': 2.1.0(@types/node@22.19.17)
+      '@types/node': 25.5.2
+      '@yeoman/transform': 2.1.0(@types/node@25.5.2)
       '@yeoman/types': 1.2.0(@types/inquirer@9.0.9)(mem-fs@4.1.0)
       binary-extensions: 3.1.0
       cli-table: 0.3.11
@@ -5203,7 +5221,7 @@ snapshots:
       diff: 8.0.4
       isbinaryfile: 5.0.7
       mem-fs: 4.1.0
-      mem-fs-editor: 12.0.3(@types/node@22.19.17)(mem-fs@4.1.0)
+      mem-fs-editor: 12.0.3(@types/node@25.5.2)(mem-fs@4.1.0)
       minimatch: 10.2.5
       p-transform: 5.0.1
       pretty-bytes: 7.1.0
@@ -5216,9 +5234,9 @@ snapshots:
 
   '@yeoman/namespace@1.0.1': {}
 
-  '@yeoman/transform@2.1.0(@types/node@22.19.17)':
+  '@yeoman/transform@2.1.0(@types/node@25.5.2)':
     dependencies:
-      '@types/node': 22.19.17
+      '@types/node': 25.5.2
       minimatch: 9.0.9
 
   '@yeoman/types@1.2.0(@types/inquirer@9.0.9)(mem-fs@4.1.0)':
@@ -5606,7 +5624,7 @@ snapshots:
       graceful-fs: 4.2.11
       p-event: 6.0.1
 
-  cosmiconfig@9.0.0(typescript@6.0.2):
+  cosmiconfig@9.0.1(typescript@6.0.2):
     dependencies:
       env-paths: 2.2.1
       import-fresh: 3.3.1
@@ -5716,10 +5734,18 @@ snapshots:
     dependencies:
       '@cspell/cspell-types': 9.7.0
 
-  cspell-trie@9.7.0(@cspell/cspell-types@9.7.0):
+  cspell-trie-lib@9.7.0(@cspell/cspell-types@9.8.0):
+    dependencies:
+      '@cspell/cspell-types': 9.8.0
+
+  cspell-trie-lib@9.8.0(@cspell/cspell-types@9.8.0):
+    dependencies:
+      '@cspell/cspell-types': 9.8.0
+
+  cspell-trie@9.8.0(@cspell/cspell-types@9.8.0):
     dependencies:
       commander: 14.0.3
-      cspell-trie-lib: 9.7.0(@cspell/cspell-types@9.7.0)
+      cspell-trie-lib: 9.8.0(@cspell/cspell-types@9.8.0)
       gensequence: 8.0.8
     transitivePeerDependencies:
       - '@cspell/cspell-types'
@@ -6258,10 +6284,10 @@ snapshots:
 
   human-signals@8.0.1: {}
 
-  hunspell-reader@9.7.0:
+  hunspell-reader@9.8.0:
     dependencies:
-      '@cspell/cspell-pipe': 9.7.0
-      '@cspell/cspell-types': 9.7.0
+      '@cspell/cspell-pipe': 9.8.0
+      '@cspell/cspell-types': 9.8.0
       commander: 14.0.3
       gensequence: 8.0.8
       html-entities: 2.6.0
@@ -6339,9 +6365,9 @@ snapshots:
     transitivePeerDependencies:
       - supports-color
 
-  inquirer@9.3.8(@types/node@22.19.17):
+  inquirer@9.3.8(@types/node@25.5.2):
     dependencies:
-      '@inquirer/external-editor': 1.0.3(@types/node@22.19.17)
+      '@inquirer/external-editor': 1.0.3(@types/node@25.5.2)
       '@inquirer/figures': 1.0.15
       ansi-escapes: 4.3.2
       cli-width: 4.1.0
@@ -6742,7 +6768,7 @@ snapshots:
     dependencies:
       '@types/mdast': 4.0.4
 
-  mem-fs-editor@12.0.3(@types/node@22.19.17)(mem-fs@4.1.0):
+  mem-fs-editor@12.0.3(@types/node@25.5.2)(mem-fs@4.1.0):
     dependencies:
       '@types/ejs': 3.1.5
       '@types/picomatch': 4.0.3
@@ -6760,7 +6786,7 @@ snapshots:
       tinyglobby: 0.2.15
       vinyl: 3.0.1
     optionalDependencies:
-      '@types/node': 22.19.17
+      '@types/node': 25.5.2
     transitivePeerDependencies:
       - bare-abort-controller
       - react-native-b4a
@@ -8174,12 +8200,12 @@ snapshots:
       y18n: 5.0.8
       yargs-parser: 22.0.0
 
-  yeoman-environment@6.0.0(@types/node@22.19.17)(@yeoman/adapter@1.6.0(@types/node@22.19.17))(@yeoman/types@1.2.0(@types/inquirer@9.0.9)(mem-fs@4.1.0))(mem-fs@4.1.0):
+  yeoman-environment@6.0.0(@types/node@25.5.2)(@yeoman/adapter@1.6.0(@types/node@25.5.2))(@yeoman/types@1.2.0(@types/inquirer@9.0.9)(mem-fs@4.1.0))(mem-fs@4.1.0):
     dependencies:
-      '@yeoman/adapter': 1.6.0(@types/node@22.19.17)
-      '@yeoman/conflicter': 4.0.1(@types/node@22.19.17)(@yeoman/types@1.2.0(@types/inquirer@9.0.9)(mem-fs@4.1.0))(mem-fs@4.1.0)
+      '@yeoman/adapter': 1.6.0(@types/node@25.5.2)
+      '@yeoman/conflicter': 4.0.1(@types/node@25.5.2)(@yeoman/types@1.2.0(@types/inquirer@9.0.9)(mem-fs@4.1.0))(mem-fs@4.1.0)
       '@yeoman/namespace': 1.0.1
-      '@yeoman/transform': 2.1.0(@types/node@22.19.17)
+      '@yeoman/transform': 2.1.0(@types/node@25.5.2)
       '@yeoman/types': 1.2.0(@types/inquirer@9.0.9)(mem-fs@4.1.0)
       arrify: 3.0.0
       chalk: 5.6.2
@@ -8192,7 +8218,7 @@ snapshots:
       locate-path: 8.0.0
       lodash-es: 4.18.1
       mem-fs: 4.1.0
-      mem-fs-editor: 12.0.3(@types/node@22.19.17)(mem-fs@4.1.0)
+      mem-fs-editor: 12.0.3(@types/node@25.5.2)(mem-fs@4.1.0)
       semver: 7.7.4
       slash: 5.1.0
       untildify: 6.0.0
@@ -8203,7 +8229,7 @@ snapshots:
       - react-native-b4a
       - supports-color
 
-  yeoman-generator@8.1.2(@types/node@22.19.17)(@yeoman/types@1.2.0(@types/inquirer@9.0.9)(mem-fs@4.1.0))(mem-fs@4.1.0):
+  yeoman-generator@8.1.2(@types/node@25.5.2)(@yeoman/types@1.2.0(@types/inquirer@9.0.9)(mem-fs@4.1.0))(mem-fs@4.1.0):
     dependencies:
       '@types/debug': 4.1.13
       '@types/lodash-es': 4.17.12
@@ -8215,7 +8241,7 @@ snapshots:
       latest-version: 9.0.0
       lodash-es: 4.18.1
       mem-fs: 4.1.0
-      mem-fs-editor: 12.0.3(@types/node@22.19.17)(mem-fs@4.1.0)
+      mem-fs-editor: 12.0.3(@types/node@25.5.2)(mem-fs@4.1.0)
       minimist: 1.2.8
       read-package-up: 12.0.0
       semver: 7.7.4
@@ -8224,7 +8250,7 @@ snapshots:
       text-table: 0.2.0
       type-fest: 5.5.0
     optionalDependencies:
-      '@types/node': 22.19.17
+      '@types/node': 25.5.2
     transitivePeerDependencies:
       - bare-abort-controller
       - react-native-b4a
