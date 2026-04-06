@@ -2,7 +2,11 @@
 --noprofile
 --norc
 --rcfile
+BASH_REMATCH
+BASH_SUBSHELL
+BASH_TRAPSIG
 BASH_VERSINFO
+BASHPID
 bashscript
 braceexpand
 builtin
@@ -25,6 +29,7 @@ function
 functrace
 globstar
 hashall
+histchars
 histexpand
 keymap
 keymaps
@@ -36,6 +41,7 @@ OPTARG
 pgrep
 pipefail
 popd
+PROMPT_DIRTRIM
 pushd
 readarray
 readline
@@ -46,4 +52,5 @@ source
 SRANDOM
 suspend
 TIMEFORMAT
+TMPDIR
 typeset
