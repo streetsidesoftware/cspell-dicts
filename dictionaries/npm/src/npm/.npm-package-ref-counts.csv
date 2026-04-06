@@ -116,6 +116,7 @@ package,count
 @ant-design/icons-vue,1
 @ant-design/pro-components,1
 @ant-design/react-slick,2
+@ant-design/static-style-extract,1
 @ant-design/tools,4
 @ant-design/web3-common,118
 @ant-design/web3-icons,118
@@ -385,8 +386,7 @@ package,count
 @babel/plugin-transform-react-display-name,3
 @babel/plugin-transform-react-jsx,8
 @babel/plugin-transform-react-jsx-development,1
-@babel/plugin-transform-react-jsx-self,1
-@babel/plugin-transform-react-jsx-source,2
+@babel/plugin-transform-react-jsx-source,1
 @babel/plugin-transform-react-pure-annotations,1
 @babel/plugin-transform-regenerator,2
 @babel/plugin-transform-regexp-modifiers,1
@@ -573,7 +573,7 @@ package,count
 @ckeditor/ckeditor5-special-characters,1
 @ckeditor/ckeditor5-style,1
 @ckeditor/ckeditor5-table,6
-@ckeditor/ckeditor5-theme-lark,2
+@ckeditor/ckeditor5-theme-lark,1
 @ckeditor/ckeditor5-track-changes,2
 @ckeditor/ckeditor5-typing,16
 @ckeditor/ckeditor5-ui,21
@@ -868,12 +868,12 @@ package,count
 @es-shims/api,3
 @esbuild-plugins/node-modules-polyfill,1
 @esfx/canceltoken,1
-@eslint-community/eslint-plugin-eslint-comments,8
+@eslint-community/eslint-plugin-eslint-comments,9
 @eslint-community/eslint-plugin-mysticatea,1
 @eslint-community/eslint-utils,12
 @eslint-community/regexpp,4
 @eslint-react/eslint-plugin,1
-@eslint/compat,24
+@eslint/compat,25
 @eslint/config-array,1
 @eslint/config-helpers,1
 @eslint/config-inspector,1
@@ -1110,6 +1110,7 @@ package,count
 @internal/ai-sdk-v4,1
 @internal/ai-sdk-v5,1
 @internal/ai-v6,1
+@internal/core,1
 @internal/external-types,1
 @internal/lint,1
 @internal/llm-recorder,1
@@ -1328,6 +1329,7 @@ package,count
 @loki/target-native-android-emulator,1
 @loki/target-native-ios-simulator,1
 @ls-lint/ls-lint,1
+@ltd/j-toml,1
 @lubien/fixture-beta-package,1
 @lucide/build-icons,1
 @lucide/rollup-plugins,1
@@ -2065,6 +2067,7 @@ package,count
 @riotjs/register,1
 @riotjs/util,1
 @rkusa/linebreak,1
+@rolldown/plugin-babel,1
 @rolldown/pluginutils,4
 @rollup/browser,1
 @rollup/plugin-alias,18
@@ -2545,7 +2548,7 @@ package,count
 @types/aws-lambda,4
 @types/aws4,1
 @types/babel__code-frame,6
-@types/babel__core,13
+@types/babel__core,12
 @types/babel__generator,3
 @types/babel__helper-module-imports,2
 @types/babel__helper-plugin-utils,1
@@ -2644,7 +2647,7 @@ package,count
 @types/depd,1
 @types/detect-port,2
 @types/diacritics,1
-@types/diff,8
+@types/diff,7
 @types/dirty-chai,1
 @types/dlv,1
 @types/dockerode,1
@@ -3107,7 +3110,7 @@ package,count
 @types/use-sync-external-store,2
 @types/useragent,1
 @types/utf8,1
-@types/uuid,14
+@types/uuid,13
 @types/validate-npm-package-name,1
 @types/validator,3
 @types/vinyl,7
@@ -3143,7 +3146,7 @@ package,count
 @typeschema/core,1
 @typeschema/main,1
 @typeschema/zod,1
-@typescript-eslint/eslint-plugin,203
+@typescript-eslint/eslint-plugin,202
 @typescript-eslint/eslint-plugin-tslint,2
 @typescript-eslint/parser,214
 @typescript-eslint/rule-schema-to-typescript-types,1
@@ -4269,7 +4272,7 @@ bytes,15
 bytes-iec,1
 c12,2
 c8,134
-cac,10
+cac,11
 cacache,5
 cache-chunk-store,1
 cache-loader,2
@@ -4372,6 +4375,7 @@ charm,2
 chartjs-adapter-luxon,1
 chartjs-adapter-moment,1
 chartjs-test-utils,1
+chat,1
 chdir,2
 cheap-ruler,1
 check-dts,1
@@ -4382,7 +4386,7 @@ check-side-effects,1
 check-types,1
 check-version-modules,1
 checkpoint-client,1
-cheerio,33
+cheerio,32
 cheerio-select,1
 cheerio-soupselect,1
 chicken-fell-spread,11
@@ -4411,7 +4415,7 @@ circular-dependency-plugin,2
 citty,1
 cjs-mock,1
 cjson,1
-ckeditor5,12
+ckeditor5,10
 claire,1
 clamp.js,1
 clang-format,5
@@ -5134,7 +5138,7 @@ dw-neit-rc-tree-select,1
 dw-neit-rc-upload,1
 dw-neit-rc-util,1
 dynamic-dedupe,1
-each,4
+each,3
 each-async,1
 eachr,1
 earcut,1
@@ -5426,7 +5430,6 @@ eslint-config-xo-space,4
 eslint-config-xo-typescript,3
 eslint-doc-generator,13
 eslint-find-rules,2
-eslint-formatter-autolinkable-stylish,1
 eslint-formatter-codeframe,2
 eslint-formatter-pretty,4
 eslint-friendly-formatter,1
@@ -5443,7 +5446,7 @@ eslint-plugin-arca,1
 eslint-plugin-array-func,1
 eslint-plugin-astro,1
 eslint-plugin-async-await,1
-eslint-plugin-ava,4
+eslint-plugin-ava,5
 eslint-plugin-babel,11
 eslint-plugin-censor,1
 eslint-plugin-chai-expect,3
@@ -5470,7 +5473,7 @@ eslint-plugin-html,13
 eslint-plugin-import,264
 eslint-plugin-import-lite,1
 eslint-plugin-import-newlines,1
-eslint-plugin-import-x,6
+eslint-plugin-import-x,7
 eslint-plugin-jasmine,2
 eslint-plugin-jest,45
 eslint-plugin-jest-dom,3
@@ -5491,7 +5494,7 @@ eslint-plugin-metafizzy,1
 eslint-plugin-mmkal,1
 eslint-plugin-mocha,31
 eslint-plugin-mocha-no-only,3
-eslint-plugin-n,51
+eslint-plugin-n,52
 eslint-plugin-no-async-without-await,1
 eslint-plugin-no-explicit-type-exports,1
 eslint-plugin-no-floating-promise,1
@@ -5533,7 +5536,7 @@ eslint-plugin-testcafe,1
 eslint-plugin-testing-library,6
 eslint-plugin-tsdoc,7
 eslint-plugin-typescript,1
-eslint-plugin-unicorn,37
+eslint-plugin-unicorn,38
 eslint-plugin-unused-imports,4
 eslint-plugin-vitest,4
 eslint-plugin-vue,11
@@ -7838,13 +7841,13 @@ node-forge,8
 node-gyp,15
 node-gyp-build,5
 node-hook,1
-node-html-parser,6
+node-html-parser,7
 node-icu-charset-detector,1
 node-inspector,1
 node-ipc,1
 node-libs-browser,2
 node-localstorage,1
-node-machine-id,2
+node-machine-id,1
 node-mocks-http,2
 node-modules-path,1
 node-nats-streaming,1
@@ -8738,7 +8741,7 @@ react-quill,1
 react-reconciler,2
 react-redux,9
 react-refractor,1
-react-refresh,11
+react-refresh,10
 react-remove-scroll,1
 react-resizable,3
 react-responsive,2
@@ -9290,7 +9293,7 @@ serialised-error,1
 serialize-error,3
 serialize-javascript,8
 serialport,1
-serve,11
+serve,12
 serve-favicon,5
 serve-handler,8
 serve-index,8
@@ -9923,7 +9926,7 @@ toffee,1
 toggle-selection,1
 toidentifier,1
 token-types,1
-tokenx,1
+tokenx,2
 toml,7
 tool-invented-girl-jungle,11
 top-sites,1
@@ -10066,19 +10069,23 @@ typed-rest-client,1
 typedarray,2
 typedarray-to-buffer,1
 typedarray.prototype.slice,1
-typedoc,59
+typedoc,60
+typedoc-github-theme,1
+typedoc-plugin-dt-links,1
 typedoc-plugin-frontmatter,1
 typedoc-plugin-markdown,10
-typedoc-plugin-mdn-links,1
-typedoc-plugin-missing-exports,3
+typedoc-plugin-mdn-links,2
+typedoc-plugin-merge-modules,1
+typedoc-plugin-missing-exports,4
 typedoc-plugin-no-inherit,2
 typedoc-plugin-remark,1
 typedoc-plugin-rename-defaults,1
+typedoc-plugin-umami-analytics,1
 typedoc-vitepress-theme,1
 typeorm,2
-typescript,871
+typescript,873
 typescript-cached-transpile,2
-typescript-eslint,83
+typescript-eslint,84
 typescript-eslint-parser,3
 typescript-formatter,2
 typescript-json-schema,3
@@ -10176,7 +10183,7 @@ unlimited-timeout,1
 unlinted,1
 unloader,1
 unminified-webpack-plugin,3
-unocss,2
+unocss,3
 unordered-array-remove,1
 unorm,2
 unpipe,1
@@ -10314,7 +10321,7 @@ vinyl-transform,1
 vis-network,1
 vision,1
 visualwidth,1
-vite,60
+vite,61
 vite-bundle-analyzer,2
 vite-node,1
 vite-plugin-arraybuffer,1
