@@ -595,8 +595,8 @@ importers:
         specifier: ^6.7.0
         version: 6.7.0
       flatpack-json:
-        specifier: ^9.8.0
-        version: 9.8.0
+        specifier: ^10.0.0
+        version: 10.0.0
 
   dictionaries/people-names:
     devDependencies:
@@ -2507,9 +2507,9 @@ packages:
     resolution: {integrity: sha512-f7ccFPK3SXFHpx15UIGyRJ/FJQctuKZ0zVuN3frBo4HnK3cay9VEW0R6yPYFHC0AgqhukPzKjq22t5DmAyqGyw==}
     engines: {node: '>=16'}
 
-  flatpack-json@9.8.0:
-    resolution: {integrity: sha512-VVhEQ0j50Ao6mtoyRJU9WO5gdSUmaxQ6H9aW2Xxjdis1E6coIMxllTqfa6n/DFlujaJbuc+VMBrqRokSbIU6Zg==}
-    engines: {node: '>=20'}
+  flatpack-json@10.0.0:
+    resolution: {integrity: sha512-Pyb07d9xJ/FLiOU5IXSkSXazMIKBh+XV5SjOUpTi2wTXgygHiq0YRUeAIRznQ8odftQLVKJDJyQ0+vWDADZpRA==}
+    engines: {node: '>=22.18.0'}
 
   flatted@3.4.2:
     resolution: {integrity: sha512-PjDse7RzhcPkIJwy5t7KPWQSZ9cAbzQXcafsetQoD7sOJRQlGikNbx7yZp2OotDnJyrDcbyRq3Ttb18iYOqkxA==}
@@ -6286,7 +6286,7 @@ snapshots:
       flatted: 3.4.2
       keyv: 4.5.4
 
-  flatpack-json@9.8.0: {}
+  flatpack-json@10.0.0: {}
 
   flatted@3.4.2: {}
 
