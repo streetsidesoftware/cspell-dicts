@@ -717,10 +717,10 @@ importers:
         version: 5.6.2
       yeoman-environment:
         specifier: ^6.0.0
-        version: 6.0.0(@types/node@22.19.17)(@yeoman/adapter@1.6.0(@types/node@22.19.17))(@yeoman/types@1.2.0(@types/inquirer@9.0.9)(mem-fs@4.1.0))(mem-fs@4.1.0)
+        version: 6.0.0(@types/node@25.5.2)(@yeoman/adapter@1.6.0(@types/node@25.5.2))(@yeoman/types@1.2.0(@types/inquirer@9.0.9)(mem-fs@4.1.0))(mem-fs@4.1.0)
       yeoman-generator:
         specifier: ^8.1.2
-        version: 8.1.2(@types/node@22.19.17)(@yeoman/types@1.2.0(@types/inquirer@9.0.9)(mem-fs@4.1.0))(mem-fs@4.1.0)
+        version: 8.1.2(@types/node@25.5.2)(@yeoman/types@1.2.0(@types/inquirer@9.0.9)(mem-fs@4.1.0))(mem-fs@4.1.0)
       yosay:
         specifier: ^3.0.0
         version: 3.0.0
@@ -771,8 +771,8 @@ importers:
         specifier: ^10.0.0
         version: 10.0.0
       cspell-dictionary:
-        specifier: ^9.8.0
-        version: 9.8.0
+        specifier: ^10.0.0
+        version: 10.0.0
       cspell-io:
         specifier: ^10.0.0
         version: 10.0.0
@@ -851,17 +851,9 @@ packages:
     resolution: {integrity: sha512-2vMh2pLt2dg/ArYvWjMP4v9HCm0pRhONsEJyc8oHdZyOYvX7trixX894I0M39+VBf3yWtPCEgYRh1UDXNIZRig==}
     engines: {node: '>=22.18.0'}
 
-  '@cspell/cspell-performance-monitor@9.8.0':
-    resolution: {integrity: sha512-IsrXYzn23yJICIQ915ACdf+2lNEcFNTu5BIQt3khHOsGVvZ9/AZYpu9Dk825vUyZG7RHg2Oi6dYNiJtULG4ouQ==}
-    engines: {node: '>=20.18'}
-
   '@cspell/cspell-pipe@10.0.0':
     resolution: {integrity: sha512-qcgHhQvtEX8LSwIVsWrdUgiGim52lN3jT+ghlkdp72v+nBcGKsS2frEKTmbGLug+xcqppkzs6Q6VmsFp1MGtfA==}
     engines: {node: '>=22.18.0'}
-
-  '@cspell/cspell-pipe@9.8.0':
-    resolution: {integrity: sha512-ISEUD8PHYkd2Ktafc6hFfIXdGKYUvthA09NbwwZsWmOqYyk4wWKHZKqyyxD+BcrFwOyMOJcD8OEvIjkRQp2SJw==}
-    engines: {node: '>=20'}
 
   '@cspell/cspell-resolver@10.0.0':
     resolution: {integrity: sha512-8H+IUDB7SmrpcRugQ5f55qG81ZShk6nQRk+natLz41TEY98D8/LCmjHEkh/vhDPph9pVJmNUp7JcM2E1UHEa2g==}
@@ -879,10 +871,6 @@ packages:
   '@cspell/cspell-types@10.0.0':
     resolution: {integrity: sha512-IQA++Idqb8fZzkCbHq3+T+9yG9WpeaBxomOrG2KcR/Pj0CgnovzuApYKL2cc35UWLePboKinMeqEPiweFpHVug==}
     engines: {node: '>=22.18.0'}
-
-  '@cspell/cspell-types@9.8.0':
-    resolution: {integrity: sha512-7Ge4UD6SCA49Tcc3+GTlz3Xn4cqVUAXtDO0u9IeHvJgkN3Me2Rw2GB/CtGmhKST3YeEeZMX7ww09TdHMUJlehw==}
-    engines: {node: '>=20'}
 
   '@cspell/cspell-worker@10.0.0':
     resolution: {integrity: sha512-V5bjMldNksilnja3fu8muQmkW5/guyua1yNVOhoE2r7othSvjuDlGMl8g2bQSrWjp+UXu0dP/BEZ6JC/IfNwTA==}
@@ -2037,10 +2025,6 @@ packages:
     resolution: {integrity: sha512-KubSoEAJO+77KPSSWjoLCz0+MIWVNq3joGTSyxucAZrBSJD64Y1O4BHHr1aj6XHIZwXhWWNScQlrQR3OcIulng==}
     engines: {node: '>=22.18.0'}
 
-  cspell-dictionary@9.8.0:
-    resolution: {integrity: sha512-QW4hdkWcrxZA1QNqi26U0S/U3/V+tKCm7JaaesEJW2F6Ao+23AbHVwidyAVtXaEhGkn6PxB+epKrrAa6nE69qA==}
-    engines: {node: '>=20'}
-
   cspell-gitignore@10.0.0:
     resolution: {integrity: sha512-55XLH9Y52eR7QgyV28Uaw8V9cN1YZ3PQIyrN9YBR4ndQNBKJxO9+jX1nwSspwnccCZiE/N+GGxFzRBb75JDSCw==}
     engines: {node: '>=22.18.0'}
@@ -2068,12 +2052,6 @@ packages:
     engines: {node: '>=22.18.0'}
     peerDependencies:
       '@cspell/cspell-types': 10.0.0
-
-  cspell-trie-lib@9.8.0:
-    resolution: {integrity: sha512-GXIyqxya8QLp6SjKsAN9w3apvt1Ww7GKcZvTBaP76OfLoyb1QC6unwmObY2cZs1manCntGwHrgU6vFNuXnTzpw==}
-    engines: {node: '>=20'}
-    peerDependencies:
-      '@cspell/cspell-types': 9.8.0
 
   cspell-trie@10.0.0:
     resolution: {integrity: sha512-bxzPwIFXC2mgVBH1gaRFtw7GXc8JWUhjbSHd9qXkPSRv5QRA6FnxvXFmf0FUpIeaAgEQc21yR1FyALz+5kSyUQ==}
@@ -4328,11 +4306,7 @@ snapshots:
 
   '@cspell/cspell-performance-monitor@10.0.0': {}
 
-  '@cspell/cspell-performance-monitor@9.8.0': {}
-
   '@cspell/cspell-pipe@10.0.0': {}
-
-  '@cspell/cspell-pipe@9.8.0': {}
 
   '@cspell/cspell-resolver@10.0.0':
     dependencies:
@@ -4354,8 +4328,6 @@ snapshots:
       - typescript
 
   '@cspell/cspell-types@10.0.0': {}
-
-  '@cspell/cspell-types@9.8.0': {}
 
   '@cspell/cspell-worker@10.0.0':
     dependencies:
@@ -4571,12 +4543,12 @@ snapshots:
     optionalDependencies:
       '@types/node': 22.19.17
 
-  '@inquirer/external-editor@1.0.3(@types/node@22.19.17)':
+  '@inquirer/external-editor@1.0.3(@types/node@25.5.2)':
     dependencies:
       chardet: 2.1.1
       iconv-lite: 0.7.2
     optionalDependencies:
-      '@types/node': 22.19.17
+      '@types/node': 25.5.2
 
   '@inquirer/figures@1.0.15': {}
 
@@ -5179,11 +5151,11 @@ snapshots:
       - rollup
       - supports-color
 
-  '@yeoman/adapter@1.6.0(@types/node@22.19.17)':
+  '@yeoman/adapter@1.6.0(@types/node@25.5.2)':
     dependencies:
       '@types/inquirer': 9.0.9
       chalk: 5.6.2
-      inquirer: 9.3.8(@types/node@22.19.17)
+      inquirer: 9.3.8(@types/node@25.5.2)
       log-symbols: 7.0.1
       ora: 8.2.0
       p-queue: 8.1.1
@@ -5191,10 +5163,10 @@ snapshots:
     transitivePeerDependencies:
       - '@types/node'
 
-  '@yeoman/conflicter@4.0.1(@types/node@22.19.17)(@yeoman/types@1.2.0(@types/inquirer@9.0.9)(mem-fs@4.1.0))(mem-fs@4.1.0)':
+  '@yeoman/conflicter@4.0.1(@types/node@25.5.2)(@yeoman/types@1.2.0(@types/inquirer@9.0.9)(mem-fs@4.1.0))(mem-fs@4.1.0)':
     dependencies:
-      '@types/node': 22.19.17
-      '@yeoman/transform': 2.1.0(@types/node@22.19.17)
+      '@types/node': 25.5.2
+      '@yeoman/transform': 2.1.0(@types/node@25.5.2)
       '@yeoman/types': 1.2.0(@types/inquirer@9.0.9)(mem-fs@4.1.0)
       binary-extensions: 3.1.0
       cli-table: 0.3.11
@@ -5202,7 +5174,7 @@ snapshots:
       diff: 8.0.4
       isbinaryfile: 5.0.7
       mem-fs: 4.1.0
-      mem-fs-editor: 12.0.3(@types/node@22.19.17)(mem-fs@4.1.0)
+      mem-fs-editor: 12.0.3(@types/node@25.5.2)(mem-fs@4.1.0)
       minimatch: 10.2.5
       p-transform: 5.0.1
       pretty-bytes: 7.1.0
@@ -5215,9 +5187,9 @@ snapshots:
 
   '@yeoman/namespace@1.0.1': {}
 
-  '@yeoman/transform@2.1.0(@types/node@22.19.17)':
+  '@yeoman/transform@2.1.0(@types/node@25.5.2)':
     dependencies:
-      '@types/node': 22.19.17
+      '@types/node': 25.5.2
       minimatch: 9.0.9
 
   '@yeoman/types@1.2.0(@types/inquirer@9.0.9)(mem-fs@4.1.0)':
@@ -5654,14 +5626,6 @@ snapshots:
       cspell-trie-lib: 10.0.0(@cspell/cspell-types@10.0.0)
       fast-equals: 6.0.0
 
-  cspell-dictionary@9.8.0:
-    dependencies:
-      '@cspell/cspell-performance-monitor': 9.8.0
-      '@cspell/cspell-pipe': 9.8.0
-      '@cspell/cspell-types': 9.8.0
-      cspell-trie-lib: 9.8.0(@cspell/cspell-types@9.8.0)
-      fast-equals: 6.0.0
-
   cspell-gitignore@10.0.0:
     dependencies:
       '@cspell/url': 10.0.0
@@ -5712,10 +5676,6 @@ snapshots:
   cspell-trie-lib@10.0.0(@cspell/cspell-types@10.0.0):
     dependencies:
       '@cspell/cspell-types': 10.0.0
-
-  cspell-trie-lib@9.8.0(@cspell/cspell-types@9.8.0):
-    dependencies:
-      '@cspell/cspell-types': 9.8.0
 
   cspell-trie@10.0.0(@cspell/cspell-types@10.0.0):
     dependencies:
@@ -6344,9 +6304,9 @@ snapshots:
     transitivePeerDependencies:
       - supports-color
 
-  inquirer@9.3.8(@types/node@22.19.17):
+  inquirer@9.3.8(@types/node@25.5.2):
     dependencies:
-      '@inquirer/external-editor': 1.0.3(@types/node@22.19.17)
+      '@inquirer/external-editor': 1.0.3(@types/node@25.5.2)
       '@inquirer/figures': 1.0.15
       ansi-escapes: 4.3.2
       cli-width: 4.1.0
@@ -6747,7 +6707,7 @@ snapshots:
     dependencies:
       '@types/mdast': 4.0.4
 
-  mem-fs-editor@12.0.3(@types/node@22.19.17)(mem-fs@4.1.0):
+  mem-fs-editor@12.0.3(@types/node@25.5.2)(mem-fs@4.1.0):
     dependencies:
       '@types/ejs': 3.1.5
       '@types/picomatch': 4.0.3
@@ -6765,7 +6725,7 @@ snapshots:
       tinyglobby: 0.2.16
       vinyl: 3.0.1
     optionalDependencies:
-      '@types/node': 22.19.17
+      '@types/node': 25.5.2
     transitivePeerDependencies:
       - bare-abort-controller
       - react-native-b4a
@@ -8171,12 +8131,12 @@ snapshots:
       y18n: 5.0.8
       yargs-parser: 22.0.0
 
-  yeoman-environment@6.0.0(@types/node@22.19.17)(@yeoman/adapter@1.6.0(@types/node@22.19.17))(@yeoman/types@1.2.0(@types/inquirer@9.0.9)(mem-fs@4.1.0))(mem-fs@4.1.0):
+  yeoman-environment@6.0.0(@types/node@25.5.2)(@yeoman/adapter@1.6.0(@types/node@25.5.2))(@yeoman/types@1.2.0(@types/inquirer@9.0.9)(mem-fs@4.1.0))(mem-fs@4.1.0):
     dependencies:
-      '@yeoman/adapter': 1.6.0(@types/node@22.19.17)
-      '@yeoman/conflicter': 4.0.1(@types/node@22.19.17)(@yeoman/types@1.2.0(@types/inquirer@9.0.9)(mem-fs@4.1.0))(mem-fs@4.1.0)
+      '@yeoman/adapter': 1.6.0(@types/node@25.5.2)
+      '@yeoman/conflicter': 4.0.1(@types/node@25.5.2)(@yeoman/types@1.2.0(@types/inquirer@9.0.9)(mem-fs@4.1.0))(mem-fs@4.1.0)
       '@yeoman/namespace': 1.0.1
-      '@yeoman/transform': 2.1.0(@types/node@22.19.17)
+      '@yeoman/transform': 2.1.0(@types/node@25.5.2)
       '@yeoman/types': 1.2.0(@types/inquirer@9.0.9)(mem-fs@4.1.0)
       arrify: 3.0.0
       chalk: 5.6.2
@@ -8189,7 +8149,7 @@ snapshots:
       locate-path: 8.0.0
       lodash-es: 4.18.1
       mem-fs: 4.1.0
-      mem-fs-editor: 12.0.3(@types/node@22.19.17)(mem-fs@4.1.0)
+      mem-fs-editor: 12.0.3(@types/node@25.5.2)(mem-fs@4.1.0)
       semver: 7.7.4
       slash: 5.1.0
       untildify: 6.0.0
@@ -8200,7 +8160,7 @@ snapshots:
       - react-native-b4a
       - supports-color
 
-  yeoman-generator@8.1.2(@types/node@22.19.17)(@yeoman/types@1.2.0(@types/inquirer@9.0.9)(mem-fs@4.1.0))(mem-fs@4.1.0):
+  yeoman-generator@8.1.2(@types/node@25.5.2)(@yeoman/types@1.2.0(@types/inquirer@9.0.9)(mem-fs@4.1.0))(mem-fs@4.1.0):
     dependencies:
       '@types/debug': 4.1.13
       '@types/lodash-es': 4.17.12
@@ -8212,7 +8172,7 @@ snapshots:
       latest-version: 9.0.0
       lodash-es: 4.18.1
       mem-fs: 4.1.0
-      mem-fs-editor: 12.0.3(@types/node@22.19.17)(mem-fs@4.1.0)
+      mem-fs-editor: 12.0.3(@types/node@25.5.2)(mem-fs@4.1.0)
       minimist: 1.2.8
       read-package-up: 12.0.0
       semver: 7.7.4
@@ -8221,7 +8181,7 @@ snapshots:
       text-table: 0.2.0
       type-fest: 5.5.0
     optionalDependencies:
-      '@types/node': 22.19.17
+      '@types/node': 25.5.2
     transitivePeerDependencies:
       - bare-abort-controller
       - react-native-b4a
