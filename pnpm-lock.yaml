@@ -10,7 +10,7 @@ importers:
     devDependencies:
       '@cspell/cspell-tools':
         specifier: ^10.0.0
-        version: 10.0.0(@cspell/cspell-types@10.0.0)(typescript@6.0.2)
+        version: 10.0.0(@cspell/cspell-types@10.0.0)(typescript@6.0.3)
       '@cspell/dict-cspell-bundle':
         specifier: workspace:*
         version: link:dictionaries/cspell
@@ -61,7 +61,7 @@ importers:
         version: link:generator-cspell-dicts
       globals:
         specifier: ^17.4.0
-        version: 17.4.0
+        version: 17.5.0
       hunspell-reader:
         specifier: ^10.0.0
         version: 10.0.0
@@ -754,7 +754,7 @@ importers:
         version: 20.19.39
       typescript:
         specifier: ^6.0.2
-        version: 6.0.2
+        version: 6.0.3
 
   scripts:
     dependencies:
@@ -2516,8 +2516,8 @@ packages:
     resolution: {integrity: sha512-1pgFdhK3J2LeM+dVf2Pd424yHx2ou338lC0ErNP2hPx4j8eW1Sp0XqSjNxtk6Tc4Kr5wlWtSvz8cn2yb7/SG/w==}
     engines: {node: '>=20'}
 
-  globals@17.4.0:
-    resolution: {integrity: sha512-hjrNztw/VajQwOLsMNT1cbJiH2muO3OROCHnbehc8eY5JyD2gqz4AcMHPqgaOR59DjgUjYAYLeH699g/eWi2jw==}
+  globals@17.5.0:
+    resolution: {integrity: sha512-qoV+HK2yFl/366t2/Cb3+xxPUo5BuMynomoDmiaZBIdbs+0pYbjfZU+twLhGKp4uCZ/+NbtpVepH5bGCxRyy2g==}
     engines: {node: '>=18'}
 
   globby@14.1.0:
@@ -3961,8 +3961,8 @@ packages:
     resolution: {integrity: sha512-PlBfpQwiUvGViBNX84Yxwjsdhd1TUlXr6zjX7eoirtCPIr08NAmxwa+fcYBTeRQxHo9YC9wwF3m9i700sHma8g==}
     engines: {node: '>=20'}
 
-  typescript@6.0.2:
-    resolution: {integrity: sha512-bGdAIrZ0wiGDo5l8c++HWtbaNCWTS4UTv7RaTH/ThVIgjkveJt83m74bBHMJkuCbslY8ixgLBVZJIOiQlQTjfQ==}
+  typescript@6.0.3:
+    resolution: {integrity: sha512-y2TvuxSZPDyQakkFRPZHKFm+KKVqIisdg9/CZwm9ftvKXLP8NRWj38/ODjNbr43SsoXqNuAisEf1GdCxqWcdBw==}
     engines: {node: '>=14.17'}
     hasBin: true
 
@@ -4314,11 +4314,11 @@ snapshots:
 
   '@cspell/cspell-service-bus@10.0.0': {}
 
-  '@cspell/cspell-tools@10.0.0(@cspell/cspell-types@10.0.0)(typescript@6.0.2)':
+  '@cspell/cspell-tools@10.0.0(@cspell/cspell-types@10.0.0)(typescript@6.0.3)':
     dependencies:
       '@cspell/cspell-pipe': 10.0.0
       commander: 14.0.3
-      cosmiconfig: 9.0.1(typescript@6.0.2)
+      cosmiconfig: 9.0.1(typescript@6.0.3)
       cspell-trie-lib: 10.0.0(@cspell/cspell-types@10.0.0)
       glob: 13.0.6
       hunspell-reader: 10.0.0
@@ -5568,14 +5568,14 @@ snapshots:
       graceful-fs: 4.2.11
       p-event: 6.0.1
 
-  cosmiconfig@9.0.1(typescript@6.0.2):
+  cosmiconfig@9.0.1(typescript@6.0.3):
     dependencies:
       env-paths: 2.2.1
       import-fresh: 3.3.1
       js-yaml: 4.1.1
       parse-json: 5.2.0
     optionalDependencies:
-      typescript: 6.0.2
+      typescript: 6.0.3
 
   cpy-cli@7.0.0:
     dependencies:
@@ -6144,7 +6144,7 @@ snapshots:
     dependencies:
       ini: 6.0.0
 
-  globals@17.4.0: {}
+  globals@17.5.0: {}
 
   globby@14.1.0:
     dependencies:
@@ -7901,7 +7901,7 @@ snapshots:
     dependencies:
       tagged-tag: 1.0.0
 
-  typescript@6.0.2: {}
+  typescript@6.0.3: {}
 
   uglify-js@3.19.3:
     optional: true
