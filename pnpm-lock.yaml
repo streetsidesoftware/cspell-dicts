@@ -1369,8 +1369,8 @@ packages:
     resolution: {integrity: sha512-kAQTcEN9E8ERLVg5AsGwLNoFb+oEG6engbqAU2P43gD4JEIkNGMHdVQ096FsOAAYpZPB0RSt0zgInKIAS1l5QA==}
     engines: {node: ^20.17.0 || >=22.9.0}
 
-  '@npmcli/arborist@9.4.2':
-    resolution: {integrity: sha512-omJgPyzt11cEGrxzgrECoOyxAunmPMgBFTcAB/FbaB+9iOYhGmRdsQqySV8o0LWQ/l2kTeASUIMR4xJufVwmtw==}
+  '@npmcli/arborist@9.4.3':
+    resolution: {integrity: sha512-YhkR7XFdO7OBr8U1qs7DA7PmhSJXg59rLqd53jmeJ4pYe8WTCAsUZsKqxX7KKPEgAO5K7D/SjbyPUrBes9aP6Q==}
     engines: {node: ^20.17.0 || >=22.9.0}
     hasBin: true
 
@@ -1654,8 +1654,8 @@ packages:
     resolution: {integrity: sha512-XGdYL0HCoPvrzW7T8bxD6RbCY/B8uvR2jpOzJc/yEwTueKHwoVhjSLjVXkokQAO0LNl8nQFLVZ1aKfr2eFWZeA==}
     engines: {node: ^16.13.0 || >=18.12.0}
 
-  '@yeoman/transform@2.1.0':
-    resolution: {integrity: sha512-dAgDEMa8S+0ORAmrfFtufUccZpvwj6ZsZLZqMS86bxLUnB9h4n4dZN9IOHJHJfuOY+PAiLrEHgQYQvJ9R6IU6A==}
+  '@yeoman/transform@2.1.1':
+    resolution: {integrity: sha512-SCLjOswtzXkVlJyheFDgIKKztfhNH0PWTSpwjtISCCJN78WKZzQ+XgQhRSQt6HL4KG83mtBGIY15CfwjWt+vAQ==}
     engines: {node: '>=18.19.0'}
     peerDependencies:
       '@types/node': '>=18.19.44'
@@ -4695,7 +4695,7 @@ snapshots:
       '@lerna-lite/core': 5.1.0(@types/node@22.19.17)
       '@lerna-lite/npmlog': 5.1.0
       '@lerna-lite/version': 5.1.0(@lerna-lite/exec@5.1.0)(@lerna-lite/publish@5.1.0)(@lerna-lite/run@5.1.0)(@types/node@22.19.17)(conventional-commits-filter@5.0.0)
-      '@npmcli/arborist': 9.4.2
+      '@npmcli/arborist': 9.4.3
       '@npmcli/package-json': 7.0.5
       ci-info: 4.4.0
       columnify: 1.6.0
@@ -4808,7 +4808,7 @@ snapshots:
     transitivePeerDependencies:
       - supports-color
 
-  '@npmcli/arborist@9.4.2':
+  '@npmcli/arborist@9.4.3':
     dependencies:
       '@gar/promise-retry': 1.0.3
       '@isaacs/string-locale-compare': 1.1.0
@@ -5162,7 +5162,7 @@ snapshots:
   '@yeoman/conflicter@4.0.1(@types/node@22.19.17)(@yeoman/types@1.10.3(@types/node@22.19.17)(@yeoman/adapter@4.0.2(@types/node@22.19.17))(mem-fs@4.1.4))(mem-fs@4.1.4)':
     dependencies:
       '@types/node': 22.19.17
-      '@yeoman/transform': 2.1.0(@types/node@22.19.17)
+      '@yeoman/transform': 2.1.1(@types/node@22.19.17)
       '@yeoman/types': 1.10.3(@types/node@22.19.17)(@yeoman/adapter@4.0.2(@types/node@22.19.17))(mem-fs@4.1.4)
       binary-extensions: 3.1.0
       cli-table: 0.3.11
@@ -5183,7 +5183,7 @@ snapshots:
 
   '@yeoman/namespace@1.0.1': {}
 
-  '@yeoman/transform@2.1.0(@types/node@22.19.17)':
+  '@yeoman/transform@2.1.1(@types/node@22.19.17)':
     dependencies:
       '@types/node': 22.19.17
       minimatch: 9.0.9
@@ -6011,7 +6011,7 @@ snapshots:
 
   fly-import@1.0.0:
     dependencies:
-      '@npmcli/arborist': 9.4.2
+      '@npmcli/arborist': 9.4.3
       env-paths: 3.0.0
       registry-auth-token: 5.1.1
       registry-url: 7.2.0
@@ -7990,7 +7990,7 @@ snapshots:
       '@yeoman/adapter': 4.0.2(@types/node@22.19.17)
       '@yeoman/conflicter': 4.0.1(@types/node@22.19.17)(@yeoman/types@1.10.3(@types/node@22.19.17)(@yeoman/adapter@4.0.2(@types/node@22.19.17))(mem-fs@4.1.4))(mem-fs@4.1.4)
       '@yeoman/namespace': 1.0.1
-      '@yeoman/transform': 2.1.0(@types/node@22.19.17)
+      '@yeoman/transform': 2.1.1(@types/node@22.19.17)
       '@yeoman/types': 1.10.3(@types/node@22.19.17)(@yeoman/adapter@4.0.2(@types/node@22.19.17))(mem-fs@4.1.4)
       arrify: 3.0.0
       chalk: 5.6.2
