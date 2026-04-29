@@ -393,7 +393,7 @@ package,count
 @babel/plugin-transform-regenerator,2
 @babel/plugin-transform-regexp-modifiers,1
 @babel/plugin-transform-reserved-words,1
-@babel/plugin-transform-runtime,44
+@babel/plugin-transform-runtime,43
 @babel/plugin-transform-shorthand-properties,2
 @babel/plugin-transform-spread,2
 @babel/plugin-transform-sticky-regex,1
@@ -414,7 +414,7 @@ package,count
 @babel/preset-stage-2,1
 @babel/preset-typescript,55
 @babel/register,45
-@babel/runtime,84
+@babel/runtime,83
 @babel/runtime-corejs3,6
 @babel/standalone,1
 @babel/template,3
@@ -605,9 +605,9 @@ package,count
 @codemirror/theme-one-dark,1
 @codemirror/view,3
 @codesandbox/sandpack-react,3
-@codspeed/core,1
+@codspeed/core,2
 @codspeed/vitest-plugin,1
-@colordx/core,1
+@colordx/core,2
 @colors/colors,8
 @commercetools-frontend/application-components,1
 @commercetools-frontend/application-config,1
@@ -884,7 +884,7 @@ package,count
 @eslint/eslintrc,33
 @eslint/js,114
 @eslint/json,5
-@eslint/markdown,9
+@eslint/markdown,10
 @eslint/plugin-kit,2
 @esm-bundle/chai,3
 @esm-bundle/chai-as-promised,1
@@ -972,7 +972,6 @@ package,count
 @fluentui/react-component-event-listener,1
 @fluentui/react-component-ref,1
 @formatjs/cli-lib,1
-@formatjs/ecma402-abstract,1
 @formatjs/icu-messageformat-parser,1
 @formatjs/intl,1
 @formatjs/intl-localematcher,1
@@ -1166,7 +1165,7 @@ package,count
 @jasminejs/reporters,1
 @jest/console,1
 @jest/core,2
-@jest/create-cache-key-function,2
+@jest/create-cache-key-function,1
 @jest/diff-sequences,1
 @jest/environment,3
 @jest/environment-jsdom-abstract,3
@@ -1445,12 +1444,12 @@ package,count
 @nestjs/cache-manager,1
 @nestjs/common,3
 @nestjs/config,1
-@nestjs/core,2
+@nestjs/core,3
 @nestjs/platform-express,1
 @nestjs/schedule,1
 @nestjs/schematics,1
 @nestjs/serve-static,1
-@nestjs/testing,1
+@nestjs/testing,2
 @nestjs/throttler,1
 @nestjs/typeorm,1
 @nestjsx/crud-request,1
@@ -1459,6 +1458,7 @@ package,count
 @newrelic/newrelic-oss-cli,1
 @newrelic/security-agent,1
 @newrelic/test-utilities,1
+@next-auth/tsconfig,1
 @next/bundle-analyzer,1
 @next/env,4
 @next/eslint-plugin-next,2
@@ -2135,9 +2135,10 @@ package,count
 @scalar/agent-chat,1
 @scalar/api-client,1
 @scalar/api-reference,1
+@scalar/client-side-rendering,1
 @scalar/code-highlight,1
 @scalar/components,1
-@scalar/core,3
+@scalar/core,2
 @scalar/galaxy,1
 @scalar/helpers,1
 @scalar/icons,1
@@ -2771,7 +2772,7 @@ package,count
 @types/icss-utils,1
 @types/indent-string,2
 @types/ini,4
-@types/inquirer,5
+@types/inquirer,6
 @types/insert-css,1
 @types/invariant,1
 @types/ip,1
@@ -2824,7 +2825,7 @@ package,count
 @types/listr,1
 @types/load-json-file,1
 @types/loader-runner,1
-@types/lodash,53
+@types/lodash,52
 @types/lodash-es,8
 @types/lodash.camelcase,3
 @types/lodash.clonedeep,1
@@ -2870,8 +2871,8 @@ package,count
 @types/micromatch,15
 @types/microsoft__typescript-etw,1
 @types/mime,3
-@types/mime-db,2
-@types/mime-types,9
+@types/mime-db,3
+@types/mime-types,8
 @types/mini-css-extract-plugin,1
 @types/minimatch,12
 @types/minimist,13
@@ -2898,7 +2899,7 @@ package,count
 @types/neo-async,1
 @types/nightwatch,1
 @types/nock,3
-@types/node,578
+@types/node,579
 @types/node-fetch,9
 @types/node-forge,4
 @types/nodemailer,2
@@ -3429,6 +3430,8 @@ package,count
 @webcomponents/shadycss,2
 @webcomponents/template,1
 @webcomponents/webcomponentsjs,3
+@webcontainer/env,1
+@webdiscus/pug-loader,1
 @webext-core/fake-browser,1
 @webext-core/isolated-element,1
 @webext-core/match-patterns,1
@@ -3779,7 +3782,7 @@ babel-helper-remap-async-to-generator,1
 babel-helper-transform-fixture-test-runner,3
 babel-helper-vue-jsx-merge-props,3
 babel-helpers,2
-babel-jest,80
+babel-jest,79
 babel-loader,72
 babel-messages,3
 babel-minify,6
@@ -4538,7 +4541,7 @@ color-parse,1
 color-string,3
 color-support,2
 color2k,2
-colord,2
+colord,1
 colorette,6
 colorful,2
 colorjs.io,2
@@ -4660,7 +4663,7 @@ copy-text-to-clipboard,1
 copy-to,1
 copy-to-clipboard,11
 copy-webpack-plugin,17
-copyfiles,14
+copyfiles,13
 corcojs-qrcode,1
 corcojs-qrcode-sample,1
 cordova,1
@@ -4716,7 +4719,7 @@ cron-parser,2
 croner,2
 crop-birthday-web3-children,55
 cross-conf-env,1
-cross-env,174
+cross-env,173
 cross-fetch,4
 cross-fetch-ponyfill,1
 cross-spawn,36
@@ -5408,7 +5411,6 @@ eslint-config-populist,1
 eslint-config-preact,1
 eslint-config-prettier,256
 eslint-config-problems,2
-eslint-config-quasar,1
 eslint-config-raine,1
 eslint-config-react,1
 eslint-config-react-app,7
@@ -5697,14 +5699,13 @@ fancy-test,3
 far,1
 farmhash-modern,1
 fast-archy,1
-fast-check,9
+fast-check,11
 fast-copy,1
 fast-deep-equal,9
 fast-equals,1
 fast-fifo,1
 fast-glob,35
 fast-json-body,1
-fast-json-patch,1
 fast-json-stable-stringify,3
 fast-json-stringify,1
 fast-levenshtein,3
@@ -6764,7 +6765,7 @@ jasminewd2,1
 javascript-natural-sort,1
 javascript-stringify,1
 jazz,1
-jest,279
+jest,280
 jest-axe,6
 jest-canvas-mock,6
 jest-changed-files,1
@@ -6774,9 +6775,9 @@ jest-codemods,1
 jest-config,3
 jest-diff,10
 jest-emotion,1
-jest-environment-jsdom,42
+jest-environment-jsdom,43
 jest-environment-jsdom-sixteen,2
-jest-environment-node,11
+jest-environment-node,10
 jest-environment-node-single-context,1
 jest-environment-puppeteer,2
 jest-esm-jsx-transform,1
@@ -6810,7 +6811,7 @@ jest-serializer-ansi,2
 jest-serializer-ansi-escapes,2
 jest-serializer-html,3
 jest-serializer-vue,1
-jest-snapshot,1
+jest-snapshot,2
 jest-snapshot-serializer-ansi,1
 jest-specific-snapshot,1
 jest-stencil-runner,1
@@ -6915,7 +6916,7 @@ json-loader,10
 json-logic-js,1
 json-metaschema,1
 json-parse-better-errors,1
-json-parse-even-better-errors,2
+json-parse-even-better-errors,1
 json-pointer,2
 json-ptr,1
 json-schema,10
@@ -7247,7 +7248,7 @@ locate-path,3
 lockfile,1
 lockfile-lint,9
 lockfile-lint-api,1
-lodash,188
+lodash,187
 lodash-bound,1
 lodash-compat,1
 lodash-es,19
@@ -7306,7 +7307,7 @@ log-update-async-hook,1
 log-utils,1
 log4js,4
 logform,2
-loglevel,5
+loglevel,6
 loglevel-plugin-prefix,2
 lolex,3
 long,3
@@ -7587,9 +7588,9 @@ midas,1
 midnight-smoker,1
 milliparsec,1
 mime,28
-mime-db,3
+mime-db,4
 mime-score,1
-mime-types,25
+mime-types,24
 mimos,1
 min-document,2
 mincer,1
@@ -7903,7 +7904,7 @@ normalize-newline,2
 normalize-package-data,4
 normalize-path,7
 normalize-wheel,1
-normalize.css,4
+normalize.css,5
 notepack.io,1
 np,24
 npm,3
@@ -8381,7 +8382,6 @@ postprocessing,1
 potpack,1
 power-assert,5
 power-assert-formatter,1
-power-assign,1
 power-tasks,1
 powershell-utils,2
 pre-commit,33
@@ -8523,7 +8523,7 @@ pug-filters,1
 pug-lexer,1
 pug-linker,1
 pug-load,1
-pug-loader,2
+pug-loader,1
 pug-parser,1
 pug-plain-loader,1
 pug-runtime,1
@@ -8820,6 +8820,7 @@ redis-errors,1
 redis-parser,1
 redlock,1
 reds,1
+redstd,1
 reduce-reducers,1
 redux,12
 redux-devtools,1
@@ -8866,10 +8867,10 @@ reindent-template-literals,1
 reka-ui,1
 relateurl,3
 release-assist,1
-release-it,24
-release-it-lerna-changelog,2
+release-it,23
+release-it-lerna-changelog,1
 release-it-pnpm,1
-release-plan,3
+release-plan,4
 release-please,2
 reload,1
 reloquent,1
@@ -9598,7 +9599,7 @@ stringify-entities,2
 stringify-object,1
 stringify-object-es5,1
 stringify-package,1
-strip-ansi,54
+strip-ansi,53
 strip-bom,6
 strip-bom-stream,1
 strip-bom-string,2
@@ -9796,7 +9797,7 @@ teex,1
 tehtarik3,1
 telegram-assistant,1
 telejson,2
-temp,13
+temp,12
 temp-context,1
 temp-dir,3
 temp-path,1
@@ -9888,7 +9889,7 @@ tiny-relative-date,1
 tiny-types,2
 tiny-warning,1
 tiny-worker,1
-tinybench,8
+tinybench,9
 tinyclip,1
 tinycolor2,8
 tinydate,1
@@ -9992,7 +9993,7 @@ ts-md5,1
 ts-mocha,1
 ts-mock-imports,1
 ts-morph,11
-ts-node,149
+ts-node,148
 ts-node-dev,1
 ts-pattern,1
 ts-pnp,1
@@ -10069,7 +10070,7 @@ typed-rest-client,1
 typedarray,2
 typedarray-to-buffer,1
 typedarray.prototype.slice,1
-typedoc,62
+typedoc,61
 typedoc-github-theme,1
 typedoc-plugin-dt-links,1
 typedoc-plugin-frontmatter,1
@@ -10083,7 +10084,7 @@ typedoc-plugin-rename-defaults,1
 typedoc-plugin-umami-analytics,1
 typedoc-vitepress-theme,1
 typeorm,2
-typescript,881
+typescript,880
 typescript-cached-transpile,2
 typescript-eslint,87
 typescript-eslint-parser,3
@@ -10126,7 +10127,7 @@ unconfig-core,1
 uncontrollable,1
 uncss,2
 undefsafe,1
-underscore,27
+underscore,26
 underscore.string,7
 undertaker,1
 undertaker-forward-reference,1
@@ -10213,7 +10214,6 @@ update-browserslist-db,2
 update-check,1
 update-notifier,15
 update-notifier-cjs,1
-update-section,1
 updtr,1
 uppercamelcase,1
 uri-js,1
@@ -10346,7 +10346,7 @@ vite-tsconfig-paths,3
 vitefu,2
 vitepress,10
 vitepress-plugin-group-icons,1
-vitest,163
+vitest,164
 vitest-axe,2
 vitest-browser-lit,1
 vitest-browser-react,1
@@ -10522,7 +10522,7 @@ win-spawn,1
 windicss,1
 winreg,1
 winser,1
-winston,11
+winston,10
 winston-compat,2
 winston-context,1
 winston-transport,5
@@ -10622,7 +10622,7 @@ yeoman-generator,3
 yeoman-test,4
 yerror,1
 ylru,1
-yn,3
+yn,2
 yoctocolors,3
 yoctodelay,1
 yoga-layout,1
