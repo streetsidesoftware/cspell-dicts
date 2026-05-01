@@ -716,11 +716,11 @@ importers:
         specifier: ^5.6.2
         version: 5.6.2
       yeoman-environment:
-        specifier: ^6.0.1
-        version: 6.0.1(@types/node@22.19.17)(@yeoman/adapter@4.0.2(@types/node@22.19.17))(@yeoman/types@1.10.3(@types/node@22.19.17)(@yeoman/adapter@4.0.2(@types/node@22.19.17))(mem-fs@4.1.4))(mem-fs@4.1.4)
+        specifier: ^6.1.0
+        version: 6.1.0(@types/node@22.19.17)(@yeoman/adapter@4.0.2(@types/node@22.19.17))(@yeoman/types@1.10.3(@types/node@22.19.17)(@yeoman/adapter@4.0.2(@types/node@22.19.17))(mem-fs@4.1.4))(mem-fs@4.1.4)
       yeoman-generator:
-        specifier: ^8.1.2
-        version: 8.1.2(@types/node@22.19.17)(@yeoman/types@1.10.3(@types/node@22.19.17)(@yeoman/adapter@4.0.2(@types/node@22.19.17))(mem-fs@4.1.4))(mem-fs@4.1.4)
+        specifier: ^8.2.2
+        version: 8.2.2(@types/node@22.19.17)(@yeoman/types@1.10.3(@types/node@22.19.17)(@yeoman/adapter@4.0.2(@types/node@22.19.17))(mem-fs@4.1.4))(mem-fs@4.1.4)
       yosay:
         specifier: ^3.0.0
         version: 3.0.0
@@ -1650,8 +1650,8 @@ packages:
       '@yeoman/types': ^1.0.0
       mem-fs: ^4.0.0
 
-  '@yeoman/namespace@1.0.1':
-    resolution: {integrity: sha512-XGdYL0HCoPvrzW7T8bxD6RbCY/B8uvR2jpOzJc/yEwTueKHwoVhjSLjVXkokQAO0LNl8nQFLVZ1aKfr2eFWZeA==}
+  '@yeoman/namespace@2.1.0':
+    resolution: {integrity: sha512-/BxsZlALPRp34juAzzh9QUr2hR9w9o+dBSw8sF/iv7NfUU/A/QI0xOyVtQJz2uCPuvtY6nkGDxYxZoKI/lnFQg==}
     engines: {node: ^16.13.0 || >=18.12.0}
 
   '@yeoman/transform@2.1.1':
@@ -3863,8 +3863,8 @@ packages:
     resolution: {integrity: sha512-TIsDdtKo6+XrPtiTm1ssmMngN1sAhyKnTO2kunQWqNPWIVvCm15Wmw4SWInwTVgJ5u/Tr04+8Ei9TNcw4x4ONA==}
     engines: {node: '>=4'}
 
-  tinyexec@1.1.1:
-    resolution: {integrity: sha512-VKS/ZaQhhkKFMANmAOhhXVoIfBXblQxGX1myCQ2faQrfmobMftXeJPcZGp0gS07ocvGJWDLZGyOZDadDBqYIJg==}
+  tinyexec@1.1.2:
+    resolution: {integrity: sha512-dAqSqE/RabpBKI8+h26GfLq6Vb3JVXs30XYQjdMjaj/c2tS8IYYMbIzP599KtRj7c57/wYApb3QjgRgXmrCukA==}
     engines: {node: '>=18'}
 
   tinyglobby@0.2.16:
@@ -4123,8 +4123,8 @@ packages:
     resolution: {integrity: sha512-4UEqdc2RYGHZc7Doyqkrqiln3p9X2DZVxaGbwhn2pi7MrRagKaOcIKe8L3OxYcbhXLgLFUS3zAYuQjKBQgmuNg==}
     engines: {node: ^20.19.0 || ^22.12.0 || >=23}
 
-  yeoman-environment@6.0.1:
-    resolution: {integrity: sha512-038Feg5aE77uOr7XKW5HYIV3Issw4aJBWAml6ndQotDeghomLuiFJxrZNoJohV+TJdhBy4KzlSsDB0gb4u3wSQ==}
+  yeoman-environment@6.1.0:
+    resolution: {integrity: sha512-QSKMfrSx3js9fxbMDBa+sZG0ctF0NDxcO6VA5BnrWdo6wqhdalT2IUU/ZrNakQLZQ76E3B6b0lXHKEA7ivsWxA==}
     engines: {node: ^20.17.0 || >=22.9.0}
     hasBin: true
     peerDependencies:
@@ -4132,8 +4132,8 @@ packages:
       '@yeoman/types': ^1.10.3
       mem-fs: ^4.1.4
 
-  yeoman-generator@8.1.2:
-    resolution: {integrity: sha512-5e9jK2EPm6/c/zaYnuKnCLbRWfD9XwJYup1VzdJMgj010cgDn3YJWDfOIczabLfSoRSXRFxTDHfx1MEdIJEcGQ==}
+  yeoman-generator@8.2.2:
+    resolution: {integrity: sha512-GIvRULf09VrTyJ1nMIxCRFTI8gzW9zsAxVXTHOmsWVKZ7QYPdByRQvFtnp0XOObM6dvDSoAwBhuYR6i5inp/ig==}
     engines: {node: ^20.17.0 || >=22.9.0}
     peerDependencies:
       '@types/node': '>=20.19.35'
@@ -4643,7 +4643,7 @@ snapshots:
       p-map: 7.0.4
       p-queue: 9.2.0
       semver: 7.7.4
-      tinyexec: 1.1.1
+      tinyexec: 1.1.2
       tinyglobby: 0.2.16
       write-file-atomic: 7.0.1
       write-json-file: 7.0.0
@@ -5185,7 +5185,7 @@ snapshots:
       - react-native-b4a
       - supports-color
 
-  '@yeoman/namespace@1.0.1': {}
+  '@yeoman/namespace@2.1.0': {}
 
   '@yeoman/transform@2.1.1(@types/node@22.19.17)':
     dependencies:
@@ -7724,7 +7724,7 @@ snapshots:
 
   time-zone@1.0.0: {}
 
-  tinyexec@1.1.1: {}
+  tinyexec@1.1.2: {}
 
   tinyglobby@0.2.16:
     dependencies:
@@ -7991,11 +7991,11 @@ snapshots:
       y18n: 5.0.8
       yargs-parser: 22.0.0
 
-  yeoman-environment@6.0.1(@types/node@22.19.17)(@yeoman/adapter@4.0.2(@types/node@22.19.17))(@yeoman/types@1.10.3(@types/node@22.19.17)(@yeoman/adapter@4.0.2(@types/node@22.19.17))(mem-fs@4.1.4))(mem-fs@4.1.4):
+  yeoman-environment@6.1.0(@types/node@22.19.17)(@yeoman/adapter@4.0.2(@types/node@22.19.17))(@yeoman/types@1.10.3(@types/node@22.19.17)(@yeoman/adapter@4.0.2(@types/node@22.19.17))(mem-fs@4.1.4))(mem-fs@4.1.4):
     dependencies:
       '@yeoman/adapter': 4.0.2(@types/node@22.19.17)
       '@yeoman/conflicter': 4.1.0(@types/node@22.19.17)(@yeoman/types@1.10.3(@types/node@22.19.17)(@yeoman/adapter@4.0.2(@types/node@22.19.17))(mem-fs@4.1.4))(mem-fs@4.1.4)
-      '@yeoman/namespace': 1.0.1
+      '@yeoman/namespace': 2.1.0
       '@yeoman/transform': 2.1.1(@types/node@22.19.17)
       '@yeoman/types': 1.10.3(@types/node@22.19.17)(@yeoman/adapter@4.0.2(@types/node@22.19.17))(mem-fs@4.1.4)
       arrify: 3.0.0
@@ -8020,11 +8020,11 @@ snapshots:
       - react-native-b4a
       - supports-color
 
-  yeoman-generator@8.1.2(@types/node@22.19.17)(@yeoman/types@1.10.3(@types/node@22.19.17)(@yeoman/adapter@4.0.2(@types/node@22.19.17))(mem-fs@4.1.4))(mem-fs@4.1.4):
+  yeoman-generator@8.2.2(@types/node@22.19.17)(@yeoman/types@1.10.3(@types/node@22.19.17)(@yeoman/adapter@4.0.2(@types/node@22.19.17))(mem-fs@4.1.4))(mem-fs@4.1.4):
     dependencies:
       '@types/debug': 4.1.13
       '@types/lodash-es': 4.17.12
-      '@yeoman/namespace': 1.0.1
+      '@yeoman/namespace': 2.1.0
       '@yeoman/types': 1.10.3(@types/node@22.19.17)(@yeoman/adapter@4.0.2(@types/node@22.19.17))(mem-fs@4.1.4)
       chalk: 5.6.2
       debug: 4.4.3
