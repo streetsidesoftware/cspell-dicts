@@ -133,6 +133,9 @@ Marco A.G.Pinto
 
 CHANGELOG (2025+)  
 =================  
+2026-05-01 (Marco A.G.Pinto)
+           - Flag enhancements, mainly for U.S. words.
+
 2026-03-07 (Marco A.G.Pinto)
            - Critical update: An issue in the US dictionary was caused by my tool automatically
              removing prefixes from lemmas in the removal list.

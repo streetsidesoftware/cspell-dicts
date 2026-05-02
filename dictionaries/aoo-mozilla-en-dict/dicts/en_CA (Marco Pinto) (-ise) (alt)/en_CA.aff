@@ -24,11 +24,10 @@
 #
 #  Dictionary Information:
 #      English variant: Canadian (alt)
-#              Version: 4.0.6, 2026-03-01
+#              Version: 4.0.7, 2026-05-01
 #             Encoding: UTF-8-BOM Unix (LF)
 #       -ise/-ize/Both: -ise
-#             Comments: For specific -ise/-ize variants, some verbs, and words MAY be missing or included differently.
-#                       The U.S., Canadian, and Australian dictionaries MAY differ slightly in coverage for some region-specific terms.
+#             Comments: The U.S., Canadian, and Australian dictionaries MAY differ slightly in coverage for some region-specific terms.
 #  Variants maintained: British, OED (Oxford English Dictionary), South African, American (alt), Canadian (alt), Australian (alt)
 #
 #
@@ -468,13 +467,12 @@ SFX Y 0 ly [aeiou][ly]
 SFX Y 0 ly [aeiou]le 
 SFX Y 0 y [^aeiou]l 
 SFX Y e y [^aeiou]le 
-SFX G Y 36
+SFX G Y 33
 SFX G 0 bing [^aeio][aeiou]b 
 SFX G 0 ding [^aeio][aeiou]d 
 SFX G 0 fing [^aeio][aeiou]f 
 SFX G 0 ging [^aeiol][aeiou]g 
 SFX G 0 ging [^ao][l][aeiou]g 
-SFX G 0 ging ^([l][aeiou]g) 
 SFX G 0 ing [^aeiou][bcdfgklmnprstvz] 
 SFX G 0 ing [^ai][lvbmpndcg][oe]r 
 SFX G 0 ing [^ebcdfgklmnprstvz] 
@@ -498,14 +496,12 @@ SFX G 0 ring [^lfeas][^iobrswh][vb][aeou]r
 SFX G 0 ring [^nsecbwo][^aeiovblmpntd][aeiou]r 
 SFX G 0 ring [bc][hl][aeiou]r 
 SFX G 0 ring [icdro][enc][mtfc][aeiou]r 
-SFX G 0 ring ^([bfjmpwth][aue]r) 
-SFX G 0 ring ^(aver) 
 SFX G 0 sing [^aeio][aeiou]s 
 SFX G 0 ting [^aeio][aeiou]t 
 SFX G 0 ving [^aeio][aeiou]v 
 SFX G ie ying ie 
 SFX G 0 zing [^aeio][aeiou]z 
-SFX J Y 60
+SFX J Y 58
 SFX J 0 bing's [^aeio][aeiou]b 
 SFX J 0 bings [^aeio][aeiou]b 
 SFX J 0 ding's [^aeio][aeiou]d 
@@ -514,10 +510,8 @@ SFX J 0 fing's [^aeio][aeiou]f
 SFX J 0 fings [^aeio][aeiou]f 
 SFX J 0 ging's [^aeiol][aeiou]g 
 SFX J 0 ging's [^ao][l][aeiou]g 
-SFX J 0 ging's ^([l][aeiou]g) 
 SFX J 0 gings [^aeiol][aeiou]g 
 SFX J 0 gings [^ao][l][aeiou]g 
-SFX J 0 gings ^([l][aeiou]g) 
 SFX J 0 ing's [^aeio]e[nrt] 
 SFX J 0 ing's [^aeiou][bcdfgklmnprstvz] 
 SFX J 0 ing's [^ebcdfgklmnprstvz] 
@@ -575,7 +569,7 @@ SFX k 0 ingly [eoy]e
 SFX k 0 kingly [^aeio][aeiou]c 
 SFX k 0 lingly [^aeio][aeiou]l 
 SFX k ie yingly ie 
-SFX D Y 38
+SFX D Y 35
 SFX D 0 bed [^aeio][aeiou]b 
 SFX D 0 d [^e]e 
 SFX D e d [^or]ee 
@@ -594,7 +588,6 @@ SFX D 0 ed [emfos][eniua][tb][e]r
 SFX D 0 fed [^aeio][aeiou]f 
 SFX D 0 ged [^aeiol][aeiou]g 
 SFX D 0 ged [^ao][l][aeiou]g 
-SFX D 0 ged ^([l][aeiou]g) 
 SFX D y ied [^aeiou]y 
 SFX D 0 ked [^aeio][aeiou]c 
 SFX D 0 ked [^aeio][aeiou]k 
@@ -608,8 +601,6 @@ SFX D 0 red [^lfeas][^iobrswhu][vb][aeou]r
 SFX D 0 red [^nsecbwo][^aeiovblmpntd][aeiou]r 
 SFX D 0 red [bc][hl][aeiou]r 
 SFX D 0 red [icdro][enc][mtfc][aeiou]r 
-SFX D 0 red ^([bfjmpwth][aue]r) 
-SFX D 0 red ^(aver) 
 SFX D 0 sed [^aeio][aeiou]s 
 SFX D 0 ted [^aeio][aeiou]t 
 SFX D 0 ved [^aeio][aeiou]v 
@@ -1320,7 +1311,7 @@ SFX L 0 ment's [^my]
 SFX L 0 ment's [aeiou]y 
 SFX L 0 ments [^my] 
 SFX L 0 ments [aeiou]y 
-SFX Z Y 31
+SFX Z Y 30
 SFX Z 0 by [^aeio][aeiou]b
 SFX Z 0 dy [^aegio][aeiou]d
 SFX Z 0 ey [aiouy]
@@ -1334,7 +1325,6 @@ SFX Z 0 my [^aeio][aeiou]m
 SFX Z 0 ny [^aeio][aiou]n
 SFX Z 0 py [^aeio][aeiou]p
 SFX Z 0 ry [^aegilostmvp][aiou]r
-SFX Z 0 ry ^([mp]ar) 
 SFX Z 0 ry lur
 SFX Z 0 ry tar
 SFX Z 0 sy [^aeio][aeiou]s
