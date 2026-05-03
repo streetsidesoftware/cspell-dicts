@@ -1,5 +1,13 @@
 # Change Log
 
+## [1.0.52](https://github.com/streetsidesoftware/cspell-dicts/compare/@cspell/dict-en-shared@1.0.51...@cspell/dict-en-shared@1.0.52) (2026-05-03)
+
+
+### Updates and Bug Fixes
+
+* Add 'overcomplicating' to shared additional words ([#5446](https://github.com/streetsidesoftware/cspell-dicts/issues/5446)) ([1c31e1e](https://github.com/streetsidesoftware/cspell-dicts/commit/1c31e1e69bcaa8d3227ab2b7548237672baad888))
+* Add new words to shared-additional-words.txt ([#5431](https://github.com/streetsidesoftware/cspell-dicts/issues/5431)) ([b8753a8](https://github.com/streetsidesoftware/cspell-dicts/commit/b8753a87247c8d981df736638201bed45fe34c88))
+
 ## [1.0.51](https://github.com/streetsidesoftware/cspell-dicts/compare/@cspell/dict-en-shared@1.0.50...@cspell/dict-en-shared@1.0.51) (2026-03-24)
 
 
