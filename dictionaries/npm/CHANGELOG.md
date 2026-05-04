@@ -3,6 +3,19 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+## [5.2.39](https://github.com/streetsidesoftware/cspell-dicts/compare/@cspell/dict-npm@5.2.38...@cspell/dict-npm@5.2.39) (2026-05-03)
+
+
+### Updates and Bug Fixes
+
+* Workflow Bot -- Update Dictionaries ([#5380](https://github.com/streetsidesoftware/cspell-dicts/issues/5380)) ([afd87a0](https://github.com/streetsidesoftware/cspell-dicts/commit/afd87a05cf5167ff7dd428c39708ea3751d4dd2e))
+* Workflow Bot -- Update Dictionaries ([#5397](https://github.com/streetsidesoftware/cspell-dicts/issues/5397)) ([8a138b1](https://github.com/streetsidesoftware/cspell-dicts/commit/8a138b1fa2aa7de677d25e82b942793cd7fcec30))
+* Workflow Bot -- Update Dictionaries ([#5401](https://github.com/streetsidesoftware/cspell-dicts/issues/5401)) ([cc921c4](https://github.com/streetsidesoftware/cspell-dicts/commit/cc921c4eae38014416b5b2aeb4ffd64965bd4402))
+* Workflow Bot -- Update Dictionaries ([#5419](https://github.com/streetsidesoftware/cspell-dicts/issues/5419)) ([6451188](https://github.com/streetsidesoftware/cspell-dicts/commit/6451188e5684c7588076beadab31f54b742b9c9a))
+* Workflow Bot -- Update Dictionaries ([#5425](https://github.com/streetsidesoftware/cspell-dicts/issues/5425)) ([6f946ed](https://github.com/streetsidesoftware/cspell-dicts/commit/6f946ed45c78c9dc8c6f1b00730568745b7e4363))
+* Workflow Bot -- Update Dictionaries ([#5444](https://github.com/streetsidesoftware/cspell-dicts/issues/5444)) ([10ec0ec](https://github.com/streetsidesoftware/cspell-dicts/commit/10ec0ecdb00b9e732d1501f66418a9e58e54ccf5))
+* Workflow Bot -- Update Dictionaries ([#5455](https://github.com/streetsidesoftware/cspell-dicts/issues/5455)) ([3a9a76e](https://github.com/streetsidesoftware/cspell-dicts/commit/3a9a76ea9a0b99089d773b8e6c60768e76d96984))
+
 ## [5.2.38](https://github.com/streetsidesoftware/cspell-dicts/compare/@cspell/dict-npm@5.2.37...@cspell/dict-npm@5.2.38) (2026-03-22)
 
 

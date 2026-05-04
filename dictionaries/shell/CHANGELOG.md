@@ -1,5 +1,12 @@
 # Changelog
 
+## [1.2.0](https://github.com/streetsidesoftware/cspell-dicts/compare/@cspell/dict-shell@1.1.2...@cspell/dict-shell@1.2.0) (2026-05-03)
+
+
+### Features
+
+* Add environment variables and shopt options to bash dictionary ([#5408](https://github.com/streetsidesoftware/cspell-dicts/issues/5408)) ([0cb48cd](https://github.com/streetsidesoftware/cspell-dicts/commit/0cb48cdf3bb1c959bfad93dc428bd0ff3d3e918e))
+
 ## [1.1.2](https://github.com/streetsidesoftware/cspell-dicts/compare/@cspell/dict-shell@1.1.1...@cspell/dict-shell@1.1.2) (2025-10-26)
 
 
