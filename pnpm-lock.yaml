@@ -33,8 +33,8 @@ importers:
         specifier: ^22.19.19
         version: 22.19.19
       ava:
-        specifier: ^8.0.0
-        version: 8.0.0
+        specifier: ^8.0.1
+        version: 8.0.1
       cpy-cli:
         specifier: ^7.0.0
         version: 7.0.0
@@ -84,8 +84,8 @@ importers:
   cspell-dict-file-checker:
     dependencies:
       ava:
-        specifier: ^8.0.0
-        version: 8.0.0
+        specifier: ^8.0.1
+        version: 8.0.1
       cspell:
         specifier: ^10.0.0
         version: 10.0.0
@@ -1078,6 +1078,10 @@ packages:
     resolution: {integrity: sha512-q+0pHQ8DbqjemyaOn/mTtBRbCuKDqhnsVbZ6J9zkTsxPgMpccjy0s5oLXwomfrrxMRBH+UcbERwtUmE+SbnoIQ==}
     engines: {node: '>=22.18.0'}
 
+  '@cto.af/wtf8@0.0.5':
+    resolution: {integrity: sha512-LfUFi+Vv4eDzj+XAtR89e3wwjXA/NZjUSwU5NhwbBrLecxPaBYFy3exCuc1j+D4UZeOVdqlsl8G7LmOt18V0tg==}
+    engines: {node: '>=20'}
+
   '@epic-web/invariant@1.0.0':
     resolution: {integrity: sha512-lrTPqgvfFQtR/eY/qkIzp98OGdNJu0m5ji3q/nJI8v3SXkRKEnWiOxMmbvcSoAIzv/cGiuvRy57k4suKQSAdwA==}
 
@@ -1608,8 +1612,8 @@ packages:
   '@types/node@22.19.19':
     resolution: {integrity: sha512-dyh/xO2Fh5bYrfWaaqGrRQQGkNdmYw6AmaAUvYeUMNTWQtvb796ikLdmTchRmOlOiIJ1TDXfWgVx1QkUlQ6Hew==}
 
-  '@types/node@25.8.0':
-    resolution: {integrity: sha512-TCFSk8IZh+iLX1xtksoBVtdmgL+1IX0fC9BeU4QqFSuNdN/K+HUlhqOzEmSYYpZUVsLYcPqc9KX+60iDuninSQ==}
+  '@types/node@25.9.0':
+    resolution: {integrity: sha512-AOQwYUNolgy3VosiRqXrACUXTN8nJUtPl7FJXMqZVyxiiCLhQuG3jXKvCS1ALr+Y2OmZhzzLVlYPEqJaiqkaJQ==}
 
   '@types/normalize-package-data@2.4.4':
     resolution: {integrity: sha512-37i+OaWTh9qeK4LSHPsyRC7NahnGotNuZvjLSgcPzblpHB3rrCJxAOgI5gCdKm7coonsaX1Of0ILiTcnZjbfxA==}
@@ -1757,9 +1761,9 @@ packages:
   async-sema@3.1.1:
     resolution: {integrity: sha512-tLRNUXati5MFePdAk8dw7Qt7DpxPB60ofAgn8WRhW6a2rcimZnYBP9oxHiv0OHy+Wz7kPMG+t4LGdt31+4EmGg==}
 
-  ava@8.0.0:
-    resolution: {integrity: sha512-KMUyT3LcnZ/5ipDAqnTGn6PQUvr1Jk4dex3v7ieQrGaMlAblfIpMLwK56HfPcObvJEzyhCWXfZjbM98FeAy0oQ==}
-    engines: {node: ^22.20 || ^24.12 || >=25}
+  ava@8.0.1:
+    resolution: {integrity: sha512-YlwwL5HX2EJRE75e2LR8nio8lKAJ702sFbv0QYnhzngAjyo9wB+Xg4JZh5f432khlWfVD5OQ93rrRopEXJptpg==}
+    engines: {node: ^22.20 || ^24.12 || >=26}
     hasBin: true
     peerDependencies:
       '@ava/typescript': '*'
@@ -1840,8 +1844,8 @@ packages:
     resolution: {integrity: sha512-kfzR4zzQtAE9PC7CzZsjl3aBNbXWuXiSeOCdLcPpBfGW8YuCqQHcRPFDbr/BPVmd3EEPVpuFzLyuT/cUhPr4OQ==}
     engines: {node: '>=12.20'}
 
-  cbor@10.0.12:
-    resolution: {integrity: sha512-exQDevYd7ZQLP4moMQcZkKCVZsXLAtUSflObr3xTh4xzFIv/xBCdvCd6L259kQOUP2kcTC0jvC6PpZIf/WmRXA==}
+  cbor2@2.3.0:
+    resolution: {integrity: sha512-76WB3hq8BoaGkMkBVJ27fW5LJU+qqDLEpgRNCG/SYKhODWXpVPOTD4UcUto3IEzYLA52nsvbhb0wabhHDn3qXg==}
     engines: {node: '>=20'}
 
   ccount@2.0.1:
@@ -2920,8 +2924,8 @@ packages:
   lru-cache@10.4.3:
     resolution: {integrity: sha512-JNAzZcXrCt42VGLuYz0zfAzDfAvJWW6AfYlDBQyDV5DClI2m5sAmK+OIO7s59XfsRsWHp02jAJrRadPRGTt6SQ==}
 
-  lru-cache@11.3.6:
-    resolution: {integrity: sha512-Gf/KoL3C/MlI7Bt0PGI9I+TeTC/I6r/csU58N4BSNc4lppLBeKsOdFYkK+dX0ABDUMJNfCHTyPpzwwO21Awd3A==}
+  lru-cache@11.4.0:
+    resolution: {integrity: sha512-W+R+kFL4HgVxONq2bhXPi3bGpzGe/yEhVOp233qw9wCRtgncJ15P3bC+e4zZMu4Cq7d+WAJjXGW0uUkifhcatA==}
     engines: {node: 20 || >=22}
 
   make-fetch-happen@15.0.5:
@@ -3238,10 +3242,6 @@ packages:
     resolution: {integrity: sha512-QNcUWM+HgJplcPzBvFBZ9VXacyGZ4+VTOb80PwWR+TlVzoHbRKULNEzpRsnaoxG3Wzr7Qh7BYxGDU3CbKib2Yg==}
     engines: {node: ^20.17.0 || >=22.9.0}
     hasBin: true
-
-  nofilter@3.1.0:
-    resolution: {integrity: sha512-l2NNj07e9afPnhAhvgVrCD/oy2Ai1yfLpuo3EpiO1jFTsB4sFz6oIfAfSZyQzVpkZQ9xS8ZS5g1jCBgq4Hwo0g==}
-    engines: {node: '>=12.19'}
 
   nopt@8.1.0:
     resolution: {integrity: sha512-ieGu42u/Qsa4TFktmaKEwM6MQH0pOWnaB3htzh0JRtx84+Mebc0cbZYN5bC+6WTZ4+77xrL9Pn5m7CV6VIkV7A==}
@@ -4413,6 +4413,8 @@ snapshots:
 
   '@cspell/url@10.0.0': {}
 
+  '@cto.af/wtf8@0.0.5': {}
+
   '@epic-web/invariant@1.0.0': {}
 
   '@eslint-community/eslint-utils@4.9.1(eslint@10.4.0)':
@@ -4793,7 +4795,7 @@ snapshots:
       agent-base: 7.1.4
       http-proxy-agent: 7.0.2
       https-proxy-agent: 7.0.6
-      lru-cache: 11.3.6
+      lru-cache: 11.4.0
       socks-proxy-agent: 8.0.5
     transitivePeerDependencies:
       - supports-color
@@ -4817,7 +4819,7 @@ snapshots:
       common-ancestor-path: 2.0.0
       hosted-git-info: 9.0.3
       json-stringify-nice: 1.1.4
-      lru-cache: 11.3.6
+      lru-cache: 11.4.0
       minimatch: 10.2.5
       nopt: 9.0.0
       npm-install-checks: 8.0.0
@@ -4846,7 +4848,7 @@ snapshots:
       '@gar/promise-retry': 1.0.3
       '@npmcli/promise-spawn': 9.0.1
       ini: 6.0.0
-      lru-cache: 11.3.6
+      lru-cache: 11.4.0
       npm-pick-manifest: 11.0.3
       proc-log: 6.1.0
       semver: 7.8.0
@@ -5095,7 +5097,7 @@ snapshots:
     dependencies:
       undici-types: 6.21.0
 
-  '@types/node@25.8.0':
+  '@types/node@25.9.0':
     dependencies:
       undici-types: 7.24.6
 
@@ -5245,7 +5247,7 @@ snapshots:
 
   async-sema@3.1.1: {}
 
-  ava@8.0.0:
+  ava@8.0.1:
     dependencies:
       '@vercel/nft': 1.5.0
       acorn: 8.16.0
@@ -5254,7 +5256,7 @@ snapshots:
       arrgv: 1.0.2
       arrify: 3.0.0
       callsites: 4.2.0
-      cbor: 10.0.12
+      cbor2: 2.3.0
       chalk: 5.6.2
       chunkd: 2.0.1
       ci-info: 4.4.0
@@ -5346,7 +5348,7 @@ snapshots:
       '@npmcli/fs': 5.0.0
       fs-minipass: 3.0.3
       glob: 13.0.6
-      lru-cache: 11.3.6
+      lru-cache: 11.4.0
       minipass: 7.1.3
       minipass-collect: 2.0.1
       minipass-flush: 1.0.7
@@ -5358,9 +5360,9 @@ snapshots:
 
   callsites@4.2.0: {}
 
-  cbor@10.0.12:
+  cbor2@2.3.0:
     dependencies:
-      nofilter: 3.1.0
+      '@cto.af/wtf8': 0.0.5
 
   ccount@2.0.1: {}
 
@@ -6130,7 +6132,7 @@ snapshots:
 
   hosted-git-info@9.0.3:
     dependencies:
-      lru-cache: 11.3.6
+      lru-cache: 11.4.0
 
   html-entities@2.6.0: {}
 
@@ -6418,7 +6420,7 @@ snapshots:
 
   lru-cache@10.4.3: {}
 
-  lru-cache@11.3.6: {}
+  lru-cache@11.4.0: {}
 
   make-fetch-happen@15.0.5:
     dependencies:
@@ -7016,8 +7018,6 @@ snapshots:
       undici: 6.25.0
       which: 6.0.1
 
-  nofilter@3.1.0: {}
-
   nopt@8.1.0:
     dependencies:
       abbrev: 3.0.1
@@ -7183,7 +7183,7 @@ snapshots:
 
   p-transform@5.0.1:
     dependencies:
-      '@types/node': 25.8.0
+      '@types/node': 25.9.0
       p-queue: 8.1.1
 
   p-try@2.2.0: {}
@@ -7284,7 +7284,7 @@ snapshots:
 
   path-scurry@2.0.2:
     dependencies:
-      lru-cache: 11.3.6
+      lru-cache: 11.4.0
       minipass: 7.1.3
 
   path-type@6.0.0: {}
