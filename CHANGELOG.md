@@ -1,5 +1,24 @@
 # Release Notes
 
+## [33.8.1](https://github.com/streetsidesoftware/cspell-dicts/compare/cspell-dicts@33.8.0...cspell-dicts@33.8.1) (2026-05-23)
+
+
+### Updates and Bug Fixes
+
+* Add 'revisitable' to shared additional words ([#5456](https://github.com/streetsidesoftware/cspell-dicts/issues/5456)) ([1edc6c0](https://github.com/streetsidesoftware/cspell-dicts/commit/1edc6c0c8b49d8fc817e609c6942b4acf0687e10))
+* add autospace to css dictionary ([#5466](https://github.com/streetsidesoftware/cspell-dicts/issues/5466)) ([090a61e](https://github.com/streetsidesoftware/cspell-dicts/commit/090a61e64aedfbc1f02084fb9076424190d954fb))
+* **css:** squircle ([#5473](https://github.com/streetsidesoftware/cspell-dicts/issues/5473)) ([0af01ae](https://github.com/streetsidesoftware/cspell-dicts/commit/0af01aeb35462d36b0ebd38f5038dd924ad1d2b8))
+* Workflow Bot -- Build Dictionaries ([#5461](https://github.com/streetsidesoftware/cspell-dicts/issues/5461)) ([f78477c](https://github.com/streetsidesoftware/cspell-dicts/commit/f78477cb486d41ace7d5ed1d07de80252e93ebba))
+* Workflow Bot -- Update Dictionaries ([#5468](https://github.com/streetsidesoftware/cspell-dicts/issues/5468)) ([5eb2bf3](https://github.com/streetsidesoftware/cspell-dicts/commit/5eb2bf3568ca924e1c52ddc4d74c4046f40f713f))
+* Workflow Bot -- Update Dictionaries ([#5474](https://github.com/streetsidesoftware/cspell-dicts/issues/5474)) ([1b281f5](https://github.com/streetsidesoftware/cspell-dicts/commit/1b281f59f811965a8dbcbd846e04fb90e86dfd0c))
+
+
+### Dependencies
+
+* The following workspace dependencies were updated
+  * devDependencies
+    * @cspell/dict-cspell-bundle bumped to 2.0.61
+
 ## [33.8.0](https://github.com/streetsidesoftware/cspell-dicts/compare/cspell-dicts@33.7.3...cspell-dicts@33.8.0) (2026-05-03)
 
 

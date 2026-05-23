@@ -1,5 +1,12 @@
 # Change Log
 
+## [1.0.53](https://github.com/streetsidesoftware/cspell-dicts/compare/@cspell/dict-en-shared@1.0.52...@cspell/dict-en-shared@1.0.53) (2026-05-23)
+
+
+### Updates and Bug Fixes
+
+* Add 'revisitable' to shared additional words ([#5456](https://github.com/streetsidesoftware/cspell-dicts/issues/5456)) ([1edc6c0](https://github.com/streetsidesoftware/cspell-dicts/commit/1edc6c0c8b49d8fc817e609c6942b4acf0687e10))
+
 ## [1.0.52](https://github.com/streetsidesoftware/cspell-dicts/compare/@cspell/dict-en-shared@1.0.51...@cspell/dict-en-shared@1.0.52) (2026-05-03)
 
 
