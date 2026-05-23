@@ -1,5 +1,14 @@
 # Change Log
 
+## [2.0.17](https://github.com/streetsidesoftware/cspell-dicts/compare/@cspell/dict-markdown@2.0.16...@cspell/dict-markdown@2.0.17) (2026-05-23)
+
+
+### Dependencies
+
+* The following workspace dependencies were updated
+  * peerDependencies
+    * @cspell/dict-css bumped to 4.1.2
+
 ## [2.0.16](https://github.com/streetsidesoftware/cspell-dicts/compare/@cspell/dict-markdown@2.0.15...@cspell/dict-markdown@2.0.16) (2026-03-09)
 
 

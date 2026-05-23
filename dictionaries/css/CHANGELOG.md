@@ -22,6 +22,14 @@ See [Conventional Commits](https://conventionalcommits.org) for commit guideline
 
 
 
+## [4.1.2](https://github.com/streetsidesoftware/cspell-dicts/compare/@cspell/dict-css@4.1.1...@cspell/dict-css@4.1.2) (2026-05-23)
+
+
+### Updates and Bug Fixes
+
+* add autospace to css dictionary ([#5466](https://github.com/streetsidesoftware/cspell-dicts/issues/5466)) ([090a61e](https://github.com/streetsidesoftware/cspell-dicts/commit/090a61e64aedfbc1f02084fb9076424190d954fb))
+* **css:** squircle ([#5473](https://github.com/streetsidesoftware/cspell-dicts/issues/5473)) ([0af01ae](https://github.com/streetsidesoftware/cspell-dicts/commit/0af01aeb35462d36b0ebd38f5038dd924ad1d2b8))
+
 ## [4.1.1](https://github.com/streetsidesoftware/cspell-dicts/compare/@cspell/dict-css@4.1.0...@cspell/dict-css@4.1.1) (2026-03-09)
 
 
