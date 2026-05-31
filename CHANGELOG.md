@@ -1,5 +1,21 @@
 # Release Notes
 
+## [33.8.2](https://github.com/streetsidesoftware/cspell-dicts/compare/cspell-dicts@33.8.1...cspell-dicts@33.8.2) (2026-05-31)
+
+
+### Updates and Bug Fixes
+
+* add `underdelivery` to data-science-terms ([14a691f](https://github.com/streetsidesoftware/cspell-dicts/commit/14a691f4e439496099245f77687e3143dad79f91))
+* Workflow Bot -- Update Dictionaries ([#5482](https://github.com/streetsidesoftware/cspell-dicts/issues/5482)) ([2b6f16b](https://github.com/streetsidesoftware/cspell-dicts/commit/2b6f16b3748e6703326bdaad6412f05ced562491))
+* Workflow Bot -- Update Dictionaries ([#5490](https://github.com/streetsidesoftware/cspell-dicts/issues/5490)) ([50933ca](https://github.com/streetsidesoftware/cspell-dicts/commit/50933caab5882fb5944f8846ecaa31d507a437fc))
+
+
+### Dependencies
+
+* The following workspace dependencies were updated
+  * devDependencies
+    * @cspell/dict-cspell-bundle bumped to 2.0.62
+
 ## [33.8.1](https://github.com/streetsidesoftware/cspell-dicts/compare/cspell-dicts@33.8.0...cspell-dicts@33.8.1) (2026-05-23)
 
 

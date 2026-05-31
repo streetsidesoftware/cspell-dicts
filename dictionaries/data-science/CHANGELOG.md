@@ -1,5 +1,12 @@
 # Change Log
 
+## [2.0.14](https://github.com/streetsidesoftware/cspell-dicts/compare/@cspell/dict-data-science@2.0.13...@cspell/dict-data-science@2.0.14) (2026-05-31)
+
+
+### Updates and Bug Fixes
+
+* add `underdelivery` to data-science-terms ([14a691f](https://github.com/streetsidesoftware/cspell-dicts/commit/14a691f4e439496099245f77687e3143dad79f91))
+
 ## [2.0.13](https://github.com/streetsidesoftware/cspell-dicts/compare/@cspell/dict-data-science@2.0.12...@cspell/dict-data-science@2.0.13) (2025-12-13)
 
 
