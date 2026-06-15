@@ -1,5 +1,25 @@
 # Release Notes
 
+## [33.8.3](https://github.com/streetsidesoftware/cspell-dicts/compare/cspell-dicts@33.8.2...cspell-dicts@33.8.3) (2026-06-15)
+
+
+### Updates and Bug Fixes
+
+* add convolutional underfitting overfitting to data-science-terms.txt ([#5499](https://github.com/streetsidesoftware/cspell-dicts/issues/5499)) ([dd4d409](https://github.com/streetsidesoftware/cspell-dicts/commit/dd4d409ff440d0530e704c4f06bd44a76e4ed73c))
+* add nonlinearities backpropagation pretraining  etc. to data-science-terms ([#5507](https://github.com/streetsidesoftware/cspell-dicts/issues/5507)) ([82838d5](https://github.com/streetsidesoftware/cspell-dicts/commit/82838d5417fd9e0aaefdd90ac7274c2d5e675dbd))
+* add segmentations cybergenomics to data-sciense-terms ([#5497](https://github.com/streetsidesoftware/cspell-dicts/issues/5497)) ([63c9703](https://github.com/streetsidesoftware/cspell-dicts/commit/63c9703214420acddcc5f7247517c2d2c214171b))
+* **software-terms:** add unstash and unstashed to software term ([#5509](https://github.com/streetsidesoftware/cspell-dicts/issues/5509)) ([b5c0f7e](https://github.com/streetsidesoftware/cspell-dicts/commit/b5c0f7e3dffb92b1a6cf32a999211bf1c9c1e0c5))
+* Workflow Bot -- Update Dictionaries ([#5495](https://github.com/streetsidesoftware/cspell-dicts/issues/5495)) ([ddefc2c](https://github.com/streetsidesoftware/cspell-dicts/commit/ddefc2c05825691bc90a69557ada3734e323eff1))
+* Workflow Bot -- Update Dictionaries ([#5504](https://github.com/streetsidesoftware/cspell-dicts/issues/5504)) ([ed0246b](https://github.com/streetsidesoftware/cspell-dicts/commit/ed0246b4aca2c6a43faa4176efa09a07bcda9eef))
+* Workflow Bot -- Update Dictionaries ([#5510](https://github.com/streetsidesoftware/cspell-dicts/issues/5510)) ([76fbd07](https://github.com/streetsidesoftware/cspell-dicts/commit/76fbd07f38baae32d9de4d5b8eb7314868169d40))
+
+
+### Dependencies
+
+* The following workspace dependencies were updated
+  * devDependencies
+    * @cspell/dict-cspell-bundle bumped to 2.0.63
+
 ## [33.8.2](https://github.com/streetsidesoftware/cspell-dicts/compare/cspell-dicts@33.8.1...cspell-dicts@33.8.2) (2026-05-31)
 
 

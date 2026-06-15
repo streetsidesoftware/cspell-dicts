@@ -1,5 +1,14 @@
 # Change Log
 
+## [2.0.15](https://github.com/streetsidesoftware/cspell-dicts/compare/@cspell/dict-data-science@2.0.14...@cspell/dict-data-science@2.0.15) (2026-06-15)
+
+
+### Updates and Bug Fixes
+
+* add convolutional underfitting overfitting to data-science-terms.txt ([#5499](https://github.com/streetsidesoftware/cspell-dicts/issues/5499)) ([dd4d409](https://github.com/streetsidesoftware/cspell-dicts/commit/dd4d409ff440d0530e704c4f06bd44a76e4ed73c))
+* add nonlinearities backpropagation pretraining  etc. to data-science-terms ([#5507](https://github.com/streetsidesoftware/cspell-dicts/issues/5507)) ([82838d5](https://github.com/streetsidesoftware/cspell-dicts/commit/82838d5417fd9e0aaefdd90ac7274c2d5e675dbd))
+* add segmentations cybergenomics to data-sciense-terms ([#5497](https://github.com/streetsidesoftware/cspell-dicts/issues/5497)) ([63c9703](https://github.com/streetsidesoftware/cspell-dicts/commit/63c9703214420acddcc5f7247517c2d2c214171b))
+
 ## [2.0.14](https://github.com/streetsidesoftware/cspell-dicts/compare/@cspell/dict-data-science@2.0.13...@cspell/dict-data-science@2.0.14) (2026-05-31)
 
 

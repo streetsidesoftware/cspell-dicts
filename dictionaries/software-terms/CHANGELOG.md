@@ -3,6 +3,13 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+## [5.2.3](https://github.com/streetsidesoftware/cspell-dicts/compare/@cspell/dict-software-terms@5.2.2...@cspell/dict-software-terms@5.2.3) (2026-06-15)
+
+
+### Updates and Bug Fixes
+
+* **software-terms:** add unstash and unstashed to software term ([#5509](https://github.com/streetsidesoftware/cspell-dicts/issues/5509)) ([b5c0f7e](https://github.com/streetsidesoftware/cspell-dicts/commit/b5c0f7e3dffb92b1a6cf32a999211bf1c9c1e0c5))
+
 ## [5.2.2](https://github.com/streetsidesoftware/cspell-dicts/compare/@cspell/dict-software-terms@5.2.1...@cspell/dict-software-terms@5.2.2) (2026-03-26)
 
 
