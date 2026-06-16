@@ -1,5 +1,12 @@
 # Change Log
 
+## [2.0.16](https://github.com/streetsidesoftware/cspell-dicts/compare/@cspell/dict-data-science@2.0.15...@cspell/dict-data-science@2.0.16) (2026-06-16)
+
+
+### Updates and Bug Fixes
+
+* add neurogenesis neurocomputing etc. to data-science-terms ([#5513](https://github.com/streetsidesoftware/cspell-dicts/issues/5513)) ([394ae94](https://github.com/streetsidesoftware/cspell-dicts/commit/394ae94476d8c85ecdb3020da724e375743adf20))
+
 ## [2.0.15](https://github.com/streetsidesoftware/cspell-dicts/compare/@cspell/dict-data-science@2.0.14...@cspell/dict-data-science@2.0.15) (2026-06-15)
 
 
