@@ -1,5 +1,19 @@
 # Release Notes
 
+## [33.8.4](https://github.com/streetsidesoftware/cspell-dicts/compare/cspell-dicts@33.8.3...cspell-dicts@33.8.4) (2026-06-16)
+
+
+### Updates and Bug Fixes
+
+* add neurogenesis neurocomputing etc. to data-science-terms ([#5513](https://github.com/streetsidesoftware/cspell-dicts/issues/5513)) ([394ae94](https://github.com/streetsidesoftware/cspell-dicts/commit/394ae94476d8c85ecdb3020da724e375743adf20))
+
+
+### Dependencies
+
+* The following workspace dependencies were updated
+  * devDependencies
+    * @cspell/dict-cspell-bundle bumped to 2.0.64
+
 ## [33.8.3](https://github.com/streetsidesoftware/cspell-dicts/compare/cspell-dicts@33.8.2...cspell-dicts@33.8.3) (2026-06-15)
 
 
