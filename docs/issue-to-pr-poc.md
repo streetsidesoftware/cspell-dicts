@@ -27,14 +27,13 @@ against a throwaway fixture (no GitHub, no real files touched).
 
 | File                                              | Purpose                                                                                                |
 | ------------------------------------------------- | ------------------------------------------------------------------------------------------------------ |
-| `.github/ISSUE_TEMPLATE/add-dictionary-words.yml` | The issue form (`dictionary` input, `words` textarea).                                                 |
+| `.github/ISSUE_TEMPLATE/add-dictionary-words.yml` | The issue form (`file` input, `words` textarea).                                                       |
 | `.github/workflows/issue-to-pr.yml`               | Orchestrates the steps below on `issues: opened`.                                                      |
 | `scripts/issue-to-pr/lib.mjs`                     | Shared `fail()` / `writeOutput()` helpers (Action-output + error plumbing).                            |
-| `scripts/issue-to-pr/parse-issue.mjs`             | Phase 4: parse the issue body, validate dictionary name + words.                                       |
-| `scripts/issue-to-pr/find-dictionary-file.mjs`    | Phase 5: locate the one `src/*.txt` file to edit.                                                      |
+| `scripts/issue-to-pr/parse-issue.mjs`             | Phase 4: parse the issue body, validate the target file path + words.                                  |
 | `scripts/issue-to-pr/insert-words.mjs`            | Phase 6: insert words above the trailing marker comment (or append).                                   |
 | `scripts/issue-to-pr/format-pr-body.mjs`          | Phase 8: build the branch name / title / body for the PR (mirrors `.github/pull_request_template.md`). |
-| `scripts/issue-to-pr/demo.mjs`                    | Offline demo of phases 4-8 end to end.                                                                 |
+| `scripts/issue-to-pr/demo.mjs`                    | Offline demo of phases 4, 6 and 8 end to end.                                                          |
 
 ## Phase 1 findings: what already existed
 
@@ -64,25 +63,32 @@ setup` is the right command** (matching the hint given for this task) -
 
 ## Key design decisions
 
-### Reality check on "exactly one source file"
+### Letting the issue creator pick the exact file
 
 The task's example (`dictionaries/git/src/git.txt`) doesn't match the actual
 repo layout - `git` has **two** files (`terms.txt`, `additional_words.txt`),
 neither containing the "Please add new terms above this line" marker. A
-repo-wide check found:
+repo-wide check found ~80 of ~115 dictionaries have exactly **one**
+`src/*.txt` file, but the rest (`git`, `python`, `typescript`, `node`, `npm`,
+`html`, `rust`, `software-terms`, ...) have 2-22, and a handful (e.g. `en_US`,
+`sv`, `bn`) also have nested subdirectories under `src/` containing vendored
+third-party dictionary sources (hunspell `.dic`/`.aff`, OpenOffice, synced
+GitHub word lists) that contributors shouldn't hand-edit at all.
 
-- ~80 of ~115 dictionaries have exactly **one** `src/*.txt` file → handled
-  automatically, no ambiguity.
-- The rest (`git`, `python`, `typescript`, `node`, `npm`, `html`, `rust`,
-  `software-terms`, ...) have 2-22 files. `find-dictionary-file.mjs` tries a
-  marker-based fallback (use the one file containing the trailing comment),
-  but in practice this _also_ fails for `git` (no file has the marker) and
-  for `software-terms` (two of its 13 files have it). These cases **fail
-  closed** with a comment asking for a manual PR, exactly per the original
-  spec ("fail the workflow otherwise") - this is intentional, not a bug, but
-  it means the automation only fully self-serves for single-file
-  dictionaries today. A production version would need a maintainer-curated
-  "primary file" mapping for the multi-file dictionaries.
+An earlier version of this PoC tried to resolve this automatically (use the
+one file with the trailing marker comment, fail closed otherwise), but that
+only worked for dictionaries that happened to have the marker - it still
+failed for `git` itself. Guessing further (e.g. "pick the file with the
+shortest name" or "the one matching the dictionary's name") would only ever
+be a heuristic with edge cases, for something a human glancing at the
+`dictionaries/` folder on GitHub can already tell at sight.
+
+So instead, the issue form's `File` field asks for the exact path up front
+(e.g. `git/src/terms.txt`), and `parse-issue.mjs` just validates that it
+matches `<dictionary>/src/<file>.txt` and exists - no guessing, no
+ambiguity, and it works uniformly for single- and multi-file dictionaries.
+The trade-off is it asks slightly more of the issue creator (browse the repo
+to find the right file) instead of just naming the dictionary.
 
 ### Matching the existing PR template
 
@@ -123,38 +129,39 @@ Issue events fire for _every_ issue, not just ones from this form, and
 there's no template ID in the event payload. Issue-form `labels:` must
 already exist in the repo to be applied, so relying on a label would
 silently no-op until a maintainer pre-creates `dictionary-words`. Instead the
-job-level `if:` checks the rendered body for `### Dictionary` and `###
-Words` headings, which only this form produces. The form still sets the
+job-level `if:` checks the rendered body for `### File` and `### Words`
+headings, which only this form produces. The form still sets the
 `dictionary-words` label for human triage in the issue list.
 
 ### Treating the issue body as untrusted input
 
-`github.event.issue.body` (and anything derived from it - the dictionary
-name, the word list, error messages that echo a rejected word back) is never
-spliced directly into a `run:` shell block or an `actions/github-script`
-`script:` block via `${{ }}` - that's the standard GitHub Actions script
-injection vector. Instead it only ever flows in through `env:` and is read
-with `process.env` inside Node, including in the three "comment on the
-issue" steps. `parse-issue.mjs` also restricts the dictionary name to
-`[a-zA-Z0-9_-]+` and resolves it under `dictionaries/` with a `path.resolve`
-containment check before touching the filesystem, so the dictionary name is
-the only repository-path input, as required.
+`github.event.issue.body` (and anything derived from it - the file path, the
+word list, error messages that echo a rejected word back) is never spliced
+directly into a `run:` shell block or an `actions/github-script` `script:`
+block via `${{ }}` - that's the standard GitHub Actions script injection
+vector. Instead it only ever flows in through `env:` and is read with
+`process.env` inside Node, including in the three "comment on the issue"
+steps. `parse-issue.mjs` also restricts the file path to
+`<dictionary>/src/<file>.txt` (`[a-zA-Z0-9_-]+/src/[a-zA-Z0-9_.-]+\.txt`) and
+resolves it under `dictionaries/` with a `path.resolve` containment check
+before touching the filesystem, so the file path is the only
+repository-path input, as required.
 
 ### No-op and failure feedback
 
 - If every submitted word already exists in the file, no PR is opened and
   the bot comments explaining why (avoids empty/no-diff PRs).
-- If parsing, file-lookup, or insertion fails for any reason, the bot
-  comments the specific reason (not just "workflow failed") so the
-  contributor knows whether to fix the dictionary name, pick a different
-  dictionary, or just open a manual PR.
+- If parsing or insertion fails for any reason, the bot comments the
+  specific reason (not just "workflow failed") so the contributor knows
+  whether to fix the file path, pick a different file, or just open a
+  manual PR.
 
 ### Anyone can trigger this
 
 Unlike the repo's other automation (gated on `github.repository_owner` or
 internal credentials), this responds to issues opened by anyone, by design -
 the goal is to lower friction for outside contributors. The blast radius is
-limited (a maintainer still has to review and merge, strict word/dictionary
+limited (a maintainer still has to review and merge, strict word/file-path
 validation, no write access to anything outside one `src/*.txt` file, no
 auto-merge), but it is still public-input-triggered CI spend with no rate
 limiting, and PRs are opened immediately rather than held for review first.
@@ -166,13 +173,15 @@ Worth a maintainer discussion before enabling for real.
 node scripts/issue-to-pr/demo.mjs
 ```
 
-Runs phases 4-8 against a temp-directory `git` dictionary fixture (pre-seeded
-with `clone`/`commit`/`fetch`, then submitting `push`/`pull`/`github`/`fetch`
-
-- the repeated `fetch` demonstrates the "already present, skipped" path
-  alongside genuinely new words) and prints each phase's output, including the
-  final simulated PR title/body. It never touches files under the real
-  `dictionaries/` directory and makes no GitHub API calls.
+Runs phases 4, 6 and 8 against a temp-directory `git` dictionary fixture with
+**two** source files (`terms.txt`, `additional_words.txt`, mirroring the real
+repo), submitting File: `git/src/terms.txt` and Words:
+`push`/`pull`/`github`/`fetch` - the explicit file path shows the new
+multi-file dictionaries work with no disambiguation step, and the repeated
+`fetch` (already in `terms.txt`) demonstrates the "already present, skipped"
+path alongside genuinely new words. Prints each phase's output, including
+the final simulated PR title/body. It never touches files under the real
+`dictionaries/` directory and makes no GitHub API calls.
 
 To see the real workflow run end-to-end, push this branch to a repo where
 Actions are enabled and open an issue using the "Add Words to a Dictionary"
@@ -181,7 +190,6 @@ create real issues/PRs/Action runs.
 
 ## Out of scope for this proof-of-concept
 
-- Maintainer-curated "primary file" selection for multi-file dictionaries.
 - Abuse mitigation (rate limiting, first-time-contributor checks, CAPTCHA).
 - Re-using the GitHub App identity (`./.github/actions/pr`) so generated
   PRs trigger CI like normal PRs.

@@ -5,7 +5,12 @@
 // interpolated into a shell command - see issue-to-pr.yml) and the
 // dictionaries root from $DICTIONARIES_ROOT.
 //
-// Outputs (via $GITHUB_OUTPUT): dictionary, words (JSON array)
+// The issue creator names the exact source file to edit (e.g.
+// "git/src/terms.txt") rather than just a dictionary name, so there's no
+// need to guess which file to use when a dictionary has more than one -
+// see "Letting the issue creator pick the exact file" in docs/issue-to-pr-poc.md.
+//
+// Outputs (via $GITHUB_OUTPUT): file, dictionary, words (JSON array)
 
 import { existsSync } from 'node:fs';
 import path from 'node:path';
@@ -13,7 +18,7 @@ import { pathToFileURL } from 'node:url';
 import { fail, writeOutput } from './lib.mjs';
 
 const DICTIONARIES_ROOT = process.env.DICTIONARIES_ROOT || 'dictionaries';
-const SLUG_PATTERN = /^[a-zA-Z0-9][a-zA-Z0-9_-]*$/;
+const FILE_PATTERN = /^[a-zA-Z0-9][a-zA-Z0-9_-]*\/src\/[a-zA-Z0-9][a-zA-Z0-9_.-]*\.txt$/;
 const WORD_PATTERN = /^[^\s`<>|]{1,64}$/u;
 const MAX_WORDS = 200;
 const NO_RESPONSE = '_No response_';
@@ -48,28 +53,35 @@ export function parseIssueForm(body) {
 }
 
 /**
- * @param {string} dictionary
+ * Validate the issue creator's chosen target file (e.g. "git/src/terms.txt")
+ * and resolve it to a path relative to the repo root.
+ * @param {string} file
  * @param {string} dictionariesRoot
+ * @returns {string}
  */
-export function validateDictionary(dictionary, dictionariesRoot) {
-    if (!dictionary || dictionary === NO_RESPONSE) {
-        fail('The "Dictionary" field is empty.');
+export function validateFile(file, dictionariesRoot) {
+    if (!file || file === NO_RESPONSE) {
+        fail('The "File" field is empty.');
     }
-    if (!SLUG_PATTERN.test(dictionary)) {
-        fail(`"${dictionary}" is not a valid dictionary name (only letters, numbers, "-" and "_" are allowed).`);
-    }
-
-    const dictDir = path.join(dictionariesRoot, dictionary);
-    const resolvedRoot = path.resolve(dictionariesRoot) + path.sep;
-    const resolvedDir = path.resolve(dictDir);
-    if (!resolvedDir.startsWith(resolvedRoot)) {
-        fail('Invalid dictionary path.');
-    }
-    if (!existsSync(dictDir)) {
+    if (!FILE_PATTERN.test(file)) {
         fail(
-            `No dictionary named "${dictionary}" exists under "${dictionariesRoot}/". Dictionary names are case-sensitive and must match an existing folder.`,
+            `"${file}" is not a valid path. It must look like "<dictionary>/src/<file>.txt" (e.g. "docker/src/docker.txt") - browse dictionaries/ on GitHub to find it.`,
         );
     }
+
+    const fullPath = path.join(dictionariesRoot, file);
+    const resolvedRoot = path.resolve(dictionariesRoot) + path.sep;
+    const resolvedPath = path.resolve(fullPath);
+    if (!resolvedPath.startsWith(resolvedRoot)) {
+        fail('Invalid file path.');
+    }
+    if (!existsSync(fullPath)) {
+        fail(
+            `No file found at "${dictionariesRoot}/${file}". File paths are case-sensitive and must match an existing file.`,
+        );
+    }
+
+    return fullPath;
 }
 
 /**
@@ -109,14 +121,16 @@ function main() {
     const body = process.env.ISSUE_BODY || '';
     const sections = parseIssueForm(body);
 
-    const dictionary = (sections['dictionary'] || '').trim();
-    validateDictionary(dictionary, DICTIONARIES_ROOT);
+    const file = (sections['file'] || '').trim();
+    const fullPath = validateFile(file, DICTIONARIES_ROOT);
+    const dictionary = file.split('/')[0];
 
     const words = parseWords((sections['words'] || '').trim());
 
+    writeOutput('file', fullPath);
     writeOutput('dictionary', dictionary);
     writeOutput('words', JSON.stringify(words));
-    console.log(`Parsed ${words.length} word(s) for dictionary "${dictionary}": ${words.join(', ')}`);
+    console.log(`Parsed ${words.length} word(s) for "${fullPath}": ${words.join(', ')}`);
 }
 
 if (process.argv[1] && import.meta.url === pathToFileURL(process.argv[1]).href) {

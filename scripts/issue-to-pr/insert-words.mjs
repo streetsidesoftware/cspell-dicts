@@ -9,14 +9,14 @@
 // ignoring comment lines) are silently skipped. No sorting happens here -
 // `pnpm run lint:fix:sort-source-files` does that afterwards.
 //
-// Input: $TARGET_FILE (from find-dictionary-file.mjs), $WORDS_JSON (from
-// parse-issue.mjs)
+// Input: $TARGET_FILE, $WORDS_JSON (both from parse-issue.mjs)
 // Output (via $GITHUB_OUTPUT): added (JSON array), skipped (JSON array)
 
 import { readFileSync, writeFileSync } from 'node:fs';
 import { pathToFileURL } from 'node:url';
 import { writeOutput } from './lib.mjs';
-import { NEW_TERMS_MARKER } from './find-dictionary-file.mjs';
+
+const NEW_TERMS_MARKER = /please add new terms above this line/i;
 
 /**
  * @param {string} content

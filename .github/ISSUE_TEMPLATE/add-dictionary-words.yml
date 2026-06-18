@@ -1,5 +1,5 @@
 name: Add Words to a Dictionary
-description: Submit one or more words to add to an existing dictionary. A workflow will try to open a PR automatically (proof-of-concept).
+description: Submit one or more words to add to an existing dictionary's source file. A workflow will try to open a PR automatically (proof-of-concept).
 title: '[Words]: '
 labels:
   - dictionary-words
@@ -7,26 +7,27 @@ body:
   - type: markdown
     attributes:
       value: |
-        Use this form to request new words for an **existing** dictionary under [`dictionaries/`](https://github.com/streetsidesoftware/cspell-dicts/tree/main/dictionaries).
+        Use this form to request new words for an **existing** dictionary source file under [`dictionaries/`](https://github.com/streetsidesoftware/cspell-dicts/tree/main/dictionaries).
 
-        This is a proof-of-concept: a workflow will try to add your word(s) to the dictionary's source file and open a **pull request** automatically. If it can't (e.g. the dictionary name doesn't match, or the dictionary has multiple source files), it will leave a comment explaining why - in that case, please open a pull request manually instead.
+        This is a proof-of-concept: a workflow will try to add your word(s) to the file below and open a **pull request** automatically. If it can't (e.g. the path doesn't match an existing file), it will leave a comment explaining why - in that case, please open a pull request manually instead.
   - type: input
-    id: dictionary
+    id: file
     attributes:
-      label: Dictionary
-      description: The folder name of the dictionary under `dictionaries/` (case-sensitive).
-      placeholder: git
+      label: File
+      description: |
+        The path to the source file, relative to `dictionaries/`, that the word(s) should be added to. Browse [`dictionaries/`](https://github.com/streetsidesoftware/cspell-dicts/tree/main/dictionaries) on GitHub to find it - it's always under a `src/` folder, e.g. `git/src/terms.txt` or `docker/src/docker.txt`. If a dictionary has more than one source file, please pick the one that fits best.
+      placeholder: docker/src/docker.txt
     validations:
       required: true
   - type: textarea
     id: words
     attributes:
       label: Words
-      description: One word per line. Please only submit words that belong in this single dictionary.
+      description: One word per line. Please only submit words that belong in this single file.
       placeholder: |
-        gitops
-        gitflow
-        gitlabci
+        compose
+        registry
+        rootless
     validations:
       required: true
-# cspell:ignore gitops gitflow gitlabci
+# cspell:ignore rootless

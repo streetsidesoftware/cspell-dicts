@@ -4,7 +4,7 @@
 //
 //   Issue Created -> Workflow Runs -> Dictionary Updated -> PR Created
 //
-// This runs the *same* phase 4-8 logic the workflow uses
+// This runs the *same* phase 4, 6 and 8 logic the workflow uses
 // (.github/workflows/issue-to-pr.yml), against a throwaway fixture
 // dictionary under a temp directory, so it never touches real files in
 // `dictionaries/`. It does not call the GitHub API - the "PR Created"
@@ -16,17 +16,19 @@ import { mkdtempSync, mkdirSync, writeFileSync, readFileSync, rmSync } from 'nod
 import { tmpdir } from 'node:os';
 import path from 'node:path';
 
-import { parseIssueForm, parseWords, validateDictionary } from './parse-issue.mjs';
-import { findDictionaryFile } from './find-dictionary-file.mjs';
+import { parseIssueForm, parseWords, validateFile } from './parse-issue.mjs';
 import { insertWords } from './insert-words.mjs';
 import { formatPrBody } from './format-pr-body.mjs';
 
 const ISSUE_NUMBER = '123';
-// "fetch" is deliberately also one of the fixture's pre-existing words below,
-// to demonstrate the "already present, skipped" path alongside genuinely new words.
-const ISSUE_BODY = `### Dictionary
+// The fixture has *two* source files for the "git" dictionary, mirroring the
+// real repo (terms.txt + additional_words.txt) - the issue creator names the
+// exact file, so there's nothing to disambiguate automatically. "fetch" is
+// deliberately also one of terms.txt's pre-existing words, to demonstrate
+// the "already present, skipped" path alongside genuinely new words.
+const ISSUE_BODY = `### File
 
-git
+git/src/terms.txt
 
 ### Words
 
@@ -45,9 +47,8 @@ function main() {
     const dictionariesRoot = path.join(tmpRoot, 'dictionaries');
     const srcDir = path.join(dictionariesRoot, 'git', 'src');
     mkdirSync(srcDir, { recursive: true });
-    const fixtureFile = path.join(srcDir, 'git.txt');
     writeFileSync(
-        fixtureFile,
+        path.join(srcDir, 'terms.txt'),
         [
             'clone',
             'commit',
@@ -58,6 +59,7 @@ function main() {
         ].join('\n'),
         'utf8',
     );
+    writeFileSync(path.join(srcDir, 'additional_words.txt'), ['merge', ''].join('\n'), 'utf8');
 
     try {
         section('1. Issue Created');
@@ -66,16 +68,24 @@ function main() {
 
         section('2. Workflow Runs - parse issue (Phase 4)');
         const sections = parseIssueForm(ISSUE_BODY);
-        validateDictionary(sections.dictionary, dictionariesRoot);
+        const targetFile = validateFile(sections.file, dictionariesRoot);
+        // In the real workflow $DICTIONARIES_ROOT is relative ("dictionaries"), so
+        // the file output looks like "dictionaries/git/src/terms.txt". Here it's
+        // re-derived relative to the fixture root, just for realistic-looking output.
+        const displayFile = path.posix.join(
+            'dictionaries',
+            path.relative(dictionariesRoot, targetFile).split(path.sep).join('/'),
+        );
+        const dictionary = sections.file.split('/')[0];
         const words = parseWords(sections.words);
-        console.log(`dictionary = ${JSON.stringify(sections.dictionary)}`);
+        console.log(`file       = ${JSON.stringify(displayFile)}`);
+        console.log(`dictionary = ${JSON.stringify(dictionary)}`);
         console.log(`words      = ${JSON.stringify(words)}`);
+        console.log(
+            '(No file-disambiguation step needed - "git" has two source files, but the issue creator named the exact one.)',
+        );
 
-        section('3. Workflow Runs - locate dictionary file (Phase 5)');
-        const targetFile = findDictionaryFile(sections.dictionary, dictionariesRoot);
-        console.log(`target file = ${targetFile}`);
-
-        section('4. Dictionary Updated - insert words (Phase 6)');
+        section('3. Dictionary Updated - insert words (Phase 6)');
         const before = readFileSync(targetFile, 'utf8');
         const { content: after, added } = insertWords(before, words);
         writeFileSync(targetFile, after, 'utf8');
@@ -85,11 +95,11 @@ function main() {
         console.log(after);
         console.log(`(Phase 7 would now run "pnpm run prepare:dictionaries" to regenerate build artifacts.)`);
 
-        section('5. PR Created (Phase 8)');
+        section('4. PR Created (Phase 8)');
         const skipped = words.filter((w) => !added.includes(w));
         const branch = `issue-${ISSUE_NUMBER}`;
-        const title = `fix: add words to ${sections.dictionary} dictionary`;
-        const body = formatPrBody({ issueNumber: ISSUE_NUMBER, dictionary: sections.dictionary, added, skipped });
+        const title = `fix: add words to ${dictionary} dictionary`;
+        const body = formatPrBody({ issueNumber: ISSUE_NUMBER, dictionary, file: displayFile, added, skipped });
         console.log(`branch: ${branch}`);
         console.log(`title:  ${title}`);
         console.log('body:');

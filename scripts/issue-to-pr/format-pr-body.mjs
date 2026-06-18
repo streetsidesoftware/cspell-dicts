@@ -10,20 +10,21 @@
 // template when a PR is opened with an explicit body via the API, so it has
 // to be reproduced here to keep automated PRs looking like hand-made ones.
 //
-// Input: $ISSUE_NUMBER, $DICTIONARY, $ADDED_JSON, $SKIPPED_JSON
+// Input: $ISSUE_NUMBER, $DICTIONARY, $TARGET_FILE, $ADDED_JSON, $SKIPPED_JSON
 // Output (via $GITHUB_OUTPUT): branch, title, body
 
 import { pathToFileURL } from 'node:url';
 import { writeOutput } from './lib.mjs';
 
 /**
- * @param {{ issueNumber: string, dictionary: string, added: string[], skipped: string[] }} input
+ * @param {{ issueNumber: string, dictionary: string, file: string, added: string[], skipped: string[] }} input
  */
-export function formatPrBody({ issueNumber, dictionary, added, skipped }) {
+export function formatPrBody({ issueNumber, dictionary, file, added, skipped }) {
     const lines = [
         '# Add/Fix Dictionary',
         '',
         `Dictionary: \`${dictionary}\``,
+        `File: \`${file}\``,
         '',
         '## Description',
         '',
@@ -56,12 +57,13 @@ export function formatPrBody({ issueNumber, dictionary, added, skipped }) {
 function main() {
     const issueNumber = process.env.ISSUE_NUMBER || '';
     const dictionary = process.env.DICTIONARY || '';
+    const file = process.env.TARGET_FILE || '';
     const added = JSON.parse(process.env.ADDED_JSON || '[]');
     const skipped = JSON.parse(process.env.SKIPPED_JSON || '[]');
 
     writeOutput('branch', `issue-${issueNumber}`);
     writeOutput('title', `fix: add words to ${dictionary} dictionary`);
-    writeOutput('body', formatPrBody({ issueNumber, dictionary, added, skipped }));
+    writeOutput('body', formatPrBody({ issueNumber, dictionary, file, added, skipped }));
 }
 
 if (process.argv[1] && import.meta.url === pathToFileURL(process.argv[1]).href) {

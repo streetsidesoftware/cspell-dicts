@@ -32,7 +32,7 @@ jobs:
     # submitter could edit) is the most robust signal that this issue matches
     # the form in .github/ISSUE_TEMPLATE/add-dictionary-words.yml.
     if: |
-      contains(github.event.issue.body, '### Dictionary') &&
+      contains(github.event.issue.body, '### File') &&
       contains(github.event.issue.body, '### Words')
     runs-on: ubuntu-latest
     steps:
@@ -50,18 +50,11 @@ jobs:
           ISSUE_BODY: ${{ github.event.issue.body }}
         run: node scripts/issue-to-pr/parse-issue.mjs
 
-      - name: Locate dictionary file
-        id: locate
-        if: success()
-        env:
-          DICTIONARY: ${{ steps.parse.outputs.dictionary }}
-        run: node scripts/issue-to-pr/find-dictionary-file.mjs
-
       - name: Insert words
         id: insert
         if: success()
         env:
-          TARGET_FILE: ${{ steps.locate.outputs.file }}
+          TARGET_FILE: ${{ steps.parse.outputs.file }}
           WORDS_JSON: ${{ steps.parse.outputs.words }}
         run: node scripts/issue-to-pr/insert-words.mjs
 
@@ -79,6 +72,7 @@ jobs:
         env:
           ISSUE_NUMBER: ${{ github.event.issue.number }}
           DICTIONARY: ${{ steps.parse.outputs.dictionary }}
+          TARGET_FILE: ${{ steps.parse.outputs.file }}
           ADDED_JSON: ${{ steps.insert.outputs.added }}
           SKIPPED_JSON: ${{ steps.insert.outputs.skipped }}
         run: node scripts/issue-to-pr/format-pr-body.mjs
@@ -132,7 +126,7 @@ jobs:
         uses: actions/github-script@3a2844b7e9c422d3c10d287c895573f7108da1b3 # v9.0.0
         env:
           ISSUE_NUMBER: ${{ github.event.issue.number }}
-          REASON: ${{ steps.parse.outputs.error || steps.locate.outputs.error || steps.insert.outputs.error || 'See the workflow run logs for details.' }}
+          REASON: ${{ steps.parse.outputs.error || steps.insert.outputs.error || 'See the workflow run logs for details.' }}
         with:
           script: |
             const { ISSUE_NUMBER, REASON } = process.env;
