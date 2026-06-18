@@ -1,0 +1,69 @@
+#!/usr/bin/env node
+
+// Phase 8 helper: build the branch name / title / body for the PR
+// from already-validated data. Kept separate from the create-pull-request
+// step so that no user-derived text is ever interpolated directly into a
+// `run:`/`script:` block - see docs/issue-to-pr-poc.md.
+//
+// The body mirrors .github/pull_request_template.md's structure (Dictionary
+// / Description / References / Checklist) - GitHub does not auto-apply that
+// template when a PR is opened with an explicit body via the API, so it has
+// to be reproduced here to keep automated PRs looking like hand-made ones.
+//
+// Input: $ISSUE_NUMBER, $DICTIONARY, $ADDED_JSON, $SKIPPED_JSON
+// Output (via $GITHUB_OUTPUT): branch, title, body
+
+import { pathToFileURL } from 'node:url';
+import { writeOutput } from './lib.mjs';
+
+/**
+ * @param {{ issueNumber: string, dictionary: string, added: string[], skipped: string[] }} input
+ */
+export function formatPrBody({ issueNumber, dictionary, added, skipped }) {
+    const lines = [
+        '# Add/Fix Dictionary',
+        '',
+        `Dictionary: \`${dictionary}\``,
+        '',
+        '## Description',
+        '',
+        `Added word(s) submitted in #${issueNumber} via the "Add Words to a Dictionary" issue form:`,
+        '',
+        ...added.map((word) => `- \`${word}\``),
+    ];
+
+    if (skipped.length) {
+        lines.push('', 'Already present in the dictionary (not re-added):', ...skipped.map((word) => `- \`${word}\``));
+    }
+
+    lines.push(
+        '',
+        '## References',
+        '',
+        `- Generated from #${issueNumber} by the [issue-to-pr proof-of-concept workflow](../actions/workflows/issue-to-pr.yml).`,
+        '',
+        '## Checklist',
+        '',
+        '- [ ] By submitting this pull-request, you agree to follow our [Code of Conduct](https://github.com/streetsidesoftware/cspell-dicts/blob/main/CODE_OF_CONDUCT.md)',
+        '- [x] Verify that the title starts with the correct prefix: `fix:` - for minor changes like adding words or fixing spelling issues.',
+        '',
+        '_Opened automatically by an automated workflow - please review the sorted/generated output before merging._',
+    );
+
+    return lines.join('\n');
+}
+
+function main() {
+    const issueNumber = process.env.ISSUE_NUMBER || '';
+    const dictionary = process.env.DICTIONARY || '';
+    const added = JSON.parse(process.env.ADDED_JSON || '[]');
+    const skipped = JSON.parse(process.env.SKIPPED_JSON || '[]');
+
+    writeOutput('branch', `issue-${issueNumber}`);
+    writeOutput('title', `fix: add words to ${dictionary} dictionary`);
+    writeOutput('body', formatPrBody({ issueNumber, dictionary, added, skipped }));
+}
+
+if (process.argv[1] && import.meta.url === pathToFileURL(process.argv[1]).href) {
+    main();
+}
