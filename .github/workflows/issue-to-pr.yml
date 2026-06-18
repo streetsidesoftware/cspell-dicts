@@ -1,0 +1,139 @@
+## Proof-of-concept: turn an "Add Words to a Dictionary" issue into a PR.
+## See docs/issue-to-pr-poc.md for the architecture and security notes.
+##
+## Security note: github.event.issue.body/title are untrusted user input. They
+## are only ever passed to subsequent steps through `env:` (never spliced
+## directly into a `run:` or `actions/github-script` `script:` block), and
+## are validated/sanitized by the scripts/issue-to-pr/*.mjs scripts before
+## anything derived from them is used for file paths, branch names or shell
+## commands.
+
+name: ' 📝 Issue to PR (proof-of-concept)'
+
+on:
+  issues:
+    types:
+      - opened
+
+permissions:
+  contents: write
+  pull-requests: write
+  issues: write
+
+concurrency:
+  group: issue-to-pr-${{ github.event.issue.number }}
+  cancel-in-progress: true
+
+jobs:
+  issue-to-pr:
+    # Only handle issues created from the "Add Words to a Dictionary" form.
+    # Checking the rendered body (rather than relying on the `dictionary-words`
+    # label, which must be pre-created in the repo, or the title, which a
+    # submitter could edit) is the most robust signal that this issue matches
+    # the form in .github/ISSUE_TEMPLATE/add-dictionary-words.yml.
+    if: |
+      contains(github.event.issue.body, '### File') &&
+      contains(github.event.issue.body, '### Words')
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout code
+        uses: actions/checkout@df4cb1c069e1874edd31b4311f1884172cec0e10 # v6.0.3
+        with:
+          persist-credentials: false
+
+      - name: Setup
+        uses: ./.github/actions/setup
+
+      - name: Parse issue
+        id: parse
+        env:
+          ISSUE_BODY: ${{ github.event.issue.body }}
+        run: node scripts/issue-to-pr/parse-issue.mjs
+
+      - name: Insert words
+        id: insert
+        if: success()
+        env:
+          TARGET_FILE: ${{ steps.parse.outputs.file }}
+          WORDS_JSON: ${{ steps.parse.outputs.words }}
+        run: node scripts/issue-to-pr/insert-words.mjs
+
+      - name: Sort source files
+        if: success() && steps.insert.outputs.added != '[]'
+        run: pnpm run lint:fix:sort-source-files
+
+      - name: Rebuild dictionaries
+        if: success() && steps.insert.outputs.added != '[]'
+        run: pnpm run prepare:dictionaries
+
+      - name: Build PR branch/title/body
+        id: body
+        if: success() && steps.insert.outputs.added != '[]'
+        env:
+          ISSUE_NUMBER: ${{ github.event.issue.number }}
+          DICTIONARY: ${{ steps.parse.outputs.dictionary }}
+          TARGET_FILE: ${{ steps.parse.outputs.file }}
+          ADDED_JSON: ${{ steps.insert.outputs.added }}
+          SKIPPED_JSON: ${{ steps.insert.outputs.skipped }}
+          NOTES: ${{ steps.parse.outputs.notes }}
+        run: node scripts/issue-to-pr/format-pr-body.mjs
+
+      - name: Create PR
+        id: create-pr
+        if: success() && steps.insert.outputs.added != '[]'
+        uses: peter-evans/create-pull-request@5f6978faf089d4d20b00c7766989d076bb2fc7f1 # v8.1.1
+        with:
+          token: ${{ secrets.GITHUB_TOKEN }}
+          base: main
+          branch: ${{ steps.body.outputs.branch }}
+          delete-branch: true
+          commit-message: ${{ steps.body.outputs.title }}
+          title: ${{ steps.body.outputs.title }}
+          body: ${{ steps.body.outputs.body }}
+
+      - name: Comment with PR link
+        if: success() && steps.insert.outputs.added != '[]'
+        uses: actions/github-script@3a2844b7e9c422d3c10d287c895573f7108da1b3 # v9.0.0
+        env:
+          ISSUE_NUMBER: ${{ github.event.issue.number }}
+          PR_URL: ${{ steps.create-pr.outputs.pull-request-url }}
+        with:
+          script: |
+            const { ISSUE_NUMBER, PR_URL } = process.env;
+            await github.rest.issues.createComment({
+              owner: context.repo.owner,
+              repo: context.repo.repo,
+              issue_number: Number(ISSUE_NUMBER),
+              body: `Opened a pull request with these word(s): ${PR_URL}`,
+            });
+
+      - name: Comment when no new words were added
+        if: success() && steps.insert.outputs.added == '[]'
+        uses: actions/github-script@3a2844b7e9c422d3c10d287c895573f7108da1b3 # v9.0.0
+        env:
+          ISSUE_NUMBER: ${{ github.event.issue.number }}
+        with:
+          script: |
+            const { ISSUE_NUMBER } = process.env;
+            await github.rest.issues.createComment({
+              owner: context.repo.owner,
+              repo: context.repo.repo,
+              issue_number: Number(ISSUE_NUMBER),
+              body: 'All submitted word(s) already exist in this dictionary, so no pull request was opened.',
+            });
+
+      - name: Comment with failure reason
+        if: failure()
+        uses: actions/github-script@3a2844b7e9c422d3c10d287c895573f7108da1b3 # v9.0.0
+        env:
+          ISSUE_NUMBER: ${{ github.event.issue.number }}
+          REASON: ${{ steps.parse.outputs.error || steps.insert.outputs.error || 'See the workflow run logs for details.' }}
+        with:
+          script: |
+            const { ISSUE_NUMBER, REASON } = process.env;
+            await github.rest.issues.createComment({
+              owner: context.repo.owner,
+              repo: context.repo.repo,
+              issue_number: Number(ISSUE_NUMBER),
+              body: `I couldn't automatically open a pull request for this request:\n\n> ${REASON}\n\nPlease consider opening a pull request manually instead.`,
+            });
