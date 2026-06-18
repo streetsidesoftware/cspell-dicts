@@ -98,8 +98,12 @@ only for an empty body) - so `peter-evans/create-pull-request` would
 otherwise produce a body in whatever ad hoc shape we wrote. `format-pr-body.mjs`
 instead reproduces the template's structure (`Dictionary:` line,
 `Description`, `References`, `Checklist`) so an automated PR looks the same
-as one a human would open per `CONTRIBUTING.md`. The "title starts with the
-correct prefix" checkbox is pre-checked, since the title is always
+as one a human would open per `CONTRIBUTING.md`. The References section
+includes `Fixes #<issue>`, so merging the PR automatically closes the
+issue that requested the word(s) - this only fires on merge, not on PR
+creation, so a rejected/closed-without-merging PR correctly leaves the
+issue open. The "title starts with the correct prefix" checkbox is
+pre-checked, since the title is always
 generated as `fix: add words to <dictionary> dictionary`; the Code of
 Conduct checkbox is left for a human to confirm.
 
