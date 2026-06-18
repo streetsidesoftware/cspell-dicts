@@ -10,7 +10,7 @@
 // need to guess which file to use when a dictionary has more than one -
 // see "Letting the issue creator pick the exact file" in docs/issue-to-pr-poc.md.
 //
-// Outputs (via $GITHUB_OUTPUT): file, dictionary, words (JSON array)
+// Outputs (via $GITHUB_OUTPUT): file, dictionary, words (JSON array), notes
 
 import { existsSync } from 'node:fs';
 import path from 'node:path';
@@ -21,6 +21,7 @@ const DICTIONARIES_ROOT = process.env.DICTIONARIES_ROOT || 'dictionaries';
 const FILE_PATTERN = /^[a-zA-Z0-9][a-zA-Z0-9_-]*\/src\/[a-zA-Z0-9][a-zA-Z0-9_.-]*\.txt$/;
 const WORD_PATTERN = /^[^\s`<>|]{1,64}$/u;
 const MAX_WORDS = 200;
+const MAX_NOTES_LENGTH = 1000;
 const NO_RESPONSE = '_No response_';
 
 /**
@@ -117,6 +118,24 @@ export function parseWords(wordsRaw) {
     return words;
 }
 
+/**
+ * The "Additional Notes" field is optional free text (e.g. why a word
+ * should be added, or a source for it). It only ever ends up inside the
+ * generated PR body, never used for a file path or shell command, so it
+ * just needs a sane length cap.
+ * @param {string} notesRaw
+ * @returns {string}
+ */
+export function parseNotes(notesRaw) {
+    if (!notesRaw || notesRaw === NO_RESPONSE) {
+        return '';
+    }
+    if (notesRaw.length > MAX_NOTES_LENGTH) {
+        fail(`"Additional Notes" is too long (${notesRaw.length} characters, max ${MAX_NOTES_LENGTH}).`);
+    }
+    return notesRaw;
+}
+
 function main() {
     const body = process.env.ISSUE_BODY || '';
     const sections = parseIssueForm(body);
@@ -126,10 +145,12 @@ function main() {
     const dictionary = file.split('/')[0];
 
     const words = parseWords((sections['words'] || '').trim());
+    const notes = parseNotes((sections['additional notes'] || '').trim());
 
     writeOutput('file', fullPath);
     writeOutput('dictionary', dictionary);
     writeOutput('words', JSON.stringify(words));
+    writeOutput('notes', notes);
     console.log(`Parsed ${words.length} word(s) for "${fullPath}": ${words.join(', ')}`);
 }
 

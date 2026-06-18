@@ -16,7 +16,7 @@ import { mkdtempSync, mkdirSync, writeFileSync, readFileSync, rmSync } from 'nod
 import { tmpdir } from 'node:os';
 import path from 'node:path';
 
-import { parseIssueForm, parseWords, validateFile } from './parse-issue.mjs';
+import { parseIssueForm, parseWords, parseNotes, validateFile } from './parse-issue.mjs';
 import { insertWords } from './insert-words.mjs';
 import { formatPrBody } from './format-pr-body.mjs';
 
@@ -25,7 +25,9 @@ const ISSUE_NUMBER = '123';
 // real repo (terms.txt + additional_words.txt) - the issue creator names the
 // exact file, so there's nothing to disambiguate automatically. "fetch" is
 // deliberately also one of terms.txt's pre-existing words, to demonstrate
-// the "already present, skipped" path alongside genuinely new words.
+// the "already present, skipped" path alongside genuinely new words. The
+// notes deliberately contain "Fixes #999" to demonstrate that it ends up
+// inert (code-fenced) in the PR body rather than closing an unrelated issue.
 const ISSUE_BODY = `### File
 
 git/src/terms.txt
@@ -36,6 +38,11 @@ push
 pull
 github
 fetch
+
+### Additional Notes
+
+Standard Docker CLI subcommands - see https://docs.docker.com/reference/cli/docker/.
+Not related to Fixes #999, just demonstrating that this text can't close issues.
 `;
 
 function section(title) {
@@ -78,9 +85,11 @@ function main() {
         );
         const dictionary = sections.file.split('/')[0];
         const words = parseWords(sections.words);
+        const notes = parseNotes(sections['additional notes']);
         console.log(`file       = ${JSON.stringify(displayFile)}`);
         console.log(`dictionary = ${JSON.stringify(dictionary)}`);
         console.log(`words      = ${JSON.stringify(words)}`);
+        console.log(`notes      = ${JSON.stringify(notes)}`);
         console.log(
             '(No file-disambiguation step needed - "git" has two source files, but the issue creator named the exact one.)',
         );
@@ -99,7 +108,7 @@ function main() {
         const skipped = words.filter((w) => !added.includes(w));
         const branch = `issue-${ISSUE_NUMBER}`;
         const title = `fix: add words to ${dictionary} dictionary`;
-        const body = formatPrBody({ issueNumber: ISSUE_NUMBER, dictionary, file: displayFile, added, skipped });
+        const body = formatPrBody({ issueNumber: ISSUE_NUMBER, dictionary, file: displayFile, added, skipped, notes });
         console.log(`branch: ${branch}`);
         console.log(`title:  ${title}`);
         console.log('body:');

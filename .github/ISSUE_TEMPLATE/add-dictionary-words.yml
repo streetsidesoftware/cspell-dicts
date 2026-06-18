@@ -30,4 +30,12 @@ body:
         rootless
     validations:
       required: true
+  - type: textarea
+    id: notes
+    attributes:
+      label: Additional Notes
+      description: Optional. Any extra context - why this word should be added, or a reference/source for it (a dictionary entry, official docs, an article, etc.).
+      placeholder: "Used in Docker's official CLI docs: https://docs.docker.com/..."
+    validations:
+      required: false
 # cspell:ignore rootless

@@ -27,7 +27,7 @@ against a throwaway fixture (no GitHub, no real files touched).
 
 | File                                              | Purpose                                                                                                |
 | ------------------------------------------------- | ------------------------------------------------------------------------------------------------------ |
-| `.github/ISSUE_TEMPLATE/add-dictionary-words.yml` | The issue form (`file` input, `words` textarea).                                                       |
+| `.github/ISSUE_TEMPLATE/add-dictionary-words.yml` | The issue form (`file` input, `words` textarea, optional `notes` textarea).                            |
 | `.github/workflows/issue-to-pr.yml`               | Orchestrates the steps below on `issues: opened`.                                                      |
 | `scripts/issue-to-pr/lib.mjs`                     | Shared `fail()` / `writeOutput()` helpers (Action-output + error plumbing).                            |
 | `scripts/issue-to-pr/parse-issue.mjs`             | Phase 4: parse the issue body, validate the target file path + words.                                  |
@@ -150,6 +150,15 @@ steps. `parse-issue.mjs` also restricts the file path to
 resolves it under `dictionaries/` with a `path.resolve` containment check
 before touching the filesystem, so the file path is the only
 repository-path input, as required.
+
+The optional "Additional Notes" field (free text - why a word should be
+added, a source/reference for it) is never used for a file path or shell
+command, so it only needs one extra guard: it's rendered into the PR body
+inside a fenced code block sized so the content can't prematurely close it
+(`codeFence()` in `format-pr-body.mjs`), so it can't be used to inject
+markdown structure or a `Fixes #<other-issue>` that would close an unrelated
+issue when the PR merges. `demo.mjs`'s fixture notes deliberately include
+`Fixes #999` to demonstrate this stays inert text.
 
 ### No-op and failure feedback
 

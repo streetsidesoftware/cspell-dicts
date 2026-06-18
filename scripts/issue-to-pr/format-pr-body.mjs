@@ -10,16 +10,31 @@
 // template when a PR is opened with an explicit body via the API, so it has
 // to be reproduced here to keep automated PRs looking like hand-made ones.
 //
-// Input: $ISSUE_NUMBER, $DICTIONARY, $TARGET_FILE, $ADDED_JSON, $SKIPPED_JSON
+// Input: $ISSUE_NUMBER, $DICTIONARY, $TARGET_FILE, $ADDED_JSON, $SKIPPED_JSON, $NOTES
 // Output (via $GITHUB_OUTPUT): branch, title, body
 
 import { pathToFileURL } from 'node:url';
 import { writeOutput } from './lib.mjs';
 
 /**
- * @param {{ issueNumber: string, dictionary: string, file: string, added: string[], skipped: string[] }} input
+ * Wrap arbitrary text in a fenced code block sized so the content can't
+ * prematurely close it. This is how the issue creator's free-text "Additional
+ * Notes" get embedded - as inert text, never markdown/closing-keywords GitHub
+ * would act on (e.g. a stray "Fixes #999" in someone's notes must not close
+ * an unrelated issue when this PR merges).
+ * @param {string} text
+ * @returns {string[]}
  */
-export function formatPrBody({ issueNumber, dictionary, file, added, skipped }) {
+function codeFence(text) {
+    const longestBacktickRun = Math.max(0, ...(text.match(/`+/g) || []).map((run) => run.length));
+    const fence = '`'.repeat(Math.max(3, longestBacktickRun + 1));
+    return [fence, text, fence];
+}
+
+/**
+ * @param {{ issueNumber: string, dictionary: string, file: string, added: string[], skipped: string[], notes: string }} input
+ */
+export function formatPrBody({ issueNumber, dictionary, file, added, skipped, notes }) {
     const lines = [
         '# Add/Fix Dictionary',
         '',
@@ -35,6 +50,10 @@ export function formatPrBody({ issueNumber, dictionary, file, added, skipped }) 
 
     if (skipped.length) {
         lines.push('', 'Already present in the dictionary (not re-added):', ...skipped.map((word) => `- \`${word}\``));
+    }
+
+    if (notes) {
+        lines.push('', 'Additional notes from the issue creator:', '', ...codeFence(notes));
     }
 
     lines.push(
@@ -61,10 +80,11 @@ function main() {
     const file = process.env.TARGET_FILE || '';
     const added = JSON.parse(process.env.ADDED_JSON || '[]');
     const skipped = JSON.parse(process.env.SKIPPED_JSON || '[]');
+    const notes = process.env.NOTES || '';
 
     writeOutput('branch', `issue-${issueNumber}`);
     writeOutput('title', `fix: add words to ${dictionary} dictionary`);
-    writeOutput('body', formatPrBody({ issueNumber, dictionary, file, added, skipped }));
+    writeOutput('body', formatPrBody({ issueNumber, dictionary, file, added, skipped, notes }));
 }
 
 if (process.argv[1] && import.meta.url === pathToFileURL(process.argv[1]).href) {

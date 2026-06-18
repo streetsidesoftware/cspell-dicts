@@ -75,6 +75,7 @@ jobs:
           TARGET_FILE: ${{ steps.parse.outputs.file }}
           ADDED_JSON: ${{ steps.insert.outputs.added }}
           SKIPPED_JSON: ${{ steps.insert.outputs.skipped }}
+          NOTES: ${{ steps.parse.outputs.notes }}
         run: node scripts/issue-to-pr/format-pr-body.mjs
 
       - name: Create PR
