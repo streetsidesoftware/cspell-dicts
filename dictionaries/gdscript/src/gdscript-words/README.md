@@ -4,7 +4,8 @@ Generate GDScript words for use in CSpell dictionary.
 
 ## Setup
 
-Run `pip install -r requirements.txt`.
+1. Activate virtual environment `source .venv/bin/activate`.
+2. Run `pip install -r requirements.txt`.
 
 ## Usage
 
