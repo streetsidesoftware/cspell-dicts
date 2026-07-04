@@ -14,7 +14,7 @@
   },
   "scripts": {
     "build": "cross-env NODE_OPTIONS=--max_old_space_size=8192 cspell-tools-cli build",
-    "test": "hunspell-reader words -n 1000 \"src/az.dic\" | cspell -c ./cspell-ext.json stdin",
+    "test": "hunspell-reader words -n 1000 \"src/az.dic\" | cspell -c ./cspell-ext.json \"--locale=az,az-AZ\" \"--languageId=*\" stdin",
     "prepublishOnly": "echo OK",
     "prepare:dictionary": "cspell-tools-cli gzip \"dict/az-az.trie\""
   },
@@ -34,7 +34,8 @@
   "contributors": [],
   "license": "MIT",
   "bugs": {
-    "url": "https://github.com/streetsidesoftware/cspell-dicts/issues"
+    "url": "https://github.com/streetsidesoftware/cspell-dicts/issues"ç
+    "directory": "dictionaries/az_AZ"
   },
   "homepage": "https://github.com/streetsidesoftware/cspell-dicts/blob/main/dictionaries/az_AZ#readme",
   "devDependencies": {},
