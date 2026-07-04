@@ -1,0 +1,178 @@
+SET UTF-8
+TRY aliərQTntımdAsNqkyOouşzebücvçYpVhxfEgöğSBDjRUPİKLHƏFŞZCXGMÇĞIJÖÜ'
+KEY qüertyuiopöğ|asdfghjklıə|zxcvbnmçş
+LANG az_AZ
+FLAG long
+
+# simple a-o mistake
+REP 2
+REP o a
+REP a o
+
+# english-azerbaijan letter mapping
+MAP 7
+MAP uü
+MAP oö
+MAP gğ
+MAP iı
+MAP eə
+MAP cç
+MAP sş
+
+# qalın isim, samitlə başlayan şəkilçilər
+SFX N1 Y 44
+SFX N1 0 lar .
+SFX N1 0 lara .
+SFX N1 0 laradır .
+SFX N1 0 ları .
+SFX N1 0 ların .
+SFX N1 0 larını .
+SFX N1 0 larının .
+SFX N1 0 larında .
+SFX N1 0 larındadır .
+SFX N1 0 lardadır .
+SFX N1 0 larda .
+SFX N1 0 lardadır .
+SFX N1 0 lardan .
+SFX N1 0 lardandır .
+SFX N1 0 lardır .
+SFX N1 0 da .
+SFX N1 0 dan .
+SFX N1 0 dır .
+SFX N1 0 a [^aıq]  # baş-a
+SFX N1 q ğa q
+SFX N1 0 adır [^aı]
+SFX N1 0 ya [aı] # halqa-ya
+SFX N1 0 yadır [aı]
+SFX N1 0 ın [^aı]
+SFX N1 0 nın [aı]
+SFX N1 0 ındır [^aı]
+SFX N1 0 nındır [aı]
+SFX N1 0 dadır .
+SFX N1 0 ı [^aıq]
+SFX N1 q ğı q
+SFX N1 0 nı [aı]
+SFX N1 0 sı [aı]
+SFX N1 0 ını [^aıq]
+SFX N1 q ğını q
+SFX N1 0 ına [^aıq]
+SFX N1 q ğına q
+SFX N1 0 ıdır [^aı]
+SFX N1 q ğıdır q
+SFX N1 0 ında [^aı]
+SFX N1 q ğında q
+SFX N1 0 ındadır [^aı]
+SFX N1 q ğındadır q
+SFX N1 0 ım [^aı]
+SFX N1 q ğım q
+
+# SFX N1 0 lı/A1 .
+
+# incə isim, samitlə başlayan şəkilçilər
+SFX O2 Y 49
+SFX O2 0 lər .
+SFX O2 0 lərə .
+SFX O2 0 lərədir .
+SFX O2 0 ləri .
+SFX O2 0 lərin .
+SFX O2 0 lərini .
+SFX O2 0 lərinin .
+SFX O2 0 lərində .
+SFX O2 0 lərindədir .
+SFX O2 0 lərinə .
+SFX O2 0 lərinədir .
+SFX O2 0 lərdədir .
+SFX O2 0 lərdə .
+SFX O2 0 lərdədir .
+SFX O2 0 lərdən .
+SFX O2 0 lərdəndir .
+SFX O2 0 lərdir .
+SFX O2 0 də .
+SFX O2 0 dən .
+SFX O2 0 dir .
+SFX O2 0 i [^eəik]
+SFX O2 k yi k
+SFX O2 0 ni [eəi]
+SFX O2 0 si [eəi]
+SFX O2 0 sini
+SFX O2 0 sinə
+SFX O2 0 sində
+SFX O2 0 sindədir
+SFX O2 0 sindən
+SFX O2 0 sindəndir
+SFX O2 0 sidir
+SFX O2 0 ə [^eəi]  # şəhər-ə
+SFX O2 0 ədir .
+SFX O2 0 yə . # hamiləyə
+SFX O2 0 yədir .
+SFX O2 0 ini .
+SFX O2 0 inə .
+SFX O2 0 inədir .
+SFX O2 0 in [^eəi]
+SFX O2 0 nin .
+SFX O2 0 indir .
+SFX O2 0 nindir [eəi]
+SFX O2 0 idir .
+SFX O2 0 nidir [eəi]
+SFX O2 0 ində .
+SFX O2 0 indədir .
+SFX O2 0 dədir .
+SFX O2 0 im [^k]
+SFX O2 k yim k
+
+# SFX N1 0 li/A1 .
+
+# feil
+SFX V1 Y 12
+SFX V1 0 dı .
+SFX V1 0 dır/V1 .
+SFX V1 0 ıb .
+SFX V1 0 ıl/V1 .
+SFX V1 0 ır/V1 .
+SFX V1 0 maq/N1 .
+SFX V1 0 ma .
+SFX V1 0 acaq .
+SFX V1 0 yacaq .
+SFX V1 0 mayacaq .
+SFX V1 0 a .
+SFX V1 0 ar . # bax-ar
+
+SFX E2 Y 16
+SFX E2 0 di .
+SFX E2 0 dir .
+SFX E2 0 dirmək .
+SFX E2 0 ib .
+SFX E2 0 ir .
+SFX E2 0 irəcək .
+SFX E2 0 irib .
+SFX E2 0 mək .
+SFX E2 0 mə/O2 .
+SFX E2 0 məyə .
+SFX E2 0 əcək .
+SFX E2 0 yəcək .
+SFX E2 0 məyəcək .
+SFX E2 0 ə .
+SFX E2 0 məyə .
+SFX E2 0 ər . # gəl-ər
+
+# Conjunction
+SFX F1 Y 4
+SFX F1 0 ı [^aıoueəiöüq]
+SFX F1 q ğı q  # ancağı
+SFX F1 nı .
+SFX F1 0 sı .
+
+SFX F3 Y 3
+SFX F3 0 u [^aıoueəiöü]
+SFX F3 0 nu .
+SFX F3 0 su.
+
+SFX G2 Y 3
+SFX G2 0 i [^aıoueəiöü]
+SFX G2 0 ni .
+SFX G2 0 si .
+
+SFX G4 Y 3
+SFX G4 0 ü [^aıoueəiöü]
+SFX G4 0 nü .
+SFX G4 0 sü .
