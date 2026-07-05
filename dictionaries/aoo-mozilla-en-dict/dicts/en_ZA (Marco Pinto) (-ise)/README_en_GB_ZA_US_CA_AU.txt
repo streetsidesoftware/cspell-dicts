@@ -19,7 +19,7 @@ Marco maintains six main English variants:
   • en_GB-oxendict (Oxford English Dictionary, “ize”), since 1.Mar.2025  
   • en_ZA (South African, “ise”), since 01.Jan.2025  
   • en_US (American, “ize”), since 01.Jan.2026 (alternative version)  
-  • en_CA (Canadian, “ise”), since 01.Jan.2026 (alternative version)  
+  • en_CA (Canadian, “mixed”), since 01.Jan.2026 (alternative version)  
   • en_AU (Australian, “ise”), since 01.Jan.2026 (alternative version)  
 
 Notes:  
@@ -40,7 +40,7 @@ dictionaries alongside existing upstream versions.
 The en_GB dictionary began as a subset of Kevin Atkinson's wordlist for  
 Pspell/Aspell (LGPL) and has been expanded by David Bartlett, Brian Kelk,  
 Andrew Brown, and Marco A.G.Pinto, including:  
-  • Removal of Americanisms in en_GB  
+  • Removal of Americanisms in en_GB/en_ZA  
   • Addition of missing words  
   • Correction of errors  
   • Addition of compound hyphenated forms  
@@ -129,10 +129,23 @@ Marco A.G.Pinto
   • FAQ: https://proofingtoolgui.org/faq.html  
   • Changelog: https://proofingtoolgui.org/en_GB_CHANGES.txt  
   • GitHub: https://github.com/marcoagpinto/aoo-mozilla-en-dict  
+  • Article: https://marcoagpinto.com  
 
 
 CHANGELOG (2025+)  
 =================  
+2026-07-01 (Marco A.G.Pinto)
+           - Major updates to the Canadian and US dictionaries.
+           - Removed Americanisms from the GB dictionary.
+           - Removed Britishisms from the US dictionary.
+           - Added MAXNGRAMSUGS 7 to keep spelling suggestions more focused and reduce noise.
+           - Switched to FLAG UTF-8 after running out of flags.
+           - Added flag “í” for American English -ist, -ist's and -ists forms (single-L words).
+           - Added ' to WORDCHARS to recognise words such as 'gainst.
+           - Added REP entry: "teh" → "the".
+           - Added possessive forms for most -ness nouns.
+           - Added numerous derived forms, including plurals and possessives.
+
 2026-05-01 (Marco A.G.Pinto)
            - Flag enhancements, mainly for U.S. words.
 
@@ -158,7 +171,7 @@ CHANGELOG (2025+)
            - The thesaurus now uses UTF-8-BOM Unix (LF).
            - Improved images for extensions.
 
-----------
+----------------
 
 2025-03-02 to 2025-12-31 (Marco A.G.Pinto)
            - Better -ise/-ize handling.
