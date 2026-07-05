@@ -7,14 +7,15 @@ The Raw data can be found at `./dict/en-freq.tsv`.
 This Library contains a few things:
 
 1.  The Raw TSV Data in the form `word freq`:
-    | Word | Freq |
+
+    | Word | Freq  |
     | ---- | ----- |
-    | the | 24190 |
-    | of | 13420 |
-    | and | 11110 |
-    | to | 9598 |
-    | in | 7920 |
-    | a | 7714 |
+    | the  | 24190 |
+    | of   | 13420 |
+    | and  | 11110 |
+    | to   | 9598  |
+    | in   | 7920  |
+    | a    | 7714  |
 
     Frequency is the probable occurrence per 1 million words. For example, for every 1,000,000 words, it is expected for the word `and` to occur around 11,110 times.
 
