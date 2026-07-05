@@ -228,6 +228,7 @@
 @idux/components
 @immobiliarelabs/backstage-plugin-gitlab-backend
 @inquirer/ansi
+@inquirer/checkbox
 @inquirer/confirm
 @inquirer/core
 @inquirer/editor
@@ -382,6 +383,7 @@
 @rollup/plugin-commonjs # count 51
 @rollup/plugin-node-resolve # count 69
 @sanity/tsdoc
+@sap-ux/fiori-docs-embeddings
 @scalar/api-reference
 @scalar/fastify-api-reference
 @scalar/nextjs-api-reference
@@ -416,9 +418,12 @@
 @tanstack/react-query
 @tanstack/react-store
 @tanstack/router-generator
+@tanstack/router-plugin
+@tanstack/router-utils
 @tanstack/svelte-query
 @tanstack/table-core
 @tanstack/virtual-core
+@tanstack/virtual-file-routes
 @teamhanko/hanko-frontend-sdk
 @teamteanpm2024/aperiam-fugit-error
 @teamteanpm2024/architecto-alias-quod
@@ -467,6 +472,7 @@
 @tsparticles/interaction-particles-links
 @tsparticles/move-base
 @tsparticles/move-parallax
+@tsparticles/particles
 @tsparticles/plugin-hex-color
 @tsparticles/plugin-hsl-color
 @tsparticles/plugin-rgb-color
@@ -588,6 +594,7 @@ apollo-client
 apollo-link
 apollo-link-http
 app-root-path
+appium
 appium-android-driver
 apple-transportation-web3-locate
 applicationinsights
@@ -1001,6 +1008,8 @@ documentation
 documentdb
 docusaurus
 docusaurus-lunr-search
+docusaurus-plugin-openapi-docs
+docusaurus-theme-openapi-docs
 dom-helpers
 dom-serializer
 dom-to-image-more
@@ -2081,6 +2090,7 @@ passport-strategy
 path
 path-browserify
 path-exists
+path-expression-matcher
 path-is-absolute
 path-to-regexp
 pathe
@@ -2291,6 +2301,7 @@ react-motion
 react-native
 react-native-aes-crypto
 react-native-animatable
+react-native-chart-kit
 react-native-collapsible
 react-native-file-viewer
 react-native-keychain
