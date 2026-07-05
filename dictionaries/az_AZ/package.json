@@ -15,7 +15,7 @@
   "scripts": {
     "build": "cspell-tools-cli build && pnpm run gz",
     "build:conditional": "cspell-tools-cli build --conditional && pnpm prepare:dictionary",
-    "test": "hunspell-reader words -n 1000 \"src/az.dic\" | cspell -c ./cspell-ext.json \"--locale=az,az-AZ\" \"--languageId=*\" stdin",
+    "test": "pipe-cmds \"hunspell-reader words -n 1000 \\\"src/az.dic\\\"\" \"cspell -c ./cspell-ext.json \\\"--locale=az,az-AZ\\\" \\\"--languageId=*\\\" stdin\"",
     "gz": "cspell-tools-cli gzip \"dict/az-az.trie\"",
     "prepublishOnly": "echo pre-publish",
     "prepare:dictionary": "pnpm run gz"
