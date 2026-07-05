@@ -39,6 +39,7 @@ ALIGN
 ALIGNMENT
 ALL
 ALLOC
+ALLOW
 ALLOWED
 ALM
 ALMOND
@@ -308,6 +309,7 @@ COMMAND
 COMMENT
 COMMIT
 COMP
+COMPACTION
 COMPARE
 COMPILATION
 COMPILATIONS
@@ -522,6 +524,7 @@ ELEMENT
 ELLIPSIS
 ELLIPSOID
 ELONGATION
+EM
 EMAIL
 EMBED
 EMBEDDED
@@ -543,6 +546,7 @@ ENDS
 ENERGY
 ENFORCE
 ENTER
+ENTERED
 ENTITY
 ENTRY
 ENUM
@@ -579,6 +583,7 @@ EXECUTE
 EXIST
 EXISTS
 EXIT
+EXITED
 EXITING
 EXP
 EXPAND
@@ -599,6 +604,7 @@ EYE
 EnvironmentSDFGIYScale
 FABRIK
 FACE
+FACING
 FACTOR
 FADE
 FAIL
@@ -630,6 +636,7 @@ FINGER
 FINISHED
 FIRE
 FIREBRICK
+FIRST
 FIT
 FITTING
 FIXED
@@ -717,6 +724,8 @@ GLOBE
 GLOW
 GLSL
 GLTF
+GLX_FBCONFIG
+GLX_VISUALID
 GLYPH
 GLYPHS
 GO
@@ -825,6 +834,7 @@ INCREMENTAL
 INCREMENTS
 INDENT
 INDEPENDENT
+INDETERMINATE
 INDEX
 INDEXED
 INDIAN_RED
@@ -904,6 +914,7 @@ KEEP
 KEY
 KEYBOARD
 KEYING
+KEYWORD
 KEY_ASCIICIRCUM
 KEY_ASCIITILDE
 KEY_BACKTAB
@@ -1139,6 +1150,7 @@ MULTISELECTABLE
 MULTITHREADED
 MUSIC
 MUST
+MUTABLE
 NAME
 NAMED
 NAN
@@ -1242,6 +1254,7 @@ OVERDRIVE
 OVERLAY
 OVERRIDE
 OVERRUN
+OVERSAMPLING
 OVERSIZE
 OVERWRITE
 OWNER
@@ -1337,6 +1350,7 @@ PING
 PINGPONG
 PINK
 PINKY
+PIP
 PIPE
 PIPELINE
 PITCH
@@ -1380,6 +1394,7 @@ PRESET
 PRESS
 PRESSED
 PRESSURE
+PREVIOUS
 PRIMARY
 PRIMITIVE
 PRIMITIVES
@@ -1393,6 +1408,7 @@ PROCESSING
 PROGRAM
 PROGRESS
 PROGRESSIVE
+PROGRESS_STATE_NOPROGRESS
 PROJECT
 PROJECTION
 PROJECTOR
@@ -1477,6 +1493,7 @@ RELAXATION
 RELEASE
 RELIABLE
 RELOADED
+REMAP
 REMOTE
 REMOVE
 REMOVED
@@ -1562,6 +1579,7 @@ ROYAL
 RPC
 RTC
 RTL
+RUN
 RUNNING
 RetargetModifier3D
 SAD
@@ -1749,6 +1767,7 @@ STACKED
 STAGE
 STAGED
 STAIRS
+STANDARD
 STANDBY
 START
 STARTED
@@ -2186,6 +2205,7 @@ alt
 alternative
 always
 ambient
+amends
 amount
 amplify
 amplitude
@@ -2291,6 +2311,7 @@ autosave
 autoscan
 autoscroll
 autoshrink
+autosmooth
 autostart
 autowrap
 available
@@ -2366,10 +2387,11 @@ bitmaps
 bitmask
 bits
 blank
-blas_create
+blas
 bleed
 blend
 blender
+blending
 blink
 blit
 block
@@ -2405,6 +2427,7 @@ box
 bpm
 brace
 braces
+braille
 brake
 branch
 breadcrumb
@@ -2653,6 +2676,7 @@ containsn
 content
 contents
 context
+contexts
 contextual
 continue
 continued
@@ -2697,6 +2721,7 @@ cpp
 cpu
 crash
 create
+create_sam_callback
 created
 creation
 credentials
@@ -2723,6 +2748,7 @@ customized
 cut
 cutoff
 cutouts
+cyclic
 cylinder
 d
 damp
@@ -2759,6 +2785,7 @@ decorations
 decrypt
 dedent
 dedicated
+deduplicate
 deep
 default
 defaults
@@ -2792,6 +2819,7 @@ descendant
 descent
 described
 description
+descriptions
 descriptors
 deselect
 deselected
@@ -2810,11 +2838,13 @@ deterministic
 device
 devices
 diacritics
+diagnostics
 diagonal
 dialog
 dialogs
 dict
 dictionary
+did
 diff
 difference
 diffs
@@ -3004,6 +3034,7 @@ exited
 exiting
 exp
 expand
+expand_revertable
 expanded
 expanding
 expansion
@@ -3134,7 +3165,9 @@ forwarding
 found
 fov
 foveation_dynamic
+foveation_eye_tracked
 foveation_level
+foveation_with_subsampled_images
 fposmod
 fps
 fract
@@ -3189,12 +3222,15 @@ get_bitv
 get_clampzone_ratio
 get_foveation_dynamic
 get_foveation_level
+get_foveation_with_subsampled_images
 get_fovy
 get_glb_data
+get_hit_sbt_range
 get_inheriters_from_class
 get_noise_2dv
 get_noise_3dv
 get_nonclient_area
+get_premult_alpha
 get_slicec
 get_tonemapper
 get_use_taa
@@ -3260,6 +3296,7 @@ hard
 hardware
 harmonics
 has
+has_tweeners
 hash
 hashing
 hbox
@@ -3293,6 +3330,12 @@ hints
 hipass
 history
 hit
+hit_sbt_create
+hit_sbt_range
+hit_sbt_range_alloc
+hit_sbt_range_free
+hit_sbt_range_update
+hit_sbt_set_pipeline
 hmac
 hmd
 holder
@@ -3348,6 +3391,7 @@ import_etc2_astc
 import_s3tc_bptc
 imported
 importer
+importing
 impulse
 in
 inactive
@@ -3571,6 +3615,7 @@ loader
 local
 locale
 locales
+localization
 localize
 localized
 localizing
@@ -3713,6 +3758,7 @@ monitorable
 monitoring
 mono
 monophonic
+monospace
 month
 motion
 motor
@@ -3721,6 +3767,7 @@ move
 moved
 movement
 movie
+moving
 ms
 msaa
 msdf
@@ -3787,6 +3834,7 @@ normal
 normalization
 normalize
 normalized
+normalizing
 normals
 notch
 nothing
@@ -3816,6 +3864,7 @@ occurrence
 occurrences
 octahedron
 octant
+octants
 octaves
 octree
 of
@@ -3868,6 +3917,7 @@ orm
 orphan
 ortho
 orthogonal
+orthonormal
 orthonormalize
 orthonormalized
 os
@@ -3991,6 +4041,7 @@ pin
 ping
 pingpong
 pinned
+pip
 pipe
 pipeline
 pitch
@@ -4075,6 +4126,7 @@ prepass
 preprocess
 presence
 present
+presentation
 preserialize
 preserve
 preset
@@ -4126,6 +4178,7 @@ projector
 projectors
 propagate
 propagated
+propagating
 propagation
 properties
 property
@@ -4141,6 +4194,7 @@ pseudolocalization
 pseudolocalize
 ptr
 public
+publish
 pull
 pullout
 pulse
@@ -4243,6 +4297,7 @@ reduce
 redundant
 ref
 reference
+references
 reflect
 reflected
 reflection
@@ -4289,6 +4344,7 @@ render
 renderable
 renderer
 rendering
+reorder
 reparent
 repeat
 replace
@@ -4479,10 +4535,13 @@ set_bitv
 set_clampzone_ratio
 set_foveation_dynamic
 set_foveation_level
+set_foveation_with_subsampled_images
 set_glb_data
+set_hit_sbt_range
 set_nonclient_area
 set_overtype_mode_enabled
 set_passby_press
+set_premult_alpha
 set_tonemapper
 set_use_taa
 set_ycbcr_image
@@ -4538,6 +4597,7 @@ sign
 signal
 signaling
 signals
+signature
 signed
 signf
 signi
@@ -4767,6 +4827,7 @@ swing
 switch
 swizzle
 symbol
+symbols
 symmetry
 sync
 synchronized
@@ -4793,6 +4854,7 @@ tap
 tapped
 target
 task
+taskbar
 tcp
 tdotx
 tdoty
@@ -4855,9 +4917,8 @@ tip
 title
 titlebar
 titles
+tlas_build
 tlas_create
-tlas_instances_buffer_create
-tlas_instances_buffer_fill
 tls
 to
 to_abgr32
@@ -4998,6 +5059,7 @@ unscaled
 unset
 unshare
 unstage
+until
 untyped
 unused
 unwrap
@@ -5013,6 +5075,7 @@ upscale
 uptime
 uri
 url
+urls
 us
 usable
 usage
@@ -5061,6 +5124,7 @@ vertical
 vertices
 vframes
 vibrate
+vibrating
 vibration
 video
 view
@@ -5117,6 +5181,7 @@ while
 white
 whitespace
 width
+will
 wind
 window
 windows
@@ -5129,6 +5194,7 @@ wm
 word
 words
 worker
+workspace
 world
 worst
 wrap
