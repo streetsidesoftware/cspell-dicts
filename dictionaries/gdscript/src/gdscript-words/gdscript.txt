@@ -14,8 +14,17 @@
 3d_render
 8_bit
 AABB
-ACCELERATION_STRUCTURE_GEOMETRY_NO_DUPLICATE_ANY_HIT_INVOCATION
-ACCELERATION_STRUCTURE_GEOMETRY_OPAQUE
+ACCELERATION_STRUCTURE_ALLOW_COMPACTION_BIT
+ACCELERATION_STRUCTURE_ALLOW_UPDATE_BIT
+ACCELERATION_STRUCTURE_GEOMETRY_NO_DUPLICATE_ANY_HIT_INVOCATION_BIT
+ACCELERATION_STRUCTURE_GEOMETRY_OPAQUE_BIT
+ACCELERATION_STRUCTURE_INSTANCE_FORCE_NO_OPAQUE_BIT
+ACCELERATION_STRUCTURE_INSTANCE_FORCE_OPAQUE_BIT
+ACCELERATION_STRUCTURE_INSTANCE_TRIANGLE_FACING_CULL_DISABLE_BIT
+ACCELERATION_STRUCTURE_INSTANCE_TRIANGLE_FLIP_FACING_BIT
+ACCELERATION_STRUCTURE_LOW_MEMORY_BIT
+ACCELERATION_STRUCTURE_PREFER_FAST_BUILD_BIT
+ACCELERATION_STRUCTURE_PREFER_FAST_TRACE_BIT
 ACCESS_FILESYSTEM
 ACCESS_RESOURCES
 ACCESS_USERDATA
@@ -249,7 +258,9 @@ AXIS_X
 AXIS_Y
 AXIS_Z
 AZURE
-AccelerationStructureGeometryBits
+AccelerationStructureFlagBits
+AccelerationStructureGeometryFlagBits
+AccelerationStructureInstanceFlagBits
 AcceptDialog
 Access
 AccessibilityAction
@@ -259,6 +270,7 @@ AccessibilityPopupType
 AccessibilityRole
 AccessibilityScrollHint
 AccessibilityScrollUnit
+AccessibilityServer
 ActionMode
 ActionType
 AdvanceMode
@@ -313,6 +325,7 @@ AprilTagDict
 Area2D
 Area3D
 AreaBodyStatus
+AreaLight3D
 AreaParameter
 AreaSpaceOverrideMode
 Array
@@ -387,6 +400,7 @@ AudioStreamWAV
 AutoAdvanceMode
 AutoTranslateMode
 AutowrapMode
+AwaitTweener
 Axis
 AxisFlag
 AxisStretchMode
@@ -703,6 +717,7 @@ CODE_COMPLETION_KIND_CONSTANT
 CODE_COMPLETION_KIND_ENUM
 CODE_COMPLETION_KIND_FILE_PATH
 CODE_COMPLETION_KIND_FUNCTION
+CODE_COMPLETION_KIND_KEYWORD
 CODE_COMPLETION_KIND_MAX
 CODE_COMPLETION_KIND_MEMBER
 CODE_COMPLETION_KIND_NODE_PATH
@@ -837,6 +852,7 @@ CONTENT_SCALE_STRETCH_INTEGER
 CONTEXT_SLOT_2D_EDITOR
 CONTEXT_SLOT_FILESYSTEM
 CONTEXT_SLOT_FILESYSTEM_CREATE
+CONTEXT_SLOT_INSPECTOR_PROPERTY
 CONTEXT_SLOT_SCENE_TABS
 CONTEXT_SLOT_SCENE_TREE
 CONTEXT_SLOT_SCRIPT_EDITOR
@@ -1323,6 +1339,8 @@ DATA_TYPE_FONT_SIZE
 DATA_TYPE_ICON
 DATA_TYPE_MAX
 DATA_TYPE_STYLEBOX
+DEBUG_DRAW_AREA_LIGHT_ATLAS
+DEBUG_DRAW_CLUSTER_AREA_LIGHTS
 DEBUG_DRAW_CLUSTER_DECALS
 DEBUG_DRAW_CLUSTER_OMNI_LIGHTS
 DEBUG_DRAW_CLUSTER_REFLECTION_PROBES
@@ -1380,10 +1398,12 @@ DEFAULT_CANVAS_ITEM_TEXTURE_FILTER_LINEAR_WITH_MIPMAPS
 DEFAULT_CANVAS_ITEM_TEXTURE_FILTER_MAX
 DEFAULT_CANVAS_ITEM_TEXTURE_FILTER_NEAREST
 DEFAULT_CANVAS_ITEM_TEXTURE_FILTER_NEAREST_WITH_MIPMAPS
+DEFAULT_CANVAS_ITEM_TEXTURE_FILTER_PARENT_NODE
 DEFAULT_CANVAS_ITEM_TEXTURE_REPEAT_DISABLED
 DEFAULT_CANVAS_ITEM_TEXTURE_REPEAT_ENABLED
 DEFAULT_CANVAS_ITEM_TEXTURE_REPEAT_MAX
 DEFAULT_CANVAS_ITEM_TEXTURE_REPEAT_MIRROR
+DEFAULT_CANVAS_ITEM_TEXTURE_REPEAT_PARENT_NODE
 DEPTH_DRAW_ALWAYS
 DEPTH_DRAW_DISABLED
 DEPTH_DRAW_OPAQUE_ONLY
@@ -1392,6 +1412,8 @@ DEPTH_TEST_INVERTED
 DETAIL_UV_1
 DETAIL_UV_2
 DEVICE_ID_EMULATION
+DEVICE_ID_KEYBOARD
+DEVICE_ID_MOUSE
 DEVICE_TYPE_CPU
 DEVICE_TYPE_DISCRETE_GPU
 DEVICE_TYPE_INTEGRATED_GPU
@@ -1435,6 +1457,8 @@ DOCK_LAYOUT_HORIZONTAL
 DOCK_LAYOUT_VERTICAL
 DOCK_MENU_ID
 DOCK_SLOT_BOTTOM
+DOCK_SLOT_BOTTOM_L
+DOCK_SLOT_BOTTOM_R
 DOCK_SLOT_LEFT_BL
 DOCK_SLOT_LEFT_BR
 DOCK_SLOT_LEFT_UL
@@ -1917,6 +1941,7 @@ FEATURE_FONT_VARIABLE
 FEATURE_GAME
 FEATURE_GLOBAL_MENU
 FEATURE_GROUPS_DOCK
+FEATURE_HDR_OUTPUT
 FEATURE_HEIGHT_MAPPING
 FEATURE_HIDPI
 FEATURE_HISTORY_DOCK
@@ -1942,6 +1967,7 @@ FEATURE_NODE_DOCK
 FEATURE_NORMAL_MAPPING
 FEATURE_OPEN_CLOSE_CALLBACK
 FEATURE_ORIENTATION
+FEATURE_PIP_MODE
 FEATURE_POPUP_MENU
 FEATURE_REFRACTION
 FEATURE_RIM
@@ -2004,6 +2030,7 @@ FILL_BILINEAR_TOP_AND_BOTTOM
 FILL_BOTTOM_TO_TOP
 FILL_CLOCKWISE
 FILL_CLOCKWISE_AND_COUNTER_CLOCKWISE
+FILL_CONIC
 FILL_COUNTER_CLOCKWISE
 FILL_END_TO_BEGIN
 FILL_LEFT_TO_RIGHT
@@ -2489,7 +2516,10 @@ GATHERING_STATE_NEW
 GDExtension
 GDExtensionManager
 GDScript
+GDScriptLanguageProtocol
 GDScriptSyntaxHighlighter
+GDScriptTextDocument
+GDScriptWorkspace
 GENERATE_PROBES_DISABLED
 GENERATE_PROBES_SUBDIV_16
 GENERATE_PROBES_SUBDIV_32
@@ -2573,6 +2603,8 @@ GLTF_OBJECT_MODEL_TYPE_FLOAT4X4
 GLTF_OBJECT_MODEL_TYPE_FLOAT_ARRAY
 GLTF_OBJECT_MODEL_TYPE_INT
 GLTF_OBJECT_MODEL_TYPE_UNKNOWN
+GLX_FBCONFIG
+GLX_VISUALID
 GOLD
 GOLDENROD
 GPUParticles2D
@@ -2816,9 +2848,16 @@ IGD_STATUS_OK
 IGD_STATUS_UNKNOWN_DEVICE
 IGD_STATUS_UNKNOWN_ERROR
 IKModifier3D
+IMAGE_UNIT_EM
+IMAGE_UNIT_PERCENT
+IMAGE_UNIT_PIXEL
 IMPORT_ANIMATION
 IMPORT_DISCARD_MESHES_AND_MATERIALS
 IMPORT_FAIL_ON_MISSING_DEPENDENCIES
+IMPORT_FLAG_DISCARD_MESHES_AND_MATERIALS
+IMPORT_FLAG_FORCE_DISABLE_MESH_COMPRESSION
+IMPORT_FLAG_GENERATE_TANGENT_ARRAYS
+IMPORT_FLAG_USE_NAMED_SKIN_BINDS
 IMPORT_FORCE_DISABLE_MESH_COMPRESSION
 IMPORT_GENERATE_TANGENT_ARRAYS
 IMPORT_ORDER_DEFAULT
@@ -2889,6 +2928,14 @@ INSTANCE_PARTICLES_COLLISION
 INSTANCE_REFLECTION_PROBE
 INSTANCE_VISIBLITY_NOTIFIER
 INSTANCE_VOXEL_GI
+INT16_MAX
+INT16_MIN
+INT32_MAX
+INT32_MIN
+INT64_MAX
+INT64_MIN
+INT8_MAX
+INT8_MIN
 INTERNAL_ERROR
 INTERNAL_IMPORT_CATEGORY_ANIMATION
 INTERNAL_IMPORT_CATEGORY_ANIMATION_NODE
@@ -2932,8 +2979,10 @@ ImageFormatLoaderExtension
 ImageTexture
 ImageTexture3D
 ImageTextureLayered
+ImageUnit
 ImageUpdateMask
 ImmediateMesh
+ImportFlags
 ImportOrder
 ImporterMesh
 ImporterMeshInstance3D
@@ -3105,6 +3154,11 @@ JOY_BUTTON_LEFT_SHOULDER
 JOY_BUTTON_LEFT_STICK
 JOY_BUTTON_MAX
 JOY_BUTTON_MISC1
+JOY_BUTTON_MISC2
+JOY_BUTTON_MISC3
+JOY_BUTTON_MISC4
+JOY_BUTTON_MISC5
+JOY_BUTTON_MISC6
 JOY_BUTTON_PADDLE1
 JOY_BUTTON_PADDLE2
 JOY_BUTTON_PADDLE3
@@ -3366,6 +3420,7 @@ KIND_CONSTANT
 KIND_ENUM
 KIND_FILE_PATH
 KIND_FUNCTION
+KIND_KEYWORD
 KIND_MEMBER
 KIND_NODE_PATH
 KIND_PLAIN_TEXT
@@ -3402,6 +3457,7 @@ LIGHTMAP_SCALE_2X
 LIGHTMAP_SCALE_4X
 LIGHTMAP_SCALE_8X
 LIGHTMAP_SCALE_MAX
+LIGHT_AREA
 LIGHT_BAKE_DISABLED
 LIGHT_BAKE_DYNAMIC
 LIGHT_BAKE_STATIC
@@ -3959,6 +4015,8 @@ NOTIFICATION_ACCESSIBILITY_UPDATE
 NOTIFICATION_APPLICATION_FOCUS_IN
 NOTIFICATION_APPLICATION_FOCUS_OUT
 NOTIFICATION_APPLICATION_PAUSED
+NOTIFICATION_APPLICATION_PIP_MODE_ENTERED
+NOTIFICATION_APPLICATION_PIP_MODE_EXITED
 NOTIFICATION_APPLICATION_RESUMED
 NOTIFICATION_CHILD_ORDER_CHANGED
 NOTIFICATION_CRASH
@@ -4022,6 +4080,7 @@ NOTIFICATION_WM_DPI_CHANGE
 NOTIFICATION_WM_GO_BACK_REQUEST
 NOTIFICATION_WM_MOUSE_ENTER
 NOTIFICATION_WM_MOUSE_EXIT
+NOTIFICATION_WM_OUTPUT_MAX_LINEAR_VALUE_CHANGED
 NOTIFICATION_WM_POSITION_CHANGED
 NOTIFICATION_WM_SIZE_CHANGED
 NOTIFICATION_WM_WINDOW_FOCUS_IN
@@ -4187,6 +4246,10 @@ OVERRUN_TRIM_WORD
 OVERRUN_TRIM_WORD_ELLIPSIS
 OVERRUN_TRIM_WORD_ELLIPSIS_FORCE
 OVERRUN_TRIM_WORD_ONLY
+OVERSAMPLING_WITH_SCALE_DISABLED
+OVERSAMPLING_WITH_SCALE_ENABLED
+OVERSAMPLING_WITH_SCALE_MAX
+OVERSAMPLING_WITH_SCALE_PARENT_NODE
 Object
 Occluder3D
 OccluderInstance3D
@@ -4268,6 +4331,7 @@ OptionButton
 Orientation
 OriginFrom
 OverrunBehavior
+OversamplingWithScale
 PACKET_LOSS_SCALE
 PACKET_THROTTLE_SCALE
 PALE_GOLDENROD
@@ -4375,6 +4439,13 @@ PARSED_GEOMETRY_MAX
 PARSED_GEOMETRY_MESH_INSTANCES
 PARSED_GEOMETRY_STATIC_COLLIDERS
 PARSE_ERROR
+PARTICLES_ALIGN_AXIS_X
+PARTICLES_ALIGN_AXIS_Y
+PARTICLES_ALIGN_CHANNEL_FILTER_DISABLED
+PARTICLES_ALIGN_CHANNEL_FILTER_W
+PARTICLES_ALIGN_CHANNEL_FILTER_X
+PARTICLES_ALIGN_CHANNEL_FILTER_Y
+PARTICLES_ALIGN_CHANNEL_FILTER_Z
 PARTICLES_COLLISION_HEIGHTFIELD_RESOLUTION_1024
 PARTICLES_COLLISION_HEIGHTFIELD_RESOLUTION_2048
 PARTICLES_COLLISION_HEIGHTFIELD_RESOLUTION_256
@@ -4401,12 +4472,14 @@ PARTICLES_EMIT_FLAG_VELOCITY
 PARTICLES_MODE_2D
 PARTICLES_MODE_3D
 PARTICLES_TRANSFORM_ALIGN_DISABLED
+PARTICLES_TRANSFORM_ALIGN_LOCAL_BILLBOARD
 PARTICLES_TRANSFORM_ALIGN_Y_TO_VELOCITY
 PARTICLES_TRANSFORM_ALIGN_Z_BILLBOARD
 PARTICLES_TRANSFORM_ALIGN_Z_BILLBOARD_Y_TO_VELOCITY
 PARTICLE_FLAG_ALIGN_Y_TO_VELOCITY
 PARTICLE_FLAG_DAMPING_AS_FRICTION
 PARTICLE_FLAG_DISABLE_Z
+PARTICLE_FLAG_INHERIT_EMITTER_SCALE
 PARTICLE_FLAG_MAX
 PARTICLE_FLAG_ROTATE_Y
 PATHFINDING_ALGORITHM_ASTAR
@@ -4588,6 +4661,11 @@ PROCESS_MODE_WHEN_PAUSED
 PROCESS_THREAD_GROUP_INHERIT
 PROCESS_THREAD_GROUP_MAIN_THREAD
 PROCESS_THREAD_GROUP_SUB_THREAD
+PROGRESS_STATE_ERROR
+PROGRESS_STATE_INDETERMINATE
+PROGRESS_STATE_NOPROGRESS
+PROGRESS_STATE_NORMAL
+PROGRESS_STATE_PAUSED
 PROJECTION_FRUSTUM
 PROJECTION_ORTHOGONAL
 PROJECTION_PERSPECTIVE
@@ -4704,6 +4782,8 @@ ParticlesCollisionType
 ParticlesDrawOrder
 ParticlesMode
 ParticlesTransformAlign
+ParticlesTransformAlignAxis
+ParticlesTransformAlignCustomSrc
 Path2D
 Path3D
 PathFollow2D
@@ -4808,6 +4888,7 @@ ProcessMode
 ProcessThreadGroup
 ProcessThreadMessages
 ProgressBar
+ProgressState
 ProjectSettings
 Projection
 ProjectionType
@@ -4831,13 +4912,17 @@ RADIANCE_SIZE_32
 RADIANCE_SIZE_512
 RADIANCE_SIZE_64
 RADIANCE_SIZE_MAX
+RDAccelerationStructureGeometry
+RDAccelerationStructureInstance
 RDAttachmentFormat
 RDFramebufferPass
+RDHitGroup
 RDPipelineColorBlendState
 RDPipelineColorBlendStateAttachment
 RDPipelineDepthStencilState
 RDPipelineMultisampleState
 RDPipelineRasterizationState
+RDPipelineShader
 RDPipelineSpecializationConstant
 RDSamplerState
 RDShaderFile
@@ -5066,6 +5151,7 @@ ROLE_TABLE
 ROLE_TAB_BAR
 ROLE_TAB_PANEL
 ROLE_TEXT_FIELD
+ROLE_TEXT_RUN
 ROLE_TITLE_BAR
 ROLE_TOOLTIP
 ROLE_TREE
@@ -5204,6 +5290,7 @@ SCALING_3D_MODE_FSR2
 SCALING_3D_MODE_MAX
 SCALING_3D_MODE_METALFX_SPATIAL
 SCALING_3D_MODE_METALFX_TEMPORAL
+SCALING_3D_MODE_NEAREST
 SCREEN_LANDSCAPE
 SCREEN_OF_MAIN_WINDOW
 SCREEN_PORTRAIT
@@ -5239,6 +5326,7 @@ SCROLL_HINT_TOP_EDGE
 SCROLL_HINT_TOP_LEFT
 SCROLL_MODE_AUTO
 SCROLL_MODE_DISABLED
+SCROLL_MODE_MAXIMIZE_FIRST
 SCROLL_MODE_RESERVE
 SCROLL_MODE_SHOW_ALWAYS
 SCROLL_MODE_SHOW_NEVER
@@ -5592,6 +5680,7 @@ SUB_SURFACE_SCATTERING_QUALITY_HIGH
 SUB_SURFACE_SCATTERING_QUALITY_LOW
 SUB_SURFACE_SCATTERING_QUALITY_MEDIUM
 SUPPORTS_BUFFER_DEVICE_ADDRESS
+SUPPORTS_HDR_OUTPUT
 SUPPORTS_IMAGE_ATOMIC_32_BIT
 SUPPORTS_METALFX_SPATIAL
 SUPPORTS_METALFX_TEMPORAL
@@ -5606,6 +5695,10 @@ SWIZZLE_GREEN
 SWIZZLE_ONE
 SWIZZLE_RED
 SWIZZLE_ZERO
+SYNC_MODE_CYCLIC_CONSTANT
+SYNC_MODE_CYCLIC_MUTABLE
+SYNC_MODE_INDEPENDENT
+SYNC_MODE_NONE
 SYSTEM_DIR_DCIM
 SYSTEM_DIR_DESKTOP
 SYSTEM_DIR_DOCUMENTS
@@ -5769,6 +5862,7 @@ SubtweenTweener
 SurfaceTool
 SwitchMode
 Swizzle
+SyncMode
 SyntaxHighlighter
 SystemDir
 SystemFont
@@ -5823,6 +5917,8 @@ TEXTURE_HEIGHTMAP
 TEXTURE_LAYERED_2D_ARRAY
 TEXTURE_LAYERED_CUBEMAP
 TEXTURE_LAYERED_CUBEMAP_ARRAY
+TEXTURE_MAP_MODE_DO_NOT_REMAP
+TEXTURE_MAP_MODE_REMAP_TO_STANDARD_MATERIAL
 TEXTURE_MAX
 TEXTURE_METALLIC
 TEXTURE_MODE_RED
@@ -5943,6 +6039,7 @@ TRANSFER_MODE_UNRELIABLE_ORDERED
 TRANSFORM_2D
 TRANSFORM_3D
 TRANSFORM_ALIGN_DISABLED
+TRANSFORM_ALIGN_LOCAL_BILLBOARD
 TRANSFORM_ALIGN_Y_TO_VELOCITY
 TRANSFORM_ALIGN_Z_BILLBOARD
 TRANSFORM_ALIGN_Z_BILLBOARD_Y_TO_VELOCITY
@@ -5960,6 +6057,7 @@ TRANSITION_FROM_TIME_END
 TRANSITION_FROM_TIME_IMMEDIATE
 TRANSITION_FROM_TIME_NEXT_BAR
 TRANSITION_FROM_TIME_NEXT_BEAT
+TRANSITION_TO_TIME_PREVIOUS_POSITION
 TRANSITION_TO_TIME_SAME_POSITION
 TRANSITION_TO_TIME_START
 TRANSPARENCY_ALPHA
@@ -6110,6 +6208,7 @@ TextureFilter
 TextureLayered
 TextureLayeredRD
 TextureLayeredType
+TextureMapMode
 TextureMode
 TextureParam
 TextureProgressBar
@@ -6179,6 +6278,9 @@ TwoBoneIK3D
 Type
 UDPServer
 UDSServer
+UINT16_MAX
+UINT32_MAX
+UINT8_MAX
 UI_PASS
 UNDERLINE_MODE_ALWAYS
 UNDERLINE_MODE_NEVER
@@ -6227,7 +6329,7 @@ UPDATE_TEXTURE
 UPDATE_TOOLTIP
 UPDATE_WHEN_PARENT_VISIBLE
 UPDATE_WHEN_VISIBLE
-UPDATE_WIDTH_IN_PERCENT
+UPDATE_WIDTH_UNIT
 UPNP
 UPNPDevice
 UPNPResult
@@ -6361,6 +6463,7 @@ VIEWPORT_SCALING_3D_MODE_FSR2
 VIEWPORT_SCALING_3D_MODE_MAX
 VIEWPORT_SCALING_3D_MODE_METALFX_SPATIAL
 VIEWPORT_SCALING_3D_MODE_METALFX_TEMPORAL
+VIEWPORT_SCALING_3D_MODE_NEAREST
 VIEWPORT_SCREEN_SPACE_AA_DISABLED
 VIEWPORT_SCREEN_SPACE_AA_FXAA
 VIEWPORT_SCREEN_SPACE_AA_MAX
@@ -6616,6 +6719,7 @@ WINDOW_EVENT_FORCE_CLOSE
 WINDOW_EVENT_GO_BACK_REQUEST
 WINDOW_EVENT_MOUSE_ENTER
 WINDOW_EVENT_MOUSE_EXIT
+WINDOW_EVENT_OUTPUT_MAX_LINEAR_VALUE_CHANGED
 WINDOW_EVENT_TITLEBAR_CHANGE
 WINDOW_FLAG_ALWAYS_ON_TOP
 WINDOW_FLAG_BORDERLESS
@@ -6756,7 +6860,6 @@ absf
 absi
 absorbent
 abstract
-acceleration_structure_build
 accent_color
 accept_dialog_cancel_ok_buttons
 accept_event
@@ -6773,6 +6876,7 @@ accessibility_create_sub_text_edit_elements
 accessibility_described_by_nodes
 accessibility_description
 accessibility_drag
+accessibility_driver
 accessibility_drop
 accessibility_element_get_meta
 accessibility_element_set_meta
@@ -6885,6 +6989,9 @@ activate_feed
 activate_item_by_event
 active
 active_edge_threshold
+active_max_db_color
+active_min_db_color
+active_normalized_db_color
 active_selection_box_color
 active_tab_rearranged
 adaptive_target
@@ -6941,6 +7048,7 @@ add_custom_type
 add_debugger_plugin
 add_device
 add_diff_hunks_into_diff_file
+add_directory
 add_do_method
 add_do_property
 add_do_reference
@@ -7011,6 +7119,7 @@ add_multistate_item
 add_named_bind
 add_named_global_constant
 add_navigation_layer
+add_next
 add_node
 add_node_3d_gizmo_plugin
 add_node_path_literals
@@ -7191,6 +7300,7 @@ alignment_vertical
 all
 all_tabs_in_front
 allocate
+allow_amends
 allow_folding_all
 allow_geometry_helper_nodes
 allow_greater
@@ -7310,6 +7420,7 @@ anti_aliasing_size
 antialiased
 antialiasing
 any
+any_hit_shader
 ao_enabled
 ao_light_affect
 ao_on_uv2
@@ -7341,6 +7452,7 @@ apply_floor_snap
 apply_force
 apply_ime
 apply_impulse
+apply_new_signal
 apply_rest
 apply_root_scale
 apply_scale
@@ -7364,6 +7476,7 @@ are_tabs_visible
 area_add_shape
 area_attach_canvas_instance_id
 area_attach_object_instance_id
+area_attenuation
 area_clear_shapes
 area_create
 area_entered
@@ -7378,7 +7491,10 @@ area_get_shape_count
 area_get_shape_transform
 area_get_space
 area_get_transform
+area_light_create
 area_mask
+area_normalize_energy
+area_range
 area_remove_shape
 area_set_area_monitor_callback
 area_set_collision_layer
@@ -7395,9 +7511,12 @@ area_set_space
 area_set_transform
 area_shape_entered
 area_shape_exited
+area_size
+area_texture
 arrange_nodes
 arrangement
 array_layers
+array_mesh
 aruco_dict
 as
 as_normal_map
@@ -7411,6 +7530,7 @@ ascent
 asin
 asinh
 ask_before_deleting_related_animation_tracks
+ask_before_moving_files
 ask_before_revoking_unique_name
 aspect
 aspect_ratio
@@ -7419,7 +7539,7 @@ assembly_reload_attempts
 assert
 assert_always_false
 assert_always_true
-asset_library
+asset_store
 assign
 assigned_animation
 atan
@@ -7452,6 +7572,7 @@ audio
 audio_bit_depth
 audio_bus_name
 audio_bus_override
+audio_buses
 audio_editor
 audio_listener_enable_2d
 audio_listener_enable_3d
@@ -7502,6 +7623,7 @@ auto_triangles
 auto_unfold_foreign_scenes
 auto_width
 autoload_on_startup
+automatically_open_created_scripts
 automatically_open_screenshots
 autoplay
 autorename_animation_tracks
@@ -7515,10 +7637,12 @@ autoshrink
 autoshrink_changed
 autoshrink_enabled
 autoshrink_margin
+autosmooth
 autostart
 autowrap_mode
 autowrap_trim_flags
 available_layouts
+available_urls
 avoidance
 avoidance_debug_changed
 avoidance_enabled
@@ -7651,6 +7775,8 @@ binding_path
 bindings
 bindv
 bitmask
+blas
+blas_build
 blas_create
 blend
 blend_animation
@@ -7918,6 +8044,7 @@ can_add_swatches
 can_auto_translate
 can_be_hidden
 can_be_sampled
+can_commit_handle_on_click
 can_connect_nodes
 can_do_next_pass
 can_draw
@@ -8130,6 +8257,7 @@ check_angle_interpolation_type_conflicting
 check_changed_settings_in_group
 check_for_invalidation
 check_for_updates
+check_invalid_skeleton_modifier_node_paths
 check_invalid_track_paths
 check_propagated_to_item
 checkable
@@ -8249,6 +8377,7 @@ clear_stylebox
 clear_subgizmo_selection
 clear_surfaces
 clear_tabs
+clear_terrains
 clear_textures
 clear_theme_item
 clear_tile_proxies
@@ -8285,8 +8414,10 @@ close_requested
 close_scene
 close_with_middle_mouse
 closed
+closest_hit_shader
 cluster_builder
 code
+codeLens
 code_complete_delay
 code_complete_enabled
 code_completion_enabled
@@ -8300,6 +8431,7 @@ code_font_custom_opentype_features
 code_font_custom_variations
 code_font_size
 collada
+collapse_all_folding
 collapse_carets
 collapse_main_menu
 collapsed
@@ -8327,6 +8459,7 @@ collision_use_scale
 collision_visibility_mode
 collisions
 color
+colorPresentation
 color_array
 color_attachments
 color_blend_op
@@ -8428,6 +8561,7 @@ confusable_capture_reassignment
 confusable_identifier
 confusable_local_declaration
 confusable_local_usage
+confusable_temporary_modification
 connect
 connect_node
 connect_nodes
@@ -8502,6 +8636,7 @@ convex_polygon_shape_create
 copy
 copy_absolute
 copy_from
+copy_from_resource
 copy_mode
 copy_nodes_request
 copy_track
@@ -8535,11 +8670,14 @@ create_convex_shape
 create_data_channel
 create_debug_tangents
 create_default_action_sets
+create_default_inspector
 create_default_interface
+create_default_persistence_context
 create_depth_correction
 create_diff_file
 create_diff_hunk
 create_diff_line
+create_element
 create_empty
 create_fit_aabb
 create_font
@@ -8588,7 +8726,9 @@ create_perspective_hmd
 create_placeholder
 create_preset
 create_process
+create_proxy
 create_remote
+create_sam_callback
 create_scene_tile
 create_script
 create_server
@@ -8599,6 +8739,8 @@ create_skin_from_rest_transforms
 create_spatial_context
 create_status_file
 create_status_indicator
+create_sub_element
+create_sub_text_edit_elements
 create_temp
 create_texture
 create_texture_from_format
@@ -8659,6 +8801,7 @@ custom_image
 custom_image_hotspot
 custom_integrator
 custom_item_clicked
+custom_maximum_size
 custom_minimum_height
 custom_minimum_size
 custom_popup_edited
@@ -8672,9 +8815,11 @@ custom_viewport
 custom_word_separators
 customize_resource
 customize_scene
+customize_strings
 cut
 cut_nodes_request
 cutoff_hz
+cyclic_length
 cylinder_shape_create
 d3d12
 damped_spring_joint_get_param
@@ -8740,6 +8885,7 @@ decal_set_size
 decal_set_texture
 decals
 decals_set_filter
+declaration
 decode_double
 decode_float
 decode_half
@@ -8758,6 +8904,8 @@ decompress
 decompress_dynamic
 decrypt
 dedent
+deduplicate_surfaces
+default
 default_action_map
 default_angular_damp
 default_animation_step
@@ -8813,7 +8961,9 @@ default_value_enabled
 default_z_far
 default_z_near
 defaults
+deferred_drag_mode
 deferred_mode
+definition
 deg_to_rad
 degrees_mode
 deindex
@@ -8900,6 +9050,11 @@ dialog_input_text
 dialog_show
 dialog_text
 dict_to_inst
+didChange
+didClose
+didDeleteFiles
+didOpen
+didSave
 diffuse_factor
 diffuse_img
 diffuse_mode
@@ -8964,6 +9119,7 @@ discover_ipv6
 discover_local_port
 discover_multicast_if
 discover_spatial_entities
+discover_spatial_entities_with_component_data
 display
 display_close_button
 display_grid
@@ -8987,12 +9143,15 @@ distance_squared_to
 distance_to
 distance_to_target
 distraction_free_mode
+do_entity_update
 do_indent
 doc_comment_color
 dock_icon
 dock_shortcut
 dock_tab_style
 docks
+documentLink
+documentSymbol
 documentation
 dof_blur_amount
 dof_blur_far_distance
@@ -9023,6 +9182,7 @@ download_file
 dpad_binding
 dpi
 dpi_changed
+drag_and_drop_info
 drag_and_drop_selection
 drag_and_drop_selection_enabled
 drag_area_highlight_in_editor
@@ -9036,6 +9196,7 @@ drag_horizontal_enabled
 drag_horizontal_offset
 drag_left_margin
 drag_margin
+drag_nested_intersections
 drag_right_margin
 drag_started
 drag_threshold
@@ -9191,6 +9352,8 @@ editor_tls_certificates
 editors
 effect_callback_type
 elapsed_time
+element_get_meta
+element_set_meta
 elif
 ellipsis_char
 else
@@ -9293,6 +9456,7 @@ enable_ray_cast_face_index
 enable_recursive_folding
 enable_sample_shading
 enable_shadows
+enable_smart_resolve
 enable_spatial_anchors
 enable_stencil
 enable_tls_v1.3
@@ -9330,6 +9494,7 @@ end_customize_scenes
 end_debug_label_region
 end_force_keep_in_merge_ends
 end_frame
+end_generate_apple_embedded_project
 end_multicaret_edit
 end_node_move
 end_position
@@ -9433,12 +9598,14 @@ exit_tree
 exp
 exp_edit
 expand
+expand_all_folding
 expand_icon
 expand_margin_bottom
 expand_margin_left
 expand_margin_right
 expand_margin_top
 expand_mode
+expand_revertable
 expand_to_text_length
 expand_to_title
 expanded
@@ -9464,6 +9631,7 @@ export_flags_3d_navigation
 export_flags_3d_physics
 export_flags_3d_render
 export_flags_avoidance
+export_get_property_list
 export_global_dir
 export_global_file
 export_group
@@ -9601,6 +9769,7 @@ find_action
 find_action_set
 find_animation
 find_animation_library
+find_blend_point_by_name
 find_blend_shape_by_name
 find_bone
 find_child
@@ -9687,6 +9856,7 @@ focus_neighbor_top
 focus_next
 focus_out
 focus_previous
+fog
 fog_aerial_perspective
 fog_density
 fog_depth_begin
@@ -9715,6 +9885,7 @@ folder_color_changed
 folder_creation_enabled
 folder_moved
 folder_removed
+foldingRange
 folding_changed
 follow_bone_when_simulating
 follow_camera_enabled
@@ -9770,6 +9941,10 @@ font_get_name
 font_get_opentype_feature_overrides
 font_get_ot_name_strings
 font_get_oversampling
+font_get_palette_colors
+font_get_palette_count
+font_get_palette_custom_colors
+font_get_palette_name
 font_get_scale
 font_get_script_support_override
 font_get_script_support_overrides
@@ -9788,6 +9963,7 @@ font_get_texture_offsets
 font_get_transform
 font_get_underline_position
 font_get_underline_thickness
+font_get_used_palette
 font_get_variation_coordinates
 font_get_weight
 font_has_char
@@ -9840,6 +10016,7 @@ font_set_multichannel_signed_distance_field
 font_set_name
 font_set_opentype_feature_overrides
 font_set_oversampling
+font_set_palette_custom_colors
 font_set_scale
 font_set_script_support_override
 font_set_spacing
@@ -9852,6 +10029,7 @@ font_set_texture_offsets
 font_set_transform
 font_set_underline_position
 font_set_underline_thickness
+font_set_used_palette
 font_set_variation_coordinates
 font_set_weight
 font_size
@@ -9909,7 +10087,9 @@ forward_canvas_gui_input
 fov
 fov_override
 foveation_dynamic
+foveation_eye_tracked
 foveation_level
+foveation_with_subsampled_images
 fposmod
 fps
 fract_delta
@@ -9943,6 +10123,7 @@ frames
 frames_to_converge
 frames_to_update_lights
 free
+free_element
 free_menu
 free_persistence_context
 free_rid
@@ -9953,6 +10134,7 @@ freelook
 freelook_activation_modifier
 freelook_base_speed
 freelook_inertia
+freelook_invert_y_axis
 freelook_navigation_scheme
 freelook_sensitivity
 freelook_speed_zoom_link
@@ -10018,6 +10200,7 @@ generate_sample
 generate_scene
 generate_scene_node
 generate_scene_unique_id
+generate_script_api
 generate_self_signed_certificate
 generate_shadow_mesh
 generate_small_preview_automatically
@@ -10162,6 +10345,7 @@ get_animation_library_list
 get_animation_list
 get_animation_list_size
 get_animation_loop
+get_animation_loop_mode
 get_animation_names
 get_animation_path
 get_animation_player
@@ -10173,6 +10357,7 @@ get_anisotropy
 get_anisotropy_max
 get_antialiased
 get_antialiasing
+get_any_hit_shader
 get_ao_light_affect
 get_ao_texture_channel
 get_aperture
@@ -10186,6 +10371,8 @@ get_april_dict
 get_architecture_name
 get_area
 get_area_mask
+get_area_size
+get_area_texture
 get_argument_count
 get_array_layers
 get_aruco_dict
@@ -10329,10 +10516,12 @@ get_bindings
 get_bit
 get_bitmask
 get_bitv
+get_blas
 get_blend_constant
 get_blend_distance
 get_blend_mode
 get_blend_point_count
+get_blend_point_name
 get_blend_point_node
 get_blend_point_position
 get_blend_shape
@@ -10394,6 +10583,7 @@ get_bounce_indirect_energy
 get_bounces
 get_bound_arguments
 get_bound_arguments_count
+get_bound_minimum_size
 get_bounds
 get_bounds_size
 get_bpm
@@ -10579,6 +10769,7 @@ get_close_with_middle_mouse
 get_closest_collision_safe_fraction
 get_closest_collision_unsafe_fraction
 get_closest_connection_at_point
+get_closest_hit_shader
 get_closest_offset
 get_closest_point
 get_closest_point_to_object_volume
@@ -10649,6 +10840,7 @@ get_column_title_language
 get_column_title_tooltip_text
 get_column_width
 get_columns
+get_combined_maximum_size
 get_combined_minimum_size
 get_combined_pivot_offset
 get_command_palette
@@ -10808,10 +11000,12 @@ get_custom_data_layer_name
 get_custom_data_layer_type
 get_custom_data_layers_count
 get_custom_draw_callback
+get_custom_drawing_canvas_item
 get_custom_features
 get_custom_font
 get_custom_font_size
 get_custom_format
+get_custom_maximum_size
 get_custom_minimum_height
 get_custom_minimum_size
 get_custom_monitor
@@ -10828,6 +11022,7 @@ get_customization_configuration_hash
 get_customized_files
 get_customized_files_count
 get_cutoff
+get_cyclic_length
 get_damping
 get_damping_coefficient
 get_damping_compression
@@ -11007,6 +11202,7 @@ get_draw_passes
 get_draw_rect
 get_drive
 get_drive_count
+get_drive_label
 get_drive_name
 get_driver_allocation_count
 get_driver_allocs_by_object_type
@@ -11249,6 +11445,7 @@ get_file_script_class_extends
 get_file_script_class_name
 get_file_system_dock
 get_file_type
+get_file_uri
 get_filename
 get_filename_filter
 get_files
@@ -11275,6 +11472,7 @@ get_first_node_in_group
 get_first_non_whitespace_column
 get_first_visible_line
 get_fit_margin
+get_fix_alpha_border
 get_fixed_column_width
 get_fixed_fps
 get_fixed_icon_size
@@ -11350,6 +11548,7 @@ get_fov
 get_fov_override
 get_foveation_dynamic
 get_foveation_level
+get_foveation_with_subsampled_images
 get_fovy
 get_fractal_gain
 get_fractal_lacunarity
@@ -11530,6 +11729,7 @@ get_hinting
 get_history_count
 get_history_undo_redo
 get_hit_length
+get_hit_sbt_range
 get_hmd_transform
 get_horizontal_alignment
 get_horizontal_custom_step
@@ -11579,7 +11779,10 @@ get_incoming_connections
 get_indent_level
 get_indent_size
 get_index
+get_index_buffer
+get_index_count
 get_index_in_skeleton
+get_index_offset
 get_indexed
 get_indices
 get_inertia
@@ -11654,6 +11857,7 @@ get_interpolation
 get_interpolation_color_space
 get_interpolation_mode
 get_interpolation_remaining
+get_intersection_shader
 get_intersections
 get_inverse_binds
 get_inverse_inertia
@@ -11769,10 +11973,10 @@ get_joy_motion_sensors_calibration
 get_joy_motion_sensors_rate
 get_joy_name
 get_joy_vibration_duration
+get_joy_vibration_remaining_duration
 get_joy_vibration_strength
 get_joystick_mode
 get_joystick_size
-get_joystick_texture
 get_json
 get_json_pointers
 get_justification_flags
@@ -11949,6 +12153,7 @@ get_marker_id
 get_marker_names
 get_marker_time
 get_marker_type
+get_mask
 get_mass
 get_material
 get_material_overlay
@@ -11994,6 +12199,7 @@ get_max_tab_width
 get_max_text_lines
 get_max_texture_size
 get_max_value
+get_maximum_size
 get_md5
 get_member_keyword_color
 get_member_keyword_colors
@@ -12208,7 +12414,9 @@ get_occluder_polygons_count
 get_occlusion_layer_light_mask
 get_occlusion_layer_sdf_collision
 get_occlusion_layers_count
+get_octant_coords_from_cell_coords
 get_octant_size
+get_octants_in_bounds
 get_octree_cells
 get_octree_size
 get_off_haptic
@@ -12217,12 +12425,19 @@ get_offset
 get_offset_buttons_visible
 get_offset_rect
 get_offset_string_from_offset_minutes
+get_offset_transform_pivot
+get_offset_transform_pivot_ratio
+get_offset_transform_position
+get_offset_transform_position_ratio
+get_offset_transform_rotation
+get_offset_transform_scale
 get_offsets
 get_ok_button
 get_ok_button_text
 get_on_haptic
 get_on_threshold
 get_one_shot
+get_one_way_collision_direction
 get_one_way_collision_margin
 get_op_type
 get_open_error
@@ -12282,6 +12497,7 @@ get_output_buffer_max_size
 get_output_device
 get_output_device_list
 get_output_latency
+get_output_max_linear_value
 get_output_port_color
 get_output_port_count
 get_output_port_for_preview
@@ -12297,6 +12513,7 @@ get_override_pose
 get_oversample
 get_oversampling
 get_oversampling_override
+get_oversampling_with_scale
 get_own_certificate
 get_owner
 get_packet
@@ -12312,6 +12529,11 @@ get_packet_port
 get_packet_script
 get_packet_sequence
 get_page
+get_palette_colors
+get_palette_count
+get_palette_custom_colors
+get_palette_index
+get_palette_name
 get_pan
 get_pan_pullout
 get_panning_scheme
@@ -12394,6 +12616,7 @@ get_pen_inverted
 get_percent_sign
 get_perf_report
 get_persistence_context_handle
+get_persistence_contexts
 get_persistent_state
 get_persistent_uuid
 get_perspective
@@ -12511,6 +12734,7 @@ get_predelay_feedback
 get_predelay_msec
 get_predicted_display_time
 get_prefix
+get_premult_alpha
 get_preserve_attachments
 get_preserve_control
 get_preserve_invalid
@@ -12748,6 +12972,8 @@ get_root_path
 get_root_subfolder
 get_roots
 get_rotation
+get_rotation_3d_max
+get_rotation_3d_min
 get_rotation_axis
 get_rotation_axis_vector
 get_rotation_degrees
@@ -12757,6 +12983,9 @@ get_rotation_offset
 get_rotation_order
 get_rotation_quaternion
 get_rotation_smoothing_speed
+get_rotation_velocity_3d_curve
+get_rotation_velocity_3d_max
+get_rotation_velocity_3d_min
 get_roughness
 get_roughness_texture_channel
 get_round_precision
@@ -12778,6 +13007,8 @@ get_save_extension
 get_saveable_image_formats
 get_saved_version
 get_scale
+get_scale_3d_max
+get_scale_3d_min
 get_scale_base_bone
 get_scale_curve_x
 get_scale_curve_y
@@ -12847,6 +13078,8 @@ get_seamless
 get_seamless_blend_skirt
 get_seamless_image
 get_seamless_image_3d
+get_search_bar_fuzzy_search_max_misses
+get_search_bar_min_item_count
 get_secondary_damp_threshold
 get_secondary_limit_angle
 get_secondary_negative_damp_threshold
@@ -12925,6 +13158,7 @@ get_shadow_smooth
 get_shadowmask_mode
 get_shadowmask_textures
 get_shape
+get_shape_owner_one_way_collision_direction
 get_shape_owner_one_way_collision_margin
 get_shape_owners
 get_shape_rid
@@ -12999,6 +13233,7 @@ get_slot_type_left
 get_slot_type_right
 get_slots_focus_mode
 get_smooth_faces
+get_smoothing_angle
 get_snap
 get_snapping_distance
 get_soft_clip_db
@@ -13027,6 +13262,7 @@ get_sparse_indices_byte_offset
 get_sparse_indices_component_type
 get_sparse_values_buffer_view
 get_sparse_values_byte_offset
+get_spatial_context
 get_spatial_context_handle
 get_spatial_context_ready
 get_spatial_entity_context
@@ -13041,6 +13277,7 @@ get_spawnable_scene
 get_spawnable_scene_count
 get_speaker_mode
 get_spec_gloss_img
+get_specialization_constants
 get_specular
 get_specular_color
 get_specular_factor
@@ -13215,6 +13452,7 @@ get_swizzle_g
 get_swizzle_r
 get_symbol_color
 get_symmetry_planes_clipping_bias
+get_sync_mode
 get_sync_stream
 get_sync_stream_volume
 get_syntax_highlighter
@@ -13259,7 +13497,6 @@ get_tap1_pan
 get_tap2_delay_ms
 get_tap2_level_db
 get_tap2_pan
-get_tap_back_pos
 get_target
 get_target_desired_distance
 get_target_maximum_distance
@@ -13284,6 +13521,7 @@ get_texel_scale
 get_text
 get_text_alignment
 get_text_direction
+get_text_document
 get_text_edit
 get_text_for_code_completion
 get_text_for_symbol_lookup
@@ -13298,6 +13536,7 @@ get_texture_focused
 get_texture_format
 get_texture_hover
 get_texture_image
+get_texture_map_mode
 get_texture_margin
 get_texture_mipmap_bias
 get_texture_mode
@@ -13391,7 +13630,6 @@ get_tint_under
 get_tip_bone
 get_tip_node
 get_tip_size
-get_tip_texture
 get_title
 get_title_alignment
 get_title_color
@@ -13409,6 +13647,7 @@ get_tonemapper
 get_tool_locale
 get_tooltip
 get_tooltip_auto_translate_mode
+get_tooltip_auto_translate_mode_at
 get_tooltip_text
 get_top_level_path
 get_top_radius
@@ -13441,6 +13680,8 @@ get_transfer_channel
 get_transfer_mode
 get_transform
 get_transform_align
+get_transform_align_axis
+get_transform_align_channel_filter
 get_transform_for_view
 get_transform_format
 get_transformable_selected_nodes
@@ -13456,6 +13697,7 @@ get_transition_to
 get_transition_to_time
 get_transition_type
 get_translated_message_list
+get_translation_context
 get_translation_domain
 get_translation_object
 get_translations
@@ -13523,6 +13765,8 @@ get_unix_time_from_datetime_dict
 get_unix_time_from_datetime_string
 get_unix_time_from_system
 get_unnormalized_uvw
+get_unsaved_files
+get_unsaved_scenes
 get_unsaved_status
 get_up_direction
 get_update_mode
@@ -13547,6 +13791,7 @@ get_use_global_coordinates
 get_use_gravity
 get_use_hidden_tabs_for_min_size
 get_use_local_coordinates
+get_use_mipmaps
 get_use_named_skin_binds
 get_use_native_dialog
 get_use_parent_material
@@ -13555,6 +13800,11 @@ get_use_texture_padding
 get_used_cells
 get_used_cells_by_id
 get_used_cells_by_item
+get_used_cells_in_octant
+get_used_cells_in_octant_by_item
+get_used_octants
+get_used_octants_by_item
+get_used_octants_in_bounds
 get_used_rect
 get_user_count
 get_user_data_dir
@@ -13608,13 +13858,17 @@ get_version_list
 get_vertex
 get_vertex_attributes
 get_vertex_bones
+get_vertex_buffer
 get_vertex_color
 get_vertex_colors
 get_vertex_count
 get_vertex_edges
 get_vertex_faces
+get_vertex_format
 get_vertex_meta
 get_vertex_normal
+get_vertex_offset
+get_vertex_stride
 get_vertex_tangent
 get_vertex_uv
 get_vertex_uv2
@@ -13633,6 +13887,7 @@ get_video_adapter_name
 get_video_adapter_type
 get_video_adapter_vendor
 get_video_texture
+get_view_configuration
 get_view_count
 get_view_eye_offset
 get_view_projection
@@ -13716,9 +13971,11 @@ get_window_at_screen_position
 get_window_id
 get_window_layout
 get_window_list
+get_window_root
 get_wireframe
 get_word_at_pos
 get_word_under_caret
+get_workspace
 get_world_2d
 get_world_3d
 get_world_origin
@@ -13953,6 +14210,7 @@ handles_global_class_type
 handles_type
 handshake_headers
 handshake_timeout
+haptic_on_long_press
 has
 has_action
 has_additional_outputs
@@ -13994,6 +14252,7 @@ has_default_base_scale
 has_default_font
 has_default_font_size
 has_domain
+has_element
 has_encoded_var
 has_environment
 has_execute_failed
@@ -14015,6 +14274,7 @@ has_input_port
 has_java_method
 has_joy_light
 has_joy_motion_sensors
+has_joy_vibration
 has_json_pointers
 has_keyword_color
 has_loop
@@ -14047,6 +14307,7 @@ has_resource
 has_response
 has_room_for_tile
 has_scene_tile_id
+has_script_method
 has_script_signal
 has_section
 has_section_key
@@ -14087,6 +14348,7 @@ has_transition
 has_translation
 has_translation_for_locale
 has_transparent_background
+has_tweeners
 has_undo
 has_user_signal
 has_uuid
@@ -14098,10 +14360,12 @@ has_varying
 has_volume
 has_wraparound_items
 hash
+hdr
 hdr_2d
 hdr_as_srgb
 hdr_clamp_exposure
 hdr_compression
+hdr_output_requested
 heartbeat_interval
 height
 height_falloff
@@ -14161,6 +14425,12 @@ hipass
 history_changed
 hit_back_faces
 hit_from_inside
+hit_sbt_create
+hit_sbt_range
+hit_sbt_range_alloc
+hit_sbt_range_free
+hit_sbt_range_update
+hit_sbt_set_pipeline
 hit_test
 hmac_digest
 horizontal_alignment
@@ -14168,6 +14438,7 @@ horizontal_scroll_mode
 horizontal_vector2_editing
 horizontal_vector_types_editing
 host
+hover
 html
 html_is_valid
 http_proxy
@@ -14196,6 +14467,7 @@ igd_service_type
 igd_status
 ignore_camera_scroll
 ignore_invalid_connection_type
+ignore_joypad_on_unfocused_application
 ignore_occlusion_culling
 ignore_rotation
 ignore_texture_size
@@ -14226,6 +14498,9 @@ importer_mesh
 impulse_clamp
 in
 in_3d_space
+inactive_max_db_color
+inactive_min_db_color
+inactive_normalized_db_color
 inbound_buffer_size
 include_addons
 include_hidden
@@ -14244,7 +14519,10 @@ indent_wrapped_lines
 indeterminate
 index
 index_array_create
+index_buffer
 index_buffer_create
+index_count
+index_offset
 index_pressed
 indices
 inertia
@@ -14268,6 +14546,7 @@ initial_screen
 initial_velocity_max
 initial_velocity_min
 initialize
+initialized
 inner_cone_angle
 inner_radius
 input
@@ -14376,6 +14655,7 @@ intersect_ray
 intersect_segment
 intersect_shape
 intersection
+intersection_shader
 intersects
 intersects_plane
 intersects_ray
@@ -14404,6 +14684,7 @@ is_absolute
 is_absolute_path
 is_absorbent
 is_abstract
+is_accepting_children
 is_accepting_gzip
 is_accessibility_enabled
 is_accessibility_region
@@ -14436,6 +14717,7 @@ is_any_collapsed
 is_anything_pressed
 is_anything_selected
 is_april_tag_supported
+is_area_normalizing_energy
 is_aruco_supported
 is_attractor_interaction_enabled
 is_audio_listener_2d
@@ -14449,6 +14731,7 @@ is_auto_tooltip_enabled
 is_auto_translating
 is_autoplay_enabled
 is_autoshrink_enabled
+is_autosmooth
 is_available
 is_axis_x_enabled
 is_axis_x_inverted
@@ -14554,6 +14837,7 @@ is_debugging_paths_hint
 is_dedicated_server
 is_default_value_enabled
 is_default_word_separators_enabled
+is_deferred_drag_mode_enabled
 is_deferred_mode
 is_degrees_mode
 is_deletable
@@ -14582,6 +14866,7 @@ is_drag_vertical_enabled
 is_draggable
 is_dragging_cursor
 is_dragging_enabled
+is_dragging_nested_intersections
 is_draw_background
 is_draw_behind_parent_enabled
 is_draw_center_enabled
@@ -14676,6 +14961,7 @@ is_hand_interaction_supported
 is_hand_tracking_supported
 is_handle_highlighted
 is_handling_input_locally
+is_hdr_output_requested
 is_heightmap_deep_parallax_enabled
 is_hemisphere
 is_hex_visible
@@ -14693,10 +14979,12 @@ is_hit_from_inside_enabled
 is_hovered
 is_ignore_camera_scroll
 is_ignore_camera_zoom
+is_ignoring_joypad_on_unfocused_application
 is_ignoring_occlusion_culling
 is_ignoring_rotation
 is_ignoring_time_scale
 is_ignoring_valid_connection_type
+is_importing
 is_in_3d_space
 is_in_bounds
 is_in_boundsv
@@ -14708,6 +14996,7 @@ is_in_low_processor_usage_mode
 is_in_mulitcaret_edit
 is_in_output_hotzone
 is_in_physics_frame
+is_in_pip_mode
 is_in_string
 is_indent_using_spaces
 is_indent_wrapped_lines
@@ -14743,6 +15032,7 @@ is_joy_known
 is_joy_motion_sensors_calibrated
 is_joy_motion_sensors_calibrating
 is_joy_motion_sensors_enabled
+is_joy_vibrating
 is_js_buffer
 is_jumping_enabled
 is_keep_pressed_outside
@@ -14772,6 +15062,7 @@ is_line_executing
 is_line_folded
 is_line_folding_enabled
 is_line_gutter_clickable
+is_line_in_viewport
 is_line_numbers_zero_padded
 is_line_wrapped
 is_link
@@ -14836,6 +15127,8 @@ is_null
 is_object_decoding_allowed
 is_object_edited
 is_occlusion_enabled
+is_offset_transform_enabled
+is_offset_transform_visual_only
 is_on_ceiling
 is_on_ceiling_only
 is_on_floor
@@ -14850,6 +15143,7 @@ is_open
 is_opened
 is_ordered
 is_orthogonal
+is_orthonormal
 is_outline
 is_override_tip_basis
 is_overriding_audio_bus
@@ -14908,6 +15202,7 @@ is_processing_shortcut_input
 is_processing_unhandled_input
 is_processing_unhandled_key_input
 is_profiling
+is_propagating_maximum_size
 is_protected_content
 is_proximity_fade_enabled
 is_pseudolocalization_accents_enabled
@@ -14973,11 +15268,14 @@ is_scroll_active
 is_scroll_following
 is_scroll_following_visible_characters
 is_scroll_hint_tiled
+is_scroll_horizontal_by_default
 is_scroll_past_end_of_file_enabled
 is_scrollable
 is_sdfgi_enabled
 is_sdfgi_reading_sky_light
 is_sdfgi_using_occlusion
+is_search_bar_enabled
+is_search_bar_fuzzy_search_enabled
 is_secret
 is_select_all_on_focus
 is_selectable
@@ -15021,6 +15319,7 @@ is_slide_on_ceiling_enabled
 is_slot_draw_stylebox
 is_slot_enabled_left
 is_slot_enabled_right
+is_smart_resolve_enabled
 is_smooth_scroll_enabled
 is_snap_2d_transforms_to_pixel_enabled
 is_snap_2d_vertices_to_pixel_enabled
@@ -15115,7 +15414,10 @@ is_using_occlusion_culling
 is_using_oversampling
 is_using_own_world_3d
 is_using_reverb_bus
+is_using_rotation_3d
+is_using_rotation_velocity_3d
 is_using_rounded_values
+is_using_scale_3d
 is_using_secondary_rotation
 is_using_spherical_harmonics
 is_using_sync
@@ -15168,6 +15470,7 @@ item_icon_double_clicked
 item_mouse_selected
 item_rect_changed
 item_selected
+item_{index}
 iter_get
 iter_init
 iter_next
@@ -15176,6 +15479,7 @@ jiggle_data_chain_length
 jitter_offseted
 jitter_projection
 join
+join_lines
 join_multicast_group
 joint
 joint_body_a
@@ -15206,9 +15510,9 @@ joints
 joints_original
 jolt_physics_3d
 joy_connection_changed
+joypads
 joystick_mode
 joystick_size
-joystick_texture
 js_buffer_to_packed_byte_array
 json
 json_escape
@@ -15244,6 +15548,7 @@ kill
 label
 label_settings
 language
+language_server
 language_support
 last_wrap_alignment
 layer
@@ -15289,6 +15594,8 @@ layout_toggle_enabled
 lcd_subpixel_layout
 leave_multicast_group
 left
+left_mode
+left_tangent
 left_to_right
 legacy_just_pressed_behavior
 len
@@ -15302,6 +15609,8 @@ lifetime
 lifetime_randomness
 light
 light_angular_distance
+light_area_set_normalize_energy
+light_area_set_size
 light_bake_mode
 light_baking
 light_color
@@ -15476,6 +15785,7 @@ load_webp_from_buffer
 local_coords
 local_to_map
 locale
+localization
 localize_numeral_system
 localize_path
 localize_rests
@@ -15484,6 +15794,7 @@ localized_name
 location
 lock
 lock_rotation
+locked_selection_rectangle_color
 lod_bias
 lod_change
 log
@@ -15608,6 +15919,7 @@ mark_scene_as_unsaved
 mark_setting_changed
 marker_id
 marker_type
+mask
 mass
 match
 matches_event
@@ -15696,6 +16008,7 @@ maxf
 maxi
 maximize_disabled
 maximize_window
+maximum_size_changed
 maximum_width
 md5_buffer
 md5_text
@@ -15709,6 +16022,7 @@ menu_changed
 menu_option
 merge
 merge_gutters
+merge_importer_meshes
 merge_overlapping_carets
 merge_polygons
 merge_rasterizer_cell_scale
@@ -15938,6 +16252,7 @@ name_to_tag
 names
 naming
 narrowing_conversion
+nativeSymbol
 native_method_override
 naturalcasecmp_to
 naturalnocasecmp_to
@@ -15971,6 +16286,7 @@ network_mode
 new
 newline
 next
+next_changed
 next_pass
 night_sky
 nine_patch_stretch
@@ -15991,6 +16307,7 @@ node_reference_color
 node_removed
 node_renamed
 node_selected
+node_updated
 nodes
 noise
 noise_type
@@ -16013,6 +16330,7 @@ nothing_selected
 notice_color
 notice_list
 notification
+notify_client
 notify_deferred_thread_group
 notify_group
 notify_group_flags
@@ -16079,6 +16397,14 @@ offset_polyline
 offset_rect
 offset_right
 offset_top
+offset_transform_enabled
+offset_transform_pivot
+offset_transform_pivot_ratio
+offset_transform_position
+offset_transform_position_ratio
+offset_transform_rotation
+offset_transform_scale
+offset_transform_visual_only
 offsets
 ogv
 oidn
@@ -16092,6 +16418,8 @@ omni_light_create
 omni_range
 omni_shadow_mode
 on_before_instance_created
+on_client_connected
+on_client_disconnected
 on_event_polled
 on_haptic
 on_instance_created
@@ -16120,6 +16448,7 @@ on_threshold
 on_viewport_composition_layer_destroyed
 one_shot
 one_way_collision
+one_way_collision_direction
 one_way_collision_margin
 onion_layers_future_color
 onion_layers_past_color
@@ -16140,6 +16469,7 @@ open_scene_from_path
 open_script_create_dialog
 open_script_when_connecting_signal_to_existing_method
 open_with_program
+opened
 opengl
 opentype_feature_overrides
 opentype_features
@@ -16156,6 +16486,7 @@ operator
 optimize
 optimize_indices_for_cache
 option_count
+option_{index}
 optional_features
 orbit_inertia
 orbit_mouse_button
@@ -16181,6 +16512,7 @@ orthogonal
 orthonormalize
 orthonormalized
 other_file_extensions
+out
 outbound_buffer_size
 outer
 outer_cone_angle
@@ -16196,6 +16528,7 @@ output_color
 output_device
 output_latency
 output_latency.web
+output_max_linear_value_changed
 output_port_for_preview
 overlaps_area
 overlaps_body
@@ -16208,6 +16541,7 @@ overrides_external_editor
 oversample
 oversampling
 oversampling_override
+oversampling_with_scale
 oversize
 overwrite_warning_enabled
 own_world_3d
@@ -16219,6 +16553,8 @@ packet_sequence
 pad_decimals
 pad_zeros
 page
+palette_custom_colors
+palette_index
 pan
 pan_mouse_button
 pan_pullout
@@ -16244,9 +16580,11 @@ parse_file
 parse_group
 parse_image_data
 parse_input_event
+parse_local_script
 parse_node_extensions
 parse_number
 parse_property
+parse_script
 parse_source_geometry_data
 parse_string
 parse_structured_text
@@ -16259,6 +16597,7 @@ particle_color
 particle_flag_align_y
 particle_flag_damping_as_friction
 particle_flag_disable_z
+particle_flag_inherit_emitter_scale
 particle_flag_rotate_y
 particles
 particles_anim_h_frames
@@ -16311,6 +16650,8 @@ particles_set_subemitter
 particles_set_trail_bind_poses
 particles_set_trails
 particles_set_transform_align
+particles_set_transform_align_axis
+particles_set_transform_align_channel_filter
 particles_set_use_local_coordinates
 pass
 passby_press
@@ -16410,6 +16751,9 @@ pin_joint_set_param
 ping
 ping_interval
 pingpong
+pip_mode_enter
+pip_mode_set_aspect_ratio
+pip_mode_set_auto_enter_on_background
 pipeline_cache
 pitch
 pitch_scale
@@ -16455,10 +16799,12 @@ point_count
 point_grab_radius
 point_is_inside_triangle
 point_size
+point_{index}
 pointing
 points
 poll
 poll_export
+poll_limit_usec
 polygon
 polygon_editor
 polygons
@@ -16547,6 +16893,7 @@ prefix
 preload
 premult_alpha
 premultiply_alpha
+prepareRename
 prepare_view_configuration
 preprocess
 preserve_attachments
@@ -16639,11 +16986,13 @@ project_position
 project_ray_normal
 project_ray_origin
 project_settings_changed
+project_settings_loaded
 project_settings_override
 projection
 propagate_call
 propagate_check
 propagate_input_event
+propagate_maximum_size
 propagate_notification
 propagation
 property_can_revert
@@ -16651,6 +17000,7 @@ property_can_revert_changed
 property_changed
 property_checked
 property_deleted
+property_descriptions
 property_edited
 property_editor
 property_favorited
@@ -16686,6 +17036,7 @@ pseudolocalization_skip_placeholders_enabled
 pseudolocalization_suffix
 pseudolocalize
 public_visibility
+publish_diagnostics
 pull
 push
 push_back
@@ -16854,6 +17205,7 @@ reference_oversampling_level
 reference_space
 reference_space_reset
 reference_space_type
+references
 reflect
 reflected_light_source
 reflection_atlas
@@ -16939,6 +17291,7 @@ register_message_capture
 register_path_rename
 register_profile_rename
 register_profiler
+register_projection_layer_extension
 register_projection_views_extension
 register_script_language
 register_server
@@ -16964,6 +17317,7 @@ reload_all_scripts
 reload_current_scene
 reload_effects
 reload_extension
+reload_open_files
 reload_pseudolocalization
 reload_scene_from_path
 reload_scripts
@@ -17049,6 +17403,7 @@ remove_member_keyword_color
 remove_meta
 remove_named_global_constant
 remove_navigation_layer
+remove_next
 remove_node
 remove_node_3d_gizmo_plugin
 remove_occluder_polygon
@@ -17166,6 +17521,7 @@ rendering_method
 rendering_method.mobile
 rendering_method.web
 rendering_quadrant_size
+reorder_blend_point
 reparent
 repeat
 repeat_size
@@ -17190,6 +17546,7 @@ request_code_completion
 request_completed
 request_draw_and_wait
 request_frame_drawn_callback
+request_hdr_output
 request_help
 request_open_script_at_line
 request_particles_process
@@ -17224,6 +17581,7 @@ resize_request
 resize_to_po2
 resized
 resolution
+resolve
 resolve_attachments
 resolve_hostname
 resolve_hostname_addresses
@@ -17274,6 +17632,8 @@ right
 right_disconnects
 right_icon
 right_icon_scale
+right_mode
+right_tangent
 rim
 rim_enabled
 rim_texture
@@ -17311,6 +17671,8 @@ rotated
 rotated_local
 rotates
 rotation
+rotation_3d_max
+rotation_3d_min
 rotation_degrees
 rotation_edit_mode
 rotation_mode
@@ -17320,6 +17682,9 @@ rotation_smoothing_enabled
 rotation_smoothing_speed
 rotation_track_insert_key
 rotation_track_interpolate
+rotation_velocity_3d_curve
+rotation_velocity_3d_max
+rotation_velocity_3d_min
 rough
 roughness
 roughness_layers
@@ -17398,6 +17763,8 @@ save_zip
 save_zip_patch
 scalar_color
 scale
+scale_3d_max
+scale_3d_min
 scale_amount_curve
 scale_amount_max
 scale_amount_min
@@ -17493,6 +17860,7 @@ scroll_following
 scroll_following_visible_characters
 scroll_hint_mode
 scroll_horizontal
+scroll_horizontal_by_default
 scroll_horizontal_custom_step
 scroll_horizontal_enabled
 scroll_ignore_camera_zoom
@@ -17537,6 +17905,10 @@ seamless
 seamless_blend_skirt
 search
 search_all
+search_bar_enabled
+search_bar_fuzzy_search_enabled
+search_bar_fuzzy_search_max_misses
+search_bar_min_item_count
 search_in_file_extensions
 search_in_files_requested
 search_result_border_color
@@ -17583,6 +17955,7 @@ selection_box_color
 selection_changed
 selection_color
 selection_enabled
+selection_rectangle_color
 selectstart
 self
 self_modulate
@@ -17595,6 +17968,7 @@ sensors
 separate_distraction_mode
 separation
 separation_ray_shape_create
+separator
 serialize_image_to_bytes
 serialize_texture_json
 server
@@ -17623,6 +17997,7 @@ set_abort_on_missing_resources
 set_abort_on_reset
 set_absorbent
 set_accelerometer
+set_accept_children
 set_accept_gzip
 set_access
 set_access_resolved_color
@@ -17727,6 +18102,7 @@ set_angular_velocity
 set_animate_physical_bones
 set_animation
 set_animation_loop
+set_animation_loop_mode
 set_animation_path
 set_animation_player
 set_animation_speed
@@ -17737,6 +18113,7 @@ set_anisotropy_max
 set_anti_aliased
 set_antialiased
 set_antialiasing
+set_any_hit_shader
 set_ao_light_affect
 set_ao_texture_channel
 set_aperture
@@ -17749,6 +18126,9 @@ set_apply_range_min
 set_apply_transform_mode
 set_april_dict
 set_area_mask
+set_area_normalize_energy
+set_area_size
+set_area_texture
 set_array_layers
 set_arrays
 set_aruco_dict
@@ -17811,6 +18191,7 @@ set_autorestart_random_delay
 set_autoscroll
 set_autoshrink_enabled
 set_autoshrink_margin
+set_autosmooth
 set_autostart
 set_autowrap
 set_autowrap_mode
@@ -17893,9 +18274,11 @@ set_bit
 set_bit_rect
 set_bitmask
 set_bitv
+set_blas
 set_blend_constant
 set_blend_distance
 set_blend_mode
+set_blend_point_name
 set_blend_point_node
 set_blend_point_position
 set_blend_shape
@@ -18095,6 +18478,7 @@ set_closable
 set_close_on_escape
 set_close_with_middle_mouse
 set_closed
+set_closest_hit_shader
 set_code
 set_code_completion_enabled
 set_code_completion_prefixes
@@ -18242,6 +18626,7 @@ set_custom_font
 set_custom_font_size
 set_custom_format
 set_custom_interpolator
+set_custom_maximum_size
 set_custom_minimum_height
 set_custom_minimum_size
 set_custom_mouse_cursor
@@ -18254,6 +18639,7 @@ set_custom_viewport
 set_custom_word_separators
 set_customization_flag_enabled
 set_cutoff
+set_cyclic_length
 set_damping
 set_damping_coefficient
 set_damping_compression
@@ -18298,6 +18684,7 @@ set_default_texture_parameter
 set_default_value
 set_default_value_enabled
 set_deferred
+set_deferred_drag_mode_enabled
 set_deferred_mode
 set_deferred_thread_group
 set_degrees_mode
@@ -18408,6 +18795,7 @@ set_drag_forwarding
 set_drag_horizontal_enabled
 set_drag_horizontal_offset
 set_drag_margin
+set_drag_nested_intersections
 set_drag_preview
 set_drag_threshold
 set_drag_to_rearrange_enabled
@@ -18643,6 +19031,7 @@ set_fit_content_height_enabled
 set_fit_content_width_enabled
 set_fit_margin
 set_fit_to_longest_item
+set_fix_alpha_border
 set_fixed_column_width
 set_fixed_fps
 set_fixed_icon_size
@@ -18714,6 +19103,7 @@ set_fov
 set_fov_override
 set_foveation_dynamic
 set_foveation_level
+set_foveation_with_subsampled_images
 set_fractal_gain
 set_fractal_lacunarity
 set_fractal_octaves
@@ -18853,6 +19243,7 @@ set_handshake_headers
 set_handshake_timeout
 set_hardware_keyboard_connection_change_callback
 set_has_tracking_data
+set_hdr_output_requested
 set_heartbeat_interval
 set_height
 set_height_falloff
@@ -18884,6 +19275,7 @@ set_hint_underline
 set_hinting
 set_hit_back_faces
 set_hit_from_inside
+set_hit_sbt_range
 set_horizontal_alignment
 set_horizontal_custom_step
 set_horizontal_scroll_mode
@@ -18911,6 +19303,7 @@ set_igd_status
 set_ignore_camera_scroll
 set_ignore_camera_zoom
 set_ignore_invalid_connection_type
+set_ignore_joypad_on_unfocused_application
 set_ignore_occlusion_culling
 set_ignore_rotation
 set_ignore_texture_size
@@ -18934,6 +19327,9 @@ set_indent_using_spaces
 set_indent_wrapped_lines
 set_indeterminate
 set_index
+set_index_buffer
+set_index_count
+set_index_offset
 set_indexed
 set_indices
 set_individual_config
@@ -18990,6 +19386,7 @@ set_interpolate
 set_interpolation
 set_interpolation_color_space
 set_interpolation_mode
+set_intersection_shader
 set_inverse_binds
 set_invert
 set_invert_border
@@ -19094,7 +19491,6 @@ set_joy_motion_sensors_calibration
 set_joy_motion_sensors_enabled
 set_joystick_mode
 set_joystick_size
-set_joystick_texture
 set_json
 set_json_pointers
 set_jumping_enabled
@@ -19226,6 +19622,7 @@ set_marker_color
 set_marker_data
 set_marker_id
 set_marker_type
+set_mask
 set_mass
 set_material
 set_material_overlay
@@ -19426,6 +19823,14 @@ set_off_haptic
 set_off_threshold
 set_offset
 set_offset_rect
+set_offset_transform_enabled
+set_offset_transform_pivot
+set_offset_transform_pivot_ratio
+set_offset_transform_position
+set_offset_transform_position_ratio
+set_offset_transform_rotation
+set_offset_transform_scale
+set_offset_transform_visual_only
 set_offsets
 set_offsets_preset
 set_ok_button_text
@@ -19433,6 +19838,7 @@ set_on_haptic
 set_on_threshold
 set_one_shot
 set_one_way_collision
+set_one_way_collision_direction
 set_one_way_collision_margin
 set_op_type
 set_opentype_feature_overrides
@@ -19476,12 +19882,15 @@ set_override_tip_basis
 set_oversample
 set_oversampling
 set_oversampling_override
+set_oversampling_with_scale
 set_overtype_mode_enabled
 set_owner
 set_packet_data
 set_packet_granule_positions
 set_packet_sequence
 set_page
+set_palette_custom_colors
+set_palette_index
 set_pan
 set_pan_pullout
 set_panning_scheme
@@ -19642,6 +20051,7 @@ set_predelay_msec
 set_prefer_global_menu
 set_prefer_native_menu
 set_prefix
+set_premult_alpha
 set_preserve_attachments
 set_preserve_control
 set_preserve_invalid
@@ -19686,8 +20096,10 @@ set_project_hull_vertices
 set_project_metadata
 set_projected_obstructions
 set_projection
+set_projection_layer_and_get_next_pointer
 set_projection_views_and_get_next_pointer
 set_projector
+set_propagate_maximum_size
 set_propagation
 set_protected_content
 set_proximity_fade_distance
@@ -19824,6 +20236,8 @@ set_root_subfolder
 set_roots
 set_rotates
 set_rotation
+set_rotation_3d_max
+set_rotation_3d_min
 set_rotation_axis
 set_rotation_axis_vector
 set_rotation_degrees
@@ -19834,6 +20248,9 @@ set_rotation_offset
 set_rotation_order
 set_rotation_smoothing_enabled
 set_rotation_smoothing_speed
+set_rotation_velocity_3d_curve
+set_rotation_velocity_3d_max
+set_rotation_velocity_3d_min
 set_rough
 set_roughness
 set_roughness_texture_channel
@@ -19850,6 +20267,8 @@ set_samples
 set_sampling_rate
 set_saturation
 set_scale
+set_scale_3d_max
+set_scale_3d_min
 set_scale_base_bone
 set_scale_curve_x
 set_scale_curve_y
@@ -19879,6 +20298,7 @@ set_scroll_base_scale
 set_scroll_follow
 set_scroll_follow_visible_characters
 set_scroll_hint_mode
+set_scroll_horizontal_by_default
 set_scroll_offset
 set_scroll_past_end_of_file_enabled
 set_scroll_scale
@@ -19901,6 +20321,10 @@ set_sdfgi_use_occlusion
 set_sdfgi_y_scale
 set_seamless
 set_seamless_blend_skirt
+set_search_bar_enabled
+set_search_bar_fuzzy_search_enabled
+set_search_bar_fuzzy_search_max_misses
+set_search_bar_min_item_count
 set_search_flags
 set_search_text
 set_secondary_damp_threshold
@@ -20036,6 +20460,7 @@ set_slots_focus_mode
 set_smooth_faces
 set_smooth_group
 set_smooth_scroll_enabled
+set_smoothing_angle
 set_snap
 set_snap_2d_transforms_to_pixel
 set_snap_2d_vertices_to_pixel
@@ -20063,11 +20488,13 @@ set_sparse_indices_byte_offset
 set_sparse_indices_component_type
 set_sparse_values_buffer_view
 set_sparse_values_byte_offset
+set_spatial_context
 set_spatial_tracking_state
 set_spawn_function
 set_spawn_limit
 set_spawn_path
 set_spec_gloss_img
+set_specialization_constants
 set_specular
 set_specular_color
 set_specular_factor
@@ -20197,6 +20624,7 @@ set_symbol_lookup_word_as_valid
 set_symbol_tooltip_on_hover_enabled
 set_symmetry_limitation
 set_symmetry_planes_clipping_bias
+set_sync_mode
 set_sync_stream
 set_sync_stream_volume
 set_sync_to_physics
@@ -20238,7 +20666,6 @@ set_tap2_active
 set_tap2_delay_ms
 set_tap2_level_db
 set_tap2_pan
-set_tap_back_pos
 set_target
 set_target_desired_distance
 set_target_maximum_distance
@@ -20248,6 +20675,8 @@ set_target_peer
 set_target_position
 set_target_size
 set_target_transform
+set_taskbar_progress_state
+set_taskbar_progress_value
 set_temperature
 set_terrain
 set_terrain_color
@@ -20267,6 +20696,7 @@ set_texture_filter
 set_texture_focused
 set_texture_hover
 set_texture_image
+set_texture_map_mode
 set_texture_margin
 set_texture_margin_all
 set_texture_mipmap_bias
@@ -20334,7 +20764,6 @@ set_tint_under
 set_tip_bone
 set_tip_node
 set_tip_size
-set_tip_texture
 set_title
 set_title_alignment
 set_title_color
@@ -20374,10 +20803,13 @@ set_transfer_channel
 set_transfer_mode
 set_transform
 set_transform_align
+set_transform_align_axis
+set_transform_align_channel_filter
 set_transform_format
 set_transient
 set_transient_to_focused
 set_transition_type
+set_translation_context
 set_translation_domain
 set_translation_domain_inherited
 set_transmittance_boost
@@ -20471,7 +20903,9 @@ set_use_oversampling
 set_use_own_world_3d
 set_use_parent_material
 set_use_reverb_bus
+set_use_rotation_3d
 set_use_rounded_values
+set_use_scale_3d
 set_use_secondary_rotation
 set_use_sync
 set_use_taa
@@ -20483,6 +20917,7 @@ set_use_two_bounces
 set_use_virtual_end
 set_use_xr
 set_uses_spherical_harmonics
+set_using_rotation_velocity_3d
 set_uuid
 set_uv
 set_uv1_offset
@@ -20522,10 +20957,15 @@ set_velocity_texture
 set_vertex
 set_vertex_attributes
 set_vertex_bones
+set_vertex_buffer
 set_vertex_color
 set_vertex_colors
+set_vertex_count
+set_vertex_format
 set_vertex_meta
 set_vertex_normal
+set_vertex_offset
+set_vertex_stride
 set_vertex_tangent
 set_vertex_uv
 set_vertex_uv2
@@ -20607,8 +21047,10 @@ set_width
 set_wind_attenuation_factor
 set_wind_force_magnitude
 set_wind_source_path
+set_window_focused
 set_window_id
 set_window_layout
+set_window_rect
 set_wireframe
 set_world_2d
 set_world_3d
@@ -20718,6 +21160,7 @@ shape_owner_get_transform
 shape_owner_remove_shape
 shape_owner_set_disabled
 shape_owner_set_one_way_collision
+shape_owner_set_one_way_collision_direction
 shape_owner_set_one_way_collision_margin
 shape_owner_set_transform
 shape_rid
@@ -20730,6 +21173,7 @@ shaped_get_run_count
 shaped_get_run_direction
 shaped_get_run_font_rid
 shaped_get_run_font_size
+shaped_get_run_glyph_range
 shaped_get_run_language
 shaped_get_run_object
 shaped_get_run_range
@@ -20827,6 +21271,7 @@ show
 show_arrange_button
 show_behind_parent
 show_collision_shapes_only_when_selected
+show_drag_and_drop_info
 show_emoji_and_symbol_picker
 show_focus_state_on_pointer_event
 show_gizmo_during_rotation
@@ -20844,13 +21289,15 @@ show_members_overview
 show_menu
 show_minimap
 show_minimap_button
+show_native_symbol_in_editor
+show_native_symbols_in_editor
 show_percentage
 show_popup
 show_previous_outline
 show_rect
+show_renderer_selector
 show_rest_only
 show_rest_only_changed
-show_scene_tree_root_selection
 show_script_button
 show_search_highlight
 show_thumbnail_on_hover
@@ -20870,6 +21317,7 @@ sidechain
 sides
 sign
 signal
+signatureHelp
 signed_angle_to
 signf
 signi
@@ -20957,6 +21405,7 @@ smaa_edge_detection_threshold
 smart_snapping_line_color
 smooth_faces
 smooth_scrolling
+smoothing_angle
 smoothstep
 snap
 snap_2d_transforms_to_pixel
@@ -21080,6 +21529,7 @@ spawned
 speaker_mode
 spec_gloss_img
 special_color
+specialization_constants
 specular_color
 specular_factor
 specular_mode
@@ -21148,7 +21598,9 @@ ssr_fade_in
 ssr_fade_out
 ssr_max_steps
 stacked_outline_count
+stacked_outline_{index}
 stacked_shadow_count
+stacked_shadow_{index}
 stage_file
 staging_buffer
 standalone_expression
@@ -21160,6 +21612,7 @@ start_compression
 start_create_dialog_fully_expanded
 start_decompression
 start_drag
+start_entity_discovery
 start_file
 start_force_keep_in_merge_ends
 start_index
@@ -21229,6 +21682,7 @@ stream_paused
 stream_peer
 stream_player_3d
 stream_position
+stream_{index}
 streams_count
 strength
 stretch
@@ -21383,6 +21837,7 @@ symbol_validate
 symmetry_limitation
 symmetry_planes_clipping_bias
 sync
+sync_mode
 sync_to_physics
 synchronized
 syntax_highlighter
@@ -21402,6 +21857,7 @@ tab_rmb_clicked
 tab_selected
 tab_size
 tab_stops
+tab_{index}
 tablet_driver
 tablet_get_current_driver
 tablet_get_driver_count
@@ -21430,7 +21886,6 @@ tap2_active
 tap2_delay_ms
 tap2_level_db
 tap2_pan
-tap_back_pos
 tapped
 target
 target_api_version
@@ -21523,6 +21978,7 @@ texture_is_discardable
 texture_is_format_supported_for_usage
 texture_is_shared
 texture_is_valid
+texture_map_mode
 texture_margin_bottom
 texture_margin_left
 texture_margin_right
@@ -21605,12 +22061,13 @@ timers
 tint_color
 tint_color_enabled
 tint_over
+tint_over_color
 tint_progress
 tint_under
+tint_under_color
 tip_bone
 tip_nodepath
 tip_size
-tip_texture
 title
 title_alignment
 title_changed
@@ -21619,9 +22076,8 @@ title_position
 title_text_direction
 title_text_overrun_behavior
 titlebar_changed
+tlas_build
 tlas_create
-tlas_instances_buffer_create
-tlas_instances_buffer_fill
 tls
 to_abgr32
 to_abgr64
@@ -21735,6 +22191,8 @@ transfer_mode
 transform
 transform_2d_array
 transform_align
+transform_align_axis
+transform_align_channel_filter
 transform_array
 transform_color
 transform_format
@@ -21747,6 +22205,7 @@ translate_object_local
 translate_plural
 translated
 translated_local
+translation_context
 translation_inertia
 translation_sensitivity
 transparency
@@ -21797,6 +22256,7 @@ turbulence_noise_scale
 turbulence_noise_speed
 turbulence_noise_speed_random
 turbulence_noise_strength
+tween_await
 tween_callback
 tween_interval
 tween_method
@@ -21950,6 +22410,7 @@ unregister_frame_info_extension
 unregister_gltf_document_extension
 unregister_message_capture
 unregister_profiler
+unregister_projection_layer_extension
 unregister_projection_views_extension
 unregister_script_language
 unregister_singleton
@@ -21979,6 +22440,15 @@ unused_varying
 up_direction
 up_vector_enabled
 update
+update_add_action
+update_add_child
+update_add_custom_action
+update_add_related_controls
+update_add_related_described_by
+update_add_related_details
+update_add_related_flow_to
+update_add_related_labeled_by
+update_add_related_radio_group
 update_android_prebuilt_manifest
 update_cache
 update_cells
@@ -21996,6 +22466,7 @@ update_layer
 update_layout
 update_main_swapchain_size
 update_map_data_from_image
+update_maximum_size
 update_minimum_size
 update_mode
 update_mouse_cursor_state
@@ -22005,6 +22476,61 @@ update_position
 update_property
 update_rotation
 update_scale
+update_set_active_descendant
+update_set_background_color
+update_set_bounds
+update_set_braille_label
+update_set_braille_role_description
+update_set_checked
+update_set_classname
+update_set_color_value
+update_set_description
+update_set_error_message
+update_set_extra_info
+update_set_flag
+update_set_focus
+update_set_foreground_color
+update_set_in_page_link_target
+update_set_language
+update_set_list_item_count
+update_set_list_item_expanded
+update_set_list_item_index
+update_set_list_item_level
+update_set_list_item_selected
+update_set_list_orientation
+update_set_live
+update_set_member_of
+update_set_name
+update_set_next_on_line
+update_set_num_jump
+update_set_num_range
+update_set_num_step
+update_set_num_value
+update_set_placeholder
+update_set_popup_type
+update_set_previous_on_line
+update_set_role
+update_set_role_description
+update_set_scroll_x
+update_set_scroll_x_range
+update_set_scroll_y
+update_set_scroll_y_range
+update_set_shortcut
+update_set_state_description
+update_set_table_cell_position
+update_set_table_cell_span
+update_set_table_column_count
+update_set_table_column_index
+update_set_table_row_count
+update_set_table_row_index
+update_set_text_align
+update_set_text_decorations
+update_set_text_orientation
+update_set_text_selection
+update_set_tooltip
+update_set_transform
+update_set_url
+update_set_value
 update_spatial_entities
 update_speed
 update_visibility
@@ -22063,9 +22589,11 @@ use_hidden_project_data_directory
 use_hidden_tabs_for_min_size
 use_integer_zoom_by_default
 use_kinematic_bodies
+use_legacy_blending
 use_magnet
 use_mipmaps
 use_model_front
+use_monospace_font_for_editor_symbols
 use_multiple_threads
 use_name_suffixes
 use_named_skin_binds
@@ -22073,6 +22601,7 @@ use_named_skins
 use_native_dialog
 use_native_file_dialogs
 use_nearest_mipmap_filter
+use_node_names_as_mesh_names
 use_node_type_suffixes
 use_occlusion_culling
 use_oversampling
@@ -22081,12 +22610,16 @@ use_particle_trails
 use_physical_light_units
 use_point_size
 use_pseudolocalization
+use_rotation_3d
+use_rotation_velocity_3d
+use_scale_3d
 use_secondary_rotation
 use_single_quotes
 use_system_accent_color
 use_taa
 use_texture_for_bounces
 use_texture_padding
+use_thread
 use_threads
 use_tile_data_runtime_update
 use_top_left
@@ -22160,11 +22693,16 @@ version_changed
 version_control
 vertex_array_create
 vertex_attributes
+vertex_buffer
 vertex_buffer_create
 vertex_color_is_srgb
 vertex_color_use_as_albedo
 vertex_colors
+vertex_count
+vertex_format
 vertex_format_create
+vertex_offset
+vertex_stride
 vertical
 vertical_alignment
 vertical_icon_alignment
@@ -22178,6 +22716,7 @@ video_delay_compensation_ms
 video_quality
 view_configuration
 view_count
+view_plane_rotation_gizmo_scale
 viewport
 viewport_attach_camera
 viewport_attach_canvas
@@ -22339,6 +22878,7 @@ weakref
 webp_compression
 webrtc
 wedge_angle
+weight
 wet
 wheel_friction_slip
 wheel_radius
@@ -22350,6 +22890,7 @@ while
 whitespace
 width
 width_curve
+willSaveWaitUntil
 wind_attenuation_factor
 wind_force_magnitude
 wind_source_path
@@ -22359,10 +22900,15 @@ window_get_active_popup
 window_get_attached_instance_id
 window_get_current_screen
 window_get_flag
+window_get_hdr_output_current_max_luminance
+window_get_hdr_output_current_reference_luminance
+window_get_hdr_output_max_luminance
+window_get_hdr_output_reference_luminance
 window_get_max_size
 window_get_min_size
 window_get_mode
 window_get_native_handle
+window_get_output_max_linear_value
 window_get_popup_safe_rect
 window_get_position
 window_get_position_with_decorations
@@ -22375,6 +22921,9 @@ window_height_override
 window_id
 window_input
 window_is_focused
+window_is_hdr_output_enabled
+window_is_hdr_output_requested
+window_is_hdr_output_supported
 window_is_maximize_allowed
 window_log_size
 window_maximize_on_title_dbl_click
@@ -22382,11 +22931,15 @@ window_minimize_on_title_dbl_click
 window_move_to_foreground
 window_placement
 window_request_attention
+window_request_hdr_output
 window_set_color
 window_set_current_screen
 window_set_drop_files_callback
 window_set_exclusive
 window_set_flag
+window_set_hdr_output_max_luminance
+window_set_hdr_output_reference_luminance
+window_set_icon
 window_set_ime_active
 window_set_ime_position
 window_set_input_event_callback
@@ -22399,6 +22952,8 @@ window_set_popup_safe_rect
 window_set_position
 window_set_rect_changed_callback
 window_set_size
+window_set_taskbar_progress_state
+window_set_taskbar_progress_value
 window_set_title
 window_set_transient
 window_set_vsync_mode
@@ -22419,6 +22974,7 @@ world_boundary_shape_create
 world_boundary_shape_size
 world_node
 world_origin
+world_origin_changed
 world_scale
 wrap
 wrap_controls
