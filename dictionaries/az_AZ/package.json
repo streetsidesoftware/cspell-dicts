@@ -1,0 +1,51 @@
+{
+  "name": "@cspell/dict-az-az",
+  "version": "1.0.0",
+  "description": "Azerbaijani dictionary for cspell. -- Private until verified",
+  "private": true,
+  "publishConfig": {
+    "access": "public",
+    "provenance": true
+  },
+  "exports": {
+    ".": "./cspell-ext.json",
+    "./cspell": "./cspell-ext.json",
+    "./cspell-ext.json": "./cspell-ext.json"
+  },
+  "scripts": {
+    "build": "cspell-tools-cli build && pnpm run gz",
+    "build:conditional": "cspell-tools-cli build --conditional && pnpm prepare:dictionary",
+    "test": "pipe-cmds \"hunspell-reader words -n 1000 \\\"src/az.dic\\\"\" \"cspell -c ./cspell-ext.json \\\"--locale=az,az-AZ\\\" \\\"--languageId=*\\\" stdin\"",
+    "gz": "cspell-tools-cli gzip \"dict/az-az.trie\"",
+    "prepublishOnly": "echo pre-publish",
+    "prepare:dictionary": "pnpm run gz"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/streetsidesoftware/cspell-dicts",
+    "directory": "dictionaries/az_AZ"
+  },
+  "keywords": [
+    "cspell",
+    "cspell-ext",
+    "az_AZ",
+    "Azerbaijani",
+    "dictionary",
+    "spelling"
+  ],
+  "author": "Eldar Pashazade <eldarlrd@pm.me> (https://eldarlrd.is-a.dev)",
+  "contributors": [],
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/streetsidesoftware/cspell-dicts/issues"
+  },
+  "homepage": "https://github.com/streetsidesoftware/cspell-dicts/blob/main/dictionaries/az_AZ#readme",
+  "devDependencies": {},
+  "dependencies": {},
+  "files": [
+    "dict/az-az.trie.gz",
+    "cspell-ext.json",
+    "*.js",
+    "*.d.ts"
+  ]
+}
