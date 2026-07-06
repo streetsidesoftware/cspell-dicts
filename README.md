@@ -26,6 +26,7 @@ Various [cspell](https://github.com/streetsidesoftware/cspell) dictionaries. Eac
 - [Arabic](dictionaries/ar) - Arabic dictionary.
 - [Armenian](dictionaries/hy) - Armenian dictionary.
 - [Austrian German Dictionary](dictionaries/de_AT) - Austrian German (de-AT) Dictionary.
+- [Azerbaijani](dictionaries/az_AZ) - Azerbaijani dictionary.
 - [Basque](dictionaries/eu) - Basque dictionary.
 - [Bengali](dictionaries/bn) - Bengali dictionary for cspell.
 - [Bulgarian](dictionaries/bg_BG) - Bulgarian dictionary.
@@ -171,6 +172,7 @@ Various [cspell](https://github.com/streetsidesoftware/cspell) dictionaries. Eac
 | [@cspell/dict-al](./dictionaries/al#readme)<sup>1</sup>                                         | AL                                | al                                                                                                                                                                                                                                                    |
 | [@cspell/dict-ar](./dictionaries/ar#readme)                                                     | Arabic                            | ar                                                                                                                                                                                                                                                    |
 | [@cspell/dict-aws](./dictionaries/aws#readme)<sup>1</sup>                                       | AWS                               | aws<sup>2</sup>                                                                                                                                                                                                                                       |
+| [@cspell/dict-az-az](./dictionaries/az_AZ#readme)                                               | Azerbaijani                       | az-az                                                                                                                                                                                                                                                 |
 | [@cspell/dict-bash](./dictionaries/bash#readme)<sup>1</sup>                                     | bash                              |                                                                                                                                                                                                                                                       |
 | [@cspell/dict-bg-bg](./dictionaries/bg_BG#readme)                                               | Bulgarian                         | bg-bg                                                                                                                                                                                                                                                 |
 | [@cspell/dict-bn](./dictionaries/bn#readme)                                                     | Bengali                           | bn                                                                                                                                                                                                                                                    |
@@ -307,6 +309,7 @@ Various [cspell](https://github.com/streetsidesoftware/cspell) dictionaries. Eac
 | [`al`](dictionaries/al) <sup>1</sup>                                                 | AL Keywords Dictionary                                              | -                             | al                                                             |
 | [`ar`](dictionaries/ar)                                                              | Arabic dictionary.                                                  | ar                            | -                                                              |
 | [`aws`](dictionaries/aws) <sup>1</sup> <sup>2</sup>                                  | AWS dictionary.                                                     |                               |                                                                |
+| [`az-az`](dictionaries/az_AZ)                                                        | Azerbaijani dictionary.                                             | az<br>az-AZ                   | -                                                              |
 | [`bash`](dictionaries/shell) <sup>1</sup>                                            | Bash dictionary.                                                    | -                             | bashscript                                                     |
 | [`bg-bg`](dictionaries/bg_BG)                                                        | Bulgarian dictionary.                                               | bg<br>bg-BG                   | -                                                              |
 | [`bn`](dictionaries/bn)                                                              | Bengali dictionary for cspell.                                      | bn                            | -                                                              |
@@ -719,6 +722,7 @@ Special thanks to all of our amazing contributors!
 [<img alt="Contributor smaraf" src="https://avatars.githubusercontent.com/u/1213709?v=4&size=128" width=64>](https://github.com/smaraf)
 [<img alt="Contributor thenamankumar" src="https://avatars.githubusercontent.com/u/22571395?v=4&size=128" width=64>](https://github.com/thenamankumar)
 [<img alt="Contributor uncenter" src="https://avatars.githubusercontent.com/u/47499684?v=4&size=128" width=64>](https://github.com/uncenter)
+[<img alt="Contributor eldarlrd" src="https://avatars.githubusercontent.com/u/95304986?v=4&size=128" width=64>](https://github.com/eldarlrd)
 
 <!--- cspell:enable --->
 
