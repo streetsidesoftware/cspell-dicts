@@ -3,6 +3,7 @@
 | Dictionary         | Contributors                                                                                                  |
 | ------------------ | ------------------------------------------------------------------------------------------------------------- |
 | AWS                | [Daniel Schroeder](https://github.com/udondan)                                                                |
+| Azerbaijani        | [Eldar Paşazadə](https://github.com/eldarlrd)                                                                 |
 | Bash               | [dflock (Duncan Lock)](https://github.com/dflock)                                                             |
 | Catalan            | [Jordi Olivares Provencio](https://github.com/jordiolivares)                                                  |
 | Croatian           | [Dubravko Cvikl](https://github.com/dcvikl)                                                                   |
@@ -40,6 +41,7 @@
     cspell:words Daniel Schildt
     cspell:words dflock
     cspell:words Dubravko Cvikl
+    cspell:words Eldar Paşazadə
     cspell:words Erkan Durmuş
     cspell:words Federico Jaramillo Martínez
     cspell:words Fullstack
