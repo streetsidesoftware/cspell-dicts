@@ -1,5 +1,5 @@
 ﻿# English Hunspell Affix File
-# Licensed under the LGPL
+# Licensed under the latest LGPL
 #
 # Spelling verified against:
 #   1) Oxford Dictionaries
@@ -22,18 +22,19 @@
 # See README_en_GB_ZA_US_CA_AU.txt for details
 #
 #
-#  Dictionary Information:
-#      English variant: British
-#              Version: 4.0.7, 2026-05-01
-#             Encoding: UTF-8-BOM Unix (LF)
-#       -ise/-ize/Both: Both
-#             Comments: The U.S., Canadian, and Australian dictionaries MAY differ slightly in coverage for some region-specific terms.
-#  Variants maintained: British, OED (Oxford English Dictionary), South African, American (alt), Canadian (alt), Australian (alt)
+# Dictionary Information:
+#        English variant: British
+#                Version: 4.0.8, 2026-07-01
+#               Encoding: UTF-8-BOM Unix (LF)
+#   -ise/-ize/Both/Mixed: Both
+#               Comments: The U.S., Canadian, and Australian dictionaries MAY differ slightly in coverage for some region-specific terms.
+#    Variants maintained: British, OED (Oxford English Dictionary), South African, American (alt), Canadian (alt), Australian (alt)
 #
 #
 # Maintainer: Marco A.G.Pinto
 #   Homepage: https://proofingtoolgui.org
 #     GitHub: https://github.com/marcoagpinto/aoo-mozilla-en-dict
+#    Article: https://marcoagpinto.com
 #     E-mail: marcoagpinto@sapo.pt
 #
 #
@@ -53,7 +54,7 @@
 # 4 # trans- prefix
 # V # -ive endings for verbs
 # v # -ively endings for verbs
-# N # -ion and -ion's ends for stem verb creating action noun
+# N # -ion and -ion's ends for stem verb creating uncountable action noun
 # n # -ion, -ions and -ion's ends for stem verb creating action noun
 # X # -ions ends for stem verb creating action noun plural
 # x # -ional, -ionally ends for stem verb
@@ -106,10 +107,12 @@
 # w # -ical, adjectival ending
 # 1 # -ically, adverbial form ending
 # 3 # -ist, -ists, -ist's suffixes
+# í # -ist, -ists, -ist's suffixes American (single-L words)
 # ~ # -ish, adjectival ending
 
 
 SET UTF-8
+FLAG UTF-8
 
 TRY esiaénrtolcdugmfphbyvkw-'.zqjxSNRTLCGDMFPHBEAUYOIVKWóöâôZQJXÅçèîêàïüäñ
 
@@ -124,6 +127,9 @@ ICONV ﬂ fl
 OCONV 1
 OCONV ' ’
 
+# MAXNGRAMSUGS: 5 = cleaner, more Word-like, less noise; 7 = balanced compromise.
+MAXNGRAMSUGS 7
+
 NOSUGGEST !
 
 # ordinal numbers
@@ -137,9 +143,9 @@ COMPOUNDRULE 2
 COMPOUNDRULE #*0{
 COMPOUNDRULE #*@}
 
-WORDCHARS 0123456789’
+WORDCHARS 0123456789’'
 
-REP 37
+REP 38
 REP ce se
 REP ce ts
 REP ch k
@@ -170,6 +176,7 @@ REP se ce
 REP si ci
 REP t ght
 REP ter tor
+REP teh the
 REP tor ter
 REP ts ce
 REP ua ue
@@ -1597,6 +1604,10 @@ SFX ; 0 ing's [lrps]
 SFX ; e ing's e
 SFX ; 0 ings [lrps]
 SFX ; e ings e
+SFX í Y 3
+SFX í 0 ist .
+SFX í 0 ist's .
+SFX í 0 ists .
 
 BREAK 3
 BREAK —
