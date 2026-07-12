@@ -147,7 +147,7 @@ See: [How to Create a New Dictionary](https://github.com/streetsidesoftware/cspe
 
 ## References
 
-- Source: [jmigartua/basque_hunspell](https://github.com/jmigartua/basque_hunspell)
+- Source: [jmigartua/basque\_hunspell](https://github.com/jmigartua/basque_hunspell)
 
 ## License
 

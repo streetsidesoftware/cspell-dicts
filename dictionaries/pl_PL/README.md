@@ -150,7 +150,7 @@ See: [How to Create a New Dictionary](https://github.com/streetsidesoftware/cspe
 The Hunspell source for this dictionary can be found in several repositories:
 
 - [titoBouzout/Dictionaries](https://github.com/titoBouzout/Dictionaries)
-- [dictionaries/pl_PL](https://github.com/wooorm/dictionaries/tree/master/dictionaries/pl_PL)
+- [dictionaries/pl\_PL](https://github.com/wooorm/dictionaries/tree/master/dictionaries/pl_PL)
 
 <!--- cspell:ignore titoBouzout --->
 

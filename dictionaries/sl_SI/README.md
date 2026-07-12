@@ -149,7 +149,7 @@ See: [How to Create a New Dictionary](https://github.com/streetsidesoftware/cspe
 
 The Hunspell source for this dictionary can be found:
 
-- [sl_SI/](https://cgit.freedesktop.org/libreoffice/dictionaries/tree/sl_SI/)
+- [sl\_SI/](https://cgit.freedesktop.org/libreoffice/dictionaries/tree/sl_SI/)
 
 ## License
 
@@ -157,7 +157,7 @@ GNU/LGPL and GNU/GPL
 
 > Some packages may have other licenses included.
 
-See also: [README_sl_SI.txt](https://github.com/streetsidesoftware/cspell-dicts/blob/main/dictionaries/sl_SIsrc/README_sl_SI.txt)
+See also: [README\_sl\_SI.txt](https://github.com/streetsidesoftware/cspell-dicts/blob/main/dictionaries/sl_SIsrc/README_sl_SI.txt)
 
 <!--- @@inject: ../../static/footer.md --->
 
