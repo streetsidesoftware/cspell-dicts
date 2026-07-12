@@ -3,6 +3,15 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+## [3.2.12](https://github.com/streetsidesoftware/cspell-dicts/compare/@cspell/dict-companies@3.2.11...@cspell/dict-companies@3.2.12) (2026-07-12)
+
+
+### Updates and Bug Fixes
+
+* Add Azure and Packer identifiers to Terraform dictionary ([#5546](https://github.com/streetsidesoftware/cspell-dicts/issues/5546)) ([83ebec7](https://github.com/streetsidesoftware/cspell-dicts/commit/83ebec7b589c8f097c6aee644efd8ef6fc1721be))
+* Add companies, brand and vendor names ([#5544](https://github.com/streetsidesoftware/cspell-dicts/issues/5544)) ([b3ec57f](https://github.com/streetsidesoftware/cspell-dicts/commit/b3ec57fcf806c62279ee1abaa710063ddc69522b))
+* Workflow Bot -- Build Dictionaries ([#5552](https://github.com/streetsidesoftware/cspell-dicts/issues/5552)) ([0a194f6](https://github.com/streetsidesoftware/cspell-dicts/commit/0a194f66c91dbdbc63e70de0edaf179a0b8df96e))
+
 ## [3.2.11](https://github.com/streetsidesoftware/cspell-dicts/compare/@cspell/dict-companies@3.2.10...@cspell/dict-companies@3.2.11) (2026-03-09)
 
 

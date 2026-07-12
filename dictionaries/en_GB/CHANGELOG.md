@@ -3,6 +3,22 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+## [5.0.30](https://github.com/streetsidesoftware/cspell-dicts/compare/@cspell/dict-en-gb@5.0.29...@cspell/dict-en-gb@5.0.30) (2026-07-12)
+
+
+### Updates and Bug Fixes
+
+* add unsynchronized/unsynchronised to en_shared ([#5535](https://github.com/streetsidesoftware/cspell-dicts/issues/5535)) ([d7789ca](https://github.com/streetsidesoftware/cspell-dicts/commit/d7789caf1ea7e5b92f1af52ed27e28712fd43c75))
+* Workflow Bot -- Build Dictionaries ([#5556](https://github.com/streetsidesoftware/cspell-dicts/issues/5556)) ([2a88c52](https://github.com/streetsidesoftware/cspell-dicts/commit/2a88c52b51113929dd263926d2dceacf183b3c4d))
+
+
+### Dependencies
+
+* The following workspace dependencies were updated
+  * devDependencies
+    * @cspell/aoo-mozilla-en-dict bumped to 1.0.11
+    * @cspell/dict-en-shared bumped to 1.0.54
+
 ## [5.0.29](https://github.com/streetsidesoftware/cspell-dicts/compare/@cspell/dict-en-gb@5.0.28...@cspell/dict-en-gb@5.0.29) (2026-05-23)
 
 

@@ -1,5 +1,12 @@
 # Change Log
 
+## [1.1.4](https://github.com/streetsidesoftware/cspell-dicts/compare/@cspell/dict-terraform@1.1.3...@cspell/dict-terraform@1.1.4) (2026-07-12)
+
+
+### Updates and Bug Fixes
+
+* Add Azure and Packer identifiers to Terraform dictionary ([#5546](https://github.com/streetsidesoftware/cspell-dicts/issues/5546)) ([83ebec7](https://github.com/streetsidesoftware/cspell-dicts/commit/83ebec7b589c8f097c6aee644efd8ef6fc1721be))
+
 ## [1.1.3](https://github.com/streetsidesoftware/cspell-dicts/compare/@cspell/dict-terraform@1.1.2...@cspell/dict-terraform@1.1.3) (2025-07-09)
 
 

@@ -1,5 +1,12 @@
 # Change Log
 
+## [2.1.13](https://github.com/streetsidesoftware/cspell-dicts/compare/@cspell/dict-en-common-misspellings@2.1.12...@cspell/dict-en-common-misspellings@2.1.13) (2026-07-12)
+
+
+### Updates and Bug Fixes
+
+* add unsynchronized/unsynchronised to en_shared ([#5535](https://github.com/streetsidesoftware/cspell-dicts/issues/5535)) ([d7789ca](https://github.com/streetsidesoftware/cspell-dicts/commit/d7789caf1ea7e5b92f1af52ed27e28712fd43c75))
+
 ## [2.1.12](https://github.com/streetsidesoftware/cspell-dicts/compare/@cspell/dict-en-common-misspellings@2.1.11...@cspell/dict-en-common-misspellings@2.1.12) (2026-01-26)
 
 

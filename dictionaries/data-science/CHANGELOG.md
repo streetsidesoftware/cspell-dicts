@@ -1,5 +1,13 @@
 # Change Log
 
+## [2.0.16](https://github.com/streetsidesoftware/cspell-dicts/compare/@cspell/dict-data-science@2.0.15...@cspell/dict-data-science@2.0.16) (2026-07-12)
+
+
+### Updates and Bug Fixes
+
+* add misattributed incentivized etc. to data-science-terms ([#5523](https://github.com/streetsidesoftware/cspell-dicts/issues/5523)) ([594a574](https://github.com/streetsidesoftware/cspell-dicts/commit/594a574277739a9128f67e5d3eaa6816e8ac3193))
+* add neurogenesis neurocomputing etc. to data-science-terms ([#5513](https://github.com/streetsidesoftware/cspell-dicts/issues/5513)) ([394ae94](https://github.com/streetsidesoftware/cspell-dicts/commit/394ae94476d8c85ecdb3020da724e375743adf20))
+
 ## [2.0.15](https://github.com/streetsidesoftware/cspell-dicts/compare/@cspell/dict-data-science@2.0.14...@cspell/dict-data-science@2.0.15) (2026-06-15)
 
 
