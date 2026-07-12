@@ -3,12 +3,15 @@
 
 $ref
 $schema
+Dynakube
 HPA
 KubeProxyConfiguration
+Overprovisioning
 Port
 StatefulSet
 StatefulSets
 VPA
+aadpodidentity
 acceptedNames
 accessModes
 acquireTime
@@ -24,8 +27,12 @@ address
 addressType
 addresses
 admissionReviewVersions
+admissionregistration
 affinity
 aggregationRule
+alertingrules
+alertmanagerconfigs
+alertmanagers
 allOf
 allocatable
 allocateLoadBalancerNodePorts
@@ -44,6 +51,10 @@ apiServerID
 apiVersion
 apiVersions
 apiextensions
+apiregistration
+apiserver
+apiservers
+apiservices
 appProtocol
 applySet
 architecture
@@ -60,6 +71,7 @@ audiences
 authenticated
 automanaged
 automountServiceAccountToken
+autoscalers
 availableOnNodes
 availableReplicas
 averageUtilization
@@ -67,6 +79,7 @@ averageValue
 awsElasticBlockStore
 azureDisk
 azureFile
+azurekeyvaultsecretsprovider
 backend
 backoffLimit
 behavior
@@ -135,6 +148,7 @@ controllerPublishSecretRef
 conversion
 conversionReviewVersions
 count
+crds
 creationTimestamp
 csi
 current
@@ -145,6 +159,7 @@ currentNumberScheduled
 currentReplicas
 currentRevision
 daemonEndpoints
+daemonset
 data
 dataSource
 dataSourceRef
@@ -186,6 +201,7 @@ distinguisherMethod
 divisor
 dnsConfig
 dnsPolicy
+dockercfg
 downwardAPI
 driver
 driverName
@@ -276,8 +292,10 @@ handSize
 handler
 hard
 healthCheckNodePort
+healthz
 hints
 holderIdentity
+horizontalpodautoscalers
 host
 hostAliases
 hostIP
@@ -306,6 +324,7 @@ incomplete
 ingress
 ingressClass
 ingressClassName
+ingressclasses
 initContainerStatuses
 initContainers
 initialDelaySeconds
@@ -342,6 +361,7 @@ kubeletConfigKey
 kubeletEndpoint
 kubeletVersion
 kubelets
+kubepods
 kubernetes
 kustomization
 labelSelector
@@ -428,6 +448,7 @@ namespace
 namespaceSelector
 namespaced
 namespaces
+networkpolicies
 nfs
 nodeAffinity
 nodeAffinityPolicy
@@ -496,6 +517,7 @@ persistentVolumeClaimRetentionPolicy
 persistentVolumeClaims
 persistentVolumeName
 persistentVolumeReclaimPolicy
+persistentvolumes
 phase
 photonPersistentDisk
 platform
@@ -513,6 +535,8 @@ podInfoOnMount
 podManagementPolicy
 podSelector
 poddisruptionbudget
+poddisruptionbudgets
+podmonitors
 pods
 policies
 policyName
@@ -543,6 +567,9 @@ privileged
 procMount
 progressDeadlineSeconds
 projected
+prometheusagents
+prometheuses
+prometheusrules
 propagationPolicy
 properties
 protectionDomain
@@ -623,6 +650,9 @@ scaleDown
 scaleIO
 scaleTargetRef
 scaleUp
+scaledjobs
+scaledobject
+scaledobjects
 schedulable
 schedule
 schedulerName
@@ -634,6 +664,7 @@ scope
 scopeName
 scopeSelector
 scopes
+scrapeconfigs
 seLinuxMount
 seLinuxOptions
 searches
@@ -645,6 +676,7 @@ secretKeyRef
 secretName
 secretNamespace
 secretRef
+secretproviderclass
 secrets
 securityContext
 selectPolicy
@@ -661,6 +693,7 @@ serviceAccount
 serviceAccountName
 serviceAccountToken
 serviceName
+servicemonitors
 serving
 sessionAffinity
 sessionAffinityConfig
@@ -703,6 +736,7 @@ storagePolicyName
 storagePool
 storageVersionHash
 storageVersions
+storageclasses
 storageos
 storedVersions
 strategy
@@ -739,6 +773,7 @@ terminating
 terminationGracePeriodSeconds
 terminationMessagePath
 terminationMessagePolicy
+thanosrulers
 time
 timeAdded
 timeZone
@@ -783,6 +818,11 @@ verbs
 version
 versionPriority
 versions
+vmalert
+vmalerts
+vmauth
+vmuser
+vmusers
 volume
 volumeAttributes
 volumeBindingMode
@@ -797,6 +837,7 @@ volumeMounts
 volumeName
 volumeNamespace
 volumePath
+volumeattachments
 volumes
 volumesAttached
 volumesInUse
