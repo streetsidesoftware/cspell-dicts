@@ -1,4 +1,4 @@
-# CSpell nl_NL Dictionary
+# CSpell nl\_NL Dictionary
 
 Dutch dictionary for cspell.
 
