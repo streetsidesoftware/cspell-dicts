@@ -1,5 +1,6 @@
 $ref
 $schema
+aadpodidentity
 acceptedNames
 accessModes
 acquireTime
@@ -14,9 +15,13 @@ addonmanager
 address
 addresses
 addressType
+admissionregistration
 admissionReviewVersions
 affinity
 aggregationRule
+alertingrules
+alertmanagerconfigs
+alertmanagers
 allocatable
 allocatedResources
 allocateLoadBalancerNodePorts
@@ -32,7 +37,11 @@ anyOf
 apiextensions
 apiGroup
 apiGroups
+apiregistration
+apiserver
 apiServerID
+apiservers
+apiservices
 apiVersion
 apiVersions
 applySet
@@ -51,6 +60,7 @@ audiences
 authenticated
 automanaged
 automountServiceAccountToken
+autoscalers
 availableOnNodes
 availableReplicas
 averageUtilization
@@ -58,6 +68,7 @@ averageValue
 awsElasticBlockStore
 azureDisk
 azureFile
+azurekeyvaultsecretsprovider
 backend
 backoffLimit
 behavior
@@ -126,6 +137,7 @@ controllerPublishSecretRef
 conversion
 conversionReviewVersions
 count
+crds
 creationTimestamp
 csi
 current
@@ -136,6 +148,7 @@ currentNumberScheduled
 currentReplicas
 currentRevision
 daemonEndpoints
+daemonset
 data
 datasetName
 datasetUUID
@@ -177,12 +190,14 @@ distinguisherMethod
 divisor
 dnsConfig
 dnsPolicy
+dockercfg
 downwardAPI
 driver
 driverName
 drivers
 drop
 dryRun
+Dynakube
 effect
 egress
 emptyDir
@@ -267,8 +282,10 @@ handler
 handSize
 hard
 healthCheckNodePort
+healthz
 hints
 holderIdentity
+horizontalpodautoscalers
 host
 hostAliases
 hostIP
@@ -297,6 +314,7 @@ immutable
 incomplete
 ingress
 ingressClass
+ingressclasses
 ingressClassName
 initContainers
 initContainerStatuses
@@ -333,6 +351,7 @@ kubeletConfigKey
 kubeletEndpoint
 kubelets
 kubeletVersion
+kubepods
 KubeProxyConfiguration
 kubeProxyVersion
 kubernetes
@@ -421,6 +440,7 @@ namespace
 namespaced
 namespaces
 namespaceSelector
+networkpolicies
 nfs
 nodeAffinity
 nodeAffinityPolicy
@@ -467,6 +487,7 @@ orphanDependents
 os
 osImage
 overhead
+Overprovisioning
 ownerReferences
 parallelism
 parameters
@@ -489,6 +510,7 @@ persistentVolumeClaimRetentionPolicy
 persistentVolumeClaims
 persistentVolumeName
 persistentVolumeReclaimPolicy
+persistentvolumes
 phase
 photonPersistentDisk
 platform
@@ -499,12 +521,14 @@ podAntiAffinity
 podCIDR
 podCIDRs
 poddisruptionbudget
+poddisruptionbudgets
 podFailurePolicy
 podFixed
 podInfoOnMount
 podIP
 podIPs
 podManagementPolicy
+podmonitors
 pods
 podSelector
 policies
@@ -537,6 +561,9 @@ privileged
 procMount
 progressDeadlineSeconds
 projected
+prometheusagents
+prometheuses
+prometheusrules
 propagationPolicy
 properties
 protectionDomain
@@ -613,6 +640,9 @@ runAsUserName
 running
 runtimeClassName
 scale
+scaledjobs
+scaledobject
+scaledobjects
 scaleDown
 scaleIO
 scaleTargetRef
@@ -628,6 +658,7 @@ scope
 scopeName
 scopes
 scopeSelector
+scrapeconfigs
 searches
 seccomp
 seccompProfile
@@ -636,6 +667,7 @@ secretFile
 secretKeyRef
 secretName
 secretNamespace
+secretproviderclass
 secretRef
 secrets
 securityContext
@@ -654,6 +686,7 @@ service
 serviceAccount
 serviceAccountName
 serviceAccountToken
+servicemonitors
 serviceName
 serving
 sessionAffinity
@@ -692,6 +725,7 @@ stdinOnce
 storage
 storageCapacity
 storageClass
+storageclasses
 storageClassName
 storageMode
 storageos
@@ -735,6 +769,7 @@ terminating
 terminationGracePeriodSeconds
 terminationMessagePath
 terminationMessagePolicy
+thanosrulers
 time
 timeAdded
 timeoutSeconds
@@ -779,7 +814,13 @@ verbs
 version
 versionPriority
 versions
+vmalert
+vmalerts
+vmauth
+vmuser
+vmusers
 volume
+volumeattachments
 volumeAttributes
 volumeBindingMode
 volumeClaimTemplate
