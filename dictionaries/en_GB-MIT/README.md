@@ -1,4 +1,4 @@
-# CSpell en_GB Dictionary with MIT License
+# CSpell en\_GB Dictionary with MIT License
 
 British English dictionary for cspell.
 

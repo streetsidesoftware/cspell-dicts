@@ -147,7 +147,7 @@ See: [How to Create a New Dictionary](https://github.com/streetsidesoftware/cspe
 
 ## Adding Words
 
-Please add any words to [src/additional_words.txt](https://github.com/streetsidesoftware/cspell-dicts/blob/main/dictionaries/es_ES/src/additional_words.txt) by making a pull request.
+Please add any words to [src/additional\_words.txt](https://github.com/streetsidesoftware/cspell-dicts/blob/main/dictionaries/es_ES/src/additional_words.txt) by making a pull request.
 
 ## Resources
 
