@@ -1,5 +1,12 @@
 # Changelog
 
+## [1.0.13](https://github.com/streetsidesoftware/cspell-dicts/compare/@cspell/dict-k8s@1.0.12...@cspell/dict-k8s@1.0.13) (2026-07-12)
+
+
+### Updates and Bug Fixes
+
+* Add Kubernetes resources and third-party CRD terms ([#5545](https://github.com/streetsidesoftware/cspell-dicts/issues/5545)) ([5ba1adb](https://github.com/streetsidesoftware/cspell-dicts/commit/5ba1adbe4aa3a5fbd6ce7584db9faaeb8c3acdd5))
+
 ## [1.0.12](https://github.com/streetsidesoftware/cspell-dicts/compare/@cspell/dict-k8s@1.0.11...@cspell/dict-k8s@1.0.12) (2025-07-09)
 
 

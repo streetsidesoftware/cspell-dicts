@@ -1,5 +1,12 @@
 # Change Log
 
+## [1.2.0](https://github.com/streetsidesoftware/cspell-dicts/compare/@cspell/dict-gdscript@1.1.0...@cspell/dict-gdscript@1.2.0) (2026-07-12)
+
+
+### Features
+
+* update GDScript dictionary for Godot 4.7 ([#5518](https://github.com/streetsidesoftware/cspell-dicts/issues/5518)) ([f3dfd38](https://github.com/streetsidesoftware/cspell-dicts/commit/f3dfd381a75600929114b71e89c794d96365c121))
+
 ## [1.1.0](https://github.com/streetsidesoftware/cspell-dicts/compare/@cspell/dict-gdscript@1.0.1...@cspell/dict-gdscript@1.1.0) (2026-02-03)
 
 

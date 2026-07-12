@@ -1,5 +1,13 @@
 # Change Log
 
+## [1.0.54](https://github.com/streetsidesoftware/cspell-dicts/compare/@cspell/dict-en-shared@1.0.53...@cspell/dict-en-shared@1.0.54) (2026-07-12)
+
+
+### Updates and Bug Fixes
+
+* Add shared English words from [#5523](https://github.com/streetsidesoftware/cspell-dicts/issues/5523) ([#5553](https://github.com/streetsidesoftware/cspell-dicts/issues/5553)) ([de489d2](https://github.com/streetsidesoftware/cspell-dicts/commit/de489d2bd31499d544862a4b48e1d718af4db9a2))
+* add unsynchronized/unsynchronised to en_shared ([#5535](https://github.com/streetsidesoftware/cspell-dicts/issues/5535)) ([d7789ca](https://github.com/streetsidesoftware/cspell-dicts/commit/d7789caf1ea7e5b92f1af52ed27e28712fd43c75))
+
 ## [1.0.53](https://github.com/streetsidesoftware/cspell-dicts/compare/@cspell/dict-en-shared@1.0.52...@cspell/dict-en-shared@1.0.53) (2026-05-23)
 
 

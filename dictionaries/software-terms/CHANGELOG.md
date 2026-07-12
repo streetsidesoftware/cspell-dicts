@@ -3,6 +3,15 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+## [5.2.4](https://github.com/streetsidesoftware/cspell-dicts/compare/@cspell/dict-software-terms@5.2.3...@cspell/dict-software-terms@5.2.4) (2026-07-12)
+
+
+### Updates and Bug Fixes
+
+* Add Nacos to software tools list ([#5525](https://github.com/streetsidesoftware/cspell-dicts/issues/5525)) ([475f382](https://github.com/streetsidesoftware/cspell-dicts/commit/475f382bce618c27aeaf6e8404a049e36af4bde2))
+* Add software tools, observability and security terms ([#5547](https://github.com/streetsidesoftware/cspell-dicts/issues/5547)) ([dfc22c7](https://github.com/streetsidesoftware/cspell-dicts/commit/dfc22c7c94c4a509e8561a1f52d6f042b2ade12d))
+* Add word Betterleaks to software-terms dictionary ([#5543](https://github.com/streetsidesoftware/cspell-dicts/issues/5543)) ([ba04724](https://github.com/streetsidesoftware/cspell-dicts/commit/ba047241b6157029405d399c3297826732287276))
+
 ## [5.2.3](https://github.com/streetsidesoftware/cspell-dicts/compare/@cspell/dict-software-terms@5.2.2...@cspell/dict-software-terms@5.2.3) (2026-06-15)
 
 

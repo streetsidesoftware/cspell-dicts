@@ -1,5 +1,39 @@
 # Release Notes
 
+## [33.9.0](https://github.com/streetsidesoftware/cspell-dicts/compare/cspell-dicts@33.8.3...cspell-dicts@33.9.0) (2026-07-12)
+
+
+### Features
+
+* **az_AZ:** dictionary files for the Azerbaijani language ([#5538](https://github.com/streetsidesoftware/cspell-dicts/issues/5538)) ([1a4cebb](https://github.com/streetsidesoftware/cspell-dicts/commit/1a4cebba8852486f6644f1e78e2daf9289d340bf))
+* update GDScript dictionary for Godot 4.7 ([#5518](https://github.com/streetsidesoftware/cspell-dicts/issues/5518)) ([f3dfd38](https://github.com/streetsidesoftware/cspell-dicts/commit/f3dfd381a75600929114b71e89c794d96365c121))
+
+
+### Updates and Bug Fixes
+
+* Add Azure and Packer identifiers to Terraform dictionary ([#5546](https://github.com/streetsidesoftware/cspell-dicts/issues/5546)) ([83ebec7](https://github.com/streetsidesoftware/cspell-dicts/commit/83ebec7b589c8f097c6aee644efd8ef6fc1721be))
+* Add companies, brand and vendor names ([#5544](https://github.com/streetsidesoftware/cspell-dicts/issues/5544)) ([b3ec57f](https://github.com/streetsidesoftware/cspell-dicts/commit/b3ec57fcf806c62279ee1abaa710063ddc69522b))
+* Add Kubernetes resources and third-party CRD terms ([#5545](https://github.com/streetsidesoftware/cspell-dicts/issues/5545)) ([5ba1adb](https://github.com/streetsidesoftware/cspell-dicts/commit/5ba1adbe4aa3a5fbd6ce7584db9faaeb8c3acdd5))
+* add misattributed incentivized etc. to data-science-terms ([#5523](https://github.com/streetsidesoftware/cspell-dicts/issues/5523)) ([594a574](https://github.com/streetsidesoftware/cspell-dicts/commit/594a574277739a9128f67e5d3eaa6816e8ac3193))
+* Add Nacos to software tools list ([#5525](https://github.com/streetsidesoftware/cspell-dicts/issues/5525)) ([475f382](https://github.com/streetsidesoftware/cspell-dicts/commit/475f382bce618c27aeaf6e8404a049e36af4bde2))
+* add neurogenesis neurocomputing etc. to data-science-terms ([#5513](https://github.com/streetsidesoftware/cspell-dicts/issues/5513)) ([394ae94](https://github.com/streetsidesoftware/cspell-dicts/commit/394ae94476d8c85ecdb3020da724e375743adf20))
+* Add shared English words from [#5523](https://github.com/streetsidesoftware/cspell-dicts/issues/5523) ([#5553](https://github.com/streetsidesoftware/cspell-dicts/issues/5553)) ([de489d2](https://github.com/streetsidesoftware/cspell-dicts/commit/de489d2bd31499d544862a4b48e1d718af4db9a2))
+* Add software tools, observability and security terms ([#5547](https://github.com/streetsidesoftware/cspell-dicts/issues/5547)) ([dfc22c7](https://github.com/streetsidesoftware/cspell-dicts/commit/dfc22c7c94c4a509e8561a1f52d6f042b2ade12d))
+* add unsynchronized/unsynchronised to en_shared ([#5535](https://github.com/streetsidesoftware/cspell-dicts/issues/5535)) ([d7789ca](https://github.com/streetsidesoftware/cspell-dicts/commit/d7789caf1ea7e5b92f1af52ed27e28712fd43c75))
+* Add word Betterleaks to software-terms dictionary ([#5543](https://github.com/streetsidesoftware/cspell-dicts/issues/5543)) ([ba04724](https://github.com/streetsidesoftware/cspell-dicts/commit/ba047241b6157029405d399c3297826732287276))
+* Workflow Bot -- Build Dictionaries ([#5539](https://github.com/streetsidesoftware/cspell-dicts/issues/5539)) ([d523816](https://github.com/streetsidesoftware/cspell-dicts/commit/d523816a07c7b7a6df7c91a2b759af48b8e0dfed))
+* Workflow Bot -- Build Dictionaries ([#5552](https://github.com/streetsidesoftware/cspell-dicts/issues/5552)) ([0a194f6](https://github.com/streetsidesoftware/cspell-dicts/commit/0a194f66c91dbdbc63e70de0edaf179a0b8df96e))
+* Workflow Bot -- Build Dictionaries ([#5556](https://github.com/streetsidesoftware/cspell-dicts/issues/5556)) ([2a88c52](https://github.com/streetsidesoftware/cspell-dicts/commit/2a88c52b51113929dd263926d2dceacf183b3c4d))
+* Workflow Bot -- Update Dictionaries ([#5521](https://github.com/streetsidesoftware/cspell-dicts/issues/5521)) ([05dc299](https://github.com/streetsidesoftware/cspell-dicts/commit/05dc2994fd52b0884ee7cb6bb654e778ae0a628c))
+* Workflow Bot -- Update Dictionaries ([#5555](https://github.com/streetsidesoftware/cspell-dicts/issues/5555)) ([3e8cb66](https://github.com/streetsidesoftware/cspell-dicts/commit/3e8cb669ea211fbef31372efd6681aa73d015519))
+
+
+### Dependencies
+
+* The following workspace dependencies were updated
+  * devDependencies
+    * @cspell/dict-cspell-bundle bumped to 2.0.64
+
 ## [33.8.3](https://github.com/streetsidesoftware/cspell-dicts/compare/cspell-dicts@33.8.2...cspell-dicts@33.8.3) (2026-06-15)
 
 
