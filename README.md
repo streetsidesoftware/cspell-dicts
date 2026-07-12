@@ -724,7 +724,6 @@ Special thanks to all of our amazing contributors!
 [<img alt="Contributor smaraf" src="https://avatars.githubusercontent.com/u/1213709?v=4&size=128" width=64>](https://github.com/smaraf)
 [<img alt="Contributor thenamankumar" src="https://avatars.githubusercontent.com/u/22571395?v=4&size=128" width=64>](https://github.com/thenamankumar)
 [<img alt="Contributor uncenter" src="https://avatars.githubusercontent.com/u/47499684?v=4&size=128" width=64>](https://github.com/uncenter)
-[<img alt="Contributor eldarlrd" src="https://avatars.githubusercontent.com/u/95304986?v=4&size=128" width=64>](https://github.com/eldarlrd)
 
 <!--- cspell:enable --->
 
