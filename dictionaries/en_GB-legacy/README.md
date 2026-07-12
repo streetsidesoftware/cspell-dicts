@@ -1,9 +1,9 @@
-# CSpell en_GB Legacy Dictionary
+# CSpell en\_GB Legacy Dictionary
 
 British English Legacy dictionary for cspell.
 
-This dictionary includes words that had been included in older versions of the en_GB dictionary.
-They have been moved here to make the en_GB dictionary easier to maintain.
+This dictionary includes words that had been included in older versions of the en\_GB dictionary.
+They have been moved here to make the en\_GB dictionary easier to maintain.
 
 <!--- @@inject: ../../static/requirements.md --->
 

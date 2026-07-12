@@ -89,6 +89,29 @@
     "patterns": []
   },
   {
+    "name": "Azerbaijani",
+    "version": "1.0.0",
+    "dir": "dictionaries/az_AZ",
+    "packageName": "@cspell/dict-az-az",
+    "description": "Azerbaijani dictionary for cspell.",
+    "cspell": false,
+    "categories": ["natural-language"],
+    "dictionaries": [
+      {
+        "name": "az-az",
+        "description": "Azerbaijani dictionary for cspell.",
+        "locales": ["az", "az-AZ"],
+        "localeFileTypes": [
+          {
+            "locale": "az, az-AZ",
+            "fileType": "*"
+          }
+        ]
+      }
+    ],
+    "patterns": []
+  },
+  {
     "name": "bash",
     "version": "4.2.3",
     "dir": "dictionaries/bash",

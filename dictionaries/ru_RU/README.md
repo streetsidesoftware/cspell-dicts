@@ -151,7 +151,7 @@ See: [How to Create a New Dictionary](https://github.com/streetsidesoftware/cspe
 
 The Hunspell source for this dictionary can be found:
 
-- [dictionaries/ru_RU](https://github.com/wooorm/dictionaries/tree/master/dictionaries/ru_RU)
+- [dictionaries/ru\_RU](https://github.com/wooorm/dictionaries/tree/master/dictionaries/ru_RU)
 
 ## License
 
@@ -163,7 +163,7 @@ GPL-3.0-or-later
 
 ## Adding Missing Words
 
-Please add words to [additional_words.txt](https://github.com/streetsidesoftware/cspell-dicts/blob/main/dictionaries/ru_RU/src/additional_words.txt)
+Please add words to [additional\_words.txt](https://github.com/streetsidesoftware/cspell-dicts/blob/main/dictionaries/ru_RU/src/additional_words.txt)
 
 <!--- @@inject: ../../static/footer.md --->
 

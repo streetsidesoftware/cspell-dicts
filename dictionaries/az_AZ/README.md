@@ -117,9 +117,9 @@ language: az, az-AZ
 
 ## Dictionary Information
 
-| Name    | Enabled | Description             |
-| ------- | ------- | ----------------------- |
-| `az-az` |         | Azerbaijani dictionary. |
+| Name    | Enabled | Description                        |
+| ------- | ------- | ---------------------------------- |
+| `az-az` |         | Azerbaijani dictionary for cspell. |
 
 ## Language Settings
 
