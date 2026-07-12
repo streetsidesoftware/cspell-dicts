@@ -745,8 +745,8 @@ importers:
         specifier: ^10.0.1
         version: 10.0.1(@cspell/cspell-types@10.0.1)
       globby:
-        specifier: ^16.2.0
-        version: 16.2.0
+        specifier: ^16.2.1
+        version: 16.2.1
     devDependencies:
       '@tsconfig/node20':
         specifier: ^20.1.9
@@ -785,8 +785,8 @@ importers:
         specifier: ^10.0.1
         version: 10.0.1(@cspell/cspell-types@10.0.1)
       globby:
-        specifier: ^16.2.0
-        version: 16.2.0
+        specifier: ^16.2.1
+        version: 16.2.1
       globrex:
         specifier: ^0.1.2
         version: 0.1.2
@@ -2523,8 +2523,8 @@ packages:
     resolution: {integrity: sha512-0Ia46fDOaT7k4og1PDW4YbodWWr3scS2vAr2lTbsplOt2WkKp0vQbkI9wKis/T5LV/dqPjO3bpS/z6GTJB82LA==}
     engines: {node: '>=18'}
 
-  globby@16.2.0:
-    resolution: {integrity: sha512-QrJia2qDf5BB/V6HYlDTs0I0lBahyjLzpGQg3KT7FnCdTonAyPy2RtY802m2k4ALx6Dp752f82WsOczEVr3l6Q==}
+  globby@16.2.1:
+    resolution: {integrity: sha512-JmsqJalahxxgW8V2ecSQ2G7UjPlI9cpKdrkG9KoNiXhd/YslXOTEB0cViENWUznuovIuNT+FkMbraDGjr4FCUg==}
     engines: {node: '>=20'}
 
   globrex@0.1.2:
@@ -5180,7 +5180,7 @@ snapshots:
       debug: 4.4.3
       emittery: 2.0.0
       figures: 6.1.0
-      globby: 16.2.0
+      globby: 16.2.1
       ignore-by-default: 2.1.0
       indent-string: 5.0.0
       is-plain-object: 5.0.0
@@ -5434,13 +5434,13 @@ snapshots:
   cpy-cli@7.0.0:
     dependencies:
       cpy: 13.2.2
-      globby: 16.2.0
+      globby: 16.2.1
       meow: 14.1.0
 
   cpy@13.2.2:
     dependencies:
       copy-file: 11.1.0
-      globby: 16.2.0
+      globby: 16.2.1
       junk: 4.0.1
       micromatch: 4.0.8
       p-filter: 4.1.0
@@ -5980,7 +5980,7 @@ snapshots:
       slash: 5.1.0
       unicorn-magic: 0.3.0
 
-  globby@16.2.0:
+  globby@16.2.1:
     dependencies:
       '@sindresorhus/merge-streams': 4.0.0
       fast-glob: 3.3.3
@@ -7834,7 +7834,7 @@ snapshots:
       debug: 4.4.3
       execa: 9.6.1
       fly-import: 1.0.0
-      globby: 16.2.0
+      globby: 16.2.1
       grouped-queue: 2.1.0
       locate-path: 8.0.0
       lodash-es: 4.18.1
