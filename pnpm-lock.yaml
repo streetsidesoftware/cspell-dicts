@@ -73,7 +73,7 @@ importers:
         version: 2.2.3
       prettier:
         specifier: ^3.9.4
-        version: 3.9.4
+        version: 3.9.5
       shx:
         specifier: ^0.4.0
         version: 0.4.0
@@ -719,10 +719,10 @@ importers:
         version: 5.6.2
       yeoman-environment:
         specifier: ^6.1.0
-        version: 6.1.0(@types/node@20.19.43)(@yeoman/adapter@4.0.2(@types/node@20.19.43))(@yeoman/types@1.10.3(@types/node@20.19.43)(@yeoman/adapter@4.0.2(@types/node@20.19.43))(mem-fs@4.1.4))(mem-fs@4.1.4)
+        version: 6.1.0(@types/node@26.1.0)(@yeoman/adapter@4.0.2(@types/node@26.1.0))(@yeoman/types@1.10.3(@types/node@26.1.0)(@yeoman/adapter@4.0.2(@types/node@26.1.0))(mem-fs@4.1.4))(mem-fs@4.1.4)
       yeoman-generator:
         specifier: ^8.2.2
-        version: 8.2.2(@types/node@20.19.43)(@yeoman/types@1.10.3(@types/node@20.19.43)(@yeoman/adapter@4.0.2(@types/node@20.19.43))(mem-fs@4.1.4))(mem-fs@4.1.4)
+        version: 8.2.2(@types/node@26.1.0)(@yeoman/types@1.10.3(@types/node@26.1.0)(@yeoman/adapter@4.0.2(@types/node@26.1.0))(mem-fs@4.1.4))(mem-fs@4.1.4)
       yosay:
         specifier: ^3.0.0
         version: 3.0.0
@@ -795,7 +795,7 @@ importers:
         version: 2.2.3
       prettier:
         specifier: ^3.9.4
-        version: 3.9.4
+        version: 3.9.5
       remark:
         specifier: ^15.0.1
         version: 15.0.1
@@ -3448,8 +3448,8 @@ packages:
     resolution: {integrity: sha512-vkcDPrRZo1QZLbn5RLGPpg/WmIQ65qoWWhcGKf/b5eplkkarX0m9z8ppCat4mlOqUsWpyNuYgO3VRyrYHSzX5g==}
     engines: {node: '>= 0.8.0'}
 
-  prettier@3.9.4:
-    resolution: {integrity: sha512-yWG/o/4oJfo036EKAfK6ACAoDOfHeRHx4tuxkfBZiauURiaSmYwlpOr5LQqKtIkRD2z1PLteme2WoxEnj4tHTg==}
+  prettier@3.9.5:
+    resolution: {integrity: sha512-/FVl766LpUfB5vXgCYOYa0MeV/441Ia99AeICQIQFTY/Nw0roZwULcXpku5i1/m5kt/baz+s4Zogspd839HSMg==}
     engines: {node: '>=14'}
     hasBin: true
 
@@ -3730,6 +3730,10 @@ packages:
 
   string-width@8.2.1:
     resolution: {integrity: sha512-IIaP0g3iy9Cyy18w3M9YcaDudujEAVHKt3a3QJg1+sr/oX96TbaGUubG0hJyCjCBThFH+tFpcIyoUHUn1ogaLA==}
+    engines: {node: '>=20'}
+
+  string-width@8.2.2:
+    resolution: {integrity: sha512-GaPUh5gfdrYzqeVNZvUfT23vYYxXzKYidUcnMtJg/3rxRV63EFZy3k6xfKlmfeJD0176lnUV/Usr3XcwSvFzpg==}
     engines: {node: '>=20'}
 
   stringify-entities@4.0.4:
@@ -4410,21 +4414,21 @@ snapshots:
 
   '@inquirer/ansi@2.0.7': {}
 
-  '@inquirer/checkbox@5.2.1(@types/node@20.19.43)':
+  '@inquirer/checkbox@5.2.1(@types/node@26.1.0)':
     dependencies:
       '@inquirer/ansi': 2.0.7
-      '@inquirer/core': 11.2.1(@types/node@20.19.43)
+      '@inquirer/core': 11.2.1(@types/node@26.1.0)
       '@inquirer/figures': 2.0.7
-      '@inquirer/type': 4.0.7(@types/node@20.19.43)
+      '@inquirer/type': 4.0.7(@types/node@26.1.0)
     optionalDependencies:
-      '@types/node': 20.19.43
+      '@types/node': 26.1.0
 
-  '@inquirer/confirm@6.1.1(@types/node@20.19.43)':
+  '@inquirer/confirm@6.1.1(@types/node@26.1.0)':
     dependencies:
-      '@inquirer/core': 11.2.1(@types/node@20.19.43)
-      '@inquirer/type': 4.0.7(@types/node@20.19.43)
+      '@inquirer/core': 11.2.1(@types/node@26.1.0)
+      '@inquirer/type': 4.0.7(@types/node@26.1.0)
     optionalDependencies:
-      '@types/node': 20.19.43
+      '@types/node': 26.1.0
 
   '@inquirer/core@11.2.1(@types/node@20.19.43)':
     dependencies:
@@ -4438,13 +4442,25 @@ snapshots:
     optionalDependencies:
       '@types/node': 20.19.43
 
-  '@inquirer/editor@5.2.2(@types/node@20.19.43)':
+  '@inquirer/core@11.2.1(@types/node@26.1.0)':
     dependencies:
-      '@inquirer/core': 11.2.1(@types/node@20.19.43)
-      '@inquirer/external-editor': 3.0.3(@types/node@20.19.43)
-      '@inquirer/type': 4.0.7(@types/node@20.19.43)
+      '@inquirer/ansi': 2.0.7
+      '@inquirer/figures': 2.0.7
+      '@inquirer/type': 4.0.7(@types/node@26.1.0)
+      cli-width: 4.1.0
+      fast-wrap-ansi: 0.2.2
+      mute-stream: 3.0.0
+      signal-exit: 4.1.0
     optionalDependencies:
-      '@types/node': 20.19.43
+      '@types/node': 26.1.0
+
+  '@inquirer/editor@5.2.2(@types/node@26.1.0)':
+    dependencies:
+      '@inquirer/core': 11.2.1(@types/node@26.1.0)
+      '@inquirer/external-editor': 3.0.3(@types/node@26.1.0)
+      '@inquirer/type': 4.0.7(@types/node@26.1.0)
+    optionalDependencies:
+      '@types/node': 26.1.0
 
   '@inquirer/expand@5.1.1(@types/node@20.19.43)':
     dependencies:
@@ -4453,12 +4469,19 @@ snapshots:
     optionalDependencies:
       '@types/node': 20.19.43
 
-  '@inquirer/external-editor@3.0.3(@types/node@20.19.43)':
+  '@inquirer/expand@5.1.1(@types/node@26.1.0)':
+    dependencies:
+      '@inquirer/core': 11.2.1(@types/node@26.1.0)
+      '@inquirer/type': 4.0.7(@types/node@26.1.0)
+    optionalDependencies:
+      '@types/node': 26.1.0
+
+  '@inquirer/external-editor@3.0.3(@types/node@26.1.0)':
     dependencies:
       chardet: 2.2.0
       iconv-lite: 0.7.3
     optionalDependencies:
-      '@types/node': 20.19.43
+      '@types/node': 26.1.0
 
   '@inquirer/figures@2.0.7': {}
 
@@ -4469,50 +4492,57 @@ snapshots:
     optionalDependencies:
       '@types/node': 20.19.43
 
-  '@inquirer/number@4.1.1(@types/node@20.19.43)':
+  '@inquirer/input@5.1.2(@types/node@26.1.0)':
     dependencies:
-      '@inquirer/core': 11.2.1(@types/node@20.19.43)
-      '@inquirer/type': 4.0.7(@types/node@20.19.43)
+      '@inquirer/core': 11.2.1(@types/node@26.1.0)
+      '@inquirer/type': 4.0.7(@types/node@26.1.0)
     optionalDependencies:
-      '@types/node': 20.19.43
+      '@types/node': 26.1.0
 
-  '@inquirer/password@5.1.1(@types/node@20.19.43)':
+  '@inquirer/number@4.1.1(@types/node@26.1.0)':
+    dependencies:
+      '@inquirer/core': 11.2.1(@types/node@26.1.0)
+      '@inquirer/type': 4.0.7(@types/node@26.1.0)
+    optionalDependencies:
+      '@types/node': 26.1.0
+
+  '@inquirer/password@5.1.1(@types/node@26.1.0)':
     dependencies:
       '@inquirer/ansi': 2.0.7
-      '@inquirer/core': 11.2.1(@types/node@20.19.43)
-      '@inquirer/type': 4.0.7(@types/node@20.19.43)
+      '@inquirer/core': 11.2.1(@types/node@26.1.0)
+      '@inquirer/type': 4.0.7(@types/node@26.1.0)
     optionalDependencies:
-      '@types/node': 20.19.43
+      '@types/node': 26.1.0
 
-  '@inquirer/prompts@8.5.2(@types/node@20.19.43)':
+  '@inquirer/prompts@8.5.2(@types/node@26.1.0)':
     dependencies:
-      '@inquirer/checkbox': 5.2.1(@types/node@20.19.43)
-      '@inquirer/confirm': 6.1.1(@types/node@20.19.43)
-      '@inquirer/editor': 5.2.2(@types/node@20.19.43)
-      '@inquirer/expand': 5.1.1(@types/node@20.19.43)
-      '@inquirer/input': 5.1.2(@types/node@20.19.43)
-      '@inquirer/number': 4.1.1(@types/node@20.19.43)
-      '@inquirer/password': 5.1.1(@types/node@20.19.43)
-      '@inquirer/rawlist': 5.3.1(@types/node@20.19.43)
-      '@inquirer/search': 4.2.1(@types/node@20.19.43)
-      '@inquirer/select': 5.2.1(@types/node@20.19.43)
+      '@inquirer/checkbox': 5.2.1(@types/node@26.1.0)
+      '@inquirer/confirm': 6.1.1(@types/node@26.1.0)
+      '@inquirer/editor': 5.2.2(@types/node@26.1.0)
+      '@inquirer/expand': 5.1.1(@types/node@26.1.0)
+      '@inquirer/input': 5.1.2(@types/node@26.1.0)
+      '@inquirer/number': 4.1.1(@types/node@26.1.0)
+      '@inquirer/password': 5.1.1(@types/node@26.1.0)
+      '@inquirer/rawlist': 5.3.1(@types/node@26.1.0)
+      '@inquirer/search': 4.2.1(@types/node@26.1.0)
+      '@inquirer/select': 5.2.1(@types/node@26.1.0)
     optionalDependencies:
-      '@types/node': 20.19.43
+      '@types/node': 26.1.0
 
-  '@inquirer/rawlist@5.3.1(@types/node@20.19.43)':
+  '@inquirer/rawlist@5.3.1(@types/node@26.1.0)':
     dependencies:
-      '@inquirer/core': 11.2.1(@types/node@20.19.43)
-      '@inquirer/type': 4.0.7(@types/node@20.19.43)
+      '@inquirer/core': 11.2.1(@types/node@26.1.0)
+      '@inquirer/type': 4.0.7(@types/node@26.1.0)
     optionalDependencies:
-      '@types/node': 20.19.43
+      '@types/node': 26.1.0
 
-  '@inquirer/search@4.2.1(@types/node@20.19.43)':
+  '@inquirer/search@4.2.1(@types/node@26.1.0)':
     dependencies:
-      '@inquirer/core': 11.2.1(@types/node@20.19.43)
+      '@inquirer/core': 11.2.1(@types/node@26.1.0)
       '@inquirer/figures': 2.0.7
-      '@inquirer/type': 4.0.7(@types/node@20.19.43)
+      '@inquirer/type': 4.0.7(@types/node@26.1.0)
     optionalDependencies:
-      '@types/node': 20.19.43
+      '@types/node': 26.1.0
 
   '@inquirer/select@5.2.1(@types/node@20.19.43)':
     dependencies:
@@ -4523,9 +4553,22 @@ snapshots:
     optionalDependencies:
       '@types/node': 20.19.43
 
+  '@inquirer/select@5.2.1(@types/node@26.1.0)':
+    dependencies:
+      '@inquirer/ansi': 2.0.7
+      '@inquirer/core': 11.2.1(@types/node@26.1.0)
+      '@inquirer/figures': 2.0.7
+      '@inquirer/type': 4.0.7(@types/node@26.1.0)
+    optionalDependencies:
+      '@types/node': 26.1.0
+
   '@inquirer/type@4.0.7(@types/node@20.19.43)':
     optionalDependencies:
       '@types/node': 20.19.43
+
+  '@inquirer/type@4.0.7(@types/node@26.1.0)':
+    optionalDependencies:
+      '@types/node': 26.1.0
 
   '@isaacs/fs-minipass@4.0.1':
     dependencies:
@@ -5033,7 +5076,7 @@ snapshots:
   '@types/vinyl@2.0.12':
     dependencies:
       '@types/expect': 1.20.4
-      '@types/node': 20.19.43
+      '@types/node': 26.1.0
 
   '@vercel/nft@1.10.2':
     dependencies:
@@ -5054,12 +5097,12 @@ snapshots:
       - rollup
       - supports-color
 
-  '@yeoman/adapter@4.0.2(@types/node@20.19.43)':
+  '@yeoman/adapter@4.0.2(@types/node@26.1.0)':
     dependencies:
-      '@inquirer/core': 11.2.1(@types/node@20.19.43)
-      '@inquirer/prompts': 8.5.2(@types/node@20.19.43)
+      '@inquirer/core': 11.2.1(@types/node@26.1.0)
+      '@inquirer/prompts': 8.5.2(@types/node@26.1.0)
       chalk: 5.6.2
-      inquirer: 13.4.3(@types/node@20.19.43)
+      inquirer: 13.4.3(@types/node@26.1.0)
       log-symbols: 7.0.1
       ora: 9.4.1
       p-queue: 9.3.1
@@ -5067,18 +5110,18 @@ snapshots:
     transitivePeerDependencies:
       - '@types/node'
 
-  '@yeoman/conflicter@4.1.0(@types/node@20.19.43)(@yeoman/types@1.10.3(@types/node@20.19.43)(@yeoman/adapter@4.0.2(@types/node@20.19.43))(mem-fs@4.1.4))(mem-fs@4.1.4)':
+  '@yeoman/conflicter@4.1.0(@types/node@26.1.0)(@yeoman/types@1.10.3(@types/node@26.1.0)(@yeoman/adapter@4.0.2(@types/node@26.1.0))(mem-fs@4.1.4))(mem-fs@4.1.4)':
     dependencies:
-      '@types/node': 20.19.43
-      '@yeoman/transform': 2.1.2(@types/node@20.19.43)
-      '@yeoman/types': 1.10.3(@types/node@20.19.43)(@yeoman/adapter@4.0.2(@types/node@20.19.43))(mem-fs@4.1.4)
+      '@types/node': 26.1.0
+      '@yeoman/transform': 2.1.2(@types/node@26.1.0)
+      '@yeoman/types': 1.10.3(@types/node@26.1.0)(@yeoman/adapter@4.0.2(@types/node@26.1.0))(mem-fs@4.1.4)
       binary-extensions: 3.1.0
       cli-table: 0.3.11
       dateformat: 5.0.3
       diff: 9.0.0
       isbinaryfile: 5.0.7
       mem-fs: 4.1.4
-      mem-fs-editor: 12.0.4(@types/node@20.19.43)(mem-fs@4.1.4)
+      mem-fs-editor: 12.0.4(@types/node@26.1.0)(mem-fs@4.1.4)
       minimatch: 10.2.5
       p-transform: 5.0.1
       pretty-bytes: 7.1.0
@@ -5091,16 +5134,16 @@ snapshots:
 
   '@yeoman/namespace@2.1.0': {}
 
-  '@yeoman/transform@2.1.2(@types/node@20.19.43)':
+  '@yeoman/transform@2.1.2(@types/node@26.1.0)':
     dependencies:
-      '@types/node': 20.19.43
+      '@types/node': 26.1.0
       minimatch: 9.0.9
 
-  '@yeoman/types@1.10.3(@types/node@20.19.43)(@yeoman/adapter@4.0.2(@types/node@20.19.43))(mem-fs@4.1.4)':
+  '@yeoman/types@1.10.3(@types/node@26.1.0)(@yeoman/adapter@4.0.2(@types/node@26.1.0))(mem-fs@4.1.4)':
     dependencies:
-      '@types/node': 20.19.43
+      '@types/node': 26.1.0
     optionalDependencies:
-      '@yeoman/adapter': 4.0.2(@types/node@20.19.43)
+      '@yeoman/adapter': 4.0.2(@types/node@26.1.0)
       mem-fs: 4.1.4
 
   abbrev@3.0.1: {}
@@ -6116,17 +6159,17 @@ snapshots:
     transitivePeerDependencies:
       - supports-color
 
-  inquirer@13.4.3(@types/node@20.19.43):
+  inquirer@13.4.3(@types/node@26.1.0):
     dependencies:
       '@inquirer/ansi': 2.0.7
-      '@inquirer/core': 11.2.1(@types/node@20.19.43)
-      '@inquirer/prompts': 8.5.2(@types/node@20.19.43)
-      '@inquirer/type': 4.0.7(@types/node@20.19.43)
+      '@inquirer/core': 11.2.1(@types/node@26.1.0)
+      '@inquirer/prompts': 8.5.2(@types/node@26.1.0)
+      '@inquirer/type': 4.0.7(@types/node@26.1.0)
       mute-stream: 3.0.0
       run-async: 4.0.6
       rxjs: 7.8.2
     optionalDependencies:
-      '@types/node': 20.19.43
+      '@types/node': 26.1.0
 
   interpret@1.4.0: {}
 
@@ -6480,7 +6523,7 @@ snapshots:
     dependencies:
       '@types/mdast': 4.0.4
 
-  mem-fs-editor@12.0.4(@types/node@20.19.43)(mem-fs@4.1.4):
+  mem-fs-editor@12.0.4(@types/node@26.1.0)(mem-fs@4.1.4):
     dependencies:
       '@types/ejs': 3.1.5
       '@types/picomatch': 4.0.3
@@ -6498,7 +6541,7 @@ snapshots:
       tinyglobby: 0.2.17
       vinyl: 3.0.1
     optionalDependencies:
-      '@types/node': 20.19.43
+      '@types/node': 26.1.0
     transitivePeerDependencies:
       - bare-abort-controller
       - react-native-b4a
@@ -6506,7 +6549,7 @@ snapshots:
 
   mem-fs@4.1.4:
     dependencies:
-      '@types/node': 20.19.43
+      '@types/node': 26.1.0
       '@types/vinyl': 2.0.12
       vinyl: 3.0.1
       vinyl-file: 5.0.0
@@ -6993,7 +7036,7 @@ snapshots:
       is-unicode-supported: 2.1.0
       log-symbols: 7.0.1
       stdin-discarder: 0.3.2
-      string-width: 8.2.1
+      string-width: 8.2.2
 
   p-event@6.0.1:
     dependencies:
@@ -7174,7 +7217,7 @@ snapshots:
 
   prelude-ls@1.2.1: {}
 
-  prettier@3.9.4: {}
+  prettier@3.9.5: {}
 
   pretty-bytes@7.1.0: {}
 
@@ -7488,6 +7531,11 @@ snapshots:
       strip-ansi: 7.2.0
 
   string-width@8.2.1:
+    dependencies:
+      get-east-asian-width: 1.6.0
+      strip-ansi: 7.2.0
+
+  string-width@8.2.2:
     dependencies:
       get-east-asian-width: 1.6.0
       strip-ansi: 7.2.0
@@ -7821,13 +7869,13 @@ snapshots:
       y18n: 5.0.8
       yargs-parser: 22.0.0
 
-  yeoman-environment@6.1.0(@types/node@20.19.43)(@yeoman/adapter@4.0.2(@types/node@20.19.43))(@yeoman/types@1.10.3(@types/node@20.19.43)(@yeoman/adapter@4.0.2(@types/node@20.19.43))(mem-fs@4.1.4))(mem-fs@4.1.4):
+  yeoman-environment@6.1.0(@types/node@26.1.0)(@yeoman/adapter@4.0.2(@types/node@26.1.0))(@yeoman/types@1.10.3(@types/node@26.1.0)(@yeoman/adapter@4.0.2(@types/node@26.1.0))(mem-fs@4.1.4))(mem-fs@4.1.4):
     dependencies:
-      '@yeoman/adapter': 4.0.2(@types/node@20.19.43)
-      '@yeoman/conflicter': 4.1.0(@types/node@20.19.43)(@yeoman/types@1.10.3(@types/node@20.19.43)(@yeoman/adapter@4.0.2(@types/node@20.19.43))(mem-fs@4.1.4))(mem-fs@4.1.4)
+      '@yeoman/adapter': 4.0.2(@types/node@26.1.0)
+      '@yeoman/conflicter': 4.1.0(@types/node@26.1.0)(@yeoman/types@1.10.3(@types/node@26.1.0)(@yeoman/adapter@4.0.2(@types/node@26.1.0))(mem-fs@4.1.4))(mem-fs@4.1.4)
       '@yeoman/namespace': 2.1.0
-      '@yeoman/transform': 2.1.2(@types/node@20.19.43)
-      '@yeoman/types': 1.10.3(@types/node@20.19.43)(@yeoman/adapter@4.0.2(@types/node@20.19.43))(mem-fs@4.1.4)
+      '@yeoman/transform': 2.1.2(@types/node@26.1.0)
+      '@yeoman/types': 1.10.3(@types/node@26.1.0)(@yeoman/adapter@4.0.2(@types/node@26.1.0))(mem-fs@4.1.4)
       arrify: 3.0.0
       chalk: 5.6.2
       commander: 14.0.3
@@ -7839,7 +7887,7 @@ snapshots:
       locate-path: 8.0.0
       lodash-es: 4.18.1
       mem-fs: 4.1.4
-      mem-fs-editor: 12.0.4(@types/node@20.19.43)(mem-fs@4.1.4)
+      mem-fs-editor: 12.0.4(@types/node@26.1.0)(mem-fs@4.1.4)
       semver: 7.8.5
       slash: 5.1.0
       untildify: 6.0.0
@@ -7850,19 +7898,19 @@ snapshots:
       - react-native-b4a
       - supports-color
 
-  yeoman-generator@8.2.2(@types/node@20.19.43)(@yeoman/types@1.10.3(@types/node@20.19.43)(@yeoman/adapter@4.0.2(@types/node@20.19.43))(mem-fs@4.1.4))(mem-fs@4.1.4):
+  yeoman-generator@8.2.2(@types/node@26.1.0)(@yeoman/types@1.10.3(@types/node@26.1.0)(@yeoman/adapter@4.0.2(@types/node@26.1.0))(mem-fs@4.1.4))(mem-fs@4.1.4):
     dependencies:
       '@types/debug': 4.1.13
       '@types/lodash-es': 4.17.12
       '@yeoman/namespace': 2.1.0
-      '@yeoman/types': 1.10.3(@types/node@20.19.43)(@yeoman/adapter@4.0.2(@types/node@20.19.43))(mem-fs@4.1.4)
+      '@yeoman/types': 1.10.3(@types/node@26.1.0)(@yeoman/adapter@4.0.2(@types/node@26.1.0))(mem-fs@4.1.4)
       chalk: 5.6.2
       debug: 4.4.3
       execa: 9.6.1
       latest-version: 9.0.0
       lodash-es: 4.18.1
       mem-fs: 4.1.4
-      mem-fs-editor: 12.0.4(@types/node@20.19.43)(mem-fs@4.1.4)
+      mem-fs-editor: 12.0.4(@types/node@26.1.0)(mem-fs@4.1.4)
       minimist: 1.2.8
       read-package-up: 12.0.0
       semver: 7.8.5
@@ -7871,7 +7919,7 @@ snapshots:
       text-table: 0.2.0
       type-fest: 5.8.0
     optionalDependencies:
-      '@types/node': 20.19.43
+      '@types/node': 26.1.0
     transitivePeerDependencies:
       - bare-abort-controller
       - react-native-b4a
