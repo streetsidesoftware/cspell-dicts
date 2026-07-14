@@ -38,8 +38,8 @@
     "*.d.ts"
   ],
   "scripts": {
-    "build": "cspell-tools-cli build && pnpm run gz",
-    "build:conditional": "cspell-tools-cli build --conditional && pnpm prepare:dictionary",
+    "build": "cspell-tools-cli build",
+    "build:conditional": "cspell-tools-cli build --conditional",
     "gz": "cspell-tools-cli gzip \"dict/az-az.trie\"",
     "prepare:dictionary": "pnpm run gz",
     "prepublishOnly": "echo pre-publish",

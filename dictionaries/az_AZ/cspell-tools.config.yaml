@@ -3,10 +3,11 @@
 targets:
   - name: 'az-az'
     sources:
-      - filename: 'src/az.dic'
-        maxDepth: 1 # This is set to 1 to prevent initial builds from taking too long.
+      - filename: 'src/hunspell/az.dic'
+        maxDepth: 3 # This is set to 1 to prevent initial builds from taking too long.
     format: 'trie3'
     targetDirectory: './dict'
     generateNonStrict: true
-    compress: false
+    compress: true
+    keepUncompressed: true
 checksumFile: true
