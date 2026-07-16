@@ -746,7 +746,7 @@ importers:
         version: 10.0.1(@cspell/cspell-types@10.0.1)
       globby:
         specifier: ^16.2.1
-        version: 16.2.1
+        version: 16.2.2
     devDependencies:
       '@tsconfig/node20':
         specifier: ^20.1.9
@@ -786,7 +786,7 @@ importers:
         version: 10.0.1(@cspell/cspell-types@10.0.1)
       globby:
         specifier: ^16.2.1
-        version: 16.2.1
+        version: 16.2.2
       globrex:
         specifier: ^0.1.2
         version: 0.1.2
@@ -2640,6 +2640,10 @@ packages:
 
   globby@16.2.1:
     resolution: {integrity: sha512-JmsqJalahxxgW8V2ecSQ2G7UjPlI9cpKdrkG9KoNiXhd/YslXOTEB0cViENWUznuovIuNT+FkMbraDGjr4FCUg==}
+    engines: {node: '>=20'}
+
+  globby@16.2.2:
+    resolution: {integrity: sha512-NLvV9ubZ6NDsJaOpKPy3cQeJpKi9DcWiyCiFUpJPA0YihRqiE6RWaLUmgNNPr8MgPpLZjnBjSmou7uZBRJv9wA==}
     engines: {node: '>=20'}
 
   globrex@0.1.2:
@@ -5600,13 +5604,13 @@ snapshots:
   cpy-cli@7.0.0:
     dependencies:
       cpy: 13.2.2
-      globby: 16.2.1
+      globby: 16.2.2
       meow: 14.1.0
 
   cpy@13.2.2:
     dependencies:
       copy-file: 11.1.0
-      globby: 16.2.1
+      globby: 16.2.2
       junk: 4.0.1
       micromatch: 4.0.8
       p-filter: 4.1.0
@@ -6147,6 +6151,15 @@ snapshots:
       unicorn-magic: 0.3.0
 
   globby@16.2.1:
+    dependencies:
+      '@sindresorhus/merge-streams': 4.0.0
+      fast-glob: 3.3.3
+      ignore: 7.0.6
+      is-path-inside: 4.0.0
+      slash: 5.1.0
+      unicorn-magic: 0.4.0
+
+  globby@16.2.2:
     dependencies:
       '@sindresorhus/merge-streams': 4.0.0
       fast-glob: 3.3.3
