@@ -143,8 +143,8 @@ Special thanks to all of our amazing contributors!
 
 See: [How to Create a New Dictionary](https://github.com/streetsidesoftware/cspell-dicts#how-to-create-a-new-dictionary)
 
-Keep in mind that due to the behavior of this library, the letter "İ" is problematic, and is better handled carefully. Notice how all the 
-words that begin with i in this dictionary are capitalized. This allows both the capitalized and lowercased versions of the words to be 
+Keep in mind that due to the behavior of this library, the letter "İ" is problematic, and is better handled carefully. Notice how all the
+words that begin with i in this dictionary are capitalized. This allows both the capitalized and lowercased versions of the words to be
 recognized.
 
 <!--- @@inject-end: ../../static/contributing.md --->

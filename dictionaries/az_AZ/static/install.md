@@ -31,7 +31,7 @@ Add the following to your VSCode settings:
 {
   "import": ["@cspell/dict-az-az/cspell-ext.json"],
   "language": "az, az-AZ",
-  "dictionaries": "az-az"
+  "dictionaries": "az-az",
 }
 ```
 
@@ -67,7 +67,7 @@ Add the following to your VSCode settings:
 {
   "cSpell.import": ["https://cdn.jsdelivr.net/npm/@cspell/dict-az-az@1/cspell-ext.json"],
   "cSpell.language": "az, az-AZ",
-  "dictionaries": "az-az"
+  "dictionaries": "az-az",
 }
 ```
 
