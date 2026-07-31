@@ -1,11 +1,13 @@
 # yaml-language-server: $schema=https://raw.githubusercontent.com/streetsidesoftware/cspell/main/packages/cspell-tools/cspell-tools.config.schema.json
 
 targets:
-  - name: 'az-az'
+  - name: az-az
     sources:
-      - filename: 'src/az.dic'
+      - filename: 'src/hunspell/az.dic'
         maxDepth: 1 # This is set to 1 to prevent initial builds from taking too long.
-    format: 'trie3'
+      - 'src/additional_words.txt'
+      - 'src/capital_i_words.txt'
+    format: trie3
     targetDirectory: './dict'
     generateNonStrict: true
     compress: false

@@ -43,7 +43,7 @@
     "gz": "cspell-tools-cli gzip \"dict/az-az.trie\"",
     "prepare:dictionary": "pnpm run gz",
     "prepublishOnly": "echo pre-publish",
-    "test": "pipe-cmds \"hunspell-reader words -n 1000 \\\"src/az.dic\\\"\" \"cspell -c ./cspell-ext.json \\\"--locale=az,az-AZ\\\" \\\"--languageId=*\\\" stdin\""
+    "test": "pipe-cmds \"hunspell-reader words -n 1000 \\\"src/hunspell/az.dic\\\"\" \"cspell -c ./cspell-ext.json \\\"--locale=az,az-AZ\\\" \\\"--languageId=*\\\" stdin\""
   },
   "dependencies": {},
   "devDependencies": {}
