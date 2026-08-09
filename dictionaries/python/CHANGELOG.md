@@ -3,6 +3,14 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+## [4.3.0](https://github.com/streetsidesoftware/cspell-dicts/compare/@cspell/dict-python@4.2.29...@cspell/dict-python@4.3.0) (2026-08-09)
+
+
+### Features
+
+* Add new terms to python dictionary ([#5604](https://github.com/streetsidesoftware/cspell-dicts/issues/5604)) ([20878f7](https://github.com/streetsidesoftware/cspell-dicts/commit/20878f7cd6780ec7370eab854551202ce88b0547))
+* Add new terms to python-common dictionary ([#5605](https://github.com/streetsidesoftware/cspell-dicts/issues/5605)) ([a8b93fb](https://github.com/streetsidesoftware/cspell-dicts/commit/a8b93fbfe6021ac168a9198901541c4d7c7eb682))
+
 ## [4.2.29](https://github.com/streetsidesoftware/cspell-dicts/compare/@cspell/dict-python@4.2.28...@cspell/dict-python@4.2.29) (2026-07-12)
 
 
