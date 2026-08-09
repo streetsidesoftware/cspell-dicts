@@ -1,15 +1,5 @@
 # Change Log
 
-## 1.1.0 (2026-07-15)
-
-### Features
-
-* **az_AZ:** new words to dictionary with unsuffixed variants ([34e16476](https://github.com/streetsidesoftware/cspell-dicts/commit/34e16476))
-
-### Chore
-
-* **az_AZ:** add new word & rm unnecessary ignore cases ([8300681c](https://github.com/streetsidesoftware/cspell-dicts/commit/8300681c))
-
 ## 1.0.0 (2026-07-12)
 
 
