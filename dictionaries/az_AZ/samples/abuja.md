@@ -16,4 +16,7 @@ Nigeriyanın paytaxtı. Ölkənin mərkəzində Cos platosunda yerləşir.
 
 <!---
 cspell:ignore Abuca Abucaya Laqos Kendzo Tanqe
+cspell:ignore Nigeriyanın binalardan dekabrında evlər hissədə icrası paytaxtı idarələri ildə ildən ilin inşaat
+cspell:ignore iqamətgahı işlərindən kənardadır memarı müəssisələri məhəllələri mərkəzində nəfərdir qovşağı
+cspell:ignore qərarın sənayesi yerləşir Ölkənin Şəhərin şəhərdən əhalisi əsası
 --->

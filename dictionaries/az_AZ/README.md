@@ -156,7 +156,7 @@ The Hunspell dictionary files (`az.dic` and `az.aff`) are sourced from the [mozi
 Another, additional dictionary has been sourced from [Hugging Face](https://huggingface.
 co/datasets/LocalDoc/azerbaijani_spelling_dictionary_2021) by `vrashad`.
 
-<!-- cspell:ignore mozillaz -->
+<!-- cspell:ignore mozillaz vrashad -->
 
 ## License
 
