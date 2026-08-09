@@ -3,6 +3,15 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+## [5.2.5](https://github.com/streetsidesoftware/cspell-dicts/compare/@cspell/dict-software-terms@5.2.4...@cspell/dict-software-terms@5.2.5) (2026-08-09)
+
+
+### Updates and Bug Fixes
+
+* Add 'Merkle' term to software terms list ([#5578](https://github.com/streetsidesoftware/cspell-dicts/issues/5578)) ([aabe88b](https://github.com/streetsidesoftware/cspell-dicts/commit/aabe88bd083db628843beaabf5f3da82050fa355))
+* Add Oxc tooling terms (oxlint, oxfmt) to software-terms dictionary ([#5585](https://github.com/streetsidesoftware/cspell-dicts/issues/5585)) ([e49ee07](https://github.com/streetsidesoftware/cspell-dicts/commit/e49ee079a57429d349bbd5bb74aea6478b809f96))
+* Add word betterleaksignore to software-terms dictionary ([#5570](https://github.com/streetsidesoftware/cspell-dicts/issues/5570)) ([65269a3](https://github.com/streetsidesoftware/cspell-dicts/commit/65269a3086e850af5da613210eaea752b5fb34f0))
+
 ## [5.2.4](https://github.com/streetsidesoftware/cspell-dicts/compare/@cspell/dict-software-terms@5.2.3...@cspell/dict-software-terms@5.2.4) (2026-07-12)
 
 
