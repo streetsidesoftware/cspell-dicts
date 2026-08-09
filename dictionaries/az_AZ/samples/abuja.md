@@ -15,5 +15,8 @@ Nigeriyanın paytaxtı. Ölkənin mərkəzində Cos platosunda yerləşir.
 Şəhər beş rayondan ibarətdir. Mərkəzi hissədə prezident iqamətgahı yerləşir. İnzibati binalardan–mərkəzi bank, radio evi, beynəlxalq konfrans mərkəzi, həmçinin məscid şəhərin mərkəzində yerləşir. Avtomobil yolları qovşağı var. Beynəlxalq aeroportu üçün ayrılmış 8 min km ərazinin hələlik yalnız 250 km-i mənimsənilmişdir. Yaşayış məhəllələri, xüsusən birmərtəbəli evlər şəhərdən kənardadır. Universitet (1988-ci ildən) və Nigeriya Yol-İnşaat İnstitutu açılmışdır. Yeyinti sənayesi müəssisələri var.
 
 <!---
-cspell:ignore Abuca Abucaya Laqos Kendzo Tanqe platosunda aqlomerasiyanın düşərgəsinin salınmışdır funksiyasının işlərindən edilmişdir köçürülmüşdür olmuşdur tərəfindən layihələndirilmişdir İqtisadiyyatı rayondan ibarətdir İnzibati yolları aeroportu mənimsənilmişdir İnşaat İnstitutu açılmışdır
+cspell:ignore Abuca Abucaya Laqos Kendzo Tanqe
+cspell:ignore Nigeriyanın binalardan dekabrında evlər hissədə icrası paytaxtı idarələri ildə ildən ilin inşaat
+cspell:ignore iqamətgahı işlərindən kənardadır memarı müəssisələri məhəllələri mərkəzində nəfərdir qovşağı
+cspell:ignore qərarın sənayesi yerləşir Ölkənin Şəhərin şəhərdən əhalisi əsası
 --->
