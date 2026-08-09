@@ -10,11 +10,12 @@ REP o a
 REP a o
 
 # english-azerbaijan letter mapping
-MAP 7
+MAP 8
 MAP uü
 MAP oö
 MAP gğ
 MAP iı
+MAP Iİ
 MAP eə
 MAP cç
 MAP sş
@@ -94,13 +95,13 @@ SFX O2 0 i [^eəik]
 SFX O2 k yi k
 SFX O2 0 ni [eəi]
 SFX O2 0 si [eəi]
-SFX O2 0 sini
-SFX O2 0 sinə
-SFX O2 0 sində
-SFX O2 0 sindədir
-SFX O2 0 sindən
-SFX O2 0 sindəndir
-SFX O2 0 sidir
+SFX O2 0 sini .
+SFX O2 0 sinə .
+SFX O2 0 sində .
+SFX O2 0 sindədir .
+SFX O2 0 sindən .
+SFX O2 0 sindəndir .
+SFX O2 0 sidir .
 SFX O2 0 ə [^eəi]  # şəhər-ə
 SFX O2 0 ədir .
 SFX O2 0 yə . # hamiləyə
@@ -165,7 +166,7 @@ SFX F1 0 sı .
 SFX F3 Y 3
 SFX F3 0 u [^aıoueəiöü]
 SFX F3 0 nu .
-SFX F3 0 su.
+SFX F3 0 su .
 
 SFX G2 Y 3
 SFX G2 0 i [^aıoueəiöü]
