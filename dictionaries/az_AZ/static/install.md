@@ -92,8 +92,6 @@ Add the following to your VSCode settings:
 import:
   - https://cdn.jsdelivr.net/npm/@cspell/dict-az-az@1/cspell-ext.json
 language: az, az-AZ
-dictionaries:
-  - az-az
 ```
 
 </details>
