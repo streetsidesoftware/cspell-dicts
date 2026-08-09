@@ -2849,6 +2849,7 @@ add_kwarg
 add_radiobutton
 add_unredirected_header
 addarc
+addaudithook
 addbase
 addclosehook
 addcmd
@@ -2993,6 +2994,7 @@ append
 appendChild
 appendData
 append_nul
+appendleft
 appium-python-client
 application
 applicationinsights
@@ -3009,6 +3011,7 @@ architecture
 archive
 arg
 argcomplete
+argcount
 argon2-cffi
 argon2-cffi-bindings
 argparse
@@ -3600,6 +3603,7 @@ cdll
 ceil
 celery
 cell
+cellvars
 cent
 center
 centerpiece
@@ -4564,6 +4568,7 @@ except
 exception
 exceptiongroup
 exceptions
+exceptiontable
 excepts
 exchangelib
 exclude
@@ -4629,6 +4634,7 @@ exr
 ext
 extend
 extended
+extendleft
 extension
 extensions
 external
@@ -4696,6 +4702,7 @@ fbgemm-gpu
 fcntl
 fcre
 fd
+fdel
 fdopen
 feature
 feature_external_ges
@@ -4769,6 +4776,7 @@ fire
 firebase-admin
 first
 firstChild
+firstlineno
 firstweekday
 fix
 fix_basestring
@@ -4908,6 +4916,7 @@ free
 freedesktop
 freefortnite
 frees
+freevars
 freeze
 freezegun
 frexp
@@ -5098,6 +5107,7 @@ getcode
 getcomments
 getcompname
 getcomptype
+getcontext
 getcookedpat
 getcoroutinelocals
 getcoroutinestate
@@ -5119,7 +5129,9 @@ getfirstweekday
 getfloat
 getfp
 getfqdn
+getframe
 getframeinfo
+getframemodulename
 getframerate
 getfullargspec
 getgeneratorlocals
@@ -5433,6 +5445,7 @@ hex
 hexbytes
 hexdigest
 hexdigits
+hexversion
 hhatto
 hi
 hibob
@@ -6000,6 +6013,7 @@ kubernetes-asyncio
 kwargs
 kwds
 kwlist
+kwonlyargcount
 kz
 l
 label
@@ -6093,6 +6107,7 @@ lineinfo
 lineno
 lines
 linesep
+linetable
 lineterminator
 link
 linkify-it-py
@@ -6120,6 +6135,7 @@ ljust
 ll
 llvmlite
 lmdb
+lnotab
 lo
 load
 loadTestsFromModule
@@ -6140,6 +6156,7 @@ loads
 loadtk
 local
 localcall
+localcontext
 locale
 localeconv
 localhost
@@ -6231,6 +6248,7 @@ macro
 macros
 mactypes
 made
+madvise
 magic
 magicattr
 mail
@@ -6601,6 +6619,7 @@ nim
 ninja
 nis
 nlargest
+nlocals
 nlst
 nltk
 nntplib
@@ -6991,6 +7010,7 @@ pdpyras
 peace
 peek
 peer
+peername
 peewee
 pefile
 peft
@@ -7117,6 +7137,7 @@ positionfrom
 positions
 posix
 posixpath
+posonlyargcount
 post
 postcmd
 posthog
@@ -8326,6 +8347,7 @@ sock_sendto
 socket
 sockets
 socketserver
+sockname
 soft
 softkwlist
 softnlp
@@ -8432,6 +8454,7 @@ ssort
 st
 stack
 stack-data
+stacksize
 stackslice
 stackviewer
 staggered
@@ -9298,6 +9321,7 @@ variables
 variance
 variant
 various
+varnames
 vars
 venv
 venvs

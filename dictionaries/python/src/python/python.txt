@@ -115,14 +115,17 @@ accumulate
 acos
 acosh
 add
+addaudithook
 aifc
 all
 and
 any
 APPDATA
 appdirs
+appendleft
 approx
 archive_util
+argcount
 argparse
 ArithmeticError
 array
@@ -183,6 +186,7 @@ capitalize
 casefold
 ccompiler
 ceil
+cellvars
 center
 cgi
 cgitb
@@ -309,6 +313,7 @@ etree
 eval
 except
 Exception
+exceptiontable
 exec
 exit
 exp
@@ -317,6 +322,7 @@ expanduser
 expandvars
 expat
 expm1
+extendleft
 extension
 fabs
 factorial
@@ -325,6 +331,7 @@ False
 fancy_getopt
 faulthandler
 fcntl
+fdel
 fdopen
 file_util
 filecmp
@@ -339,6 +346,7 @@ filterfalse
 finally
 find
 finditer
+firstlineno
 fixture
 flake8
 float
@@ -351,6 +359,7 @@ for
 format
 format_map
 fractions
+freevars
 freeze_includes
 frexp
 from
@@ -371,9 +380,12 @@ generator
 GeneratorExit
 getatime
 getattr
+getcontext
 getctime
 getcwd
 getenv
+getframe
+getframemodulename
 getheader
 getheaders
 getopt
@@ -399,6 +411,7 @@ headers
 heapq
 help
 hex
+hexversion
 hmac
 hookimpl
 hookspec
@@ -484,6 +497,7 @@ KeyError
 keyword
 kwargs
 kwds
+kwonlyargcount
 lambda
 lchmod
 ldexp
@@ -494,8 +508,11 @@ lib2to3
 libtmux
 license
 linecache
+linetable
 list
 ljust
+lnotab
+localcontext
 locale
 locals
 log
@@ -509,6 +526,7 @@ lstat
 lstrip
 lzma
 machinery
+madvise
 mailbox
 mailcap
 main
@@ -556,6 +574,7 @@ netloc
 netrc
 next
 nis
+nlocals
 nntplib
 noinspection
 None
@@ -593,6 +612,7 @@ pass
 path
 pathlib
 pdb
+peername
 PendingDeprecationWarning
 pep257
 pep8
@@ -615,6 +635,7 @@ pool
 pop
 poplib
 posix
+posonlyargcount
 pow
 pprint
 prereleases
@@ -726,6 +747,7 @@ sndhdr
 socket
 socket_helper
 socketserver
+sockname
 sorted
 spawn
 split
@@ -736,6 +758,7 @@ spwd
 sqlite3
 sqrt
 ssl
+stacksize
 starmap
 startswith
 stat
@@ -838,6 +861,7 @@ uu
 uuid
 validate
 ValueError
+varnames
 vars
 venv
 venvs
