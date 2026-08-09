@@ -1,5 +1,17 @@
 # Change Log
 
+## [1.1.0](https://github.com/streetsidesoftware/cspell-dicts/compare/@cspell/dict-az-az@1.0.0...@cspell/dict-az-az@1.1.0) (2026-08-09)
+
+
+### Features
+
+* **az_AZ:** new words to dictionary with unsuffixed variants ([#5566](https://github.com/streetsidesoftware/cspell-dicts/issues/5566)) ([07685a0](https://github.com/streetsidesoftware/cspell-dicts/commit/07685a02fbf13b3db8e462b9a1f3c4361c4cb4d4))
+
+
+### Updates and Bug Fixes
+
+* Adjust the source locations of the AZ dictionary files. ([#5602](https://github.com/streetsidesoftware/cspell-dicts/issues/5602)) ([8155763](https://github.com/streetsidesoftware/cspell-dicts/commit/8155763cb0421a3c8987461e6d7d5e690572ca3e))
+
 ## 1.0.0 (2026-07-12)
 
 
