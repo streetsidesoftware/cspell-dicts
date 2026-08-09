@@ -1,5 +1,12 @@
 # Change Log
 
+## [1.1.1](https://github.com/streetsidesoftware/cspell-dicts/compare/@cspell/dict-az-az@1.1.0...@cspell/dict-az-az@1.1.1) (2026-08-09)
+
+
+### Updates and Bug Fixes
+
+* Workflow Bot -- Update Dictionaries ([#5607](https://github.com/streetsidesoftware/cspell-dicts/issues/5607)) ([4239a8f](https://github.com/streetsidesoftware/cspell-dicts/commit/4239a8fcad414b07f1423657fec5c66a60627033))
+
 ## [1.1.0](https://github.com/streetsidesoftware/cspell-dicts/compare/@cspell/dict-az-az@1.0.0...@cspell/dict-az-az@1.1.0) (2026-08-09)
 
 

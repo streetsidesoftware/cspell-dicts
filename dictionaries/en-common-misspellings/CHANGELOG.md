@@ -1,5 +1,12 @@
 # Change Log
 
+## [2.2.0](https://github.com/streetsidesoftware/cspell-dicts/compare/@cspell/dict-en-common-misspellings@2.1.13...@cspell/dict-en-common-misspellings@2.2.0) (2026-08-09)
+
+
+### Features
+
+* Add new terms to software-terms dictionary ([#5606](https://github.com/streetsidesoftware/cspell-dicts/issues/5606)) ([72cf2f0](https://github.com/streetsidesoftware/cspell-dicts/commit/72cf2f0d0e2d7054a32b2e2aef6470c4e5c1e13c))
+
 ## [2.1.13](https://github.com/streetsidesoftware/cspell-dicts/compare/@cspell/dict-en-common-misspellings@2.1.12...@cspell/dict-en-common-misspellings@2.1.13) (2026-07-12)
 
 

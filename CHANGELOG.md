@@ -1,5 +1,27 @@
 # Release Notes
 
+## [33.11.0](https://github.com/streetsidesoftware/cspell-dicts/compare/cspell-dicts@33.10.0...cspell-dicts@33.11.0) (2026-08-09)
+
+
+### Features
+
+* Add new terms to python dictionary ([#5604](https://github.com/streetsidesoftware/cspell-dicts/issues/5604)) ([20878f7](https://github.com/streetsidesoftware/cspell-dicts/commit/20878f7cd6780ec7370eab854551202ce88b0547))
+* Add new terms to python-common dictionary ([#5605](https://github.com/streetsidesoftware/cspell-dicts/issues/5605)) ([a8b93fb](https://github.com/streetsidesoftware/cspell-dicts/commit/a8b93fbfe6021ac168a9198901541c4d7c7eb682))
+* Add new terms to software-terms dictionary ([#5606](https://github.com/streetsidesoftware/cspell-dicts/issues/5606)) ([72cf2f0](https://github.com/streetsidesoftware/cspell-dicts/commit/72cf2f0d0e2d7054a32b2e2aef6470c4e5c1e13c))
+
+
+### Updates and Bug Fixes
+
+* Add WHATWG acronym definition to computing-acronyms.txt ([#5611](https://github.com/streetsidesoftware/cspell-dicts/issues/5611)) ([1f287be](https://github.com/streetsidesoftware/cspell-dicts/commit/1f287bedd76eadd6d052442383dc3b2be42dc7a7))
+* Workflow Bot -- Update Dictionaries ([#5607](https://github.com/streetsidesoftware/cspell-dicts/issues/5607)) ([4239a8f](https://github.com/streetsidesoftware/cspell-dicts/commit/4239a8fcad414b07f1423657fec5c66a60627033))
+
+
+### Dependencies
+
+* The following workspace dependencies were updated
+  * devDependencies
+    * @cspell/dict-cspell-bundle bumped to 2.0.66
+
 ## [33.10.0](https://github.com/streetsidesoftware/cspell-dicts/compare/cspell-dicts@33.9.0...cspell-dicts@33.10.0) (2026-08-09)
 
 

@@ -3,6 +3,18 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+## [5.3.0](https://github.com/streetsidesoftware/cspell-dicts/compare/@cspell/dict-software-terms@5.2.5...@cspell/dict-software-terms@5.3.0) (2026-08-09)
+
+
+### Features
+
+* Add new terms to software-terms dictionary ([#5606](https://github.com/streetsidesoftware/cspell-dicts/issues/5606)) ([72cf2f0](https://github.com/streetsidesoftware/cspell-dicts/commit/72cf2f0d0e2d7054a32b2e2aef6470c4e5c1e13c))
+
+
+### Updates and Bug Fixes
+
+* Add WHATWG acronym definition to computing-acronyms.txt ([#5611](https://github.com/streetsidesoftware/cspell-dicts/issues/5611)) ([1f287be](https://github.com/streetsidesoftware/cspell-dicts/commit/1f287bedd76eadd6d052442383dc3b2be42dc7a7))
+
 ## [5.2.5](https://github.com/streetsidesoftware/cspell-dicts/compare/@cspell/dict-software-terms@5.2.4...@cspell/dict-software-terms@5.2.5) (2026-08-09)
 
 
