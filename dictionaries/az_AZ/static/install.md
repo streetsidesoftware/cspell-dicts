@@ -31,7 +31,6 @@ Add the following to your VSCode settings:
 {
   "import": ["@cspell/dict-az-az/cspell-ext.json"],
   "language": "az, az-AZ",
-  "dictionaries": "az-az",
 }
 ```
 
