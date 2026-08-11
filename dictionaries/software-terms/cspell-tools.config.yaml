@@ -50,6 +50,20 @@ targets:
     targetDirectory: './dict'
     generateNonStrict: false
     compress: false
+  - name: 'posix-signals'
+    sources:
+      - filename: src/posix-signals.txt
+    format: plaintext
+    targetDirectory: './dict'
+    generateNonStrict: false
+    compress: false
+  - name: 'posix-errno'
+    sources:
+      - filename: src/posix-errno.txt
+    format: plaintext
+    targetDirectory: './dict'
+    generateNonStrict: false
+    compress: false
   - name: 'coding-compound-terms'
     sources:
       - filename: src/coding-compound-terms.txt
