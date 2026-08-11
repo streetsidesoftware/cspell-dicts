@@ -37,6 +37,16 @@
             "description": "Common acronyms related to computing."
         },
         {
+            "name": "posix-signals",
+            "path": "./dict/posix-signals.txt",
+            "description": "Names of POSIX standard signals."
+        },
+        {
+            "name": "posix-errno",
+            "path": "./dict/posix-errno.txt",
+            "description": "Symbolic error names corresponding to POSIX errno values."
+        },
+        {
             "name": "coding-compound-terms",
             "path": "./dict/coding-compound-terms.txt",
             "description": "Common coding compound terms."
@@ -51,6 +61,8 @@
     "dictionaries": [
         "softwareTerms",
         "coding-compound-terms",
+        "posix-signals",
+        "posix-errno",
         "computing-acronyms",
         "software-term-suggestions",
         "software-tools",
