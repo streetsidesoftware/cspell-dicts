@@ -3,6 +3,23 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+## [5.2.45](https://github.com/streetsidesoftware/cspell-dicts/compare/@cspell/dict-npm@5.2.44...@cspell/dict-npm@5.2.45) (2026-08-09)
+
+
+### Updates and Bug Fixes
+
+* Workflow Bot -- Update Dictionaries ([#5607](https://github.com/streetsidesoftware/cspell-dicts/issues/5607)) ([4239a8f](https://github.com/streetsidesoftware/cspell-dicts/commit/4239a8fcad414b07f1423657fec5c66a60627033))
+
+## [5.2.44](https://github.com/streetsidesoftware/cspell-dicts/compare/@cspell/dict-npm@5.2.43...@cspell/dict-npm@5.2.44) (2026-08-09)
+
+
+### Updates and Bug Fixes
+
+* Add @unrs/* packages and unrs-resolver to npm dictionary ([#5589](https://github.com/streetsidesoftware/cspell-dicts/issues/5589)) ([d7751b5](https://github.com/streetsidesoftware/cspell-dicts/commit/d7751b59e8e29fb63a5d726d1b2d391c4fb6f1c8))
+* Workflow Bot -- Update Dictionaries ([#5568](https://github.com/streetsidesoftware/cspell-dicts/issues/5568)) ([aaee83e](https://github.com/streetsidesoftware/cspell-dicts/commit/aaee83e7adae1cf4f52a468de53421246afdf545))
+* Workflow Bot -- Update Dictionaries ([#5579](https://github.com/streetsidesoftware/cspell-dicts/issues/5579)) ([1ef4c7b](https://github.com/streetsidesoftware/cspell-dicts/commit/1ef4c7bfffbfbd8bb874adefa07dac7ffdaee490))
+* Workflow Bot -- Update Dictionaries ([#5591](https://github.com/streetsidesoftware/cspell-dicts/issues/5591)) ([6842eee](https://github.com/streetsidesoftware/cspell-dicts/commit/6842eee706192bc9343277b93b3145757e056eb0))
+
 ## [5.2.43](https://github.com/streetsidesoftware/cspell-dicts/compare/@cspell/dict-npm@5.2.42...@cspell/dict-npm@5.2.43) (2026-07-12)
 
 

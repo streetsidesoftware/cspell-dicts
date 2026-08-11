@@ -3,6 +3,13 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+## [1.1.0](https://github.com/streetsidesoftware/cspell-dicts/compare/@cspell/dict-monkeyc@1.0.12...@cspell/dict-monkeyc@1.1.0) (2026-08-09)
+
+
+### Features
+
+* Add new terms to software-terms dictionary ([#5606](https://github.com/streetsidesoftware/cspell-dicts/issues/5606)) ([72cf2f0](https://github.com/streetsidesoftware/cspell-dicts/commit/72cf2f0d0e2d7054a32b2e2aef6470c4e5c1e13c))
+
 ## [1.0.12](https://github.com/streetsidesoftware/cspell-dicts/compare/@cspell/dict-monkeyc@1.0.11...@cspell/dict-monkeyc@1.0.12) (2025-12-17)
 
 

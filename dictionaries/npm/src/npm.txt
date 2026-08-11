@@ -3,6 +3,7 @@
 # Packages not found at https://npmjs.com will be removed.
 # To add a new packages, just add it after this line, it will get automatically sorted.
 @11ty/eleventy
+@11ty/gray-matter
 @adobe/css-tools
 @adonisjs/core
 @alifd/next
@@ -81,6 +82,7 @@
 @babel/types
 @biomejs/biome
 @biz-dev-ops/md-docs
+@bramus/specificity
 @bugsnag/react-native
 @busy-hour/blaze
 @busy-hour/blaze-types
@@ -131,6 +133,7 @@
 @commitlint/cli
 @compodoc/compodoc
 @comunica/core
+@coralogix/browser
 @coreui/coreui
 @crxjs/vite-plugin
 @csstools/color-helpers
@@ -369,6 +372,7 @@
 @phosphor/widgets
 @phun-ky/speccer
 @pinia/testing
+@platejs/core
 @pmmmwh/react-refresh-webpack-plugin
 @polymer/polymer
 @popperjs/core
@@ -395,6 +399,8 @@
 @storybook/addon-docs
 @storybook/addon-vitest
 @strapi/strapi
+@stryker-mutator/api
+@stryker-mutator/core
 @subwallet/react-ui
 @supernovaio/sdk
 @supernovaio/sdk-exporters
@@ -431,6 +437,7 @@
 @teamteanpm2024/beatae-aliquid-id
 @teamteanpm2024/odio-fugiat-in
 @teamteanpm2024/voluptatibus-reprehenderit-odit
+@temporalio/testing
 @testcontainers/postgresql
 @testing-library/cypress
 @testing-library/dom
@@ -509,6 +516,43 @@
 @uiw/react-overlay-trigger
 @uiw/utils
 @unleash/proxy
+@unrs/resolver-binding-android-arm-eabi
+@unrs/resolver-binding-android-arm64
+@unrs/resolver-binding-darwin-arm64
+@unrs/resolver-binding-darwin-x64
+@unrs/resolver-binding-freebsd-x64
+@unrs/resolver-binding-linux-arm-gnueabihf
+@unrs/resolver-binding-linux-arm-musleabihf
+@unrs/resolver-binding-linux-arm64-gnu
+@unrs/resolver-binding-linux-arm64-musl
+@unrs/resolver-binding-linux-loong64-gnu
+@unrs/resolver-binding-linux-loong64-musl
+@unrs/resolver-binding-linux-ppc64-gnu
+@unrs/resolver-binding-linux-riscv64-gnu
+@unrs/resolver-binding-linux-riscv64-musl
+@unrs/resolver-binding-linux-s390x-gnu
+@unrs/resolver-binding-linux-x64-gnu
+@unrs/resolver-binding-linux-x64-musl
+@unrs/resolver-binding-openharmony-arm64
+@unrs/resolver-binding-wasm32-wasi
+@unrs/resolver-binding-win32-arm64-msvc
+@unrs/resolver-binding-win32-ia32-msvc
+@unrs/resolver-binding-win32-x64-msvc
+@unrs/rspack-resolver-binding-darwin-arm64
+@unrs/rspack-resolver-binding-darwin-x64
+@unrs/rspack-resolver-binding-freebsd-x64
+@unrs/rspack-resolver-binding-linux-arm-gnueabihf
+@unrs/rspack-resolver-binding-linux-arm-musleabihf
+@unrs/rspack-resolver-binding-linux-arm64-gnu
+@unrs/rspack-resolver-binding-linux-arm64-musl
+@unrs/rspack-resolver-binding-linux-ppc64-gnu
+@unrs/rspack-resolver-binding-linux-s390x-gnu
+@unrs/rspack-resolver-binding-linux-x64-gnu
+@unrs/rspack-resolver-binding-linux-x64-musl
+@unrs/rspack-resolver-binding-wasm32-wasi
+@unrs/rspack-resolver-binding-win32-arm64-msvc
+@unrs/rspack-resolver-binding-win32-ia32-msvc
+@unrs/rspack-resolver-binding-win32-x64-msvc
 @uploadcare/file-uploader
 @uppy/companion
 @upstash/context7-mcp
@@ -998,6 +1042,7 @@ docgen
 dockerode
 dockview
 dockview-core
+dockview-react
 docpad
 docschema
 docsify
@@ -2757,6 +2802,7 @@ unified
 unique-random-array
 unist-util-visit
 unplugin
+unrs-resolver
 untildify
 unusual-rope
 unzip

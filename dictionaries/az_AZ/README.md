@@ -145,11 +145,17 @@ See: [How to Create a New Dictionary](https://github.com/streetsidesoftware/cspe
 
 <!--- @@inject-end: ../../static/contributing.md --->
 
+Keep in mind that due to the behavior of the spell checker, the letter `İ` is problematic, and is better handled carefully.
+Notice how all the words that begin with `i` in this dictionary are capitalized. This allows both the capitalized and
+lowercased versions of the words to be recognized.
+
 ## Resources
 
 The Hunspell dictionary files (`az.dic` and `az.aff`) are sourced from the [mozillaz/spellchecker](https://github.com/mozillaz/spellchecker) project, which provides Azerbaijani spell-checking support for Firefox and other applications.
 
-<!-- cspell:ignore mozillaz -->
+Another, additional dictionary has been sourced from [Hugging Face](https://huggingface.co/datasets/LocalDoc/azerbaijani_spelling_dictionary_2021) by `vrashad`.
+
+<!-- cspell:ignore vrashad -->
 
 ## License
 

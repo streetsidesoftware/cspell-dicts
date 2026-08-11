@@ -1,6 +1,6 @@
 {
   "name": "@cspell/dict-az-az",
-  "version": "1.0.0",
+  "version": "1.1.1",
   "description": "Azerbaijani dictionary for cspell.",
   "publishConfig": {
     "access": "public",
@@ -43,7 +43,9 @@
     "gz": "cspell-tools-cli gzip \"dict/az-az.trie\"",
     "prepare:dictionary": "pnpm run gz",
     "prepublishOnly": "echo pre-publish",
-    "test": "pipe-cmds \"hunspell-reader words -n 1000 \\\"src/az.dic\\\"\" \"cspell -c ./cspell-ext.json \\\"--locale=az,az-AZ\\\" \\\"--languageId=*\\\" stdin\""
+    "test": "pnpm run test:dict && pnpm run test:samples",
+    "test:dict": "pipe-cmds \"hunspell-reader words -n 1000 \\\"src/hunspell/az.dic\\\"\" \"cspell -c ./cspell-ext.json \\\"--locale=az,az-AZ\\\" \\\"--languageId=*\\\" stdin\"",
+    "test:samples": "cspell samples"
   },
   "dependencies": {},
   "devDependencies": {}

@@ -1,5 +1,53 @@
 # Release Notes
 
+## [33.11.0](https://github.com/streetsidesoftware/cspell-dicts/compare/cspell-dicts@33.10.0...cspell-dicts@33.11.0) (2026-08-09)
+
+
+### Features
+
+* Add new terms to python dictionary ([#5604](https://github.com/streetsidesoftware/cspell-dicts/issues/5604)) ([20878f7](https://github.com/streetsidesoftware/cspell-dicts/commit/20878f7cd6780ec7370eab854551202ce88b0547))
+* Add new terms to python-common dictionary ([#5605](https://github.com/streetsidesoftware/cspell-dicts/issues/5605)) ([a8b93fb](https://github.com/streetsidesoftware/cspell-dicts/commit/a8b93fbfe6021ac168a9198901541c4d7c7eb682))
+* Add new terms to software-terms dictionary ([#5606](https://github.com/streetsidesoftware/cspell-dicts/issues/5606)) ([72cf2f0](https://github.com/streetsidesoftware/cspell-dicts/commit/72cf2f0d0e2d7054a32b2e2aef6470c4e5c1e13c))
+
+
+### Updates and Bug Fixes
+
+* Add WHATWG acronym definition to computing-acronyms.txt ([#5611](https://github.com/streetsidesoftware/cspell-dicts/issues/5611)) ([1f287be](https://github.com/streetsidesoftware/cspell-dicts/commit/1f287bedd76eadd6d052442383dc3b2be42dc7a7))
+* Workflow Bot -- Update Dictionaries ([#5607](https://github.com/streetsidesoftware/cspell-dicts/issues/5607)) ([4239a8f](https://github.com/streetsidesoftware/cspell-dicts/commit/4239a8fcad414b07f1423657fec5c66a60627033))
+
+
+### Dependencies
+
+* The following workspace dependencies were updated
+  * devDependencies
+    * @cspell/dict-cspell-bundle bumped to 2.0.66
+
+## [33.10.0](https://github.com/streetsidesoftware/cspell-dicts/compare/cspell-dicts@33.9.0...cspell-dicts@33.10.0) (2026-08-09)
+
+
+### Features
+
+* **az_AZ:** new words to dictionary with unsuffixed variants ([#5566](https://github.com/streetsidesoftware/cspell-dicts/issues/5566)) ([07685a0](https://github.com/streetsidesoftware/cspell-dicts/commit/07685a02fbf13b3db8e462b9a1f3c4361c4cb4d4))
+
+
+### Updates and Bug Fixes
+
+* Add 'Merkle' term to software terms list ([#5578](https://github.com/streetsidesoftware/cspell-dicts/issues/5578)) ([aabe88b](https://github.com/streetsidesoftware/cspell-dicts/commit/aabe88bd083db628843beaabf5f3da82050fa355))
+* Add @unrs/* packages and unrs-resolver to npm dictionary ([#5589](https://github.com/streetsidesoftware/cspell-dicts/issues/5589)) ([d7751b5](https://github.com/streetsidesoftware/cspell-dicts/commit/d7751b59e8e29fb63a5d726d1b2d391c4fb6f1c8))
+* Add Oxc tooling terms (oxlint, oxfmt) to software-terms dictionary ([#5585](https://github.com/streetsidesoftware/cspell-dicts/issues/5585)) ([e49ee07](https://github.com/streetsidesoftware/cspell-dicts/commit/e49ee079a57429d349bbd5bb74aea6478b809f96))
+* Add word betterleaksignore to software-terms dictionary ([#5570](https://github.com/streetsidesoftware/cspell-dicts/issues/5570)) ([65269a3](https://github.com/streetsidesoftware/cspell-dicts/commit/65269a3086e850af5da613210eaea752b5fb34f0))
+* Adjust the source locations of the AZ dictionary files. ([#5602](https://github.com/streetsidesoftware/cspell-dicts/issues/5602)) ([8155763](https://github.com/streetsidesoftware/cspell-dicts/commit/8155763cb0421a3c8987461e6d7d5e690572ca3e))
+* Workflow Bot -- Update Dictionaries ([#5568](https://github.com/streetsidesoftware/cspell-dicts/issues/5568)) ([aaee83e](https://github.com/streetsidesoftware/cspell-dicts/commit/aaee83e7adae1cf4f52a468de53421246afdf545))
+* Workflow Bot -- Update Dictionaries ([#5579](https://github.com/streetsidesoftware/cspell-dicts/issues/5579)) ([1ef4c7b](https://github.com/streetsidesoftware/cspell-dicts/commit/1ef4c7bfffbfbd8bb874adefa07dac7ffdaee490))
+* Workflow Bot -- Update Dictionaries ([#5591](https://github.com/streetsidesoftware/cspell-dicts/issues/5591)) ([6842eee](https://github.com/streetsidesoftware/cspell-dicts/commit/6842eee706192bc9343277b93b3145757e056eb0))
+
+
+### Dependencies
+
+* The following workspace dependencies were updated
+  * devDependencies
+    * @cspell/dict-cspell-bundle bumped to 2.0.65
+
 ## [33.9.0](https://github.com/streetsidesoftware/cspell-dicts/compare/cspell-dicts@33.8.3...cspell-dicts@33.9.0) (2026-07-12)
 
 
