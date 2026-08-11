@@ -1,0 +1,38 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<TcPlcObject Version="1.1.0.1">
+  <POU Name="FB_Example" Id="{5eec1a7e-0cc4-45f9-a775-bcf6ce7104d4}" SpecialFunc="None">
+    <Declaration><![CDATA[FUNCTION_BLOCK FB_Example EXTENDS FB_Base
+VAR_INPUT
+    bSomeInput      : BOOL;
+END_VAR
+VAR
+    refSomeInput    : REFERENCE TO BOOL; 
+END_VAR
+VAR_OUTPUT
+    fSomeOutput     : LREAL;
+END_VAR
+]]></Declaration>
+    <Implementation>
+      <ST><![CDATA[fSomeOutput := MyMethod();
+
+IF bSomeInput THEN
+    fSomeOutput := 2.0 * fSomeOutput;
+END_IF
+
+refSomeInput REF= bSomeInput;
+
+IF __ISVALIDREF(refSomeInput) THEN
+    ;
+END_IF
+]]></ST>
+    </Implementation>
+    <Method Name="MyMethod" Id="{e68aec72-ce46-4434-ba7d-f43f777ebeba}">
+      <Declaration><![CDATA[METHOD MyMethod : LREAL
+]]></Declaration>
+      <Implementation>
+        <ST><![CDATA[MyMethod := 1.0 + 2.0;
+]]></ST>
+      </Implementation>
+    </Method>
+  </POU>
+</TcPlcObject>
