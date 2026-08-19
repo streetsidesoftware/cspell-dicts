@@ -3,6 +3,13 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+## [4.4.0](https://github.com/streetsidesoftware/cspell-dicts/compare/@cspell/dict-python@4.3.0...@cspell/dict-python@4.4.0) (2026-08-19)
+
+
+### Features
+
+* Add underscore-prefixed builtin module names to Python dictionary ([#5622](https://github.com/streetsidesoftware/cspell-dicts/issues/5622)) ([bb6dc60](https://github.com/streetsidesoftware/cspell-dicts/commit/bb6dc602856774842ab55b58f6e5ba1247697735))
+
 ## [4.3.0](https://github.com/streetsidesoftware/cspell-dicts/compare/@cspell/dict-python@4.2.29...@cspell/dict-python@4.3.0) (2026-08-09)
 
 

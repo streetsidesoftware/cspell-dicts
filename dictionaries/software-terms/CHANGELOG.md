@@ -3,6 +3,19 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+## [5.4.0](https://github.com/streetsidesoftware/cspell-dicts/compare/@cspell/dict-software-terms@5.3.0...@cspell/dict-software-terms@5.4.0) (2026-08-19)
+
+
+### Features
+
+* Add POSIX signals and error names to `software-terms` dictionary ([#5619](https://github.com/streetsidesoftware/cspell-dicts/issues/5619)) ([1c78c19](https://github.com/streetsidesoftware/cspell-dicts/commit/1c78c1931997cdf1d7c099ae377f1fbfa3980c69))
+
+
+### Updates and Bug Fixes
+
+* Add idempotently to software-terms dictionary ([#5616](https://github.com/streetsidesoftware/cspell-dicts/issues/5616)) ([106844b](https://github.com/streetsidesoftware/cspell-dicts/commit/106844b9696b1832d11cfae24cb3dc2e4b728969))
+* orpc to software-tools ([#5620](https://github.com/streetsidesoftware/cspell-dicts/issues/5620)) ([ff88502](https://github.com/streetsidesoftware/cspell-dicts/commit/ff88502a9a2711171eb781ebe448098f5bfa6555))
+
 ## [5.3.0](https://github.com/streetsidesoftware/cspell-dicts/compare/@cspell/dict-software-terms@5.2.5...@cspell/dict-software-terms@5.3.0) (2026-08-09)
 
 
