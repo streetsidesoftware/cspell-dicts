@@ -3,6 +3,13 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+## [6.0.27](https://github.com/streetsidesoftware/cspell-dicts/compare/@cspell/dict-golang@6.0.26...@cspell/dict-golang@6.0.27) (2026-08-19)
+
+
+### Updates and Bug Fixes
+
+* Add 'errno' to coding terms list ([#5636](https://github.com/streetsidesoftware/cspell-dicts/issues/5636)) ([d35d06d](https://github.com/streetsidesoftware/cspell-dicts/commit/d35d06d241c052bebe720fec2a6c6433ba6e50f0))
+
 ## [6.0.26](https://github.com/streetsidesoftware/cspell-dicts/compare/@cspell/dict-golang@6.0.25...@cspell/dict-golang@6.0.26) (2026-01-03)
 
 

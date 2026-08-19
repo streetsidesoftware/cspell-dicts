@@ -1,5 +1,20 @@
 # Release Notes
 
+## [33.12.1](https://github.com/streetsidesoftware/cspell-dicts/compare/cspell-dicts@33.12.0...cspell-dicts@33.12.1) (2026-08-19)
+
+
+### Updates and Bug Fixes
+
+* Add 'errno' to coding terms list ([#5636](https://github.com/streetsidesoftware/cspell-dicts/issues/5636)) ([d35d06d](https://github.com/streetsidesoftware/cspell-dicts/commit/d35d06d241c052bebe720fec2a6c6433ba6e50f0))
+* Add 'subdeps' term to coding-terms ([#5632](https://github.com/streetsidesoftware/cspell-dicts/issues/5632)) ([df54a84](https://github.com/streetsidesoftware/cspell-dicts/commit/df54a844abe07416347caa9198efd8ad57440b49))
+
+
+### Dependencies
+
+* The following workspace dependencies were updated
+  * devDependencies
+    * @cspell/dict-cspell-bundle bumped to 2.0.68
+
 ## [33.12.0](https://github.com/streetsidesoftware/cspell-dicts/compare/cspell-dicts@33.11.0...cspell-dicts@33.12.0) (2026-08-19)
 
 
