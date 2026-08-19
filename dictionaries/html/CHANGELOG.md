@@ -3,6 +3,13 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+## [4.0.16](https://github.com/streetsidesoftware/cspell-dicts/compare/@cspell/dict-html@4.0.15...@cspell/dict-html@4.0.16) (2026-08-19)
+
+
+### Updates and Bug Fixes
+
+* **html:** add "expando" ([#5613](https://github.com/streetsidesoftware/cspell-dicts/issues/5613)) ([ab8b6b9](https://github.com/streetsidesoftware/cspell-dicts/commit/ab8b6b9b91d2a187c49026daa18cc1f60d97c398))
+
 ## [4.0.15](https://github.com/streetsidesoftware/cspell-dicts/compare/@cspell/dict-html@4.0.14...@cspell/dict-html@4.0.15) (2026-03-09)
 
 
