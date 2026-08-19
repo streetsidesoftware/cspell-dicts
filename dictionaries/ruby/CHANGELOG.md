@@ -3,6 +3,13 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+## [5.1.2](https://github.com/streetsidesoftware/cspell-dicts/compare/@cspell/dict-ruby@5.1.1...@cspell/dict-ruby@5.1.2) (2026-08-19)
+
+
+### Updates and Bug Fixes
+
+* Add 'errno' to coding terms list ([#5636](https://github.com/streetsidesoftware/cspell-dicts/issues/5636)) ([d35d06d](https://github.com/streetsidesoftware/cspell-dicts/commit/d35d06d241c052bebe720fec2a6c6433ba6e50f0))
+
 ## [5.1.1](https://github.com/streetsidesoftware/cspell-dicts/compare/@cspell/dict-ruby@5.1.0...@cspell/dict-ruby@5.1.1) (2026-03-09)
 
 
