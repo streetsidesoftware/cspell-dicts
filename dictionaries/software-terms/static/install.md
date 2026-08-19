@@ -20,6 +20,8 @@ Add the following to your VSCode settings:
     "networking-terms",
     "web-services",
     "computing-acronyms",
+    "posix-signals",
+    "posix-errno",
     "coding-compound-terms",
     "software-terms-alternative",
   ],
@@ -42,6 +44,8 @@ Add the following to your VSCode settings:
     "networking-terms",
     "web-services",
     "computing-acronyms",
+    "posix-signals",
+    "posix-errno",
     "coding-compound-terms",
     "software-terms-alternative",
   ],
@@ -63,6 +67,8 @@ dictionaries:
   - networking-terms
   - web-services
   - computing-acronyms
+  - posix-signals
+  - posix-errno
   - coding-compound-terms
   - software-terms-alternative
 ```
@@ -75,13 +81,15 @@ dictionaries:
 
 ## Dictionary Information
 
-| Name                         | Enabled | Description                            |
-| ---------------------------- | ------- | -------------------------------------- |
-| `software-term-suggestions`  | **Yes** |                                        |
-| `softwareTerms`              | **Yes** | Software terms dictionary.             |
-| `software-tools`             | **Yes** | Software tools dictionary.             |
-| `networking-terms`           |         | Software networking terms dictionary.  |
-| `web-services`               | **Yes** | Web Services and APIs dictionary.      |
-| `computing-acronyms`         | **Yes** | Common acronyms related to computing.  |
-| `coding-compound-terms`      | **Yes** | Common coding compound terms.          |
-| `software-terms-alternative` |         | Alternative software terms dictionary. |
+| Name                         | Enabled | Description                                               |
+| ---------------------------- | ------- | --------------------------------------------------------- |
+| `software-term-suggestions`  | **Yes** |                                                           |
+| `softwareTerms`              | **Yes** | Software terms dictionary.                                |
+| `software-tools`             | **Yes** | Software tools dictionary.                                |
+| `networking-terms`           |         | Software networking terms dictionary.                     |
+| `web-services`               | **Yes** | Web Services and APIs dictionary.                         |
+| `computing-acronyms`         | **Yes** | Common acronyms related to computing.                     |
+| `posix-signals`              |         | Names of POSIX standard signals.                          |
+| `posix-errno`                |         | Symbolic error names corresponding to POSIX errno values. |
+| `coding-compound-terms`      | **Yes** | Common coding compound terms.                             |
+| `software-terms-alternative` |         | Alternative software terms dictionary.                    |
