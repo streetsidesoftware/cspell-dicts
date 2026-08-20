@@ -136,6 +136,29 @@
     "patterns": []
   },
   {
+    "name": "Belarusian",
+    "version": "1.0.0",
+    "dir": "dictionaries/be_BY",
+    "packageName": "@cspell/dict-be-by",
+    "description": "Belarusian dictionary for cspell.",
+    "cspell": false,
+    "categories": ["natural-language"],
+    "dictionaries": [
+      {
+        "name": "be-by",
+        "description": "Belarusian dictionary for cspell.",
+        "locales": ["be", "be-BY"],
+        "localeFileTypes": [
+          {
+            "locale": "be, be-BY",
+            "fileType": "*"
+          }
+        ]
+      }
+    ],
+    "patterns": []
+  },
+  {
     "name": "Bulgarian",
     "version": "3.0.8",
     "dir": "dictionaries/bg_BG",
