@@ -34,10 +34,8 @@ Add the following to your VSCode settings:
 
 ```jsonc
 {
-  "cSpell.import": [
-    "@cspell/dict-be-by/cspell-ext.json"
-  ],
-  "cSpell.language": "be, be-BY"
+  "cSpell.import": ["@cspell/dict-be-by/cspell-ext.json"],
+  "cSpell.language": "be, be-BY",
 }
 ```
 
@@ -50,10 +48,8 @@ Add the following to your VSCode settings:
 
 ```jsonc
 {
-  "import": [
-    "@cspell/dict-be-by/cspell-ext.json"
-  ],
-  "language": "be, be-BY"
+  "import": ["@cspell/dict-be-by/cspell-ext.json"],
+  "language": "be, be-BY",
 }
 ```
 
@@ -66,7 +62,7 @@ Add the following to your VSCode settings:
 
 ```yaml
 import:
-  - "@cspell/dict-be-by/cspell-ext.json"
+  - '@cspell/dict-be-by/cspell-ext.json'
 language: be, be-BY
 ```
 
@@ -85,10 +81,8 @@ Add the following to your VSCode settings:
 
 ```jsonc
 {
-  "cSpell.import": [
-    "https://cdn.jsdelivr.net/npm/@cspell/dict-be-by@1/cspell-ext.json"
-  ],
-  "cSpell.language": "be, be-BY"
+  "cSpell.import": ["https://cdn.jsdelivr.net/npm/@cspell/dict-be-by@1/cspell-ext.json"],
+  "cSpell.language": "be, be-BY",
 }
 ```
 
@@ -101,10 +95,8 @@ Add the following to your VSCode settings:
 
 ```jsonc
 {
-  "import": [
-    "https://cdn.jsdelivr.net/npm/@cspell/dict-be-by@1/cspell-ext.json"
-  ],
-  "language": "be, be-BY"
+  "import": ["https://cdn.jsdelivr.net/npm/@cspell/dict-be-by@1/cspell-ext.json"],
+  "language": "be, be-BY",
 }
 ```
 
@@ -172,7 +164,7 @@ CC BY-SA 4.0
 
 <br/>
 
-***
+---
 
 <p align="center">
 Brought to you by <a href="https://streetsidesoftware.com" title="Street Side Software">

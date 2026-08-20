@@ -15,10 +15,8 @@ Add the following to your VSCode settings:
 
 ```jsonc
 {
-  "cSpell.import": [
-    "@cspell/dict-be-by/cspell-ext.json"
-  ],
-  "cSpell.language": "be, be-BY"
+  "cSpell.import": ["@cspell/dict-be-by/cspell-ext.json"],
+  "cSpell.language": "be, be-BY",
 }
 ```
 
@@ -31,10 +29,8 @@ Add the following to your VSCode settings:
 
 ```jsonc
 {
-  "import": [
-    "@cspell/dict-be-by/cspell-ext.json"
-  ],
-  "language": "be, be-BY"
+  "import": ["@cspell/dict-be-by/cspell-ext.json"],
+  "language": "be, be-BY",
 }
 ```
 
@@ -47,7 +43,7 @@ Add the following to your VSCode settings:
 
 ```yaml
 import:
-  - "@cspell/dict-be-by/cspell-ext.json"
+  - '@cspell/dict-be-by/cspell-ext.json'
 language: be, be-BY
 ```
 
@@ -66,10 +62,8 @@ Add the following to your VSCode settings:
 
 ```jsonc
 {
-  "cSpell.import": [
-    "https://cdn.jsdelivr.net/npm/@cspell/dict-be-by@1/cspell-ext.json"
-  ],
-  "cSpell.language": "be, be-BY"
+  "cSpell.import": ["https://cdn.jsdelivr.net/npm/@cspell/dict-be-by@1/cspell-ext.json"],
+  "cSpell.language": "be, be-BY",
 }
 ```
 
@@ -82,10 +76,8 @@ Add the following to your VSCode settings:
 
 ```jsonc
 {
-  "import": [
-    "https://cdn.jsdelivr.net/npm/@cspell/dict-be-by@1/cspell-ext.json"
-  ],
-  "language": "be, be-BY"
+  "import": ["https://cdn.jsdelivr.net/npm/@cspell/dict-be-by@1/cspell-ext.json"],
+  "language": "be, be-BY",
 }
 ```
 
@@ -106,12 +98,12 @@ language: be, be-BY
 
 ## Dictionary Information
 
-| Name | Enabled | Description |
-| ---- | ------- | ----------- |
-| `be-by` |  | Belarusian dictionary for cspell. |
+| Name    | Enabled | Description                       |
+| ------- | ------- | --------------------------------- |
+| `be-by` |         | Belarusian dictionary for cspell. |
 
 ## Language Settings
 
-| Name | Locale | File Type |
-| ---- | ------ | --------- |
-| `be-by` | `be`, `be-BY` | `*` |
+| Name    | Locale        | File Type |
+| ------- | ------------- | --------- |
+| `be-by` | `be`, `be-BY` | `*`       |
