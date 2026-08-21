@@ -21,50 +21,62 @@
     "patterns": [
         {
             "name": "HTML-id",
+            "description": "Matches values inside a double quoted 'id' attribute",
             "pattern": "/\\bid=\"[^\"]*\"/gi"
         },
         {
             "name": "HTML-src",
+            "description": "Matches values inside a double quoted 'src' attribute",
             "pattern": "/\\bsrc=\"[^\"]*\"/gi"
         },
         {
             "name": "HTML-class",
+            "description": "Matches values inside a double quoted 'class' attribute",
             "pattern": "/\\bclass=\"[^\"]*\"/gi"
         },
         {
             "name": "HTML-IDREF-aria-activedescendant",
+            "description": "Matches values inside a double quoted 'aria-activedescendant' attribute",
             "pattern": "/\\baria-activedescendant=\"[^\"]*\"/gi"
         },
         {
             "name": "HTML-IDREF-aria-controls",
+            "description": "Matches values inside a double quoted 'aria-controls' attribute",
             "pattern": "/\\baria-controls=\"[^\"]*\"/gi"
         },
         {
             "name": "HTML-IDREF-aria-describedby",
+            "description": "Matches values inside a double quoted 'aria-describedby' attribute",
             "pattern": "/\\baria-describedby=\"[^\"]*\"/gi"
         },
         {
             "name": "HTML-IDREF-aria-details",
+            "description": "Matches values inside a double quoted 'aria-details' attribute",
             "pattern": "/\\baria-details=\"[^\"]*\"/gi"
         },
         {
             "name": "HTML-IDREF-aria-errormessage",
+            "description": "Matches values inside a double quoted 'aria-error' attribute",
             "pattern": "/\\baria-errormessage=\"[^\"]*\"/gi"
         },
         {
             "name": "HTML-IDREF-aria-flowto",
+            "description": "Matches values inside a double quoted 'aria-flowto' attribute",
             "pattern": "/\\baria-flowto=\"[^\"]*\"/gi"
         },
         {
             "name": "HTML-IDREF-aria-labelledby",
+            "description": "Matches values inside a double quoted 'aria-labelledby' attribute",
             "pattern": "/\\baria-labelledby=\"[^\"]*\"/gi"
         },
         {
             "name": "HTML-IDREF-aria-owns",
+            "description": "Matches values inside a double quoted 'aria-owns' attribute",
             "pattern": "/\\baria-owns=\"[^\"]*\"/gi"
         },
         {
             "name": "HTML-IDREF-for",
+            "description": "Matches values inside a double quoted 'for' attribute",
             "pattern": "/\\bfor=\"[^\"]*\"/gi"
         },
         {
