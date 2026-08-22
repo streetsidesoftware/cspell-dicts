@@ -1,0 +1,50 @@
+{
+  "name": "@cspell/dict-tc-plc",
+  "version": "1.0.0",
+  "description": "TwinCat PLC IEC61131 Structured Text (ST) dictionary for cspell.",
+  "publishConfig": {
+    "access": "public",
+    "provenance": true
+  },
+  "exports": {
+    ".": "./cspell-ext.json",
+    "./cspell": "./cspell-ext.json",
+    "./cspell-ext.json": "./cspell-ext.json"
+  },
+  "scripts": {
+    "build": "cspell-tools-cli build",
+    "test": "pnpm test:samples && pnpm test:src",
+    "test:samples": "cspell samples",
+    "test:src": "cspell src/plc.txt",
+    "prepublishOnly": "echo OK",
+    "prepare:dictionary": "pnpm run build"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/streetsidesoftware/cspell-dicts"
+  },
+  "keywords": [
+    "cspell",
+    "cspell-ext",
+    "plc",
+    "PLC IEC61131 Structured Text (ST)",
+    "TwinCat",
+    "dictionary",
+    "spelling"
+  ],
+  "author": "Street Side Software",
+  "contributors": [],
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/streetsidesoftware/cspell-dicts/issues"
+  },
+  "homepage": "https://github.com/streetsidesoftware/cspell-dicts/blob/main/dictionaries/plc#readme",
+  "devDependencies": {},
+  "dependencies": {},
+  "files": [
+    "dict/plc.txt",
+    "cspell-ext.json",
+    "*.js",
+    "*.d.ts"
+  ]
+}

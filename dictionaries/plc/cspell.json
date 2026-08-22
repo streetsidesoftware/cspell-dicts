@@ -1,0 +1,14 @@
+{
+    "version": "0.2",
+    "files": [
+        "**/*.{md,txt}",
+        "**/*{.TcTTO,.TcPOU,.TcDUT,.TcGVL,.TcGTLO}"
+    ],
+    "overrides": [{
+        "filename": "*.{txt,md}",
+        "dictionaries": ["tc-plc"]
+    }],
+    "import": [
+        "./cspell-ext.json"
+    ]
+}
