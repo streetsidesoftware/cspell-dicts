@@ -107,12 +107,11 @@ Common types:
 - `test` — adding or updating tests
 
 Examples:
-```
+<!-- cspell:disable -->
 feat(python): add asyncio-related keywords
 fix(en_US): remove misspelled entry "recieve"
 chore: update pnpm to 11.x
 docs: update CONTRIBUTING.md with regional variant guidance
-```
 
 **Why it matters:** Release Please uses conventional commits to automatically determine version bumps and generate changelogs. A `feat` commit triggers a minor version bump; a `fix` commit triggers a patch bump. Commits that don't follow the convention are ignored by the release tooling.
 
