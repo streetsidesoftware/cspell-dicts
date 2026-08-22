@@ -18,16 +18,16 @@ importers:
         specifier: ^10.0.1
         version: 10.0.1(eslint@10.8.1(supports-color@9.4.0))
       '@lerna-lite/cli':
-        specifier: ^5.5.0
+        specifier: ^5.6.0
         version: 5.6.0(@lerna-lite/exec@5.6.0)(@lerna-lite/publish@5.6.0)(@lerna-lite/run@5.6.0)(@lerna-lite/version@5.6.0(@lerna-lite/exec@5.6.0)(@lerna-lite/publish@5.6.0)(@lerna-lite/run@5.6.0)(@types/node@26.2.0)(conventional-commits-filter@6.0.1))(@types/node@26.2.0)
       '@lerna-lite/exec':
-        specifier: ^5.5.0
+        specifier: ^5.6.0
         version: 5.6.0(@lerna-lite/publish@5.6.0)(@lerna-lite/run@5.6.0)(@lerna-lite/version@5.6.0(@lerna-lite/exec@5.6.0)(@lerna-lite/publish@5.6.0)(@lerna-lite/run@5.6.0)(@types/node@26.2.0)(conventional-commits-filter@6.0.1))(@types/node@26.2.0)
       '@lerna-lite/publish':
-        specifier: ^5.5.0
+        specifier: ^5.6.0
         version: 5.6.0(@lerna-lite/exec@5.6.0)(@lerna-lite/run@5.6.0)(@types/node@26.2.0)(conventional-commits-filter@6.0.1)(supports-color@9.4.0)
       '@lerna-lite/run':
-        specifier: ^5.5.0
+        specifier: ^5.6.0
         version: 5.6.0(@lerna-lite/exec@5.6.0)(@lerna-lite/publish@5.6.0)(@lerna-lite/version@5.6.0(@lerna-lite/exec@5.6.0)(@lerna-lite/publish@5.6.0)(@lerna-lite/run@5.6.0)(@types/node@26.2.0)(conventional-commits-filter@6.0.1))(@types/node@26.2.0)
       '@types/node':
         specifier: ^26.2.0
@@ -745,8 +745,8 @@ importers:
         specifier: ^10.0.1
         version: 10.0.1(@cspell/cspell-types@10.0.1)
       globby:
-        specifier: ^16.2.3
-        version: 16.2.3
+        specifier: ^16.2.4
+        version: 16.2.4
     devDependencies:
       '@tsconfig/node24':
         specifier: ^24.0.5
@@ -785,8 +785,8 @@ importers:
         specifier: ^10.0.1
         version: 10.0.1(@cspell/cspell-types@10.0.1)
       globby:
-        specifier: ^16.2.3
-        version: 16.2.3
+        specifier: ^16.2.4
+        version: 16.2.4
       globrex:
         specifier: ^0.1.2
         version: 0.1.2
@@ -957,8 +957,8 @@ packages:
   '@cspell/dict-git@3.1.0':
     resolution: {integrity: sha512-KEt9zGkxqGy2q1nwH4CbyqTSv5nadpn8BAlDnzlRcnL0Xb3LX9xTgSGShKvzb0bw35lHoYyLWN2ZKAqbC4pgGQ==}
 
-  '@cspell/dict-golang@6.0.26':
-    resolution: {integrity: sha512-YKA7Xm5KeOd14v5SQ4ll6afe9VSy3a2DWM7L9uBq4u3lXToRBQ1W5PRa+/Q9udd+DTURyVVnQ+7b9cnOlNxaRg==}
+  '@cspell/dict-golang@6.0.27':
+    resolution: {integrity: sha512-rRDb2JL8EefaezHGTEclKXCs4eMOS0q/datk94Lm7KQOhlGlzS9FDVZiR1/guh0o+iJCmejQuf5NR2FQeQSWsg==}
 
   '@cspell/dict-google@1.0.9':
     resolution: {integrity: sha512-biL65POqialY0i4g6crj7pR6JnBkbsPovB2WDYkj3H4TuC/QXv7Pu5pdPxeUJA6TSCHI7T5twsO4VSVyRxD9CA==}
@@ -1028,8 +1028,8 @@ packages:
   '@cspell/dict-r@2.1.1':
     resolution: {integrity: sha512-71Ka+yKfG4ZHEMEmDxc6+blFkeTTvgKbKAbwiwQAuKl3zpqs1Y0vUtwW2N4b3LgmSPhV3ODVY0y4m5ofqDuKMw==}
 
-  '@cspell/dict-ruby@5.1.1':
-    resolution: {integrity: sha512-LHrp84oEV6q1ZxPPyj4z+FdKyq1XAKYPtmGptrd+uwHbrF/Ns5+fy6gtSi7pS+uc0zk3JdO9w/tPK+8N1/7WUA==}
+  '@cspell/dict-ruby@5.1.2':
+    resolution: {integrity: sha512-f6Slf11N91ittf71AWlfVVG9GZPezVRBfcMPCTNTWhUsY/VEspkBRZYDhPXjV4df3jqHy5YJs8nlsFcFVF/bMA==}
 
   '@cspell/dict-rust@4.1.2':
     resolution: {integrity: sha512-O1FHrumYcO+HZti3dHfBPUdnDFkI+nbYK3pxYmiM1sr+G0ebOd6qchmswS0Wsc6ZdEVNiPYJY/gZQR6jfW3uOg==}
@@ -1040,8 +1040,8 @@ packages:
   '@cspell/dict-shell@1.2.0':
     resolution: {integrity: sha512-PVctvT22lJ49niMiakO8xieY7ELCAzjSqhejWR7bAMb5AZ9F4WDEs+XdGMnoVHWeXq7K5rcepLPmEJb+37zzIw==}
 
-  '@cspell/dict-software-terms@5.4.0':
-    resolution: {integrity: sha512-VMl91Ep68IuoII3DiD99pr6HnxNAPEpEEqhBZ7CoX4cTAnQDSkobkVUvNmgwF4gkReH7FilIdXQ98Dfl/8OgTg==}
+  '@cspell/dict-software-terms@5.4.1':
+    resolution: {integrity: sha512-tY88gnOWj2ax6h+i7BjU7dIH1f3fvY4WypS0a+TpjBgXC318AdOMmy0zK1SzxGNOjhWJfCeCZNVoLFM/DuOG4g==}
 
   '@cspell/dict-sql@2.2.1':
     resolution: {integrity: sha512-qDHF8MpAYCf4pWU8NKbnVGzkoxMNrFqBHyG/dgrlic5EQiKANCLELYtGlX5auIMDLmTf1inA0eNtv74tyRJ/vg==}
@@ -1185,6 +1185,15 @@ packages:
       '@types/node':
         optional: true
 
+  '@inquirer/core@12.0.0':
+    resolution: {integrity: sha512-+nnvFEXIB08CZNVXpvW3B+zHW96QXvGUjNKJ8NJIPqAZi5Kd4WhYt2S3C234ReepG1qw2HOlEUbjYVHBowXObA==}
+    engines: {node: '>=23.5.0 || ^22.13.0 || ^20.17.0'}
+    peerDependencies:
+      '@types/node': '>=18'
+    peerDependenciesMeta:
+      '@types/node':
+        optional: true
+
   '@inquirer/editor@5.2.2':
     resolution: {integrity: sha512-ZRVd/oD+sYsUd5zVm0NflqEzlqfYCyHNsqkHl2oWXEUHs12tCbcSFi+wVFEvD8+LGRaMUsVrE7qeo6lSG/S1Vg==}
     engines: {node: '>=23.5.0 || ^22.13.0 || ^20.17.0'}
@@ -1196,6 +1205,15 @@ packages:
 
   '@inquirer/expand@5.1.1':
     resolution: {integrity: sha512-YmQpenjbFSHAK3sOd44puHh3V1KXXr+JiNpUztoSQ4drLh2rTVzTap/YtlAVu/5xavifIlBfNEzJ/neZJ1a/1g==}
+    engines: {node: '>=23.5.0 || ^22.13.0 || ^20.17.0'}
+    peerDependencies:
+      '@types/node': '>=18'
+    peerDependenciesMeta:
+      '@types/node':
+        optional: true
+
+  '@inquirer/expand@5.1.2':
+    resolution: {integrity: sha512-OWIH1IyyWqEKIyqC9Xy+Bnga7NkGMovFdo4atYZMUOTRqf6rO2WCv9E/1MyzvOErDBCxs+9UFliRUDc50xs/jw==}
     engines: {node: '>=23.5.0 || ^22.13.0 || ^20.17.0'}
     peerDependencies:
       '@types/node': '>=18'
@@ -1216,8 +1234,21 @@ packages:
     resolution: {integrity: sha512-aJ8TBPOGB6f/2qziPfElISTCEd5XOYTFckA2SGjhNmiKzfK/u4ot3v0DUzGVdUnKjN10EqnnEPck36BkyfLnJw==}
     engines: {node: '>=23.5.0 || ^22.13.0 || ^20.17.0'}
 
+  '@inquirer/figures@2.0.8':
+    resolution: {integrity: sha512-tApbon79GM9ry56ja/Ud3SY2CL4TQsao9fIwDQbgTeNY55025GdMzQ2+UdegV/lx51VNGUB59M0v0nMpybYY4Q==}
+    engines: {node: '>=23.5.0 || ^22.13.0 || ^20.17.0'}
+
   '@inquirer/input@5.1.2':
     resolution: {integrity: sha512-9K/DDBSQpOyZSkt6sOVP9Vo0TR7atX2kuILsUu0x3wVcVbe97lJwIJKMLdMw25tDYuXl/qp6erT0Xs1rfmcfZg==}
+    engines: {node: '>=23.5.0 || ^22.13.0 || ^20.17.0'}
+    peerDependencies:
+      '@types/node': '>=18'
+    peerDependenciesMeta:
+      '@types/node':
+        optional: true
+
+  '@inquirer/input@5.1.3':
+    resolution: {integrity: sha512-F/BZHtyEzP+HO+IGVd4AjBRgvX/ywm42bx8S0+dENk2YclzE9tJ3X/15THwtT6ehApmKvdYDMsVTuyyDod0gOQ==}
     engines: {node: '>=23.5.0 || ^22.13.0 || ^20.17.0'}
     peerDependencies:
       '@types/node': '>=18'
@@ -1272,6 +1303,15 @@ packages:
 
   '@inquirer/select@5.2.1':
     resolution: {integrity: sha512-FlDndEUww8m7BfukO2nJa25vhD+H5jxxCv4oGioKqzyWz3nPHhhw4LKdYRSlXuAx7DsdWia7iyaBPKKS95Evfw==}
+    engines: {node: '>=23.5.0 || ^22.13.0 || ^20.17.0'}
+    peerDependencies:
+      '@types/node': '>=18'
+    peerDependenciesMeta:
+      '@types/node':
+        optional: true
+
+  '@inquirer/select@5.2.2':
+    resolution: {integrity: sha512-RkI8dRHWt+bh04oLixvF1kFzKC7e5rqJoHKkzcqSHATebBXFC6GmrT8ddbVkgSzLV0HnHs2cPFuBINr8otij8Q==}
     engines: {node: '>=23.5.0 || ^22.13.0 || ^20.17.0'}
     peerDependencies:
       '@types/node': '>=18'
@@ -1480,8 +1520,8 @@ packages:
     resolution: {integrity: sha512-+eaY7G2VVpSf2pc5Gn1+mph837V/d/TYTJAgWL9Tb0ogGYcpN3IlAVFgjL+Vv93F/sevrxkvsYCedtpLdcFLzA==}
     engines: {node: '>= 20'}
 
-  '@octokit/request@10.0.13':
-    resolution: {integrity: sha512-v2269YxL9Yf+x3d+gRI63FP0vFQEiWgLyBzxe/Y+0yFDg2B/Tzf5dhh9VNfccVAQnfcfwQWyk/y6Bn7rUXXs7A==}
+  '@octokit/request@10.0.14':
+    resolution: {integrity: sha512-bgWgiSfFS689/AxQDarU+b3Qu1FYewfVr5vI/jhV84s7GQ3C2OsdRxukGGYKB37MCgwcS50UrfBLlHzhiG13sw==}
     engines: {node: '>= 20'}
 
   '@octokit/rest@22.0.1':
@@ -1764,8 +1804,8 @@ packages:
     cpu: [x64]
     os: [win32]
 
-  '@vercel/nft@1.10.2':
-    resolution: {integrity: sha512-w+WyX5Ulmj4dtTZrxaulqrjaLZHSbnPzx75SJsTNYmotKsqn1JlLnDJa+lz5hn90HJofhl/2MAtw0mCrgM3qYw==}
+  '@vercel/nft@1.11.0':
+    resolution: {integrity: sha512-m1QFg+U+3yPOnP1xSYJ73UIRxLOXdts1JOhiOiyPYqEsALgrXFFINvgUaD6R6iNvaBFAjHllBCbkfx4FuOdpaA==}
     engines: {node: '>=20'}
     hasBin: true
 
@@ -2651,8 +2691,8 @@ packages:
     resolution: {integrity: sha512-0Ia46fDOaT7k4og1PDW4YbodWWr3scS2vAr2lTbsplOt2WkKp0vQbkI9wKis/T5LV/dqPjO3bpS/z6GTJB82LA==}
     engines: {node: '>=18'}
 
-  globby@16.2.3:
-    resolution: {integrity: sha512-VZX7TV7jmd/pn71vdnLKtgwy1IWqc3KjI9x1/UtPkwoKk5fKrNLY30ltDe3cAM5xruIN7YuuaulFt133jRrKZg==}
+  globby@16.2.4:
+    resolution: {integrity: sha512-c8B/VNLmxRcmqqenRA9t+9IyOjf9+V6lTxPaUJLqOCONdQkWZ0ETYgX0qbtJqPsgCNusT9MZ5Jeidw8Eb9tn2g==}
     engines: {node: '>=20'}
 
   globrex@0.1.2:
@@ -4281,7 +4321,7 @@ snapshots:
       '@cspell/dict-fullstack': 3.2.9
       '@cspell/dict-gaming-terms': 1.1.2
       '@cspell/dict-git': 3.1.0
-      '@cspell/dict-golang': 6.0.26
+      '@cspell/dict-golang': 6.0.27
       '@cspell/dict-google': 1.0.9
       '@cspell/dict-haskell': 4.0.6
       '@cspell/dict-html': 4.0.16
@@ -4303,11 +4343,11 @@ snapshots:
       '@cspell/dict-public-licenses': 2.0.16
       '@cspell/dict-python': 4.4.0
       '@cspell/dict-r': 2.1.1
-      '@cspell/dict-ruby': 5.1.1
+      '@cspell/dict-ruby': 5.1.2
       '@cspell/dict-rust': 4.1.2
       '@cspell/dict-scala': 5.0.9
       '@cspell/dict-shell': 1.2.0
-      '@cspell/dict-software-terms': 5.4.0
+      '@cspell/dict-software-terms': 5.4.1
       '@cspell/dict-sql': 2.2.1
       '@cspell/dict-svelte': 1.0.7
       '@cspell/dict-swift': 2.0.6
@@ -4401,7 +4441,7 @@ snapshots:
 
   '@cspell/dict-git@3.1.0': {}
 
-  '@cspell/dict-golang@6.0.26': {}
+  '@cspell/dict-golang@6.0.27': {}
 
   '@cspell/dict-google@1.0.9': {}
 
@@ -4452,7 +4492,7 @@ snapshots:
 
   '@cspell/dict-r@2.1.1': {}
 
-  '@cspell/dict-ruby@5.1.1': {}
+  '@cspell/dict-ruby@5.1.2': {}
 
   '@cspell/dict-rust@4.1.2': {}
 
@@ -4460,7 +4500,7 @@ snapshots:
 
   '@cspell/dict-shell@1.2.0': {}
 
-  '@cspell/dict-software-terms@5.4.0': {}
+  '@cspell/dict-software-terms@5.4.1': {}
 
   '@cspell/dict-sql@2.2.1': {}
 
@@ -4575,6 +4615,18 @@ snapshots:
     optionalDependencies:
       '@types/node': 26.2.0
 
+  '@inquirer/core@12.0.0(@types/node@26.2.0)':
+    dependencies:
+      '@inquirer/ansi': 2.0.7
+      '@inquirer/figures': 2.0.8
+      '@inquirer/type': 4.0.7(@types/node@26.2.0)
+      cli-width: 4.1.0
+      fast-wrap-ansi: 0.2.2
+      mute-stream: 3.0.0
+      signal-exit: 4.1.0
+    optionalDependencies:
+      '@types/node': 26.2.0
+
   '@inquirer/editor@5.2.2(@types/node@26.2.0)':
     dependencies:
       '@inquirer/core': 11.2.1(@types/node@26.2.0)
@@ -4590,6 +4642,13 @@ snapshots:
     optionalDependencies:
       '@types/node': 26.2.0
 
+  '@inquirer/expand@5.1.2(@types/node@26.2.0)':
+    dependencies:
+      '@inquirer/core': 12.0.0(@types/node@26.2.0)
+      '@inquirer/type': 4.0.7(@types/node@26.2.0)
+    optionalDependencies:
+      '@types/node': 26.2.0
+
   '@inquirer/external-editor@3.0.3(@types/node@26.2.0)':
     dependencies:
       chardet: 2.2.0
@@ -4599,9 +4658,18 @@ snapshots:
 
   '@inquirer/figures@2.0.7': {}
 
+  '@inquirer/figures@2.0.8': {}
+
   '@inquirer/input@5.1.2(@types/node@26.2.0)':
     dependencies:
       '@inquirer/core': 11.2.1(@types/node@26.2.0)
+      '@inquirer/type': 4.0.7(@types/node@26.2.0)
+    optionalDependencies:
+      '@types/node': 26.2.0
+
+  '@inquirer/input@5.1.3(@types/node@26.2.0)':
+    dependencies:
+      '@inquirer/core': 12.0.0(@types/node@26.2.0)
       '@inquirer/type': 4.0.7(@types/node@26.2.0)
     optionalDependencies:
       '@types/node': 26.2.0
@@ -4660,6 +4728,15 @@ snapshots:
     optionalDependencies:
       '@types/node': 26.2.0
 
+  '@inquirer/select@5.2.2(@types/node@26.2.0)':
+    dependencies:
+      '@inquirer/ansi': 2.0.7
+      '@inquirer/core': 12.0.0(@types/node@26.2.0)
+      '@inquirer/figures': 2.0.8
+      '@inquirer/type': 4.0.7(@types/node@26.2.0)
+    optionalDependencies:
+      '@types/node': 26.2.0
+
   '@inquirer/type@4.0.7(@types/node@26.2.0)':
     optionalDependencies:
       '@types/node': 26.2.0
@@ -4696,9 +4773,9 @@ snapshots:
 
   '@lerna-lite/core@5.6.0(@types/node@26.2.0)':
     dependencies:
-      '@inquirer/expand': 5.1.1(@types/node@26.2.0)
-      '@inquirer/input': 5.1.2(@types/node@26.2.0)
-      '@inquirer/select': 5.2.1(@types/node@26.2.0)
+      '@inquirer/expand': 5.1.2(@types/node@26.2.0)
+      '@inquirer/input': 5.1.3(@types/node@26.2.0)
+      '@inquirer/select': 5.2.2(@types/node@26.2.0)
       '@lerna-lite/npmlog': 5.4.1
       '@npmcli/run-script': 10.0.4
       ci-info: 4.4.0
@@ -4966,7 +5043,7 @@ snapshots:
     dependencies:
       '@octokit/auth-token': 6.0.0
       '@octokit/graphql': 9.0.4
-      '@octokit/request': 10.0.13
+      '@octokit/request': 10.0.14
       '@octokit/request-error': 7.1.1
       '@octokit/types': 17.0.0
       before-after-hook: 4.0.0
@@ -4979,7 +5056,7 @@ snapshots:
 
   '@octokit/graphql@9.0.4':
     dependencies:
-      '@octokit/request': 10.0.13
+      '@octokit/request': 10.0.14
       '@octokit/types': 17.0.0
       universal-user-agent: 7.0.3
 
@@ -5007,7 +5084,7 @@ snapshots:
     dependencies:
       '@octokit/types': 17.0.0
 
-  '@octokit/request@10.0.13':
+  '@octokit/request@10.0.14':
     dependencies:
       '@octokit/endpoint': 11.0.4
       '@octokit/request-error': 7.1.1
@@ -5232,7 +5309,7 @@ snapshots:
   '@typescript/typescript-win32-x64@7.0.2':
     optional: true
 
-  '@vercel/nft@1.10.2(supports-color@9.4.0)':
+  '@vercel/nft@1.11.0(supports-color@9.4.0)':
     dependencies:
       '@mapbox/node-pre-gyp': 2.0.3(supports-color@9.4.0)
       '@rollup/pluginutils': 5.4.0
@@ -5359,7 +5436,7 @@ snapshots:
 
   ava@8.0.1(supports-color@9.4.0):
     dependencies:
-      '@vercel/nft': 1.10.2(supports-color@9.4.0)
+      '@vercel/nft': 1.11.0(supports-color@9.4.0)
       acorn: 8.18.0
       acorn-walk: 8.3.5
       ansi-styles: 6.2.3
@@ -5379,7 +5456,7 @@ snapshots:
       debug: 4.4.3(supports-color@9.4.0)
       emittery: 2.0.0
       figures: 6.1.0
-      globby: 16.2.3
+      globby: 16.2.4
       ignore-by-default: 2.1.0
       indent-string: 5.0.0
       is-plain-object: 5.0.0
@@ -5634,13 +5711,13 @@ snapshots:
   cpy-cli@7.0.0:
     dependencies:
       cpy: 13.2.2
-      globby: 16.2.3
+      globby: 16.2.4
       meow: 14.1.0
 
   cpy@13.2.2:
     dependencies:
       copy-file: 11.1.0
-      globby: 16.2.3
+      globby: 16.2.4
       junk: 4.0.1
       micromatch: 4.0.8
       p-filter: 4.1.0
@@ -6182,12 +6259,13 @@ snapshots:
       slash: 5.1.0
       unicorn-magic: 0.3.0
 
-  globby@16.2.3:
+  globby@16.2.4:
     dependencies:
       '@sindresorhus/merge-streams': 4.0.0
       fast-glob: 3.3.3
       ignore: 7.0.6
       is-path-inside: 4.0.0
+      micromatch: 4.0.8
       slash: 5.1.0
       unicorn-magic: 0.4.0
 
@@ -8058,7 +8136,7 @@ snapshots:
       debug: 4.4.3(supports-color@9.4.0)
       execa: 9.6.1
       fly-import: 1.0.0(supports-color@9.4.0)
-      globby: 16.2.3
+      globby: 16.2.4
       grouped-queue: 2.1.0
       locate-path: 8.0.0
       lodash-es: 4.18.1
