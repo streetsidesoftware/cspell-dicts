@@ -1,0 +1,80 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<TcPlcObject Version="1.1.0.1" ProductVersion="3.1.4024.9">
+  <POU Name="FB_TcPrpAdapter" Id="{e2f86950-d311-4a95-96f6-c6d360c4d90c}" SpecialFunc="None">
+    <Declaration><![CDATA[FUNCTION_BLOCK PUBLIC FB_TcPrpAdapter
+VAR_OUTPUT
+	bLinkA : BOOL;
+	bLinkB : BOOL;
+END_VAR
+VAR
+	_bValid : BOOL;
+	_hResult : HRESULT;
+	_nObjectID : OTCID;
+	_ipObject : ITComObject;
+	_mLinkStatus : STcPrpLinkStatus;
+END_VAR]]></Declaration>
+    <Implementation>
+      <ST><![CDATA[IF NOT _bValid THEN
+	bLinkA := FALSE;
+	bLinkB := FALSE;
+	RETURN;
+END_IF
+
+IF GetObjPara(16#03150005, SIZEOF(_mLinkStatus), ADR(_mLinkStatus)) THEN
+	bLinkA := _mLinkStatus.bLinkA;
+	bLinkB := _mLinkStatus.bLinkB;
+END_IF]]></ST>
+    </Implementation>
+    <Method Name="FB_exit" Id="{f3b5e644-4b50-4f01-bccb-31315201043e}">
+      <Declaration><![CDATA[METHOD FB_exit : BOOL
+VAR_INPUT
+	bInCopyCode : BOOL; // if TRUE, the exit method is called for exiting an instance that is copied afterwards (online change).
+END_VAR
+]]></Declaration>
+      <Implementation>
+        <ST><![CDATA[IF bInCopyCode THEN RETURN; END_IF
+
+_bValid := FALSE;
+
+FW_SafeRelease(ADR(_ipObject));]]></ST>
+      </Implementation>
+    </Method>
+    <Method Name="FB_init" Id="{d61e9592-8a5c-4599-8e1e-8e011206dea6}">
+      <Declaration><![CDATA[METHOD FB_init : BOOL
+VAR_INPUT
+	bInitRetains : BOOL; // if TRUE, the retain variables are initialized (warm start / cold start)
+	bInCopyCode : BOOL;  // if TRUE, the instance afterwards gets moved into the copy code (online change)
+	
+	OID : OTCID; // ObjectID of the PRP Adapter
+END_VAR
+]]></Declaration>
+      <Implementation>
+        <ST><![CDATA[IF bInCopyCode THEN RETURN; END_IF
+
+_nObjectID := OID;
+
+_hResult := FW_ObjMgr_GetObjectInstance(
+	oid:= _nObjectID,
+	iid:= TC_GLOBAL_IID_LIST.IID_ITComObject,
+	pipUnk:= ADR(_ipObject));
+
+_bValid := SUCCEEDED(_hResult);]]></ST>
+      </Implementation>
+    </Method>
+    <Method Name="GetObjPara" Id="{20314aec-9ac1-4b24-bae2-27f2069e6c93}">
+      <Declaration><![CDATA[METHOD INTERNAL GetObjPara : BOOL
+VAR_INPUT
+	nPID : PTCID;
+	nData : UDINT;
+	pData : PVOID;
+END_VAR]]></Declaration>
+      <Implementation>
+        <ST><![CDATA[IF NOT _bValid THEN RETURN; END_IF
+
+_hResult := _ipObject.TcGetObjPara(nPID, nData, pData, 0);
+
+GetObjPara := SUCCEEDED(_hResult);]]></ST>
+      </Implementation>
+    </Method>
+  </POU>
+</TcPlcObject>

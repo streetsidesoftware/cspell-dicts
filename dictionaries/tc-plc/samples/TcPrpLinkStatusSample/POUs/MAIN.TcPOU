@@ -1,0 +1,16 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<TcPlcObject Version="1.1.0.1" ProductVersion="3.1.4024.9">
+  <POU Name="MAIN" Id="{d0de9689-a6ef-4ee8-83ab-ad0fa396fb75}" SpecialFunc="None">
+    <Declaration><![CDATA[PROGRAM MAIN
+VAR
+	fbPRP : FB_TcPrpAdapter(VAR_OIDs.PRP);
+	bLinkA : BOOL;
+	bLinkB : BOOL;
+END_VAR]]></Declaration>
+    <Implementation>
+      <ST><![CDATA[fbPRP(
+	bLinkA=> bLinkA,
+	bLinkB=> bLinkB);]]></ST>
+    </Implementation>
+  </POU>
+</TcPlcObject>
