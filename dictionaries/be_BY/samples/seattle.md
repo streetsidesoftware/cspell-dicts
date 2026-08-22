@@ -12,4 +12,5 @@
 
 <!--
 cspell:words П’юджэт Саўндам англ Сіэ́тл
+cspell:ignore Seattle wikipedia
 -->
