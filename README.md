@@ -121,6 +121,7 @@ Various [cspell](https://github.com/streetsidesoftware/cspell) dictionaries. Eac
 - [Node.js](dictionaries/node) - Node.js dictionary. <sup>1</sup>
 - [NPM](dictionaries/npm) - Dictionary of Common Javascript Packages. <sup>1</sup>
 - [PHP](dictionaries/php) - Php dictionary. <sup>1</sup>
+- [PLC Structured Text](dictionaries/tc-plc) - TwinCat PLC IEC61131 Structured Text (ST) dictionary for cspell.
 - [PowerShell](dictionaries/powershell) - PowerShell Keyword Dictionary <sup>1</sup>
 - [Python](dictionaries/python) - Python Keyword Dictionary <sup>1</sup>
 - [R](dictionaries/r) - R dictionary. <sup>1</sup>
@@ -291,6 +292,7 @@ Various [cspell](https://github.com/streetsidesoftware/cspell) dictionaries. Eac
 | [@cspell/dict-sv](./dictionaries/sv#readme)                                                     | Swedish Dictionary                | sv                                                                                                                                                                                                                                                                                    |
 | [@cspell/dict-svelte](./dictionaries/svelte#readme)<sup>1</sup>                                 | Svelte                            | svelte                                                                                                                                                                                                                                                                                |
 | [@cspell/dict-swift](./dictionaries/swift#readme)<sup>1</sup>                                   | Swift                             | swift                                                                                                                                                                                                                                                                                 |
+| [@cspell/dict-tc-plc](./dictionaries/tc-plc#readme)                                             | PLC Structured Text               | tc-plc                                                                                                                                                                                                                                                                                |
 | [@cspell/dict-terraform](./dictionaries/terraform#readme)<sup>1</sup>                           | Terraform                         | terraform                                                                                                                                                                                                                                                                             |
 | [@cspell/dict-tr-tr](./dictionaries/tr_TR#readme)                                               | Turkish                           | tr-tr                                                                                                                                                                                                                                                                                 |
 | [@cspell/dict-typescript](./dictionaries/typescript#readme)<sup>1</sup>                         | TypeScript/JavaScript             | typescript                                                                                                                                                                                                                                                                            |
@@ -448,6 +450,7 @@ Various [cspell](https://github.com/streetsidesoftware/cspell) dictionaries. Eac
 | [`sv`](dictionaries/sv)                                                              | Swedish Dictionary                                                  | sv<br>sv\_SE                   | -                                                              |
 | [`svelte`](dictionaries/svelte) <sup>1</sup>                                         | Svelte dictionary.                                                  | -                              | javascript<br>svelte<br>typescript                             |
 | [`swift`](dictionaries/swift) <sup>1</sup>                                           | Swift dictionary.                                                   | -                              | swift                                                          |
+| [`tc-plc`](dictionaries/tc-plc)                                                      | TwinCat PLC IEC61131 Structured Text (ST) dictionary.               | -                              | tc-plc                                                         |
 | [`terraform`](dictionaries/terraform) <sup>1</sup>                                   | Terraform dictionary.                                               | -                              | terraform<br>tf<br>tfvars                                      |
 | [`tr-tr`](dictionaries/tr_TR)                                                        | Turkish dictionary.                                                 | tr<br>tr-TR                    | -                                                              |
 | [`typescript`](dictionaries/typescript) <sup>1</sup>                                 | TypeScript and JavaScript dictionary.                               | -                              | astro<br>javascript<br>javascriptreact<br>mdx<br>...           |
@@ -563,12 +566,11 @@ Special thanks to all of our amazing contributors!
 [<img alt="Contributor inwardmovement" src="https://avatars.githubusercontent.com/u/9438102?v=4&size=128" width=64>](https://github.com/inwardmovement)
 [<img alt="Contributor jcfranco" src="https://avatars.githubusercontent.com/u/197440?v=4&size=128" width=64>](https://github.com/jcfranco)
 [<img alt="Contributor jsoref" src="https://avatars.githubusercontent.com/u/2119212?v=4&size=128" width=64>](https://github.com/jsoref)
-[<img alt="Contributor keith-oak" src="https://avatars.githubusercontent.com/u/150318763?v=4&size=128" width=64>](https://github.com/keith-oak)
 [<img alt="Contributor Kissaki" src="https://avatars.githubusercontent.com/u/93181?v=4&size=128" width=64>](https://github.com/Kissaki)
 [<img alt="Contributor liby" src="https://avatars.githubusercontent.com/u/38807139?v=4&size=128" width=64>](https://github.com/liby)
-[<img alt="Contributor luke-underwood" src="https://avatars.githubusercontent.com/u/8190792?v=4&size=128" width=64>](https://github.com/luke-underwood)
 [<img alt="Contributor merlijn-sebrechts" src="https://avatars.githubusercontent.com/u/1492981?v=4&size=128" width=64>](https://github.com/merlijn-sebrechts)
 [<img alt="Contributor miodju" src="https://avatars.githubusercontent.com/u/43204652?v=4&size=128" width=64>](https://github.com/miodju)
+[<img alt="Contributor mtoohey31" src="https://avatars.githubusercontent.com/u/36740602?v=4&size=128" width=64>](https://github.com/mtoohey31)
 [<img alt="Contributor OnkarRuikar" src="https://avatars.githubusercontent.com/u/87750369?v=4&size=128" width=64>](https://github.com/OnkarRuikar)
 [<img alt="Contributor scripthunter7" src="https://avatars.githubusercontent.com/u/57285466?v=4&size=128" width=64>](https://github.com/scripthunter7)
 [<img alt="Contributor simonvanlierde" src="https://avatars.githubusercontent.com/u/90462640?v=4&size=128" width=64>](https://github.com/simonvanlierde)
@@ -576,10 +578,10 @@ Special thanks to all of our amazing contributors!
 [<img alt="Contributor ttasovac" src="https://avatars.githubusercontent.com/u/5304839?v=4&size=128" width=64>](https://github.com/ttasovac)
 [<img alt="Contributor tvardero" src="https://avatars.githubusercontent.com/u/45442278?v=4&size=128" width=64>](https://github.com/tvardero)
 [<img alt="Contributor djmattyg007" src="https://avatars.githubusercontent.com/u/489338?v=4&size=128" width=64>](https://github.com/djmattyg007)
-[<img alt="Contributor mtoohey31" src="https://avatars.githubusercontent.com/u/36740602?v=4&size=128" width=64>](https://github.com/mtoohey31)
+[<img alt="Contributor keith-oak" src="https://avatars.githubusercontent.com/u/150318763?v=4&size=128" width=64>](https://github.com/keith-oak)
+[<img alt="Contributor luke-underwood" src="https://avatars.githubusercontent.com/u/8190792?v=4&size=128" width=64>](https://github.com/luke-underwood)
 [<img alt="Contributor mvilrokx" src="https://avatars.githubusercontent.com/u/507728?v=4&size=128" width=64>](https://github.com/mvilrokx)
 [<img alt="Contributor 0xnmn" src="https://avatars.githubusercontent.com/u/22571395?v=4&size=128" width=64>](https://github.com/0xnmn)
-[<img alt="Contributor BoltonBailey" src="https://avatars.githubusercontent.com/u/8030599?v=4&size=128" width=64>](https://github.com/BoltonBailey)
 [<img alt="Contributor ChocolateLoverRaj" src="https://avatars.githubusercontent.com/u/52586855?v=4&size=128" width=64>](https://github.com/ChocolateLoverRaj)
 [<img alt="Contributor CsatiZoltan" src="https://avatars.githubusercontent.com/u/12742890?v=4&size=128" width=64>](https://github.com/CsatiZoltan)
 [<img alt="Contributor cylewaitforit" src="https://avatars.githubusercontent.com/u/54253392?v=4&size=128" width=64>](https://github.com/cylewaitforit)
@@ -631,6 +633,7 @@ Special thanks to all of our amazing contributors!
 [<img alt="Contributor alcapitan" src="https://avatars.githubusercontent.com/u/60216981?v=4&size=128" width=64>](https://github.com/alcapitan)
 [<img alt="Contributor Androlax2" src="https://avatars.githubusercontent.com/u/39646949?v=4&size=128" width=64>](https://github.com/Androlax2)
 [<img alt="Contributor asktree" src="https://avatars.githubusercontent.com/u/12001874?v=4&size=128" width=64>](https://github.com/asktree)
+[<img alt="Contributor BoltonBailey" src="https://avatars.githubusercontent.com/u/8030599?v=4&size=128" width=64>](https://github.com/BoltonBailey)
 [<img alt="Contributor Boshkovski-David" src="https://avatars.githubusercontent.com/u/172494720?v=4&size=128" width=64>](https://github.com/Boshkovski-David)
 [<img alt="Contributor brandonching" src="https://avatars.githubusercontent.com/u/68457375?v=4&size=128" width=64>](https://github.com/brandonching)
 [<img alt="Contributor carlocorradini" src="https://avatars.githubusercontent.com/u/21266147?v=4&size=128" width=64>](https://github.com/carlocorradini)
@@ -644,6 +647,7 @@ Special thanks to all of our amazing contributors!
 [<img alt="Contributor DCsunset" src="https://avatars.githubusercontent.com/u/23468812?v=4&size=128" width=64>](https://github.com/DCsunset)
 [<img alt="Contributor dimitropoulos" src="https://avatars.githubusercontent.com/u/15232461?v=4&size=128" width=64>](https://github.com/dimitropoulos)
 [<img alt="Contributor Fydon" src="https://avatars.githubusercontent.com/u/3404761?v=4&size=128" width=64>](https://github.com/Fydon)
+[<img alt="Contributor iainbeeston" src="https://avatars.githubusercontent.com/u/111963?v=4&size=128" width=64>](https://github.com/iainbeeston)
 [<img alt="Contributor izzqz" src="https://avatars.githubusercontent.com/u/35831725?v=4&size=128" width=64>](https://github.com/izzqz)
 [<img alt="Contributor pepelsbey" src="https://avatars.githubusercontent.com/u/105274?v=4&size=128" width=64>](https://github.com/pepelsbey)
 [<img alt="Contributor PeshekDotDev" src="https://avatars.githubusercontent.com/u/13825096?v=4&size=128" width=64>](https://github.com/PeshekDotDev)
@@ -663,7 +667,6 @@ Special thanks to all of our amazing contributors!
 [<img alt="Contributor TLagrone-RH" src="https://avatars.githubusercontent.com/u/111539041?v=4&size=128" width=64>](https://github.com/TLagrone-RH)
 [<img alt="Contributor tobiasdiez" src="https://avatars.githubusercontent.com/u/5037600?v=4&size=128" width=64>](https://github.com/tobiasdiez)
 [<img alt="Contributor tueda" src="https://avatars.githubusercontent.com/u/1481665?v=4&size=128" width=64>](https://github.com/tueda)
-[<img alt="Contributor Ueschar" src="https://avatars.githubusercontent.com/u/103148503?v=4&size=128" width=64>](https://github.com/Ueschar)
 [<img alt="Contributor varonix0" src="https://avatars.githubusercontent.com/u/62331820?v=4&size=128" width=64>](https://github.com/varonix0)
 [<img alt="Contributor vineyardbovines" src="https://avatars.githubusercontent.com/u/15176096?v=4&size=128" width=64>](https://github.com/vineyardbovines)
 [<img alt="Contributor vitaliytv" src="https://avatars.githubusercontent.com/u/1549046?v=4&size=128" width=64>](https://github.com/vitaliytv)
@@ -696,7 +699,6 @@ Special thanks to all of our amazing contributors!
 [<img alt="Contributor greysk" src="https://avatars.githubusercontent.com/u/83403671?v=4&size=128" width=64>](https://github.com/greysk)
 [<img alt="Contributor HansRobo" src="https://avatars.githubusercontent.com/u/12395284?v=4&size=128" width=64>](https://github.com/HansRobo)
 [<img alt="Contributor HarryAllen1" src="https://avatars.githubusercontent.com/u/66224939?v=4&size=128" width=64>](https://github.com/HarryAllen1)
-[<img alt="Contributor iainbeeston" src="https://avatars.githubusercontent.com/u/111963?v=4&size=128" width=64>](https://github.com/iainbeeston)
 [<img alt="Contributor IanG" src="https://avatars.githubusercontent.com/u/98599?v=4&size=128" width=64>](https://github.com/IanG)
 [<img alt="Contributor jakezatecky" src="https://avatars.githubusercontent.com/u/3210703?v=4&size=128" width=64>](https://github.com/jakezatecky)
 [<img alt="Contributor janosh" src="https://avatars.githubusercontent.com/u/30958850?v=4&size=128" width=64>](https://github.com/janosh)
@@ -717,6 +719,7 @@ Special thanks to all of our amazing contributors!
 [<img alt="Contributor snelling-a" src="https://avatars.githubusercontent.com/u/72226000?v=4&size=128" width=64>](https://github.com/snelling-a)
 [<img alt="Contributor stratusjerry" src="https://avatars.githubusercontent.com/u/28451941?v=4&size=128" width=64>](https://github.com/stratusjerry)
 [<img alt="Contributor TakumaKurosawa" src="https://avatars.githubusercontent.com/u/39955827?v=4&size=128" width=64>](https://github.com/TakumaKurosawa)
+[<img alt="Contributor Ueschar" src="https://avatars.githubusercontent.com/u/103148503?v=4&size=128" width=64>](https://github.com/Ueschar)
 [<img alt="Contributor verythorough" src="https://avatars.githubusercontent.com/u/6111186?v=4&size=128" width=64>](https://github.com/verythorough)
 [<img alt="Contributor Zereges" src="https://avatars.githubusercontent.com/u/7399594?v=4&size=128" width=64>](https://github.com/Zereges)
 [<img alt="Contributor andrewmurraydavid" src="https://avatars.githubusercontent.com/u/4716734?v=4&size=128" width=64>](https://github.com/andrewmurraydavid)

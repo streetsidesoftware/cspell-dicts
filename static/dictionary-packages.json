@@ -3567,6 +3567,29 @@
     "patterns": []
   },
   {
+    "name": "PLC Structured Text",
+    "version": "1.0.0",
+    "dir": "dictionaries/tc-plc",
+    "packageName": "@cspell/dict-tc-plc",
+    "description": "TwinCat PLC IEC61131 Structured Text (ST) dictionary for cspell.",
+    "cspell": false,
+    "categories": ["programming"],
+    "dictionaries": [
+      {
+        "name": "tc-plc",
+        "description": "TwinCat PLC IEC61131 Structured Text (ST) dictionary.",
+        "fileTypes": ["tc-plc"],
+        "localeFileTypes": [
+          {
+            "locale": "*",
+            "fileType": "tc-plc"
+          }
+        ]
+      }
+    ],
+    "patterns": []
+  },
+  {
     "name": "Terraform",
     "version": "1.1.4",
     "dir": "dictionaries/terraform",
