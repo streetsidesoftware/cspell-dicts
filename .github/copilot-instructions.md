@@ -33,18 +33,22 @@ This repo uses **pnpm** exclusively. `npm` and `yarn` are blocked by a `preinsta
 ## Common Workflows
 
 ### Setup
+
 ```bash
 pnpm run setup        # installs deps and builds all dictionaries
 ```
 
 ### Build
+
 ```bash
 pnpm run build        # full build (setup + conditional build)
 pnpm run build:all    # rebuild every dictionary unconditionally
 ```
+
 Each dictionary package has its own `build` script powered by `cspell-tools-cli`.
 
 ### Lint / Format
+
 ```bash
 pnpm run lint:fix     # ESLint (--fix) + Prettier (-w)
 pnpm run lint-ci      # ESLint + Prettier check + cspell (no fixes, for CI)
@@ -52,12 +56,15 @@ pnpm run lint:fix:sort-source-files  # Sort .txt source word lists alphabeticall
 ```
 
 ### Test
+
 ```bash
 pnpm run test         # runs tests in all packages (workspace-wide)
 ```
+
 Individual dictionary tests run `cspell` against their `src/` files and `samples/`.
 
 ### Spell-checking source
+
 ```bash
 pnpm run check-spelling   # runs cspell on repo files
 ```
@@ -76,9 +83,11 @@ See `CONTRIBUTING.md` for detailed word formatting guidelines (capitalization, r
 ## Creating a New Dictionary
 
 Use the scaffolding generator:
+
 ```bash
 pnpm run create-dictionary
 ```
+
 This runs a Yeoman generator (`generator-cspell-dicts/`) that creates the full package skeleton.
 
 ## Dictionary Package Conventions
@@ -98,6 +107,7 @@ This repository uses **[Conventional Commits](https://www.conventionalcommits.or
 ```
 
 Common types:
+
 - `feat` — a new word list, new dictionary, or new feature
 - `fix` — adding new words, corrections to a word list, or bug fix
 - `chore` — maintenance, dependency updates, tooling changes
@@ -108,6 +118,7 @@ Common types:
 
 Examples:
 <!-- cspell:disable -->
+
 feat(python): add asyncio-related keywords
 fix(en_US): remove misspelled entry "recieve"
 chore: update pnpm to 11.x
@@ -121,11 +132,11 @@ Releases are managed via **Release Please**. Merging the auto-created "chore: re
 
 ## CI Workflows (`.github/workflows/`)
 
-| Workflow | Trigger | Purpose |
-|---|---|---|
-| `autofix.ci` | PR open/sync | Runs lint + sort; applies autofix via autofix.ci (skipped with `no-autofix` label) |
-| Build Dictionaries | push to main / manual | Rebuilds dictionaries and opens a PR with updates |
-| Publish | merged release PR | Publishes packages to npm |
+| Workflow           | Trigger               | Purpose                                                                            |
+| ------------------ | --------------------- | ---------------------------------------------------------------------------------- |
+| `autofix.ci`       | PR open/sync          | Runs lint + sort; applies autofix via autofix.ci (skipped with `no-autofix` label) |
+| Build Dictionaries | push to main / manual | Rebuilds dictionaries and opens a PR with updates                                  |
+| Publish            | merged release PR     | Publishes packages to npm                                                          |
 
 ## Key Configuration Files
 
