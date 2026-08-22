@@ -1,11 +1,13 @@
 {
     "version": "0.2",
     "files": [
-        "**/*.{md,txt}"
+        "**/*.{md,txt}",
+        "**/*{.TcTTO,.TcPOU,.TcDUT,.TcGVL,.TcGTLO}"
     ],
-    "dictionaries": [
-        "plc"
-    ],
+    "overrides": [{
+        "filename": "*.{txt,md}",
+        "dictionaries": ["TwinCat"]
+    }],
     "import": [
         "./cspell-ext.json"
     ]
