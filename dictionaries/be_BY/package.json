@@ -1,0 +1,48 @@
+{
+  "name": "@cspell/dict-be-by",
+  "version": "1.0.0",
+  "description": "Belarusian dictionary for cspell. -- Private until verified",
+  "private": true,
+  "publishConfig": {
+    "access": "public",
+    "provenance": true
+  },
+  "exports": {
+    ".": "./cspell-ext.json",
+    "./cspell": "./cspell-ext.json",
+    "./cspell-ext.json": "./cspell-ext.json"
+  },
+  "scripts": {
+    "build": "cross-env NODE_OPTIONS=--max_old_space_size=8192 cspell-tools-cli build",
+    "test": "hunspell-reader words -n 1000 -m 0 \"src/be-BY.dic\" | cspell -c ./cspell-ext.json \"--locale=be, be-BY\" \"--languageId=*\" stdin",
+    "prepublishOnly": "echo OK",
+    "prepare:dictionary": "echo OK"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/streetsidesoftware/cspell-dicts"
+  },
+  "keywords": [
+    "cspell",
+    "cspell-ext",
+    "be_BY",
+    "Belarusian",
+    "dictionary",
+    "spelling"
+  ],
+  "author": "Street Side Software",
+  "contributors": [],
+  "license": "CC BY-SA 4.0",
+  "bugs": {
+    "url": "https://github.com/streetsidesoftware/cspell-dicts/issues"
+  },
+  "homepage": "https://github.com/streetsidesoftware/cspell-dicts/blob/main/dictionaries/be_BY#readme",
+  "devDependencies": {},
+  "dependencies": {},
+  "files": [
+    "dict/be-by.trie",
+    "cspell-ext.json",
+    "*.js",
+    "*.d.ts"
+  ]
+}
