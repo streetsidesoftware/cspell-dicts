@@ -99,7 +99,7 @@ This repository uses **[Conventional Commits](https://www.conventionalcommits.or
 
 Common types:
 - `feat` — a new word list, new dictionary, or new feature
-- `fix` — correction to a word list, build, or bug fix
+- `fix` — adding new words, corrections to a word list, or bug fix
 - `chore` — maintenance, dependency updates, tooling changes
 - `docs` — documentation only changes
 - `ci` — changes to CI/CD workflows
