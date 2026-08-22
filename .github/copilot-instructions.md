@@ -89,6 +89,33 @@ This runs a Yeoman generator (`generator-cspell-dicts/`) that creates the full p
 - Each package is versioned independently (lerna independent mode)
 - Dependencies between dictionaries use `workspace:^` in `package.json`
 
+## Commit Message Convention
+
+This repository uses **[Conventional Commits](https://www.conventionalcommits.org/)**. All commit messages must follow the format:
+
+```
+<type>(<optional scope>): <description>
+```
+
+Common types:
+- `feat` — a new word list, new dictionary, or new feature
+- `fix` — correction to a word list, build, or bug fix
+- `chore` — maintenance, dependency updates, tooling changes
+- `docs` — documentation only changes
+- `ci` — changes to CI/CD workflows
+- `refactor` — code restructuring without behavior change
+- `test` — adding or updating tests
+
+Examples:
+```
+feat(python): add asyncio-related keywords
+fix(en_US): remove misspelled entry "recieve"
+chore: update pnpm to 11.x
+docs: update CONTRIBUTING.md with regional variant guidance
+```
+
+**Why it matters:** Release Please uses conventional commits to automatically determine version bumps and generate changelogs. A `feat` commit triggers a minor version bump; a `fix` commit triggers a patch bump. Commits that don't follow the convention are ignored by the release tooling.
+
 ## Publishing
 
 Releases are managed via **Release Please**. Merging the auto-created "chore: release main" PR triggers publishing to npm. Manual recovery: `pnpm pub-recover`. See `publishing.md`.
