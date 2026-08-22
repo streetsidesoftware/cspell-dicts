@@ -1,8 +1,7 @@
 {
   "name": "@cspell/dict-be-by",
   "version": "1.0.0",
-  "description": "Belarusian dictionary for cspell. -- Private until verified",
-  "private": true,
+  "description": "Belarusian dictionary for cspell.",
   "publishConfig": {
     "access": "public",
     "provenance": true
@@ -13,10 +12,13 @@
     "./cspell-ext.json": "./cspell-ext.json"
   },
   "scripts": {
-    "build": "cross-env NODE_OPTIONS=--max_old_space_size=8192 cspell-tools-cli build",
-    "test": "hunspell-reader words -n 1000 -m 0 \"src/be-BY.dic\" | cspell -c ./cspell-ext.json \"--locale=be, be-BY\" \"--languageId=*\" stdin",
-    "prepublishOnly": "echo OK",
-    "prepare:dictionary": "echo OK"
+    "build": "cspell-tools-cli build --conditional",
+    "test": "pnpm run test:src && pnpm run test:samples",
+    "test:samples": "cspell samples",
+    "test:src": "hunspell-reader words -n 1000 -m 0 \"src/hunspell/be-BY.dic\" | cspell -c ./cspell-ext.json \"--locale=be, be-BY\" \"--languageId=*\" stdin",
+    "gz": "cspell-tools-cli gzip \"dict/be-by.trie\"",
+    "prepare:dictionary": "pnpm run gz",
+    "prepublishOnly": "echo OK"
   },
   "repository": {
     "type": "git",
@@ -40,7 +42,7 @@
   "devDependencies": {},
   "dependencies": {},
   "files": [
-    "dict/be-by.trie",
+    "dict/be-by.trie.gz",
     "cspell-ext.json",
     "*.js",
     "*.d.ts"

@@ -3,10 +3,12 @@
 targets:
   - name: 'be-by'
     sources:
-      - filename: 'src/be-BY.dic'
-        maxDepth: 1 # This is set to 1 to prevent initial builds from taking too long.
+      - filename: 'src/hunspell/be-BY.dic'
+        maxDepth: 3
+      - src/additional-words.txt
     format: 'trie3'
     targetDirectory: './dict'
     generateNonStrict: true
-    compress: false
+    compress: true
+    keepUncompressed: true
 checksumFile: true
