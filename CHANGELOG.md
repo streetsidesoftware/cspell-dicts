@@ -1,5 +1,19 @@
 # Release Notes
 
+## [33.13.0](https://github.com/streetsidesoftware/cspell-dicts/compare/cspell-dicts@33.12.1...cspell-dicts@33.13.0) (2026-08-22)
+
+
+### Features
+
+* Adding belarusian dictionary ([#5637](https://github.com/streetsidesoftware/cspell-dicts/issues/5637)) ([236e718](https://github.com/streetsidesoftware/cspell-dicts/commit/236e7180342db62bd817eca7ee372eebd0f8a99c))
+* Started adding a new language for PLC ([#5564](https://github.com/streetsidesoftware/cspell-dicts/issues/5564)) ([fd70679](https://github.com/streetsidesoftware/cspell-dicts/commit/fd70679644b4c8d3537a20b0ecf43481e11e9cc0))
+
+
+### Updates and Bug Fixes
+
+* Contributions and samples ([#5647](https://github.com/streetsidesoftware/cspell-dicts/issues/5647)) ([d2e811a](https://github.com/streetsidesoftware/cspell-dicts/commit/d2e811a0bf66da3baf1d52f5051c00e0a8398fb3))
+* Move TwinCat PLC to tc-plc folder and add samples ([#5650](https://github.com/streetsidesoftware/cspell-dicts/issues/5650)) ([c433f45](https://github.com/streetsidesoftware/cspell-dicts/commit/c433f4548a2d1943089df70a249c2b4fb7e60995))
+
 ## [33.12.1](https://github.com/streetsidesoftware/cspell-dicts/compare/cspell-dicts@33.12.0...cspell-dicts@33.12.1) (2026-08-19)
 
 
