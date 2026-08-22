@@ -1,5 +1,12 @@
 # Change Log
 
+## [1.3.0](https://github.com/streetsidesoftware/cspell-dicts/compare/@cspell/dict-mn-mn@1.2.4...@cspell/dict-mn-mn@1.3.0) (2026-08-19)
+
+
+### Features
+
+* Update Mongolian dictionary ([#5624](https://github.com/streetsidesoftware/cspell-dicts/issues/5624)) ([c648a17](https://github.com/streetsidesoftware/cspell-dicts/commit/c648a17a3b90b23c10acbddf844104152bf6ffce))
+
 ## [1.2.4](https://github.com/streetsidesoftware/cspell-dicts/compare/@cspell/dict-mn-mn@1.2.3...@cspell/dict-mn-mn@1.2.4) (2026-01-24)
 
 

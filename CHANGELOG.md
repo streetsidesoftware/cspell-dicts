@@ -1,5 +1,44 @@
 # Release Notes
 
+## [33.12.1](https://github.com/streetsidesoftware/cspell-dicts/compare/cspell-dicts@33.12.0...cspell-dicts@33.12.1) (2026-08-19)
+
+
+### Updates and Bug Fixes
+
+* Add 'errno' to coding terms list ([#5636](https://github.com/streetsidesoftware/cspell-dicts/issues/5636)) ([d35d06d](https://github.com/streetsidesoftware/cspell-dicts/commit/d35d06d241c052bebe720fec2a6c6433ba6e50f0))
+* Add 'subdeps' term to coding-terms ([#5632](https://github.com/streetsidesoftware/cspell-dicts/issues/5632)) ([df54a84](https://github.com/streetsidesoftware/cspell-dicts/commit/df54a844abe07416347caa9198efd8ad57440b49))
+
+
+### Dependencies
+
+* The following workspace dependencies were updated
+  * devDependencies
+    * @cspell/dict-cspell-bundle bumped to 2.0.68
+
+## [33.12.0](https://github.com/streetsidesoftware/cspell-dicts/compare/cspell-dicts@33.11.0...cspell-dicts@33.12.0) (2026-08-19)
+
+
+### Features
+
+* Add POSIX signals and error names to `software-terms` dictionary ([#5619](https://github.com/streetsidesoftware/cspell-dicts/issues/5619)) ([1c78c19](https://github.com/streetsidesoftware/cspell-dicts/commit/1c78c1931997cdf1d7c099ae377f1fbfa3980c69))
+* Add underscore-prefixed builtin module names to Python dictionary ([#5622](https://github.com/streetsidesoftware/cspell-dicts/issues/5622)) ([bb6dc60](https://github.com/streetsidesoftware/cspell-dicts/commit/bb6dc602856774842ab55b58f6e5ba1247697735))
+* Update Mongolian dictionary ([#5624](https://github.com/streetsidesoftware/cspell-dicts/issues/5624)) ([c648a17](https://github.com/streetsidesoftware/cspell-dicts/commit/c648a17a3b90b23c10acbddf844104152bf6ffce))
+
+
+### Updates and Bug Fixes
+
+* Add idempotently to software-terms dictionary ([#5616](https://github.com/streetsidesoftware/cspell-dicts/issues/5616)) ([106844b](https://github.com/streetsidesoftware/cspell-dicts/commit/106844b9696b1832d11cfae24cb3dc2e4b728969))
+* **html:** add "expando" ([#5613](https://github.com/streetsidesoftware/cspell-dicts/issues/5613)) ([ab8b6b9](https://github.com/streetsidesoftware/cspell-dicts/commit/ab8b6b9b91d2a187c49026daa18cc1f60d97c398))
+* orpc to software-tools ([#5620](https://github.com/streetsidesoftware/cspell-dicts/issues/5620)) ([ff88502](https://github.com/streetsidesoftware/cspell-dicts/commit/ff88502a9a2711171eb781ebe448098f5bfa6555))
+* Workflow Bot -- Update Dictionaries ([#5626](https://github.com/streetsidesoftware/cspell-dicts/issues/5626)) ([c783e22](https://github.com/streetsidesoftware/cspell-dicts/commit/c783e22aa5419b387a3806f4613185e0a5feb381))
+
+
+### Dependencies
+
+* The following workspace dependencies were updated
+  * devDependencies
+    * @cspell/dict-cspell-bundle bumped to 2.0.67
+
 ## [33.11.0](https://github.com/streetsidesoftware/cspell-dicts/compare/cspell-dicts@33.10.0...cspell-dicts@33.11.0) (2026-08-09)
 
 

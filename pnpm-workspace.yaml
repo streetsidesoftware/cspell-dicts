@@ -5,3 +5,14 @@ packages:
   - packages/*
   - generator-cspell-dicts
   - scripts
+
+minimumReleaseAge: 2880 # two days
+minimumReleaseAgeExclude:
+  - '@cspell/*'
+blockExoticSubdeps: true
+trustPolicy: no-downgrade
+trustPolicyExclude:
+  - semver@5.7.2
+  - mem-fs-editor@12.0.6
+
+# cspell:dictionaries npm

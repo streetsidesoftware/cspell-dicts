@@ -85,21 +85,21 @@ Predefined patterns can be used to ignore or include sequences of text to be spe
 
 The following patterns are defined in this dictionary:
 
-| Name                               | Description                            |
-| ---------------------------------- | -------------------------------------- |
-| `HTML-id`                          |                                        |
-| `HTML-src`                         |                                        |
-| `HTML-class`                       |                                        |
-| `HTML-IDREF-aria-activedescendant` |                                        |
-| `HTML-IDREF-aria-controls`         |                                        |
-| `HTML-IDREF-aria-describedby`      |                                        |
-| `HTML-IDREF-aria-details`          |                                        |
-| `HTML-IDREF-aria-errormessage`     |                                        |
-| `HTML-IDREF-aria-flowto`           |                                        |
-| `HTML-IDREF-aria-labelledby`       |                                        |
-| `HTML-IDREF-aria-owns`             |                                        |
-| `HTML-IDREF-for`                   |                                        |
-| `HTML-symbol-entity`               | Matches on HTML symbols like `&clubs;` |
+| Name                               | Description                                                             |
+| ---------------------------------- | ----------------------------------------------------------------------- |
+| `HTML-id`                          | Matches values inside a double quoted 'id' attribute                    |
+| `HTML-src`                         | Matches values inside a double quoted 'src' attribute                   |
+| `HTML-class`                       | Matches values inside a double quoted 'class' attribute                 |
+| `HTML-IDREF-aria-activedescendant` | Matches values inside a double quoted 'aria-activedescendant' attribute |
+| `HTML-IDREF-aria-controls`         | Matches values inside a double quoted 'aria-controls' attribute         |
+| `HTML-IDREF-aria-describedby`      | Matches values inside a double quoted 'aria-describedby' attribute      |
+| `HTML-IDREF-aria-details`          | Matches values inside a double quoted 'aria-details' attribute          |
+| `HTML-IDREF-aria-errormessage`     | Matches values inside a double quoted 'aria-error' attribute            |
+| `HTML-IDREF-aria-flowto`           | Matches values inside a double quoted 'aria-flowto' attribute           |
+| `HTML-IDREF-aria-labelledby`       | Matches values inside a double quoted 'aria-labelledby' attribute       |
+| `HTML-IDREF-aria-owns`             | Matches values inside a double quoted 'aria-owns' attribute             |
+| `HTML-IDREF-for`                   | Matches values inside a double quoted 'for' attribute                   |
+| `HTML-symbol-entity`               | Matches on HTML symbols like `&clubs;`                                  |
 
 <!--- @@inject-end: ./static/install.md --->
 
