@@ -8,7 +8,7 @@
     // List of dictionary files to add to the global list of dictionaries
     "dictionaryDefinitions": [
         {
-            "name": "TwinCat",
+            "name": "tc-plc",
             "path": "./dict/plc.txt",
             "description": "TwinCat PLC IEC61131 Structured Text (ST) dictionary."
         }
@@ -22,7 +22,7 @@
         {
             // VSCode languageId. i.e. typescript, java, go, cpp, javascript, markdown, latex
             // * will match against any file type.
-            "languageId": "TwinCat",
+            "languageId": "tc-plc",
             // Language locale. i.e. en-US, de-AT, or ru. * will match all locales.
             // Multiple locales can be specified like: "en, en-US" to match both English and English US.
             "locale": "*",
@@ -36,7 +36,7 @@
             // This could be included in "ignoreRegExpList": ["mdash"]
             "patterns": [],
             // List of dictionaries to enable by name in `dictionaryDefinitions`
-            "dictionaries": ["TwinCat"],
+            "dictionaries": ["tc-plc"],
             // Dictionary definitions can also be supplied here. They are only used iff "languageId" and "locale" match.
             "dictionaryDefinitions": []
         }
@@ -44,7 +44,7 @@
     "overrides": [
         {
             "filename": ["**/*.TcTTO", "**/*.TcPOU", "**/*.TcDUT", "**/*.TcGVL", "**/*.TcGTLO"],
-            "languageId": "TwinCat"
+            "languageId": "tc-plc"
         }
     ]
 }
