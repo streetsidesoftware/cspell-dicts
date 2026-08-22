@@ -1,0 +1,13 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<TcPlcObject Version="1.1.0.1">
+  <DUT Name="STcPrpLinkStatus" Id="{d59248a1-eba3-0ecd-2d24-df8b8a569b42}">
+    <Declaration><![CDATA[TYPE STcPrpLinkStatus : 
+STRUCT
+	LinkSpeedA : UDINT;
+	LinkSpeedB : UDINT;
+	bLinkA : BOOL;
+	bLinkB : BOOL;
+END_STRUCT
+END_TYPE]]></Declaration>
+  </DUT>
+</TcPlcObject>

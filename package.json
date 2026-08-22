@@ -13,6 +13,7 @@
     "build:readme": "pnpm run readme:generate-doc-dictionaries && pnpm run readme:inject",
     "build:conditional": "pnpm -r run --workspace-concurrency 2 --stream build:conditional --no-bail && pnpm -r run --workspace-concurrency 2 --stream conditional-build --no-bail",
     "lint:fix:sort-source-files": "sort-source -c sort-source.config.json",
+    "sort": "pnpm lint:fix:sort-source-files",
     "conditional-build": "pnpm build:conditional",
     "check-dirty": "git --no-pager diff --compact-summary --exit-code",
     "check-spelling": "cspell",
