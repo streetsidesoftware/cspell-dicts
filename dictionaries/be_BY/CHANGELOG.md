@@ -1,5 +1,12 @@
 # Change Log
 
+## [1.0.1](https://github.com/streetsidesoftware/cspell-dicts/compare/@cspell/dict-be-by@1.0.0...@cspell/dict-be-by@1.0.1) (2026-08-23)
+
+
+### Updates and Bug Fixes
+
+* Workflow Bot -- Update Dictionaries ([#5653](https://github.com/streetsidesoftware/cspell-dicts/issues/5653)) ([3580eb1](https://github.com/streetsidesoftware/cspell-dicts/commit/3580eb1ec1b4c6f1aaea601a68576eba9bb4d0b2))
+
 ## 1.0.0 (2026-08-22)
 
 
