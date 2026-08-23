@@ -9,6 +9,8 @@ packages:
 minimumReleaseAge: 2880 # two days
 minimumReleaseAgeExclude:
   - '@cspell/*'
+  - 'cspell'
+  - 'cspell-*'
 blockExoticSubdeps: true
 trustPolicy: no-downgrade
 trustPolicyExclude:
