@@ -1,5 +1,21 @@
 # Release Notes
 
+## [33.13.2](https://github.com/streetsidesoftware/cspell-dicts/compare/cspell-dicts@33.13.1...cspell-dicts@33.13.2) (2026-08-26)
+
+
+### Updates and Bug Fixes
+
+* Add antizionism to shared English dictionary ([#5652](https://github.com/streetsidesoftware/cspell-dicts/issues/5652)) ([85e1a64](https://github.com/streetsidesoftware/cspell-dicts/commit/85e1a64ad48f3baf780950d1d38d85fa993dea2e))
+* Add Python-specific environment variables to `python-common` ([#5665](https://github.com/streetsidesoftware/cspell-dicts/issues/5665)) ([8de15ba](https://github.com/streetsidesoftware/cspell-dicts/commit/8de15ba3cca223858d3b8c3fe320ae25a635696e))
+* Workflow Bot -- Build Dictionaries ([#5661](https://github.com/streetsidesoftware/cspell-dicts/issues/5661)) ([f9d857d](https://github.com/streetsidesoftware/cspell-dicts/commit/f9d857dc9724a3cdb2b60c617458d2554257501a))
+
+
+### Dependencies
+
+* The following workspace dependencies were updated
+  * devDependencies
+    * @cspell/dict-cspell-bundle bumped to 2.0.70
+
 ## [33.13.1](https://github.com/streetsidesoftware/cspell-dicts/compare/cspell-dicts@33.13.0...cspell-dicts@33.13.1) (2026-08-23)
 
 

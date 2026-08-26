@@ -1,5 +1,12 @@
 # Change Log
 
+## [1.0.55](https://github.com/streetsidesoftware/cspell-dicts/compare/@cspell/dict-en-shared@1.0.54...@cspell/dict-en-shared@1.0.55) (2026-08-26)
+
+
+### Updates and Bug Fixes
+
+* Add antizionism to shared English dictionary ([#5652](https://github.com/streetsidesoftware/cspell-dicts/issues/5652)) ([85e1a64](https://github.com/streetsidesoftware/cspell-dicts/commit/85e1a64ad48f3baf780950d1d38d85fa993dea2e))
+
 ## [1.0.54](https://github.com/streetsidesoftware/cspell-dicts/compare/@cspell/dict-en-shared@1.0.53...@cspell/dict-en-shared@1.0.54) (2026-07-12)
 
 
