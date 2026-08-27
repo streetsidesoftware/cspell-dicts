@@ -1,5 +1,24 @@
 # Release Notes
 
+## [33.14.0](https://github.com/streetsidesoftware/cspell-dicts/compare/cspell-dicts@33.13.2...cspell-dicts@33.14.0) (2026-08-27)
+
+
+### Features
+
+* Add pip environment variables to `python-common` ([#5674](https://github.com/streetsidesoftware/cspell-dicts/issues/5674)) ([97b29e0](https://github.com/streetsidesoftware/cspell-dicts/commit/97b29e08a4a5c3b8f760565a6d59c356ae182ffb))
+
+
+### Updates and Bug Fixes
+
+* add 'millis' to coding terms list ([#5673](https://github.com/streetsidesoftware/cspell-dicts/issues/5673)) ([51feef7](https://github.com/streetsidesoftware/cspell-dicts/commit/51feef7800f62c8cd519ca413951e934fa8b431d))
+
+
+### Dependencies
+
+* The following workspace dependencies were updated
+  * devDependencies
+    * @cspell/dict-cspell-bundle bumped to 2.0.71
+
 ## [33.13.2](https://github.com/streetsidesoftware/cspell-dicts/compare/cspell-dicts@33.13.1...cspell-dicts@33.13.2) (2026-08-26)
 
 
