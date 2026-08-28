@@ -3,6 +3,13 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+## [5.4.2](https://github.com/streetsidesoftware/cspell-dicts/compare/@cspell/dict-software-terms@5.4.1...@cspell/dict-software-terms@5.4.2) (2026-08-27)
+
+
+### Updates and Bug Fixes
+
+* add 'millis' to coding terms list ([#5673](https://github.com/streetsidesoftware/cspell-dicts/issues/5673)) ([51feef7](https://github.com/streetsidesoftware/cspell-dicts/commit/51feef7800f62c8cd519ca413951e934fa8b431d))
+
 ## [5.4.1](https://github.com/streetsidesoftware/cspell-dicts/compare/@cspell/dict-software-terms@5.4.0...@cspell/dict-software-terms@5.4.1) (2026-08-19)
 
 

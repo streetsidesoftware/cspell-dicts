@@ -3,6 +3,13 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+## [4.5.0](https://github.com/streetsidesoftware/cspell-dicts/compare/@cspell/dict-python@4.4.1...@cspell/dict-python@4.5.0) (2026-08-27)
+
+
+### Features
+
+* Add pip environment variables to `python-common` ([#5674](https://github.com/streetsidesoftware/cspell-dicts/issues/5674)) ([97b29e0](https://github.com/streetsidesoftware/cspell-dicts/commit/97b29e08a4a5c3b8f760565a6d59c356ae182ffb))
+
 ## [4.4.1](https://github.com/streetsidesoftware/cspell-dicts/compare/@cspell/dict-python@4.4.0...@cspell/dict-python@4.4.1) (2026-08-26)
 
 
