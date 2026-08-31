@@ -1,5 +1,25 @@
 # Release Notes
 
+## [33.15.0](https://github.com/streetsidesoftware/cspell-dicts/compare/cspell-dicts@33.14.0...cspell-dicts@33.15.0) (2026-08-31)
+
+
+### Features
+
+* Add Thai ([#5681](https://github.com/streetsidesoftware/cspell-dicts/issues/5681)) ([e45f19a](https://github.com/streetsidesoftware/cspell-dicts/commit/e45f19a2ccb3f4b2f12eb6c91ff37d29063fe94b))
+
+
+### Updates and Bug Fixes
+
+* Add support for Segmentation ([#5685](https://github.com/streetsidesoftware/cspell-dicts/issues/5685)) ([37ec75c](https://github.com/streetsidesoftware/cspell-dicts/commit/37ec75cdfbcecf9f74867cac2d0c809306767c94))
+* Workflow Bot -- Update Dictionaries ([#5680](https://github.com/streetsidesoftware/cspell-dicts/issues/5680)) ([2dfd644](https://github.com/streetsidesoftware/cspell-dicts/commit/2dfd644b49836a96bed2d98e5abbe54eef912f84))
+
+
+### Dependencies
+
+* The following workspace dependencies were updated
+  * devDependencies
+    * @cspell/dict-cspell-bundle bumped to 2.0.72
+
 ## [33.14.0](https://github.com/streetsidesoftware/cspell-dicts/compare/cspell-dicts@33.13.2...cspell-dicts@33.14.0) (2026-08-27)
 
 
