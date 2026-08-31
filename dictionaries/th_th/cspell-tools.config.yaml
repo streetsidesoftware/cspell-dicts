@@ -1,13 +1,16 @@
 # yaml-language-server: $schema=https://raw.githubusercontent.com/streetsidesoftware/cspell/main/packages/cspell-tools/cspell-tools.config.schema.json
 
 targets:
-  - name: '<%= packageName %>'
+  - name: 'th-th'
     sources:
-      - filename: '<%= srcFile %>'
-        maxDepth: 1 # This is set to 1 to prevent initial builds from taking too long.
-    format: '<%= format %>'
+      - 'src/th_th.txt'
+      - filename: src/LibreOffice/th_TH/th_TH.dic
+        maxDepth: 3
+      - filename: src/syafiqhadzir/th_TH.dic
+        maxDepth: 3
+    format: 'trie3'
     targetDirectory: './dict'
-    generateNonStrict: <%= generateNonStrict %>
+    generateNonStrict: true
     compress: true
     keepUncompressed: true
 checksumFile: true

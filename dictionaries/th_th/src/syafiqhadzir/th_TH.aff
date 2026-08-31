@@ -1,0 +1,44 @@
+SET UTF-8
+
+# Try characters by frequency (Calculated from dictionary)
+TRY ารนกอังม้วิยตลเ่ดสบคะีทปหุจชพ์ขูำแืผโศถณซธไ็ญภษึใฉฟฝ๊ฐฤ.ฏ๋ฑฎฮฆฬฒฌ-"ฯํ3ฃฅ!24
+
+# Replacement suggestions for common errors (Sound/Shape alike)
+REP 9
+REP ทร ซ
+REP ซ ทร
+REP ส ซ
+REP ซ ส
+REP ญ ย
+REP ย ญ
+REP ณ น
+REP น ณ
+REP ภ ถ
+
+# Keyboard layout for neighboring key suggestions (Kedmanee)
+KEY ๅ/_ภ|ภ/ๅถ|ถ/ภุ|ุ/ถึ|ึ/ุค|ค/ึต|ต/คจ|จ/ตข|ข/จช|ช/ขๆ|ๆ/ชไ|ไ/ๆำ|ำ/ไพ|พ/ำะ|ะ/พั|ั/ะี|ี/ัร|ร/ีน|น/รย|ย/นบ|บ/ยล|ล/บฃ|ฃ/ลฅ|ฟ/หฤ|ห/ฟก|ก/หด|ด/กเ|เ/ด้|้/เ่|่/้า|า/่ส|ส/าว|ว/สง|ง/ว.|ผ/ปแ|ป/ผอ|อ/ปิ|ิ/อื|ื/ิท|ท/ื
+
+# Input Conversion (ICONV)
+# Automatically fix common typing order errors (e.g. Tone Mark before Vowel -> Vowel before Tone)
+# This allows Hunspell to 'see' the correct word even if typed slightly wrong.
+ICONV 5
+ICONV ็่ ่็
+ICONV ็้ ้็
+ICONV ็๊ ๊็
+ICONV ็๋ ๋็
+ICONV ํา ำ
+
+# Breaking characters
+# Define characters that break words (punctuations, numbers, zero-width space)
+BREAK 10
+BREAK -
+BREAK ^
+BREAK $
+BREAK *
+BREAK %
+BREAK _
+BREAK 1
+BREAK 2
+BREAK 3
+BREAK .
+

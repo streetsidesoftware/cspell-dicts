@@ -1,0 +1,21 @@
+{
+    "id": "th-th",
+    "version": "0.2",
+    "name": "Thai Language",
+    "description": "Thai Language dictionary for cspell.",
+    "readonly": true,
+    "dictionaryDefinitions": [
+        {
+            "name": "th-th",
+            "path": "./dict/th-th.trie.gz",
+            "description": "Thai Language dictionary for cspell."
+        }
+    ],
+    "languageSettings": [
+        {
+            "languageId": "*",
+            "locale": "th,th-th",
+            "dictionaries": ["th-th"]
+        }
+    ]
+}
