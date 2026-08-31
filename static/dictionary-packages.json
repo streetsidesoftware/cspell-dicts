@@ -3613,6 +3613,29 @@
     "patterns": []
   },
   {
+    "name": "Thai Language",
+    "version": "1.0.0",
+    "dir": "dictionaries/th_th",
+    "packageName": "@cspell/dict-th-th",
+    "description": "Thai Language dictionary for cspell.",
+    "cspell": false,
+    "categories": ["natural-language"],
+    "dictionaries": [
+      {
+        "name": "th-th",
+        "description": "Thai Language dictionary for cspell.",
+        "locales": ["th", "th-th"],
+        "localeFileTypes": [
+          {
+            "locale": "th, th-th",
+            "fileType": "*"
+          }
+        ]
+      }
+    ],
+    "patterns": []
+  },
+  {
     "name": "Turkish",
     "version": "3.0.6",
     "dir": "dictionaries/tr_TR",
