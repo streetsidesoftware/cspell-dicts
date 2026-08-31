@@ -1,0 +1,59 @@
+{
+  "name": "@cspell/dict-th-th",
+  "version": "1.0.0",
+  "description": "Thai Language dictionary for cspell.",
+  "private": false,
+  "publishConfig": {
+    "access": "public",
+    "provenance": true
+  },
+  "exports": {
+    ".": "./cspell-ext.json",
+    "./cspell": "./cspell-ext.json",
+    "./cspell-ext.json": "./cspell-ext.json"
+  },
+  "scripts": {
+    "build": "cspell-tools-cli build",
+    "build:conditional": "pnpm build --conditional",
+    "sync": "pnpm sync:syafiqhadzir && pnpm sync:LibreOffice",
+    "sync:LibreOffice": "sync-github-files LibreOffice/dictionaries --filter \"th_TH/th_TH.*\" --filter LICENSE --filter \"th_TH/README*.txt\"  --tag=master -o src/LibreOffice",
+    "sync:syafiqhadzir": "sync-github-files syafiqhadzir/hunspell-th --filter \"th_TH.*\" --filter LICENSE --filter README.md  --tag=experimental -o src/syafiqhadzir",
+    "sync:manual": "GITHUB_TOKEN=$(gh auth token) pnpm sync",
+    "test": "pnpm run test:samples && pnpm run test:src && pnpm run test:src2",
+    "test:samples": "cspell samples",
+    "test:src": "pipe-cmds \"hunspell-reader words -m 0 -n 1000 \\\"src/syafiqhadzir/th_TH.dic\\\"\" \"cspell -c ./cspell-ext.json \\\"--locale=th\\\" \\\"--languageId=*\\\" stdin\"",
+    "test:src2": "head -n 1000 \"src/th_th.txt\" | cspell -c ./cspell-ext.json \"--locale=th,en\" \"--languageId=*\" stdin",
+    "gz": "cspell-tools-cli gzip \"dict/*.trie\"",
+    "prepublishOnly": "echo OK",
+    "prepare:dictionary": "pnpm run gz"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/streetsidesoftware/cspell-dicts"
+  },
+  "keywords": [
+    "cspell",
+    "cspell-ext",
+    "th_th",
+    "Thai Language",
+    "dictionary",
+    "spelling"
+  ],
+  "author": "Street Side Software",
+  "contributors": [],
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/streetsidesoftware/cspell-dicts/issues"
+  },
+  "homepage": "https://github.com/streetsidesoftware/cspell-dicts/blob/main/dictionaries/th_th#readme",
+  "devDependencies": {},
+  "dependencies": {},
+  "files": [
+    "src/hunspell/LibreOffice/README_th_TH.txt",
+    "src/hunspell/syafiqhadzir/LICENSE",
+    "dict/th-th.trie.gz",
+    "cspell-ext.json",
+    "*.js",
+    "*.d.ts"
+  ]
+}

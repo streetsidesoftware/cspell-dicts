@@ -169,7 +169,7 @@ export default class extends Generator {
     end() {
         if (this.props.doBuild) {
             this.spawnSync('pnpm', ['run', 'build']);
-            this.spawnSync('pnpm', ['run', 'prepare']);
+            this.spawnSync('pnpm', ['run', 'prepare:dictionary']);
         }
     }
 }
