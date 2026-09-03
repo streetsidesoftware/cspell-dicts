@@ -131,7 +131,6 @@ AttributeError
 AttributeList
 AttributesImpl
 AttributesNSImpl
-Au
 AugLoad
 AugStore
 AuthenticationError
@@ -501,8 +500,6 @@ DEFAULTSECT
 DEFAULT_ANGLEOFFSET
 DEFAULT_ANGLEORIENT
 DEFAULT_PYPIRC
-DEFAULT_TCP_LOGGING_PORT
-DEFAULT_UDP_LOGGING_PORT
 DEFLATED
 DEL
 DELAY
@@ -516,8 +513,10 @@ DESTROY
 DET
 DETAIL
 DETECTED
+DEV
 DEVICE
 DEVNULL
+DFA
 DFAState
 DIALOG
 DICT
@@ -531,6 +530,7 @@ DIVIDER
 DLE
 DLL
 DM
+DNS
 DO
 DOCUMENT
 DOM
@@ -985,6 +985,7 @@ GravSys
 GrepDialog
 Grep_itTest
 GroupInfo
+Gui
 GzipDecodedResponse
 GzipFile
 HACCEL
@@ -1279,8 +1280,7 @@ JoinableQueue
 KEEP
 KERMIT
 KERN
-KEYPRESS_SEQUENCES
-KEYPRESS_VIRTUAL_EVENT_NAME
+KEYPRESS
 KEYRELEASE_SEQUENCE
 KEYRELEASE_VIRTUAL_EVENT_NAME
 KEYS
@@ -1345,7 +1345,6 @@ LOG_LPR
 LOG_NTP
 LOG_SOLCRON
 LOG_THRESHOLD_FOR_CONNLOST_WRITES
-LOG_UUCP
 LONG
 LOOKUP
 LOOP
@@ -1456,7 +1455,6 @@ MC_BUTTONRELEASE
 MC_COLORMAP
 MC_FOCUSIN
 MC_FOCUSOUT
-MC_KEYPRESS
 MC_KEYRELEASE
 MC_MOUSEWHEEL
 MC_REPARENT
@@ -1597,7 +1595,6 @@ NAME
 NAMED
 NAMES
 NAMESPACE
-NAMESPACE_DNS
 NAMESPACE_OID
 NAMS
 NAOCRD
@@ -1666,7 +1663,6 @@ NUMBER
 NUMERIC
 NV_MAGICCONST
 NW
-Na
 NameConstant
 NameError
 NameSpaceTest
@@ -1803,6 +1799,7 @@ PBOOLEAN
 PBYTE
 PCALLS
 PCHAR
+PCM
 PDWORD
 PEM_FOOTER
 PEM_HEADER
@@ -2229,7 +2226,6 @@ STRING
 STRINGCHUNK
 STRUCT
 STX
-ST_DEV
 ST_INO
 ST_NLINK
 SUB
@@ -2248,8 +2244,6 @@ SYN
 SYNCHRONOUS
 SYNTAX
 SYSLOG
-SYSLOG_TCP_PORT
-SYSLOG_UDP_PORT
 SYSTEM
 S_ENFMT
 S_IEXEC
@@ -2444,6 +2438,7 @@ TAB
 TAKEN
 TC
 TCL
+TCP
 TCPServer
 TELNET
 TEMPLATE
@@ -2569,6 +2564,7 @@ TypeLib
 TypeVar
 TypeVarTuple
 TypedDict
+UDP
 UDPServer
 UEMPTYSTRING
 UF_APPEND
@@ -2578,6 +2574,7 @@ UF_IMMUTABLE
 UF_NODUMP
 UF_NOUNLINK
 UF_OPAQUE
+UI
 UID
 UINT
 UIText
@@ -2614,6 +2611,7 @@ USHORT
 USTAR_FORMAT
 UTC
 UTF
+UUCP
 UUID
 UnboundLocalError
 UndecodableBytesDefect
@@ -2684,7 +2682,7 @@ WAIT
 WARN
 WARNING
 WATER
-WAVE_FORMAT_PCM
+WAVE
 WCHAR
 WEEKDAY
 WELCOME
@@ -2744,7 +2742,7 @@ XAUTH
 XDISPLOC
 XGLTYPE
 XHDTYPE
-XHTML_NAMESPACE
+XHTML
 XINCLUDE
 XML
 XMLFilterBase
@@ -3149,6 +3147,7 @@ attrib
 attribute
 attributes
 attrs
+au
 audio
 audioop
 audioread
@@ -3542,19 +3541,19 @@ cachetools
 cachy
 cairocffi
 cairosvg
-calc_callees
+calc
 calc_chksums
 calcfirst
 calendar
 calibrate
 call
 callHandlers
-call_soon_threadsafe
 callable
 callables
 callback
 callbacks
 called
+callees
 caller
 callers
 calls
@@ -3647,6 +3646,7 @@ charref
 chars
 charset
 charset-normalizer
+charsets
 chat
 chdir
 check
@@ -3982,7 +3982,6 @@ createProcessingInstruction
 createSocket
 createTests
 createTextNode
-create_datagram_endpoint
 create_unicode_buffer
 create_ustar_header
 createmenubar
@@ -4064,7 +4063,7 @@ dataconf
 datadog
 datadog-api-client
 dataframe
-datagram_received
+datagram
 datamodule
 datasets
 datasizemask
@@ -4291,7 +4290,6 @@ doCleanups
 doModuleCleanups
 doRollover
 do_bt
-do_longlist
 do_rv
 do_tbreak
 do_unalias
@@ -4468,7 +4466,6 @@ endElementNS
 endPrefixMapping
 end_bigdecimal
 end_cdata_section_handler
-end_element_ns
 end_methodName
 endendtag
 endexecuting
@@ -4476,6 +4473,7 @@ endheaders
 ending
 endoffile
 endpats
+endpoint
 endprogs
 ends
 endswith
@@ -5062,7 +5060,6 @@ get_argspec
 get_bpbynumber
 get_buf
 get_characteristic_subpattern
-get_charsets
 get_cnonce
 get_content_maintype
 get_coro
@@ -5330,6 +5327,7 @@ graphlib
 graphql-core
 graphql-relay
 graphviz
+grav
 gravity
 great-expectations
 greater
@@ -5982,7 +5980,7 @@ keyboard
 keyed
 keyerror_title
 keynames
-keypress_event
+keypress
 keyrefs
 keyrelease_event
 keyring
@@ -6204,6 +6202,7 @@ long
 longMessage
 longdouble
 longest
+longlist
 longopt_pat
 longopt_re
 longopt_xlate
@@ -6337,7 +6336,6 @@ matplotlib
 matplotlib-inline
 max
 maxDiff
-max_redirections
 maxlen
 maxline
 maxminddb
@@ -6552,6 +6550,7 @@ mysql-connector-python
 mysqlclient
 myst-parser
 n
+na
 nag
 naked
 name
@@ -6679,6 +6678,7 @@ nowhitespace
 nox
 npgettext
 nr
+ns
 nsmallest
 nt
 nti
@@ -6688,6 +6688,7 @@ ntransfercmd
 nts
 nturl2path
 null
+nullable
 nullcontext
 num2words
 numba
@@ -6945,7 +6946,6 @@ parse_endtag
 parse_graminit_c
 parse_graminit_h
 parse_keqv_list
-parse_ns_headers
 parse_qs
 parse_qsl
 parse_rhs
@@ -7010,7 +7010,6 @@ pd
 pdb
 pdbpp
 pdf
-pdf2image
 pdfkit
 pdfminer-six
 pdpyras
@@ -7200,7 +7199,6 @@ previousSibling
 print
 printErrorList
 printErrors
-print_callees
 printable
 printdir
 printer
@@ -7677,6 +7675,7 @@ redirect_focusin_event
 redirect_mousebutton_event
 redirect_mousewheel_event
 redirect_yscroll_event
+redirections
 redirector
 redis
 redis-py-cluster
@@ -7935,7 +7934,6 @@ ruler
 run
 runTest
 runTests
-run_coroutine_threadsafe
 run_in_tk_mainloop
 runcall
 runcase
@@ -8491,8 +8489,6 @@ startPrefixMapping
 startTest
 startTestRun
 start_cdata_section_handler
-start_element_ns
-start_ns
 start_tls
 startswith
 starttagopen
@@ -8750,7 +8746,6 @@ testNamePatterns
 test_8svx
 test_addcmd
 test_ask_tabwidth
-test_au
 test_autoexpand
 test_bad_setrecursionlimit_calls
 test_bind_not_ok
@@ -8849,7 +8844,6 @@ test_rclick
 test_readlines
 test_recolorize
 test_recolorize_main
-test_redirector
 test_removecolors
 test_removefilter
 test_rgb
@@ -8879,7 +8873,6 @@ test_textview
 test_toggle_linenumbering
 test_unfound
 test_untabify_region_event
-test_wav
 test_webp
 test_write_stderr_nonencodable
 test_xbm
@@ -8932,6 +8925,7 @@ threading
 threadpool
 threadpoolctl
 threads
+threadsafe
 three
 threshold
 thrift
@@ -9113,7 +9107,6 @@ twisted
 two
 txaio
 type
-type_nullable
 typecode_to_type
 typed
 typed-ast
@@ -9398,6 +9391,7 @@ watched
 watcher
 watchfiles
 watchtower
+wav
 wave
 way
 wbufsize
