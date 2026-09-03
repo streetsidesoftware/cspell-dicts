@@ -3,7 +3,7 @@
 targets:
   - name: en_US
     sources:
-      - node_modules/@cspell/aoo-mozilla-en-dict/dicts/en_US (Kevin Atkinson)/en_US.dic
+      - node_modules/@cspell/aoo-mozilla-en-dict/dicts/en_US (Marco Pinto) (-ize) (alt)/en_US.dic
       - node_modules/@cspell/dict-en-shared/dict/acronyms.txt
       - node_modules/@cspell/dict-en-shared/dict/shared-additional-words.txt
       - node_modules/@cspell/dict-en-shared/dict/shared-additional-words-ize.txt
@@ -19,4 +19,5 @@ targets:
     excludeWordsFrom:
       - node_modules/@cspell/dict-en-shared/dict/exclude-words.txt
       - src/exclude-words.txt
+
 checksumFile: true
