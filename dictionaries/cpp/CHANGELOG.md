@@ -3,6 +3,13 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+## [7.1.1](https://github.com/streetsidesoftware/cspell-dicts/compare/@cspell/dict-cpp@7.1.0...@cspell/dict-cpp@7.1.1) (2026-09-04)
+
+
+### Updates and Bug Fixes
+
+* Update English Dictionary sources ([#5691](https://github.com/streetsidesoftware/cspell-dicts/issues/5691)) ([d2e1ce1](https://github.com/streetsidesoftware/cspell-dicts/commit/d2e1ce1942976a8d3e8f166c43ba844426a85ae1))
+
 ## [7.1.0](https://github.com/streetsidesoftware/cspell-dicts/compare/@cspell/dict-cpp@7.0.2...@cspell/dict-cpp@7.1.0) (2026-08-09)
 
 

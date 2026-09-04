@@ -1,5 +1,12 @@
 # Change Log
 
+## [1.2.1](https://github.com/streetsidesoftware/cspell-dicts/compare/@cspell/dict-gdscript@1.2.0...@cspell/dict-gdscript@1.2.1) (2026-09-04)
+
+
+### Updates and Bug Fixes
+
+* Update English Dictionary sources ([#5691](https://github.com/streetsidesoftware/cspell-dicts/issues/5691)) ([d2e1ce1](https://github.com/streetsidesoftware/cspell-dicts/commit/d2e1ce1942976a8d3e8f166c43ba844426a85ae1))
+
 ## [1.2.0](https://github.com/streetsidesoftware/cspell-dicts/compare/@cspell/dict-gdscript@1.1.0...@cspell/dict-gdscript@1.2.0) (2026-07-12)
 
 

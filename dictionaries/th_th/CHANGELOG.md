@@ -1,5 +1,12 @@
 # Change Log
 
+## [1.0.1](https://github.com/streetsidesoftware/cspell-dicts/compare/@cspell/dict-th-th@1.0.0...@cspell/dict-th-th@1.0.1) (2026-09-04)
+
+
+### Updates and Bug Fixes
+
+* Add Thai sample ([#5694](https://github.com/streetsidesoftware/cspell-dicts/issues/5694)) ([033bb8b](https://github.com/streetsidesoftware/cspell-dicts/commit/033bb8b22f544b81f16e27c696aeadd0da431509))
+
 ## 1.0.0 (2026-08-31)
 
 

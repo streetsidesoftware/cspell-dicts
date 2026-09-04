@@ -1,5 +1,14 @@
 # Changelog
 
+## [1.0.32](https://github.com/streetsidesoftware/cspell-dicts/compare/@cspell/dict-en-gb-legacy@1.0.31...@cspell/dict-en-gb-legacy@1.0.32) (2026-09-04)
+
+
+### Dependencies
+
+* The following workspace dependencies were updated
+  * devDependencies
+    * @cspell/aoo-mozilla-en-dict bumped to 1.0.12
+
 ## [1.0.31](https://github.com/streetsidesoftware/cspell-dicts/compare/@cspell/dict-en-gb-legacy@1.0.30...@cspell/dict-en-gb-legacy@1.0.31) (2026-08-26)
 
 
