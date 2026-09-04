@@ -3,6 +3,20 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+## [3.1.27](https://github.com/streetsidesoftware/cspell-dicts/compare/@cspell/dict-en-gb-mit@3.1.26...@cspell/dict-en-gb-mit@3.1.27) (2026-09-04)
+
+
+### Updates and Bug Fixes
+
+* Update English Dictionary sources ([#5691](https://github.com/streetsidesoftware/cspell-dicts/issues/5691)) ([d2e1ce1](https://github.com/streetsidesoftware/cspell-dicts/commit/d2e1ce1942976a8d3e8f166c43ba844426a85ae1))
+
+
+### Dependencies
+
+* The following workspace dependencies were updated
+  * devDependencies
+    * @cspell/aoo-mozilla-en-dict bumped to 1.0.12
+
 ## [3.1.26](https://github.com/streetsidesoftware/cspell-dicts/compare/@cspell/dict-en-gb-mit@3.1.25...@cspell/dict-en-gb-mit@3.1.26) (2026-08-26)
 
 

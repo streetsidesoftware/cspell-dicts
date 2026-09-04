@@ -1,5 +1,21 @@
 # Release Notes
 
+## [33.15.1](https://github.com/streetsidesoftware/cspell-dicts/compare/cspell-dicts@33.15.0...cspell-dicts@33.15.1) (2026-09-04)
+
+
+### Updates and Bug Fixes
+
+* Add Thai sample ([#5694](https://github.com/streetsidesoftware/cspell-dicts/issues/5694)) ([033bb8b](https://github.com/streetsidesoftware/cspell-dicts/commit/033bb8b22f544b81f16e27c696aeadd0da431509))
+* Update English Dictionary sources ([#5691](https://github.com/streetsidesoftware/cspell-dicts/issues/5691)) ([d2e1ce1](https://github.com/streetsidesoftware/cspell-dicts/commit/d2e1ce1942976a8d3e8f166c43ba844426a85ae1))
+* Workflow Bot -- Build Dictionaries ([#5689](https://github.com/streetsidesoftware/cspell-dicts/issues/5689)) ([f5a4031](https://github.com/streetsidesoftware/cspell-dicts/commit/f5a4031bc316ef4e59640c5dd97e4ee9c72f621c))
+
+
+### Dependencies
+
+* The following workspace dependencies were updated
+  * devDependencies
+    * @cspell/dict-cspell-bundle bumped to 2.0.73
+
 ## [33.15.0](https://github.com/streetsidesoftware/cspell-dicts/compare/cspell-dicts@33.14.0...cspell-dicts@33.15.0) (2026-08-31)
 
 
