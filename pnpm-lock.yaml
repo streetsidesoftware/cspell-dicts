@@ -777,7 +777,7 @@ importers:
         version: 15.0.0
       cspell-config-lib:
         specifier: ^10.2.1
-        version: 10.2.1
+        version: 10.2.2
       cspell-dictionary:
         specifier: ^10.2.1
         version: 10.2.1
@@ -882,6 +882,10 @@ packages:
 
   '@cspell/cspell-types@10.2.1':
     resolution: {integrity: sha512-R9agOEKdMy1rl12YdOkp+WQK27+SW/RvmtHOf1qASbDfFsVTq9oAbxTTiVXKu3MW67dqFr8gGLRaSQYjVKG2fA==}
+    engines: {node: '>=22.18.0'}
+
+  '@cspell/cspell-types@10.2.2':
+    resolution: {integrity: sha512-QfB4ux76pdgOmlhB2IUZKmkq/Ce4nojIlXzGlWGPj+gSuGC6bakL6f5lt4I0YAM8hxOwYPFvJRfkqebym1VtyQ==}
     engines: {node: '>=22.18.0'}
 
   '@cspell/cspell-worker@10.2.1':
@@ -2161,6 +2165,10 @@ packages:
 
   cspell-config-lib@10.2.1:
     resolution: {integrity: sha512-KVykJLj+MewODWDT0CqyBKQZU9jlPoT293ody4Nj5P3t5SCxYxVCpCosDNrwMcJj+ePWaufPX7KnRWVBg63l1Q==}
+    engines: {node: '>=22.18.0'}
+
+  cspell-config-lib@10.2.2:
+    resolution: {integrity: sha512-pVWQOXb6gYLx+JTNxhqWaI4qTtNXnMYtPWauQsjoHsjzQsrIeM8whhXpX5G/dt+7IriUrQNNoH1x+cCkbMQ4UA==}
     engines: {node: '>=22.18.0'}
 
   cspell-dictionary@10.2.1:
@@ -4249,6 +4257,8 @@ snapshots:
 
   '@cspell/cspell-types@10.2.1': {}
 
+  '@cspell/cspell-types@10.2.2': {}
+
   '@cspell/cspell-worker@10.2.1':
     dependencies:
       cspell-lib: 10.2.1
@@ -5562,6 +5572,13 @@ snapshots:
   cspell-config-lib@10.2.1:
     dependencies:
       '@cspell/cspell-types': 10.2.1
+      comment-json: 5.0.0
+      smol-toml: 1.8.0
+      yaml: 2.9.0
+
+  cspell-config-lib@10.2.2:
+    dependencies:
+      '@cspell/cspell-types': 10.2.2
       comment-json: 5.0.0
       smol-toml: 1.8.0
       yaml: 2.9.0
