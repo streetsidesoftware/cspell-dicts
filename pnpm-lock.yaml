@@ -358,7 +358,7 @@ importers:
     dependencies:
       cspell-io:
         specifier: ^10.2.1
-        version: 10.2.1
+        version: 10.2.2
       cspell-trie-lib:
         specifier: ^10.2.1
         version: 10.2.1(@cspell/cspell-types@10.2.1)
@@ -783,7 +783,7 @@ importers:
         version: 10.2.1
       cspell-io:
         specifier: ^10.2.1
-        version: 10.2.1
+        version: 10.2.2
       cspell-lib:
         specifier: ^10.2.1
         version: 10.2.1
@@ -873,6 +873,10 @@ packages:
 
   '@cspell/cspell-service-bus@10.2.1':
     resolution: {integrity: sha512-foUAEQ/VsH/JXCddjAo84KZwkwBDP23hJ2/rjFxcoj2zEKYzkgjbwt2Pfsgv+pmMwtDu+zKyLLV4uuY2JnngiA==}
+    engines: {node: '>=22.18.0'}
+
+  '@cspell/cspell-service-bus@10.2.2':
+    resolution: {integrity: sha512-0UEvuTZ/mLQXg5iy1w7xzUf0gACGnaFRuY7yac7aFQjM//rP+2BXK8bC6g+4reqwBJhjeDrEHy7SvvDICgGMAg==}
     engines: {node: '>=22.18.0'}
 
   '@cspell/cspell-tools@10.2.1':
@@ -1088,6 +1092,10 @@ packages:
 
   '@cspell/url@10.2.1':
     resolution: {integrity: sha512-QRds4VhWjSL3iKaXYlXoasQt2eSN622xIJlfwyD4aeB8x8zmzJEP29C8YQFt1Jsde6/smNMvYWhIETFcdDSkJA==}
+    engines: {node: '>=22.18.0'}
+
+  '@cspell/url@10.2.2':
+    resolution: {integrity: sha512-KC+Rzi9mExB1rzxoT3ysC98tGhiSbgkOXc6U8fbJmoggFswfwwJEzwa2NUNX75Thlty5ZzaPandLS4P0dh4kOA==}
     engines: {node: '>=22.18.0'}
 
   '@cto.af/wtf8@0.0.5':
@@ -2183,6 +2191,10 @@ packages:
 
   cspell-io@10.2.1:
     resolution: {integrity: sha512-7aWbYnwsEMjWxUfYDqXYUE+cxHhy58njRlm2gtHQXYRrwy5GxyTDM8S8kRFFuiP/p7SKSQ3EctgVKRkVXRIE4Q==}
+    engines: {node: '>=22.18.0'}
+
+  cspell-io@10.2.2:
+    resolution: {integrity: sha512-ksMJwWNk2es4c9zv1yL85whDmwVM8gddRxLSRBCIqTxOUelpfE7498Ci8XvfUauWgbdHqlaTuEmCqSMzK3xIQw==}
     engines: {node: '>=22.18.0'}
 
   cspell-lib@10.2.1:
@@ -4235,6 +4247,8 @@ snapshots:
 
   '@cspell/cspell-service-bus@10.2.1': {}
 
+  '@cspell/cspell-service-bus@10.2.2': {}
+
   '@cspell/cspell-tools@10.2.1(@cspell/cspell-types@10.2.1)':
     dependencies:
       '@cspell/cspell-pipe': 10.2.1
@@ -4392,6 +4406,8 @@ snapshots:
   '@cspell/strong-weak-map@10.2.1': {}
 
   '@cspell/url@10.2.1': {}
+
+  '@cspell/url@10.2.2': {}
 
   '@cto.af/wtf8@0.0.5': {}
 
@@ -5594,6 +5610,11 @@ snapshots:
     dependencies:
       '@cspell/cspell-service-bus': 10.2.1
       '@cspell/url': 10.2.1
+
+  cspell-io@10.2.2:
+    dependencies:
+      '@cspell/cspell-service-bus': 10.2.2
+      '@cspell/url': 10.2.2
 
   cspell-lib@10.2.1:
     dependencies:
