@@ -737,7 +737,7 @@ importers:
     dependencies:
       '@cspell/cspell-pipe':
         specifier: ^10.2.1
-        version: 10.2.1
+        version: 10.2.2
       as-table:
         specifier: ^1.0.55
         version: 1.0.55
@@ -865,6 +865,10 @@ packages:
 
   '@cspell/cspell-pipe@10.2.1':
     resolution: {integrity: sha512-IKuqlCzWfqIfYGLnhTw29neBPCg3Q6rkRInspfbLmonYXrPYC0sWKJnvIchV05JaXhiT1kvUey19MsE1U1bQiQ==}
+    engines: {node: '>=22.18.0'}
+
+  '@cspell/cspell-pipe@10.2.2':
+    resolution: {integrity: sha512-WP+kwmg9ltgjXo5N8m0Xwchgob6wJ+c5omY4/WNSLsyEncuRjK1e6wYYN/gs+D/d3ISzC8+yb5Ma13ymkEC+4Q==}
     engines: {node: '>=22.18.0'}
 
   '@cspell/cspell-resolver@10.2.1':
@@ -4228,6 +4232,8 @@ snapshots:
   '@cspell/cspell-performance-monitor@10.2.1': {}
 
   '@cspell/cspell-pipe@10.2.1': {}
+
+  '@cspell/cspell-pipe@10.2.2': {}
 
   '@cspell/cspell-resolver@10.2.1':
     dependencies:
