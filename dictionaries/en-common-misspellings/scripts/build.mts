@@ -2,6 +2,8 @@
 
 import { promises as fs } from 'node:fs';
 
+import type { CSpellUserSettings, DictionaryDefinitionInline } from '@cspell/cspell-types';
+import { parseDictionary, encodeITrieToBTrie } from 'cspell-trie-lib';
 import { parseDocument, type Document, type Scalar, type YAMLSeq } from 'yaml';
 
 const root = new URL('../', import.meta.url);
@@ -71,7 +73,10 @@ function compareEntries(a: Entry, b: Entry): number {
 async function processSrc(srcBaseName: string): Promise<void> {
     const yamlFileName = srcBaseName.replace('.txt', '.yaml');
     const jsonFileName = srcBaseName.replace('.txt', '.json');
+    const bTrieFileName = srcBaseName.replace('.txt', '.btrie');
     const dstJsonFile = new URL(jsonFileName, targetDir);
+    const dstDictFile = new URL(srcBaseName, targetDir);
+    const dstBTrieFile = new URL(bTrieFileName, targetDir);
     const srcYamlFile = new URL(yamlFileName, srcDir);
     const description = descriptions[srcBaseName] || '';
 
@@ -110,7 +115,39 @@ async function processSrc(srcBaseName: string): Promise<void> {
         }
     }
 
-    await fs.writeFile(dstJsonFile, JSON.stringify(doc.toJS(), null, 1), 'utf8');
+    const jsData: CSpellUserSettings = doc.toJS();
+    const dictFileContent = settingsToDictFileContent(jsData);
+    const iTrie = parseDictionary(dictFileContent, { optimize: true });
+
+    await fs.writeFile(dstDictFile, dictFileContent, 'utf8');
+    await fs.writeFile(dstBTrieFile, encodeITrieToBTrie(iTrie), 'utf8');
+    await fs.writeFile(dstJsonFile, JSON.stringify(jsData, null, 1), 'utf8');
+}
+
+function settingsToDictFileContent(jsData: CSpellUserSettings): string {
+    const entries: string[] = [];
+
+    for (const def of (jsData.dictionaryDefinitions || []) as DictionaryDefinitionInline[]) {
+        for (const entry of def.suggestWords || []) {
+            entries.push(processSugEntry(entry, ':'));
+        }
+        for (const entry of def.flagWords || []) {
+            entries.push(processSugEntry(entry, '!'));
+        }
+    }
+
+    entries.sort(new Intl.Collator().compare);
+
+    return `\
+# cspell-tools: keep-case no-split
+
+${entries.join('\n')}
+`;
+}
+
+function processSugEntry(entry: string, prefix: string): string {
+    const { word, suggestions } = lineToEntry(entry);
+    return `${prefix}${word}:${suggestions.join(',')}`;
 }
 
 async function run(): Promise<void> {

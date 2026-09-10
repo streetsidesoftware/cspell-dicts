@@ -32,10 +32,12 @@
   },
   "files": [
     "cspell-ext.json",
-    "dict/dict-*.json"
+    "dict/dict-*.txt.gz",
+    "dict/dict-en.btrie.gz"
   ],
   "scripts": {
-    "build": "node ./scripts/transform-crate-ci-typos.mts && node ./scripts/build.mts",
+    "build": "node ./scripts/transform-crate-ci-typos.mts && node ./scripts/build.mts && pnpm run gz",
+    "gz": "cspell-tools-cli gzip \"dict/*.btrie\" \"dict/*.txt\"",
     "prepare:dictionary": "pnpm run build",
     "prepublishOnly": "echo OK",
     "sync": "sync-github-files crate-ci/typos crates/typos-dict/assets/words.csv LICENSE-MIT --tag=v1.33.1 -o src/crate-ci/typos",

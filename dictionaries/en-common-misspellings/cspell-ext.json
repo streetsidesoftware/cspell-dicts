@@ -4,7 +4,27 @@
     "name": "English - Common Misspellings",
     "description": "Common English misspellings dictionary.",
     "readonly": true,
-    "import": ["./dict/dict-en.json", "./dict/dict-en-gb.json", "./dict/dict-en-us.json"],
+    // "import": ["./dict/dict-en.json", "./dict/dict-en-gb.json", "./dict/dict-en-us.json"],
+    "dictionaryDefinitions": [
+        {
+            "name": "en-gb-common-misspellings",
+            "description": "Common British English misspellings",
+            // "btrie": "./dict/dict-en-gb.btrie.gz",
+            "path": "./dict/dict-en-gb.txt.gz"
+        },
+        {
+            "name": "en-us-common-misspellings",
+            "description": "Common American English misspellings",
+            // "btrie": "./dict/dict-en-us.btrie.gz",
+            "path": "./dict/dict-en-us.txt.gz"
+        },
+        {
+            "name": "en-common-misspellings",
+            "description": "Common English misspellings",
+            "btrie": "./dict/dict-en.btrie.gz",
+            "path": "./dict/dict-en.txt.gz"
+        }
+    ],
     "languageSettings": [
         {
             "languageId": "*",
@@ -21,5 +41,8 @@
             "locale": "en-us",
             "dictionaries": ["en-common-misspellings", "en-us-common-misspellings"]
         }
-    ]
+    ],
+    "engines": {
+        "cspell": ">=9.6.0"
+    }
 }
