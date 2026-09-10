@@ -356,6 +356,9 @@ importers:
 
   dictionaries/en-common-misspellings/scripts:
     dependencies:
+      '@cspell/cspell-types':
+        specifier: ^10.2.2
+        version: 10.2.2
       cspell-io:
         specifier: ^10.2.2
         version: 10.2.2
