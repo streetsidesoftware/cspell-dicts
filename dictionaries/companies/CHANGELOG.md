@@ -3,6 +3,13 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+## [3.2.13](https://github.com/streetsidesoftware/cspell-dicts/compare/@cspell/dict-companies@3.2.12...@cspell/dict-companies@3.2.13) (2026-09-11)
+
+
+### Updates and Bug Fixes
+
+* Add Sourcegraph to companies list ([#5706](https://github.com/streetsidesoftware/cspell-dicts/issues/5706)) ([29bc7ed](https://github.com/streetsidesoftware/cspell-dicts/commit/29bc7edbc54cafb96e357a56e4b8e1d14835a41d))
+
 ## [3.2.12](https://github.com/streetsidesoftware/cspell-dicts/compare/@cspell/dict-companies@3.2.11...@cspell/dict-companies@3.2.12) (2026-07-12)
 
 
