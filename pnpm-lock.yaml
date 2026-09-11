@@ -9,8 +9,8 @@ importers:
   .:
     devDependencies:
       '@cspell/cspell-tools':
-        specifier: ^10.2.2
-        version: 10.2.2(@cspell/cspell-types@10.2.2)
+        specifier: ^10.3.0
+        version: 10.3.0(@cspell/cspell-types@10.3.0)
       '@cspell/dict-cspell-bundle':
         specifier: workspace:*
         version: link:dictionaries/cspell
@@ -19,19 +19,19 @@ importers:
         version: 10.0.1(eslint@10.10.0(supports-color@9.4.0))
       '@lerna-lite/cli':
         specifier: ^5.6.1
-        version: 5.6.1(@lerna-lite/exec@5.6.1)(@lerna-lite/publish@5.6.1)(@lerna-lite/run@5.6.1)(@lerna-lite/version@5.6.1(@lerna-lite/exec@5.6.1)(@lerna-lite/publish@5.6.1)(@lerna-lite/run@5.6.1)(@types/node@26.4.1)(conventional-commits-filter@6.0.1))(@types/node@26.4.1)
+        version: 5.6.1(@lerna-lite/exec@5.6.1)(@lerna-lite/publish@5.6.1)(@lerna-lite/run@5.6.1)(@lerna-lite/version@5.6.1(@lerna-lite/exec@5.6.1)(@lerna-lite/publish@5.6.1)(@lerna-lite/run@5.6.1)(@types/node@26.5.0)(conventional-commits-filter@6.0.1))(@types/node@26.5.0)
       '@lerna-lite/exec':
         specifier: ^5.6.1
-        version: 5.6.1(@lerna-lite/publish@5.6.1)(@lerna-lite/run@5.6.1)(@lerna-lite/version@5.6.1(@lerna-lite/exec@5.6.1)(@lerna-lite/publish@5.6.1)(@lerna-lite/run@5.6.1)(@types/node@26.4.1)(conventional-commits-filter@6.0.1))(@types/node@26.4.1)
+        version: 5.6.1(@lerna-lite/publish@5.6.1)(@lerna-lite/run@5.6.1)(@lerna-lite/version@5.6.1(@lerna-lite/exec@5.6.1)(@lerna-lite/publish@5.6.1)(@lerna-lite/run@5.6.1)(@types/node@26.5.0)(conventional-commits-filter@6.0.1))(@types/node@26.5.0)
       '@lerna-lite/publish':
         specifier: ^5.6.1
-        version: 5.6.1(@lerna-lite/exec@5.6.1)(@lerna-lite/run@5.6.1)(@types/node@26.4.1)(conventional-commits-filter@6.0.1)(supports-color@9.4.0)
+        version: 5.6.1(@lerna-lite/exec@5.6.1)(@lerna-lite/run@5.6.1)(@types/node@26.5.0)(conventional-commits-filter@6.0.1)(supports-color@9.4.0)
       '@lerna-lite/run':
         specifier: ^5.6.1
-        version: 5.6.1(@lerna-lite/exec@5.6.1)(@lerna-lite/publish@5.6.1)(@lerna-lite/version@5.6.1(@lerna-lite/exec@5.6.1)(@lerna-lite/publish@5.6.1)(@lerna-lite/run@5.6.1)(@types/node@26.4.1)(conventional-commits-filter@6.0.1))(@types/node@26.4.1)
+        version: 5.6.1(@lerna-lite/exec@5.6.1)(@lerna-lite/publish@5.6.1)(@lerna-lite/version@5.6.1(@lerna-lite/exec@5.6.1)(@lerna-lite/publish@5.6.1)(@lerna-lite/run@5.6.1)(@types/node@26.5.0)(conventional-commits-filter@6.0.1))(@types/node@26.5.0)
       '@types/node':
-        specifier: ^26.4.1
-        version: 26.4.1
+        specifier: ^26.5.0
+        version: 26.5.0
       ava:
         specifier: ^8.0.1
         version: 8.0.1(supports-color@9.4.0)
@@ -42,8 +42,8 @@ importers:
         specifier: ^10.1.0
         version: 10.1.0
       cspell:
-        specifier: ^10.2.2
-        version: 10.2.2
+        specifier: ^10.3.0
+        version: 10.3.0
       cspell-dict-file-checker:
         specifier: workspace:^
         version: link:cspell-dict-file-checker
@@ -51,8 +51,8 @@ importers:
         specifier: workspace:*
         version: link:scripts
       cspell-trie:
-        specifier: ^10.2.2
-        version: 10.2.2(@cspell/cspell-types@10.2.2)
+        specifier: ^10.3.0
+        version: 10.3.0(@cspell/cspell-types@10.3.0)
       eslint:
         specifier: ^10.10.0
         version: 10.10.0(supports-color@9.4.0)
@@ -63,8 +63,8 @@ importers:
         specifier: ^17.12.0
         version: 17.12.0
       hunspell-reader:
-        specifier: ^10.2.2
-        version: 10.2.2
+        specifier: ^10.3.0
+        version: 10.3.0
       inject-markdown:
         specifier: ^5.0.3
         version: 5.0.3(supports-color@9.4.0)
@@ -87,11 +87,11 @@ importers:
         specifier: ^8.0.1
         version: 8.0.1(supports-color@9.4.0)
       cspell:
-        specifier: ^10.2.2
-        version: 10.2.2
+        specifier: ^10.3.0
+        version: 10.3.0
       cspell-lib:
-        specifier: ^10.2.2
-        version: 10.2.2
+        specifier: ^10.3.0
+        version: 10.3.0
       glob:
         specifier: ^13.0.6
         version: 13.0.6
@@ -357,11 +357,11 @@ importers:
   dictionaries/en-common-misspellings/scripts:
     dependencies:
       cspell-io:
-        specifier: ^10.2.2
-        version: 10.2.2
+        specifier: ^10.3.0
+        version: 10.3.0
       cspell-trie-lib:
-        specifier: ^10.2.2
-        version: 10.2.2(@cspell/cspell-types@10.2.2)
+        specifier: ^10.3.0
+        version: 10.3.0(@cspell/cspell-types@10.3.0)
       yaml:
         specifier: ^2.9.0
         version: 2.9.0
@@ -370,8 +370,8 @@ importers:
         specifier: ^24.0.5
         version: 24.0.5
       '@types/node':
-        specifier: ^26.4.1
-        version: 26.4.1
+        specifier: ^26.5.0
+        version: 26.5.0
 
   dictionaries/en-slang: {}
 
@@ -529,8 +529,8 @@ importers:
   dictionaries/latex/scripts:
     devDependencies:
       '@cspell/cspell-types':
-        specifier: ^10.2.2
-        version: 10.2.2
+        specifier: ^10.3.0
+        version: 10.3.0
 
   dictionaries/lorem-ipsum: {}
 
@@ -599,8 +599,8 @@ importers:
         specifier: ^6.8.3
         version: 6.8.3
       flatpack-json:
-        specifier: ^10.2.2
-        version: 10.2.2
+        specifier: ^10.3.0
+        version: 10.3.0
 
   dictionaries/people-names:
     devDependencies:
@@ -725,10 +725,10 @@ importers:
         version: 6.0.0
       yeoman-environment:
         specifier: ^7.0.0
-        version: 7.0.0(@types/node@26.4.1)(@yeoman/adapter@5.0.0(@types/node@26.4.1))(@yeoman/types@1.11.1(@types/node@26.4.1)(@yeoman/adapter@5.0.0(@types/node@26.4.1))(mem-fs@4.1.5(@types/node@26.4.1)(@types/vinyl@2.0.12)))(mem-fs@4.1.5(@types/node@26.4.1)(@types/vinyl@2.0.12))(supports-color@9.4.0)
+        version: 7.0.0(@types/node@26.5.0)(@yeoman/adapter@5.0.0(@types/node@26.5.0))(@yeoman/types@1.11.1(@types/node@26.5.0)(@yeoman/adapter@5.0.0(@types/node@26.5.0))(mem-fs@4.1.5(@types/node@26.5.0)(@types/vinyl@2.0.12)))(mem-fs@4.1.5(@types/node@26.5.0)(@types/vinyl@2.0.12))(supports-color@9.4.0)
       yeoman-generator:
-        specifier: ^8.3.1
-        version: 8.4.0(@types/node@26.4.1)(@yeoman/types@1.11.1(@types/node@26.4.1)(@yeoman/adapter@5.0.0(@types/node@26.4.1))(mem-fs@4.1.5(@types/node@26.4.1)(@types/vinyl@2.0.12)))(mem-fs@4.1.5(@types/node@26.4.1)(@types/vinyl@2.0.12))(supports-color@9.4.0)
+        specifier: ^8.4.0
+        version: 8.4.0(@types/node@26.5.0)(@yeoman/types@1.11.1(@types/node@26.5.0)(@yeoman/adapter@5.0.0(@types/node@26.5.0))(mem-fs@4.1.5(@types/node@26.5.0)(@types/vinyl@2.0.12)))(mem-fs@4.1.5(@types/node@26.5.0)(@types/vinyl@2.0.12))(supports-color@9.4.0)
       yosay:
         specifier: ^3.0.0
         version: 3.0.0
@@ -736,8 +736,8 @@ importers:
   packages/en-freq:
     dependencies:
       '@cspell/cspell-pipe':
-        specifier: ^10.2.2
-        version: 10.2.2
+        specifier: ^10.3.0
+        version: 10.3.0
       as-table:
         specifier: ^1.0.55
         version: 1.0.55
@@ -748,8 +748,8 @@ importers:
         specifier: ^15.0.0
         version: 15.0.0
       cspell-trie-lib:
-        specifier: ^10.2.2
-        version: 10.2.2(@cspell/cspell-types@10.2.2)
+        specifier: ^10.3.0
+        version: 10.3.0(@cspell/cspell-types@10.3.0)
       globby:
         specifier: ^16.2.4
         version: 16.2.4
@@ -758,8 +758,8 @@ importers:
         specifier: ^24.0.5
         version: 24.0.5
       '@types/node':
-        specifier: ^26.4.1
-        version: 26.4.1
+        specifier: ^26.5.0
+        version: 26.5.0
       typescript:
         specifier: ^7.0.2
         version: 7.0.2
@@ -767,8 +767,8 @@ importers:
   scripts:
     dependencies:
       '@cspell/cspell-bundled-dicts':
-        specifier: ^10.2.2
-        version: 10.2.2
+        specifier: ^10.3.0
+        version: 10.3.0
       '@octokit/core':
         specifier: ^7.0.8
         version: 7.0.8
@@ -776,20 +776,20 @@ importers:
         specifier: ^15.0.0
         version: 15.0.0
       cspell-config-lib:
-        specifier: ^10.2.2
-        version: 10.2.2
+        specifier: ^10.3.0
+        version: 10.3.0
       cspell-dictionary:
-        specifier: ^10.2.2
-        version: 10.2.2
+        specifier: ^10.3.0
+        version: 10.3.0
       cspell-io:
-        specifier: ^10.2.2
-        version: 10.2.2
+        specifier: ^10.3.0
+        version: 10.3.0
       cspell-lib:
-        specifier: ^10.2.2
-        version: 10.2.2
+        specifier: ^10.3.0
+        version: 10.3.0
       cspell-trie-lib:
-        specifier: ^10.2.2
-        version: 10.2.2(@cspell/cspell-types@10.2.2)
+        specifier: ^10.3.0
+        version: 10.3.0(@cspell/cspell-types@10.3.0)
       globby:
         specifier: ^16.2.4
         version: 16.2.4
@@ -819,8 +819,8 @@ importers:
         version: 2.9.0
     devDependencies:
       '@cspell/cspell-types':
-        specifier: ^10.2.2
-        version: 10.2.2
+        specifier: ^10.3.0
+        version: 10.3.0
       '@types/mdast':
         specifier: ^4.0.4
         version: 4.0.4
@@ -857,41 +857,41 @@ packages:
     resolution: {integrity: sha512-GsCw/qu92GI0EX6s7fxUi/SG1lmFjG9XZivxxEDZXqztuQKCn5o5wKdz4v005zci0Md7EZzgAwmQLoIEDZoaow==}
     engines: {node: '>=22'}
 
-  '@cspell/cspell-bundled-dicts@10.2.2':
-    resolution: {integrity: sha512-327sQUcfHjr9TnkX2FYluLuQHSoWjSm9AiPFBpULxHofk7VvKfye12Ur4xMbOzyv7cxMROx/OeYF0oytLuLsvQ==}
+  '@cspell/cspell-bundled-dicts@10.3.0':
+    resolution: {integrity: sha512-gwJ5MWMLDFMIaZdzI8NJgzoq9cYC8CKhKRxvoyF2gc7mCRJokYDPjYrnZFvvkpYWpun1OdQ2drRpU7ZkxFGMpQ==}
     engines: {node: '>=22.18.0'}
 
-  '@cspell/cspell-json-reporter@10.2.2':
-    resolution: {integrity: sha512-gm9J5COxrLqb4WV2EX6x2INoRDOq3shiaFNhUu3cOhb8YHj5e/IPJ+uVT9nBl9BZKGVRX82vseezkiss9ofiGw==}
+  '@cspell/cspell-json-reporter@10.3.0':
+    resolution: {integrity: sha512-mXjxcKPrWQ8ggoft2ayBJ8HPKj/GxQqRhT7JABkBO6ez4DTHbmZU2QmvbseJ2UKqvy3oJqtRz3K9vMN35pryAA==}
     engines: {node: '>=22.18.0'}
 
-  '@cspell/cspell-performance-monitor@10.2.2':
-    resolution: {integrity: sha512-BPPKqUPvRH7KEx5cnZY2KJHA81+V002pJirUkxT3gsrqLP/a3C0CWsZ/ST9f8ZE8OLNLHnmNkPizRPiDHada4Q==}
+  '@cspell/cspell-performance-monitor@10.3.0':
+    resolution: {integrity: sha512-HX6VNVnWGVmQGH9uF3vMKxbmRYdAXfZtZ15b+GFuXQ+n4yp9j8Ni96TzZdOGTWzA/cjOj5i5VU2Q2/b5f+gyDA==}
     engines: {node: '>=22.18.0'}
 
-  '@cspell/cspell-pipe@10.2.2':
-    resolution: {integrity: sha512-WP+kwmg9ltgjXo5N8m0Xwchgob6wJ+c5omY4/WNSLsyEncuRjK1e6wYYN/gs+D/d3ISzC8+yb5Ma13ymkEC+4Q==}
+  '@cspell/cspell-pipe@10.3.0':
+    resolution: {integrity: sha512-lR8EPQz2TADsTVYHdQekUFkWAFnbK/2MEx/VlYHUwayeqdDF3/mbtQWzU7KRBUXLtmO+GjJ3YaWD16CwLmjcMA==}
     engines: {node: '>=22.18.0'}
 
-  '@cspell/cspell-resolver@10.2.2':
-    resolution: {integrity: sha512-DZO2vALwXVi8ajkS0p0DHPD4Uzq86fHBLksZF3MJOWV2nBZxrrUI1/kXA3Fiuil/EXSJG3tf0WX5/efoamP2Iw==}
+  '@cspell/cspell-resolver@10.3.0':
+    resolution: {integrity: sha512-lAXZ/MYzigeLDCqCsfmhWP52suZL3OrK5XuuxEFqygiUDrVPhIjb3BHorQ5/JtJkIIe2NRgqa7qvGW8fjh6F7A==}
     engines: {node: '>=22.18.0'}
 
-  '@cspell/cspell-service-bus@10.2.2':
-    resolution: {integrity: sha512-0UEvuTZ/mLQXg5iy1w7xzUf0gACGnaFRuY7yac7aFQjM//rP+2BXK8bC6g+4reqwBJhjeDrEHy7SvvDICgGMAg==}
+  '@cspell/cspell-service-bus@10.3.0':
+    resolution: {integrity: sha512-sngaSRBEfXEziDO/s8oCzC8AUQRqlTuPtsl1VJQpO+vU9AL/3bCmr+z/JyP+MYzt4nXZVzl1yh/eAVtqfmmfDg==}
     engines: {node: '>=22.18.0'}
 
-  '@cspell/cspell-tools@10.2.2':
-    resolution: {integrity: sha512-AqZYZyLup8c3tm3nyYdjZrC9bX7SQPJmG9XeLMXH10+aM+wkaF5cs2LRb76vaDWe37iLNIx7hidTz3NS2HZTVw==}
+  '@cspell/cspell-tools@10.3.0':
+    resolution: {integrity: sha512-4ya9qUEWbvgsmTYc5+JYQspTcztg7OUwoX8KzKoJEO0kJoNVOYJ97eZD1Yp0etnzl6C1lkJeolHB4osMCwW1xQ==}
     engines: {node: '>=22.18.0'}
     hasBin: true
 
-  '@cspell/cspell-types@10.2.2':
-    resolution: {integrity: sha512-QfB4ux76pdgOmlhB2IUZKmkq/Ce4nojIlXzGlWGPj+gSuGC6bakL6f5lt4I0YAM8hxOwYPFvJRfkqebym1VtyQ==}
+  '@cspell/cspell-types@10.3.0':
+    resolution: {integrity: sha512-xbBuCGaXFAINdrGzUqBOfIKYA74AMNBud+t3PlJXqg+8sHJU2PARiXo0GiaAOCf7QBLzPBpYpC5jZW96iH3/7Q==}
     engines: {node: '>=22.18.0'}
 
-  '@cspell/cspell-worker@10.2.2':
-    resolution: {integrity: sha512-IIoICOihmGbEftfBN35hpD5q0eS8yjzVst7Fvpbjo+XfyuUwZQNg9jzPOW4nNUskzpJT3puDRbZ8AxrodS5Kpw==}
+  '@cspell/cspell-worker@10.3.0':
+    resolution: {integrity: sha512-3yKt+UvqdEwEdMLBxifOiwm2Au4Kz3Qf88YXhJOMGYjS+uv6YS16l1pYQftMARy4oTjmp2uDxrKK89yXdrZ71g==}
     engines: {node: '>=22.18.0'}
 
   '@cspell/dict-ada@4.1.1':
@@ -1076,24 +1076,24 @@ packages:
   '@cspell/dict-zig@1.0.0':
     resolution: {integrity: sha512-XibBIxBlVosU06+M6uHWkFeT0/pW5WajDRYdXG2CgHnq85b0TI/Ks0FuBJykmsgi2CAD3Qtx8UHFEtl/DSFnAQ==}
 
-  '@cspell/dynamic-import@10.2.2':
-    resolution: {integrity: sha512-nYu5CP0OERXGoA1neXI7ieBSI9RSq79vTpWY4sZyK3Z9y8sL077jR3sQI5Q1ePb5tKFXof1UmRdgLS3F0Ef3uA==}
+  '@cspell/dynamic-import@10.3.0':
+    resolution: {integrity: sha512-FoKKLweFFdSty+c3RSldTQF9r4etUbYbmQ5qGoqswnq4nhjmhcADUcyB3Qzi/fCEw8IWFNRsnjbyH6i3w3ePHg==}
     engines: {node: '>=22.18.0'}
 
-  '@cspell/filetypes@10.2.2':
-    resolution: {integrity: sha512-UWuvbNb2rLUwClzX8V5dY2hmURlCzpyXlnUUQL3NM3eJrghSDaDmb7uqfCIiObg2F3+E/6z1dgx2QkcA0luYQQ==}
+  '@cspell/filetypes@10.3.0':
+    resolution: {integrity: sha512-16mWGedtcYlsjMczXxQJBu1CUOsQvOpGjsTus8ZjFQ60ZGr/S6IO/W5PTlmwnO5jCBSPTnVfCLklQ5RVJWXQsA==}
     engines: {node: '>=22.18.0'}
 
-  '@cspell/rpc@10.2.2':
-    resolution: {integrity: sha512-pF4Ekt6eZZKCmdr3IqTtjfoc5UVMXI89HhCYCc4l+GRLjTDPjCX5ekuvy2asByI30NBJUETsNc6yVtmSKZ/9UQ==}
+  '@cspell/rpc@10.3.0':
+    resolution: {integrity: sha512-lcT7aR7bc8/nwbdC8R5Lu7pjxZZUbuTtv7pmd4ReanDY27HKwIM1ueDFfrMDdrwFjoQsKEJBNxsgweT2kc3lmg==}
     engines: {node: '>=22.18.0'}
 
-  '@cspell/strong-weak-map@10.2.2':
-    resolution: {integrity: sha512-eXhJbPoPBzERBHncrZ02uNAS+cfvLKWGWbdaZ/R+sHZbbU3Sc4gnclQz+RRd2Vw3Q8Fra+o9ZLxAKFMB/ljvJw==}
+  '@cspell/strong-weak-map@10.3.0':
+    resolution: {integrity: sha512-amSk4X6zJS7f3Lqup+++HGFSttVudhO+8iCEElq2sfFODJNVrwzVoZKSZsplEy1T5M0pGYHVdNrfgYgN1smQsA==}
     engines: {node: '>=22.18.0'}
 
-  '@cspell/url@10.2.2':
-    resolution: {integrity: sha512-KC+Rzi9mExB1rzxoT3ysC98tGhiSbgkOXc6U8fbJmoggFswfwwJEzwa2NUNX75Thlty5ZzaPandLS4P0dh4kOA==}
+  '@cspell/url@10.3.0':
+    resolution: {integrity: sha512-2CdqNTOCOrRgKiwKzLIlF6iIFn7sfMTlEhEpjkjWdOd5XfCxvQrl5DIuNoqgIqXTarWAVb7AxRDPQ2ZdhU0JMg==}
     engines: {node: '>=22.18.0'}
 
   '@cto.af/wtf8@0.0.5':
@@ -1197,6 +1197,15 @@ packages:
       '@types/node':
         optional: true
 
+  '@inquirer/core@12.0.3':
+    resolution: {integrity: sha512-wsSy0sznmXwkty+2PzZwx00Cazc/E0r0B7mAzdGROz2Ct+DFZXaK7WDjGZvgjRldxH5ZhFVfF2lgkYrqgOw2KA==}
+    engines: {node: '>=23.5.0 || ^22.13.0 || ^20.17.0'}
+    peerDependencies:
+      '@types/node': '>=18'
+    peerDependenciesMeta:
+      '@types/node':
+        optional: true
+
   '@inquirer/editor@5.3.2':
     resolution: {integrity: sha512-7ruKO5d/wxhGHxdCQ3eyP/aBNrPTZ+Ju7ERtnAwuIsu0RSLs6kotlTRkOxHatbD6sDaEEdwsD82pzFiT9ESIyQ==}
     engines: {node: '>=23.5.0 || ^22.13.0 || ^20.17.0'}
@@ -1208,6 +1217,15 @@ packages:
 
   '@inquirer/expand@5.1.4':
     resolution: {integrity: sha512-12o4aYnjWouoq0fyVhYIL+hwXAaga+kntA/wrijFmVvn2heinkdvkbEXRt1Ob/9IOJ285US5tntjfI/Ukt2YkA==}
+    engines: {node: '>=23.5.0 || ^22.13.0 || ^20.17.0'}
+    peerDependencies:
+      '@types/node': '>=18'
+    peerDependenciesMeta:
+      '@types/node':
+        optional: true
+
+  '@inquirer/expand@5.1.5':
+    resolution: {integrity: sha512-uHuXLmXW+TtIfT/9vSBotypAkqn1n34Ul+CLGPos/xANyO4Ff5xZzkYhbKR4NEcfVK4a9mHQOpwVZzluSHFRGw==}
     engines: {node: '>=23.5.0 || ^22.13.0 || ^20.17.0'}
     peerDependencies:
       '@types/node': '>=18'
@@ -1230,6 +1248,15 @@ packages:
 
   '@inquirer/input@5.1.5':
     resolution: {integrity: sha512-2MkYYFD1Owt1eRBwHhsLSutysRodWasA4DVpl42KJKGmzwBTXRYAIXujisrt0UW0UohUlMjNjLfMDbw4emRbfw==}
+    engines: {node: '>=23.5.0 || ^22.13.0 || ^20.17.0'}
+    peerDependencies:
+      '@types/node': '>=18'
+    peerDependenciesMeta:
+      '@types/node':
+        optional: true
+
+  '@inquirer/input@5.1.6':
+    resolution: {integrity: sha512-HtcJhB2QFVXbLuJ5S3syhNbTUVxYvwqV4VRBDkQceBloC9bmTViUoRFP5PbSaDZb3HzfPmpuU/gG4ybVBz4FHA==}
     engines: {node: '>=23.5.0 || ^22.13.0 || ^20.17.0'}
     peerDependencies:
       '@types/node': '>=18'
@@ -1284,6 +1311,15 @@ packages:
 
   '@inquirer/select@5.2.4':
     resolution: {integrity: sha512-L9ubNaJdoBsiom/AfPKq0QLHTkhhCFCtszzdVidGremrlJjPZfGlmvp+IULKIbnYjtVFWnvb4mhiEdNTZ12ugA==}
+    engines: {node: '>=23.5.0 || ^22.13.0 || ^20.17.0'}
+    peerDependencies:
+      '@types/node': '>=18'
+    peerDependenciesMeta:
+      '@types/node':
+        optional: true
+
+  '@inquirer/select@5.2.5':
+    resolution: {integrity: sha512-9kc15hr8r/kI+3DO/xLog5nOzTz1jqsHXa6JBFzmQKhkoJ8Slda1I1L/uD8ZSZ9tF1yp79wwXe7mclvX1rqR2Q==}
     engines: {node: '>=23.5.0 || ^22.13.0 || ^20.17.0'}
     peerDependencies:
       '@types/node': '>=18'
@@ -1632,6 +1668,9 @@ packages:
 
   '@types/node@26.4.1':
     resolution: {integrity: sha512-k97ENvZWtvA6yqz5/FS6a7duDgOPEeOQOc2iKS/nY6mX6qJUKtLnWzQS+Xj6tXweyj6ZcTAK2Qecetnvi9nCLA==}
+
+  '@types/node@26.5.0':
+    resolution: {integrity: sha512-dVSGpriSoCgz8WnDNTuSSuSv1PC/ALXihO4ulRZt7Md8k9mlbdin3lGOcDE8SnWOgf513ByWlXd7BK4azmyg/A==}
 
   '@types/normalize-package-data@2.4.4':
     resolution: {integrity: sha512-37i+OaWTh9qeK4LSHPsyRC7NahnGotNuZvjLSgcPzblpHB3rrCJxAOgI5gCdKm7coonsaX1Of0ILiTcnZjbfxA==}
@@ -2138,8 +2177,8 @@ packages:
     resolution: {integrity: sha512-X8XDzyvYaA6msMyAM575CUoygY5b44QzLcGRKsK3MFmXcOvQa518dNPLsKYwkYsn72g3EiW+LE0ytd/FlqWmyw==}
     engines: {node: '>=18'}
 
-  cosmiconfig@10.0.0:
-    resolution: {integrity: sha512-RYs2EfrIoS16yh6j/MLgF753u5rROFFw3XGjcJXM4UQJm1iGXX7gKNyk4O/bCkyfi9Qfo+fVdd3FrnviZv830g==}
+  cosmiconfig@10.0.1:
+    resolution: {integrity: sha512-/zvGoYn0y27QTBmK+0B+oPdEPC4fKGUmJsMTQbDjqph00TrkqfVFW/M+C6ya54sYCgHC6QCwK/mI6djt8cEGHQ==}
     engines: {node: ^22.18 || >= 24}
 
   cpy-cli@7.0.0:
@@ -2164,49 +2203,49 @@ packages:
     resolution: {integrity: sha512-uV2QOWP2nWzsy2aMp8aRibhi9dlzF5Hgh5SHaB9OiTGEyDTiJJyx0uy51QXdyWbtAHNua4XJzUKca3OzKUd3vA==}
     engines: {node: '>= 8'}
 
-  cspell-config-lib@10.2.2:
-    resolution: {integrity: sha512-pVWQOXb6gYLx+JTNxhqWaI4qTtNXnMYtPWauQsjoHsjzQsrIeM8whhXpX5G/dt+7IriUrQNNoH1x+cCkbMQ4UA==}
+  cspell-config-lib@10.3.0:
+    resolution: {integrity: sha512-wkKxHAS9iWtBH9EASnBBTPFUo3c1PpDPD2ITKnqmDtPke5Wwy8Lx3wXlYtg74OFZfXIai6LPDnrCjzhgxQ6tjA==}
     engines: {node: '>=22.18.0'}
 
-  cspell-dictionary@10.2.2:
-    resolution: {integrity: sha512-UbdKjoiFabeJMax/CPxWU5/ut7AvQ7h/s0OgHRjDdX9do1uKdURvLhe6UlesP2w01krioAGi//ZkV1JCZOOOSg==}
+  cspell-dictionary@10.3.0:
+    resolution: {integrity: sha512-9AT2CseqOeFynRZ9k9A+wrqTJgKZNh26RBhb4hGViQsCQBofWIKuHxx5SNBoD+Fk7hGg8PkBhhrgGAcEqpSeHA==}
     engines: {node: '>=22.18.0'}
 
-  cspell-gitignore@10.2.2:
-    resolution: {integrity: sha512-/l0nF5jBqnowXcIMbLDCjFE8sKM6lKs4NjMa87JjYiOCx/LqN3rusL/Dkumws/NB2o5NUxqDRtitiYxw7tWlvQ==}
-    engines: {node: '>=22.18.0'}
-    hasBin: true
-
-  cspell-glob@10.2.2:
-    resolution: {integrity: sha512-T1icxtdrv9QXETC0IQMBWPTNDxBYw4MPc0Z2iDPGFUjwWyYw2SBH8vC+S2HoXHt47BXg8Y2t6zbkPPkXlK1OzQ==}
-    engines: {node: '>=22.18.0'}
-
-  cspell-grammar@10.2.2:
-    resolution: {integrity: sha512-GYLzoFT14FTuTmkwgzQzXInC1aUB/Wb7GzTrA7Gj8mrXFfHC/zJ1oTXufAY1fS9oGvYezvjb2LWPoMM+schmnA==}
+  cspell-gitignore@10.3.0:
+    resolution: {integrity: sha512-gNzOX3J4t20cnxEK9QiIsNbJ7XwxqWiq3uwVIe4diVNYjK//WoT2OWtdAQeoSiV2XS8bPK5m7kFQ/x+u3RqQbQ==}
     engines: {node: '>=22.18.0'}
     hasBin: true
 
-  cspell-io@10.2.2:
-    resolution: {integrity: sha512-ksMJwWNk2es4c9zv1yL85whDmwVM8gddRxLSRBCIqTxOUelpfE7498Ci8XvfUauWgbdHqlaTuEmCqSMzK3xIQw==}
+  cspell-glob@10.3.0:
+    resolution: {integrity: sha512-mXMLDBU6e0GeLs2r8J+pBQdeZfFlHfH/+Mvr2KSZWfmqcnevXeFwcckIbqSm+30yWF5I66u988YOagxJw3+btQ==}
     engines: {node: '>=22.18.0'}
 
-  cspell-lib@10.2.2:
-    resolution: {integrity: sha512-d9ElvCs34f5aoVEOr0aP2iqUQYjrgvETept3HIbp67cwxKLkhygO1F8Ce6vcQ+G9PiGM6DrCuwHq8zvqGbJ0LQ==}
+  cspell-grammar@10.3.0:
+    resolution: {integrity: sha512-XrFxYI5O7Cu1vwvtmIX3/AX1Ln7nkemsDtEBDs0RqLmWBLtzc1VcFmmAi3h5t36mbWev2TuVyyXjTfvZb41gRA==}
+    engines: {node: '>=22.18.0'}
+    hasBin: true
+
+  cspell-io@10.3.0:
+    resolution: {integrity: sha512-KxtKKdw5rrNtLAtGJoJoF1m4mI6i0Zs2TL7qowh4cSh991ncHFtpjJ9aZJW6PmJ9RZF8LtkYRL8WH6Vp3BB9fQ==}
     engines: {node: '>=22.18.0'}
 
-  cspell-trie-lib@10.2.2:
-    resolution: {integrity: sha512-n+dscSwWLSWcN/tQhv2wJziX/AfPxRVffr6YkGOcVCov1YaL3XoWpR0f6Yk16281s231hUcLEPgcWzISTs09dw==}
+  cspell-lib@10.3.0:
+    resolution: {integrity: sha512-XuyUgOEjkSXi+SlRsTdi3vhW6RaZDgQxAlQ9DpATsWbUKZ8t5DD1nM5X0kIF4UrvcGQ+wmJI8RwMY6GMvmOPmw==}
+    engines: {node: '>=22.18.0'}
+
+  cspell-trie-lib@10.3.0:
+    resolution: {integrity: sha512-Y2bI1dEly/ToxM98T/4aVifbKJNcHM/pYcyQ65Zc+wKAOvB8S4Xt93dx6Ik2EraL/tT3zC5xP4Wq7B1qlpjo8w==}
     engines: {node: '>=22.18.0'}
     peerDependencies:
-      '@cspell/cspell-types': 10.2.2
+      '@cspell/cspell-types': 10.3.0
 
-  cspell-trie@10.2.2:
-    resolution: {integrity: sha512-DVlusrefq7d6S55dhmRkUaJ88b4U4gkS3mT4xyCIOlLgVYnDommiO9QkMA6ZrvYGTkZA+R4vg8H5WV5sgiD4UA==}
+  cspell-trie@10.3.0:
+    resolution: {integrity: sha512-9BewUgZESd+bh/0TM/9ndtBP5Lx7dwZscwJXk+UslRjyVJ3JSQ0gOtO2QlzTcDDyb6nM7nZ5SUXS+/tTAYpt5g==}
     engines: {node: '>=22.18.0'}
     hasBin: true
 
-  cspell@10.2.2:
-    resolution: {integrity: sha512-lQF469/Y3Fz5nlnQoAuA1ZDDheyCMNDyS3LBbAeoKL1gUKTDypH0qA6mqbp3KoZNicqGIxZoW3RoYkZ7v1tpZQ==}
+  cspell@10.3.0:
+    resolution: {integrity: sha512-naVffsHObB8A4usJUMdN30OskNIoOQgZ3pYNCH8R/ypzfFy6PMDSJYOtLUhl/tkRWTDj/EgUaDRyE60tf3nrmQ==}
     engines: {node: '>=22.18.0'}
     hasBin: true
 
@@ -2554,8 +2593,8 @@ packages:
   flat-cache@6.1.23:
     resolution: {integrity: sha512-f++BY9pTk+983xK1FLzlLpmM0i0z+jHmx3QESGkURMXujQZz1k5wzwX6hjnQ8goaD0B+sYnDK1yZ6MTyZfUaqA==}
 
-  flatpack-json@10.2.2:
-    resolution: {integrity: sha512-SenjdPqgUY/b2dzWY0YTg+SCcmv3ceLJMieir9p0onhqgqaxKapKF8AYhpsndUyQHnrgpEKJ8FWfR7fh+F99Pw==}
+  flatpack-json@10.3.0:
+    resolution: {integrity: sha512-ENaJ9GvbiMaPCplqg9fvTZy+XLicRbYUVFlTPdiPlkEW2aSNISqVcra1Li9GO9NMj7IUfngb6pl1tU6H2THqew==}
     engines: {node: '>=22.18.0'}
 
   flatted@3.4.4:
@@ -2708,8 +2747,8 @@ packages:
     resolution: {integrity: sha512-eKCa6bwnJhvxj14kZk5NCPc6Hb6BdsU9DZcOnmQKSnO1VKrfV0zCvtttPZUsBvjmNDn8rpcJfpwSYnHBjc95MQ==}
     engines: {node: '>=18.18.0'}
 
-  hunspell-reader@10.2.2:
-    resolution: {integrity: sha512-7rDpJV8cbfqWlu1zpVyRwf730na03M8NXP/xuEX326fAL+YNNToEyKD8ko3KLW7nU+FhaypgxVUkst54gflgdQ==}
+  hunspell-reader@10.3.0:
+    resolution: {integrity: sha512-KKAq0y47q2m0OfZAFO2YSDtOpAjoqiI9xbha74lHC4WZUWGW+aDYWSLBsrLLjkS0XB61G4ptRCtreP0BmqUNSg==}
     engines: {node: '>=22.18.0'}
     hasBin: true
 
@@ -2729,8 +2768,8 @@ packages:
     resolution: {integrity: sha512-hsBTNUqQTDwkWtcdYI2i06Y/nUBEsNEDJKjWdigLvegy8kDuJAS8uRlpkkcQpyEXL0Z/pjDy5HBmMjRCJ2gq+g==}
     engines: {node: '>= 4'}
 
-  ignore@7.0.8:
-    resolution: {integrity: sha512-YYNsSlXBjMk92SKnkwvB5LOVSa6OznlFUGcsvrFgNJbJCd0M1XKeFVRc8ZByeCqz32FivYNHJVooLmdqrmvp/Q==}
+  ignore@7.0.9:
+    resolution: {integrity: sha512-brTTsvFRt5C1gGHtPst/281UjPD5t9fBqbgoMPlVWy11ZLTPfu7HxK4ZYqO9H7o/yC9rSTCI85EaQ4OoY12qYw==}
     engines: {node: '>= 4'}
 
   import-fresh@4.0.0:
@@ -2888,8 +2927,8 @@ packages:
     resolution: {integrity: sha512-6EuL879VkRA+1Cz578mKMiKvjPNEuk6+r1JaFzoSWejZmtf7xWbIyw1e3KkxlkzTIt9Taw6JBhEppG7utc1P+w==}
     hasBin: true
 
-  js-yaml@4.3.2:
-    resolution: {integrity: sha512-SFNOvSJ+Dgf/9An904Yx+CgSlIPCkIpao4qo51lpee25TIRejdH3rhR4EZMGoNx3/TP3O+wzWuiTFl4sqbltzA==}
+  js-yaml@5.4.1:
+    resolution: {integrity: sha512-28R/k+NAjeuf7+CKlTxWZVExJGwVVLwY06DgEnOMz2gEpfNkDcD7QvyiVPT0xy0XXhU8vHsd4Ot42OOPdJG7dQ==}
     hasBin: true
 
   json-parse-even-better-errors@5.0.0:
@@ -3918,6 +3957,9 @@ packages:
   undici-types@8.3.0:
     resolution: {integrity: sha512-j375ScV60dom+YkPFIfTLcOiPxkN/buHz5GobjLhixFuANaNs3C9l4GmrWqejgXWJ7BbJcFYpTEUkS1Ge8bpZQ==}
 
+  undici-types@8.9.0:
+    resolution: {integrity: sha512-KTDyRTYX8sWmKXAikPHHSyc63CRPETMctyjKFupcC6OBLXT3xsN0e9aF7m+mIXutFWpUXuedtowG7iLOzp0kQg==}
+
   undici@6.28.1:
     resolution: {integrity: sha512-zWpdTVD54H48CIybL0rWQ3ukpb9d23wM7eH5RtfdmeP70cWHNjtfo7P4vZX+5CoDcO53J4Pu5uXp7lNfjc6DRA==}
     engines: {node: '>=18.17'}
@@ -4188,7 +4230,7 @@ snapshots:
 
   '@conventional-changelog/template@1.3.0': {}
 
-  '@cspell/cspell-bundled-dicts@10.2.2':
+  '@cspell/cspell-bundled-dicts@10.3.0':
     dependencies:
       '@cspell/dict-ada': 4.1.1
       '@cspell/dict-al': 1.1.1
@@ -4250,37 +4292,37 @@ snapshots:
       '@cspell/dict-vue': 3.0.5
       '@cspell/dict-zig': 1.0.0
 
-  '@cspell/cspell-json-reporter@10.2.2':
+  '@cspell/cspell-json-reporter@10.3.0':
     dependencies:
-      '@cspell/cspell-types': 10.2.2
+      '@cspell/cspell-types': 10.3.0
 
-  '@cspell/cspell-performance-monitor@10.2.2': {}
+  '@cspell/cspell-performance-monitor@10.3.0': {}
 
-  '@cspell/cspell-pipe@10.2.2': {}
+  '@cspell/cspell-pipe@10.3.0': {}
 
-  '@cspell/cspell-resolver@10.2.2':
+  '@cspell/cspell-resolver@10.3.0':
     dependencies:
       global-directory: 5.0.0
 
-  '@cspell/cspell-service-bus@10.2.2': {}
+  '@cspell/cspell-service-bus@10.3.0': {}
 
-  '@cspell/cspell-tools@10.2.2(@cspell/cspell-types@10.2.2)':
+  '@cspell/cspell-tools@10.3.0(@cspell/cspell-types@10.3.0)':
     dependencies:
-      '@cspell/cspell-pipe': 10.2.2
+      '@cspell/cspell-pipe': 10.3.0
       commander: 15.0.0
-      cosmiconfig: 10.0.0
-      cspell-trie-lib: 10.2.2(@cspell/cspell-types@10.2.2)
+      cosmiconfig: 10.0.1
+      cspell-trie-lib: 10.3.0(@cspell/cspell-types@10.3.0)
       glob: 13.0.6
-      hunspell-reader: 10.2.2
+      hunspell-reader: 10.3.0
       yaml: 2.9.0
     transitivePeerDependencies:
       - '@cspell/cspell-types'
 
-  '@cspell/cspell-types@10.2.2': {}
+  '@cspell/cspell-types@10.3.0': {}
 
-  '@cspell/cspell-worker@10.2.2':
+  '@cspell/cspell-worker@10.3.0':
     dependencies:
-      cspell-lib: 10.2.2
+      cspell-lib: 10.3.0
 
   '@cspell/dict-ada@4.1.1': {}
 
@@ -4409,18 +4451,18 @@ snapshots:
 
   '@cspell/dict-zig@1.0.0': {}
 
-  '@cspell/dynamic-import@10.2.2':
+  '@cspell/dynamic-import@10.3.0':
     dependencies:
-      '@cspell/url': 10.2.2
+      '@cspell/url': 10.3.0
       import-meta-resolve: 4.2.0
 
-  '@cspell/filetypes@10.2.2': {}
+  '@cspell/filetypes@10.3.0': {}
 
-  '@cspell/rpc@10.2.2': {}
+  '@cspell/rpc@10.3.0': {}
 
-  '@cspell/strong-weak-map@10.2.2': {}
+  '@cspell/strong-weak-map@10.3.0': {}
 
-  '@cspell/url@10.2.2': {}
+  '@cspell/url@10.3.0': {}
 
   '@cto.af/wtf8@0.0.5': {}
 
@@ -4480,122 +4522,157 @@ snapshots:
 
   '@inquirer/ansi@2.0.8': {}
 
-  '@inquirer/checkbox@5.2.4(@types/node@26.4.1)':
+  '@inquirer/checkbox@5.2.4(@types/node@26.5.0)':
     dependencies:
       '@inquirer/ansi': 2.0.8
-      '@inquirer/core': 12.0.2(@types/node@26.4.1)
+      '@inquirer/core': 12.0.2(@types/node@26.5.0)
       '@inquirer/figures': 2.0.9
-      '@inquirer/type': 4.1.1(@types/node@26.4.1)
+      '@inquirer/type': 4.1.1(@types/node@26.5.0)
     optionalDependencies:
-      '@types/node': 26.4.1
+      '@types/node': 26.5.0
 
-  '@inquirer/confirm@6.3.1(@types/node@26.4.1)':
+  '@inquirer/confirm@6.3.1(@types/node@26.5.0)':
     dependencies:
-      '@inquirer/core': 12.0.2(@types/node@26.4.1)
-      '@inquirer/type': 4.1.1(@types/node@26.4.1)
+      '@inquirer/core': 12.0.2(@types/node@26.5.0)
+      '@inquirer/type': 4.1.1(@types/node@26.5.0)
     optionalDependencies:
-      '@types/node': 26.4.1
+      '@types/node': 26.5.0
 
-  '@inquirer/core@12.0.2(@types/node@26.4.1)':
+  '@inquirer/core@12.0.2(@types/node@26.5.0)':
     dependencies:
       '@inquirer/ansi': 2.0.8
       '@inquirer/figures': 2.0.9
-      '@inquirer/type': 4.1.1(@types/node@26.4.1)
+      '@inquirer/type': 4.1.1(@types/node@26.5.0)
       cli-width: 4.1.0
       fast-wrap-ansi: 0.2.2
       mute-stream: 3.0.0
       signal-exit: 4.1.0
     optionalDependencies:
-      '@types/node': 26.4.1
+      '@types/node': 26.5.0
 
-  '@inquirer/editor@5.3.2(@types/node@26.4.1)':
+  '@inquirer/core@12.0.3(@types/node@26.5.0)':
     dependencies:
-      '@inquirer/core': 12.0.2(@types/node@26.4.1)
-      '@inquirer/external-editor': 3.0.5(@types/node@26.4.1)
-      '@inquirer/type': 4.1.1(@types/node@26.4.1)
+      '@inquirer/ansi': 2.0.8
+      '@inquirer/figures': 2.0.9
+      '@inquirer/type': 4.1.1(@types/node@26.5.0)
+      cli-width: 4.1.0
+      fast-wrap-ansi: 0.2.2
+      mute-stream: 3.0.0
+      signal-exit: 4.1.0
     optionalDependencies:
-      '@types/node': 26.4.1
+      '@types/node': 26.5.0
 
-  '@inquirer/expand@5.1.4(@types/node@26.4.1)':
+  '@inquirer/editor@5.3.2(@types/node@26.5.0)':
     dependencies:
-      '@inquirer/core': 12.0.2(@types/node@26.4.1)
-      '@inquirer/type': 4.1.1(@types/node@26.4.1)
+      '@inquirer/core': 12.0.2(@types/node@26.5.0)
+      '@inquirer/external-editor': 3.0.5(@types/node@26.5.0)
+      '@inquirer/type': 4.1.1(@types/node@26.5.0)
     optionalDependencies:
-      '@types/node': 26.4.1
+      '@types/node': 26.5.0
 
-  '@inquirer/external-editor@3.0.5(@types/node@26.4.1)':
+  '@inquirer/expand@5.1.4(@types/node@26.5.0)':
+    dependencies:
+      '@inquirer/core': 12.0.2(@types/node@26.5.0)
+      '@inquirer/type': 4.1.1(@types/node@26.5.0)
+    optionalDependencies:
+      '@types/node': 26.5.0
+
+  '@inquirer/expand@5.1.5(@types/node@26.5.0)':
+    dependencies:
+      '@inquirer/core': 12.0.3(@types/node@26.5.0)
+      '@inquirer/type': 4.1.1(@types/node@26.5.0)
+    optionalDependencies:
+      '@types/node': 26.5.0
+
+  '@inquirer/external-editor@3.0.5(@types/node@26.5.0)':
     dependencies:
       chardet: 2.2.0
       iconv-lite: 0.7.3
     optionalDependencies:
-      '@types/node': 26.4.1
+      '@types/node': 26.5.0
 
   '@inquirer/figures@2.0.9': {}
 
-  '@inquirer/input@5.1.5(@types/node@26.4.1)':
+  '@inquirer/input@5.1.5(@types/node@26.5.0)':
     dependencies:
-      '@inquirer/core': 12.0.2(@types/node@26.4.1)
-      '@inquirer/type': 4.1.1(@types/node@26.4.1)
+      '@inquirer/core': 12.0.2(@types/node@26.5.0)
+      '@inquirer/type': 4.1.1(@types/node@26.5.0)
     optionalDependencies:
-      '@types/node': 26.4.1
+      '@types/node': 26.5.0
 
-  '@inquirer/number@4.2.2(@types/node@26.4.1)':
+  '@inquirer/input@5.1.6(@types/node@26.5.0)':
     dependencies:
-      '@inquirer/core': 12.0.2(@types/node@26.4.1)
-      '@inquirer/type': 4.1.1(@types/node@26.4.1)
+      '@inquirer/core': 12.0.3(@types/node@26.5.0)
+      '@inquirer/type': 4.1.1(@types/node@26.5.0)
     optionalDependencies:
-      '@types/node': 26.4.1
+      '@types/node': 26.5.0
 
-  '@inquirer/password@5.2.1(@types/node@26.4.1)':
+  '@inquirer/number@4.2.2(@types/node@26.5.0)':
     dependencies:
-      '@inquirer/ansi': 2.0.8
-      '@inquirer/core': 12.0.2(@types/node@26.4.1)
-      '@inquirer/type': 4.1.1(@types/node@26.4.1)
+      '@inquirer/core': 12.0.2(@types/node@26.5.0)
+      '@inquirer/type': 4.1.1(@types/node@26.5.0)
     optionalDependencies:
-      '@types/node': 26.4.1
+      '@types/node': 26.5.0
 
-  '@inquirer/prompts@8.7.1(@types/node@26.4.1)':
-    dependencies:
-      '@inquirer/checkbox': 5.2.4(@types/node@26.4.1)
-      '@inquirer/confirm': 6.3.1(@types/node@26.4.1)
-      '@inquirer/editor': 5.3.2(@types/node@26.4.1)
-      '@inquirer/expand': 5.1.4(@types/node@26.4.1)
-      '@inquirer/input': 5.1.5(@types/node@26.4.1)
-      '@inquirer/number': 4.2.2(@types/node@26.4.1)
-      '@inquirer/password': 5.2.1(@types/node@26.4.1)
-      '@inquirer/rawlist': 5.3.4(@types/node@26.4.1)
-      '@inquirer/search': 4.3.2(@types/node@26.4.1)
-      '@inquirer/select': 5.2.4(@types/node@26.4.1)
-    optionalDependencies:
-      '@types/node': 26.4.1
-
-  '@inquirer/rawlist@5.3.4(@types/node@26.4.1)':
-    dependencies:
-      '@inquirer/core': 12.0.2(@types/node@26.4.1)
-      '@inquirer/type': 4.1.1(@types/node@26.4.1)
-    optionalDependencies:
-      '@types/node': 26.4.1
-
-  '@inquirer/search@4.3.2(@types/node@26.4.1)':
-    dependencies:
-      '@inquirer/core': 12.0.2(@types/node@26.4.1)
-      '@inquirer/figures': 2.0.9
-      '@inquirer/type': 4.1.1(@types/node@26.4.1)
-    optionalDependencies:
-      '@types/node': 26.4.1
-
-  '@inquirer/select@5.2.4(@types/node@26.4.1)':
+  '@inquirer/password@5.2.1(@types/node@26.5.0)':
     dependencies:
       '@inquirer/ansi': 2.0.8
-      '@inquirer/core': 12.0.2(@types/node@26.4.1)
-      '@inquirer/figures': 2.0.9
-      '@inquirer/type': 4.1.1(@types/node@26.4.1)
+      '@inquirer/core': 12.0.2(@types/node@26.5.0)
+      '@inquirer/type': 4.1.1(@types/node@26.5.0)
     optionalDependencies:
-      '@types/node': 26.4.1
+      '@types/node': 26.5.0
 
-  '@inquirer/type@4.1.1(@types/node@26.4.1)':
+  '@inquirer/prompts@8.7.1(@types/node@26.5.0)':
+    dependencies:
+      '@inquirer/checkbox': 5.2.4(@types/node@26.5.0)
+      '@inquirer/confirm': 6.3.1(@types/node@26.5.0)
+      '@inquirer/editor': 5.3.2(@types/node@26.5.0)
+      '@inquirer/expand': 5.1.4(@types/node@26.5.0)
+      '@inquirer/input': 5.1.5(@types/node@26.5.0)
+      '@inquirer/number': 4.2.2(@types/node@26.5.0)
+      '@inquirer/password': 5.2.1(@types/node@26.5.0)
+      '@inquirer/rawlist': 5.3.4(@types/node@26.5.0)
+      '@inquirer/search': 4.3.2(@types/node@26.5.0)
+      '@inquirer/select': 5.2.4(@types/node@26.5.0)
     optionalDependencies:
-      '@types/node': 26.4.1
+      '@types/node': 26.5.0
+
+  '@inquirer/rawlist@5.3.4(@types/node@26.5.0)':
+    dependencies:
+      '@inquirer/core': 12.0.2(@types/node@26.5.0)
+      '@inquirer/type': 4.1.1(@types/node@26.5.0)
+    optionalDependencies:
+      '@types/node': 26.5.0
+
+  '@inquirer/search@4.3.2(@types/node@26.5.0)':
+    dependencies:
+      '@inquirer/core': 12.0.2(@types/node@26.5.0)
+      '@inquirer/figures': 2.0.9
+      '@inquirer/type': 4.1.1(@types/node@26.5.0)
+    optionalDependencies:
+      '@types/node': 26.5.0
+
+  '@inquirer/select@5.2.4(@types/node@26.5.0)':
+    dependencies:
+      '@inquirer/ansi': 2.0.8
+      '@inquirer/core': 12.0.2(@types/node@26.5.0)
+      '@inquirer/figures': 2.0.9
+      '@inquirer/type': 4.1.1(@types/node@26.5.0)
+    optionalDependencies:
+      '@types/node': 26.5.0
+
+  '@inquirer/select@5.2.5(@types/node@26.5.0)':
+    dependencies:
+      '@inquirer/ansi': 2.0.8
+      '@inquirer/core': 12.0.3(@types/node@26.5.0)
+      '@inquirer/figures': 2.0.9
+      '@inquirer/type': 4.1.1(@types/node@26.5.0)
+    optionalDependencies:
+      '@types/node': 26.5.0
+
+  '@inquirer/type@4.1.1(@types/node@26.5.0)':
+    optionalDependencies:
+      '@types/node': 26.5.0
 
   '@isaacs/fs-minipass@4.0.1':
     dependencies:
@@ -4619,27 +4696,27 @@ snapshots:
 
   '@kwsites/promise-deferred@1.1.1': {}
 
-  '@lerna-lite/cli@5.6.1(@lerna-lite/exec@5.6.1)(@lerna-lite/publish@5.6.1)(@lerna-lite/run@5.6.1)(@lerna-lite/version@5.6.1(@lerna-lite/exec@5.6.1)(@lerna-lite/publish@5.6.1)(@lerna-lite/run@5.6.1)(@types/node@26.4.1)(conventional-commits-filter@6.0.1))(@types/node@26.4.1)':
+  '@lerna-lite/cli@5.6.1(@lerna-lite/exec@5.6.1)(@lerna-lite/publish@5.6.1)(@lerna-lite/run@5.6.1)(@lerna-lite/version@5.6.1(@lerna-lite/exec@5.6.1)(@lerna-lite/publish@5.6.1)(@lerna-lite/run@5.6.1)(@types/node@26.5.0)(conventional-commits-filter@6.0.1))(@types/node@26.5.0)':
     dependencies:
-      '@lerna-lite/core': 5.6.1(@types/node@26.4.1)
-      '@lerna-lite/init': 5.6.1(@types/node@26.4.1)
+      '@lerna-lite/core': 5.6.1(@types/node@26.5.0)
+      '@lerna-lite/init': 5.6.1(@types/node@26.5.0)
       '@lerna-lite/npmlog': 5.4.1
       dotenv: 17.4.2
       import-local: 3.2.0
       yargs: 18.1.0
     optionalDependencies:
-      '@lerna-lite/exec': 5.6.1(@lerna-lite/publish@5.6.1)(@lerna-lite/run@5.6.1)(@lerna-lite/version@5.6.1(@lerna-lite/exec@5.6.1)(@lerna-lite/publish@5.6.1)(@lerna-lite/run@5.6.1)(@types/node@26.4.1)(conventional-commits-filter@6.0.1))(@types/node@26.4.1)
-      '@lerna-lite/publish': 5.6.1(@lerna-lite/exec@5.6.1)(@lerna-lite/run@5.6.1)(@types/node@26.4.1)(conventional-commits-filter@6.0.1)(supports-color@9.4.0)
-      '@lerna-lite/run': 5.6.1(@lerna-lite/exec@5.6.1)(@lerna-lite/publish@5.6.1)(@lerna-lite/version@5.6.1(@lerna-lite/exec@5.6.1)(@lerna-lite/publish@5.6.1)(@lerna-lite/run@5.6.1)(@types/node@26.4.1)(conventional-commits-filter@6.0.1))(@types/node@26.4.1)
-      '@lerna-lite/version': 5.6.1(@lerna-lite/exec@5.6.1)(@lerna-lite/publish@5.6.1)(@lerna-lite/run@5.6.1)(@types/node@26.4.1)(conventional-commits-filter@6.0.1)
+      '@lerna-lite/exec': 5.6.1(@lerna-lite/publish@5.6.1)(@lerna-lite/run@5.6.1)(@lerna-lite/version@5.6.1(@lerna-lite/exec@5.6.1)(@lerna-lite/publish@5.6.1)(@lerna-lite/run@5.6.1)(@types/node@26.5.0)(conventional-commits-filter@6.0.1))(@types/node@26.5.0)
+      '@lerna-lite/publish': 5.6.1(@lerna-lite/exec@5.6.1)(@lerna-lite/run@5.6.1)(@types/node@26.5.0)(conventional-commits-filter@6.0.1)(supports-color@9.4.0)
+      '@lerna-lite/run': 5.6.1(@lerna-lite/exec@5.6.1)(@lerna-lite/publish@5.6.1)(@lerna-lite/version@5.6.1(@lerna-lite/exec@5.6.1)(@lerna-lite/publish@5.6.1)(@lerna-lite/run@5.6.1)(@types/node@26.5.0)(conventional-commits-filter@6.0.1))(@types/node@26.5.0)
+      '@lerna-lite/version': 5.6.1(@lerna-lite/exec@5.6.1)(@lerna-lite/publish@5.6.1)(@lerna-lite/run@5.6.1)(@types/node@26.5.0)(conventional-commits-filter@6.0.1)
     transitivePeerDependencies:
       - '@types/node'
 
-  '@lerna-lite/core@5.6.1(@types/node@26.4.1)':
+  '@lerna-lite/core@5.6.1(@types/node@26.5.0)':
     dependencies:
-      '@inquirer/expand': 5.1.4(@types/node@26.4.1)
-      '@inquirer/input': 5.1.5(@types/node@26.4.1)
-      '@inquirer/select': 5.2.4(@types/node@26.4.1)
+      '@inquirer/expand': 5.1.5(@types/node@26.5.0)
+      '@inquirer/input': 5.1.6(@types/node@26.5.0)
+      '@inquirer/select': 5.2.5(@types/node@26.5.0)
       '@lerna-lite/npmlog': 5.4.1
       '@npmcli/run-script': 10.0.4
       ci-info: 4.4.0
@@ -4655,11 +4732,11 @@ snapshots:
     transitivePeerDependencies:
       - '@types/node'
 
-  '@lerna-lite/exec@5.6.1(@lerna-lite/publish@5.6.1)(@lerna-lite/run@5.6.1)(@lerna-lite/version@5.6.1(@lerna-lite/exec@5.6.1)(@lerna-lite/publish@5.6.1)(@lerna-lite/run@5.6.1)(@types/node@26.4.1)(conventional-commits-filter@6.0.1))(@types/node@26.4.1)':
+  '@lerna-lite/exec@5.6.1(@lerna-lite/publish@5.6.1)(@lerna-lite/run@5.6.1)(@lerna-lite/version@5.6.1(@lerna-lite/exec@5.6.1)(@lerna-lite/publish@5.6.1)(@lerna-lite/run@5.6.1)(@types/node@26.5.0)(conventional-commits-filter@6.0.1))(@types/node@26.5.0)':
     dependencies:
-      '@lerna-lite/cli': 5.6.1(@lerna-lite/exec@5.6.1)(@lerna-lite/publish@5.6.1)(@lerna-lite/run@5.6.1)(@lerna-lite/version@5.6.1(@lerna-lite/exec@5.6.1)(@lerna-lite/publish@5.6.1)(@lerna-lite/run@5.6.1)(@types/node@26.4.1)(conventional-commits-filter@6.0.1))(@types/node@26.4.1)
-      '@lerna-lite/core': 5.6.1(@types/node@26.4.1)
-      '@lerna-lite/profiler': 5.6.1(@types/node@26.4.1)
+      '@lerna-lite/cli': 5.6.1(@lerna-lite/exec@5.6.1)(@lerna-lite/publish@5.6.1)(@lerna-lite/run@5.6.1)(@lerna-lite/version@5.6.1(@lerna-lite/exec@5.6.1)(@lerna-lite/publish@5.6.1)(@lerna-lite/run@5.6.1)(@types/node@26.5.0)(conventional-commits-filter@6.0.1))(@types/node@26.5.0)
+      '@lerna-lite/core': 5.6.1(@types/node@26.5.0)
+      '@lerna-lite/profiler': 5.6.1(@types/node@26.5.0)
       dotenv: 17.4.2
     transitivePeerDependencies:
       - '@lerna-lite/list'
@@ -4669,9 +4746,9 @@ snapshots:
       - '@lerna-lite/watch'
       - '@types/node'
 
-  '@lerna-lite/init@5.6.1(@types/node@26.4.1)':
+  '@lerna-lite/init@5.6.1(@types/node@26.5.0)':
     dependencies:
-      '@lerna-lite/core': 5.6.1(@types/node@26.4.1)
+      '@lerna-lite/core': 5.6.1(@types/node@26.5.0)
       write-json-file: 7.0.0
     transitivePeerDependencies:
       - '@types/node'
@@ -4681,19 +4758,19 @@ snapshots:
       fast-string-width: 3.0.2
       signal-exit: 4.1.0
 
-  '@lerna-lite/profiler@5.6.1(@types/node@26.4.1)':
+  '@lerna-lite/profiler@5.6.1(@types/node@26.5.0)':
     dependencies:
-      '@lerna-lite/core': 5.6.1(@types/node@26.4.1)
+      '@lerna-lite/core': 5.6.1(@types/node@26.5.0)
       '@lerna-lite/npmlog': 5.4.1
     transitivePeerDependencies:
       - '@types/node'
 
-  '@lerna-lite/publish@5.6.1(@lerna-lite/exec@5.6.1)(@lerna-lite/run@5.6.1)(@types/node@26.4.1)(conventional-commits-filter@6.0.1)(supports-color@9.4.0)':
+  '@lerna-lite/publish@5.6.1(@lerna-lite/exec@5.6.1)(@lerna-lite/run@5.6.1)(@types/node@26.5.0)(conventional-commits-filter@6.0.1)(supports-color@9.4.0)':
     dependencies:
-      '@lerna-lite/cli': 5.6.1(@lerna-lite/exec@5.6.1)(@lerna-lite/publish@5.6.1)(@lerna-lite/run@5.6.1)(@lerna-lite/version@5.6.1(@lerna-lite/exec@5.6.1)(@lerna-lite/publish@5.6.1)(@lerna-lite/run@5.6.1)(@types/node@26.4.1)(conventional-commits-filter@6.0.1))(@types/node@26.4.1)
-      '@lerna-lite/core': 5.6.1(@types/node@26.4.1)
+      '@lerna-lite/cli': 5.6.1(@lerna-lite/exec@5.6.1)(@lerna-lite/publish@5.6.1)(@lerna-lite/run@5.6.1)(@lerna-lite/version@5.6.1(@lerna-lite/exec@5.6.1)(@lerna-lite/publish@5.6.1)(@lerna-lite/run@5.6.1)(@types/node@26.5.0)(conventional-commits-filter@6.0.1))(@types/node@26.5.0)
+      '@lerna-lite/core': 5.6.1(@types/node@26.5.0)
       '@lerna-lite/npmlog': 5.4.1
-      '@lerna-lite/version': 5.6.1(@lerna-lite/exec@5.6.1)(@lerna-lite/publish@5.6.1)(@lerna-lite/run@5.6.1)(@types/node@26.4.1)(conventional-commits-filter@6.0.1)
+      '@lerna-lite/version': 5.6.1(@lerna-lite/exec@5.6.1)(@lerna-lite/publish@5.6.1)(@lerna-lite/run@5.6.1)(@types/node@26.5.0)(conventional-commits-filter@6.0.1)
       '@npmcli/arborist': 9.9.1(supports-color@9.4.0)
       '@npmcli/package-json': 7.0.5
       ci-info: 4.4.0
@@ -4715,12 +4792,12 @@ snapshots:
       - conventional-commits-filter
       - supports-color
 
-  '@lerna-lite/run@5.6.1(@lerna-lite/exec@5.6.1)(@lerna-lite/publish@5.6.1)(@lerna-lite/version@5.6.1(@lerna-lite/exec@5.6.1)(@lerna-lite/publish@5.6.1)(@lerna-lite/run@5.6.1)(@types/node@26.4.1)(conventional-commits-filter@6.0.1))(@types/node@26.4.1)':
+  '@lerna-lite/run@5.6.1(@lerna-lite/exec@5.6.1)(@lerna-lite/publish@5.6.1)(@lerna-lite/version@5.6.1(@lerna-lite/exec@5.6.1)(@lerna-lite/publish@5.6.1)(@lerna-lite/run@5.6.1)(@types/node@26.5.0)(conventional-commits-filter@6.0.1))(@types/node@26.5.0)':
     dependencies:
-      '@lerna-lite/cli': 5.6.1(@lerna-lite/exec@5.6.1)(@lerna-lite/publish@5.6.1)(@lerna-lite/run@5.6.1)(@lerna-lite/version@5.6.1(@lerna-lite/exec@5.6.1)(@lerna-lite/publish@5.6.1)(@lerna-lite/run@5.6.1)(@types/node@26.4.1)(conventional-commits-filter@6.0.1))(@types/node@26.4.1)
-      '@lerna-lite/core': 5.6.1(@types/node@26.4.1)
+      '@lerna-lite/cli': 5.6.1(@lerna-lite/exec@5.6.1)(@lerna-lite/publish@5.6.1)(@lerna-lite/run@5.6.1)(@lerna-lite/version@5.6.1(@lerna-lite/exec@5.6.1)(@lerna-lite/publish@5.6.1)(@lerna-lite/run@5.6.1)(@types/node@26.5.0)(conventional-commits-filter@6.0.1))(@types/node@26.5.0)
+      '@lerna-lite/core': 5.6.1(@types/node@26.5.0)
       '@lerna-lite/npmlog': 5.4.1
-      '@lerna-lite/profiler': 5.6.1(@types/node@26.4.1)
+      '@lerna-lite/profiler': 5.6.1(@types/node@26.5.0)
     transitivePeerDependencies:
       - '@lerna-lite/exec'
       - '@lerna-lite/list'
@@ -4729,12 +4806,12 @@ snapshots:
       - '@lerna-lite/watch'
       - '@types/node'
 
-  '@lerna-lite/version@5.6.1(@lerna-lite/exec@5.6.1)(@lerna-lite/publish@5.6.1)(@lerna-lite/run@5.6.1)(@types/node@26.4.1)(conventional-commits-filter@6.0.1)':
+  '@lerna-lite/version@5.6.1(@lerna-lite/exec@5.6.1)(@lerna-lite/publish@5.6.1)(@lerna-lite/run@5.6.1)(@types/node@26.5.0)(conventional-commits-filter@6.0.1)':
     dependencies:
       '@conventional-changelog/git-client': 3.1.2(conventional-commits-filter@6.0.1)(conventional-commits-parser@7.1.2)
       '@conventional-changelog/template': 1.3.0
-      '@lerna-lite/cli': 5.6.1(@lerna-lite/exec@5.6.1)(@lerna-lite/publish@5.6.1)(@lerna-lite/run@5.6.1)(@lerna-lite/version@5.6.1(@lerna-lite/exec@5.6.1)(@lerna-lite/publish@5.6.1)(@lerna-lite/run@5.6.1)(@types/node@26.4.1)(conventional-commits-filter@6.0.1))(@types/node@26.4.1)
-      '@lerna-lite/core': 5.6.1(@types/node@26.4.1)
+      '@lerna-lite/cli': 5.6.1(@lerna-lite/exec@5.6.1)(@lerna-lite/publish@5.6.1)(@lerna-lite/run@5.6.1)(@lerna-lite/version@5.6.1(@lerna-lite/exec@5.6.1)(@lerna-lite/publish@5.6.1)(@lerna-lite/run@5.6.1)(@types/node@26.5.0)(conventional-commits-filter@6.0.1))(@types/node@26.5.0)
+      '@lerna-lite/core': 5.6.1(@types/node@26.5.0)
       '@lerna-lite/npmlog': 5.4.1
       '@octokit/plugin-enterprise-rest': 6.0.1
       '@octokit/rest': 22.0.1
@@ -5084,6 +5161,10 @@ snapshots:
     dependencies:
       undici-types: 8.3.0
 
+  '@types/node@26.5.0':
+    dependencies:
+      undici-types: 8.9.0
+
   '@types/normalize-package-data@2.4.4': {}
 
   '@types/parse-path@7.1.0':
@@ -5180,11 +5261,11 @@ snapshots:
       - rollup
       - supports-color
 
-  '@yeoman/adapter@5.0.0(@types/node@26.4.1)':
+  '@yeoman/adapter@5.0.0(@types/node@26.5.0)':
     dependencies:
-      '@inquirer/prompts': 8.7.1(@types/node@26.4.1)
+      '@inquirer/prompts': 8.7.1(@types/node@26.5.0)
       chalk: 6.0.0
-      inquirer: 14.2.1(@types/node@26.4.1)
+      inquirer: 14.2.1(@types/node@26.5.0)
       log-symbols: 7.0.1
       ora: 9.4.1
       p-queue: 9.3.3
@@ -5192,18 +5273,18 @@ snapshots:
     transitivePeerDependencies:
       - '@types/node'
 
-  '@yeoman/conflicter@4.2.0(@types/node@26.4.1)(@yeoman/types@1.11.1(@types/node@26.4.1)(@yeoman/adapter@5.0.0(@types/node@26.4.1))(mem-fs@4.1.5(@types/node@26.4.1)(@types/vinyl@2.0.12)))(mem-fs@4.1.5(@types/node@26.4.1)(@types/vinyl@2.0.12))(supports-color@9.4.0)':
+  '@yeoman/conflicter@4.2.0(@types/node@26.5.0)(@yeoman/types@1.11.1(@types/node@26.5.0)(@yeoman/adapter@5.0.0(@types/node@26.5.0))(mem-fs@4.1.5(@types/node@26.5.0)(@types/vinyl@2.0.12)))(mem-fs@4.1.5(@types/node@26.5.0)(@types/vinyl@2.0.12))(supports-color@9.4.0)':
     dependencies:
-      '@types/node': 26.4.1
-      '@yeoman/transform': 2.1.2(@types/node@26.4.1)
-      '@yeoman/types': 1.11.1(@types/node@26.4.1)(@yeoman/adapter@5.0.0(@types/node@26.4.1))(mem-fs@4.1.5(@types/node@26.4.1)(@types/vinyl@2.0.12))
+      '@types/node': 26.5.0
+      '@yeoman/transform': 2.1.2(@types/node@26.5.0)
+      '@yeoman/types': 1.11.1(@types/node@26.5.0)(@yeoman/adapter@5.0.0(@types/node@26.5.0))(mem-fs@4.1.5(@types/node@26.5.0)(@types/vinyl@2.0.12))
       binary-extensions: 3.1.0
       cli-table: 0.3.11
       dateformat: 5.0.3
       diff: 9.0.0
       isbinaryfile: 5.0.7
-      mem-fs: 4.1.5(@types/node@26.4.1)(@types/vinyl@2.0.12)
-      mem-fs-editor: 12.0.9(@types/node@26.4.1)(mem-fs@4.1.5(@types/node@26.4.1)(@types/vinyl@2.0.12))(supports-color@9.4.0)
+      mem-fs: 4.1.5(@types/node@26.5.0)(@types/vinyl@2.0.12)
+      mem-fs-editor: 12.0.9(@types/node@26.5.0)(mem-fs@4.1.5(@types/node@26.5.0)(@types/vinyl@2.0.12))(supports-color@9.4.0)
       minimatch: 10.2.6
       p-transform: 5.0.1
       pretty-bytes: 7.1.3
@@ -5216,17 +5297,17 @@ snapshots:
 
   '@yeoman/namespace@2.1.0': {}
 
-  '@yeoman/transform@2.1.2(@types/node@26.4.1)':
+  '@yeoman/transform@2.1.2(@types/node@26.5.0)':
     dependencies:
-      '@types/node': 26.4.1
+      '@types/node': 26.5.0
       minimatch: 9.0.9
 
-  '@yeoman/types@1.11.1(@types/node@26.4.1)(@yeoman/adapter@5.0.0(@types/node@26.4.1))(mem-fs@4.1.5(@types/node@26.4.1)(@types/vinyl@2.0.12))':
+  '@yeoman/types@1.11.1(@types/node@26.5.0)(@yeoman/adapter@5.0.0(@types/node@26.5.0))(mem-fs@4.1.5(@types/node@26.5.0)(@types/vinyl@2.0.12))':
     dependencies:
-      '@types/node': 26.4.1
+      '@types/node': 26.5.0
     optionalDependencies:
-      '@yeoman/adapter': 5.0.0(@types/node@26.4.1)
-      mem-fs: 4.1.5(@types/node@26.4.1)(@types/vinyl@2.0.12)
+      '@yeoman/adapter': 5.0.0(@types/node@26.5.0)
+      mem-fs: 4.1.5(@types/node@26.5.0)(@types/vinyl@2.0.12)
 
   abbrev@3.0.1: {}
 
@@ -5550,10 +5631,10 @@ snapshots:
       graceful-fs: 4.2.11
       p-event: 6.0.1
 
-  cosmiconfig@10.0.0:
+  cosmiconfig@10.0.1:
     dependencies:
       env-paths: 2.2.1
-      js-yaml: 4.3.2
+      js-yaml: 5.4.1
 
   cpy-cli@7.0.0:
     dependencies:
@@ -5589,60 +5670,60 @@ snapshots:
       shebang-command: 2.0.0
       which: 2.0.2
 
-  cspell-config-lib@10.2.2:
+  cspell-config-lib@10.3.0:
     dependencies:
-      '@cspell/cspell-types': 10.2.2
+      '@cspell/cspell-types': 10.3.0
       comment-json: 5.0.0
       smol-toml: 1.8.0
       yaml: 2.9.0
 
-  cspell-dictionary@10.2.2:
+  cspell-dictionary@10.3.0:
     dependencies:
-      '@cspell/cspell-performance-monitor': 10.2.2
-      '@cspell/cspell-pipe': 10.2.2
-      '@cspell/cspell-types': 10.2.2
-      cspell-trie-lib: 10.2.2(@cspell/cspell-types@10.2.2)
+      '@cspell/cspell-performance-monitor': 10.3.0
+      '@cspell/cspell-pipe': 10.3.0
+      '@cspell/cspell-types': 10.3.0
+      cspell-trie-lib: 10.3.0(@cspell/cspell-types@10.3.0)
       fast-equals: 6.0.3
 
-  cspell-gitignore@10.2.2:
+  cspell-gitignore@10.3.0:
     dependencies:
-      '@cspell/url': 10.2.2
-      cspell-glob: 10.2.2
-      cspell-io: 10.2.2
+      '@cspell/url': 10.3.0
+      cspell-glob: 10.3.0
+      cspell-io: 10.3.0
 
-  cspell-glob@10.2.2:
+  cspell-glob@10.3.0:
     dependencies:
-      '@cspell/url': 10.2.2
+      '@cspell/url': 10.3.0
       picomatch: 4.0.7
 
-  cspell-grammar@10.2.2:
+  cspell-grammar@10.3.0:
     dependencies:
-      '@cspell/cspell-pipe': 10.2.2
-      '@cspell/cspell-types': 10.2.2
+      '@cspell/cspell-pipe': 10.3.0
+      '@cspell/cspell-types': 10.3.0
 
-  cspell-io@10.2.2:
+  cspell-io@10.3.0:
     dependencies:
-      '@cspell/cspell-service-bus': 10.2.2
-      '@cspell/url': 10.2.2
+      '@cspell/cspell-service-bus': 10.3.0
+      '@cspell/url': 10.3.0
 
-  cspell-lib@10.2.2:
+  cspell-lib@10.3.0:
     dependencies:
-      '@cspell/cspell-bundled-dicts': 10.2.2
-      '@cspell/cspell-performance-monitor': 10.2.2
-      '@cspell/cspell-pipe': 10.2.2
-      '@cspell/cspell-resolver': 10.2.2
-      '@cspell/cspell-types': 10.2.2
-      '@cspell/dynamic-import': 10.2.2
-      '@cspell/filetypes': 10.2.2
-      '@cspell/rpc': 10.2.2
-      '@cspell/strong-weak-map': 10.2.2
-      '@cspell/url': 10.2.2
-      cspell-config-lib: 10.2.2
-      cspell-dictionary: 10.2.2
-      cspell-glob: 10.2.2
-      cspell-grammar: 10.2.2
-      cspell-io: 10.2.2
-      cspell-trie-lib: 10.2.2(@cspell/cspell-types@10.2.2)
+      '@cspell/cspell-bundled-dicts': 10.3.0
+      '@cspell/cspell-performance-monitor': 10.3.0
+      '@cspell/cspell-pipe': 10.3.0
+      '@cspell/cspell-resolver': 10.3.0
+      '@cspell/cspell-types': 10.3.0
+      '@cspell/dynamic-import': 10.3.0
+      '@cspell/filetypes': 10.3.0
+      '@cspell/rpc': 10.3.0
+      '@cspell/strong-weak-map': 10.3.0
+      '@cspell/url': 10.3.0
+      cspell-config-lib: 10.3.0
+      cspell-dictionary: 10.3.0
+      cspell-glob: 10.3.0
+      cspell-grammar: 10.3.0
+      cspell-io: 10.3.0
+      cspell-trie-lib: 10.3.0(@cspell/cspell-types@10.3.0)
       env-paths: 4.0.0
       gensequence: 8.0.8
       import-fresh: 4.0.0
@@ -5651,37 +5732,37 @@ snapshots:
       vscode-uri: 3.2.0
       xdg-basedir: 5.1.0
 
-  cspell-trie-lib@10.2.2(@cspell/cspell-types@10.2.2):
+  cspell-trie-lib@10.3.0(@cspell/cspell-types@10.3.0):
     dependencies:
-      '@cspell/cspell-types': 10.2.2
+      '@cspell/cspell-types': 10.3.0
 
-  cspell-trie@10.2.2(@cspell/cspell-types@10.2.2):
+  cspell-trie@10.3.0(@cspell/cspell-types@10.3.0):
     dependencies:
       commander: 15.0.0
-      cspell-trie-lib: 10.2.2(@cspell/cspell-types@10.2.2)
+      cspell-trie-lib: 10.3.0(@cspell/cspell-types@10.3.0)
       gensequence: 8.0.8
     transitivePeerDependencies:
       - '@cspell/cspell-types'
 
-  cspell@10.2.2:
+  cspell@10.3.0:
     dependencies:
-      '@cspell/cspell-json-reporter': 10.2.2
-      '@cspell/cspell-performance-monitor': 10.2.2
-      '@cspell/cspell-pipe': 10.2.2
-      '@cspell/cspell-types': 10.2.2
-      '@cspell/cspell-worker': 10.2.2
-      '@cspell/dynamic-import': 10.2.2
-      '@cspell/url': 10.2.2
+      '@cspell/cspell-json-reporter': 10.3.0
+      '@cspell/cspell-performance-monitor': 10.3.0
+      '@cspell/cspell-pipe': 10.3.0
+      '@cspell/cspell-types': 10.3.0
+      '@cspell/cspell-worker': 10.3.0
+      '@cspell/dynamic-import': 10.3.0
+      '@cspell/url': 10.3.0
       ansi-regex: 6.3.0
       chalk: 6.0.0
       chalk-template: 1.1.2
       commander: 15.0.0
-      cspell-config-lib: 10.2.2
-      cspell-dictionary: 10.2.2
-      cspell-gitignore: 10.2.2
-      cspell-glob: 10.2.2
-      cspell-io: 10.2.2
-      cspell-lib: 10.2.2
+      cspell-config-lib: 10.3.0
+      cspell-dictionary: 10.3.0
+      cspell-gitignore: 10.3.0
+      cspell-glob: 10.3.0
+      cspell-io: 10.3.0
+      cspell-lib: 10.3.0
       fast-json-stable-stringify: 2.1.0
       flatted: 3.4.4
       semver: 7.8.5
@@ -6024,7 +6105,7 @@ snapshots:
       flatted: 3.4.4
       hookified: 1.15.1
 
-  flatpack-json@10.2.2: {}
+  flatpack-json@10.3.0: {}
 
   flatted@3.4.4: {}
 
@@ -6112,7 +6193,7 @@ snapshots:
     dependencies:
       '@sindresorhus/merge-streams': 4.0.0
       fast-glob: 3.3.3
-      ignore: 7.0.8
+      ignore: 7.0.9
       is-path-inside: 4.0.0
       micromatch: 4.0.8
       slash: 5.1.0
@@ -6177,10 +6258,10 @@ snapshots:
 
   human-signals@8.0.1: {}
 
-  hunspell-reader@10.2.2:
+  hunspell-reader@10.3.0:
     dependencies:
-      '@cspell/cspell-pipe': 10.2.2
-      '@cspell/cspell-types': 10.2.2
+      '@cspell/cspell-pipe': 10.3.0
+      '@cspell/cspell-types': 10.3.0
       commander: 15.0.0
       gensequence: 8.0.8
       html-entities: 2.6.0
@@ -6198,7 +6279,7 @@ snapshots:
 
   ignore@5.3.2: {}
 
-  ignore@7.0.8: {}
+  ignore@7.0.9: {}
 
   import-fresh@4.0.0: {}
 
@@ -6248,16 +6329,16 @@ snapshots:
     transitivePeerDependencies:
       - supports-color
 
-  inquirer@14.2.1(@types/node@26.4.1):
+  inquirer@14.2.1(@types/node@26.5.0):
     dependencies:
       '@inquirer/ansi': 2.0.8
-      '@inquirer/core': 12.0.2(@types/node@26.4.1)
-      '@inquirer/prompts': 8.7.1(@types/node@26.4.1)
-      '@inquirer/type': 4.1.1(@types/node@26.4.1)
+      '@inquirer/core': 12.0.2(@types/node@26.5.0)
+      '@inquirer/prompts': 8.7.1(@types/node@26.5.0)
+      '@inquirer/type': 4.1.1(@types/node@26.5.0)
       mute-stream: 3.0.0
       run-async: 4.0.6
     optionalDependencies:
-      '@types/node': 26.4.1
+      '@types/node': 26.5.0
 
   interpret@1.4.0: {}
 
@@ -6322,7 +6403,7 @@ snapshots:
       argparse: 1.0.10
       esprima: 4.0.1
 
-  js-yaml@4.3.2:
+  js-yaml@5.4.1:
     dependencies:
       argparse: 2.0.1
 
@@ -6554,7 +6635,7 @@ snapshots:
     dependencies:
       '@types/mdast': 4.0.4
 
-  mem-fs-editor@12.0.9(@types/node@26.4.1)(mem-fs@4.1.5(@types/node@26.4.1)(@types/vinyl@2.0.12))(supports-color@9.4.0):
+  mem-fs-editor@12.0.9(@types/node@26.5.0)(mem-fs@4.1.5(@types/node@26.5.0)(@types/vinyl@2.0.12))(supports-color@9.4.0):
     dependencies:
       '@types/ejs': 3.1.5
       '@types/picomatch': 4.0.3
@@ -6564,7 +6645,7 @@ snapshots:
       deep-extend: 0.6.0
       ejs: 6.0.1
       isbinaryfile: 5.0.7
-      mem-fs: 4.1.5(@types/node@26.4.1)(@types/vinyl@2.0.12)
+      mem-fs: 4.1.5(@types/node@26.5.0)(@types/vinyl@2.0.12)
       minimatch: 10.2.6
       multimatch: 8.0.0
       normalize-path: 3.0.0
@@ -6572,18 +6653,18 @@ snapshots:
       tinyglobby: 0.2.17
       vinyl: 3.0.1
     optionalDependencies:
-      '@types/node': 26.4.1
+      '@types/node': 26.5.0
     transitivePeerDependencies:
       - bare-abort-controller
       - react-native-b4a
       - supports-color
 
-  mem-fs@4.1.5(@types/node@26.4.1)(@types/vinyl@2.0.12):
+  mem-fs@4.1.5(@types/node@26.5.0)(@types/vinyl@2.0.12):
     dependencies:
       vinyl: 3.0.1
       vinyl-file: 5.0.0
     optionalDependencies:
-      '@types/node': 26.4.1
+      '@types/node': 26.5.0
       '@types/vinyl': 2.0.12
     transitivePeerDependencies:
       - bare-abort-controller
@@ -7058,7 +7139,7 @@ snapshots:
 
   p-transform@5.0.1:
     dependencies:
-      '@types/node': 26.4.1
+      '@types/node': 26.5.0
       p-queue: 8.1.1
 
   p-try@2.2.0: {}
@@ -7610,6 +7691,8 @@ snapshots:
 
   undici-types@8.3.0: {}
 
+  undici-types@8.9.0: {}
+
   undici@6.28.1: {}
 
   unicorn-magic@0.1.0: {}
@@ -7821,13 +7904,13 @@ snapshots:
       y18n: 5.0.8
       yargs-parser: 22.0.0
 
-  yeoman-environment@7.0.0(@types/node@26.4.1)(@yeoman/adapter@5.0.0(@types/node@26.4.1))(@yeoman/types@1.11.1(@types/node@26.4.1)(@yeoman/adapter@5.0.0(@types/node@26.4.1))(mem-fs@4.1.5(@types/node@26.4.1)(@types/vinyl@2.0.12)))(mem-fs@4.1.5(@types/node@26.4.1)(@types/vinyl@2.0.12))(supports-color@9.4.0):
+  yeoman-environment@7.0.0(@types/node@26.5.0)(@yeoman/adapter@5.0.0(@types/node@26.5.0))(@yeoman/types@1.11.1(@types/node@26.5.0)(@yeoman/adapter@5.0.0(@types/node@26.5.0))(mem-fs@4.1.5(@types/node@26.5.0)(@types/vinyl@2.0.12)))(mem-fs@4.1.5(@types/node@26.5.0)(@types/vinyl@2.0.12))(supports-color@9.4.0):
     dependencies:
-      '@yeoman/adapter': 5.0.0(@types/node@26.4.1)
-      '@yeoman/conflicter': 4.2.0(@types/node@26.4.1)(@yeoman/types@1.11.1(@types/node@26.4.1)(@yeoman/adapter@5.0.0(@types/node@26.4.1))(mem-fs@4.1.5(@types/node@26.4.1)(@types/vinyl@2.0.12)))(mem-fs@4.1.5(@types/node@26.4.1)(@types/vinyl@2.0.12))(supports-color@9.4.0)
+      '@yeoman/adapter': 5.0.0(@types/node@26.5.0)
+      '@yeoman/conflicter': 4.2.0(@types/node@26.5.0)(@yeoman/types@1.11.1(@types/node@26.5.0)(@yeoman/adapter@5.0.0(@types/node@26.5.0))(mem-fs@4.1.5(@types/node@26.5.0)(@types/vinyl@2.0.12)))(mem-fs@4.1.5(@types/node@26.5.0)(@types/vinyl@2.0.12))(supports-color@9.4.0)
       '@yeoman/namespace': 2.1.0
-      '@yeoman/transform': 2.1.2(@types/node@26.4.1)
-      '@yeoman/types': 1.11.1(@types/node@26.4.1)(@yeoman/adapter@5.0.0(@types/node@26.4.1))(mem-fs@4.1.5(@types/node@26.4.1)(@types/vinyl@2.0.12))
+      '@yeoman/transform': 2.1.2(@types/node@26.5.0)
+      '@yeoman/types': 1.11.1(@types/node@26.5.0)(@yeoman/adapter@5.0.0(@types/node@26.5.0))(mem-fs@4.1.5(@types/node@26.5.0)(@types/vinyl@2.0.12))
       arrify: 3.0.0
       chalk: 6.0.0
       commander: 15.0.0
@@ -7838,8 +7921,8 @@ snapshots:
       grouped-queue: 2.1.0
       locate-path: 8.0.0
       lodash-es: 4.18.1
-      mem-fs: 4.1.5(@types/node@26.4.1)(@types/vinyl@2.0.12)
-      mem-fs-editor: 12.0.9(@types/node@26.4.1)(mem-fs@4.1.5(@types/node@26.4.1)(@types/vinyl@2.0.12))(supports-color@9.4.0)
+      mem-fs: 4.1.5(@types/node@26.5.0)(@types/vinyl@2.0.12)
+      mem-fs-editor: 12.0.9(@types/node@26.5.0)(mem-fs@4.1.5(@types/node@26.5.0)(@types/vinyl@2.0.12))(supports-color@9.4.0)
       semver: 7.8.5
       slash: 5.1.0
       untildify: 6.0.0
@@ -7850,19 +7933,19 @@ snapshots:
       - react-native-b4a
       - supports-color
 
-  yeoman-generator@8.4.0(@types/node@26.4.1)(@yeoman/types@1.11.1(@types/node@26.4.1)(@yeoman/adapter@5.0.0(@types/node@26.4.1))(mem-fs@4.1.5(@types/node@26.4.1)(@types/vinyl@2.0.12)))(mem-fs@4.1.5(@types/node@26.4.1)(@types/vinyl@2.0.12))(supports-color@9.4.0):
+  yeoman-generator@8.4.0(@types/node@26.5.0)(@yeoman/types@1.11.1(@types/node@26.5.0)(@yeoman/adapter@5.0.0(@types/node@26.5.0))(mem-fs@4.1.5(@types/node@26.5.0)(@types/vinyl@2.0.12)))(mem-fs@4.1.5(@types/node@26.5.0)(@types/vinyl@2.0.12))(supports-color@9.4.0):
     dependencies:
       '@types/debug': 4.1.13
       '@types/lodash-es': 4.17.12
       '@yeoman/namespace': 2.1.0
-      '@yeoman/types': 1.11.1(@types/node@26.4.1)(@yeoman/adapter@5.0.0(@types/node@26.4.1))(mem-fs@4.1.5(@types/node@26.4.1)(@types/vinyl@2.0.12))
+      '@yeoman/types': 1.11.1(@types/node@26.5.0)(@yeoman/adapter@5.0.0(@types/node@26.5.0))(mem-fs@4.1.5(@types/node@26.5.0)(@types/vinyl@2.0.12))
       chalk: 5.6.2
       debug: 4.4.3(supports-color@9.4.0)
       execa: 9.6.1
       latest-version: 9.0.0
       lodash-es: 4.18.1
-      mem-fs: 4.1.5(@types/node@26.4.1)(@types/vinyl@2.0.12)
-      mem-fs-editor: 12.0.9(@types/node@26.4.1)(mem-fs@4.1.5(@types/node@26.4.1)(@types/vinyl@2.0.12))(supports-color@9.4.0)
+      mem-fs: 4.1.5(@types/node@26.5.0)(@types/vinyl@2.0.12)
+      mem-fs-editor: 12.0.9(@types/node@26.5.0)(mem-fs@4.1.5(@types/node@26.5.0)(@types/vinyl@2.0.12))(supports-color@9.4.0)
       minimist: 1.2.8
       read-package-up: 12.0.0
       semver: 7.8.5
@@ -7871,7 +7954,7 @@ snapshots:
       text-table: 0.2.0
       type-fest: 5.9.0
     optionalDependencies:
-      '@types/node': 26.4.1
+      '@types/node': 26.5.0
     transitivePeerDependencies:
       - bare-abort-controller
       - react-native-b4a
