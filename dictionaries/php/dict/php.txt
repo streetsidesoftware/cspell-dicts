@@ -7,7 +7,6 @@ AMQPSSL
 APC
 APCU
 Bezier
-Bs
 CDATA
 CMYK
 CNS
@@ -41,7 +40,6 @@ DOMNodelist
 DOMXPath
 DSN
 DTD
-Ds
 Ev
 FQCN
 FS
@@ -76,6 +74,7 @@ Mlt
 Mongo
 MongoGridfsFile
 NODELAY
+NS
 PDF_add_launchlink
 PDF_add_locallink
 PDF_add_nameddest
@@ -609,6 +608,7 @@ corruption
 cos
 cosh
 count
+countEquivalentIDs
 countable
 counter
 country
@@ -732,7 +732,6 @@ delete
 deleted
 delimiter
 delta
-demangle
 den
 denominator
 dens
@@ -750,7 +749,7 @@ descriptions
 descriptor
 deserialize
 deskewImage
-despeckle
+despeckleImage
 despeckleimage
 destination
 destroy
@@ -1011,6 +1010,8 @@ family
 fann
 fann_cascadetrain_on_data
 fann_cascadetrain_on_file
+fann_get_cascade_activation_steepnesses
+fann_get_cascade_activation_steepnesses_count
 fann_get_cascade_max_cand_epochs
 fann_get_cascade_min_cand_epochs
 fann_get_quickprop_decay
@@ -1019,6 +1020,7 @@ fann_get_sarprop_step_error_shift
 fann_get_sarprop_step_error_threshold_factor
 fann_get_sarprop_temperature
 fann_get_sarprop_weight_decay_shift
+fann_set_cascade_activation_steepnesses
 fann_set_cascade_max_cand_epochs
 fann_set_cascade_min_cand_epochs
 fann_set_quickprop_decay
@@ -1186,7 +1188,6 @@ gap
 garbage
 gaussianBlurImage
 gc
-gcd
 gd_info
 gen
 gender
@@ -1201,6 +1202,7 @@ geoip_isp_by_name
 geoip_netspeedcell_by_name
 geometry
 get
+getAttributeNs
 getBidiPairedBracket
 getFC_NFKC_Closure
 getHighlightFragmenter
@@ -1208,6 +1210,7 @@ getHighlightFragsize
 getHtmlVer
 getImageMagickLicense
 getLEvel
+getRemovedStopwords
 getSvmType
 getSvrProbability
 getTextInterwordSpacing
@@ -1311,6 +1314,7 @@ gmmktime
 gmp
 gmp_clrbit
 gmp_divexact
+gmp_gcd
 gmp_gcdext
 gmp_hamdist
 gmp_jacobi
@@ -1436,7 +1440,6 @@ hw
 hwapi
 hwapi_hgcsp
 hwstat
-hypergeometric
 hyphenate
 hypot
 i
@@ -1634,6 +1637,7 @@ info
 information
 ingres
 ingres_errsqlstate
+ingres_field_nullable
 inherit
 inheritdoc
 ini
@@ -1685,6 +1689,7 @@ iptcparse
 is
 isIterateable
 isJste
+is_nan
 isalnum
 isalpha
 isbase
@@ -1808,6 +1813,8 @@ links
 lint
 liquid
 list
+listDBs
+listIDs
 listbox
 listen
 listener
@@ -1922,6 +1929,7 @@ mb
 mb_decode_numericentity
 mb_encode_numericentity
 mb_ereg_search_getregs
+mb_ereg_search_regs
 mb_ereg_search_setpos
 mb_strimwidth
 mb_strrichr
@@ -2004,6 +2012,7 @@ motion
 motionblurimage
 mount
 move
+moveToAttributeNs
 moveto
 movie
 mp
@@ -2044,7 +2053,6 @@ nameserver
 nameservers
 namespace
 namespaces
-nan
 natcasesort
 natsort
 nb
@@ -2190,11 +2198,9 @@ now
 nowait
 nowdoc
 nr
-ns
 nsapi
 nthmac
 null
-nullable
 nullformat
 num
 number
@@ -2420,7 +2426,6 @@ pg_field_prtlen
 pg_unescape_bytea
 pgsql
 phar
-phasor
 php
 phpapi
 phpcredits
@@ -2629,6 +2634,7 @@ radialblurimage
 radio
 radiobutton
 radius
+radius_demangle
 radius_demangle_mppe_key
 raise
 raiseimage
@@ -2700,7 +2706,6 @@ region
 register
 registered
 registry
-regs
 regular
 rehash
 reindent
@@ -2713,7 +2718,6 @@ release
 release_savepoint
 remap
 remove
-removed
 removeimage
 removeimageprofile
 rename
@@ -3093,6 +3097,7 @@ stats_cdf_weibull
 stats_dens_cauchy
 stats_dens_chisquare
 stats_dens_laplace
+stats_dens_pmf_hypergeometric
 stats_dens_pmf_poisson
 stats_dens_weibull
 stats_rand_gen_chisquare
@@ -3111,7 +3116,6 @@ stats_stat_powersum
 status
 std
 steepness
-steepnesses
 steganoImage
 stem
 stereo
@@ -3119,7 +3123,6 @@ stmt
 stomp
 stop
 stopped
-stopwords
 storage
 store
 str
@@ -3374,6 +3377,7 @@ trader_dema
 trader_ema
 trader_ht_dcperiod
 trader_ht_dcphase
+trader_ht_phasor
 trader_ht_trendline
 trader_ht_trendmode
 trader_kama
@@ -3504,7 +3508,7 @@ unselect
 unserializable
 unserialize
 unset
-unsharp
+unsharpMaskImage
 unshift
 unstable
 unstack
@@ -3664,6 +3668,7 @@ xhprof_sample_enable
 xhtml
 xinclude
 xml
+xml_parser_create_ns
 xmlrpc
 xor
 xpath
