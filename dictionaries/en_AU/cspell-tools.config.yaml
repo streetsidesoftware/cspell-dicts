@@ -27,7 +27,7 @@ targets:
       - ./node_modules/@cspell/dict-en-shared/dict/shared-additional-words-ise.txt
     format: plaintext
     targetDirectory: 'dict'
-    generateNonStrict: true
+    generateNonStrict: false
     excludeWordsFrom:
       - node_modules/@cspell/dict-en-shared/dict/exclude-words.txt
 
