@@ -1,5 +1,19 @@
 # Release Notes
 
+## [33.15.3](https://github.com/streetsidesoftware/cspell-dicts/compare/cspell-dicts@33.15.2...cspell-dicts@33.15.3) (2026-09-12)
+
+
+### Updates and Bug Fixes
+
+* Use single quote for apostrophe ([#5724](https://github.com/streetsidesoftware/cspell-dicts/issues/5724)) ([79df2b4](https://github.com/streetsidesoftware/cspell-dicts/commit/79df2b40f46f2b864acf36da44db12a837d9a8d8))
+
+
+### Dependencies
+
+* The following workspace dependencies were updated
+  * devDependencies
+    * @cspell/dict-cspell-bundle bumped to 2.0.75
+
 ## [33.15.2](https://github.com/streetsidesoftware/cspell-dicts/compare/cspell-dicts@33.15.1...cspell-dicts@33.15.2) (2026-09-12)
 
 

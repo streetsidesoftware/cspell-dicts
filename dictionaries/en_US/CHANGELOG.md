@@ -3,6 +3,13 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+## [4.4.40](https://github.com/streetsidesoftware/cspell-dicts/compare/@cspell/dict-en_us@4.4.39...@cspell/dict-en_us@4.4.40) (2026-09-12)
+
+
+### Updates and Bug Fixes
+
+* Use single quote for apostrophe ([#5724](https://github.com/streetsidesoftware/cspell-dicts/issues/5724)) ([79df2b4](https://github.com/streetsidesoftware/cspell-dicts/commit/79df2b40f46f2b864acf36da44db12a837d9a8d8))
+
 ## [4.4.39](https://github.com/streetsidesoftware/cspell-dicts/compare/@cspell/dict-en_us@4.4.38...@cspell/dict-en_us@4.4.39) (2026-09-12)
 
 
