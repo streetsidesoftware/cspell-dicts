@@ -1,5 +1,20 @@
 # Release Notes
 
+## [33.15.2](https://github.com/streetsidesoftware/cspell-dicts/compare/cspell-dicts@33.15.1...cspell-dicts@33.15.2) (2026-09-12)
+
+
+### Updates and Bug Fixes
+
+* be able to track change to the English dictionaries ([#5716](https://github.com/streetsidesoftware/cspell-dicts/issues/5716)) ([75bd0c3](https://github.com/streetsidesoftware/cspell-dicts/commit/75bd0c35a5d0ddf703fad2362a4a28339fd3814f))
+* Revert the changes to the English dictionaries. Too many changes were made that caused downstream issues. The next step is to evaluate what exactly changed before updating the dictionaries. ([5e24b94](https://github.com/streetsidesoftware/cspell-dicts/commit/5e24b940df0188deb361cf806b55efd5a14cb396))
+
+
+### Dependencies
+
+* The following workspace dependencies were updated
+  * devDependencies
+    * @cspell/dict-cspell-bundle bumped to 2.0.74
+
 ## [33.15.1](https://github.com/streetsidesoftware/cspell-dicts/compare/cspell-dicts@33.15.0...cspell-dicts@33.15.1) (2026-09-11)
 
 

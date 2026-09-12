@@ -3,6 +3,21 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+## [4.4.39](https://github.com/streetsidesoftware/cspell-dicts/compare/@cspell/dict-en_us@4.4.38...@cspell/dict-en_us@4.4.39) (2026-09-12)
+
+
+### Updates and Bug Fixes
+
+* be able to track change to the English dictionaries ([#5716](https://github.com/streetsidesoftware/cspell-dicts/issues/5716)) ([75bd0c3](https://github.com/streetsidesoftware/cspell-dicts/commit/75bd0c35a5d0ddf703fad2362a4a28339fd3814f))
+* Revert the changes to the English dictionaries. Too many changes were made that caused downstream issues. The next step is to evaluate what exactly changed before updating the dictionaries. ([5e24b94](https://github.com/streetsidesoftware/cspell-dicts/commit/5e24b940df0188deb361cf806b55efd5a14cb396))
+
+
+### Dependencies
+
+* The following workspace dependencies were updated
+  * devDependencies
+    * @cspell/aoo-mozilla-en-dict bumped to 1.0.13
+
 ## [4.4.38](https://github.com/streetsidesoftware/cspell-dicts/compare/@cspell/dict-en_us@4.4.37...@cspell/dict-en_us@4.4.38) (2026-09-11)
 
 

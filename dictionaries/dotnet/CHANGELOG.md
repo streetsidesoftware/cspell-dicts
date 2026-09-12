@@ -3,6 +3,13 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+## [5.0.15](https://github.com/streetsidesoftware/cspell-dicts/compare/@cspell/dict-dotnet@5.0.14...@cspell/dict-dotnet@5.0.15) (2026-09-12)
+
+
+### Updates and Bug Fixes
+
+* Revert the changes to the English dictionaries. Too many changes were made that caused downstream issues. The next step is to evaluate what exactly changed before updating the dictionaries. ([5e24b94](https://github.com/streetsidesoftware/cspell-dicts/commit/5e24b940df0188deb361cf806b55efd5a14cb396))
+
 ## [5.0.14](https://github.com/streetsidesoftware/cspell-dicts/compare/@cspell/dict-dotnet@5.0.13...@cspell/dict-dotnet@5.0.14) (2026-09-11)
 
 

@@ -22,6 +22,13 @@ See [Conventional Commits](https://conventionalcommits.org) for commit guideline
 
 
 
+## [5.0.11](https://github.com/streetsidesoftware/cspell-dicts/compare/@cspell/dict-scala@5.0.10...@cspell/dict-scala@5.0.11) (2026-09-12)
+
+
+### Updates and Bug Fixes
+
+* Revert the changes to the English dictionaries. Too many changes were made that caused downstream issues. The next step is to evaluate what exactly changed before updating the dictionaries. ([5e24b94](https://github.com/streetsidesoftware/cspell-dicts/commit/5e24b940df0188deb361cf806b55efd5a14cb396))
+
 ## [5.0.10](https://github.com/streetsidesoftware/cspell-dicts/compare/@cspell/dict-scala@5.0.9...@cspell/dict-scala@5.0.10) (2026-09-11)
 
 

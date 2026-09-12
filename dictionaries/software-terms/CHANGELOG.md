@@ -3,6 +3,13 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+## [5.4.4](https://github.com/streetsidesoftware/cspell-dicts/compare/@cspell/dict-software-terms@5.4.3...@cspell/dict-software-terms@5.4.4) (2026-09-12)
+
+
+### Updates and Bug Fixes
+
+* Revert the changes to the English dictionaries. Too many changes were made that caused downstream issues. The next step is to evaluate what exactly changed before updating the dictionaries. ([5e24b94](https://github.com/streetsidesoftware/cspell-dicts/commit/5e24b940df0188deb361cf806b55efd5a14cb396))
+
 ## [5.4.3](https://github.com/streetsidesoftware/cspell-dicts/compare/@cspell/dict-software-terms@5.4.2...@cspell/dict-software-terms@5.4.3) (2026-09-11)
 
 

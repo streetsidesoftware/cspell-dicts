@@ -1,5 +1,12 @@
 # Change Log
 
+## [2.2.2](https://github.com/streetsidesoftware/cspell-dicts/compare/@cspell/dict-en-common-misspellings@2.2.1...@cspell/dict-en-common-misspellings@2.2.2) (2026-09-12)
+
+
+### Updates and Bug Fixes
+
+* Revert the changes to the English dictionaries. Too many changes were made that caused downstream issues. The next step is to evaluate what exactly changed before updating the dictionaries. ([5e24b94](https://github.com/streetsidesoftware/cspell-dicts/commit/5e24b940df0188deb361cf806b55efd5a14cb396))
+
 ## [2.2.1](https://github.com/streetsidesoftware/cspell-dicts/compare/@cspell/dict-en-common-misspellings@2.2.0...@cspell/dict-en-common-misspellings@2.2.1) (2026-09-11)
 
 
