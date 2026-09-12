@@ -87,11 +87,38 @@ targets:
     sort: true
     generateNonStrict: false
 
-  # The final dictionary.
-  - name: en_GB
+  - # The final dictionary.
+    name: en_GB
     targetDirectory: .
     compress: false
     format: trie3
+    sources:
+      - ../en_GB/src/additional_words.txt
+      - ./node_modules/@cspell/dict-en-shared/dict/acronyms.txt
+      - ./node_modules/@cspell/dict-en-shared/dict/shared-additional-words.txt
+      - ./node_modules/@cspell/dict-en-shared/dict/shared-additional-words-ise.txt
+      - ./node_modules/@cspell/dict-en-shared/dict/shared-additional-words-ize.txt
+      - ./src/acronyms.txt
+      - ./src/additional_words.txt
+      - ./src/block_words.txt
+      - ./src/generated/en-gb-generated.txt
+      - ./src/generated/en-gb-keep.txt
+      - ./src/generated/en-gb-unique.txt
+      - ./src/generated/en-gb-words-of-unknown-source.txt
+      - ./src/legacy/legacy.txt
+      - filename: ./src/names.txt
+        split: true
+    sort: true
+    generateNonStrict: true
+    excludeWordsFrom:
+      - ./node_modules/@cspell/dict-en-shared/dict/exclude-words.txt
+
+  - # This plaintext dictionary is generated from the same sources as the trie3 dictionary.
+    # It is used to track changes and updates in a human-readable format.
+    name: en_GB
+    targetDirectory: dict
+    compress: false
+    format: plaintext
     sources:
       - ../en_GB/src/additional_words.txt
       - ./node_modules/@cspell/dict-en-shared/dict/acronyms.txt
