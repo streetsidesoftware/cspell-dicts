@@ -110,6 +110,8 @@ targets:
         split: true
     sort: true
     generateNonStrict: true
+    replacements:
+      '`|’|‘': "'"
     excludeWordsFrom:
       - ./node_modules/@cspell/dict-en-shared/dict/exclude-words.txt
 
@@ -137,6 +139,8 @@ targets:
         split: true
     sort: true
     generateNonStrict: false
+    replacements:
+      '`|’|‘': "'"
     excludeWordsFrom:
       - ./node_modules/@cspell/dict-en-shared/dict/exclude-words.txt
 

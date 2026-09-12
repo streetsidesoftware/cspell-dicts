@@ -16,6 +16,8 @@ targets:
     format: trie3
     targetDirectory: '.'
     generateNonStrict: true
+    replacements:
+      '`|’|‘': "'"
     excludeWordsFrom:
       - node_modules/@cspell/dict-en-shared/dict/exclude-words.txt
       - src/exclude-words.txt
@@ -37,6 +39,8 @@ targets:
     format: plaintext
     targetDirectory: 'dict'
     generateNonStrict: false
+    replacements:
+      '`|’|‘': "'"
     excludeWordsFrom:
       - node_modules/@cspell/dict-en-shared/dict/exclude-words.txt
       - src/exclude-words.txt
