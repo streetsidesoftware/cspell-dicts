@@ -3,9 +3,7 @@
 
 BasicIO
 ByteswapHashing
-CAS_PREV
-CAS_ROOT
-CAS_SIZE
+CAS
 ClassfileAnnotation
 CombinationsItr
 CustomParallelizable
@@ -19,20 +17,16 @@ IntMult
 KVNode
 LogWL
 LongMult
-Na
 Parallelizable
 PermutationsItr
 ProcessIO
 RDCSS_Descriptor
 RDCSS_READ_ROOT
 ReusableCBF
-Scriptable
-SerialVersionUID
 Specializable
 SubsetsItr
 Subtractable
-Uncloseable
-Undoable
+UID
 a
 abort
 aborted
@@ -585,6 +579,7 @@ integralNum
 internal
 interpolator
 interrupt
+interruptible
 intersect
 intersection
 interval
@@ -742,6 +737,7 @@ multiply
 murmur
 mutable
 n
+na
 name
 names
 nano
@@ -985,7 +981,6 @@ rounded
 rounding
 row
 run
-runInterruptible
 runloop
 runnable
 runtime
@@ -996,6 +991,7 @@ scalacCmd
 scale
 scan
 script
+scriptable
 search
 searching
 second
@@ -1011,6 +1007,7 @@ seq
 sequence
 sequential
 sequentially
+serial
 serializable
 serialization
 serialize
@@ -1204,12 +1201,14 @@ unbatched
 unbox
 uncaught
 unchecked
+uncloseable
 uncurried
 undefined
 underlined
 underlying
 undetermined
 undo
+undoable
 unicode
 unified
 uninitialized

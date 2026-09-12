@@ -33,6 +33,8 @@ targets:
       - ./src/legacy/missing.txt
     excludeWordsNotFoundIn:
       - ./node_modules/@cspell/aoo-mozilla-en-dict/dicts/en_GB (Marco Pinto) (-ise -ize) (2025+)/en_GB.dic
+      - ./node_modules/@cspell/aoo-mozilla-en-dict/dicts/en_GB (-ise)/en_GB.dic
+      - ./node_modules/@cspell/aoo-mozilla-en-dict/dicts/en_GB (-ize) (Oxford)/en_GB-oxendict.aff # cspell:ignore oxendict
     excludeWordsFrom:
       - ./src/generated/base.txt
     sort: true
@@ -51,6 +53,8 @@ targets:
       - ./node_modules/@cspell/aoo-mozilla-en-dict/dicts/en_AU (Kevin Atkinson)/en_AU.dic
       - ./node_modules/@cspell/aoo-mozilla-en-dict/dicts/en_CA (Kevin Atkinson)/en_CA.dic
       - ./node_modules/@cspell/aoo-mozilla-en-dict/dicts/en_US (Kevin Atkinson)/en_US.dic
+      - ./node_modules/@cspell/aoo-mozilla-en-dict/dicts/en_GB (-ise)/en_GB.dic
+      - ./node_modules/@cspell/aoo-mozilla-en-dict/dicts/en_GB (-ize) (Oxford)/en_GB-oxendict.aff # cspell:ignore oxendict
       - ./src/legacy/1Grams.txt
     excludeWordsFrom:
       - ./src/generated/en-gb-generated.txt
