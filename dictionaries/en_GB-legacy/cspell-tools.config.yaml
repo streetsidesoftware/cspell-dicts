@@ -11,6 +11,9 @@ targets:
       - src/wordsEnGb.txt
     sort: true
     generateNonStrict: false
+    replacements:
+      '’': "'"
+      '‘': "'"
     excludeWordsFrom:
       - node_modules/@cspell/aoo-mozilla-en-dict/dicts/en_GB (Marco Pinto) (-ise -ize) (2025+)/en_GB.dic
       - node_modules/@cspell/dict-en-shared/dict/shared-additional-words.txt
@@ -29,6 +32,9 @@ targets:
       - src/wordsEnGb.txt
     sort: true
     generateNonStrict: false
+    replacements:
+      '’': "'"
+      '‘': "'"
     excludeWordsFrom:
       - node_modules/@cspell/aoo-mozilla-en-dict/dicts/en_GB (Marco Pinto) (-ise -ize) (2025+)/en_GB.dic
       - node_modules/@cspell/dict-en-shared/dict/shared-additional-words.txt

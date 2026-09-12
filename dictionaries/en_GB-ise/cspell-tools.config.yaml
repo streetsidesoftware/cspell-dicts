@@ -13,6 +13,9 @@ targets:
       - node_modules/@cspell/dict-en-shared/dict/shared-additional-words-ise.txt
     sort: true
     generateNonStrict: true
+    replacements:
+      '’': "'"
+      '‘': "'"
     excludeWordsFrom:
       - node_modules/@cspell/dict-en-shared/dict/exclude-words.txt
 
@@ -30,6 +33,9 @@ targets:
       - node_modules/@cspell/dict-en-shared/dict/shared-additional-words-ise.txt
     sort: true
     generateNonStrict: false
+    replacements:
+      '’': "'"
+      '‘': "'"
     excludeWordsFrom:
       - node_modules/@cspell/dict-en-shared/dict/exclude-words.txt
 
