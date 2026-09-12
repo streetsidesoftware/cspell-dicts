@@ -1,5 +1,12 @@
 # Changelog
 
+## [1.0.34](https://github.com/streetsidesoftware/cspell-dicts/compare/@cspell/dict-en-gb-legacy@1.0.33...@cspell/dict-en-gb-legacy@1.0.34) (2026-09-12)
+
+
+### Updates and Bug Fixes
+
+* Use single quote for apostrophe ([#5724](https://github.com/streetsidesoftware/cspell-dicts/issues/5724)) ([79df2b4](https://github.com/streetsidesoftware/cspell-dicts/commit/79df2b40f46f2b864acf36da44db12a837d9a8d8))
+
 ## [1.0.33](https://github.com/streetsidesoftware/cspell-dicts/compare/@cspell/dict-en-gb-legacy@1.0.32...@cspell/dict-en-gb-legacy@1.0.33) (2026-09-12)
 
 

@@ -1,5 +1,12 @@
 # Changelog
 
+## [1.1.27](https://github.com/streetsidesoftware/cspell-dicts/compare/@cspell/dict-en-au@1.1.26...@cspell/dict-en-au@1.1.27) (2026-09-12)
+
+
+### Updates and Bug Fixes
+
+* Use single quote for apostrophe ([#5724](https://github.com/streetsidesoftware/cspell-dicts/issues/5724)) ([79df2b4](https://github.com/streetsidesoftware/cspell-dicts/commit/79df2b40f46f2b864acf36da44db12a837d9a8d8))
+
 ## [1.1.26](https://github.com/streetsidesoftware/cspell-dicts/compare/@cspell/dict-en-au@1.1.25...@cspell/dict-en-au@1.1.26) (2026-09-12)
 
 
