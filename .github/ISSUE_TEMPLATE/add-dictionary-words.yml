@@ -1,0 +1,41 @@
+name: Add Words to a Dictionary
+description: Submit one or more words to add to an existing dictionary's source file. A workflow will try to open a PR automatically (proof-of-concept).
+title: '[Words]: '
+labels:
+  - dictionary-words
+body:
+  - type: markdown
+    attributes:
+      value: |
+        Use this form to request new words for an **existing** dictionary source file under [`dictionaries/`](https://github.com/streetsidesoftware/cspell-dicts/tree/main/dictionaries).
+
+        This is a proof-of-concept: a workflow will try to add your word(s) to the file below and open a **pull request** automatically. If it can't (e.g. the path doesn't match an existing file), it will leave a comment explaining why - in that case, please open a pull request manually instead.
+  - type: input
+    id: file
+    attributes:
+      label: File
+      description: |
+        The path to the source file, relative to `dictionaries/`, that the word(s) should be added to. Browse [`dictionaries/`](https://github.com/streetsidesoftware/cspell-dicts/tree/main/dictionaries) on GitHub to find it - it's always under a `src/` folder, e.g. `git/src/terms.txt` or `docker/src/docker.txt`. If a dictionary has more than one source file, please pick the one that fits best.
+      placeholder: docker/src/docker.txt
+    validations:
+      required: true
+  - type: textarea
+    id: words
+    attributes:
+      label: Words
+      description: One word per line. Please only submit words that belong in this single file.
+      placeholder: |
+        compose
+        registry
+        rootless
+    validations:
+      required: true
+  - type: textarea
+    id: notes
+    attributes:
+      label: Additional Notes
+      description: Optional. Any extra context - why this word should be added, or a reference/source for it (a dictionary entry, official docs, an article, etc.).
+      placeholder: "Used in Docker's official CLI docs: https://docs.docker.com/..."
+    validations:
+      required: false
+# cspell:ignore rootless
