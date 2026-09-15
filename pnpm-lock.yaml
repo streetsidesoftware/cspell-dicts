@@ -364,7 +364,7 @@ importers:
         version: 10.3.1(@cspell/cspell-types@10.3.1)
       yaml:
         specifier: ^2.9.0
-        version: 2.9.0
+        version: 2.9.1
     devDependencies:
       '@tsconfig/node24':
         specifier: ^24.0.5
@@ -674,7 +674,7 @@ importers:
     dependencies:
       yaml:
         specifier: ^2.9.0
-        version: 2.9.0
+        version: 2.9.1
 
   dictionaries/sql: {}
 
@@ -816,7 +816,7 @@ importers:
         version: 4.0.0
       yaml:
         specifier: ^2.9.0
-        version: 2.9.0
+        version: 2.9.1
     devDependencies:
       '@cspell/cspell-types':
         specifier: ^10.3.1
@@ -4100,6 +4100,11 @@ packages:
     engines: {node: '>= 14.6'}
     hasBin: true
 
+  yaml@2.9.1:
+    resolution: {integrity: sha512-3NxN8+78OdzbT7C/WjGsyfPAtJaN3FNDsWxv7Y7mcDsT/oOmgW8BpyQQFFBnvZE3j9Y2Sdz1ULFLezL7Eb2yFw==}
+    engines: {node: '>= 14.6'}
+    hasBin: true
+
   yamljs@0.3.0:
     resolution: {integrity: sha512-C/FsVVhht4iPQYXOInoxUM/1ELSf9EsgKH34FofQOp6hwCPrW4vG4w5++TED3xRUo8gD7l0P1J1dLlDYzODsTQ==}
     hasBin: true
@@ -5594,7 +5599,7 @@ snapshots:
       '@cspell/cspell-types': 10.3.1
       comment-json: 5.0.0
       smol-toml: 1.8.0
-      yaml: 2.9.0
+      yaml: 2.9.1
 
   cspell-dictionary@10.3.1:
     dependencies:
@@ -7804,6 +7809,8 @@ snapshots:
   yallist@5.0.0: {}
 
   yaml@2.9.0: {}
+
+  yaml@2.9.1: {}
 
   yamljs@0.3.0:
     dependencies:
