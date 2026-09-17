@@ -727,8 +727,8 @@ importers:
         specifier: ^7.0.0
         version: 7.0.0(@types/node@26.5.1)(@yeoman/adapter@5.0.0(@types/node@26.5.1))(@yeoman/types@1.11.1(@types/node@26.5.1)(@yeoman/adapter@5.0.0(@types/node@26.5.1))(mem-fs@4.1.5(@types/node@26.5.1)(@types/vinyl@2.0.12)))(mem-fs@4.1.5(@types/node@26.5.1)(@types/vinyl@2.0.12))(supports-color@9.4.0)
       yeoman-generator:
-        specifier: ^8.4.0
-        version: 8.4.0(@types/node@26.5.1)(@yeoman/types@1.11.1(@types/node@26.5.1)(@yeoman/adapter@5.0.0(@types/node@26.5.1))(mem-fs@4.1.5(@types/node@26.5.1)(@types/vinyl@2.0.12)))(mem-fs@4.1.5(@types/node@26.5.1)(@types/vinyl@2.0.12))(supports-color@9.4.0)
+        specifier: ^9.1.0
+        version: 9.1.0(@types/node@26.5.1)(@yeoman/types@1.11.1(@types/node@26.5.1)(@yeoman/adapter@5.0.0(@types/node@26.5.1))(mem-fs@4.1.5(@types/node@26.5.1)(@types/vinyl@2.0.12)))(mem-fs@4.1.5(@types/node@26.5.1)(@types/vinyl@2.0.12))(supports-color@9.4.0)
       yosay:
         specifier: ^3.0.0
         version: 3.0.0
@@ -2453,10 +2453,6 @@ packages:
     resolution: {integrity: sha512-8uSpZZocAZRBAPIEINJj3Lo9HyGitllczc27Eh5YYojjMFMn8yHMDMaUHE2Jqfq05D/wucwI4JGURyXt1vchyg==}
     engines: {node: '>=10'}
 
-  execa@9.6.1:
-    resolution: {integrity: sha512-9Be3ZoN4LmYR90tUoVu2te2BsbzHfhJyfEiAVfz7N5/zv+jduIfLrV2xdQXOHbaD6KgpGdO9PRPM1Y4Q9QkPkA==}
-    engines: {node: ^18.19.0 || >=20.5.0}
-
   exponential-backoff@3.1.3:
     resolution: {integrity: sha512-ZgEeZXj30q+I0EN+CbSSpIyPaJ5HVQD18Z1m+u1FXbAeT94mr1zw50q4q6jiiC447Nl/YTcIYSAftiGqetwXCA==}
 
@@ -4121,9 +4117,9 @@ packages:
       '@yeoman/types': ^1.10.3
       mem-fs: ^4.1.4 || ^6.0.0
 
-  yeoman-generator@8.4.0:
-    resolution: {integrity: sha512-8yMkAfuAPqOaN9dsdf2hGxgCGuSIV3c/RmPKXWoe5YZ4HX2zXnDS9D/AoXlUw9OSPeRVpBe4vh92vTBi840Evw==}
-    engines: {node: ^20.17.0 || >=22.9.0}
+  yeoman-generator@9.1.0:
+    resolution: {integrity: sha512-dfQE5eJhYQUvgGIggH5/X9+0VwxjrrCuZ3QO39MkvEa3363Bcw5/d++yUCRUy9MvvytfEZv4XsdOFluHMmTj3w==}
+    engines: {node: ^22.18.0 || >=24.11.0}
     peerDependencies:
       '@types/node': '>=20.19.35'
       '@yeoman/types': ^1.1.1
@@ -5913,21 +5909,6 @@ snapshots:
       onetime: 5.1.2
       signal-exit: 3.0.7
       strip-final-newline: 2.0.0
-
-  execa@9.6.1:
-    dependencies:
-      '@sindresorhus/merge-streams': 4.0.0
-      cross-spawn: 7.0.6
-      figures: 6.1.0
-      get-stream: 9.0.1
-      human-signals: 8.0.1
-      is-plain-obj: 4.1.0
-      is-stream: 4.0.1
-      npm-run-path: 6.0.0
-      pretty-ms: 9.3.1
-      signal-exit: 4.1.0
-      strip-final-newline: 4.0.0
-      yoctocolors: 2.2.0
 
   exponential-backoff@3.1.3: {}
 
@@ -7850,15 +7831,15 @@ snapshots:
       - react-native-b4a
       - supports-color
 
-  yeoman-generator@8.4.0(@types/node@26.5.1)(@yeoman/types@1.11.1(@types/node@26.5.1)(@yeoman/adapter@5.0.0(@types/node@26.5.1))(mem-fs@4.1.5(@types/node@26.5.1)(@types/vinyl@2.0.12)))(mem-fs@4.1.5(@types/node@26.5.1)(@types/vinyl@2.0.12))(supports-color@9.4.0):
+  yeoman-generator@9.1.0(@types/node@26.5.1)(@yeoman/types@1.11.1(@types/node@26.5.1)(@yeoman/adapter@5.0.0(@types/node@26.5.1))(mem-fs@4.1.5(@types/node@26.5.1)(@types/vinyl@2.0.12)))(mem-fs@4.1.5(@types/node@26.5.1)(@types/vinyl@2.0.12))(supports-color@9.4.0):
     dependencies:
       '@types/debug': 4.1.13
       '@types/lodash-es': 4.17.12
       '@yeoman/namespace': 2.1.0
       '@yeoman/types': 1.11.1(@types/node@26.5.1)(@yeoman/adapter@5.0.0(@types/node@26.5.1))(mem-fs@4.1.5(@types/node@26.5.1)(@types/vinyl@2.0.12))
-      chalk: 5.6.2
+      chalk: 6.0.0
       debug: 4.4.3(supports-color@9.4.0)
-      execa: 9.6.1
+      execa: 10.0.1
       latest-version: 9.0.0
       lodash-es: 4.18.1
       mem-fs: 4.1.5(@types/node@26.5.1)(@types/vinyl@2.0.12)
