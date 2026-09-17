@@ -1,5 +1,21 @@
 # Release Notes
 
+## [33.15.4](https://github.com/streetsidesoftware/cspell-dicts/compare/cspell-dicts@33.15.3...cspell-dicts@33.15.4) (2026-09-17)
+
+
+### Updates and Bug Fixes
+
+* **git:** worktree ([#5732](https://github.com/streetsidesoftware/cspell-dicts/issues/5732)) ([92257f4](https://github.com/streetsidesoftware/cspell-dicts/commit/92257f418aca0361ae60961b64fff07866ff0a4c))
+* **npm:** varlock ([#5734](https://github.com/streetsidesoftware/cspell-dicts/issues/5734)) ([c5cb27a](https://github.com/streetsidesoftware/cspell-dicts/commit/c5cb27a3246ca495ce72041881a2d301e1369ba6))
+* Workflow Bot -- Update Dictionaries ([#5726](https://github.com/streetsidesoftware/cspell-dicts/issues/5726)) ([d0fad5b](https://github.com/streetsidesoftware/cspell-dicts/commit/d0fad5b41be89e5e5d4c39eeebd3767a645ad5ba))
+
+
+### Dependencies
+
+* The following workspace dependencies were updated
+  * devDependencies
+    * @cspell/dict-cspell-bundle bumped to 2.0.76
+
 ## [33.15.3](https://github.com/streetsidesoftware/cspell-dicts/compare/cspell-dicts@33.15.2...cspell-dicts@33.15.3) (2026-09-12)
 
 
