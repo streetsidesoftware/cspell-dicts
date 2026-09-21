@@ -20,11 +20,11 @@ updates:
         update-types: ['major']
       dependencies:
         applies-to: version-updates
-        dependency-type: development
+        dependency-type: production
         update-types: ['minor', 'patch']
       dependencies-major:
         applies-to: version-updates
-        dependency-type: development
+        dependency-type: production
         update-types: ['major']
 
   - package-ecosystem: 'github-actions'
