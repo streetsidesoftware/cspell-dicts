@@ -6,13 +6,13 @@ Various [cspell](https://github.com/streetsidesoftware/cspell) dictionaries. Eac
 
 <!--- @@inject: https://github.com/streetsidesoftware/cspell/blob/main/static/sponsor.md --->
 
-[![GitHub Sponsors](https://img.shields.io/badge/-Street_Side_Software-black?style=for-the-badge&logo=githubsponsors&label=GitHub%20Sponsor%3A)](https://github.com/sponsors/streetsidesoftware)
+If our spell checkers save you time, please consider supporting their development.
 
-[![Open Collective](https://img.shields.io/badge/-CSpell-black?style=for-the-badge&logo=opencollective&label=Open%20Collective%3A)](https://opencollective.com/cspell)
+Please show your support through one of the following sites:
 
-[![Street Side Software](https://img.shields.io/endpoint?url=https%3A%2F%2Fraw.githubusercontent.com%2Fstreetsidesoftware%2Fcspell%2Frefs%2Fheads%2Fmain%2Fstatic%2Fcspell-badge.json)](https://streetsidesoftware.com/sponsor/)
-
-[![PayPal](https://img.shields.io/badge/-Street_Side_Software-black?style=for-the-badge&logo=paypal&label=PayPal%20Donate%3A)](https://www.paypal.com/donate/?hosted_button_id=26LNBP2Q6MKCY)
+<p align="left">
+  <a href="https://github.com/sponsors/streetsidesoftware" title="GitHub Sponsor"><picture><source media="(prefers-color-scheme: dark)" srcset="https://cspell.org/img/sponsor/github-sponsor-dark.png" /><img alt="GitHub Sponsor" src="https://cspell.org/img/sponsor/github-sponsor.png" width="180" /></picture></a> &nbsp; <a href="https://www.paypal.com/donate/?hosted_button_id=26LNBP2Q6MKCY" title="PayPal"><picture><source media="(prefers-color-scheme: dark)" srcset="https://cspell.org/img/sponsor/paypal-dark.png" /><img alt="PayPal" src="https://cspell.org/img/sponsor/paypal.png" width="180" /></picture></a> &nbsp; <a href="https://opencollective.com/cspell" title="Open Collective"><picture><source media="(prefers-color-scheme: dark)" srcset="https://cspell.org/img/sponsor/open-collective-dark.png" /><img alt="Open Collective" src="https://cspell.org/img/sponsor/open-collective.png" width="180" /></picture></a> &nbsp; <a href="https://streetsidesoftware.com/sponsor/" title="Street Side Software"><picture><source media="(prefers-color-scheme: dark)" srcset="https://cspell.org/img/sponsor/cspell-dark.png" /><img alt="CSpell" src="https://cspell.org/img/sponsor/cspell.png" width="180" /></picture></a>
+</p>
 
 <!--- @@inject-end: https://github.com/streetsidesoftware/cspell/blob/main/static/sponsor.md --->
 
