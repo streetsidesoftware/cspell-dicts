@@ -10,13 +10,21 @@ updates:
     schedule:
       interval: 'daily'
     groups:
-      dependencies:
+      dev-dependencies:
         applies-to: version-updates
         dependency-type: development
         update-types: ['minor', 'patch']
-      dependencies-major:
+      dev-dependencies-major:
         applies-to: version-updates
         dependency-type: development
+        update-types: ['major']
+      dependencies:
+        applies-to: version-updates
+        dependency-type: production
+        update-types: ['minor', 'patch']
+      dependencies-major:
+        applies-to: version-updates
+        dependency-type: production
         update-types: ['major']
 
   - package-ecosystem: 'github-actions'
