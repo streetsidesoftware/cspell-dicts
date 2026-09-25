@@ -3,7 +3,6 @@
 
 AD
 ADAM
-ADMembership_ServerlessADsPath_not_supported
 ADP
 ADP_ConnecitonRequired_UpdateRows
 ADP_TransactionZombied
@@ -63,7 +62,6 @@ CouldnTCreateChannelForType2
 Cqt
 Creds
 Cryptography_ArgECDsaRequiresECDsaKey
-Cryptography_ArgExpectedECDiffieHellmanCngPublicKey
 Cryptography_NonCompliantFIPSAlgorithm
 DB
 DLL
@@ -81,12 +79,13 @@ DataControl_DataSourceDoesntExist
 DataDom_NotSupport_EntRef
 DataMerge_ReltionKeyColumnsMismatch
 DataTable_SelfnestedDatasetConflictingName
-DbConnectionString_AdoNetPooler
 DbConnectionString_DSN
 Dbf
 DeclarativeCatlaogPart_WebPartsListUserControlPath
 Dev
 DevFiltDict_FoundLoop
+Diffie
+Ds
 Dt
 Duplicate_appinitialize
 DuplicatedFunctionoverloads
@@ -124,6 +123,7 @@ Gen
 GetGacLocaltion_failed
 HS
 HTML
+Hellman
 HierarchicalDataControl_DataSourceDoesntExist
 IC
 ID
@@ -162,7 +162,6 @@ Multiset
 NETFX
 NS
 NT
-Na
 NamedSimpleType_InvalidDuplicateNamedSimpleTypeDelaration
 Nm
 NoExtensibleObjectsInSL
@@ -212,6 +211,7 @@ Pnrp
 Pnrp_AtleastOneEvenHandlerNeeded
 PocoEntityWrapper_UnableToMaterializeArbitaryNavPropType
 Polltime_zero_for_database_sql_cache
+Pooler
 Popout
 Pregen
 Profile_anonoymous_not_allowed_to_set_property
@@ -287,8 +287,6 @@ SqlSpatialservices_CouldNotCreateWellKnownGeographyValueNoSrid
 SqlSpatialservices_CouldNotCreateWellKnownGeographyValueNoWkbOrWkt
 SqlSpatialservices_CouldNotCreateWellKnownGeometryValueNoSrid
 SqlSpatialservices_CouldNotCreateWellKnownGeometryValueNoWkbOrWkt
-SqlUdtReason_MaplessNotYetSupported
-SqlUdtReason_MultivaluedAssemblyId
 SqlUdtReason_NativeFormatExplictLayoutNotAllowed
 Sql_BulkLoadLcidMismatch
 Sql_CanotCreateNormalizer
@@ -317,7 +315,6 @@ TemplateableDesigner_SettingGenericChoiceDescription
 TemplateableDesigner_SettingTemplatingChoiceDescription
 TemplateableDesigner_TemplateChoiceDescription
 TemplatingOptionsDialog_CHTMLSchemaFriendly
-Theming
 Tmpl
 Trace_Controlstate_Size
 Trace_Controlstate_Size_Nochildren
@@ -1009,6 +1006,7 @@ detected
 detection
 determine
 deterministic
+dev
 device
 devices
 diagnostics
@@ -1610,6 +1608,7 @@ manual
 manually
 many
 map
+mapless
 mappath
 mapped
 mapping
@@ -1625,6 +1624,7 @@ matched
 matches
 matching
 materialize
+materializer
 math
 max
 maximum
@@ -1700,12 +1700,14 @@ multiplicity
 multiply
 multiselect
 multiset
+multivalued
 multiview
 must
 mutex
 mutual
 mutually
 n
+na
 name
 named
 names
@@ -1739,6 +1741,7 @@ newlines
 next
 nil
 nill
+nm
 no
 node
 nodes
@@ -2237,6 +2240,7 @@ serializer
 serializing
 served
 server
+serverless
 servers
 service
 services
@@ -2428,6 +2432,7 @@ that
 the
 theme
 themes
+theming
 then
 thens
 this
@@ -2525,6 +2530,7 @@ underline
 underlying
 understood
 undo
+undock
 unexpected
 unhandled
 unicode

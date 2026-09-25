@@ -29,8 +29,9 @@ ADDRESS
 ADJACENCY
 ADPCM
 ADVANCE
-AESContext
+AES
 AFTER
+AFTERTOUCH
 AGENT
 AGX
 ALBEDO
@@ -446,7 +447,6 @@ DICT
 DICTIONARY
 DIFFERENCE
 DIFFUSE
-DIFFUSE_TOON
 DILATION
 DIM
 DIMENSIONS
@@ -1093,7 +1093,6 @@ METHOD
 MICRO
 MIDDLE
 MIDI
-MIDI_MESSAGE_AFTERTOUCH
 MIDNIGHT
 MIME
 MIN
@@ -1581,7 +1580,6 @@ RTC
 RTL
 RUN
 RUNNING
-RetargetModifier3D
 SAD
 SADDLE
 SALMON
@@ -1738,7 +1736,6 @@ SPECIALIZATION
 SPECIFIC
 SPECULAR
 SPECULAR_SCHLICK_GGX
-SPECULAR_TOON
 SPEECH
 SPEED
 SPHERE
@@ -1898,6 +1895,7 @@ TOO
 TOOL
 TOOLBAR
 TOOLTIP
+TOON
 TOP
 TOPMOST
 TOTAL
@@ -3489,7 +3487,6 @@ is_foveation_supported
 is_highend
 is_in_boundsv
 is_in_mulitcaret_edit
-is_overtype_mode_enabled
 is_passby_press_enabled
 is_subsequence_ofn
 is_userfs_persistent
@@ -3946,6 +3943,7 @@ overrun
 oversample
 oversampling
 oversize
+overtype
 overview
 overwritable
 overwrite
@@ -4384,6 +4382,7 @@ rests
 result
 results
 resume
+retarget
 retransmits
 return
 reverb
@@ -4539,7 +4538,6 @@ set_foveation_with_subsampled_images
 set_glb_data
 set_hit_sbt_range
 set_nonclient_area
-set_overtype_mode_enabled
 set_passby_press
 set_premult_alpha
 set_tonemapper
