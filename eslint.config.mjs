@@ -2,6 +2,7 @@ import js from '@eslint/js';
 import globals from 'globals';
 
 export default [
+    { ignores: ['.claude/worktrees/**'] },
     js.configs.recommended,
     {
         languageOptions: {

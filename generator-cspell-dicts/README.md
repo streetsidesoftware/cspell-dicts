@@ -2,24 +2,17 @@
 
 Generate cspell dictionary sub-projects.
 
-## Installation
+## Usage
 
-First, install [Yeoman](http://yeoman.io) and `generator-cspell-dicts` using [npm](https://www.npmjs.com/)
-(we assume you have pre-installed [Node.js](https://nodejs.org/)).
-
-```bash
-npm install -g yo
-npm link
-```
-
-Then generate a dictionary project:
-
-Example for **monkey** language:
+Run it from the root of the [cspell-dicts](https://github.com/streetsidesoftware/cspell-dicts) repository:
 
 ```bash
-mkdir monkey
-yo cspell-dicts
+pnpm install
+pnpm run create-dictionary
 ```
+
+It asks a few questions and creates the package in `dictionaries/<name>/`. See
+[Creating a dictionary](https://github.com/streetsidesoftware/cspell-dicts/blob/main/docs/guides/new-dictionary.md).
 
 ## Getting To Know Yeoman
 

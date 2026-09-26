@@ -1,77 +1,34 @@
 # Contributing
 
-Please feel free to contribute to this project.
+Thanks for considering a contribution to cspell-dicts. You can help by:
 
-## How you can contribute
+- fixing or adding words in a dictionary
+- creating a new dictionary
+- filing issues about using the dictionaries
+- helping answer issues
 
-- Fixing spelling error in dictionaries.
-- Creating new dictionaries.
-- Filing any issues related to using dictionaries.
-- Assisting in answering issues.
+## TL;DR
 
-## Proposing Words
+- **Prerequisites:** Node 22.19 or later, and `corepack enable` for pnpm. See
+  [Prerequisites](./docs/build-and-packaging.md#prerequisites).
+- **Set up:** `pnpm install`, then `pnpm run prepare:dictionaries`. pnpm only: npm and yarn are blocked.
+- **Words:** edit the word lists in `dictionaries/<name>/src/`, never the built files in `dict/`. Then sort, build the
+  package, and commit both. See [Adding, removing, or fixing words](./docs/guides/word-changes.md).
+- **A new dictionary:** run `pnpm run create-dictionary`. See [Creating a dictionary](./docs/guides/new-dictionary.md).
+- **Before a PR:** `pnpm run lint` (fixes what it can) and `pnpm test` in the packages you changed.
+- **Commits:** [Conventional Commits](https://www.conventionalcommits.org/). Adding or removing words is `fix:`, a new
+  dictionary is `feat:`, and a scope names the package directory: `fix(companies): add Sourcegraph`. See
+  [Commits and pull requests](./docs/commits-and-pull-requests.md).
+- **PR descriptions:** short, with a `## Summary` that stands on its own.
 
-- If you have a word you believe belongs in a dictionary, send a pull request.
-- For words associated with a particular programming language / environment, they should go in the appropriate dictionary under `dictionaries/<language>/src/<language>.txt`(s).
-- It is okay to add multiple words in one Pull request, as long as they are related _(same dictionary or concept)_
-- For general-purpose words, put them in the closest appropriate `dictionaries/<general-area>`(s).
-- See the `README.md` files in those directories for more information.
+## More docs
 
-<!-- cspell:locale en,en-GB,en-AU -->
-
-## Word Formatting Guidelines
-
-When adding words to dictionaries, please follow these formatting guidelines to maintain consistency:
-
-### Capitalization
-
-- **Proper nouns**: Capitalize names of specific people, places, organizations, and landmarks
-  - Examples: `Melbourne`, `Sydney`, `Uluru`, `Great Barrier Reef`
-- **Brand names and trademarked terms**: Use the official capitalization
-  - Examples: `Vegemite`, `TimTam`, `Milo`, `ANZAC` (when referring to the biscuit)
-- **Common nouns and general terms**: Use lowercase
-  - Examples: `kangaroo`, `carrot`, `placement`
-- **Acronyms and initialisms**: Use standard capitalization
-  - Examples: `NSW`, `AFL`, `CSIRO`
-
-### Format
-
-- **One entry per line**: Each word or phrase should be on its own line
-- **Multi-word entries**: Preserve spaces in multi-word proper nouns
-  - Example: `Great Barrier Reef` (not `GreatBarrierReef`)
-- **Comments**: Use `#` for comments to explain context or usage
-- **Sorting**: While not required, alphabetical sorting within sections improves readability
-
-### Examples
-
-```
-# Australian cities (proper nouns - capitalized)
-Brisbane
-Melbourne
-Sydney
-
-# Australian slang (common nouns - lowercase)
-arvo
-barbie
-brekkie
-
-# Brand names (use official capitalization)
-Vegemite
-TimTam
-
-# Multi-word places
-Great Barrier Reef
-Bondi Beach
-```
-
-### Regional Variants
-
-- **Region-specific words**: Add to the appropriate regional dictionary (e.g., `en_AU`, `en_GB`, `en_US`)
-- **Shared words**: If a word is valid across multiple English variants, add it to `dictionaries/en_shared` instead
-- **Spelling variants**: Use the spelling appropriate for the regional dictionary
-  - For `en_AU` and `en_GB`: Use -ise endings (e.g., `organise`)
-  - For `en_US`: Use -ize endings (e.g., `organize`)
-
-<!--
-  cspell:words Bondi brekkie CSIRO Uluru
--->
+- [Adding, removing, or fixing words](./docs/guides/word-changes.md), including the word format
+- [Creating a dictionary](./docs/guides/new-dictionary.md)
+- [Upstream updates](./docs/guides/upstream-updates.md)
+- [Build and packaging](./docs/build-and-packaging.md), including the files that are generated
+- [Commits and pull requests](./docs/commits-and-pull-requests.md)
+- [Releasing](./docs/releasing.md)
+- [Style](./docs/style.md)
+- [Glossary](./docs/glossary.md)
+- [ADRs](./docs/ADRs/README.md)

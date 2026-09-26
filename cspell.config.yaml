@@ -8,6 +8,7 @@ files:
   - '*.{md,txt,yaml,yml}'
   - dictionaries/**/*.{md,txt,yaml,yml,js,tex}
   - docs/**/*.md
+  - .claude/**/*.md
   - scripts/**
   - cspell-dict-file-checker/**
   - shared-sources/**
@@ -45,6 +46,7 @@ words:
   - monkeyc
   - ngram
   - nohoist
+  - npmjs
   - otechie
   - patreon
   - pipefail
@@ -56,6 +58,7 @@ words:
   - WIPO
   - Wooorm's
   - wordlist
+  - worktrees
   - z
 flagWords: []
 maxNumberOfProblems: 1000
@@ -74,6 +77,7 @@ ignorePaths:
   - '**/.git/!(COMMIT_EDITMSG)'
   - '**/.git/!(COMMIT_EDITMSG)/**'
   - '*.tsv'
+  - '.claude/worktrees/**'
   - CHANGELOG.md
   - checksum.txt
   - cSpell.json
@@ -96,6 +100,7 @@ ignorePaths:
   - source-files.txt
   - snapshots/**
 useGitignore: true
+enableGlobDot: true
 overrides:
   - filename: '**/nl_NL/**'
     language: en,nl
