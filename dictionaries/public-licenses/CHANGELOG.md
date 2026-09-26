@@ -3,6 +3,13 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+## [2.0.17](https://github.com/streetsidesoftware/cspell-dicts/compare/@cspell/dict-public-licenses@2.0.16...@cspell/dict-public-licenses@2.0.17) (2026-09-26)
+
+
+### Updates and Bug Fixes
+
+* Workflow Bot -- Build Dictionaries ([#5748](https://github.com/streetsidesoftware/cspell-dicts/issues/5748)) ([b5b699e](https://github.com/streetsidesoftware/cspell-dicts/commit/b5b699ee6903f3333102f29711dc78dc7bcb6b58))
+
 ## [2.0.16](https://github.com/streetsidesoftware/cspell-dicts/compare/@cspell/dict-public-licenses@2.0.15...@cspell/dict-public-licenses@2.0.16) (2026-02-23)
 
 
