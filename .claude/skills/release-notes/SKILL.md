@@ -45,13 +45,12 @@ Read these first. They are the rules; this step only applies them:
 Fetch the release PR's description. It lists every package being released, and under each, the entries by section,
 each linking to its source PR. For each entry:
 
-- Would a cspell user notice it: a change to what a dictionary accepts, flags, or turns on? If not, it belongs under a
-  hidden type. Reclassifying it removes it from the release notes; it doesn't just move it.
-- For a Features entry: is it a new dictionary, a new dictionary ID or setting, or a new domain of words? If it only
-  adds or changes words, it's `fix`.
-- Would an existing setup start flagging text it accepted before, or stop working? Then it needs `!`.
+- Does its type match the doc's definitions, including `!`? A shown type that a cspell user wouldn't notice belongs
+  under a hidden type. Reclassifying it removes it from the release notes; it doesn't just move it.
 - Is it listed under a package it doesn't belong to? An entry lands in every package whose files the PR changed. That
   can't be fixed with an override; tell the user.
+- A package whose only entries are "workspace dependencies were updated" was bumped because a package it depends on
+  was. That is expected, not an entry to correct.
 
 Present the flagged entries with your reasoning and PR numbers, and get the user's confirmation on which to correct
 before touching anything. This is a reading of one-line summaries, not a diff review, so a human makes the call.

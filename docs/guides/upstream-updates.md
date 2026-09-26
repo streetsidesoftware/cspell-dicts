@@ -8,22 +8,31 @@ outside this repo, such as a Hunspell dictionary or a project's word list.
 A package with an upstream source has a `sync` script that copies the files into `src/`, usually `src/hunspell/`. Never
 edit those files by hand: the next sync overwrites them.
 
-- **From an npm package** (most packages with a `sync` script). The script copies from a dependency, such as
-  `dictionary-de` for `de_DE`: `pnpm cpy "node_modules/dictionary-de/**" src/hunspell`. The version in `package.json` decides what is
+- **From an npm package**, as most `sync` scripts do. The script copies from a dependency, such as `dictionary-de`
+  for `de_DE`: `pnpm cpy "node_modules/dictionary-de/**" src/hunspell`. The version in `package.json` decides what is
   copied, so updating the dependency updates the source.
-- **From a GitHub repository** (8 packages). The script runs `sync-github-files <owner>/<repo> [paths...]` with
+- **From a GitHub repository.** The script runs `sync-github-files <owner>/<repo> [paths...]` with
   `--tag <ref>` or `--latest`, and records what it fetched in `.sync-github-files.json`. `--latest` and a branch such as
   `main` follow upstream; a tag or commit is pinned until someone changes the script. It needs a GitHub token: run
   `pnpm run sync:manual` where the package has it, or set `GITHUB_TOKEN` (`gh auth token` prints one).
 - **Other scripts.** A few packages run their own script, such as `ar`'s `scripts/sync.sh`, or `npm`'s
   `update-dictionary`, which regenerates its package list.
 
+To find the packages of each kind:
+
+```sh
+grep -l '"sync"' dictionaries/*/package.json                  # every package with a sync script
+grep -l 'sync-github-files' dictionaries/*/package.json       # synced from GitHub
+grep -l '"conditional-build": "pnpm \(run \)\?sync' dictionaries/*/package.json   # synced by Build Dictionaries
+grep -l '"update-dictionary"' dictionaries/*/package.json     # run by Update Dictionaries
+```
+
 ## What runs automatically
 
-- **Build Dictionaries** runs on every push to `main`. For 19 packages, the conditional build runs `sync` first. Any
-  change is built and proposed in a "Build Dictionaries" PR.
-- **Update Dictionaries** runs weekly. It runs every package's `update-dictionary` script (today only `npm` has one)
-  and opens an "Update Dictionaries" PR.
+- **Build Dictionaries** runs on every push to `main`. For packages whose `conditional-build` script runs `sync`, the
+  conditional build syncs first. Any change is built and proposed in a "Build Dictionaries" PR.
+- **Update Dictionaries** runs weekly. It runs every package's `update-dictionary` script, such as `npm`'s, and opens
+  an "Update Dictionaries" PR.
 - **Update Dependencies** and Dependabot update the npm packages that the `cpy`-based `sync` scripts copy from. The
   source changes in the next Build Dictionaries run after those updates merge.
 

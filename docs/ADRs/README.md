@@ -99,6 +99,9 @@ each other's files, and those are deleted together.
 
 Work on a design in an `adr/<feature>` branch, and on archiving in an `adr-archive/<feature>` branch.
 
+A new dictionary is the exception: its design and the package ship together, in one `new-dictionary/<name>` branch
+and one PR.
+
 ## With Claude Code
 
 The `feature-adr` skill runs this process as an interview: it asks one decision at a time, writes and commits the

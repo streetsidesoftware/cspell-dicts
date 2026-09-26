@@ -8,6 +8,8 @@ It is fine to change several words in one PR, as long as they are related: the s
 
 ## 1. Set up
 
+Check the [prerequisites](../build-and-packaging.md#prerequisites), then:
+
 ```sh
 pnpm install
 pnpm run prepare:dictionaries

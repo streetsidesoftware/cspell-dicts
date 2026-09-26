@@ -9,6 +9,8 @@ Thanks for considering a contribution to cspell-dicts. You can help by:
 
 ## TL;DR
 
+- **Prerequisites:** Node 22.19 or later, and `corepack enable` for pnpm. See
+  [Prerequisites](./docs/build-and-packaging.md#prerequisites).
 - **Set up:** `pnpm install`, then `pnpm run prepare:dictionaries`. pnpm only: npm and yarn are blocked.
 - **Words:** edit the word lists in `dictionaries/<name>/src/`, never the built files in `dict/`. Then sort, build the
   package, and commit both. See [Adding, removing, or fixing words](./docs/guides/word-changes.md).

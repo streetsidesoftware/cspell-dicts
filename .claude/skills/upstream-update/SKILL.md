@@ -59,10 +59,9 @@ pnpm test
 
 ### 5. Draft the commit message and PR description
 
-Follow `docs/commits-and-pull-requests.md`.
-
-- **Type:** `fix(<package directory>): update <source> to <version>`. Use `!` if many common words were removed, so
-  existing setups would start flagging text they accepted before. Ask the user when it's a judgment call.
+- **Type and scope:** see `docs/commits-and-pull-requests.md`. An upstream update is usually
+  `fix(<package>): update <source> to <version>`. Ask the user when the type is a judgment call, such as a large
+  removal of words.
 - **Description:** a `## Summary`, the upstream release or diff link, the size of the change, and whether the license
   changed.
 

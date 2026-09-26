@@ -48,7 +48,8 @@ The bot PRs set their own types. Don't change them:
 
 `changelog-sections` in `scripts/gen-release-please-config.jq` decides this.
 
-- **Shown:** `feat`, `fix`, `perf`, `revert`, `refactor`, `style`, `test`, `build`, and commits with no type.
+- **Shown:** `feat`, `feature`, `fix`, `perf`, `revert`, `refactor`, `style`, `test`, `build`, and commits with no
+  type. `feature:` is listed under Features too, but use `feat:`.
 - **Hidden:** `chore`, `docs`, `ci`.
 
 If a PR merged under the wrong type, see [Releasing](./releasing.md#fixing-a-changelog-entry-after-merge).

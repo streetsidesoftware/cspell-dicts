@@ -24,7 +24,7 @@ too.
    generator: `@cspell/dict-<name>`, lowercase, other characters replaced by `-`. The ADR feature slug is
    `dict-<name>`, so the design lives in `docs/ADRs/dict-<name>/`.
 
-3. **Set up a worktree** on a `claude-new-dictionary-<name>` branch, as in `feature-adr` step 3. The design and the
+3. **Set up a worktree** on a `new-dictionary/<name>` branch, as in `feature-adr` step 3. The design and the
    package go in the same branch and the same PR.
 
 4. **Design.** Follow `feature-adr` steps 4–7: bootstrap the ADR directory, then interview one decision at a time,

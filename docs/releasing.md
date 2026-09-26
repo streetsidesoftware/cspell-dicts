@@ -7,7 +7,9 @@ See [Commits and pull requests](./commits-and-pull-requests.md) for which type t
 
 1. **Release Please keeps a release PR open.** On every push to `main`, `.github/workflows/release-please.yml` updates a
    PR titled `chore: release main`. It bumps the version and writes the `CHANGELOG.md` of each package with
-   releasable commits since its last release. Each commit counts for the packages whose files it changed.
+   releasable commits since its last release. Each commit counts for the packages whose files it changed. The
+   `node-workspace` plugin also bumps every package that depends on a bumped package, such as
+   `@cspell/dict-cspell-bundle`, with a "workspace dependencies were updated" changelog entry.
 2. **Merging the release PR creates the releases.** Release Please tags each released package as
    `<package name>@<version>` and records the versions in `.release-please-manifest.json`.
 3. **The same workflow publishes.** When a release was created, `release-please.yml` calls `publish.yml`, which runs

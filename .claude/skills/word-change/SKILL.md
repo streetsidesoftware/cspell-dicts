@@ -65,12 +65,8 @@ pnpm test
 
 ### 5. Draft the commit message and PR description
 
-Follow `docs/commits-and-pull-requests.md`.
-
-- **Type:** `fix:` for adding, removing, or correcting words. `feat:` only for a new domain of words. Add `!` if an
-  existing setup would start flagging text it accepted before, apart from removing a genuine misspelling.
-- **Scope:** the package directory, such as `fix(companies): add Sourcegraph`. Leave it out when several packages
-  changed on purpose, and name them in the subject.
+- **Type and scope:** see `docs/commits-and-pull-requests.md`. A word change is usually `fix(<package>): …`, such as
+  `fix(companies): add Sourcegraph`.
 - **Description:** fill in `.github/pull_request_template.md`: a `## Summary`, the dictionary, and the words with their
   sources.
 

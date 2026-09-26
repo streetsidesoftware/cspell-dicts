@@ -47,7 +47,7 @@ For an upstream word list, also read [Upstream updates](./upstream-updates.md): 
 
 ## 4. Run the generator
 
-From the repo root:
+Check the [prerequisites](../build-and-packaging.md#prerequisites). Then, from the repo root:
 
 ```sh
 pnpm install

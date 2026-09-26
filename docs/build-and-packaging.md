@@ -2,6 +2,16 @@
 
 How the dictionary packages in this repo are laid out, built, tested, and published, and which files are generated.
 
+## Prerequisites
+
+- **Node.js 22.19 or later**, as `engines` in the root `package.json` requires. CI tests on Node 22 and 24.
+- **pnpm through Corepack.** The root `package.json` pins the pnpm version in `packageManager`, and Corepack provides
+  exactly that version. Corepack ships with Node 22 and 24. Enable it once:
+
+  ```sh
+  corepack enable
+  ```
+
 ## Workspace
 
 This is a pnpm workspace. pnpm is the only package manager allowed: the root `preinstall` script rejects npm and yarn.
@@ -42,7 +52,8 @@ Large natural language dictionaries are built as tries (`.trie`). Some are writt
 
 A dictionary can read another package's files:
 
-- directly by relative path, such as `allowedSplitWords: ../en_US/en_US.trie`. 13 packages do this.
+- directly by relative path, such as `allowedSplitWords: ../en_US/en_US.trie`. To find them:
+  `grep -l '\.\./' dictionaries/*/cspell-tools.config.yaml`.
 - through a workspace dependency, such as `node_modules/@cspell/dict-en-shared/dict/acronyms.txt`. Every English
   dictionary reads `en_shared`'s built files this way.
 
