@@ -100,6 +100,7 @@ ignorePaths:
   - source-files.txt
   - snapshots/**
 useGitignore: true
+enableGlobDot: true
 overrides:
   - filename: '**/nl_NL/**'
     language: en,nl
