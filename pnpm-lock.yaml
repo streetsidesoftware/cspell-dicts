@@ -725,7 +725,7 @@ importers:
         version: 6.0.0
       yeoman-environment:
         specifier: ^7.0.0
-        version: 7.0.0(@types/node@26.6.2)(@yeoman/adapter@5.0.0(@types/node@26.6.2))(@yeoman/types@1.11.1(@types/node@26.6.2)(@yeoman/adapter@5.0.0(@types/node@26.6.2))(mem-fs@4.1.5(@types/node@26.6.2)(@types/vinyl@2.0.12)))(mem-fs@4.1.5(@types/node@26.6.2)(@types/vinyl@2.0.12))(supports-color@9.4.0)
+        version: 7.1.0(@types/node@26.6.2)(@yeoman/adapter@5.0.0(@types/node@26.6.2))(@yeoman/types@1.11.1(@types/node@26.6.2)(@yeoman/adapter@5.0.0(@types/node@26.6.2))(mem-fs@4.1.5(@types/node@26.6.2)(@types/vinyl@2.0.12)))(mem-fs@4.1.5(@types/node@26.6.2)(@types/vinyl@2.0.12))(supports-color@9.4.0)
       yeoman-generator:
         specifier: ^9.2.0
         version: 9.2.0(@types/node@26.6.2)(@yeoman/types@1.11.1(@types/node@26.6.2)(@yeoman/adapter@5.0.0(@types/node@26.6.2))(mem-fs@4.1.5(@types/node@26.6.2)(@types/vinyl@2.0.12)))(mem-fs@4.1.5(@types/node@26.6.2)(@types/vinyl@2.0.12))(supports-color@9.4.0)
@@ -1629,9 +1629,6 @@ packages:
 
   '@types/ms@2.1.0':
     resolution: {integrity: sha512-GsCCIZDE/p3i96vtEqx+7dBUGXrc7zeSK3wwPHIaRThS+9OhWIXRqzs4d6k1SVU8g91DrNRWxWUGhp5KXQb2VA==}
-
-  '@types/node@26.6.1':
-    resolution: {integrity: sha512-VqGJBMCtdhqkBUCcBLvywI0NJ+KLuVzgNnlBUNFOQjqVxzo2lxLUNg1DSey8+u2u6ktswSAxg+s68QLzWHNOuA==}
 
   '@types/node@26.6.2':
     resolution: {integrity: sha512-X1P21scMv4zGKLYqjdGjaKa7COa0RKVYYZZN/NfvLQ1JegxFhdhpZG/Lyn8AXx6CDUavKAd11v6BvfpkDByK8g==}
@@ -3971,10 +3968,6 @@ packages:
     resolution: {integrity: sha512-hVDIBwsRruT73PbK7uP5ebUt+ezEtCmzZz3F59BSr2F6OVFnJ/6h8liuvdLrQ88Xmnk6/+xGGuq+pG9WwTuy3A==}
     engines: {node: ^20.17.0 || >=22.9.0}
 
-  verkit@0.4.0:
-    resolution: {integrity: sha512-sXMwN6DMHeouPfCxkxWkKAmxphWKEenHYY5H1nIBzU3PmDsmJp6kBXJdshjVdpMZuWCmL9SH7KFRx29AylpP6g==}
-    engines: {node: '>=18.12.0'}
-
   verkit@0.4.1:
     resolution: {integrity: sha512-mMVzj0TXExtVdlDEq+Mzp0eyOuyznNpFobNM3uAqe3HVm/Ps2c+u17BligMkZjZCA6EiXpoon8iRTer3iu40SQ==}
     engines: {node: '>=18.12.0'}
@@ -4115,8 +4108,8 @@ packages:
     resolution: {integrity: sha512-2rAgRKu54VsHkqI0/tYkmluGXHD4KW7yZoycuqDQ15QOTnc2VVfy0nN/1eMhnQLO00A+dwtK20xuCnc1YGeUyg==}
     engines: {node: ^20.19.0 || ^22.12.0 || >=23}
 
-  yeoman-environment@7.0.0:
-    resolution: {integrity: sha512-QZUZ/J2WudYjDDFSqUwH7OvUmykyrwTD9+Z1/OmG+ZJYy0ZDjIv9UNq9FHn3m9UW4fGjy1lWEsjl3BwzyEPNyg==}
+  yeoman-environment@7.1.0:
+    resolution: {integrity: sha512-ulGL1/KYWVjSbQkcogDYDQIj1ZSYthkB8A9dDeTjOR19eB2sQqAX+NEziqmtXkXWeQ4W/Q6qX/K66OU7KxBdNQ==}
     engines: {node: ^22.18.0 || >=24.11.0}
     hasBin: true
     peerDependencies:
@@ -4749,7 +4742,7 @@ snapshots:
       git-url-parse: 16.1.0
       handlebars: 4.7.9
       npm-package-arg: 13.0.2
-      verkit: 0.4.0
+      verkit: 0.4.1
       write-json-file: 7.0.0
       zeptomatch: 2.1.0
     transitivePeerDependencies:
@@ -5083,10 +5076,6 @@ snapshots:
 
   '@types/ms@2.1.0': {}
 
-  '@types/node@26.6.1':
-    dependencies:
-      undici-types: 8.9.0
-
   '@types/node@26.6.2':
     dependencies:
       undici-types: 8.9.0
@@ -5106,7 +5095,7 @@ snapshots:
   '@types/vinyl@2.0.12':
     dependencies:
       '@types/expect': 1.20.4
-      '@types/node': 26.6.1
+      '@types/node': 26.6.2
 
   '@typescript/typescript-aix-ppc64@7.0.2':
     optional: true
@@ -7661,8 +7650,6 @@ snapshots:
 
   validate-npm-package-name@7.0.2: {}
 
-  verkit@0.4.0: {}
-
   verkit@0.4.1: {}
 
   version-range@4.15.0: {}
@@ -7814,7 +7801,7 @@ snapshots:
       y18n: 5.0.8
       yargs-parser: 22.0.0
 
-  yeoman-environment@7.0.0(@types/node@26.6.2)(@yeoman/adapter@5.0.0(@types/node@26.6.2))(@yeoman/types@1.11.1(@types/node@26.6.2)(@yeoman/adapter@5.0.0(@types/node@26.6.2))(mem-fs@4.1.5(@types/node@26.6.2)(@types/vinyl@2.0.12)))(mem-fs@4.1.5(@types/node@26.6.2)(@types/vinyl@2.0.12))(supports-color@9.4.0):
+  yeoman-environment@7.1.0(@types/node@26.6.2)(@yeoman/adapter@5.0.0(@types/node@26.6.2))(@yeoman/types@1.11.1(@types/node@26.6.2)(@yeoman/adapter@5.0.0(@types/node@26.6.2))(mem-fs@4.1.5(@types/node@26.6.2)(@types/vinyl@2.0.12)))(mem-fs@4.1.5(@types/node@26.6.2)(@types/vinyl@2.0.12))(supports-color@9.4.0):
     dependencies:
       '@yeoman/adapter': 5.0.0(@types/node@26.6.2)
       '@yeoman/conflicter': 4.2.0(@types/node@26.6.2)(@yeoman/types@1.11.1(@types/node@26.6.2)(@yeoman/adapter@5.0.0(@types/node@26.6.2))(mem-fs@4.1.5(@types/node@26.6.2)(@types/vinyl@2.0.12)))(mem-fs@4.1.5(@types/node@26.6.2)(@types/vinyl@2.0.12))(supports-color@9.4.0)
