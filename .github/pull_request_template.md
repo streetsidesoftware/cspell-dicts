@@ -1,27 +1,26 @@
-<!---
-name: Add to Dictionary
-about: PR for adding (to) a dictionary
-title: 'fix: '
-labels: dictionary
---->
+<!--
+  Title: a Conventional Commit, such as `fix(companies): add Sourcegraph`.
+  See https://github.com/streetsidesoftware/cspell-dicts/blob/main/docs/commits-and-pull-requests.md
+-->
 
-# Add/Fix Dictionary
+## Summary
 
-Dictionary: _dictionary_
+<!-- One or two sentences: what changed and why. -->
 
-## Description
+## Dictionary
 
-_description of change_
+<!-- The package directory, such as `dictionaries/python`. List each one if there are several. -->
 
-## References
+## Words
 
-- _Any source references._
+<!--
+  Which words were added, removed, or corrected, and a source for each word that isn't obvious
+  (documentation, a dictionary, a project's website).
+  For a new dictionary or an upstream update, describe the source and its license instead.
+-->
 
 ## Checklist
 
 - [ ] By submitting this pull-request, you agree to follow our [Code of Conduct](https://github.com/streetsidesoftware/cspell-dicts/blob/main/CODE_OF_CONDUCT.md)
-- [ ] Verify that the title starts with the correct prefix:
-  - `fix:` - for minor changes like adding words or fixing spelling issues.
-  - `feat:` - for a significant change like adding a whole new set of words to a dictionary.
-  - `feat!:` - for breaking changes, like file format or licensing changes.
-  - `chore:` - for changes that do not impact the content of dictionaries.
+- [ ] The title follows [Commits and pull requests](https://github.com/streetsidesoftware/cspell-dicts/blob/main/docs/commits-and-pull-requests.md): the type, and the package directory as scope.
+- [ ] Changes are in `src/`, sorted, and the rebuilt `dict/` files are committed too.
