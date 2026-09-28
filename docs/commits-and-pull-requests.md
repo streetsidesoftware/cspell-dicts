@@ -30,13 +30,13 @@ commit message.
 
   Removing a genuine misspelling is a plain `fix:`, even though users may see new issues: finding them is the point.
 
-- `perf:`: a change users would notice as faster, with no change in what gets flagged.
 - `revert:`: undoes a merged commit.
 - `docs:`: documentation only, including README text outside a package's words or settings.
 - `chore:`: everything else that doesn't change a published dictionary: repo tooling, scripts, the generator, lint
   config, Claude Code skills and settings.
 - `ci:`: GitHub Actions and workflows, and dependency updates.
-- `refactor:`, `style:`, `test:`, `build:`: internal changes of those kinds, with no change in what gets flagged.
+- `perf:`, `refactor:`, `style:`, `test:`, `build:`: internal changes of those kinds, with no change in what gets
+  flagged. They are hidden from the changelog like `chore:`.
 
 The bot PRs set their own types. Don't change them:
 
@@ -48,9 +48,9 @@ The bot PRs set their own types. Don't change them:
 
 `changelog-sections` in `scripts/gen-release-please-config.jq` decides this.
 
-- **Shown:** `feat`, `feature`, `fix`, `perf`, `revert`, `refactor`, `style`, `test`, `build`, and commits with no
-  type. `feature:` is listed under Features too, but use `feat:`.
-- **Hidden:** `chore`, `docs`, `ci`.
+- **Shown:** `feat`, `feature`, `fix`, `revert`, and commits with no type. `feature:` is listed under Features too, but
+  use `feat:`.
+- **Hidden:** `chore`, `docs`, `ci`, `perf`, `refactor`, `style`, `test`, `build`.
 
 If a PR merged under the wrong type, see [Releasing](./releasing.md#fixing-a-changelog-entry-after-merge).
 
