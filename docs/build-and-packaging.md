@@ -30,6 +30,11 @@ This is a pnpm workspace. pnpm is the only package manager allowed: the root `pr
 Write repo scripts in TypeScript, as `.mts` files run with `node`, such as `scripts/gen-release-please-config.mts`. Node
 runs them directly, without a build step. Don't add shell scripts or `jq` filters: contributors build on Windows too.
 
+- `pnpm run check:types` type-checks `scripts/` and `dictionaries/*/scripts/` with the root `tsconfig.json`. It also
+  rejects syntax that Node can't run without a build, such as `enum`. `pnpm run lint-ci` runs it.
+- Shared dev tools, such as `typescript`, `@types/node` and `@tsconfig/node22`, are declared only in the root
+  `package.json`.
+
 ## A dictionary package
 
 A typical `dictionaries/<name>/` holds:
