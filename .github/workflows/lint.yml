@@ -2,18 +2,22 @@ name: Lint
 on:
   pull_request:
     paths:
-      - .prettier*"
+      - '.prettier*'
       - '**/*.js'
       - '**/*.mjs'
+      - '**/*.ts'
+      - '**/*.mts'
       - '**/*.md'
       - '**/*.json'
       - '**/*.yml'
       - '**/*.yaml'
   push:
     paths:
-      - .prettier*"
+      - '.prettier*'
       - '**/*.js'
       - '**/*.mjs'
+      - '**/*.ts'
+      - '**/*.mts'
       - '**/*.md'
       - '**/*.json'
       - '**/*.yml'
@@ -50,4 +54,4 @@ jobs:
             cspell-cache-${{ runner.os }}-
 
       - run: pnpm i
-      - run: pnpm run lint
+      - run: pnpm run lint-ci
