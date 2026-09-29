@@ -9,10 +9,6 @@ export async function app(program = defaultCommand): Promise<Command> {
 }
 
 function commandLookUp(): Command {
-    interface Options {
-        output?: string;
-    }
-
     const command = new Command('lookup')
         .description('Lookup English Words')
         .arguments('<words...>')

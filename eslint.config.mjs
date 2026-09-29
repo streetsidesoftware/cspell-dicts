@@ -1,8 +1,22 @@
 import js from '@eslint/js';
 import globals from 'globals';
+import tsEslint from 'typescript-eslint';
+
+const tsFiles = ['**/*.ts', '**/*.mts', '**/*.cts'];
+
+const noUnusedVarsOptions = {
+    args: 'all',
+    argsIgnorePattern: '^_',
+    caughtErrors: 'all',
+    caughtErrorsIgnorePattern: '^_',
+    destructuredArrayIgnorePattern: '^_',
+    varsIgnorePattern: '^_',
+    ignoreRestSiblings: true,
+};
 
 export default [
-    { ignores: ['.claude/worktrees/**'] },
+    // Synced upstream type definitions, such as dictionaries/*/src/hunspell/index.d.ts.
+    { ignores: ['.claude/worktrees/**', 'dictionaries/*/src/**/*.d.ts'] },
     js.configs.recommended,
     {
         languageOptions: {
@@ -25,18 +39,15 @@ export default [
     {
         rules: {
             // Note: you must disable the base rule as it can report incorrect errors
-            'no-unused-vars': [
-                'error',
-                {
-                    args: 'all',
-                    argsIgnorePattern: '^_',
-                    caughtErrors: 'all',
-                    caughtErrorsIgnorePattern: '^_',
-                    destructuredArrayIgnorePattern: '^_',
-                    varsIgnorePattern: '^_',
-                    ignoreRestSiblings: true,
-                },
-            ],
+            'no-unused-vars': ['error', noUnusedVarsOptions],
+        },
+    },
+    ...tsEslint.configs.recommended.map((config) => ({ ...config, files: tsFiles })),
+    {
+        files: tsFiles,
+        rules: {
+            'no-unused-vars': 'off',
+            '@typescript-eslint/no-unused-vars': ['error', noUnusedVarsOptions],
         },
     },
 ];
