@@ -202,8 +202,8 @@ function expandStringOrStringArray(s: string | string[] | undefined): string[] |
     return typeof s === 'string' ? s.split(',').map((l) => l.trim()) : s;
 }
 
-function dedupe<T>(a: T[] | undefined): T[] {
-    if (Array.isArray(a)) return a;
+function dedupe<T>(a: T[] | undefined): T[] | undefined {
+    if (!Array.isArray(a)) return a;
     return [...new Set<T>(a)];
 }
 
