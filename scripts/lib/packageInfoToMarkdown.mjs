@@ -94,7 +94,7 @@ function listDictionaryIds(packages) {
         const locales = dict.locales ? `${dict.locales.sort().join('<br>')}` : '-';
         const fileTypes = dict.fileTypes ? `${take(4, dict.fileTypes.sort()).join('<br>')}` : '-';
         // | Name | Description | Locale | File Type |
-        md += `| [\`${dict.name}\`](${dict.pkg.dir})${cspell}${enabled} | ${dict.description} | ${locales} | ${fileTypes} |\n`;
+        md += `| [\`${dict.name}\`](../${dict.pkg.dir})${cspell}${enabled} | ${dict.description} | ${locales} | ${fileTypes} |\n`;
     }
 
     md += unindent`
@@ -142,7 +142,7 @@ function formatPackageRow(pkg) {
               .join('<br>');
 
     // | Package | Name | Dictionary IDs |
-    return `| [${packageName}](./${dir}#readme)${pkg.cspell ? '<sup>1</sup>' : ''} | ${pkg.name} | ${dictNames} |`;
+    return `| [${packageName}](../${dir}#readme)${pkg.cspell ? '<sup>1</sup>' : ''} | ${pkg.name} | ${dictNames} |`;
 }
 
 /**
@@ -163,7 +163,7 @@ function formatCategory(category, packages) {
  * @returns {string}
  */
 function formatPackage(pkg) {
-    return `- [${pkg.name}](${pkg.dir}) - ${pkg.description} ${pkg.cspell ? '<sup>1</sup>' : ''} ${pkg.hasEnabledByDefault ? '<sup>2</sup>' : ''}`;
+    return `- [${pkg.name}](../${pkg.dir}) - ${pkg.description} ${pkg.cspell ? '<sup>1</sup>' : ''} ${pkg.hasEnabledByDefault ? '<sup>2</sup>' : ''}`;
 }
 
 /**
