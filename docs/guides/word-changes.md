@@ -23,6 +23,8 @@ pnpm run prepare:dictionaries
   `coding-terms.txt` and `software-tools.txt`.
 - An English word valid in every English variant goes in `dictionaries/en_shared`, not in `en_US`, `en_GB`, or the
   others. A word for one variant goes in that variant's dictionary, such as `dictionaries/en_AU`.
+- The English dictionaries are only for widely known words, that most English readers would understand. Jargon from one
+  field goes in that field's dictionary, such as `gaming-terms`, even when that dictionary isn't turned on by default.
 - Other general words go in the closest general dictionary, such as `companies` or `medicalterms`.
 
 To see which dictionaries already have a word, run this from the repo root:
