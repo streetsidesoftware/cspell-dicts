@@ -16,7 +16,8 @@ pnpm run prepare:dictionaries      # build what every package needs before tests
 pnpm test                          # every package's test script; slow
 pnpm run sort                      # sort the source word lists in sort-source.config.json
 pnpm run lint                      # eslint --fix, prettier -w, then cspell
-pnpm run lint-ci                   # the same checks without fixing
+pnpm run lint-ci                   # the same checks without fixing, plus a type check
+pnpm run check:types               # type-check TypeScript scripts (root tsconfig.json)
 pnpm run build:readme              # regenerate README sections and static/ files
 pnpm run check-dirty               # fails if the working tree has changes
 pnpm exec cspell trace --only-found <word>   # which dictionaries have a word
