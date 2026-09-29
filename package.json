@@ -5,8 +5,8 @@
   "packageManager": "pnpm@11.21.0+sha512.521705bce689924eac72f5a3587122f362689ef6571e55ba80076fd637c11132ecffada26fad4ea79c485bfddbfd3d5a2a5b05805a77e893de71ec8a6cca3bb1",
   "scripts": {
     "test": "pnpm -r run --workspace-concurrency 2 --stream test",
-    "lint": "pnpm run lint:fix && cspell --no-progress",
-    "lint-ci": "pnpm run check:release-please-config && eslint . && pnpm run check:types && prettier -c . && cspell --no-progress",
+    "lint": "pnpm run lint:fix && pnpm run check:types && cspell --no-progress",
+    "lint-ci": "pnpm run check:release-please-config && eslint . && prettier -c . && pnpm run check:types && cspell --no-progress",
     "lint:fix": "pnpm run gen:release-please-config && eslint --fix . && prettier -w .",
     "build": "pnpm run setup && pnpm run build:conditional",
     "build:all": "pnpm -r run --stream --workspace-concurrency 2 build --no-bail",
