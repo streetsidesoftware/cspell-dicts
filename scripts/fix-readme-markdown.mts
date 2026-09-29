@@ -1,10 +1,9 @@
 #!/usr/bin/env node
 
-// ts-check
 import fs from 'node:fs/promises';
 import { pathToFileURL, fileURLToPath } from 'node:url';
 
-import { findDictionaryPackages } from './lib/find-dictionary-packages.mjs';
+import { findDictionaryPackages } from './lib/find-dictionary-packages.mts';
 
 async function run() {
     const packages = await findDictionaryPackages();

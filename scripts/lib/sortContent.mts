@@ -2,32 +2,20 @@ const compare = Intl.Collator('en-US').compare;
 
 /**
  * Sort the content of a source file, keeping comments together and sorting the rest.
- * @param {string} content
- * @returns {string}
  */
-export function sortSourceContent(content) {
+export function sortSourceContent(content: string): string {
     const lines = content.trim().split('\n');
-    const groups = [];
+    const groups: string[][] = [];
     let group = 0;
 
-    /**
-     *
-     * @param {string} line
-     * @returns {void}
-     */
-    function addLineToGroup(line) {
+    function addLineToGroup(line: string): void {
         line = line.trim();
         if (!line) return;
         groups[group] = groups[group] || [];
         groups[group].push(line);
     }
 
-    /**
-     *
-     * @param {string} line
-     * @returns {void}
-     */
-    function addLine(line) {
+    function addLine(line: string): void {
         if (line.startsWith('#')) {
             // One comment per group.
             if (groups[group]) {
@@ -41,22 +29,11 @@ export function sortSourceContent(content) {
         }
     }
 
-    /**
-     *
-     * @param {string} a
-     * @returns
-     */
-    function removeCompoundPrefix(a) {
+    function removeCompoundPrefix(a: string): string {
         return a.replaceAll('*', '').replaceAll('+', '');
     }
 
-    /**
-     *
-     * @param {string} a
-     * @param {string} b
-     * @returns {number}
-     */
-    function compareWords(a, b) {
+    function compareWords(a: string, b: string): number {
         return compare(removeCompoundPrefix(a), removeCompoundPrefix(b)) || compare(a, b);
     }
 

@@ -1,3 +1,5 @@
+#!/usr/bin/env node
+
 import shell from 'shelljs';
 
 const usage = `\
@@ -16,7 +18,7 @@ if (process.argv.length < 3 || process.argv[2] === '--help' || process.argv[2] =
 
 const commands = process.argv.slice(2);
 
-let current = shell.exec(commands.shift(), { silent: true });
+let current = shell.exec(commands.shift() ?? '', { silent: true });
 let exitCode = current.code;
 
 for (let i = 0; i < commands.length && !exitCode; i++) {
@@ -31,6 +33,6 @@ for (let i = 0; i < commands.length && !exitCode; i++) {
 const stdout = `${current.stdout}`.trim();
 const stderr = `${current.stderr}`.trim();
 
-stdout && console.log('%s', stdout);
-stderr && console.error('%s', stderr);
+if (stdout) console.log('%s', stdout);
+if (stderr) console.error('%s', stderr);
 process.exit(exitCode);

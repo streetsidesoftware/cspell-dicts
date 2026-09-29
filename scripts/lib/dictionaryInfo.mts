@@ -1,65 +1,78 @@
-// ts-check
 import fs from 'node:fs/promises';
 import path from 'node:path/posix';
 
+import type { CSpellSettings, RegExpPatternDefinition } from '@cspell/cspell-types';
 import bundledWithCSpell from '@cspell/cspell-bundled-dicts';
 import { readConfigFile, resolveConfigFileImports } from 'cspell-lib';
 import json5 from 'json5';
 
 const rootUrl = new URL('../../', import.meta.url);
 
-/**
- * @typedef {Awaited<ReturnType<import('cspell-lib').readConfigFile>>} CSpellConfigFile
- * @typedef {import('@cspell/cspell-types').RegExpPatternDefinition} PatternDefinition
- * @typedef {import('@cspell/cspell-types').CSpellSettings} CSpellSettings
- */
+type CSpellConfigFile = Awaited<ReturnType<typeof readConfigFile>>;
 
 /**
  * Locale/FileType Pair.
- * @typedef {object} LocaleFileTypePair
- * @property {string} locale The locale of the dictionary.
- * @property {string} fileType The file type of the dictionary.
  */
+export interface LocaleFileTypePair {
+    /** The locale of the dictionary. */
+    locale: string;
+    /** The file type of the dictionary. */
+    fileType: string;
+}
 
 /**
  * Dictionary information.
- * @typedef {object} DictionaryInfo
- * @property {string} name The name of the dictionary.
- * @property {string} [description] The description of the dictionary.
- * @property {string[]} [locales] The locales supported by the dictionary.
- * @property {string[]} [fileTypes] The dictionary is enabled for the following file types.
- * @property {LocaleFileTypePair[]} [localeFileTypes] The dictionary is enabled for the following locale/file type pairs.
- * @property {boolean} [enabled] The dictionary is enabled by default.
- * @property {boolean} [external] The dictionary is defined in an external package.
  */
+export interface DictionaryInfo {
+    /** The name of the dictionary. */
+    name: string;
+    /** The description of the dictionary. */
+    description?: string | undefined;
+    /** The locales supported by the dictionary. */
+    locales?: string[] | undefined;
+    /** The dictionary is enabled for the following file types. */
+    fileTypes?: string[] | undefined;
+    /** The dictionary is enabled for the following locale/file type pairs. */
+    localeFileTypes?: LocaleFileTypePair[] | undefined;
+    /** The dictionary is enabled by default. */
+    enabled?: boolean | undefined;
+    /** The dictionary is defined in an external package. */
+    external?: boolean | undefined;
+}
 
 /**
  * Dictionary Package information.
- * @typedef {object} DictionaryPackageInfo
- * @property {string} name The name of the dictionary.
- * @property {string} version The version of the package.
- * @property {string} packageName The name of the package.
- * @property {string} dir The directory containing the dictionary package.
- * @property {boolean} cspell The dictionary package is bundled with cspell.
- * @property {string} description The description of the package.
- * @property {string[]} categories The category of the package. (e.g. programming, natural-language)
- * @property {DictionaryInfo[]} dictionaries The dictionaries in the package.
- * @property {boolean} [isBundle] The dictionary package is a bundle of other packages.
- * @property {boolean} [hasEnabledByDefault] The dictionary package has dictionaries enabled by default.
- * @property {PatternDefinition[]} [patterns] The patterns defined by the dictionary.
  */
+export interface DictionaryPackageInfo {
+    /** The name of the dictionary. */
+    name: string;
+    /** The version of the package. */
+    version: string;
+    /** The name of the package. */
+    packageName: string;
+    /** The directory containing the dictionary package. */
+    dir: string;
+    /** The dictionary package is bundled with cspell. */
+    cspell: boolean;
+    /** The description of the package. */
+    description: string;
+    /** The category of the package. (e.g. programming, natural-language) */
+    categories: string[];
+    /** The dictionaries in the package. */
+    dictionaries: DictionaryInfo[];
+    /** The dictionary package is a bundle of other packages. */
+    isBundle?: boolean | undefined;
+    /** The dictionary package has dictionaries enabled by default. */
+    hasEnabledByDefault?: boolean | undefined;
+    /** The patterns defined by the dictionary. */
+    patterns?: RegExpPatternDefinition[] | undefined;
+}
 
-/** @type {CSpellSettings} */
-const cspellBundle = bundledWithCSpell;
+const cspellBundle: CSpellSettings = bundledWithCSpell;
 
 const defaultCSpellImports = new Set(extractImports(cspellBundle));
 
-/**
- *
- * @param {URL} dictURL
- * @returns {Promise<DictionaryPackageInfo | undefined>}
- */
-export async function fetchDictionaryInfo(dictURL) {
+export async function fetchDictionaryInfo(dictURL: URL): Promise<DictionaryPackageInfo | undefined> {
     dictURL = new URL('./', dictURL);
     const pkgUrl = new URL('package.json', dictURL);
 
@@ -70,8 +83,7 @@ export async function fetchDictionaryInfo(dictURL) {
     if (!extConfigFile) {
         return undefined;
     }
-    /** @type {CSpellSettings} */
-    const cspellExt = extConfigFile.settings;
+    const cspellExt: CSpellSettings = extConfigFile.settings;
     const isBundle = extractImports(cspellExt).filter((i) => i.startsWith('@cspell/')).length > 2 || undefined;
     // Remove package imports from the list of imports.
     extConfigFile.settings.import = Array.isArray(extConfigFile.settings.import)
@@ -96,26 +108,24 @@ export async function fetchDictionaryInfo(dictURL) {
     };
 }
 
-async function readConfigFileOrUndefined(cspellExtUrl) {
+async function readConfigFileOrUndefined(cspellExtUrl: URL): Promise<CSpellConfigFile | undefined> {
     try {
         return await readConfigFile(cspellExtUrl);
     } catch (e) {
-        if (e.code === 'ENOENT' || e.cause?.code === 'ENOENT') {
+        const err = e as NodeJS.ErrnoException & { cause?: { code?: string } };
+        if (err.code === 'ENOENT' || err.cause?.code === 'ENOENT') {
             return undefined;
         }
-        console.error(`Error reading config file: ${cspellExtUrl} - ${e.message} %o`, e);
+        console.error(`Error reading config file: ${cspellExtUrl} - ${err.message} %o`, e);
         throw e;
     }
 }
 
-/**
- * @param {CSpellSettings} cspellSettings
- * @returns {DictionaryInfo[]}
- */
-export function extractDictionaryInfo(cspellSettings) {
+export function extractDictionaryInfo(cspellSettings: CSpellSettings): DictionaryInfo[] {
     const dictionaryDefs = cspellSettings.dictionaryDefinitions || [];
-    /** @type {Map<string, DictionaryInfo>} */
-    const dictMap = new Map(dictionaryDefs.map((d) => [d.name, { name: d.name, description: d.description }]));
+    const dictMap = new Map<string, DictionaryInfo>(
+        dictionaryDefs.map((d) => [d.name, { name: d.name, description: d.description }]),
+    );
 
     for (const langSetting of cspellSettings.languageSettings || []) {
         const { languageId, locale, dictionaries = [] } = langSetting;
@@ -159,12 +169,7 @@ export function extractDictionaryInfo(cspellSettings) {
         }
     }
 
-    /**
-     *
-     * @param {DictionaryInfo} d
-     * @returns {DictionaryInfo}
-     */
-    function cleanUpDict(d) {
+    function cleanUpDict(d: DictionaryInfo): DictionaryInfo {
         d.locales = dedupe(d.locales)?.sort();
         d.fileTypes = dedupe(d.fileTypes)?.sort();
         const selectors = d.localeFileTypes?.map((lft) => `${lft.locale}/${lft.fileType}`) || [];
@@ -186,56 +191,35 @@ export function extractDictionaryInfo(cspellSettings) {
 
 /**
  * Read a json file.
- * @param {URL} pkgUrl
- * @returns {Promise<any>}
  */
-async function readJson(pkgUrl) {
+// eslint-disable-next-line @typescript-eslint/no-explicit-any
+async function readJson(pkgUrl: URL): Promise<any> {
     const text = await fs.readFile(pkgUrl, 'utf-8');
     return json5.parse(text);
 }
 
-/**
- *
- * @param {string | string[] | undefined} s
- * @returns {string[] | undefined}
- */
-function expandStringOrStringArray(s) {
+function expandStringOrStringArray(s: string | string[] | undefined): string[] | undefined {
     return typeof s === 'string' ? s.split(',').map((l) => l.trim()) : s;
 }
 
-function dedupe(a) {
+function dedupe<T>(a: T[] | undefined): T[] {
     if (Array.isArray(a)) return a;
-    return [...new Set(a)];
+    return [...new Set<T>(a)];
 }
 
-/**
- *
- * @param {CSpellSettings} cspellExt
- * @returns {string[]}
- */
-function extractImports(cspellExt) {
+function extractImports(cspellExt: CSpellSettings): string[] {
     const imports = (typeof cspellExt.import === 'string' ? [cspellExt.import] : cspellExt.import) || [];
     const packageNames = imports.map((i) => i.replace('/cspell-ext.json', ''));
     return packageNames;
 }
 
-/**
- * @param {Record<string, any>} pkgJson
- * @param {DictionaryInfo[]} dictionaries
- * @returns {string[]}
- */
-function extractCategories(pkgJson, dictionaries) {
-    const pkgCategories = Array.isArray(pkgJson.categories) ? pkgJson.categories : undefined;
+function extractCategories(pkgJson: Record<string, unknown>, dictionaries: DictionaryInfo[]): string[] {
+    const pkgCategories = Array.isArray(pkgJson.categories) ? (pkgJson.categories as string[]) : undefined;
     return pkgCategories || extractCategoriesFromDictionaries(dictionaries);
 }
 
-/**
- *
- * @param {DictionaryInfo[]} dictionaries
- * @returns {string[]}
- */
-function extractCategoriesFromDictionaries(dictionaries) {
-    const categories = new Set();
+function extractCategoriesFromDictionaries(dictionaries: DictionaryInfo[]): string[] {
+    const categories = new Set<string>();
     for (const dict of dictionaries) {
         const programming = dict.fileTypes?.length;
         const naturalLanguage = dict.locales?.length;

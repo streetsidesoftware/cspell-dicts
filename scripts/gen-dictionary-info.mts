@@ -1,15 +1,14 @@
 #!/usr/bin/env node
 
-// ts-check
 import fs from 'node:fs/promises';
 import { pathToFileURL, fileURLToPath } from 'node:url';
 
 import { format } from 'prettier';
 
-import { findDictionaryPackages } from './lib/find-dictionary-packages.mjs';
-import { fetchDictionaryInfo } from './lib/dictionaryInfo.mjs';
-import { packageInfoToMarkdown } from './lib/packageInfoToMarkdown.mjs';
-import { writeStaticFilesForPackages } from './lib/gen-dict-static-files.mjs';
+import { findDictionaryPackages } from './lib/find-dictionary-packages.mts';
+import { fetchDictionaryInfo } from './lib/dictionaryInfo.mts';
+import { packageInfoToMarkdown } from './lib/packageInfoToMarkdown.mts';
+import { writeStaticFilesForPackages } from './lib/gen-dict-static-files.mts';
 
 const rootUrl = new URL('../', import.meta.url);
 

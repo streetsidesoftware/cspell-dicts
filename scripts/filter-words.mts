@@ -1,21 +1,19 @@
 #!/usr/bin/env node
 
-// ts-check
-
 import { parseArgs } from 'node:util';
 
 import { readFileText } from 'cspell-io';
 import {} from 'cspell-dictionary';
-import { decodeTrie, parseDictionary } from 'cspell-trie-lib';
+import { decodeTrie, type ITrie, parseDictionary } from 'cspell-trie-lib';
 
-async function readWordList(fileName) {
+async function readWordList(fileName: string): Promise<ITrie> {
     const file = await readFileText(fileName);
     const trie = /\.trie\b/.test(fileName) ? decodeTrie(file) : parseDictionary(file);
     return trie;
 }
 
-function lowerCaseMap(trie) {
-    const knownWords = new Map();
+function lowerCaseMap(trie: ITrie): Map<string, string[]> {
+    const knownWords = new Map<string, string[]>();
     for (const word of trie.words()) {
         knownWords.set(word, [word]);
         const w2 = word.toLowerCase();
@@ -31,13 +29,13 @@ function lowerCaseMap(trie) {
     return knownWords;
 }
 
-async function fixCase(inputFile, sourceFile) {
+async function fixCase(inputFile: string, sourceFile: string) {
     const inputTrie = await readWordList(inputFile);
     const sourceTrie = await readWordList(sourceFile);
 
     const knownWords = lowerCaseMap(sourceTrie);
 
-    const missingWords = new Set();
+    const missingWords = new Set<string>();
 
     for (const word of inputTrie.words()) {
         if (word.startsWith('~')) continue;
@@ -58,18 +56,13 @@ async function fixCase(inputFile, sourceFile) {
     }
 }
 
-/**
- *
- * @param {string} inputFile
- * @param {string} filterFile
- */
-async function filterWordFiles(inputFile, filterFile) {
+async function filterWordFiles(inputFile: string, filterFile: string) {
     const inputTrie = await readWordList(inputFile);
     const filterTrie = await readWordList(filterFile);
 
     const knownWords = lowerCaseMap(filterTrie);
 
-    const missingWords = new Set();
+    const missingWords = new Set<string>();
 
     for (const word of inputTrie.words()) {
         if (word.startsWith('~')) continue;

@@ -3,11 +3,21 @@
 import { globby } from 'globby';
 import { program } from 'commander';
 import { promises as fs } from 'fs';
-import { sortSourceContent } from './lib/sortContent.mjs';
+import { sortSourceContent } from './lib/sortContent.mts';
 
-let info = console.log;
+const info = console.log;
 
-async function processFile(filename, options) {
+interface ProcessOptions {
+    dryRun?: boolean;
+}
+
+interface FindFilesOptions {
+    ignore?: string[];
+    onlyFiles?: boolean;
+    cwd?: string;
+}
+
+async function processFile(filename: string, options: ProcessOptions) {
     const content = await fs.readFile(filename, 'utf8');
 
     if (!content.trim()) return;
@@ -29,13 +39,13 @@ async function processFile(filename, options) {
     }
 }
 
-function isAllowedFileType(filename) {
+function isAllowedFileType(filename: string): boolean {
     return filename.endsWith('.txt') && /src[/\\].*\.txt$/.test(filename);
 }
 
 const excludes = ['node_modules'];
 
-async function findFiles(globs, options) {
+async function findFiles(globs: string[], options?: FindFilesOptions): Promise<string[]> {
     const globOptions = {
         ignore: [...excludes, ...(options?.ignore || [])],
         onlyFiles: options?.onlyFiles ?? true,
@@ -55,7 +65,7 @@ program
     .option('-c, --config <file>', 'Config file')
     .option('--dry-run', 'Dry Run mode')
     .option('-x, --exclude <patterns...>', 'Exclude pattern')
-    .action(async (globs, options) => {
+    .action(async (globs: string[], options: ProcessOptions & { config?: string; exclude?: string[] }) => {
         // console.log('%o', options);
         const ignore = options.exclude || [];
         if (options.config) {

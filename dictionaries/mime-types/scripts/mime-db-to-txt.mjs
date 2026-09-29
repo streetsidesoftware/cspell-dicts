@@ -2,7 +2,7 @@
 
 import fs from 'node:fs/promises';
 import path from 'node:path';
-import { sortSourceContent } from 'cspell-dicts-scripts/lib/sortContent.mjs';
+import { sortSourceContent } from 'cspell-dicts-scripts/lib/sortContent.mts';
 
 const root = path.resolve(import.meta.dirname, '../');
 const mimeDbDir = path.resolve(root, 'src/mime-db/src');

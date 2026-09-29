@@ -5,15 +5,15 @@
   "private": true,
   "type": "module",
   "bin": {
-    "filter-words": "filter-words.mjs",
-    "fix-readme-markdown": "fix-readme-markdown.mjs",
-    "gen-dictionary-info": "gen-dictionary-info.mjs",
-    "merge": "merge.mjs",
-    "pipe-cmds": "pipe-cmds.mjs",
-    "sort-source": "sort-source.mjs",
-    "sync-github-files": "sync-github-files.mjs",
-    "update-contributors": "update-contributors.mjs",
-    "update-package-json": "update-package-json.mjs"
+    "filter-words": "filter-words.mts",
+    "fix-readme-markdown": "fix-readme-markdown.mts",
+    "gen-dictionary-info": "gen-dictionary-info.mts",
+    "merge": "merge.mts",
+    "pipe-cmds": "pipe-cmds.mts",
+    "sort-source": "sort-source.mts",
+    "sync-github-files": "sync-github-files.mts",
+    "update-contributors": "update-contributors.mts",
+    "update-package-json": "update-package-json.mts"
   },
   "scripts": {
     "test": "echo \"Error: no test specified\""
@@ -41,10 +41,12 @@
     "yaml": "^2.9.1"
   },
   "engines": {
-    "node": ">=18.0.0"
+    "node": ">=22.19"
   },
   "devDependencies": {
     "@cspell/cspell-types": "^10.3.5",
-    "@types/mdast": "^4.0.4"
+    "@types/globrex": "^0.1.4",
+    "@types/mdast": "^4.0.4",
+    "@types/shelljs": "^0.10.0"
   }
 }

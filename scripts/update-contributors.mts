@@ -1,16 +1,10 @@
 #!/usr/bin/env node
 
-// @ts-check
-
 import { execSync } from 'node:child_process';
 import { readFile, writeFile } from 'node:fs/promises';
 
-import { fetchContributors, normalizeContributors, sortContributorsByLogin } from './lib/fetch-contributors.mjs';
-
-/**
- * @typedef {Awaited<ReturnType<typeof fetchContributors>>} Contributors
- * @typedef {Contributors[0]} Contributor
- */
+import type { Contributor } from './lib/fetch-contributors.mts';
+import { fetchContributors, normalizeContributors, sortContributorsByLogin } from './lib/fetch-contributors.mts';
 
 const token = process.argv[2] || process.env['GITHUB_TOKEN'] || (await getToken());
 
@@ -22,21 +16,11 @@ async function getToken() {
     return stdout.trim();
 }
 
-/**
- *
- * @param {Contributor} contributor
- * @returns string
- */
-function contributorToMd(contributor) {
+function contributorToMd(contributor: Contributor): string {
     return `[<img alt="Contributor ${contributor.login}" src="${contributor.avatar_url}&size=128" width=64>](${contributor.html_url})`;
 }
 
-/**
- *
- * @param {Contributor[]} contributors
- * @returns string
- */
-function contributorsToMd(contributors) {
+function contributorsToMd(contributors: Contributor[]): string {
     return (
         '<!--- cspell:disable --->\n\n' +
         contributors.map(contributorToMd).join('\n') +
@@ -46,9 +30,8 @@ function contributorsToMd(contributors) {
 
 /**
  * Read the list previous of contributors.
- * @returns {Promise<Contributor[]>}
  */
-async function readContributors() {
+async function readContributors(): Promise<Contributor[]> {
     try {
         const content = await readFile(contributorsFileUrl, 'utf-8');
         return JSON.parse(content);
@@ -59,9 +42,8 @@ async function readContributors() {
 
 /**
  * Write the contributors to the output files.
- * @param {Contributor[]} contributors
  */
-async function writeContributors(contributors) {
+async function writeContributors(contributors: Contributor[]) {
     await writeFile(outputFileUrl, contributorsToMd(contributors));
     await writeFile(contributorsFileUrl, JSON.stringify(sortContributorsByLogin([...contributors]), null, 2) + '\n');
 }
