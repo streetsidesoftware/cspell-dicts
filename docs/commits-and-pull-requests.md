@@ -46,7 +46,7 @@ The bot PRs set their own types. Don't change them:
 
 ### Which types show in the changelog
 
-`changelog-sections` in `scripts/gen-release-please-config.jq` decides this.
+`changelog-sections` in `scripts/gen-release-please-config.mts` decides this.
 
 - **Shown:** `feat`, `feature`, `fix`, `revert`, and commits with no type. `feature:` is listed under Features too, but
   use `feat:`.

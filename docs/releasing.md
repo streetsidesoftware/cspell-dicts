@@ -18,11 +18,13 @@ See [Commits and pull requests](./commits-and-pull-requests.md) for which type t
 
 ## Rules
 
-- **`release-please-config.json` is generated.** Never edit it by hand. `scripts/gen-release-please-config.sh` writes
-  it from `scripts/gen-release-please-config.jq` (the settings, including `changelog-sections`) and every
-  `dictionaries/*/package.json` and `packages/*/package.json`. The Update Dependencies workflow runs the script, so a
-  new package is added to the config the next time that workflow runs. To add it sooner, run
-  `./scripts/gen-release-please-config.sh` (it needs `jq`) and commit the result.
+- **`release-please-config.json` is generated.** Never edit it by hand. `pnpm run gen:release-please-config` writes it
+  from the settings in `scripts/gen-release-please-config.mts`, including `changelog-sections`, and every
+  `dictionaries/*/package.json` and `packages/*/package.json`.
+  - `pnpm run lint` runs it, and so does autofix on pull requests, so a new package is added in the PR that creates it.
+  - `pnpm run lint-ci` fails if the committed file is out of date.
+  - Private packages are included on purpose. When one is released, the `node-workspace` plugin also releases the
+    packages that depend on it, such as the English dictionaries that build from `@cspell/aoo-mozilla-en-dict`.
 - **The `"."` entry always stays.** It is the root `cspell-dicts` package, which is private and never published.
 - **Never add a new package to `.release-please-manifest.json`.** The manifest records each package's last released
   version. Release Please adds a new package on its first release, using the version in its `package.json`

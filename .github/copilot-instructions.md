@@ -16,7 +16,7 @@ See [`CLAUDE.md`](../CLAUDE.md) at the repository root for the commands, convent
   - `@@inject` sections in READMEs, `dictionaries/*/static/`, and `static/dictionary-packages.*`: written by
     `pnpm run build:readme`.
   - `CHANGELOG.md` files and `.release-please-manifest.json`: written by Release Please.
-  - `release-please-config.json`: written by `scripts/gen-release-please-config.sh`.
+  - `release-please-config.json`: written by `pnpm run gen:release-please-config`, which `pnpm run lint` runs.
 - **Word changes.** A change to a word list in `src/` should come with the rebuilt `dict/` files in the same PR.
 - **pnpm only.** Don't suggest `npm` or `yarn` commands. The `preinstall` script blocks them.
 - **Comments.** Don't ask for comments that restate what the code does.

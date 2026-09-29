@@ -59,8 +59,7 @@ too.
    - The README is for someone installing the dictionary, with absolute `https://` links. Keep the template's
      `@@inject` markers; `pnpm run build:readme` fills them.
    - Leave `private: true` until the user says the package is ready to publish, then set it to `false`.
-   - Never add the package to `.release-please-manifest.json`. Run `./scripts/gen-release-please-config.sh` only if
-     the user wants it in the release config before the next Update Dependencies run.
+   - Never add the package to `.release-please-manifest.json`. `pnpm run lint` adds it to `release-please-config.json`.
    - Add it to `@cspell/dict-cspell-bundle` only if the design says so.
 
 7. **Run every check** from the worktree root:

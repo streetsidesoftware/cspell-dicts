@@ -25,6 +25,11 @@ This is a pnpm workspace. pnpm is the only package manager allowed: the root `pr
 - `generator-cspell-dicts`: the generator behind `pnpm run create-dictionary`.
 - `cspell-dict-file-checker`: a private tool that checks files against a snapshot.
 
+### Scripts
+
+Write repo scripts in TypeScript, as `.mts` files run with `node`, such as `scripts/gen-release-please-config.mts`. Node
+runs them directly, without a build step. Don't add shell scripts or `jq` filters: contributors build on Windows too.
+
 ## A dictionary package
 
 A typical `dictionaries/<name>/` holds:
@@ -103,7 +108,7 @@ Never edit these by hand. Change the source, then regenerate.
 | `static/contributors.json` and `static/contributors.md`                                                           | `update-contributors`, run by the Update Readme workflow                              |
 | Anything between `@@inject` markers, in `README.md` and `dictionaries/*/README.md`                                | `pnpm run build:readme`                                                               |
 | `CHANGELOG.md` files and `.release-please-manifest.json`                                                          | Release Please (see [Releasing](./releasing.md))                                      |
-| `release-please-config.json`                                                                                      | `scripts/gen-release-please-config.sh`, from `scripts/gen-release-please-config*.jq`  |
+| `release-please-config.json`                                                                                      | `pnpm run gen:release-please-config`, also run by `pnpm run lint`                     |
 
 `pnpm run check-dirty` fails if the working tree has changes. Run it after a regenerate command to check that nothing
 was left out of date.
