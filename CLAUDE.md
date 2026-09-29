@@ -69,6 +69,8 @@ These rules are written for people in the linked docs. Read the section before w
   license, stop and tell the user. See [Creating a dictionary](docs/guides/new-dictionary.md#3-check-the-sources-and-their-license).
 - **Releases:** never edit `.release-please-manifest.json` or add a new package to it. See
   [Releasing](docs/releasing.md#rules).
+- **Scripts:** write them in TypeScript (`.mts`, run with `node`), not shell or `jq`. See
+  [Scripts](docs/build-and-packaging.md#scripts).
 
 ### Docs for people
 

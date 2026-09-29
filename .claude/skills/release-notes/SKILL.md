@@ -40,7 +40,7 @@ Read these first. They are the rules; this step only applies them:
   and which are hidden, and the bot PRs whose type is on purpose ("Update Dictionaries" and "Build Dictionaries" are
   `fix:`). Never propose a lower type for those.
 - `release-please-config.json`'s `changelog-sections`: which section each shown type goes under. The file is generated
-  from `scripts/gen-release-please-config.jq`.
+  from `scripts/gen-release-please-config.mts`.
 
 Fetch the release PR's description. It lists every package being released, and under each, the entries by section,
 each linking to its source PR. For each entry:

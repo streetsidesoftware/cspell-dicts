@@ -51,7 +51,7 @@ jobs:
 
       # Catch any new dictionaries and add them to the config.
       - name: Update Release-Please packages
-        run: ./scripts/gen-release-please-config.sh
+        run: pnpm run gen:release-please-config
 
       - name: Lint
         run: |
