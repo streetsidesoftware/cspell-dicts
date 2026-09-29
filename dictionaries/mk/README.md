@@ -151,7 +151,7 @@ LGPL-3.0
 
 > Some packages may have other licenses included.
 
-See Hunspell dictionary [license](./src/hunspell/license).
+See Hunspell dictionary [license](https://github.com/streetsidesoftware/cspell-dicts/blob/main/dictionaries/mk/src/hunspell/license).
 
 <!--- @@inject: ../../static/footer.md --->
 
