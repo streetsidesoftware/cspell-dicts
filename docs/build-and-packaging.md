@@ -124,7 +124,7 @@ Workflows in `.github/workflows/`:
 | Workflow                  | Runs on                                                   | What it does                                                                                                  |
 | ------------------------- | --------------------------------------------------------- | ------------------------------------------------------------------------------------------------------------- |
 | `test.yml`                | pull requests, pushes to `main`                           | `pnpm test` on Node 22 and 24 (Ubuntu) and Node 24 (Windows), and a conditional build                         |
-| `lint.yml`                | pull requests and pushes that touch code, docs, or config | `pnpm run lint`                                                                                               |
+| `lint.yml`                | pull requests and pushes that touch code, docs, or config | `pnpm run lint-ci`: ESLint, Prettier, and cspell, without fixing                                              |
 | `cspell-action.yml`       | pull requests, pushes to `main`                           | Spell checks the changed files                                                                                |
 | `autofix.yml`             | pull requests                                             | Runs `lint:fix` and `sort`, and pushes the fixes through autofix.ci, unless the PR has the `no-autofix` label |
 | `build-dictionaries.yml`  | pushes to `main`, manual                                  | Sorts sources, runs a conditional build, and opens a "Build Dictionaries" PR with any changes                 |
