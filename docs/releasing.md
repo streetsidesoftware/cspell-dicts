@@ -50,5 +50,5 @@ Release Please uses it instead of the commit message the next time it runs. It w
    run again.
 
 `pnpm run pub-recover` runs the same `lerna publish from-package` locally, one package at a time. It needs npm publish
-rights, and the packages set `publishConfig.provenance`, which npm only supports from a CI provider such as GitHub
-Actions. Prefer the workflow.
+rights, and the packages set `publishConfig.provenance`, which npm only supports from a cloud-hosted CI runner such as
+GitHub Actions ([npm docs](https://docs.npmjs.com/generating-provenance-statements)). Prefer the workflow.
