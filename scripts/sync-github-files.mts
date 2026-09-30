@@ -1,6 +1,5 @@
 #!/usr/bin/env node
 
-// ts-check
 import { execSync } from 'node:child_process';
 import { promises as fs } from 'node:fs';
 import Path from 'node:path/posix';
@@ -12,60 +11,62 @@ import globrex from 'globrex';
 import assert from 'node:assert';
 
 const syncFileName = '.sync-github-files.json';
-const resultsCache = new Map();
+const resultsCache = new Map<string, unknown>();
 
 let force = false;
 let debug = false;
 const startTime = performance.now();
 
-function createHeader(token) {
+function createHeader(token: string): Record<string, string> {
     return {
         Accept: 'application/vnd.github+json',
-        Authorization: token ? `Bearer ${token}` : undefined,
+        Authorization: `Bearer ${token}`,
         'X-GitHub-Api-Version': '2022-11-28',
     };
 }
 
-function log(...args) {
+function log(format: string, ...args: unknown[]) {
     const deltaTime = (performance.now() - startTime).toFixed(0) + 'ms';
-    const message = formatWithOptions({ colors: true }, ...args);
+    const message = formatWithOptions({ colors: true }, format, ...args);
     console.log('%s: %s', deltaTime, message);
 }
 
 class FileSync {
-    constructor(src) {
+    private _cache: Map<string, string>;
+
+    constructor(src?: Record<string, string>) {
         this._cache = new Map(src ? Object.entries(src) : []);
     }
 
-    get(key) {
+    get(key: string): string | undefined {
         return this._cache.get(key);
     }
 
-    set(key, value) {
+    set(key: string, value: string): void {
         this._cache.set(key, value);
     }
 
-    toJSON() {
+    toJSON(): Record<string, string> {
         return Object.fromEntries(this._cache);
     }
 
-    updateEntry(entry) {
+    updateEntry(entry: FullTreeEntry): void {
         this._cache.set(entry.fullPath, entry.sha);
     }
 
-    shouldSyncFile(entry) {
+    shouldSyncFile(entry: FullTreeEntry): boolean {
         if (force) {
             return true;
         }
         return this._cache.get(entry.fullPath) !== entry.sha;
     }
 
-    static fromJSON(json) {
+    static fromJSON(json: Record<string, string>): FileSync {
         return new FileSync(json);
     }
 }
 
-function getToken() {
+function getToken(): string | undefined {
     try {
         const stdout = execSync('gh auth token').toString();
         console.log('Using GitHub token from `gh auth token`');
@@ -75,56 +76,63 @@ function getToken() {
     }
 }
 
-/**
- * @typedef {{
- *     path: string,
- *     mode: string,
- *     type: string,
- *     sha: string,
- *     url: string,
- * }} TreeEntry
- */
+interface TreeEntry {
+    path: string;
+    mode?: string;
+    type: string;
+    sha: string;
+    url: string;
+}
 
-/**
- *
- * @param {string | URL} url
- * @param {string} token
- * @returns
- */
-async function fetchGithubRest(url, token) {
+/** A tree entry with its path from the root of the repository. */
+interface FullTreeEntry extends TreeEntry {
+    fullPath: string;
+}
+
+interface TreeResponse {
+    tree: TreeEntry[];
+}
+
+interface BlobResponse {
+    content: string;
+}
+
+interface Release {
+    tag_name: string;
+}
+
+async function fetchGithubRest<T>(url: string | URL, token: string): Promise<T> {
     const found = resultsCache.get(url.toString());
     if (found) {
-        return found;
+        return found as T;
     }
 
     assert(token, 'Token is required');
 
     const headers = createHeader(token);
     const response = await fetch(url, { headers });
-    debug && log('Fetch: %o', { url, headers });
+    if (debug) log('Fetch: %o', { url, headers });
     if (!response.ok) {
         const text = await response.text();
         throw new Error(`Failed to fetch ${url}: ${response.statusText} \n${text}`);
     }
-    const data = await response.json();
+    const data = (await response.json()) as T;
     resultsCache.set(url.toString(), data);
 
     return data;
 }
 
-/**
- *
- * @param {string} ownerRepo
- * @param {string} tree_sha
- * @param {string} token
- * @param {boolean} recursive
- * @returns
- */
-async function fetchTree(ownerRepo, tree_sha, token, recursive) {
+async function fetchTree(ownerRepo: string, tree_sha: string, token: string, recursive: boolean) {
     const octokit = getOctokit(token);
     const [owner, repo] = ownerRepo.split('/');
 
-    const options = {
+    const options: {
+        owner: string;
+        repo: string;
+        tree_sha: string;
+        headers: Record<string, string>;
+        recursive?: string;
+    } = {
         owner,
         repo,
         tree_sha,
@@ -133,61 +141,56 @@ async function fetchTree(ownerRepo, tree_sha, token, recursive) {
         },
     };
     if (recursive) {
-        options.recursive = true;
+        // GitHub returns the whole tree when `recursive` has any value.
+        options.recursive = 'true';
     }
 
     const result = await octokit.request('GET /repos/{owner}/{repo}/git/trees/{tree_sha}', options);
 
     if (result.status !== 200) {
-        throw new Error(`Failed to fetch tree: ${result.statusText}`);
+        throw new Error(`Failed to fetch tree: ${result.status}`);
     }
     return result.data;
 }
 
-function urlGitTree(repo, sha) {
+function urlGitTree(repo: string, sha: string): string {
     return `https://api.github.com/repos/${repo}/git/trees/${sha}`;
 }
 
-function urlGitReleases(repo) {
+function urlGitReleases(repo: string): string {
     return `https://api.github.com/repos/${repo}/releases`;
 }
 
-function urlGithub(repo) {
+function urlGithub(repo: string): string {
     return `https://github.com/${repo}`;
 }
 
-/**
- *
- * @param {TreeEntry} entry
- * @param {string} token
- * @param {string} outDir
- * @returns
- */
-async function* walkTree(entry, token, outDir) {
+async function* walkTree(
+    entry: FullTreeEntry,
+    token: string,
+    outDir: string,
+): AsyncGenerator<{ entry: FullTreeEntry; outDir: string }> {
     if (entry.type === 'blob') {
         yield { entry, outDir };
         return;
     }
     if (entry.type === 'tree') {
-        const response = await fetchGithubRest(entry.url, token);
-        debug && log('response: %o', response);
-        for (const child of response.tree) {
+        const response = await fetchGithubRest<TreeResponse>(entry.url, token);
+        if (debug) log('response: %o', response);
+        for (const child of response.tree as FullTreeEntry[]) {
             child.fullPath = Path.join(entry.fullPath, child.path);
             yield* walkTree(child, token, Path.join(outDir, entry.path));
         }
     }
 }
 
-/**
- *
- * @param {string} repo
- * @param {string} path
- * @param {string} token
- * @param {string} tag
- * @returns Promise<TreeEntry | undefined>
- */
-async function findTreeEntry(repo, path, token, tag) {
-    const rootEntry = {
+async function findTreeEntry(
+    repo: string,
+    path: string,
+    token: string,
+    tag: string,
+): Promise<FullTreeEntry | undefined> {
+    const rootEntry: TreeEntry = {
         path: '',
         type: 'tree',
         sha: tag,
@@ -202,7 +205,7 @@ async function findTreeEntry(repo, path, token, tag) {
             console.error(`Path not found: ${path}`);
             return;
         }
-        const response = await fetchGithubRest(current.url, token);
+        const response = await fetchGithubRest<TreeResponse>(current.url, token);
         const entry = response.tree.find((e) => e.path === segment);
         if (!entry) {
             console.error(`Path not found: ${path}`);
@@ -215,20 +218,18 @@ async function findTreeEntry(repo, path, token, tag) {
     if (current.type === 'tree') {
         current.path = '';
     }
-    current.fullPath = path;
+    const found = current as FullTreeEntry;
+    found.fullPath = path;
 
-    return current;
+    return found;
 }
 
-/**
- *
- * @param {string} repo
- * @param {string} path
- * @param {string} token
- * @param {string} tag
- * @returns Promise<TreeEntry[] | undefined>
- */
-async function findTreeEntriesRecursive(repo, path, token, tag) {
+async function findTreeEntriesRecursive(
+    repo: string,
+    path: string,
+    token: string,
+    tag: string,
+): Promise<FullTreeEntry[] | undefined> {
     const response = await fetchTree(repo, tag, token, true);
 
     // log('findTreeEntriesRecursive: %o', { repo, path, tag, response });
@@ -239,7 +240,7 @@ async function findTreeEntriesRecursive(repo, path, token, tag) {
 
     const dirPath = path ? (path.endsWith('/') ? path : path + '/') : '';
 
-    const entries = response.tree
+    const entries = (response.tree as FullTreeEntry[])
         .filter((entry) => entry.type !== 'tree')
         .filter((entry) => !path || entry.path.startsWith(dirPath) || entry.path === path);
     const found = entries.map((entry) => {
@@ -251,34 +252,29 @@ async function findTreeEntriesRecursive(repo, path, token, tag) {
     return found;
 }
 
-/**
- *
- * @param {string} repo
- * @param {string} path
- * @param {string} token
- * @param {string} tag
- * @returns Promise<TreeEntry[] | undefined>
- */
-async function findTreeEntries(repo, path, token, tag) {
+async function findTreeEntries(
+    repo: string,
+    path: string,
+    token: string,
+    tag: string,
+): Promise<FullTreeEntry[] | undefined> {
     const treeRootEntries = await findTreeEntriesRecursive(repo, path, token, tag);
-    if (treeRootEntries?.length > 1) {
+    if ((treeRootEntries?.length ?? 0) > 1) {
         return treeRootEntries;
     }
     const rootEntry = await findTreeEntry(repo, path, token, tag);
     return rootEntry ? [rootEntry] : undefined;
 }
 
-/**
- *
- * @param {string} repo
- * @param {string} path
- * @param {string} token
- * @param {string} tag
- * @param {string} rootOutDir
- * @param {(path: string) => boolean} filter
- * @param {FileSync} fileSync
- */
-async function syncPath(repo, path, token, tag, rootOutDir, filter, fileSync) {
+async function syncPath(
+    repo: string,
+    path: string,
+    token: string,
+    tag: string,
+    rootOutDir: string,
+    filter: (path: string) => boolean,
+    fileSync: FileSync,
+) {
     assert(token, 'Token is required');
     const treeRootEntries = await findTreeEntries(repo, path, token, tag);
 
@@ -300,7 +296,7 @@ async function syncPath(repo, path, token, tag, rootOutDir, filter, fileSync) {
                 log('file: %s: \t%s %s Ok', outputFilePath, entry.sha, deltaTime);
                 continue;
             }
-            const response = await fetchGithubRest(entry.url, token);
+            const response = await fetchGithubRest<BlobResponse>(entry.url, token);
             const content = Buffer.from(response.content, 'base64');
             await fs.mkdir(Path.dirname(outputFilePath), { recursive: true });
             await fs.writeFile(outputFilePath, content);
@@ -310,13 +306,7 @@ async function syncPath(repo, path, token, tag, rootOutDir, filter, fileSync) {
     }
 }
 
-/**
- *
- * @param {string} repo
- * @param {string[]} paths
- * @param {Options} options
- */
-async function syncPaths(repo, paths, options) {
+async function syncPaths(repo: string, paths: string[], options: Options) {
     const { token, output = '.', latest = false, filter } = options;
 
     const syncFile = await readSyncFile(output);
@@ -329,7 +319,9 @@ async function syncPaths(repo, paths, options) {
     paths = paths.length > 0 ? paths : [''];
 
     const filterRegExps = filter?.map((f) => globrex(f, { globstar: true, extended: true }).regex);
-    const filterFn = filterRegExps?.length ? (path) => filterRegExps.some((regexp) => regexp.test(path)) : () => true;
+    const filterFn = filterRegExps?.length
+        ? (path: string) => filterRegExps.some((regexp) => regexp.test(path))
+        : () => true;
 
     for (const path of paths) {
         await syncPath(repo, path, token, tag, output, filterFn, syncFile);
@@ -339,12 +331,7 @@ async function syncPaths(repo, paths, options) {
     await writeSyncFile(output, syncFile);
 }
 
-/**
- *
- * @param {string} outDir
- * @returns {Promise<FileSync>}
- */
-async function readSyncFile(outDir) {
+async function readSyncFile(outDir: string): Promise<FileSync> {
     const syncFilePath = Path.join(outDir, syncFileName);
     try {
         const data = JSON.parse(await fs.readFile(syncFilePath, 'utf-8'));
@@ -354,31 +341,20 @@ async function readSyncFile(outDir) {
     }
 }
 
-/**
- *
- * @param {string} outDir
- * @param {FileSync} data
- */
-async function writeSyncFile(outDir, data) {
+async function writeSyncFile(outDir: string, data: FileSync) {
     const syncFilePath = Path.join(outDir, syncFileName);
     await fs.mkdir(Path.dirname(syncFilePath), { recursive: true });
     await fs.writeFile(syncFilePath, JSON.stringify(data, null, 4) + '\n', 'utf-8');
 }
 
-/**
- *
- * @param {string} repo
- * @param {string} token
- * @returns
- */
-async function getLatestTag(repo, token) {
-    const response = await fetchGithubRest(urlGitReleases(repo), token);
-    debug && log('Latest tag: %o', response);
+async function getLatestTag(repo: string, token: string): Promise<string | undefined> {
+    const response = await fetchGithubRest<Release[] | undefined>(urlGitReleases(repo), token);
+    if (debug) log('Latest tag: %o', response);
     return response?.[0]?.tag_name;
 }
 
-let octokit = undefined;
-function getOctokit(token) {
+let octokit: Octokit | undefined = undefined;
+function getOctokit(token: string): Octokit {
     console.assert(token, 'Token is required');
     if (!octokit) {
         octokit = new Octokit({ auth: token });
@@ -386,15 +362,13 @@ function getOctokit(token) {
     return octokit;
 }
 
-/**
- * @typedef {{
- *      token: string | undefined,
- *      output: string | undefined,
- *      tag: string | undefined,
- *      latest: boolean,
- *      filter: string[] | undefined,
- *  }} Options
- */
+interface Options {
+    token: string | undefined;
+    output: string | undefined;
+    tag: string | undefined;
+    latest: boolean;
+    filter: string[] | undefined;
+}
 
 program
     .name('sync-github-files')
@@ -405,12 +379,12 @@ program
     .option('-o, --output <path>', 'Output directory for downloaded files (default: current directory)')
     .option('--tag <tag>', 'Tag to sync from (default: main)')
     .option('--latest', 'Use the latest release tag', false)
-    .option('--filter <glob>', 'Filter files to sync using a glob pattern.', (value, prev) =>
+    .option('--filter <glob>', 'Filter files to sync using a glob pattern.', (value: string, prev?: string[]) =>
         prev ? [...prev, value] : [value],
     )
     .option('--force', 'Force sync even if the file exists', false)
     .option('--debug', 'Enable debug mode', false)
-    .action(async (repo, paths, options) => {
+    .action(async (repo: string, paths: string[], options: Options & { force: boolean; debug: boolean }) => {
         console.log('Syncing files from GitHub: repo: %s%s', repo, paths.length ? `, paths: ${paths}` : '');
 
         options.token ??= process.env.GITHUB_TOKEN || getToken();
@@ -425,6 +399,7 @@ program
         }
 
         force = options.force;
+        debug = options.debug;
 
         await syncPaths(repo, paths, options);
     });

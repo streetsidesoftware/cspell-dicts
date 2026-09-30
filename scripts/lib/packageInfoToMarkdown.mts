@@ -1,15 +1,6 @@
-// ts-check
-
-import { formatMarkdown } from './formatMarkdown.mjs';
-import { unindent } from './utils.mjs';
-
-/**
- * @typedef {import('./dictionaryInfo.mjs').DictionaryPackageInfo} DictionaryPackageInfo
- */
-
-/**
- * @typedef {import('./dictionaryInfo.mjs').DictionaryInfo} DictionaryInfo
- */
+import type { DictionaryPackageInfo } from './dictionaryInfo.mts';
+import { formatMarkdown } from './formatMarkdown.mts';
+import { unindent } from './utils.mts';
 
 const categoryToTitle = new Map([
     ['natural-language', 'Natural Language Dictionaries'],
@@ -19,12 +10,7 @@ const categoryToTitle = new Map([
     ['bundle', 'Dictionary Bundles'],
 ]);
 
-/**
- *
- * @param {DictionaryPackageInfo[]} packages
- * @returns {Promise<string>}
- */
-export async function packageInfoToMarkdown(packages) {
+export async function packageInfoToMarkdown(packages: DictionaryPackageInfo[]): Promise<string> {
     packages = [...packages].sort((a, b) => a.name.localeCompare(b.name));
 
     let md = '<!--- Use `pnpm build:readme` to generate this table --->\n\n';
@@ -37,11 +23,9 @@ export async function packageInfoToMarkdown(packages) {
 
 /**
  * List dictionaries by category
- * @param {DictionaryPackageInfo[]} packages
- * @returns {Promise<string>}
  */
-function listDictionariesByCategory(packages) {
-    const seen = new Set();
+function listDictionariesByCategory(packages: DictionaryPackageInfo[]): string {
+    const seen = new Set<DictionaryPackageInfo>();
     const categories = new Set(['natural-language', 'programming', 'other', 'bundle']);
     const byCategory = groupByCategory(packages);
 
@@ -72,10 +56,8 @@ function listDictionariesByCategory(packages) {
 
 /**
  * List dictionary IDs and descriptions.
- * @param {DictionaryPackageInfo[]} packages
- * @returns {Promise<string>}
  */
-function listDictionaryIds(packages) {
+function listDictionaryIds(packages: DictionaryPackageInfo[]): string {
     const dictionaries = packages
         .filter((pkg) => !pkg.isBundle)
         .flatMap((pkg) => pkg.dictionaries.map((d) => ({ ...d, pkg })))
@@ -107,12 +89,7 @@ function listDictionaryIds(packages) {
     return md;
 }
 
-/**
- *
- * @param {DictionaryPackageInfo[]} packages
- * @returns {string}
- */
-function extractDictionaryTable(packages) {
+function extractDictionaryTable(packages: DictionaryPackageInfo[]): string {
     packages = [...packages].sort((a, b) => a.packageName.localeCompare(b.packageName));
     return unindent`
         ## All Dictionaries
@@ -126,12 +103,7 @@ function extractDictionaryTable(packages) {
     `;
 }
 
-/**
- *
- * @param {DictionaryPackageInfo} pkg
- * @returns {string}
- */
-function formatPackageRow(pkg) {
+function formatPackageRow(pkg: DictionaryPackageInfo): string {
     const { packageName, dictionaries, dir } = pkg;
 
     const dictNames = pkg.isBundle
@@ -145,34 +117,19 @@ function formatPackageRow(pkg) {
     return `| [${packageName}](../${dir}#readme)${pkg.cspell ? '<sup>1</sup>' : ''} | ${pkg.name} | ${dictNames} |`;
 }
 
-/**
- *
- * @param {string} category
- * @param {DictionaryPackageInfo[] | undefined} packages
- */
-function formatCategory(category, packages) {
+function formatCategory(category: string, packages: DictionaryPackageInfo[] | undefined): string {
     if (!packages?.length) return '';
 
     const title = categoryToTitle.get(category) || category;
     return `## ${title}\n\n` + packages.map(formatPackage).join('\n') + '\n\n';
 }
 
-/**
- *
- * @param {DictionaryPackageInfo} pkg
- * @returns {string}
- */
-function formatPackage(pkg) {
+function formatPackage(pkg: DictionaryPackageInfo): string {
     return `- [${pkg.name}](../${pkg.dir}) - ${pkg.description} ${pkg.cspell ? '<sup>1</sup>' : ''} ${pkg.hasEnabledByDefault ? '<sup>2</sup>' : ''}`;
 }
 
-/**
- *
- * @param {DictionaryPackageInfo[]} packages
- * @returns {Map<string, DictionaryPackageInfo[]>}
- */
-function groupByCategory(packages) {
-    const byCategory = new Map();
+function groupByCategory(packages: DictionaryPackageInfo[]): Map<string, DictionaryPackageInfo[]> {
+    const byCategory = new Map<string, DictionaryPackageInfo[]>();
     for (const pkg of packages) {
         const categories = pkg.isBundle ? ['bundle'] : pkg.categories || [];
         if (categories.length === 0) {
@@ -187,13 +144,7 @@ function groupByCategory(packages) {
     return byCategory;
 }
 
-/**
- *
- * @param {number} n
- * @param {string[]} arr
- * @returns {string[]}
- */
-function take(n, arr) {
+function take(n: number, arr: string[]): string[] {
     const result = arr.slice(0, n);
     if (result.length < arr.length) {
         result.push('...');

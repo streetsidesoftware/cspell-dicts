@@ -1,36 +1,22 @@
-// @ts-check
-
 import fs from 'node:fs/promises';
+
+import type { CSpellSettings } from '@cspell/cspell-types';
 import { Document as YamlDocument } from 'yaml';
 
-import { unindent } from './utils.mjs';
+import type { DictionaryPackageInfo } from './dictionaryInfo.mts';
+import { unindent } from './utils.mts';
 
 const rootUrl = new URL('../../', import.meta.url);
 
-/**
- * @typedef {import('./dictionaryInfo.mjs').DictionaryPackageInfo} DictionaryPackageInfo
- * @typedef {import('@cspell/cspell-types').CSpellSettings} CSpellSettings
- */
+type MarkdownString = string;
 
-/**
- * @typedef {string} MarkdownString
- */
-
-/**
- *
- * @param {DictionaryPackageInfo[]} packages
- */
-export async function writeStaticFilesForPackages(packages) {
+export async function writeStaticFilesForPackages(packages: DictionaryPackageInfo[]) {
     for (const pkgInfo of packages) {
         await writeStaticFilesForPackage(pkgInfo);
     }
 }
 
-/**
- *
- * @param {DictionaryPackageInfo} pkgInfo
- */
-export async function writeStaticFilesForPackage(pkgInfo) {
+export async function writeStaticFilesForPackage(pkgInfo: DictionaryPackageInfo) {
     const dir = (pkgInfo.dir + '/').replaceAll('//', '/');
     const dirUrl = new URL(dir, rootUrl);
     // const pkgUrl = new URL('package.json', dirUrl);
@@ -51,48 +37,26 @@ export async function writeStaticFilesForPackage(pkgInfo) {
     await fs.writeFile(new URL('install.md', pkgStaticDirUrl), toPackageInformationMarkdown(pkgInfo), 'utf8');
 }
 
-/**
- * @param {DictionaryPackageInfo} pkgInfo
- * @param {boolean} useCdn
- * @returns {string}
- */
-function vscodeSettingsToCdn(pkgInfo, useCdn) {
+function vscodeSettingsToCdn(pkgInfo: DictionaryPackageInfo, useCdn: boolean): string {
     const vscodeSettings = Object.fromEntries(
         Object.entries(toCSpellSettings(pkgInfo, useCdn)).map(([k, v]) => ['cSpell.' + k, v]),
     );
     return JSON.stringify(vscodeSettings, null, 2) + '\n';
 }
 
-/**
- * @param {DictionaryPackageInfo} pkgInfo
- * @param {boolean} useCdn
- * @returns {string}
- */
-function toSettingsJson(pkgInfo, useCdn) {
+function toSettingsJson(pkgInfo: DictionaryPackageInfo, useCdn: boolean): string {
     const settings = toCSpellSettings(pkgInfo, useCdn);
     return JSON.stringify(settings, null, 2) + '\n';
 }
 
-/**
- * @param {DictionaryPackageInfo} pkgInfo
- * @param {boolean} useCdn
- * @returns {string}
- */
-function toSettingsYaml(pkgInfo, useCdn) {
+function toSettingsYaml(pkgInfo: DictionaryPackageInfo, useCdn: boolean): string {
     const settings = toCSpellSettings(pkgInfo, useCdn);
     const doc = new YamlDocument(settings);
     return doc.toString() + '\n';
 }
 
-/**
- *
- * @param {DictionaryPackageInfo} pkgInfo
- * @param {boolean} useCdn
- * @returns {CSpellSettings}
- */
-function toCSpellSettings(pkgInfo, useCdn) {
-    /** @type {CSpellSettings} */
-    const settings = {};
+function toCSpellSettings(pkgInfo: DictionaryPackageInfo, useCdn: boolean): CSpellSettings {
+    const settings: CSpellSettings = {};
 
     const locales = [...new Set(pkgInfo.dictionaries.flatMap((d) => d.locales || []))].join(', ');
     if (!pkgInfo.cspell) {
@@ -110,23 +74,12 @@ function toCSpellSettings(pkgInfo, useCdn) {
     return settings;
 }
 
-/**
- *
- * @param {string} pkgName
- * @param {string} version
- * @returns {string}
- */
-function pkgNameToCdnUrl(pkgName, version) {
+function pkgNameToCdnUrl(pkgName: string, version: string): string {
     const v = version.split('.')[0] || '0';
     return `https://cdn.jsdelivr.net/npm/${pkgName}@${v}/`;
 }
 
-/**
- *
- * @param {DictionaryPackageInfo} pkgInfo
- * @returns {MarkdownString}
- */
-function toPackageInformationMarkdown(pkgInfo) {
+function toPackageInformationMarkdown(pkgInfo: DictionaryPackageInfo): MarkdownString {
     const pkgName = pkgInfo.packageName;
 
     const md = unindent`
@@ -147,13 +100,7 @@ function toPackageInformationMarkdown(pkgInfo) {
     return cleanMarkdown(md);
 }
 
-/**
- *
- * @param {DictionaryPackageInfo} pkgInfo
- * @param {boolean} useCdn
- * @returns {MarkdownString}
- */
-function toConfiguration(pkgInfo, useCdn) {
+function toConfiguration(pkgInfo: DictionaryPackageInfo, useCdn: boolean): MarkdownString {
     if (pkgInfo.cspell && useCdn) {
         return unindent`
             > **NOTE:** This package is bundled with CSpell.
@@ -198,12 +145,7 @@ function toConfiguration(pkgInfo, useCdn) {
     `;
 }
 
-/**
- *
- * @param {string} pkgName
- * @returns {MarkdownString}
- */
-function codeBlockInstall(pkgName) {
+function codeBlockInstall(pkgName: string): MarkdownString {
     return codeBlock(
         unindent`
             npm install -D ${pkgName}
@@ -212,21 +154,11 @@ function codeBlockInstall(pkgName) {
     );
 }
 
-/**
- *
- * @param {string} code
- * @returns {MarkdownString}
- */
-function inlineCode(code) {
+function inlineCode(code: string): MarkdownString {
     return '`' + code + '`';
 }
 
-/**
- *
- * @param {string} title
- * @param {MarkdownString} content
- */
-function detailsMarkdown(title, content) {
+function detailsMarkdown(title: string, content: MarkdownString) {
     return unindent`\
         <details>
         <summary>${title}</summary>
@@ -236,59 +168,33 @@ function detailsMarkdown(title, content) {
         </details>`;
 }
 
-/**
- *
- * @param {string} code
- * @param {string} [lang]
- * @returns {MarkdownString}
- */
-function codeBlock(code, lang = '') {
+function codeBlock(code: string, lang: string = ''): MarkdownString {
     return `\`\`\`${lang}\n${removeNewlines(code)}\n\`\`\``;
 }
 
 /**
  * Remove all leading and trailing newlines from a string.
- * @param {string} str
- * @returns {string}
  */
-function removeNewlines(str) {
+function removeNewlines(str: string): string {
     return removeTrailingNewlines(removeLeadingNewlines(str));
 }
 
-/**
- * @param {string} str
- * @returns {string}
- */
-function removeTrailingNewlines(str) {
+function removeTrailingNewlines(str: string): string {
     return str.replace(/(\r?\n)+$/, '');
 }
 
-/**
- * @param {string} str
- * @returns {string}
- */
-function removeLeadingNewlines(str) {
+function removeLeadingNewlines(str: string): string {
     return str.replace(/^(\r?\n)+/, '');
 }
 
-/**
- *
- * @param {string} str
- * @returns
- */
-function cleanMarkdown(str) {
+function cleanMarkdown(str: string) {
     const s = str
         .replace(/(\r?\n)/g, '\n') // Normalize newlines
         .replace(/\n{3,}/g, '\n\n'); // Replace multiple newlines with two
     return removeNewlines(s) + '\n'; // Ensure a single trailing newline
 }
 
-/**
- *
- * @param {DictionaryPackageInfo} pkgInfo
- * @returns {MarkdownString}
- */
-function toLanguageSettingsMarkdown(pkgInfo) {
+function toLanguageSettingsMarkdown(pkgInfo: DictionaryPackageInfo): MarkdownString {
     const dictionaries = pkgInfo.dictionaries?.map((d) => ({
         name: d.name,
         enabled: d.enabled,
@@ -334,24 +240,14 @@ function toLanguageSettingsMarkdown(pkgInfo) {
     `;
 }
 
-/**
- *
- * @param {string} str
- * @returns {MarkdownString}
- */
-function splitStringIntoInlineCodeBlocks(str) {
+function splitStringIntoInlineCodeBlocks(str: string): MarkdownString {
     return str
         .split(',')
         .map((s) => (s.trim() ? inlineCode(s.trim()) : s))
         .join(', ');
 }
 
-/**
- *
- * @param {DictionaryPackageInfo} pkgInfo
- * @returns {MarkdownString}
- */
-function toDefinedPatternsMarkdown(pkgInfo) {
+function toDefinedPatternsMarkdown(pkgInfo: DictionaryPackageInfo): MarkdownString {
     if (!pkgInfo.patterns?.length) {
         return '';
     }

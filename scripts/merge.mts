@@ -6,11 +6,11 @@
 
 import { program } from 'commander';
 import { promises as fs } from 'fs';
-import { sortSourceContent } from './lib/sortContent.mjs';
+import { sortSourceContent } from './lib/sortContent.mts';
 
-let info = console.log;
+const info = console.log;
 
-async function readAndMergeFiles(files) {
+async function readAndMergeFiles(files: string[]): Promise<string> {
     let content = '';
 
     for (const file of files) {
@@ -21,11 +21,11 @@ async function readAndMergeFiles(files) {
     return content;
 }
 
-function removeComments(content) {
+function removeComments(content: string): string {
     return content.replace(/#.*$/gm, '');
 }
 
-async function processFiles(files, excluded) {
+async function processFiles(files: string[], excluded: string[]) {
     const mergedContent = await readAndMergeFiles(files);
     const excludedWords = removeComments(await readAndMergeFiles(excluded))
         .split('\n')
@@ -59,7 +59,7 @@ program
     .description('Merge source files into a single list.')
     .argument('<files...>', 'files to read')
     .option('-x, --exclude <files...>', 'Files containing words to exclude.', [])
-    .action(async (files, options) => {
+    .action(async (files: string[], options: { exclude?: string[] }) => {
         // console.log('%o', options);
         const ignore = options.exclude || [];
         await processFiles(files, ignore);

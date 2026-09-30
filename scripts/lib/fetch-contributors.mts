@@ -1,25 +1,20 @@
-// @ts-check
-
 const maxContributors = 500;
 const perPage = 50;
 const numPages = maxContributors / perPage;
 
-/**
- * @typedef {{ login: string; html_url: string; avatar_url: string; contributions: number, type: 'User' | 'Bot' | string }} Contributor
- */
+export interface Contributor {
+    login: string;
+    html_url: string;
+    avatar_url: string;
+    contributions: number;
+    type: 'User' | 'Bot' | string;
+}
 
 /**
  * Fetch the contributors of the repository.
- * @param {string} token
- * @returns {Promise<Contributor[]>}
  */
-export async function fetchContributors(token) {
-    /**
-     *
-     * @param {number} page
-     * @returns Promise<Contributor[]>
-     */
-    async function fetchPage(page) {
+export async function fetchContributors(token: string): Promise<Contributor[]> {
+    async function fetchPage(page: number): Promise<Contributor[]> {
         const response = await fetch(
             `https://api.github.com/repos/streetsidesoftware/cspell-dicts/contributors?per_page=${perPage}&page=${page}`,
             {
@@ -35,11 +30,10 @@ export async function fetchContributors(token) {
             throw new Error(`Response status: ${response.status} ${response.statusText}`);
         }
 
-        return response.json();
+        return (await response.json()) as Contributor[];
     }
 
-    /** @type {Contributor[]} */
-    let contributors = [];
+    const contributors: Contributor[] = [];
 
     for (let page = 1; page < numPages; page++) {
         const c = await fetchPage(page);
@@ -55,28 +49,22 @@ export async function fetchContributors(token) {
 
 /**
  * Sort the contributors (in place) by contributions then login.
- * @param {Contributor[]} contributors
- * @returns {Contributor[]}
  */
-export function sortContributorsByContributionsThenLogin(contributors) {
+export function sortContributorsByContributionsThenLogin(contributors: Contributor[]): Contributor[] {
     return contributors.sort((a, b) => b.contributions - a.contributions || a.login.localeCompare(b.login));
 }
 
 /**
  * Sort the contributors (in place) by login.
- * @param {Contributor[]} contributors
- * @returns {Contributor[]}
  */
-export function sortContributorsByLogin(contributors) {
+export function sortContributorsByLogin(contributors: Contributor[]): Contributor[] {
     return contributors.sort((a, b) => a.login.localeCompare(b.login));
 }
 
 /**
  * Return a normalize the contributor object.
- * @param {Contributor} contributor
- * @returns {Contributor}
  */
-export function normalizeContributor(contributor) {
+export function normalizeContributor(contributor: Contributor): Contributor {
     return {
         login: contributor.login,
         html_url: contributor.html_url || 'https://api.github.com/users/' + contributor.login,
@@ -89,9 +77,7 @@ export function normalizeContributor(contributor) {
 /**
  * Normalize the contributors.
  * Remove any unused fields.
- * @param {Contributor[]} contributors
- * @returns {Contributor[]}
  */
-export function normalizeContributors(contributors) {
+export function normalizeContributors(contributors: Contributor[]): Contributor[] {
     return contributors.map(normalizeContributor);
 }

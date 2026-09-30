@@ -3,14 +3,13 @@
 import fs from 'node:fs/promises';
 import { sortPackageJson, sortOrder as defaultSortOrder } from 'sort-package-json';
 
-import { findDictionaryPackages } from './lib/find-dictionary-packages.mjs';
+import { findDictionaryPackages } from './lib/find-dictionary-packages.mts';
 
 /**
  * Update fields in the package.json file.
  * - the repository - see: [package.json repository](https://docs.npmjs.com/cli/v10/configuring-npm/package-json#repository)
- * @param {string[]} pkgFile
  */
-async function updatePackageJson(pkgFile) {
+async function updatePackageJson(pkgFile: string) {
     const directory = pkgFile.split(/[/\\]/g).slice(-3, -1).join('/');
     console.log(directory);
 

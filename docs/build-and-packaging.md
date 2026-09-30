@@ -31,7 +31,7 @@ Write repo scripts in TypeScript, as `.mts` files run with `node`, such as `scri
 runs them directly, without a build step. Don't add shell scripts or `jq` filters: contributors build on Windows too.
 
 - `pnpm run check:types` type-checks `scripts/` and `dictionaries/*/scripts/` with the root `tsconfig.json`. It also
-  rejects syntax that Node can't run without a build, such as `enum`. `pnpm run lint-ci` runs it.
+  rejects syntax that Node can't run without a build, such as `enum`. `pnpm run lint` and `pnpm run lint-ci` run it.
 - Shared dev tools, such as `typescript`, `@types/node` and `@tsconfig/node22`, are declared only in the root
   `package.json`.
 
@@ -134,7 +134,7 @@ Workflows in `.github/workflows/`:
 | Workflow                  | Runs on                                                   | What it does                                                                                                  |
 | ------------------------- | --------------------------------------------------------- | ------------------------------------------------------------------------------------------------------------- |
 | `test.yml`                | pull requests, pushes to `main`                           | `pnpm test` on Node 22 and 24 (Ubuntu) and Node 24 (Windows), and a conditional build                         |
-| `lint.yml`                | pull requests and pushes that touch code, docs, or config | `pnpm run lint-ci`: ESLint, TypeScript type check, Prettier, and cspell, without fixing                       |
+| `lint.yml`                | pull requests and pushes that touch code, docs, or config | `pnpm run lint-ci`: ESLint, Prettier, TypeScript type check, and cspell, without fixing                       |
 | `cspell-action.yml`       | pull requests, pushes to `main`                           | Spell checks the changed files                                                                                |
 | `autofix.yml`             | pull requests                                             | Runs `lint:fix` and `sort`, and pushes the fixes through autofix.ci, unless the PR has the `no-autofix` label |
 | `build-dictionaries.yml`  | pushes to `main`, manual                                  | Sorts sources, runs a conditional build, and opens a "Build Dictionaries" PR with any changes                 |
