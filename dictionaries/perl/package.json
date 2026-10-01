@@ -6,23 +6,6 @@
     "access": "public",
     "provenance": true
   },
-  "exports": {
-    ".": "./cspell-ext.json",
-    "./cspell": "./cspell-ext.json",
-    "./cspell-ext.json": "./cspell-ext.json"
-  },
-  "scripts": {
-    "build": "cspell-tools-cli build",
-    "test": "pnpm run test:words && pnpm run test:samples",
-    "prepublishOnly": "echo OK",
-    "prepare:dictionary": "pnpm run build",
-    "test:words": "head -n 1000 \"src/perl.txt\" | cspell -c ./cspell-ext.json \"--locale=*\" \"--languageId=perl\" stdin",
-    "test:samples": "cspell samples"
-  },
-  "repository": {
-    "type": "git",
-    "url": "https://github.com/streetsidesoftware/cspell-dicts"
-  },
   "keywords": [
     "cspell",
     "cspell-ext",
@@ -31,19 +14,37 @@
     "dictionary",
     "spelling"
   ],
-  "author": "Street Side Software",
-  "contributors": [],
-  "license": "MIT",
+  "homepage": "https://github.com/streetsidesoftware/cspell-dicts/blob/main/dictionaries/perl#readme",
   "bugs": {
     "url": "https://github.com/streetsidesoftware/cspell-dicts/issues"
   },
-  "homepage": "https://github.com/streetsidesoftware/cspell-dicts/blob/main/dictionaries/perl#readme",
-  "devDependencies": {},
-  "dependencies": {},
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/streetsidesoftware/cspell-dicts",
+    "directory": "dictionaries/perl"
+  },
+  "license": "MIT",
+  "author": "Street Side Software <support@streetsidesoftware.nl>",
+  "contributors": [],
+  "exports": {
+    ".": "./cspell-ext.json",
+    "./cspell": "./cspell-ext.json",
+    "./cspell-ext.json": "./cspell-ext.json"
+  },
   "files": [
     "dict/perl.txt",
     "cspell-ext.json",
     "*.js",
     "*.d.ts"
-  ]
+  ],
+  "scripts": {
+    "build": "cspell-tools-cli build",
+    "prepare:dictionary": "pnpm run build",
+    "prepublishOnly": "echo OK",
+    "test": "pnpm run test:words && pnpm run test:samples",
+    "test:samples": "cspell samples",
+    "test:words": "head -n 1000 \"src/perl.txt\" | cspell -c ./cspell-ext.json \"--locale=*\" \"--languageId=perl\" stdin"
+  },
+  "dependencies": {},
+  "devDependencies": {}
 }
