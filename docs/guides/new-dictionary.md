@@ -85,6 +85,7 @@ say so.
 - **`cspell-ext.json`:** the dictionary definitions and `languageSettings`, as decided in step 2. See
   [Dictionary definitions](#dictionary-definitions).
 - **`package.json`:**
+  - Remove "-- Private until verified" from `description`.
   - Add `keywords` for the language or tool and its common alternate names.
   - Check that `files` lists every built file and any upstream license file.
   - Check that the `test` script spell checks the samples or source with the dictionary.
@@ -140,10 +141,9 @@ Unlink when you are done:
 pnpm exec cspell link remove ./cspell-ext.json
 ```
 
-## 8. Open a PR
+## 8. Make it public and open a PR
 
-- Leave `private: true` and "-- Private until verified" in `package.json`. A maintainer makes the package public in a
-  later PR, once the dictionary has been verified. That often takes more PRs, for samples or build changes.
+- Set `private` to `false` in `package.json`, once the dictionary is ready to publish.
 - Don't add the package to `.release-please-manifest.json`. See [Releasing](../releasing.md#rules).
 - To include it in `@cspell/dict-cspell-bundle`, add it to `dependencies` in `dictionaries/cspell/package.json` as
   `"workspace:^"`, then run `pnpm run build` in `dictionaries/cspell`. Whether cspell itself bundles it is decided in

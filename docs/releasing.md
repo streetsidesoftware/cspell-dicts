@@ -66,8 +66,13 @@ When you run it:
 ### New packages
 
 A new package stays private through its first PRs. Once it has been verified, a maintainer with npm publish rights for
-`@cspell` makes it public in a `chore:` PR, such as `chore(<name>): publish`. That PR sets `private` to `false` and
-removes "-- Private until verified" from `description`.
+`@cspell` makes it public in a `chore:` PR, such as `chore(<name>): publish`. That PR:
+
+- sets `private` to `false`
+- removes "-- Private until verified" from `description`
+- adds the package to `@cspell/dict-cspell-bundle`, if it should be there: add it to `dependencies` in
+  `dictionaries/cspell/package.json` as `"workspace:^"`, then run `pnpm run build` in `dictionaries/cspell`. Whether
+  cspell itself bundles it is decided in the [cspell](https://github.com/streetsidesoftware/cspell) repo.
 
 Trusted Publishing only works for a package that is already on npm, so the maintainer also publishes its current version
 by hand, before merging that PR.

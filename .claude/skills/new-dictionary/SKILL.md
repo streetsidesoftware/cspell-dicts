@@ -50,15 +50,15 @@ too.
      interactively; answer from the design.
    - `cspell-ext.json`'s `dictionaryDefinitions` and `languageSettings` match the ADRs exactly: IDs, `languageId`,
      `locale`.
-   - `package.json`: add `keywords`, check `files` lists every built file and upstream license file, then run
-     `pnpm update-package-json dictionaries/<name>/package.json` from the repo root.
+   - `package.json`: remove "-- Private until verified" from `description`, add `keywords`, check `files` lists every
+     built file and upstream license file, then run `pnpm update-package-json dictionaries/<name>/package.json` from
+     the repo root.
    - An upstream source gets a `sync` script, as in `docs/guides/upstream-updates.md`. Never hand-edit synced files.
    - `samples/` holds correctly spelled files of the kind the dictionary is for, and the `test` script checks them.
      Include text that must still be flagged only if the test can assert it.
    - The README is for someone installing the dictionary, with absolute `https://` links. Keep the template's
      `@@inject` markers; `pnpm run build:readme` fills them.
-   - Leave `private: true` and "-- Private until verified" in `description`. A maintainer makes the package public in a
-     later PR, as in `docs/releasing.md#new-packages`.
+   - Leave `private: true` until the user says the package is ready to publish, then set it to `false`.
    - Never add the package to `.release-please-manifest.json`. `pnpm run lint` adds it to `release-please-config.json`.
    - Add it to `@cspell/dict-cspell-bundle` only if the design says so.
 
