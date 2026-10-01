@@ -1,5 +1,24 @@
 # Release Notes
 
+## [33.15.5](https://github.com/streetsidesoftware/cspell-dicts/compare/cspell-dicts@33.15.4...cspell-dicts@33.15.5) (2026-10-01)
+
+
+### Updates and Bug Fixes
+
+* **gaming-terms:** add knockback ([#5771](https://github.com/streetsidesoftware/cspell-dicts/issues/5771)) ([59dfcf8](https://github.com/streetsidesoftware/cspell-dicts/commit/59dfcf854bc522c2ac4b59249be08d7d15ff76a1))
+* **mk:** use an absolute link to the license ([#5772](https://github.com/streetsidesoftware/cspell-dicts/issues/5772)) ([37b2492](https://github.com/streetsidesoftware/cspell-dicts/commit/37b24929fd8b117053792a5fe7a187f29b51626e))
+* **software-terms:** add security and supply-chain terms, and DBOS ([#5770](https://github.com/streetsidesoftware/cspell-dicts/issues/5770)) ([9a725e7](https://github.com/streetsidesoftware/cspell-dicts/commit/9a725e77926eebd475bd5d8f844b1d7629902449))
+* Workflow Bot -- Build Dictionaries ([#5748](https://github.com/streetsidesoftware/cspell-dicts/issues/5748)) ([b5b699e](https://github.com/streetsidesoftware/cspell-dicts/commit/b5b699ee6903f3333102f29711dc78dc7bcb6b58))
+* Workflow Bot -- Update Dictionaries ([#5739](https://github.com/streetsidesoftware/cspell-dicts/issues/5739)) ([d4f3081](https://github.com/streetsidesoftware/cspell-dicts/commit/d4f3081eac00b6cdc290dd777b13338d99395b42))
+* Workflow Bot -- Update Dictionaries ([#5764](https://github.com/streetsidesoftware/cspell-dicts/issues/5764)) ([4c273c0](https://github.com/streetsidesoftware/cspell-dicts/commit/4c273c00b4aaaa22a2197a0bd8ab2f83a534d98c))
+
+
+### Dependencies
+
+* The following workspace dependencies were updated
+  * devDependencies
+    * @cspell/dict-cspell-bundle bumped to 2.0.77
+
 ## [33.15.4](https://github.com/streetsidesoftware/cspell-dicts/compare/cspell-dicts@33.15.3...cspell-dicts@33.15.4) (2026-09-17)
 
 

@@ -3,6 +3,13 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+## [5.4.6](https://github.com/streetsidesoftware/cspell-dicts/compare/@cspell/dict-software-terms@5.4.5...@cspell/dict-software-terms@5.4.6) (2026-10-01)
+
+
+### Updates and Bug Fixes
+
+* **software-terms:** add security and supply-chain terms, and DBOS ([#5770](https://github.com/streetsidesoftware/cspell-dicts/issues/5770)) ([9a725e7](https://github.com/streetsidesoftware/cspell-dicts/commit/9a725e77926eebd475bd5d8f844b1d7629902449))
+
 ## [5.4.5](https://github.com/streetsidesoftware/cspell-dicts/compare/@cspell/dict-software-terms@5.4.4...@cspell/dict-software-terms@5.4.5) (2026-09-17)
 
 

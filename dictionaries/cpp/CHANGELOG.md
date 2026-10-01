@@ -3,6 +3,13 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+## [7.1.3](https://github.com/streetsidesoftware/cspell-dicts/compare/@cspell/dict-cpp@7.1.2...@cspell/dict-cpp@7.1.3) (2026-10-01)
+
+
+### Updates and Bug Fixes
+
+* **software-terms:** add security and supply-chain terms, and DBOS ([#5770](https://github.com/streetsidesoftware/cspell-dicts/issues/5770)) ([9a725e7](https://github.com/streetsidesoftware/cspell-dicts/commit/9a725e77926eebd475bd5d8f844b1d7629902449))
+
 ## [7.1.2](https://github.com/streetsidesoftware/cspell-dicts/compare/@cspell/dict-cpp@7.1.1...@cspell/dict-cpp@7.1.2) (2026-09-12)
 
 
