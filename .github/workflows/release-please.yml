@@ -34,4 +34,33 @@ jobs:
           config-file: release-please-config.json
           manifest-file: .release-please-manifest.json
 
+      # After a release, the config script drops each `release-as` whose version is now in the manifest.
+      - name: Checkout code
+        if: ${{ steps.release.outputs.releases_created }}
+        uses: actions/checkout@3d3c42e5aac5ba805825da76410c181273ba90b1 # v7.0.1
+        with:
+          persist-credentials: false
+
+      - name: Setup
+        if: ${{ steps.release.outputs.releases_created }}
+        uses: ./.github/actions/quick-setup
+
+      - name: Update the Release Please config
+        if: ${{ steps.release.outputs.releases_created }}
+        run: |
+          pnpm i
+          pnpm run gen:release-please-config
+
+      - name: PR
+        if: ${{ steps.release.outputs.releases_created }}
+        uses: ./.github/actions/pr
+        with:
+          commit-message: 'chore: update the Release Please config after a release'
+          branch: release-please-config
+          base: main
+          body: |
+            Removes `release-as` from packages that have now been released at that version.
+          app_id: ${{ secrets.AUTOMATION_APP_ID }}
+          app_private_key: ${{ secrets.AUTOMATION_PRIVATE_KEY }}
+
 # cspell:ignore noreply

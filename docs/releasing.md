@@ -27,13 +27,14 @@ See [Commits and pull requests](./commits-and-pull-requests.md) for which type t
 - **`release-please-config.json` is generated.** Never edit it by hand.
   `pnpm run gen:release-please-config` writes it from the settings in `scripts/gen-release-please-config.mts`,
   including `changelog-sections`, and every `dictionaries/*/package.json` and `packages/*/package.json`.
-  - The Build Dictionaries workflow runs it after each push to `main`, and opens its PR with any change. Pull requests
-    don't run it.
+  - The Build Dictionaries workflow runs it after each push to `main`, and the release-please workflow runs it right
+    after a release. Each opens a PR with any change. Pull requests don't run it.
   - It also adds each new package to `.release-please-manifest.json`, with the version in its `package.json`.
   - To release a package at a set version, such as a new dictionary's `1.0.0`, run the Release Dictionary workflow
     from the Actions tab, or `pnpm run release-as <package> [--version <version>]`. Both set the package's
-    `release-as`. The script keeps it until the manifest shows that version was released. The release itself comes
-    with the next `fix:` or `feat:` change inside the package's directory, such as a Build Dictionaries bot PR.
+    `release-as`. The release itself comes with the next `fix:` or `feat:` change inside the package's directory,
+    such as a Build Dictionaries bot PR. The script keeps `release-as` until the manifest shows that version was
+    released, so the release-please workflow's PR right after the release removes it.
   - Private packages are included on purpose. When one is released, the `node-workspace` plugin also releases the
     packages that depend on it, such as the English dictionaries that build from `@cspell/aoo-mozilla-en-dict`.
 - **The `"."` entry always stays.** It is the root `cspell-dicts` package, which is private and never published.
