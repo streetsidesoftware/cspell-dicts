@@ -9,7 +9,6 @@ on:
 permissions:
   contents: write
   pull-requests: write
-  id-token: write
 
 ## Do not cancel in-progress jobs. This can break the publish flow.
 # concurrency:
@@ -20,20 +19,19 @@ jobs:
   release-please:
     if: github.repository_owner == 'streetsidesoftware'
     runs-on: ubuntu-latest
-    outputs:
-      release_created: ${{ steps.release.outputs.release_created }}
     steps:
+      # An App token, so the tags Release Please pushes start the Publish to NPM workflow.
+      - id: generate-token
+        uses: actions/create-github-app-token@bcd2ba49218906704ab6c1aa796996da409d3eb1 # v3.2.0
+        with:
+          client-id: ${{ secrets.AUTOMATION_APP_ID }}
+          private-key: ${{ secrets.AUTOMATION_PRIVATE_KEY }}
+
       - uses: googleapis/release-please-action@v5
         id: release
         with:
+          token: ${{ steps.generate-token.outputs.token }}
           config-file: release-please-config.json
           manifest-file: .release-please-manifest.json
 
-  publish:
-    needs:
-      - release-please
-    uses: ./.github/workflows/publish.yml
-    secrets:
-      PUBLISH_NPM: ${{ secrets.PUBLISH_NPM }}
-    if: ${{ needs.release-please.outputs.release_created }}
 # cspell:ignore noreply
