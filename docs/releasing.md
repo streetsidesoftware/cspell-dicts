@@ -32,7 +32,8 @@ See [Commits and pull requests](./commits-and-pull-requests.md) for which type t
   - It also adds each new package to `.release-please-manifest.json`, with the version in its `package.json`.
   - To release a package at a set version, such as a new dictionary's `1.0.0`, run the Release Dictionary workflow
     from the Actions tab, or `pnpm run release-as <package> [--version <version>]`. Both set the package's
-    `release-as`. The script keeps it until the manifest shows that version was released.
+    `release-as`. The script keeps it until the manifest shows that version was released. The release itself comes
+    with the next `fix:` or `feat:` change inside the package's directory, such as a Build Dictionaries bot PR.
   - Private packages are included on purpose. When one is released, the `node-workspace` plugin also releases the
     packages that depend on it, such as the English dictionaries that build from `@cspell/aoo-mozilla-en-dict`.
 - **The `"."` entry always stays.** It is the root `cspell-dicts` package, which is private and never published.
