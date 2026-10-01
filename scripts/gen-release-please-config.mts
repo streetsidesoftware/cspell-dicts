@@ -63,7 +63,7 @@ async function findPackageDirs(): Promise<string[]> {
 
 // Private packages stay in: when one is released, the node-workspace plugin also releases the packages that
 // depend on it, such as the English dictionaries that build from @cspell/aoo-mozilla-en-dict.
-// A package new to the config starts with `prerelease: true`. A maintainer removes it once the package is on npm.
+// A package new to the config starts with `prerelease: true`. `make-prerelease.mts --remove` takes it off.
 async function genConfig(current: string): Promise<string> {
     const existing: Record<string, PackageEntry> | undefined = current ? JSON.parse(current).packages : undefined;
     const packages: Record<string, PackageEntry> = {};
