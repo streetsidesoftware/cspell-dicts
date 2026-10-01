@@ -17,6 +17,8 @@ const settings = {
     'bootstrap-sha': '57747d12b18819775592694ea936eb9e4ce875b6',
     'include-v-in-tag': false,
     'tag-separator': '@',
+    'prerelease-type': 'alpha',
+    prerelease: true,
     plugins: [
         {
             type: 'node-workspace',
@@ -44,7 +46,6 @@ const settings = {
 interface PackageEntry {
     component: string;
     releaseType: 'node';
-    prerelease?: boolean;
 }
 
 async function findPackageDirs(): Promise<string[]> {
@@ -63,14 +64,12 @@ async function findPackageDirs(): Promise<string[]> {
 
 // Private packages stay in: when one is released, the node-workspace plugin also releases the packages that
 // depend on it, such as the English dictionaries that build from @cspell/aoo-mozilla-en-dict.
-// A package new to the config starts with `prerelease: true`. `make-prerelease.mts --remove` takes it off.
 async function genConfig(current: string): Promise<string> {
     const existing: Record<string, PackageEntry> | undefined = current ? JSON.parse(current).packages : undefined;
     const packages: Record<string, PackageEntry> = {};
     for (const dir of ['.', ...(await findPackageDirs())]) {
         const pkg = JSON.parse(await fs.readFile(path.join(rootDir, dir, 'package.json'), 'utf8'));
-        const prerelease = existing && (existing[dir] ? existing[dir].prerelease : true);
-        packages[dir] = { component: pkg.name, releaseType: 'node', ...(prerelease && { prerelease }) };
+        packages[dir] = { component: pkg.name, releaseType: 'node' };
     }
     const options = await resolveConfig(configFile, { editorconfig: true });
     // Expanded input, because Prettier keeps an object on one line when the input has it on one line.
