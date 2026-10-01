@@ -107,15 +107,29 @@ async function checkConfig(checkOnly: boolean): Promise<boolean> {
     return true;
 }
 
-async function checkVersionManifest(checkOnly: boolean): Promise<boolean> {
+async function checkVersionManifest(readOnly: boolean): Promise<boolean> {
     const current = await fs.readFile(versionFilePath, 'utf8').catch(() => '');
     const manifest = await genVersionManifest();
 
     if (manifest === current) return true;
 
-    if (checkOnly) {
-        console.error('%s is out of date. Run `pnpm run gen:release-please-config`.', versionFile);
-        return false;
+    if (readOnly) {
+        console.error('%s: version mismatches', versionFile);
+
+        const currentManifest = JSON.parse(current || '{}');
+        const newManifest = JSON.parse(manifest);
+
+        for (const key of Object.keys(newManifest)) {
+            if (currentManifest[key] !== newManifest[key]) {
+                console.error('Mismatch for %s: current=%s, new=%s', key, currentManifest[key], newManifest[key]);
+            }
+        }
+        for (const key of Object.keys(currentManifest)) {
+            if (!(key in newManifest)) {
+                console.error('Key %s is missing in the new manifest', key);
+            }
+        }
+        return true; // do not update the file when in read-only mode
     }
 
     await fs.writeFile(versionFilePath, manifest);
