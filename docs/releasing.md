@@ -32,6 +32,35 @@ See [Commits and pull requests](./commits-and-pull-requests.md) for which type t
 - **A new package is private until it is ready.** The generator creates it with `private: true`. Set it to `false`
   when the package should be published.
 
+## Trusted Publishing
+
+`publish.yml` can publish through [npm Trusted Publishing](https://docs.npmjs.com/trusted-publishers): npm accepts a
+publish from this repo's `publish.yml` workflow without a token, for each package that trusts that workflow on npm.
+
+`publish.yml` still sets `NODE_AUTH_TOKEN`. lerna-lite tries Trusted Publishing first, and if that fails, falls back to
+the token without failing the workflow. So a package that isn't set up still publishes, with the token, and only the
+registry shows it: the version's publisher is `GitHub Actions` with Trusted Publishing, or a user name with the token.
+
+`pnpm run trusted-publishing` (`scripts/npm-trusted-publishing.mts`) manages this. With no package names, it does every
+public package under `dictionaries/` and `packages/`.
+
+- `pnpm run trusted-publishing [<package>...]` adds `publish.yml` in `streetsidesoftware/cspell-dicts` as a trusted
+  publisher where it's missing.
+- `pnpm run trusted-publishing --check [<package>...]` reports whether each package has that trusted publisher and how
+  its latest version was published. It exits 1 if any package isn't set up or was last published with a token.
+- `pnpm run trusted-publishing --mfa [<package>...]` requires 2FA and disallows tokens for publishing each package.
+
+When you run it:
+
+- Add `--dry-run` to see the changes without making them.
+- It needs npm rights for the packages and 2FA. npm opens a browser page for 2FA. Choose to skip 2FA for the next 5
+  minutes. It pauses 2 seconds between packages, so about 40 packages fit in one window. Run it again after the
+  window ends: it skips packages that are already set up.
+- `--mfa` is for after every package publishes through Trusted Publishing. Once a package disallows tokens, only
+  Trusted Publishing or a maintainer with 2FA can publish it.
+- A new package's first version is published by hand. See
+  [Creating a dictionary](./guides/new-dictionary.md#9-publish-the-first-version-by-hand).
+
 ## Fixing a changelog entry after merge
 
 If a PR merged with the wrong type, correct it on the merged PR, never on the release PR, which is regenerated on every

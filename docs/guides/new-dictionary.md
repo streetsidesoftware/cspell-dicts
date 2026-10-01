@@ -151,6 +151,34 @@ pnpm exec cspell link remove ./cspell-ext.json
 - Use a `feat(<name>): add <friendly name> dictionary` title. See
   [Commits and pull requests](../commits-and-pull-requests.md).
 
+## 9. Publish the first version by hand
+
+CI publishes through npm Trusted Publishing, which only works for a package that is already on npm. A maintainer with
+npm publish rights for `@cspell` publishes the first version, after the PR is approved and before it is merged.
+
+In the package, with the PR's branch checked out:
+
+```sh
+pnpm pack
+npm publish <package tarball>.tgz --provenance=false
+```
+
+`pnpm pack` replaces `workspace:` versions with real ones. `--provenance=false` is needed because npm only creates
+provenance in CI. npm asks for 2FA.
+
+Then, from the repo root:
+
+```sh
+pnpm run trusted-publishing <package name>
+```
+
+- Check that the package is on npmjs.com at version `1.0.0`.
+- Check that `pnpm run trusted-publishing --check <package name>` reports `trusted publisher yes`.
+- Merge the PR. Release Please releases `1.0.0`, and the publish skips it because it is already on npm. Later versions
+  are published by CI.
+
+See [Releasing](../releasing.md#trusted-publishing).
+
 ## Dictionary definitions
 
 Each entry in `dictionaryDefinitions` in `cspell-ext.json`:
