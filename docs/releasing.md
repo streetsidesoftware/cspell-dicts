@@ -46,16 +46,16 @@ this repo's Publish to NPM workflow (`publish.yml`).
 ### Setting up Trusted Publishing
 
 Each package has to trust that workflow on npm. The script `scripts/npm-trusted-publishing.mts` sets that up, run as
-`pnpm run trusted-publishing`. With no package names, it does every public package under `dictionaries/` and
-`packages/`.
+`pnpm run trusted-publishing`. Give it package names, or `--all` for every public package under `dictionaries/` and
+`packages/`. With neither, it prints its usage.
 
-- **Add:** `pnpm run trusted-publishing [<package>...]` adds `publish.yml` in `streetsidesoftware/cspell-dicts` as a
-  trusted publisher where it's missing.
-- **Check:** `pnpm run trusted-publishing --check [<package>...]` reports whether each package has that trusted
+- **Add:** `pnpm run trusted-publishing (<package>... | --all)` adds `publish.yml` in
+  `streetsidesoftware/cspell-dicts` as a trusted publisher where it's missing.
+- **Check:** `pnpm run trusted-publishing --check (<package>... | --all)` reports whether each package has that trusted
   publisher and how its latest version was published. It exits 1 if any package isn't set up or was last published
   with a token.
-- **Block tokens:** `pnpm run trusted-publishing --mfa [<package>...]` requires 2FA and disallows tokens for publishing
-  each package.
+- **Block tokens:** `pnpm run trusted-publishing --mfa (<package>... | --all)` requires 2FA and disallows tokens for
+  publishing each package.
 
 When you run it:
 

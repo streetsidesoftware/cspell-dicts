@@ -155,15 +155,18 @@ interface Options {
     check?: boolean;
     mfa?: boolean;
     dryRun?: boolean;
+    all?: boolean;
 }
 
 async function run(requested: string[], options: Options): Promise<void> {
     if (options.check && options.mfa) throw new Error('Use either --check or --mfa, not both.');
+    if (options.all && requested.length) throw new Error('Use either --all or package names, not both.');
+    if (!options.all && !requested.length) program.help({ error: true });
 
     const publicPackages = await findPublicPackages();
     const notPublic = requested.filter((name) => !publicPackages.includes(name));
     if (notPublic.length) throw new Error(`Not a public package in this repo: ${notPublic.join(', ')}`);
-    const names = requested.length ? requested : publicPackages;
+    const names = options.all ? publicPackages : requested;
 
     const dryRun = !!options.dryRun;
     if (options.check) return check(names);
@@ -181,7 +184,8 @@ program
         `Add a trusted publisher for ${workflowFile} to each public package that doesn't have one.\n` +
             'npm asks for 2FA in the browser: choose to skip 2FA for the next 5 minutes, and rerun when the window ends.',
     )
-    .argument('[packages...]', 'package names; default: every public package under dictionaries/ and packages/')
+    .argument('[packages...]', 'package names')
+    .option('--all', 'every public package under dictionaries/ and packages/')
     .option('--check', "report each package's trusted publisher and how its latest version was published")
     .option('--mfa', 'require 2FA and disallow tokens for publishing each package')
     .option('--dry-run', 'show what would change without changing it')
