@@ -32,8 +32,9 @@ If an existing dictionary comes close, adding words to it may be the better chan
   or whether users must add it to `dictionaries` themselves.
 - **Format:** plaintext, or a trie for large lists such as Hunspell dictionaries.
 
-If more than one answer is reasonable and the choice would be hard to undo, record it as an ADR. See
-[ADRs](../ADRs/README.md).
+Most new dictionaries don't need ADRs. Record the design as ADRs only when the dictionary takes a different approach
+from this guide, or needs scripts of its own beyond the generator, the build, and a `sync` script as in
+[Upstream updates](./upstream-updates.md). See [ADRs](../ADRs/README.md).
 
 ## 3. Check the sources and their license
 
