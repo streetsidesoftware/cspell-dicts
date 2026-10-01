@@ -142,8 +142,8 @@ Workflows in `.github/workflows/`:
 | `update-readme.yml`       | pushes to `main`, manual                                  | Updates contributors, runs `build:readme`, and opens an "Update README.md" PR                                 |
 | `update-dependencies.yml` | pushes to `main` that touch dependencies, weekly, manual  | Updates dependencies, regenerates `release-please-config.json`, and opens a PR                                |
 | `update-dependabot.yml`   | daily, manual                                             | Updates `.github/dependabot.yaml` and opens a PR                                                              |
-| `release-please.yml`      | pushes to `main`, manual                                  | Maintains the release PR, and publishes when a release is created (see [Releasing](./releasing.md))           |
-| `publish.yml`             | called by `release-please.yml`, manual                    | Publishes changed packages to npm                                                                             |
+| `release-please.yml`      | pushes to `main`, manual                                  | Maintains the release PR and creates the releases and tags (see [Releasing](./releasing.md))                  |
+| `publish.yml`             | `cspell-dicts@*` release tags, manual                     | Publishes changed packages to npm                                                                             |
 | `codeql-analysis.yml`     | pull requests, pushes to `main`, weekly                   | CodeQL analysis                                                                                               |
 
 Dependabot (`.github/dependabot.yaml`) opens dependency and GitHub Actions update PRs.

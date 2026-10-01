@@ -12,9 +12,10 @@ See [Commits and pull requests](./commits-and-pull-requests.md) for which type t
    `@cspell/dict-cspell-bundle`, with a "workspace dependencies were updated" changelog entry.
 2. **Merging the release PR creates the releases.** Release Please tags each released package as
    `<package name>@<version>` and records the versions in `.release-please-manifest.json`.
-3. **The same workflow publishes.** When a release was created, `release-please.yml` calls `publish.yml`, which runs
-   `lerna publish from-package`. It publishes every package whose `package.json` version isn't on npm yet, and skips
-   packages marked `private: true`.
+3. **The release tag starts publishing.** Every release also tags the root package as `cspell-dicts@<version>`. That tag
+   starts `publish.yml`, which runs `lerna publish from-package`. Release Please pushes it with a GitHub App token,
+   because a tag pushed with the default `GITHUB_TOKEN` doesn't start other workflows. The publish covers every package
+   whose `package.json` version isn't on npm yet, and skips packages marked `private: true`.
 
 ## Rules
 
