@@ -80,7 +80,7 @@ too.
    cspell config to turn it on, then the design (one line per ADR, linking to the feature's `README.md`), the sources
    with their licenses, and the checks that ran. Push only when the user asks, or when the task was to open the PR.
 
-9. **After merge,** remove the worktree and delete the branch. From then on, amend or archive the ADRs with
+9. **After merge,** remove the worktree and delete the branch. From then on, change or archive the ADRs with
    `feature-adr` (step 10).
 
 ## Notes

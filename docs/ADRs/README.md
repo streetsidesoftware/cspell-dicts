@@ -6,10 +6,18 @@ belong in an issue instead.
 
 The templates for every file described here are in [`template.md`](./template.md).
 
-## When to write ADRs
+## Purpose
 
-Write ADRs before building a change whose design has more than one reasonable answer, especially when the choice is
-hard to undo once it ships:
+ADRs are a tool for designing a feature well. The goal is a well-designed feature, not the ADRs.
+
+They help us work through a design one decision at a time. Later, they show others how we got there and what we
+thought mattered. They record how the feature was designed. They aren't a contract: when building or using the feature
+shows a better answer, change the design.
+
+## When to use ADRs
+
+Use ADRs to settle a change whose design has more than one reasonable answer before building it, especially when the
+choice is hard to undo once it ships:
 
 - a new dictionary package's name and dictionary IDs
 - which file types or locales a dictionary is turned on for by default
@@ -36,7 +44,6 @@ separate ADRs (a dictionary's IDs, and which file types turn it on).
 
 - `Proposed`: under discussion.
 - `Accepted`: decided.
-- `Accepted, amended`: decided, then changed after merge (see [Amending](#amending)).
 - `Superseded by NNNN`: overturned by a later ADR in the same feature.
 
 ## Designing a feature
@@ -69,13 +76,14 @@ When the design is final, rewrite the feature's ADRs into the smallest set that 
 
 The working history stays in the branch and the PR.
 
-## Amending
+## Changing a merged design
 
-After a design has merged, don't rewrite or squash its ADRs.
+Building or using a feature often shows a better answer. When it does, change the design, and update its ADRs in the
+same PR:
 
-- To change a decision, add an `## Amendment: <what changed>` section to the ADR, and set its status to
-  `Accepted, amended`.
-- To reverse a decision, write a new ADR that supersedes it.
+- Rewrite the ADR to state the current decision, and add a sentence to its Context on what changed and why. The earlier
+  version stays in git history.
+- If a decision is replaced outright, write a new ADR and mark the old one `Superseded by NNNN`.
 
 ## Archiving
 
@@ -98,6 +106,9 @@ each other's files, and those are deleted together.
 ## Branches
 
 Work on a design in an `adr/<feature>` branch, and on archiving in an `adr-archive/<feature>` branch.
+
+When a design is worth reviewing before it's built, merge it on its own with a `docs:` PR, so it stays out of the
+release notes. Otherwise, include the ADRs in the PR that builds the change.
 
 A new dictionary is the exception: its design and the package ship together, in one `new-dictionary/<name>` branch
 and one PR.
