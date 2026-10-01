@@ -50,7 +50,7 @@ async function findPublicPackages(): Promise<string[]> {
 }
 
 async function fetchLatest(name: string): Promise<PublishInfo | undefined> {
-    const response = await fetch(`${registry}/${name.replace('/', '%2f')}/latest`);
+    const response = await fetch(`${registry}/${name.replaceAll('/', '%2f')}/latest`);
     if (response.status === 404) return undefined;
     if (!response.ok) throw new Error(`${name}: registry returned ${response.status}`);
     const manifest = (await response.json()) as {

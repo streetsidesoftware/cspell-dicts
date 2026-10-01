@@ -40,15 +40,14 @@ See [Commits and pull requests](./commits-and-pull-requests.md) for which type t
 
 ## Trusted Publishing
 
-The Publish to NPM workflow can publish through [npm Trusted Publishing](https://docs.npmjs.com/trusted-publishers):
-npm accepts a publish from this repo's `publish.yml` without a token, for each package that trusts that workflow on npm.
+For security, every package is published with [npm Trusted Publishing](https://docs.npmjs.com/trusted-publishers), from
+this repo's Publish to NPM workflow (`publish.yml`).
 
-The workflow still sets `NODE_AUTH_TOKEN`. lerna-lite tries Trusted Publishing first, and if that fails, falls back to
-the token without failing the workflow. So a package that isn't set up still publishes, with the token, and only the
-registry shows it: the version's publisher is `GitHub Actions` with Trusted Publishing, or a user name with the token.
+### Setting up Trusted Publishing
 
-The script `scripts/npm-trusted-publishing.mts` manages this, run as `pnpm run trusted-publishing`. With no package
-names, it does every public package under `dictionaries/` and `packages/`.
+Each package has to trust that workflow on npm. The script `scripts/npm-trusted-publishing.mts` sets that up, run as
+`pnpm run trusted-publishing`. With no package names, it does every public package under `dictionaries/` and
+`packages/`.
 
 - **Add:** `pnpm run trusted-publishing [<package>...]` adds `publish.yml` in `streetsidesoftware/cspell-dicts` as a
   trusted publisher where it's missing.
@@ -80,10 +79,19 @@ A new package stays private through its first PRs. Once it has been verified, a 
   `dictionaries/cspell/package.json` as `"workspace:^"`, then run `pnpm run build` in `dictionaries/cspell`. Whether
   cspell itself bundles it is decided in the [cspell](https://github.com/streetsidesoftware/cspell) repo.
 
-Trusted Publishing only works for a package that is already on npm, so the maintainer also publishes its current version
-by hand, before merging that PR.
+Trusted Publishing only works for a package that is already on npm, so the maintainer publishes its first version by
+hand, right after that PR is merged.
 
-#### 1. Log in to npm
+#### 1. Merge the PR
+
+Merge the PR that makes the package public, then update your checkout:
+
+```sh
+git switch main
+git pull
+```
+
+#### 2. Log in to npm
 
 ```sh
 npm login --auth-type=web
@@ -92,9 +100,9 @@ npm login --auth-type=web
 - npm opens a browser page to log in, with 2FA.
 - Check that `npm whoami` shows your npm user name.
 
-#### 2. Publish it
+#### 3. Publish it
 
-In the package, with that PR's branch checked out:
+In the package directory, on `main`:
 
 ```sh
 pnpm pack
@@ -105,7 +113,7 @@ npm publish <package tarball>.tgz --provenance=false
 - The `--provenance=false` option is needed because npm only creates provenance in CI.
 - npm asks for 2FA.
 
-#### 3. Add the trusted publisher
+#### 4. Add the trusted publisher
 
 From the repo root:
 
@@ -116,9 +124,7 @@ pnpm run trusted-publishing <package name>
 - Check that the package is on npmjs.com at the version in its `package.json`.
 - Check that `pnpm run trusted-publishing --check <package name>` reports `trusted publisher yes`.
 
-#### 4. Merge the PR
-
-The publish skips the version that is already on npm. CI publishes later versions through Trusted Publishing.
+CI publishes later versions through Trusted Publishing.
 
 ## Fixing a changelog entry after merge
 
