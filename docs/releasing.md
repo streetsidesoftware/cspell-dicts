@@ -30,8 +30,9 @@ See [Commits and pull requests](./commits-and-pull-requests.md) for which type t
 - **Never add a new package to `.release-please-manifest.json`.** The manifest records each package's last released
   version. Release Please adds a new package on its first release, using the version in its `package.json`
   (`1.0.0` for a package made by the generator). Seeding the manifest by hand makes the first release land above it.
-- **A new package is private until it is ready.** The generator creates it with `private: true`. Set it to `false`
-  when the package should be published.
+- **A new package is private until a maintainer verifies it.** The generator creates it with `private: true` and
+  "-- Private until verified" in `description`. Contributors leave both. A maintainer removes them in a separate PR.
+  See [New packages](#new-packages).
 
 ## Trusted Publishing
 
@@ -64,8 +65,12 @@ When you run it:
 
 ### New packages
 
-Trusted Publishing only works for a package that is already on npm. So a maintainer with npm publish rights for
-`@cspell` publishes a new package's first version by hand, after its PR is approved and before it is merged.
+A new package stays private through its first PRs. Once it has been verified, a maintainer with npm publish rights for
+`@cspell` makes it public in a `chore:` PR, such as `chore(<name>): publish`. That PR sets `private` to `false` and
+removes "-- Private until verified" from `description`.
+
+Trusted Publishing only works for a package that is already on npm, so the maintainer also publishes its current version
+by hand, before merging that PR.
 
 #### 1. Log in to npm
 
@@ -78,7 +83,7 @@ npm login --auth-type=web
 
 #### 2. Publish it
 
-In the package, with the PR's branch checked out:
+In the package, with that PR's branch checked out:
 
 ```sh
 pnpm pack
@@ -97,12 +102,12 @@ From the repo root:
 pnpm run trusted-publishing <package name>
 ```
 
-- Check that the package is on npmjs.com at version `1.0.0`.
+- Check that the package is on npmjs.com at the version in its `package.json`.
 - Check that `pnpm run trusted-publishing --check <package name>` reports `trusted publisher yes`.
 
 #### 4. Merge the PR
 
-Release Please releases `1.0.0`, and the publish skips it because it is already on npm. CI publishes later versions.
+The publish skips the version that is already on npm. CI publishes later versions through Trusted Publishing.
 
 ## Fixing a changelog entry after merge
 
