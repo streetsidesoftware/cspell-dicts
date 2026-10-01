@@ -2,6 +2,8 @@
     "bootstrap-sha": "57747d12b18819775592694ea936eb9e4ce875b6",
     "include-v-in-tag": false,
     "tag-separator": "@",
+    "prerelease-type": "alpha",
+    "prerelease": true,
     "plugins": [
         {
             "type": "node-workspace",
@@ -465,8 +467,7 @@
         },
         "dictionaries/perl": {
             "component": "@cspell/dict-perl",
-            "releaseType": "node",
-            "prerelease": true
+            "releaseType": "node"
         },
         "dictionaries/php": {
             "component": "@cspell/dict-php",
