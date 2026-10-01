@@ -40,6 +40,10 @@ jobs:
       - name: Setup
         uses: ./.github/actions/setup
 
+      - name: Normalize package.json
+        run: |
+          pnpm update-package-json
+
       - name: Sort Source
         run: |
           pnpm run lint:fix:sort-source-files

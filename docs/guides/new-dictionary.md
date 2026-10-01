@@ -75,8 +75,8 @@ It asks:
 | store as trie | `y` for large source files (over about 1 MB) and Hunspell files. `n` works for programming language keyword files.                                                                                      |
 | run build     | Build the dictionary now. You can also run `pnpm run build` in the package later.                                                                                                                       |
 
-It creates `dictionaries/<name>/` with `version` `1.0.0` and `private: true`, so the package isn't published until you
-say so.
+It creates `dictionaries/<name>/` with `version` `1.0.0` and `private: true`, so the package isn't published. A
+maintainer makes it public once the dictionary has been verified.
 
 ## 5. Fill in the package
 
@@ -86,15 +86,12 @@ say so.
 - **`cspell-ext.json`:** the dictionary definitions and `languageSettings`, as decided in step 2. See
   [Dictionary definitions](#dictionary-definitions).
 - **`package.json`:**
-  - Remove "-- Private until verified" from `description`.
   - Add `keywords` for the language or tool and its common alternate names.
   - Check that `files` lists every built file and any upstream license file.
   - Check that the `test` script spell checks the samples or source with the dictionary.
-  - Run `pnpm update-package-json dictionaries/<name>/package.json` from the repo root. It sets `repository`,
-    `author`, and `publishConfig`, and sorts the fields.
 - **`samples/`:** correctly spelled files of the kind the dictionary is for. The `test` script checks them.
 - **`README.md`:** what the dictionary covers and why to use it, for someone installing it. Keep the `@@inject` markers
-  from the template. See [Style](../style.md#writing-for-users).
+  from the template: a workflow fills them in after the PR lands. See [Style](../style.md#writing-for-users).
 
 ## 6. Build and test
 
@@ -105,10 +102,9 @@ pnpm run build
 pnpm test
 ```
 
-Then, from the repo root, generate the README sections and fix formatting:
+Then, from the repo root, fix formatting:
 
 ```sh
-pnpm run build:readme
 pnpm run lint
 ```
 
@@ -116,7 +112,6 @@ Checks:
 
 - `dict/` holds the built files, and they look right.
 - `pnpm test` passes.
-- The README's install and configuration sections were filled in by `build:readme`.
 - `pnpm run lint` leaves no errors.
 
 ## 7. Try it with cspell
@@ -142,13 +137,10 @@ Unlink when you are done:
 pnpm exec cspell link remove ./cspell-ext.json
 ```
 
-## 8. Make it public and open a PR
+## 8. Open a PR
 
-- Set `private` to `false` in `package.json`, once the dictionary is ready to publish.
-- Don't add the package to `.release-please-manifest.json`. See [Releasing](../releasing.md#rules).
-- To include it in `@cspell/dict-cspell-bundle`, add it to `dependencies` in `dictionaries/cspell/package.json` as
-  `"workspace:^"`, then run `pnpm run build` in `dictionaries/cspell`. Whether cspell itself bundles it is decided in
-  the [cspell](https://github.com/streetsidesoftware/cspell) repo.
+- Leave `private: true` and "-- Private until verified" in `package.json`. A maintainer makes the package public in a
+  later PR, once the dictionary has been verified. That often takes more PRs, for samples or build changes.
 - Use a `feat(<name>): add <friendly name> dictionary` title. See
   [Commits and pull requests](../commits-and-pull-requests.md).
 
