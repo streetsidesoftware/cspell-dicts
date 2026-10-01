@@ -11,7 +11,12 @@ import { fileURLToPath } from 'node:url';
 import { format, resolveConfig } from 'prettier';
 
 const rootDir = fileURLToPath(new URL('../', import.meta.url));
-const configFile = path.join(rootDir, 'release-please-config.json');
+
+const configFile = 'release-please-config.json';
+const versionFile = '.release-please-manifest.json';
+
+const configFilePath = path.join(rootDir, configFile);
+const versionFilePath = path.join(rootDir, versionFile);
 
 const settings = {
     'bootstrap-sha': '57747d12b18819775592694ea936eb9e4ce875b6',
@@ -70,26 +75,61 @@ async function genConfig(): Promise<string> {
         const pkg = JSON.parse(await fs.readFile(path.join(rootDir, dir, 'package.json'), 'utf8'));
         packages[dir] = { component: pkg.name, releaseType: 'node' };
     }
-    const options = await resolveConfig(configFile, { editorconfig: true });
+    const options = await resolveConfig(configFilePath, { editorconfig: true });
     // Expanded input, because Prettier keeps an object on one line when the input has it on one line.
-    return format(JSON.stringify({ ...settings, packages }, undefined, 4), { ...options, filepath: configFile });
+    return format(JSON.stringify({ ...settings, packages }, undefined, 4), { ...options, filepath: configFilePath });
+}
+
+async function genVersionManifest(): Promise<string> {
+    const manifest: Record<string, string> = JSON.parse(await fs.readFile(versionFilePath, 'utf8').catch(() => '{}'));
+    for (const dir of ['.', ...(await findPackageDirs())]) {
+        const pkg = JSON.parse(await fs.readFile(path.join(rootDir, dir, 'package.json'), 'utf8'));
+        manifest[dir] = pkg.version;
+    }
+    // const newManifest = Object.fromEntries(Object.entries(manifest).sort(([a], [b]) => compare(a, b)));
+    const newManifest = manifest;
+    return JSON.stringify(newManifest, undefined, 4) + '\n';
+}
+
+async function checkConfig(checkOnly: boolean): Promise<boolean> {
+    const current = await fs.readFile(configFilePath, 'utf8').catch(() => '');
+    const config = await genConfig();
+
+    if (config === current) return true;
+
+    if (checkOnly) {
+        console.error('%s is out of date. Run `pnpm run gen:release-please-config`.', configFile);
+        return false;
+    }
+
+    await fs.writeFile(configFilePath, config);
+    console.log('Updated release-please-config.json');
+    return true;
+}
+
+async function checkVersionManifest(checkOnly: boolean): Promise<boolean> {
+    const current = await fs.readFile(versionFilePath, 'utf8').catch(() => '');
+    const manifest = await genVersionManifest();
+
+    if (manifest === current) return true;
+
+    if (checkOnly) {
+        console.error('%s is out of date. Run `pnpm run gen:release-please-config`.', versionFile);
+        return false;
+    }
+
+    await fs.writeFile(versionFilePath, manifest);
+    console.log('Updated version-manifest.json');
+    return true;
 }
 
 async function run(): Promise<void> {
     const check = process.argv.includes('--check');
-    const current = await fs.readFile(configFile, 'utf8').catch(() => '');
-    const config = await genConfig();
-
-    if (config === current) return;
-
-    if (check) {
-        console.error('release-please-config.json is out of date. Run `pnpm run gen:release-please-config`.');
+    const configOk = await checkConfig(check);
+    const manifestOk = await checkVersionManifest(check);
+    if (!configOk || !manifestOk) {
         process.exitCode = 1;
-        return;
     }
-
-    await fs.writeFile(configFile, config);
-    console.log('Updated release-please-config.json');
 }
 
 async function exists(file: string): Promise<boolean> {
