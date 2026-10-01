@@ -49,12 +49,12 @@ for `@cspell` makes it public in a `chore:` PR, such as `chore(<name>): publish`
   `dictionaries/cspell/package.json` as `"workspace:^"`, then run `pnpm run build` in `dictionaries/cspell`. Whether
   cspell itself bundles it is decided in the [cspell](https://github.com/streetsidesoftware/cspell) repo.
 
-[Trusted Publishing](#trusted-publishing) only works for a package that is already on npm, so the maintainer publishes
-its first version by hand, right after that PR is merged.
+[Trusted Publishing](#trusted-publishing) only works for a dictionary that is already on npm, so the maintainer
+publishes its first version by hand, right after that PR is merged.
 
 ### 1. Merge the PR
 
-Merge the PR that makes the package public, then update your checkout:
+Merge the PR that makes the dictionary public, then update your checkout:
 
 ```sh
 git switch main
@@ -72,7 +72,7 @@ npm login --auth-type=web
 
 ### 3. Publish it
 
-In the package directory, on `main`:
+In the dictionary's directory, `dictionaries/<name>`, on `main`:
 
 ```sh
 pnpm pack
@@ -98,31 +98,32 @@ CI publishes later versions through Trusted Publishing.
 
 ## Trusted Publishing
 
-For security, every package is published with [npm Trusted Publishing](https://docs.npmjs.com/trusted-publishers), from
-this repo's Publish to NPM workflow (`publish.yml`).
+For security, every dictionary is published with
+[npm Trusted Publishing](https://docs.npmjs.com/trusted-publishers), from this repo's Publish to NPM workflow
+(`publish.yml`).
 
 ### Setting up Trusted Publishing
 
-Each package has to trust that workflow on npm. The script `scripts/npm-trusted-publishing.mts` sets that up, run as
-`pnpm run trusted-publishing`. Give it package names, or `--all` for every public package under `dictionaries/` and
-`packages/`. With neither, it prints its usage.
+Each dictionary has to trust that workflow on npm. The script `scripts/npm-trusted-publishing.mts` sets that up, run as
+`pnpm run trusted-publishing`. Give it package names, such as `@cspell/dict-git`, or `--all` for every public
+dictionary. With neither, it prints its usage.
 
 - **Add:** `pnpm run trusted-publishing (<package>... | --all)` adds `publish.yml` in
   `streetsidesoftware/cspell-dicts` as a trusted publisher where it's missing.
-- **Check:** `pnpm run trusted-publishing --check (<package>... | --all)` reports whether each package has that trusted
-  publisher and how its latest version was published. It exits 1 if any package isn't set up or was last published
-  with a token.
+- **Check:** `pnpm run trusted-publishing --check (<package>... | --all)` reports whether each dictionary has that
+  trusted publisher and how its latest version was published. It exits 1 if any dictionary isn't set up or was last
+  published with a token.
 - **Block tokens:** `pnpm run trusted-publishing --mfa (<package>... | --all)` requires 2FA and disallows tokens for
-  publishing each package.
+  publishing each dictionary.
 
 When you run it:
 
 - Add `--dry-run` to see the changes without making them.
-- Log in first with `npm login --auth-type=web`. It needs npm rights for the packages.
+- Log in first with `npm login --auth-type=web`. It needs npm publish rights for `@cspell`.
 - npm opens a browser page for 2FA. Choose to skip 2FA for the next 5 minutes.
-- It pauses 2 seconds between packages, so about 40 packages fit in one window. Run it again after the window ends: it
-  skips packages that are already set up.
-- Use the `--mfa` option only after every package publishes through Trusted Publishing. Once a package disallows
+- It pauses 2 seconds between dictionaries, so about 40 dictionaries fit in one window. Run it again after the window
+  ends: it skips dictionaries that are already set up.
+- Use the `--mfa` option only after every dictionary publishes through Trusted Publishing. Once a dictionary disallows
   tokens, only Trusted Publishing or a maintainer with 2FA can publish it.
 - A new dictionary's first version is published by hand. See [New dictionaries](#new-dictionaries).
 
