@@ -1,6 +1,7 @@
 # Releasing
 
-How packages in this repo get versioned and published. Nothing here is done by hand: Conventional Commits drive it.
+How packages in this repo get versioned and published. Conventional Commits drive it. The only step done by hand is a
+new package's first publish (see [New packages](#new-packages)).
 See [Commits and pull requests](./commits-and-pull-requests.md) for which type to use.
 
 ## The flow
