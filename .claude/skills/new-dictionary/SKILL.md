@@ -55,17 +55,16 @@ build half follows `docs/guides/new-dictionary.md`; read it too.
      interactively; answer from the design.
    - `cspell-ext.json`'s `dictionaryDefinitions` and `languageSettings` match the design exactly: IDs, `languageId`,
      `locale`.
-   - `package.json`: remove "-- Private until verified" from `description`, add `keywords`, check `files` lists every
-     built file and upstream license file, then run `pnpm update-package-json dictionaries/<name>/package.json` from
-     the repo root.
+   - In `package.json`, add `keywords`, and check that `files` lists every built file and upstream license file. Leave
+     `private: true` and "-- Private until verified" in `description`: a maintainer makes the dictionary public in a
+     later PR (see "New dictionaries" in `docs/releasing.md`).
    - An upstream source gets a `sync` script, as in `docs/guides/upstream-updates.md`. Never hand-edit synced files.
    - `samples/` holds correctly spelled files of the kind the dictionary is for, and the `test` script checks them.
      Include text that must still be flagged only if the test can assert it.
    - The README is for someone installing the dictionary, with absolute `https://` links. Keep the template's
-     `@@inject` markers; `pnpm run build:readme` fills them.
-   - Leave `private: true` until the user says the package is ready to publish, then set it to `false`.
+     `@@inject` markers; a workflow fills them in after the PR lands.
    - Never add the package to `.release-please-manifest.json`. `pnpm run lint` adds it to `release-please-config.json`.
-   - Add it to `@cspell/dict-cspell-bundle` only if the design says so.
+   - Don't add it to `@cspell/dict-cspell-bundle`. That happens only after the cspell repo decides to bundle it.
 
 7. **Run every check** from the worktree root:
 
@@ -73,9 +72,8 @@ build half follows `docs/guides/new-dictionary.md`; read it too.
    pnpm install
    pnpm run prepare:dictionaries
    pnpm --filter <package name> test
-   pnpm run build:readme
    pnpm run lint
-   pnpm run check-dirty   # after committing: build:readme and lint left nothing behind
+   pnpm run check-dirty   # after committing: lint left nothing behind
    ```
 
    Then try it as in the guide's step 7 (`cspell link add`), and show the user the result on a sample.

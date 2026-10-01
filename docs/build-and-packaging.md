@@ -131,19 +131,19 @@ A package's `README.md` is its npmjs.com page, so its links must be absolute `ht
 
 Workflows in `.github/workflows/`:
 
-| Workflow                  | Runs on                                                   | What it does                                                                                                  |
-| ------------------------- | --------------------------------------------------------- | ------------------------------------------------------------------------------------------------------------- |
-| `test.yml`                | pull requests, pushes to `main`                           | `pnpm test` on Node 22 and 24 (Ubuntu) and Node 24 (Windows), and a conditional build                         |
-| `lint.yml`                | pull requests and pushes that touch code, docs, or config | `pnpm run lint-ci`: ESLint, Prettier, TypeScript type check, and cspell, without fixing                       |
-| `cspell-action.yml`       | pull requests, pushes to `main`                           | Spell checks the changed files                                                                                |
-| `autofix.yml`             | pull requests                                             | Runs `lint:fix` and `sort`, and pushes the fixes through autofix.ci, unless the PR has the `no-autofix` label |
-| `build-dictionaries.yml`  | pushes to `main`, manual                                  | Sorts sources, runs a conditional build, and opens a "Build Dictionaries" PR with any changes                 |
-| `update-dictionaries.yml` | weekly, manual                                            | Runs every package's `update-dictionary` script and opens an "Update Dictionaries" PR                         |
-| `update-readme.yml`       | pushes to `main`, manual                                  | Updates contributors, runs `build:readme`, and opens an "Update README.md" PR                                 |
-| `update-dependencies.yml` | pushes to `main` that touch dependencies, weekly, manual  | Updates dependencies, regenerates `release-please-config.json`, and opens a PR                                |
-| `update-dependabot.yml`   | daily, manual                                             | Updates `.github/dependabot.yaml` and opens a PR                                                              |
-| `release-please.yml`      | pushes to `main`, manual                                  | Maintains the release PR and creates the releases and tags (see [Releasing](./releasing.md))                  |
-| `publish.yml`             | `cspell-dicts@*` release tags, manual                     | Publishes changed packages to npm                                                                             |
-| `codeql-analysis.yml`     | pull requests, pushes to `main`, weekly                   | CodeQL analysis                                                                                               |
+| Workflow                  | Runs on                                                   | What it does                                                                                                                   |
+| ------------------------- | --------------------------------------------------------- | ------------------------------------------------------------------------------------------------------------------------------ |
+| `test.yml`                | pull requests, pushes to `main`                           | `pnpm test` on Node 22 and 24 (Ubuntu) and Node 24 (Windows), and a conditional build                                          |
+| `lint.yml`                | pull requests and pushes that touch code, docs, or config | `pnpm run lint-ci`: ESLint, Prettier, TypeScript type check, and cspell, without fixing                                        |
+| `cspell-action.yml`       | pull requests, pushes to `main`                           | Spell checks the changed files                                                                                                 |
+| `autofix.yml`             | pull requests                                             | Runs `lint:fix` and `sort`, and pushes the fixes through autofix.ci, unless the PR has the `no-autofix` label                  |
+| `build-dictionaries.yml`  | pushes to `main`, manual                                  | Normalizes `package.json` files, sorts sources, runs a conditional build, and opens a "Build Dictionaries" PR with any changes |
+| `update-dictionaries.yml` | weekly, manual                                            | Runs every package's `update-dictionary` script and opens an "Update Dictionaries" PR                                          |
+| `update-readme.yml`       | pushes to `main`, manual                                  | Updates contributors, runs `build:readme`, and opens an "Update README.md" PR                                                  |
+| `update-dependencies.yml` | pushes to `main` that touch dependencies, weekly, manual  | Updates dependencies, regenerates `release-please-config.json`, and opens a PR                                                 |
+| `update-dependabot.yml`   | daily, manual                                             | Updates `.github/dependabot.yaml` and opens a PR                                                                               |
+| `release-please.yml`      | pushes to `main`, manual                                  | Maintains the release PR and creates the releases and tags (see [Releasing](./releasing.md))                                   |
+| `publish.yml`             | `cspell-dicts@*` release tags, manual                     | Publishes changed packages to npm                                                                                              |
+| `codeql-analysis.yml`     | pull requests, pushes to `main`, weekly                   | CodeQL analysis                                                                                                                |
 
 Dependabot (`.github/dependabot.yaml`) opens dependency and GitHub Actions update PRs.
