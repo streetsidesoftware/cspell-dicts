@@ -1,5 +1,12 @@
 # Change Log
 
+## [1.0.4](https://github.com/streetsidesoftware/cspell-dicts/compare/@cspell/dict-mk@1.0.3...@cspell/dict-mk@1.0.4) (2026-10-01)
+
+
+### Updates and Bug Fixes
+
+* **mk:** use an absolute link to the license ([#5772](https://github.com/streetsidesoftware/cspell-dicts/issues/5772)) ([37b2492](https://github.com/streetsidesoftware/cspell-dicts/commit/37b24929fd8b117053792a5fe7a187f29b51626e))
+
 ## [1.0.3](https://github.com/streetsidesoftware/cspell-dicts/compare/@cspell/dict-mk@1.0.2...@cspell/dict-mk@1.0.3) (2025-07-19)
 
 

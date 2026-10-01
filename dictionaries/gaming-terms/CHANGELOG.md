@@ -1,5 +1,12 @@
 # Change Log
 
+## [1.1.3](https://github.com/streetsidesoftware/cspell-dicts/compare/@cspell/dict-gaming-terms@1.1.2...@cspell/dict-gaming-terms@1.1.3) (2026-10-01)
+
+
+### Updates and Bug Fixes
+
+* **gaming-terms:** add knockback ([#5771](https://github.com/streetsidesoftware/cspell-dicts/issues/5771)) ([59dfcf8](https://github.com/streetsidesoftware/cspell-dicts/commit/59dfcf854bc522c2ac4b59249be08d7d15ff76a1))
+
 ## [1.1.2](https://github.com/streetsidesoftware/cspell-dicts/compare/@cspell/dict-gaming-terms@1.1.1...@cspell/dict-gaming-terms@1.1.2) (2025-07-09)
 
 
