@@ -1,5 +1,9 @@
 # Releasing
 
+> [!WARNING]
+> These instructions are for maintainers. Contributors don't need to do any of this: releases and publishing are
+> handled by maintainers and workflows.
+
 How packages in this repo get versioned and published. Conventional Commits drive it. The only step done by hand is a
 new package's first publish (see [New packages](#new-packages)).
 See [Commits and pull requests](./commits-and-pull-requests.md) for which type to use.
