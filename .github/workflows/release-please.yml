@@ -10,10 +10,10 @@ permissions:
   contents: write
   pull-requests: write
 
-## Do not cancel in-progress jobs. This can break the publish flow.
-# concurrency:
-#   group: ${{ github.workflow }}
-#   cancel-in-progress: true
+# Run one at a time. Cancelling a run in progress can leave a release half done.
+concurrency:
+  group: ${{ github.workflow }}
+  cancel-in-progress: false
 
 jobs:
   release-please:
