@@ -115,10 +115,11 @@ Each dictionary has to trust that workflow on npm. The script `scripts/npm-trust
 dictionary. With neither, it prints its usage.
 
 - **Add:** `pnpm run trusted-publishing (<package>... | --all)` adds `publish.yml` in
-  `streetsidesoftware/cspell-dicts` as a trusted publisher where it's missing.
+  `streetsidesoftware/cspell-dicts` as a trusted publisher where it's missing. It skips dictionaries recorded in
+  `static/published.json` without asking npm.
 - **Check:** `pnpm run trusted-publishing --check (<package>... | --all)` reports whether each dictionary has that
   trusted publisher and how its latest version was published. It exits 1 if any dictionary isn't set up or was last
-  published with a token.
+  published with a token. It asks npm about every dictionary, recorded or not.
 - **Block tokens:** `pnpm run trusted-publishing --mfa (<package>... | --all)` requires 2FA and disallows tokens for
   publishing each dictionary.
 
@@ -127,8 +128,11 @@ When you run it:
 - Add `--dry-run` to see the changes without making them.
 - Log in first with `npm login --auth-type=web`. It needs npm publish rights for `@cspell`.
 - npm opens a browser page for 2FA. Choose to skip 2FA for the next 5 minutes.
-- It pauses 2 seconds between dictionaries, so about 40 dictionaries fit in one window. Run it again after the window
+- It pauses 2 seconds between dictionaries, so a window fits about 40 to 80 of them. Run it again after the window
   ends: it skips dictionaries that are already set up.
+- It records each dictionary it finds or sets up in `static/published.json`, as
+  `"@cspell/dict-<name>": { "trustedPublishing": true }`. Commit that file after a run, so the next run only touches
+  new dictionaries.
 - Use the `--mfa` option only after every dictionary publishes through Trusted Publishing. Once a dictionary disallows
   tokens, only Trusted Publishing or a maintainer with 2FA can publish it.
 - A new dictionary's first version is published by hand. See [New dictionaries](#new-dictionaries).
