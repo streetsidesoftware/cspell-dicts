@@ -34,7 +34,7 @@ See [Commits and pull requests](./commits-and-pull-requests.md) for which type t
 - **Never add a new package to `.release-please-manifest.json`.** The manifest records each package's last released
   version. Release Please adds a new package on its first release, using the version in its `package.json`
   (`1.0.0` for a package made by the generator). Seeding the manifest by hand makes the first release land above it.
-- **A new package is private until a maintainer verifies it.** The generator creates it with `private: true` and
+- **A new dictionary is private until a maintainer verifies it.** The generator creates it with `private: true` and
   "-- Private until verified" in `description`. Contributors leave both. A maintainer removes them in a separate PR.
   See [New dictionaries](#new-dictionaries).
 
