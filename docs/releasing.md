@@ -40,21 +40,23 @@ See [Commits and pull requests](./commits-and-pull-requests.md) for which type t
 
 ## Trusted Publishing
 
-`publish.yml` can publish through [npm Trusted Publishing](https://docs.npmjs.com/trusted-publishers): npm accepts a
-publish from this repo's `publish.yml` workflow without a token, for each package that trusts that workflow on npm.
+The Publish to NPM workflow can publish through [npm Trusted Publishing](https://docs.npmjs.com/trusted-publishers):
+npm accepts a publish from this repo's `publish.yml` without a token, for each package that trusts that workflow on npm.
 
-`publish.yml` still sets `NODE_AUTH_TOKEN`. lerna-lite tries Trusted Publishing first, and if that fails, falls back to
+The workflow still sets `NODE_AUTH_TOKEN`. lerna-lite tries Trusted Publishing first, and if that fails, falls back to
 the token without failing the workflow. So a package that isn't set up still publishes, with the token, and only the
 registry shows it: the version's publisher is `GitHub Actions` with Trusted Publishing, or a user name with the token.
 
-`pnpm run trusted-publishing` (`scripts/npm-trusted-publishing.mts`) manages this. With no package names, it does every
-public package under `dictionaries/` and `packages/`.
+The script `scripts/npm-trusted-publishing.mts` manages this, run as `pnpm run trusted-publishing`. With no package
+names, it does every public package under `dictionaries/` and `packages/`.
 
-- `pnpm run trusted-publishing [<package>...]` adds `publish.yml` in `streetsidesoftware/cspell-dicts` as a trusted
-  publisher where it's missing.
-- `pnpm run trusted-publishing --check [<package>...]` reports whether each package has that trusted publisher and how
-  its latest version was published. It exits 1 if any package isn't set up or was last published with a token.
-- `pnpm run trusted-publishing --mfa [<package>...]` requires 2FA and disallows tokens for publishing each package.
+- **Add:** `pnpm run trusted-publishing [<package>...]` adds `publish.yml` in `streetsidesoftware/cspell-dicts` as a
+  trusted publisher where it's missing.
+- **Check:** `pnpm run trusted-publishing --check [<package>...]` reports whether each package has that trusted
+  publisher and how its latest version was published. It exits 1 if any package isn't set up or was last published
+  with a token.
+- **Block tokens:** `pnpm run trusted-publishing --mfa [<package>...]` requires 2FA and disallows tokens for publishing
+  each package.
 
 When you run it:
 
@@ -63,8 +65,8 @@ When you run it:
 - npm opens a browser page for 2FA. Choose to skip 2FA for the next 5 minutes.
 - It pauses 2 seconds between packages, so about 40 packages fit in one window. Run it again after the window ends: it
   skips packages that are already set up.
-- `--mfa` is for after every package publishes through Trusted Publishing. Once a package disallows tokens, only
-  Trusted Publishing or a maintainer with 2FA can publish it.
+- Use the `--mfa` option only after every package publishes through Trusted Publishing. Once a package disallows
+  tokens, only Trusted Publishing or a maintainer with 2FA can publish it.
 - A new package's first version is published by hand. See [New packages](#new-packages).
 
 ### New packages
@@ -99,8 +101,8 @@ pnpm pack
 npm publish <package tarball>.tgz --provenance=false
 ```
 
-- `pnpm pack` replaces `workspace:` versions with real ones.
-- `--provenance=false` is needed because npm only creates provenance in CI.
+- The pack step replaces `workspace:` versions with real ones.
+- The `--provenance=false` option is needed because npm only creates provenance in CI.
 - npm asks for 2FA.
 
 #### 3. Add the trusted publisher
