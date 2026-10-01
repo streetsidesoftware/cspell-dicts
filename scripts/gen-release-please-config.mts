@@ -44,6 +44,7 @@ const settings = {
 interface PackageEntry {
     component: string;
     releaseType: 'node';
+    prerelease?: boolean;
 }
 
 async function findPackageDirs(): Promise<string[]> {
@@ -62,11 +63,14 @@ async function findPackageDirs(): Promise<string[]> {
 
 // Private packages stay in: when one is released, the node-workspace plugin also releases the packages that
 // depend on it, such as the English dictionaries that build from @cspell/aoo-mozilla-en-dict.
-async function genConfig(): Promise<string> {
+// A package new to the config starts with `prerelease: true`. A maintainer removes it once the package is on npm.
+async function genConfig(current: string): Promise<string> {
+    const existing: Record<string, PackageEntry> | undefined = current ? JSON.parse(current).packages : undefined;
     const packages: Record<string, PackageEntry> = {};
     for (const dir of ['.', ...(await findPackageDirs())]) {
         const pkg = JSON.parse(await fs.readFile(path.join(rootDir, dir, 'package.json'), 'utf8'));
-        packages[dir] = { component: pkg.name, releaseType: 'node' };
+        const prerelease = existing && (existing[dir] ? existing[dir].prerelease : true);
+        packages[dir] = { component: pkg.name, releaseType: 'node', ...(prerelease && { prerelease }) };
     }
     const options = await resolveConfig(configFile, { editorconfig: true });
     // Expanded input, because Prettier keeps an object on one line when the input has it on one line.
@@ -75,8 +79,8 @@ async function genConfig(): Promise<string> {
 
 async function run(): Promise<void> {
     const check = process.argv.includes('--check');
-    const config = await genConfig();
     const current = await fs.readFile(configFile, 'utf8').catch(() => '');
+    const config = await genConfig(current);
 
     if (config === current) return;
 

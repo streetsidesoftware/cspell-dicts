@@ -56,8 +56,9 @@ Read the doc before changing that area. These are written for people too.
 These rules are written for people in the linked docs. Read the section before working in that area.
 
 - **Generated files:** never edit them by hand. That includes `dict/`, `.trie` files, `checksum.txt`, synced upstream
-  files, `@@inject` sections, `static/`, changelogs, and `release-please-config.json`. The list and the command for each
-  are in [Generated files](docs/build-and-packaging.md#generated-files).
+  files, `@@inject` sections, `static/`, changelogs, and `release-please-config.json` (except removing a package's
+  `prerelease: true`, see [Rules](docs/releasing.md#rules)). The list and the command for each are in
+  [Generated files](docs/build-and-packaging.md#generated-files).
 - **Word changes:** edit `src/`, then sort, build the package, and commit `src/` and `dict/` together. Build the
   packages that read from it too. See [Word changes](docs/guides/word-changes.md).
 - **Comments:** few, short, and accurate. Leave existing comments alone unless you are changing that code. See
