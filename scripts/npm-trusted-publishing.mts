@@ -18,7 +18,7 @@ const registry = 'https://registry.npmjs.org';
 // Packages known to trust publish.yml, so a run can skip them without asking npm.
 const publishedFile = path.join(rootDir, 'static/published.json');
 // npm recommends a pause between trust calls to avoid rate limiting.
-const pauseMs = 2000;
+const pauseMs = 1000;
 
 interface TrustConfig {
     type?: string;
@@ -54,42 +54,58 @@ async function findPublicPackages(): Promise<string[]> {
 }
 
 async function fetchLatest(name: string): Promise<PublishInfo | undefined> {
-    const response = await fetch(`${registry}/${name.replaceAll('/', '%2f')}/latest`);
-    if (response.status === 404) return undefined;
-    if (!response.ok) throw new Error(`${name}: registry returned ${response.status}`);
-    const manifest = (await response.json()) as {
-        version: string;
-        _npmUser?: { name?: string; trustedPublisher?: unknown };
-    };
-    return {
-        version: manifest.version,
-        publisher: manifest._npmUser?.name ?? 'unknown',
-        oidc: Boolean(manifest._npmUser?.trustedPublisher),
-    };
+    console.error('Fetching latest info for %s', name);
+    try {
+        const response = await fetch(`${registry}/${name.replaceAll('/', '%2f')}/latest`);
+        if (response.status === 404) return undefined;
+        if (!response.ok) throw new Error(`${name}: registry returned ${response.status}`);
+        const manifest = (await response.json()) as {
+            version: string;
+            _npmUser?: { name?: string; trustedPublisher?: unknown };
+        };
+        return {
+            version: manifest.version,
+            publisher: manifest._npmUser?.name ?? 'unknown',
+            oidc: Boolean(manifest._npmUser?.trustedPublisher),
+        };
+    } finally {
+        console.error('Fetching latest info for %s, Done.', name);
+    }
 }
 
 function npm(args: string[]): number {
-    const result = spawnSync('npm', args, { stdio: 'inherit', shell: process.platform === 'win32' });
-    return result.status ?? 1;
+    console.error('Running npm %s', args.join(' '));
+    try {
+        const result = spawnSync('npm', args, { stdio: 'inherit', shell: process.platform === 'win32' });
+        return result.status ?? 1;
+    } finally {
+        console.error('Running npm %s, Done.', args.join(' '));
+    }
 }
 
 // npm only prompts for 2FA when stdout is a terminal, so a captured call that needs 2FA is repeated in the terminal
 // first. That starts the 5-minute window, and the captured call is retried.
 function npmJson(args: string[]): unknown[] {
-    for (let attempt = 0; ; ++attempt) {
-        const result = spawnSync('npm', [...args, '--json'], {
-            stdio: ['inherit', 'pipe', 'pipe'],
-            encoding: 'utf8',
-            shell: process.platform === 'win32',
-        });
-        const values = parseJsonValues(result.stdout);
-        const error = values.find((v): v is { error: { code?: string } } => isObject(v) && isObject(v.error));
-        if (!error && result.status === 0) return values;
-        if (error?.error.code === 'EOTP' && attempt === 0) {
-            npm(args);
-            continue;
+    console.error('Running npm %s with JSON output', args.join(' '));
+    let attempt = 0;
+    try {
+        for (; ; ++attempt) {
+            const result = spawnSync('npm', [...args, '--json'], {
+                stdio: ['inherit', 'pipe', 'pipe'],
+                encoding: 'utf8',
+                shell: process.platform === 'win32',
+            });
+            const values = parseJsonValues(result.stdout);
+            const error = values.find((v): v is { error: { code?: string } } => isObject(v) && isObject(v.error));
+            if (!error && result.status === 0) return values;
+            if (error?.error.code === 'EOTP' && attempt === 0) {
+                npm(args);
+                continue;
+            }
+            throw new Error(`npm ${args.join(' ')} failed:\n${result.stderr}${result.stdout}`);
         }
-        throw new Error(`npm ${args.join(' ')} failed:\n${result.stderr}${result.stdout}`);
+    } finally {
+        console.error('Running npm %s with JSON output, Done. %d', args.join(' '), attempt);
     }
 }
 
