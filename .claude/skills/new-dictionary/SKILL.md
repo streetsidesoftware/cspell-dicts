@@ -55,9 +55,9 @@ build half follows `docs/guides/new-dictionary.md`; read it too.
      interactively; answer from the design.
    - `cspell-ext.json`'s `dictionaryDefinitions` and `languageSettings` match the design exactly: IDs, `languageId`,
      `locale`.
-   - `package.json`: add `keywords`, and check that `files` lists every built file and upstream license file. Leave
+   - In `package.json`, add `keywords`, and check that `files` lists every built file and upstream license file. Leave
      `private: true` and "-- Private until verified" in `description`: a maintainer makes the package public in a later
-     PR (`docs/releasing.md`, "New packages").
+     PR (see "New packages" in `docs/releasing.md`).
    - An upstream source gets a `sync` script, as in `docs/guides/upstream-updates.md`. Never hand-edit synced files.
    - `samples/` holds correctly spelled files of the kind the dictionary is for, and the `test` script checks them.
      Include text that must still be flagged only if the test can assert it.
