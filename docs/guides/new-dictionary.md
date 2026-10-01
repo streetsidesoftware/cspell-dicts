@@ -139,8 +139,8 @@ pnpm exec cspell link remove ./cspell-ext.json
 
 ## 8. Open a PR
 
-- Leave `private: true` and "-- Private until verified" in `package.json`. A maintainer makes the package public in a
-  later PR, once the dictionary has been verified. That often takes more PRs, for samples or build changes.
+- Leave `private: true` and "-- Private until verified" in `package.json`. A maintainer will review the dictionary and
+  take care of the publication process. That often takes more PRs, for samples or build changes.
 - Use a `feat(<name>): add <friendly name> dictionary` title. See
   [Commits and pull requests](../commits-and-pull-requests.md).
 
