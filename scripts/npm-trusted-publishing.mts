@@ -1,19 +1,14 @@
 #!/usr/bin/env node
 
-// Sets up npm Trusted Publishing for the public packages in this repo. See docs/releasing.md.
-// Usage: node scripts/npm-trusted-publishing.mts [--check | --mfa] [--dry-run] [<package name>...]
-//   (default): add a trusted publisher for publish.yml to each package that doesn't have one.
-//   --check: report each package's trusted publishers and whether its latest version was published through OIDC.
-//   --mfa: require 2FA and disallow tokens for publishing each package.
-//   --dry-run: show what would change without changing it.
-// With no package names, it does every public package under dictionaries/ and packages/.
-// npm asks for 2FA in the browser. Choose to skip 2FA for the next 5 minutes, and rerun when the window ends.
+// Sets up npm Trusted Publishing for the public packages in this repo. Run with --help for usage.
 
 import { spawnSync } from 'node:child_process';
 import fs from 'node:fs/promises';
 import path from 'node:path';
 import { setTimeout as sleep } from 'node:timers/promises';
 import { fileURLToPath } from 'node:url';
+
+import { program } from 'commander';
 
 const rootDir = fileURLToPath(new URL('../', import.meta.url));
 const repository = 'streetsidesoftware/cspell-dicts';
@@ -156,22 +151,23 @@ async function requireMfa(names: string[], dryRun: boolean): Promise<void> {
     }
 }
 
-async function run(): Promise<void> {
-    const args = process.argv.slice(2);
-    const flags = new Set(args.filter((a) => a.startsWith('--')));
-    const unknown = [...flags].filter((f) => !['--check', '--mfa', '--dry-run'].includes(f));
-    if (unknown.length) throw new Error(`Unknown option: ${unknown.join(', ')}`);
-    if (flags.has('--check') && flags.has('--mfa')) throw new Error('Use either --check or --mfa, not both.');
+interface Options {
+    check?: boolean;
+    mfa?: boolean;
+    dryRun?: boolean;
+}
+
+async function run(requested: string[], options: Options): Promise<void> {
+    if (options.check && options.mfa) throw new Error('Use either --check or --mfa, not both.');
 
     const publicPackages = await findPublicPackages();
-    const requested = args.filter((a) => !a.startsWith('--'));
     const notPublic = requested.filter((name) => !publicPackages.includes(name));
     if (notPublic.length) throw new Error(`Not a public package in this repo: ${notPublic.join(', ')}`);
     const names = requested.length ? requested : publicPackages;
 
-    const dryRun = flags.has('--dry-run');
-    if (flags.has('--check')) return check(names);
-    if (flags.has('--mfa')) return requireMfa(names, dryRun);
+    const dryRun = !!options.dryRun;
+    if (options.check) return check(names);
+    if (options.mfa) return requireMfa(names, dryRun);
     return addTrust(names, dryRun);
 }
 
@@ -179,5 +175,17 @@ function isObject(value: unknown): value is Record<string, unknown> {
     return typeof value === 'object' && value !== null;
 }
 
-await run();
+program
+    .name('trusted-publishing')
+    .description(
+        `Add a trusted publisher for ${workflowFile} to each public package that doesn't have one.\n` +
+            'npm asks for 2FA in the browser: choose to skip 2FA for the next 5 minutes, and rerun when the window ends.',
+    )
+    .argument('[packages...]', 'package names; default: every public package under dictionaries/ and packages/')
+    .option('--check', "report each package's trusted publisher and how its latest version was published")
+    .option('--mfa', 'require 2FA and disallow tokens for publishing each package')
+    .option('--dry-run', 'show what would change without changing it')
+    .action(run);
+
+await program.parseAsync();
 // cspell:ignore EOTP
