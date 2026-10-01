@@ -2,14 +2,19 @@ name: Publish to NPM
 
 on:
   workflow_dispatch:
-  workflow_call:
-    secrets:
-      PUBLISH_NPM:
-        required: true
+  push:
+    tags:
+      # Release Please tags the root package on every release.
+      - 'cspell-dicts@*'
 
 permissions:
   contents: read
   id-token: write
+
+# Queue runs instead of running two publishes at once.
+concurrency:
+  group: ${{ github.workflow }}
+  cancel-in-progress: false
 
 jobs:
   publish:
