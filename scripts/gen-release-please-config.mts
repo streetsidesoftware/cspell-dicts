@@ -64,8 +64,7 @@ async function findPackageDirs(): Promise<string[]> {
 
 // Private packages stay in: when one is released, the node-workspace plugin also releases the packages that
 // depend on it, such as the English dictionaries that build from @cspell/aoo-mozilla-en-dict.
-async function genConfig(current: string): Promise<string> {
-    const existing: Record<string, PackageEntry> | undefined = current ? JSON.parse(current).packages : undefined;
+async function genConfig(): Promise<string> {
     const packages: Record<string, PackageEntry> = {};
     for (const dir of ['.', ...(await findPackageDirs())]) {
         const pkg = JSON.parse(await fs.readFile(path.join(rootDir, dir, 'package.json'), 'utf8'));
@@ -79,7 +78,7 @@ async function genConfig(current: string): Promise<string> {
 async function run(): Promise<void> {
     const check = process.argv.includes('--check');
     const current = await fs.readFile(configFile, 'utf8').catch(() => '');
-    const config = await genConfig(current);
+    const config = await genConfig();
 
     if (config === current) return;
 
