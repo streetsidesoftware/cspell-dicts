@@ -54,9 +54,10 @@ public package under `dictionaries/` and `packages/`.
 When you run it:
 
 - Add `--dry-run` to see the changes without making them.
-- It needs npm rights for the packages and 2FA. npm opens a browser page for 2FA. Choose to skip 2FA for the next 5
-  minutes. It pauses 2 seconds between packages, so about 40 packages fit in one window. Run it again after the
-  window ends: it skips packages that are already set up.
+- Log in first with `npm login --auth-type=web`. It needs npm rights for the packages.
+- npm opens a browser page for 2FA. Choose to skip 2FA for the next 5 minutes.
+- It pauses 2 seconds between packages, so about 40 packages fit in one window. Run it again after the window ends: it
+  skips packages that are already set up.
 - `--mfa` is for after every package publishes through Trusted Publishing. Once a package disallows tokens, only
   Trusted Publishing or a maintainer with 2FA can publish it.
 - A new package's first version is published by hand. See [New packages](#new-packages).
@@ -66,7 +67,16 @@ When you run it:
 Trusted Publishing only works for a package that is already on npm. So a maintainer with npm publish rights for
 `@cspell` publishes a new package's first version by hand, after its PR is approved and before it is merged.
 
-#### 1. Publish it
+#### 1. Log in to npm
+
+```sh
+npm login --auth-type=web
+```
+
+- npm opens a browser page to log in, with 2FA.
+- Check that `npm whoami` shows your npm user name.
+
+#### 2. Publish it
 
 In the package, with the PR's branch checked out:
 
@@ -79,7 +89,7 @@ npm publish <package tarball>.tgz --provenance=false
 - `--provenance=false` is needed because npm only creates provenance in CI.
 - npm asks for 2FA.
 
-#### 2. Add the trusted publisher
+#### 3. Add the trusted publisher
 
 From the repo root:
 
@@ -90,7 +100,7 @@ pnpm run trusted-publishing <package name>
 - Check that the package is on npmjs.com at version `1.0.0`.
 - Check that `pnpm run trusted-publishing --check <package name>` reports `trusted publisher yes`.
 
-#### 3. Merge the PR
+#### 4. Merge the PR
 
 Release Please releases `1.0.0`, and the publish skips it because it is already on npm. CI publishes later versions.
 
