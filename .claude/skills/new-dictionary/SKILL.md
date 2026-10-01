@@ -64,7 +64,7 @@ build half follows `docs/guides/new-dictionary.md`; read it too.
    - The README is for someone installing the dictionary, with absolute `https://` links. Keep the template's
      `@@inject` markers; a workflow fills them in after the PR lands.
    - Never add the package to `.release-please-manifest.json`. `pnpm run lint` adds it to `release-please-config.json`.
-   - Don't add it to `@cspell/dict-cspell-bundle`. A maintainer decides that when making the dictionary public.
+   - Don't add it to `@cspell/dict-cspell-bundle`. That happens only after the cspell repo decides to bundle it.
 
 7. **Run every check** from the worktree root:
 
