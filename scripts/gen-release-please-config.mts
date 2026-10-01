@@ -83,6 +83,9 @@ async function genConfig(): Promise<string> {
 async function genVersionManifest(): Promise<string> {
     const manifest: Record<string, string> = JSON.parse(await fs.readFile(versionFilePath, 'utf8').catch(() => '{}'));
     for (const dir of ['.', ...(await findPackageDirs())]) {
+        // Only add new ones
+        if (manifest[dir] === undefined) continue;
+
         const pkg = JSON.parse(await fs.readFile(path.join(rootDir, dir, 'package.json'), 'utf8'));
         manifest[dir] = pkg.version;
     }
