@@ -107,11 +107,11 @@ each other's files, and those are deleted together.
 
 Work on a design in an `adr/<feature>` branch, and on archiving in an `adr-archive/<feature>` branch.
 
-When a design is worth reviewing before it's built, merge it on its own with a `docs:` PR, so it stays out of the
-release notes. Otherwise, include the ADRs in the PR that builds the change.
+A small feature can ship its design and implementation together in one PR, from its `adr/<feature>` branch. When a
+design is worth reviewing before it's built, merge it on its own with a `docs:` PR, so it stays out of the release
+notes.
 
-A new dictionary is the exception: its design and the package ship together, in one `new-dictionary/<name>` branch
-and one PR.
+A new dictionary always ships its design and the package together, in one `new-dictionary/<name>` branch and one PR.
 
 ## With Claude Code
 
