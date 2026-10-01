@@ -28,7 +28,7 @@ jobs:
     if: github.repository_owner == 'streetsidesoftware'
     runs-on: ubuntu-latest
     env:
-      NEW_BRANCH: ${{ inputs.new-branch || 'update-dictionaries' }}
+      NEW_BRANCH: ${{ inputs.new-branch || 'build-dictionaries' }}
       REF_BRANCH: ${{ inputs.ref || github.event.inputs.ref }}
     steps:
       - name: Checkout code
