@@ -25,8 +25,8 @@ See [Commits and pull requests](./commits-and-pull-requests.md) for which type t
 ## Rules
 
 - **`release-please-config.json` is generated.** Never edit it by hand, except to add a package's `release-as` (below).
-  `pnpm run gen:release-please-config` writes it from the settings in `scripts/gen-release-please-config.mts`, including `changelog-sections`, and every
-  `dictionaries/*/package.json` and `packages/*/package.json`.
+  `pnpm run gen:release-please-config` writes it from the settings in `scripts/gen-release-please-config.mts`,
+  including `changelog-sections`, and every `dictionaries/*/package.json` and `packages/*/package.json`.
   - The Build Dictionaries workflow runs it after each push to `main`, and opens its PR with any change. Pull requests
     don't run it.
   - It also adds each new package to `.release-please-manifest.json`, with the version in its `package.json`.
