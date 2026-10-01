@@ -1,0 +1,51 @@
+name: ' 📦 Release Dictionary'
+
+# Opens a PR that sets a package's `release-as`, so Release Please releases it at that version next.
+
+on:
+  workflow_dispatch:
+    inputs:
+      package:
+        description: 'Package name, such as @cspell/dict-perl'
+        type: string
+        required: true
+      version:
+        description: 'Version to release'
+        type: string
+        default: '1.0.0'
+
+permissions:
+  contents: read
+
+jobs:
+  release-as:
+    if: github.repository_owner == 'streetsidesoftware'
+    runs-on: ubuntu-latest
+    env:
+      PACKAGE: ${{ inputs.package }}
+      VERSION: ${{ inputs.version }}
+    steps:
+      - name: Checkout code
+        uses: actions/checkout@3d3c42e5aac5ba805825da76410c181273ba90b1 # v7.0.1
+        with:
+          persist-credentials: false
+
+      - name: Setup
+        uses: ./.github/actions/quick-setup
+
+      - name: Install
+        run: pnpm i
+
+      - name: Set release-as
+        run: pnpm run release-as --version "$VERSION" "$PACKAGE"
+
+      - name: PR
+        uses: ./.github/actions/pr
+        with:
+          commit-message: 'chore: release ${{ inputs.package }} as ${{ inputs.version }}'
+          branch: release-dictionary
+          base: main
+          body: |
+            Sets `release-as` to `${{ inputs.version }}` for `${{ inputs.package }}` in `release-please-config.json`.
+          app_id: ${{ secrets.AUTOMATION_APP_ID }}
+          app_private_key: ${{ secrets.AUTOMATION_PRIVATE_KEY }}

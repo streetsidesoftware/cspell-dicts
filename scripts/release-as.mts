@@ -1,6 +1,6 @@
 #!/usr/bin/env node
 
-// Sets or removes `prerelease: true` for packages in release-please-config.json. Run with --help for usage.
+// Sets or removes a package's `release-as` in release-please-config.json. Run with --help for usage.
 
 import fs from 'node:fs/promises';
 import path from 'node:path';
@@ -14,10 +14,11 @@ const configFile = path.join(rootDir, 'release-please-config.json');
 
 interface PackageEntry {
     component: string;
-    prerelease?: boolean;
+    'release-as'?: string;
 }
 
 interface Options {
+    version: string;
     remove?: boolean;
 }
 
@@ -31,11 +32,11 @@ async function run(names: string[], options: Options): Promise<void> {
     for (const entry of entries) {
         if (!names.includes(entry.component)) continue;
         if (options.remove) {
-            delete entry.prerelease;
+            delete entry['release-as'];
         } else {
-            entry.prerelease = true;
+            entry['release-as'] = options.version;
         }
-        console.log(`${entry.component}: ${options.remove ? 'removed prerelease' : 'prerelease: true'}`);
+        console.log(`${entry.component}: ${options.remove ? 'removed release-as' : `release-as ${options.version}`}`);
     }
 
     const prettierOptions = await resolveConfig(configFile, { editorconfig: true });
@@ -45,10 +46,14 @@ async function run(names: string[], options: Options): Promise<void> {
 }
 
 program
-    .name('make-prerelease')
-    .description('Set `prerelease: true` for packages in release-please-config.json, or remove it with --remove.')
-    .argument('<packages...>', 'package names, such as @cspell/dict-git')
-    .option('--remove', 'remove `prerelease: true` instead of setting it')
+    .name('release-as')
+    .description(
+        'Set the version Release Please releases next for packages in release-please-config.json, or remove it.\n' +
+            'gen-release-please-config.mts drops it once that version is released.',
+    )
+    .argument('<packages...>', 'package names, such as @cspell/dict-perl')
+    .option('--version <version>', 'the version to release', '1.0.0')
+    .option('--remove', 'remove `release-as` instead of setting it')
     .action(run);
 
 await program.parseAsync();
