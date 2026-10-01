@@ -45,9 +45,6 @@ for `@cspell` makes it public in a `chore:` PR, such as `chore(<name>): publish`
 
 - sets `private` to `false`
 - removes "-- Private until verified" from `description`
-- adds it to `@cspell/dict-cspell-bundle`, if it should be there: add it to `dependencies` in
-  `dictionaries/cspell/package.json` as `"workspace:^"`, then run `pnpm run build` in `dictionaries/cspell`. Whether
-  cspell itself bundles it is decided in the [cspell](https://github.com/streetsidesoftware/cspell) repo.
 
 [Trusted Publishing](#trusted-publishing) only works for a dictionary that is already on npm, so the maintainer
 publishes its first version by hand, right after that PR is merged.
@@ -91,10 +88,18 @@ From the repo root, with the script from [Setting up Trusted Publishing](#settin
 pnpm run trusted-publishing <package name>
 ```
 
-- Check that the package is on npmjs.com at the version in its `package.json`.
+- Check that the dictionary is on npmjs.com at the version in its `package.json`.
 - Check that `pnpm run trusted-publishing --check <package name>` reports `trusted publisher yes`.
 
 CI publishes later versions through Trusted Publishing.
+
+### Later: add it to the bundle
+
+Add a dictionary to `@cspell/dict-cspell-bundle` only after the [cspell](https://github.com/streetsidesoftware/cspell)
+repo decides to bundle it. Then:
+
+- add it to `dependencies` in `dictionaries/cspell/package.json` as `"workspace:^"`
+- run `pnpm run build` in `dictionaries/cspell`
 
 ## Trusted Publishing
 
