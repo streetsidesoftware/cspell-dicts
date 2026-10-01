@@ -51,6 +51,7 @@ const settings = {
 interface PackageEntry {
     component: string;
     releaseType: 'node';
+    'release-as'?: string;
 }
 
 async function findPackageDirs(): Promise<string[]> {
@@ -69,11 +70,17 @@ async function findPackageDirs(): Promise<string[]> {
 
 // Private packages stay in: when one is released, the node-workspace plugin also releases the packages that
 // depend on it, such as the English dictionaries that build from @cspell/aoo-mozilla-en-dict.
+// A package's `release-as`, added by hand, stays until the manifest shows that version was released.
 async function genConfig(): Promise<string> {
+    const current: Record<string, PackageEntry> =
+        JSON.parse(await fs.readFile(configFilePath, 'utf8').catch(() => '{}')).packages ?? {};
+    const released: Record<string, string> = JSON.parse(await fs.readFile(versionFilePath, 'utf8').catch(() => '{}'));
     const packages: Record<string, PackageEntry> = {};
     for (const dir of ['.', ...(await findPackageDirs())]) {
         const pkg = JSON.parse(await fs.readFile(path.join(rootDir, dir, 'package.json'), 'utf8'));
-        packages[dir] = { component: pkg.name, releaseType: 'node' };
+        const releaseAs = current[dir]?.['release-as'];
+        const keep = releaseAs && released[dir] !== releaseAs;
+        packages[dir] = { component: pkg.name, releaseType: 'node', ...(keep && { 'release-as': releaseAs }) };
     }
     const options = await resolveConfig(configFilePath, { editorconfig: true });
     // Expanded input, because Prettier keeps an object on one line when the input has it on one line.
