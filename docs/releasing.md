@@ -5,7 +5,7 @@
 > handled by maintainers and workflows.
 
 How packages in this repo get versioned and published. Conventional Commits drive it. The only step done by hand is a
-new package's first publish (see [New packages](#new-packages)).
+new dictionary's first publish (see [New dictionaries](#new-dictionaries)).
 See [Commits and pull requests](./commits-and-pull-requests.md) for which type to use.
 
 ## The flow
@@ -36,7 +36,65 @@ See [Commits and pull requests](./commits-and-pull-requests.md) for which type t
   (`1.0.0` for a package made by the generator). Seeding the manifest by hand makes the first release land above it.
 - **A new package is private until a maintainer verifies it.** The generator creates it with `private: true` and
   "-- Private until verified" in `description`. Contributors leave both. A maintainer removes them in a separate PR.
-  See [New packages](#new-packages).
+  See [New dictionaries](#new-dictionaries).
+
+## New dictionaries
+
+A new dictionary stays private through its first PRs. Once it has been verified, a maintainer with npm publish rights
+for `@cspell` makes it public in a `chore:` PR, such as `chore(<name>): publish`. That PR:
+
+- sets `private` to `false`
+- removes "-- Private until verified" from `description`
+- adds it to `@cspell/dict-cspell-bundle`, if it should be there: add it to `dependencies` in
+  `dictionaries/cspell/package.json` as `"workspace:^"`, then run `pnpm run build` in `dictionaries/cspell`. Whether
+  cspell itself bundles it is decided in the [cspell](https://github.com/streetsidesoftware/cspell) repo.
+
+[Trusted Publishing](#trusted-publishing) only works for a package that is already on npm, so the maintainer publishes
+its first version by hand, right after that PR is merged.
+
+### 1. Merge the PR
+
+Merge the PR that makes the package public, then update your checkout:
+
+```sh
+git switch main
+git pull
+```
+
+### 2. Log in to npm
+
+```sh
+npm login --auth-type=web
+```
+
+- npm opens a browser page to log in, with 2FA.
+- Check that `npm whoami` shows your npm user name.
+
+### 3. Publish it
+
+In the package directory, on `main`:
+
+```sh
+pnpm pack
+npm publish <package tarball>.tgz --provenance=false
+```
+
+- The pack step replaces `workspace:` versions with real ones.
+- The `--provenance=false` option is needed because npm only creates provenance in CI.
+- npm asks for 2FA.
+
+### 4. Add the trusted publisher
+
+From the repo root, with the script from [Setting up Trusted Publishing](#setting-up-trusted-publishing):
+
+```sh
+pnpm run trusted-publishing <package name>
+```
+
+- Check that the package is on npmjs.com at the version in its `package.json`.
+- Check that `pnpm run trusted-publishing --check <package name>` reports `trusted publisher yes`.
+
+CI publishes later versions through Trusted Publishing.
 
 ## Trusted Publishing
 
@@ -66,65 +124,7 @@ When you run it:
   skips packages that are already set up.
 - Use the `--mfa` option only after every package publishes through Trusted Publishing. Once a package disallows
   tokens, only Trusted Publishing or a maintainer with 2FA can publish it.
-- A new package's first version is published by hand. See [New packages](#new-packages).
-
-### New packages
-
-A new package stays private through its first PRs. Once it has been verified, a maintainer with npm publish rights for
-`@cspell` makes it public in a `chore:` PR, such as `chore(<name>): publish`. That PR:
-
-- sets `private` to `false`
-- removes "-- Private until verified" from `description`
-- adds the package to `@cspell/dict-cspell-bundle`, if it should be there: add it to `dependencies` in
-  `dictionaries/cspell/package.json` as `"workspace:^"`, then run `pnpm run build` in `dictionaries/cspell`. Whether
-  cspell itself bundles it is decided in the [cspell](https://github.com/streetsidesoftware/cspell) repo.
-
-Trusted Publishing only works for a package that is already on npm, so the maintainer publishes its first version by
-hand, right after that PR is merged.
-
-#### 1. Merge the PR
-
-Merge the PR that makes the package public, then update your checkout:
-
-```sh
-git switch main
-git pull
-```
-
-#### 2. Log in to npm
-
-```sh
-npm login --auth-type=web
-```
-
-- npm opens a browser page to log in, with 2FA.
-- Check that `npm whoami` shows your npm user name.
-
-#### 3. Publish it
-
-In the package directory, on `main`:
-
-```sh
-pnpm pack
-npm publish <package tarball>.tgz --provenance=false
-```
-
-- The pack step replaces `workspace:` versions with real ones.
-- The `--provenance=false` option is needed because npm only creates provenance in CI.
-- npm asks for 2FA.
-
-#### 4. Add the trusted publisher
-
-From the repo root:
-
-```sh
-pnpm run trusted-publishing <package name>
-```
-
-- Check that the package is on npmjs.com at the version in its `package.json`.
-- Check that `pnpm run trusted-publishing --check <package name>` reports `trusted publisher yes`.
-
-CI publishes later versions through Trusted Publishing.
+- A new dictionary's first version is published by hand. See [New dictionaries](#new-dictionaries).
 
 ## Fixing a changelog entry after merge
 
