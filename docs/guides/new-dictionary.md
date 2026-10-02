@@ -75,7 +75,7 @@ It asks:
 | store as trie | `y` for large source files (over about 1 MB) and Hunspell files. `n` works for programming language keyword files.                                                                                      |
 | run build     | Build the dictionary now. You can also run `pnpm run build` in the package later.                                                                                                                       |
 
-It creates `dictionaries/<name>/` with `version` `1.0.0` and `private: true`, so the dictionary isn't published. A
+It creates `dictionaries/<name>/` with `version` `0.0.1-alpha.0` and `private: true`, so the dictionary isn't published. A
 maintainer makes it public once the dictionary has been verified.
 
 ## 5. Fill in the package
