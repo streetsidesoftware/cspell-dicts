@@ -1,0 +1,28 @@
+{
+    "id": "matlab",
+    "version": "0.2",
+    "name": "MATLAB",
+    "description": "MATLAB function and keyword dictionary for cspell.",
+    "readonly": true,
+    "dictionaryDefinitions": [
+        {
+            "name": "matlab",
+            "path": "./dict/matlab.txt",
+            "description": "MATLAB function and keyword dictionary for cspell."
+        }
+    ],
+    "dictionaries": [],
+    "languageSettings": [
+        {
+            "languageId": "matlab",
+            "locale": "*",
+            "dictionaries": ["matlab"]
+        }
+    ],
+    "overrides": [
+        {
+            "filename": "**/*.m",
+            "languageId": "matlab"
+        }
+    ]
+}
