@@ -85,8 +85,7 @@ async function genVersionManifest(): Promise<string> {
         const pkg = JSON.parse(await fs.readFile(path.join(rootDir, dir, 'package.json'), 'utf8'));
         manifest[dir] = pkg.version;
     }
-    // const newManifest = Object.fromEntries(Object.entries(manifest).sort(([a], [b]) => compare(a, b)));
-    const newManifest = manifest;
+    const newManifest = Object.fromEntries(Object.entries(manifest).sort(([a], [b]) => compare(a, b)));
     return JSON.stringify(newManifest, undefined, 4) + '\n';
 }
 
