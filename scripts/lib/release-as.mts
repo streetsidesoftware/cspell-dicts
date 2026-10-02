@@ -1,8 +1,6 @@
 import fs from 'node:fs/promises';
 import path from 'node:path';
 
-import { format, resolveConfig } from 'prettier';
-
 import { configFile as configFileName, type PackageEntry } from './release-please.mts';
 
 /**
@@ -29,8 +27,6 @@ export async function setReleaseAs(rootDir: string, names: string[], version: st
         console.log(`${entry.component}: ${version ? `release-as ${version}` : 'removed release-as'}`);
     }
 
-    const prettierOptions = await resolveConfig(configFile, { editorconfig: true });
-    // Expanded input, as in gen-release-please-config.mts.
-    const text = await format(JSON.stringify(config, undefined, 4), { ...prettierOptions, filepath: configFile });
+    const text = JSON.stringify(config, undefined, 4) + '\n';
     await fs.writeFile(configFile, text);
 }
