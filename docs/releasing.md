@@ -12,17 +12,18 @@ Trusted Publishing must be done by hand (see [New dictionaries](#new-dictionarie
 
 1. **Release Please keeps a release PR open.** On every push to `main`, `.github/workflows/release-please.yml` updates
    the `chore: release main` PR. For each package with `feat:` or `fix:` commits since its last release, or other types
-   that show in the changelog, it bumps the version and adds the commits to the package's `CHANGELOG.md`.
+   that show in the changelog, the PR bumps the version, adds the commits to the package's `CHANGELOG.md`, and records
+   the new version in `.release-please-manifest.json`.
    - A commit belongs to every package whose files it changes.
    - The `node-workspace` plugin also bumps the packages that depend on a bumped package, such as
      `@cspell/dict-cspell-bundle`, with a "workspace dependencies were updated" entry.
-2. **Merging the release PR creates the releases.** Release Please tags each released package as
-   `<package name>@<version>` and updates `.release-please-manifest.json`.
-3. **The release tag starts publishing.** Each release also tags the root package as `cspell-dicts@<version>`, and that
-   tag starts `publish.yml`. It runs `lerna publish from-package`, which publishes every public package whose version
-   isn't on npm yet.
-   - Release Please pushes the tag with a GitHub App token, because a tag pushed with the default `GITHUB_TOKEN`
-     doesn't start other workflows.
+2. **Release Please creates the releases after the release PR is merged.** It runs again on the merge, tags each
+   released package as `<package name>@<version>`, and creates a GitHub release for it.
+3. **The publishing workflow is triggered by a release tag.** Each release also tags the root package as
+   `cspell-dicts@<version>`, and that tag triggers the Publish to NPM workflow (`publish.yml`). The workflow runs
+   `lerna publish from-package`, which publishes every public package whose version isn't on npm yet.
+   - Release Please pushes the tags with a GitHub App token, because a tag pushed with the default `GITHUB_TOKEN`
+     doesn't trigger other workflows.
 
 ## Rules
 
