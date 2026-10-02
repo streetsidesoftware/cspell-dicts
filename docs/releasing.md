@@ -52,48 +52,43 @@ See [Commits and pull requests](./commits-and-pull-requests.md) for which type t
 
 ## New dictionaries
 
-A new dictionary starts private, at version `0.0.1-alpha.0`. Release Please may release it as alpha versions while it
-is private, but nothing is published. Once it has been verified, a maintainer with npm publish rights for `@cspell`
-makes it public.
+A new dictionary starts private, at version `0.0.1-alpha.0`. While it's private, Release Please may release alpha
+versions of it, but CI doesn't publish them. Once the dictionary has been verified, a maintainer with npm publish rights
+for `@cspell` makes it public.
 
-[Trusted Publishing](#trusted-publishing) only works for a dictionary that is already on npm, so the maintainer
-publishes an alpha version by hand first. CI publishes `1.0.0`.
+[Trusted Publishing](#trusted-publishing) only works for a package that's already on npm. So the maintainer publishes
+the first version by hand, as an alpha, and CI publishes every version after it, starting with `1.0.0`.
 
-### 1. Open the PR
+### 1. Open the publication PR
 
-Run the Prepare a New Dictionary for Publication workflow from the Actions tab, with the dictionary's directory under
-`dictionaries/`, such as `perl`. It opens a `feat(<name>): publish the <name> dictionary` PR that:
+From the Actions tab, run the Prepare a New Dictionary for Publication workflow with the dictionary's directory under
+`dictionaries/`, such as `matlab`. It opens a `feat(<name>): publish the <name> dictionary` PR that:
 
 - removes `private` and "-- Private until verified" from `package.json`
 - sets the dictionary's `release-as` to `1.0.0`
+- lists the commands for steps 2 and 3 as a checklist
 
-The workflow runs `pnpm prepare-publication`. To do the same by hand, run it in the dictionary's directory and open the
-PR yourself.
+### 2. Publish the first version by hand
 
-### 2. Publish an alpha version
+Follow the checklist in the PR. It covers:
 
-Log in to npm first, with `npm login --auth-type=web`. Then, from a checkout of the PR's branch, do every step in the
-dictionary's directory, as the PR's checklist lists them:
+- checking out only the PR's branch, since the repo is large
+- logging in to npm
+- building and packing the dictionary, then publishing it as an alpha
+- adding the trusted publisher with `pnpm trusted-publishing`
+- committing `static/published.json`, where that script records the trusted publisher, and pushing it to the PR
 
-```sh
-cd dictionaries/<name>
-pnpm install
-pnpm run prepare:dictionary
-pnpm pack
-npm publish <the .tgz pnpm pack printed> --tag alpha --provenance=false
-pnpm trusted-publishing
-```
+Why some of those steps are there:
 
-- Check the packed files with `tar -tzf <the .tgz>` before publishing: built files that git ignores, such as
-  `dict/*.gz`, must be there.
-- The `--tag alpha` option is needed because npm requires a tag for a prerelease version.
-- The `--provenance=false` option is needed because npm only creates provenance in CI.
-- Check that `pnpm trusted-publishing --check` in the same directory reports `trusted publisher yes`.
+- **Pack, then publish the tarball:** `pnpm pack` replaces `workspace:` versions with real ones. Check the files it
+  lists: built files that git ignores, such as `dict/*.txt.gz`, must be there.
+- **`--tag alpha`:** npm requires a tag for a prerelease version, and it keeps `latest` for `1.0.0`.
+- **`--provenance=false`:** the packages set `publishConfig.provenance`, but npm only creates provenance in CI.
 
 ### 3. Merge
 
-- Merge the PR. As a `feat:` with `release-as`, it puts the dictionary in the release PR at `1.0.0`.
-- Merge the release PR. CI publishes `1.0.0` through Trusted Publishing, with provenance.
+- Merge the PR. Its `feat:` commit changes the dictionary, so the release PR includes it, at `1.0.0`.
+- Merge the release PR. CI publishes `1.0.0` through Trusted Publishing, with provenance, as `latest`.
 - The Update Release Please Config workflow then opens a PR that removes `release-as`. Merge it.
 
 ### Later: add it to the bundle
