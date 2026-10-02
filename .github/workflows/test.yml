@@ -30,7 +30,8 @@ jobs:
     strategy:
       fail-fast: false
       matrix:
-        # The active Node.js versions: https://nodejs.org/en/about/previous-releases
+        # Node.js release lines, see https://nodejs.org/en/about/previous-releases
+        # Maintenance LTS: nothing may need a newer Node than this. Current: we work with the newest.
         node-version:
           - 22.x
           - 26.x
@@ -38,6 +39,7 @@ jobs:
           - ubuntu-latest
 
         include:
+          # Active LTS, on Windows.
           - os: windows-latest
             node-version: 24.x
 
