@@ -55,8 +55,7 @@ async function findPackageDirs(): Promise<string[]> {
             if (await exists(path.join(rootDir, dir, 'package.json'))) dirs.push(dir);
         }
     }
-    // Sort by the package.json path, so `en_GB-legacy/` comes before `en_GB/`, as the order has always been.
-    return dirs.sort((a, b) => compare(`${a}/package.json`, `${b}/package.json`));
+    return dirs.sort(compare);
 }
 
 // Private packages stay in: when one is released, the node-workspace plugin also releases the packages that
