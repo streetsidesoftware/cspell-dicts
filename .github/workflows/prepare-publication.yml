@@ -50,8 +50,10 @@ jobs:
           body: |
             Makes the `${{ inputs.dictionary }}` dictionary public: removes `private` and "-- Private until verified", and sets its `release-as` to `1.0.0`.
 
-            Before merging, from a checkout of this PR's branch:
+            Before merging, from the repo root:
 
+            - [ ] `git fetch origin`
+            - [ ] `git switch prepare-publication-${{ inputs.dictionary }}`
             - [ ] `npm login --auth-type=web`, then check that `npm whoami` shows your npm user name
             - [ ] `cd dictionaries/${{ inputs.dictionary }}`
             - [ ] `pnpm install`
