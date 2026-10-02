@@ -36,6 +36,10 @@ See [Commits and pull requests](./commits-and-pull-requests.md) for which type t
     such as a Build Dictionaries bot PR. The script keeps `release-as` until the manifest shows that version was
     released, so the Clear release-as workflow's PR right after the release removes it. If that PR is missed, run
     Clear release-as from the Actions tab.
+  - To try risky changes to a dictionary, put it in alpha mode: set `release-as` to a prerelease version, such as
+    `3.2.0-alpha.0`. CI publishes prerelease versions under the npm `alpha` tag, so `latest`, and what users
+    install, doesn't change. After that release, later releases stay alphas, such as `3.2.1-alpha.0`, until
+    `release-as` is set to the final version, such as `3.2.0`.
   - Private packages are included on purpose. When one is released, the `node-workspace` plugin also releases the
     packages that depend on it, such as the English dictionaries that build from `@cspell/aoo-mozilla-en-dict`.
 - **The `"."` entry always stays.** It is the root `cspell-dicts` package, which is private and never published.
