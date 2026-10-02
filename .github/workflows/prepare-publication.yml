@@ -70,13 +70,12 @@ jobs:
             From the repo root:
 
             - [ ] `npm login --auth-type=web`, then check that `npm whoami` shows your npm user name
-            - [ ] Build and pack the dictionary, then check the files the last command lists:
+            - [ ] Build and pack the dictionary, then check the files under "Tarball Contents":
               ```sh
               cd dictionaries/${{ inputs.dictionary }}
               pnpm install
               pnpm run prepare:dictionary
               pnpm pack --out package.tgz
-              tar -tzf package.tgz
               ```
             - [ ] Publish it and add the trusted publisher:
               ```sh
