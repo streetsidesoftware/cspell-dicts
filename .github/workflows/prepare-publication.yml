@@ -77,7 +77,7 @@ jobs:
               pnpm run prepare:dictionary
               pnpm pack --out package.tgz
               ```
-            - [ ] Publish it and add the trusted publisher:
+            - [ ] Publish it and add the trusted publisher. When npm opens the browser for 2FA, check the box to skip 2FA for the next 5 minutes, so `pnpm trusted-publishing` doesn't ask again:
               ```sh
               npm publish package.tgz --tag alpha --provenance=false
               pnpm trusted-publishing
