@@ -5,7 +5,17 @@ name: ' 🧹 Clear release-as'
 
 on:
   workflow_dispatch:
+    inputs:
+      ref:
+        description: 'Branch to run against and open the PR into'
+        type: string
+        default: main
   workflow_call:
+    inputs:
+      ref:
+        description: 'Branch to run against and open the PR into'
+        type: string
+        default: main
     secrets:
       AUTOMATION_APP_ID:
         required: true
@@ -19,12 +29,14 @@ jobs:
   clear-release-as:
     if: github.repository_owner == 'streetsidesoftware'
     runs-on: ubuntu-latest
+    env:
+      REF_BRANCH: ${{ inputs.ref || 'main' }}
     steps:
       - name: Checkout code
         uses: actions/checkout@3d3c42e5aac5ba805825da76410c181273ba90b1 # v7.0.1
         with:
           persist-credentials: false
-          ref: main
+          ref: ${{ env.REF_BRANCH }}
 
       - name: Setup
         uses: ./.github/actions/quick-setup
@@ -39,7 +51,7 @@ jobs:
         with:
           commit-message: 'chore: update the Release Please config after a release'
           branch: release-please-config
-          base: main
+          base: ${{ env.REF_BRANCH }}
           body: |
             Removes `release-as` from packages that have now been released at that version.
           app_id: ${{ secrets.AUTOMATION_APP_ID }}

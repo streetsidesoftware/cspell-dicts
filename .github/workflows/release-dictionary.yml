@@ -13,6 +13,10 @@ on:
         description: 'Version to release'
         type: string
         default: '1.0.0'
+      ref:
+        description: 'Branch to run against and open the PR into'
+        type: string
+        default: main
 
 permissions:
   contents: read
@@ -24,11 +28,13 @@ jobs:
     env:
       PACKAGE: ${{ inputs.package }}
       VERSION: ${{ inputs.version }}
+      REF_BRANCH: ${{ inputs.ref || 'main' }}
     steps:
       - name: Checkout code
         uses: actions/checkout@3d3c42e5aac5ba805825da76410c181273ba90b1 # v7.0.1
         with:
           persist-credentials: false
+          ref: ${{ env.REF_BRANCH }}
 
       - name: Setup
         uses: ./.github/actions/quick-setup
@@ -44,7 +50,7 @@ jobs:
         with:
           commit-message: 'chore: release ${{ inputs.package }} as ${{ inputs.version }}'
           branch: release-dictionary
-          base: main
+          base: ${{ env.REF_BRANCH }}
           body: |
             Sets `release-as` to `${{ inputs.version }}` for `${{ inputs.package }}` in `release-please-config.json`.
           app_id: ${{ secrets.AUTOMATION_APP_ID }}
