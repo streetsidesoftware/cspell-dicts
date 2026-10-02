@@ -118,6 +118,7 @@ export default class extends Generator {
 
         props.srcFile = 'src/' + basename(srcFile);
         props.fullPackageName = '@cspell/dict-' + props.packageName;
+        props.year = new Date().getFullYear();
 
         this.props = Object.assign({}, props, props);
     }
