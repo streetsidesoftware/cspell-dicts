@@ -103,18 +103,18 @@ Or run `pnpm run build` and `pnpm test` inside `dictionaries/<name>/`.
 
 Never edit these by hand. Change the source, then regenerate.
 
-| Generated                                                                                                         | Regenerate with                                                                       |
-| ----------------------------------------------------------------------------------------------------------------- | ------------------------------------------------------------------------------------- |
-| `dictionaries/*/dict/*`, and `.trie` files at a package root                                                      | `pnpm run build` in the package                                                       |
-| `checksum.txt`                                                                                                    | The package build                                                                     |
-| `dictionaries/cspell/cspell-ext.json` → `import`                                                                  | `pnpm run build` in `dictionaries/cspell`                                             |
-| Upstream files fetched by a package's `sync` script, such as `src/hunspell/`, and their `.sync-github-files.json` | `pnpm run sync` in the package (see [Upstream updates](./guides/upstream-updates.md)) |
-| `dictionaries/*/static/{install.md,example.cspell.json,example.cspell.config.yaml,vscode-settings.json}`          | `pnpm run build:readme`                                                               |
-| `static/dictionary-packages.json` and `static/dictionary-packages.md`                                             | `pnpm run build:readme`                                                               |
-| `static/contributors.json` and `static/contributors.md`                                                           | `update-contributors`, run by the Update Readme workflow                              |
-| Anything between `@@inject` markers, in `README.md` and `dictionaries/*/README.md`                                | `pnpm run build:readme`                                                               |
-| `CHANGELOG.md` files and `.release-please-manifest.json`                                                          | Release Please (see [Releasing](./releasing.md))                                      |
-| `release-please-config.json`                                                                                      | `pnpm run gen:release-please-config`, also run by the Build Dictionaries workflow     |
+| Generated                                                                                                         | Regenerate with                                                                             |
+| ----------------------------------------------------------------------------------------------------------------- | ------------------------------------------------------------------------------------------- |
+| `dictionaries/*/dict/*`, and `.trie` files at a package root                                                      | `pnpm run build` in the package                                                             |
+| `checksum.txt`                                                                                                    | The package build                                                                           |
+| `dictionaries/cspell/cspell-ext.json` → `import`                                                                  | `pnpm run build` in `dictionaries/cspell`                                                   |
+| Upstream files fetched by a package's `sync` script, such as `src/hunspell/`, and their `.sync-github-files.json` | `pnpm run sync` in the package (see [Upstream updates](./guides/upstream-updates.md))       |
+| `dictionaries/*/static/{install.md,example.cspell.json,example.cspell.config.yaml,vscode-settings.json}`          | `pnpm run build:readme`                                                                     |
+| `static/dictionary-packages.json` and `static/dictionary-packages.md`                                             | `pnpm run build:readme`                                                                     |
+| `static/contributors.json` and `static/contributors.md`                                                           | `update-contributors`, run by the Update Readme workflow                                    |
+| Anything between `@@inject` markers, in `README.md` and `dictionaries/*/README.md`                                | `pnpm run build:readme`                                                                     |
+| `CHANGELOG.md` files and `.release-please-manifest.json`                                                          | Release Please (see [Releasing](./releasing.md))                                            |
+| `release-please-config.json`                                                                                      | `pnpm run gen:release-please-config`, also run by the Update Release Please Config workflow |
 
 `pnpm run check-dirty` fails if the working tree has changes. Run it after a regenerate command to check that nothing
 was left out of date.
