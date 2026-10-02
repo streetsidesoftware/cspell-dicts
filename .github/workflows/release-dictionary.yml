@@ -71,3 +71,4 @@ jobs:
           body: ${{ steps.change.outputs.body }}
           app_id: ${{ secrets.AUTOMATION_APP_ID }}
           app_private_key: ${{ secrets.AUTOMATION_PRIVATE_KEY }}
+# cspell:ignore elif
