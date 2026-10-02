@@ -32,9 +32,11 @@ jobs:
       PACKAGE: ${{ inputs.package }}
       COMMAND: ${{ inputs.remove-release-as && '--remove' || format('--version {0}', inputs.version) }}
       TITLE: >-
-        ${{ inputs.remove-release-as
-        && format('chore: remove release-as for {0}', inputs.package)
-        || format('chore: set release-as for {0} to {1}', inputs.package, inputs.version) }}
+        ${{
+          inputs.remove-release-as
+          && format('chore: remove release-as for {0}', inputs.package)
+          || format('chore: set release-as for {0} to {1}', inputs.package, inputs.version)
+        }}
       REF_BRANCH: ${{ inputs.ref || 'main' }}
     steps:
       - name: Checkout code
