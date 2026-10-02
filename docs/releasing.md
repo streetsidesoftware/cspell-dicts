@@ -48,7 +48,7 @@ See [Commits and pull requests](./commits-and-pull-requests.md) for which type t
   Please updates it on every release, and the config script adds new packages.
 - **A new dictionary is private until a maintainer verifies it.** The generator creates it with `private: true` and
   "-- Private until verified" in `description`. Contributors leave both. A maintainer removes them with the
-  Prepare Dictionary for Publication workflow.
+  Prepare a New Dictionary for Publication workflow.
   See [New dictionaries](#new-dictionaries).
 
 ## New dictionaries
@@ -62,7 +62,7 @@ publishes an alpha version by hand first. CI publishes `1.0.0`.
 
 ### 1. Open the PR
 
-Run the Prepare Dictionary for Publication workflow from the Actions tab, with the dictionary's directory under
+Run the Prepare a New Dictionary for Publication workflow from the Actions tab, with the dictionary's directory under
 `dictionaries/`, such as `perl`. It opens a `feat(<name>): publish the <name> dictionary` PR that:
 
 - removes `private` and "-- Private until verified" from `package.json`

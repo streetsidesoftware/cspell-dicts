@@ -3,10 +3,7 @@ import path from 'node:path';
 
 import { format, resolveConfig } from 'prettier';
 
-interface PackageEntry {
-    component: string;
-    'release-as'?: string;
-}
+import { configFile as configFileName, type PackageEntry } from './release-please.mts';
 
 /**
  * Sets or removes `release-as` for packages in release-please-config.json.
@@ -15,7 +12,7 @@ interface PackageEntry {
  * @param version - the version to release, or `undefined` to remove `release-as`.
  */
 export async function setReleaseAs(rootDir: string, names: string[], version: string | undefined): Promise<void> {
-    const configFile = path.join(rootDir, 'release-please-config.json');
+    const configFile = path.join(rootDir, configFileName);
     const config = JSON.parse(await fs.readFile(configFile, 'utf8'));
     const entries = Object.values(config.packages as Record<string, PackageEntry>);
 

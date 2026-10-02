@@ -10,10 +10,9 @@ import { fileURLToPath } from 'node:url';
 
 import { format, resolveConfig } from 'prettier';
 
-const rootDir = fileURLToPath(new URL('../', import.meta.url));
+import { configFile, manifestFile as versionFile, type PackageEntry } from './lib/release-please.mts';
 
-const configFile = 'release-please-config.json';
-const versionFile = '.release-please-manifest.json';
+const rootDir = fileURLToPath(new URL('../', import.meta.url));
 
 const configFilePath = path.join(rootDir, configFile);
 const versionFilePath = path.join(rootDir, versionFile);
@@ -47,12 +46,6 @@ const settings = {
         { type: '', section: 'Changes', hidden: false },
     ],
 };
-
-interface PackageEntry {
-    component: string;
-    releaseType: 'node';
-    'release-as'?: string;
-}
 
 async function findPackageDirs(): Promise<string[]> {
     const dirs: string[] = [];
@@ -113,7 +106,7 @@ async function checkConfig(checkOnly: boolean): Promise<boolean> {
     }
 
     await fs.writeFile(configFilePath, config);
-    console.log('Updated release-please-config.json');
+    console.log('Updated %s', configFile);
     return true;
 }
 
@@ -143,7 +136,7 @@ async function checkVersionManifest(readOnly: boolean): Promise<boolean> {
     }
 
     await fs.writeFile(versionFilePath, manifest);
-    console.log('Updated version-manifest.json');
+    console.log('Updated %s', versionFile);
     return true;
 }
 
