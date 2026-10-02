@@ -18,7 +18,7 @@ Trusted Publishing must be done by hand (see [New dictionaries](#new-dictionarie
    - The `node-workspace` plugin also bumps the packages that depend on a bumped package, such as
      `@cspell/dict-cspell-bundle`, with a "workspace dependencies were updated" entry.
 2. **Release Please creates the releases once the `chore: release main` PR has been merged.** Each package gets its own
-   release tag in the following format: `<package name>@<version>`.
+   GitHub release with a tag in the following format: `<package name>@<version>`.
 3. **The publishing workflow is triggered by the creation of a release tag.** Each release also tags the root package as
    `cspell-dicts@<version>`, and creating that tag triggers the Publish to NPM workflow (`publish.yml`). The workflow runs
    `lerna publish from-package`, which publishes every public package whose version isn't on npm yet.
