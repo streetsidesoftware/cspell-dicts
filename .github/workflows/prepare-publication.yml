@@ -70,9 +70,12 @@ jobs:
             From the repo root:
 
             - [ ] `npm login --auth-type=web`, then check that `npm whoami` shows your npm user name
-            - [ ] `cd dictionaries/${{ inputs.dictionary }}`
-            - [ ] `pnpm install`
-            - [ ] `pnpm run prepare:dictionary`
+            - [ ] Build the dictionary:
+              ```sh
+              cd dictionaries/${{ inputs.dictionary }}
+              pnpm install
+              pnpm run prepare:dictionary
+              ```
             - [ ] `pnpm pack`, then check the files with `tar -tzf <the .tgz it printed>`
             - [ ] `npm publish <the .tgz it printed> --tag alpha --provenance=false`
             - [ ] `pnpm trusted-publishing`
