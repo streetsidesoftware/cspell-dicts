@@ -1,0 +1,105 @@
+name: ' 📦 Prepare a New Dictionary for Publication'
+
+# Opens a `feat:` PR that makes a private dictionary public and sets its `release-as` to 1.0.0.
+# The PR's checklist has the maintainer's steps before merging.
+
+on:
+  workflow_dispatch:
+    inputs:
+      dictionary:
+        description: 'Dictionary directory under dictionaries/, such as perl'
+        type: string
+        required: true
+      ref:
+        description: 'Branch to run against and open the PR into'
+        type: string
+        default: main
+
+permissions:
+  contents: read
+
+jobs:
+  prepare-publication:
+    if: github.repository_owner == 'streetsidesoftware'
+    runs-on: ubuntu-latest
+    env:
+      REF_BRANCH: ${{ inputs.ref || 'main' }}
+    steps:
+      - name: Checkout code
+        uses: actions/checkout@3d3c42e5aac5ba805825da76410c181273ba90b1 # v7.0.1
+        with:
+          persist-credentials: false
+          ref: ${{ env.REF_BRANCH }}
+
+      - name: Setup
+        uses: ./.github/actions/quick-setup
+
+      - name: Install
+        run: pnpm i
+
+      - name: Prepare for publication
+        working-directory: dictionaries/${{ inputs.dictionary }}
+        run: pnpm prepare-publication
+
+      - name: PR
+        uses: ./.github/actions/pr
+        with:
+          commit-message: 'feat(${{ inputs.dictionary }}): publish the ${{ inputs.dictionary }} dictionary'
+          branch: prepare-publication-${{ inputs.dictionary }}
+          base: ${{ env.REF_BRANCH }}
+          body: |
+            Makes the `${{ inputs.dictionary }}` dictionary public: removes `private` and "-- Private until verified", and sets its `release-as` to `1.0.0`.
+
+            ### 1. Check out this branch
+
+            With git, fetching only this branch:
+
+            ```sh
+            git fetch origin prepare-publication-${{ inputs.dictionary }}
+            git switch -C prepare-publication-${{ inputs.dictionary }} FETCH_HEAD
+            ```
+
+            Or with the GitHub CLI, in a clone that fetches every branch:
+
+            ```sh
+            gh pr checkout prepare-publication-${{ inputs.dictionary }}
+            ```
+
+            ### 2. Publish the first version
+
+            From the repo root:
+
+            - [ ] Log in to npm, then check that the last command shows your npm user name:
+              ```sh
+              npm login --auth-type=web
+              npm whoami
+              ```
+            - [ ] Build and pack the dictionary, then check the files under "Tarball Contents":
+              ```sh
+              cd dictionaries/${{ inputs.dictionary }}
+              pnpm install
+              pnpm run prepare:dictionary
+              pnpm pack --out package.tgz
+              ```
+            - [ ] Publish it and add the trusted publisher. When npm opens the browser for 2FA, check the box to skip 2FA for the next 5 minutes, so `pnpm trusted-publishing` doesn't ask again:
+              ```sh
+              npm publish package.tgz --tag alpha --provenance=false
+              pnpm trusted-publishing
+              ```
+
+            ### 3. Push the record to this PR
+
+            `pnpm trusted-publishing` records the dictionary in `static/published.json`:
+
+            ```sh
+            cd ../..
+            git add static/published.json
+            git commit -m "chore(${{ inputs.dictionary }}): record Trusted Publishing"
+            git push origin HEAD:prepare-publication-${{ inputs.dictionary }}
+            ```
+
+            ### 4. Merge this PR
+
+            Then merge the release PR. CI publishes `1.0.0` through Trusted Publishing, and the Update Release Please Config workflow removes `release-as`.
+          app_id: ${{ secrets.AUTOMATION_APP_ID }}
+          app_private_key: ${{ secrets.AUTOMATION_PRIVATE_KEY }}
