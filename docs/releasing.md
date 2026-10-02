@@ -17,35 +17,33 @@ must be done by hand (see [New dictionaries](#new-dictionaries)).
 3. **CI publishes them.** Creating the release tags triggers the [Publish to NPM](https://github.com/streetsidesoftware/cspell-dicts/actions/workflows/publish.yml) workflow, which publishes the new
    versions to npm.
 
-A package is released when a `feat:` or `fix:` change touches its files. `chore:`, `docs:`, and the other hidden types
-never cause a release. See [Commits and pull requests](./commits-and-pull-requests.md).
+A `feat:` or `fix:` change marks the packages whose files it touches for the next release. `chore:`, `docs:`, and the
+other hidden types never do. See [Commits and pull requests](./commits-and-pull-requests.md).
 
 ## Rules
 
 - **Don't edit `release-please-config.json` or `.release-please-manifest.json` by hand.** The [Update Release Please Config](https://github.com/streetsidesoftware/cspell-dicts/actions/workflows/update-release-please-config.yml) workflow keeps both up to date: when a package is added or released, it opens a `chore:` PR. Merge it.
 - **Don't edit the `chore: release main` PR.** Release Please rewrites it on every run, so edits are lost. To correct a
   changelog entry, see [Fixing a changelog entry after merge](#fixing-a-changelog-entry-after-merge).
-- **New dictionaries start private.** The generator sets `private: true` and adds "-- Private until verified" to
+- **New dictionaries start private.** `pnpm run create-dictionary` sets `private: true` and adds "-- Private until verified" to
   `description`. Contributors leave both, and a maintainer removes them. See [New dictionaries](#new-dictionaries).
 
 ## Release a package at a set version
 
-Set the package's `release-as`, with either:
+To release a package at a version you choose, such as `1.0.0` or `3.2.0-alpha.0`, run the
+[Set Dictionary Version release-as](https://github.com/streetsidesoftware/cspell-dicts/actions/workflows/release-dictionary.yml) workflow, or `pnpm run release-as <package> --version <version>`.
 
-- the [Set Dictionary Version release-as](https://github.com/streetsidesoftware/cspell-dicts/actions/workflows/release-dictionary.yml) workflow
-- `pnpm run release-as <package> --version <version>`
-
-The release happens with the next `fix:` or `feat:` change in the package's directory, such as a [Build Dictionaries](https://github.com/streetsidesoftware/cspell-dicts/actions/workflows/build-dictionaries.yml) bot
-PR. After the release, remember to merge the PR that the [Update Release Please Config](https://github.com/streetsidesoftware/cspell-dicts/actions/workflows/update-release-please-config.yml) workflow opens to remove
+After the release, remember to merge the PR that the [Update Release Please Config](https://github.com/streetsidesoftware/cspell-dicts/actions/workflows/update-release-please-config.yml) workflow opens to remove
 `release-as`.
 
 ## Try changes as alphas
 
-To try risky changes to a dictionary, set its `release-as` to a prerelease version, such as `3.2.0-alpha.0`.
+To try risky changes to a dictionary, release it at a prerelease version, such as `3.2.0-alpha.0` (see
+[Release a package at a set version](#release-a-package-at-a-set-version)).
 
 - CI publishes prerelease versions under the npm `alpha` tag. Users who install the package still get the `latest`
   version.
-- Later releases stay alphas, such as `3.2.1-alpha.0`, until you set `release-as` to a final version, such as `3.2.0`.
+- Later releases stay alphas, such as `3.2.1-alpha.0`, until you release it at a final version, such as `3.2.0`.
 
 ## New dictionaries
 
