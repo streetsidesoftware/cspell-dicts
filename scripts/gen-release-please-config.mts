@@ -78,16 +78,17 @@ async function genConfig(): Promise<string> {
 
 async function genVersionManifest(): Promise<string> {
     const manifest: Record<string, string> = JSON.parse(await fs.readFile(versionFilePath, 'utf8').catch(() => '{}'));
-    for (const dir of ['.', ...(await findPackageDirs())]) {
+    const dirs = ['.', ...(await findPackageDirs())];
+    for (const dir of dirs) {
         // Only add new ones
         if (manifest[dir] !== undefined) continue;
 
         const pkg = JSON.parse(await fs.readFile(path.join(rootDir, dir, 'package.json'), 'utf8'));
         manifest[dir] = pkg.version;
     }
-    // const newManifest = Object.fromEntries(Object.entries(manifest).sort(([a], [b]) => compare(a, b)));
-    const newManifest = manifest;
-    return JSON.stringify(newManifest, undefined, 4) + '\n';
+    // Same order as the config. Entries for removed packages stay, at the end.
+    const sorted = Object.fromEntries([...dirs, ...Object.keys(manifest)].map((dir) => [dir, manifest[dir]]));
+    return JSON.stringify(sorted, undefined, 4) + '\n';
 }
 
 async function checkConfig(checkOnly: boolean): Promise<boolean> {
