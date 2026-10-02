@@ -10,10 +10,11 @@ Trusted Publishing must be done by hand (see [New dictionaries](#new-dictionarie
 
 ## How a release happens
 
-1. **Release Please keeps a release PR open.** On every push to `main`, `.github/workflows/release-please.yml` updates
-   the `chore: release main` PR. For each package with `feat:` or `fix:` commits since its last release, or other types
-   that show in the changelog, the PR bumps the version, adds the commits to the package's `CHANGELOG.md`, and records
-   the new version in `.release-please-manifest.json`.
+1. **A release PR shows exactly what will be released.** Nothing is released until the `chore: release main` PR is
+   merged, so every release is reviewed first. On every push to `main`, Release Please
+   (`.github/workflows/release-please.yml`) updates the PR. For each package with `feat:` or `fix:` commits since its
+   last release, or other types that show in the changelog, the PR bumps the version, adds the commits to the
+   package's `CHANGELOG.md`, and records the new version in `.release-please-manifest.json`.
    - A commit belongs to every package whose files it changes.
    - The `node-workspace` plugin also bumps the packages that depend on a bumped package, such as
      `@cspell/dict-cspell-bundle`, with a "workspace dependencies were updated" entry.
