@@ -49,10 +49,6 @@ jobs:
         run: |
           pnpm run setup
 
-      # Catch any new dictionaries and add them to the config.
-      - name: Update Release-Please packages
-        run: pnpm run gen:release-please-config
-
       - name: Lint
         run: |
           pnpm lint
