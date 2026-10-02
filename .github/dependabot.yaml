@@ -9,6 +9,10 @@ updates:
     directory: '/' # Location of package manifests
     schedule:
       interval: 'daily'
+    ignore:
+      # Stay on TypeScript 6 until we are ready to move to 7.
+      - dependency-name: 'typescript'
+        update-types: ['version-update:semver-major']
     groups:
       dev-dependencies:
         applies-to: version-updates
