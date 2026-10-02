@@ -127,7 +127,6 @@ export default class extends Generator {
         const files = [
             'package.json',
             'README.md',
-            'CHANGELOG.md',
             'cspell-ext.json',
             'cspell.json',
             'LICENSE',
