@@ -1,100 +1,86 @@
 # Releasing
 
 > [!WARNING]
-> These instructions are for maintainers. Contributors don't need to do any of this: releases and publishing are
-> handled by maintainers and workflows.
+> These instructions are for maintainers. Contributors don't need to do any of this: maintainers and workflows handle
+> releases and publishing.
 
-How packages in this repo get versioned and published. Conventional Commits drive it. The only steps done by hand are a
-new dictionary's first alpha publish and its trusted publisher (see [New dictionaries](#new-dictionaries)).
-See [Commits and pull requests](./commits-and-pull-requests.md) for which type to use.
+Releases and publishing run in CI. Publishing a new dictionary for the first time and setting up its Trusted Publishing
+must be done by hand (see [New dictionaries](#new-dictionaries)).
 
-## The flow
+## How a release happens
 
-1. **Release Please keeps a release PR open.** On every push to `main`, `.github/workflows/release-please.yml` updates a
-   PR titled `chore: release main`. It bumps the version and writes the `CHANGELOG.md` of each package with
-   releasable commits since its last release. Each commit counts for the packages whose files it changed. The
-   `node-workspace` plugin also bumps every package that depends on a bumped package, such as
-   `@cspell/dict-cspell-bundle`, with a "workspace dependencies were updated" changelog entry.
-2. **Merging the release PR creates the releases.** Release Please tags each released package as
-   `<package name>@<version>` and records the versions in `.release-please-manifest.json`.
-3. **The release tag starts publishing.** Every release also tags the root package as `cspell-dicts@<version>`. That tag
-   starts `publish.yml`, which runs `lerna publish from-package`. Release Please pushes it with a GitHub App token,
-   because a tag pushed with the default `GITHUB_TOKEN` doesn't start other workflows. The publish covers every package
-   whose `package.json` version isn't on npm yet, and skips packages marked `private: true`.
+1. **Changes collect in a release PR.** The `chore: release main` PR shows every package that will be released, with
+   its new version and changelog. Release Please updates it after each merge to `main`. Nothing is released until the
+   PR is merged.
+2. **Release Please creates the releases once the release PR has been merged.** Each package gets its own GitHub
+   release, tagged `<package name>@<version>`.
+3. **CI publishes them.** Creating the release tags triggers the [Publish to NPM](https://github.com/streetsidesoftware/cspell-dicts/actions/workflows/publish.yml) workflow, which publishes the new
+   versions to npm.
+
+A `feat:` or `fix:` change marks the packages whose files it touches for the next release. `chore:`, `docs:`, and the
+other hidden types never do. See [Commits and pull requests](./commits-and-pull-requests.md).
 
 ## Rules
 
-- **`release-please-config.json` is generated.** Do not edit it by hand.
-  `pnpm run gen:release-please-config` writes it from the settings in `scripts/gen-release-please-config.mts`,
-  including `changelog-sections`, and every `dictionaries/*/package.json` and `packages/*/package.json`.
-  - The Update Release Please Config workflow runs it when the manifest or a package's `package.json` changes on
-    `main`, and opens a `chore:` PR with any change. Pull requests don't run it.
-  - It also adds each new package to `.release-please-manifest.json`, with the version in its `package.json`.
-  - To release a package at a set version, such as a new dictionary's `1.0.0`, run the Set Dictionary Version
-    release-as workflow from the Actions tab, or `pnpm run release-as <package> --version <version>`. Both set the
-    package's `release-as`. The release itself comes with the next `fix:` or `feat:` change inside the package's
-    directory, such as a Build Dictionaries bot PR. The script keeps `release-as` until the manifest shows that
-    version was released, so the Update Release Please Config workflow's PR right after the release removes it. If
-    that PR is missed, run that workflow from the Actions tab.
-  - To try risky changes to a dictionary, put it in alpha mode: set `release-as` to a prerelease version, such as
-    `3.2.0-alpha.0`. CI publishes prerelease versions under the npm `alpha` tag, so `latest`, and what users
-    install, doesn't change. After that release, later releases stay alphas, such as `3.2.1-alpha.0`, until
-    `release-as` is set to the final version, such as `3.2.0`.
-  - Private packages are included on purpose. When one is released, the `node-workspace` plugin also releases the
-    packages that depend on it, such as the English dictionaries that build from `@cspell/aoo-mozilla-en-dict`.
-- **The `"."` entry always stays.** It is the root `cspell-dicts` package, which is private and never published.
-- **Don't edit `.release-please-manifest.json` by hand.** It records each package's last released version. Release
-  Please updates it on every release, and the config script adds new packages.
-- **A new dictionary is private until a maintainer verifies it.** The generator creates it with `private: true` and
-  "-- Private until verified" in `description`. Contributors leave both. A maintainer removes them with the
-  Prepare a New Dictionary for Publication workflow.
-  See [New dictionaries](#new-dictionaries).
+- **Don't edit `release-please-config.json` or `.release-please-manifest.json` by hand.** The [Update Release Please Config](https://github.com/streetsidesoftware/cspell-dicts/actions/workflows/update-release-please-config.yml) workflow keeps both up to date: when a package is added or released, it opens a `chore:` PR. Merge it.
+- **Don't edit the `chore: release main` PR.** Release Please rewrites it on every run, so edits are lost. To correct a
+  changelog entry, see [Fixing a changelog entry after merge](#fixing-a-changelog-entry-after-merge).
+- **New dictionaries start private.** `pnpm run create-dictionary` sets `private: true` and adds "-- Private until verified" to
+  `description`. Contributors leave both, and a maintainer removes them. See [New dictionaries](#new-dictionaries).
+
+## Release a package at a set version
+
+To release a package at a version you choose, such as `1.0.0` or `3.2.0-alpha.0`, run the
+[Set Dictionary Version release-as](https://github.com/streetsidesoftware/cspell-dicts/actions/workflows/release-dictionary.yml) workflow, or `pnpm run release-as <package> --version <version>`.
+
+After the release, remember to merge the PR that the [Update Release Please Config](https://github.com/streetsidesoftware/cspell-dicts/actions/workflows/update-release-please-config.yml) workflow opens to remove
+`release-as`.
+
+## Try changes as alphas
+
+To try risky changes to a dictionary, release it at a prerelease version, such as `3.2.0-alpha.0` (see
+[Release a package at a set version](#release-a-package-at-a-set-version)).
+
+- CI publishes prerelease versions under the npm `alpha` tag. Users who install the package still get the `latest`
+  version.
+- Later releases stay alphas, such as `3.2.1-alpha.0`. To end the alphas, release the latest alpha's version without
+  `-alpha`, such as `3.2.1`.
 
 ## New dictionaries
 
-A new dictionary starts private, at version `0.0.1-alpha.0`. Release Please may release it as alpha versions while it
-is private, but nothing is published. Once it has been verified, a maintainer with npm publish rights for `@cspell`
-makes it public.
+A new dictionary starts private, at version `0.0.1-alpha.0`, and isn't published. Once it has been verified, a
+maintainer with npm publish rights for `@cspell` makes it public.
 
-[Trusted Publishing](#trusted-publishing) only works for a dictionary that is already on npm, so the maintainer
-publishes an alpha version by hand first. CI publishes `1.0.0`.
+[Trusted Publishing](#trusted-publishing) only works for a package that's already on npm. So the maintainer publishes
+the first version by hand, as an alpha, and CI publishes every version after it, starting with `1.0.0`.
 
-### 1. Open the PR
+### 1. Open the publication PR
 
-Run the Prepare a New Dictionary for Publication workflow from the Actions tab, with the dictionary's directory under
-`dictionaries/`, such as `perl`. It opens a `feat(<name>): publish the <name> dictionary` PR that:
+Run the [Prepare a New Dictionary for Publication](https://github.com/streetsidesoftware/cspell-dicts/actions/workflows/prepare-publication.yml) workflow with the dictionary's directory under
+`dictionaries/`, such as `matlab`. It opens a `feat(<name>): publish the <name> dictionary` PR that:
 
-- removes `private` and "-- Private until verified" from `package.json`
-- sets the dictionary's `release-as` to `1.0.0`
+- makes the dictionary public
+- sets its `release-as` to `1.0.0`
+- lists the commands for steps 2 and 3 as a checklist
 
-The workflow runs `pnpm prepare-publication`. To do the same by hand, run it in the dictionary's directory and open the
-PR yourself.
+### 2. Publish the first version by hand
 
-### 2. Publish an alpha version
+Follow the checklist in the PR. It covers:
 
-Log in to npm first, with `npm login --auth-type=web`. Then, from a checkout of the PR's branch, do every step in the
-dictionary's directory, as the PR's checklist lists them:
+- checking out only the PR's branch
+- logging in to npm
+- building and packing the dictionary, then publishing it as an alpha
+- adding the trusted publisher
+- committing the Trusted Publishing status to the PR
 
-```sh
-cd dictionaries/<name>
-pnpm install
-pnpm run prepare:dictionary
-pnpm pack
-npm publish <the .tgz pnpm pack printed> --tag alpha --provenance=false
-pnpm trusted-publishing
-```
-
-- Check the packed files with `tar -tzf <the .tgz>` before publishing: built files that git ignores, such as
-  `dict/*.gz`, must be there.
-- The `--tag alpha` option is needed because npm requires a tag for a prerelease version.
-- The `--provenance=false` option is needed because npm only creates provenance in CI.
-- Check that `pnpm trusted-publishing --check` in the same directory reports `trusted publisher yes`.
+Before publishing, check the files `pnpm pack` lists: built files that git ignores, such as `dict/*.txt.gz`, must be
+there.
 
 ### 3. Merge
 
-- Merge the PR. As a `feat:` with `release-as`, it puts the dictionary in the release PR at `1.0.0`.
-- Merge the release PR. CI publishes `1.0.0` through Trusted Publishing, with provenance.
-- The Update Release Please Config workflow then opens a PR that removes `release-as`. Merge it.
+- Merge the PR. The release PR then includes the dictionary at `1.0.0`.
+- Merge the release PR. CI publishes `1.0.0` through Trusted Publishing.
+- Remember to merge the PR that the [Update Release Please Config](https://github.com/streetsidesoftware/cspell-dicts/actions/workflows/update-release-please-config.yml) workflow opens to remove `release-as`.
 
 ### Later: add it to the bundle
 
@@ -106,44 +92,36 @@ repo decides to bundle it. Then:
 
 ## Trusted Publishing
 
-For security, every dictionary is published with
-[npm Trusted Publishing](https://docs.npmjs.com/trusted-publishers), from this repo's Publish to NPM workflow
-(`publish.yml`).
+Every dictionary is published by this repo's [Publish to NPM](https://github.com/streetsidesoftware/cspell-dicts/actions/workflows/publish.yml) workflow through
+[npm Trusted Publishing](https://docs.npmjs.com/trusted-publishers), with no stored npm token. Each dictionary has to
+name that workflow as its trusted publisher on npm.
 
-### Setting up Trusted Publishing
+`pnpm run trusted-publishing` manages that. Give it package names, such as `@cspell/dict-git`, or `--all`. In a
+dictionary's directory, it works on that dictionary when you give it no names.
 
-Each dictionary has to trust that workflow on npm. The script `scripts/npm-trusted-publishing.mts` sets that up, run as
-`pnpm run trusted-publishing`. Give it package names, such as `@cspell/dict-git`, or `--all` for every public
-dictionary. In a dictionary's directory, `pnpm trusted-publishing` with no names works on that dictionary. Anywhere
-else, with neither, it prints its usage.
+- **Add:** `pnpm run trusted-publishing <package>` adds the trusted publisher where it's missing.
+- **Check:** `pnpm run trusted-publishing --check <package>` reports whether a dictionary has the trusted publisher,
+  and whether its latest version was published by CI.
+- **Block tokens:** `pnpm run trusted-publishing --mfa <package>` stops anyone from publishing the dictionary with a
+  token. Use it only after every dictionary publishes through Trusted Publishing.
 
-- **Add:** `pnpm run trusted-publishing (<package>... | --all)` adds `publish.yml` in
-  `streetsidesoftware/cspell-dicts` as a trusted publisher where it's missing. It skips dictionaries recorded in
-  `static/published.json` without asking npm.
-- **Check:** `pnpm run trusted-publishing --check (<package>... | --all)` reports whether each dictionary has that
-  trusted publisher and how its latest version was published. It exits 1 if any dictionary isn't set up or was last
-  published with a token. It asks npm about every dictionary, recorded or not.
-- **Block tokens:** `pnpm run trusted-publishing --mfa (<package>... | --all)` requires 2FA and disallows tokens for
-  publishing each dictionary.
+To run it:
 
-When you run it:
+1. Log in with `npm login --auth-type=web`. You need npm publish rights for `@cspell`.
+2. When npm asks for 2FA in the browser, check the box to skip 2FA for the next 5 minutes. If the 5 minutes run out
+   before it finishes, run it again: it skips dictionaries that are already set up.
+3. Commit `static/published.json`, where the script records the dictionaries it set up.
 
-- Add `--dry-run` to see the changes without making them.
-- Log in first with `npm login --auth-type=web`. It needs npm publish rights for `@cspell`.
-- npm opens a browser page for 2FA. Choose to skip 2FA for the next 5 minutes.
-- It pauses 2 seconds between dictionaries, so a window fits about 40 to 80 of them. Run it again after the window
-  ends: it skips dictionaries that are already set up.
-- It records each dictionary it finds or sets up in `static/published.json`, as
-  `"@cspell/dict-<name>": { "trustedPublishing": true }`. Commit that file after a run, so the next run only touches
-  new dictionaries.
-- Use the `--mfa` option only after every dictionary publishes through Trusted Publishing. Once a dictionary disallows
-  tokens, only Trusted Publishing or a maintainer with 2FA can publish it.
-- A new dictionary's first alpha version is published by hand. See [New dictionaries](#new-dictionaries).
+## What gets published
+
+Each package's `files` field lists what npm publishes: `cspell-ext.json` and the built dictionary. New dictionaries
+publish the compressed file, such as `dict/<name>.txt.gz`. Word lists in `src/` aren't published, but upstream license
+files are, such as `src/hunspell/license`.
 
 ## Fixing a changelog entry after merge
 
-If a PR merged with the wrong type, correct it on the merged PR, never on the release PR, which is regenerated on every
-run. Add a block like this to the end of the merged PR's description:
+If a PR was merged with the wrong type, correct it on the merged PR. Don't edit the release PR: Release Please rewrites
+it on every run. Add a block like this to the end of the merged PR's description:
 
 ```text
 BEGIN_COMMIT_OVERRIDE
@@ -151,14 +129,12 @@ chore: corrected commit message
 END_COMMIT_OVERRIDE
 ```
 
-Release Please uses it instead of the commit message the next time it runs. It works only for squash-merged PRs.
+The next time Release Please runs, it uses that message instead of the commit's. This only works for squash-merged PRs.
 
 ## When publishing fails
 
-1. Fix the reason it failed.
-2. Run the Publish to NPM workflow (`publish.yml`) by hand. It publishes whatever isn't on npm yet, so it is safe to
-   run again.
+1. Fix the cause.
+2. Run the [Publish to NPM](https://github.com/streetsidesoftware/cspell-dicts/actions/workflows/publish.yml) workflow. It publishes only the versions that aren't on npm yet, so
+   running it again is safe.
 
-`pnpm run pub-recover` runs the same `lerna publish from-package` locally, one package at a time. It needs npm publish
-rights, and the packages set `publishConfig.provenance`, which npm only supports from a cloud-hosted CI runner such as
-GitHub Actions ([npm docs](https://docs.npmjs.com/generating-provenance-statements)). Prefer the workflow.
+Don't publish from your machine instead: the packages require provenance, which npm only creates in CI.
