@@ -4,10 +4,10 @@ How the dictionary packages in this repo are laid out, built, tested, and publis
 
 ## Prerequisites
 
-- **Node.js 22.19 or later**, as `engines` in the root `package.json` requires. CI tests on Node 22 and 26 on Ubuntu,
-  and Node 24 on Windows.
+- **Node.js:** the version `engines` in the root `package.json` requires. The Node versions CI tests on are in
+  `.github/workflows/test.yml`.
 - **pnpm through Corepack.** The root `package.json` pins the pnpm version in `packageManager`, and Corepack provides
-  exactly that version. Corepack ships with Node 22 and 24. Enable it once:
+  exactly that version. Enable it once:
 
   ```sh
   corepack enable
@@ -134,7 +134,7 @@ Workflows in `.github/workflows/`:
 
 | Workflow                  | Runs on                                                   | What it does                                                                                                                                                      |
 | ------------------------- | --------------------------------------------------------- | ----------------------------------------------------------------------------------------------------------------------------------------------------------------- |
-| `test.yml`                | pull requests that change what it tests, pushes to `main` | `pnpm test` on Node 22 and 26 (Ubuntu) and Node 24 (Windows), and a conditional build                                                                             |
+| `test.yml`                | pull requests that change what it tests, pushes to `main` | `pnpm test` on several Node versions and on Windows, and a conditional build                                                                                      |
 | `lint.yml`                | pull requests and pushes that touch code, docs, or config | `pnpm run lint-ci`: ESLint, Prettier, TypeScript type check, and cspell, without fixing                                                                           |
 | `cspell-action.yml`       | pull requests, pushes to `main`                           | Spell checks the changed files                                                                                                                                    |
 | `autofix.yml`             | pull requests                                             | Runs `lint:fix` and `sort`, and pushes the fixes through autofix.ci, unless the PR has the `no-autofix` label                                                     |
