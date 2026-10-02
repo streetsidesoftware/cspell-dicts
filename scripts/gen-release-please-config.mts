@@ -8,8 +8,6 @@ import fs from 'node:fs/promises';
 import path from 'node:path';
 import { fileURLToPath } from 'node:url';
 
-import { format, resolveConfig } from 'prettier';
-
 import { configFile, manifestFile as versionFile, type PackageEntry } from './lib/release-please.mts';
 
 const rootDir = fileURLToPath(new URL('../', import.meta.url));
@@ -75,9 +73,7 @@ async function genConfig(): Promise<string> {
         const keep = releaseAs && released[dir] !== releaseAs;
         packages[dir] = { component: pkg.name, releaseType: 'node', ...(keep && { 'release-as': releaseAs }) };
     }
-    const options = await resolveConfig(configFilePath, { editorconfig: true });
-    // Expanded input, because Prettier keeps an object on one line when the input has it on one line.
-    return format(JSON.stringify({ ...settings, packages }, undefined, 4), { ...options, filepath: configFilePath });
+    return JSON.stringify({ ...settings, packages }, undefined, 4) + '\n';
 }
 
 async function genVersionManifest(): Promise<string> {
