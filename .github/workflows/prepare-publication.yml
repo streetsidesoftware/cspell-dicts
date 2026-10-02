@@ -65,11 +65,9 @@ jobs:
             gh pr checkout prepare-publication-${{ inputs.dictionary }}
             ```
 
-            Either way, the branch tracks `origin`, so `git push` updates this PR.
-
             ### 2. Publish the first version
 
-            Before merging, from the repo root:
+            From the repo root:
 
             - [ ] `npm login --auth-type=web`, then check that `npm whoami` shows your npm user name
             - [ ] `cd dictionaries/${{ inputs.dictionary }}`
@@ -79,8 +77,18 @@ jobs:
             - [ ] `npm publish <the .tgz it printed> --tag alpha --provenance=false`
             - [ ] `pnpm trusted-publishing`
 
-            ### 3. After merging
+            ### 3. Push the record to this PR
 
-            Merge the release PR. CI publishes `1.0.0` through Trusted Publishing, and the Update Release Please Config workflow removes `release-as`.
+            `pnpm trusted-publishing` records the dictionary in `static/published.json`. From the repo root:
+
+            ```sh
+            git add static/published.json
+            git commit -m "chore(${{ inputs.dictionary }}): record Trusted Publishing"
+            git push
+            ```
+
+            ### 4. Merge this PR
+
+            Then merge the release PR. CI publishes `1.0.0` through Trusted Publishing, and the Update Release Please Config workflow removes `release-as`.
           app_id: ${{ secrets.AUTOMATION_APP_ID }}
           app_private_key: ${{ secrets.AUTOMATION_PRIVATE_KEY }}
