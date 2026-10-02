@@ -86,9 +86,10 @@ jobs:
 
             ### 3. Push the record to this PR
 
-            `pnpm trusted-publishing` records the dictionary in `static/published.json`. From the repo root:
+            `pnpm trusted-publishing` records the dictionary in `static/published.json`:
 
             ```sh
+            cd ../..
             git add static/published.json
             git commit -m "chore(${{ inputs.dictionary }}): record Trusted Publishing"
             git push
