@@ -60,6 +60,5 @@ jobs:
           commit-message: ${{ env.TITLE }}
           branch: release-dictionary
           base: ${{ env.REF_BRANCH }}
-          body: ${{ env.TITLE }}
           app_id: ${{ secrets.AUTOMATION_APP_ID }}
           app_private_key: ${{ secrets.AUTOMATION_PRIVATE_KEY }}
