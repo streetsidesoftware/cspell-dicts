@@ -434,7 +434,7 @@
   },
   {
     "name": "CSpell Dictionaries Bundle",
-    "version": "2.0.77",
+    "version": "2.0.78",
     "dir": "dictionaries/cspell",
     "packageName": "@cspell/dict-cspell-bundle",
     "description": "Dictionaries included with the CSpell Command Line tool.",
@@ -2468,6 +2468,29 @@
     ]
   },
   {
+    "name": "MATLAB",
+    "version": "0.0.1-alpha.0",
+    "dir": "dictionaries/matlab",
+    "packageName": "@cspell/dict-matlab",
+    "description": "MATLAB function and keyword dictionary for cspell.",
+    "cspell": false,
+    "categories": ["programming"],
+    "dictionaries": [
+      {
+        "name": "matlab",
+        "description": "MATLAB function and keyword dictionary for cspell.",
+        "fileTypes": ["matlab"],
+        "localeFileTypes": [
+          {
+            "locale": "*",
+            "fileType": "matlab"
+          }
+        ]
+      }
+    ],
+    "patterns": []
+  },
+  {
     "name": "Medical terms",
     "version": "4.1.8",
     "dir": "dictionaries/medicalterms",
@@ -2669,7 +2692,7 @@
   },
   {
     "name": "NPM",
-    "version": "5.2.51",
+    "version": "5.2.52",
     "dir": "dictionaries/npm",
     "packageName": "@cspell/dict-npm",
     "description": "Dictionary of Common Javascript Packages.",
@@ -2715,7 +2738,7 @@
   },
   {
     "name": "Perl",
-    "version": "1.0.0-alpha.0",
+    "version": "1.0.0",
     "dir": "dictionaries/perl",
     "packageName": "@cspell/dict-perl",
     "description": "Perl built-in functions, keywords, and pragmas.",
