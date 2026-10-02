@@ -82,7 +82,7 @@ Add the following to your VSCode settings:
 
 ```jsonc
 {
-  "cSpell.import": ["https://cdn.jsdelivr.net/npm/@cspell/dict-matlab@0/cspell-ext.json"],
+  "cSpell.import": ["https://cdn.jsdelivr.net/npm/@cspell/dict-matlab@1/cspell-ext.json"],
   "cSpell.dictionaries": ["matlab"],
 }
 ```
@@ -96,7 +96,7 @@ Add the following to your VSCode settings:
 
 ```jsonc
 {
-  "import": ["https://cdn.jsdelivr.net/npm/@cspell/dict-matlab@0/cspell-ext.json"],
+  "import": ["https://cdn.jsdelivr.net/npm/@cspell/dict-matlab@1/cspell-ext.json"],
   "dictionaries": ["matlab"],
 }
 ```
@@ -110,7 +110,7 @@ Add the following to your VSCode settings:
 
 ```yaml
 import:
-  - https://cdn.jsdelivr.net/npm/@cspell/dict-matlab@0/cspell-ext.json
+  - https://cdn.jsdelivr.net/npm/@cspell/dict-matlab@1/cspell-ext.json
 dictionaries:
   - matlab
 ```
