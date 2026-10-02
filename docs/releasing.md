@@ -19,11 +19,11 @@ Trusted Publishing must be done by hand (see [New dictionaries](#new-dictionarie
      `@cspell/dict-cspell-bundle`, with a "workspace dependencies were updated" entry.
 2. **Release Please creates the releases after the release PR is merged.** It runs again on the merge, tags each
    released package as `<package name>@<version>`, and creates a GitHub release for it.
-3. **The publishing workflow is triggered by a release tag.** Each release also tags the root package as
-   `cspell-dicts@<version>`, and that tag triggers the Publish to NPM workflow (`publish.yml`). The workflow runs
+3. **The publishing workflow is triggered by the creation of a release tag.** Each release also tags the root package as
+   `cspell-dicts@<version>`, and creating that tag triggers the Publish to NPM workflow (`publish.yml`). The workflow runs
    `lerna publish from-package`, which publishes every public package whose version isn't on npm yet.
-   - Release Please pushes the tags with a GitHub App token, because a tag pushed with the default `GITHUB_TOKEN`
-     doesn't trigger other workflows.
+   - Release Please pushes the tags with a GitHub App token, because a tag created with the default
+     `GITHUB_TOKEN` doesn't trigger other workflows.
 
 ## Rules
 
