@@ -14,7 +14,7 @@ must be done by hand (see [New dictionaries](#new-dictionaries)).
    PR is merged.
 2. **Release Please creates the releases once the release PR has been merged.** Each package gets its own GitHub
    release, tagged `<package name>@<version>`.
-3. **CI publishes them.** Creating the release tags triggers the Publish to NPM workflow, which publishes the new
+3. **CI publishes them.** Creating the release tags triggers the [Publish to NPM](https://github.com/streetsidesoftware/cspell-dicts/actions/workflows/publish.yml) workflow, which publishes the new
    versions to npm.
 
 A package is released when a `feat:` or `fix:` change touches its files. `chore:`, `docs:`, and the other hidden types
@@ -22,8 +22,7 @@ never cause a release. See [Commits and pull requests](./commits-and-pull-reques
 
 ## Rules
 
-- **Don't edit `release-please-config.json` or `.release-please-manifest.json` by hand.** The Update Release Please
-  Config workflow keeps both up to date: when a package is added or released, it opens a `chore:` PR. Merge it.
+- **Don't edit `release-please-config.json` or `.release-please-manifest.json` by hand.** The [Update Release Please Config](https://github.com/streetsidesoftware/cspell-dicts/actions/workflows/update-release-please-config.yml) workflow keeps both up to date: when a package is added or released, it opens a `chore:` PR. Merge it.
 - **New dictionaries start private.** The generator sets `private: true` and adds "-- Private until verified" to
   `description`. Contributors leave both, and a maintainer removes them. See [New dictionaries](#new-dictionaries).
 
@@ -31,11 +30,11 @@ never cause a release. See [Commits and pull requests](./commits-and-pull-reques
 
 Set the package's `release-as`, with either:
 
-- the Set Dictionary Version release-as workflow, from the Actions tab
+- the [Set Dictionary Version release-as](https://github.com/streetsidesoftware/cspell-dicts/actions/workflows/release-dictionary.yml) workflow
 - `pnpm run release-as <package> --version <version>`
 
-The release happens with the next `fix:` or `feat:` change in the package's directory, such as a Build Dictionaries bot
-PR. After the release, the Update Release Please Config workflow opens a PR that removes `release-as`. Merge it.
+The release happens with the next `fix:` or `feat:` change in the package's directory, such as a [Build Dictionaries](https://github.com/streetsidesoftware/cspell-dicts/actions/workflows/build-dictionaries.yml) bot
+PR. After the release, the [Update Release Please Config](https://github.com/streetsidesoftware/cspell-dicts/actions/workflows/update-release-please-config.yml) workflow opens a PR that removes `release-as`. Merge it.
 
 ## Try changes as alphas
 
@@ -55,7 +54,7 @@ the first version by hand, as an alpha, and CI publishes every version after it,
 
 ### 1. Open the publication PR
 
-From the Actions tab, run the Prepare a New Dictionary for Publication workflow with the dictionary's directory under
+Run the [Prepare a New Dictionary for Publication](https://github.com/streetsidesoftware/cspell-dicts/actions/workflows/prepare-publication.yml) workflow with the dictionary's directory under
 `dictionaries/`, such as `matlab`. It opens a `feat(<name>): publish the <name> dictionary` PR that:
 
 - makes the dictionary public
@@ -79,7 +78,7 @@ there.
 
 - Merge the PR. The release PR then includes the dictionary at `1.0.0`.
 - Merge the release PR. CI publishes `1.0.0` through Trusted Publishing.
-- Merge the Update Release Please Config PR that follows. It removes `release-as`.
+- Merge the [Update Release Please Config](https://github.com/streetsidesoftware/cspell-dicts/actions/workflows/update-release-please-config.yml) PR that follows. It removes `release-as`.
 
 ### Later: add it to the bundle
 
@@ -91,7 +90,7 @@ repo decides to bundle it. Then:
 
 ## Trusted Publishing
 
-Every dictionary is published by this repo's Publish to NPM workflow through
+Every dictionary is published by this repo's [Publish to NPM](https://github.com/streetsidesoftware/cspell-dicts/actions/workflows/publish.yml) workflow through
 [npm Trusted Publishing](https://docs.npmjs.com/trusted-publishers), with no stored npm token. Each dictionary has to
 name that workflow as its trusted publisher on npm.
 
@@ -127,7 +126,7 @@ The next time Release Please runs, it uses that message instead of the commit's.
 ## When publishing fails
 
 1. Fix the cause.
-2. Run the Publish to NPM workflow from the Actions tab. It publishes only the versions that aren't on npm yet, so
+2. Run the [Publish to NPM](https://github.com/streetsidesoftware/cspell-dicts/actions/workflows/publish.yml) workflow. It publishes only the versions that aren't on npm yet, so
    running it again is safe.
 
 Don't publish from your machine instead: the packages require provenance, which npm only creates in CI.
