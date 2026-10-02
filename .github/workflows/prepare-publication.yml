@@ -102,7 +102,7 @@ jobs:
 
             ### 4. Merge this PR
 
-            Then merge the release PR. CI publishes `1.0.0` through Trusted Publishing, and the Update Release Please Config workflow removes `release-as`.
+            Then merge the release PR. The [Publish to NPM](https://github.com/streetsidesoftware/cspell-dicts/actions/workflows/publish.yml) workflow publishes `1.0.0` through Trusted Publishing, and the [Update Release Please Config](https://github.com/streetsidesoftware/cspell-dicts/actions/workflows/update-release-please-config.yml) workflow removes `release-as`.
 
             Optional: clean up your clone. Use `-D`, since a squash merge doesn't count as merged:
 
