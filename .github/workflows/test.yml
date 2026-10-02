@@ -1,6 +1,17 @@
 name: 'build-test'
-on: # rebuild any PRs and main branch changes
+on:
+  # Pull requests only when they change something the tests cover; every push to main.
   pull_request:
+    paths:
+      - 'dictionaries/**'
+      - 'packages/**'
+      - 'scripts/**'
+      - 'generator-cspell-dicts/**'
+      - 'package.json'
+      - 'pnpm-lock.yaml'
+      - 'pnpm-workspace.yaml'
+      - '.github/actions/**'
+      - '.github/workflows/test.yml'
   push:
     branches:
       - main
@@ -19,13 +30,16 @@ jobs:
     strategy:
       fail-fast: false
       matrix:
+        # Node.js release lines, see https://nodejs.org/en/about/previous-releases
+        # Maintenance LTS: nothing may need a newer Node than this. Current: we work with the newest.
         node-version:
           - 22.x
-          - 24.x
+          - 26.x
         os:
           - ubuntu-latest
 
         include:
+          # Active LTS, on Windows.
           - os: windows-latest
             node-version: 24.x
 
