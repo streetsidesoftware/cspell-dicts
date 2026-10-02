@@ -50,15 +50,65 @@ jobs:
           body: |
             Makes the `${{ inputs.dictionary }}` dictionary public: removes `private` and "-- Private until verified", and sets its `release-as` to `1.0.0`.
 
-            Before merging, from a checkout of this PR's branch, logged in to npm with `npm login --auth-type=web`:
+            ### 1. Check out this branch
 
-            - [ ] `cd dictionaries/${{ inputs.dictionary }}`
-            - [ ] `pnpm install`
-            - [ ] `pnpm run prepare:dictionary`
-            - [ ] `pnpm pack`, then check the files with `tar -tzf <the .tgz it printed>`
-            - [ ] `npm publish <the .tgz it printed> --tag alpha --provenance=false`
-            - [ ] `pnpm trusted-publishing`
+            With git, fetching only this branch:
 
-            After merging, merge the release PR. CI publishes `1.0.0` through Trusted Publishing, and the Clear release-as workflow removes `release-as`.
+            ```sh
+            git fetch origin prepare-publication-${{ inputs.dictionary }}
+            git switch -C prepare-publication-${{ inputs.dictionary }} FETCH_HEAD
+            ```
+
+            Or with the GitHub CLI:
+
+            ```sh
+            gh pr checkout prepare-publication-${{ inputs.dictionary }} --detach
+            ```
+
+            Either way, section 3 pushes with git.
+
+            ### 2. Publish the first version
+
+            From the repo root:
+
+            - [ ] Log in to npm, then check that the last command shows your npm user name:
+              ```sh
+              npm login --auth-type=web
+              npm whoami
+              ```
+            - [ ] Build and pack the dictionary, then check the files under "Tarball Contents":
+              ```sh
+              cd dictionaries/${{ inputs.dictionary }}
+              pnpm install
+              pnpm run prepare:dictionary
+              pnpm pack --out package.tgz
+              ```
+            - [ ] Publish it and add the trusted publisher. When npm opens the browser for 2FA, check the box to skip 2FA for the next 5 minutes, so `pnpm trusted-publishing` doesn't ask again:
+              ```sh
+              npm publish package.tgz --tag alpha --provenance=false
+              pnpm trusted-publishing
+              ```
+
+            ### 3. Commit the Trusted Publishing status
+
+            `pnpm trusted-publishing` records the dictionary in `static/published.json`:
+
+            ```sh
+            cd ../..
+            git add static/published.json
+            git commit -m "chore(${{ inputs.dictionary }}): record Trusted Publishing"
+            git push origin HEAD:prepare-publication-${{ inputs.dictionary }}
+            ```
+
+            ### 4. Merge this PR
+
+            Then merge the release PR. CI publishes `1.0.0` through Trusted Publishing, and the Update Release Please Config workflow removes `release-as`.
+
+            Optional: clean up your clone. Use `-D`, since a squash merge doesn't count as merged:
+
+            ```sh
+            git switch main
+            git branch -D prepare-publication-${{ inputs.dictionary }}
+            ```
           app_id: ${{ secrets.AUTOMATION_APP_ID }}
           app_private_key: ${{ secrets.AUTOMATION_PRIVATE_KEY }}
