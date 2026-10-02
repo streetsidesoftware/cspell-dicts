@@ -36,7 +36,8 @@ Set the package's `release-as`, with either:
 - `pnpm run release-as <package> --version <version>`
 
 The release happens with the next `fix:` or `feat:` change in the package's directory, such as a [Build Dictionaries](https://github.com/streetsidesoftware/cspell-dicts/actions/workflows/build-dictionaries.yml) bot
-PR. After the release, the [Update Release Please Config](https://github.com/streetsidesoftware/cspell-dicts/actions/workflows/update-release-please-config.yml) workflow opens a PR that removes `release-as`. Merge it.
+PR. After the release, remember to merge the PR that the [Update Release Please Config](https://github.com/streetsidesoftware/cspell-dicts/actions/workflows/update-release-please-config.yml) workflow opens to remove
+`release-as`.
 
 ## Try changes as alphas
 
@@ -80,7 +81,7 @@ there.
 
 - Merge the PR. The release PR then includes the dictionary at `1.0.0`.
 - Merge the release PR. CI publishes `1.0.0` through Trusted Publishing.
-- Merge the [Update Release Please Config](https://github.com/streetsidesoftware/cspell-dicts/actions/workflows/update-release-please-config.yml) PR that follows. It removes `release-as`.
+- Remember to merge the PR that the [Update Release Please Config](https://github.com/streetsidesoftware/cspell-dicts/actions/workflows/update-release-please-config.yml) workflow opens to remove `release-as`.
 
 ### Later: add it to the bundle
 
