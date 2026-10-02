@@ -59,11 +59,13 @@ jobs:
             git switch -C prepare-publication-${{ inputs.dictionary }} FETCH_HEAD
             ```
 
-            Or with the GitHub CLI, in a clone that fetches every branch:
+            Or with the GitHub CLI:
 
             ```sh
-            gh pr checkout prepare-publication-${{ inputs.dictionary }}
+            gh pr checkout prepare-publication-${{ inputs.dictionary }} --detach
             ```
+
+            Either way, section 3 pushes with git.
 
             ### 2. Publish the first version
 
