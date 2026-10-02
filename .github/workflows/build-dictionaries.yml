@@ -44,10 +44,6 @@ jobs:
         run: |
           pnpm update-package-json
 
-      - name: Update the Release Please config and manifest
-        run: |
-          pnpm run gen:release-please-config
-
       - name: Sort Source
         run: |
           pnpm run lint:fix:sort-source-files
