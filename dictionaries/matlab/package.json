@@ -14,7 +14,9 @@
   },
   "scripts": {
     "build": "cspell-tools-cli build",
-    "test": "head -n 1000 \"src/matlab.txt\" | cspell -c ./cspell-ext.json \"--locale=*\" \"--languageId=matlab\" stdin",
+    "test": "pnpm run test:words && pnpm run test:samples",
+    "test:samples": "cspell samples",
+    "test:words": "head -n 1000 \"src/matlab.txt\" | cspell -c ./cspell-ext.json \"--locale=*\" \"--languageId=matlab\" stdin",
     "prepublishOnly": "echo OK",
     "prepare:dictionary": "pnpm run build"
   },
