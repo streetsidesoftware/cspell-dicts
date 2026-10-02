@@ -1,0 +1,57 @@
+name: ' 🧹 Clear release-as'
+
+# Runs the config script, which drops each `release-as` whose version is now in .release-please-manifest.json,
+# and opens a PR with any change. It runs when the manifest changes on main, such as after a release.
+
+on:
+  workflow_dispatch:
+    inputs:
+      ref:
+        description: 'Branch to run against and open the PR into'
+        type: string
+        default: main
+  push:
+    branches:
+      - main
+    paths:
+      - .release-please-manifest.json
+
+permissions:
+  contents: read
+
+# Each run regenerates from the newest main, so a newer run makes an older one pointless.
+concurrency:
+  group: ${{ github.workflow }}
+  cancel-in-progress: true
+
+jobs:
+  clear-release-as:
+    if: github.repository_owner == 'streetsidesoftware'
+    runs-on: ubuntu-latest
+    env:
+      REF_BRANCH: ${{ inputs.ref || 'main' }}
+    steps:
+      - name: Checkout code
+        uses: actions/checkout@3d3c42e5aac5ba805825da76410c181273ba90b1 # v7.0.1
+        with:
+          persist-credentials: false
+          ref: ${{ env.REF_BRANCH }}
+
+      - name: Setup
+        uses: ./.github/actions/quick-setup
+
+      - name: Update the Release Please config
+        run: |
+          pnpm i
+          pnpm run gen:release-please-config
+
+      - name: PR
+        uses: ./.github/actions/pr
+        with:
+          commit-message: 'chore: update the Release Please config after a release'
+          branch: release-please-config
+          base: ${{ env.REF_BRANCH }}
+          body: |
+            Removes `release-as` from packages that have now been released at that version.
+          app_id: ${{ secrets.AUTOMATION_APP_ID }}
+          app_private_key: ${{ secrets.AUTOMATION_PRIVATE_KEY }}

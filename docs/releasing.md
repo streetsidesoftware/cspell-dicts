@@ -24,17 +24,28 @@ See [Commits and pull requests](./commits-and-pull-requests.md) for which type t
 
 ## Rules
 
-- **`release-please-config.json` is generated.** Never edit it by hand. `pnpm run gen:release-please-config` writes it
-  from the settings in `scripts/gen-release-please-config.mts`, including `changelog-sections`, and every
-  `dictionaries/*/package.json` and `packages/*/package.json`.
-  - `pnpm run lint` runs it, and so does autofix on pull requests, so a new package is added in the PR that creates it.
-  - `pnpm run lint-ci` fails if the committed file is out of date.
+- **`release-please-config.json` is generated.** Do not edit it by hand.
+  `pnpm run gen:release-please-config` writes it from the settings in `scripts/gen-release-please-config.mts`,
+  including `changelog-sections`, and every `dictionaries/*/package.json` and `packages/*/package.json`.
+  - The Build Dictionaries workflow runs it after each push to `main`, and the Clear release-as workflow runs it when
+    the manifest changes on `main`, such as after a release. Each opens a PR with any change. Pull requests don't
+    run it.
+  - It also adds each new package to `.release-please-manifest.json`, with the version in its `package.json`.
+  - To release a package at a set version, such as a new dictionary's `1.0.0`, run the Set Dictionary Version release-as workflow
+    from the Actions tab, or `pnpm run release-as <package> --version <version>`. Both set the package's
+    `release-as`. The release itself comes with the next `fix:` or `feat:` change inside the package's directory,
+    such as a Build Dictionaries bot PR. The script keeps `release-as` until the manifest shows that version was
+    released, so the Clear release-as workflow's PR right after the release removes it. If that PR is missed, run
+    Clear release-as from the Actions tab.
+  - To try risky changes to a dictionary, put it in alpha mode: set `release-as` to a prerelease version, such as
+    `3.2.0-alpha.0`. CI publishes prerelease versions under the npm `alpha` tag, so `latest`, and what users
+    install, doesn't change. After that release, later releases stay alphas, such as `3.2.1-alpha.0`, until
+    `release-as` is set to the final version, such as `3.2.0`.
   - Private packages are included on purpose. When one is released, the `node-workspace` plugin also releases the
     packages that depend on it, such as the English dictionaries that build from `@cspell/aoo-mozilla-en-dict`.
 - **The `"."` entry always stays.** It is the root `cspell-dicts` package, which is private and never published.
-- **Never add a new package to `.release-please-manifest.json`.** The manifest records each package's last released
-  version. Release Please adds a new package on its first release, using the version in its `package.json`
-  (`1.0.0` for a package made by the generator). Seeding the manifest by hand makes the first release land above it.
+- **Don't edit `.release-please-manifest.json` by hand.** It records each package's last released version. Release
+  Please updates it on every release, and the config script adds new packages.
 - **A new dictionary is private until a maintainer verifies it.** The generator creates it with `private: true` and
   "-- Private until verified" in `description`. Contributors leave both. A maintainer removes them in a separate PR.
   See [New dictionaries](#new-dictionaries).

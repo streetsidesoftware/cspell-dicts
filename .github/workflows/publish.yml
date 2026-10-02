@@ -36,4 +36,5 @@ jobs:
         env:
           NODE_AUTH_TOKEN: ${{secrets.PUBLISH_NPM}}
           GITHUB_TOKEN: ${{secrets.GITHUB_TOKEN}}
-        run: pnpm lerna publish from-package --no-push --no-private --yes
+        # Prerelease versions, such as 3.2.0-alpha.0, go to the `alpha` dist-tag, so `latest` doesn't change.
+        run: pnpm lerna publish from-package --no-push --no-private --pre-dist-tag alpha --yes

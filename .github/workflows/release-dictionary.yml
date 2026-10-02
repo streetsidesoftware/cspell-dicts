@@ -1,0 +1,65 @@
+name: ' 📦 Set Dictionary Version release-as'
+
+# Opens a PR that sets a package's `release-as`, so Release Please releases it at that version next.
+
+on:
+  workflow_dispatch:
+    inputs:
+      package:
+        description: 'Package name, such as @cspell/dict-perl'
+        type: string
+        required: true
+      version:
+        description: 'Version to release, such as 1.0.0 or 3.2.0-alpha.0'
+        type: string
+      remove-release-as:
+        description: "Remove the package's release-as instead (the version is ignored)"
+        type: boolean
+        default: false
+      ref:
+        description: 'Branch to run against and open the PR into'
+        type: string
+        default: main
+
+permissions:
+  contents: read
+
+jobs:
+  release-as:
+    if: github.repository_owner == 'streetsidesoftware'
+    runs-on: ubuntu-latest
+    env:
+      PACKAGE: ${{ inputs.package }}
+      COMMAND: ${{ inputs.remove-release-as && '--remove' || format('--version {0}', inputs.version) }}
+      TITLE: >-
+        ${{
+          inputs.remove-release-as
+          && format('chore: remove release-as for {0}', inputs.package)
+          || format('chore: set release-as for {0} to {1}', inputs.package, inputs.version)
+        }}
+      REF_BRANCH: ${{ inputs.ref || 'main' }}
+    steps:
+      - name: Checkout code
+        uses: actions/checkout@3d3c42e5aac5ba805825da76410c181273ba90b1 # v7.0.1
+        with:
+          persist-credentials: false
+          ref: ${{ env.REF_BRANCH }}
+
+      - name: Setup
+        uses: ./.github/actions/quick-setup
+
+      - name: Install
+        run: pnpm i
+
+      - name: Set or remove release-as
+        run: pnpm run release-as $COMMAND "$PACKAGE"
+
+      - name: PR
+        uses: ./.github/actions/pr
+        with:
+          commit-message: ${{ env.TITLE }}
+          branch: release-dictionary
+          base: ${{ env.REF_BRANCH }}
+          body: ${{ env.TITLE }}
+          app_id: ${{ secrets.AUTOMATION_APP_ID }}
+          app_private_key: ${{ secrets.AUTOMATION_PRIVATE_KEY }}
