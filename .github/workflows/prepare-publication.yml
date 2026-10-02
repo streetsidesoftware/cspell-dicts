@@ -23,7 +23,6 @@ jobs:
     if: github.repository_owner == 'streetsidesoftware'
     runs-on: ubuntu-latest
     env:
-      DICTIONARY: ${{ inputs.dictionary }}
       REF_BRANCH: ${{ inputs.ref || 'main' }}
     steps:
       - name: Checkout code
@@ -38,15 +37,6 @@ jobs:
       - name: Install
         run: pnpm i
 
-      - name: Find the package
-        id: pkg
-        run: |
-          if [[ ! "$DICTIONARY" =~ ^[A-Za-z0-9][A-Za-z0-9_.-]*$ ]] || [[ ! -f "dictionaries/$DICTIONARY/package.json" ]]; then
-            echo "::error::No dictionary at dictionaries/$DICTIONARY"
-            exit 1
-          fi
-          echo "name=$(node -p "require('./dictionaries/$DICTIONARY/package.json').name")" >> "$GITHUB_OUTPUT"
-
       - name: Prepare for publication
         working-directory: dictionaries/${{ inputs.dictionary }}
         run: pnpm prepare-publication
@@ -54,11 +44,11 @@ jobs:
       - name: PR
         uses: ./.github/actions/pr
         with:
-          commit-message: 'feat(${{ inputs.dictionary }}): publish ${{ steps.pkg.outputs.name }}'
+          commit-message: 'feat(${{ inputs.dictionary }}): publish the ${{ inputs.dictionary }} dictionary'
           branch: prepare-publication-${{ inputs.dictionary }}
           base: ${{ env.REF_BRANCH }}
           body: |
-            Makes `${{ steps.pkg.outputs.name }}` public: removes `private` and "-- Private until verified", and sets its `release-as` to `1.0.0`.
+            Makes the `${{ inputs.dictionary }}` dictionary public: removes `private` and "-- Private until verified", and sets its `release-as` to `1.0.0`.
 
             Before merging, from a checkout of this PR's branch, logged in to npm with `npm login --auth-type=web`:
 

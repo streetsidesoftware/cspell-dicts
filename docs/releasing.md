@@ -63,7 +63,7 @@ publishes an alpha version by hand first. CI publishes `1.0.0`.
 ### 1. Open the PR
 
 Run the Prepare Dictionary for Publication workflow from the Actions tab, with the dictionary's directory under
-`dictionaries/`, such as `perl`. It opens a `feat(<name>): publish <package>` PR that:
+`dictionaries/`, such as `perl`. It opens a `feat(<name>): publish the <name> dictionary` PR that:
 
 - removes `private` and "-- Private until verified" from `package.json`
 - sets the dictionary's `release-as` to `1.0.0`
