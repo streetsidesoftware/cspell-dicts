@@ -103,5 +103,12 @@ jobs:
             ### 4. Merge this PR
 
             Then merge the release PR. CI publishes `1.0.0` through Trusted Publishing, and the Update Release Please Config workflow removes `release-as`.
+
+            Optional: clean up your clone. Use `-D`, since a squash merge doesn't count as merged:
+
+            ```sh
+            git switch main
+            git branch -D prepare-publication-${{ inputs.dictionary }}
+            ```
           app_id: ${{ secrets.AUTOMATION_APP_ID }}
           app_private_key: ${{ secrets.AUTOMATION_PRIVATE_KEY }}
