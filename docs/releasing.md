@@ -116,7 +116,7 @@ To run it:
 
 Each package's `files` field lists what npm publishes: `cspell-ext.json` and the built dictionary. New dictionaries
 publish the compressed file, such as `dict/<name>.txt.gz`. Word lists in `src/` aren't published, but upstream license
-files are, such as `src/hunspell/license`.
+files are, such as `src/hunspell/license`. See [Dictionary packages](./dictionary-packages.md).
 
 ## Fixing a changelog entry after merge
 
