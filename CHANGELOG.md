@@ -1,5 +1,25 @@
 # Release Notes
 
+## [33.16.0](https://github.com/streetsidesoftware/cspell-dicts/compare/cspell-dicts@33.15.5...cspell-dicts@33.16.0) (2026-10-02)
+
+
+### Features
+
+* **perl:** add Perl dictionary ([#5790](https://github.com/streetsidesoftware/cspell-dicts/issues/5790)) ([b6ae3c8](https://github.com/streetsidesoftware/cspell-dicts/commit/b6ae3c8a2a5995c0149f2a8123a5274fee874c2e))
+
+
+### Updates and Bug Fixes
+
+* Workflow Bot -- Build Dictionaries ([#5795](https://github.com/streetsidesoftware/cspell-dicts/issues/5795)) ([0a2bfe7](https://github.com/streetsidesoftware/cspell-dicts/commit/0a2bfe7874f136b78f0b426e1e8fc163e97329ce))
+* Workflow Bot -- Update Dictionaries ([#5798](https://github.com/streetsidesoftware/cspell-dicts/issues/5798)) ([bd28a80](https://github.com/streetsidesoftware/cspell-dicts/commit/bd28a80cabd75f9bd16b13f8d7444f942408514c))
+
+
+### Dependencies
+
+* The following workspace dependencies were updated
+  * devDependencies
+    * @cspell/dict-cspell-bundle bumped to 2.0.78
+
 ## [33.15.5](https://github.com/streetsidesoftware/cspell-dicts/compare/cspell-dicts@33.15.4...cspell-dicts@33.15.5) (2026-10-01)
 
 
