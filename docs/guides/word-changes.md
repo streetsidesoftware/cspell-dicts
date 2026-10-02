@@ -8,7 +8,7 @@ It is fine to change several words in one PR, as long as they are related: the s
 
 ## 1. Set up
 
-Check the [prerequisites](../build-and-packaging.md#prerequisites), then:
+Check the [prerequisites](../repository.md#prerequisites), then:
 
 ```sh
 pnpm install
@@ -73,7 +73,7 @@ Checks:
 - `dict/` (or the `.trie` file) changed the way you expected, and nothing else did.
 - `pnpm test` passes.
 - If other packages read this package's files (see
-  [Sources from other packages](../build-and-packaging.md#sources-from-other-packages)), build and test them too. For
+  [Using another package's files](../dictionary-packages.md#using-another-packages-files)), build and test them too. For
   example, after changing `en_shared`, build the English dictionaries.
 
 ## 6. Commit and open a PR

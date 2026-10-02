@@ -54,7 +54,7 @@ pnpm test
 - A built file that changed completely usually means a format or encoding change upstream. Investigate before going
   on.
 - Excluded words (`excludeWordsFrom`) must still be excluded.
-- Build and test packages that read this package's files, as in `docs/build-and-packaging.md`.
+- Build and test packages that read this package's files, as in `docs/dictionary-packages.md`.
 - Run `pnpm run lint` from the repo root.
 
 ### 5. Draft the commit message and PR description
