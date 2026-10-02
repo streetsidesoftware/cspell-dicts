@@ -1,6 +1,17 @@
 name: 'build-test'
-on: # rebuild any PRs and main branch changes
+on:
+  # Pull requests only when they change something the tests cover; every push to main.
   pull_request:
+    paths:
+      - 'dictionaries/**'
+      - 'packages/**'
+      - 'scripts/**'
+      - 'generator-cspell-dicts/**'
+      - 'package.json'
+      - 'pnpm-lock.yaml'
+      - 'pnpm-workspace.yaml'
+      - '.github/actions/**'
+      - '.github/workflows/test.yml'
   push:
     branches:
       - main

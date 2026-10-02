@@ -11,6 +11,13 @@ on:
   pull_request:
     # The branches below must be a subset of the branches above
     branches: [main]
+    # Pull requests only when they change code.
+    paths:
+      - '**/*.js'
+      - '**/*.mjs'
+      - '**/*.ts'
+      - '**/*.mts'
+      - '.github/workflows/codeql-analysis.yml'
   schedule:
     - cron: '0 8 * * 5'
 
