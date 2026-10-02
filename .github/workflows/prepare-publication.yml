@@ -50,8 +50,9 @@ jobs:
           body: |
             Makes the `${{ inputs.dictionary }}` dictionary public: removes `private` and "-- Private until verified", and sets its `release-as` to `1.0.0`.
 
-            Before merging, from a checkout of this PR's branch, logged in to npm with `npm login --auth-type=web`:
+            Before merging, from a checkout of this PR's branch:
 
+            - [ ] `npm login --auth-type=web`, then check that `npm whoami` shows your npm user name
             - [ ] `cd dictionaries/${{ inputs.dictionary }}`
             - [ ] `pnpm install`
             - [ ] `pnpm run prepare:dictionary`
@@ -59,6 +60,6 @@ jobs:
             - [ ] `npm publish <the .tgz it printed> --tag alpha --provenance=false`
             - [ ] `pnpm trusted-publishing`
 
-            After merging, merge the release PR. CI publishes `1.0.0` through Trusted Publishing, and the Clear release-as workflow removes `release-as`.
+            After merging, merge the release PR. CI publishes `1.0.0` through Trusted Publishing, and the Update Release Please Config workflow removes `release-as`.
           app_id: ${{ secrets.AUTOMATION_APP_ID }}
           app_private_key: ${{ secrets.AUTOMATION_PRIVATE_KEY }}
