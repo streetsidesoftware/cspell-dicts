@@ -43,7 +43,8 @@ To try risky changes to a dictionary, release it at a prerelease version, such a
 
 - CI publishes prerelease versions under the npm `alpha` tag. Users who install the package still get the `latest`
   version.
-- Later releases stay alphas, such as `3.2.1-alpha.0`, until you release it at a final version, such as `3.2.0`.
+- Later releases stay alphas, such as `3.2.1-alpha.0`. To end the alphas, release the latest alpha's version without
+  `-alpha`, such as `3.2.1`.
 
 ## New dictionaries
 
