@@ -39,7 +39,7 @@
     "*.d.ts"
   ],
   "scripts": {
-    "build": "cross-env NODE_OPTIONS=--max_old_space_size=8192 cspell-tools-cli build",
+    "build": "cspell-tools-cli build",
     "prepare:dictionary": "<%= prepareScript %>",
     "prepublishOnly": "<%= prepublishOnlyScript %>",
     "test": "<%= srcFileReader %> \"<%= srcFile %>\" | cspell -c ./cspell-ext.json \"--locale=<%= locale %>\" \"--languageId=<%= languageId %>\" stdin"
