@@ -32,7 +32,7 @@ See [Commits and pull requests](./commits-and-pull-requests.md) for which type t
     run it.
   - It also adds each new package to `.release-please-manifest.json`, with the version in its `package.json`.
   - To release a package at a set version, such as a new dictionary's `1.0.0`, run the Set Dictionary Version release-as workflow
-    from the Actions tab, or `pnpm run release-as <package> [--version <version>]`. Both set the package's
+    from the Actions tab, or `pnpm run release-as <package> --version <version>`. Both set the package's
     `release-as`. The release itself comes with the next `fix:` or `feat:` change inside the package's directory,
     such as a Build Dictionaries bot PR. The script keeps `release-as` until the manifest shows that version was
     released, so the Clear release-as workflow's PR right after the release removes it. If that PR is missed, run
