@@ -11,7 +11,7 @@ and the file types and locales it turns on all end up in users' configs. So the 
 cheap to change.
 
 Most new dictionaries don't need ADRs. They do only when the dictionary takes a different approach from
-`docs/guides/new-dictionary.md`, or needs scripts of its own beyond the generator, `cspell-tools-cli build`, and a
+`docs/guides/new-dictionary.md`, or needs scripts of its own beyond `pnpm run create-dictionary`, `cspell-tools-cli build`, and a
 `sync` script that follows `docs/guides/upstream-updates.md`.
 
 The interview follows the `feature-adr` skill, and so do the ADRs when they're needed. Read
@@ -24,8 +24,8 @@ build half follows `docs/guides/new-dictionary.md`; read it too.
    the repo root with a few typical words. If an existing dictionary comes close, say so: adding words to it (the
    `word-change` skill) may be the better change.
 
-2. **Name it.** Agree on the directory name, such as `ruby` or `en_AU`. The package name is derived from it by the
-   generator: `@cspell/dict-<name>`, lowercase, other characters replaced by `-`. If it needs ADRs, the feature slug
+2. **Name it.** Agree on the directory name, such as `ruby` or `en_AU`. The package name is derived from it by
+   `pnpm run create-dictionary`: `@cspell/dict-<name>`, lowercase, other characters replaced by `-`. If it needs ADRs, the feature slug
    is `dict-<name>`, so the design lives in `docs/ADRs/dict-<name>/`.
 
 3. **Set up a worktree** on a `new-dictionary/<name>` branch, as in `feature-adr` step 3. The design and the
@@ -51,7 +51,7 @@ build half follows `docs/guides/new-dictionary.md`; read it too.
 
 6. **Build the package.** Follow `docs/guides/new-dictionary.md` from step 4. The rules below are the ones most easily
    missed.
-   - Run the generator from the repo root: `pnpm run create-dictionary <name> <path/to/source/words>`. It prompts
+   - From the repo root, run `pnpm run create-dictionary <name> <path/to/source/words>`. It prompts
      interactively; answer from the design.
    - `cspell-ext.json`'s `dictionaryDefinitions` and `languageSettings` match the design exactly: IDs, `languageId`,
      `locale`.

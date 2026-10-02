@@ -33,20 +33,20 @@ If an existing dictionary comes close, adding words to it may be the better chan
 - **Format:** plaintext, or a trie for large lists such as Hunspell dictionaries.
 
 Most new dictionaries don't need ADRs. Record the design as ADRs only when the dictionary takes a different approach
-from this guide, or needs scripts of its own beyond the generator, the build, and a `sync` script as in
+from this guide, or needs scripts of its own beyond `pnpm run create-dictionary`, the build, and a `sync` script as in
 [Upstream updates](./upstream-updates.md). See [ADRs](../ADRs/README.md).
 
 ## 3. Check the sources and their license
 
 - Where do the words come from? Your own list, a project's documentation, or an upstream word list?
 - What is the source's license? The package's `license` field and `LICENSE` must allow it, and upstream license files
-  are published with the package (added to `files`). The generator writes an MIT `LICENSE`: change it if the source
+  are published with the package (added to `files`). `pnpm run create-dictionary` writes an MIT `LICENSE`: change it if the source
   requires.
 - If the license is missing or unclear, stop and ask the maintainers in an issue before going further.
 
 For an upstream word list, also read [Upstream updates](./upstream-updates.md): the package gets a `sync` script.
 
-## 4. Run the generator
+## 4. Create the package
 
 Check the [prerequisites](../repository.md#prerequisites). Then, from the repo root:
 
