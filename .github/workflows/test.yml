@@ -30,6 +30,7 @@ jobs:
     strategy:
       fail-fast: false
       matrix:
+        # The active Node.js versions: https://nodejs.org/en/about/previous-releases
         node-version:
           - 22.x
           - 26.x
