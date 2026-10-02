@@ -23,6 +23,8 @@ never cause a release. See [Commits and pull requests](./commits-and-pull-reques
 ## Rules
 
 - **Don't edit `release-please-config.json` or `.release-please-manifest.json` by hand.** The [Update Release Please Config](https://github.com/streetsidesoftware/cspell-dicts/actions/workflows/update-release-please-config.yml) workflow keeps both up to date: when a package is added or released, it opens a `chore:` PR. Merge it.
+- **Don't edit the `chore: release main` PR.** Release Please rewrites it on every run, so edits are lost. To correct a
+  changelog entry, see [Fixing a changelog entry after merge](#fixing-a-changelog-entry-after-merge).
 - **New dictionaries start private.** The generator sets `private: true` and adds "-- Private until verified" to
   `description`. Contributors leave both, and a maintainer removes them. See [New dictionaries](#new-dictionaries).
 
