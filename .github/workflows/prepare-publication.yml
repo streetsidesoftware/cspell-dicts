@@ -70,15 +70,19 @@ jobs:
             From the repo root:
 
             - [ ] `npm login --auth-type=web`, then check that `npm whoami` shows your npm user name
-            - [ ] Build the dictionary:
+            - [ ] Build and pack the dictionary, then check the files the last command lists:
               ```sh
               cd dictionaries/${{ inputs.dictionary }}
               pnpm install
               pnpm run prepare:dictionary
+              pnpm pack --out package.tgz
+              tar -tzf package.tgz
               ```
-            - [ ] `pnpm pack`, then check the files with `tar -tzf <the .tgz it printed>`
-            - [ ] `npm publish <the .tgz it printed> --tag alpha --provenance=false`
-            - [ ] `pnpm trusted-publishing`
+            - [ ] Publish it and add the trusted publisher:
+              ```sh
+              npm publish package.tgz --tag alpha --provenance=false
+              pnpm trusted-publishing
+              ```
 
             ### 3. Push the record to this PR
 
