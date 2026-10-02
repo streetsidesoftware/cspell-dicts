@@ -87,8 +87,10 @@ async function genVersionManifest(): Promise<string> {
         manifest[dir] = pkg.version;
     }
     // Same order as the config. Entries for removed packages stay, at the end.
-    const sorted = Object.fromEntries([...dirs, ...Object.keys(manifest)].map((dir) => [dir, manifest[dir]]));
-    return JSON.stringify(sorted, undefined, 4) + '\n';
+    const order = new Map(dirs.map((dir, index) => [dir, index]));
+    const rank = (dir: string) => order.get(dir) ?? dirs.length;
+    const sorted = Object.entries(manifest).sort(([a], [b]) => rank(a) - rank(b));
+    return JSON.stringify(Object.fromEntries(sorted), undefined, 4) + '\n';
 }
 
 async function checkConfig(checkOnly: boolean): Promise<boolean> {
