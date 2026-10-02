@@ -52,11 +52,11 @@ jobs:
 
             ### 1. Check out this branch
 
-            With git:
+            With git, fetching only this branch:
 
             ```sh
-            git fetch origin prepare-publication-${{ inputs.dictionary }}
-            git switch -C prepare-publication-${{ inputs.dictionary }} FETCH_HEAD
+            git fetch origin prepare-publication-${{ inputs.dictionary }}:refs/remotes/origin/prepare-publication-${{ inputs.dictionary }}
+            git switch -C prepare-publication-${{ inputs.dictionary }} origin/prepare-publication-${{ inputs.dictionary }}
             ```
 
             Or with the GitHub CLI:
@@ -64,6 +64,8 @@ jobs:
             ```sh
             gh pr checkout prepare-publication-${{ inputs.dictionary }}
             ```
+
+            Either way, the branch tracks `origin`, so `git push` updates this PR.
 
             ### 2. Publish the first version
 
