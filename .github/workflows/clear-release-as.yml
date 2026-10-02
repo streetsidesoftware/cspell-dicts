@@ -1,7 +1,7 @@
 name: ' 🧹 Clear release-as'
 
 # Runs the config script, which drops each `release-as` whose version is now in .release-please-manifest.json,
-# and opens a PR with any change. The release-please workflow calls it after a release.
+# and opens a PR with any change. It runs when the manifest changes on main, such as after a release.
 
 on:
   workflow_dispatch:
@@ -10,20 +10,19 @@ on:
         description: 'Branch to run against and open the PR into'
         type: string
         default: main
-  workflow_call:
-    inputs:
-      ref:
-        description: 'Branch to run against and open the PR into'
-        type: string
-        default: main
-    secrets:
-      AUTOMATION_APP_ID:
-        required: true
-      AUTOMATION_PRIVATE_KEY:
-        required: true
+  push:
+    branches:
+      - main
+    paths:
+      - .release-please-manifest.json
 
 permissions:
   contents: read
+
+# Each run regenerates from the newest main, so a newer run makes an older one pointless.
+concurrency:
+  group: ${{ github.workflow }}
+  cancel-in-progress: true
 
 jobs:
   clear-release-as:

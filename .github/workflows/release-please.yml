@@ -19,8 +19,6 @@ jobs:
   release-please:
     if: github.repository_owner == 'streetsidesoftware'
     runs-on: ubuntu-latest
-    outputs:
-      releases_created: ${{ steps.release.outputs.releases_created }}
     steps:
       # An App token, so the tags Release Please pushes start the Publish to NPM workflow.
       - id: generate-token
@@ -35,13 +33,5 @@ jobs:
           token: ${{ steps.generate-token.outputs.token }}
           config-file: release-please-config.json
           manifest-file: .release-please-manifest.json
-
-  clear-release-as:
-    needs: release-please
-    if: ${{ needs.release-please.outputs.releases_created == 'true' }}
-    uses: ./.github/workflows/clear-release-as.yml
-    secrets:
-      AUTOMATION_APP_ID: ${{ secrets.AUTOMATION_APP_ID }}
-      AUTOMATION_PRIVATE_KEY: ${{ secrets.AUTOMATION_PRIVATE_KEY }}
 
 # cspell:ignore noreply

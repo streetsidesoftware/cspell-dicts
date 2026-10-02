@@ -27,8 +27,9 @@ See [Commits and pull requests](./commits-and-pull-requests.md) for which type t
 - **`release-please-config.json` is generated.** Never edit it by hand.
   `pnpm run gen:release-please-config` writes it from the settings in `scripts/gen-release-please-config.mts`,
   including `changelog-sections`, and every `dictionaries/*/package.json` and `packages/*/package.json`.
-  - The Build Dictionaries workflow runs it after each push to `main`, and the Clear release-as workflow runs it right
-    after a release. Each opens a PR with any change. Pull requests don't run it.
+  - The Build Dictionaries workflow runs it after each push to `main`, and the Clear release-as workflow runs it when
+    the manifest changes on `main`, such as after a release. Each opens a PR with any change. Pull requests don't
+    run it.
   - It also adds each new package to `.release-please-manifest.json`, with the version in its `package.json`.
   - To release a package at a set version, such as a new dictionary's `1.0.0`, run the Release Dictionary workflow
     from the Actions tab, or `pnpm run release-as <package> [--version <version>]`. Both set the package's
