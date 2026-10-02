@@ -69,7 +69,11 @@ jobs:
 
             From the repo root:
 
-            - [ ] `npm login --auth-type=web`, then check that `npm whoami` shows your npm user name
+            - [ ] Log in to npm, then check that the last command shows your npm user name:
+              ```sh
+              npm login --auth-type=web
+              npm whoami
+              ```
             - [ ] Build and pack the dictionary, then check the files under "Tarball Contents":
               ```sh
               cd dictionaries/${{ inputs.dictionary }}
