@@ -113,6 +113,12 @@ To run it:
    before it finishes, run it again: it skips dictionaries that are already set up.
 3. Commit `static/published.json`, where the script records the dictionaries it set up.
 
+## What gets published
+
+Each package's `files` field lists what npm publishes: `cspell-ext.json` and the built dictionary. New dictionaries
+publish the compressed file, such as `dict/<name>.txt.gz`. Word lists in `src/` aren't published, but upstream license
+files are, such as `src/hunspell/license`.
+
 ## Fixing a changelog entry after merge
 
 If a PR was merged with the wrong type, correct it on the merged PR. Don't edit the release PR: Release Please rewrites
