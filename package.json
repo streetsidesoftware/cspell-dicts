@@ -23,6 +23,7 @@
     "gen:release-please-config": "node ./scripts/gen-release-please-config.mts",
     "check:release-please-config": "node ./scripts/gen-release-please-config.mts --check",
     "release-as": "node ./scripts/release-as.mts",
+    "prepare-publication": "node ./scripts/prepare-publication.mts",
     "clean": "shx rm -rf \"packages/*/*.txt.gz\" \"dictionaries/*/*.txt.gz\"",
     "readme:generate-doc-dictionaries": "gen-dictionary-info",
     "readme:inject": "inject-markdown \"*.md\" \"dictionaries/*/README.md\" && pnpm run readme:format",

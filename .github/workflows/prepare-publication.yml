@@ -1,0 +1,74 @@
+name: ' 📦 Prepare Dictionary for Publication'
+
+# Opens a `feat:` PR that makes a private dictionary public and sets its `release-as` to 1.0.0.
+# The PR's checklist has the maintainer's steps before merging.
+
+on:
+  workflow_dispatch:
+    inputs:
+      dictionary:
+        description: 'Dictionary directory under dictionaries/, such as perl'
+        type: string
+        required: true
+      ref:
+        description: 'Branch to run against and open the PR into'
+        type: string
+        default: main
+
+permissions:
+  contents: read
+
+jobs:
+  prepare-publication:
+    if: github.repository_owner == 'streetsidesoftware'
+    runs-on: ubuntu-latest
+    env:
+      DICTIONARY: ${{ inputs.dictionary }}
+      REF_BRANCH: ${{ inputs.ref || 'main' }}
+    steps:
+      - name: Checkout code
+        uses: actions/checkout@3d3c42e5aac5ba805825da76410c181273ba90b1 # v7.0.1
+        with:
+          persist-credentials: false
+          ref: ${{ env.REF_BRANCH }}
+
+      - name: Setup
+        uses: ./.github/actions/quick-setup
+
+      - name: Install
+        run: pnpm i
+
+      - name: Find the package
+        id: pkg
+        run: |
+          if [[ ! "$DICTIONARY" =~ ^[A-Za-z0-9][A-Za-z0-9_.-]*$ ]] || [[ ! -f "dictionaries/$DICTIONARY/package.json" ]]; then
+            echo "::error::No dictionary at dictionaries/$DICTIONARY"
+            exit 1
+          fi
+          echo "name=$(node -p "require('./dictionaries/$DICTIONARY/package.json').name")" >> "$GITHUB_OUTPUT"
+
+      - name: Prepare for publication
+        working-directory: dictionaries/${{ inputs.dictionary }}
+        run: pnpm prepare-publication
+
+      - name: PR
+        uses: ./.github/actions/pr
+        with:
+          commit-message: 'feat(${{ inputs.dictionary }}): publish ${{ steps.pkg.outputs.name }}'
+          branch: prepare-publication-${{ inputs.dictionary }}
+          base: ${{ env.REF_BRANCH }}
+          body: |
+            Makes `${{ steps.pkg.outputs.name }}` public: removes `private` and "-- Private until verified", and sets its `release-as` to `1.0.0`.
+
+            Before merging, from a checkout of this PR's branch, logged in to npm with `npm login --auth-type=web`:
+
+            - [ ] `cd dictionaries/${{ inputs.dictionary }}`
+            - [ ] `pnpm install`
+            - [ ] `pnpm run prepare:dictionary`
+            - [ ] `pnpm pack`, then check the files with `tar -tzf <the .tgz it printed>`
+            - [ ] `npm publish <the .tgz it printed> --tag alpha --provenance=false`
+            - [ ] `pnpm trusted-publishing`
+
+            After merging, merge the release PR. CI publishes `1.0.0` through Trusted Publishing, and the Clear release-as workflow removes `release-as`.
+          app_id: ${{ secrets.AUTOMATION_APP_ID }}
+          app_private_key: ${{ secrets.AUTOMATION_PRIVATE_KEY }}

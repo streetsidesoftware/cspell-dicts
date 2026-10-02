@@ -145,6 +145,7 @@ Workflows in `.github/workflows/`:
 | `release-please.yml`      | pushes to `main`, manual                                  | Maintains the release PR, and creates the releases and tags (see [Releasing](./releasing.md))                                                                     |
 | `clear-release-as.yml`    | called by `release-please.yml` after a release, manual    | Updates the Release Please config, removing released `release-as`, and opens a PR                                                                                 |
 | `release-dictionary.yml`  | manual                                                    | Opens a PR that sets a package's `release-as` (see [Releasing](./releasing.md))                                                                                   |
+| `prepare-publication.yml` | manual                                                    | Opens a `feat:` PR that makes a private dictionary public and sets its `release-as` (see [Releasing](./releasing.md#new-dictionaries))                            |
 | `publish.yml`             | `cspell-dicts@*` release tags, manual                     | Publishes changed packages to npm                                                                                                                                 |
 | `codeql-analysis.yml`     | pull requests, pushes to `main`, weekly                   | CodeQL analysis                                                                                                                                                   |
 
