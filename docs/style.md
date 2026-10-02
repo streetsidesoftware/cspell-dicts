@@ -36,8 +36,8 @@ These rules apply to the root `README.md`, every `dictionaries/*/README.md`, and
 - Don't start a sentence with a code span. Lead with a word: "Add `python` to `dictionaries`…".
 - Label an example that is a whole file with its filename in bold, directly above the code block, for example
   **`cspell.json`** or **`.vscode/settings.json`**.
-- Never edit between `@@inject` markers. Change the source and run `pnpm run build:readme`. See
-  [Generated files](./build-and-packaging.md#generated-files).
+- Never edit between `@@inject` markers. Change the source: the Update README workflow regenerates them after the PR
+  lands. See [Generated files](./build-and-packaging.md#generated-files).
 - In a Markdown file with deliberate misspellings, list them in a `cspell:ignore` comment at the end of the file.
 
 ## Docs for people

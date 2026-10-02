@@ -63,8 +63,8 @@ build half follows `docs/guides/new-dictionary.md`; read it too.
      Include text that must still be flagged only if the test can assert it.
    - The README is for someone installing the dictionary, with absolute `https://` links. Keep the template's
      `@@inject` markers; a workflow fills them in after the PR lands.
-   - Don't add the package to `release-please-config.json` or `.release-please-manifest.json`. The Build Dictionaries
-     workflow adds it after the PR lands.
+   - Don't add the package to `release-please-config.json` or `.release-please-manifest.json`. The Update Release
+     Please Config workflow adds it after the PR lands.
    - Don't add it to `@cspell/dict-cspell-bundle`. That happens only after the cspell repo decides to bundle it.
 
 7. **Run every check** from the worktree root:
