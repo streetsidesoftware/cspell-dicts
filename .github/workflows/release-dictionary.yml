@@ -30,8 +30,8 @@ jobs:
     runs-on: ubuntu-latest
     env:
       PACKAGE: ${{ inputs.package }}
-      VERSION: ${{ inputs.version }}
-      REMOVE: ${{ inputs.remove-release-as }}
+      COMMAND: ${{ inputs.remove-release-as && '--remove' || format('--version {0}', inputs.version) }}
+      TITLE: "${{ inputs.remove-release-as && format('chore: remove release-as for {0}', inputs.package) || format('chore: set release-as for {0} to {1}', inputs.package, inputs.version) }}"
       REF_BRANCH: ${{ inputs.ref || 'main' }}
     steps:
       - name: Checkout code
@@ -47,28 +47,14 @@ jobs:
         run: pnpm i
 
       - name: Set or remove release-as
-        id: change
-        run: |
-          if [[ "$REMOVE" == "true" ]]; then
-            pnpm run release-as --remove "$PACKAGE"
-            echo "message=chore: remove release-as for $PACKAGE" >> "$GITHUB_OUTPUT"
-            echo "body=Removes \`release-as\` for \`$PACKAGE\` in \`release-please-config.json\`." >> "$GITHUB_OUTPUT"
-          elif [[ -z "$VERSION" ]]; then
-            echo "::error::Give a version, or check remove-release-as."
-            exit 1
-          else
-            pnpm run release-as --version "$VERSION" "$PACKAGE"
-            echo "message=chore: set release-as for $PACKAGE to $VERSION" >> "$GITHUB_OUTPUT"
-            echo "body=Sets \`release-as\` to \`$VERSION\` for \`$PACKAGE\` in \`release-please-config.json\`." >> "$GITHUB_OUTPUT"
-          fi
+        run: pnpm run release-as $COMMAND "$PACKAGE"
 
       - name: PR
         uses: ./.github/actions/pr
         with:
-          commit-message: ${{ steps.change.outputs.message }}
+          commit-message: ${{ env.TITLE }}
           branch: release-dictionary
           base: ${{ env.REF_BRANCH }}
-          body: ${{ steps.change.outputs.body }}
+          body: ${{ env.TITLE }}
           app_id: ${{ secrets.AUTOMATION_APP_ID }}
           app_private_key: ${{ secrets.AUTOMATION_PRIVATE_KEY }}
-# cspell:ignore elif
