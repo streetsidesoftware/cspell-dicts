@@ -1,7 +1,7 @@
-name: ' 🧹 Clear release-as'
+name: ' ⚙️ Update Release Please Config'
 
-# Runs the config script, which drops each `release-as` whose version is now in .release-please-manifest.json,
-# and opens a PR with any change. It runs when the manifest changes on main, such as after a release.
+# Runs the config script, which adds new packages to release-please-config.json and .release-please-manifest.json,
+# and drops each `release-as` whose version is now in the manifest. Opens a `chore:` PR with any change.
 
 on:
   workflow_dispatch:
@@ -15,6 +15,8 @@ on:
       - main
     paths:
       - .release-please-manifest.json
+      - 'dictionaries/*/package.json'
+      - 'packages/*/package.json'
 
 permissions:
   contents: read
@@ -25,7 +27,7 @@ concurrency:
   cancel-in-progress: true
 
 jobs:
-  clear-release-as:
+  update-release-please-config:
     if: github.repository_owner == 'streetsidesoftware'
     runs-on: ubuntu-latest
     env:
@@ -48,10 +50,8 @@ jobs:
       - name: PR
         uses: ./.github/actions/pr
         with:
-          commit-message: 'chore: update the Release Please config after a release'
+          commit-message: 'chore: update the Release Please config'
           branch: release-please-config
           base: ${{ env.REF_BRANCH }}
-          body: |
-            Removes `release-as` from packages that have now been released at that version.
           app_id: ${{ secrets.AUTOMATION_APP_ID }}
           app_private_key: ${{ secrets.AUTOMATION_PRIVATE_KEY }}
