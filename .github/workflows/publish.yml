@@ -29,6 +29,11 @@ jobs:
       - name: Setup
         uses: ./.github/actions/setup
 
+      # The release PR bumps versions but not the READMEs, so regenerate them for the versions being published,
+      # such as the CDN links' major version. The Update README workflow brings the same change to `main`.
+      - name: Build Readme
+        run: pnpm run build:readme
+
       # Release Please has already incremented versions and published tags, so we just
       # need to publish all unpublished versions to NPM here
       # See: https://github.com/lerna/lerna/tree/main/commands/publish#bump-from-package
