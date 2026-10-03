@@ -11,7 +11,7 @@
   },
   "scripts": {
     "test": "echo \"Test this package using pnpm test:package\"",
-    "test:package": "node --test \"test/**/*.test.mts\""
+    "test:package": "node --test \"src/**/*.test.mts\""
   },
   "dependencies": {
     "@inquirer/prompts": "^8.7.1",

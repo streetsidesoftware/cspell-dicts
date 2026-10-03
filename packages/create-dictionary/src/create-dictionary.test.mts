@@ -8,7 +8,7 @@ import { join } from 'node:path';
 import { after, before, describe, it } from 'node:test';
 import { fileURLToPath } from 'node:url';
 
-const bin = fileURLToPath(new URL('../src/create-dictionary.mts', import.meta.url));
+const bin = fileURLToPath(new URL('./create-dictionary.mts', import.meta.url));
 
 let root = '';
 
