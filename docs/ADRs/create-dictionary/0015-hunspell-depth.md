@@ -19,9 +19,16 @@ Its effect depends on the language, and can't be predicted:
 Hunspell's own manual says it strips at most two suffixes and one prefix (or two prefixes and one suffix with
 `COMPLEXPREFIXES`), so depths beyond that only follow continuation classes further than Hunspell itself would.
 
-Since [0013](./0013-new-dictionaries-are-built.md) builds every new dictionary, the default has to be safe rather than
-complete: a default that explodes for some language makes `create-dictionary` hang or crash. Leaving it unset, so 5
-applies, was weighed and rejected for that reason.
+Measurements on three dictionaries (word counts, build time, memory):
+
+- `nl_NL`: 788 thousand words at depth 1, 804 thousand at depth 2, no change from depth 3, all in about 5 s.
+- `eu`: 3.9 million words at depth 1, in 22 s and 1.7 GB. Depth 2 didn't finish in 15 minutes.
+- `hu_HU`: depth 1 didn't finish in 15 minutes; its committed depth 1 trie holds 379 million words.
+
+In `hunspell-reader`, every affix costs one level, prefixes included, so depth 3 matches Hunspell's limit; `nl_NL` and
+`eu` stop growing there. So the default has to be safe rather than complete. Leaving it unset, so 5 applies, was
+weighed and rejected; but even depth 1 is too much for some large affix sets, which is why Hunspell dictionaries aren't
+built at creation by default ([0013](./0013-word-list-dictionaries-are-built-at-creation.md)).
 
 ## Decision
 
@@ -35,7 +42,6 @@ We will:
 
 ## Consequences
 
-- Creating a dictionary never hangs on an explosive language.
 - A natural language dictionary may be missing forms that need two chained rules until a maintainer raises the depth.
   Finding the right depth is tuning, not creation; it's out of scope here, and could be a later tool that builds at
   increasing depths and compares word counts.

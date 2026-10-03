@@ -85,7 +85,7 @@ That's the end state. It ships in stages, each usable on its own:
 | [0010](./0010-friendly-name-and-descriptions.md)                          | The friendly name and the descriptions                                              | Accepted           |
 | [0011](./0011-locale-or-file-type-never-both-any.md)                      | A dictionary sets its locale or its file type, never both `*`                       | Accepted           |
 | [0012](./0012-when-a-dictionary-is-stored-as-a-trie.md)                   | When a dictionary is stored as a trie                                               | Accepted           |
-| [0013](./0013-new-dictionaries-are-built.md)                              | A new dictionary is built when it's created                                         | Accepted           |
+| [0013](./0013-word-list-dictionaries-are-built-at-creation.md)            | Word-list dictionaries are built at creation; Hunspell ones aren't by default       | Accepted           |
 | [0014](./0014-test-options-are-hidden.md)                                 | Options for tests are hidden from `--help`                                          | Accepted           |
 | [0015](./0015-hunspell-depth.md)                                          | Hunspell sources default to a depth of 1                                            | Accepted           |
 | [0016](./0016-prompting-for-third-party-sources.md)                       | Prompting asks for third-party sources in a loop                                    | Accepted           |
@@ -98,9 +98,6 @@ That's the end state. It ships in stages, each usable on its own:
 ## Open questions
 
 - **Where the sync command lives,** and how it's run from a dictionary.
-- **Building at creation** ([0013](./0013-new-dictionaries-are-built.md)) and **the depth default**
-  ([0015](./0015-hunspell-depth.md)): measurements show `hu_HU` doesn't build within 15 minutes even at depth 1, and
-  `eu` takes 22 s and 1.7 GB at depth 1. Depth 3 matches Hunspell's own limit; `nl_NL` and `eu` stop growing there.
 
 ## Provisional names
 
