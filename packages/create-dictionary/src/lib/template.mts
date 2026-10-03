@@ -1,3 +1,19 @@
+import { fileURLToPath } from 'node:url';
+
+export const templateDir = fileURLToPath(new URL('../../templates/', import.meta.url));
+
+/** The template files, relative to `templateDir` and to the new package. */
+export const templateFiles = [
+    'package.json',
+    'README.md',
+    'cspell-ext.json',
+    'cspell.json',
+    'LICENSE',
+    'cspell-tools.config.yaml',
+    'dict/README.md',
+    'src/README.md',
+];
+
 /**
  * Replace each `<%= key %>` with its value, escaped for the file type.
  */
