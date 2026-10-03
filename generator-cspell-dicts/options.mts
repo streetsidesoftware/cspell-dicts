@@ -45,7 +45,7 @@ export function parseCommandLine(argv: string[]): CommandLine {
     const program = new Command()
         .name('create-dictionary')
         .description(
-            'Create a dictionary package in dictionaries/<name>/. Run it from the repo root.\n' +
+            'Create a dictionary package in dictionaries/<name>/.\n' +
                 'It prompts for anything not given as an option. With --yes, it uses the defaults instead and never prompts.',
         )
         .argument('[name]', 'the package directory name, such as en_AU or ruby (same as --name)')
