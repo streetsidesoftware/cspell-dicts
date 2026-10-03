@@ -6,6 +6,9 @@ kind: reference
 level: none to file an issue; basic git and a terminal to open a PR
 -->
 
+> [!NOTE]
+> For anyone contributing, from filing an issue to opening a PR. No coding needed.
+
 Thanks for considering a contribution to cspell-dicts. You can help by:
 
 - fixing or adding words in a dictionary
