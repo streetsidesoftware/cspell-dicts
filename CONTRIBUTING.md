@@ -1,9 +1,9 @@
 # Contributing
 
 <!--
-audience: casual contributor, technical contributor
+audience: GitHub web contributor, technical contributor
 kind: reference
-level: none to file an issue; basic git and a terminal to open a PR
+level: none to file an issue or edit a file on GitHub; basic git and a terminal for changes that need a build
 -->
 
 > [!NOTE]

@@ -79,7 +79,8 @@ names, and leave out what they don't need.
 **Audiences:**
 
 - **CSpell user:** uses the dictionaries in cspell or VS Code, and reads package READMEs. Has no clone.
-- **Casual contributor:** files an issue or suggests words, maybe from GitHub's web editor. No terminal.
+- **GitHub web contributor:** works only in GitHub's web UI: files issues, edits a file in the web editor, and opens
+  PRs. No clone, no terminal.
 - **Technical contributor:** forks and clones the repo, and runs the steps in a terminal. Knows basic git. Doesn't read
   or write code, and is willing to follow clear steps.
 - **Developer:** reads and writes the repo's scripts, configs, and workflows.

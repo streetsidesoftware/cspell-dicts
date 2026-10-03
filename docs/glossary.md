@@ -1,9 +1,9 @@
 # Glossary
 
 <!--
-audience: casual contributor, technical contributor, developer, maintainer
+audience: GitHub web contributor, technical contributor, developer, maintainer
 kind: reference
-level: none assumed; write for the casual contributor where possible, and explain technical terms rather than avoid them
+level: none; write for the GitHub web contributor where possible, explaining technical terms rather than avoiding them
 -->
 
 > [!NOTE]
