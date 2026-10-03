@@ -61,6 +61,9 @@ That's the end state. It ships in stages, each usable on its own:
   stays a person's decision.
 - **Writing samples.** The generator creates `samples/` and the test that checks it; the sample files come from the
   contributor.
+- **Setting up more complex dictionaries,** such as guarded splitting (`split` with `allowedSplitWords`) for large lists
+  of code terms. The generator focuses on creating the initial dictionary; editing a complex one can come later, in it
+  or another tool.
 - **Making a dictionary public.** New dictionaries start private, and a maintainer publishes them later.
 
 ## Decisions
