@@ -60,8 +60,9 @@ Every source follows three rules:
   be built from scratch, without downloading anything.
 - **Sync only updates the local copy.** If an upstream source moves, disappears, or changes in a way we can't use, the
   sync fails, and the dictionary still builds from its local copy.
-- **Where it came from is recorded.** The built dictionary is often a derivative work of its sources, so their licenses
-  apply to it. This matters most for Hunspell files.
+- **Where it came from is recorded.** The dictionary's `src/README.md` links to each upstream source's repository. The
+  built dictionary is often a derivative work of its sources, so their licenses apply to it. This matters most for
+  Hunspell files.
 
 ## Building
 
