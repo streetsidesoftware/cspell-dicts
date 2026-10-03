@@ -1,7 +1,7 @@
 #!/usr/bin/env node
 
 // Writes release-please-config.json from the settings below and every package in the workspace.
-// Usage: node scripts/gen-release-please-config.mts [--check]
+// Usage: gen-release-please-config [--check]
 //   --check: don't write; exit 1 if the committed file is out of date.
 
 import fs from 'node:fs/promises';
