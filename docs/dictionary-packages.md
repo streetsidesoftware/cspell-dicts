@@ -1,13 +1,13 @@
 # Dictionary packages
 
 <!--
-audience: technical contributor
+audience: technical contributor, developer
 kind: reference
-level: comfortable with basic git and a terminal; doesn't read or write code
+level: comfortable with basic git and a terminal; the build sections are for developers
 -->
 
 > [!NOTE]
-> For contributors working on a dictionary package. No coding needed.
+> For contributors creating or changing a dictionary, and developers changing how dictionaries are built.
 
 What a dictionary package under `dictionaries/` contains, and why. New dictionaries follow this layout. Many older
 packages differ, as listed in [Older packages](#older-packages), and move to it over time.

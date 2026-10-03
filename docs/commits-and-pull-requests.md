@@ -1,13 +1,13 @@
 # Commits and pull requests
 
 <!--
-audience: technical contributor
+audience: developer, maintainer
 kind: reference
-level: comfortable with basic git and a terminal; doesn't read or write code
+level: reviews PRs and picks commit types; knows Conventional Commits
 -->
 
 > [!NOTE]
-> For anyone opening a PR.
+> For developers and maintainers choosing commit types and reviewing PRs.
 
 ## Who reads the release notes
 

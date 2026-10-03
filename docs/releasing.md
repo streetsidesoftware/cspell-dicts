@@ -3,7 +3,7 @@
 <!--
 audience: maintainer
 kind: guide
-level: has write access and an npm account with publish rights; runs git, gh, and npm
+level: has write access; runs git and gh. Publishing a new dictionary also needs npm publish rights
 -->
 
 > [!WARNING]

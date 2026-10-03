@@ -8,6 +8,8 @@ level: comfortable with basic git and a terminal; doesn't read or write code
 
 > [!NOTE]
 > For contributors who can fork the repo and follow terminal steps. No coding needed.
+> Can't use a terminal? [Open an issue](https://github.com/streetsidesoftware/cspell-dicts/issues/new) with the
+> words and where they come from, and someone can build it.
 
 How to add a new dictionary package. To change the words in an existing one, see [Word changes](./word-changes.md).
 
