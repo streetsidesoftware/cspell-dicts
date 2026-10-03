@@ -65,6 +65,8 @@ These rules are written for people in the linked docs. Read the section before w
   [Comments](docs/style.md#comments).
 - **Invisible characters:** write them as escape sequences in code, config, and docs. Dictionary data keeps them
   literal. See [Invisible characters](docs/style.md#invisible-characters).
+- **Audience:** before editing a doc in `docs/` or `CONTRIBUTING.md`, read the audience header under its title and
+  write for that reader. A new doc gets a header. See [Audience](docs/style.md#audience).
 - **Writing for users:** package READMEs are npmjs.com pages, so links are absolute `https://` URLs. See
   [Writing for users](docs/style.md#writing-for-users).
 - **Licenses:** a new source's license must fit the package's. If it is missing, unclear, or would change the package's

@@ -1,5 +1,13 @@
 # Documentation
 
+<!--
+audience: technical contributor
+kind: reference
+level: comfortable with basic git and a terminal; doesn't read or write code
+-->
+
+For contributors working in a clone of the repo. Each doc says who it is for.
+
 ## Guides
 
 - [Adding, removing, or fixing words](./guides/word-changes.md)

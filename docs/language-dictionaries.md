@@ -1,5 +1,13 @@
 # Natural Language Dictionaries
 
+<!--
+audience: technical contributor
+kind: reference
+level: comfortable with basic git and a terminal; doesn't read or write code
+-->
+
+For contributors working on a natural language dictionary.
+
 ## Improving Suggestions
 
 The spell checker uses a weighted edit distance calculation to derive the list of suggestions.

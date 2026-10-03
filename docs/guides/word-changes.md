@@ -1,5 +1,13 @@
 # Adding, removing, or fixing words
 
+<!--
+audience: technical contributor
+kind: guide
+level: comfortable with basic git and a terminal; doesn't read or write code
+-->
+
+For contributors who can fork the repo and follow terminal steps. No coding needed.
+
 How to change the words in an existing dictionary. To add a whole new dictionary, see
 [Creating a dictionary](./new-dictionary.md). To update words that come from an upstream source, see
 [Upstream updates](./upstream-updates.md).

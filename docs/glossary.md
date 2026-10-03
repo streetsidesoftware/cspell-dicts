@@ -1,5 +1,13 @@
 # Glossary
 
+<!--
+audience: technical contributor
+kind: reference
+level: comfortable with basic git and a terminal; doesn't read or write code
+-->
+
+For contributors reading these docs.
+
 Terms used across this repo's docs. Alphabetical.
 
 ## `allowedSplitWords`

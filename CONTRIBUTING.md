@@ -1,5 +1,11 @@
 # Contributing
 
+<!--
+audience: casual contributor, technical contributor
+kind: reference
+level: none to file an issue; basic git and a terminal to open a PR
+-->
+
 Thanks for considering a contribution to cspell-dicts. You can help by:
 
 - fixing or adding words in a dictionary

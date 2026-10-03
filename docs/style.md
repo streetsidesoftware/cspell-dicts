@@ -1,5 +1,13 @@
 # Style
 
+<!--
+audience: technical contributor
+kind: reference
+level: comfortable with basic git and a terminal; doesn't read or write code
+-->
+
+For anyone writing words, docs, or code in this repo.
+
 Prettier and ESLint handle formatting (`pnpm run lint` fixes what it can). Beyond that:
 
 ## Comments
@@ -44,3 +52,38 @@ These rules apply to the root `README.md`, every `dictionaries/*/README.md`, and
 
 `docs/` and `CONTRIBUTING.md` are written for people. In a guide, give each step a heading and list its checks one per
 item.
+
+### Audience
+
+Each doc is written for one kind of reader, named in a header right below its title:
+
+```markdown
+# Creating a dictionary
+
+<!--
+audience: technical contributor
+kind: guide
+level: comfortable with basic git and a terminal; doesn't read or write code
+-->
+
+For contributors who can fork the repo and follow terminal steps. No coding needed.
+```
+
+The HTML comment is for writers and AI agents; GitHub doesn't show it. The sentence below it tells readers whether the
+doc is for them. Write for the reader the header names, and leave out what they don't need.
+
+**Audiences:**
+
+- **CSpell user:** uses the dictionaries in cspell or VS Code, and reads package READMEs. Has no clone.
+- **Casual contributor:** files an issue or suggests words, maybe from GitHub's web editor. No terminal.
+- **Technical contributor:** forks and clones the repo, and runs the steps in a terminal. Knows basic git. Doesn't read
+  or write code, and is willing to follow clear steps.
+- **Developer:** reads and writes the repo's scripts, configs, and workflows.
+- **Maintainer:** has write access. Reviews, merges, publishes, and runs the repo's maintenance.
+
+**Kinds:**
+
+- **Guide:** steps to follow, in order, for one task.
+- **Reference:** facts to look up, such as a layout, rules, or terms.
+
+**Level:** what the reader is expected to know or be able to do, in a few words.
