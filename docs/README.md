@@ -1,27 +1,35 @@
 # Documentation
 
 <!--
-audience: technical contributor
+audience: GitHub web contributor, technical contributor, developer, maintainer
 kind: reference
-level: comfortable with basic git and a terminal; doesn't read or write code
+level: none
 -->
 
 > [!NOTE]
-> For contributors working in a clone of the repo. Each doc says who it is for.
+> Every doc for contributors, grouped by who it's for.
 
-## Guides
+## GitHub web contributors
+
+- [Contributing](../CONTRIBUTING.md): where to start
+- [Glossary](./glossary.md): the terms used in these docs
+
+## Technical contributors
 
 - [Adding, removing, or fixing words](./guides/word-changes.md)
 - [Creating a dictionary](./guides/new-dictionary.md)
-- [Upstream updates](./guides/upstream-updates.md)
+- [Dictionary packages](./dictionary-packages.md): what a dictionary package contains and why, sources, building, and
+  tests
 - [Natural language dictionaries](./language-dictionaries.md): improving suggestions
+- [Style](./style.md): word lists, READMEs, and docs
 
-## Reference
+## Developers
 
-- [Dictionary packages](./dictionary-packages.md): what a dictionary package contains and why, sources, building, and tests
+- [Upstream updates](./guides/upstream-updates.md)
 - [Repository](./repository.md): prerequisites, the workspace, generated files, and CI
 - [Commits and pull requests](./commits-and-pull-requests.md): commit types, scopes, and PR descriptions
-- [Releasing](./releasing.md): Release Please and publishing
-- [Style](./style.md): comments, invisible characters, and writing for users
-- [Glossary](./glossary.md)
 - [ADRs](./ADRs/README.md): design decisions, one folder per feature
+
+## Maintainers
+
+- [Releasing](./releasing.md): Release Please and publishing

@@ -3,11 +3,11 @@
 <!--
 audience: technical contributor
 kind: reference
-level: comfortable with basic git and a terminal; doesn't read or write code
+level: knows the language and the mistakes its speakers make; comfortable editing JSON; doesn't read or write code
 -->
 
 > [!NOTE]
-> For contributors working on a natural language dictionary.
+> For contributors who speak the language and want better suggestions.
 
 ## Improving Suggestions
 

@@ -1,13 +1,13 @@
 # Style
 
 <!--
-audience: technical contributor
+audience: technical contributor, developer, maintainer
 kind: reference
-level: comfortable with basic git and a terminal; doesn't read or write code
+level: writes word lists, READMEs, or docs in this repo
 -->
 
 > [!NOTE]
-> For anyone writing words, docs, or code in this repo.
+> For anyone writing word lists, a dictionary's README, or docs in this repo, and for reviewers.
 
 Prettier and ESLint handle formatting (`pnpm run lint` fixes what it can). Beyond that:
 

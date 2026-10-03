@@ -7,7 +7,8 @@ level: reads and writes TypeScript, package.json scripts, and GitHub Actions wor
 -->
 
 > [!NOTE]
-> For developers working on the repo's scripts, configs, and CI.
+> For developers working on the repo's scripts, packages, configs, and CI. Anyone who clones the repo needs
+> [Prerequisites](#prerequisites).
 
 How the repo is set up: the tools it needs, the workspace, the files that are generated, and CI. For what's inside a
 dictionary package, see [Dictionary packages](./dictionary-packages.md).
