@@ -72,9 +72,9 @@ level: comfortable with basic git and a terminal; doesn't read or write code
 > For contributors who can fork the repo and follow terminal steps. No coding needed.
 ```
 
-The HTML comment is for writers and AI agents; GitHub doesn't show it. The `> [!NOTE]` below it tells readers whether the
-doc is for them. A maintainer-only doc uses `> [!WARNING]` instead, to warn others off. Write for the reader the header
-names, and leave out what they don't need.
+The HTML comment is for writers and AI agents; GitHub doesn't show it. The `> [!NOTE]` below it tells readers whether
+the doc is for them. A maintainer-only doc uses `> [!WARNING]` instead, to warn others off. Write for the reader the
+header names, and leave out what they don't need.
 
 **Audiences:**
 
