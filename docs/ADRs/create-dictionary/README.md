@@ -44,6 +44,14 @@ without cleanup:
 - there's a `src/additional_words.txt` for words added by hand
 - there's a `samples/` folder, with a test that checks it
 
+That's the end state. It ships in stages, each usable on its own:
+
+1. **Sources:** several sources, each with a local copy in `src/` and a record of where it came from, plus
+   `src/additional_words.txt`.
+2. **Sync:** a sync step for sources from npm or GitHub. It writes into the layout from stage 1, and saves maintainers
+   the most cleanup.
+3. **Samples:** a `samples/` folder and the test that checks it.
+
 ## Out of scope
 
 - **Existing dictionaries.** Moving them to the new layout is tracked in #5836.
