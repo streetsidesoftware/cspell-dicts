@@ -29,6 +29,8 @@ An earlier version of this decision kept the scripts, after a misunderstanding o
 We will record a dictionary's sources in a sources file, `sources.yaml`, read by one generic sync command. For example:
 
 ```yaml
+# The sources of this dictionary, read by `pnpm run sync`.
+# Each source is copied into src/<name>/. See src/README.md.
 sources:
   - name: aoo
     github: marcoagpinto/aoo-mozilla-en-dict
@@ -41,8 +43,11 @@ sources:
 
 - The generator writes it from the `--define-source*` and `--add-source-*` options.
 - `package.json` has one `sync` script that runs the sync command, and `conditional-build` runs `sync` first.
-- The file is listed in `files`, so it's published with the dictionary, and it has a schema and comments so a reader can
-  tell what it is.
+- The file is listed in `files`, so it's published with the dictionary. A comment at its top says what it is and points
+  to `src/README.md`.
+- The sync command lives in `scripts/`, next to `sync-github-files`, where the sync tooling already is. For each source it
+  calls `sync-github-files` or copies from `node_modules`. It reports a clear error when the file is missing something it
+  needs; the file has no schema, like the repo's other templates.
 
 ## Consequences
 

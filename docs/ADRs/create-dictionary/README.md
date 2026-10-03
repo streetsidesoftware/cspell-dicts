@@ -95,10 +95,6 @@ That's the end state. It ships in stages, each usable on its own:
 | [0020](./0020-sources-are-recorded-in-a-sources-file.md)                  | A dictionary's sources are recorded in a sources file                               | Accepted           |
 | [0021](./0021-sources-are-explained-in-the-readmes.md)                    | Sources are explained in the dictionary's README and in `src/README.md`             | Accepted           |
 
-## Open questions
-
-- **Where the sync command lives,** and how it's run from a dictionary.
-
 ## Provisional names
 
 - `--add-source-ref`: the option that pins a GitHub source to a tag or commit. Decide with the rest of the sync stage.
