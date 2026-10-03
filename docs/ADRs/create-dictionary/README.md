@@ -46,7 +46,14 @@ without cleanup:
 
 ## Out of scope
 
-- To be filled in.
+- **Existing dictionaries.** Moving them to the new layout is tracked in #5836.
+- **The shared words-check script** that replaces the template's `head -n 1000` test, also in #5836. The generator
+  uses it once it exists.
+- **Deciding licenses.** The generator records each source's license and where it came from; whether a license fits
+  stays a person's decision.
+- **Writing samples.** The generator creates `samples/` and the test that checks it; the sample files come from the
+  contributor.
+- **Making a dictionary public.** New dictionaries start private, and a maintainer publishes them later.
 
 ## Decisions
 
