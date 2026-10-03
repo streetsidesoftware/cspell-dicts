@@ -65,5 +65,6 @@ That's the end state. It ships in stages, each usable on its own:
 
 ## Decisions
 
-| #   | Title | Status |
-| --- | ----- | ------ |
+| #                                                      | Title                                                      | Status   |
+| ------------------------------------------------------ | ---------------------------------------------------------- | -------- |
+| [0001](./0001-name-and-sources-on-the-command-line.md) | How the name and the sources are given on the command line | Accepted |
