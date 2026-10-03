@@ -12,8 +12,8 @@ import { confirm, input } from '@inquirer/prompts';
 import { type Answers, optionForAnswer, parseCommandLine } from './options.mts';
 import { readTakenNames, type TakenNames } from './taken-names.mts';
 
-const rootDir = fileURLToPath(new URL('../', import.meta.url));
-const templateDir = fileURLToPath(new URL('templates/', import.meta.url));
+const rootDir = fileURLToPath(new URL('../../', import.meta.url));
+const templateDir = fileURLToPath(new URL('../templates/', import.meta.url));
 const dictionariesDir = join(rootDir, 'dictionaries');
 
 const templateFiles = [
