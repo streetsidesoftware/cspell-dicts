@@ -52,6 +52,7 @@ To remove a word that comes from an upstream source, don't edit anything: say so
 
 - Title it with `fix:` and the dictionary's folder name, such as `fix(companies): add Sourcegraph`.
 - Say which words changed and why, with a source for words that aren't obvious.
+- Leave **Allow edits by maintainers** checked, so the list can be sorted for you.
 
 After you open it:
 
