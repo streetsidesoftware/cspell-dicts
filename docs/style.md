@@ -56,7 +56,8 @@ item.
 
 ### Audience
 
-Each doc is written for one kind of reader, named in a header right below its title:
+Each doc is written for a clear target audience, named in a header right below its title. List more than one audience
+only when the doc serves each of them:
 
 ```markdown
 # Creating a dictionary
