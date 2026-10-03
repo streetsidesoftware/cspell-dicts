@@ -25,7 +25,14 @@ dictionary contains. It needed design decisions because what it writes is what e
 
 ## Stakeholders
 
-- To be filled in.
+- **Contributors adding a dictionary:** they get a dictionary package with its sources, their origin, the sync step,
+  and a place for samples already set up, so less of their PR has to be redone.
+- **Agents creating dictionaries** (the `new-dictionary` skill): one command sets up what they now patch by hand, the
+  same way every time.
+- **Maintainers:** less cleanup after each new dictionary, and every source traceable to where it came from.
+- **cspell users:** indirectly. Dictionaries keep building when an upstream source disappears, and their licenses stay
+  correct.
+- **Upstream projects:** their files are credited, with their license kept next to the copy.
 
 ## Goal
 
