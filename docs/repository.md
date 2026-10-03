@@ -31,9 +31,9 @@ This is a pnpm workspace. pnpm is the only package manager allowed: the root `pr
 - `dictionaries/*`: one package per dictionary, published as `@cspell/dict-<name>` (a few older packages have other
   names, such as `@cspell/aoo-mozilla-en-dict`). These are what users install.
 - `dictionaries/*/scripts`: helper packages for dictionaries that need their own scripts to fetch or build sources.
-- `packages/*`: internal packages, such as `@internal/en-freq`. Not published.
+- `packages/*`: internal packages, such as `@internal/en-freq` and `@internal/create-dictionary` (behind
+  `pnpm run create-dictionary`). Not published.
 - `scripts`: repo-level tooling (`cspell-dicts-scripts`, private): README generation, sorting, syncing upstream files.
-- `generator-cspell-dicts`: the generator behind `pnpm run create-dictionary`.
 - `cspell-dict-file-checker`: a private tool that checks files against a snapshot.
 
 ### Scripts
