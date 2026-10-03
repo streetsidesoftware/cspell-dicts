@@ -74,8 +74,15 @@ It asks for each field below. Any field given as an option on the command line i
 pnpm run create-dictionary <name> <path/to/source/words> --language-id <file type>
 ```
 
-To run it with no questions, add `--yes`. Fields you leave out get their defaults. It stops with an error if the name is
-missing, a value is invalid, `dictionaries/<name>/` already exists, or the locale and the file type are both `*`:
+To run it with no questions, add `--yes`. Fields you leave out get their defaults. It stops with an error if:
+
+- the name is missing, or `dictionaries/<name>/` already exists
+- the source file is missing (see `--allow-missing-source` below)
+- a Hunspell `.dic` file has no `.aff` file next to it, or the other way around
+- the locale and the file type are both `*`
+- a value is invalid
+
+For example:
 
 ```sh
 pnpm run create-dictionary --yes <name> <path/to/source/words> --friendly-name "<Friendly Name>" --locale <locale> --language-id <file type> --no-build
@@ -83,16 +90,16 @@ pnpm run create-dictionary --yes <name> <path/to/source/words> --friendly-name "
 
 Run `pnpm run create-dictionary --help` to list the options.
 
-| Field         | Option                                 | Description                                                                                                                                                                                             |
-| ------------- | -------------------------------------- | ------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
-| name          | `<name>` or `--name`                   | The package directory name, such as `en_AU` or `ruby`. Letters, digits, `_`, and `-`.                                                                                                                   |
-| friendly name | `--friendly-name`                      | A readable name, such as `Australian English`.                                                                                                                                                          |
-| description   | `--description`                        | A short description of the dictionary.                                                                                                                                                                  |
-| source file   | `<path/to/source/words>` or `--source` | The file to build the dictionary from: a `.txt` word list or a Hunspell `.dic` file. It is copied into the package's `src/`.                                                                            |
-| locale        | `--locale`                             | The language code with an optional region, such as `en` or `en-AU`. Separate several with commas. `*` matches any language.                                                                             |
-| languageId    | `--language-id`                        | The VS Code language ID or file type, such as `java`, `cpp`, or `markdown`. `*` matches all file types. See [VS Code's language identifiers](https://code.visualstudio.com/docs/languages/identifiers). |
-| store as trie | `--trie` or `--no-trie`                | `y` for large source files (over about 1 MB) and Hunspell files. `n` works for programming language keyword files.                                                                                      |
-| run build     | `--build` or `--no-build`              | Build the dictionary now. You can also run `pnpm run build` in the package later.                                                                                                                       |
+| Field         | Option                                 | Description                                                                                                                                                                                                              |
+| ------------- | -------------------------------------- | ------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------ |
+| name          | `<name>` or `--name`                   | The package directory name, such as `en_AU` or `ruby`. Letters, digits, `_`, and `-`.                                                                                                                                    |
+| friendly name | `--friendly-name`                      | A readable name, such as `Australian English`.                                                                                                                                                                           |
+| description   | `--description`                        | A short description of the dictionary.                                                                                                                                                                                   |
+| source file   | `<path/to/source/words>` or `--source` | The file to build the dictionary from: a `.txt` word list or a Hunspell `.dic` file. It is copied into the package's `src/`. If you don't have a word list yet, add `--allow-missing-source` to start with an empty one. |
+| locale        | `--locale`                             | The language code with an optional region, such as `en` or `en-AU`. Separate several with commas. `*` matches any language.                                                                                              |
+| languageId    | `--language-id`                        | The VS Code language ID or file type, such as `java`, `cpp`, or `markdown`. `*` matches all file types. See [VS Code's language identifiers](https://code.visualstudio.com/docs/languages/identifiers).                  |
+| store as trie | `--trie` or `--no-trie`                | `y` for large source files (over about 1 MB) and Hunspell files. `n` works for programming language keyword files.                                                                                                       |
+| run build     | `--build` or `--no-build`              | Build the dictionary now. You can also run `pnpm run build` in the package later.                                                                                                                                        |
 
 It creates `dictionaries/<name>/` with `version` `0.0.1-alpha.0` and `private: true`, so the dictionary isn't published. A
 maintainer makes it public once the dictionary has been verified.

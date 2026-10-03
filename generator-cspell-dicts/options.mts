@@ -15,6 +15,8 @@ export interface CommandLine {
     answers: Answers;
     /** Use the defaults for anything not given, and never prompt. */
     yes: boolean;
+    /** Create an empty word list if the source is missing. */
+    allowMissingSource: boolean;
 }
 
 /** The option that answers each prompt, for error messages. */
@@ -22,7 +24,7 @@ export const optionForAnswer: Record<keyof Answers, string> = {
     name: '<name> or --name',
     friendlyName: '--friendly-name',
     description: '--description',
-    srcFile: '<source> or --source',
+    srcFile: '<source>, --source, or --allow-missing-source',
     locale: '--locale',
     languageId: '--language-id',
     useTrie: '--trie or --no-trie',
@@ -38,6 +40,7 @@ interface Options {
     languageId?: string;
     trie?: boolean;
     build?: boolean;
+    allowMissingSource?: boolean;
     yes?: boolean;
 }
 
@@ -53,7 +56,11 @@ export function parseCommandLine(argv: string[]): CommandLine {
         .option('--name <name>', 'the package directory name, such as en_AU or ruby')
         .option('--friendly-name <text>', 'a readable name, such as "Australian English"; default: from the name')
         .option('--description <text>', 'a short description; default: "<Friendly name> dictionary for cspell."')
-        .option('--source <file>', 'the .txt word list or Hunspell .dic file, copied to src/; default: <name>.txt')
+        .option('--source <file>', 'the .txt word list or Hunspell .dic file, copied to src/')
+        .option(
+            '--allow-missing-source',
+            'if the source is missing, create an empty word list (src/<name>.txt without --source); not for Hunspell files',
+        )
         .option('--locale <locales>', 'locales, comma separated, such as "en,en-AU", or "*" for any; default: "*"')
         .option(
             '--language-id <ids>',
@@ -90,7 +97,7 @@ export function parseCommandLine(argv: string[]): CommandLine {
         doBuild: opts.build,
     };
 
-    return { answers, yes: !!opts.yes };
+    return { answers, yes: !!opts.yes, allowMissingSource: !!opts.allowMissingSource };
 
     function oneOf(name: string, arg: string | undefined, option: string | undefined): string | undefined {
         if (arg !== undefined && option !== undefined && arg !== option) {

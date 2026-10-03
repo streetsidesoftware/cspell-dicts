@@ -62,7 +62,8 @@ build half follows `docs/guides/new-dictionary.md`; read it too.
      pnpm run create-dictionary --yes <name> <path/to/source/words> --friendly-name "<Friendly Name>" --description "<description>" --locale <locale> --language-id <file type> --no-trie --build
      ```
 
-     Set `--locale` and `--language-id` as decided in step 4. Use `--trie` for Hunspell sources and large lists. Run
+     Set `--locale` and `--language-id` as decided in step 4. If there is no word list yet, add
+     `--allow-missing-source`, which starts an empty one. Use `--trie` for Hunspell sources and large lists. Run
      `pnpm run create-dictionary --help` to list the options. If it fails on a missing or invalid value, fix that option
      and run it again.
 

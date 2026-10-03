@@ -31,16 +31,21 @@ const hunspellExtensions = ['.dic', '.aff'];
 type Validate = (value: string) => string | true;
 
 async function main(): Promise<void> {
-    const { answers: given, yes } = parseCommandLine(process.argv.slice(2));
+    const { answers: given, yes, allowMissingSource } = parseCommandLine(process.argv.slice(2));
     // `pnpm run` starts in the repo root; resolve the source from where the command was typed.
     const cwd = process.env.INIT_CWD ?? process.cwd();
-    const answers = await getAnswers(given, yes, cwd);
+    const answers = await getAnswers(given, yes, allowMissingSource, cwd);
     createPackage(answers, cwd);
 }
 
-async function getAnswers(given: Answers, yes: boolean, cwd: string): Promise<Required<Answers>> {
+type Settings = Required<Answers> & {
+    /** The source is missing: start with an empty word list. */
+    emptySource: boolean;
+};
+
+async function getAnswers(given: Answers, yes: boolean, allowMissingSource: boolean, cwd: string): Promise<Settings> {
     const keys = Object.keys(optionForAnswer) as (keyof Answers)[];
-    const missing = keys.filter((key) => given[key] === undefined);
+    const missing = keys.filter((key) => given[key] === undefined && !(key === 'srcFile' && allowMissingSource));
     const noPrompts = yes || !missing.length;
     if (!noPrompts && !process.stdin.isTTY) {
         const options = missing.map((key) => optionForAnswer[key]).join(', ');
@@ -59,6 +64,47 @@ async function getAnswers(given: Answers, yes: boolean, cwd: string): Promise<Re
         return given[key] ?? (noPrompts ? def : confirm({ message, default: def }));
     }
 
+    async function source(name: string): Promise<{ srcFile: string; emptySource: boolean }> {
+        const srcFile = given.srcFile;
+        if (srcFile === undefined && noPrompts) {
+            if (!allowMissingSource) {
+                throw new Error(
+                    'missing source. Give <source> or --source, or --allow-missing-source to start with an empty word list.',
+                );
+            }
+            return { srcFile: name + '.txt', emptySource: true };
+        }
+        if (srcFile !== undefined) {
+            const valid = validateSource(srcFile);
+            if (valid !== true) throw new Error(valid);
+            const found = existsSync(resolve(cwd, srcFile));
+            if (!found && !allowMissingSource) {
+                throw new Error(`${srcFile} not found. Give --allow-missing-source to start with an empty word list.`);
+            }
+            return { srcFile, emptySource: !found };
+        }
+        for (;;) {
+            const typed = await input({
+                message: 'Source File Name',
+                default: name + '.txt',
+                validate: validateSource,
+            });
+            if (existsSync(resolve(cwd, typed))) return { srcFile: typed, emptySource: false };
+            const message = `${typed} not found. Create an empty src/${basename(typed)}?`;
+            if (allowMissingSource || (await confirm({ message, default: true }))) {
+                return { srcFile: typed, emptySource: true };
+            }
+        }
+    }
+
+    function validateSource(srcFile: string): string | true {
+        if (!srcFile.trim()) return 'Give the path to a word list or Hunspell .dic file.';
+        if (!isHunspellFile(srcFile)) return true;
+        const notFound = hunspellPair(srcFile).filter((file) => !existsSync(resolve(cwd, file)));
+        if (!notFound.length) return true;
+        return `A Hunspell source needs both its .dic and .aff files. Not found: ${notFound.join(' and ')}`;
+    }
+
     const name = await text('name', 'The package directory name (en_US, medical-terms)', undefined, validateName);
     const friendlyName = await text(
         'friendlyName',
@@ -66,7 +112,7 @@ async function getAnswers(given: Answers, yes: boolean, cwd: string): Promise<Re
         toFriendlyName(name),
     );
     const description = await text('description', 'Description', title(friendlyName) + ' dictionary for cspell.');
-    const srcFile = await text('srcFile', 'Source File Name', name + '.txt');
+    const { srcFile, emptySource } = await source(name);
     const locale = await text(
         'locale',
         'Language locale, example: "en,en-US" for English and English US, "fr" for French, or use "*" for programming language dictionaries.',
@@ -79,15 +125,15 @@ async function getAnswers(given: Answers, yes: boolean, cwd: string): Promise<Re
         anyLocale && !noPrompts ? undefined : '*',
         validateLanguageId(anyLocale),
     );
-    const isHunspell = hunspellExtensions.includes(extname(srcFile));
+    const isHunspell = isHunspellFile(srcFile);
     const useTrie = await yesNo(
         'useTrie',
         'Store as Trie: Mainly used for natural language dictionaries to store their large sizes.',
         isHunspell,
     );
-    const doBuild = await yesNo('doBuild', 'Compile Dictionary?', isHunspell && existsSync(resolve(cwd, srcFile)));
+    const doBuild = await yesNo('doBuild', 'Compile Dictionary?', isHunspell);
 
-    return { name, friendlyName, description, srcFile, locale, languageId, useTrie, doBuild };
+    return { name, friendlyName, description, srcFile, emptySource, locale, languageId, useTrie, doBuild };
 }
 
 function validateLanguageId(anyLocale: boolean): Validate {
@@ -103,18 +149,24 @@ function validateLanguageId(anyLocale: boolean): Validate {
 type TextKey = { [K in keyof Answers]-?: Answers[K] extends string | undefined ? K : never }[keyof Answers];
 type BooleanKey = { [K in keyof Answers]-?: Answers[K] extends boolean | undefined ? K : never }[keyof Answers];
 
-function createPackage(answers: Required<Answers>, cwd: string): void {
+function isHunspellFile(file: string): boolean {
+    return hunspellExtensions.includes(extname(file));
+}
+
+/** The .dic and .aff files of a Hunspell source. */
+function hunspellPair(file: string): string[] {
+    const ext = extname(file);
+    return hunspellExtensions.map((e) => join(dirname(file), basename(file, ext) + e));
+}
+
+function createPackage(answers: Settings, cwd: string): void {
     const { name, friendlyName, useTrie } = answers;
     const packageDir = join(dictionariesDir, name);
     const packageName = name.toLowerCase().replaceAll(/[^a-z0-9-]/g, '-');
     const dstFileName = `dict/${packageName}.${useTrie ? 'trie' : 'txt'}`;
 
     const srcFile = resolve(cwd, answers.srcFile);
-    const ext = extname(srcFile);
-    const isHunspell = hunspellExtensions.includes(ext);
-    const srcFiles = isHunspell
-        ? hunspellExtensions.map((e) => join(dirname(srcFile), basename(srcFile, ext) + e))
-        : [srcFile];
+    const isHunspell = isHunspellFile(srcFile);
 
     const values: Record<string, string> = {
         name,
@@ -139,12 +191,12 @@ function createPackage(answers: Required<Answers>, cwd: string): void {
         const template = readFileSync(join(templateDir, file), 'utf8');
         write(file, fillTemplate(template, values, extname(file)));
     }
-    for (const file of srcFiles.filter((f) => existsSync(f))) {
-        copyFileSync(file, created(join('src', basename(file))));
-    }
-    if (!existsSync(join(packageDir, values.srcFile))) {
-        console.log(`Source file not found: ${srcFile}\nCreating an empty file.`);
+    if (answers.emptySource) {
         write(values.srcFile, `# ${title(friendlyName)} Terms\n`);
+    } else {
+        for (const file of isHunspell ? hunspellPair(srcFile) : [srcFile]) {
+            copyFileSync(file, created(join('src', basename(file))));
+        }
     }
     write(dstFileName, '# dest');
 
