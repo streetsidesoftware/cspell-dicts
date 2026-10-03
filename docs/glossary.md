@@ -15,7 +15,8 @@ Terms used across this repo's docs. Alphabetical.
 
 A source option used with `split`. When every part of an entry is a word in these files, only the parts are added;
 otherwise the whole entry is added. It keeps a misspelled part of a `camelCase` entry out of the dictionary. The files
-can be in other packages, such as `../en_US/en_US.trie`.
+can be in other dictionaries, such as `../en_US/en_US.trie`. For why, see
+[Splitting with `allowedSplitWords`](./dictionary-packages.md#splitting-with-allowedsplitwords).
 
 ## Bundled with cspell
 
