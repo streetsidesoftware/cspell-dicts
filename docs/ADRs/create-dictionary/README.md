@@ -83,3 +83,4 @@ That's the end state. It ships in stages, each usable on its own:
 | [0010](./0010-friendly-name-and-descriptions.md)                          | The friendly name and the descriptions                                              | Accepted           |
 | [0011](./0011-locale-or-file-type-never-both-any.md)                      | A dictionary sets its locale or its file type, never both `*`                       | Accepted           |
 | [0012](./0012-when-a-dictionary-is-stored-as-a-trie.md)                   | When a dictionary is stored as a trie                                               | Accepted           |
+| [0013](./0013-new-dictionaries-are-built.md)                              | A new dictionary is built when it's created                                         | Accepted           |
