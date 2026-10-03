@@ -37,7 +37,8 @@ build half follows `docs/guides/new-dictionary.md`; read it too.
    - Ask the way `feature-adr` step 5 describes: lettered options showing the cspell config a user would write,
      checking facts before asking, and letting the user defer. Don't invent decisions.
    - Keep a list of the decisions, one line each, for the PR description.
-   - **When it's on** is set by `locale` and `languageId`:
+   - **Locale and file type:** the `locale` and `languageId` in `languageSettings` decide which files cspell uses the
+     dictionary for.
      - A natural language dictionary sets `locale`, such as `en-AU`, and leaves `languageId` as `*`.
      - Any other dictionary sets `languageId`, such as `ruby`, and leaves `locale` as `*`.
      - Never both `*`: that turns the dictionary on for every file in every language. If neither fits, ask the user.
