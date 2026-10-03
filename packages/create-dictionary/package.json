@@ -1,0 +1,21 @@
+{
+  "name": "@internal/create-dictionary",
+  "version": "1.0.0",
+  "description": "Creates a dictionary package in dictionaries/ for pnpm create-dictionary.",
+  "private": true,
+  "author": "Street Side Software",
+  "license": "MIT",
+  "type": "module",
+  "bin": {
+    "create-dictionary": "./src/create-dictionary.mts"
+  },
+  "scripts": {
+    "test": "echo \"Test this package using pnpm test:package\"",
+    "test:package": "node --test \"src/**/*.test.mts\""
+  },
+  "dependencies": {
+    "@inquirer/prompts": "^8.7.1",
+    "commander": "^15.0.0",
+    "cspell-lib": "^10.3.6"
+  }
+}

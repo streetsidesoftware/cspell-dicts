@@ -1,13 +1,13 @@
 # Dictionary packages
 
 <!--
-audience: technical contributor
+audience: technical contributor, developer
 kind: reference
-level: comfortable with basic git and a terminal; doesn't read or write code
+level: comfortable with basic git and a terminal; the build sections are for developers
 -->
 
 > [!NOTE]
-> For contributors working on a dictionary package. No coding needed.
+> For contributors creating or changing a dictionary, and developers changing how dictionaries are built.
 
 What a dictionary package under `dictionaries/` contains, and why. New dictionaries follow this layout. Many older
 packages differ, as listed in [Older packages](#older-packages), and move to it over time.
@@ -53,6 +53,16 @@ There's no `CHANGELOG.md` at first: Release Please creates it on the first relea
 - **An upstream source:** fetched by a `sync` script, so an update can be repeated. See
   [Upstream updates](./guides/upstream-updates.md). Never edit the fetched files by hand.
 - **Words added on top of an upstream source:** go in `src/additional_words.txt`.
+
+Every source follows three rules:
+
+- **The dictionary keeps a local copy.** Every source is committed in the dictionary's directory, so the dictionary can
+  be built from scratch, without downloading anything.
+- **Sync only updates the local copy.** If an upstream source moves, disappears, or changes in a way we can't use, the
+  sync fails, and the dictionary still builds from its local copy.
+- **Where it came from is recorded.** Each upstream source is synced into its own directory, `src/<source>/`, and the
+  dictionary's `src/README.md` links to each source's repository. The built dictionary is often a derivative work of its
+  sources, so their licenses apply to it. This matters most for Hunspell files.
 
 ## Building
 

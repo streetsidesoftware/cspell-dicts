@@ -1,13 +1,13 @@
 # Architecture Decision Records
 
 <!--
-audience: developer
+audience: developer, maintainer
 kind: guide
-level: reads and writes TypeScript, package.json scripts, and GitHub Actions workflows
+level: knows the repo's dictionaries and conventions; comfortable with git and PRs
 -->
 
 > [!NOTE]
-> For developers settling a design before building it.
+> For maintainers and developers settling a design before building it.
 
 An Architecture Decision Record (ADR) records one design decision: the situation, the choice, and its consequences.
 ADRs are for decisions where a reasonable person could have chosen differently. Ideas that haven't been decided yet
@@ -29,7 +29,7 @@ Use ADRs to settle a change whose design has more than one reasonable answer bef
 choice is hard to undo once it ships:
 
 - a new dictionary that takes a different approach from the [new-dictionary guide](../guides/new-dictionary.md), or
-  needs scripts of its own beyond `pnpm run create-dictionary`, the build, and a standard `sync` script
+  needs scripts of its own beyond `pnpm create-dictionary`, the build, and a standard `sync` script
 - changing which file types or locales an existing dictionary is turned on for by default
 - splitting, merging, or renaming dictionaries or dictionary IDs
 - switching a dictionary to a different upstream source, or a source with a different license

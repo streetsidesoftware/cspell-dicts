@@ -1,0 +1,53 @@
+name: 'test-packages'
+on:
+  # Only when something the package tests cover changes.
+  pull_request:
+    paths:
+      - 'packages/**'
+      - 'package.json'
+      - 'pnpm-lock.yaml'
+      - '.github/workflows/test-packages.yml'
+  push:
+    branches:
+      - main
+    paths:
+      - 'packages/**'
+      - 'package.json'
+      - 'pnpm-lock.yaml'
+      - '.github/workflows/test-packages.yml'
+
+permissions:
+  contents: read
+
+concurrency:
+  group: ${{ github.workflow }}-${{ github.ref }}
+  cancel-in-progress: true
+
+jobs:
+  test-packages:
+    runs-on: ${{ matrix.os }}
+    strategy:
+      fail-fast: false
+      matrix:
+        # The same Node versions and systems as test.yml.
+        node-version:
+          - 22.x
+          - 26.x
+        os:
+          - ubuntu-latest
+
+        include:
+          - os: windows-latest
+            node-version: 24.x
+
+    steps:
+      - uses: actions/checkout@3d3c42e5aac5ba805825da76410c181273ba90b1 # v7.0.1
+        with:
+          persist-credentials: false
+
+      - name: Setup
+        uses: ./.github/actions/setup
+        with:
+          node-version: ${{ matrix.node-version }}
+
+      - run: pnpm test:packages

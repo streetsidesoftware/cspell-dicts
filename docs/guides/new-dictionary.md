@@ -8,6 +8,8 @@ level: comfortable with basic git and a terminal; doesn't read or write code
 
 > [!NOTE]
 > For contributors who can fork the repo and follow terminal steps. No coding needed.
+> Can't use a terminal? [Open an issue](https://github.com/streetsidesoftware/cspell-dicts/issues/new) with the
+> words and where they come from, and someone can build it.
 
 How to add a new dictionary package. To change the words in an existing one, see [Word changes](./word-changes.md).
 
@@ -45,14 +47,14 @@ If an existing dictionary comes close, adding words to it may be the better chan
 - **Format:** plaintext, or a trie for large lists such as Hunspell dictionaries.
 
 Most new dictionaries don't need ADRs. Record the design as ADRs only when the dictionary takes a different approach
-from this guide, or needs scripts of its own beyond `pnpm run create-dictionary`, the build, and a `sync` script as in
+from this guide, or needs scripts of its own beyond `pnpm create-dictionary`, the build, and a `sync` script as in
 [Upstream updates](./upstream-updates.md). See [ADRs](../ADRs/README.md).
 
 ## 3. Check the sources and their license
 
 - Where do the words come from? Your own list, a project's documentation, or an upstream word list?
 - What is the source's license? The package's `license` field and `LICENSE` must allow it, and upstream license files
-  are published with the package (added to `files`). `pnpm run create-dictionary` writes an MIT `LICENSE`: change it if the source
+  are published with the package (added to `files`). `pnpm create-dictionary` writes an MIT `LICENSE`: change it if the source
   requires.
 - If the license is missing or unclear, stop and ask the maintainers in an issue before going further.
 
@@ -65,13 +67,13 @@ Check the [prerequisites](../repository.md#prerequisites). Then, from the repo r
 ```sh
 pnpm install
 pnpm run prepare:dictionaries
-pnpm run create-dictionary
+pnpm create-dictionary
 ```
 
 It asks for each field below. Any field given as an option on the command line is not asked:
 
 ```sh
-pnpm run create-dictionary <name> <path/to/source/words> --language-id <file type>
+pnpm create-dictionary <name> <path/to/source/words> --language-id <file type>
 ```
 
 To run it with no questions, add `--yes`. Fields you leave out get their defaults. It stops with an error if:
@@ -85,10 +87,10 @@ To run it with no questions, add `--yes`. Fields you leave out get their default
 For example:
 
 ```sh
-pnpm run create-dictionary --yes <name> <path/to/source/words> --friendly-name "<Friendly Name>" --locale <locale> --language-id <file type> --no-build
+pnpm create-dictionary --yes <name> <path/to/source/words> --friendly-name "<Friendly Name>" --locale <locale> --language-id <file type> --no-build
 ```
 
-Run `pnpm run create-dictionary --help` to list the options.
+Run `pnpm create-dictionary --help` to list the options.
 
 | Field         | Option                                 | Description                                                                                                                                                                                                              |
 | ------------- | -------------------------------------- | ------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------ |

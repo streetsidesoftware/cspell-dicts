@@ -1,13 +1,13 @@
 # Commits and pull requests
 
 <!--
-audience: technical contributor
+audience: developer, maintainer
 kind: reference
-level: comfortable with basic git and a terminal; doesn't read or write code
+level: reviews PRs and picks commit types; knows Conventional Commits
 -->
 
 > [!NOTE]
-> For anyone opening a PR.
+> For developers and maintainers choosing commit types and reviewing PRs.
 
 ## Who reads the release notes
 
@@ -41,7 +41,7 @@ commit message.
 
 - `revert:`: undoes a merged commit.
 - `docs:`: documentation only, including README text outside a package's words or settings.
-- `chore:`: everything else that doesn't change a published dictionary: repo tooling, scripts, the dictionary creation tool (`pnpm run create-dictionary`), lint
+- `chore:`: everything else that doesn't change a published dictionary: repo tooling, scripts, the dictionary creation tool (`pnpm create-dictionary`), lint
   config, Claude Code skills and settings.
 - `ci:`: GitHub Actions and workflows, and dependency updates.
 - `perf:`, `refactor:`, `style:`, `test:`, `build:`: internal changes of those kinds, with no change in what gets
