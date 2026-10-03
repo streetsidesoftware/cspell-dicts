@@ -55,7 +55,10 @@ export function parseCommandLine(argv: string[]): CommandLine {
         .option('--description <text>', 'a short description; default: "<Friendly name> dictionary for cspell."')
         .option('--source <file>', 'the .txt word list or Hunspell .dic file, copied to src/; default: <name>.txt')
         .option('--locale <locales>', 'locales, comma separated, such as "en,en-AU", or "*" for any; default: "*"')
-        .option('--language-id <ids>', 'file types, comma separated, such as "ruby", or "*" for any; default: "*"')
+        .option(
+            '--language-id <ids>',
+            'file types, comma separated, such as "ruby", or "*" for any; default: "*". Give this or --locale: both "*" is an error',
+        )
         .option('--trie', 'store as a trie; default for Hunspell .dic and .aff sources')
         .option('--no-trie', 'store as plain text; default for other sources')
         .option('--build', 'build the dictionary after creating it; default for existing Hunspell sources')

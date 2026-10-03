@@ -72,10 +72,12 @@ async function getAnswers(given: Answers, yes: boolean, cwd: string): Promise<Re
         'Language locale, example: "en,en-US" for English and English US, "fr" for French, or use "*" for programming language dictionaries.',
         '*',
     );
+    const anyLocale = locale.trim() === '*';
     const languageId = await text(
         'languageId',
         'Programming languageID/filetype, i.e. "typescript", "php", "go", or "*" for any.',
-        '*',
+        anyLocale && !noPrompts ? undefined : '*',
+        validateLanguageId(anyLocale),
     );
     const isHunspell = hunspellExtensions.includes(extname(srcFile));
     const useTrie = await yesNo(
@@ -86,6 +88,16 @@ async function getAnswers(given: Answers, yes: boolean, cwd: string): Promise<Re
     const doBuild = await yesNo('doBuild', 'Compile Dictionary?', isHunspell && existsSync(resolve(cwd, srcFile)));
 
     return { name, friendlyName, description, srcFile, locale, languageId, useTrie, doBuild };
+}
+
+function validateLanguageId(anyLocale: boolean): Validate {
+    return (value) => {
+        if (!value.trim()) return 'missing. Give a file type, such as ruby.';
+        if (anyLocale && value.trim() === '*') {
+            return '"*" with a locale of "*" turns the dictionary on for every file. Set the locale for a natural language, or the file type for anything else.';
+        }
+        return true;
+    };
 }
 
 type TextKey = { [K in keyof Answers]-?: Answers[K] extends string | undefined ? K : never }[keyof Answers];
