@@ -7,7 +7,7 @@ level: reviews PRs and picks commit types; knows Conventional Commits
 -->
 
 > [!NOTE]
-> For reviewers and maintainers choosing commit types and reviewing PRs.
+> For developers and maintainers choosing commit types and reviewing PRs.
 
 ## Who reads the release notes
 
