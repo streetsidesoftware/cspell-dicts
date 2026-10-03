@@ -29,3 +29,5 @@ We will:
 - New dictionaries add no upstream dependencies, so installs stay fast.
 - Most upstreams sync one way ([0017](./0017-github-sources-follow-the-default-branch.md)).
 - Moving existing dictionaries off their `dictionary-*` devDependencies is out of scope here.
+
+<!-- cspell:ignore wooorm -->
