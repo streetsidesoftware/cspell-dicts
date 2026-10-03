@@ -11,6 +11,7 @@ level: none
 
 ## GitHub web contributors
 
+- [Adding, removing, or fixing words](./guides/word-changes.md)
 - [Glossary](./glossary.md): the terms used in these docs
 
 ## Technical contributors

@@ -35,9 +35,10 @@ pnpm exec cspell trace --only-found <word>
   user's config doesn't turn that dictionary on. Say so before adding anything.
 - For a removal, it shows every dictionary the word must leave.
 
-Pick the dictionary and file by the guide's "Find the dictionary" and "Find the source file", and read the package's
-`cspell-tools.config.yaml`. Propose the file for each word, with the reason, and confirm with the user when more than
-one fits.
+Pick the dictionary and file by the guide's "Find the dictionary" and "Find the source file": read the dictionary's
+`src/README.md` and the header comments of its source files. Most new words go in `src/additional_words.txt`. Check
+that `cspell-tools.config.yaml` builds from the file you pick. Propose the file for each word, with the reason, and
+confirm with the user when more than one fits.
 
 ### 3. Edit
 
