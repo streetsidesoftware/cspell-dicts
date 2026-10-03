@@ -39,6 +39,9 @@ If an existing dictionary comes close, adding words to it may be the better chan
 - **Dictionary IDs:** usually the same name. A package can define more than one.
 - **When it's on:** for which file types (`languageId`) and which locales (`locale`) `languageSettings` turns it on,
   or whether users must add it to `dictionaries` themselves.
+  - A natural language dictionary sets the locale, such as `en-AU`, and leaves the file type as `*`.
+  - Any other dictionary sets the file type, such as `ruby`, and leaves the locale as `*`.
+  - Not both `*`: that turns the dictionary on for every file in every language.
 - **Format:** plaintext, or a trie for large lists such as Hunspell dictionaries.
 
 Most new dictionaries don't need ADRs. Record the design as ADRs only when the dictionary takes a different approach
@@ -72,7 +75,7 @@ pnpm run create-dictionary <name> <path/to/source/words> --language-id <file typ
 ```
 
 To run it with no questions, add `--yes`. Fields you leave out get their defaults. It stops with an error if the name is
-missing, a value is invalid, or `dictionaries/<name>/` already exists:
+missing, a value is invalid, `dictionaries/<name>/` already exists, or the locale and the file type are both `*`:
 
 ```sh
 pnpm run create-dictionary --yes <name> <path/to/source/words> --friendly-name "<Friendly Name>" --locale <locale> --language-id <file type> --no-build
