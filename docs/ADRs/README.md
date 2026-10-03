@@ -102,8 +102,8 @@ by a short summary. Archive a feature when it's due, or earlier when a maintaine
 
 - The [Features](#features) table records when each feature shipped. Fill in the package, version, and date when the
   first release containing it is published.
-- Before deleting anything, move what is still in force to its long-term home: a rule to `CONTRIBUTING.md` or the
-  relevant doc under `docs/`.
+- Before deleting anything, move what is still in force to its long-term home: a rule goes to the doc under
+  `docs/` where it applies.
 - Rewrite the feature's `README.md` as the archive summary, with a permalink to the full ADRs in git history.
 - Delete the individual ADR files, and mark the feature archived in the table below.
 
