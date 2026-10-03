@@ -36,7 +36,13 @@ dictionary contains. It needed design decisions because what it writes is what e
 
 ## Goal
 
-To be filled in.
+A contributor or an agent runs `pnpm create-dictionary` once and gets a dictionary package a maintainer can merge
+without cleanup:
+
+- every source has a local copy in `src/`, with a record of where it came from and its license
+- each upstream source has a working sync step
+- there's a `src/additional_words.txt` for words added by hand
+- there's a `samples/` folder, with a test that checks it
 
 ## Out of scope
 
