@@ -1,13 +1,13 @@
 # Glossary
 
 <!--
-audience: technical contributor
+audience: casual contributor, technical contributor, developer, maintainer
 kind: reference
-level: comfortable with basic git and a terminal; doesn't read or write code
+level: none assumed; write for the casual contributor where possible, and explain technical terms rather than avoid them
 -->
 
 > [!NOTE]
-> For contributors reading these docs.
+> For contributors at every level who want to understand a term or concept used in this repo.
 
 Terms used across this repo's docs. Alphabetical.
 
