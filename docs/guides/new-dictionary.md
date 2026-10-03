@@ -1,5 +1,14 @@
 # Creating a dictionary
 
+<!--
+audience: technical contributor
+kind: guide
+level: comfortable with basic git and a terminal; doesn't read or write code
+-->
+
+> [!NOTE]
+> For contributors who can fork the repo and follow terminal steps. No coding needed.
+
 How to add a new dictionary package. To change the words in an existing one, see [Word changes](./word-changes.md).
 
 A new package makes public promises from its first release: its package name, its dictionary IDs, and the files or

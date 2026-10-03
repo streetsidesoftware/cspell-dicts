@@ -1,5 +1,14 @@
 # Commits and pull requests
 
+<!--
+audience: technical contributor
+kind: reference
+level: comfortable with basic git and a terminal; doesn't read or write code
+-->
+
+> [!NOTE]
+> For anyone opening a PR.
+
 ## Who reads the release notes
 
 Release Please builds each package's version bump and `CHANGELOG.md` from commit types (see [Releasing](./releasing.md)).

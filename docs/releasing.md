@@ -1,5 +1,11 @@
 # Releasing
 
+<!--
+audience: maintainer
+kind: guide
+level: has write access and an npm account with publish rights; runs git, gh, and npm
+-->
+
 > [!WARNING]
 > These instructions are for maintainers. Contributors don't need to do any of this: maintainers and workflows handle
 > releases and publishing.
