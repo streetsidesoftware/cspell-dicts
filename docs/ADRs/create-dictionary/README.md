@@ -91,6 +91,7 @@ That's the end state. It ships in stages, each usable on its own:
 | [0016](./0016-prompting-for-third-party-sources.md)                       | Prompting asks for third-party sources in a loop                                    | Accepted           |
 | [0017](./0017-github-sources-follow-the-default-branch.md)                | A GitHub source follows its default branch                                          | Accepted           |
 | [0018](./0018-github-token-at-creation.md)                                | A GitHub source needs a token when the dictionary is created                        | Accepted           |
+| [0019](./0019-remote-sources-are-npm-and-github.md)                       | Remote sources come from npm or GitHub; download pages are local sources            | Accepted           |
 
 ## Provisional names
 
