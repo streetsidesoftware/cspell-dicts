@@ -9,8 +9,8 @@ import { fileURLToPath } from 'node:url';
 
 import { confirm, input } from '@inquirer/prompts';
 
-import { type Answers, optionForAnswer, parseCommandLine } from './options.mts';
-import { readTakenNames, type TakenNames } from './taken-names.mts';
+import { type Answers, optionForAnswer, parseCommandLine } from './lib/options.mts';
+import { readTakenNames, type TakenNames } from './lib/taken-names.mts';
 
 const rootDir = findRepoRoot(fileURLToPath(new URL('.', import.meta.url)));
 const templateDir = fileURLToPath(new URL('../templates/', import.meta.url));
