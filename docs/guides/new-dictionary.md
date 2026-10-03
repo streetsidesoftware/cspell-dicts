@@ -37,8 +37,8 @@ If an existing dictionary comes close, adding words to it may be the better chan
 - **Directory name:** a short name, such as `ruby` or `en_AU`. The package name is derived from it:
   `@cspell/dict-<name>`, lowercase, with other characters replaced by `-` (`en_AU` becomes `@cspell/dict-en-au`).
 - **Dictionary IDs:** usually the same name. A package can define more than one.
-- **When it's on:** for which file types (`languageId`) and which locales (`locale`) `languageSettings` turns it on,
-  or whether users must add it to `dictionaries` themselves.
+- **Locale and file type:** which files cspell uses the dictionary for, set by `locale` and `languageId` in
+  `languageSettings`. Or leave it off, so users add it to `dictionaries` themselves.
   - A natural language dictionary sets the locale, such as `en-AU`, and leaves the file type as `*`.
   - Any other dictionary sets the file type, such as `ruby`, and leaves the locale as `*`.
   - Not both `*`: that turns the dictionary on for every file in every language.
