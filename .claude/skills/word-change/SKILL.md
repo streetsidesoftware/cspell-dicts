@@ -6,7 +6,7 @@ description: 'Add, remove, or correct words in an existing cspell-dicts dictiona
 # word-change
 
 Changes words in an existing dictionary by following `docs/guides/word-changes.md`. Read that guide first: it is the
-procedure and holds the word format. This skill adds the questions to settle, the checks, and the drafts.
+procedure. Where words go and the word format are in `docs/word-lists.md`. This skill adds the questions to settle, the checks, and the drafts.
 
 ## Workflow
 
@@ -35,14 +35,14 @@ pnpm exec cspell trace --only-found <word>
   user's config doesn't turn that dictionary on. Say so before adding anything.
 - For a removal, it shows every dictionary the word must leave.
 
-Pick the dictionary and file by the guide's "Find the dictionary" and "Find the source file": read the dictionary's
+Pick the dictionary and file by "Where words go" in `docs/word-lists.md`: read the dictionary's
 `src/README.md` and the header comments of its source files. Most new words go in `src/additional_words.txt`. Check
 that `cspell-tools.config.yaml` builds from the file you pick. Propose the file for each word, with the reason, and
 confirm with the user when more than one fits.
 
 ### 3. Edit
 
-- Follow the guide's format: case, one entry per line, `#` comments, regional spellings.
+- Follow the format in `docs/word-lists.md`: case, one entry per line, `#` comments, regional spellings.
 - Match the file's existing conventions, such as how it groups or comments words.
 - To remove a word that comes from upstream, add it to the target's `excludeWordsFrom` file. If the target has none, stop
   and tell the user: adding one is a design choice.

@@ -14,7 +14,8 @@ Thanks for considering a contribution to cspell-dicts.
 ## Where to start
 
 - **Suggest a word or report a problem:** [open an issue](https://github.com/streetsidesoftware/cspell-dicts/issues/new).
-- **Add, remove, or fix words:** [Adding, removing, or fixing words](./docs/guides/word-changes.md).
+- **Add, remove, or fix words:** [in your browser](./docs/guides/word-changes-in-browser.md), or
+  [in a clone](./docs/guides/word-changes.md).
 - **Create a dictionary:** [Creating a dictionary](./docs/guides/new-dictionary.md).
 - **Help answer questions:** [the open issues](https://github.com/streetsidesoftware/cspell-dicts/issues).
 

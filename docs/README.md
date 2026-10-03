@@ -11,12 +11,14 @@ level: none
 
 ## GitHub web contributors
 
-- [Adding, removing, or fixing words](./guides/word-changes.md)
+- [Changing words in your browser](./guides/word-changes-in-browser.md)
+- [Word lists](./word-lists.md): where words go, and the word format
 - [Glossary](./glossary.md): the terms used in these docs
 
 ## Technical contributors
 
 - [Adding, removing, or fixing words](./guides/word-changes.md)
+- [Word lists](./word-lists.md): where words go, and the word format
 - [Creating a dictionary](./guides/new-dictionary.md)
 - [Dictionary packages](./dictionary-packages.md): what a dictionary package contains and why, sources, building, and
   tests
