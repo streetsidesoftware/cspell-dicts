@@ -51,6 +51,10 @@ pnpm create-dictionary en_XX \
   update. A Hunspell file brings its pair ([0001](./0001-name-and-sources-on-the-command-line.md)).
 - A generated `README.md` in the folder records the source's name, URL or package, files, and license.
 - A source needs at least one file. A missing license, README, or URL is a warning, not an error.
+- A named file must exist: a missing one is always an error, with no `--allow-missing-source` exception
+  ([0008](./0008-missing-sources-need-allow-missing-source.md)). For a local source that's checked when the dictionary
+  is created. A remote source's files can't be verified until they're fetched, so they're checked then, in the sync
+  stage.
 - A source name follows the same rules as a dictionary name: letters, digits, `_`, and `-`. Names can't contain `=`.
 - Positional sources and `--source` stay for the contributor's own word lists, copied directly into `src/`.
 - `--define-source-npm` and `--define-source-github` belong to the sync stage, which decides how they're fetched and

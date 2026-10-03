@@ -29,5 +29,5 @@ source doesn't exist. When prompting, a missing file asks whether to create it e
 ## Consequences
 
 - A forgotten or mistyped source fails loudly, unless starting empty was asked for.
-- This covers the contributor's own word lists. Files of a third-party source ([0006](./0006-third-party-sources-are-defined-by-name.md))
-  have to exist, since their local copy is the point.
+- This covers the contributor's own word lists. A missing file of a third-party source is always an error
+  ([0006](./0006-third-party-sources-are-defined-by-name.md)).
