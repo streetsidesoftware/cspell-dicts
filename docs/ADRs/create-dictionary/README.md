@@ -89,3 +89,8 @@ That's the end state. It ships in stages, each usable on its own:
 | [0014](./0014-test-options-are-hidden.md)                                 | Options for tests are hidden from `--help`                                          | Accepted           |
 | [0015](./0015-hunspell-depth.md)                                          | Hunspell sources default to a depth of 1                                            | Accepted           |
 | [0016](./0016-prompting-for-third-party-sources.md)                       | Prompting asks for third-party sources in a loop                                    | Accepted           |
+| [0017](./0017-github-sources-follow-the-default-branch.md)                | A GitHub source follows its default branch                                          | Accepted           |
+
+## Provisional names
+
+- `--add-source-ref`: the option that pins a GitHub source to a tag or commit. Decide with the rest of the sync stage.
