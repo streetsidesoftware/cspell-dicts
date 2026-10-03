@@ -72,3 +72,12 @@ That's the end state. It ships in stages, each usable on its own:
 | [0003](./0003-additional-words-file.md)                    | Every new dictionary gets `src/additional_words.txt`              | Accepted |
 | [0004](./0004-each-hunspell-source-gets-its-own-folder.md) | Each Hunspell source gets its own folder in `src/`                | Accepted |
 | [0005](./0005-word-list-folders-are-copied-as-folders.md)  | A word-list file goes into `src/`; a folder is copied as a folder | Accepted |
+
+## Open questions
+
+- **A default `src/exclude_words.txt`.** Requested through the docs session working on the word-changes guide (#5852):
+  every new dictionary gets `src/exclude_words.txt`, listed under the target's `excludeWordsFrom`, so a word that comes
+  from an upstream source can be left out (deleting it from synced files doesn't last). 10 dictionaries use
+  `excludeWordsFrom` today, with three file names: `src/exclude-words.txt` (6), `src/exclude-terms.txt` (3), and
+  `src/exclude_words.txt` (1). Still to decide: whether it's always created or has a `--no-exclude-words`, and its
+  header text.
