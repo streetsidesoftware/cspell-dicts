@@ -52,7 +52,8 @@ There's no `CHANGELOG.md` at first: Release Please creates it on the first relea
 - **A list kept by hand:** small dictionaries keep their words in `src/<name>.txt`.
 - **An upstream source:** fetched by a `sync` script, so an update can be repeated. See
   [Upstream updates](./guides/upstream-updates.md). Never edit the fetched files by hand.
-- **Words added on top of an upstream source:** go in `src/additional_words.txt`.
+- **Words the sources don't generate:** go in `src/additional_words.txt`. See
+  [How a dictionary is built](#how-a-dictionary-is-built).
 
 Every source follows three rules:
 
@@ -64,9 +65,36 @@ Every source follows three rules:
   dictionary's `src/README.md` links to each source's repository. The built dictionary is often a derivative work of its
   sources, so their licenses apply to it. This matters most for Hunspell files.
 
+## How a dictionary is built
+
+The build doesn't copy the sources line by line. It generates the dictionary's words from them:
+
+- **Hunspell sources are expanded.** Each word in the `.dic` file is combined with the prefixes and suffixes its `.aff`
+  file allows, so one entry can become several words, such as `walk`, `walked`, and `walks`.
+- **Word lists can be split.** With `split: true`, an entry such as `FILE_ERROR_CODE` is stored as its parts.
+
+Two files correct what the build generates:
+
+- **`src/exclude_words.txt` removes words.** The target lists it under `excludeWordsFrom`. Use it for a word the build
+  generates that we don't want, such as a wrong Hunspell form. It's also how a word from an upstream source is removed:
+  deleting the word from the synced files doesn't last, because the next sync brings it back.
+- **`src/additional_words.txt` adds words** the sources don't generate. When a dictionary is built from several
+  sources, it's hard to tell which source a missing word belongs in, so this file is the one obvious place for it.
+
+### Splitting with `allowedSplitWords`
+
+Some dictionaries, such as `cpp`, are built from large lists of terms found in code. Storing `FILE_ERROR_CODE`,
+`TERMINAL_ERROR_CODE`, and `ERROR_CODE_FILE` whole takes a lot of space, and cspell checks an identifier by its parts
+anyway, so splitting them saves space.
+
+Splitting blindly brings in misspellings, though. `ERROR_DONT_MERGE` would add `DONT`, and "dont" would then be
+accepted everywhere. `allowedSplitWords` names lists of known words, such as `en_US`, `software-terms`, and the
+dictionary's own `src/allowed-terms.txt`. An entry is split only when every part is a known word. Otherwise it's kept
+whole.
+
 ## Building
 
-`pnpm run build` in the package runs `cspell-tools-cli build`, which reads `cspell-tools.config.yaml` and writes
+`pnpm run build` in the dictionary's directory runs `cspell-tools-cli build`, which reads `cspell-tools.config.yaml` and writes
 `dict/`:
 
 ```sh
@@ -74,11 +102,12 @@ cd dictionaries/<name>
 pnpm run build
 ```
 
-Run it in the package, not at the repo root: the root `build` builds every package and can take a long time.
+Run it in the dictionary's directory, not at the repo root: the root `build` builds every dictionary and can take a
+long time.
 
 With `checksumFile: true` in the config, the build records its sources in `checksum.txt`. The conditional build that
 CI and the [Build Dictionaries](https://github.com/streetsidesoftware/cspell-dicts/actions/workflows/build-dictionaries.yml)
-workflow run skips the package when nothing changed.
+workflow run skips the dictionary when nothing changed.
 
 ## What's committed
 
@@ -120,3 +149,5 @@ Many packages predate this layout:
 - They read another package's files by a relative path, such as `allowedSplitWords: ../en_US/en_US.trie`.
 
 When you work on one of them, moving it to the current layout is welcome, in a separate PR.
+
+<!-- cspell:ignore DONT dont -->
