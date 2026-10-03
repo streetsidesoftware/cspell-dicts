@@ -1,6 +1,6 @@
 # 0005. A folder source keeps only its word lists, license, and README
 
-Status: Accepted
+Status: Superseded by [0006](./0006-third-party-sources-are-defined-by-name.md)
 
 ## Context
 
