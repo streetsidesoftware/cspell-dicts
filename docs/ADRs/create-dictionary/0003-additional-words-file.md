@@ -4,7 +4,12 @@ Status: Accepted
 
 ## Context
 
-50 dictionaries have a `src/additional_words.txt`: a word list kept by hand, compiled along with their other sources.
+The build generates a dictionary's words from its sources: a Hunspell `.dic` is expanded with the prefixes and suffixes
+in its `.aff`, and word lists can be split into parts. `src/additional_words.txt` adds words the sources don't
+generate. It's a catch-all: when a dictionary is built from several sources, a later visitor can't easily tell which
+source a missing word belongs in, so the catch-all gives them one obvious place.
+
+50 dictionaries have one, 42 of them with an upstream source.
 Other names exist too: `additional-terms.txt` (4), `additional-words.txt` (2), and `additional_tokens.txt` (2). Today
 the file is added by hand when someone first needs it.
 

@@ -4,9 +4,11 @@ Status: Accepted
 
 ## Context
 
-`excludeWordsFrom`, a target option in `cspell-tools.config.yaml`, names files of words to leave out of the built
-dictionary. It's how a word that comes from an upstream source is removed: deleting it from the synced files doesn't
-last, because the next sync brings it back.
+The build generates words from a dictionary's sources: prefixes and suffixes are added to Hunspell stems, and word lists
+can be split into parts. Sometimes it generates words we don't want. `excludeWordsFrom`, a target option in
+`cspell-tools.config.yaml`, names files of words to leave out of the built dictionary, so those words are excluded
+explicitly. It's also how a word that comes from an upstream source is removed: deleting it from the synced files
+doesn't last, because the next sync brings it back.
 
 10 dictionaries use it today, with three file names: `src/exclude-words.txt` (6), `src/exclude-terms.txt` (3), and
 `src/exclude_words.txt` (1). Because most dictionaries have no such file, and the rest name it differently, the
