@@ -1,15 +1,18 @@
-# generator-cspell-dicts
+# create-dictionary
 
-Generate cspell dictionary sub-projects.
+Creates a dictionary package in `dictionaries/<name>/`. Internal to the
+[cspell-dicts](https://github.com/streetsidesoftware/cspell-dicts) repository; not published.
 
 ## Usage
 
-Run it in the [cspell-dicts](https://github.com/streetsidesoftware/cspell-dicts) repository:
+From the repository root:
 
-```bash
+```sh
 pnpm install
 pnpm run create-dictionary
 ```
+
+From inside another package, use `pnpm -w run create-dictionary`.
 
 It asks a few questions and creates the package in `dictionaries/<name>/`. Each answer can also be given as an option,
 and `--yes` runs it without questions. Run `pnpm run create-dictionary --help` to list the options. See
@@ -17,4 +20,4 @@ and `--yes` runs it without questions. Run `pnpm run create-dictionary --help` t
 
 ## License
 
-MIT © Jason Dent
+MIT. See [LICENSE](./LICENSE).
