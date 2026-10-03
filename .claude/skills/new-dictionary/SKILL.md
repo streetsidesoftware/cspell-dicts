@@ -11,7 +11,7 @@ and the file types and locales it turns on all end up in users' configs. So the 
 cheap to change.
 
 Most new dictionaries don't need ADRs. They do only when the dictionary takes a different approach from
-`docs/guides/new-dictionary.md`, or needs scripts of its own beyond `pnpm run create-dictionary`, `cspell-tools-cli build`, and a
+`docs/guides/new-dictionary.md`, or needs scripts of its own beyond `pnpm exec create-dictionary`, `cspell-tools-cli build`, and a
 `sync` script that follows `docs/guides/upstream-updates.md`.
 
 The interview follows the `feature-adr` skill, and so do the ADRs when they're needed. Read
@@ -25,7 +25,7 @@ build half follows `docs/guides/new-dictionary.md`; read it too.
    `word-change` skill) may be the better change.
 
 2. **Name it.** Agree on the directory name, such as `ruby` or `en_AU`. The package name is derived from it by
-   `pnpm run create-dictionary`: `@cspell/dict-<name>`, lowercase, other characters replaced by `-`. If it needs ADRs, the feature slug
+   `pnpm exec create-dictionary`: `@cspell/dict-<name>`, lowercase, other characters replaced by `-`. If it needs ADRs, the feature slug
    is `dict-<name>`, so the design lives in `docs/ADRs/dict-<name>/`.
 
 3. **Set up a worktree** on a `new-dictionary/<name>` branch, as in `feature-adr` step 3. The design and the
@@ -59,12 +59,12 @@ build half follows `docs/guides/new-dictionary.md`; read it too.
    - From the repo root, run it with `--yes` and every answer from the design as an option, so it never prompts:
 
      ```sh
-     pnpm run create-dictionary --yes <name> <path/to/source/words> --friendly-name "<Friendly Name>" --description "<description>" --locale <locale> --language-id <file type> --no-trie --build
+     pnpm exec create-dictionary --yes <name> <path/to/source/words> --friendly-name "<Friendly Name>" --description "<description>" --locale <locale> --language-id <file type> --no-trie --build
      ```
 
      Set `--locale` and `--language-id` as decided in step 4. If there is no word list yet, add
      `--allow-missing-source`, which starts an empty one. Use `--trie` for Hunspell sources and large lists. Run
-     `pnpm run create-dictionary --help` to list the options. If it fails on a missing or invalid value, fix that option
+     `pnpm exec create-dictionary --help` to list the options. If it fails on a missing or invalid value, fix that option
      and run it again.
 
    - `cspell-ext.json`'s `dictionaryDefinitions` and `languageSettings` match the design exactly: IDs, `languageId`,

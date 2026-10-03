@@ -76,8 +76,8 @@ export function parseCommandLine(argv: string[]): CommandLine {
             [
                 '',
                 'Examples:',
-                '  pnpm run create-dictionary',
-                '  pnpm run create-dictionary --yes ruby ./ruby-words.txt --friendly-name Ruby --language-id ruby --no-build',
+                '  pnpm create-dictionary',
+                '  pnpm create-dictionary --yes ruby ./ruby-words.txt --friendly-name Ruby --language-id ruby --no-build',
             ].join('\n'),
         );
 

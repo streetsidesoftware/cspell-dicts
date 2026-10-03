@@ -9,11 +9,11 @@ import { fileURLToPath } from 'node:url';
 
 import { confirm, input } from '@inquirer/prompts';
 
-import { type Answers, optionForAnswer, parseCommandLine } from './options.mts';
-import { readTakenNames, type TakenNames } from './taken-names.mts';
+import { type Answers, optionForAnswer, parseCommandLine } from './lib/options.mts';
+import { readTakenNames, type TakenNames } from './lib/taken-names.mts';
 
-const rootDir = fileURLToPath(new URL('../', import.meta.url));
-const templateDir = fileURLToPath(new URL('templates/', import.meta.url));
+const rootDir = findRepoRoot(fileURLToPath(new URL('.', import.meta.url)));
+const templateDir = fileURLToPath(new URL('../templates/', import.meta.url));
 const dictionariesDir = join(rootDir, 'dictionaries');
 
 const templateFiles = [
@@ -239,6 +239,19 @@ function fillTemplate(template: string, values: Record<string, string>, ext: str
         if (ext === '.yaml') return value.replaceAll("'", "''");
         return value;
     });
+}
+
+/**
+ * The nearest folder above `dir` that has `.git`: a directory, or a file in a git worktree.
+ */
+function findRepoRoot(dir: string): string {
+    for (let current = resolve(dir); ; current = dirname(current)) {
+        if (existsSync(join(current, '.git'))) return current;
+        if (dirname(current) === current) {
+            console.error(`error: no git repository found above ${resolve(dir)}`);
+            process.exit(1);
+        }
+    }
 }
 
 function run(cwd: string, args: string[]): void {
