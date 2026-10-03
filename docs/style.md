@@ -7,7 +7,7 @@ level: writes word lists, READMEs, or docs in this repo
 -->
 
 > [!NOTE]
-> For anyone writing word lists, a dictionary's README, or docs in this repo, and for reviewers.
+> For anyone writing word lists, a dictionary's README, or docs in this repo.
 
 Prettier and ESLint handle formatting (`pnpm run lint` fixes what it can). Beyond that:
 
