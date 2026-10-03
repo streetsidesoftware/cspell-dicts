@@ -1,5 +1,20 @@
 # Release Notes
 
+## [33.17.1](https://github.com/streetsidesoftware/cspell-dicts/compare/cspell-dicts@33.17.0...cspell-dicts@33.17.1) (2026-10-03)
+
+
+### Updates and Bug Fixes
+
+* update en-common-misspellings and software-terms suggestions from crate-ci/typos main ([#5858](https://github.com/streetsidesoftware/cspell-dicts/issues/5858)) ([1c78d68](https://github.com/streetsidesoftware/cspell-dicts/commit/1c78d684d46705953c354d55b729f6cbbca18e1d))
+* Update README.md ([#5828](https://github.com/streetsidesoftware/cspell-dicts/issues/5828)) ([6622728](https://github.com/streetsidesoftware/cspell-dicts/commit/6622728be17f82b1752aa6f20b7385efc148a94b))
+
+
+### Dependencies
+
+* The following workspace dependencies were updated
+  * devDependencies
+    * @cspell/dict-cspell-bundle bumped to 2.0.79
+
 ## [33.17.0](https://github.com/streetsidesoftware/cspell-dicts/compare/cspell-dicts@33.16.0...cspell-dicts@33.17.0) (2026-10-02)
 
 
