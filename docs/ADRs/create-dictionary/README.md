@@ -84,3 +84,9 @@ That's the end state. It ships in stages, each usable on its own:
 | [0011](./0011-locale-or-file-type-never-both-any.md)                      | A dictionary sets its locale or its file type, never both `*`                       | Accepted           |
 | [0012](./0012-when-a-dictionary-is-stored-as-a-trie.md)                   | When a dictionary is stored as a trie                                               | Accepted           |
 | [0013](./0013-new-dictionaries-are-built.md)                              | A new dictionary is built when it's created                                         | Accepted           |
+
+## Open questions
+
+- **Hunspell depth (`maxDepth`).** The template sets `maxDepth: 1` on every source "to prevent initial builds from
+  taking too long". Existing dictionaries use 1 (17), 3 (5), 5 (2), 0 and 2 (one each), and 45 with Hunspell sources
+  set none.
