@@ -4,7 +4,8 @@ on:
   pull_request:
     paths:
       - 'dictionaries/**'
-      - 'packages/**'
+      # Only the packages a dictionary depends on: people-names uses en-freq. The rest run in test-packages.yml.
+      - 'packages/en-freq/**'
       - 'scripts/**'
       - 'package.json'
       - 'pnpm-lock.yaml'
