@@ -1,4 +1,4 @@
-# 0022. Prefer the source repository; an npm source is read from a CDN
+# 0022. Prefer the source repository; an npm source is read from jsDelivr
 
 Status: Accepted
 
@@ -15,14 +15,19 @@ Options weighed: always use the published npm package, which is what upstream ca
 releases ([0017](./0017-github-sources-follow-the-default-branch.md)), doesn't always track the words; or leave the
 choice to the contributor.
 
+jsDelivr was chosen over unpkg: it has several CDN providers behind it, a documented API for listing a package's files,
+and the repo already relies on it; the install instructions in 75 dictionary READMEs use its URLs
+(`scripts/lib/gen-dict-static-files.mts`). unpkg has had outages, and supporting both means two APIs.
+
 ## Decision
 
 We will:
 
 - **Sync from the source repository** when an upstream has one, as a GitHub source. For `dictionary-de`, that's
   `dictionaries/de/` in `wooorm/dictionaries`.
-- **Read an npm source from an npm CDN** when there's no usable repository, without adding it as a dependency or
-  downloading its tarball. `--define-source-npm` does this.
+- **Read an npm source from jsDelivr** when there's no usable repository, without adding it as a dependency or
+  downloading its tarball: files from `https://cdn.jsdelivr.net/npm/<pkg>@<version>/<path>`, and the file list from
+  `https://data.jsdelivr.com/v1/packages/npm/<pkg>@<version>`. `--define-source-npm` does this.
 
 ## Consequences
 
