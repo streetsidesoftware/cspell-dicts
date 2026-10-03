@@ -13,7 +13,8 @@ install take longer.
 
 Options weighed: always use the published npm package, which is what upstream calls a release but, as with GitHub
 releases ([0017](./0017-github-sources-follow-the-default-branch.md)), doesn't always track the words; or leave the
-choice to the contributor.
+choice to the contributor. For the version, pinning the one fetched at creation, or writing a range such as `^3.0.0`,
+were weighed; both need bumping by hand.
 
 jsDelivr was chosen over unpkg: it has several CDN providers behind it, a documented API for listing a package's files,
 and the repo already relies on it; the install instructions in 75 dictionary READMEs use its URLs
@@ -28,6 +29,8 @@ We will:
 - **Read an npm source from jsDelivr** when there's no usable repository, without adding it as a dependency or
   downloading its tarball: files from `https://cdn.jsdelivr.net/npm/<pkg>@<version>/<path>`, and the file list from
   `https://data.jsdelivr.com/v1/packages/npm/<pkg>@<version>`. `--define-source-npm` does this.
+- **Sync an npm source's latest published version.** An optional `version` in `sources.yaml` pins it. The version
+  fetched is recorded, so a sync with nothing new changes nothing. As for GitHub sources, changes are reviewed in a PR.
 
 ## Consequences
 
