@@ -65,6 +65,8 @@ That's the end state. It ships in stages, each usable on its own:
 
 ## Decisions
 
-| #                                                      | Title                                                      | Status   |
-| ------------------------------------------------------ | ---------------------------------------------------------- | -------- |
-| [0001](./0001-name-and-sources-on-the-command-line.md) | How the name and the sources are given on the command line | Accepted |
+| #                                                      | Title                                                        | Status   |
+| ------------------------------------------------------ | ------------------------------------------------------------ | -------- |
+| [0001](./0001-name-and-sources-on-the-command-line.md) | How the name and the sources are given on the command line   | Accepted |
+| [0002](./0002-word-lists-and-hunspell-files-mix.md)    | Word lists and Hunspell files can be mixed in one dictionary | Accepted |
+| [0003](./0003-additional-words-file.md)                | Every new dictionary gets `src/additional_words.txt`         | Accepted |
