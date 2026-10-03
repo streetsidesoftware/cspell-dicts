@@ -65,6 +65,8 @@ That's the end state. It ships in stages, each usable on its own:
 - **Setting up more complex dictionaries,** such as guarded splitting (`split` with `allowedSplitWords`) for large lists
   of code terms. The generator focuses on creating the initial dictionary; editing a complex one can come later, in it
   or another tool.
+- **Tuning a Hunspell dictionary's depth.** The generator sets a safe default
+  ([0015](./0015-hunspell-depth.md)); finding the right depth for a language is a later step.
 - **Making a dictionary public.** New dictionaries start private, and a maintainer publishes them later.
 
 ## Decisions
@@ -85,9 +87,4 @@ That's the end state. It ships in stages, each usable on its own:
 | [0012](./0012-when-a-dictionary-is-stored-as-a-trie.md)                   | When a dictionary is stored as a trie                                               | Accepted           |
 | [0013](./0013-new-dictionaries-are-built.md)                              | A new dictionary is built when it's created                                         | Accepted           |
 | [0014](./0014-test-options-are-hidden.md)                                 | Options for tests are hidden from `--help`                                          | Accepted           |
-
-## Open questions
-
-- **Hunspell depth (`maxDepth`).** The template sets `maxDepth: 1` on every source "to prevent initial builds from
-  taking too long". Existing dictionaries use 1 (17), 3 (5), 5 (2), 0 and 2 (one each), and 45 with Hunspell sources
-  set none.
+| [0015](./0015-hunspell-depth.md)                                          | Hunspell sources default to a depth of 1                                            | Accepted           |
