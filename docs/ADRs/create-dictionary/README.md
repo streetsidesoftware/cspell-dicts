@@ -50,7 +50,8 @@ That's the end state. It ships in stages, each usable on its own:
    `src/additional_words.txt`.
 2. **Sync:** a sync step for sources from npm or GitHub. It writes into the layout from stage 1, and saves maintainers
    the most cleanup.
-3. **Samples:** a `samples/` folder and the test that checks it.
+3. **Samples:** real files of the dictionary's type in `samples/`. Stage 1 already creates `samples/` with a static
+   word sample ([0009](./0009-a-static-sample-replaces-the-source-test.md)).
 
 ## Out of scope
 
@@ -78,3 +79,4 @@ That's the end state. It ships in stages, each usable on its own:
 | [0006](./0006-third-party-sources-are-defined-by-name.md)                 | Third-party sources are defined by name, with their files, license, README, and URL | Accepted           |
 | [0007](./0007-exclude-words-file.md)                                      | Every new dictionary gets `src/exclude_words.txt`                                   | Accepted           |
 | [0008](./0008-missing-sources-need-allow-missing-source.md)               | A missing source is an error unless `--allow-missing-source` is given               | Accepted           |
+| [0009](./0009-a-static-sample-replaces-the-source-test.md)                | A static sample of words replaces testing the source                                | Accepted           |
