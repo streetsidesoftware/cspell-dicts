@@ -1,5 +1,14 @@
 # Adding, removing, or fixing words
 
+<!--
+audience: technical contributor
+kind: guide
+level: comfortable with basic git and a terminal; doesn't read or write code
+-->
+
+> [!NOTE]
+> For contributors who can fork the repo and follow terminal steps. No coding needed.
+
 How to change the words in an existing dictionary. To add a whole new dictionary, see
 [Creating a dictionary](./new-dictionary.md). To update words that come from an upstream source, see
 [Upstream updates](./upstream-updates.md).
@@ -8,7 +17,7 @@ It is fine to change several words in one PR, as long as they are related: the s
 
 ## 1. Set up
 
-Check the [prerequisites](../build-and-packaging.md#prerequisites), then:
+Check the [prerequisites](../repository.md#prerequisites), then:
 
 ```sh
 pnpm install
@@ -73,7 +82,7 @@ Checks:
 - `dict/` (or the `.trie` file) changed the way you expected, and nothing else did.
 - `pnpm test` passes.
 - If other packages read this package's files (see
-  [Sources from other packages](../build-and-packaging.md#sources-from-other-packages)), build and test them too. For
+  [Using another package's files](../dictionary-packages.md#using-another-packages-files)), build and test them too. For
   example, after changing `en_shared`, build the English dictionaries.
 
 ## 6. Commit and open a PR

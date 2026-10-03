@@ -32,7 +32,7 @@ pnpm --filter @cspell/dict-git test
 
 Or `pnpm run build` and `pnpm test` inside `dictionaries/<name>/`.
 
-- `pnpm run create-dictionary` runs the interactive generator. Run it from the repo root.
+- `pnpm run create-dictionary` creates a dictionary package, asking questions as it goes. Run it from the repo root.
 - Don't run `pnpm run build` or `pnpm run build:all` at the root unless asked. They rebuild or sync every package.
 - `pnpm run lint` writes fixes. Check the diff afterwards.
 - Before finishing, run `pnpm run lint`, and `pnpm test` in each package you changed.
@@ -41,8 +41,9 @@ Or `pnpm run build` and `pnpm test` inside `dictionaries/<name>/`.
 
 Read the doc before changing that area. These are written for people too.
 
-- [`docs/build-and-packaging.md`](docs/build-and-packaging.md): workspace and package layout, sources shared between
-  packages, generated files, and CI.
+- [`docs/dictionary-packages.md`](docs/dictionary-packages.md): what a dictionary package contains and why, sources,
+  building, and tests.
+- [`docs/repository.md`](docs/repository.md): prerequisites, the workspace, generated files, and CI.
 - [`docs/guides/word-changes.md`](docs/guides/word-changes.md): where words go, the word format, and the steps.
 - [`docs/guides/new-dictionary.md`](docs/guides/new-dictionary.md): creating a dictionary package.
 - [`docs/guides/upstream-updates.md`](docs/guides/upstream-updates.md): `sync` scripts and upstream sources.
@@ -57,13 +58,15 @@ These rules are written for people in the linked docs. Read the section before w
 
 - **Generated files:** never edit them by hand. That includes `dict/`, `.trie` files, `checksum.txt`, synced upstream
   files, `@@inject` sections, `static/`, changelogs, and `release-please-config.json`. The list and the command for each
-  are in [Generated files](docs/build-and-packaging.md#generated-files).
+  are in [Generated files](docs/repository.md#generated-files).
 - **Word changes:** edit `src/`, then sort, build the package, and commit `src/` and `dict/` together. Build the
   packages that read from it too. See [Word changes](docs/guides/word-changes.md).
 - **Comments:** few, short, and accurate. Leave existing comments alone unless you are changing that code. See
   [Comments](docs/style.md#comments).
 - **Invisible characters:** write them as escape sequences in code, config, and docs. Dictionary data keeps them
   literal. See [Invisible characters](docs/style.md#invisible-characters).
+- **Audience:** before editing a doc in `docs/` or `CONTRIBUTING.md`, read the audience header under its title and
+  write for that reader. A new doc gets a header. See [Audience](docs/style.md#audience).
 - **Writing for users:** package READMEs are npmjs.com pages, so links are absolute `https://` URLs. See
   [Writing for users](docs/style.md#writing-for-users).
 - **Licenses:** a new source's license must fit the package's. If it is missing, unclear, or would change the package's
@@ -71,7 +74,7 @@ These rules are written for people in the linked docs. Read the section before w
 - **Releases:** never edit `.release-please-manifest.json` or add a new package to it. See
   [Releasing](docs/releasing.md#rules).
 - **Scripts:** write them in TypeScript (`.mts`, run with `node`), not shell or `jq`. See
-  [Scripts](docs/build-and-packaging.md#scripts).
+  [Scripts](docs/repository.md#scripts).
 
 ### Docs for people
 

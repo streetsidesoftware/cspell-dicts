@@ -1,5 +1,14 @@
 # Contributing
 
+<!--
+audience: GitHub web contributor, technical contributor
+kind: reference
+level: none to file an issue or edit a file on GitHub; basic git and a terminal for changes that need a build
+-->
+
+> [!NOTE]
+> For anyone contributing, from filing an issue to opening a PR. No coding needed.
+
 Thanks for considering a contribution to cspell-dicts. You can help by:
 
 - fixing or adding words in a dictionary
@@ -10,7 +19,7 @@ Thanks for considering a contribution to cspell-dicts. You can help by:
 ## TL;DR
 
 - **Prerequisites:** Node 22.19 or later, and `corepack enable` for pnpm. See
-  [Prerequisites](./docs/build-and-packaging.md#prerequisites).
+  [Prerequisites](./docs/repository.md#prerequisites).
 - **Set up:** `pnpm install`, then `pnpm run prepare:dictionaries`. pnpm only: npm and yarn are blocked.
 - **Words:** edit the word lists in `dictionaries/<name>/src/`, never the built files in `dict/`. Then sort, build the
   package, and commit both. See [Adding, removing, or fixing words](./docs/guides/word-changes.md).
@@ -26,7 +35,8 @@ Thanks for considering a contribution to cspell-dicts. You can help by:
 - [Adding, removing, or fixing words](./docs/guides/word-changes.md), including the word format
 - [Creating a dictionary](./docs/guides/new-dictionary.md)
 - [Upstream updates](./docs/guides/upstream-updates.md)
-- [Build and packaging](./docs/build-and-packaging.md), including the files that are generated
+- [Dictionary packages](./docs/dictionary-packages.md): what a dictionary package contains
+- [Repository](./docs/repository.md), including the files that are generated
 - [Commits and pull requests](./docs/commits-and-pull-requests.md)
 - [Releasing](./docs/releasing.md)
 - [Style](./docs/style.md)

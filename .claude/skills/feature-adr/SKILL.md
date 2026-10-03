@@ -47,7 +47,8 @@ those decisions while they're still cheap to change.
 4. **Prepare.**
    - Add the feature's row to the Features table, and create its `README.md` from `docs/ADRs/template.md`.
    - Read `docs/glossary.md` and `docs/ADRs/glossary.md`, and reuse existing terms.
-   - Read `docs/build-and-packaging.md`, so options account for sources shared between packages and generated files.
+   - Read `docs/dictionary-packages.md` and `docs/repository.md`, so options account for sources shared between packages
+     and generated files.
 
 5. **Interview, starting with why.** Before any option, ask:
    - What problem prompted this, and why now? Offer the five whys: ask "why?" of each answer until the underlying

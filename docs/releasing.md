@@ -1,5 +1,11 @@
 # Releasing
 
+<!--
+audience: maintainer
+kind: guide
+level: has write access and an npm account with publish rights; runs git, gh, and npm
+-->
+
 > [!WARNING]
 > These instructions are for maintainers. Contributors don't need to do any of this: maintainers and workflows handle
 > releases and publishing.
@@ -116,7 +122,7 @@ To run it:
 
 Each package's `files` field lists what npm publishes: `cspell-ext.json` and the built dictionary. New dictionaries
 publish the compressed file, such as `dict/<name>.txt.gz`. Word lists in `src/` aren't published, but upstream license
-files are, such as `src/hunspell/license`.
+files are, such as `src/hunspell/license`. See [Dictionary packages](./dictionary-packages.md).
 
 ## Fixing a changelog entry after merge
 

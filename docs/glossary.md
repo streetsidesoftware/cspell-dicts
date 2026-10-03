@@ -1,5 +1,14 @@
 # Glossary
 
+<!--
+audience: GitHub web contributor, technical contributor, developer, maintainer
+kind: reference
+level: none; write for the GitHub web contributor where possible, explaining technical terms rather than avoiding them
+-->
+
+> [!NOTE]
+> For contributors at every level who want to understand a term or concept used in this repo.
+
 Terms used across this repo's docs. Alphabetical.
 
 ## `allowedSplitWords`

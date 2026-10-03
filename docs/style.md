@@ -1,5 +1,14 @@
 # Style
 
+<!--
+audience: technical contributor
+kind: reference
+level: comfortable with basic git and a terminal; doesn't read or write code
+-->
+
+> [!NOTE]
+> For anyone writing words, docs, or code in this repo.
+
 Prettier and ESLint handle formatting (`pnpm run lint` fixes what it can). Beyond that:
 
 ## Comments
@@ -37,10 +46,49 @@ These rules apply to the root `README.md`, every `dictionaries/*/README.md`, and
 - Label an example that is a whole file with its filename in bold, directly above the code block, for example
   **`cspell.json`** or **`.vscode/settings.json`**.
 - Never edit between `@@inject` markers. Change the source: the Update README workflow regenerates them after the PR
-  lands. See [Generated files](./build-and-packaging.md#generated-files).
+  lands. See [Generated files](./repository.md#generated-files).
 - In a Markdown file with deliberate misspellings, list them in a `cspell:ignore` comment at the end of the file.
 
 ## Docs for people
 
 `docs/` and `CONTRIBUTING.md` are written for people. In a guide, give each step a heading and list its checks one per
 item.
+
+### Audience
+
+Each doc is written for a clear target audience, named in a header right below its title. List more than one audience
+only when the doc serves each of them:
+
+```markdown
+# Creating a dictionary
+
+<!--
+audience: technical contributor
+kind: guide
+level: comfortable with basic git and a terminal; doesn't read or write code
+-->
+
+> [!NOTE]
+> For contributors who can fork the repo and follow terminal steps. No coding needed.
+```
+
+The HTML comment is for writers and AI agents; GitHub doesn't show it. The `> [!NOTE]` below it tells readers whether
+the doc is for them. A maintainer-only doc uses `> [!WARNING]` instead, to warn others off. Write for the reader the
+header names, and leave out what they don't need.
+
+**Audiences:**
+
+- **CSpell user:** uses the dictionaries in cspell or VS Code, and reads package READMEs. Has no clone.
+- **GitHub web contributor:** works only in GitHub's web UI: files issues, edits a file in the web editor, and opens
+  PRs. No clone, no terminal.
+- **Technical contributor:** forks and clones the repo, and runs the steps in a terminal. Knows basic git. Doesn't read
+  or write code, and is willing to follow clear steps.
+- **Developer:** reads and writes the repo's scripts, configs, and workflows.
+- **Maintainer:** has write access. Reviews, merges, publishes, and runs the repo's maintenance.
+
+**Kinds:**
+
+- **Guide:** steps to follow, in order, for one task.
+- **Reference:** facts to look up, such as a layout, rules, or terms.
+
+**Level:** what the reader is expected to know or be able to do, in a few words.
