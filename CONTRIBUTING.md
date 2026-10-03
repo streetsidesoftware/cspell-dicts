@@ -9,36 +9,13 @@ level: none to file an issue or edit a file on GitHub; basic git and a terminal 
 > [!NOTE]
 > For anyone contributing, from filing an issue to opening a PR. No coding needed.
 
-Thanks for considering a contribution to cspell-dicts. You can help by:
+Thanks for considering a contribution to cspell-dicts.
 
-- fixing or adding words in a dictionary
-- creating a new dictionary
-- filing issues about using the dictionaries
-- helping answer issues
+## Where to start
 
-## TL;DR
+- **Suggest a word or report a problem:** [open an issue](https://github.com/streetsidesoftware/cspell-dicts/issues/new).
+- **Add, remove, or fix words:** [Adding, removing, or fixing words](./docs/guides/word-changes.md).
+- **Create a dictionary:** [Creating a dictionary](./docs/guides/new-dictionary.md).
+- **Help answer questions:** [the open issues](https://github.com/streetsidesoftware/cspell-dicts/issues).
 
-- **Prerequisites:** Node 22.19 or later, and `corepack enable` for pnpm. See
-  [Prerequisites](./docs/repository.md#prerequisites).
-- **Set up:** `pnpm install`, then `pnpm run prepare:dictionaries`. pnpm only: npm and yarn are blocked.
-- **Words:** edit the word lists in `dictionaries/<name>/src/`, never the built files in `dict/`. Then sort, build the
-  package, and commit both. See [Adding, removing, or fixing words](./docs/guides/word-changes.md).
-- **A new dictionary:** run `pnpm create-dictionary`. See [Creating a dictionary](./docs/guides/new-dictionary.md).
-- **Before a PR:** `pnpm run lint` (fixes what it can) and `pnpm test` in the packages you changed.
-- **Commits:** [Conventional Commits](https://www.conventionalcommits.org/). Adding or removing words is `fix:`, a new
-  dictionary is `feat:`, and a scope names the package directory: `fix(companies): add Sourcegraph`. See
-  [Commits and pull requests](./docs/commits-and-pull-requests.md).
-- **PR descriptions:** short, with a `## Summary` that stands on its own.
-
-## More docs
-
-- [Adding, removing, or fixing words](./docs/guides/word-changes.md), including the word format
-- [Creating a dictionary](./docs/guides/new-dictionary.md)
-- [Upstream updates](./docs/guides/upstream-updates.md)
-- [Dictionary packages](./docs/dictionary-packages.md): what a dictionary package contains
-- [Repository](./docs/repository.md), including the files that are generated
-- [Commits and pull requests](./docs/commits-and-pull-requests.md)
-- [Releasing](./docs/releasing.md)
-- [Style](./docs/style.md)
-- [Glossary](./docs/glossary.md)
-- [ADRs](./docs/ADRs/README.md)
+Every doc, grouped by who it's for, is listed in [Documentation](./docs/README.md).
