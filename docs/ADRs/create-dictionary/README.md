@@ -73,12 +73,4 @@ That's the end state. It ships in stages, each usable on its own:
 | [0004](./0004-each-hunspell-source-gets-its-own-folder.md)                | Each Hunspell source gets its own folder in `src/`                                  | Accepted           |
 | [0005](./0005-a-folder-source-keeps-only-its-words-license-and-readme.md) | A folder source keeps only its word lists, license, and README                      | Superseded by 0006 |
 | [0006](./0006-third-party-sources-are-defined-by-name.md)                 | Third-party sources are defined by name, with their files, license, README, and URL | Accepted           |
-
-## Open questions
-
-- **A default `src/exclude_words.txt`.** Requested through the docs session working on the word-changes guide (#5852):
-  every new dictionary gets `src/exclude_words.txt`, listed under the target's `excludeWordsFrom`, so a word that comes
-  from an upstream source can be left out (deleting it from synced files doesn't last). 10 dictionaries use
-  `excludeWordsFrom` today, with three file names: `src/exclude-words.txt` (6), `src/exclude-terms.txt` (3), and
-  `src/exclude_words.txt` (1). Still to decide: whether it's always created or has a `--no-exclude-words`, and its
-  header text.
+| [0007](./0007-exclude-words-file.md)                                      | Every new dictionary gets `src/exclude_words.txt`                                   | Accepted           |
