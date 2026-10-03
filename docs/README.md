@@ -11,7 +11,6 @@ level: none
 
 ## GitHub web contributors
 
-- [Contributing](../CONTRIBUTING.md): where to start
 - [Glossary](./glossary.md): the terms used in these docs
 
 ## Technical contributors
