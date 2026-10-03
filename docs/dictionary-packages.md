@@ -71,7 +71,8 @@ The build doesn't copy the sources line by line. It generates the dictionary's w
 
 - **Hunspell sources are expanded.** Each word in the `.dic` file is combined with the prefixes and suffixes its `.aff`
   file allows, so one entry can become several words, such as `walk`, `walked`, and `walks`.
-- **Word lists can be split.** With `split: true`, an entry such as `FILE_ERROR_CODE` is stored as its parts.
+- **Word lists can be split.** With `split: true`, an entry such as `FILE_ERROR_CODE` can be stored as its parts. See
+  [Splitting with `allowedSplitWords`](#splitting-with-allowedsplitwords).
 
 Two files correct what the build generates:
 
