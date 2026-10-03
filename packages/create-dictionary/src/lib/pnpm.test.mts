@@ -27,10 +27,10 @@ describe('setUpPackage', () => {
         assert.doesNotThrow(() => setUpPackage(packageDir, repo, { install: false, build: false }));
     });
 
-    it('names the failed step and the package', () => {
+    it('names the failed step, and says the dictionary was created', () => {
         assert.throws(
             () => setUpPackage(packageDir, repo, { install: false, build: true }),
-            /pnpm run build failed in dictionaries[\\/]pkg/,
+            /pnpm run build failed, but the dictionary was created in dictionaries[\\/]pkg\. Either finish it there \(pnpm install, then pnpm run build\), or delete dictionaries[\\/]pkg/,
         );
     });
 });
