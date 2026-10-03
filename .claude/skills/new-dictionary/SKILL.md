@@ -37,6 +37,10 @@ build half follows `docs/guides/new-dictionary.md`; read it too.
    - Ask the way `feature-adr` step 5 describes: lettered options showing the cspell config a user would write,
      checking facts before asking, and letting the user defer. Don't invent decisions.
    - Keep a list of the decisions, one line each, for the PR description.
+   - **When it's on** is set by `locale` and `languageId`:
+     - A natural language dictionary sets `locale`, such as `en-AU`, and leaves `languageId` as `*`.
+     - Any other dictionary sets `languageId`, such as `ruby`, and leaves `locale` as `*`.
+     - Never both `*`: that turns the dictionary on for every file in every language. If neither fits, ask the user.
    - **Decide whether it needs ADRs** once the sources and the build are clear, and tell the user why. If it does,
      follow `feature-adr` steps 4–7: bootstrap the ADR directory, write and commit an ADR for each decision made so
      far and each one after, and keep the glossary in sync.
@@ -57,8 +61,9 @@ build half follows `docs/guides/new-dictionary.md`; read it too.
      pnpm run create-dictionary --yes <name> <path/to/source/words> --friendly-name "<Friendly Name>" --description "<description>" --locale <locale> --language-id <file type> --no-trie --build
      ```
 
-     Use `--trie` for Hunspell sources and large lists. Run `pnpm run create-dictionary --help` to list the options. If it
-     fails on a missing or invalid value, fix that option and run it again.
+     Set `--locale` and `--language-id` as decided in step 4. Use `--trie` for Hunspell sources and large lists. Run
+     `pnpm run create-dictionary --help` to list the options. If it fails on a missing or invalid value, fix that option
+     and run it again.
 
    - `cspell-ext.json`'s `dictionaryDefinitions` and `languageSettings` match the design exactly: IDs, `languageId`,
      `locale`.
