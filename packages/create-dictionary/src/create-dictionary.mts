@@ -10,11 +10,14 @@ import { fileURLToPath } from 'node:url';
 import { confirm, input } from '@inquirer/prompts';
 
 import { type Answers, optionForAnswer, parseCommandLine } from './lib/options.mts';
+import { toPackageName } from './lib/package-name.mts';
 import { readTakenNames, type TakenNames } from './lib/taken-names.mts';
+import { fillTemplate } from './lib/template.mts';
 
-const rootDir = findRepoRoot(fileURLToPath(new URL('.', import.meta.url)));
 const templateDir = fileURLToPath(new URL('../templates/', import.meta.url));
-const dictionariesDir = join(rootDir, 'dictionaries');
+// Set in main(), from --root or the repo this command is in.
+let rootDir = '';
+let dictionariesDir = '';
 
 const templateFiles = [
     'package.json',
@@ -35,11 +38,14 @@ const windowsReservedNames = /^(con|prn|aux|nul|com[1-9]|lpt[1-9])$/i;
 type Validate = (value: string) => string | true;
 
 async function main(): Promise<void> {
-    const { answers: given, yes, allowMissingSource } = parseCommandLine(process.argv.slice(2));
+    const { answers: given, yes, allowMissingSource, root, skipInstall } = parseCommandLine(process.argv.slice(2));
     // `pnpm run` starts in the repo root; resolve the source from where the command was typed.
     const cwd = process.env.INIT_CWD ?? process.cwd();
+    rootDir = root ? resolve(cwd, root) : findRepoRoot(fileURLToPath(new URL('.', import.meta.url)));
+    dictionariesDir = join(rootDir, 'dictionaries');
+    if (!existsSync(dictionariesDir)) throw new Error(`no dictionaries folder in ${rootDir}`);
     const answers = await getAnswers(given, yes, allowMissingSource, cwd);
-    createPackage(answers, cwd);
+    createPackage(answers, cwd, skipInstall);
 }
 
 type Settings = Required<Answers> & {
@@ -169,7 +175,7 @@ function hunspellPair(file: string): string[] {
     return hunspellExtensions.map((e) => join(dirname(file), basename(file, ext) + e));
 }
 
-function createPackage(answers: Settings, cwd: string): void {
+function createPackage(answers: Settings, cwd: string, skipInstall: boolean): void {
     const { name, friendlyName, useTrie } = answers;
     const packageDir = join(dictionariesDir, name);
     const packageName = toPackageName(name);
@@ -210,7 +216,7 @@ function createPackage(answers: Settings, cwd: string): void {
     }
     write(dstFileName, '# dest');
 
-    run(packageDir, ['install']);
+    if (!skipInstall) run(packageDir, ['install']);
     if (answers.doBuild) {
         run(packageDir, ['run', 'build']);
         run(packageDir, ['run', 'prepare:dictionary']);
@@ -226,19 +232,6 @@ function createPackage(answers: Settings, cwd: string): void {
     function write(file: string, content: string): void {
         writeFileSync(created(file), content);
     }
-}
-
-/**
- * Replace each `<%= key %>` with its value, escaped for the file type.
- */
-function fillTemplate(template: string, values: Record<string, string>, ext: string): string {
-    return template.replaceAll(/<%= (\w+) %>/g, (_, key: string) => {
-        const value = values[key];
-        if (value === undefined) throw new Error(`Unknown template value: ${key}`);
-        if (ext === '.json') return JSON.stringify(value).slice(1, -1);
-        if (ext === '.yaml') return value.replaceAll("'", "''");
-        return value;
-    });
 }
 
 /**
@@ -274,11 +267,6 @@ function nameValidator(taken: TakenNames): Validate {
         if (idOwner) return `the dictionary ID ${packageName} is already used by ${idOwner}. Choose another name.`;
         return true;
     };
-}
-
-/** The package name and dictionary ID: lowercase, with characters other than a-z, 0-9, and "-" replaced by "-". */
-function toPackageName(name: string): string {
-    return name.toLowerCase().replaceAll(/[^a-z0-9-]/g, '-');
 }
 
 function toFriendlyName(name: string): string {

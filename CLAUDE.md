@@ -14,6 +14,7 @@ A fresh clone has no `node_modules`. pnpm only: the `preinstall` script blocks n
 pnpm install
 pnpm run prepare:dictionaries      # build what every package needs before tests or cspell trace work
 pnpm test                          # every package's test script; slow
+pnpm test:packages                 # tests of the internal packages in packages/
 pnpm run sort                      # sort the source word lists in sort-source.config.json
 pnpm run lint                      # eslint --fix, prettier -w, type check, then cspell
 pnpm run lint-ci                   # the same checks without fixing
@@ -36,7 +37,8 @@ Or `pnpm run build` and `pnpm test` inside `dictionaries/<name>/`.
   `new-dictionary` skill.
 - Don't run `pnpm run build` or `pnpm run build:all` at the root unless asked. They rebuild or sync every package.
 - `pnpm run lint` writes fixes. Check the diff afterwards.
-- Before finishing, run `pnpm run lint`, and `pnpm test` in each package you changed.
+- Before finishing, run `pnpm run lint`, and `pnpm test` in each package you changed (`pnpm test:package` in
+  `packages/*`).
 
 ## Where things are
 

@@ -17,6 +17,10 @@ export interface CommandLine {
     yes: boolean;
     /** Create an empty word list if the source is missing. */
     allowMissingSource: boolean;
+    /** The repo to create the package in. */
+    root?: string;
+    /** Don't run `pnpm install` in the new package. */
+    skipInstall: boolean;
 }
 
 /** The option that answers each prompt, for error messages. */
@@ -41,6 +45,8 @@ interface Options {
     trie?: boolean;
     build?: boolean;
     allowMissingSource?: boolean;
+    root?: string;
+    skipInstall?: boolean;
     yes?: boolean;
 }
 
@@ -70,6 +76,8 @@ export function parseCommandLine(argv: string[]): CommandLine {
         .option('--no-trie', 'store as plain text; default for other sources')
         .option('--build', 'build the dictionary after creating it; default for existing Hunspell sources')
         .option('--no-build', 'do not build it')
+        .option('--root <dir>', 'the repo to create the package in; default: the repo this command is in')
+        .option('--skip-install', 'do not run pnpm install in the new package')
         .option('-y, --yes', 'use the defaults for anything not given, and never prompt')
         .addHelpText(
             'after',
@@ -97,7 +105,13 @@ export function parseCommandLine(argv: string[]): CommandLine {
         doBuild: opts.build,
     };
 
-    return { answers, yes: !!opts.yes, allowMissingSource: !!opts.allowMissingSource };
+    return {
+        answers,
+        yes: !!opts.yes,
+        allowMissingSource: !!opts.allowMissingSource,
+        root: opts.root,
+        skipInstall: !!opts.skipInstall,
+    };
 
     function oneOf(name: string, arg: string | undefined, option: string | undefined): string | undefined {
         if (arg !== undefined && option !== undefined && arg !== option) {
