@@ -674,7 +674,11 @@ importers:
 
   dictionaries/sl_SI: {}
 
-  dictionaries/software-terms: {}
+  dictionaries/software-terms:
+    devDependencies:
+      '@cspell/dict-en-common-misspellings':
+        specifier: workspace:^
+        version: link:../en-common-misspellings
 
   dictionaries/software-terms/scripts:
     dependencies:
