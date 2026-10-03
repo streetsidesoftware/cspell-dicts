@@ -92,6 +92,7 @@ That's the end state. It ships in stages, each usable on its own:
 | [0017](./0017-github-sources-follow-the-default-branch.md)                | A GitHub source follows its default branch                                          | Accepted           |
 | [0018](./0018-remote-sources-are-fetched-first.md)                        | Remote sources are fetched first, and any failure stops creation                    | Accepted           |
 | [0019](./0019-remote-sources-are-npm-and-github.md)                       | Remote sources come from npm or GitHub; download pages are local sources            | Accepted           |
+| [0020](./0020-sync-steps-live-in-package-json.md)                         | Sync steps live in the dictionary's `package.json`                                  | Accepted           |
 
 ## Provisional names
 
