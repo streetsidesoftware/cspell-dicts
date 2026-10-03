@@ -74,3 +74,4 @@ That's the end state. It ships in stages, each usable on its own:
 | [0005](./0005-a-folder-source-keeps-only-its-words-license-and-readme.md) | A folder source keeps only its word lists, license, and README                      | Superseded by 0006 |
 | [0006](./0006-third-party-sources-are-defined-by-name.md)                 | Third-party sources are defined by name, with their files, license, README, and URL | Accepted           |
 | [0007](./0007-exclude-words-file.md)                                      | Every new dictionary gets `src/exclude_words.txt`                                   | Accepted           |
+| [0008](./0008-missing-sources-need-allow-missing-source.md)               | A missing source is an error unless `--allow-missing-source` is given               | Accepted           |
