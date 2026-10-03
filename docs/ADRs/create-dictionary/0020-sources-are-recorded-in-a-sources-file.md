@@ -42,7 +42,8 @@ sources:
 ```
 
 - The generator writes it from the `--define-source*` and `--add-source-*` options.
-- `package.json` has one `sync` script that runs the sync command, and `conditional-build` runs `sync` first.
+- `package.json` has one `sync` script that runs the sync command. When it runs is decided in
+  [0023](./0023-sources-sync-weekly.md).
 - The file is listed in `files`, so it's published with the dictionary. A comment at its top says what it is and points
   to `src/README.md`.
 - The sync command lives in `scripts/`, next to `sync-github-files`, where the sync tooling already is. For each source it
