@@ -3,6 +3,9 @@ import chalk from 'chalk';
 import yosay from 'yosay';
 import { extname, resolve, join, dirname, basename } from 'path';
 import { mkdir } from 'node:fs/promises';
+import { existsSync } from 'node:fs';
+
+import { optionForAnswer } from './options.mts';
 
 function mkdirp(p) {
     return mkdir(p, { recursive: true });
@@ -11,33 +14,13 @@ function mkdirp(p) {
 const dictionaryDir = 'dictionaries';
 
 export default class extends Generator {
-    constructor(args, opts) {
-        super(args, opts);
-
-        this.argument('name', {
-            desc: 'Name of Dictionary',
-            type: String,
-            required: false,
-        });
-
-        this.argument('source', {
-            desc: 'Source file for the dictionary. It will be copied to into the local dictionary folder.',
-            type: String,
-            required: false,
-            default: '',
-        });
-    }
-
     async prompting() {
-        // Have Yeoman greet the user.
-        this.log(yosay('Welcome to the ' + chalk.red('cspell-dicts') + ' generator!'));
-
-        const props = await this.prompt([
+        const props = await this._ask([
             {
                 type: 'input',
                 name: 'name',
                 message: 'The package directory name (en_US, medical-terms)',
-                default: dirName(this.options.name || ''), // Default to current folder name
+                validate: validateName,
             },
             {
                 type: 'input',
@@ -55,7 +38,7 @@ export default class extends Generator {
                 type: 'input',
                 name: 'srcFile',
                 message: 'Source File Name',
-                default: (props) => this.options.source || props.name + '.txt',
+                default: (props) => props.name + '.txt',
             },
             {
                 type: 'input',
@@ -83,6 +66,11 @@ export default class extends Generator {
                 default: (props) => this.fs.exists(props.srcFile) && ['.dic', '.aff'].includes(extname(props.srcFile)),
             },
         ]);
+
+        const dir = join(dictionaryDir, props.name);
+        if (this.noPrompts && existsSync(this.destinationPath(dir))) {
+            throw new Error(`${dir} already exists. Remove it or choose another name.`);
+        }
 
         props.fileExt = props.useTrie ? 'trie' : 'txt';
         props.command = props.useTrie ? 'compile-trie' : 'compile';
@@ -121,6 +109,38 @@ export default class extends Generator {
         props.year = new Date().getFullYear();
 
         this.props = Object.assign({}, props, props);
+    }
+
+    /**
+     * Prompt for the answers not given on the command line, in order. With `--yes`, use the defaults instead.
+     */
+    async _ask(questions) {
+        const given = this.options.answers ?? {};
+        const yes = !!this.options.yes || questions.every((q) => given[q.name] !== undefined);
+        this.noPrompts = yes;
+        const missing = questions.filter((q) => given[q.name] === undefined).map((q) => optionForAnswer[q.name]);
+        if (!yes && !process.stdin.isTTY) {
+            throw new Error(`No terminal to prompt in. Give --yes, or all of: ${missing.join(', ')}.`);
+        }
+        if (!yes) {
+            this.log(yosay('Welcome to the ' + chalk.red('cspell-dicts') + ' generator!'));
+        }
+
+        const answers = {};
+        for (const q of questions) {
+            const value = given[q.name] ?? (yes ? defaultValue(q, answers) : undefined);
+            if (value === undefined && !yes) {
+                const def = typeof q.default === 'function' ? () => q.default(answers) : q.default;
+                Object.assign(answers, await this.prompt([{ ...q, default: def }]));
+                continue;
+            }
+            const valid = q.validate ? q.validate(value) : true;
+            if (valid !== true) {
+                throw new Error(`${optionForAnswer[q.name]}: ${valid}`);
+            }
+            answers[q.name] = value;
+        }
+        return answers;
     }
 
     async writing() {
@@ -174,8 +194,13 @@ export default class extends Generator {
     }
 }
 
-function dirName(name) {
-    return name.toLowerCase().replace(/[^-_a-z0-9]/g, '-');
+function defaultValue(question, answers) {
+    return typeof question.default === 'function' ? question.default(answers) : question.default;
+}
+
+function validateName(name) {
+    if (!name) return 'missing. Give the package directory name, such as en_AU or ruby.';
+    return /^[\w-]+$/.test(name) || `"${name}" can only have letters, digits, "_", and "-".`;
 }
 
 function friendlyName(name) {

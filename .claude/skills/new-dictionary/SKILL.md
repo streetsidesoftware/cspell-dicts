@@ -51,8 +51,15 @@ build half follows `docs/guides/new-dictionary.md`; read it too.
 
 6. **Build the package.** Follow `docs/guides/new-dictionary.md` from step 4. The rules below are the ones most easily
    missed.
-   - From the repo root, run `pnpm run create-dictionary <name> <path/to/source/words>`. It prompts
-     interactively; answer from the design.
+   - From the repo root, run it with `--yes` and every answer from the design as an option, so it never prompts:
+
+     ```sh
+     pnpm run create-dictionary --yes <name> <path/to/source/words> --friendly-name "<Friendly Name>" --description "<description>" --locale <locale> --language-id <file type> --no-trie --build
+     ```
+
+     Use `--trie` for Hunspell sources and large lists. Run `pnpm run create-dictionary --help` to list the options. If it
+     fails on a missing or invalid value, fix that option and run it again.
+
    - `cspell-ext.json`'s `dictionaryDefinitions` and `languageSettings` match the design exactly: IDs, `languageId`,
      `locale`.
    - In `package.json`, add `keywords`, and check that `files` lists every built file and upstream license file. Leave
