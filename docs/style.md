@@ -54,6 +54,8 @@ These rules apply to the root `README.md`, every `dictionaries/*/README.md`, and
 `docs/` and `CONTRIBUTING.md` are written for people. In a guide, give each step a heading and list its checks one per
 item.
 
+The entry point is `CONTRIBUTING.md`: it links to the docs, and no doc links back to it.
+
 ### Audience
 
 Each doc is written for a clear target audience, named in a header right below its title. List more than one audience
