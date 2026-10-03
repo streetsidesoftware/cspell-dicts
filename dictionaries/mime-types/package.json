@@ -44,7 +44,6 @@
     "prepublishOnly": "echo pre-publish",
     "sync": "sync-github-files jshttp/mime-db --tag=master --filter \"src/*.*\" --filter LICENSE -o src/mime-db",
     "postsync": "node ./scripts/mime-db-to-txt.mjs",
-    "sync:manual": "GITHUB_TOKEN=$(gh auth token) pnpm sync",
     "test": "shx head -n 100 src/mime-types.txt | cspell --dictionary=mime-types stdin"
   },
   "devDependencies": {

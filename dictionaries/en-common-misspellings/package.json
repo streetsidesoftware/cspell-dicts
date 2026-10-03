@@ -40,7 +40,6 @@
     "prepare:dictionary": "pnpm run build",
     "prepublishOnly": "echo OK",
     "sync": "sync-github-files crate-ci/typos crates/typos-dict/assets/words.csv LICENSE-MIT --tag=main -o src/crate-ci/typos",
-    "sync:manual": "GITHUB_TOKEN=$(gh auth token) pnpm sync",
     "test": "cspell ."
   },
   "dependencies": {},

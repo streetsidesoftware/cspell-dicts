@@ -43,7 +43,6 @@
     "prepare:dictionary": "echo OK",
     "prepublishOnly": "echo OK",
     "sync": "sync-github-files MinhasKamal/BengaliDictionary --filter BengaliWordList_439.txt --filter LICENSE --filter README.md  --tag=master -o src/BengaliDictionary",
-    "sync:manual": "GITHUB_TOKEN=$(gh auth token) pnpm sync",
     "test": "pnpm run test:words && pnpm run test:text",
     "test:text": "cspell samples",
     "test:words": "head -n 1000 \"src/BengaliDictionary/BengaliWordList_439.txt\" | cspell -c ./cspell.json \"--locale=bn\" \"--languageId=*\" stdin"
