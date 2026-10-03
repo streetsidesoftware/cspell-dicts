@@ -22,8 +22,8 @@ edit those files by hand: the next sync overwrites them.
   copied, so updating the dependency updates the source.
 - **From a GitHub repository.** The script runs `sync-github-files <owner>/<repo> [paths...]` with
   `--tag <ref>` or `--latest`, and records what it fetched in `.sync-github-files.json`. `--latest` and a branch such as
-  `main` follow upstream; a tag or commit is pinned until someone changes the script. It needs a GitHub token: run
-  `pnpm run sync:manual` where the package has it, or set `GITHUB_TOKEN` (`gh auth token` prints one).
+  `main` follow upstream; a tag or commit is pinned until someone changes the script. Run it with `pnpm run sync`. It
+  needs a GitHub token: it uses `GITHUB_TOKEN` if set, or else `gh auth token` when you're logged in to the GitHub CLI.
 - **Other scripts.** A few packages run their own script, such as `ar`'s `scripts/sync.sh`, or `npm`'s
   `update-dictionary`, which regenerates its package list.
 
