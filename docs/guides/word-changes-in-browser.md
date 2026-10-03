@@ -30,9 +30,6 @@ It is fine to change several words in one PR, as long as they are related: the s
 
 Pick the dictionary as described in [The dictionary](../word-lists.md#the-dictionary).
 
-To see whether a dictionary already has a word, search the repo on GitHub, such as
-`repo:streetsidesoftware/cspell-dicts path:dictionaries/ Sourcegraph`.
-
 ## 2. Find the source file
 
 Open the dictionary's folder under
@@ -52,6 +49,7 @@ To remove a word that comes from an upstream source, don't edit anything: say so
 
 - Title it with `fix:` and the dictionary's folder name, such as `fix(companies): add Sourcegraph`.
 - Say which words changed and why, with a source for words that aren't obvious.
+- Say where cspell flagged the words: the kind of file, such as Python or Markdown, and the editor or tool.
 - Leave **Allow edits by maintainers** checked, so the list can be sorted for you.
 
 After you open it:
