@@ -6,7 +6,8 @@ kind: reference
 level: reads and writes TypeScript, package.json scripts, and GitHub Actions workflows
 -->
 
-For developers working on the repo's scripts, configs, and CI.
+> [!NOTE]
+> For developers working on the repo's scripts, configs, and CI.
 
 How the repo is set up: the tools it needs, the workspace, the files that are generated, and CI. For what's inside a
 dictionary package, see [Dictionary packages](./dictionary-packages.md).

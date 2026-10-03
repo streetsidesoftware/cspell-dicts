@@ -6,7 +6,8 @@ kind: reference
 level: comfortable with basic git and a terminal; doesn't read or write code
 -->
 
-For anyone writing words, docs, or code in this repo.
+> [!NOTE]
+> For anyone writing words, docs, or code in this repo.
 
 Prettier and ESLint handle formatting (`pnpm run lint` fixes what it can). Beyond that:
 
@@ -66,11 +67,13 @@ kind: guide
 level: comfortable with basic git and a terminal; doesn't read or write code
 -->
 
-For contributors who can fork the repo and follow terminal steps. No coding needed.
+> [!NOTE]
+> For contributors who can fork the repo and follow terminal steps. No coding needed.
 ```
 
-The HTML comment is for writers and AI agents; GitHub doesn't show it. The sentence below it tells readers whether the
-doc is for them. Write for the reader the header names, and leave out what they don't need.
+The HTML comment is for writers and AI agents; GitHub doesn't show it. The `> [!NOTE]` below it tells readers whether the
+doc is for them. A maintainer-only doc uses `> [!WARNING]` instead, to warn others off. Write for the reader the header
+names, and leave out what they don't need.
 
 **Audiences:**
 

@@ -6,7 +6,8 @@ kind: guide
 level: reads and writes TypeScript, package.json scripts, and GitHub Actions workflows
 -->
 
-For developers settling a design before building it.
+> [!NOTE]
+> For developers settling a design before building it.
 
 An Architecture Decision Record (ADR) records one design decision: the situation, the choice, and its consequences.
 ADRs are for decisions where a reasonable person could have chosen differently. Ideas that haven't been decided yet

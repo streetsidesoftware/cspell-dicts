@@ -6,7 +6,8 @@ kind: reference
 level: comfortable with basic git and a terminal; doesn't read or write code
 -->
 
-For contributors working on a natural language dictionary.
+> [!NOTE]
+> For contributors working on a natural language dictionary.
 
 ## Improving Suggestions
 

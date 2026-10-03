@@ -6,7 +6,8 @@ kind: guide
 level: reads and writes TypeScript, package.json scripts, and GitHub Actions workflows
 -->
 
-For developers who read and change the scripts in `package.json`.
+> [!NOTE]
+> For developers who read and change the scripts in `package.json`.
 
 How dictionaries built from an upstream source are kept up to date. An upstream source is a word list maintained
 outside this repo, such as a Hunspell dictionary or a project's word list.

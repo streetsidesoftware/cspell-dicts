@@ -6,7 +6,8 @@ kind: reference
 level: comfortable with basic git and a terminal; doesn't read or write code
 -->
 
-For anyone opening a PR.
+> [!NOTE]
+> For anyone opening a PR.
 
 ## Who reads the release notes
 
