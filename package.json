@@ -19,7 +19,7 @@
     "check-spelling": "cspell",
     "check:types": "tsc -p .",
     "checksum": "pnpm -r run checksum",
-    "create-dictionary": "node ./generator-cspell-dicts/run.js",
+    "create-dictionary": "node ./generator-cspell-dicts/create-dictionary.mts",
     "gen:release-please-config": "node ./scripts/gen-release-please-config.mts",
     "check:release-please-config": "node ./scripts/gen-release-please-config.mts --check",
     "release-as": "node ./scripts/release-as.mts",

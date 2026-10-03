@@ -6,25 +6,16 @@
   "type": "module",
   "private": true,
   "author": "Jason Dent <jason@streetsidesoftware.nl>",
-  "files": [
-    "generators"
-  ],
-  "main": "generators/app/index.js",
   "bin": {
-    "run": "./run.js"
+    "create-dictionary": "./create-dictionary.mts"
   },
   "keywords": [
-    "cspell dictionary generator",
-    "yeoman-generator"
+    "cspell dictionary generator"
   ],
   "dependencies": {
-    "chalk": "^6.0.1",
-    "yeoman-environment": "^7.2.0",
-    "yeoman-generator": "^9.2.0",
-    "yosay": "^3.0.0"
-  },
-  "jest": {
-    "testEnvironment": "node"
+    "@inquirer/prompts": "^8.7.1",
+    "commander": "^15.0.0",
+    "cspell-lib": "^10.3.6"
   },
   "scripts": {
     "test": "echo no tests"
@@ -39,10 +30,7 @@
   },
   "cspell": {
     "words": [
-      "appname",
-      "mkdir",
-      "subprojects",
-      "yosay"
+      "subprojects"
     ]
   }
 }
