@@ -42,7 +42,9 @@ those decisions while they're still cheap to change.
    - If the branch exists without a worktree, attach it (without `-b`).
    - If the session was given a branch to work on (a cloud session, for example), use that branch and skip the
      worktree.
-   - Creating the worktree is local and reversible, so no need to ask first. Don't push or open a PR unless asked.
+   - Creating the worktree is local and reversible, so no need to ask first. Don't push without asking.
+   - As soon as anything outside the session refers to the design (a message to another session, a spawned task, a
+     link from an issue), suggest a draft PR, so there's a trail.
 
 4. **Prepare.**
    - Add the feature's row to the Features table, and create its `README.md` from `docs/ADRs/template.md`.
