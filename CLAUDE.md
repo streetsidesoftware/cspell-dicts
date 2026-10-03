@@ -32,7 +32,8 @@ pnpm --filter @cspell/dict-git test
 
 Or `pnpm run build` and `pnpm test` inside `dictionaries/<name>/`.
 
-- `pnpm run create-dictionary` creates a dictionary package, asking questions as it goes. Run it from the repo root.
+- `pnpm exec create-dictionary` creates a dictionary package. Run it with `--yes` and every answer as an option, as in the
+  `new-dictionary` skill.
 - Don't run `pnpm run build` or `pnpm run build:all` at the root unless asked. They rebuild or sync every package.
 - `pnpm run lint` writes fixes. Check the diff afterwards.
 - Before finishing, run `pnpm run lint`, and `pnpm test` in each package you changed.

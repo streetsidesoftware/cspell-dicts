@@ -23,7 +23,7 @@ Thanks for considering a contribution to cspell-dicts. You can help by:
 - **Set up:** `pnpm install`, then `pnpm run prepare:dictionaries`. pnpm only: npm and yarn are blocked.
 - **Words:** edit the word lists in `dictionaries/<name>/src/`, never the built files in `dict/`. Then sort, build the
   package, and commit both. See [Adding, removing, or fixing words](./docs/guides/word-changes.md).
-- **A new dictionary:** run `pnpm run create-dictionary`. See [Creating a dictionary](./docs/guides/new-dictionary.md).
+- **A new dictionary:** run `pnpm create-dictionary`. See [Creating a dictionary](./docs/guides/new-dictionary.md).
 - **Before a PR:** `pnpm run lint` (fixes what it can) and `pnpm test` in the packages you changed.
 - **Commits:** [Conventional Commits](https://www.conventionalcommits.org/). Adding or removing words is `fix:`, a new
   dictionary is `feat:`, and a scope names the package directory: `fix(companies): add Sourcegraph`. See

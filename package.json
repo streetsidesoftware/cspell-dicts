@@ -19,7 +19,6 @@
     "check-spelling": "cspell",
     "check:types": "tsc -p .",
     "checksum": "pnpm -r run checksum",
-    "create-dictionary": "create-dictionary",
     "gen:release-please-config": "node ./scripts/gen-release-please-config.mts",
     "check:release-please-config": "node ./scripts/gen-release-please-config.mts --check",
     "release-as": "node ./scripts/release-as.mts",

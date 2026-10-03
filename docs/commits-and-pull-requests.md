@@ -41,7 +41,7 @@ commit message.
 
 - `revert:`: undoes a merged commit.
 - `docs:`: documentation only, including README text outside a package's words or settings.
-- `chore:`: everything else that doesn't change a published dictionary: repo tooling, scripts, the dictionary creation tool (`pnpm run create-dictionary`), lint
+- `chore:`: everything else that doesn't change a published dictionary: repo tooling, scripts, the dictionary creation tool (`pnpm create-dictionary`), lint
   config, Claude Code skills and settings.
 - `ci:`: GitHub Actions and workflows, and dependency updates.
 - `perf:`, `refactor:`, `style:`, `test:`, `build:`: internal changes of those kinds, with no change in what gets
