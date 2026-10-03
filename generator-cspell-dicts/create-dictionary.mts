@@ -10,6 +10,7 @@ import { fileURLToPath } from 'node:url';
 import { confirm, input } from '@inquirer/prompts';
 
 import { type Answers, optionForAnswer, parseCommandLine } from './options.mts';
+import { readTakenNames, type TakenNames } from './taken-names.mts';
 
 const rootDir = fileURLToPath(new URL('../', import.meta.url));
 const templateDir = fileURLToPath(new URL('templates/', import.meta.url));
@@ -27,6 +28,9 @@ const templateFiles = [
 ];
 
 const hunspellExtensions = ['.dic', '.aff'];
+
+const maxNameLength = 50;
+const windowsReservedNames = /^(con|prn|aux|nul|com[1-9]|lpt[1-9])$/i;
 
 type Validate = (value: string) => string | true;
 
@@ -105,7 +109,13 @@ async function getAnswers(given: Answers, yes: boolean, allowMissingSource: bool
         return `A Hunspell source needs both its .dic and .aff files. Not found: ${notFound.join(' and ')}`;
     }
 
-    const name = await text('name', 'The package directory name (en_US, medical-terms)', undefined, validateName);
+    const taken = await readTakenNames(dictionariesDir);
+    const name = await text(
+        'name',
+        'The package directory name (en_US, medical-terms)',
+        undefined,
+        nameValidator(taken),
+    );
     const friendlyName = await text(
         'friendlyName',
         'Friendly Name ("US English", "Medical Terms")',
@@ -162,7 +172,7 @@ function hunspellPair(file: string): string[] {
 function createPackage(answers: Settings, cwd: string): void {
     const { name, friendlyName, useTrie } = answers;
     const packageDir = join(dictionariesDir, name);
-    const packageName = name.toLowerCase().replaceAll(/[^a-z0-9-]/g, '-');
+    const packageName = toPackageName(name);
     const dstFileName = `dict/${packageName}.${useTrie ? 'trie' : 'txt'}`;
 
     const srcFile = resolve(cwd, answers.srcFile);
@@ -236,11 +246,26 @@ function run(cwd: string, args: string[]): void {
     if (result.status !== 0) throw new Error(`pnpm ${args.join(' ')} failed in ${relative(rootDir, cwd)}`);
 }
 
-function validateName(name: string): string | true {
-    if (!name) return 'missing. Give the package directory name, such as en_AU or ruby.';
-    if (!/^[\w-]+$/.test(name)) return `"${name}" can only have letters, digits, "_", and "-".`;
-    if (existsSync(join(dictionariesDir, name))) return `dictionaries/${name} already exists. Choose another name.`;
-    return true;
+function nameValidator(taken: TakenNames): Validate {
+    return (name) => {
+        if (!name) return 'missing. Give the package directory name, such as en_AU or ruby.';
+        if (!/^[\w-]+$/.test(name)) return `"${name}" can only have letters, digits, "_", and "-".`;
+        if (name.length > maxNameLength) return `"${name}" is longer than ${maxNameLength} characters.`;
+        if (windowsReservedNames.test(name)) return `"${name}" is reserved on Windows. Choose another name.`;
+        if (existsSync(join(dictionariesDir, name))) return `dictionaries/${name} already exists. Choose another name.`;
+        const packageName = toPackageName(name);
+        const fullPackageName = '@cspell/dict-' + packageName;
+        const pkgOwner = taken.packages.get(fullPackageName);
+        if (pkgOwner) return `the package name ${fullPackageName} is already used by ${pkgOwner}. Choose another name.`;
+        const idOwner = taken.dictionaryIds.get(packageName);
+        if (idOwner) return `the dictionary ID ${packageName} is already used by ${idOwner}. Choose another name.`;
+        return true;
+    };
+}
+
+/** The package name and dictionary ID: lowercase, with characters other than a-z, 0-9, and "-" replaced by "-". */
+function toPackageName(name: string): string {
+    return name.toLowerCase().replaceAll(/[^a-z0-9-]/g, '-');
 }
 
 function toFriendlyName(name: string): string {

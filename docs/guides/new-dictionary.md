@@ -76,7 +76,7 @@ pnpm run create-dictionary <name> <path/to/source/words> --language-id <file typ
 
 To run it with no questions, add `--yes`. Fields you leave out get their defaults. It stops with an error if:
 
-- the name is missing, or `dictionaries/<name>/` already exists
+- the name is missing, `dictionaries/<name>/` already exists, or its package name or dictionary ID is already in use
 - the source file is missing (see `--allow-missing-source` below)
 - a Hunspell `.dic` file has no `.aff` file next to it, or the other way around
 - the locale and the file type are both `*`
@@ -92,7 +92,7 @@ Run `pnpm run create-dictionary --help` to list the options.
 
 | Field         | Option                                 | Description                                                                                                                                                                                                              |
 | ------------- | -------------------------------------- | ------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------ |
-| name          | `<name>` or `--name`                   | The package directory name, such as `en_AU` or `ruby`. Letters, digits, `_`, and `-`.                                                                                                                                    |
+| name          | `<name>` or `--name`                   | The package directory name, such as `en_AU` or `ruby`. Up to 50 letters, digits, `_`, and `-`. Its package name and dictionary ID must not already be in use.                                                            |
 | friendly name | `--friendly-name`                      | A readable name, such as `Australian English`.                                                                                                                                                                           |
 | description   | `--description`                        | A short description of the dictionary.                                                                                                                                                                                   |
 | source file   | `<path/to/source/words>` or `--source` | The file to build the dictionary from: a `.txt` word list or a Hunspell `.dic` file. It is copied into the package's `src/`. If you don't have a word list yet, add `--allow-missing-source` to start with an empty one. |
