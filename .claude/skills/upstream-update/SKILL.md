@@ -36,8 +36,8 @@ In the package:
 
 - Change the tag in the `sync` script, or the dependency version (then `pnpm install` at the root), if the update
   needs it.
-- Run the sync. For a GitHub source it needs a token: `pnpm run sync:manual` if the package has it, or
-  `GITHUB_TOKEN=$(gh auth token) pnpm run sync`. Ask the user if no token is available.
+- Run `pnpm run sync`. For a GitHub source it needs a token: it uses `GITHUB_TOKEN` if set, or else `gh auth token`
+  when the user is logged in to the GitHub CLI. Ask the user if neither gives a token.
 
 ```sh
 pnpm run build

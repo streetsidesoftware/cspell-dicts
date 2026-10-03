@@ -43,7 +43,6 @@
     "prepare:dictionary": "pnpm run build",
     "prepublishOnly": "echo pre-publish",
     "sync": "sync-github-files Glutanimate/wordlist-medicalterms-en  --tag=d87b48e -o src/wordlist-medicalterms-en",
-    "sync:manual": "GITHUB_TOKEN=$(gh auth token) pnpm sync",
     "test": "cspell samples --no-progress"
   }
 }

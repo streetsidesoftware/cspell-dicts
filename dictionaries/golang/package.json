@@ -43,7 +43,6 @@
     "prepare:dictionary": "pnpm run build",
     "prepublishOnly": "echo pre-publish",
     "sync": "sync-github-files AlekSi/go-words  --tag=main -o src/go-words",
-    "sync:manual": "GITHUB_TOKEN=$(gh auth token) pnpm sync",
     "test": "shx head -n 100 src/go.txt | cspell -c ./cspell-ext.json --locale=* --languageId=go stdin"
   }
 }

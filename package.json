@@ -36,7 +36,7 @@
     "trusted-publishing": "trusted-publishing",
     "#update-dictionaries": "# Update dictionaries will run the update-dictionary script in each dictionary package.",
     "update-dictionaries": "pnpm -r run --stream --workspace-concurrency 2 update-dictionary",
-    "update:contributors": "update-contributors $(gh auth token)",
+    "update:contributors": "update-contributors",
     "update-packages": "pnpm up",
     "preinstall": "npx only-allow pnpm"
   },
