@@ -131,6 +131,6 @@ ADRs, keeps the glossaries current, and offers to archive features that are due.
 
 ## Features
 
-| Feature                                            | Description                                                                                                | Shipped | Status    |
-| -------------------------------------------------- | ---------------------------------------------------------------------------------------------------------- | ------- | --------- |
-| [create-dictionary](./create-dictionary/README.md) | How `pnpm create-dictionary` creates a dictionary package: options, sources, and what the package contains |         | Designing |
+| Feature                                            | Description                                                                                                       | Shipped | Status    |
+| -------------------------------------------------- | ----------------------------------------------------------------------------------------------------------------- | ------- | --------- |
+| [create-dictionary](./create-dictionary/README.md) | How `pnpm create-dictionary` creates a dictionary package: options, sources, and what the new dictionary contains |         | Designing |

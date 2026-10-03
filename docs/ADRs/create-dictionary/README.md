@@ -1,7 +1,7 @@
 # Create Dictionary
 
 How `pnpm create-dictionary` creates a dictionary package: its options, the sources it accepts, and what the new
-package contains. It needed design decisions because what it writes is what every new dictionary starts from.
+dictionary contains. It needed design decisions because what it writes is what every new dictionary starts from.
 
 ## Why
 
@@ -12,7 +12,7 @@ package contains. It needed design decisions because what it writes is what ever
   download page.
 - **A compiled dictionary is often a derivative work of its sources,** so where each source comes from has to be
   traceable, Hunspell files above all.
-- **Every source needs a local copy in the package.** An upstream source can be moved, removed, or changed in a way we
+- **Every source needs a local copy in the dictionary package.** An upstream source can be moved, removed, or changed in a way we
   can't use. A sync step keeps the copies up to date where possible, and a missing upstream source must never break a
   dictionary.
 - **Maintainers clean up after every new dictionary.** `create-dictionary` takes one local file, so the sync setup, the
