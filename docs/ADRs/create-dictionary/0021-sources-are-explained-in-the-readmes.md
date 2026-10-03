@@ -8,8 +8,7 @@ A compiled dictionary is often a derivative work of its sources, so users need t
 under which licenses. Today a new dictionary's published `README.md` says only "MIT" and "Some packages may have other
 licenses included", and `src/README.md` says only that source files belong in `src/`; it isn't published.
 
-The sync steps live in `package.json` ([0020](./0020-sync-steps-live-in-package-json.md)), where it isn't clear what
-`sync` is for or which source each `sync:<name>` fetches.
+Each source is recorded in the dictionary's sources file ([0020](./0020-sources-are-recorded-in-a-sources-file.md)).
 
 The dictionary's README already gets generated sections through `@@inject` markers, such as
 `<!--- @@inject: ./static/install.md --->`, filled in by `pnpm run build:readme`, so they stay current.
@@ -19,12 +18,11 @@ The dictionary's README already gets generated sections through `@@inject` marke
 We will explain the sources in two places:
 
 - **The dictionary's `README.md`** gets a "Sources" section through `<!--- @@inject: ./static/sources.md --->`. It lists
-  each source: where it came from, its license, and whether `pnpm run sync:<name>` keeps it up to date. It's generated
+  each source from the sources file: where it came from, its license, and whether `pnpm run sync` keeps it up to date. It's generated
   like the other static files, so it follows changes to the sources.
 - **`src/README.md`** explains, for maintainers, how `sync` and the per-source scripts work, and how to add a source.
 
 ## Consequences
 
 - Users see each source and its license on npm.
-- Readers of `package.json` have a place that explains `sync`.
-- `static/sources.md` needs a generator that knows each source's origin and license.
+- `static/sources.md` is generated from the sources file.

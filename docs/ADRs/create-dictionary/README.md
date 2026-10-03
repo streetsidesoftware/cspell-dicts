@@ -92,13 +92,12 @@ That's the end state. It ships in stages, each usable on its own:
 | [0017](./0017-github-sources-follow-the-default-branch.md)                | A GitHub source follows its default branch                                          | Accepted           |
 | [0018](./0018-remote-sources-are-fetched-first.md)                        | Remote sources are fetched first, and any failure stops creation                    | Accepted           |
 | [0019](./0019-remote-sources-are-npm-and-github.md)                       | Remote sources come from npm or GitHub; download pages are local sources            | Accepted           |
-| [0020](./0020-sync-steps-live-in-package-json.md)                         | Sync steps live in the dictionary's `package.json`                                  | Accepted           |
+| [0020](./0020-sources-are-recorded-in-a-sources-file.md)                  | A dictionary's sources are recorded in a sources file                               | Accepted           |
 | [0021](./0021-sources-are-explained-in-the-readmes.md)                    | Sources are explained in the dictionary's README and in `src/README.md`             | Accepted           |
 
 ## Open questions
 
-- **What generates `static/sources.md`** ([0021](./0021-sources-are-explained-in-the-readmes.md)), and from which
-  record of each source's origin and license.
+- **Where the sync command lives,** and how it's run from a dictionary.
 - **Building at creation** ([0013](./0013-new-dictionaries-are-built.md)) and **the depth default**
   ([0015](./0015-hunspell-depth.md)): measurements show `hu_HU` doesn't build within 15 minutes even at depth 1, and
   `eu` takes 22 s and 1.7 GB at depth 1. Depth 3 matches Hunspell's own limit; `nl_NL` and `eu` stop growing there.
@@ -106,3 +105,5 @@ That's the end state. It ships in stages, each usable on its own:
 ## Provisional names
 
 - `--add-source-ref`: the option that pins a GitHub source to a tag or commit. Decide with the rest of the sync stage.
+- `sources.yaml`: the sources file. Decide before building the sync stage.
+- The generic sync command's name. Decide before building the sync stage.
