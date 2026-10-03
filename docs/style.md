@@ -54,7 +54,7 @@ These rules apply to the root `README.md`, every `dictionaries/*/README.md`, and
 `docs/` and `CONTRIBUTING.md` are written for people. In a guide, give each step a heading and list its checks one per
 item.
 
-`CONTRIBUTING.md` is the entry point: it links to the docs, and no doc links back to it.
+The entry point is `CONTRIBUTING.md`: it links to the docs, and no doc links back to it.
 
 ### Audience
 
