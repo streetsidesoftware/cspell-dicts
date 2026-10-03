@@ -13,6 +13,9 @@ source a missing word belongs in, so the catch-all gives them one obvious place.
 Other names exist too: `additional-terms.txt` (4), `additional-words.txt` (2), and `additional_tokens.txt` (2). Today
 the file is added by hand when someone first needs it.
 
+Creating it only for dictionaries with more than one source was weighed. But a dictionary that starts with one source
+tends to gain more, and then the question of where a word goes comes back.
+
 ## Decision
 
 We will create `src/additional_words.txt` in every new dictionary, with only a header line, and list it as one of its
