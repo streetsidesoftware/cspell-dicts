@@ -82,3 +82,4 @@ That's the end state. It ships in stages, each usable on its own:
 | [0009](./0009-a-static-sample-replaces-the-source-test.md)                | A static sample of words replaces testing the source                                | Accepted           |
 | [0010](./0010-friendly-name-and-descriptions.md)                          | The friendly name and the descriptions                                              | Accepted           |
 | [0011](./0011-locale-or-file-type-never-both-any.md)                      | A dictionary sets its locale or its file type, never both `*`                       | Accepted           |
+| [0012](./0012-when-a-dictionary-is-stored-as-a-trie.md)                   | When a dictionary is stored as a trie                                               | Accepted           |

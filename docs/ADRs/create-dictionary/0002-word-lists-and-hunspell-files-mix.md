@@ -14,8 +14,9 @@ either word lists or one Hunspell pair, which is simpler to explain but rules ou
 
 ## Decision
 
-We will allow any mix of word lists and Hunspell files. All sources go into the one dictionary. If any source is a
-Hunspell file, the defaults are a trie and a build, as for a single Hunspell source today.
+We will allow any mix of word lists and Hunspell files. All sources go into the one dictionary. If any source is a Hunspell file,
+the defaults are a trie ([0012](./0012-when-a-dictionary-is-stored-as-a-trie.md)) and a build, as for a single Hunspell
+source today.
 
 ## Consequences
 
