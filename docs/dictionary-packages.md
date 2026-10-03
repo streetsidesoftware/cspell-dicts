@@ -54,6 +54,16 @@ There's no `CHANGELOG.md` at first: Release Please creates it on the first relea
   [Upstream updates](./guides/upstream-updates.md). Never edit the fetched files by hand.
 - **Words added on top of an upstream source:** go in `src/additional_words.txt`.
 
+Every source follows three rules:
+
+- **The dictionary keeps a local copy.** Every source is committed in the dictionary's directory, so the dictionary can
+  be built from scratch, without downloading anything.
+- **Sync only updates the local copy.** If an upstream source moves, disappears, or changes in a way we can't use, the
+  sync fails, and the dictionary still builds from its local copy.
+- **Where it came from is recorded.** Each upstream source is synced into its own directory, `src/<source>/`, and the
+  dictionary's `src/README.md` links to each source's repository. The built dictionary is often a derivative work of its
+  sources, so their licenses apply to it. This matters most for Hunspell files.
+
 ## Building
 
 `pnpm run build` in the package runs `cspell-tools-cli build`, which reads `cspell-tools.config.yaml` and writes
