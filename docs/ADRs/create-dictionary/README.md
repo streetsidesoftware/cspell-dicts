@@ -94,6 +94,7 @@ That's the end state. It ships in stages, each usable on its own:
 | [0019](./0019-remote-sources-are-npm-and-github.md)                       | Remote sources come from npm or GitHub; download pages are local sources            | Accepted           |
 | [0020](./0020-sources-are-recorded-in-a-sources-file.md)                  | A dictionary's sources are recorded in a sources file                               | Accepted           |
 | [0021](./0021-sources-are-explained-in-the-readmes.md)                    | Sources are explained in the dictionary's README and in `src/README.md`             | Accepted           |
+| [0022](./0022-prefer-the-source-repository-npm-from-a-cdn.md)             | Prefer the source repository; an npm source is read from a CDN                      | Accepted           |
 
 ## Provisional names
 

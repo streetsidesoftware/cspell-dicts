@@ -19,7 +19,8 @@ GitLab kind like GitHub's.
 
 ## Decision
 
-We will support two kinds of remote source, npm (`--define-source-npm`) and GitHub (`--define-source-github`). A source
+We will support two kinds of remote source, GitHub (`--define-source-github`) and npm (`--define-source-npm`), preferring
+the source repository ([0022](./0022-prefer-the-source-repository-npm-from-a-cdn.md)). A source
 from a download page or any other host is downloaded by hand and defined as a local source with `--define-source`, with
 `--add-source-url` recording where it came from.
 
