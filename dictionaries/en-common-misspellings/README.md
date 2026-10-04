@@ -108,6 +108,7 @@ The source of this dictionary comes from:
 
 - [Wikipedia:Lists of common misspellings/For machines - Wikipedia](https://en.wikipedia.org/wiki/Wikipedia:Lists_of_common_misspellings/For_machines)
 - [Wikipedia:Lists of common misspellings - Wikipedia](https://en.wikipedia.org/wiki/Wikipedia:Lists_of_common_misspellings)
+- [crate-ci/typos: Source code spell checker](https://github.com/crate-ci/typos), its word list [`words.csv`](https://github.com/crate-ci/typos/blob/main/crates/typos-dict/assets/words.csv) (MIT License)
 
 ## Dictionary Development
 
