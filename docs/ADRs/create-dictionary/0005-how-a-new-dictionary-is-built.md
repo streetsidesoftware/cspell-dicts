@@ -8,7 +8,7 @@ A dictionary is built either as plain text or as a trie, which is much smaller f
 guide says to use a trie for Hunspell sources and for large source files (over about 1 MB), but the generator applied
 only the first, so a contributor had to know to pass `--trie`.
 
-The built files in `dict/` are committed with `src/`, and the sample test ([0006](./0006-a-static-sample.md)) needs
+The built files in `dict/` are committed with `src/`, and the sample test ([0006](./0006-samples.md)) needs
 them. A plain-text dictionary's `prepare:dictionary` script runs the build, so CI builds it anyway; a Hunspell
 dictionary's is `echo OK`, so its `dict/` has to be committed already built. Until a build runs, `dict/` holds a
 placeholder, which for a trie isn't a valid dictionary.
