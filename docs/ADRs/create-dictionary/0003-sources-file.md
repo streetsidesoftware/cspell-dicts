@@ -80,4 +80,4 @@ A script per source is very hard to maintain, and a command line isn't a record 
   anyway, and a pattern can pull very large files, or files nobody reviewed, into the repo through a bot PR that's
   merged on trust.
 
-<!-- cspell:ignore syafiqhadzir marcoagpinto -->
+<!-- cspell:ignore syafiqhadzir marcoagpinto wooorm -->
