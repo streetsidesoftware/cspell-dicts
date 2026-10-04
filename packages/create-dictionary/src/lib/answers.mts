@@ -5,9 +5,17 @@ import { confirm, input } from '@inquirer/prompts';
 
 import { title, toFriendlyName } from './names.mts';
 import { type Answers, type CommandLine, optionForAnswer } from './options.mts';
-import { readTakenNames, type Repo } from './repo.mts';
+import { gitUserName, readTakenNames, type Repo } from './repo.mts';
 import { hunspellPair, isHunspellFile, sourceFile } from './source.mts';
-import { nameValidator, sourceValidator, type Validate, validateDescription, validateLanguageId } from './validate.mts';
+import {
+    nameValidator,
+    sourceValidator,
+    type Validate,
+    validateContributor,
+    validateKeyword,
+    validateDescription,
+    validateLanguageId,
+} from './validate.mts';
 
 export interface Source {
     /** The path as given, relative to where the command runs; a Hunspell source is its .dic file. */
@@ -44,6 +52,51 @@ export async function getAnswers(options: CommandLine, repo: Repo, cwd: string):
 
     async function yesNo(key: BooleanKey, message: string, def: boolean) {
         return given[key] ?? (noPrompts ? def : confirm({ message, default: def }));
+    }
+
+    async function contributors(): Promise<string[]> {
+        const list = given.contributors;
+        if (list !== undefined) {
+            for (const person of list) {
+                const valid = validateContributor(person);
+                if (valid !== true) throw new Error(`${optionForAnswer.contributors}: ${valid}`);
+            }
+            return list.map((person) => person.trim());
+        }
+        if (noPrompts) return [];
+        const asked: string[] = [];
+        let def = gitUserName(cwd);
+        for (;;) {
+            const person = await input({
+                message:
+                    'Contributor: "Name", "Name <email>", or "Name (url)", such as a GitHub profile; empty to skip',
+                default: def,
+                validate: (value) => !value.trim() || validateContributor(value),
+            });
+            if (!person.trim()) return asked;
+            asked.push(person.trim());
+            def = undefined;
+            if (!(await confirm({ message: 'Add another contributor?', default: false }))) return asked;
+        }
+    }
+
+    async function keywords(): Promise<string[]> {
+        const list = given.keywords;
+        if (list !== undefined) {
+            for (const word of list) {
+                const valid = validateKeyword(word);
+                if (valid !== true) throw new Error(`${optionForAnswer.keywords}: ${valid}`);
+            }
+            return list.map((word) => word.trim());
+        }
+        if (noPrompts) return [];
+        const typed = await input({
+            message: 'Other names people search for, such as golang for Go; comma separated, empty to skip',
+        });
+        return typed
+            .split(',')
+            .map((word) => word.trim())
+            .filter((word) => word);
     }
 
     async function sources(name: string): Promise<Source[]> {
@@ -126,6 +179,8 @@ export async function getAnswers(options: CommandLine, repo: Repo, cwd: string):
         'Description on npm',
         title(friendlyName) + ' dictionary for cspell.',
     );
+    const people = await contributors();
+    const searchWords = await keywords();
     const srcs = await sources(name);
     const locale = await text(
         'locale',
@@ -152,6 +207,8 @@ export async function getAnswers(options: CommandLine, repo: Repo, cwd: string):
         friendlyName,
         description,
         packageDescription,
+        contributors: people,
+        keywords: searchWords,
         sources: srcs,
         locale,
         languageId,

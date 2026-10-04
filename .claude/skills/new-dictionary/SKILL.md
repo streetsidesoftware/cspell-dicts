@@ -42,6 +42,9 @@ build half follows `docs/guides/new-dictionary.md`; read it too.
      - A natural language dictionary sets `locale`, such as `en-AU`, and leaves `languageId` as `*`.
      - Any other dictionary sets `languageId`, such as `ruby`, and leaves `locale` as `*`.
      - Never both `*`: that turns the dictionary on for every file in every language. If neither fits, ask the user.
+   - **Contributors:** ask who creates and maintains this dictionary, as "Name (url)". It's optional, and published to
+     npm.
+   - **Keywords:** ask for other names people search npm for, such as `golang` for Go.
    - **Decide whether it needs ADRs** once the sources and the build are clear, and tell the user why. If it does,
      follow `feature-adr` steps 4–7: bootstrap the ADR directory, write and commit an ADR for each decision made so
      far and each one after, and keep the glossary in sync.
@@ -56,22 +59,31 @@ build half follows `docs/guides/new-dictionary.md`; read it too.
 
 6. **Build the package.** Follow `docs/guides/new-dictionary.md` from step 4. The rules below are the ones most easily
    missed.
-   - From the repo root, run it with `--yes` and every answer from the design as an option, so it never prompts:
+   - From the repo root, run it with `--yes` and every decision as an option, so it never prompts:
 
      ```sh
-     pnpm exec create-dictionary --yes <name> <path/to/source/words> --friendly-name "<Friendly Name>" --description "<description>" --locale <locale> --language-id <file type> --no-trie --build
+     pnpm exec create-dictionary --yes <name> <source>... \
+       --friendly-name "<Friendly Name>" \
+       --description "<the words it covers>" \
+       --contributor "<Name> (<url>)" \
+       --keyword <search term> \
+       --language-id <file type>
      ```
 
-     List every source after the name, word lists and Hunspell `.dic` files alike; they're combined. Set `--locale`
-     and `--language-id` as decided in step 4. If there is no word list yet, add
-     `--allow-missing-source`, which starts an empty one. Use `--trie` for Hunspell sources and large lists. Run
-     `pnpm exec create-dictionary --help` to list the options. If it fails on a missing or invalid value, nothing was
-     written: fix that option and run it again. If `pnpm install` or the build fails, the dictionary was already created:
-     finish it in its directory (`pnpm install`, then `pnpm run build`), or delete it and run the command again.
-
+   - From the design to the options:
+     - Every source after the name: word lists and Hunspell `.dic` files alike.
+     - `--allow-missing-source` when there's no word list yet. It starts an empty one.
+     - One `--contributor` per person agreed in step 4, and one `--keyword` per search term.
+     - `--locale` for a natural language, or `--language-id` for anything else, as decided in step 4.
+     - `--trie` for Hunspell sources and large lists.
+     - `pnpm exec create-dictionary --help` lists every option.
+   - If it fails:
+     - On a missing or invalid value, nothing was written. Fix that option and run it again.
+     - If `pnpm install` or the build fails, the dictionary was already created. Finish it in its directory
+       (`pnpm install`, then `pnpm run build`), or delete it and run the command again.
    - `cspell-ext.json`'s `dictionaryDefinitions` and `languageSettings` match the design exactly: IDs, `languageId`,
      `locale`.
-   - In `package.json`, add `keywords`, and check that `files` lists every built file and upstream license file. Leave
+   - In `package.json`, check that `files` lists every built file and upstream license file. Leave
      `private: true` and "-- Private until verified" in `description`: a maintainer makes the dictionary public in a
      later PR (see "New dictionaries" in `docs/releasing.md`).
    - An upstream source gets a `sync` script, as in `docs/guides/upstream-updates.md`. Never hand-edit synced files.

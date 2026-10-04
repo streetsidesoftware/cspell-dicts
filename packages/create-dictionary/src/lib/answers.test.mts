@@ -47,6 +47,8 @@ describe('getAnswers', () => {
             friendlyName: 'Medical Terms',
             description: 'Test words',
             packageDescription: 'Medical Terms dictionary for cspell.',
+            contributors: [],
+            keywords: [],
             sources: [{ file: 'words.txt', empty: false }],
             locale: '*',
             languageId: 'markdown',
@@ -141,6 +143,59 @@ describe('getAnswers', () => {
                 root,
             ),
             /--description: missing/,
+        );
+    });
+
+    it('keeps the given contributors, trimmed', async () => {
+        const settings = await getAnswers(
+            options({
+                name: 'ruby',
+                contributors: [' Jane Doe (https://example.com/jane-doe) ', 'John Roe <john@example.com>'],
+                srcFiles: ['words.txt'],
+                languageId: 'ruby',
+            }),
+            repo,
+            root,
+        );
+        assert.deepEqual(settings.contributors, [
+            'Jane Doe (https://example.com/jane-doe)',
+            'John Roe <john@example.com>',
+        ]);
+    });
+
+    it("refuses a contributor that is not in npm's form", async () => {
+        await assert.rejects(
+            getAnswers(
+                options({
+                    name: 'ruby',
+                    contributors: ['<john@example.com>'],
+                    srcFiles: ['words.txt'],
+                    languageId: 'ruby',
+                }),
+                repo,
+                root,
+            ),
+            /--contributor: "<john@example\.com>" isn't "Name"/,
+        );
+    });
+
+    it('keeps the given keywords, trimmed', async () => {
+        const settings = await getAnswers(
+            options({ name: 'golang', keywords: [' go ', 'golang'], srcFiles: ['words.txt'], languageId: 'go' }),
+            repo,
+            root,
+        );
+        assert.deepEqual(settings.keywords, ['go', 'golang']);
+    });
+
+    it('refuses several keywords in one --keyword', async () => {
+        await assert.rejects(
+            getAnswers(
+                options({ name: 'golang', keywords: ['go,golang'], srcFiles: ['words.txt'], languageId: 'go' }),
+                repo,
+                root,
+            ),
+            /--keyword: "go,golang" has a comma/,
         );
     });
 

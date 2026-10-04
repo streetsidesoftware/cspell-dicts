@@ -29,6 +29,8 @@ function settings(name: string, more: Partial<Settings>): Settings {
         friendlyName: 'Test',
         description: 'Test words',
         packageDescription: 'Test dictionary for cspell.',
+        contributors: [],
+        keywords: [],
         sources: [{ file: 'words.txt', empty: false }],
         locale: '*',
         languageId: 'ruby',
@@ -81,6 +83,25 @@ describe('createPackage', () => {
         assert.equal(pkg.description, 'Test dictionary for cspell. -- Private until verified');
         assert.match(read(dir, 'cspell-ext.json'), /"locale": "en-XX"/);
         assert.match(read(dir, 'cspell-tools.config.yaml'), /filename: 'src\/words\.txt'/);
+    });
+
+    it('lists the contributors in package.json', () => {
+        const dir = createPackage(
+            settings('people', { contributors: ['Jane Doe (https://example.com/jane-doe)'] }),
+            repo,
+            root,
+        );
+        const pkg = JSON.parse(read(dir, 'package.json'));
+        assert.deepEqual(pkg.contributors, ['Jane Doe (https://example.com/jane-doe)']);
+        assert.match(read(dir, 'package.json'), /^\{\n {2}"name"/);
+    });
+
+    it("adds the extra keywords after the template's, each once", () => {
+        const dir = createPackage(settings('kw', { keywords: ['golang', 'kw', 'spelling'] }), repo, root);
+        const { keywords } = JSON.parse(read(dir, 'package.json'));
+        assert.deepEqual(keywords.slice(-1), ['golang']);
+        assert.equal(keywords.filter((k: string) => k === 'spelling').length, 1);
+        assert.equal(keywords.filter((k: string) => k === 'kw').length, 1);
     });
 
     it('starts an empty word list for a missing source', () => {

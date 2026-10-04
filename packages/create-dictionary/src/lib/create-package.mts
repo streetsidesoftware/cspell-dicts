@@ -44,7 +44,8 @@ export function createPackage(answers: Settings, repo: Repo, cwd: string): strin
     console.log('Creating ' + relative(rootDir, packageDir));
     for (const file of templateFiles) {
         const template = readFileSync(join(templateDir, file), 'utf8');
-        write(file, fillTemplate(template, values, extname(file)));
+        const content = fillTemplate(template, values, extname(file));
+        write(file, file === 'package.json' ? withPeopleAndKeywords(content) : content);
     }
     for (const source of answers.sources) {
         if (source.empty) {
@@ -59,6 +60,14 @@ export function createPackage(answers: Settings, repo: Repo, cwd: string): strin
     write(dstFileName, '# dest');
 
     return packageDir;
+
+    /** The template's package.json, with the contributors and the extra keywords. */
+    function withPeopleAndKeywords(packageJson: string): string {
+        const pkg = JSON.parse(packageJson);
+        pkg.contributors = answers.contributors;
+        pkg.keywords = [...new Set([...pkg.keywords, ...answers.keywords])];
+        return JSON.stringify(pkg, null, 2) + '\n';
+    }
 
     /** A source in cspell-tools.config.yaml: the template has the first item's "- ", and the join adds the rest. */
     function buildSource(filename: string): string {

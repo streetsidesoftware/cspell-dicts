@@ -5,7 +5,14 @@ import { join } from 'node:path';
 import { after, before, describe, it } from 'node:test';
 
 import type { Repo, TakenNames } from './repo.mts';
-import { nameValidator, sourceValidator, validateDescription, validateLanguageId } from './validate.mts';
+import {
+    nameValidator,
+    sourceValidator,
+    validateContributor,
+    validateKeyword,
+    validateDescription,
+    validateLanguageId,
+} from './validate.mts';
 
 let root = '';
 let repo: Repo;
@@ -72,6 +79,43 @@ describe('validateDescription', () => {
 
     it('accepts a description of the words', () => {
         assert.equal(validateDescription('Ruby keywords and standard library names'), true);
+    });
+});
+
+describe('validateContributor', () => {
+    it('accepts a name, with an optional <email> and (url)', () => {
+        for (const person of [
+            'Jane Doe',
+            'Jane Doe <jane@example.com>',
+            'Jane Doe (https://example.com/jane-doe)',
+            'Jane Doe <jane@example.com> (https://example.com/jane-doe)',
+            'Proxecto Trasno (https://trasno.gal)',
+        ]) {
+            assert.equal(validateContributor(person), true, person);
+        }
+    });
+
+    it('refuses a missing name, or parts out of order or unclosed', () => {
+        for (const person of [
+            '',
+            '<jane@example.com>',
+            'Jane Doe <jane@example.com',
+            'Ana (https://x.y) <jane@example.com>',
+        ]) {
+            assert.match(String(validateContributor(person)), /isn't "Name"/, person);
+        }
+    });
+});
+
+describe('validateKeyword', () => {
+    it('accepts a word or a phrase', () => {
+        assert.equal(validateKeyword('golang'), true);
+        assert.equal(validateKeyword('Go language'), true);
+    });
+
+    it('refuses an empty keyword, or several in one', () => {
+        assert.match(String(validateKeyword(' ')), /empty/);
+        assert.match(String(validateKeyword('go,golang')), /one keyword per --keyword/);
     });
 });
 

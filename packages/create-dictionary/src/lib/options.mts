@@ -5,6 +5,8 @@ export interface Answers {
     friendlyName?: string;
     description?: string;
     packageDescription?: string;
+    contributors?: string[];
+    keywords?: string[];
     srcFiles?: string[];
     locale?: string;
     languageId?: string;
@@ -30,6 +32,8 @@ export const optionForAnswer: Record<keyof Answers, string> = {
     friendlyName: '--friendly-name',
     description: '--description',
     packageDescription: '--package-description',
+    contributors: '--contributor',
+    keywords: '--keyword',
     srcFiles: '<source>, --source, or --allow-missing-source',
     locale: '--locale',
     languageId: '--language-id',
@@ -42,6 +46,8 @@ interface Options {
     friendlyName?: string;
     description?: string;
     packageDescription?: string;
+    contributor?: string[];
+    keyword?: string[];
     source?: string[];
     locale?: string;
     languageId?: string;
@@ -71,6 +77,16 @@ export function parseCommandLine(argv: string[]): CommandLine {
         .option(
             '--package-description <text>',
             'the description npm shows; default: "<Friendly name> dictionary for cspell."',
+        )
+        .option(
+            '--contributor <person>',
+            'someone who created or maintains the dictionary: "Name", "Name <email>", or "Name (url)"; repeat it for several',
+            (value: string, previous: string[] = []) => [...previous, value],
+        )
+        .option(
+            '--keyword <word>',
+            'another name people search npm for, such as golang for Go; repeat it for several',
+            (value: string, previous: string[] = []) => [...previous, value],
         )
         .option(
             '--source <file>',
@@ -115,6 +131,8 @@ export function parseCommandLine(argv: string[]): CommandLine {
         friendlyName: opts.friendlyName,
         description: opts.description,
         packageDescription: opts.packageDescription,
+        contributors: opts.contributor,
+        keywords: opts.keyword,
         srcFiles: combine(sourceArgs, opts.source ?? []),
         locale: opts.locale,
         languageId: opts.languageId,

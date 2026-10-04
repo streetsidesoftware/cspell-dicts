@@ -1,11 +1,15 @@
-# 0005. The friendly name, the descriptions, and where a dictionary is turned on
+# 0005. The friendly name, the descriptions, the contributors and keywords, and when a dictionary is enabled
 
 Status: Accepted
 
 ## Why
 
-Goal: easy to adopt. The default descriptions said only "for cspell", and the default turned a dictionary on for every
-file in every language. Maintainers fixed both by hand.
+**Goal:** easy to adopt. A maintainer can merge a new dictionary after review, without fixing it by hand.
+
+**Problem:** The generator filled in defaults a maintainer had to correct in every new dictionary. It described each one
+as "dictionary for cspell", which says nothing about its words. It enabled each one for every file in every language. It
+turned `medical_terms` into "Medical_terms", it never listed who made the dictionary, and it left the other names people
+search npm for to be added by hand.
 
 ## Decision
 
@@ -18,6 +22,13 @@ file in every language. Maintainers fixed both by hand.
 - A dictionary sets `--locale` or `--language-id`, never both `*`. A natural language dictionary sets the locale, such
   as `en-AU`; any other sets the file type, such as `ruby`. With `--yes` one must be given; when prompting with the
   locale at `*`, the file type has no default and `*` is refused.
+- `--contributor "<Name> <email> (url)"`, repeatable and optional, lists the people who create and maintain the
+  dictionary in `package.json`'s `contributors`, as given. Only the name is required; an email goes in `<…>` and a URL
+  in `(…)`. When prompting, the generator asks for contributors in a loop; the first answer defaults to
+  `git config user.name`, without the email, and an empty answer skips. Without one, `contributors` stays empty.
+- `--keyword <word>`, repeatable and optional, adds the other names people search npm for, such as `golang` for Go, to
+  `package.json`'s `keywords`, after the template's and without duplicates. When prompting, the generator asks once
+  for several, separated by commas; an empty answer skips.
 
 ## Consequences
 
@@ -39,11 +50,24 @@ A dictionary names and describes itself in several places:
   cspell." In the README and in cspell's settings, "for cspell" says nothing.
 - **`package.json`'s description** is what npm shows. 124 of 136 dictionaries say "for cspell" there, which tells
   someone searching npm what the package is for.
-- **Where it's turned on:** `languageSettings` matches `locale` and `languageId` (file type), with `*` for any. The
-  generator defaulted both to `*`, which turns a dictionary on for every file in every language, so users get its words
+- **When it's enabled:** `languageSettings` matches `locale` and `languageId` (file type), with `*` for any. The
+  generator defaulted both to `*`, which enables a dictionary for every file in every language, so users get its words
   wherever they spell check.
 
+Only 15 of 136 dictionaries list `contributors` in `package.json`; the template wrote an empty list. All 22 entries use
+npm's one-line form, `Name <email> (url)`, with the email and URL optional, such as `Jane Doe
+(https://example.com/jane-doe)`. Some list a project rather than a person.
+
 ## Rejected approaches
+
+- Asking contributors to add `keywords` to `package.json` by hand after creating the dictionary: they know the search
+  terms while running the generator, and the edit was easy to forget. A single `--keywords "a,b"` option: no other
+  option takes a list that way.
+- Listing upstream authors as contributors: they're credited through their sources' licenses and READMEs, and the
+  README's Sources section.
+- Separate `--contributor-name`, `--contributor-email`, and `--contributor-url` options: awkward for more than one
+  person. Writing contributors as objects: unlike every dictionary that lists them.
+- Defaulting to `git config user.email` too: it's often a personal address, and `package.json` is published.
 
 - A better generated description: still generic, and repeated everywhere.
 - Keeping the default and leaving it to reviewers.

@@ -63,7 +63,7 @@ The source was simply the quickest list of words to grab. With several sources a
 4. Which source is "first" isn't defined once sources come from several options.
 5. A dictionary that starts empty has only its header line to check.
 
-A smoke test also can't check the assumptions made at creation: whether the file type turns the dictionary on, whether
+A smoke test also can't check the assumptions made at creation: whether the file type enables the dictionary, whether
 words as they're really written are covered (compounds, casing, identifiers), and whether splitting and depth are right.
 Real examples can. 86 of 136 dictionaries have a `samples/` folder, checked by `cspell samples`. `matlab` is the model:
 five real `.m` scripts, a `samples/cspell.json` that imports `../cspell-ext.json`, and a `samples/README.md` giving

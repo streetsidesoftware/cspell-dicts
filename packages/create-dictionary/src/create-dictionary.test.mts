@@ -80,6 +80,8 @@ describe('help', () => {
             '--language-id',
             '--description',
             '--package-description',
+            '--contributor',
+            '--keyword',
         ]) {
             assert.ok(result.stdout.includes(option), option);
         }
@@ -120,6 +122,28 @@ describe('a new package', () => {
         const ext = packageFile('plain', 'cspell-ext.json');
         assert.match(ext, /"languageId": "ruby"/);
         assert.match(ext, /"locale": "\*"/);
+    });
+
+    it('lists each --contributor in package.json, and none without one', () => {
+        const result = createYes(
+            'people',
+            'words.txt',
+            '--contributor',
+            'Jane Doe (https://example.com/jane-doe)',
+            '--contributor',
+            'John Roe',
+        );
+        assert.equal(result.code, 0, result.stderr);
+        const pkg = JSON.parse(packageFile('people', 'package.json'));
+        assert.deepEqual(pkg.contributors, ['Jane Doe (https://example.com/jane-doe)', 'John Roe']);
+        assert.deepEqual(JSON.parse(packageFile('plain', 'package.json')).contributors, []);
+    });
+
+    it('adds each --keyword to package.json', () => {
+        const result = createYes('searchable', 'words.txt', '--keyword', 'golang', '--keyword', 'go language');
+        assert.equal(result.code, 0, result.stderr);
+        const { keywords } = JSON.parse(packageFile('searchable', 'package.json'));
+        assert.deepEqual(keywords.slice(-2), ['golang', 'go language']);
     });
 
     it('escapes values in JSON and YAML files', () => {
