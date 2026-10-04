@@ -46,9 +46,8 @@ If an existing dictionary comes close, adding words to it may be the better chan
   - Not both `*`: that enables the dictionary for every file in every language.
 - **Format:** plaintext, or a trie for large lists such as Hunspell dictionaries.
 
-Most new dictionaries don't need ADRs. Record the design as ADRs only when the dictionary takes a different approach
-from this guide, or needs scripts of its own beyond `pnpm create-dictionary`, the build, and a `sync` script as in
-[Upstream updates](./upstream-updates.md). See [ADRs](../ADRs/README.md).
+If this dictionary doesn't fit these steps, [open an issue](https://github.com/streetsidesoftware/cspell-dicts/issues/new)
+before building it. Say what the words are and where they come from. A maintainer will help work out the design.
 
 ## 3. Check the sources and their license
 
