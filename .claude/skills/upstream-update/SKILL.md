@@ -21,7 +21,9 @@ Know where the dictionary's upstream files come from, and whether anything alrea
   - Read `cspell-tools.config.yaml`: which targets read the synced files, and any `excludeWordsFrom`.
   - Name the kind of source: an npm package, a GitHub repository (pinned, or following a branch or `--latest`), or the
     dictionary's own script.
-  - Check whether the Build Dictionaries workflow already syncs it: its `conditional-build` script runs `sync`.
+  - Check whether the Build Dictionaries workflow already syncs it: its `conditional-build` or `build:conditional`
+    script runs `sync`.
+  - A dictionary can have several sources. Do steps 2 to 4 for each.
 - **Stop and ask** if a workflow already keeps it current: is a manual update still wanted?
 
 ### 2. Check the upstream change
@@ -29,7 +31,8 @@ Know where the dictionary's upstream files come from, and whether anything alrea
 Know what changed upstream, and whether its license still fits.
 
 - **Do:** find what changed since the current version or tag: a release, a changelog, or a compare view.
-- **Check:** the upstream license matches the one in the dictionary's synced files and its `LICENSE`.
+- **Check:** the upstream license matches the dictionary's synced license files, its `LICENSE`, and the `license` field
+  in its `package.json`.
 - **Stop and ask** if the license changed, is missing, or is unclear. Give the exact source and version, the old and
   new license, and what the dictionary's license would have to become. Go no further until the user decides.
 
@@ -38,7 +41,7 @@ Know what changed upstream, and whether its license still fits.
 Bring in the upstream files and rebuild.
 
 - **Do,** in the dictionary's directory:
-  - If the update needs it, change the tag in the `sync` script, or the dependency's version and then run
+  - For a pinned source, change the tag in the `sync` script, or the dependency's version and then run
     `pnpm install` at the repo root.
   - Run the sync, build, and tests:
 
@@ -72,8 +75,13 @@ Show the user how big the change is, and that nothing unexpected changed.
 Give the user drafts to approve.
 
 - **Do:**
-  - Type and scope as in `docs/commits-and-pull-requests.md`, usually `fix(<dictionary>): update <source> to
-<version>`.
+  - Type and scope as in `docs/commits-and-pull-requests.md`, usually this, where the version of a source that follows
+    a branch is the upstream commit:
+
+    ```text
+    fix(<dictionary>): update <source> to <version>
+    ```
+
   - The description: a `## Summary`, the upstream release or diff link, the size of the change, and whether the
     license changed.
 - **Stop and ask:**
