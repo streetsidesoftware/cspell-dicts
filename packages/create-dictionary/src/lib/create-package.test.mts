@@ -27,7 +27,8 @@ function settings(name: string, more: Partial<Settings>): Settings {
     return {
         name,
         friendlyName: 'Test',
-        description: 'Test dictionary for cspell.',
+        description: 'Test words',
+        packageDescription: 'Test dictionary for cspell.',
         srcFile: 'words.txt',
         emptySource: false,
         locale: '*',

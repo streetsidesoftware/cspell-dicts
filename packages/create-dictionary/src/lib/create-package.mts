@@ -24,6 +24,7 @@ export function createPackage(answers: Settings, repo: Repo, cwd: string): strin
         name,
         friendlyName,
         description: answers.description,
+        packageDescription: answers.packageDescription,
         locale: answers.locale,
         languageId: answers.languageId,
         packageName,

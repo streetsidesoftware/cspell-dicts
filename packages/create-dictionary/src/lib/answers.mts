@@ -7,7 +7,7 @@ import { title, toFriendlyName } from './names.mts';
 import { type Answers, type CommandLine, optionForAnswer } from './options.mts';
 import { readTakenNames, type Repo } from './repo.mts';
 import { isHunspellFile } from './source.mts';
-import { nameValidator, sourceValidator, type Validate, validateLanguageId } from './validate.mts';
+import { nameValidator, sourceValidator, type Validate, validateDescription, validateLanguageId } from './validate.mts';
 
 export type Settings = Required<Answers> & {
     /** The source is missing: start with an empty word list. */
@@ -85,7 +85,17 @@ export async function getAnswers(options: CommandLine, repo: Repo, cwd: string):
         'Friendly Name ("US English", "Medical Terms")',
         toFriendlyName(name),
     );
-    const description = await text('description', 'Description', title(friendlyName) + ' dictionary for cspell.');
+    const description = await text(
+        'description',
+        'Description: the words it covers ("Ruby keywords and standard library names")',
+        undefined,
+        validateDescription,
+    );
+    const packageDescription = await text(
+        'packageDescription',
+        'Description on npm',
+        title(friendlyName) + ' dictionary for cspell.',
+    );
     const { srcFile, emptySource } = await source(name);
     const locale = await text(
         'locale',
@@ -107,7 +117,18 @@ export async function getAnswers(options: CommandLine, repo: Repo, cwd: string):
     );
     const doBuild = await yesNo('doBuild', 'Compile Dictionary?', isHunspell);
 
-    return { name, friendlyName, description, srcFile, emptySource, locale, languageId, useTrie, doBuild };
+    return {
+        name,
+        friendlyName,
+        description,
+        packageDescription,
+        srcFile,
+        emptySource,
+        locale,
+        languageId,
+        useTrie,
+        doBuild,
+    };
 }
 
 type TextKey = { [K in keyof Answers]-?: Answers[K] extends string | undefined ? K : never }[keyof Answers];

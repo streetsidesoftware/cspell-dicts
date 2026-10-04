@@ -1,9 +1,10 @@
-import { Command } from 'commander';
+import { Command, Option } from 'commander';
 
 export interface Answers {
     name?: string;
     friendlyName?: string;
     description?: string;
+    packageDescription?: string;
     srcFile?: string;
     locale?: string;
     languageId?: string;
@@ -28,6 +29,7 @@ export const optionForAnswer: Record<keyof Answers, string> = {
     name: '<name> or --name',
     friendlyName: '--friendly-name',
     description: '--description',
+    packageDescription: '--package-description',
     srcFile: '<source>, --source, or --allow-missing-source',
     locale: '--locale',
     languageId: '--language-id',
@@ -39,6 +41,7 @@ interface Options {
     name?: string;
     friendlyName?: string;
     description?: string;
+    packageDescription?: string;
     source?: string;
     locale?: string;
     languageId?: string;
@@ -61,7 +64,14 @@ export function parseCommandLine(argv: string[]): CommandLine {
         .argument('[source]', 'the source word list or Hunspell .dic file (same as --source)')
         .option('--name <name>', 'the package directory name, such as en_AU or ruby')
         .option('--friendly-name <text>', 'a readable name, such as "Australian English"; default: from the name')
-        .option('--description <text>', 'a short description; default: "<Friendly name> dictionary for cspell."')
+        .option(
+            '--description <text>',
+            'what words it covers, such as "Ruby keywords and standard library names"; required, and not "for cspell"',
+        )
+        .option(
+            '--package-description <text>',
+            'the description npm shows; default: "<Friendly name> dictionary for cspell."',
+        )
         .option('--source <file>', 'the .txt word list or Hunspell .dic file, copied to src/')
         .option(
             '--allow-missing-source',
@@ -76,8 +86,9 @@ export function parseCommandLine(argv: string[]): CommandLine {
         .option('--no-trie', 'store as plain text; default for other sources')
         .option('--build', 'build the dictionary after creating it; default for existing Hunspell sources')
         .option('--no-build', 'do not build it')
-        .option('--root <dir>', 'the repo to create the package in; default: the repo this command is in')
-        .option('--skip-install', 'do not run pnpm install in the new package')
+        // For the tests; see the package's README.
+        .addOption(new Option('--root <dir>', 'the repo to create the package in').hideHelp())
+        .addOption(new Option('--skip-install', 'do not run pnpm install in the new package').hideHelp())
         .option('-y, --yes', 'use the defaults for anything not given, and never prompt')
         .addHelpText(
             'after',
@@ -85,7 +96,8 @@ export function parseCommandLine(argv: string[]): CommandLine {
                 '',
                 'Examples:',
                 '  pnpm create-dictionary',
-                '  pnpm create-dictionary --yes ruby ./ruby-words.txt --friendly-name Ruby --language-id ruby --no-build',
+                '  pnpm create-dictionary --yes ruby ./ruby-words.txt --friendly-name Ruby --language-id ruby --no-build \\',
+                '    --description "Ruby keywords and standard library names"',
             ].join('\n'),
         );
 
@@ -98,6 +110,7 @@ export function parseCommandLine(argv: string[]): CommandLine {
         name: oneOf('name', nameArg, opts.name),
         friendlyName: opts.friendlyName,
         description: opts.description,
+        packageDescription: opts.packageDescription,
         srcFile: oneOf('source', sourceArg, opts.source),
         locale: opts.locale,
         languageId: opts.languageId,

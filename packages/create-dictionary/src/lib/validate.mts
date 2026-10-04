@@ -40,6 +40,15 @@ export function validateLanguageId(anyLocale: boolean): Validate {
     };
 }
 
+export function validateDescription(value: string): string | true {
+    if (!value.trim())
+        return 'missing. Describe the words it covers, such as "Ruby keywords and standard library names".';
+    if (/\bfor cspell\b/i.test(value)) {
+        return '"for cspell" says nothing here. Describe the words it covers, such as "Ruby keywords and standard library names".';
+    }
+    return true;
+}
+
 /** Checks a source path, relative to `cwd`. A missing word list is checked separately. */
 export function sourceValidator(cwd: string): Validate {
     return (srcFile) => {
