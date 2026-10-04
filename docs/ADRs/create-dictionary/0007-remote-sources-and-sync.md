@@ -44,6 +44,10 @@ Options weighed:
   was weighed against jsDelivr; unpkg has had outages, and supporting both means two APIs.
 - **What to follow:** the latest release, which often doesn't track the words, or the commit or version fetched at
   creation, which goes stale.
+- **Which files:** globs or whole folders in `files:`, as `th_th`'s `--filter "th_TH/th_TH.*"` and `de_DE`'s
+  `dictionary-de/**` do today, so renamed and new upstream files arrive on their own. But the build names exact files,
+  so a rename needs a person anyway, and a pattern can pull very large or unreviewed files into the repo through a bot PR
+  that's merged on trust.
 - **The record:** keep the scripts; or a structured field in `package.json`, which npm doesn't know, can't have
   comments, and a reader can't identify. For the file format, JSON can't hold the comment that says what the file is,
   and `json5` drops comments when it writes a file back.
@@ -94,7 +98,7 @@ We will:
       url: https://github.com/marcoagpinto/aoo-mozilla-en-dict
   ```
 
-  The file has no schema, like the repo's other templates.
+  `files:` lists exact paths, never globs or folders. The file has no schema, like the repo's other templates.
 
 - **Sync with one generic command** in `scripts/`, next to `sync-github-files`. It reads `sources.yaml`, and for each
   source calls `sync-github-files` or reads from jsDelivr. It reports a clear error when the file is missing something
