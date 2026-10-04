@@ -1,10 +1,10 @@
-# 0005. The friendly name, the descriptions, the contributors, and where a dictionary is turned on
+# 0005. The friendly name, the descriptions, the contributors, and when a dictionary is enabled
 
 Status: Accepted
 
 ## Why
 
-Goal: easy to adopt. The default descriptions said only "for cspell", and the default turned a dictionary on for every
+Goal: easy to adopt. The default descriptions said only "for cspell", and the default enabled a dictionary for every
 file in every language. Maintainers fixed both by hand.
 
 ## Decision
@@ -43,8 +43,8 @@ A dictionary names and describes itself in several places:
   cspell." In the README and in cspell's settings, "for cspell" says nothing.
 - **`package.json`'s description** is what npm shows. 124 of 136 dictionaries say "for cspell" there, which tells
   someone searching npm what the package is for.
-- **Where it's turned on:** `languageSettings` matches `locale` and `languageId` (file type), with `*` for any. The
-  generator defaulted both to `*`, which turns a dictionary on for every file in every language, so users get its words
+- **When it's enabled:** `languageSettings` matches `locale` and `languageId` (file type), with `*` for any. The
+  generator defaulted both to `*`, which enables a dictionary for every file in every language, so users get its words
   wherever they spell check.
 
 Only 15 of 136 dictionaries list `contributors` in `package.json`; the template wrote an empty list. All 22 entries use
