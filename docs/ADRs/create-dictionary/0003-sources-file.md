@@ -10,7 +10,7 @@ that they can read. Today that record is a script per source.
 ## Decision
 
 The generator writes `src/sources.yaml`, next to the copies it describes, from the `--define-source*` and
-`--add-source-*` options, and lists it in `files` so it's published:
+`--add-source-*` options:
 
 ```yaml
 # The sources of this dictionary, read by `pnpm run sync`.
@@ -46,6 +46,8 @@ sources:
 - `files:` lists exact paths, never globs or folders.
 - There's no schema; tools report a clear error when something they need is missing.
 - People edit it; no tool rewrites it.
+- It isn't published. Its readers are the repo's tools; users see the sources in the README's Sources section
+  ([0008](./0008-sources-are-explained-in-the-readmes.md)).
 
 ## Consequences
 
@@ -72,8 +74,8 @@ A script per source is very hard to maintain, and a command line isn't a record 
 ## Rejected approaches
 
 - Keeping the scripts.
-- A structured field in `package.json`, such as `"cspell-dict": { "sources": … }`: always published with no new file,
-  but npm doesn't know it, it can't hold comments, and a reader can't tell what it is.
+- A structured field in `package.json`, such as `"cspell-dict": { "sources": … }`: no new file, but npm doesn't know it,
+  it can't hold comments, and a reader can't tell what it is.
 - JSON: can't hold the comment that says what the file is. JSON5: `json5` drops comments when it writes a file back.
 - Globs or folders in `files:`, as `th_th`'s `--filter "th_TH/th_TH.*"` and `de_DE`'s `dictionary-de/**` do today, so
   renamed and new upstream files arrive on their own. But the build names exact files, so a rename needs a person
