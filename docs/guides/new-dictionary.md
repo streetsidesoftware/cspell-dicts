@@ -197,14 +197,13 @@ Each option answers one question. Without `--yes`, any option you leave out is a
 
 `<name>` or `--name`. The directory the dictionary is created in, `dictionaries/<name>/`.
 
+- **What to give:** up to 50 letters, digits, `_`, and `-`.
 - **What it changes:** the directory, and from it the package name `@cspell/dict-<id>` and the dictionary ID `<id>`. The
   ID is the name in lowercase, with characters other than letters, digits, and `-` turned into `-`: `en_AU` gives
   `en-au`.
-- **What to give:** up to 50 letters, digits, `_`, and `-`. Names reserved on Windows, such as `con` or `aux`, aren't
-  allowed.
 - **Required.**
-- **Not allowed:** a name whose directory already exists, whose package name or dictionary ID another dictionary
-  already uses, or that's given both ways with different values.
+- **Not allowed:** a name reserved on Windows, such as `con` or `aux`, a name whose directory already exists, whose
+  package name or dictionary ID another dictionary already uses, or that's given both ways with different values.
 
 #### Friendly name
 
