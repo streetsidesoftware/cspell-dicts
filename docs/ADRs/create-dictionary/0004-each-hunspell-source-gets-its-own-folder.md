@@ -34,9 +34,12 @@ source named `en_XX`, from `vendor/`, with that file. As for any defined source,
 a warning, and when prompting, the generator asks for them. A source fetched from npm or a repository is named after
 the package or repository.
 
+Two sources with the same name are an error, before anything is written. The message says to name one of them with
+`--define-source <name>=<path>`.
+
 ## Consequences
 
 - Any number of Hunspell sources fit, each with its origin and license beside it.
 - New dictionaries match the newer layout (`hunspell-en_AU-large/`) rather than `src/hunspell/`. Moving existing
   dictionaries is out of scope.
-- Two sources whose `.dic` files have the same base name would get the same folder.
+- Two Hunspell files with the same base name, such as two `en_US.dic` files, need a name for one of them.
