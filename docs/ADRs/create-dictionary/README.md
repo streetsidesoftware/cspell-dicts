@@ -113,7 +113,3 @@ One PR per step. This section is removed once the feature ships.
 8. The sync command, and the state, gone marks, existence check, and size cap in `sync-github-files` ([0011](./0011-how-the-sync-handles-change.md)).
 9. npm sources through jsDelivr ([0010](./0010-remote-sources.md)).
 10. Remote sources at creation, the weekly `update-dictionary` script, and `--no-bail` in Update Dictionaries ([0010](./0010-remote-sources.md), [0012](./0012-when-sources-are-fetched.md)).
-
-## Provisional names
-
-- The npm sources' state file, the counterpart of `.sync-github-files.json`. Decide before building the maintain stage.

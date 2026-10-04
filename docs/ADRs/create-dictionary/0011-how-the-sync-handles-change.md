@@ -11,8 +11,10 @@ instead would break the weekly update for every dictionary.
 
 - **One sync command,** `sync-sources`, in `scripts/` next to `sync-github-files`, reads `src/sources.yaml` and syncs
   each source. A dictionary's `package.json` has one `sync` script that runs it.
-- **Stored identifiers.** A state file in each source's folder holds what the upstream returned: each GitHub file's blob
-  SHA, or an npm source's version and each file's hash. They're opaque; the sync compares what the upstream gave last
+- **Stored identifiers.** A state file in each source's folder holds what the upstream returned: `.sync-github-files.json`
+  with each GitHub file's blob SHA, or `.sync-npm-files.json` with an npm source's version and each file's hash. Both
+  handle a file whose local path differs from its upstream path ([0003](./0003-sources-file.md)), so each entry ties
+  the upstream path and its identifier to the local file. They're opaque; the sync compares what the upstream gave last
   time with what it gives now, and never calculates them. A file is fetched when its identifier changed or it's missing
   locally.
 - **Gone upstream.** When a named file or a whole source is gone, the sync keeps the local copy and marks it gone in the
@@ -28,7 +30,7 @@ instead would break the weekly update for every dictionary.
 - The stored identifiers label what was fetched, for the README's Sources section.
 - A file going away upstream never breaks the dictionary or the weekly PR. It stays frozen until a maintainer updates
   `sources.yaml`.
-- `sync-github-files` gains the existence check, the gone marks, and the cap.
+- `sync-github-files` gains the existence check, the gone marks, the cap, and files whose local path differs.
 
 ## Context
 
