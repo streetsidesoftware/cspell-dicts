@@ -51,7 +51,7 @@ That's the end state. It ships in stages, each usable on its own:
 2. **Sync:** a sync step for sources from npm or GitHub. It writes into the layout from stage 1, and saves maintainers
    the most cleanup.
 3. **Samples:** real files of the dictionary's type in `samples/`. Stage 1 already creates `samples/` with a static
-   word sample ([0009](./0009-a-static-sample-replaces-the-source-test.md)).
+   word sample ([0006](./0006-a-static-sample.md)).
 
 ## Out of scope
 
@@ -66,36 +66,28 @@ That's the end state. It ships in stages, each usable on its own:
   of code terms. The generator focuses on creating the initial dictionary; editing a complex one can come later, in it
   or another tool.
 - **Tuning a Hunspell dictionary's depth.** The generator sets a safe default
-  ([0015](./0015-hunspell-depth.md)); finding the right depth for a language is a later step.
+  ([0005](./0005-how-a-new-dictionary-is-built.md)); finding the right depth for a language is a later step.
 - **Making a dictionary public.** New dictionaries start private, and a maintainer publishes them later.
 
 ## Decisions
 
-| #                                                                         | Title                                                                               | Status             |
-| ------------------------------------------------------------------------- | ----------------------------------------------------------------------------------- | ------------------ |
-| [0001](./0001-name-and-sources-on-the-command-line.md)                    | How the name and the sources are given on the command line                          | Accepted           |
-| [0002](./0002-word-lists-and-hunspell-files-mix.md)                       | Word lists and Hunspell files can be mixed in one dictionary                        | Accepted           |
-| [0003](./0003-additional-words-file.md)                                   | Every new dictionary gets `src/additional_words.txt`                                | Accepted           |
-| [0004](./0004-each-hunspell-source-gets-its-own-folder.md)                | Each Hunspell source gets its own folder in `src/`                                  | Accepted           |
-| [0005](./0005-a-folder-source-keeps-only-its-words-license-and-readme.md) | A folder source keeps only its word lists, license, and README                      | Superseded by 0006 |
-| [0006](./0006-third-party-sources-are-defined-by-name.md)                 | Third-party sources are defined by name, with their files, license, README, and URL | Accepted           |
-| [0007](./0007-exclude-words-file.md)                                      | Every new dictionary gets `src/exclude_words.txt`                                   | Accepted           |
-| [0008](./0008-missing-sources-need-allow-missing-source.md)               | A missing source is an error unless `--allow-missing-source` is given               | Accepted           |
-| [0009](./0009-a-static-sample-replaces-the-source-test.md)                | A static sample of words replaces testing the source                                | Accepted           |
-| [0010](./0010-friendly-name-and-descriptions.md)                          | The friendly name and the descriptions                                              | Accepted           |
-| [0011](./0011-locale-or-file-type-never-both-any.md)                      | A dictionary sets its locale or its file type, never both `*`                       | Accepted           |
-| [0012](./0012-when-a-dictionary-is-stored-as-a-trie.md)                   | When a dictionary is stored as a trie                                               | Accepted           |
-| [0013](./0013-word-list-dictionaries-are-built-at-creation.md)            | Word-list dictionaries are built at creation; Hunspell ones aren't by default       | Accepted           |
-| [0014](./0014-test-options-are-hidden.md)                                 | Options for tests are hidden from `--help`                                          | Accepted           |
-| [0015](./0015-hunspell-depth.md)                                          | Hunspell sources default to a depth of 1                                            | Accepted           |
-| [0016](./0016-prompting-for-third-party-sources.md)                       | Prompting asks for third-party sources in a loop                                    | Accepted           |
-| [0017](./0017-github-sources-follow-the-default-branch.md)                | A GitHub source follows its default branch                                          | Accepted           |
-| [0018](./0018-remote-sources-are-fetched-first.md)                        | Remote sources are fetched first, and any failure stops creation                    | Accepted           |
-| [0019](./0019-remote-sources-are-npm-and-github.md)                       | Remote sources come from npm or GitHub; download pages are local sources            | Accepted           |
-| [0020](./0020-sources-are-recorded-in-a-sources-file.md)                  | A dictionary's sources are recorded in a sources file                               | Accepted           |
-| [0021](./0021-sources-are-explained-in-the-readmes.md)                    | Sources are explained in the dictionary's README and in `src/README.md`             | Accepted           |
-| [0022](./0022-prefer-the-source-repository-npm-from-a-cdn.md)             | Prefer the source repository; an npm source is read from jsDelivr                   | Accepted           |
-| [0023](./0023-sources-sync-weekly.md)                                     | Sources are synced weekly, in Update Dictionaries                                   | Accepted           |
+| #                                                       | Title                                                                            | Status   |
+| ------------------------------------------------------- | -------------------------------------------------------------------------------- | -------- |
+| [0001](./0001-name-and-sources-on-the-command-line.md)  | How the name and the sources are given on the command line                       | Accepted |
+| [0002](./0002-third-party-sources.md)                   | Third-party sources are defined by name, each in its own folder                  | Accepted |
+| [0003](./0003-additional-and-exclude-words.md)          | Every new dictionary gets `src/additional_words.txt` and `src/exclude_words.txt` | Accepted |
+| [0004](./0004-names-descriptions-and-where-it-is-on.md) | The friendly name, the descriptions, and where a dictionary is turned on         | Accepted |
+| [0005](./0005-how-a-new-dictionary-is-built.md)         | How a new dictionary is built: trie, build at creation, and Hunspell depth       | Accepted |
+| [0006](./0006-a-static-sample.md)                       | A static sample of words tests a new dictionary                                  | Accepted |
+| [0007](./0007-remote-sources-and-sync.md)               | Remote sources are recorded in `sources.yaml` and synced weekly                  | Accepted |
+| [0008](./0008-sources-are-explained-in-the-readmes.md)  | Sources are explained in the dictionary's README and in `src/README.md`          | Accepted |
+| [0009](./0009-test-options-are-hidden.md)               | Options for tests are hidden from `--help`                                       | Accepted |
+
+## Open questions
+
+- Where the sync records what it fetched: each GitHub file's SHA, so a sync with nothing new skips it, and an npm
+  source's version. `sync-github-files` writes `.sync-github-files.json` into the folder it syncs, but a source's folder
+  holds only upstream files ([0002](./0002-third-party-sources.md)). Decide before building the sync stage.
 
 ## Provisional names
 

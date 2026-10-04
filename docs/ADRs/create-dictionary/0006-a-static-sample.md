@@ -1,10 +1,10 @@
-# 0009. A static sample of words replaces testing the source
+# 0006. A static sample of words tests a new dictionary
 
 Status: Accepted
 
 ## Context
 
-A new dictionary's `test` script runs the start of its source through cspell:
+A new dictionary's `test` script ran the start of its source through cspell:
 
 ```json
 "test": "head -n 1000 \"src/<name>.txt\" | cspell -c ./cspell-ext.json \"--locale=<locale>\" \"--languageId=<languageId>\" stdin"
@@ -12,14 +12,13 @@ A new dictionary's `test` script runs the start of its source through cspell:
 
 It's a smoke test: did the dictionary build, does `cspell-ext.json` reference the files in `dict/` correctly, and can
 cspell use it. Any list of words the dictionary contains would do; the source was simply the quickest list to grab.
-With several sources and the files from [0003](./0003-additional-words-file.md) and [0007](./0007-exclude-words-file.md),
-reading the source fails in ways that have nothing to do with the dictionary:
+With several sources, `src/additional_words.txt`, and `src/exclude_words.txt`, reading the source fails in ways that
+have nothing to do with the dictionary:
 
 1. Comment lines in the source are checked as words, and can be flagged.
 2. A source word listed in `src/exclude_words.txt` is flagged, by design.
 3. `head` doesn't exist on Windows.
-4. Which source is "first" isn't defined once sources come from both positional arguments and `--define-source`
-   ([0006](./0006-third-party-sources-are-defined-by-name.md)).
+4. Which source is "first" isn't defined once sources come from both positional arguments and `--define-source`.
 5. A dictionary that starts empty only has its header line to check.
 
 Reading words back from `dict/` would avoid most of these, but it tests the build with its own output. About 40

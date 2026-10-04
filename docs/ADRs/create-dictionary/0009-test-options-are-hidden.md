@@ -1,4 +1,4 @@
-# 0014. Options for tests are hidden from `--help`
+# 0009. Options for tests are hidden from `--help`
 
 Status: Accepted
 
