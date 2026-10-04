@@ -110,6 +110,8 @@ describe('a new package', () => {
             'dict/plain.txt',
             'src/README.md',
             'src/words.txt',
+            'src/additional_words.txt',
+            'src/exclude_words.txt',
         ]) {
             assert.ok(existsSync(join(root, 'dictionaries', 'plain', file)), file);
         }
@@ -144,6 +146,13 @@ describe('a new package', () => {
         assert.equal(result.code, 0, result.stderr);
         const { keywords } = JSON.parse(packageFile('searchable', 'package.json'));
         assert.deepEqual(keywords.slice(-2), ['golang', 'go language']);
+    });
+
+    it('leaves out the word files with --no-additional-words and --no-exclude-words', () => {
+        const result = createYes('bare', 'words.txt', '--no-additional-words', '--no-exclude-words');
+        assert.equal(result.code, 0, result.stderr);
+        assert.ok(!existsSync(join(root, 'dictionaries', 'bare', 'src', 'additional_words.txt')));
+        assert.ok(!existsSync(join(root, 'dictionaries', 'bare', 'src', 'exclude_words.txt')));
     });
 
     it('escapes values in JSON and YAML files', () => {

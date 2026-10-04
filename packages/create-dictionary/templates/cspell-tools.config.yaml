@@ -4,6 +4,7 @@ targets:
   - name: '<%= packageName %>'
     sources:
       - <%- sources %>
+    excludeWordsFrom: <%- excludeWordsFrom %>
     format: '<%= format %>'
     targetDirectory: './dict'
     generateNonStrict: <%= generateNonStrict %>

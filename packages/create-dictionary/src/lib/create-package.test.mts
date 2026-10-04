@@ -31,6 +31,8 @@ function settings(name: string, more: Partial<Settings>): Settings {
         packageDescription: 'Test dictionary for cspell.',
         contributors: [],
         keywords: [],
+        additionalWords: true,
+        excludeWords: true,
         sources: [{ file: 'words.txt', empty: false }],
         locale: '*',
         languageId: 'ruby',
@@ -102,6 +104,24 @@ describe('createPackage', () => {
         assert.deepEqual(keywords.slice(-1), ['golang']);
         assert.equal(keywords.filter((k: string) => k === 'spelling').length, 1);
         assert.equal(keywords.filter((k: string) => k === 'kw').length, 1);
+    });
+
+    it('writes the word files, and lists them in the build', () => {
+        const dir = createPackage(settings('wordfiles', {}), repo, root);
+        assert.match(read(dir, 'src/additional_words.txt'), /^# Words to add/);
+        assert.match(read(dir, 'src/exclude_words.txt'), /^# Words to leave out/);
+        const config = read(dir, 'cspell-tools.config.yaml');
+        assert.match(config, /filename: 'src\/additional_words\.txt'/);
+        assert.match(config, /excludeWordsFrom: \['src\/exclude_words\.txt'\]/);
+    });
+
+    it('leaves the word files out when asked', () => {
+        const dir = createPackage(settings('nowordfiles', { additionalWords: false, excludeWords: false }), repo, root);
+        assert.ok(!existsSync(join(dir, 'src/additional_words.txt')));
+        assert.ok(!existsSync(join(dir, 'src/exclude_words.txt')));
+        const config = read(dir, 'cspell-tools.config.yaml');
+        assert.doesNotMatch(config, /additional_words/);
+        assert.match(config, /excludeWordsFrom: \[\]/);
     });
 
     it('starts an empty word list for a missing source', () => {

@@ -26,6 +26,8 @@ export interface Source {
 
 export type Settings = Omit<Required<Answers>, 'srcFiles'> & {
     sources: Source[];
+    additionalWords: boolean;
+    excludeWords: boolean;
 };
 
 /**
@@ -141,7 +143,10 @@ export async function getAnswers(options: CommandLine, repo: Repo, cwd: string):
     /** Drop a source given twice, such as both files of a Hunspell pair, and refuse two copied to the same file. */
     function checkCopies(list: Source[]): Source[] {
         const bySource = new Map(list.map((source) => [resolve(cwd, source.file), source]));
-        const copies = new Map<string, string>();
+        // The files create-dictionary writes in src/ itself.
+        const copies = new Map<string, string>([['README.md', 'src/README.md']]);
+        if (options.additionalWords) copies.set('additional_words.txt', 'src/additional_words.txt');
+        if (options.excludeWords) copies.set('exclude_words.txt', 'src/exclude_words.txt');
         for (const { file } of bySource.values()) {
             for (const copy of isHunspellFile(file) ? hunspellPair(file) : [file]) {
                 const other = copies.get(basename(copy));
@@ -210,6 +215,8 @@ export async function getAnswers(options: CommandLine, repo: Repo, cwd: string):
         contributors: people,
         keywords: searchWords,
         sources: srcs,
+        additionalWords: options.additionalWords,
+        excludeWords: options.excludeWords,
         locale,
         languageId,
         useTrie,
