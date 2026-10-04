@@ -6,7 +6,7 @@ import { confirm, input } from '@inquirer/prompts';
 import { title, toFriendlyName } from './names.mts';
 import { type Answers, type CommandLine, optionForAnswer } from './options.mts';
 import { gitUserName, readTakenNames, type Repo } from './repo.mts';
-import { isHunspellFile } from './source.mts';
+import { hunspellPair, isHunspellFile, sourceFile } from './source.mts';
 import {
     nameValidator,
     sourceValidator,
@@ -16,9 +16,15 @@ import {
     validateLanguageId,
 } from './validate.mts';
 
-export type Settings = Required<Answers> & {
-    /** The source is missing: start with an empty word list. */
-    emptySource: boolean;
+export interface Source {
+    /** The path as given, relative to where the command runs; a Hunspell source is its .dic file. */
+    file: string;
+    /** The file is missing: start with an empty word list. */
+    empty: boolean;
+}
+
+export type Settings = Omit<Required<Answers>, 'srcFiles'> & {
+    sources: Source[];
 };
 
 /**
@@ -28,7 +34,7 @@ export async function getAnswers(options: CommandLine, repo: Repo, cwd: string):
     const { answers: given, yes, allowMissingSource } = options;
     const validateSource = sourceValidator(cwd);
     const keys = Object.keys(optionForAnswer) as (keyof Answers)[];
-    const missing = keys.filter((key) => given[key] === undefined && !(key === 'srcFile' && allowMissingSource));
+    const missing = keys.filter((key) => given[key] === undefined && !(key === 'srcFiles' && allowMissingSource));
     const noPrompts = yes || !missing.length;
     if (!noPrompts && !process.stdin.isTTY) {
         const options = missing.map((key) => optionForAnswer[key]).join(', ');
@@ -73,37 +79,61 @@ export async function getAnswers(options: CommandLine, repo: Repo, cwd: string):
         }
     }
 
-    async function source(name: string): Promise<{ srcFile: string; emptySource: boolean }> {
-        const srcFile = given.srcFile;
-        if (srcFile === undefined && noPrompts) {
+    async function sources(name: string): Promise<Source[]> {
+        const files = given.srcFiles;
+        if (files !== undefined) return checkCopies(files.map(givenSource));
+        if (noPrompts) {
             if (!allowMissingSource) {
                 throw new Error(
                     'missing source. Give <source> or --source, or --allow-missing-source to start with an empty word list.',
                 );
             }
-            return { srcFile: name + '.txt', emptySource: true };
+            return [{ file: name + '.txt', empty: true }];
         }
-        if (srcFile !== undefined) {
-            const valid = validateSource(srcFile);
-            if (valid !== true) throw new Error(valid);
-            const found = existsSync(resolve(cwd, srcFile));
-            if (!found && !allowMissingSource) {
-                throw new Error(`${srcFile} not found. Give --allow-missing-source to start with an empty word list.`);
-            }
-            return { srcFile, emptySource: !found };
+        const asked = [await askSource(name + '.txt')];
+        while (await confirm({ message: 'Add another source file?', default: false })) {
+            asked.push(await askSource());
         }
+        return checkCopies(asked);
+    }
+
+    function givenSource(file: string): Source {
+        const valid = validateSource(file);
+        if (valid !== true) throw new Error(valid);
+        const found = existsSync(resolve(cwd, file));
+        if (!found && !allowMissingSource) {
+            throw new Error(`${file} not found. Give --allow-missing-source to start with an empty word list.`);
+        }
+        return { file: sourceFile(file), empty: !found };
+    }
+
+    async function askSource(def?: string): Promise<Source> {
         for (;;) {
-            const typed = await input({
-                message: 'Source File Name',
-                default: name + '.txt',
-                validate: validateSource,
-            });
-            if (existsSync(resolve(cwd, typed))) return { srcFile: typed, emptySource: false };
+            const typed = await input({ message: 'Source file', default: def, validate: validateSource });
+            if (existsSync(resolve(cwd, typed))) return { file: sourceFile(typed), empty: false };
             const message = `${typed} not found. Create an empty src/${basename(typed)}?`;
             if (allowMissingSource || (await confirm({ message, default: true }))) {
-                return { srcFile: typed, emptySource: true };
+                return { file: typed, empty: true };
             }
         }
+    }
+
+    /** Drop a source given twice, such as both files of a Hunspell pair, and refuse two copied to the same file. */
+    function checkCopies(list: Source[]): Source[] {
+        const bySource = new Map(list.map((source) => [resolve(cwd, source.file), source]));
+        const copies = new Map<string, string>();
+        for (const { file } of bySource.values()) {
+            for (const copy of isHunspellFile(file) ? hunspellPair(file) : [file]) {
+                const other = copies.get(basename(copy));
+                if (other !== undefined) {
+                    throw new Error(
+                        `${other} and ${copy} would both be copied to src/${basename(copy)}. Rename one of them.`,
+                    );
+                }
+                copies.set(basename(copy), copy);
+            }
+        }
+        return [...bySource.values()];
     }
 
     const taken = await readTakenNames(repo);
@@ -130,7 +160,7 @@ export async function getAnswers(options: CommandLine, repo: Repo, cwd: string):
         title(friendlyName) + ' dictionary for cspell.',
     );
     const people = await contributors();
-    const { srcFile, emptySource } = await source(name);
+    const srcs = await sources(name);
     const locale = await text(
         'locale',
         'Language locale, example: "en,en-US" for English and English US, "fr" for French, or use "*" for programming language dictionaries.',
@@ -143,7 +173,7 @@ export async function getAnswers(options: CommandLine, repo: Repo, cwd: string):
         anyLocale && !noPrompts ? undefined : '*',
         validateLanguageId(anyLocale),
     );
-    const isHunspell = isHunspellFile(srcFile);
+    const isHunspell = srcs.some((source) => isHunspellFile(source.file));
     const useTrie = await yesNo(
         'useTrie',
         'Store as Trie: Mainly used for natural language dictionaries to store their large sizes.',
@@ -157,8 +187,7 @@ export async function getAnswers(options: CommandLine, repo: Repo, cwd: string):
         description,
         packageDescription,
         contributors: people,
-        srcFile,
-        emptySource,
+        sources: srcs,
         locale,
         languageId,
         useTrie,

@@ -6,7 +6,7 @@ export interface Answers {
     description?: string;
     packageDescription?: string;
     contributors?: string[];
-    srcFile?: string;
+    srcFiles?: string[];
     locale?: string;
     languageId?: string;
     useTrie?: boolean;
@@ -32,7 +32,7 @@ export const optionForAnswer: Record<keyof Answers, string> = {
     description: '--description',
     packageDescription: '--package-description',
     contributors: '--contributor',
-    srcFile: '<source>, --source, or --allow-missing-source',
+    srcFiles: '<source>, --source, or --allow-missing-source',
     locale: '--locale',
     languageId: '--language-id',
     useTrie: '--trie or --no-trie',
@@ -45,7 +45,7 @@ interface Options {
     description?: string;
     packageDescription?: string;
     contributor?: string[];
-    source?: string;
+    source?: string[];
     locale?: string;
     languageId?: string;
     trie?: boolean;
@@ -64,7 +64,7 @@ export function parseCommandLine(argv: string[]): CommandLine {
                 'It prompts for anything not given as an option. With --yes, it uses the defaults instead and never prompts.',
         )
         .argument('[name]', 'the directory name for the dictionary, such as en_AU or ruby (same as --name)')
-        .argument('[source]', 'the source word list or Hunspell .dic file (same as --source)')
+        .argument('[sources...]', 'the source word lists or Hunspell .dic files (same as --source)')
         .option('--name <name>', 'the directory name for the dictionary, such as en_AU or ruby')
         .option('--friendly-name <text>', 'a readable name, such as "Australian English"; default: from the name')
         .option(
@@ -80,7 +80,11 @@ export function parseCommandLine(argv: string[]): CommandLine {
             'someone who created or maintains the dictionary: "Name", "Name <email>", or "Name (url)"; repeat it for several',
             (value: string, previous: string[] = []) => [...previous, value],
         )
-        .option('--source <file>', 'the .txt word list or Hunspell .dic file, copied to src/')
+        .option(
+            '--source <file>',
+            'a .txt word list or Hunspell .dic file, copied to src/; repeat it for several',
+            (value: string, previous: string[] = []) => [...previous, value],
+        )
         .option(
             '--allow-missing-source',
             'if the source is missing, create an empty word list (src/<name>.txt without --source); not for Hunspell files',
@@ -111,7 +115,7 @@ export function parseCommandLine(argv: string[]): CommandLine {
 
     program.parse(argv, { from: 'user' });
 
-    const [nameArg, sourceArg] = program.args;
+    const [nameArg, ...sourceArgs] = program.args;
     const opts = program.opts<Options>();
 
     const answers: Answers = {
@@ -120,7 +124,7 @@ export function parseCommandLine(argv: string[]): CommandLine {
         description: opts.description,
         packageDescription: opts.packageDescription,
         contributors: opts.contributor,
-        srcFile: oneOf('source', sourceArg, opts.source),
+        srcFiles: combine(sourceArgs, opts.source ?? []),
         locale: opts.locale,
         languageId: opts.languageId,
         useTrie: opts.trie,
@@ -134,6 +138,12 @@ export function parseCommandLine(argv: string[]): CommandLine {
         root: opts.root,
         skipInstall: !!opts.skipInstall,
     };
+
+    /** Sources given positionally and as --source, in order, each once. */
+    function combine(args: string[], options: string[]): string[] | undefined {
+        const all = [...new Set([...args, ...options])];
+        return all.length ? all : undefined;
+    }
 
     function oneOf(name: string, arg: string | undefined, option: string | undefined): string | undefined {
         if (arg !== undefined && option !== undefined && arg !== option) {

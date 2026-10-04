@@ -18,6 +18,8 @@ before(() => {
     writeFileSync(join(root, 'words.txt'), 'zorbal\n');
     writeFileSync(join(root, 'pair.dic'), '1\nzorbal\n');
     writeFileSync(join(root, 'pair.aff'), 'SET UTF-8\n');
+    mkdirSync(join(root, 'sub'));
+    writeFileSync(join(root, 'sub', 'words.txt'), 'quixly\n');
 });
 
 after(() => rmSync(root, { recursive: true, force: true }));
@@ -36,7 +38,7 @@ function options(answers: Answers, more: Partial<CommandLine> = {}): CommandLine
 describe('getAnswers', () => {
     it('fills in defaults with --yes', async () => {
         const settings = await getAnswers(
-            options({ name: 'medical_terms', srcFile: 'words.txt', languageId: 'markdown' }),
+            options({ name: 'medical_terms', srcFiles: ['words.txt'], languageId: 'markdown' }),
             repo,
             root,
         );
@@ -46,8 +48,7 @@ describe('getAnswers', () => {
             description: 'Test words',
             packageDescription: 'Medical Terms dictionary for cspell.',
             contributors: [],
-            srcFile: 'words.txt',
-            emptySource: false,
+            sources: [{ file: 'words.txt', empty: false }],
             locale: '*',
             languageId: 'markdown',
             useTrie: false,
@@ -56,14 +57,14 @@ describe('getAnswers', () => {
     });
 
     it('defaults to a trie and a build for a Hunspell source', async () => {
-        const settings = await getAnswers(options({ name: 'xx', srcFile: 'pair.dic', locale: 'xx' }), repo, root);
+        const settings = await getAnswers(options({ name: 'xx', srcFiles: ['pair.dic'], locale: 'xx' }), repo, root);
         assert.equal(settings.useTrie, true);
         assert.equal(settings.doBuild, true);
     });
 
     it('keeps given values over defaults', async () => {
         const settings = await getAnswers(
-            options({ name: 'ruby', srcFile: 'pair.dic', languageId: 'ruby', useTrie: false, doBuild: false }),
+            options({ name: 'ruby', srcFiles: ['pair.dic'], languageId: 'ruby', useTrie: false, doBuild: false }),
             repo,
             root,
         );
@@ -77,22 +78,54 @@ describe('getAnswers', () => {
             repo,
             root,
         );
-        assert.equal(settings.srcFile, 'ruby.txt');
-        assert.equal(settings.emptySource, true);
+        assert.deepEqual(settings.sources, [{ file: 'ruby.txt', empty: true }]);
     });
 
     it('marks a missing source as empty with --allow-missing-source', async () => {
         const settings = await getAnswers(
-            options({ name: 'ruby', srcFile: 'nope.txt', languageId: 'ruby' }, { allowMissingSource: true }),
+            options({ name: 'ruby', srcFiles: ['nope.txt'], languageId: 'ruby' }, { allowMissingSource: true }),
             repo,
             root,
         );
-        assert.equal(settings.emptySource, true);
+        assert.deepEqual(settings.sources, [{ file: 'nope.txt', empty: true }]);
+    });
+
+    it('combines several sources, mixing word lists and Hunspell files', async () => {
+        const settings = await getAnswers(
+            options({ name: 'mixed', srcFiles: ['words.txt', 'pair.aff'], locale: 'xx' }),
+            repo,
+            root,
+        );
+        assert.deepEqual(settings.sources, [
+            { file: 'words.txt', empty: false },
+            { file: 'pair.dic', empty: false },
+        ]);
+        assert.equal(settings.useTrie, true);
+    });
+
+    it('counts both files of a Hunspell pair as one source', async () => {
+        const settings = await getAnswers(
+            options({ name: 'pair', srcFiles: ['pair.dic', 'pair.aff'], locale: 'xx' }),
+            repo,
+            root,
+        );
+        assert.deepEqual(settings.sources, [{ file: 'pair.dic', empty: false }]);
+    });
+
+    it('refuses two sources copied to the same file', async () => {
+        await assert.rejects(
+            getAnswers(
+                options({ name: 'clash', srcFiles: ['words.txt', 'sub/words.txt'], languageId: 'ruby' }),
+                repo,
+                root,
+            ),
+            /would both be copied to src\/words\.txt/,
+        );
     });
 
     it('fails on a missing source without --allow-missing-source', async () => {
         await assert.rejects(
-            getAnswers(options({ name: 'ruby', srcFile: 'nope.txt', languageId: 'ruby' }), repo, root),
+            getAnswers(options({ name: 'ruby', srcFiles: ['nope.txt'], languageId: 'ruby' }), repo, root),
             /nope\.txt not found/,
         );
     });
@@ -104,7 +137,7 @@ describe('getAnswers', () => {
     it('requires a description with --yes', async () => {
         await assert.rejects(
             getAnswers(
-                options({ name: 'ruby', description: undefined, srcFile: 'words.txt', languageId: 'ruby' }),
+                options({ name: 'ruby', description: undefined, srcFiles: ['words.txt'], languageId: 'ruby' }),
                 repo,
                 root,
             ),
@@ -117,7 +150,7 @@ describe('getAnswers', () => {
             options({
                 name: 'ruby',
                 contributors: [' Ana Lee (https://github.com/analee) ', 'Bo Chen <bo@example.com>'],
-                srcFile: 'words.txt',
+                srcFiles: ['words.txt'],
                 languageId: 'ruby',
             }),
             repo,
@@ -129,7 +162,12 @@ describe('getAnswers', () => {
     it("refuses a contributor that is not in npm's form", async () => {
         await assert.rejects(
             getAnswers(
-                options({ name: 'ruby', contributors: ['<bo@example.com>'], srcFile: 'words.txt', languageId: 'ruby' }),
+                options({
+                    name: 'ruby',
+                    contributors: ['<bo@example.com>'],
+                    srcFiles: ['words.txt'],
+                    languageId: 'ruby',
+                }),
                 repo,
                 root,
             ),
@@ -139,7 +177,7 @@ describe('getAnswers', () => {
 
     it('keeps a given npm description', async () => {
         const settings = await getAnswers(
-            options({ name: 'ruby', packageDescription: 'Ruby words.', srcFile: 'words.txt', languageId: 'ruby' }),
+            options({ name: 'ruby', packageDescription: 'Ruby words.', srcFiles: ['words.txt'], languageId: 'ruby' }),
             repo,
             root,
         );
@@ -147,12 +185,12 @@ describe('getAnswers', () => {
     });
 
     it('fails when the locale and the file type are both "*"', async () => {
-        await assert.rejects(getAnswers(options({ name: 'ruby', srcFile: 'words.txt' }), repo, root), /every file/);
+        await assert.rejects(getAnswers(options({ name: 'ruby', srcFiles: ['words.txt'] }), repo, root), /every file/);
     });
 
     it('prefixes an invalid value with its option', async () => {
         await assert.rejects(
-            getAnswers(options({ name: 'a.b', srcFile: 'words.txt', languageId: 'ruby' }), repo, root),
+            getAnswers(options({ name: 'a.b', srcFiles: ['words.txt'], languageId: 'ruby' }), repo, root),
             /<name> or --name: "a\.b" can only have letters/,
         );
     });

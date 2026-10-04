@@ -79,7 +79,7 @@ pnpm create-dictionary <name> <path/to/source/words> --language-id <file type>
 To run it with no questions, add `--yes`. Fields you leave out get their defaults. It stops with an error if:
 
 - the name is missing, `dictionaries/<name>/` already exists, or its package name or dictionary ID is already in use
-- the source file is missing (see `--allow-missing-source` below)
+- a source file is missing (see `--allow-missing-source` below), or two have the same name
 - a Hunspell `.dic` file has no `.aff` file next to it, or the other way around
 - the description is missing
 - the locale and the file type are both `*`
@@ -102,7 +102,7 @@ Each field is described in [Create-dictionary options](#create-dictionary-option
 | [description](#description)         | `--description`                        | Required. The words it covers.                              |
 | [npm description](#npm-description) | `--package-description`                | The description npm shows.                                  |
 | [contributors](#contributors)       | `--contributor`                        | The people who create and maintain this dictionary.         |
-| [source file](#source-file)         | `<path/to/source/words>` or `--source` | The word list or Hunspell `.dic` file to build from.        |
+| [source file](#source-file)         | `<path/to/source/words>` or `--source` | The word lists and Hunspell `.dic` files to build from.     |
 | [missing source](#missing-source)   | `--allow-missing-source`               | Start with an empty word list.                              |
 | [locale](#locale)                   | `--locale`                             | The languages that turn the dictionary on, such as `en-AU`. |
 | [file type](#file-type)             | `--language-id`                        | The file types that turn the dictionary on, such as `ruby`. |
@@ -238,21 +238,25 @@ Each option answers one question. Without `--yes`, any option you leave out is a
 
 #### Source file
 
-`<path/to/source/words>` or `--source`. The file to build the dictionary from.
+`<path/to/source/words>` or `--source`. The files to build the dictionary from.
 
-- **Values:** a word list, one word per line, usually a `.txt` file; or a Hunspell `.dic` file. A path is relative to
+- **Values:** word lists, one word per line, usually `.txt` files; and Hunspell `.dic` files. A path is relative to
   where you run the command.
-- **Sets:** a copy of the file in the dictionary's `src/`, and the source in `cspell-tools.config.yaml`. A Hunspell
-  `.dic` brings its `.aff` file with it, and either one can be given.
-- **Errors:** the file doesn't exist (see [Missing source](#missing-source)), or a Hunspell file is missing its pair.
-  Giving the source both ways with different values is an error too.
+- **Several:** give several after the name, repeat `--source`, or both. They're combined, and word lists and Hunspell
+  files can be mixed: `pnpm create-dictionary en_XX en_XX.dic extra-words.txt`.
+- **Sets:** a copy of each file in the dictionary's `src/`, and each one as a source in `cspell-tools.config.yaml`. A
+  Hunspell `.dic` brings its `.aff` file with it. Either file of the pair can be given, or both, and it counts as one
+  source.
+- **Errors:** a file doesn't exist (see [Missing source](#missing-source)), a Hunspell file is missing its pair, or two
+  files have the same name and would both be copied to the same file in `src/`.
 
 #### Missing source
 
 `--allow-missing-source`. Start with an empty word list when there's no source yet.
 
 - **Without a source:** it creates an empty `src/<name>.txt`.
-- **With a source that doesn't exist:** it creates an empty file under that name in `src/`.
+- **With a source that doesn't exist:** it creates an empty file under that name in `src/`. Each source is checked on
+  its own, so the others are still copied.
 - **When asking:** a missing file asks whether to create it empty instead.
 - It doesn't apply to Hunspell files, which must exist.
 

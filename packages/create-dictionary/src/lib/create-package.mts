@@ -17,8 +17,9 @@ export function createPackage(answers: Settings, repo: Repo, cwd: string): strin
     const packageName = toPackageName(name);
     const dstFileName = `dict/${packageName}.${useTrie ? 'trie' : 'txt'}`;
 
-    const srcFile = resolve(cwd, answers.srcFile);
-    const isHunspell = isHunspellFile(srcFile);
+    // The test script reads the first source until samples replace it.
+    const first = answers.sources[0];
+    const firstIsHunspell = isHunspellFile(first.file);
 
     const values: Record<string, string> = {
         name,
@@ -29,12 +30,13 @@ export function createPackage(answers: Settings, repo: Repo, cwd: string): strin
         languageId: answers.languageId,
         packageName,
         fullPackageName: '@cspell/dict-' + packageName,
-        srcFile: 'src/' + basename(srcFile),
+        srcFile: 'src/' + basename(first.file),
+        sources: answers.sources.map((source) => buildSource('src/' + basename(source.file))).join('\n      - '),
         dstFullFileName: dstFileName,
         format: useTrie ? 'trie3' : 'plaintext',
         generateNonStrict: useTrie ? 'true' : 'false',
-        srcFileReader: isHunspell ? 'hunspell-reader words -n 1000 -m 0' : 'head -n 1000',
-        prepareScript: isHunspell ? 'echo OK' : 'pnpm run build',
+        srcFileReader: firstIsHunspell ? 'hunspell-reader words -n 1000 -m 0' : 'head -n 1000',
+        prepareScript: answers.sources.some((source) => isHunspellFile(source.file)) ? 'echo OK' : 'pnpm run build',
         prepublishOnlyScript: 'echo OK',
         year: String(new Date().getFullYear()),
     };
@@ -45,11 +47,14 @@ export function createPackage(answers: Settings, repo: Repo, cwd: string): strin
         const content = fillTemplate(template, values, extname(file));
         write(file, file === 'package.json' ? withContributors(content, answers.contributors) : content);
     }
-    if (answers.emptySource) {
-        write(values.srcFile, `# ${title(friendlyName)} Terms\n`);
-    } else {
-        for (const file of isHunspell ? hunspellPair(srcFile) : [srcFile]) {
-            copyFileSync(file, created(join('src', basename(file))));
+    for (const source of answers.sources) {
+        if (source.empty) {
+            write(join('src', basename(source.file)), `# ${title(friendlyName)} Terms\n`);
+            continue;
+        }
+        const file = resolve(cwd, source.file);
+        for (const copy of isHunspellFile(file) ? hunspellPair(file) : [file]) {
+            copyFileSync(copy, created(join('src', basename(copy))));
         }
     }
     write(dstFileName, '# dest');
@@ -60,6 +65,14 @@ export function createPackage(answers: Settings, repo: Repo, cwd: string): strin
         const pkg = JSON.parse(packageJson);
         pkg.contributors = contributors;
         return JSON.stringify(pkg, null, 2) + '\n';
+    }
+
+    /** A source in cspell-tools.config.yaml: the template has the first item's "- ", and the join adds the rest. */
+    function buildSource(filename: string): string {
+        return [
+            `filename: '${filename.replaceAll("'", "''")}'`,
+            '        maxDepth: 1 # This is set to 1 to prevent initial builds from taking too long.',
+        ].join('\n');
     }
 
     function created(file: string): string {
