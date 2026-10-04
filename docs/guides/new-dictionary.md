@@ -112,20 +112,23 @@ Each field is described in [Create-dictionary options](#create-dictionary-option
 It creates `dictionaries/<name>/` with `version` `0.0.1-alpha.0` and `private: true`, so the dictionary isn't published. A
 maintainer makes it public once the dictionary has been verified.
 
-## 5. Fill in the dictionary
+## 5. The resulting dictionary
 
-- **`src/`:** the word lists, formatted as in [Word lists](../word-lists.md#format).
-- **`cspell-tools.config.yaml`:** the targets and their sources. Set `split` and `allowedSplitWords` for lists of
-  identifiers, and `excludeWordsFrom` if some upstream words must be left out. See the [Glossary](../glossary.md).
-- **`cspell-ext.json`:** the dictionary definitions and `languageSettings`, as decided in step 2. See
-  [Dictionary definitions](#dictionary-definitions).
-- **`package.json`:**
-  - Add `keywords` for the language or tool and its common alternate names.
-  - Check that `files` lists every built file and any upstream license file.
-  - Check that the `test` script spell checks the samples or source with the dictionary.
-- **`samples/`:** correctly spelled files of the kind the dictionary is for. The `test` script checks them.
-- **`README.md`:** what the dictionary covers and why to use it, for someone installing it. Keep the `@@inject` markers
-  from the template: a workflow fills them in after the PR lands. See [Style](../style.md#writing-for-users).
+`pnpm create-dictionary` created a working dictionary in `dictionaries/<name>/`:
+
+- **`src/`:** the word lists it's built from.
+- **`dict/`:** the built dictionary, made from `src/` by `pnpm run build`.
+- **`cspell-ext.json`:** what cspell loads: the dictionary's name, its description, and the languages or file types it's
+  enabled for.
+- **`package.json`:** what npm publishes. It stays private until a maintainer publishes it.
+- **`README.md`:** the page people see on npm.
+
+Two things only you can add:
+
+- **Samples:** a few correctly spelled files of the kind this dictionary is for, in `samples/`. They show it works on
+  real text. Until `pnpm create-dictionary` sets this up, add `"test:samples": "cspell samples"` to the scripts in
+  `package.json`, and run it from `test`.
+- **The README's description:** a few sentences on what this dictionary covers and why to use it.
 
 ## 6. Build and test
 
