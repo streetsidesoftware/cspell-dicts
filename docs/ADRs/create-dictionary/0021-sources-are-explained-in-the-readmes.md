@@ -20,9 +20,13 @@ We will explain the sources in two places:
 - **The dictionary's `README.md`** gets a "Sources" section through `<!--- @@inject: ./static/sources.md --->`. It lists
   each source from the sources file: where it came from, its license, and whether `pnpm run sync` keeps it up to date. It's generated
   like the other static files, so it follows changes to the sources.
-- **`src/README.md`** explains, for maintainers, how `sync` and the per-source scripts work, and how to add a source.
+- **`src/README.md`** gets the same list, through `<!--- @@inject: ../static/sources.md --->`, followed by notes for
+  maintainers: how `sync` works, and how to add a source.
 
 ## Consequences
 
 - Users see each source and its license on npm.
 - `static/sources.md` is generated from the sources file.
+- Both READMEs stay current from one record, and nobody edits the list of sources by hand.
+- `readme:inject` in the root `package.json` covers only `dictionaries/*/README.md`, so it needs
+  `dictionaries/*/src/README.md` too.
