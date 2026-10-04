@@ -84,4 +84,4 @@ sources. Upstream sources often have same-named files in different folders, such
 - A generated `README.md` in each source's folder: collides with the source's own README, repeats the sources file, and
   can drift from it.
 
-<!-- cspell:ignore marcoagpinto -->
+<!-- cspell:ignore marcoagpinto ayaspell -->
