@@ -81,7 +81,7 @@ To run it with no questions, add `--yes`. Fields you leave out get their default
 - the name is missing, `dictionaries/<name>/` already exists, or its package name or dictionary ID is already in use
 - the source file is missing (see `--allow-missing-source` below)
 - a Hunspell `.dic` file has no `.aff` file next to it, or the other way around
-- the description is missing, or says "for cspell"
+- the description is missing
 - the locale and the file type are both `*`
 - a value is invalid
 
@@ -97,7 +97,7 @@ Run `pnpm create-dictionary --help` to list the options.
 | --------------- | -------------------------------------- | ------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------ |
 | name            | `<name>` or `--name`                   | The package directory name, such as `en_AU` or `ruby`. Up to 50 letters, digits, `_`, and `-`. Its package name and dictionary ID must not already be in use.                                                            |
 | friendly name   | `--friendly-name`                      | A readable name, such as `Australian English`. Defaults to the name, split at `-` and `_`.                                                                                                                               |
-| description     | `--description`                        | Required. The words it covers, such as `Ruby keywords and standard library names`, not "for cspell". It's shown in the README's list of dictionaries and in cspell's settings.                                           |
+| description     | `--description`                        | Required. The words it covers, such as `Ruby keywords and standard library names`. It's shown in the README's list of dictionaries and in cspell's settings.                                                             |
 | npm description | `--package-description`                | The description npm shows. Defaults to `<Friendly Name> dictionary for cspell.`                                                                                                                                          |
 | source file     | `<path/to/source/words>` or `--source` | The file to build the dictionary from: a `.txt` word list or a Hunspell `.dic` file. It is copied into the package's `src/`. If you don't have a word list yet, add `--allow-missing-source` to start with an empty one. |
 | locale          | `--locale`                             | The language code with an optional region, such as `en` or `en-AU`. Separate several with commas. `*` matches any language.                                                                                              |

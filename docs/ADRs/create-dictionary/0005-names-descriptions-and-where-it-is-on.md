@@ -11,8 +11,8 @@ file in every language. Maintainers fixed both by hand.
 
 - The default friendly name splits `_` as well as `-`: `medical_terms` becomes "Medical Terms". A natural language name
   like `en_AU` needs `--friendly-name "Australian English"`.
-- `--description` is required: with `--yes` it must be given, and the prompt has no default. "for cspell" in it is
-  refused, with a message to describe the words instead, such as "Ruby keywords and standard library names".
+- `--description` is required: with `--yes` it must be given, and the prompt has no default. The prompt and the error
+  ask for the words it covers, such as "Ruby keywords and standard library names".
 - `--package-description` sets `package.json`'s description. It defaults to "`<Friendly name>` dictionary for cspell.",
   and the template's " -- Private until verified" stays at the end.
 - A dictionary sets `--locale` or `--language-id`, never both `*`. A natural language dictionary sets the locale, such
@@ -47,3 +47,7 @@ A dictionary names and describes itself in several places:
 
 - A better generated description: still generic, and repeated everywhere.
 - Keeping the default and leaving it to reviewers.
+- Refusing "for cspell" in `--description`. The phrase reached `cspell-ext.json` only because the old template used one
+  description for both `package.json` and `cspell-ext.json`. With `--package-description` separate and no default for
+  `--description`, it only gets there if someone types it. Building step 1 showed the check guarded against nothing
+  likely, so it was dropped.

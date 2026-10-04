@@ -111,22 +111,6 @@ describe('getAnswers', () => {
         );
     });
 
-    it('refuses "for cspell" in the description', async () => {
-        await assert.rejects(
-            getAnswers(
-                options({
-                    name: 'ruby',
-                    description: 'Ruby dictionary for cspell.',
-                    srcFile: 'words.txt',
-                    languageId: 'ruby',
-                }),
-                repo,
-                root,
-            ),
-            /--description: "for cspell" says nothing/,
-        );
-    });
-
     it('keeps a given package description', async () => {
         const settings = await getAnswers(
             options({ name: 'ruby', packageDescription: 'Ruby words.', srcFile: 'words.txt', languageId: 'ruby' }),

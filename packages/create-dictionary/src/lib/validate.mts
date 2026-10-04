@@ -41,10 +41,8 @@ export function validateLanguageId(anyLocale: boolean): Validate {
 }
 
 export function validateDescription(value: string): string | true {
-    if (!value.trim())
+    if (!value.trim()) {
         return 'missing. Describe the words it covers, such as "Ruby keywords and standard library names".';
-    if (/\bfor cspell\b/i.test(value)) {
-        return '"for cspell" says nothing here. Describe the words it covers, such as "Ruby keywords and standard library names".';
     }
     return true;
 }

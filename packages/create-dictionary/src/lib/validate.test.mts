@@ -70,11 +70,6 @@ describe('validateDescription', () => {
         assert.match(String(validateDescription(' ')), /missing/);
     });
 
-    it('refuses "for cspell", in any case', () => {
-        assert.match(String(validateDescription('Ruby dictionary for cspell.')), /says nothing/);
-        assert.match(String(validateDescription('Ruby words for CSpell')), /says nothing/);
-    });
-
     it('accepts a description of the words', () => {
         assert.equal(validateDescription('Ruby keywords and standard library names'), true);
     });
