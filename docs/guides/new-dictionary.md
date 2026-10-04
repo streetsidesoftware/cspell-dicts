@@ -114,8 +114,7 @@ maintainer makes it public once the dictionary has been verified.
 
 ## 5. Check the resulting dictionary
 
-`pnpm create-dictionary` wrote a complete dictionary in `dictionaries/<name>/` from your answers. Go through its files
-once: most only need a check, and a few need something only you can add.
+`pnpm create-dictionary` wrote a complete dictionary in `dictionaries/<name>/` from your answers. Go through each of its files: most only need a check, and a few need something only you can add.
 
 - **`src/`: the word lists.** The build reads every word of this dictionary from here. The tool copied in the source
   files you gave it, or started an empty one.
