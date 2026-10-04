@@ -1,123 +1,149 @@
 ---
 name: new-dictionary
-description: 'Design and build a new cspell-dicts dictionary package, from interview to one pull request: why and for whom, the package name and dictionary IDs, which file types and locales it's enabled for, the sources and their licenses, and the build format, then the package itself with sources, samples, README, and passing checks. Decisions are recorded as ADRs only when the dictionary takes a different approach or needs scripts of its own. Use this whenever the user wants to add a dictionary for a new programming language, tool, natural language, or field, or asks to "create a dictionary for X". For words in an existing dictionary use word-change; for splitting or renaming existing dictionaries use feature-adr.'
+description: 'Designs and builds a new cspell-dicts dictionary, from interview to one pull request: why and for whom, its name and dictionary IDs, which file types and locales it is enabled for, its sources and their licenses, and how it is built, then the dictionary itself, created with pnpm create-dictionary, with samples and passing checks. Use when the user wants a dictionary for a new programming language, tool, natural language, or field, or asks to "create a dictionary for X". Records the design as ADRs only when the dictionary takes a different approach or needs scripts of its own. For words in an existing dictionary, use word-change. For splitting or renaming existing dictionaries, use feature-adr.'
 ---
 
 # new-dictionary
 
-Takes a new dictionary package from idea to a single pull request: the design decisions first, then the package built
-from them. A dictionary package makes public promises from its first release: its package name, its dictionary IDs,
-and the file types and locales it's enabled for all end up in users' configs. So the design comes first, while it's still
-cheap to change.
-
-Most new dictionaries don't need ADRs. They do only when the dictionary takes a different approach from
-`docs/guides/new-dictionary.md`, or needs scripts of its own beyond `pnpm exec create-dictionary`, `cspell-tools-cli build`, and a
-`sync` script that follows `docs/guides/upstream-updates.md`.
-
-The interview follows the `feature-adr` skill, and so do the ADRs when they're needed. Read
-`.claude/skills/feature-adr/SKILL.md` before starting; this skill refers to its steps rather than repeating them. The
-build half follows `docs/guides/new-dictionary.md`; read it too.
+Takes a new dictionary from idea to one pull request: the design first, while it's cheap to change, then the dictionary
+built from it. Its name, dictionary IDs, and the file types and locales it's enabled for end up in users' configs from
+its first release. Read `docs/guides/new-dictionary.md` and `.claude/skills/feature-adr/SKILL.md` first: this skill
+uses the guide for the build and `feature-adr`'s interview for the design.
 
 ## Workflow
 
-1. **Check it doesn't exist.** Look through `dictionaries/`, and run `pnpm exec cspell trace --only-found <word>` from
-   the repo root with a few typical words. If an existing dictionary comes close, say so: adding words to it (the
-   `word-change` skill) may be the better change.
+### 1. Check it doesn't exist
 
-2. **Name it.** Agree on the directory name, such as `ruby` or `en_AU`. The package name is derived from it by
-   `pnpm exec create-dictionary`: `@cspell/dict-<name>`, lowercase, other characters replaced by `-`. If it needs ADRs, the feature slug
-   is `dict-<name>`, so the design lives in `docs/ADRs/dict-<name>/`.
+Make sure a new dictionary is the right change.
 
-3. **Set up a worktree** on a `new-dictionary/<name>` branch, as in `feature-adr` step 3. The design and the
-   package go in the same branch and the same PR.
+- **Do:** look through `dictionaries/`, and from the repo root run this with a few typical words:
 
-4. **Design.** Interview one decision at a time.
-   - Use `feature-adr`'s `references/interview-guide.md`: group 0 (why, stakeholders, goal), then groups 2–7 (names
-     and IDs, when it's enabled, sources and license, build, samples, release surface).
-   - Ask the way `feature-adr` step 5 describes: lettered options showing the cspell config a user would write,
-     checking facts before asking, and letting the user defer. Don't invent decisions.
-   - Keep a list of the decisions, one line each, for the PR description.
-   - **Locale and file type:** the `locale` and `languageId` in `languageSettings` decide which files cspell uses the
-     dictionary for.
-     - A natural language dictionary sets `locale`, such as `en-AU`, and leaves `languageId` as `*`.
-     - Any other dictionary sets `languageId`, such as `ruby`, and leaves `locale` as `*`.
-     - Never both `*`: that enables the dictionary for every file in every language. If neither fits, ask the user.
-   - **Contributors:** ask who creates and maintains this dictionary, as "Name (url)". It's optional, and published to
-     npm.
-   - **Keywords:** ask for other names people search npm for, such as `golang` for Go.
-   - **Decide whether it needs ADRs** once the sources and the build are clear, and tell the user why. If it does,
-     follow `feature-adr` steps 4–7: bootstrap the ADR directory, write and commit an ADR for each decision made so
-     far and each one after, and keep the glossary in sync.
-   - **Review licenses before choosing sources.** For each source, check its license and what it requires (attribution,
-     keeping the license file, share-alike). Record the result with the decisions, and in the sources ADR if there is
-     one. If a license is missing, unclear, or would force the package's license to change, stop and tell the user: the
-     exact source and version, its license, why it matters, and the alternatives. Never assume it's fine.
+  ```sh
+  pnpm exec cspell trace --only-found <word>
+  ```
 
-5. **Settle the design before building.** Wait until the user says the design is final. If there are ADRs, squash them
-   into a tight set (`feature-adr` step 9) and commit. The package is built from the design. If the build shows a
-   decision was wrong, stop, change it with the user (and its ADR, if there is one), and then continue.
+- **Stop and ask** if an existing dictionary comes close: adding words to it with `word-change` may be the better
+  change.
 
-6. **Build the package.** Follow `docs/guides/new-dictionary.md` from step 4. The rules below are the ones most easily
-   missed.
-   - From the repo root, run it with `--yes` and every decision as an option, so it never prompts:
+### 2. Name it, and set up a worktree
 
-     ```sh
-     pnpm exec create-dictionary --yes <name> <source>... \
-       --friendly-name "<Friendly Name>" \
-       --description "<the words it covers>" \
-       --contributor "<Name> (<url>)" \
-       --keyword <search term> \
-       --language-id <file type>
-     ```
+Agree on the directory name, which sets the package name and the dictionary ID, and keep the work out of the user's
+checkout.
 
-   - From the design to the options:
-     - Every source after the name: word lists and Hunspell `.dic` files alike.
-     - `--allow-missing-source` when there's no word list yet. It starts an empty one.
-     - One `--contributor` per person agreed in step 4, and one `--keyword` per search term.
-     - `--locale` for a natural language, or `--language-id` for anything else, as decided in step 4.
-     - `--trie` for Hunspell sources and large lists.
-     - `pnpm exec create-dictionary --help` lists every option.
-   - If it fails:
-     - On a missing or invalid value, nothing was written. Fix that option and run it again.
-     - If `pnpm install` or the build fails, the dictionary was already created. Finish it in its directory
-       (`pnpm install`, then `pnpm run build`), or delete it and run the command again.
-   - `cspell-ext.json`'s `dictionaryDefinitions` and `languageSettings` match the design exactly: IDs, `languageId`,
-     `locale`.
-   - In `package.json`, check that `files` lists every built file and upstream license file. Leave
-     `private: true` and "-- Private until verified" in `description`: a maintainer makes the dictionary public in a
-     later PR (see "New dictionaries" in `docs/releasing.md`).
-   - An upstream source gets a `sync` script, as in `docs/guides/upstream-updates.md`. Never hand-edit synced files.
-   - `samples/` holds correctly spelled files of the kind the dictionary is for, and the `test` script checks them.
-     Include text that must still be flagged only if the test can assert it.
-   - The README is for someone installing the dictionary, with absolute `https://` links. Keep the template's
-     `@@inject` markers; a workflow fills them in after the PR lands.
-   - Don't add the package to `release-please-config.json` or `.release-please-manifest.json`. The Update Release
-     Please Config workflow adds it after the PR lands.
-   - Don't add it to `@cspell/dict-cspell-bundle`. That happens only after the cspell repo decides to bundle it.
+- **Ask** for the directory name, such as `ruby` or `en_AU`. The package name follows from it: `@cspell/dict-<name>`,
+  lowercase, with other characters turned into `-`.
+- **Do,** in the main checkout (the first path `git worktree list` prints). The design and the dictionary go in this
+  branch and one PR:
 
-7. **Run every check** from the worktree root:
+  ```sh
+  git fetch origin main
+  git worktree add -b new-dictionary/<name> .claude/worktrees/new-dictionary-<name> origin/main
+  ```
 
-   ```sh
-   pnpm install
-   pnpm run prepare:dictionaries
-   pnpm --filter <package name> test
-   pnpm run lint
-   pnpm run check-dirty   # after committing: lint left nothing behind
-   ```
+### 3. Design it
 
-   Then try it as in the guide's step 7 (`cspell link add`), and show the user the result on a sample.
+Decide everything `pnpm create-dictionary` needs, one decision at a time.
 
-8. **Open one PR** with the package, after the ADR commits if there are any. Use a
-   `feat(<name>): add <friendly name> dictionary` title. The body has a `## Summary` of what the dictionary covers and
-   for whom, a `## Feature` section with the cspell config to enable it, then the design (one line per decision,
-   linking to the feature's `README.md` if there are ADRs), the sources with their licenses, and the checks that ran.
-   Push only when the user asks, or when the task was to open the PR.
+- **Ask** the way `feature-adr` step 5 does: one question at a time, lettered options showing the cspell config a user
+  would write, facts checked first, and the user free to defer.
+- **Ask,** using `feature-adr`'s `references/interview-guide.md`: group 0 (why, stakeholders, goal), then groups 2 to
+  7 (names and IDs, when it's enabled, sources and license, build, samples, release surface).
+- **Ask** these too, since the command needs them:
+  - **Locale or file type:** a natural language sets the locale, such as `en-AU`. Anything else sets the file type,
+    such as `ruby`, a [VS Code language ID](https://code.visualstudio.com/docs/languages/identifiers). Never both
+    `*`.
+  - **Description:** the words it covers, such as "Ruby keywords and standard library names".
+  - **Contributors:** who creates and maintains it, as "Name (url)". Optional, and published to npm.
+  - **Keywords:** other names people search npm for, such as `golang` for Go.
+  - **Sources:** if a file the user named doesn't exist, ask for the right path, or whether to start empty.
+- **Check** each source's license and what it requires: attribution, keeping the license file, or share-alike.
+- **Stop and ask** if a license is missing, unclear, or would change the dictionary's license. Give the exact source
+  and version, its license, why it matters, and the alternatives.
+- **Do:** keep the answers to group 0 and a list of the decisions, one line each, for the PR description.
+- **Do:** once the sources and the build are clear, decide whether it needs ADRs, and tell the user why. It needs them
+  only when it takes a different approach from the guide, or needs scripts beyond `pnpm create-dictionary`, the build,
+  and a `sync` script as in `docs/guides/upstream-updates.md`. If it does, follow only `feature-adr` steps 4 to 7, with
+  the feature slug `dict-<name>`.
+- **Stop and ask:** wait until the user says the design is final. Then squash any ADRs into a tight set
+  (`feature-adr` step 9), and commit.
 
-9. **After merge,** remove the worktree and delete the branch. If there are ADRs, change or archive them from then on
-   with `feature-adr` (step 10).
+### 4. Create the dictionary
 
-## Notes
+Turn the design into the dictionary with one command.
 
-- If the "new dictionary" turns out to be words for an existing one, stop and say so, and offer `word-change`.
-- Don't let the build quietly change the design. A decision that doesn't survive contact with the build goes back to
-  the user before the PR, and its ADR is updated if it has one.
+- **Do:** from the worktree's root, prepare the workspace, then run the command with `--yes` and every decision as an
+  option, so it never prompts:
+
+  ```sh
+  pnpm install
+  pnpm run prepare:dictionaries
+  pnpm exec create-dictionary --yes <name> <source>... \
+    --friendly-name "<Friendly Name>" \
+    --description "<the words it covers>" \
+    --contributor "<Name> (<url>)" \
+    --keyword <search term> \
+    --language-id <file type>
+  ```
+
+- **Do,** from the design to the options:
+  - `--allow-missing-source` when there's no word list yet. It starts an empty one.
+  - One `--contributor` per person, and one `--keyword` per search term.
+  - `--locale` for a natural language, or `--language-id` for anything else.
+  - `--trie` for Hunspell sources and large lists.
+- **If it fails:**
+  - On a missing or invalid value, nothing was written. Fix that option and run it again.
+  - If `pnpm install` or the build fails, the dictionary was already created. Finish it in its directory
+    (`pnpm install`, then `pnpm run build`), or delete it and run the command again.
+- **Stop and ask** if the build shows a decision was wrong. Change it with the user, and its ADR if there is one,
+  before going on.
+
+### 5. Add what only a person can add
+
+Finish what the command can't know.
+
+- **Do:**
+  - Add a few correctly spelled files of the kind the dictionary is for to `samples/`.
+  - Add `"test:samples": "cspell samples"` to `package.json`'s scripts, and run it from `test`. The template doesn't
+    check samples yet.
+  - Write the README's description: what the dictionary covers and why to use it, with absolute `https://` links.
+  - For an upstream source, add a `sync` script as in `docs/guides/upstream-updates.md`. Never edit synced files by
+    hand.
+- **Check:**
+  - `cspell-ext.json`'s `dictionaryDefinitions` and `languageSettings` match the design: the IDs, `languageId`, and
+    `locale`.
+  - `package.json`'s `files` lists every built file and every upstream license file.
+- **Do:** leave `private: true`, the README's `@@inject` markers, the Release Please files, and
+  `@cspell/dict-cspell-bundle` alone. Maintainers and workflows handle them after the PR lands, as the guide says.
+
+### 6. Run every check
+
+Show that the dictionary builds, passes, and works in cspell.
+
+- **Do,** from the worktree's root, then commit the dictionary with the PR's title as the message:
+
+  ```sh
+  pnpm --filter <package name> test
+  pnpm run lint
+  ```
+
+- **Check:**
+  - After committing, `pnpm run check-dirty` passes: lint left nothing behind.
+  - In cspell, as in the guide's step 7 (`cspell link add`), a sample spell checks cleanly. Show the user the result.
+- **If it fails:** fix what it reports, and run the checks again until they pass.
+
+### 7. Open one PR
+
+Hand the user one PR with the design and the dictionary.
+
+- **Do:** follow `docs/commits-and-pull-requests.md`:
+  - Title: `feat(<name>): add <friendly name> dictionary`.
+  - Body: a `## Summary` of what it covers and for whom, a `## Feature` section with the cspell config to enable it,
+    the design (one line per decision, linking the feature's `README.md` if there are ADRs), and the sources with
+    their licenses.
+- **Stop and ask** before pushing or opening the PR.
+- **Do,** after merge: remove the worktree and delete the branch. Change or archive any ADRs with `feature-adr` step 10.
+
+## Not this skill
+
+- The "new dictionary" turns out to be words for an existing one. Say so, and offer `word-change`.
+- The design changes after merge, or an existing dictionary should be split or renamed. Use `feature-adr`.
