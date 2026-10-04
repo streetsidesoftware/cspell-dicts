@@ -35,6 +35,7 @@ before(() => {
     writeFileSync(join(root, 'more.txt'), 'blivet\n');
     mkdirSync(join(root, 'vendor', 'lists'), { recursive: true });
     writeFileSync(join(root, 'vendor', 'lists', 'terms.txt'), 'blorp\n');
+    writeFileSync(join(root, 'vendor', 'README.md'), 'About up\n');
     writeFileSync(join(root, 'COPYING'), 'MIT\n');
 });
 
@@ -282,6 +283,8 @@ describe('several sources', () => {
             'up=lists/terms.txt',
             '--add-source-license',
             'up/LICENSE=../COPYING',
+            '--add-source-readme',
+            'up=README.md',
             '--add-source-url',
             'up=https://example.com/up',
         );
@@ -290,7 +293,10 @@ describe('several sources', () => {
         assert.ok(existsSync(join(root, 'dictionaries', 'thirdparty', 'src', 'up', 'LICENSE')));
         assert.match(packageFile('thirdparty', 'cspell-tools.config.yaml'), /filename: 'src\/up\/lists\/terms\.txt'/);
         assert.match(packageFile('thirdparty', 'src/sources.yaml'), /license: 'LICENSE'/);
-        assert.ok(JSON.parse(packageFile('thirdparty', 'package.json')).files.includes('src/up/LICENSE'));
+        assert.match(packageFile('thirdparty', 'src/sources.yaml'), /readme: 'README\.md'/);
+        const { files } = JSON.parse(packageFile('thirdparty', 'package.json'));
+        assert.ok(files.includes('src/up/LICENSE') && files.includes('src/up/README.md'), files.join(', '));
+        assert.doesNotMatch(result.stderr, /warning/);
     });
 
     it('refuse a third-party file outside its source without a local path', () => {
