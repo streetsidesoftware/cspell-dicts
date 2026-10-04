@@ -148,6 +148,7 @@ Many packages predate this layout:
 - Their config doesn't set `checksumFile: true`, so they rebuild every time.
 - They hold a copy of upstream Hunspell files in `src/hunspell/` without a `sync` script.
 - They read another package's files by a relative path, such as `allowedSplitWords: ../en_US/en_US.trie`.
+- They have no exclude file, or name it `src/exclude-words.txt` or `src/exclude-terms.txt`.
 
 When you work on one of them, moving it to the current layout is welcome, in a separate PR.
 
