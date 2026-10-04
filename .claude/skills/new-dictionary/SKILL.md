@@ -90,6 +90,7 @@ Turn the design into the dictionary with one command.
   - One `--contributor` per person, and one `--keyword` per search term.
   - `--locale` for a natural language, or `--language-id` for anything else.
   - `--trie` for Hunspell sources and large lists.
+  - A source someone else maintains: `--define-source` and `--add-source-*`, as in the guide's "Third-party sources".
 - **If it fails:**
   - On a missing or invalid value, nothing was written. Fix that option and run it again.
   - If `pnpm install` or the build fails, the dictionary was already created. Finish it in its directory

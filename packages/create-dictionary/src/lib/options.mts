@@ -1,5 +1,7 @@
 import { Command, Option } from 'commander';
 
+import type { ThirdPartyOptions } from './third-party.mts';
+
 export interface Answers {
     name?: string;
     friendlyName?: string;
@@ -20,6 +22,8 @@ export interface CommandLine {
     yes: boolean;
     /** Create an empty word list if the source is missing. */
     allowMissingSource: boolean;
+    /** The third-party sources, as given. */
+    thirdParty: ThirdPartyOptions;
     /** Create src/additional_words.txt. */
     additionalWords: boolean;
     /** Create src/exclude_words.txt. */
@@ -60,6 +64,11 @@ interface Options {
     allowMissingSource?: boolean;
     additionalWords?: boolean;
     excludeWords?: boolean;
+    defineSource?: string[];
+    addSourceFile?: string[];
+    addSourceLicense?: string[];
+    addSourceReadme?: string[];
+    addSourceUrl?: string[];
     root?: string;
     skipInstall?: boolean;
     yes?: boolean;
@@ -102,6 +111,31 @@ export function parseCommandLine(argv: string[]): CommandLine {
         .option(
             '--allow-missing-source',
             'if the source is missing, create an empty word list (src/<name>.txt without --source); not for Hunspell files',
+        )
+        .option(
+            '--define-source <[name=]path>',
+            'a third-party source: a folder copied into src/<name>/; repeatable',
+            (value: string, previous: string[] = []) => [...previous, value],
+        )
+        .option(
+            '--add-source-file <name[/local]=path>',
+            'a word list or Hunspell file of a source, relative to it; repeatable',
+            (value: string, previous: string[] = []) => [...previous, value],
+        )
+        .option(
+            '--add-source-license <name[/local]=path>',
+            "a source's license, published with the dictionary",
+            (value: string, previous: string[] = []) => [...previous, value],
+        )
+        .option(
+            '--add-source-readme <name[/local]=path>',
+            "a source's README, published with the dictionary",
+            (value: string, previous: string[] = []) => [...previous, value],
+        )
+        .option(
+            '--add-source-url <name=url>',
+            'where a source can be found',
+            (value: string, previous: string[] = []) => [...previous, value],
         )
         .option('--no-additional-words', 'do not create src/additional_words.txt, for words the sources lack')
         .option('--no-exclude-words', 'do not create src/exclude_words.txt, for words to leave out of the build')
@@ -152,6 +186,13 @@ export function parseCommandLine(argv: string[]): CommandLine {
         answers,
         yes: !!opts.yes,
         allowMissingSource: !!opts.allowMissingSource,
+        thirdParty: {
+            defineSource: opts.defineSource ?? [],
+            addSourceFile: opts.addSourceFile ?? [],
+            addSourceLicense: opts.addSourceLicense ?? [],
+            addSourceReadme: opts.addSourceReadme ?? [],
+            addSourceUrl: opts.addSourceUrl ?? [],
+        },
         additionalWords: opts.additionalWords !== false,
         excludeWords: opts.excludeWords !== false,
         root: opts.root,

@@ -8,6 +8,7 @@ import type { Settings } from './answers.mts';
 import { createPackage } from './create-package.mts';
 import type { Repo } from './repo.mts';
 import { templateFiles } from './template.mts';
+import type { ThirdPartySource } from './third-party.mts';
 
 let root = '';
 let repo: Repo;
@@ -23,6 +24,18 @@ before(() => {
 
 after(() => rmSync(root, { recursive: true, force: true }));
 
+/** The Hunspell pair in the test's folder, as a third-party source. */
+function pairSource(): ThirdPartySource {
+    return {
+        name: 'pair',
+        root,
+        files: [
+            { path: 'pair.dic', local: 'pair.dic' },
+            { path: 'pair.aff', local: 'pair.aff' },
+        ],
+    };
+}
+
 function settings(name: string, more: Partial<Settings>): Settings {
     return {
         name,
@@ -31,6 +44,7 @@ function settings(name: string, more: Partial<Settings>): Settings {
         packageDescription: 'Test dictionary for cspell.',
         contributors: [],
         keywords: [],
+        thirdParty: [],
         additionalWords: true,
         excludeWords: true,
         sources: [{ file: 'words.txt', empty: false }],
@@ -52,18 +66,18 @@ describe('createPackage', () => {
             settings('several', {
                 sources: [
                     { file: 'words.txt', empty: false },
-                    { file: 'pair.dic', empty: false },
                     { file: 'extra.txt', empty: true },
                 ],
+                thirdParty: [pairSource()],
             }),
             repo,
             root,
         );
-        for (const file of ['src/words.txt', 'src/pair.dic', 'src/pair.aff', 'src/extra.txt']) {
+        for (const file of ['src/words.txt', 'src/pair/pair.dic', 'src/pair/pair.aff', 'src/extra.txt']) {
             assert.ok(existsSync(join(dir, file)), file);
         }
         const config = read(dir, 'cspell-tools.config.yaml');
-        for (const file of ['words.txt', 'pair.dic', 'extra.txt']) {
+        for (const file of ['words.txt', 'pair/pair.dic', 'extra.txt']) {
             assert.match(config, new RegExp(`filename: 'src/${file.replace('.', '\\.')}'`));
         }
         assert.match(read(dir, 'package.json'), /"prepare:dictionary": "echo OK"/);
@@ -131,12 +145,13 @@ describe('createPackage', () => {
 
     it('copies both Hunspell files and uses the trie format', () => {
         const dir = createPackage(
-            settings('hunspell', { sources: [{ file: 'pair.dic', empty: false }], useTrie: true }),
+            settings('hunspell', { sources: [], thirdParty: [pairSource()], useTrie: true }),
             repo,
             root,
         );
-        assert.ok(existsSync(join(dir, 'src/pair.dic')));
-        assert.ok(existsSync(join(dir, 'src/pair.aff')));
+        assert.ok(existsSync(join(dir, 'src/pair/pair.dic')));
+        assert.ok(existsSync(join(dir, 'src/pair/pair.aff')));
+        assert.match(read(dir, 'src/sources.yaml'), /files:\n {6}- 'pair\.dic'\n {6}- 'pair\.aff'/);
         assert.ok(existsSync(join(dir, 'dict/hunspell.trie')));
         assert.match(read(dir, 'cspell-tools.config.yaml'), /format: 'trie3'/);
         assert.match(read(dir, 'package.json'), /hunspell-reader words/);

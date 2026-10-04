@@ -7,6 +7,7 @@ import { after, before, describe, it } from 'node:test';
 import { getAnswers } from './answers.mts';
 import type { Answers, CommandLine } from './options.mts';
 import type { Repo } from './repo.mts';
+import { noThirdParty } from './third-party.mts';
 
 let root = '';
 let repo: Repo;
@@ -30,6 +31,7 @@ function options(answers: Answers, more: Partial<CommandLine> = {}): CommandLine
         answers: { description: 'Test words', ...answers },
         yes: true,
         allowMissingSource: false,
+        thirdParty: noThirdParty,
         additionalWords: true,
         excludeWords: true,
         skipInstall: true,
@@ -52,6 +54,7 @@ describe('getAnswers', () => {
             packageDescription: 'Medical Terms dictionary for cspell.',
             contributors: [],
             keywords: [],
+            thirdParty: [],
             additionalWords: true,
             excludeWords: true,
             sources: [{ file: 'words.txt', empty: false }],
@@ -102,10 +105,11 @@ describe('getAnswers', () => {
             repo,
             root,
         );
-        assert.deepEqual(settings.sources, [
-            { file: 'words.txt', empty: false },
-            { file: 'pair.dic', empty: false },
-        ]);
+        assert.deepEqual(settings.sources, [{ file: 'words.txt', empty: false }]);
+        assert.deepEqual(
+            settings.thirdParty.map((s) => [s.name, s.files.map((f) => f.local)]),
+            [['pair', ['pair.dic', 'pair.aff']]],
+        );
         assert.equal(settings.useTrie, true);
     });
 
@@ -115,7 +119,8 @@ describe('getAnswers', () => {
             repo,
             root,
         );
-        assert.deepEqual(settings.sources, [{ file: 'pair.dic', empty: false }]);
+        assert.deepEqual(settings.sources, []);
+        assert.equal(settings.thirdParty.length, 1);
     });
 
     it('refuses two sources copied to the same file', async () => {

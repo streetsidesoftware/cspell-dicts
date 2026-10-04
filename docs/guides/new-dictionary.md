@@ -95,22 +95,23 @@ Run `pnpm create-dictionary --help` to list the options.
 
 Each field is described in [Create-dictionary options](#create-dictionary-options).
 
-| Field                               | Option                                        | Summary                                                    |
-| ----------------------------------- | --------------------------------------------- | ---------------------------------------------------------- |
-| [name](#name)                       | `<name>` or `--name`                          | The directory name, such as `en_AU` or `ruby`.             |
-| [friendly name](#friendly-name)     | `--friendly-name`                             | A readable name, such as `Australian English`.             |
-| [description](#description)         | `--description`                               | Required. The words it covers.                             |
-| [npm description](#npm-description) | `--package-description`                       | The description npm shows.                                 |
-| [contributors](#contributors)       | `--contributor`                               | The people who create and maintain this dictionary.        |
-| [keywords](#keywords)               | `--keyword`                                   | Other names people search npm for, such as `golang`.       |
-| [source file](#source-file)         | `<path/to/source/words>` or `--source`        | The word lists and Hunspell `.dic` files to build from.    |
-| [missing source](#missing-source)   | `--allow-missing-source`                      | Start with an empty word list.                             |
-| [word files](#word-files)           | `--no-additional-words`, `--no-exclude-words` | Leave out the files for adding and removing words by hand. |
-| [locale](#locale)                   | `--locale`                                    | The languages it's enabled for, such as `en-AU`.           |
-| [file type](#file-type)             | `--language-id`                               | The file types it's enabled for, such as `ruby`.           |
-| [store as trie](#store-as-trie)     | `--trie` or `--no-trie`                       | Store it as a trie, for Hunspell files and large lists.    |
-| [run build](#run-build)             | `--build` or `--no-build`                     | Build it now.                                              |
-| [no questions](#no-questions)       | `--yes`                                       | Use the defaults for anything not given, and never ask.    |
+| Field                                       | Option                                        | Summary                                                    |
+| ------------------------------------------- | --------------------------------------------- | ---------------------------------------------------------- |
+| [name](#name)                               | `<name>` or `--name`                          | The directory name, such as `en_AU` or `ruby`.             |
+| [friendly name](#friendly-name)             | `--friendly-name`                             | A readable name, such as `Australian English`.             |
+| [description](#description)                 | `--description`                               | Required. The words it covers.                             |
+| [npm description](#npm-description)         | `--package-description`                       | The description npm shows.                                 |
+| [contributors](#contributors)               | `--contributor`                               | The people who create and maintain this dictionary.        |
+| [keywords](#keywords)                       | `--keyword`                                   | Other names people search npm for, such as `golang`.       |
+| [source file](#source-file)                 | `<path/to/source/words>` or `--source`        | The word lists and Hunspell `.dic` files to build from.    |
+| [third-party sources](#third-party-sources) | `--define-source`, `--add-source-*`           | Sources someone else maintains, each in `src/<name>/`.     |
+| [missing source](#missing-source)           | `--allow-missing-source`                      | Start with an empty word list.                             |
+| [word files](#word-files)                   | `--no-additional-words`, `--no-exclude-words` | Leave out the files for adding and removing words by hand. |
+| [locale](#locale)                           | `--locale`                                    | The languages it's enabled for, such as `en-AU`.           |
+| [file type](#file-type)                     | `--language-id`                               | The file types it's enabled for, such as `ruby`.           |
+| [store as trie](#store-as-trie)             | `--trie` or `--no-trie`                       | Store it as a trie, for Hunspell files and large lists.    |
+| [run build](#run-build)                     | `--build` or `--no-build`                     | Build it now.                                              |
+| [no questions](#no-questions)               | `--yes`                                       | Use the defaults for anything not given, and never ask.    |
 
 It creates `dictionaries/<name>/` with `version` `0.0.1-alpha.0` and `private: true`, so the dictionary isn't published. A
 maintainer makes it public once the dictionary has been verified.
@@ -259,11 +260,34 @@ each one.
   where you run the command.
 - **Several:** give several after the name, repeat `--source`, or both. They're combined, and word lists and Hunspell
   files can be mixed: `pnpm create-dictionary en_XX en_XX.dic extra-words.txt`.
-- **Sets:** a copy of each file in the dictionary's `src/`, and each one as a source in `cspell-tools.config.yaml`. A
-  Hunspell `.dic` brings its `.aff` file with it. Either file of the pair can be given, or both, and it counts as one
-  source.
+- **Sets:** a copy of each word list in the dictionary's `src/`, and each one as a source in
+  `cspell-tools.config.yaml`. A Hunspell file is a [third-party source](#third-party-sources) named after it, copied
+  with its pair into `src/<name>/`. Either file of the pair can be given, or both.
 - **Errors:** a file doesn't exist (see [Missing source](#missing-source)), a Hunspell file is missing its pair, or two
   files have the same name and would both be copied to the same file in `src/`.
+
+#### Third-party sources
+
+`--define-source` and the `--add-source-*` options. Files that someone else maintains, such as a Hunspell dictionary or
+a word list from another project. Each is copied into its own folder, `src/<name>/`, and recorded in `src/sources.yaml`.
+
+```sh
+pnpm create-dictionary en_XX \
+  --define-source aoo=./vendor/aoo \
+  --add-source-file aoo=dicts/en_XX.dic \
+  --add-source-license aoo=LICENSE \
+  --add-source-url aoo=https://example.com/aoo
+```
+
+- **`--define-source [<name>=]<folder>`:** the source's folder. The name defaults to the folder's name.
+- **`--add-source-file <name>=<path>`:** a word list or Hunspell file, relative to the folder. Repeat it for each.
+- **`--add-source-license` and `--add-source-readme`:** published with the dictionary, since it's built from the
+  source.
+- **`--add-source-url`:** where the source can be found.
+- **Paths:** a file keeps its path inside `src/<name>/`. Give another as `<name>/<local path>=<path>`, which a file
+  outside the folder, such as `../LICENSE`, needs.
+- **Errors:** a missing file, a source with no files, or two sources with the same name. A missing license, README, or
+  URL is only a warning.
 
 #### Missing source
 

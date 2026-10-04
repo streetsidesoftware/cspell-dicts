@@ -89,7 +89,7 @@ describe('validateContributor', () => {
             'Jane Doe <jane@example.com>',
             'Jane Doe (https://example.com/jane-doe)',
             'Jane Doe <jane@example.com> (https://example.com/jane-doe)',
-            'Proxecto Trasno (https://trasno.gal)',
+            'Example Project (https://example.org)',
         ]) {
             assert.equal(validateContributor(person), true, person);
         }
