@@ -1,13 +1,13 @@
 ---
 name: new-dictionary
-description: 'Design and build a new cspell-dicts dictionary package, from interview to one pull request: why and for whom, the package name and dictionary IDs, which file types and locales turn it on, the sources and their licenses, and the build format, then the package itself with sources, samples, README, and passing checks. Decisions are recorded as ADRs only when the dictionary takes a different approach or needs scripts of its own. Use this whenever the user wants to add a dictionary for a new programming language, tool, natural language, or field, or asks to "create a dictionary for X". For words in an existing dictionary use word-change; for splitting or renaming existing dictionaries use feature-adr.'
+description: 'Design and build a new cspell-dicts dictionary package, from interview to one pull request: why and for whom, the package name and dictionary IDs, which file types and locales it's enabled for, the sources and their licenses, and the build format, then the package itself with sources, samples, README, and passing checks. Decisions are recorded as ADRs only when the dictionary takes a different approach or needs scripts of its own. Use this whenever the user wants to add a dictionary for a new programming language, tool, natural language, or field, or asks to "create a dictionary for X". For words in an existing dictionary use word-change; for splitting or renaming existing dictionaries use feature-adr.'
 ---
 
 # new-dictionary
 
 Takes a new dictionary package from idea to a single pull request: the design decisions first, then the package built
 from them. A dictionary package makes public promises from its first release: its package name, its dictionary IDs,
-and the file types and locales it turns on all end up in users' configs. So the design comes first, while it's still
+and the file types and locales it's enabled for all end up in users' configs. So the design comes first, while it's still
 cheap to change.
 
 Most new dictionaries don't need ADRs. They do only when the dictionary takes a different approach from
@@ -33,7 +33,7 @@ build half follows `docs/guides/new-dictionary.md`; read it too.
 
 4. **Design.** Interview one decision at a time.
    - Use `feature-adr`'s `references/interview-guide.md`: group 0 (why, stakeholders, goal), then groups 2–7 (names
-     and IDs, when it's on, sources and license, build, samples, release surface).
+     and IDs, when it's enabled, sources and license, build, samples, release surface).
    - Ask the way `feature-adr` step 5 describes: lettered options showing the cspell config a user would write,
      checking facts before asking, and letting the user defer. Don't invent decisions.
    - Keep a list of the decisions, one line each, for the PR description.
@@ -41,7 +41,7 @@ build half follows `docs/guides/new-dictionary.md`; read it too.
      dictionary for.
      - A natural language dictionary sets `locale`, such as `en-AU`, and leaves `languageId` as `*`.
      - Any other dictionary sets `languageId`, such as `ruby`, and leaves `locale` as `*`.
-     - Never both `*`: that turns the dictionary on for every file in every language. If neither fits, ask the user.
+     - Never both `*`: that enables the dictionary for every file in every language. If neither fits, ask the user.
    - **Contributors:** ask who creates and maintains this dictionary, as "Name (url)". It's optional, and published to
      npm.
    - **Keywords:** ask for other names people search npm for, such as `golang` for Go.
@@ -109,7 +109,7 @@ build half follows `docs/guides/new-dictionary.md`; read it too.
 
 8. **Open one PR** with the package, after the ADR commits if there are any. Use a
    `feat(<name>): add <friendly name> dictionary` title. The body has a `## Summary` of what the dictionary covers and
-   for whom, a `## Feature` section with the cspell config to turn it on, then the design (one line per decision,
+   for whom, a `## Feature` section with the cspell config to enable it, then the design (one line per decision,
    linking to the feature's `README.md` if there are ADRs), the sources with their licenses, and the checks that ran.
    Push only when the user asks, or when the task was to open the PR.
 

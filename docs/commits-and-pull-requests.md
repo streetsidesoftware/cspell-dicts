@@ -91,7 +91,7 @@ break it into a list.
 - `feat:` and `fix:` PRs are read by users deciding whether a change affects them.
   - Say which dictionary and which words or settings changed.
   - Give a source for added words when it isn't obvious: documentation, a dictionary, or a project's website.
-  - For `feat:`, add a `## Feature` section: what users can now do, and how to turn it on if it isn't on by default.
+  - For `feat:`, add a `## Feature` section: what users can now do, and how to enable it if it isn't enabled by default.
 - `chore:` and `refactor:` PRs are for reviewers. Group the changes by theme, not by file, and say why each matters.
 - Put extra detail in collapsed `<details>` blocks, as bullet points.
 - No test plan section: CI covers that.

@@ -271,7 +271,7 @@ describe('locale and file type', () => {
     it('are not both "*"', () => {
         assertFails(
             create('--yes', 'everywhere', '--description', 'Test words', '--allow-missing-source', '--no-build'),
-            /turns the dictionary on for every file/,
+            /enables the dictionary for every file/,
         );
     });
 
