@@ -202,9 +202,9 @@ Each option answers one question. Without `--yes`, any option you leave out is a
   `en-au`.
 - **What to give:** up to 50 letters, digits, `_`, and `-`. Names reserved on Windows, such as `con` or `aux`, aren't
   allowed.
-- **If you leave it out:** it stops. The name is required.
-- **It stops if:** `dictionaries/<name>/` already exists, or its package name or dictionary ID is already used by
-  another dictionary, or the name is given both ways with different values.
+- **Required.**
+- **Not allowed:** a name whose directory already exists, whose package name or dictionary ID another dictionary
+  already uses, or that's given both ways with different values.
 
 #### Friendly name
 
@@ -221,7 +221,7 @@ Each option answers one question. Without `--yes`, any option you leave out is a
 
 - **What it changes:** the `description` in `cspell-ext.json` and in its dictionary definition, and the first line of
   the dictionary's README. It's shown in the repo's README list and in cspell's settings.
-- **If you leave it out:** it stops. Only you know what the words are.
+- **Required.** Only you know what the words are.
 
 #### npm description
 
@@ -253,7 +253,7 @@ each one.
   `dictionary`, `spelling`, its name, and its friendly name.
 - **If you leave it out:** only the standard keywords are listed. When it asks, give several separated by commas, or
   leave it empty to skip.
-- **It stops if:** a keyword is empty, or one `--keyword` has a comma.
+- **Not allowed:** an empty keyword, or a comma in one `--keyword`.
 
 #### Source file
 
@@ -266,8 +266,8 @@ each one.
 - **What it changes:** a copy of each word list in the dictionary's `src/`, and each one as a source in
   `cspell-tools.config.yaml`. A Hunspell file is a [third-party source](#third-party-sources) named after it, copied
   with its pair into `src/<name>/`. Either file of the pair can be given, or both.
-- **It stops if:** a file doesn't exist (see [Missing source](#missing-source)), a Hunspell file is missing its pair, or
-  two files have the same name and would both be copied to the same file in `src/`.
+- **Not allowed:** a file that doesn't exist (see [Missing source](#missing-source)), a Hunspell file without its pair,
+  or two files with the same name, which would both be copied to the same file in `src/`.
 
 #### Third-party sources
 
@@ -296,7 +296,7 @@ pnpm create-dictionary en_XX \
   version.
 - **Paths:** a file keeps its path inside `src/<name>/`. Give another as `<name>/<local path>=<path>`, which a file
   outside the folder, such as `../LICENSE`, needs.
-- **It stops if:** a file is missing, a source has no files, or two sources have the same name. A missing license,
+- **Not allowed:** a missing file, a source with no files, or two sources with the same name. A missing license,
   README, or URL is only a warning.
 
 #### Missing source
@@ -339,7 +339,7 @@ Every new dictionary gets two word lists in `src/`, for fixes by hand after it's
 - **What it changes:** `languageId` in `cspell-ext.json`'s `languageSettings`.
 - **If you leave it out:** it uses `*`, unless the locale is `*` too. Then there's no default.
 - **Use it for:** any dictionary that isn't a natural language. Leave the locale as `*`.
-- **It stops if:** the locale and the file type are both `*`, which would enable the dictionary for every file in every
+- **Not allowed:** both the locale and the file type `*`, which would enable the dictionary for every file in every
   language.
 
 #### Store as trie
