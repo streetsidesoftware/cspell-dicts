@@ -15,8 +15,10 @@ stale.
   GitHub's word for any of them.
 - **npm** (`--define-source-npm`), when there's no usable repository. Files are read from jsDelivr,
   `https://cdn.jsdelivr.net/npm/<pkg>@<version>/<path>`, and the file list from
-  `https://data.jsdelivr.com/v1/packages/npm/<pkg>@<version>`, with no dependency and no tarball. It follows the latest
-  published version; `version` pins it.
+  `https://data.jsdelivr.com/v1/packages/npm/<pkg>@<version>`, with no dependency and no tarball. It follows the
+  `latest` tag. `--add-source-version <name>=<version>`, recorded as `version`, sets a version or another tag such as
+  `next`. jsDelivr's file API needs an exact version, so the sync first resolves the tag through
+  `https://data.jsdelivr.com/v1/packages/npm/<pkg>/resolved?specifier=<tag>`.
 - **Anything else** is downloaded by hand and defined as a local source, with `--add-source-url` saying where it came
   from.
 
