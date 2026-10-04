@@ -32,6 +32,7 @@ before(() => {
     writeFileSync(join(root, 'pair.dic'), '1\nzorbal\n');
     writeFileSync(join(root, 'pair.aff'), 'SET UTF-8\n');
     writeFileSync(join(root, 'lonely.dic'), '1\nzorbal\n');
+    writeFileSync(join(root, 'more.txt'), 'blivet\n');
 });
 
 after(() => rmSync(root, { recursive: true, force: true }));
@@ -208,6 +209,34 @@ describe('the source', () => {
 
     it('needs both Hunspell files, even with --allow-missing-source', () => {
         assertFails(createYes('lonely', 'lonely.dic', '--allow-missing-source'), /Not found: lonely\.aff/);
+    });
+});
+
+describe('several sources', () => {
+    it('are combined from positional arguments and --source', () => {
+        const result = createYes('several', 'words.txt', '--source', 'pair.aff', '--source', 'more.txt');
+        assert.equal(result.code, 0, result.stderr);
+        for (const file of ['src/words.txt', 'src/pair.dic', 'src/pair.aff', 'src/more.txt']) {
+            assert.ok(existsSync(join(root, 'dictionaries', 'several', file)), file);
+        }
+        const config = packageFile('several', 'cspell-tools.config.yaml');
+        assert.match(config, /filename: 'src\/words\.txt'/);
+        assert.match(config, /filename: 'src\/pair\.dic'/);
+        assert.match(config, /filename: 'src\/more\.txt'/);
+        assert.match(config, /format: 'trie3'/);
+    });
+
+    it('build a Hunspell source from its .dic file when only the .aff file is given', () => {
+        const result = createYes('affonly', 'pair.aff');
+        assert.equal(result.code, 0, result.stderr);
+        assert.match(packageFile('affonly', 'cspell-tools.config.yaml'), /filename: 'src\/pair\.dic'/);
+    });
+
+    it('can each be missing with --allow-missing-source', () => {
+        const result = createYes('partial', 'words.txt', 'later.txt', '--allow-missing-source');
+        assert.equal(result.code, 0, result.stderr);
+        assert.equal(packageFile('partial', 'src/later.txt'), '# Partial Terms\n');
+        assert.equal(packageFile('partial', 'src/words.txt'), 'zorbal\nquixly\n');
     });
 });
 
