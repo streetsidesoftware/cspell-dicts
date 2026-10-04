@@ -197,51 +197,51 @@ Each option answers one question. Without `--yes`, any option you leave out is a
 
 `<name>` or `--name`. The directory the dictionary is created in, `dictionaries/<name>/`.
 
-- **Sets:** the directory, and from it the package name `@cspell/dict-<id>` and the dictionary ID `<id>`. The ID is the
-  name in lowercase, with characters other than letters, digits, and `-` turned into `-`: `en_AU` gives `en-au`.
-- **Values:** up to 50 letters, digits, `_`, and `-`. Names reserved on Windows, such as `con` or `aux`, aren't
+- **What it changes:** the directory, and from it the package name `@cspell/dict-<id>` and the dictionary ID `<id>`. The
+  ID is the name in lowercase, with characters other than letters, digits, and `-` turned into `-`: `en_AU` gives
+  `en-au`.
+- **What to give:** up to 50 letters, digits, `_`, and `-`. Names reserved on Windows, such as `con` or `aux`, aren't
   allowed.
-- **Default:** none. It's required.
-- **Errors:** `dictionaries/<name>/` already exists, or its package name or dictionary ID is already used by another
-  dictionary. Giving the name both ways with different values is an error too.
+- **If you leave it out:** it stops. The name is required.
+- **It stops if:** `dictionaries/<name>/` already exists, or its package name or dictionary ID is already used by
+  another dictionary, or the name is given both ways with different values.
 
 #### Friendly name
 
 `--friendly-name`. A readable name, such as `Australian English`.
 
-- **Sets:** the `name` in `cspell-ext.json`, the title of the dictionary's README, and a keyword in `package.json`. It's
-  the dictionary's title in the repo's README list.
-- **Default:** the name, split at `-` and `_`, with each word capitalized: `medical_terms` gives `Medical Terms`. A
-  natural language name like `en_AU` needs one: `--friendly-name "Australian English"`.
+- **What it changes:** the `name` in `cspell-ext.json`, the title of the dictionary's README, and a keyword in
+  `package.json`. It's the dictionary's title in the repo's README list.
+- **If you leave it out:** it uses the name, split at `-` and `_`, with each word capitalized: `medical_terms` gives
+  `Medical Terms`. A natural language name like `en_AU` needs one: `--friendly-name "Australian English"`.
 
 #### Description
 
 `--description`. The words the dictionary covers, such as `Ruby keywords and standard library names`.
 
-- **Sets:** the `description` in `cspell-ext.json` and in its dictionary definition, and the first line of the
-  dictionary's README. It's shown in the repo's README list and in cspell's settings.
-- **Default:** none. It's required, because only you know what the words are.
-- **Errors:** the description is missing or empty.
+- **What it changes:** the `description` in `cspell-ext.json` and in its dictionary definition, and the first line of
+  the dictionary's README. It's shown in the repo's README list and in cspell's settings.
+- **If you leave it out:** it stops. Only you know what the words are.
 
 #### npm description
 
 `--package-description`. The description npm shows.
 
-- **Sets:** the `description` in `package.json`, followed by " -- Private until verified" until a maintainer makes the
-  dictionary public.
-- **Default:** `<Friendly Name> dictionary for cspell.`, as most dictionaries on npm say. Change it only if npm should
-  show something else.
+- **What it changes:** the `description` in `package.json`, followed by " -- Private until verified" until a maintainer
+  makes the dictionary public.
+- **If you leave it out:** it uses `<Friendly Name> dictionary for cspell.`, as most dictionaries on npm say. Change it
+  only if npm should show something else.
 
 #### Contributors
 
 `--contributor`. Someone who creates or maintains this dictionary in this repository. Repeat it for each person.
 
-- **Values:** a name, optionally followed by an email in `<…>` and a web address in `(…)`, such as
-  `Jane Doe (https://example.com/jane-doe)`. A GitHub profile is a good choice for the web address. `package.json` is
-  published, so anything given here is public.
-- **Sets:** `contributors` in `package.json`.
-- **Default:** none, so the list stays empty. When asking, the first answer is filled in with your Git name
-  (`git config user.name`), and an empty answer skips.
+- **What to give:** a name, optionally followed by an email in `<…>` and a web address in `(…)`, such as `Jane Doe
+(https://example.com/jane-doe)`. A GitHub profile is a good choice for the web address. `package.json` is published,
+  so anything given here is public.
+- **What it changes:** `contributors` in `package.json`.
+- **If you leave it out:** the list stays empty. When it asks, the first answer is filled in with your Git name (`git
+config user.name`), and an empty answer skips.
 - **Not for:** the authors of an upstream source. They're credited through the source's license and README.
 
 #### Keywords
@@ -249,24 +249,25 @@ Each option answers one question. Without `--yes`, any option you leave out is a
 `--keyword`. Another name people type when they search npm for this dictionary, such as `golang` for Go. Repeat it for
 each one.
 
-- **Sets:** `keywords` in `package.json`, added after the ones every dictionary gets: `cspell`, `cspell-ext`,
+- **What it changes:** `keywords` in `package.json`, added after the ones every dictionary gets: `cspell`, `cspell-ext`,
   `dictionary`, `spelling`, its name, and its friendly name.
-- **Default:** none. When asking, give several separated by commas, or leave it empty to skip.
-- **Errors:** an empty keyword, or a comma in one `--keyword`.
+- **If you leave it out:** only the standard keywords are listed. When it asks, give several separated by commas, or
+  leave it empty to skip.
+- **It stops if:** a keyword is empty, or one `--keyword` has a comma.
 
 #### Source file
 
 `<path/to/source/words>` or `--source`. The files to build the dictionary from.
 
-- **Values:** word lists, one word per line, usually `.txt` files; and Hunspell `.dic` files. A path is relative to
-  where you run the command.
-- **Several:** give several after the name, repeat `--source`, or both. They're combined, and word lists and Hunspell
-  files can be mixed: `pnpm create-dictionary en_XX en_XX.dic extra-words.txt`.
-- **Sets:** a copy of each word list in the dictionary's `src/`, and each one as a source in
+- **What to give:** word lists, one word per line, usually `.txt` files; and Hunspell `.dic` files. A path is relative
+  to where you run the command.
+- **More than one:** give several after the name, repeat `--source`, or both. They're combined, and word lists and
+  Hunspell files can be mixed: `pnpm create-dictionary en_XX en_XX.dic extra-words.txt`.
+- **What it changes:** a copy of each word list in the dictionary's `src/`, and each one as a source in
   `cspell-tools.config.yaml`. A Hunspell file is a [third-party source](#third-party-sources) named after it, copied
   with its pair into `src/<name>/`. Either file of the pair can be given, or both.
-- **Errors:** a file doesn't exist (see [Missing source](#missing-source)), a Hunspell file is missing its pair, or two
-  files have the same name and would both be copied to the same file in `src/`.
+- **It stops if:** a file doesn't exist (see [Missing source](#missing-source)), a Hunspell file is missing its pair, or
+  two files have the same name and would both be copied to the same file in `src/`.
 
 #### Third-party sources
 
@@ -291,12 +292,12 @@ pnpm create-dictionary en_XX \
 - **`--add-source-readme <name>=<path>`:** the README that came with the source, such as `README_en_US.txt` from a
   Hunspell dictionary. It often names the authors and states the terms of use, sometimes in place of a license file.
   It's copied and published the same way.
-- **`--add-source-url <name>=<url>`:** the web page where the source can be found, so others can check it or get a
-  newer version.
+- **`--add-source-url <name>=<url>`:** the web page where the source can be found, so others can check it or get a newer
+  version.
 - **Paths:** a file keeps its path inside `src/<name>/`. Give another as `<name>/<local path>=<path>`, which a file
   outside the folder, such as `../LICENSE`, needs.
-- **Errors:** a missing file, a source with no files, or two sources with the same name. A missing license, README, or
-  URL is only a warning.
+- **It stops if:** a file is missing, a source has no files, or two sources have the same name. A missing license,
+  README, or URL is only a warning.
 
 #### Missing source
 
@@ -305,7 +306,7 @@ pnpm create-dictionary en_XX \
 - **Without a source:** it creates an empty `src/<name>.txt`.
 - **With a source that doesn't exist:** it creates an empty file under that name in `src/`. Each source is checked on
   its own, so the others are still copied.
-- **When asking:** a missing file asks whether to create it empty instead.
+- **When it asks:** a missing file asks whether to create it empty instead.
 - It doesn't apply to Hunspell files, which must exist.
 
 #### Word files
@@ -313,8 +314,8 @@ pnpm create-dictionary en_XX \
 Every new dictionary gets two word lists in `src/`, for fixes by hand after it's built:
 
 - **`src/additional_words.txt`:** words the sources lack. It's built like any other source.
-- **`src/exclude_words.txt`:** words to leave out of the built dictionary, such as a wrong form from an upstream
-  source. The build lists it under `excludeWordsFrom`.
+- **`src/exclude_words.txt`:** words to leave out of the built dictionary, such as a wrong form from an upstream source.
+  The build lists it under `excludeWordsFrom`.
 
 `--no-additional-words` and `--no-exclude-words` leave them out. A source can't be named like either file.
 
@@ -322,22 +323,23 @@ Every new dictionary gets two word lists in `src/`, for fixes by hand after it's
 
 `--locale`. The languages the dictionary is enabled for.
 
-- **Values:** a language code with an optional region, such as `en` or `en-AU`. Separate several with commas:
+- **What to give:** a language code with an optional region, such as `en` or `en-AU`. Separate several with commas:
   `en,en-AU`. `*` matches any language.
-- **Sets:** `locale` in `cspell-ext.json`'s `languageSettings`.
-- **Default:** `*`.
-- **When to use it:** for a natural language dictionary. Leave the file type as `*`.
+- **What it changes:** `locale` in `cspell-ext.json`'s `languageSettings`.
+- **If you leave it out:** it uses `*`.
+- **Use it for:** a natural language dictionary. Leave the file type as `*`.
 
 #### File type
 
 `--language-id`. The file types the dictionary is enabled for.
 
-- **Values:** a VS Code language ID or file type, such as `java`, `cpp`, or `markdown`. Separate several with commas.
-  `*` matches all file types. See [VS Code's language identifiers](https://code.visualstudio.com/docs/languages/identifiers).
-- **Sets:** `languageId` in `cspell-ext.json`'s `languageSettings`.
-- **Default:** `*`, unless the locale is `*` too. Then there's no default.
-- **When to use it:** for any dictionary that isn't a natural language. Leave the locale as `*`.
-- **Errors:** the locale and the file type are both `*`, which would enable the dictionary for every file in every
+- **What to give:** a VS Code language ID or file type, such as `java`, `cpp`, or `markdown`. Separate several with
+  commas. `*` matches all file types. See [VS Code's language
+  identifiers](https://code.visualstudio.com/docs/languages/identifiers).
+- **What it changes:** `languageId` in `cspell-ext.json`'s `languageSettings`.
+- **If you leave it out:** it uses `*`, unless the locale is `*` too. Then there's no default.
+- **Use it for:** any dictionary that isn't a natural language. Leave the locale as `*`.
+- **It stops if:** the locale and the file type are both `*`, which would enable the dictionary for every file in every
   language.
 
 #### Store as trie
@@ -347,13 +349,13 @@ Every new dictionary gets two word lists in `src/`, for fixes by hand after it's
 - **`--trie`:** a compact format, much smaller for large lists. Use it for Hunspell files and for source files over
   about 1 MB.
 - **`--no-trie`:** plain text, fine for smaller lists such as programming language keywords.
-- **Default:** a trie for a Hunspell source, plain text otherwise.
+- **If you leave it out:** it stores a Hunspell source as a trie, and anything else as plain text.
 
 #### Run build
 
 `--build` or `--no-build`. Whether to build the dictionary right after creating it.
 
-- **Default:** build a Hunspell source, and don't build a word list.
+- **If you leave it out:** it builds a Hunspell source, and doesn't build a word list.
 - You can always build later, with `pnpm run build` in the dictionary's directory.
 - If the build fails, the dictionary has still been created. Finish it there, or delete the directory and run the
   command again.
