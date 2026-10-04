@@ -64,8 +64,9 @@ build half follows `docs/guides/new-dictionary.md`; read it too.
 
      Set `--locale` and `--language-id` as decided in step 4. If there is no word list yet, add
      `--allow-missing-source`, which starts an empty one. Use `--trie` for Hunspell sources and large lists. Run
-     `pnpm exec create-dictionary --help` to list the options. If it fails on a missing or invalid value, fix that option
-     and run it again.
+     `pnpm exec create-dictionary --help` to list the options. If it fails on a missing or invalid value, nothing was
+     written: fix that option and run it again. If `pnpm install` or the build fails, the dictionary was already created:
+     finish it in its directory (`pnpm install`, then `pnpm run build`), or delete it and run the command again.
 
    - `cspell-ext.json`'s `dictionaryDefinitions` and `languageSettings` match the design exactly: IDs, `languageId`,
      `locale`.
