@@ -1,6 +1,6 @@
 ---
 name: new-dictionary
-description: 'Designs and builds a new cspell-dicts dictionary, from interview to one pull request: why and for whom, its name and dictionary IDs, which file types and locales it is enabled for, its sources and their licenses, and how it is built, then the dictionary itself, created with pnpm create-dictionary, with samples and passing checks. Use when the user wants a dictionary for a new programming language, tool, natural language, or field, or asks to "create a dictionary for X". Records the design as ADRs only when the dictionary takes a different approach or needs scripts of its own. For words in an existing dictionary, use word-change. For splitting or renaming existing dictionaries, use feature-adr.'
+description: 'Designs and builds a new cspell-dicts dictionary, from interview to one pull request: why and for whom, its name and dictionary IDs, which file types and locales it is enabled for, its sources and their licenses, and how it is built, then the dictionary itself, created with pnpm create-dictionary, with samples and passing checks. Use when the user wants a dictionary for a new programming language, tool, natural language, or field, or asks to "create a dictionary for X". For words in an existing dictionary, use word-change. For splitting or renaming existing dictionaries, use feature-adr.'
 ---
 
 # new-dictionary
@@ -60,12 +60,10 @@ Decide everything `pnpm create-dictionary` needs, one decision at a time.
 - **Stop and ask** if a license is missing, unclear, or would change the dictionary's license. Give the exact source
   and version, its license, why it matters, and the alternatives.
 - **Do:** keep the answers to group 0 and a list of the decisions, one line each, for the PR description.
-- **Do:** once the sources and the build are clear, decide whether it needs ADRs, and tell the user why. It needs them
-  only when it takes a different approach from the guide, or needs scripts beyond `pnpm create-dictionary`, the build,
-  and a `sync` script as in `docs/guides/upstream-updates.md`. If it does, follow only `feature-adr` steps 4 to 7, with
-  the feature slug `dict-<name>`.
-- **Stop and ask:** wait until the user says the design is final. Then squash any ADRs into a tight set
-  (`feature-adr` step 9), and commit.
+- **Stop and ask** if the design goes beyond the guide: a different approach, or scripts beyond
+  `pnpm create-dictionary`, the build, and a `sync` script as in `docs/guides/upstream-updates.md`. Suggest settling
+  that design first with `feature-adr`, as its own step, before building the dictionary.
+- **Stop and ask:** wait until the user says the design is final.
 
 ### 4. Create the dictionary
 
@@ -95,8 +93,7 @@ Turn the design into the dictionary with one command.
   - On a missing or invalid value, nothing was written. Fix that option and run it again.
   - If `pnpm install` or the build fails, the dictionary was already created. Finish it in its directory
     (`pnpm install`, then `pnpm run build`), or delete it and run the command again.
-- **Stop and ask** if the build shows a decision was wrong. Change it with the user, and its ADR if there is one,
-  before going on.
+- **Stop and ask** if the build shows a decision was wrong. Change it with the user before going on.
 
 ### 5. Add what only a person can add
 
@@ -139,10 +136,9 @@ Hand the user one PR with the design and the dictionary.
 - **Do:** follow `docs/commits-and-pull-requests.md`:
   - Title: `feat(<name>): add <friendly name> dictionary`.
   - Body: a `## Summary` of what it covers and for whom, a `## Feature` section with the cspell config to enable it,
-    the design (one line per decision, linking the feature's `README.md` if there are ADRs), and the sources with
-    their licenses.
+    the design (one line per decision), and the sources with their licenses.
 - **Stop and ask** before pushing or opening the PR.
-- **Do,** after merge: remove the worktree and delete the branch. Change or archive any ADRs with `feature-adr` step 10.
+- **Do,** after merge: remove the worktree and delete the branch.
 
 ## Not this skill
 
