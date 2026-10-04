@@ -4,8 +4,11 @@ Status: Accepted
 
 ## Why
 
-Goal: easy to maintain. Upstream files change, move, and disappear. Today the sync misses that silently, and failing
-instead would break the weekly update for every dictionary.
+**Goal:** easy to maintain. The weekly sync brings upstream changes in on its own, and reports anything a maintainer
+must act on, once.
+
+**Problem:** Upstream files change, move, and disappear. Today the sync misses that silently, and failing instead would
+break the weekly update for every dictionary.
 
 ## Decision
 

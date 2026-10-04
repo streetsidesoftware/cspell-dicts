@@ -4,8 +4,10 @@ Status: Accepted
 
 ## Why
 
-Goal: easy to maintain. Upstreams live in many places, and today's syncs rely on devDependencies and on pins that go
-stale.
+**Goal:** easy to maintain. Upstream sources stay current with no bumping by hand, wherever they live.
+
+**Problem:** Upstreams live in many places, and today's syncs rely on devDependencies, which slow every install, and on
+pins that go stale.
 
 ## Decision
 

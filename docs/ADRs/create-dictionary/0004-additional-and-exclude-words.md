@@ -4,8 +4,10 @@ Status: Accepted
 
 ## Why
 
-Goal: easy to maintain. Adding a word no source generates, and removing one the build generates, come up in almost every
-dictionary, and there's no one known place for either.
+**Goal:** easy to maintain. Every new dictionary has one known place to add a word and one to remove it.
+
+**Problem:** Adding a word no source generates, or removing one the build generates, comes up in almost every
+dictionary, but each dictionary has its own files for it, or none.
 
 ## Decision
 

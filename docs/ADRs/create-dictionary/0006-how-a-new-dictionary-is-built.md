@@ -4,8 +4,11 @@ Status: Accepted
 
 ## Why
 
-Goals: easy to create, and easy to adopt. A contributor had to know when to use a trie, creation could hang on a large
-Hunspell build, and the default depth was set where it means nothing.
+**Goals:** easy to create, and easy to adopt. A new dictionary is stored and built sensibly without the contributor
+knowing the build's details, and creating it never hangs.
+
+**Problem:** A contributor had to know when to use a trie, creating a dictionary could hang on a large Hunspell build,
+and the template set a depth on every source, including word lists, where it means nothing.
 
 ## Decision
 

@@ -4,8 +4,11 @@ Status: Accepted
 
 ## Why
 
-Goals: traceable, and easy to maintain. The generator, the sync, and the READMEs all need one record of every source
-that they can read. Today that record is a script per source.
+**Goals:** traceable, and easy to maintain. There's one record of every source that people and tools can read, so the
+generator, the sync, and the READMEs agree.
+
+**Problem:** Today the only record of a source is a sync script in `package.json`, one per source. It's hard to
+maintain, and no other tool can read it.
 
 ## Decision
 
