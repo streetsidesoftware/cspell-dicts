@@ -110,6 +110,6 @@ One PR per step. This section is removed once the feature ships.
 5. Trie, build at creation, and Hunspell depth ([0006](./0006-how-a-new-dictionary-is-built.md)).
 6. Samples ([0007](./0007-samples.md)).
 7. Sources in the READMEs, mostly in `scripts/` ([0008](./0008-sources-are-explained-in-the-readmes.md)).
-8. The sync command, and the state, gone marks, existence check, and size cap in `sync-github-files` ([0011](./0011-how-the-sync-handles-change.md)).
+8. `sync-sources`, and in `sync-github-files` the existence check, gone marks, size cap, and differing local paths ([0011](./0011-how-the-sync-handles-change.md)).
 9. npm sources through jsDelivr ([0010](./0010-remote-sources.md)).
 10. Remote sources at creation, the weekly `update-dictionary` script, and `--no-bail` in Update Dictionaries ([0010](./0010-remote-sources.md), [0012](./0012-when-sources-are-fetched.md)).
