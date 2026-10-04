@@ -9,8 +9,8 @@ instead would break the weekly update for every dictionary.
 
 ## Decision
 
-- **One sync command,** `sync-sources`, in `scripts/` next to `sync-github-files`, reads `sources.yaml` and syncs each source. A
-  dictionary's `package.json` has one `sync` script that runs it.
+- **One sync command,** `sync-sources`, in `scripts/` next to `sync-github-files`, reads `src/sources.yaml` and syncs
+  each source. A dictionary's `package.json` has one `sync` script that runs it.
 - **Stored identifiers.** A state file in each source's folder holds what the upstream returned: each GitHub file's blob
   SHA, or an npm source's version and each file's hash. They're opaque; the sync compares what the upstream gave last
   time with what it gives now, and never calculates them. A file is fetched when its identifier changed or it's missing
