@@ -49,8 +49,10 @@ sources:
     url: https://github.com/marcoagpinto/aoo-mozilla-en-dict
 ```
 
-- A source has `github`, `npm`, or `path` for its kind and location, and optionally `ref`, `version`, and `max-size`
+- A remote source has `github` or `npm` for its kind and location, and optionally `ref`, `version`, and `max-size`
   ([0010](./0010-remote-sources.md), [0011](./0011-how-the-sync-handles-change.md)).
+- A source with neither is local: its files exist only in `src/<name>/`, `url` says where it came from, and the sync
+  skips it. Where it was copied from on the contributor's machine isn't recorded; it means nothing to anyone else.
 - `files:` lists exact paths, never globs or folders.
 - There's no schema; tools report a clear error when something they need is missing.
 - People edit it; no tool rewrites it.
