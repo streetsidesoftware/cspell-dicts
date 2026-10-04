@@ -46,7 +46,7 @@ Options weighed:
   creation, which goes stale.
 - **Which files:** globs or whole folders in `files:`, as `th_th`'s `--filter "th_TH/th_TH.*"` and `de_DE`'s
   `dictionary-de/**` do today, so renamed and new upstream files arrive on their own. But the build names exact files,
-  so a rename needs a person anyway, and a pattern can pull very large or unreviewed files into the repo through a bot PR
+  so a rename needs a person anyway, and a pattern can pull very large files, or files nobody reviewed, into the repo through a bot PR
   that's merged on trust.
 - **The record:** keep the scripts; or a structured field in `package.json`, which npm doesn't know, can't have
   comments, and a reader can't identify. For the file format, JSON can't hold the comment that says what the file is,
