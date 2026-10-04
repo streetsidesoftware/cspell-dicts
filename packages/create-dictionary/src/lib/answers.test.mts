@@ -48,6 +48,7 @@ describe('getAnswers', () => {
             description: 'Test words',
             packageDescription: 'Medical Terms dictionary for cspell.',
             contributors: [],
+            keywords: [],
             sources: [{ file: 'words.txt', empty: false }],
             locale: '*',
             languageId: 'markdown',
@@ -175,6 +176,26 @@ describe('getAnswers', () => {
                 root,
             ),
             /--contributor: "<john@example\.com>" isn't "Name"/,
+        );
+    });
+
+    it('keeps the given keywords, trimmed', async () => {
+        const settings = await getAnswers(
+            options({ name: 'golang', keywords: [' go ', 'golang'], srcFiles: ['words.txt'], languageId: 'go' }),
+            repo,
+            root,
+        );
+        assert.deepEqual(settings.keywords, ['go', 'golang']);
+    });
+
+    it('refuses several keywords in one --keyword', async () => {
+        await assert.rejects(
+            getAnswers(
+                options({ name: 'golang', keywords: ['go,golang'], srcFiles: ['words.txt'], languageId: 'go' }),
+                repo,
+                root,
+            ),
+            /--keyword: "go,golang" has a comma/,
         );
     });
 

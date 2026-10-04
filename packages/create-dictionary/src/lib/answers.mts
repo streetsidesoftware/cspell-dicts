@@ -12,6 +12,7 @@ import {
     sourceValidator,
     type Validate,
     validateContributor,
+    validateKeyword,
     validateDescription,
     validateLanguageId,
 } from './validate.mts';
@@ -77,6 +78,25 @@ export async function getAnswers(options: CommandLine, repo: Repo, cwd: string):
             def = undefined;
             if (!(await confirm({ message: 'Add another contributor?', default: false }))) return asked;
         }
+    }
+
+    async function keywords(): Promise<string[]> {
+        const list = given.keywords;
+        if (list !== undefined) {
+            for (const word of list) {
+                const valid = validateKeyword(word);
+                if (valid !== true) throw new Error(`${optionForAnswer.keywords}: ${valid}`);
+            }
+            return list.map((word) => word.trim());
+        }
+        if (noPrompts) return [];
+        const typed = await input({
+            message: 'Other names people search for, such as golang for Go; comma separated, empty to skip',
+        });
+        return typed
+            .split(',')
+            .map((word) => word.trim())
+            .filter((word) => word);
     }
 
     async function sources(name: string): Promise<Source[]> {
@@ -160,6 +180,7 @@ export async function getAnswers(options: CommandLine, repo: Repo, cwd: string):
         title(friendlyName) + ' dictionary for cspell.',
     );
     const people = await contributors();
+    const searchWords = await keywords();
     const srcs = await sources(name);
     const locale = await text(
         'locale',
@@ -187,6 +208,7 @@ export async function getAnswers(options: CommandLine, repo: Repo, cwd: string):
         description,
         packageDescription,
         contributors: people,
+        keywords: searchWords,
         sources: srcs,
         locale,
         languageId,

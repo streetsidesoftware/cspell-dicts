@@ -47,6 +47,13 @@ export function validateDescription(value: string): string | true {
     return true;
 }
 
+/** One npm keyword. */
+export function validateKeyword(value: string): string | true {
+    if (!value.trim()) return 'empty. Give a word people search for, such as golang.';
+    if (value.includes(',')) return `"${value}" has a comma. Give one keyword per --keyword.`;
+    return true;
+}
+
 /** A contributor in npm's one-line form: a name, then an optional `<email>` and an optional `(url)`. */
 export function validateContributor(value: string): string | true {
     if (!/^[^<>()]*[^\s<>()][^<>()]*(<[^<>\s]+>\s*)?(\([^()\s]+\))?$/.test(value.trim())) {

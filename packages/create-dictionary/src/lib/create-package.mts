@@ -45,7 +45,7 @@ export function createPackage(answers: Settings, repo: Repo, cwd: string): strin
     for (const file of templateFiles) {
         const template = readFileSync(join(templateDir, file), 'utf8');
         const content = fillTemplate(template, values, extname(file));
-        write(file, file === 'package.json' ? withContributors(content, answers.contributors) : content);
+        write(file, file === 'package.json' ? withPeopleAndKeywords(content) : content);
     }
     for (const source of answers.sources) {
         if (source.empty) {
@@ -61,9 +61,11 @@ export function createPackage(answers: Settings, repo: Repo, cwd: string): strin
 
     return packageDir;
 
-    function withContributors(packageJson: string, contributors: string[]): string {
+    /** The template's package.json, with the contributors and the extra keywords. */
+    function withPeopleAndKeywords(packageJson: string): string {
         const pkg = JSON.parse(packageJson);
-        pkg.contributors = contributors;
+        pkg.contributors = answers.contributors;
+        pkg.keywords = [...new Set([...pkg.keywords, ...answers.keywords])];
         return JSON.stringify(pkg, null, 2) + '\n';
     }
 

@@ -1,4 +1,4 @@
-# 0005. The friendly name, the descriptions, the contributors, and when a dictionary is enabled
+# 0005. The friendly name, the descriptions, the contributors and keywords, and when a dictionary is enabled
 
 Status: Accepted
 
@@ -8,7 +8,8 @@ Status: Accepted
 
 **Problem:** The generator filled in defaults a maintainer had to correct in every new dictionary. It described each one
 as "dictionary for cspell", which says nothing about its words. It enabled each one for every file in every language. It
-turned `medical_terms` into "Medical_terms", and it never listed who made the dictionary.
+turned `medical_terms` into "Medical_terms", it never listed who made the dictionary, and it left the other names people
+search npm for to be added by hand.
 
 ## Decision
 
@@ -25,6 +26,9 @@ turned `medical_terms` into "Medical_terms", and it never listed who made the di
   dictionary in `package.json`'s `contributors`, as given. Only the name is required; an email goes in `<…>` and a URL
   in `(…)`. When prompting, the generator asks for contributors in a loop; the first answer defaults to
   `git config user.name`, without the email, and an empty answer skips. Without one, `contributors` stays empty.
+- `--keyword <word>`, repeatable and optional, adds the other names people search npm for, such as `golang` for Go, to
+  `package.json`'s `keywords`, after the template's and without duplicates. When prompting, the generator asks once
+  for several, separated by commas; an empty answer skips.
 
 ## Consequences
 
@@ -56,6 +60,9 @@ npm's one-line form, `Name <email> (url)`, with the email and URL optional, such
 
 ## Rejected approaches
 
+- Asking contributors to add `keywords` to `package.json` by hand after creating the dictionary: they know the search
+  terms while running the generator, and the edit was easy to forget. A single `--keywords "a,b"` option: no other
+  option takes a list that way.
 - Listing upstream authors as contributors: they're credited through their sources' licenses and READMEs, and the
   README's Sources section.
 - Separate `--contributor-name`, `--contributor-email`, and `--contributor-url` options: awkward for more than one

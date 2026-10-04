@@ -9,6 +9,7 @@ import {
     nameValidator,
     sourceValidator,
     validateContributor,
+    validateKeyword,
     validateDescription,
     validateLanguageId,
 } from './validate.mts';
@@ -103,6 +104,18 @@ describe('validateContributor', () => {
         ]) {
             assert.match(String(validateContributor(person)), /isn't "Name"/, person);
         }
+    });
+});
+
+describe('validateKeyword', () => {
+    it('accepts a word or a phrase', () => {
+        assert.equal(validateKeyword('golang'), true);
+        assert.equal(validateKeyword('Go language'), true);
+    });
+
+    it('refuses an empty keyword, or several in one', () => {
+        assert.match(String(validateKeyword(' ')), /empty/);
+        assert.match(String(validateKeyword('go,golang')), /one keyword per --keyword/);
     });
 });
 

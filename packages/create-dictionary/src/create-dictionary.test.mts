@@ -81,6 +81,7 @@ describe('help', () => {
             '--description',
             '--package-description',
             '--contributor',
+            '--keyword',
         ]) {
             assert.ok(result.stdout.includes(option), option);
         }
@@ -136,6 +137,13 @@ describe('a new package', () => {
         const pkg = JSON.parse(packageFile('people', 'package.json'));
         assert.deepEqual(pkg.contributors, ['Jane Doe (https://example.com/jane-doe)', 'John Roe']);
         assert.deepEqual(JSON.parse(packageFile('plain', 'package.json')).contributors, []);
+    });
+
+    it('adds each --keyword to package.json', () => {
+        const result = createYes('searchable', 'words.txt', '--keyword', 'golang', '--keyword', 'go language');
+        assert.equal(result.code, 0, result.stderr);
+        const { keywords } = JSON.parse(packageFile('searchable', 'package.json'));
+        assert.deepEqual(keywords.slice(-2), ['golang', 'go language']);
     });
 
     it('escapes values in JSON and YAML files', () => {
