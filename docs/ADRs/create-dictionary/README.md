@@ -83,7 +83,7 @@ It ships in two stages, each usable on its own:
 | ------------------------------------------------------- | ------------------------------------------------------------------------------------- | -------- |
 | [0001](./0001-name-and-sources-on-the-command-line.md)  | How the name and the sources are given on the command line                            | Accepted |
 | [0002](./0002-third-party-sources.md)                   | Third-party sources are defined by name, each in its own folder                       | Accepted |
-| [0003](./0003-sources-file.md)                          | Every source is recorded in `sources.yaml`                                            | Accepted |
+| [0003](./0003-sources-file.md)                          | Every source is recorded in `src/sources.yaml`                                        | Accepted |
 | [0004](./0004-additional-and-exclude-words.md)          | Every new dictionary gets `src/additional_words.txt` and `src/exclude_words.txt`      | Accepted |
 | [0005](./0005-names-descriptions-and-where-it-is-on.md) | The friendly name, the descriptions, and where a dictionary is turned on              | Accepted |
 | [0006](./0006-how-a-new-dictionary-is-built.md)         | How a new dictionary is built: trie, build at creation, and Hunspell depth            | Accepted |
@@ -119,6 +119,5 @@ One PR per step. This section is removed once the feature ships.
 - `--add-source-ref`: the option that pins a GitHub source to a tag or commit. Decide before building the maintain stage.
 - `--add-source-max-size` and `max-size`: the option and the `sources.yaml` key that raise a source's 30 MB cap, and the
   format of the size. Decide before building the maintain stage.
-- `sources.yaml`: the sources file. Decide before building the create-and-adopt stage, which writes it.
 - The generic sync command's name. Decide before building the maintain stage.
 - The npm sources' state file, the counterpart of `.sync-github-files.json`. Decide before building the maintain stage.

@@ -1,4 +1,4 @@
-# 0003. Every source is recorded in `sources.yaml`
+# 0003. Every source is recorded in `src/sources.yaml`
 
 Status: Accepted
 
@@ -9,12 +9,12 @@ that they can read. Today that record is a script per source.
 
 ## Decision
 
-The generator writes `sources.yaml` at the dictionary's root, from the `--define-source*` and `--add-source-*` options,
-and lists it in `files` so it's published:
+The generator writes `src/sources.yaml`, next to the copies it describes, from the `--define-source*` and
+`--add-source-*` options, and lists it in `files` so it's published:
 
 ```yaml
 # The sources of this dictionary, read by `pnpm run sync`.
-# Each source is copied into src/<name>/. See src/README.md.
+# Each source is copied into the folder of its name, next to this file. See README.md.
 sources:
   - name: aoo
     github: marcoagpinto/aoo-mozilla-en-dict/dicts/en_XX
