@@ -44,8 +44,9 @@ Reviewing its options after the rewrite (#5841–#5845) showed these gaps.
 
 Three goals form the main line, and a fourth applies to all of them:
 
-1. **Easy to create:** someone who doesn't know the repo runs `pnpm create-dictionary` once, with options or by
-   answering the prompts, and gets a dictionary that passes CI.
+1. **Easy to create:** someone who doesn't know the repo gets a dictionary that passes CI from one run of
+   `pnpm create-dictionary`, with options or by answering the prompts. Or their AI agent walks them through it, so they
+   never need to type a terminal command.
 2. **Easy to adopt:** a maintainer merges a new dictionary after review, without pushing their own fixes to the PR.
 3. **Easy to maintain:** upstream changes arrive in the weekly PR with no hand work, and a word is added or removed in
    one known place.

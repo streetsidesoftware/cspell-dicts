@@ -6,8 +6,8 @@ Status: Accepted
 
 Goal: traceable, and easy to adopt.
 
-A third-party source is one someone else maintains: an OpenOffice or other Hunspell dictionary, a word list in a
-repository, a download. A compiled dictionary is often a derivative work of its sources, so each must be traceable to
+A third-party source is a set of files someone else maintains, such as an OpenOffice or other Hunspell dictionary, or a
+word list kept in another repository or offered on a website. A compiled dictionary is often a derivative work of its sources, so each must be traceable to
 where it came from, with its license beside its copy. To keep such a copy we need its name, its files, and, where it has
 them, its license, README, and URL.
 
