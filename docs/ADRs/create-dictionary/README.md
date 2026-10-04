@@ -116,7 +116,6 @@ One PR per step. This section is removed once the feature ships.
 
 ## Provisional names
 
-- `--add-source-ref`: the option that pins a GitHub source to a tag or commit. Decide before building the maintain stage.
 - `--add-source-max-size` and `max-size`: the option and the `sources.yaml` key that raise a source's 30 MB cap, and the
   format of the size. Decide before building the maintain stage.
 - The npm sources' state file, the counterpart of `.sync-github-files.json`. Decide before building the maintain stage.

@@ -11,7 +11,8 @@ stale.
 
 - **GitHub** (`--define-source-github`), whenever an upstream has a repository. A source is rooted at the folder that
   holds the dictionary: for `dictionary-de`, that's `wooorm/dictionaries/dictionaries/de`. It follows the default
-  branch; `--add-source-ref <name>=<ref>` pins a tag or commit, recorded as `ref`.
+  branch; `--add-source-ref <name>=<ref>` points it at another branch, a tag, or a commit, recorded as `ref`; "ref" is
+  GitHub's word for any of them.
 - **npm** (`--define-source-npm`), when there's no usable repository. Files are read from jsDelivr,
   `https://cdn.jsdelivr.net/npm/<pkg>@<version>/<path>`, and the file list from
   `https://data.jsdelivr.com/v1/packages/npm/<pkg>@<version>`, with no dependency and no tarball. It follows the latest
