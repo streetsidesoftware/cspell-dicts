@@ -53,9 +53,17 @@ separate ADRs (a dictionary's IDs, and which file types turn it on).
 
 ## Status
 
+An ADR's status:
+
 - `Proposed`: under discussion.
 - `Accepted`: decided.
 - `Superseded by NNNN`: overturned by a later ADR in the same feature.
+
+A feature's status, in the [Features](#features) table:
+
+- `Designing`: the interview is still going.
+- `Accepted`: the design is decided, whether or not it's built yet.
+- `Archived`: shipped, and its ADRs replaced by a summary.
 
 ## Designing a feature
 
