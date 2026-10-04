@@ -19,6 +19,10 @@ describe('fillTemplate', () => {
         assert.equal(fillTemplate('# <%= name %>', values, '.md'), '# Q "Quoted" it\'s');
     });
 
+    it('leaves a value as it is with <%- %>', () => {
+        assert.equal(fillTemplate('name: <%- name %>', values, '.yaml'), 'name: Q "Quoted" it\'s');
+    });
+
     it('fails on an unknown value', () => {
         assert.throws(() => fillTemplate('<%= missing %>', values, '.md'), /Unknown template value: missing/);
     });

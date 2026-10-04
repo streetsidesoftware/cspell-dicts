@@ -62,7 +62,8 @@ build half follows `docs/guides/new-dictionary.md`; read it too.
      pnpm exec create-dictionary --yes <name> <path/to/source/words> --friendly-name "<Friendly Name>" --description "<description>" --locale <locale> --language-id <file type> --no-trie --build
      ```
 
-     Set `--locale` and `--language-id` as decided in step 4. If there is no word list yet, add
+     List every source after the name, word lists and Hunspell `.dic` files alike; they're combined. Set `--locale`
+     and `--language-id` as decided in step 4. If there is no word list yet, add
      `--allow-missing-source`, which starts an empty one. Use `--trie` for Hunspell sources and large lists. Run
      `pnpm exec create-dictionary --help` to list the options. If it fails on a missing or invalid value, nothing was
      written: fix that option and run it again. If `pnpm install` or the build fails, the dictionary was already created:
