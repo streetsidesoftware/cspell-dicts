@@ -78,6 +78,7 @@ describe('help', () => {
             '--locale',
             '--language-id',
             '--description',
+            '--package-description',
         ]) {
             assert.ok(result.stdout.includes(option), option);
         }
