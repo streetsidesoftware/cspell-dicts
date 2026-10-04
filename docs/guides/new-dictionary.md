@@ -229,7 +229,7 @@ Each option answers one question. Without `--yes`, any option you leave out is a
 `--contributor`. Someone who creates or maintains this dictionary in this repository. Repeat it for each person.
 
 - **Values:** a name, optionally followed by an email in `<…>` and a web address in `(…)`, such as
-  `Ana Lee (https://github.com/analee)`. A GitHub profile is a good choice for the web address. `package.json` is
+  `Jane Doe (https://example.com/jane-doe)`. A GitHub profile is a good choice for the web address. `package.json` is
   published, so anything given here is public.
 - **Sets:** `contributors` in `package.json`.
 - **Default:** none, so the list stays empty. When asking, the first answer is filled in with your Git name

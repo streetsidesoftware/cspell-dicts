@@ -40,8 +40,8 @@ describe('gitUserName', () => {
         const dir = join(root, 'git-user');
         mkdirSync(dir);
         spawnSync('git', ['init', '-q'], { cwd: dir });
-        spawnSync('git', ['config', 'user.name', 'Ana Lee'], { cwd: dir });
-        assert.equal(gitUserName(dir), 'Ana Lee');
+        spawnSync('git', ['config', 'user.name', 'Jane Doe'], { cwd: dir });
+        assert.equal(gitUserName(dir), 'Jane Doe');
     });
 });
 

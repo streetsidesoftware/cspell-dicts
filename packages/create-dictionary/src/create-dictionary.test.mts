@@ -128,13 +128,13 @@ describe('a new package', () => {
             'people',
             'words.txt',
             '--contributor',
-            'Ana Lee (https://github.com/analee)',
+            'Jane Doe (https://example.com/jane-doe)',
             '--contributor',
-            'Bo Chen',
+            'John Roe',
         );
         assert.equal(result.code, 0, result.stderr);
         const pkg = JSON.parse(packageFile('people', 'package.json'));
-        assert.deepEqual(pkg.contributors, ['Ana Lee (https://github.com/analee)', 'Bo Chen']);
+        assert.deepEqual(pkg.contributors, ['Jane Doe (https://example.com/jane-doe)', 'John Roe']);
         assert.deepEqual(JSON.parse(packageFile('plain', 'package.json')).contributors, []);
     });
 

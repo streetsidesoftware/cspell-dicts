@@ -149,14 +149,17 @@ describe('getAnswers', () => {
         const settings = await getAnswers(
             options({
                 name: 'ruby',
-                contributors: [' Ana Lee (https://github.com/analee) ', 'Bo Chen <bo@example.com>'],
+                contributors: [' Jane Doe (https://example.com/jane-doe) ', 'John Roe <john@example.com>'],
                 srcFiles: ['words.txt'],
                 languageId: 'ruby',
             }),
             repo,
             root,
         );
-        assert.deepEqual(settings.contributors, ['Ana Lee (https://github.com/analee)', 'Bo Chen <bo@example.com>']);
+        assert.deepEqual(settings.contributors, [
+            'Jane Doe (https://example.com/jane-doe)',
+            'John Roe <john@example.com>',
+        ]);
     });
 
     it("refuses a contributor that is not in npm's form", async () => {
@@ -164,14 +167,14 @@ describe('getAnswers', () => {
             getAnswers(
                 options({
                     name: 'ruby',
-                    contributors: ['<bo@example.com>'],
+                    contributors: ['<john@example.com>'],
                     srcFiles: ['words.txt'],
                     languageId: 'ruby',
                 }),
                 repo,
                 root,
             ),
-            /--contributor: "<bo@example\.com>" isn't "Name"/,
+            /--contributor: "<john@example\.com>" isn't "Name"/,
         );
     });
 

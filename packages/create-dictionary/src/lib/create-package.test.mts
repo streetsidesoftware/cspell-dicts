@@ -86,12 +86,12 @@ describe('createPackage', () => {
 
     it('lists the contributors in package.json', () => {
         const dir = createPackage(
-            settings('people', { contributors: ['Ana Lee (https://github.com/analee)'] }),
+            settings('people', { contributors: ['Jane Doe (https://example.com/jane-doe)'] }),
             repo,
             root,
         );
         const pkg = JSON.parse(read(dir, 'package.json'));
-        assert.deepEqual(pkg.contributors, ['Ana Lee (https://github.com/analee)']);
+        assert.deepEqual(pkg.contributors, ['Jane Doe (https://example.com/jane-doe)']);
         assert.match(read(dir, 'package.json'), /^\{\n {2}"name"/);
     });
 

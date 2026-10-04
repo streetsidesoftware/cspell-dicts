@@ -84,10 +84,10 @@ describe('validateDescription', () => {
 describe('validateContributor', () => {
     it('accepts a name, with an optional <email> and (url)', () => {
         for (const person of [
-            'Ana Lee',
-            'Ana Lee <ana@example.com>',
-            'Ana Lee (https://github.com/analee)',
-            'Ana Lee <ana@example.com> (https://github.com/analee)',
+            'Jane Doe',
+            'Jane Doe <jane@example.com>',
+            'Jane Doe (https://example.com/jane-doe)',
+            'Jane Doe <jane@example.com> (https://example.com/jane-doe)',
             'Proxecto Trasno (https://trasno.gal)',
         ]) {
             assert.equal(validateContributor(person), true, person);
@@ -97,9 +97,9 @@ describe('validateContributor', () => {
     it('refuses a missing name, or parts out of order or unclosed', () => {
         for (const person of [
             '',
-            '<ana@example.com>',
-            'Ana Lee <ana@example.com',
-            'Ana (https://x.y) <ana@example.com>',
+            '<jane@example.com>',
+            'Jane Doe <jane@example.com',
+            'Ana (https://x.y) <jane@example.com>',
         ]) {
             assert.match(String(validateContributor(person)), /isn't "Name"/, person);
         }

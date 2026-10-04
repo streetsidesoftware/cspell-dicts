@@ -51,8 +51,8 @@ A dictionary names and describes itself in several places:
   wherever they spell check.
 
 Only 15 of 136 dictionaries list `contributors` in `package.json`; the template wrote an empty list. All 22 entries use
-npm's one-line form, `Name <email> (url)`, with the email and URL optional, such as `Ana Lee
-(https://github.com/analee)`. Some list a project rather than a person.
+npm's one-line form, `Name <email> (url)`, with the email and URL optional, such as `Jane Doe
+(https://example.com/jane-doe)`. Some list a project rather than a person.
 
 ## Rejected approaches
 
