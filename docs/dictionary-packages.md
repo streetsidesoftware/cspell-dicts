@@ -10,7 +10,7 @@ level: comfortable with basic git and a terminal; the build sections are for dev
 > For contributors creating or changing a dictionary, and developers changing how dictionaries are built.
 
 What a dictionary package under `dictionaries/` contains, and why. New dictionaries follow this layout. Many older
-packages differ, as listed in [Older packages](#older-packages), and move to it over time.
+dictionaries differ, as listed in [Older dictionaries](#older-dictionaries), and move to it over time.
 
 For the repo as a whole, see [Repository](./repository.md).
 
@@ -95,8 +95,8 @@ whole.
 
 ## Building
 
-`pnpm run build` in the dictionary's directory runs `cspell-tools-cli build`, which reads `cspell-tools.config.yaml` and writes
-`dict/`:
+`pnpm run build` in the dictionary's directory runs `cspell-tools-cli build`, which reads `cspell-tools.config.yaml`
+and writes `dict/`:
 
 ```sh
 cd dictionaries/<name>
@@ -139,15 +139,15 @@ list in its `cspell-ext.json` from its `dependencies`.
   dictionary turns on for its file types and that real files pass.
 - **`test:words`:** spell checks the start of the source. It's a stand-in while there are no samples yet.
 
-## Older packages
+## Older dictionaries
 
-Many packages predate this layout:
+Many dictionaries predate this layout:
 
-- They build into the package root instead of `dict/`, such as `de_DE/de_DE.trie`.
+- They build into the dictionary's directory instead of `dict/`, such as `de_DE/de_DE.trie`.
 - They build with a `cspell-tools-cli compile` command line instead of `cspell-tools.config.yaml`.
 - Their config doesn't set `checksumFile: true`, so they rebuild every time.
 - They hold a copy of upstream Hunspell files in `src/hunspell/` without a `sync` script.
-- They read another package's files by a relative path, such as `allowedSplitWords: ../en_US/en_US.trie`.
+- They read another dictionary's files by a relative path, such as `allowedSplitWords: ../en_US/en_US.trie`.
 - They have no exclude file, or name it `src/exclude-words.txt` or `src/exclude-terms.txt`.
 
 When you work on one of them, moving it to the current layout is welcome, in a separate PR.
