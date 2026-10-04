@@ -29,8 +29,7 @@ function settings(name: string, more: Partial<Settings>): Settings {
         friendlyName: 'Test',
         description: 'Test words',
         packageDescription: 'Test dictionary for cspell.',
-        srcFile: 'words.txt',
-        emptySource: false,
+        sources: [{ file: 'words.txt', empty: false }],
         locale: '*',
         languageId: 'ruby',
         useTrie: false,
@@ -44,6 +43,28 @@ function read(dir: string, file: string): string {
 }
 
 describe('createPackage', () => {
+    it('copies and lists every source', () => {
+        const dir = createPackage(
+            settings('several', {
+                sources: [
+                    { file: 'words.txt', empty: false },
+                    { file: 'pair.dic', empty: false },
+                    { file: 'extra.txt', empty: true },
+                ],
+            }),
+            repo,
+            root,
+        );
+        for (const file of ['src/words.txt', 'src/pair.dic', 'src/pair.aff', 'src/extra.txt']) {
+            assert.ok(existsSync(join(dir, file)), file);
+        }
+        const config = read(dir, 'cspell-tools.config.yaml');
+        for (const file of ['words.txt', 'pair.dic', 'extra.txt']) {
+            assert.match(config, new RegExp(`filename: 'src/${file.replace('.', '\\.')}'`));
+        }
+        assert.match(read(dir, 'package.json'), /"prepare:dictionary": "echo OK"/);
+    });
+
     it('writes every template, the source, and a placeholder dictionary', () => {
         const dir = createPackage(settings('plain', {}), repo, root);
         assert.equal(dir, join(repo.dictionariesDir, 'plain'));
@@ -63,12 +84,16 @@ describe('createPackage', () => {
     });
 
     it('starts an empty word list for a missing source', () => {
-        const dir = createPackage(settings('empty', { srcFile: 'nope.txt', emptySource: true }), repo, root);
+        const dir = createPackage(settings('empty', { sources: [{ file: 'nope.txt', empty: true }] }), repo, root);
         assert.equal(read(dir, 'src/nope.txt'), '# Test Terms\n');
     });
 
     it('copies both Hunspell files and uses the trie format', () => {
-        const dir = createPackage(settings('hunspell', { srcFile: 'pair.dic', useTrie: true }), repo, root);
+        const dir = createPackage(
+            settings('hunspell', { sources: [{ file: 'pair.dic', empty: false }], useTrie: true }),
+            repo,
+            root,
+        );
         assert.ok(existsSync(join(dir, 'src/pair.dic')));
         assert.ok(existsSync(join(dir, 'src/pair.aff')));
         assert.ok(existsSync(join(dir, 'dict/hunspell.trie')));
