@@ -23,6 +23,10 @@ dictionaries/<name>/
   cspell-tools.config.yaml
   checksum.txt
   src/<name>.txt
+  src/additional_words.txt
+  src/exclude_words.txt
+  src/sources.yaml
+  src/<source>/
   dict/<name>.txt
   samples/
   README.md
@@ -33,10 +37,11 @@ dictionaries/<name>/
 - **`package.json`:** the package, published as `@cspell/dict-<name>`. A new dictionary starts private, at
   `0.0.1-alpha.0`, until a maintainer publishes it (see [Releasing](./releasing.md#new-dictionaries)).
 - **`cspell-ext.json`:** what users import. It defines the dictionary IDs (`dictionaryDefinitions`) and the file types
-  and locales that turn them on (`languageSettings`). One package can define several IDs: `@cspell/dict-python`
+  and locales they're enabled for (`languageSettings`). One package can define several IDs: `@cspell/dict-python`
   defines `python` and `python-common`.
 - **`cspell-tools.config.yaml`:** how `src/` is built into `dict/`.
-- **`src/`:** the words. This is what contributors edit.
+- **`src/`:** the words. This is what contributors edit. A dictionary's own word lists sit directly in `src/`. Each
+  third-party source has its own folder, `src/<source>/`, recorded in `src/sources.yaml`.
 - **`dict/`:** the built dictionary.
 - **`samples/`:** correctly spelled files of the kind the dictionary is for.
 - **`README.md`:** the package's page on npmjs.com, so links are absolute `https://` URLs. See
@@ -61,8 +66,9 @@ Every source follows three rules:
   be built from scratch, without downloading anything.
 - **Sync only updates the local copy.** If an upstream source moves, disappears, or changes in a way we can't use, the
   sync fails, and the dictionary still builds from its local copy.
-- **Where it came from is recorded.** Each upstream source is synced into its own directory, `src/<source>/`, and the
-  dictionary's `src/README.md` links to each source's repository. The built dictionary is often a derivative work of its
+- **Where it came from is recorded.** Each third-party source is copied into its own directory, `src/<source>/`, and
+  recorded in `src/sources.yaml`, and its license and README are published with the dictionary. Older dictionaries
+  link to each source's repository from `src/README.md` instead. The built dictionary is often a derivative work of its
   sources, so their licenses apply to it. This matters most for Hunspell files.
 
 ## How a dictionary is built

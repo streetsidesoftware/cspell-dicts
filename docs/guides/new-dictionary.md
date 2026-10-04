@@ -120,7 +120,8 @@ maintainer makes it public once the dictionary has been verified.
 
 `pnpm create-dictionary` created a working dictionary in `dictionaries/<name>/`:
 
-- **`src/`:** the word lists it's built from.
+- **`src/`:** what it's built from: your word lists, `additional_words.txt` and `exclude_words.txt` for fixes by hand,
+  and a folder for each third-party source, recorded in `sources.yaml`.
 - **`dict/`:** the built dictionary, made from `src/` by `pnpm run build`.
 - **`cspell-ext.json`:** what cspell loads: the dictionary's name, its description, and the languages or file types it's
   enabled for.
@@ -276,6 +277,7 @@ pnpm create-dictionary en_XX \
   --define-source aoo=./vendor/aoo \
   --add-source-file aoo=dicts/en_XX.dic \
   --add-source-license aoo=LICENSE \
+  --add-source-readme aoo=README.md \
   --add-source-url aoo=https://example.com/aoo
 ```
 
