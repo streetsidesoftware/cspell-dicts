@@ -128,6 +128,7 @@ about this repo, and it takes each instruction literally. These rules follow Ant
   - **Check:** how it knows the step worked.
   - **If it fails:** what to do instead.
 - One instruction per bullet, two levels of nesting at most, and no paragraph longer than three lines.
-- Commands in code blocks, with one option per line when there are several.
+- Commands in code blocks, with one option per line when there are several. Put a long example, such as a commit
+  message, in a code block too: Prettier can break a long inline code span across lines.
 - A decision that belongs to the user starts with **Stop and ask**, so it stands out.
 - The last step runs the checks, fixes what they find, and runs them again until they pass.
