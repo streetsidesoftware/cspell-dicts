@@ -48,6 +48,9 @@ Options weighed:
   `dictionary-de/**` do today, so renamed and new upstream files arrive on their own. But the build names exact files,
   so a rename needs a person anyway, and a pattern can pull very large files, or files nobody reviewed, into the repo through a bot PR
   that's merged on trust.
+- **File size:** no guard, relying on the weekly PR's diff stats; or a growth check on top of a cap, such as more than
+  double the last synced size. The largest committed source files are about 20 MB (`hy`'s `hy-AM.dic` is 21.1 MB), and
+  GitHub warns at 50 MB and rejects files over 100 MB.
 - **The record:** keep the scripts; or a structured field in `package.json`, which npm doesn't know, can't have
   comments, and a reader can't identify. For the file format, JSON can't hold the comment that says what the file is,
   and `json5` drops comments when it writes a file back.
@@ -112,6 +115,9 @@ We will:
   first missed. That change appears once in the weekly PR, which is the notice; later syncs see the mark and stay quiet.
   The source's other files still sync. If the file comes back, the mark is cleared. A rename is handled by updating
   `sources.yaml`.
+- **Cap a synced file at 30 MB.** A file over the cap keeps its old copy and is noted once in the state file and the
+  weekly PR, as a file gone upstream is. An optional `max-size` on a source in `sources.yaml` raises the cap for a
+  dictionary that really is that big.
 - **Fetch every remote source before writing anything** at creation. If one fails, creation stops, and the error names
   the source and what failed: unreachable, not found, a missing file, or no token. For a missing token it says how to
   get one: `gh auth login`, or set `GITHUB_TOKEN`. The token is found the way `sync-github-files` finds it.
