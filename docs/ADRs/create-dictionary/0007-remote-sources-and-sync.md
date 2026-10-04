@@ -47,6 +47,10 @@ Options weighed:
 - **The record:** keep the scripts; or a structured field in `package.json`, which npm doesn't know, can't have
   comments, and a reader can't identify. For the file format, JSON can't hold the comment that says what the file is,
   and `json5` drops comments when it writes a file back.
+- **The sync's state:** a state file at the dictionary's root, which keeps stale entries when a source's folder is
+  deleted or renamed; or inside `sources.yaml`, so every sync rewrites a file people edit. Keeping no state and
+  comparing the upstream's hashes with hashes of the local files was rejected: it depends on the upstream never
+  changing how it calculates them.
 - **Failures at creation:** create the dictionary without a source that failed, with an easy-to-miss warning; or fall
   back to GitHub's public API without a token, limited to 60 requests an hour.
 - **Schedule:** sync on every push to `main`, which brings upstream changes at unpredictable times, mixed with whatever
@@ -88,6 +92,10 @@ We will:
 - **Sync with one generic command** in `scripts/`, next to `sync-github-files`. It reads `sources.yaml`, and for each
   source calls `sync-github-files` or reads from jsDelivr. It reports a clear error when the file is missing something
   it needs. The dictionary's `package.json` has one `sync` script that runs it.
+- **Store the identifiers the upstream returns** in a state file in each source's folder, as `sync-github-files` does
+  today with `.sync-github-files.json`: each GitHub file's blob SHA, and an npm source's version and each file's hash.
+  They're opaque: the sync compares what the upstream gave last time with what it gives now, and never calculates them
+  itself. A file is fetched when its identifier changed or the file is missing.
 - **Fetch every remote source before writing anything** at creation. If one fails, creation stops, and the error names
   the source and what failed: unreachable, not found, a missing file, or no token. For a missing token it says how to
   get one: `gh auth login`, or set `GITHUB_TOKEN`. The token is found the way `sync-github-files` finds it.
@@ -105,6 +113,10 @@ We will:
 - New sources stay current with no bumping, and upstream changes arrive together in one weekly Update Dictionaries PR.
   A repository that commits broken files to its default branch shows up as a failing or surprising PR, and then gets
   pinned. An upstream fix takes up to a week to arrive, unless someone syncs by hand.
+- A source's state lives and dies with its folder: deleting the folder makes the next sync fetch everything. The stored
+  identifiers also give the README's Sources section a label for what was fetched.
+- `sync-github-files` skips a file whose SHA matches without checking that it exists, so a deleted file isn't restored
+  today. That gets fixed.
 - A failed creation leaves no half-created dictionary to clean up. Anyone logged in to the GitHub CLI needs to do
   nothing for the token, and the `sync:manual` scripts that pass `gh auth token` by hand are legacy.
 - A source from a download page or another host is updated by hand. A download or GitLab kind can be added later.

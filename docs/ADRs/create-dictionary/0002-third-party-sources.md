@@ -57,8 +57,8 @@ pnpm create-dictionary en_XX \
   `aoo=dicts/en_AU (Kevin Atkinson)/en_AU.dic` becomes `src/aoo/dicts/en_AU (Kevin Atkinson)/en_AU.dic`. Upstream
   sources often have same-named files in different folders, and the sync can copy the same paths again on each update.
   A Hunspell file brings its pair.
-- **Nothing is generated in the folder,** so the sync can replace it. Where the source came from is recorded in the
-  sources file ([0007](./0007-remote-sources-and-sync.md)).
+- **No README is generated in the folder.** Where the source came from is recorded in the sources file
+  ([0007](./0007-remote-sources-and-sync.md)). A remote source's folder also holds the sync's state file.
 - **A positional Hunspell file is a shortcut** for `--define-source`: `pnpm create-dictionary en_XX vendor/en_XX.dic`
   defines a source named `en_XX`, from `vendor/`, with that file.
 - **A source name** follows the same rules as a dictionary name: letters, digits, `_`, and `-`. Two sources with the

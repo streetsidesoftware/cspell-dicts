@@ -83,14 +83,9 @@ That's the end state. It ships in stages, each usable on its own:
 | [0008](./0008-sources-are-explained-in-the-readmes.md)  | Sources are explained in the dictionary's README and in `src/README.md`          | Accepted |
 | [0009](./0009-test-options-are-hidden.md)               | Options for tests are hidden from `--help`                                       | Accepted |
 
-## Open questions
-
-- Where the sync records what it fetched: each GitHub file's SHA, so a sync with nothing new skips it, and an npm
-  source's version. `sync-github-files` writes `.sync-github-files.json` into the folder it syncs, but a source's folder
-  holds only upstream files ([0002](./0002-third-party-sources.md)). Decide before building the sync stage.
-
 ## Provisional names
 
 - `--add-source-ref`: the option that pins a GitHub source to a tag or commit. Decide with the rest of the sync stage.
 - `sources.yaml`: the sources file. Decide before building the sync stage.
 - The generic sync command's name. Decide before building the sync stage.
+- The npm sources' state file, the counterpart of `.sync-github-files.json`. Decide before building the sync stage.
