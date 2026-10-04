@@ -25,21 +25,22 @@ Make sure a new dictionary is the right change.
 - **Stop and ask** if an existing dictionary comes close: adding words to it with `word-change` may be the better
   change.
 
-### 2. Name it
+### 2. Name it, and set up a worktree
 
-Agree on the directory name, which sets the package name and the dictionary ID.
+Agree on the directory name, which sets the package name and the dictionary ID, and keep the work out of the user's
+checkout.
 
 - **Ask** for the directory name, such as `ruby` or `en_AU`. The package name follows from it: `@cspell/dict-<name>`,
   lowercase, with other characters turned into `-`.
+- **Do,** in the main checkout (the first path `git worktree list` prints). The design and the dictionary go in this
+  branch and one PR:
 
-### 3. Set up a worktree
+  ```sh
+  git fetch origin main
+  git worktree add -b new-dictionary/<name> .claude/worktrees/new-dictionary-<name> origin/main
+  ```
 
-Keep the work out of the user's checkout.
-
-- **Do:** create a worktree on a `new-dictionary/<name>` branch, as in `feature-adr` step 3. The design and the
-  dictionary go in the same branch and the same PR.
-
-### 4. Design it
+### 3. Design it
 
 Decide everything `pnpm create-dictionary` needs, one decision at a time.
 
@@ -49,33 +50,33 @@ Decide everything `pnpm create-dictionary` needs, one decision at a time.
   7 (names and IDs, when it's enabled, sources and license, build, samples, release surface).
 - **Ask** these too, since the command needs them:
   - **Locale or file type:** a natural language sets the locale, such as `en-AU`. Anything else sets the file type,
-    such as `ruby`. Never both `*`.
+    such as `ruby`, a [VS Code language ID](https://code.visualstudio.com/docs/languages/identifiers). Never both
+    `*`.
   - **Description:** the words it covers, such as "Ruby keywords and standard library names".
   - **Contributors:** who creates and maintains it, as "Name (url)". Optional, and published to npm.
   - **Keywords:** other names people search npm for, such as `golang` for Go.
+  - **Sources:** if a file the user named doesn't exist, ask for the right path, or whether to start empty.
 - **Check** each source's license and what it requires: attribution, keeping the license file, or share-alike.
 - **Stop and ask** if a license is missing, unclear, or would change the dictionary's license. Give the exact source
   and version, its license, why it matters, and the alternatives.
-- **Do:** keep a list of the decisions, one line each, for the PR description.
+- **Do:** keep the answers to group 0 and a list of the decisions, one line each, for the PR description.
 - **Do:** once the sources and the build are clear, decide whether it needs ADRs, and tell the user why. It needs them
   only when it takes a different approach from the guide, or needs scripts beyond `pnpm create-dictionary`, the build,
-  and a `sync` script as in `docs/guides/upstream-updates.md`. If it does, follow `feature-adr` steps 4 to 7, with the
-  feature slug `dict-<name>`.
+  and a `sync` script as in `docs/guides/upstream-updates.md`. If it does, follow only `feature-adr` steps 4 to 7, with
+  the feature slug `dict-<name>`.
+- **Stop and ask:** wait until the user says the design is final. Then squash any ADRs into a tight set
+  (`feature-adr` step 9), and commit.
 
-### 5. Settle the design
-
-Build only from a design the user calls final.
-
-- **Stop and ask:** wait until the user says the design is final.
-- **Do:** if there are ADRs, squash them into a tight set (`feature-adr` step 9), and commit.
-
-### 6. Create the dictionary
+### 4. Create the dictionary
 
 Turn the design into the dictionary with one command.
 
-- **Do:** from the repo root, run it with `--yes` and every decision as an option, so it never prompts:
+- **Do:** from the worktree's root, prepare the workspace, then run the command with `--yes` and every decision as an
+  option, so it never prompts:
 
   ```sh
+  pnpm install
+  pnpm run prepare:dictionaries
   pnpm exec create-dictionary --yes <name> <source>... \
     --friendly-name "<Friendly Name>" \
     --description "<the words it covers>" \
@@ -85,12 +86,10 @@ Turn the design into the dictionary with one command.
   ```
 
 - **Do,** from the design to the options:
-  - Every source after the name: word lists and Hunspell `.dic` files alike.
   - `--allow-missing-source` when there's no word list yet. It starts an empty one.
   - One `--contributor` per person, and one `--keyword` per search term.
   - `--locale` for a natural language, or `--language-id` for anything else.
   - `--trie` for Hunspell sources and large lists.
-  - `pnpm exec create-dictionary --help` lists every option.
 - **If it fails:**
   - On a missing or invalid value, nothing was written. Fix that option and run it again.
   - If `pnpm install` or the build fails, the dictionary was already created. Finish it in its directory
@@ -98,7 +97,7 @@ Turn the design into the dictionary with one command.
 - **Stop and ask** if the build shows a decision was wrong. Change it with the user, and its ADR if there is one,
   before going on.
 
-### 7. Add what only a person can add
+### 5. Add what only a person can add
 
 Finish what the command can't know.
 
@@ -113,22 +112,16 @@ Finish what the command can't know.
   - `cspell-ext.json`'s `dictionaryDefinitions` and `languageSettings` match the design: the IDs, `languageId`, and
     `locale`.
   - `package.json`'s `files` lists every built file and every upstream license file.
-- **Do,** leaving these alone:
-  - `private: true` and "-- Private until verified" in `package.json`: a maintainer publishes it later.
-  - The README's `@@inject` markers: a workflow fills them in after the PR lands.
-  - `release-please-config.json` and `.release-please-manifest.json`: a workflow adds the dictionary after the PR
-    lands.
-  - `@cspell/dict-cspell-bundle`: the cspell repo decides whether to bundle it.
+- **Do:** leave `private: true`, the README's `@@inject` markers, the Release Please files, and
+  `@cspell/dict-cspell-bundle` alone. Maintainers and workflows handle them after the PR lands, as the guide says.
 
-### 8. Run every check
+### 6. Run every check
 
 Show that the dictionary builds, passes, and works in cspell.
 
-- **Do,** from the worktree root:
+- **Do,** from the worktree's root, then commit the dictionary with the PR's title as the message:
 
   ```sh
-  pnpm install
-  pnpm run prepare:dictionaries
   pnpm --filter <package name> test
   pnpm run lint
   ```
@@ -138,7 +131,7 @@ Show that the dictionary builds, passes, and works in cspell.
   - In cspell, as in the guide's step 7 (`cspell link add`), a sample spell checks cleanly. Show the user the result.
 - **If it fails:** fix what it reports, and run the checks again until they pass.
 
-### 9. Open one PR
+### 7. Open one PR
 
 Hand the user one PR with the design and the dictionary.
 
@@ -147,12 +140,8 @@ Hand the user one PR with the design and the dictionary.
   - Body: a `## Summary` of what it covers and for whom, a `## Feature` section with the cspell config to enable it,
     the design (one line per decision, linking the feature's `README.md` if there are ADRs), and the sources with
     their licenses.
-- **Stop and ask** before pushing, unless the task was to open the PR.
-
-### 10. Clean up after merge
-
-- **Do:** remove the worktree and delete the branch. Change or archive any ADRs from then on with `feature-adr`
-  step 10.
+- **Stop and ask** before pushing or opening the PR.
+- **Do,** after merge: remove the worktree and delete the branch. Change or archive any ADRs with `feature-adr` step 10.
 
 ## Not this skill
 
