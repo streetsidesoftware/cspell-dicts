@@ -76,7 +76,7 @@ export async function getAnswers(options: CommandLine, repo: Repo, cwd: string):
     const taken = await readTakenNames(repo);
     const name = await text(
         'name',
-        'The package directory name (en_US, medical-terms)',
+        'The directory name for the dictionary (en_US, medical-terms)',
         undefined,
         nameValidator(repo, taken),
     );

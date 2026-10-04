@@ -111,7 +111,7 @@ describe('getAnswers', () => {
         );
     });
 
-    it('keeps a given package description', async () => {
+    it('keeps a given npm description', async () => {
         const settings = await getAnswers(
             options({ name: 'ruby', packageDescription: 'Ruby words.', srcFile: 'words.txt', languageId: 'ruby' }),
             repo,

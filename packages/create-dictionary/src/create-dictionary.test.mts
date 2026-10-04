@@ -140,7 +140,10 @@ describe('a new package', () => {
 
 describe('the name', () => {
     it('is required', () => {
-        assertFails(create('--yes', '--allow-missing-source', '--language-id', 'ruby'), /missing\. Give the package/);
+        assertFails(
+            create('--yes', '--allow-missing-source', '--language-id', 'ruby'),
+            /missing\. Give the directory name/,
+        );
     });
 
     it('has only letters, digits, "_", and "-"', () => {
