@@ -32,12 +32,14 @@ Pick one dictionary and one source file for each word.
   ```
 
 - **Check** what `trace` shows:
-  - Adding a word that a dictionary already has: it's covered, or the user's config doesn't enable that dictionary.
-    Tell the user before adding anything.
+  - Adding a word that a dictionary already has: tell the user before adding anything. Their config may not enable
+    that dictionary, or their cspell may bundle an older version. `git log -S <word> -- dictionaries/<name>/src` shows
+    when it was added.
   - Removing a word: every dictionary it must leave.
 - **Do:** pick the file by "Where words go" in `docs/word-lists.md`, the dictionary's `src/README.md`, and the header
-  comments of its source files. Most new words go in `src/additional_words.txt`.
-- **Check:** `cspell-tools.config.yaml` builds from the file you picked.
+  comments of its source files. Most new words go in `src/additional_words.txt`, when the dictionary has one.
+- **Check:** the dictionary's build reads the file you picked: its `cspell-tools.config.yaml`, or for the few without
+  one, the `build` script in its `package.json`.
 - **Stop and ask** when more than one file fits. Propose each word's file, with the reason.
 
 ### 3. Edit the word lists
@@ -68,7 +70,7 @@ Rebuild every dictionary the change reaches, and show that the words behave as a
   them with this, and through workspace dependencies such as `@cspell/dict-en-shared`:
 
   ```sh
-  grep -l "<name>/" dictionaries/*/cspell-tools.config.yaml
+  grep -l "<name>/" dictionaries/*/cspell-tools.config.yaml dictionaries/*/package.json
   ```
 
 - **Check:**
@@ -82,8 +84,7 @@ Rebuild every dictionary the change reaches, and show that the words behave as a
 Give the user drafts to approve.
 
 - **Do:**
-  - Type and scope as in `docs/commits-and-pull-requests.md`, usually `fix(<dictionary>): …`, such as
-    `fix(companies): add Sourcegraph`.
+  - Type and scope as in `docs/commits-and-pull-requests.md`, usually `fix(<dictionary>): add <word>`.
   - Fill in `.github/pull_request_template.md`: the summary, the dictionary, and each word with its source.
 - **Stop and ask** before committing, pushing, or opening a PR.
 
