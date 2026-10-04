@@ -65,7 +65,9 @@ Status: Proposed | Accepted | Superseded by [NNNN](./NNNN-slug.md)
 
 ## Why
 
-One to three sentences: the feature goal this decision serves, and the problem it solves.
+**Goal:** <the feature goal this decision serves, and what it means for this decision.>
+
+**Problem:** <what goes wrong today, or would without this decision.>
 
 ## Decision
 

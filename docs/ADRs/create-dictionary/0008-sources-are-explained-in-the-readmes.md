@@ -4,7 +4,10 @@ Status: Accepted
 
 ## Why
 
-Goal: traceable. Users can't see where a dictionary's words came from, or under which licenses.
+**Goal:** traceable. Anyone looking at a dictionary, on npm or in the repo, can see where its words came from and under
+which licenses.
+
+**Problem:** A new dictionary's README said only "MIT" and "Some packages may have other licenses included".
 
 ## Decision
 

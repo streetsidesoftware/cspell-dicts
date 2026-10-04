@@ -4,8 +4,11 @@ Status: Accepted
 
 ## Why
 
-Goals: easy to create, and easy to maintain. Fetching can fail, at creation and during the weekly sync, and today one
-failure stops every dictionary's update.
+**Goals:** easy to create, and easy to maintain. Creating a dictionary either succeeds with every source or leaves
+nothing behind, and one failing source never holds back another dictionary's update.
+
+**Problem:** Fetching can fail, at creation and during the weekly sync, and today one failure stops every dictionary's
+update.
 
 ## Decision
 

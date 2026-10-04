@@ -4,8 +4,11 @@ Status: Accepted
 
 ## Why
 
-Goal: easy to create. Most dictionaries are compiled from several source files, but the generator took one, so the rest
-were added by hand after creation.
+**Goal:** easy to create. A contributor gives every source of the dictionary when creating it, in one command or in the
+prompts.
+
+**Problem:** Most dictionaries are compiled from several source files, but the generator took only one, so the rest were
+added by hand afterwards.
 
 ## Decision
 

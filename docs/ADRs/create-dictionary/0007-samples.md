@@ -4,8 +4,11 @@ Status: Accepted
 
 ## Why
 
-Goals: tested, and easy to adopt. The template's test breaks once a dictionary has several sources, and only real
-examples check the assumptions made when a dictionary is created.
+**Goals:** tested, and easy to adopt. Every new dictionary has a test that shows it works, and real examples that check
+the assumptions made when it was created.
+
+**Problem:** The template's test reads the start of the source, which breaks once a dictionary has several sources, and
+a word list can't show whether the dictionary is enabled for the right files.
 
 ## Decision
 

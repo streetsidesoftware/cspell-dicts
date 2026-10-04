@@ -4,7 +4,9 @@ Status: Accepted
 
 ## Why
 
-Goal: easy to create. Two options exist only for the tests, and they clutter `--help`.
+**Goal:** easy to create. `--help` shows only the options someone creating a dictionary needs.
+
+**Problem:** Two options exist only for the tests, and they cluttered `--help`.
 
 ## Decision
 

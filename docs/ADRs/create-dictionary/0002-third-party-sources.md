@@ -4,8 +4,11 @@ Status: Accepted
 
 ## Why
 
-Goals: traceable, and easy to adopt. A compiled dictionary is often a derivative work of its sources, so each
-third-party source needs a copy that can be traced to where it came from, with its license beside it.
+**Goals:** traceable, and easy to adopt. Every third-party source can be traced to where it came from, with its license
+beside its copy, without a maintainer setting that up by hand.
+
+**Problem:** A compiled dictionary is often a derivative work of its sources, but the generator recorded nothing about
+where a source came from, and existing dictionaries keep third-party files in three different ways.
 
 ## Decision
 
