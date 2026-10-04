@@ -4,19 +4,18 @@ Status: Accepted
 
 ## Context
 
-`--root <dir>` (the repo to create the dictionary in) and `--skip-install` (don't run `pnpm install` in it) were added
-so the tests can create dictionaries in a temporary folder without changing `pnpm-lock.yaml`. Outside the tests they're
-rarely useful: creating a dictionary in another checkout, or working offline.
+Goal: easy to create.
 
-Options weighed: keep them visible next to the options every contributor needs, or replace them with environment
-variables that only the tests set, which hides behavior where it's hard to discover.
+`--root <dir>` (the repo to create the dictionary in) and `--skip-install` (don't run `pnpm install`) let the tests
+create dictionaries in a temporary folder without changing `pnpm-lock.yaml`. Outside the tests they're rarely useful.
+
+Rejected: listing them with the options every contributor needs; replacing them with environment variables, which hides
+behavior where it's hard to find.
 
 ## Decision
 
-We will keep `--root` and `--skip-install`, but hide them from `--help`. They're still accepted, and the package's
-README lists them under a short note for tests.
+`--root` and `--skip-install` stay, hidden from `--help`. The package's README lists them under a note for tests.
 
 ## Consequences
 
-- `--help` lists only what someone creating a dictionary needs.
-- The tests keep calling the command the way a user does.
+- `--help` lists only what someone creating a dictionary needs, and the tests call the command the way a user does.

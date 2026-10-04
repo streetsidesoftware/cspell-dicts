@@ -4,31 +4,27 @@ Status: Accepted
 
 ## Context
 
-A compiled dictionary is often a derivative work of its sources, so users need to see where its words came from and
-under which licenses. A new dictionary's published `README.md` said only "MIT" and "Some packages may have other
-licenses included", and `src/README.md` said only that source files belong in `src/`; it isn't published.
+Goal: traceable.
 
-Each source is recorded in `sources.yaml` ([0007](./0007-remote-sources-and-sync.md)). The dictionary's README already
-gets generated sections through `@@inject` markers, such as `<!--- @@inject: ./static/install.md --->`, filled in by
-`pnpm run build:readme`, so they stay current.
+Users need to see where a dictionary's words came from and under which licenses. A new dictionary's README says only
+"MIT" and "Some packages may have other licenses included", and `src/README.md`, which isn't published, says only that
+source files belong in `src/`. The README already gets generated sections through `@@inject` markers, filled in by
+`pnpm run build:readme`.
 
-Writing the list of sources into `src/README.md` once, and keeping it current by hand, was weighed; it drifts from the
-record.
+Rejected: writing the list of sources into `src/README.md` once, by hand; it drifts.
 
 ## Decision
 
-We will explain the sources in two places, both from one generated list:
+`static/sources.md` is generated from `sources.yaml` ([0003](./0003-sources-file.md)) and the sync's state
+([0011](./0011-how-the-sync-handles-change.md)). It lists each source: where it came from, its license, whether
+`pnpm run sync` keeps it current, and anything "no longer upstream since <date>".
 
-- **The dictionary's `README.md`** gets a "Sources" section through `<!--- @@inject: ./static/sources.md --->`. It lists
-  each source from `sources.yaml`: where it came from, its license, and whether `pnpm run sync` keeps it up to date. A
-  file or source that's gone upstream is shown as "no longer upstream since <date>", from the sync's state file.
-- **`src/README.md`** gets the same list, through `<!--- @@inject: ../static/sources.md --->`, followed by notes for
-  maintainers: how `sync` works, and how to add a source.
+- The dictionary's `README.md` injects it as a "Sources" section: `<!--- @@inject: ./static/sources.md --->`.
+- `src/README.md` injects it too, `<!--- @@inject: ../static/sources.md --->`, followed by notes for maintainers: how
+  `sync` works and how to add a source.
 
 ## Consequences
 
-- Users see each source and its license on npm.
-- Both READMEs stay current from one record, and nobody edits the list of sources by hand.
-- `static/sources.md` is generated from `sources.yaml`, like the other static files.
-- `readme:inject` in the root `package.json` covers only `dictionaries/*/README.md`, so it needs
-  `dictionaries/*/src/README.md` too.
+- Users see each source and its license on npm, and nobody maintains the list by hand.
+- `readme:inject` in the root `package.json` covers only `dictionaries/*/README.md`, so it gains
+  `dictionaries/*/src/README.md`.
