@@ -49,7 +49,9 @@ pnpm create-dictionary en_XX \
   source: `aoo=dicts/en_AU (Kevin Atkinson)/en_AU.dic` becomes `src/aoo/dicts/en_AU (Kevin Atkinson)/en_AU.dic`. Upstream
   sources often have same-named files in different folders, and the sync stage can copy the same paths again on each
   update. A Hunspell file brings its pair ([0001](./0001-name-and-sources-on-the-command-line.md)).
-- A generated `README.md` in the folder records the source's name, URL or package, files, and license.
+- The folder holds only the source's own files, so the sync can replace them. Nothing is generated there: the source's
+  name, URL or package, files, license, and README are recorded in `sources.yaml`
+  ([0020](./0020-sources-are-recorded-in-a-sources-file.md)).
 - A source needs at least one file. A missing license, README, or URL is a warning, not an error.
 - A named file must exist: a missing one is always an error, with no `--allow-missing-source` exception
   ([0008](./0008-missing-sources-need-allow-missing-source.md)). For a local source that's checked when the dictionary

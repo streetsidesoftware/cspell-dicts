@@ -5,7 +5,7 @@ Status: Accepted
 ## Context
 
 A dictionary with remote sources needs a record of each one: its kind, where it comes from, which files, its license,
-and its URL. The sync uses it to fetch, the README's "Sources" section
+its README, and its URL. The sync uses it to fetch, the README's "Sources" section
 ([0021](./0021-sources-are-explained-in-the-readmes.md)) shows it, and later tools need to read it.
 
 Today the record is a set of scripts in the dictionary's `package.json`, and `conditional-build` runs `sync` first.
@@ -38,6 +38,7 @@ sources:
       - dicts/en_XX/en_XX.dic
       - dicts/en_XX/en_XX.aff
     license: LICENSE
+    readme: README.md
     url: https://github.com/marcoagpinto/aoo-mozilla-en-dict
 ```
 

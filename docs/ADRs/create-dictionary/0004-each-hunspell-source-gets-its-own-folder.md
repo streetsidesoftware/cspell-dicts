@@ -22,11 +22,13 @@ exists for.
 
 ## Decision
 
-We will copy each Hunspell source into its own folder, `src/<source-name>/`, holding:
+We will copy each Hunspell source into its own folder, `src/<source-name>/`, holding only the source's own files:
 
 - the `.dic` and `.aff` files
-- a `README.md` saying where they came from
-- the source's license
+- the source's license and README, if it has them
+
+Nothing is generated in the folder. Where the source came from is recorded in `sources.yaml`
+([0020](./0020-sources-are-recorded-in-a-sources-file.md)).
 
 A Hunspell file given positionally is a shortcut for defining a third-party source
 ([0006](./0006-third-party-sources-are-defined-by-name.md)): `pnpm create-dictionary en_XX vendor/en_XX.dic` defines a
@@ -39,7 +41,7 @@ Two sources with the same name are an error, before anything is written. The mes
 
 ## Consequences
 
-- Any number of Hunspell sources fit, each with its origin and license beside it.
+- Any number of Hunspell sources fit, each with its license beside it and its origin in `sources.yaml`.
 - New dictionaries match the newer layout (`hunspell-en_AU-large/`) rather than `src/hunspell/`. Moving existing
   dictionaries is out of scope.
 - Two Hunspell files with the same base name, such as two `en_US.dic` files, need a name for one of them.
