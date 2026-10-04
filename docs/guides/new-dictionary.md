@@ -108,7 +108,7 @@ maintainer makes it public once the dictionary has been verified.
 
 ## 5. Fill in the package
 
-- **`src/`:** the word lists, formatted as in [Word changes](./word-changes.md#format).
+- **`src/`:** the word lists, formatted as in [Word lists](../word-lists.md#format).
 - **`cspell-tools.config.yaml`:** the targets and their sources. Set `split` and `allowedSplitWords` for lists of
   identifiers, and `excludeWordsFrom` if some upstream words must be left out. See the [Glossary](../glossary.md).
 - **`cspell-ext.json`:** the dictionary definitions and `languageSettings`, as decided in step 2. See

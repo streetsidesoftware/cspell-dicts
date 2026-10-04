@@ -23,7 +23,7 @@ many long ones that drift out of date.
 - Leave existing comments alone unless you are changing that code, or you are asked to.
 
 In a word list, a `#` comment can say where a group of words comes from or what it covers. See
-[Word changes](./guides/word-changes.md#format).
+[Word lists](./word-lists.md#format).
 
 ## Invisible characters
 

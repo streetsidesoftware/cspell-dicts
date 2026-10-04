@@ -47,7 +47,10 @@ Read the doc before changing that area. These are written for people too.
 - [`docs/dictionary-packages.md`](docs/dictionary-packages.md): what a dictionary package contains and why, sources,
   building, and tests.
 - [`docs/repository.md`](docs/repository.md): prerequisites, the workspace, generated files, and CI.
-- [`docs/guides/word-changes.md`](docs/guides/word-changes.md): where words go, the word format, and the steps.
+- [`docs/word-lists.md`](docs/word-lists.md): where words go, and the word format.
+- [`docs/guides/word-changes.md`](docs/guides/word-changes.md): changing words in a clone.
+- [`docs/guides/word-changes-in-browser.md`](docs/guides/word-changes-in-browser.md): changing words on GitHub, in the
+  browser.
 - [`docs/guides/new-dictionary.md`](docs/guides/new-dictionary.md): creating a dictionary package.
 - [`docs/guides/upstream-updates.md`](docs/guides/upstream-updates.md): `sync` scripts and upstream sources.
 - [`docs/commits-and-pull-requests.md`](docs/commits-and-pull-requests.md): commit types, scopes, and PR descriptions.
