@@ -12,8 +12,9 @@ describe('toPackageName', () => {
 });
 
 describe('toFriendlyName', () => {
-    it('splits on "-" and upper-cases each word', () => {
+    it('splits on "-" and "_", and upper-cases each word', () => {
         assert.equal(toFriendlyName('medical-terms'), 'Medical Terms');
+        assert.equal(toFriendlyName('medical_terms'), 'Medical Terms');
         assert.equal(toFriendlyName('ruby'), 'Ruby');
     });
 });

@@ -5,7 +5,7 @@ import { join } from 'node:path';
 import { after, before, describe, it } from 'node:test';
 
 import type { Repo, TakenNames } from './repo.mts';
-import { nameValidator, sourceValidator, validateLanguageId } from './validate.mts';
+import { nameValidator, sourceValidator, validateDescription, validateLanguageId } from './validate.mts';
 
 let root = '';
 let repo: Repo;
@@ -62,6 +62,16 @@ describe('nameValidator', () => {
     it('refuses a package name or dictionary ID already in use', () => {
         assert.match(String(validate()('en-AU')), /package name @cspell\/dict-en-au is already used/);
         assert.match(String(validate()('en_au_extra')), /dictionary ID en-au-extra is already used/);
+    });
+});
+
+describe('validateDescription', () => {
+    it('refuses an empty description', () => {
+        assert.match(String(validateDescription(' ')), /missing/);
+    });
+
+    it('accepts a description of the words', () => {
+        assert.equal(validateDescription('Ruby keywords and standard library names'), true);
     });
 });
 

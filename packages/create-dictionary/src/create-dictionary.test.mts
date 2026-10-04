@@ -55,7 +55,7 @@ function create(...args: string[]): Result {
 
 /** Run with --yes and the options most tests need, for a package named `name`. */
 function createYes(name: string, ...args: string[]): Result {
-    return create('--yes', name, '--language-id', 'ruby', '--no-build', ...args);
+    return create('--yes', name, '--description', 'Test words', '--language-id', 'ruby', '--no-build', ...args);
 }
 
 function packageFile(name: string, file: string): string {
@@ -71,8 +71,23 @@ describe('help', () => {
     it('lists the options', () => {
         const result = create('--help');
         assert.equal(result.code, 0);
-        for (const option of ['--yes', '--source', '--allow-missing-source', '--locale', '--language-id', '--root']) {
+        for (const option of [
+            '--yes',
+            '--source',
+            '--allow-missing-source',
+            '--locale',
+            '--language-id',
+            '--description',
+            '--package-description',
+        ]) {
             assert.ok(result.stdout.includes(option), option);
+        }
+    });
+
+    it('hides the options for tests', () => {
+        const result = create('--help');
+        for (const option of ['--root', '--skip-install']) {
+            assert.ok(!result.stdout.includes(option), option);
         }
     });
 });
@@ -99,6 +114,7 @@ describe('a new package', () => {
         assert.equal(pkg.name, '@cspell/dict-plain');
         assert.equal(pkg.private, true);
         assert.equal(pkg.description, 'Plain dictionary for cspell. -- Private until verified');
+        assert.match(packageFile('plain', 'cspell-ext.json'), /"description": "Test words"/);
         assert.equal(packageFile('plain', 'src/words.txt'), 'zorbal\nquixly\n');
         const ext = packageFile('plain', 'cspell-ext.json');
         assert.match(ext, /"languageId": "ruby"/);
@@ -124,7 +140,10 @@ describe('a new package', () => {
 
 describe('the name', () => {
     it('is required', () => {
-        assertFails(create('--yes', '--allow-missing-source', '--language-id', 'ruby'), /missing\. Give the package/);
+        assertFails(
+            create('--yes', '--allow-missing-source', '--language-id', 'ruby'),
+            /missing\. Give the directory name/,
+        );
     });
 
     it('has only letters, digits, "_", and "-"', () => {
@@ -198,13 +217,22 @@ describe('the source', () => {
 describe('locale and file type', () => {
     it('are not both "*"', () => {
         assertFails(
-            create('--yes', 'everywhere', '--allow-missing-source', '--no-build'),
+            create('--yes', 'everywhere', '--description', 'Test words', '--allow-missing-source', '--no-build'),
             /turns the dictionary on for every file/,
         );
     });
 
     it('can leave the file type as "*" when the locale is set', () => {
-        const result = create('--yes', 'natural', '--allow-missing-source', '--locale', 'en', '--no-build');
+        const result = create(
+            '--yes',
+            'natural',
+            '--description',
+            'Test words',
+            '--allow-missing-source',
+            '--locale',
+            'en',
+            '--no-build',
+        );
         assert.equal(result.code, 0, result.stderr);
         assert.match(packageFile('natural', 'cspell-ext.json'), /"locale": "en"/);
     });

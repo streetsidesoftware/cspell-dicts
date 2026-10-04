@@ -23,21 +23,28 @@ before(() => {
 after(() => rmSync(root, { recursive: true, force: true }));
 
 function options(answers: Answers, more: Partial<CommandLine> = {}): CommandLine {
-    return { answers, yes: true, allowMissingSource: false, skipInstall: true, ...more };
+    return {
+        answers: { description: 'Test words', ...answers },
+        yes: true,
+        allowMissingSource: false,
+        skipInstall: true,
+        ...more,
+    };
 }
 
 // The tests run without a terminal, so nothing here prompts.
 describe('getAnswers', () => {
     it('fills in defaults with --yes', async () => {
         const settings = await getAnswers(
-            options({ name: 'medical-terms', srcFile: 'words.txt', languageId: 'markdown' }),
+            options({ name: 'medical_terms', srcFile: 'words.txt', languageId: 'markdown' }),
             repo,
             root,
         );
         assert.deepEqual(settings, {
-            name: 'medical-terms',
+            name: 'medical_terms',
             friendlyName: 'Medical Terms',
-            description: 'Medical Terms dictionary for cspell.',
+            description: 'Test words',
+            packageDescription: 'Medical Terms dictionary for cspell.',
             srcFile: 'words.txt',
             emptySource: false,
             locale: '*',
@@ -91,6 +98,26 @@ describe('getAnswers', () => {
 
     it('fails without a source with --yes', async () => {
         await assert.rejects(getAnswers(options({ name: 'ruby', languageId: 'ruby' }), repo, root), /missing source/);
+    });
+
+    it('requires a description with --yes', async () => {
+        await assert.rejects(
+            getAnswers(
+                options({ name: 'ruby', description: undefined, srcFile: 'words.txt', languageId: 'ruby' }),
+                repo,
+                root,
+            ),
+            /--description: missing/,
+        );
+    });
+
+    it('keeps a given npm description', async () => {
+        const settings = await getAnswers(
+            options({ name: 'ruby', packageDescription: 'Ruby words.', srcFile: 'words.txt', languageId: 'ruby' }),
+            repo,
+            root,
+        );
+        assert.equal(settings.packageDescription, 'Ruby words.');
     });
 
     it('fails when the locale and the file type are both "*"', async () => {

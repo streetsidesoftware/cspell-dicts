@@ -3,9 +3,9 @@ export function toPackageName(name: string): string {
     return name.toLowerCase().replaceAll(/[^a-z0-9-]/g, '-');
 }
 
-/** A readable name from the directory name: "medical-terms" becomes "Medical Terms". */
+/** A readable name from the directory name: "medical-terms" and "medical_terms" become "Medical Terms". */
 export function toFriendlyName(name: string): string {
-    return name.split('-').map(title).join(' ');
+    return name.split(/[-_]/).map(title).join(' ');
 }
 
 /** Upper-case the first letter. */

@@ -13,7 +13,7 @@ const windowsReservedNames = /^(con|prn|aux|nul|com[1-9]|lpt[1-9])$/i;
 
 export function nameValidator(repo: Repo, taken: TakenNames): Validate {
     return (name) => {
-        if (!name) return 'missing. Give the package directory name, such as en_AU or ruby.';
+        if (!name) return 'missing. Give the directory name for the dictionary, such as en_AU or ruby.';
         if (!/^[\w-]+$/.test(name)) return `"${name}" can only have letters, digits, "_", and "-".`;
         if (name.length > maxNameLength) return `"${name}" is longer than ${maxNameLength} characters.`;
         if (windowsReservedNames.test(name)) return `"${name}" is reserved on Windows. Choose another name.`;
@@ -38,6 +38,13 @@ export function validateLanguageId(anyLocale: boolean): Validate {
         }
         return true;
     };
+}
+
+export function validateDescription(value: string): string | true {
+    if (!value.trim()) {
+        return 'missing. Describe the words it covers, such as "Ruby keywords and standard library names".';
+    }
+    return true;
 }
 
 /** Checks a source path, relative to `cwd`. A missing word list is checked separately. */
