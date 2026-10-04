@@ -22,6 +22,11 @@ A script per source is very hard to maintain, and a command line isn't a record 
 A structured field in `package.json`, such as `"cspell-dict": { "sources": { … } } }`, was weighed: always published,
 with no new file. But npm doesn't know the field, it can't have comments, and a reader can't tell what it is.
 
+For the file's format, JSON can't hold the comment that says what the file is. JSON5 can, but `json5` drops comments
+when it writes a file back. YAML adds no dependency: the generator writes the file from a template, as it already does
+`cspell-tools.config.yaml`, and the sync command's package, `scripts/`, already has `yaml`, whose `parseDocument` keeps
+comments when a file is rewritten.
+
 An earlier version of this decision kept the scripts, after a misunderstanding of the question.
 
 ## Decision
