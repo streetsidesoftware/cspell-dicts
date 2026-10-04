@@ -20,7 +20,8 @@ record.
 We will explain the sources in two places, both from one generated list:
 
 - **The dictionary's `README.md`** gets a "Sources" section through `<!--- @@inject: ./static/sources.md --->`. It lists
-  each source from `sources.yaml`: where it came from, its license, and whether `pnpm run sync` keeps it up to date.
+  each source from `sources.yaml`: where it came from, its license, and whether `pnpm run sync` keeps it up to date. A
+  file or source that's gone upstream is shown as "no longer upstream since <date>", from the sync's state file.
 - **`src/README.md`** gets the same list, through `<!--- @@inject: ../static/sources.md --->`, followed by notes for
   maintainers: how `sync` works, and how to add a source.
 

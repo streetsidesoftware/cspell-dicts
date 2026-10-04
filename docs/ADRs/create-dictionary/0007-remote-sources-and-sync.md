@@ -51,6 +51,11 @@ Options weighed:
   deleted or renamed; or inside `sources.yaml`, so every sync rewrites a file people edit. Keeping no state and
   comparing the upstream's hashes with hashes of the local files was rejected: it depends on the upstream never
   changing how it calculates them.
+- **Files gone upstream:** upstream files are renamed and removed as a normal part of their projects' lives, and the
+  sync can't tell a rename from a removal. `sync-github-files` prints "Path not found" and carries on, so nobody finds
+  out. Failing the sync instead would repeat the same error every week, and since one failing dictionary stops Update
+  Dictionaries before its PR step, it would hold back every other dictionary. Deleting the local copy would drop words
+  from the next build.
 - **Failures at creation:** create the dictionary without a source that failed, with an easy-to-miss warning; or fall
   back to GitHub's public API without a token, limited to 60 requests an hour.
 - **Schedule:** sync on every push to `main`, which brings upstream changes at unpredictable times, mixed with whatever
@@ -96,6 +101,11 @@ We will:
   today with `.sync-github-files.json`: each GitHub file's blob SHA, and an npm source's version and each file's hash.
   They're opaque: the sync compares what the upstream gave last time with what it gives now, and never calculates them
   itself. A file is fetched when its identifier changed or the file is missing.
+- **Keep a file that's gone upstream, and note it once.** When a file named in `sources.yaml`, or a whole source, is
+  gone upstream, the sync keeps the local copy and marks it as gone in the source's state file, with the date it was
+  first missed. That change appears once in the weekly PR, which is the notice; later syncs see the mark and stay quiet.
+  The source's other files still sync. If the file comes back, the mark is cleared. A rename is handled by updating
+  `sources.yaml`.
 - **Fetch every remote source before writing anything** at creation. If one fails, creation stops, and the error names
   the source and what failed: unreachable, not found, a missing file, or no token. For a missing token it says how to
   get one: `gh auth login`, or set `GITHUB_TOKEN`. The token is found the way `sync-github-files` finds it.
@@ -115,6 +125,8 @@ We will:
   pinned. An upstream fix takes up to a week to arrive, unless someone syncs by hand.
 - A source's state lives and dies with its folder: deleting the folder makes the next sync fetch everything. The stored
   identifiers also give the README's Sources section a label for what was fetched.
+- A source whose files go away upstream never breaks the dictionary or the weekly PR, and is reported once, not every
+  week. A frozen file stays until a maintainer updates or removes it in `sources.yaml`.
 - `sync-github-files` skips a file whose SHA matches without checking that it exists, so a deleted file isn't restored
   today. That gets fixed.
 - A failed creation leaves no half-created dictionary to clean up. Anyone logged in to the GitHub CLI needs to do
