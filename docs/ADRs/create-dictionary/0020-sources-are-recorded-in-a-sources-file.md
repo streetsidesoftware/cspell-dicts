@@ -48,7 +48,8 @@ sources:
 - The file is listed in `files`, so it's published with the dictionary. A comment at its top says what it is and points
   to `src/README.md`.
 - The sync command lives in `scripts/`, next to `sync-github-files`, where the sync tooling already is. For each source it
-  calls `sync-github-files` or copies from `node_modules`. It reports a clear error when the file is missing something it
+  calls `sync-github-files` or reads from jsDelivr
+  ([0022](./0022-prefer-the-source-repository-npm-from-a-cdn.md)). It reports a clear error when the file is missing something it
   needs; the file has no schema, like the repo's other templates.
 
 ## Consequences
