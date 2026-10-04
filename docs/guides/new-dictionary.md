@@ -285,9 +285,14 @@ pnpm create-dictionary en_XX \
 
 - **`--define-source [<name>=]<folder>`:** the source's folder. The name defaults to the folder's name.
 - **`--add-source-file <name>=<path>`:** a word list or Hunspell file, relative to the folder. Repeat it for each.
-- **`--add-source-license` and `--add-source-readme`:** published with the dictionary, since it's built from the
-  source.
-- **`--add-source-url`:** where the source can be found.
+- **`--add-source-license <name>=<path>`:** the source's license file, such as `LICENSE` or `COPYING`. This dictionary
+  is built from the source, so the license applies to it too. It's copied into `src/<name>/` and published with the
+  dictionary.
+- **`--add-source-readme <name>=<path>`:** the README that came with the source, such as `README_en_US.txt` from a
+  Hunspell dictionary. It often names the authors and states the terms of use, sometimes in place of a license file.
+  It's copied and published the same way.
+- **`--add-source-url <name>=<url>`:** the web page where the source can be found, so others can check it or get a
+  newer version.
 - **Paths:** a file keeps its path inside `src/<name>/`. Give another as `<name>/<local path>=<path>`, which a file
   outside the folder, such as `../LICENSE`, needs.
 - **Errors:** a missing file, a source with no files, or two sources with the same name. A missing license, README, or
