@@ -2,15 +2,9 @@
 
 Status: Accepted
 
-## Context
+## Why
 
-Goal: easy to create.
-
-`--root <dir>` (the repo to create the dictionary in) and `--skip-install` (don't run `pnpm install`) let the tests
-create dictionaries in a temporary folder without changing `pnpm-lock.yaml`. Outside the tests they're rarely useful.
-
-Rejected: listing them with the options every contributor needs; replacing them with environment variables, which hides
-behavior where it's hard to find.
+Goal: easy to create. Two options exist only for the tests, and they clutter `--help`.
 
 ## Decision
 
@@ -19,3 +13,13 @@ behavior where it's hard to find.
 ## Consequences
 
 - `--help` lists only what someone creating a dictionary needs, and the tests call the command the way a user does.
+
+## Context
+
+`--root <dir>` (the repo to create the dictionary in) and `--skip-install` (don't run `pnpm install`) let the tests
+create dictionaries in a temporary folder without changing `pnpm-lock.yaml`. Outside the tests they're rarely useful.
+
+## Rejected approaches
+
+- Listing them with the options every contributor needs.
+- Replacing them with environment variables, which hides behavior where it's hard to find.

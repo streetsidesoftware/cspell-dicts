@@ -2,9 +2,31 @@
 
 Status: Accepted
 
-## Context
+## Why
 
-Goal: easy to create, and easy to adopt.
+Goals: easy to create, and easy to adopt. A contributor had to know when to use a trie, creation could hang on a large
+Hunspell build, and the default depth was set where it means nothing.
+
+## Decision
+
+- **Trie** when any source is a Hunspell file, or the word lists add up to more than about 1 MB. `--trie` and
+  `--no-trie` override it.
+- **Build at creation** when all sources are word lists. With a Hunspell source, the generator doesn't build, and says
+  to run `pnpm run build`, or to lower `--hunspell-depth` if that's too slow. `--build` and `--no-build` override it.
+- **Depth:** no `maxDepth` on word lists. Hunspell sources get `maxDepth: 1`, with a comment that higher depths can add
+  word forms but can make the build very slow or run out of memory. `--hunspell-depth <n>` sets it, such as 0 for
+  Hebrew.
+
+## Consequences
+
+- Creating a dictionary never hangs on a large Hunspell build.
+- A word-list dictionary arrives built, with its tests passing. A Hunspell dictionary's tests fail until its first
+  build, and the generator says so.
+- The guide and the generator name the same trie threshold.
+- A natural language dictionary may miss forms that need two chained rules until a maintainer raises the depth; that
+  tuning is out of scope.
+
+## Context
 
 - **Format.** A dictionary is built as plain text or as a trie, which is much smaller for large word lists. The
   new-dictionary guide says to use a trie for Hunspell sources and for sources over about 1 MB, but the generator
@@ -24,27 +46,13 @@ Goal: easy to create, and easy to adopt.
   - `hu_HU`: depth 1 didn't finish in 15 minutes; its committed depth 1 trie holds 379 million words.
   - `he`: even depth 1 is too much; it uses 0.
 
-Rejected: leaving the trie to the contributor, or always deciding by rule with no override; building every dictionary,
-so a `hu_HU`-sized one waits over 15 minutes or runs out of memory; building with a time limit, which is guesswork across
-machines; leaving `maxDepth` unset, so 5 applies. An early version built every new dictionary, before the measurements.
+An early version of this design built every new dictionary, before these measurements.
 
-## Decision
+## Rejected approaches
 
-- **Trie** when any source is a Hunspell file, or the word lists add up to more than about 1 MB. `--trie` and
-  `--no-trie` override it.
-- **Build at creation** when all sources are word lists. With a Hunspell source, the generator doesn't build, and says to
-  run `pnpm run build`, or to lower `--hunspell-depth` if that's too slow. `--build` and `--no-build` override it.
-- **Depth:** no `maxDepth` on word lists. Hunspell sources get `maxDepth: 1`, with a comment that higher depths can add
-  word forms but can make the build very slow or run out of memory. `--hunspell-depth <n>` sets it, such as 0 for
-  Hebrew.
-
-## Consequences
-
-- Creating a dictionary never hangs on a large Hunspell build.
-- A word-list dictionary arrives built, with its tests passing. A Hunspell dictionary's tests fail until its first
-  build, and the generator says so.
-- The guide and the generator name the same trie threshold.
-- A natural language dictionary may miss forms that need two chained rules until a maintainer raises the depth; that
-  tuning is out of scope.
+- Leaving the trie to the contributor, or always deciding by rule with no override.
+- Building every dictionary: a `hu_HU`-sized one waits over 15 minutes or runs out of memory.
+- Building with a time limit: guesswork across machines.
+- Leaving `maxDepth` unset, so 5 applies.
 
 <!-- cspell:ignore COMPLEXPREFIXES -->

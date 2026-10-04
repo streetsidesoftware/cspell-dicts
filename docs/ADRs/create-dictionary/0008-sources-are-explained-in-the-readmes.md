@@ -2,16 +2,9 @@
 
 Status: Accepted
 
-## Context
+## Why
 
-Goal: traceable.
-
-Users need to see where a dictionary's words came from and under which licenses. A new dictionary's README says only
-"MIT" and "Some packages may have other licenses included", and `src/README.md`, which isn't published, says only that
-source files belong in `src/`. The README already gets generated sections through `@@inject` markers, filled in by
-`pnpm run build:readme`.
-
-Rejected: writing the list of sources into `src/README.md` once, by hand; it drifts.
+Goal: traceable. Users can't see where a dictionary's words came from, or under which licenses.
 
 ## Decision
 
@@ -28,3 +21,14 @@ Rejected: writing the list of sources into `src/README.md` once, by hand; it dri
 - Users see each source and its license on npm, and nobody maintains the list by hand.
 - `readme:inject` in the root `package.json` covers only `dictionaries/*/README.md`, so it gains
   `dictionaries/*/src/README.md`.
+
+## Context
+
+Users need to see where a dictionary's words came from and under which licenses. A new dictionary's README says only
+"MIT" and "Some packages may have other licenses included", and `src/README.md`, which isn't published, says only that
+source files belong in `src/`. The README already gets generated sections through `@@inject` markers, filled in by
+`pnpm run build:readme`.
+
+## Rejected approaches
+
+- Writing the list of sources into `src/README.md` once, by hand: it drifts.

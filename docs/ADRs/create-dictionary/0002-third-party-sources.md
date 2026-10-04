@@ -2,28 +2,10 @@
 
 Status: Accepted
 
-## Context
+## Why
 
-Goal: traceable, and easy to adopt.
-
-A third-party source is a set of files someone else maintains, such as an OpenOffice or other Hunspell dictionary, or a
-word list kept in another repository or offered on a website. A compiled dictionary is often a derivative work of its sources, so each must be traceable to
-where it came from, with its license beside its copy. To keep such a copy we need its name, its files, and, where it has
-them, its license, README, and URL.
-
-Existing dictionaries keep their Hunspell files in three ways: `src/hunspell/` (32), for example `de_DE`, which holds a
-copy of the npm package `dictionary-de`; directly in `src/` (15); or a folder named after the source (about 13), such as
-`hunspell-french-dictionaries-v7.0/`, `hunspell-en_AU-large/`, or `open-office-2008/`. Only the last fits several
-sources. Upstream sources often have same-named files in different folders, such as `dicts/en_AU (Kevin Atkinson)/`.
-
-Rejected:
-
-- Working out a source's files by walking its folder and asking about each file: asks which file is which rather than
-  what the source needs, and records nothing about where it came from. An early version did this.
-- Options that take several values: such an option keeps reading words until the next option, so it swallows the
-  positional sources that follow. Two values with a required name would work, but the name should be optional.
-- A generated `README.md` in each source's folder: collides with the source's own README, repeats the sources file, and
-  can drift from it.
+Goals: traceable, and easy to adopt. A compiled dictionary is often a derivative work of its sources, so each
+third-party source needs a copy that can be traced to where it came from, with its license beside it.
 
 ## Decision
 
@@ -67,5 +49,26 @@ pnpm create-dictionary en_XX \
 - Two Hunspell files with the same base name, such as two `en_US.dic`, need a name for one of them.
 - Commands for natural language dictionaries get long; agents write them, and people can use the prompts.
 - Each new `--add-source-*` option needs a matching prompt.
+
+## Context
+
+A third-party source is a set of files someone else maintains, such as an OpenOffice or other Hunspell dictionary, or a
+word list kept in another repository or offered on a website. A compiled dictionary is often a derivative work of its
+sources, so each must be traceable to where it came from, with its license beside its copy. To keep such a copy we need
+its name, its files, and, where it has them, its license, README, and URL.
+
+Existing dictionaries keep their Hunspell files in three ways: `src/hunspell/` (32), for example `de_DE`, which holds a
+copy of the npm package `dictionary-de`; directly in `src/` (15); or a folder named after the source (about 13), such as
+`hunspell-french-dictionaries-v7.0/`, `hunspell-en_AU-large/`, or `open-office-2008/`. Only the last fits several
+sources. Upstream sources often have same-named files in different folders, such as `dicts/en_AU (Kevin Atkinson)/`.
+
+## Rejected approaches
+
+- Working out a source's files by walking its folder and asking about each file: asks which file is which rather than
+  what the source needs, and records nothing about where it came from. An early version did this.
+- Options that take several values: such an option keeps reading words until the next option, so it swallows the
+  positional sources that follow. Two values with a required name would work, but the name should be optional.
+- A generated `README.md` in each source's folder: collides with the source's own README, repeats the sources file, and
+  can drift from it.
 
 <!-- cspell:ignore marcoagpinto -->

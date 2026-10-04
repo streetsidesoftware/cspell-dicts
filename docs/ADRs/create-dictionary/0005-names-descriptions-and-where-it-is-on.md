@@ -2,9 +2,31 @@
 
 Status: Accepted
 
-## Context
+## Why
 
-Goal: easy to adopt.
+Goal: easy to adopt. The default descriptions said only "for cspell", and the default turned a dictionary on for every
+file in every language. Maintainers fixed both by hand.
+
+## Decision
+
+- The default friendly name splits `_` as well as `-`: `medical_terms` becomes "Medical Terms". A natural language name
+  like `en_AU` needs `--friendly-name "Australian English"`.
+- `--description` is required: with `--yes` it must be given, and the prompt has no default. "for cspell" in it is
+  refused, with a message to describe the words instead, such as "Ruby keywords and standard library names".
+- `--package-description` sets `package.json`'s description. It defaults to "`<Friendly name>` dictionary for cspell.",
+  and the template's " -- Private until verified" stays at the end.
+- A dictionary sets `--locale` or `--language-id`, never both `*`. A natural language dictionary sets the locale, such
+  as `en-AU`; any other sets the file type, such as `ruby`. With `--yes` one must be given; when prompting with the
+  locale at `*`, the file type has no default and `*` is refused.
+
+## Consequences
+
+- Every new dictionary says what words it covers, and npm descriptions stay consistent.
+- An agent has to write a description; it can't take a default.
+- A new dictionary is never on everywhere by accident. One that should be is a maintainer's design decision. The
+  new-dictionary guide and skill state the same rule.
+
+## Context
 
 A dictionary names and describes itself in several places:
 
@@ -21,24 +43,7 @@ A dictionary names and describes itself in several places:
   generator defaulted both to `*`, which turns a dictionary on for every file in every language, so users get its words
   wherever they spell check.
 
-Rejected: a better generated description, which is still generic and repeated everywhere; keeping the default and
-leaving it to reviewers.
+## Rejected approaches
 
-## Decision
-
-- The default friendly name splits `_` as well as `-`: `medical_terms` becomes "Medical Terms". A natural language name
-  like `en_AU` needs `--friendly-name "Australian English"`.
-- `--description` is required: with `--yes` it must be given, and the prompt has no default. "for cspell" in it is
-  refused, with a message to describe the words instead, such as "Ruby keywords and standard library names".
-- `--package-description` sets `package.json`'s description. It defaults to "`<Friendly name>` dictionary for cspell.",
-  and the template's " -- Private until verified" stays at the end.
-- A dictionary sets `--locale` or `--language-id`, never both `*`. A natural language dictionary sets the locale, such as
-  `en-AU`; any other sets the file type, such as `ruby`. With `--yes` one must be given; when prompting with the locale
-  at `*`, the file type has no default and `*` is refused.
-
-## Consequences
-
-- Every new dictionary says what words it covers, and npm descriptions stay consistent.
-- An agent has to write a description; it can't take a default.
-- A new dictionary is never on everywhere by accident. One that should be is a maintainer's design decision. The
-  new-dictionary guide and skill state the same rule.
+- A better generated description: still generic, and repeated everywhere.
+- Keeping the default and leaving it to reviewers.

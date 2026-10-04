@@ -2,29 +2,10 @@
 
 Status: Accepted
 
-## Context
+## Why
 
-Goal: easy to create.
-
-`create-dictionary` took the directory name and one source file, each either positionally
-(`pnpm create-dictionary ruby words.txt`) or as an option (`--name ruby --source words.txt`), and giving both forms with
-different values was an error. Most dictionaries are compiled from several source files, so the rest were added by hand
-afterwards. Many mix word lists and Hunspell files: `en_AU` is compiled from a Hunspell `.dic`, its
-`src/additional_words.txt`, and shared word lists. A Hunspell source is a pair of files, `.dic` and `.aff`, and people
-often list both even though either one finds the pair.
-
-A dictionary's own word list is written by hand, so a new dictionary may not have one yet. Since #5841,
-`--allow-missing-source` lets it start empty, both when no source is given and when a named source doesn't exist.
-
-Rejected:
-
-- One form only for the name and sources: the positional form is what people and the docs use, and the option form
-  reads more clearly in scripts. Dropping either breaks one of those habits.
-- A comma-separated list of sources (`--source a.txt,b.txt`): breaks on file names with commas, and no other option
-  works that way.
-- Word lists or one Hunspell pair, not both: simpler to explain, but rules out dictionaries like `en_AU`.
-- Creating an empty `src/<name>.txt` unasked: one less option, but an agent that forgets its source gets an empty
-  dictionary and a successful exit. A reviewer flagged that trap in #5841.
+Goal: easy to create. Most dictionaries are compiled from several source files, but the generator took one, so the rest
+were added by hand after creation.
 
 ## Decision
 
@@ -43,3 +24,25 @@ Rejected:
 - Every source can be given at creation, and commands stay short for people.
 - Defaults depend on the whole set of sources ([0006](./0006-how-a-new-dictionary-is-built.md)).
 - A forgotten or mistyped source fails loudly, unless starting empty was asked for.
+
+## Context
+
+`create-dictionary` took the directory name and one source file, each either positionally
+(`pnpm create-dictionary ruby words.txt`) or as an option (`--name ruby --source words.txt`), and giving both forms with
+different values was an error. Most dictionaries are compiled from several source files, so the rest were added by hand
+afterwards. Many mix word lists and Hunspell files: `en_AU` is compiled from a Hunspell `.dic`, its
+`src/additional_words.txt`, and shared word lists. A Hunspell source is a pair of files, `.dic` and `.aff`, and people
+often list both even though either one finds the pair.
+
+A dictionary's own word list is written by hand, so a new dictionary may not have one yet. Since #5841,
+`--allow-missing-source` lets it start empty, both when no source is given and when a named source doesn't exist.
+
+## Rejected approaches
+
+- One form only for the name and sources: the positional form is what people and the docs use, and the option form
+  reads more clearly in scripts. Dropping either breaks one of those habits.
+- A comma-separated list of sources (`--source a.txt,b.txt`): breaks on file names with commas, and no other option
+  works that way.
+- Word lists or one Hunspell pair, not both: simpler to explain, but rules out dictionaries like `en_AU`.
+- Creating an empty `src/<name>.txt` unasked: one less option, but an agent that forgets its source gets an empty
+  dictionary and a successful exit. A reviewer flagged that trap in #5841.

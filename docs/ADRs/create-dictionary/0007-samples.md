@@ -2,41 +2,10 @@
 
 Status: Accepted
 
-## Context
+## Why
 
-Goal: tested, and easy to adopt.
-
-A new dictionary's `test` script ran the start of its source through cspell:
-
-```json
-"test": "head -n 1000 \"src/<name>.txt\" | cspell -c ./cspell-ext.json \"--locale=<locale>\" \"--languageId=<languageId>\" stdin"
-```
-
-It's a smoke test: did the dictionary build, does `cspell-ext.json` reference `dict/` correctly, and can cspell use it.
-The source was simply the quickest list of words to grab. With several sources and the word files of
-[0004](./0004-additional-and-exclude-words.md), it fails for reasons unrelated to the dictionary:
-
-1. Comment lines in the source are checked as words, and can be flagged.
-2. A source word listed in `src/exclude_words.txt` is flagged, by design.
-3. `head` doesn't exist on Windows.
-4. Which source is "first" isn't defined once sources come from several options.
-5. A dictionary that starts empty has only its header line to check.
-
-A smoke test also can't check the assumptions made at creation: whether the file type turns the dictionary on, whether
-words as they're really written are covered (compounds, casing, identifiers), and whether splitting and depth are right.
-Real examples can. 86 of 136 dictionaries have a `samples/` folder, checked by `cspell samples`. `matlab` is the model:
-five real `.m` scripts, a `samples/cspell.json` that imports `../cspell-ext.json`, and a `samples/README.md` giving
-each sample's origin, such as the `fft` page of the MATLAB documentation, or "no known origin". 31 natural language
-dictionaries have `samples/seattle.md`: the Wikipedia article on Seattle in their language, with its link at the top.
-
-Rejected:
-
-- Requiring real samples, failing creation without one: works against easy to create. Not mentioning them: the gap
-  goes unnoticed.
-- Recording samples in `sources.yaml`: samples don't sync, so most of that machinery doesn't apply.
-- Fetching the Wikipedia article: needs the network, the text changes over time, and it's CC BY-SA.
-- Reading words back from `dict/`: tests the build with its own output.
-- Real samples only, with no static word sample: a dictionary without them would have no test.
+Goals: tested, and easy to adopt. The template's test breaks once a dictionary has several sources, and only real
+examples check the assumptions made when a dictionary is created.
 
 ## Decision
 
@@ -75,3 +44,37 @@ All samples live in `samples/` and are checked by one `cspell samples`, the `tes
 - Natural language samples are comparable across languages.
 - An empty dictionary's tests check nothing until words or samples are added.
 - A sample word that's later excluded fails the test until the sample is edited.
+
+## Context
+
+A new dictionary's `test` script ran the start of its source through cspell:
+
+```json
+"test": "head -n 1000 \"src/<name>.txt\" | cspell -c ./cspell-ext.json \"--locale=<locale>\" \"--languageId=<languageId>\" stdin"
+```
+
+It's a smoke test: did the dictionary build, does `cspell-ext.json` reference `dict/` correctly, and can cspell use it.
+The source was simply the quickest list of words to grab. With several sources and the word files of
+[0004](./0004-additional-and-exclude-words.md), it fails for reasons unrelated to the dictionary:
+
+1. Comment lines in the source are checked as words, and can be flagged.
+2. A source word listed in `src/exclude_words.txt` is flagged, by design.
+3. `head` doesn't exist on Windows.
+4. Which source is "first" isn't defined once sources come from several options.
+5. A dictionary that starts empty has only its header line to check.
+
+A smoke test also can't check the assumptions made at creation: whether the file type turns the dictionary on, whether
+words as they're really written are covered (compounds, casing, identifiers), and whether splitting and depth are right.
+Real examples can. 86 of 136 dictionaries have a `samples/` folder, checked by `cspell samples`. `matlab` is the model:
+five real `.m` scripts, a `samples/cspell.json` that imports `../cspell-ext.json`, and a `samples/README.md` giving
+each sample's origin, such as the `fft` page of the MATLAB documentation, or "no known origin". 31 natural language
+dictionaries have `samples/seattle.md`: the Wikipedia article on Seattle in their language, with its link at the top.
+
+## Rejected approaches
+
+- Requiring real samples, failing creation without one: works against easy to create. Not mentioning them: the gap
+  goes unnoticed.
+- Recording samples in `sources.yaml`: samples don't sync, so most of that machinery doesn't apply.
+- Fetching the Wikipedia article: needs the network, the text changes over time, and it's CC BY-SA.
+- Reading words back from `dict/`: tests the build with its own output.
+- Real samples only, with no static word sample: a dictionary without them would have no test.

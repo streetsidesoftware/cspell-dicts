@@ -2,29 +2,10 @@
 
 Status: Accepted
 
-## Context
+## Why
 
-Goal: easy to maintain.
-
-`sync-github-files` keeps a `.sync-github-files.json` in each folder it syncs, holding each file's blob SHA, and skips a
-file whose SHA hasn't changed (11 committed today). It doesn't check that the skipped file exists, so a deleted local
-file is never restored. A path that's gone upstream prints "Path not found" and the sync carries on without an error, so
-nobody finds out.
-
-Upstream files are renamed and removed as a normal part of a project's life, and the sync can't tell a rename from a
-removal. One failing dictionary stops Update Dictionaries before its PR step, holding back every other dictionary. The
-largest committed source files are about 20 MB (`hy`'s `hy-AM.dic` is 21.1 MB); GitHub warns at 50 MB and rejects
-files over 100 MB.
-
-Rejected:
-
-- State at the dictionary's root: keeps stale entries when a folder is deleted or renamed. State in `sources.yaml`:
-  every sync rewrites a file people edit, and the SHAs bury the definitions.
-- No state, comparing the upstream's hashes with hashes of the local files: depends on the upstream never changing how
-  it calculates them.
-- Failing the sync when a file is gone: the same error every week, holding back every other dictionary. Only a
-  warning in the log: nobody reads it. Deleting the local copy: the next build loses words.
-- A growth check on file size, such as more than double the last size; no size limit, relying on the PR's diff stats.
+Goal: easy to maintain. Upstream files change, move, and disappear. Today the sync misses that silently, and failing
+instead would break the weekly update for every dictionary.
 
 ## Decision
 
@@ -47,3 +28,25 @@ Rejected:
 - A file going away upstream never breaks the dictionary or the weekly PR. It stays frozen until a maintainer updates
   `sources.yaml`.
 - `sync-github-files` gains the existence check, the gone marks, and the cap.
+
+## Context
+
+`sync-github-files` keeps a `.sync-github-files.json` in each folder it syncs, holding each file's blob SHA, and skips a
+file whose SHA hasn't changed (11 committed today). It doesn't check that the skipped file exists, so a deleted local
+file is never restored. A path that's gone upstream prints "Path not found" and the sync carries on without an error, so
+nobody finds out.
+
+Upstream files are renamed and removed as a normal part of a project's life, and the sync can't tell a rename from a
+removal. One failing dictionary stops Update Dictionaries before its PR step, holding back every other dictionary. The
+largest committed source files are about 20 MB (`hy`'s `hy-AM.dic` is 21.1 MB); GitHub warns at 50 MB and rejects
+files over 100 MB.
+
+## Rejected approaches
+
+- State at the dictionary's root: keeps stale entries when a folder is deleted or renamed. State in `sources.yaml`:
+  every sync rewrites a file people edit, and the SHAs bury the definitions.
+- No state, comparing the upstream's hashes with hashes of the local files: depends on the upstream never changing how
+  it calculates them.
+- Failing the sync when a file is gone: the same error every week, holding back every other dictionary. Only a
+  warning in the log: nobody reads it. Deleting the local copy: the next build loses words.
+- A growth check on file size, such as more than double the last size; no size limit, relying on the PR's diff stats.
