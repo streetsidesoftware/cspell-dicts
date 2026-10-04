@@ -19,7 +19,8 @@ instead would break the weekly update for every dictionary.
   state file, with the date it was first missed. That change shows once in the weekly PR; later syncs stay quiet. If it
   comes back, the mark is cleared. The source's other files still sync.
 - **Size cap.** A file over 30 MB keeps its old copy and is noted once, the same way. `max-size` on a source in
-  `sources.yaml` raises the cap.
+  `src/sources.yaml` raises the cap. A size is a number with a binary unit, as GitHub uses: `40MB` or `500KB`, where 1
+  MB is 1,048,576 bytes. A number with no unit is an error, so `40` is never read as bytes.
 
 ## Consequences
 

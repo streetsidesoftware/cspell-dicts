@@ -12,17 +12,18 @@ third-party source needs a copy that can be traced to where it came from, with i
 Each third-party source is defined with options that take one value each. Where a value needs a source name, the name
 comes first, followed by `=`:
 
-| Option                                                    | What it does                                                                              |
-| --------------------------------------------------------- | ----------------------------------------------------------------------------------------- |
-| `--define-source [<name>=]<path>`                         | a local source; the name defaults to the path's last segment                              |
-| `--define-source-npm [<name>=]<package>[/<path>]`         | a source from npm ([0010](./0010-remote-sources.md))                                      |
-| `--define-source-github [<name>=]<owner>/<repo>[/<path>]` | a source from GitHub ([0010](./0010-remote-sources.md))                                   |
-| `--add-source-file <name>[/<local-path>]=<path>`          | a word list or Hunspell file of the source, repeatable                                    |
-| `--add-source-license <name>[/<local-path>]=<path>`       | the source's license                                                                      |
-| `--add-source-readme <name>[/<local-path>]=<path>`        | the source's README                                                                       |
-| `--add-source-url <name>=<url>`                           | where the source can be found                                                             |
-| `--add-source-ref <name>=<ref>`                           | another branch, a tag, or a commit for a GitHub source ([0010](./0010-remote-sources.md)) |
-| `--add-source-version <name>=<version>`                   | a version or tag for an npm source ([0010](./0010-remote-sources.md))                     |
+| Option                                                    | What it does                                                                                       |
+| --------------------------------------------------------- | -------------------------------------------------------------------------------------------------- |
+| `--define-source [<name>=]<path>`                         | a local source; the name defaults to the path's last segment                                       |
+| `--define-source-npm [<name>=]<package>[/<path>]`         | a source from npm ([0010](./0010-remote-sources.md))                                               |
+| `--define-source-github [<name>=]<owner>/<repo>[/<path>]` | a source from GitHub ([0010](./0010-remote-sources.md))                                            |
+| `--add-source-file <name>[/<local-path>]=<path>`          | a word list or Hunspell file of the source, repeatable                                             |
+| `--add-source-license <name>[/<local-path>]=<path>`       | the source's license                                                                               |
+| `--add-source-readme <name>[/<local-path>]=<path>`        | the source's README                                                                                |
+| `--add-source-url <name>=<url>`                           | where the source can be found                                                                      |
+| `--add-source-ref <name>=<ref>`                           | another branch, a tag, or a commit for a GitHub source ([0010](./0010-remote-sources.md))          |
+| `--add-source-version <name>=<version>`                   | a version or tag for an npm source ([0010](./0010-remote-sources.md))                              |
+| `--add-source-max-size <name>=<size>`                     | raises a remote source's 30 MB cap, such as `40MB` ([0011](./0011-how-the-sync-handles-change.md)) |
 
 ```sh
 pnpm create-dictionary en_XX \
