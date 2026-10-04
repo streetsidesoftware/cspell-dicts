@@ -90,7 +90,7 @@ async function writeEntriesToFile(url: URL, entries: Set<string>, locale: string
 
 async function main(): Promise<void> {
     const syncInfo = JSON.parse(await fs.readFile(new URL('.sync-github-files.json', typesDirURL), 'utf8')) as SyncInfo;
-    const syncTag = syncInfo['https://github.com/crate-ci/typos'] || 'v1.33.1';
+    const syncTag = syncInfo['https://github.com/crate-ci/typos'] || 'main';
     const dictionaries = await loadDictionaries();
     const typosEntries = await readTyposEntries();
     const entriesEnAll = new Set<string>();
