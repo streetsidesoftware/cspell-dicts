@@ -58,6 +58,8 @@ Options weighed:
   from the next build.
 - **Failures at creation:** create the dictionary without a source that failed, with an easy-to-miss warning; or fall
   back to GitHub's public API without a token, limited to 60 requests an hour.
+- **A failure during the weekly sync:** today any failure stops Update Dictionaries before its PR step, so nothing is
+  updated that week; or the sync could treat every failure as a warning, so outages go unnoticed.
 - **Schedule:** sync on every push to `main`, which brings upstream changes at unpredictable times, mixed with whatever
   else was pushed.
 
@@ -111,6 +113,9 @@ We will:
   get one: `gh auth login`, or set `GITHUB_TOKEN`. The token is found the way `sync-github-files` finds it.
 - **Sync weekly.** A new dictionary's `update-dictionary` script runs `sync`, so Update Dictionaries syncs it every
   Sunday, and its `conditional-build` only builds. `pnpm run sync` still works by hand at any time.
+- **One dictionary's failure doesn't hold back the others.** Update Dictionaries runs the scripts with `--no-bail`,
+  opens the PR with whatever synced, and then marks the run as failed, naming the dictionaries that failed. A failed
+  dictionary catches up the next week.
 
 ## Consequences
 
