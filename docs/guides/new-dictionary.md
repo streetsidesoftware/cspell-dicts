@@ -129,7 +129,7 @@ once: most only need a check, and a few need something only you can add.
   - **Words from a source that must be left out:** list them in a file under `excludeWordsFrom`. See
     [How a dictionary is built](../dictionary-packages.md#how-a-dictionary-is-built).
   - Check: the sources listed are the files in `src/`.
-- **`cspell-ext.json`: what cspell loads.** It names this dictionary, describes it, and says when cspell turns it on.
+- **`cspell-ext.json`: what cspell loads.** It names this dictionary, describes it, and says when cspell enables it.
   The tool filled these in from your answers.
   - Check: the description says what words it covers, and `locale` and `languageId` match what you decided in step 2.
     See [Dictionary definitions](#dictionary-definitions) for the other fields.
