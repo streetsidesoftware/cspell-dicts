@@ -81,7 +81,7 @@ Checks:
 ### 4. Commit and open a PR
 
 - Commit the synced files and the built output together.
-- Use `fix(<package directory>): update <source> to <version>`. Use `fix!:` or `feat!:` if the update makes existing
-  setups flag text they accepted before, such as a big removal of words. See
-  [Commits and pull requests](../commits-and-pull-requests.md).
+- Use `fix(<package directory>): update <source> to <version>`. Use `fix(<package directory>)!:` or
+  `feat(<package directory>)!:` if the update makes existing setups flag text they accepted before, such as a big
+  removal of words. See [Commits and pull requests](../commits-and-pull-requests.md).
 - In the PR, link the upstream release or diff, and say whether the license changed.

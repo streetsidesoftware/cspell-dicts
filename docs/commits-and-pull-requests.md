@@ -71,6 +71,9 @@ A scope is optional. When a change is to one package, use the package's director
 - `fix(software-terms): add worktree`
 - `feat(python): add pip environment variables`
 
+For a breaking change, the `!` goes after the scope: `fix(th_th)!: license under GPL-3.0-only`, not
+`fix!(th_th): …`.
+
 Use the directory name, not a dictionary ID: one package can define several IDs, such as `python` and
 `python-common`. When a change spans packages, leave the scope out and name the packages in the subject.
 
