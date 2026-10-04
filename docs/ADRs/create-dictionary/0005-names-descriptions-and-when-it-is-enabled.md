@@ -4,8 +4,11 @@ Status: Accepted
 
 ## Why
 
-Goal: easy to adopt. The default descriptions said only "for cspell", and the default enabled a dictionary for every
-file in every language. Maintainers fixed both by hand.
+**Goal:** easy to adopt. A maintainer can merge a new dictionary after review, without fixing it by hand.
+
+**Problem:** The generator filled in defaults a maintainer had to correct in every new dictionary. It described each one
+as "dictionary for cspell", which says nothing about its words. It enabled each one for every file in every language. It
+turned `medical_terms` into "Medical_terms", and it never listed who made the dictionary.
 
 ## Decision
 
