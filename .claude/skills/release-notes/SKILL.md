@@ -28,12 +28,17 @@ Find the entries that don't belong, and agree on them with the user.
 - **Do:**
   - Read the rules: `docs/commits-and-pull-requests.md`, and the `changelog-sections` in `release-please-config.json`
     (generated from `scripts/gen-release-please-config.mts`).
-  - Fetch the release PR's description. It lists each dictionary being released, with its entries by section, each
-    linking to its source PR.
+  - Find the release PR and fetch its description. It lists each package being released, with its shown entries by
+    section, each linking to its source PR. Hidden types never appear in it.
+
+    ```sh
+    gh pr list --search "chore: release main in:title"
+    ```
+
 - **Check** each entry:
   - Its type matches the doc, including `!`. A shown type that a cspell user wouldn't notice belongs under a hidden
     type. Reclassifying it removes it from the release notes.
-  - It's listed under a dictionary it belongs to. An entry lands in every dictionary whose files the PR changed. An
+  - It's listed under a package it belongs to. An entry lands in every package whose files the PR changed. An
     override can't fix that: tell the user.
   - Leave alone:
     - entries that only say "workspace dependencies were updated": a dependency was released.
@@ -47,18 +52,19 @@ Write the `type(scope): description` each PR should have had.
 
 - **Do:**
   - The type and scope, as in `docs/commits-and-pull-requests.md`. The scope is the dictionary's directory under
-    `dictionaries/`, such as `fix(en_US): …`. Leave it out when the PR spans dictionaries.
+    `dictionaries/`, such as `fix(en_US): …`. Leave it out when the PR spans dictionaries, or changes only tooling.
   - `type!:` for a breaking change.
   - For a shown type, describe it for a cspell user: which words or behavior changed.
   - Keep the original wording unless it was unclear too.
+- **Check:** the corrected message differs from the merged one. If it doesn't, tell the user it's already right, and
+  stop.
 
 ### 4. Confirm the PR was squash-merged
 
 An override only works on a squash-merged PR.
 
-- **Check:**
-  - The PR's merge commit on `main` has a single parent, and the PR's title as its subject.
-  - If the repository settings are available: only squash merging is allowed.
+- **Check:** the PR's merge commit on `main` has a single parent, and the PR's title with `(#<N>)` as its subject.
+  Rebase merging is allowed too, so check the PR, not the settings.
 - **If it fails:** stop, and tell the user the override won't take effect.
 
 ### 5. Edit the PR description
