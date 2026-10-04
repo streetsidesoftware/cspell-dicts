@@ -12,15 +12,15 @@ third-party source needs a copy that can be traced to where it came from, with i
 Each third-party source is defined with options that take one value each. Where a value needs a source name, the name
 comes first, followed by `=`:
 
-| Option                                       | What it does                                                 |
-| -------------------------------------------- | ------------------------------------------------------------ |
-| `--define-source [<name>=]<path>`            | a local source; the name defaults to the path's last segment |
-| `--define-source-npm [<name>=]<package>`     | a source from npm ([0010](./0010-remote-sources.md))         |
-| `--define-source-github [<name>=]<org/repo>` | a source from GitHub ([0010](./0010-remote-sources.md))      |
-| `--add-source-file <name>=<path>`            | a word list or Hunspell file of the source, repeatable       |
-| `--add-source-license <name>=<path>`         | the source's license                                         |
-| `--add-source-readme <name>=<path>`          | the source's README                                          |
-| `--add-source-url <name>=<url>`              | where the source can be found                                |
+| Option                                              | What it does                                                 |
+| --------------------------------------------------- | ------------------------------------------------------------ |
+| `--define-source [<name>=]<path>`                   | a local source; the name defaults to the path's last segment |
+| `--define-source-npm [<name>=]<package>`            | a source from npm ([0010](./0010-remote-sources.md))         |
+| `--define-source-github [<name>=]<org/repo>`        | a source from GitHub ([0010](./0010-remote-sources.md))      |
+| `--add-source-file <name>[/<local-path>]=<path>`    | a word list or Hunspell file of the source, repeatable       |
+| `--add-source-license <name>[/<local-path>]=<path>` | the source's license                                         |
+| `--add-source-readme <name>[/<local-path>]=<path>`  | the source's README                                          |
+| `--add-source-url <name>=<url>`                     | where the source can be found                                |
 
 ```sh
 pnpm create-dictionary en_XX \
@@ -30,9 +30,14 @@ pnpm create-dictionary en_XX \
   --add-source-url aoo=https://github.com/marcoagpinto/aoo-mozilla-en-dict
 ```
 
-- **Folder:** each source is copied into `src/<name>/`, with only the files named for it, at their paths relative to
-  the source: `aoo=dicts/en_XX/en_XX.dic` becomes `src/aoo/dicts/en_XX/en_XX.dic`. A Hunspell file brings its pair.
-  Where the source came from is recorded in the sources file ([0003](./0003-sources-file.md)), not in the folder.
+- **Folder:** each source is copied into `src/<name>/`, with only the files named for it. Where the source came from
+  is recorded in the sources file ([0003](./0003-sources-file.md)), not in the folder.
+- **Local paths:** a file keeps its path relative to the source, so `aoo=dicts/en_XX/en_XX.dic` becomes
+  `src/aoo/dicts/en_XX/en_XX.dic`. An optional local path after the name puts it elsewhere in the folder:
+  `--add-source-file de/index.dic=dictionaries/de/index.dic` copies it to `src/de/index.dic`, and
+  `--add-source-license aoo/LICENSE=../../LICENSE` brings in a license kept above the source's files. A local path must
+  stay inside `src/<name>/`, and a path that leaves the source (`../`) needs one. A Hunspell file brings its pair, to
+  the same local folder.
 - **Shortcut:** a positional Hunspell file defines a source: `pnpm create-dictionary en_XX vendor/en_XX.dic` defines a
   source named `en_XX`, from `vendor/`.
 - **Names:** letters, digits, `_`, and `-`, as for a dictionary. Two sources with the same name are an error before
@@ -40,7 +45,8 @@ pnpm create-dictionary en_XX \
 - **Checks at creation:** a source needs at least one file, and every named file must exist; there's no
   `--allow-missing-source` exception. A missing license, README, or URL is a warning.
 - **Prompting:** after the dictionary's own sources, the generator asks "Add a third-party source?" until the answer is
-  no. For each, it asks the name and location, its files one at a time, then its license, README, and URL, each of
+  no. For each, it asks the name and location, its files one at a time with where to put each (defaulting to its path
+  relative to the source), then its license, README, and URL, each of
   which can be skipped with a warning. Prompting and `--yes` with options produce the same dictionary.
 
 ## Consequences
@@ -66,8 +72,9 @@ sources. Upstream sources often have same-named files in different folders, such
 
 - Working out a source's files by walking its folder and asking about each file: asks which file is which rather than
   what the source needs, and records nothing about where it came from. An early version did this.
-- Options that take several values: such an option keeps reading words until the next option, so it swallows the
-  positional sources that follow. Two values with a required name would work, but the name should be optional.
+- Options that take several values, such as a remote path and a local path: such an option keeps reading words until the
+  next option, so it swallows the positional sources that follow. Two values with a required name would work, but the
+  name should be optional.
 - A generated `README.md` in each source's folder: collides with the source's own README, repeats the sources file, and
   can drift from it.
 
