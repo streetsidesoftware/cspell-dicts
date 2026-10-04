@@ -38,6 +38,9 @@ pnpm create-dictionary en_XX \
 aoo/LICENSE=../../LICENSE` brings in the license kept at the repository's root as `src/aoo/LICENSE`. A local path must
   stay inside `src/<name>/`, and a path that leaves the source (`../`) needs one. A Hunspell file brings its pair, to
   the same local folder.
+- **Published with the dictionary:** the generator adds each source's license and README to the dictionary's
+  `files`, at their local paths, such as `src/aoo/LICENSE`. A published dictionary is often a derivative work of its
+  sources, so it ships with their terms.
 - **Shortcut:** a positional Hunspell file defines a source: `pnpm create-dictionary en_XX vendor/en_XX.dic` defines a
   source named `en_XX`, from `vendor/`.
 - **Names:** letters, digits, `_`, and `-`, as for a dictionary. Two sources with the same name are an error before
@@ -62,6 +65,9 @@ A third-party source is a set of files someone else maintains, such as an OpenOf
 word list kept in another repository or offered on a website. A compiled dictionary is often a derivative work of its
 sources, so each must be traceable to where it came from, with its license beside its copy. To keep such a copy we need
 its name, its files, and, where it has them, its license, README, and URL.
+
+37 dictionaries already publish a source's license or README from `src/`, such as `de_DE`'s `src/hunspell/license`,
+`ar`'s `src/ayaspell/COPYING`, and the `en_*` dictionaries' `README_en_*.txt`, where those sources state their license.
 
 Existing dictionaries keep their Hunspell files in three ways: `src/hunspell/` (32), for example `de_DE`, which holds a
 copy of the npm package `dictionary-de`; directly in `src/` (15); or a folder named after the source (about 13), such as
