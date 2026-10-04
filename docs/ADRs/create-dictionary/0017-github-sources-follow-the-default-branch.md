@@ -25,8 +25,9 @@ commit instead, for a repository whose branch can't be used.
 
 ## Consequences
 
-- New GitHub sources stay current with no bumping; changes are reviewed in Build Dictionaries PRs.
-- A repository that commits broken files to its default branch shows up as a failing or surprising Build Dictionaries
-  PR, and then gets pinned.
+- New GitHub sources stay current with no bumping; changes are reviewed in the weekly Update Dictionaries PR
+  ([0023](./0023-sources-sync-weekly.md)).
+- A repository that commits broken files to its default branch shows up as a failing or surprising Update
+  Dictionaries PR, and then gets pinned.
 
 <!-- cspell:ignore jshttp -->
