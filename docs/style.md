@@ -3,11 +3,11 @@
 <!--
 audience: technical contributor, developer, maintainer
 kind: reference
-level: writes word lists, READMEs, or docs in this repo
+level: writes word lists, READMEs, docs, or skills in this repo
 -->
 
 > [!NOTE]
-> For anyone writing word lists, a dictionary's README, or docs in this repo.
+> For anyone writing word lists, a dictionary's README, docs, or skills in this repo.
 
 Prettier and ESLint handle formatting (`pnpm run lint` fixes what it can). Beyond that:
 
@@ -94,3 +94,40 @@ header names, and leave out what they don't need.
 - **Reference:** facts to look up, such as a layout, rules, or terms.
 
 **Level:** what the reader is expected to know or be able to do, in a few words.
+
+## Skills
+
+Skills in `.claude/skills/` are instructions for AI agents, such as Claude Code. An agent reads a skill's `description`
+to decide when to use it, then follows the rest step by step. Write for that reader: it's capable, but it knows nothing
+about this repo, and it takes each instruction literally. These rules follow Anthropic's
+[skill authoring best practices](https://platform.claude.com/docs/en/agents-and-tools/agent-skills/best-practices).
+
+### The description
+
+- Third person: "Adds words to…", not "Add words to…" or "I can help…".
+- First what the skill does, then when to use it, in the words a user would say, then when to use another skill
+  instead.
+- At most 1,024 characters. Put the most important triggers first.
+
+### What goes in
+
+- Only what an agent can't know: this repo's commands, paths, rules, and the decisions it must leave to the user.
+- Not general knowledge, and not a guide's procedure. Point to the guide in `docs/` instead, one link deep.
+- One term for each thing: the [glossary](./glossary.md)'s terms, such as "dictionary package" and "dictionary ID",
+  and "enabled" for when cspell uses a dictionary.
+- Under 150 lines. Move detail into a file under the skill's `references/`, linked from `SKILL.md`.
+
+### Layout
+
+- An opening of one or two sentences: what the skill achieves, and which docs to read first.
+- A `## Workflow` of numbered steps, each a `### 1. <Verb> <object>` heading, followed by one sentence saying what the
+  step achieves.
+- Under that sentence, the step's bullets, grouped by kind, each group only when it has something:
+  - **Ask:** what the user decides.
+  - **Do:** what the agent does.
+  - **Check:** how it knows the step worked.
+  - **If it fails:** what to do instead.
+- One instruction per bullet, two levels of nesting at most, and no paragraph longer than three lines.
+- Commands in code blocks, with one option per line when there are several.
+- A decision that belongs to the user starts with **Stop and ask**, so it stands out.
+- The last step runs the checks, fixes what they find, and runs them again until they pass.
