@@ -112,20 +112,41 @@ Each field is described in [Create-dictionary options](#create-dictionary-option
 It creates `dictionaries/<name>/` with `version` `0.0.1-alpha.0` and `private: true`, so the dictionary isn't published. A
 maintainer makes it public once the dictionary has been verified.
 
-## 5. Fill in the dictionary
+## 5. Check the resulting dictionary
 
-- **`src/`:** the word lists, formatted as in [Word lists](../word-lists.md#format).
-- **`cspell-tools.config.yaml`:** the targets and their sources. Set `split` and `allowedSplitWords` for lists of
-  identifiers, and `excludeWordsFrom` if some upstream words must be left out. See the [Glossary](../glossary.md).
-- **`cspell-ext.json`:** the dictionary definitions and `languageSettings`, as decided in step 2. See
-  [Dictionary definitions](#dictionary-definitions).
-- **`package.json`:**
-  - Add `keywords` for the language or tool and its common alternate names.
-  - Check that `files` lists every built file and any upstream license file.
-  - Check that the `test` script spell checks the samples or source with the dictionary.
-- **`samples/`:** correctly spelled files of the kind the dictionary is for. The `test` script checks them.
-- **`README.md`:** what the dictionary covers and why to use it, for someone installing it. Keep the `@@inject` markers
-  from the template: a workflow fills them in after the PR lands. See [Style](../style.md#writing-for-users).
+`pnpm create-dictionary` wrote a complete dictionary in `dictionaries/<name>/` from your answers. Go through its files
+once: most only need a check, and a few need something only you can add.
+
+- **`src/`: the word lists.** The build reads every word of this dictionary from here. The tool copied in the source
+  files you gave it, or started an empty one.
+  - Check that each word list has one word or phrase per line, formatted as in [Word lists](../word-lists.md#format).
+  - Check: no headers, notes, or other text that isn't a word, except `#` comments.
+- **`cspell-tools.config.yaml`: how the build turns `src/` into this dictionary.** The tool listed the sources and
+  chose the format. Change it only in two cases:
+  - **A list of terms from code,** such as `FILE_ERROR_CODE`: splitting stores the parts instead of the whole terms,
+    which saves space. Split only with `allowedSplitWords`, or misspellings come in. See
+    [Splitting with `allowedSplitWords`](../dictionary-packages.md#splitting-with-allowedsplitwords).
+  - **Words from a source that must be left out:** list them in a file under `excludeWordsFrom`. See
+    [How a dictionary is built](../dictionary-packages.md#how-a-dictionary-is-built).
+  - Check: the sources listed are the files in `src/`.
+- **`cspell-ext.json`: what cspell loads.** It names this dictionary, describes it, and says when cspell turns it on.
+  The tool filled these in from your answers.
+  - Check: the description says what words it covers, and `locale` and `languageId` match what you decided in step 2.
+    See [Dictionary definitions](#dictionary-definitions) for the other fields.
+- **`package.json`: what npm publishes.** The tool filled in the name, the descriptions, and the files to publish.
+  - Add `keywords`: the words people type when they search npm, such as the language or tool and its other common
+    names, like `golang` for Go.
+  - Check that `files` lists the built dictionary, and every license file that came with a source.
+  - Leave `private: true` and "-- Private until verified" as they are: a maintainer publishes this dictionary later.
+- **`samples/`: real examples.** The tool doesn't create these. Add a few correctly spelled files of the kind this
+  dictionary is for, such as Ruby scripts for a Ruby dictionary, or a page of prose for a language. They show that
+  cspell turns the dictionary on for those files, and that real text passes. Add `"test:samples": "cspell samples"` to
+  `package.json`'s scripts, and run it from `test`. See [Tests](../dictionary-packages.md#tests).
+  - Check: each sample says where it came from, in `samples/README.md`.
+- **`README.md`: the page people see on npm.** The tool wrote the title and the description.
+  - Add a few sentences on what this dictionary covers and why to use it, for someone deciding whether to install it.
+    See [Writing for users](../style.md#writing-for-users).
+  - Keep the `@@inject` markers: a workflow fills them in after the PR lands.
 
 ## 6. Build and test
 
