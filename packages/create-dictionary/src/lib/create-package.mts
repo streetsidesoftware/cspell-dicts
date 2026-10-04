@@ -7,6 +7,9 @@ import type { Repo } from './repo.mts';
 import { hunspellPair, isHunspellFile } from './source.mts';
 import { fillTemplate, templateDir, templateFiles } from './template.mts';
 
+const additionalWordsFile = 'src/additional_words.txt';
+const excludeWordsFile = 'src/exclude_words.txt';
+
 /**
  * Write the new package from the templates and the source. Returns its directory.
  */
@@ -31,7 +34,13 @@ export function createPackage(answers: Settings, repo: Repo, cwd: string): strin
         packageName,
         fullPackageName: '@cspell/dict-' + packageName,
         srcFile: 'src/' + basename(first.file),
-        sources: answers.sources.map((source) => buildSource('src/' + basename(source.file))).join('\n      - '),
+        sources: [
+            ...answers.sources.map((source) => 'src/' + basename(source.file)),
+            ...(answers.additionalWords ? [additionalWordsFile] : []),
+        ]
+            .map(buildSource)
+            .join('\n      - '),
+        excludeWordsFrom: answers.excludeWords ? `['${excludeWordsFile}']` : '[]',
         dstFullFileName: dstFileName,
         format: useTrie ? 'trie3' : 'plaintext',
         generateNonStrict: useTrie ? 'true' : 'false',
@@ -56,6 +65,15 @@ export function createPackage(answers: Settings, repo: Repo, cwd: string): strin
         for (const copy of isHunspellFile(file) ? hunspellPair(file) : [file]) {
             copyFileSync(copy, created(join('src', basename(copy))));
         }
+    }
+    if (answers.additionalWords) {
+        write(additionalWordsFile, '# Words to add that the sources lack. One per line; see docs/word-lists.md.\n');
+    }
+    if (answers.excludeWords) {
+        write(
+            excludeWordsFile,
+            '# Words to leave out of the built dictionary. One per line; see docs/word-lists.md.\n',
+        );
     }
     write(dstFileName, '# dest');
 

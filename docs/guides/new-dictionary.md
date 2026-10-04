@@ -95,21 +95,22 @@ Run `pnpm create-dictionary --help` to list the options.
 
 Each field is described in [Create-dictionary options](#create-dictionary-options).
 
-| Field                               | Option                                 | Summary                                                 |
-| ----------------------------------- | -------------------------------------- | ------------------------------------------------------- |
-| [name](#name)                       | `<name>` or `--name`                   | The directory name, such as `en_AU` or `ruby`.          |
-| [friendly name](#friendly-name)     | `--friendly-name`                      | A readable name, such as `Australian English`.          |
-| [description](#description)         | `--description`                        | Required. The words it covers.                          |
-| [npm description](#npm-description) | `--package-description`                | The description npm shows.                              |
-| [contributors](#contributors)       | `--contributor`                        | The people who create and maintain this dictionary.     |
-| [keywords](#keywords)               | `--keyword`                            | Other names people search npm for, such as `golang`.    |
-| [source file](#source-file)         | `<path/to/source/words>` or `--source` | The word lists and Hunspell `.dic` files to build from. |
-| [missing source](#missing-source)   | `--allow-missing-source`               | Start with an empty word list.                          |
-| [locale](#locale)                   | `--locale`                             | The languages it's enabled for, such as `en-AU`.        |
-| [file type](#file-type)             | `--language-id`                        | The file types it's enabled for, such as `ruby`.        |
-| [store as trie](#store-as-trie)     | `--trie` or `--no-trie`                | Store it as a trie, for Hunspell files and large lists. |
-| [run build](#run-build)             | `--build` or `--no-build`              | Build it now.                                           |
-| [no questions](#no-questions)       | `--yes`                                | Use the defaults for anything not given, and never ask. |
+| Field                               | Option                                        | Summary                                                    |
+| ----------------------------------- | --------------------------------------------- | ---------------------------------------------------------- |
+| [name](#name)                       | `<name>` or `--name`                          | The directory name, such as `en_AU` or `ruby`.             |
+| [friendly name](#friendly-name)     | `--friendly-name`                             | A readable name, such as `Australian English`.             |
+| [description](#description)         | `--description`                               | Required. The words it covers.                             |
+| [npm description](#npm-description) | `--package-description`                       | The description npm shows.                                 |
+| [contributors](#contributors)       | `--contributor`                               | The people who create and maintain this dictionary.        |
+| [keywords](#keywords)               | `--keyword`                                   | Other names people search npm for, such as `golang`.       |
+| [source file](#source-file)         | `<path/to/source/words>` or `--source`        | The word lists and Hunspell `.dic` files to build from.    |
+| [missing source](#missing-source)   | `--allow-missing-source`                      | Start with an empty word list.                             |
+| [word files](#word-files)           | `--no-additional-words`, `--no-exclude-words` | Leave out the files for adding and removing words by hand. |
+| [locale](#locale)                   | `--locale`                                    | The languages it's enabled for, such as `en-AU`.           |
+| [file type](#file-type)             | `--language-id`                               | The file types it's enabled for, such as `ruby`.           |
+| [store as trie](#store-as-trie)     | `--trie` or `--no-trie`                       | Store it as a trie, for Hunspell files and large lists.    |
+| [run build](#run-build)             | `--build` or `--no-build`                     | Build it now.                                              |
+| [no questions](#no-questions)       | `--yes`                                       | Use the defaults for anything not given, and never ask.    |
 
 It creates `dictionaries/<name>/` with `version` `0.0.1-alpha.0` and `private: true`, so the dictionary isn't published. A
 maintainer makes it public once the dictionary has been verified.
@@ -273,6 +274,16 @@ each one.
   its own, so the others are still copied.
 - **When asking:** a missing file asks whether to create it empty instead.
 - It doesn't apply to Hunspell files, which must exist.
+
+#### Word files
+
+Every new dictionary gets two word lists in `src/`, for fixes by hand after it's built:
+
+- **`src/additional_words.txt`:** words the sources lack. It's built like any other source.
+- **`src/exclude_words.txt`:** words to leave out of the built dictionary, such as a wrong form from an upstream
+  source. The build lists it under `excludeWordsFrom`.
+
+`--no-additional-words` and `--no-exclude-words` leave them out. A source can't be named like either file.
 
 #### Locale
 

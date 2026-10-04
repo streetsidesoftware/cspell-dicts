@@ -20,6 +20,10 @@ export interface CommandLine {
     yes: boolean;
     /** Create an empty word list if the source is missing. */
     allowMissingSource: boolean;
+    /** Create src/additional_words.txt. */
+    additionalWords: boolean;
+    /** Create src/exclude_words.txt. */
+    excludeWords: boolean;
     /** The repo to create the dictionary in. */
     root?: string;
     /** Don't run `pnpm install` in the new dictionary. */
@@ -54,6 +58,8 @@ interface Options {
     trie?: boolean;
     build?: boolean;
     allowMissingSource?: boolean;
+    additionalWords?: boolean;
+    excludeWords?: boolean;
     root?: string;
     skipInstall?: boolean;
     yes?: boolean;
@@ -97,6 +103,8 @@ export function parseCommandLine(argv: string[]): CommandLine {
             '--allow-missing-source',
             'if the source is missing, create an empty word list (src/<name>.txt without --source); not for Hunspell files',
         )
+        .option('--no-additional-words', 'do not create src/additional_words.txt, for words the sources lack')
+        .option('--no-exclude-words', 'do not create src/exclude_words.txt, for words to leave out of the build')
         .option('--locale <locales>', 'locales, comma separated, such as "en,en-AU", or "*" for any; default: "*"')
         .option(
             '--language-id <ids>',
@@ -144,6 +152,8 @@ export function parseCommandLine(argv: string[]): CommandLine {
         answers,
         yes: !!opts.yes,
         allowMissingSource: !!opts.allowMissingSource,
+        additionalWords: opts.additionalWords !== false,
+        excludeWords: opts.excludeWords !== false,
         root: opts.root,
         skipInstall: !!opts.skipInstall,
     };

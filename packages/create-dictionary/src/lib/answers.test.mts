@@ -18,6 +18,7 @@ before(() => {
     writeFileSync(join(root, 'words.txt'), 'zorbal\n');
     writeFileSync(join(root, 'pair.dic'), '1\nzorbal\n');
     writeFileSync(join(root, 'pair.aff'), 'SET UTF-8\n');
+    writeFileSync(join(root, 'additional_words.txt'), 'zorbal\n');
     mkdirSync(join(root, 'sub'));
     writeFileSync(join(root, 'sub', 'words.txt'), 'quixly\n');
 });
@@ -29,6 +30,8 @@ function options(answers: Answers, more: Partial<CommandLine> = {}): CommandLine
         answers: { description: 'Test words', ...answers },
         yes: true,
         allowMissingSource: false,
+        additionalWords: true,
+        excludeWords: true,
         skipInstall: true,
         ...more,
     };
@@ -49,6 +52,8 @@ describe('getAnswers', () => {
             packageDescription: 'Medical Terms dictionary for cspell.',
             contributors: [],
             keywords: [],
+            additionalWords: true,
+            excludeWords: true,
             sources: [{ file: 'words.txt', empty: false }],
             locale: '*',
             languageId: 'markdown',
@@ -196,6 +201,13 @@ describe('getAnswers', () => {
                 root,
             ),
             /--keyword: "go,golang" has a comma/,
+        );
+    });
+
+    it('refuses a source named like a file it writes in src/', async () => {
+        await assert.rejects(
+            getAnswers(options({ name: 'clash', srcFiles: ['additional_words.txt'], languageId: 'ruby' }), repo, root),
+            /would both be copied to src\/additional_words\.txt/,
         );
     });
 
