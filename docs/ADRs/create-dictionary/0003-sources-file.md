@@ -17,19 +17,32 @@ and lists it in `files` so it's published:
 # Each source is copied into src/<name>/. See src/README.md.
 sources:
   - name: aoo
-    github: marcoagpinto/aoo-mozilla-en-dict
+    github: marcoagpinto/aoo-mozilla-en-dict/dicts/en_XX
     files:
-      - dicts/en_XX/en_XX.dic
-      - dicts/en_XX/en_XX.aff
-    license: LICENSE
-    readme: README.md
+      - en_XX.dic
+      - en_XX.aff
+    license:
+      path: ../../LICENSE
+      local: LICENSE
     url: https://github.com/marcoagpinto/aoo-mozilla-en-dict
+  - name: de
+    github: wooorm/dictionaries/dictionaries/de
+    files:
+      - index.dic
+      - index.aff
+    license: license
+    readme: readme.md
 ```
 
-- A remote source has `github` or `npm` for its kind and location, and optionally `ref`, `version`, and `max-size`
-  ([0010](./0010-remote-sources.md), [0011](./0011-how-the-sync-handles-change.md)).
-- A source with neither is local: its files exist only in `src/<name>/`, `url` says where it came from, and the sync
-  skips it. Where it was copied from on the contributor's machine isn't recorded; it means nothing to anyone else.
+- A remote source has `github: <owner>/<repo>[/<path>]` or `npm: <package>[/<path>]` for its kind and root, and
+  optionally `ref`, `version`, and `max-size` ([0010](./0010-remote-sources.md),
+  [0011](./0011-how-the-sync-handles-change.md)). The root is usually the folder that holds the dictionary.
+- `files:`, `license:`, and `readme:` are paths relative to the root. Each is a string when its local path in
+  `src/<name>/` is the same, and a mapping of `path` and `local` when it differs. A path starting with `../` is always a
+  mapping.
+- A source with neither is local: its files exist only in `src/<name>/`, and it lists only their local paths. `url` says
+  where it came from, and the sync skips it. Where it was copied from on the contributor's machine isn't recorded; it
+  means nothing to anyone else.
 - `files:` lists exact paths, never globs or folders.
 - There's no schema; tools report a clear error when something they need is missing.
 - People edit it; no tool rewrites it.

@@ -12,15 +12,15 @@ third-party source needs a copy that can be traced to where it came from, with i
 Each third-party source is defined with options that take one value each. Where a value needs a source name, the name
 comes first, followed by `=`:
 
-| Option                                              | What it does                                                 |
-| --------------------------------------------------- | ------------------------------------------------------------ |
-| `--define-source [<name>=]<path>`                   | a local source; the name defaults to the path's last segment |
-| `--define-source-npm [<name>=]<package>`            | a source from npm ([0010](./0010-remote-sources.md))         |
-| `--define-source-github [<name>=]<org/repo>`        | a source from GitHub ([0010](./0010-remote-sources.md))      |
-| `--add-source-file <name>[/<local-path>]=<path>`    | a word list or Hunspell file of the source, repeatable       |
-| `--add-source-license <name>[/<local-path>]=<path>` | the source's license                                         |
-| `--add-source-readme <name>[/<local-path>]=<path>`  | the source's README                                          |
-| `--add-source-url <name>=<url>`                     | where the source can be found                                |
+| Option                                                    | What it does                                                 |
+| --------------------------------------------------------- | ------------------------------------------------------------ |
+| `--define-source [<name>=]<path>`                         | a local source; the name defaults to the path's last segment |
+| `--define-source-npm [<name>=]<package>[/<path>]`         | a source from npm ([0010](./0010-remote-sources.md))         |
+| `--define-source-github [<name>=]<owner>/<repo>[/<path>]` | a source from GitHub ([0010](./0010-remote-sources.md))      |
+| `--add-source-file <name>[/<local-path>]=<path>`          | a word list or Hunspell file of the source, repeatable       |
+| `--add-source-license <name>[/<local-path>]=<path>`       | the source's license                                         |
+| `--add-source-readme <name>[/<local-path>]=<path>`        | the source's README                                          |
+| `--add-source-url <name>=<url>`                           | where the source can be found                                |
 
 ```sh
 pnpm create-dictionary en_XX \
@@ -33,9 +33,9 @@ pnpm create-dictionary en_XX \
 - **Folder:** each source is copied into `src/<name>/`, with only the files named for it. Where the source came from
   is recorded in the sources file ([0003](./0003-sources-file.md)), not in the folder.
 - **Local paths:** a file keeps its path relative to the source, so `aoo=dicts/en_XX/en_XX.dic` becomes
-  `src/aoo/dicts/en_XX/en_XX.dic`. An optional local path after the name puts it elsewhere in the folder:
-  `--add-source-file de/index.dic=dictionaries/de/index.dic` copies it to `src/de/index.dic`, and
-  `--add-source-license aoo/LICENSE=../../LICENSE` brings in a license kept above the source's files. A local path must
+  `src/aoo/dicts/en_XX/en_XX.dic`. An optional local path after the name puts it elsewhere in the folder: with
+  `--define-source-github aoo=marcoagpinto/aoo-mozilla-en-dict/dicts/en_XX`, `--add-source-license
+aoo/LICENSE=../../LICENSE` brings in the license kept at the repository's root as `src/aoo/LICENSE`. A local path must
   stay inside `src/<name>/`, and a path that leaves the source (`../`) needs one. A Hunspell file brings its pair, to
   the same local folder.
 - **Shortcut:** a positional Hunspell file defines a source: `pnpm create-dictionary en_XX vendor/en_XX.dic` defines a
