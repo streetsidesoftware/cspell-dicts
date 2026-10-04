@@ -14,7 +14,7 @@ level: comfortable with basic git and a terminal; doesn't read or write code
 How to add a new dictionary package. To change the words in an existing one, see [Word changes](./word-changes.md).
 
 A new package makes public promises from its first release: its package name, its dictionary IDs, and the files or
-locales it is turned on for all end up in users' configs. Settle those before building.
+locales it's enabled for all end up in users' configs. Settle those before building.
 
 ## Kinds of dictionaries
 
@@ -43,7 +43,7 @@ If an existing dictionary comes close, adding words to it may be the better chan
   `languageSettings`. Or leave it off, so users add it to `dictionaries` themselves.
   - A natural language dictionary sets the locale, such as `en-AU`, and leaves the file type as `*`.
   - Any other dictionary sets the file type, such as `ruby`, and leaves the locale as `*`.
-  - Not both `*`: that turns the dictionary on for every file in every language.
+  - Not both `*`: that enables the dictionary for every file in every language.
 - **Format:** plaintext, or a trie for large lists such as Hunspell dictionaries.
 
 Most new dictionaries don't need ADRs. Record the design as ADRs only when the dictionary takes a different approach
@@ -95,21 +95,21 @@ Run `pnpm create-dictionary --help` to list the options.
 
 Each field is described in [Create-dictionary options](#create-dictionary-options).
 
-| Field                               | Option                                 | Summary                                                     |
-| ----------------------------------- | -------------------------------------- | ----------------------------------------------------------- |
-| [name](#name)                       | `<name>` or `--name`                   | The directory name, such as `en_AU` or `ruby`.              |
-| [friendly name](#friendly-name)     | `--friendly-name`                      | A readable name, such as `Australian English`.              |
-| [description](#description)         | `--description`                        | Required. The words it covers.                              |
-| [npm description](#npm-description) | `--package-description`                | The description npm shows.                                  |
-| [contributors](#contributors)       | `--contributor`                        | The people who create and maintain this dictionary.         |
-| [keywords](#keywords)               | `--keyword`                            | Other names people search npm for, such as `golang`.        |
-| [source file](#source-file)         | `<path/to/source/words>` or `--source` | The word lists and Hunspell `.dic` files to build from.     |
-| [missing source](#missing-source)   | `--allow-missing-source`               | Start with an empty word list.                              |
-| [locale](#locale)                   | `--locale`                             | The languages that turn the dictionary on, such as `en-AU`. |
-| [file type](#file-type)             | `--language-id`                        | The file types that turn the dictionary on, such as `ruby`. |
-| [store as trie](#store-as-trie)     | `--trie` or `--no-trie`                | Store it as a trie, for Hunspell files and large lists.     |
-| [run build](#run-build)             | `--build` or `--no-build`              | Build it now.                                               |
-| [no questions](#no-questions)       | `--yes`                                | Use the defaults for anything not given, and never ask.     |
+| Field                               | Option                                 | Summary                                                 |
+| ----------------------------------- | -------------------------------------- | ------------------------------------------------------- |
+| [name](#name)                       | `<name>` or `--name`                   | The directory name, such as `en_AU` or `ruby`.          |
+| [friendly name](#friendly-name)     | `--friendly-name`                      | A readable name, such as `Australian English`.          |
+| [description](#description)         | `--description`                        | Required. The words it covers.                          |
+| [npm description](#npm-description) | `--package-description`                | The description npm shows.                              |
+| [contributors](#contributors)       | `--contributor`                        | The people who create and maintain this dictionary.     |
+| [keywords](#keywords)               | `--keyword`                            | Other names people search npm for, such as `golang`.    |
+| [source file](#source-file)         | `<path/to/source/words>` or `--source` | The word lists and Hunspell `.dic` files to build from. |
+| [missing source](#missing-source)   | `--allow-missing-source`               | Start with an empty word list.                          |
+| [locale](#locale)                   | `--locale`                             | The languages it's enabled for, such as `en-AU`.        |
+| [file type](#file-type)             | `--language-id`                        | The file types it's enabled for, such as `ruby`.        |
+| [store as trie](#store-as-trie)     | `--trie` or `--no-trie`                | Store it as a trie, for Hunspell files and large lists. |
+| [run build](#run-build)             | `--build` or `--no-build`              | Build it now.                                           |
+| [no questions](#no-questions)       | `--yes`                                | Use the defaults for anything not given, and never ask. |
 
 It creates `dictionaries/<name>/` with `version` `0.0.1-alpha.0` and `private: true`, so the dictionary isn't published. A
 maintainer makes it public once the dictionary has been verified.
@@ -276,7 +276,7 @@ each one.
 
 #### Locale
 
-`--locale`. The languages that turn the dictionary on.
+`--locale`. The languages the dictionary is enabled for.
 
 - **Values:** a language code with an optional region, such as `en` or `en-AU`. Separate several with commas:
   `en,en-AU`. `*` matches any language.
@@ -286,14 +286,14 @@ each one.
 
 #### File type
 
-`--language-id`. The file types that turn the dictionary on.
+`--language-id`. The file types the dictionary is enabled for.
 
 - **Values:** a VS Code language ID or file type, such as `java`, `cpp`, or `markdown`. Separate several with commas.
   `*` matches all file types. See [VS Code's language identifiers](https://code.visualstudio.com/docs/languages/identifiers).
 - **Sets:** `languageId` in `cspell-ext.json`'s `languageSettings`.
 - **Default:** `*`, unless the locale is `*` too. Then there's no default.
 - **When to use it:** for any dictionary that isn't a natural language. Leave the locale as `*`.
-- **Errors:** the locale and the file type are both `*`, which would turn the dictionary on for every file in every
+- **Errors:** the locale and the file type are both `*`, which would enable the dictionary for every file in every
   language.
 
 #### Store as trie

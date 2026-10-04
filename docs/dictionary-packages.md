@@ -136,7 +136,7 @@ list in its `cspell-ext.json` from its `dependencies`.
 `pnpm test` in the package runs its `test` script:
 
 - **`test:samples`:** spell checks `samples/` with the dictionary. This is the test that matters: it shows that the
-  dictionary turns on for its file types and that real files pass.
+  dictionary is enabled for its file types and that real files pass.
 - **`test:words`:** spell checks the start of the source. It's a stand-in while there are no samples yet.
 
 ## Older dictionaries

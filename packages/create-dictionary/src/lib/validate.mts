@@ -34,7 +34,7 @@ export function validateLanguageId(anyLocale: boolean): Validate {
     return (value) => {
         if (!value.trim()) return 'missing. Give a file type, such as ruby.';
         if (anyLocale && value.trim() === '*') {
-            return '"*" with a locale of "*" turns the dictionary on for every file. Set the locale for a natural language, or the file type for anything else.';
+            return '"*" with a locale of "*" enables the dictionary for every file. Set the locale for a natural language, or the file type for anything else.';
         }
         return true;
     };

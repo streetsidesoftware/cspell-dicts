@@ -32,7 +32,7 @@ Record the answers in the feature's `README.md` before the first decision.
 Before any option, list what cspell fixes and this repo can't change. Write them in the first ADR's Context. Check each
 one rather than assuming it.
 
-- How a package's `cspell-ext.json` is loaded (import, or bundled with cspell), and what that turns on without the user
+- How a package's `cspell-ext.json` is loaded (import, or bundled with cspell), and what that enables without the user
   doing anything.
 - How `languageSettings` matches `languageId` and `locale`, and how users turn dictionaries on and off.
 - What cspell-tools can build: formats, `split`, `allowedSplitWords`, `excludeWordsFrom`, Hunspell input.
@@ -45,7 +45,7 @@ one rather than assuming it.
   users write them in their configs.
 - **Renaming or splitting.** How do existing configs keep working? Is the old ID kept as an alias, and for how long?
 
-## 3. When it's on
+## 3. When it's enabled
 
 - For which file types (`languageId`) and locales (`locale`)?
 - Off by default, so users must add it to `dictionaries`? Or on for every file of a type?
@@ -79,4 +79,4 @@ one rather than assuming it.
 
 Not every answer needs its own ADR. Bundle answers from the same group when they only make sense read together (a
 package's name and its IDs). Split them when they can change independently later (a dictionary's IDs, and which file
-types turn it on).
+types it's enabled for).

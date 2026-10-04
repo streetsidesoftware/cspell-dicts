@@ -31,7 +31,7 @@ choice is hard to undo once it ships:
 
 - a new dictionary that takes a different approach from the [new-dictionary guide](../guides/new-dictionary.md), or
   needs scripts of its own beyond `pnpm create-dictionary`, the build, and a standard `sync` script
-- changing which file types or locales an existing dictionary is turned on for by default
+- changing which file types or locales an existing dictionary is enabled for by default
 - splitting, merging, or renaming dictionaries or dictionary IDs
 - switching a dictionary to a different upstream source, or a source with a different license
 - a change to shared build tooling that changes what dictionaries contain
@@ -49,7 +49,7 @@ Each feature has its own folder, named by a short kebab-case feature slug, for e
   each feature.
 
 Closely related decisions can share one ADR (a dictionary's name and its IDs). Decisions that can change separately get
-separate ADRs (a dictionary's IDs, and which file types turn it on).
+separate ADRs (a dictionary's IDs, and which file types it's enabled for).
 
 ## Status
 

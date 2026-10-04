@@ -94,7 +94,7 @@ In guides, give each step a heading and list its checks one per item.
 Follow [Commits and pull requests](docs/commits-and-pull-requests.md).
 
 - Release notes are read by cspell's maintainers and users. `feat:` and `fix:` are only for changes to what a
-  dictionary accepts, flags, or turns on.
+  dictionary accepts or flags, or when it's enabled.
 - Scope is the package directory under `dictionaries/`, such as `fix(en_US): …`.
 - Work on this repo's tooling, docs, or Claude Code setup is `chore:` or `docs:`.
 - After pushing more commits to an open PR, check that its description still matches.

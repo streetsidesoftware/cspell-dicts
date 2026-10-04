@@ -81,7 +81,7 @@ What this makes easier, what it makes harder, and what it rules out. Include con
 ## Context
 
 The background: how things are today and why, the constraints that apply (cspell's configuration rules, how
-dictionaries are turned on, existing dictionary IDs, upstream sources and licenses), and the facts that shaped the
+dictionaries are enabled, existing dictionary IDs, upstream sources and licenses), and the facts that shaped the
 choice, such as counts, measurements, examples, and approaches tried before. Keep anything that could change how someone
 would solve the problem.
 
