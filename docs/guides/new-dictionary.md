@@ -121,7 +121,8 @@ maintainer makes it public once the dictionary has been verified.
 `pnpm create-dictionary` created a working dictionary in `dictionaries/<name>/`:
 
 - **`src/`:** what it's built from: your word lists, `additional_words.txt` and `exclude_words.txt` for fixes by hand,
-  and a folder for each third-party source, recorded in `sources.yaml`.
+  and a folder for each third-party source. `sources.yaml` lists each source's files, its license and README, and its
+  URL, so anyone can tell where the words came from.
 - **`dict/`:** the built dictionary, made from `src/` by `pnpm run build`.
 - **`cspell-ext.json`:** what cspell loads: the dictionary's name, its description, and the languages or file types it's
   enabled for.
@@ -270,7 +271,8 @@ each one.
 #### Third-party sources
 
 `--define-source` and the `--add-source-*` options. Files that someone else maintains, such as a Hunspell dictionary or
-a word list from another project. Each is copied into its own folder, `src/<name>/`, and recorded in `src/sources.yaml`.
+a word list from another project. Each is copied into its own folder, `src/<name>/`. `src/sources.yaml` lists each
+source with its files, license, README, and URL, so anyone can tell where the words came from and under which terms.
 
 ```sh
 pnpm create-dictionary en_XX \
