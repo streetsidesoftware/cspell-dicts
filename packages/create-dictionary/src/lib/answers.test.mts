@@ -45,6 +45,7 @@ describe('getAnswers', () => {
             friendlyName: 'Medical Terms',
             description: 'Test words',
             packageDescription: 'Medical Terms dictionary for cspell.',
+            contributors: [],
             srcFile: 'words.txt',
             emptySource: false,
             locale: '*',
@@ -108,6 +109,31 @@ describe('getAnswers', () => {
                 root,
             ),
             /--description: missing/,
+        );
+    });
+
+    it('keeps the given contributors, trimmed', async () => {
+        const settings = await getAnswers(
+            options({
+                name: 'ruby',
+                contributors: [' Ana Lee (https://github.com/analee) ', 'Bo Chen <bo@example.com>'],
+                srcFile: 'words.txt',
+                languageId: 'ruby',
+            }),
+            repo,
+            root,
+        );
+        assert.deepEqual(settings.contributors, ['Ana Lee (https://github.com/analee)', 'Bo Chen <bo@example.com>']);
+    });
+
+    it("refuses a contributor that is not in npm's form", async () => {
+        await assert.rejects(
+            getAnswers(
+                options({ name: 'ruby', contributors: ['<bo@example.com>'], srcFile: 'words.txt', languageId: 'ruby' }),
+                repo,
+                root,
+            ),
+            /--contributor: "<bo@example\.com>" isn't "Name"/,
         );
     });
 

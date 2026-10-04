@@ -101,6 +101,7 @@ Each field is described in [Create-dictionary options](#create-dictionary-option
 | [friendly name](#friendly-name)     | `--friendly-name`                      | A readable name, such as `Australian English`.              |
 | [description](#description)         | `--description`                        | Required. The words it covers.                              |
 | [npm description](#npm-description) | `--package-description`                | The description npm shows.                                  |
+| [contributors](#contributors)       | `--contributor`                        | The people who create and maintain this dictionary.         |
 | [source file](#source-file)         | `<path/to/source/words>` or `--source` | The word list or Hunspell `.dic` file to build from.        |
 | [missing source](#missing-source)   | `--allow-missing-source`               | Start with an empty word list.                              |
 | [locale](#locale)                   | `--locale`                             | The languages that turn the dictionary on, such as `en-AU`. |
@@ -222,6 +223,18 @@ Each option answers one question. Without `--yes`, any option you leave out is a
   dictionary public.
 - **Default:** `<Friendly Name> dictionary for cspell.`, as most dictionaries on npm say. Change it only if npm should
   show something else.
+
+#### Contributors
+
+`--contributor`. Someone who creates or maintains this dictionary in this repository. Repeat it for each person.
+
+- **Values:** a name, optionally followed by an email in `<…>` and a web address in `(…)`, such as
+  `Ana Lee (https://github.com/analee)`. A GitHub profile is a good choice for the web address. `package.json` is
+  published, so anything given here is public.
+- **Sets:** `contributors` in `package.json`.
+- **Default:** none, so the list stays empty. When asking, the first answer is filled in with your Git name
+  (`git config user.name`), and an empty answer skips.
+- **Not for:** the authors of an upstream source. They're credited through the source's license and README.
 
 #### Source file
 

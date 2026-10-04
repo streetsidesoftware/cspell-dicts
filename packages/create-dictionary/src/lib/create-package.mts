@@ -42,7 +42,8 @@ export function createPackage(answers: Settings, repo: Repo, cwd: string): strin
     console.log('Creating ' + relative(rootDir, packageDir));
     for (const file of templateFiles) {
         const template = readFileSync(join(templateDir, file), 'utf8');
-        write(file, fillTemplate(template, values, extname(file)));
+        const content = fillTemplate(template, values, extname(file));
+        write(file, file === 'package.json' ? withContributors(content, answers.contributors) : content);
     }
     if (answers.emptySource) {
         write(values.srcFile, `# ${title(friendlyName)} Terms\n`);
@@ -54,6 +55,12 @@ export function createPackage(answers: Settings, repo: Repo, cwd: string): strin
     write(dstFileName, '# dest');
 
     return packageDir;
+
+    function withContributors(packageJson: string, contributors: string[]): string {
+        const pkg = JSON.parse(packageJson);
+        pkg.contributors = contributors;
+        return JSON.stringify(pkg, null, 2) + '\n';
+    }
 
     function created(file: string): string {
         const path = join(packageDir, file);

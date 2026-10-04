@@ -29,6 +29,7 @@ function settings(name: string, more: Partial<Settings>): Settings {
         friendlyName: 'Test',
         description: 'Test words',
         packageDescription: 'Test dictionary for cspell.',
+        contributors: [],
         srcFile: 'words.txt',
         emptySource: false,
         locale: '*',
@@ -60,6 +61,17 @@ describe('createPackage', () => {
         assert.equal(pkg.description, 'Test dictionary for cspell. -- Private until verified');
         assert.match(read(dir, 'cspell-ext.json'), /"locale": "en-XX"/);
         assert.match(read(dir, 'cspell-tools.config.yaml'), /filename: 'src\/words\.txt'/);
+    });
+
+    it('lists the contributors in package.json', () => {
+        const dir = createPackage(
+            settings('people', { contributors: ['Ana Lee (https://github.com/analee)'] }),
+            repo,
+            root,
+        );
+        const pkg = JSON.parse(read(dir, 'package.json'));
+        assert.deepEqual(pkg.contributors, ['Ana Lee (https://github.com/analee)']);
+        assert.match(read(dir, 'package.json'), /^\{\n {2}"name"/);
     });
 
     it('starts an empty word list for a missing source', () => {

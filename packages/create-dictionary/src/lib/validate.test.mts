@@ -5,7 +5,13 @@ import { join } from 'node:path';
 import { after, before, describe, it } from 'node:test';
 
 import type { Repo, TakenNames } from './repo.mts';
-import { nameValidator, sourceValidator, validateDescription, validateLanguageId } from './validate.mts';
+import {
+    nameValidator,
+    sourceValidator,
+    validateContributor,
+    validateDescription,
+    validateLanguageId,
+} from './validate.mts';
 
 let root = '';
 let repo: Repo;
@@ -72,6 +78,31 @@ describe('validateDescription', () => {
 
     it('accepts a description of the words', () => {
         assert.equal(validateDescription('Ruby keywords and standard library names'), true);
+    });
+});
+
+describe('validateContributor', () => {
+    it('accepts a name, with an optional <email> and (url)', () => {
+        for (const person of [
+            'Ana Lee',
+            'Ana Lee <ana@example.com>',
+            'Ana Lee (https://github.com/analee)',
+            'Ana Lee <ana@example.com> (https://github.com/analee)',
+            'Proxecto Trasno (https://trasno.gal)',
+        ]) {
+            assert.equal(validateContributor(person), true, person);
+        }
+    });
+
+    it('refuses a missing name, or parts out of order or unclosed', () => {
+        for (const person of [
+            '',
+            '<ana@example.com>',
+            'Ana Lee <ana@example.com',
+            'Ana (https://x.y) <ana@example.com>',
+        ]) {
+            assert.match(String(validateContributor(person)), /isn't "Name"/, person);
+        }
     });
 });
 

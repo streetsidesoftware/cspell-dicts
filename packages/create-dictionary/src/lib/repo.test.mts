@@ -1,10 +1,11 @@
 import assert from 'node:assert/strict';
+import { spawnSync } from 'node:child_process';
 import { mkdirSync, mkdtempSync, rmSync, writeFileSync } from 'node:fs';
 import { tmpdir } from 'node:os';
 import { join, parse } from 'node:path';
 import { after, before, describe, it } from 'node:test';
 
-import { findRepoRoot, openRepo, readTakenNames } from './repo.mts';
+import { findRepoRoot, gitUserName, openRepo, readTakenNames } from './repo.mts';
 
 let root = '';
 
@@ -31,6 +32,16 @@ describe('findRepoRoot', () => {
 
     it('fails when no folder above has .git', () => {
         assert.throws(() => findRepoRoot(parse(root).root), /no git repository found above/);
+    });
+});
+
+describe('gitUserName', () => {
+    it('reads user.name from git config', () => {
+        const dir = join(root, 'git-user');
+        mkdirSync(dir);
+        spawnSync('git', ['init', '-q'], { cwd: dir });
+        spawnSync('git', ['config', 'user.name', 'Ana Lee'], { cwd: dir });
+        assert.equal(gitUserName(dir), 'Ana Lee');
     });
 });
 

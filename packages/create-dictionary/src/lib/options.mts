@@ -5,6 +5,7 @@ export interface Answers {
     friendlyName?: string;
     description?: string;
     packageDescription?: string;
+    contributors?: string[];
     srcFile?: string;
     locale?: string;
     languageId?: string;
@@ -30,6 +31,7 @@ export const optionForAnswer: Record<keyof Answers, string> = {
     friendlyName: '--friendly-name',
     description: '--description',
     packageDescription: '--package-description',
+    contributors: '--contributor',
     srcFile: '<source>, --source, or --allow-missing-source',
     locale: '--locale',
     languageId: '--language-id',
@@ -42,6 +44,7 @@ interface Options {
     friendlyName?: string;
     description?: string;
     packageDescription?: string;
+    contributor?: string[];
     source?: string;
     locale?: string;
     languageId?: string;
@@ -71,6 +74,11 @@ export function parseCommandLine(argv: string[]): CommandLine {
         .option(
             '--package-description <text>',
             'the description npm shows; default: "<Friendly name> dictionary for cspell."',
+        )
+        .option(
+            '--contributor <person>',
+            'someone who created or maintains the dictionary: "Name", "Name <email>", or "Name (url)"; repeat it for several',
+            (value: string, previous: string[] = []) => [...previous, value],
         )
         .option('--source <file>', 'the .txt word list or Hunspell .dic file, copied to src/')
         .option(
@@ -111,6 +119,7 @@ export function parseCommandLine(argv: string[]): CommandLine {
         friendlyName: opts.friendlyName,
         description: opts.description,
         packageDescription: opts.packageDescription,
+        contributors: opts.contributor,
         srcFile: oneOf('source', sourceArg, opts.source),
         locale: opts.locale,
         languageId: opts.languageId,

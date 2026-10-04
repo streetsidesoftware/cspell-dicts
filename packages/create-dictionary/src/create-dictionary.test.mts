@@ -79,6 +79,7 @@ describe('help', () => {
             '--language-id',
             '--description',
             '--package-description',
+            '--contributor',
         ]) {
             assert.ok(result.stdout.includes(option), option);
         }
@@ -119,6 +120,21 @@ describe('a new package', () => {
         const ext = packageFile('plain', 'cspell-ext.json');
         assert.match(ext, /"languageId": "ruby"/);
         assert.match(ext, /"locale": "\*"/);
+    });
+
+    it('lists each --contributor in package.json, and none without one', () => {
+        const result = createYes(
+            'people',
+            'words.txt',
+            '--contributor',
+            'Ana Lee (https://github.com/analee)',
+            '--contributor',
+            'Bo Chen',
+        );
+        assert.equal(result.code, 0, result.stderr);
+        const pkg = JSON.parse(packageFile('people', 'package.json'));
+        assert.deepEqual(pkg.contributors, ['Ana Lee (https://github.com/analee)', 'Bo Chen']);
+        assert.deepEqual(JSON.parse(packageFile('plain', 'package.json')).contributors, []);
     });
 
     it('escapes values in JSON and YAML files', () => {

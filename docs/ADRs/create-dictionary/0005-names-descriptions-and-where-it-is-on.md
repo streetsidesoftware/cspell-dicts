@@ -1,4 +1,4 @@
-# 0005. The friendly name, the descriptions, and where a dictionary is turned on
+# 0005. The friendly name, the descriptions, the contributors, and where a dictionary is turned on
 
 Status: Accepted
 
@@ -18,6 +18,10 @@ file in every language. Maintainers fixed both by hand.
 - A dictionary sets `--locale` or `--language-id`, never both `*`. A natural language dictionary sets the locale, such
   as `en-AU`; any other sets the file type, such as `ruby`. With `--yes` one must be given; when prompting with the
   locale at `*`, the file type has no default and `*` is refused.
+- `--contributor "<Name> <email> (url)"`, repeatable and optional, lists the people who create and maintain the
+  dictionary in `package.json`'s `contributors`, as given. Only the name is required; an email goes in `<…>` and a URL
+  in `(…)`. When prompting, the generator asks for contributors in a loop; the first answer defaults to
+  `git config user.name`, without the email, and an empty answer skips. Without one, `contributors` stays empty.
 
 ## Consequences
 
@@ -43,7 +47,17 @@ A dictionary names and describes itself in several places:
   generator defaulted both to `*`, which turns a dictionary on for every file in every language, so users get its words
   wherever they spell check.
 
+Only 15 of 136 dictionaries list `contributors` in `package.json`; the template wrote an empty list. All 22 entries use
+npm's one-line form, `Name <email> (url)`, with the email and URL optional, such as `Ana Lee
+(https://github.com/analee)`. Some list a project rather than a person.
+
 ## Rejected approaches
+
+- Listing upstream authors as contributors: they're credited through their sources' licenses and READMEs, and the
+  README's Sources section.
+- Separate `--contributor-name`, `--contributor-email`, and `--contributor-url` options: awkward for more than one
+  person. Writing contributors as objects: unlike every dictionary that lists them.
+- Defaulting to `git config user.email` too: it's often a personal address, and `package.json` is published.
 
 - A better generated description: still generic, and repeated everywhere.
 - Keeping the default and leaving it to reviewers.

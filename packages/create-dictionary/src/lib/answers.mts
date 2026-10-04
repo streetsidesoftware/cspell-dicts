@@ -5,9 +5,16 @@ import { confirm, input } from '@inquirer/prompts';
 
 import { title, toFriendlyName } from './names.mts';
 import { type Answers, type CommandLine, optionForAnswer } from './options.mts';
-import { readTakenNames, type Repo } from './repo.mts';
+import { gitUserName, readTakenNames, type Repo } from './repo.mts';
 import { isHunspellFile } from './source.mts';
-import { nameValidator, sourceValidator, type Validate, validateDescription, validateLanguageId } from './validate.mts';
+import {
+    nameValidator,
+    sourceValidator,
+    type Validate,
+    validateContributor,
+    validateDescription,
+    validateLanguageId,
+} from './validate.mts';
 
 export type Settings = Required<Answers> & {
     /** The source is missing: start with an empty word list. */
@@ -38,6 +45,32 @@ export async function getAnswers(options: CommandLine, repo: Repo, cwd: string):
 
     async function yesNo(key: BooleanKey, message: string, def: boolean) {
         return given[key] ?? (noPrompts ? def : confirm({ message, default: def }));
+    }
+
+    async function contributors(): Promise<string[]> {
+        const list = given.contributors;
+        if (list !== undefined) {
+            for (const person of list) {
+                const valid = validateContributor(person);
+                if (valid !== true) throw new Error(`${optionForAnswer.contributors}: ${valid}`);
+            }
+            return list.map((person) => person.trim());
+        }
+        if (noPrompts) return [];
+        const asked: string[] = [];
+        let def = gitUserName(cwd);
+        for (;;) {
+            const person = await input({
+                message:
+                    'Contributor: "Name", "Name <email>", or "Name (url)", such as a GitHub profile; empty to skip',
+                default: def,
+                validate: (value) => !value.trim() || validateContributor(value),
+            });
+            if (!person.trim()) return asked;
+            asked.push(person.trim());
+            def = undefined;
+            if (!(await confirm({ message: 'Add another contributor?', default: false }))) return asked;
+        }
     }
 
     async function source(name: string): Promise<{ srcFile: string; emptySource: boolean }> {
@@ -96,6 +129,7 @@ export async function getAnswers(options: CommandLine, repo: Repo, cwd: string):
         'Description on npm',
         title(friendlyName) + ' dictionary for cspell.',
     );
+    const people = await contributors();
     const { srcFile, emptySource } = await source(name);
     const locale = await text(
         'locale',
@@ -122,6 +156,7 @@ export async function getAnswers(options: CommandLine, repo: Repo, cwd: string):
         friendlyName,
         description,
         packageDescription,
+        contributors: people,
         srcFile,
         emptySource,
         locale,

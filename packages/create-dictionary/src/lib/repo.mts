@@ -1,3 +1,4 @@
+import { spawnSync } from 'node:child_process';
 import { existsSync, readdirSync, readFileSync } from 'node:fs';
 import { dirname, join, resolve } from 'node:path';
 import { pathToFileURL } from 'node:url';
@@ -16,6 +17,12 @@ export function openRepo(rootDir: string): Repo {
     const dictionariesDir = join(rootDir, 'dictionaries');
     if (!existsSync(dictionariesDir)) throw new Error(`no dictionaries folder in ${rootDir}`);
     return { rootDir, dictionariesDir };
+}
+
+/** `git config user.name`, or `undefined` when it isn't set. */
+export function gitUserName(cwd: string): string | undefined {
+    const result = spawnSync('git', ['config', 'user.name'], { cwd, encoding: 'utf8' });
+    return result.status === 0 ? result.stdout.trim() || undefined : undefined;
 }
 
 /**
