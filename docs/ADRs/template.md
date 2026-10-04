@@ -63,19 +63,29 @@ Name the file with a kebab-case slug, for example `0001-tools-get-their-own-id.m
 
 Status: Proposed | Accepted | Superseded by [NNNN](./NNNN-slug.md)
 
-## Context
+## Why
 
-What makes this decision necessary? What constraints apply (cspell's configuration rules, how dictionaries are turned
-on, existing dictionary IDs, upstream sources and licenses)? What are the real options being weighed?
+One to three sentences: the feature goal this decision serves, and the problem it solves.
 
 ## Decision
 
-The choice that was made, stated plainly ("We will ..."), not a summary of the discussion.
+The choice that was made, stated plainly, not a summary of the discussion. Precise enough that someone can build it.
 
 ## Consequences
 
 What this makes easier, what it makes harder, and what it rules out. Include concrete effects, for example: "the
 `software-tools` ID becomes public as soon as it ships, so renaming it later breaks users' configs".
+
+## Context
+
+The background: how things are today and why, the constraints that apply (cspell's configuration rules, how
+dictionaries are turned on, existing dictionary IDs, upstream sources and licenses), and the facts that shaped the
+choice, such as counts, measurements, examples, and approaches tried before. Keep anything that could change how someone
+would solve the problem.
+
+## Rejected approaches
+
+- <Approach>: <why it wasn't chosen, in one line.>
 ```
 
 ## Archived `docs/ADRs/<feature>/README.md`
