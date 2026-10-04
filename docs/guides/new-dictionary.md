@@ -38,7 +38,7 @@ If an existing dictionary comes close, adding words to it may be the better chan
 
 - **Directory name:** a short name, such as `ruby` or `en_AU`. The package name is derived from it:
   `@cspell/dict-<name>`, lowercase, with other characters replaced by `-` (`en_AU` becomes `@cspell/dict-en-au`).
-- **Dictionary IDs:** usually the same name. A package can define more than one.
+- **Dictionary IDs:** usually the same name. A dictionary package can define more than one.
 - **Locale and file type:** which files cspell uses the dictionary for, set by `locale` and `languageId` in
   `languageSettings`. Or leave it off, so users add it to `dictionaries` themselves.
   - A natural language dictionary sets the locale, such as `en-AU`, and leaves the file type as `*`.
@@ -53,14 +53,14 @@ from this guide, or needs scripts of its own beyond `pnpm create-dictionary`, th
 ## 3. Check the sources and their license
 
 - Where do the words come from? Your own list, a project's documentation, or an upstream word list?
-- What is the source's license? The package's `license` field and `LICENSE` must allow it, and upstream license files
-  are published with the package (added to `files`). `pnpm create-dictionary` writes an MIT `LICENSE`: change it if the source
+- What is the source's license? The dictionary package's `license` field and `LICENSE` must allow it, and upstream license
+  files are published with it (added to `files`). `pnpm create-dictionary` writes an MIT `LICENSE`: change it if the source
   requires.
 - If the license is missing or unclear, stop and ask the maintainers in an issue before going further.
 
-For an upstream word list, also read [Upstream updates](./upstream-updates.md): the package gets a `sync` script.
+For an upstream word list, also read [Upstream updates](./upstream-updates.md): the dictionary gets a `sync` script.
 
-## 4. Create the package
+## 4. Create the dictionary
 
 Check the [prerequisites](../repository.md#prerequisites). Then, from the repo root:
 
@@ -112,7 +112,7 @@ Each field is described in [Create-dictionary options](#create-dictionary-option
 It creates `dictionaries/<name>/` with `version` `0.0.1-alpha.0` and `private: true`, so the dictionary isn't published. A
 maintainer makes it public once the dictionary has been verified.
 
-## 5. Fill in the package
+## 5. Fill in the dictionary
 
 - **`src/`:** the word lists, formatted as in [Word lists](../word-lists.md#format).
 - **`cspell-tools.config.yaml`:** the targets and their sources. Set `split` and `allowedSplitWords` for lists of
@@ -129,7 +129,7 @@ maintainer makes it public once the dictionary has been verified.
 
 ## 6. Build and test
 
-In the package:
+In the dictionary's directory:
 
 ```sh
 pnpm run build
@@ -150,7 +150,7 @@ Checks:
 
 ## 7. Try it with cspell
 
-From the package directory, link the dictionary into your global cspell config:
+From the dictionary's directory, link the dictionary into your global cspell config:
 
 ```sh
 pnpm exec cspell link add ./cspell-ext.json

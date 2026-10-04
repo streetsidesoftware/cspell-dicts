@@ -18,9 +18,9 @@ export interface CommandLine {
     yes: boolean;
     /** Create an empty word list if the source is missing. */
     allowMissingSource: boolean;
-    /** The repo to create the package in. */
+    /** The repo to create the dictionary in. */
     root?: string;
-    /** Don't run `pnpm install` in the new package. */
+    /** Don't run `pnpm install` in the new dictionary. */
     skipInstall: boolean;
 }
 
@@ -60,9 +60,9 @@ export function parseCommandLine(argv: string[]): CommandLine {
             'Create a dictionary package in dictionaries/<name>/.\n' +
                 'It prompts for anything not given as an option. With --yes, it uses the defaults instead and never prompts.',
         )
-        .argument('[name]', 'the package directory name, such as en_AU or ruby (same as --name)')
+        .argument('[name]', 'the directory name for the dictionary, such as en_AU or ruby (same as --name)')
         .argument('[sources...]', 'the source word lists or Hunspell .dic files (same as --source)')
-        .option('--name <name>', 'the package directory name, such as en_AU or ruby')
+        .option('--name <name>', 'the directory name for the dictionary, such as en_AU or ruby')
         .option('--friendly-name <text>', 'a readable name, such as "Australian English"; default: from the name')
         .option(
             '--description <text>',
@@ -91,8 +91,8 @@ export function parseCommandLine(argv: string[]): CommandLine {
         .option('--build', 'build the dictionary after creating it; default for existing Hunspell sources')
         .option('--no-build', 'do not build it')
         // For the tests; see the package's README.
-        .addOption(new Option('--root <dir>', 'the repo to create the package in').hideHelp())
-        .addOption(new Option('--skip-install', 'do not run pnpm install in the new package').hideHelp())
+        .addOption(new Option('--root <dir>', 'the repo to create the dictionary in').hideHelp())
+        .addOption(new Option('--skip-install', 'do not run pnpm install in the new dictionary').hideHelp())
         .option('-y, --yes', 'use the defaults for anything not given, and never prompt')
         .addHelpText(
             'after',
