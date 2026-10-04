@@ -117,7 +117,9 @@ We will:
   `sources.yaml`.
 - **Cap a synced file at 30 MB.** A file over the cap keeps its old copy and is noted once in the state file and the
   weekly PR, as a file gone upstream is. An optional `max-size` on a source in `sources.yaml` raises the cap for a
-  dictionary that really is that big.
+  dictionary that really is that big. At creation there's no old copy to keep, so a file over the cap stops creation,
+  with an error naming the file and its size and saying to raise the cap with `--add-source-max-size <name>=<size>`.
+  When prompting, the generator asks whether to raise it.
 - **Fetch every remote source before writing anything** at creation. If one fails, creation stops, and the error names
   the source and what failed: unreachable, not found, a missing file, or no token. For a missing token it says how to
   get one: `gh auth login`, or set `GITHUB_TOKEN`. The token is found the way `sync-github-files` finds it.

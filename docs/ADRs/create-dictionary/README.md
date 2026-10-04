@@ -86,6 +86,8 @@ That's the end state. It ships in stages, each usable on its own:
 ## Provisional names
 
 - `--add-source-ref`: the option that pins a GitHub source to a tag or commit. Decide with the rest of the sync stage.
+- `--add-source-max-size` and `max-size`: the option and the `sources.yaml` key that raise a source's 30 MB cap, and the
+  format of the size. Decide with the rest of the sync stage.
 - `sources.yaml`: the sources file. Decide before building the sync stage.
 - The generic sync command's name. Decide before building the sync stage.
 - The npm sources' state file, the counterpart of `.sync-github-files.json`. Decide before building the sync stage.
