@@ -1,6 +1,6 @@
 ---
 name: feature-adr
-description: 'Designs a cspell-dicts change that has more than one reasonable answer through a structured interview, recording each decision as an ADR under docs/ADRs/<feature>/ and keeping the glossaries current. Covers new dictionaries that take a different approach or need scripts of their own, which file types or locales enable a dictionary, splitting, merging, or renaming dictionaries or dictionary IDs, switching an upstream source, and tooling changes that change what dictionaries contain. Use when the user wants to design, spec out, or plan such a change before building it, is unsure how an edge case should behave, or asks for an ADR, a design doc, or to "figure out the details", even without saying "ADR". Also changes a merged design, or archives a shipped one. Not for word changes, bug fixes, refactors, dependency updates, or fully specified changes.'
+description: 'Designs a cspell-dicts change that has more than one reasonable answer through a structured interview, recording each decision as an ADR under docs/ADRs/<feature>/ and keeping the glossaries current. Covers which file types or locales enable a dictionary, splitting, merging, or renaming dictionaries or dictionary IDs, switching an upstream source, and tooling changes that change what dictionaries contain. Use when the user wants to design, spec out, or plan such a change before building it, is unsure how an edge case should behave, or asks for an ADR, a design doc, or to "figure out the details", even without saying "ADR". Also changes a merged design, or archives a shipped one. For a new dictionary, use new-dictionary, which runs this interview itself. Not for word changes, bug fixes, refactors, dependency updates, or fully specified changes.'
 ---
 
 # feature-adr
@@ -37,7 +37,8 @@ Keep the design out of the user's checkout, so it never sits as uncommitted chan
   ```
 
 - **Do:**
-  - With neither, create both from an up-to-date `origin/main`. This is local and reversible, so no need to ask:
+  - With neither, create both from an up-to-date `origin/main`, in the main checkout: the first path that
+    `git worktree list` prints. This is local and reversible, so no need to ask:
 
     ```sh
     git fetch origin main
@@ -45,7 +46,8 @@ Keep the design out of the user's checkout, so it never sits as uncommitted chan
     ```
 
   - With the branch but no worktree, attach it: the same command without `-b`.
-  - When the session was given a branch to work on, such as in a cloud session, use it and skip the worktree.
+  - When the user or the environment named a branch for this work, such as in a cloud session, use it and skip the
+    worktree. A session's own unrelated branch doesn't count.
 - **Stop and ask** before pushing. As soon as anything outside the session refers to the design, such as another
   session, a spawned task, or an issue, suggest a draft PR, so there's a trail.
 
@@ -54,16 +56,18 @@ Keep the design out of the user's checkout, so it never sits as uncommitted chan
 Start the feature's files, and learn the terms and facts the options depend on.
 
 - **Do:**
-  - Add the feature's row to the Features table, and create its `README.md` from `docs/ADRs/template.md`.
   - Read `docs/glossary.md` and `docs/ADRs/glossary.md`, and reuse their terms.
   - Read `docs/dictionary-packages.md` and `docs/repository.md`, for sources shared between dictionaries and for
     generated files.
+  - Add the feature's row to the Features table, with the status `Designing`, and create its `README.md` from
+    `docs/ADRs/template.md`.
 
 ### 5. Interview, starting with why
 
 Know why the feature exists before deciding anything, then decide one thing at a time.
 
-- **Ask** first, and write the answers in the feature's `README.md`:
+- **Ask** these first, as open questions, and write the answers in the feature's `README.md`. Commit it, with the
+  Features row, before the first ADR:
   - What problem prompted this, and why now? Ask "why?" of each answer until the underlying reason is clear.
   - Who are the stakeholders, and how is each affected?
   - What does success look like, and what's out of scope?
@@ -87,8 +91,12 @@ Keep the design's history in commits, not in the user's memory.
 
 - **Do:**
   - Write the ADR by the README's layout and statuses, and add its row to the feature's `README.md`.
-  - Commit both together, one commit per ADR change, such as `docs: split-software-tools ADR 0002, tools get their own
-ID`.
+  - Commit both together, one commit per ADR change, such as:
+
+    ```text
+    docs: split-software-tools ADR 0002, tools get their own ID
+    ```
+
 - **Check** the existing files first, in case this resumes an earlier session.
 
 ### 7. Keep the glossaries current
