@@ -9,7 +9,8 @@ level: knows the repo's dictionaries and conventions; comfortable with git and P
 > [!NOTE]
 > For maintainers and developers settling a design before building it.
 
-An Architecture Decision Record (ADR) records one design decision: the situation, the choice, and its consequences.
+An Architecture Decision Record (ADR) records one design decision: why it's needed, the choice, its consequences, and
+the context and rejected approaches behind it.
 ADRs are for decisions where a reasonable person could have chosen differently. Ideas that haven't been decided yet
 belong in an issue instead.
 
@@ -81,7 +82,8 @@ When the design is final, rewrite the feature's ADRs into the smallest set that 
 
 - Remove superseded ADRs, and any whose content a later one absorbed.
 - Merge ADRs that only refine each other.
-- Write each ADR as the current decision, with no revision history. Rejected alternatives stay, briefly, in Context.
+- Write each ADR as the current decision, with no revision history of the discussion. Keep the background in Context,
+  including approaches tried before, and list rejected approaches briefly.
 - Renumber from `0001`, mark everything `Accepted`, and update the index.
 
 The working history stays in the branch and the PR.
