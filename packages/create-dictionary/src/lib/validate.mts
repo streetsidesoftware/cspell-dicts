@@ -3,7 +3,7 @@ import { join, resolve } from 'node:path';
 
 import { toPackageName } from './names.mts';
 import type { Repo, TakenNames } from './repo.mts';
-import { hunspellPair, isHunspellFile } from './source.mts';
+import { hunspellPair, isHunspellFile } from './hunspell.mts';
 
 /** A message saying what's wrong, or `true`. */
 export type Validate = (value: string) => string | true;

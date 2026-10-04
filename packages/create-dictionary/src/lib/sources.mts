@@ -1,16 +1,22 @@
 import { existsSync, statSync } from 'node:fs';
-import { basename, extname, posix, resolve } from 'node:path';
+import { basename, dirname, extname, posix, resolve } from 'node:path';
 
-import { hunspellPair, isHunspellFile } from './source.mts';
+import { hunspellPair, isHunspellFile } from './hunspell.mts';
 
-/** A file of a third-party source: its path in the source, and its path in `src/<name>/`. */
+/** A file of a source: its path in the source, and its path in the source's folder in `src/`. */
 export interface SourceFile {
     path: string;
     local: string;
+    /** The file is missing: start with an empty word list. */
+    empty?: boolean;
 }
 
-export interface ThirdPartySource {
-    name: string;
+/**
+ * Files to build the dictionary from. A named source is copied into `src/<name>/` and listed in `src/sources.yaml`.
+ * A word list given on its own has no name, and is copied into `src/`, where people edit it.
+ */
+export interface Source {
+    name?: string;
     /** The source's folder on this machine. Never recorded. */
     root: string;
     files: SourceFile[];
@@ -20,7 +26,7 @@ export interface ThirdPartySource {
 }
 
 /** The `--define-source` and `--add-source-*` options, as given. */
-export interface ThirdPartyOptions {
+export interface SourceOptions {
     defineSource: string[];
     addSourceFile: string[];
     addSourceLicense: string[];
@@ -28,7 +34,7 @@ export interface ThirdPartyOptions {
     addSourceUrl: string[];
 }
 
-export const noThirdParty: ThirdPartyOptions = {
+export const noSourceOptions: SourceOptions = {
     defineSource: [],
     addSourceFile: [],
     addSourceLicense: [],
@@ -39,10 +45,12 @@ export const noThirdParty: ThirdPartyOptions = {
 const namePattern = /^[\w-]+$/;
 
 /**
- * The third-party sources defined by the options, with every file checked. Paths are relative to `cwd`.
+ * The named sources: those already given, such as `hunspell`, then those defined by the options, with every file
+ * checked. Paths are relative to `cwd`.
  */
-export function parseThirdParty(options: ThirdPartyOptions, cwd: string): ThirdPartySource[] {
-    const sources = new Map<string, ThirdPartySource>();
+export function parseSources(options: SourceOptions, cwd: string, given: Source[] = []): Source[] {
+    const sources = new Map<string, Source>();
+    for (const source of given) if (source.name) addSource(sources, { ...source, name: source.name });
     for (const value of options.defineSource) {
         const at = value.indexOf('=');
         const path = at < 0 ? value : value.slice(at + 1);
@@ -88,33 +96,38 @@ export function parseThirdParty(options: ThirdPartyOptions, cwd: string): ThirdP
     return [...sources.values()];
 }
 
-/**
- * A Hunspell file given as a dictionary source: a third-party source named after the file, from its folder.
- */
-export function hunspellShortcut(file: string, cwd: string): ThirdPartySource {
-    const path = resolve(cwd, file);
-    const dic = basename(hunspellPair(path)[0]);
-    const name = dic.slice(0, -extname(dic).length);
-    if (!namePattern.test(name)) {
-        throw new Error(`${file}: "${name}" can't name a source. Use --define-source <name>=<folder> instead.`);
-    }
-    const files = hunspellPair(dic).map((f) => ({ path: f, local: f }));
-    return { name, root: resolve(path, '..'), files };
+/** A word list given on its own: a source with no name, copied into `src/`. */
+export function wordList(file: string, cwd: string, empty: boolean): Source {
+    return { root: cwd, files: [{ path: file, local: basename(file), empty }] };
 }
 
-/** Adds a source, refusing a bad or repeated name. */
-export function addSource(sources: Map<string, ThirdPartySource>, source: ThirdPartySource): void {
+/**
+ * A Hunspell file given on its own: the source `hunspell`, with its pair, so people don't edit it by hand.
+ */
+export function hunspellFile(file: string, cwd: string): Source {
+    const files = hunspellPair(basename(file)).map((f) => ({ path: f, local: f }));
+    return { name: 'hunspell', root: dirname(resolve(cwd, file)), files };
+}
+
+/** The source's folder in the dictionary, such as `src/hunspell/`. */
+export function srcDir(source: Source): string {
+    return source.name ? `src/${source.name}/` : 'src/';
+}
+
+/** Adds a named source, refusing a bad or repeated name. */
+export function addSource(sources: Map<string, Source>, source: Source & { name: string }): void {
     if (!namePattern.test(source.name)) {
         throw new Error(`"${source.name}" can't name a source: use letters, digits, "_", and "-".`);
     }
     if (sources.has(source.name)) {
-        throw new Error(`two sources are named ${source.name}. Name one with --define-source <name>=<path>.`);
+        throw new Error(`two sources are named ${source.name}. Name one with --define-source <name>=<folder>.`);
     }
     sources.set(source.name, source);
 }
 
-/** What's missing from a source that should be recorded. */
-export function sourceWarnings(source: ThirdPartySource): string[] {
+/** What's missing from a named source that should be recorded. */
+export function sourceWarnings(source: Source): string[] {
+    if (!source.name) return [];
     const missing = [
         source.license ? '' : 'license (--add-source-license)',
         source.readme ? '' : 'README (--add-source-readme)',
@@ -124,24 +137,24 @@ export function sourceWarnings(source: ThirdPartySource): string[] {
 }
 
 /** The files of a source the build reads, from the dictionary's folder. */
-export function buildFiles(source: ThirdPartySource): string[] {
-    return source.files.filter((f) => extname(f.path) !== '.aff').map((f) => `src/${source.name}/${f.local}`);
+export function buildFiles(source: Source): string[] {
+    return source.files.filter((f) => extname(f.path) !== '.aff').map((f) => srcDir(source) + f.local);
 }
 
 /** The files of a source published with the dictionary: its license and README. */
-export function publishedFiles(source: ThirdPartySource): string[] {
-    return [source.license, source.readme].filter((f) => !!f).map((f) => `src/${source.name}/${f.local}`);
+export function publishedFiles(source: Source): string[] {
+    return [source.license, source.readme].filter((f) => !!f).map((f) => srcDir(source) + f.local);
 }
 
 /** Every file to copy, from where it is on this machine to its path in the dictionary's folder. */
-export function copies(source: ThirdPartySource): { from: string; to: string }[] {
+export function copies(source: Source): { from: string; to: string }[] {
     return [...source.files, source.license, source.readme]
-        .filter((f) => !!f)
-        .map((f) => ({ from: resolve(source.root, f.path), to: `src/${source.name}/${f.local}` }));
+        .filter((f): f is SourceFile => !!f && !f.empty)
+        .map((f) => ({ from: resolve(source.root, f.path), to: srcDir(source) + f.local }));
 }
 
-/** `src/sources.yaml` for local sources: each lists only its local paths. */
-export function sourcesYaml(sources: ThirdPartySource[]): string {
+/** `src/sources.yaml`: each named source, with only its local paths. */
+export function sourcesYaml(sources: Source[]): string {
     const quote = (s: string) => `'${s.replaceAll("'", "''")}'`;
     const lines = [
         '# The sources of this dictionary.',
@@ -149,6 +162,7 @@ export function sourcesYaml(sources: ThirdPartySource[]): string {
         'sources:',
     ];
     for (const source of sources) {
+        if (!source.name) continue;
         lines.push(`  - name: ${quote(source.name)}`, '    files:');
         for (const f of source.files) lines.push(`      - ${quote(f.local)}`);
         if (source.license) lines.push(`    license: ${quote(source.license.local)}`);
@@ -158,7 +172,7 @@ export function sourcesYaml(sources: ThirdPartySource[]): string {
     return lines.join('\n') + '\n';
 }
 
-function reference(option: string, value: string, sources: Map<string, ThirdPartySource>) {
+function reference(option: string, value: string, sources: Map<string, Source>) {
     const at = value.indexOf('=');
     if (at < 0) throw new Error(`${option}: "${value}" needs <name>=<value>.`);
     const left = value.slice(0, at);
@@ -169,7 +183,7 @@ function reference(option: string, value: string, sources: Map<string, ThirdPart
     return { source, local: slash < 0 ? undefined : left.slice(slash + 1), path: value.slice(at + 1) };
 }
 
-function sourceFile(source: ThirdPartySource, path: string, local: string | undefined): SourceFile {
+function sourceFile(source: Source, path: string, local: string | undefined): SourceFile {
     const rel = posix.normalize(path.replaceAll('\\', '/'));
     if (rel.startsWith('../') && local === undefined) {
         throw new Error(
@@ -183,7 +197,7 @@ function sourceFile(source: ThirdPartySource, path: string, local: string | unde
     return { path: rel, local: loc };
 }
 
-function checkExists(source: ThirdPartySource, path: string): void {
+function checkExists(source: Source, path: string): void {
     if (!existsSync(resolve(source.root, path))) {
         throw new Error(`the source ${source.name} has no ${path}.`);
     }

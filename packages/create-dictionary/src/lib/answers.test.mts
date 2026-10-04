@@ -7,7 +7,7 @@ import { after, before, describe, it } from 'node:test';
 import { getAnswers } from './answers.mts';
 import type { Answers, CommandLine } from './options.mts';
 import type { Repo } from './repo.mts';
-import { noThirdParty } from './third-party.mts';
+import { noSourceOptions, wordList } from './sources.mts';
 
 let root = '';
 let repo: Repo;
@@ -31,7 +31,7 @@ function options(answers: Answers, more: Partial<CommandLine> = {}): CommandLine
         answers: { description: 'Test words', ...answers },
         yes: true,
         allowMissingSource: false,
-        thirdParty: noThirdParty,
+        sourceOptions: noSourceOptions,
         additionalWords: true,
         excludeWords: true,
         skipInstall: true,
@@ -54,10 +54,9 @@ describe('getAnswers', () => {
             packageDescription: 'Medical Terms dictionary for cspell.',
             contributors: [],
             keywords: [],
-            thirdParty: [],
             additionalWords: true,
             excludeWords: true,
-            sources: [{ file: 'words.txt', empty: false }],
+            sources: [wordList('words.txt', root, false)],
             locale: '*',
             languageId: 'markdown',
             useTrie: false,
@@ -87,7 +86,7 @@ describe('getAnswers', () => {
             repo,
             root,
         );
-        assert.deepEqual(settings.sources, [{ file: 'ruby.txt', empty: true }]);
+        assert.deepEqual(settings.sources, [wordList('ruby.txt', root, true)]);
     });
 
     it('marks a missing source as empty with --allow-missing-source', async () => {
@@ -96,7 +95,7 @@ describe('getAnswers', () => {
             repo,
             root,
         );
-        assert.deepEqual(settings.sources, [{ file: 'nope.txt', empty: true }]);
+        assert.deepEqual(settings.sources, [wordList('nope.txt', root, true)]);
     });
 
     it('combines several sources, mixing word lists and Hunspell files', async () => {
@@ -105,10 +104,12 @@ describe('getAnswers', () => {
             repo,
             root,
         );
-        assert.deepEqual(settings.sources, [{ file: 'words.txt', empty: false }]);
         assert.deepEqual(
-            settings.thirdParty.map((s) => [s.name, s.files.map((f) => f.local)]),
-            [['pair', ['pair.dic', 'pair.aff']]],
+            settings.sources.map((s) => [s.name, s.files.map((f) => f.local)]),
+            [
+                [undefined, ['words.txt']],
+                ['hunspell', ['pair.dic', 'pair.aff']],
+            ],
         );
         assert.equal(settings.useTrie, true);
     });
@@ -119,8 +120,10 @@ describe('getAnswers', () => {
             repo,
             root,
         );
-        assert.deepEqual(settings.sources, []);
-        assert.equal(settings.thirdParty.length, 1);
+        assert.deepEqual(
+            settings.sources.map((s) => s.name),
+            ['hunspell'],
+        );
     });
 
     it('refuses two sources copied to the same file', async () => {

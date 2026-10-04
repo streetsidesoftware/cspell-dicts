@@ -1,12 +1,12 @@
 import { copyFileSync, mkdirSync, readFileSync, writeFileSync } from 'node:fs';
-import { basename, dirname, extname, join, relative, resolve } from 'node:path';
+import { dirname, extname, join, relative } from 'node:path';
 
 import type { Settings } from './answers.mts';
 import { title, toPackageName } from './names.mts';
 import type { Repo } from './repo.mts';
-import { isHunspellFile } from './source.mts';
+import { isHunspellFile } from './hunspell.mts';
 import { fillTemplate, templateDir, templateFiles } from './template.mts';
-import { buildFiles, copies, publishedFiles, sourcesYaml } from './third-party.mts';
+import { buildFiles, copies, publishedFiles, sourcesYaml, srcDir } from './sources.mts';
 
 const additionalWordsFile = 'src/additional_words.txt';
 const excludeWordsFile = 'src/exclude_words.txt';
@@ -14,18 +14,14 @@ const excludeWordsFile = 'src/exclude_words.txt';
 /**
  * Write the new package from the templates and the source. Returns its directory.
  */
-export function createPackage(answers: Settings, repo: Repo, cwd: string): string {
+export function createPackage(answers: Settings, repo: Repo): string {
     const { name, friendlyName, useTrie } = answers;
     const { rootDir } = repo;
     const packageDir = join(repo.dictionariesDir, name);
     const packageName = toPackageName(name);
     const dstFileName = `dict/${packageName}.${useTrie ? 'trie' : 'txt'}`;
 
-    const built = [
-        ...answers.sources.map((source) => 'src/' + basename(source.file)),
-        ...answers.thirdParty.flatMap(buildFiles),
-        ...(answers.additionalWords ? [additionalWordsFile] : []),
-    ];
+    const built = [...answers.sources.flatMap(buildFiles), ...(answers.additionalWords ? [additionalWordsFile] : [])];
     // The test script reads the first source until samples replace it.
     const first = built[0];
 
@@ -57,14 +53,12 @@ export function createPackage(answers: Settings, repo: Repo, cwd: string): strin
         write(file, file === 'package.json' ? withPeopleAndKeywords(content) : content);
     }
     for (const source of answers.sources) {
-        if (source.empty) {
-            write(join('src', basename(source.file)), `# ${title(friendlyName)} Terms\n`);
-            continue;
+        for (const file of source.files) {
+            if (file.empty) write(srcDir(source) + file.local, `# ${title(friendlyName)} Terms\n`);
         }
-        copyFileSync(resolve(cwd, source.file), created(join('src', basename(source.file))));
     }
-    for (const { from, to } of answers.thirdParty.flatMap(copies)) copyFileSync(from, created(to));
-    if (answers.thirdParty.length) write('src/sources.yaml', sourcesYaml(answers.thirdParty));
+    for (const { from, to } of answers.sources.flatMap(copies)) copyFileSync(from, created(to));
+    if (answers.sources.some((source) => source.name)) write('src/sources.yaml', sourcesYaml(answers.sources));
     if (answers.additionalWords) {
         write(additionalWordsFile, '# Words to add that the sources lack. One per line; see docs/word-lists.md.\n');
     }
@@ -83,7 +77,7 @@ export function createPackage(answers: Settings, repo: Repo, cwd: string): strin
         const pkg = JSON.parse(packageJson);
         pkg.contributors = answers.contributors;
         pkg.keywords = [...new Set([...pkg.keywords, ...answers.keywords])];
-        pkg.files = [...pkg.files, ...answers.thirdParty.flatMap(publishedFiles)];
+        pkg.files = [...pkg.files, ...answers.sources.flatMap(publishedFiles)];
         return JSON.stringify(pkg, null, 2) + '\n';
     }
 

@@ -16,7 +16,7 @@ added by hand afterwards.
 - Sources are given positionally, as repeated `--source`, or both, and are combined:
   `pnpm create-dictionary ruby ruby.txt gems.txt`.
 - Word lists and Hunspell files can be mixed. A `.dic` and `.aff` with the same base name are one source, whichever is
-  given. A word list is the contributor's own, copied into `src/`. A Hunspell file is a third-party source
+  given. A word list is a source with no name, copied into `src/`. A Hunspell file is the source `hunspell`
   ([0002](./0002-third-party-sources.md)).
 - A missing source is an error. `--allow-missing-source` starts empty instead: an empty `src/<name>.txt` when no source
   is given, or an empty file under the given name when a named source doesn't exist. When prompting, a missing file asks

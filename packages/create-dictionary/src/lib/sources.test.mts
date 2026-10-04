@@ -5,12 +5,15 @@ import { join } from 'node:path';
 import { after, before, describe, it } from 'node:test';
 
 import {
-    hunspellShortcut,
-    noThirdParty,
-    parseThirdParty,
+    buildFiles,
+    copies,
+    hunspellFile,
+    noSourceOptions,
+    parseSources,
+    type SourceOptions,
     sourcesYaml,
-    type ThirdPartyOptions,
-} from './third-party.mts';
+    wordList,
+} from './sources.mts';
 
 let root = '';
 
@@ -25,11 +28,11 @@ before(() => {
 
 after(() => rmSync(root, { recursive: true, force: true }));
 
-function parse(more: Partial<ThirdPartyOptions>) {
-    return parseThirdParty({ ...noThirdParty, ...more }, root);
+function parse(more: Partial<SourceOptions>) {
+    return parseSources({ ...noSourceOptions, ...more }, root);
 }
 
-describe('parseThirdParty', () => {
+describe('parseSources', () => {
     it('names a source after its folder, and keeps paths relative to it', () => {
         const [source] = parse({ defineSource: ['aoo'], addSourceFile: ['aoo=terms.txt'] });
         assert.equal(source.name, 'aoo');
@@ -74,27 +77,58 @@ describe('parseThirdParty', () => {
     });
 });
 
-describe('hunspellShortcut', () => {
-    it('names the source after the .dic file, from its folder', () => {
-        const source = hunspellShortcut('aoo/dicts/en_XX/en_XX.aff', root);
-        assert.equal(source.name, 'en_XX');
+describe('wordList', () => {
+    it('has no name, so it is copied into src/ and built from there', () => {
+        const source = wordList('aoo/terms.txt', root, false);
+        assert.equal(source.name, undefined);
+        assert.deepEqual(buildFiles(source), ['src/terms.txt']);
+        assert.deepEqual(copies(source), [{ from: join(root, 'aoo', 'terms.txt'), to: 'src/terms.txt' }]);
+    });
+
+    it('copies nothing when it starts empty', () => {
+        assert.deepEqual(copies(wordList('nope.txt', root, true)), []);
+    });
+});
+
+describe('hunspellFile', () => {
+    it('is the source hunspell, with its pair, so it is kept out of the way in src/hunspell/', () => {
+        const source = hunspellFile('aoo/dicts/en_XX/en_XX.aff', root);
+        assert.equal(source.name, 'hunspell');
         assert.deepEqual(
             source.files.map((f) => f.local),
             ['en_XX.dic', 'en_XX.aff'],
         );
+        assert.deepEqual(buildFiles(source), ['src/hunspell/en_XX.dic']);
+    });
+
+    it('takes a license like any named source', () => {
+        const given = hunspellFile('aoo/dicts/en_XX/en_XX.dic', root);
+        const [source] = parseSources(
+            { ...noSourceOptions, addSourceLicense: ['hunspell/LICENSE=../../../LICENSE'] },
+            root,
+            [given],
+        );
+        assert.deepEqual(source.license, { path: '../../../LICENSE', local: 'LICENSE' });
+    });
+
+    it('refuses a second Hunspell file given on its own', () => {
+        const given = [hunspellFile('aoo/dicts/en_XX/en_XX.dic', root), hunspellFile('other/xx.dic', root)];
+        assert.throws(() => parseSources(noSourceOptions, root, given), /two sources are named hunspell/);
     });
 });
 
 describe('sourcesYaml', () => {
     it('records only local paths, never where the source was on this machine', () => {
-        const yaml = sourcesYaml(
-            parse({
+        const yaml = sourcesYaml([
+            ...parse({
                 defineSource: ['aoo'],
                 addSourceFile: ['aoo=terms.txt'],
                 addSourceUrl: ['aoo=https://example.com'],
             }),
-        );
+            wordList('aoo/terms.txt', root, false),
+        ]);
         assert.match(yaml, /- name: 'aoo'\n {4}files:\n {6}- 'terms\.txt'\n {4}url: 'https:\/\/example\.com'/);
         assert.doesNotMatch(yaml, new RegExp(root.replaceAll('\\', '\\\\')));
+        assert.equal(yaml.match(/- name:/g)?.length, 1);
     });
 });

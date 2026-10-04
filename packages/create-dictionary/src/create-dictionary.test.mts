@@ -170,10 +170,10 @@ describe('a new package', () => {
     it('copies both files of a Hunspell source and stores it as a trie', () => {
         const result = createYes('hunspell', 'pair.dic');
         assert.equal(result.code, 0, result.stderr);
-        assert.ok(existsSync(join(root, 'dictionaries', 'hunspell', 'src', 'pair', 'pair.dic')));
-        assert.ok(existsSync(join(root, 'dictionaries', 'hunspell', 'src', 'pair', 'pair.aff')));
-        assert.match(packageFile('hunspell', 'src/sources.yaml'), /name: 'pair'/);
-        assert.match(result.stderr, /warning: the source pair has no license/);
+        assert.ok(existsSync(join(root, 'dictionaries', 'hunspell', 'src', 'hunspell', 'pair.dic')));
+        assert.ok(existsSync(join(root, 'dictionaries', 'hunspell', 'src', 'hunspell', 'pair.aff')));
+        assert.match(packageFile('hunspell', 'src/sources.yaml'), /name: 'hunspell'/);
+        assert.match(result.stderr, /warning: the source hunspell has no license/);
         assert.match(packageFile('hunspell', 'cspell-tools.config.yaml'), /format: 'trie3'/);
     });
 });
@@ -258,12 +258,12 @@ describe('several sources', () => {
     it('are combined from positional arguments and --source', () => {
         const result = createYes('several', 'words.txt', '--source', 'pair.aff', '--source', 'more.txt');
         assert.equal(result.code, 0, result.stderr);
-        for (const file of ['src/words.txt', 'src/pair/pair.dic', 'src/pair/pair.aff', 'src/more.txt']) {
+        for (const file of ['src/words.txt', 'src/hunspell/pair.dic', 'src/hunspell/pair.aff', 'src/more.txt']) {
             assert.ok(existsSync(join(root, 'dictionaries', 'several', file)), file);
         }
         const config = packageFile('several', 'cspell-tools.config.yaml');
         assert.match(config, /filename: 'src\/words\.txt'/);
-        assert.match(config, /filename: 'src\/pair\/pair\.dic'/);
+        assert.match(config, /filename: 'src\/hunspell\/pair\.dic'/);
         assert.match(config, /filename: 'src\/more\.txt'/);
         assert.match(config, /format: 'trie3'/);
     });
@@ -271,7 +271,7 @@ describe('several sources', () => {
     it('build a Hunspell source from its .dic file when only the .aff file is given', () => {
         const result = createYes('affonly', 'pair.aff');
         assert.equal(result.code, 0, result.stderr);
-        assert.match(packageFile('affonly', 'cspell-tools.config.yaml'), /filename: 'src\/pair\/pair\.dic'/);
+        assert.match(packageFile('affonly', 'cspell-tools.config.yaml'), /filename: 'src\/hunspell\/pair\.dic'/);
     });
 
     it('include a third-party source defined with options', () => {

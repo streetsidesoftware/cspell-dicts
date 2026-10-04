@@ -1,6 +1,6 @@
 import { Command, Option } from 'commander';
 
-import type { ThirdPartyOptions } from './third-party.mts';
+import type { SourceOptions } from './sources.mts';
 
 export interface Answers {
     name?: string;
@@ -22,8 +22,8 @@ export interface CommandLine {
     yes: boolean;
     /** Create an empty word list if the source is missing. */
     allowMissingSource: boolean;
-    /** The third-party sources, as given. */
-    thirdParty: ThirdPartyOptions;
+    /** The --define-source and --add-source-* options, as given. */
+    sourceOptions: SourceOptions;
     /** Create src/additional_words.txt. */
     additionalWords: boolean;
     /** Create src/exclude_words.txt. */
@@ -186,7 +186,7 @@ export function parseCommandLine(argv: string[]): CommandLine {
         answers,
         yes: !!opts.yes,
         allowMissingSource: !!opts.allowMissingSource,
-        thirdParty: {
+        sourceOptions: {
             defineSource: opts.defineSource ?? [],
             addSourceFile: opts.addSourceFile ?? [],
             addSourceLicense: opts.addSourceLicense ?? [],

@@ -6,15 +6,16 @@ import { confirm, input } from '@inquirer/prompts';
 import { title, toFriendlyName } from './names.mts';
 import { type Answers, type CommandLine, optionForAnswer } from './options.mts';
 import { gitUserName, readTakenNames, type Repo } from './repo.mts';
-import { isHunspellFile } from './source.mts';
+import { isHunspellFile } from './hunspell.mts';
 import {
-    addSource,
-    hunspellShortcut,
-    parseThirdParty,
+    hunspellFile,
+    parseSources,
+    type Source,
+    type SourceOptions,
     sourceWarnings,
-    type ThirdPartyOptions,
-    type ThirdPartySource,
-} from './third-party.mts';
+    srcDir,
+    wordList,
+} from './sources.mts';
 import {
     nameValidator,
     sourceValidator,
@@ -25,18 +26,8 @@ import {
     validateLanguageId,
 } from './validate.mts';
 
-export interface Source {
-    /** The path as given, relative to where the command runs; a Hunspell source is its .dic file. */
-    file: string;
-    /** The file is missing: start with an empty word list. */
-    empty: boolean;
-}
-
 export type Settings = Omit<Required<Answers>, 'srcFiles'> & {
-    /** The dictionary's own word lists, copied into src/. */
     sources: Source[];
-    /** Sources someone else maintains, each copied into src/<name>/. */
-    thirdParty: ThirdPartySource[];
     additionalWords: boolean;
     excludeWords: boolean;
 };
@@ -112,50 +103,52 @@ export async function getAnswers(options: CommandLine, repo: Repo, cwd: string):
             .filter((word) => word);
     }
 
-    /** The word lists, and the Hunspell files given as sources, which become third-party sources. */
-    async function sources(name: string): Promise<{ lists: Source[]; shortcuts: ThirdPartySource[] }> {
+    /** The sources given on their own: word lists, and Hunspell files. */
+    async function givenSources(name: string): Promise<Source[]> {
         const files = given.srcFiles;
         if (files === undefined && noPrompts) {
-            if (options.thirdParty.defineSource.length) return { lists: [], shortcuts: [] };
+            if (options.sourceOptions.defineSource.length) return [];
             if (!allowMissingSource) {
                 throw new Error(
                     'missing source. Give <source> or --source, or --allow-missing-source to start with an empty word list.',
                 );
             }
-            return { lists: [{ file: name + '.txt', empty: true }], shortcuts: [] };
+            return [wordList(name + '.txt', cwd, true)];
         }
-        const lists: Source[] = [];
-        const shortcuts: ThirdPartySource[] = [];
+        const list: Source[] = [];
         if (files === undefined) {
-            lists.push(...(await askSource(name + '.txt', shortcuts)));
+            list.push(await askSource(name + '.txt'));
             while (await confirm({ message: 'Add another source file?', default: false })) {
-                lists.push(...(await askSource(undefined, shortcuts)));
+                list.push(await askSource(undefined));
             }
-            return { lists: checkCopies(lists), shortcuts };
+            return list;
         }
         for (const file of files) {
             const valid = validateSource(file);
             if (valid !== true) throw new Error(valid);
-            if (isHunspellFile(file)) addShortcut(shortcuts, hunspellShortcut(file, cwd));
-            else lists.push(givenSource(file));
+            list.push(isHunspellFile(file) ? hunspellFile(file, cwd) : givenWordList(file));
         }
-        return { lists: checkCopies(lists), shortcuts };
+        return list;
     }
 
-    /** The third-party sources from the options, then from the prompts. */
-    async function thirdParty(shortcuts: ThirdPartySource[]): Promise<ThirdPartySource[]> {
-        const all: ThirdPartyOptions = structuredClone(options.thirdParty);
-        if (!noPrompts) await askThirdParty(all);
-        const byName = new Map<string, ThirdPartySource>();
-        for (const source of [...shortcuts, ...parseThirdParty(all, cwd)]) addSource(byName, source);
-        for (const source of byName.values()) {
+    /** The sources given on their own, then those defined by the options and the prompts. */
+    async function allSources(name: string): Promise<Source[]> {
+        const all: SourceOptions = structuredClone(options.sourceOptions);
+        const plain = await givenSources(name);
+        if (!noPrompts) await askDefined(all);
+        const named: Source[] = [];
+        for (const source of plain) {
+            if (source.name && !named.some((other) => isSameSource(other, source))) named.push(source);
+        }
+        const sources = checkCopies([...plain.filter((s) => !s.name), ...parseSources(all, cwd, named)]);
+        for (const source of sources) {
             for (const warning of sourceWarnings(source)) console.warn('warning: ' + warning);
         }
-        return [...byName.values()];
+        return sources;
     }
 
-    /** Asks for third-party sources, as the options would give them. */
-    async function askThirdParty(all: ThirdPartyOptions): Promise<void> {
+    /** Asks for named sources, as the options would give them. */
+    async function askDefined(all: SourceOptions): Promise<void> {
         const isFolder = (v: string) => {
             const path = resolve(cwd, v);
             return (existsSync(path) && statSync(path).isDirectory()) || `${v} isn't a folder.`;
@@ -182,51 +175,45 @@ export async function getAnswers(options: CommandLine, repo: Repo, cwd: string):
         }
     }
 
-    function givenSource(file: string): Source {
-        const valid = validateSource(file);
-        if (valid !== true) throw new Error(valid);
+    function givenWordList(file: string): Source {
         const found = existsSync(resolve(cwd, file));
         if (!found && !allowMissingSource) {
             throw new Error(`${file} not found. Give --allow-missing-source to start with an empty word list.`);
         }
-        return { file, empty: !found };
+        return wordList(file, cwd, !found);
     }
 
-    async function askSource(def: string | undefined, shortcuts: ThirdPartySource[]): Promise<Source[]> {
+    async function askSource(def: string | undefined): Promise<Source> {
         for (;;) {
             const typed = await input({ message: 'Source file', default: def, validate: validateSource });
-            if (isHunspellFile(typed)) {
-                addShortcut(shortcuts, hunspellShortcut(typed, cwd));
-                return [];
-            }
-            if (existsSync(resolve(cwd, typed))) return [{ file: typed, empty: false }];
+            if (isHunspellFile(typed)) return hunspellFile(typed, cwd);
+            if (existsSync(resolve(cwd, typed))) return wordList(typed, cwd, false);
             const message = `${typed} not found. Create an empty src/${basename(typed)}?`;
-            if (allowMissingSource || (await confirm({ message, default: true }))) {
-                return [{ file: typed, empty: true }];
-            }
+            if (allowMissingSource || (await confirm({ message, default: true }))) return wordList(typed, cwd, true);
         }
     }
 
     /** A Hunspell pair given as both its .dic and its .aff is one source. */
-    function addShortcut(shortcuts: ThirdPartySource[], source: ThirdPartySource): void {
-        if (!shortcuts.some((s) => s.name === source.name && s.root === source.root)) shortcuts.push(source);
+    function isSameSource(a: Source, b: Source): boolean {
+        return a.root === b.root && a.files[0]?.path === b.files[0]?.path;
     }
 
-    /** Drop a word list given twice, and refuse two copied to the same file in src/. */
+    /** Drop a file given twice, and refuse two copied to the same path. */
     function checkCopies(list: Source[]): Source[] {
-        const bySource = new Map(list.map((source) => [resolve(cwd, source.file), source]));
+        const bySource = new Map(list.map((source) => [resolve(source.root, source.files[0]?.path ?? ''), source]));
         // The files create-dictionary writes in src/ itself.
-        const copies = new Map<string, string>([['README.md', 'src/README.md']]);
-        if (options.additionalWords) copies.set('additional_words.txt', 'src/additional_words.txt');
-        if (options.excludeWords) copies.set('exclude_words.txt', 'src/exclude_words.txt');
-        for (const { file } of bySource.values()) {
-            const other = copies.get(basename(file));
-            if (other !== undefined) {
-                throw new Error(
-                    `${other} and ${file} would both be copied to src/${basename(file)}. Rename one of them.`,
-                );
+        const copies = new Map<string, string>([['src/README.md', 'src/README.md']]);
+        if (options.additionalWords) copies.set('src/additional_words.txt', 'src/additional_words.txt');
+        if (options.excludeWords) copies.set('src/exclude_words.txt', 'src/exclude_words.txt');
+        for (const source of bySource.values()) {
+            for (const file of source.files) {
+                const to = srcDir(source) + file.local;
+                const other = copies.get(to);
+                if (other !== undefined) {
+                    throw new Error(`${other} and ${file.path} would both be copied to ${to}. Rename one of them.`);
+                }
+                copies.set(to, file.path);
             }
-            copies.set(basename(file), file);
         }
         return [...bySource.values()];
     }
@@ -256,8 +243,7 @@ export async function getAnswers(options: CommandLine, repo: Repo, cwd: string):
     );
     const people = await contributors();
     const searchWords = await keywords();
-    const { lists, shortcuts } = await sources(name);
-    const others = await thirdParty(shortcuts);
+    const sources = await allSources(name);
     const locale = await text(
         'locale',
         'Language locale, example: "en,en-US" for English and English US, "fr" for French, or use "*" for programming language dictionaries.',
@@ -270,7 +256,7 @@ export async function getAnswers(options: CommandLine, repo: Repo, cwd: string):
         anyLocale && !noPrompts ? undefined : '*',
         validateLanguageId(anyLocale),
     );
-    const isHunspell = others.some((source) => source.files.some((f) => isHunspellFile(f.path)));
+    const isHunspell = sources.some((source) => source.files.some((f) => isHunspellFile(f.path)));
     const useTrie = await yesNo(
         'useTrie',
         'Store as Trie: Mainly used for natural language dictionaries to store their large sizes.',
@@ -285,8 +271,7 @@ export async function getAnswers(options: CommandLine, repo: Repo, cwd: string):
         packageDescription,
         contributors: people,
         keywords: searchWords,
-        sources: lists,
-        thirdParty: others,
+        sources,
         additionalWords: options.additionalWords,
         excludeWords: options.excludeWords,
         locale,
