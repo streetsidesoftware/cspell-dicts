@@ -1,7 +1,7 @@
 import { statSync } from 'node:fs';
 import { basename, resolve } from 'node:path';
 
-import { confirm, input, select } from '@inquirer/prompts';
+import { checkbox, confirm, input } from '@inquirer/prompts';
 
 import { title, toFriendlyName } from './names.mts';
 import { type Answers, type CommandLine, optionForAnswer } from './options.mts';
@@ -221,8 +221,9 @@ export async function getAnswers(options: CommandLine, repo: Repo, cwd: string):
                     name: `${locale}: ${ownName ? `${ownName}, ${name}` : name}`,
                     value: locale,
                 }));
-                choices.push({ name: `Keep "${item}"`, value: item });
-                items.push(await select({ message: `"${item}" isn't a locale. Which one did you mean?`, choices }));
+                const message = `"${item}" isn't a locale. Pick the ones you meant (none keeps "${item}"):`;
+                const picked = await checkbox({ message, choices });
+                items.push(...(picked.length ? picked : [item]));
             }
             locale = items.join(',');
         }
@@ -338,7 +339,7 @@ export async function getAnswers(options: CommandLine, repo: Repo, cwd: string):
     const locale = await checkedLocale(
         await text(
             'locale',
-            'Locale, the natural languages it is for, such as "en-US" or "fr", or a name such as "English"; "*" for any:',
+            'Locales, the natural languages it is for, comma separated, such as "en,en-US", or names such as "English"; "*" for any:',
             '*',
         ),
     );
