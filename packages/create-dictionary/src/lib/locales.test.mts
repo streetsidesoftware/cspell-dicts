@@ -28,6 +28,11 @@ describe('findLocales', () => {
         );
     });
 
+    it('finds names in the language of this machine too', () => {
+        const english = findLocales('Englisch', 'de-DE').find(({ locale }) => locale === 'en');
+        assert.deepEqual(english, { locale: 'en', name: 'English', ownName: 'Englisch' });
+    });
+
     it('uses current codes, such as he for Hebrew rather than iw', () => {
         assert.deepEqual(
             findLocales('hebrew').map(({ locale }) => locale),

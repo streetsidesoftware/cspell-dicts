@@ -217,7 +217,10 @@ export async function getAnswers(options: CommandLine, repo: Repo, cwd: string):
                     items.push(item);
                     continue;
                 }
-                const choices = matches.map(({ locale, name }) => ({ name: `${locale}: ${name}`, value: locale }));
+                const choices = matches.map(({ locale, name, ownName }) => ({
+                    name: `${locale}: ${ownName ? `${ownName}, ${name}` : name}`,
+                    value: locale,
+                }));
                 choices.push({ name: `Keep "${item}"`, value: item });
                 items.push(await select({ message: `"${item}" isn't a locale. Which one did you mean?`, choices }));
             }

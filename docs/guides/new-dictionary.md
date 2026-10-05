@@ -417,9 +417,9 @@ pnpm create-dictionary en_AU --locale en-AU
 Give a language code, with an optional region, such as `en` or `en-AU`. Separate several with commas. Without it, the
 locale is `*`, which matches any language.
 
-Don't know the code? Type the language's name instead, such as "English". When the command asks, it lists the locales
-that name could mean, such as `en` (English) and `en-AU` (Australian English), and you pick one. Given as an option, an
-unknown locale is kept, with a warning that lists them.
+Don't know the code? Type the language's name instead, such as "English", in English or in your computer's language.
+When the command asks, it lists the locales that name could mean, such as `en` (English) and `en-AU` (Australian
+English), and you pick one. Given as an option, an unknown locale is kept, with a warning that lists them.
 
 #### File type
 
