@@ -416,8 +416,8 @@ export async function getAnswers(options: CommandLine, repo: Repo, cwd: string):
     if (!noPrompts) {
         header(
             'Create a dictionary for cspell',
-            `The dictionary is created in a new folder in ${literal('dictionaries/')}, once we have the information it needs.`,
-            `To gather it, we'll ask you a series of short questions, grouped into ${sectionCount} sections.`,
+            `The dictionary is created in a new folder in ${literal('dictionaries/')}.`,
+            `To gather the information it needs, we'll ask you a series of short questions, grouped into ${sectionCount} sections.`,
             '',
             `Most questions have a default answer in ${asDefault('(parentheses)')}. Press ${key('Enter')} to accept it.`,
             '',
