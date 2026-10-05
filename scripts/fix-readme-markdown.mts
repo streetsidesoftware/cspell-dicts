@@ -18,7 +18,7 @@ async function run() {
                 await fs.writeFile(readmeFile, updatedContent, 'utf8');
             }
         } catch (err) {
-            console.error(`Failed to update ${fileURLToPath(readmeFile)}:`, err);
+            console.error('Failed to update %s:', fileURLToPath(readmeFile), err);
         }
     }
 }
