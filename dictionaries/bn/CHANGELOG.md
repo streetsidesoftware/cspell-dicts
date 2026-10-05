@@ -1,5 +1,12 @@
 # Change Log
 
+## [1.0.5](https://github.com/streetsidesoftware/cspell-dicts/compare/@cspell/dict-bn@1.0.4...@cspell/dict-bn@1.0.5) (2026-10-05)
+
+
+### Updates and Bug Fixes
+
+* use the unmodified GPL-3.0 and LGPL-3.0 license text ([#5874](https://github.com/streetsidesoftware/cspell-dicts/issues/5874)) ([8806309](https://github.com/streetsidesoftware/cspell-dicts/commit/8806309b8c376b6bbd0a99020889d1585eb32597))
+
 ## [1.0.4](https://github.com/streetsidesoftware/cspell-dicts/compare/@cspell/dict-bn@1.0.3...@cspell/dict-bn@1.0.4) (2025-10-22)
 
 

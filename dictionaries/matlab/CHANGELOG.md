@@ -1,5 +1,12 @@
 # Changelog
 
+## [1.0.1](https://github.com/streetsidesoftware/cspell-dicts/compare/@cspell/dict-matlab@1.0.0...@cspell/dict-matlab@1.0.1) (2026-10-05)
+
+
+### Updates and Bug Fixes
+
+* Update README.md ([#5828](https://github.com/streetsidesoftware/cspell-dicts/issues/5828)) ([6622728](https://github.com/streetsidesoftware/cspell-dicts/commit/6622728be17f82b1752aa6f20b7385efc148a94b))
+
 ## [1.0.0](https://github.com/streetsidesoftware/cspell-dicts/compare/@cspell/dict-matlab@0.0.1-alpha.0...@cspell/dict-matlab@1.0.0) (2026-10-02)
 
 
