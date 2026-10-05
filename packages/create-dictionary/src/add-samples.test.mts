@@ -44,10 +44,10 @@ describe('add-samples', () => {
         const result = addSamples(dir, '--add-sample', '../hello.rb', '--add-sample-origin', 'hello.rb=a test');
         assert.equal(result.code, 0, result.stderr);
         assert.equal(readFileSync(join(dir, 'samples', 'hello.rb'), 'utf8'), 'puts zorbal\n');
-        assert.equal(
-            readFileSync(join(dir, 'samples', 'README.md'), 'utf8'),
-            '# Ruby Samples\n- `hello.rb`: a test.\n',
-        );
+        const csv = readFileSync(join(dir, 'samples', 'sample-sources.csv'), 'utf8');
+        assert.match(csv, /^\[hello\.rb\]\(\.\/hello\.rb\),a test,/m);
+        const readme = readFileSync(join(dir, 'samples', 'README.md'), 'utf8');
+        assert.match(readme, /\| \[hello\.rb\]\(\.\/hello\.rb\) +\| a test +\|/);
         assert.match(result.stdout, /Run pnpm test to check them\./);
     });
 

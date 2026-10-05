@@ -1,11 +1,20 @@
+import { spawnSync } from 'node:child_process';
 import { appendFileSync, existsSync, mkdirSync, readdirSync, readFileSync, writeFileSync } from 'node:fs';
 import { basename, join, relative } from 'node:path';
-import { pathToFileURL } from 'node:url';
+import { fileURLToPath, pathToFileURL } from 'node:url';
 
 import { readConfigFile } from 'cspell-lib';
 
 import { created } from './output.mts';
-import { readmeLine, type Sample, sampleContent } from './samples.mts';
+import {
+    type Sample,
+    sampleContent,
+    sampleSources,
+    samplesReadme,
+    sourcesHeader,
+    sourcesMarker,
+    sourcesRow,
+} from './samples.mts';
 
 /** What adding samples needs to know about a dictionary package. */
 export interface Dictionary {
@@ -40,22 +49,43 @@ export async function readDictionary(dir: string): Promise<Dictionary> {
     };
 }
 
-/** Writes the samples into `dir/samples/`, and lists them in its `README.md`. */
-export function saveSamples(dir: string, title: string, samples: Sample[]): void {
+/**
+ * Writes the samples into `dir/samples/`, adds them to `sample-sources.csv`, and shows that as a table in its
+ * `README.md`. Starts the README, and adds the table's marker to it, when missing. Paths are shown relative to `base`.
+ */
+export function saveSamples(dir: string, title: string, samples: Sample[], base = dir): void {
     const samplesDir = join(dir, 'samples');
     mkdirSync(samplesDir, { recursive: true });
-    for (const sample of samples) {
-        const file = join(samplesDir, sample.name);
-        writeFileSync(file, sampleContent(sample));
-        created(relative(dir, file));
-    }
+    const write = (file: string, content: Buffer | string) => {
+        const path = join(samplesDir, file);
+        writeFileSync(path, content);
+        created(relative(base, path));
+    };
+    for (const sample of samples) write(sample.name, sampleContent(sample));
+
+    const added = new Date().toISOString().slice(0, 10);
+    const rows = samples.map((sample) => sourcesRow(sample, added) + '\n').join('');
+    const csv = join(samplesDir, sampleSources);
+    if (existsSync(csv)) appendFileSync(csv, withNewline(readFileSync(csv, 'utf8')) + rows);
+    else write(sampleSources, sourcesHeader + '\n' + rows);
+
     const readme = join(samplesDir, 'README.md');
-    const lines = samples.map(readmeLine).join('\n') + '\n';
-    if (!existsSync(readme)) {
-        writeFileSync(readme, `# ${title} Samples\n\n${lines}`);
-        created(relative(dir, readme));
-        return;
-    }
+    if (!existsSync(readme)) write('README.md', samplesReadme(title));
     const current = readFileSync(readme, 'utf8');
-    appendFileSync(readme, (current.endsWith('\n') ? '' : '\n') + lines);
+    if (!current.includes(`@@inject: ${sampleSources}`)) {
+        appendFileSync(readme, withNewline(current) + '\n' + sourcesMarker + '\n');
+    }
+    injectSources(samplesDir);
+}
+
+/** A newline, if `text` doesn't end with one, so what's appended starts on a line of its own. */
+function withNewline(text: string): string {
+    return text && !text.endsWith('\n') ? '\n' : '';
+}
+
+/** Refreshes the sources table in `samples/README.md`. */
+function injectSources(samplesDir: string): void {
+    const bin = fileURLToPath(import.meta.resolve('inject-markdown/bin'));
+    const result = spawnSync(process.execPath, [bin, '--silent', 'README.md'], { cwd: samplesDir, encoding: 'utf8' });
+    if (result.status !== 0) throw new Error(`couldn't update samples/README.md: ${result.stderr || result.stdout}`);
 }

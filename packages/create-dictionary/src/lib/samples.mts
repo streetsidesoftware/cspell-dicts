@@ -14,24 +14,38 @@ export interface Sample {
     from?: string;
     /** Its text, when it was fetched rather than copied. */
     text?: string;
-    /** Where it came from: a URL or a few words. */
+    /** Where it came from: a URL or a few words, as Markdown. */
     origin?: string;
+    /** Its license, such as MIT, as Markdown. */
+    license?: string;
 }
 
-/** The `--add-sample` and `--add-sample-origin` options, as given. */
+/** The `--add-sample` options, as given. */
 export interface SampleOptions {
     addSample: string[];
     addSampleOrigin: string[];
+    addSampleLicense: string[];
     addWikipediaSample: string[];
 }
 
-export const noSampleOptions: SampleOptions = { addSample: [], addSampleOrigin: [], addWikipediaSample: [] };
+export const noSampleOptions: SampleOptions = {
+    addSample: [],
+    addSampleOrigin: [],
+    addSampleLicense: [],
+    addWikipediaSample: [],
+};
 
 /** The sample of words from the sources, checked with the dictionary's locale and file type. */
 export const wordSample = 'sample-words-in-dictionary.txt';
 
+/** Each sample's file, source, the day it was added, and license, shown as a table in `samples/README.md`. */
+export const sampleSources = 'sample-sources.csv';
+
+/** The license of Wikipedia's text. */
+const wikipediaLicense = '[CC BY-SA 4.0](https://creativecommons.org/licenses/by-sa/4.0/)';
+
 /** The files create-dictionary writes in `samples/` itself. */
-const written = ['README.md', 'cspell.json', wordSample];
+const written = ['README.md', 'cspell.json', wordSample, sampleSources];
 
 /**
  * The samples given as options, with every file checked. Paths are relative to `cwd`. `existing` are the names already in
@@ -40,16 +54,25 @@ const written = ['README.md', 'cspell.json', wordSample];
 export function parseSamples(options: SampleOptions, cwd: string, existing: string[] = []): Sample[] {
     const samples = new Map<string, Sample>(existing.map((name) => [name, { name }]));
     for (const path of options.addSample) addSample(samples, path, cwd);
-    for (const value of options.addSampleOrigin) {
-        const at = value.indexOf('=');
-        if (at < 0) throw new Error(`--add-sample-origin: "${value}" needs <file>=<origin>.`);
-        const file = value.slice(0, at);
-        const sample = samples.get(file);
-        if (!sample || existing.includes(file)) {
-            throw new Error(`--add-sample-origin: no sample is named ${file}. Add it with --add-sample.`);
+    const byFile = (option: string, what: string, values: string[], set: (sample: Sample, value: string) => void) => {
+        for (const value of values) {
+            const at = value.indexOf('=');
+            if (at < 0) throw new Error(`${option}: "${value}" needs <file>=<${what}>.`);
+            const file = value.slice(0, at);
+            const sample = samples.get(file);
+            if (!sample || existing.includes(file)) {
+                throw new Error(`${option}: no sample is named ${file}. Add it with --add-sample.`);
+            }
+            set(sample, value.slice(at + 1).trim());
         }
-        sample.origin = value.slice(at + 1).trim();
-    }
+    };
+    byFile('--add-sample-origin', 'origin', options.addSampleOrigin, (sample, origin) => (sample.origin = origin));
+    byFile(
+        '--add-sample-license',
+        'license',
+        options.addSampleLicense,
+        (sample, license) => (sample.license = license),
+    );
     return [...samples.values()].filter((sample) => !existing.includes(sample.name));
 }
 
@@ -148,11 +171,11 @@ export async function fetchArticle(article: Article, getJson: GetJson = fetchJso
         if (!found) return undefined;
         const url = `https://${language}.wikipedia.org/wiki/${encodeURIComponent(found.title.replaceAll(' ', '_'))}`;
         const text = found.extract.split(/\n+/).join('\n\n');
-        const fetched = new Date().toISOString().slice(0, 10);
         return {
             name: sampleName(article.title),
             text: `# [${found.title}](${url})\n\n${text}\n`,
-            origin: `${url}, the start of the article, fetched ${fetched}`,
+            origin: `[Wikipedia: ${found.title}](${url})`,
+            license: wikipediaLicense,
         };
     } catch {
         return undefined;
@@ -195,21 +218,36 @@ async function fetchJson(url: string): Promise<unknown> {
     return response.json();
 }
 
-/** `samples/README.md`: each sample and its origin. */
-export function samplesReadme(friendlyName: string, samples: Sample[]): string {
-    const lines = [
+/** The marker that injects the sources table into `samples/README.md`. */
+export const sourcesMarker = `<!--- @@inject: ${sampleSources}#markdown --->`;
+
+/** A new `samples/README.md`, before the sources table is injected. */
+export function samplesReadme(friendlyName: string): string {
+    return [
         `# ${friendlyName} Samples`,
         '',
         "`pnpm test` spell checks these files with this dictionary. They aren't part of the npm package.",
         '',
-        `- \`${wordSample}\`: words from the sources, checked with the dictionary's locale and file type.`,
-    ];
-    return [...lines, ...samples.map(readmeLine)].join('\n') + '\n';
+        `\`${wordSample}\` holds words from the sources, checked with the dictionary's locale and file type.`,
+        `The other samples are listed below, from \`${sampleSources}\`. A sample from Wikipedia is the start of the article.`,
+        '',
+        sourcesMarker,
+        '',
+    ].join('\n');
 }
 
-/** A sample's line in `samples/README.md`. */
-export function readmeLine(sample: Sample): string {
-    return `- \`${sample.name}\`: ${sample.origin || 'no known origin'}.`;
+export const sourcesHeader = csvLine(['File', 'Source', 'Added', 'License']);
+
+/** A sample's row in `sample-sources.csv`: a link to its file, its source, the day it was added, and its license. */
+export function sourcesRow(sample: Sample, added: string): string {
+    const path = `./${sample.name}`;
+    // A link target with spaces or parentheses needs angle brackets.
+    const link = `[${sample.name}](${/[\s()<>]/.test(path) ? `<${path}>` : path})`;
+    return csvLine([link, sample.origin || 'unknown', added, sample.license || 'unknown']);
+}
+
+function csvLine(fields: string[]): string {
+    return fields.map((field) => (/[",\r\n]/.test(field) ? `"${field.replaceAll('"', '""')}"` : field)).join(',');
 }
 
 /** A sample's content: the file it's copied from, or the text it was fetched as. */
@@ -306,7 +344,7 @@ export function samplesConfig(locale: string, languageId: string): object {
     return {
         import: ['../cspell-ext.json'],
         // These describe the samples, in English; they aren't samples.
-        ignorePaths: ['README.md', 'cspell.json'],
+        ignorePaths: ['README.md', 'cspell.json', sampleSources],
         ...(language && {
             language: language === 'en' ? locale : `${locale},en`,
             patterns: [pronunciation],

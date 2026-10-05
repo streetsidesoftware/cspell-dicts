@@ -79,6 +79,7 @@ interface Options {
     addSourceUrl?: string[];
     addSample?: string[];
     addSampleOrigin?: string[];
+    addSampleLicense?: string[];
     addWikipediaSample?: string[];
     wikipediaSample?: boolean;
     root?: string;
@@ -169,6 +170,11 @@ export function parseCommandLine(argv: string[]): CommandLine {
             (value: string, previous: string[] = []) => [...previous, value],
         )
         .option(
+            '--add-sample-license <file=license>',
+            'the license of a sample, such as MIT, by its file name; repeatable',
+            (value: string, previous: string[] = []) => [...previous, value],
+        )
+        .option(
             '--add-wikipedia-sample <title or URL>',
             'for a natural language, the start of a Wikipedia article in its language, such as Berlin or a wikipedia.org link; repeatable',
             (value: string, previous: string[] = []) => [...previous, value],
@@ -244,6 +250,7 @@ export function parseCommandLine(argv: string[]): CommandLine {
         sampleOptions: {
             addSample: opts.addSample ?? [],
             addSampleOrigin: opts.addSampleOrigin ?? [],
+            addSampleLicense: opts.addSampleLicense ?? [],
             addWikipediaSample: opts.addWikipediaSample ?? [],
         },
         wikipediaSample: opts.wikipediaSample !== false,

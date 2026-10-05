@@ -17,6 +17,7 @@ import {
     sampleWarnings,
     sampleWords,
     samplesReadme,
+    sourcesRow,
 } from './samples.mts';
 
 let root = '';
@@ -124,10 +125,8 @@ describe('fetchArticle', () => {
         const sample = await fetchArticle({ language: 'de', title: 'Berlin' }, wikipedia);
         assert.equal(sample?.name, 'berlin.md');
         assert.equal(sample?.text, '# [Berlin](https://de.wikipedia.org/wiki/Berlin)\n\nBerlin ist die Hauptstadt.\n');
-        assert.match(
-            sample?.origin ?? '',
-            /^https:\/\/de\.wikipedia\.org\/wiki\/Berlin, the start of the article, fetched \d{4}-\d{2}-\d{2}$/,
-        );
+        assert.equal(sample?.origin, '[Wikipedia: Berlin](https://de.wikipedia.org/wiki/Berlin)');
+        assert.equal(sample?.license, '[CC BY-SA 4.0](https://creativecommons.org/licenses/by-sa/4.0/)');
     });
 
     it('finds an English title in the language, such as Seattle in Hebrew', async () => {
@@ -153,10 +152,27 @@ describe('fetchArticle', () => {
 });
 
 describe('samplesReadme', () => {
-    it('lists each sample with its origin, or no known origin', () => {
-        const readme = samplesReadme('Ruby', [{ name: 'example.rb' }]);
+    it('starts with the title, and ends with the marker for the sources table', () => {
+        const readme = samplesReadme('Ruby');
         assert.match(readme, /^# Ruby Samples\n/);
-        assert.match(readme, /`example\.rb`: no known origin\./);
+        assert.ok(readme.endsWith('\n<!--- @@inject: sample-sources.csv#markdown --->\n'));
+    });
+});
+
+describe('sourcesRow', () => {
+    it('links the file, and writes unknown for a missing source or license', () => {
+        assert.equal(
+            sourcesRow({ name: 'hello.rb' }, '2026-10-05'),
+            '[hello.rb](./hello.rb),unknown,2026-10-05,unknown',
+        );
+    });
+
+    it('quotes a field with a comma or a quote, and puts a file name with a space in angle brackets', () => {
+        const sample = { name: 'my notes.md', origin: 'notes, "mine"', license: 'MIT' };
+        assert.equal(
+            sourcesRow(sample, '2026-10-05'),
+            '[my notes.md](<./my notes.md>),"notes, ""mine""",2026-10-05,MIT',
+        );
     });
 });
 
@@ -191,7 +207,7 @@ describe('samplesConfig', () => {
     it("checks a natural language's samples in its language", () => {
         assert.deepEqual(samplesConfig('de-CH', '*'), {
             import: ['../cspell-ext.json'],
-            ignorePaths: ['README.md', 'cspell.json'],
+            ignorePaths: ['README.md', 'cspell.json', 'sample-sources.csv'],
             language: 'de-CH,en',
             patterns: [pronunciation],
             ignoreRegExpList: ['pronunciation'],

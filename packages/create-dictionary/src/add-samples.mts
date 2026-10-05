@@ -14,7 +14,7 @@ async function main(): Promise<void> {
     const program = new Command()
         .name('add-samples')
         .description(
-            'Add samples to the dictionary in this folder: files copied into samples/, and listed in samples/README.md.\n' +
+            'Add samples to the dictionary in this folder: files copied into samples/, and listed in samples/sample-sources.csv.\n' +
                 'It prompts for them when no option is given.',
         )
         .option(
@@ -25,6 +25,11 @@ async function main(): Promise<void> {
         .option(
             '--add-sample-origin <file=origin>',
             'where a sample came from, a URL or a few words, by its file name; repeatable',
+            (value: string, previous: string[] = []) => [...previous, value],
+        )
+        .option(
+            '--add-sample-license <file=license>',
+            'the license of a sample, such as MIT, by its file name; repeatable',
             (value: string, previous: string[] = []) => [...previous, value],
         )
         .option(
@@ -40,10 +45,16 @@ async function main(): Promise<void> {
             ),
         )
         .parse();
-    const opts = program.opts<{ addSample?: string[]; addSampleOrigin?: string[]; addWikipediaSample?: string[] }>();
+    const opts = program.opts<{
+        addSample?: string[];
+        addSampleOrigin?: string[];
+        addSampleLicense?: string[];
+        addWikipediaSample?: string[];
+    }>();
     const options = {
         addSample: opts.addSample ?? [],
         addSampleOrigin: opts.addSampleOrigin ?? [],
+        addSampleLicense: opts.addSampleLicense ?? [],
         addWikipediaSample: opts.addWikipediaSample ?? [],
     };
     const prompt = !options.addSample.length && !options.addWikipediaSample.length;

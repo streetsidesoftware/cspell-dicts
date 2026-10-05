@@ -40,26 +40,46 @@ describe('readDictionary', () => {
 });
 
 describe('saveSamples', () => {
-    it('writes the samples, and adds them to the README', () => {
+    const added = new Date().toISOString().slice(0, 10);
+
+    it('writes the samples, lists them in sample-sources.csv, and adds the table to the README', () => {
         const dir = join(root, 'de_AR');
         saveSamples(dir, 'German (Argentina)', [
-            { name: 'notes.md', from: join(root, 'notes.md'), origin: 'my notes' },
+            { name: 'notes.md', from: join(root, 'notes.md'), origin: 'my notes', license: 'MIT' },
             { name: 'berlin.md', text: '# Berlin\n' },
         ]);
         assert.equal(readFileSync(join(dir, 'samples', 'notes.md'), 'utf8'), 'Ein Text.\n');
         assert.equal(readFileSync(join(dir, 'samples', 'berlin.md'), 'utf8'), '# Berlin\n');
         assert.equal(
-            readFileSync(join(dir, 'samples', 'README.md'), 'utf8'),
-            '# German (Argentina) Samples\n\n- `seattle.md`: Wikipedia.\n- `notes.md`: my notes.\n- `berlin.md`: no known origin.\n',
+            readFileSync(join(dir, 'samples', 'sample-sources.csv'), 'utf8'),
+            'File,Source,Added,License\n' +
+                `[notes.md](./notes.md),my notes,${added},MIT\n` +
+                `[berlin.md](./berlin.md),unknown,${added},unknown\n`,
         );
+        const readme = readFileSync(join(dir, 'samples', 'README.md'), 'utf8');
+        assert.ok(
+            readme.startsWith(
+                '# German (Argentina) Samples\n\n- `seattle.md`: Wikipedia.\n\n<!--- @@inject: sample-sources.csv#markdown --->\n',
+            ),
+        );
+        assert.match(readme, /\| \[berlin\.md\]\(\.\/berlin\.md\) +\| unknown +\|/);
+    });
+
+    it('adds to sample-sources.csv, and refreshes the table', () => {
+        const dir = join(root, 'de_AR');
+        saveSamples(dir, 'German (Argentina)', [{ name: 'hamburg.md', text: '# Hamburg\n', origin: 'a test' }]);
+        const csv = readFileSync(join(dir, 'samples', 'sample-sources.csv'), 'utf8');
+        assert.match(csv, /\n\[hamburg\.md\]\(\.\/hamburg\.md\),a test,/);
+        const readme = readFileSync(join(dir, 'samples', 'README.md'), 'utf8');
+        assert.equal(readme.match(/@@inject: /g)?.length, 1);
+        assert.match(readme, /\| \[hamburg\.md\]/);
     });
 
     it('starts a README when there is none', () => {
         const dir = join(root, 'new');
         saveSamples(dir, 'Ruby', [{ name: 'hello.rb', text: 'puts 1\n', origin: 'https://example.com/ruby' }]);
-        assert.equal(
-            readFileSync(join(dir, 'samples', 'README.md'), 'utf8'),
-            '# Ruby Samples\n\n- `hello.rb`: https://example.com/ruby.\n',
-        );
+        const readme = readFileSync(join(dir, 'samples', 'README.md'), 'utf8');
+        assert.match(readme, /^# Ruby Samples\n/);
+        assert.match(readme, /\| \[hello\.rb\]\(\.\/hello\.rb\) +\| <https:\/\/example\.com\/ruby> +\|/);
     });
 });

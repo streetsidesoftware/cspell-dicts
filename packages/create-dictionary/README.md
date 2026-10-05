@@ -24,7 +24,7 @@ In a dictionary's folder:
 pnpm exec add-samples
 ```
 
-It asks for sample files and Wikipedia articles, copies them into `samples/`, and lists them in `samples/README.md`.
+It asks for sample files and Wikipedia articles, copies them into `samples/`, and lists them in `samples/sample-sources.csv`, shown in `samples/README.md`.
 Run `pnpm exec add-samples --help` to list the options.
 
 ## Options for tests

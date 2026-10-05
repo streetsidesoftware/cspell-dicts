@@ -84,6 +84,8 @@ export async function gatherSamples(options: SampleOptions, gathering: Gathering
             const sample = addSample(byName, path, cwd);
             const origin = await ask.input({ message: 'Where it came from, a URL or a few words; empty if unknown:' });
             if (origin.trim()) sample.origin = origin.trim();
+            const license = await ask.input({ message: 'Its license, such as MIT; empty if unknown:' });
+            if (license.trim()) sample.license = license.trim();
             list.push(sample);
         }
     }

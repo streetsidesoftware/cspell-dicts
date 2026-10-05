@@ -185,7 +185,7 @@ describe('a new package', () => {
         );
     });
 
-    it('copies samples, with their origins', () => {
+    it('copies samples, with their origins and licenses', () => {
         writeFileSync(join(root, 'example.rb'), 'puts zorbal\n');
         const result = createYes(
             'withsample',
@@ -194,11 +194,16 @@ describe('a new package', () => {
             'example.rb',
             '--add-sample-origin',
             'example.rb=made up',
+            '--add-sample-license',
+            'example.rb=MIT',
         );
         assert.equal(result.code, 0, result.stderr);
         assert.doesNotMatch(result.stderr, /warning/);
         assert.equal(packageFile('withsample', 'samples/example.rb'), 'puts zorbal\n');
-        assert.match(packageFile('withsample', 'samples/README.md'), /`example\.rb`: made up\./);
+        assert.match(
+            packageFile('withsample', 'samples/README.md'),
+            /\| \[example\.rb\]\(\.\/example\.rb\) +\| made up +\| [\d-]+ +\| MIT +\|/,
+        );
     });
 
     it('takes the locale, the friendly name, and the description from a name such as de_CH', () => {
