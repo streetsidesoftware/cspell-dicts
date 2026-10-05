@@ -11,6 +11,7 @@ import {
     languageOf,
     noSampleOptions,
     parseSamples,
+    pronunciation,
     samplesConfig,
     samplesExplanation,
     sampleWarnings,
@@ -178,9 +179,17 @@ describe('samplesConfig', () => {
             import: ['../cspell-ext.json'],
             ignorePaths: ['README.md', 'cspell.json'],
             language: 'de-CH,en',
+            patterns: [pronunciation],
+            ignoreRegExpList: ['pronunciation'],
             words: [],
             overrides: [{ filename: 'sample-words-in-dictionary.txt', language: 'de-CH', languageId: '*' }],
         });
+    });
+
+    it('skips pronunciations, but not links or paths', () => {
+        const [, body, flags] = /^\/(.*)\/(\w*)$/.exec(pronunciation.pattern) ?? [];
+        const text = 'Seattle ([sɪˈætəl]), Paris /pæˈɹɪs/, a [link](x), and /usr/bin/.';
+        assert.deepEqual(text.match(new RegExp(body, flags)), ['[sɪˈætəl]', '/pæˈɹɪs/']);
     });
 
     it('adds no other English to an English dictionary', () => {

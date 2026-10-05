@@ -273,10 +273,18 @@ export function samplesExplanation(locale: string, languageId: string): string[]
     return [`Samples should be ${files} from real projects, such as a short script or a source file.`, check];
 }
 
+/** A pronunciation in brackets or slashes, such as `[sɪˈætəl]`: IPA letters and stress marks are U+0250 to U+02FF. */
+export const pronunciation = {
+    name: 'pronunciation',
+    pattern: String.raw`/(\[|/)[^\]/\n]*[\u0250-\u02FF][^\]/\n]*(\]|/)/gu`,
+    description: 'A pronunciation, such as [sɪˈætəl], in Wikipedia articles.',
+};
+
 /**
  * `samples/cspell.json`: the samples are checked the way users' files are, so they show when the dictionary is enabled.
- * For a natural language, they're in its language, and in English, for the names and loanwords articles quote. The word
- * sample is checked with the dictionary's locale and file type. `words` is for names the samples use.
+ * For a natural language, they're in its language, and in English, for the names and loanwords articles quote, and
+ * pronunciations are skipped. The word sample is checked with the dictionary's locale and file type. `words` is for
+ * names the samples use.
  */
 export function samplesConfig(locale: string, languageId: string): object {
     const language = languageOf(locale);
@@ -284,7 +292,11 @@ export function samplesConfig(locale: string, languageId: string): object {
         import: ['../cspell-ext.json'],
         // These describe the samples, in English; they aren't samples.
         ignorePaths: ['README.md', 'cspell.json'],
-        ...(language && { language: language === 'en' ? locale : `${locale},en` }),
+        ...(language && {
+            language: language === 'en' ? locale : `${locale},en`,
+            patterns: [pronunciation],
+            ignoreRegExpList: [pronunciation.name],
+        }),
         words: [],
         overrides: [{ filename: wordSample, language: locale, languageId }],
     };
