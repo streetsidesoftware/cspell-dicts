@@ -52,8 +52,7 @@ before building it. Say what the words are and where they come from. A maintaine
 ## 3. Check the sources and their license
 
 - Where do the words come from? Your own list, a project's documentation, or an upstream word list?
-- What is the source's license? The dictionary package's `license` field and `LICENSE` must allow it, and upstream
-license
+- What is the source's license? The dictionary package's `license` field and `LICENSE` must allow it, and upstream license
   files are published with it (added to `files`). `pnpm create-dictionary` writes an MIT `LICENSE`: change it if the source
   requires.
 - If the license is missing or unclear, stop and ask the maintainers in an issue before going further.
@@ -114,8 +113,7 @@ Each field is described in [Create-dictionary options](#create-dictionary-option
 | [Hunspell depth](#hunspell-depth)                 | `--hunspell-depth`                            | How many affix rules to apply to each Hunspell word.       |
 | [no questions](#no-questions)                     | `--yes`                                       | Use the defaults for anything not given, and never ask.    |
 
-It creates `dictionaries/<name>/` with `version` `0.0.1-alpha.0` and `private: true`, so the dictionary isn't published.
-A
+It creates `dictionaries/<name>/` with `version` `0.0.1-alpha.0` and `private: true`, so the dictionary isn't published. A
 maintainer makes it public once the dictionary has been verified.
 
 ## 5. The resulting dictionary
@@ -262,8 +260,7 @@ pnpm create-dictionary medical_terms \
   --contributor "John Doe <john@example.com>"
 ```
 
-Give a name, optionally followed by an email in `<…>`, a web address in `(…)`, or both. A GitHub profile makes a good
-web
+Give a name, optionally followed by an email in `<…>`, a web address in `(…)`, or both. A GitHub profile makes a good web
 address. Each person is listed in `package.json`. That file is published, so everything given here is public.
 
 When the command asks, it suggests your Git name. Leave an answer empty to stop adding people.
