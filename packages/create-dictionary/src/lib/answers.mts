@@ -421,7 +421,6 @@ export async function getAnswers(options: CommandLine, repo: Repo, cwd: string):
             '',
             `Most questions have a default answer in ${asDefault('(parentheses)')}. Press ${key('Enter')} to accept it.`,
             '',
-            `Every answer can also be given as an option: ${literal('pnpm create-dictionary --help')}`,
             `Guide: ${link('https://github.com/streetsidesoftware/cspell-dicts/blob/main/docs/guides/new-dictionary.md')}`,
             '',
             `Press ${key('Ctrl+C')} during the questions to stop without making changes.`,
