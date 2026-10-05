@@ -7,6 +7,7 @@ import { title, toFriendlyName } from './names.mts';
 import { type Answers, type CommandLine, optionForAnswer } from './options.mts';
 import { gitUserName, readTakenNames, type Repo } from './repo.mts';
 import { isHunspellFile } from './hunspell.mts';
+import { addSample, checkSample, parseSamples, type Sample, sampleWarnings, seattle } from './samples.mts';
 import {
     checkFile,
     checkFolder,
@@ -32,6 +33,7 @@ const largeWordLists = 1_000_000;
 
 export type Settings = Omit<Required<Answers>, 'srcFiles'> & {
     sources: Source[];
+    samples: Sample[];
     hunspellDepth: number;
     additionalWords: boolean;
     excludeWords: boolean;
@@ -153,6 +155,30 @@ export async function getAnswers(options: CommandLine, repo: Repo, cwd: string):
             for (const warning of sourceWarnings(source)) console.warn('warning: ' + warning);
         }
         return sources;
+    }
+
+    /** The samples from the options, then from the prompts. */
+    async function allSamples(locale: string): Promise<Sample[]> {
+        const list = parseSamples(options.sampleOptions, cwd);
+        if (!noPrompts) {
+            const byName = new Map(list.map((sample) => [basename(sample.path), sample]));
+            const article = seattle(locale);
+            const hint = article ? ` For a natural language, the Wikipedia article on Seattle: ${article}` : '';
+            while (
+                await confirm({
+                    message: `Add a sample file? A real file of the kind this dictionary is for.${hint}`,
+                    default: !list.length,
+                })
+            ) {
+                const path = await input({ message: 'Its path', validate: (v) => checkSample(byName, v, cwd) });
+                const sample = addSample(byName, path, cwd);
+                const origin = await input({ message: 'Where it came from (URL or a few words); empty if unknown' });
+                if (origin.trim()) sample.origin = origin.trim();
+                list.push(sample);
+            }
+        }
+        for (const warning of sampleWarnings(list, locale)) console.warn('warning: ' + warning);
+        return list;
     }
 
     /** Asks for named sources, as the options would give them. */
@@ -284,6 +310,8 @@ export async function getAnswers(options: CommandLine, repo: Repo, cwd: string):
         !isHunspell,
     );
 
+    const samples = await allSamples(locale);
+
     return {
         name,
         friendlyName,
@@ -292,6 +320,7 @@ export async function getAnswers(options: CommandLine, repo: Repo, cwd: string):
         contributors: people,
         keywords: searchWords,
         sources,
+        samples,
         hunspellDepth: options.hunspellDepth,
         additionalWords: options.additionalWords,
         excludeWords: options.excludeWords,

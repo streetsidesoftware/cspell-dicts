@@ -178,6 +178,22 @@ describe('a new package', () => {
         assert.match(result.stdout, /Not built yet[\s\S]*lower maxDepth/);
     });
 
+    it('copies samples, with their origins', () => {
+        writeFileSync(join(root, 'example.rb'), 'puts zorbal\n');
+        const result = createYes(
+            'withsample',
+            'words.txt',
+            '--add-sample',
+            'example.rb',
+            '--add-sample-origin',
+            'example.rb=made up',
+        );
+        assert.equal(result.code, 0, result.stderr);
+        assert.doesNotMatch(result.stderr, /warning/);
+        assert.equal(packageFile('withsample', 'samples/example.rb'), 'puts zorbal\n');
+        assert.match(packageFile('withsample', 'samples/README.md'), /`example\.rb`: made up\./);
+    });
+
     it('takes the Hunspell depth from --hunspell-depth', () => {
         const result = createYes('depth', 'pair.dic', '--hunspell-depth', '0');
         assert.equal(result.code, 0, result.stderr);
@@ -304,7 +320,7 @@ describe('several sources', () => {
         assert.match(packageFile('thirdparty', 'src/sources.yaml'), /readme: 'README\.md'/);
         const { files } = JSON.parse(packageFile('thirdparty', 'package.json'));
         assert.ok(files.includes('src/up/LICENSE') && files.includes('src/up/README.md'), files.join(', '));
-        assert.doesNotMatch(result.stderr, /warning/);
+        assert.doesNotMatch(result.stderr, /warning: the source/);
     });
 
     it('refuse a third-party file outside its source without a local path', () => {

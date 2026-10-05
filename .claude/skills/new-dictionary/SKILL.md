@@ -87,6 +87,7 @@ Turn the design into the dictionary with one command.
   - `--placeholder-word-lists` when there's no word list yet. It starts an empty one.
   - One `--contributor` per person, and one `--keyword` per search term.
   - `--locale` for a natural language, or `--language-id` for anything else.
+  - One `--add-sample` per real sample the user has, each with `--add-sample-origin`.
   - Leave the trie and the build to their defaults. With a Hunspell source, it doesn't build: run `pnpm run build` in
     the dictionary's directory. If that's too slow, lower `maxDepth` in `cspell-tools.config.yaml`, and tell the user.
   - A source someone else maintains: `--define-source` and `--add-source-*`, as in the guide's "Third-party sources".
@@ -101,9 +102,9 @@ Turn the design into the dictionary with one command.
 Finish what the command can't know.
 
 - **Do:**
-  - Add a few correctly spelled files of the kind the dictionary is for to `samples/`.
-  - Add `"test:samples": "cspell samples"` to `package.json`'s scripts, and run it from `test`. The template doesn't
-    check samples yet.
+  - If the command got no `--add-sample`, add a few correctly spelled files of the kind the dictionary is for to
+    `samples/`, and their origins to `samples/README.md`. For a natural language, suggest the Wikipedia article on
+    Seattle in that language.
   - Write the README's description: what the dictionary covers and why to use it, with absolute `https://` links.
   - For an upstream source, add a `sync` script as in `docs/guides/upstream-updates.md`. Never edit synced files by
     hand.

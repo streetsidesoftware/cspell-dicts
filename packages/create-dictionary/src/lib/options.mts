@@ -1,5 +1,6 @@
 import { Command, InvalidArgumentError, Option } from 'commander';
 
+import type { SampleOptions } from './samples.mts';
 import type { SourceOptions } from './sources.mts';
 
 export interface Answers {
@@ -24,6 +25,8 @@ export interface CommandLine {
     placeholderWordLists: boolean;
     /** The --define-source and --add-source-* options, as given. */
     sourceOptions: SourceOptions;
+    /** The samples, as given. */
+    sampleOptions: SampleOptions;
     /** How many affix rules the build chains onto a Hunspell stem. */
     hunspellDepth: number;
     /** Create src/additional_words.txt. */
@@ -72,6 +75,8 @@ interface Options {
     addSourceLicense?: string[];
     addSourceReadme?: string[];
     addSourceUrl?: string[];
+    addSample?: string[];
+    addSampleOrigin?: string[];
     root?: string;
     skipInstall?: boolean;
     yes?: boolean;
@@ -140,6 +145,16 @@ export function parseCommandLine(argv: string[]): CommandLine {
             'where a source can be found',
             (value: string, previous: string[] = []) => [...previous, value],
         )
+        .option(
+            '--add-sample <path>',
+            'a real file of the kind the dictionary is for, copied into samples/ and spell checked by its tests; repeatable',
+            (value: string, previous: string[] = []) => [...previous, value],
+        )
+        .option(
+            '--add-sample-origin <file=origin>',
+            'where a sample came from, a URL or a few words, by its file name; repeatable',
+            (value: string, previous: string[] = []) => [...previous, value],
+        )
         .option('--no-additional-words', 'do not create src/additional_words.txt, for words the sources lack')
         .option('--no-exclude-words', 'do not create src/exclude_words.txt, for words to leave out of the build')
         .option('--locale <locales>', 'locales, comma separated, such as "en,en-AU", or "*" for any; default: "*"')
@@ -200,6 +215,10 @@ export function parseCommandLine(argv: string[]): CommandLine {
             addSourceLicense: opts.addSourceLicense ?? [],
             addSourceReadme: opts.addSourceReadme ?? [],
             addSourceUrl: opts.addSourceUrl ?? [],
+        },
+        sampleOptions: {
+            addSample: opts.addSample ?? [],
+            addSampleOrigin: opts.addSampleOrigin ?? [],
         },
         hunspellDepth: opts.hunspellDepth ?? 1,
         additionalWords: opts.additionalWords !== false,

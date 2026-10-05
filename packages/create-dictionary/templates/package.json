@@ -42,7 +42,7 @@
     "build": "cspell-tools-cli build",
     "prepare:dictionary": "<%= prepareScript %>",
     "prepublishOnly": "<%= prepublishOnlyScript %>",
-    "test": "<%= srcFileReader %> \"<%= srcFile %>\" | cspell -c ./cspell-ext.json \"--locale=<%= locale %>\" \"--languageId=<%= languageId %>\" stdin"
+    "test": "cspell samples"
   },
   "dependencies": {},
   "devDependencies": {}

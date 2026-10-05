@@ -8,6 +8,7 @@ import type { Settings } from './answers.mts';
 import { createPackage } from './create-package.mts';
 import type { Repo } from './repo.mts';
 import { templateFiles } from './template.mts';
+import { wordSample } from './samples.mts';
 import { type Source, wordList } from './sources.mts';
 
 let root = '';
@@ -52,6 +53,7 @@ function settings(name: string, more: Partial<Settings>): Settings {
         useTrie: false,
         doBuild: false,
         hunspellDepth: 1,
+        samples: [],
         ...more,
     };
 }
@@ -144,7 +146,23 @@ describe('createPackage', () => {
         assert.match(read(dir, 'src/sources.yaml'), /files:\n {6}- 'pair\.dic'\n {6}- 'pair\.aff'/);
         assert.ok(existsSync(join(dir, 'dict/hunspell.trie')));
         assert.match(read(dir, 'cspell-tools.config.yaml'), /format: 'trie3'/);
-        assert.match(read(dir, 'package.json'), /hunspell-reader words/);
+    });
+
+    it('writes the samples, and tests with them', () => {
+        writeFileSync(join(root, 'example.rb'), 'puts zorbal\n');
+        const dir = createPackage(
+            settings('samples', {
+                samples: [{ path: join(root, 'example.rb'), origin: 'https://example.com/ruby' }],
+            }),
+            repo,
+        );
+        assert.equal(read(dir, 'samples/example.rb'), 'puts zorbal\n');
+        assert.match(read(dir, 'samples/README.md'), /`example\.rb`: https:\/\/example\.com\/ruby\./);
+        assert.deepEqual(JSON.parse(read(dir, 'samples/cspell.json')), { import: ['../cspell-ext.json'] });
+        assert.equal(read(dir, `samples/${wordSample}`), 'zorbal\n');
+        assert.equal(JSON.parse(read(dir, 'package.json')).scripts.test, 'cspell samples');
+        const [override] = JSON.parse(read(dir, 'cspell.json')).overrides;
+        assert.deepEqual(override, { filename: `samples/${wordSample}`, language: '*', languageId: 'ruby' });
     });
 
     it('sets the Hunspell depth on Hunspell sources only', () => {

@@ -7,6 +7,7 @@ import { after, before, describe, it } from 'node:test';
 import { getAnswers } from './answers.mts';
 import type { Answers, CommandLine } from './options.mts';
 import type { Repo } from './repo.mts';
+import { noSampleOptions } from './samples.mts';
 import { noSourceOptions, wordList } from './sources.mts';
 
 let root = '';
@@ -37,6 +38,7 @@ function options(answers: Answers, more: Partial<CommandLine> = {}): CommandLine
         yes: true,
         placeholderWordLists: false,
         sourceOptions: noSourceOptions,
+        sampleOptions: noSampleOptions,
         hunspellDepth: 1,
         additionalWords: true,
         excludeWords: true,
@@ -63,6 +65,7 @@ describe('getAnswers', () => {
             additionalWords: true,
             excludeWords: true,
             sources: [wordList('words.txt', root, false)],
+            samples: [],
             hunspellDepth: 1,
             locale: '*',
             languageId: 'markdown',

@@ -108,9 +108,5 @@ One PR per step. This section is removed once the feature ships.
 3. Contributors and keywords ([0005](./0005-names-descriptions-and-when-it-is-enabled.md)).
 4. `src/additional_words.txt` and `src/exclude_words.txt` ([0004](./0004-additional-and-exclude-words.md)).
 5. Third-party sources and `sources.yaml`, together ([0002](./0002-third-party-sources.md), [0003](./0003-sources-file.md)).
-6. Trie, build at creation, and Hunspell depth ([0006](./0006-how-a-new-dictionary-is-built.md)).
-7. Samples ([0007](./0007-samples.md)).
-8. Sources in the READMEs, mostly in `scripts/` ([0008](./0008-sources-are-explained-in-the-readmes.md)).
-9. `sync-sources`, and in `sync-github-files` the existence check, gone marks, size cap, and differing local paths ([0011](./0011-how-the-sync-handles-change.md)).
-10. npm sources through jsDelivr ([0010](./0010-remote-sources.md)).
-11. Remote sources at creation, the weekly `update-dictionary` script, and `--no-bail` in Update Dictionaries ([0010](./0010-remote-sources.md), [0012](./0012-when-sources-are-fetched.md)).
+6. Trie, build at creation, Hunspell depth, and samples ([0006](./0006-how-a-new-dictionary-is-built.md), [0007](./0007-samples.md)).
+7. The Maintain stage, mostly in `scripts/`: sources in the READMEs ([0008](./0008-sources-are-explained-in-the-readmes.md)); `sync-sources`, and in `sync-github-files` the existence check, gone marks, size cap, and differing local paths ([0011](./0011-how-the-sync-handles-change.md)); npm sources through jsDelivr ([0010](./0010-remote-sources.md)); and remote sources at creation, the weekly `update-dictionary` script, and `--no-bail` in Update Dictionaries ([0010](./0010-remote-sources.md), [0012](./0012-when-sources-are-fetched.md)).

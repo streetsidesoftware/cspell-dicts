@@ -1,10 +1,11 @@
 import { copyFileSync, mkdirSync, readFileSync, writeFileSync } from 'node:fs';
-import { dirname, extname, join, relative } from 'node:path';
+import { basename, dirname, extname, join, relative } from 'node:path';
 
 import type { Settings } from './answers.mts';
 import { title, toPackageName } from './names.mts';
 import type { Repo } from './repo.mts';
 import { isHunspellFile } from './hunspell.mts';
+import { sampleWords, samplesReadme, wordSample } from './samples.mts';
 import { fillTemplate, templateDir, templateFiles } from './template.mts';
 import { buildFiles, copies, publishedFiles, sourcesYaml, srcDir } from './sources.mts';
 
@@ -22,8 +23,6 @@ export function createPackage(answers: Settings, repo: Repo): string {
     const dstFileName = `dict/${packageName}.${useTrie ? 'trie' : 'txt'}`;
 
     const built = [...answers.sources.flatMap(buildFiles), ...(answers.additionalWords ? [additionalWordsFile] : [])];
-    // The test script reads the first source until samples replace it.
-    const first = built[0];
 
     const values: Record<string, string> = {
         name,
@@ -34,13 +33,11 @@ export function createPackage(answers: Settings, repo: Repo): string {
         languageId: answers.languageId,
         packageName,
         fullPackageName: '@cspell/dict-' + packageName,
-        srcFile: first,
         sources: built.map(buildSource).join('\n      - '),
         excludeWordsFrom: answers.excludeWords ? `['${excludeWordsFile}']` : '[]',
         dstFullFileName: dstFileName,
         format: useTrie ? 'trie3' : 'plaintext',
         generateNonStrict: useTrie ? 'true' : 'false',
-        srcFileReader: isHunspellFile(first) ? 'hunspell-reader words -n 1000 -m 0' : 'head -n 1000',
         prepareScript: built.some((file) => isHunspellFile(file)) ? 'echo OK' : 'pnpm run build',
         prepublishOnlyScript: 'echo OK',
         year: String(new Date().getFullYear()),
@@ -68,6 +65,11 @@ export function createPackage(answers: Settings, repo: Repo): string {
             '# Words to leave out of the built dictionary. One per line; see docs/word-lists.md.\n',
         );
     }
+    for (const sample of answers.samples) copyFileSync(sample.path, created(join('samples', basename(sample.path))));
+    write('samples/README.md', samplesReadme(title(friendlyName), answers.samples));
+    write('samples/cspell.json', JSON.stringify({ import: ['../cspell-ext.json'] }, null, 4) + '\n');
+    const words = sampleWords(built.map((file) => join(packageDir, file)));
+    write(join('samples', wordSample), words.map((word) => word + '\n').join(''));
     write(dstFileName, '# dest');
 
     return packageDir;
