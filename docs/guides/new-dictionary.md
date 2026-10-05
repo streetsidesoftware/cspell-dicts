@@ -432,9 +432,19 @@ Samples show the dictionary works on real text, as it's really written. Pick a n
 ideological one, as the [Code of Conduct](https://github.com/streetsidesoftware/cspell-dicts/blob/main/CODE_OF_CONDUCT.md)
 asks. An article about a city is fine, unless the city itself is contested.
 
-For a natural language, it also fetches the start of the Wikipedia article on Seattle in that language, as
-`samples/seattle.md`, with its link as the origin. `--no-wikipedia-sample` skips it. Without a network connection, it's
-simply left out.
+For a natural language, Wikipedia articles make good samples. The command fetches the start of an article in the
+dictionary's language, and saves it in `samples/` with its link as the origin:
+
+```sh
+pnpm create-dictionary german --add-wikipedia-sample Berlin
+pnpm create-dictionary german --add-wikipedia-sample https://de.wikipedia.org/wiki/Brandenburger_Tor
+```
+
+Give a title, in the dictionary's language or in English, or the article's link. `Berlin` is saved as `berlin.md`.
+When the command asks, it offers more articles until you say no.
+
+It always fetches the article on Seattle, as `seattle.md`, unless you give `--no-wikipedia-sample`. Without a network
+connection, articles are simply left out.
 
 Without any samples, the command warns. The tests still check `samples/sample-words-in-dictionary.txt`, the first few
 dozen words of the sources. It's written once, when the dictionary is created, and you can edit it like any sample.

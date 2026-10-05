@@ -104,7 +104,8 @@ Finish what the command can't know.
 - **Do:**
   - If the command got no `--add-sample`, add a few correctly spelled files of the kind the dictionary is for to
     `samples/`, and their origins to `samples/README.md`. For a natural language, the command fetches
-    `samples/seattle.md` itself, when it can reach Wikipedia.
+    `samples/seattle.md` itself, when it can reach Wikipedia. Add other neutral articles with
+    `--add-wikipedia-sample <title or link>`.
   - Keep samples on a neutral subject, as `docs/dictionary-packages.md` says: nothing political or ideological, and no
     contested city.
   - Write the README's description: what the dictionary covers and why to use it, with absolute `https://` links.

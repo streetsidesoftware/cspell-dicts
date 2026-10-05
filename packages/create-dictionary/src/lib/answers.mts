@@ -19,7 +19,8 @@ import {
 import {
     addSample,
     checkSample,
-    fetchSeattle,
+    articleOf,
+    fetchArticle,
     languageOf,
     parseSamples,
     type Sample,
@@ -232,19 +233,41 @@ export async function getAnswers(options: CommandLine, repo: Repo, cwd: string):
             showSection();
             explain(...samplesExplanation(locale, languageId));
         }
-        if (language && options.wikipediaSample && !byName.has('seattle.md')) {
-            const message = `Fetch the start of the Wikipedia article on Seattle, in ${localeName(language) ?? language}, as a sample?`;
-            if (noPrompts || (await ask.confirm({ message, default: true }))) {
-                const seattle = await fetchSeattle(language);
-                if (seattle) {
-                    byName.set(seattle.name, seattle);
-                    list.push(seattle);
-                } else {
+        if (language) {
+            /** Fetches an article into the samples. Without a network, or such an article, it says so and goes on. */
+            const addArticle = async (titleOrUrl: string): Promise<boolean> => {
+                const article = articleOf(titleOrUrl, language);
+                const sample = await fetchArticle(article);
+                if (!sample) {
                     info(
-                        "Couldn't fetch the Wikipedia article on Seattle in %s, so there's no %s.",
-                        localeName(language) ?? language,
-                        literal('samples/seattle.md'),
+                        "Couldn't fetch the Wikipedia article %s in %s.",
+                        literal(article.title),
+                        localeName(article.language) ?? article.language,
                     );
+                    return false;
+                }
+                if (byName.has(sample.name)) {
+                    info('There is already a sample named %s.', literal(sample.name));
+                    return false;
+                }
+                byName.set(sample.name, sample);
+                list.push(sample);
+                info('Added %s.', literal(`samples/${sample.name}`));
+                return true;
+            };
+            const languageName = localeName(language) ?? language;
+            if (options.wikipediaSample && !byName.has('seattle.md')) {
+                const message = `Fetch the start of the Wikipedia article on Seattle, in ${languageName}, as a sample?`;
+                if (noPrompts || (await ask.confirm({ message, default: true }))) await addArticle('Seattle');
+            }
+            for (const titleOrUrl of options.sampleOptions.addWikipediaSample) await addArticle(titleOrUrl);
+            if (!noPrompts) {
+                while (await ask.confirm({ message: 'Add another Wikipedia article as a sample?', default: false })) {
+                    const titleOrUrl = await ask.input({
+                        message: `Its title, in ${languageName} or English, or its link:`,
+                        validate: (v) => !!v.trim() || 'Give a title or a link.',
+                    });
+                    await addArticle(titleOrUrl);
                 }
             }
         }

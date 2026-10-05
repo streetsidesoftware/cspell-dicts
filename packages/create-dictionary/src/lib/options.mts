@@ -79,6 +79,7 @@ interface Options {
     addSourceUrl?: string[];
     addSample?: string[];
     addSampleOrigin?: string[];
+    addWikipediaSample?: string[];
     wikipediaSample?: boolean;
     root?: string;
     skipInstall?: boolean;
@@ -168,6 +169,11 @@ export function parseCommandLine(argv: string[]): CommandLine {
             (value: string, previous: string[] = []) => [...previous, value],
         )
         .option(
+            '--add-wikipedia-sample <title or URL>',
+            'for a natural language, the start of a Wikipedia article in its language, such as Berlin or a wikipedia.org link; repeatable',
+            (value: string, previous: string[] = []) => [...previous, value],
+        )
+        .option(
             '--no-wikipedia-sample',
             'for a natural language, do not fetch the start of the Wikipedia article on Seattle into samples/seattle.md',
         )
@@ -238,6 +244,7 @@ export function parseCommandLine(argv: string[]): CommandLine {
         sampleOptions: {
             addSample: opts.addSample ?? [],
             addSampleOrigin: opts.addSampleOrigin ?? [],
+            addWikipediaSample: opts.addWikipediaSample ?? [],
         },
         wikipediaSample: opts.wikipediaSample !== false,
         hunspellDepth: opts.hunspellDepth ?? 1,

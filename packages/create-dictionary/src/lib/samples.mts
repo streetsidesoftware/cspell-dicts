@@ -19,9 +19,10 @@ export interface Sample {
 export interface SampleOptions {
     addSample: string[];
     addSampleOrigin: string[];
+    addWikipediaSample: string[];
 }
 
-export const noSampleOptions: SampleOptions = { addSample: [], addSampleOrigin: [] };
+export const noSampleOptions: SampleOptions = { addSample: [], addSampleOrigin: [], addWikipediaSample: [] };
 
 /** The sample of words from the sources, checked with the dictionary's locale and file type. */
 export const wordSample = 'sample-words-in-dictionary.txt';
@@ -92,32 +93,52 @@ function searchSeattle(language: string): string {
 
 type GetJson = (url: string) => Promise<unknown>;
 
+/** A Wikipedia article: its language, such as `de`, and its title, in that language or in English. */
+export interface Article {
+    language: string;
+    title: string;
+}
+
 /**
- * The start of the Wikipedia article on Seattle in a language, as `seattle.md`: its lead section, as plain text. Undefined
- * when it can't be fetched, such as without a network connection, or when the language has no article.
+ * The article a title or URL names. A URL such as `https://de.wikipedia.org/wiki/Berlin` gives its own language and
+ * title; a title, such as `Berlin`, is in the dictionary's language.
  */
-export async function fetchSeattle(language: string, getJson: GetJson = fetchJson): Promise<Sample | undefined> {
+export function articleOf(titleOrUrl: string, language: string): Article {
+    const url = /^https?:\/\/([a-z-]+)\.(?:m\.)?wikipedia\.org\/wiki\/([^?#]+)/i.exec(titleOrUrl.trim());
+    if (url) return { language: url[1].toLowerCase(), title: decodeURIComponent(url[2]).replaceAll('_', ' ') };
+    return { language, title: titleOrUrl.trim() };
+}
+
+/**
+ * The start of a Wikipedia article, its lead section as plain text, as a sample named after the title, such as
+ * `berlin.md`. The title is looked up in the article's language, then as an English title whose article in that
+ * language is used, so `Seattle` finds `סיאטל` in Hebrew. Undefined when it can't be fetched, such as without a
+ * network connection, or when there's no such article.
+ */
+export async function fetchArticle(article: Article, getJson: GetJson = fetchJson): Promise<Sample | undefined> {
+    const { language } = article;
     const api = (lang: string, query: string) =>
         `https://${lang}.wikipedia.org/w/api.php?action=query&format=json&formatversion=2&${query}`;
-    try {
-        const title =
-            language === 'en'
-                ? 'Seattle'
-                : (
-                      (await getJson(
-                          api('en', `prop=langlinks&titles=Seattle&lllang=${encodeURIComponent(language)}`),
-                      )) as Pages
-                  ).query?.pages?.[0]?.langlinks?.[0]?.title;
-        if (!title) return undefined;
+    const extractOf = async (title: string) => {
         const query = `prop=extracts&explaintext=1&exintro=1&redirects=1&titles=${encodeURIComponent(title)}`;
-        const extract = ((await getJson(api(language, query))) as Pages).query?.pages?.[0]?.extract?.trim();
-        if (!extract) return undefined;
-        const url = `https://${language}.wikipedia.org/wiki/${encodeURIComponent(title.replaceAll(' ', '_'))}`;
-        const text = extract.split(/\n+/).join('\n\n');
+        const page = ((await getJson(api(language, query))) as Pages).query?.pages?.[0];
+        const extract = page?.extract?.trim();
+        return extract ? { title: page?.title ?? title, extract } : undefined;
+    };
+    try {
+        let found = await extractOf(article.title);
+        if (!found && language !== 'en') {
+            const query = `prop=langlinks&redirects=1&titles=${encodeURIComponent(article.title)}&lllang=${encodeURIComponent(language)}`;
+            const title = ((await getJson(api('en', query))) as Pages).query?.pages?.[0]?.langlinks?.[0]?.title;
+            if (title) found = await extractOf(title);
+        }
+        if (!found) return undefined;
+        const url = `https://${language}.wikipedia.org/wiki/${encodeURIComponent(found.title.replaceAll(' ', '_'))}`;
+        const text = found.extract.split(/\n+/).join('\n\n');
         const fetched = new Date().toISOString().slice(0, 10);
         return {
-            name: 'seattle.md',
-            text: `# [${title}](${url})\n\n${text}\n`,
+            name: sampleName(article.title),
+            text: `# [${found.title}](${url})\n\n${text}\n`,
             origin: `${url}, the start of the article, fetched ${fetched}`,
         };
     } catch {
@@ -125,8 +146,22 @@ export async function fetchSeattle(language: string, getJson: GetJson = fetchJso
     }
 }
 
+/** The start of the Wikipedia article on Seattle in a language, as `seattle.md`. */
+export function fetchSeattle(language: string, getJson: GetJson = fetchJson): Promise<Sample | undefined> {
+    return fetchArticle({ language, title: 'Seattle' }, getJson);
+}
+
+/** A file name for an article's title: `Brandenburger Tor` gives `brandenburger-tor.md`. */
+function sampleName(title: string): string {
+    const name = title
+        .toLowerCase()
+        .replaceAll(/[^\p{L}\p{M}\p{N}]+/gu, '-')
+        .replaceAll(/^-|-$/g, '');
+    return (name || 'article') + '.md';
+}
+
 interface Pages {
-    query?: { pages?: { extract?: string; langlinks?: { title?: string }[] }[] };
+    query?: { pages?: { title?: string; extract?: string; langlinks?: { title?: string }[] }[] };
 }
 
 async function fetchJson(url: string): Promise<unknown> {

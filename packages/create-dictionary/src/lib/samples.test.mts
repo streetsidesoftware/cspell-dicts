@@ -5,6 +5,8 @@ import { join } from 'node:path';
 import { after, before, describe, it } from 'node:test';
 
 import {
+    articleOf,
+    fetchArticle,
     fetchSeattle,
     languageOf,
     noSampleOptions,
@@ -30,7 +32,7 @@ after(() => rmSync(root, { recursive: true, force: true }));
 describe('parseSamples', () => {
     it('takes each sample with its origin, by its file name', () => {
         const samples = parseSamples(
-            { addSample: ['example.rb'], addSampleOrigin: ['example.rb=https://example.com/ruby'] },
+            { ...noSampleOptions, addSample: ['example.rb'], addSampleOrigin: ['example.rb=https://example.com/ruby'] },
             root,
         );
         assert.deepEqual(samples, [
@@ -42,7 +44,7 @@ describe('parseSamples', () => {
         assert.throws(() => parseSamples({ ...noSampleOptions, addSample: ['gone.rb'] }, root), /gone\.rb not found/);
         assert.throws(() => parseSamples({ ...noSampleOptions, addSample: ['README.md'] }, root), /written by/);
         assert.throws(
-            () => parseSamples({ addSample: [], addSampleOrigin: ['example.rb=somewhere'] }, root),
+            () => parseSamples({ ...noSampleOptions, addSampleOrigin: ['example.rb=somewhere'] }, root),
             /no sample is named example\.rb/,
         );
     });
@@ -63,27 +65,53 @@ describe('languageOf', () => {
     });
 });
 
-describe('fetchSeattle', () => {
+describe('articleOf', () => {
+    it('takes the language and title from a link, and the dictionary language for a title', () => {
+        assert.deepEqual(articleOf('https://de.wikipedia.org/wiki/Brandenburger_Tor', 'en'), {
+            language: 'de',
+            title: 'Brandenburger Tor',
+        });
+        assert.deepEqual(articleOf(' Berlin ', 'de'), { language: 'de', title: 'Berlin' });
+    });
+});
+
+describe('fetchArticle', () => {
+    // A Wikipedia where German has Berlin, and Hebrew has Seattle only under its Hebrew title.
     const wikipedia = async (url: string) => {
+        const title = decodeURIComponent(/titles=([^&]+)/.exec(url)?.[1] ?? '');
         if (url.includes('prop=langlinks')) return { query: { pages: [{ langlinks: [{ title: 'סיאטל' }] }] } };
-        if (url.startsWith('https://he.')) return { query: { pages: [{ extract: 'סיאטל היא עיר.\nהיא גדולה.' }] } };
-        throw new Error('offline');
+        if (url.startsWith('https://de.') && title === 'Berlin') {
+            return { query: { pages: [{ title: 'Berlin', extract: 'Berlin ist die Hauptstadt.' }] } };
+        }
+        if (url.startsWith('https://he.') && title === 'סיאטל') {
+            return { query: { pages: [{ title: 'סיאטל', extract: 'סיאטל היא עיר.\nהיא גדולה.' }] } };
+        }
+        return { query: { pages: [{ missing: true }] } };
     };
 
-    it('finds the article by its title in the language, and keeps its lead with a link', async () => {
+    it('fetches the lead of an article by its title, named after it', async () => {
+        const sample = await fetchArticle({ language: 'de', title: 'Berlin' }, wikipedia);
+        assert.equal(sample?.name, 'berlin.md');
+        assert.equal(sample?.text, '# [Berlin](https://de.wikipedia.org/wiki/Berlin)\n\nBerlin ist die Hauptstadt.\n');
+        assert.match(
+            sample?.origin ?? '',
+            /^https:\/\/de\.wikipedia\.org\/wiki\/Berlin, the start of the article, fetched \d{4}-\d{2}-\d{2}$/,
+        );
+    });
+
+    it('finds an English title in the language, such as Seattle in Hebrew', async () => {
         const sample = await fetchSeattle('he', wikipedia);
         assert.equal(sample?.name, 'seattle.md');
         const url = 'https://he.wikipedia.org/wiki/' + encodeURIComponent('סיאטל');
         assert.equal(sample?.text, `# [סיאטל](${url})\n\nסיאטל היא עיר.\n\nהיא גדולה.\n`);
-        assert.match(
-            sample?.origin ?? '',
-            new RegExp(`^${url.replaceAll('%', '%')}, the start of the article, fetched \\d{4}-\\d{2}-\\d{2}$`),
-        );
     });
 
-    it('gives nothing, without failing, when Wikipedia can not be reached or has no article', async () => {
-        assert.equal(await fetchSeattle('de', wikipedia), undefined);
-        assert.equal(await fetchSeattle('xx', async () => ({ query: { pages: [{}] } })), undefined);
+    it('gives nothing, without failing, when there is no network or no such article', async () => {
+        const offline = async () => {
+            throw new Error('offline');
+        };
+        assert.equal(await fetchArticle({ language: 'de', title: 'Berlin' }, offline), undefined);
+        assert.equal(await fetchArticle({ language: 'de', title: 'Nowhere' }, wikipedia), undefined);
     });
 });
 
