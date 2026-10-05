@@ -3,6 +3,20 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+## [5.4.7](https://github.com/streetsidesoftware/cspell-dicts/compare/@cspell/dict-software-terms@5.4.6...@cspell/dict-software-terms@5.4.7) (2026-10-05)
+
+
+### Updates and Bug Fixes
+
+* update en-common-misspellings and software-terms suggestions from crate-ci/typos main ([#5858](https://github.com/streetsidesoftware/cspell-dicts/issues/5858)) ([1c78d68](https://github.com/streetsidesoftware/cspell-dicts/commit/1c78d684d46705953c354d55b729f6cbbca18e1d))
+
+
+### Dependencies
+
+* The following workspace dependencies were updated
+  * devDependencies
+    * @cspell/dict-en-common-misspellings bumped to 2.2.4
+
 ## [5.4.6](https://github.com/streetsidesoftware/cspell-dicts/compare/@cspell/dict-software-terms@5.4.5...@cspell/dict-software-terms@5.4.6) (2026-10-01)
 
 

@@ -1,5 +1,12 @@
 # Change Log
 
+## [2.2.4](https://github.com/streetsidesoftware/cspell-dicts/compare/@cspell/dict-en-common-misspellings@2.2.3...@cspell/dict-en-common-misspellings@2.2.4) (2026-10-05)
+
+
+### Updates and Bug Fixes
+
+* update en-common-misspellings and software-terms suggestions from crate-ci/typos main ([#5858](https://github.com/streetsidesoftware/cspell-dicts/issues/5858)) ([1c78d68](https://github.com/streetsidesoftware/cspell-dicts/commit/1c78d684d46705953c354d55b729f6cbbca18e1d))
+
 ## [2.2.3](https://github.com/streetsidesoftware/cspell-dicts/compare/@cspell/dict-en-common-misspellings@2.2.2...@cspell/dict-en-common-misspellings@2.2.3) (2026-10-01)
 
 

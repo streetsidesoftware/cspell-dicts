@@ -22,6 +22,13 @@ See [Conventional Commits](https://conventionalcommits.org) for commit guideline
 
 
 
+## [4.1.7](https://github.com/streetsidesoftware/cspell-dicts/compare/@cspell/dict-django@4.1.6...@cspell/dict-django@4.1.7) (2026-10-05)
+
+
+### Updates and Bug Fixes
+
+* correct the license field in th_th, id_ID, sr_Cyrl, sr_Latn, and django ([#5870](https://github.com/streetsidesoftware/cspell-dicts/issues/5870)) ([a67410c](https://github.com/streetsidesoftware/cspell-dicts/commit/a67410c0eaee49665479d0479f1610847381779b))
+
 ## [4.1.6](https://github.com/streetsidesoftware/cspell-dicts/compare/@cspell/dict-django@4.1.5...@cspell/dict-django@4.1.6) (2025-12-17)
 
 

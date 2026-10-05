@@ -22,6 +22,13 @@ See [Conventional Commits](https://conventionalcommits.org) for commit guideline
 
 
 
+## [4.1.3](https://github.com/streetsidesoftware/cspell-dicts/compare/@cspell/dict-da-dk@4.1.2...@cspell/dict-da-dk@4.1.3) (2026-10-05)
+
+
+### Updates and Bug Fixes
+
+* use the unmodified GPL-3.0 and LGPL-3.0 license text ([#5874](https://github.com/streetsidesoftware/cspell-dicts/issues/5874)) ([8806309](https://github.com/streetsidesoftware/cspell-dicts/commit/8806309b8c376b6bbd0a99020889d1585eb32597))
+
 ## [4.1.2](https://github.com/streetsidesoftware/cspell-dicts/compare/@cspell/dict-da-dk@4.1.1...@cspell/dict-da-dk@4.1.2) (2025-07-19)
 
 

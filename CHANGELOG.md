@@ -1,5 +1,23 @@
 # Release Notes
 
+## [33.17.1](https://github.com/streetsidesoftware/cspell-dicts/compare/cspell-dicts@33.17.0...cspell-dicts@33.17.1) (2026-10-05)
+
+
+### Updates and Bug Fixes
+
+* correct the license field in th_th, id_ID, sr_Cyrl, sr_Latn, and django ([#5870](https://github.com/streetsidesoftware/cspell-dicts/issues/5870)) ([a67410c](https://github.com/streetsidesoftware/cspell-dicts/commit/a67410c0eaee49665479d0479f1610847381779b))
+* update en-common-misspellings and software-terms suggestions from crate-ci/typos main ([#5858](https://github.com/streetsidesoftware/cspell-dicts/issues/5858)) ([1c78d68](https://github.com/streetsidesoftware/cspell-dicts/commit/1c78d684d46705953c354d55b729f6cbbca18e1d))
+* Update README.md ([#5828](https://github.com/streetsidesoftware/cspell-dicts/issues/5828)) ([6622728](https://github.com/streetsidesoftware/cspell-dicts/commit/6622728be17f82b1752aa6f20b7385efc148a94b))
+* use the unmodified GPL-3.0 and LGPL-3.0 license text ([#5874](https://github.com/streetsidesoftware/cspell-dicts/issues/5874)) ([8806309](https://github.com/streetsidesoftware/cspell-dicts/commit/8806309b8c376b6bbd0a99020889d1585eb32597))
+* Workflow Bot -- Update Dictionaries ([#5873](https://github.com/streetsidesoftware/cspell-dicts/issues/5873)) ([ea5f5fd](https://github.com/streetsidesoftware/cspell-dicts/commit/ea5f5fd6360de15d1aaf94d674652a6c31217228))
+
+
+### Dependencies
+
+* The following workspace dependencies were updated
+  * devDependencies
+    * @cspell/dict-cspell-bundle bumped to 2.0.79
+
 ## [33.17.0](https://github.com/streetsidesoftware/cspell-dicts/compare/cspell-dicts@33.16.0...cspell-dicts@33.17.0) (2026-10-02)
 
 
