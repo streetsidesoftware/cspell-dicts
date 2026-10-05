@@ -94,7 +94,7 @@ export function parseCommandLine(argv: string[]): CommandLine {
         )
         .argument('[name]', 'the directory name for the dictionary, such as en_AU or ruby (same as --name)')
         .argument('[sources...]', 'the source word lists or Hunspell .dic files (same as --source)')
-        .optionsGroup("What it's about:")
+        .optionsGroup('Dictionary info:')
         .option('--name <name>', 'the directory name for the dictionary, such as en_AU or ruby')
         .option('--friendly-name <text>', 'a readable name, such as "Australian English"; default: from the name')
         .option(
@@ -119,7 +119,7 @@ export function parseCommandLine(argv: string[]): CommandLine {
             '--language-id <ids>',
             'file types, comma separated, such as "ruby", or "*" for any; default: "*". Give this or --locale: both "*" is an error',
         )
-        .optionsGroup('Its words:')
+        .optionsGroup('Words:')
         .option(
             '--source <file>',
             'a .txt word list or Hunspell .dic file, copied to src/; repeat it for several',
@@ -156,7 +156,7 @@ export function parseCommandLine(argv: string[]): CommandLine {
         )
         .option('--no-additional-words', 'do not create src/additional_words.txt, for words the sources lack')
         .option('--no-exclude-words', 'do not create src/exclude_words.txt, for words to leave out of the build')
-        .optionsGroup('Its tests:')
+        .optionsGroup('Tests:')
         .option(
             '--add-sample <path>',
             'a real file of the kind the dictionary is for, copied into samples/ and spell checked by its tests; repeatable',
@@ -171,7 +171,7 @@ export function parseCommandLine(argv: string[]): CommandLine {
             '--no-wikipedia-sample',
             'for a natural language, do not fetch the start of the Wikipedia article on Seattle into samples/seattle.md',
         )
-        .optionsGroup("How it's built:")
+        .optionsGroup('Build settings:')
         .option('--trie', 'store as a trie; default for Hunspell sources, and word lists over 1 MB in all')
         .option('--no-trie', 'store as plain text; default for smaller word lists')
         .option(
@@ -179,7 +179,7 @@ export function parseCommandLine(argv: string[]): CommandLine {
             'how many affix rules to chain onto a Hunspell word; higher adds word forms, but can make the build very slow; default: 1',
             depth,
         )
-        .optionsGroup('Who maintains it:')
+        .optionsGroup('Maintainers:')
         .option(
             '--contributor <person>',
             'someone who created or maintains the dictionary: "Name", "Name <email>", or "Name (url)"; repeat it for several',

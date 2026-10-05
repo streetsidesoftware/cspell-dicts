@@ -40,6 +40,9 @@ import {
 /** Word lists larger than this, in bytes, are stored as a trie by default, as the guide says. */
 const largeWordLists = 1_000_000;
 
+/** The sections the questions are grouped in, as in the help. */
+const sectionCount = 7;
+
 export type Settings = Omit<Required<Answers>, 'srcFiles'> & {
     sources: Source[];
     samples: Sample[];
@@ -61,9 +64,27 @@ export async function getAnswers(options: CommandLine, repo: Repo, cwd: string):
         throw new Error(`No terminal to prompt in. Give --yes, or all of: ${options}.`);
     }
 
+    let pendingSection: string | undefined;
+
+    /** Starts a section; its title is shown before its first question, so a section answered by options shows none. */
+    function section(n: number, title: string): void {
+        pendingSection = `\nSection (${n}/${sectionCount}): ${title}`;
+    }
+
+    function showSection(): void {
+        if (pendingSection) console.log(pendingSection);
+        pendingSection = undefined;
+    }
+
+    const ask = {
+        input: (config: Parameters<typeof input>[0]) => (showSection(), input(config)),
+        confirm: (config: Parameters<typeof confirm>[0]) => (showSection(), confirm(config)),
+        checkbox: <Value,>(config: Parameters<typeof checkbox<Value>>[0]) => (showSection(), checkbox(config)),
+    };
+
     async function text(key: TextKey, message: string, def?: string, validate?: Validate) {
         const value = given[key] ?? (noPrompts ? def : undefined);
-        if (value === undefined && !noPrompts) return input({ message, default: def, validate });
+        if (value === undefined && !noPrompts) return ask.input({ message, default: def, validate });
         const valid = validate?.(value ?? '') ?? true;
         if (valid !== true) throw new Error(`${optionForAnswer[key]}: ${valid}`);
         return value ?? '';
@@ -73,8 +94,9 @@ export async function getAnswers(options: CommandLine, repo: Repo, cwd: string):
     async function yesNo(key: BooleanKey, message: string, def: boolean, intro?: string) {
         const value = given[key] ?? (noPrompts ? def : undefined);
         if (value !== undefined) return value;
+        showSection();
         if (intro) console.log('\n' + intro);
-        return confirm({ message, default: def });
+        return ask.confirm({ message, default: def });
     }
 
     async function contributors(): Promise<string[]> {
@@ -90,7 +112,7 @@ export async function getAnswers(options: CommandLine, repo: Repo, cwd: string):
         const asked: string[] = [];
         let def = gitUserName(cwd);
         for (;;) {
-            const person = await input({
+            const person = await ask.input({
                 message:
                     'Contributor, as "Name", "Name <email>", or "Name (url)", such as a GitHub profile; empty to skip:',
                 default: def,
@@ -99,7 +121,7 @@ export async function getAnswers(options: CommandLine, repo: Repo, cwd: string):
             if (!person.trim()) return asked;
             asked.push(person.trim());
             def = undefined;
-            if (!(await confirm({ message: 'Add another contributor?', default: false }))) return asked;
+            if (!(await ask.confirm({ message: 'Add another contributor?', default: false }))) return asked;
         }
     }
 
@@ -113,7 +135,7 @@ export async function getAnswers(options: CommandLine, repo: Repo, cwd: string):
             return list.map((word) => word.trim());
         }
         if (noPrompts) return [];
-        const typed = await input({
+        const typed = await ask.input({
             message: 'Other keywords people search npm for, such as golang for Go; comma separated, empty to skip:',
         });
         return typed
@@ -137,7 +159,7 @@ export async function getAnswers(options: CommandLine, repo: Repo, cwd: string):
         const list: Source[] = [];
         if (files === undefined) {
             list.push(await askSource(name + '.txt'));
-            while (await confirm({ message: 'Add another source file?', default: false })) {
+            while (await ask.confirm({ message: 'Add another source file?', default: false })) {
                 list.push(await askSource(undefined));
             }
             return list;
@@ -176,6 +198,7 @@ export async function getAnswers(options: CommandLine, repo: Repo, cwd: string):
         const byName = new Map(list.map((sample) => [sample.name, sample]));
         const language = languageOf(locale);
         if (!noPrompts) {
+            showSection();
             console.log(
                 '\nSamples are real files of the kind this dictionary is for, such as a script or a page of text.' +
                     '\nThe tests spell check them, to show the dictionary works on real text.',
@@ -183,7 +206,7 @@ export async function getAnswers(options: CommandLine, repo: Repo, cwd: string):
         }
         if (language && options.wikipediaSample && !byName.has('seattle.md')) {
             const message = `Fetch the start of the Wikipedia article on Seattle, in ${localeName(language) ?? language}, as a sample?`;
-            if (noPrompts || (await confirm({ message, default: true }))) {
+            if (noPrompts || (await ask.confirm({ message, default: true }))) {
                 const seattle = await fetchSeattle(language);
                 if (seattle) {
                     byName.set(seattle.name, seattle);
@@ -197,10 +220,12 @@ export async function getAnswers(options: CommandLine, repo: Repo, cwd: string):
         }
         if (!noPrompts) {
             const another = () => (list.length ? 'Add another sample file?' : 'Add a sample file?');
-            while (await confirm({ message: another(), default: !list.length })) {
-                const path = await input({ message: 'Its path:', validate: (v) => checkSample(byName, v, cwd) });
+            while (await ask.confirm({ message: another(), default: !list.length })) {
+                const path = await ask.input({ message: 'Its path:', validate: (v) => checkSample(byName, v, cwd) });
                 const sample = addSample(byName, path, cwd);
-                const origin = await input({ message: 'Where it came from (URL or a few words); empty if unknown:' });
+                const origin = await ask.input({
+                    message: 'Where it came from (URL or a few words); empty if unknown:',
+                });
                 if (origin.trim()) sample.origin = origin.trim();
                 list.push(sample);
             }
@@ -228,7 +253,7 @@ export async function getAnswers(options: CommandLine, repo: Repo, cwd: string):
                     value: locale,
                 }));
                 const message = `"${item}" isn't a locale. Pick the ones you meant (none keeps "${item}"):`;
-                const picked = await checkbox({ message, choices });
+                const picked = await ask.checkbox({ message, choices });
                 items.push(...(picked.length ? picked : [item]));
             }
             locale = items.join(',');
@@ -239,28 +264,28 @@ export async function getAnswers(options: CommandLine, repo: Repo, cwd: string):
 
     /** Asks for named sources, as the options would give them. */
     async function askDefined(all: SourceOptions): Promise<void> {
-        while (await confirm({ message: 'Add a third-party source?', default: false })) {
-            const folder = await input({ message: 'Its folder:', validate: (v) => checkFolder(cwd, v) });
+        while (await ask.confirm({ message: 'Add a third-party source?', default: false })) {
+            const folder = await ask.input({ message: 'Its folder:', validate: (v) => checkFolder(cwd, v) });
             const inFolder = (v: string) => !v.trim() || checkFile(resolve(cwd, folder), v.trim());
-            const name = await input({ message: 'Its name:', default: basename(resolve(cwd, folder)) });
+            const name = await ask.input({ message: 'Its name:', default: basename(resolve(cwd, folder)) });
             all.defineSource.push(`${name}=${folder}`);
             const withLocal = async (path: string) => {
-                const local = await input({ message: `Its path in src/${name}/:`, default: path });
+                const local = await ask.input({ message: `Its path in src/${name}/:`, default: path });
                 return local === path ? `${name}=${path}` : `${name}/${local}=${path}`;
             };
             for (;;) {
-                const file = await input({
+                const file = await ask.input({
                     message: `A word list or Hunspell file in ${folder}; empty when done:`,
                     validate: inFolder,
                 });
                 if (!file.trim()) break;
                 all.addSourceFile.push(await withLocal(file.trim()));
             }
-            const license = await input({ message: 'Its license file; empty to skip:', validate: inFolder });
+            const license = await ask.input({ message: 'Its license file; empty to skip:', validate: inFolder });
             if (license.trim()) all.addSourceLicense.push(await withLocal(license.trim()));
-            const readme = await input({ message: 'Its README; empty to skip:', validate: inFolder });
+            const readme = await ask.input({ message: 'Its README; empty to skip:', validate: inFolder });
             if (readme.trim()) all.addSourceReadme.push(await withLocal(readme.trim()));
-            const url = await input({ message: 'Where it can be found (URL); empty to skip:' });
+            const url = await ask.input({ message: 'Where it can be found (URL); empty to skip:' });
             if (url.trim()) all.addSourceUrl.push(`${name}=${url.trim()}`);
         }
     }
@@ -281,11 +306,12 @@ export async function getAnswers(options: CommandLine, repo: Repo, cwd: string):
 
     async function askSource(def: string | undefined): Promise<Source> {
         for (;;) {
-            const typed = await input({ message: 'Source file:', default: def, validate: validatePath });
+            const typed = await ask.input({ message: 'Source file:', default: def, validate: validatePath });
             if (isHunspellFile(typed)) return hunspellFile(typed, cwd);
             if (checkFile(cwd, typed) === true) return wordList(typed, cwd, false);
             const message = `${typed} not found. Create an empty placeholder, src/${basename(typed)}?`;
-            if (placeholderWordLists || (await confirm({ message, default: true }))) return wordList(typed, cwd, true);
+            if (placeholderWordLists || (await ask.confirm({ message, default: true })))
+                return wordList(typed, cwd, true);
         }
     }
 
@@ -316,7 +342,7 @@ export async function getAnswers(options: CommandLine, repo: Repo, cwd: string):
         return result;
     }
 
-    // What it's about.
+    section(1, 'Dictionary Info');
     const taken = await readTakenNames(repo);
     const name = await text(
         'name',
@@ -343,7 +369,7 @@ export async function getAnswers(options: CommandLine, repo: Repo, cwd: string):
         title(friendlyName) + ' dictionary for cspell.',
     );
     const searchWords = await keywords();
-    // When it's used.
+    section(2, "When It's Used");
     // A name such as en_AU or german stands for its locale.
     const nameLocale = localeFromName(name);
     if (nameLocale && noPrompts && given.locale === undefined) {
@@ -363,10 +389,11 @@ export async function getAnswers(options: CommandLine, repo: Repo, cwd: string):
         anyLocale && !noPrompts ? undefined : '*',
         validateLanguageId(anyLocale),
     );
-    // Its words, then its tests.
+    section(3, 'Words');
     const sources = await allSources(name);
+    section(4, 'Tests');
     const samples = await allSamples(locale);
-    // How it's built, who maintains it, and what to do now.
+    section(5, 'Build Settings');
     const isHunspell = sources.some((source) => source.files.some((f) => isHunspellFile(f.path)));
     const useTrie = await yesNo(
         'useTrie',
@@ -374,7 +401,9 @@ export async function getAnswers(options: CommandLine, repo: Repo, cwd: string):
         isHunspell || wordListBytes(sources) > largeWordLists,
         'A trie is much smaller for large word lists.',
     );
+    section(6, 'Maintainers');
     const people = await contributors();
+    section(7, 'Finish');
     const doBuild = await yesNo(
         'doBuild',
         'Build it now?',

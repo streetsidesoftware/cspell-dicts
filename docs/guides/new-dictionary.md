@@ -96,21 +96,21 @@ Each field is described in [Create-dictionary options](#create-dictionary-option
 
 | Group               | Field                                             | Option                                        | Summary                                                       |
 | ------------------- | ------------------------------------------------- | --------------------------------------------- | ------------------------------------------------------------- |
-| What it's about     | [name](#name)                                     | `<name>` or `--name`                          | The directory name, such as `en_AU` or `ruby`.                |
+| Dictionary info     | [name](#name)                                     | `<name>` or `--name`                          | The directory name, such as `en_AU` or `ruby`.                |
 |                     | [friendly name](#friendly-name)                   | `--friendly-name`                             | A readable name, such as `Australian English`.                |
 |                     | [description](#description)                       | `--description`                               | The words it covers. Required, unless the name is a language. |
 |                     | [npm description](#npm-description)               | `--package-description`                       | The description npm shows.                                    |
 |                     | [keywords](#keywords)                             | `--keyword`                                   | Other keywords people search npm for, such as `golang`.       |
 | When it's used      | [locale](#locale)                                 | `--locale`                                    | The languages it's enabled for, such as `en-AU`.              |
 |                     | [file type](#file-type)                           | `--language-id`                               | The file types it's enabled for, such as `ruby`.              |
-| Its words           | [source file](#source-file)                       | `<path/to/source/words>` or `--source`        | The word lists and Hunspell `.dic` files to build from.       |
+| Words               | [source file](#source-file)                       | `<path/to/source/words>` or `--source`        | The word lists and Hunspell `.dic` files to build from.       |
 |                     | [third-party sources](#third-party-sources)       | `--define-source`, `--add-source-*`           | Sources someone else maintains, each in `src/<name>/`.        |
 |                     | [placeholder word lists](#placeholder-word-lists) | `--placeholder-word-lists`                    | Start a missing word list empty.                              |
 |                     | [word files](#word-files)                         | `--no-additional-words`, `--no-exclude-words` | Leave out the files for adding and removing words by hand.    |
-| Its tests           | [samples](#samples)                               | `--add-sample`, `--add-sample-origin`         | Real files its tests spell check, and where each came from.   |
-| How it's built      | [store as trie](#store-as-trie)                   | `--trie` or `--no-trie`                       | Store it as a trie, for Hunspell files and large lists.       |
+| Tests               | [samples](#samples)                               | `--add-sample`, `--add-sample-origin`         | Real files its tests spell check, and where each came from.   |
+| Build settings      | [store as trie](#store-as-trie)                   | `--trie` or `--no-trie`                       | Store it as a trie, for Hunspell files and large lists.       |
 |                     | [Hunspell depth](#hunspell-depth)                 | `--hunspell-depth`                            | How many affix rules to apply to each Hunspell word.          |
-| Who maintains it    | [contributors](#contributors)                     | `--contributor`                               | The people who create and maintain this dictionary.           |
+| Maintainers         | [contributors](#contributors)                     | `--contributor`                               | The people who create and maintain this dictionary.           |
 | Running the command | [run build](#run-build)                           | `--build` or `--no-build`                     | Build it now.                                                 |
 |                     | [no questions](#no-questions)                     | `--yes`                                       | Use the defaults for anything not given, and never ask.       |
 
@@ -197,7 +197,7 @@ pnpm exec cspell link remove ./cspell-ext.json
 Each option answers one of the questions `pnpm create-dictionary` asks. A question is skipped when its option is given.
 With `--yes`, nothing is asked.
 
-#### What it's about
+#### Dictionary info
 
 ##### Name
 
@@ -302,7 +302,7 @@ Separate several with commas. Without it, the file type is `*`, which matches an
 
 The locale and the file type can't both be `*`. That would enable the dictionary for every file in every language.
 
-#### Its words
+#### Words
 
 ##### Source file
 
@@ -402,7 +402,7 @@ pnpm create-dictionary ruby ruby-words.txt --no-additional-words --no-exclude-wo
 
 A word list you give can't be named `README.md`, or like a word file that's created.
 
-#### Its tests
+#### Tests
 
 ##### Samples
 
@@ -429,7 +429,7 @@ simply left out.
 Without any samples, the command warns. The tests still check `samples/sample-words-in-dictionary.txt`, the first few
 dozen words of the sources. It's written once, when the dictionary is created, and you can edit it like any sample.
 
-#### How it's built
+#### Build settings
 
 ##### Store as trie
 
@@ -462,7 +462,7 @@ Without it, the depth is 1. Use 0 to keep only the stems, as Hebrew does, when e
 common word forms are missing. It's the `maxDepth` in the dictionary's `cspell-tools.config.yaml`, so you can change it
 there later.
 
-#### Who maintains it
+#### Maintainers
 
 ##### Contributors
 
