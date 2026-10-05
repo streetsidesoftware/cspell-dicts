@@ -68,8 +68,12 @@ export async function getAnswers(options: CommandLine, repo: Repo, cwd: string):
         return value ?? '';
     }
 
-    async function yesNo(key: BooleanKey, message: string, def: boolean) {
-        return given[key] ?? (noPrompts ? def : confirm({ message, default: def }));
+    /** Asks a yes/no question, with an optional explanation on the line above it. */
+    async function yesNo(key: BooleanKey, message: string, def: boolean, intro?: string) {
+        const value = given[key] ?? (noPrompts ? def : undefined);
+        if (value !== undefined) return value;
+        if (intro) console.log('\n' + intro);
+        return confirm({ message, default: def });
     }
 
     async function contributors(): Promise<string[]> {
@@ -185,12 +189,8 @@ export async function getAnswers(options: CommandLine, repo: Repo, cwd: string):
             }
         }
         if (!noPrompts) {
-            while (
-                await confirm({
-                    message: 'A sample is a real file of the kind this dictionary is for. Add a sample?',
-                    default: !list.length,
-                })
-            ) {
+            console.log('\nA sample is a real file of the kind this dictionary is for. Its tests spell check it.');
+            while (await confirm({ message: 'Add a sample?', default: !list.length })) {
                 const path = await input({ message: 'Its path:', validate: (v) => checkSample(byName, v, cwd) });
                 const sample = addSample(byName, path, cwd);
                 const origin = await input({ message: 'Where it came from (URL or a few words); empty if unknown:' });
@@ -322,13 +322,15 @@ export async function getAnswers(options: CommandLine, repo: Repo, cwd: string):
     const isHunspell = sources.some((source) => source.files.some((f) => isHunspellFile(f.path)));
     const useTrie = await yesNo(
         'useTrie',
-        'A trie is much smaller for large word lists. Store it as a trie?',
+        'Store it as a trie?',
         isHunspell || wordListBytes(sources) > largeWordLists,
+        'A trie is much smaller for large word lists.',
     );
     const doBuild = await yesNo(
         'doBuild',
-        isHunspell ? 'A Hunspell dictionary can take a long time to build. Build it now?' : 'Build it now?',
+        'Build it now?',
         !isHunspell,
+        isHunspell ? 'A Hunspell dictionary can take a long time to build.' : undefined,
     );
 
     const samples = await allSamples(locale);
