@@ -11,7 +11,7 @@ import { createPackage } from './lib/create-package.mts';
 import { parseCommandLine } from './lib/options.mts';
 import { setUpPackage } from './lib/pnpm.mts';
 import { findRepoRoot, openRepo } from './lib/repo.mts';
-import { fail, heading } from './lib/style.mts';
+import { fail, heading, info, stopped } from './lib/output.mts';
 
 async function main(): Promise<void> {
     const options = parseCommandLine(process.argv.slice(2));
@@ -24,7 +24,7 @@ async function main(): Promise<void> {
     const settings = await getAnswers(options, repo, cwd);
     const packageDir = createPackage(settings, repo);
     setUpPackage(packageDir, repo, { install: !options.skipInstall, build: settings.doBuild });
-    if (!settings.doBuild) console.log('%s', notBuilt(relative(rootDir, packageDir), settings));
+    if (!settings.doBuild) info('%s', notBuilt(relative(rootDir, packageDir), settings));
 }
 
 function notBuilt(dir: string, settings: Settings): string {
@@ -41,7 +41,7 @@ try {
     await main();
 } catch (e) {
     // Ctrl+C at a prompt.
-    if (e instanceof Error && e.name === 'ExitPromptError') console.error('Stopped. Nothing was written.');
+    if (e instanceof Error && e.name === 'ExitPromptError') stopped();
     else fail(e instanceof Error ? e.message : String(e));
     process.exitCode = 1;
 }

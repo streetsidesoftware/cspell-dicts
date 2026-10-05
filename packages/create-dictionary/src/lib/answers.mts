@@ -43,25 +43,13 @@ import {
     validateDescription,
     validateLanguageId,
 } from './validate.mts';
-import { explain, heading, sectionTitle, warn } from './style.mts';
+import { explain, header, info, section as showSectionTitle, warn } from './output.mts';
 
 /** Word lists larger than this, in bytes, are stored as a trie by default, as the guide says. */
 const largeWordLists = 1_000_000;
 
 /** The sections the questions are grouped in, as in the help. */
 const sectionCount = 6;
-
-/** Shown before the first question. */
-const intro = () =>
-    [
-        '',
-        heading('Create a dictionary for cspell'),
-        '',
-        `The questions come in ${sectionCount} sections. Then the dictionary is created, in a new folder in dictionaries/.`,
-        'Press Enter to accept the default shown in (parentheses). Nothing is written until the last answer; Ctrl+C stops.',
-        'Every answer can also be given as an option: pnpm create-dictionary --help',
-        'Guide: docs/guides/new-dictionary.md',
-    ].join('\n');
 
 export type Settings = Omit<Required<Answers>, 'srcFiles'> & {
     sources: Source[];
@@ -94,7 +82,7 @@ export async function getAnswers(options: CommandLine, repo: Repo, cwd: string):
     }
 
     function showSection(): void {
-        if (pendingSection) console.log('\n%s', sectionTitle(pendingSection));
+        if (pendingSection) showSectionTitle(pendingSection);
         pendingSection = undefined;
     }
 
@@ -235,7 +223,7 @@ export async function getAnswers(options: CommandLine, repo: Repo, cwd: string):
                     byName.set(seattle.name, seattle);
                     list.push(seattle);
                 } else {
-                    console.log(
+                    info(
                         "Couldn't fetch the Wikipedia article on Seattle in %s, so there's no samples/seattle.md.",
                         localeName(language) ?? language,
                     );
@@ -407,7 +395,15 @@ export async function getAnswers(options: CommandLine, repo: Repo, cwd: string):
         return result;
     }
 
-    if (!noPrompts) console.log(intro());
+    if (!noPrompts) {
+        header(
+            'Create a dictionary for cspell',
+            `The questions come in ${sectionCount} sections. Then the dictionary is created, in a new folder in dictionaries/.`,
+            'Press Enter to accept the default shown in (parentheses). Nothing is written until the last answer; Ctrl+C stops.',
+            'Every answer can also be given as an option: pnpm create-dictionary --help',
+            'Guide: docs/guides/new-dictionary.md',
+        );
+    }
     section(1, 'Dictionary Info');
     const taken = await readTakenNames(repo);
     const name = await text(
@@ -417,7 +413,7 @@ export async function getAnswers(options: CommandLine, repo: Repo, cwd: string):
         nameValidator(repo, taken),
     );
     const id = toPackageName(name);
-    console.log('Package @cspell/dict-%s, dictionary ID %s.', id, id);
+    info('Package @cspell/dict-%s, dictionary ID %s.', id, id);
     const friendlyName = await text(
         'friendlyName',
         'Friendly name, such as "US English" or "Medical Terms":',
@@ -439,7 +435,7 @@ export async function getAnswers(options: CommandLine, repo: Repo, cwd: string):
     // A name such as en_AU or german stands for its locale.
     const nameLocale = localeFromName(name);
     if (nameLocale && noPrompts && given.locale === undefined) {
-        console.log('The locale is %s, from the name. Give --locale to change it.', nameLocale);
+        info('The locale is %s, from the name. Give --locale to change it.', nameLocale);
     }
     // A natural language sets the locale, and anything else the file type, so only one of them is asked.
     const isSet = (value: string | undefined) => value !== undefined && value.trim() !== '*';
