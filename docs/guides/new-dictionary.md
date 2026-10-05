@@ -273,6 +273,10 @@ When the command asks, separate several keywords with commas. One `--keyword` ca
 
 #### When it's used
 
+A natural language dictionary sets the locale, and any other dictionary sets the file type. When neither is given, the
+command first asks which kind this dictionary is, then asks only that one. A name that is a language skips that
+question.
+
 ##### Locale
 
 The languages the dictionary is enabled for. Use it for a natural language.

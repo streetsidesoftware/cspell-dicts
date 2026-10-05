@@ -1,7 +1,7 @@
 import { statSync } from 'node:fs';
 import { basename, resolve } from 'node:path';
 
-import { checkbox, confirm, input } from '@inquirer/prompts';
+import { checkbox, confirm, input, select } from '@inquirer/prompts';
 
 import { title, toFriendlyName, toPackageName } from './names.mts';
 import { type Answers, type CommandLine, optionForAnswer } from './options.mts';
@@ -97,6 +97,7 @@ export async function getAnswers(options: CommandLine, repo: Repo, cwd: string):
         input: (config: Parameters<typeof input>[0]) => (showSection(), input(config)),
         confirm: (config: Parameters<typeof confirm>[0]) => (showSection(), confirm(config)),
         checkbox: <Value,>(config: Parameters<typeof checkbox<Value>>[0]) => (showSection(), checkbox(config)),
+        select: <Value,>(config: Parameters<typeof select<Value>>[0]) => (showSection(), select(config)),
     };
 
     async function text(key: TextKey, message: string, def?: string, validate?: Validate) {
@@ -283,16 +284,20 @@ export async function getAnswers(options: CommandLine, repo: Repo, cwd: string):
      * The locale. When the name stands for a language and the locale is asked, its locales are offered as a checklist,
      * with the one from the name ticked; "Something else" asks for it as text.
      */
-    async function askLocale(nameLocale: string | undefined): Promise<string> {
-        const typed = async (def: string) => {
+    async function askLocale(nameLocale: string | undefined, required: boolean): Promise<string> {
+        const typed = async (def: string | undefined) => {
             const value = await text(
                 'locale',
-                'Locales, the natural languages it is for, comma separated, such as "en,en-US", or names such as "English"; "*" for any:',
+                required
+                    ? 'Locales, the natural languages it is for, comma separated, such as "en,en-US", or names such as "English":'
+                    : 'Locales, the natural languages it is for, comma separated, such as "en,en-US", or names such as "English"; "*" for any:',
                 def,
+                required ? (v) => (v.trim() && v.trim() !== '*') || 'Give a locale or a language name.' : undefined,
             );
             return value.trim() ? checkedLocale(value) : '';
         };
-        if (!nameLocale || noPrompts || given.locale !== undefined) return typed(nameLocale ?? '*');
+        if (!nameLocale || noPrompts || given.locale !== undefined)
+            return typed(nameLocale ?? (required ? undefined : '*'));
         const language = nameLocale.split('-')[0];
         const related = knownLocales().filter(({ locale }) => locale === language || locale.startsWith(language + '-'));
         if (!related.some(({ locale }) => locale === nameLocale)) {
@@ -310,7 +315,7 @@ export async function getAnswers(options: CommandLine, repo: Repo, cwd: string):
         const picked = await ask.checkbox({ message: 'Locales for this dictionary:', choices });
         const locales = picked.filter((locale) => locale !== other);
         if (picked.includes(other) || !locales.length) {
-            const more = await typed(locales.length ? '' : '*');
+            const more = await typed(locales.length ? '' : undefined);
             if (more && more !== '*') locales.push(more);
         }
         return locales.length ? locales.join(',') : '*';
@@ -430,14 +435,32 @@ export async function getAnswers(options: CommandLine, repo: Repo, cwd: string):
     if (nameLocale && noPrompts && given.locale === undefined) {
         console.log(`The locale is ${nameLocale}, from the name. Give --locale to change it.`);
     }
-    const locale = await askLocale(nameLocale);
+    // A natural language sets the locale, and anything else the file type, so only one of them is asked.
+    const isSet = (value: string | undefined) => value !== undefined && value.trim() !== '*';
+    let kind: 'language' | 'files' | undefined;
+    if (isSet(given.locale) || (nameLocale && !isSet(given.languageId))) kind = 'language';
+    else if (isSet(given.languageId)) kind = 'files';
+    else if (!noPrompts) {
+        kind = await ask.select({
+            message: 'What is this dictionary for?',
+            choices: [
+                { name: 'A natural language, such as German or Australian English', value: 'language' as const },
+                { name: 'Programming languages or file types, such as Ruby or Markdown', value: 'files' as const },
+            ],
+        });
+    }
+    const locale =
+        kind === 'files' ? (given.locale ?? '*') : await askLocale(nameLocale, kind === 'language' && !noPrompts);
     const anyLocale = locale.trim() === '*';
-    const languageId = await text(
-        'languageId',
-        'File type, the programming languages or file types it is for, such as "typescript" or "go"; "*" for any:',
-        anyLocale && !noPrompts ? undefined : '*',
-        validateLanguageId(anyLocale),
-    );
+    const languageId =
+        kind === 'language' && !anyLocale && given.languageId === undefined
+            ? '*'
+            : await text(
+                  'languageId',
+                  'File types, the programming languages or file types it is for, comma separated, such as "ruby" or "markdown":',
+                  anyLocale && !noPrompts ? undefined : '*',
+                  validateLanguageId(anyLocale),
+              );
     section(3, 'Words');
     const sources = await allSources(name);
     section(4, 'Tests');
