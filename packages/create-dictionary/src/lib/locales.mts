@@ -132,3 +132,16 @@ export function friendlyNameFromLocale(name: string): string | undefined {
         localeName(locale)?.toLowerCase() === name.toLowerCase().replaceAll(/[-_]/g, ' ');
     return whole ? localeName(locale) : undefined;
 }
+
+/**
+ * A name that is a locale or a language, written the repo's way: `en-au` gives `en_AU`, `sr-latn` gives `sr_Latn`, and
+ * `German` gives `german`. Any other name, including one that only starts with a locale, is returned as it is.
+ */
+export function conventionalName(name: string): string {
+    const locale = localeFromName(name);
+    if (!locale) return name;
+    if (canonical(name.replaceAll('_', '-'))?.toLowerCase() === locale.toLowerCase())
+        return locale.replaceAll('-', '_');
+    if (localeName(locale)?.toLowerCase() === name.toLowerCase().replaceAll(/[-_]/g, ' ')) return name.toLowerCase();
+    return name;
+}

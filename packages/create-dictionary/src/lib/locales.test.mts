@@ -1,7 +1,14 @@
 import assert from 'node:assert/strict';
 import { describe, it } from 'node:test';
 
-import { findLocales, friendlyNameFromLocale, localeFromName, localeName, localeWarnings } from './locales.mts';
+import {
+    conventionalName,
+    findLocales,
+    friendlyNameFromLocale,
+    localeFromName,
+    localeName,
+    localeWarnings,
+} from './locales.mts';
 
 describe('localeName', () => {
     it('names known locales, with "_" or "-"', () => {
@@ -86,5 +93,21 @@ describe('friendlyNameFromLocale', () => {
     it('leaves a name alone when the locale is only part of it', () => {
         assert.equal(friendlyNameFromLocale('en_GB-legacy'), undefined);
         assert.equal(friendlyNameFromLocale('medical_terms'), undefined);
+    });
+});
+
+describe('conventionalName', () => {
+    it('writes a locale with "_", the language in lowercase and the region in uppercase', () => {
+        assert.equal(conventionalName('en-au'), 'en_AU');
+        assert.equal(conventionalName('EN_au'), 'en_AU');
+        assert.equal(conventionalName('sr-latn'), 'sr_Latn');
+    });
+
+    it('writes a language name in lowercase', () => {
+        assert.equal(conventionalName('German'), 'german');
+    });
+
+    it('leaves other names alone', () => {
+        for (const name of ['ruby', 'Medical_Terms', 'en_GB-legacy']) assert.equal(conventionalName(name), name);
     });
 });

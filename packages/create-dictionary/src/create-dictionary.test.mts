@@ -2,7 +2,7 @@
 
 import assert from 'node:assert/strict';
 import { spawnSync } from 'node:child_process';
-import { existsSync, mkdirSync, mkdtempSync, readFileSync, rmSync, writeFileSync } from 'node:fs';
+import { existsSync, mkdirSync, mkdtempSync, readdirSync, readFileSync, rmSync, writeFileSync } from 'node:fs';
 import { tmpdir } from 'node:os';
 import { join } from 'node:path';
 import { after, before, describe, it } from 'node:test';
@@ -204,6 +204,17 @@ describe('a new package', () => {
         assert.match(packageFile('de_CH', 'cspell-ext.json'), /"locale": "de-CH"/);
         assert.match(packageFile('de_CH', 'cspell-ext.json'), /"name": "Swiss High German"/);
         assert.match(packageFile('de_CH', 'cspell-ext.json'), /"description": "Swiss High German dictionary"/);
+    });
+
+    it("writes a language or locale name the repo's way", () => {
+        const result = create('--yes', 'German', '--placeholder-word-lists', '--no-build', '--no-wikipedia-sample');
+        assert.equal(result.code, 0, result.stderr);
+        assert.match(result.stdout, /The name is german, as dictionaries for a language are named/);
+        // Compare names: on macOS, the file system ignores case.
+        const names = readdirSync(join(root, 'dictionaries'));
+        assert.ok(names.includes('german'));
+        assert.ok(!names.includes('German'));
+        assert.match(packageFile('german', 'cspell-ext.json'), /"locale": "de"/);
     });
 
     it('warns about a locale that is a name, and keeps it', () => {

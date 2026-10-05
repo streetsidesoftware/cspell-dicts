@@ -8,6 +8,7 @@ import { type Answers, type CommandLine, optionForAnswer } from './options.mts';
 import { gitUserName, readTakenNames, type Repo } from './repo.mts';
 import { isHunspellFile } from './hunspell.mts';
 import {
+    conventionalName,
     findLocales,
     friendlyNameFromLocale,
     knownLocales,
@@ -426,12 +427,19 @@ export async function getAnswers(options: CommandLine, repo: Repo, cwd: string):
     }
     section(1, 'Dictionary Info');
     const taken = await readTakenNames(repo);
-    const name = await text(
+    const typedName = await text(
         'name',
         'Directory name, such as en_US or medical-terms:',
         undefined,
         nameValidator(repo, taken),
     );
+    // A locale or language as the name follows the repo's convention, such as en_AU or german.
+    const name = conventionalName(typedName);
+    if (name !== typedName) {
+        const valid = nameValidator(repo, taken)(name);
+        if (valid !== true) throw new Error(`${optionForAnswer.name}: ${valid}`);
+        info('The name is %s, as dictionaries for a language are named.', literal(name));
+    }
     const id = toPackageName(name);
     info('Package %s, dictionary ID %s.', literal(`@cspell/dict-${id}`), literal(id));
     const friendlyName = await text(
