@@ -54,26 +54,31 @@ const written = ['README.md', 'cspell.json', wordSample, sampleSources];
 export function parseSamples(options: SampleOptions, cwd: string, existing: string[] = []): Sample[] {
     const samples = new Map<string, Sample>(existing.map((name) => [name, { name }]));
     for (const path of options.addSample) addSample(samples, path, cwd);
-    const byFile = (option: string, what: string, values: string[], set: (sample: Sample, value: string) => void) => {
-        for (const value of values) {
-            const at = value.indexOf('=');
-            if (at < 0) throw new Error(`${option}: "${value}" needs <file>=<${what}>.`);
-            const file = value.slice(0, at);
-            const sample = samples.get(file);
-            if (!sample || existing.includes(file)) {
-                throw new Error(`${option}: no sample is named ${file}. Add it with --add-sample.`);
-            }
-            set(sample, value.slice(at + 1).trim());
-        }
-    };
-    byFile('--add-sample-origin', 'origin', options.addSampleOrigin, (sample, origin) => (sample.origin = origin));
-    byFile(
-        '--add-sample-license',
-        'license',
-        options.addSampleLicense,
-        (sample, license) => (sample.license = license),
-    );
+    for (const value of options.addSampleOrigin) {
+        const [file, origin] = fileAndValue('--add-sample-origin', 'origin', value);
+        newSample(samples, existing, '--add-sample-origin', file).origin = origin;
+    }
+    for (const value of options.addSampleLicense) {
+        const [file, license] = fileAndValue('--add-sample-license', 'license', value);
+        newSample(samples, existing, '--add-sample-license', file).license = license;
+    }
     return [...samples.values()].filter((sample) => !existing.includes(sample.name));
+}
+
+/** An option's `<file>=<value>`, split at the first `=`. */
+function fileAndValue(option: string, what: string, value: string): [string, string] {
+    const at = value.indexOf('=');
+    if (at < 0) throw new Error(`${option}: "${value}" needs <file>=<${what}>.`);
+    return [value.slice(0, at), value.slice(at + 1).trim()];
+}
+
+/** The sample an option names, which must be one added with `--add-sample`. */
+function newSample(samples: Map<string, Sample>, existing: string[], option: string, file: string): Sample {
+    const sample = samples.get(file);
+    if (!sample || existing.includes(file)) {
+        throw new Error(`${option}: no sample is named ${file}. Add it with --add-sample.`);
+    }
+    return sample;
 }
 
 /** Adds a sample, keyed by its file name in `samples/`. */
@@ -99,18 +104,18 @@ export function checkSample(samples: Map<string, Sample>, path: string, cwd: str
 
 /** What's missing from the samples, and why it matters. */
 export function sampleWarnings(samples: Sample[], locale: string): string[] {
-    if (!samples.length) {
-        const language = languageOf(locale);
-        return [
-            'no samples. A few real files of the kind this dictionary is for show that it works on real text. Add them to samples/.' +
-                (language
-                    ? ` For a natural language, copy the start of the Wikipedia article on Seattle into samples/seattle.md: ${searchSeattle(language)}`
-                    : ''),
-        ];
-    }
+    if (!samples.length) return [noSamplesWarning(languageOf(locale))];
     return samples
         .filter((sample) => !sample.origin)
         .map((sample) => `the sample ${sample.name} has no origin. Give it with --add-sample-origin.`);
+}
+
+function noSamplesWarning(language: string | undefined): string {
+    const warning =
+        'no samples. A few real files of the kind this dictionary is for show that it works on real text. Add them to samples/.';
+    if (!language) return warning;
+    const seattle = `For a natural language, copy the start of the Wikipedia article on Seattle into samples/seattle.md: ${searchSeattle(language)}`;
+    return `${warning} ${seattle}`;
 }
 
 /** The Wikipedia language code of the first locale, such as `de` for `de-DE`, or undefined for any language. */
@@ -150,36 +155,49 @@ export function articleOf(titleOrUrl: string, language: string): Article {
  * network connection, or when there's no such article.
  */
 export async function fetchArticle(article: Article, getJson: GetJson = fetchJson): Promise<Sample | undefined> {
-    const { language } = article;
-    const api = (lang: string, query: string) =>
-        `https://${lang}.wikipedia.org/w/api.php?action=query&format=json&formatversion=2&${query}`;
-    const extractOf = async (title: string) => {
-        const query = `prop=extracts|pageprops&ppprop=disambiguation&explaintext=1&exintro=1&redirects=1&titles=${encodeURIComponent(title)}`;
-        const page = ((await getJson(api(language, query))) as Pages).query?.pages?.[0];
-        const extract = page?.extract?.trim();
-        // A disambiguation page, such as Argentina on German Wikipedia, only lists other articles.
-        if (!extract || page?.pageprops?.disambiguation !== undefined) return undefined;
-        return { title: page?.title ?? title, extract };
+    const found = await findArticle(article, getJson).catch(() => undefined);
+    if (!found) return undefined;
+    const url = `https://${article.language}.wikipedia.org/wiki/${encodeURIComponent(found.title.replaceAll(' ', '_'))}`;
+    const text = found.extract.split(/\n+/).join('\n\n');
+    return {
+        name: sampleName(article.title),
+        text: `# [${found.title}](${url})\n\n${text}\n`,
+        origin: `[Wikipedia: ${found.title}](${url})`,
+        license: wikipediaLicense,
     };
-    try {
-        let found = await extractOf(article.title);
-        if (!found && language !== 'en') {
-            const query = `prop=langlinks&redirects=1&titles=${encodeURIComponent(article.title)}&lllang=${encodeURIComponent(language)}`;
-            const title = ((await getJson(api('en', query))) as Pages).query?.pages?.[0]?.langlinks?.[0]?.title;
-            if (title) found = await extractOf(title);
-        }
-        if (!found) return undefined;
-        const url = `https://${language}.wikipedia.org/wiki/${encodeURIComponent(found.title.replaceAll(' ', '_'))}`;
-        const text = found.extract.split(/\n+/).join('\n\n');
-        return {
-            name: sampleName(article.title),
-            text: `# [${found.title}](${url})\n\n${text}\n`,
-            origin: `[Wikipedia: ${found.title}](${url})`,
-            license: wikipediaLicense,
-        };
-    } catch {
-        return undefined;
-    }
+}
+
+interface Found {
+    title: string;
+    extract: string;
+}
+
+/** The article's lead section, by its title in its language, or else by its title in English. */
+async function findArticle({ language, title }: Article, getJson: GetJson): Promise<Found | undefined> {
+    const found = await leadSection(language, title, getJson);
+    if (found || language === 'en') return found;
+    const translated = await titleIn(language, title, getJson);
+    return translated ? leadSection(language, translated, getJson) : undefined;
+}
+
+/** An article's lead section as plain text, or undefined for a missing article or a disambiguation page. */
+async function leadSection(language: string, title: string, getJson: GetJson): Promise<Found | undefined> {
+    const query = `prop=extracts|pageprops&ppprop=disambiguation&explaintext=1&exintro=1&redirects=1&titles=${encodeURIComponent(title)}`;
+    const page = ((await getJson(api(language, query))) as Pages).query?.pages?.[0];
+    const extract = page?.extract?.trim();
+    // A disambiguation page, such as Argentina on German Wikipedia, only lists other articles.
+    if (!extract || page?.pageprops?.disambiguation !== undefined) return undefined;
+    return { title: page?.title ?? title, extract };
+}
+
+/** The title, in a language, of the article with this English title. */
+async function titleIn(language: string, englishTitle: string, getJson: GetJson): Promise<string | undefined> {
+    const query = `prop=langlinks&redirects=1&titles=${encodeURIComponent(englishTitle)}&lllang=${encodeURIComponent(language)}`;
+    return ((await getJson(api('en', query))) as Pages).query?.pages?.[0]?.langlinks?.[0]?.title;
+}
+
+function api(language: string, query: string): string {
+    return `https://${language}.wikipedia.org/w/api.php?action=query&format=json&formatversion=2&${query}`;
 }
 
 /** The start of the Wikipedia article on Seattle in a language, as `seattle.md`. */
