@@ -118,7 +118,7 @@ export async function getAnswers(options: CommandLine, repo: Repo, cwd: string):
         const value = given[key] ?? (noPrompts ? def : undefined);
         if (value !== undefined) return value;
         showSection();
-        if (intro) console.log('\n%s', explain(intro));
+        if (intro) console.log('\n%s\n', explain(intro));
         return ask.confirm({ message, default: def });
     }
 
