@@ -22,6 +22,7 @@ import {
     languageOf,
     parseSamples,
     type Sample,
+    samplesExplanation,
     sampleWarnings,
 } from './samples.mts';
 import {
@@ -221,16 +222,13 @@ export async function getAnswers(options: CommandLine, repo: Repo, cwd: string):
     }
 
     /** The samples from the options, the Wikipedia article on Seattle for a natural language, then from the prompts. */
-    async function allSamples(locale: string): Promise<Sample[]> {
+    async function allSamples(locale: string, languageId: string): Promise<Sample[]> {
         const list = parseSamples(options.sampleOptions, cwd);
         const byName = new Map(list.map((sample) => [sample.name, sample]));
         const language = languageOf(locale);
         if (!noPrompts) {
             showSection();
-            explain(
-                'Samples are real files of the kind this dictionary is for, such as a script or a page of text.',
-                'The tests spell check them, to show the dictionary works on real text.',
-            );
+            explain(...samplesExplanation(locale, languageId));
         }
         if (language && options.wikipediaSample && !byName.has('seattle.md')) {
             const message = `Fetch the start of the Wikipedia article on Seattle, in ${localeName(language) ?? language}, as a sample?`;
@@ -488,7 +486,7 @@ export async function getAnswers(options: CommandLine, repo: Repo, cwd: string):
     section(3, 'Words');
     const sources = await allSources(name);
     section(4, 'Samples');
-    const samples = await allSamples(locale);
+    const samples = await allSamples(locale, languageId);
     // The trie is chosen, never asked: few people know what one is. --trie and --no-trie override it.
     const isHunspell = sources.some((source) => source.files.some((f) => isHunspellFile(f.path)));
     const useTrie = given.useTrie ?? (isHunspell || wordListBytes(sources) > largeWordLists);

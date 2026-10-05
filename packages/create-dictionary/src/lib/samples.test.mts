@@ -9,6 +9,7 @@ import {
     languageOf,
     noSampleOptions,
     parseSamples,
+    samplesExplanation,
     sampleWarnings,
     sampleWords,
     samplesReadme,
@@ -105,5 +106,15 @@ describe('sampleWords', () => {
 
     it('stops at the count', () => {
         assert.deepEqual(sampleWords([join(root, 'en_XX.dic')], 2), ['walk', 'talk']);
+    });
+});
+
+describe('samplesExplanation', () => {
+    it('asks for Markdown in the language, for a natural language', () => {
+        assert.match(samplesExplanation('de-CH', '*')[0], /^Samples are Markdown files written in German, /);
+    });
+
+    it('asks for files of the file types, for anything else', () => {
+        assert.match(samplesExplanation('*', 'ruby, erb')[0], /^Samples are ruby or erb files from real projects, /);
     });
 });

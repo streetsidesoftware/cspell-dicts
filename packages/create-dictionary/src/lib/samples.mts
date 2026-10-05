@@ -1,6 +1,8 @@
 import { existsSync, readFileSync, statSync } from 'node:fs';
 import { basename, extname, resolve } from 'node:path';
 
+import { localeName } from './locales.mts';
+
 /** A real sample: a file of the kind the dictionary is for, in `samples/`. */
 export interface Sample {
     /** Its file name in `samples/`. */
@@ -172,4 +174,20 @@ export function sampleWords(files: string[], count = 50): string[] {
         }
     }
     return words;
+}
+
+/** What samples to add, for this kind of dictionary. */
+export function samplesExplanation(locale: string, languageId: string): string[] {
+    const language = languageOf(locale);
+    const check = "Its tests spell check them with this dictionary, so they're real text it must accept.";
+    if (language) {
+        const name = localeName(language) ?? language;
+        return [`Samples are Markdown files written in ${name}, such as an article or a page of documentation.`, check];
+    }
+    const types = languageId
+        .split(',')
+        .map((type) => type.trim())
+        .filter((type) => type && type !== '*');
+    const files = types.length ? `${types.join(' or ')} files` : 'files of the kind this dictionary is for';
+    return [`Samples are ${files} from real projects, such as a short script or a source file.`, check];
 }
