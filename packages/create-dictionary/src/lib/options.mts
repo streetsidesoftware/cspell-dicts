@@ -156,7 +156,7 @@ export function parseCommandLine(argv: string[]): CommandLine {
         )
         .option('--no-additional-words', 'do not create src/additional_words.txt, for words the sources lack')
         .option('--no-exclude-words', 'do not create src/exclude_words.txt, for words to leave out of the build')
-        .optionsGroup('Tests:')
+        .optionsGroup('Samples:')
         .option(
             '--add-sample <path>',
             'a real file of the kind the dictionary is for, copied into samples/ and spell checked by its tests; repeatable',

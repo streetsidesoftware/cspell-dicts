@@ -107,7 +107,7 @@ Each field is described in [Create-dictionary options](#create-dictionary-option
 |                     | [third-party sources](#third-party-sources)       | `--define-source`, `--add-source-*`           | Sources someone else maintains, each in `src/<name>/`.        |
 |                     | [placeholder word lists](#placeholder-word-lists) | `--placeholder-word-lists`                    | Start a missing word list empty.                              |
 |                     | [word files](#word-files)                         | `--no-additional-words`, `--no-exclude-words` | Leave out the files for adding and removing words by hand.    |
-| Tests               | [samples](#samples)                               | `--add-sample`, `--add-sample-origin`         | Real files its tests spell check, and where each came from.   |
+| Samples             | [samples](#samples)                               | `--add-sample`, `--add-sample-origin`         | Real files its tests spell check, and where each came from.   |
 | Build settings      | [store as trie](#store-as-trie)                   | `--trie` or `--no-trie`                       | Store it as a trie, for Hunspell files and large lists.       |
 |                     | [Hunspell depth](#hunspell-depth)                 | `--hunspell-depth`                            | How many affix rules to apply to each Hunspell word.          |
 | Maintainers         | [contributors](#contributors)                     | `--contributor`                               | The people who create and maintain this dictionary.           |
@@ -409,9 +409,7 @@ pnpm create-dictionary ruby ruby-words.txt --no-additional-words --no-exclude-wo
 
 A word list you give can't be named `README.md`, or like a word file that's created.
 
-#### Tests
-
-##### Samples
+#### Samples
 
 Real files of the kind the dictionary is for, which its tests spell check. Repeat both options for each sample.
 

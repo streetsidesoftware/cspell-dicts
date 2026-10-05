@@ -469,7 +469,7 @@ export async function getAnswers(options: CommandLine, repo: Repo, cwd: string):
               );
     section(3, 'Words');
     const sources = await allSources(name);
-    section(4, 'Tests');
+    section(4, 'Samples');
     const samples = await allSamples(locale);
     section(5, 'Build Settings');
     const isHunspell = sources.some((source) => source.files.some((f) => isHunspellFile(f.path)));
