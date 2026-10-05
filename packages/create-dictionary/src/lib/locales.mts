@@ -19,7 +19,8 @@ export function localeName(locale: string): string | undefined {
     }
 }
 
-let known: LocaleName[] | undefined;
+/** The known locales, by the locale their own names are in. */
+const known = new Map<string, LocaleName[]>();
 
 /**
  * Every two-letter language, in its main region, such as `de-DE`, and each regional variant with a name of its own, such
@@ -27,7 +28,8 @@ let known: LocaleName[] | undefined;
  * Built from the names Node knows, so there's no list to keep.
  */
 export function knownLocales(own = ownLocale): LocaleName[] {
-    if (known && own === ownLocale) return known;
+    const cached = known.get(own);
+    if (cached) return cached;
     const ownNames = new Intl.DisplayNames([own], { type: 'language', fallback: 'none' });
     const regionNames = new Intl.DisplayNames(['en'], { type: 'region', fallback: 'none' });
     const letters = 'abcdefghijklmnopqrstuvwxyz';
@@ -55,7 +57,7 @@ export function knownLocales(own = ownLocale): LocaleName[] {
             }
         }
     }
-    if (own === ownLocale) known = list;
+    known.set(own, list);
     return list;
 }
 
