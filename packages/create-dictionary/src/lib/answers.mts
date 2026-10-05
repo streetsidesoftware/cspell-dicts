@@ -57,7 +57,7 @@ const intro = () =>
         '',
         heading('Create a dictionary for cspell'),
         '',
-        `This asks about the new dictionary in ${sectionCount} sections, then creates it in dictionaries/<name>/.`,
+        `The questions come in ${sectionCount} sections. Then the dictionary is created, in a new folder in dictionaries/.`,
         'Press Enter to accept the default shown in (parentheses). Nothing is written until the last answer; Ctrl+C stops.',
         'Every answer can also be given as an option: pnpm create-dictionary --help',
         'Guide: docs/guides/new-dictionary.md',
