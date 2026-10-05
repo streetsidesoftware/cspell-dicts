@@ -10,10 +10,10 @@ This is a pre-built dictionary for use with CSpell.
 
 <!--- @@inject: ../../static/contributing.md --->
 
+<%- sourcesSection %>
+
 ## License
 
-MIT
-
-> Some packages may have other licenses included.
+MIT<%- licenseNote %>
 
 <!--- @@inject: ../../static/footer.md --->

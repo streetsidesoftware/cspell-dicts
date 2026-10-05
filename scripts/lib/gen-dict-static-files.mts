@@ -1,9 +1,12 @@
+import { existsSync } from 'node:fs';
 import fs from 'node:fs/promises';
+import { fileURLToPath } from 'node:url';
 
 import type { CSpellSettings } from '@cspell/cspell-types';
 import { Document as YamlDocument } from 'yaml';
 
 import type { DictionaryPackageInfo } from './dictionaryInfo.mts';
+import { readSources, sourcesCsv } from './sources-table.mts';
 import { unindent } from './utils.mts';
 
 const rootUrl = new URL('../../', import.meta.url);
@@ -35,6 +38,12 @@ export async function writeStaticFilesForPackage(pkgInfo: DictionaryPackageInfo)
     await fs.writeFile(new URL('example.cspell.json', pkgStaticDirUrl), codeJson, 'utf8');
     await fs.writeFile(new URL('example.cspell.config.yaml', pkgStaticDirUrl), codeYaml, 'utf8');
     await fs.writeFile(new URL('install.md', pkgStaticDirUrl), toPackageInformationMarkdown(pkgInfo), 'utf8');
+
+    const sourcesYaml = fileURLToPath(new URL('src/sources.yaml', dirUrl));
+    if (existsSync(sourcesYaml)) {
+        const csv = sourcesCsv(pkgInfo.dir, readSources(sourcesYaml));
+        await fs.writeFile(new URL('sources.csv', pkgStaticDirUrl), csv, 'utf8');
+    }
 }
 
 function vscodeSettingsToCdn(pkgInfo: DictionaryPackageInfo, useCdn: boolean): string {
