@@ -285,6 +285,9 @@ Give a language code, with an optional region, such as `en` or `en-AU`. Separate
 name that stands for a locale gives it: `en_AU` gives `en-AU`, and `german` gives `de`. Any other name gives `*`, which
 matches any language.
 
+When the command asks, such a name brings up a checklist of that language's locales, with the one from the name ticked:
+`german` offers `de`, `de-AT`, `de-CH`, and `de-DE`. Tick any others, or pick "Something else" to type them.
+
 Don't know the code? Type the language's name instead, such as "English", in English or in your computer's language.
 When the command asks, it lists the locales that name could mean, such as `en` (English) and `en-AU` (Australian
 English), and you pick one or more. Given as an option, an unknown locale is kept, with a warning that lists them.

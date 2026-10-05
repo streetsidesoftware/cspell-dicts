@@ -7,7 +7,14 @@ import { title, toFriendlyName, toPackageName } from './names.mts';
 import { type Answers, type CommandLine, optionForAnswer } from './options.mts';
 import { gitUserName, readTakenNames, type Repo } from './repo.mts';
 import { isHunspellFile } from './hunspell.mts';
-import { findLocales, friendlyNameFromLocale, localeFromName, localeName, localeWarnings } from './locales.mts';
+import {
+    findLocales,
+    friendlyNameFromLocale,
+    knownLocales,
+    localeFromName,
+    localeName,
+    localeWarnings,
+} from './locales.mts';
 import {
     addSample,
     checkSample,
@@ -262,6 +269,43 @@ export async function getAnswers(options: CommandLine, repo: Repo, cwd: string):
         return locale;
     }
 
+    /**
+     * The locale. When the name stands for a language and the locale is asked, its locales are offered as a checklist,
+     * with the one from the name ticked; "Something else" asks for it as text.
+     */
+    async function askLocale(nameLocale: string | undefined): Promise<string> {
+        const typed = async (def: string) => {
+            const value = await text(
+                'locale',
+                'Locales, the natural languages it is for, comma separated, such as "en,en-US", or names such as "English"; "*" for any:',
+                def,
+            );
+            return value.trim() ? checkedLocale(value) : '';
+        };
+        if (!nameLocale || noPrompts || given.locale !== undefined) return typed(nameLocale ?? '*');
+        const language = nameLocale.split('-')[0];
+        const related = knownLocales().filter(({ locale }) => locale === language || locale.startsWith(language + '-'));
+        if (!related.some(({ locale }) => locale === nameLocale)) {
+            related.unshift({ locale: nameLocale, name: localeName(nameLocale) ?? nameLocale });
+        }
+        const other = '';
+        const choices = [
+            ...related.map(({ locale, name }) => ({
+                name: `${locale}: ${name}`,
+                value: locale,
+                checked: locale === nameLocale,
+            })),
+            { name: 'Something else (type it)', value: other },
+        ];
+        const picked = await ask.checkbox({ message: 'Locales for this dictionary:', choices });
+        const locales = picked.filter((locale) => locale !== other);
+        if (picked.includes(other) || !locales.length) {
+            const more = await typed(locales.length ? '' : '*');
+            if (more && more !== '*') locales.push(more);
+        }
+        return locales.length ? locales.join(',') : '*';
+    }
+
     /** Asks for named sources, as the options would give them. */
     async function askDefined(all: SourceOptions): Promise<void> {
         while (await ask.confirm({ message: 'Add a third-party source?', default: false })) {
@@ -375,13 +419,7 @@ export async function getAnswers(options: CommandLine, repo: Repo, cwd: string):
     if (nameLocale && noPrompts && given.locale === undefined) {
         console.log(`The locale is ${nameLocale}, from the name. Give --locale to change it.`);
     }
-    const locale = await checkedLocale(
-        await text(
-            'locale',
-            'Locales, the natural languages it is for, comma separated, such as "en,en-US", or names such as "English"; "*" for any:',
-            nameLocale ?? '*',
-        ),
-    );
+    const locale = await askLocale(nameLocale);
     const anyLocale = locale.trim() === '*';
     const languageId = await text(
         'languageId',
