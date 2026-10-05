@@ -87,7 +87,8 @@ Turn the design into the dictionary with one command.
   - `--placeholder-word-lists` when there's no word list yet. It starts an empty one.
   - One `--contributor` per person, and one `--keyword` per search term.
   - `--locale` for a natural language, or `--language-id` for anything else.
-  - `--trie` for Hunspell sources and large lists.
+  - Leave the trie and the build to their defaults. With a Hunspell source, it doesn't build: run `pnpm run build` in
+    the dictionary's directory. If that's too slow, lower `maxDepth` in `cspell-tools.config.yaml`, and tell the user.
   - A source someone else maintains: `--define-source` and `--add-source-*`, as in the guide's "Third-party sources".
 - **If it fails:**
   - On a missing or invalid value, nothing was written. Fix that option and run it again.

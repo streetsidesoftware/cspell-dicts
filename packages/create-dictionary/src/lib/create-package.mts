@@ -83,9 +83,13 @@ export function createPackage(answers: Settings, repo: Repo): string {
 
     /** A source in cspell-tools.config.yaml: the template has the first item's "- ", and the join adds the rest. */
     function buildSource(filename: string): string {
+        const name = `filename: '${filename.replaceAll("'", "''")}'`;
+        if (!isHunspellFile(filename)) return name;
         return [
-            `filename: '${filename.replaceAll("'", "''")}'`,
-            '        maxDepth: 1 # This is set to 1 to prevent initial builds from taking too long.',
+            name,
+            '        # How many affix rules to chain onto a word. Higher adds word forms,',
+            '        # but can make the build very slow or run out of memory.',
+            `        maxDepth: ${answers.hunspellDepth}`,
         ].join('\n');
     }
 

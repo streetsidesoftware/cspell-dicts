@@ -20,6 +20,7 @@ before(() => {
     writeFileSync(join(root, 'pair.dic'), '1\nzorbal\n');
     writeFileSync(join(root, 'pair.aff'), 'SET UTF-8\n');
     writeFileSync(join(root, 'additional_words.txt'), 'zorbal\n');
+    writeFileSync(join(root, 'big.txt'), 'zorbal\n'.repeat(150_000));
     mkdirSync(join(root, 'sub'));
     writeFileSync(join(root, 'sub', 'words.txt'), 'quixly\n');
     writeFileSync(join(root, 'sub', 'other.dic'), '1\nquixly\n');
@@ -36,6 +37,7 @@ function options(answers: Answers, more: Partial<CommandLine> = {}): CommandLine
         yes: true,
         placeholderWordLists: false,
         sourceOptions: noSourceOptions,
+        hunspellDepth: 1,
         additionalWords: true,
         excludeWords: true,
         skipInstall: true,
@@ -61,15 +63,26 @@ describe('getAnswers', () => {
             additionalWords: true,
             excludeWords: true,
             sources: [wordList('words.txt', root, false)],
+            hunspellDepth: 1,
             locale: '*',
             languageId: 'markdown',
             useTrie: false,
-            doBuild: false,
+            doBuild: true,
         });
     });
 
-    it('defaults to a trie and a build for a Hunspell source', async () => {
+    it('defaults to a trie, and no build, for a Hunspell source', async () => {
         const settings = await getAnswers(options({ name: 'xx', srcFiles: ['pair.dic'], locale: 'xx' }), repo, root);
+        assert.equal(settings.useTrie, true);
+        assert.equal(settings.doBuild, false);
+    });
+
+    it('defaults to a trie for word lists over 1 MB', async () => {
+        const settings = await getAnswers(
+            options({ name: 'big', srcFiles: ['big.txt'], languageId: 'ruby' }),
+            repo,
+            root,
+        );
         assert.equal(settings.useTrie, true);
         assert.equal(settings.doBuild, true);
     });

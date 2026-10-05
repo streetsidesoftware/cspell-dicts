@@ -2,10 +2,11 @@
 
 // Creates a dictionary package in dictionaries/<name>/. Run with --help for usage.
 
-import { resolve } from 'node:path';
+import { relative, resolve } from 'node:path';
 import { fileURLToPath } from 'node:url';
 
-import { getAnswers } from './lib/answers.mts';
+import { getAnswers, type Settings } from './lib/answers.mts';
+import { isHunspellFile } from './lib/hunspell.mts';
 import { createPackage } from './lib/create-package.mts';
 import { parseCommandLine } from './lib/options.mts';
 import { setUpPackage } from './lib/pnpm.mts';
@@ -22,6 +23,17 @@ async function main(): Promise<void> {
     const settings = await getAnswers(options, repo, cwd);
     const packageDir = createPackage(settings, repo);
     setUpPackage(packageDir, repo, { install: !options.skipInstall, build: settings.doBuild });
+    if (!settings.doBuild) console.log(notBuilt(relative(rootDir, packageDir), settings));
+}
+
+function notBuilt(dir: string, settings: Settings): string {
+    const lines = [`Not built yet. Its tests fail until you run pnpm run build in ${dir}.`];
+    if (settings.sources.some((s) => s.files.some((f) => isHunspellFile(f.path)))) {
+        lines.push(
+            `A Hunspell dictionary can take a long time to build. If it's too slow, lower maxDepth in ${dir}/cspell-tools.config.yaml.`,
+        );
+    }
+    return lines.join('\n');
 }
 
 try {

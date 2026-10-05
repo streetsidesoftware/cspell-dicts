@@ -15,7 +15,7 @@ and the template set a depth on every source, including word lists, where it mea
 - **Trie** when any source is a Hunspell file, or the word lists add up to more than about 1 MB. `--trie` and
   `--no-trie` override it.
 - **Build at creation** when all sources are word lists. With a Hunspell source, the generator doesn't build, and says
-  to run `pnpm run build`, or to lower `--hunspell-depth` if that's too slow. `--build` and `--no-build` override it.
+  to run `pnpm run build`, or to lower `maxDepth` in `cspell-tools.config.yaml` if that's too slow. `--build` and `--no-build` override it.
 - **Depth:** no `maxDepth` on word lists. Hunspell sources get `maxDepth: 1`, with a comment that higher depths can add
   word forms but can make the build very slow or run out of memory. `--hunspell-depth <n>` sets it, such as 0 for
   Hebrew.

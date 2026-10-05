@@ -52,7 +52,8 @@ before building it. Say what the words are and where they come from. A maintaine
 ## 3. Check the sources and their license
 
 - Where do the words come from? Your own list, a project's documentation, or an upstream word list?
-- What is the source's license? The dictionary package's `license` field and `LICENSE` must allow it, and upstream license
+- What is the source's license? The dictionary package's `license` field and `LICENSE` must allow it, and upstream
+license
   files are published with it (added to `files`). `pnpm create-dictionary` writes an MIT `LICENSE`: change it if the source
   requires.
 - If the license is missing or unclear, stop and ask the maintainers in an issue before going further.
@@ -110,9 +111,11 @@ Each field is described in [Create-dictionary options](#create-dictionary-option
 | [file type](#file-type)                           | `--language-id`                               | The file types it's enabled for, such as `ruby`.           |
 | [store as trie](#store-as-trie)                   | `--trie` or `--no-trie`                       | Store it as a trie, for Hunspell files and large lists.    |
 | [run build](#run-build)                           | `--build` or `--no-build`                     | Build it now.                                              |
+| [Hunspell depth](#hunspell-depth)                 | `--hunspell-depth`                            | How many affix rules to apply to each Hunspell word.       |
 | [no questions](#no-questions)                     | `--yes`                                       | Use the defaults for anything not given, and never ask.    |
 
-It creates `dictionaries/<name>/` with `version` `0.0.1-alpha.0` and `private: true`, so the dictionary isn't published. A
+It creates `dictionaries/<name>/` with `version` `0.0.1-alpha.0` and `private: true`, so the dictionary isn't published.
+A
 maintainer makes it public once the dictionary has been verified.
 
 ## 5. The resulting dictionary
@@ -259,7 +262,8 @@ pnpm create-dictionary medical_terms \
   --contributor "John Doe <john@example.com>"
 ```
 
-Give a name, optionally followed by an email in `<…>`, a web address in `(…)`, or both. A GitHub profile makes a good web
+Give a name, optionally followed by an email in `<…>`, a web address in `(…)`, or both. A GitHub profile makes a good
+web
 address. Each person is listed in `package.json`. That file is published, so everything given here is public.
 
 When the command asks, it suggests your Git name. Leave an answer empty to stop adding people.
@@ -410,25 +414,42 @@ pnpm create-dictionary en_XX en_XX.dic --trie
 pnpm create-dictionary ruby ruby-words.txt --no-trie
 ```
 
-A trie is a compact format, much smaller for large word lists. Use it for Hunspell files, and for word lists over about
-1 MB. Plain text suits smaller lists, such as a language's keywords.
+A trie is a compact format, much smaller for large word lists. Plain text suits smaller lists, such as a language's
+keywords.
 
-Without either option, a Hunspell source is stored as a trie, and anything else as plain text.
+Without either option, it's a trie if a source is a Hunspell file, or if the word lists total more than 1 MB. Anything
+else is plain text.
 
 #### Run build
 
 Whether to build the dictionary right after creating it.
 
 ```sh
-pnpm create-dictionary ruby ruby-words.txt --build
-pnpm create-dictionary en_XX en_XX.dic --no-build
+pnpm create-dictionary en_XX en_XX.dic --build
+pnpm create-dictionary ruby ruby-words.txt --no-build
 ```
 
-Without either option, it builds a Hunspell source, but not a word list. To build later, run `pnpm run build` in the
-dictionary's directory.
+Without either option, it builds a dictionary made only of word lists, which takes seconds. It doesn't build one with a
+Hunspell source, which can take minutes or run out of memory. The new dictionary's tests fail until it's built.
 
-If the build fails, the dictionary is still created. Fix the problem and run `pnpm run build` in its directory, or
-delete the directory and run the command again.
+To build later, run `pnpm run build` in the dictionary's directory. If the build fails, the dictionary is still created.
+Fix the problem and build again, or delete the directory and run `pnpm create-dictionary` again.
+
+#### Hunspell depth
+
+How many affix rules the build applies to each Hunspell word.
+
+```sh
+pnpm create-dictionary he he.dic --hunspell-depth 0
+```
+
+A Hunspell dictionary stores stems, such as "walk", and rules that add prefixes and suffixes, such as "-ing" and "-ed".
+Each level of depth applies one more rule to a word. A higher depth adds more word forms, but can make the build very
+slow, or run out of memory.
+
+Without it, the depth is 1. Use 0 to keep only the stems, as Hebrew does, when even 1 is too slow. Raise it only when
+common word forms are missing. It's the `maxDepth` in the dictionary's `cspell-tools.config.yaml`, so you can change it
+there later.
 
 #### No questions
 

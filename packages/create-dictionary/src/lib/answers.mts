@@ -1,3 +1,4 @@
+import { statSync } from 'node:fs';
 import { basename, resolve } from 'node:path';
 
 import { confirm, input } from '@inquirer/prompts';
@@ -26,8 +27,12 @@ import {
     validateLanguageId,
 } from './validate.mts';
 
+/** Word lists larger than this, in bytes, are stored as a trie by default, as the guide says. */
+const largeWordLists = 1_000_000;
+
 export type Settings = Omit<Required<Answers>, 'srcFiles'> & {
     sources: Source[];
+    hunspellDepth: number;
     additionalWords: boolean;
     excludeWords: boolean;
 };
@@ -270,10 +275,14 @@ export async function getAnswers(options: CommandLine, repo: Repo, cwd: string):
     const isHunspell = sources.some((source) => source.files.some((f) => isHunspellFile(f.path)));
     const useTrie = await yesNo(
         'useTrie',
-        'Store as Trie: Mainly used for natural language dictionaries to store their large sizes.',
-        isHunspell,
+        'Store as a trie? A trie is much smaller for large word lists.',
+        isHunspell || wordListBytes(sources) > largeWordLists,
     );
-    const doBuild = await yesNo('doBuild', 'Compile Dictionary?', isHunspell);
+    const doBuild = await yesNo(
+        'doBuild',
+        isHunspell ? 'Build it now? A Hunspell dictionary can take a long time.' : 'Build it now?',
+        !isHunspell,
+    );
 
     return {
         name,
@@ -283,6 +292,7 @@ export async function getAnswers(options: CommandLine, repo: Repo, cwd: string):
         contributors: people,
         keywords: searchWords,
         sources,
+        hunspellDepth: options.hunspellDepth,
         additionalWords: options.additionalWords,
         excludeWords: options.excludeWords,
         locale,
@@ -294,3 +304,11 @@ export async function getAnswers(options: CommandLine, repo: Repo, cwd: string):
 
 type TextKey = { [K in keyof Answers]-?: Answers[K] extends string | undefined ? K : never }[keyof Answers];
 type BooleanKey = { [K in keyof Answers]-?: Answers[K] extends boolean | undefined ? K : never }[keyof Answers];
+
+/** The size of every word list to copy, in bytes. */
+function wordListBytes(sources: Source[]): number {
+    const files = sources.flatMap((s) =>
+        s.files.filter((f) => !f.empty && !isHunspellFile(f.path)).map((f) => resolve(s.root, f.path)),
+    );
+    return files.reduce((total, file) => total + statSync(file).size, 0);
+}

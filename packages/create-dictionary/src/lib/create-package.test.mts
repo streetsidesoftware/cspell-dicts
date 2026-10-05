@@ -51,6 +51,7 @@ function settings(name: string, more: Partial<Settings>): Settings {
         languageId: 'ruby',
         useTrie: false,
         doBuild: false,
+        hunspellDepth: 1,
         ...more,
     };
 }
@@ -144,5 +145,16 @@ describe('createPackage', () => {
         assert.ok(existsSync(join(dir, 'dict/hunspell.trie')));
         assert.match(read(dir, 'cspell-tools.config.yaml'), /format: 'trie3'/);
         assert.match(read(dir, 'package.json'), /hunspell-reader words/);
+    });
+
+    it('sets the Hunspell depth on Hunspell sources only', () => {
+        const dir = createPackage(
+            settings('depth', { sources: [wordList('words.txt', root, false), pairSource()], hunspellDepth: 0 }),
+            repo,
+        );
+        const config = read(dir, 'cspell-tools.config.yaml');
+        assert.match(config, /filename: 'src\/words\.txt'\n {6}- filename: 'src\/pair\/pair\.dic'/);
+        assert.match(config, /# How many affix rules[^\n]*\n[^\n]*\n {8}maxDepth: 0\n/);
+        assert.equal(config.match(/maxDepth/g)?.length, 1);
     });
 });

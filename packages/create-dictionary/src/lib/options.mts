@@ -1,4 +1,4 @@
-import { Command, Option } from 'commander';
+import { Command, InvalidArgumentError, Option } from 'commander';
 
 import type { SourceOptions } from './sources.mts';
 
@@ -24,6 +24,8 @@ export interface CommandLine {
     placeholderWordLists: boolean;
     /** The --define-source and --add-source-* options, as given. */
     sourceOptions: SourceOptions;
+    /** How many affix rules the build chains onto a Hunspell stem. */
+    hunspellDepth: number;
     /** Create src/additional_words.txt. */
     additionalWords: boolean;
     /** Create src/exclude_words.txt. */
@@ -61,6 +63,7 @@ interface Options {
     languageId?: string;
     trie?: boolean;
     build?: boolean;
+    hunspellDepth?: number;
     placeholderWordLists?: boolean;
     additionalWords?: boolean;
     excludeWords?: boolean;
@@ -144,10 +147,15 @@ export function parseCommandLine(argv: string[]): CommandLine {
             '--language-id <ids>',
             'file types, comma separated, such as "ruby", or "*" for any; default: "*". Give this or --locale: both "*" is an error',
         )
-        .option('--trie', 'store as a trie; default for Hunspell .dic and .aff sources')
-        .option('--no-trie', 'store as plain text; default for other sources')
-        .option('--build', 'build the dictionary after creating it; default for existing Hunspell sources')
-        .option('--no-build', 'do not build it')
+        .option('--trie', 'store as a trie; default for Hunspell sources, and word lists over 1 MB in all')
+        .option('--no-trie', 'store as plain text; default for smaller word lists')
+        .option('--build', 'build the dictionary after creating it; default when every source is a word list')
+        .option('--no-build', 'do not build it; default with a Hunspell source, which can take a long time')
+        .option(
+            '--hunspell-depth <n>',
+            'how many affix rules to chain onto a Hunspell word; higher adds word forms, but can make the build very slow; default: 1',
+            depth,
+        )
         // For the tests; see the package's README.
         .addOption(new Option('--root <dir>', 'the repo to create the dictionary in').hideHelp())
         .addOption(new Option('--skip-install', 'do not run pnpm install in the new dictionary').hideHelp())
@@ -193,11 +201,17 @@ export function parseCommandLine(argv: string[]): CommandLine {
             addSourceReadme: opts.addSourceReadme ?? [],
             addSourceUrl: opts.addSourceUrl ?? [],
         },
+        hunspellDepth: opts.hunspellDepth ?? 1,
         additionalWords: opts.additionalWords !== false,
         excludeWords: opts.excludeWords !== false,
         root: opts.root,
         skipInstall: !!opts.skipInstall,
     };
+
+    function depth(value: string): number {
+        if (!/^\d+$/.test(value)) throw new InvalidArgumentError('give a whole number, such as 0 or 1.');
+        return Number(value);
+    }
 
     /** Sources given positionally and as --source, in order, each once. */
     function combine(args: string[], options: string[]): string[] | undefined {

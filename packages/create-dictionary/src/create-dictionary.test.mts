@@ -175,6 +175,14 @@ describe('a new package', () => {
         assert.match(packageFile('hunspell', 'src/sources.yaml'), /name: 'hunspell'/);
         assert.match(result.stderr, /warning: the source hunspell has no license/);
         assert.match(packageFile('hunspell', 'cspell-tools.config.yaml'), /format: 'trie3'/);
+        assert.match(result.stdout, /Not built yet[\s\S]*lower maxDepth/);
+    });
+
+    it('takes the Hunspell depth from --hunspell-depth', () => {
+        const result = createYes('depth', 'pair.dic', '--hunspell-depth', '0');
+        assert.equal(result.code, 0, result.stderr);
+        assert.match(packageFile('depth', 'cspell-tools.config.yaml'), /maxDepth: 0/);
+        assertFails(createYes('baddepth', 'pair.dic', '--hunspell-depth', 'deep'), /give a whole number/);
     });
 });
 
