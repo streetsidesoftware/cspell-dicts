@@ -5,7 +5,7 @@ import type { Settings } from './answers.mts';
 import { title, toPackageName } from './names.mts';
 import type { Repo } from './repo.mts';
 import { isHunspellFile } from './hunspell.mts';
-import { sampleWords, samplesReadme, wordSample } from './samples.mts';
+import { samplesConfig, sampleWords, samplesReadme, wordSample } from './samples.mts';
 import { fillTemplate, templateDir, templateFiles } from './template.mts';
 import { buildFiles, copies, publishedFiles, sourcesYaml, srcDir } from './sources.mts';
 import { created as showCreated, info, literal } from './output.mts';
@@ -72,7 +72,7 @@ export function createPackage(answers: Settings, repo: Repo): string {
         else write(file, sample.text ?? '');
     }
     write('samples/README.md', samplesReadme(title(friendlyName), answers.samples));
-    write('samples/cspell.json', JSON.stringify({ import: ['../cspell-ext.json'] }, null, 4) + '\n');
+    write('samples/cspell.json', JSON.stringify(samplesConfig(answers.locale, answers.languageId), null, 4) + '\n');
     const words = sampleWords(built.map((file) => join(packageDir, file)));
     write(join('samples', wordSample), words.map((word) => word + '\n').join(''));
     write(dstFileName, '# dest');

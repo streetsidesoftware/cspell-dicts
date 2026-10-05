@@ -229,3 +229,17 @@ export function samplesExplanation(locale: string, languageId: string): string[]
     const files = types.length ? `${types.join(' or ')} files` : 'files of the kind this dictionary is for';
     return [`Samples should be ${files} from real projects, such as a short script or a source file.`, check];
 }
+
+/**
+ * `samples/cspell.json`: the samples are checked the way users' files are, so they show when the dictionary is enabled.
+ * For a natural language, they're in its language. The word sample is checked with the dictionary's locale and file type.
+ */
+export function samplesConfig(locale: string, languageId: string): object {
+    return {
+        import: ['../cspell-ext.json'],
+        // These describe the samples, in English; they aren't samples.
+        ignorePaths: ['README.md', 'cspell.json'],
+        ...(locale.trim() !== '*' && { language: locale }),
+        overrides: [{ filename: wordSample, language: locale, languageId }],
+    };
+}

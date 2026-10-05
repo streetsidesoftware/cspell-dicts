@@ -162,11 +162,17 @@ describe('createPackage', () => {
         assert.equal(read(dir, 'samples/example.rb'), 'puts zorbal\n');
         assert.equal(read(dir, 'samples/seattle.md'), '# Seattle\n');
         assert.match(read(dir, 'samples/README.md'), /`example\.rb`: https:\/\/example\.com\/ruby\./);
-        assert.deepEqual(JSON.parse(read(dir, 'samples/cspell.json')), { import: ['../cspell-ext.json'] });
+        assert.deepEqual(JSON.parse(read(dir, 'samples/cspell.json')), {
+            import: ['../cspell-ext.json'],
+            ignorePaths: ['README.md', 'cspell.json'],
+            overrides: [{ filename: wordSample, language: '*', languageId: 'ruby' }],
+        });
         assert.equal(read(dir, `samples/${wordSample}`), 'zorbal\n');
         assert.equal(JSON.parse(read(dir, 'package.json')).scripts.test, 'cspell samples');
+        // The folder's own Markdown and text files use the dictionary; the samples are checked as users' files are.
         const [override] = JSON.parse(read(dir, 'cspell.json')).overrides;
-        assert.deepEqual(override, { filename: `samples/${wordSample}`, language: '*', languageId: 'ruby' });
+        assert.deepEqual(override, { filename: ['**/*.{md,txt}', '!samples/**'], dictionaries: ['samples'] });
+        assert.equal(JSON.parse(read(dir, 'cspell.json')).dictionaries, undefined);
     });
 
     it('sets the Hunspell depth on Hunspell sources only', () => {

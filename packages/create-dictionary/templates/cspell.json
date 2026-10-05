@@ -1,13 +1,11 @@
 {
     "version": "0.2",
     "files": ["**/*.{md,txt}"],
-    "dictionaries": ["<%= packageName %>"],
     "import": ["./cspell-ext.json"],
     "overrides": [
         {
-            "filename": "samples/sample-words-in-dictionary.txt",
-            "language": "<%= locale %>",
-            "languageId": "<%= languageId %>"
+            "filename": ["**/*.{md,txt}", "!samples/**"],
+            "dictionaries": ["<%= packageName %>"]
         }
     ]
 }

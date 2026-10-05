@@ -11,6 +11,7 @@ import {
     languageOf,
     noSampleOptions,
     parseSamples,
+    samplesConfig,
     samplesExplanation,
     sampleWarnings,
     sampleWords,
@@ -147,5 +148,20 @@ describe('samplesExplanation', () => {
             samplesExplanation('*', 'ruby, erb')[0],
             /^Samples should be ruby or erb files from real projects, /,
         );
+    });
+});
+
+describe('samplesConfig', () => {
+    it("checks a natural language's samples in its language", () => {
+        assert.deepEqual(samplesConfig('de-CH', '*'), {
+            import: ['../cspell-ext.json'],
+            ignorePaths: ['README.md', 'cspell.json'],
+            language: 'de-CH',
+            overrides: [{ filename: 'sample-words-in-dictionary.txt', language: 'de-CH', languageId: '*' }],
+        });
+    });
+
+    it('leaves the language to cspell for other dictionaries', () => {
+        assert.equal('language' in samplesConfig('*', 'ruby'), false);
     });
 });
