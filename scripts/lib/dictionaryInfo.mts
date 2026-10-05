@@ -116,7 +116,7 @@ async function readConfigFileOrUndefined(cspellExtUrl: URL): Promise<CSpellConfi
         if (err.code === 'ENOENT' || err.cause?.code === 'ENOENT') {
             return undefined;
         }
-        console.error(`Error reading config file: ${cspellExtUrl} - ${err.message} %o`, e);
+        console.error('Error reading config file: %s - %s %o', cspellExtUrl, err.message, e);
         throw e;
     }
 }
