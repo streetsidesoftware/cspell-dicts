@@ -43,7 +43,7 @@ import {
     validateDescription,
     validateLanguageId,
 } from './validate.mts';
-import { heading, sectionTitle, warn } from './style.mts';
+import { explain, heading, sectionTitle, warn } from './style.mts';
 
 /** Word lists larger than this, in bytes, are stored as a trie by default, as the guide says. */
 const largeWordLists = 1_000_000;
@@ -54,6 +54,7 @@ const sectionCount = 7;
 /** Shown before the first question. */
 const intro = () =>
     [
+        '',
         heading('Create a dictionary for cspell'),
         '',
         `This asks about the new dictionary in ${sectionCount} sections, then creates it in dictionaries/<name>/.`,
@@ -115,7 +116,7 @@ export async function getAnswers(options: CommandLine, repo: Repo, cwd: string):
         const value = given[key] ?? (noPrompts ? def : undefined);
         if (value !== undefined) return value;
         showSection();
-        if (intro) console.log('\n' + intro);
+        if (intro) console.log('\n' + explain(intro));
         return ask.confirm({ message, default: def });
     }
 
@@ -221,8 +222,10 @@ export async function getAnswers(options: CommandLine, repo: Repo, cwd: string):
             showSection();
             console.log(
                 '\n' +
-                    'Samples are real files of the kind this dictionary is for, such as a script or a page of text.' +
-                    '\nThe tests spell check them, to show the dictionary works on real text.',
+                    explain(
+                        'Samples are real files of the kind this dictionary is for, such as a script or a page of text.' +
+                            '\nThe tests spell check them, to show the dictionary works on real text.',
+                    ),
             );
         }
         if (language && options.wikipediaSample && !byName.has('seattle.md')) {

@@ -12,6 +12,9 @@ export const heading = (text: string) => out('bold', text);
 /** A section's title, such as "Section (1/7): Dictionary Info". */
 export const sectionTitle = (text: string) => out(['bold', 'cyan'], text);
 
+/** An explanation above a question. Blue is a theme color, so it stays readable on light and dark backgrounds. */
+export const explain = (text: string) => out('blue', text);
+
 /** A file the command created. */
 export const created = (text: string) => out('green', text);
 
