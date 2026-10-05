@@ -94,25 +94,25 @@ Run `pnpm create-dictionary --help` to list the options.
 
 Each field is described in [Create-dictionary options](#create-dictionary-options).
 
-| Group               | Field                                             | Option                                        | Summary                                                     |
-| ------------------- | ------------------------------------------------- | --------------------------------------------- | ----------------------------------------------------------- |
-| What it's about     | [name](#name)                                     | `<name>` or `--name`                          | The directory name, such as `en_AU` or `ruby`.              |
-|                     | [friendly name](#friendly-name)                   | `--friendly-name`                             | A readable name, such as `Australian English`.              |
-|                     | [description](#description)                       | `--description`                               | Required. The words it covers.                              |
-|                     | [npm description](#npm-description)               | `--package-description`                       | The description npm shows.                                  |
-|                     | [keywords](#keywords)                             | `--keyword`                                   | Other keywords people search npm for, such as `golang`.     |
-| When it's used      | [locale](#locale)                                 | `--locale`                                    | The languages it's enabled for, such as `en-AU`.            |
-|                     | [file type](#file-type)                           | `--language-id`                               | The file types it's enabled for, such as `ruby`.            |
-| Its words           | [source file](#source-file)                       | `<path/to/source/words>` or `--source`        | The word lists and Hunspell `.dic` files to build from.     |
-|                     | [third-party sources](#third-party-sources)       | `--define-source`, `--add-source-*`           | Sources someone else maintains, each in `src/<name>/`.      |
-|                     | [placeholder word lists](#placeholder-word-lists) | `--placeholder-word-lists`                    | Start a missing word list empty.                            |
-|                     | [word files](#word-files)                         | `--no-additional-words`, `--no-exclude-words` | Leave out the files for adding and removing words by hand.  |
-| Its tests           | [samples](#samples)                               | `--add-sample`, `--add-sample-origin`         | Real files its tests spell check, and where each came from. |
-| How it's built      | [store as trie](#store-as-trie)                   | `--trie` or `--no-trie`                       | Store it as a trie, for Hunspell files and large lists.     |
-|                     | [Hunspell depth](#hunspell-depth)                 | `--hunspell-depth`                            | How many affix rules to apply to each Hunspell word.        |
-| Who maintains it    | [contributors](#contributors)                     | `--contributor`                               | The people who create and maintain this dictionary.         |
-| Running the command | [run build](#run-build)                           | `--build` or `--no-build`                     | Build it now.                                               |
-|                     | [no questions](#no-questions)                     | `--yes`                                       | Use the defaults for anything not given, and never ask.     |
+| Group               | Field                                             | Option                                        | Summary                                                       |
+| ------------------- | ------------------------------------------------- | --------------------------------------------- | ------------------------------------------------------------- |
+| What it's about     | [name](#name)                                     | `<name>` or `--name`                          | The directory name, such as `en_AU` or `ruby`.                |
+|                     | [friendly name](#friendly-name)                   | `--friendly-name`                             | A readable name, such as `Australian English`.                |
+|                     | [description](#description)                       | `--description`                               | The words it covers. Required, unless the name is a language. |
+|                     | [npm description](#npm-description)               | `--package-description`                       | The description npm shows.                                    |
+|                     | [keywords](#keywords)                             | `--keyword`                                   | Other keywords people search npm for, such as `golang`.       |
+| When it's used      | [locale](#locale)                                 | `--locale`                                    | The languages it's enabled for, such as `en-AU`.              |
+|                     | [file type](#file-type)                           | `--language-id`                               | The file types it's enabled for, such as `ruby`.              |
+| Its words           | [source file](#source-file)                       | `<path/to/source/words>` or `--source`        | The word lists and Hunspell `.dic` files to build from.       |
+|                     | [third-party sources](#third-party-sources)       | `--define-source`, `--add-source-*`           | Sources someone else maintains, each in `src/<name>/`.        |
+|                     | [placeholder word lists](#placeholder-word-lists) | `--placeholder-word-lists`                    | Start a missing word list empty.                              |
+|                     | [word files](#word-files)                         | `--no-additional-words`, `--no-exclude-words` | Leave out the files for adding and removing words by hand.    |
+| Its tests           | [samples](#samples)                               | `--add-sample`, `--add-sample-origin`         | Real files its tests spell check, and where each came from.   |
+| How it's built      | [store as trie](#store-as-trie)                   | `--trie` or `--no-trie`                       | Store it as a trie, for Hunspell files and large lists.       |
+|                     | [Hunspell depth](#hunspell-depth)                 | `--hunspell-depth`                            | How many affix rules to apply to each Hunspell word.          |
+| Who maintains it    | [contributors](#contributors)                     | `--contributor`                               | The people who create and maintain this dictionary.           |
+| Running the command | [run build](#run-build)                           | `--build` or `--no-build`                     | Build it now.                                                 |
+|                     | [no questions](#no-questions)                     | `--yes`                                       | Use the defaults for anything not given, and never ask.       |
 
 It creates `dictionaries/<name>/` with `version` `0.0.1-alpha.0` and `private: true`, so the dictionary isn't published. A
 maintainer makes it public once the dictionary has been verified.
@@ -235,7 +235,7 @@ split at `-` and `_`, and each word is capitalized: `medical_terms` gives "Medic
 
 ##### Description
 
-The words the dictionary covers. Required.
+The words the dictionary covers. Required, unless the name is a language.
 
 ```sh
 pnpm create-dictionary ruby --description "Ruby keywords and standard library names"
@@ -243,6 +243,8 @@ pnpm create-dictionary ruby --description "Ruby keywords and standard library na
 
 It's the first line of the dictionary's README. cspell shows it in its settings, and the list of dictionaries in the
 repo's README shows it too.
+
+A name that is a language or locale gives a default: `en_AU` gives "Australian English dictionary".
 
 ##### npm description
 
@@ -504,7 +506,7 @@ Never ask, and use the defaults for anything not given. The short form is `-y`.
 pnpm create-dictionary --yes ruby ruby-words.txt --description "Ruby keywords" --language-id ruby
 ```
 
-Some answers have no default: the name, the description, and a source. The locale and the file type can't both be
+Some answers have no default: the name, the description (unless the name is a language), and a source. The locale and the file type can't both be
 left out. Leaving any of these out is an error. To start without a source, add `--placeholder-word-lists`.
 
 ## Dictionary definitions

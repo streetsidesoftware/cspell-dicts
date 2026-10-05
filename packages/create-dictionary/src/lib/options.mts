@@ -99,7 +99,7 @@ export function parseCommandLine(argv: string[]): CommandLine {
         .option('--friendly-name <text>', 'a readable name, such as "Australian English"; default: from the name')
         .option(
             '--description <text>',
-            'what words it covers, such as "Ruby keywords and standard library names"; required',
+            'what words it covers, such as "Ruby keywords and standard library names"; required, except for a name such as en_AU, which gives "Australian English dictionary"',
         )
         .option(
             '--package-description <text>',

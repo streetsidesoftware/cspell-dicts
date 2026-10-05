@@ -334,7 +334,7 @@ export async function getAnswers(options: CommandLine, repo: Repo, cwd: string):
     const description = await text(
         'description',
         'Description, the words it covers, such as "Ruby keywords and standard library names":',
-        undefined,
+        languageDescription(name),
         validateDescription,
     );
     const packageDescription = await text(
@@ -410,4 +410,10 @@ function wordListBytes(sources: Source[]): number {
         s.files.filter((f) => !f.empty && !isHunspellFile(f.path)).map((f) => resolve(s.root, f.path)),
     );
     return files.reduce((total, file) => total + statSync(file).size, 0);
+}
+
+/** For a dictionary whose name is a language or locale, such as en_AU: "Australian English dictionary". */
+function languageDescription(name: string): string | undefined {
+    const language = friendlyNameFromLocale(name);
+    return language && `${language} dictionary`;
 }
