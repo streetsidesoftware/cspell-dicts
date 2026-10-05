@@ -27,6 +27,10 @@ before(() => {
             ],
         }),
     );
+    // Another, whose package name a differently written name would give.
+    const science = join(root, 'dictionaries', 'data_science');
+    mkdirSync(science, { recursive: true });
+    writeFileSync(join(science, 'package.json'), JSON.stringify({ name: '@cspell/dict-data-science' }));
     writeFileSync(join(root, 'words.txt'), 'zorbal\nquixly\n');
     writeFileSync(join(root, "it's.txt"), 'zorbal\n');
     writeFileSync(join(root, 'pair.dic'), '1\nzorbal\n');
@@ -206,10 +210,27 @@ describe('a new package', () => {
         assert.match(packageFile('de_CH', 'cspell-ext.json'), /"description": "Swiss High German dictionary"/);
     });
 
+    it('turns a name with spaces into the directory name, and keeps it as the friendly name', () => {
+        const result = create(
+            '--yes',
+            '--name',
+            'Medical Terms',
+            '--description',
+            'Test words',
+            '--placeholder-word-lists',
+            '--language-id',
+            'markdown',
+            '--no-build',
+        );
+        assert.equal(result.code, 0, result.stderr);
+        assert.ok(readdirSync(join(root, 'dictionaries')).includes('medical-terms'));
+        assert.match(packageFile('medical-terms', 'cspell-ext.json'), /"name": "Medical Terms"/);
+    });
+
     it("writes a language or locale name the repo's way", () => {
         const result = create('--yes', 'German', '--placeholder-word-lists', '--no-build', '--no-wikipedia-sample');
         assert.equal(result.code, 0, result.stderr);
-        assert.match(result.stdout, /The name is german, as dictionaries for a language are named/);
+        assert.match(result.stdout, /The name is german, as dictionary names are written/);
         // Compare names: on macOS, the file system ignores case.
         const names = readdirSync(join(root, 'dictionaries'));
         assert.ok(names.includes('german'));
@@ -269,8 +290,8 @@ describe('the name', () => {
 
     it('does not give a package name already in use', () => {
         assertFails(
-            createYes('en-AU', '--placeholder-word-lists'),
-            /@cspell\/dict-en-au is already used by dictionaries\/en_AU/,
+            createYes('data-science', '--placeholder-word-lists'),
+            /@cspell\/dict-data-science is already used by dictionaries\/data_science/,
         );
     });
 

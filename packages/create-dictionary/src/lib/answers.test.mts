@@ -52,12 +52,12 @@ function options(answers: Answers, more: Partial<CommandLine> = {}): CommandLine
 describe('getAnswers', () => {
     it('fills in defaults with --yes', async () => {
         const settings = await getAnswers(
-            options({ name: 'medical_terms', srcFiles: ['words.txt'], languageId: 'markdown' }),
+            options({ name: 'medical-terms', srcFiles: ['words.txt'], languageId: 'markdown' }),
             repo,
             root,
         );
         assert.deepEqual(settings, {
-            name: 'medical_terms',
+            name: 'medical-terms',
             friendlyName: 'Medical Terms',
             description: 'Test words',
             packageDescription: 'Medical Terms dictionary for cspell.',

@@ -134,14 +134,29 @@ export function friendlyNameFromLocale(name: string): string | undefined {
 }
 
 /**
- * A name that is a locale or a language, written the repo's way: `en-au` gives `en_AU`, `sr-latn` gives `sr_Latn`, and
- * `German` gives `german`. Any other name, including one that only starts with a locale, is returned as it is.
+ * A dictionary name written the repo's way: words joined with `-`, all lowercase except a locale's region or script.
+ * `Medical Terms` gives `medical-terms`, `en-au` gives `en_AU`, `en_gb-Legacy` gives `en_GB-legacy`, `German` gives
+ * `german`, and `scientific_terms_gb` gives `scientific_terms_GB`.
  */
-export function conventionalName(name: string): string {
+export function conventionalName(typed: string): string {
+    const name = typed.trim().split(/\s+/).join('-');
     const locale = localeFromName(name);
-    if (!locale) return name;
-    if (canonical(name.replaceAll('_', '-'))?.toLowerCase() === locale.toLowerCase())
+    if (locale && canonical(name.replaceAll('_', '-'))?.toLowerCase() === locale.toLowerCase()) {
         return locale.replaceAll('-', '_');
-    if (localeName(locale)?.toLowerCase() === name.toLowerCase().replaceAll(/[-_]/g, ' ')) return name.toLowerCase();
-    return name;
+    }
+    // Words at even indexes, separators at odd ones.
+    const parts = name.split(/([-_])/).map((part, i) => (i % 2 ? part : part.toLowerCase()));
+    // A name that starts with a locale code, such as en_gb-Legacy.
+    const subtags = locale?.split('-') ?? [];
+    if (subtags[0] === parts[0]) subtags.forEach((subtag, k) => (parts[k * 2] = subtag));
+    // A region at the end, such as scientific_terms_gb.
+    const last = parts.length - 1;
+    if (last >= 2 && parts[last - 1] === '_' && isRegion(parts[last])) parts[last] = parts[last].toUpperCase();
+    return parts.join('');
+}
+
+const regionNames = new Intl.DisplayNames(['en'], { type: 'region', fallback: 'none' });
+
+function isRegion(code: string): boolean {
+    return /^[a-z]{2}$/i.test(code) && !!regionNames.of(code.toUpperCase());
 }

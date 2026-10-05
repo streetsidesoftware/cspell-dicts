@@ -78,7 +78,7 @@ describe('localeFromName', () => {
     });
 
     it('leaves other names alone, including three-letter words that are language codes', () => {
-        for (const name of ['ruby', 'go', 'ada', 'lua', 'medical_terms', 'lorem-ipsum']) {
+        for (const name of ['ruby', 'go', 'ada', 'lua', 'medical-terms', 'lorem-ipsum']) {
             assert.equal(localeFromName(name), undefined, name);
         }
     });
@@ -92,7 +92,7 @@ describe('friendlyNameFromLocale', () => {
 
     it('leaves a name alone when the locale is only part of it', () => {
         assert.equal(friendlyNameFromLocale('en_GB-legacy'), undefined);
-        assert.equal(friendlyNameFromLocale('medical_terms'), undefined);
+        assert.equal(friendlyNameFromLocale('medical-terms'), undefined);
     });
 });
 
@@ -107,7 +107,16 @@ describe('conventionalName', () => {
         assert.equal(conventionalName('German'), 'german');
     });
 
-    it('leaves other names alone', () => {
-        for (const name of ['ruby', 'Medical_Terms', 'en_GB-legacy']) assert.equal(conventionalName(name), name);
+    it('joins words with "-" and lowercases the rest, except a locale part', () => {
+        assert.equal(conventionalName('Medical Terms'), 'medical-terms');
+        assert.equal(conventionalName('Rust'), 'rust');
+        assert.equal(conventionalName('en_gb-Legacy'), 'en_GB-legacy');
+        assert.equal(conventionalName('scientific_terms_gb'), 'scientific_terms_GB');
+    });
+
+    it('leaves names that already follow the convention alone', () => {
+        for (const name of ['ruby', 'data-science', 'en_GB-legacy', 'en_shared', 'fr_FR_90']) {
+            assert.equal(conventionalName(name), name);
+        }
     });
 });

@@ -427,25 +427,21 @@ export async function getAnswers(options: CommandLine, repo: Repo, cwd: string):
     }
     section(1, 'Dictionary Info');
     const taken = await readTakenNames(repo);
-    const typedName = await text(
-        'name',
-        'Directory name, such as en_US or medical-terms:',
-        undefined,
-        nameValidator(repo, taken),
+    const typedName = await text('name', 'Directory name, such as en_US or medical-terms:', undefined, (value) =>
+        nameValidator(repo, taken)(conventionalName(value)),
     );
-    // A locale or language as the name follows the repo's convention, such as en_AU or german.
+    // Names follow the repo's convention: medical-terms, en_AU, german.
     const name = conventionalName(typedName);
-    if (name !== typedName) {
-        const valid = nameValidator(repo, taken)(name);
-        if (valid !== true) throw new Error(`${optionForAnswer.name}: ${valid}`);
-        info('The name is %s, as dictionaries for a language are named.', literal(name));
-    }
+    if (name !== typedName) info('The name is %s, as dictionary names are written.', literal(name));
     const id = toPackageName(name);
     info('Package %s, dictionary ID %s.', literal(`@cspell/dict-${id}`), literal(id));
     const friendlyName = await text(
         'friendlyName',
         'Friendly name, such as "US English" or "Medical Terms":',
-        friendlyNameFromLocale(name) ?? toFriendlyName(name),
+        // A name typed with spaces, such as "Medical Terms", is already a friendly name.
+        /\s/.test(typedName.trim())
+            ? typedName.trim().split(/\s+/).join(' ')
+            : (friendlyNameFromLocale(name) ?? toFriendlyName(name)),
     );
     const description = await text(
         'description',

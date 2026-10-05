@@ -212,6 +212,10 @@ The dictionary goes in `dictionaries/<name>/`. Its dictionary ID is the name in 
 package name is `@cspell/dict-` followed by the ID. So `en_AU` gives the ID `en-au`. The command shows both right after
 the name.
 
+The name is written the repo's way: words joined with `-`, and all lowercase except a locale's region or script. So
+`Medical Terms` gives `medical-terms`, `en-au` gives `en_AU`, and `German` gives `german`. The command says when it
+changes a name. A name typed with spaces, such as `Medical Terms`, is also the default friendly name.
+
 A name has up to 50 letters, digits, `_`, and `-`. These names aren't allowed:
 
 - a name whose directory already exists
@@ -224,14 +228,14 @@ A name has up to 50 letters, digits, `_`, and `-`. These names aren't allowed:
 A readable name, used as the dictionary's title.
 
 ```sh
-pnpm create-dictionary medical_terms --friendly-name "Medical Terminology"
+pnpm create-dictionary medical-terms --friendly-name "Medical Terminology"
 ```
 
 It's the title of the dictionary's README, and of its entry in the list of dictionaries in the repo's README. It's also
 the dictionary's name in cspell's settings, and a keyword on npm.
 
 Without it, a name that is a locale gives that locale's name: `en_AU` gives "Australian English". Any other name is
-split at `-` and `_`, and each word is capitalized: `medical_terms` gives "Medical Terms".
+split at `-` and `_`, and each word is capitalized: `medical-terms` gives "Medical Terms".
 
 ##### Description
 
@@ -381,11 +385,11 @@ license, README, or web page only gets a warning.
 Start a word list empty, as a placeholder, when its words don't exist yet.
 
 ```sh
-pnpm create-dictionary medical_terms --placeholder-word-lists
-pnpm create-dictionary medical_terms terms.txt --placeholder-word-lists
+pnpm create-dictionary medical-terms --placeholder-word-lists
+pnpm create-dictionary medical-terms terms.txt --placeholder-word-lists
 ```
 
-With no source given, it creates an empty `src/medical_terms.txt`. A word list you give that doesn't exist is created
+With no source given, it creates an empty `src/medical-terms.txt`. A word list you give that doesn't exist is created
 empty, under its name. The other sources are copied as usual.
 
 It only applies to word lists given on their own. A missing Hunspell file or third-party file is always an error, since
@@ -474,7 +478,7 @@ there later.
 The people who create and maintain this dictionary in this repo. Repeat the option for each person.
 
 ```sh
-pnpm create-dictionary medical_terms \
+pnpm create-dictionary medical-terms \
   --contributor "Jane Doe (https://example.com/jane-doe)" \
   --contributor "John Doe <john@example.com>"
 ```
