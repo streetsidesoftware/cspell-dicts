@@ -174,10 +174,17 @@ describe('createPackage', () => {
         );
         assert.equal(read(dir, 'samples/example.rb'), 'puts zorbal\n');
         assert.equal(read(dir, 'samples/seattle.md'), '# Seattle\n');
-        assert.match(read(dir, 'samples/README.md'), /`example\.rb`: https:\/\/example\.com\/ruby\./);
+        assert.match(
+            read(dir, 'samples/sample-sources.csv'),
+            /^\[example\.rb\]\(\.\/example\.rb\),https:\/\/example\.com\/ruby,/m,
+        );
+        assert.match(
+            read(dir, 'samples/README.md'),
+            /\| \[example\.rb\]\(\.\/example\.rb\) +\| <https:\/\/example\.com\/ruby> +\|/,
+        );
         assert.deepEqual(JSON.parse(read(dir, 'samples/cspell.json')), {
             import: ['../cspell-ext.json'],
-            ignorePaths: ['README.md', 'cspell.json'],
+            ignorePaths: ['README.md', 'cspell.json', 'sample-sources.csv'],
             words: [],
             overrides: [{ filename: wordSample, language: '*', languageId: 'ruby' }],
         });

@@ -5,7 +5,8 @@ import type { Settings } from './answers.mts';
 import { title, toPackageName } from './names.mts';
 import type { Repo } from './repo.mts';
 import { isHunspellFile } from './hunspell.mts';
-import { samplesConfig, sampleWords, samplesReadme, wordSample } from './samples.mts';
+import { saveSamples } from './samples-folder.mts';
+import { samplesConfig, sampleWords, wordSample } from './samples.mts';
 import { fillTemplate, templateDir, templateFiles } from './template.mts';
 import { buildFiles, copies, publishedFiles, sourcesYaml, srcDir } from './sources.mts';
 import { created as showCreated, info, literal } from './output.mts';
@@ -70,12 +71,7 @@ export async function createPackage(answers: Settings, repo: Repo): Promise<stri
             '# Words to leave out of the built dictionary. One per line; see docs/word-lists.md.\n',
         );
     }
-    for (const sample of answers.samples) {
-        const file = join('samples', sample.name);
-        if (sample.from) copyFileSync(sample.from, created(file));
-        else write(file, sample.text ?? '');
-    }
-    write('samples/README.md', samplesReadme(title(friendlyName), answers.samples));
+    saveSamples(packageDir, title(friendlyName), answers.samples, rootDir);
     write('samples/cspell.json', JSON.stringify(samplesConfig(answers.locale, answers.languageId), null, 4) + '\n');
     const words = await sampleWords(built.map((file) => join(packageDir, file)));
     write(join('samples', wordSample), words.map((word) => word + '\n').join(''));
@@ -111,7 +107,7 @@ export async function createPackage(answers: Settings, repo: Repo): Promise<stri
         return path;
     }
 
-    function write(file: string, content: string): void {
+    function write(file: string, content: Buffer | string): void {
         writeFileSync(created(file), content);
     }
 }

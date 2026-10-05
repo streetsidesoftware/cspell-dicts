@@ -94,25 +94,25 @@ Run `pnpm create-dictionary --help` to list the options.
 
 Each field is described in [Create-dictionary options](#create-dictionary-options).
 
-| Group               | Field                                             | Option                                        | Summary                                                       |
-| ------------------- | ------------------------------------------------- | --------------------------------------------- | ------------------------------------------------------------- |
-| Dictionary info     | [name](#name)                                     | `<name>` or `--name`                          | The directory name, such as `en_AU` or `ruby`.                |
-|                     | [friendly name](#friendly-name)                   | `--friendly-name`                             | A readable name, such as `Australian English`.                |
-|                     | [description](#description)                       | `--description`                               | The words it covers. Required, unless the name is a language. |
-|                     | [npm description](#npm-description)               | `--package-description`                       | The description npm shows.                                    |
-|                     | [keywords](#keywords)                             | `--keyword`                                   | Other keywords people search npm for, such as `golang`.       |
-| When it's used      | [locale](#locale)                                 | `--locale`                                    | The languages it's enabled for, such as `en-AU`.              |
-|                     | [file type](#file-type)                           | `--language-id`                               | The file types it's enabled for, such as `ruby`.              |
-| Words               | [source file](#source-file)                       | `<path/to/source/words>` or `--source`        | The word lists and Hunspell `.dic` files to build from.       |
-|                     | [third-party sources](#third-party-sources)       | `--define-source`, `--add-source-*`           | Sources someone else maintains, each in `src/<name>/`.        |
-|                     | [placeholder word lists](#placeholder-word-lists) | `--placeholder-word-lists`                    | Start a missing word list empty.                              |
-|                     | [word files](#word-files)                         | `--no-additional-words`, `--no-exclude-words` | Leave out the files for adding and removing words by hand.    |
-| Samples             | [samples](#samples)                               | `--add-sample`, `--add-sample-origin`         | Real files its tests spell check, and where each came from.   |
-| Build settings      | [store as trie](#store-as-trie)                   | `--trie` or `--no-trie`                       | Store it as a trie, for Hunspell files and large lists.       |
-|                     | [Hunspell depth](#hunspell-depth)                 | `--hunspell-depth`                            | How many affix rules to apply to each Hunspell word.          |
-| Maintainers         | [contributors](#contributors)                     | `--contributor`                               | The people who create and maintain this dictionary.           |
-| Running the command | [run build](#run-build)                           | `--build` or `--no-build`                     | Build it now.                                                 |
-|                     | [no questions](#no-questions)                     | `--yes`                                       | Use the defaults for anything not given, and never ask.       |
+| Group               | Field                                             | Option                                                        | Summary                                                                  |
+| ------------------- | ------------------------------------------------- | ------------------------------------------------------------- | ------------------------------------------------------------------------ |
+| Dictionary info     | [name](#name)                                     | `<name>` or `--name`                                          | The directory name, such as `en_AU` or `ruby`.                           |
+|                     | [friendly name](#friendly-name)                   | `--friendly-name`                                             | A readable name, such as `Australian English`.                           |
+|                     | [description](#description)                       | `--description`                                               | The words it covers. Required, unless the name is a language.            |
+|                     | [npm description](#npm-description)               | `--package-description`                                       | The description npm shows.                                               |
+|                     | [keywords](#keywords)                             | `--keyword`                                                   | Other keywords people search npm for, such as `golang`.                  |
+| When it's used      | [locale](#locale)                                 | `--locale`                                                    | The languages it's enabled for, such as `en-AU`.                         |
+|                     | [file type](#file-type)                           | `--language-id`                                               | The file types it's enabled for, such as `ruby`.                         |
+| Words               | [source file](#source-file)                       | `<path/to/source/words>` or `--source`                        | The word lists and Hunspell `.dic` files to build from.                  |
+|                     | [third-party sources](#third-party-sources)       | `--define-source`, `--add-source-*`                           | Sources someone else maintains, each in `src/<name>/`.                   |
+|                     | [placeholder word lists](#placeholder-word-lists) | `--placeholder-word-lists`                                    | Start a missing word list empty.                                         |
+|                     | [word files](#word-files)                         | `--no-additional-words`, `--no-exclude-words`                 | Leave out the files for adding and removing words by hand.               |
+| Samples             | [samples](#samples)                               | `--add-sample`, `--add-sample-origin`, `--add-sample-license` | Real files its tests spell check, where each came from, and its license. |
+| Build settings      | [store as trie](#store-as-trie)                   | `--trie` or `--no-trie`                                       | Store it as a trie, for Hunspell files and large lists.                  |
+|                     | [Hunspell depth](#hunspell-depth)                 | `--hunspell-depth`                                            | How many affix rules to apply to each Hunspell word.                     |
+| Maintainers         | [contributors](#contributors)                     | `--contributor`                                               | The people who create and maintain this dictionary.                      |
+| Running the command | [run build](#run-build)                           | `--build` or `--no-build`                                     | Build it now.                                                            |
+|                     | [no questions](#no-questions)                     | `--yes`                                                       | Use the defaults for anything not given, and never ask.                  |
 
 It creates `dictionaries/<name>/` with `version` `0.0.1-alpha.0` and `private: true`, so the dictionary isn't published. A
 maintainer makes it public once the dictionary has been verified.
@@ -134,9 +134,17 @@ maintainer makes it public once the dictionary has been verified.
 
 Two things only you can add:
 
-- **Samples:** if you gave none, add a few correctly spelled files of the kind this dictionary is for to `samples/`, and
-  add a line for each to `samples/README.md`, such as ``- `hello.rb`: https://example.com/ruby/hello.``. They show it
-  works on real text.
+- **Samples:** a few correctly spelled files of the kind this dictionary is for. They show it works on real text. To add
+  more, run this in the dictionary's folder:
+
+  ```sh
+  pnpm exec add-samples
+  ```
+
+  It asks for files and Wikipedia articles, copies them into `samples/`, and lists each one's source and license in
+  `samples/README.md`. It takes the same `--add-sample`, `--add-sample-origin`, `--add-sample-license`, and
+  `--add-wikipedia-sample` options as `pnpm create-dictionary`.
+
 - **The README's description:** a few sentences on what this dictionary covers and why to use it.
 
 ## 6. Build and test
@@ -418,24 +426,30 @@ A word list you give can't be named `README.md`, or like a word file that's crea
 
 #### Samples
 
-Real files of the kind the dictionary is for, which its tests spell check. Repeat both options for each sample.
+Real files of the kind the dictionary is for, which its tests spell check. Repeat the options for each sample.
 
 ```sh
 pnpm create-dictionary ruby ruby-words.txt \
   --add-sample examples/hello.rb \
-  --add-sample-origin "hello.rb=https://example.com/ruby/hello"
+  --add-sample-origin "hello.rb=https://example.com/ruby/hello" \
+  --add-sample-license "hello.rb=MIT"
 ```
 
-Each sample is copied into `samples/` under its own name. Its origin is where it came from, a web address or a few
-words, given as `<file name>=<origin>`. `samples/README.md` lists each sample with its origin, or with "no known origin"
-when none was given, and the command warns.
+Each sample is copied into `samples/` under its own name. `samples/sample-sources.csv` lists it with:
+
+- **Source:** where it came from, a web address or a few words, given as `<file name>=<origin>`.
+- **Added:** the day it was added.
+- **License:** the license it came under, such as MIT, given as `<file name>=<license>`.
+
+A source or license not given is `unknown`, and a sample without a source gets a warning. `samples/README.md` shows the
+list as a table. Don't edit the table: edit `sample-sources.csv`, and run `pnpm run build:readme` from the repo root.
 
 Samples show the dictionary works on real text, as it's really written. Pick a neutral subject, not a political or
 ideological one, as the [Code of Conduct](https://github.com/streetsidesoftware/cspell-dicts/blob/main/CODE_OF_CONDUCT.md)
 asks. An article about a city is fine, unless the city itself is contested.
 
 For a natural language, Wikipedia articles make good samples. The command fetches the start of an article in the
-dictionary's language, and saves it in `samples/` with its link as the origin:
+dictionary's language, and saves it in `samples/`, with its link as the source and Wikipedia's license, CC BY-SA 4.0:
 
 ```sh
 pnpm create-dictionary german --add-wikipedia-sample Berlin
@@ -443,13 +457,13 @@ pnpm create-dictionary german --add-wikipedia-sample https://de.wikipedia.org/wi
 ```
 
 Give a title, in the dictionary's language or in English, or the article's link. `Berlin` is saved as `berlin.md`.
-When the command asks, it offers more articles until you say no.
+When the command asks, it asks for more articles until the answer is empty.
 
 It always fetches the article on Seattle, as `seattle.md`, unless you give `--no-wikipedia-sample`. Without a network
 connection, articles are simply left out.
 
-Without any samples, the command warns. The tests still check `samples/sample-words-in-dictionary.txt`, the first few
-dozen words of the sources. It's written once, when the dictionary is created, and you can edit it like any sample.
+Without any samples, the command warns. The tests still check `samples/sample-words-in-dictionary.txt`, a few dozen
+words from across the sources. It's written once, when the dictionary is created, and you can edit it like any sample.
 
 #### Build settings
 

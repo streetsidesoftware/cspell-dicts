@@ -15,16 +15,17 @@ a word list can't show whether the dictionary is enabled for the right files.
 All samples live in `samples/` and are checked by one `cspell samples`, the `test` script.
 
 - **Real samples, encouraged.** `--add-sample <path>`, repeatable, copies a file into `samples/` under its own name.
-  The prompt asks "Add a sample file?" until the answer is no. Without any, the generator warns and says why they
+  The prompt asks for sample files until the answer is empty. Without any, the generator warns and says why they
   matter; the new-dictionary guide and skill ask for them.
-- **Origins.** `--add-sample-origin <file>=<url or text>` gives a sample's origin, and the prompt asks for each. The
-  generator writes `samples/README.md` once, listing each sample and its origin, or "no known origin" with a warning.
-  After that it's edited by hand.
+- **Sources and licenses.** `--add-sample-origin <file>=<url or text>` gives a sample's source, and
+  `--add-sample-license <file>=<license>` its license; the prompt asks for both. `samples/sample-sources.csv` lists each
+  sample: a link to its file, its source, the day it was added, and its license, or `unknown`. `samples/README.md` shows
+  it as a table, injected with `@@inject: sample-sources.csv#markdown`. `add-samples` adds samples later, and adds rows.
 - **Natural language.** Real prose, as `.md`. The generator fetches the start of the Wikipedia article on Seattle in
-  the locale's language, its lead section as plain text, into `samples/seattle.md`; its link and the date are the
-  origin. It finds the article through the English article's language links, since its title differs by language.
+  the locale's language, its lead section as plain text, into `samples/seattle.md`; its source is a link,
+  `[Wikipedia: Seattle](…)`, and its license CC BY-SA 4.0. It finds the article through the English article's language links, since its title differs by language.
   `--no-wikipedia-sample` skips it. Without a network connection it's left out, and isn't an error. Samples aren't
-  published, so the link is all the attribution needed.
+  published, but they are in the repository, so the license is recorded with the link.
 - **File types.** `samples/cspell.json` imports `../cspell-ext.json`, so each real sample is checked under its own file
   type.
 - **Static word sample, always.** The generator writes `samples/sample-words-in-dictionary.txt` once, from the first few
