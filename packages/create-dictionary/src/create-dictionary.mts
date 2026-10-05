@@ -24,7 +24,7 @@ async function main(): Promise<void> {
     const settings = await getAnswers(options, repo, cwd);
     const packageDir = createPackage(settings, repo);
     setUpPackage(packageDir, repo, { install: !options.skipInstall, build: settings.doBuild });
-    if (!settings.doBuild) console.log(notBuilt(relative(rootDir, packageDir), settings));
+    if (!settings.doBuild) console.log('%s', notBuilt(relative(rootDir, packageDir), settings));
 }
 
 function notBuilt(dir: string, settings: Settings): string {
@@ -41,7 +41,7 @@ try {
     await main();
 } catch (e) {
     // Ctrl+C at a prompt.
-    if (e instanceof Error && e.name === 'ExitPromptError') console.error('Stopped. Nothing was written.');
+    if (e instanceof Error && e.name === 'ExitPromptError') console.error('%s', 'Stopped. Nothing was written.');
     else fail(e instanceof Error ? e.message : String(e));
     process.exitCode = 1;
 }
