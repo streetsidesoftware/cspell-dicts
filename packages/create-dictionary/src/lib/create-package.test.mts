@@ -152,11 +152,15 @@ describe('createPackage', () => {
         writeFileSync(join(root, 'example.rb'), 'puts zorbal\n');
         const dir = createPackage(
             settings('samples', {
-                samples: [{ path: join(root, 'example.rb'), origin: 'https://example.com/ruby' }],
+                samples: [
+                    { name: 'example.rb', from: join(root, 'example.rb'), origin: 'https://example.com/ruby' },
+                    { name: 'seattle.md', text: '# Seattle\n', origin: 'https://example.com/seattle' },
+                ],
             }),
             repo,
         );
         assert.equal(read(dir, 'samples/example.rb'), 'puts zorbal\n');
+        assert.equal(read(dir, 'samples/seattle.md'), '# Seattle\n');
         assert.match(read(dir, 'samples/README.md'), /`example\.rb`: https:\/\/example\.com\/ruby\./);
         assert.deepEqual(JSON.parse(read(dir, 'samples/cspell.json')), { import: ['../cspell-ext.json'] });
         assert.equal(read(dir, `samples/${wordSample}`), 'zorbal\n');

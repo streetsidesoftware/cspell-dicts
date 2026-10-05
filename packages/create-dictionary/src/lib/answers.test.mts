@@ -39,6 +39,7 @@ function options(answers: Answers, more: Partial<CommandLine> = {}): CommandLine
         placeholderWordLists: false,
         sourceOptions: noSourceOptions,
         sampleOptions: noSampleOptions,
+        wikipediaSample: false,
         hunspellDepth: 1,
         additionalWords: true,
         excludeWords: true,

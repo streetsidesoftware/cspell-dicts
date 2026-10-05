@@ -1,10 +1,14 @@
 import { existsSync, readFileSync, statSync } from 'node:fs';
 import { basename, extname, resolve } from 'node:path';
 
-/** A real sample: a file of the kind the dictionary is for, copied into `samples/`. */
+/** A real sample: a file of the kind the dictionary is for, in `samples/`. */
 export interface Sample {
-    /** Where the file is on this machine. */
-    path: string;
+    /** Its file name in `samples/`. */
+    name: string;
+    /** Where the file is on this machine, to copy it. */
+    from?: string;
+    /** Its text, when it was fetched rather than copied. */
+    text?: string;
     /** Where it came from: a URL or a few words. */
     origin?: string;
 }
@@ -42,8 +46,8 @@ export function parseSamples(options: SampleOptions, cwd: string): Sample[] {
 export function addSample(samples: Map<string, Sample>, path: string, cwd: string): Sample {
     const valid = checkSample(samples, path, cwd);
     if (valid !== true) throw new Error(`--add-sample: ${valid}`);
-    const sample = { path: resolve(cwd, path) };
-    samples.set(basename(path), sample);
+    const sample = { name: basename(path), from: resolve(cwd, path) };
+    samples.set(sample.name, sample);
     return sample;
 }
 
@@ -60,23 +64,78 @@ export function checkSample(samples: Map<string, Sample>, path: string, cwd: str
 /** What's missing from the samples, and why it matters. */
 export function sampleWarnings(samples: Sample[], locale: string): string[] {
     if (!samples.length) {
-        const article = seattle(locale);
+        const language = languageOf(locale);
         return [
             'no samples. A few real files of the kind this dictionary is for show that it works on real text. Add them to samples/.' +
-                (article
-                    ? ` For a natural language, save the text of the Wikipedia article on Seattle, ${article}, as samples/seattle.md.`
+                (language
+                    ? ` For a natural language, copy the start of the Wikipedia article on Seattle into samples/seattle.md: ${searchSeattle(language)}`
                     : ''),
         ];
     }
     return samples
         .filter((sample) => !sample.origin)
-        .map((sample) => `the sample ${basename(sample.path)} has no origin. Give it with --add-sample-origin.`);
+        .map((sample) => `the sample ${sample.name} has no origin. Give it with --add-sample-origin.`);
 }
 
-/** The Wikipedia article on Seattle in the dictionary's language, or undefined for any language. */
-export function seattle(locale: string): string | undefined {
+/** The Wikipedia language code of the first locale, such as `de` for `de-DE`, or undefined for any language. */
+export function languageOf(locale: string): string | undefined {
     const language = locale.split(',')[0]?.trim().split(/[-_]/)[0]?.toLowerCase();
-    return language && language !== '*' ? `https://${language}.wikipedia.org/wiki/Seattle` : undefined;
+    return language && language !== '*' ? language : undefined;
+}
+
+/** A search for Seattle on the language's Wikipedia, which finds the article whatever its title. */
+function searchSeattle(language: string): string {
+    return `https://${language}.wikipedia.org/w/index.php?search=Seattle`;
+}
+
+type GetJson = (url: string) => Promise<unknown>;
+
+/**
+ * The start of the Wikipedia article on Seattle in a language, as `seattle.md`: its lead section, as plain text. Undefined
+ * when it can't be fetched, such as without a network connection, or when the language has no article.
+ */
+export async function fetchSeattle(language: string, getJson: GetJson = fetchJson): Promise<Sample | undefined> {
+    const api = (lang: string, query: string) =>
+        `https://${lang}.wikipedia.org/w/api.php?action=query&format=json&formatversion=2&${query}`;
+    try {
+        const title =
+            language === 'en'
+                ? 'Seattle'
+                : (
+                      (await getJson(
+                          api('en', `prop=langlinks&titles=Seattle&lllang=${encodeURIComponent(language)}`),
+                      )) as Pages
+                  ).query?.pages?.[0]?.langlinks?.[0]?.title;
+        if (!title) return undefined;
+        const query = `prop=extracts&explaintext=1&exintro=1&redirects=1&titles=${encodeURIComponent(title)}`;
+        const extract = ((await getJson(api(language, query))) as Pages).query?.pages?.[0]?.extract?.trim();
+        if (!extract) return undefined;
+        const url = `https://${language}.wikipedia.org/wiki/${encodeURIComponent(title.replaceAll(' ', '_'))}`;
+        const text = extract.split(/\n+/).join('\n\n');
+        const fetched = new Date().toISOString().slice(0, 10);
+        return {
+            name: 'seattle.md',
+            text: `# [${title}](${url})\n\n${text}\n`,
+            origin: `${url}, the start of the article, fetched ${fetched}`,
+        };
+    } catch {
+        return undefined;
+    }
+}
+
+interface Pages {
+    query?: { pages?: { extract?: string; langlinks?: { title?: string }[] }[] };
+}
+
+async function fetchJson(url: string): Promise<unknown> {
+    const response = await fetch(url, {
+        headers: {
+            'User-Agent': 'cspell-dicts create-dictionary (https://github.com/streetsidesoftware/cspell-dicts)',
+        },
+        signal: AbortSignal.timeout(10_000),
+    });
+    if (!response.ok) throw new Error(`${url}: ${response.status}`);
+    return response.json();
 }
 
 /** `samples/README.md`: each sample and its origin. */
@@ -89,7 +148,7 @@ export function samplesReadme(friendlyName: string, samples: Sample[]): string {
         `- \`${wordSample}\`: words from the sources, checked with the dictionary's locale and file type.`,
     ];
     for (const sample of samples) {
-        lines.push(`- \`${basename(sample.path)}\`: ${sample.origin || 'no known origin'}.`);
+        lines.push(`- \`${sample.name}\`: ${sample.origin || 'no known origin'}.`);
     }
     return lines.join('\n') + '\n';
 }

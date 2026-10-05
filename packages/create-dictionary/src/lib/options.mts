@@ -27,6 +27,8 @@ export interface CommandLine {
     sourceOptions: SourceOptions;
     /** The samples, as given. */
     sampleOptions: SampleOptions;
+    /** For a natural language, fetch the start of the Wikipedia article on Seattle as a sample. */
+    wikipediaSample: boolean;
     /** How many affix rules the build chains onto a Hunspell stem. */
     hunspellDepth: number;
     /** Create src/additional_words.txt. */
@@ -77,6 +79,7 @@ interface Options {
     addSourceUrl?: string[];
     addSample?: string[];
     addSampleOrigin?: string[];
+    wikipediaSample?: boolean;
     root?: string;
     skipInstall?: boolean;
     yes?: boolean;
@@ -155,6 +158,10 @@ export function parseCommandLine(argv: string[]): CommandLine {
             'where a sample came from, a URL or a few words, by its file name; repeatable',
             (value: string, previous: string[] = []) => [...previous, value],
         )
+        .option(
+            '--no-wikipedia-sample',
+            'for a natural language, do not fetch the start of the Wikipedia article on Seattle into samples/seattle.md',
+        )
         .option('--no-additional-words', 'do not create src/additional_words.txt, for words the sources lack')
         .option('--no-exclude-words', 'do not create src/exclude_words.txt, for words to leave out of the build')
         .option('--locale <locales>', 'locales, comma separated, such as "en,en-AU", or "*" for any; default: "*"')
@@ -220,6 +227,7 @@ export function parseCommandLine(argv: string[]): CommandLine {
             addSample: opts.addSample ?? [],
             addSampleOrigin: opts.addSampleOrigin ?? [],
         },
+        wikipediaSample: opts.wikipediaSample !== false,
         hunspellDepth: opts.hunspellDepth ?? 1,
         additionalWords: opts.additionalWords !== false,
         excludeWords: opts.excludeWords !== false,

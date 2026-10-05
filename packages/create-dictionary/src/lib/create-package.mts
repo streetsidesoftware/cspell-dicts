@@ -1,5 +1,5 @@
 import { copyFileSync, mkdirSync, readFileSync, writeFileSync } from 'node:fs';
-import { basename, dirname, extname, join, relative } from 'node:path';
+import { dirname, extname, join, relative } from 'node:path';
 
 import type { Settings } from './answers.mts';
 import { title, toPackageName } from './names.mts';
@@ -65,7 +65,11 @@ export function createPackage(answers: Settings, repo: Repo): string {
             '# Words to leave out of the built dictionary. One per line; see docs/word-lists.md.\n',
         );
     }
-    for (const sample of answers.samples) copyFileSync(sample.path, created(join('samples', basename(sample.path))));
+    for (const sample of answers.samples) {
+        const file = join('samples', sample.name);
+        if (sample.from) copyFileSync(sample.from, created(file));
+        else write(file, sample.text ?? '');
+    }
     write('samples/README.md', samplesReadme(title(friendlyName), answers.samples));
     write('samples/cspell.json', JSON.stringify({ import: ['../cspell-ext.json'] }, null, 4) + '\n');
     const words = sampleWords(built.map((file) => join(packageDir, file)));

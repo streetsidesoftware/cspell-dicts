@@ -7,7 +7,15 @@ import { title, toFriendlyName } from './names.mts';
 import { type Answers, type CommandLine, optionForAnswer } from './options.mts';
 import { gitUserName, readTakenNames, type Repo } from './repo.mts';
 import { isHunspellFile } from './hunspell.mts';
-import { addSample, checkSample, parseSamples, type Sample, sampleWarnings, seattle } from './samples.mts';
+import {
+    addSample,
+    checkSample,
+    fetchSeattle,
+    languageOf,
+    parseSamples,
+    type Sample,
+    sampleWarnings,
+} from './samples.mts';
 import {
     checkFile,
     checkFolder,
@@ -157,18 +165,29 @@ export async function getAnswers(options: CommandLine, repo: Repo, cwd: string):
         return sources;
     }
 
-    /** The samples from the options, then from the prompts. */
+    /** The samples from the options, the Wikipedia article on Seattle for a natural language, then from the prompts. */
     async function allSamples(locale: string): Promise<Sample[]> {
         const list = parseSamples(options.sampleOptions, cwd);
+        const byName = new Map(list.map((sample) => [sample.name, sample]));
+        const language = languageOf(locale);
+        if (language && options.wikipediaSample && !byName.has('seattle.md')) {
+            const message = `Fetch the start of the Wikipedia article on Seattle, in ${language}, as a sample?`;
+            if (noPrompts || (await confirm({ message, default: true }))) {
+                const seattle = await fetchSeattle(language);
+                if (seattle) {
+                    byName.set(seattle.name, seattle);
+                    list.push(seattle);
+                } else {
+                    console.log(
+                        `Couldn't fetch the Wikipedia article on Seattle in ${language}, so there's no samples/seattle.md.`,
+                    );
+                }
+            }
+        }
         if (!noPrompts) {
-            const byName = new Map(list.map((sample) => [basename(sample.path), sample]));
-            const article = seattle(locale);
-            const hint = article
-                ? ` For a natural language, save the text of the Wikipedia article on Seattle, ${article}, as a .md file first.`
-                : '';
             while (
                 await confirm({
-                    message: `A sample is a real file of the kind this dictionary is for.${hint} Add a sample?`,
+                    message: 'A sample is a real file of the kind this dictionary is for. Add a sample?',
                     default: !list.length,
                 })
             ) {

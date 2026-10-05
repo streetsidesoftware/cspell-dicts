@@ -380,8 +380,11 @@ Each sample is copied into `samples/` under its own name. Its origin is where it
 words, given as `<file name>=<origin>`. `samples/README.md` lists each sample with its origin, or with "no known origin"
 when none was given, and the command warns.
 
-Samples show the dictionary works on real text, as it's really written. For a natural language, the Wikipedia article on
-Seattle in that language is a good one, saved as `seattle.md` with its link as the origin.
+Samples show the dictionary works on real text, as it's really written.
+
+For a natural language, it also fetches the start of the Wikipedia article on Seattle in that language, as
+`samples/seattle.md`, with its link as the origin. `--no-wikipedia-sample` skips it. Without a network connection, it's
+simply left out.
 
 Without any samples, the command warns. The tests still check `samples/sample-words-in-dictionary.txt`, the first few
 dozen words of the sources. It's written once, when the dictionary is created, and you can edit it like any sample.

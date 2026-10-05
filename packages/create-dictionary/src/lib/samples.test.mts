@@ -4,7 +4,15 @@ import { tmpdir } from 'node:os';
 import { join } from 'node:path';
 import { after, before, describe, it } from 'node:test';
 
-import { noSampleOptions, parseSamples, sampleWarnings, sampleWords, samplesReadme, seattle } from './samples.mts';
+import {
+    fetchSeattle,
+    languageOf,
+    noSampleOptions,
+    parseSamples,
+    sampleWarnings,
+    sampleWords,
+    samplesReadme,
+} from './samples.mts';
 
 let root = '';
 
@@ -24,7 +32,9 @@ describe('parseSamples', () => {
             { addSample: ['example.rb'], addSampleOrigin: ['example.rb=https://example.com/ruby'] },
             root,
         );
-        assert.deepEqual(samples, [{ path: join(root, 'example.rb'), origin: 'https://example.com/ruby' }]);
+        assert.deepEqual(samples, [
+            { name: 'example.rb', from: join(root, 'example.rb'), origin: 'https://example.com/ruby' },
+        ]);
     });
 
     it('refuses a missing file, a name create-dictionary writes, and an origin for no sample', () => {
@@ -40,21 +50,45 @@ describe('parseSamples', () => {
 describe('sampleWarnings', () => {
     it('says why samples matter, and suggests Seattle for a natural language', () => {
         assert.match(sampleWarnings([], '*')[0], /no samples/);
-        assert.match(sampleWarnings([], 'nl-NL')[0], /https:\/\/nl\.wikipedia\.org\/wiki\/Seattle/);
-        assert.match(sampleWarnings([{ path: join(root, 'example.rb') }], '*')[0], /example\.rb has no origin/);
+        assert.match(sampleWarnings([], 'nl-NL')[0], /https:\/\/nl\.wikipedia\.org\/w\/index\.php\?search=Seattle/);
+        assert.match(sampleWarnings([{ name: 'example.rb' }], '*')[0], /example\.rb has no origin/);
     });
 });
 
-describe('seattle', () => {
+describe('languageOf', () => {
     it('uses the first locale, and nothing for any language', () => {
-        assert.equal(seattle('en_AU,en'), 'https://en.wikipedia.org/wiki/Seattle');
-        assert.equal(seattle('*'), undefined);
+        assert.equal(languageOf('en_AU,en'), 'en');
+        assert.equal(languageOf('*'), undefined);
+    });
+});
+
+describe('fetchSeattle', () => {
+    const wikipedia = async (url: string) => {
+        if (url.includes('prop=langlinks')) return { query: { pages: [{ langlinks: [{ title: 'סיאטל' }] }] } };
+        if (url.startsWith('https://he.')) return { query: { pages: [{ extract: 'סיאטל היא עיר.\nהיא גדולה.' }] } };
+        throw new Error('offline');
+    };
+
+    it('finds the article by its title in the language, and keeps its lead with a link', async () => {
+        const sample = await fetchSeattle('he', wikipedia);
+        assert.equal(sample?.name, 'seattle.md');
+        const url = 'https://he.wikipedia.org/wiki/' + encodeURIComponent('סיאטל');
+        assert.equal(sample?.text, `# [סיאטל](${url})\n\nסיאטל היא עיר.\n\nהיא גדולה.\n`);
+        assert.match(
+            sample?.origin ?? '',
+            new RegExp(`^${url.replaceAll('%', '%')}, the start of the article, fetched \\d{4}-\\d{2}-\\d{2}$`),
+        );
+    });
+
+    it('gives nothing, without failing, when Wikipedia can not be reached or has no article', async () => {
+        assert.equal(await fetchSeattle('de', wikipedia), undefined);
+        assert.equal(await fetchSeattle('xx', async () => ({ query: { pages: [{}] } })), undefined);
     });
 });
 
 describe('samplesReadme', () => {
     it('lists each sample with its origin, or no known origin', () => {
-        const readme = samplesReadme('Ruby', [{ path: join(root, 'example.rb') }]);
+        const readme = samplesReadme('Ruby', [{ name: 'example.rb' }]);
         assert.match(readme, /^# Ruby Samples\n/);
         assert.match(readme, /`example\.rb`: no known origin\./);
     });

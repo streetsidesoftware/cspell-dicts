@@ -356,6 +356,7 @@ describe('locale and file type', () => {
             '--locale',
             'en',
             '--no-build',
+            '--no-wikipedia-sample',
         );
         assert.equal(result.code, 0, result.stderr);
         assert.match(packageFile('natural', 'cspell-ext.json'), /"locale": "en"/);
