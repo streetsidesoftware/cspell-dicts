@@ -12,9 +12,6 @@ export const heading = (text: string) => out('bold', text);
 /** A section's title, such as "Section (1/7): Dictionary Info". */
 export const sectionTitle = (text: string) => out(['bold', 'cyan'], text);
 
-/** An explanation above a question, or a note on what the command decided. */
-export const note = (text: string) => out('dim', text);
-
 /** A file the command created. */
 export const created = (text: string) => out('green', text);
 

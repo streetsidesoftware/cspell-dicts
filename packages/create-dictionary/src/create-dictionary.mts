@@ -11,7 +11,7 @@ import { createPackage } from './lib/create-package.mts';
 import { parseCommandLine } from './lib/options.mts';
 import { setUpPackage } from './lib/pnpm.mts';
 import { findRepoRoot, openRepo } from './lib/repo.mts';
-import { fail, heading, note } from './lib/style.mts';
+import { fail, heading } from './lib/style.mts';
 
 async function main(): Promise<void> {
     const options = parseCommandLine(process.argv.slice(2));
@@ -41,7 +41,7 @@ try {
     await main();
 } catch (e) {
     // Ctrl+C at a prompt.
-    if (e instanceof Error && e.name === 'ExitPromptError') console.error(note('Stopped. Nothing was written.'));
+    if (e instanceof Error && e.name === 'ExitPromptError') console.error('Stopped. Nothing was written.');
     else fail(e instanceof Error ? e.message : String(e));
     process.exitCode = 1;
 }

@@ -43,7 +43,7 @@ import {
     validateDescription,
     validateLanguageId,
 } from './validate.mts';
-import { heading, note, sectionTitle, warn } from './style.mts';
+import { heading, sectionTitle, warn } from './style.mts';
 
 /** Word lists larger than this, in bytes, are stored as a trie by default, as the guide says. */
 const largeWordLists = 1_000_000;
@@ -115,7 +115,7 @@ export async function getAnswers(options: CommandLine, repo: Repo, cwd: string):
         const value = given[key] ?? (noPrompts ? def : undefined);
         if (value !== undefined) return value;
         showSection();
-        if (intro) console.log('\n' + note(intro));
+        if (intro) console.log('\n' + intro);
         return ask.confirm({ message, default: def });
     }
 
@@ -221,10 +221,8 @@ export async function getAnswers(options: CommandLine, repo: Repo, cwd: string):
             showSection();
             console.log(
                 '\n' +
-                    note(
-                        'Samples are real files of the kind this dictionary is for, such as a script or a page of text.' +
-                            '\nThe tests spell check them, to show the dictionary works on real text.',
-                    ),
+                    'Samples are real files of the kind this dictionary is for, such as a script or a page of text.' +
+                    '\nThe tests spell check them, to show the dictionary works on real text.',
             );
         }
         if (language && options.wikipediaSample && !byName.has('seattle.md')) {
@@ -236,9 +234,7 @@ export async function getAnswers(options: CommandLine, repo: Repo, cwd: string):
                     list.push(seattle);
                 } else {
                     console.log(
-                        note(
-                            `Couldn't fetch the Wikipedia article on Seattle in ${language}, so there's no samples/seattle.md.`,
-                        ),
+                        `Couldn't fetch the Wikipedia article on Seattle in ${language}, so there's no samples/seattle.md.`,
                     );
                 }
             }
@@ -418,7 +414,7 @@ export async function getAnswers(options: CommandLine, repo: Repo, cwd: string):
         nameValidator(repo, taken),
     );
     const id = toPackageName(name);
-    console.log(note(`Package @cspell/dict-${id}, dictionary ID ${id}.`));
+    console.log(`Package @cspell/dict-${id}, dictionary ID ${id}.`);
     const friendlyName = await text(
         'friendlyName',
         'Friendly name, such as "US English" or "Medical Terms":',
@@ -440,7 +436,7 @@ export async function getAnswers(options: CommandLine, repo: Repo, cwd: string):
     // A name such as en_AU or german stands for its locale.
     const nameLocale = localeFromName(name);
     if (nameLocale && noPrompts && given.locale === undefined) {
-        console.log(note(`The locale is ${nameLocale}, from the name. Give --locale to change it.`));
+        console.log(`The locale is ${nameLocale}, from the name. Give --locale to change it.`);
     }
     // A natural language sets the locale, and anything else the file type, so only one of them is asked.
     const isSet = (value: string | undefined) => value !== undefined && value.trim() !== '*';
