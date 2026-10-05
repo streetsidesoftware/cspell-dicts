@@ -221,14 +221,14 @@ A name has up to 50 letters, digits, `_`, and `-`. These names aren't allowed:
 A readable name, used as the dictionary's title.
 
 ```sh
-pnpm create-dictionary en_AU --friendly-name "Australian English"
+pnpm create-dictionary medical_terms --friendly-name "Medical Terminology"
 ```
 
 It's the title of the dictionary's README, and of its entry in the list of dictionaries in the repo's README. It's also
 the dictionary's name in cspell's settings, and a keyword on npm.
 
-Without it, the name is split at `-` and `_`, and each word is capitalized. So `medical_terms` gives "Medical Terms". A
-language code such as `en_AU` makes a poor title, so give one.
+Without it, a name that is a locale gives that locale's name: `en_AU` gives "Australian English". Any other name is
+split at `-` and `_`, and each word is capitalized: `medical_terms` gives "Medical Terms".
 
 #### Description
 

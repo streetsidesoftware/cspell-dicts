@@ -119,3 +119,16 @@ function canonical(locale: string): string | undefined {
         return undefined;
     }
 }
+
+/**
+ * The name of the locale a dictionary's name stands for, when the whole name is that locale: "Australian English" for
+ * `en_AU`, but nothing for `en_AU-legacy`, where the locale is only part of it.
+ */
+export function friendlyNameFromLocale(name: string): string | undefined {
+    const locale = localeFromName(name);
+    if (!locale) return undefined;
+    const whole =
+        canonical(name.replaceAll('_', '-'))?.toLowerCase() === locale.toLowerCase() ||
+        localeName(locale)?.toLowerCase() === name.toLowerCase().replaceAll(/[-_]/g, ' ');
+    return whole ? localeName(locale) : undefined;
+}

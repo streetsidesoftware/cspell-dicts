@@ -207,6 +207,7 @@ describe('a new package', () => {
         assert.equal(result.code, 0, result.stderr);
         assert.match(result.stdout, /The locale is de-CH, from the name/);
         assert.match(packageFile('de_CH', 'cspell-ext.json'), /"locale": "de-CH"/);
+        assert.match(packageFile('de_CH', 'cspell-ext.json'), /"name": "Swiss High German"/);
     });
 
     it('warns about a locale that is a name, and keeps it', () => {

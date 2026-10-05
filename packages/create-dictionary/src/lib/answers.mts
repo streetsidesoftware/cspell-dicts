@@ -7,7 +7,7 @@ import { title, toFriendlyName } from './names.mts';
 import { type Answers, type CommandLine, optionForAnswer } from './options.mts';
 import { gitUserName, readTakenNames, type Repo } from './repo.mts';
 import { isHunspellFile } from './hunspell.mts';
-import { findLocales, localeFromName, localeName, localeWarnings } from './locales.mts';
+import { findLocales, friendlyNameFromLocale, localeFromName, localeName, localeWarnings } from './locales.mts';
 import {
     addSample,
     checkSample,
@@ -320,7 +320,7 @@ export async function getAnswers(options: CommandLine, repo: Repo, cwd: string):
     const friendlyName = await text(
         'friendlyName',
         'Friendly name, such as "US English" or "Medical Terms":',
-        toFriendlyName(name),
+        friendlyNameFromLocale(name) ?? toFriendlyName(name),
     );
     const description = await text(
         'description',

@@ -1,7 +1,7 @@
 import assert from 'node:assert/strict';
 import { describe, it } from 'node:test';
 
-import { findLocales, localeFromName, localeName, localeWarnings } from './locales.mts';
+import { findLocales, friendlyNameFromLocale, localeFromName, localeName, localeWarnings } from './locales.mts';
 
 describe('localeName', () => {
     it('names known locales, with "_" or "-"', () => {
@@ -74,5 +74,17 @@ describe('localeFromName', () => {
         for (const name of ['ruby', 'go', 'ada', 'lua', 'medical_terms', 'lorem-ipsum']) {
             assert.equal(localeFromName(name), undefined, name);
         }
+    });
+});
+
+describe('friendlyNameFromLocale', () => {
+    it('names a dictionary whose whole name is a locale', () => {
+        assert.equal(friendlyNameFromLocale('en_AU'), 'Australian English');
+        assert.equal(friendlyNameFromLocale('german'), 'German');
+    });
+
+    it('leaves a name alone when the locale is only part of it', () => {
+        assert.equal(friendlyNameFromLocale('en_GB-legacy'), undefined);
+        assert.equal(friendlyNameFromLocale('medical_terms'), undefined);
     });
 });
