@@ -293,15 +293,15 @@ Give as many as you need, in either form or both. Paths are relative to where yo
 A word list has one word per line, usually in a `.txt` file. Each one is copied into `src/` and built as a source.
 
 A Hunspell dictionary is a pair of files, `.dic` and `.aff`. Give either one, or both. The pair is copied into
-`src/hunspell/`, out of the way of the word lists people edit. It's a [third-party source](#third-party-sources) named
-`hunspell`, so its license goes in with `--add-source-license hunspell=<path>`. For a second Hunspell dictionary, define
-it with `--define-source`.
+`src/hunspell/`, out of the way of the word lists people edit. Every Hunspell file given this way goes there, as one
+[third-party source](#third-party-sources) named `hunspell`. So its license goes in with
+`--add-source-license hunspell=<path>`, where the path is relative to where you run the command.
 
 These aren't allowed:
 
 - a file that doesn't exist (see [Missing source](#missing-source))
 - a Hunspell file without its pair
-- two word lists with the same file name, since both would be copied to the same place
+- two files with the same name, such as two `index.dic`, since both would be copied to the same place
 
 #### Third-party sources
 

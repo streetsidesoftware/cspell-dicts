@@ -47,10 +47,11 @@ aoo/LICENSE=../../LICENSE` brings in the license kept at the repository's root a
 - **Published with the dictionary:** the generator adds each source's license and README to the dictionary's
   `files`, at their local paths, such as `src/aoo/LICENSE`. A published dictionary is often a derivative work of its
   sources, so it ships with their terms.
-- **Shortcut:** a positional Hunspell file defines the source `hunspell`: `pnpm create-dictionary en_XX
-vendor/index.dic` copies the pair into `src/hunspell/`, as 32 dictionaries keep theirs. Hunspell files often have
-  names like `index.dic` that make poor source names, and a nested folder keeps people from editing them by hand. The
-  `--add-source-*` options take `hunspell` like any other name.
+- **Shortcut:** a positional Hunspell file, with its pair, is a file of the source `hunspell`, copied into
+  `src/hunspell/` as 32 dictionaries keep theirs: `pnpm create-dictionary en_XX vendor/index.dic`. Every positional
+  Hunspell file joins that one source, as `grc_GR` keeps two. Hunspell files often have names like `index.dic` that make
+  poor source names, and a nested folder keeps people from editing them by hand. Its paths are relative to where the
+  command runs, and the `--add-source-*` options take `hunspell` like any other name.
 - **Names:** letters, digits, `_`, and `-`, as for a dictionary. Two sources with the same name are an error before
   anything is written, saying to name one with `--define-source <name>=<path>`.
 - **Checks at creation:** a source needs at least one file, and every named file must exist; there's no
@@ -63,7 +64,8 @@ vendor/index.dic` copies the pair into `src/hunspell/`, as 32 dictionaries keep 
 ## Consequences
 
 - Any number of sources fit, each with its license beside it and its origin in the sources file.
-- A second positional Hunspell file is an error: both would be named `hunspell`. Define one with `--define-source`.
+- Two positional Hunspell files with the same file name, such as two `index.dic`, would both land in `src/hunspell/`.
+  That's an error, and one of them needs `--define-source`.
 - Commands for natural language dictionaries get long; agents write them, and people can use the prompts.
 - Each new `--add-source-*` option needs a matching prompt.
 

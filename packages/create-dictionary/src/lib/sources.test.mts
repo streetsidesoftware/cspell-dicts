@@ -101,19 +101,10 @@ describe('hunspellFile', () => {
         assert.deepEqual(buildFiles(source), ['src/hunspell/en_XX.dic']);
     });
 
-    it('takes a license like any named source', () => {
+    it('takes a license like any named source, with paths from where the command runs', () => {
         const given = hunspellFile('aoo/dicts/en_XX/en_XX.dic', root);
-        const [source] = parseSources(
-            { ...noSourceOptions, addSourceLicense: ['hunspell/LICENSE=../../../LICENSE'] },
-            root,
-            [given],
-        );
-        assert.deepEqual(source.license, { path: '../../../LICENSE', local: 'LICENSE' });
-    });
-
-    it('refuses a second Hunspell file given on its own', () => {
-        const given = [hunspellFile('aoo/dicts/en_XX/en_XX.dic', root), hunspellFile('other/xx.dic', root)];
-        assert.throws(() => parseSources(noSourceOptions, root, given), /two sources are named hunspell/);
+        const [source] = parseSources({ ...noSourceOptions, addSourceLicense: ['hunspell=LICENSE'] }, root, [given]);
+        assert.deepEqual(source.license, { path: 'LICENSE', local: 'LICENSE' });
     });
 });
 

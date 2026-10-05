@@ -1,5 +1,5 @@
 import { existsSync, statSync } from 'node:fs';
-import { basename, dirname, extname, posix, resolve } from 'node:path';
+import { basename, extname, posix, resolve } from 'node:path';
 
 import { hunspellPair, isHunspellFile } from './hunspell.mts';
 
@@ -102,11 +102,11 @@ export function wordList(file: string, cwd: string, empty: boolean): Source {
 }
 
 /**
- * A Hunspell file given on its own: the source `hunspell`, with its pair, so people don't edit it by hand.
+ * A Hunspell file given on its own, with its pair: files of the source `hunspell`, so people don't edit them by hand.
  */
 export function hunspellFile(file: string, cwd: string): Source {
-    const files = hunspellPair(basename(file)).map((f) => ({ path: f, local: f }));
-    return { name: 'hunspell', root: dirname(resolve(cwd, file)), files };
+    const files = hunspellPair(file).map((f) => ({ path: f, local: basename(f) }));
+    return { name: 'hunspell', root: cwd, files };
 }
 
 /** The source's folder in the dictionary, such as `src/hunspell/`. */

@@ -22,6 +22,10 @@ before(() => {
     writeFileSync(join(root, 'additional_words.txt'), 'zorbal\n');
     mkdirSync(join(root, 'sub'));
     writeFileSync(join(root, 'sub', 'words.txt'), 'quixly\n');
+    writeFileSync(join(root, 'sub', 'other.dic'), '1\nquixly\n');
+    writeFileSync(join(root, 'sub', 'other.aff'), 'SET UTF-8\n');
+    writeFileSync(join(root, 'sub', 'pair.dic'), '1\nquixly\n');
+    writeFileSync(join(root, 'sub', 'pair.aff'), 'SET UTF-8\n');
 });
 
 after(() => rmSync(root, { recursive: true, force: true }));
@@ -121,8 +125,27 @@ describe('getAnswers', () => {
             root,
         );
         assert.deepEqual(
-            settings.sources.map((s) => s.name),
-            ['hunspell'],
+            settings.sources.map((s) => [s.name, s.files.map((f) => f.local)]),
+            [['hunspell', ['pair.dic', 'pair.aff']]],
+        );
+    });
+
+    it('puts every Hunspell file given on its own in the one source hunspell', async () => {
+        const settings = await getAnswers(
+            options({ name: 'two', srcFiles: ['pair.dic', 'sub/other.aff'], locale: 'xx' }),
+            repo,
+            root,
+        );
+        assert.deepEqual(
+            settings.sources.map((s) => [s.name, s.files.map((f) => f.local)]),
+            [['hunspell', ['pair.dic', 'pair.aff', 'other.dic', 'other.aff']]],
+        );
+    });
+
+    it('refuses two Hunspell files with the same name', async () => {
+        await assert.rejects(
+            getAnswers(options({ name: 'clash', srcFiles: ['pair.dic', 'sub/pair.dic'], locale: 'xx' }), repo, root),
+            /would both be copied to src\/hunspell\/pair\.dic/,
         );
     });
 

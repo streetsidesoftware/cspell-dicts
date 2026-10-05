@@ -136,11 +136,15 @@ export async function getAnswers(options: CommandLine, repo: Repo, cwd: string):
         const all: SourceOptions = structuredClone(options.sourceOptions);
         const plain = await givenSources(name);
         if (!noPrompts) await askDefined(all);
-        const named: Source[] = [];
+        // Every Hunspell file given on its own is a file of the one source `hunspell`.
+        const named = new Map<string, Source>();
         for (const source of plain) {
-            if (source.name && !named.some((other) => isSameSource(other, source))) named.push(source);
+            if (!source.name) continue;
+            const other = named.get(source.name);
+            if (other) other.files.push(...source.files);
+            else named.set(source.name, { ...source, files: [...source.files] });
         }
-        const sources = checkCopies([...plain.filter((s) => !s.name), ...parseSources(all, cwd, named)]);
+        const sources = checkCopies([...plain.filter((s) => !s.name), ...parseSources(all, cwd, [...named.values()])]);
         for (const source of sources) {
             for (const warning of sourceWarnings(source)) console.warn('warning: ' + warning);
         }
@@ -193,29 +197,31 @@ export async function getAnswers(options: CommandLine, repo: Repo, cwd: string):
         }
     }
 
-    /** A Hunspell pair given as both its .dic and its .aff is one source. */
-    function isSameSource(a: Source, b: Source): boolean {
-        return a.root === b.root && a.files[0]?.path === b.files[0]?.path;
-    }
-
-    /** Drop a file given twice, and refuse two copied to the same path. */
+    /**
+     * Drop a file given twice, such as a Hunspell pair given as both its .dic and its .aff, and refuse two files
+     * copied to the same path.
+     */
     function checkCopies(list: Source[]): Source[] {
-        const bySource = new Map(list.map((source) => [resolve(source.root, source.files[0]?.path ?? ''), source]));
         // The files create-dictionary writes in src/ itself.
         const copies = new Map<string, string>([['src/README.md', 'src/README.md']]);
         if (options.additionalWords) copies.set('src/additional_words.txt', 'src/additional_words.txt');
         if (options.excludeWords) copies.set('src/exclude_words.txt', 'src/exclude_words.txt');
-        for (const source of bySource.values()) {
-            for (const file of source.files) {
+        const result: Source[] = [];
+        for (const source of list) {
+            const files = source.files.filter((file) => {
                 const to = srcDir(source) + file.local;
+                const from = resolve(source.root, file.path);
                 const other = copies.get(to);
+                if (other === from) return false;
                 if (other !== undefined) {
-                    throw new Error(`${other} and ${file.path} would both be copied to ${to}. Rename one of them.`);
+                    throw new Error(`${other} and ${from} would both be copied to ${to}. Rename one of them.`);
                 }
-                copies.set(to, file.path);
-            }
+                copies.set(to, from);
+                return true;
+            });
+            if (files.length) result.push({ ...source, files });
         }
-        return [...bySource.values()];
+        return result;
     }
 
     const taken = await readTakenNames(repo);
