@@ -43,7 +43,7 @@ import {
     validateDescription,
     validateLanguageId,
 } from './validate.mts';
-import { explain, header, info, section as showSectionTitle, warn } from './output.mts';
+import { explain, header, info as showInfo, section as showSectionTitle, warn } from './output.mts';
 
 /** Word lists larger than this, in bytes, are stored as a trie by default, as the guide says. */
 const largeWordLists = 1_000_000;
@@ -78,12 +78,19 @@ export async function getAnswers(options: CommandLine, repo: Repo, cwd: string):
 
     /** Starts a section; its title is shown before its first question, so a section answered by options shows none. */
     function section(n: number, title: string): void {
-        pendingSection = `Section (${n}/${sectionCount}): ${title}`;
+        // Without prompts there are no sections to show.
+        pendingSection = noPrompts ? undefined : `Section (${n}/${sectionCount}): ${title}`;
     }
 
     function showSection(): void {
         if (pendingSection) showSectionTitle(pendingSection);
         pendingSection = undefined;
+    }
+
+    /** A note within the current section, under its title. */
+    function info(format: string, ...values: unknown[]): void {
+        showSection();
+        showInfo(format, ...values);
     }
 
     const ask = {
