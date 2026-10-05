@@ -79,7 +79,7 @@ export async function getAnswers(options: CommandLine, repo: Repo, cwd: string):
         for (;;) {
             const person = await input({
                 message:
-                    'Contributor: "Name", "Name <email>", or "Name (url)", such as a GitHub profile; empty to skip',
+                    'Contributor, as "Name", "Name <email>", or "Name (url)", such as a GitHub profile; empty to skip:',
                 default: def,
                 validate: (value) => !value.trim() || validateContributor(value),
             });
@@ -101,7 +101,7 @@ export async function getAnswers(options: CommandLine, repo: Repo, cwd: string):
         }
         if (noPrompts) return [];
         const typed = await input({
-            message: 'Other keywords people search npm for, such as golang for Go; comma separated, empty to skip',
+            message: 'Other keywords people search npm for, such as golang for Go; comma separated, empty to skip:',
         });
         return typed
             .split(',')
@@ -163,16 +163,16 @@ export async function getAnswers(options: CommandLine, repo: Repo, cwd: string):
         if (!noPrompts) {
             const byName = new Map(list.map((sample) => [basename(sample.path), sample]));
             const article = seattle(locale);
-            const hint = article ? ` For a natural language, the Wikipedia article on Seattle: ${article}` : '';
+            const hint = article ? ` For a natural language, try the Wikipedia article on Seattle, ${article}.` : '';
             while (
                 await confirm({
-                    message: `Add a sample file? A real file of the kind this dictionary is for.${hint}`,
+                    message: `A sample is a real file of the kind this dictionary is for.${hint} Add a sample?`,
                     default: !list.length,
                 })
             ) {
-                const path = await input({ message: 'Its path', validate: (v) => checkSample(byName, v, cwd) });
+                const path = await input({ message: 'Its path:', validate: (v) => checkSample(byName, v, cwd) });
                 const sample = addSample(byName, path, cwd);
-                const origin = await input({ message: 'Where it came from (URL or a few words); empty if unknown' });
+                const origin = await input({ message: 'Where it came from (URL or a few words); empty if unknown:' });
                 if (origin.trim()) sample.origin = origin.trim();
                 list.push(sample);
             }
@@ -184,27 +184,27 @@ export async function getAnswers(options: CommandLine, repo: Repo, cwd: string):
     /** Asks for named sources, as the options would give them. */
     async function askDefined(all: SourceOptions): Promise<void> {
         while (await confirm({ message: 'Add a third-party source?', default: false })) {
-            const folder = await input({ message: 'Its folder', validate: (v) => checkFolder(cwd, v) });
+            const folder = await input({ message: 'Its folder:', validate: (v) => checkFolder(cwd, v) });
             const inFolder = (v: string) => !v.trim() || checkFile(resolve(cwd, folder), v.trim());
-            const name = await input({ message: 'Its name', default: basename(resolve(cwd, folder)) });
+            const name = await input({ message: 'Its name:', default: basename(resolve(cwd, folder)) });
             all.defineSource.push(`${name}=${folder}`);
             const withLocal = async (path: string) => {
-                const local = await input({ message: `Its path in src/${name}/`, default: path });
+                const local = await input({ message: `Its path in src/${name}/:`, default: path });
                 return local === path ? `${name}=${path}` : `${name}/${local}=${path}`;
             };
             for (;;) {
                 const file = await input({
-                    message: `A word list or Hunspell file in ${folder}; empty when done`,
+                    message: `A word list or Hunspell file in ${folder}; empty when done:`,
                     validate: inFolder,
                 });
                 if (!file.trim()) break;
                 all.addSourceFile.push(await withLocal(file.trim()));
             }
-            const license = await input({ message: 'Its license file; empty to skip', validate: inFolder });
+            const license = await input({ message: 'Its license file; empty to skip:', validate: inFolder });
             if (license.trim()) all.addSourceLicense.push(await withLocal(license.trim()));
-            const readme = await input({ message: 'Its README; empty to skip', validate: inFolder });
+            const readme = await input({ message: 'Its README; empty to skip:', validate: inFolder });
             if (readme.trim()) all.addSourceReadme.push(await withLocal(readme.trim()));
-            const url = await input({ message: 'Where it can be found (URL); empty to skip' });
+            const url = await input({ message: 'Where it can be found (URL); empty to skip:' });
             if (url.trim()) all.addSourceUrl.push(`${name}=${url.trim()}`);
         }
     }
@@ -225,7 +225,7 @@ export async function getAnswers(options: CommandLine, repo: Repo, cwd: string):
 
     async function askSource(def: string | undefined): Promise<Source> {
         for (;;) {
-            const typed = await input({ message: 'Source file', default: def, validate: validatePath });
+            const typed = await input({ message: 'Source file:', default: def, validate: validatePath });
             if (isHunspellFile(typed)) return hunspellFile(typed, cwd);
             if (checkFile(cwd, typed) === true) return wordList(typed, cwd, false);
             const message = `${typed} not found. Create an empty placeholder, src/${basename(typed)}?`;
@@ -263,24 +263,24 @@ export async function getAnswers(options: CommandLine, repo: Repo, cwd: string):
     const taken = await readTakenNames(repo);
     const name = await text(
         'name',
-        'The directory name for the dictionary (en_US, medical-terms)',
+        'Directory name, such as en_US or medical-terms:',
         undefined,
         nameValidator(repo, taken),
     );
     const friendlyName = await text(
         'friendlyName',
-        'Friendly Name ("US English", "Medical Terms")',
+        'Friendly name, such as "US English" or "Medical Terms":',
         toFriendlyName(name),
     );
     const description = await text(
         'description',
-        'Description: the words it covers ("Ruby keywords and standard library names")',
+        'Description, the words it covers, such as "Ruby keywords and standard library names":',
         undefined,
         validateDescription,
     );
     const packageDescription = await text(
         'packageDescription',
-        'Description on npm',
+        'Description on npm:',
         title(friendlyName) + ' dictionary for cspell.',
     );
     const people = await contributors();
@@ -288,25 +288,25 @@ export async function getAnswers(options: CommandLine, repo: Repo, cwd: string):
     const sources = await allSources(name);
     const locale = await text(
         'locale',
-        'Language locale, example: "en,en-US" for English and English US, "fr" for French, or use "*" for programming language dictionaries.',
+        'Locale, the natural languages it is for, such as "en,en-US" or "fr"; "*" for any:',
         '*',
     );
     const anyLocale = locale.trim() === '*';
     const languageId = await text(
         'languageId',
-        'Programming languageID/filetype, i.e. "typescript", "php", "go", or "*" for any.',
+        'File type, the programming languages or file types it is for, such as "typescript" or "go"; "*" for any:',
         anyLocale && !noPrompts ? undefined : '*',
         validateLanguageId(anyLocale),
     );
     const isHunspell = sources.some((source) => source.files.some((f) => isHunspellFile(f.path)));
     const useTrie = await yesNo(
         'useTrie',
-        'Store as a trie? A trie is much smaller for large word lists.',
+        'A trie is much smaller for large word lists. Store it as a trie?',
         isHunspell || wordListBytes(sources) > largeWordLists,
     );
     const doBuild = await yesNo(
         'doBuild',
-        isHunspell ? 'Build it now? A Hunspell dictionary can take a long time.' : 'Build it now?',
+        isHunspell ? 'A Hunspell dictionary can take a long time to build. Build it now?' : 'Build it now?',
         !isHunspell,
     );
 
