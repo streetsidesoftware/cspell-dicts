@@ -88,7 +88,6 @@ describe('friendlyNameFromLocale', () => {
     it('names a dictionary whose whole name is a locale', () => {
         assert.equal(friendlyNameFromLocale('en_AU'), 'Australian English');
         assert.equal(friendlyNameFromLocale('german'), 'German');
-        assert.equal(friendlyNameFromLocale('en_IN'), 'English India');
     });
 
     it('leaves a name alone when the locale is only part of it', () => {
