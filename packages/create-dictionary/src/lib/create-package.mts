@@ -8,7 +8,7 @@ import { isHunspellFile } from './hunspell.mts';
 import { sampleWords, samplesReadme, wordSample } from './samples.mts';
 import { fillTemplate, templateDir, templateFiles } from './template.mts';
 import { buildFiles, copies, publishedFiles, sourcesYaml, srcDir } from './sources.mts';
-import { created as showCreated, info } from './output.mts';
+import { created as showCreated, info, literal } from './output.mts';
 
 const additionalWordsFile = 'src/additional_words.txt';
 const excludeWordsFile = 'src/exclude_words.txt';
@@ -44,7 +44,7 @@ export function createPackage(answers: Settings, repo: Repo): string {
         year: String(new Date().getFullYear()),
     };
 
-    info('Creating %s', relative(rootDir, packageDir));
+    info('Creating %s', literal(relative(rootDir, packageDir)));
     for (const file of templateFiles) {
         const template = readFileSync(join(templateDir, file), 'utf8');
         const content = fillTemplate(template, values, extname(file));

@@ -11,7 +11,7 @@ import { createPackage } from './lib/create-package.mts';
 import { parseCommandLine } from './lib/options.mts';
 import { setUpPackage } from './lib/pnpm.mts';
 import { findRepoRoot, openRepo } from './lib/repo.mts';
-import { fail, heading, info, stopped } from './lib/output.mts';
+import { fail, heading, info, literal, stopped } from './lib/output.mts';
 
 async function main(): Promise<void> {
     const options = parseCommandLine(process.argv.slice(2));
@@ -28,10 +28,12 @@ async function main(): Promise<void> {
 }
 
 function notBuilt(dir: string, settings: Settings): string {
-    const lines = [`${heading('Not built yet.')} Its tests fail until you run pnpm run build in ${dir}.`];
+    const lines = [
+        `${heading('Not built yet.')} Its tests fail until you run ${literal('pnpm run build')} in ${literal(dir)}.`,
+    ];
     if (settings.sources.some((s) => s.files.some((f) => isHunspellFile(f.path)))) {
         lines.push(
-            `A Hunspell dictionary can take a long time to build. If it's too slow, lower maxDepth in ${dir}/cspell-tools.config.yaml.`,
+            `A Hunspell dictionary can take a long time to build. If it's too slow, lower ${literal('maxDepth')} in ${literal(`${dir}/cspell-tools.config.yaml`)}.`,
         );
     }
     return lines.join('\n');

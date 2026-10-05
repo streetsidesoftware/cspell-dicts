@@ -11,6 +11,18 @@ const err = (format: Format, text: string) => styleText(format, text, { stream: 
 /** Bold, for a title or the start of an important note. */
 export const heading = (text: string) => out('bold', text);
 
+/** Something typed or a path, such as `pnpm run build` or `dictionaries/`: italic. */
+export const literal = (text: string) => out('italic', text);
+
+/** A key to press, such as Enter: bold. */
+export const key = (text: string) => out('bold', text);
+
+/** A web address: underlined, as links usually are. */
+export const link = (url: string) => out('underline', url);
+
+/** Dim, the way the prompts show a default answer, such as (German). */
+export const asDefault = (text: string) => out('dim', text);
+
 /** Shows a title, then its lines. */
 export function header(title: string, ...lines: string[]): void {
     console.log('\n%s\n\n%s', heading(title), lines.join('\n'));

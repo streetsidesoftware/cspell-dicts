@@ -43,7 +43,17 @@ import {
     validateDescription,
     validateLanguageId,
 } from './validate.mts';
-import { explain, header, info as showInfo, section as showSectionTitle, warn } from './output.mts';
+import {
+    asDefault,
+    explain,
+    header,
+    info as showInfo,
+    key,
+    link,
+    literal,
+    section as showSectionTitle,
+    warn,
+} from './output.mts';
 
 /** Word lists larger than this, in bytes, are stored as a trie by default, as the guide says. */
 const largeWordLists = 1_000_000;
@@ -231,8 +241,9 @@ export async function getAnswers(options: CommandLine, repo: Repo, cwd: string):
                     list.push(seattle);
                 } else {
                     info(
-                        "Couldn't fetch the Wikipedia article on Seattle in %s, so there's no samples/seattle.md.",
+                        "Couldn't fetch the Wikipedia article on Seattle in %s, so there's no %s.",
                         localeName(language) ?? language,
+                        literal('samples/seattle.md'),
                     );
                 }
             }
@@ -405,15 +416,15 @@ export async function getAnswers(options: CommandLine, repo: Repo, cwd: string):
     if (!noPrompts) {
         header(
             'Create a dictionary for cspell',
-            'The dictionary is created in a new folder in dictionaries/, once we have the information it needs.',
+            `The dictionary is created in a new folder in ${literal('dictionaries/')}, once we have the information it needs.`,
             `To gather it, we'll ask you short questions in ${sectionCount} sections.`,
             '',
-            'Most questions have a default answer in (parentheses). Press Enter to accept it.',
+            `Most questions have a default answer in ${asDefault('(parentheses)')}. Press ${key('Enter')} to accept it.`,
             '',
-            'Every answer can also be given as an option: pnpm create-dictionary --help',
-            'Guide: https://github.com/streetsidesoftware/cspell-dicts/blob/main/docs/guides/new-dictionary.md',
+            `Every answer can also be given as an option: ${literal('pnpm create-dictionary --help')}`,
+            `Guide: ${link('https://github.com/streetsidesoftware/cspell-dicts/blob/main/docs/guides/new-dictionary.md')}`,
             '',
-            'Press Ctrl+C during the questions to stop without making changes.',
+            `Press ${key('Ctrl+C')} during the questions to stop without making changes.`,
         );
     }
     section(1, 'Dictionary Info');
@@ -425,7 +436,7 @@ export async function getAnswers(options: CommandLine, repo: Repo, cwd: string):
         nameValidator(repo, taken),
     );
     const id = toPackageName(name);
-    info('Package @cspell/dict-%s, dictionary ID %s.', id, id);
+    info('Package %s, dictionary ID %s.', literal(`@cspell/dict-${id}`), literal(id));
     const friendlyName = await text(
         'friendlyName',
         'Friendly name, such as "US English" or "Medical Terms":',
@@ -447,7 +458,7 @@ export async function getAnswers(options: CommandLine, repo: Repo, cwd: string):
     // A name such as en_AU or german stands for its locale.
     const nameLocale = localeFromName(name);
     if (nameLocale && noPrompts && given.locale === undefined) {
-        info('The locale is %s, from the name. Give --locale to change it.', nameLocale);
+        info('The locale is %s, from the name. Give %s to change it.', literal(nameLocale), literal('--locale'));
     }
     // A natural language sets the locale, and anything else the file type, so only one of them is asked.
     const isSet = (value: string | undefined) => value !== undefined && value.trim() !== '*';
