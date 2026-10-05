@@ -105,6 +105,8 @@ Finish what the command can't know.
   - If the command got no `--add-sample`, add a few correctly spelled files of the kind the dictionary is for to
     `samples/`, and their origins to `samples/README.md`. For a natural language, the command fetches
     `samples/seattle.md` itself, when it can reach Wikipedia.
+  - Keep samples on a neutral subject, as `docs/dictionary-packages.md` says: nothing political or ideological, and no
+    contested city.
   - Write the README's description: what the dictionary covers and why to use it, with absolute `https://` links.
   - For an upstream source, add a `sync` script as in `docs/guides/upstream-updates.md`. Never edit synced files by
     hand.

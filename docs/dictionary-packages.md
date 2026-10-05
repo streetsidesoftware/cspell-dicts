@@ -44,7 +44,10 @@ dictionaries/<name>/
   third-party source has its own folder, `src/<source>/`, and `src/sources.yaml` lists each one's files, license,
   README, and URL.
 - **`dict/`:** the built dictionary.
-- **`samples/`:** correctly spelled files of the kind the dictionary is for.
+- **`samples/`:** correctly spelled files of the kind the dictionary is for. Like everything in the repo, they follow
+  the [Code of Conduct](https://github.com/streetsidesoftware/cspell-dicts/blob/main/CODE_OF_CONDUCT.md): pick a
+  neutral subject, not a political or ideological one. An article about a city is fine, unless the city itself is
+  contested.
 - **`README.md`:** the package's page on npmjs.com, so links are absolute `https://` URLs. See
   [Writing for users](./style.md#writing-for-users).
 - **`LICENSE`:** npm only publishes a license file from inside the package, so each package has its own.

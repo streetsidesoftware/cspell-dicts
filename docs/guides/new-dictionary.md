@@ -380,7 +380,9 @@ Each sample is copied into `samples/` under its own name. Its origin is where it
 words, given as `<file name>=<origin>`. `samples/README.md` lists each sample with its origin, or with "no known origin"
 when none was given, and the command warns.
 
-Samples show the dictionary works on real text, as it's really written.
+Samples show the dictionary works on real text, as it's really written. Pick a neutral subject, not a political or
+ideological one, as the [Code of Conduct](https://github.com/streetsidesoftware/cspell-dicts/blob/main/CODE_OF_CONDUCT.md)
+asks. An article about a city is fine, unless the city itself is contested.
 
 For a natural language, it also fetches the start of the Wikipedia article on Seattle in that language, as
 `samples/seattle.md`, with its link as the origin. `--no-wikipedia-sample` skips it. Without a network connection, it's
