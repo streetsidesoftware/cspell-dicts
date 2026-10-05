@@ -7,7 +7,7 @@ import { title, toFriendlyName } from './names.mts';
 import { type Answers, type CommandLine, optionForAnswer } from './options.mts';
 import { gitUserName, readTakenNames, type Repo } from './repo.mts';
 import { isHunspellFile } from './hunspell.mts';
-import { findLocales, localeName, localeWarnings } from './locales.mts';
+import { findLocales, localeFromName, localeName, localeWarnings } from './locales.mts';
 import {
     addSample,
     checkSample,
@@ -336,11 +336,16 @@ export async function getAnswers(options: CommandLine, repo: Repo, cwd: string):
     const people = await contributors();
     const searchWords = await keywords();
     const sources = await allSources(name);
+    // A name such as en_AU or german stands for its locale.
+    const nameLocale = localeFromName(name);
+    if (nameLocale && noPrompts && given.locale === undefined) {
+        console.log(`The locale is ${nameLocale}, from the name. Give --locale to change it.`);
+    }
     const locale = await checkedLocale(
         await text(
             'locale',
             'Locales, the natural languages it is for, comma separated, such as "en,en-US", or names such as "English"; "*" for any:',
-            '*',
+            nameLocale ?? '*',
         ),
     );
     const anyLocale = locale.trim() === '*';

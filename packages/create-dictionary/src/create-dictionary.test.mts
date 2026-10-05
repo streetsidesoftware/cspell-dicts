@@ -194,6 +194,21 @@ describe('a new package', () => {
         assert.match(packageFile('withsample', 'samples/README.md'), /`example\.rb`: made up\./);
     });
 
+    it('takes the locale from a name such as de_CH', () => {
+        const result = create(
+            '--yes',
+            'de_CH',
+            '--description',
+            'Test words',
+            '--placeholder-word-lists',
+            '--no-build',
+            '--no-wikipedia-sample',
+        );
+        assert.equal(result.code, 0, result.stderr);
+        assert.match(result.stdout, /The locale is de-CH, from the name/);
+        assert.match(packageFile('de_CH', 'cspell-ext.json'), /"locale": "de-CH"/);
+    });
+
     it('warns about a locale that is a name, and keeps it', () => {
         const result = create(
             '--yes',

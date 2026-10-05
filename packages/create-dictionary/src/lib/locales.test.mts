@@ -1,7 +1,7 @@
 import assert from 'node:assert/strict';
 import { describe, it } from 'node:test';
 
-import { findLocales, localeName, localeWarnings } from './locales.mts';
+import { findLocales, localeFromName, localeName, localeWarnings } from './locales.mts';
 
 describe('localeName', () => {
     it('names known locales, with "_" or "-"', () => {
@@ -53,5 +53,26 @@ describe('localeWarnings', () => {
         assert.equal(warnings.length, 2);
         assert.match(warnings[0], /"english" isn't a known locale\. Did you mean en \(English\), /);
         assert.match(warnings[1], /^locale: "xx" isn't a known locale\.$/);
+    });
+});
+
+describe('localeFromName', () => {
+    it('reads the locale at the start of the name', () => {
+        assert.equal(localeFromName('en_AU'), 'en-AU');
+        assert.equal(localeFromName('sr_Latn'), 'sr-Latn');
+        assert.equal(localeFromName('grc_GR'), 'grc-GR');
+        assert.equal(localeFromName('en_GB-legacy'), 'en-GB');
+        assert.equal(localeFromName('th_th'), 'th-TH');
+    });
+
+    it('reads a language name', () => {
+        assert.equal(localeFromName('german'), 'de');
+        assert.equal(localeFromName('latin'), 'la');
+    });
+
+    it('leaves other names alone, including three-letter words that are language codes', () => {
+        for (const name of ['ruby', 'go', 'ada', 'lua', 'medical_terms', 'lorem-ipsum']) {
+            assert.equal(localeFromName(name), undefined, name);
+        }
     });
 });

@@ -85,3 +85,37 @@ export function localeWarnings(locales: string): string[] {
             return `locale: "${item}" isn't a known locale.` + (options ? ` Did you mean ${options}?` : '');
         });
 }
+
+/**
+ * The locale a dictionary's name stands for, as a starting point: `en_AU` gives `en-AU`, `sr_Latn` gives `sr-Latn`,
+ * `en_GB-legacy` gives `en-GB`, and `german` gives `de`. Undefined for names such as `ruby`.
+ */
+export function localeFromName(name: string): string | undefined {
+    const parts = name.split(/[-_]/);
+    const [language] = parts;
+    if (language && /^[a-z]{2,3}$/i.test(language)) {
+        // The longest start of the name that's a locale: a language, then a script or a region.
+        const subtags = [language, ...parts.slice(1, 3).filter((_, i, all) => all.slice(0, i + 1).every(isSubtag))];
+        for (let n = subtags.length; n >= 1; n--) {
+            // A three-letter name alone is too often a word, such as "ada" or "lua".
+            if (n === 1 && language.length === 3) break;
+            const locale = canonical(subtags.slice(0, n).join('-'));
+            if (locale && localeName(locale)) return locale;
+        }
+    }
+    const spoken = name.toLowerCase().replaceAll(/[-_]/g, ' ');
+    return knownLocales('en').find(({ name }) => name.toLowerCase() === spoken)?.locale;
+}
+
+/** A script, such as `Latn`, or a region, such as `AU` or `419`. */
+function isSubtag(part: string): boolean {
+    return /^([a-z]{4}|[a-z]{2}|\d{3})$/i.test(part);
+}
+
+function canonical(locale: string): string | undefined {
+    try {
+        return Intl.getCanonicalLocales(locale)[0];
+    } catch {
+        return undefined;
+    }
+}
