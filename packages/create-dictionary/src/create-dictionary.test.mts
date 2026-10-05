@@ -175,7 +175,10 @@ describe('a new package', () => {
         assert.match(packageFile('hunspell', 'src/sources.yaml'), /name: 'hunspell'/);
         assert.match(result.stderr, /warning: the source hunspell has no license/);
         assert.match(packageFile('hunspell', 'cspell-tools.config.yaml'), /format: 'trie3'/);
-        assert.match(result.stdout, /Not built yet[\s\S]*lower maxDepth/);
+        assert.match(
+            result.stdout,
+            /Next steps:\n {2}cd dictionaries\/hunspell\n {2}pnpm run build\n[\s\S]*lower maxDepth/,
+        );
     });
 
     it('copies samples, with their origins', () => {

@@ -24,19 +24,23 @@ async function main(): Promise<void> {
     const settings = await getAnswers(options, repo, cwd);
     const packageDir = createPackage(settings, repo);
     setUpPackage(packageDir, repo, { install: !options.skipInstall, build: settings.doBuild });
-    if (!settings.doBuild) info('%s', notBuilt(relative(rootDir, packageDir), settings));
+    nextSteps(relative(cwd, packageDir) || '.', settings);
 }
 
-function notBuilt(dir: string, settings: Settings): string {
-    const lines = [
-        `${heading('Not built yet.')} Its tests fail until you run ${literal('pnpm run build')} in ${literal(dir)}.`,
-    ];
-    if (settings.sources.some((s) => s.files.some((f) => isHunspellFile(f.path)))) {
-        lines.push(
-            `A Hunspell dictionary can take a long time to build. If it's too slow, lower ${literal('maxDepth')} in ${literal(`${dir}/cspell-tools.config.yaml`)}.`,
-        );
+/** What to do now: go to the dictionary, and build it if the command didn't. */
+function nextSteps(dir: string, settings: Settings): void {
+    const steps = [`cd ${dir}`, ...(settings.doBuild ? [] : ['pnpm run build'])];
+    info('\n%s\n%s', heading('Next steps:'), steps.map((step) => '  ' + literal(step)).join('\n'));
+    if (!settings.doBuild) {
+        info("Its tests fail until it's built.");
+        if (settings.sources.some((s) => s.files.some((f) => isHunspellFile(f.path)))) {
+            info(
+                "A Hunspell dictionary can take a long time to build. If it's too slow, lower %s in %s.",
+                literal('maxDepth'),
+                literal('cspell-tools.config.yaml'),
+            );
+        }
     }
-    return lines.join('\n');
 }
 
 try {
