@@ -135,15 +135,15 @@ export async function getAnswers(options: CommandLine, repo: Repo, cwd: string):
         let def = gitUserName(cwd);
         for (;;) {
             const person = await ask.input({
-                message:
-                    'Contributor, as "Name", "Name <email>", or "Name (url)", such as a GitHub profile; empty to skip:',
+                message: asked.length
+                    ? 'Another contributor; empty to finish:'
+                    : 'Contributor, as "Name", "Name <email>", or "Name (url)", such as a GitHub profile; empty to skip:',
                 default: def,
                 validate: (value) => !value.trim() || validateContributor(value),
             });
             if (!person.trim()) return asked;
             asked.push(person.trim());
             def = undefined;
-            if (!(await ask.confirm({ message: 'Add another contributor?', default: false }))) return asked;
         }
     }
 
@@ -180,9 +180,10 @@ export async function getAnswers(options: CommandLine, repo: Repo, cwd: string):
         }
         const list: Source[] = [];
         if (files === undefined) {
-            list.push(await askSource(name + '.txt'));
-            while (await ask.confirm({ message: 'Add another source file?', default: false })) {
-                list.push(await askSource(undefined));
+            let source = await askSource(name + '.txt');
+            while (source) {
+                list.push(source);
+                source = await askSource(undefined, true);
             }
             return list;
         }
@@ -320,15 +321,21 @@ export async function getAnswers(options: CommandLine, repo: Repo, cwd: string):
             if (readme.trim()) all.addSourceReadme.push(asLocal(readme.trim()));
         }
         if (!given(all.addSourceUrl)) {
-            const url = await ask.input({ message: 'Where the Hunspell files can be found (URL); empty to skip:' });
+            const url = await ask.input({ message: 'URL where the Hunspell files can be found; empty to skip:' });
             if (url.trim()) all.addSourceUrl.push(`hunspell=${url.trim()}`);
         }
     }
 
     /** Asks for named sources, as the options would give them. */
     async function askDefined(all: SourceOptions): Promise<void> {
-        while (await ask.confirm({ message: 'Add a third-party source?', default: false })) {
-            const folder = await ask.input({ message: 'Its folder:', validate: (v) => checkFolder(cwd, v) });
+        for (;;) {
+            const folder = (
+                await ask.input({
+                    message: 'Third-party source folder; empty to finish:',
+                    validate: (v) => !v.trim() || checkFolder(cwd, v.trim()),
+                })
+            ).trim();
+            if (!folder) return;
             const inFolder = (v: string) => !v.trim() || checkFile(resolve(cwd, folder), v.trim());
             const name = await ask.input({ message: 'Its name:', default: basename(resolve(cwd, folder)) });
             all.defineSource.push(`${name}=${folder}`);
@@ -338,7 +345,7 @@ export async function getAnswers(options: CommandLine, repo: Repo, cwd: string):
             };
             for (;;) {
                 const file = await ask.input({
-                    message: `A word list or Hunspell file in ${folder}; empty when done:`,
+                    message: `A word list or Hunspell file in ${folder}; empty to finish:`,
                     validate: inFolder,
                 });
                 if (!file.trim()) break;
@@ -348,7 +355,7 @@ export async function getAnswers(options: CommandLine, repo: Repo, cwd: string):
             if (license.trim()) all.addSourceLicense.push(await withLocal(license.trim()));
             const readme = await ask.input({ message: 'Its README; empty to skip:', validate: inFolder });
             if (readme.trim()) all.addSourceReadme.push(await withLocal(readme.trim()));
-            const url = await ask.input({ message: 'Where it can be found (URL); empty to skip:' });
+            const url = await ask.input({ message: 'URL where it can be found; empty to skip:' });
             if (url.trim()) all.addSourceUrl.push(`${name}=${url.trim()}`);
         }
     }
@@ -367,9 +374,15 @@ export async function getAnswers(options: CommandLine, repo: Repo, cwd: string):
         return isHunspellFile(file) ? checkFile(cwd, file) : true;
     }
 
-    async function askSource(def: string | undefined): Promise<Source> {
+    /** A source file, or with `another`, undefined for an empty answer. */
+    async function askSource(def: string | undefined, another = false): Promise<Source | undefined> {
         for (;;) {
-            const typed = await ask.input({ message: 'Source file:', default: def, validate: validatePath });
+            const typed = await ask.input({
+                message: another ? 'Another source file; empty to finish:' : 'Source file:',
+                default: def,
+                validate: (v) => (another && !v.trim()) || validatePath(v),
+            });
+            if (!typed.trim()) return undefined;
             if (isHunspellFile(typed)) return hunspellFile(typed, cwd);
             if (checkFile(cwd, typed) === true) return wordList(typed, cwd, false);
             const message = `${typed} not found. Create an empty placeholder, src/${basename(typed)}?`;

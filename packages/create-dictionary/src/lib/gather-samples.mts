@@ -73,13 +73,16 @@ export async function gatherSamples(options: SampleOptions, gathering: Gathering
         }
     }
     if (prompt) {
-        const another = () => (list.length ? 'Add another sample file?' : 'Add a sample file?');
-        while (await ask.confirm({ message: another(), default: !list.length })) {
-            const path = await ask.input({ message: 'Its path:', validate: (v) => checkSample(byName, v, cwd) });
+        for (;;) {
+            const path = (
+                await ask.input({
+                    message: 'Sample file path; empty to finish:',
+                    validate: (v) => !v.trim() || checkSample(byName, v.trim(), cwd),
+                })
+            ).trim();
+            if (!path) break;
             const sample = addSample(byName, path, cwd);
-            const origin = await ask.input({
-                message: 'Where it came from (URL or a few words); empty if unknown:',
-            });
+            const origin = await ask.input({ message: 'Where it came from, a URL or a few words; empty if unknown:' });
             if (origin.trim()) sample.origin = origin.trim();
             list.push(sample);
         }
