@@ -22,6 +22,13 @@ See [Conventional Commits](https://conventionalcommits.org) for commit guideline
 
 
 
+## [3.0.8](https://github.com/streetsidesoftware/cspell-dicts/compare/@cspell/dict-eo@3.0.7...@cspell/dict-eo@3.0.8) (2026-10-05)
+
+
+### Updates and Bug Fixes
+
+* use the unmodified GPL-3.0 and LGPL-3.0 license text ([#5874](https://github.com/streetsidesoftware/cspell-dicts/issues/5874)) ([8806309](https://github.com/streetsidesoftware/cspell-dicts/commit/8806309b8c376b6bbd0a99020889d1585eb32597))
+
 ## [3.0.7](https://github.com/streetsidesoftware/cspell-dicts/compare/@cspell/dict-eo@3.0.6...@cspell/dict-eo@3.0.7) (2025-07-19)
 
 

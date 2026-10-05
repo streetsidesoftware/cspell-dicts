@@ -1,5 +1,12 @@
 # Changelog
 
+## [1.0.66](https://github.com/streetsidesoftware/cspell-dicts/compare/@cspell/dict-en-ca@1.0.65...@cspell/dict-en-ca@1.0.66) (2026-10-05)
+
+
+### Updates and Bug Fixes
+
+* use the unmodified GPL-3.0 and LGPL-3.0 license text ([#5874](https://github.com/streetsidesoftware/cspell-dicts/issues/5874)) ([8806309](https://github.com/streetsidesoftware/cspell-dicts/commit/8806309b8c376b6bbd0a99020889d1585eb32597))
+
 ## [1.0.65](https://github.com/streetsidesoftware/cspell-dicts/compare/@cspell/dict-en-ca@1.0.64...@cspell/dict-en-ca@1.0.65) (2026-09-12)
 
 
