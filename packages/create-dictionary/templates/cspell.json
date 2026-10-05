@@ -1,12 +1,11 @@
 {
     "version": "0.2",
-    "files": [
-        "**/*.{md,txt}"
-    ],
-    "dictionaries": [
-        "<%= packageName %>"
-    ],
-    "import": [
-        "./cspell-ext.json"
+    "files": ["**/*.{md,txt}"],
+    "import": ["./cspell-ext.json"],
+    "overrides": [
+        {
+            "filename": ["**/*.{md,txt}", "!samples/**"],
+            "dictionaries": ["<%= packageName %>"]
+        }
     ]
 }

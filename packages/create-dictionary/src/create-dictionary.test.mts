@@ -2,7 +2,7 @@
 
 import assert from 'node:assert/strict';
 import { spawnSync } from 'node:child_process';
-import { existsSync, mkdirSync, mkdtempSync, readFileSync, rmSync, writeFileSync } from 'node:fs';
+import { existsSync, mkdirSync, mkdtempSync, readdirSync, readFileSync, rmSync, writeFileSync } from 'node:fs';
 import { tmpdir } from 'node:os';
 import { join } from 'node:path';
 import { after, before, describe, it } from 'node:test';
@@ -27,6 +27,10 @@ before(() => {
             ],
         }),
     );
+    // Another, whose package name a differently written name would give.
+    const science = join(root, 'dictionaries', 'data_science');
+    mkdirSync(science, { recursive: true });
+    writeFileSync(join(science, 'package.json'), JSON.stringify({ name: '@cspell/dict-data-science' }));
     writeFileSync(join(root, 'words.txt'), 'zorbal\nquixly\n');
     writeFileSync(join(root, "it's.txt"), 'zorbal\n');
     writeFileSync(join(root, 'pair.dic'), '1\nzorbal\n');
@@ -175,6 +179,87 @@ describe('a new package', () => {
         assert.match(packageFile('hunspell', 'src/sources.yaml'), /name: 'hunspell'/);
         assert.match(result.stderr, /warning: the source hunspell has no license/);
         assert.match(packageFile('hunspell', 'cspell-tools.config.yaml'), /format: 'trie3'/);
+        assert.match(
+            result.stdout,
+            /Next steps:\n {2}cd dictionaries[\\/]hunspell\n {2}pnpm run build\n[\s\S]*lower maxDepth/,
+        );
+    });
+
+    it('copies samples, with their origins', () => {
+        writeFileSync(join(root, 'example.rb'), 'puts zorbal\n');
+        const result = createYes(
+            'withsample',
+            'words.txt',
+            '--add-sample',
+            'example.rb',
+            '--add-sample-origin',
+            'example.rb=made up',
+        );
+        assert.equal(result.code, 0, result.stderr);
+        assert.doesNotMatch(result.stderr, /warning/);
+        assert.equal(packageFile('withsample', 'samples/example.rb'), 'puts zorbal\n');
+        assert.match(packageFile('withsample', 'samples/README.md'), /`example\.rb`: made up\./);
+    });
+
+    it('takes the locale, the friendly name, and the description from a name such as de_CH', () => {
+        const result = create('--yes', 'de_CH', '--placeholder-word-lists', '--no-build', '--no-wikipedia-sample');
+        assert.equal(result.code, 0, result.stderr);
+        assert.match(result.stdout, /The locale is de-CH, from the name/);
+        assert.match(packageFile('de_CH', 'cspell-ext.json'), /"locale": "de-CH"/);
+        assert.match(packageFile('de_CH', 'cspell-ext.json'), /"name": "Swiss High German"/);
+        assert.match(packageFile('de_CH', 'cspell-ext.json'), /"description": "Swiss High German dictionary"/);
+    });
+
+    it('turns a name with spaces into the directory name, and keeps it as the friendly name', () => {
+        const result = create(
+            '--yes',
+            '--name',
+            'Medical Terms',
+            '--description',
+            'Test words',
+            '--placeholder-word-lists',
+            '--language-id',
+            'markdown',
+            '--no-build',
+        );
+        assert.equal(result.code, 0, result.stderr);
+        assert.ok(readdirSync(join(root, 'dictionaries')).includes('medical-terms'));
+        assert.match(packageFile('medical-terms', 'cspell-ext.json'), /"name": "Medical Terms"/);
+    });
+
+    it("writes a language or locale name the repo's way", () => {
+        const result = create('--yes', 'German', '--placeholder-word-lists', '--no-build', '--no-wikipedia-sample');
+        assert.equal(result.code, 0, result.stderr);
+        assert.match(result.stdout, /The name is german, as dictionary names are written/);
+        // Compare names: on macOS, the file system ignores case.
+        const names = readdirSync(join(root, 'dictionaries'));
+        assert.ok(names.includes('german'));
+        assert.ok(!names.includes('German'));
+        assert.match(packageFile('german', 'cspell-ext.json'), /"locale": "de"/);
+    });
+
+    it('warns about a locale that is a name, and keeps it', () => {
+        const result = create(
+            '--yes',
+            'named',
+            '--description',
+            'Test words',
+            '--placeholder-word-lists',
+            '--locale',
+            'english',
+            '--no-build',
+            '--no-wikipedia-sample',
+        );
+        assert.equal(result.code, 0, result.stderr);
+        assert.match(result.stderr, /warning: locale: "english" isn't a known locale\. Did you mean en \(English\)/);
+        assert.match(packageFile('named', 'cspell-ext.json'), /"locale": "english"/);
+    });
+
+    it('takes the Hunspell depth from --hunspell-depth', () => {
+        const result = createYes('depth', 'pair.dic', '--hunspell-depth', '0');
+        assert.equal(result.code, 0, result.stderr);
+        assert.match(packageFile('depth', 'cspell-tools.config.yaml'), /maxDepth: 0/);
+        assertFails(createYes('baddepth', 'pair.dic', '--hunspell-depth', 'deep'), /give a whole number/);
     });
 });
 
@@ -205,8 +290,8 @@ describe('the name', () => {
 
     it('does not give a package name already in use', () => {
         assertFails(
-            createYes('en-AU', '--placeholder-word-lists'),
-            /@cspell\/dict-en-au is already used by dictionaries\/en_AU/,
+            createYes('data-science', '--placeholder-word-lists'),
+            /@cspell\/dict-data-science is already used by dictionaries\/data_science/,
         );
     });
 
@@ -296,7 +381,7 @@ describe('several sources', () => {
         assert.match(packageFile('thirdparty', 'src/sources.yaml'), /readme: 'README\.md'/);
         const { files } = JSON.parse(packageFile('thirdparty', 'package.json'));
         assert.ok(files.includes('src/up/LICENSE') && files.includes('src/up/README.md'), files.join(', '));
-        assert.doesNotMatch(result.stderr, /warning/);
+        assert.doesNotMatch(result.stderr, /warning: the source/);
     });
 
     it('refuse a third-party file outside its source without a local path', () => {
@@ -332,6 +417,7 @@ describe('locale and file type', () => {
             '--locale',
             'en',
             '--no-build',
+            '--no-wikipedia-sample',
         );
         assert.equal(result.code, 0, result.stderr);
         assert.match(packageFile('natural', 'cspell-ext.json'), /"locale": "en"/);

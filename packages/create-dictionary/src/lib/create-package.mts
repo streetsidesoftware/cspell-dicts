@@ -5,8 +5,10 @@ import type { Settings } from './answers.mts';
 import { title, toPackageName } from './names.mts';
 import type { Repo } from './repo.mts';
 import { isHunspellFile } from './hunspell.mts';
+import { samplesConfig, sampleWords, samplesReadme, wordSample } from './samples.mts';
 import { fillTemplate, templateDir, templateFiles } from './template.mts';
 import { buildFiles, copies, publishedFiles, sourcesYaml, srcDir } from './sources.mts';
+import { created as showCreated, info, literal } from './output.mts';
 
 const additionalWordsFile = 'src/additional_words.txt';
 const excludeWordsFile = 'src/exclude_words.txt';
@@ -14,7 +16,7 @@ const excludeWordsFile = 'src/exclude_words.txt';
 /**
  * Write the new package from the templates and the source. Returns its directory.
  */
-export function createPackage(answers: Settings, repo: Repo): string {
+export async function createPackage(answers: Settings, repo: Repo): Promise<string> {
     const { name, friendlyName, useTrie } = answers;
     const { rootDir } = repo;
     const packageDir = join(repo.dictionariesDir, name);
@@ -22,8 +24,6 @@ export function createPackage(answers: Settings, repo: Repo): string {
     const dstFileName = `dict/${packageName}.${useTrie ? 'trie' : 'txt'}`;
 
     const built = [...answers.sources.flatMap(buildFiles), ...(answers.additionalWords ? [additionalWordsFile] : [])];
-    // The test script reads the first source until samples replace it.
-    const first = built[0];
 
     const values: Record<string, string> = {
         name,
@@ -34,19 +34,21 @@ export function createPackage(answers: Settings, repo: Repo): string {
         languageId: answers.languageId,
         packageName,
         fullPackageName: '@cspell/dict-' + packageName,
-        srcFile: first,
         sources: built.map(buildSource).join('\n      - '),
         excludeWordsFrom: answers.excludeWords ? `['${excludeWordsFile}']` : '[]',
-        dstFullFileName: dstFileName,
+        // The build writes both; the compressed one is published, and is made again after a clone.
+        dstFullFileName: dstFileName + '.gz',
         format: useTrie ? 'trie3' : 'plaintext',
         generateNonStrict: useTrie ? 'true' : 'false',
-        srcFileReader: isHunspellFile(first) ? 'hunspell-reader words -n 1000 -m 0' : 'head -n 1000',
-        prepareScript: built.some((file) => isHunspellFile(file)) ? 'echo OK' : 'pnpm run build',
+        // A Hunspell build can take long, so only compress its committed build.
+        prepareScript: built.some((file) => isHunspellFile(file))
+            ? `cspell-tools-cli gzip "${dstFileName}"`
+            : 'pnpm run build',
         prepublishOnlyScript: 'echo OK',
         year: String(new Date().getFullYear()),
     };
 
-    console.log('Creating ' + relative(rootDir, packageDir));
+    info('Creating %s', literal(relative(rootDir, packageDir)));
     for (const file of templateFiles) {
         const template = readFileSync(join(templateDir, file), 'utf8');
         const content = fillTemplate(template, values, extname(file));
@@ -68,6 +70,15 @@ export function createPackage(answers: Settings, repo: Repo): string {
             '# Words to leave out of the built dictionary. One per line; see docs/word-lists.md.\n',
         );
     }
+    for (const sample of answers.samples) {
+        const file = join('samples', sample.name);
+        if (sample.from) copyFileSync(sample.from, created(file));
+        else write(file, sample.text ?? '');
+    }
+    write('samples/README.md', samplesReadme(title(friendlyName), answers.samples));
+    write('samples/cspell.json', JSON.stringify(samplesConfig(answers.locale, answers.languageId), null, 4) + '\n');
+    const words = await sampleWords(built.map((file) => join(packageDir, file)));
+    write(join('samples', wordSample), words.map((word) => word + '\n').join(''));
     write(dstFileName, '# dest');
 
     return packageDir;
@@ -83,16 +94,20 @@ export function createPackage(answers: Settings, repo: Repo): string {
 
     /** A source in cspell-tools.config.yaml: the template has the first item's "- ", and the join adds the rest. */
     function buildSource(filename: string): string {
+        const name = `filename: '${filename.replaceAll("'", "''")}'`;
+        if (!isHunspellFile(filename)) return name;
         return [
-            `filename: '${filename.replaceAll("'", "''")}'`,
-            '        maxDepth: 1 # This is set to 1 to prevent initial builds from taking too long.',
+            name,
+            '        # How many affix rules to chain onto a word. Higher adds word forms,',
+            '        # but can make the build very slow or run out of memory.',
+            `        maxDepth: ${answers.hunspellDepth}`,
         ].join('\n');
     }
 
     function created(file: string): string {
         const path = join(packageDir, file);
         mkdirSync(dirname(path), { recursive: true });
-        console.log('   create ' + relative(rootDir, path));
+        showCreated(relative(rootDir, path));
         return path;
     }
 

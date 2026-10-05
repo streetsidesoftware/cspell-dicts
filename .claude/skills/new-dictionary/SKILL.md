@@ -54,7 +54,7 @@ Decide everything `pnpm create-dictionary` needs, one decision at a time.
     `*`.
   - **Description:** the words it covers, such as "Ruby keywords and standard library names".
   - **Contributors:** who creates and maintains it, as "Name (url)". Optional, and published to npm.
-  - **Keywords:** other names people search npm for, such as `golang` for Go.
+  - **Keywords:** other keywords people search npm for, such as `golang` for Go.
   - **Sources:** if a file the user named doesn't exist, ask for the right path, or whether to start empty.
 - **Check** each source's license and what it requires: attribution, keeping the license file, or share-alike.
 - **Stop and ask** if a license is missing, unclear, or would change the dictionary's license. Give the exact source
@@ -87,7 +87,9 @@ Turn the design into the dictionary with one command.
   - `--placeholder-word-lists` when there's no word list yet. It starts an empty one.
   - One `--contributor` per person, and one `--keyword` per search term.
   - `--locale` for a natural language, or `--language-id` for anything else.
-  - `--trie` for Hunspell sources and large lists.
+  - One `--add-sample` per real sample the user has, each with `--add-sample-origin`.
+  - Leave the trie and the build to their defaults. With a Hunspell source, it doesn't build: run `pnpm run build` in
+    the dictionary's directory. If that's too slow, lower `maxDepth` in `cspell-tools.config.yaml`, and tell the user.
   - A source someone else maintains: `--define-source` and `--add-source-*`, as in the guide's "Third-party sources".
 - **If it fails:**
   - On a missing or invalid value, nothing was written. Fix that option and run it again.
@@ -100,9 +102,12 @@ Turn the design into the dictionary with one command.
 Finish what the command can't know.
 
 - **Do:**
-  - Add a few correctly spelled files of the kind the dictionary is for to `samples/`.
-  - Add `"test:samples": "cspell samples"` to `package.json`'s scripts, and run it from `test`. The template doesn't
-    check samples yet.
+  - If the command got no `--add-sample`, add a few correctly spelled files of the kind the dictionary is for to
+    `samples/`, and their origins to `samples/README.md`. For a natural language, the command fetches
+    `samples/seattle.md` itself, when it can reach Wikipedia. Add other neutral articles with
+    `--add-wikipedia-sample <title or link>`.
+  - Keep samples on a neutral subject, as `docs/dictionary-packages.md` says: nothing political or ideological, and no
+    contested city.
   - Write the README's description: what the dictionary covers and why to use it, with absolute `https://` links.
   - For an upstream source, add a `sync` script as in `docs/guides/upstream-updates.md`. Never edit synced files by
     hand.
@@ -127,7 +132,9 @@ Show that the dictionary builds, passes, and works in cspell.
 - **Check:**
   - After committing, `pnpm run check-dirty` passes: lint left nothing behind.
   - In cspell, as in the guide's step 7 (`cspell link add`), a sample spell checks cleanly. Show the user the result.
-- **If it fails:** fix what it reports, and run the checks again until they pass.
+- **If it fails:** fix what it reports, and run the checks again until they pass. For a word a sample uses that the
+  dictionary lacks: add a real word to `src/additional_words.txt` and build again, and a name to `words` in
+  `samples/cspell.json`. Ask the user when it's unclear which it is.
 
 ### 7. Open one PR
 

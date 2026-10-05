@@ -20,8 +20,11 @@ All samples live in `samples/` and are checked by one `cspell samples`, the `tes
 - **Origins.** `--add-sample-origin <file>=<url or text>` gives a sample's origin, and the prompt asks for each. The
   generator writes `samples/README.md` once, listing each sample and its origin, or "no known origin" with a warning.
   After that it's edited by hand.
-- **Natural language.** Real prose, as `.md`. The generator suggests the Wikipedia article on Seattle for the locale,
-  without fetching it; its link is the origin.
+- **Natural language.** Real prose, as `.md`. The generator fetches the start of the Wikipedia article on Seattle in
+  the locale's language, its lead section as plain text, into `samples/seattle.md`; its link and the date are the
+  origin. It finds the article through the English article's language links, since its title differs by language.
+  `--no-wikipedia-sample` skips it. Without a network connection it's left out, and isn't an error. Samples aren't
+  published, so the link is all the attribution needed.
 - **File types.** `samples/cspell.json` imports `../cspell-ext.json`, so each real sample is checked under its own file
   type.
 - **Static word sample, always.** The generator writes `samples/sample-words-in-dictionary.txt` once, from the first few
@@ -78,6 +81,7 @@ dictionaries have `samples/seattle.md`: the Wikipedia article on Seattle in thei
 - Requiring real samples, failing creation without one: works against easy to create. Not mentioning them: the gap
   goes unnoticed.
 - Recording samples in `sources.yaml`: samples don't sync, so most of that machinery doesn't apply.
-- Fetching the Wikipedia article: needs the network, the text changes over time, and it's CC BY-SA.
+- Only suggesting the Wikipedia article, without fetching it: a contributor has to copy it from the browser, and a
+  link built from "Seattle" is wrong where the title is in another script, such as Hebrew.
 - Reading words back from `dict/`: tests the build with its own output.
 - Real samples only, with no static word sample: a dictionary without them would have no test.

@@ -40,9 +40,10 @@
   ],
   "scripts": {
     "build": "cspell-tools-cli build",
+    "build:conditional": "cspell-tools-cli build --conditional",
     "prepare:dictionary": "<%= prepareScript %>",
     "prepublishOnly": "<%= prepublishOnlyScript %>",
-    "test": "<%= srcFileReader %> \"<%= srcFile %>\" | cspell -c ./cspell-ext.json \"--locale=<%= locale %>\" \"--languageId=<%= languageId %>\" stdin"
+    "test": "cspell samples"
   },
   "dependencies": {},
   "devDependencies": {}

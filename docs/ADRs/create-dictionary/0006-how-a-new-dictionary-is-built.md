@@ -15,7 +15,7 @@ and the template set a depth on every source, including word lists, where it mea
 - **Trie** when any source is a Hunspell file, or the word lists add up to more than about 1 MB. `--trie` and
   `--no-trie` override it.
 - **Build at creation** when all sources are word lists. With a Hunspell source, the generator doesn't build, and says
-  to run `pnpm run build`, or to lower `--hunspell-depth` if that's too slow. `--build` and `--no-build` override it.
+  to run `pnpm run build`, or to lower `maxDepth` in `cspell-tools.config.yaml` if that's too slow. `--build` and `--no-build` override it.
 - **Depth:** no `maxDepth` on word lists. Hunspell sources get `maxDepth: 1`, with a comment that higher depths can add
   word forms but can make the build very slow or run out of memory. `--hunspell-depth <n>` sets it, such as 0 for
   Hebrew.
@@ -35,9 +35,9 @@ and the template set a depth on every source, including word lists, where it mea
   new-dictionary guide says to use a trie for Hunspell sources and for sources over about 1 MB, but the generator
   applied only the first, so a contributor had to know to pass `--trie`.
 - **Build.** The built files in `dict/` are committed with `src/`, and the tests need them. A plain-text dictionary's
-  `prepare:dictionary` runs the build, so CI builds it anyway; a Hunspell dictionary's is `echo OK`, so its `dict/` must
-  be committed built. Until a build runs, `dict/` holds a placeholder, which for a trie isn't a valid dictionary. Word
-  lists build in seconds.
+  `prepare:dictionary` runs the build, so CI builds it anyway; a Hunspell dictionary's only compresses the committed
+  build, so its `dict/` must be committed built. Until a build runs, `dict/` holds a placeholder, which for a trie isn't
+  a valid dictionary. Word lists build in seconds.
 - **Depth.** `maxDepth` limits how many affix rules are chained onto a Hunspell stem. Unset, `hunspell-reader` uses 5;
   0 means stems only; every affix costs one level, prefixes included. The template set `maxDepth: 1` on every source,
   "to prevent initial builds from taking too long", including word lists, where it means nothing; it was a workaround

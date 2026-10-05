@@ -26,7 +26,7 @@ search npm for to be added by hand.
   dictionary in `package.json`'s `contributors`, as given. Only the name is required; an email goes in `<…>` and a URL
   in `(…)`. When prompting, the generator asks for contributors in a loop; the first answer defaults to
   `git config user.name`, without the email, and an empty answer skips. Without one, `contributors` stays empty.
-- `--keyword <word>`, repeatable and optional, adds the other names people search npm for, such as `golang` for Go, to
+- `--keyword <word>`, repeatable and optional, adds the other keywords people search npm for, such as `golang` for Go, to
   `package.json`'s `keywords`, after the template's and without duplicates. When prompting, the generator asks once
   for several, separated by commas; an empty answer skips.
 

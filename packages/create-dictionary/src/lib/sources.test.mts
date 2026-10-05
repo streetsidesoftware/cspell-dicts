@@ -14,6 +14,7 @@ import {
     parseSources,
     type SourceOptions,
     sourcesYaml,
+    sourceWarnings,
     wordList,
 } from './sources.mts';
 
@@ -148,5 +149,13 @@ describe('sourcesYaml', () => {
         assert.match(yaml, /- name: 'aoo'\n {4}files:\n {6}- 'terms\.txt'\n {4}url: 'https:\/\/example\.com'/);
         assert.doesNotMatch(yaml, new RegExp(root.replaceAll('\\', '\\\\')));
         assert.equal(yaml.match(/- name:/g)?.length, 1);
+    });
+});
+
+describe('sourceWarnings', () => {
+    it('names the options on the command line, and not at the prompt', () => {
+        const source = hunspellFile('aoo/dicts/en_XX/en_XX.dic', root);
+        assert.match(sourceWarnings(source)[0], /no license \(--add-source-license\)/);
+        assert.equal(sourceWarnings(source, false)[0], 'the source hunspell has no license, README, URL.');
     });
 });
