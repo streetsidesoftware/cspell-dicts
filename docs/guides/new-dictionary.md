@@ -80,7 +80,7 @@ Each dictionary needs:
 - A unique [name](#name)
 - A [description](#description)
 - At least one [source file](#source-file) or [placeholder](#placeholder-word-lists)
-- The natural language it targets ([locale](#locale)), or the programming language or [file type](#file-type)
+- The natural language it targets ([locale](#locale)), or the programming language ([file type](#file-type))
 
 To run it with no questions, add `--yes` and give these as options. Everything else gets a default.
 
