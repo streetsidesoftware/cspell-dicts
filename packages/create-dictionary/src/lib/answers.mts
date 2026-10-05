@@ -404,10 +404,9 @@ export async function getAnswers(options: CommandLine, repo: Repo, cwd: string):
             'Most questions have a default answer in (parentheses). Press Enter to accept it.',
             '',
             'Every answer can also be given as an option: pnpm create-dictionary --help',
+            'Guide: https://github.com/streetsidesoftware/cspell-dicts/blob/main/docs/guides/new-dictionary.md',
             '',
-            'Guide: docs/guides/new-dictionary.md',
-            '',
-            'Press Ctrl+C at any time to stop without making changes.',
+            'Press Ctrl+C during the questions to stop without making changes.',
         );
     }
     section(1, 'Dictionary Info');
