@@ -34,7 +34,7 @@ function options(answers: Answers, more: Partial<CommandLine> = {}): CommandLine
     return {
         answers: { description: 'Test words', ...answers },
         yes: true,
-        allowMissingSource: false,
+        placeholderWordLists: false,
         sourceOptions: noSourceOptions,
         additionalWords: true,
         excludeWords: true,
@@ -84,18 +84,18 @@ describe('getAnswers', () => {
         assert.equal(settings.doBuild, false);
     });
 
-    it('starts an empty src/<name>.txt with only --allow-missing-source', async () => {
+    it('starts an empty src/<name>.txt with only --placeholder-word-lists', async () => {
         const settings = await getAnswers(
-            options({ name: 'ruby', languageId: 'ruby' }, { allowMissingSource: true }),
+            options({ name: 'ruby', languageId: 'ruby' }, { placeholderWordLists: true }),
             repo,
             root,
         );
         assert.deepEqual(settings.sources, [wordList('ruby.txt', root, true)]);
     });
 
-    it('marks a missing source as empty with --allow-missing-source', async () => {
+    it('marks a missing source as empty with --placeholder-word-lists', async () => {
         const settings = await getAnswers(
-            options({ name: 'ruby', srcFiles: ['nope.txt'], languageId: 'ruby' }, { allowMissingSource: true }),
+            options({ name: 'ruby', srcFiles: ['nope.txt'], languageId: 'ruby' }, { placeholderWordLists: true }),
             repo,
             root,
         );
@@ -160,7 +160,7 @@ describe('getAnswers', () => {
         );
     });
 
-    it('fails on a missing source without --allow-missing-source', async () => {
+    it('fails on a missing source without --placeholder-word-lists', async () => {
         await assert.rejects(
             getAnswers(options({ name: 'ruby', srcFiles: ['nope.txt'], languageId: 'ruby' }), repo, root),
             /nope\.txt not found/,

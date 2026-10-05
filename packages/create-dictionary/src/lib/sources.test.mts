@@ -6,6 +6,8 @@ import { after, before, describe, it } from 'node:test';
 
 import {
     buildFiles,
+    checkFile,
+    checkFolder,
     copies,
     hunspellFile,
     noSourceOptions,
@@ -71,9 +73,30 @@ describe('parseSources', () => {
 
     it('refuses an unknown source, a missing file, a source with no files, and a repeated name', () => {
         assert.throws(() => parse({ addSourceFile: ['nope=terms.txt'] }), /no source is named nope/);
-        assert.throws(() => parse({ defineSource: ['aoo'], addSourceFile: ['aoo=gone.txt'] }), /has no gone\.txt/);
+        assert.throws(
+            () => parse({ defineSource: ['aoo'], addSourceFile: ['aoo=gone.txt'] }),
+            /--add-source-file aoo: gone\.txt not found/,
+        );
         assert.throws(() => parse({ defineSource: ['aoo'] }), /has no files/);
         assert.throws(() => parse({ defineSource: ['aoo', 'aoo'] }), /two sources are named aoo/);
+    });
+});
+
+describe('checkFile', () => {
+    it('accepts a file that exists, and a Hunspell file whose pair exists, from either file', () => {
+        assert.equal(checkFile(root, 'aoo/terms.txt'), true);
+        assert.equal(checkFile(root, 'aoo/dicts/en_XX/en_XX.dic'), true);
+        assert.equal(checkFile(root, 'aoo/dicts/en_XX/en_XX.aff'), true);
+    });
+
+    it('names what is missing', () => {
+        assert.match(String(checkFile(root, 'gone.txt')), /^gone\.txt not found\.$/);
+        assert.match(String(checkFile(root, 'gone.dic')), /gone\.dic and gone\.aff not found\. A Hunspell file needs/);
+    });
+
+    it('refuses a folder that is not there, or is a file', () => {
+        assert.equal(checkFolder(root, 'aoo'), true);
+        assert.match(String(checkFolder(root, 'aoo/terms.txt')), /isn't a folder/);
     });
 });
 
@@ -99,6 +122,10 @@ describe('hunspellFile', () => {
             ['en_XX.dic', 'en_XX.aff'],
         );
         assert.deepEqual(buildFiles(source), ['src/hunspell/en_XX.dic']);
+    });
+
+    it('needs its pair', () => {
+        assert.throws(() => hunspellFile('gone.dic', root), /gone\.dic: gone\.dic and gone\.aff not found/);
     });
 
     it('takes a license like any named source, with paths from where the command runs', () => {

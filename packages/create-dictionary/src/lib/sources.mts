@@ -44,6 +44,21 @@ export const noSourceOptions: SourceOptions = {
 
 const namePattern = /^[\w-]+$/;
 
+/** Whether a file of a source exists, with its pair for a Hunspell file: true, or what's missing. */
+export function checkFile(root: string, path: string): string | true {
+    const files = isHunspellFile(path) ? hunspellPair(path) : [path];
+    const missing = files.filter((file) => !existsSync(resolve(root, file)));
+    if (!missing.length) return true;
+    const pair = isHunspellFile(path) ? ' A Hunspell file needs both its .dic and .aff files.' : '';
+    return `${missing.join(' and ')} not found.${pair}`;
+}
+
+/** Whether a folder exists: true, or a message. */
+export function checkFolder(root: string, path: string): string | true {
+    const folder = resolve(root, path);
+    return (existsSync(folder) && statSync(folder).isDirectory()) || `${path} isn't a folder.`;
+}
+
 /**
  * The named sources: those already given, such as `hunspell`, then those defined by the options, with every file
  * checked. Paths are relative to `cwd`.
@@ -55,32 +70,29 @@ export function parseSources(options: SourceOptions, cwd: string, given: Source[
         const at = value.indexOf('=');
         const path = at < 0 ? value : value.slice(at + 1);
         const name = at < 0 ? basename(path.replace(/[\\/]+$/, '')) : value.slice(0, at);
-        const root = resolve(cwd, path);
-        if (!existsSync(root) || !statSync(root).isDirectory()) {
-            throw new Error(`--define-source: ${path} isn't a folder.`);
-        }
-        addSource(sources, { name, root, files: [] });
+        check('--define-source', checkFolder(cwd, path));
+        addSource(sources, { name, root: resolve(cwd, path), files: [] });
     }
     for (const value of options.addSourceFile) {
         const { source, local, path } = reference('--add-source-file', value, sources);
         const file = sourceFile(source, path, local);
+        check(`--add-source-file ${source.name}`, checkFile(source.root, file.path));
         const pair = isHunspellFile(file.path) ? hunspellPair(file.path) : [file.path];
         for (const each of pair) {
             const withExt = (p: string) => p.slice(0, p.length - extname(p).length) + extname(each);
             const next = isHunspellFile(each) ? { path: withExt(file.path), local: withExt(file.local) } : file;
-            checkExists(source, next.path);
             if (!source.files.some((f) => f.local === next.local)) source.files.push(next);
         }
     }
     for (const value of options.addSourceLicense) {
         const { source, local, path } = reference('--add-source-license', value, sources);
         source.license = sourceFile(source, path, local);
-        checkExists(source, source.license.path);
+        check(`--add-source-license ${source.name}`, checkFile(source.root, source.license.path));
     }
     for (const value of options.addSourceReadme) {
         const { source, local, path } = reference('--add-source-readme', value, sources);
         source.readme = sourceFile(source, path, local);
-        checkExists(source, source.readme.path);
+        check(`--add-source-readme ${source.name}`, checkFile(source.root, source.readme.path));
     }
     for (const value of options.addSourceUrl) {
         const { source, path } = reference('--add-source-url', value, sources);
@@ -105,6 +117,7 @@ export function wordList(file: string, cwd: string, empty: boolean): Source {
  * A Hunspell file given on its own, with its pair: files of the source `hunspell`, so people don't edit them by hand.
  */
 export function hunspellFile(file: string, cwd: string): Source {
+    check(file, checkFile(cwd, file));
     const files = hunspellPair(file).map((f) => ({ path: f, local: basename(f) }));
     return { name: 'hunspell', root: cwd, files };
 }
@@ -197,8 +210,6 @@ function sourceFile(source: Source, path: string, local: string | undefined): So
     return { path: rel, local: loc };
 }
 
-function checkExists(source: Source, path: string): void {
-    if (!existsSync(resolve(source.root, path))) {
-        throw new Error(`the source ${source.name} has no ${path}.`);
-    }
+function check(what: string, result: string | true): void {
+    if (result !== true) throw new Error(`${what}: ${result}`);
 }

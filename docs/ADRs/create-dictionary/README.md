@@ -104,7 +104,7 @@ It ships in two stages, each usable on its own:
 One PR per step. This section is removed once the feature ships.
 
 1. Names, descriptions, and the locale or file type; hidden test options ([0005](./0005-names-descriptions-and-when-it-is-enabled.md), [0009](./0009-test-options-are-hidden.md)).
-2. Several sources and `--allow-missing-source` ([0001](./0001-name-and-sources-on-the-command-line.md)).
+2. Several sources and `--placeholder-word-lists` ([0001](./0001-name-and-sources-on-the-command-line.md)).
 3. Contributors and keywords ([0005](./0005-names-descriptions-and-when-it-is-enabled.md)).
 4. `src/additional_words.txt` and `src/exclude_words.txt` ([0004](./0004-additional-and-exclude-words.md)).
 5. Third-party sources and `sources.yaml`, together ([0002](./0002-third-party-sources.md), [0003](./0003-sources-file.md)).

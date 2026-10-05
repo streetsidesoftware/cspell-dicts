@@ -1,4 +1,3 @@
-import { existsSync, statSync } from 'node:fs';
 import { basename, resolve } from 'node:path';
 
 import { confirm, input } from '@inquirer/prompts';
@@ -8,6 +7,8 @@ import { type Answers, type CommandLine, optionForAnswer } from './options.mts';
 import { gitUserName, readTakenNames, type Repo } from './repo.mts';
 import { isHunspellFile } from './hunspell.mts';
 import {
+    checkFile,
+    checkFolder,
     hunspellFile,
     parseSources,
     type Source,
@@ -18,7 +19,6 @@ import {
 } from './sources.mts';
 import {
     nameValidator,
-    sourceValidator,
     type Validate,
     validateContributor,
     validateKeyword,
@@ -36,10 +36,9 @@ export type Settings = Omit<Required<Answers>, 'srcFiles'> & {
  * The answers given as options, then defaults (with --yes) or prompts for the rest.
  */
 export async function getAnswers(options: CommandLine, repo: Repo, cwd: string): Promise<Settings> {
-    const { answers: given, yes, allowMissingSource } = options;
-    const validateSource = sourceValidator(cwd);
+    const { answers: given, yes, placeholderWordLists } = options;
     const keys = Object.keys(optionForAnswer) as (keyof Answers)[];
-    const missing = keys.filter((key) => given[key] === undefined && !(key === 'srcFiles' && allowMissingSource));
+    const missing = keys.filter((key) => given[key] === undefined && !(key === 'srcFiles' && placeholderWordLists));
     const noPrompts = yes || !missing.length;
     if (!noPrompts && !process.stdin.isTTY) {
         const options = missing.map((key) => optionForAnswer[key]).join(', ');
@@ -108,9 +107,9 @@ export async function getAnswers(options: CommandLine, repo: Repo, cwd: string):
         const files = given.srcFiles;
         if (files === undefined && noPrompts) {
             if (options.sourceOptions.defineSource.length) return [];
-            if (!allowMissingSource) {
+            if (!placeholderWordLists) {
                 throw new Error(
-                    'missing source. Give <source> or --source, or --allow-missing-source to start with an empty word list.',
+                    'missing source. Give <source> or --source, or --placeholder-word-lists to start with an empty word list.',
                 );
             }
             return [wordList(name + '.txt', cwd, true)];
@@ -124,7 +123,7 @@ export async function getAnswers(options: CommandLine, repo: Repo, cwd: string):
             return list;
         }
         for (const file of files) {
-            const valid = validateSource(file);
+            const valid = validatePath(file);
             if (valid !== true) throw new Error(valid);
             list.push(isHunspellFile(file) ? hunspellFile(file, cwd) : givenWordList(file));
         }
@@ -153,12 +152,9 @@ export async function getAnswers(options: CommandLine, repo: Repo, cwd: string):
 
     /** Asks for named sources, as the options would give them. */
     async function askDefined(all: SourceOptions): Promise<void> {
-        const isFolder = (v: string) => {
-            const path = resolve(cwd, v);
-            return (existsSync(path) && statSync(path).isDirectory()) || `${v} isn't a folder.`;
-        };
         while (await confirm({ message: 'Add a third-party source?', default: false })) {
-            const folder = await input({ message: 'Its folder', validate: isFolder });
+            const folder = await input({ message: 'Its folder', validate: (v) => checkFolder(cwd, v) });
+            const inFolder = (v: string) => !v.trim() || checkFile(resolve(cwd, folder), v.trim());
             const name = await input({ message: 'Its name', default: basename(resolve(cwd, folder)) });
             all.defineSource.push(`${name}=${folder}`);
             const withLocal = async (path: string) => {
@@ -166,13 +162,16 @@ export async function getAnswers(options: CommandLine, repo: Repo, cwd: string):
                 return local === path ? `${name}=${path}` : `${name}/${local}=${path}`;
             };
             for (;;) {
-                const file = await input({ message: `A word list or Hunspell file in ${folder}; empty when done` });
+                const file = await input({
+                    message: `A word list or Hunspell file in ${folder}; empty when done`,
+                    validate: inFolder,
+                });
                 if (!file.trim()) break;
                 all.addSourceFile.push(await withLocal(file.trim()));
             }
-            const license = await input({ message: 'Its license file; empty to skip' });
+            const license = await input({ message: 'Its license file; empty to skip', validate: inFolder });
             if (license.trim()) all.addSourceLicense.push(await withLocal(license.trim()));
-            const readme = await input({ message: 'Its README; empty to skip' });
+            const readme = await input({ message: 'Its README; empty to skip', validate: inFolder });
             if (readme.trim()) all.addSourceReadme.push(await withLocal(readme.trim()));
             const url = await input({ message: 'Where it can be found (URL); empty to skip' });
             if (url.trim()) all.addSourceUrl.push(`${name}=${url.trim()}`);
@@ -180,20 +179,26 @@ export async function getAnswers(options: CommandLine, repo: Repo, cwd: string):
     }
 
     function givenWordList(file: string): Source {
-        const found = existsSync(resolve(cwd, file));
-        if (!found && !allowMissingSource) {
-            throw new Error(`${file} not found. Give --allow-missing-source to start with an empty word list.`);
+        const found = checkFile(cwd, file);
+        if (found !== true && !placeholderWordLists) {
+            throw new Error(`${found} Give --placeholder-word-lists to start with an empty word list.`);
         }
-        return wordList(file, cwd, !found);
+        return wordList(file, cwd, found !== true);
+    }
+
+    /** A path, and for a Hunspell file, its pair. A missing word list is a placeholder or an error, decided later. */
+    function validatePath(file: string): string | true {
+        if (!file.trim()) return 'Give the path to a word list or Hunspell .dic file.';
+        return isHunspellFile(file) ? checkFile(cwd, file) : true;
     }
 
     async function askSource(def: string | undefined): Promise<Source> {
         for (;;) {
-            const typed = await input({ message: 'Source file', default: def, validate: validateSource });
+            const typed = await input({ message: 'Source file', default: def, validate: validatePath });
             if (isHunspellFile(typed)) return hunspellFile(typed, cwd);
-            if (existsSync(resolve(cwd, typed))) return wordList(typed, cwd, false);
-            const message = `${typed} not found. Create an empty src/${basename(typed)}?`;
-            if (allowMissingSource || (await confirm({ message, default: true }))) return wordList(typed, cwd, true);
+            if (checkFile(cwd, typed) === true) return wordList(typed, cwd, false);
+            const message = `${typed} not found. Create an empty placeholder, src/${basename(typed)}?`;
+            if (placeholderWordLists || (await confirm({ message, default: true }))) return wordList(typed, cwd, true);
         }
     }
 

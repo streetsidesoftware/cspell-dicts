@@ -84,7 +84,7 @@ Turn the design into the dictionary with one command.
   ```
 
 - **Do,** from the design to the options:
-  - `--allow-missing-source` when there's no word list yet. It starts an empty one.
+  - `--placeholder-word-lists` when there's no word list yet. It starts an empty one.
   - One `--contributor` per person, and one `--keyword` per search term.
   - `--locale` for a natural language, or `--language-id` for anything else.
   - `--trie` for Hunspell sources and large lists.

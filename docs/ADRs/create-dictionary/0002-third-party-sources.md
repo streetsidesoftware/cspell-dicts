@@ -55,7 +55,7 @@ aoo/LICENSE=../../LICENSE` brings in the license kept at the repository's root a
 - **Names:** letters, digits, `_`, and `-`, as for a dictionary. Two sources with the same name are an error before
   anything is written, saying to name one with `--define-source <name>=<path>`.
 - **Checks at creation:** a source needs at least one file, and every named file must exist; there's no
-  `--allow-missing-source` exception. A missing license, README, or URL is a warning.
+  `--placeholder-word-lists` exception. A missing license, README, or URL is a warning.
 - **Prompting:** after the dictionary's own sources, the generator asks "Add a third-party source?" until the answer is
   no. For each, it asks the name and location, its files one at a time with where to put each (defaulting to its path
   relative to the source), then its license, README, and URL, each of

@@ -20,8 +20,8 @@ export interface CommandLine {
     answers: Answers;
     /** Use the defaults for anything not given, and never prompt. */
     yes: boolean;
-    /** Create an empty word list if the source is missing. */
-    allowMissingSource: boolean;
+    /** Start a missing word list, or src/<name>.txt when there's no source, as an empty placeholder. */
+    placeholderWordLists: boolean;
     /** The --define-source and --add-source-* options, as given. */
     sourceOptions: SourceOptions;
     /** Create src/additional_words.txt. */
@@ -42,7 +42,7 @@ export const optionForAnswer: Record<keyof Answers, string> = {
     packageDescription: '--package-description',
     contributors: '--contributor',
     keywords: '--keyword',
-    srcFiles: '<source>, --source, or --allow-missing-source',
+    srcFiles: '<source>, --source, or --placeholder-word-lists',
     locale: '--locale',
     languageId: '--language-id',
     useTrie: '--trie or --no-trie',
@@ -61,7 +61,7 @@ interface Options {
     languageId?: string;
     trie?: boolean;
     build?: boolean;
-    allowMissingSource?: boolean;
+    placeholderWordLists?: boolean;
     additionalWords?: boolean;
     excludeWords?: boolean;
     defineSource?: string[];
@@ -109,8 +109,8 @@ export function parseCommandLine(argv: string[]): CommandLine {
             (value: string, previous: string[] = []) => [...previous, value],
         )
         .option(
-            '--allow-missing-source',
-            'if the source is missing, create an empty word list (src/<name>.txt without --source); not for Hunspell files',
+            '--placeholder-word-lists',
+            'start a missing word list empty, or src/<name>.txt without a source; Hunspell and third-party files must exist',
         )
         .option(
             '--define-source <[name=]path>',
@@ -185,7 +185,7 @@ export function parseCommandLine(argv: string[]): CommandLine {
     return {
         answers,
         yes: !!opts.yes,
-        allowMissingSource: !!opts.allowMissingSource,
+        placeholderWordLists: !!opts.placeholderWordLists,
         sourceOptions: {
             defineSource: opts.defineSource ?? [],
             addSourceFile: opts.addSourceFile ?? [],

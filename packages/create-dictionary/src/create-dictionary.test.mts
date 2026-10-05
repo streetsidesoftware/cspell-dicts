@@ -79,7 +79,7 @@ describe('help', () => {
         for (const option of [
             '--yes',
             '--source',
-            '--allow-missing-source',
+            '--placeholder-word-lists',
             '--locale',
             '--language-id',
             '--description',
@@ -181,38 +181,38 @@ describe('a new package', () => {
 describe('the name', () => {
     it('is required', () => {
         assertFails(
-            create('--yes', '--allow-missing-source', '--language-id', 'ruby'),
+            create('--yes', '--placeholder-word-lists', '--language-id', 'ruby'),
             /missing\. Give the directory name/,
         );
     });
 
     it('has only letters, digits, "_", and "-"', () => {
-        assertFails(createYes('bad.name', '--allow-missing-source'), /can only have letters/);
+        assertFails(createYes('bad.name', '--placeholder-word-lists'), /can only have letters/);
     });
 
     it('is at most 50 characters', () => {
-        assertFails(createYes('a'.repeat(51), '--allow-missing-source'), /longer than 50 characters/);
+        assertFails(createYes('a'.repeat(51), '--placeholder-word-lists'), /longer than 50 characters/);
     });
 
     it('is not reserved on Windows', () => {
-        assertFails(createYes('con', '--allow-missing-source'), /reserved on Windows/);
-        assertFails(createYes('LPT1', '--allow-missing-source'), /reserved on Windows/);
+        assertFails(createYes('con', '--placeholder-word-lists'), /reserved on Windows/);
+        assertFails(createYes('LPT1', '--placeholder-word-lists'), /reserved on Windows/);
     });
 
     it('is not an existing directory', () => {
-        assertFails(createYes('en_AU', '--allow-missing-source'), /dictionaries\/en_AU already exists/);
+        assertFails(createYes('en_AU', '--placeholder-word-lists'), /dictionaries\/en_AU already exists/);
     });
 
     it('does not give a package name already in use', () => {
         assertFails(
-            createYes('en-AU', '--allow-missing-source'),
+            createYes('en-AU', '--placeholder-word-lists'),
             /@cspell\/dict-en-au is already used by dictionaries\/en_AU/,
         );
     });
 
     it('does not give a dictionary ID already in use', () => {
         assertFails(
-            createYes('en-au-extra', '--allow-missing-source'),
+            createYes('en-au-extra', '--placeholder-word-lists'),
             /dictionary ID en-au-extra is already used by dictionaries\/en_AU/,
         );
     });
@@ -227,20 +227,20 @@ describe('the source', () => {
         assertFails(createYes('missing', 'nope.txt'), /nope\.txt not found/);
     });
 
-    it('can be missing with --allow-missing-source, which creates an empty word list', () => {
-        const result = createYes('allowed', 'nope.txt', '--allow-missing-source');
+    it('can be missing with --placeholder-word-lists, which creates an empty word list', () => {
+        const result = createYes('allowed', 'nope.txt', '--placeholder-word-lists');
         assert.equal(result.code, 0, result.stderr);
         assert.equal(packageFile('allowed', 'src/nope.txt'), '# Allowed Terms\n');
     });
 
-    it('is still copied with --allow-missing-source when it exists', () => {
-        const result = createYes('found', 'words.txt', '--allow-missing-source');
+    it('is still copied with --placeholder-word-lists when it exists', () => {
+        const result = createYes('found', 'words.txt', '--placeholder-word-lists');
         assert.equal(result.code, 0, result.stderr);
         assert.equal(packageFile('found', 'src/words.txt'), 'zorbal\nquixly\n');
     });
 
-    it('defaults to an empty src/<name>.txt with only --allow-missing-source', () => {
-        const result = createYes('empty', '--allow-missing-source');
+    it('defaults to an empty src/<name>.txt with only --placeholder-word-lists', () => {
+        const result = createYes('empty', '--placeholder-word-lists');
         assert.equal(result.code, 0, result.stderr);
         assert.equal(packageFile('empty', 'src/empty.txt'), '# Empty Terms\n');
     });
@@ -249,8 +249,8 @@ describe('the source', () => {
         assertFails(createYes('nosource'), /missing source/);
     });
 
-    it('needs both Hunspell files, even with --allow-missing-source', () => {
-        assertFails(createYes('lonely', 'lonely.dic', '--allow-missing-source'), /Not found: lonely\.aff/);
+    it('needs both Hunspell files, even with --placeholder-word-lists', () => {
+        assertFails(createYes('lonely', 'lonely.dic', '--placeholder-word-lists'), /lonely\.aff not found/);
     });
 });
 
@@ -306,8 +306,8 @@ describe('several sources', () => {
         );
     });
 
-    it('can each be missing with --allow-missing-source', () => {
-        const result = createYes('partial', 'words.txt', 'later.txt', '--allow-missing-source');
+    it('can each be missing with --placeholder-word-lists', () => {
+        const result = createYes('partial', 'words.txt', 'later.txt', '--placeholder-word-lists');
         assert.equal(result.code, 0, result.stderr);
         assert.equal(packageFile('partial', 'src/later.txt'), '# Partial Terms\n');
         assert.equal(packageFile('partial', 'src/words.txt'), 'zorbal\nquixly\n');
@@ -317,7 +317,7 @@ describe('several sources', () => {
 describe('locale and file type', () => {
     it('are not both "*"', () => {
         assertFails(
-            create('--yes', 'everywhere', '--description', 'Test words', '--allow-missing-source', '--no-build'),
+            create('--yes', 'everywhere', '--description', 'Test words', '--placeholder-word-lists', '--no-build'),
             /enables the dictionary for every file/,
         );
     });
@@ -328,7 +328,7 @@ describe('locale and file type', () => {
             'natural',
             '--description',
             'Test words',
-            '--allow-missing-source',
+            '--placeholder-word-lists',
             '--locale',
             'en',
             '--no-build',

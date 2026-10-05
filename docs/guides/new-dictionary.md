@@ -78,7 +78,7 @@ pnpm create-dictionary <name> <path/to/source/words> --language-id <file type>
 To run it with no questions, add `--yes`. Fields you leave out get their defaults. It stops with an error if:
 
 - the name is missing, `dictionaries/<name>/` already exists, or its package name or dictionary ID is already in use
-- a source file is missing (see `--allow-missing-source` below), or two have the same name
+- a source file is missing (see `--placeholder-word-lists` below), or two have the same name
 - a Hunspell `.dic` file has no `.aff` file next to it, or the other way around
 - the description is missing
 - the locale and the file type are both `*`
@@ -94,23 +94,23 @@ Run `pnpm create-dictionary --help` to list the options.
 
 Each field is described in [Create-dictionary options](#create-dictionary-options).
 
-| Field                                       | Option                                        | Summary                                                    |
-| ------------------------------------------- | --------------------------------------------- | ---------------------------------------------------------- |
-| [name](#name)                               | `<name>` or `--name`                          | The directory name, such as `en_AU` or `ruby`.             |
-| [friendly name](#friendly-name)             | `--friendly-name`                             | A readable name, such as `Australian English`.             |
-| [description](#description)                 | `--description`                               | Required. The words it covers.                             |
-| [npm description](#npm-description)         | `--package-description`                       | The description npm shows.                                 |
-| [contributors](#contributors)               | `--contributor`                               | The people who create and maintain this dictionary.        |
-| [keywords](#keywords)                       | `--keyword`                                   | Other names people search npm for, such as `golang`.       |
-| [source file](#source-file)                 | `<path/to/source/words>` or `--source`        | The word lists and Hunspell `.dic` files to build from.    |
-| [third-party sources](#third-party-sources) | `--define-source`, `--add-source-*`           | Sources someone else maintains, each in `src/<name>/`.     |
-| [missing source](#missing-source)           | `--allow-missing-source`                      | Start with an empty word list.                             |
-| [word files](#word-files)                   | `--no-additional-words`, `--no-exclude-words` | Leave out the files for adding and removing words by hand. |
-| [locale](#locale)                           | `--locale`                                    | The languages it's enabled for, such as `en-AU`.           |
-| [file type](#file-type)                     | `--language-id`                               | The file types it's enabled for, such as `ruby`.           |
-| [store as trie](#store-as-trie)             | `--trie` or `--no-trie`                       | Store it as a trie, for Hunspell files and large lists.    |
-| [run build](#run-build)                     | `--build` or `--no-build`                     | Build it now.                                              |
-| [no questions](#no-questions)               | `--yes`                                       | Use the defaults for anything not given, and never ask.    |
+| Field                                             | Option                                        | Summary                                                    |
+| ------------------------------------------------- | --------------------------------------------- | ---------------------------------------------------------- |
+| [name](#name)                                     | `<name>` or `--name`                          | The directory name, such as `en_AU` or `ruby`.             |
+| [friendly name](#friendly-name)                   | `--friendly-name`                             | A readable name, such as `Australian English`.             |
+| [description](#description)                       | `--description`                               | Required. The words it covers.                             |
+| [npm description](#npm-description)               | `--package-description`                       | The description npm shows.                                 |
+| [contributors](#contributors)                     | `--contributor`                               | The people who create and maintain this dictionary.        |
+| [keywords](#keywords)                             | `--keyword`                                   | Other names people search npm for, such as `golang`.       |
+| [source file](#source-file)                       | `<path/to/source/words>` or `--source`        | The word lists and Hunspell `.dic` files to build from.    |
+| [third-party sources](#third-party-sources)       | `--define-source`, `--add-source-*`           | Sources someone else maintains, each in `src/<name>/`.     |
+| [placeholder word lists](#placeholder-word-lists) | `--placeholder-word-lists`                    | Start a missing word list empty.                           |
+| [word files](#word-files)                         | `--no-additional-words`, `--no-exclude-words` | Leave out the files for adding and removing words by hand. |
+| [locale](#locale)                                 | `--locale`                                    | The languages it's enabled for, such as `en-AU`.           |
+| [file type](#file-type)                           | `--language-id`                               | The file types it's enabled for, such as `ruby`.           |
+| [store as trie](#store-as-trie)                   | `--trie` or `--no-trie`                       | Store it as a trie, for Hunspell files and large lists.    |
+| [run build](#run-build)                           | `--build` or `--no-build`                     | Build it now.                                              |
+| [no questions](#no-questions)                     | `--yes`                                       | Use the defaults for anything not given, and never ask.    |
 
 It creates `dictionaries/<name>/` with `version` `0.0.1-alpha.0` and `private: true`, so the dictionary isn't published. A
 maintainer makes it public once the dictionary has been verified.
@@ -299,7 +299,7 @@ A Hunspell dictionary is a pair of files, `.dic` and `.aff`. Give either one, or
 
 These aren't allowed:
 
-- a file that doesn't exist (see [Missing source](#missing-source))
+- a file that doesn't exist (see [Placeholder word lists](#placeholder-word-lists))
 - a Hunspell file without its pair
 - two files with the same name, such as two `index.dic`, since both would be copied to the same place
 
@@ -344,20 +344,23 @@ this way:
 A source needs at least one word file, and each file must exist. Two sources can't have the same name. A missing
 license, README, or web page only gets a warning.
 
-#### Missing source
+#### Placeholder word lists
 
-Start with an empty word list, when there's no source yet.
+Start a word list empty, as a placeholder, when its words don't exist yet.
 
 ```sh
-pnpm create-dictionary medical_terms --allow-missing-source
+pnpm create-dictionary medical_terms --placeholder-word-lists
+pnpm create-dictionary medical_terms terms.txt --placeholder-word-lists
 ```
 
 With no source given, it creates an empty `src/medical_terms.txt`. A word list you give that doesn't exist is created
-empty, instead of stopping with an error. The other sources are still copied. It doesn't apply to Hunspell files or
-third-party sources, which must exist.
+empty, under its name. The other sources are copied as usual.
 
-Without this option, the command asks whether to create a missing word list empty. With `--yes`, a missing word list is
-an error.
+It only applies to word lists given on their own. A missing Hunspell file or third-party file is always an error, since
+someone else made those files.
+
+Without this option, the command asks whether to create a missing word list as a placeholder. With `--yes`, a missing
+word list is an error.
 
 #### Word files
 
@@ -436,7 +439,7 @@ pnpm create-dictionary --yes ruby ruby-words.txt --description "Ruby keywords" -
 ```
 
 Some answers have no default: the name, the description, and a source. The locale and the file type can't both be
-left out. Leaving any of these out is an error. To start without a source, add `--allow-missing-source`.
+left out. Leaving any of these out is an error. To start without a source, add `--placeholder-word-lists`.
 
 ## Dictionary definitions
 
