@@ -21,8 +21,7 @@ added by hand afterwards.
 - A missing source is an error. `--placeholder-word-lists` starts empty word lists instead, as placeholders: an empty
   `src/<name>.txt` when no source is given, or an empty file under the given name when a word list doesn't exist. When
   prompting, a missing word list asks whether to create a placeholder. It covers only word lists given on their own: a
-  missing Hunspell or third-party file is always an error, since someone else made it. Until this design it was called
-  `--allow-missing-source`.
+  missing Hunspell or third-party file is always an error, since someone else made it.
 
 ## Consequences
 
