@@ -1,11 +1,12 @@
 import { copyFileSync, mkdirSync, readFileSync, writeFileSync } from 'node:fs';
-import { basename, dirname, extname, join, relative, resolve } from 'node:path';
+import { dirname, extname, join, relative } from 'node:path';
 
 import type { Settings } from './answers.mts';
 import { title, toPackageName } from './names.mts';
 import type { Repo } from './repo.mts';
-import { hunspellPair, isHunspellFile } from './source.mts';
+import { isHunspellFile } from './hunspell.mts';
 import { fillTemplate, templateDir, templateFiles } from './template.mts';
+import { buildFiles, copies, publishedFiles, sourcesYaml, srcDir } from './sources.mts';
 
 const additionalWordsFile = 'src/additional_words.txt';
 const excludeWordsFile = 'src/exclude_words.txt';
@@ -13,16 +14,16 @@ const excludeWordsFile = 'src/exclude_words.txt';
 /**
  * Write the new package from the templates and the source. Returns its directory.
  */
-export function createPackage(answers: Settings, repo: Repo, cwd: string): string {
+export function createPackage(answers: Settings, repo: Repo): string {
     const { name, friendlyName, useTrie } = answers;
     const { rootDir } = repo;
     const packageDir = join(repo.dictionariesDir, name);
     const packageName = toPackageName(name);
     const dstFileName = `dict/${packageName}.${useTrie ? 'trie' : 'txt'}`;
 
+    const built = [...answers.sources.flatMap(buildFiles), ...(answers.additionalWords ? [additionalWordsFile] : [])];
     // The test script reads the first source until samples replace it.
-    const first = answers.sources[0];
-    const firstIsHunspell = isHunspellFile(first.file);
+    const first = built[0];
 
     const values: Record<string, string> = {
         name,
@@ -33,19 +34,14 @@ export function createPackage(answers: Settings, repo: Repo, cwd: string): strin
         languageId: answers.languageId,
         packageName,
         fullPackageName: '@cspell/dict-' + packageName,
-        srcFile: 'src/' + basename(first.file),
-        sources: [
-            ...answers.sources.map((source) => 'src/' + basename(source.file)),
-            ...(answers.additionalWords ? [additionalWordsFile] : []),
-        ]
-            .map(buildSource)
-            .join('\n      - '),
+        srcFile: first,
+        sources: built.map(buildSource).join('\n      - '),
         excludeWordsFrom: answers.excludeWords ? `['${excludeWordsFile}']` : '[]',
         dstFullFileName: dstFileName,
         format: useTrie ? 'trie3' : 'plaintext',
         generateNonStrict: useTrie ? 'true' : 'false',
-        srcFileReader: firstIsHunspell ? 'hunspell-reader words -n 1000 -m 0' : 'head -n 1000',
-        prepareScript: answers.sources.some((source) => isHunspellFile(source.file)) ? 'echo OK' : 'pnpm run build',
+        srcFileReader: isHunspellFile(first) ? 'hunspell-reader words -n 1000 -m 0' : 'head -n 1000',
+        prepareScript: built.some((file) => isHunspellFile(file)) ? 'echo OK' : 'pnpm run build',
         prepublishOnlyScript: 'echo OK',
         year: String(new Date().getFullYear()),
     };
@@ -57,15 +53,12 @@ export function createPackage(answers: Settings, repo: Repo, cwd: string): strin
         write(file, file === 'package.json' ? withPeopleAndKeywords(content) : content);
     }
     for (const source of answers.sources) {
-        if (source.empty) {
-            write(join('src', basename(source.file)), `# ${title(friendlyName)} Terms\n`);
-            continue;
-        }
-        const file = resolve(cwd, source.file);
-        for (const copy of isHunspellFile(file) ? hunspellPair(file) : [file]) {
-            copyFileSync(copy, created(join('src', basename(copy))));
+        for (const file of source.files) {
+            if (file.empty) write(srcDir(source) + file.local, `# ${title(friendlyName)} Terms\n`);
         }
     }
+    for (const { from, to } of answers.sources.flatMap(copies)) copyFileSync(from, created(to));
+    if (answers.sources.some((source) => source.name)) write('src/sources.yaml', sourcesYaml(answers.sources));
     if (answers.additionalWords) {
         write(additionalWordsFile, '# Words to add that the sources lack. One per line; see docs/word-lists.md.\n');
     }
@@ -79,11 +72,12 @@ export function createPackage(answers: Settings, repo: Repo, cwd: string): strin
 
     return packageDir;
 
-    /** The template's package.json, with the contributors and the extra keywords. */
+    /** The template's package.json, with the contributors, the extra keywords, and the sources' licenses and READMEs. */
     function withPeopleAndKeywords(packageJson: string): string {
         const pkg = JSON.parse(packageJson);
         pkg.contributors = answers.contributors;
         pkg.keywords = [...new Set([...pkg.keywords, ...answers.keywords])];
+        pkg.files = [...pkg.files, ...answers.sources.flatMap(publishedFiles)];
         return JSON.stringify(pkg, null, 2) + '\n';
     }
 

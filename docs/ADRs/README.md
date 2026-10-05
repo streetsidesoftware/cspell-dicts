@@ -131,9 +131,6 @@ A small feature can ship its design and implementation together in one PR, from 
 design is worth reviewing before it's built, merge it on its own with a `docs:` PR, so it stays out of the release
 notes.
 
-A new dictionary that needs ADRs ships its design and the package together, in one `new-dictionary/<name>` branch and
-one PR.
-
 ## With Claude Code
 
 The `feature-adr` skill runs this process as an interview: it asks one decision at a time, writes and commits the

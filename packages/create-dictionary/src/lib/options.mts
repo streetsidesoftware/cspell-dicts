@@ -1,5 +1,7 @@
 import { Command, Option } from 'commander';
 
+import type { SourceOptions } from './sources.mts';
+
 export interface Answers {
     name?: string;
     friendlyName?: string;
@@ -18,8 +20,10 @@ export interface CommandLine {
     answers: Answers;
     /** Use the defaults for anything not given, and never prompt. */
     yes: boolean;
-    /** Create an empty word list if the source is missing. */
-    allowMissingSource: boolean;
+    /** Start a missing word list, or src/<name>.txt when there's no source, as an empty placeholder. */
+    placeholderWordLists: boolean;
+    /** The --define-source and --add-source-* options, as given. */
+    sourceOptions: SourceOptions;
     /** Create src/additional_words.txt. */
     additionalWords: boolean;
     /** Create src/exclude_words.txt. */
@@ -38,7 +42,7 @@ export const optionForAnswer: Record<keyof Answers, string> = {
     packageDescription: '--package-description',
     contributors: '--contributor',
     keywords: '--keyword',
-    srcFiles: '<source>, --source, or --allow-missing-source',
+    srcFiles: '<source>, --source, or --placeholder-word-lists',
     locale: '--locale',
     languageId: '--language-id',
     useTrie: '--trie or --no-trie',
@@ -57,9 +61,14 @@ interface Options {
     languageId?: string;
     trie?: boolean;
     build?: boolean;
-    allowMissingSource?: boolean;
+    placeholderWordLists?: boolean;
     additionalWords?: boolean;
     excludeWords?: boolean;
+    defineSource?: string[];
+    addSourceFile?: string[];
+    addSourceLicense?: string[];
+    addSourceReadme?: string[];
+    addSourceUrl?: string[];
     root?: string;
     skipInstall?: boolean;
     yes?: boolean;
@@ -100,8 +109,33 @@ export function parseCommandLine(argv: string[]): CommandLine {
             (value: string, previous: string[] = []) => [...previous, value],
         )
         .option(
-            '--allow-missing-source',
-            'if the source is missing, create an empty word list (src/<name>.txt without --source); not for Hunspell files',
+            '--placeholder-word-lists',
+            'start a missing word list empty, or src/<name>.txt without a source; Hunspell and third-party files must exist',
+        )
+        .option(
+            '--define-source <[name=]path>',
+            'a third-party source: a folder copied into src/<name>/; repeatable',
+            (value: string, previous: string[] = []) => [...previous, value],
+        )
+        .option(
+            '--add-source-file <name[/local]=path>',
+            'a word list or Hunspell file of a source, relative to it; repeatable',
+            (value: string, previous: string[] = []) => [...previous, value],
+        )
+        .option(
+            '--add-source-license <name[/local]=path>',
+            "a source's license, published with the dictionary",
+            (value: string, previous: string[] = []) => [...previous, value],
+        )
+        .option(
+            '--add-source-readme <name[/local]=path>',
+            "a source's README, published with the dictionary",
+            (value: string, previous: string[] = []) => [...previous, value],
+        )
+        .option(
+            '--add-source-url <name=url>',
+            'where a source can be found',
+            (value: string, previous: string[] = []) => [...previous, value],
         )
         .option('--no-additional-words', 'do not create src/additional_words.txt, for words the sources lack')
         .option('--no-exclude-words', 'do not create src/exclude_words.txt, for words to leave out of the build')
@@ -151,7 +185,14 @@ export function parseCommandLine(argv: string[]): CommandLine {
     return {
         answers,
         yes: !!opts.yes,
-        allowMissingSource: !!opts.allowMissingSource,
+        placeholderWordLists: !!opts.placeholderWordLists,
+        sourceOptions: {
+            defineSource: opts.defineSource ?? [],
+            addSourceFile: opts.addSourceFile ?? [],
+            addSourceLicense: opts.addSourceLicense ?? [],
+            addSourceReadme: opts.addSourceReadme ?? [],
+            addSourceUrl: opts.addSourceUrl ?? [],
+        },
         additionalWords: opts.additionalWords !== false,
         excludeWords: opts.excludeWords !== false,
         root: opts.root,

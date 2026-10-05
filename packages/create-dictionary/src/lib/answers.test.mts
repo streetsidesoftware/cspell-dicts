@@ -7,6 +7,7 @@ import { after, before, describe, it } from 'node:test';
 import { getAnswers } from './answers.mts';
 import type { Answers, CommandLine } from './options.mts';
 import type { Repo } from './repo.mts';
+import { noSourceOptions, wordList } from './sources.mts';
 
 let root = '';
 let repo: Repo;
@@ -21,6 +22,10 @@ before(() => {
     writeFileSync(join(root, 'additional_words.txt'), 'zorbal\n');
     mkdirSync(join(root, 'sub'));
     writeFileSync(join(root, 'sub', 'words.txt'), 'quixly\n');
+    writeFileSync(join(root, 'sub', 'other.dic'), '1\nquixly\n');
+    writeFileSync(join(root, 'sub', 'other.aff'), 'SET UTF-8\n');
+    writeFileSync(join(root, 'sub', 'pair.dic'), '1\nquixly\n');
+    writeFileSync(join(root, 'sub', 'pair.aff'), 'SET UTF-8\n');
 });
 
 after(() => rmSync(root, { recursive: true, force: true }));
@@ -29,7 +34,8 @@ function options(answers: Answers, more: Partial<CommandLine> = {}): CommandLine
     return {
         answers: { description: 'Test words', ...answers },
         yes: true,
-        allowMissingSource: false,
+        placeholderWordLists: false,
+        sourceOptions: noSourceOptions,
         additionalWords: true,
         excludeWords: true,
         skipInstall: true,
@@ -54,7 +60,7 @@ describe('getAnswers', () => {
             keywords: [],
             additionalWords: true,
             excludeWords: true,
-            sources: [{ file: 'words.txt', empty: false }],
+            sources: [wordList('words.txt', root, false)],
             locale: '*',
             languageId: 'markdown',
             useTrie: false,
@@ -78,22 +84,22 @@ describe('getAnswers', () => {
         assert.equal(settings.doBuild, false);
     });
 
-    it('starts an empty src/<name>.txt with only --allow-missing-source', async () => {
+    it('starts an empty src/<name>.txt with only --placeholder-word-lists', async () => {
         const settings = await getAnswers(
-            options({ name: 'ruby', languageId: 'ruby' }, { allowMissingSource: true }),
+            options({ name: 'ruby', languageId: 'ruby' }, { placeholderWordLists: true }),
             repo,
             root,
         );
-        assert.deepEqual(settings.sources, [{ file: 'ruby.txt', empty: true }]);
+        assert.deepEqual(settings.sources, [wordList('ruby.txt', root, true)]);
     });
 
-    it('marks a missing source as empty with --allow-missing-source', async () => {
+    it('marks a missing source as empty with --placeholder-word-lists', async () => {
         const settings = await getAnswers(
-            options({ name: 'ruby', srcFiles: ['nope.txt'], languageId: 'ruby' }, { allowMissingSource: true }),
+            options({ name: 'ruby', srcFiles: ['nope.txt'], languageId: 'ruby' }, { placeholderWordLists: true }),
             repo,
             root,
         );
-        assert.deepEqual(settings.sources, [{ file: 'nope.txt', empty: true }]);
+        assert.deepEqual(settings.sources, [wordList('nope.txt', root, true)]);
     });
 
     it('combines several sources, mixing word lists and Hunspell files', async () => {
@@ -102,10 +108,13 @@ describe('getAnswers', () => {
             repo,
             root,
         );
-        assert.deepEqual(settings.sources, [
-            { file: 'words.txt', empty: false },
-            { file: 'pair.dic', empty: false },
-        ]);
+        assert.deepEqual(
+            settings.sources.map((s) => [s.name, s.files.map((f) => f.local)]),
+            [
+                [undefined, ['words.txt']],
+                ['hunspell', ['pair.dic', 'pair.aff']],
+            ],
+        );
         assert.equal(settings.useTrie, true);
     });
 
@@ -115,7 +124,29 @@ describe('getAnswers', () => {
             repo,
             root,
         );
-        assert.deepEqual(settings.sources, [{ file: 'pair.dic', empty: false }]);
+        assert.deepEqual(
+            settings.sources.map((s) => [s.name, s.files.map((f) => f.local)]),
+            [['hunspell', ['pair.dic', 'pair.aff']]],
+        );
+    });
+
+    it('puts every Hunspell file given on its own in the one source hunspell', async () => {
+        const settings = await getAnswers(
+            options({ name: 'two', srcFiles: ['pair.dic', 'sub/other.aff'], locale: 'xx' }),
+            repo,
+            root,
+        );
+        assert.deepEqual(
+            settings.sources.map((s) => [s.name, s.files.map((f) => f.local)]),
+            [['hunspell', ['pair.dic', 'pair.aff', 'other.dic', 'other.aff']]],
+        );
+    });
+
+    it('refuses two Hunspell files with the same name', async () => {
+        await assert.rejects(
+            getAnswers(options({ name: 'clash', srcFiles: ['pair.dic', 'sub/pair.dic'], locale: 'xx' }), repo, root),
+            /would both be copied to src\/hunspell\/pair\.dic/,
+        );
     });
 
     it('refuses two sources copied to the same file', async () => {
@@ -129,7 +160,7 @@ describe('getAnswers', () => {
         );
     });
 
-    it('fails on a missing source without --allow-missing-source', async () => {
+    it('fails on a missing source without --placeholder-word-lists', async () => {
         await assert.rejects(
             getAnswers(options({ name: 'ruby', srcFiles: ['nope.txt'], languageId: 'ruby' }), repo, root),
             /nope\.txt not found/,

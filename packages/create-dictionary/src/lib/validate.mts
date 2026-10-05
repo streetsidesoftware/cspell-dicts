@@ -1,9 +1,8 @@
 import { existsSync } from 'node:fs';
-import { join, resolve } from 'node:path';
+import { join } from 'node:path';
 
 import { toPackageName } from './names.mts';
 import type { Repo, TakenNames } from './repo.mts';
-import { hunspellPair, isHunspellFile } from './source.mts';
 
 /** A message saying what's wrong, or `true`. */
 export type Validate = (value: string) => string | true;
@@ -60,15 +59,4 @@ export function validateContributor(value: string): string | true {
         return `"${value}" isn't "Name", "Name <email>", or "Name (url)".`;
     }
     return true;
-}
-
-/** Checks a source path, relative to `cwd`. A missing word list is checked separately. */
-export function sourceValidator(cwd: string): Validate {
-    return (srcFile) => {
-        if (!srcFile.trim()) return 'Give the path to a word list or Hunspell .dic file.';
-        if (!isHunspellFile(srcFile)) return true;
-        const notFound = hunspellPair(srcFile).filter((file) => !existsSync(resolve(cwd, file)));
-        if (!notFound.length) return true;
-        return `A Hunspell source needs both its .dic and .aff files. Not found: ${notFound.join(' and ')}`;
-    };
 }

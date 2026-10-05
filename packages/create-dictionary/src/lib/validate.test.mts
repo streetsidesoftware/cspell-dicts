@@ -7,7 +7,6 @@ import { after, before, describe, it } from 'node:test';
 import type { Repo, TakenNames } from './repo.mts';
 import {
     nameValidator,
-    sourceValidator,
     validateContributor,
     validateKeyword,
     validateDescription,
@@ -89,7 +88,7 @@ describe('validateContributor', () => {
             'Jane Doe <jane@example.com>',
             'Jane Doe (https://example.com/jane-doe)',
             'Jane Doe <jane@example.com> (https://example.com/jane-doe)',
-            'Proxecto Trasno (https://trasno.gal)',
+            'Example Project (https://example.org)',
         ]) {
             assert.equal(validateContributor(person), true, person);
         }
@@ -131,28 +130,5 @@ describe('validateLanguageId', () => {
     it('accepts "*" with a locale, and a file type with any locale', () => {
         assert.equal(validateLanguageId(false)('*'), true);
         assert.equal(validateLanguageId(true)('ruby'), true);
-    });
-});
-
-describe('sourceValidator', () => {
-    const validate = () => sourceValidator(root);
-
-    it('refuses an empty path', () => {
-        assert.match(String(validate()(' ')), /Give the path/);
-    });
-
-    it('accepts a word list, found or not', () => {
-        assert.equal(validate()('words.txt'), true);
-        assert.equal(validate()('missing.txt'), true);
-    });
-
-    it('accepts a complete Hunspell pair from either file', () => {
-        assert.equal(validate()('pair.dic'), true);
-        assert.equal(validate()('pair.aff'), true);
-    });
-
-    it('refuses an incomplete Hunspell pair', () => {
-        assert.match(String(validate()('lonely.dic')), /Not found: lonely\.aff/);
-        assert.match(String(validate()('gone.dic')), /Not found: gone\.dic and gone\.aff/);
     });
 });

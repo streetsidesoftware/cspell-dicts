@@ -33,6 +33,10 @@ before(() => {
     writeFileSync(join(root, 'pair.aff'), 'SET UTF-8\n');
     writeFileSync(join(root, 'lonely.dic'), '1\nzorbal\n');
     writeFileSync(join(root, 'more.txt'), 'blivet\n');
+    mkdirSync(join(root, 'vendor', 'lists'), { recursive: true });
+    writeFileSync(join(root, 'vendor', 'lists', 'terms.txt'), 'blorp\n');
+    writeFileSync(join(root, 'vendor', 'README.md'), 'About up\n');
+    writeFileSync(join(root, 'COPYING'), 'MIT\n');
 });
 
 after(() => rmSync(root, { recursive: true, force: true }));
@@ -75,7 +79,7 @@ describe('help', () => {
         for (const option of [
             '--yes',
             '--source',
-            '--allow-missing-source',
+            '--placeholder-word-lists',
             '--locale',
             '--language-id',
             '--description',
@@ -166,8 +170,10 @@ describe('a new package', () => {
     it('copies both files of a Hunspell source and stores it as a trie', () => {
         const result = createYes('hunspell', 'pair.dic');
         assert.equal(result.code, 0, result.stderr);
-        assert.ok(existsSync(join(root, 'dictionaries', 'hunspell', 'src', 'pair.dic')));
-        assert.ok(existsSync(join(root, 'dictionaries', 'hunspell', 'src', 'pair.aff')));
+        assert.ok(existsSync(join(root, 'dictionaries', 'hunspell', 'src', 'hunspell', 'pair.dic')));
+        assert.ok(existsSync(join(root, 'dictionaries', 'hunspell', 'src', 'hunspell', 'pair.aff')));
+        assert.match(packageFile('hunspell', 'src/sources.yaml'), /name: 'hunspell'/);
+        assert.match(result.stderr, /warning: the source hunspell has no license/);
         assert.match(packageFile('hunspell', 'cspell-tools.config.yaml'), /format: 'trie3'/);
     });
 });
@@ -175,38 +181,38 @@ describe('a new package', () => {
 describe('the name', () => {
     it('is required', () => {
         assertFails(
-            create('--yes', '--allow-missing-source', '--language-id', 'ruby'),
+            create('--yes', '--placeholder-word-lists', '--language-id', 'ruby'),
             /missing\. Give the directory name/,
         );
     });
 
     it('has only letters, digits, "_", and "-"', () => {
-        assertFails(createYes('bad.name', '--allow-missing-source'), /can only have letters/);
+        assertFails(createYes('bad.name', '--placeholder-word-lists'), /can only have letters/);
     });
 
     it('is at most 50 characters', () => {
-        assertFails(createYes('a'.repeat(51), '--allow-missing-source'), /longer than 50 characters/);
+        assertFails(createYes('a'.repeat(51), '--placeholder-word-lists'), /longer than 50 characters/);
     });
 
     it('is not reserved on Windows', () => {
-        assertFails(createYes('con', '--allow-missing-source'), /reserved on Windows/);
-        assertFails(createYes('LPT1', '--allow-missing-source'), /reserved on Windows/);
+        assertFails(createYes('con', '--placeholder-word-lists'), /reserved on Windows/);
+        assertFails(createYes('LPT1', '--placeholder-word-lists'), /reserved on Windows/);
     });
 
     it('is not an existing directory', () => {
-        assertFails(createYes('en_AU', '--allow-missing-source'), /dictionaries\/en_AU already exists/);
+        assertFails(createYes('en_AU', '--placeholder-word-lists'), /dictionaries\/en_AU already exists/);
     });
 
     it('does not give a package name already in use', () => {
         assertFails(
-            createYes('en-AU', '--allow-missing-source'),
+            createYes('en-AU', '--placeholder-word-lists'),
             /@cspell\/dict-en-au is already used by dictionaries\/en_AU/,
         );
     });
 
     it('does not give a dictionary ID already in use', () => {
         assertFails(
-            createYes('en-au-extra', '--allow-missing-source'),
+            createYes('en-au-extra', '--placeholder-word-lists'),
             /dictionary ID en-au-extra is already used by dictionaries\/en_AU/,
         );
     });
@@ -221,20 +227,20 @@ describe('the source', () => {
         assertFails(createYes('missing', 'nope.txt'), /nope\.txt not found/);
     });
 
-    it('can be missing with --allow-missing-source, which creates an empty word list', () => {
-        const result = createYes('allowed', 'nope.txt', '--allow-missing-source');
+    it('can be missing with --placeholder-word-lists, which creates an empty word list', () => {
+        const result = createYes('allowed', 'nope.txt', '--placeholder-word-lists');
         assert.equal(result.code, 0, result.stderr);
         assert.equal(packageFile('allowed', 'src/nope.txt'), '# Allowed Terms\n');
     });
 
-    it('is still copied with --allow-missing-source when it exists', () => {
-        const result = createYes('found', 'words.txt', '--allow-missing-source');
+    it('is still copied with --placeholder-word-lists when it exists', () => {
+        const result = createYes('found', 'words.txt', '--placeholder-word-lists');
         assert.equal(result.code, 0, result.stderr);
         assert.equal(packageFile('found', 'src/words.txt'), 'zorbal\nquixly\n');
     });
 
-    it('defaults to an empty src/<name>.txt with only --allow-missing-source', () => {
-        const result = createYes('empty', '--allow-missing-source');
+    it('defaults to an empty src/<name>.txt with only --placeholder-word-lists', () => {
+        const result = createYes('empty', '--placeholder-word-lists');
         assert.equal(result.code, 0, result.stderr);
         assert.equal(packageFile('empty', 'src/empty.txt'), '# Empty Terms\n');
     });
@@ -243,8 +249,8 @@ describe('the source', () => {
         assertFails(createYes('nosource'), /missing source/);
     });
 
-    it('needs both Hunspell files, even with --allow-missing-source', () => {
-        assertFails(createYes('lonely', 'lonely.dic', '--allow-missing-source'), /Not found: lonely\.aff/);
+    it('needs both Hunspell files, even with --placeholder-word-lists', () => {
+        assertFails(createYes('lonely', 'lonely.dic', '--placeholder-word-lists'), /lonely\.aff not found/);
     });
 });
 
@@ -252,12 +258,12 @@ describe('several sources', () => {
     it('are combined from positional arguments and --source', () => {
         const result = createYes('several', 'words.txt', '--source', 'pair.aff', '--source', 'more.txt');
         assert.equal(result.code, 0, result.stderr);
-        for (const file of ['src/words.txt', 'src/pair.dic', 'src/pair.aff', 'src/more.txt']) {
+        for (const file of ['src/words.txt', 'src/hunspell/pair.dic', 'src/hunspell/pair.aff', 'src/more.txt']) {
             assert.ok(existsSync(join(root, 'dictionaries', 'several', file)), file);
         }
         const config = packageFile('several', 'cspell-tools.config.yaml');
         assert.match(config, /filename: 'src\/words\.txt'/);
-        assert.match(config, /filename: 'src\/pair\.dic'/);
+        assert.match(config, /filename: 'src\/hunspell\/pair\.dic'/);
         assert.match(config, /filename: 'src\/more\.txt'/);
         assert.match(config, /format: 'trie3'/);
     });
@@ -265,11 +271,43 @@ describe('several sources', () => {
     it('build a Hunspell source from its .dic file when only the .aff file is given', () => {
         const result = createYes('affonly', 'pair.aff');
         assert.equal(result.code, 0, result.stderr);
-        assert.match(packageFile('affonly', 'cspell-tools.config.yaml'), /filename: 'src\/pair\.dic'/);
+        assert.match(packageFile('affonly', 'cspell-tools.config.yaml'), /filename: 'src\/hunspell\/pair\.dic'/);
     });
 
-    it('can each be missing with --allow-missing-source', () => {
-        const result = createYes('partial', 'words.txt', 'later.txt', '--allow-missing-source');
+    it('include a third-party source defined with options', () => {
+        const result = createYes(
+            'thirdparty',
+            '--define-source',
+            'up=vendor',
+            '--add-source-file',
+            'up=lists/terms.txt',
+            '--add-source-license',
+            'up/LICENSE=../COPYING',
+            '--add-source-readme',
+            'up=README.md',
+            '--add-source-url',
+            'up=https://example.com/up',
+        );
+        assert.equal(result.code, 0, result.stderr);
+        assert.equal(packageFile('thirdparty', 'src/up/lists/terms.txt'), 'blorp\n');
+        assert.ok(existsSync(join(root, 'dictionaries', 'thirdparty', 'src', 'up', 'LICENSE')));
+        assert.match(packageFile('thirdparty', 'cspell-tools.config.yaml'), /filename: 'src\/up\/lists\/terms\.txt'/);
+        assert.match(packageFile('thirdparty', 'src/sources.yaml'), /license: 'LICENSE'/);
+        assert.match(packageFile('thirdparty', 'src/sources.yaml'), /readme: 'README\.md'/);
+        const { files } = JSON.parse(packageFile('thirdparty', 'package.json'));
+        assert.ok(files.includes('src/up/LICENSE') && files.includes('src/up/README.md'), files.join(', '));
+        assert.doesNotMatch(result.stderr, /warning/);
+    });
+
+    it('refuse a third-party file outside its source without a local path', () => {
+        assertFails(
+            createYes('outside', '--define-source', 'up=vendor', '--add-source-file', 'up=../COPYING'),
+            /outside the source up/,
+        );
+    });
+
+    it('can each be missing with --placeholder-word-lists', () => {
+        const result = createYes('partial', 'words.txt', 'later.txt', '--placeholder-word-lists');
         assert.equal(result.code, 0, result.stderr);
         assert.equal(packageFile('partial', 'src/later.txt'), '# Partial Terms\n');
         assert.equal(packageFile('partial', 'src/words.txt'), 'zorbal\nquixly\n');
@@ -279,7 +317,7 @@ describe('several sources', () => {
 describe('locale and file type', () => {
     it('are not both "*"', () => {
         assertFails(
-            create('--yes', 'everywhere', '--description', 'Test words', '--allow-missing-source', '--no-build'),
+            create('--yes', 'everywhere', '--description', 'Test words', '--placeholder-word-lists', '--no-build'),
             /enables the dictionary for every file/,
         );
     });
@@ -290,7 +328,7 @@ describe('locale and file type', () => {
             'natural',
             '--description',
             'Test words',
-            '--allow-missing-source',
+            '--placeholder-word-lists',
             '--locale',
             'en',
             '--no-build',

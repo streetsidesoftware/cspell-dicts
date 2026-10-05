@@ -2,7 +2,7 @@ import assert from 'node:assert/strict';
 import { join } from 'node:path';
 import { describe, it } from 'node:test';
 
-import { hunspellPair, isHunspellFile } from './source.mts';
+import { hunspellPair, isHunspellFile } from './hunspell.mts';
 
 describe('isHunspellFile', () => {
     it('is true for .dic and .aff files', () => {

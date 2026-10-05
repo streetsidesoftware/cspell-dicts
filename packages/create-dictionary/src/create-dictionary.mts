@@ -20,7 +20,7 @@ async function main(): Promise<void> {
         : findRepoRoot(fileURLToPath(new URL('.', import.meta.url)));
     const repo = openRepo(rootDir);
     const settings = await getAnswers(options, repo, cwd);
-    const packageDir = createPackage(settings, repo, cwd);
+    const packageDir = createPackage(settings, repo);
     setUpPackage(packageDir, repo, { install: !options.skipInstall, build: settings.doBuild });
 }
 
