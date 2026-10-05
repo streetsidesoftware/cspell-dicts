@@ -3,7 +3,7 @@ import { basename, resolve } from 'node:path';
 
 import { checkbox, confirm, input } from '@inquirer/prompts';
 
-import { title, toFriendlyName } from './names.mts';
+import { title, toFriendlyName, toPackageName } from './names.mts';
 import { type Answers, type CommandLine, optionForAnswer } from './options.mts';
 import { gitUserName, readTakenNames, type Repo } from './repo.mts';
 import { isHunspellFile } from './hunspell.mts';
@@ -316,6 +316,7 @@ export async function getAnswers(options: CommandLine, repo: Repo, cwd: string):
         return result;
     }
 
+    // What it's about.
     const taken = await readTakenNames(repo);
     const name = await text(
         'name',
@@ -323,6 +324,8 @@ export async function getAnswers(options: CommandLine, repo: Repo, cwd: string):
         undefined,
         nameValidator(repo, taken),
     );
+    const id = toPackageName(name);
+    console.log(`Package @cspell/dict-${id}, dictionary ID ${id}.`);
     const friendlyName = await text(
         'friendlyName',
         'Friendly name, such as "US English" or "Medical Terms":',
@@ -339,9 +342,8 @@ export async function getAnswers(options: CommandLine, repo: Repo, cwd: string):
         'Description on npm:',
         title(friendlyName) + ' dictionary for cspell.',
     );
-    const people = await contributors();
     const searchWords = await keywords();
-    const sources = await allSources(name);
+    // When it's used.
     // A name such as en_AU or german stands for its locale.
     const nameLocale = localeFromName(name);
     if (nameLocale && noPrompts && given.locale === undefined) {
@@ -361,6 +363,10 @@ export async function getAnswers(options: CommandLine, repo: Repo, cwd: string):
         anyLocale && !noPrompts ? undefined : '*',
         validateLanguageId(anyLocale),
     );
+    // Its words, then its tests.
+    const sources = await allSources(name);
+    const samples = await allSamples(locale);
+    // How it's built, who maintains it, and what to do now.
     const isHunspell = sources.some((source) => source.files.some((f) => isHunspellFile(f.path)));
     const useTrie = await yesNo(
         'useTrie',
@@ -368,14 +374,13 @@ export async function getAnswers(options: CommandLine, repo: Repo, cwd: string):
         isHunspell || wordListBytes(sources) > largeWordLists,
         'A trie is much smaller for large word lists.',
     );
+    const people = await contributors();
     const doBuild = await yesNo(
         'doBuild',
         'Build it now?',
         !isHunspell,
         isHunspell ? 'A Hunspell dictionary can take a long time to build.' : undefined,
     );
-
-    const samples = await allSamples(locale);
 
     return {
         name,

@@ -47,12 +47,12 @@ export const optionForAnswer: Record<keyof Answers, string> = {
     friendlyName: '--friendly-name',
     description: '--description',
     packageDescription: '--package-description',
-    contributors: '--contributor',
     keywords: '--keyword',
-    srcFiles: '<source>, --source, or --placeholder-word-lists',
     locale: '--locale',
     languageId: '--language-id',
+    srcFiles: '<source>, --source, or --placeholder-word-lists',
     useTrie: '--trie or --no-trie',
+    contributors: '--contributor',
     doBuild: '--build or --no-build',
 };
 
@@ -94,6 +94,7 @@ export function parseCommandLine(argv: string[]): CommandLine {
         )
         .argument('[name]', 'the directory name for the dictionary, such as en_AU or ruby (same as --name)')
         .argument('[sources...]', 'the source word lists or Hunspell .dic files (same as --source)')
+        .optionsGroup("What it's about:")
         .option('--name <name>', 'the directory name for the dictionary, such as en_AU or ruby')
         .option('--friendly-name <text>', 'a readable name, such as "Australian English"; default: from the name')
         .option(
@@ -105,15 +106,20 @@ export function parseCommandLine(argv: string[]): CommandLine {
             'the description npm shows; default: "<Friendly name> dictionary for cspell."',
         )
         .option(
-            '--contributor <person>',
-            'someone who created or maintains the dictionary: "Name", "Name <email>", or "Name (url)"; repeat it for several',
-            (value: string, previous: string[] = []) => [...previous, value],
-        )
-        .option(
             '--keyword <word>',
             'another keyword people search npm for, such as golang for Go; repeat it for several',
             (value: string, previous: string[] = []) => [...previous, value],
         )
+        .optionsGroup("When it's used:")
+        .option(
+            '--locale <locales>',
+            'locales, comma separated, such as "en,en-AU", or "*" for any; an unknown one, such as "english", gets a warning with suggestions; default: "*"',
+        )
+        .option(
+            '--language-id <ids>',
+            'file types, comma separated, such as "ruby", or "*" for any; default: "*". Give this or --locale: both "*" is an error',
+        )
+        .optionsGroup('Its words:')
         .option(
             '--source <file>',
             'a .txt word list or Hunspell .dic file, copied to src/; repeat it for several',
@@ -148,6 +154,9 @@ export function parseCommandLine(argv: string[]): CommandLine {
             'where a source can be found',
             (value: string, previous: string[] = []) => [...previous, value],
         )
+        .option('--no-additional-words', 'do not create src/additional_words.txt, for words the sources lack')
+        .option('--no-exclude-words', 'do not create src/exclude_words.txt, for words to leave out of the build')
+        .optionsGroup('Its tests:')
         .option(
             '--add-sample <path>',
             'a real file of the kind the dictionary is for, copied into samples/ and spell checked by its tests; repeatable',
@@ -162,29 +171,29 @@ export function parseCommandLine(argv: string[]): CommandLine {
             '--no-wikipedia-sample',
             'for a natural language, do not fetch the start of the Wikipedia article on Seattle into samples/seattle.md',
         )
-        .option('--no-additional-words', 'do not create src/additional_words.txt, for words the sources lack')
-        .option('--no-exclude-words', 'do not create src/exclude_words.txt, for words to leave out of the build')
-        .option(
-            '--locale <locales>',
-            'locales, comma separated, such as "en,en-AU", or "*" for any; an unknown one, such as "english", gets a warning with suggestions; default: "*"',
-        )
-        .option(
-            '--language-id <ids>',
-            'file types, comma separated, such as "ruby", or "*" for any; default: "*". Give this or --locale: both "*" is an error',
-        )
+        .optionsGroup("How it's built:")
         .option('--trie', 'store as a trie; default for Hunspell sources, and word lists over 1 MB in all')
         .option('--no-trie', 'store as plain text; default for smaller word lists')
-        .option('--build', 'build the dictionary after creating it; default when every source is a word list')
-        .option('--no-build', 'do not build it; default with a Hunspell source, which can take a long time')
         .option(
             '--hunspell-depth <n>',
             'how many affix rules to chain onto a Hunspell word; higher adds word forms, but can make the build very slow; default: 1',
             depth,
         )
+        .optionsGroup('Who maintains it:')
+        .option(
+            '--contributor <person>',
+            'someone who created or maintains the dictionary: "Name", "Name <email>", or "Name (url)"; repeat it for several',
+            (value: string, previous: string[] = []) => [...previous, value],
+        )
+        .optionsGroup('Running the command:')
+        .option('--build', 'build the dictionary after creating it; default when every source is a word list')
+        .option('--no-build', 'do not build it; default with a Hunspell source, which can take a long time')
+        .option('-y, --yes', 'use the defaults for anything not given, and never prompt')
+        .addHelpOption(new Option('-h, --help', 'show this help').helpGroup('Running the command:'))
+
         // For the tests; see the package's README.
         .addOption(new Option('--root <dir>', 'the repo to create the dictionary in').hideHelp())
         .addOption(new Option('--skip-install', 'do not run pnpm install in the new dictionary').hideHelp())
-        .option('-y, --yes', 'use the defaults for anything not given, and never prompt')
         .addHelpText(
             'after',
             [
