@@ -44,7 +44,7 @@ export function createPackage(answers: Settings, repo: Repo): string {
         year: String(new Date().getFullYear()),
     };
 
-    console.log('%s', 'Creating ' + relative(rootDir, packageDir));
+    console.log('Creating %s', relative(rootDir, packageDir));
     for (const file of templateFiles) {
         const template = readFileSync(join(templateDir, file), 'utf8');
         const content = fillTemplate(template, values, extname(file));
@@ -103,7 +103,7 @@ export function createPackage(answers: Settings, repo: Repo): string {
     function created(file: string): string {
         const path = join(packageDir, file);
         mkdirSync(dirname(path), { recursive: true });
-        console.log('%s', '   ' + createdStyle('create') + ' ' + relative(rootDir, path));
+        console.log('   %s %s', createdStyle('create'), relative(rootDir, path));
         return path;
     }
 

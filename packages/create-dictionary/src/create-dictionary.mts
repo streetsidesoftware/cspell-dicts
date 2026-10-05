@@ -41,7 +41,7 @@ try {
     await main();
 } catch (e) {
     // Ctrl+C at a prompt.
-    if (e instanceof Error && e.name === 'ExitPromptError') console.error('%s', 'Stopped. Nothing was written.');
+    if (e instanceof Error && e.name === 'ExitPromptError') console.error('Stopped. Nothing was written.');
     else fail(e instanceof Error ? e.message : String(e));
     process.exitCode = 1;
 }

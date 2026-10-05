@@ -19,9 +19,9 @@ export const explain = (text: string) => out('blueBright', text);
 export const created = (text: string) => out('green', text);
 
 export function warn(message: string): void {
-    console.warn('%s', err('yellow', 'warning:') + ' ' + message);
+    console.warn('%s %s', err('yellow', 'warning:'), message);
 }
 
 export function fail(message: string): void {
-    console.error('%s', err('red', 'error:') + ' ' + message);
+    console.error('%s %s', err('red', 'error:'), message);
 }
