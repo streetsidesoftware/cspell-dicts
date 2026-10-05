@@ -163,7 +163,9 @@ export async function getAnswers(options: CommandLine, repo: Repo, cwd: string):
         if (!noPrompts) {
             const byName = new Map(list.map((sample) => [basename(sample.path), sample]));
             const article = seattle(locale);
-            const hint = article ? ` For a natural language, try the Wikipedia article on Seattle, ${article}.` : '';
+            const hint = article
+                ? ` For a natural language, save the text of the Wikipedia article on Seattle, ${article}, as a .md file first.`
+                : '';
             while (
                 await confirm({
                     message: `A sample is a real file of the kind this dictionary is for.${hint} Add a sample?`,

@@ -64,7 +64,7 @@ export function sampleWarnings(samples: Sample[], locale: string): string[] {
         return [
             'no samples. A few real files of the kind this dictionary is for show that it works on real text. Add them to samples/.' +
                 (article
-                    ? ` For a natural language, save the Wikipedia article on Seattle, ${article}, as samples/seattle.md.`
+                    ? ` For a natural language, save the text of the Wikipedia article on Seattle, ${article}, as samples/seattle.md.`
                     : ''),
         ];
     }
