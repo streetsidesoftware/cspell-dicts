@@ -175,8 +175,14 @@ export async function getAnswers(options: CommandLine, repo: Repo, cwd: string):
         const list = parseSamples(options.sampleOptions, cwd);
         const byName = new Map(list.map((sample) => [sample.name, sample]));
         const language = languageOf(locale);
+        if (!noPrompts) {
+            console.log(
+                '\nSamples are real files of the kind this dictionary is for, such as a script or a page of text.' +
+                    '\nThe tests spell check them, to show the dictionary works on real text.',
+            );
+        }
         if (language && options.wikipediaSample && !byName.has('seattle.md')) {
-            const message = `Fetch the start of the Wikipedia article on Seattle, in ${language}, as a sample?`;
+            const message = `Fetch the start of the Wikipedia article on Seattle, in ${localeName(language) ?? language}, as a sample?`;
             if (noPrompts || (await confirm({ message, default: true }))) {
                 const seattle = await fetchSeattle(language);
                 if (seattle) {
@@ -190,8 +196,8 @@ export async function getAnswers(options: CommandLine, repo: Repo, cwd: string):
             }
         }
         if (!noPrompts) {
-            console.log('\nA sample is a real file of the kind this dictionary is for. Its tests spell check it.');
-            while (await confirm({ message: 'Add a sample?', default: !list.length })) {
+            const another = () => (list.length ? 'Add another sample file?' : 'Add a sample file?');
+            while (await confirm({ message: another(), default: !list.length })) {
                 const path = await input({ message: 'Its path:', validate: (v) => checkSample(byName, v, cwd) });
                 const sample = addSample(byName, path, cwd);
                 const origin = await input({ message: 'Where it came from (URL or a few words); empty if unknown:' });
