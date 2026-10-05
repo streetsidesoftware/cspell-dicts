@@ -139,12 +139,12 @@ export function addSource(sources: Map<string, Source>, source: Source & { name:
 }
 
 /** What's missing from a named source that should be recorded. */
-export function sourceWarnings(source: Source): string[] {
+export function sourceWarnings(source: Source, withOptions = true): string[] {
     if (!source.name) return [];
     const missing = [
-        source.license ? '' : 'license (--add-source-license)',
-        source.readme ? '' : 'README (--add-source-readme)',
-        source.url ? '' : 'URL (--add-source-url)',
+        source.license ? '' : withOptions ? 'license (--add-source-license)' : 'license',
+        source.readme ? '' : withOptions ? 'README (--add-source-readme)' : 'README',
+        source.url ? '' : withOptions ? 'URL (--add-source-url)' : 'URL',
     ].filter((m) => m);
     return missing.length ? [`the source ${source.name} has no ${missing.join(', ')}.`] : [];
 }

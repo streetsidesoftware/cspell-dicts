@@ -206,7 +206,6 @@ export async function getAnswers(options: CommandLine, repo: Repo, cwd: string):
     async function allSources(name: string): Promise<Source[]> {
         const all: SourceOptions = structuredClone(options.sourceOptions);
         const plain = await givenSources(name);
-        if (!noPrompts) await askDefined(all);
         // Every Hunspell file given on its own is a file of the one source `hunspell`.
         const named = new Map<string, Source>();
         for (const source of plain) {
@@ -215,9 +214,11 @@ export async function getAnswers(options: CommandLine, repo: Repo, cwd: string):
             if (other) other.files.push(...source.files);
             else named.set(source.name, { ...source, files: [...source.files] });
         }
+        if (!noPrompts && named.has('hunspell')) await askAboutHunspell(all);
+        if (!noPrompts) await askDefined(all);
         const sources = checkCopies([...plain.filter((s) => !s.name), ...parseSources(all, cwd, [...named.values()])]);
         for (const source of sources) {
-            for (const warning of sourceWarnings(source)) warn(warning);
+            for (const warning of sourceWarnings(source, noPrompts)) warn(warning);
         }
         return sources;
     }
@@ -330,6 +331,29 @@ export async function getAnswers(options: CommandLine, repo: Repo, cwd: string):
             if (more && more !== '*') locales.push(more);
         }
         return locales.length ? locales.join(',') : '*';
+    }
+
+    /** Asks for the license, README, and URL of the Hunspell files, unless options gave them. */
+    async function askAboutHunspell(all: SourceOptions): Promise<void> {
+        const given = (list: string[]) => list.some((value) => /^hunspell[=/]/.test(value));
+        const exists = (v: string) => !v.trim() || checkFile(cwd, v.trim());
+        // Each file goes into src/hunspell/ under its own name.
+        const asLocal = (path: string) => `hunspell/${basename(path)}=${path}`;
+        if (!given(all.addSourceLicense)) {
+            const license = await ask.input({
+                message: "The Hunspell files' license file; empty to skip:",
+                validate: exists,
+            });
+            if (license.trim()) all.addSourceLicense.push(asLocal(license.trim()));
+        }
+        if (!given(all.addSourceReadme)) {
+            const readme = await ask.input({ message: "The Hunspell files' README; empty to skip:", validate: exists });
+            if (readme.trim()) all.addSourceReadme.push(asLocal(readme.trim()));
+        }
+        if (!given(all.addSourceUrl)) {
+            const url = await ask.input({ message: 'Where the Hunspell files can be found (URL); empty to skip:' });
+            if (url.trim()) all.addSourceUrl.push(`hunspell=${url.trim()}`);
+        }
     }
 
     /** Asks for named sources, as the options would give them. */

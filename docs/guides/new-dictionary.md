@@ -331,7 +331,8 @@ A word list has one word per line, usually in a `.txt` file. Each one is copied 
 A Hunspell dictionary is a pair of files, `.dic` and `.aff`. Give either one, or both. The pair is copied into
 `src/hunspell/`, out of the way of the word lists people edit. Every Hunspell file given this way goes there, as one
 [third-party source](#third-party-sources) named `hunspell`. So its license goes in with
-`--add-source-license hunspell=<path>`, where the path is relative to where you run the command.
+`--add-source-license hunspell=<path>`, where the path is relative to where you run the command. When the command
+asks, it asks for the license, README, and web page after the Hunspell file.
 
 These aren't allowed:
 
