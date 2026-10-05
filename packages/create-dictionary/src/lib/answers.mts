@@ -223,7 +223,7 @@ export async function getAnswers(options: CommandLine, repo: Repo, cwd: string):
         if (!noPrompts) {
             showSection();
             console.log(
-                '\n%s',
+                '\n%s\n',
                 explain(
                     'Samples are real files of the kind this dictionary is for, such as a script or a page of text.' +
                         '\nThe tests spell check them, to show the dictionary works on real text.',
