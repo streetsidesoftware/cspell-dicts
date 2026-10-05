@@ -237,7 +237,7 @@ export async function getAnswers(options: CommandLine, repo: Repo, cwd: string):
                 } else {
                     console.log(
                         "Couldn't fetch the Wikipedia article on Seattle in %s, so there's no samples/seattle.md.",
-                        language,
+                        localeName(language) ?? language,
                     );
                 }
             }
