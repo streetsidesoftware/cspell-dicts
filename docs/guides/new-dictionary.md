@@ -75,14 +75,16 @@ It asks for each field below. Any field given as an option on the command line i
 pnpm create-dictionary <name> <path/to/source/words> --language-id <file type>
 ```
 
-To run it with no questions, add `--yes`. Fields you leave out get their defaults. It stops with an error if:
+To run it with no questions, add `--yes`. Fields you leave out get their defaults. These have none, so give them:
 
-- the name is missing, `dictionaries/<name>/` already exists, or its package name or dictionary ID is already in use
-- a source file is missing (see `--placeholder-word-lists` below), or two have the same name
-- a Hunspell `.dic` file has no `.aff` file next to it, or the other way around
-- the description is missing
-- the locale and the file type are both `*`
-- a value is invalid
+- **Name:** one no other dictionary uses, as its directory, package name, or dictionary ID.
+- **Description:** the words it covers.
+- **Source:** at least one word list, Hunspell file, or third-party source, or `--placeholder-word-lists` to start
+  empty.
+- **Locale or file type:** at least one of them, since both `*` would enable it everywhere.
+
+The files you give must exist, each with a different file name. A Hunspell `.dic` file needs its `.aff` file next to it.
+A missing word list is allowed only with `--placeholder-word-lists`.
 
 For example:
 
