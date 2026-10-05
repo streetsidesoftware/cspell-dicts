@@ -1,0 +1,46 @@
+import assert from 'node:assert/strict';
+import { describe, it } from 'node:test';
+
+import { findLocales, localeName, localeWarnings } from './locales.mts';
+
+describe('localeName', () => {
+    it('names known locales, with "_" or "-"', () => {
+        assert.equal(localeName('en'), 'English');
+        assert.equal(localeName('en_AU'), 'Australian English');
+        assert.equal(localeName('sr-Latn'), 'Serbian (Latin)');
+    });
+
+    it('knows nothing of made-up or malformed locales', () => {
+        assert.equal(localeName('xx'), undefined);
+        assert.equal(localeName('english'), undefined);
+        assert.equal(localeName('fr-90'), undefined);
+    });
+});
+
+describe('findLocales', () => {
+    it('finds a language and its regional variants by name', () => {
+        const english = findLocales('English').map(({ locale }) => locale);
+        assert.ok(english.includes('en'));
+        assert.ok(english.includes('en-AU'));
+        assert.deepEqual(
+            findLocales('australian english').map(({ locale }) => locale),
+            ['en-AU'],
+        );
+    });
+
+    it('uses current codes, such as he for Hebrew rather than iw', () => {
+        assert.deepEqual(
+            findLocales('hebrew').map(({ locale }) => locale),
+            ['he'],
+        );
+    });
+});
+
+describe('localeWarnings', () => {
+    it('warns about each unknown item, with what its name could mean', () => {
+        const warnings = localeWarnings('english, xx, en-US, *');
+        assert.equal(warnings.length, 2);
+        assert.match(warnings[0], /"english" isn't a known locale\. Did you mean en \(English\), /);
+        assert.match(warnings[1], /^locale: "xx" isn't a known locale\.$/);
+    });
+});

@@ -164,7 +164,10 @@ export function parseCommandLine(argv: string[]): CommandLine {
         )
         .option('--no-additional-words', 'do not create src/additional_words.txt, for words the sources lack')
         .option('--no-exclude-words', 'do not create src/exclude_words.txt, for words to leave out of the build')
-        .option('--locale <locales>', 'locales, comma separated, such as "en,en-AU", or "*" for any; default: "*"')
+        .option(
+            '--locale <locales>',
+            'locales, comma separated, such as "en,en-AU", or "*" for any; an unknown one, such as "english", gets a warning with suggestions; default: "*"',
+        )
         .option(
             '--language-id <ids>',
             'file types, comma separated, such as "ruby", or "*" for any; default: "*". Give this or --locale: both "*" is an error',

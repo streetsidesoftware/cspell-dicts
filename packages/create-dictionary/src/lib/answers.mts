@@ -1,12 +1,13 @@
 import { statSync } from 'node:fs';
 import { basename, resolve } from 'node:path';
 
-import { confirm, input } from '@inquirer/prompts';
+import { confirm, input, select } from '@inquirer/prompts';
 
 import { title, toFriendlyName } from './names.mts';
 import { type Answers, type CommandLine, optionForAnswer } from './options.mts';
 import { gitUserName, readTakenNames, type Repo } from './repo.mts';
 import { isHunspellFile } from './hunspell.mts';
+import { findLocales, localeName, localeWarnings } from './locales.mts';
 import {
     addSample,
     checkSample,
@@ -202,6 +203,30 @@ export async function getAnswers(options: CommandLine, repo: Repo, cwd: string):
         return list;
     }
 
+    /**
+     * The locale, with each item that isn't a known locale offered as the locales its name could mean, when it was typed
+     * at the prompt. Anything still unknown is a warning, not an error: cspell takes any locale.
+     */
+    async function checkedLocale(value: string): Promise<string> {
+        let locale = value;
+        if (!noPrompts && given.locale === undefined) {
+            const items: string[] = [];
+            for (const item of value.split(',').map((each) => each.trim())) {
+                const matches = item === '*' || localeName(item) ? [] : findLocales(item);
+                if (!matches.length) {
+                    items.push(item);
+                    continue;
+                }
+                const choices = matches.map(({ locale, name }) => ({ name: `${locale}: ${name}`, value: locale }));
+                choices.push({ name: `Keep "${item}"`, value: item });
+                items.push(await select({ message: `"${item}" isn't a locale. Which one did you mean?`, choices }));
+            }
+            locale = items.join(',');
+        }
+        for (const warning of localeWarnings(locale)) console.warn('warning: ' + warning);
+        return locale;
+    }
+
     /** Asks for named sources, as the options would give them. */
     async function askDefined(all: SourceOptions): Promise<void> {
         while (await confirm({ message: 'Add a third-party source?', default: false })) {
@@ -307,10 +332,12 @@ export async function getAnswers(options: CommandLine, repo: Repo, cwd: string):
     const people = await contributors();
     const searchWords = await keywords();
     const sources = await allSources(name);
-    const locale = await text(
-        'locale',
-        'Locale, the natural languages it is for, such as "en,en-US" or "fr"; "*" for any:',
-        '*',
+    const locale = await checkedLocale(
+        await text(
+            'locale',
+            'Locale, the natural languages it is for, such as "en-US" or "fr", or a name such as "English"; "*" for any:',
+            '*',
+        ),
     );
     const anyLocale = locale.trim() === '*';
     const languageId = await text(

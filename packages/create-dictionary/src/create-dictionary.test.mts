@@ -194,6 +194,23 @@ describe('a new package', () => {
         assert.match(packageFile('withsample', 'samples/README.md'), /`example\.rb`: made up\./);
     });
 
+    it('warns about a locale that is a name, and keeps it', () => {
+        const result = create(
+            '--yes',
+            'named',
+            '--description',
+            'Test words',
+            '--placeholder-word-lists',
+            '--locale',
+            'english',
+            '--no-build',
+            '--no-wikipedia-sample',
+        );
+        assert.equal(result.code, 0, result.stderr);
+        assert.match(result.stderr, /warning: locale: "english" isn't a known locale\. Did you mean en \(English\)/);
+        assert.match(packageFile('named', 'cspell-ext.json'), /"locale": "english"/);
+    });
+
     it('takes the Hunspell depth from --hunspell-depth', () => {
         const result = createYes('depth', 'pair.dic', '--hunspell-depth', '0');
         assert.equal(result.code, 0, result.stderr);
