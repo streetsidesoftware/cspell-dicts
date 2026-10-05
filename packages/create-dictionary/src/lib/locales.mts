@@ -22,7 +22,8 @@ export function localeName(locale: string): string | undefined {
 let known: LocaleName[] | undefined;
 
 /**
- * Every two-letter language, and each regional variant with a name of its own, such as `en-AU`, "Australian English".
+ * Every two-letter language, in its main region, such as `de-DE`, and each regional variant with a name of its own, such
+ * as `en-AU`, "Australian English".
  * Built from the names Node knows, so there's no list to keep.
  */
 export function knownLocales(own = ownLocale): LocaleName[] {
@@ -41,11 +42,15 @@ export function knownLocales(own = ownLocale): LocaleName[] {
         const name = languageNames.of(language);
         if (!name || Intl.getCanonicalLocales(language)[0] !== language) continue;
         add(language, name);
+        // Its main region, such as de-DE, "German (Germany)".
+        const main = new Intl.Locale(language).maximize().region;
         for (const region of regions) {
             const locale = `${language}-${region}`;
             const regional = languageNames.of(locale);
-            // "English (India)" is the language in a region; "Australian English" is a variant with its own name.
-            if (regional && !regional.includes('(') && Intl.getCanonicalLocales(locale)[0] === locale) {
+            // Besides the main region, only variants with a name of their own, such as "Australian English", not
+            // the language in every region, such as "English (India)".
+            const ownName = !!regional && !regional.includes('(');
+            if (regional && (region === main || ownName) && Intl.getCanonicalLocales(locale)[0] === locale) {
                 add(locale, regional);
             }
         }

@@ -28,6 +28,12 @@ describe('findLocales', () => {
         );
     });
 
+    it("includes each language's main region", () => {
+        const german = findLocales('german').map(({ locale }) => locale);
+        for (const locale of ['de', 'de-DE', 'de-AT', 'de-CH']) assert.ok(german.includes(locale), locale);
+        assert.ok(!findLocales('english').some(({ locale }) => locale === 'en-IN'));
+    });
+
     it('finds names in the language of this machine too', () => {
         const english = findLocales('Englisch', 'de-DE').find(({ locale }) => locale === 'en');
         assert.deepEqual(english, { locale: 'en', name: 'English', ownName: 'Englisch' });
@@ -36,7 +42,7 @@ describe('findLocales', () => {
     it('uses current codes, such as he for Hebrew rather than iw', () => {
         assert.deepEqual(
             findLocales('hebrew').map(({ locale }) => locale),
-            ['he'],
+            ['he', 'he-IL'],
         );
     });
 });
