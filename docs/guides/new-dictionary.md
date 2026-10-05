@@ -448,8 +448,8 @@ pnpm create-dictionary ruby ruby-words.txt --no-trie
 A trie is a compact format, much smaller for large word lists. Plain text suits smaller lists, such as a language's
 keywords.
 
-Without either option, it's a trie if a source is a Hunspell file, or if the word lists total more than 1 MB. Anything
-else is plain text.
+The command chooses for you and doesn't ask: a trie if a source is a Hunspell file, or if the word lists total more than
+1 MB, and plain text otherwise. Use these options only to override that choice.
 
 ##### Hunspell depth
 

@@ -49,7 +49,7 @@ import { explain, heading, sectionTitle, warn } from './style.mts';
 const largeWordLists = 1_000_000;
 
 /** The sections the questions are grouped in, as in the help. */
-const sectionCount = 7;
+const sectionCount = 6;
 
 /** Shown before the first question. */
 const intro = () =>
@@ -77,7 +77,9 @@ export type Settings = Omit<Required<Answers>, 'srcFiles'> & {
 export async function getAnswers(options: CommandLine, repo: Repo, cwd: string): Promise<Settings> {
     const { answers: given, yes, placeholderWordLists } = options;
     const keys = Object.keys(optionForAnswer) as (keyof Answers)[];
-    const missing = keys.filter((key) => given[key] === undefined && !(key === 'srcFiles' && placeholderWordLists));
+    const missing = keys.filter(
+        (key) => given[key] === undefined && key !== 'useTrie' && !(key === 'srcFiles' && placeholderWordLists),
+    );
     const noPrompts = yes || !missing.length;
     if (!noPrompts && !process.stdin.isTTY) {
         const options = missing.map((key) => optionForAnswer[key]).join(', ');
@@ -471,17 +473,12 @@ export async function getAnswers(options: CommandLine, repo: Repo, cwd: string):
     const sources = await allSources(name);
     section(4, 'Samples');
     const samples = await allSamples(locale);
-    section(5, 'Build Settings');
+    // The trie is chosen, never asked: few people know what one is. --trie and --no-trie override it.
     const isHunspell = sources.some((source) => source.files.some((f) => isHunspellFile(f.path)));
-    const useTrie = await yesNo(
-        'useTrie',
-        'Store it as a trie?',
-        isHunspell || wordListBytes(sources) > largeWordLists,
-        'A trie is much smaller for large word lists.',
-    );
-    section(6, 'Maintainers');
+    const useTrie = given.useTrie ?? (isHunspell || wordListBytes(sources) > largeWordLists);
+    section(5, 'Maintainers');
     const people = await contributors();
-    section(7, 'Finish');
+    section(6, 'Finish');
     const doBuild = await yesNo(
         'doBuild',
         'Build it now?',
