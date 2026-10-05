@@ -102,10 +102,11 @@ Turn the design into the dictionary with one command.
 Finish what the command can't know.
 
 - **Do:**
-  - If the command got no `--add-sample`, add a few correctly spelled files of the kind the dictionary is for to
-    `samples/`, and their origins to `samples/README.md`. For a natural language, the command fetches
+  - If the command got no `--add-sample`, add a few correctly spelled files of the kind the dictionary is for. In the
+    dictionary's folder, run `pnpm exec add-samples --add-sample <path> --add-sample-origin <file>=<origin>`, which
+    copies them into `samples/` and lists them in `samples/README.md`. For a natural language, the command fetches
     `samples/seattle.md` itself, when it can reach Wikipedia. Add other neutral articles with
-    `--add-wikipedia-sample <title or link>`.
+    `--add-wikipedia-sample <title or link>`, to either command.
   - Keep samples on a neutral subject, as `docs/dictionary-packages.md` says: nothing political or ideological, and no
     contested city.
   - Write the README's description: what the dictionary covers and why to use it, with absolute `https://` links.

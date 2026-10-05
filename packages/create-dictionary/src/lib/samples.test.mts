@@ -65,6 +65,20 @@ describe('sampleWarnings', () => {
     });
 });
 
+describe('parseSamples with existing samples', () => {
+    it('refuses a name already in samples/, and returns only the new samples', () => {
+        assert.throws(
+            () => parseSamples({ ...noSampleOptions, addSample: ['example.rb'] }, root, ['example.rb']),
+            /samples\/example\.rb already exists/,
+        );
+        const samples = parseSamples({ ...noSampleOptions, addSample: ['example.rb'] }, root, ['seattle.md']);
+        assert.deepEqual(
+            samples.map((sample) => sample.name),
+            ['example.rb'],
+        );
+    });
+});
+
 describe('languageOf', () => {
     it('uses the first locale, and nothing for any language', () => {
         assert.equal(languageOf('en_AU,en'), 'en');

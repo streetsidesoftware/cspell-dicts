@@ -33,19 +33,24 @@ export const wordSample = 'sample-words-in-dictionary.txt';
 /** The files create-dictionary writes in `samples/` itself. */
 const written = ['README.md', 'cspell.json', wordSample];
 
-/** The samples given as options, with every file checked. Paths are relative to `cwd`. */
-export function parseSamples(options: SampleOptions, cwd: string): Sample[] {
-    const samples = new Map<string, Sample>();
+/**
+ * The samples given as options, with every file checked. Paths are relative to `cwd`. `existing` are the names already in
+ * `samples/`.
+ */
+export function parseSamples(options: SampleOptions, cwd: string, existing: string[] = []): Sample[] {
+    const samples = new Map<string, Sample>(existing.map((name) => [name, { name }]));
     for (const path of options.addSample) addSample(samples, path, cwd);
     for (const value of options.addSampleOrigin) {
         const at = value.indexOf('=');
         if (at < 0) throw new Error(`--add-sample-origin: "${value}" needs <file>=<origin>.`);
         const file = value.slice(0, at);
         const sample = samples.get(file);
-        if (!sample) throw new Error(`--add-sample-origin: no sample is named ${file}. Add it with --add-sample.`);
+        if (!sample || existing.includes(file)) {
+            throw new Error(`--add-sample-origin: no sample is named ${file}. Add it with --add-sample.`);
+        }
         sample.origin = value.slice(at + 1).trim();
     }
-    return [...samples.values()];
+    return [...samples.values()].filter((sample) => !existing.includes(sample.name));
 }
 
 /** Adds a sample, keyed by its file name in `samples/`. */
@@ -63,7 +68,9 @@ export function checkSample(samples: Map<string, Sample>, path: string, cwd: str
     if (!existsSync(file) || !statSync(file).isFile()) return `${path} not found.`;
     const name = basename(path);
     if (written.includes(name)) return `samples/${name} is written by create-dictionary. Rename the sample.`;
-    if (samples.has(name)) return `two samples are named ${name}. Rename one.`;
+    const other = samples.get(name);
+    if (other && !other.from && other.text === undefined) return `samples/${name} already exists. Rename the sample.`;
+    if (other) return `two samples are named ${name}. Rename one.`;
     return true;
 }
 
@@ -197,10 +204,17 @@ export function samplesReadme(friendlyName: string, samples: Sample[]): string {
         '',
         `- \`${wordSample}\`: words from the sources, checked with the dictionary's locale and file type.`,
     ];
-    for (const sample of samples) {
-        lines.push(`- \`${sample.name}\`: ${sample.origin || 'no known origin'}.`);
-    }
-    return lines.join('\n') + '\n';
+    return [...lines, ...samples.map(readmeLine)].join('\n') + '\n';
+}
+
+/** A sample's line in `samples/README.md`. */
+export function readmeLine(sample: Sample): string {
+    return `- \`${sample.name}\`: ${sample.origin || 'no known origin'}.`;
+}
+
+/** A sample's content: the file it's copied from, or the text it was fetched as. */
+export function sampleContent(sample: Sample): Buffer | string {
+    return sample.from ? readFileSync(sample.from) : (sample.text ?? '');
 }
 
 /**

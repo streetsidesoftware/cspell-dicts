@@ -16,17 +16,8 @@ import {
     localeName,
     localeWarnings,
 } from './locales.mts';
-import {
-    addSample,
-    checkSample,
-    articleOf,
-    fetchArticle,
-    languageOf,
-    parseSamples,
-    type Sample,
-    samplesExplanation,
-    sampleWarnings,
-} from './samples.mts';
+import { gatherSamples } from './gather-samples.mts';
+import { type Sample, samplesExplanation, sampleWarnings } from './samples.mts';
 import {
     checkFile,
     checkFolder,
@@ -224,65 +215,20 @@ export async function getAnswers(options: CommandLine, repo: Repo, cwd: string):
         return sources;
     }
 
-    /** The samples from the options, the Wikipedia article on Seattle for a natural language, then from the prompts. */
+    /** The samples, with what they should be when prompting, and what's missing. */
     async function allSamples(locale: string, languageId: string): Promise<Sample[]> {
-        const list = parseSamples(options.sampleOptions, cwd);
-        const byName = new Map(list.map((sample) => [sample.name, sample]));
-        const language = languageOf(locale);
         if (!noPrompts) {
             showSection();
             explain(...samplesExplanation(locale, languageId));
         }
-        if (language) {
-            /** Fetches an article into the samples. Without a network, or such an article, it says so and goes on. */
-            const addArticle = async (titleOrUrl: string): Promise<boolean> => {
-                const article = articleOf(titleOrUrl, language);
-                const sample = await fetchArticle(article);
-                if (!sample) {
-                    info(
-                        "Couldn't fetch the Wikipedia article %s in %s.",
-                        literal(article.title),
-                        localeName(article.language) ?? article.language,
-                    );
-                    return false;
-                }
-                if (byName.has(sample.name)) {
-                    info('There is already a sample named %s.', literal(sample.name));
-                    return false;
-                }
-                byName.set(sample.name, sample);
-                list.push(sample);
-                info('Added %s.', literal(`samples/${sample.name}`));
-                return true;
-            };
-            const languageName = localeName(language) ?? language;
-            if (options.wikipediaSample && !byName.has('seattle.md')) {
-                const message = `Fetch the start of the Wikipedia article on Seattle, in ${languageName}, as a sample?`;
-                if (noPrompts || (await ask.confirm({ message, default: true }))) await addArticle('Seattle');
-            }
-            for (const titleOrUrl of options.sampleOptions.addWikipediaSample) await addArticle(titleOrUrl);
-            if (!noPrompts) {
-                while (await ask.confirm({ message: 'Add another Wikipedia article as a sample?', default: false })) {
-                    const titleOrUrl = await ask.input({
-                        message: `Its title, in ${languageName} or English, or its link:`,
-                        validate: (v) => !!v.trim() || 'Give a title or a link.',
-                    });
-                    await addArticle(titleOrUrl);
-                }
-            }
-        }
-        if (!noPrompts) {
-            const another = () => (list.length ? 'Add another sample file?' : 'Add a sample file?');
-            while (await ask.confirm({ message: another(), default: !list.length })) {
-                const path = await ask.input({ message: 'Its path:', validate: (v) => checkSample(byName, v, cwd) });
-                const sample = addSample(byName, path, cwd);
-                const origin = await ask.input({
-                    message: 'Where it came from (URL or a few words); empty if unknown:',
-                });
-                if (origin.trim()) sample.origin = origin.trim();
-                list.push(sample);
-            }
-        }
+        const list = await gatherSamples(options.sampleOptions, {
+            locale,
+            cwd,
+            prompt: !noPrompts,
+            seattle: options.wikipediaSample,
+            ask,
+            info,
+        });
         for (const warning of sampleWarnings(list, locale)) warn(warning);
         return list;
     }

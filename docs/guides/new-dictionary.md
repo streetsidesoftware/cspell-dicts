@@ -134,9 +134,17 @@ maintainer makes it public once the dictionary has been verified.
 
 Two things only you can add:
 
-- **Samples:** if you gave none, add a few correctly spelled files of the kind this dictionary is for to `samples/`, and
-  add a line for each to `samples/README.md`, such as ``- `hello.rb`: https://example.com/ruby/hello.``. They show it
-  works on real text.
+- **Samples:** a few correctly spelled files of the kind this dictionary is for. They show it works on real text. To add
+  more, run this in the dictionary's folder:
+
+  ```sh
+  pnpm exec add-samples
+  ```
+
+  It asks for files and Wikipedia articles, copies them into `samples/`, and lists each one's origin in
+  `samples/README.md`. It takes the same `--add-sample`, `--add-sample-origin`, and `--add-wikipedia-sample` options as
+  `pnpm create-dictionary`.
+
 - **The README's description:** a few sentences on what this dictionary covers and why to use it.
 
 ## 6. Build and test
