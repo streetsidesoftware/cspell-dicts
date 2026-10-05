@@ -8,6 +8,7 @@ import { isHunspellFile } from './hunspell.mts';
 import { sampleWords, samplesReadme, wordSample } from './samples.mts';
 import { fillTemplate, templateDir, templateFiles } from './template.mts';
 import { buildFiles, copies, publishedFiles, sourcesYaml, srcDir } from './sources.mts';
+import { created as createdStyle } from './style.mts';
 
 const additionalWordsFile = 'src/additional_words.txt';
 const excludeWordsFile = 'src/exclude_words.txt';
@@ -102,7 +103,7 @@ export function createPackage(answers: Settings, repo: Repo): string {
     function created(file: string): string {
         const path = join(packageDir, file);
         mkdirSync(dirname(path), { recursive: true });
-        console.log('   create ' + relative(rootDir, path));
+        console.log('   ' + createdStyle('create') + ' ' + relative(rootDir, path));
         return path;
     }
 

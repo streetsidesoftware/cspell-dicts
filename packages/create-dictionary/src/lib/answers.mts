@@ -43,6 +43,7 @@ import {
     validateDescription,
     validateLanguageId,
 } from './validate.mts';
+import { heading, note, sectionTitle, warn } from './style.mts';
 
 /** Word lists larger than this, in bytes, are stored as a trie by default, as the guide says. */
 const largeWordLists = 1_000_000;
@@ -51,14 +52,15 @@ const largeWordLists = 1_000_000;
 const sectionCount = 7;
 
 /** Shown before the first question. */
-const intro = [
-    'Create a dictionary for cspell',
-    '',
-    `This asks about the new dictionary in ${sectionCount} sections, then creates it in dictionaries/<name>/.`,
-    'Press Enter to accept the default shown in (parentheses). Nothing is written until the last answer; Ctrl+C stops.',
-    'Every answer can also be given as an option: pnpm create-dictionary --help',
-    'Guide: docs/guides/new-dictionary.md',
-].join('\n');
+const intro = () =>
+    [
+        heading('Create a dictionary for cspell'),
+        '',
+        `This asks about the new dictionary in ${sectionCount} sections, then creates it in dictionaries/<name>/.`,
+        'Press Enter to accept the default shown in (parentheses). Nothing is written until the last answer; Ctrl+C stops.',
+        'Every answer can also be given as an option: pnpm create-dictionary --help',
+        'Guide: docs/guides/new-dictionary.md',
+    ].join('\n');
 
 export type Settings = Omit<Required<Answers>, 'srcFiles'> & {
     sources: Source[];
@@ -85,11 +87,11 @@ export async function getAnswers(options: CommandLine, repo: Repo, cwd: string):
 
     /** Starts a section; its title is shown before its first question, so a section answered by options shows none. */
     function section(n: number, title: string): void {
-        pendingSection = `\nSection (${n}/${sectionCount}): ${title}`;
+        pendingSection = `Section (${n}/${sectionCount}): ${title}`;
     }
 
     function showSection(): void {
-        if (pendingSection) console.log(pendingSection);
+        if (pendingSection) console.log('\n' + sectionTitle(pendingSection));
         pendingSection = undefined;
     }
 
@@ -113,7 +115,7 @@ export async function getAnswers(options: CommandLine, repo: Repo, cwd: string):
         const value = given[key] ?? (noPrompts ? def : undefined);
         if (value !== undefined) return value;
         showSection();
-        if (intro) console.log('\n' + intro);
+        if (intro) console.log('\n' + note(intro));
         return ask.confirm({ message, default: def });
     }
 
@@ -205,7 +207,7 @@ export async function getAnswers(options: CommandLine, repo: Repo, cwd: string):
         }
         const sources = checkCopies([...plain.filter((s) => !s.name), ...parseSources(all, cwd, [...named.values()])]);
         for (const source of sources) {
-            for (const warning of sourceWarnings(source)) console.warn('warning: ' + warning);
+            for (const warning of sourceWarnings(source)) warn(warning);
         }
         return sources;
     }
@@ -218,8 +220,11 @@ export async function getAnswers(options: CommandLine, repo: Repo, cwd: string):
         if (!noPrompts) {
             showSection();
             console.log(
-                '\nSamples are real files of the kind this dictionary is for, such as a script or a page of text.' +
-                    '\nThe tests spell check them, to show the dictionary works on real text.',
+                '\n' +
+                    note(
+                        'Samples are real files of the kind this dictionary is for, such as a script or a page of text.' +
+                            '\nThe tests spell check them, to show the dictionary works on real text.',
+                    ),
             );
         }
         if (language && options.wikipediaSample && !byName.has('seattle.md')) {
@@ -231,7 +236,9 @@ export async function getAnswers(options: CommandLine, repo: Repo, cwd: string):
                     list.push(seattle);
                 } else {
                     console.log(
-                        `Couldn't fetch the Wikipedia article on Seattle in ${language}, so there's no samples/seattle.md.`,
+                        note(
+                            `Couldn't fetch the Wikipedia article on Seattle in ${language}, so there's no samples/seattle.md.`,
+                        ),
                     );
                 }
             }
@@ -248,7 +255,7 @@ export async function getAnswers(options: CommandLine, repo: Repo, cwd: string):
                 list.push(sample);
             }
         }
-        for (const warning of sampleWarnings(list, locale)) console.warn('warning: ' + warning);
+        for (const warning of sampleWarnings(list, locale)) warn(warning);
         return list;
     }
 
@@ -276,7 +283,7 @@ export async function getAnswers(options: CommandLine, repo: Repo, cwd: string):
             }
             locale = items.join(',');
         }
-        for (const warning of localeWarnings(locale)) console.warn('warning: ' + warning);
+        for (const warning of localeWarnings(locale)) warn(warning);
         return locale;
     }
 
@@ -401,7 +408,7 @@ export async function getAnswers(options: CommandLine, repo: Repo, cwd: string):
         return result;
     }
 
-    if (!noPrompts) console.log(intro);
+    if (!noPrompts) console.log(intro());
     section(1, 'Dictionary Info');
     const taken = await readTakenNames(repo);
     const name = await text(
@@ -411,7 +418,7 @@ export async function getAnswers(options: CommandLine, repo: Repo, cwd: string):
         nameValidator(repo, taken),
     );
     const id = toPackageName(name);
-    console.log(`Package @cspell/dict-${id}, dictionary ID ${id}.`);
+    console.log(note(`Package @cspell/dict-${id}, dictionary ID ${id}.`));
     const friendlyName = await text(
         'friendlyName',
         'Friendly name, such as "US English" or "Medical Terms":',
@@ -433,7 +440,7 @@ export async function getAnswers(options: CommandLine, repo: Repo, cwd: string):
     // A name such as en_AU or german stands for its locale.
     const nameLocale = localeFromName(name);
     if (nameLocale && noPrompts && given.locale === undefined) {
-        console.log(`The locale is ${nameLocale}, from the name. Give --locale to change it.`);
+        console.log(note(`The locale is ${nameLocale}, from the name. Give --locale to change it.`));
     }
     // A natural language sets the locale, and anything else the file type, so only one of them is asked.
     const isSet = (value: string | undefined) => value !== undefined && value.trim() !== '*';

@@ -11,6 +11,7 @@ import { createPackage } from './lib/create-package.mts';
 import { parseCommandLine } from './lib/options.mts';
 import { setUpPackage } from './lib/pnpm.mts';
 import { findRepoRoot, openRepo } from './lib/repo.mts';
+import { fail, heading, note } from './lib/style.mts';
 
 async function main(): Promise<void> {
     const options = parseCommandLine(process.argv.slice(2));
@@ -27,7 +28,7 @@ async function main(): Promise<void> {
 }
 
 function notBuilt(dir: string, settings: Settings): string {
-    const lines = [`Not built yet. Its tests fail until you run pnpm run build in ${dir}.`];
+    const lines = [`${heading('Not built yet.')} Its tests fail until you run pnpm run build in ${dir}.`];
     if (settings.sources.some((s) => s.files.some((f) => isHunspellFile(f.path)))) {
         lines.push(
             `A Hunspell dictionary can take a long time to build. If it's too slow, lower maxDepth in ${dir}/cspell-tools.config.yaml.`,
@@ -40,7 +41,7 @@ try {
     await main();
 } catch (e) {
     // Ctrl+C at a prompt.
-    if (e instanceof Error && e.name === 'ExitPromptError') console.error('Stopped. Nothing was written.');
-    else console.error('error: ' + (e instanceof Error ? e.message : String(e)));
+    if (e instanceof Error && e.name === 'ExitPromptError') console.error(note('Stopped. Nothing was written.'));
+    else fail(e instanceof Error ? e.message : String(e));
     process.exitCode = 1;
 }
