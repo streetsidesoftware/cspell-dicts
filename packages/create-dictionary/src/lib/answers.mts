@@ -398,10 +398,16 @@ export async function getAnswers(options: CommandLine, repo: Repo, cwd: string):
     if (!noPrompts) {
         header(
             'Create a dictionary for cspell',
-            `The questions come in ${sectionCount} sections. Then the dictionary is created, in a new folder in dictionaries/.`,
-            'Press Enter to accept the default shown in (parentheses). Nothing is written until the last answer; Ctrl+C stops.',
+            'The dictionary is created in a new folder in dictionaries/, once we have the information it needs.',
+            `To gather it, we'll ask you short questions in ${sectionCount} sections.`,
+            '',
+            'Most questions have a default answer in (parentheses). Press Enter to accept it.',
+            '',
             'Every answer can also be given as an option: pnpm create-dictionary --help',
+            '',
             'Guide: docs/guides/new-dictionary.md',
+            '',
+            'Press Ctrl+C at any time to stop without making changes.',
         );
     }
     section(1, 'Dictionary Info');
