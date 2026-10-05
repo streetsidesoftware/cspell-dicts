@@ -181,7 +181,7 @@ describe('a new package', () => {
         assert.match(packageFile('hunspell', 'cspell-tools.config.yaml'), /format: 'trie3'/);
         assert.match(
             result.stdout,
-            /Next steps:\n {2}cd dictionaries\/hunspell\n {2}pnpm run build\n[\s\S]*lower maxDepth/,
+            /Next steps:\n {2}cd dictionaries[\\/]hunspell\n {2}pnpm run build\n[\s\S]*lower maxDepth/,
         );
     });
 
