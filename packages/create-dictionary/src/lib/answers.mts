@@ -101,7 +101,7 @@ export async function getAnswers(options: CommandLine, repo: Repo, cwd: string):
         }
         if (noPrompts) return [];
         const typed = await input({
-            message: 'Other names people search for, such as golang for Go; comma separated, empty to skip',
+            message: 'Other keywords people search npm for, such as golang for Go; comma separated, empty to skip',
         });
         return typed
             .split(',')

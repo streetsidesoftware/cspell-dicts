@@ -108,7 +108,7 @@ export function parseCommandLine(argv: string[]): CommandLine {
         )
         .option(
             '--keyword <word>',
-            'another name people search npm for, such as golang for Go; repeat it for several',
+            'another keyword people search npm for, such as golang for Go; repeat it for several',
             (value: string, previous: string[] = []) => [...previous, value],
         )
         .option(

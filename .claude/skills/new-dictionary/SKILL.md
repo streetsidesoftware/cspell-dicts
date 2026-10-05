@@ -54,7 +54,7 @@ Decide everything `pnpm create-dictionary` needs, one decision at a time.
     `*`.
   - **Description:** the words it covers, such as "Ruby keywords and standard library names".
   - **Contributors:** who creates and maintains it, as "Name (url)". Optional, and published to npm.
-  - **Keywords:** other names people search npm for, such as `golang` for Go.
+  - **Keywords:** other keywords people search npm for, such as `golang` for Go.
   - **Sources:** if a file the user named doesn't exist, ask for the right path, or whether to start empty.
 - **Check** each source's license and what it requires: attribution, keeping the license file, or share-alike.
 - **Stop and ask** if a license is missing, unclear, or would change the dictionary's license. Give the exact source

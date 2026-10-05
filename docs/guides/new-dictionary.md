@@ -101,7 +101,7 @@ Each field is described in [Create-dictionary options](#create-dictionary-option
 | [description](#description)                       | `--description`                               | Required. The words it covers.                              |
 | [npm description](#npm-description)               | `--package-description`                       | The description npm shows.                                  |
 | [contributors](#contributors)                     | `--contributor`                               | The people who create and maintain this dictionary.         |
-| [keywords](#keywords)                             | `--keyword`                                   | Other names people search npm for, such as `golang`.        |
+| [keywords](#keywords)                             | `--keyword`                                   | Other keywords people search npm for, such as `golang`.     |
 | [source file](#source-file)                       | `<path/to/source/words>` or `--source`        | The word lists and Hunspell `.dic` files to build from.     |
 | [third-party sources](#third-party-sources)       | `--define-source`, `--add-source-*`           | Sources someone else maintains, each in `src/<name>/`.      |
 | [placeholder word lists](#placeholder-word-lists) | `--placeholder-word-lists`                    | Start a missing word list empty.                            |
@@ -272,7 +272,7 @@ Don't list the authors of a [third-party source](#third-party-sources). The sour
 
 #### Keywords
 
-Other names people search npm for. Repeat the option for each one.
+Other keywords people search npm for. Repeat the option for each one.
 
 ```sh
 pnpm create-dictionary go --keyword golang
