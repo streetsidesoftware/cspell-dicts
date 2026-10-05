@@ -39,6 +39,8 @@ function notBuilt(dir: string, settings: Settings): string {
 try {
     await main();
 } catch (e) {
-    console.error('error: ' + (e instanceof Error ? e.message : String(e)));
+    // Ctrl+C at a prompt.
+    if (e instanceof Error && e.name === 'ExitPromptError') console.error('Stopped. Nothing was written.');
+    else console.error('error: ' + (e instanceof Error ? e.message : String(e)));
     process.exitCode = 1;
 }

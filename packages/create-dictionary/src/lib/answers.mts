@@ -50,6 +50,16 @@ const largeWordLists = 1_000_000;
 /** The sections the questions are grouped in, as in the help. */
 const sectionCount = 7;
 
+/** Shown before the first question. */
+const intro = [
+    'Create a dictionary for cspell',
+    '',
+    `This asks about the new dictionary in ${sectionCount} sections, then creates it in dictionaries/<name>/.`,
+    'Press Enter to accept the default shown in (parentheses). Nothing is written until the last answer; Ctrl+C stops.',
+    'Every answer can also be given as an option: pnpm create-dictionary --help',
+    'Guide: docs/guides/new-dictionary.md',
+].join('\n');
+
 export type Settings = Omit<Required<Answers>, 'srcFiles'> & {
     sources: Source[];
     samples: Sample[];
@@ -386,6 +396,7 @@ export async function getAnswers(options: CommandLine, repo: Repo, cwd: string):
         return result;
     }
 
+    if (!noPrompts) console.log(intro);
     section(1, 'Dictionary Info');
     const taken = await readTakenNames(repo);
     const name = await text(
