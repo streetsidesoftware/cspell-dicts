@@ -1,6 +1,9 @@
 import { existsSync, readFileSync, statSync } from 'node:fs';
 import { basename, extname, resolve } from 'node:path';
 
+import { IterableHunspellReader } from 'hunspell-reader';
+
+import { hunspellPair } from './hunspell.mts';
 import { localeName } from './locales.mts';
 
 /** A real sample: a file of the kind the dictionary is for, in `samples/`. */
@@ -112,7 +115,8 @@ export function articleOf(titleOrUrl: string, language: string): Article {
 /**
  * The start of a Wikipedia article, its lead section as plain text, as a sample named after the title, such as
  * `berlin.md`. The title is looked up in the article's language, then as an English title whose article in that
- * language is used, so `Seattle` finds `סיאטל` in Hebrew. Undefined when it can't be fetched, such as without a
+ * language is used, so `Seattle` finds `סיאטל` in Hebrew, and `Argentina` finds `Argentinien` in German, where
+ * `Argentina` is a disambiguation page. Undefined when it can't be fetched, such as without a
  * network connection, or when there's no such article.
  */
 export async function fetchArticle(article: Article, getJson: GetJson = fetchJson): Promise<Sample | undefined> {
@@ -120,10 +124,12 @@ export async function fetchArticle(article: Article, getJson: GetJson = fetchJso
     const api = (lang: string, query: string) =>
         `https://${lang}.wikipedia.org/w/api.php?action=query&format=json&formatversion=2&${query}`;
     const extractOf = async (title: string) => {
-        const query = `prop=extracts&explaintext=1&exintro=1&redirects=1&titles=${encodeURIComponent(title)}`;
+        const query = `prop=extracts|pageprops&ppprop=disambiguation&explaintext=1&exintro=1&redirects=1&titles=${encodeURIComponent(title)}`;
         const page = ((await getJson(api(language, query))) as Pages).query?.pages?.[0];
         const extract = page?.extract?.trim();
-        return extract ? { title: page?.title ?? title, extract } : undefined;
+        // A disambiguation page, such as Argentina on German Wikipedia, only lists other articles.
+        if (!extract || page?.pageprops?.disambiguation !== undefined) return undefined;
+        return { title: page?.title ?? title, extract };
     };
     try {
         let found = await extractOf(article.title);
@@ -161,7 +167,14 @@ function sampleName(title: string): string {
 }
 
 interface Pages {
-    query?: { pages?: { title?: string; extract?: string; langlinks?: { title?: string }[] }[] };
+    query?: {
+        pages?: {
+            title?: string;
+            extract?: string;
+            pageprops?: { disambiguation?: string };
+            langlinks?: { title?: string }[];
+        }[];
+    };
 }
 
 async function fetchJson(url: string): Promise<unknown> {
@@ -191,24 +204,54 @@ export function samplesReadme(friendlyName: string, samples: Sample[]): string {
 }
 
 /**
- * The first `count` plain words of the built sources, skipping comments, blank lines, and entries with markers. A
- * Hunspell `.dic` file gives its stems.
+ * Up to `count` plain words of the built sources, spread across them, skipping comments and entries with markers. A
+ * Hunspell `.dic` file gives its stems, without those its `.aff` file forbids or allows only in compounds.
  */
-export function sampleWords(files: string[], count = 50): string[] {
-    const words: string[] = [];
+export async function sampleWords(files: string[], count = 50): Promise<string[]> {
+    const words = new Set<string>();
     for (const file of files) {
-        const hunspell = extname(file) === '.dic';
-        const lines = readFileSync(file, 'utf8')
-            .split(/\r?\n/)
-            .slice(hunspell ? 1 : 0);
-        for (const line of lines) {
-            const word = (hunspell ? line.split(/[/\s]/)[0] : line).trim();
-            if (!/^[\p{L}\p{M}][\p{L}\p{M}\p{N}'’-]*$/u.test(word)) continue;
-            if (!words.includes(word)) words.push(word);
-            if (words.length >= count) return words;
-        }
+        const fileWords = extname(file) === '.dic' ? await hunspellWords(file) : listWords(file);
+        for (const word of fileWords) words.add(word);
     }
-    return words;
+    const all = [...words];
+    if (all.length <= count) return all;
+    return Array.from({ length: count }, (_, i) => all[Math.floor((i * all.length) / count)]);
+}
+
+function isPlainWord(word: string): boolean {
+    return /^[\p{L}\p{M}][\p{L}\p{M}\p{N}'’-]*$/u.test(word);
+}
+
+function listWords(file: string): string[] {
+    return readFileSync(file, 'utf8')
+        .split(/\r?\n/)
+        .map((line) => line.trim())
+        .filter(isPlainWord);
+}
+
+async function hunspellWords(dicFile: string): Promise<string[]> {
+    const affFile = hunspellPair(dicFile)[1];
+    const { aff } = await IterableHunspellReader.createFromFiles(affFile, dicFile);
+    // The reader takes comment lines, which start with a tab or #, as words.
+    const dic = decode(readFileSync(dicFile), aff.affInfo.SET)
+        .split(/\r?\n/)
+        .slice(1)
+        .filter((line) => line.trim() && !/^[\s#]/.test(line))
+        .map((line) => line.trim());
+    return new IterableHunspellReader({ aff, dic })
+        .seqAffWords(undefined, 0)
+        .filter(({ flags }) => !flags.isForbiddenWord && !flags.isOnlyAllowedInCompound)
+        .map(({ word }) => word)
+        .filter(isPlainWord)
+        .toArray();
+}
+
+function decode(buffer: Buffer, encoding = 'UTF-8'): string {
+    try {
+        return new TextDecoder(encoding).decode(buffer);
+    } catch {
+        return new TextDecoder().decode(buffer);
+    }
 }
 
 /** What samples to add, for this kind of dictionary. */
@@ -232,14 +275,17 @@ export function samplesExplanation(locale: string, languageId: string): string[]
 
 /**
  * `samples/cspell.json`: the samples are checked the way users' files are, so they show when the dictionary is enabled.
- * For a natural language, they're in its language. The word sample is checked with the dictionary's locale and file type.
+ * For a natural language, they're in its language, and in English, for the names and loanwords articles quote. The word
+ * sample is checked with the dictionary's locale and file type. `words` is for names the samples use.
  */
 export function samplesConfig(locale: string, languageId: string): object {
+    const language = languageOf(locale);
     return {
         import: ['../cspell-ext.json'],
         // These describe the samples, in English; they aren't samples.
         ignorePaths: ['README.md', 'cspell.json'],
-        ...(locale.trim() !== '*' && { language: locale }),
+        ...(language && { language: language === 'en' ? locale : `${locale},en` }),
+        words: [],
         overrides: [{ filename: wordSample, language: locale, languageId }],
     };
 }

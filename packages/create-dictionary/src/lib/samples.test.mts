@@ -25,7 +25,12 @@ before(() => {
     writeFileSync(join(root, 'example.rb'), 'puts zorbal\n');
     writeFileSync(join(root, 'README.md'), '# Words\n');
     writeFileSync(join(root, 'words.txt'), '# Terms\n\nzorbal\n!forbidden\n*compound*\nC#\nquix-ly\nzorbal\n');
-    writeFileSync(join(root, 'en_XX.dic'), '3\nwalk/GD\ntalk\tpo:verb\nthe\n');
+    writeFileSync(
+        join(root, 'en_XX.dic'),
+        '5\n# A comment\n\tAnother comment\nwalk/G\ntalk\tpo:verb\nwlak/!\npart/c\nthe\n',
+    );
+    writeFileSync(join(root, 'en_XX.aff'), 'SET UTF-8\nFORBIDDENWORD !\nONLYINCOMPOUND c\nSFX G Y 1\nSFX G 0 ing .\n');
+    writeFileSync(join(root, 'many.txt'), Array.from({ length: 100 }, (_, i) => `word${i}`).join('\n'));
 });
 
 after(() => rmSync(root, { recursive: true, force: true }));
@@ -80,7 +85,17 @@ describe('fetchArticle', () => {
     // A Wikipedia where German has Berlin, and Hebrew has Seattle only under its Hebrew title.
     const wikipedia = async (url: string) => {
         const title = decodeURIComponent(/titles=([^&]+)/.exec(url)?.[1] ?? '');
-        if (url.includes('prop=langlinks')) return { query: { pages: [{ langlinks: [{ title: 'סיאטל' }] }] } };
+        if (url.includes('prop=langlinks')) {
+            const langlink = title === 'Argentina' ? 'Argentinien' : 'סיאטל';
+            return { query: { pages: [{ langlinks: [{ title: langlink }] }] } };
+        }
+        if (url.startsWith('https://de.') && title === 'Argentina') {
+            const pageprops = { disambiguation: '' };
+            return { query: { pages: [{ title: 'Argentina', extract: 'Argentina steht für:', pageprops }] } };
+        }
+        if (url.startsWith('https://de.') && title === 'Argentinien') {
+            return { query: { pages: [{ title: 'Argentinien', extract: 'Argentinien ist ein Staat.' }] } };
+        }
         if (url.startsWith('https://de.') && title === 'Berlin') {
             return { query: { pages: [{ title: 'Berlin', extract: 'Berlin ist die Hauptstadt.' }] } };
         }
@@ -107,6 +122,12 @@ describe('fetchArticle', () => {
         assert.equal(sample?.text, `# [סיאטל](${url})\n\nסיאטל היא עיר.\n\nהיא גדולה.\n`);
     });
 
+    it('skips a disambiguation page, and tries the English title', async () => {
+        const sample = await fetchArticle({ language: 'de', title: 'Argentina' }, wikipedia);
+        assert.equal(sample?.name, 'argentina.md');
+        assert.match(sample?.text ?? '', /^# \[Argentinien\]/);
+    });
+
     it('gives nothing, without failing, when there is no network or no such article', async () => {
         const offline = async () => {
             throw new Error('offline');
@@ -125,16 +146,16 @@ describe('samplesReadme', () => {
 });
 
 describe('sampleWords', () => {
-    it('takes plain words, each once, skipping comments and entries with markers', () => {
-        assert.deepEqual(sampleWords([join(root, 'words.txt')]), ['zorbal', 'quix-ly']);
+    it('takes plain words, each once, skipping comments and entries with markers', async () => {
+        assert.deepEqual(await sampleWords([join(root, 'words.txt')]), ['zorbal', 'quix-ly']);
     });
 
-    it('takes the stems of a Hunspell .dic file', () => {
-        assert.deepEqual(sampleWords([join(root, 'en_XX.dic')]), ['walk', 'talk', 'the']);
+    it('takes the stems of a Hunspell .dic file, without comments, forbidden words, or compound parts', async () => {
+        assert.deepEqual(await sampleWords([join(root, 'en_XX.dic')]), ['walk', 'talk', 'the']);
     });
 
-    it('stops at the count', () => {
-        assert.deepEqual(sampleWords([join(root, 'en_XX.dic')], 2), ['walk', 'talk']);
+    it('spreads the words across the sources', async () => {
+        assert.deepEqual(await sampleWords([join(root, 'many.txt')], 4), ['word0', 'word25', 'word50', 'word75']);
     });
 });
 
@@ -156,9 +177,14 @@ describe('samplesConfig', () => {
         assert.deepEqual(samplesConfig('de-CH', '*'), {
             import: ['../cspell-ext.json'],
             ignorePaths: ['README.md', 'cspell.json'],
-            language: 'de-CH',
+            language: 'de-CH,en',
+            words: [],
             overrides: [{ filename: 'sample-words-in-dictionary.txt', language: 'de-CH', languageId: '*' }],
         });
+    });
+
+    it('adds no other English to an English dictionary', () => {
+        assert.deepEqual((samplesConfig('en-AU', '*') as { language: string }).language, 'en-AU');
     });
 
     it('leaves the language to cspell for other dictionaries', () => {

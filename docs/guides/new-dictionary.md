@@ -128,8 +128,8 @@ maintainer makes it public once the dictionary has been verified.
 - **`cspell-ext.json`:** what cspell loads: the dictionary's name, its description, and the languages or file types it's
   enabled for.
 - **`package.json`:** what npm publishes. It stays private until a maintainer publishes it.
-- **`samples/`:** what `pnpm test` spell checks: the samples you gave, and `sample-words-in-dictionary.txt`, the first
-  few dozen words of the sources. `README.md` there says where each sample came from.
+- **`samples/`:** what `pnpm test` spell checks: the samples you gave, and `sample-words-in-dictionary.txt`, a few
+  dozen words from across the sources. `README.md` there says where each sample came from.
 - **`README.md`:** the page people see on npm.
 
 Two things only you can add:
@@ -157,7 +157,9 @@ pnpm run lint
 Checks:
 
 - `dict/` holds the built files, and they look right.
-- `pnpm test` passes.
+- `pnpm test` passes. Real samples often have words the dictionary lacks. For each word it reports:
+  - A real word: add it to `src/additional_words.txt`, and build again.
+  - A name, such as a person or a river: add it to `words` in `samples/cspell.json`.
 - `pnpm run lint` leaves no errors.
 
 ## 7. Try it with cspell

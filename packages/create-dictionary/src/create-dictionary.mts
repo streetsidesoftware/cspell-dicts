@@ -22,14 +22,14 @@ async function main(): Promise<void> {
         : findRepoRoot(fileURLToPath(new URL('.', import.meta.url)));
     const repo = openRepo(rootDir);
     const settings = await getAnswers(options, repo, cwd);
-    const packageDir = createPackage(settings, repo);
+    const packageDir = await createPackage(settings, repo);
     setUpPackage(packageDir, repo, { install: !options.skipInstall, build: settings.doBuild });
     nextSteps(relative(cwd, packageDir) || '.', settings);
 }
 
-/** What to do now: go to the dictionary, and build it if the command didn't. */
+/** What to do now: go to the dictionary, build it if the command didn't, and test it with the samples. */
 function nextSteps(dir: string, settings: Settings): void {
-    const steps = [`cd ${dir}`, ...(settings.doBuild ? [] : ['pnpm run build'])];
+    const steps = [`cd ${dir}`, ...(settings.doBuild ? [] : ['pnpm run build']), 'pnpm test'];
     info('\n%s\n%s', heading('Next steps:'), steps.map((step) => '  ' + literal(step)).join('\n'));
     if (!settings.doBuild) {
         info("Its tests fail until it's built.");
@@ -41,6 +41,12 @@ function nextSteps(dir: string, settings: Settings): void {
             );
         }
     }
+    info(
+        'Real samples often have words the dictionary lacks. Add a real word to %s and build again, or a name to %s in %s.',
+        settings.additionalWords ? literal('src/additional_words.txt') : 'a source',
+        literal('words'),
+        literal('samples/cspell.json'),
+    );
 }
 
 try {
