@@ -179,7 +179,7 @@ export function sampleWords(files: string[], count = 50): string[] {
 /** What samples to add, for this kind of dictionary. */
 export function samplesExplanation(locale: string, languageId: string): string[] {
     const language = languageOf(locale);
-    const check = "Its tests spell check them with this dictionary, so they're real text it must accept.";
+    const check = 'The samples are used with cspell to check that the dictionary works as expected.';
     if (language) {
         const name = localeName(language) ?? language;
         return [`Samples are Markdown files written in ${name}, such as an article or a page of documentation.`, check];
