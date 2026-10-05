@@ -182,12 +182,15 @@ export function samplesExplanation(locale: string, languageId: string): string[]
     const check = 'The samples are used with cspell to check that the dictionary works as expected.';
     if (language) {
         const name = localeName(language) ?? language;
-        return [`Samples are Markdown files written in ${name}, such as an article or a page of documentation.`, check];
+        return [
+            `Samples should be Markdown files written in ${name}, such as an article or a page of documentation.`,
+            check,
+        ];
     }
     const types = languageId
         .split(',')
         .map((type) => type.trim())
         .filter((type) => type && type !== '*');
     const files = types.length ? `${types.join(' or ')} files` : 'files of the kind this dictionary is for';
-    return [`Samples are ${files} from real projects, such as a short script or a source file.`, check];
+    return [`Samples should be ${files} from real projects, such as a short script or a source file.`, check];
 }
