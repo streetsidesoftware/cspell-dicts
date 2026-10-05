@@ -12,8 +12,13 @@ export const heading = (text: string) => out('bold', text);
 /** A section's title, such as "Section (1/7): Dictionary Info". */
 export const sectionTitle = (text: string) => out(['bold', 'cyan'], text);
 
-/** An explanation above a question. Bright blue is a theme color, so each theme keeps it readable on its background. */
-export const explain = (text: string) => out('blueBright', text);
+/**
+ * Shows an explanation above a question, one line each, with a blank line before and after. Bright blue is a theme
+ * color, so each theme keeps it readable on its background.
+ */
+export function explain(...lines: string[]): void {
+    console.log('\n%s\n', out('blueBright', lines.join('\n')));
+}
 
 /** A file the command created. */
 export const created = (text: string) => out('green', text);

@@ -118,7 +118,7 @@ export async function getAnswers(options: CommandLine, repo: Repo, cwd: string):
         const value = given[key] ?? (noPrompts ? def : undefined);
         if (value !== undefined) return value;
         showSection();
-        if (intro) console.log('\n%s\n', explain(intro));
+        if (intro) explain(intro);
         return ask.confirm({ message, default: def });
     }
 
@@ -222,12 +222,9 @@ export async function getAnswers(options: CommandLine, repo: Repo, cwd: string):
         const language = languageOf(locale);
         if (!noPrompts) {
             showSection();
-            console.log(
-                '\n%s\n',
-                explain(
-                    'Samples are real files of the kind this dictionary is for, such as a script or a page of text.' +
-                        '\nThe tests spell check them, to show the dictionary works on real text.',
-                ),
+            explain(
+                'Samples are real files of the kind this dictionary is for, such as a script or a page of text.',
+                'The tests spell check them, to show the dictionary works on real text.',
             );
         }
         if (language && options.wikipediaSample && !byName.has('seattle.md')) {
