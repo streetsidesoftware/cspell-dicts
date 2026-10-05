@@ -276,6 +276,7 @@ export function samplesExplanation(locale: string, languageId: string): string[]
         const name = localeName(language) ?? language;
         return [
             `Samples should be Markdown files written in ${name}, such as an article or a page of documentation.`,
+            `A Wikipedia article can be given by its title, in ${name} or English, or by its link.`,
             check,
         ];
     }

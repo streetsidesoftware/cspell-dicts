@@ -64,11 +64,10 @@ export async function gatherSamples(options: SampleOptions, gathering: Gathering
         }
         for (const titleOrUrl of options.addWikipediaSample) await addArticle(titleOrUrl);
         if (prompt) {
-            while (await ask.confirm({ message: 'Add another Wikipedia article as a sample?', default: false })) {
-                const titleOrUrl = await ask.input({
-                    message: `Its title, in ${languageName} or English, or its link:`,
-                    validate: (v) => !!v.trim() || 'Give a title or a link.',
-                });
+            const message = 'Wikipedia article, by title or link; empty to finish:';
+            for (;;) {
+                const titleOrUrl = (await ask.input({ message })).trim();
+                if (!titleOrUrl) break;
                 await addArticle(titleOrUrl);
             }
         }
