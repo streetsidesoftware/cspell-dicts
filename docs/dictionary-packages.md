@@ -72,7 +72,8 @@ Every source follows three rules:
   sync fails, and the dictionary still builds from its local copy.
 - **Where it came from is written down.** Each third-party source is copied into its own directory, `src/<source>/`.
   `src/sources.yaml` lists its files, its license and README, and the URL it came from, and the license and README are
-  published with the dictionary. Older dictionaries link to each source's repository from `src/README.md` instead. The
+  published with the dictionary. `pnpm run build:readme` shows the list as a table, in the README's Sources section and
+  in `src/README.md`. Older dictionaries link to each source's repository from `src/README.md` instead. The
   built dictionary is often a derivative work of its sources, so their licenses apply to it. This matters most for
   Hunspell files.
 

@@ -47,6 +47,7 @@ export async function createPackage(answers: Settings, repo: Repo): Promise<stri
             : 'pnpm run build',
         prepublishOnlyScript: 'echo OK',
         year: String(new Date().getFullYear()),
+        ...sourcesSections(answers.sources.some((source) => source.name)),
     };
 
     info('Creating %s', literal(relative(rootDir, packageDir)));
@@ -110,4 +111,29 @@ export async function createPackage(answers: Settings, repo: Repo): Promise<stri
     function write(file: string, content: Buffer | string): void {
         writeFileSync(created(file), content);
     }
+}
+
+/**
+ * The README sections that show `src/sources.yaml` as a table, through `static/sources.csv`, which
+ * `pnpm run build:readme` writes. Empty without named sources.
+ */
+function sourcesSections(hasSources: boolean): Record<string, string> {
+    if (!hasSources) return { sourcesSection: '', licenseNote: '', srcSourcesSection: '' };
+    return {
+        sourcesSection: ['', '## Sources', '', '<!--- @@inject: ./static/sources.csv#markdown --->', ''].join('\n'),
+        licenseNote: '\n\nThe sources keep their own licenses, listed in [Sources](#sources).',
+        srcSourcesSection: [
+            '',
+            '## Sources',
+            '',
+            '<!--- @@inject: ../static/sources.csv#markdown --->',
+            '',
+            '## Changing a source',
+            '',
+            '`sources.yaml` lists each source: its files, license, README, and where it came from. Each source is copied',
+            'into the folder of its name, next to it. To add or change a source, edit `sources.yaml`, copy its files into',
+            "the source's folder, and update `cspell-tools.config.yaml` if its word files changed.",
+            '',
+        ].join('\n'),
+    };
 }

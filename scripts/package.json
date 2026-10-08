@@ -20,7 +20,8 @@
     "update-package-json": "update-package-json.mts"
   },
   "scripts": {
-    "test": "echo \"Error: no test specified\""
+    "test": "echo \"Test this package using pnpm test:package\"",
+    "test:package": "node --test \"lib/**/*.test.mts\""
   },
   "keywords": [],
   "author": "",

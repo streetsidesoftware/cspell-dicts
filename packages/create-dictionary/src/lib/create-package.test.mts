@@ -84,6 +84,19 @@ describe('createPackage', () => {
         );
     });
 
+    it('shows the named sources in both READMEs, and only with named sources', async () => {
+        const named = await createPackage(settings('withsources', { sources: [pairSource()], useTrie: true }), repo);
+        assert.match(read(named, 'README.md'), /## Sources\n\n<!--- @@inject: \.\/static\/sources\.csv#markdown --->/);
+        assert.match(
+            read(named, 'README.md'),
+            /The sources keep their own licenses, listed in \[Sources\]\(#sources\)\./,
+        );
+        assert.match(read(named, 'src/README.md'), /<!--- @@inject: \.\.\/static\/sources\.csv#markdown --->/);
+        const plain = await createPackage(settings('nosources', {}), repo);
+        assert.doesNotMatch(read(plain, 'README.md'), /Sources/);
+        assert.doesNotMatch(read(plain, 'src/README.md'), /Sources/);
+    });
+
     it('writes every template, the source, and a placeholder dictionary', async () => {
         const dir = await createPackage(settings('plain', {}), repo);
         assert.equal(dir, join(repo.dictionariesDir, 'plain'));
