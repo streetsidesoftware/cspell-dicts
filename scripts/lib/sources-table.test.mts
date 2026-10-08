@@ -44,6 +44,11 @@ describe('sourcesCsv', () => {
         );
     });
 
+    it('escapes backslashes and brackets in link text', () => {
+        // The license file a\]b, linked as [a\\\]b](…).
+        assert.ok(row('d', [{ name: 'x', license: String.raw`a\]b` }]).includes(String.raw`,[a\\\]b](`));
+    });
+
     it('says unknown for a source with no URL or license', () => {
         assert.equal(row('d', [{ name: 'mine' }]), 'mine,unknown,unknown,by hand');
     });

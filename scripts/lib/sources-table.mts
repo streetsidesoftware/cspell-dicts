@@ -82,7 +82,7 @@ function license(dir: string, source: SourceEntry): string {
 }
 
 function link(text: string, url: string): string {
-    return `[${text.replaceAll(/[[\]]/g, '\\$&')}](${encodeURI(url)})`;
+    return `[${text.replaceAll(/[\\[\]]/g, '\\$&')}](${encodeURI(url)})`;
 }
 
 function csvLine(fields: string[]): string {
