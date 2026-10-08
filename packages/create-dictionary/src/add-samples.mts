@@ -78,7 +78,7 @@ async function main(): Promise<void> {
         info('No samples added.');
         return;
     }
-    saveSamples(dir, dictionary.title, samples);
+    await saveSamples(dir, dictionary.title, samples);
     info('\nRun %s to check them.', literal('pnpm test'));
 }
 

@@ -42,9 +42,9 @@ describe('readDictionary', () => {
 describe('saveSamples', () => {
     const added = new Date().toISOString().slice(0, 10);
 
-    it('writes the samples, lists them in sample-sources.csv, and adds the table to the README', () => {
+    it('writes the samples, lists them in sample-sources.csv, and adds the table to the README', async () => {
         const dir = join(root, 'de_AR');
-        saveSamples(dir, 'German (Argentina)', [
+        await saveSamples(dir, 'German (Argentina)', [
             { name: 'notes.md', from: join(root, 'notes.md'), origin: 'my notes', license: 'MIT' },
             { name: 'berlin.md', text: '# Berlin\n' },
         ]);
@@ -65,9 +65,9 @@ describe('saveSamples', () => {
         assert.match(readme, /\| \[berlin\.md\]\(\.\/berlin\.md\) +\| unknown +\|/);
     });
 
-    it('adds to sample-sources.csv, and refreshes the table', () => {
+    it('adds to sample-sources.csv, and refreshes the table', async () => {
         const dir = join(root, 'de_AR');
-        saveSamples(dir, 'German (Argentina)', [{ name: 'hamburg.md', text: '# Hamburg\n', origin: 'a test' }]);
+        await saveSamples(dir, 'German (Argentina)', [{ name: 'hamburg.md', text: '# Hamburg\n', origin: 'a test' }]);
         const csv = readFileSync(join(dir, 'samples', 'sample-sources.csv'), 'utf8');
         assert.match(csv, /\n\[hamburg\.md\]\(\.\/hamburg\.md\),a test,/);
         const readme = readFileSync(join(dir, 'samples', 'README.md'), 'utf8');
@@ -75,9 +75,9 @@ describe('saveSamples', () => {
         assert.match(readme, /\| \[hamburg\.md\]/);
     });
 
-    it('starts a README when there is none', () => {
+    it('starts a README when there is none', async () => {
         const dir = join(root, 'new');
-        saveSamples(dir, 'Ruby', [{ name: 'hello.rb', text: 'puts 1\n', origin: 'https://example.com/ruby' }]);
+        await saveSamples(dir, 'Ruby', [{ name: 'hello.rb', text: 'puts 1\n', origin: 'https://example.com/ruby' }]);
         const readme = readFileSync(join(dir, 'samples', 'README.md'), 'utf8');
         assert.match(readme, /^# Ruby Samples\n/);
         assert.match(readme, /\| \[hello\.rb\]\(\.\/hello\.rb\) +\| <https:\/\/example\.com\/ruby> +\|/);

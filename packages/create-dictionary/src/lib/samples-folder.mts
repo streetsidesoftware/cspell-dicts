@@ -1,9 +1,9 @@
-import { spawnSync } from 'node:child_process';
 import { appendFileSync, existsSync, mkdirSync, readdirSync, readFileSync, writeFileSync } from 'node:fs';
 import { basename, join, relative } from 'node:path';
-import { fileURLToPath, pathToFileURL } from 'node:url';
+import { pathToFileURL } from 'node:url';
 
 import { readConfigFile } from 'cspell-lib';
+import { injectFile } from 'inject-markdown';
 
 import { created } from './output.mts';
 import {
@@ -53,7 +53,7 @@ export async function readDictionary(dir: string): Promise<Dictionary> {
  * Writes the samples into `dir/samples/`, adds them to `sample-sources.csv`, and shows that as a table in its
  * `README.md`. Starts the README, and adds the table's marker to it, when missing. Paths are shown relative to `base`.
  */
-export function saveSamples(dir: string, title: string, samples: Sample[], base = dir): void {
+export async function saveSamples(dir: string, title: string, samples: Sample[], base = dir): Promise<void> {
     const samplesDir = join(dir, 'samples');
     mkdirSync(samplesDir, { recursive: true });
     const write = (file: string, content: Buffer | string) => {
@@ -75,7 +75,7 @@ export function saveSamples(dir: string, title: string, samples: Sample[], base 
     if (!current.includes(`@@inject: ${sampleSources}`)) {
         appendFileSync(readme, withNewline(current) + '\n' + sourcesMarker + '\n');
     }
-    injectSources(samplesDir);
+    await injectSources(samplesDir);
 }
 
 /** A newline, if `text` doesn't end with one, so what's appended starts on a line of its own. */
@@ -84,8 +84,9 @@ function withNewline(text: string): string {
 }
 
 /** Refreshes the sources table in `samples/README.md`. */
-function injectSources(samplesDir: string): void {
-    const bin = fileURLToPath(import.meta.resolve('inject-markdown/bin'));
-    const result = spawnSync(process.execPath, [bin, '--silent', 'README.md'], { cwd: samplesDir, encoding: 'utf8' });
-    if (result.status !== 0) throw new Error(`couldn't update samples/README.md: ${result.stderr || result.stdout}`);
+async function injectSources(samplesDir: string): Promise<void> {
+    const { errors } = await injectFile('README.md', { cwd: samplesDir });
+    if (errors.length) {
+        throw new Error(`couldn't update samples/README.md: ${errors.map((error) => error.message).join('; ')}`);
+    }
 }
