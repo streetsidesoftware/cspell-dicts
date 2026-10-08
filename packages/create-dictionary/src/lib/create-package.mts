@@ -71,7 +71,7 @@ export async function createPackage(answers: Settings, repo: Repo): Promise<stri
             '# Words to leave out of the built dictionary. One per line; see docs/word-lists.md.\n',
         );
     }
-    saveSamples(packageDir, title(friendlyName), answers.samples, rootDir);
+    await saveSamples(packageDir, title(friendlyName), answers.samples, rootDir);
     write('samples/cspell.json', JSON.stringify(samplesConfig(answers.locale, answers.languageId), null, 4) + '\n');
     const words = await sampleWords(built.map((file) => join(packageDir, file)));
     write(join('samples', wordSample), words.map((word) => word + '\n').join(''));
