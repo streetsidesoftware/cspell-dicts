@@ -42,6 +42,10 @@ when the first release containing the feature is published.
 | #   | Title | Status |
 | --- | ----- | ------ |
 
+## What we learned
+
+- <Something the design work showed to be important for the whole feature, and how it shaped the design.>
+
 ## Open questions
 
 - <Question deferred during the design, and what it's waiting on.>
@@ -51,8 +55,8 @@ when the first release containing the feature is published.
 - `<Name>`: <what it names>. Decide by <when, for example before the package is made public>. Tracked in <issue>.
 ```
 
-Add one row per ADR as it's written: `| 0001 | <title> | Accepted |`. Remove the Open questions and Provisional names
-sections when they're empty.
+Add one row per ADR as it's written: `| 0001 | <title> | Accepted |`. Fill in What we learned when the design is
+finalized. Remove the What we learned, Open questions, and Provisional names sections when they're empty.
 
 ## `docs/ADRs/<feature>/NNNN-<decision>.md`
 
@@ -61,7 +65,7 @@ Name the file with a kebab-case slug, for example `0001-tools-get-their-own-id.m
 ```markdown
 # NNNN. <Decision title, phrased as the thing being decided>
 
-Status: Proposed | Accepted | Superseded by [NNNN](./NNNN-slug.md)
+Status: Proposed | Accepted
 
 ## Why
 
@@ -124,7 +128,8 @@ The full ADRs are in git history:
 
 ## Learnings and improvements
 
-- <What implementation or review changed, and what to do differently next time.>
+- <Start from the index's What we learned. Add what implementation or review changed, and what to do differently next
+  time.>
 ```
 
 ## Glossary entry
