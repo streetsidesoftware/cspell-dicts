@@ -98,6 +98,8 @@ Keep the design's history in commits, not in the user's memory.
     ```
 
 - **Check** the existing files first, in case this resumes an earlier session.
+- **Do:** restructure the ADRs whenever they stop reading as one line from the Why, as the README's "Decide one thing at
+  a time" describes. Don't wait for step 9.
 
 ### 7. Keep the glossaries current
 
@@ -123,8 +125,11 @@ Hand the user a clear state once the open questions are exhausted.
 Turn the working ADRs into the design as it stands.
 
 - **Stop and ask:** wait until the user says the design is final.
-- **Do:** squash the ADRs as the README's "Finalize before merge" describes, update the index and glossary links, and
-  commit on the same branch.
+- **Do:** rewrite the ADRs as the README's "Finalize before merge" describes, including the Why, the Goal, and What
+  we learned. Update the index and glossary links, and commit on the same branch.
+- **Check:** start a subagent that is given only the paths of the feature's `README.md` and its ADRs. Ask it to say what
+  gets built, why, and how the decisions fit together, and to list gaps, contradictions, and anything it had to guess.
+- **Stop and ask:** show the user the subagent's report, and fix what they agree with.
 - **Stop and ask:** does the design get its own `docs:` PR, or go in the PR that builds it? See the README's
   "Branches".
 
