@@ -48,8 +48,8 @@ Keep the design out of the user's checkout, so it never sits as uncommitted chan
   - With the branch but no worktree, attach it: the same command without `-b`.
   - When the user or the environment named a branch for this work, such as in a cloud session, use it and skip the
     worktree. A session's own unrelated branch doesn't count.
-- **Stop and ask** before pushing. As soon as anything outside the session refers to the design, such as another
-  session, a spawned task, or an issue, suggest a draft PR, so there's a trail.
+- **Do:** open a draft PR once the first ADR is committed, and tell the user. It makes outside review easier and
+  leaves a trail. Push each later commit to it.
 
 ### 4. Prepare
 
