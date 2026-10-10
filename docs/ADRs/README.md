@@ -132,6 +132,8 @@ by a short summary. Archive a feature when it's due, or earlier when a maintaine
   first release containing it is published.
 - Before deleting anything, move what is still in force to its long-term home: a rule goes to the doc under
   `docs/` where it applies.
+- Carry the learnings into the summary's Learnings and improvements: the feature's What we learned, any learning in an
+  ADR's Context that still matters, and what building and using the feature changed.
 - Rewrite the feature's `README.md` as the archive summary, with a permalink to the full ADRs in git history.
 - Delete the individual ADR files, and mark the feature archived in the table below.
 
