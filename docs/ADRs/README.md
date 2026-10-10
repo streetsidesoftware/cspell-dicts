@@ -59,7 +59,8 @@ An ADR's status:
 - `Accepted`: built, and working on `main`.
 
 The PR that builds a decision changes its status to `Accepted`, in the ADR and in the feature's index, so the status
-always says whether the code matches. A point that depends on something not built yet doesn't hold the ADR back.
+always says whether the code matches. An ADR still becomes `Accepted` when one of its points depends on something not
+built yet.
 
 A feature's status, in the [Features](#features) table:
 
@@ -120,7 +121,8 @@ Building or using a feature often shows a better answer. When it does, change th
 same PR:
 
 - Rewrite the ADR in place to state the current decision. Move the old choice to Rejected approaches, and add what we
-  learned to its Context. The earlier version stays in git history.
+  learned to its Context. The earlier version stays in git history. If the change isn't built in the same PR, the ADR
+  goes back to `Proposed`.
 - Delete an ADR that no longer applies, and renumber the rest if needed. Links go only to the feature's `README.md`, so
   only the links between its own ADRs need fixing.
 - Update the feature's index, and its "What we learned" section when the change taught something about the whole

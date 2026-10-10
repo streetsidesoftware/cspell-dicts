@@ -79,7 +79,8 @@ Know why the feature exists before deciding anything, then decide one thing at a
     it's flagged. Put your recommendation first, and say why.
   - Check facts before asking, such as with `pnpm exec cspell trace` or a test build, and bring the result.
   - "You decide" is an answer: propose a default, and record it as the decision.
-  - The user can defer: record the question under Open questions. Before finalizing, answer it or say what it waits on.
+  - The user can defer: record the question under Open questions. Before finalizing, answer it if it could change
+    the design's shape; otherwise say what it waits on.
 - **Do:**
   - A question with only one reasonable answer, once you look at the code, isn't an ADR. Note it and move on.
   - A remark made in passing is often a standing rule. Confirm it, then record it where it applies: a doc under
