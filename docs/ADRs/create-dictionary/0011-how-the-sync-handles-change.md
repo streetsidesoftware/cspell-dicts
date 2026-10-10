@@ -1,6 +1,6 @@
 # 0011. How the sync handles upstream change
 
-Status: Accepted
+Status: Proposed
 
 ## Why
 

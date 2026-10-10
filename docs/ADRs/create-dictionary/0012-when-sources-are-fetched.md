@@ -1,6 +1,6 @@
 # 0012. When sources are fetched: all at once at creation, then weekly
 
-Status: Accepted
+Status: Proposed
 
 ## Why
 

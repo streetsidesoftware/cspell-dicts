@@ -1,6 +1,6 @@
 # 0010. Remote sources come from GitHub or npm, and follow their latest
 
-Status: Accepted
+Status: Proposed
 
 ## Why
 

@@ -55,7 +55,7 @@ when the first release containing the feature is published.
 - `<Name>`: <what it names>. Decide by <when, for example before the package is made public>. Tracked in <issue>.
 ```
 
-Add one row per ADR as it's written: `| 0001 | <title> | Accepted |`. Fill in What we learned when the design is
+Add one row per ADR as it's written: `| 0001 | <title> | Proposed |`. Fill in What we learned when the design is
 finalized. Remove the What we learned, Open questions, and Provisional names sections when they're empty.
 
 ## `docs/ADRs/<feature>/NNNN-<decision>.md`

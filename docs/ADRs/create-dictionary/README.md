@@ -95,9 +95,9 @@ It ships in two stages, each usable on its own:
 
 | #                                             | Title                                                           | Status   |
 | --------------------------------------------- | --------------------------------------------------------------- | -------- |
-| [0010](./0010-remote-sources.md)              | Remote sources come from GitHub or npm, and follow their latest | Accepted |
-| [0011](./0011-how-the-sync-handles-change.md) | How the sync handles upstream change                            | Accepted |
-| [0012](./0012-when-sources-are-fetched.md)    | When sources are fetched: all at once at creation, then weekly  | Accepted |
+| [0010](./0010-remote-sources.md)              | Remote sources come from GitHub or npm, and follow their latest | Proposed |
+| [0011](./0011-how-the-sync-handles-change.md) | How the sync handles upstream change                            | Proposed |
+| [0012](./0012-when-sources-are-fetched.md)    | When sources are fetched: all at once at creation, then weekly  | Proposed |
 
 ## Build order
 

@@ -55,8 +55,11 @@ separate ADRs (a dictionary's IDs, and which file types it's enabled for).
 
 An ADR's status:
 
-- `Proposed`: under discussion.
-- `Accepted`: decided.
+- `Proposed`: decided, but not built on `main` yet.
+- `Accepted`: built, and working on `main`.
+
+The PR that builds a decision changes its status to `Accepted`, in the ADR and in the feature's index, so the status
+always says whether the code matches. A point that depends on something not built yet doesn't hold the ADR back.
 
 A feature's status, in the [Features](#features) table:
 
@@ -101,7 +104,7 @@ commits. What the design work showed to be important stays in the ADRs.
 - Write each ADR as the current decision, without the timeline. Keep in its Context the background and what we learned
   along the way, including approaches tried before. List rejected approaches briefly.
 - Put what we learned about the feature as a whole in the "What we learned" section of its `README.md`.
-- Renumber from `0001`, mark everything `Accepted`, and update the index.
+- Renumber from `0001`, and update the index. Each ADR stays `Proposed` until the PR that builds it.
 - Have someone new to the design read only the feature's `README.md` and its ADRs. They should be able to say what gets
   built, why, and how the decisions fit together. Fix whatever they couldn't.
 
