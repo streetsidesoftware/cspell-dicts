@@ -1,5 +1,12 @@
 # Change Log
 
+## [2.2.5](https://github.com/streetsidesoftware/cspell-dicts/compare/@cspell/dict-en-common-misspellings@2.2.4...@cspell/dict-en-common-misspellings@2.2.5) (2026-10-09)
+
+
+### Updates and Bug Fixes
+
+* Workflow Bot -- Build Dictionaries ([#5885](https://github.com/streetsidesoftware/cspell-dicts/issues/5885)) ([7ed1c94](https://github.com/streetsidesoftware/cspell-dicts/commit/7ed1c944f90e16097033bf320e5359dfd25ba236))
+
 ## [2.2.4](https://github.com/streetsidesoftware/cspell-dicts/compare/@cspell/dict-en-common-misspellings@2.2.3...@cspell/dict-en-common-misspellings@2.2.4) (2026-10-05)
 
 

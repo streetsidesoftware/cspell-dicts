@@ -3,6 +3,15 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+## [5.4.8](https://github.com/streetsidesoftware/cspell-dicts/compare/@cspell/dict-software-terms@5.4.7...@cspell/dict-software-terms@5.4.8) (2026-10-09)
+
+
+### Dependencies
+
+* The following workspace dependencies were updated
+  * devDependencies
+    * @cspell/dict-en-common-misspellings bumped to 2.2.5
+
 ## [5.4.7](https://github.com/streetsidesoftware/cspell-dicts/compare/@cspell/dict-software-terms@5.4.6...@cspell/dict-software-terms@5.4.7) (2026-10-05)
 
 
