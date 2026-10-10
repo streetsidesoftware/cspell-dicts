@@ -126,7 +126,8 @@ Turn the working ADRs into the design as it stands.
 
 - **Stop and ask:** wait until the user says the design is final.
 - **Do:** rewrite the ADRs as the README's "Finalize before merge" describes, including the Why, the Goal, and What
-  we learned. Update the index and glossary links, and commit on the same branch.
+  we learned. Update the index, check that each glossary entry from this feature still describes the final design,
+  and commit on the same branch.
 - **Check:** start a subagent that is given only the paths of the feature's `README.md` and its ADRs. Ask it to say what
   gets built, why, and how the decisions fit together, and to list gaps, contradictions, and anything it had to guess.
 - **Stop and ask:** show the user the subagent's report, and fix what they agree with.
