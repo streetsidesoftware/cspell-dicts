@@ -1,7 +1,5 @@
 # 0002. Third-party sources are defined by name, each in its own folder
 
-Status: Accepted
-
 ## Why
 
 **Goals:** traceable, and easy to adopt. Every third-party source can be traced to where it came from, with its license

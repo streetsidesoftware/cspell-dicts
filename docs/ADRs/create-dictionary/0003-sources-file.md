@@ -1,7 +1,5 @@
 # 0003. Every source is recorded in `src/sources.yaml`
 
-Status: Accepted
-
 ## Why
 
 **Goals:** traceable, and easy to maintain. There's one record of every source that people and tools can read, so the

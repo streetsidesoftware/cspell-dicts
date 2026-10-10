@@ -91,7 +91,7 @@ Know why the feature exists before deciding anything, then decide one thing at a
 Keep the design's history in commits, not in the user's memory.
 
 - **Do:**
-  - Write the ADR by the README's layout and statuses, and add its row to the feature's `README.md`.
+  - Write the ADR by the README's layout, and add its row to the feature's `README.md`.
   - Commit both together, one commit per ADR change, such as:
 
     ```text

@@ -53,20 +53,16 @@ separate ADRs (a dictionary's IDs, and which file types it's enabled for).
 
 ## Status
 
-An ADR's status:
+A feature's status, in the [Features](#features) table, says how far it has got:
 
-- `Proposed`: decided, but not built on `main` yet.
-- `Accepted`: built, and working on `main`.
-
-The PR that builds a decision changes its status to `Accepted`, in the ADR and in the feature's index, so the status
-always says whether the code matches. An ADR still becomes `Accepted` when one of its points depends on something not
-built yet.
-
-A feature's status, in the [Features](#features) table:
-
-- `Designing`: the interview is still going.
-- `Accepted`: the design is decided, whether or not it's built yet.
+- `Designing`: the design isn't merged yet.
+- `Building`: the design is merged, and some steps of its Build order aren't.
+- `Shipped`: everything in the design is built on `main`. The PR that builds the last step sets it. Fill in the
+  Shipped column when the first release that has it all is published.
 - `Archived`: shipped, and its ADRs replaced by a summary.
+
+The PR that moves a feature on changes its status. ADRs have no status of their own: the feature's Build order shows
+which decisions are built.
 
 ## Designing a feature
 
@@ -111,7 +107,10 @@ commits. What the design work showed to be important stays in the ADRs.
 - Put what we learned about the feature as a whole in the "What we learned" section of its `README.md`.
 - Answer any open question that could change the design's shape. The others can stay, each saying what it's waiting
   on. Provisional names can stay too, each with when it must be decided.
-- Renumber from `0001`, and update the index. Each ADR stays `Proposed` until the PR that builds it.
+- Renumber from `0001`, and update the index.
+- If the design merges before it's built, add a Build order: one step per PR, each naming the ADRs it builds. Each
+  step is ticked off by the PR that builds it. Set the feature's status to `Building`, or to `Shipped` if the design
+  and the code merge together.
 - Have someone new to the design read only the feature's `README.md` and its ADRs. They should be able to say what gets
   built, why, and how the decisions fit together. Fix whatever they couldn't.
 
@@ -121,8 +120,9 @@ Building or using a feature often shows a better answer. When it does, change th
 same PR:
 
 - Rewrite the ADR in place to state the current decision. Move the old choice to Rejected approaches, and add what we
-  learned to its Context. The earlier version stays in git history. If the change isn't built in the same PR, the ADR
-  goes back to `Proposed`.
+  learned to its Context. The earlier version stays in git history. If the change isn't built in the same PR, add a
+  step for it to the feature's Build order, adding the section back if it was removed, and set the feature to
+  `Building`.
 - Delete an ADR that no longer applies, and renumber the rest if needed. Links go only to the feature's `README.md`, so
   only the links between its own ADRs need fixing.
 - Update the feature's index, and its "What we learned" section when the change taught something about the whole
@@ -165,4 +165,4 @@ ADRs, keeps the glossaries current, and offers to archive features that are due.
 
 | Feature                                            | Description                                                                                                       | Shipped | Status   |
 | -------------------------------------------------- | ----------------------------------------------------------------------------------------------------------------- | ------- | -------- |
-| [create-dictionary](./create-dictionary/README.md) | How `pnpm create-dictionary` creates a dictionary package: options, sources, and what the new dictionary contains |         | Accepted |
+| [create-dictionary](./create-dictionary/README.md) | How `pnpm create-dictionary` creates a dictionary package: options, sources, and what the new dictionary contains |         | Building |
