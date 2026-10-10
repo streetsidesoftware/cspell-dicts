@@ -82,7 +82,8 @@ before merge.
 - Write an ADR for each decision as it's made, and add its row to the feature's `README.md`.
 - Commit each ADR as it's written. The commits let us go back to an earlier point and see how an idea evolved. They
   stay in the PR, so the ADRs don't need to carry that history.
-- Record questions that were deferred under "Open questions" in the feature's `README.md`.
+- Record questions that were deferred under "Open questions" in the feature's `README.md`, each with what it's
+  waiting on.
 - Restructure whenever the ADRs stop reading as one line from the Why: merge, split, or renumber them. Nothing outside
   the feature links to a single ADR, so only the links between its own ADRs need fixing.
 
@@ -104,6 +105,8 @@ commits. What the design work showed to be important stays in the ADRs.
 - Write each ADR as the current decision, without the timeline. Keep in its Context the background and what we learned
   along the way, including approaches tried before. List rejected approaches briefly.
 - Put what we learned about the feature as a whole in the "What we learned" section of its `README.md`.
+- Answer any open question that could change the design's shape. The others can stay, each saying what it's waiting
+  on.
 - Renumber from `0001`, and update the index. Each ADR stays `Proposed` until the PR that builds it.
 - Have someone new to the design read only the feature's `README.md` and its ADRs. They should be able to say what gets
   built, why, and how the decisions fit together. Fix whatever they couldn't.

@@ -79,7 +79,7 @@ Know why the feature exists before deciding anything, then decide one thing at a
     it's flagged. Put your recommendation first, and say why.
   - Check facts before asking, such as with `pnpm exec cspell trace` or a test build, and bring the result.
   - "You decide" is an answer: propose a default, and record it as the decision.
-  - The user can defer: record the question under Open questions, and come back to it before step 8.
+  - The user can defer: record the question under Open questions. Before finalizing, answer it or say what it waits on.
 - **Do:**
   - A question with only one reasonable answer, once you look at the code, isn't an ADR. Note it and move on.
   - A remark made in passing is often a standing rule. Confirm it, then record it where it applies: a doc under
@@ -110,7 +110,7 @@ Add each new term as it comes up.
 
 ### 8. Close the loop
 
-Hand the user a clear state once the open questions are exhausted.
+Hand the user a clear state once every open question is answered or says what it waits on.
 
 - **Do:** tell the user:
   - what was decided, one line per ADR, pointing at the feature's `README.md`.
