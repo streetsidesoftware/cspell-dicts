@@ -1,7 +1,5 @@
 # 0010. Remote sources come from GitHub or npm, and follow their latest
 
-Status: Accepted
-
 ## Why
 
 **Goal:** easy to maintain. Upstream sources stay current with no bumping by hand, wherever they live.

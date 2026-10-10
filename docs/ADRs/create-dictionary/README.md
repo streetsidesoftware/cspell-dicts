@@ -79,38 +79,38 @@ It ships in two stages, each usable on its own:
 
 ### Stage 1: Create and adopt
 
-| #                                                           | Title                                                                                                | Status   |
-| ----------------------------------------------------------- | ---------------------------------------------------------------------------------------------------- | -------- |
-| [0001](./0001-name-and-sources-on-the-command-line.md)      | How the name and the sources are given on the command line                                           | Accepted |
-| [0002](./0002-third-party-sources.md)                       | Third-party sources are defined by name, each in its own folder                                      | Accepted |
-| [0003](./0003-sources-file.md)                              | Every source is recorded in `src/sources.yaml`                                                       | Accepted |
-| [0004](./0004-additional-and-exclude-words.md)              | Every new dictionary gets `src/additional_words.txt` and `src/exclude_words.txt`                     | Accepted |
-| [0005](./0005-names-descriptions-and-when-it-is-enabled.md) | The friendly name, the descriptions, the contributors and keywords, and when a dictionary is enabled | Accepted |
-| [0006](./0006-how-a-new-dictionary-is-built.md)             | How a new dictionary is built: trie, build at creation, and Hunspell depth                           | Accepted |
-| [0007](./0007-samples.md)                                   | Samples test a new dictionary: real examples where possible, and a static word sample                | Accepted |
-| [0008](./0008-sources-are-explained-in-the-readmes.md)      | Sources are explained in the dictionary's README and in `src/README.md`                              | Accepted |
-| [0009](./0009-test-options-are-hidden.md)                   | Options for tests are hidden from `--help`                                                           | Accepted |
+| #                                                           | Title                                                                                                |
+| ----------------------------------------------------------- | ---------------------------------------------------------------------------------------------------- |
+| [0001](./0001-name-and-sources-on-the-command-line.md)      | How the name and the sources are given on the command line                                           |
+| [0002](./0002-third-party-sources.md)                       | Third-party sources are defined by name, each in its own folder                                      |
+| [0003](./0003-sources-file.md)                              | Every source is recorded in `src/sources.yaml`                                                       |
+| [0004](./0004-additional-and-exclude-words.md)              | Every new dictionary gets `src/additional_words.txt` and `src/exclude_words.txt`                     |
+| [0005](./0005-names-descriptions-and-when-it-is-enabled.md) | The friendly name, the descriptions, the contributors and keywords, and when a dictionary is enabled |
+| [0006](./0006-how-a-new-dictionary-is-built.md)             | How a new dictionary is built: trie, build at creation, and Hunspell depth                           |
+| [0007](./0007-samples.md)                                   | Samples test a new dictionary: real examples where possible, and a static word sample                |
+| [0008](./0008-sources-are-explained-in-the-readmes.md)      | Sources are explained in the dictionary's README and in `src/README.md`                              |
+| [0009](./0009-test-options-are-hidden.md)                   | Options for tests are hidden from `--help`                                                           |
 
 ### Stage 2: Maintain
 
-| #                                             | Title                                                           | Status   |
-| --------------------------------------------- | --------------------------------------------------------------- | -------- |
-| [0010](./0010-remote-sources.md)              | Remote sources come from GitHub or npm, and follow their latest | Accepted |
-| [0011](./0011-how-the-sync-handles-change.md) | How the sync handles upstream change                            | Accepted |
-| [0012](./0012-when-sources-are-fetched.md)    | When sources are fetched: all at once at creation, then weekly  | Accepted |
+| #                                             | Title                                                           |
+| --------------------------------------------- | --------------------------------------------------------------- |
+| [0010](./0010-remote-sources.md)              | Remote sources come from GitHub or npm, and follow their latest |
+| [0011](./0011-how-the-sync-handles-change.md) | How the sync handles upstream change                            |
+| [0012](./0012-when-sources-are-fetched.md)    | When sources are fetched: all at once at creation, then weekly  |
 
 ## Build order
 
-One PR per step. This section is removed once the feature ships.
+One PR per step, ticked off by the PR that builds it. This section is removed once the feature ships.
 
-1. Names, descriptions, and the locale or file type; hidden test options ([0005](./0005-names-descriptions-and-when-it-is-enabled.md), [0009](./0009-test-options-are-hidden.md)).
-2. Several sources and `--placeholder-word-lists` ([0001](./0001-name-and-sources-on-the-command-line.md)).
-3. Contributors and keywords ([0005](./0005-names-descriptions-and-when-it-is-enabled.md)).
-4. `src/additional_words.txt` and `src/exclude_words.txt` ([0004](./0004-additional-and-exclude-words.md)).
-5. Third-party sources and `sources.yaml`, together ([0002](./0002-third-party-sources.md), [0003](./0003-sources-file.md)).
-6. Trie, build at creation, Hunspell depth, and samples ([0006](./0006-how-a-new-dictionary-is-built.md), [0007](./0007-samples.md)).
-7. Sources in the READMEs ([0008](./0008-sources-are-explained-in-the-readmes.md)).
-8. `sync-sources`, and in `sync-github-files` the existence check, gone marks, size cap, and differing local paths
-   ([0011](./0011-how-the-sync-handles-change.md)); npm sources through jsDelivr ([0010](./0010-remote-sources.md)).
-9. Remote sources at creation, the weekly `update-dictionary` script, and `--no-bail` in Update Dictionaries
-   ([0010](./0010-remote-sources.md), [0012](./0012-when-sources-are-fetched.md)).
+1. [x] Names, descriptions, and the locale or file type; hidden test options ([0005](./0005-names-descriptions-and-when-it-is-enabled.md), [0009](./0009-test-options-are-hidden.md)).
+2. [x] Several sources and `--placeholder-word-lists` ([0001](./0001-name-and-sources-on-the-command-line.md)).
+3. [x] Contributors and keywords ([0005](./0005-names-descriptions-and-when-it-is-enabled.md)).
+4. [x] `src/additional_words.txt` and `src/exclude_words.txt` ([0004](./0004-additional-and-exclude-words.md)).
+5. [x] Third-party sources and `sources.yaml`, together ([0002](./0002-third-party-sources.md), [0003](./0003-sources-file.md)).
+6. [x] Trie, build at creation, Hunspell depth, and samples ([0006](./0006-how-a-new-dictionary-is-built.md), [0007](./0007-samples.md)).
+7. [x] Sources in the READMEs ([0008](./0008-sources-are-explained-in-the-readmes.md)).
+8. [ ] `sync-sources`, and in `sync-github-files` the existence check, gone marks, size cap, and differing local paths
+       ([0011](./0011-how-the-sync-handles-change.md)); npm sources through jsDelivr ([0010](./0010-remote-sources.md)).
+9. [ ] Remote sources at creation, the weekly `update-dictionary` script, and `--no-bail` in Update Dictionaries
+       ([0010](./0010-remote-sources.md), [0012](./0012-when-sources-are-fetched.md)).

@@ -1,7 +1,5 @@
 # 0012. When sources are fetched: all at once at creation, then weekly
 
-Status: Accepted
-
 ## Why
 
 **Goals:** easy to create, and easy to maintain. Creating a dictionary either succeeds with every source or leaves

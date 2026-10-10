@@ -8,7 +8,7 @@ Add one row to the table in [`README.md`](./README.md#features) when a feature's
 when the first release containing the feature is published.
 
 ```markdown
-| [<feature>](./<feature>/README.md) | <one-line description> | <package@version, YYYY-MM-DD> | Designing / Accepted / Archived |
+| [<feature>](./<feature>/README.md) | <one-line description> | <package@version, YYYY-MM-DD> | Designing / Building / Shipped / Archived |
 ```
 
 ## `docs/ADRs/<feature>/README.md`
@@ -39,8 +39,14 @@ when the first release containing the feature is published.
 
 ## Decisions
 
-| #   | Title | Status |
-| --- | ----- | ------ |
+| #   | Title |
+| --- | ----- |
+
+## Build order
+
+One PR per step, ticked off by the PR that builds it. Remove this section once the feature ships.
+
+1. [ ] <What the step builds> ([0001](./0001-<decision>.md)).
 
 ## What we learned
 
@@ -55,7 +61,7 @@ when the first release containing the feature is published.
 - `<Name>`: <what it names>. Decide by <when, for example before the package is made public>. Tracked in <issue>.
 ```
 
-Add one row per ADR as it's written: `| 0001 | <title> | Accepted |`. Fill in What we learned when the design is
+Add one row per ADR as it's written: `| 0001 | <title> |`. Fill in What we learned when the design is
 finalized. Remove the What we learned, Open questions, and Provisional names sections when they're empty.
 
 ## `docs/ADRs/<feature>/NNNN-<decision>.md`
@@ -64,8 +70,6 @@ Name the file with a kebab-case slug, for example `0001-tools-get-their-own-id.m
 
 ```markdown
 # NNNN. <Decision title, phrased as the thing being decided>
-
-Status: Proposed | Accepted
 
 ## Why
 

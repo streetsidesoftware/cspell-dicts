@@ -1,7 +1,5 @@
 # 0011. How the sync handles upstream change
 
-Status: Accepted
-
 ## Why
 
 **Goal:** easy to maintain. The weekly sync brings upstream changes in on its own, and reports anything a maintainer

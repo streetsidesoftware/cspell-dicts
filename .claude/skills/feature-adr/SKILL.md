@@ -79,7 +79,8 @@ Know why the feature exists before deciding anything, then decide one thing at a
     it's flagged. Put your recommendation first, and say why.
   - Check facts before asking, such as with `pnpm exec cspell trace` or a test build, and bring the result.
   - "You decide" is an answer: propose a default, and record it as the decision.
-  - The user can defer: record the question under Open questions, and come back to it before step 8.
+  - The user can defer: record the question under Open questions. Before finalizing, answer it if it could change
+    the design's shape; otherwise say what it waits on.
 - **Do:**
   - A question with only one reasonable answer, once you look at the code, isn't an ADR. Note it and move on.
   - A remark made in passing is often a standing rule. Confirm it, then record it where it applies: a doc under
@@ -90,7 +91,7 @@ Know why the feature exists before deciding anything, then decide one thing at a
 Keep the design's history in commits, not in the user's memory.
 
 - **Do:**
-  - Write the ADR by the README's layout and statuses, and add its row to the feature's `README.md`.
+  - Write the ADR by the README's layout, and add its row to the feature's `README.md`.
   - Commit both together, one commit per ADR change, such as:
 
     ```text
@@ -110,7 +111,7 @@ Add each new term as it comes up.
 
 ### 8. Close the loop
 
-Hand the user a clear state once the open questions are exhausted.
+Hand the user a clear state once every open question is answered or says what it waits on.
 
 - **Do:** tell the user:
   - what was decided, one line per ADR, pointing at the feature's `README.md`.
@@ -126,7 +127,8 @@ Turn the working ADRs into the design as it stands.
 
 - **Stop and ask:** wait until the user says the design is final.
 - **Do:** rewrite the ADRs as the README's "Finalize before merge" describes, including the Why, the Goal, and What
-  we learned. Update the index and glossary links, and commit on the same branch.
+  we learned. Update the index, check that each glossary entry from this feature still describes the final design,
+  and commit on the same branch.
 - **Check:** start a subagent that is given only the paths of the feature's `README.md` and its ADRs. Ask it to say what
   gets built, why, and how the decisions fit together, and to list gaps, contradictions, and anything it had to guess.
 - **Stop and ask:** show the user the subagent's report, and fix what they agree with.
