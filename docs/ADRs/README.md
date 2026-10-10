@@ -84,6 +84,9 @@ before merge.
   stay in the PR, so the ADRs don't need to carry that history.
 - Record questions that were deferred under "Open questions" in the feature's `README.md`, each with what it's
   waiting on.
+- Use a name that isn't decided yet (a file, an option, a command) as written in the ADRs, and list it under
+  "Provisional names" in the feature's `README.md`, with when it must be decided. A name becomes public once it ships,
+  so it's decided by the PR that builds it at the latest.
 - Restructure whenever the ADRs stop reading as one line from the Why: merge, split, or renumber them. Nothing outside
   the feature links to a single ADR, so only the links between its own ADRs need fixing.
 
@@ -106,7 +109,7 @@ commits. What the design work showed to be important stays in the ADRs.
   along the way, including approaches tried before. List rejected approaches briefly.
 - Put what we learned about the feature as a whole in the "What we learned" section of its `README.md`.
 - Answer any open question that could change the design's shape. The others can stay, each saying what it's waiting
-  on.
+  on. Provisional names can stay too, each with when it must be decided.
 - Renumber from `0001`, and update the index. Each ADR stays `Proposed` until the PR that builds it.
 - Have someone new to the design read only the feature's `README.md` and its ADRs. They should be able to say what gets
   built, why, and how the decisions fit together. Fix whatever they couldn't.
