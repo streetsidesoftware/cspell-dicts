@@ -3,7 +3,6 @@
     "name": "TypeScript/JavaScript",
     "description": "TypeScript and JavaScript dictionary.",
     "readonly": true,
-    // List of dictionary files to add to the global list of dictionaries
     "dictionaryDefinitions": [
         {
             "name": "typescript",
@@ -11,7 +10,6 @@
             "description": "TypeScript and JavaScript dictionary."
         }
     ],
-    // Patterns
     "patterns": [
         {
             "name": "js-hex-number",
@@ -30,7 +28,7 @@
         },
         {
             "name": "js-regexp-flags",
-            "pattern": "/\\/[dgimsuy]{1,7}\\b(?=(?:\\.flags\\b)|\\s*$|[;),])/g", // cspell:ignore dgimsuy
+            "pattern": "/\\/[dgimsuy]{1,7}\\b(?=(?:\\.flags\\b)|\\s*$|[;),])/g",
             "description": "JavaScript Match Regular Expression Flags"
         }
     ],
@@ -49,7 +47,7 @@
     "overrides": [
         {
             "filename": "**/*.astro",
-            "languageId": "astro" // set the file type to be Astro
+            "languageId": "astro"
         }
     ]
 }

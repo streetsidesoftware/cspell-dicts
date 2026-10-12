@@ -1,11 +1,9 @@
-// cSpell Settings
 {
     "id": "redis",
     "version": "0.2",
     "name": "Redis",
     "description": "Redis dictionary.",
     "readonly": true,
-    // List of dictionary files to add to the global list of dictionaries
     "dictionaryDefinitions": [
         {
             "name": "redis",
@@ -13,10 +11,6 @@
             "description": "Redis dictionary."
         }
     ],
-    // Dictionaries to always be used.
-    // Generally left empty
     "dictionaries": [],
-    // Language Rules to apply to matching files.
-    // Files are matched on `languageId` and `locale`
     "languageSettings": []
 }
