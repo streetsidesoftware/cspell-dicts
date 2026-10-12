@@ -25,7 +25,6 @@
             "ignoreRegExpList": ["ignore_string_literal_prefix"],
             "patterns": [
                 {
-                    // Pattern to be ignored
                     "name": "ignore_string_literal_prefix",
                     "pattern": "/\\b(?:rf|fr|f|r|u|ur|b|br)'/gi"
                 },
@@ -37,7 +36,6 @@
                     "name": "string_raw",
                     "pattern": "/\\bu?r(['\"]).*?\\1/gi"
                 },
-                // Redefine the "strings" and "comments" pattern to match Python
                 {
                     "name": "string-multi-line",
                     "pattern": "/(\"\"\"|''')[^\\1]*?\\1/g"
@@ -50,8 +48,8 @@
                     "name": "strings",
                     "description": "Matches all strings in a Python File.",
                     "pattern": [
-                        "/((?<!\\\\)(?:'|\"))(?!\\1).*?(?<!\\1)(?<!\\\\)\\1(?!\\1)/g", // Single line string
-                        "/(\"\"\"|''')[^\\1]*?\\1/g" // Multi-line string
+                        "/((?<!\\\\)(?:'|\"))(?!\\1).*?(?<!\\1)(?<!\\\\)\\1(?!\\1)/g",
+                        "/(\"\"\"|''')[^\\1]*?\\1/g"
                     ]
                 },
                 {
@@ -65,10 +63,7 @@
                 {
                     "name": "comments",
                     "description": "Matches all comments in a Python File.",
-                    "pattern": [
-                        "/#.*/g", // Single line comment
-                        "/(\"\"\"|''')[^\\1]*?\\1/g" // Multi line comment using multi-line string
-                    ]
+                    "pattern": ["/#.*/g", "/(\"\"\"|''')[^\\1]*?\\1/g"]
                 }
             ]
         }

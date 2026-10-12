@@ -4,7 +4,6 @@
     "name": "Pokémon",
     "description": "Pokémon dictionary.",
     "readonly": true,
-    // List of dictionary files to add to the global list of dictionaries
     "dictionaryDefinitions": [
         {
             "name": "pokemon",
@@ -12,7 +11,5 @@
             "description": "Pokémon dictionary."
         }
     ],
-    // Dictionaries to always be used.
-    // Enable the Pokemon dictionary for all files.
     "dictionaries": ["pokemon"]
 }
