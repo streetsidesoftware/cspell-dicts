@@ -16,7 +16,7 @@ const configFilePath = path.join(rootDir, configFile);
 const versionFilePath = path.join(rootDir, versionFile);
 
 const settings = {
-    'bootstrap-sha': '57747d12b18819775592694ea936eb9e4ce875b6',
+    'commit-batch-size': 100,
     'include-v-in-tag': false,
     'tag-separator': '@',
     'prerelease-type': 'alpha',
