@@ -1,5 +1,19 @@
 # Changelog
 
+## [1.1.29](https://github.com/streetsidesoftware/cspell-dicts/compare/@cspell/dict-en-au@1.1.28...@cspell/dict-en-au@1.1.29) (2026-10-13)
+
+
+### Updates and Bug Fixes
+
+* set the locale on language dictionaries ([#5893](https://github.com/streetsidesoftware/cspell-dicts/issues/5893)) ([f0f71eb](https://github.com/streetsidesoftware/cspell-dicts/commit/f0f71eb4db767756a8a1b9d0e26925dbe3b1ca96))
+
+
+### Dependencies
+
+* The following workspace dependencies were updated
+  * devDependencies
+    * @cspell/dict-en-shared bumped to 1.0.56
+
 ## [1.1.28](https://github.com/streetsidesoftware/cspell-dicts/compare/@cspell/dict-en-au@1.1.27...@cspell/dict-en-au@1.1.28) (2026-10-05)
 
 

@@ -1,5 +1,12 @@
 # Change Log
 
+## [1.1.4](https://github.com/streetsidesoftware/cspell-dicts/compare/@cspell/dict-gl-es@1.1.3...@cspell/dict-gl-es@1.1.4) (2026-10-13)
+
+
+### Updates and Bug Fixes
+
+* set the locale on language dictionaries ([#5893](https://github.com/streetsidesoftware/cspell-dicts/issues/5893)) ([f0f71eb](https://github.com/streetsidesoftware/cspell-dicts/commit/f0f71eb4db767756a8a1b9d0e26925dbe3b1ca96))
+
 ## [1.1.3](https://github.com/streetsidesoftware/cspell-dicts/compare/@cspell/dict-gl-es@1.1.2...@cspell/dict-gl-es@1.1.3) (2025-07-19)
 
 

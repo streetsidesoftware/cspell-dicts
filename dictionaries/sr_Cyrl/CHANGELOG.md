@@ -1,5 +1,12 @@
 # Change Log
 
+## [1.1.8](https://github.com/streetsidesoftware/cspell-dicts/compare/@cspell/dict-sr-cyrl@1.1.7...@cspell/dict-sr-cyrl@1.1.8) (2026-10-13)
+
+
+### Updates and Bug Fixes
+
+* set the locale on language dictionaries ([#5893](https://github.com/streetsidesoftware/cspell-dicts/issues/5893)) ([f0f71eb](https://github.com/streetsidesoftware/cspell-dicts/commit/f0f71eb4db767756a8a1b9d0e26925dbe3b1ca96))
+
 ## [1.1.7](https://github.com/streetsidesoftware/cspell-dicts/compare/@cspell/dict-sr-cyrl@1.1.6...@cspell/dict-sr-cyrl@1.1.7) (2026-10-05)
 
 

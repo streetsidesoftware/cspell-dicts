@@ -22,6 +22,13 @@ See [Conventional Commits](https://conventionalcommits.org) for commit guideline
 
 
 
+## [3.1.10](https://github.com/streetsidesoftware/cspell-dicts/compare/@cspell/dict-el@3.1.9...@cspell/dict-el@3.1.10) (2026-10-13)
+
+
+### Updates and Bug Fixes
+
+* set the locale on language dictionaries ([#5893](https://github.com/streetsidesoftware/cspell-dicts/issues/5893)) ([f0f71eb](https://github.com/streetsidesoftware/cspell-dicts/commit/f0f71eb4db767756a8a1b9d0e26925dbe3b1ca96))
+
 ## [3.1.9](https://github.com/streetsidesoftware/cspell-dicts/compare/@cspell/dict-el@3.1.8...@cspell/dict-el@3.1.9) (2026-10-05)
 
 
