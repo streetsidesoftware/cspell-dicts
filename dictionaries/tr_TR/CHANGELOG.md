@@ -22,6 +22,13 @@ See [Conventional Commits](https://conventionalcommits.org) for commit guideline
 
 
 
+## [3.0.7](https://github.com/streetsidesoftware/cspell-dicts/compare/@cspell/dict-tr-tr@3.0.6...@cspell/dict-tr-tr@3.0.7) (2026-10-13)
+
+
+### Updates and Bug Fixes
+
+* set the locale on language dictionaries ([#5893](https://github.com/streetsidesoftware/cspell-dicts/issues/5893)) ([f0f71eb](https://github.com/streetsidesoftware/cspell-dicts/commit/f0f71eb4db767756a8a1b9d0e26925dbe3b1ca96))
+
 ## [3.0.6](https://github.com/streetsidesoftware/cspell-dicts/compare/@cspell/dict-tr-tr@3.0.5...@cspell/dict-tr-tr@3.0.6) (2025-07-19)
 
 

@@ -1,5 +1,22 @@
 # Release Notes
 
+## [33.17.2](https://github.com/streetsidesoftware/cspell-dicts/compare/cspell-dicts@33.17.1...cspell-dicts@33.17.2) (2026-10-13)
+
+
+### Updates and Bug Fixes
+
+* set the locale on language dictionaries ([#5893](https://github.com/streetsidesoftware/cspell-dicts/issues/5893)) ([f0f71eb](https://github.com/streetsidesoftware/cspell-dicts/commit/f0f71eb4db767756a8a1b9d0e26925dbe3b1ca96))
+* Workflow Bot -- Build Dictionaries ([#5885](https://github.com/streetsidesoftware/cspell-dicts/issues/5885)) ([7ed1c94](https://github.com/streetsidesoftware/cspell-dicts/commit/7ed1c944f90e16097033bf320e5359dfd25ba236))
+* Workflow Bot -- Update ALL Dependencies ([97309d6](https://github.com/streetsidesoftware/cspell-dicts/commit/97309d6ea88588b4483ade2dd87553956d3ac230))
+* Workflow Bot -- Update Dictionaries ([#5891](https://github.com/streetsidesoftware/cspell-dicts/issues/5891)) ([cb59236](https://github.com/streetsidesoftware/cspell-dicts/commit/cb592369fb55e7aada3dea537f466afcc30177ee))
+
+
+### Dependencies
+
+* The following workspace dependencies were updated
+  * devDependencies
+    * @cspell/dict-cspell-bundle bumped to 2.0.80
+
 ## [33.17.1](https://github.com/streetsidesoftware/cspell-dicts/compare/cspell-dicts@33.17.0...cspell-dicts@33.17.1) (2026-10-05)
 
 
