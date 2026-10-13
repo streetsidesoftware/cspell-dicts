@@ -1,5 +1,19 @@
 # Changelog
 
+## [1.0.67](https://github.com/streetsidesoftware/cspell-dicts/compare/@cspell/dict-en-ca@1.0.66...@cspell/dict-en-ca@1.0.67) (2026-10-13)
+
+
+### Updates and Bug Fixes
+
+* set the locale on language dictionaries ([#5893](https://github.com/streetsidesoftware/cspell-dicts/issues/5893)) ([f0f71eb](https://github.com/streetsidesoftware/cspell-dicts/commit/f0f71eb4db767756a8a1b9d0e26925dbe3b1ca96))
+
+
+### Dependencies
+
+* The following workspace dependencies were updated
+  * devDependencies
+    * @cspell/dict-en-shared bumped to 1.0.56
+
 ## [1.0.66](https://github.com/streetsidesoftware/cspell-dicts/compare/@cspell/dict-en-ca@1.0.65...@cspell/dict-en-ca@1.0.66) (2026-10-05)
 
 

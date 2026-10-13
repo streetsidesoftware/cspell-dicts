@@ -1,5 +1,12 @@
 # Change Log
 
+## [1.0.10](https://github.com/streetsidesoftware/cspell-dicts/compare/@cspell/dict-sr-latn@1.0.9...@cspell/dict-sr-latn@1.0.10) (2026-10-13)
+
+
+### Updates and Bug Fixes
+
+* set the locale on language dictionaries ([#5893](https://github.com/streetsidesoftware/cspell-dicts/issues/5893)) ([f0f71eb](https://github.com/streetsidesoftware/cspell-dicts/commit/f0f71eb4db767756a8a1b9d0e26925dbe3b1ca96))
+
 ## [1.0.9](https://github.com/streetsidesoftware/cspell-dicts/compare/@cspell/dict-sr-latn@1.0.8...@cspell/dict-sr-latn@1.0.9) (2026-10-05)
 
 

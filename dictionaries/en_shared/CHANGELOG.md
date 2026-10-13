@@ -1,5 +1,12 @@
 # Change Log
 
+## [1.0.56](https://github.com/streetsidesoftware/cspell-dicts/compare/@cspell/dict-en-shared@1.0.55...@cspell/dict-en-shared@1.0.56) (2026-10-13)
+
+
+### Updates and Bug Fixes
+
+* set the locale on language dictionaries ([#5893](https://github.com/streetsidesoftware/cspell-dicts/issues/5893)) ([f0f71eb](https://github.com/streetsidesoftware/cspell-dicts/commit/f0f71eb4db767756a8a1b9d0e26925dbe3b1ca96))
+
 ## [1.0.55](https://github.com/streetsidesoftware/cspell-dicts/compare/@cspell/dict-en-shared@1.0.54...@cspell/dict-en-shared@1.0.55) (2026-08-26)
 
 

@@ -3,6 +3,20 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+## [5.0.36](https://github.com/streetsidesoftware/cspell-dicts/compare/@cspell/dict-en-gb@5.0.35...@cspell/dict-en-gb@5.0.36) (2026-10-13)
+
+
+### Updates and Bug Fixes
+
+* set the locale on language dictionaries ([#5893](https://github.com/streetsidesoftware/cspell-dicts/issues/5893)) ([f0f71eb](https://github.com/streetsidesoftware/cspell-dicts/commit/f0f71eb4db767756a8a1b9d0e26925dbe3b1ca96))
+
+
+### Dependencies
+
+* The following workspace dependencies were updated
+  * devDependencies
+    * @cspell/dict-en-shared bumped to 1.0.56
+
 ## [5.0.35](https://github.com/streetsidesoftware/cspell-dicts/compare/@cspell/dict-en-gb@5.0.34...@cspell/dict-en-gb@5.0.35) (2026-10-05)
 
 
