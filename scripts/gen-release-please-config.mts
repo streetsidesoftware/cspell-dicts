@@ -16,7 +16,7 @@ const configFilePath = path.join(rootDir, configFile);
 const versionFilePath = path.join(rootDir, versionFile);
 
 const settings = {
-    'commit-batch-size': 100,
+    'commit-batch-size': 50,
     'include-v-in-tag': false,
     'tag-separator': '@',
     'prerelease-type': 'alpha',
