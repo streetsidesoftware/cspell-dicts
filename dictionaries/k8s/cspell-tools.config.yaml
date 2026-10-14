@@ -7,6 +7,6 @@ targets:
     compress: false
     format: plaintext
     sources:
-      - src/k8s.txt
+      - filename: src/k8s.txt
+        keepRawCase: true
     sort: true
-keepRawCase: true

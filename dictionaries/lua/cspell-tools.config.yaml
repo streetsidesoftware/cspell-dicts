@@ -7,6 +7,6 @@ targets:
     compress: false
     format: plaintext
     sources:
-      - src/lua.txt
+      - filename: src/lua.txt
+        keepRawCase: true
     sort: true
-keepRawCase: true

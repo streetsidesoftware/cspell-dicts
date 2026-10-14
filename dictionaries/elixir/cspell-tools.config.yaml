@@ -7,6 +7,6 @@ targets:
     compress: false
     format: plaintext
     sources:
-      - src/elixir.txt
+      - filename: src/elixir.txt
+        keepRawCase: true
     sort: true
-keepRawCase: true

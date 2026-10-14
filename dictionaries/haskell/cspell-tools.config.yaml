@@ -7,6 +7,6 @@ targets:
     compress: false
     format: plaintext
     sources:
-      - src/haskell.txt
+      - filename: src/haskell.txt
+        keepRawCase: true
     sort: true
-keepRawCase: true

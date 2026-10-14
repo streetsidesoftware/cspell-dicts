@@ -8,6 +8,6 @@ targets:
     format: plaintext
     sources:
       - filename: src/city-names-finland.txt
+        keepRawCase: true
         split: legacy
     sort: true
-keepRawCase: true

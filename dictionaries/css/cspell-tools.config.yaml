@@ -7,6 +7,6 @@ targets:
     compress: false
     format: plaintext
     sources:
-      - src/css.txt
+      - filename: src/css.txt
+        keepRawCase: true
     sort: true
-keepRawCase: true
