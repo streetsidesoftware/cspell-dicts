@@ -1,6 +1,8 @@
 {
     "version": "0.2",
     "import": ["../cspell-ext.json"],
+    // Remove once https://github.com/streetsidesoftware/cspell/issues/9469 is fixed.
+    "ignoreWords": ["docline", "nagle", "pickler", "redirections", "suburi"],
     "languageSettings": [
         {
             "languageId": "plaintext",
