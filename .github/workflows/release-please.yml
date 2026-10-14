@@ -1,5 +1,7 @@
 name: ' 🚀 release-please'
 
+# Creates the releases and tags for a merged release PR. The release PR itself is maintained by release-please-pr.yml.
+
 on:
   workflow_dispatch:
   push:
@@ -33,5 +35,6 @@ jobs:
           token: ${{ steps.generate-token.outputs.token }}
           config-file: release-please-config.json
           manifest-file: .release-please-manifest.json
+          skip-github-pull-request: true
 
 # cspell:ignore noreply
