@@ -34,7 +34,7 @@
     "cspell-ext.json"
   ],
   "scripts": {
-    "build": "cspell-tools-cli compile --keep-raw-case --use-legacy-splitter src/aws.txt --no-compress -o ./dict",
+    "build": "cspell-tools-cli build",
     "prepare:dictionary": "pnpm run build",
     "prepublishOnly": "echo pre-publish",
     "test": "head -n 100 src/aws.txt | cspell -c ./cspell-ext.json \"--locale=*\" \"--languageId=aws\" stdin"

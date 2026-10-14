@@ -36,7 +36,7 @@
     "*.d.ts"
   ],
   "scripts": {
-    "build": "cross-env NODE_OPTIONS=--max_old_space_size=8192 cspell-tools-cli compile --keep-raw-case --use-legacy-splitter src/mnemonics.txt --no-compress -o ./dict",
+    "build": "cross-env NODE_OPTIONS=--max_old_space_size=8192 cspell-tools-cli build",
     "prepare:dictionary": "pnpm run build",
     "prepublishOnly": "echo pre-publish",
     "test": "shx head -n 1000 src/mnemonics.txt | cspell -c ./cspell-ext.json \"--locale=*\" \"--languageId=cpp\" stdin"

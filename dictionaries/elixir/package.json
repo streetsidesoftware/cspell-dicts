@@ -33,7 +33,7 @@
     "cspell-ext.json"
   ],
   "scripts": {
-    "build": "cspell-tools-cli compile --keep-raw-case src/elixir.txt --no-compress -o ./dict",
+    "build": "cspell-tools-cli build",
     "prepare:dictionary": "pnpm run build",
     "prepublishOnly": "echo pre-publish",
     "test": "shx head -n 100 src/elixir.txt | cspell -c ./cspell-ext.json --locale=* --languageId=elixir stdin"

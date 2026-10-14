@@ -1,0 +1,13 @@
+# yaml-language-server: $schema=https://raw.githubusercontent.com/streetsidesoftware/cspell/main/packages/cspell-tools/cspell-tools.config.schema.json
+
+$schema: https://raw.githubusercontent.com/streetsidesoftware/cspell/main/packages/cspell-tools/cspell-tools.config.schema.json
+targets:
+  - name: mnemonics
+    targetDirectory: ./dict
+    compress: false
+    format: plaintext
+    sources:
+      - filename: src/mnemonics.txt
+        split: legacy
+    sort: true
+keepRawCase: true

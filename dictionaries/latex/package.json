@@ -35,7 +35,7 @@
     "cspell-ext.json"
   ],
   "scripts": {
-    "build": "cspell-tools-cli compile build",
+    "build": "cspell-tools-cli build",
     "prepare:dictionary": "pnpm run build",
     "prepublishOnly": "echo pre-publish",
     "test": "pnpm run test-dict && pnpm run test-check",
