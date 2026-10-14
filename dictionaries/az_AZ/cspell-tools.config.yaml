@@ -10,6 +10,7 @@ targets:
       - src/hugging-face/additional_words.txt
       - src/hugging-face/azerbaijani_spelling_dictionary_2021.txt
     format: trie3
+    locale: az-AZ
     targetDirectory: './dict'
     generateNonStrict: true
     compress: true

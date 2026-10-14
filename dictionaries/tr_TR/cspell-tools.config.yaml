@@ -4,6 +4,7 @@ targets:
   - name: Turkish
     targetDirectory: .
     format: trie3
+    locale: tr-TR
     sources:
       - src/hunspell/Turkish.dic
       - src/additional_words.txt
