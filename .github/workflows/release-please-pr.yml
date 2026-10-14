@@ -1,0 +1,38 @@
+name: ' 🚀 release-please PR'
+
+# Maintains the release PR. Safe to re-run or cancel: releases and tags are created by release-please.yml.
+
+on:
+  workflow_dispatch:
+  push:
+    branches:
+      - main
+
+permissions:
+  contents: write
+  pull-requests: write
+
+# A newer push replaces a run in progress, so a run can't write files it read before a later merge.
+concurrency:
+  group: ${{ github.workflow }}
+  cancel-in-progress: true
+
+jobs:
+  release-pr:
+    if: github.repository_owner == 'streetsidesoftware'
+    runs-on: ubuntu-latest
+    steps:
+      # An App token, so pushes to the release PR start its checks.
+      - id: generate-token
+        uses: actions/create-github-app-token@bcd2ba49218906704ab6c1aa796996da409d3eb1 # v3.2.0
+        with:
+          client-id: ${{ secrets.AUTOMATION_APP_ID }}
+          private-key: ${{ secrets.AUTOMATION_PRIVATE_KEY }}
+
+      - uses: googleapis/release-please-action@v5
+        id: release
+        with:
+          token: ${{ steps.generate-token.outputs.token }}
+          config-file: release-please-config.json
+          manifest-file: .release-please-manifest.json
+          skip-github-release: true

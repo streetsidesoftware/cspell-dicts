@@ -96,7 +96,7 @@ Show the user the result.
 - **Stop and ask:** offer to run it now. It updates a PR other people may be watching.
 
   ```sh
-  gh workflow run release-please.yml
+  gh workflow run release-please-pr.yml
   ```
 
 - **Do:** after it runs, point the user at the run and the updated release PR.

@@ -17,7 +17,8 @@ must be done by hand (see [New dictionaries](#new-dictionaries)).
 
 1. **Changes collect in a release PR.** The `chore: release main` PR shows every package that will be released, with
    its new version and changelog. Release Please updates it after each merge to `main`. Nothing is released until the
-   PR is merged.
+   PR is merged. To rebuild it, run the [release-please PR](https://github.com/streetsidesoftware/cspell-dicts/actions/workflows/release-please-pr.yml)
+   workflow: it only touches the release PR, never the releases.
 2. **Release Please creates the releases once the release PR has been merged.** Each package gets its own GitHub
    release, tagged `<package name>@<version>`.
 3. **CI publishes them.** Creating the release tags triggers the [Publish to NPM](https://github.com/streetsidesoftware/cspell-dicts/actions/workflows/publish.yml) workflow, which publishes the new
