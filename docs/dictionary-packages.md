@@ -156,7 +156,6 @@ list in its `cspell-ext.json` from its `dependencies`.
 Many dictionaries predate this layout:
 
 - They build into the dictionary's directory instead of `dict/`, such as `de_DE/de_DE.trie`.
-- They build with a `cspell-tools-cli compile` command line instead of `cspell-tools.config.yaml`.
 - Their config doesn't set `checksumFile: true`, so they rebuild every time.
 - They hold a copy of upstream Hunspell files in `src/hunspell/` without a `sync` script.
 - They read another dictionary's files by a relative path, such as `allowedSplitWords: ../en_US/en_US.trie`.
