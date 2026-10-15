@@ -11,8 +11,8 @@ They have been moved here to make the en\_GB dictionary easier to maintain.
 
 | Tool                                                                                                                                 | Version |
 | ------------------------------------------------------------------------------------------------------------------------------------ | ------- |
-| [cspell](https://github.com/streetsidesoftware/cspell)                                                                               | `>= 8`  |
-| [Code Spell Checker - Visual Studio Code](https://marketplace.visualstudio.com/items?itemName=streetsidesoftware.code-spell-checker) | `>= 4`  |
+| [cspell](https://github.com/streetsidesoftware/cspell)                                                                               | `>=8`   |
+| [Code Spell Checker - Visual Studio Code](https://marketplace.visualstudio.com/items?itemName=streetsidesoftware.code-spell-checker) | `>=4`   |
 
 <!--- @@inject-end: ../../static/requirements.md#values-file=:../../static/engines.json&values-file=:cspell-ext.json --->
 
