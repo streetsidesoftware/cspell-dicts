@@ -1,7 +1,5 @@
 # 0005. The friendly name, the descriptions, the contributors and keywords, and when a dictionary is enabled
 
-Status: Accepted
-
 ## Why
 
 **Goal:** easy to adopt. A maintainer can merge a new dictionary after review, without fixing it by hand.

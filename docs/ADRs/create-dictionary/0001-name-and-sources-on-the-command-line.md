@@ -1,7 +1,5 @@
 # 0001. How the name and the sources are given on the command line
 
-Status: Accepted
-
 ## Why
 
 **Goal:** easy to create. A contributor gives every source of the dictionary when creating it, in one command or in the

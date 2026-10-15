@@ -1,7 +1,5 @@
 # 0008. Sources are explained in the dictionary's README and in `src/README.md`
 
-Status: Accepted
-
 ## Why
 
 **Goal:** traceable. Anyone looking at a dictionary, on npm or in the repo, can see where its words came from and under

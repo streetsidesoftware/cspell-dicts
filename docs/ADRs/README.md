@@ -53,16 +53,16 @@ separate ADRs (a dictionary's IDs, and which file types it's enabled for).
 
 ## Status
 
-An ADR's status:
+A feature's status, in the [Features](#features) table, says how far it has got:
 
-- `Proposed`: under discussion.
-- `Accepted`: decided.
-
-A feature's status, in the [Features](#features) table:
-
-- `Designing`: the interview is still going.
-- `Accepted`: the design is decided, whether or not it's built yet.
+- `Designing`: the design isn't merged yet.
+- `Building`: the design is merged, and some steps of its Build order aren't.
+- `Shipped`: everything in the design is built on `main`. The PR that builds the last step sets it. Fill in the
+  Shipped column when the first release that has it all is published.
 - `Archived`: shipped, and its ADRs replaced by a summary.
+
+The PR that moves a feature on changes its status. ADRs have no status of their own: the feature's Build order shows
+which decisions are built.
 
 ## Designing a feature
 
@@ -79,7 +79,11 @@ before merge.
 - Write an ADR for each decision as it's made, and add its row to the feature's `README.md`.
 - Commit each ADR as it's written. The commits let us go back to an earlier point and see how an idea evolved. They
   stay in the PR, so the ADRs don't need to carry that history.
-- Record questions that were deferred under "Open questions" in the feature's `README.md`.
+- Record questions that were deferred under "Open questions" in the feature's `README.md`, each with what it's
+  waiting on.
+- Use a name that isn't decided yet (a file, an option, a command) as written in the ADRs, and list it under
+  "Provisional names" in the feature's `README.md`, with when it must be decided. A name becomes public once it ships,
+  so it's decided by the PR that builds it at the latest.
 - Restructure whenever the ADRs stop reading as one line from the Why: merge, split, or renumber them. Nothing outside
   the feature links to a single ADR, so only the links between its own ADRs need fixing.
 
@@ -101,7 +105,12 @@ commits. What the design work showed to be important stays in the ADRs.
 - Write each ADR as the current decision, without the timeline. Keep in its Context the background and what we learned
   along the way, including approaches tried before. List rejected approaches briefly.
 - Put what we learned about the feature as a whole in the "What we learned" section of its `README.md`.
-- Renumber from `0001`, mark everything `Accepted`, and update the index.
+- Answer any open question that could change the design's shape. The others can stay, each saying what it's waiting
+  on. Provisional names can stay too, each with when it must be decided.
+- Renumber from `0001`, and update the index.
+- If the design merges before it's built, add a Build order: one step per PR, each naming the ADRs it builds. Each
+  step is ticked off by the PR that builds it. Set the feature's status to `Building`, or to `Shipped` if the design
+  and the code merge together.
 - Have someone new to the design read only the feature's `README.md` and its ADRs. They should be able to say what gets
   built, why, and how the decisions fit together. Fix whatever they couldn't.
 
@@ -111,7 +120,9 @@ Building or using a feature often shows a better answer. When it does, change th
 same PR:
 
 - Rewrite the ADR in place to state the current decision. Move the old choice to Rejected approaches, and add what we
-  learned to its Context. The earlier version stays in git history.
+  learned to its Context. The earlier version stays in git history. If the change isn't built in the same PR, add a
+  step for it to the feature's Build order, adding the section back if it was removed, and set the feature to
+  `Building`.
 - Delete an ADR that no longer applies, and renumber the rest if needed. Links go only to the feature's `README.md`, so
   only the links between its own ADRs need fixing.
 - Update the feature's index, and its "What we learned" section when the change taught something about the whole
@@ -126,6 +137,8 @@ by a short summary. Archive a feature when it's due, or earlier when a maintaine
   first release containing it is published.
 - Before deleting anything, move what is still in force to its long-term home: a rule goes to the doc under
   `docs/` where it applies.
+- Carry the learnings into the summary's Learnings and improvements: the feature's What we learned, any learning in an
+  ADR's Context that still matters, and what building and using the feature changed.
 - Rewrite the feature's `README.md` as the archive summary, with a permalink to the full ADRs in git history.
 - Delete the individual ADR files, and mark the feature archived in the table below.
 
@@ -152,4 +165,4 @@ ADRs, keeps the glossaries current, and offers to archive features that are due.
 
 | Feature                                            | Description                                                                                                       | Shipped | Status   |
 | -------------------------------------------------- | ----------------------------------------------------------------------------------------------------------------- | ------- | -------- |
-| [create-dictionary](./create-dictionary/README.md) | How `pnpm create-dictionary` creates a dictionary package: options, sources, and what the new dictionary contains |         | Accepted |
+| [create-dictionary](./create-dictionary/README.md) | How `pnpm create-dictionary` creates a dictionary package: options, sources, and what the new dictionary contains |         | Building |

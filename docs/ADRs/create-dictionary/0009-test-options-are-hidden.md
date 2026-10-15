@@ -1,7 +1,5 @@
 # 0009. Options for tests are hidden from `--help`
 
-Status: Accepted
-
 ## Why
 
 **Goal:** easy to create. `--help` shows only the options someone creating a dictionary needs.

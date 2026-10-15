@@ -1,7 +1,5 @@
 # 0006. How a new dictionary is built: trie, build at creation, and Hunspell depth
 
-Status: Accepted
-
 ## Why
 
 **Goals:** easy to create, and easy to adopt. A new dictionary is stored and built sensibly without the contributor

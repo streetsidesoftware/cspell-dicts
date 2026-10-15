@@ -1,7 +1,5 @@
 # 0007. Samples test a new dictionary: real examples where possible, and a static word sample
 
-Status: Accepted
-
 ## Why
 
 **Goals:** tested, and easy to adopt. Every new dictionary has a test that shows it works, and real examples that check

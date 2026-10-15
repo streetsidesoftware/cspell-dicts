@@ -1,7 +1,5 @@
 # 0004. Every new dictionary gets `src/additional_words.txt` and `src/exclude_words.txt`
 
-Status: Accepted
-
 ## Why
 
 **Goal:** easy to maintain. Every new dictionary has one known place to add a word and one to remove it.
