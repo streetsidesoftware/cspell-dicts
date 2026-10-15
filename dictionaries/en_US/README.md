@@ -8,16 +8,16 @@ This is a pre-built dictionary for use with cspell.
 
 This dictionary comes pre-installed with cspell. It should not be necessary to add it.
 
-<!--- @@inject: ../../static/requirements.md --->
+<!--- @@inject: ../../static/requirements.md#values-file=:../../static/engines.json&values-file=:cspell-ext.json --->
 
 ## Requirements
 
 | Tool                                                                                                                                 | Version |
 | ------------------------------------------------------------------------------------------------------------------------------------ | ------- |
-| [cspell](https://github.com/streetsidesoftware/cspell)                                                                               | `>= 8`  |
-| [Code Spell Checker - Visual Studio Code](https://marketplace.visualstudio.com/items?itemName=streetsidesoftware.code-spell-checker) | `>= 4`  |
+| [cspell](https://github.com/streetsidesoftware/cspell)                                                                               | `>=8`   |
+| [Code Spell Checker - Visual Studio Code](https://marketplace.visualstudio.com/items?itemName=streetsidesoftware.code-spell-checker) | `>=4`   |
 
-<!--- @@inject-end: ../../static/requirements.md --->
+<!--- @@inject-end: ../../static/requirements.md#values-file=:../../static/engines.json&values-file=:cspell-ext.json --->
 
 <!--- @@inject: ./static/install.md --->
 
