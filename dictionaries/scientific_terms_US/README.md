@@ -6,7 +6,7 @@ The words for this dictionary came from [John Petrie’s LifeBlag](http://www.jp
 
 This is a pre-built dictionary for use with cspell.
 
-<!--- @@inject: ../../static/requirements.md --->
+<!--- @@inject: ../../static/requirements.md#values-file=:../../static/engines.json&values-file=:cspell-ext.json --->
 
 ## Requirements
 
@@ -15,7 +15,7 @@ This is a pre-built dictionary for use with cspell.
 | [cspell](https://github.com/streetsidesoftware/cspell)                                                                               | `>= 8`  |
 | [Code Spell Checker - Visual Studio Code](https://marketplace.visualstudio.com/items?itemName=streetsidesoftware.code-spell-checker) | `>= 4`  |
 
-<!--- @@inject-end: ../../static/requirements.md --->
+<!--- @@inject-end: ../../static/requirements.md#values-file=:../../static/engines.json&values-file=:cspell-ext.json --->
 
 <!--- @@inject: ./static/install.md --->
 

@@ -29,7 +29,7 @@ Please send them to the author for inclusion in the next revision.
 
 Jaak Pruulmann <jjpp@meso.ee>
 
-<!--- @@inject: ../../static/requirements.md --->
+<!--- @@inject: ../../static/requirements.md#values-file=:../../static/engines.json&values-file=:cspell-ext.json --->
 
 ## Requirements
 
@@ -38,7 +38,7 @@ Jaak Pruulmann <jjpp@meso.ee>
 | [cspell](https://github.com/streetsidesoftware/cspell)                                                                               | `>= 8`  |
 | [Code Spell Checker - Visual Studio Code](https://marketplace.visualstudio.com/items?itemName=streetsidesoftware.code-spell-checker) | `>= 4`  |
 
-<!--- @@inject-end: ../../static/requirements.md --->
+<!--- @@inject-end: ../../static/requirements.md#values-file=:../../static/engines.json&values-file=:cspell-ext.json --->
 
 <!--- @@inject: ./static/install.md --->
 

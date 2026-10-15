@@ -4,7 +4,7 @@ Danish dictionary for CSpell.
 
 This is a pre-built dictionary, base on [Stavekontrolden](https://www.stavekontrolden.dk), for use with CSpell.
 
-<!--- @@inject: ../../static/requirements.md --->
+<!--- @@inject: ../../static/requirements.md#values-file=:../../static/engines.json&values-file=:cspell-ext.json --->
 
 ## Requirements
 
@@ -13,7 +13,7 @@ This is a pre-built dictionary, base on [Stavekontrolden](https://www.stavekontr
 | [cspell](https://github.com/streetsidesoftware/cspell)                                                                               | `>= 8`  |
 | [Code Spell Checker - Visual Studio Code](https://marketplace.visualstudio.com/items?itemName=streetsidesoftware.code-spell-checker) | `>= 4`  |
 
-<!--- @@inject-end: ../../static/requirements.md --->
+<!--- @@inject-end: ../../static/requirements.md#values-file=:../../static/engines.json&values-file=:cspell-ext.json --->
 
 <!--- @@inject: ./static/install.md --->
 

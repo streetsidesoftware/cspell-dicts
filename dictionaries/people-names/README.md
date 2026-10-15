@@ -44,7 +44,7 @@ Names can be removed if they:
 
 Names will not be removed just because someone finds them offensive.
 
-<!--- @@inject: ../../static/requirements.md --->
+<!--- @@inject: ../../static/requirements.md#values-file=:../../static/engines.json&values-file=:cspell-ext.json --->
 
 ## Requirements
 
@@ -53,7 +53,7 @@ Names will not be removed just because someone finds them offensive.
 | [cspell](https://github.com/streetsidesoftware/cspell)                                                                               | `>= 8`  |
 | [Code Spell Checker - Visual Studio Code](https://marketplace.visualstudio.com/items?itemName=streetsidesoftware.code-spell-checker) | `>= 4`  |
 
-<!--- @@inject-end: ../../static/requirements.md --->
+<!--- @@inject-end: ../../static/requirements.md#values-file=:../../static/engines.json&values-file=:cspell-ext.json --->
 
 <!--- @@inject: ./static/install.md --->
 

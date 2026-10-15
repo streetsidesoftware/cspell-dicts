@@ -6,7 +6,7 @@ This is a pre-built dictionary for use with cspell. It contains all registered I
 (media types) sourced from the [jshttp/mime-db](https://github.com/jshttp/mime-db) project,
 which aggregates data from IANA, Apache, and Nginx.
 
-<!--- @@inject: ../../static/requirements.md --->
+<!--- @@inject: ../../static/requirements.md#values-file=:../../static/engines.json&values-file=:cspell-ext.json --->
 
 ## Requirements
 
@@ -15,7 +15,7 @@ which aggregates data from IANA, Apache, and Nginx.
 | [cspell](https://github.com/streetsidesoftware/cspell)                                                                               | `>= 8`  |
 | [Code Spell Checker - Visual Studio Code](https://marketplace.visualstudio.com/items?itemName=streetsidesoftware.code-spell-checker) | `>= 4`  |
 
-<!--- @@inject-end: ../../static/requirements.md --->
+<!--- @@inject-end: ../../static/requirements.md#values-file=:../../static/engines.json&values-file=:cspell-ext.json --->
 
 <!--- @@inject: ./static/install.md --->
 
