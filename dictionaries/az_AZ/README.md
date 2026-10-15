@@ -149,10 +149,6 @@ See: [How to Create a New Dictionary](https://github.com/streetsidesoftware/cspe
 
 The Hunspell dictionary files (`az.dic` and `az.aff`) are sourced from the [mozillaz/spellchecker](https://github.com/mozillaz/spellchecker) project, which provides Azerbaijani spell-checking support for Firefox and other applications.
 
-Another, additional dictionary has been sourced from [Hugging Face](https://huggingface.co/datasets/LocalDoc/azerbaijani_spelling_dictionary_2021) by `vrashad`.
-
-<!-- cspell:ignore vrashad -->
-
 ## License
 
 MIT
