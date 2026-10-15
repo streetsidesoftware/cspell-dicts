@@ -22,6 +22,13 @@ See [Conventional Commits](https://conventionalcommits.org) for commit guideline
 
 
 
+## [4.0.8](https://github.com/streetsidesoftware/cspell-dicts/compare/@cspell/dict-lt-lt@4.0.7...@cspell/dict-lt-lt@4.0.8) (2026-10-15)
+
+
+### Updates and Bug Fixes
+
+* build tr_TR, az_AZ, and lt_LT with their language's case rules ([#5905](https://github.com/streetsidesoftware/cspell-dicts/issues/5905)) ([d5f4aab](https://github.com/streetsidesoftware/cspell-dicts/commit/d5f4aab60bee8bd034287281b5e78a077eacfc9d))
+
 ## [4.0.7](https://github.com/streetsidesoftware/cspell-dicts/compare/@cspell/dict-lt-lt@4.0.6...@cspell/dict-lt-lt@4.0.7) (2026-10-13)
 
 

@@ -1,5 +1,19 @@
 # Change Log
 
+## [2.0.0](https://github.com/streetsidesoftware/cspell-dicts/compare/@cspell/dict-az-az@1.1.1...@cspell/dict-az-az@2.0.0) (2026-10-15)
+
+
+### ⚠ BREAKING CHANGES
+
+* **az_AZ:** find capital İ words with Azerbaijani case rules ([#5910](https://github.com/streetsidesoftware/cspell-dicts/issues/5910))
+
+### Updates and Bug Fixes
+
+* **az_AZ:** find capital İ words with Azerbaijani case rules ([#5910](https://github.com/streetsidesoftware/cspell-dicts/issues/5910)) ([5f410a4](https://github.com/streetsidesoftware/cspell-dicts/commit/5f410a406f641fae62cec4abddaf8e22f0b9fdd8))
+* **az_AZ:** require cspell 10.4.0 and Code Spell Checker 4.10.0 ([#5915](https://github.com/streetsidesoftware/cspell-dicts/issues/5915)) ([6844bb9](https://github.com/streetsidesoftware/cspell-dicts/commit/6844bb9d221e8186c2e6cfd022656d1865726b2e))
+* build tr_TR, az_AZ, and lt_LT with their language's case rules ([#5905](https://github.com/streetsidesoftware/cspell-dicts/issues/5905)) ([d5f4aab](https://github.com/streetsidesoftware/cspell-dicts/commit/d5f4aab60bee8bd034287281b5e78a077eacfc9d))
+* Workflow Bot -- Build Dictionaries ([#5913](https://github.com/streetsidesoftware/cspell-dicts/issues/5913)) ([2e808f7](https://github.com/streetsidesoftware/cspell-dicts/commit/2e808f7e807e5d9791054f1dbb0672e388968131))
+
 ## [1.1.1](https://github.com/streetsidesoftware/cspell-dicts/compare/@cspell/dict-az-az@1.1.0...@cspell/dict-az-az@1.1.1) (2026-08-09)
 
 
