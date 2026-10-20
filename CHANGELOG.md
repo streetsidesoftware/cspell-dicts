@@ -1,5 +1,20 @@
 # Release Notes
 
+## [34.0.1](https://github.com/streetsidesoftware/cspell-dicts/compare/cspell-dicts@34.0.0...cspell-dicts@34.0.1) (2026-10-20)
+
+
+### Updates and Bug Fixes
+
+* **scientific_terms_US:** enable the dictionaries without languageSettings ([#5925](https://github.com/streetsidesoftware/cspell-dicts/issues/5925)) ([27de9b5](https://github.com/streetsidesoftware/cspell-dicts/commit/27de9b551d3c01d07a86542b15ec73e95d77bbcd))
+* Workflow Bot -- Update Dictionaries ([#5920](https://github.com/streetsidesoftware/cspell-dicts/issues/5920)) ([747a7da](https://github.com/streetsidesoftware/cspell-dicts/commit/747a7da56dd77f7586b13702c31dddafdfcdfa90))
+
+
+### Dependencies
+
+* The following workspace dependencies were updated
+  * devDependencies
+    * @cspell/dict-cspell-bundle bumped to 2.0.81
+
 ## [34.0.0](https://github.com/streetsidesoftware/cspell-dicts/compare/cspell-dicts@33.17.2...cspell-dicts@34.0.0) (2026-10-15)
 
 
