@@ -128,13 +128,6 @@ dictionaries:
 | `scientific-terms-us`  | **Yes** | Scientific Terms US dictionary.  |
 | `mathematics-terms-us` | **Yes** | Mathematics Terms US dictionary. |
 
-## Language Settings
-
-| Name                   | Locale | File Type |
-| ---------------------- | ------ | --------- |
-| `scientific-terms-us`  | `*`    | `*`       |
-| `mathematics-terms-us` | `*`    | `*`       |
-
 <!--- @@inject-end: ./static/install.md --->
 
 <!--- @@inject: ../../static/contributing.md --->
