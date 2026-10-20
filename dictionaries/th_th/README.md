@@ -8,10 +8,10 @@ This is a pre-built dictionary for use with CSpell.
 
 ## Requirements
 
-| Tool                                                                                                                                 | Version |
-| ------------------------------------------------------------------------------------------------------------------------------------ | ------- |
-| [cspell](https://github.com/streetsidesoftware/cspell)                                                                               | `>=8`   |
-| [Code Spell Checker - Visual Studio Code](https://marketplace.visualstudio.com/items?itemName=streetsidesoftware.code-spell-checker) | `>=4`   |
+| Tool                                                                                                                                 | Version    |
+| ------------------------------------------------------------------------------------------------------------------------------------ | ---------- |
+| [cspell](https://github.com/streetsidesoftware/cspell)                                                                               | `>=10.3.5` |
+| [Code Spell Checker - Visual Studio Code](https://marketplace.visualstudio.com/items?itemName=streetsidesoftware.code-spell-checker) | `>=4.9.6`  |
 
 <!--- @@inject-end: ../../static/requirements.md#values-file=:../../static/engines.json&values-file=:cspell-ext.json --->
 
