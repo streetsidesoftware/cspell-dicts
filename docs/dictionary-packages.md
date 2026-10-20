@@ -36,11 +36,12 @@ dictionaries/<name>/
 
 - **`package.json`:** the package, published as `@cspell/dict-<name>`. A new dictionary starts private, at
   `0.0.1-alpha.0`, until a maintainer publishes it (see [Releasing](./releasing.md#new-dictionaries)).
-- **`cspell-ext.json`:** what users import. It defines the dictionary IDs (`dictionaryDefinitions`) and the file types
-  and locales they're enabled for (`languageSettings`). One package can define several IDs: `@cspell/dict-python`
-  defines `python` and `python-common`. If the dictionary needs newer versions of cspell or Code Spell Checker than
-  [`static/engines.json`](../static/engines.json) gives, its `engines` field says which. The README's Requirements
-  table shows them.
+- **`cspell-ext.json`:** what users import. It defines the dictionary IDs (`dictionaryDefinitions`) and when they're
+  on: for some file types and locales (`languageSettings`), always (the top-level `dictionaries`), or not until users
+  turn them on (neither). See [Decide the design](./guides/new-dictionary.md#2-decide-the-design). One package can
+  define several IDs: `@cspell/dict-python` defines `python` and `python-common`. If the dictionary needs newer
+  versions of cspell or Code Spell Checker than [`static/engines.json`](../static/engines.json) gives, its `engines`
+  field says which. The README's Requirements table shows them.
 - **`cspell-tools.config.yaml`:** how `src/` is built into `dict/`.
 - **`src/`:** the words. This is what contributors edit. A dictionary's own word lists sit directly in `src/`. Each
   third-party source has its own folder, `src/<source>/`, and `src/sources.yaml` lists each one's files, license,

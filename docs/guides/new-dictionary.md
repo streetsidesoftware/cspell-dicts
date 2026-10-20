@@ -39,11 +39,18 @@ If an existing dictionary comes close, adding words to it may be the better chan
 - **Directory name:** a short name, such as `ruby` or `en_AU`. The package name is derived from it:
   `@cspell/dict-<name>`, lowercase, with other characters replaced by `-` (`en_AU` becomes `@cspell/dict-en-au`).
 - **Dictionary IDs:** usually the same name. A dictionary package can define more than one.
-- **Locale and file type:** which files cspell uses the dictionary for, set by `locale` and `languageId` in
-  `languageSettings`. Or leave it off, so users add it to `dictionaries` themselves.
-  - A natural language dictionary sets the locale, such as `en-AU`, and leaves the file type as `*`.
-  - Any other dictionary sets the file type, such as `ruby`, and leaves the locale as `*`.
-  - Not both `*`: that enables the dictionary for every file in every language.
+- **When it's on:** which files cspell uses the dictionary for. Pick one:
+  - **For some locales or file types:** set `locale` and `languageId` in `languageSettings`. A natural language
+    dictionary sets the locale, such as `en-AU`, and leaves the file type as `*`. Any other dictionary sets the file
+    type, such as `ruby`, and leaves the locale as `*`.
+  - **Off until users turn it on:** for words that are only right in some projects. Users add the dictionary ID to
+    `dictionaries` themselves.
+  - **Always on:** list the dictionary ID in the top-level `dictionaries`, as `@cspell/dict-software-terms` does.
+
+  Never use a `languageSettings` entry with both `locale` and `languageId` set to `*`. Use the top-level
+  `dictionaries` instead, so users find every always-on dictionary in the same place when they turn one off or limit
+  it.
+
 - **Format:** plaintext, or a trie for large lists such as Hunspell dictionaries.
 
 If this dictionary doesn't fit these steps, [open an issue](https://github.com/streetsidesoftware/cspell-dicts/issues/new)
