@@ -1,5 +1,26 @@
 # Release Notes
 
+## [34.1.0](https://github.com/streetsidesoftware/cspell-dicts/compare/cspell-dicts@34.0.2...cspell-dicts@34.1.0) (2026-10-21)
+
+
+### Features
+
+* **cpp:** support CUDA files ([#5938](https://github.com/streetsidesoftware/cspell-dicts/issues/5938)) ([1f7b67b](https://github.com/streetsidesoftware/cspell-dicts/commit/1f7b67b1b8e24aee3e9b35a3919b0e77538239b3))
+
+
+### Updates and Bug Fixes
+
+* **cpp:** exclude the typos "hge" and "hte" ([#5944](https://github.com/streetsidesoftware/cspell-dicts/issues/5944)) ([069f3be](https://github.com/streetsidesoftware/cspell-dicts/commit/069f3be8b6c4cd3b755854f68fc03ab96c60276d))
+* **en_shared:** add "misplacements" ([#5939](https://github.com/streetsidesoftware/cspell-dicts/issues/5939)) ([f06259d](https://github.com/streetsidesoftware/cspell-dicts/commit/f06259d7339a8aedba32cf6c2b666a3cfb5287cd))
+* **vim:** turn on for .vim, .vimrc, and vimrc files ([#5941](https://github.com/streetsidesoftware/cspell-dicts/issues/5941)) ([64207da](https://github.com/streetsidesoftware/cspell-dicts/commit/64207dadc21ea2ecee4c6355378a1ae58ba92776))
+
+
+### Dependencies
+
+* The following workspace dependencies were updated
+  * devDependencies
+    * @cspell/dict-cspell-bundle bumped to 2.0.83
+
 ## [34.0.2](https://github.com/streetsidesoftware/cspell-dicts/compare/cspell-dicts@34.0.1...cspell-dicts@34.0.2) (2026-10-21)
 
 

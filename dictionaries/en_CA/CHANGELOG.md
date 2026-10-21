@@ -1,5 +1,19 @@
 # Changelog
 
+## [1.0.69](https://github.com/streetsidesoftware/cspell-dicts/compare/@cspell/dict-en-ca@1.0.68...@cspell/dict-en-ca@1.0.69) (2026-10-21)
+
+
+### Updates and Bug Fixes
+
+* **en_shared:** add "misplacements" ([#5939](https://github.com/streetsidesoftware/cspell-dicts/issues/5939)) ([f06259d](https://github.com/streetsidesoftware/cspell-dicts/commit/f06259d7339a8aedba32cf6c2b666a3cfb5287cd))
+
+
+### Dependencies
+
+* The following workspace dependencies were updated
+  * devDependencies
+    * @cspell/dict-en-shared bumped to 1.0.58
+
 ## [1.0.68](https://github.com/streetsidesoftware/cspell-dicts/compare/@cspell/dict-en-ca@1.0.67...@cspell/dict-en-ca@1.0.68) (2026-10-21)
 
 

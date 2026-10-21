@@ -1,5 +1,12 @@
 # Change Log
 
+## [1.0.11](https://github.com/streetsidesoftware/cspell-dicts/compare/@cspell/dict-vim@1.0.10...@cspell/dict-vim@1.0.11) (2026-10-21)
+
+
+### Updates and Bug Fixes
+
+* **vim:** turn on for .vim, .vimrc, and vimrc files ([#5941](https://github.com/streetsidesoftware/cspell-dicts/issues/5941)) ([64207da](https://github.com/streetsidesoftware/cspell-dicts/commit/64207dadc21ea2ecee4c6355378a1ae58ba92776))
+
 ## [1.0.10](https://github.com/streetsidesoftware/cspell-dicts/compare/@cspell/dict-vim@1.0.9...@cspell/dict-vim@1.0.10) (2025-07-19)
 
 
