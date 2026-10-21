@@ -7,17 +7,15 @@
         "/src/cpp-legacy.txt",
         "dict"
     ],
-    "dictionaries": [
-        "cpp",
-        "cpp-refined",
-        "cpp-legacy",
-        "cpp-compound-words"
-    ],
     "import": [
         "./cspell-ext.json"
     ],
     "ignoreWords": [],
     "overrides": [
+        {
+            "filename": "**/*.{md,txt,yaml}",
+            "dictionaries": ["cpp", "cpp-refined", "cpp-legacy", "cpp-compound-words"]
+        },
         {
             "filename": "src/**",
             "dictionaries": [

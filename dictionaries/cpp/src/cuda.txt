@@ -1,4 +1,9 @@
 # CUDA keywords, built-ins, and runtime and library names.
+# The platform, as in `using CUDA` (CUDA.jl) and `from numba import cuda`
+# https://cuda.juliagpu.org/stable/tutorials/introduction/
+# https://nvidia.github.io/numba-cuda/user/kernels.html
+cuda
+
 # Qualifiers and attributes
 # https://docs.nvidia.com/cuda/cuda-programming-guide/05-appendices/cpp-language-extensions.html
 __constant__
@@ -108,3 +113,69 @@ Numba
 Dgemm
 Hgemm
 Sgemm
+
+# Device functions without the C++ underscores, as in Numba's cuda.syncthreads()
+# https://nvidia.github.io/numba-cuda/reference/kernel.html
+# https://cuda.juliagpu.org/stable/api/kernel/
+# https://docs.nvidia.com/hpc-sdk/compilers/cuda-fortran-prog-guide/index.html
+activemask
+brev
+cbrt
+clz
+ffs
+gridsize
+laneid
+lanemask
+nanosleep
+popc
+selp
+syncthreads
+syncwarp
+threadfence
+
+# Numba half-precision intrinsics, as in cuda.fp16.hadd
+# https://nvidia.github.io/numba-cuda/reference/kernel.html
+habs
+hadd
+hcos
+hdiv
+heq
+hexp
+hfma
+hge
+hgt
+hle
+hlog
+hlt
+hmax
+hmin
+hmul
+hne
+hneg
+hrcp
+hsin
+hsub
+
+# CUDA.jl
+# https://cuda.juliagpu.org/stable/api/kernel/
+# https://cuda.juliagpu.org/stable/api/compiler/
+# https://cuda.juliagpu.org/stable/usage/array/
+CuArray
+cuassert
+cudaconvert
+cufunction
+cuprint
+cuprintf
+cuprintln
+cushow
+maxregs
+shmem
+
+# CUDA Fortran
+# https://docs.nvidia.com/hpc-sdk/compilers/cuda-fortran-prog-guide/index.html
+allthreads
+anythread
+cudafor
+cuf
+istat
+nvfortran

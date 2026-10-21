@@ -83,13 +83,13 @@ dictionaries:
 
 ## Language Settings
 
-| Name                 | Locale | File Type                                            |
-| -------------------- | ------ | ---------------------------------------------------- |
-| `cpp-legacy`         | `*`    | `c`, `cpp`, `cuda-cpp`                               |
-| `cpp`                | `*`    | `c`, `cpp`, `cuda-cpp`                               |
-| `cpp-compound-words` | `*`    | `c`, `cpp`, `cuda-cpp`                               |
-| `cpp-refined`        | `*`    | `c`, `cpp`, `cuda-cpp`                               |
-| `cuda`               | `*`    | `c`, `cpp`, `cuda-cpp`, `python`, `julia`, `fortran` |
+| Name                 | Locale | File Type                                                                                   |
+| -------------------- | ------ | ------------------------------------------------------------------------------------------- |
+| `cpp-legacy`         | `*`    | `c`, `cpp`, `cuda-cpp`                                                                      |
+| `cpp`                | `*`    | `c`, `cpp`, `cuda-cpp`                                                                      |
+| `cpp-compound-words` | `*`    | `c`, `cpp`, `cuda-cpp`                                                                      |
+| `cpp-refined`        | `*`    | `c`, `cpp`, `cuda-cpp`                                                                      |
+| `cuda`               | `*`    | `c`, `cpp`, `cuda-cpp`, `python`, `julia`, `fortran`, `FortranFreeForm`, `FortranFixedForm` |
 
 <!--- @@inject-end: ./static/install.md --->
 
