@@ -27,12 +27,17 @@
             "path": "./dict/cpp-refined.txt.gz",
             "description": "Refined list of C/C++ Keywords and common library functions.",
             "ignoreForbiddenWords": true
+        },
+        {
+            "name": "cuda",
+            "path": "./dict/cuda.txt.gz",
+            "description": "CUDA keywords, built-ins, and runtime and library functions."
         }
     ],
     "dictionaries": [],
     "languageSettings": [
         {
-            "languageId": "c,cpp",
+            "languageId": "c,cpp,cuda-cpp",
             "locale": "*",
             "ignoreRegExpList": ["includes", "hex-digits"],
             "patterns": [
@@ -47,6 +52,11 @@
             ],
             "dictionaries": ["cpp", "cpp-refined", "cpp-legacy", "cpp-compound-words"],
             "dictionaryDefinitions": []
+        },
+        {
+            "languageId": "c,cpp,cuda-cpp,python,julia,fortran,FortranFreeForm,FortranFixedForm",
+            "locale": "*",
+            "dictionaries": ["cuda"]
         }
     ]
 }

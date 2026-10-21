@@ -296,44 +296,64 @@
       {
         "name": "cpp-legacy",
         "description": "Legacy C/C++ Keywords and common library functions.",
-        "fileTypes": ["c", "cpp"],
+        "fileTypes": ["c", "cpp", "cuda-cpp"],
         "localeFileTypes": [
           {
             "locale": "*",
-            "fileType": "c, cpp"
+            "fileType": "c, cpp, cuda-cpp"
           }
         ]
       },
       {
         "name": "cpp",
         "description": "C/C++ Keywords and common library functions.",
-        "fileTypes": ["c", "cpp"],
+        "fileTypes": ["c", "cpp", "cuda-cpp"],
         "localeFileTypes": [
           {
             "locale": "*",
-            "fileType": "c, cpp"
+            "fileType": "c, cpp, cuda-cpp"
           }
         ]
       },
       {
         "name": "cpp-compound-words",
         "description": "C/C++ Common word compounds.",
-        "fileTypes": ["c", "cpp"],
+        "fileTypes": ["c", "cpp", "cuda-cpp"],
         "localeFileTypes": [
           {
             "locale": "*",
-            "fileType": "c, cpp"
+            "fileType": "c, cpp, cuda-cpp"
           }
         ]
       },
       {
         "name": "cpp-refined",
         "description": "Refined list of C/C++ Keywords and common library functions.",
-        "fileTypes": ["c", "cpp"],
+        "fileTypes": ["c", "cpp", "cuda-cpp"],
         "localeFileTypes": [
           {
             "locale": "*",
-            "fileType": "c, cpp"
+            "fileType": "c, cpp, cuda-cpp"
+          }
+        ]
+      },
+      {
+        "name": "cuda",
+        "description": "CUDA keywords, built-ins, and runtime and library functions.",
+        "fileTypes": [
+          "FortranFixedForm",
+          "FortranFreeForm",
+          "c",
+          "cpp",
+          "cuda-cpp",
+          "fortran",
+          "julia",
+          "python"
+        ],
+        "localeFileTypes": [
+          {
+            "locale": "*",
+            "fileType": "c, cpp, cuda-cpp, python, julia, fortran, FortranFreeForm, FortranFixedForm"
           }
         ]
       }
