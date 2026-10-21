@@ -36,6 +36,8 @@
     "build": "cspell-tools-cli build",
     "prepare:dictionary": "pnpm run build",
     "prepublishOnly": "echo pre-publish",
-    "test": "shx cat \"php.txt\" | cspell -c ./cspell-ext.json --locale=* --languageId=php stdin"
+    "test": "pnpm run test:words && pnpm run test:samples",
+    "test:samples": "cspell -r samples .",
+    "test:words": "shx head -n 1000 \"src/php.txt\" | cspell -c ./cspell.json \"--locale=*\" --languageId=php stdin"
   }
 }
