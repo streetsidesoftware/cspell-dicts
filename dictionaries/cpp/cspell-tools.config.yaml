@@ -36,6 +36,7 @@ targets:
         split: true
     excludeWordsFrom:
       - src/exclude-terms.txt
+      - src/exclude-common-typos.txt
     format: plaintext
     targetDirectory: './dict'
     generateNonStrict: false
@@ -53,6 +54,7 @@ targets:
         #   - ../software-terms/dict/softwareTerms.txt
     excludeWordsFrom:
       - src/exclude-terms.txt
+      - src/exclude-common-typos.txt
     format: plaintext
     targetDirectory: './dict'
     generateNonStrict: false
@@ -94,6 +96,7 @@ targets:
       - filename: src/compound-words.txt
     excludeWordsFrom:
       - src/exclude-terms.txt
+      - src/exclude-common-typos.txt
     format: plaintext
     targetDirectory: './dict'
     generateNonStrict: false
@@ -130,6 +133,7 @@ targets:
       - ../en_US/en_US.trie
       - ../software-terms/dict/softwareTerms.txt
       - src/exclude-terms.txt
+      - src/exclude-common-typos.txt
     targetDirectory: './dict'
     generateNonStrict: false
     removeDuplicates: true
@@ -140,6 +144,8 @@ targets:
     sources:
       - filename: src/cuda.txt
         split: true
+    excludeWordsFrom:
+      - src/exclude-common-typos.txt
     format: plaintext
     targetDirectory: './dict'
     generateNonStrict: false
