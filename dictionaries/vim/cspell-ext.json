@@ -12,5 +12,11 @@
         }
     ],
     "dictionaries": [],
-    "languageSettings": []
+    "languageSettings": [],
+    "overrides": [
+        {
+            "filename": ["**/*.vim", "**/.vimrc", "**/vimrc"],
+            "dictionaries": ["vim"]
+        }
+    ]
 }
