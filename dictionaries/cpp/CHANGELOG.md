@@ -3,6 +3,18 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+## [7.2.0](https://github.com/streetsidesoftware/cspell-dicts/compare/@cspell/dict-cpp@7.1.3...@cspell/dict-cpp@7.2.0) (2026-10-21)
+
+
+### Features
+
+* **cpp:** support CUDA files ([#5938](https://github.com/streetsidesoftware/cspell-dicts/issues/5938)) ([1f7b67b](https://github.com/streetsidesoftware/cspell-dicts/commit/1f7b67b1b8e24aee3e9b35a3919b0e77538239b3))
+
+
+### Updates and Bug Fixes
+
+* **cpp:** exclude the typos "hge" and "hte" ([#5944](https://github.com/streetsidesoftware/cspell-dicts/issues/5944)) ([069f3be](https://github.com/streetsidesoftware/cspell-dicts/commit/069f3be8b6c4cd3b755854f68fc03ab96c60276d))
+
 ## [7.1.3](https://github.com/streetsidesoftware/cspell-dicts/compare/@cspell/dict-cpp@7.1.2...@cspell/dict-cpp@7.1.3) (2026-10-01)
 
 

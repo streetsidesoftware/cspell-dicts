@@ -1,5 +1,12 @@
 # Change Log
 
+## [1.0.58](https://github.com/streetsidesoftware/cspell-dicts/compare/@cspell/dict-en-shared@1.0.57...@cspell/dict-en-shared@1.0.58) (2026-10-21)
+
+
+### Updates and Bug Fixes
+
+* **en_shared:** add "misplacements" ([#5939](https://github.com/streetsidesoftware/cspell-dicts/issues/5939)) ([f06259d](https://github.com/streetsidesoftware/cspell-dicts/commit/f06259d7339a8aedba32cf6c2b666a3cfb5287cd))
+
 ## [1.0.57](https://github.com/streetsidesoftware/cspell-dicts/compare/@cspell/dict-en-shared@1.0.56...@cspell/dict-en-shared@1.0.57) (2026-10-21)
 
 
