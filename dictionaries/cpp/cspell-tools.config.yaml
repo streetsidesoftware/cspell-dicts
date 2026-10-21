@@ -135,3 +135,14 @@ targets:
     removeDuplicates: true
     compress: true
     keepUncompressed: true
+
+  - name: cuda
+    sources:
+      - filename: src/cuda.txt
+        split: true
+    format: plaintext
+    targetDirectory: './dict'
+    generateNonStrict: false
+    removeDuplicates: true
+    compress: true
+    keepUncompressed: true

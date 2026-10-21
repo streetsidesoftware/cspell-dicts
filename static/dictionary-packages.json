@@ -336,6 +336,17 @@
             "fileType": "c, cpp, cuda-cpp"
           }
         ]
+      },
+      {
+        "name": "cuda",
+        "description": "CUDA keywords, built-ins, and runtime and library functions.",
+        "fileTypes": ["c", "cpp", "cuda-cpp", "fortran", "julia", "python"],
+        "localeFileTypes": [
+          {
+            "locale": "*",
+            "fileType": "c, cpp, cuda-cpp, python, julia, fortran"
+          }
+        ]
       }
     ],
     "patterns": []

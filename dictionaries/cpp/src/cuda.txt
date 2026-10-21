@@ -1,0 +1,110 @@
+# CUDA keywords, built-ins, and runtime and library names.
+# Qualifiers and attributes
+# https://docs.nvidia.com/cuda/cuda-programming-guide/05-appendices/cpp-language-extensions.html
+__constant__
+__device__
+__forceinline__
+__global__
+__grid_constant__
+__host__
+__launch_bounds__
+__managed__
+__noinline__
+__restrict__
+__shared__
+
+# Built-in variables and types
+# https://docs.nvidia.com/cuda/cuda-programming-guide/02-basics/intro-to-cuda-cpp.html
+blockDim
+blockIdx
+dim3
+gridDim
+threadIdx
+warpSize
+
+# Synchronization and warp intrinsics
+# https://docs.nvidia.com/cuda/cuda-programming-guide/05-appendices/cpp-language-extensions.html
+__activemask
+__ballot_sync
+__ldg
+__shfl_down_sync
+__shfl_sync
+__shfl_up_sync
+__shfl_xor_sync
+__syncthreads
+__syncwarp
+__threadfence
+shfl
+
+# Atomic functions
+# https://docs.nvidia.com/cuda/cuda-programming-guide/05-appendices/cpp-language-extensions.html
+atomicAdd
+atomicCAS
+atomicExch
+atomicMax
+atomicMin
+atomicSub
+
+# Half and bfloat16 types
+# https://docs.nvidia.com/cuda/cuda-math-api/cuda_math_api/group__CUDA__MATH____HALF__MISC.html
+# https://docs.nvidia.com/cuda/cuda-math-api/cuda_math_api/group__CUDA__MATH__INTRINSIC__BFLOAT16.html
+__float2half
+__half
+__half2
+__nv_bfloat16
+bfloat16
+
+# Runtime API
+# https://docs.nvidia.com/cuda/cuda-runtime-api/
+cudaDeviceSynchronize
+cudaError_t
+cudaEvent_t
+cudaEventCreate
+cudaEventRecord
+cudaFree
+cudaFreeHost
+cudaGetDeviceCount
+cudaGetErrorString
+cudaGetLastError
+cudaMalloc
+cudaMallocHost
+cudaMallocManaged
+cudaMemcpy
+cudaMemcpyAsync
+cudaMemcpyDeviceToHost
+cudaMemcpyHostToDevice
+cudaMemcpyToSymbol
+cudaMemset
+cudaSetDevice
+cudaStream_t
+cudaStreamCreate
+cudaStreamSynchronize
+cudaSuccess
+
+# Libraries and tools
+# https://docs.nvidia.com/cuda/
+cuBLAS
+cuDNN
+cuFFT
+cuRAND
+cuSOLVER
+cuSPARSE
+CUTLASS
+NCCL
+nvcc
+NVRTC
+NVTX
+PTX
+SASS
+
+# Python packages
+# https://cupy.dev/
+# https://numba.pydata.org/
+CuPy
+Numba
+
+# cuBLAS function stems, as in cublasSgemm
+# https://docs.nvidia.com/cuda/cublas/index.html
+Dgemm
+Hgemm
+Sgemm

@@ -32,7 +32,7 @@ Add the following to your VSCode settings:
 
 ```jsonc
 {
-  "cSpell.dictionaries": ["cpp-legacy", "cpp", "cpp-compound-words", "cpp-refined"],
+  "cSpell.dictionaries": ["cpp-legacy", "cpp", "cpp-compound-words", "cpp-refined", "cuda"],
 }
 ```
 
@@ -45,7 +45,7 @@ Add the following to your VSCode settings:
 
 ```jsonc
 {
-  "dictionaries": ["cpp-legacy", "cpp", "cpp-compound-words", "cpp-refined"],
+  "dictionaries": ["cpp-legacy", "cpp", "cpp-compound-words", "cpp-refined", "cuda"],
 }
 ```
 
@@ -62,6 +62,7 @@ dictionaries:
   - cpp
   - cpp-compound-words
   - cpp-refined
+  - cuda
 ```
 
 </details>
@@ -78,15 +79,17 @@ dictionaries:
 | `cpp`                |         | C/C++ Keywords and common library functions.                 |
 | `cpp-compound-words` |         | C/C++ Common word compounds.                                 |
 | `cpp-refined`        |         | Refined list of C/C++ Keywords and common library functions. |
+| `cuda`               |         | CUDA keywords, built-ins, and runtime and library functions. |
 
 ## Language Settings
 
-| Name                 | Locale | File Type              |
-| -------------------- | ------ | ---------------------- |
-| `cpp-legacy`         | `*`    | `c`, `cpp`, `cuda-cpp` |
-| `cpp`                | `*`    | `c`, `cpp`, `cuda-cpp` |
-| `cpp-compound-words` | `*`    | `c`, `cpp`, `cuda-cpp` |
-| `cpp-refined`        | `*`    | `c`, `cpp`, `cuda-cpp` |
+| Name                 | Locale | File Type                                            |
+| -------------------- | ------ | ---------------------------------------------------- |
+| `cpp-legacy`         | `*`    | `c`, `cpp`, `cuda-cpp`                               |
+| `cpp`                | `*`    | `c`, `cpp`, `cuda-cpp`                               |
+| `cpp-compound-words` | `*`    | `c`, `cpp`, `cuda-cpp`                               |
+| `cpp-refined`        | `*`    | `c`, `cpp`, `cuda-cpp`                               |
+| `cuda`               | `*`    | `c`, `cpp`, `cuda-cpp`, `python`, `julia`, `fortran` |
 
 <!--- @@inject-end: ./static/install.md --->
 
