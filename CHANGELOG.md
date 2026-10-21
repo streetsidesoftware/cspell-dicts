@@ -1,5 +1,21 @@
 # Release Notes
 
+## [34.0.2](https://github.com/streetsidesoftware/cspell-dicts/compare/cspell-dicts@34.0.1...cspell-dicts@34.0.2) (2026-10-21)
+
+
+### Updates and Bug Fixes
+
+* **en_shared:** add catchable ([#5918](https://github.com/streetsidesoftware/cspell-dicts/issues/5918)) ([5341aca](https://github.com/streetsidesoftware/cspell-dicts/commit/5341acaddfb774f0439586d0a785513e1d0b9656))
+* **th_th:** require cspell 10.3.5 and Code Spell Checker 4.9.6 ([#5930](https://github.com/streetsidesoftware/cspell-dicts/issues/5930)) ([2e8c686](https://github.com/streetsidesoftware/cspell-dicts/commit/2e8c6864907172ea6b0f4e281f5337a25b1b7de3))
+* Workflow Bot -- Build Dictionaries ([#5936](https://github.com/streetsidesoftware/cspell-dicts/issues/5936)) ([698bd68](https://github.com/streetsidesoftware/cspell-dicts/commit/698bd68e7b850bc42e69cd94bd3e5dad57df9d5b))
+
+
+### Dependencies
+
+* The following workspace dependencies were updated
+  * devDependencies
+    * @cspell/dict-cspell-bundle bumped to 2.0.82
+
 ## [34.0.1](https://github.com/streetsidesoftware/cspell-dicts/compare/cspell-dicts@34.0.0...cspell-dicts@34.0.1) (2026-10-20)
 
 

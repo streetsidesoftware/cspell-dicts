@@ -1,5 +1,12 @@
 # Change Log
 
+## [1.0.4](https://github.com/streetsidesoftware/cspell-dicts/compare/@cspell/dict-th-th@1.0.3...@cspell/dict-th-th@1.0.4) (2026-10-21)
+
+
+### Updates and Bug Fixes
+
+* **th_th:** require cspell 10.3.5 and Code Spell Checker 4.9.6 ([#5930](https://github.com/streetsidesoftware/cspell-dicts/issues/5930)) ([2e8c686](https://github.com/streetsidesoftware/cspell-dicts/commit/2e8c6864907172ea6b0f4e281f5337a25b1b7de3))
+
 ## [1.0.3](https://github.com/streetsidesoftware/cspell-dicts/compare/@cspell/dict-th-th@1.0.2...@cspell/dict-th-th@1.0.3) (2026-10-13)
 
 
