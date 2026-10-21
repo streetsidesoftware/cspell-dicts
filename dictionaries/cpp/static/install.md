@@ -62,9 +62,9 @@ dictionaries:
 
 ## Language Settings
 
-| Name                 | Locale | File Type  |
-| -------------------- | ------ | ---------- |
-| `cpp-legacy`         | `*`    | `c`, `cpp` |
-| `cpp`                | `*`    | `c`, `cpp` |
-| `cpp-compound-words` | `*`    | `c`, `cpp` |
-| `cpp-refined`        | `*`    | `c`, `cpp` |
+| Name                 | Locale | File Type              |
+| -------------------- | ------ | ---------------------- |
+| `cpp-legacy`         | `*`    | `c`, `cpp`, `cuda-cpp` |
+| `cpp`                | `*`    | `c`, `cpp`, `cuda-cpp` |
+| `cpp-compound-words` | `*`    | `c`, `cpp`, `cuda-cpp` |
+| `cpp-refined`        | `*`    | `c`, `cpp`, `cuda-cpp` |
