@@ -1,5 +1,12 @@
 # Change Log
 
+## [1.0.57](https://github.com/streetsidesoftware/cspell-dicts/compare/@cspell/dict-en-shared@1.0.56...@cspell/dict-en-shared@1.0.57) (2026-10-21)
+
+
+### Updates and Bug Fixes
+
+* **en_shared:** add catchable ([#5918](https://github.com/streetsidesoftware/cspell-dicts/issues/5918)) ([5341aca](https://github.com/streetsidesoftware/cspell-dicts/commit/5341acaddfb774f0439586d0a785513e1d0b9656))
+
 ## [1.0.56](https://github.com/streetsidesoftware/cspell-dicts/compare/@cspell/dict-en-shared@1.0.55...@cspell/dict-en-shared@1.0.56) (2026-10-13)
 
 
