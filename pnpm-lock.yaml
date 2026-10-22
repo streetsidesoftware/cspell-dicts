@@ -21,17 +21,17 @@ importers:
         specifier: workspace:^
         version: link:packages/create-dictionary
       '@lerna-lite/cli':
-        specifier: ^5.6.3
-        version: 5.6.3(@lerna-lite/exec@5.6.3)(@lerna-lite/publish@5.6.3)(@lerna-lite/run@5.6.3)(@lerna-lite/version@5.6.3(@lerna-lite/exec@5.6.3)(@lerna-lite/publish@5.6.3)(@lerna-lite/run@5.6.3)(@types/node@26.6.5)(conventional-commits-filter@6.0.1))(@types/node@26.6.5)
+        specifier: ^5.6.4
+        version: 5.6.4(@lerna-lite/exec@5.6.4)(@lerna-lite/publish@5.6.4)(@lerna-lite/run@5.6.4)(@lerna-lite/version@5.6.4(@lerna-lite/exec@5.6.4)(@lerna-lite/publish@5.6.4)(@lerna-lite/run@5.6.4)(@types/node@26.6.5)(conventional-commits-filter@6.0.1))(@types/node@26.6.5)
       '@lerna-lite/exec':
-        specifier: ^5.6.3
-        version: 5.6.3(@lerna-lite/publish@5.6.3)(@lerna-lite/run@5.6.3)(@lerna-lite/version@5.6.3(@lerna-lite/exec@5.6.3)(@lerna-lite/publish@5.6.3)(@lerna-lite/run@5.6.3)(@types/node@26.6.5)(conventional-commits-filter@6.0.1))(@types/node@26.6.5)
+        specifier: ^5.6.4
+        version: 5.6.4(@lerna-lite/publish@5.6.4)(@lerna-lite/run@5.6.4)(@lerna-lite/version@5.6.4(@lerna-lite/exec@5.6.4)(@lerna-lite/publish@5.6.4)(@lerna-lite/run@5.6.4)(@types/node@26.6.5)(conventional-commits-filter@6.0.1))(@types/node@26.6.5)
       '@lerna-lite/publish':
-        specifier: ^5.6.3
-        version: 5.6.3(@lerna-lite/exec@5.6.3)(@lerna-lite/run@5.6.3)(@types/node@26.6.5)(conventional-commits-filter@6.0.1)(supports-color@9.4.0)
+        specifier: ^5.6.4
+        version: 5.6.4(@lerna-lite/exec@5.6.4)(@lerna-lite/run@5.6.4)(@types/node@26.6.5)(conventional-commits-filter@6.0.1)(supports-color@9.4.0)
       '@lerna-lite/run':
-        specifier: ^5.6.3
-        version: 5.6.3(@lerna-lite/exec@5.6.3)(@lerna-lite/publish@5.6.3)(@lerna-lite/version@5.6.3(@lerna-lite/exec@5.6.3)(@lerna-lite/publish@5.6.3)(@lerna-lite/run@5.6.3)(@types/node@26.6.5)(conventional-commits-filter@6.0.1))(@types/node@26.6.5)
+        specifier: ^5.6.4
+        version: 5.6.4(@lerna-lite/exec@5.6.4)(@lerna-lite/publish@5.6.4)(@lerna-lite/version@5.6.4(@lerna-lite/exec@5.6.4)(@lerna-lite/publish@5.6.4)(@lerna-lite/run@5.6.4)(@types/node@26.6.5)(conventional-commits-filter@6.0.1))(@types/node@26.6.5)
       '@tsconfig/node22':
         specifier: ^22.0.6
         version: 22.0.6
@@ -731,8 +731,8 @@ importers:
   packages/create-dictionary:
     dependencies:
       '@inquirer/prompts':
-        specifier: ^8.7.3
-        version: 8.7.3(@types/node@26.6.5)
+        specifier: ^8.7.4
+        version: 8.7.4(@types/node@26.6.5)
       commander:
         specifier: ^15.0.0
         version: 15.0.0
@@ -910,8 +910,8 @@ packages:
   '@cspell/dict-companies@3.2.13':
     resolution: {integrity: sha512-mBJeYzCkiiWgNQxKg7zyQOpFPwcXO4IAzXGbOEFfcQ4Q0G5Fa7Kqd8z+gvnvSK7NPWKJaFmiApC6I0cka02qmQ==}
 
-  '@cspell/dict-cpp@7.1.3':
-    resolution: {integrity: sha512-2d2MSh+C+xzzdqjLwtt40TdXWDR/pK0q1Q9L5zC+1EPSCIZxlN7CHbhlXWpl0JqUSdy2xaWaWucwnoGznMTneA==}
+  '@cspell/dict-cpp@7.2.0':
+    resolution: {integrity: sha512-hxz+OyQKV96/Bk2JYGsDuSOheYA5gd8KybXnoZMMu/mhZPnwhPi+qiS0Kjc0gLNbXjJ6wbBuXIQWi1UWpQBU/g==}
 
   '@cspell/dict-cryptocurrencies@5.0.5':
     resolution: {integrity: sha512-R68hYYF/rtlE6T/dsObStzN5QZw+0aQBinAXuWCVqwdS7YZo0X33vGMfChkHaiCo3Z2+bkegqHlqxZF4TD3rUA==}
@@ -943,11 +943,11 @@ packages:
   '@cspell/dict-en-common-misspellings@2.2.5':
     resolution: {integrity: sha512-c1bj+HXT8fafxrBT/nmVLwr7ILVomgVSGlWsb2wjJYanqvLJHXkCVmr0sM97F9FJeWQFIgwrRi5MWSYbNQAQ6A==}
 
-  '@cspell/dict-en-gb-mit@3.1.30':
-    resolution: {integrity: sha512-wmsPqPrO+GRfD8iA2jSKzRdEVd46ZbnDttRWM8RC4a8DkeiIanTtIgqX5V23jJibSgpsRVAtY+ktTw2nOK/Yvw==}
+  '@cspell/dict-en-gb-mit@3.1.32':
+    resolution: {integrity: sha512-bEASyTAzXLowmFWrZIJjeAeCpY9g3jcYDO3tVyFDL/UaAuz0UvCVgOEyg+Ym7bclijqvXmj0xXOD/cW2XWG8iw==}
 
-  '@cspell/dict-en_us@4.4.41':
-    resolution: {integrity: sha512-PsfGqN/dSSPpaSl1vKaPI4DHAmgbFITON398YUEvoduDM1mWXnDOL+qBQ/ZjpWs5+aaShPq5c1vpJg8fuQFOQw==}
+  '@cspell/dict-en_us@4.4.43':
+    resolution: {integrity: sha512-RK0zfFXSPi0G/zmV9YgUhS2xw9eTV/8DtQ+ouLIiRZ8ejWRt2zhAonu5di+qmIhzhQ62fg7d3tMz3WwRy82yJA==}
 
   '@cspell/dict-filetypes@3.0.18':
     resolution: {integrity: sha512-yU7RKD/x1IWmDLzWeiItMwgV+6bUcU/af23uS0+uGiFUbsY1qWV/D4rxlAAO6Z7no3J2z8aZOkYIOvUrJq0Rcw==}
@@ -1171,8 +1171,8 @@ packages:
     resolution: {integrity: sha512-0Ywt3S8tqM6TWUcsRlBFQ1x+X3/o8kktX0ZiKAnByYb9GFDknnOhse1PVtfiD2BXPI8ar+BWx9PV9R0lQIcygw==}
     engines: {node: '>=23.5.0 || ^22.13.0 || ^20.17.0'}
 
-  '@inquirer/checkbox@5.2.6':
-    resolution: {integrity: sha512-XkOardciF3tow2NUlY6/Qjk1QqYa+6WpmVLTpxXl97Uv4erczDEZ+xg1j6LqBf0ekcRSUiICQA4nQXHHkVKQ9w==}
+  '@inquirer/checkbox@5.2.7':
+    resolution: {integrity: sha512-/+QmGE/9bvE/EobaZDnzYe+T+QWoJrnmxwBQNtoi2OVSUR9d1znYsNyEoUrOZvFSxDYttrhzRIpXpaLkN+iIsg==}
     engines: {node: '>=23.5.0 || ^22.13.0 || ^20.17.0'}
     peerDependencies:
       '@types/node': '>=18'
@@ -1180,8 +1180,8 @@ packages:
       '@types/node':
         optional: true
 
-  '@inquirer/confirm@6.3.3':
-    resolution: {integrity: sha512-ImOBgpl/sJTFp8naeSkNu4S0Sf8F8pxv3/CUx+LoBAdQvCVqFz6rSB2A/oZYsJge3+yphbEDxEkfaRNYq1OU0A==}
+  '@inquirer/confirm@6.3.4':
+    resolution: {integrity: sha512-ZwnaZZDa1zxsyVrN32s447ydMnKcw7e8WWNT+R+Qsu0zAn8Rs6yi9d1B80Kob1Ul2cfUi7t8JD2t4/K7uEZpqA==}
     engines: {node: '>=23.5.0 || ^22.13.0 || ^20.17.0'}
     peerDependencies:
       '@types/node': '>=18'
@@ -1189,8 +1189,8 @@ packages:
       '@types/node':
         optional: true
 
-  '@inquirer/core@12.0.4':
-    resolution: {integrity: sha512-M5fB67y7jPObI45vhD82RskWwCSm0scOvenV/I6K8tIi2gfr9DXqQqJ+iw+Wi6SgapikdOiJibYzz1gW47fsDg==}
+  '@inquirer/core@12.0.5':
+    resolution: {integrity: sha512-c0ZSnO9oVk/IlEGoZK3u8b3IZQeu9I6jUkXJSQnQEVRXsjKvtAq3AGqFL2LgfJhlzMZne08pZHWRWasIcI3Rew==}
     engines: {node: '>=23.5.0 || ^22.13.0 || ^20.17.0'}
     peerDependencies:
       '@types/node': '>=18'
@@ -1198,8 +1198,8 @@ packages:
       '@types/node':
         optional: true
 
-  '@inquirer/editor@5.3.4':
-    resolution: {integrity: sha512-imzxQDfw26NpcJAubMj/dE5RjU9Mp80IcT+FzsD6YoxXmL8L1QYnAFdCNv7ccGWh//73+0YP+1kfhwnExdl2VQ==}
+  '@inquirer/editor@5.3.5':
+    resolution: {integrity: sha512-6lU3/pPx5z3lHWejFW061MV4qZooBQYv/+EeGhNOPiP/i+hrYsHfxxBnnDGsAfg8YdLUd69YckoeOjtr3QuAUg==}
     engines: {node: '>=23.5.0 || ^22.13.0 || ^20.17.0'}
     peerDependencies:
       '@types/node': '>=18'
@@ -1207,8 +1207,8 @@ packages:
       '@types/node':
         optional: true
 
-  '@inquirer/expand@5.1.6':
-    resolution: {integrity: sha512-JfiLKi7qGuHmcQO/DqR10UFEp054Y1FXZaszP5ZEfHhgHeuFoT5nNFQIXFhed/5/p07SbsV2tIJFwG/dg5+NmQ==}
+  '@inquirer/expand@5.1.7':
+    resolution: {integrity: sha512-eiJ31YFCaB6fLoJCqLIn8S6eqUyME6vwr8KcP5h8cxmA+bV9RRVPO+kywoxb7G63HduDXV6sN/SM7o2R+ahEcQ==}
     engines: {node: '>=23.5.0 || ^22.13.0 || ^20.17.0'}
     peerDependencies:
       '@types/node': '>=18'
@@ -1229,8 +1229,8 @@ packages:
     resolution: {integrity: sha512-EAWgUTGQ/Umgga51dE3B2PUHbufuXarDfg86uVgoSgNHNNQnyFKcOrQLWVqYMghuSyHh8+2HUH0Js9cTC1WAdg==}
     engines: {node: '>=23.5.0 || ^22.13.0 || ^20.17.0'}
 
-  '@inquirer/input@5.1.7':
-    resolution: {integrity: sha512-Icrs9tuMBCxGI+lFYNO71VFOnqGO8IIrLIGqnTGh07X8jZ2la9QLAYxXcikHZQjjVhIZUtU2xyH89DVN/pPhVg==}
+  '@inquirer/input@5.1.8':
+    resolution: {integrity: sha512-psOSTgkL8y/OtgJJYbqJ0oISr2QBE0U1Ro/qQdA/EKjeJiwiUTQgQmq8o4ESNzVOWthIeh3YLD7BCUR9dKnR5g==}
     engines: {node: '>=23.5.0 || ^22.13.0 || ^20.17.0'}
     peerDependencies:
       '@types/node': '>=18'
@@ -1238,8 +1238,8 @@ packages:
       '@types/node':
         optional: true
 
-  '@inquirer/number@4.2.4':
-    resolution: {integrity: sha512-C6g80U4U2+w2Vxa1CB0MN3a2WnQIfzLSUG0lduO3Au9GsirJsKATZkOwZPK+vZ1BlAlz+/Z5ParfQCS9E0svmg==}
+  '@inquirer/number@4.2.5':
+    resolution: {integrity: sha512-lEy7LWsdF5qHx5QjHZqabUqM9P7i5uTMCt8GRzqxmwXXKbapKJDA+ucVflVVPAyj4snD5DTAD4L+sct85XOlOQ==}
     engines: {node: '>=23.5.0 || ^22.13.0 || ^20.17.0'}
     peerDependencies:
       '@types/node': '>=18'
@@ -1247,8 +1247,8 @@ packages:
       '@types/node':
         optional: true
 
-  '@inquirer/password@5.2.3':
-    resolution: {integrity: sha512-1Uo2qfI2K3wXbfunMpvwAzoZPIUf5iEETwDGqRVbswoorXGqYQJ/bfIJFeLj+pxjq+e2UFPNOmx+fsIl4Urigw==}
+  '@inquirer/password@5.2.4':
+    resolution: {integrity: sha512-T7ir3fflSSVCYEVqNyMBq+pIMsilQRtbZcD5gxn6Ewsin5TJWBxrGBdXveWtmeXVAeoInfhS+BhBUZaL4sFSDg==}
     engines: {node: '>=23.5.0 || ^22.13.0 || ^20.17.0'}
     peerDependencies:
       '@types/node': '>=18'
@@ -1256,8 +1256,8 @@ packages:
       '@types/node':
         optional: true
 
-  '@inquirer/prompts@8.7.3':
-    resolution: {integrity: sha512-DHK20kO+H5k/XcJQpHQUpVQbMYHHhZchlGWhZVMUV4WIuRuBW5744hipOtriE1vMqPLgnIyXFMHWKkIbTepa4Q==}
+  '@inquirer/prompts@8.7.4':
+    resolution: {integrity: sha512-SAJt+QhY5rOJAIgZBw9TrHWfgrp6wsb9cqRCyqax+Hl6EiFfRXmD9EsIWkST8yq/dQ8H46Is2Sr/JG7Ls/LQ+Q==}
     engines: {node: '>=23.5.0 || ^22.13.0 || ^20.17.0'}
     peerDependencies:
       '@types/node': '>=18'
@@ -1265,8 +1265,8 @@ packages:
       '@types/node':
         optional: true
 
-  '@inquirer/rawlist@5.3.6':
-    resolution: {integrity: sha512-2exExhQ5xTBqfN/rRlZkvM1Gm3b0eiLcWe2NqxWxe7qYmnU4M3j/n9TwzfPUb+Q7dAAz9TmBtDWWdF3jbp4ZLA==}
+  '@inquirer/rawlist@5.3.7':
+    resolution: {integrity: sha512-XveEe8v3BHj9ec00n+9i8FHjWhXjS6+jCTizYvXCqKUKtgkrq9xid8S5j3mYGW96qfxG3mwNoud3m3v8GDk9Pw==}
     engines: {node: '>=23.5.0 || ^22.13.0 || ^20.17.0'}
     peerDependencies:
       '@types/node': '>=18'
@@ -1274,8 +1274,8 @@ packages:
       '@types/node':
         optional: true
 
-  '@inquirer/search@4.3.4':
-    resolution: {integrity: sha512-xsk0UeFP04jsbEeFMzghjUaH2aHXyt+WykSajQzq/8qyBNHsgGYHea/sFwv5T08kW7Sp+KDX8aF124zPUIs1Ww==}
+  '@inquirer/search@4.3.5':
+    resolution: {integrity: sha512-kIUecMugEN2YTvTmff+uYz0nAE0f9RFNDVZknfrh264vAQM9P8tnsXiUp7z8XbGuNIBEtFMJhvc9QquawpC46A==}
     engines: {node: '>=23.5.0 || ^22.13.0 || ^20.17.0'}
     peerDependencies:
       '@types/node': '>=18'
@@ -1283,8 +1283,8 @@ packages:
       '@types/node':
         optional: true
 
-  '@inquirer/select@5.2.6':
-    resolution: {integrity: sha512-jFu7CFghlr0vpi/326a4wz6BGkJH9X3H/iIu+ahyV2Ja52ktqQE3fC9BYP47JKeSPQYGUv5xquE2Vp9PbepZ3g==}
+  '@inquirer/select@5.2.7':
+    resolution: {integrity: sha512-pRDWO4dTqSAvFQdO8yclKMtXNDm9K9HmvWB5UZmT3clw2OlOBNXveHzhyFmO/0d0yJMqlPcNITus1Jtpm6t8VQ==}
     engines: {node: '>=23.5.0 || ^22.13.0 || ^20.17.0'}
     peerDependencies:
       '@types/node': '>=18'
@@ -1317,8 +1317,8 @@ packages:
   '@keyv/serialize@1.1.1':
     resolution: {integrity: sha512-dXn3FZhPv0US+7dtJsIi2R+c7qWYiReoEh5zUntWCf4oSpMNib8FDhSoed6m3QyZdx5hK7iLFkYk3rNxwt8vTA==}
 
-  '@lerna-lite/cli@5.6.3':
-    resolution: {integrity: sha512-DL79xF5lGeT/7JflVm9L9Gz3z5EJW1zsc/UbUi7dCXMNGKgeD0HSO976GVQi5hSNQDBwYEApWKtEdZOntdn9+A==}
+  '@lerna-lite/cli@5.6.4':
+    resolution: {integrity: sha512-Oyh/ReScWByM9KxcPHVkeatDeygGuCZtEZgf+o4gZo9KPvG0Xy3WxTlpyzYs4LG869orBi1Ru+G73oCq5+G8bQ==}
     engines: {node: ^22.17.0 || >=24.0.0}
     hasBin: true
     peerDependencies:
@@ -1342,36 +1342,36 @@ packages:
       '@lerna-lite/watch':
         optional: true
 
-  '@lerna-lite/core@5.6.3':
-    resolution: {integrity: sha512-33QjLOI+Nsgio2+BAhepCala8H0gaRiOoAEz2T/eGm+vUx2gxEaL/rXRBSCJSRE3LVGGYTat8NMyIQ5F3CxVVg==}
+  '@lerna-lite/core@5.6.4':
+    resolution: {integrity: sha512-QvCoTbJ67q0v0ZwL/C6yRDj38PeNBJGeIig8w8Y/9LVQ6ufuvwOj9Z+Ag10YE0UfVSrXLCMlgWlfrGs1J0zC6g==}
     engines: {node: ^22.17.0 || >=24.0.0}
 
-  '@lerna-lite/exec@5.6.3':
-    resolution: {integrity: sha512-B3RAlJeNPRTbJDFSelUtOXRCnW/EGD76YeaSAMFP58eGZCB1htLD1CgG0z9RwNvcXsazDJo7+z2Xe/sl7vZMNQ==}
+  '@lerna-lite/exec@5.6.4':
+    resolution: {integrity: sha512-ovWNbCCoQK7EfMej8UZaiCWL1doDwtkem1sEEVJD3xBvdXVKamI+hPeFxrjYPkHvcmWXx+UfIdosuVWTcXcf5g==}
     engines: {node: ^22.17.0 || >=24.0.0}
 
-  '@lerna-lite/init@5.6.3':
-    resolution: {integrity: sha512-Ad1J0tdkF9oMiLXth7Y00QYW9ZSeRd0kAeLQNGVOJknpVEwPhaOG+T4R062FPpKOx58EIVJvvVOm8HNTlUqV5w==}
+  '@lerna-lite/init@5.6.4':
+    resolution: {integrity: sha512-B5I+2VOKjr7cmxt2DDDQoxnL+eergZQ82+8h61IJBb9yt5D60f8R8chkuARJcTTErwhco0RzRSZ/5N16yJeGMg==}
     engines: {node: ^22.17.0 || >=24.0.0}
 
   '@lerna-lite/npmlog@5.4.1':
     resolution: {integrity: sha512-APylzmp9eDWsM5ZLnTUwV6uwTshtWAbKIF4sA0/SgBsdbgfJUVoz5VTviBnyODCKRzpjcR1MAlRTcjUmKXSbKA==}
     engines: {node: ^22.17.0 || >=24.0.0}
 
-  '@lerna-lite/profiler@5.6.3':
-    resolution: {integrity: sha512-UpxcAy0xbbkvoYMajgk6uzd/ja4zRvJg3U2I5SUw/T3XOhIoxei89dBlZqQ9JEeh+VzBZsmpR1SdLHvxoTAkBg==}
+  '@lerna-lite/profiler@5.6.4':
+    resolution: {integrity: sha512-4cax0WTa7p4APsmUfMQWEHNx6OONIvAuDeof6PTQOU7lGDgroEqkp5FFj08UW9l03wtyLit969j3j5qGElj7ug==}
     engines: {node: ^22.17.0 || >=24.0.0}
 
-  '@lerna-lite/publish@5.6.3':
-    resolution: {integrity: sha512-sw45Ld5XKwlQ3R5k2I8GhOJ0bcy2RUvWTOcoz0JizEJxP0qO5uAwaEq1x1UnUmlSvH8DTYNVnf2sSQolLkrGFA==}
+  '@lerna-lite/publish@5.6.4':
+    resolution: {integrity: sha512-kpAWEdt2TBjF2tM7eOEKx/XyL0ukvzqY1QTyfYiiLl6al3K0j7lfQnG1XS8deOekFxgGj2xcUo94K+xwARtWHQ==}
     engines: {node: ^22.17.0 || >=24.0.0}
 
-  '@lerna-lite/run@5.6.3':
-    resolution: {integrity: sha512-4RMAwD+nnpa8J1SfnPadxE83Dtnfzhyc/k0cUkT0KiHQU5e+KPHwUi6ds8hIvrv4CZChaNnjUn62NHBtOjxeew==}
+  '@lerna-lite/run@5.6.4':
+    resolution: {integrity: sha512-upWhBtC2T44un24XJuuKFC8V0ySR+P6UBulTG8/6o2SMOtdXsekkAeT4wF/oG/G+NWocGAymAosZnWLDY+kHFg==}
     engines: {node: ^22.17.0 || >=24.0.0}
 
-  '@lerna-lite/version@5.6.3':
-    resolution: {integrity: sha512-aPzu2FOL5UW1GcfgXg92KVWDjgl6z4LLjzeDZ6kcYfftJAWsiGDNtZo8boRUq5QUJcU7eY3+leTPte8NfbOtPQ==}
+  '@lerna-lite/version@5.6.4':
+    resolution: {integrity: sha512-K02p93Q3M2Sjqd4PfLsf3aRGG+3W1P5heiQwX4AisE3ffsdbmWNm05O37NF9ifB+PGEfiR+9Ntzrfeu8vtluuA==}
     engines: {node: ^22.17.0 || >=24.0.0}
 
   '@mapbox/node-pre-gyp@2.0.3':
@@ -3057,8 +3057,8 @@ packages:
     resolution: {integrity: sha512-Y9wXQivjRX0REtwpA9+n0bYYypWESn3cWtW2vazymw711qn+AQXxzZjRqhANYGBLIMC1UzVdpwe/1hHQwHfwng==}
     engines: {node: '>=20'}
 
-  postcss-selector-parser@7.1.6:
-    resolution: {integrity: sha512-7qASPzhKF2l2KLboRZux8CCTRMdGiV08vWmyKzPz22qZ7ZjQBOeY7rNzNoCLSUiftJ7HUq0GERHmxw/t0dCdMw==}
+  postcss-selector-parser@7.1.7:
+    resolution: {integrity: sha512-wWBro/7hJ40ye6TPiXkUQoXKCw23xSsjriUvqd7Uls9Sso3oLiON1flc18cCdnjgCRXw4fBVqUJJeOdDTh3P3g==}
     engines: {node: '>=4'}
 
   prelude-ls@1.2.1:
@@ -3568,7 +3568,7 @@ snapshots:
       '@cspell/dict-aws': 4.0.17
       '@cspell/dict-bash': 4.2.3
       '@cspell/dict-companies': 3.2.13
-      '@cspell/dict-cpp': 7.1.3
+      '@cspell/dict-cpp': 7.2.0
       '@cspell/dict-cryptocurrencies': 5.0.5
       '@cspell/dict-csharp': 4.0.8
       '@cspell/dict-css': 4.1.2
@@ -3579,8 +3579,8 @@ snapshots:
       '@cspell/dict-dotnet': 5.0.15
       '@cspell/dict-elixir': 4.0.8
       '@cspell/dict-en-common-misspellings': 2.2.5
-      '@cspell/dict-en-gb-mit': 3.1.30
-      '@cspell/dict-en_us': 4.4.41
+      '@cspell/dict-en-gb-mit': 3.1.32
+      '@cspell/dict-en_us': 4.4.43
       '@cspell/dict-filetypes': 3.0.18
       '@cspell/dict-flutter': 1.1.1
       '@cspell/dict-fonts': 4.0.6
@@ -3667,7 +3667,7 @@ snapshots:
 
   '@cspell/dict-companies@3.2.13': {}
 
-  '@cspell/dict-cpp@7.1.3': {}
+  '@cspell/dict-cpp@7.2.0': {}
 
   '@cspell/dict-cryptocurrencies@5.0.5': {}
 
@@ -3689,9 +3689,9 @@ snapshots:
 
   '@cspell/dict-en-common-misspellings@2.2.5': {}
 
-  '@cspell/dict-en-gb-mit@3.1.30': {}
+  '@cspell/dict-en-gb-mit@3.1.32': {}
 
-  '@cspell/dict-en_us@4.4.41': {}
+  '@cspell/dict-en_us@4.4.43': {}
 
   '@cspell/dict-filetypes@3.0.18': {}
 
@@ -3853,23 +3853,23 @@ snapshots:
 
   '@inquirer/ansi@2.0.9': {}
 
-  '@inquirer/checkbox@5.2.6(@types/node@26.6.5)':
+  '@inquirer/checkbox@5.2.7(@types/node@26.6.5)':
     dependencies:
       '@inquirer/ansi': 2.0.9
-      '@inquirer/core': 12.0.4(@types/node@26.6.5)
+      '@inquirer/core': 12.0.5(@types/node@26.6.5)
       '@inquirer/figures': 2.0.9
       '@inquirer/type': 4.2.0(@types/node@26.6.5)
     optionalDependencies:
       '@types/node': 26.6.5
 
-  '@inquirer/confirm@6.3.3(@types/node@26.6.5)':
+  '@inquirer/confirm@6.3.4(@types/node@26.6.5)':
     dependencies:
-      '@inquirer/core': 12.0.4(@types/node@26.6.5)
+      '@inquirer/core': 12.0.5(@types/node@26.6.5)
       '@inquirer/type': 4.2.0(@types/node@26.6.5)
     optionalDependencies:
       '@types/node': 26.6.5
 
-  '@inquirer/core@12.0.4(@types/node@26.6.5)':
+  '@inquirer/core@12.0.5(@types/node@26.6.5)':
     dependencies:
       '@inquirer/ansi': 2.0.9
       '@inquirer/figures': 2.0.9
@@ -3881,17 +3881,17 @@ snapshots:
     optionalDependencies:
       '@types/node': 26.6.5
 
-  '@inquirer/editor@5.3.4(@types/node@26.6.5)':
+  '@inquirer/editor@5.3.5(@types/node@26.6.5)':
     dependencies:
-      '@inquirer/core': 12.0.4(@types/node@26.6.5)
+      '@inquirer/core': 12.0.5(@types/node@26.6.5)
       '@inquirer/external-editor': 3.0.6(@types/node@26.6.5)
       '@inquirer/type': 4.2.0(@types/node@26.6.5)
     optionalDependencies:
       '@types/node': 26.6.5
 
-  '@inquirer/expand@5.1.6(@types/node@26.6.5)':
+  '@inquirer/expand@5.1.7(@types/node@26.6.5)':
     dependencies:
-      '@inquirer/core': 12.0.4(@types/node@26.6.5)
+      '@inquirer/core': 12.0.5(@types/node@26.6.5)
       '@inquirer/type': 4.2.0(@types/node@26.6.5)
     optionalDependencies:
       '@types/node': 26.6.5
@@ -3905,62 +3905,62 @@ snapshots:
 
   '@inquirer/figures@2.0.9': {}
 
-  '@inquirer/input@5.1.7(@types/node@26.6.5)':
+  '@inquirer/input@5.1.8(@types/node@26.6.5)':
     dependencies:
-      '@inquirer/core': 12.0.4(@types/node@26.6.5)
+      '@inquirer/core': 12.0.5(@types/node@26.6.5)
       '@inquirer/type': 4.2.0(@types/node@26.6.5)
     optionalDependencies:
       '@types/node': 26.6.5
 
-  '@inquirer/number@4.2.4(@types/node@26.6.5)':
+  '@inquirer/number@4.2.5(@types/node@26.6.5)':
     dependencies:
-      '@inquirer/core': 12.0.4(@types/node@26.6.5)
+      '@inquirer/core': 12.0.5(@types/node@26.6.5)
       '@inquirer/type': 4.2.0(@types/node@26.6.5)
     optionalDependencies:
       '@types/node': 26.6.5
 
-  '@inquirer/password@5.2.3(@types/node@26.6.5)':
+  '@inquirer/password@5.2.4(@types/node@26.6.5)':
     dependencies:
       '@inquirer/ansi': 2.0.9
-      '@inquirer/core': 12.0.4(@types/node@26.6.5)
+      '@inquirer/core': 12.0.5(@types/node@26.6.5)
       '@inquirer/type': 4.2.0(@types/node@26.6.5)
     optionalDependencies:
       '@types/node': 26.6.5
 
-  '@inquirer/prompts@8.7.3(@types/node@26.6.5)':
+  '@inquirer/prompts@8.7.4(@types/node@26.6.5)':
     dependencies:
-      '@inquirer/checkbox': 5.2.6(@types/node@26.6.5)
-      '@inquirer/confirm': 6.3.3(@types/node@26.6.5)
-      '@inquirer/editor': 5.3.4(@types/node@26.6.5)
-      '@inquirer/expand': 5.1.6(@types/node@26.6.5)
-      '@inquirer/input': 5.1.7(@types/node@26.6.5)
-      '@inquirer/number': 4.2.4(@types/node@26.6.5)
-      '@inquirer/password': 5.2.3(@types/node@26.6.5)
-      '@inquirer/rawlist': 5.3.6(@types/node@26.6.5)
-      '@inquirer/search': 4.3.4(@types/node@26.6.5)
-      '@inquirer/select': 5.2.6(@types/node@26.6.5)
+      '@inquirer/checkbox': 5.2.7(@types/node@26.6.5)
+      '@inquirer/confirm': 6.3.4(@types/node@26.6.5)
+      '@inquirer/editor': 5.3.5(@types/node@26.6.5)
+      '@inquirer/expand': 5.1.7(@types/node@26.6.5)
+      '@inquirer/input': 5.1.8(@types/node@26.6.5)
+      '@inquirer/number': 4.2.5(@types/node@26.6.5)
+      '@inquirer/password': 5.2.4(@types/node@26.6.5)
+      '@inquirer/rawlist': 5.3.7(@types/node@26.6.5)
+      '@inquirer/search': 4.3.5(@types/node@26.6.5)
+      '@inquirer/select': 5.2.7(@types/node@26.6.5)
     optionalDependencies:
       '@types/node': 26.6.5
 
-  '@inquirer/rawlist@5.3.6(@types/node@26.6.5)':
+  '@inquirer/rawlist@5.3.7(@types/node@26.6.5)':
     dependencies:
-      '@inquirer/core': 12.0.4(@types/node@26.6.5)
+      '@inquirer/core': 12.0.5(@types/node@26.6.5)
       '@inquirer/type': 4.2.0(@types/node@26.6.5)
     optionalDependencies:
       '@types/node': 26.6.5
 
-  '@inquirer/search@4.3.4(@types/node@26.6.5)':
+  '@inquirer/search@4.3.5(@types/node@26.6.5)':
     dependencies:
-      '@inquirer/core': 12.0.4(@types/node@26.6.5)
+      '@inquirer/core': 12.0.5(@types/node@26.6.5)
       '@inquirer/figures': 2.0.9
       '@inquirer/type': 4.2.0(@types/node@26.6.5)
     optionalDependencies:
       '@types/node': 26.6.5
 
-  '@inquirer/select@5.2.6(@types/node@26.6.5)':
+  '@inquirer/select@5.2.7(@types/node@26.6.5)':
     dependencies:
       '@inquirer/ansi': 2.0.9
-      '@inquirer/core': 12.0.4(@types/node@26.6.5)
+      '@inquirer/core': 12.0.5(@types/node@26.6.5)
       '@inquirer/figures': 2.0.9
       '@inquirer/type': 4.2.0(@types/node@26.6.5)
     optionalDependencies:
@@ -3984,27 +3984,27 @@ snapshots:
 
   '@keyv/serialize@1.1.1': {}
 
-  '@lerna-lite/cli@5.6.3(@lerna-lite/exec@5.6.3)(@lerna-lite/publish@5.6.3)(@lerna-lite/run@5.6.3)(@lerna-lite/version@5.6.3(@lerna-lite/exec@5.6.3)(@lerna-lite/publish@5.6.3)(@lerna-lite/run@5.6.3)(@types/node@26.6.5)(conventional-commits-filter@6.0.1))(@types/node@26.6.5)':
+  '@lerna-lite/cli@5.6.4(@lerna-lite/exec@5.6.4)(@lerna-lite/publish@5.6.4)(@lerna-lite/run@5.6.4)(@lerna-lite/version@5.6.4(@lerna-lite/exec@5.6.4)(@lerna-lite/publish@5.6.4)(@lerna-lite/run@5.6.4)(@types/node@26.6.5)(conventional-commits-filter@6.0.1))(@types/node@26.6.5)':
     dependencies:
-      '@lerna-lite/core': 5.6.3(@types/node@26.6.5)
-      '@lerna-lite/init': 5.6.3(@types/node@26.6.5)
+      '@lerna-lite/core': 5.6.4(@types/node@26.6.5)
+      '@lerna-lite/init': 5.6.4(@types/node@26.6.5)
       '@lerna-lite/npmlog': 5.4.1
       dotenv: 18.0.8
       import-local: 3.2.0
       yargs: 18.2.0
     optionalDependencies:
-      '@lerna-lite/exec': 5.6.3(@lerna-lite/publish@5.6.3)(@lerna-lite/run@5.6.3)(@lerna-lite/version@5.6.3(@lerna-lite/exec@5.6.3)(@lerna-lite/publish@5.6.3)(@lerna-lite/run@5.6.3)(@types/node@26.6.5)(conventional-commits-filter@6.0.1))(@types/node@26.6.5)
-      '@lerna-lite/publish': 5.6.3(@lerna-lite/exec@5.6.3)(@lerna-lite/run@5.6.3)(@types/node@26.6.5)(conventional-commits-filter@6.0.1)(supports-color@9.4.0)
-      '@lerna-lite/run': 5.6.3(@lerna-lite/exec@5.6.3)(@lerna-lite/publish@5.6.3)(@lerna-lite/version@5.6.3(@lerna-lite/exec@5.6.3)(@lerna-lite/publish@5.6.3)(@lerna-lite/run@5.6.3)(@types/node@26.6.5)(conventional-commits-filter@6.0.1))(@types/node@26.6.5)
-      '@lerna-lite/version': 5.6.3(@lerna-lite/exec@5.6.3)(@lerna-lite/publish@5.6.3)(@lerna-lite/run@5.6.3)(@types/node@26.6.5)(conventional-commits-filter@6.0.1)
+      '@lerna-lite/exec': 5.6.4(@lerna-lite/publish@5.6.4)(@lerna-lite/run@5.6.4)(@lerna-lite/version@5.6.4(@lerna-lite/exec@5.6.4)(@lerna-lite/publish@5.6.4)(@lerna-lite/run@5.6.4)(@types/node@26.6.5)(conventional-commits-filter@6.0.1))(@types/node@26.6.5)
+      '@lerna-lite/publish': 5.6.4(@lerna-lite/exec@5.6.4)(@lerna-lite/run@5.6.4)(@types/node@26.6.5)(conventional-commits-filter@6.0.1)(supports-color@9.4.0)
+      '@lerna-lite/run': 5.6.4(@lerna-lite/exec@5.6.4)(@lerna-lite/publish@5.6.4)(@lerna-lite/version@5.6.4(@lerna-lite/exec@5.6.4)(@lerna-lite/publish@5.6.4)(@lerna-lite/run@5.6.4)(@types/node@26.6.5)(conventional-commits-filter@6.0.1))(@types/node@26.6.5)
+      '@lerna-lite/version': 5.6.4(@lerna-lite/exec@5.6.4)(@lerna-lite/publish@5.6.4)(@lerna-lite/run@5.6.4)(@types/node@26.6.5)(conventional-commits-filter@6.0.1)
     transitivePeerDependencies:
       - '@types/node'
 
-  '@lerna-lite/core@5.6.3(@types/node@26.6.5)':
+  '@lerna-lite/core@5.6.4(@types/node@26.6.5)':
     dependencies:
-      '@inquirer/expand': 5.1.6(@types/node@26.6.5)
-      '@inquirer/input': 5.1.7(@types/node@26.6.5)
-      '@inquirer/select': 5.2.6(@types/node@26.6.5)
+      '@inquirer/expand': 5.1.7(@types/node@26.6.5)
+      '@inquirer/input': 5.1.8(@types/node@26.6.5)
+      '@inquirer/select': 5.2.7(@types/node@26.6.5)
       '@lerna-lite/npmlog': 5.4.1
       '@npmcli/run-script': 10.0.4
       ci-info: 4.4.0
@@ -4020,11 +4020,11 @@ snapshots:
     transitivePeerDependencies:
       - '@types/node'
 
-  '@lerna-lite/exec@5.6.3(@lerna-lite/publish@5.6.3)(@lerna-lite/run@5.6.3)(@lerna-lite/version@5.6.3(@lerna-lite/exec@5.6.3)(@lerna-lite/publish@5.6.3)(@lerna-lite/run@5.6.3)(@types/node@26.6.5)(conventional-commits-filter@6.0.1))(@types/node@26.6.5)':
+  '@lerna-lite/exec@5.6.4(@lerna-lite/publish@5.6.4)(@lerna-lite/run@5.6.4)(@lerna-lite/version@5.6.4(@lerna-lite/exec@5.6.4)(@lerna-lite/publish@5.6.4)(@lerna-lite/run@5.6.4)(@types/node@26.6.5)(conventional-commits-filter@6.0.1))(@types/node@26.6.5)':
     dependencies:
-      '@lerna-lite/cli': 5.6.3(@lerna-lite/exec@5.6.3)(@lerna-lite/publish@5.6.3)(@lerna-lite/run@5.6.3)(@lerna-lite/version@5.6.3(@lerna-lite/exec@5.6.3)(@lerna-lite/publish@5.6.3)(@lerna-lite/run@5.6.3)(@types/node@26.6.5)(conventional-commits-filter@6.0.1))(@types/node@26.6.5)
-      '@lerna-lite/core': 5.6.3(@types/node@26.6.5)
-      '@lerna-lite/profiler': 5.6.3(@types/node@26.6.5)
+      '@lerna-lite/cli': 5.6.4(@lerna-lite/exec@5.6.4)(@lerna-lite/publish@5.6.4)(@lerna-lite/run@5.6.4)(@lerna-lite/version@5.6.4(@lerna-lite/exec@5.6.4)(@lerna-lite/publish@5.6.4)(@lerna-lite/run@5.6.4)(@types/node@26.6.5)(conventional-commits-filter@6.0.1))(@types/node@26.6.5)
+      '@lerna-lite/core': 5.6.4(@types/node@26.6.5)
+      '@lerna-lite/profiler': 5.6.4(@types/node@26.6.5)
       dotenv: 18.0.8
     transitivePeerDependencies:
       - '@lerna-lite/list'
@@ -4034,9 +4034,9 @@ snapshots:
       - '@lerna-lite/watch'
       - '@types/node'
 
-  '@lerna-lite/init@5.6.3(@types/node@26.6.5)':
+  '@lerna-lite/init@5.6.4(@types/node@26.6.5)':
     dependencies:
-      '@lerna-lite/core': 5.6.3(@types/node@26.6.5)
+      '@lerna-lite/core': 5.6.4(@types/node@26.6.5)
       write-json-file: 7.0.0
     transitivePeerDependencies:
       - '@types/node'
@@ -4046,19 +4046,19 @@ snapshots:
       fast-string-width: 3.0.2
       signal-exit: 4.1.0
 
-  '@lerna-lite/profiler@5.6.3(@types/node@26.6.5)':
+  '@lerna-lite/profiler@5.6.4(@types/node@26.6.5)':
     dependencies:
-      '@lerna-lite/core': 5.6.3(@types/node@26.6.5)
+      '@lerna-lite/core': 5.6.4(@types/node@26.6.5)
       '@lerna-lite/npmlog': 5.4.1
     transitivePeerDependencies:
       - '@types/node'
 
-  '@lerna-lite/publish@5.6.3(@lerna-lite/exec@5.6.3)(@lerna-lite/run@5.6.3)(@types/node@26.6.5)(conventional-commits-filter@6.0.1)(supports-color@9.4.0)':
+  '@lerna-lite/publish@5.6.4(@lerna-lite/exec@5.6.4)(@lerna-lite/run@5.6.4)(@types/node@26.6.5)(conventional-commits-filter@6.0.1)(supports-color@9.4.0)':
     dependencies:
-      '@lerna-lite/cli': 5.6.3(@lerna-lite/exec@5.6.3)(@lerna-lite/publish@5.6.3)(@lerna-lite/run@5.6.3)(@lerna-lite/version@5.6.3(@lerna-lite/exec@5.6.3)(@lerna-lite/publish@5.6.3)(@lerna-lite/run@5.6.3)(@types/node@26.6.5)(conventional-commits-filter@6.0.1))(@types/node@26.6.5)
-      '@lerna-lite/core': 5.6.3(@types/node@26.6.5)
+      '@lerna-lite/cli': 5.6.4(@lerna-lite/exec@5.6.4)(@lerna-lite/publish@5.6.4)(@lerna-lite/run@5.6.4)(@lerna-lite/version@5.6.4(@lerna-lite/exec@5.6.4)(@lerna-lite/publish@5.6.4)(@lerna-lite/run@5.6.4)(@types/node@26.6.5)(conventional-commits-filter@6.0.1))(@types/node@26.6.5)
+      '@lerna-lite/core': 5.6.4(@types/node@26.6.5)
       '@lerna-lite/npmlog': 5.4.1
-      '@lerna-lite/version': 5.6.3(@lerna-lite/exec@5.6.3)(@lerna-lite/publish@5.6.3)(@lerna-lite/run@5.6.3)(@types/node@26.6.5)(conventional-commits-filter@6.0.1)
+      '@lerna-lite/version': 5.6.4(@lerna-lite/exec@5.6.4)(@lerna-lite/publish@5.6.4)(@lerna-lite/run@5.6.4)(@types/node@26.6.5)(conventional-commits-filter@6.0.1)
       '@npmcli/arborist': 9.9.3(supports-color@9.4.0)
       '@npmcli/package-json': 7.0.5
       ci-info: 4.4.0
@@ -4080,12 +4080,12 @@ snapshots:
       - conventional-commits-filter
       - supports-color
 
-  '@lerna-lite/run@5.6.3(@lerna-lite/exec@5.6.3)(@lerna-lite/publish@5.6.3)(@lerna-lite/version@5.6.3(@lerna-lite/exec@5.6.3)(@lerna-lite/publish@5.6.3)(@lerna-lite/run@5.6.3)(@types/node@26.6.5)(conventional-commits-filter@6.0.1))(@types/node@26.6.5)':
+  '@lerna-lite/run@5.6.4(@lerna-lite/exec@5.6.4)(@lerna-lite/publish@5.6.4)(@lerna-lite/version@5.6.4(@lerna-lite/exec@5.6.4)(@lerna-lite/publish@5.6.4)(@lerna-lite/run@5.6.4)(@types/node@26.6.5)(conventional-commits-filter@6.0.1))(@types/node@26.6.5)':
     dependencies:
-      '@lerna-lite/cli': 5.6.3(@lerna-lite/exec@5.6.3)(@lerna-lite/publish@5.6.3)(@lerna-lite/run@5.6.3)(@lerna-lite/version@5.6.3(@lerna-lite/exec@5.6.3)(@lerna-lite/publish@5.6.3)(@lerna-lite/run@5.6.3)(@types/node@26.6.5)(conventional-commits-filter@6.0.1))(@types/node@26.6.5)
-      '@lerna-lite/core': 5.6.3(@types/node@26.6.5)
+      '@lerna-lite/cli': 5.6.4(@lerna-lite/exec@5.6.4)(@lerna-lite/publish@5.6.4)(@lerna-lite/run@5.6.4)(@lerna-lite/version@5.6.4(@lerna-lite/exec@5.6.4)(@lerna-lite/publish@5.6.4)(@lerna-lite/run@5.6.4)(@types/node@26.6.5)(conventional-commits-filter@6.0.1))(@types/node@26.6.5)
+      '@lerna-lite/core': 5.6.4(@types/node@26.6.5)
       '@lerna-lite/npmlog': 5.4.1
-      '@lerna-lite/profiler': 5.6.3(@types/node@26.6.5)
+      '@lerna-lite/profiler': 5.6.4(@types/node@26.6.5)
     transitivePeerDependencies:
       - '@lerna-lite/exec'
       - '@lerna-lite/list'
@@ -4094,12 +4094,12 @@ snapshots:
       - '@lerna-lite/watch'
       - '@types/node'
 
-  '@lerna-lite/version@5.6.3(@lerna-lite/exec@5.6.3)(@lerna-lite/publish@5.6.3)(@lerna-lite/run@5.6.3)(@types/node@26.6.5)(conventional-commits-filter@6.0.1)':
+  '@lerna-lite/version@5.6.4(@lerna-lite/exec@5.6.4)(@lerna-lite/publish@5.6.4)(@lerna-lite/run@5.6.4)(@types/node@26.6.5)(conventional-commits-filter@6.0.1)':
     dependencies:
       '@conventional-changelog/git-client': 3.2.0(conventional-commits-filter@6.0.1)(conventional-commits-parser@7.1.3)
       '@conventional-changelog/template': 1.4.0
-      '@lerna-lite/cli': 5.6.3(@lerna-lite/exec@5.6.3)(@lerna-lite/publish@5.6.3)(@lerna-lite/run@5.6.3)(@lerna-lite/version@5.6.3(@lerna-lite/exec@5.6.3)(@lerna-lite/publish@5.6.3)(@lerna-lite/run@5.6.3)(@types/node@26.6.5)(conventional-commits-filter@6.0.1))(@types/node@26.6.5)
-      '@lerna-lite/core': 5.6.3(@types/node@26.6.5)
+      '@lerna-lite/cli': 5.6.4(@lerna-lite/exec@5.6.4)(@lerna-lite/publish@5.6.4)(@lerna-lite/run@5.6.4)(@lerna-lite/version@5.6.4(@lerna-lite/exec@5.6.4)(@lerna-lite/publish@5.6.4)(@lerna-lite/run@5.6.4)(@types/node@26.6.5)(conventional-commits-filter@6.0.1))(@types/node@26.6.5)
+      '@lerna-lite/core': 5.6.4(@types/node@26.6.5)
       '@lerna-lite/npmlog': 5.4.1
       '@octokit/plugin-enterprise-rest': 6.0.1
       '@octokit/rest': 22.0.1
@@ -4254,7 +4254,7 @@ snapshots:
 
   '@npmcli/query@5.0.0':
     dependencies:
-      postcss-selector-parser: 7.1.6
+      postcss-selector-parser: 7.1.7
 
   '@npmcli/redact@4.0.0': {}
 
@@ -6164,7 +6164,7 @@ snapshots:
     dependencies:
       irregular-plurals: 4.2.0
 
-  postcss-selector-parser@7.1.6:
+  postcss-selector-parser@7.1.7:
     dependencies:
       cssesc: 3.0.0
       util-deprecate: 1.0.2
