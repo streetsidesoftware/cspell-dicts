@@ -2,8 +2,6 @@
 
 `pnpm test` spell checks these files with this dictionary. They aren't part of the npm package.
 
-The samples are listed below, from `sample-sources.csv`.
-
 <!--- @@inject: sample-sources.csv#markdown --->
 
 | File                               | Source                                                                                                                                                             | Added      | License |
