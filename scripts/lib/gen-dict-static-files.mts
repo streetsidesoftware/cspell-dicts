@@ -3,6 +3,7 @@ import fs from 'node:fs/promises';
 import { fileURLToPath } from 'node:url';
 
 import type { CSpellSettings } from '@cspell/cspell-types';
+import { format, resolveConfig } from 'prettier';
 import { Document as YamlDocument } from 'yaml';
 
 import type { DictionaryPackageInfo } from './dictionaryInfo.mts';
@@ -34,16 +35,22 @@ export async function writeStaticFilesForPackage(pkgInfo: DictionaryPackageInfo)
     const codeJson = toSettingsJson(pkgInfo, true);
     const codeYaml = toSettingsYaml(pkgInfo, true);
 
-    await fs.writeFile(new URL('vscode-settings.json', pkgStaticDirUrl), codeVSCode, 'utf8');
-    await fs.writeFile(new URL('example.cspell.json', pkgStaticDirUrl), codeJson, 'utf8');
-    await fs.writeFile(new URL('example.cspell.config.yaml', pkgStaticDirUrl), codeYaml, 'utf8');
-    await fs.writeFile(new URL('install.md', pkgStaticDirUrl), toPackageInformationMarkdown(pkgInfo), 'utf8');
+    await writeFormatted(new URL('vscode-settings.json', pkgStaticDirUrl), codeVSCode);
+    await writeFormatted(new URL('example.cspell.json', pkgStaticDirUrl), codeJson);
+    await writeFormatted(new URL('example.cspell.config.yaml', pkgStaticDirUrl), codeYaml);
+    await writeFormatted(new URL('install.md', pkgStaticDirUrl), toPackageInformationMarkdown(pkgInfo));
 
     const sourcesYaml = fileURLToPath(new URL('src/sources.yaml', dirUrl));
     if (existsSync(sourcesYaml)) {
         const csv = sourcesCsv(pkgInfo.dir, readSources(sourcesYaml));
         await fs.writeFile(new URL('sources.csv', pkgStaticDirUrl), csv, 'utf8');
     }
+}
+
+async function writeFormatted(url: URL, content: string) {
+    const filepath = fileURLToPath(url);
+    const options = await resolveConfig(filepath, { editorconfig: true });
+    await fs.writeFile(url, await format(content, { ...options, filepath }), 'utf8');
 }
 
 function vscodeSettingsToCdn(pkgInfo: DictionaryPackageInfo, useCdn: boolean): string {
