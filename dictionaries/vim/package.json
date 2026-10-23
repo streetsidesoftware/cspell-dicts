@@ -42,7 +42,9 @@
     "build": "cross-env NODE_OPTIONS=--max_old_space_size=8192 cspell-tools-cli build",
     "prepare:dictionary": "pnpm run build",
     "prepublishOnly": "echo OK",
-    "test": "head -n 1000 \"src/vim.txt\" | cspell \"--locale=*\" \"--languageId=*\" stdin"
+    "test": "pnpm run test:words && pnpm run test:samples",
+    "test:samples": "cspell samples",
+    "test:words": "head -n 1000 \"src/vim.txt\" | cspell \"--locale=*\" \"--languageId=*\" stdin"
   },
   "dependencies": {},
   "devDependencies": {}
