@@ -164,17 +164,24 @@ describe('originLink', () => {
     it('names a GitHub file link without its commit', () => {
         const url =
             'https://github.com/vim/vim/blob/f9b3d0d8dd1a4345375fb401861d5f60ff7c7df1/runtime/plugin/matchparen.vim';
-        assert.equal(originLink(url), `[https://github.com/vim/vim/runtime/plugin/matchparen.vim](${url})`);
+        assert.equal(originLink(url), `[https://github.com/vim/vim/runtime/plugin/matchparen.vim](<${url}>)`);
     });
 
     it('names a GitHub folder link without its branch, and drops a line anchor from the name', () => {
         assert.equal(
             originLink('https://github.com/neovim/neovim/tree/master/runtime/lua'),
-            '[https://github.com/neovim/neovim/runtime/lua](https://github.com/neovim/neovim/tree/master/runtime/lua)',
+            '[https://github.com/neovim/neovim/runtime/lua](<https://github.com/neovim/neovim/tree/master/runtime/lua>)',
         );
         assert.equal(
             originLink('https://github.com/vim/vim/blob/v9.1.0/runtime/defaults.vim#L10'),
-            '[https://github.com/vim/vim/runtime/defaults.vim](https://github.com/vim/vim/blob/v9.1.0/runtime/defaults.vim#L10)',
+            '[https://github.com/vim/vim/runtime/defaults.vim](<https://github.com/vim/vim/blob/v9.1.0/runtime/defaults.vim#L10>)',
+        );
+    });
+
+    it('keeps a parenthesis in the URL inside the link', () => {
+        assert.equal(
+            originLink('https://github.com/vim/vim/blob/abc/runtime/foo).vim'),
+            '[https://github.com/vim/vim/runtime/foo).vim](<https://github.com/vim/vim/blob/abc/runtime/foo).vim>)',
         );
     });
 
@@ -183,6 +190,7 @@ describe('originLink', () => {
             'https://example.com/ruby',
             'my notes',
             '[Wikipedia: Berlin](https://de.wikipedia.org/wiki/Berlin)',
+            'https://github.com/vim/vim/blob/abc/runtime/a<b>.vim',
         ]) {
             assert.equal(originLink(origin), origin);
         }

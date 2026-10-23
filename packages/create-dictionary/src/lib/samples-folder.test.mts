@@ -87,7 +87,21 @@ describe('saveSamples', () => {
         const dir = join(root, 'vim');
         const url = 'https://github.com/vim/vim/blob/f9b3d0d8dd1a4345375fb401861d5f60ff7c7df1/runtime/defaults.vim';
         await saveSamples(dir, 'Vim', [{ name: 'defaults.vim', text: 'set ruler\n', origin: url }]);
+        const csv = readFileSync(join(dir, 'samples', 'sample-sources.csv'), 'utf8');
+        assert.ok(csv.includes(`,[https://github.com/vim/vim/runtime/defaults.vim](<${url}>),`));
         const readme = readFileSync(join(dir, 'samples', 'README.md'), 'utf8');
         assert.ok(readme.includes(`| [https://github.com/vim/vim/runtime/defaults.vim](${url}) |`));
+    });
+
+    it('keeps a parenthesis in a GitHub origin inside the link in the table', async () => {
+        const dir = join(root, 'paren');
+        const url = 'https://github.com/vim/vim/blob/abc/runtime/foo).vim';
+        await saveSamples(dir, 'Vim', [{ name: 'foo.vim', text: 'set ruler\n', origin: url }]);
+        const readme = readFileSync(join(dir, 'samples', 'README.md'), 'utf8');
+        assert.ok(
+            readme.includes(
+                '| [https://github.com/vim/vim/runtime/foo).vim](https://github.com/vim/vim/blob/abc/runtime/foo\\).vim) |',
+            ),
+        );
     });
 });
