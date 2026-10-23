@@ -1182,6 +1182,7 @@
     "packageName": "@cspell/dict-en-gb-legacy",
     "description": "British English Dictionary (Legacy)",
     "cspell": false,
+    "deprecated": "No longer maintained. Use @cspell/dict-en-gb.",
     "categories": ["natural-language"],
     "dictionaries": [
       {
@@ -1228,6 +1229,7 @@
     "packageName": "@cspell/dict-en-shared",
     "description": "English words shared between the various English dictionaries.",
     "cspell": false,
+    "private": true,
     "categories": ["natural-language"],
     "dictionaries": [
       {
@@ -1327,6 +1329,7 @@
     "packageName": "@cspell/dict-en-slang",
     "description": "Modern English slang words dictionary.",
     "cspell": false,
+    "private": true,
     "categories": ["other"],
     "dictionaries": [
       {
