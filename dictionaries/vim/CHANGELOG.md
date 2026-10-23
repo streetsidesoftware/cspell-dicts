@@ -1,5 +1,13 @@
 # Change Log
 
+## [1.1.0](https://github.com/streetsidesoftware/cspell-dicts/compare/@cspell/dict-vim@1.0.11...@cspell/dict-vim@1.1.0) (2026-10-23)
+
+
+### Features
+
+* **vim:** add Neovim functions, options, and v: variables ([#5959](https://github.com/streetsidesoftware/cspell-dicts/issues/5959)) ([6465db1](https://github.com/streetsidesoftware/cspell-dicts/commit/6465db1b618d8bfb9eedd537dccc478c7b6f29ec))
+* **vim:** add Vim options, functions, and v: variables ([#5957](https://github.com/streetsidesoftware/cspell-dicts/issues/5957)) ([d99d371](https://github.com/streetsidesoftware/cspell-dicts/commit/d99d3710fe5607b6350328534aea3d866702ba77))
+
 ## [1.0.11](https://github.com/streetsidesoftware/cspell-dicts/compare/@cspell/dict-vim@1.0.10...@cspell/dict-vim@1.0.11) (2026-10-21)
 
 

@@ -1,5 +1,12 @@
 # Changelog
 
+## [1.0.38](https://github.com/streetsidesoftware/cspell-dicts/compare/@cspell/dict-en-gb-legacy@1.0.37...@cspell/dict-en-gb-legacy@1.0.38) (2026-10-23)
+
+
+### Updates and Bug Fixes
+
+* Workflow Bot -- Build Dictionaries ([#5955](https://github.com/streetsidesoftware/cspell-dicts/issues/5955)) ([9cd47fb](https://github.com/streetsidesoftware/cspell-dicts/commit/9cd47fbf86cb783734d5cea6461422c16c8a0bee))
+
 ## [1.0.37](https://github.com/streetsidesoftware/cspell-dicts/compare/@cspell/dict-en-gb-legacy@1.0.36...@cspell/dict-en-gb-legacy@1.0.37) (2026-10-21)
 
 
