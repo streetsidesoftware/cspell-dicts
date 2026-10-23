@@ -8,6 +8,7 @@ ambw
 amenu
 anoremenu
 append
+appendbuf
 appendbufline
 arabicshape
 arga
@@ -19,6 +20,7 @@ argdelete
 argdo
 arge
 argedit
+argf
 argglobal
 argidx
 arglistid
@@ -52,6 +54,7 @@ ballooneval
 balloonevalterm
 balloonexpr
 balt
+bchdir
 bdel
 bdelete
 bdir
@@ -93,6 +96,7 @@ buflisted
 bufloaded
 bufname
 bufnr
+bufs
 buftype
 bufwinid
 bufwinnr
@@ -134,7 +138,11 @@ cgetbuffer
 cgete
 cgetexpr
 cgetfile
+chanclose
+changedtick
 changenr
+chans
+chansend
 charclass
 charcol
 charconvert
@@ -142,6 +150,7 @@ charidx
 chdir
 chec
 checkhealth
+checkp
 checkpath
 checkt
 checktime
@@ -258,6 +267,8 @@ delf
 delfunction
 delm
 delmarks
+dictwatcheradd
+dictwatcherdel
 diffanchors
 diffexpr
 diffg
@@ -322,6 +333,7 @@ endwhile
 enew
 enumvalue
 equalalways
+equalfile
 equalprg
 errmsg
 errorbells
@@ -334,13 +346,17 @@ eventignorewin
 evim
 excludenl
 exepath
+exitreason
+exmode
 expandcmd
 expandtab
 exrc
 extendnew
 extmark
+extmarks
 exusage
 fargs
+fclose
 fdls
 feedkeys
 fenc
@@ -431,6 +447,7 @@ getcompletiontype
 getcurpos
 getcursorcharpos
 getcwd
+getdefined
 getenv
 getfontname
 getfperm
@@ -440,6 +457,7 @@ getftype
 getid
 getimstatus
 getinfo
+getinput
 getjumplist
 getline
 getlist
@@ -449,6 +467,7 @@ getmatches
 getmousepos
 getmouseshape
 getpid
+getplaced
 getpos
 getprompt
 getqflist
@@ -540,6 +559,7 @@ imsf
 imst
 imstatusfunc
 imstyle
+inccommand
 includeexpr
 incsearch
 inde
@@ -560,6 +580,7 @@ inputlist
 inputrestore
 inputsave
 inputsecret
+inrange
 insertmode
 iput
 isabsolutepath
@@ -572,6 +593,7 @@ isinf
 iskeyword
 islocked
 isnan
+isnot
 isplit
 isprint
 iuna
@@ -579,6 +601,14 @@ iunabbrev
 iunmap
 iunme
 iunmenu
+jobclose
+jobid
+jobpid
+jobresize
+jobsend
+jobstart
+jobstop
+jobwait
 joinspaces
 jumpoptions
 keepa
@@ -747,9 +777,12 @@ mousem
 mousemev
 mousemodel
 mousemoveevent
+mousescroll
 mouseshape
 mouset
 mousetime
+msgpackdump
+msgpackparse
 mzeval
 mzfile
 mzquantum
@@ -803,6 +836,7 @@ noawa
 nobackup
 noballooneval
 noballoonevalterm
+nobeep
 nobeval
 nobevalterm
 nobin
@@ -1005,8 +1039,10 @@ notagstack
 notbi
 notbidi
 notbs
+notequal
 notermbidi
 notermguicolors
+notermsync
 noterse
 notextauto
 notextmode
@@ -1016,6 +1052,7 @@ notgst
 notildeop
 notimeout
 notitle
+notmatch
 noto
 notop
 notr
@@ -1032,16 +1069,20 @@ nowa
 nowarn
 nowb
 noweirdinvert
+nowfb
 nowfh
 nowfw
 nowic
 nowildignorecase
 nowildmenu
+nowinfixbuf
 nowinfixheight
 nowinfixwidth
+nowinpinned
 nowiv
 nowlsteal
 nowmnu
+nowp
 nowrap
 nowrapscan
 nowrite
@@ -1082,9 +1123,14 @@ ounme
 ounmenu
 ownsyntax
 packadd
+packd
+packdel
 packl
 packloadall
+packlockfile
 packpath
+packu
+packupdate
 pastetoggle
 patchexpr
 patchmode
@@ -1101,6 +1147,7 @@ perleval
 perlfile
 pexpr
 pheader
+placelist
 playevent
 playfile
 pmbcs
@@ -1108,6 +1155,7 @@ pmbfn
 popt
 popu
 popuphidden
+popupmenu
 ppop
 preserveindent
 prevcount
@@ -1141,6 +1189,7 @@ ptnext
 ptprevious
 ptrewind
 ptselect
+pumblend
 pumborder
 pumheight
 pummaxwidth
@@ -1178,6 +1227,7 @@ redi
 redir
 redo
 redr
+redrawdebug
 redrawstatus
 redrawt
 redrawtabline
@@ -1187,7 +1237,9 @@ redrawtime
 regcontents
 regexpengine
 regpat
+regtype
 relativenumber
+relnum
 reltimefloat
 reltimestr
 renderoptions
@@ -1198,6 +1250,10 @@ revins
 rightb
 rightbelow
 rightleftcmd
+rpcnotify
+rpcrequest
+rpcstart
+rpcstop
 rshada
 rubyd
 rubydll
@@ -1222,6 +1278,7 @@ sbnext
 sbprevious
 sbrewind
 sbuffer
+scbk
 screenattr
 screenchar
 screenchars
@@ -1250,6 +1307,8 @@ searchpairpos
 searchpos
 selectmode
 serverlist
+serverstart
+serverstop
 sessionoptions
 setbufline
 setbufvar
@@ -1283,6 +1342,8 @@ setwinvar
 sfind
 sfir
 sfirst
+shada
+shadafile
 shcf
 shellcmdflag
 shellescape
@@ -1334,6 +1395,7 @@ snor
 snoremap
 snoreme
 snoremenu
+sockconnect
 softtabstop
 soundfold
 sourceany
@@ -1368,11 +1430,15 @@ stal
 startgreplace
 startinsert
 startofline
+startreason
 startreplace
 startserver
+statuscolumn
 statusline
 statuslineopt
 statusmsg
+stdioopen
+stdpath
 stjump
 stlo
 stmp
@@ -1450,6 +1516,7 @@ tabpage
 tabpagebuflist
 tabpagemax
 tabpagenr
+tabpages
 tabpagewinnr
 tabpanelopt
 tabprevious
@@ -1478,11 +1545,16 @@ tempname
 tenc
 termbidi
 termblinkresp
+termcodes
 termencoding
+termfeatures
 termguicolors
 terminalprops
+termopen
 termosc
+termpastefilter
 termrbgresp
+termrequest
 termresize
 termresponse
 termrfgresp
@@ -1560,9 +1632,12 @@ unmap
 unme
 unmenu
 unnamedplus
+unplace
+unplacelist
 unsilent
 updatecount
 updatetime
+useractive
 varsofttabstop
 vartabstop
 vdir
@@ -1581,6 +1656,7 @@ viminfofile
 vimrc
 vimruntime
 virtcol
+virtnum
 virtualedit
 visualbell
 visualmode
@@ -1598,6 +1674,7 @@ vsts
 vunmap
 vunme
 vunmenu
+vvar
 wall
 warningmsg
 weirdinvert
@@ -1612,7 +1689,10 @@ wildmode
 wildoptions
 wildtrigger
 winaltkeys
+winbar
+winbl
 winblend
+winborder
 winbufnr
 winc
 wincmd
@@ -1626,6 +1706,7 @@ winfixheight
 winfixwidth
 winheight
 winhighlight
+winhl
 winid
 winlayout
 winline
@@ -1634,6 +1715,7 @@ winminwidth
 winnr
 winopts
 winp
+winpinned
 winpos
 winptydll
 winrestcmd
