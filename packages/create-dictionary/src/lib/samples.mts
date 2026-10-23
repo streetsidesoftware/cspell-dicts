@@ -263,12 +263,12 @@ export function sourcesRow(sample: Sample, added: string): string {
 
 /**
  * A GitHub file or folder URL as a link named without its commit or branch, so the table stays readable:
- * `https://github.com/vim/vim/blob/<sha>/runtime/defaults.vim` is named `https://github.com/vim/vim/runtime/defaults.vim`.
+ * `https://github.com/vim/vim/blob/<sha>/runtime/defaults.vim` is named `github.com/vim/vim/runtime/defaults.vim`.
  * The URL is in angle brackets, so parentheses in it can't end the link. Any other origin is kept as given.
  */
 export function originLink(origin: string | undefined): string | undefined {
     const match = origin?.match(
-        /^(https:\/\/github\.com\/[^/\s<>]+\/[^/\s<>]+)\/(?:blob|tree)\/[^/\s<>]+\/([^\s#?<>]+)(?:[#?][^\s<>]*)?$/,
+        /^https:\/\/(github\.com\/[^/\s<>]+\/[^/\s<>]+)\/(?:blob|tree)\/[^/\s<>]+\/([^\s#?<>]+)(?:[#?][^\s<>]*)?$/,
     );
     if (!match) return origin;
     return `[${match[1]}/${match[2]}](<${origin}>)`;
