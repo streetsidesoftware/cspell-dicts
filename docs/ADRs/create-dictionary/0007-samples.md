@@ -19,18 +19,22 @@ All samples live in `samples/` and are checked by one `cspell samples`, the `tes
   matter; the new-dictionary guide and skill ask for them.
 - **Sources and licenses.** `--add-sample-origin <file>=<url or text>` gives a sample's source, and
   `--add-sample-license <file>=<license>` its license; the prompt asks for both. `samples/sample-sources.csv` lists each
-  sample: a link to its file, its source, the day it was added, and its license, or `unknown`. `samples/README.md` shows
-  it as a table, injected with `@@inject: sample-sources.csv#markdown`. `add-samples` adds samples later, and adds rows.
+  sample: a link to its file, its source, the day it was added, and its license, or `unknown`. A GitHub file URL is
+  named by its repository and path, with the URL in angle brackets:
+  `[github.com/vim/vim: runtime/defaults.vim](<https://github.com/vim/vim/blob/<sha>/runtime/defaults.vim>)`. Any
+  other source is kept as given. `samples/README.md` has a title, a line on what `pnpm test` does, and the list as a
+  table, injected with `@@inject: sample-sources.csv#markdown`. `add-samples` adds samples later, and adds rows.
 - **Natural language.** Real prose, as `.md`. The generator fetches the start of the Wikipedia article on Seattle in
   the locale's language, its lead section as plain text, into `samples/seattle.md`; its source is a link,
-  `[Wikipedia: Seattle](…)`, and its license CC BY-SA 4.0. It finds the article through the English article's language links, since its title differs by language.
+  `[en.wikipedia.org: Seattle](<…>)`, to the current article, and its license CC BY-SA 4.0. It finds the article through the English article's language links, since its title differs by language.
   `--no-wikipedia-sample` skips it. Without a network connection it's left out, and isn't an error. Samples aren't
   published, but they are in the repository, so the license is recorded with the link.
 - **File types.** `samples/cspell.json` imports `../cspell-ext.json`, so each real sample is checked under its own file
   type.
 - **Static word sample, always.** The generator writes `samples/sample-words-in-dictionary.txt` once, from the first few
-  dozen words of the sources, skipping comments and blank lines. The dictionary's `cspell.json` checks it with the
-  dictionary's locale and file type:
+  dozen words of the sources, skipping comments and blank lines. `sample-sources.csv` lists it like any other sample:
+  its source is "Words from this dictionary's sources", under "The sources' licenses". The dictionary's `cspell.json`
+  checks it with the dictionary's locale and file type:
 
   ```json
   "overrides": [
@@ -77,6 +81,15 @@ five real `.m` scripts, a `samples/cspell.json` that imports `../cspell-ext.json
 each sample's origin, such as the `fft` page of the MATLAB documentation, or "no known origin". 31 natural language
 dictionaries have `samples/seattle.md`: the Wikipedia article on Seattle in their language, with its link at the top.
 
+Adding samples to the vim dictionary, in cspell-dicts#5957, showed three problems in what `add-samples` wrote:
+
+1. A GitHub source given as a URL at a commit showed as the raw URL, 40-character SHA and all, which made the table's
+   Source column unusable.
+2. The README it started said `sample-words-in-dictionary.txt` holds words from the sources. Only a new dictionary has
+   that file, so the vim README described a file that wasn't there.
+3. A link written without angle brackets ends at the first unbalanced `)` in its URL. inject-markdown then writes the
+   rest as plain text. With angle brackets it reads the whole URL, and writes it into the table with the `)` escaped.
+
 ## Rejected approaches
 
 - Requiring real samples, failing creation without one: works against easy to create. Not mentioning them: the gap
@@ -86,3 +99,14 @@ dictionaries have `samples/seattle.md`: the Wikipedia article on Seattle in thei
   link built from "Seattle" is wrong where the title is in another script, such as Hebrew.
 - Reading words back from `dict/`: tests the build with its own output.
 - Real samples only, with no static word sample: a dictionary without them would have no test.
+- A source as given, such as a GitHub URL at a commit: unreadable in the table.
+- Naming a GitHub link by its URL without the commit, such as `https://github.com/vim/vim/runtime/defaults.vim`: it
+  looks like a URL, but returns 404.
+- Naming a Wikipedia link `Wikipedia: Seattle`: it doesn't match the GitHub links, which name the site.
+- Linking a Wikipedia sample to the version it was copied from, with `?oldid=`: the article's link keeps working, its
+  history is a click away, and samples are never compared with their source.
+- Explaining the samples in the README: that the word sample holds words from the sources, and that a Wikipedia
+  sample is the start of the article. It described a file most dictionaries don't have, and each sample says what it
+  is in its own row.
+
+<!-- cspell:ignore oldid -->

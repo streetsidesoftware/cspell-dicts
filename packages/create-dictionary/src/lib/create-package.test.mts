@@ -192,6 +192,10 @@ describe('createPackage', () => {
             /^\[example\.rb\]\(\.\/example\.rb\),https:\/\/example\.com\/ruby,/m,
         );
         assert.match(
+            read(dir, 'samples/sample-sources.csv'),
+            /^\[sample-words-in-dictionary\.txt\]\(\.\/sample-words-in-dictionary\.txt\),Words from this dictionary's sources,.*,The sources' licenses$/m,
+        );
+        assert.match(
             read(dir, 'samples/README.md'),
             /\| \[example\.rb\]\(\.\/example\.rb\) +\| <https:\/\/example\.com\/ruby> +\|/,
         );

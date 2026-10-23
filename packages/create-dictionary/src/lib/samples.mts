@@ -162,7 +162,7 @@ export async function fetchArticle(article: Article, getJson: GetJson = fetchJso
     return {
         name: sampleName(article.title),
         text: `# [${found.title}](${url})\n\n${text}\n`,
-        origin: `[Wikipedia: ${found.title}](${url})`,
+        origin: `[${article.language}.wikipedia.org: ${found.title}](<${url}>)`,
         license: wikipediaLicense,
     };
 }
@@ -246,9 +246,6 @@ export function samplesReadme(friendlyName: string): string {
         '',
         "`pnpm test` spell checks these files with this dictionary. They aren't part of the npm package.",
         '',
-        `\`${wordSample}\` holds words from the sources, checked with the dictionary's locale and file type.`,
-        `The other samples are listed below, from \`${sampleSources}\`. A sample from Wikipedia is the start of the article.`,
-        '',
         sourcesMarker,
         '',
     ].join('\n');
@@ -261,7 +258,20 @@ export function sourcesRow(sample: Sample, added: string): string {
     const path = `./${sample.name}`;
     // A link target with spaces or parentheses needs angle brackets.
     const link = `[${sample.name}](${/[\s()<>]/.test(path) ? `<${path}>` : path})`;
-    return csvLine([link, sample.origin || 'unknown', added, sample.license || 'unknown']);
+    return csvLine([link, originLink(sample.origin) || 'unknown', added, sample.license || 'unknown']);
+}
+
+/**
+ * A GitHub file or folder URL as a link named without its commit or branch, so the table stays readable:
+ * `https://github.com/vim/vim/blob/<sha>/runtime/defaults.vim` is named `github.com/vim/vim: runtime/defaults.vim`.
+ * The URL is in angle brackets, so parentheses in it can't end the link. Any other origin is kept as given.
+ */
+export function originLink(origin: string | undefined): string | undefined {
+    const match = origin?.match(
+        /^https:\/\/(github\.com\/[^/\s<>]+\/[^/\s<>]+)\/(?:blob|tree)\/[^/\s<>]+\/([^\s#?<>]+)(?:[#?][^\s<>]*)?$/,
+    );
+    if (!match) return origin;
+    return `[${match[1]}: ${match[2]}](<${origin}>)`;
 }
 
 function csvLine(fields: string[]): string {
