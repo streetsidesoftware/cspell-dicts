@@ -80,6 +80,15 @@ describe('saveSamples', () => {
         await saveSamples(dir, 'Ruby', [{ name: 'hello.rb', text: 'puts 1\n', origin: 'https://example.com/ruby' }]);
         const readme = readFileSync(join(dir, 'samples', 'README.md'), 'utf8');
         assert.match(readme, /^# Ruby Samples\n/);
+        assert.doesNotMatch(readme, /sample-words-in-dictionary/);
         assert.match(readme, /\| \[hello\.rb\]\(\.\/hello\.rb\) +\| <https:\/\/example\.com\/ruby> +\|/);
+    });
+
+    it('shows a GitHub origin as a link named without its commit', async () => {
+        const dir = join(root, 'vim');
+        const url = 'https://github.com/vim/vim/blob/f9b3d0d8dd1a4345375fb401861d5f60ff7c7df1/runtime/defaults.vim';
+        await saveSamples(dir, 'Vim', [{ name: 'defaults.vim', text: 'set ruler\n', origin: url }]);
+        const readme = readFileSync(join(dir, 'samples', 'README.md'), 'utf8');
+        assert.ok(readme.includes(`| [https://github.com/vim/vim/runtime/defaults.vim](${url}) |`));
     });
 });

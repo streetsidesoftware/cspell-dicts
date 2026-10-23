@@ -444,7 +444,8 @@ pnpm create-dictionary ruby ruby-words.txt \
 
 Each sample is copied into `samples/` under its own name. `samples/sample-sources.csv` lists it with:
 
-- **Source:** where it came from, a web address or a few words, given as `<file name>=<origin>`.
+- **Source:** where it came from, a web address or a few words, given as `<file name>=<origin>`. Link a GitHub file at
+  its commit. The table names the link without the commit, so it stays short.
 - **Added:** the day it was added.
 - **License:** the license it came under, such as MIT, given as `<file name>=<license>`.
 

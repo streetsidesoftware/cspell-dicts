@@ -10,6 +10,7 @@ import {
     fetchSeattle,
     languageOf,
     noSampleOptions,
+    originLink,
     parseSamples,
     pronunciation,
     samplesConfig,
@@ -153,9 +154,46 @@ describe('fetchArticle', () => {
 
 describe('samplesReadme', () => {
     it('starts with the title, and ends with the marker for the sources table', () => {
-        const readme = samplesReadme('Ruby');
+        const readme = samplesReadme('Ruby', true);
         assert.match(readme, /^# Ruby Samples\n/);
         assert.ok(readme.endsWith('\n<!--- @@inject: sample-sources.csv#markdown --->\n'));
+    });
+
+    it('describes the word sample only when there is one', () => {
+        assert.match(samplesReadme('Ruby', true), /sample-words-in-dictionary\.txt.*\nThe other samples are listed/);
+        const readme = samplesReadme('Ruby', false);
+        assert.doesNotMatch(readme, /sample-words-in-dictionary/);
+        assert.match(readme, /\nThe samples are listed below/);
+    });
+});
+
+describe('originLink', () => {
+    it('names a GitHub file link without its commit', () => {
+        const url =
+            'https://github.com/vim/vim/blob/f9b3d0d8dd1a4345375fb401861d5f60ff7c7df1/runtime/plugin/matchparen.vim';
+        assert.equal(originLink(url), `[https://github.com/vim/vim/runtime/plugin/matchparen.vim](${url})`);
+    });
+
+    it('names a GitHub folder link without its branch, and drops a line anchor from the name', () => {
+        assert.equal(
+            originLink('https://github.com/neovim/neovim/tree/master/runtime/lua'),
+            '[https://github.com/neovim/neovim/runtime/lua](https://github.com/neovim/neovim/tree/master/runtime/lua)',
+        );
+        assert.equal(
+            originLink('https://github.com/vim/vim/blob/v9.1.0/runtime/defaults.vim#L10'),
+            '[https://github.com/vim/vim/runtime/defaults.vim](https://github.com/vim/vim/blob/v9.1.0/runtime/defaults.vim#L10)',
+        );
+    });
+
+    it('keeps any other origin as given', () => {
+        for (const origin of [
+            'https://example.com/ruby',
+            'my notes',
+            '[Wikipedia: Berlin](https://de.wikipedia.org/wiki/Berlin)',
+        ]) {
+            assert.equal(originLink(origin), origin);
+        }
+        assert.equal(originLink(undefined), undefined);
     });
 });
 

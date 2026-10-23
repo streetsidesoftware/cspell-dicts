@@ -239,15 +239,20 @@ async function fetchJson(url: string): Promise<unknown> {
 /** The marker that injects the sources table into `samples/README.md`. */
 export const sourcesMarker = `<!--- @@inject: ${sampleSources}#markdown --->`;
 
-/** A new `samples/README.md`, before the sources table is injected. */
-export function samplesReadme(friendlyName: string): string {
+/** A new `samples/README.md`, before the sources table is injected. `hasWordSample`: `samples/` has the word sample. */
+export function samplesReadme(friendlyName: string, hasWordSample: boolean): string {
+    const listed = `listed below, from \`${sampleSources}\`. A sample from Wikipedia is the start of the article.`;
     return [
         `# ${friendlyName} Samples`,
         '',
         "`pnpm test` spell checks these files with this dictionary. They aren't part of the npm package.",
         '',
-        `\`${wordSample}\` holds words from the sources, checked with the dictionary's locale and file type.`,
-        `The other samples are listed below, from \`${sampleSources}\`. A sample from Wikipedia is the start of the article.`,
+        ...(hasWordSample
+            ? [
+                  `\`${wordSample}\` holds words from the sources, checked with the dictionary's locale and file type.`,
+                  `The other samples are ${listed}`,
+              ]
+            : [`The samples are ${listed}`]),
         '',
         sourcesMarker,
         '',
@@ -261,7 +266,20 @@ export function sourcesRow(sample: Sample, added: string): string {
     const path = `./${sample.name}`;
     // A link target with spaces or parentheses needs angle brackets.
     const link = `[${sample.name}](${/[\s()<>]/.test(path) ? `<${path}>` : path})`;
-    return csvLine([link, sample.origin || 'unknown', added, sample.license || 'unknown']);
+    return csvLine([link, originLink(sample.origin) || 'unknown', added, sample.license || 'unknown']);
+}
+
+/**
+ * A GitHub file or folder URL as a link named without its commit or branch, so the table stays readable:
+ * `https://github.com/vim/vim/blob/<sha>/runtime/defaults.vim` is named `https://github.com/vim/vim/runtime/defaults.vim`.
+ * Any other origin is kept as given.
+ */
+export function originLink(origin: string | undefined): string | undefined {
+    const match = origin?.match(
+        /^(https:\/\/github\.com\/[^/\s]+\/[^/\s]+)\/(?:blob|tree)\/[^/\s]+\/([^\s#?]+)(?:[#?]\S*)?$/,
+    );
+    if (!match) return origin;
+    return `[${match[1]}/${match[2]}](${origin})`;
 }
 
 function csvLine(fields: string[]): string {
