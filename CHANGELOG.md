@@ -1,5 +1,19 @@
 # Release Notes
 
+## [34.2.0](https://github.com/streetsidesoftware/cspell-dicts/compare/cspell-dicts@34.1.0...cspell-dicts@34.2.0) (2026-10-23)
+
+
+### Features
+
+* **vim:** add Neovim functions, options, and v: variables ([#5959](https://github.com/streetsidesoftware/cspell-dicts/issues/5959)) ([6465db1](https://github.com/streetsidesoftware/cspell-dicts/commit/6465db1b618d8bfb9eedd537dccc478c7b6f29ec))
+* **vim:** add Vim options, functions, and v: variables ([#5957](https://github.com/streetsidesoftware/cspell-dicts/issues/5957)) ([d99d371](https://github.com/streetsidesoftware/cspell-dicts/commit/d99d3710fe5607b6350328534aea3d866702ba77))
+
+
+### Updates and Bug Fixes
+
+* **ro_RO:** stop publishing the hunspell index.js and index.d.ts ([#5949](https://github.com/streetsidesoftware/cspell-dicts/issues/5949)) ([96ab023](https://github.com/streetsidesoftware/cspell-dicts/commit/96ab023347a05a8adebad26bd1de6b90d4ac4d93))
+* Workflow Bot -- Build Dictionaries ([#5955](https://github.com/streetsidesoftware/cspell-dicts/issues/5955)) ([9cd47fb](https://github.com/streetsidesoftware/cspell-dicts/commit/9cd47fbf86cb783734d5cea6461422c16c8a0bee))
+
 ## [34.1.0](https://github.com/streetsidesoftware/cspell-dicts/compare/cspell-dicts@34.0.2...cspell-dicts@34.1.0) (2026-10-21)
 
 

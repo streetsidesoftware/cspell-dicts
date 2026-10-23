@@ -1,5 +1,12 @@
 # Change Log
 
+## [2.0.9](https://github.com/streetsidesoftware/cspell-dicts/compare/@cspell/dict-ro-ro@2.0.8...@cspell/dict-ro-ro@2.0.9) (2026-10-23)
+
+
+### Updates and Bug Fixes
+
+* **ro_RO:** stop publishing the hunspell index.js and index.d.ts ([#5949](https://github.com/streetsidesoftware/cspell-dicts/issues/5949)) ([96ab023](https://github.com/streetsidesoftware/cspell-dicts/commit/96ab023347a05a8adebad26bd1de6b90d4ac4d93))
+
 ## [2.0.8](https://github.com/streetsidesoftware/cspell-dicts/compare/@cspell/dict-ro-ro@2.0.7...@cspell/dict-ro-ro@2.0.8) (2026-10-13)
 
 
