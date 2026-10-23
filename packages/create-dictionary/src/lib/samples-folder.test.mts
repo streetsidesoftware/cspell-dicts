@@ -88,9 +88,9 @@ describe('saveSamples', () => {
         const url = 'https://github.com/vim/vim/blob/f9b3d0d8dd1a4345375fb401861d5f60ff7c7df1/runtime/defaults.vim';
         await saveSamples(dir, 'Vim', [{ name: 'defaults.vim', text: 'set ruler\n', origin: url }]);
         const csv = readFileSync(join(dir, 'samples', 'sample-sources.csv'), 'utf8');
-        assert.ok(csv.includes(`,[github.com/vim/vim/runtime/defaults.vim](<${url}>),`));
+        assert.ok(csv.includes(`,[github.com/vim/vim: runtime/defaults.vim](<${url}>),`));
         const readme = readFileSync(join(dir, 'samples', 'README.md'), 'utf8');
-        assert.ok(readme.includes(`| [github.com/vim/vim/runtime/defaults.vim](${url}) |`));
+        assert.ok(readme.includes(`| [github.com/vim/vim: runtime/defaults.vim](${url}) |`));
     });
 
     it('keeps a parenthesis in a GitHub origin inside the link in the table', async () => {
@@ -100,7 +100,7 @@ describe('saveSamples', () => {
         const readme = readFileSync(join(dir, 'samples', 'README.md'), 'utf8');
         assert.ok(
             readme.includes(
-                '| [github.com/vim/vim/runtime/foo).vim](https://github.com/vim/vim/blob/abc/runtime/foo\\).vim) |',
+                '| [github.com/vim/vim: runtime/foo).vim](https://github.com/vim/vim/blob/abc/runtime/foo\\).vim) |',
             ),
         );
     });
