@@ -162,7 +162,7 @@ export async function fetchArticle(article: Article, getJson: GetJson = fetchJso
     return {
         name: sampleName(article.title),
         text: `# [${found.title}](${url})\n\n${text}\n`,
-        origin: `[Wikipedia: ${found.title}](${url})`,
+        origin: `[${article.language}.wikipedia.org: ${found.title}](<${url}>)`,
         license: wikipediaLicense,
     };
 }

@@ -126,7 +126,7 @@ describe('fetchArticle', () => {
         const sample = await fetchArticle({ language: 'de', title: 'Berlin' }, wikipedia);
         assert.equal(sample?.name, 'berlin.md');
         assert.equal(sample?.text, '# [Berlin](https://de.wikipedia.org/wiki/Berlin)\n\nBerlin ist die Hauptstadt.\n');
-        assert.equal(sample?.origin, '[Wikipedia: Berlin](https://de.wikipedia.org/wiki/Berlin)');
+        assert.equal(sample?.origin, '[de.wikipedia.org: Berlin](<https://de.wikipedia.org/wiki/Berlin>)');
         assert.equal(sample?.license, '[CC BY-SA 4.0](https://creativecommons.org/licenses/by-sa/4.0/)');
     });
 
@@ -189,7 +189,7 @@ describe('originLink', () => {
         for (const origin of [
             'https://example.com/ruby',
             'my notes',
-            '[Wikipedia: Berlin](https://de.wikipedia.org/wiki/Berlin)',
+            '[de.wikipedia.org: Berlin](<https://de.wikipedia.org/wiki/Berlin>)',
             'https://github.com/vim/vim/blob/abc/runtime/a<b>.vim',
         ]) {
             assert.equal(originLink(origin), origin);
