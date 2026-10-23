@@ -154,16 +154,9 @@ describe('fetchArticle', () => {
 
 describe('samplesReadme', () => {
     it('starts with the title, and ends with the marker for the sources table', () => {
-        const readme = samplesReadme('Ruby', true);
+        const readme = samplesReadme('Ruby');
         assert.match(readme, /^# Ruby Samples\n/);
         assert.ok(readme.endsWith('\n<!--- @@inject: sample-sources.csv#markdown --->\n'));
-    });
-
-    it('describes the word sample only when there is one', () => {
-        assert.match(samplesReadme('Ruby', true), /sample-words-in-dictionary\.txt.*\nThe other samples are listed/);
-        const readme = samplesReadme('Ruby', false);
-        assert.doesNotMatch(readme, /sample-words-in-dictionary/);
-        assert.match(readme, /\nThe samples are listed below/);
     });
 });
 

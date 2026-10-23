@@ -14,7 +14,6 @@ import {
     sourcesHeader,
     sourcesMarker,
     sourcesRow,
-    wordSample,
 } from './samples.mts';
 
 /** What adding samples needs to know about a dictionary package. */
@@ -71,7 +70,7 @@ export async function saveSamples(dir: string, title: string, samples: Sample[],
     else write(sampleSources, sourcesHeader + '\n' + rows);
 
     const readme = join(samplesDir, 'README.md');
-    if (!existsSync(readme)) write('README.md', samplesReadme(title, existsSync(join(samplesDir, wordSample))));
+    if (!existsSync(readme)) write('README.md', samplesReadme(title));
     const current = readFileSync(readme, 'utf8');
     if (!current.includes(`@@inject: ${sampleSources}`)) {
         appendFileSync(readme, withNewline(current) + '\n' + sourcesMarker + '\n');

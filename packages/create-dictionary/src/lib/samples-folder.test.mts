@@ -80,7 +80,6 @@ describe('saveSamples', () => {
         await saveSamples(dir, 'Ruby', [{ name: 'hello.rb', text: 'puts 1\n', origin: 'https://example.com/ruby' }]);
         const readme = readFileSync(join(dir, 'samples', 'README.md'), 'utf8');
         assert.match(readme, /^# Ruby Samples\n/);
-        assert.doesNotMatch(readme, /sample-words-in-dictionary/);
         assert.match(readme, /\| \[hello\.rb\]\(\.\/hello\.rb\) +\| <https:\/\/example\.com\/ruby> +\|/);
     });
 

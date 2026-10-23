@@ -239,20 +239,12 @@ async function fetchJson(url: string): Promise<unknown> {
 /** The marker that injects the sources table into `samples/README.md`. */
 export const sourcesMarker = `<!--- @@inject: ${sampleSources}#markdown --->`;
 
-/** A new `samples/README.md`, before the sources table is injected. `hasWordSample`: `samples/` has the word sample. */
-export function samplesReadme(friendlyName: string, hasWordSample: boolean): string {
-    const listed = `listed below, from \`${sampleSources}\`. A sample from Wikipedia is the start of the article.`;
+/** A new `samples/README.md`, before the sources table is injected. */
+export function samplesReadme(friendlyName: string): string {
     return [
         `# ${friendlyName} Samples`,
         '',
         "`pnpm test` spell checks these files with this dictionary. They aren't part of the npm package.",
-        '',
-        ...(hasWordSample
-            ? [
-                  `\`${wordSample}\` holds words from the sources, checked with the dictionary's locale and file type.`,
-                  `The other samples are ${listed}`,
-              ]
-            : [`The samples are ${listed}`]),
         '',
         sourcesMarker,
         '',
