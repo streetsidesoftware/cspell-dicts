@@ -54,6 +54,10 @@ export interface DictionaryPackageInfo {
     dir: string;
     /** The dictionary package is bundled with cspell. */
     cspell: boolean;
+    /** The package is private: it isn't published to npm. */
+    private?: boolean | undefined;
+    /** Why the package is deprecated, from `deprecated` in its `package.json`. */
+    deprecated?: string | undefined;
     /** The description of the package. */
     description: string;
     /** The category of the package. (e.g. programming, natural-language) */
@@ -100,6 +104,8 @@ export async function fetchDictionaryInfo(dictURL: URL): Promise<DictionaryPacka
         packageName: pkgJson.name,
         description: cspellExt.description || pkgJson.description || '',
         cspell: defaultCSpellImports.has(pkgJson.name),
+        private: pkgJson.private || undefined,
+        deprecated: pkgJson.deprecated || undefined,
         categories: extractCategories(pkgJson, dictionaries),
         dictionaries,
         isBundle,
