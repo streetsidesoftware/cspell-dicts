@@ -36,6 +36,14 @@ Pick one dictionary and one source file for each word.
     that dictionary, or their cspell may bundle an older version. `git log -S <word> -- dictionaries/<name>/src` shows
     when it was added.
   - Removing a word: every dictionary it must leave.
+- **Check:** Before manually adding an npm package name to `dictionaries/npm`, verify at least 100,000 downloads in
+  one seven-day period using the [npm downloads API](https://github.com/npm/registry/blob/main/docs/download-counts.md):
+  - Check `https://api.npmjs.org/downloads/point/last-week/{package}` first (the last seven available days).
+  - If that is below the minimum, a previous seven-day period also qualifies. Use
+    `https://api.npmjs.org/downloads/point/{start}:{end}/{package}` with inclusive dates six days apart.
+  - Record the exact package name, `downloads`, `start`, `end`, and evidence URL in the PR.
+- **If it fails:** If no qualifying period can be verified, leave the proposed npm package addition out and explain
+  the download counts or missing evidence. Apply this check only to new manual additions; keep existing entries.
 - **Do:** pick the file by "Where words go" in `docs/word-lists.md`, the dictionary's `src/README.md`, and the header
   comments of its source files. Most new words go in `src/additional_words.txt`, when the dictionary has one.
 - **Check:** the dictionary's build reads the file you picked: its `cspell-tools.config.yaml`, or for the few without
