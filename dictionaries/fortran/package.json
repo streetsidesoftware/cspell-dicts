@@ -1,0 +1,54 @@
+{
+  "name": "@cspell/dict-fortran",
+  "version": "0.0.1-alpha.0",
+  "private": true,
+  "description": "Fortran dictionary for cspell. -- Private until verified",
+  "publishConfig": {
+    "access": "public",
+    "provenance": true
+  },
+  "keywords": [
+    "cspell",
+    "cspell-ext",
+    "fortran",
+    "Fortran",
+    "dictionary",
+    "spelling",
+    "fortran90",
+    "f90",
+    "gfortran"
+  ],
+  "homepage": "https://github.com/streetsidesoftware/cspell-dicts/blob/main/dictionaries/fortran#readme",
+  "bugs": {
+    "url": "https://github.com/streetsidesoftware/cspell-dicts/issues"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/streetsidesoftware/cspell-dicts",
+    "directory": "dictionaries/fortran"
+  },
+  "license": "MIT",
+  "author": "Street Side Software <support@streetsidesoftware.nl>",
+  "contributors": [],
+  "exports": {
+    ".": "./cspell-ext.json",
+    "./cspell": "./cspell-ext.json",
+    "./cspell-ext.json": "./cspell-ext.json"
+  },
+  "files": [
+    "dict/fortran.txt.gz",
+    "cspell-ext.json",
+    "*.js",
+    "*.d.ts",
+    "src/fortls/LICENSE"
+  ],
+  "scripts": {
+    "build": "cspell-tools-cli build",
+    "build:conditional": "cspell-tools-cli build --conditional",
+    "prepare:dictionary": "pnpm run build",
+    "prepublishOnly": "echo OK",
+    "test": "cspell samples"
+  },
+  "dependencies": {},
+  "devDependencies": {}
+}

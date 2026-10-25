@@ -1,0 +1,26 @@
+{
+    "id": "fortran",
+    "version": "0.2",
+    "name": "Fortran",
+    "description": "Fortran keywords, intrinsic procedures, and intrinsic module names",
+    "readonly": true,
+    "dictionaryDefinitions": [
+        {
+            "name": "fortran",
+            "path": "./dict/fortran.txt.gz",
+            "description": "Fortran keywords, intrinsic procedures, and intrinsic module names"
+        }
+    ],
+    "dictionaries": [],
+    "languageSettings": [
+        {
+            "languageId": "fortran,FortranFreeForm,FortranFixedForm",
+            "locale": "*",
+            "includeRegExpList": [],
+            "ignoreRegExpList": [],
+            "patterns": [],
+            "dictionaries": ["fortran"],
+            "dictionaryDefinitions": []
+        }
+    ]
+}
