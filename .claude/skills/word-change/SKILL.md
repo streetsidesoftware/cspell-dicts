@@ -38,6 +38,8 @@ Pick one dictionary and one source file for each word.
   - Removing a word: every dictionary it must leave.
 - **Do:** pick the file by "Where words go" in `docs/word-lists.md`, the dictionary's `src/README.md`, and the header
   comments of its source files. Most new words go in `src/additional_words.txt`, when the dictionary has one.
+- **Do:** for npm package names, follow `dictionaries/npm/src/README.md` and verify the full name, including any
+  `@scope/`, against the npm registry before adding it to `src/npm.txt`.
 - **Check:** the dictionary's build reads the file you picked: its `cspell-tools.config.yaml`, or for the few without
   one, the `build` script in its `package.json`.
 - **Stop and ask** when more than one file fits. Propose each word's file, with the reason.
@@ -74,6 +76,8 @@ Rebuild every dictionary the change reaches, and show that the words behave as a
   ```
 
 - **Check:**
+  - For npm additions, `src/npm.txt` contains the full published package name; check the generated words and a sample
+    using the package name, since a successful `trace` alone does not show that the npm updater will keep the source.
   - `git diff` in `dict/` shows only the expected words.
   - `pnpm exec cspell trace --only-found <word>`, from the repo root, shows each word where it should be.
   - `pnpm run lint`, from the repo root, passes.
