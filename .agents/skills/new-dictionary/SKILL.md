@@ -7,7 +7,7 @@ description: 'Designs and builds a new cspell-dicts dictionary, from interview t
 
 Takes a new dictionary from idea to one pull request: the design first, while it's cheap to change, then the dictionary
 built from it. Its name, dictionary IDs, and the file types and locales it's enabled for end up in users' configs from
-its first release. Read `docs/guides/new-dictionary.md` and `.claude/skills/feature-adr/SKILL.md` first: this skill
+its first release. Read `docs/guides/new-dictionary.md` and `.agents/skills/feature-adr/SKILL.md` first: this skill
 uses the guide for the build and `feature-adr`'s interview for the design.
 
 ## Workflow
