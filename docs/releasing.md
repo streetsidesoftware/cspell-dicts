@@ -55,20 +55,36 @@ To try risky changes to a dictionary, release it at a prerelease version, such a
 
 ## New dictionaries
 
-A new dictionary starts private, at version `0.0.1-alpha.0`, and isn't published. Once it has been verified, a
-maintainer with npm publish rights for `@cspell` makes it public.
+A new dictionary starts private, at version `0.0.1-alpha.0`, and isn't published. A workflow opens its publication PR,
+and a maintainer with npm publish rights for `@cspell` verifies the dictionary and publishes it.
 
 [Trusted Publishing](#trusted-publishing) only works for a package that's already on npm. So the maintainer publishes
 the first version by hand, as an alpha, and CI publishes every version after it, starting with `1.0.0`.
 
-### 1. Open the publication PR
+### 1. The publication PR opens
 
-Run the [Prepare a New Dictionary for Publication](https://github.com/streetsidesoftware/cspell-dicts/actions/workflows/prepare-publication.yml) workflow with the dictionary's directory under
-`dictionaries/`, such as `matlab`. It opens a `feat(<name>): publish the <name> dictionary` PR that:
+The [Prepare a New Dictionary for Publication](https://github.com/streetsidesoftware/cspell-dicts/actions/workflows/prepare-publication.yml) workflow runs on every push to `main` that changes a
+dictionary's `package.json`, `release-please-config.json`, or `static/published.json`. It opens a
+`feat(<name>): publish the <name> dictionary` PR for each private dictionary that:
 
-- makes the dictionary public
+- is in `release-please-config.json`. A new dictionary is added there by the PR that the
+  [Update Release Please Config](https://github.com/streetsidesoftware/cspell-dicts/actions/workflows/update-release-please-config.yml) workflow opens after it merges.
+- isn't marked `false` in `static/published.json`
+- has no open publication PR
+
+The PR:
+
+- makes the dictionary public: removes `private` and "-- Private until verified"
 - sets its `release-as` to `1.0.0`
+- records it in `static/published.json` as `{ "trustedPublishing": false }`
 - lists the commands for steps 2 and 3 as a checklist
+
+The workflow never changes an open PR, so commits pushed to its branch are kept. To rebuild a PR from `main`, close it
+and run the workflow by hand. Give it the dictionary's directory, such as `matlab`, or leave it blank for every
+dictionary.
+
+A dictionary that Release Please already released while it was private, such as one at `1.0.3`, is released at the next
+minor version instead, such as `1.1.0`. Its first version becomes an alpha of it, such as `1.1.0-alpha.0`.
 
 ### 2. Publish the first version by hand
 
@@ -88,6 +104,21 @@ there.
 - Merge the PR. The release PR then includes the dictionary at `1.0.0`.
 - Merge the release PR. CI publishes `1.0.0` through Trusted Publishing.
 - Remember to merge the PR that the [Update Release Please Config](https://github.com/streetsidesoftware/cspell-dicts/actions/workflows/update-release-please-config.yml) workflow opens to remove `release-as`.
+
+### Dictionaries that are never published
+
+Some private dictionaries are only inputs to other dictionaries' builds, such as `@cspell/dict-en-shared`. Mark each
+one `false` in `static/published.json` on `main`, and the workflow skips it. Close its publication PR if one is open.
+
+### Publication states
+
+`static/published.json` has one line per dictionary:
+
+- **No entry:** not prepared yet. If the dictionary is private, the workflow opens its publication PR.
+- **`{ "trustedPublishing": false }`:** waiting for its first publication, or its trusted publisher is missing (see
+  [Trusted Publishing](#trusted-publishing)).
+- **`{ "trustedPublishing": true }`:** its trusted publisher is set up.
+- **`false`:** never published. The workflow skips it.
 
 ### Later: add it to the bundle
 
@@ -117,7 +148,8 @@ To run it:
 1. Log in with `npm login --auth-type=web`. You need npm publish rights for `@cspell`.
 2. When npm asks for 2FA in the browser, check the box to skip 2FA for the next 5 minutes. If the 5 minutes run out
    before it finishes, run it again: it skips dictionaries that are already set up.
-3. Commit `static/published.json`, where the script records the dictionaries it set up.
+3. Commit `static/published.json`, where the script records each dictionary's state (see
+   [Publication states](#publication-states)).
 
 ## What gets published
 

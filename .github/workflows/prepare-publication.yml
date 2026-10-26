@@ -1,15 +1,25 @@
 name: ' 📦 Prepare a New Dictionary for Publication'
 
-# Opens a `feat:` PR that makes a private dictionary public and sets its `release-as` to 1.0.0.
-# The PR's checklist has the maintainer's steps before merging.
+# Opens a `feat:` PR for each private dictionary waiting for publication: it makes the dictionary public, sets its
+# `release-as`, and records it in static/published.json. The PR's checklist has the maintainer's steps.
+# A dictionary is skipped when static/published.json marks it `false`, when it isn't in release-please-config.json yet,
+# or when its PR is already open. An open PR is never rebuilt, since the maintainer commits to its branch; close it to
+# have the next run rebuild it.
 
 on:
+  push:
+    branches:
+      - main
+    paths:
+      - 'dictionaries/*/package.json'
+      - 'release-please-config.json'
+      - 'static/published.json'
   workflow_dispatch:
     inputs:
       dictionary:
-        description: 'Dictionary directory under dictionaries/, such as perl'
+        description: 'Only this dictionary: its directory under dictionaries/, such as perl, or its name. Blank: all.'
         type: string
-        required: true
+        required: false
       ref:
         description: 'Branch to run against and open the PR into'
         type: string
@@ -18,12 +28,52 @@ on:
 permissions:
   contents: read
 
+concurrency:
+  group: ${{ github.workflow }}
+  cancel-in-progress: false
+
+env:
+  REF_BRANCH: ${{ inputs.ref || 'main' }}
+
 jobs:
-  prepare-publication:
+  find:
     if: github.repository_owner == 'streetsidesoftware'
     runs-on: ubuntu-latest
+    permissions:
+      contents: read
+      pull-requests: read
+    outputs:
+      dictionaries: ${{ steps.find.outputs.dictionaries }}
+    steps:
+      - name: Checkout code
+        uses: actions/checkout@3d3c42e5aac5ba805825da76410c181273ba90b1 # v7.0.1
+        with:
+          persist-credentials: false
+          ref: ${{ env.REF_BRANCH }}
+
+      - name: Setup
+        uses: ./.github/actions/quick-setup
+
+      - name: Install
+        run: pnpm i
+
+      - name: Find dictionaries waiting for publication
+        id: find
+        env:
+          GITHUB_TOKEN: ${{ github.token }}
+          DICTIONARY: ${{ inputs.dictionary }}
+        run: pnpm exec publication-candidates --github-output "$DICTIONARY"
+
+  prepare-publication:
+    needs: find
+    if: needs.find.outputs.dictionaries != '[]'
+    runs-on: ubuntu-latest
+    strategy:
+      fail-fast: false
+      matrix:
+        include: ${{ fromJSON(needs.find.outputs.dictionaries) }}
     env:
-      REF_BRANCH: ${{ inputs.ref || 'main' }}
+      DICTIONARY_NAME: ${{ matrix.name }}
     steps:
       - name: Checkout code
         uses: actions/checkout@3d3c42e5aac5ba805825da76410c181273ba90b1 # v7.0.1
@@ -38,36 +88,37 @@ jobs:
         run: pnpm i
 
       - name: Prepare for publication
-        working-directory: dictionaries/${{ inputs.dictionary }}
-        run: pnpm prepare-publication
+        run: pnpm prepare-publication "$DICTIONARY_NAME"
 
       - name: PR
         uses: ./.github/actions/pr
         with:
-          commit-message: 'feat(${{ inputs.dictionary }}): publish the ${{ inputs.dictionary }} dictionary'
-          branch: prepare-publication-${{ inputs.dictionary }}
+          commit-message: 'feat(${{ matrix.dir }}): publish the ${{ matrix.dir }} dictionary'
+          branch: prepare-publication-${{ matrix.dir }}
           base: ${{ env.REF_BRANCH }}
           body: |
-            Makes the `${{ inputs.dictionary }}` dictionary public: removes `private` and "-- Private until verified", and sets its `release-as` to `1.0.0`.
+            Makes the `${{ matrix.dir }}` dictionary public: removes `private` and "-- Private until verified", sets its version to `${{ matrix.version }}` and its `release-as` to `${{ matrix.releaseAs }}`, and records it in `static/published.json` as waiting for publication (`{ "trustedPublishing": false }`).
+
+            This PR stays as it is while it's open, so commits pushed to its branch are kept. To rebuild it from `main`, close it and run the workflow. To never publish the dictionary, set its entry in `static/published.json` on `main` to `false` and close this PR.
 
             ### 1. Check out this branch
 
             With git, fetching only this branch:
 
             ```sh
-            git fetch origin prepare-publication-${{ inputs.dictionary }}
-            git switch -C prepare-publication-${{ inputs.dictionary }} FETCH_HEAD
+            git fetch origin prepare-publication-${{ matrix.dir }}
+            git switch -C prepare-publication-${{ matrix.dir }} FETCH_HEAD
             ```
 
             Or with the GitHub CLI:
 
             ```sh
-            gh pr checkout prepare-publication-${{ inputs.dictionary }} --detach
+            gh pr checkout prepare-publication-${{ matrix.dir }} --detach
             ```
 
             Either way, section 3 pushes with git.
 
-            ### 2. Publish the first version
+            ### 2. Publish the first version as an alpha
 
             From the repo root:
 
@@ -76,9 +127,9 @@ jobs:
               npm login --auth-type=web
               npm whoami
               ```
-            - [ ] Build and pack the dictionary, then check the files under "Tarball Contents":
+            - [ ] Build and pack the dictionary, then check the files under "Tarball Contents" and that the version is `${{ matrix.version }}`. Built files that git ignores, such as `dict/*.txt.gz`, must be there:
               ```sh
-              cd dictionaries/${{ inputs.dictionary }}
+              cd dictionaries/${{ matrix.dir }}
               pnpm install
               pnpm run prepare:dictionary
               pnpm pack --out package.tgz
@@ -86,29 +137,30 @@ jobs:
             - [ ] Publish it and add the trusted publisher. When npm opens the browser for 2FA, check the box to skip 2FA for the next 5 minutes, so `pnpm trusted-publishing` doesn't ask again:
               ```sh
               npm publish package.tgz --tag alpha --provenance=false
+              rm package.tgz
               pnpm trusted-publishing
               ```
 
             ### 3. Commit the Trusted Publishing status
 
-            `pnpm trusted-publishing` records the dictionary in `static/published.json`:
+            `pnpm trusted-publishing` changes the dictionary's entry in `static/published.json` to `{ "trustedPublishing": true }`:
 
             ```sh
             cd ../..
             git add static/published.json
-            git commit -m "chore(${{ inputs.dictionary }}): record Trusted Publishing"
-            git push origin HEAD:prepare-publication-${{ inputs.dictionary }}
+            git commit -m "chore(${{ matrix.dir }}): record Trusted Publishing"
+            git push origin HEAD:prepare-publication-${{ matrix.dir }}
             ```
 
             ### 4. Merge this PR
 
-            Then merge the release PR. The [Publish to NPM](https://github.com/streetsidesoftware/cspell-dicts/actions/workflows/publish.yml) workflow publishes `1.0.0` through Trusted Publishing, and the [Update Release Please Config](https://github.com/streetsidesoftware/cspell-dicts/actions/workflows/update-release-please-config.yml) workflow removes `release-as`.
+            Then merge the release PR. The [Publish to NPM](https://github.com/streetsidesoftware/cspell-dicts/actions/workflows/publish.yml) workflow publishes `${{ matrix.releaseAs }}` through Trusted Publishing. Then merge the PR that the [Update Release Please Config](https://github.com/streetsidesoftware/cspell-dicts/actions/workflows/update-release-please-config.yml) workflow opens to remove `release-as`.
 
             Optional: clean up your clone. Use `-D`, since a squash merge doesn't count as merged:
 
             ```sh
             git switch main
-            git branch -D prepare-publication-${{ inputs.dictionary }}
+            git branch -D prepare-publication-${{ matrix.dir }}
             ```
           app_id: ${{ secrets.AUTOMATION_APP_ID }}
           app_private_key: ${{ secrets.AUTOMATION_PRIVATE_KEY }}
