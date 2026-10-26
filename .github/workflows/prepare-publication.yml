@@ -150,11 +150,17 @@ jobs:
             git push
             ```
 
-            ### 4. Merge this PR
+            ### 4. Merge
 
-            Then merge the release PR. The [Publish to NPM](https://github.com/streetsidesoftware/cspell-dicts/actions/workflows/publish.yml) workflow publishes `${{ matrix.releaseAs }}` through Trusted Publishing. Then merge the PR that the [Update Release Please Config](https://github.com/streetsidesoftware/cspell-dicts/actions/workflows/update-release-please-config.yml) workflow opens to remove `release-as`.
+            On GitHub:
 
-            Optional: clean up your clone. Use `-D`, since a squash merge doesn't count as merged:
+            - [ ] Merge this PR.
+            - [ ] Merge the release PR. The [Publish to NPM](https://github.com/streetsidesoftware/cspell-dicts/actions/workflows/publish.yml) workflow publishes `${{ matrix.releaseAs }}` through Trusted Publishing.
+            - [ ] Merge the PR that the [Update Release Please Config](https://github.com/streetsidesoftware/cspell-dicts/actions/workflows/update-release-please-config.yml) workflow opens to remove `release-as`.
+
+            ### 5. Optional: clean up your clone
+
+            Once this PR is merged, delete your local branch. Use `-D`, since a squash merge doesn't count as merged:
 
             ```sh
             git switch main
