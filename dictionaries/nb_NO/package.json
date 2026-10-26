@@ -14,7 +14,7 @@
     "dictionary",
     "spelling"
   ],
-  "homepage": "https://github.com/streetsidesoftware/cspell-dicts/blob/main/dictionaries/no_NB#readme",
+  "homepage": "https://github.com/streetsidesoftware/cspell-dicts/blob/main/dictionaries/nb_NO#readme",
   "bugs": {
     "url": "https://github.com/streetsidesoftware/cspell-dicts/issues"
   },
@@ -25,24 +25,31 @@
   },
   "license": "GPL-3.0-or-later",
   "author": "Street Side Software <support@streetsidesoftware.nl>",
+  "contributors": [
+    "Steffen Holanger (https://github.com/spiftire)",
+    "Eirik Vågeskar (https://github.com/Vages)"
+  ],
   "exports": {
     ".": "./cspell-ext.json",
     "./cspell": "./cspell-ext.json",
     "./cspell-ext.json": "./cspell-ext.json"
   },
   "files": [
-    "nb.trie.gz",
+    "dict/nb-no.trie.gz",
     "cspell-ext.json",
-    "src/README_nb_NO.md"
+    "*.js",
+    "*.d.ts",
+    "src/hunspell/dictionaries/nb/license",
+    "src/hunspell/dictionaries/nb/readme.md"
   ],
   "scripts": {
-    "build": "cspell-tools-cli build && pnpm gz",
-    "build:conditional": "cspell-tools-cli build --conditional && pnpm gz",
-    "gz": "cspell-tools-cli gzip \"*.trie\"",
-    "prepare:dictionary": "pnpm run gz",
-    "prepublishOnly": "echo pre-publish",
-    "test": "pnpm run test-words && pnpm run test-samples",
-    "test-samples": "cspell \"samples/**\"",
-    "test-words": "pipe-cmds \"hunspell-reader words -n 1000 \\\"src/nb.dic\\\"\" \"cspell -c ./cspell-ext.json \\\"--locale=nb\\\" \\\"--languageId=*\\\" stdin\""
-  }
+    "build": "cspell-tools-cli build",
+    "conditional-build": "pnpm run sync && cspell-tools-cli build --conditional",
+    "prepare:dictionary": "cspell-tools-cli gzip \"dict/nb-no.trie\"",
+    "prepublishOnly": "echo OK",
+    "sync": "sync-github-files wooorm/dictionaries --filter \"dictionaries/nb/index.aff\" --filter \"dictionaries/nb/index.dic\" --filter \"dictionaries/nb/license\" --filter \"dictionaries/nb/readme.md\" --tag=main -o src/hunspell",
+    "test": "cspell samples"
+  },
+  "dependencies": {},
+  "devDependencies": {}
 }

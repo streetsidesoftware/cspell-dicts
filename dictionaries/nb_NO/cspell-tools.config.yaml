@@ -1,12 +1,14 @@
 # yaml-language-server: $schema=https://raw.githubusercontent.com/streetsidesoftware/cspell/main/packages/cspell-tools/cspell-tools.config.schema.json
 
 targets:
-  - name: nb
-    targetDirectory: .
-    compress: false
-    format: trie3
+  - name: 'nb-no'
     sources:
-      - src/nb.dic
-    sort: true
+      - filename: 'src/hunspell/dictionaries/nb/index.dic'
+      - filename: 'src/additional_words.txt'
+    excludeWordsFrom: ['src/exclude_words.txt']
+    format: 'trie3'
+    targetDirectory: './dict'
     generateNonStrict: true
+    compress: true
+    keepUncompressed: true
 checksumFile: true

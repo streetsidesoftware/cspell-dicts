@@ -1,8 +1,13 @@
 # CSpell Norwegian Bokmål Dictionary
 
-Norwegian Bokmål dictionary for cspell.
+Norwegian Bokmål dictionary.
 
-This is a pre-built dictionary for use with cspell.
+This is a pre-built dictionary for use with CSpell. It spell checks text written in Bokmål, one of the two written
+standards of Norwegian.
+
+The words come from the Hunspell dictionary of the
+[spell-norwegian](https://github.com/wooorm/dictionaries/tree/main/dictionaries/nb) project, version 2.2 from 2016.
+It hasn't been updated since, so newer words are missing. Compound words that the source doesn't list are flagged.
 
 <!--- @@inject: ../../static/requirements.md#values-file=:../../static/engines.json&values-file=:cspell-ext.json --->
 
@@ -145,11 +150,21 @@ See: [How to Create a New Dictionary](https://github.com/streetsidesoftware/cspe
 
 <!--- @@inject-end: ../../static/contributing.md --->
 
+## Sources
+
+<!--- @@inject: ./static/sources.csv#markdown --->
+
+| Source   | From                                                               | License                                                                                                                         | Updated |
+| -------- | ------------------------------------------------------------------ | ------------------------------------------------------------------------------------------------------------------------------- | ------- |
+| hunspell | <https://github.com/wooorm/dictionaries/tree/main/dictionaries/nb> | [license](https://github.com/streetsidesoftware/cspell-dicts/blob/main/dictionaries/nb_NO/src/hunspell/dictionaries/nb/license) | by hand |
+
+<!--- @@inject-end: ./static/sources.csv#markdown --->
+
 ## License
 
-GPL-3.0
+GPL-3.0-or-later
 
-> Some packages may have other licenses included.
+The sources keep their own licenses, listed in [Sources](#sources).
 
 <!--- @@inject: ../../static/footer.md --->
 
