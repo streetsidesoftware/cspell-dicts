@@ -1,0 +1,34 @@
+{
+    "import": [
+        "../cspell-ext.json"
+    ],
+    "ignorePaths": [
+        "README.md",
+        "cspell.json",
+        "sample-sources.csv"
+    ],
+    "language": "nb,nb-NO,en",
+    "patterns": [
+        {
+            "name": "pronunciation",
+            "pattern": "/(\\[|/)[^\\]/\\n]*[\\u0250-\\u02FF][^\\]/\\n]*(\\]|/)/gu",
+            "description": "A pronunciation, such as [sɪˈætəl], in Wikipedia articles."
+        }
+    ],
+    "ignoreRegExpList": [
+        "pronunciation"
+    ],
+    "words": [
+        "demokratiindeks",
+        "Finnmarksloven",
+        "rikdomsøkning",
+        "utenlandsoperasjoner"
+    ],
+    "overrides": [
+        {
+            "filename": "sample-words-in-dictionary.txt",
+            "language": "nb,nb-NO",
+            "languageId": "*"
+        }
+    ]
+}
