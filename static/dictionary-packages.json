@@ -2686,6 +2686,30 @@
     "patterns": []
   },
   {
+    "name": "Norwegian Nynorsk",
+    "version": "0.0.1-alpha.0",
+    "dir": "dictionaries/nn_NO",
+    "packageName": "@cspell/dict-nn-no",
+    "description": "Norwegian Nynorsk dictionary.",
+    "cspell": false,
+    "private": true,
+    "categories": ["natural-language"],
+    "dictionaries": [
+      {
+        "name": "nn-no",
+        "description": "Norwegian Nynorsk dictionary.",
+        "locales": ["nn", "nn-NO"],
+        "localeFileTypes": [
+          {
+            "locale": "nn, nn-NO",
+            "fileType": "*"
+          }
+        ]
+      }
+    ],
+    "patterns": []
+  },
+  {
     "name": "Node.js",
     "version": "5.0.9",
     "dir": "dictionaries/node",
