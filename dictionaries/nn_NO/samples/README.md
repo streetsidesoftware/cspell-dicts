@@ -1,0 +1,13 @@
+# Norwegian Nynorsk Samples
+
+`pnpm test` spell checks these files with this dictionary. They aren't part of the npm package.
+
+<!--- @@inject: sample-sources.csv#markdown --->
+
+| File                                                               | Source                                                             | Added      | License                                                         |
+| ------------------------------------------------------------------ | ------------------------------------------------------------------ | ---------- | --------------------------------------------------------------- |
+| [sample-words-in-dictionary.txt](./sample-words-in-dictionary.txt) | Words from this dictionary's sources                               | 2026-10-25 | The sources' licenses                                           |
+| [seattle.md](./seattle.md)                                         | [nn.wikipedia.org: Seattle](https://nn.wikipedia.org/wiki/Seattle) | 2026-10-25 | [CC BY-SA 4.0](https://creativecommons.org/licenses/by-sa/4.0/) |
+| [noreg.md](./noreg.md)                                             | [nn.wikipedia.org: Noreg](https://nn.wikipedia.org/wiki/Noreg)     | 2026-10-25 | [CC BY-SA 4.0](https://creativecommons.org/licenses/by-sa/4.0/) |
+
+<!--- @@inject-end: sample-sources.csv#markdown --->

@@ -1,0 +1,29 @@
+{
+    "id": "nn-no",
+    "version": "0.2",
+    "name": "Norwegian Nynorsk",
+    "description": "Norwegian Nynorsk dictionary.",
+    "readonly": true,
+    "dictionaryDefinitions": [
+        {
+            "name": "nn-no",
+            "path": "./dict/nn-no.trie.gz",
+            "description": "Norwegian Nynorsk dictionary.",
+            "dictionaryInformation": {
+                "locale": "nn-NO"
+            }
+        }
+    ],
+    "dictionaries": [],
+    "languageSettings": [
+        {
+            "languageId": "*",
+            "locale": "nn,nn-NO",
+            "includeRegExpList": [],
+            "ignoreRegExpList": [],
+            "patterns": [],
+            "dictionaries": ["nn-no"],
+            "dictionaryDefinitions": []
+        }
+    ]
+}

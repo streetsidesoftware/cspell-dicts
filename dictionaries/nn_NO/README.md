@@ -1,0 +1,182 @@
+# CSpell Norwegian Nynorsk Dictionary
+
+Norwegian Nynorsk dictionary.
+
+This is a pre-built dictionary for use with CSpell. It spell checks text written in Nynorsk, one of the two written
+standards of Norwegian. For Norwegian Bokmål, use
+[@cspell/dict-nb-no](https://github.com/streetsidesoftware/cspell-dicts/tree/main/dictionaries/nb_NO#readme).
+
+The words come from the Hunspell dictionary of the
+[spell-norwegian](https://github.com/wooorm/dictionaries/tree/main/dictionaries/nn) project, version 2.2 from 2016.
+It hasn't been updated since, so newer words are missing. Compound words that the source doesn't list are flagged.
+
+<!--- @@inject: ../../static/requirements.md#values-file=:../../static/engines.json&values-file=:cspell-ext.json --->
+
+## Requirements
+
+| Tool                                                                                                                                 | Version |
+| ------------------------------------------------------------------------------------------------------------------------------------ | ------- |
+| [cspell](https://github.com/streetsidesoftware/cspell)                                                                               | `>=8`   |
+| [Code Spell Checker - Visual Studio Code](https://marketplace.visualstudio.com/items?itemName=streetsidesoftware.code-spell-checker) | `>=4`   |
+
+<!--- @@inject-end: ../../static/requirements.md#values-file=:../../static/engines.json&values-file=:cspell-ext.json --->
+
+<!--- @@inject: ./static/install.md --->
+
+## Local Installation
+
+```sh
+npm install -D @cspell/dict-nn-no
+```
+
+## Configuration
+
+<details>
+<summary>VSCode Settings</summary>
+
+Add the following to your VSCode settings:
+
+**`.vscode/settings.json`**
+
+```jsonc
+{
+  "cSpell.import": ["@cspell/dict-nn-no/cspell-ext.json"],
+  "cSpell.language": "nn, nn-NO",
+}
+```
+
+</details>
+
+<details>
+<summary>CSpell Settings <code>cspell.json</code></summary>
+
+**`cspell.json`**
+
+```jsonc
+{
+  "import": ["@cspell/dict-nn-no/cspell-ext.json"],
+  "language": "nn, nn-NO",
+}
+```
+
+</details>
+
+<details>
+<summary>CSpell Settings <code>cspell.config.yaml</code></summary>
+
+**`cspell.config.yaml`**
+
+```yaml
+import:
+  - '@cspell/dict-nn-no/cspell-ext.json'
+language: nn, nn-NO
+```
+
+</details>
+
+## Local Installation using CDN
+
+## CDN Configuration
+
+<details>
+<summary>VSCode Settings</summary>
+
+Add the following to your VSCode settings:
+
+**`.vscode/settings.json`**
+
+```jsonc
+{
+  "cSpell.import": ["https://cdn.jsdelivr.net/npm/@cspell/dict-nn-no@0/cspell-ext.json"],
+  "cSpell.language": "nn, nn-NO",
+}
+```
+
+</details>
+
+<details>
+<summary>CSpell Settings <code>cspell.json</code></summary>
+
+**`cspell.json`**
+
+```jsonc
+{
+  "import": ["https://cdn.jsdelivr.net/npm/@cspell/dict-nn-no@0/cspell-ext.json"],
+  "language": "nn, nn-NO",
+}
+```
+
+</details>
+
+<details>
+<summary>CSpell Settings <code>cspell.config.yaml</code></summary>
+
+**`cspell.config.yaml`**
+
+```yaml
+import:
+  - https://cdn.jsdelivr.net/npm/@cspell/dict-nn-no@0/cspell-ext.json
+language: nn, nn-NO
+```
+
+</details>
+
+## Dictionary Information
+
+| Name    | Enabled | Description                   |
+| ------- | ------- | ----------------------------- |
+| `nn-no` |         | Norwegian Nynorsk dictionary. |
+
+## Language Settings
+
+| Name    | Locale        | File Type |
+| ------- | ------------- | --------- |
+| `nn-no` | `nn`, `nn-NO` | `*`       |
+
+<!--- @@inject-end: ./static/install.md --->
+
+<!--- @@inject: ../../static/contributing.md --->
+
+## Contributing
+
+Please help correct any mistakes in the dictionaries.
+
+See: [Contributing](https://github.com/streetsidesoftware/cspell-dicts#contributing)
+
+Special thanks to all of our amazing contributors!
+
+### Dictionary Development
+
+See: [How to Create a New Dictionary](https://github.com/streetsidesoftware/cspell-dicts#how-to-create-a-new-dictionary)
+
+<!--- @@inject-end: ../../static/contributing.md --->
+
+## Sources
+
+<!--- @@inject: ./static/sources.csv#markdown --->
+
+| Source   | From                                                               | License                                                                                                                         | Updated |
+| -------- | ------------------------------------------------------------------ | ------------------------------------------------------------------------------------------------------------------------------- | ------- |
+| hunspell | <https://github.com/wooorm/dictionaries/tree/main/dictionaries/nn> | [license](https://github.com/streetsidesoftware/cspell-dicts/blob/main/dictionaries/nn_NO/src/hunspell/dictionaries/nn/license) | by hand |
+
+<!--- @@inject-end: ./static/sources.csv#markdown --->
+
+## License
+
+GPL-3.0-or-later
+
+The sources keep their own licenses, listed in [Sources](#sources).
+
+<!--- @@inject: ../../static/footer.md --->
+
+<br/>
+
+---
+
+<p align="center">
+Brought to you by <a href="https://streetsidesoftware.com" title="Street Side Software">
+<img width="16" alt="Street Side Software Logo" src="https://i.imgur.com/CyduuVY.png" /> Street Side Software
+</a>
+</p>
+
+<!--- @@inject-end: ../../static/footer.md --->
