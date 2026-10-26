@@ -9,16 +9,14 @@ import { setTimeout as sleep } from 'node:timers/promises';
 import { fileURLToPath } from 'node:url';
 
 import { program } from 'commander';
-import { format } from 'prettier';
 
 import { currentPackageName } from './lib/current-package.mts';
+import { type Published, readPublished, recordTrusted, writePublished } from './lib/publication.mts';
 
 const rootDir = fileURLToPath(new URL('../', import.meta.url));
 const repository = 'streetsidesoftware/cspell-dicts';
 const workflowFile = 'publish.yml';
 const registry = 'https://registry.npmjs.org';
-// Packages known to trust publish.yml, so a run can skip them without asking npm.
-const publishedFile = path.join(rootDir, 'static/published.json');
 // npm recommends a pause between trust calls to avoid rate limiting.
 const pauseMs = 1000;
 
@@ -28,12 +26,6 @@ interface TrustConfig {
     repository?: string;
     permissions?: string[];
 }
-
-interface PublishedEntry {
-    trustedPublishing?: boolean;
-}
-
-type Published = Record<string, PublishedEntry>;
 
 interface PublishInfo {
     version: string;
@@ -122,18 +114,13 @@ function listTrust(name: string): TrustConfig[] {
     return npmJson(['trust', 'list', name]) as TrustConfig[];
 }
 
-async function readPublished(): Promise<Published> {
-    return fs.readFile(publishedFile, 'utf8').then(JSON.parse, () => ({}));
-}
-
-async function recordTrusted(published: Published, name: string, trusted: boolean): Promise<void> {
-    if (!!published[name]?.trustedPublishing === trusted) return;
-    published[name] = { ...published[name], trustedPublishing: trusted };
-    if (!trusted) delete published[name].trustedPublishing;
-    if (!Object.keys(published[name]).length) delete published[name];
-    const sorted = Object.fromEntries(Object.entries(published).sort(([a], [b]) => (a < b ? -1 : a > b ? 1 : 0)));
-    const text = await format(JSON.stringify(sorted), { filepath: publishedFile });
-    await fs.writeFile(publishedFile, text);
+// Records in static/published.json whether `name` trusts publish.yml, so a later run can skip it without asking npm.
+async function record(published: Published, name: string, trusted: boolean): Promise<Published> {
+    const entry = published[name];
+    if (entry && entry.trustedPublishing === trusted) return published;
+    const updated = recordTrusted(published, name, trusted);
+    await writePublished(rootDir, updated);
+    return updated;
 }
 
 function hasPublisher(configs: TrustConfig[]): boolean {
@@ -141,9 +128,10 @@ function hasPublisher(configs: TrustConfig[]): boolean {
 }
 
 async function addTrust(names: string[], dryRun: boolean): Promise<void> {
-    const published = await readPublished();
+    let published = await readPublished(rootDir);
     for (const name of names) {
-        if (published[name]?.trustedPublishing) {
+        const entry = published[name];
+        if (entry && entry.trustedPublishing) {
             console.log(`${name}: recorded as trusting ${workflowFile}`);
             continue;
         }
@@ -155,20 +143,20 @@ async function addTrust(names: string[], dryRun: boolean): Promise<void> {
         await sleep(pauseMs);
         if (hasPublisher(configs)) {
             console.log(`${name}: already trusts ${workflowFile}`);
-            if (!dryRun) await recordTrusted(published, name, true);
+            if (!dryRun) published = await record(published, name, true);
             continue;
         }
         const args = ['trust', 'github', name, '--file', workflowFile, '--repo', repository];
         args.push('--allow-publish', '--allow-stage-publish', '--yes');
         if (dryRun) args.push('--dry-run');
         if (npm(args) !== 0) throw new Error(`${name}: npm trust github failed`);
-        if (!dryRun) await recordTrusted(published, name, true);
+        if (!dryRun) published = await record(published, name, true);
         await sleep(pauseMs);
     }
 }
 
 async function check(names: string[]): Promise<void> {
-    const published = await readPublished();
+    let published = await readPublished(rootDir);
     let problems = 0;
     for (const name of names) {
         const latest = await fetchLatest(name);
@@ -178,7 +166,7 @@ async function check(names: string[]): Promise<void> {
             continue;
         }
         const trusted = hasPublisher(listTrust(name));
-        await recordTrusted(published, name, trusted);
+        published = await record(published, name, trusted);
         const how = latest.oidc ? 'OIDC' : `token (${latest.publisher})`;
         console.log(`${name}: trusted publisher ${trusted ? 'yes' : 'no'}; ${latest.version} published with ${how}`);
         if (!trusted || !latest.oidc) ++problems;
