@@ -36,6 +36,17 @@ Pick one dictionary and one source file for each word.
     that dictionary, or their cspell may bundle an older version. `git log -S <word> -- dictionaries/<name>/src` shows
     when it was added.
   - Removing a word: every dictionary it must leave.
+- **Check:** For new manual npm package additions to `dictionaries/npm`, check the recommended minimum of 100,000
+  downloads in one seven-day period using the [npm downloads API](https://github.com/npm/registry/blob/main/docs/download-counts.md):
+  - Check `https://api.npmjs.org/downloads/point/last-week/{package}` first (the last seven available days).
+  - If that is below the minimum, a previous seven-day period also qualifies. Use
+    `https://api.npmjs.org/downloads/point/{start}:{end}/{package}` with inclusive dates six days apart.
+  - Record the exact package name and available `downloads`, `start`, `end`, and evidence URL in the PR.
+- **If it fails:** If no qualifying period can be verified, warn that maintainers may reject the addition and explain
+  the download counts or missing evidence. Ask whether to continue with `--force` unless the user already supplied it.
+- **Do:** When the user's word-change request includes `--force`, show the warning and continue the addition, checks,
+  and any already-authorized commit, push, and PR steps. Record the override in the PR. This overrides only the download
+  check; keep the normal validation and Git push behavior.
 - **Do:** pick the file by "Where words go" in `docs/word-lists.md`, the dictionary's `src/README.md`, and the header
   comments of its source files. Most new words go in `src/additional_words.txt`, when the dictionary has one.
 - **Check:** the dictionary's build reads the file you picked: its `cspell-tools.config.yaml`, or for the few without
