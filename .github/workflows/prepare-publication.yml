@@ -103,20 +103,18 @@ jobs:
 
             ### 1. Check out this branch
 
-            With git, fetching only this branch:
+            Either command creates a local branch that tracks this PR, or resets one left over from an earlier PR:
+
+            ```sh
+            gh pr checkout prepare-publication-${{ matrix.dir }} --force
+            ```
+
+            Or with git. This needs a normal clone: in a `--depth` or `--single-branch` clone, use the `gh` command.
 
             ```sh
             git fetch origin prepare-publication-${{ matrix.dir }}
-            git switch -C prepare-publication-${{ matrix.dir }} FETCH_HEAD
+            git switch -C prepare-publication-${{ matrix.dir }} --track origin/prepare-publication-${{ matrix.dir }}
             ```
-
-            Or with the GitHub CLI:
-
-            ```sh
-            gh pr checkout prepare-publication-${{ matrix.dir }} --detach
-            ```
-
-            Either way, section 3 pushes with git.
 
             ### 2. Publish the first version as an alpha
 
@@ -149,7 +147,7 @@ jobs:
             cd ../..
             git add static/published.json
             git commit -m "chore(${{ matrix.dir }}): record Trusted Publishing"
-            git push origin HEAD:prepare-publication-${{ matrix.dir }}
+            git push
             ```
 
             ### 4. Merge this PR

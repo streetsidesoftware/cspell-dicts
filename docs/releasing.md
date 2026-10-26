@@ -90,7 +90,7 @@ minor version instead, such as `1.1.0`. Its first version becomes an alpha of it
 
 Follow the checklist in the PR. It covers:
 
-- checking out only the PR's branch
+- checking out the PR's branch
 - logging in to npm
 - building and packing the dictionary, then publishing it as an alpha
 - adding the trusted publisher
