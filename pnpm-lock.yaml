@@ -39,8 +39,8 @@ importers:
         specifier: ^26.6.5
         version: 26.6.5
       ava:
-        specifier: ^8.1.0
-        version: 8.1.0(supports-color@9.4.0)
+        specifier: ^8.1.2
+        version: 8.1.2(supports-color@9.4.0)
       cpy-cli:
         specifier: ^7.0.0
         version: 7.0.0
@@ -69,8 +69,8 @@ importers:
         specifier: ^10.4.0
         version: 10.4.0
       inject-markdown:
-        specifier: ^6.2.1
-        version: 6.2.1(supports-color@9.4.0)
+        specifier: ^6.3.0
+        version: 6.3.0(supports-color@9.4.0)
       json5:
         specifier: 2.2.3
         version: 2.2.3
@@ -93,8 +93,8 @@ importers:
   cspell-dict-file-checker:
     dependencies:
       ava:
-        specifier: ^8.1.0
-        version: 8.1.0(supports-color@9.4.0)
+        specifier: ^8.1.2
+        version: 8.1.2(supports-color@9.4.0)
       cspell:
         specifier: ^10.4.0
         version: 10.4.0
@@ -743,8 +743,8 @@ importers:
         specifier: ^10.4.0
         version: 10.4.0
       inject-markdown:
-        specifier: ^6.2.1
-        version: 6.2.1(supports-color@9.4.0)
+        specifier: ^6.3.0
+        version: 6.3.0(supports-color@9.4.0)
 
   packages/en-freq:
     dependencies:
@@ -1510,8 +1510,8 @@ packages:
   '@octokit/types@18.0.0':
     resolution: {integrity: sha512-l6bAF43PNxkJp6g+W4PjoUSSkxHomXw2nOum5CTftJz1NlV3vu93NImgOYtLf6CbBUb5j+fiuzW0PPQ5JTSvZA==}
 
-  '@rollup/pluginutils@5.4.0':
-    resolution: {integrity: sha512-MfPp06CjRLfXQ3wY0R8vJDYBy/MvVcc9OulEfR0B8Iv9ko+GCNaRZ+EpJYFl27LhKsZK0o420sYCRHCjfCgeUg==}
+  '@rollup/pluginutils@5.5.1':
+    resolution: {integrity: sha512-P9ZvnfouRu4MSC+ilERaw6FmZs8zqKhpHxEs4aGDGWQAMzQGXnhvCSvoNwokfNvdt7t3Y5Y4p6gStQgezeIqug==}
     engines: {node: '>=14.0.0'}
     peerDependencies:
       rollup: ^1.20.0||^2.0.0||^3.0.0||^4.0.0
@@ -1724,8 +1724,8 @@ packages:
   argparse@1.0.10:
     resolution: {integrity: sha512-o5Roy6tNG4SL/FOkCAN6RzjiakZS25RLYFrcMttJqbdd8BWrnA+fGz57iN5Pb06pvBGvl5gQ0B48dJlslXvoTg==}
 
-  argparse@3.0.3:
-    resolution: {integrity: sha512-Sn98ftV3KfsO8xfLPHG6oT8y+b0yvbrLgZjgPDXsharNY15tTAjqIsIju4S32nl6/iEUNNE4v+yL2Zhm8ooP3w==}
+  argparse@3.0.4:
+    resolution: {integrity: sha512-fwWK3Zq22l4XJJjx5mcBHGikIk+hJqO+32dPm0Jur7+rtG5x1scOjSfdT9ZKeWHPpsya/l0HHK4tDImBkTrtvA==}
 
   argue-cli@3.1.0:
     resolution: {integrity: sha512-DhBpBfXL4SS2uC0N922MMajKR3CdrTG0u2or1PNYgXMsrSzViJrbtvT0nCLlLGUI0plam/ZZCs7aAauHtW9thw==}
@@ -1752,8 +1752,8 @@ packages:
   async-sema@3.1.1:
     resolution: {integrity: sha512-tLRNUXati5MFePdAk8dw7Qt7DpxPB60ofAgn8WRhW6a2rcimZnYBP9oxHiv0OHy+Wz7kPMG+t4LGdt31+4EmGg==}
 
-  ava@8.1.0:
-    resolution: {integrity: sha512-qGT7MZBJK4PSgrfg0yYIWRl9+LoXTIgNuGgrQ4PrIlQN2OpUae1gLmyEqZbUyTjR2J113sRreoqXTE0NqudwIw==}
+  ava@8.1.2:
+    resolution: {integrity: sha512-oJnF53liq0Sf5K0AzZ7GwkH6HxwgsqukGMIOb/hV9QnTKlzj3lV6EXLHJksvlBcHOop6cqdAWa00u8uzqwpxFg==}
     engines: {node: ^22.20 || ^24.12 || >=26}
     hasBin: true
     peerDependencies:
@@ -2110,8 +2110,8 @@ packages:
   dictionary-uk@4.0.0:
     resolution: {integrity: sha512-AgeLt1iIi3lvUQ8DpEvqhikPvnwF+ffYLdjP0lrh+iOhCwTMhmDRvczyPqIksmHAWxRkFfgDcn7Qw/23GJ/GvA==}
 
-  dotenv@18.0.8:
-    resolution: {integrity: sha512-2KDeoFoK/zRtcnbunCDlLG5VWVMcyqeQc6iK65o231nfNAcuGrKoqUQfJFUtBI+QlShk5HKIHxwebBtUl3rEfA==}
+  dotenv@18.0.9:
+    resolution: {integrity: sha512-3fVOW4cB02R066PUSwn8O4TJyz9NckQl7F81blIbaq9jKBm2tSmOKky7ZHIXzGvkVPXCSn6jkpziBPZdGFs8Tw==}
     engines: {node: '>=12'}
     hasBin: true
 
@@ -2448,8 +2448,8 @@ packages:
     resolution: {integrity: sha512-hsBTNUqQTDwkWtcdYI2i06Y/nUBEsNEDJKjWdigLvegy8kDuJAS8uRlpkkcQpyEXL0Z/pjDy5HBmMjRCJ2gq+g==}
     engines: {node: '>= 4'}
 
-  ignore@7.0.13:
-    resolution: {integrity: sha512-2E8Q6rh+1RRSq/YdaGsNfXsEZy9FVqv6BSSrkmZJP7BnaoPnRfKL+YaofPvP+5rzdk144qSm6i4+hvPgUcbV4Q==}
+  ignore@7.0.14:
+    resolution: {integrity: sha512-wCBiZ77u1tuWde6G/nfOtLaCTYcFDU5yCzARzK10y+rLhzYoL7a7yEemcopcc2Mzow7gZOIjnV2ym1NYmdiJOQ==}
     engines: {node: '>= 4'}
 
   import-fresh@4.0.1:
@@ -2483,8 +2483,8 @@ packages:
     resolution: {integrity: sha512-IBTdIkzZNOpqm7q3dRqJvMaldXjDHWkEDfrwGEQTs5eaQMWV+djAhR+wahyNNMAa+qpbDUhBMVt4ZKNwpPm7xQ==}
     engines: {node: ^20.17.0 || >=22.9.0}
 
-  inject-markdown@6.2.1:
-    resolution: {integrity: sha512-rSek1RTW5B/VLxu90A+IK9vh3SC2dPxb/kXEMKqmMe6fMrj9nNHr/STX20+JGsdjOGPe5LwBU1CKJ75CyVxwIQ==}
+  inject-markdown@6.3.0:
+    resolution: {integrity: sha512-EInF8lurSCSviGTyXJ71v/sKrhdHzsBUqpJSGwVqpN5TAIODatrp9fgcWvxz1U/gOZUXfjJCVWjSlYEfh3eInw==}
     engines: {node: '>=22'}
     hasBin: true
 
@@ -3007,10 +3007,6 @@ packages:
     resolution: {integrity: sha512-ZHEmNKMq1wyJXNwLxyHnluPfRAFSIliBvbK/UiOceROt4Xh9Pz0fq49NytIaeaCUf5VR86hwQ/34FCcNU5/LKQ==}
     engines: {node: ^20.17.0 || >=22.9.0}
 
-  parse-ms@4.0.0:
-    resolution: {integrity: sha512-TXfryirbmq34y8QBwgqCVLi+8oA3oWx2eAnSn62ITyEhEYaWRlVZ2DvMM9eZbMs/RfxPu/PK/aBLyGj4IrqMHw==}
-    engines: {node: '>=18'}
-
   parse-path@7.1.0:
     resolution: {integrity: sha512-EuCycjZtfPcjWk7KTksnJ5xPMvWGA/6i4zrLYhRG0hGvC3GPU/jGUj3Cy+ZR0v30duV3e23R95T1lE2+lsndSw==}
 
@@ -3070,9 +3066,9 @@ packages:
     engines: {node: '>=14'}
     hasBin: true
 
-  pretty-ms@9.3.1:
-    resolution: {integrity: sha512-HzMy3Geq23nVALD/M2LliU+F+M+gVNsvkQWWqeBZ8HDiCgzo6YPJ/Omrmtq24EFrIsk0a3EkQGEd7bDOo+IhGA==}
-    engines: {node: '>=18'}
+  pretty-ms@10.0.0:
+    resolution: {integrity: sha512-6BWuxY2dCNgT45VnGzZcfNy7WeLqXiZqhhy4aHThTE6KI56R2ZBw9HQ7spPFKYchDizvJbPxTEknIpmW4FSmQA==}
+    engines: {node: '>=22'}
 
   printable-characters@1.0.42:
     resolution: {integrity: sha512-dKp+C4iXWK4vVYZmYSd0KBH5F/h1HoZRsbJ82AVKRO3PEo8L4lBS/vLwhVtpwwuYcoIsVY+1JYKR268yn480uQ==}
@@ -3434,8 +3430,8 @@ packages:
   vfile@6.0.3:
     resolution: {integrity: sha512-KzIbH/9tXat2u30jf+smMwFCsno4wHVdNmzFyL+T/L3UGqqk6JKfVqOFOZEpZSHADH1k40ab6NUIXZq422ov3Q==}
 
-  vscode-languageserver-textdocument@1.0.15:
-    resolution: {integrity: sha512-Gsfr9S8LU3S6885cS+NaleasJ0n3V5y/SOTqHCifQiXWFw3G9w9/YItDfwHrlCz+dSZWWZ8ilYVMcJe7Sz7Sxw==}
+  vscode-languageserver-textdocument@1.0.16:
+    resolution: {integrity: sha512-qeNEuOi9a3qkqRf7Gfez2WL2VwlBTLCNekHBGO9kxPVUp9XuY15yfTJ9jwvOwKI0I2MhUUfZq95NSp+LK1CLQg==}
 
   vscode-uri@3.2.0:
     resolution: {integrity: sha512-m2gXo3bn0G1kT9InzMf07fTbqMbGtyckj3bH5ktLO+1Ssv+yiATZ4dhwaQv9UZWxJh6E9IFGnQyjgWVDWVBDrg==}
@@ -3989,7 +3985,7 @@ snapshots:
       '@lerna-lite/core': 5.6.4(@types/node@26.6.5)
       '@lerna-lite/init': 5.6.4(@types/node@26.6.5)
       '@lerna-lite/npmlog': 5.4.1
-      dotenv: 18.0.8
+      dotenv: 18.0.9
       import-local: 3.2.0
       yargs: 18.2.0
     optionalDependencies:
@@ -4025,7 +4021,7 @@ snapshots:
       '@lerna-lite/cli': 5.6.4(@lerna-lite/exec@5.6.4)(@lerna-lite/publish@5.6.4)(@lerna-lite/run@5.6.4)(@lerna-lite/version@5.6.4(@lerna-lite/exec@5.6.4)(@lerna-lite/publish@5.6.4)(@lerna-lite/run@5.6.4)(@types/node@26.6.5)(conventional-commits-filter@6.0.1))(@types/node@26.6.5)
       '@lerna-lite/core': 5.6.4(@types/node@26.6.5)
       '@lerna-lite/profiler': 5.6.4(@types/node@26.6.5)
-      dotenv: 18.0.8
+      dotenv: 18.0.9
     transitivePeerDependencies:
       - '@lerna-lite/list'
       - '@lerna-lite/publish'
@@ -4337,7 +4333,7 @@ snapshots:
     dependencies:
       '@octokit/openapi-types': 29.0.1
 
-  '@rollup/pluginutils@5.4.0':
+  '@rollup/pluginutils@5.5.1':
     dependencies:
       '@types/estree': 1.0.9
       estree-walker: 2.0.2
@@ -4443,7 +4439,7 @@ snapshots:
       '@typescript-eslint/utils': 8.72.0(eslint@10.13.0(supports-color@9.4.0))(supports-color@9.4.0)(typescript@6.0.3)
       '@typescript-eslint/visitor-keys': 8.72.0
       eslint: 10.13.0(supports-color@9.4.0)
-      ignore: 7.0.13
+      ignore: 7.0.14
       natural-compare: 1.4.0
       ts-api-utils: 2.5.0(typescript@6.0.3)
       typescript: 6.0.3
@@ -4528,7 +4524,7 @@ snapshots:
   '@vercel/nft@1.11.0(supports-color@9.4.0)':
     dependencies:
       '@mapbox/node-pre-gyp': 2.0.3(supports-color@9.4.0)
-      '@rollup/pluginutils': 5.4.0
+      '@rollup/pluginutils': 5.5.1
       acorn: 8.19.0
       acorn-import-attributes: 1.9.5(acorn@8.19.0)
       async-sema: 3.1.1
@@ -4581,7 +4577,7 @@ snapshots:
     dependencies:
       sprintf-js: 1.0.3
 
-  argparse@3.0.3: {}
+  argparse@3.0.4: {}
 
   argue-cli@3.1.0: {}
 
@@ -4599,7 +4595,7 @@ snapshots:
 
   async-sema@3.1.1: {}
 
-  ava@8.1.0(supports-color@9.4.0):
+  ava@8.1.2(supports-color@9.4.0):
     dependencies:
       '@vercel/nft': 1.11.0(supports-color@9.4.0)
       acorn: 8.19.0
@@ -4633,7 +4629,7 @@ snapshots:
       package-config: 5.0.0
       picomatch: 4.0.7
       plur: 6.0.0
-      pretty-ms: 9.3.1
+      pretty-ms: 10.0.0
       resolve-cwd: 3.0.0
       slash: 5.1.0
       stack-utils: 2.0.6
@@ -4924,7 +4920,7 @@ snapshots:
       gensequence: 8.0.8
       import-fresh: 4.0.1
       resolve-from: 5.0.0
-      vscode-languageserver-textdocument: 1.0.15
+      vscode-languageserver-textdocument: 1.0.16
       vscode-uri: 3.2.0
       xdg-basedir: 5.1.0
 
@@ -5031,7 +5027,7 @@ snapshots:
 
   dictionary-uk@4.0.0: {}
 
-  dotenv@18.0.8: {}
+  dotenv@18.0.9: {}
 
   eastasianwidth@0.2.0: {}
 
@@ -5299,7 +5295,7 @@ snapshots:
     dependencies:
       '@sindresorhus/merge-streams': 4.0.0
       fast-glob: 3.3.3
-      ignore: 7.0.13
+      ignore: 7.0.14
       is-path-inside: 4.0.0
       micromatch: 4.0.8
       slash: 5.1.0
@@ -5379,7 +5375,7 @@ snapshots:
 
   ignore@5.3.2: {}
 
-  ignore@7.0.13: {}
+  ignore@7.0.14: {}
 
   import-fresh@4.0.1: {}
 
@@ -5403,7 +5399,7 @@ snapshots:
 
   ini@6.0.0: {}
 
-  inject-markdown@6.2.1(supports-color@9.4.0):
+  inject-markdown@6.3.0(supports-color@9.4.0):
     dependencies:
       chalk: 6.0.1
       commander: 15.0.0
@@ -5477,7 +5473,7 @@ snapshots:
 
   js-yaml@5.5.0:
     dependencies:
-      argparse: 3.0.3
+      argparse: 3.0.4
 
   json-parse-even-better-errors@5.0.0: {}
 
@@ -6126,8 +6122,6 @@ snapshots:
       just-diff: 6.0.2
       just-diff-apply: 5.5.0
 
-  parse-ms@4.0.0: {}
-
   parse-path@7.1.0:
     dependencies:
       protocols: 2.0.2
@@ -6173,9 +6167,7 @@ snapshots:
 
   prettier@3.9.10: {}
 
-  pretty-ms@9.3.1:
-    dependencies:
-      parse-ms: 4.0.0
+  pretty-ms@10.0.0: {}
 
   printable-characters@1.0.42: {}
 
@@ -6569,7 +6561,7 @@ snapshots:
       '@types/unist': 3.0.3
       vfile-message: 4.0.3
 
-  vscode-languageserver-textdocument@1.0.15: {}
+  vscode-languageserver-textdocument@1.0.16: {}
 
   vscode-uri@3.2.0: {}
 
