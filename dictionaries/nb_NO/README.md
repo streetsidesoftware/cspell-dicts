@@ -3,7 +3,8 @@
 Norwegian Bokmål dictionary.
 
 This is a pre-built dictionary for use with CSpell. It spell checks text written in Bokmål, one of the two written
-standards of Norwegian.
+standards of Norwegian. For Norwegian Nynorsk, use
+[@cspell/dict-nn-no](https://github.com/streetsidesoftware/cspell-dicts/tree/main/dictionaries/nn_NO#readme).
 
 The words come from the Hunspell dictionary of the
 [spell-norwegian](https://github.com/wooorm/dictionaries/tree/main/dictionaries/nb) project, version 2.2 from 2016.
