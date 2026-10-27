@@ -47,7 +47,7 @@
     "prepare:dictionary": "cspell-tools-cli gzip \"dict/nn-no.trie\"",
     "prepublishOnly": "echo OK",
     "sync": "sync-github-files wooorm/dictionaries --filter \"dictionaries/nn/index.aff\" --filter \"dictionaries/nn/index.dic\" --filter \"dictionaries/nn/license\" --filter \"dictionaries/nn/readme.md\" --tag=main -o src/hunspell",
-    "test": "cspell samples"
+    "test": "cspell samples && ava"
   },
   "dependencies": {},
   "devDependencies": {}
