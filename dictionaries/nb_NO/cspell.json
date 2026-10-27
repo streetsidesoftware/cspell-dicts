@@ -1,6 +1,7 @@
 {
     "version": "0.2",
     "files": ["**/*.{md,txt}"],
+    "ignorePaths": ["test"],
     "import": ["./cspell-ext.json"],
     "overrides": [
         {
