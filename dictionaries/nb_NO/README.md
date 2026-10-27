@@ -9,6 +9,27 @@ The words come from the Hunspell dictionary of the
 [spell-norwegian](https://github.com/wooorm/dictionaries/tree/main/dictionaries/nb) project, version 2.2 from 2016.
 It hasn't been updated since, so newer words are missing. Compound words that the source doesn't list are flagged.
 
+## Accents and case
+
+This dictionary checks accents and case. A word with a missing å, such as "blabær" for "blåbær", is flagged, and so is
+a lowercase proper noun, such as "oslo". Capitalized and all-caps words, such as "Blåbær" and "BLÅBÆR", are accepted.
+
+CSpell checks case and accents for the whole file, not for one dictionary. While Norwegian Bokmål is enabled,
+English words such as "paris" are flagged too.
+
+To turn the checks off, add a `languageSettings` entry for `nb`. (Setting `caseSensitive` at the top level of your
+configuration doesn't work, because the dictionary's language settings take precedence over it.)
+
+**`cspell.json`**
+
+```jsonc
+{
+  "import": ["@cspell/dict-nb-no/cspell-ext.json"],
+  "language": "en, nb",
+  "languageSettings": [{ "languageId": "*", "locale": "nb, nb-no", "caseSensitive": false }],
+}
+```
+
 <!--- @@inject: ../../static/requirements.md#values-file=:../../static/engines.json&values-file=:cspell-ext.json --->
 
 ## Requirements
