@@ -5,9 +5,18 @@ Norwegian Bokmål dictionary.
 This is a pre-built dictionary for use with CSpell. It spell checks text written in Bokmål, one of the two written
 standards of Norwegian.
 
-The words come from the Hunspell dictionary of the
-[spell-norwegian](https://github.com/wooorm/dictionaries/tree/main/dictionaries/nb) project, version 2.2 from 2016.
-It hasn't been updated since, so newer words are missing. Compound words that the source doesn't list are flagged.
+The words come from two sources:
+
+1. The Hunspell dictionary of the
+   [spell-norwegian](https://github.com/wooorm/dictionaries/tree/main/dictionaries/nb) project, version 2.2 from 2016.
+   It has compounds and genitives.
+2. [LibreOffice's Norwegian dictionaries](https://github.com/LibreOffice/dictionaries/tree/master/no),
+   version 3.0 from 2026. LibreOffice's list adds newer words, from Ordbanken and the 2018–2024 revision of
+   Bokmålsordboka.
+
+Compound words that neither source lists are flagged.
+
+<!--- cspell:ignore Ordbanken Bungum Nyordsliste CLARIN likestillingsdepartementet Standardordbøkene Revisjonsprosjektet --->
 
 <!--- @@inject: ../../static/requirements.md#values-file=:../../static/engines.json&values-file=:cspell-ext.json --->
 
@@ -154,11 +163,31 @@ See: [How to Create a New Dictionary](https://github.com/streetsidesoftware/cspe
 
 <!--- @@inject: ./static/sources.csv#markdown --->
 
-| Source   | From                                                               | License                                                                                                                         | Updated |
-| -------- | ------------------------------------------------------------------ | ------------------------------------------------------------------------------------------------------------------------------- | ------- |
-| hunspell | <https://github.com/wooorm/dictionaries/tree/main/dictionaries/nb> | [license](https://github.com/streetsidesoftware/cspell-dicts/blob/main/dictionaries/nb_NO/src/hunspell/dictionaries/nb/license) | by hand |
+| Source      | From                                                               | License                                                                                                                         | Updated |
+| ----------- | ------------------------------------------------------------------ | ------------------------------------------------------------------------------------------------------------------------------- | ------- |
+| hunspell    | <https://github.com/wooorm/dictionaries/tree/main/dictionaries/nb> | [license](https://github.com/streetsidesoftware/cspell-dicts/blob/main/dictionaries/nb_NO/src/hunspell/dictionaries/nb/license) | by hand |
+| LibreOffice | <https://github.com/LibreOffice/dictionaries/tree/master/no>       | [README](https://github.com/streetsidesoftware/cspell-dicts/blob/main/dictionaries/nb_NO/src/LibreOffice/no/README)             | by hand |
 
 <!--- @@inject-end: ./static/sources.csv#markdown --->
+
+## Attribution
+
+The word list from LibreOffice, merged by Lars Bungum, includes:
+
+- Ordbanken, from Nasjonalbiblioteket / Språkbanken, under
+  [CC BY 4.0](https://creativecommons.org/licenses/by/4.0/).
+- Nyordsliste etter revisjonen av Bokmålsordboka (2018–2024),
+  by Standardordbøkene, Revisjonsprosjektet (2018–2024), published by the University of Bergen (Department of
+  Linguistic, Literary and Aesthetic Studies) and Språkrådet, <http://hdl.handle.net/11509/152>, under
+  [CLARIN PUB +BY](https://www.kielipankki.fi/wp-content/uploads/CLARIN_PUB_BY_en.html). The revision was funded by
+  Kultur- og likestillingsdepartementet.
+- [Årets ord](https://sprakradet.no/nyord-og-rettskrivingsendringer/arets-ord/) from Språkrådet.
+
+CLARIN PUB +BY is one of the licenses used in [CLARIN](https://www.clarin.eu/content/clarin-nutshell), the European
+research infrastructure for language resources. It lets anyone use, copy, and distribute the resource, also modified or
+as part of a larger work, as long as the authors are credited.
+
+The affix files and the older word list come from the spell-norwegian project, under the GNU GPL, version 2 or later.
 
 ## License
 

@@ -6,9 +6,10 @@ All source files used to generate the dictionary should be stored in this direct
 
 <!--- @@inject: ../static/sources.csv#markdown --->
 
-| Source   | From                                                               | License                                                                                                                         | Updated |
-| -------- | ------------------------------------------------------------------ | ------------------------------------------------------------------------------------------------------------------------------- | ------- |
-| hunspell | <https://github.com/wooorm/dictionaries/tree/main/dictionaries/nb> | [license](https://github.com/streetsidesoftware/cspell-dicts/blob/main/dictionaries/nb_NO/src/hunspell/dictionaries/nb/license) | by hand |
+| Source      | From                                                               | License                                                                                                                         | Updated |
+| ----------- | ------------------------------------------------------------------ | ------------------------------------------------------------------------------------------------------------------------------- | ------- |
+| hunspell    | <https://github.com/wooorm/dictionaries/tree/main/dictionaries/nb> | [license](https://github.com/streetsidesoftware/cspell-dicts/blob/main/dictionaries/nb_NO/src/hunspell/dictionaries/nb/license) | by hand |
+| LibreOffice | <https://github.com/LibreOffice/dictionaries/tree/master/no>       | [README](https://github.com/streetsidesoftware/cspell-dicts/blob/main/dictionaries/nb_NO/src/LibreOffice/no/README)             | by hand |
 
 <!--- @@inject-end: ../static/sources.csv#markdown --->
 

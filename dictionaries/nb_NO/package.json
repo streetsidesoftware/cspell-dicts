@@ -40,14 +40,18 @@
     "*.js",
     "*.d.ts",
     "src/hunspell/dictionaries/nb/license",
-    "src/hunspell/dictionaries/nb/readme.md"
+    "src/hunspell/dictionaries/nb/readme.md",
+    "src/LibreOffice/no/README",
+    "src/LibreOffice/no/COPYING"
   ],
   "scripts": {
     "build": "cspell-tools-cli build",
     "conditional-build": "pnpm run sync && cspell-tools-cli build --conditional",
     "prepare:dictionary": "cspell-tools-cli gzip \"dict/nb-no.trie\"",
     "prepublishOnly": "echo OK",
-    "sync": "sync-github-files wooorm/dictionaries --filter \"dictionaries/nb/index.aff\" --filter \"dictionaries/nb/index.dic\" --filter \"dictionaries/nb/license\" --filter \"dictionaries/nb/readme.md\" --tag=main -o src/hunspell",
+    "sync": "pnpm run sync:hunspell && pnpm run sync:LibreOffice",
+    "sync:hunspell": "sync-github-files wooorm/dictionaries --filter \"dictionaries/nb/index.aff\" --filter \"dictionaries/nb/index.dic\" --filter \"dictionaries/nb/license\" --filter \"dictionaries/nb/readme.md\" --tag=main -o src/hunspell",
+    "sync:LibreOffice": "sync-github-files LibreOffice/dictionaries --filter \"no/nb_NO.dic\" --filter \"no/nb_NO.aff\" --filter \"no/README\" --filter \"no/COPYING\" --tag=master -o src/LibreOffice",
     "test": "cspell samples"
   },
   "dependencies": {},
