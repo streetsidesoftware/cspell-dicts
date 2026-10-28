@@ -3,6 +3,23 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+## [5.4.9](https://github.com/streetsidesoftware/cspell-dicts/compare/@cspell/dict-software-terms@5.4.8...@cspell/dict-software-terms@5.4.9) (2026-10-28)
+
+
+### Updates and Bug Fixes
+
+* **software-terms:** add ciphertext ([#5976](https://github.com/streetsidesoftware/cspell-dicts/issues/5976)) ([f926cb4](https://github.com/streetsidesoftware/cspell-dicts/commit/f926cb48e696b273bff56a6daa02e875154abe53))
+* **software-terms:** add crawlable ([#5993](https://github.com/streetsidesoftware/cspell-dicts/issues/5993)) ([a0c0c28](https://github.com/streetsidesoftware/cspell-dicts/commit/a0c0c2824f59d2f4b5ca5e49efdaeae5e7d1e10e))
+* **software-terms:** add preinstalls and preinstalling ([#5965](https://github.com/streetsidesoftware/cspell-dicts/issues/5965)) ([e1c4dfd](https://github.com/streetsidesoftware/cspell-dicts/commit/e1c4dfd4d63465947a3c636db75e2e0562900d02))
+* Workflow Bot -- Build Dictionaries ([#5977](https://github.com/streetsidesoftware/cspell-dicts/issues/5977)) ([3dce82f](https://github.com/streetsidesoftware/cspell-dicts/commit/3dce82faf9995f1e48b96a73a2d35e5065673213))
+
+
+### Dependencies
+
+* The following workspace dependencies were updated
+  * devDependencies
+    * @cspell/dict-en-common-misspellings bumped to 2.2.6
+
 ## [5.4.8](https://github.com/streetsidesoftware/cspell-dicts/compare/@cspell/dict-software-terms@5.4.7...@cspell/dict-software-terms@5.4.8) (2026-10-13)
 
 

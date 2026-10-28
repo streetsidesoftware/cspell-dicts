@@ -1,5 +1,12 @@
 # Change Log
 
+## [2.0.17](https://github.com/streetsidesoftware/cspell-dicts/compare/@cspell/dict-data-science@2.0.16...@cspell/dict-data-science@2.0.17) (2026-10-28)
+
+
+### Updates and Bug Fixes
+
+* **data-science:** drop "-- Private until verified" from the description ([#5979](https://github.com/streetsidesoftware/cspell-dicts/issues/5979)) ([5600239](https://github.com/streetsidesoftware/cspell-dicts/commit/56002395cf8aedbdd24e89403b82e82822277aa9))
+
 ## [2.0.16](https://github.com/streetsidesoftware/cspell-dicts/compare/@cspell/dict-data-science@2.0.15...@cspell/dict-data-science@2.0.16) (2026-07-12)
 
 

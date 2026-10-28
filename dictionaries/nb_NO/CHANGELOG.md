@@ -3,6 +3,15 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+## [2.0.9](https://github.com/streetsidesoftware/cspell-dicts/compare/@cspell/dict-nb-no@2.0.8...@cspell/dict-nb-no@2.0.9) (2026-10-28)
+
+
+### Updates and Bug Fixes
+
+* add newer words to nb_NO and nn_NO from LibreOffice's Norwegian dictionaries ([#5996](https://github.com/streetsidesoftware/cspell-dicts/issues/5996)) ([e3ca5d2](https://github.com/streetsidesoftware/cspell-dicts/commit/e3ca5d2974cb1c4d4af96a8376c08dccf3f3ce5e))
+* **nb_NO:** sync the Hunspell source and use the current package layout ([#5974](https://github.com/streetsidesoftware/cspell-dicts/issues/5974)) ([76e7d25](https://github.com/streetsidesoftware/cspell-dicts/commit/76e7d2557a54116ac263d2106029359d5a659490))
+* Workflow Bot -- Build Dictionaries ([#5977](https://github.com/streetsidesoftware/cspell-dicts/issues/5977)) ([3dce82f](https://github.com/streetsidesoftware/cspell-dicts/commit/3dce82faf9995f1e48b96a73a2d35e5065673213))
+
 ## [2.0.8](https://github.com/streetsidesoftware/cspell-dicts/compare/@cspell/dict-nb-no@2.0.7...@cspell/dict-nb-no@2.0.8) (2026-10-13)
 
 
