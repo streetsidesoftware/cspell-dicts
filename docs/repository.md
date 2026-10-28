@@ -24,6 +24,15 @@ dictionary package, see [Dictionary packages](./dictionary-packages.md).
   corepack enable
   ```
 
+- **Symlinks on Windows, if you use Claude Code.** The repo's skills live in `.agents/skills/`, and the
+  `.claude/skills` folder is a symlink to it. Without symlinks, Git checks it out as a plain text file, and Claude Code
+  finds none of the skills. Git for Windows creates symlinks only when Developer Mode is on in Windows Settings, so turn
+  it on before you clone. If `.claude/skills` is still a plain text file, clone again with symlinks turned on:
+
+  ```sh
+  git clone -c core.symlinks=true https://github.com/streetsidesoftware/cspell-dicts.git
+  ```
+
 ## Workspace
 
 This is a pnpm workspace. pnpm is the only package manager allowed: the root `preinstall` script rejects npm and yarn.

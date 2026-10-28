@@ -129,7 +129,9 @@ Turn the working ADRs into the design as it stands.
   we learned. Update the index and glossary links, and commit on the same branch.
 - **Check:** start a subagent that is given only the paths of the feature's `README.md` and its ADRs. Ask it to say what
   gets built, why, and how the decisions fit together, and to list gaps, contradictions, and anything it had to guess.
-- **Stop and ask:** show the user the subagent's report, and fix what they agree with.
+  If you can't start a subagent, write that request out in full for the user, with the paths and a note that the
+  reader has no other context. Ask them to run it in a new session and paste its report back, and wait for it.
+- **Stop and ask:** show the user the report, and fix what they agree with.
 - **Stop and ask:** does the design get its own `docs:` PR, or go in the PR that builds it? See the README's
   "Branches".
 
