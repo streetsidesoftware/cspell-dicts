@@ -4,6 +4,7 @@ targets:
   - name: 'nb-no'
     sources:
       - filename: 'src/hunspell/dictionaries/nb/index.dic'
+      - filename: 'src/LibreOffice/no/nb_NO.dic'
       - filename: 'src/additional_words.txt'
     excludeWordsFrom: ['src/exclude_words.txt']
     format: 'trie3'
