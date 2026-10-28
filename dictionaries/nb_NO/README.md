@@ -135,6 +135,71 @@ language: nb, nb-no
 
 <!--- @@inject-end: ./static/install.md --->
 
+## Words Written Without æ, ø, and å
+
+In code, email addresses, and file names, æ, ø, and å are often replaced, either with single letters (a, o, and a) or
+with double letters (ae, oe, and aa). Språkrådet, the Language Council of Norway, gives advice on this in
+[Æ, ø og å i internasjonal sammenheng](https://sprakradet.no/spraksporsmal-og-svar/ae-o-og-a-i-internasjonal-sammenheng/)
+(in Norwegian).
+
+To accept those spellings too, redefine the `nb-no` dictionary with a `repMap`. CSpell then also looks up each word with
+the replacements. Words written with æ, ø, and å are still accepted. The definition needs `path`, relative to the
+configuration file. Without it, the dictionary stops working.
+
+### Single Letters
+
+"blabar" is accepted as "blåbær", and "Gronland" as "Grønland".
+
+**`cspell.json`**
+
+```jsonc
+{
+  "import": ["@cspell/dict-nb-no/cspell-ext.json"],
+  "language": "en, nb",
+  "dictionaryDefinitions": [
+    {
+      "name": "nb-no",
+      "path": "./node_modules/@cspell/dict-nb-no/dict/nb-no.trie.gz",
+      "repMap": [
+        ["a", "æ"],
+        ["o", "ø"],
+        ["a", "å"],
+        ["A", "Æ"],
+        ["O", "Ø"],
+        ["A", "Å"],
+      ],
+    },
+  ],
+}
+```
+
+### Double Letters
+
+"blaabaer" is accepted as "blåbær", and "Groenland" as "Grønland".
+
+**`cspell.json`**
+
+```jsonc
+{
+  "import": ["@cspell/dict-nb-no/cspell-ext.json"],
+  "language": "en, nb",
+  "dictionaryDefinitions": [
+    {
+      "name": "nb-no",
+      "path": "./node_modules/@cspell/dict-nb-no/dict/nb-no.trie.gz",
+      "repMap": [
+        ["ae", "æ"],
+        ["oe", "ø"],
+        ["aa", "å"],
+        ["Ae", "Æ"],
+        ["Oe", "Ø"],
+        ["Aa", "Å"],
+      ],
+    },
+  ],
+}
+```
+
 <!--- @@inject: ../../static/contributing.md --->
 
 ## Contributing
@@ -180,3 +245,5 @@ Brought to you by <a href="https://streetsidesoftware.com" title="Street Side So
 </p>
 
 <!--- @@inject-end: ../../static/footer.md --->
+
+<!--- cspell:ignore blabar Gronland blaabaer Groenland --->

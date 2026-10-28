@@ -1,0 +1,18 @@
+{
+    "import": ["../../cspell-ext.json"],
+    "language": "nn,nn-NO",
+    "dictionaryDefinitions": [
+        {
+            "name": "nn-no",
+            "path": "../../dict/nn-no.trie.gz",
+            "repMap": [
+                ["a", "æ"],
+                ["o", "ø"],
+                ["a", "å"],
+                ["A", "Æ"],
+                ["O", "Ø"],
+                ["A", "Å"]
+            ]
+        }
+    ]
+}
