@@ -97,9 +97,11 @@ header names, and leave out what they don't need.
 
 ## Skills
 
-Skills in `.claude/skills/` are instructions for AI agents, such as Claude Code. An agent reads a skill's `description`
-to decide when to use it, then follows the rest step by step. Write for that reader: it's capable, but it knows nothing
-about this repo, and it takes each instruction literally. These rules follow Anthropic's
+Shared skills live in `.agents/skills/`. The `.claude/skills` symlink points there so Claude Code uses the same files.
+
+Skills are instructions for AI agents. An agent reads a skill's `description` to decide when to use it, then follows
+the rest step by step. Write for that reader: it's capable, but it knows nothing about this repo, and it takes each
+instruction literally. These rules follow Anthropic's
 [skill authoring best practices](https://platform.claude.com/docs/en/agents-and-tools/agent-skills/best-practices).
 
 ### The description
