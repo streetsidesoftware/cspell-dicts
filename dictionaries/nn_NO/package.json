@@ -49,8 +49,8 @@
     "prepare:dictionary": "cspell-tools-cli gzip \"dict/nn-no.trie\"",
     "prepublishOnly": "echo OK",
     "sync": "pnpm run sync:hunspell && pnpm run sync:LibreOffice",
-    "sync:hunspell": "sync-github-files wooorm/dictionaries --filter \"dictionaries/nn/index.aff\" --filter \"dictionaries/nn/index.dic\" --filter \"dictionaries/nn/license\" --filter \"dictionaries/nn/readme.md\" --tag=main -o src/hunspell",
     "sync:LibreOffice": "sync-github-files LibreOffice/dictionaries --filter \"no/nn_NO.dic\" --filter \"no/nn_NO.aff\" --filter \"no/README\" --filter \"no/COPYING\" --tag=master -o src/LibreOffice",
+    "sync:hunspell": "sync-github-files wooorm/dictionaries --filter \"dictionaries/nn/index.aff\" --filter \"dictionaries/nn/index.dic\" --filter \"dictionaries/nn/license\" --filter \"dictionaries/nn/readme.md\" --tag=main -o src/hunspell",
     "test": "cspell samples"
   },
   "dependencies": {},
