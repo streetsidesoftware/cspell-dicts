@@ -3,6 +3,15 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+## [5.2.56](https://github.com/streetsidesoftware/cspell-dicts/compare/@cspell/dict-npm@5.2.55...@cspell/dict-npm@5.2.56) (2026-10-28)
+
+
+### Updates and Bug Fixes
+
+* **npm:** add @ngx-formly/core ([#5961](https://github.com/streetsidesoftware/cspell-dicts/issues/5961)) ([408f7fb](https://github.com/streetsidesoftware/cspell-dicts/commit/408f7fb2180ab469b843caf9f148749b4b73cd0d))
+* **npm:** add @trivago/prettier-plugin-sort-imports ([#5972](https://github.com/streetsidesoftware/cspell-dicts/issues/5972)) ([e40c255](https://github.com/streetsidesoftware/cspell-dicts/commit/e40c255d325695427d9fc41b23596a75fa8418e7))
+* Workflow Bot -- Update Dictionaries ([#5970](https://github.com/streetsidesoftware/cspell-dicts/issues/5970)) ([b517b93](https://github.com/streetsidesoftware/cspell-dicts/commit/b517b9354b69c392195077064b6be506aa966f16))
+
 ## [5.2.55](https://github.com/streetsidesoftware/cspell-dicts/compare/@cspell/dict-npm@5.2.54...@cspell/dict-npm@5.2.55) (2026-10-20)
 
 

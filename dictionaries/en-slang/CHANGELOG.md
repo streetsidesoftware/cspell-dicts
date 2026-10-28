@@ -1,5 +1,12 @@
 # Change Log
 
+## [1.1.0](https://github.com/streetsidesoftware/cspell-dicts/compare/@cspell/dict-en-slang@1.0.3...@cspell/dict-en-slang@1.1.0) (2026-10-28)
+
+
+### Features
+
+* **en-slang:** publish the en-slang dictionary ([#5988](https://github.com/streetsidesoftware/cspell-dicts/issues/5988)) ([9981bd0](https://github.com/streetsidesoftware/cspell-dicts/commit/9981bd065f50fcf6626ca0e4cfd0d69a737ee296))
+
 ## [1.0.3](https://github.com/streetsidesoftware/cspell-dicts/compare/@cspell/dict-en-slang@1.0.2...@cspell/dict-en-slang@1.0.3) (2026-10-13)
 
 
