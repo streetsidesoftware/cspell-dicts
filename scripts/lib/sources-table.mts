@@ -1,6 +1,7 @@
 import { readFileSync } from 'node:fs';
 import { posix } from 'node:path';
 
+import * as md from '@streetsidesoftware/markdown-toolkit';
 import { parse } from 'yaml';
 
 const repoUrl = 'https://github.com/streetsidesoftware/cspell-dicts/blob/main';
@@ -71,7 +72,7 @@ function from(source: SourceEntry): string {
         const text = path ? `${name}${version}, ${path}` : `${name}${version}`;
         return link(text, `https://www.npmjs.com/package/${name}${source.version ? `/v/${source.version}` : ''}`);
     }
-    return source.url ? `<${source.url}>` : 'unknown';
+    return source.url ? link(source.url, source.url) : 'unknown';
 }
 
 /** A link to a source's license file in the repo, or unknown. */
@@ -82,7 +83,7 @@ function license(dir: string, source: SourceEntry): string {
 }
 
 function link(text: string, url: string): string {
-    return `[${text.replaceAll(/[\\[\]]/g, '\\$&')}](${encodeURI(url)})`;
+    return md.link(text, encodeURI(url)).toString();
 }
 
 function csvLine(fields: string[]): string {
