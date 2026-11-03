@@ -1,6 +1,6 @@
 import type { DictionaryPackageInfo } from './dictionaryInfo.mts';
 import { formatMarkdown } from './formatMarkdown.mts';
-import { unindent } from './utils.mts';
+import { unindent } from '@streetsidesoftware/unindent';
 
 const categoryToTitle = new Map([
     ['natural-language', 'Natural Language Dictionaries'],

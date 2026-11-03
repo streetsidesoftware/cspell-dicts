@@ -8,7 +8,7 @@ import { Document as YamlDocument } from 'yaml';
 
 import type { DictionaryPackageInfo } from './dictionaryInfo.mts';
 import { readSources, sourcesCsv } from './sources-table.mts';
-import { unindent } from './utils.mts';
+import { unindent } from '@streetsidesoftware/unindent';
 
 const rootUrl = new URL('../../', import.meta.url);
 
