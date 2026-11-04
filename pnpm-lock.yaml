@@ -777,6 +777,9 @@ importers:
       '@octokit/core':
         specifier: ^7.0.8
         version: 7.0.8
+      '@streetsidesoftware/markdown-toolkit':
+        specifier: ^2.1.0
+        version: 2.1.0(supports-color@9.4.0)
       '@streetsidesoftware/unindent':
         specifier: ^1.0.1
         version: 1.0.1
@@ -1567,6 +1570,14 @@ packages:
   '@sindresorhus/merge-streams@4.0.0':
     resolution: {integrity: sha512-tlqY9xq5ukxTUZBmoOp+m61cqwQD5pHJtFY3Mn8CA8ps6yghLH/Hw8UPdqg4OLmFW3IFlcXnQNmo/dh8HzXYIQ==}
     engines: {node: '>=18'}
+
+  '@streetsidesoftware/markdown-toolkit@2.1.0':
+    resolution: {integrity: sha512-ukmkiU2L+5fLNX4UK4ofRxxaBLKoH3pr77niduaW486cKHh7OBn8OGxUbLP+5KecmAb6gsdf4dhYGL/O2D+jgg==}
+    engines: {node: '>=22.18.0'}
+
+  '@streetsidesoftware/placeholders@1.1.0':
+    resolution: {integrity: sha512-C0UJ3sqLxpoVawoyOUoh1TJQEm3tCNh1pnuCQmatU3updVvt0o+aJ6jTTp0UVZCVsqldaW9B0DyC/oATtp8AdA==}
+    engines: {node: '>=22.18.0'}
 
   '@streetsidesoftware/unindent@1.0.1':
     resolution: {integrity: sha512-ZXfg7MT3AT9ZOq/hgzbqNc01zVPG+PFkr+kbB2OHlMcNrtvK10ZPkNgy38MqTErjNeajh4VG1sSSv5zIyjOXxg==}
@@ -4394,6 +4405,20 @@ snapshots:
   '@simple-libs/stream-utils@2.0.0': {}
 
   '@sindresorhus/merge-streams@4.0.0': {}
+
+  '@streetsidesoftware/markdown-toolkit@2.1.0(supports-color@9.4.0)':
+    dependencies:
+      '@streetsidesoftware/placeholders': 1.1.0
+      character-entities: 2.0.2
+      remark-gfm: 4.0.1(supports-color@9.4.0)
+      remark-parse: 11.0.0(supports-color@9.4.0)
+      remark-stringify: 11.0.0
+      unified: 11.0.5
+      unist-util-visit: 5.1.0
+    transitivePeerDependencies:
+      - supports-color
+
+  '@streetsidesoftware/placeholders@1.1.0': {}
 
   '@streetsidesoftware/unindent@1.0.1': {}
 
