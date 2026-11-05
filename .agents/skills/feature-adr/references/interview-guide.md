@@ -34,7 +34,7 @@ one rather than assuming it.
 
 - How a package's `cspell-ext.json` is loaded (import, or bundled with cspell), and what that enables without the user
   doing anything.
-- How `languageSettings` matches `languageId` and `locale`, and how users turn dictionaries on and off.
+- How `languageSettings` matches `languageId` and `locale`, and how users enable and disable dictionaries.
 - What cspell-tools can build: formats, `split`, `allowedSplitWords`, `excludeWordsFrom`, Hunspell input.
 
 ## 2. Names and IDs
@@ -48,8 +48,8 @@ one rather than assuming it.
 ## 3. When it's enabled
 
 - For which file types (`languageId`) and locales (`locale`)?
-- Off by default, so users must add it to `dictionaries`? Or on for every file of a type?
-- Does turning it on accept words that should be flagged elsewhere (false negatives)?
+- Disabled by default, so users must add it to `dictionaries`? Or enabled for every file of a type?
+- Does enabling it accept words that should be flagged elsewhere (false negatives)?
 
 ## 4. Sources and license
 

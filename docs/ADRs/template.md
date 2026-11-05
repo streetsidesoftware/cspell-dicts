@@ -31,7 +31,7 @@ when the first release containing the feature is published.
 
 ## Goal
 
-<What success looks like: something a user can turn on, or text that is checked correctly, that isn't today.>
+<What success looks like: something a user can enable, or text that is checked correctly, that isn't today.>
 
 ## Out of scope
 
