@@ -31,7 +31,7 @@ async function run() {
 
     const fileMdURL = new URL('static/dictionary-packages.md', rootUrl);
 
-    const md = await format(await packageInfoToMarkdown(packageInfo), { filepath: fileURLToPath(fileMdURL) });
+    const md = await format(packageInfoToMarkdown(packageInfo), { filepath: fileURLToPath(fileMdURL) });
     await fs.writeFile(fileMdURL, md);
 }
 

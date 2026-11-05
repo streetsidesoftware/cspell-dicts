@@ -8,6 +8,7 @@ import { format, resolveConfig } from 'prettier';
 import { Document as YamlDocument } from 'yaml';
 
 import type { DictionaryPackageInfo } from './dictionaryInfo.mts';
+import { parseInline } from './parseInline.mts';
 import { readSources, sourcesCsv } from './sources-table.mts';
 
 const rootUrl = new URL('../../', import.meta.url);
@@ -187,11 +188,4 @@ function inlineCodeList(list: string): md.InlineContent {
         .map((entry) => entry.trim())
         .filter((entry) => entry)
         .map((entry, i) => (i ? [', ', md.inlineCode(entry)] : md.inlineCode(entry)));
-}
-
-/** Descriptions are Markdown, such as `Matches on HTML symbols like \`&clubs;\``. */
-function parseInline(markdown: string): md.InlineContent {
-    const parsed = md.parse(markdown);
-    if (parsed.type !== 'inlineFragment') throw new Error(`Expected one line of Markdown: ${markdown}`);
-    return parsed;
 }

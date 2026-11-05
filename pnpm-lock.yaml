@@ -780,9 +780,6 @@ importers:
       '@streetsidesoftware/markdown-toolkit':
         specifier: ^2.1.0
         version: 2.1.0(supports-color@9.4.0)
-      '@streetsidesoftware/unindent':
-        specifier: ^1.0.1
-        version: 1.0.1
       commander:
         specifier: ^15.0.0
         version: 15.0.0
@@ -813,12 +810,6 @@ importers:
       prettier:
         specifier: ^3.9.10
         version: 3.9.10
-      remark:
-        specifier: ^15.0.1
-        version: 15.0.1(supports-color@9.4.0)
-      remark-gfm:
-        specifier: ^4.0.1
-        version: 4.0.1(supports-color@9.4.0)
       shelljs:
         specifier: ^0.10.0
         version: 0.10.0
@@ -1577,10 +1568,6 @@ packages:
 
   '@streetsidesoftware/placeholders@1.1.0':
     resolution: {integrity: sha512-C0UJ3sqLxpoVawoyOUoh1TJQEm3tCNh1pnuCQmatU3updVvt0o+aJ6jTTp0UVZCVsqldaW9B0DyC/oATtp8AdA==}
-    engines: {node: '>=22.18.0'}
-
-  '@streetsidesoftware/unindent@1.0.1':
-    resolution: {integrity: sha512-ZXfg7MT3AT9ZOq/hgzbqNc01zVPG+PFkr+kbB2OHlMcNrtvK10ZPkNgy38MqTErjNeajh4VG1sSSv5zIyjOXxg==}
     engines: {node: '>=22.18.0'}
 
   '@tsconfig/node22@22.0.6':
@@ -4415,8 +4402,6 @@ snapshots:
       - supports-color
 
   '@streetsidesoftware/placeholders@1.1.0': {}
-
-  '@streetsidesoftware/unindent@1.0.1': {}
 
   '@tsconfig/node22@22.0.6': {}
 
