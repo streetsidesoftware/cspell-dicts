@@ -95,8 +95,8 @@ and shared word lists. So sources can be positional, repeated `--source`, or bot
 be positional or `--name`. People and the docs use the positional form, and the option form reads better in scripts.
 
 A source that doesn't exist, or giving no source at all, is an error. `--placeholder-word-lists` starts an empty word
-list instead, since a dictionary's own list may not exist yet. It never covers a Hunspell or third-party file: someone else made those, so a missing one is a
-mistake.
+list instead, since a dictionary's own list may not exist yet. It never covers a Hunspell or third-party file: someone
+else made those, so a missing one is a mistake.
 
 Turned down:
 
@@ -206,8 +206,9 @@ Turned down:
 ### Enabled for a locale or a file type
 
 A dictionary sets `--locale` or `--language-id`, so they're never both `*`, which means any. A natural language
-dictionary sets the locale, and any other sets the file type. The old default enabled every new dictionary for every file in every language, so users got
-its words wherever they spell checked. A dictionary that should be always enabled is a maintainer's design decision.
+dictionary sets the locale, and any other sets the file type. The old default enabled every new dictionary for every
+file in every language, so users got its words wherever they spell checked. A dictionary that should be always enabled
+is a maintainer's design decision.
 
 ### Contributors and keywords
 
@@ -318,8 +319,8 @@ reached `v1.50.3`.
 
 - **GitHub,** whenever an upstream has a repository. A source is rooted at the folder that holds the dictionary, and
   follows the default branch. `--add-source-ref` points it at another branch, a tag, or a commit.
-- **npm,** when there's no usable repository. Files are read from jsDelivr, with no dependency and no tarball. It follows
-  the `latest` tag, and `--add-source-version` sets another version or tag.
+- **npm,** when there's no usable repository. Files are read from jsDelivr, with no dependency and no tarball. It
+  follows the `latest` tag, and `--add-source-version` sets another version or tag.
 - **Anything else** is downloaded by hand and defined as a local source, with `--add-source-url` saying where it came
   from. Download pages are mostly behind older dictionaries, and most living upstreams are on GitHub.
 
@@ -369,15 +370,16 @@ back another dictionary's update.
 
 - **At creation, every remote source is fetched before anything is written.** If one fails, creation stops, and the
   error names the source and the cause. A rerun after fixing it just works.
-- **Afterwards, weekly.** The Update Dictionaries workflow syncs a new dictionary every Sunday, so upstream changes arrive together in
-  one PR. `pnpm run sync` works by hand at any time.
+- **Afterwards, weekly.** The Update Dictionaries workflow syncs a new dictionary every Sunday, so upstream changes
+  arrive together in one PR. `pnpm run sync` works by hand at any time.
 - **One failure doesn't hold back the rest.** Update Dictionaries opens the PR with whatever synced, then marks the run
   failed, naming the dictionaries that failed. They catch up the next week.
 
 Turned down:
 
 - **Skipping a source that failed at creation,** with a warning that's easy to miss.
-- **GitHub's public API without a token:** limited to 60 requests an hour, which fails confusingly on larger repositories.
+- **GitHub's public API without a token:** limited to 60 requests an hour, which fails confusingly on larger
+  repositories.
 - **Syncing on every push to `main`:** upstream changes arrive at random, mixed with unrelated work.
 - **Stopping every dictionary's update on one failure,** or only warning, so outages go unnoticed.
 
