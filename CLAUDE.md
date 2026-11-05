@@ -106,7 +106,7 @@ Follow [Commits and pull requests](docs/commits-and-pull-requests.md).
 - To create a dictionary package, use the `new-dictionary` skill.
 - To update a dictionary from its upstream source, use the `upstream-update` skill.
 - For a change with more than one reasonable design, settle the design before building. The
-  [ADR README](docs/ADRs/README.md) describes one way to do it, and the `feature-adr` skill runs it as an interview.
+  [Designing a feature](docs/feature-design.md) describes one way to do it, and the `feature-design` skill runs it as an interview.
 
 ## Dependencies
 

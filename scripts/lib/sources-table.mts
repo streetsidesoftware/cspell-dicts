@@ -9,7 +9,7 @@ const repoUrl = 'https://github.com/streetsidesoftware/cspell-dicts/blob/main';
 /** A file of a source: its path, or its path in the source and its path in `src/<name>/`. */
 type SourceFile = string | { path: string; local: string };
 
-/** A source in `src/sources.yaml`, as ADR 0003 of create-dictionary describes it. */
+/** A source in a dictionary's `src/sources.yaml`. */
 export interface SourceEntry {
     name: string;
     /** `<owner>/<repo>[/<path>]` */

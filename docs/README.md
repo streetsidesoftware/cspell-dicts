@@ -33,7 +33,10 @@ level: none
 - [Dictionary packages](./dictionary-packages.md): what a dictionary package contains and why, sources, building, and
   tests
 - [Commits and pull requests](./commits-and-pull-requests.md): commit types, scopes, and PR descriptions
-- [ADRs](./ADRs/README.md): design decisions, one folder per feature
+- [Designing a feature](./feature-design.md): when and how to write a design
+- [Design questions](./design-questions.md): the questions a design works through
+- [Design principles](./design-principles.md): what a design is weighed against
+- [Designs](./designs/README.md): decisions and their reasons, one per feature
 - [Style](./style.md): word lists, READMEs, and docs
 - [Glossary](./glossary.md): the terms used in these docs
 
@@ -41,6 +44,9 @@ level: none
 
 - [Releasing](./releasing.md): Release Please and publishing
 - [Commits and pull requests](./commits-and-pull-requests.md): commit types, scopes, and PR descriptions
-- [ADRs](./ADRs/README.md): design decisions, one folder per feature
+- [Designing a feature](./feature-design.md): when and how to write a design
+- [Design questions](./design-questions.md): the questions a design works through
+- [Design principles](./design-principles.md): what a design is weighed against
+- [Designs](./designs/README.md): decisions and their reasons, one per feature
 - [Style](./style.md): word lists, READMEs, and docs
 - [Glossary](./glossary.md): the terms used in these docs

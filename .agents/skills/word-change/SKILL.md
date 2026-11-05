@@ -1,6 +1,6 @@
 ---
 name: word-change
-description: 'Adds, removes, or corrects words in an existing cspell-dicts dictionary: finds the dictionary and source file, edits the word list, sorts, rebuilds it and the dictionaries that read from it, tests, and drafts the commit message and PR description. Use when the user wants to add a word, allow a term, stop a word from being flagged, remove a misspelling, fix capitalization, or move a word between dictionaries, even without naming a dictionary. For a new dictionary, use new-dictionary. For words from an upstream source, use upstream-update. For splitting or renaming dictionaries, use feature-adr.'
+description: 'Adds, removes, or corrects words in an existing cspell-dicts dictionary: finds the dictionary and source file, edits the word list, sorts, rebuilds it and the dictionaries that read from it, tests, and drafts the commit message and PR description. Use when the user wants to add a word, allow a term, stop a word from being flagged, remove a misspelling, fix capitalization, or move a word between dictionaries, even without naming a dictionary. For a new dictionary, use new-dictionary. For words from an upstream source, use upstream-update. For splitting or renaming dictionaries, use feature-design.'
 ---
 
 # word-change
@@ -92,4 +92,4 @@ Give the user drafts to approve.
 
 - The user's own config is the problem, such as a dictionary that isn't enabled, or a missing `language` or locale. Say
   so: the fix may not belong in this repo.
-- A word's placement shows a dictionary should be split or its settings changed. Offer `feature-adr`.
+- A word's placement shows a dictionary should be split or its settings changed. Offer `feature-design`.

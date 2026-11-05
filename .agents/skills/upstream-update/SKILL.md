@@ -1,6 +1,6 @@
 ---
 name: upstream-update
-description: 'Updates a cspell-dicts dictionary built from an upstream source, such as a Hunspell dictionary from an npm package like dictionary-de, a GitHub repository fetched by sync-github-files, or a dictionary''s own update script: checks the upstream change and its license, runs the sync script, rebuilds, reviews the diff, and drafts the commit message and PR description. Use when the user asks to update, refresh, re-sync, or bump a dictionary''s upstream source or tag, to review a "Build Dictionaries" or "Update Dictionaries" bot PR, or why a dictionary changed after a dependency update. For hand-edited word changes, use word-change. For switching a dictionary to a different source, use feature-adr.'
+description: 'Updates a cspell-dicts dictionary built from an upstream source, such as a Hunspell dictionary from an npm package like dictionary-de, a GitHub repository fetched by sync-github-files, or a dictionary''s own update script: checks the upstream change and its license, runs the sync script, rebuilds, reviews the diff, and drafts the commit message and PR description. Use when the user asks to update, refresh, re-sync, or bump a dictionary''s upstream source or tag, to review a "Build Dictionaries" or "Update Dictionaries" bot PR, or why a dictionary changed after a dependency update. For hand-edited word changes, use word-change. For switching a dictionary to a different source, use feature-design.'
 ---
 
 # upstream-update
@@ -92,4 +92,4 @@ Give the user drafts to approve.
 
 - A word from upstream is wrong. Exclude it with `excludeWordsFrom`, or report it upstream. Never edit synced files by
   hand.
-- The dictionary should switch to a different upstream source. That's a design change: offer `feature-adr`.
+- The dictionary should switch to a different upstream source. That's a design change: offer `feature-design`.
