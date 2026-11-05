@@ -22,5 +22,15 @@
             "dictionaries": ["fortran"],
             "dictionaryDefinitions": []
         }
+    ],
+    "overrides": [
+        {
+            "filename": "**/*.{f,f77,for,ftn}",
+            "languageId": "FortranFixedForm"
+        },
+        {
+            "filename": "**/*.{cuf,f03,f08,f18,f90,f95,fpp,fypp,pf}",
+            "languageId": "FortranFreeForm"
+        }
     ]
 }

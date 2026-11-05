@@ -17,7 +17,10 @@ OpenMP, OpenACC, and other vendors' extensions aren't included.
 
 It's enabled for files with the file type `fortran`, `FortranFreeForm`, or `FortranFixedForm`. The last two are the
 language IDs of the [Modern Fortran](https://marketplace.visualstudio.com/items?itemName=fortran-lang.linter-gfortran)
-extension for VS Code. The cspell command line gives Fortran files these file types from version 10.4.1 on.
+extension for VS Code. The dictionary gives these file types to files with these extensions:
+
+- `FortranFixedForm`: `.f`, `.f77`, `.for`, `.ftn`
+- `FortranFreeForm`: `.cuf`, `.f03`, `.f08`, `.f18`, `.f90`, `.f95`, `.fpp`, `.fypp`, `.pf`
 
 Most of the words are derived from the word lists of [fortls](https://github.com/fortran-lang/fortls), the Fortran
 language server, under its MIT license. The rest were added by hand.
