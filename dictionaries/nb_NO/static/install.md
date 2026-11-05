@@ -98,9 +98,10 @@ language: nb, nb-no
 
 ## Dictionary Information
 
-| Name    | Enabled | Description                  |
-| ------- | ------- | ---------------------------- |
-| `nb-no` |         | Norwegian Bokmål dictionary. |
+| Name        | Enabled | Description                                                                      |
+| ----------- | ------- | -------------------------------------------------------------------------------- |
+| `nb-no`     |         | Norwegian Bokmål dictionary.                                                     |
+| `nb-no-alt` |         | Norwegian Bokmål dictionary that also accepts words written without æ, ø, and å. |
 
 ## Language Settings
 

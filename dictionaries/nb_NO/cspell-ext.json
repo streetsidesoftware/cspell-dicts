@@ -9,6 +9,36 @@
             "name": "nb-no",
             "path": "./dict/nb-no.trie.gz",
             "description": "Norwegian Bokmål dictionary.",
+            "repMap": [
+                ["ae", "æ"],
+                ["oe", "ø"],
+                ["aa", "å"],
+                ["Ae|AE", "Æ"],
+                ["Oe|OE", "Ø"],
+                ["Aa|AA", "Å"]
+            ],
+            "dictionaryInformation": {
+                "locale": "nb-NO"
+            }
+        },
+        {
+            "name": "nb-no-alt",
+            "path": "./dict/nb-no.trie.gz",
+            "description": "Norwegian Bokmål dictionary that also accepts words written without æ, ø, and å.",
+            "repMap": [
+                ["ae", "æ"],
+                ["oe", "ø"],
+                ["aa", "å"],
+                ["Ae|AE", "Æ"],
+                ["Oe|OE", "Ø"],
+                ["Aa|AA", "Å"],
+                ["a", "æ"],
+                ["o", "ø"],
+                ["a", "å"],
+                ["A", "Æ"],
+                ["O", "Ø"],
+                ["A", "Å"]
+            ],
             "dictionaryInformation": {
                 "locale": "nb-NO"
             }

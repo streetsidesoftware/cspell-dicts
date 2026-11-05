@@ -17,6 +17,8 @@ The words come from two sources:
 
 Compound words that neither source lists are flagged.
 
+<!--- cspell:ignore blaabaer Groenland blabar Gronland --->
+
 <!--- cspell:ignore Ordbanken Bungum Nyordsliste CLARIN likestillingsdepartementet Standardordbøkene Revisjonsprosjektet --->
 
 <!--- @@inject: ../../static/requirements.md#values-file=:../../static/engines.json&values-file=:cspell-ext.json --->
@@ -132,9 +134,10 @@ language: nb, nb-no
 
 ## Dictionary Information
 
-| Name    | Enabled | Description                  |
-| ------- | ------- | ---------------------------- |
-| `nb-no` |         | Norwegian Bokmål dictionary. |
+| Name        | Enabled | Description                                                                      |
+| ----------- | ------- | -------------------------------------------------------------------------------- |
+| `nb-no`     |         | Norwegian Bokmål dictionary.                                                     |
+| `nb-no-alt` |         | Norwegian Bokmål dictionary that also accepts words written without æ, ø, and å. |
 
 ## Language Settings
 
@@ -143,6 +146,27 @@ language: nb, nb-no
 | `nb-no` | `nb`, `nb-no` | `*`       |
 
 <!--- @@inject-end: ./static/install.md --->
+
+## Words Written Without æ, ø, and å
+
+In code, email addresses, and file names, æ, ø, and å are often replaced. Språkrådet, the Language Council of Norway,
+gives advice on this in
+[Æ, ø og å i internasjonal sammenheng](https://sprakradet.no/spraksporsmal-og-svar/ae-o-og-a-i-internasjonal-sammenheng/)
+(in Norwegian).
+
+Double letters work by default: ae, oe, and aa. "blaabaer" is accepted as "blåbær", and "Groenland" as "Grønland".
+
+To accept single letters too (a, o, and a), add the `nb-no-alt` dictionary. It has the same words as `nb-no`.
+"blabar" is accepted as "blåbær", and "Gronland" as "Grønland".
+
+**`cspell.json`**
+
+```jsonc
+{
+  "import": ["@cspell/dict-nb-no/cspell-ext.json"],
+  "dictionaries": ["nb-no-alt"],
+}
+```
 
 <!--- @@inject: ../../static/contributing.md --->
 

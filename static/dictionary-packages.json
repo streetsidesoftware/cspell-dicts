@@ -2645,7 +2645,7 @@
     "packageName": "@cspell/dict-nb-no",
     "description": "Norwegian Bokmål dictionary.",
     "cspell": false,
-    "categories": ["natural-language"],
+    "categories": ["natural-language", "other"],
     "dictionaries": [
       {
         "name": "nb-no",
@@ -2657,6 +2657,10 @@
             "fileType": "*"
           }
         ]
+      },
+      {
+        "name": "nb-no-alt",
+        "description": "Norwegian Bokmål dictionary that also accepts words written without æ, ø, and å."
       }
     ],
     "patterns": []
@@ -2691,7 +2695,7 @@
     "packageName": "@cspell/dict-nn-no",
     "description": "Norwegian Nynorsk dictionary.",
     "cspell": false,
-    "categories": ["natural-language"],
+    "categories": ["natural-language", "other"],
     "dictionaries": [
       {
         "name": "nn-no",
@@ -2703,6 +2707,10 @@
             "fileType": "*"
           }
         ]
+      },
+      {
+        "name": "nn-no-alt",
+        "description": "Norwegian Nynorsk dictionary that also accepts words written without æ, ø, and å."
       }
     ],
     "patterns": []
