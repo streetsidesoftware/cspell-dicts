@@ -1,5 +1,47 @@
 # Release Notes
 
+## [35.0.0](https://github.com/streetsidesoftware/cspell-dicts/compare/cspell-dicts@34.2.0...cspell-dicts@35.0.0) (2026-11-05)
+
+
+### ⚠ BREAKING CHANGES
+
+* flag words with a missing å in nb_NO and nn_NO ([#6018](https://github.com/streetsidesoftware/cspell-dicts/issues/6018))
+
+### Features
+
+* accept words written without æ, ø, and å in nb_NO and nn_NO ([#6017](https://github.com/streetsidesoftware/cspell-dicts/issues/6017)) ([aa7bdbc](https://github.com/streetsidesoftware/cspell-dicts/commit/aa7bdbc2e15446d9fe949578e2d996216a5bdbc9))
+* **en-slang:** publish the en-slang dictionary ([#5988](https://github.com/streetsidesoftware/cspell-dicts/issues/5988)) ([9981bd0](https://github.com/streetsidesoftware/cspell-dicts/commit/9981bd065f50fcf6626ca0e4cfd0d69a737ee296))
+* **nn_NO:** add Norwegian Nynorsk dictionary ([#5975](https://github.com/streetsidesoftware/cspell-dicts/issues/5975)) ([64145fc](https://github.com/streetsidesoftware/cspell-dicts/commit/64145fc7619f58a0a8803210a26b800ba74f2765))
+* **nn_NO:** publish the nn_NO dictionary ([#5987](https://github.com/streetsidesoftware/cspell-dicts/issues/5987)) ([2798e0d](https://github.com/streetsidesoftware/cspell-dicts/commit/2798e0d1af8624e0eda48492fd53bf206e0e7011))
+
+
+### Updates and Bug Fixes
+
+* add newer words to nb_NO and nn_NO from LibreOffice's Norwegian dictionaries ([#5996](https://github.com/streetsidesoftware/cspell-dicts/issues/5996)) ([e3ca5d2](https://github.com/streetsidesoftware/cspell-dicts/commit/e3ca5d2974cb1c4d4af96a8376c08dccf3f3ce5e))
+* **companies:** add bexio ([#6007](https://github.com/streetsidesoftware/cspell-dicts/issues/6007)) ([6fe9d27](https://github.com/streetsidesoftware/cspell-dicts/commit/6fe9d27c1770adf7d059eb6922f9159a0a2fe8aa))
+* **data-science:** drop "-- Private until verified" from the description ([#5979](https://github.com/streetsidesoftware/cspell-dicts/issues/5979)) ([5600239](https://github.com/streetsidesoftware/cspell-dicts/commit/56002395cf8aedbdd24e89403b82e82822277aa9))
+* flag words with a missing å in nb_NO and nn_NO ([#6018](https://github.com/streetsidesoftware/cspell-dicts/issues/6018)) ([1d3f24d](https://github.com/streetsidesoftware/cspell-dicts/commit/1d3f24da0f933dcdb0091821a2be588afbc7182d))
+* **nb_NO:** sync the Hunspell source and use the current package layout ([#5974](https://github.com/streetsidesoftware/cspell-dicts/issues/5974)) ([76e7d25](https://github.com/streetsidesoftware/cspell-dicts/commit/76e7d2557a54116ac263d2106029359d5a659490))
+* **npm:** add @ngx-formly/core ([#5961](https://github.com/streetsidesoftware/cspell-dicts/issues/5961)) ([408f7fb](https://github.com/streetsidesoftware/cspell-dicts/commit/408f7fb2180ab469b843caf9f148749b4b73cd0d))
+* **npm:** add @trivago/prettier-plugin-sort-imports ([#5972](https://github.com/streetsidesoftware/cspell-dicts/issues/5972)) ([e40c255](https://github.com/streetsidesoftware/cspell-dicts/commit/e40c255d325695427d9fc41b23596a75fa8418e7))
+* **Python:** Add common Python tools ([#6000](https://github.com/streetsidesoftware/cspell-dicts/issues/6000)) ([0964f52](https://github.com/streetsidesoftware/cspell-dicts/commit/0964f5242efaf11541eaed8a6abffa1c4d8aa277))
+* **software-terms:** add ciphertext ([#5976](https://github.com/streetsidesoftware/cspell-dicts/issues/5976)) ([f926cb4](https://github.com/streetsidesoftware/cspell-dicts/commit/f926cb48e696b273bff56a6daa02e875154abe53))
+* **software-terms:** add crawlable ([#5993](https://github.com/streetsidesoftware/cspell-dicts/issues/5993)) ([a0c0c28](https://github.com/streetsidesoftware/cspell-dicts/commit/a0c0c2824f59d2f4b5ca5e49efdaeae5e7d1e10e))
+* **software-terms:** add preinstalls and preinstalling ([#5965](https://github.com/streetsidesoftware/cspell-dicts/issues/5965)) ([e1c4dfd](https://github.com/streetsidesoftware/cspell-dicts/commit/e1c4dfd4d63465947a3c636db75e2e0562900d02))
+* Workflow Bot -- Build Dictionaries ([#5977](https://github.com/streetsidesoftware/cspell-dicts/issues/5977)) ([3dce82f](https://github.com/streetsidesoftware/cspell-dicts/commit/3dce82faf9995f1e48b96a73a2d35e5065673213))
+* Workflow Bot -- Build Dictionaries ([#5983](https://github.com/streetsidesoftware/cspell-dicts/issues/5983)) ([cdaff57](https://github.com/streetsidesoftware/cspell-dicts/commit/cdaff574706305a40c49f534629d85385ca80aa0))
+* Workflow Bot -- Build Dictionaries ([#6002](https://github.com/streetsidesoftware/cspell-dicts/issues/6002)) ([ee7bdb1](https://github.com/streetsidesoftware/cspell-dicts/commit/ee7bdb1ac002787c6de8f9be5878c9d901771020))
+* Workflow Bot -- Build Dictionaries ([#6011](https://github.com/streetsidesoftware/cspell-dicts/issues/6011)) ([b4dd25f](https://github.com/streetsidesoftware/cspell-dicts/commit/b4dd25f155d780882167ede69f346c5c7cbd94b0))
+* Workflow Bot -- Update Dictionaries ([#5970](https://github.com/streetsidesoftware/cspell-dicts/issues/5970)) ([b517b93](https://github.com/streetsidesoftware/cspell-dicts/commit/b517b9354b69c392195077064b6be506aa966f16))
+* Workflow Bot -- Update Dictionaries ([#6008](https://github.com/streetsidesoftware/cspell-dicts/issues/6008)) ([8384357](https://github.com/streetsidesoftware/cspell-dicts/commit/8384357176560640ca8c67bb5a2c4cf344be7798))
+
+
+### Dependencies
+
+* The following workspace dependencies were updated
+  * devDependencies
+    * @cspell/dict-cspell-bundle bumped to 2.0.84
+
 ## [34.2.0](https://github.com/streetsidesoftware/cspell-dicts/compare/cspell-dicts@34.1.0...cspell-dicts@34.2.0) (2026-10-23)
 
 
