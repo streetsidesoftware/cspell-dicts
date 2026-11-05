@@ -17,7 +17,8 @@ OpenMP, OpenACC, and other vendors' extensions aren't included.
 
 It's enabled for files with the file type `fortran`, `FortranFreeForm`, or `FortranFixedForm`. The last two are the
 language IDs of the [Modern Fortran](https://marketplace.visualstudio.com/items?itemName=fortran-lang.linter-gfortran)
-extension for VS Code. The dictionary gives these file types to files with these extensions:
+extension for VS Code. The dictionary gives files with these extensions, in lowercase or uppercase, the file type
+`fortran` and one more:
 
 - `FortranFixedForm`: `.f`, `.f77`, `.for`, `.ftn`
 - `FortranFreeForm`: `.cuf`, `.f03`, `.f08`, `.f18`, `.f90`, `.f95`, `.fpp`, `.fypp`, `.pf`

@@ -25,12 +25,12 @@
     ],
     "overrides": [
         {
-            "filename": "**/*.{f,f77,for,ftn}",
-            "languageId": "FortranFixedForm"
+            "filename": "**/*.{f,f77,for,ftn,F,F77,FOR,FTN}",
+            "languageId": "fortran,FortranFixedForm"
         },
         {
-            "filename": "**/*.{cuf,f03,f08,f18,f90,f95,fpp,fypp,pf}",
-            "languageId": "FortranFreeForm"
+            "filename": "**/*.{cuf,f03,f08,f18,f90,f95,fpp,fypp,pf,CUF,F03,F08,F18,F90,F95,FPP,FYPP,PF}",
+            "languageId": "fortran,FortranFreeForm"
         }
     ]
 }
