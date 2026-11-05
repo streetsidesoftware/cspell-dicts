@@ -3,6 +3,13 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+## [3.2.14](https://github.com/streetsidesoftware/cspell-dicts/compare/@cspell/dict-companies@3.2.13...@cspell/dict-companies@3.2.14) (2026-11-05)
+
+
+### Updates and Bug Fixes
+
+* **companies:** add bexio ([#6007](https://github.com/streetsidesoftware/cspell-dicts/issues/6007)) ([6fe9d27](https://github.com/streetsidesoftware/cspell-dicts/commit/6fe9d27c1770adf7d059eb6922f9159a0a2fe8aa))
+
 ## [3.2.13](https://github.com/streetsidesoftware/cspell-dicts/compare/@cspell/dict-companies@3.2.12...@cspell/dict-companies@3.2.13) (2026-09-11)
 
 
