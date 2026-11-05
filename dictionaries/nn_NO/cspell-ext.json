@@ -9,6 +9,36 @@
             "name": "nn-no",
             "path": "./dict/nn-no.trie.gz",
             "description": "Norwegian Nynorsk dictionary.",
+            "repMap": [
+                ["ae", "æ"],
+                ["oe", "ø"],
+                ["aa", "å"],
+                ["Ae|AE", "Æ"],
+                ["Oe|OE", "Ø"],
+                ["Aa|AA", "Å"]
+            ],
+            "dictionaryInformation": {
+                "locale": "nn-NO"
+            }
+        },
+        {
+            "name": "nn-no-alt",
+            "path": "./dict/nn-no.trie.gz",
+            "description": "Norwegian Nynorsk dictionary that also accepts words written without æ, ø, and å.",
+            "repMap": [
+                ["ae", "æ"],
+                ["oe", "ø"],
+                ["aa", "å"],
+                ["Ae|AE", "Æ"],
+                ["Oe|OE", "Ø"],
+                ["Aa|AA", "Å"],
+                ["a", "æ"],
+                ["o", "ø"],
+                ["a", "å"],
+                ["A", "Æ"],
+                ["O", "Ø"],
+                ["A", "Å"]
+            ],
             "dictionaryInformation": {
                 "locale": "nn-NO"
             }

@@ -132,9 +132,10 @@ language: nn, nn-NO
 
 ## Dictionary Information
 
-| Name    | Enabled | Description                   |
-| ------- | ------- | ----------------------------- |
-| `nn-no` |         | Norwegian Nynorsk dictionary. |
+| Name        | Enabled | Description                                                                       |
+| ----------- | ------- | --------------------------------------------------------------------------------- |
+| `nn-no`     |         | Norwegian Nynorsk dictionary.                                                     |
+| `nn-no-alt` |         | Norwegian Nynorsk dictionary that also accepts words written without æ, ø, and å. |
 
 ## Language Settings
 
