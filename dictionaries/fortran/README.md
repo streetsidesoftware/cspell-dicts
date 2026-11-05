@@ -15,7 +15,7 @@ It holds the words of the Fortran language itself, so they aren't reported as un
 
 OpenMP, OpenACC, and other vendors' extensions aren't included.
 
-It's on for files with the file type `fortran`, `FortranFreeForm`, or `FortranFixedForm`. The last two are the
+It's enabled for files with the file type `fortran`, `FortranFreeForm`, or `FortranFixedForm`. The last two are the
 language IDs of the [Modern Fortran](https://marketplace.visualstudio.com/items?itemName=fortran-lang.linter-gfortran)
 extension for VS Code. The cspell command line gives Fortran files these file types from version 10.4.1 on.
 
