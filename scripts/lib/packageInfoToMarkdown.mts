@@ -1,6 +1,7 @@
+import * as md from '@streetsidesoftware/markdown-toolkit';
+
 import type { DictionaryPackageInfo } from './dictionaryInfo.mts';
-import { formatMarkdown } from './formatMarkdown.mts';
-import { unindent } from '@streetsidesoftware/unindent';
+import { parseInline } from './parseInline.mts';
 
 const categoryToTitle = new Map([
     ['natural-language', 'Natural Language Dictionaries'],
@@ -10,122 +11,129 @@ const categoryToTitle = new Map([
     ['bundle', 'Dictionary Bundles'],
 ]);
 
-export async function packageInfoToMarkdown(packages: DictionaryPackageInfo[]): Promise<string> {
+export function packageInfoToMarkdown(packages: DictionaryPackageInfo[]): string {
     packages = [...packages].sort((a, b) => a.name.localeCompare(b.name));
 
-    let md = '<!--- Use `pnpm build:readme` to generate this table --->\n\n';
-    md += listDictionariesByCategory(packages);
-    md += extractDictionaryTable(packages);
-    md += listDictionaryIds(packages);
-
-    return formatMarkdown(md);
+    return md
+        .document(
+            md.comment('Use `pnpm build:readme` to generate this table'),
+            listDictionariesByCategory(packages),
+            extractDictionaryTable(packages),
+            listDictionaryIds(packages),
+        )
+        .toString();
 }
 
 /**
  * List dictionaries by category
  */
-function listDictionariesByCategory(packages: DictionaryPackageInfo[]): string {
+function listDictionariesByCategory(packages: DictionaryPackageInfo[]): md.BlockContent {
     const seen = new Set<DictionaryPackageInfo>();
     const categories = new Set(['natural-language', 'programming', 'other', 'bundle']);
     const byCategory = groupByCategory(packages);
 
-    let md = '';
+    const sections: md.BlockContent[] = [];
 
     for (const category of categories) {
         const list = byCategory.get(category);
         if (!list) continue;
         const filtered = list.filter((pkg) => !seen.has(pkg));
         filtered.forEach((pkg) => seen.add(pkg));
-        md += formatCategory(category, filtered);
+        sections.push(formatCategory(category, filtered));
     }
 
     for (const [category, list] of byCategory) {
         if (categories.has(category)) continue;
         const filtered = list.filter((pkg) => !seen.has(pkg));
         filtered.forEach((pkg) => seen.add(pkg));
-        md += formatCategory(category, filtered);
+        sections.push(formatCategory(category, filtered));
     }
 
-    md +=
-        '\n\n' +
-        '<sup>1</sup> Bundled with CSpell.<br>' +
-        '<sup>2</sup> Dictionaries are enabled when packages is imported.\n\n';
-
-    return md;
+    return [sections, footnotes()];
 }
 
 /**
  * List dictionary IDs and descriptions.
  */
-function listDictionaryIds(packages: DictionaryPackageInfo[]): string {
+function listDictionaryIds(packages: DictionaryPackageInfo[]): md.AnyContent {
     const dictionaries = packages
         .filter((pkg) => !pkg.isBundle)
         .flatMap((pkg) => pkg.dictionaries.map((d) => ({ ...d, pkg })))
         .filter((d) => !d.external)
         .sort((a, b) => a.name.localeCompare(b.name));
-    let md = unindent`
-        ## Sorted by Dictionary Name IDs
 
-        | Name ID | Description | Locale | File Type |
-        | ------- | ----------- | ------ | --------- |
-    `;
-
-    for (const dict of dictionaries) {
-        const cspell = dict.pkg.cspell ? ' <sup>1</sup>' : '';
-        const enabled = dict.enabled ? ' <sup>2</sup>' : '';
-        const locales = dict.locales ? `${dict.locales.sort().join('<br>')}` : '-';
-        const fileTypes = dict.fileTypes ? `${take(4, dict.fileTypes.sort()).join('<br>')}` : '-';
-        // | Name | Description | Locale | File Type |
-        md += `| [\`${dict.name}\`](../${dict.pkg.dir})${cspell}${enabled} | ${dict.description} | ${locales} | ${fileTypes} |\n`;
-    }
-
-    md += unindent`
-
-        <sup>1</sup> Bundled with CSpell.<br>
-        <sup>2</sup> Dictionaries are enabled when packages is imported.
-
-    `;
-
-    return md;
+    return [
+        md.heading(2, 'Sorted by Dictionary Name IDs'),
+        md.table(
+            ['Name ID', 'Description', 'Locale', 'File Type'],
+            dictionaries.map((dict) => [
+                [
+                    md.link(md.inlineCode(dict.name), `../${dict.pkg.dir}`),
+                    dict.pkg.cspell ? [' ', md.sup('1')] : '',
+                    dict.enabled ? [' ', md.sup('2')] : '',
+                ],
+                parseInline(dict.description || ''),
+                dict.locales ? lines(dict.locales.sort()) : '-',
+                dict.fileTypes ? lines(take(4, dict.fileTypes.sort())) : '-',
+            ]),
+        ),
+        footnotes(),
+    ];
 }
 
-function extractDictionaryTable(packages: DictionaryPackageInfo[]): string {
+function extractDictionaryTable(packages: DictionaryPackageInfo[]): md.AnyContent {
     packages = [...packages].sort((a, b) => a.packageName.localeCompare(b.packageName));
-    return unindent`
-        ## All Dictionaries
-
-        | Package | Name | Dictionary IDs |
-        | ------- | ---- | -------------- |
-        ${packages.map(formatPackageRow).join('\n')}
-
-        <sup>1</sup> Bundled with CSpell.<br><sup>2</sup> Dictionaries are enabled when packages is imported.
-
-    `;
+    return [
+        md.heading(2, 'All Dictionaries'),
+        md.table(['Package', 'Name', 'Dictionary IDs'], packages.map(formatPackageRow)),
+        footnotes(),
+    ];
 }
 
-function formatPackageRow(pkg: DictionaryPackageInfo): string {
+function footnotes(): md.MDParagraph {
+    return md.p(
+        md.sup('1'),
+        ' Bundled with CSpell.',
+        md.br(),
+        md.sup('2'),
+        ' Dictionaries are enabled when packages is imported.',
+    );
+}
+
+function formatPackageRow(pkg: DictionaryPackageInfo): md.InlineContent[] {
     const { packageName, dictionaries, dir } = pkg;
 
     const dictNames = pkg.isBundle
         ? ''
-        : dictionaries
-              .filter((d) => !d.external)
-              .map((d) => d.name + (d.enabled ? '<sup>2</sup>' : ''))
-              .join('<br>');
+        : lines(dictionaries.filter((d) => !d.external).map((d) => [d.name, d.enabled ? md.sup('2') : '']));
 
-    // | Package | Name | Dictionary IDs |
-    return `| [${packageName}](../${dir}#readme)${pkg.cspell ? '<sup>1</sup>' : ''} | ${pkg.name} | ${dictNames} |`;
+    return [
+        [md.link(packageName, `../${dir}#readme`), pkg.cspell ? md.sup('1') : ''],
+        parseInline(pkg.name),
+        dictNames,
+    ];
 }
 
-function formatCategory(category: string, packages: DictionaryPackageInfo[] | undefined): string {
-    if (!packages?.length) return '';
+function formatCategory(category: string, packages: DictionaryPackageInfo[] | undefined): md.BlockContent {
+    if (!packages?.length) return [];
 
     const title = categoryToTitle.get(category) || category;
-    return `## ${title}\n\n` + packages.map(formatPackage).join('\n') + '\n\n';
+    return [md.heading(2, title), md.list(packages.map(formatPackage))];
 }
 
-function formatPackage(pkg: DictionaryPackageInfo): string {
-    return `- [${pkg.name}](../${pkg.dir}) - ${pkg.description} ${pkg.cspell ? '<sup>1</sup>' : ''} ${pkg.hasEnabledByDefault ? '<sup>2</sup>' : ''}`;
+function formatPackage(pkg: DictionaryPackageInfo): md.MDListItem {
+    return md.li([
+        md.link(pkg.name, `../${pkg.dir}`),
+        ' - ',
+        parseInline(pkg.description),
+        pkg.cspell ? [' ', md.sup('1')] : '',
+        pkg.hasEnabledByDefault ? [' ', md.sup('2')] : '',
+    ]);
+}
+
+/** Puts each entry of a table cell on its own line. */
+function lines(entries: md.InlineContent[]): md.InlineContent {
+    return entries.map((entry, i) => (i ? [md.br(), entry] : entry));
 }
 
 function groupByCategory(packages: DictionaryPackageInfo[]): Map<string, DictionaryPackageInfo[]> {
