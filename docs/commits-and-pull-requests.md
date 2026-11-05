@@ -23,7 +23,7 @@ Pick the type by that reader, not by how large the diff is.
 Follow [Conventional Commits](https://www.conventionalcommits.org/). PRs are squash-merged, so the PR title becomes the
 commit message.
 
-- `feat:`: something new users can turn on or rely on:
+- `feat:`: something new users can enable or rely on:
   - a new dictionary package
   - a new dictionary ID, or a new setting in a package's `cspell-ext.json`
   - a new domain of words: a coherent new set, such as the environment variables of a tool, not just many words
