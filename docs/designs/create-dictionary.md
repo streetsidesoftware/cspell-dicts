@@ -55,8 +55,8 @@ Two facts about dictionaries shape the design:
 2. **Easy to adopt:** a maintainer merges a new dictionary after review, without pushing their own fixes.
 3. **Easy to maintain:** upstream changes arrive in the weekly PR with no hand work. A word is added or removed in one
    known place.
-4. **Traceable and tested:** every source is recorded with its license and shown in the README. The dictionary is
-   tested, with real samples where possible.
+4. **Traceable and tested:** every third-party source is recorded with its license and shown in the README. The
+   dictionary is tested, with real samples where possible.
 
 ### Out of scope
 
@@ -108,7 +108,7 @@ where the source came from.
 
 The cost is long commands for natural language dictionaries. Agents write them, and people can use the prompts.
 
-### One record of every source: `src/sources.yaml`
+### One record of every third-party source: `src/sources.yaml`
 
 The tool, the sync, and the READMEs all need the same facts about a source. A sync script per source was hard to
 maintain, and no other tool can read a command line.
