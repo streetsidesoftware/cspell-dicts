@@ -125,7 +125,7 @@ export function parseCommandLine(argv: string[]): CommandLine {
         )
         .option(
             '--language-id <ids>',
-            'file types, comma separated, such as "ruby", or "*" for any; default: "*". Giving both this and --locale as "*" is an error',
+            'file types, comma separated, such as "ruby", or "*" for any; default: "*". Giving both this and --locale as "*" is an error, unless "languageSettings" is left out',
         )
         .option(
             '--enable-for-all-files',
@@ -133,7 +133,7 @@ export function parseCommandLine(argv: string[]): CommandLine {
         )
         .option(
             '--no-language-settings',
-            'leave out "languageSettings", so --locale and --language-id only set what the samples use; the default when neither can be determined',
+            'leave out "languageSettings", so --locale and --language-id only set what the samples use; the default with --yes when neither can be determined',
         )
         .optionsGroup('Words:')
         .option(

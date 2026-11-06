@@ -363,6 +363,19 @@ describe('getAnswers', () => {
         assert.equal(settings.languageSettings, false);
     });
 
+    it('ignores the locale of the name when --locale is "*"', async () => {
+        const settings = await getAnswers(options({ name: 'en_IN', srcFiles: ['words.txt'], locale: '*' }), repo, root);
+        assert.equal(settings.languageSettings, false);
+        assert.equal(settings.locale, '*');
+    });
+
+    it('fails for a name that is a locale when both are given as "*"', async () => {
+        await assert.rejects(
+            getAnswers(options({ name: 'en_IN', srcFiles: ['words.txt'], locale: '*', languageId: '*' }), repo, root),
+            /can't both be "\*"/,
+        );
+    });
+
     it('prefixes an invalid value with its option', async () => {
         await assert.rejects(
             getAnswers(options({ name: 'a.b', srcFiles: ['words.txt'], languageId: 'ruby' }), repo, root),

@@ -1,7 +1,8 @@
 import { copyFileSync, mkdirSync, readFileSync, writeFileSync } from 'node:fs';
 import { dirname, extname, join, relative } from 'node:path';
 
-import { isDisabled, type Settings } from './answers.mts';
+import { isDisabled } from './answers.mts';
+import type { Settings } from './answers.mts';
 import { title, toPackageName } from './names.mts';
 import type { Repo } from './repo.mts';
 import { isHunspellFile } from './hunspell.mts';
@@ -97,8 +98,11 @@ export async function createPackage(answers: Settings, repo: Repo): Promise<stri
         if (answers.languageSettings) return cspellExt;
         const ext = JSON.parse(cspellExt);
         delete ext.languageSettings;
-        if (answers.enableForAllFiles) ext.dictionaries = [packageName];
-        return JSON.stringify(ext, null, 4) + '\n';
+        const content = JSON.stringify(ext, null, 4) + '\n';
+        // As Prettier writes it: a short array stays on one line.
+        return answers.enableForAllFiles
+            ? content.replace('"dictionaries": []', `"dictionaries": ["${packageName}"]`)
+            : content;
     }
 
     /** The template's package.json, with the contributors, the extra keywords, and the sources' licenses and READMEs. */

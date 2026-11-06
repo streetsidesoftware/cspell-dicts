@@ -81,6 +81,7 @@ describe('createPackage', () => {
         );
         const ext = JSON.parse(read(dir, 'cspell-ext.json'));
         assert.deepEqual(ext.dictionaries, ['all-files']);
+        assert.match(read(dir, 'cspell-ext.json'), /"dictionaries": \["all-files"\]\n/);
         assert.equal(ext.languageSettings, undefined);
         assert.equal(JSON.parse(read(dir, 'samples/cspell.json')).dictionaries, undefined);
     });

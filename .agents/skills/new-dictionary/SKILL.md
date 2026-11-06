@@ -88,8 +88,8 @@ Turn the design into the dictionary with one command.
   - `--placeholder-word-lists` when there's no word list yet. It starts an empty one.
   - One `--contributor` per person, and one `--keyword` per search term.
   - `--locale` for a natural language, or `--language-id` for a programming language or file type.
-  - `--no-language-settings` for a dictionary users enable themselves, and `--enable-for-all-files` for one enabled for
-    every file, only when the design says so.
+  - For a dictionary users enable themselves, `--no-language-settings`. For one enabled for every file, only when the
+    design says so, `--enable-for-all-files`.
   - One `--add-sample` per real sample the user has, each with `--add-sample-origin` and `--add-sample-license`.
   - Leave the trie and the build to their defaults. With a Hunspell source, it doesn't build: run `pnpm run build` in
     the dictionary's directory. If that's too slow, lower `maxDepth` in `cspell-tools.config.yaml`, and tell the user.

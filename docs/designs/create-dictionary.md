@@ -185,7 +185,7 @@ This creates the dictionary, disabled, and says so. The repo has three shapes, a
 - **Every file has to be asked for by name.** Its words stop being flagged everywhere, including where they should be.
   Maintainers often remove it in review, and it's their design decision, so neither the fallback message nor the planned
   prompts offer it.
-- **Enablement and the locale of the words are separate.** Leaving out `languageSettings` doesn't change what the words
+- **Enablement and the locale of the words are separate.** Leaving out the language settings doesn't change what the words
   are, so `--locale` and `--language-id` are still allowed with it. They set what the samples use.
 - **A locale comes from a name only when the whole name is one.** `en_AU` and `german` are safe. A start such as `it` in
   `it-terms` can be a coincidence, and a wrong guess would enable the dictionary.
@@ -285,9 +285,10 @@ Everything above is built, except these parts of [How a dictionary is enabled](#
   enabled, with answers that depend on the kind: that locale or those file types, or only when a user adds it. A
   specialized dictionary gets no such question, and stays disabled. They're separate because choosing a natural language
   shouldn't by itself mean enabling for it.
-- The dictionary locale. `--locale` will also set the locale in `dictionaryInformation`, normalized, and from a list the
-  most specific one, so `de,de_CH` gives `de-CH`. `--dictionary-locale` will set only that. cspell uses it for
-  suggestions and casing rules, whether or not the dictionary is enabled for that locale.
+- The dictionary locale. `--locale` will also set the dictionary's own locale, normalized, and from a list the most
+  specific one, so `de,de_CH` gives `de-CH`. `--dictionary-locale` will set only that. cspell uses it for suggestions and
+  casing rules, whether or not the dictionary is enabled for that locale. Adding samples later will read it too. Today
+  that step finds a language only in the language settings, so a dictionary without them gets no Wikipedia article.
 
 And these parts of the last three sections:
 

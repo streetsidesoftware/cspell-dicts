@@ -480,6 +480,12 @@ describe('enabling', () => {
         );
     });
 
+    it('warns about an unknown locale without languageSettings', () => {
+        const result = create('--yes', 'unknown-locale', ...args, '--no-language-settings', '--locale', 'english');
+        assert.equal(result.code, 0, result.stderr);
+        assert.match(result.stderr, /warning: locale: "english" isn't a known locale/);
+    });
+
     it('creates a disabled dictionary when nothing tells what enables it', () => {
         const result = create('--yes', 'plain-words', ...args);
         assert.equal(result.code, 0, result.stderr);

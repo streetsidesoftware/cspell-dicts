@@ -358,6 +358,9 @@ pnpm create-dictionary en_XX-slang slang.txt --no-language-settings --locale en
 The locale and the file type, including a locale from the name, still say what the samples are: the language they're
 checked in and fetched from Wikipedia in, and the file type they're checked as. They don't enable the dictionary.
 
+This only holds while creating it. Later, `pnpm exec add-samples` doesn't know the language, so it fetches no Wikipedia
+article for a dictionary without `languageSettings`.
+
 With `--yes`, this is also what happens when the options and the name give no locale or file type, or only `*` for one
 of them. Either way, the command says the dictionary isn't enabled yet.
 

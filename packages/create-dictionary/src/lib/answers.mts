@@ -471,7 +471,8 @@ export async function getAnswers(options: CommandLine, repo: Repo, cwd: string):
     // A name such as en_AU or german stands for its locale.
     const nameLocale = localeFromWholeName(name);
     const isSet = (value: string | undefined) => value !== undefined && value.trim() !== '*';
-    const determined = isSet(given.locale) || isSet(given.languageId) || !!nameLocale;
+    const fromName = given.locale === undefined && !!nameLocale;
+    const determined = isSet(given.locale) || isSet(given.languageId) || fromName;
     const bothAny = given.locale?.trim() === '*' && given.languageId?.trim() === '*';
     const languageSettings = options.languageSettings && (determined || !noPrompts || bothAny);
     if (nameLocale && (noPrompts || !languageSettings) && given.locale === undefined) {
@@ -485,8 +486,8 @@ export async function getAnswers(options: CommandLine, repo: Repo, cwd: string):
     async function enabledFor(): Promise<{ locale: string; languageId: string }> {
         // A natural language sets the locale, and anything else the file type, so only one of them is asked.
         let kind: 'language' | 'files' | undefined;
-        if (isSet(given.locale) || (nameLocale && !isSet(given.languageId))) kind = 'language';
-        else if (isSet(given.languageId)) kind = 'files';
+        if (isSet(given.locale) || (fromName && !isSet(given.languageId))) kind = 'language';
+        else if (isSet(given.languageId) || given.locale !== undefined) kind = 'files';
         else if (!noPrompts) {
             kind = await ask.select({
                 message: 'What is this dictionary for?',

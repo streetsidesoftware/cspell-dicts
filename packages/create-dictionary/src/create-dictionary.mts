@@ -5,7 +5,8 @@
 import { relative, resolve } from 'node:path';
 import { fileURLToPath } from 'node:url';
 
-import { getAnswers, isDisabled, type Settings } from './lib/answers.mts';
+import { getAnswers, isDisabled } from './lib/answers.mts';
+import type { Settings } from './lib/answers.mts';
 import { isHunspellFile } from './lib/hunspell.mts';
 import { createPackage } from './lib/create-package.mts';
 import { toPackageName } from './lib/names.mts';
