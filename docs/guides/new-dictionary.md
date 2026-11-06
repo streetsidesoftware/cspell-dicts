@@ -184,26 +184,21 @@ Checks:
 
 ## 7. Try it with cspell
 
-From the dictionary's directory, link the dictionary into your global cspell config:
+From the dictionary's directory, create a config file that imports the dictionary and enables it:
 
 ```sh
-pnpm exec cspell link add ./cspell-ext.json
+pnpm exec cspell init --output try.config.yaml --import ./cspell-ext.json --dictionary <dictionary ID>
 ```
 
 Check some files with it:
 
 ```sh
-pnpm exec cspell check <path/to/file> --locale=<locale> --language-id=<file type>
+pnpm exec cspell lint --config try.config.yaml --root <folder> --locale=<locale> --language-id=<file type> <file>
 ```
 
-`check` shows the whole file, with ignored text in gray and issues in red. Use VS Code instead if you prefer: the link
-applies there too.
+Words the dictionary has aren't reported. `<file>` is relative to `<folder>`.
 
-Unlink when you are done:
-
-```sh
-pnpm exec cspell link remove ./cspell-ext.json
-```
+Delete `try.config.yaml` when you are done, so it isn't committed.
 
 ## 8. Open a PR
 
