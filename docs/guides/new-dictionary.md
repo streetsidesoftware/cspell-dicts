@@ -177,30 +177,7 @@ Checks:
   - A name, such as a person or a river: add it to `words` in `samples/cspell.json`.
 - `pnpm run lint` leaves no errors.
 
-## 7. Try it with cspell
-
-From the dictionary's directory, link the dictionary into your global cspell config:
-
-```sh
-pnpm exec cspell link add ./cspell-ext.json
-```
-
-Check some files with it:
-
-```sh
-pnpm exec cspell check <path/to/file> --locale=<locale> --language-id=<file type>
-```
-
-`check` shows the whole file, with ignored text in gray and issues in red. Use VS Code instead if you prefer: the link
-applies there too.
-
-Unlink when you are done:
-
-```sh
-pnpm exec cspell link remove ./cspell-ext.json
-```
-
-## 8. Open a PR
+## 7. Open a PR
 
 - Leave `private: true` and "-- Private until verified" in `package.json`. A maintainer will review the dictionary and
   take care of the publication process. That often takes more PRs, for samples or build changes.
