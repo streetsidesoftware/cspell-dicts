@@ -133,7 +133,7 @@ export function parseCommandLine(argv: string[]): CommandLine {
         )
         .option(
             '--define-source <[name=]path>',
-            'a third-party source: a folder copied into src/<name>/; repeatable',
+            'a third-party source: a folder; --add-source-* names the files to copy into src/<name>/; repeatable',
             (value: string, previous: string[] = []) => [...previous, value],
         )
         .option(
