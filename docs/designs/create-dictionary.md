@@ -149,6 +149,8 @@ sources:
 - **A local source records its URL,** not where it was copied from on a contributor's machine. That path means nothing
   to anyone else.
 - **It isn't published.** Its readers are the repo's tools. Users see the sources in the README.
+- **It has no schema.** Tools report a clear error when something they need is missing. A schema could be added later if
+  it becomes useful.
 
 ### One place to add a word, one to remove it
 
