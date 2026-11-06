@@ -95,22 +95,18 @@ and shared word lists. So sources can be positional, repeated `--source`, or bot
 be positional or `--name`. People and the docs use the positional form, and the option form reads better in scripts.
 
 A source that doesn't exist, or giving no source at all, is an error. `--placeholder-word-lists` starts an empty word
-list instead, since a dictionary's own list may not exist yet. It never covers a Hunspell or third-party file: someone
-else made those, so a missing one is a mistake.
-
-Turned down:
-
-- **One form only:** breaks the habit of either people or scripts.
-- **A comma-separated list:** breaks on file names with commas, and no other option works that way.
-- **Word lists or one Hunspell pair, not both:** simpler, but rules out dictionaries like `en_AU`.
-- **Creating an empty word list unasked:** an agent that forgets its source gets an empty dictionary and a successful
-  exit. A reviewer flagged that trap in [#5841](https://github.com/streetsidesoftware/cspell-dicts/pull/5841).
+list instead, since a dictionary's own list may not exist yet. It has to be asked for: an agent that forgets its
+source would otherwise get an empty dictionary and a successful exit, a trap a reviewer flagged in
+[#5841](https://github.com/streetsidesoftware/cspell-dicts/pull/5841). It never covers a Hunspell or third-party file:
+someone else made those, so a missing one is a mistake.
 
 ### Third-party sources, one folder each
 
 A third-party source is a set of files someone else maintains. To keep a copy we need its name, its files, and, where
 it has them, its license, README, and URL. Each is defined with `--define-source` and the `--add-source-*` options, and
-copied into `src/<name>/`, with only the files named for it.
+copied into `src/<name>/`, with only the files named for it. An early version walked a source's folder and asked about
+each file. That asked which file is which rather than what the source needs, and recorded nothing about where it came
+from.
 
 - **Why a folder per source.** Existing dictionaries kept Hunspell files in `src/hunspell/` (32), directly in `src/`
   (15), or in a folder named after the source (about 13). Only the last fits several sources. Upstream sources also
@@ -130,13 +126,6 @@ copied into `src/<name>/`, with only the files named for it.
 
 The cost is long commands for natural language dictionaries. Agents write them, and people can use the prompts.
 
-Turned down:
-
-- **Walking a source's folder and asking about each file:** asks which file is which rather than what the source needs,
-  and records nothing about where it came from. An early version did this.
-- **A generated README in each source's folder:** collides with the source's own README, repeats the record of sources,
-  and can drift from it.
-
 ### One record of every source: `src/sources.yaml`
 
 The tool, the sync, and the READMEs all need the same facts about a source. Before this, the only record was a sync
@@ -153,35 +142,24 @@ sources:
     readme: readme.md
 ```
 
-- **People edit it, and no tool rewrites it.**
-- **It names exact files.** The build names exact files too, so a renamed upstream file needs a person either way.
+- **People edit it, and no tool rewrites it.** It's YAML, which can hold the comment that says what the file is.
+- **It names exact files.** The build names exact files too, so a renamed upstream file needs a person either way. A
+  pattern could pull very large files, or files nobody reviewed, into the repo through a bot PR that's merged on trust.
 - **A local source records its URL,** not where it was copied from on a contributor's machine. That path means nothing
   to anyone else.
 - **It isn't published.** Its readers are the repo's tools. Users see the sources in the README.
 
-Turned down:
-
-- **Keeping the scripts:** see above.
-- **A field in `package.json`:** npm doesn't know it, it can't hold comments, and a reader can't tell what it is.
-- **JSON or JSON5:** JSON can't hold the comment that says what the file is, and `json5` drops comments when it writes
-  a file back.
-- **Globs or folders in `files:`,** so renamed and new upstream files arrive on their own: a pattern can pull very large
-  files, or files nobody reviewed, into the repo through a bot PR that's merged on trust.
-
 ### One place to add a word, one to remove it
 
 Every new dictionary gets `src/additional_words.txt` and `src/exclude_words.txt`. A dictionary that must hold only
-upstream words leaves one out with `--no-additional-words` or `--no-exclude-words`.
+upstream words leaves one out with `--no-additional-words` or `--no-exclude-words`. They go in every dictionary, since
+one that starts with a single source tends to gain more, and the guide's instruction shouldn't depend on the
+dictionary.
 
 Two fixes come up in almost every dictionary with more than one source. A later visitor can't easily tell which source a
 missing word belongs in, so a catch-all gives them one obvious place: 50 dictionaries had added that file by hand, and 8
 more used other names. Excluding is the only lasting way to remove an upstream word, since the next sync undoes an edit
 to the copy: 10 dictionaries did that, under three names. So the guide couldn't give one instruction.
-
-Turned down:
-
-- **Creating the files only for dictionaries with several sources or a third-party source:** a dictionary that starts
-  with one source tends to gain more, and the guide's instruction would depend on the dictionary.
 
 ### Names and descriptions
 
@@ -194,14 +172,6 @@ The old defaults had to be corrected in every new dictionary, so:
   default, such as "Australian English dictionary". For anything else, an agent has to write one.
 - **`--package-description` is separate.** npm's description keeps "for cspell", because there it tells someone
   searching npm what the package is for.
-
-Turned down:
-
-- **A better generated description:** still generic, and repeated everywhere.
-- **Leaving it to reviewers:** that's the hand fixing this design removes.
-- **Refusing "for cspell" in `--description`:** the phrase only reached it because one description used to serve both
-  places. With them separate, it only gets there if someone types it. Building this showed the check guarded against
-  nothing likely.
 
 ### Enabled for a locale or a file type
 
@@ -217,14 +187,6 @@ such as `golang` for Go. Both are repeatable and optional. Contributors use npm'
 that lists them does. The prompt suggests the Git name without the email, because an email is often personal and
 `package.json` is published.
 
-Turned down:
-
-- **Listing upstream authors:** they're credited through their sources' licenses and READMEs.
-- **Separate name, email, and URL options:** awkward for more than one person.
-- **A single `--keywords "a,b"`:** no other option takes a list that way.
-- **Adding keywords by hand afterwards:** contributors know the search terms while running the tool, and the edit was
-  easy to forget.
-
 ### How a new dictionary is built
 
 The contributor shouldn't need to know the build, and creating a dictionary should never hang.
@@ -233,7 +195,8 @@ The contributor shouldn't need to know the build, and creating a dictionary shou
   override it.
 - **Build at creation** when all sources are word lists, which take seconds. With a Hunspell source it doesn't build,
   and says how to. A Hunspell dictionary's tests fail until its first build, the one exception to passing CI from one
-  run. `--build` and `--no-build` override it.
+  run. An early version built every dictionary, before the measurements below: a `hu_HU`-sized one waits over 15
+  minutes or runs out of memory. `--build` and `--no-build` override it.
 - **Depth** limits how many affix rules are chained onto a Hunspell word. It's set only on Hunspell sources, at 1,
   since it means nothing on a word list. `--hunspell-depth` changes it.
 
@@ -246,15 +209,6 @@ The effect of depth can't be predicted, which is why the default is low:
 
 The cost is that a natural language dictionary may miss forms that need two chained rules until a maintainer raises the
 depth.
-
-Turned down:
-
-- **Leaving the trie to the contributor:** they'd have to know to ask for it.
-- **Deciding by rule with no override.**
-- **Building every dictionary:** a `hu_HU`-sized one waits over 15 minutes or runs out of memory. An early version did
-  this, before these measurements.
-- **Building with a time limit:** guesswork across machines.
-- **Leaving the depth unset:** the build's default of 5 is far too slow for some languages.
 
 ### Samples test a new dictionary
 
@@ -274,42 +228,17 @@ written are covered. Real examples can, and 86 of 136 dictionaries already had t
 - **A GitHub source is named by its repository and path,** linked at its commit. The raw URL, commit SHA and all, made
   the table in `samples/README.md` unusable.
 
-Turned down:
-
-- **Requiring real samples:** works against easy to create. **Not mentioning them:** the gap goes unnoticed.
-- **Recording samples in `src/sources.yaml`:** samples don't sync, so most of that machinery doesn't apply.
-- **Only suggesting the Wikipedia article:** a contributor has to copy it from the browser, and a link built from
-  "Seattle" is wrong where the title is in another script, such as Hebrew.
-- **Reading words back from `dict/`:** tests the build with its own output.
-- **A GitHub link without the commit:** it looks like a URL, but returns 404.
-- **Linking the Wikipedia sample to the version it was copied from:** the article's link keeps working, its history is
-  a click away, and samples are never compared with their source.
-- **Explaining the samples in the README:** it described a file most dictionaries don't have, and each sample says what
-  it is in its own row.
-
 ### Sources in the README
 
 Users need to see where a dictionary's words came from and under which licenses. `static/sources.csv` is generated from
 `src/sources.yaml`, and both the README and `src/README.md` inject it as a table. The License section says the sources
 keep their own licenses.
 
-Turned down:
-
-- **Writing the list into `src/README.md` by hand:** it drifts.
-- **Generating the table as Markdown:** the tool would escape and align it itself. As data, inject-markdown, which
-  fills the README's `@@inject` sections, makes the table, the same way as `samples/sample-sources.csv`.
-- **A list, one entry per source:** harder to compare at a glance.
-
 ### Options for tests are hidden
 
 `--root` and `--skip-install` let the tests create dictionaries in a temporary folder without changing
 `pnpm-lock.yaml`. They stay, so the tests call the command the way a user does, but they're hidden from `--help`, which
 shows only what someone creating a dictionary needs.
-
-Turned down:
-
-- **Listing them with the other options:** they clutter `--help`.
-- **Environment variables:** they hide behavior where it's hard to find.
 
 ### Remote sources follow their latest
 
@@ -318,50 +247,33 @@ which slow every install, and on pins that go stale: `en-common-misspellings` sa
 reached `v1.50.3`.
 
 - **GitHub,** whenever an upstream has a repository. A source is rooted at the folder that holds the dictionary, and
-  follows the default branch. `--add-source-ref` points it at another branch, a tag, or a commit.
-- **npm,** when there's no usable repository. Files are read from jsDelivr, with no dependency and no tarball. It
-  follows the `latest` tag, and `--add-source-version` sets another version or tag.
+  follows the default branch. Of 9 GitHub repositories synced, 5 have no releases, and releases don't always track the
+  words. `--add-source-ref` points it at another branch, a tag, or a commit.
+- **npm,** when there's no usable repository. Files are read from jsDelivr, with no dependency and no tarball. jsDelivr
+  has several CDN providers behind it and a documented API for listing a package's files, and many dictionary READMEs
+  already use it. A source follows the `latest` tag, and `--add-source-version` sets another version or tag.
 - **Anything else** is downloaded by hand and defined as a local source, with `--add-source-url` saying where it came
   from. Download pages are mostly behind older dictionaries, and most living upstreams are on GitHub.
 
 Following a branch doesn't let changes in without review: every source has a local copy, and changes arrive in a PR. A
 repository that commits broken files shows up in the weekly PR, and then gets pinned.
 
-Turned down:
-
-- **A kind that downloads and unpacks archives:** each site's differs. **A GitLab kind:** could be added later.
-- **`dictionary-*` devDependencies,** or always using a published npm package as the release: it doesn't always track
-  the words.
-- **unpkg instead of jsDelivr:** unpkg has had outages, and supporting both means two APIs. jsDelivr has several CDN
-  providers behind it, a documented API for listing a package's files, and many dictionary READMEs already use it.
-- **Following the latest release:** of 9 GitHub repositories synced, 5 have no releases, and releases don't always track
-  the words. **Pinning a commit, a version, or a range:** needs bumping by hand.
-
 ### How the sync handles upstream change
 
 The weekly sync should bring upstream changes in on its own, and report anything a maintainer must act on, once. One
 sync command reads `src/sources.yaml`, so a dictionary has one `sync` script.
 
-- **Stored identifiers.** A state file in each source's folder holds what the upstream returned for each file. They're
-  opaque: the sync compares what the upstream gave last time with what it gives now, and never calculates them. A file
-  is fetched when its identifier changed or it's missing locally.
+- **Stored identifiers.** A state file in each source's folder holds what the upstream returned for each file. It goes
+  when the folder goes, and syncs never rewrite the file people edit. The identifiers are opaque: the sync compares what
+  the upstream gave last time with what it gives now, and never calculates them, so it doesn't depend on how the
+  upstream calculates them. A file is fetched when its identifier changed or it's missing locally.
 - **Gone upstream.** Files are renamed and removed as a normal part of a project's life, and the sync can't tell the two
-  apart. It keeps the local copy, and marks it gone with the date it was first missed. That shows once in the weekly PR,
-  and in the README. If the file comes back, the mark is cleared.
+  apart. It keeps the local copy, because deleting it would lose words on the next build. It marks the file gone with
+  the date it was first missed. That shows once in the weekly PR, and in the README. If the file comes back, the mark
+  is cleared. Failing the sync instead would repeat the same error every week, and hold back every other dictionary.
 - **Size cap.** A file over 30 MB keeps its old copy and is noted once, the same way. The largest committed source was
   about 21 MB, and GitHub warns at 50 MB. `max-size` on a source raises the cap, such as `40MB`, where 1 MB is 1,048,576
   bytes. A number with no unit is an error, so `40` is never read as bytes.
-
-Turned down:
-
-- **State at the dictionary's root:** keeps stale entries when a folder is deleted or renamed.
-- **State in `src/sources.yaml`:** every sync rewrites a file people edit, and the identifiers bury the definitions.
-- **Hashing local files instead of storing state:** depends on the upstream never changing how it calculates them.
-- **Failing the sync when a file is gone:** the same error every week, holding back every other dictionary.
-- **Only a warning in the log:** nobody reads it.
-- **Deleting the local copy:** the next build loses words.
-- **A growth check on file size,** such as more than double the last size.
-- **No size limit,** relying on the PR's diff stats.
 
 ### When sources are fetched
 
@@ -369,19 +281,12 @@ Creating a dictionary should succeed with every source or leave nothing behind, 
 back another dictionary's update.
 
 - **At creation, every remote source is fetched before anything is written.** If one fails, creation stops, and the
-  error names the source and the cause. A rerun after fixing it just works.
+  error names the source and the cause. A rerun after fixing it just works. It needs a GitHub token: the public API's
+  limit of 60 requests an hour fails confusingly on larger repositories.
 - **Afterwards, weekly.** The Update Dictionaries workflow syncs a new dictionary every Sunday, so upstream changes
   arrive together in one PR. `pnpm run sync` works by hand at any time.
 - **One failure doesn't hold back the rest.** Update Dictionaries opens the PR with whatever synced, then marks the run
   failed, naming the dictionaries that failed. They catch up the next week.
-
-Turned down:
-
-- **Skipping a source that failed at creation,** with a warning that's easy to miss.
-- **GitHub's public API without a token:** limited to 60 requests an hour, which fails confusingly on larger
-  repositories.
-- **Syncing on every push to `main`:** upstream changes arrive at random, mixed with unrelated work.
-- **Stopping every dictionary's update on one failure,** or only warning, so outages go unnoticed.
 
 ## Not built yet
 
