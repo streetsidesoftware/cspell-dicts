@@ -14,8 +14,9 @@ that a maintainer can merge after review.
 
 - Each third-party source gets its own folder, its license beside its copy, and an entry in `src/sources.yaml`.
 - Every new dictionary has one known place to add a word and one to remove it.
-- Every new dictionary has a description of its words, a locale or language-id that enables it, and samples that test
-  it. A language-id refers to the file type, like Python or JavaScript.
+- Every new dictionary has a description of its words and samples that test it. A locale or language-id enables it,
+  when one applies. A language-id refers to the file type, like Python or JavaScript. Otherwise it stays disabled until
+  users add it, or a maintainer decides to enable it for every file.
 - Sources on GitHub or npm are meant to follow upstream through a weekly sync. That part is
   [not built yet](#not-built-yet).
 
@@ -70,7 +71,8 @@ Two facts about dictionaries shape the design:
 
 ## Design
 
-A contributor gives everything at creation, as options or in the prompts. Both produce the same dictionary.
+A contributor gives everything at creation, as options or in the prompts. Both produce the same dictionary, except
+that only an option enables a dictionary for every file. Some outcomes aren't in the prompts [yet](#not-built-yet).
 
 ```sh
 pnpm create-dictionary en_XX \
@@ -154,17 +156,41 @@ The old defaults had to be corrected in every new dictionary.
 - **`--package-description`.** npm's description is separate, and keeps "for cspell". There, it tells someone searching
   npm what the package is for.
 
-### Enabled for a locale or a file type
+### How a dictionary is enabled
 
-A dictionary needs a locale or a language-id. The tool will attempt to derive the locale from the dictionary name if
-neither is given. A natural language dictionary sets the locale, and any other sets the file type.
+A contributor creating a list of product names has no locale or file type to give. They shouldn't have to pick one that
+doesn't fit, or be stopped by an error about a setting they never typed.
 
-- `*` is used to indicate any locale or any file type. It is the default.
-- Both locale and language-id should not be `*` at the same time.
+```sh
+pnpm create-dictionary --yes product-names words.txt --description "Product names"
+```
 
-A dictionary that should be always enabled is a maintainer's design decision.
+This creates the dictionary, disabled, and says so. The repo has three shapes, and the tool can create each:
 
-The tool doesn't create global dictionaries yet.
+| Enabled                 | How                                           | Example              |
+| ----------------------- | --------------------------------------------- | -------------------- |
+| For locales, file types | `--locale`, `--language-id`, or a locale name | `en_AU`, `ruby`      |
+| For every file          | `--enable-for-all-files`                      | `companies`          |
+| When users add it       | `--no-language-settings`, or nothing given    | `google`, `en-slang` |
+
+- **Disabled is the fallback, not an error.** Enabling a dictionary accepts its words, so
+  [it has to be a choice](../design-principles.md#enabling-a-dictionary-is-an-explicit-choice). A locale or file type is
+  that choice, and a locale name counts as giving a locale. With none of them, nothing was chosen, and disabled is the
+  state that accepts nothing. The dictionary still works once a user adds it.
+- **Disabled differs from a missing source, which stays an error.** Only the contributor can supply a source, while a
+  maintainer reviews how a dictionary is enabled in its PR. The cost: an agent that forgets `--language-id` gets a
+  disabled dictionary and a successful exit, so the output says it isn't enabled yet.
+- **A typed `*` that leaves both as `*` is an error.** Leaving the options out is a normal default, but typing `*` asks
+  for any locale or file type, and the other one defaults to `*`. That person asked for every file, so a disabled
+  dictionary would be the opposite. The error names the option for it.
+- **Every file has to be asked for by name.** Its words stop being flagged everywhere, including where they should be.
+  Maintainers often remove it in review, and it's their design decision, so neither the fallback message nor the planned
+  prompts offer it.
+- **Enablement and the locale of the words are separate.** Leaving out the language settings doesn't change what the words
+  are, so `--locale` and `--language-id` are still allowed with it. They set what the samples use.
+- **A locale comes from a name only when the whole name is one.** `en_AU` and `german` are safe. A start such as `it` in
+  `it-terms` can be a coincidence, and a wrong guess would enable the dictionary. A given file type also rules it out, since it says the dictionary isn't
+  for a natural language.
 
 ### Contributors and keywords
 
@@ -254,7 +280,19 @@ back another dictionary's update.
 
 ## Not built yet
 
-Everything above is built, except these parts of the last three sections:
+Everything above is built, except these parts of [How a dictionary is enabled](#how-a-dictionary-is-enabled):
+
+- The prompts. Today they ask only whether a dictionary is for a natural language or for file types. They'll ask for its
+  kind first: natural language, programming or file type, or specialized. A separate question then asks when it's
+  enabled, with answers that depend on the kind: that locale or those file types, or only when a user adds it. A
+  specialized dictionary gets no such question, and stays disabled. They're separate because choosing a natural language
+  shouldn't by itself mean enabling for it.
+- The dictionary locale. `--locale` will also set the dictionary's own locale, normalized, and from a list the most
+  specific one, so `de,de_CH` gives `de-CH`. `--dictionary-locale` will set only that. cspell uses it for suggestions and
+  casing rules, whether or not the dictionary is enabled for that locale. Adding samples later will read it too. Today
+  that step finds a language only in the language settings, so a dictionary without them gets no Wikipedia article.
+
+And these parts of the last three sections:
 
 - Sources defined by GitHub repository or npm package at creation, and fetched before anything is written.
 - The one sync command that reads `src/sources.yaml`, with npm sources through jsDelivr.

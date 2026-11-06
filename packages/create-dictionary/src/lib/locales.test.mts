@@ -6,6 +6,7 @@ import {
     findLocales,
     friendlyNameFromLocale,
     localeFromName,
+    localeFromWholeName,
     localeName,
     localeWarnings,
 } from './locales.mts';
@@ -80,6 +81,19 @@ describe('localeFromName', () => {
     it('leaves other names alone, including three-letter words that are language codes', () => {
         for (const name of ['ruby', 'go', 'ada', 'lua', 'medical-terms', 'lorem-ipsum']) {
             assert.equal(localeFromName(name), undefined, name);
+        }
+    });
+});
+
+describe('localeFromWholeName', () => {
+    it('reads a name that is a locale or a language', () => {
+        assert.equal(localeFromWholeName('en_AU'), 'en-AU');
+        assert.equal(localeFromWholeName('german'), 'de');
+    });
+
+    it('leaves a name alone when the locale is only part of it', () => {
+        for (const name of ['en_GB-legacy', 'it-terms', 'en-slang', 'ruby']) {
+            assert.equal(localeFromWholeName(name), undefined, name);
         }
     });
 });

@@ -49,9 +49,10 @@ Decide everything `pnpm create-dictionary` needs, one decision at a time.
 - **Ask,** using `docs/design-questions.md`: "Why and who", then "Names and IDs", "When it's enabled", "Sources and
   license", "Build", "Testing and samples", and "Release surface".
 - **Ask** these too, since the command needs them:
-  - **Locale or file type:** a natural language sets the locale, such as `en-AU`. Anything else sets the file type,
-    such as `ruby`, a [VS Code language ID](https://code.visualstudio.com/docs/languages/identifiers). Never both
-    `*`.
+  - **Locale or file type:** a natural language sets the locale, such as `en-AU`. A dictionary of a programming language
+    or file type sets the file type, such as `ruby`, a
+    [VS Code language ID](https://code.visualstudio.com/docs/languages/identifiers). Never both `*`: a dictionary with
+    neither stays disabled until users add it, or is enabled for every file if the user asks for that.
   - **Description:** the words it covers, such as "Ruby keywords and standard library names".
   - **Contributors:** who creates and maintains it, as "Name (url)". Optional, and published to npm.
   - **Keywords:** other keywords people search npm for, such as `golang` for Go.
@@ -86,7 +87,9 @@ Turn the design into the dictionary with one command.
 - **Do,** from the design to the options:
   - `--placeholder-word-lists` when there's no word list yet. It starts an empty one.
   - One `--contributor` per person, and one `--keyword` per search term.
-  - `--locale` for a natural language, or `--language-id` for anything else.
+  - `--locale` for a natural language, or `--language-id` for a programming language or file type.
+  - For a dictionary users enable themselves, `--no-language-settings`. For one enabled for every file, only when the
+    design says so, `--enable-for-all-files`.
   - One `--add-sample` per real sample the user has, each with `--add-sample-origin` and `--add-sample-license`.
   - Leave the trie and the build to their defaults. With a Hunspell source, it doesn't build: run `pnpm run build` in
     the dictionary's directory. If that's too slow, lower `maxDepth` in `cspell-tools.config.yaml`, and tell the user.

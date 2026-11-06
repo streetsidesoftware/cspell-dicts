@@ -39,13 +39,15 @@ If an existing dictionary comes close, adding words to it may be the better chan
 - **Directory name:** a short name, such as `ruby` or `en_AU`. The package name is derived from it:
   `@cspell/dict-<name>`, lowercase, with other characters replaced by `-` (`en_AU` becomes `@cspell/dict-en-au`).
 - **Dictionary IDs:** usually the same name. A dictionary package can define more than one.
-- **When it's enabled:** which files cspell uses the dictionary for. Pick one:
+- **When it's enabled:** which files cspell uses the dictionary for, set in `cspell-ext.json`. The command writes this
+  for you. Pick one:
   - **For some locales or file types:** set `locale` and `languageId` in `languageSettings`. A natural language
     dictionary sets the locale, such as `en-AU`, and leaves the file type as `*`. Any other dictionary sets the file
     type, such as `ruby`, and leaves the locale as `*`.
   - **Disabled until users enable it:** for words that are only right in some projects. Users add the dictionary ID to
-    `dictionaries` themselves.
+    `dictionaries` themselves. See [No language settings](#no-language-settings).
   - **Always enabled:** list the dictionary ID in the top-level `dictionaries`, as `@cspell/dict-software-terms` does.
+    A maintainer usually decides this. See [Enabled for every file](#enabled-for-every-file).
 
   Never use a `languageSettings` entry with both `locale` and `languageId` set to `*`. Use the top-level
   `dictionaries` instead, so users find every always-enabled dictionary in the same place when they disable one or
@@ -86,7 +88,8 @@ Each dictionary needs:
 
 - A unique [name](#name)
 - A [description](#description)
-- The natural language it targets ([locale](#locale)), or the programming language ([file type](#file-type))
+- The natural language it targets ([locale](#locale)), or the programming language ([file type](#file-type)), when one
+  of them should enable it
 - At least one [source file](#source-file) or [placeholder](#placeholder-word-lists)
 
 To run it with no questions, add `--yes` and give these as options. Everything else gets a default.
@@ -101,25 +104,27 @@ Run `pnpm create-dictionary --help` to list the options.
 
 Each field is described in [Create-dictionary options](#create-dictionary-options).
 
-| Group               | Field                                             | Option                                                        | Summary                                                                  |
-| ------------------- | ------------------------------------------------- | ------------------------------------------------------------- | ------------------------------------------------------------------------ |
-| Dictionary info     | [name](#name)                                     | `<name>` or `--name`                                          | The directory name, such as `en_AU` or `ruby`.                           |
-|                     | [friendly name](#friendly-name)                   | `--friendly-name`                                             | A readable name, such as `Australian English`.                           |
-|                     | [description](#description)                       | `--description`                                               | The words it covers. Required, unless the name is a language.            |
-|                     | [npm description](#npm-description)               | `--package-description`                                       | The description npm shows.                                               |
-|                     | [keywords](#keywords)                             | `--keyword`                                                   | Other keywords people search npm for, such as `golang`.                  |
-| When it's used      | [locale](#locale)                                 | `--locale`                                                    | The languages it's enabled for, such as `en-AU`.                         |
-|                     | [file type](#file-type)                           | `--language-id`                                               | The file types it's enabled for, such as `ruby`.                         |
-| Words               | [source file](#source-file)                       | `<path/to/source/words>` or `--source`                        | The word lists and Hunspell `.dic` files to build from.                  |
-|                     | [third-party sources](#third-party-sources)       | `--define-source`, `--add-source-*`                           | Sources someone else maintains, each in `src/<name>/`.                   |
-|                     | [placeholder word lists](#placeholder-word-lists) | `--placeholder-word-lists`                                    | Start a missing word list empty.                                         |
-|                     | [word files](#word-files)                         | `--no-additional-words`, `--no-exclude-words`                 | Leave out the files for adding and removing words by hand.               |
-| Samples             | [samples](#samples)                               | `--add-sample`, `--add-sample-origin`, `--add-sample-license` | Real files its tests spell check, where each came from, and its license. |
-| Build settings      | [store as trie](#store-as-trie)                   | `--trie` or `--no-trie`                                       | Store it as a trie, for Hunspell files and large lists.                  |
-|                     | [Hunspell depth](#hunspell-depth)                 | `--hunspell-depth`                                            | How many affix rules to apply to each Hunspell word.                     |
-| Maintainers         | [contributors](#contributors)                     | `--contributor`                                               | The people who create and maintain this dictionary.                      |
-| Running the command | [run build](#run-build)                           | `--build` or `--no-build`                                     | Build it now.                                                            |
-|                     | [no questions](#no-questions)                     | `--yes`                                                       | Use the defaults for anything not given, and never ask.                  |
+| Group               | Field                                             | Option                                                        | Summary                                                                   |
+| ------------------- | ------------------------------------------------- | ------------------------------------------------------------- | ------------------------------------------------------------------------- |
+| Dictionary info     | [name](#name)                                     | `<name>` or `--name`                                          | The directory name, such as `en_AU` or `ruby`.                            |
+|                     | [friendly name](#friendly-name)                   | `--friendly-name`                                             | A readable name, such as `Australian English`.                            |
+|                     | [description](#description)                       | `--description`                                               | The words it covers. Required, unless the name is a language.             |
+|                     | [npm description](#npm-description)               | `--package-description`                                       | The description npm shows.                                                |
+|                     | [keywords](#keywords)                             | `--keyword`                                                   | Other keywords people search npm for, such as `golang`.                   |
+| When it's used      | [locale](#locale)                                 | `--locale`                                                    | The languages it's enabled for, such as `en-AU`.                          |
+|                     | [file type](#file-type)                           | `--language-id`                                               | The file types it's enabled for, such as `ruby`.                          |
+|                     | [every file](#enabled-for-every-file)             | `--enable-for-all-files`                                      | Enable it for every file.                                                 |
+|                     | [no language settings](#no-language-settings)     | `--no-language-settings`                                      | Leave out `languageSettings`, so the locale and file type enable nothing. |
+| Words               | [source file](#source-file)                       | `<path/to/source/words>` or `--source`                        | The word lists and Hunspell `.dic` files to build from.                   |
+|                     | [third-party sources](#third-party-sources)       | `--define-source`, `--add-source-*`                           | Sources someone else maintains, each in `src/<name>/`.                    |
+|                     | [placeholder word lists](#placeholder-word-lists) | `--placeholder-word-lists`                                    | Start a missing word list empty.                                          |
+|                     | [word files](#word-files)                         | `--no-additional-words`, `--no-exclude-words`                 | Leave out the files for adding and removing words by hand.                |
+| Samples             | [samples](#samples)                               | `--add-sample`, `--add-sample-origin`, `--add-sample-license` | Real files its tests spell check, where each came from, and its license.  |
+| Build settings      | [store as trie](#store-as-trie)                   | `--trie` or `--no-trie`                                       | Store it as a trie, for Hunspell files and large lists.                   |
+|                     | [Hunspell depth](#hunspell-depth)                 | `--hunspell-depth`                                            | How many affix rules to apply to each Hunspell word.                      |
+| Maintainers         | [contributors](#contributors)                     | `--contributor`                                               | The people who create and maintain this dictionary.                       |
+| Running the command | [run build](#run-build)                           | `--build` or `--no-build`                                     | Build it now.                                                             |
+|                     | [no questions](#no-questions)                     | `--yes`                                                       | Use the defaults for anything not given, and never ask.                   |
 
 It creates `dictionaries/<name>/` with `version` `0.0.1-alpha.0` and `private: true`, so the dictionary isn't published. A
 maintainer makes it public once the dictionary has been verified.
@@ -206,7 +211,7 @@ Delete `try.config.yaml` when you are done, so it isn't committed.
 
 ### Create-dictionary options
 
-Each option answers one of the questions `pnpm create-dictionary` asks. A question is skipped when its option is given.
+Most options answer one of the questions `pnpm create-dictionary` asks. A question is skipped when its option is given.
 With `--yes`, nothing is asked.
 
 #### Dictionary info
@@ -289,8 +294,9 @@ When the command asks, separate several keywords with commas. One `--keyword` ca
 
 #### When it's used
 
-A natural language dictionary sets the locale, and any other dictionary sets the file type. When neither is given, the
-command first asks which kind this dictionary is, then asks only that one. A name that is a language skips that
+A natural language dictionary sets the locale, and a programming or file-type dictionary sets the file type. A
+specialized one may set neither. When neither is given, the command first asks whether it's for a natural language or
+for file types, then asks only that one. A name that is a language skips that
 question.
 
 ##### Locale
@@ -303,9 +309,10 @@ pnpm create-dictionary en_AU --locale en-AU
 
 Give a language code, with an optional region, such as `en` or `en-AU`. Separate several with commas. Without it, a
 name that stands for a locale gives it: `en_AU` gives `en-AU`, and `german` gives `de`. Any other name gives `*`, which
-matches any language.
+matches any language, and so does giving a file type: `en_IN --language-id erlang` gets no locale. That includes a name that only starts with a locale, such as `en_GB-legacy` or `it-terms`, since
+the start may not mean a language.
 
-When the command asks, such a name brings up a checklist of that language's locales, with the one from the name ticked:
+When the command asks, a name that stands for a locale brings up a checklist of that language's locales, with the one from the name ticked:
 `german` offers `de`, `de-AT`, `de-CH`, and `de-DE`. Tick any others, or pick "Something else" to type them.
 
 Don't know the code? Type the language's name instead, such as "English", in English or in your computer's language.
@@ -314,7 +321,7 @@ English), and you pick one or more. Given as an option, an unknown locale is kep
 
 ##### File type
 
-The file types the dictionary is enabled for. Use it for anything that isn't a natural language.
+The file types the dictionary is enabled for. Use it for a programming language or a kind of file.
 
 ```sh
 pnpm create-dictionary ruby --language-id ruby
@@ -323,7 +330,39 @@ pnpm create-dictionary ruby --language-id ruby
 Give a [VS Code language ID](https://code.visualstudio.com/docs/languages/identifiers), such as `java` or `markdown`.
 Separate several with commas. Without it, the file type is `*`, which matches any file.
 
-The locale and the file type can't both be `*`. That would enable the dictionary for every file in every language.
+A typed `*` that leaves both the locale and the file type as `*` is an error, unless `languageSettings` is left out. To
+enable a dictionary for every file, use [`--enable-for-all-files`](#enabled-for-every-file).
+
+##### Enabled for every file
+
+Enable the dictionary for every file, in every language.
+
+```sh
+pnpm create-dictionary companies companies.txt --enable-for-all-files
+```
+
+It adds the dictionary ID to the top-level `dictionaries`, and includes `--no-language-settings`. Its words are then accepted
+everywhere, including where they should be flagged, so a maintainer may ask you to change this in review.
+
+The locale and the file type can still be given, as in [No language settings](#no-language-settings).
+
+##### No language settings
+
+Leave out the `languageSettings` section, so the dictionary isn't enabled until users add it to their settings.
+
+```sh
+pnpm create-dictionary google google.txt --no-language-settings
+pnpm create-dictionary en_XX-slang slang.txt --no-language-settings --locale en
+```
+
+The locale and the file type, including a locale from the name, still say what the samples are: the language they're
+checked in and fetched from Wikipedia in, and the file type they're checked as. They don't enable the dictionary.
+
+This only holds while creating it. Later, `pnpm exec add-samples` doesn't know the language, so it fetches no Wikipedia
+article for a dictionary without `languageSettings`.
+
+With `--yes`, this is also what happens when the options and the name give no locale or file type. Either way, the
+command says the dictionary isn't enabled yet.
 
 #### Words
 
@@ -546,8 +585,11 @@ Never ask, and use the defaults for anything not given. The short form is `-y`.
 pnpm create-dictionary --yes ruby ruby-words.txt --description "Ruby keywords" --language-id ruby
 ```
 
-Some answers have no default: the name, the description (unless the name is a language), and a source. The locale and the file type can't both be
-left out. Leaving any of these out is an error. To start without a source, add `--placeholder-word-lists`.
+Some answers have no default: the name, the description (unless the name is a language), and a source. Leaving any of
+these out is an error. To start without a source, add `--placeholder-word-lists`.
+
+Without a locale or a file type, the dictionary is created with [no language settings](#no-language-settings), and isn't
+enabled.
 
 ## Dictionary definitions
 

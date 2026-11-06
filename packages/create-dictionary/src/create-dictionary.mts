@@ -5,9 +5,11 @@
 import { relative, resolve } from 'node:path';
 import { fileURLToPath } from 'node:url';
 
-import { getAnswers, type Settings } from './lib/answers.mts';
+import { getAnswers, isDisabled } from './lib/answers.mts';
+import type { Settings } from './lib/answers.mts';
 import { isHunspellFile } from './lib/hunspell.mts';
 import { createPackage } from './lib/create-package.mts';
+import { toPackageName } from './lib/names.mts';
 import { parseCommandLine } from './lib/options.mts';
 import { setUpPackage } from './lib/pnpm.mts';
 import { findRepoRoot, openRepo } from './lib/repo.mts';
@@ -24,7 +26,16 @@ async function main(): Promise<void> {
     const settings = await getAnswers(options, repo, cwd);
     const packageDir = await createPackage(settings, repo);
     setUpPackage(packageDir, repo, { install: !options.skipInstall, build: settings.doBuild });
+    if (isDisabled(settings)) notEnabledYet(settings.name);
     nextSteps(relative(cwd, packageDir) || '.', settings);
+}
+
+/** Says that the dictionary isn't enabled, which the person creating it may not expect. */
+function notEnabledYet(name: string): void {
+    info('\nCreated dictionaries/%s.', name);
+    info("It isn't enabled yet. Users have to add it to their settings by adding:");
+    info("  dictionaries: ['%s']", toPackageName(name));
+    info('If it should be enabled for a language or file type, add languageSettings to cspell-ext.json');
 }
 
 /** What to do now: go to the dictionary, build it if the command didn't, and test it with the samples. */

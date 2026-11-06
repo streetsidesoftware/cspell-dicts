@@ -86,6 +86,8 @@ describe('help', () => {
             '--placeholder-word-lists',
             '--locale',
             '--language-id',
+            '--enable-for-all-files',
+            '--no-language-settings',
             '--description',
             '--package-description',
             '--contributor',
@@ -405,10 +407,21 @@ describe('several sources', () => {
 });
 
 describe('locale and file type', () => {
-    it('are not both "*"', () => {
+    it('are not both given as "*"', () => {
         assertFails(
-            create('--yes', 'everywhere', '--description', 'Test words', '--placeholder-word-lists', '--no-build'),
-            /enables the dictionary for every file/,
+            create(
+                '--yes',
+                'everywhere',
+                '--description',
+                'Test words',
+                '--placeholder-word-lists',
+                '--no-build',
+                '--locale',
+                '*',
+                '--language-id',
+                '*',
+            ),
+            /can't both be "\*"\. To enable the dictionary for every file, give --enable-for-all-files/,
         );
     });
 
@@ -426,6 +439,67 @@ describe('locale and file type', () => {
         );
         assert.equal(result.code, 0, result.stderr);
         assert.match(packageFile('natural', 'cspell-ext.json'), /"locale": "en"/);
+    });
+});
+
+describe('enabling', () => {
+    const args = ['--description', 'Test words', '--placeholder-word-lists', '--no-build'];
+
+    it('enables a dictionary for every file with --enable-for-all-files', () => {
+        const result = create('--yes', 'all-files', ...args, '--enable-for-all-files');
+        assert.equal(result.code, 0, result.stderr);
+        const ext = JSON.parse(packageFile('all-files', 'cspell-ext.json'));
+        assert.deepEqual(ext.dictionaries, ['all-files']);
+        assert.equal(ext.languageSettings, undefined);
+        assert.doesNotMatch(result.stdout, /isn't enabled yet/);
+    });
+
+    it('takes --enable-for-all-files with --no-language-settings', () => {
+        const result = create('--yes', 'all-both', ...args, '--enable-for-all-files', '--no-language-settings');
+        assert.equal(result.code, 0, result.stderr);
+        assert.deepEqual(JSON.parse(packageFile('all-both', 'cspell-ext.json')).dictionaries, ['all-both']);
+    });
+
+    it('leaves out languageSettings with --no-language-settings, and says so', () => {
+        const result = create('--yes', 'en_ZZ-plain', ...args, '--no-language-settings', '--locale', 'de');
+        assert.equal(result.code, 0, result.stderr);
+        const ext = JSON.parse(packageFile('en_ZZ-plain', 'cspell-ext.json'));
+        assert.deepEqual(ext.dictionaries, []);
+        assert.equal(ext.languageSettings, undefined);
+        assert.deepEqual(JSON.parse(packageFile('en_ZZ-plain', 'samples/cspell.json')).dictionaries, ['en-zz-plain']);
+        assert.ok(
+            result.stdout.includes(
+                [
+                    'Created dictionaries/en_ZZ-plain.',
+                    "It isn't enabled yet. Users have to add it to their settings by adding:",
+                    "  dictionaries: ['en-zz-plain']",
+                    'If it should be enabled for a language or file type, add languageSettings to cspell-ext.json',
+                ].join('\n'),
+            ),
+            result.stdout,
+        );
+    });
+
+    it('says nothing about the locale of the name when a file type is given', () => {
+        const result = create('--yes', 'en_IN', ...args, '--language-id', 'erlang');
+        assert.equal(result.code, 0, result.stderr);
+        assert.doesNotMatch(result.stdout, /from the name/);
+        const [settings] = JSON.parse(packageFile('en_IN', 'cspell-ext.json')).languageSettings;
+        assert.equal(settings.locale, '*');
+        assert.equal(settings.languageId, 'erlang');
+    });
+
+    it('warns about an unknown locale without languageSettings', () => {
+        const result = create('--yes', 'unknown-locale', ...args, '--no-language-settings', '--locale', 'english');
+        assert.equal(result.code, 0, result.stderr);
+        assert.match(result.stderr, /warning: locale: "english" isn't a known locale/);
+    });
+
+    it('creates a disabled dictionary when nothing tells what enables it', () => {
+        const result = create('--yes', 'plain-words', ...args);
+        assert.equal(result.code, 0, result.stderr);
+        assert.equal(JSON.parse(packageFile('plain-words', 'cspell-ext.json')).languageSettings, undefined);
+        assert.match(result.stdout, /isn't enabled yet/);
     });
 });
 

@@ -243,6 +243,13 @@ describe('samplesExplanation', () => {
 });
 
 describe('samplesConfig', () => {
+    it('adds a disabled dictionary, which nothing else enables', () => {
+        assert.deepEqual((samplesConfig('*', '*', 'companies') as { dictionaries: string[] }).dictionaries, [
+            'companies',
+        ]);
+        assert.equal('dictionaries' in samplesConfig('*', 'ruby'), false);
+    });
+
     it("checks a natural language's samples in its language", () => {
         assert.deepEqual(samplesConfig('de-CH', '*'), {
             import: ['../cspell-ext.json'],

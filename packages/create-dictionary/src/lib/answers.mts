@@ -12,7 +12,7 @@ import {
     findLocales,
     friendlyNameFromLocale,
     knownLocales,
-    localeFromName,
+    localeFromWholeName,
     localeName,
     localeWarnings,
 } from './locales.mts';
@@ -61,6 +61,8 @@ export type Settings = Omit<Required<Answers>, 'srcFiles'> & {
     hunspellDepth: number;
     additionalWords: boolean;
     excludeWords: boolean;
+    enableForAllFiles: boolean;
+    languageSettings: boolean;
 };
 
 /**
@@ -70,7 +72,11 @@ export async function getAnswers(options: CommandLine, repo: Repo, cwd: string):
     const { answers: given, yes, placeholderWordLists } = options;
     const keys = Object.keys(optionForAnswer) as (keyof Answers)[];
     const missing = keys.filter(
-        (key) => given[key] === undefined && key !== 'useTrie' && !(key === 'srcFiles' && placeholderWordLists),
+        (key) =>
+            given[key] === undefined &&
+            key !== 'useTrie' &&
+            !(key === 'srcFiles' && placeholderWordLists) &&
+            !(!options.languageSettings && (key === 'locale' || key === 'languageId')),
     );
     const noPrompts = yes || !missing.length;
     if (!noPrompts && !process.stdin.isTTY) {
@@ -463,36 +469,51 @@ export async function getAnswers(options: CommandLine, repo: Repo, cwd: string):
     const searchWords = await keywords();
     section(2, "When It's Used");
     // A name such as en_AU or german stands for its locale.
-    const nameLocale = localeFromName(name);
-    if (nameLocale && noPrompts && given.locale === undefined) {
-        info('The locale is %s, from the name. Give %s to change it.', literal(nameLocale), literal('--locale'));
-    }
-    // A natural language sets the locale, and anything else the file type, so only one of them is asked.
+    const nameLocale = localeFromWholeName(name);
     const isSet = (value: string | undefined) => value !== undefined && value.trim() !== '*';
-    let kind: 'language' | 'files' | undefined;
-    if (isSet(given.locale) || (nameLocale && !isSet(given.languageId))) kind = 'language';
-    else if (isSet(given.languageId)) kind = 'files';
-    else if (!noPrompts) {
-        kind = await ask.select({
-            message: 'What is this dictionary for?',
-            choices: [
-                { name: 'A natural language, such as German or Australian English', value: 'language' as const },
-                { name: 'Programming languages or file types, such as Ruby or Markdown', value: 'files' as const },
-            ],
-        });
+    // A file type says it isn't for a natural language, so `en_IN --language-id erlang` gets no locale.
+    const fromName = given.locale === undefined && !isSet(given.languageId) ? nameLocale : undefined;
+    // A typed "*" counts too, so it reaches the check that the two aren't both "*".
+    const languageSettings =
+        options.languageSettings &&
+        (given.locale !== undefined || given.languageId !== undefined || !!fromName || !noPrompts);
+    if (fromName && (noPrompts || !languageSettings)) {
+        info('The locale is %s, from the name. Give %s to change it.', literal(fromName), literal('--locale'));
     }
-    const locale =
-        kind === 'files' ? (given.locale ?? '*') : await askLocale(nameLocale, kind === 'language' && !noPrompts);
-    const anyLocale = locale.trim() === '*';
-    const languageId =
-        kind === 'language' && !anyLocale && given.languageId === undefined
-            ? '*'
-            : await text(
-                  'languageId',
-                  'File types, the programming languages or file types it is for, comma separated, such as "ruby" or "markdown":',
-                  anyLocale && !noPrompts ? undefined : '*',
-                  validateLanguageId(anyLocale),
-              );
+    const { locale, languageId } = languageSettings
+        ? await enabledFor()
+        : { locale: await checkedLocale(given.locale ?? fromName ?? '*'), languageId: given.languageId ?? '*' };
+
+    /** The locale and file type of `languageSettings`. */
+    async function enabledFor(): Promise<{ locale: string; languageId: string }> {
+        // A natural language sets the locale, and anything else the file type, so only one of them is asked.
+        let kind: 'language' | 'files' | undefined;
+        if (isSet(given.locale) || fromName) kind = 'language';
+        else if (isSet(given.languageId) || given.locale !== undefined) kind = 'files';
+        else if (!noPrompts) {
+            kind = await ask.select({
+                message: 'What is this dictionary for?',
+                choices: [
+                    { name: 'A natural language, such as German or Australian English', value: 'language' as const },
+                    { name: 'Programming languages or file types, such as Ruby or Markdown', value: 'files' as const },
+                ],
+            });
+        }
+        const locale =
+            kind === 'files' ? (given.locale ?? '*') : await askLocale(nameLocale, kind === 'language' && !noPrompts);
+        const anyLocale = locale.trim() === '*';
+        const languageId =
+            kind === 'language' && !anyLocale && given.languageId === undefined
+                ? '*'
+                : await text(
+                      'languageId',
+                      'File types, the programming languages or file types it is for, comma separated, such as "ruby" or "markdown":',
+                      anyLocale && !noPrompts ? undefined : '*',
+                      validateLanguageId(anyLocale),
+                  );
+        return { locale, languageId };
+    }
+
     section(3, 'Words');
     const sources = await allSources(name);
     section(4, 'Samples');
@@ -522,11 +543,18 @@ export async function getAnswers(options: CommandLine, repo: Repo, cwd: string):
         hunspellDepth: options.hunspellDepth,
         additionalWords: options.additionalWords,
         excludeWords: options.excludeWords,
+        enableForAllFiles: options.enableForAllFiles,
+        languageSettings,
         locale,
         languageId,
         useTrie,
         doBuild,
     };
+}
+
+/** Nothing enables the dictionary: users add it to their settings. */
+export function isDisabled({ languageSettings, enableForAllFiles }: Settings): boolean {
+    return !languageSettings && !enableForAllFiles;
 }
 
 type TextKey = { [K in keyof Answers]-?: Answers[K] extends string | undefined ? K : never }[keyof Answers];
