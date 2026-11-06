@@ -1,7 +1,7 @@
 import { copyFileSync, mkdirSync, readFileSync, writeFileSync } from 'node:fs';
 import { dirname, extname, join, relative } from 'node:path';
 
-import type { Settings } from './answers.mts';
+import { isDisabled, type Settings } from './answers.mts';
 import { title, toPackageName } from './names.mts';
 import type { Repo } from './repo.mts';
 import { isHunspellFile } from './hunspell.mts';
@@ -54,7 +54,9 @@ export async function createPackage(answers: Settings, repo: Repo): Promise<stri
     for (const file of templateFiles) {
         const template = readFileSync(join(templateDir, file), 'utf8');
         const content = fillTemplate(template, values, extname(file));
-        write(file, file === 'package.json' ? withPeopleAndKeywords(content) : content);
+        if (file === 'package.json') write(file, withPeopleAndKeywords(content));
+        else if (file === 'cspell-ext.json') write(file, withEnabling(content));
+        else write(file, content);
     }
     for (const source of answers.sources) {
         for (const file of source.files) {
@@ -80,10 +82,24 @@ export async function createPackage(answers: Settings, repo: Repo): Promise<stri
         license: "The sources' licenses",
     };
     await saveSamples(packageDir, title(friendlyName), [wordsSample, ...answers.samples], rootDir);
-    write('samples/cspell.json', JSON.stringify(samplesConfig(answers.locale, answers.languageId), null, 4) + '\n');
+    const samplesSettings = samplesConfig(
+        answers.locale,
+        answers.languageId,
+        isDisabled(answers) ? packageName : undefined,
+    );
+    write('samples/cspell.json', JSON.stringify(samplesSettings, null, 4) + '\n');
     write(dstFileName, '# dest');
 
     return packageDir;
+
+    /** The template's cspell-ext.json, which has `languageSettings`, changed to how this dictionary is enabled. */
+    function withEnabling(cspellExt: string): string {
+        if (answers.languageSettings) return cspellExt;
+        const ext = JSON.parse(cspellExt);
+        delete ext.languageSettings;
+        if (answers.enableForAllFiles) ext.dictionaries = [packageName];
+        return JSON.stringify(ext, null, 4) + '\n';
+    }
 
     /** The template's package.json, with the contributors, the extra keywords, and the sources' licenses and READMEs. */
     function withPeopleAndKeywords(packageJson: string): string {

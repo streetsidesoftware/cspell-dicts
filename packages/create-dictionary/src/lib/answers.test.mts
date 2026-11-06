@@ -43,6 +43,8 @@ function options(answers: Answers, more: Partial<CommandLine> = {}): CommandLine
         hunspellDepth: 1,
         additionalWords: true,
         excludeWords: true,
+        enableForAllFiles: false,
+        languageSettings: true,
         skipInstall: true,
         ...more,
     };
@@ -68,6 +70,8 @@ describe('getAnswers', () => {
             sources: [wordList('words.txt', root, false)],
             samples: [],
             hunspellDepth: 1,
+            enableForAllFiles: false,
+            languageSettings: true,
             locale: '*',
             languageId: 'markdown',
             useTrie: false,
@@ -268,8 +272,95 @@ describe('getAnswers', () => {
         assert.equal(settings.packageDescription, 'Ruby words.');
     });
 
-    it('fails when the locale and the file type are both "*"', async () => {
-        await assert.rejects(getAnswers(options({ name: 'ruby', srcFiles: ['words.txt'] }), repo, root), /every file/);
+    it('leaves out languageSettings when nothing tells what enables it', async () => {
+        const settings = await getAnswers(options({ name: 'companies', srcFiles: ['words.txt'] }), repo, root);
+        assert.equal(settings.languageSettings, false);
+        assert.equal(settings.enableForAllFiles, false);
+        assert.equal(settings.locale, '*');
+        assert.equal(settings.languageId, '*');
+    });
+
+    it('leaves out languageSettings when only one of the locale and the file type is given, as "*"', async () => {
+        const settings = await getAnswers(
+            options({ name: 'companies', srcFiles: ['words.txt'], locale: '*' }),
+            repo,
+            root,
+        );
+        assert.equal(settings.languageSettings, false);
+    });
+
+    it('fails when the locale and the file type are both given as "*"', async () => {
+        await assert.rejects(
+            getAnswers(options({ name: 'ruby', srcFiles: ['words.txt'], locale: '*', languageId: '*' }), repo, root),
+            /can't both be "\*"\. To enable the dictionary for every file, give --enable-for-all-files/,
+        );
+    });
+
+    it('takes the locale only from a whole name', async () => {
+        const whole = await getAnswers(options({ name: 'de_CH', srcFiles: ['words.txt'] }), repo, root);
+        assert.equal(whole.locale, 'de-CH');
+        assert.equal(whole.languageSettings, true);
+        for (const name of ['it-terms', 'en_GB-legacy']) {
+            const part = await getAnswers(options({ name, srcFiles: ['words.txt'] }), repo, root);
+            assert.equal(part.locale, '*', name);
+            assert.equal(part.languageSettings, false, name);
+        }
+    });
+
+    it('keeps the locale and the file type without languageSettings, for the samples', async () => {
+        const settings = await getAnswers(
+            options(
+                { name: 'slang', srcFiles: ['words.txt'], locale: 'de', languageId: 'ruby' },
+                { languageSettings: false },
+            ),
+            repo,
+            root,
+        );
+        assert.equal(settings.languageSettings, false);
+        assert.equal(settings.locale, 'de');
+        assert.equal(settings.languageId, 'ruby');
+    });
+
+    it('allows both "*" without languageSettings', async () => {
+        const settings = await getAnswers(
+            options(
+                { name: 'slang', srcFiles: ['words.txt'], locale: '*', languageId: '*' },
+                { languageSettings: false },
+            ),
+            repo,
+            root,
+        );
+        assert.equal(settings.languageSettings, false);
+    });
+
+    it('takes the locale from the name without languageSettings', async () => {
+        const settings = await getAnswers(
+            options({ name: 'en_AU', srcFiles: ['words.txt'] }, { languageSettings: false }),
+            repo,
+            root,
+        );
+        assert.equal(settings.locale, 'en-AU');
+        assert.equal(settings.languageSettings, false);
+    });
+
+    it('does not need the locale or the file type to skip the prompts without languageSettings', async () => {
+        const settings = await getAnswers(
+            options(
+                {
+                    name: 'companies',
+                    friendlyName: 'Companies',
+                    packageDescription: 'Companies.',
+                    keywords: [],
+                    srcFiles: ['words.txt'],
+                    contributors: [],
+                    doBuild: false,
+                },
+                { yes: false, languageSettings: false },
+            ),
+            repo,
+            root,
+        );
+        assert.equal(settings.languageSettings, false);
     });
 
     it('prefixes an invalid value with its option', async () => {

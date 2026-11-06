@@ -127,12 +127,21 @@ function canonical(locale: string): string | undefined {
  * `en_AU`, but nothing for `en_AU-legacy`, where the locale is only part of it.
  */
 export function friendlyNameFromLocale(name: string): string | undefined {
+    const locale = localeFromWholeName(name);
+    return locale && localeName(locale);
+}
+
+/**
+ * The locale of a dictionary whose whole name stands for it: `en_AU` gives `en-AU`, and `german` gives `de`. Undefined
+ * for `en_GB-legacy`, or `it-terms`, whose start only looks like a locale.
+ */
+export function localeFromWholeName(name: string): string | undefined {
     const locale = localeFromName(name);
     if (!locale) return undefined;
     const whole =
         canonical(name.replaceAll('_', '-'))?.toLowerCase() === locale.toLowerCase() ||
         localeName(locale)?.toLowerCase() === name.toLowerCase().replaceAll(/[-_]/g, ' ');
-    return whole ? localeName(locale) : undefined;
+    return whole ? locale : undefined;
 }
 
 /**

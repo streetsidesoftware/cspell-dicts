@@ -365,14 +365,16 @@ export const pronunciation = {
  * `samples/cspell.json`: the samples are checked the way users' files are, so they show when the dictionary is enabled.
  * For a natural language, they're in its language, and in English, for the names and loanwords articles quote, and
  * pronunciations are skipped. The word sample is checked with the dictionary's locale and file type. `words` is for
- * names the samples use.
+ * names the samples use. `disabledDictionary` is the ID of a dictionary that nothing enables, so users add it to their
+ * settings, as this does.
  */
-export function samplesConfig(locale: string, languageId: string): object {
+export function samplesConfig(locale: string, languageId: string, disabledDictionary?: string): object {
     const language = languageOf(locale);
     return {
         import: ['../cspell-ext.json'],
         // These describe the samples, in English; they aren't samples.
         ignorePaths: ['README.md', 'cspell.json', sampleSources],
+        ...(disabledDictionary && { dictionaries: [disabledDictionary] }),
         ...(language && {
             language: language === 'en' ? locale : `${locale},en`,
             patterns: [pronunciation],

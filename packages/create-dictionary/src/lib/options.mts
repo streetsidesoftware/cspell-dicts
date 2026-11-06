@@ -35,6 +35,10 @@ export interface CommandLine {
     additionalWords: boolean;
     /** Create src/exclude_words.txt. */
     excludeWords: boolean;
+    /** Add the dictionary to the top-level `dictionaries`, which implies no `languageSettings`. */
+    enableForAllFiles: boolean;
+    /** Write the `languageSettings` section. */
+    languageSettings: boolean;
     /** The repo to create the dictionary in. */
     root?: string;
     /** Don't run `pnpm install` in the new dictionary. */
@@ -72,6 +76,8 @@ interface Options {
     placeholderWordLists?: boolean;
     additionalWords?: boolean;
     excludeWords?: boolean;
+    enableForAllFiles?: boolean;
+    languageSettings?: boolean;
     defineSource?: string[];
     addSourceFile?: string[];
     addSourceLicense?: string[];
@@ -119,7 +125,15 @@ export function parseCommandLine(argv: string[]): CommandLine {
         )
         .option(
             '--language-id <ids>',
-            'file types, comma separated, such as "ruby", or "*" for any; default: "*". Give this or --locale: both "*" is an error',
+            'file types, comma separated, such as "ruby", or "*" for any; default: "*". Giving both this and --locale as "*" is an error',
+        )
+        .option(
+            '--enable-for-all-files',
+            'enable it for every file, with the top-level "dictionaries"; implies --no-language-settings',
+        )
+        .option(
+            '--no-language-settings',
+            'leave out "languageSettings", so --locale and --language-id only set what the samples use; the default when neither can be determined',
         )
         .optionsGroup('Words:')
         .option(
@@ -257,6 +271,8 @@ export function parseCommandLine(argv: string[]): CommandLine {
         hunspellDepth: opts.hunspellDepth ?? 1,
         additionalWords: opts.additionalWords !== false,
         excludeWords: opts.excludeWords !== false,
+        enableForAllFiles: !!opts.enableForAllFiles,
+        languageSettings: opts.languageSettings !== false && !opts.enableForAllFiles,
         root: opts.root,
         skipInstall: !!opts.skipInstall,
     };

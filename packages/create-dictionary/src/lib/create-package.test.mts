@@ -54,6 +54,8 @@ function settings(name: string, more: Partial<Settings>): Settings {
         doBuild: false,
         hunspellDepth: 1,
         samples: [],
+        enableForAllFiles: false,
+        languageSettings: true,
         ...more,
     };
 }
@@ -63,6 +65,39 @@ function read(dir: string, file: string): string {
 }
 
 describe('createPackage', () => {
+    it('writes languageSettings to enable the dictionary for a locale or file type', async () => {
+        const dir = await createPackage(settings('for-ruby', {}), repo);
+        const ext = JSON.parse(read(dir, 'cspell-ext.json'));
+        assert.deepEqual(ext.dictionaries, []);
+        assert.equal(ext.languageSettings[0].languageId, 'ruby');
+        assert.deepEqual(ext.languageSettings[0].dictionaries, ['for-ruby']);
+        assert.equal(JSON.parse(read(dir, 'samples/cspell.json')).dictionaries, undefined);
+    });
+
+    it('uses the top-level dictionaries to enable the dictionary for every file', async () => {
+        const dir = await createPackage(
+            settings('all_Files', { enableForAllFiles: true, languageSettings: false, languageId: '*' }),
+            repo,
+        );
+        const ext = JSON.parse(read(dir, 'cspell-ext.json'));
+        assert.deepEqual(ext.dictionaries, ['all-files']);
+        assert.equal(ext.languageSettings, undefined);
+        assert.equal(JSON.parse(read(dir, 'samples/cspell.json')).dictionaries, undefined);
+    });
+
+    it("enables a disabled dictionary only in its samples' settings", async () => {
+        const dir = await createPackage(
+            settings('not_Enabled', { languageSettings: false, locale: 'de', languageId: '*' }),
+            repo,
+        );
+        const ext = JSON.parse(read(dir, 'cspell-ext.json'));
+        assert.deepEqual(ext.dictionaries, []);
+        assert.equal(ext.languageSettings, undefined);
+        const samples = JSON.parse(read(dir, 'samples/cspell.json'));
+        assert.deepEqual(samples.dictionaries, ['not-enabled']);
+        assert.equal(samples.language, 'de,en');
+    });
+
     it('copies and lists every source', async () => {
         const dir = await createPackage(
             settings('several', {
