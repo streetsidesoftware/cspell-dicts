@@ -12,8 +12,9 @@ level: knows the repo's dictionaries and conventions
 **tl;dr:** One run of `pnpm create-dictionary` gives someone who doesn't know the repo a dictionary that passes CI, and
 that a maintainer can merge after review. Each third-party source gets its own folder, its license beside its copy, and
 an entry in `src/sources.yaml`. Every new dictionary has one known place to add a word and one to remove it, a
-description of its words, a locale or file type that enables it, and samples that test it. Sources on GitHub or npm are
-meant to follow upstream through a weekly sync. That part is designed, but [not built yet](#not-built-yet).
+description of its words, a locale or language-id that enables it, and samples that test it. A language-id refers to the
+file type, like Python or JavaScript. Sources on GitHub or npm are meant to follow upstream through a weekly sync. That
+part is designed, but [not built yet](#not-built-yet).
 
 The code and [Creating a dictionary](../guides/new-dictionary.md) are the source of truth for how the tool behaves.
 
@@ -178,9 +179,10 @@ The old defaults had to be corrected in every new dictionary, so:
 A dictionary needs a locale or a language-id. The tool will attempt to derive the locale from the dictionary name if
 neither is given. A natural language dictionary sets the locale, and any other sets the file type.
 
-The two can't both be `*`, which means any. The old default enabled every new dictionary for every file in every
-language, so users got its words wherever they spell checked. A dictionary that should be always enabled is a
-maintainer's design decision.
+- `*` is used to indicate any locale or any file type. It is the default.
+- Both locale and language-id should not be `*` at the same time.
+
+A dictionary that should be always enabled is a maintainer's design decision.
 
 ### Contributors and keywords
 
