@@ -36,9 +36,11 @@ See [Check the sources and their license](./guides/new-dictionary.md#3-check-the
 Users write a dictionary's IDs in their configs as soon as it ships. Renaming one breaks those configs, so settle the
 name first.
 
-## A dictionary is enabled only where its words are right
+## Enabling a dictionary is an explicit choice
 
-Enabling a dictionary accepts its words, including where they should be flagged. A dictionary is never enabled for
-every file by accident: an always-enabled one is a decision a maintainer makes.
+Enabling a dictionary accepts its words, including where they should be flagged, so it needs to be an explicit choice.
+
+Using locale and language-id to implicitly enable a dictionary through `languageSettings` is OK, as long as they are not
+both `*`.
 
 See [Decide the design](./guides/new-dictionary.md#2-decide-the-design).

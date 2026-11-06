@@ -47,7 +47,7 @@ Check the sketch against the [design principles](./design-principles.md):
 - **A dictionary doesn't depend on its upstream.** Does anything need the upstream to exist at build time?
 - **Every source can be traced.** Is each source's origin and license written down and published?
 - **Names are public from the first release.** See [Names and IDs](#names-and-ids).
-- **A dictionary is enabled only where its words are right.** Does this accept words that should be flagged elsewhere?
+- **Enabling a dictionary is an explicit choice.** Does this accept words that should be flagged elsewhere?
 
 If the change needs a new principle, agree on it before the decisions that depend on it.
 
