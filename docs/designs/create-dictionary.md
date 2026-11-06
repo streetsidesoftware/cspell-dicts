@@ -197,14 +197,14 @@ that lists them does. The prompt suggests the Git name without the email, becaus
 
 The contributor shouldn't need to know the build, and creating a dictionary should never hang.
 
-- **Trie** when a source is a Hunspell file, or the word lists add up to more than about 1 MB. `--trie` and `--no-trie`
-  override it.
+- **Trie** when a source is a Hunspell file, or the word lists add up to more than about 1 MB. That size is only a
+  starting point. `--trie` and `--no-trie` override it.
 - **Build at creation** when all sources are word lists, which take seconds. With a Hunspell source it doesn't build,
   and says how to. A Hunspell dictionary's tests fail until its first build, the one exception to passing CI from one
   run. An early version built every dictionary, before the measurements below: a `hu_HU`-sized one waits over 15
   minutes or runs out of memory. `--build` and `--no-build` override it.
-- **Depth** limits how many affix rules are chained onto a Hunspell word. It's set only on Hunspell sources, at 1,
-  since it means nothing on a word list. `--hunspell-depth` changes it.
+- **Depth** limits how many affix rules are chained onto a Hunspell word. It's set only on Hunspell sources, since it
+  means nothing on a word list. It's 1 for now, and `--hunspell-depth` changes it.
 
 The effect of depth can't be predicted, which is why the default is low:
 
@@ -260,8 +260,9 @@ reached `v1.50.3`.
 - **npm,** when there's no usable repository. Files are read from jsDelivr, with no dependency and no tarball. jsDelivr
   has several CDN providers behind it and a documented API for listing a package's files, and many dictionary READMEs
   already use it. A source follows the `latest` tag, and `--add-source-version` sets another version or tag.
-- **Anything else** is downloaded by hand and defined as a local source, with `--add-source-url` saying where it came
-  from. Download pages are mostly behind older dictionaries, and most living upstreams are on GitHub.
+- **For now, anything else** is downloaded by hand and defined as a local source, with `--add-source-url` saying where
+  it came from. Download pages are mostly behind older dictionaries, and most living upstreams are on GitHub. Other
+  kinds could be added later.
 
 Following a branch doesn't let changes in without review: every source has a local copy, and changes arrive in a PR. A
 repository that commits broken files shows up in the weekly PR, and then gets pinned.
@@ -279,7 +280,7 @@ sync command reads `src/sources.yaml`, so a dictionary has one `sync` script.
   apart. It keeps the local copy, because deleting it would lose words on the next build. It marks the file gone with
   the date it was first missed. That shows once in the weekly PR, and in the README. If the file comes back, the mark
   is cleared. Failing the sync instead would repeat the same error every week, and hold back every other dictionary.
-- **Size cap.** A file over 30 MB keeps its old copy and is noted once, the same way. The largest committed source was
+- **Size cap.** For now, a file over 30 MB keeps its old copy and is noted once, the same way. The largest committed source was
   about 21 MB, and GitHub warns at 50 MB. `max-size` on a source raises the cap, such as `40MB`, where 1 MB is 1,048,576
   bytes. A number with no unit is an error, so `40` is never read as bytes.
 
@@ -291,8 +292,8 @@ back another dictionary's update.
 - **At creation, every remote source is fetched before anything is written.** If one fails, creation stops, and the
   error names the source and the cause. A rerun after fixing it just works. It needs a GitHub token: the public API's
   limit of 60 requests an hour fails confusingly on larger repositories.
-- **Afterwards, weekly.** The Update Dictionaries workflow syncs a new dictionary every Sunday, so upstream changes
-  arrive together in one PR. `pnpm run sync` works by hand at any time.
+- **Afterwards, weekly for now.** The Update Dictionaries workflow syncs a new dictionary every Sunday, so upstream
+  changes arrive together in one PR. `pnpm run sync` works by hand at any time.
 - **One failure doesn't hold back the rest.** Update Dictionaries opens the PR with whatever synced, then marks the run
   failed, naming the dictionaries that failed. They catch up the next week.
 

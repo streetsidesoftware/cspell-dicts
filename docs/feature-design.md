@@ -73,6 +73,8 @@ reason.>
 - Record what's out of scope only when a reader would otherwise assume the feature covers it.
 - Keep a name only when it's user-visible and part of the decision, such as a dictionary ID, a command-line option, or
   a file a dictionary contains. Internal names tie the design to the code.
+- Say when a choice is only for now, such as "could be added later". Otherwise a later reader takes it as a lasting
+  rule.
 - Define a new term where it's first used. If it's used across the repo, add it to the
   [glossary](./glossary.md) in the same PR.
 - Give the new doc an [audience header](./style.md#audience).
