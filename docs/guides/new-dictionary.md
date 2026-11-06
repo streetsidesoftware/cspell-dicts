@@ -309,7 +309,7 @@ pnpm create-dictionary en_AU --locale en-AU
 
 Give a language code, with an optional region, such as `en` or `en-AU`. Separate several with commas. Without it, a
 name that stands for a locale gives it: `en_AU` gives `en-AU`, and `german` gives `de`. Any other name gives `*`, which
-matches any language. That includes a name that only starts with a locale, such as `en_GB-legacy` or `it-terms`, since
+matches any language, and so does giving a file type: `en_IN --language-id erlang` gets no locale. That includes a name that only starts with a locale, such as `en_GB-legacy` or `it-terms`, since
 the start may not mean a language.
 
 When the command asks, a name that stands for a locale brings up a checklist of that language's locales, with the one from the name ticked:
@@ -330,8 +330,8 @@ pnpm create-dictionary ruby --language-id ruby
 Give a [VS Code language ID](https://code.visualstudio.com/docs/languages/identifiers), such as `java` or `markdown`.
 Separate several with commas. Without it, the file type is `*`, which matches any file.
 
-Typing both the locale and the file type as `*` is an error, unless `languageSettings` is left out. To enable a
-dictionary for every file, use [`--enable-for-all-files`](#enabled-for-every-file).
+A typed `*` that leaves both the locale and the file type as `*` is an error, unless `languageSettings` is left out. To
+enable a dictionary for every file, use [`--enable-for-all-files`](#enabled-for-every-file).
 
 ##### Enabled for every file
 
@@ -361,8 +361,8 @@ checked in and fetched from Wikipedia in, and the file type they're checked as. 
 This only holds while creating it. Later, `pnpm exec add-samples` doesn't know the language, so it fetches no Wikipedia
 article for a dictionary without `languageSettings`.
 
-With `--yes`, this is also what happens when the options and the name give no locale or file type, or only `*` for one
-of them. Either way, the command says the dictionary isn't enabled yet.
+With `--yes`, this is also what happens when the options and the name give no locale or file type. Either way, the
+command says the dictionary isn't enabled yet.
 
 #### Words
 

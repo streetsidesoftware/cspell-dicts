@@ -180,15 +180,17 @@ This creates the dictionary, disabled, and says so. The repo has three shapes, a
 - **Disabled differs from a missing source, which stays an error.** Only the contributor can supply a source, while a
   maintainer reviews how a dictionary is enabled in its PR. The cost: an agent that forgets `--language-id` gets a
   disabled dictionary and a successful exit, so the output says it isn't enabled yet.
-- **Both typed as `*` is an error.** That person asked for every file, so a disabled dictionary would be the opposite.
-  The error names the option for it.
+- **A typed `*` that leaves both as `*` is an error.** Leaving the options out is a normal default, but typing `*` asks
+  for any locale or file type, and the other one defaults to `*`. That person asked for every file, so a disabled
+  dictionary would be the opposite. The error names the option for it.
 - **Every file has to be asked for by name.** Its words stop being flagged everywhere, including where they should be.
   Maintainers often remove it in review, and it's their design decision, so neither the fallback message nor the planned
   prompts offer it.
 - **Enablement and the locale of the words are separate.** Leaving out the language settings doesn't change what the words
   are, so `--locale` and `--language-id` are still allowed with it. They set what the samples use.
 - **A locale comes from a name only when the whole name is one.** `en_AU` and `german` are safe. A start such as `it` in
-  `it-terms` can be a coincidence, and a wrong guess would enable the dictionary.
+  `it-terms` can be a coincidence, and a wrong guess would enable the dictionary. A given file type also rules it out, since it says the dictionary isn't
+  for a natural language.
 
 ### Contributors and keywords
 

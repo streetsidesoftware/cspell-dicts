@@ -471,22 +471,24 @@ export async function getAnswers(options: CommandLine, repo: Repo, cwd: string):
     // A name such as en_AU or german stands for its locale.
     const nameLocale = localeFromWholeName(name);
     const isSet = (value: string | undefined) => value !== undefined && value.trim() !== '*';
-    const fromName = given.locale === undefined && !!nameLocale;
-    const determined = isSet(given.locale) || isSet(given.languageId) || fromName;
-    const bothAny = given.locale?.trim() === '*' && given.languageId?.trim() === '*';
-    const languageSettings = options.languageSettings && (determined || !noPrompts || bothAny);
-    if (nameLocale && (noPrompts || !languageSettings) && given.locale === undefined) {
-        info('The locale is %s, from the name. Give %s to change it.', literal(nameLocale), literal('--locale'));
+    // A file type says it isn't for a natural language, so `en_IN --language-id erlang` gets no locale.
+    const fromName = given.locale === undefined && !isSet(given.languageId) ? nameLocale : undefined;
+    // A typed "*" counts too, so it reaches the check that the two aren't both "*".
+    const languageSettings =
+        options.languageSettings &&
+        (given.locale !== undefined || given.languageId !== undefined || !!fromName || !noPrompts);
+    if (fromName && (noPrompts || !languageSettings)) {
+        info('The locale is %s, from the name. Give %s to change it.', literal(fromName), literal('--locale'));
     }
     const { locale, languageId } = languageSettings
         ? await enabledFor()
-        : { locale: await checkedLocale(given.locale ?? nameLocale ?? '*'), languageId: given.languageId ?? '*' };
+        : { locale: await checkedLocale(given.locale ?? fromName ?? '*'), languageId: given.languageId ?? '*' };
 
     /** The locale and file type of `languageSettings`. */
     async function enabledFor(): Promise<{ locale: string; languageId: string }> {
         // A natural language sets the locale, and anything else the file type, so only one of them is asked.
         let kind: 'language' | 'files' | undefined;
-        if (isSet(given.locale) || (fromName && !isSet(given.languageId))) kind = 'language';
+        if (isSet(given.locale) || fromName) kind = 'language';
         else if (isSet(given.languageId) || given.locale !== undefined) kind = 'files';
         else if (!noPrompts) {
             kind = await ask.select({

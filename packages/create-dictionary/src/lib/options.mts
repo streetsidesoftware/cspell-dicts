@@ -121,12 +121,9 @@ export function parseCommandLine(argv: string[]): CommandLine {
         .optionsGroup("When it's used:")
         .option(
             '--locale <locales>',
-            'locales, comma separated, such as "en,en-AU", or "*" for any; an unknown one, such as "english", gets a warning with suggestions; default: "*"',
+            'locales, comma separated, such as "en,en-AU"; an unknown one, such as "english", gets a warning with suggestions',
         )
-        .option(
-            '--language-id <ids>',
-            'file types, comma separated, such as "ruby", or "*" for any; default: "*". Giving both this and --locale as "*" is an error, unless "languageSettings" is left out',
-        )
+        .option('--language-id <ids>', 'file types, comma separated, such as "ruby"')
         .option(
             '--enable-for-all-files',
             'enable it for every file, with the top-level "dictionaries"; implies --no-language-settings',

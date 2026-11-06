@@ -280,13 +280,42 @@ describe('getAnswers', () => {
         assert.equal(settings.languageId, '*');
     });
 
-    it('leaves out languageSettings when only one of the locale and the file type is given, as "*"', async () => {
+    it('fails when a typed "*" leaves the locale and the file type both "*"', async () => {
+        for (const answers of [
+            { name: 'companies', locale: '*' },
+            { name: 'companies', languageId: '*' },
+            { name: 'en_IN', locale: '*' },
+        ]) {
+            await assert.rejects(
+                getAnswers(options({ srcFiles: ['words.txt'], ...answers }), repo, root),
+                /can't both be "\*"/,
+                JSON.stringify(answers),
+            );
+        }
+    });
+
+    it('keeps the locale from the name when only the file type is typed as "*"', async () => {
         const settings = await getAnswers(
-            options({ name: 'companies', srcFiles: ['words.txt'], locale: '*' }),
+            options({ name: 'en_IN', srcFiles: ['words.txt'], languageId: '*' }),
             repo,
             root,
         );
-        assert.equal(settings.languageSettings, false);
+        assert.equal(settings.languageSettings, true);
+        assert.equal(settings.locale, 'en-IN');
+        assert.equal(settings.languageId, '*');
+    });
+
+    it('takes no locale from the name when a file type is given', async () => {
+        for (const languageSettings of [true, false]) {
+            const settings = await getAnswers(
+                options({ name: 'en_IN', srcFiles: ['words.txt'], languageId: 'erlang' }, { languageSettings }),
+                repo,
+                root,
+            );
+            assert.equal(settings.locale, '*');
+            assert.equal(settings.languageId, 'erlang');
+            assert.equal(settings.languageSettings, languageSettings);
+        }
     });
 
     it('fails when the locale and the file type are both given as "*"', async () => {
@@ -361,12 +390,6 @@ describe('getAnswers', () => {
             root,
         );
         assert.equal(settings.languageSettings, false);
-    });
-
-    it('ignores the locale of the name when --locale is "*"', async () => {
-        const settings = await getAnswers(options({ name: 'en_IN', srcFiles: ['words.txt'], locale: '*' }), repo, root);
-        assert.equal(settings.languageSettings, false);
-        assert.equal(settings.locale, '*');
     });
 
     it('fails for a name that is a locale when both are given as "*"', async () => {

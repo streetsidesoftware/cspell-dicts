@@ -480,6 +480,15 @@ describe('enabling', () => {
         );
     });
 
+    it('says nothing about the locale of the name when a file type is given', () => {
+        const result = create('--yes', 'en_IN', ...args, '--language-id', 'erlang');
+        assert.equal(result.code, 0, result.stderr);
+        assert.doesNotMatch(result.stdout, /from the name/);
+        const [settings] = JSON.parse(packageFile('en_IN', 'cspell-ext.json')).languageSettings;
+        assert.equal(settings.locale, '*');
+        assert.equal(settings.languageId, 'erlang');
+    });
+
     it('warns about an unknown locale without languageSettings', () => {
         const result = create('--yes', 'unknown-locale', ...args, '--no-language-settings', '--locale', 'english');
         assert.equal(result.code, 0, result.stderr);
