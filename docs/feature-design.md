@@ -10,8 +10,8 @@ level: knows the repo's dictionaries and conventions; comfortable with git and P
 > For maintainers and developers thinking a change through before they build it.
 
 A design helps you think a change through before and while you build it. It holds decisions and their reasons: why the
-change is needed, who it affects, what was chosen, and what was turned down. It's for whoever builds the change, for
-the people who review it, and for anyone who later wonders why it's shaped the way it is.
+change is needed, who it affects, and what was chosen. It's for whoever builds the change, for the people who review
+it, and for anyone who later wonders why it's shaped the way it is.
 
 A design doesn't describe how the code behaves. The code, tests, and docs are the source of truth, and most readers
 assume a design is out of date. It isn't a contract either: when building or using a feature shows a better answer,
@@ -61,8 +61,8 @@ stays out of the release notes. See [Commits and pull requests](./commits-and-pu
 ## Design
 
 <The sketch: the shape of the solution in a few lines, with one example of what a user writes (the cspell config or
-the command line) and what comes of it. Then each choice that could change the sketch or is hard to undo, with the
-alternatives turned down and why.>
+the command line) and what comes of it. Then each choice that could change the sketch or is hard to undo, with its
+reason.>
 
 ## Open questions
 
@@ -114,7 +114,9 @@ Finish the design in the same PR. This removes the working notes, not the reason
 
 - Add a `tl;dr` at the top: the choices that matter, in short, plain sentences.
 - Add a line saying that the code and docs are the source of truth.
-- Keep each decision with the alternatives turned down and why.
+- Keep each decision with its reason.
+- Keep an idea that wasn't chosen only when it's a real lesson that would save the next person from repeating it, and
+  write it in the decision's text. A list of rejected ideas reads as a firm ruling, and can stop a later improvement.
 - Cut what only restates the code, such as function names and internal steps.
 - Settle or drop each open question, and remove the section. Open an issue only for a real problem someone would act
   on.
@@ -132,7 +134,8 @@ the doc under `docs/` where it applies.
 Update a design only when the design changes: a decision, or the reason for it. Don't update it because the code
 changed, except to take a finished item off its list of what isn't built yet.
 
-- Rewrite the decision in place, and move the old choice to the alternatives turned down, with what showed it was wrong.
+- Rewrite the decision in place. Say what showed the old choice was wrong, if that would save the next person from
+  repeating it.
 - Delete a part that no longer applies. Git history keeps it.
 
 ## With Claude Code

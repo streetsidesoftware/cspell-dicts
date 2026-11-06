@@ -81,7 +81,7 @@ Decide one thing at a time, in the groups of `docs/design-questions.md` that app
   - A question with only one reasonable answer, once you look at the code, isn't a decision. Note it and move on.
   - A remark made in passing is often a standing rule. Confirm it, then record it where it applies:
     `docs/design-principles.md` or another doc under `docs/`, `CONTRIBUTING.md`, or `CLAUDE.md`.
-  - Update the Design section as each point is settled, with the alternatives turned down. Commit when it's useful.
+  - Update the Design section as each point is settled, with its reason. Commit when it's useful.
 
 ### 6. Stop when the code is the easier answer
 
