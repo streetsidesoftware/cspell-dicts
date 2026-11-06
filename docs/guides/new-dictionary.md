@@ -177,7 +177,25 @@ Checks:
   - A name, such as a person or a river: add it to `words` in `samples/cspell.json`.
 - `pnpm run lint` leaves no errors.
 
-## 7. Open a PR
+## 7. Try it with cspell
+
+From the dictionary's directory, create a config file that imports the dictionary and enables it:
+
+```sh
+pnpm exec cspell init --output try.config.yaml --import ./cspell-ext.json --dictionary <dictionary ID>
+```
+
+Check some files with it:
+
+```sh
+pnpm exec cspell lint --config try.config.yaml --root <folder> --locale=<locale> --language-id=<file type> <file>
+```
+
+Words the dictionary has aren't reported. `<file>` is relative to `<folder>`.
+
+Delete `try.config.yaml` when you are done, so it isn't committed.
+
+## 8. Open a PR
 
 - Leave `private: true` and "-- Private until verified" in `package.json`. A maintainer will review the dictionary and
   take care of the publication process. That often takes more PRs, for samples or build changes.

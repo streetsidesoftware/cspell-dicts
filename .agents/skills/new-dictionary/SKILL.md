@@ -131,7 +131,9 @@ Show that the dictionary builds, passes, and works in cspell.
   pnpm run lint
   ```
 
-- **Check:** after committing, `pnpm run check-dirty` passes: lint left nothing behind.
+- **Check:**
+  - After committing, `pnpm run check-dirty` passes: lint left nothing behind.
+  - In cspell, as in the guide's step 7 (`cspell init`), a sample spell checks cleanly. Show the user the result.
 - **If it fails:** fix what it reports, and run the checks again until they pass. For a word a sample uses that the
   dictionary lacks: add a real word to `src/additional_words.txt` and build again, and a name to `words` in
   `samples/cspell.json`. Ask the user when it's unclear which it is.
