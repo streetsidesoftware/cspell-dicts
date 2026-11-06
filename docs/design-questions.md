@@ -46,7 +46,7 @@ Check the sketch against the [design principles](./design-principles.md):
 
 - **A dictionary doesn't depend on its upstream.** Does anything need the upstream to exist at build time?
 - **Every source can be traced.** Is each source's origin and license written down and published?
-- **Names are public from the first release.** Is any name still provisional?
+- **Names are public from the first release.** See [Names and IDs](#names-and-ids).
 - **A dictionary is enabled only where its words are right.** Does this accept words that should be flagged elsewhere?
 
 If the change needs a new principle, agree on it before the decisions that depend on it.
@@ -57,6 +57,8 @@ If the change needs a new principle, agree on it before the decisions that depen
   dictionaries?
 - **Dictionary IDs.** One per dictionary package, or several (`python` and `python-common`)?
 - **Renaming or splitting.** How do existing configs keep working? Is the old ID kept as an alias, and for how long?
+- **Provisional names.** Is any name still provisional? Each needs a decision, or an issue saying when it must be
+  decided.
 
 ## When it's enabled
 
