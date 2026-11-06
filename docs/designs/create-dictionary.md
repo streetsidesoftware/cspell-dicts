@@ -188,9 +188,9 @@ The effect of depth can't be predicted, which is why the default is low:
 - `he`: even depth 1 is too much, so it uses 0.
 
 The cost is that a natural language dictionary may miss forms that need two chained rules until a maintainer raises the
-depth. Depth 3 matches
-[Hunspell's own limit](https://github.com/hunspell/hunspell/blob/7d725f1929a4189a3b8188649af6a6b3e302f469/man/hunspell.5#L985-L988),
-so going higher adds nothing Hunspell itself would accept.
+depth. We read
+[Hunspell's manual](https://github.com/hunspell/hunspell/blob/7d725f1929a4189a3b8188649af6a6b3e302f469/man/hunspell.5#L985-L988)
+as a limit of three chained rules, so depth 3 is the likely upper bound.
 
 ### Samples test a new dictionary
 
