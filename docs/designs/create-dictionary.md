@@ -175,10 +175,12 @@ The old defaults had to be corrected in every new dictionary, so:
 
 ### Enabled for a locale or a file type
 
-A dictionary sets `--locale` or `--language-id`, so they're never both `*`, which means any. A natural language
-dictionary sets the locale, and any other sets the file type. The old default enabled every new dictionary for every
-file in every language, so users got its words wherever they spell checked. A dictionary that should be always enabled
-is a maintainer's design decision.
+A dictionary needs a locale or a language-id. The tool will attempt to derive the locale from the dictionary name if
+neither is given. A natural language dictionary sets the locale, and any other sets the file type.
+
+The two can't both be `*`, which means any. The old default enabled every new dictionary for every file in every
+language, so users got its words wherever they spell checked. A dictionary that should be always enabled is a
+maintainer's design decision.
 
 ### Contributors and keywords
 
