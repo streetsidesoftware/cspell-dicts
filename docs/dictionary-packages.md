@@ -148,11 +148,25 @@ list in its `cspell-ext.json` from its `dependencies`.
 
 ## Tests
 
-`pnpm test` in the package runs its `test` script:
+Run the tests in the dictionary's directory:
 
-- **`test:samples`:** spell checks `samples/` with the dictionary. This is the test that matters: it shows that the
-  dictionary is enabled for its file types and that real files pass.
-- **`test:words`:** spell checks the start of the source. It's a stand-in while there are no samples yet.
+```sh
+cd dictionaries/<name>
+pnpm test
+```
+
+This runs the `test` script in `package.json`. In a new dictionary, that script is `cspell samples`, which spell checks
+the files in `samples/`. A word cspell doesn't know fails the test.
+[Build and test](./guides/new-dictionary.md#6-build-and-test) says what to do with each word it reports.
+
+`samples/` holds two kinds of file:
+
+- **Real files:** files of the kind the dictionary is for, such as a `.f90` file for Fortran. cspell treats each one as
+  it would a user's file, and works out its file type from its name. This is the test that matters: it shows that the
+  dictionary is enabled for its locales and file types, and that real files pass.
+- **`sample-words-in-dictionary.txt`:** a few dozen words from across the sources, checked with the locale and file type
+  the dictionary is enabled for. It's written once, when the dictionary is created, so the test has something to check
+  before anyone adds real files.
 
 ## Older dictionaries
 
@@ -163,6 +177,10 @@ Many dictionaries predate this layout:
 - They hold a copy of upstream Hunspell files in `src/hunspell/` without a `sync` script.
 - They read another dictionary's files by a relative path, such as `allowedSplitWords: ../en_US/en_US.trie`.
 - They have no exclude file, or name it `src/exclude-words.txt` or `src/exclude-terms.txt`.
+- Their `test` script has a command of its own, or runs other scripts with names such as `test:samples`, `test-dict`,
+  or `test:words`. `pnpm test` still runs them all.
+- Their tests spell check the start of a source, instead of samples or as well as them. That shows the dictionary accepts
+  its own words, but not that real files pass.
 
 When you work on one of them, moving it to the current layout is welcome, in a separate PR.
 
