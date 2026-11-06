@@ -44,8 +44,8 @@ checkout.
 
 Decide everything `pnpm create-dictionary` needs, one decision at a time.
 
-- **Ask** the way `feature-design` step 5 does: one question at a time, lettered options showing the cspell config a user
-  would write, facts checked first, and the user free to defer.
+- **Ask** the way `feature-design` step 5 does: one question at a time, lettered options showing the cspell config a
+  user would write, facts checked first, and the user free to defer.
 - **Ask,** using `docs/design-questions.md`: "Why and who", then "Names and IDs", "When it's enabled", "Sources and
   license", "Build", "Testing and samples", and "Release surface".
 - **Ask** these too, since the command needs them:
