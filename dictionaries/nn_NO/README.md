@@ -96,7 +96,7 @@ Add the following to your VSCode settings:
 
 ```jsonc
 {
-  "cSpell.import": ["https://cdn.jsdelivr.net/npm/@cspell/dict-nn-no@0/cspell-ext.json"],
+  "cSpell.import": ["https://cdn.jsdelivr.net/npm/@cspell/dict-nn-no@1/cspell-ext.json"],
   "cSpell.language": "nn, nn-NO",
 }
 ```
@@ -110,7 +110,7 @@ Add the following to your VSCode settings:
 
 ```jsonc
 {
-  "import": ["https://cdn.jsdelivr.net/npm/@cspell/dict-nn-no@0/cspell-ext.json"],
+  "import": ["https://cdn.jsdelivr.net/npm/@cspell/dict-nn-no@1/cspell-ext.json"],
   "language": "nn, nn-NO",
 }
 ```
@@ -124,7 +124,7 @@ Add the following to your VSCode settings:
 
 ```yaml
 import:
-  - https://cdn.jsdelivr.net/npm/@cspell/dict-nn-no@0/cspell-ext.json
+  - https://cdn.jsdelivr.net/npm/@cspell/dict-nn-no@1/cspell-ext.json
 language: nn, nn-NO
 ```
 
