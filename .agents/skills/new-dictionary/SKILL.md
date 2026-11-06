@@ -1,14 +1,14 @@
 ---
 name: new-dictionary
-description: 'Designs and builds a new cspell-dicts dictionary, from interview to one pull request: why and for whom, its name and dictionary IDs, which file types and locales it is enabled for, its sources and their licenses, and how it is built, then the dictionary itself, created with pnpm create-dictionary, with samples and passing checks. Use when the user wants a dictionary for a new programming language, tool, natural language, or field, or asks to "create a dictionary for X". For words in an existing dictionary, use word-change. For splitting or renaming existing dictionaries, use feature-adr.'
+description: 'Designs and builds a new cspell-dicts dictionary, from interview to one pull request: why and for whom, its name and dictionary IDs, which file types and locales it is enabled for, its sources and their licenses, and how it is built, then the dictionary itself, created with pnpm create-dictionary, with samples and passing checks. Use when the user wants a dictionary for a new programming language, tool, natural language, or field, or asks to "create a dictionary for X". For words in an existing dictionary, use word-change. For splitting or renaming existing dictionaries, use feature-design.'
 ---
 
 # new-dictionary
 
 Takes a new dictionary from idea to one pull request: the design first, while it's cheap to change, then the dictionary
 built from it. Its name, dictionary IDs, and the file types and locales it's enabled for end up in users' configs from
-its first release. Read `docs/guides/new-dictionary.md` and `.agents/skills/feature-adr/SKILL.md` first: this skill
-uses the guide for the build and `feature-adr`'s interview for the design.
+its first release. Read `docs/guides/new-dictionary.md` and `.agents/skills/feature-design/SKILL.md` first: this skill
+uses the guide for the build and `feature-design`'s interview for the design.
 
 ## Workflow
 
@@ -44,10 +44,10 @@ checkout.
 
 Decide everything `pnpm create-dictionary` needs, one decision at a time.
 
-- **Ask** the way `feature-adr` step 5 does: one question at a time, lettered options showing the cspell config a user
-  would write, facts checked first, and the user free to defer.
-- **Ask,** using `feature-adr`'s `references/interview-guide.md`: group 0 (why, stakeholders, goal), then groups 2 to
-  7 (names and IDs, when it's enabled, sources and license, build, samples, release surface).
+- **Ask** the way `feature-design` step 5 does: one question at a time, lettered options showing the cspell config a
+  user would write, facts checked first, and the user free to defer.
+- **Ask,** using `docs/design-questions.md`: "Why and who", then "Names and IDs", "When it's enabled", "Sources and
+  license", "Build", "Testing and samples", and "Release surface".
 - **Ask** these too, since the command needs them:
   - **Locale or file type:** a natural language sets the locale, such as `en-AU`. Anything else sets the file type,
     such as `ruby`, a [VS Code language ID](https://code.visualstudio.com/docs/languages/identifiers). Never both
@@ -59,10 +59,10 @@ Decide everything `pnpm create-dictionary` needs, one decision at a time.
 - **Check** each source's license and what it requires: attribution, keeping the license file, or share-alike.
 - **Stop and ask** if a license is missing, unclear, or would change the dictionary's license. Give the exact source
   and version, its license, why it matters, and the alternatives.
-- **Do:** keep the answers to group 0 and a list of the decisions, one line each, for the PR description.
+- **Do:** keep the answers to "Why and who" and a list of the decisions, one line each, for the PR description.
 - **Stop and ask** if the design goes beyond the guide: a different approach, or scripts beyond
   `pnpm create-dictionary`, the build, and a `sync` script as in `docs/guides/upstream-updates.md`. Suggest settling
-  that design first with `feature-adr`, as its own step, before building the dictionary.
+  that design first with `feature-design`, as its own step, before building the dictionary.
 - **Stop and ask:** wait until the user says the design is final.
 
 ### 4. Create the dictionary
@@ -152,4 +152,4 @@ Hand the user one PR with the design and the dictionary.
 ## Not this skill
 
 - The "new dictionary" turns out to be words for an existing one. Say so, and offer `word-change`.
-- The design changes after merge, or an existing dictionary should be split or renamed. Use `feature-adr`.
+- The design changes after merge, or an existing dictionary should be split or renamed. Use `feature-design`.
