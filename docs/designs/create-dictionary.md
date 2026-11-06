@@ -164,6 +164,8 @@ neither is given. A natural language dictionary sets the locale, and any other s
 
 A dictionary that should be always enabled is a maintainer's design decision.
 
+Dictionaries for every file, such as company names, aren't handled yet and will get their own change.
+
 ### Contributors and keywords
 
 Both are optional and repeatable. The prompt suggests the Git name without the email, because an
