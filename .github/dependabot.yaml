@@ -40,23 +40,8 @@ updates:
 
   # Automatically added by streetsidesoftware/public/update-dependabot-github-actions
   - package-ecosystem: github-actions
-    directory: /.github/actions/setup
-    schedule:
-      interval: daily
-    commit-message:
-      prefix: ci
-
-  # Automatically added by streetsidesoftware/public/update-dependabot-github-actions
-  - package-ecosystem: github-actions
-    directory: /.github/actions/quick-setup
-    schedule:
-      interval: daily
-    commit-message:
-      prefix: ci
-
-  # Automatically added by streetsidesoftware/public/update-dependabot-github-actions
-  - package-ecosystem: github-actions
-    directory: /.github/actions/pr
+    directories:
+      - /.github/actions/*
     schedule:
       interval: daily
     commit-message:
