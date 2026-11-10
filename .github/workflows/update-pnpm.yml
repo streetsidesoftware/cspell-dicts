@@ -1,0 +1,14 @@
+name: ' 🔗 Update PNPM'
+
+on:
+  workflow_dispatch:
+  schedule:
+    - cron: '0 12 * * 1'
+
+permissions:
+  contents: read
+
+jobs:
+  update-pnpm:
+    uses: streetsidesoftware/actions/.github/workflows/update-pnpm.yml@v1
+    secrets: inherit
