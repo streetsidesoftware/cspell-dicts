@@ -180,16 +180,16 @@ importers:
         version: link:packages/create-dictionary
       '@lerna-lite/cli':
         specifier: ^5.7.0
-        version: 5.7.0(@lerna-lite/exec@5.7.0)(@lerna-lite/publish@5.7.0)(@lerna-lite/run@5.7.0)(@lerna-lite/version@5.7.0(@lerna-lite/exec@5.7.0)(@lerna-lite/publish@5.7.0)(@lerna-lite/run@5.7.0)(@types/node@26.6.6)(conventional-commits-filter@6.0.1))(@types/node@26.6.6)
+        version: 5.7.0(@lerna-lite/exec@5.7.0)(@lerna-lite/publish@5.7.0)(@lerna-lite/run@5.7.0)(@lerna-lite/version@5.7.0)(@types/node@26.6.6)
       '@lerna-lite/exec':
         specifier: ^5.7.0
-        version: 5.7.0(@lerna-lite/publish@5.7.0)(@lerna-lite/run@5.7.0)(@lerna-lite/version@5.7.0(@lerna-lite/exec@5.7.0)(@lerna-lite/publish@5.7.0)(@lerna-lite/run@5.7.0)(@types/node@26.6.6)(conventional-commits-filter@6.0.1))(@types/node@26.6.6)
+        version: 5.7.0(@lerna-lite/publish@5.7.0)(@lerna-lite/run@5.7.0)(@lerna-lite/version@5.7.0)(@types/node@26.6.6)
       '@lerna-lite/publish':
         specifier: ^5.7.0
         version: 5.7.0(@lerna-lite/exec@5.7.0)(@lerna-lite/run@5.7.0)(@types/node@26.6.6)(conventional-commits-filter@6.0.1)(supports-color@9.4.0)
       '@lerna-lite/run':
         specifier: ^5.7.0
-        version: 5.7.0(@lerna-lite/exec@5.7.0)(@lerna-lite/publish@5.7.0)(@lerna-lite/version@5.7.0(@lerna-lite/exec@5.7.0)(@lerna-lite/publish@5.7.0)(@lerna-lite/run@5.7.0)(@types/node@26.6.6)(conventional-commits-filter@6.0.1))(@types/node@26.6.6)
+        version: 5.7.0(@lerna-lite/exec@5.7.0)(@lerna-lite/publish@5.7.0)(@lerna-lite/version@5.7.0)(@types/node@26.6.6)
       '@tsconfig/node22':
         specifier: ^22.0.6
         version: 22.0.6
@@ -897,7 +897,7 @@ importers:
         version: 8.7.5(@types/node@26.6.6)
       commander:
         specifier: ^15.0.0
-        version: 15.0.0
+        version: 15.1.0
       cspell-lib:
         specifier: ^10.4.1
         version: 10.4.1
@@ -921,7 +921,7 @@ importers:
         version: 6.0.1
       commander:
         specifier: ^15.0.0
-        version: 15.0.0
+        version: 15.1.0
       cspell-trie-lib:
         specifier: ^10.4.1
         version: 10.4.1(@cspell/cspell-types@10.4.1)
@@ -942,7 +942,7 @@ importers:
         version: 2.1.0(supports-color@9.4.0)
       commander:
         specifier: ^15.0.0
-        version: 15.0.0
+        version: 15.1.0
       cspell-config-lib:
         specifier: ^10.4.1
         version: 10.4.1
@@ -2040,8 +2040,8 @@ packages:
     resolution: {integrity: sha512-xxodCmBen3iy2i0WtAK8FlFNrRzjUqjRsMfho58xT/wvZU1YTM3fCnRjcy1gJPMepaRlgm/0e6w8SpWHpn3/cA==}
     engines: {node: ^12.20.0 || ^14.13.1 || >=16.0.0}
 
-  commander@15.0.0:
-    resolution: {integrity: sha512-z67u4ZhzCL/Tydu1lJARtEZYWbWaN7oYLHbsuzocr6y4N6WZAagG3RQ4FW61V1/0+jImpj293XfrcYnd1qxtPg==}
+  commander@15.1.0:
+    resolution: {integrity: sha512-cgnQ88TRrWcC7pVq46RzJVRMktu3W2RcbnoidnfBsl1bmDCBwJS/udcIZpKoCrbAYYaCqsz1yZCVIgbIaU3ddQ==}
     engines: {node: '>=22.12.0'}
 
   comment-json@5.0.0:
@@ -3818,7 +3818,7 @@ snapshots:
   '@cspell/cspell-tools@10.4.1(@cspell/cspell-types@10.4.1)':
     dependencies:
       '@cspell/cspell-pipe': 10.4.1
-      commander: 15.0.0
+      commander: 15.1.0
       cosmiconfig: 10.0.1
       cspell-trie-lib: 10.4.1(@cspell/cspell-types@10.4.1)
       hunspell-reader: 10.4.1
@@ -4163,7 +4163,7 @@ snapshots:
 
   '@keyv/serialize@1.1.1': {}
 
-  '@lerna-lite/cli@5.7.0(@lerna-lite/exec@5.7.0)(@lerna-lite/publish@5.7.0)(@lerna-lite/run@5.7.0)(@lerna-lite/version@5.7.0(@lerna-lite/exec@5.7.0)(@lerna-lite/publish@5.7.0)(@lerna-lite/run@5.7.0)(@types/node@26.6.6)(conventional-commits-filter@6.0.1))(@types/node@26.6.6)':
+  '@lerna-lite/cli@5.7.0(@lerna-lite/exec@5.7.0)(@lerna-lite/publish@5.7.0)(@lerna-lite/run@5.7.0)(@lerna-lite/version@5.7.0)(@types/node@26.6.6)':
     dependencies:
       '@lerna-lite/core': 5.7.0(@types/node@26.6.6)
       '@lerna-lite/init': 5.7.0(@types/node@26.6.6)
@@ -4172,9 +4172,9 @@ snapshots:
       import-local: 3.2.0
       yargs: 18.2.0
     optionalDependencies:
-      '@lerna-lite/exec': 5.7.0(@lerna-lite/publish@5.7.0)(@lerna-lite/run@5.7.0)(@lerna-lite/version@5.7.0(@lerna-lite/exec@5.7.0)(@lerna-lite/publish@5.7.0)(@lerna-lite/run@5.7.0)(@types/node@26.6.6)(conventional-commits-filter@6.0.1))(@types/node@26.6.6)
+      '@lerna-lite/exec': 5.7.0(@lerna-lite/publish@5.7.0)(@lerna-lite/run@5.7.0)(@lerna-lite/version@5.7.0)(@types/node@26.6.6)
       '@lerna-lite/publish': 5.7.0(@lerna-lite/exec@5.7.0)(@lerna-lite/run@5.7.0)(@types/node@26.6.6)(conventional-commits-filter@6.0.1)(supports-color@9.4.0)
-      '@lerna-lite/run': 5.7.0(@lerna-lite/exec@5.7.0)(@lerna-lite/publish@5.7.0)(@lerna-lite/version@5.7.0(@lerna-lite/exec@5.7.0)(@lerna-lite/publish@5.7.0)(@lerna-lite/run@5.7.0)(@types/node@26.6.6)(conventional-commits-filter@6.0.1))(@types/node@26.6.6)
+      '@lerna-lite/run': 5.7.0(@lerna-lite/exec@5.7.0)(@lerna-lite/publish@5.7.0)(@lerna-lite/version@5.7.0)(@types/node@26.6.6)
       '@lerna-lite/version': 5.7.0(@lerna-lite/exec@5.7.0)(@lerna-lite/publish@5.7.0)(@lerna-lite/run@5.7.0)(@types/node@26.6.6)(conventional-commits-filter@6.0.1)
     transitivePeerDependencies:
       - '@types/node'
@@ -4199,9 +4199,9 @@ snapshots:
     transitivePeerDependencies:
       - '@types/node'
 
-  '@lerna-lite/exec@5.7.0(@lerna-lite/publish@5.7.0)(@lerna-lite/run@5.7.0)(@lerna-lite/version@5.7.0(@lerna-lite/exec@5.7.0)(@lerna-lite/publish@5.7.0)(@lerna-lite/run@5.7.0)(@types/node@26.6.6)(conventional-commits-filter@6.0.1))(@types/node@26.6.6)':
+  '@lerna-lite/exec@5.7.0(@lerna-lite/publish@5.7.0)(@lerna-lite/run@5.7.0)(@lerna-lite/version@5.7.0)(@types/node@26.6.6)':
     dependencies:
-      '@lerna-lite/cli': 5.7.0(@lerna-lite/exec@5.7.0)(@lerna-lite/publish@5.7.0)(@lerna-lite/run@5.7.0)(@lerna-lite/version@5.7.0(@lerna-lite/exec@5.7.0)(@lerna-lite/publish@5.7.0)(@lerna-lite/run@5.7.0)(@types/node@26.6.6)(conventional-commits-filter@6.0.1))(@types/node@26.6.6)
+      '@lerna-lite/cli': 5.7.0(@lerna-lite/exec@5.7.0)(@lerna-lite/publish@5.7.0)(@lerna-lite/run@5.7.0)(@lerna-lite/version@5.7.0)(@types/node@26.6.6)
       '@lerna-lite/core': 5.7.0(@types/node@26.6.6)
       '@lerna-lite/profiler': 5.7.0(@types/node@26.6.6)
       dotenv: 18.0.9
@@ -4234,7 +4234,7 @@ snapshots:
 
   '@lerna-lite/publish@5.7.0(@lerna-lite/exec@5.7.0)(@lerna-lite/run@5.7.0)(@types/node@26.6.6)(conventional-commits-filter@6.0.1)(supports-color@9.4.0)':
     dependencies:
-      '@lerna-lite/cli': 5.7.0(@lerna-lite/exec@5.7.0)(@lerna-lite/publish@5.7.0)(@lerna-lite/run@5.7.0)(@lerna-lite/version@5.7.0(@lerna-lite/exec@5.7.0)(@lerna-lite/publish@5.7.0)(@lerna-lite/run@5.7.0)(@types/node@26.6.6)(conventional-commits-filter@6.0.1))(@types/node@26.6.6)
+      '@lerna-lite/cli': 5.7.0(@lerna-lite/exec@5.7.0)(@lerna-lite/publish@5.7.0)(@lerna-lite/run@5.7.0)(@lerna-lite/version@5.7.0)(@types/node@26.6.6)
       '@lerna-lite/core': 5.7.0(@types/node@26.6.6)
       '@lerna-lite/npmlog': 5.4.1
       '@lerna-lite/version': 5.7.0(@lerna-lite/exec@5.7.0)(@lerna-lite/publish@5.7.0)(@lerna-lite/run@5.7.0)(@types/node@26.6.6)(conventional-commits-filter@6.0.1)
@@ -4259,9 +4259,9 @@ snapshots:
       - conventional-commits-filter
       - supports-color
 
-  '@lerna-lite/run@5.7.0(@lerna-lite/exec@5.7.0)(@lerna-lite/publish@5.7.0)(@lerna-lite/version@5.7.0(@lerna-lite/exec@5.7.0)(@lerna-lite/publish@5.7.0)(@lerna-lite/run@5.7.0)(@types/node@26.6.6)(conventional-commits-filter@6.0.1))(@types/node@26.6.6)':
+  '@lerna-lite/run@5.7.0(@lerna-lite/exec@5.7.0)(@lerna-lite/publish@5.7.0)(@lerna-lite/version@5.7.0)(@types/node@26.6.6)':
     dependencies:
-      '@lerna-lite/cli': 5.7.0(@lerna-lite/exec@5.7.0)(@lerna-lite/publish@5.7.0)(@lerna-lite/run@5.7.0)(@lerna-lite/version@5.7.0(@lerna-lite/exec@5.7.0)(@lerna-lite/publish@5.7.0)(@lerna-lite/run@5.7.0)(@types/node@26.6.6)(conventional-commits-filter@6.0.1))(@types/node@26.6.6)
+      '@lerna-lite/cli': 5.7.0(@lerna-lite/exec@5.7.0)(@lerna-lite/publish@5.7.0)(@lerna-lite/run@5.7.0)(@lerna-lite/version@5.7.0)(@types/node@26.6.6)
       '@lerna-lite/core': 5.7.0(@types/node@26.6.6)
       '@lerna-lite/npmlog': 5.4.1
       '@lerna-lite/profiler': 5.7.0(@types/node@26.6.6)
@@ -4277,7 +4277,7 @@ snapshots:
     dependencies:
       '@conventional-changelog/git-client': 3.2.0(conventional-commits-filter@6.0.1)(conventional-commits-parser@7.1.3)
       '@conventional-changelog/template': 1.4.0
-      '@lerna-lite/cli': 5.7.0(@lerna-lite/exec@5.7.0)(@lerna-lite/publish@5.7.0)(@lerna-lite/run@5.7.0)(@lerna-lite/version@5.7.0(@lerna-lite/exec@5.7.0)(@lerna-lite/publish@5.7.0)(@lerna-lite/run@5.7.0)(@types/node@26.6.6)(conventional-commits-filter@6.0.1))(@types/node@26.6.6)
+      '@lerna-lite/cli': 5.7.0(@lerna-lite/exec@5.7.0)(@lerna-lite/publish@5.7.0)(@lerna-lite/run@5.7.0)(@lerna-lite/version@5.7.0)(@types/node@26.6.6)
       '@lerna-lite/core': 5.7.0(@types/node@26.6.6)
       '@lerna-lite/npmlog': 5.4.1
       '@octokit/plugin-enterprise-rest': 6.0.1
@@ -4944,7 +4944,7 @@ snapshots:
     dependencies:
       convert-to-spaces: 2.0.1
 
-  commander@15.0.0: {}
+  commander@15.1.0: {}
 
   comment-json@5.0.0:
     dependencies:
@@ -5129,7 +5129,7 @@ snapshots:
 
   cspell-trie@10.4.1(@cspell/cspell-types@10.4.1):
     dependencies:
-      commander: 15.0.0
+      commander: 15.1.0
       cspell-trie-lib: 10.4.1(@cspell/cspell-types@10.4.1)
       gensequence: 8.0.8
     transitivePeerDependencies:
@@ -5148,7 +5148,7 @@ snapshots:
       ansi-regex: 6.5.0
       chalk: 6.0.1
       chalk-template: 1.1.3
-      commander: 15.0.0
+      commander: 15.1.0
       cspell-config-lib: 10.4.1
       cspell-dictionary: 10.4.1
       cspell-gitignore: 10.4.1
@@ -5564,7 +5564,7 @@ snapshots:
     dependencies:
       '@cspell/cspell-pipe': 10.4.1
       '@cspell/cspell-types': 10.4.1
-      commander: 15.0.0
+      commander: 15.1.0
       gensequence: 8.0.8
       html-entities: 2.6.0
       iconv-lite: 0.7.3
@@ -5608,7 +5608,7 @@ snapshots:
   inject-markdown@6.3.0(supports-color@9.4.0):
     dependencies:
       chalk: 6.0.1
-      commander: 15.0.0
+      commander: 15.1.0
       remark: 15.0.1(supports-color@9.4.0)
       remark-frontmatter: 5.0.0(supports-color@9.4.0)
       remark-gfm: 4.0.1(supports-color@9.4.0)
