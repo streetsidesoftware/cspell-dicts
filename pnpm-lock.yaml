@@ -10,7 +10,7 @@ importers:
     devDependencies:
       '@cspell/cspell-tools':
         specifier: ^10.4.0
-        version: 10.4.0(@cspell/cspell-types@10.4.0)
+        version: 10.4.1(@cspell/cspell-types@10.4.1)
       '@cspell/dict-cspell-bundle':
         specifier: workspace:*
         version: link:dictionaries/cspell
@@ -22,16 +22,16 @@ importers:
         version: link:packages/create-dictionary
       '@lerna-lite/cli':
         specifier: ^5.7.0
-        version: 5.7.0(@lerna-lite/exec@5.7.0)(@lerna-lite/publish@5.7.0)(@lerna-lite/run@5.7.0)(@lerna-lite/version@5.7.0(@lerna-lite/exec@5.7.0)(@lerna-lite/publish@5.7.0)(@lerna-lite/run@5.7.0)(@types/node@26.6.6)(conventional-commits-filter@6.0.1))(@types/node@26.6.6)
+        version: 5.8.0(@lerna-lite/exec@5.8.0)(@lerna-lite/publish@5.8.0)(@lerna-lite/run@5.8.0)(@lerna-lite/version@5.8.0(@lerna-lite/exec@5.8.0)(@lerna-lite/publish@5.8.0)(@lerna-lite/run@5.8.0)(@types/node@26.6.6)(conventional-commits-filter@6.0.1))(@types/node@26.6.6)
       '@lerna-lite/exec':
         specifier: ^5.7.0
-        version: 5.7.0(@lerna-lite/publish@5.7.0)(@lerna-lite/run@5.7.0)(@lerna-lite/version@5.7.0(@lerna-lite/exec@5.7.0)(@lerna-lite/publish@5.7.0)(@lerna-lite/run@5.7.0)(@types/node@26.6.6)(conventional-commits-filter@6.0.1))(@types/node@26.6.6)
+        version: 5.8.0(@lerna-lite/publish@5.8.0)(@lerna-lite/run@5.8.0)(@lerna-lite/version@5.8.0(@lerna-lite/exec@5.8.0)(@lerna-lite/publish@5.8.0)(@lerna-lite/run@5.8.0)(@types/node@26.6.6)(conventional-commits-filter@6.0.1))(@types/node@26.6.6)
       '@lerna-lite/publish':
         specifier: ^5.7.0
-        version: 5.7.0(@lerna-lite/exec@5.7.0)(@lerna-lite/run@5.7.0)(@types/node@26.6.6)(conventional-commits-filter@6.0.1)(supports-color@9.4.0)
+        version: 5.8.0(@lerna-lite/exec@5.8.0)(@lerna-lite/run@5.8.0)(@types/node@26.6.6)(conventional-commits-filter@6.0.1)(supports-color@9.4.0)
       '@lerna-lite/run':
         specifier: ^5.7.0
-        version: 5.7.0(@lerna-lite/exec@5.7.0)(@lerna-lite/publish@5.7.0)(@lerna-lite/version@5.7.0(@lerna-lite/exec@5.7.0)(@lerna-lite/publish@5.7.0)(@lerna-lite/run@5.7.0)(@types/node@26.6.6)(conventional-commits-filter@6.0.1))(@types/node@26.6.6)
+        version: 5.8.0(@lerna-lite/exec@5.8.0)(@lerna-lite/publish@5.8.0)(@lerna-lite/version@5.8.0(@lerna-lite/exec@5.8.0)(@lerna-lite/publish@5.8.0)(@lerna-lite/run@5.8.0)(@types/node@26.6.6)(conventional-commits-filter@6.0.1))(@types/node@26.6.6)
       '@tsconfig/node22':
         specifier: ^22.0.6
         version: 22.0.6
@@ -58,7 +58,7 @@ importers:
         version: link:scripts
       cspell-trie:
         specifier: ^10.4.0
-        version: 10.4.0(@cspell/cspell-types@10.4.0)
+        version: 10.4.1(@cspell/cspell-types@10.4.1)
       eslint:
         specifier: ^10.14.0
         version: 10.14.0(supports-color@9.4.0)
@@ -534,7 +534,7 @@ importers:
     devDependencies:
       '@cspell/cspell-types':
         specifier: ^10.4.0
-        version: 10.4.0
+        version: 10.4.1
 
   dictionaries/lorem-ipsum: {}
 
@@ -799,7 +799,7 @@ importers:
         version: 10.4.0
       cspell-trie-lib:
         specifier: ^10.4.0
-        version: 10.4.0(@cspell/cspell-types@10.4.0)
+        version: 10.4.0(@cspell/cspell-types@10.4.1)
       globby:
         specifier: ^16.2.4
         version: 16.2.4
@@ -824,7 +824,7 @@ importers:
     devDependencies:
       '@cspell/cspell-types':
         specifier: ^10.4.0
-        version: 10.4.0
+        version: 10.4.1
       '@types/globrex':
         specifier: ^0.1.4
         version: 0.1.4
@@ -855,8 +855,8 @@ packages:
       conventional-commits-parser:
         optional: true
 
-  '@conventional-changelog/template@1.4.0':
-    resolution: {integrity: sha512-aalGyl7dbB5PArRebDIX43ZvBlXrYm9uWzGJ26t+4SzJVPsOuvfILGGbw5X4yX7i50YEmJ8zvbiWnqH/AAnZqg==}
+  '@conventional-changelog/template@1.4.1':
+    resolution: {integrity: sha512-mHyyEL0eIEqJ6+aF24+AdZRo4bu4W5GdUiCiCx5X7kfDY51ye8GQJ264uOINObrRSKxtSRCOWPpl9hbOy4UzxQ==}
     engines: {node: '>=22'}
 
   '@cspell/cspell-bundled-dicts@10.4.0':
@@ -875,6 +875,10 @@ packages:
     resolution: {integrity: sha512-cXHgST9ySpECyiE5ZK7TcwBqrCb3h9X49j/lSDcWNAVp7GkwnPfcdylH+Zq/VfYMlHad24z8CNXd5H91O9DhEA==}
     engines: {node: '>=22.18.0'}
 
+  '@cspell/cspell-pipe@10.4.1':
+    resolution: {integrity: sha512-7P4srvEo/LUyoGTwwsnijCZzUKTyC39N9seYyk7/u4DHmww4cQpKW3ktWdZu90hOP1hV+zdAptUMnHTHxa5NmQ==}
+    engines: {node: '>=22.18.0'}
+
   '@cspell/cspell-resolver@10.4.0':
     resolution: {integrity: sha512-uyI9qX8hagtcFtRTElYGXXyVhhnVxPBSf1Ltds9AlU9cktPOFYeTXQOfBR+Dpt9dCruzX29ZJbd3hR1i5yryZg==}
     engines: {node: '>=22.18.0'}
@@ -883,13 +887,17 @@ packages:
     resolution: {integrity: sha512-IZzx+EWADkN5xbFrW+VS+JQ52+w5tWaZNxDgGa+0Mv79hks6wNa2Vcnce+9vGcBJYgA24VcuAfekI38tYzcDtw==}
     engines: {node: '>=22.18.0'}
 
-  '@cspell/cspell-tools@10.4.0':
-    resolution: {integrity: sha512-FLaNVIOVA4jZzL7DiizlfVyQ8k4p06gBkGRFTbVZz0E2UtDFXsyRY7rwjGZ4RxZcjn5ZMYNygqINUAzgE57prA==}
+  '@cspell/cspell-tools@10.4.1':
+    resolution: {integrity: sha512-i22CFWhEktNz15HLP8iQBpcUHASBJn344sVAfnXnzsZeCn/SSgamPhCmbeRoySz5yuz2k/NgwyR5GNz1SkzAZA==}
     engines: {node: '>=22.18.0'}
     hasBin: true
 
   '@cspell/cspell-types@10.4.0':
     resolution: {integrity: sha512-LTOrZcDSHj5BkeNSvimuV3AMF7gWjxzXUdQ7zYT/h/57/5flHuE6NPKSXS69ty8vJM0WrVh35L5aDxnCPfDzXA==}
+    engines: {node: '>=22.18.0'}
+
+  '@cspell/cspell-types@10.4.1':
+    resolution: {integrity: sha512-FfaRrnrZ3xD09Tq6C49BdAZSx+tLM38Z60vFR/1+qQMQejUOHhv/lQ3UNN4I9z+P3BhmKutcLf8M8IOwlMfOtQ==}
     engines: {node: '>=22.18.0'}
 
   '@cspell/cspell-worker@10.4.0':
@@ -1321,8 +1329,8 @@ packages:
   '@keyv/serialize@1.1.1':
     resolution: {integrity: sha512-dXn3FZhPv0US+7dtJsIi2R+c7qWYiReoEh5zUntWCf4oSpMNib8FDhSoed6m3QyZdx5hK7iLFkYk3rNxwt8vTA==}
 
-  '@lerna-lite/cli@5.7.0':
-    resolution: {integrity: sha512-dgXu1gEnTJYAsDRZ9DoQno/LbBpW6mn4a7B5XPbXlKZ+spfChqJEPVoEOhipORXc+kqmZHy5zEuctDuzL07QQw==}
+  '@lerna-lite/cli@5.8.0':
+    resolution: {integrity: sha512-u/ylr+N/ok2tQ84HQc2xw2/5h3LimQYXWxz8uEOD1OsZhW237Nxi63oYd0fbcmf0msx/QWKSUOH5sO3Ld1pOgA==}
     engines: {node: ^22.17.0 || >=24.0.0}
     hasBin: true
     peerDependencies:
@@ -1346,36 +1354,36 @@ packages:
       '@lerna-lite/watch':
         optional: true
 
-  '@lerna-lite/core@5.7.0':
-    resolution: {integrity: sha512-+2RfpaeMa5ViArKs3GPLPsIuNRfdqoYcHDGnC3uPTKEOkkFCcsOXbH/RCgRhpJDTgHFW06xlFKJeJr91Bi3J8g==}
+  '@lerna-lite/core@5.8.0':
+    resolution: {integrity: sha512-RKvEUFSCa2iHXVrC1exXl9DVa9Gu6k44PrtZ9JUt5MCbdG0+rBtERCilADM9hFcB5DJVqD/vsY5mm8T5c3hcuw==}
     engines: {node: ^22.17.0 || >=24.0.0}
 
-  '@lerna-lite/exec@5.7.0':
-    resolution: {integrity: sha512-n5FmJ1I2lzgpsIB0IigQJ87S0otEMQIfprPrKzRbmTfPlMcoK69Le8DGC86Cgt8W1m7DgghlTuRdoVJrHJirgA==}
+  '@lerna-lite/exec@5.8.0':
+    resolution: {integrity: sha512-ZGGKvIzrHlOJYQUmgawiYb6ZC4Qd/CR2XVTZr/7wzFmXqZb4aPSTNoSYLTQ/zJciDSc1OgLl8opGAG2UJ+UZVw==}
     engines: {node: ^22.17.0 || >=24.0.0}
 
-  '@lerna-lite/init@5.7.0':
-    resolution: {integrity: sha512-kEFss6mYq2S50dmvJYCtmRXbiAzZob6nCiJbY13WhKH5sgDvxizEBGwCVRvrXdETGB/7u7zKMOC0bTGLLaLkcg==}
+  '@lerna-lite/init@5.8.0':
+    resolution: {integrity: sha512-k5qYcSh1drpS3Vjrxo0LK9Wmu19PRzq2NF/YrJa7rbJo7GpABzXx4zG5x4YkhuVsNbghbiJooEe0F3LD/XkabQ==}
     engines: {node: ^22.17.0 || >=24.0.0}
 
   '@lerna-lite/npmlog@5.4.1':
     resolution: {integrity: sha512-APylzmp9eDWsM5ZLnTUwV6uwTshtWAbKIF4sA0/SgBsdbgfJUVoz5VTviBnyODCKRzpjcR1MAlRTcjUmKXSbKA==}
     engines: {node: ^22.17.0 || >=24.0.0}
 
-  '@lerna-lite/profiler@5.7.0':
-    resolution: {integrity: sha512-KpLae/Kay4NdCNXCUwG78GCrdOIdRDSVPeUB7ggfmpSid5NgvCdRAZ9d1XAL14LMRqq5g2QqgEve/hveMVleSg==}
+  '@lerna-lite/profiler@5.8.0':
+    resolution: {integrity: sha512-OtojKKcL0HbuVQwjTjoyjoiuvVo+uMmjYKgK+gV72f9USe94BAW0njsNZz6uF19GtRozld8wcRNT1WJuzuAQ3g==}
     engines: {node: ^22.17.0 || >=24.0.0}
 
-  '@lerna-lite/publish@5.7.0':
-    resolution: {integrity: sha512-lVzXFssd3QSuePggMCLUdXjmfRe1Dr3+6pXOOt4nVe/c0O5j718LzuRMI1FvLfEgIpx6VJrwWIMsQrOxzDo2Lg==}
+  '@lerna-lite/publish@5.8.0':
+    resolution: {integrity: sha512-tNC9Y5tIbdzkMXPawPJCkhlDf0X+aBkU4AB1O5q6L4GXxZ/cflWY+w0e8Mb3RgMLXVI0AkehMrvpk2sQ7cIUjg==}
     engines: {node: ^22.17.0 || >=24.0.0}
 
-  '@lerna-lite/run@5.7.0':
-    resolution: {integrity: sha512-f72gxj1r0Pg6ax8zJleLhS7kiva0r/LVBenX33RPWgVNGNVkvzXuHS9rgjfuQsyWRLTcYBMgtKEZwJDuME32Zg==}
+  '@lerna-lite/run@5.8.0':
+    resolution: {integrity: sha512-CmC6cCtiXdrTEbcRuUB5r7PinKdIyqAKfQi4PUSGPBalElfBbK55dLO7FFw+oDsmH7W6qI45J2KA/qy6qCDOyw==}
     engines: {node: ^22.17.0 || >=24.0.0}
 
-  '@lerna-lite/version@5.7.0':
-    resolution: {integrity: sha512-JuOqA9vMUf2MONYeobh4lJR5+6em7eFjqrLd7pl/MvRJilvv2QrryQ9PC4wbSu6Yy+OTzVJXzA4aX28JpDV3Og==}
+  '@lerna-lite/version@5.8.0':
+    resolution: {integrity: sha512-WYrUIAveES+EvGvGmpNtm+MY3I4tEyRQ3GXHPAKvrYcuXqN3fziM1DutLCFkzyiKi8W0jGI/Axz/JtT/hq/qzw==}
     engines: {node: ^22.17.0 || >=24.0.0}
 
   '@mapbox/node-pre-gyp@2.0.3':
@@ -1882,6 +1890,10 @@ packages:
     resolution: {integrity: sha512-z67u4ZhzCL/Tydu1lJARtEZYWbWaN7oYLHbsuzocr6y4N6WZAagG3RQ4FW61V1/0+jImpj293XfrcYnd1qxtPg==}
     engines: {node: '>=22.12.0'}
 
+  commander@15.1.0:
+    resolution: {integrity: sha512-cgnQ88TRrWcC7pVq46RzJVRMktu3W2RcbnoidnfBsl1bmDCBwJS/udcIZpKoCrbAYYaCqsz1yZCVIgbIaU3ddQ==}
+    engines: {node: '>=22.12.0'}
+
   comment-json@5.0.0:
     resolution: {integrity: sha512-uiqLcOiVDJtBP8WGkZHEP+FZIhTzP1dxvn59EfoYUi9gqupjrBWVQkO2atDrbnKPwLeotFYDsuNb26uBMqB+hw==}
     engines: {node: '>= 6'}
@@ -1934,13 +1946,13 @@ packages:
     resolution: {integrity: sha512-cs+LadpH7Kpw0M3k8wurk+sOVVDAENA0iK4OBOrkL94j5lEVYRJ4j3zd2bhY9qgzyrPqthdcYT3axzRN7AliMg==}
     engines: {node: '>=22'}
 
-  conventional-commits-parser@7.1.3:
-    resolution: {integrity: sha512-Q9oWm1o9uy/oEsZQIraoFMZ4RuPD+79KgwWj6mJVP356tazolCB0piRLZ5Kz9te9p027uSEcUW+Gu44Eh+X79g==}
+  conventional-commits-parser@7.1.4:
+    resolution: {integrity: sha512-TW3PZHi6hwF4cyu7KKc4kNqD1cgg8AkkK5ge9+zsEfpjaSXOeeIQyNWBr7kx5hR2wFuKVmr0be37RzcpmACQIA==}
     engines: {node: '>=22'}
     hasBin: true
 
-  conventional-recommended-bump@12.1.0:
-    resolution: {integrity: sha512-HTNG3kEZXOOfKwrEx54ljURU9bG4nVPQzXMyCSeUcA/PE8EpNpQNujSrbXNBI8QZyN35zM+pVw+FuQk4KqHSHg==}
+  conventional-recommended-bump@12.1.1:
+    resolution: {integrity: sha512-73tca4vG9rlrB/+DkjtJPVaSJRpValcqI5obhAEcepaKC4MLcubxWJCS9lf12F8hFMuAyX1Ji1AGYIisGroqAw==}
     engines: {node: '>=22'}
     hasBin: true
 
@@ -2014,8 +2026,14 @@ packages:
     peerDependencies:
       '@cspell/cspell-types': 10.4.0
 
-  cspell-trie@10.4.0:
-    resolution: {integrity: sha512-N6MtYXhBAVYJmf55poTImbXy1T0VNn7xoggHYIUb5OAs5zW9PzMkMc/3hTnph6LFXOPrs7UgV3+TBx06OUYK/Q==}
+  cspell-trie-lib@10.4.1:
+    resolution: {integrity: sha512-MOxZ3b2MLNfRWXz1Seh6xXGvUclMxA9h11tCBj6+Y0pd+7KtNk7YMlzmHIGOnbF9W5YZNtA2bMuYbVlefcOa1w==}
+    engines: {node: '>=22.18.0'}
+    peerDependencies:
+      '@cspell/cspell-types': 10.4.1
+
+  cspell-trie@10.4.1:
+    resolution: {integrity: sha512-p8MWXh8XzHlJU/r3pNWB3fJrGk53mgXWDy9OXBnvdLYjY3iTvRqf6rZJGtie8p0LEUjjZfIKxPI3vMXDTYquyw==}
     engines: {node: '>=22.18.0'}
     hasBin: true
 
@@ -2370,6 +2388,10 @@ packages:
     resolution: {integrity: sha512-Wjlyrolmm8uDpm/ogGyXZXb1Z+Ca2B8NbJwqBVg0axK9GbBeoS7yGV6vjXnYdGm6X53iehEuxxbyiKp8QmN4Vw==}
     engines: {node: 18 || 20 || >=22}
 
+  glob@13.0.7:
+    resolution: {integrity: sha512-wfsFgXQ8A3SEI9XGf7Nl3Y9l7ffSrGh7SUCT7vU/2CzYPep9kjxAn1S40F9OPKxAMGCVl7HtNlJhrCJUeUq83g==}
+    engines: {node: 18 || 20 || >=22}
+
   glob@14.0.3:
     resolution: {integrity: sha512-A1vjIwC3qpdCso45Iw127gnp7sPhqgY8lUQhDrArIs+GbmfaaVPFuoyy7WyLT9EPZCRZ7j7aLdwUhQmHWesEow==}
     engines: {node: 18 || 20 || >=22}
@@ -2445,6 +2467,11 @@ packages:
 
   hunspell-reader@10.4.0:
     resolution: {integrity: sha512-oh5fT0WX9bU7xcTxZ9bHWFTBu1dG7HR4SfCmFHpnUvbmA65xlqCXk77TOLOp3YKvuWe/N9WiDBQPga7tVImc9g==}
+    engines: {node: '>=22.18.0'}
+    hasBin: true
+
+  hunspell-reader@10.4.1:
+    resolution: {integrity: sha512-f2Z3G38mMm2Ny/lE/L5OfutAJNCUi0IVuJ4rpzIPxbiqkpl805fRSKE8T8pi7MpgQuTmlI07tKDVcEBSvRzGxQ==}
     engines: {node: '>=22.18.0'}
     hasBin: true
 
@@ -3014,8 +3041,8 @@ packages:
     resolution: {integrity: sha512-GYTTew2slBcYdvRHqjhwaaydVMvn/qrGC323+nKclYioNSLTDUM/lGgtGTgyHVtYcozb+XkE8CNhwcraOmZ9Mg==}
     engines: {node: '>=18'}
 
-  pacote@21.5.2:
-    resolution: {integrity: sha512-rifBXawDMv3nLvABWr1kTpSk0UjeglTT4Vt9t8nU9xSnfdZcCTy+FOjO6TgXWAS77lIfbZlRkl2eKQcdY0++jA==}
+  pacote@21.5.3:
+    resolution: {integrity: sha512-XAHnxRzERPW/Y3sLaCgfUVdfP5Di1K0wiUWsDaK4reodu20Kl0pVZcw8Mdd2LaLsUpot6YLVOEgmIqMEL9Tjog==}
     engines: {node: ^20.17.0 || >=22.9.0}
     hasBin: true
 
@@ -3566,16 +3593,16 @@ snapshots:
       hashery: 1.5.1
       keyv: 5.6.0
 
-  '@conventional-changelog/git-client@3.2.0(conventional-commits-filter@6.0.1)(conventional-commits-parser@7.1.3)':
+  '@conventional-changelog/git-client@3.2.0(conventional-commits-filter@6.0.1)(conventional-commits-parser@7.1.4)':
     dependencies:
       '@simple-libs/child-process-utils': 2.0.0
       '@simple-libs/stream-utils': 2.0.0
       verkit: 0.5.0
     optionalDependencies:
       conventional-commits-filter: 6.0.1
-      conventional-commits-parser: 7.1.3
+      conventional-commits-parser: 7.1.4
 
-  '@conventional-changelog/template@1.4.0': {}
+  '@conventional-changelog/template@1.4.1': {}
 
   '@cspell/cspell-bundled-dicts@10.4.0':
     dependencies:
@@ -3647,25 +3674,28 @@ snapshots:
 
   '@cspell/cspell-pipe@10.4.0': {}
 
+  '@cspell/cspell-pipe@10.4.1': {}
+
   '@cspell/cspell-resolver@10.4.0':
     dependencies:
       global-directory: 5.0.0
 
   '@cspell/cspell-service-bus@10.4.0': {}
 
-  '@cspell/cspell-tools@10.4.0(@cspell/cspell-types@10.4.0)':
+  '@cspell/cspell-tools@10.4.1(@cspell/cspell-types@10.4.1)':
     dependencies:
-      '@cspell/cspell-pipe': 10.4.0
-      commander: 15.0.0
+      '@cspell/cspell-pipe': 10.4.1
+      commander: 15.1.0
       cosmiconfig: 10.0.1
-      cspell-trie-lib: 10.4.0(@cspell/cspell-types@10.4.0)
-      glob: 13.0.6
-      hunspell-reader: 10.4.0
+      cspell-trie-lib: 10.4.1(@cspell/cspell-types@10.4.1)
+      hunspell-reader: 10.4.1
       yaml: 2.9.1
     transitivePeerDependencies:
       - '@cspell/cspell-types'
 
   '@cspell/cspell-types@10.4.0': {}
+
+  '@cspell/cspell-types@10.4.1': {}
 
   '@cspell/cspell-worker@10.4.0':
     dependencies:
@@ -4002,23 +4032,23 @@ snapshots:
 
   '@keyv/serialize@1.1.1': {}
 
-  '@lerna-lite/cli@5.7.0(@lerna-lite/exec@5.7.0)(@lerna-lite/publish@5.7.0)(@lerna-lite/run@5.7.0)(@lerna-lite/version@5.7.0(@lerna-lite/exec@5.7.0)(@lerna-lite/publish@5.7.0)(@lerna-lite/run@5.7.0)(@types/node@26.6.6)(conventional-commits-filter@6.0.1))(@types/node@26.6.6)':
+  '@lerna-lite/cli@5.8.0(@lerna-lite/exec@5.8.0)(@lerna-lite/publish@5.8.0)(@lerna-lite/run@5.8.0)(@lerna-lite/version@5.8.0(@lerna-lite/exec@5.8.0)(@lerna-lite/publish@5.8.0)(@lerna-lite/run@5.8.0)(@types/node@26.6.6)(conventional-commits-filter@6.0.1))(@types/node@26.6.6)':
     dependencies:
-      '@lerna-lite/core': 5.7.0(@types/node@26.6.6)
-      '@lerna-lite/init': 5.7.0(@types/node@26.6.6)
+      '@lerna-lite/core': 5.8.0(@types/node@26.6.6)
+      '@lerna-lite/init': 5.8.0(@types/node@26.6.6)
       '@lerna-lite/npmlog': 5.4.1
       dotenv: 18.0.9
       import-local: 3.2.0
       yargs: 18.2.0
     optionalDependencies:
-      '@lerna-lite/exec': 5.7.0(@lerna-lite/publish@5.7.0)(@lerna-lite/run@5.7.0)(@lerna-lite/version@5.7.0(@lerna-lite/exec@5.7.0)(@lerna-lite/publish@5.7.0)(@lerna-lite/run@5.7.0)(@types/node@26.6.6)(conventional-commits-filter@6.0.1))(@types/node@26.6.6)
-      '@lerna-lite/publish': 5.7.0(@lerna-lite/exec@5.7.0)(@lerna-lite/run@5.7.0)(@types/node@26.6.6)(conventional-commits-filter@6.0.1)(supports-color@9.4.0)
-      '@lerna-lite/run': 5.7.0(@lerna-lite/exec@5.7.0)(@lerna-lite/publish@5.7.0)(@lerna-lite/version@5.7.0(@lerna-lite/exec@5.7.0)(@lerna-lite/publish@5.7.0)(@lerna-lite/run@5.7.0)(@types/node@26.6.6)(conventional-commits-filter@6.0.1))(@types/node@26.6.6)
-      '@lerna-lite/version': 5.7.0(@lerna-lite/exec@5.7.0)(@lerna-lite/publish@5.7.0)(@lerna-lite/run@5.7.0)(@types/node@26.6.6)(conventional-commits-filter@6.0.1)
+      '@lerna-lite/exec': 5.8.0(@lerna-lite/publish@5.8.0)(@lerna-lite/run@5.8.0)(@lerna-lite/version@5.8.0(@lerna-lite/exec@5.8.0)(@lerna-lite/publish@5.8.0)(@lerna-lite/run@5.8.0)(@types/node@26.6.6)(conventional-commits-filter@6.0.1))(@types/node@26.6.6)
+      '@lerna-lite/publish': 5.8.0(@lerna-lite/exec@5.8.0)(@lerna-lite/run@5.8.0)(@types/node@26.6.6)(conventional-commits-filter@6.0.1)(supports-color@9.4.0)
+      '@lerna-lite/run': 5.8.0(@lerna-lite/exec@5.8.0)(@lerna-lite/publish@5.8.0)(@lerna-lite/version@5.8.0(@lerna-lite/exec@5.8.0)(@lerna-lite/publish@5.8.0)(@lerna-lite/run@5.8.0)(@types/node@26.6.6)(conventional-commits-filter@6.0.1))(@types/node@26.6.6)
+      '@lerna-lite/version': 5.8.0(@lerna-lite/exec@5.8.0)(@lerna-lite/publish@5.8.0)(@lerna-lite/run@5.8.0)(@types/node@26.6.6)(conventional-commits-filter@6.0.1)
     transitivePeerDependencies:
       - '@types/node'
 
-  '@lerna-lite/core@5.7.0(@types/node@26.6.6)':
+  '@lerna-lite/core@5.8.0(@types/node@26.6.6)':
     dependencies:
       '@inquirer/expand': 5.1.8(@types/node@26.6.6)
       '@inquirer/input': 5.1.9(@types/node@26.6.6)
@@ -4038,11 +4068,11 @@ snapshots:
     transitivePeerDependencies:
       - '@types/node'
 
-  '@lerna-lite/exec@5.7.0(@lerna-lite/publish@5.7.0)(@lerna-lite/run@5.7.0)(@lerna-lite/version@5.7.0(@lerna-lite/exec@5.7.0)(@lerna-lite/publish@5.7.0)(@lerna-lite/run@5.7.0)(@types/node@26.6.6)(conventional-commits-filter@6.0.1))(@types/node@26.6.6)':
+  '@lerna-lite/exec@5.8.0(@lerna-lite/publish@5.8.0)(@lerna-lite/run@5.8.0)(@lerna-lite/version@5.8.0(@lerna-lite/exec@5.8.0)(@lerna-lite/publish@5.8.0)(@lerna-lite/run@5.8.0)(@types/node@26.6.6)(conventional-commits-filter@6.0.1))(@types/node@26.6.6)':
     dependencies:
-      '@lerna-lite/cli': 5.7.0(@lerna-lite/exec@5.7.0)(@lerna-lite/publish@5.7.0)(@lerna-lite/run@5.7.0)(@lerna-lite/version@5.7.0(@lerna-lite/exec@5.7.0)(@lerna-lite/publish@5.7.0)(@lerna-lite/run@5.7.0)(@types/node@26.6.6)(conventional-commits-filter@6.0.1))(@types/node@26.6.6)
-      '@lerna-lite/core': 5.7.0(@types/node@26.6.6)
-      '@lerna-lite/profiler': 5.7.0(@types/node@26.6.6)
+      '@lerna-lite/cli': 5.8.0(@lerna-lite/exec@5.8.0)(@lerna-lite/publish@5.8.0)(@lerna-lite/run@5.8.0)(@lerna-lite/version@5.8.0(@lerna-lite/exec@5.8.0)(@lerna-lite/publish@5.8.0)(@lerna-lite/run@5.8.0)(@types/node@26.6.6)(conventional-commits-filter@6.0.1))(@types/node@26.6.6)
+      '@lerna-lite/core': 5.8.0(@types/node@26.6.6)
+      '@lerna-lite/profiler': 5.8.0(@types/node@26.6.6)
       dotenv: 18.0.9
     transitivePeerDependencies:
       - '@lerna-lite/list'
@@ -4052,9 +4082,9 @@ snapshots:
       - '@lerna-lite/watch'
       - '@types/node'
 
-  '@lerna-lite/init@5.7.0(@types/node@26.6.6)':
+  '@lerna-lite/init@5.8.0(@types/node@26.6.6)':
     dependencies:
-      '@lerna-lite/core': 5.7.0(@types/node@26.6.6)
+      '@lerna-lite/core': 5.8.0(@types/node@26.6.6)
       write-json-file: 7.0.0
     transitivePeerDependencies:
       - '@types/node'
@@ -4064,19 +4094,19 @@ snapshots:
       fast-string-width: 3.0.2
       signal-exit: 4.1.0
 
-  '@lerna-lite/profiler@5.7.0(@types/node@26.6.6)':
+  '@lerna-lite/profiler@5.8.0(@types/node@26.6.6)':
     dependencies:
-      '@lerna-lite/core': 5.7.0(@types/node@26.6.6)
+      '@lerna-lite/core': 5.8.0(@types/node@26.6.6)
       '@lerna-lite/npmlog': 5.4.1
     transitivePeerDependencies:
       - '@types/node'
 
-  '@lerna-lite/publish@5.7.0(@lerna-lite/exec@5.7.0)(@lerna-lite/run@5.7.0)(@types/node@26.6.6)(conventional-commits-filter@6.0.1)(supports-color@9.4.0)':
+  '@lerna-lite/publish@5.8.0(@lerna-lite/exec@5.8.0)(@lerna-lite/run@5.8.0)(@types/node@26.6.6)(conventional-commits-filter@6.0.1)(supports-color@9.4.0)':
     dependencies:
-      '@lerna-lite/cli': 5.7.0(@lerna-lite/exec@5.7.0)(@lerna-lite/publish@5.7.0)(@lerna-lite/run@5.7.0)(@lerna-lite/version@5.7.0(@lerna-lite/exec@5.7.0)(@lerna-lite/publish@5.7.0)(@lerna-lite/run@5.7.0)(@types/node@26.6.6)(conventional-commits-filter@6.0.1))(@types/node@26.6.6)
-      '@lerna-lite/core': 5.7.0(@types/node@26.6.6)
+      '@lerna-lite/cli': 5.8.0(@lerna-lite/exec@5.8.0)(@lerna-lite/publish@5.8.0)(@lerna-lite/run@5.8.0)(@lerna-lite/version@5.8.0(@lerna-lite/exec@5.8.0)(@lerna-lite/publish@5.8.0)(@lerna-lite/run@5.8.0)(@types/node@26.6.6)(conventional-commits-filter@6.0.1))(@types/node@26.6.6)
+      '@lerna-lite/core': 5.8.0(@types/node@26.6.6)
       '@lerna-lite/npmlog': 5.4.1
-      '@lerna-lite/version': 5.7.0(@lerna-lite/exec@5.7.0)(@lerna-lite/publish@5.7.0)(@lerna-lite/run@5.7.0)(@types/node@26.6.6)(conventional-commits-filter@6.0.1)
+      '@lerna-lite/version': 5.8.0(@lerna-lite/exec@5.8.0)(@lerna-lite/publish@5.8.0)(@lerna-lite/run@5.8.0)(@types/node@26.6.6)(conventional-commits-filter@6.0.1)
       '@npmcli/arborist': 9.9.3(supports-color@9.4.0)
       '@npmcli/package-json': 7.0.5
       ci-info: 4.4.0
@@ -4085,7 +4115,7 @@ snapshots:
       npm-package-arg: 13.0.2
       npm-packlist: 10.0.4
       npm-registry-fetch: 19.1.1(supports-color@9.4.0)
-      pacote: 21.5.2(supports-color@9.4.0)
+      pacote: 21.5.3(supports-color@9.4.0)
       ssri: 13.0.1
       tar: 7.5.22
       verkit: 0.5.0
@@ -4098,12 +4128,12 @@ snapshots:
       - conventional-commits-filter
       - supports-color
 
-  '@lerna-lite/run@5.7.0(@lerna-lite/exec@5.7.0)(@lerna-lite/publish@5.7.0)(@lerna-lite/version@5.7.0(@lerna-lite/exec@5.7.0)(@lerna-lite/publish@5.7.0)(@lerna-lite/run@5.7.0)(@types/node@26.6.6)(conventional-commits-filter@6.0.1))(@types/node@26.6.6)':
+  '@lerna-lite/run@5.8.0(@lerna-lite/exec@5.8.0)(@lerna-lite/publish@5.8.0)(@lerna-lite/version@5.8.0(@lerna-lite/exec@5.8.0)(@lerna-lite/publish@5.8.0)(@lerna-lite/run@5.8.0)(@types/node@26.6.6)(conventional-commits-filter@6.0.1))(@types/node@26.6.6)':
     dependencies:
-      '@lerna-lite/cli': 5.7.0(@lerna-lite/exec@5.7.0)(@lerna-lite/publish@5.7.0)(@lerna-lite/run@5.7.0)(@lerna-lite/version@5.7.0(@lerna-lite/exec@5.7.0)(@lerna-lite/publish@5.7.0)(@lerna-lite/run@5.7.0)(@types/node@26.6.6)(conventional-commits-filter@6.0.1))(@types/node@26.6.6)
-      '@lerna-lite/core': 5.7.0(@types/node@26.6.6)
+      '@lerna-lite/cli': 5.8.0(@lerna-lite/exec@5.8.0)(@lerna-lite/publish@5.8.0)(@lerna-lite/run@5.8.0)(@lerna-lite/version@5.8.0(@lerna-lite/exec@5.8.0)(@lerna-lite/publish@5.8.0)(@lerna-lite/run@5.8.0)(@types/node@26.6.6)(conventional-commits-filter@6.0.1))(@types/node@26.6.6)
+      '@lerna-lite/core': 5.8.0(@types/node@26.6.6)
       '@lerna-lite/npmlog': 5.4.1
-      '@lerna-lite/profiler': 5.7.0(@types/node@26.6.6)
+      '@lerna-lite/profiler': 5.8.0(@types/node@26.6.6)
     transitivePeerDependencies:
       - '@lerna-lite/exec'
       - '@lerna-lite/list'
@@ -4112,20 +4142,20 @@ snapshots:
       - '@lerna-lite/watch'
       - '@types/node'
 
-  '@lerna-lite/version@5.7.0(@lerna-lite/exec@5.7.0)(@lerna-lite/publish@5.7.0)(@lerna-lite/run@5.7.0)(@types/node@26.6.6)(conventional-commits-filter@6.0.1)':
+  '@lerna-lite/version@5.8.0(@lerna-lite/exec@5.8.0)(@lerna-lite/publish@5.8.0)(@lerna-lite/run@5.8.0)(@types/node@26.6.6)(conventional-commits-filter@6.0.1)':
     dependencies:
-      '@conventional-changelog/git-client': 3.2.0(conventional-commits-filter@6.0.1)(conventional-commits-parser@7.1.3)
-      '@conventional-changelog/template': 1.4.0
-      '@lerna-lite/cli': 5.7.0(@lerna-lite/exec@5.7.0)(@lerna-lite/publish@5.7.0)(@lerna-lite/run@5.7.0)(@lerna-lite/version@5.7.0(@lerna-lite/exec@5.7.0)(@lerna-lite/publish@5.7.0)(@lerna-lite/run@5.7.0)(@types/node@26.6.6)(conventional-commits-filter@6.0.1))(@types/node@26.6.6)
-      '@lerna-lite/core': 5.7.0(@types/node@26.6.6)
+      '@conventional-changelog/git-client': 3.2.0(conventional-commits-filter@6.0.1)(conventional-commits-parser@7.1.4)
+      '@conventional-changelog/template': 1.4.1
+      '@lerna-lite/cli': 5.8.0(@lerna-lite/exec@5.8.0)(@lerna-lite/publish@5.8.0)(@lerna-lite/run@5.8.0)(@lerna-lite/version@5.8.0(@lerna-lite/exec@5.8.0)(@lerna-lite/publish@5.8.0)(@lerna-lite/run@5.8.0)(@types/node@26.6.6)(conventional-commits-filter@6.0.1))(@types/node@26.6.6)
+      '@lerna-lite/core': 5.8.0(@types/node@26.6.6)
       '@lerna-lite/npmlog': 5.4.1
       '@octokit/plugin-enterprise-rest': 6.0.1
       '@octokit/rest': 22.0.1
       conventional-changelog: 8.1.3
       conventional-changelog-angular: 9.4.0
       conventional-changelog-writer: 9.3.0
-      conventional-commits-parser: 7.1.3
-      conventional-recommended-bump: 12.1.0
+      conventional-commits-parser: 7.1.4
+      conventional-recommended-bump: 12.1.1
       git-url-parse: 16.1.0
       handlebars: 4.7.10
       npm-package-arg: 13.0.2
@@ -4202,7 +4232,7 @@ snapshots:
       npm-package-arg: 13.0.2
       npm-pick-manifest: 11.0.3
       npm-registry-fetch: 19.1.1(supports-color@9.4.0)
-      pacote: 21.5.2(supports-color@9.4.0)
+      pacote: 21.5.3(supports-color@9.4.0)
       parse-conflict-json: 5.0.1
       proc-log: 6.1.0
       proggy: 4.0.0
@@ -4239,14 +4269,14 @@ snapshots:
     dependencies:
       '@npmcli/name-from-folder': 4.0.0
       '@npmcli/package-json': 7.0.5
-      glob: 13.0.6
+      glob: 13.0.7
       minimatch: 10.2.6
 
   '@npmcli/metavuln-calculator@9.0.3(supports-color@9.4.0)':
     dependencies:
       cacache: 20.0.4
       json-parse-even-better-errors: 5.0.0
-      pacote: 21.5.2(supports-color@9.4.0)
+      pacote: 21.5.3(supports-color@9.4.0)
       proc-log: 6.1.0
       semver: 7.8.6
     transitivePeerDependencies:
@@ -4259,7 +4289,7 @@ snapshots:
   '@npmcli/package-json@7.0.5':
     dependencies:
       '@npmcli/git': 7.0.2
-      glob: 13.0.6
+      glob: 13.0.7
       hosted-git-info: 9.0.3
       json-parse-even-better-errors: 5.0.0
       proc-log: 6.1.0
@@ -4717,7 +4747,7 @@ snapshots:
     dependencies:
       '@npmcli/fs': 5.0.0
       fs-minipass: 3.0.3
-      glob: 13.0.6
+      glob: 13.0.7
       lru-cache: 11.5.3
       minipass: 7.1.3
       minipass-collect: 2.0.1
@@ -4783,6 +4813,8 @@ snapshots:
 
   commander@15.0.0: {}
 
+  commander@15.1.0: {}
+
   comment-json@5.0.0:
     dependencies:
       array-timsort: 1.0.3
@@ -4813,13 +4845,13 @@ snapshots:
 
   conventional-changelog-angular@9.4.0:
     dependencies:
-      '@conventional-changelog/template': 1.4.0
+      '@conventional-changelog/template': 1.4.1
 
   conventional-changelog-preset-loader@6.0.1: {}
 
   conventional-changelog-writer@9.3.0:
     dependencies:
-      '@conventional-changelog/template': 1.4.0
+      '@conventional-changelog/template': 1.4.1
       '@simple-libs/stream-utils': 2.0.0
       argue-cli: 3.1.0
       conventional-commits-filter: 6.0.1
@@ -4827,30 +4859,30 @@ snapshots:
 
   conventional-changelog@8.1.3:
     dependencies:
-      '@conventional-changelog/git-client': 3.2.0(conventional-commits-filter@6.0.1)(conventional-commits-parser@7.1.3)
+      '@conventional-changelog/git-client': 3.2.0(conventional-commits-filter@6.0.1)(conventional-commits-parser@7.1.4)
       '@simple-libs/hosted-git-info': 2.0.0
       '@simple-libs/normalize-package-data': 1.0.0
       argue-cli: 3.1.0
       conventional-changelog-preset-loader: 6.0.1
       conventional-changelog-writer: 9.3.0
       conventional-commits-filter: 6.0.1
-      conventional-commits-parser: 7.1.3
+      conventional-commits-parser: 7.1.4
       fd-package-json: 2.0.0
 
   conventional-commits-filter@6.0.1: {}
 
-  conventional-commits-parser@7.1.3:
+  conventional-commits-parser@7.1.4:
     dependencies:
       '@simple-libs/stream-utils': 2.0.0
       argue-cli: 3.1.0
 
-  conventional-recommended-bump@12.1.0:
+  conventional-recommended-bump@12.1.1:
     dependencies:
-      '@conventional-changelog/git-client': 3.2.0(conventional-commits-filter@6.0.1)(conventional-commits-parser@7.1.3)
+      '@conventional-changelog/git-client': 3.2.0(conventional-commits-filter@6.0.1)(conventional-commits-parser@7.1.4)
       argue-cli: 3.1.0
       conventional-changelog-preset-loader: 6.0.1
       conventional-commits-filter: 6.0.1
-      conventional-commits-parser: 7.1.3
+      conventional-commits-parser: 7.1.4
 
   convert-to-spaces@2.0.1: {}
 
@@ -4964,10 +4996,18 @@ snapshots:
     dependencies:
       '@cspell/cspell-types': 10.4.0
 
-  cspell-trie@10.4.0(@cspell/cspell-types@10.4.0):
+  cspell-trie-lib@10.4.0(@cspell/cspell-types@10.4.1):
     dependencies:
-      commander: 15.0.0
-      cspell-trie-lib: 10.4.0(@cspell/cspell-types@10.4.0)
+      '@cspell/cspell-types': 10.4.1
+
+  cspell-trie-lib@10.4.1(@cspell/cspell-types@10.4.1):
+    dependencies:
+      '@cspell/cspell-types': 10.4.1
+
+  cspell-trie@10.4.1(@cspell/cspell-types@10.4.1):
+    dependencies:
+      commander: 15.1.0
+      cspell-trie-lib: 10.4.1(@cspell/cspell-types@10.4.1)
       gensequence: 8.0.8
     transitivePeerDependencies:
       - '@cspell/cspell-types'
@@ -5312,6 +5352,12 @@ snapshots:
       minipass: 7.1.3
       path-scurry: 2.0.2
 
+  glob@13.0.7:
+    dependencies:
+      minimatch: 10.2.6
+      minipass: 7.1.3
+      path-scurry: 2.0.2
+
   glob@14.0.3:
     dependencies:
       minimatch: 11.0.4
@@ -5401,6 +5447,15 @@ snapshots:
       '@cspell/cspell-pipe': 10.4.0
       '@cspell/cspell-types': 10.4.0
       commander: 15.0.0
+      gensequence: 8.0.8
+      html-entities: 2.6.0
+      iconv-lite: 0.7.3
+
+  hunspell-reader@10.4.1:
+    dependencies:
+      '@cspell/cspell-pipe': 10.4.1
+      '@cspell/cspell-types': 10.4.1
+      commander: 15.1.0
       gensequence: 8.0.8
       html-entities: 2.6.0
       iconv-lite: 0.7.3
@@ -6139,7 +6194,7 @@ snapshots:
       find-up-simple: 1.0.1
       load-json-file: 7.0.1
 
-  pacote@21.5.2(supports-color@9.4.0):
+  pacote@21.5.3(supports-color@9.4.0):
     dependencies:
       '@gar/promise-retry': 1.0.3
       '@npmcli/git': 7.0.2
