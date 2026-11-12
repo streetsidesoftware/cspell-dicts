@@ -1,5 +1,13 @@
 # Change Log
 
+## [2.2.7](https://github.com/streetsidesoftware/cspell-dicts/compare/@cspell/dict-en-common-misspellings@2.2.6...@cspell/dict-en-common-misspellings@2.2.7) (2026-11-12)
+
+
+### Updates and Bug Fixes
+
+* **en-common-misspellings:** use the SPDX license id CC-BY-SA-4.0 ([#6060](https://github.com/streetsidesoftware/cspell-dicts/issues/6060)) ([1024691](https://github.com/streetsidesoftware/cspell-dicts/commit/1024691a98262bb0ec0bb27214f8f6642504c506))
+* Workflow Bot -- Build Dictionaries ([#6054](https://github.com/streetsidesoftware/cspell-dicts/issues/6054)) ([c423322](https://github.com/streetsidesoftware/cspell-dicts/commit/c423322d1f586528d1f38e32ac2f6033e3613b0c))
+
 ## [2.2.6](https://github.com/streetsidesoftware/cspell-dicts/compare/@cspell/dict-en-common-misspellings@2.2.5...@cspell/dict-en-common-misspellings@2.2.6) (2026-11-05)
 
 

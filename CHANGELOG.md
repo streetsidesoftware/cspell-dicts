@@ -1,5 +1,24 @@
 # Release Notes
 
+## [35.1.1](https://github.com/streetsidesoftware/cspell-dicts/compare/cspell-dicts@35.1.0...cspell-dicts@35.1.1) (2026-11-12)
+
+
+### Updates and Bug Fixes
+
+* accept all-caps ß words in de_DE, de_AT, and de_CH ([#6041](https://github.com/streetsidesoftware/cspell-dicts/issues/6041)) ([dae7b45](https://github.com/streetsidesoftware/cspell-dicts/commit/dae7b45b85eb4f89ee4b107be2e1da80f2b989ea))
+* **en-common-misspellings:** use the SPDX license id CC-BY-SA-4.0 ([#6060](https://github.com/streetsidesoftware/cspell-dicts/issues/6060)) ([1024691](https://github.com/streetsidesoftware/cspell-dicts/commit/1024691a98262bb0ec0bb27214f8f6642504c506))
+* **python:** add pytest and pytest-mock API terms ([#6048](https://github.com/streetsidesoftware/cspell-dicts/issues/6048)) ([bc38111](https://github.com/streetsidesoftware/cspell-dicts/commit/bc3811115775365fcb7be16438d3ffa92327305b))
+* **software-terms:** add worktrees ([#6049](https://github.com/streetsidesoftware/cspell-dicts/issues/6049)) ([ee33010](https://github.com/streetsidesoftware/cspell-dicts/commit/ee330100801032db1e178125423ff8e78d91f242))
+* Workflow Bot -- Build Dictionaries ([#6054](https://github.com/streetsidesoftware/cspell-dicts/issues/6054)) ([c423322](https://github.com/streetsidesoftware/cspell-dicts/commit/c423322d1f586528d1f38e32ac2f6033e3613b0c))
+* Workflow Bot -- Update Dictionaries ([#6043](https://github.com/streetsidesoftware/cspell-dicts/issues/6043)) ([0cf41c2](https://github.com/streetsidesoftware/cspell-dicts/commit/0cf41c2b8952e515964b774b09940e7f0ebc3d9c))
+
+
+### Dependencies
+
+* The following workspace dependencies were updated
+  * devDependencies
+    * @cspell/dict-cspell-bundle bumped to 2.0.85
+
 ## [35.1.0](https://github.com/streetsidesoftware/cspell-dicts/compare/cspell-dicts@35.0.0...cspell-dicts@35.1.0) (2026-11-06)
 
 
