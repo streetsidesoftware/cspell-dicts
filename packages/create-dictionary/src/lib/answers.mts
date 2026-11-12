@@ -1,59 +1,26 @@
 import { statSync } from 'node:fs';
-import { basename, resolve } from 'node:path';
+import { resolve } from 'node:path';
 
-import { checkbox, confirm, input, select } from '@inquirer/prompts';
-
-import { title, toFriendlyName, toPackageName } from './names.mts';
-import { type Answers, type CommandLine, optionForAnswer } from './options.mts';
-import { gitUserName, readTakenNames, type Repo } from './repo.mts';
-import { isHunspellFile } from './hunspell.mts';
-import {
-    conventionalName,
-    findLocales,
-    friendlyNameFromLocale,
-    knownLocales,
-    localeFromWholeName,
-    localeName,
-    localeWarnings,
-} from './locales.mts';
+import { askSources } from './ask-sources.mts';
+import { askEnabling } from './enabling.mts';
 import { gatherSamples } from './gather-samples.mts';
-import { type Sample, samplesExplanation, sampleWarnings } from './samples.mts';
-import {
-    checkFile,
-    checkFolder,
-    hunspellFile,
-    parseSources,
-    type Source,
-    type SourceOptions,
-    sourceWarnings,
-    srcDir,
-    wordList,
-} from './sources.mts';
-import {
-    nameValidator,
-    type Validate,
-    validateContributor,
-    validateKeyword,
-    validateDescription,
-    validateLanguageId,
-} from './validate.mts';
-import {
-    asDefault,
-    explain,
-    header,
-    info as showInfo,
-    key,
-    link,
-    literal,
-    section as showSectionTitle,
-    warn,
-} from './output.mts';
+import { isHunspellFile } from './hunspell.mts';
+import { conventionalName, friendlyNameFromLocale } from './locales.mts';
+import { title, toFriendlyName, toPackageName } from './names.mts';
+import { optionForAnswer } from './options.mts';
+import type { Answers, CommandLine } from './options.mts';
+import { asDefault, explain, header, key, link, literal, warn } from './output.mts';
+import { createQuestions, sectionCount, terminalPrompts } from './questions.mts';
+import type { Prompts, Questions } from './questions.mts';
+import { gitUserName, readTakenNames } from './repo.mts';
+import type { Repo } from './repo.mts';
+import { samplesExplanation, sampleWarnings } from './samples.mts';
+import type { Sample } from './samples.mts';
+import type { Source } from './sources.mts';
+import { nameValidator, validateContributor, validateDescription, validateKeyword } from './validate.mts';
 
 /** Word lists larger than this, in bytes, are stored as a trie by default, as the guide says. */
 const largeWordLists = 1_000_000;
-
-/** The sections the questions are grouped in, as in the help. */
-const sectionCount = 6;
 
 export type Settings = Omit<Required<Answers>, 'srcFiles'> & {
     sources: Source[];
@@ -68,375 +35,23 @@ export type Settings = Omit<Required<Answers>, 'srcFiles'> & {
 /**
  * The answers given as options, then defaults (with --yes) or prompts for the rest.
  */
-export async function getAnswers(options: CommandLine, repo: Repo, cwd: string): Promise<Settings> {
-    const { answers: given, yes, placeholderWordLists } = options;
-    const keys = Object.keys(optionForAnswer) as (keyof Answers)[];
-    const missing = keys.filter(
-        (key) =>
-            given[key] === undefined &&
-            key !== 'useTrie' &&
-            !(key === 'srcFiles' && placeholderWordLists) &&
-            !(!options.languageSettings && (key === 'locale' || key === 'languageId')),
-    );
-    const noPrompts = yes || !missing.length;
+export async function getAnswers(
+    options: CommandLine,
+    repo: Repo,
+    cwd: string,
+    prompts: Prompts = terminalPrompts,
+): Promise<Settings> {
+    const { answers: given } = options;
+    const missing = missingAnswers(options);
+    const noPrompts = options.yes || !missing.length;
     if (!noPrompts && !process.stdin.isTTY) {
-        const options = missing.map((key) => optionForAnswer[key]).join(', ');
-        throw new Error(`No terminal to prompt in. Give --yes, or all of: ${options}.`);
+        const names = missing.map((key) => optionForAnswer[key]).join(', ');
+        throw new Error(`No terminal to prompt in. Give --yes, or all of: ${names}.`);
     }
+    const questions = createQuestions(given, noPrompts, prompts);
+    const { section, info, text, yesNo } = questions;
 
-    let pendingSection: string | undefined;
-
-    /** Starts a section; its title is shown before its first question, so a section answered by options shows none. */
-    function section(n: number, title: string): void {
-        // Without prompts there are no sections to show.
-        pendingSection = noPrompts ? undefined : `Section (${n}/${sectionCount}): ${title}`;
-    }
-
-    function showSection(): void {
-        if (pendingSection) showSectionTitle(pendingSection);
-        pendingSection = undefined;
-    }
-
-    /** A note within the current section, under its title. */
-    function info(format: string, ...values: unknown[]): void {
-        showSection();
-        showInfo(format, ...values);
-    }
-
-    const ask = {
-        input: (config: Parameters<typeof input>[0]) => (showSection(), input(config)),
-        confirm: (config: Parameters<typeof confirm>[0]) => (showSection(), confirm(config)),
-        checkbox: <Value,>(config: Parameters<typeof checkbox<Value>>[0]) => (showSection(), checkbox(config)),
-        select: <Value,>(config: Parameters<typeof select<Value>>[0]) => (showSection(), select(config)),
-    };
-
-    async function text(key: TextKey, message: string, def?: string, validate?: Validate) {
-        const value = given[key] ?? (noPrompts ? def : undefined);
-        if (value === undefined && !noPrompts) return ask.input({ message, default: def, validate });
-        const valid = validate?.(value ?? '') ?? true;
-        if (valid !== true) throw new Error(`${optionForAnswer[key]}: ${valid}`);
-        return value ?? '';
-    }
-
-    /** Asks a yes/no question, with an optional explanation on the line above it. */
-    async function yesNo(key: BooleanKey, message: string, def: boolean, intro?: string) {
-        const value = given[key] ?? (noPrompts ? def : undefined);
-        if (value !== undefined) return value;
-        showSection();
-        if (intro) explain(intro);
-        return ask.confirm({ message, default: def });
-    }
-
-    async function contributors(): Promise<string[]> {
-        const list = given.contributors;
-        if (list !== undefined) {
-            for (const person of list) {
-                const valid = validateContributor(person);
-                if (valid !== true) throw new Error(`${optionForAnswer.contributors}: ${valid}`);
-            }
-            return list.map((person) => person.trim());
-        }
-        if (noPrompts) return [];
-        const asked: string[] = [];
-        let def = gitUserName(cwd);
-        for (;;) {
-            const person = await ask.input({
-                message: asked.length
-                    ? 'Another contributor; empty to finish:'
-                    : 'Contributor, as "Name", "Name <email>", or "Name (url)", such as a GitHub profile; empty to skip:',
-                default: def,
-                validate: (value) => !value.trim() || validateContributor(value),
-            });
-            if (!person.trim()) return asked;
-            asked.push(person.trim());
-            def = undefined;
-        }
-    }
-
-    async function keywords(): Promise<string[]> {
-        const list = given.keywords;
-        if (list !== undefined) {
-            for (const word of list) {
-                const valid = validateKeyword(word);
-                if (valid !== true) throw new Error(`${optionForAnswer.keywords}: ${valid}`);
-            }
-            return list.map((word) => word.trim());
-        }
-        if (noPrompts) return [];
-        const typed = await ask.input({
-            message: 'Other keywords people search npm for, such as golang for Go; comma separated, empty to skip:',
-        });
-        return typed
-            .split(',')
-            .map((word) => word.trim())
-            .filter((word) => word);
-    }
-
-    /** The sources given on their own: word lists, and Hunspell files. */
-    async function givenSources(name: string): Promise<Source[]> {
-        const files = given.srcFiles;
-        if (files === undefined && noPrompts) {
-            if (options.sourceOptions.defineSource.length) return [];
-            if (!placeholderWordLists) {
-                throw new Error(
-                    'missing source. Give <source> or --source, or --placeholder-word-lists to start with an empty word list.',
-                );
-            }
-            return [wordList(name + '.txt', cwd, true)];
-        }
-        const list: Source[] = [];
-        if (files === undefined) {
-            let source = await askSource(name + '.txt');
-            while (source) {
-                list.push(source);
-                source = await askSource(undefined, true);
-            }
-            return list;
-        }
-        for (const file of files) {
-            const valid = validatePath(file);
-            if (valid !== true) throw new Error(valid);
-            list.push(isHunspellFile(file) ? hunspellFile(file, cwd) : givenWordList(file));
-        }
-        return list;
-    }
-
-    /** The sources given on their own, then those defined by the options and the prompts. */
-    async function allSources(name: string): Promise<Source[]> {
-        const all: SourceOptions = structuredClone(options.sourceOptions);
-        const plain = await givenSources(name);
-        // Every Hunspell file given on its own is a file of the one source `hunspell`.
-        const named = new Map<string, Source>();
-        for (const source of plain) {
-            if (!source.name) continue;
-            const other = named.get(source.name);
-            if (other) other.files.push(...source.files);
-            else named.set(source.name, { ...source, files: [...source.files] });
-        }
-        if (!noPrompts && named.has('hunspell')) await askAboutHunspell(all);
-        if (!noPrompts) await askDefined(all);
-        const sources = checkCopies([...plain.filter((s) => !s.name), ...parseSources(all, cwd, [...named.values()])]);
-        for (const source of sources) {
-            for (const warning of sourceWarnings(source, noPrompts)) warn(warning);
-        }
-        return sources;
-    }
-
-    /** The samples, with what they should be when prompting, and what's missing. */
-    async function allSamples(locale: string, languageId: string): Promise<Sample[]> {
-        if (!noPrompts) {
-            showSection();
-            explain(...samplesExplanation(locale, languageId));
-        }
-        const list = await gatherSamples(options.sampleOptions, {
-            locale,
-            cwd,
-            prompt: !noPrompts,
-            seattle: options.wikipediaSample,
-            ask,
-            info,
-        });
-        for (const warning of sampleWarnings(list, locale)) warn(warning);
-        return list;
-    }
-
-    /**
-     * The locale, with each item that isn't a known locale offered as the locales its name could mean, when it was typed
-     * at the prompt. Anything still unknown is a warning, not an error: cspell takes any locale.
-     */
-    async function checkedLocale(value: string): Promise<string> {
-        let locale = value;
-        if (!noPrompts && given.locale === undefined) {
-            const items: string[] = [];
-            for (const item of value.split(',').map((each) => each.trim())) {
-                const matches = item === '*' || localeName(item) ? [] : findLocales(item);
-                if (!matches.length) {
-                    items.push(item);
-                    continue;
-                }
-                const choices = matches.map(({ locale, name, ownName }) => ({
-                    name: `${locale}: ${ownName ? `${ownName}, ${name}` : name}`,
-                    value: locale,
-                }));
-                const message = `"${item}" isn't a locale. Pick the ones you meant (none keeps "${item}"):`;
-                const picked = await ask.checkbox({ message, choices });
-                items.push(...(picked.length ? picked : [item]));
-            }
-            locale = items.join(',');
-        }
-        for (const warning of localeWarnings(locale)) warn(warning);
-        return locale;
-    }
-
-    /**
-     * The locale. When the name stands for a language and the locale is asked, its locales are offered as a checklist,
-     * with the one from the name ticked; "Something else" asks for it as text.
-     */
-    async function askLocale(nameLocale: string | undefined, required: boolean): Promise<string> {
-        const typed = async (def: string | undefined) => {
-            const value = await text(
-                'locale',
-                required
-                    ? 'Locales, the natural languages it is for, comma separated, such as "en,en-US", or names such as "English":'
-                    : 'Locales, the natural languages it is for, comma separated, such as "en,en-US", or names such as "English"; "*" for any:',
-                def,
-                required ? (v) => (v.trim() && v.trim() !== '*') || 'Give a locale or a language name.' : undefined,
-            );
-            return value.trim() ? checkedLocale(value) : '';
-        };
-        if (!nameLocale || noPrompts || given.locale !== undefined)
-            return typed(nameLocale ?? (required ? undefined : '*'));
-        const language = nameLocale.split('-')[0];
-        const related = knownLocales().filter(({ locale }) => locale === language || locale.startsWith(language + '-'));
-        if (!related.some(({ locale }) => locale === nameLocale)) {
-            related.unshift({ locale: nameLocale, name: localeName(nameLocale) ?? nameLocale });
-        }
-        const other = '';
-        const choices = [
-            ...related.map(({ locale, name }) => ({
-                name: `${locale}: ${name}`,
-                value: locale,
-                checked: locale === nameLocale,
-            })),
-            { name: 'Something else (type it)', value: other },
-        ];
-        const picked = await ask.checkbox({ message: 'Locales for this dictionary:', choices });
-        const locales = picked.filter((locale) => locale !== other);
-        if (picked.includes(other) || !locales.length) {
-            const more = await typed(locales.length ? '' : undefined);
-            if (more && more !== '*') locales.push(more);
-        }
-        return locales.length ? locales.join(',') : '*';
-    }
-
-    /** Asks for the license, README, and URL of the Hunspell files, unless options gave them. */
-    async function askAboutHunspell(all: SourceOptions): Promise<void> {
-        const given = (list: string[]) => list.some((value) => /^hunspell[=/]/.test(value));
-        const exists = (v: string) => !v.trim() || checkFile(cwd, v.trim());
-        // Each file goes into src/hunspell/ under its own name.
-        const asLocal = (path: string) => `hunspell/${basename(path)}=${path}`;
-        if (!given(all.addSourceLicense)) {
-            const license = await ask.input({
-                message: "The Hunspell files' license file; empty to skip:",
-                validate: exists,
-            });
-            if (license.trim()) all.addSourceLicense.push(asLocal(license.trim()));
-        }
-        if (!given(all.addSourceReadme)) {
-            const readme = await ask.input({ message: "The Hunspell files' README; empty to skip:", validate: exists });
-            if (readme.trim()) all.addSourceReadme.push(asLocal(readme.trim()));
-        }
-        if (!given(all.addSourceUrl)) {
-            const url = await ask.input({ message: 'URL where the Hunspell files can be found; empty to skip:' });
-            if (url.trim()) all.addSourceUrl.push(`hunspell=${url.trim()}`);
-        }
-    }
-
-    /** Asks for named sources, as the options would give them. */
-    async function askDefined(all: SourceOptions): Promise<void> {
-        for (;;) {
-            const folder = (
-                await ask.input({
-                    message: 'Third-party source folder; empty to finish:',
-                    validate: (v) => !v.trim() || checkFolder(cwd, v.trim()),
-                })
-            ).trim();
-            if (!folder) return;
-            const inFolder = (v: string) => !v.trim() || checkFile(resolve(cwd, folder), v.trim());
-            const name = await ask.input({ message: 'Its name:', default: basename(resolve(cwd, folder)) });
-            all.defineSource.push(`${name}=${folder}`);
-            const withLocal = async (path: string) => {
-                const local = await ask.input({ message: `Its path in src/${name}/:`, default: path });
-                return local === path ? `${name}=${path}` : `${name}/${local}=${path}`;
-            };
-            for (;;) {
-                const file = await ask.input({
-                    message: `A word list or Hunspell file in ${folder}; empty to finish:`,
-                    validate: inFolder,
-                });
-                if (!file.trim()) break;
-                all.addSourceFile.push(await withLocal(file.trim()));
-            }
-            const license = await ask.input({ message: 'Its license file; empty to skip:', validate: inFolder });
-            if (license.trim()) all.addSourceLicense.push(await withLocal(license.trim()));
-            const readme = await ask.input({ message: 'Its README; empty to skip:', validate: inFolder });
-            if (readme.trim()) all.addSourceReadme.push(await withLocal(readme.trim()));
-            const url = await ask.input({ message: 'URL where it can be found; empty to skip:' });
-            if (url.trim()) all.addSourceUrl.push(`${name}=${url.trim()}`);
-        }
-    }
-
-    function givenWordList(file: string): Source {
-        const found = checkFile(cwd, file);
-        if (found !== true && !placeholderWordLists) {
-            throw new Error(`${found} Give --placeholder-word-lists to start with an empty word list.`);
-        }
-        return wordList(file, cwd, found !== true);
-    }
-
-    /** A path, and for a Hunspell file, its pair. A missing word list is a placeholder or an error, decided later. */
-    function validatePath(file: string): string | true {
-        if (!file.trim()) return 'Give the path to a word list or Hunspell .dic file.';
-        return isHunspellFile(file) ? checkFile(cwd, file) : true;
-    }
-
-    /** A source file, or with `another`, undefined for an empty answer. */
-    async function askSource(def: string | undefined, another = false): Promise<Source | undefined> {
-        for (;;) {
-            const typed = await ask.input({
-                message: another ? 'Another source file; empty to finish:' : 'Source file:',
-                default: def,
-                validate: (v) => (another && !v.trim()) || validatePath(v),
-            });
-            if (!typed.trim()) return undefined;
-            if (isHunspellFile(typed)) return hunspellFile(typed, cwd);
-            if (checkFile(cwd, typed) === true) return wordList(typed, cwd, false);
-            const message = `${typed} not found. Create an empty placeholder, src/${basename(typed)}?`;
-            if (placeholderWordLists || (await ask.confirm({ message, default: true })))
-                return wordList(typed, cwd, true);
-        }
-    }
-
-    /**
-     * Drop a file given twice, such as a Hunspell pair given as both its .dic and its .aff, and refuse two files
-     * copied to the same path.
-     */
-    function checkCopies(list: Source[]): Source[] {
-        // The files create-dictionary writes in src/ itself.
-        const copies = new Map<string, string>([['src/README.md', 'src/README.md']]);
-        if (options.additionalWords) copies.set('src/additional_words.txt', 'src/additional_words.txt');
-        if (options.excludeWords) copies.set('src/exclude_words.txt', 'src/exclude_words.txt');
-        const result: Source[] = [];
-        for (const source of list) {
-            const files = source.files.filter((file) => {
-                const to = srcDir(source) + file.local;
-                const from = resolve(source.root, file.path);
-                const other = copies.get(to);
-                if (other === from) return false;
-                if (other !== undefined) {
-                    throw new Error(`${other} and ${from} would both be copied to ${to}. Rename one of them.`);
-                }
-                copies.set(to, from);
-                return true;
-            });
-            if (files.length) result.push({ ...source, files });
-        }
-        return result;
-    }
-
-    if (!noPrompts) {
-        header(
-            'Create a dictionary for cspell',
-            `The dictionary is created in a new folder in ${literal('dictionaries/')}.`,
-            `To gather the information it needs, we'll ask you a series of short questions, grouped into ${sectionCount} sections.`,
-            '',
-            `Most questions have a default answer in ${asDefault('(parentheses)')}. Press ${key('Enter')} to accept it.`,
-            '',
-            `Guide: ${link('https://github.com/streetsidesoftware/cspell-dicts/blob/main/docs/guides/new-dictionary.md')}`,
-            '',
-            `Press ${key('Ctrl+C')} during the questions to stop without making changes.`,
-        );
-    }
+    if (!noPrompts) showIntroduction();
     section(1, 'Dictionary Info');
     const taken = await readTakenNames(repo);
     const typedName = await text('name', 'Directory name, such as en_US or medical-terms:', undefined, (value) =>
@@ -466,63 +81,18 @@ export async function getAnswers(options: CommandLine, repo: Repo, cwd: string):
         'Description on npm:',
         title(friendlyName) + ' dictionary for cspell.',
     );
-    const searchWords = await keywords();
+    const searchWords = await askKeywords(given, questions);
     section(2, "When It's Used");
-    // A name such as en_AU or german stands for its locale.
-    const nameLocale = localeFromWholeName(name);
-    const isSet = (value: string | undefined) => value !== undefined && value.trim() !== '*';
-    // A file type says it isn't for a natural language, so `en_IN --language-id erlang` gets no locale.
-    const fromName = given.locale === undefined && !isSet(given.languageId) ? nameLocale : undefined;
-    // A typed "*" counts too, so it reaches the check that the two aren't both "*".
-    const languageSettings =
-        options.languageSettings &&
-        (given.locale !== undefined || given.languageId !== undefined || !!fromName || !noPrompts);
-    if (fromName && (noPrompts || !languageSettings)) {
-        info('The locale is %s, from the name. Give %s to change it.', literal(fromName), literal('--locale'));
-    }
-    const { locale, languageId } = languageSettings
-        ? await enabledFor()
-        : { locale: await checkedLocale(given.locale ?? fromName ?? '*'), languageId: given.languageId ?? '*' };
-
-    /** The locale and file type of `languageSettings`. */
-    async function enabledFor(): Promise<{ locale: string; languageId: string }> {
-        // A natural language sets the locale, and anything else the file type, so only one of them is asked.
-        let kind: 'language' | 'files' | undefined;
-        if (isSet(given.locale) || fromName) kind = 'language';
-        else if (isSet(given.languageId) || given.locale !== undefined) kind = 'files';
-        else if (!noPrompts) {
-            kind = await ask.select({
-                message: 'What is this dictionary for?',
-                choices: [
-                    { name: 'A natural language, such as German or Australian English', value: 'language' as const },
-                    { name: 'Programming languages or file types, such as Ruby or Markdown', value: 'files' as const },
-                ],
-            });
-        }
-        const locale =
-            kind === 'files' ? (given.locale ?? '*') : await askLocale(nameLocale, kind === 'language' && !noPrompts);
-        const anyLocale = locale.trim() === '*';
-        const languageId =
-            kind === 'language' && !anyLocale && given.languageId === undefined
-                ? '*'
-                : await text(
-                      'languageId',
-                      'File types, the programming languages or file types it is for, comma separated, such as "ruby" or "markdown":',
-                      anyLocale && !noPrompts ? undefined : '*',
-                      validateLanguageId(anyLocale),
-                  );
-        return { locale, languageId };
-    }
-
+    const enabling = await askEnabling(name, given, options.languageSettings, questions);
     section(3, 'Words');
-    const sources = await allSources(name);
+    const sources = await askSources(name, options, cwd, questions);
     section(4, 'Samples');
-    const samples = await allSamples(locale, languageId);
+    const samples = await askSamples(enabling.locale, enabling.languageId, options, cwd, questions);
     // The trie is chosen, never asked: few people know what one is. --trie and --no-trie override it.
     const isHunspell = sources.some((source) => source.files.some((f) => isHunspellFile(f.path)));
     const useTrie = given.useTrie ?? (isHunspell || wordListBytes(sources) > largeWordLists);
     section(5, 'Maintainers');
-    const people = await contributors();
+    const people = await askContributors(given, cwd, questions);
     section(6, 'Finish');
     const doBuild = await yesNo(
         'doBuild',
@@ -544,9 +114,7 @@ export async function getAnswers(options: CommandLine, repo: Repo, cwd: string):
         additionalWords: options.additionalWords,
         excludeWords: options.excludeWords,
         enableForAllFiles: options.enableForAllFiles,
-        languageSettings,
-        locale,
-        languageId,
+        ...enabling,
         useTrie,
         doBuild,
     };
@@ -557,8 +125,100 @@ export function isDisabled({ languageSettings, enableForAllFiles }: Settings): b
     return !languageSettings && !enableForAllFiles;
 }
 
-type TextKey = { [K in keyof Answers]-?: Answers[K] extends string | undefined ? K : never }[keyof Answers];
-type BooleanKey = { [K in keyof Answers]-?: Answers[K] extends boolean | undefined ? K : never }[keyof Answers];
+/** The answers a prompt would have to ask for. */
+function missingAnswers(options: CommandLine): (keyof Answers)[] {
+    const keys = Object.keys(optionForAnswer) as (keyof Answers)[];
+    return keys.filter(
+        (key) =>
+            options.answers[key] === undefined &&
+            key !== 'useTrie' &&
+            !(key === 'srcFiles' && options.placeholderWordLists) &&
+            !(!options.languageSettings && (key === 'locale' || key === 'languageId')),
+    );
+}
+
+function showIntroduction(): void {
+    header(
+        'Create a dictionary for cspell',
+        `The dictionary is created in a new folder in ${literal('dictionaries/')}.`,
+        `To gather the information it needs, we'll ask you a series of short questions, grouped into ${sectionCount} sections.`,
+        '',
+        `Most questions have a default answer in ${asDefault('(parentheses)')}. Press ${key('Enter')} to accept it.`,
+        '',
+        `Guide: ${link('https://github.com/streetsidesoftware/cspell-dicts/blob/main/docs/guides/new-dictionary.md')}`,
+        '',
+        `Press ${key('Ctrl+C')} during the questions to stop without making changes.`,
+    );
+}
+
+async function askContributors(given: Answers, cwd: string, { ask, noPrompts }: Questions): Promise<string[]> {
+    const list = given.contributors;
+    if (list !== undefined) {
+        for (const person of list) {
+            const valid = validateContributor(person);
+            if (valid !== true) throw new Error(`${optionForAnswer.contributors}: ${valid}`);
+        }
+        return list.map((person) => person.trim());
+    }
+    if (noPrompts) return [];
+    const asked: string[] = [];
+    let def = gitUserName(cwd);
+    for (;;) {
+        const person = await ask.input({
+            message: asked.length
+                ? 'Another contributor; empty to finish:'
+                : 'Contributor, as "Name", "Name <email>", or "Name (url)", such as a GitHub profile; empty to skip:',
+            default: def,
+            validate: (value) => !value.trim() || validateContributor(value),
+        });
+        if (!person.trim()) return asked;
+        asked.push(person.trim());
+        def = undefined;
+    }
+}
+
+async function askKeywords(given: Answers, { ask, noPrompts }: Questions): Promise<string[]> {
+    const list = given.keywords;
+    if (list !== undefined) {
+        for (const word of list) {
+            const valid = validateKeyword(word);
+            if (valid !== true) throw new Error(`${optionForAnswer.keywords}: ${valid}`);
+        }
+        return list.map((word) => word.trim());
+    }
+    if (noPrompts) return [];
+    const typed = await ask.input({
+        message: 'Other keywords people search npm for, such as golang for Go; comma separated, empty to skip:',
+    });
+    return typed
+        .split(',')
+        .map((word) => word.trim())
+        .filter((word) => word);
+}
+
+/** The samples, with what they should be when prompting, and what's missing. */
+async function askSamples(
+    locale: string,
+    languageId: string,
+    options: CommandLine,
+    cwd: string,
+    { ask, info, noPrompts, showSection }: Questions,
+): Promise<Sample[]> {
+    if (!noPrompts) {
+        showSection();
+        explain(...samplesExplanation(locale, languageId));
+    }
+    const list = await gatherSamples(options.sampleOptions, {
+        locale,
+        cwd,
+        prompt: !noPrompts,
+        seattle: options.wikipediaSample,
+        ask,
+        info,
+    });
+    for (const warning of sampleWarnings(list, locale)) warn(warning);
+    return list;
+}
 
 /** The size of every word list to copy, in bytes. */
 function wordListBytes(sources: Source[]): number {
