@@ -41,28 +41,29 @@ export async function getAnswers(
     cwd: string,
     prompts: Prompts = terminalPrompts,
 ): Promise<Settings> {
-    const { answers: given } = options;
     const missing = missingAnswers(options);
     const noPrompts = options.yes || !missing.length;
     if (!noPrompts && !process.stdin.isTTY) {
         const names = missing.map((key) => optionForAnswer[key]).join(', ');
         throw new Error(`No terminal to prompt in. Give --yes, or all of: ${names}.`);
     }
-    const questions = createQuestions(given, noPrompts, prompts);
-    const { section, info, text, yesNo } = questions;
+    const questions = createQuestions(options.answers, noPrompts, prompts);
 
     if (!noPrompts) showIntroduction();
-    section(1, 'Dictionary Info');
+    questions.section(1, 'Dictionary Info');
     const taken = await readTakenNames(repo);
-    const typedName = await text('name', 'Directory name, such as en_US or medical-terms:', undefined, (value) =>
-        nameValidator(repo, taken)(conventionalName(value)),
+    const typedName = await questions.text(
+        'name',
+        'Directory name, such as en_US or medical-terms:',
+        undefined,
+        (value) => nameValidator(repo, taken)(conventionalName(value)),
     );
     // Names follow the repo's convention: medical-terms, en_AU, german.
     const name = conventionalName(typedName);
-    if (name !== typedName) info('The name is %s, as dictionary names are written.', literal(name));
+    if (name !== typedName) questions.info('The name is %s, as dictionary names are written.', literal(name));
     const id = toPackageName(name);
-    info('Package %s, dictionary ID %s.', literal(`@cspell/dict-${id}`), literal(id));
-    const friendlyName = await text(
+    questions.info('Package %s, dictionary ID %s.', literal(`@cspell/dict-${id}`), literal(id));
+    const friendlyName = await questions.text(
         'friendlyName',
         'Friendly name, such as "US English" or "Medical Terms":',
         // A name typed with spaces, such as "Medical Terms", is already a friendly name.
@@ -70,31 +71,31 @@ export async function getAnswers(
             ? typedName.trim().split(/\s+/).join(' ')
             : (friendlyNameFromLocale(name) ?? toFriendlyName(name)),
     );
-    const description = await text(
+    const description = await questions.text(
         'description',
         'Description, the words it covers, such as "Ruby keywords and standard library names":',
         languageDescription(name),
         validateDescription,
     );
-    const packageDescription = await text(
+    const packageDescription = await questions.text(
         'packageDescription',
         'Description on npm:',
         title(friendlyName) + ' dictionary for cspell.',
     );
-    const searchWords = await askKeywords(given, questions);
-    section(2, "When It's Used");
-    const enabling = await askEnabling(name, given, options.languageSettings, questions);
-    section(3, 'Words');
+    const searchWords = await askKeywords(questions);
+    questions.section(2, "When It's Used");
+    const enabling = await askEnabling(name, options.languageSettings, questions);
+    questions.section(3, 'Words');
     const sources = await askSources(name, options, cwd, questions);
-    section(4, 'Samples');
+    questions.section(4, 'Samples');
     const samples = await askSamples(enabling.locale, enabling.languageId, options, cwd, questions);
     // The trie is chosen, never asked: few people know what one is. --trie and --no-trie override it.
     const isHunspell = sources.some((source) => source.files.some((f) => isHunspellFile(f.path)));
-    const useTrie = given.useTrie ?? (isHunspell || wordListBytes(sources) > largeWordLists);
-    section(5, 'Maintainers');
-    const people = await askContributors(given, cwd, questions);
-    section(6, 'Finish');
-    const doBuild = await yesNo(
+    const useTrie = options.answers.useTrie ?? (isHunspell || wordListBytes(sources) > largeWordLists);
+    questions.section(5, 'Maintainers');
+    const people = await askContributors(cwd, questions);
+    questions.section(6, 'Finish');
+    const doBuild = await questions.yesNo(
         'doBuild',
         'Build it now?',
         !isHunspell,
@@ -151,8 +152,8 @@ function showIntroduction(): void {
     );
 }
 
-async function askContributors(given: Answers, cwd: string, { ask, noPrompts }: Questions): Promise<string[]> {
-    const list = given.contributors;
+async function askContributors(cwd: string, questions: Questions): Promise<string[]> {
+    const list = questions.given.contributors;
     if (list !== undefined) {
         for (const person of list) {
             const valid = validateContributor(person);
@@ -160,11 +161,11 @@ async function askContributors(given: Answers, cwd: string, { ask, noPrompts }: 
         }
         return list.map((person) => person.trim());
     }
-    if (noPrompts) return [];
+    if (questions.noPrompts) return [];
     const asked: string[] = [];
     let def = gitUserName(cwd);
     for (;;) {
-        const person = await ask.input({
+        const person = await questions.ask.input({
             message: asked.length
                 ? 'Another contributor; empty to finish:'
                 : 'Contributor, as "Name", "Name <email>", or "Name (url)", such as a GitHub profile; empty to skip:',
@@ -177,8 +178,8 @@ async function askContributors(given: Answers, cwd: string, { ask, noPrompts }: 
     }
 }
 
-async function askKeywords(given: Answers, { ask, noPrompts }: Questions): Promise<string[]> {
-    const list = given.keywords;
+async function askKeywords(questions: Questions): Promise<string[]> {
+    const list = questions.given.keywords;
     if (list !== undefined) {
         for (const word of list) {
             const valid = validateKeyword(word);
@@ -186,8 +187,8 @@ async function askKeywords(given: Answers, { ask, noPrompts }: Questions): Promi
         }
         return list.map((word) => word.trim());
     }
-    if (noPrompts) return [];
-    const typed = await ask.input({
+    if (questions.noPrompts) return [];
+    const typed = await questions.ask.input({
         message: 'Other keywords people search npm for, such as golang for Go; comma separated, empty to skip:',
     });
     return typed
@@ -202,19 +203,19 @@ async function askSamples(
     languageId: string,
     options: CommandLine,
     cwd: string,
-    { ask, info, noPrompts, showSection }: Questions,
+    questions: Questions,
 ): Promise<Sample[]> {
-    if (!noPrompts) {
-        showSection();
+    if (!questions.noPrompts) {
+        questions.showSection();
         explain(...samplesExplanation(locale, languageId));
     }
     const list = await gatherSamples(options.sampleOptions, {
         locale,
         cwd,
-        prompt: !noPrompts,
+        prompt: !questions.noPrompts,
         seattle: options.wikipediaSample,
-        ask,
-        info,
+        ask: questions.ask,
+        info: (format, ...values) => questions.info(format, ...values),
     });
     for (const warning of sampleWarnings(list, locale)) warn(warning);
     return list;

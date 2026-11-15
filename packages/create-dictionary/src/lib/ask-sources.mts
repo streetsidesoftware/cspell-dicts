@@ -52,10 +52,10 @@ async function givenSources(name: string, options: CommandLine, cwd: string, que
     }
     const list: Source[] = [];
     if (files === undefined) {
-        let source = await askSource(name + '.txt', false, placeholderWordLists, cwd, questions);
+        let source = await askSource(name + '.txt', placeholderWordLists, cwd, questions);
         while (source) {
             list.push(source);
-            source = await askSource(undefined, true, placeholderWordLists, cwd, questions);
+            source = await askSource(undefined, placeholderWordLists, cwd, questions);
         }
         return list;
     }
@@ -68,30 +68,30 @@ async function givenSources(name: string, options: CommandLine, cwd: string, que
 }
 
 /** Asks for the license, README, and URL of the Hunspell files, unless options gave them. */
-async function askAboutHunspell(all: SourceOptions, cwd: string, { ask }: Questions): Promise<void> {
-    const hasHunspell = (list: string[]) => list.some((value) => /^hunspell[=/]/.test(value));
-    const exists = (v: string) => !v.trim() || checkFile(cwd, v.trim());
-    // Each file goes into src/hunspell/ under its own name.
-    const asLocal = (path: string) => `hunspell/${basename(path)}=${path}`;
+async function askAboutHunspell(all: SourceOptions, cwd: string, questions: Questions): Promise<void> {
     if (!hasHunspell(all.addSourceLicense)) {
-        const license = await ask.input({
+        const license = await questions.ask.input({
             message: "The Hunspell files' license file; empty to skip:",
-            validate: exists,
+            validate: (v) => optionalFile(cwd, v),
         });
-        if (license.trim()) all.addSourceLicense.push(asLocal(license.trim()));
+        if (license.trim()) all.addSourceLicense.push(hunspellLocal(license.trim()));
     }
     if (!hasHunspell(all.addSourceReadme)) {
-        const readme = await ask.input({ message: "The Hunspell files' README; empty to skip:", validate: exists });
-        if (readme.trim()) all.addSourceReadme.push(asLocal(readme.trim()));
+        const readme = await questions.ask.input({
+            message: "The Hunspell files' README; empty to skip:",
+            validate: (v) => optionalFile(cwd, v),
+        });
+        if (readme.trim()) all.addSourceReadme.push(hunspellLocal(readme.trim()));
     }
     if (!hasHunspell(all.addSourceUrl)) {
-        const url = await ask.input({ message: 'URL where the Hunspell files can be found; empty to skip:' });
+        const url = await questions.ask.input({ message: 'URL where the Hunspell files can be found; empty to skip:' });
         if (url.trim()) all.addSourceUrl.push(`hunspell=${url.trim()}`);
     }
 }
 
 /** Asks for named sources, as the options would give them. */
-async function askDefined(all: SourceOptions, cwd: string, { ask }: Questions): Promise<void> {
+async function askDefined(all: SourceOptions, cwd: string, questions: Questions): Promise<void> {
+    const { ask } = questions;
     for (;;) {
         const folder = (
             await ask.input({
@@ -100,28 +100,50 @@ async function askDefined(all: SourceOptions, cwd: string, { ask }: Questions): 
             })
         ).trim();
         if (!folder) return;
-        const inFolder = (v: string) => !v.trim() || checkFile(resolve(cwd, folder), v.trim());
-        const name = await ask.input({ message: 'Its name:', default: basename(resolve(cwd, folder)) });
+        const root = resolve(cwd, folder);
+        const name = await ask.input({ message: 'Its name:', default: basename(root) });
         all.defineSource.push(`${name}=${folder}`);
-        const withLocal = async (path: string) => {
-            const local = await ask.input({ message: `Its path in src/${name}/:`, default: path });
-            return local === path ? `${name}=${path}` : `${name}/${local}=${path}`;
-        };
         for (;;) {
             const file = await ask.input({
                 message: `A word list or Hunspell file in ${folder}; empty to finish:`,
-                validate: inFolder,
+                validate: (v) => optionalFile(root, v),
             });
             if (!file.trim()) break;
-            all.addSourceFile.push(await withLocal(file.trim()));
+            all.addSourceFile.push(await askLocalPath(name, file.trim(), questions));
         }
-        const license = await ask.input({ message: 'Its license file; empty to skip:', validate: inFolder });
-        if (license.trim()) all.addSourceLicense.push(await withLocal(license.trim()));
-        const readme = await ask.input({ message: 'Its README; empty to skip:', validate: inFolder });
-        if (readme.trim()) all.addSourceReadme.push(await withLocal(readme.trim()));
+        const license = await ask.input({
+            message: 'Its license file; empty to skip:',
+            validate: (v) => optionalFile(root, v),
+        });
+        if (license.trim()) all.addSourceLicense.push(await askLocalPath(name, license.trim(), questions));
+        const readme = await ask.input({
+            message: 'Its README; empty to skip:',
+            validate: (v) => optionalFile(root, v),
+        });
+        if (readme.trim()) all.addSourceReadme.push(await askLocalPath(name, readme.trim(), questions));
         const url = await ask.input({ message: 'URL where it can be found; empty to skip:' });
         if (url.trim()) all.addSourceUrl.push(`${name}=${url.trim()}`);
     }
+}
+
+function hasHunspell(values: string[]): boolean {
+    return values.some((value) => /^hunspell[=/]/.test(value));
+}
+
+/** Each Hunspell file goes into src/hunspell/ under its own name. */
+function hunspellLocal(path: string): string {
+    return `hunspell/${basename(path)}=${path}`;
+}
+
+/** Valid when empty, which skips the question, or when the file is in the folder. */
+function optionalFile(folder: string, value: string): string | true {
+    return !value.trim() || checkFile(folder, value.trim());
+}
+
+/** A file of the source `name`, written as an option gives it, with the path in src/ it's asked for. */
+async function askLocalPath(name: string, path: string, questions: Questions): Promise<string> {
+    const local = await questions.ask.input({ message: `Its path in src/${name}/:`, default: path });
+    return local === path ? `${name}=${path}` : `${name}/${local}=${path}`;
 }
 
 function givenWordList(file: string, placeholderWordLists: boolean, cwd: string): Source {
@@ -138,14 +160,18 @@ function validatePath(file: string, cwd: string): string | true {
     return isHunspellFile(file) ? checkFile(cwd, file) : true;
 }
 
-/** A source file, or with `another`, undefined for an empty answer. */
+/**
+ * A source file. The first is asked with a default. Without one it's another file, and an empty answer gives
+ * undefined.
+ */
 async function askSource(
     def: string | undefined,
-    another: boolean,
     placeholderWordLists: boolean,
     cwd: string,
-    { ask }: Questions,
+    questions: Questions,
 ): Promise<Source | undefined> {
+    const { ask } = questions;
+    const another = def === undefined;
     for (;;) {
         const typed = await ask.input({
             message: another ? 'Another source file; empty to finish:' : 'Source file:',

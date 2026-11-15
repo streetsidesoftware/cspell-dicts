@@ -18,23 +18,27 @@ const fileTypesMessage =
 /** How the dictionary is enabled, from the options and the name, asking what they leave open. */
 export async function askEnabling(
     name: string,
-    given: Answers,
     languageSettingsAllowed: boolean,
     questions: Questions,
 ): Promise<Enabling> {
-    const { noPrompts, info } = questions;
+    const { given, noPrompts } = questions;
     const nameLocale = localeGivenByName(name, given);
     const languageSettings = languageSettingsAllowed && usesLanguageSettings(given, nameLocale, noPrompts);
     if (nameLocale && (noPrompts || !languageSettings)) {
-        info('The locale is %s, from the name. Give %s to change it.', literal(nameLocale), literal('--locale'));
+        questions.info(
+            'The locale is %s, from the name. Give %s to change it.',
+            literal(nameLocale),
+            literal('--locale'),
+        );
     }
     if (!languageSettings) {
-        const locale = await checkedLocale(given.locale ?? nameLocale ?? '*', given, questions);
+        const locale = await checkedLocale(given.locale ?? nameLocale ?? '*', questions);
         return { languageSettings, locale, languageId: given.languageId ?? '*' };
     }
     const kind = kindFromOptions(given, nameLocale) ?? (noPrompts ? 'files' : await askKind(questions));
     if (kind === 'files') {
-        // Without prompts and without a file type, the locale was typed as "*", so this default makes both "*".
+        // Without prompts and without a file type, the locale was typed as "*". The "*" default makes both "*", so
+        // the validator rejects them with the error that names --enable-for-all-files.
         const languageId = await questions.text(
             'languageId',
             fileTypesMessage,
@@ -43,7 +47,7 @@ export async function askEnabling(
         );
         return { languageSettings, locale: '*', languageId };
     }
-    const locale = await askLocale(nameLocale, given, questions);
+    const locale = await askLocale(nameLocale, questions);
     const languageId =
         given.languageId === undefined
             ? '*'
@@ -76,8 +80,8 @@ function isSet(value: string | undefined): boolean {
     return value !== undefined && value.trim() !== '*';
 }
 
-function askKind({ ask }: Questions): Promise<Kind> {
-    return ask.select<Kind>({
+function askKind(questions: Questions): Promise<Kind> {
+    return questions.ask.select<Kind>({
         message: 'What is this dictionary for?',
         choices: [
             { name: 'A natural language, such as German or Australian English', value: 'language' },
@@ -90,9 +94,8 @@ function askKind({ ask }: Questions): Promise<Kind> {
  * The locale. When the name stands for a language and the locale is asked, its locales are offered as a checklist, with
  * the one from the name ticked; "Something else" asks for it as text.
  */
-async function askLocale(nameLocale: string | undefined, given: Answers, questions: Questions): Promise<string> {
-    const { ask, noPrompts } = questions;
-    if (!nameLocale || noPrompts) return typedLocale(nameLocale, given, questions);
+async function askLocale(nameLocale: string | undefined, questions: Questions): Promise<string> {
+    if (!nameLocale || questions.noPrompts) return typedLocale(nameLocale, questions);
     const language = nameLocale.split('-')[0];
     const related = knownLocales().filter(({ locale }) => locale === language || locale.startsWith(language + '-'));
     if (!related.some(({ locale }) => locale === nameLocale)) {
@@ -107,31 +110,31 @@ async function askLocale(nameLocale: string | undefined, given: Answers, questio
         })),
         { name: 'Something else (type it)', value: other },
     ];
-    const picked = await ask.checkbox({ message: 'Locales for this dictionary:', choices });
+    const picked = await questions.ask.checkbox({ message: 'Locales for this dictionary:', choices });
     const locales = picked.filter((locale) => locale !== other);
     if (picked.includes(other) || !locales.length) {
-        locales.push(await typedLocale(locales.length ? '' : undefined, given, questions));
+        locales.push(await typedLocale(locales.length ? '' : undefined, questions));
     }
     return locales.join(',');
 }
 
-async function typedLocale(def: string | undefined, given: Answers, questions: Questions): Promise<string> {
+async function typedLocale(def: string | undefined, questions: Questions): Promise<string> {
     const value = await questions.text(
         'locale',
         'Locales, the natural languages it is for, comma separated, such as "en,en-US", or names such as "English":',
         def,
         (v) => (v.trim() && v.trim() !== '*') || 'Give a locale or a language name.',
     );
-    return checkedLocale(value, given, questions);
+    return checkedLocale(value, questions);
 }
 
 /**
  * The locale, with each item that isn't a known locale offered as the locales its name could mean, when it was typed at
  * the prompt. Anything still unknown is a warning, not an error: cspell takes any locale.
  */
-async function checkedLocale(value: string, given: Answers, { ask, noPrompts }: Questions): Promise<string> {
+async function checkedLocale(value: string, questions: Questions): Promise<string> {
     let locale = value;
-    if (!noPrompts && given.locale === undefined) {
+    if (!questions.noPrompts && questions.given.locale === undefined) {
         const items: string[] = [];
         for (const item of value.split(',').map((each) => each.trim())) {
             const matches = item === '*' || localeName(item) ? [] : findLocales(item);
@@ -144,7 +147,7 @@ async function checkedLocale(value: string, given: Answers, { ask, noPrompts }: 
                 value: locale,
             }));
             const message = `"${item}" isn't a locale. Pick the ones you meant (none keeps "${item}"):`;
-            const picked = await ask.checkbox({ message, choices });
+            const picked = await questions.ask.checkbox({ message, choices });
             items.push(...(picked.length ? picked : [item]));
         }
         locale = items.join(',');
