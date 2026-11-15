@@ -4,7 +4,7 @@ import { literal, warn } from './output.mts';
 import type { Questions } from './questions.mts';
 import { validateLanguageId } from './validate.mts';
 
-export interface Enabling {
+interface Enabling {
     languageSettings: boolean;
     locale: string;
     languageId: string;
@@ -64,7 +64,10 @@ export function localeGivenByName(name: string, given: Answers): string | undefi
     return localeFromWholeName(name);
 }
 
-/** A typed "*" counts, so it reaches the check that the two aren't both "*". */
+/**
+ * Whether the dictionary gets a `languageSettings` section: when a locale or file type is given, the name gives a
+ * locale, or the prompts ask. A typed "*" counts as given, so it reaches the check that the two aren't both "*".
+ */
 export function usesLanguageSettings(given: Answers, nameLocale: string | undefined, noPrompts: boolean): boolean {
     return given.locale !== undefined || given.languageId !== undefined || !!nameLocale || !noPrompts;
 }

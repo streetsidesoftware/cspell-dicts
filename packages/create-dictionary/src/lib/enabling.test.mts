@@ -89,6 +89,12 @@ describe('askEnabling without prompts', () => {
             await assert.rejects(askEnabling('medical-terms', true, questions), /^Error: --locale: Give a locale/);
         }
     });
+
+    it('writes a padded "*" locale as "*" for a file type', async () => {
+        const questions = createQuestions({ locale: ' * ', languageId: 'ruby' }, true, scripted({}, []));
+        const result = await askEnabling('medical-terms', true, questions);
+        assert.deepEqual(result, { languageSettings: true, locale: '*', languageId: 'ruby' });
+    });
 });
 
 describe('localeGivenByName', () => {
