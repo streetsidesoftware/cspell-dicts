@@ -1,5 +1,12 @@
 # Changelog
 
+## [1.3.4](https://github.com/streetsidesoftware/cspell-dicts/compare/@cspell/dict-de-ch@1.3.3...@cspell/dict-de-ch@1.3.4) (2026-11-12)
+
+
+### Updates and Bug Fixes
+
+* accept all-caps ß words in de_DE, de_AT, and de_CH ([#6041](https://github.com/streetsidesoftware/cspell-dicts/issues/6041)) ([dae7b45](https://github.com/streetsidesoftware/cspell-dicts/commit/dae7b45b85eb4f89ee4b107be2e1da80f2b989ea))
+
 ## [1.3.3](https://github.com/streetsidesoftware/cspell-dicts/compare/@cspell/dict-de-ch@1.3.2...@cspell/dict-de-ch@1.3.3) (2026-10-05)
 
 

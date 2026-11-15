@@ -3,6 +3,13 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+## [4.5.4](https://github.com/streetsidesoftware/cspell-dicts/compare/@cspell/dict-python@4.5.3...@cspell/dict-python@4.5.4) (2026-11-12)
+
+
+### Updates and Bug Fixes
+
+* **python:** add pytest and pytest-mock API terms ([#6048](https://github.com/streetsidesoftware/cspell-dicts/issues/6048)) ([bc38111](https://github.com/streetsidesoftware/cspell-dicts/commit/bc3811115775365fcb7be16438d3ffa92327305b))
+
 ## [4.5.3](https://github.com/streetsidesoftware/cspell-dicts/compare/@cspell/dict-python@4.5.2...@cspell/dict-python@4.5.3) (2026-11-05)
 
 
