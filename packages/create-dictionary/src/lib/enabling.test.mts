@@ -4,19 +4,8 @@ import { after, before, describe, it, mock } from 'node:test';
 import { askEnabling, kindFromOptions, localeGivenByName, usesLanguageSettings } from './enabling.mts';
 import type { Answers } from './options.mts';
 import { createQuestions } from './questions.mts';
-import type { Prompts } from './questions.mts';
-
-interface Asked {
-    message: string;
-    default?: string;
-    choices?: { value: unknown; checked?: boolean }[];
-}
-
-interface Script {
-    select?: string[];
-    checkbox?: string[][];
-    input?: string[];
-}
+import { scriptedPrompts } from './test-prompts.mts';
+import type { Asked, Script } from './test-prompts.mts';
 
 before(() => {
     mock.method(console, 'log', () => undefined);
@@ -85,13 +74,13 @@ describe('askEnabling at the prompts', () => {
 describe('askEnabling without prompts', () => {
     it('rejects a blank locale', async () => {
         for (const locale of [' ', '']) {
-            const questions = createQuestions({ locale }, true, scripted({}, []));
+            const questions = createQuestions({ locale }, true, scriptedPrompts({}));
             await assert.rejects(askEnabling('medical-terms', true, questions), /^Error: --locale: Give a locale/);
         }
     });
 
     it('writes a padded "*" locale as "*" for a file type', async () => {
-        const questions = createQuestions({ locale: ' * ', languageId: 'ruby' }, true, scripted({}, []));
+        const questions = createQuestions({ locale: ' * ', languageId: 'ruby' }, true, scriptedPrompts({}));
         const result = await askEnabling('medical-terms', true, questions);
         assert.deepEqual(result, { languageSettings: true, locale: '*', languageId: 'ruby' });
     });
@@ -155,32 +144,8 @@ describe('kindFromOptions', () => {
 /** How a dictionary with this name is enabled at the prompts, with the questions asked. */
 async function enabling(name: string, given: Answers, script: Script = {}) {
     const asked: Asked[] = [];
-    const result = await askEnabling(name, true, createQuestions(given, false, scripted(script, asked)));
+    const result = await askEnabling(name, true, createQuestions(given, false, scriptedPrompts(script, asked)));
     return { result, asked };
-}
-
-/** Prompts that give the script's answers in order and record each question; any other question fails. */
-function scripted(script: Script, asked: Asked[]): Prompts {
-    const answers = {
-        select: [...(script.select ?? [])],
-        checkbox: [...(script.checkbox ?? [])],
-        input: [...(script.input ?? [])],
-    };
-    return {
-        input: async ({ message, default: def }) => {
-            asked.push({ message, default: def });
-            return answers.input.shift() ?? assert.fail(`unexpected question: ${message}`);
-        },
-        confirm: async ({ message }) => assert.fail(`unexpected question: ${message}`),
-        checkbox: async <Value,>({ message, choices }: { message: string; choices: readonly unknown[] }) => {
-            asked.push({ message, choices: choices as Asked['choices'] });
-            return (answers.checkbox.shift() ?? assert.fail(`unexpected question: ${message}`)) as Value[];
-        },
-        select: async <Value,>({ message }: { message: string }) => {
-            asked.push({ message });
-            return (answers.select.shift() ?? assert.fail(`unexpected question: ${message}`)) as Value;
-        },
-    };
 }
 
 function ticked(question: Asked): unknown[] {
