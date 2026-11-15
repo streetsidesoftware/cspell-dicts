@@ -28,9 +28,49 @@ locales it's enabled for all end up in users' configs. Settle those before build
 
 ## 1. Check it doesn't exist
 
-- Look through `dictionaries/` and the root `README.md`'s list of dictionaries.
-- Run `pnpm exec cspell trace --only-found <word>` from the repo root with a few typical words, to see which
-  dictionaries already have them.
+The goal is no duplicate dictionary. A dictionary for this language or field may exist under another name, or be part
+of a broader one.
+
+### Search the dictionaries
+
+From the repo root, search the list of dictionaries and every dictionary's settings for the language's name and its file
+extensions:
+
+```sh
+git grep -il -e "<language>" -e "<extension>" -- README.md "dictionaries/*/cspell-ext.json"
+```
+
+### Search issues and pull requests
+
+Search the issues and pull requests of [cspell-dicts](https://github.com/streetsidesoftware/cspell-dicts/issues?q=) and
+[cspell](https://github.com/streetsidesoftware/cspell/issues?q=) for the language. Someone may have asked for it, started
+it, or added its file types to cspell.
+
+### Check cspell knows the file type
+
+cspell enables a dictionary for a file by its file type, such as `python`, which it gets from the file's extension. Check
+that cspell has the language's file types and extensions, in
+[`@cspell/filetypes`](https://github.com/streetsidesoftware/cspell/blob/main/packages/cspell-filetypes/src/definitions.ts),
+and that the cspell installed in this repo has them too. If it doesn't, the dictionary needs `overrides`, as described in
+[Try it with cspell](#7-try-it-with-cspell).
+
+### Check a few words
+
+For a language that might sit inside a broader dictionary under another name, see which dictionaries have a few typical
+words. `cspell trace` needs the built dictionaries, so prepare them first:
+
+```sh
+pnpm install
+pnpm run prepare:dictionaries
+pnpm exec cspell trace --only-found <word>
+```
+
+Checks:
+
+- No "Dictionary Errors." in the output. Each dictionary that "failed to load" is skipped, so its words are missing
+  from the result. `pnpm exec cspell trace --all <word>` lists them.
+- A dictionary that has a word may not be enabled for this file type. To see what cspell reports in a file of this type,
+  spell check a few typical lines: `pnpm exec cspell lint --no-progress --language-id <file type> stdin < <file>`.
 
 If an existing dictionary comes close, adding words to it may be the better change.
 
@@ -67,6 +107,16 @@ before building it. Say what the words are and where they come from. A maintaine
 - If the license is missing or unclear, stop and ask the maintainers in an issue before going further.
 
 For an upstream word list, also read [Upstream updates](./upstream-updates.md): the dictionary gets a `sync` script.
+
+Check what the source holds, too:
+
+- **Errors:** scan the source for typos and wrong forms before trusting it. Leave the wrong ones out with
+  `src/exclude_words.txt`.
+- **Gaps:** a dictionary is only as complete as its source. A list of a language's functions may leave out the older or
+  shorter names real code uses. Compare the source with a few files of real code, and add what's missing to
+  `src/additional_words.txt`.
+- **Names joined with `_`:** cspell checks code word by word, so it never matches a stored `read_csv`. The build doesn't
+  split at `_`. Split such names into their words, `read` and `csv`, when making the word list.
 
 ## 4. Create the dictionary
 
@@ -180,7 +230,10 @@ Checks:
 - `pnpm test` passes. Real samples often have words the dictionary lacks. For each word it reports:
   - A real word: add it to `src/additional_words.txt`, and build again.
   - A name, such as a person or a river: add it to `words` in `samples/cspell.json`.
-- `pnpm run lint` leaves no errors.
+  - A name from the code, such as a variable, a project, or a test string: add it to `words` in `samples/cspell.json`
+    too. Code samples bring many of these, so prefer samples with few test strings.
+- `pnpm run lint` leaves no errors. It spell checks the dictionary's README and settings too. Add a word they need, such
+  as a source's name, to `words` in the dictionary's `cspell.json`.
 
 ## 7. Try it with cspell
 
@@ -199,6 +252,31 @@ pnpm exec cspell lint --config try.config.yaml --root <folder> --locale=<locale>
 Words the dictionary has aren't reported. `<file>` is relative to `<folder>`.
 
 Delete `try.config.yaml` when you are done, so it isn't committed.
+
+### Check it's enabled for the file type
+
+The check above enables the dictionary by name. Users get it by file type instead, which cspell gets from a file's
+extension. For a dictionary enabled for a file type, check a file with each of its extensions, without `--language-id`.
+From the repo root:
+
+```sh
+pnpm exec cspell lint --no-progress -c dictionaries/<name>/cspell-ext.json --root <folder> <file>
+```
+
+If it reports words the dictionary has, cspell doesn't map that extension to the file type. Add an `overrides` entry
+to `cspell-ext.json`, as [Julia](https://github.com/streetsidesoftware/cspell-dicts/blob/main/dictionaries/julia/cspell-ext.json)
+does, so users get the fix too:
+
+```json
+"overrides": [{ "filename": "**/*.{jl,JL}", "languageId": "julia" }]
+```
+
+- File names are case sensitive here, so list uppercase extensions too.
+- An override's `languageId` replaces the file type cspell gave the file. When cspell gives a file two file types, such
+  as `json` and `jsonc` for a `.jsonc` file, list both, so users' settings for either still apply.
+- On macOS and Windows, `a.PY` and `a.py` are the same file. Check each in its own folder.
+- Don't fix this in `samples/cspell.json`. That only hides the problem from the tests. Its own override sets the file
+  type for `sample-words-in-dictionary.txt` only. Other samples get theirs from their extension, as users' files do.
 
 ## 8. Open a PR
 

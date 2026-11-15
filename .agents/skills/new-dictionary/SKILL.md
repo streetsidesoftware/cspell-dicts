@@ -14,14 +14,12 @@ uses the guide for the build and `feature-design`'s interview for the design.
 
 ### 1. Check it doesn't exist
 
-Make sure a new dictionary is the right change.
+Make sure a new dictionary is the right change: no duplicate dictionary.
 
-- **Do:** look through `dictionaries/`, and from the repo root run this with a few typical words:
-
-  ```sh
-  pnpm exec cspell trace --only-found <word>
-  ```
-
+- **Do** the guide's step 1: search the dictionaries' settings, issues and PRs in cspell-dicts and cspell, and cspell's
+  file types. Run `cspell trace` only after `pnpm run prepare:dictionaries`, and keep its stderr.
+- **Check:** "Dictionary Errors." means the trace missed dictionaries. A dictionary that has a word may not be enabled
+  for this file type.
 - **Stop and ask** if an existing dictionary comes close: adding words to it with `word-change` may be the better
   change.
 
@@ -32,7 +30,8 @@ checkout.
 
 - **Ask** for the directory name, such as `ruby` or `en_AU`. The package name follows from it: `@cspell/dict-<name>`,
   lowercase, with other characters turned into `-`.
-- **Do,** in the main checkout (the first path `git worktree list` prints). The design and the dictionary go in this
+- **Do:** if this session already runs in a worktree, work there on a branch from a fresh `origin/main`. Otherwise,
+  in the main checkout (the first path `git worktree list` prints), make one. The design and the dictionary go in this
   branch and one PR:
 
   ```sh
@@ -42,10 +41,13 @@ checkout.
 
 ### 3. Design it
 
-Decide everything `pnpm create-dictionary` needs, one decision at a time.
+Decide everything `pnpm create-dictionary` needs.
 
-- **Ask** the way `feature-design` step 5 does: one question at a time, lettered options showing the cspell config a
-  user would write, facts checked first, and the user free to defer.
+- **Ask,** for a dictionary that follows the guide's usual pattern, with one proposal: the whole design with its
+  defaults in one message. Then ask only what has no clear default, such as the sources and the scope.
+- **Ask,** for anything else, the way `feature-design` step 5 does: one question at a time, lettered options showing the
+  cspell config a user would write, facts checked first, and the user free to defer.
+- **Do:** for each source option, say what it costs to build and maintain, as `docs/design-questions.md` asks.
 - **Ask,** using `docs/design-questions.md`: "Why and who", then "Names and IDs", "When it's enabled", "Sources and
   license", "Build", "Testing and samples", and "Release surface".
 - **Ask** these too, since the command needs them:
@@ -136,10 +138,13 @@ Show that the dictionary builds, passes, and works in cspell.
 
 - **Check:**
   - After committing, `pnpm run check-dirty` passes: lint left nothing behind.
-  - In cspell, as in the guide's step 7 (`cspell init`), a sample spell checks cleanly. Show the user the result.
+  - In cspell, as in the guide's step 7, a sample spell checks cleanly. Show the user the result.
+  - For a file type, the dictionary is enabled for each extension, uppercase too, as the guide's step 7 checks. Fix a
+    missing one with `overrides` in `cspell-ext.json`, never in `samples/cspell.json`.
+  - A few lines of real code spell check cleanly, not only the source's own words.
 - **If it fails:** fix what it reports, and run the checks again until they pass. For a word a sample uses that the
-  dictionary lacks: add a real word to `src/additional_words.txt` and build again, and a name to `words` in
-  `samples/cspell.json`. Ask the user when it's unclear which it is.
+  dictionary lacks: add a real word to `src/additional_words.txt` and build again, and a name or an identifier to
+  `words` in `samples/cspell.json`. Ask the user when it's unclear which it is.
 
 ### 7. Open one PR
 
