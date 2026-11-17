@@ -23,30 +23,17 @@ Find out what the dictionary is for, and which kind it is.
 - **Do:** treat related dictionaries as examples. Sharing words with them is normal. To find them, run `cspell trace`
   after `pnpm run prepare:dictionaries`. "Dictionary Errors." means some failed to load, and the result is incomplete.
 
-### 2. Set up a worktree
-
-Keep the work out of the user's checkout.
-
-- **Do:** if this session already runs in a worktree, work there on a branch from a fresh `origin/main`. Otherwise,
-  in the main checkout (the first path `git worktree list` prints), make one. The design and the dictionary go in this
-  branch and one PR:
-
-  ```sh
-  git fetch origin main
-  git worktree add -b new-dictionary/<name> .claude/worktrees/new-dictionary-<name> origin/main
-  ```
-
-### 3. Propose the design
+### 2. Propose the design
 
 Turn the purpose into everything `pnpm create-dictionary` needs, starting from the kind's usual answers.
 
 - **Ask** with one proposal: the whole design in one message, each choice with its usual answer and a short reason.
   Then ask only about what has no clear answer, such as the sources and the scope. The proposal covers:
-  - **Name:** the directory name, such as `ruby` or `en_AU`. The package name follows from it: `@cspell/dict-<name>`,
-    lowercase, with other characters turned into `-`.
+  - **Name and dictionary IDs:** the directory name, such as `ruby` or `en_AU`. The package name follows from it:
+    `@cspell/dict-<name>`, lowercase, with other characters turned into `-`. The dictionary ID is usually the same.
   - **When it's enabled:** the locale for a natural language, such as `en-AU`, or the file types for code, such as
     `ruby` ([VS Code language IDs](https://code.visualstudio.com/docs/languages/identifiers)). Or not until users enable
-    it. Never both `*`.
+    it. Never both `*`, for the reason in the guide's step 2.
   - **Sources:** where the words come from, and what each option costs to build and maintain, as
     `docs/design-questions.md` asks. If a file the user named doesn't exist, ask for the right path, or whether to start
     empty.
@@ -61,6 +48,19 @@ Turn the purpose into everything `pnpm create-dictionary` needs, starting from t
   script as in `docs/guides/upstream-updates.md`, offer to settle that part first with `feature-design`.
 - **Do:** keep the purpose and a list of the decisions, one line each, for the PR description.
 - **Stop and ask:** build once the user agrees with the design.
+
+### 3. Set up a worktree
+
+Keep the work out of the user's checkout.
+
+- **Do:** if this session already runs in a worktree, work there on a branch from a fresh `origin/main`. Otherwise,
+  in the main checkout (the first path `git worktree list` prints), make one. The design and the dictionary go in this
+  branch and one PR:
+
+  ```sh
+  git fetch origin main
+  git worktree add -b new-dictionary/<name> .claude/worktrees/new-dictionary-<name> origin/main
+  ```
 
 ### 4. Create the dictionary
 

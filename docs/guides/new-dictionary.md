@@ -27,8 +27,9 @@ The words of a language, such as Australian English.
 - **Examples:** [German](https://github.com/streetsidesoftware/cspell-dicts/tree/main/dictionaries/de_DE), and its
   variants for [Austria](https://github.com/streetsidesoftware/cspell-dicts/tree/main/dictionaries/de_AT) and
   [Switzerland](https://github.com/streetsidesoftware/cspell-dicts/tree/main/dictionaries/de_CH).
-- **Name:** the locale, such as `en_AU`.
-- **Enabled:** for its locale, such as `en-AU`.
+- **Name:** the locale, such as `en_AU`, or the language alone, such as `sv`.
+- **Enabled:** for its locale, such as `en-AU`. Decide whether a regional variant is also enabled for the language
+  alone: `de_DE` and `de_CH` are enabled for `de`, and `de_AT` isn't.
 - **Words:** usually a Hunspell dictionary, a `.dic` and `.aff` pair, often from an npm package such as `dictionary-de`.
   A plain word list works too.
 - **Samples:** Wikipedia articles in the language. The command fetches one for you.
@@ -41,7 +42,7 @@ The jargon of an industry or a field, such as medicine or gaming.
 
 - **Examples:** [Medical Terms](https://github.com/streetsidesoftware/cspell-dicts/tree/main/dictionaries/medicalterms)
   and [Gaming](https://github.com/streetsidesoftware/cspell-dicts/tree/main/dictionaries/gaming-terms).
-- **Name:** the field, such as `medical-terms`.
+- **Name:** the field, such as `gaming-terms`.
 - **Enabled:** often not until users enable it (`--no-language-settings`), as Gaming is. Jargon in one project can hide
   a typo in another. Medical Terms is enabled for every file, which a maintainer usually decides.
 - **Words:** a list you collect, or a published glossary. Check the glossary's license.
@@ -71,9 +72,10 @@ The names of a framework, platform, or tool, such as Django or Kubernetes: its p
 - **Name:** the ecosystem, such as `django`.
 - **Enabled:** for the file types its code and settings are written in, such as `python,html`. Or not until users enable
   it (`--no-language-settings`), for words that are only right in projects that use it. A framework for one language,
-  such as FastAPI, is enabled for that language's file type, `python`.
-- **Words:** its documentation, or a list it publishes. These often change, so a script that fetches them again may be
-  worth it. See [Upstream updates](./upstream-updates.md).
+  such as FastAPI, can be enabled for that language's file type, `python`. That accepts its names in every Python
+  file, including projects that don't use it.
+- **Words:** its documentation, or a list it publishes. These often change, so a maintainer may add a script that
+  fetches them again. See [Upstream updates](./upstream-updates.md).
 - **Samples:** real files from a project that uses it.
 
 ### Something else
@@ -136,8 +138,6 @@ Tips for the words:
 - **Errors:** a source can have typos. Leave the wrong words out with `src/exclude_words.txt`.
 - **Gaps:** a dictionary is only as complete as its source. Compare the source with a few real files, and add what's
   missing to `src/additional_words.txt`.
-- **For code, names joined with `_`:** cspell checks code word by word, so it never matches a stored `read_csv`. The
-  build doesn't split at `_`. Split such names into their words, `read` and `csv`, in the word list.
 
 ## 4. Create the dictionary
 
@@ -285,11 +285,12 @@ pnpm exec cspell lint --no-progress -c dictionaries/<name>/cspell-ext.json --roo
 ```
 
 If it reports words the dictionary has, cspell doesn't map that extension to the file type. Add an `overrides` entry
-to `cspell-ext.json`, as [Julia](https://github.com/streetsidesoftware/cspell-dicts/blob/main/dictionaries/julia/cspell-ext.json)
-does, so users get the fix too. With uppercase extensions, it looks like this:
+to `cspell-ext.json`, so users get the fix too.
+[Julia](https://github.com/streetsidesoftware/cspell-dicts/blob/main/dictionaries/julia/cspell-ext.json) has one from
+before cspell knew `.jl`:
 
 ```json
-"overrides": [{ "filename": "**/*.{jl,JL}", "languageId": "julia" }]
+"overrides": [{ "filename": "**/*.jl", "languageId": "julia" }]
 ```
 
 - File names are case sensitive here, so list uppercase extensions too.
