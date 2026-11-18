@@ -2,43 +2,36 @@ import assert from 'node:assert/strict';
 import { mkdirSync, mkdtempSync, rmSync, writeFileSync } from 'node:fs';
 import { tmpdir } from 'node:os';
 import { join } from 'node:path';
-import { after, before, beforeEach, describe, it, mock } from 'node:test';
+import { after, before, beforeEach, describe, it } from 'node:test';
 
+import { getAnswers } from './answers.mts';
 import type { Answers, CommandLine } from './options.mts';
+import type { Prompts } from './questions.mts';
 import type { Repo } from './repo.mts';
 import { noSampleOptions } from './samples.mts';
 import { noSourceOptions } from './sources.mts';
 
-interface Question {
-    message: string;
-    default?: string | boolean;
-}
-
 /** The messages of the questions asked. */
 let asked: string[] = [];
 
-mock.module('@inquirer/prompts', {
-    namedExports: {
-        input: async ({ message, default: def }: Question) => {
-            asked.push(message);
-            return def ?? (message.startsWith('File types') ? 'ruby' : '');
-        },
-        confirm: async ({ message, default: def }: Question) => {
-            asked.push(message);
-            return def ?? false;
-        },
-        checkbox: async ({ message }: Question) => {
-            asked.push(message);
-            return [];
-        },
-        select: async ({ message }: Question) => {
-            asked.push(message);
-            return 'files';
-        },
+const prompts: Prompts = {
+    input: async ({ message, default: def }) => {
+        asked.push(message);
+        return def ?? (message.startsWith('File types') ? 'ruby' : '');
     },
-});
-
-const { getAnswers } = await import('./answers.mts');
+    confirm: async ({ message, default: def }) => {
+        asked.push(message);
+        return def ?? false;
+    },
+    checkbox: async ({ message }) => {
+        asked.push(message);
+        return [];
+    },
+    select: async <Value,>({ message }: { message: string }) => {
+        asked.push(message);
+        return 'files' as Value;
+    },
+};
 
 const kindQuestion = 'What is this dictionary for?';
 
@@ -79,7 +72,7 @@ function prompted(answers: Answers, more: Partial<CommandLine> = {}) {
         skipInstall: true,
         ...more,
     };
-    return getAnswers(commandLine, repo, root);
+    return getAnswers(commandLine, repo, root, prompts);
 }
 
 describe('getAnswers at the prompts', () => {
