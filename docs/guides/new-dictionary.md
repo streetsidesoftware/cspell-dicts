@@ -11,30 +11,100 @@ level: comfortable with basic git and a terminal; doesn't read or write code
 > Can't use a terminal? [Open an issue](https://github.com/streetsidesoftware/cspell-dicts/issues/new) with the
 > words and where they come from, and someone can build it.
 
-How to add a new dictionary package. To change the words in an existing one, see [Word changes](./word-changes.md).
+How to build a dictionary for cspell, from the idea to a pull request. You bring the purpose: the words people write
+and cspell flags. This guide walks you through the choices and the commands, and maintainers help with the rest in
+review. To change the words in an existing dictionary, see [Word changes](./word-changes.md).
 
-A new package makes public promises from its first release: its package name, its dictionary IDs, and the files or
-locales it's enabled for all end up in users' configs. Settle those before building.
+## 1. What are you making?
 
-## Kinds of dictionaries
+Most dictionaries are one of four kinds. Each kind has its usual answers, and existing dictionaries of that kind show
+them. Find yours below, and look at one of its examples before you start.
 
-- **Programming and file-type dictionaries** hold the keywords, common libraries, function names, and other words of an
-  ecosystem. Examples: [TypeScript](https://github.com/streetsidesoftware/cspell-dicts/tree/main/dictionaries/typescript)
-  and [Python](https://github.com/streetsidesoftware/cspell-dicts/tree/main/dictionaries/python).
-- **Natural language dictionaries** hold the words of a language, often built from a Hunspell dictionary. Example:
-  [English US](https://github.com/streetsidesoftware/cspell-dicts/tree/main/dictionaries/en_US). See also
-  [Natural language dictionaries](../language-dictionaries.md).
-- **Specialized dictionaries** hold the words of a field, such as `companies` or `medicalterms`.
+### A natural language
 
-## 1. Check it doesn't exist
+The words of a language, such as Australian English.
 
-- Look through `dictionaries/` and the root `README.md`'s list of dictionaries.
-- Run `pnpm exec cspell trace --only-found <word>` from the repo root with a few typical words, to see which
-  dictionaries already have them.
+- **Examples:** [German](https://github.com/streetsidesoftware/cspell-dicts/tree/main/dictionaries/de_DE), and its
+  variants for [Austria](https://github.com/streetsidesoftware/cspell-dicts/tree/main/dictionaries/de_AT) and
+  [Switzerland](https://github.com/streetsidesoftware/cspell-dicts/tree/main/dictionaries/de_CH).
+- **Name:** the locale, such as `en_AU`, or the language alone, such as `sv`.
+- **Enabled:** for its locale, such as `en-AU`. Decide whether a regional variant is also enabled for the language
+  alone: `de_DE` and `de_CH` are enabled for `de`, and `de_AT` isn't.
+- **Words:** usually a Hunspell dictionary, a `.dic` and `.aff` pair, often from an npm package such as `dictionary-de`.
+  A plain word list works too.
+- **Samples:** Wikipedia articles in the language. The command fetches one for you.
 
-If an existing dictionary comes close, adding words to it may be the better change.
+See also [Natural language dictionaries](../language-dictionaries.md).
+
+### Terminology of a field
+
+The jargon of an industry or a field, such as medicine or gaming.
+
+- **Examples:** [Medical Terms](https://github.com/streetsidesoftware/cspell-dicts/tree/main/dictionaries/medicalterms)
+  and [Gaming](https://github.com/streetsidesoftware/cspell-dicts/tree/main/dictionaries/gaming-terms).
+- **Name:** the field, such as `gaming-terms`.
+- **Enabled:** often not until users enable it (`--no-language-settings`), as Gaming is. Jargon in one project can hide
+  a typo in another. Medical Terms is enabled for every file, which a maintainer usually decides.
+- **Words:** a list you collect, or a published glossary. Check the glossary's license.
+- **Samples:** a text from the field, such as an article.
+
+### A programming language
+
+The keywords and standard library names of a language, such as Python.
+
+- **Examples:** [Python](https://github.com/streetsidesoftware/cspell-dicts/tree/main/dictionaries/python) and
+  [Julia](https://github.com/streetsidesoftware/cspell-dicts/tree/main/dictionaries/julia).
+- **Name:** the language, such as `ruby`.
+- **Enabled:** for the language's file type, such as `ruby`. cspell gets a file's type from its extension, so check
+  that cspell knows the language's extensions. They are listed in
+  [`@cspell/filetypes`](https://github.com/streetsidesoftware/cspell/blob/main/packages/cspell-filetypes/src/definitions.ts).
+  If an extension is missing, [Try it with cspell](#7-try-it-with-cspell) shows the fix.
+- **Words:** the language's documentation, or the word lists of a tool such as a language server.
+- **Samples:** real code files.
+
+### A software ecosystem
+
+The names of a framework, platform, or tool, such as Django or Kubernetes: its packages, APIs, and settings.
+
+- **Examples:** [Django](https://github.com/streetsidesoftware/cspell-dicts/tree/main/dictionaries/django), enabled for
+  Python and HTML, and [K8s](https://github.com/streetsidesoftware/cspell-dicts/tree/main/dictionaries/k8s),
+  enabled for YAML.
+- **Name:** the ecosystem, such as `django`.
+- **Enabled:** for the file types its code and settings are written in, such as `python,html`. Or not until users enable
+  it (`--no-language-settings`), for words that are only right in projects that use it. A framework for one language,
+  such as FastAPI, can be enabled for that language's file type, `python`. That accepts its names in every Python
+  file, including projects that don't use it.
+- **Words:** its documentation, or a list it publishes. These often change, so a maintainer may add a script that
+  fetches them again. See [Upstream updates](./upstream-updates.md).
+- **Samples:** real files from a project that uses it.
+
+### Something else
+
+Not sure which kind it is, or it doesn't fit? Build it anyway, and say so in the PR. Or
+[open an issue](https://github.com/streetsidesoftware/cspell-dicts/issues/new) first, with what the words are and where
+they come from. A maintainer will help work out the design.
+
+### Look around
+
+- **Issues and pull requests:** search [cspell-dicts](https://github.com/streetsidesoftware/cspell-dicts/issues?q=) and
+  [cspell](https://github.com/streetsidesoftware/cspell/issues?q=). Someone may have asked for this dictionary, started
+  it, or added its file types to cspell.
+- **Related dictionaries:** see which dictionaries already have some of its words. They are good examples to follow.
+  Sharing words is normal: the German dictionaries share most of theirs.
+
+  ```sh
+  pnpm install
+  pnpm run prepare:dictionaries
+  pnpm exec cspell trace --only-found <word>
+  ```
+
+  `cspell trace` needs the prepared dictionaries. If it prints "Dictionary Errors.", some failed to load, and their
+  words are missing from the result.
 
 ## 2. Decide the design
+
+A dictionary's name, and when it's enabled, end up in users' settings from its first release. They are hard to change
+later, so settle them first. Start from the usual answers for your kind.
 
 - **Directory name:** a short name, such as `ruby` or `en_AU`. The package name is derived from it:
   `@cspell/dict-<name>`, lowercase, with other characters replaced by `-` (`en_AU` becomes `@cspell/dict-en-au`).
@@ -53,11 +123,6 @@ If an existing dictionary comes close, adding words to it may be the better chan
   `dictionaries` instead, so users find every always-enabled dictionary in the same place when they disable one or
   limit it.
 
-- **Format:** plaintext, or a trie for large lists such as Hunspell dictionaries.
-
-If this dictionary doesn't fit these steps, [open an issue](https://github.com/streetsidesoftware/cspell-dicts/issues/new)
-before building it. Say what the words are and where they come from. A maintainer will help work out the design.
-
 ## 3. Check the sources and their license
 
 - Where do the words come from? Your own list, a project's documentation, or an upstream word list?
@@ -67,6 +132,12 @@ before building it. Say what the words are and where they come from. A maintaine
 - If the license is missing or unclear, stop and ask the maintainers in an issue before going further.
 
 For an upstream word list, also read [Upstream updates](./upstream-updates.md): the dictionary gets a `sync` script.
+
+Tips for the words:
+
+- **Errors:** a source can have typos. Leave the wrong words out with `src/exclude_words.txt`.
+- **Gaps:** a dictionary is only as complete as its source. Compare the source with a few real files, and add what's
+  missing to `src/additional_words.txt`.
 
 ## 4. Create the dictionary
 
@@ -180,7 +251,10 @@ Checks:
 - `pnpm test` passes. Real samples often have words the dictionary lacks. For each word it reports:
   - A real word: add it to `src/additional_words.txt`, and build again.
   - A name, such as a person or a river: add it to `words` in `samples/cspell.json`.
-- `pnpm run lint` leaves no errors.
+  - A name from the code, such as a variable, a project, or a test string: add it to `words` in `samples/cspell.json`
+    too. Code samples bring many of these, so prefer samples with few test strings.
+- `pnpm run lint` leaves no errors. It spell checks the dictionary's README and settings too. Add a word they need, such
+  as a source's name, to `words` in the dictionary's `cspell.json`.
 
 ## 7. Try it with cspell
 
@@ -200,12 +274,39 @@ Words the dictionary has aren't reported. `<file>` is relative to `<folder>`.
 
 Delete `try.config.yaml` when you are done, so it isn't committed.
 
+### For code: check it's enabled by file type
+
+The check above enables the dictionary by name. Users get it by file type instead, which cspell gets from a file's
+extension. For a dictionary enabled for a file type, check a file with each of its extensions, without `--language-id`.
+From the repo root:
+
+```sh
+pnpm exec cspell lint --no-progress -c dictionaries/<name>/cspell-ext.json --root <folder> <file>
+```
+
+If it reports words the dictionary has, cspell doesn't map that extension to the file type. Add an `overrides` entry
+to `cspell-ext.json`, so users get the fix too.
+[Julia](https://github.com/streetsidesoftware/cspell-dicts/blob/main/dictionaries/julia/cspell-ext.json) has one from
+before cspell knew `.jl`:
+
+```json
+"overrides": [{ "filename": "**/*.jl", "languageId": "julia" }]
+```
+
+- File names are case sensitive here, so list uppercase extensions too.
+- An override's `languageId` replaces the file type cspell gave the file. When cspell gives a file two file types, such
+  as `json` and `jsonc` for a `.jsonc` file, list both, so users' settings for either still apply.
+- On macOS and Windows, `a.PY` and `a.py` are the same file. Check each in its own folder.
+- Don't fix this in `samples/cspell.json`. That only hides the problem from the tests. Its own override sets the file
+  type for `sample-words-in-dictionary.txt` only. Other samples get theirs from their extension, as users' files do.
+
 ## 8. Open a PR
 
 - Leave `private: true` and "-- Private until verified" in `package.json`. A maintainer will review the dictionary and
   take care of the publication process. That often takes more PRs, for samples or build changes.
 - Use a `feat(<name>): add <friendly name> dictionary` title. See
   [Commits and pull requests](../commits-and-pull-requests.md).
+- Unsure about a choice? Say so in the PR description. Maintainers help in review.
 
 ## Reference
 
