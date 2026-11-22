@@ -3,6 +3,13 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+## [6.0.30](https://github.com/streetsidesoftware/cspell-dicts/compare/@cspell/dict-golang@6.0.29...@cspell/dict-golang@6.0.30) (2026-11-22)
+
+
+### Updates and Bug Fixes
+
+* add CUDA names to software-terms and rebuild golang ([#6065](https://github.com/streetsidesoftware/cspell-dicts/issues/6065)) ([c3d2480](https://github.com/streetsidesoftware/cspell-dicts/commit/c3d24806da7582ac88dc654b13a0febad0ab77d2))
+
 ## [6.0.29](https://github.com/streetsidesoftware/cspell-dicts/compare/@cspell/dict-golang@6.0.28...@cspell/dict-golang@6.0.29) (2026-09-12)
 
 

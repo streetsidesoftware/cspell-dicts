@@ -3,6 +3,14 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+## [7.2.1](https://github.com/streetsidesoftware/cspell-dicts/compare/@cspell/dict-cpp@7.2.0...@cspell/dict-cpp@7.2.1) (2026-11-22)
+
+
+### Updates and Bug Fixes
+
+* **cpp:** exclude the typo "visiblity" ([#6078](https://github.com/streetsidesoftware/cspell-dicts/issues/6078)) ([4cecbfa](https://github.com/streetsidesoftware/cspell-dicts/commit/4cecbfa3b5f0aa011605463dd1b18a660b9baf78))
+* **cpp:** exclude the typo "Visiblity" ([#6081](https://github.com/streetsidesoftware/cspell-dicts/issues/6081)) ([a0bc539](https://github.com/streetsidesoftware/cspell-dicts/commit/a0bc539965f8aa3753059e32c78486de881f7d8d))
+
 ## [7.2.0](https://github.com/streetsidesoftware/cspell-dicts/compare/@cspell/dict-cpp@7.1.3...@cspell/dict-cpp@7.2.0) (2026-10-21)
 
 
