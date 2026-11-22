@@ -1,5 +1,22 @@
 # Release Notes
 
+## [35.1.2](https://github.com/streetsidesoftware/cspell-dicts/compare/cspell-dicts@35.1.1...cspell-dicts@35.1.2) (2026-11-22)
+
+
+### Updates and Bug Fixes
+
+* add CUDA names to software-terms and rebuild golang ([#6065](https://github.com/streetsidesoftware/cspell-dicts/issues/6065)) ([c3d2480](https://github.com/streetsidesoftware/cspell-dicts/commit/c3d24806da7582ac88dc654b13a0febad0ab77d2))
+* **cpp:** exclude the typo "visiblity" ([#6078](https://github.com/streetsidesoftware/cspell-dicts/issues/6078)) ([4cecbfa](https://github.com/streetsidesoftware/cspell-dicts/commit/4cecbfa3b5f0aa011605463dd1b18a660b9baf78))
+* **cpp:** exclude the typo "Visiblity" ([#6081](https://github.com/streetsidesoftware/cspell-dicts/issues/6081)) ([a0bc539](https://github.com/streetsidesoftware/cspell-dicts/commit/a0bc539965f8aa3753059e32c78486de881f7d8d))
+* Workflow Bot -- Update Dictionaries ([#6068](https://github.com/streetsidesoftware/cspell-dicts/issues/6068)) ([0e4f1c0](https://github.com/streetsidesoftware/cspell-dicts/commit/0e4f1c09e7bdd09371f7569f341f0fe82ab12e30))
+
+
+### Dependencies
+
+* The following workspace dependencies were updated
+  * devDependencies
+    * @cspell/dict-cspell-bundle bumped to 2.0.86
+
 ## [35.1.1](https://github.com/streetsidesoftware/cspell-dicts/compare/cspell-dicts@35.1.0...cspell-dicts@35.1.1) (2026-11-12)
 
 
