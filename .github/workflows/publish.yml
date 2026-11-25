@@ -43,4 +43,7 @@ jobs:
           GITHUB_TOKEN: ${{secrets.GITHUB_TOKEN}}
         # Prerelease versions, such as 3.2.0-alpha.0, go to the `alpha` dist-tag, so `latest` doesn't change.
         # Build Readme changes tracked files, and `lerna publish` fails on those that `--allow-dirty` doesn't match.
-        run: pnpm lerna publish from-package --no-push --no-private --pre-dist-tag alpha --allow-dirty='**/*.md' --yes
+        run: >
+          pnpm lerna publish from-package --no-push --no-private --pre-dist-tag alpha
+          --allow-dirty='**/*.md' --allow-dirty='static/dictionary-packages.json'
+          --yes
