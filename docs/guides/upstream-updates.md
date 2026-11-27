@@ -26,6 +26,8 @@ edit those files by hand: the next sync overwrites them.
   needs a GitHub token: it uses `GITHUB_TOKEN` if set, or else `gh auth token` when you're logged in to the GitHub CLI.
 - **Other scripts.** A few packages run their own script, such as `ar`'s `scripts/sync.sh`, or `npm`'s
   `update-dictionary`, which regenerates its package list.
+- **Upstream data that isn't a word list.** A `postsync` script turns the synced files into a word list, as
+  `mime-types` does with `scripts/mime-db-to-txt.mjs`. Its `conditional-build` runs `sync`, `postsync`, then `build`.
 
 To find the packages of each kind:
 

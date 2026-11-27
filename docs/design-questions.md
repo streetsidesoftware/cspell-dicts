@@ -63,13 +63,20 @@ If the change needs a new principle, agree on it before the decisions that depen
 ## When it's enabled
 
 - For which file types (`languageId`) and locales (`locale`)?
+- Does the cspell installed in this repo map each extension to that file type? If not, the dictionary needs `overrides`
+  in its `cspell-ext.json`.
 - Disabled by default, so users must add it to `dictionaries`? Or enabled for every file of a type?
 - Does enabling it accept words that should be flagged elsewhere?
 
 ## Sources and license
 
 - Where do the words come from: a hand-kept list, documentation, an upstream word list, a generated list?
+- What does each source cost to build and maintain? A synced upstream adds a script, a pinning decision, and checks of
+  its data. Before choosing a sync, check how often the upstream files change, following renames:
+  `gh api "repos/<owner>/<repo>/commits?path=<file>"`. Files that rarely change bring little from a sync.
 - How is an upstream source kept current: a `sync` script from npm or GitHub, pinned or following the latest?
+- Pinned to a release or to a commit? Check what changed upstream since the latest release. A release can lag behind
+  the default branch by a whole language version.
 - What is each source's license, and does it fit the dictionary's? A missing, unclear, or incompatible license stops
   the design until the maintainers decide.
 

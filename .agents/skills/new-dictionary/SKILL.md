@@ -1,70 +1,66 @@
 ---
 name: new-dictionary
-description: 'Designs and builds a new cspell-dicts dictionary, from interview to one pull request: why and for whom, its name and dictionary IDs, which file types and locales it is enabled for, its sources and their licenses, and how it is built, then the dictionary itself, created with pnpm create-dictionary, with samples and passing checks. Use when the user wants a dictionary for a new programming language, tool, natural language, or field, or asks to "create a dictionary for X". For words in an existing dictionary, use word-change. For splitting or renaming existing dictionaries, use feature-design.'
+description: 'Helps the user build a new cspell-dicts dictionary for their purpose, from idea to one pull request: a natural language, the terminology of a field, a programming language, or a software ecosystem. Proposes a design from the usual answers for that kind (name, dictionary IDs, when it is enabled, sources and their licenses), then creates the dictionary with pnpm create-dictionary, with samples and passing checks. Use when the user wants a dictionary for a new programming language, tool, framework, natural language, or field, or asks to "create a dictionary for X". For words in an existing dictionary, use word-change. For splitting or renaming existing dictionaries, use feature-design.'
 ---
 
 # new-dictionary
 
-Takes a new dictionary from idea to one pull request: the design first, while it's cheap to change, then the dictionary
-built from it. Its name, dictionary IDs, and the file types and locales it's enabled for end up in users' configs from
-its first release. Read `docs/guides/new-dictionary.md` and `.agents/skills/feature-design/SKILL.md` first: this skill
-uses the guide for the build and `feature-design`'s interview for the design.
+Helps the user build a dictionary for their purpose, and makes it easy. The user knows what the words are for. This
+skill brings the usual answers for that kind of dictionary, and the commands. Read `docs/guides/new-dictionary.md`
+first: its step 1 describes the four kinds and their usual answers, and the rest of it is the build.
 
 ## Workflow
 
-### 1. Check it doesn't exist
+### 1. Learn the purpose
 
-Make sure a new dictionary is the right change.
+Find out what the dictionary is for, and which kind it is.
 
-- **Do:** look through `dictionaries/`, and from the repo root run this with a few typical words:
+- **Ask** what the words are, who writes them, and where they come from, unless the user already said.
+- **Do:** match it to a kind in the guide's step 1, and read one of that kind's example dictionaries. Its
+  `cspell-ext.json`, `package.json`, and `src/` show the patterns to follow.
+- **Do:** search issues and PRs in cspell-dicts and cspell. Someone may have asked for it, started it, or added its
+  file types to cspell. For code, check that cspell knows its extensions, as the guide says.
+- **Do:** treat related dictionaries as examples. Sharing words with them is normal. To find them, run `cspell trace`
+  after `pnpm run prepare:dictionaries`. "Dictionary Errors." means some failed to load, and the result is incomplete.
 
-  ```sh
-  pnpm exec cspell trace --only-found <word>
-  ```
+### 2. Propose the design
 
-- **Stop and ask** if an existing dictionary comes close: adding words to it with `word-change` may be the better
-  change.
+Turn the purpose into everything `pnpm create-dictionary` needs, starting from the kind's usual answers.
 
-### 2. Name it, and set up a worktree
+- **Ask** with one proposal: the whole design in one message, each choice with its usual answer and a short reason.
+  Then ask only about what has no clear answer, such as the sources and the scope. The proposal covers:
+  - **Name and dictionary IDs:** the directory name, such as `ruby` or `en_AU`. The package name follows from it:
+    `@cspell/dict-<name>`, lowercase, with other characters turned into `-`. The dictionary ID is usually the same.
+  - **When it's enabled:** the locale for a natural language, such as `en-AU`, or the file types for code, such as
+    `ruby` ([VS Code language IDs](https://code.visualstudio.com/docs/languages/identifiers)). Or not until users enable
+    it. Never both `*`, for the reason in the guide's step 2.
+  - **Sources:** where the words come from, and what each option costs to build and maintain, as
+    `docs/design-questions.md` asks. If a file the user named doesn't exist, ask for the right path, or whether to start
+    empty.
+  - **Description:** the words it covers, such as "Ruby keywords and standard library names".
+  - **Keywords:** other terms people search npm for, such as `golang` for Go.
+  - **Contributors:** who creates and maintains it, as "Name (url)". Optional, and published to npm.
+  - **Samples:** what the kind uses, from the guide.
+- **Check** each source's license and what it requires: attribution, keeping the license file, or share-alike.
+- **Stop and ask** if a license is missing, unclear, or would change the dictionary's license. Give the exact source
+  and version, its license, why it matters, and the alternatives.
+- **Ask:** if the dictionary fits no kind, or needs scripts beyond `pnpm create-dictionary`, the build, and a `sync`
+  script as in `docs/guides/upstream-updates.md`, offer to settle that part first with `feature-design`.
+- **Do:** keep the purpose and a list of the decisions, one line each, for the PR description.
+- **Stop and ask:** build once the user agrees with the design.
 
-Agree on the directory name, which sets the package name and the dictionary ID, and keep the work out of the user's
-checkout.
+### 3. Set up a worktree
 
-- **Ask** for the directory name, such as `ruby` or `en_AU`. The package name follows from it: `@cspell/dict-<name>`,
-  lowercase, with other characters turned into `-`.
-- **Do,** in the main checkout (the first path `git worktree list` prints). The design and the dictionary go in this
+Keep the work out of the user's checkout.
+
+- **Do:** if this session already runs in a worktree, work there on a branch from a fresh `origin/main`. Otherwise,
+  in the main checkout (the first path `git worktree list` prints), make one. The design and the dictionary go in this
   branch and one PR:
 
   ```sh
   git fetch origin main
   git worktree add -b new-dictionary/<name> .claude/worktrees/new-dictionary-<name> origin/main
   ```
-
-### 3. Design it
-
-Decide everything `pnpm create-dictionary` needs, one decision at a time.
-
-- **Ask** the way `feature-design` step 5 does: one question at a time, lettered options showing the cspell config a
-  user would write, facts checked first, and the user free to defer.
-- **Ask,** using `docs/design-questions.md`: "Why and who", then "Names and IDs", "When it's enabled", "Sources and
-  license", "Build", "Testing and samples", and "Release surface".
-- **Ask** these too, since the command needs them:
-  - **Locale or file type:** a natural language sets the locale, such as `en-AU`. A dictionary of a programming language
-    or file type sets the file type, such as `ruby`, a
-    [VS Code language ID](https://code.visualstudio.com/docs/languages/identifiers). Never both `*`: a dictionary with
-    neither stays disabled until users add it, or is enabled for every file if the user asks for that.
-  - **Description:** the words it covers, such as "Ruby keywords and standard library names".
-  - **Contributors:** who creates and maintains it, as "Name (url)". Optional, and published to npm.
-  - **Keywords:** other keywords people search npm for, such as `golang` for Go.
-  - **Sources:** if a file the user named doesn't exist, ask for the right path, or whether to start empty.
-- **Check** each source's license and what it requires: attribution, keeping the license file, or share-alike.
-- **Stop and ask** if a license is missing, unclear, or would change the dictionary's license. Give the exact source
-  and version, its license, why it matters, and the alternatives.
-- **Do:** keep the answers to "Why and who" and a list of the decisions, one line each, for the PR description.
-- **Stop and ask** if the design goes beyond the guide: a different approach, or scripts beyond
-  `pnpm create-dictionary`, the build, and a `sync` script as in `docs/guides/upstream-updates.md`. Suggest settling
-  that design first with `feature-design`, as its own step, before building the dictionary.
-- **Stop and ask:** wait until the user says the design is final.
 
 ### 4. Create the dictionary
 
@@ -136,10 +132,13 @@ Show that the dictionary builds, passes, and works in cspell.
 
 - **Check:**
   - After committing, `pnpm run check-dirty` passes: lint left nothing behind.
-  - In cspell, as in the guide's step 7 (`cspell init`), a sample spell checks cleanly. Show the user the result.
+  - In cspell, as in the guide's step 7, a sample spell checks cleanly. Show the user the result.
+  - For a file type, the dictionary is enabled for each extension, uppercase too, as the guide's step 7 checks. Fix a
+    missing one with `overrides` in `cspell-ext.json`, never in `samples/cspell.json`.
+  - A few lines of real code spell check cleanly, not only the source's own words.
 - **If it fails:** fix what it reports, and run the checks again until they pass. For a word a sample uses that the
-  dictionary lacks: add a real word to `src/additional_words.txt` and build again, and a name to `words` in
-  `samples/cspell.json`. Ask the user when it's unclear which it is.
+  dictionary lacks: add a real word to `src/additional_words.txt` and build again, and a name or an identifier to
+  `words` in `samples/cspell.json`. Ask the user when it's unclear which it is.
 
 ### 7. Open one PR
 
@@ -154,5 +153,4 @@ Hand the user one PR with the design and the dictionary.
 
 ## Not this skill
 
-- The "new dictionary" turns out to be words for an existing one. Say so, and offer `word-change`.
 - The design changes after merge, or an existing dictionary should be split or renamed. Use `feature-design`.
